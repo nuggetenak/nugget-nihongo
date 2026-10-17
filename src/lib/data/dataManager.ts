@@ -141,15 +141,12 @@ export async function loadVocab(level: string): Promise<NormalizedVocab[]> {
   let src = `/data/vocab/vocab-${level}.js`;
   let varName: keyof Window = `vocab${level.toUpperCase()}` as keyof Window;
 
-  if (level === 'ssw-construction' || level === 'curriculum-ssw-construction') {
-    src = '/data/vocab/ssw/construction.js';
-    varName = 'vocabSSW_Construction' as keyof Window;
-  } else if (level === 'ssw-food' || level === 'curriculum-ssw-food') {
-    src = '/data/vocab/ssw/food.js';
-    varName = 'vocabSSW_Food' as keyof Window;
-  } else if (level === 'ssw-kaigo' || level === 'curriculum-ssw-kaigo') {
-    src = '/data/vocab/ssw/kaigo.js';
-    varName = 'vocabSSW_Kaigo' as keyof Window;
+  const isSSW = level.startsWith('ssw-') || level.startsWith('curriculum-ssw-');
+  if (isSSW) {
+    const sector = level.replace(/^curriculum-/, '').replace(/^ssw-/, '');
+    src = `/data/vocab/ssw/${sector}.js`;
+    const pascalSector = sector.split('-').map(s => s.charAt(0).toUpperCase() + s.slice(1)).join('');
+    varName = `vocabSSW_${pascalSector}` as keyof Window;
   }
 
   if (!window[varName] || (window[varName] as any[]).length === 0) {
@@ -271,33 +268,77 @@ const bookCache: Record<string, BookData> = {};
 /**
  * Load textbook metadata and units
  */
-export async function loadBook(bookKey: 'minna1' | 'minna2' | 'irodori-a1' | 'irodori-a2-1'): Promise<BookData | null> {
+export type BookTrackKey =
+  | 'minna1' | 'minna2'
+  | 'irodori-a1' | 'irodori-a2-1' | 'irodori-a2-2'
+  | 'genki1' | 'genki2'
+  | 'quartet1' | 'quartet2'
+  | 'skm-n1' | 'skm-n2' | 'skm-n3'
+  | 'sm-n1' | 'sm-n2' | 'sm-n3' | 'sm-n4' | 'sm-n5'
+  | 'tobira'
+  | 'try-n1' | 'try-n2' | 'try-n3' | 'try-n4' | 'try-n5'
+  | 'marugoto-a1' | 'marugoto-a2-1' | 'marugoto-a2-2'
+  | string;
+
+/**
+ * Load textbook metadata and units across all 9 book series
+ */
+export async function loadBook(bookKey: BookTrackKey): Promise<BookData | null> {
   if (bookCache[bookKey]) return bookCache[bookKey];
 
-  const fileMap: Record<string, { src: string; varKey: keyof Window }> = {
+  const fileMap: Record<string, { src: string; varKey: keyof Window | string }> = {
     minna1: { src: '/data/books/book-minna-1.js', varKey: 'bookMinna1' },
     minna2: { src: '/data/books/book-minna-2.js', varKey: 'bookMinna2' },
     'irodori-a1': { src: '/data/books/book-irodori-a1.js', varKey: 'bookIrodoriA1' },
     'irodori-a2-1': { src: '/data/books/book-irodori-a2-1.js', varKey: 'bookIrodoriA2_1' },
+    'irodori-a2-2': { src: '/data/books/book-irodori-a2-2.js', varKey: 'bookIrodoriA2_2' },
   };
 
   const target = fileMap[bookKey];
-  if (!target) return null;
-
-  if (!window[target.varKey]) {
-    try {
-      await loadScript(target.src);
-    } catch (e) {
-      console.warn(`[dataManager] Failed to load book: ${target.src}`, e);
-      return null;
+  if (target) {
+    if (!window[target.varKey as keyof Window]) {
+      try {
+        await loadScript(target.src);
+      } catch (e) {
+        console.warn(`[dataManager] Failed to load book: ${target.src}`, e);
+      }
+    }
+    const raw = window[target.varKey as keyof Window] as BookData;
+    if (raw) {
+      bookCache[bookKey] = raw;
+      return raw;
     }
   }
 
-  const raw = window[target.varKey] as BookData;
-  if (raw) {
-    bookCache[bookKey] = raw;
+  // Fallback to staged expansion curriculum book track
+  const cleanKey = bookKey.replace(/\d+$/, '').replace(/-a\d+.*$/, '');
+  const curriculumTrack = await loadCurriculumTrack(`book-${cleanKey}`);
+  if (curriculumTrack) {
+    const unitsMap: Record<number, BookUnit> = {};
+    curriculumTrack.units.forEach((u, idx) => {
+      const chNum = u.unit_number || parseInt(u.id.replace(/\D/g, '')) || (idx + 1);
+      unitsMap[chNum] = {
+        topic: u.title_id || u.title_jp || `Chapter ${chNum}`,
+        vocab_ids: u.vocab_ids || [],
+        grammar_ids: u.grammar_ids || [],
+      };
+    });
+
+    const syntheticBook: BookData = {
+      meta: {
+        book: bookKey,
+        title: curriculumTrack.meta?.title || bookKey,
+        publisher: 'Staged Curriculum',
+        chapters: curriculumTrack.units.length,
+        jlpt_range: [curriculumTrack.meta?.level || 'N5-N1'],
+      },
+      units: unitsMap,
+    };
+    bookCache[bookKey] = syntheticBook;
+    return syntheticBook;
   }
-  return raw || null;
+
+  return null;
 }
 
 export const FREEWAY_TRACK_IDS = [
@@ -402,43 +443,118 @@ export async function loadCurriculumTrack(
 ): Promise<CurriculumTrackData | null> {
   if (curriculumCache[trackKey]) return curriculumCache[trackKey];
 
-  const fileMap: Record<string, { src: string; varKey: string }> = {
-    n5: { src: '/data/curriculum/curriculum-n5.js', varKey: 'curriculumN5' },
-    n4: { src: '/data/curriculum/curriculum-n4.js', varKey: 'curriculumN4' },
-    n3: { src: '/data/curriculum/curriculum-n3.js', varKey: 'curriculumN3' },
-    n2: { src: '/data/curriculum/curriculum-n2.js', varKey: 'curriculumN2' },
-    n1: { src: '/data/curriculum/curriculum-n1.js', varKey: 'curriculumN1' },
-    'ssw-kaigo': { src: '/data/curriculum/curriculum-ssw-kaigo.js', varKey: 'curriculumSSWKaigo' },
-    'ssw-food': { src: '/data/curriculum/curriculum-ssw-food.js', varKey: 'curriculumSSWFood' },
-    'ssw-construction': { src: '/data/curriculum/curriculum-ssw-construction.js', varKey: 'curriculumSSWConstruction' },
+  const CANONICAL_TRACK_MAP: Record<string, { src: string; varKeys: string[] }> = {
+    // JLPT
+    n5: { src: '/data/curriculum/curriculum-n5.js', varKeys: ['curriculumN5'] },
+    n4: { src: '/data/curriculum/curriculum-n4.js', varKeys: ['curriculumN4'] },
+    n3: { src: '/data/curriculum/curriculum-n3.js', varKeys: ['curriculumN3'] },
+    n2: { src: '/data/curriculum/curriculum-n2.js', varKeys: ['curriculumN2'] },
+    n1: { src: '/data/curriculum/curriculum-n1.js', varKeys: ['curriculumN1'] },
+
+    // Books (9 series)
+    'book-genki': { src: '/data/curriculum/curriculum-book-genki.js', varKeys: ['curriculumBook_genki', 'curriculum_book_genki'] },
+    'book-irodori': { src: '/data/curriculum/curriculum-book-irodori.js', varKeys: ['curriculumBook_irodori', 'curriculum_book_irodori'] },
+    'book-marugoto': { src: '/data/curriculum/curriculum-book-marugoto.js', varKeys: ['curriculumBook_marugoto', 'curriculum_book_marugoto'] },
+    'book-minna': { src: '/data/curriculum/curriculum-book-minna.js', varKeys: ['curriculumBook_minna', 'curriculum_book_minna'] },
+    'book-quartet': { src: '/data/curriculum/curriculum-book-quartet.js', varKeys: ['curriculumBook_quartet', 'curriculum_book_quartet'] },
+    'book-shin-kanzen-master': { src: '/data/curriculum/curriculum-book-shin-kanzen-master.js', varKeys: ['curriculumBook_shin_kanzen_master', 'curriculum_book_shin_kanzen_master'] },
+    'book-soumatome': { src: '/data/curriculum/curriculum-book-soumatome.js', varKeys: ['curriculumBook_soumatome', 'curriculum_book_soumatome'] },
+    'book-tobira': { src: '/data/curriculum/curriculum-book-tobira.js', varKeys: ['curriculumBook_tobira', 'curriculum_book_tobira'] },
+    'book-try': { src: '/data/curriculum/curriculum-book-try.js', varKeys: ['curriculumBook_try', 'curriculum_book_try'] },
+
+    // JFT & Seikatsu
+    'jft-a1': { src: '/data/curriculum/curriculum-jft-a1.js', varKeys: ['curriculumJFT_A1', 'curriculumJFT_a1'] },
+    'jft-a2': { src: '/data/curriculum/curriculum-jft-a2.js', varKeys: ['curriculumJFT_A2', 'curriculumJFT_a2'] },
+    seikatsu: { src: '/data/curriculum/curriculum-seikatsu.js', varKeys: ['curriculumSeikatsu'] },
+
+    // SSW Tracks (19 sectors & Canonical Aliases)
+    'ssw-accommodation': { src: '/data/curriculum/curriculum-ssw-accommodation.js', varKeys: ['curriculumSSW_accommodation', 'curriculumSSWAccommodation'] },
+    'ssw-hospitality': { src: '/data/curriculum/curriculum-ssw-accommodation.js', varKeys: ['curriculumSSW_accommodation', 'curriculumSSWAccommodation'] },
+    'ssw-agriculture': { src: '/data/curriculum/curriculum-ssw-agriculture.js', varKeys: ['curriculumSSW_agriculture', 'curriculumSSWAgriculture'] },
+    'ssw-crop-farming': { src: '/data/curriculum/curriculum-ssw-agriculture.js', varKeys: ['curriculumSSW_agriculture', 'curriculumSSWAgriculture'] },
+    'ssw-livestock': { src: '/data/curriculum/curriculum-ssw-agriculture.js', varKeys: ['curriculumSSW_agriculture', 'curriculumSSWAgriculture'] },
+    'ssw-automobile': { src: '/data/curriculum/curriculum-ssw-automobile.js', varKeys: ['curriculumSSW_automobile', 'curriculumSSWAutomobile'] },
+    'ssw-aviation': { src: '/data/curriculum/curriculum-ssw-aviation.js', varKeys: ['curriculumSSW_aviation', 'curriculumSSWAviation'] },
+    'ssw-building-cleaning': { src: '/data/curriculum/curriculum-ssw-building-cleaning.js', varKeys: ['curriculumSSW_building_cleaning', 'curriculumSSWBuildingCleaning'] },
+    'ssw-construction': { src: '/data/curriculum/curriculum-ssw-construction.js', varKeys: ['curriculumSSWConstruction', 'curriculumSSW_construction'] },
+    'ssw-electric-electronic': { src: '/data/curriculum/curriculum-ssw-electric-electronic.js', varKeys: ['curriculumSSW_electric_electronic', 'curriculumSSWElectricElectronic'] },
+    'ssw-electrical-electronics': { src: '/data/curriculum/curriculum-ssw-electric-electronic.js', varKeys: ['curriculumSSW_electric_electronic', 'curriculumSSWElectricElectronic'] },
+    'ssw-fishery': { src: '/data/curriculum/curriculum-ssw-fishery.js', varKeys: ['curriculumSSW_fishery', 'curriculumSSWFishery'] },
+    'ssw-food-service': { src: '/data/curriculum/curriculum-ssw-food-service.js', varKeys: ['curriculumSSW_food_service', 'curriculumSSWFood', 'curriculumSSWFoodService'] },
+    'ssw-restaurant': { src: '/data/curriculum/curriculum-ssw-food-service.js', varKeys: ['curriculumSSW_food_service', 'curriculumSSWFoodService'] },
+    'ssw-food': { src: '/data/curriculum/curriculum-ssw-food.js', varKeys: ['curriculumSSWFood', 'curriculumSSW_food', 'curriculumSSW_food_service'] },
+    'ssw-food-manufacturing': { src: '/data/curriculum/curriculum-ssw-food.js', varKeys: ['curriculumSSWFood', 'curriculumSSW_food'] },
+    'ssw-forestry': { src: '/data/curriculum/curriculum-ssw-forestry.js', varKeys: ['curriculumSSW_forestry', 'curriculumSSWForestry'] },
+    'ssw-industrial-machinery': { src: '/data/curriculum/curriculum-ssw-industrial-machinery.js', varKeys: ['curriculumSSW_industrial_machinery', 'curriculumSSWIndustrialMachinery'] },
+    'ssw-kaigo': { src: '/data/curriculum/curriculum-ssw-kaigo.js', varKeys: ['curriculumSSWKaigo', 'curriculumSSW_kaigo'] },
+    'ssw-logistics': { src: '/data/curriculum/curriculum-ssw-logistics.js', varKeys: ['curriculumSSW_logistics', 'curriculumSSWLogistics'] },
+    'ssw-automobile-transport': { src: '/data/curriculum/curriculum-ssw-logistics.js', varKeys: ['curriculumSSW_logistics', 'curriculumSSWLogistics'] },
+    'ssw-manufacturing': { src: '/data/curriculum/curriculum-ssw-manufacturing.js', varKeys: ['curriculumSSW_manufacturing', 'curriculumSSWManufacturing'] },
+    'ssw-sokeizai': { src: '/data/curriculum/curriculum-ssw-manufacturing.js', varKeys: ['curriculumSSW_manufacturing', 'curriculumSSWManufacturing'] },
+    'ssw-railway': { src: '/data/curriculum/curriculum-ssw-railway.js', varKeys: ['curriculumSSW_railway', 'curriculumSSWRailway'] },
+    'ssw-shipbuilding': { src: '/data/curriculum/curriculum-ssw-shipbuilding.js', varKeys: ['curriculumSSW_shipbuilding', 'curriculumSSWShipbuilding'] },
+    'ssw-textile': { src: '/data/curriculum/curriculum-ssw-textile.js', varKeys: ['curriculumSSW_textile', 'curriculumSSWTextile'] },
+    'ssw-timber': { src: '/data/curriculum/curriculum-ssw-timber.js', varKeys: ['curriculumSSW_timber', 'curriculumSSWTimber'] },
   };
 
-  const target = fileMap[trackKey] || {
-    src: `/data/curriculum/curriculum-${trackKey}.js`,
-    varKey: `curriculum_${trackKey.replace(/[^a-zA-Z0-9]/g, '_')}`,
-  };
+  const cleanKey = trackKey.toLowerCase().replace(/^curriculum-/, '');
+  let entry = CANONICAL_TRACK_MAP[cleanKey] || CANONICAL_TRACK_MAP[trackKey];
+
+  if (!entry) {
+    const sector = cleanKey.replace(/^ssw-/, '');
+    const snakeSector = sector.replace(/-/g, '_');
+    entry = {
+      src: `/data/curriculum/curriculum-${cleanKey}.js`,
+      varKeys: [
+        `curriculum_${cleanKey.replace(/-/g, '_')}`,
+        `curriculumSSW_${snakeSector}`,
+        `curriculumBook_${snakeSector}`,
+      ],
+    };
+  }
 
   const hasWindow = typeof window !== 'undefined';
-  let raw: any = hasWindow ? (window as any)[target.varKey] : null;
+  let raw: any = null;
+
+  if (hasWindow) {
+    for (const vk of entry.varKeys) {
+      if ((window as any)[vk]) {
+        raw = (window as any)[vk];
+        break;
+      }
+    }
+  }
 
   if (!raw && hasWindow) {
     try {
-      await loadScript(target.src);
-      raw = (window as any)[target.varKey];
+      await loadScript(entry.src);
+      for (const vk of entry.varKeys) {
+        if ((window as any)[vk]) {
+          raw = (window as any)[vk];
+          break;
+        }
+      }
     } catch {
       // Fallback to fetch JSON
     }
   }
 
   if (!raw) {
-    try {
-      const jsonRes = await fetch(`/data/curriculum/curriculum-${trackKey}.json`);
-      if (jsonRes.ok) {
-        raw = await jsonRes.json();
-      }
-    } catch (err2) {
-      console.warn(`[dataManager] Failed to load curriculum: ${trackKey}`, err2);
-      return null;
+    const isSSW = trackKey.startsWith('ssw-') || trackKey.startsWith('curriculum-ssw-');
+    const sector = trackKey.replace(/^curriculum-/, '').replace(/^ssw-/, '');
+    const jsonPaths = [
+      `/data/curriculum/curriculum-${trackKey}.json`,
+      isSSW ? `/data/curriculum/curriculum-ssw-${sector}.json` : null,
+    ].filter(Boolean) as string[];
+
+    for (const jsonPath of jsonPaths) {
+      try {
+        const jsonRes = await fetch(jsonPath);
+        if (jsonRes.ok) {
+          raw = await jsonRes.json();
+          break;
+        }
+      } catch {}
     }
   }
 
@@ -447,6 +563,8 @@ export async function loadCurriculumTrack(
     curriculumCache[trackKey] = normalized;
     return normalized;
   }
+
+  console.warn(`[dataManager] Failed to load curriculum: ${trackKey}`);
   return null;
 }
 

@@ -149,10 +149,10 @@ export const PanicRecallCard: React.FC<PanicRecallCardProps> = ({
               </span>
               <button
                 onClick={handleSpeak}
-                className="flex items-center gap-1.5 px-3 py-1 rounded-xl bg-emerald-500/15 hover:bg-emerald-500/25 text-emerald-300 text-xs font-bold transition-all active:scale-95"
+                className="flex items-center justify-center gap-2 px-3.5 py-2.5 min-w-[40px] min-h-[40px] rounded-xl bg-emerald-500/15 hover:bg-emerald-500/25 text-emerald-300 text-xs font-bold transition-all active:scale-95 shrink-0"
                 title="Dengarkan pelafalan komando"
               >
-                <Volume2 className="w-3.5 h-3.5" />
+                <Volume2 className="w-4 h-4" />
                 <span>Dengarkan</span>
               </button>
             </div>

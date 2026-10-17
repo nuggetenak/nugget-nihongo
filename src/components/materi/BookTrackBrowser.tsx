@@ -97,25 +97,28 @@ export const BookTrackBrowser: React.FC<BookTrackBrowserProps> = ({
     if (!activeBook) return;
     setIsLoadingDrills(true);
 
-    const volumeKey =
-      selectedBookId === 'minna'
-        ? selectedVolumeIndex === 1
-          ? '2'
-          : '1'
-        : selectedBookId === 'genki'
-        ? selectedVolumeIndex === 1
-          ? '2'
-          : '1'
-        : selectedBookId === 'quartet'
-        ? selectedVolumeIndex === 1
-          ? '2'
-          : '1'
-        : activeVolume?.jlpt || activeVolume?.label || '1';
+    let volumeKey = '1';
+    if (selectedBookId === 'minna' || selectedBookId === 'genki' || selectedBookId === 'quartet') {
+      volumeKey = selectedVolumeIndex === 1 ? '2' : '1';
+    } else if (selectedBookId === 'irodori' || selectedBookId === 'marugoto') {
+      volumeKey = selectedVolumeIndex === 0 ? 'a1' : selectedVolumeIndex === 1 ? 'a2-1' : 'a2-2';
+    } else {
+      volumeKey = activeVolume?.jlpt || activeVolume?.label || '1';
+    }
+
+    const offset =
+      selectedBookId === 'minna' && selectedVolumeIndex === 1
+        ? 25
+        : selectedBookId === 'genki' && selectedVolumeIndex === 1
+        ? 12
+        : selectedBookId === 'quartet' && selectedVolumeIndex === 1
+        ? 6
+        : 0;
 
     loadBookDrills(selectedBookId, volumeKey)
       .then((drillsMap) => {
         setDrillsByChapter(drillsMap || {});
-        setSelectedChapter(1);
+        setSelectedChapter(1 + offset);
         setIsLoadingDrills(false);
       })
       .catch(() => {
@@ -123,6 +126,13 @@ export const BookTrackBrowser: React.FC<BookTrackBrowserProps> = ({
         setIsLoadingDrills(false);
       });
   }, [selectedBookId, selectedVolumeIndex, activeVolume]);
+
+  const chapterOffset = useMemo(() => {
+    if (selectedBookId === 'minna' && selectedVolumeIndex === 1) return 25;
+    if (selectedBookId === 'genki' && selectedVolumeIndex === 1) return 12;
+    if (selectedBookId === 'quartet' && selectedVolumeIndex === 1) return 6;
+    return 0;
+  }, [selectedBookId, selectedVolumeIndex]);
 
   const totalChapters = useMemo(() => {
     if (!activeVolume) return 25;
@@ -139,31 +149,32 @@ export const BookTrackBrowser: React.FC<BookTrackBrowserProps> = ({
   const chapterList = useMemo(() => {
     const list: number[] = [];
     for (let i = 1; i <= totalChapters; i++) {
-      list.push(i);
+      list.push(i + chapterOffset);
     }
     return list;
-  }, [totalChapters]);
+  }, [totalChapters, chapterOffset]);
 
-  const currentChapterDrillData = drillsByChapter[String(selectedChapter)] || {
+  const currentChapterDrillData = drillsByChapter[String(selectedChapter)] ||
+    drillsByChapter[String(selectedChapter - chapterOffset)] || {
     chapter: selectedChapter,
-    topic: `Bab ${selectedChapter}`,
+    topic: selectedBookId === 'soumatome' ? `Minggu ${selectedChapter}` : selectedBookId === 'quartet' ? `Pelajaran ${selectedChapter}` : `Bab ${selectedChapter}`,
     drills: [],
   };
 
   const currentDrills = currentChapterDrillData.drills || [];
 
-  const BOOK_COVER_MAP: Record<string, string> = {
-    minna: '/assets/generated/book-cover-minna.jpg',
-    genki: '/assets/generated/book-cover-genki.jpg',
-    marugoto: '/assets/generated/book-cover-marugoto.jpg',
-    irodori: '/assets/generated/book-cover-irodori.jpg',
-    tobira: '/assets/generated/book-cover-tobira.jpg',
-    'shin-kanzen-master': '/assets/generated/book-cover-shinkanzen.jpg',
-    shin_kanzen_master: '/assets/generated/book-cover-shinkanzen.jpg',
-    soumatome: '/assets/generated/book-cover-soumatome.jpg',
-    dekiru: '/assets/generated/book-cover-dekiru.jpg',
-    quartet: '/assets/generated/book-cover-quartet.jpg',
-    try: '/assets/generated/book-cover-soumatome.jpg',
+  const BOOK_COVER_MAP: Record<string, { base: string; fallback: string }> = {
+    minna: { base: '/assets/generated/book-cover-minna', fallback: '/assets/generated/book-cover-minna.jpg' },
+    genki: { base: '/assets/generated/book-cover-genki', fallback: '/assets/generated/book-cover-genki.jpg' },
+    marugoto: { base: '/assets/generated/book-cover-marugoto', fallback: '/assets/generated/book-cover-marugoto.jpg' },
+    irodori: { base: '/assets/generated/book-cover-irodori', fallback: '/assets/generated/book-cover-irodori.jpg' },
+    tobira: { base: '/assets/generated/book-cover-tobira', fallback: '/assets/generated/book-cover-tobira.jpg' },
+    'shin-kanzen-master': { base: '/assets/generated/book-cover-shinkanzen', fallback: '/assets/generated/book-cover-shinkanzen.jpg' },
+    shin_kanzen_master: { base: '/assets/generated/book-cover-shinkanzen', fallback: '/assets/generated/book-cover-shinkanzen.jpg' },
+    soumatome: { base: '/assets/generated/book-cover-soumatome', fallback: '/assets/generated/book-cover-soumatome.jpg' },
+    dekiru: { base: '/assets/generated/book-cover-dekiru', fallback: '/assets/generated/book-cover-dekiru.jpg' },
+    quartet: { base: '/assets/generated/book-cover-quartet', fallback: '/assets/generated/book-cover-quartet.jpg' },
+    try: { base: '/assets/generated/book-cover-try', fallback: '/assets/generated/book-cover-try.jpg' },
   };
 
   const BOOK_TRACK_MAPPING: Record<string, 'academic' | 'communicative' | 'exam' | 'culture'> = {
@@ -238,7 +249,7 @@ export const BookTrackBrowser: React.FC<BookTrackBrowserProps> = ({
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3">
           {filteredBooks.map((b) => {
             const isSelected = selectedBookId === b.id;
-            const coverImg = BOOK_COVER_MAP[b.id] || '/assets/generated/book-cover-minna.jpg';
+            const cover = BOOK_COVER_MAP[b.id] || { base: '/assets/generated/book-cover-minna', fallback: '/assets/generated/book-cover-minna.jpg' };
             const jlptBadges = b.jlpt ? b.jlpt.map((j) => j.toUpperCase()).join('·') : 'N5';
 
             return (
@@ -256,13 +267,27 @@ export const BookTrackBrowser: React.FC<BookTrackBrowserProps> = ({
               >
                 {/* Book Cover Banner Image */}
                 <div className="relative aspect-[16/10] w-full overflow-hidden bg-stone-900">
-                  <img
-                    src={coverImg}
-                    alt={b.title}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                    loading="lazy"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-stone-950/85 via-stone-950/25 to-transparent" />
+                  <picture className="w-full h-full block">
+                    <source
+                      type="image/avif"
+                      srcSet={`${cover.base}-thumb.avif`}
+                    />
+                    <source
+                      type="image/webp"
+                      srcSet={`${cover.base}-thumb.webp 400w, ${cover.base}-hero.webp 1200w`}
+                      sizes="(max-width: 640px) 50vw, 400px"
+                    />
+                    <img
+                      src={cover.fallback}
+                      alt={b.title}
+                      width={400}
+                      height={250}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </picture>
+                  <div className="absolute inset-0 bg-gradient-to-t from-stone-950/85 via-stone-950/25 to-transparent pointer-events-none" />
                   
                   {/* JLPT / CEFR Level Pill */}
                   <span className="absolute top-2 right-2 px-1.5 py-0.5 rounded-md text-[10px] font-black bg-stone-950/90 text-amber-400 border border-amber-500/40 backdrop-blur-xs">
@@ -338,6 +363,12 @@ export const BookTrackBrowser: React.FC<BookTrackBrowserProps> = ({
           <div className="md:hidden flex items-center gap-1.5 overflow-x-auto scrollbar-none pb-1">
             {chapterList.map((ch) => {
               const isSelected = selectedChapter === ch;
+              const sectionLabel =
+                selectedBookId === 'soumatome'
+                  ? `Minggu ${ch}`
+                  : selectedBookId === 'quartet'
+                  ? `Lesson ${ch}`
+                  : `Bab ${ch}`;
               return (
                 <button
                   key={ch}
@@ -348,7 +379,7 @@ export const BookTrackBrowser: React.FC<BookTrackBrowserProps> = ({
                       : 'bg-surface-2 border border-accent/20 text-appText-muted hover:text-appText-bright'
                   }`}
                 >
-                  Bab {ch}
+                  {sectionLabel}
                 </button>
               );
             })}
@@ -358,7 +389,13 @@ export const BookTrackBrowser: React.FC<BookTrackBrowserProps> = ({
           <div className="hidden md:block bg-surface border border-accent/20 rounded-2xl p-3 space-y-1 max-h-[520px] overflow-y-auto">
             {chapterList.map((ch) => {
               const isSelected = selectedChapter === ch;
-              const drillData = drillsByChapter[String(ch)];
+              const drillData = drillsByChapter[String(ch)] || drillsByChapter[String(ch - chapterOffset)];
+              const sectionLabel =
+                selectedBookId === 'soumatome'
+                  ? `Minggu ${ch}`
+                  : selectedBookId === 'quartet'
+                  ? `Lesson ${ch}`
+                  : `Bab ${ch}`;
               return (
                 <button
                   key={ch}
@@ -370,8 +407,8 @@ export const BookTrackBrowser: React.FC<BookTrackBrowserProps> = ({
                   }`}
                 >
                   <div className="truncate pr-2">
-                    <span className="font-mono font-bold mr-1.5">Bab {ch}:</span>
-                    <span>{drillData?.topic || `Materi Pelajaran ${ch}`}</span>
+                    <span className="font-mono font-bold mr-1.5">{sectionLabel}:</span>
+                    <span>{drillData?.topic || (selectedBookId === 'soumatome' ? `Minggu ${ch}` : selectedBookId === 'quartet' ? `Pelajaran ${ch}` : `Materi Pelajaran ${ch}`)}</span>
                   </div>
                   <ChevronRight className="w-3.5 h-3.5 shrink-0 opacity-60" />
                 </button>
@@ -386,11 +423,25 @@ export const BookTrackBrowser: React.FC<BookTrackBrowserProps> = ({
           <div className="bg-surface-2 border border-accent/20 rounded-2xl p-4 sm:p-5 flex flex-col sm:flex-row sm:items-center justify-between gap-4 shadow-sm">
             <div className="flex items-center gap-3.5 min-w-0">
               <div className="w-16 h-12 sm:w-20 sm:h-14 rounded-xl overflow-hidden shrink-0 border border-accent/30 shadow-md bg-stone-900">
-                <img
-                  src={BOOK_COVER_MAP[selectedBookId] || '/assets/generated/book-cover-minna.jpg'}
-                  alt={activeBook?.title}
-                  className="w-full h-full object-cover"
-                />
+                <picture className="w-full h-full block">
+                  <source
+                    type="image/avif"
+                    srcSet={`${(BOOK_COVER_MAP[selectedBookId] || BOOK_COVER_MAP.minna).base}-thumb.avif`}
+                  />
+                  <source
+                    type="image/webp"
+                    srcSet={`${(BOOK_COVER_MAP[selectedBookId] || BOOK_COVER_MAP.minna).base}-thumb.webp`}
+                  />
+                  <img
+                    src={(BOOK_COVER_MAP[selectedBookId] || BOOK_COVER_MAP.minna).fallback}
+                    alt={activeBook?.title}
+                    width={80}
+                    height={56}
+                    className="w-full h-full object-cover"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </picture>
               </div>
               <div className="space-y-0.5 min-w-0">
                 <span className="text-[10px] font-bold uppercase tracking-wider text-accent">
@@ -595,7 +646,7 @@ export const BookTrackBrowser: React.FC<BookTrackBrowserProps> = ({
         isOpen={isDrillModalOpen}
         onClose={() => setIsDrillModalOpen(false)}
         bookTitle={activeBook?.title || 'Buku Teks'}
-        chapterTitle={`Bab ${selectedChapter}: ${currentChapterDrillData.topic || ''}`}
+        chapterTitle={currentChapterDrillData.topic ? `Bab ${selectedChapter}: ${currentChapterDrillData.topic}` : `Bab ${selectedChapter}`}
         drills={currentDrills}
       />
     </div>

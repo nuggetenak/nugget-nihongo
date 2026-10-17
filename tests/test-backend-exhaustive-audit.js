@@ -1,6 +1,6 @@
 // ══════════════════════════════════════════════════════════════════
 //  tests/test-backend-exhaustive-audit.js
-//  EXHAUSTIVE BACKEND AUDIT SUITE FOR NUGGET NIHONGO (v16.0.0)
+//  EXHAUSTIVE BACKEND AUDIT SUITE FOR NUGGET NIHONGO (v20.0.0)
 //  Verifies 100% data integrity, referential validity, compiler pipelines,
 //  FSRS math, diagnostic inventories, and state management.
 // ══════════════════════════════════════════════════════════════════
@@ -39,20 +39,24 @@ const dataDir = path.resolve(__dirname, '../public/data');
   const p = path.join(dataDir, `vocab/vocab-${lvl}.js`);
   if (fs.existsSync(p)) eval(fs.readFileSync(p, 'utf8'));
 });
-['construction', 'food', 'kaigo'].forEach(sector => {
-  const p = path.join(dataDir, `vocab/ssw/${sector}.js`);
-  if (fs.existsSync(p)) eval(fs.readFileSync(p, 'utf8'));
-});
+const sswVocabDir = path.join(dataDir, 'vocab/ssw');
+if (fs.existsSync(sswVocabDir)) {
+  fs.readdirSync(sswVocabDir).forEach(sectorFile => {
+    if (sectorFile.endsWith('.js')) {
+      eval(fs.readFileSync(path.join(sswVocabDir, sectorFile), 'utf8'));
+    }
+  });
+}
 const vocabIndexPath = path.join(dataDir, 'vocab/vocab-index.js');
 auditAssert(fs.existsSync(vocabIndexPath), 'vocab-index.js exists');
 eval(fs.readFileSync(vocabIndexPath, 'utf8'));
 const canonicalVocabIds = new Set((global.vocabDB || []).map(v => v.id));
-[
-  ...(global.vocabSSW_Construction || []),
-  ...(global.vocabSSW_Food || []),
-  ...(global.vocabSSW_Kaigo || []),
-].forEach(v => canonicalVocabIds.add(v.id));
-auditAssert(canonicalVocabIds.size >= 4800, `Canonical Vocab DB loaded (${canonicalVocabIds.size} entries)`);
+Object.keys(global).forEach(k => {
+  if (k.startsWith('vocabSSW_') && Array.isArray(global[k])) {
+    global[k].forEach(v => canonicalVocabIds.add(v.id));
+  }
+});
+auditAssert(canonicalVocabIds.size >= 10000, `Canonical Vocab DB loaded (${canonicalVocabIds.size} entries across JLPT & 19 SSW sectors)`);
 
 // Load grammar files
 ['n5', 'n4', 'n3', 'n2', 'n1'].forEach(lvl => {
@@ -65,16 +69,12 @@ eval(fs.readFileSync(grammarIndexPath, 'utf8'));
 const canonicalGrammarIds = new Set((global.grammarDB || []).map(g => g.id));
 auditAssert(canonicalGrammarIds.size >= 850, `Canonical Grammar DB loaded (${canonicalGrammarIds.size} entries)`);
 
-const trackFiles = [
-  { id: 'curriculum-n5', file: 'curriculum-n5.json' },
-  { id: 'curriculum-n4', file: 'curriculum-n4.json' },
-  { id: 'curriculum-n3', file: 'curriculum-n3.json' },
-  { id: 'curriculum-n2', file: 'curriculum-n2.json' },
-  { id: 'curriculum-n1', file: 'curriculum-n1.json' },
-  { id: 'curriculum-ssw-kaigo', file: 'curriculum-ssw-kaigo.json' },
-  { id: 'curriculum-ssw-food', file: 'curriculum-ssw-food.json' },
-  { id: 'curriculum-ssw-construction', file: 'curriculum-ssw-construction.json' }
-];
+const currDir = path.resolve(__dirname, '../public/data/curriculum');
+const trackFiles = fs.readdirSync(currDir)
+  .filter(f => f.endsWith('.json'))
+  .sort()
+  .map(f => ({ id: f.replace('.json', ''), file: f }));
+auditAssert(trackFiles.length === 36, `All 36 curriculum tracks discovered on disk (${trackFiles.length} tracks)`);
 
 let totalTrackUnits = 0;
 let totalTrackLessons = 0;
@@ -134,8 +134,8 @@ for (const track of trackFiles) {
 
 auditAssert(missingGrammarRefs.length === 0, `All grammar references valid: 0 missing out of ${totalGrammarReferences}`, JSON.stringify(missingGrammarRefs.slice(0, 3)));
 auditAssert(missingVocabRefs.length === 0, `All vocab references valid: 0 missing out of ${totalVocabReferences}`, JSON.stringify(missingVocabRefs.slice(0, 3)));
-console.log(`  ✓ Total Units verified across 8 tracks: ${totalTrackUnits}`);
-console.log(`  ✓ Total Lessons verified across 8 tracks: ${totalTrackLessons}`);
+console.log(`  ✓ Total Units verified across ${trackFiles.length} tracks: ${totalTrackUnits}`);
+console.log(`  ✓ Total Lessons verified across ${trackFiles.length} tracks: ${totalTrackLessons}`);
 console.log(`  ✓ Total Grammar references verified: ${totalGrammarReferences} (100% valid)`);
 console.log(`  ✓ Total Vocab references verified: ${totalVocabReferences} (100% valid)`);
 

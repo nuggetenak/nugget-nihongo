@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="grad_railway" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34d399" />
+      <stop offset="100%" stop-color="#047857" />
+    </linearGradient>
+    <filter id="shadow_railway" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#000" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+  <rect width="64" height="64" rx="16" fill="#171410" stroke="#10b981" stroke-opacity="0.3" stroke-width="1.5" />
+  <circle cx="32" cy="32" r="24" fill="url(#grad_railway)" opacity="0.15" />
+  <path d="M22 18 L42 18 L42 40 L22 40 Z M26 44 L18 52 M38 44 L46 52 M22 36 L42 36" fill="none" stroke="url(#grad_railway)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" filter="url(#shadow_railway)" />
+  <circle cx="50" cy="14" r="9" fill="#0D0B08" stroke="#10b981" stroke-width="1.2" />
+  <text x="50" y="17.5" font-family="'Noto Sans JP', sans-serif" font-size="10" font-weight="900" fill="#fff" text-anchor="middle">鉄</text>
+</svg>

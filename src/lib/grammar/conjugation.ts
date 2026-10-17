@@ -67,6 +67,35 @@ export const GODAN_EXCEPTIONS = new Set<string>([
   '喋る', 'しゃべる',
 ]);
 
+export const SINGLE_KANJI_ICHIDAN_MAP: Record<string, string> = {
+  '見る': 'みる',
+  '診る': 'みる',
+  '看る': 'みる',
+  '視る': 'みる',
+  '観る': 'みる',
+  '満る': 'みる',
+  '着る': 'きる',
+  '寝る': 'ねる',
+  '出る': 'でる',
+  '似る': 'にる',
+  '煮る': 'にる',
+  '居る': 'いる',
+  '射る': 'いる',
+  '鋳る': 'いる',
+  '干る': 'ひる',
+  '涸る': 'ひる',
+  '乾る': 'ひる',
+  '率る': 'ひる',
+  '沃る': 'ひる',
+  '簸る': 'ひる',
+  '嚏る': 'ひる',
+  '得る': 'える',
+  '経る': 'へる',
+  '棄る': 'すてる',
+  '撫る': 'なでる',
+  '茹る': 'ゆでる',
+};
+
 export const COMMON_ICHIDAN_VERBS = new Set<string>([
   '見る', 'みる',
   '着る', 'きる',
@@ -76,13 +105,12 @@ export const COMMON_ICHIDAN_VERBS = new Set<string>([
   '居る', 'いる',
   '得る', 'える',
   '経る', 'へる',
-  '診る',
-  '観る',
-  '視る',
-  '射る',
-  '煮る',
-  '干る',
-  '鋳る',
+  '診る', '看る', '視る', '観る', '満る',
+  '射る', '煮る', '干る', '鋳る', '涸る', '乾る', '率る', '沃る', '簸る', '嚏る',
+  '棄る', '撫る', '茹る',
+  // Common JLPT N5-N1 Ichidan verbs
+  '起きる', '落ちる', '降りる', '借りる', '足りる', '閉じる', '感じる', '信じる', '生きる', '伸びる', '浴びる', '満ちる', '用いる', '通じる', '生じる', '応じる', '命じる', '準じる', '演じる', '報じる', '講じる', '重んじる', '帯びる',
+  '食べる', '答える', '教える', '覚える', '調べる', '集める', '始める', '続ける', '受ける', '届ける', '決める', '辞める', '止める', '進める', '述べる', '認める', '与える', '変える', '消える', '増える', '疲れる', '忘れる', '見せる', '迎える', '伝える', '替える', '換える', '代える', '買える', '行ける', '話せる', '飲める', '食べられる', '任せる', '遅れる', '晴れる', '連れる', '慣れる', '倒れる', '流れる', '離れる', '現れる', '尋ねる', '訪ねる', '重ねる', '束ねる', '兼ねる', '耐える', '絶える', '映える', '生える', '栄える', '抑える', '押さえる', '訴える', '整える', '備える', '支える', '抱える', '構える', '捉える', '捕らえる', '蓄える', '従える', '率いる', '企てる', '妨げる', '避ける', '告げる', '慌てる', '隔てる', '省みる', '顧みる', '試みる',
 ]);
 
 export const ROMAJI_MAP: Record<string, string> = {
@@ -137,35 +165,60 @@ export function romajiToKana(str: string): string {
   return result;
 }
 
-export function inferType(w: string, reading?: string): VerbType | null {
-  if (w === 'する' || w.endsWith('する')) return 'suru';
-  if (w === '来る' || w === 'くる') return 'kuru';
-  if (w === 'だ' || w === 'です') return 'copula';
+export function resolveVerbReading(word: string): string | undefined {
+  if (SINGLE_KANJI_ICHIDAN_MAP[word]) return SINGLE_KANJI_ICHIDAN_MAP[word];
+  if (typeof window !== 'undefined') {
+    const levels = ['vocabN5', 'vocabN4', 'vocabN3', 'vocabN2', 'vocabN1'];
+    for (const lvl of levels) {
+      const list = (window as any)[lvl];
+      if (Array.isArray(list)) {
+        const found = list.find((item: any) => item && (item.word === word || item.kanji === word));
+        if (found && (found.reading || found.kana)) {
+          return found.reading || found.kana;
+        }
+      }
+    }
+  }
+  return undefined;
+}
 
-  if (w.endsWith('い') && !w.endsWith('ない')) {
+export function inferType(w: string, reading?: string): VerbType | null {
+  if (!w || typeof w !== 'string') return null;
+  const word = w.trim();
+  if (word === 'する' || word.endsWith('する')) return 'suru';
+  if (word === '来る' || word === 'くる') return 'kuru';
+  if (word === 'だ' || word === 'です') return 'copula';
+
+  if (word.endsWith('い') && !word.endsWith('ない')) {
     return 'adj-i';
   }
 
-  if (w.endsWith('る')) {
-    if (GODAN_EXCEPTIONS.has(w)) return 'godan';
-    if (COMMON_ICHIDAN_VERBS.has(w)) return 'ichidan';
+  if (word.endsWith('る')) {
+    if (GODAN_EXCEPTIONS.has(word)) return 'godan';
+    if (COMMON_ICHIDAN_VERBS.has(word) || SINGLE_KANJI_ICHIDAN_MAP[word]) return 'ichidan';
 
-    const preRu = w.slice(0, -1);
+    const resolvedReading = reading || resolveVerbReading(word);
+
+    const preRu = word.slice(0, -1);
     const lastChar = preRu.slice(-1);
     const iRow = ['き','に','み','い','り','ぎ','じ','び','ぴ','ち','ひ','し','ゐ'];
     const eRow = ['け','ね','め','え','れ','げ','ぜ','べ','ぺ','て','へ','せ','ゑ','で'];
     if (iRow.includes(lastChar) || eRow.includes(lastChar)) return 'ichidan';
 
-    if (reading && reading.endsWith('る')) {
-      const rPreRu = reading.slice(0, -1);
+    if (resolvedReading && resolvedReading.endsWith('る')) {
+      const rPreRu = resolvedReading.slice(0, -1);
       const rLastChar = rPreRu.slice(-1);
-      if (iRow.includes(rLastChar) || eRow.includes(rLastChar)) return 'ichidan';
+      if (iRow.includes(rLastChar) || eRow.includes(rLastChar)) {
+        if (!GODAN_EXCEPTIONS.has(word) && !GODAN_EXCEPTIONS.has(resolvedReading)) {
+          return 'ichidan';
+        }
+      }
     }
 
     return 'godan';
   }
 
-  if (/[うくぐすつぬぶむ]$/.test(w)) return 'godan';
+  if (/[うくぐすつぬぶむ]$/.test(word)) return 'godan';
 
   return null;
 }

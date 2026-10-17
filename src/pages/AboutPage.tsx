@@ -19,9 +19,11 @@ import {
   GraduationCap,
   Volume2,
   History,
+  Scale,
 } from 'lucide-react';
 import { useAppStore } from '../store/useAppStore';
 import { APP_VERSION, APP_RELEASE_NAME } from '../config/version';
+import { LicenseAttributionModal } from '../components/ui/LicenseAttributionModal';
 
 interface FAQItem {
   id: string;
@@ -41,7 +43,7 @@ const FAQ_LIST: FAQItem[] = [
     id: 'faq-2',
     category: 'umum',
     q: 'Apakah aplikasi ini benar-benar bisa dipakai 100% offline tanpa kuota?',
-    a: 'Ya, 100%! Seluruh basis data (10.500+ kosakata dan 850+ pola tata bahasa), mesin evaluasi kuis, konjugasi verba, pelacak memori FSRS, dan sintesis suara pelafalan (Web Speech API) berjalan secara lokal di perangkatmu. Kamu bisa belajar lancar saat naik pesawat, kereta bawah tanah, atau di daerah tanpa sinyal internet.',
+    a: 'Ya! Seluruh basis data (28.500+ kosakata dan 850+ tata bahasa), mesin kuis, konjugasi verba, dan pelacak FSRS berjalan 100% lokal di perangkatmu. Untuk audio pelafalan saat offline, pastikan paket suara bahasa Jepang (Google Speech Services / Apple Voice) sudah terpasang di pengaturan perangkatmu.',
   },
   {
     id: 'faq-3',
@@ -59,7 +61,7 @@ const FAQ_LIST: FAQItem[] = [
     id: 'faq-4b',
     category: 'materi',
     q: 'Apa itu Jalur Vokasional SSW (Tokutei Ginou) dan sektor apa saja yang tersedia?',
-    a: 'Jalur Vokasional SSW membekali calon pekerja terampil di Jepang dengan bahasa kerja nyata: (1) SSW Kaigo: Komunikasi empatik menyapa lansia dan laporan situasi darurat; (2) SSW Restoran & Pengolahan: Standar kebersihan, keamanan pangan, dan etika pelayanan; (3) SSW Konstruksi: Keselamatan kerja di lapangan proyek (K3), aba-aba kerja, dan pencegahan bahaya.',
+    a: 'Jalur Vokasional SSW membekali calon pekerja terampil di Jepang dengan bahasa kerja nyata di 19 sektor resmi: Kaigo (Perawat Lansia), Gaishoku (Restoran), Kensetsu (Konstruksi), Nogyo (Pertanian), Zousen (Galangan Kapal), Seizogyo (Manufaktur & Mesin), Shukuhaku (Perhotelan), Jidousha (Otomotif), Butsuryu (Logistik), dll. Dilengkapi 190 skenario kerja, aba-aba darurat K3, dan simulasi CBT Prometric berstandar industri.',
   },
   {
     id: 'faq-4c',
@@ -95,7 +97,7 @@ const FAQ_LIST: FAQItem[] = [
     id: 'faq-9',
     category: 'materi',
     q: 'Apakah ada suara pelafalan penutur asli untuk tiap kosakata dan kalimat?',
-    a: 'Ya! Setiap kartu kosakata, pola tata bahasa, dan contoh kalimat memiliki ikon speaker audio. Kami memanfaatkan mesin Web Speech API bahasa Jepang beraksen Tokyo dengan kecepatan artikulasi pedagogis (0.9x) agar pemula dapat menangkap nada dan pelafalan aksen dengan jelas.',
+    a: 'Ya! Setiap kartu kosakata, tata bahasa, dan contoh kalimat dilengkapi tombol audio Web Speech API beraksen Tokyo. Agar suara dapat diputar lancar saat luring di Android, buka Pengaturan Ponsel > Sistem / Aksesibilitas > Output Text-to-Speech > Layanan Ucapan Google > Pasang Data Suara > pilih Bahasa Jepang. Di iOS dan macOS, suara penutur asli Jepang sudah terpasang secara bawaan.',
   },
   {
     id: 'faq-10',
@@ -122,6 +124,8 @@ export const AboutPage: React.FC = () => {
   const [faqSearch, setFaqSearch] = useState('');
   const [selectedFaqCategory, setSelectedFaqCategory] = useState<string>('all');
   const [expandedFaqId, setExpandedFaqId] = useState<string | null>('faq-1');
+  const [isLicenseModalOpen, setIsLicenseModalOpen] = useState(false);
+  const [isBibliographyOpen, setIsBibliographyOpen] = useState(false);
 
   const filteredFaqs = FAQ_LIST.filter((item) => {
     const matchesCat = selectedFaqCategory === 'all' || item.category === selectedFaqCategory;
@@ -138,14 +142,14 @@ export const AboutPage: React.FC = () => {
   };
 
   return (
-    <div className="max-w-4xl mx-auto py-6 space-y-10 animate-in fade-in duration-300">
+    <div className="max-w-4xl mx-auto pt-4 sm:pt-6 pb-[calc(5.5rem+env(safe-area-inset-bottom))] lg:pb-12 space-y-8 sm:space-y-10 animate-in fade-in duration-300 min-w-0 overflow-x-hidden">
       {/* Hero Presentation Header */}
       <div className="relative overflow-hidden rounded-2xl sm:rounded-3xl bg-gradient-to-r from-amber-950/70 via-amber-900/40 to-surface border border-accent/25 p-4 sm:p-10 shadow-lg">
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 sm:gap-6">
           <div className="max-w-xl space-y-2.5 sm:space-y-3">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/15 border border-amber-500/30 text-accent font-bold text-xs">
-              <img src="/icons/icon-192.png" alt="Logo" className="w-4 h-4 rounded-full object-cover" />
-              <span>Nugget Nihongo · {APP_VERSION} ({APP_RELEASE_NAME})</span>
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/15 border border-amber-500/30 text-accent font-bold text-xs max-w-full">
+              <img src="/icons/icon-192.png" alt="Logo" className="w-4 h-4 rounded-full object-cover shrink-0" />
+              <span className="truncate">Nugget Nihongo · {APP_VERSION} <span className="hidden sm:inline">({APP_RELEASE_NAME})</span></span>
             </div>
 
             <h1 className="text-xl sm:text-4xl font-extrabold text-appText-bright tracking-tight leading-tight">
@@ -159,7 +163,7 @@ export const AboutPage: React.FC = () => {
             <div className="pt-1 sm:pt-2 flex flex-wrap gap-2 sm:gap-3">
               <button
                 onClick={openOnboarding}
-                className="px-3.5 sm:px-4 py-2 sm:py-2.5 rounded-xl bg-accent hover:bg-accent-hot text-bg font-bold text-xs flex items-center gap-1.5 sm:gap-2 transition-all shadow-glow active:scale-95 min-h-[40px]"
+                className="px-3.5 sm:px-4 py-2.5 rounded-xl bg-accent hover:bg-accent-hot text-bg font-bold text-xs flex items-center gap-1.5 sm:gap-2 transition-all shadow-glow active:scale-95 min-h-[44px]"
               >
                 <span>Mulai Tur Aplikasi</span>
                 <Compass className="w-4 h-4" />
@@ -167,7 +171,7 @@ export const AboutPage: React.FC = () => {
 
               <button
                 onClick={openFeatureGuide}
-                className="px-3.5 sm:px-4 py-2 sm:py-2.5 rounded-xl bg-surface-2 hover:bg-surface-3 text-appText-bright border border-accent/25 font-bold text-xs flex items-center gap-1.5 sm:gap-2 transition-all active:scale-95 min-h-[40px]"
+                className="px-3.5 sm:px-4 py-2.5 rounded-xl bg-surface-2 hover:bg-surface-3 text-appText-bright border border-accent/25 font-bold text-xs flex items-center gap-1.5 sm:gap-2 transition-all active:scale-95 min-h-[44px]"
               >
                 <span>Panduan Fitur</span>
                 <BookOpen className="w-4 h-4 text-accent" />
@@ -175,7 +179,7 @@ export const AboutPage: React.FC = () => {
 
               <button
                 onClick={openPatchNotes}
-                className="px-3.5 sm:px-4 py-2 sm:py-2.5 rounded-xl bg-surface-2 hover:bg-surface-3 text-appText-bright border border-accent/25 font-bold text-xs flex items-center gap-1.5 sm:gap-2 transition-all active:scale-95 min-h-[40px]"
+                className="px-3.5 sm:px-4 py-2.5 rounded-xl bg-surface-2 hover:bg-surface-3 text-appText-bright border border-accent/25 font-bold text-xs flex items-center gap-1.5 sm:gap-2 transition-all active:scale-95 min-h-[44px]"
               >
                 <span>Catatan Rilis</span>
                 <History className="w-4 h-4 text-accent-hot" />
@@ -319,65 +323,81 @@ export const AboutPage: React.FC = () => {
         </div>
       </div>
 
-      {/* Curriculum Coverage Summary */}
+      {/* Curriculum Coverage Summary (Ticket T-207) */}
       <div className="bg-surface border border-accent/20 rounded-3xl p-6 sm:p-8 space-y-5 shadow-sm">
         <h2 className="font-bold text-sm sm:text-base text-appText-bright flex items-center gap-2 border-b border-accent/15 pb-3">
           <GraduationCap className="w-4 h-4 text-accent" />
           <span>Cakupan Kurikulum & Data Terverifikasi</span>
         </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3.5 pt-1">
-          <div className="p-4 rounded-2xl bg-surface-2/80 border border-purple-500/20 flex items-center justify-between">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3.5 pt-1">
+          <div className="p-4 rounded-2xl bg-surface-2/80 border border-purple-500/20 flex flex-col justify-between gap-1">
             <span className="flex items-center gap-2.5 text-xs font-bold text-appText-bright">
               <span className="w-3 h-3 rounded-full bg-purple-400 shrink-0" />
               JLPT N5 (Dasar Pemula)
             </span>
-            <span className="text-xs text-appText-muted font-mono">1.321 Kosakata · 94 Grammar</span>
+            <span className="text-xs text-appText-muted font-mono">1.321 Kosakata · 94 Grammar · 103 Kanji</span>
           </div>
 
-          <div className="p-4 rounded-2xl bg-surface-2/80 border border-orange-500/20 flex items-center justify-between">
+          <div className="p-4 rounded-2xl bg-surface-2/80 border border-orange-500/20 flex flex-col justify-between gap-1">
             <span className="flex items-center gap-2.5 text-xs font-bold text-appText-bright">
               <span className="w-3 h-3 rounded-full bg-orange-400 shrink-0" />
               JLPT N4 (Percakapan Dasar)
             </span>
-            <span className="text-xs text-appText-muted font-mono">1.286 Kosakata · 92 Grammar</span>
+            <span className="text-xs text-appText-muted font-mono">1.286 Kosakata · 92 Grammar · 181 Kanji</span>
           </div>
 
-          <div className="p-4 rounded-2xl bg-surface-2/80 border border-sky-500/20 flex items-center justify-between">
+          <div className="p-4 rounded-2xl bg-surface-2/80 border border-sky-500/20 flex flex-col justify-between gap-1">
             <span className="flex items-center gap-2.5 text-xs font-bold text-appText-bright">
               <span className="w-3 h-3 rounded-full bg-sky-400 shrink-0" />
               JLPT N3 (Menengah)
             </span>
-            <span className="text-xs text-appText-muted font-mono">2.580 Kosakata · 163 Grammar</span>
+            <span className="text-xs text-appText-muted font-mono">2.580 Kosakata · 163 Grammar · 367 Kanji</span>
           </div>
 
-          <div className="p-4 rounded-2xl bg-surface-2/80 border border-emerald-500/20 flex items-center justify-between">
+          <div className="p-4 rounded-2xl bg-surface-2/80 border border-emerald-500/20 flex flex-col justify-between gap-1">
             <span className="flex items-center gap-2.5 text-xs font-bold text-appText-bright">
               <span className="w-3 h-3 rounded-full bg-emerald-400 shrink-0" />
               JLPT N2 (Tingkat Mahir)
             </span>
-            <span className="text-xs text-appText-muted font-mono">2.104 Kosakata · 310 Grammar</span>
+            <span className="text-xs text-appText-muted font-mono">2.104 Kosakata · 310 Grammar · 415 Kanji</span>
           </div>
 
-          <div className="p-4 rounded-2xl bg-surface-2/80 border border-rose-500/20 flex items-center justify-between">
+          <div className="p-4 rounded-2xl bg-surface-2/80 border border-rose-500/20 flex flex-col justify-between gap-1">
             <span className="flex items-center gap-2.5 text-xs font-bold text-appText-bright">
               <span className="w-3 h-3 rounded-full bg-rose-400 shrink-0" />
               JLPT N1 (Tingkat Ahli)
             </span>
-            <span className="text-xs text-appText-muted font-mono">3.217 Kosakata · 200 Grammar</span>
+            <span className="text-xs text-appText-muted font-mono">3.217 Kosakata · 200 Grammar · 1.144 Kanji</span>
           </div>
 
-          <div className="p-4 rounded-2xl bg-surface-2/80 border border-amber-500/30 flex items-center justify-between bg-amber-500/5">
+          <div className="p-4 rounded-2xl bg-surface-2/80 border border-teal-500/20 flex flex-col justify-between gap-1">
+            <span className="flex items-center gap-2.5 text-xs font-bold text-appText-bright">
+              <span className="w-3 h-3 rounded-full bg-teal-400 shrink-0" />
+              JFT-Basic A1 & A2 (Irodori)
+            </span>
+            <span className="text-xs text-appText-muted font-mono">3.400+ Kosakata Kehidupan · 78 Can-Do</span>
+          </div>
+
+          <div className="p-4 rounded-2xl bg-surface-2/80 border border-amber-500/30 flex flex-col justify-between gap-1 bg-amber-500/5">
             <span className="flex items-center gap-2.5 text-xs font-bold text-accent">
               <span className="w-3 h-3 rounded-full bg-amber-500 shrink-0" />
-              Jalur SSW Vokasional
+              Jalur Vokasional SSW
             </span>
-            <span className="text-xs text-appText-muted font-mono">3 Sektor · 45 Pelajaran</span>
+            <span className="text-xs text-appText-muted font-mono">19 Sektor Resmi · 190 Modul Kerja Lapangan</span>
+          </div>
+
+          <div className="p-4 rounded-2xl bg-surface-2/80 border border-indigo-500/20 flex flex-col justify-between gap-1">
+            <span className="flex items-center gap-2.5 text-xs font-bold text-appText-bright">
+              <span className="w-3 h-3 rounded-full bg-indigo-400 shrink-0" />
+              Jalur Nol & Freeway (Kana)
+            </span>
+            <span className="text-xs text-appText-muted font-mono">46 Hiragana · 46 Katakana · 71 Variasi</span>
           </div>
         </div>
 
         <div className="p-3.5 rounded-xl bg-amber-500/10 border border-amber-500/20 text-xs text-appText-muted flex flex-col sm:flex-row sm:items-center justify-between gap-2">
-          <span>Total Database: <b>10.508 Kosakata</b> & <b>859 Pola Tata Bahasa</b></span>
-          <span className="text-accent font-semibold">100% Bebas Typo & Terindeks</span>
+          <span>Basis Data Terpadu: <b>28.546 Kosakata</b>, <b>859+ Pola Tata Bahasa</b>, & <b>2.383 Kanji</b></span>
+          <span className="text-accent font-semibold">100% Terverifikasi EDRDG & KanjiVG</span>
         </div>
       </div>
 
@@ -471,18 +491,69 @@ export const AboutPage: React.FC = () => {
             The Japan Foundation (2017). <em>JF Standard for Japanese-Language Education</em> & CEFR-J Framework.
           </div>
         </div>
+
+        {/* Accordion Rujukan Akademik & Metodologis (Ticket T-209) */}
+        <div className="border border-accent/20 rounded-2xl overflow-hidden bg-surface-2/60">
+          <button
+            onClick={() => setIsBibliographyOpen((prev) => !prev)}
+            aria-expanded={isBibliographyOpen}
+            className="w-full p-4 flex items-center justify-between text-left hover:bg-surface-3 transition-colors active:scale-95"
+          >
+            <div className="flex items-center gap-2.5">
+              <BookOpen className="w-4 h-4 text-accent" />
+              <span className="text-xs sm:text-sm font-bold text-appText-bright">
+                Daftar Pustaka Akademik & Rujukan Pedagogis (APA 7th)
+              </span>
+            </div>
+            {isBibliographyOpen ? (
+              <ChevronUp className="w-4 h-4 text-accent" />
+            ) : (
+              <ChevronDown className="w-4 h-4 text-accent" />
+            )}
+          </button>
+
+          {isBibliographyOpen && (
+            <div className="p-4 sm:p-5 border-t border-accent/15 space-y-3 text-xs text-appText-muted leading-relaxed animate-in fade-in duration-200">
+              <ul className="list-disc list-inside space-y-2 text-[11px] font-mono">
+                <li>
+                  <strong>Pienemann, M. (1998).</strong> <em>Language Processing and Second Language Development: Processability Theory</em>. John Benjamins Publishing Company.
+                </li>
+                <li>
+                  <strong>Lado, R. (1957).</strong> <em>Linguistics Across Cultures: Applied Linguistics for Language Teachers</em>. University of Michigan Press.
+                </li>
+                <li>
+                  <strong>Tinkham, T. (1997).</strong> The effects of semantic and thematic clustering on the learning of second language vocabulary. <em>Second Language Research</em>, 13(2), 138–163.
+                </li>
+                <li>
+                  <strong>Ye, J., et al. (2022).</strong> A Stochastic Shortest Path Algorithm for Optimizing Spaced Repetition Scheduling. <em>arXiv preprint</em>, arXiv:2202.04944.
+                </li>
+                <li>
+                  <strong>The Japan Foundation (2017).</strong> <em>JF Standard for Japanese-Language Education</em>. Japan Foundation.
+                </li>
+                <li>
+                  <strong>Krashen, S. (1982).</strong> <em>Principles and Practice in Second Language Acquisition</em>. Pergamon Press.
+                </li>
+                <li>
+                  <strong>Ministry of Health, Labour and Welfare (MHLW / 厚生労働省, 2024).</strong> <em>Japanese Language Guidelines for Foreign Caregivers (外国人介護職員のための日本語学習支援手引き)</em>. Tokyo.
+                </li>
+              </ul>
+            </div>
+          )}
+        </div>
       </div>
 
-      {/* Version & Technical Architecture */}
+      {/* Version & Technical Architecture (Ticket T-206) */}
       <div className="bg-surface border border-accent/20 rounded-3xl p-6 sm:p-8 space-y-4 shadow-sm">
         <h2 className="font-bold text-sm sm:text-base text-appText-bright flex items-center gap-2 border-b border-accent/15 pb-3">
           <Cpu className="w-4 h-4 text-accent" />
           <span>Spesifikasi Teknis & Rilis</span>
         </h2>
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 text-xs">
-          <div
+          <button
+            type="button"
             onClick={openPatchNotes}
-            className="p-3 rounded-xl bg-surface-2 border border-accent/20 hover:border-accent/40 cursor-pointer transition-all hover:bg-surface-3 group"
+            className="p-3 rounded-xl bg-surface-2 border border-accent/20 hover:border-accent/40 cursor-pointer transition-all hover:bg-surface-3 group text-left focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent active:scale-95"
+            aria-label="Buka Catatan Rilis Lengkap Versi Aplikasi"
             title="Klik untuk membuka Catatan Rilis Lengkap"
           >
             <div className="text-appText-muted text-[11px] flex items-center justify-between">
@@ -490,7 +561,7 @@ export const AboutPage: React.FC = () => {
               <History className="w-3 h-3 text-accent group-hover:rotate-12 transition-transform" />
             </div>
             <div className="font-bold text-accent font-mono mt-0.5 group-hover:underline">{APP_VERSION}</div>
-          </div>
+          </button>
           <div className="p-3 rounded-xl bg-surface-2 border border-accent/10">
             <div className="text-appText-muted text-[11px]">Framework</div>
             <div className="font-bold text-appText-bright mt-0.5">React + Vite + TS</div>
@@ -499,22 +570,42 @@ export const AboutPage: React.FC = () => {
             <div className="text-appText-muted text-[11px]">Gaya Desain</div>
             <div className="font-bold text-appText-bright mt-0.5">Tailwind CSS (Warm Amber)</div>
           </div>
-          <div className="p-3 rounded-xl bg-surface-2 border border-accent/10">
-            <div className="text-appText-muted text-[11px]">Lisensi</div>
-            <div className="font-bold text-appText-bright mt-0.5">Open Source</div>
-          </div>
+          <button
+            onClick={() => setIsLicenseModalOpen(true)}
+            className="p-3 rounded-xl bg-surface-2 border border-accent/20 hover:border-accent text-left transition-all group"
+            title="Buka Lisensi & Hak Cipta Korpus Terbuka"
+          >
+            <div className="text-appText-muted text-[11px] flex items-center justify-between">
+              <span>Lisensi & Hak Cipta</span>
+              <ExternalLink className="w-3 h-3 text-accent group-hover:translate-x-0.5 transition-transform" />
+            </div>
+            <div className="font-bold text-accent mt-0.5 group-hover:underline">MIT & Creative Commons ↗</div>
+          </button>
         </div>
 
-        <div className="pt-1">
+        <div className="pt-1 space-y-2">
+          <button
+            onClick={() => setActiveTab('methodology')}
+            className="w-full min-h-[44px] py-2.5 px-4 rounded-xl bg-amber-500/10 hover:bg-amber-500/20 border border-amber-500/30 hover:border-amber-500 text-amber-300 font-bold text-xs flex items-center justify-center gap-2 transition-all shadow-sm active:scale-95"
+          >
+            <GraduationCap className="w-4 h-4 text-amber-400" />
+            <span>Buka Metodologi Pedagogis & Batas Epistemik (Corpus v30)</span>
+          </button>
           <button
             onClick={openPatchNotes}
-            className="w-full py-2.5 px-4 rounded-xl bg-surface-2 hover:bg-surface-3 border border-accent/25 hover:border-accent text-appText-bright font-bold text-xs flex items-center justify-center gap-2 transition-all shadow-sm"
+            className="w-full min-h-[44px] py-2.5 px-4 rounded-xl bg-surface-2 hover:bg-surface-3 border border-accent/25 hover:border-accent text-appText-bright font-bold text-xs flex items-center justify-center gap-2 transition-all shadow-sm active:scale-95"
           >
             <History className="w-4 h-4 text-accent" />
             <span>Buka Riwayat Catatan Rilis & Changelog Lengkap</span>
           </button>
         </div>
       </div>
+
+      {/* Modal Lisensi & Hak Cipta (Ticket T-206) */}
+      <LicenseAttributionModal
+        isOpen={isLicenseModalOpen}
+        onClose={() => setIsLicenseModalOpen(false)}
+      />
     </div>
   );
 };

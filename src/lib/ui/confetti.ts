@@ -19,6 +19,11 @@ interface ConfettiParticle {
 export function fireConfetti(options?: { count?: number; durationMs?: number }) {
   if (typeof window === 'undefined' || typeof document === 'undefined') return;
 
+  // Respect user's prefers-reduced-motion preference (WCAG 2.1 SC 2.3.3)
+  if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    return;
+  }
+
   const count = options?.count ?? 65;
   const durationMs = options?.durationMs ?? 2500;
 

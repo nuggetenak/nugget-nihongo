@@ -15,13 +15,65 @@ CREATE TABLE IF NOT EXISTS public.profiles (
   id            UUID PRIMARY KEY REFERENCES auth.users(id) ON DELETE CASCADE,
   display_name  TEXT,
   avatar_url    TEXT,
-  current_level TEXT DEFAULT 'n5' CHECK (current_level IN ('n5','n4','n3','n2','n1','beyond')),
+  current_level TEXT DEFAULT 'n5' CHECK (
+    current_level IN (
+      'n5','n4','n3','n2','n1','beyond',
+      'jft','jft_a1','jft_a2','jft-a1','jft-a2','a1','a2',
+      'ssw-kaigo','ssw_kaigo',
+      'ssw-food','ssw_food',
+      'ssw-construction','ssw_construction',
+      'ssw-agriculture','ssw_agriculture',
+      'ssw-accommodation','ssw_accommodation',
+      'ssw-building-cleaning','ssw_building_cleaning',
+      'ssw-manufacturing','ssw_manufacturing',
+      'ssw-automobile','ssw_automobile',
+      'ssw-aviation','ssw_aviation',
+      'ssw-fishery','ssw_fishery',
+      'ssw-food-service','ssw_food_service',
+      'ssw-industrial-machinery','ssw_industrial_machinery',
+      'ssw-electric-electronic','ssw_electric_electronic',
+      'ssw-shipbuilding','ssw_shipbuilding',
+      'ssw-logistics','ssw_logistics',
+      'ssw-railway','ssw_railway',
+      'ssw-forestry','ssw_forestry',
+      'ssw-timber','ssw_timber',
+      'ssw-textile','ssw_textile'
+    )
+  ),
   xp            INTEGER DEFAULT 0,
   streak_days   INTEGER DEFAULT 0,
   streak_last   DATE,
   learning_dna  JSONB DEFAULT '{}',
   created_at    TIMESTAMPTZ DEFAULT NOW(),
   updated_at    TIMESTAMPTZ DEFAULT NOW()
+);
+
+-- Safe migration for existing databases to support JFT and 19 SSW tracks
+ALTER TABLE public.profiles DROP CONSTRAINT IF EXISTS profiles_current_level_check;
+ALTER TABLE public.profiles ADD CONSTRAINT profiles_current_level_check CHECK (
+  current_level IN (
+    'n5','n4','n3','n2','n1','beyond',
+    'jft','jft_a1','jft_a2','jft-a1','jft-a2','a1','a2',
+    'ssw-kaigo','ssw_kaigo',
+    'ssw-food','ssw_food',
+    'ssw-construction','ssw_construction',
+    'ssw-agriculture','ssw_agriculture',
+    'ssw-accommodation','ssw_accommodation',
+    'ssw-building-cleaning','ssw_building_cleaning',
+    'ssw-manufacturing','ssw_manufacturing',
+    'ssw-automobile','ssw_automobile',
+    'ssw-aviation','ssw_aviation',
+    'ssw-fishery','ssw_fishery',
+    'ssw-food-service','ssw_food_service',
+    'ssw-industrial-machinery','ssw_industrial_machinery',
+    'ssw-electric-electronic','ssw_electric_electronic',
+    'ssw-shipbuilding','ssw_shipbuilding',
+    'ssw-logistics','ssw_logistics',
+    'ssw-railway','ssw_railway',
+    'ssw-forestry','ssw_forestry',
+    'ssw-timber','ssw_timber',
+    'ssw-textile','ssw_textile'
+  )
 );
 
 -- Add learning_dna if table pre-existed without it (safe no-op if already present)
@@ -49,7 +101,7 @@ CREATE POLICY "profiles_update_own" ON public.profiles
 CREATE TABLE IF NOT EXISTS public.srs_cards (
   id            BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
   user_id       UUID NOT NULL REFERENCES auth.users(id) ON DELETE CASCADE,
-  item_type     TEXT NOT NULL CHECK (item_type IN ('vocab','grammar','kanji')),
+  item_type     TEXT NOT NULL CHECK (item_type IN ('vocab','grammar','kanji','choukai','dialogue','k3_safety','diagnostic','panic','k3','gemba','kotowaza')),
   item_id       TEXT NOT NULL,  -- e.g. 'vg-n5-00001' or 'gn5-00001'
   -- FSRS fields
   stability     REAL DEFAULT 0,
@@ -64,6 +116,12 @@ CREATE TABLE IF NOT EXISTS public.srs_cards (
   created_at    TIMESTAMPTZ DEFAULT NOW(),
   updated_at    TIMESTAMPTZ DEFAULT NOW(),
   UNIQUE(user_id, item_type, item_id)
+);
+
+-- Safe migration for existing databases to support choukai, panic/K3, gemba, dialogue, kotowaza, k3_safety, diagnostic
+ALTER TABLE public.srs_cards DROP CONSTRAINT IF EXISTS srs_cards_item_type_check;
+ALTER TABLE public.srs_cards ADD CONSTRAINT srs_cards_item_type_check CHECK (
+  item_type IN ('vocab','grammar','kanji','choukai','dialogue','k3_safety','diagnostic','panic','k3','gemba','kotowaza')
 );
 
 CREATE INDEX IF NOT EXISTS idx_srs_user_due   ON public.srs_cards(user_id, due);

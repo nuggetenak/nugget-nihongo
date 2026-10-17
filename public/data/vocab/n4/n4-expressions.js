@@ -7,128 +7,231 @@
 window.vocabN4_Expressions = [
 
 {
-  id: 'vg-n4-00387',
-  word: '〜くらい',
-  reading: '〜くらい',
-  romaji: 'kurai',
-  meaning_id: 'kira-kira ~, sekitar ~',
-  meaning_en: 'about ~, approximately ~',
-  jlpt: 'n4',
-  pos: 'particle',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['bahasa-komunikasi'],
-  register: 'neutral',
-  lawan_bicara: [],
-  nuance: null,
-  conj_type: null,
-  examples: [{"jp":"ここから駅まで歩いて十分くらいかかります。","id":"Dari sini ke stasiun butuh waktu sekitar sepuluh menit jalan kaki.","level":"n4","tags":["kehidupan-sehari","ruang-arah"]},{"jp":"リンゴを三つくらい買ってきてください。","id":"Tolong belikan sekitar tiga buah apel.","level":"n4","tags":["belanja","makanan-minuman"]}],
-  synonyms: [],
-  antonyms: [],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  "id": "vg-n4-00387",
+  "word": "〜くらい",
+  "reading": "〜くらい",
+  "romaji": "kurai",
+  "meaning_id": "kira-kira ~, sekitar ~",
+  "meaning_en": "about ~, approximately ~",
+  "jlpt": "n4",
+  "pos": "particle",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "bahasa-komunikasi"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [],
+  "nuance": null,
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "ここから駅まで歩いて十分くらいかかります。",
+      "id": "Dari sini ke stasiun butuh waktu sekitar sepuluh menit jalan kaki.",
+      "level": "n4",
+      "tags": [
+        "kehidupan-sehari",
+        "ruang-arah"
+      ]
+    },
+    {
+      "jp": "リンゴを三つくらい買ってきてください。",
+      "id": "Tolong belikan sekitar tiga buah apel.",
+      "level": "n4",
+      "tags": [
+        "belanja",
+        "makanan-minuman"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus"
 },
 
 {
-  id: 'vg-n4-00393',
-  word: '〜ずつ',
-  reading: '〜ずつ',
-  romaji: 'zutsu',
-  meaning_id: 'masing-masing ~, tiap ~',
-  meaning_en: '~ each, ~ at a time',
-  jlpt: 'n4',
-  pos: 'particle',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['bahasa-komunikasi'],
-  register: 'neutral',
-  lawan_bicara: [],
-  nuance: null,
-  conj_type: null,
-  examples: [{"jp":"一人にプリントを二枚ずつ配ってください。","id":"Tolong bagikan lembar cetakan masing-masing dua lembar kepada setiap orang.","level":"n4","tags":["pendidikan","pekerjaan"]},{"jp":"毎日少しずつ新しい言葉を覚えています。","id":"Setiap hari saya mengingat kata-kata baru sedikit demi sedikit.","level":"n4","tags":["pendidikan"]}],
-  synonyms: [],
-  antonyms: [],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  "id": "vg-n4-00393",
+  "word": "〜ずつ",
+  "reading": "〜ずつ",
+  "romaji": "zutsu",
+  "meaning_id": "masing-masing ~, tiap ~",
+  "meaning_en": "~ each, ~ at a time",
+  "jlpt": "n4",
+  "pos": "particle",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "bahasa-komunikasi"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [],
+  "nuance": null,
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "一人にプリントを二枚ずつ配ってください。",
+      "id": "Tolong bagikan lembar cetakan masing-masing dua lembar kepada setiap orang.",
+      "level": "n4",
+      "tags": [
+        "pendidikan",
+        "pekerjaan"
+      ]
+    },
+    {
+      "jp": "毎日少しずつ新しい言葉を覚えています。",
+      "id": "Setiap hari saya mengingat kata-kata baru sedikit demi sedikit.",
+      "level": "n4",
+      "tags": [
+        "pendidikan"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus"
 },
 
 {
-  id: 'vg-n4-00404',
-  word: '〜でございます',
-  reading: '〜でございます',
-  romaji: 'degozaimasu',
-  meaning_id: 'adalah ~ (kopula sangat formal)',
-  meaning_en: 'is ~ (very formal copula)',
-  jlpt: 'n4',
-  pos: 'expr',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['pertemanan', 'kualitas'],
-  register: 'neutral',
-  lawan_bicara: [],
-  nuance: null,
-  conj_type: null,
-  examples: [{"jp":"こちらが本日のおすすめ料理でございます。","id":"Ini adalah hidangan rekomendasi untuk hari ini.","level":"n4","tags":["makanan-minuman","pekerjaan"]},{"jp":"お電話ありがとうございます。田中商事でございます。","id":"Terima kasih telah menelepon. Ini adalah Tanaka Corporation.","level":"n4","tags":["pekerjaan"]}],
-  synonyms: [],
-  antonyms: [],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  "id": "vg-n4-00404",
+  "word": "〜でございます",
+  "reading": "〜でございます",
+  "romaji": "degozaimasu",
+  "meaning_id": "adalah ~ (kopula sangat formal)",
+  "meaning_en": "is ~ (very formal copula)",
+  "jlpt": "n4",
+  "pos": "expression",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "pertemanan",
+    "kualitas"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [],
+  "nuance": null,
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "こちらが本日のおすすめ料理でございます。",
+      "id": "Ini adalah hidangan rekomendasi untuk hari ini.",
+      "level": "n4",
+      "tags": [
+        "makanan-minuman",
+        "pekerjaan"
+      ]
+    },
+    {
+      "jp": "お電話ありがとうございます。田中商事でございます。",
+      "id": "Terima kasih telah menelepon. Ini adalah Tanaka Corporation.",
+      "level": "n4",
+      "tags": [
+        "pekerjaan"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus"
 },
 
 {
-  id: 'vg-n4-00414',
-  word: '〜やすい',
-  reading: '〜やすい',
-  romaji: 'yasui',
-  meaning_id: 'mudah untuk ~',
-  meaning_en: 'easy to ~',
-  jlpt: 'n4',
-  pos: 'expr',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['bahasa-komunikasi'],
-  register: 'neutral',
-  lawan_bicara: [],
-  nuance: null,
-  conj_type: null,
-  examples: [{"jp":"この辞書は説明が分かりやすくて役に立ちます。","id":"Kamus ini penjelasannya mudah dipahami dan bermanfaat.","level":"n4","tags":["pendidikan"]},{"jp":"この靴は軽くてとても歩きやすいです。","id":"Sepatu ini ringan dan sangat nyaman serta mudah untuk dipakai berjalan.","level":"n4","tags":["belanja","kehidupan-sehari"]}],
-  synonyms: [],
-  antonyms: [],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  "id": "vg-n4-00414",
+  "word": "〜やすい",
+  "reading": "〜やすい",
+  "romaji": "yasui",
+  "meaning_id": "mudah untuk ~",
+  "meaning_en": "easy to ~",
+  "jlpt": "n4",
+  "pos": "expression",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "bahasa-komunikasi"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [],
+  "nuance": null,
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "この辞書は説明が分かりやすくて役に立ちます。",
+      "id": "Kamus ini penjelasannya mudah dipahami dan bermanfaat.",
+      "level": "n4",
+      "tags": [
+        "pendidikan"
+      ]
+    },
+    {
+      "jp": "この靴は軽くてとても歩きやすいです。",
+      "id": "Sepatu ini ringan dan sangat nyaman serta mudah untuk dipakai berjalan.",
+      "level": "n4",
+      "tags": [
+        "belanja",
+        "kehidupan-sehari"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus"
 },
 
 {
-  id: 'vg-n4-00415',
-  word: '〜にくい',
-  reading: '〜にくい',
-  romaji: 'nikui',
-  meaning_id: 'sulit untuk ~',
-  meaning_en: 'hard to ~, difficult to ~',
-  jlpt: 'n4',
-  pos: 'expr',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['bahasa-komunikasi'],
-  register: 'neutral',
-  lawan_bicara: [],
-  nuance: null,
-  conj_type: null,
-  examples: [{"jp":"この薬は苦いので少し飲みにくいです。","id":"Obat ini agak sulit diminum karena rasanya pahit.","level":"n4","tags":["kesehatan","kehidupan-sehari"]},{"jp":"雨の日は道が滑りやすくて歩きにくいです。","id":"Pada hari hujan jalannya licin sehingga sulit untuk berjalan.","level":"n4","tags":["alam-lingkungan","kehidupan-sehari"]}],
-  synonyms: [],
-  antonyms: [],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  "id": "vg-n4-00415",
+  "word": "〜にくい",
+  "reading": "〜にくい",
+  "romaji": "nikui",
+  "meaning_id": "sulit untuk ~",
+  "meaning_en": "hard to ~, difficult to ~",
+  "jlpt": "n4",
+  "pos": "expression",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "bahasa-komunikasi"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [],
+  "nuance": null,
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "この薬は苦いので少し飲みにくいです。",
+      "id": "Obat ini agak sulit diminum karena rasanya pahit.",
+      "level": "n4",
+      "tags": [
+        "kesehatan",
+        "kehidupan-sehari"
+      ]
+    },
+    {
+      "jp": "雨の日は道が滑りやすくて歩きにくいです。",
+      "id": "Pada hari hujan jalannya licin sehingga sulit untuk berjalan.",
+      "level": "n4",
+      "tags": [
+        "alam-lingkungan",
+        "kehidupan-sehari"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus"
 },
 
 {
@@ -139,7 +242,7 @@ window.vocabN4_Expressions = [
   "meaning_id": "ada; adalah (ragam sangat sopan / teineigo)",
   "meaning_en": "to be, to exist (extra-polite / teineigo)",
   "jlpt": "n4",
-  "pos": "expr",
+  "pos": "expression",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -193,6 +296,7 @@ window.vocabN4_Expressions = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n4-00718",
   "word": "うん",
@@ -201,7 +305,7 @@ window.vocabN4_Expressions = [
   "meaning_id": "ya, he-eh, oke (ragam akrab / santai)",
   "meaning_en": "yes, yeah, uh-huh (casual)",
   "jlpt": "n4",
-  "pos": "expr",
+  "pos": "expression",
   "common": true,
   "related_grammar": [],
   "formalitas": 1,
@@ -225,8 +329,9 @@ window.vocabN4_Expressions = [
       "tags": [
         "percakapan",
         "ajakan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":0,"downstep_mora":1,"contour":"＼"}
+},
     {
       "jp": "「宿題はもう終わったの？」「うん、さっき終わったよ。」",
       "id": "「Apakah PR-mu sudah selesai?」「Ya, tadi baru selesai.」",
@@ -256,6 +361,7 @@ window.vocabN4_Expressions = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n4-00755",
   "word": "いくら～ても",
@@ -264,7 +370,7 @@ window.vocabN4_Expressions = [
   "meaning_id": "betapa pun ~, sebanyak apa pun ~, walau bagaimanapun ~",
   "meaning_en": "no matter how much; however much one may",
   "jlpt": "n4",
-  "pos": "expr",
+  "pos": "expression",
   "common": true,
   "related_grammar": [],
   "formalitas": 2,
@@ -316,6 +422,7 @@ window.vocabN4_Expressions = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n4-00856",
   "word": "～(に) よると",
@@ -324,7 +431,7 @@ window.vocabN4_Expressions = [
   "meaning_id": "menurut ~, berdasarkan ~",
   "meaning_en": "according to ~",
   "jlpt": "n4",
-  "pos": "expr",
+  "pos": "expression",
   "common": true,
   "related_grammar": [],
   "formalitas": 2,
@@ -375,6 +482,7 @@ window.vocabN4_Expressions = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n4-00875",
   "word": "なるほど",
@@ -383,7 +491,7 @@ window.vocabN4_Expressions = [
   "meaning_id": "oh begitu, pantas saja, saya mengerti",
   "meaning_en": "I see, that makes sense, indeed",
   "jlpt": "n4",
-  "pos": "expr",
+  "pos": "expression",
   "common": true,
   "related_grammar": [],
   "formalitas": 1,
@@ -408,8 +516,9 @@ window.vocabN4_Expressions = [
       "tags": [
         "komunikasi",
         "pikiran-opini"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ナルホド￣"}
+},
     {
       "jp": "「このボタンを押せば機械が動くよ」「なるほど、よく分かった！」",
       "id": "\"Kalau tombol ini ditekan, mesinnya akan bergerak lho.\" \"Oh begitu, saya paham betul!\"",
@@ -436,6 +545,7 @@ window.vocabN4_Expressions = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n4-00884",
   "word": "あ",
@@ -444,7 +554,7 @@ window.vocabN4_Expressions = [
   "meaning_id": "ah, oh (seruan terkejut/teringat)",
   "meaning_en": "ah, oh (interjection of surprise or realization)",
   "jlpt": "n4",
-  "pos": "expr",
+  "pos": "expression",
   "common": true,
   "related_grammar": [],
   "formalitas": 1,
@@ -469,8 +579,9 @@ window.vocabN4_Expressions = [
       "tags": [
         "kejadian",
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":0,"downstep_mora":1,"contour":"＼"}
+},
     {
       "jp": "あ、あそこのカフェの前に山田さんが立っていますよ。",
       "id": "Oh, lihat, Yamada sedang berdiri di depan kafe sebelah sana lho.",
@@ -497,6 +608,7 @@ window.vocabN4_Expressions = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n4-00896",
   "word": "御～",
@@ -505,7 +617,7 @@ window.vocabN4_Expressions = [
   "meaning_id": "awalan hormat/sopan (untuk kango)",
   "meaning_en": "honorific prefix (for Sino-Japanese words)",
   "jlpt": "n4",
-  "pos": "expr",
+  "pos": "expression",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -556,6 +668,7 @@ window.vocabN4_Expressions = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n4-00917",
   "word": "～(に) ついて",
@@ -564,7 +677,7 @@ window.vocabN4_Expressions = [
   "meaning_id": "tentang ~, mengenai ~",
   "meaning_en": "about ~, regarding ~, concerning ~",
   "jlpt": "n4",
-  "pos": "expr",
+  "pos": "expression",
   "common": true,
   "related_grammar": [],
   "formalitas": 2,
@@ -617,14 +730,12 @@ window.vocabN4_Expressions = [
   }
 },
 
-// ── Staged Expansion (1) ──
-
 {
   "id": "vg-n4-01058",
   "word": "これから",
   "reading": "これから",
   "romaji": "korekara",
-  "meaning_id": "after this",
+  "meaning_id": "setelah ini",
   "meaning_en": "after this",
   "jlpt": "n4",
   "pos": "expression",
@@ -649,8 +760,9 @@ window.vocabN4_Expressions = [
       "level": "n4",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":4,"category":"odaka","mora_count":4,"downstep_mora":4,"contour":"コレカラ＼"}
+},
     {
       "jp": "これからはもっと勉強します。",
       "id": "I'll study harder in the future.",

@@ -7,6 +7,7 @@
 import { create } from 'zustand';
 import { L1Substratum } from '../data/diagnosticManager';
 import { useGamificationStore } from '../gamification/gamificationStore';
+import { useAppStore } from '../../store/useAppStore';
 
 export type TrackId =
   | 'n5'
@@ -16,19 +17,27 @@ export type TrackId =
   | 'n1'
   | 'ssw-kaigo'
   | 'ssw-food'
+  | 'ssw-food-manufacturing'
   | 'ssw-construction'
   | 'ssw-agriculture'
+  | 'ssw-crop-farming'
+  | 'ssw-livestock'
   | 'ssw-accommodation'
+  | 'ssw-hospitality'
   | 'ssw-building-cleaning'
   | 'ssw-manufacturing'
+  | 'ssw-sokeizai'
   | 'ssw-automobile'
   | 'ssw-aviation'
   | 'ssw-fishery'
   | 'ssw-food-service'
+  | 'ssw-restaurant'
   | 'ssw-industrial-machinery'
   | 'ssw-electric-electronic'
+  | 'ssw-electrical-electronics'
   | 'ssw-shipbuilding'
   | 'ssw-logistics'
+  | 'ssw-automobile-transport'
   | 'ssw-railway'
   | 'ssw-forestry'
   | 'ssw-timber'
@@ -112,6 +121,14 @@ const DEFAULT_TRACK_PROGRESS: Record<TrackId, TrackProgressState> = {
   'ssw-forestry': { completedUnits: [], completedLessons: [], lessonScores: {} },
   'ssw-timber': { completedUnits: [], completedLessons: [], lessonScores: {} },
   'ssw-textile': { completedUnits: [], completedLessons: [], lessonScores: {} },
+  'ssw-sokeizai': { completedUnits: [], completedLessons: [], lessonScores: {} },
+  'ssw-electrical-electronics': { completedUnits: [], completedLessons: [], lessonScores: {} },
+  'ssw-crop-farming': { completedUnits: [], completedLessons: [], lessonScores: {} },
+  'ssw-livestock': { completedUnits: [], completedLessons: [], lessonScores: {} },
+  'ssw-food-manufacturing': { completedUnits: [], completedLessons: [], lessonScores: {} },
+  'ssw-restaurant': { completedUnits: [], completedLessons: [], lessonScores: {} },
+  'ssw-hospitality': { completedUnits: [], completedLessons: [], lessonScores: {} },
+  'ssw-automobile-transport': { completedUnits: [], completedLessons: [], lessonScores: {} },
   'jft-a1': { completedUnits: [], completedLessons: [], lessonScores: {} },
   'jft-a2': { completedUnits: [], completedLessons: [], lessonScores: {} },
   seikatsu: { completedUnits: [], completedLessons: [], lessonScores: {} },
@@ -207,10 +224,13 @@ export const useCurriculumStore = create<CurriculumStoreState>((set, get) => ({
       ? currentTrack.completedLessons
       : [...currentTrack.completedLessons, lessonId];
 
-    // Award XP to global gamification store if first time completing or improved score
-    if (!currentTrack.completedLessons.includes(lessonId) && xpReward > 0) {
+    // Award XP to global gamification store (Full reward on first completion, +10 XP practice on repeats)
+    const isFirstTime = !currentTrack.completedLessons.includes(lessonId);
+    const effectiveXp = isFirstTime ? xpReward : Math.max(10, Math.floor(xpReward / 2));
+    if (effectiveXp > 0) {
       try {
-        useGamificationStore.getState().recordActivity(1, xpReward);
+        useAppStore.getState().incrementXp(effectiveXp);
+        useGamificationStore.getState().recordActivity(1, effectiveXp);
       } catch {
         // Safe fallback if gamification store not initialized
       }

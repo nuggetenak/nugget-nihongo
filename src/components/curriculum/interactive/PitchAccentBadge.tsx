@@ -5,55 +5,50 @@
 // ══════════════════════════════════════════════════════════════════
 
 import React, { useState } from 'react';
-import { HelpCircle, ChevronRight } from 'lucide-react';
+import { HelpCircle } from 'lucide-react';
+import { splitIntoMora as splitMoraTokenizer } from '../../../lib/audio/moraTokenizer';
 
 export interface PitchAccentProps {
   reading: string;
   pattern?: number; // 0: Heiban, 1: Atamadaka, 2: Nakadaka, etc.
+  particle?: string; // Optional enclitic particle (defaults to 'が' for Odaka and 1-mora words)
   compact?: boolean;
 }
 
-const SUTEGANA = new Set(['ゃ', 'ゅ', 'ょ', 'ぁ', 'ぃ', 'ぅ', 'ぇ', 'ぉ', 'ャ', 'ュ', 'ョ', 'ァ', 'ィ', 'ゥ', 'ェ', 'ォ']);
-
 /**
- * Splits Japanese kana string into moras, grouping small digraph kana (ゃ, ゅ, ょ)
- * with their preceding consonant kana (e.g. "きょ" = 1 mora).
+ * Canonical extraction of phonetic mora tokens from kana text.
  */
 export function extractMoras(text: string): string[] {
-  const moras: string[] = [];
-  const chars = Array.from(text.trim());
+  return splitMoraTokenizer(text);
+}
 
-  for (let i = 0; i < chars.length; i++) {
-    const char = chars[i];
-    const next = chars[i + 1];
-
-    if (next && SUTEGANA.has(next)) {
-      moras.push(char + next);
-      i++; // Skip digraph suffix
-    } else {
-      moras.push(char);
-    }
-  }
-
-  return moras.filter((m) => m.length > 0);
+export interface PitchMoraNode {
+  mora: string;
+  isHigh: boolean;
+  hasDrop: boolean;
+  isParticle?: boolean;
 }
 
 /**
- * Calculates high/low pitch status for each mora in Tokyo Japanese
+ * Calculates high/low pitch status for each mora in Tokyo Japanese,
+ * including enclitic particle slot (e.g. が) for Odaka downstep and 1-mora Heiban.
  */
 export function getMoraPitches(
   moras: string[],
-  pattern: number = 0
-): Array<{ mora: string; isHigh: boolean; hasDrop: boolean }> {
+  pattern: number = 0,
+  particle?: string
+): PitchMoraNode[] {
   if (moras.length === 0) return [];
+  const moraCount = moras.length;
 
-  return moras.map((mora, idx) => {
+  const result: PitchMoraNode[] = moras.map((mora, idx) => {
     let isHigh = false;
     let hasDrop = false;
 
     if (pattern === 0) {
-      // Heiban (平板): [Low, High, High, ...] No drop
-      isHigh = idx > 0;
+      // Heiban (平板): [Low, High, High, ...] No drop within the word
+      // 1-mora Heiban (e.g. 木): Low inside word, rises to High on particle
+      isHigh = moraCount === 1 ? false : idx > 0;
       hasDrop = false;
     } else if (pattern === 1) {
       // Atamadaka (頭高): [High, Low, Low, ...] Drop after 1st mora
@@ -66,11 +61,35 @@ export function getMoraPitches(
       hasDrop = idx === downstepIndex;
     }
 
-    return { mora, isHigh, hasDrop };
+    return { mora, isHigh, hasDrop, isParticle: false };
   });
+
+  // Include enclitic particle slot if explicitly requested or for Odaka and 1-mora Heiban
+  const shouldAddParticle = particle !== undefined ? !!particle : (pattern === moraCount || (pattern === 0 && moraCount === 1));
+  const particleMora = particle || 'が';
+
+  if (shouldAddParticle) {
+    let isHigh = false;
+    if (pattern === 0) {
+      // Heiban: particle stays High
+      isHigh = true;
+    } else {
+      // Atamadaka, Nakadaka, Odaka: particle is Low (Odaka downstep drops onto particle)
+      isHigh = false;
+    }
+
+    result.push({
+      mora: particleMora,
+      isHigh,
+      hasDrop: false,
+      isParticle: true,
+    });
+  }
+
+  return result;
 }
 
-const PATTERN_NAMES: Record<number, { name: string; kanji: string; desc: string }> = {
+export const PATTERN_NAMES: Record<number, { name: string; kanji: string; desc: string }> = {
   0: { name: 'Heiban', kanji: '平板 [0]', desc: 'Mulai rendah, naik di mora ke-2, tetap tinggi menyatu dengan partikel.' },
   1: { name: 'Atamadaka', kanji: '頭高 [1]', desc: 'Mora pertama tinggi, langsung turun tajam ke rendah pada mora ke-2.' },
   2: { name: 'Nakadaka', kanji: '中高 [2]', desc: 'Mulai rendah, naik di mora ke-2, lalu turun sebelum akhir kata.' },
@@ -80,16 +99,23 @@ const PATTERN_NAMES: Record<number, { name: string; kanji: string; desc: string 
 export const PitchAccentBadge: React.FC<PitchAccentProps> = ({
   reading,
   pattern = 0,
+  particle,
   compact = false,
 }) => {
   const [showModal, setShowModal] = useState(false);
   const moras = extractMoras(reading);
   if (moras.length === 0) return null;
 
-  const pitchInfo = getMoraPitches(moras, pattern);
-  const patternMeta = PATTERN_NAMES[pattern] || PATTERN_NAMES[0];
+  const pitchInfo = getMoraPitches(moras, pattern, particle);
+  const patternMeta = PATTERN_NAMES[pattern] || {
+    name: pattern === moras.length ? 'Odaka' : 'Nakadaka',
+    kanji: pattern === moras.length ? `尾高 [${pattern}]` : `中高 [${pattern}]`,
+    desc: pattern === moras.length
+      ? 'Mulai rendah, naik sampai mora terakhir, lalu turun pada partikel penerus.'
+      : `Mulai rendah, naik di mora ke-2, lalu turun tajam setelah mora ke-${pattern}.`,
+  };
 
-  const stepWidth = 24;
+  const stepWidth = 26;
   const highY = 6;
   const lowY = 20;
 
@@ -101,7 +127,7 @@ export const PitchAccentBadge: React.FC<PitchAccentProps> = ({
 
   if (compact) {
     const compactStep = 8;
-    const compactWidth = Math.max(24, pitchInfo.length * compactStep);
+    const compactWidth = Math.max(24, pitchInfo.length * compactStep + 4);
     const compactHighY = 3;
     const compactLowY = 11;
     const compactPoints = pitchInfo.map((p, i) => {
@@ -122,7 +148,7 @@ export const PitchAccentBadge: React.FC<PitchAccentProps> = ({
           width={compactWidth}
           height={14}
           viewBox={`0 0 ${compactWidth} 14`}
-          className="shrink-0 overflow-hidden"
+          className="shrink-0 overflow-visible"
         >
           <polyline
             fill="none"
@@ -135,14 +161,18 @@ export const PitchAccentBadge: React.FC<PitchAccentProps> = ({
               key={i}
               cx={i * compactStep + compactStep / 2}
               cy={p.isHigh ? compactHighY : compactLowY}
-              r="2"
-              fill={p.hasDrop ? '#EF4444' : '#F59E0B'}
+              r={p.isParticle ? "1.5" : "2"}
+              fill={p.hasDrop ? '#EF4444' : p.isParticle ? '#9CA3AF' : '#F59E0B'}
+              stroke={p.isParticle ? '#F59E0B' : 'none'}
+              strokeWidth={p.isParticle ? "0.5" : "0"}
             />
           ))}
         </svg>
       </button>
     );
   }
+
+  const svgWidth = pitchInfo.length * stepWidth;
 
   return (
     <div className="inline-flex flex-col items-center p-2.5 rounded-2xl bg-surface-2 border border-accent/20 shadow-sm max-w-full">
@@ -157,7 +187,7 @@ export const PitchAccentBadge: React.FC<PitchAccentProps> = ({
           type="button"
           onClick={() => setShowModal(true)}
           className="text-appText-muted hover:text-accent transition-colors p-0.5 active:scale-95"
-          title="Pelajari jenis intonasi nada nada Jepang"
+          title="Pelajari jenis intonasi nada Jepang"
         >
           <HelpCircle className="w-3.5 h-3.5" />
         </button>
@@ -166,13 +196,14 @@ export const PitchAccentBadge: React.FC<PitchAccentProps> = ({
       {/* SVG Contour Line & Mora Text */}
       <div className="flex flex-col items-center overflow-x-auto max-w-full py-1">
         <svg
-          width={moras.length * stepWidth}
+          width={svgWidth}
           height={26}
+          viewBox={`0 0 ${svgWidth} 26`}
           className="overflow-visible"
         >
           {/* Guide horizontal lines */}
-          <line x1={0} y1={highY} x2={moras.length * stepWidth} y2={highY} stroke="currentColor" strokeOpacity={0.1} strokeDasharray="2,2" />
-          <line x1={0} y1={lowY} x2={moras.length * stepWidth} y2={lowY} stroke="currentColor" strokeOpacity={0.1} strokeDasharray="2,2" />
+          <line x1={0} y1={highY} x2={svgWidth} y2={highY} stroke="currentColor" strokeOpacity={0.12} strokeDasharray="2,2" />
+          <line x1={0} y1={lowY} x2={svgWidth} y2={lowY} stroke="currentColor" strokeOpacity={0.12} strokeDasharray="2,2" />
 
           {/* Polyline contour */}
           <polyline
@@ -190,8 +221,11 @@ export const PitchAccentBadge: React.FC<PitchAccentProps> = ({
               <circle
                 cx={i * stepWidth + stepWidth / 2}
                 cy={p.isHigh ? highY : lowY}
-                r="3.5"
-                fill={p.hasDrop ? '#EF4444' : '#F59E0B'}
+                r={p.isParticle ? "3" : "3.5"}
+                fill={p.hasDrop ? '#EF4444' : p.isParticle ? '#374151' : '#F59E0B'}
+                stroke={p.isParticle ? '#9CA3AF' : 'none'}
+                strokeWidth={p.isParticle ? "1.5" : "0"}
+                strokeDasharray={p.isParticle ? "2,2" : undefined}
               />
               {p.hasDrop && (
                 <line
@@ -214,11 +248,17 @@ export const PitchAccentBadge: React.FC<PitchAccentProps> = ({
             <span
               key={i}
               style={{ width: `${stepWidth}px` }}
-              className={`text-center font-jp text-xs font-bold leading-tight ${
-                p.hasDrop ? 'text-rose-400' : p.isHigh ? 'text-amber-300' : 'text-appText-muted'
+              className={`text-center font-jp text-xs leading-tight ${
+                p.isParticle
+                  ? 'text-appText-muted/70 italic text-[11px]'
+                  : p.hasDrop
+                  ? 'text-rose-400 font-extrabold'
+                  : p.isHigh
+                  ? 'text-amber-300 font-bold'
+                  : 'text-appText-muted font-bold'
               }`}
             >
-              {p.mora}
+              {p.isParticle ? `(${p.mora})` : p.mora}
             </span>
           ))}
         </div>

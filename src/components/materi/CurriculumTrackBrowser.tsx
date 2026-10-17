@@ -31,6 +31,7 @@ import {
   RotateCcw,
   ExternalLink,
   Info,
+  Building2,
 } from 'lucide-react';
 import {
   useCurriculumStore,
@@ -48,6 +49,9 @@ import { useAppStore } from '../../store/useAppStore';
 import { speakJapanese } from '../../lib/audio/tts';
 import { playSuccessSfx } from '../../lib/audio/sfx';
 import { ResearchMethodologyModal } from './ResearchMethodologyModal';
+import { PrometricCbtModal } from '../quiz/PrometricCbtModal';
+import { JftBasicCbtModal } from '../quiz/JftBasicCbtModal';
+import { SeikatsuLivingGuideModal } from './SeikatsuLivingGuideModal';
 
 interface CurriculumTrackBrowserProps {
   vocabList: NormalizedVocab[];
@@ -144,6 +148,18 @@ export const CurriculumTrackBrowser: React.FC<CurriculumTrackBrowserProps> = ({
   // Research modal state
   const [isResearchModalOpen, setIsResearchModalOpen] = useState(false);
 
+  // SSW Cluster filter ('all' | 'care' | 'mfg' | 'infra' | 'service')
+  const [sswCluster, setSswCluster] = useState<'all' | 'care' | 'mfg' | 'infra' | 'service'>('all');
+
+  // Prometric CBT Exam simulator modal state
+  const [isPrometricModalOpen, setIsPrometricModalOpen] = useState(false);
+
+  // JFT-Basic CBT simulator modal state
+  const [isJftModalOpen, setIsJftModalOpen] = useState(false);
+
+  // Seikatsu Living Guide modal state
+  const [isSeikatsuModalOpen, setIsSeikatsuModalOpen] = useState(false);
+
   // Track definitions metadata
   const jlptTracks: Array<{
     id: TrackId;
@@ -188,27 +204,38 @@ export const CurriculumTrackBrowser: React.FC<CurriculumTrackBrowserProps> = ({
     units: string;
     desc: string;
     icon: string;
+    iconSvg: string;
     themeColor: string;
+    cluster: 'care' | 'mfg' | 'infra' | 'service';
+    ministry: 'MHLW' | 'METI' | 'MLIT' | 'MAFF';
+    ministryKanji: string;
   }> = [
-    { id: 'ssw-kaigo', title: 'SSW Keperawatan Lansia', sector: 'Kaigo (介護)', units: '8 Unit · 24 Pelajaran', desc: 'Prosedur Koe-kake, komunikasi empatik lansia, & laporan SBAR darurat.', icon: '👵', themeColor: 'rose' },
-    { id: 'ssw-food', title: 'SSW Pengolahan & Restoran', sector: 'Food Service (外食・飲食)', units: '8 Unit · 24 Pelajaran', desc: 'Sanitasi 5S/HACCP, instruksi dapur, mitigasi alergen, & etika Omotenashi.', icon: '🍱', themeColor: 'amber' },
-    { id: 'ssw-construction', title: 'SSW Konstruksi & Gemba', sector: 'Construction (建設業)', units: '8 Unit · 24 Pelajaran', desc: 'Pencegahan celaka K3 Gemba, komando akustik KYT, & alat berat.', icon: '👷', themeColor: 'orange' },
-    { id: 'ssw-agriculture', title: 'SSW Pertanian & Peternakan', sector: 'Agriculture (農業)', units: '4 Unit · 8 Pelajaran', desc: 'Budidaya tanaman rumah kaca, pemberian pakan ternak, & traktor.', icon: '🌱', themeColor: 'emerald' },
-    { id: 'ssw-accommodation', title: 'SSW Perhotelan & Hospitality', sector: 'Accommodation (宿泊)', units: '4 Unit · 8 Pelajaran', desc: 'Layanan resepsionis, check-in tamu, housekeeping, & omotenashi.', icon: '🏨', themeColor: 'sky' },
-    { id: 'ssw-building-cleaning', title: 'SSW Pembersihan Gedung', sector: 'Cleaning (ビルクリーニング)', units: '4 Unit · 8 Pelajaran', desc: 'Perawatan lantai, disinfeksi sanitasi, polisher, & pemilahan limbah.', icon: '🧹', themeColor: 'teal' },
-    { id: 'ssw-manufacturing', title: 'SSW Manufaktur & Pengolahan', sector: 'Manufacturing (製造)', units: '4 Unit · 8 Pelajaran', desc: 'Mesin press, pengecoran logam, perakitan presisi, & kontrol QC.', icon: '⚙️', themeColor: 'indigo' },
-    { id: 'ssw-automobile', title: 'SSW Perawatan Otomotif', sector: 'Automobile (自動車整備)', units: '4 Unit · 8 Pelajaran', desc: 'Ganti oli, servis rem, diagnostik scanner OBD-II, & edukasi servis.', icon: '🚗', themeColor: 'blue' },
-    { id: 'ssw-aviation', title: 'SSW Layanan Darat Bandara', sector: 'Aviation (航空)', units: '4 Unit · 8 Pelajaran', desc: 'Marshalling pesawat, kargo bagasi apron, & armada kendaraan GSE.', icon: '✈️', themeColor: 'cyan' },
-    { id: 'ssw-fishery', title: 'SSW Perikanan & Budidaya', sector: 'Fishery (漁業)', units: '4 Unit · 8 Pelajaran', desc: 'Operasi jaring kapal, pembekuan palka, & keramba apung laut.', icon: '🐟', themeColor: 'blue' },
-    { id: 'ssw-food-service', title: 'SSW Kuliner & Restoran', sector: 'Food Service (外食業)', units: '4 Unit · 8 Pelajaran', desc: 'Penyambutan tamu, handy order, sanitasi dapur, & kasir.', icon: '🍽️', themeColor: 'amber' },
-    { id: 'ssw-industrial-machinery', title: 'SSW Permesinan Industri', sector: 'Machinery (産業機械)', units: '4 Unit · 8 Pelajaran', desc: 'Mesin bubut, pengelasan busur, pengecatan, & commissioning mesin.', icon: '🏭', themeColor: 'slate' },
-    { id: 'ssw-electric-electronic', title: 'SSW Elektrik & Elektronik', sector: 'Electronics (電気電子)', units: '4 Unit · 8 Pelajaran', desc: 'Solder PCB, kabel wire harness, uji multimeter, & barcode QA.', icon: '⚡', themeColor: 'yellow' },
-    { id: 'ssw-shipbuilding', title: 'SSW Perkapalan & Maritim', sector: 'Shipbuilding (造船)', units: '4 Unit · 8 Pelajaran', desc: 'Blok lambung kapal, las pelat tebal, pipa mesin, & blasting cat.', icon: '🚢', themeColor: 'indigo' },
-    { id: 'ssw-logistics', title: 'SSW Logistik & Gudang', sector: 'Logistics (物流)', units: '4 Unit · 8 Pelajaran', desc: 'Inbound scanning, manuver forklift gudang, picking, & stok audit.', icon: '📦', themeColor: 'orange' },
-    { id: 'ssw-railway', title: 'SSW Operasional Kereta Api', sector: 'Railway (鉄道)', units: '4 Unit · 8 Pelajaran', desc: 'Pemanduan peron, pembersihan cepat shinkansen, & inspeksi rel.', icon: '🚆', themeColor: 'red' },
-    { id: 'ssw-forestry', title: 'SSW Kehutanan & Hutan', sector: 'Forestry (林業)', units: '4 Unit · 8 Pelajaran', desc: 'Penanaman lereng, operasi chainsaw terarah, & kabel winch kayu.', icon: '🌲', themeColor: 'emerald' },
-    { id: 'ssw-timber', title: 'SSW Pengolahan Kayu', sector: 'Timber (木材産業)', units: '4 Unit · 8 Pelajaran', desc: 'Gergaji band-saw, kiln pengering, serut precut, & JAS grading.', icon: '🪵', themeColor: 'amber' },
-    { id: 'ssw-textile', title: 'SSW Tekstil & Garmen', sector: 'Textile (繊維・縫製)', units: '4 Unit · 8 Pelajaran', desc: 'Pemotongan pola CAM, mesin jahit high-speed, press, & detektor jarum.', icon: '🧵', themeColor: 'pink' },
+    // ── CLUSTER 1: CARE & SANITASI ──
+    { id: 'ssw-kaigo', title: 'SSW Keperawatan Lansia', sector: 'Kaigo (介護)', units: '8 Unit · 24 Pelajaran', desc: 'Prosedur Koe-kake, komunikasi empatik lansia, & laporan SBAR darurat.', icon: '👵', iconSvg: '/icons/ssw/kaigo.svg', themeColor: 'rose', cluster: 'care', ministry: 'MHLW', ministryKanji: '厚生労働省' },
+    { id: 'ssw-building-cleaning', title: 'SSW Pembersihan Gedung', sector: 'Cleaning (ビルクリーニング)', units: '4 Unit · 8 Pelajaran', desc: 'Perawatan lantai, disinfeksi sanitasi, polisher, & pemilahan limbah.', icon: '🧹', iconSvg: '/icons/ssw/building-cleaning.svg', themeColor: 'teal', cluster: 'care', ministry: 'MLIT', ministryKanji: '国土交通省' },
+
+    // ── CLUSTER 2: MANUFAKTUR & REKAYASA ──
+    { id: 'ssw-manufacturing', title: 'SSW Manufaktur & Pengolahan', sector: 'Manufacturing (製造)', units: '4 Unit · 8 Pelajaran', desc: 'Mesin press, pengecoran logam, perakitan presisi, & kontrol QC.', icon: '⚙️', iconSvg: '/icons/ssw/manufacturing.svg', themeColor: 'indigo', cluster: 'mfg', ministry: 'METI', ministryKanji: '経済産業省' },
+    { id: 'ssw-industrial-machinery', title: 'SSW Permesinan Industri', sector: 'Machinery (産業機械)', units: '4 Unit · 8 Pelajaran', desc: 'Mesin bubut, pengelasan busur, pengecatan, & commissioning mesin.', icon: '🏭', iconSvg: '/icons/ssw/industrial-machinery.svg', themeColor: 'slate', cluster: 'mfg', ministry: 'METI', ministryKanji: '経済産業省' },
+    { id: 'ssw-electric-electronic', title: 'SSW Elektrik & Elektronik', sector: 'Electronics (電気電子)', units: '4 Unit · 8 Pelajaran', desc: 'Solder PCB, kabel wire harness, uji multimeter, & barcode QA.', icon: '⚡', iconSvg: '/icons/ssw/electric-electronics.svg', themeColor: 'yellow', cluster: 'mfg', ministry: 'METI', ministryKanji: '経済産業省' },
+    { id: 'ssw-shipbuilding', title: 'SSW Perkapalan & Maritim', sector: 'Shipbuilding (造船)', units: '4 Unit · 8 Pelajaran', desc: 'Blok lambung kapal, las pelat tebal, pipa mesin, & blasting cat.', icon: '🚢', iconSvg: '/icons/ssw/shipbuilding.svg', themeColor: 'indigo', cluster: 'mfg', ministry: 'MLIT', ministryKanji: '国土交通省' },
+    { id: 'ssw-automobile', title: 'SSW Perawatan Otomotif', sector: 'Automobile (自動車整備)', units: '4 Unit · 8 Pelajaran', desc: 'Ganti oli, servis rem, diagnostik scanner OBD-II, & edukasi servis.', icon: '🚗', iconSvg: '/icons/ssw/automobile.svg', themeColor: 'blue', cluster: 'mfg', ministry: 'MLIT', ministryKanji: '国土交通省' },
+    { id: 'ssw-textile', title: 'SSW Tekstil & Garmen', sector: 'Textile (繊維・縫製)', units: '4 Unit · 8 Pelajaran', desc: 'Pemotongan pola CAM, mesin jahit high-speed, press, & detektor jarum.', icon: '🧵', iconSvg: '/icons/ssw/textile.svg', themeColor: 'pink', cluster: 'mfg', ministry: 'METI', ministryKanji: '経済産業省' },
+
+    // ── CLUSTER 3: INFRASTRUKTUR & ALAM ──
+    { id: 'ssw-construction', title: 'SSW Konstruksi & Gemba', sector: 'Construction (建設業)', units: '8 Unit · 24 Pelajaran', desc: 'Pencegahan celaka K3 Gemba, komando akustik KYT, & alat berat.', icon: '👷', iconSvg: '/icons/ssw/construction.svg', themeColor: 'orange', cluster: 'infra', ministry: 'MLIT', ministryKanji: '国土交通省' },
+    { id: 'ssw-agriculture', title: 'SSW Pertanian & Peternakan', sector: 'Agriculture (農業)', units: '4 Unit · 8 Pelajaran', desc: 'Budidaya tanaman rumah kaca, pemberian pakan ternak, & traktor.', icon: '🌱', iconSvg: '/icons/ssw/agriculture.svg', themeColor: 'emerald', cluster: 'infra', ministry: 'MAFF', ministryKanji: '農林水産省' },
+    { id: 'ssw-fishery', title: 'SSW Perikanan & Budidaya', sector: 'Fishery (漁業)', units: '4 Unit · 8 Pelajaran', desc: 'Operasi jaring kapal, pembekuan palka, & keramba apung laut.', icon: '🐟', iconSvg: '/icons/ssw/fishery.svg', themeColor: 'blue', cluster: 'infra', ministry: 'MAFF', ministryKanji: '農林水産省' },
+    { id: 'ssw-forestry', title: 'SSW Kehutanan & Hutan', sector: 'Forestry (林業)', units: '4 Unit · 8 Pelajaran', desc: 'Penanaman lereng, operasi chainsaw terarah, & kabel winch kayu.', icon: '🌲', iconSvg: '/icons/ssw/forestry.svg', themeColor: 'emerald', cluster: 'infra', ministry: 'MAFF', ministryKanji: '農林水産省' },
+    { id: 'ssw-timber', title: 'SSW Pengolahan Kayu', sector: 'Timber (木材産業)', units: '4 Unit · 8 Pelajaran', desc: 'Gergaji band-saw, kiln pengering, serut precut, & JAS grading.', icon: '🪵', iconSvg: '/icons/ssw/timber.svg', themeColor: 'amber', cluster: 'infra', ministry: 'MAFF', ministryKanji: '農林水産省' },
+
+    // ── CLUSTER 4: LAYANAN & MOBILITAS ──
+    { id: 'ssw-food', title: 'SSW Pengolahan & Pabrik Makanan', sector: 'Food Mfg (飲食料品製造)', units: '8 Unit · 24 Pelajaran', desc: 'Sanitasi 5S/HACCP, lini produksi pangan, & pencegahan alergen.', icon: '🍱', iconSvg: '/icons/ssw/food-manufacturing.svg', themeColor: 'amber', cluster: 'service', ministry: 'MAFF', ministryKanji: '農林水産省' },
+    { id: 'ssw-food-service', title: 'SSW Kuliner & Restoran', sector: 'Food Service (外食業)', units: '4 Unit · 8 Pelajaran', desc: 'Penyambutan tamu, handy order, sanitasi dapur, & kasir.', icon: '🍽️', iconSvg: '/icons/ssw/food-service.svg', themeColor: 'amber', cluster: 'service', ministry: 'MAFF', ministryKanji: '農林水産省' },
+    { id: 'ssw-accommodation', title: 'SSW Perhotelan & Hospitality', sector: 'Accommodation (宿泊)', units: '4 Unit · 8 Pelajaran', desc: 'Layanan resepsionis, check-in tamu, housekeeping, & omotenashi.', icon: '🏨', iconSvg: '/icons/ssw/hospitality.svg', themeColor: 'sky', cluster: 'service', ministry: 'MLIT', ministryKanji: '国土交通省' },
+    { id: 'ssw-aviation', title: 'SSW Layanan Darat Bandara', sector: 'Aviation (航空)', units: '4 Unit · 8 Pelajaran', desc: 'Marshalling pesawat, kargo bagasi apron, & armada kendaraan GSE.', icon: '✈️', iconSvg: '/icons/ssw/aviation.svg', themeColor: 'cyan', cluster: 'service', ministry: 'MLIT', ministryKanji: '国土交通省' },
+    { id: 'ssw-logistics', title: 'SSW Logistik & Gudang', sector: 'Logistics (物流)', units: '4 Unit · 8 Pelajaran', desc: 'Inbound scanning, manuver forklift gudang, picking, & stok audit.', icon: '📦', iconSvg: '/icons/ssw/logistics.svg', themeColor: 'orange', cluster: 'service', ministry: 'MLIT', ministryKanji: '国土交通省' },
+    { id: 'ssw-railway', title: 'SSW Operasional Kereta Api', sector: 'Railway (鉄道)', units: '4 Unit · 8 Pelajaran', desc: 'Pemanduan peron, pembersihan cepat shinkansen, & inspeksi rel.', icon: '🚆', iconSvg: '/icons/ssw/railway.svg', themeColor: 'red', cluster: 'service', ministry: 'MLIT', ministryKanji: '国土交通省' },
   ];
 
   const jftLifeTracks: Array<{
@@ -325,6 +352,15 @@ export const CurriculumTrackBrowser: React.FC<CurriculumTrackBrowserProps> = ({
     return [...jlptTracks, ...bookTracks, ...sswTracks, ...jftLifeTracks].find((t) => t.id === activeTrackId);
   }, [activeTrackId, jlptTracks, bookTracks, sswTracks, jftLifeTracks]);
 
+  const activeSswMeta = useMemo(() => {
+    return sswTracks.find((t) => t.id === activeTrackId);
+  }, [activeTrackId, sswTracks]);
+
+  const filteredSswTracks = useMemo(() => {
+    if (sswCluster === 'all') return sswTracks;
+    return sswTracks.filter((t) => t.cluster === sswCluster);
+  }, [sswCluster, sswTracks]);
+
   return (
     <div className="space-y-4 sm:space-y-6 animate-in fade-in duration-300">
       {/* ─────────────────────────────────────────────────────────────
@@ -336,6 +372,7 @@ export const CurriculumTrackBrowser: React.FC<CurriculumTrackBrowserProps> = ({
           {/* Track selector button */}
           <button
             type="button"
+            aria-label="Pilih Jalur Kurikulum"
             onClick={() => setIsMobileTrackPickerOpen(true)}
             className="flex items-center gap-2.5 min-w-0 text-left p-1 -m-1 rounded-xl active:scale-95 transition-transform"
           >
@@ -487,32 +524,82 @@ export const CurriculumTrackBrowser: React.FC<CurriculumTrackBrowserProps> = ({
               );
             })}
 
-          {trackCategory === 'ssw' &&
-            sswTracks.map((trk) => {
-              const isSelected = activeTrackId === trk.id;
-              const stats = trackProgress[trk.id];
-              const completedCount = stats?.completedLessons?.length || 0;
+          {trackCategory === 'ssw' && (
+            <div className="flex flex-col gap-2 w-full">
+              {/* 4-Cluster Segmented Switcher */}
+              <div className="flex items-center gap-1.5 overflow-x-auto scrollbar-none pb-0.5 max-w-full">
+                {[
+                  { id: 'all', label: 'Semua (19 Sektor)' },
+                  { id: 'care', label: 'Care & Sanitasi (2)' },
+                  { id: 'mfg', label: 'Manufaktur & Rekayasa (6)' },
+                  { id: 'infra', label: 'Infrastruktur & Alam (5)' },
+                  { id: 'service', label: 'Layanan & Mobilitas (6)' },
+                ].map((c) => (
+                  <button
+                    key={c.id}
+                    type="button"
+                    onClick={() => setSswCluster(c.id as any)}
+                    className={`min-h-[38px] px-3 py-1.5 rounded-xl text-xs font-bold transition-all whitespace-nowrap active:scale-95 ${
+                      sswCluster === c.id
+                        ? 'bg-amber-500 text-stone-950 font-black shadow-sm'
+                        : 'bg-surface-2 hover:bg-surface-3 text-appText-muted border border-accent/15'
+                    }`}
+                  >
+                    {c.label}
+                  </button>
+                ))}
+              </div>
 
-              return (
-                <button
-                  key={trk.id}
-                  onClick={() => setActiveTrack(trk.id)}
-                  className={`min-h-[44px] px-3 sm:px-4 py-1.5 sm:py-2 rounded-xl text-xs font-bold whitespace-nowrap transition-colors border flex items-center gap-2 shrink-0 active:scale-95 focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:outline-none ${
-                    isSelected
-                      ? 'bg-amber-500 text-bg border-amber-500 shadow-md font-extrabold'
-                      : 'bg-surface-2 border-accent/20 text-appText-muted hover:text-appText-bright hover:border-accent/40'
-                  }`}
-                >
-                  <span className="text-sm sm:text-base">{trk.icon}</span>
-                  <div className="text-left">
-                    <div className="leading-tight text-xs font-bold">{trk.title}</div>
-                    <div className="text-[10px] opacity-80 font-normal tabular-nums hidden sm:block">
-                      {trk.units} {completedCount > 0 ? `· ${completedCount} selesai` : ''}
-                    </div>
-                  </div>
-                </button>
-              );
-            })}
+              {/* Filtered SSW Track Pills with Vector Insignia & Ministry Badges */}
+              <div className="flex items-center gap-1.5 sm:gap-2 overflow-x-auto scrollbar-none pb-1 max-w-full">
+                {filteredSswTracks.map((trk) => {
+                  const isSelected = activeTrackId === trk.id;
+                  const stats = trackProgress[trk.id];
+                  const completedCount = stats?.completedLessons?.length || 0;
+
+                  return (
+                    <button
+                      key={trk.id}
+                      onClick={() => setActiveTrack(trk.id)}
+                      className={`min-h-[44px] px-3 sm:px-4 py-1.5 sm:py-2 rounded-xl text-xs font-bold whitespace-nowrap transition-colors border flex items-center gap-2 shrink-0 active:scale-95 focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:outline-none ${
+                        isSelected
+                          ? 'bg-amber-500 text-stone-950 border-amber-500 shadow-md font-extrabold'
+                          : 'bg-surface-2 border-accent/20 text-appText-muted hover:text-appText-bright hover:border-accent/40'
+                      }`}
+                    >
+                      <div className="w-5 h-5 shrink-0 flex items-center justify-center">
+                        <img
+                          src={trk.iconSvg}
+                          alt=""
+                          className="w-5 h-5 object-contain"
+                          onError={(e) => {
+                            (e.currentTarget as HTMLElement).style.display = 'none';
+                          }}
+                        />
+                      </div>
+                      <div className="text-left">
+                        <div className="leading-tight text-xs font-bold flex items-center gap-1.5">
+                          <span>{trk.title}</span>
+                          <span
+                            className={`px-1.5 py-0.2 rounded text-[9px] font-mono border ${
+                              isSelected
+                                ? 'bg-stone-950/20 text-stone-950 border-stone-950/30'
+                                : 'bg-surface-3 text-accent border-accent/20'
+                            }`}
+                          >
+                            {trk.ministry}
+                          </span>
+                        </div>
+                        <div className="text-[10px] opacity-80 font-normal tabular-nums hidden sm:block">
+                          {trk.units} {completedCount > 0 ? `· ${completedCount} selesai` : ''}
+                        </div>
+                      </div>
+                    </button>
+                  );
+                })}
+              </div>
+            </div>
+          )}
 
           {trackCategory === 'jft_life' &&
             jftLifeTracks.map((trk) => {
@@ -554,6 +641,11 @@ export const CurriculumTrackBrowser: React.FC<CurriculumTrackBrowserProps> = ({
                 <Sparkles className="w-3 h-3" />
                 {trackCategory === 'jlpt' ? 'Kurikulum Orisinal Nugget Nihongo' : 'Standar Kompetensi Kerja Jepang (SSW)'}
               </span>
+              {activeSswMeta && (
+                <span className="px-2 py-0.5 rounded-md bg-surface-3 text-accent text-[10px] font-mono border border-accent/20">
+                  Standar Resmi: {activeSswMeta.ministry} ({activeSswMeta.ministryKanji})
+                </span>
+              )}
               <span className="px-1.5 sm:px-2 py-0.5 rounded-md bg-surface-3 text-appText-muted text-[10px] font-mono border border-accent/15 tabular-nums">
                 {trackData?.units?.length || 0} Unit · {totalLessons} Pelajaran
               </span>
@@ -568,6 +660,69 @@ export const CurriculumTrackBrowser: React.FC<CurriculumTrackBrowserProps> = ({
                 ? 'Jalur belajar bertahap yang dirancang berdasarkan kurikulum terstruktur dan pemahaman gaya bahasa Indonesia agar kamu bisa berbicara bahasa Jepang alami tanpa salah kaprah.'
                 : 'Kurikulum vokasional berbasis skenario kerja nyata: protokol keselamatan K3 Gemba, komunikasi Koe-kake lansia, standar HACCP, dan pelaporan SBAR baku kepada penyelia Jepang.'}
             </p>
+
+            {/* Prometric CBT Simulator Trigger Button for SSW Tracks */}
+            {activeSswMeta && (
+              <div className="pt-1.5 flex flex-wrap items-center gap-2.5">
+                <button
+                  type="button"
+                  onClick={() => setIsPrometricModalOpen(true)}
+                  className="min-h-[44px] px-4 py-2 rounded-xl bg-gradient-to-r from-amber-500 to-amber-400 text-stone-950 font-black text-xs flex items-center gap-2 shadow-md hover:from-amber-400 hover:to-amber-300 transition-all active:scale-95 shrink-0"
+                  title="Mulai Ujian Simulasi Komputer Prometric CBT Resmi"
+                >
+                  <Award className="w-4 h-4 text-stone-950 shrink-0" />
+                  <span>Simulasi Ujian Prometric CBT</span>
+                  <span className="px-1.5 py-0.2 rounded-full bg-stone-950 text-amber-400 font-extrabold text-[9px] uppercase tracking-wider">
+                    Resmi
+                  </span>
+                </button>
+                <span className="text-[11px] text-appText-muted">
+                  Dual-pass scoring berstandar {activeSswMeta.ministry} ({activeSswMeta.ministryKanji})
+                </span>
+              </div>
+            )}
+
+            {/* JFT-Basic CBT Simulator Trigger Button for JFT Tracks */}
+            {activeTrackId.startsWith('jft') && (
+              <div className="pt-1.5 flex flex-wrap items-center gap-2.5">
+                <button
+                  type="button"
+                  onClick={() => setIsJftModalOpen(true)}
+                  className="min-h-[44px] px-4 py-2 rounded-xl bg-gradient-to-r from-emerald-500 to-emerald-400 text-stone-950 font-black text-xs flex items-center gap-2 shadow-md hover:from-emerald-400 hover:to-emerald-300 transition-all active:scale-95 shrink-0"
+                  title="Mulai Ujian Simulasi Komputer JFT-Basic CBT Resmi"
+                >
+                  <Award className="w-4 h-4 text-stone-950 shrink-0" />
+                  <span>Simulasi Ujian JFT-Basic CBT (60 Mnt)</span>
+                  <span className="px-1.5 py-0.2 rounded-full bg-stone-950 text-emerald-400 font-extrabold text-[9px] uppercase tracking-wider">
+                    JF Standar A2
+                  </span>
+                </button>
+                <span className="text-[11px] text-appText-muted">
+                  4 Seksi Resmi · Ambang Lulus ≥ 200/250 Poin
+                </span>
+              </div>
+            )}
+
+            {/* Seikatsu Living Guide Trigger Button for Seikatsu Track */}
+            {activeTrackId === 'seikatsu' && (
+              <div className="pt-1.5 flex flex-wrap items-center gap-2.5">
+                <button
+                  type="button"
+                  onClick={() => setIsSeikatsuModalOpen(true)}
+                  className="min-h-[44px] px-4 py-2 rounded-xl bg-gradient-to-r from-rose-500 to-rose-400 text-white font-black text-xs flex items-center gap-2 shadow-md hover:from-rose-400 hover:to-rose-300 transition-all active:scale-95 shrink-0"
+                  title="Buka Panduan Hidup & Bekerja di Jepang (Seikatsu)"
+                >
+                  <Building2 className="w-4 h-4 text-white shrink-0" />
+                  <span>Buka Panduan Hidup di Jepang (Seikatsu)</span>
+                  <span className="px-1.5 py-0.2 rounded-full bg-white/20 text-white font-extrabold text-[9px] uppercase tracking-wider">
+                    Balai Kota & K3
+                  </span>
+                </button>
+                <span className="text-[11px] text-appText-muted">
+                  Prosedur Balai Kota, Pemilahan Sampah & Mitigasi Gempa
+                </span>
+              </div>
+            )}
           </div>
 
           {/* Quick Stats Pill Block (Desktop/Tablet) */}
@@ -922,6 +1077,14 @@ export const CurriculumTrackBrowser: React.FC<CurriculumTrackBrowserProps> = ({
                                   <BookOpen className="w-4 h-4" />
                                   <span>{isLessonDone ? 'Ulas Pelajaran' : 'Mulai Belajar'}</span>
                                 </button>
+                                <button
+                                  type="button"
+                                  onClick={() => handleToggleLessonComplete(unit.id, lesson.id)}
+                                  title={isLessonDone ? 'Telah ditandai selesai' : 'Tandai tuntas'}
+                                  className="w-10 h-10 min-w-[40px] min-h-[40px] rounded-xl bg-surface-3 hover:bg-surface-2 border border-accent/20 flex items-center justify-center text-appText-muted hover:text-accent transition-colors active:scale-95"
+                                >
+                                  <CheckCircle2 className={`w-4 h-4 ${isLessonDone ? 'text-emerald-400' : 'text-appText-dim'}`} />
+                                </button>
                               </div>
                             </div>
 
@@ -1095,42 +1258,84 @@ export const CurriculumTrackBrowser: React.FC<CurriculumTrackBrowserProps> = ({
                   );
                 })}
 
-              {trackCategory === 'ssw' &&
-                sswTracks.map((trk) => {
-                  const isSelected = activeTrackId === trk.id;
-                  const stats = trackProgress[trk.id];
-                  const completedCount = stats?.completedLessons?.length || 0;
-                  return (
-                    <button
-                      key={trk.id}
-                      type="button"
-                      onClick={() => {
-                        setActiveTrack(trk.id);
-                        setIsMobileTrackPickerOpen(false);
-                      }}
-                      className={`w-full p-3 rounded-xl border text-left flex items-center justify-between gap-3 transition-colors min-h-[52px] active:scale-98 ${
-                        isSelected
-                          ? 'bg-amber-500/15 border-amber-500 text-appText-bright font-bold ring-1 ring-amber-500'
-                          : 'bg-surface hover:bg-surface-3 border-accent/15 text-appText'
-                      }`}
-                    >
-                      <div className="flex items-center gap-2.5 min-w-0">
-                        <span className="text-xl shrink-0">{trk.icon}</span>
-                        <div className="min-w-0">
-                          <div className="font-bold text-xs text-appText-bright">{trk.title}</div>
-                          <div className="text-[10px] text-appText-muted">{trk.sector}</div>
+              {trackCategory === 'ssw' && (
+                <div className="space-y-2">
+                  {/* Mobile Cluster Filter Pills */}
+                  <div className="flex items-center gap-1 overflow-x-auto scrollbar-none pb-1">
+                    {[
+                      { id: 'all', label: 'Semua' },
+                      { id: 'care', label: 'Care' },
+                      { id: 'mfg', label: 'Manufaktur' },
+                      { id: 'infra', label: 'Infrastruktur' },
+                      { id: 'service', label: 'Layanan' },
+                    ].map((c) => (
+                      <button
+                        key={c.id}
+                        type="button"
+                        onClick={() => setSswCluster(c.id as any)}
+                        className={`px-2.5 py-1 rounded-lg text-[11px] font-bold transition-all whitespace-nowrap active:scale-95 ${
+                          sswCluster === c.id
+                            ? 'bg-amber-500 text-stone-950 font-black'
+                            : 'bg-surface-3 text-appText-muted'
+                        }`}
+                      >
+                        {c.label}
+                      </button>
+                    ))}
+                  </div>
+
+                  {/* Filtered SSW Track Buttons */}
+                  {filteredSswTracks.map((trk) => {
+                    const isSelected = activeTrackId === trk.id;
+                    const stats = trackProgress[trk.id];
+                    const completedCount = stats?.completedLessons?.length || 0;
+                    return (
+                      <button
+                        key={trk.id}
+                        type="button"
+                        onClick={() => {
+                          setActiveTrack(trk.id);
+                          setIsMobileTrackPickerOpen(false);
+                        }}
+                        className={`w-full p-3 rounded-xl border text-left flex items-center justify-between gap-3 transition-colors min-h-[52px] active:scale-98 ${
+                          isSelected
+                            ? 'bg-amber-500/15 border-amber-500 text-appText-bright font-bold ring-1 ring-amber-500'
+                            : 'bg-surface hover:bg-surface-3 border-accent/15 text-appText'
+                        }`}
+                      >
+                        <div className="flex items-center gap-2.5 min-w-0">
+                          <div className="w-6 h-6 shrink-0 flex items-center justify-center">
+                            <img
+                              src={trk.iconSvg}
+                              alt=""
+                              className="w-6 h-6 object-contain"
+                              onError={(e) => {
+                                (e.currentTarget as HTMLElement).style.display = 'none';
+                              }}
+                            />
+                          </div>
+                          <div className="min-w-0">
+                            <div className="font-bold text-xs text-appText-bright flex items-center gap-1.5">
+                              <span className="truncate">{trk.title}</span>
+                              <span className="px-1.5 py-0.2 rounded text-[9px] font-mono bg-surface-2 text-accent border border-accent/20">
+                                {trk.ministry}
+                              </span>
+                            </div>
+                            <div className="text-[10px] text-appText-muted">{trk.sector}</div>
+                          </div>
                         </div>
-                      </div>
-                      <div className="text-right shrink-0">
-                        {completedCount > 0 ? (
-                          <span className="text-[10px] text-emerald-400 font-bold">{completedCount} tuntas</span>
-                        ) : (
-                          <span className="text-[10px] text-appText-muted">{trk.units}</span>
-                        )}
-                      </div>
-                    </button>
-                  );
-                })}
+                        <div className="text-right shrink-0">
+                          {completedCount > 0 ? (
+                            <span className="text-[10px] text-emerald-400 font-bold">{completedCount} tuntas</span>
+                          ) : (
+                            <span className="text-[10px] text-appText-muted">{trk.units}</span>
+                          )}
+                        </div>
+                      </button>
+                    );
+                  })}
+                </div>
+              )}
 
               {trackCategory === 'jft_life' &&
                 jftLifeTracks.map((trk) => {
@@ -1253,6 +1458,25 @@ export const CurriculumTrackBrowser: React.FC<CurriculumTrackBrowserProps> = ({
       <ResearchMethodologyModal
         isOpen={isResearchModalOpen}
         onClose={() => setIsResearchModalOpen(false)}
+      />
+
+      {/* Official Japanese Prometric CBT Simulator Modal */}
+      <PrometricCbtModal
+        isOpen={isPrometricModalOpen}
+        onClose={() => setIsPrometricModalOpen(false)}
+        initialSectorId={activeTrackId.startsWith('ssw') ? activeTrackId : 'ssw-kaigo'}
+      />
+
+      {/* Official Japan Foundation JFT-Basic CBT Simulator Modal */}
+      <JftBasicCbtModal
+        isOpen={isJftModalOpen}
+        onClose={() => setIsJftModalOpen(false)}
+      />
+
+      {/* Living in Japan Practical Survival Guide Modal */}
+      <SeikatsuLivingGuideModal
+        isOpen={isSeikatsuModalOpen}
+        onClose={() => setIsSeikatsuModalOpen(false)}
       />
     </div>
   );

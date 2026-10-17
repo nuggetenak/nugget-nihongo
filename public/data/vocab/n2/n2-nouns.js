@@ -1,7 +1,6 @@
 // ────────────────────────────────────────────────────────────
-//  n2-nouns.js — Nugget Nihongo · JLPT N2 · Nouns
-//  160 entries | Auto-split from vocab-n2.js
-//  Schema: data/_schema-vocab.md | Part of vocab/n2/ module
+//  n2-nouns.js — Nugget Nihongo · JLPT N2 · NOUNS
+//  1040 entries | Fully Curated Indonesian
 // ────────────────────────────────────────────────────────────
 
 window.vocabN2_Nouns = [
@@ -35,8 +34,9 @@ window.vocabN2_Nouns = [
       "level": "n2",
       "tags": [
         "ilmu-pengetahuan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ゲンショウ￣"}
+},
     {
       "jp": "少子化は深刻な社会現象だ。",
       "id": "Penurunan angka kelahiran adalah fenomena sosial yang serius.",
@@ -93,8 +93,9 @@ window.vocabN2_Nouns = [
       "level": "n2",
       "tags": [
         "pendidikan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ケイコウ￣"}
+},
     {
       "jp": "価格が下がる傾向にある。",
       "id": "Harga cenderung mengalami penurunan.",
@@ -151,8 +152,9 @@ window.vocabN2_Nouns = [
       "level": "n2",
       "tags": [
         "alam-lingkungan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"カダイ￣"}
+},
     {
       "jp": "先生から課題が出された。",
       "id": "Guru memberikan tugas kepada kami.",
@@ -231,8 +233,9 @@ window.vocabN2_Nouns = [
       "level": "n2",
       "tags": [
         "keputusan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"シュ＼ダン"}
+},
     {
       "jp": "交渉が唯一の平和的手段だ。",
       "id": "Negosiasi adalah satu-satunya cara damai.",
@@ -289,8 +292,9 @@ window.vocabN2_Nouns = [
       "level": "n2",
       "tags": [
         "hukum-aturan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"キジュン￣"}
+},
     {
       "jp": "採用の基準は何ですか。",
       "id": "Apa kriteria untuk penerimaan karyawan?",
@@ -357,8 +361,9 @@ window.vocabN2_Nouns = [
       "level": "n2",
       "tags": [
         "pekerjaan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"キジュン￣"}
+},
     {
       "jp": "悪天候の条件のもとで試合が行われた。",
       "id": "Pertandingan berlangsung dalam kondisi cuaca buruk.",
@@ -384,8 +389,6 @@ window.vocabN2_Nouns = [
   "jmdict_seq": "1356510",
   "frequency": 500
 },
-
-
 
 {
   "id": "vg-n2-00098",
@@ -417,8 +420,9 @@ window.vocabN2_Nouns = [
       "level": "n2",
       "tags": [
         "bahasa-komunikasi"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"コ＼ンキョ"}
+},
     {
       "jp": "発言の根拠を示してください。",
       "id": "Tolong tunjukkan dasar/bukti dari pernyataan Anda.",
@@ -487,8 +491,9 @@ window.vocabN2_Nouns = [
       "level": "n2",
       "tags": [
         "ekonomi-keuangan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":4,"downstep_mora":1,"contour":"カ＼ンテン"}
+},
     {
       "jp": "環境の観点から見ると、この計画は問題がある。",
       "id": "Dilihat dari sudut pandang lingkungan, rencana ini bermasalah.",
@@ -545,8 +550,9 @@ window.vocabN2_Nouns = [
       "level": "n2",
       "tags": [
         "bisnis"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ホウシン￣"}
+},
     {
       "jp": "政府の教育方針に賛否両論がある。",
       "id": "Kebijakan pendidikan pemerintah menuai pro dan kontra.",
@@ -615,8 +621,9 @@ window.vocabN2_Nouns = [
       "level": "n2",
       "tags": [
         "bisnis"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ダンカイ￣"}
+},
     {
       "jp": "現段階ではまだ結論が出ていない。",
       "id": "Pada tahap ini, belum ada kesimpulan.",
@@ -694,8 +701,9 @@ window.vocabN2_Nouns = [
       "level": "n2",
       "tags": [
         "pendidikan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":2,"downstep_mora":1,"contour":"カ＼イ"}
+},
     {
       "jp": "製品開発の過程を記録した。",
       "id": "Proses pengembangan produk telah didokumentasikan.",
@@ -752,8 +760,9 @@ window.vocabN2_Nouns = [
       "level": "n2",
       "tags": [
         "hukum-aturan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"ケ＼イイ"}
+},
     {
       "jp": "この決定に至った経緯を報告した。",
       "id": "Kami melaporkan kronologi bagaimana keputusan ini diambil.",
@@ -809,8 +818,9 @@ window.vocabN2_Nouns = [
       "level": "n2",
       "tags": [
         "ekonomi-keuangan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ミトオシ￣"}
+},
     {
       "jp": "工事完了の見通しはまだ立っていない。",
       "id": "Perkiraan penyelesaian proyek konstruksi belum bisa dipastikan.",
@@ -908,8 +918,9 @@ window.vocabN2_Nouns = [
       "level": "n2",
       "tags": [
         "pendidikan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ミトオシ￣"}
+},
     {
       "jp": "回復の見込みはほとんどない。",
       "id": "Kemungkinan untuk pulih hampir tidak ada.",
@@ -1000,8 +1011,9 @@ window.vocabN2_Nouns = [
       "level": "n2",
       "tags": [
         "ekonomi-keuangan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ミコミ￣"}
+},
     {
       "jp": "エネルギーの需要が増えている。",
       "id": "Permintaan energi terus meningkat.",
@@ -1072,8 +1084,9 @@ window.vocabN2_Nouns = [
       "level": "n2",
       "tags": [
         "kesehatan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"コ＼ウカ"}
+},
     {
       "jp": "広告の効果を測定した。",
       "id": "Efektivitas iklan telah diukur.",
@@ -1142,8 +1155,9 @@ window.vocabN2_Nouns = [
       "level": "n2",
       "tags": [
         "bisnis"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"コウリツ￣"}
+},
     {
       "jp": "この方法は効率が悪い。",
       "id": "Cara ini tidak efisien.",
@@ -1200,8 +1214,9 @@ window.vocabN2_Nouns = [
       "level": "n2",
       "tags": [
         "hukum-aturan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"シショウ￣"}
+},
     {
       "jp": "体調が悪くても仕事に支障はない。",
       "id": "Meskipun kondisi badan kurang baik, tidak ada hambatan dalam pekerjaan.",
@@ -1258,8 +1273,9 @@ window.vocabN2_Nouns = [
       "level": "n2",
       "tags": [
         "alam-lingkungan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"ヒ＼ガイ"}
+},
     {
       "jp": "被害を最小限に抑える対策が必要だ。",
       "id": "Diperlukan langkah untuk meminimalkan kerugian.",
@@ -1316,8 +1332,9 @@ window.vocabN2_Nouns = [
       "level": "n2",
       "tags": [
         "ekonomi-keuangan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ソンシツ￣"}
+},
     {
       "jp": "この失敗による損失は計り知れない。",
       "id": "Kerugian akibat kegagalan ini tidak ternilai.",
@@ -1366,7 +1383,7 @@ window.vocabN2_Nouns = [
     "umum"
   ],
   "nuance": "Bisa dibaca りえき (keuntungan/manfaat umum dan finansial) atau りやく (manfaat/berkah, lebih religius/filosofis); dalam konteks bisnis selalu りえき.",
-  "conj_type": 'suru',
+  "conj_type": "suru",
   "examples": [
     {
       "jp": "今期は大きな利益を上げた。",
@@ -1374,8 +1391,9 @@ window.vocabN2_Nouns = [
       "level": "n2",
       "tags": [
         "ekonomi-keuangan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"リ＼エキ"}
+},
     {
       "jp": "国民の利益のために政策を立案する。",
       "id": "Kebijakan disusun demi kepentingan rakyat.",
@@ -1449,8 +1467,9 @@ window.vocabN2_Nouns = [
       "level": "n2",
       "tags": [
         "ilmu-pengetahuan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"セ＼イカ"}
+},
     {
       "jp": "努力の成果が出た。",
       "id": "Hasil dari usaha keras telah terlihat.",
@@ -1507,8 +1526,9 @@ window.vocabN2_Nouns = [
       "level": "n2",
       "tags": [
         "hukum-aturan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ジッタイ￣"}
+},
     {
       "jp": "実態に即した政策が必要だ。",
       "id": "Diperlukan kebijakan yang sesuai dengan kenyataan di lapangan.",
@@ -1565,8 +1585,9 @@ window.vocabN2_Nouns = [
       "level": "n2",
       "tags": [
         "bisnis"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ジッセキ￣"}
+},
     {
       "jp": "販売実績が目標を超えた。",
       "id": "Realisasi penjualan melampaui target.",
@@ -1623,8 +1644,9 @@ window.vocabN2_Nouns = [
       "level": "n2",
       "tags": [
         "pendidikan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"モクヒョウ￣"}
+},
     {
       "jp": "月ごとの目標を設定して進捗を確認する。",
       "id": "Target bulanan ditetapkan dan kemajuannya dipantau.",
@@ -1693,8 +1715,9 @@ window.vocabN2_Nouns = [
       "level": "n2",
       "tags": [
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ヨユウ￣"}
+},
     {
       "jp": "余裕を持って仕事に取り組むことが大切だ。",
       "id": "Penting untuk mengerjakan tugas dengan ketenangan.",
@@ -1775,8 +1798,9 @@ window.vocabN2_Nouns = [
       "level": "n2",
       "tags": [
         "emosi"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ヨユウ￣"}
+},
     {
       "jp": "人間の体には限界がある。",
       "id": "Tubuh manusia memiliki batasnya sendiri.",
@@ -1833,8 +1857,9 @@ window.vocabN2_Nouns = [
       "level": "n2",
       "tags": [
         "kesehatan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"タイサク￣"}
+},
     {
       "jp": "地震対策として建物を補強した。",
       "id": "Bangunan diperkuat sebagai langkah antisipasi gempa.",
@@ -1883,7 +1908,7 @@ window.vocabN2_Nouns = [
     "umum"
   ],
   "nuance": "Sangat formal — dipakai terutama dalam dokumen resmi, hukum, dan pernyataan pemerintah; 措置を取る = 'mengambil tindakan (resmi)'; lebih berat bobot formalnya daripada 対策.",
-  "conj_type": 'suru',
+  "conj_type": "suru",
   "examples": [
     {
       "jp": "政府は緊急措置を発動した。",
@@ -1891,8 +1916,9 @@ window.vocabN2_Nouns = [
       "level": "n2",
       "tags": [
         "politik-masyarakat"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":2,"downstep_mora":1,"contour":"ソ＼チ"}
+},
     {
       "jp": "適切な措置が取られなかった。",
       "id": "Tindakan yang tepat tidak diambil.",
@@ -1949,8 +1975,9 @@ window.vocabN2_Nouns = [
       "level": "n2",
       "tags": [
         "ekonomi-keuangan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"シクミ￣"}
+},
     {
       "jp": "この機械の仕組みを理解するのは難しい。",
       "id": "Sulit untuk memahami cara kerja mesin ini.",
@@ -2029,8 +2056,9 @@ window.vocabN2_Nouns = [
       "level": "n2",
       "tags": [
         "alam-lingkungan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"シクミ￣"}
+},
     {
       "jp": "各社の省エネへの取り組みを比較した。",
       "id": "Upaya penghematan energi masing-masing perusahaan dibandingkan.",
@@ -2121,8 +2149,9 @@ window.vocabN2_Nouns = [
       "tags": [
         "politik-masyarakat",
         "ekonomi-keuangan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"トリクミ￣"}
+},
     {
       "jp": "この政策は国民の生活を改善することを目的としている。",
       "id": "Kebijakan ini bertujuan untuk memperbaiki kehidupan rakyat.",
@@ -2178,8 +2207,9 @@ window.vocabN2_Nouns = [
       "level": "n2",
       "tags": [
         "pendidikan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"セ＼イド"}
+},
     {
       "jp": "この制度は社会的弱者を保護するために設けられた。",
       "id": "Sistem ini didirikan untuk melindungi kelompok rentan dalam masyarakat.",
@@ -2206,8 +2236,6 @@ window.vocabN2_Nouns = [
   "jmdict_seq": "1374880",
   "frequency": 500
 },
-
-
 
 {
   "id": "vg-n2-00165",
@@ -2240,8 +2268,9 @@ window.vocabN2_Nouns = [
       "tags": [
         "pekerjaan",
         "hukum-aturan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"ケンゲ＼ン"}
+},
     {
       "jp": "知事は一定の権限を持っている。",
       "id": "Gubernur memiliki kewenangan tertentu.",
@@ -2299,8 +2328,9 @@ window.vocabN2_Nouns = [
       "level": "n2",
       "tags": [
         "pekerjaan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"ヤクワ＼リ"}
+},
     {
       "jp": "政府は経済を安定させる役割を担っている。",
       "id": "Pemerintah mengemban peran untuk menstabilkan ekonomi.",
@@ -2370,8 +2400,9 @@ window.vocabN2_Nouns = [
       "level": "n2",
       "tags": [
         "politik-masyarakat"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"ヤクワ＼リ"}
+},
     {
       "jp": "彼は会社で高い地位を得た。",
       "id": "Dia mendapatkan posisi tinggi di perusahaan.",
@@ -2441,8 +2472,9 @@ window.vocabN2_Nouns = [
       "tags": [
         "emosi-sosial",
         "karakter"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ヘンケン￣"}
+},
     {
       "jp": "外国人に対する偏見が根強く残っている。",
       "id": "Prasangka terhadap orang asing masih mengakar kuat.",
@@ -2499,8 +2531,9 @@ window.vocabN2_Nouns = [
       "tags": [
         "pekerjaan",
         "politik-masyarakat"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":5,"downstep_mora":0,"contour":"タヨウセイ￣"}
+},
     {
       "jp": "生物の多様性を守ることが急務だ。",
       "id": "Melindungi keanekaragaman hayati adalah hal yang mendesak.",
@@ -2557,8 +2590,9 @@ window.vocabN2_Nouns = [
       "level": "n2",
       "tags": [
         "politik-masyarakat"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":5,"downstep_mora":0,"contour":"ショウスウハ￣"}
+},
     {
       "jp": "その国では少数派が差別に苦しんでいる。",
       "id": "Di negara itu, kelompok minoritas menderita diskriminasi.",
@@ -2615,8 +2649,9 @@ window.vocabN2_Nouns = [
       "level": "n2",
       "tags": [
         "politik-masyarakat"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"タスウハ￣"}
+},
     {
       "jp": "多数派が常に正しいとは限らない。",
       "id": "Kelompok mayoritas belum tentu selalu benar.",
@@ -2675,8 +2710,9 @@ window.vocabN2_Nouns = [
       "tags": [
         "politik-masyarakat",
         "media"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"セ＼ロン"}
+},
     {
       "jp": "政府は世論を無視することはできない。",
       "id": "Pemerintah tidak bisa mengabaikan opini publik.",
@@ -2745,8 +2781,9 @@ window.vocabN2_Nouns = [
       "tags": [
         "politik-masyarakat",
         "hukum-aturan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"セ＼ロン"}
+},
     {
       "jp": "<b>議会</b>は予算案をめぐって与野党が激しく討議した。",
       "id": "Parlemen berdebat sengit antara koalisi dan oposisi mengenai rancangan anggaran.",
@@ -2801,8 +2838,9 @@ window.vocabN2_Nouns = [
       "tags": [
         "politik-masyarakat",
         "hukum-aturan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":5,"downstep_mora":2,"contour":"イイ＼ンカイ"}
+},
     {
       "jp": "国会の予算<b>委員会</b>で大臣が答弁を行った。",
       "id": "Menteri memberikan penjelasan di komite anggaran parlemen.",
@@ -2856,8 +2894,9 @@ window.vocabN2_Nouns = [
       "tags": [
         "hukum-aturan",
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ジョウレイ￣"}
+},
     {
       "jp": "この<b>条例</b>に違反すると、2万円以下の罰金が科せられる。",
       "id": "Melanggar peraturan daerah ini akan dikenai denda hingga 20.000 yen.",
@@ -2932,8 +2971,9 @@ window.vocabN2_Nouns = [
       "tags": [
         "hukum-aturan",
         "bisnis"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ジョウレイ￣"}
+},
     {
       "jp": "新しい<b>法令</b>が施行されると、手続きや書類が変わる場合がある。",
       "id": "Ketika peraturan baru mulai berlaku, prosedur dan dokumen bisa berubah.",
@@ -2979,7 +3019,7 @@ window.vocabN2_Nouns = [
     "umum"
   ],
   "nuance": "判決 adalah keputusan resmi yang dikeluarkan hakim setelah proses persidangan selesai. 判決を下す = menjatuhkan vonis. Berbeda dari 判断 (handan — penilaian/pertimbangan umum) yang bisa digunakan dalam konteks sehari-hari — 判決 khusus untuk keputusan hukum formal di pengadilan dan bernuansa sangat resmi.",
-  "conj_type": 'suru',
+  "conj_type": "suru",
   "examples": [
     {
       "jp": "裁判所は被告に無罪の<b>判決</b>を言い渡した。",
@@ -2987,8 +3027,9 @@ window.vocabN2_Nouns = [
       "level": "n2",
       "tags": [
         "hukum-aturan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ハンケツ￣"}
+},
     {
       "jp": "<b>判決</b>に不服がある場合は、14日以内に控訴できる。",
       "id": "Jika tidak puas dengan vonis, dapat mengajukan banding dalam 14 hari.",
@@ -3041,8 +3082,9 @@ window.vocabN2_Nouns = [
       "level": "n2",
       "tags": [
         "hukum-aturan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ショウコ￣"}
+},
     {
       "jp": "<b>証拠</b>が不十分なため、容疑者は不起訴となった。",
       "id": "Karena bukti tidak cukup, tersangka tidak didakwa.",
@@ -3109,8 +3151,9 @@ window.vocabN2_Nouns = [
       "tags": [
         "bisnis",
         "hukum-aturan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ショウコ￣"}
+},
     {
       "jp": "この<b>条項</b>に違反した場合、契約は即時解除となる。",
       "id": "Jika melanggar klausul ini, kontrak akan diputus secara langsung.",
@@ -3166,8 +3209,9 @@ window.vocabN2_Nouns = [
       "tags": [
         "ekonomi-keuangan",
         "politik-masyarakat"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ザイセイ￣"}
+},
     {
       "jp": "<b>財政</b>再建のために、歳出削減と増税が議論されている。",
       "id": "Pengurangan pengeluaran dan kenaikan pajak didiskusikan untuk pemulihan keuangan negara.",
@@ -3234,8 +3278,9 @@ window.vocabN2_Nouns = [
       "tags": [
         "ekonomi-keuangan",
         "pekerjaan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ケイキ￣"}
+},
     {
       "jp": "政府は<b>景気</b>刺激策として大型の補正予算を組んだ。",
       "id": "Pemerintah menyusun anggaran tambahan besar-besaran sebagai stimulus ekonomi.",
@@ -3306,8 +3351,9 @@ window.vocabN2_Nouns = [
       "tags": [
         "ekonomi-keuangan",
         "pekerjaan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"フキョウ￣"}
+},
     {
       "jp": "長引く<b>不況</b>から抜け出すための政策が求められている。",
       "id": "Kebijakan untuk keluar dari resesi yang berkepanjangan sangat dibutuhkan.",
@@ -3365,8 +3411,9 @@ window.vocabN2_Nouns = [
       "tags": [
         "ekonomi-keuangan",
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ブッカ￣"}
+},
     {
       "jp": "<b>物価</b>の安定は中央銀行の主要な使命のひとつだ。",
       "id": "Stabilisasi tingkat harga adalah salah satu misi utama bank sentral.",
@@ -3421,8 +3468,9 @@ window.vocabN2_Nouns = [
       "tags": [
         "ekonomi-keuangan",
         "bisnis"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":4,"downstep_mora":2,"contour":"カブ＼シキ"}
+},
     {
       "jp": "彼女は複数の上場企業の<b>株式</b>を分散して保有している。",
       "id": "Dia memiliki saham dari beberapa perusahaan terdaftar secara tersebar.",
@@ -3476,8 +3524,9 @@ window.vocabN2_Nouns = [
       "tags": [
         "ekonomi-keuangan",
         "bisnis"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ホジョキン￣"}
+},
     {
       "jp": "農業の持続性を確保するために、<b>補助金</b>制度が整備されている。",
       "id": "Sistem subsidi telah dipersiapkan untuk memastikan keberlangsungan pertanian.",
@@ -3534,8 +3583,9 @@ window.vocabN2_Nouns = [
       "tags": [
         "ekonomi-keuangan",
         "politik-masyarakat"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ゼイセイ￣"}
+},
     {
       "jp": "<b>税制</b>の複雑さが中小企業の事務負担を増やしている。",
       "id": "Kompleksitas sistem perpajakan meningkatkan beban administrasi bagi usaha kecil dan menengah.",
@@ -3561,8 +3611,6 @@ window.vocabN2_Nouns = [
   "frequency": 1000
 },
 
-
-
 {
   "id": "vg-n2-00241",
   "word": "統計",
@@ -3584,7 +3632,7 @@ window.vocabN2_Nouns = [
     "umum"
   ],
   "nuance": "統計 merujuk pada pengumpulan, analisis, dan penyajian data numerik secara sistematis. 統計学 = ilmu statistik. 統計的に = secara statistik. Berbeda dari データ (deeta — data mentah) yang lebih tentang informasi yang belum diproses — 統計 menekankan hasil yang sudah dianalisis dan disajikan dalam bentuk yang dapat diinterpretasi.",
-  "conj_type": 'suru',
+  "conj_type": "suru",
   "examples": [
     {
       "jp": "政府の<b>統計</b>によると、失業率は前月比で0.2ポイント改善した。",
@@ -3593,8 +3641,9 @@ window.vocabN2_Nouns = [
       "tags": [
         "ilmu-pengetahuan",
         "ekonomi-keuangan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"トウケイ￣"}
+},
     {
       "jp": "<b>統計</b>データを正しく読み解く力が現代のビジネスには不可欠だ。",
       "id": "Kemampuan membaca data statistik dengan benar tidak tergantikan dalam bisnis modern.",
@@ -3650,8 +3699,9 @@ window.vocabN2_Nouns = [
       "tags": [
         "pendidikan",
         "ilmu-pengetahuan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ロンブン￣"}
+},
     {
       "jp": "この研究者の<b>論文</b>は国際的な学術誌に掲載され、高い評価を受けた。",
       "id": "Makalah peneliti ini dimuat di jurnal akademik internasional dan mendapat penilaian tinggi.",
@@ -3707,8 +3757,9 @@ window.vocabN2_Nouns = [
       "level": "n2",
       "tags": [
         "ilmu-pengetahuan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"カセツ￣"}
+},
     {
       "jp": "その<b>仮説</b>が正しいかどうかを検証するために実験が行われた。",
       "id": "Eksperimen dilakukan untuk memverifikasi apakah hipotesis tersebut benar.",
@@ -3765,8 +3816,9 @@ window.vocabN2_Nouns = [
       "level": "n2",
       "tags": [
         "ilmu-pengetahuan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"リ＼ロン"}
+},
     {
       "jp": "<b>理論</b>と実践の両面から問題にアプローチすることが重要だ。",
       "id": "Penting untuk mendekati masalah dari dua sisi: teori dan praktik.",
@@ -3824,8 +3876,9 @@ window.vocabN2_Nouns = [
       "level": "n2",
       "tags": [
         "ilmu-pengetahuan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"シュホウ￣"}
+},
     {
       "jp": "あの映画監督は独特の映像<b>手法</b>で知られている。",
       "id": "Sutradara film itu dikenal dengan teknik sinematografi yang khas.",
@@ -3882,8 +3935,9 @@ window.vocabN2_Nouns = [
       "tags": [
         "bahasa-komunikasi",
         "pekerjaan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ガイヨウ￣"}
+},
     {
       "jp": "報告書の冒頭に研究の<b>概要</b>をまとめたページを設けた。",
       "id": "Di bagian awal laporan, kami menyertakan halaman yang merangkum ikhtisar penelitian.",
@@ -3942,8 +3996,9 @@ window.vocabN2_Nouns = [
       "level": "n2",
       "tags": [
         "ilmu-pengetahuan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"ハ＼ンイ"}
+},
     {
       "jp": "試験の<b>範囲</b>は第1章から第6章までと発表された。",
       "id": "Cakupan materi ujian diumumkan adalah dari bab 1 hingga bab 6.",
@@ -3999,8 +4054,9 @@ window.vocabN2_Nouns = [
       "tags": [
         "ilmu-pengetahuan",
         "pekerjaan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"タイショウ￣"}
+},
     {
       "jp": "新しい補助金制度の<b>対象</b>となる条件が発表された。",
       "id": "Persyaratan untuk menjadi sasaran sistem subsidi baru telah diumumkan.",
@@ -4058,8 +4114,9 @@ window.vocabN2_Nouns = [
       "tags": [
         "ilmu-pengetahuan",
         "politik-masyarakat"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ハイケイ￣"}
+},
     {
       "jp": "論文の冒頭では、研究の<b>背景</b>と動機を明確に述べる必要がある。",
       "id": "Di bagian awal makalah, latar belakang dan motivasi penelitian perlu diungkapkan dengan jelas.",
@@ -4132,8 +4189,9 @@ window.vocabN2_Nouns = [
       "level": "n2",
       "tags": [
         "ilmu-pengetahuan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"モクテキ￣"}
+},
     {
       "jp": "<b>目的</b>を明確にしてから行動することが、効率的な仕事の基本だ。",
       "id": "Memperjelas tujuan sebelum bertindak adalah dasar dari kerja yang efisien.",
@@ -4190,8 +4248,9 @@ window.vocabN2_Nouns = [
       "tags": [
         "pendidikan",
         "emosi-sosial"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ヘンケン￣"}
+},
     {
       "jp": "先入観や<b>偏見</b>を持たず、相手の話をよく聞くことが大切だ。",
       "id": "Penting untuk mendengarkan orang lain dengan baik tanpa prasangka atau asumsi awal.",
@@ -4236,7 +4295,7 @@ window.vocabN2_Nouns = [
     "umum"
   ],
   "nuance": "Menekankan bahwa semua orang diperlakukan dengan cara yang sama tanpa perbedaan. Berbeda dari 公平 (kousei = adil) — 平等 berarti perlakuan yang identik untuk semua, sedangkan 公平 bisa mempertimbangkan konteks dan perbedaan individu demi hasil yang proporsional.",
-  "conj_type": 'na-adj',
+  "conj_type": "na-adj",
   "examples": [
     {
       "jp": "法の下の<b>平等</b>はすべての民主主義社会の基本原則だ。",
@@ -4245,8 +4304,9 @@ window.vocabN2_Nouns = [
       "tags": [
         "hukum-aturan",
         "politik-masyarakat"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ビョウドウ￣"}
+},
     {
       "jp": "男女<b>平等</b>を実現するための取り組みが続けられている。",
       "id": "Upaya untuk mewujudkan kesetaraan gender terus dilakukan.",
@@ -4304,8 +4364,9 @@ window.vocabN2_Nouns = [
       "tags": [
         "pekerjaan",
         "bisnis"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":5,"downstep_mora":0,"contour":"タヨウセイ￣"}
+},
     {
       "jp": "生物<b>多様性</b>の保護は地球規模の課題となっている。",
       "id": "Perlindungan keanekaragaman hayati menjadi tantangan global.",
@@ -4358,8 +4419,9 @@ window.vocabN2_Nouns = [
       "tags": [
         "teknologi",
         "ilmu-pengetahuan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"リ＼ンリ"}
+},
     {
       "jp": "医師は職業<b>倫理</b>として患者の秘密を守る義務がある。",
       "id": "Dokter memiliki kewajiban etika profesi untuk menjaga kerahasiaan pasien.",
@@ -4414,8 +4476,9 @@ window.vocabN2_Nouns = [
       "tags": [
         "pendidikan",
         "karakter"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ドウトク￣"}
+},
     {
       "jp": "お金のためならなんでもするというのは<b>道徳</b>に反する考えだ。",
       "id": "Pikiran bahwa apapun boleh dilakukan demi uang adalah pemikiran yang bertentangan dengan moralitas.",
@@ -4470,8 +4533,9 @@ window.vocabN2_Nouns = [
       "tags": [
         "karakter",
         "keluarga"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"カチカ＼ン"}
+},
     {
       "jp": "パートナーとの<b>価値観</b>の違いが、結婚後に問題になることがある。",
       "id": "Perbedaan sistem nilai dengan pasangan terkadang bisa menjadi masalah setelah menikah.",
@@ -4526,8 +4590,9 @@ window.vocabN2_Nouns = [
       "tags": [
         "ilmu-pengetahuan",
         "klasik"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"シソウ￣"}
+},
     {
       "jp": "自由主義という<b>思想</b>は近代社会の基礎を形成した。",
       "id": "Ideologi liberalisme membentuk fondasi masyarakat modern.",
@@ -4583,8 +4648,9 @@ window.vocabN2_Nouns = [
       "tags": [
         "pendidikan",
         "ilmu-pengetahuan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":4,"downstep_mora":2,"contour":"テツ＼ガク"}
+},
     {
       "jp": "彼の経営<b>哲学</b>は「人を大切にすること」だ。",
       "id": "Filsafat bisnisnya adalah 'menghargai orang'.",
@@ -4639,8 +4705,9 @@ window.vocabN2_Nouns = [
       "tags": [
         "budaya",
         "alam-lingkungan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ブンメイ￣"}
+},
     {
       "jp": "古代エジプトは高度な<b>文明</b>を築いた社会だ。",
       "id": "Mesir Kuno adalah masyarakat yang membangun peradaban tinggi.",
@@ -4710,8 +4777,9 @@ window.vocabN2_Nouns = [
       "tags": [
         "budaya",
         "perjalanan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":4,"category":"nakadaka","mora_count":6,"downstep_mora":4,"contour":"ブンカイ＼サン"}
+},
     {
       "jp": "ユネスコは各国の<b>文化遺産</b>を世界遺産として登録し、保護している。",
       "id": "UNESCO mendaftarkan dan melindungi warisan budaya berbagai negara sebagai Warisan Dunia.",
@@ -4811,7 +4879,7 @@ window.vocabN2_Nouns = [
     "umum"
   ],
   "nuance": "Mengacu pada praktik yang sudah lazim dilakukan secara kolektif oleh masyarakat atau kelompok tertentu. Berbeda dari 習慣 (shuukan = kebiasaan individual) — 慣習 bersifat sosial dan sering memiliki kekuatan normatif. 慣習法 = hukum adat. Pelanggaran 慣習 bisa menimbulkan sanksi sosial.",
-  "conj_type": 'suru',
+  "conj_type": "suru",
   "examples": [
     {
       "jp": "お中元やお歳暮は日本独自の贈り物の<b>慣習</b>だ。",
@@ -4820,8 +4888,9 @@ window.vocabN2_Nouns = [
       "tags": [
         "budaya",
         "konsep-jepang"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"カンシュウ￣"}
+},
     {
       "jp": "その地域では結婚式の<b>慣習</b>が独特で、他の地域とは大きく異なる。",
       "id": "Adat pernikahan di daerah itu unik dan sangat berbeda dari daerah lain.",
@@ -4894,8 +4963,9 @@ window.vocabN2_Nouns = [
       "tags": [
         "politik-masyarakat",
         "emosi-sosial"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"キハン￣"}
+},
     {
       "jp": "国際社会では外交における行動<b>規範</b>が定められている。",
       "id": "Dalam komunitas internasional, standar perilaku dalam diplomasi telah ditetapkan.",
@@ -4964,8 +5034,9 @@ window.vocabN2_Nouns = [
       "tags": [
         "budaya",
         "konsep-jepang"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"キハン￣"}
+},
     {
       "jp": "民主主義の根幹には法による<b>秩序</b>の維持がある。",
       "id": "Inti dari demokrasi adalah pemeliharaan ketertiban melalui hukum.",
@@ -5024,8 +5095,9 @@ window.vocabN2_Nouns = [
       "tags": [
         "ilmu-pengetahuan",
         "politik-masyarakat"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"ケ＼ンイ"}
+},
     {
       "jp": "政府の<b>権威</b>が失われると、社会の秩序も崩れやすくなる。",
       "id": "Ketika otoritas pemerintah hilang, tatanan sosial pun mudah runtuh.",
@@ -5093,8 +5165,9 @@ window.vocabN2_Nouns = [
       "tags": [
         "pekerjaan",
         "bisnis"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"ケンゲ＼ン"}
+},
     {
       "jp": "地方自治体の<b>権限</b>を拡大し、地域の問題を自分たちで解決できるようにすべきだ。",
       "id": "Kewenangan pemerintah daerah harus diperluas agar mereka bisa menyelesaikan masalah lokal secara mandiri.",
@@ -5141,7 +5214,7 @@ window.vocabN2_Nouns = [
     "umum"
   ],
   "nuance": "Konsep luas yang mencakup kebebasan fisik, kebebasan berbicara, kebebasan berpikir, dan lainnya. Juga digunakan dalam konteks sehari-hari (自由な時間 = waktu luang; 自由にしてください = silakan lakukan sesukamu). 自由 dalam konteks hak asasi lebih bernuansa filosofis-politis dari pada 許可 (izin) yang bersifat praktis.",
-  "conj_type": 'na-adj',
+  "conj_type": "na-adj",
   "examples": [
     {
       "jp": "言論の<b>自由</b>は民主主義社会の根本的な権利のひとつだ。",
@@ -5150,8 +5223,9 @@ window.vocabN2_Nouns = [
       "tags": [
         "politik-masyarakat",
         "hukum-aturan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"ジユ＼ウ"}
+},
     {
       "jp": "人は<b>自由</b>に生きる権利を持っている一方で、他者の自由を尊重する義務もある。",
       "id": "Manusia memiliki hak untuk hidup bebas, namun juga memiliki kewajiban untuk menghormati kebebasan orang lain.",
@@ -5210,8 +5284,9 @@ window.vocabN2_Nouns = [
       "tags": [
         "hukum-aturan",
         "pekerjaan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"セ＼キム"}
+},
     {
       "jp": "リーダーには組織全体の方向性を示す<b>責務</b>がある。",
       "id": "Seorang pemimpin memiliki kewajiban untuk menunjukkan arah bagi seluruh organisasi.",
@@ -5267,8 +5342,9 @@ window.vocabN2_Nouns = [
       "tags": [
         "konsep-jepang",
         "pekerjaan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"odaka","mora_count":2,"downstep_mora":2,"contour":"ギリ＼"}
+},
     {
       "jp": "日本では<b>義理</b>と人情の板挟みになることがよくある。",
       "id": "Di Jepang, sering kali seseorang terjepit antara kewajiban sosial dan perasaan kemanusiaan.",
@@ -5335,8 +5411,9 @@ window.vocabN2_Nouns = [
       "tags": [
         "emosi-sosial",
         "konsep-jepang"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":4,"downstep_mora":1,"contour":"ニ＼ンジョウ"}
+},
     {
       "jp": "<b>人情</b>あふれる下町の雰囲気が、観光客を引き付けている。",
       "id": "Suasana kawasan kota tua yang penuh kehangatan kemanusiaan menarik banyak wisatawan.",
@@ -5401,8 +5478,9 @@ window.vocabN2_Nouns = [
       "tags": [
         "konsep-jepang",
         "pekerjaan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ホンネ￣"}
+},
     {
       "jp": "上司の前では賛成したが、<b>本音</b>では反対だった。",
       "id": "Di depan atasan dia setuju, tapi di dalam hati sebenarnya menolak.",
@@ -5457,8 +5535,9 @@ window.vocabN2_Nouns = [
       "tags": [
         "konsep-jepang",
         "bahasa-komunikasi"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"タテマエ￣"}
+},
     {
       "jp": "ビジネスの場では<b>建前</b>で話すことが多いため、相手の真意を読む力が必要だ。",
       "id": "Dalam konteks bisnis, orang sering berbicara dengan sikap formal, sehingga perlu kemampuan membaca maksud sebenarnya.",
@@ -5543,8 +5622,9 @@ window.vocabN2_Nouns = [
       "tags": [
         "konsep-jepang",
         "emosi-sosial"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"タテマエ￣"}
+},
     {
       "jp": "彼は<b>空気</b>が読めないと言われているが、本当は正直なだけだと思う。",
       "id": "Dia dikatakan tidak bisa membaca suasana, tapi menurutku sebenarnya dia hanya jujur.",
@@ -5624,8 +5704,9 @@ window.vocabN2_Nouns = [
       "tags": [
         "seni-budaya",
         "konsep-jepang"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":1,"downstep_mora":0,"contour":"マ￣"}
+},
     {
       "jp": "優れた音楽家は音符と音符の間の<b>間</b>を大切にする。",
       "id": "Musisi berbakat menghargai jeda bermakna di antara not-not musik.",
@@ -5761,8 +5842,9 @@ window.vocabN2_Nouns = [
       "tags": [
         "konsep-jepang",
         "perjalanan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"モテナシ￣"}
+},
     {
       "jp": "おもてなしの心とは、相手が何も言わなくても、その人に必要なことを先読みして行動することだ。",
       "id": "Jiwa omotenashi adalah bertindak mengantisipasi apa yang dibutuhkan seseorang bahkan sebelum mereka mengatakannya.",
@@ -5850,8 +5932,9 @@ window.vocabN2_Nouns = [
       "level": "n2",
       "tags": [
         "politik-masyarakat"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"モテナシ￣"}
+},
     {
       "jp": "東京は<b>人口</b>が集中している大都市だ。",
       "id": "Tokyo adalah kota besar dengan konsentrasi penduduk yang tinggi.",
@@ -5912,8 +5995,9 @@ window.vocabN2_Nouns = [
       "tags": [
         "politik-masyarakat",
         "ekonomi-keuangan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ショウシカ￣"}
+},
     {
       "jp": "<b>少子化</b>対策として、育児支援の充実が求められている。",
       "id": "Sebagai langkah mengatasi penurunan angka kelahiran, peningkatan dukungan pengasuhan anak sangat dibutuhkan.",
@@ -5951,7 +6035,7 @@ window.vocabN2_Nouns = [
     "umum"
   ],
   "nuance": "Merujuk pada fenomena meningkatnya proporsi penduduk berusia lanjut dalam suatu populasi — akibat kombinasi 少子化 dan meningkatnya harapan hidup. Sering dipakai bersama 少子化 dalam frasa 少子高齢化 yang merangkum krisis demografis Jepang. Berbeda dari 老化 yang berarti proses menua pada individu.",
-  "conj_type": 'suru',
+  "conj_type": "suru",
   "examples": [
     {
       "jp": "<b>高齢化</b>社会では、介護の需要が増加する。",
@@ -5960,8 +6044,9 @@ window.vocabN2_Nouns = [
       "tags": [
         "politik-masyarakat",
         "kesehatan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":5,"downstep_mora":0,"contour":"コウレイカ￣"}
+},
     {
       "jp": "少子<b>高齢化</b>は日本が直面する最大の課題の一つだ。",
       "id": "Penurunan kelahiran dan penuaan populasi adalah salah satu tantangan terbesar yang dihadapi Jepang.",
@@ -6000,7 +6085,7 @@ window.vocabN2_Nouns = [
     "umum"
   ],
   "nuance": "Merujuk pada perpindahan menetap dari satu negara ke negara lain — bisa untuk individu (imigran) maupun proses (imigrasi). Berbeda dari 難民 yang melarikan diri karena ancaman; 移民 lebih menekankan kepindahan sukarela dengan tujuan ekonomi atau keluarga. Di Jepang kata ini sensitif secara politik karena kebijakan imigrasi yang ketat.",
-  "conj_type": 'suru',
+  "conj_type": "suru",
   "examples": [
     {
       "jp": "労働力不足を補うために<b>移民</b>を受け入れる議論が高まっている。",
@@ -6009,8 +6094,9 @@ window.vocabN2_Nouns = [
       "tags": [
         "politik-masyarakat",
         "ekonomi-keuangan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"イミン￣"}
+},
     {
       "jp": "<b>移民</b>政策は各国によって大きく異なる。",
       "id": "Kebijakan imigrasi sangat berbeda-beda di setiap negara.",
@@ -6071,8 +6157,9 @@ window.vocabN2_Nouns = [
       "level": "n2",
       "tags": [
         "politik-masyarakat"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ナンミン￣"}
+},
     {
       "jp": "日本の<b>難民</b>認定率は国際的に見て非常に低い。",
       "id": "Tingkat pengakuan status pengungsi di Jepang sangat rendah dibandingkan standar internasional.",
@@ -6134,8 +6221,9 @@ window.vocabN2_Nouns = [
       "tags": [
         "politik-masyarakat",
         "ekonomi-keuangan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"カ＼クサ"}
+},
     {
       "jp": "地域によって医療サービスの<b>格差</b>が大きい。",
       "id": "Kesenjangan layanan kesehatan antardaerah sangat besar.",
@@ -6176,7 +6264,7 @@ window.vocabN2_Nouns = [
     "umum"
   ],
   "nuance": "Merujuk pada kondisi struktural kekurangan kebutuhan dasar — lebih dari sekadar 'tidak punya uang'. Berbeda dari 貧乏 yang lebih kasual dan personal (sering dipakai sendiri atau untuk orang dekat tanpa konotasi kebijakan); 貧困 adalah istilah kebijakan publik dan akademis, dipakai dalam laporan dan diskusi sosial.",
-  "conj_type": 'na-adj',
+  "conj_type": "na-adj",
   "examples": [
     {
       "jp": "子どもの<b>貧困</b>率を下げるために、さまざまな支援策が実施されている。",
@@ -6185,8 +6273,9 @@ window.vocabN2_Nouns = [
       "tags": [
         "politik-masyarakat",
         "ekonomi-keuangan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ヒンコン￣"}
+},
     {
       "jp": "<b>貧困</b>の連鎖を断ち切ることが重要な社会課題だ。",
       "id": "Memutus rantai kemiskinan adalah tugas sosial yang penting.",
@@ -6246,8 +6335,9 @@ window.vocabN2_Nouns = [
       "level": "n2",
       "tags": [
         "politik-masyarakat"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"フク＼シ"}
+},
     {
       "jp": "<b>福祉</b>サービスの質を向上させるために、専門人材の育成が必要だ。",
       "id": "Untuk meningkatkan kualitas layanan kesejahteraan sosial, diperlukan pengembangan tenaga ahli.",
@@ -6288,7 +6378,7 @@ window.vocabN2_Nouns = [
     "umum"
   ],
   "nuance": "Lebih luas dan personal dari 育児 — mencakup keseluruhan proses membesarkan anak mulai dari bayi hingga dewasa, termasuk aspek emosional, pendidikan, dan pembentukan karakter. Lebih sering dipakai dalam konteks percakapan dan pengalaman pribadi; 育児 lebih formal dan spesifik untuk perawatan fisik bayi.",
-  "conj_type": 'suru',
+  "conj_type": "suru",
   "examples": [
     {
       "jp": "<b>子育て</b>には多くの時間とエネルギーが必要だ。",
@@ -6297,8 +6387,9 @@ window.vocabN2_Nouns = [
       "tags": [
         "keluarga",
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":4,"downstep_mora":2,"contour":"コソ＼ダテ"}
+},
     {
       "jp": "<b>子育て</b>中の親を地域全体で支える仕組みが必要だ。",
       "id": "Diperlukan sistem untuk mendukung orang tua yang sedang membesarkan anak secara komunitas.",
@@ -6397,8 +6488,9 @@ window.vocabN2_Nouns = [
       "tags": [
         "politik-masyarakat",
         "pekerjaan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":0,"downstep_mora":1,"contour":"＼"}
+},
     {
       "jp": "<b>ジェンダー</b>の多様性を認める社会づくりが進んでいる。",
       "id": "Pembangunan masyarakat yang mengakui keberagaman gender terus berkembang.",
@@ -6560,8 +6652,9 @@ window.vocabN2_Nouns = [
       "tags": [
         "pendidikan",
         "emosi-negatif"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"イジメ￣"}
+},
     {
       "jp": "<b>いじめ</b>を受けた子どもは、不登校になることもある。",
       "id": "Anak yang mengalami perundungan terkadang menjadi tidak mau bersekolah.",
@@ -6624,8 +6717,9 @@ window.vocabN2_Nouns = [
       "tags": [
         "emosi-negatif",
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"イジメ￣"}
+},
     {
       "jp": "<b>孤独</b>死の問題は、高齢化社会の深刻な課題の一つだ。",
       "id": "Masalah kematian dalam kesepian adalah salah satu tantangan serius dalam masyarakat yang menua.",
@@ -6725,8 +6819,9 @@ window.vocabN2_Nouns = [
       "tags": [
         "kehidupan-sehari",
         "politik-masyarakat"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":0,"downstep_mora":0,"contour":"￣"}
+},
     {
       "jp": "災害後の復興支援で多くの<b>ボランティア</b>が活躍した。",
       "id": "Banyak sukarelawan yang berperan aktif dalam pemulihan pascabencana.",
@@ -6774,8 +6869,9 @@ window.vocabN2_Nouns = [
       "level": "n2",
       "tags": [
         "politik-masyarakat"
-      ]
-    },
+      ],
+  "pitch": {"pattern":5,"category":"nakadaka","mora_count":6,"downstep_mora":5,"contour":"エヌピーオ＼ー"}
+},
     {
       "jp": "その<b>NPO</b>は子どもの貧困問題に取り組んでいる。",
       "id": "Organisasi nirlaba itu bergerak dalam penanganan masalah kemiskinan anak.",
@@ -6824,8 +6920,9 @@ window.vocabN2_Nouns = [
       "tags": [
         "kehidupan-sehari",
         "budaya"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"チ＼イキ"}
+},
     {
       "jp": "<b>地域</b>ごとに異なる文化や習慣がある。",
       "id": "Setiap daerah memiliki budaya dan kebiasaan yang berbeda-beda.",
@@ -6873,8 +6970,9 @@ window.vocabN2_Nouns = [
       "level": "n2",
       "tags": [
         "politik-masyarakat"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":2,"downstep_mora":1,"contour":"ト＼シ"}
+},
     {
       "jp": "<b>都市</b>と地方の格差を縮める政策が必要だ。",
       "id": "Diperlukan kebijakan untuk memperkecil kesenjangan antara kota dan daerah.",
@@ -6914,7 +7012,7 @@ window.vocabN2_Nouns = [
     "umum"
   ],
   "nuance": "Merujuk spesifik pada penurunan penduduk di daerah rural atau terpencil akibat migrasi ke kota — kebalikan dari 都市化. Berbeda dari 人口減少 yang bisa terjadi di mana saja; 過疎化 selalu berkaitan dengan ketidakseimbangan antara daerah dan kota, dan berdampak pada ditutupnya sekolah, toko, dan layanan publik di desa.",
-  "conj_type": 'suru',
+  "conj_type": "suru",
   "examples": [
     {
       "jp": "<b>過疎化</b>が進む地域では、廃校や廃業する店が増えている。",
@@ -6971,8 +7069,9 @@ window.vocabN2_Nouns = [
       "tags": [
         "politik-masyarakat",
         "hukum-aturan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":6,"downstep_mora":3,"contour":"トシケ＼イカク"}
+},
     {
       "jp": "環境に配慮した<b>都市計画</b>が求められる時代になった。",
       "id": "Kini telah tiba era di mana perencanaan kota yang memperhatikan lingkungan sangat dibutuhkan.",
@@ -7022,8 +7121,9 @@ window.vocabN2_Nouns = [
       "tags": [
         "politik-masyarakat",
         "ekonomi-keuangan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":0,"downstep_mora":0,"contour":"￣"}
+},
     {
       "jp": "災害に強い<b>インフラ</b>づくりが防災対策の基本だ。",
       "id": "Membangun infrastruktur yang tahan bencana adalah dasar dari penanggulangan bencana.",
@@ -7074,8 +7174,9 @@ window.vocabN2_Nouns = [
       "tags": [
         "politik-masyarakat",
         "kesehatan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":5,"category":"nakadaka","mora_count":0,"downstep_mora":0,"contour":"￣"}
+},
     {
       "jp": "公共施設の<b>バリアフリー</b>整備は、すべての人が参加できる社会の実現に不可欠だ。",
       "id": "Penyediaan aksesibilitas di fasilitas publik sangat penting untuk mewujudkan masyarakat yang bisa diikuti oleh semua orang.",
@@ -7122,8 +7223,9 @@ window.vocabN2_Nouns = [
       "level": "n2",
       "tags": [
         "teknologi"
-      ]
-    },
+      ],
+  "pitch": {"pattern":5,"category":"nakadaka","mora_count":7,"downstep_mora":5,"contour":"ジンコウチ＼ノウ"}
+},
     {
       "jp": "<b>人工知能</b>が医療診断に活用される事例が増えている。",
       "id": "Semakin banyak kasus di mana kecerdasan buatan dimanfaatkan untuk diagnosis medis.",
@@ -7221,8 +7323,9 @@ window.vocabN2_Nouns = [
       "tags": [
         "teknologi",
         "media"
-      ]
-    },
+      ],
+  "pitch": {"pattern":4,"category":"nakadaka","mora_count":0,"downstep_mora":0,"contour":"￣"}
+},
     {
       "jp": "効率的な<b>アルゴリズム</b>を設計することで、処理速度が大幅に向上した。",
       "id": "Dengan merancang algoritma yang efisien, kecepatan pemrosesan meningkat secara signifikan.",
@@ -7269,8 +7372,9 @@ window.vocabN2_Nouns = [
       "tags": [
         "teknologi",
         "bisnis"
-      ]
-    },
+      ],
+  "pitch": {"pattern":4,"category":"nakadaka","mora_count":0,"downstep_mora":0,"contour":"￣"}
+},
     {
       "jp": "<b>データベース</b>への不正アクセスが発覚し、個人情報が流出した。",
       "id": "Akses tidak sah ke basis data terungkap dan data pribadi bocor.",
@@ -7442,8 +7546,9 @@ window.vocabN2_Nouns = [
       "tags": [
         "teknologi",
         "hukum-aturan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":0,"downstep_mora":0,"contour":"￣"}
+},
     {
       "jp": "<b>プライバシー</b>保護の観点から、個人情報の収集には同意が必要だ。",
       "id": "Dari sudut pandang perlindungan privasi, pengumpulan data pribadi memerlukan persetujuan.",
@@ -7542,8 +7647,9 @@ window.vocabN2_Nouns = [
       "tags": [
         "teknologi",
         "kesehatan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":0,"downstep_mora":1,"contour":"＼"}
+},
     {
       "jp": "産業用<b>ロボット</b>の導入で、製造コストが下がった。",
       "id": "Dengan diperkenalkannya robot industri, biaya produksi menurun.",
@@ -7605,8 +7711,9 @@ window.vocabN2_Nouns = [
       "tags": [
         "teknologi",
         "ekonomi-keuangan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":6,"downstep_mora":0,"contour":"ハンドウタイ￣"}
+},
     {
       "jp": "<b>半導体</b>産業は国家安全保障にも関わる戦略的な分野だ。",
       "id": "Industri semikonduktor adalah bidang strategis yang juga berkaitan dengan keamanan nasional.",
@@ -7704,8 +7811,9 @@ window.vocabN2_Nouns = [
       "level": "n2",
       "tags": [
         "teknologi"
-      ]
-    },
+      ],
+  "pitch": {"pattern":4,"category":"nakadaka","mora_count":0,"downstep_mora":0,"contour":"￣"}
+},
     {
       "jp": "<b>ソフトウェア</b>の開発には多くの時間とコストがかかる。",
       "id": "Pengembangan perangkat lunak membutuhkan banyak waktu dan biaya.",
@@ -7752,8 +7860,9 @@ window.vocabN2_Nouns = [
       "level": "n2",
       "tags": [
         "teknologi"
-      ]
-    },
+      ],
+  "pitch": {"pattern":4,"category":"nakadaka","mora_count":0,"downstep_mora":0,"contour":"￣"}
+},
     {
       "jp": "<b>ハードウェア</b>の故障により、システムが停止した。",
       "id": "Sistem berhenti beroperasi akibat kerusakan perangkat keras.",
@@ -7800,8 +7909,9 @@ window.vocabN2_Nouns = [
       "level": "n2",
       "tags": [
         "teknologi"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":0,"downstep_mora":1,"contour":"＼"}
+},
     {
       "jp": "<b>バグ</b>の原因を特定するために、ログを詳しく調べた。",
       "id": "Log diperiksa secara mendetail untuk mengidentifikasi penyebab bug.",
@@ -7849,8 +7959,9 @@ window.vocabN2_Nouns = [
       "tags": [
         "teknologi",
         "bisnis"
-      ]
-    },
+      ],
+  "pitch": {"pattern":4,"category":"nakadaka","mora_count":0,"downstep_mora":0,"contour":"￣"}
+},
     {
       "jp": "広い<b>ネットワーク</b>を持つことは、ビジネスにおいて大きな強みになる。",
       "id": "Memiliki jaringan yang luas merupakan kekuatan besar dalam bisnis.",
@@ -7899,8 +8010,9 @@ window.vocabN2_Nouns = [
       "tags": [
         "teknologi",
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"エイセイ￣"}
+},
     {
       "jp": "低軌道<b>衛星</b>の打ち上げが相次ぎ、宇宙ビジネスが急成長している。",
       "id": "Peluncuran satelit orbit rendah terus berlanjut dan bisnis antariksa tumbuh pesat.",
@@ -7967,8 +8079,9 @@ window.vocabN2_Nouns = [
       "level": "n2",
       "tags": [
         "teknologi"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":5,"downstep_mora":0,"contour":"ゴカンセイ￣"}
+},
     {
       "jp": "新しいOSへの移行時に、<b>互換性</b>の問題が発生することがある。",
       "id": "Saat migrasi ke sistem operasi baru, terkadang muncul masalah kompatibilitas.",
@@ -8114,8 +8227,9 @@ window.vocabN2_Nouns = [
       "tags": [
         "teknologi",
         "bisnis"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":0,"downstep_mora":0,"contour":"￣"}
+},
     {
       "jp": "スタートアップが育つには、健全な<b>エコシステム</b>が必要だ。",
       "id": "Agar startup bisa berkembang, diperlukan ekosistem yang sehat.",
@@ -8229,8 +8343,9 @@ window.vocabN2_Nouns = [
       "tags": [
         "alam-lingkungan",
         "ilmu-pengetahuan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":4,"category":"nakadaka","mora_count":7,"downstep_mora":4,"contour":"キコウヘ＼ンドウ"}
+},
     {
       "jp": "各国は<b>気候変動</b>対策として排出規制の強化を進めている。",
       "id": "Berbagai negara mendorong pengetatan regulasi emisi sebagai langkah mengatasi perubahan iklim.",
@@ -8288,8 +8403,9 @@ window.vocabN2_Nouns = [
       "tags": [
         "alam-lingkungan",
         "ilmu-pengetahuan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":8,"downstep_mora":0,"contour":"チキュウオンダンカ￣"}
+},
     {
       "jp": "<b>地球温暖化</b>を防ぐために、個人レベルでの取り組みも重要だ。",
       "id": "Upaya di tingkat individu pun penting untuk mencegah pemanasan global.",
@@ -8340,8 +8456,9 @@ window.vocabN2_Nouns = [
       "tags": [
         "alam-lingkungan",
         "politik-masyarakat"
-      ]
-    },
+      ],
+  "pitch": {"pattern":8,"category":"nakadaka","mora_count":9,"downstep_mora":8,"contour":"オンシツコウカガ＼ス"}
+},
     {
       "jp": "農業や畜産業も<b>温室効果ガス</b>の主要な排出源となっている。",
       "id": "Pertanian dan peternakan juga menjadi sumber utama emisi gas rumah kaca.",
@@ -8391,8 +8508,9 @@ window.vocabN2_Nouns = [
       "tags": [
         "alam-lingkungan",
         "ilmu-pengetahuan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":5,"category":"nakadaka","mora_count":7,"downstep_mora":5,"contour":"ニサンカタ＼ンソ"}
+},
     {
       "jp": "<b>二酸化炭素</b>の濃度上昇が地球温暖化の主な原因とされている。",
       "id": "Kenaikan konsentrasi karbon dioksida diyakini sebagai penyebab utama pemanasan global.",
@@ -8548,8 +8666,9 @@ window.vocabN2_Nouns = [
       "tags": [
         "kehidupan-sehari",
         "alam-lingkungan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":7,"category":"nakadaka","mora_count":10,"downstep_mora":7,"contour":"タイヨウコウハ＼ツデン"}
+},
     {
       "jp": "<b>太陽光発電</b>のコストは技術進歩により大幅に低下した。",
       "id": "Biaya pembangkit listrik tenaga surya telah turun drastis berkat kemajuan teknologi.",
@@ -8600,8 +8719,9 @@ window.vocabN2_Nouns = [
       "tags": [
         "alam-lingkungan",
         "ekonomi-keuangan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":5,"category":"nakadaka","mora_count":8,"downstep_mora":5,"contour":"フウリョクハ＼ツデン"}
+},
     {
       "jp": "<b>風力発電</b>は安定した風が吹く地域で特に効果的だ。",
       "id": "Pembangkit listrik tenaga angin sangat efektif di daerah yang memiliki angin stabil.",
@@ -8652,8 +8772,9 @@ window.vocabN2_Nouns = [
       "tags": [
         "alam-lingkungan",
         "ilmu-pengetahuan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":5,"downstep_mora":3,"contour":"ゲンシ＼リョク"}
+},
     {
       "jp": "福島の事故以来、<b>原子力</b>政策について国民の議論が続いている。",
       "id": "Sejak insiden Fukushima, perdebatan publik mengenai kebijakan tenaga nuklir terus berlangsung.",
@@ -8672,8 +8793,6 @@ window.vocabN2_Nouns = [
   "jmdict_seq": "1261750",
   "frequency": 1000
 },
-
-
 
 {
   "id": "vg-n2-00383",
@@ -8707,8 +8826,9 @@ window.vocabN2_Nouns = [
       "tags": [
         "alam-lingkungan",
         "hukum-aturan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":5,"downstep_mora":3,"contour":"ハイキ＼ブツ"}
+},
     {
       "jp": "<b>廃棄物</b>処理施設の建設には地域住民の同意が必要だ。",
       "id": "Pembangunan fasilitas pengolahan limbah memerlukan persetujuan dari warga setempat.",
@@ -8727,8 +8847,6 @@ window.vocabN2_Nouns = [
   "jmdict_seq": "1472040",
   "frequency": 1000
 },
-
-
 
 {
   "id": "vg-n2-00385",
@@ -8907,7 +9025,7 @@ window.vocabN2_Nouns = [
     "rekan"
   ],
   "nuance": "Berbeda dari 乾燥化 (kansouka = proses menjadi kering secara umum) — 砂漠化 secara spesifik merujuk pada degradasi lahan yang mengubah wilayah yang sebelumnya produktif menjadi padang pasir gersang akibat gabungan perubahan iklim dan aktivitas manusia seperti penggembalaan berlebihan. Prosesnya sangat sulit dibalik.",
-  "conj_type": 'suru',
+  "conj_type": "suru",
   "examples": [
     {
       "jp": "アフリカのサヘル地帯では<b>砂漠化</b>が急速に進んでいる。",
@@ -8916,8 +9034,9 @@ window.vocabN2_Nouns = [
       "tags": [
         "alam-lingkungan",
         "ilmu-pengetahuan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"サバクカ￣"}
+},
     {
       "jp": "<b>砂漠化</b>を防ぐには、適切な土地管理と植林が不可欠だ。",
       "id": "Pengelolaan lahan yang tepat dan penanaman pohon sangat diperlukan untuk mencegah desertifikasi.",
@@ -9196,14 +9315,12 @@ window.vocabN2_Nouns = [
   "jmdict_seq": "1989910"
 },
 
-// ── Staged Expansion (885) ──
-
 {
   "id": "vg-n2-00459",
   "word": "アイデア",
   "reading": "アイデア",
   "romaji": "aidea",
-  "meaning_id": "idea",
+  "meaning_id": "ide",
   "meaning_en": "idea",
   "jlpt": "n2",
   "pos": "noun",
@@ -9228,11 +9345,12 @@ window.vocabN2_Nouns = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":0,"downstep_mora":1,"contour":"＼"}
+},
     {
       "jp": "私はよいアイディアを思いついた。",
-      "id": "I hit on a good idea.",
+      "id": "Aku mendapat ide bagus.",
       "level": "n2",
       "tags": [
         "umum"
@@ -9278,11 +9396,12 @@ window.vocabN2_Nouns = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":2,"downstep_mora":0,"contour":"アキ￣"}
+},
     {
       "jp": "うちの会社には空きがない。",
-      "id": "Ada no opening in our firm.",
+      "id": "Ada tidak ada pembukaan di perusahaan kami.",
       "level": "n2",
       "tags": [
         "umum"
@@ -9303,7 +9422,7 @@ window.vocabN2_Nouns = [
   "word": "アクセント",
   "reading": "アクセント",
   "romaji": "akusento",
-  "meaning_id": "accent",
+  "meaning_id": "aksen",
   "meaning_en": "accent",
   "jlpt": "n2",
   "pos": "noun",
@@ -9324,15 +9443,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "Australiaという語のアクセントはどこですか。",
-      "id": "Where do you place the stress in the word \"Australia\"?",
+      "id": "Di mana Anda memberi tekanan pada kata \"Australia\"?",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":0,"downstep_mora":1,"contour":"＼"}
+},
     {
       "jp": "この語のアクセントはどこにあるか。",
-      "id": "How is the word accented?",
+      "id": "Bagaimana aksen kata tersebut?",
       "level": "n2",
       "tags": [
         "umum"
@@ -9353,7 +9473,7 @@ window.vocabN2_Nouns = [
   "word": "足跡",
   "reading": "あしあと",
   "romaji": "ashiato",
-  "meaning_id": "footprints",
+  "meaning_id": "jejak kaki",
   "meaning_en": "footprints",
   "jlpt": "n2",
   "pos": "noun",
@@ -9374,15 +9494,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "足跡が床に残っていた。",
-      "id": "Footprints were left on the floor.",
+      "id": "Jejak kaki tertinggal di lantai.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"アシア＼ト"}
+},
     {
       "jp": "テーブルに猫の足跡が付いている。",
-      "id": "Ada footprints of a cat on the table.",
+      "id": "Ada jejak kaki kucing di atas meja.",
       "level": "n2",
       "tags": [
         "umum"
@@ -9403,7 +9524,7 @@ window.vocabN2_Nouns = [
   "word": "宛名",
   "reading": "あてな",
   "romaji": "atena",
-  "meaning_id": "address; direction",
+  "meaning_id": "alamat; arah",
   "meaning_en": "address; direction",
   "jlpt": "n2",
   "pos": "noun",
@@ -9424,15 +9545,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "この手紙は宛名が違っている。",
-      "id": "This letter is wrongly addressed.",
+      "id": "Surat ini salah alamat.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"アテナ￣"}
+},
     {
       "jp": "郵便の宛名ははっきり正確に。",
-      "id": "Tolong address your mail clearly and correctly.",
+      "id": "Tolong alamatkan email Anda dengan jelas dan benar.",
       "level": "n2",
       "tags": [
         "umum"
@@ -9474,12 +9596,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "肌が脂っぽいのです。",
-      "id": "I have greasy skin.",
+      "id": "Saya memiliki kulit berminyak.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"アブラ￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -9495,7 +9618,7 @@ window.vocabN2_Nouns = [
   "word": "雨戸",
   "reading": "あまど",
   "romaji": "amado",
-  "meaning_id": "sliding storm door",
+  "meaning_id": "pintu badai geser",
   "meaning_en": "sliding storm door",
   "jlpt": "n2",
   "pos": "noun",
@@ -9516,12 +9639,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "嵐が雨戸をがたがたとならした。",
-      "id": "The storm rattled the shutters.",
+      "id": "Badai mengguncang jendela.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"アマ＼ド"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -9537,7 +9661,7 @@ window.vocabN2_Nouns = [
   "word": "編物",
   "reading": "あみもの",
   "romaji": "amimono",
-  "meaning_id": "knitting; web",
+  "meaning_id": "merajut; web",
   "meaning_en": "knitting; web",
   "jlpt": "n2",
   "pos": "noun",
@@ -9558,12 +9682,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "彼女はせっせと編み物に精を出していた。",
-      "id": "She was busy with her knitting.",
+      "id": "Dia sibuk dengan rajutannya.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":4,"downstep_mora":2,"contour":"アミ＼モノ"}
+},
     {
       "jp": "彼女は編み物に夢中になっている。",
       "id": "Dia absorbed in knitting.",
@@ -9587,7 +9712,7 @@ window.vocabN2_Nouns = [
   "word": "あらすじ",
   "reading": "あらすじ",
   "romaji": "arasuji",
-  "meaning_id": "outline; summary",
+  "meaning_id": "garis besar; ringkasan",
   "meaning_en": "outline; summary",
   "jlpt": "n2",
   "pos": "noun",
@@ -9612,8 +9737,9 @@ window.vocabN2_Nouns = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"アラスジ￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -9629,7 +9755,7 @@ window.vocabN2_Nouns = [
   "word": "アンテナ",
   "reading": "アンテナ",
   "romaji": "antena",
-  "meaning_id": "antenna",
+  "meaning_id": "antena",
   "meaning_en": "antenna",
   "jlpt": "n2",
   "pos": "noun",
@@ -9650,15 +9776,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "このアンテナを屋根につけると画面がはっきりする。",
-      "id": "You'll get a clear picture with this antenna on the roof.",
+      "id": "Anda akan mendapatkan gambaran yang jelas dengan antena di atap ini.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":0,"downstep_mora":0,"contour":"￣"}
+},
     {
       "jp": "その男はアンテナを取り付けようとした。",
-      "id": "The man tried to install his own antenna.",
+      "id": "Pria itu mencoba memasang antenanya sendiri.",
       "level": "n2",
       "tags": [
         "umum"
@@ -9679,7 +9806,7 @@ window.vocabN2_Nouns = [
   "word": "意義",
   "reading": "いぎ",
   "romaji": "igi",
-  "meaning_id": "meaning; significance",
+  "meaning_id": "arti; signifikansi",
   "meaning_en": "meaning; significance",
   "jlpt": "n2",
   "pos": "noun",
@@ -9700,15 +9827,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "彼は重大な意義のある決定を下した。",
-      "id": "He has made a significant decision.",
+      "id": "Dia telah mengambil keputusan penting.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":2,"downstep_mora":1,"contour":"イ＼ギ"}
+},
     {
       "jp": "私はしばしば人生の意義について深く考えることがある。",
-      "id": "I often meditate on the meaning of life.",
+      "id": "Saya sering merenungkan makna hidup.",
       "level": "n2",
       "tags": [
         "umum"
@@ -9729,7 +9857,7 @@ window.vocabN2_Nouns = [
   "word": "生け花",
   "reading": "いけばな",
   "romaji": "ikebana",
-  "meaning_id": "flower arrangement",
+  "meaning_id": "rangkaian bunga",
   "meaning_en": "flower arrangement",
   "jlpt": "n2",
   "pos": "noun",
@@ -9750,12 +9878,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "彼女は生け花の大家になった。",
-      "id": "She has made herself master of flower arranging.",
+      "id": "Dia telah menjadikan dirinya ahli dalam merangkai bunga.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":4,"downstep_mora":2,"contour":"イケ＼バナ"}
+},
     {
       "jp": "母は生け花を教えている。",
       "id": "My mother teaches flower arranging.",
@@ -9779,7 +9908,7 @@ window.vocabN2_Nouns = [
   "word": "衣食住",
   "reading": "いしょくじゅう",
   "romaji": "ishokujuu",
-  "meaning_id": "necessities of life (food, clothing, etc.)",
+  "meaning_id": "kebutuhan hidup (makanan, pakaian, dll)",
   "meaning_en": "necessities of life (food, clothing, etc.)",
   "jlpt": "n2",
   "pos": "noun",
@@ -9800,15 +9929,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "私達が生きていくためには衣食住が必要です。",
-      "id": "We need food, clothes and a home in order to live.",
+      "id": "Kita membutuhkan makanan, pakaian, dan rumah untuk hidup.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":5,"downstep_mora":3,"contour":"イショク＼ジュウ"}
+},
     {
       "jp": "子供は衣食住を親に依存している。",
-      "id": "Children depend on their parents for food, clothing and shelter.",
+      "id": "Anak-anak bergantung pada orang tuanya dalam hal makanan, pakaian, dan tempat tinggal.",
       "level": "n2",
       "tags": [
         "umum"
@@ -9850,7 +9980,7 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "冬は暗くなるのが一段と早くなる。",
-      "id": "It becomes dark much earlier in winter.",
+      "id": "Hari menjadi gelap jauh lebih awal di musim dingin.",
       "level": "n2",
       "tags": [
         "umum"
@@ -9858,7 +9988,7 @@ window.vocabN2_Nouns = [
     },
     {
       "jp": "前よりまた一段ときれいになったね。",
-      "id": "You're much prettier than I remember.",
+      "id": "Kamu jauh lebih cantik dari yang kuingat.",
       "level": "n2",
       "tags": [
         "umum"
@@ -9900,15 +10030,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "こんな一流選手が相手では勝ち目がない。",
-      "id": "We have no chance against those top players.",
+      "id": "Kami tidak memiliki peluang melawan para pemain top itu.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"イチリュウ￣"}
+},
     {
       "jp": "彼らはその作家を一流だと思った。",
-      "id": "They looked on the writer as first-rate.",
+      "id": "Mereka memandang penulis sebagai yang terbaik.",
       "level": "n2",
       "tags": [
         "umum"
@@ -9954,8 +10085,9 @@ window.vocabN2_Nouns = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":2,"downstep_mora":1,"contour":"イ＼ツ"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -9992,15 +10124,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "金利自由化の方向性を一定するのはむずかしいことです。",
-      "id": "It is difficult to peg the direction of interest deregulation.",
+      "id": "Sulit untuk mematok arah deregulasi kepentingan.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"イッテイ￣"}
+},
     {
       "jp": "彼は口座の中の一定額を子供用に用いた。",
-      "id": "He had some money in an account that he'd set aside for his kids.",
+      "id": "Dia memiliki sejumlah uang di rekening yang dia sisihkan untuk anak-anaknya.",
       "level": "n2",
       "tags": [
         "umum"
@@ -10021,7 +10154,7 @@ window.vocabN2_Nouns = [
   "word": "いっていらっしゃい",
   "reading": "いっていらっしゃい",
   "romaji": "itteirasshai",
-  "meaning_id": "see you later; take care (said to someone leaving home)",
+  "meaning_id": "sampai jumpa lagi; hati-hati (berkata pada seseorang yang hendak meninggalkan rumah)",
   "meaning_en": "see you later; take care (said to someone leaving home)",
   "jlpt": "n2",
   "pos": "noun",
@@ -10042,7 +10175,7 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "いっていらっしゃいを使います。",
-      "id": "Menggunakan see you later; take care (said to someone leaving home).",
+      "id": "Menggunakan sampai jumpa lagi; hati-hati (berkata pada seseorang yang hendak meninggalkan rumah).",
       "level": "n2",
       "tags": [
         "umum"
@@ -10084,7 +10217,7 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "そう、いいわよ。いってらっしゃい。でも運転には気を付けてね。",
-      "id": "Oh, OK. See you. But drive carefully.",
+      "id": "Oh baiklah. Sampai jumpa. Tapi mengemudilah dengan hati-hati.",
       "level": "n2",
       "tags": [
         "umum"
@@ -10105,7 +10238,7 @@ window.vocabN2_Nouns = [
   "word": "緯度",
   "reading": "いど",
   "romaji": "ido",
-  "meaning_id": "latitude (nav.)",
+  "meaning_id": "lintang (nav.)",
   "meaning_en": "latitude (nav.)",
   "jlpt": "n2",
   "pos": "noun",
@@ -10130,8 +10263,9 @@ window.vocabN2_Nouns = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":2,"downstep_mora":1,"contour":"イ＼ド"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -10147,7 +10281,7 @@ window.vocabN2_Nouns = [
   "word": "井戸",
   "reading": "いど",
   "romaji": "ido",
-  "meaning_id": "water well",
+  "meaning_id": "air dengan baik",
   "meaning_en": "water well",
   "jlpt": "n2",
   "pos": "noun",
@@ -10168,15 +10302,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "井戸には少しの水も無かった。",
-      "id": "There was no water in the well.",
+      "id": "Tidak ada air di dalam sumur.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":2,"downstep_mora":1,"contour":"イ＼ド"}
+},
     {
       "jp": "真相は井戸の底にあり探りにくい。",
-      "id": "Truth is difficult to find at the bottom of a well.",
+      "id": "Kebenaran sulit ditemukan di dasar sumur.",
       "level": "n2",
       "tags": [
         "umum"
@@ -10197,7 +10332,7 @@ window.vocabN2_Nouns = [
   "word": "従姉妹",
   "reading": "いとこ",
   "romaji": "itoko",
-  "meaning_id": "cousin (female)",
+  "meaning_id": "sepupu (perempuan)",
   "meaning_en": "cousin (female)",
   "jlpt": "n2",
   "pos": "noun",
@@ -10218,15 +10353,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "従姉妹の連絡先を教えられなくてごめん。",
-      "id": "I'm sorry I haven't been able to give you my cousin's contact info.",
+      "id": "Maaf saya belum bisa memberi Anda info kontak sepupu saya.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"イト＼コ"}
+},
     {
       "jp": "彼の従姉妹は、名前は忘れたが、看護婦だった。",
-      "id": "His cousin, whose name I forget, was a nurse.",
+      "id": "Sepupunya, yang saya lupa namanya, adalah seorang perawat.",
       "level": "n2",
       "tags": [
         "umum"
@@ -10268,12 +10404,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "眼窩とは、目をいれている骨のいれもののことです。",
-      "id": "The eye socket is the bone receptacle in which the eye fits.",
+      "id": "Rongga mata adalah wadah tulang tempat mata berada.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"イレモノ￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -10289,7 +10426,7 @@ window.vocabN2_Nouns = [
   "word": "インキ",
   "reading": "インキ",
   "romaji": "inki",
-  "meaning_id": "ink",
+  "meaning_id": "tinta",
   "meaning_en": "ink",
   "jlpt": "n2",
   "pos": "noun",
@@ -10310,15 +10447,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "印刷インキが不足している。",
-      "id": "Printing ink is in short supply.",
+      "id": "Persediaan tinta cetak terbatas.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":0,"downstep_mora":0,"contour":"￣"}
+},
     {
       "jp": "ペンとインキで書きなさい。",
-      "id": "Write with pen and ink.",
+      "id": "Menulis dengan pena dan tinta.",
       "level": "n2",
       "tags": [
         "umum"
@@ -10339,7 +10477,7 @@ window.vocabN2_Nouns = [
   "word": "引力",
   "reading": "いんりょく",
   "romaji": "inryoku",
-  "meaning_id": "gravity",
+  "meaning_id": "gravitasi",
   "meaning_en": "gravity",
   "jlpt": "n2",
   "pos": "noun",
@@ -10360,15 +10498,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "ニュートンは引力の法則を確立した。",
-      "id": "Newton established the law of gravity.",
+      "id": "Newton menetapkan hukum gravitasi.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":4,"downstep_mora":1,"contour":"イ＼ンリョク"}
+},
     {
       "jp": "引力によって物体が重さを持つようになる。",
-      "id": "Gravity causes objects to have weight.",
+      "id": "Gravitasi menyebabkan benda mempunyai berat.",
       "level": "n2",
       "tags": [
         "umum"
@@ -10389,7 +10528,7 @@ window.vocabN2_Nouns = [
   "word": "ウーマン",
   "reading": "ウーマン",
   "romaji": "uuman",
-  "meaning_id": "woman",
+  "meaning_id": "wanita",
   "meaning_en": "woman",
   "jlpt": "n2",
   "pos": "noun",
@@ -10414,11 +10553,12 @@ window.vocabN2_Nouns = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":0,"downstep_mora":1,"contour":"＼"}
+},
     {
       "jp": "ウーマン・リブは底辺は広いが、非公式な民衆の運動である。",
-      "id": "Women's Liberation is a broad-based but informal popular movement.",
+      "id": "Pembebasan Perempuan adalah gerakan populer yang berbasis luas namun informal.",
       "level": "n2",
       "tags": [
         "umum"
@@ -10439,7 +10579,7 @@ window.vocabN2_Nouns = [
   "word": "ウール",
   "reading": "ウール",
   "romaji": "uuru",
-  "meaning_id": "wool",
+  "meaning_id": "wol",
   "meaning_en": "wool",
   "jlpt": "n2",
   "pos": "noun",
@@ -10460,15 +10600,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "彼はウールと綿の区別がつかない。",
-      "id": "He cannot tell wool from cotton.",
+      "id": "Dia tidak bisa membedakan wol dari kapas.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":0,"downstep_mora":1,"contour":"＼"}
+},
     {
       "jp": "彼はウールのセーターを着ている。",
-      "id": "He wears a wool sweater.",
+      "id": "Dia memakai sweter wol.",
       "level": "n2",
       "tags": [
         "umum"
@@ -10489,7 +10630,7 @@ window.vocabN2_Nouns = [
   "word": "ウエートレス",
   "reading": "ウエートレス",
   "romaji": "ueetoresu",
-  "meaning_id": "waitress",
+  "meaning_id": "pelayan",
   "meaning_en": "waitress",
   "jlpt": "n2",
   "pos": "noun",
@@ -10510,12 +10651,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "ウエートレスはテーブルの上に白いテーブルクロスをかけた。",
-      "id": "The waitress spread a white cloth over the table.",
+      "id": "Pelayan membentangkan kain putih di atas meja.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":0,"downstep_mora":0,"contour":"￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -10552,12 +10694,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "母は植木の世話をよくする人だ。",
-      "id": "My mother looks after the plants well.",
+      "id": "Ibuku merawat tanaman dengan baik.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ウエキ￣"}
+},
     {
       "jp": "私は植木が好きだ。",
       "id": "Saya suka a garden tree.",
@@ -10581,7 +10724,7 @@ window.vocabN2_Nouns = [
   "word": "受取",
   "reading": "うけとり",
   "romaji": "uketori",
-  "meaning_id": "receipt",
+  "meaning_id": "tanda terima",
   "meaning_en": "receipt",
   "jlpt": "n2",
   "pos": "noun",
@@ -10602,15 +10745,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "お受け取りくださって幸いに存じます。",
-      "id": "It was gracious of you to accept.",
+      "id": "Anda sangat baik hati menerimanya.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ウケトリ￣"}
+},
     {
       "jp": "招待状お受け取りをお知らせください。",
-      "id": "Tolong respond at your earliest convenience.",
+      "id": "Tolong tanggapi sesegera mungkin.",
       "level": "n2",
       "tags": [
         "umum"
@@ -10631,7 +10775,7 @@ window.vocabN2_Nouns = [
   "word": "うどん",
   "reading": "うどん",
   "romaji": "udon",
-  "meaning_id": "noodles (Japanese)",
+  "meaning_id": "mie (Jepang)",
   "meaning_en": "noodles (Japanese)",
   "jlpt": "n2",
   "pos": "noun",
@@ -10652,12 +10796,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "そばはそば粉から、うどんやきしめんは普通の小麦粉からできてるの。",
-      "id": "Soba is made of buckwheat flour, and udon and kishimen are made of plain wheat flour.",
+      "id": "Soba terbuat dari tepung soba, dan udon serta kishimen terbuat dari tepung terigu biasa.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ウドン￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -10694,12 +10839,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "排卵の有無を調べる方法はありますか？",
-      "id": "Is there some way to check for ovulation?",
+      "id": "Apakah ada cara untuk memeriksa ovulasi?",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":2,"downstep_mora":1,"contour":"ウ＼ム"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -10715,7 +10861,7 @@ window.vocabN2_Nouns = [
   "word": "裏口",
   "reading": "うらぐち",
   "romaji": "uraguchi",
-  "meaning_id": "backdoor; rear entrance",
+  "meaning_id": "pintu belakang; pintu masuk belakang",
   "meaning_en": "backdoor; rear entrance",
   "jlpt": "n2",
   "pos": "noun",
@@ -10736,15 +10882,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "彼は裏口入学した。",
-      "id": "He bought his way into college.",
+      "id": "Dia membeli jalannya ke perguruan tinggi.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ウラグチ￣"}
+},
     {
       "jp": "少年は裏口から入った。",
-      "id": "The boy entered by the back door.",
+      "id": "Anak laki-laki itu masuk melalui pintu belakang.",
       "level": "n2",
       "tags": [
         "umum"
@@ -10765,7 +10912,7 @@ window.vocabN2_Nouns = [
   "word": "恨み",
   "reading": "うらみ",
   "romaji": "urami",
-  "meaning_id": "resentment",
+  "meaning_id": "kebencian",
   "meaning_en": "resentment",
   "jlpt": "n2",
   "pos": "noun",
@@ -10786,15 +10933,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "リサはスタンに恨みがある。",
-      "id": "Lisa bears a grudge against Stan.",
+      "id": "Lisa menaruh dendam terhadap Stan.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"odaka","mora_count":3,"downstep_mora":3,"contour":"ウラミ＼"}
+},
     {
       "jp": "彼は父の死の恨みを晴らした。",
-      "id": "He avenged his father's death.",
+      "id": "Dia membalas kematian ayahnya.",
       "level": "n2",
       "tags": [
         "umum"
@@ -10815,7 +10963,7 @@ window.vocabN2_Nouns = [
   "word": "売上",
   "reading": "うりあげ",
   "romaji": "uriage",
-  "meaning_id": "amount sold; proceeds",
+  "meaning_id": "jumlah yang terjual; hasil",
   "meaning_en": "amount sold; proceeds",
   "jlpt": "n2",
   "pos": "noun",
@@ -10836,15 +10984,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "今年の売り上げは倍増と見込んでいます。",
-      "id": "Sales should double this year.",
+      "id": "Penjualan akan berlipat ganda tahun ini.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ウリアゲ￣"}
+},
     {
       "jp": "売り上げはいくらにもならなかった。",
-      "id": "The sales didn't amount to anything.",
+      "id": "Penjualannya tidak berarti apa-apa.",
       "level": "n2",
       "tags": [
         "umum"
@@ -10865,7 +11014,7 @@ window.vocabN2_Nouns = [
   "word": "売り切れ",
   "reading": "うりきれ",
   "romaji": "urikire",
-  "meaning_id": "sold-out",
+  "meaning_id": "terjual habis",
   "meaning_en": "sold-out",
   "jlpt": "n2",
   "pos": "noun",
@@ -10886,15 +11035,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "切符はすべて売り切れです。",
-      "id": "All the tickets are sold out.",
+      "id": "Semua tiket terjual habis.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ウリキレ￣"}
+},
     {
       "jp": "その雑誌は売り切れだった。",
-      "id": "The magazines were sold out.",
+      "id": "Majalah-majalah itu terjual habis.",
       "level": "n2",
       "tags": [
         "umum"
@@ -10915,7 +11065,7 @@ window.vocabN2_Nouns = [
   "word": "売れ行き",
   "reading": "うれゆき",
   "romaji": "ureyuki",
-  "meaning_id": "sales",
+  "meaning_id": "penjualan",
   "meaning_en": "sales",
   "jlpt": "n2",
   "pos": "noun",
@@ -10936,15 +11086,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "売れ行きは目標に達しなかった。",
-      "id": "Sales fell short of their goal.",
+      "id": "Penjualan tidak mencapai tujuan mereka.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ウレユキ￣"}
+},
     {
       "jp": "ビールの売れ行きは天候しだいです。",
-      "id": "Beer sales are at the mercy of the weather.",
+      "id": "Penjualan bir bergantung pada cuaca.",
       "level": "n2",
       "tags": [
         "umum"
@@ -10965,7 +11116,7 @@ window.vocabN2_Nouns = [
   "word": "運河",
   "reading": "うんが",
   "romaji": "unga",
-  "meaning_id": "canal; waterway",
+  "meaning_id": "kanal; jalur air",
   "meaning_en": "canal; waterway",
   "jlpt": "n2",
   "pos": "noun",
@@ -10986,15 +11137,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "この船は大きすぎて運河を通れない。",
-      "id": "This ship is too big to pass through the canal.",
+      "id": "Kapal ini terlalu besar untuk melewati kanal.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"ウ＼ンガ"}
+},
     {
       "jp": "船はパナマ運河を通り抜けた。",
-      "id": "The ship went through the Panama Canal.",
+      "id": "Kapal melewati Terusan Panama.",
       "level": "n2",
       "tags": [
         "umum"
@@ -11015,7 +11167,7 @@ window.vocabN2_Nouns = [
   "word": "英文",
   "reading": "えいぶん",
   "romaji": "eibun",
-  "meaning_id": "sentence in English",
+  "meaning_id": "kalimat dalam bahasa Inggris",
   "meaning_en": "sentence in English",
   "jlpt": "n2",
   "pos": "noun",
@@ -11036,15 +11188,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "彼は英文の手紙の書き方をしりません。",
-      "id": "He doesn't know how to write a letter in English.",
+      "id": "Dia tidak tahu cara menulis surat dalam bahasa Inggris.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"エイブン￣"}
+},
     {
       "jp": "この内容を６０語の英文で要約しなさい。",
-      "id": "Summarize the contents in 60 English words.",
+      "id": "Ringkaslah isinya dalam 60 kata bahasa Inggris.",
       "level": "n2",
       "tags": [
         "umum"
@@ -11065,7 +11218,7 @@ window.vocabN2_Nouns = [
   "word": "英和",
   "reading": "えいわ",
   "romaji": "eiwa",
-  "meaning_id": "English-Japanese (e.g. dictionary)",
+  "meaning_id": "Inggris-Jepang (misalnya kamus)",
   "meaning_en": "English-Japanese (e.g. dictionary)",
   "jlpt": "n2",
   "pos": "noun",
@@ -11090,8 +11243,9 @@ window.vocabN2_Nouns = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"エイワ￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -11128,12 +11282,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "ええと、私はジョギングはよいと思う。",
-      "id": "Well, I think jogging is good.",
+      "id": "Menurutku jogging itu bagus.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":0,"downstep_mora":0,"contour":"￣"}
+},
     {
       "jp": "ええと、買ったのは先週でした。",
       "id": "Let's see. I bought it last week.",
@@ -11157,7 +11312,7 @@ window.vocabN2_Nouns = [
   "word": "液体",
   "reading": "えきたい",
   "romaji": "ekitai",
-  "meaning_id": "liquid; fluid",
+  "meaning_id": "cair; cairan",
   "meaning_en": "liquid; fluid",
   "jlpt": "n2",
   "pos": "noun",
@@ -11178,15 +11333,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "水と石油は共に液体である。",
-      "id": "Water and oil are both liquids.",
+      "id": "Air dan minyak sama-sama berbentuk cairan.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"エキタイ￣"}
+},
     {
       "jp": "水は液体である。凍ると固体になる。",
-      "id": "Water is liquid. When it freezes, it becomes solid.",
+      "id": "Air itu cair. Ketika dibekukan, ia menjadi padat.",
       "level": "n2",
       "tags": [
         "umum"
@@ -11207,7 +11363,7 @@ window.vocabN2_Nouns = [
   "word": "エチケット",
   "reading": "エチケット",
   "romaji": "echiketto",
-  "meaning_id": "etiquette",
+  "meaning_id": "etiket",
   "meaning_en": "etiquette",
   "jlpt": "n2",
   "pos": "noun",
@@ -11228,15 +11384,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "それはエチケットの問題だ。",
-      "id": "It's a matter of etiquette.",
+      "id": "Ini masalah etiket.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":0,"downstep_mora":1,"contour":"＼"}
+},
     {
       "jp": "彼らがエチケットを知らないことに彼女はがっかりした。",
-      "id": "She was dismayed at their ignorance in etiquette.",
+      "id": "Dia kecewa dengan ketidaktahuan mereka dalam etiket.",
       "level": "n2",
       "tags": [
         "umum"
@@ -11257,7 +11414,7 @@ window.vocabN2_Nouns = [
   "word": "エプロン",
   "reading": "エプロン",
   "romaji": "epuron",
-  "meaning_id": "apron",
+  "meaning_id": "celemek",
   "meaning_en": "apron",
   "jlpt": "n2",
   "pos": "noun",
@@ -11278,12 +11435,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "エプロンの紐を結んでください。",
-      "id": "Tie the apron.",
+      "id": "Ikat celemeknya.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":0,"downstep_mora":1,"contour":"＼"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -11299,7 +11457,7 @@ window.vocabN2_Nouns = [
   "word": "宴会",
   "reading": "えんかい",
   "romaji": "enkai",
-  "meaning_id": "party; banquet",
+  "meaning_id": "pesta; perjamuan",
   "meaning_en": "party; banquet",
   "jlpt": "n2",
   "pos": "noun",
@@ -11320,15 +11478,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "宴会はたけなわだった。",
-      "id": "The banquet was in full swing.",
+      "id": "Perjamuan berlangsung lancar.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"エンカイ￣"}
+},
     {
       "jp": "彼は宴会の事について触れた。",
-      "id": "He mentioned the matter of the banquet.",
+      "id": "Dia menyebutkan soal perjamuan itu.",
       "level": "n2",
       "tags": [
         "umum"
@@ -11349,7 +11508,7 @@ window.vocabN2_Nouns = [
   "word": "園芸",
   "reading": "えんげい",
   "romaji": "engei",
-  "meaning_id": "horticulture; gardening",
+  "meaning_id": "hortikultura; berkebun",
   "meaning_en": "horticulture; gardening",
   "jlpt": "n2",
   "pos": "noun",
@@ -11374,11 +11533,12 @@ window.vocabN2_Nouns = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"エンゲイ￣"}
+},
     {
       "jp": "園芸がここ数年、流行しています。",
-      "id": "Gardening has been popular for some years.",
+      "id": "Berkebun telah populer selama beberapa tahun.",
       "level": "n2",
       "tags": [
         "umum"
@@ -11399,7 +11559,7 @@ window.vocabN2_Nouns = [
   "word": "演劇",
   "reading": "えんげき",
   "romaji": "engeki",
-  "meaning_id": "play (theatrical)",
+  "meaning_id": "bermain (teater)",
   "meaning_en": "play (theatrical)",
   "jlpt": "n2",
   "pos": "noun",
@@ -11420,15 +11580,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "私はイギリス演劇を勉強しています。",
-      "id": "I'm studying the English drama.",
+      "id": "Saya sedang mempelajari drama bahasa Inggris.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"エンゲキ￣"}
+},
     {
       "jp": "演劇がみたいのですが情報をください。",
-      "id": "I'd like to see a play. Do you have any information?",
+      "id": "Saya ingin melihat pertunjukan. Apakah Anda punya informasi?",
       "level": "n2",
       "tags": [
         "umum"
@@ -11449,7 +11610,7 @@ window.vocabN2_Nouns = [
   "word": "円周",
   "reading": "えんしゅう",
   "romaji": "enshuu",
-  "meaning_id": "circumference",
+  "meaning_id": "keliling",
   "meaning_en": "circumference",
   "jlpt": "n2",
   "pos": "noun",
@@ -11470,15 +11631,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "円周の長さの求め方ってどうでしたっけ？忘れました。",
-      "id": "How do you derive the length of the circumference? I've forgotten.",
+      "id": "Bagaimana cara mendapatkan panjang keliling? saya sudah lupa.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"エンシュウ￣"}
+},
     {
       "jp": "円周から直径を求めることは可能ですか？",
-      "id": "Is it possible to determine the diameter from the circumference?",
+      "id": "Apakah mungkin untuk menentukan diameter dari keliling?",
       "level": "n2",
       "tags": [
         "umum"
@@ -11499,7 +11661,7 @@ window.vocabN2_Nouns = [
   "word": "煙突",
   "reading": "えんとつ",
   "romaji": "entotsu",
-  "meaning_id": "chimney",
+  "meaning_id": "cerobong asap",
   "meaning_en": "chimney",
   "jlpt": "n2",
   "pos": "noun",
@@ -11520,15 +11682,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "あの煙突はとても高い。",
-      "id": "That chimney is very high.",
+      "id": "Cerobong asap itu sangat tinggi.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"エントツ￣"}
+},
     {
       "jp": "煙突から煙がもくもくと出ていた。",
-      "id": "The smoke poured out of the chimney.",
+      "id": "Asap keluar dari cerobong asap.",
       "level": "n2",
       "tags": [
         "umum"
@@ -11570,15 +11733,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "新しいオイル・タンカーが進水した。",
-      "id": "A new oil tanker was launched.",
+      "id": "Sebuah kapal tanker minyak baru diluncurkan.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":0,"downstep_mora":1,"contour":"＼"}
+},
     {
       "jp": "石油を運ぶ船をオイル・タンカーという。",
-      "id": "A ship which conveys oil is called an oil tanker.",
+      "id": "Kapal yang mengangkut minyak disebut kapal tanker minyak.",
       "level": "n2",
       "tags": [
         "umum"
@@ -11599,7 +11763,7 @@ window.vocabN2_Nouns = [
   "word": "王女",
   "reading": "おうじょ",
   "romaji": "oujo",
-  "meaning_id": "princess",
+  "meaning_id": "putri",
   "meaning_en": "princess",
   "jlpt": "n2",
   "pos": "noun",
@@ -11620,15 +11784,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "王女があくどい化粧をしていた。",
-      "id": "The princess was wearing too much makeup.",
+      "id": "Sang putri memakai terlalu banyak riasan.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"オ＼ウジョ"}
+},
     {
       "jp": "王女は彼を見て笑わずにいられなかった。",
-      "id": "The princess couldn't help laughing at him.",
+      "id": "Sang putri tidak bisa menahan tawanya.",
       "level": "n2",
       "tags": [
         "umum"
@@ -11649,7 +11814,7 @@ window.vocabN2_Nouns = [
   "word": "応ずる",
   "reading": "おうずる",
   "romaji": "ouzuru",
-  "meaning_id": "me-answer",
+  "meaning_id": "menjawab",
   "meaning_en": "to answer; to respond; to meet; to satisfy; to accept",
   "jlpt": "n2",
   "pos": "noun",
@@ -11670,12 +11835,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "応ずるを使います。",
-      "id": "Menggunakan me-answer.",
+      "id": "Menggunakan menjawab.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"オウズル￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -11691,7 +11857,7 @@ window.vocabN2_Nouns = [
   "word": "欧米",
   "reading": "おうべい",
   "romaji": "oubei",
-  "meaning_id": "Europe and America; the West",
+  "meaning_id": "Eropa dan Amerika; Barat",
   "meaning_en": "Europe and America; the West",
   "jlpt": "n2",
   "pos": "noun",
@@ -11712,15 +11878,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "医学では日本は欧米に追いつきました。",
-      "id": "Japan has caught up with Europe and America in medicine.",
+      "id": "Jepang telah menyusul Eropa dan Amerika dalam bidang kedokteran.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"オウベイ￣"}
+},
     {
       "jp": "欧米では犬を家族の一員とみなす。",
-      "id": "In Europe and America they regard the dog as a member of the family.",
+      "id": "Di Eropa dan Amerika mereka menganggap anjing sebagai anggota keluarga.",
       "level": "n2",
       "tags": [
         "umum"
@@ -11741,7 +11908,7 @@ window.vocabN2_Nouns = [
   "word": "オーケストラ",
   "reading": "オーケストラ",
   "romaji": "ookesutora",
-  "meaning_id": "orchestra",
+  "meaning_id": "orkestra",
   "meaning_en": "orchestra",
   "jlpt": "n2",
   "pos": "noun",
@@ -11762,15 +11929,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "指揮者はオーケストラの指揮をする。",
-      "id": "A conductor directs an orchestra.",
+      "id": "Seorang konduktor mengarahkan orkestra.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":0,"downstep_mora":0,"contour":"￣"}
+},
     {
       "jp": "学校のオーケストラに入るつもりなのだ。",
-      "id": "I'm going to join the school orchestra.",
+      "id": "Saya akan bergabung dengan orkestra sekolah.",
       "level": "n2",
       "tags": [
         "umum"
@@ -11791,7 +11959,7 @@ window.vocabN2_Nouns = [
   "word": "大通り",
   "reading": "おおどおり",
   "romaji": "oodoori",
-  "meaning_id": "main street",
+  "meaning_id": "jalan utama",
   "meaning_en": "main street",
   "jlpt": "n2",
   "pos": "noun",
@@ -11812,15 +11980,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "私は大通りをずっと一人で歩いた。",
-      "id": "I walked along the main street.",
+      "id": "Saya berjalan di sepanjang jalan utama.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":5,"downstep_mora":3,"contour":"オオド＼オリ"}
+},
     {
       "jp": "彼は大通りに店を構えている。",
-      "id": "He has a store on the main road.",
+      "id": "Dia memiliki toko di jalan utama.",
       "level": "n2",
       "tags": [
         "umum"
@@ -11841,7 +12010,7 @@ window.vocabN2_Nouns = [
   "word": "オートメーション",
   "reading": "オートメーション",
   "romaji": "ootomeeshon",
-  "meaning_id": "automation",
+  "meaning_id": "otomatisasi",
   "meaning_en": "automation",
   "jlpt": "n2",
   "pos": "noun",
@@ -11866,11 +12035,12 @@ window.vocabN2_Nouns = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":4,"category":"nakadaka","mora_count":0,"downstep_mora":0,"contour":"￣"}
+},
     {
       "jp": "オートメーションは必ず重要な社会的結果をもたらすだろう。",
-      "id": "Automation is bound to have important social consequences.",
+      "id": "Otomatisasi pasti mempunyai konsekuensi sosial yang penting.",
       "level": "n2",
       "tags": [
         "umum"
@@ -11891,7 +12061,7 @@ window.vocabN2_Nouns = [
   "word": "オーバーコート",
   "reading": "オーバーコート",
   "romaji": "oobaakooto",
-  "meaning_id": "overcoat",
+  "meaning_id": "mantel",
   "meaning_en": "overcoat",
   "jlpt": "n2",
   "pos": "noun",
@@ -11912,12 +12082,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "とても寒かったのにもかかわらず、その子供はオーバーコートを身につけていなかった。",
-      "id": "The child had no overcoat on although it was very cold.",
+      "id": "Anak itu tidak mengenakan mantel meskipun cuaca sangat dingin.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":5,"category":"nakadaka","mora_count":0,"downstep_mora":0,"contour":"￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -11933,7 +12104,7 @@ window.vocabN2_Nouns = [
   "word": "お帰り",
   "reading": "おかえり",
   "romaji": "okaeri",
-  "meaning_id": "return; welcome",
+  "meaning_id": "kembali; selamat datang",
   "meaning_en": "return; welcome",
   "jlpt": "n2",
   "pos": "noun",
@@ -11954,15 +12125,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "あなたのお帰りを一日千秋の思いでお待ちしています。",
-      "id": "I can hardly wait till I see you.",
+      "id": "Aku tidak sabar menunggu sampai aku melihatmu.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"オカエリ￣"}
+},
     {
       "jp": "会計はお帰りのレジでおねがいします。",
-      "id": "Pay the cashier on the way out.",
+      "id": "Bayar ke kasir saat keluar.",
       "level": "n2",
       "tags": [
         "umum"
@@ -11983,7 +12155,7 @@ window.vocabN2_Nouns = [
   "word": "おかず",
   "reading": "おかず",
   "romaji": "okazu",
-  "meaning_id": "side dish; accompaniment for rice dishes",
+  "meaning_id": "lauk; pendamping hidangan nasi",
   "meaning_en": "side dish; accompaniment for rice dishes",
   "jlpt": "n2",
   "pos": "noun",
@@ -12004,15 +12176,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "今晩のおかずはもう決めてあります。",
-      "id": "I've decided what to cook for dinner.",
+      "id": "Saya sudah memutuskan apa yang akan dimasak untuk makan malam.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"オカズ￣"}
+},
     {
       "jp": "今晩のおかずは魚だ。",
-      "id": "Today's dinner is fish.",
+      "id": "Makan malam hari ini adalah ikan.",
       "level": "n2",
       "tags": [
         "umum"
@@ -12033,7 +12206,7 @@ window.vocabN2_Nouns = [
   "word": "屋外",
   "reading": "おくがい",
   "romaji": "okugai",
-  "meaning_id": "outdoors",
+  "meaning_id": "di luar ruangan",
   "meaning_en": "outdoors",
   "jlpt": "n2",
   "pos": "noun",
@@ -12058,11 +12231,12 @@ window.vocabN2_Nouns = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":4,"downstep_mora":2,"contour":"オク＼ガイ"}
+},
     {
       "jp": "ラグビーは屋外競技である。",
-      "id": "Rugby is an outdoor game.",
+      "id": "Rugby adalah permainan luar ruangan.",
       "level": "n2",
       "tags": [
         "umum"
@@ -12083,7 +12257,7 @@ window.vocabN2_Nouns = [
   "word": "送り仮名",
   "reading": "おくりがな",
   "romaji": "okurigana",
-  "meaning_id": "part of word written in kana",
+  "meaning_id": "bagian kata yang ditulis dalam kana",
   "meaning_en": "part of word written in kana",
   "jlpt": "n2",
   "pos": "noun",
@@ -12104,12 +12278,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "この漢字、送り仮名が間違ってるよ。",
-      "id": "The okurigana on this kanji is wrong.",
+      "id": "Okurigana pada kanji ini salah.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":5,"downstep_mora":0,"contour":"オクリガナ￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -12125,7 +12300,7 @@ window.vocabN2_Nouns = [
   "word": "おげんきで",
   "reading": "おげんきで",
   "romaji": "ogenkide",
-  "meaning_id": "take care; stay well (said when parting)",
+  "meaning_id": "berhati-hatilah; tetap baik-baik saja (diucapkan saat berpisah)",
   "meaning_en": "take care; stay well (said when parting)",
   "jlpt": "n2",
   "pos": "noun",
@@ -12146,7 +12321,7 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "彼女が私に近づいてきて「おげんきですか」と言った。",
-      "id": "She came up to me and said \"How are you?\"",
+      "id": "Dia mendatangi saya dan berkata, \"Apa kabar?\"",
       "level": "n2",
       "tags": [
         "umum"
@@ -12167,7 +12342,7 @@ window.vocabN2_Nouns = [
   "word": "叔父さん",
   "reading": "おじさん",
   "romaji": "ojisan",
-  "meaning_id": "middle-aged gentleman; uncle",
+  "meaning_id": "pria paruh baya; paman",
   "meaning_en": "middle-aged gentleman; uncle",
   "jlpt": "n2",
   "pos": "noun",
@@ -12188,12 +12363,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "あなたの叔父さんと話し合いたい。",
-      "id": "Saya ingin talk with your uncle.",
+      "id": "Saya ingin berbicara dengan pamanmu.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"オジサン￣"}
+},
     {
       "jp": "ヘレンは日曜日ごとに叔父さんを訪問する。",
       "id": "Helen visits her uncle every Sunday.",
@@ -12217,7 +12393,7 @@ window.vocabN2_Nouns = [
   "word": "小父さん",
   "reading": "おじさん",
   "romaji": "ojisan",
-  "meaning_id": "middle-aged gentleman; uncle",
+  "meaning_id": "pria paruh baya; paman",
   "meaning_en": "middle-aged gentleman; uncle",
   "jlpt": "n2",
   "pos": "noun",
@@ -12238,12 +12414,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "あなたの叔父さんと話し合いたい。",
-      "id": "Saya ingin talk with your uncle.",
+      "id": "Saya ingin berbicara dengan pamanmu.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"オジサン￣"}
+},
     {
       "jp": "ヘレンは日曜日ごとに叔父さんを訪問する。",
       "id": "Helen visits her uncle every Sunday.",
@@ -12267,7 +12444,7 @@ window.vocabN2_Nouns = [
   "word": "伯父さん",
   "reading": "おじさん",
   "romaji": "ojisan",
-  "meaning_id": "middle-aged gentleman; uncle",
+  "meaning_id": "pria paruh baya; paman",
   "meaning_en": "middle-aged gentleman; uncle",
   "jlpt": "n2",
   "pos": "noun",
@@ -12288,12 +12465,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "あなたの叔父さんと話し合いたい。",
-      "id": "Saya ingin talk with your uncle.",
+      "id": "Saya ingin berbicara dengan pamanmu.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"オジサン￣"}
+},
     {
       "jp": "ヘレンは日曜日ごとに叔父さんを訪問する。",
       "id": "Helen visits her uncle every Sunday.",
@@ -12317,7 +12495,7 @@ window.vocabN2_Nouns = [
   "word": "お出掛け",
   "reading": "おでかけ",
   "romaji": "odekake",
-  "meaning_id": "about to start out; just about to leave or go out",
+  "meaning_id": "akan memulai; baru saja akan pergi atau keluar",
   "meaning_en": "about to start out; just about to leave or go out",
   "jlpt": "n2",
   "pos": "noun",
@@ -12338,7 +12516,7 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "いつお出かけになりますか。",
-      "id": "When will you go out?",
+      "id": "Kapan kamu akan keluar?",
       "level": "n2",
       "tags": [
         "umum"
@@ -12346,7 +12524,7 @@ window.vocabN2_Nouns = [
     },
     {
       "jp": "散歩にお出かけになりませんか。",
-      "id": "Won't you go for a walk?",
+      "id": "Maukah kamu berjalan-jalan?",
       "level": "n2",
       "tags": [
         "umum"
@@ -12367,7 +12545,7 @@ window.vocabN2_Nouns = [
   "word": "お手伝いさん",
   "reading": "おてつだいさん",
   "romaji": "otetsudaisan",
-  "meaning_id": "maid",
+  "meaning_id": "pembantu",
   "meaning_en": "maid",
   "jlpt": "n2",
   "pos": "noun",
@@ -12388,15 +12566,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "お手伝いさんたちは主人の命令を実行しようと努めた。",
-      "id": "The servants tried to carry out their master's order.",
+      "id": "Para pelayan berusaha melaksanakan perintah tuannya.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":7,"downstep_mora":2,"contour":"オテ＼ツダイサン"}
+},
     {
       "jp": "お手伝いさんは毎日の家事にはほとほとうんざりしていた。",
-      "id": "The maid was dead tired of her household chores.",
+      "id": "Pembantu itu sangat lelah dengan pekerjaan rumah tangganya.",
       "level": "n2",
       "tags": [
         "umum"
@@ -12417,7 +12596,7 @@ window.vocabN2_Nouns = [
   "word": "落し物",
   "reading": "おとしもの",
   "romaji": "otoshimono",
-  "meaning_id": "lost property",
+  "meaning_id": "harta benda yang hilang",
   "meaning_en": "lost property",
   "jlpt": "n2",
   "pos": "noun",
@@ -12438,12 +12617,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "落とし物カウンターはどこですか？",
-      "id": "Where is the lost and found?",
+      "id": "Dimana yang hilang dan ditemukan?",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":5,"downstep_mora":0,"contour":"オトシモノ￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -12459,7 +12639,7 @@ window.vocabN2_Nouns = [
   "word": "叔母さん",
   "reading": "おばさん",
   "romaji": "obasan",
-  "meaning_id": "aunt; middle-aged lady",
+  "meaning_id": "bibi; wanita paruh baya",
   "meaning_en": "aunt; middle-aged lady",
   "jlpt": "n2",
   "pos": "noun",
@@ -12480,15 +12660,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "叔母さんを訪ねた時はすごいごちそうだったね。",
-      "id": "What a feast we had when we visited my aunt!",
+      "id": "Sungguh pesta yang luar biasa ketika kami mengunjungi bibiku!",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"オバサン￣"}
+},
     {
       "jp": "彼は叔母さんの家に下宿していた。",
-      "id": "He boarded with his aunt.",
+      "id": "Dia naik ke asrama bersama bibinya.",
       "level": "n2",
       "tags": [
         "umum"
@@ -12509,7 +12690,7 @@ window.vocabN2_Nouns = [
   "word": "おまちください",
   "reading": "おまちください",
   "romaji": "omachikudasai",
-  "meaning_id": "Please wait a moment",
+  "meaning_id": "Mohon tunggu sebentar",
   "meaning_en": "Please wait a moment",
   "jlpt": "n2",
   "pos": "noun",
@@ -12530,7 +12711,7 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "少々おまちください。",
-      "id": "Hold on a minute, please.",
+      "id": "Tolong tunggu sebentar.",
       "level": "n2",
       "tags": [
         "umum"
@@ -12572,15 +12753,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "お休み、いい夢たくさん見てね。",
-      "id": "Good night and sweet dreams.",
+      "id": "Selamat malam dan mimpi indah.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"オヤスミ￣"}
+},
     {
       "jp": "彼女はお母さんにおやすみのキスをした。",
-      "id": "She kissed her mother good night.",
+      "id": "Dia mencium ibunya selamat malam.",
       "level": "n2",
       "tags": [
         "umum"
@@ -12601,7 +12783,7 @@ window.vocabN2_Nouns = [
   "word": "おやつ",
   "reading": "おやつ",
   "romaji": "oyatsu",
-  "meaning_id": "between meal snack; afternoon refreshment",
+  "meaning_id": "camilan di antara waktu makan; penyegaran sore hari",
   "meaning_en": "between meal snack; afternoon refreshment",
   "jlpt": "n2",
   "pos": "noun",
@@ -12622,15 +12804,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "おやつにプリンを食べた。",
-      "id": "I had some custard pudding for an afternoon snack.",
+      "id": "Saya makan puding custard untuk camilan sore.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"オヤ＼ツ"}
+},
     {
       "jp": "別荘にもどって、三時のおやつ。",
-      "id": "Returned to the villa, afternoon snack.",
+      "id": "Kembali ke villa, snack sore.",
       "level": "n2",
       "tags": [
         "umum"
@@ -12651,7 +12834,7 @@ window.vocabN2_Nouns = [
   "word": "親指",
   "reading": "おやゆび",
   "romaji": "oyayubi",
-  "meaning_id": "thumb",
+  "meaning_id": "ibu jari",
   "meaning_en": "thumb",
   "jlpt": "n2",
   "pos": "noun",
@@ -12672,15 +12855,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "その手袋は親指に穴があいている。",
-      "id": "The glove has a hole in the thumb.",
+      "id": "Sarung tangan memiliki lubang di ibu jari.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"オヤユビ￣"}
+},
     {
       "jp": "針で親指を突いてしまった。",
-      "id": "I pricked my thumb with a needle.",
+      "id": "Aku menusuk ibu jariku dengan jarum.",
       "level": "n2",
       "tags": [
         "umum"
@@ -12701,7 +12885,7 @@ window.vocabN2_Nouns = [
   "word": "オルガン",
   "reading": "オルガン",
   "romaji": "orugan",
-  "meaning_id": "organ",
+  "meaning_id": "alat musik organ",
   "meaning_en": "organ",
   "jlpt": "n2",
   "pos": "noun",
@@ -12722,15 +12906,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "教会には普通オルガンがあります。",
-      "id": "Ada usually an organ in a church.",
+      "id": "Ada biasanya menjadi organ di gereja.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":0,"downstep_mora":0,"contour":"￣"}
+},
     {
       "jp": "オルガンは弾けますか？",
-      "id": "Can you play the organ?",
+      "id": "Bisakah kamu memainkan organnya?",
       "level": "n2",
       "tags": [
         "umum"
@@ -12772,15 +12957,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "熱帯雨林は地球に多くの恩恵を与える。",
-      "id": "Rainforests provide the earth with many benefits.",
+      "id": "Hutan hujan memberikan banyak manfaat bagi bumi.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"オンケイ￣"}
+},
     {
       "jp": "私は君に何から何まで恩恵を受けている。",
-      "id": "I owe everything to you.",
+      "id": "Aku berhutang segalanya padamu.",
       "level": "n2",
       "tags": [
         "umum"
@@ -12801,7 +12987,7 @@ window.vocabN2_Nouns = [
   "word": "温室",
   "reading": "おんしつ",
   "romaji": "onshitsu",
-  "meaning_id": "greenhouse",
+  "meaning_id": "rumah kaca",
   "meaning_en": "greenhouse",
   "jlpt": "n2",
   "pos": "noun",
@@ -12822,15 +13008,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "私は温室でランを栽培している。",
-      "id": "I grow orchids in my greenhouse.",
+      "id": "Saya menanam anggrek di rumah kaca saya.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"オンシツ￣"}
+},
     {
       "jp": "彼らは温室でいちごを栽培している。",
-      "id": "They grow strawberries in their greenhouse.",
+      "id": "Mereka menanam stroberi di rumah kaca mereka.",
       "level": "n2",
       "tags": [
         "umum"
@@ -12872,15 +13059,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "温泉はあなたに効くでしょう。",
-      "id": "The hot spring will do you good.",
+      "id": "Pemandian air panas akan bermanfaat bagi Anda.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"オンセン￣"}
+},
     {
       "jp": "私はひなびた温泉が好きだ。",
-      "id": "Saya suka onsen off the beaten track.",
+      "id": "Saya suka onsen terpencil.",
       "level": "n2",
       "tags": [
         "umum"
@@ -12901,7 +13089,7 @@ window.vocabN2_Nouns = [
   "word": "温帯",
   "reading": "おんたい",
   "romaji": "ontai",
-  "meaning_id": "temperate zone",
+  "meaning_id": "zona sedang",
   "meaning_en": "temperate zone",
   "jlpt": "n2",
   "pos": "noun",
@@ -12922,12 +13110,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "我々のところの気候は温帯性です。",
-      "id": "Our country's climate is temperate.",
+      "id": "Iklim negara kita sedang.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"オンタイ￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -12943,7 +13132,7 @@ window.vocabN2_Nouns = [
   "word": "御中",
   "reading": "おんちゅう",
   "romaji": "onchuu",
-  "meaning_id": "and Company; Messrs.",
+  "meaning_id": "dan Perusahaan; Tuan.",
   "meaning_en": "and Company; Messrs.",
   "jlpt": "n2",
   "pos": "noun",
@@ -12964,12 +13153,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "御中を使います。",
-      "id": "Menggunakan and Company; Messrs..",
+      "id": "Menggunakan dan Perusahaan; Tuan..",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":4,"downstep_mora":1,"contour":"オ＼ンチュウ"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -12985,7 +13175,7 @@ window.vocabN2_Nouns = [
   "word": "蚊",
   "reading": "か",
   "romaji": "ka",
-  "meaning_id": "mosquito",
+  "meaning_id": "nyamuk",
   "meaning_en": "mosquito",
   "jlpt": "n2",
   "pos": "noun",
@@ -13006,15 +13196,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "蚊にたくさん刺されました。",
-      "id": "I got a lot of mosquito bites.",
+      "id": "Saya mendapat banyak gigitan nyamuk.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":1,"downstep_mora":0,"contour":"カ￣"}
+},
     {
       "jp": "私は蚊を入れないよう窓を閉めた。",
-      "id": "I shut the window to keep the mosquitoes out.",
+      "id": "Saya menutup jendela untuk mengusir nyamuk.",
       "level": "n2",
       "tags": [
         "umum"
@@ -13035,7 +13226,7 @@ window.vocabN2_Nouns = [
   "word": "貝",
   "reading": "かい",
   "romaji": "kai",
-  "meaning_id": "shell; shellfish",
+  "meaning_id": "cangkang; kerang",
   "meaning_en": "shell; shellfish",
   "jlpt": "n2",
   "pos": "noun",
@@ -13056,12 +13247,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "私が手にしてるのは貝の化石です。",
-      "id": "What I have in my hand is a fossil seashell.",
+      "id": "Apa yang saya miliki di tangan saya adalah fosil kerang.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":2,"downstep_mora":1,"contour":"カ＼イ"}
+},
     {
       "jp": "貝は好きではない。",
       "id": "I don't like shellfish.",
@@ -13085,7 +13277,7 @@ window.vocabN2_Nouns = [
   "word": "会館",
   "reading": "かいかん",
   "romaji": "kaikan",
-  "meaning_id": "meeting hall; assembly hall",
+  "meaning_id": "ruang pertemuan; aula pertemuan",
   "meaning_en": "meeting hall; assembly hall",
   "jlpt": "n2",
   "pos": "noun",
@@ -13106,15 +13298,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "その日に限って子供たちは会館に入ることを許される。",
-      "id": "The hall allows children in only on that day.",
+      "id": "Aula hanya mengizinkan anak-anak masuk pada hari itu.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"カイカン￣"}
+},
     {
       "jp": "私は少年に会ったが、彼はこの会館への道を教えてくれた。",
-      "id": "I met a boy, who showed me the way to this hall.",
+      "id": "Saya bertemu dengan seorang anak laki-laki, yang menunjukkan jalan menuju aula ini.",
       "level": "n2",
       "tags": [
         "umum"
@@ -13135,7 +13328,7 @@ window.vocabN2_Nouns = [
   "word": "海水浴",
   "reading": "かいすいよく",
   "romaji": "kaisuiyoku",
-  "meaning_id": "sea bathing; seawater bath",
+  "meaning_id": "mandi laut; mandi air laut",
   "meaning_en": "sea bathing; seawater bath",
   "jlpt": "n2",
   "pos": "noun",
@@ -13156,15 +13349,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "ハワイでは１年中海水浴が楽しめる。",
-      "id": "In Hawaii, we can enjoy swimming in the ocean all year round.",
+      "id": "Di Hawaii, kita bisa menikmati berenang di laut sepanjang tahun.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":6,"downstep_mora":3,"contour":"カイス＼イヨク"}
+},
     {
       "jp": "海水浴中に彼は友達に会った。",
-      "id": "He met his friend while bathing in the sea.",
+      "id": "Dia bertemu temannya saat mandi di laut.",
       "level": "n2",
       "tags": [
         "umum"
@@ -13185,7 +13379,7 @@ window.vocabN2_Nouns = [
   "word": "回数",
   "reading": "かいすう",
   "romaji": "kaisuu",
-  "meaning_id": "number of times; frequency",
+  "meaning_id": "beberapa kali; frekuensi",
   "meaning_en": "number of times; frequency",
   "jlpt": "n2",
   "pos": "noun",
@@ -13210,11 +13404,12 @@ window.vocabN2_Nouns = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"カイス＼ウ"}
+},
     {
       "jp": "彼の旅行は幅広く回数も多い。",
-      "id": "His travels were wide and frequent.",
+      "id": "Perjalanannya luas dan sering.",
       "level": "n2",
       "tags": [
         "umum"
@@ -13235,7 +13430,7 @@ window.vocabN2_Nouns = [
   "word": "回数券",
   "reading": "かいすうけん",
   "romaji": "kaisuuken",
-  "meaning_id": "book of tickets",
+  "meaning_id": "buku tiket",
   "meaning_en": "book of tickets",
   "jlpt": "n2",
   "pos": "noun",
@@ -13256,12 +13451,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "回数券を下さい。",
-      "id": "May I have coupon tickets?",
+      "id": "Bolehkah saya mendapatkan tiket kupon?",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":6,"downstep_mora":3,"contour":"カイス＼ウケン"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -13277,7 +13473,7 @@ window.vocabN2_Nouns = [
   "word": "快晴",
   "reading": "かいせい",
   "romaji": "kaisei",
-  "meaning_id": "good weather",
+  "meaning_id": "cuaca bagus",
   "meaning_en": "good weather",
   "jlpt": "n2",
   "pos": "noun",
@@ -13298,15 +13494,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "今日は快晴だ。これで一日中仕事が出来る。",
-      "id": "It's fair today, so we can work all day.",
+      "id": "Hari ini adil, jadi kami bisa bekerja sepanjang hari.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"カイセイ￣"}
+},
     {
       "jp": "さっきまでの快晴がうそのようだ。",
-      "id": "It's hard to believe it was so clear and sunny up to just now.",
+      "id": "Sulit dipercaya hingga saat ini cuaca begitu cerah dan cerah.",
       "level": "n2",
       "tags": [
         "umum"
@@ -13327,7 +13524,7 @@ window.vocabN2_Nouns = [
   "word": "外部",
   "reading": "がいぶ",
   "romaji": "gaibu",
-  "meaning_id": "the outside; external",
+  "meaning_id": "bagian luar; eksternal",
   "meaning_en": "the outside; external",
   "jlpt": "n2",
   "pos": "noun",
@@ -13352,8 +13549,9 @@ window.vocabN2_Nouns = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"ガ＼イブ"}
+},
     {
       "jp": "外部からの圧力がますます強くなってきている。",
       "id": "External pressure grows ever more intense.",
@@ -13377,7 +13575,7 @@ window.vocabN2_Nouns = [
   "word": "海洋",
   "reading": "かいよう",
   "romaji": "kaiyou",
-  "meaning_id": "ocean",
+  "meaning_id": "lautan",
   "meaning_en": "ocean",
   "jlpt": "n2",
   "pos": "noun",
@@ -13398,15 +13596,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "ロブスターは海洋動物の一種に属します。",
-      "id": "Lobsters belong to a class of marine animals.",
+      "id": "Lobster termasuk dalam kelas hewan laut.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"カイヨウ￣"}
+},
     {
       "jp": "世界には四つの海洋がある。",
-      "id": "Ada four oceans in the world.",
+      "id": "Ada empat samudera di dunia.",
       "level": "n2",
       "tags": [
         "umum"
@@ -13427,7 +13626,7 @@ window.vocabN2_Nouns = [
   "word": "家屋",
   "reading": "かおく",
   "romaji": "kaoku",
-  "meaning_id": "house; building",
+  "meaning_id": "rumah; bangunan",
   "meaning_en": "house; building",
   "jlpt": "n2",
   "pos": "noun",
@@ -13448,15 +13647,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "この前の嵐で数軒の家屋が被害を受けた。",
-      "id": "Several houses were damaged in the last storm.",
+      "id": "Beberapa rumah rusak akibat badai terakhir.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"カ＼オク"}
+},
     {
       "jp": "日本の家屋は木造で、火がつきやすい。",
-      "id": "Japanese houses are built of wood and they catch fire easily.",
+      "id": "Rumah-rumah Jepang terbuat dari kayu dan mudah terbakar.",
       "level": "n2",
       "tags": [
         "umum"
@@ -13498,15 +13698,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "この小包を書留にしたいのですが。",
-      "id": "I'd like to have this parcel registered.",
+      "id": "Saya ingin paket ini didaftarkan.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"カキトメ￣"}
+},
     {
       "jp": "この手紙は紛失するといけないから、書留にするがよい。",
-      "id": "You had better get this letter registered for fear it should be lost.",
+      "id": "Sebaiknya surat ini didaftarkan karena takut hilang.",
       "level": "n2",
       "tags": [
         "umum"
@@ -13527,7 +13728,7 @@ window.vocabN2_Nouns = [
   "word": "書取",
   "reading": "かきとり",
   "romaji": "kakitori",
-  "meaning_id": "dictation",
+  "meaning_id": "dikte",
   "meaning_en": "dictation",
   "jlpt": "n2",
   "pos": "noun",
@@ -13548,12 +13749,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "今日は漢字の書き取りがある。",
-      "id": "We have a kanji dictation test today.",
+      "id": "Kami mengadakan tes dikte kanji hari ini.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"カキトリ￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -13569,7 +13771,7 @@ window.vocabN2_Nouns = [
   "word": "垣根",
   "reading": "かきね",
   "romaji": "kakine",
-  "meaning_id": "hedge",
+  "meaning_id": "lindung nilai",
   "meaning_en": "hedge",
   "jlpt": "n2",
   "pos": "noun",
@@ -13594,11 +13796,12 @@ window.vocabN2_Nouns = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"カキ＼ネ"}
+},
     {
       "jp": "私は彼に垣根のペンキを塗らせた。",
-      "id": "I got him to paint the fence.",
+      "id": "Aku menyuruhnya mengecat pagar.",
       "level": "n2",
       "tags": [
         "umum"
@@ -13640,15 +13843,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "このドラマの登場人物はすべて架空のものです。",
-      "id": "All the characters in this drama are fictitious.",
+      "id": "Semua karakter dalam drama ini adalah fiktif.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"カクウ￣"}
+},
     {
       "jp": "この物語の中で書かれているすべての出来事は架空のものです。",
-      "id": "All the events described in this story are imaginary.",
+      "id": "Semua peristiwa yang digambarkan dalam cerita ini hanyalah khayalan.",
       "level": "n2",
       "tags": [
         "umum"
@@ -13690,12 +13894,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "彼は学術会議に出席した。",
-      "id": "He attended the scientific conference.",
+      "id": "Dia menghadiri konferensi ilmiah.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ガクジュツ￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -13711,7 +13916,7 @@ window.vocabN2_Nouns = [
   "word": "各地",
   "reading": "かくち",
   "romaji": "kakuchi",
-  "meaning_id": "every place; various places",
+  "meaning_id": "setiap tempat; berbagai tempat",
   "meaning_en": "every place; various places",
   "jlpt": "n2",
   "pos": "noun",
@@ -13736,11 +13941,12 @@ window.vocabN2_Nouns = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"カ＼クチ"}
+},
     {
       "jp": "台風のために各地に被害が発生した。",
-      "id": "The typhoon caused damage in many areas.",
+      "id": "Topan tersebut menyebabkan kerusakan di banyak daerah.",
       "level": "n2",
       "tags": [
         "umum"
@@ -13761,7 +13967,7 @@ window.vocabN2_Nouns = [
   "word": "角度",
   "reading": "かくど",
   "romaji": "kakudo",
-  "meaning_id": "angle",
+  "meaning_id": "sudut",
   "meaning_en": "angle",
   "jlpt": "n2",
   "pos": "noun",
@@ -13782,15 +13988,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "それでは角度が小さすぎよう。",
-      "id": "The angle would be too narrow.",
+      "id": "Sudutnya akan terlalu sempit.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"カ＼クド"}
+},
     {
       "jp": "９０度の角度は直角と呼ばれている。",
-      "id": "An angle of 90 degrees is called a right angle.",
+      "id": "Sudut yang besarnya 90 derajat disebut sudut siku-siku.",
       "level": "n2",
       "tags": [
         "umum"
@@ -13811,7 +14018,7 @@ window.vocabN2_Nouns = [
   "word": "学年",
   "reading": "がくねん",
   "romaji": "gakunen",
-  "meaning_id": "year in school; grade in school",
+  "meaning_id": "tahun di sekolah; kelas di sekolah",
   "meaning_en": "year in school; grade in school",
   "jlpt": "n2",
   "pos": "noun",
@@ -13832,15 +14039,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "第１学年には５つクラスがあった。",
-      "id": "There were five classes in the first year.",
+      "id": "Ada lima kelas di tahun pertama.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ガクネン￣"}
+},
     {
       "jp": "私たちの新学年がスタートするのは四月です。",
-      "id": "It is in April that our school years start.",
+      "id": "Pada bulan April tahun ajaran kami dimulai.",
       "level": "n2",
       "tags": [
         "umum"
@@ -13861,7 +14069,7 @@ window.vocabN2_Nouns = [
   "word": "学部",
   "reading": "がくぶ",
   "romaji": "gakubu",
-  "meaning_id": "department of a university; undergraduate",
+  "meaning_id": "departemen universitas; sarjana",
   "meaning_en": "department of a university; undergraduate",
   "jlpt": "n2",
   "pos": "noun",
@@ -13882,12 +14090,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "学部の選択で迷った。",
-      "id": "He was at a loss as to which faculty to choose.",
+      "id": "Dia bingung harus memilih fakultas mana.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ガクブ￣"}
+},
     {
       "jp": "私たちの大学は８つの学部から成っている。",
       "id": "Our university consists of eight departments.",
@@ -13911,7 +14120,7 @@ window.vocabN2_Nouns = [
   "word": "確率",
   "reading": "かくりつ",
   "romaji": "kakuritsu",
-  "meaning_id": "probability",
+  "meaning_id": "kemungkinan",
   "meaning_en": "probability",
   "jlpt": "n2",
   "pos": "noun",
@@ -13932,15 +14141,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "キャンセル待ちで乗れる確率はどれくらいですか。",
-      "id": "If I wait, what's the possibility I can get a seat?",
+      "id": "Jika saya menunggu, apa kemungkinan saya dapat tempat duduk?",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"カクリツ￣"}
+},
     {
       "jp": "彼が回復する確率はあるにしても極めて少ない。",
-      "id": "Ada little if any hope for his recovery.",
+      "id": "Ada sedikit harapan untuk kesembuhannya.",
       "level": "n2",
       "tags": [
         "umum"
@@ -13986,8 +14196,9 @@ window.vocabN2_Nouns = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":4,"downstep_mora":2,"contour":"ガク＼リョク"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -14003,7 +14214,7 @@ window.vocabN2_Nouns = [
   "word": "掛け算",
   "reading": "かけざん",
   "romaji": "kakezan",
-  "meaning_id": "multiplication",
+  "meaning_id": "perkalian",
   "meaning_en": "multiplication",
   "jlpt": "n2",
   "pos": "noun",
@@ -14024,12 +14235,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "子供たちは掛け算を暗記している。",
-      "id": "The children are learning the multiplication tables by heart.",
+      "id": "Anak-anak menghafal tabel perkalian.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":4,"downstep_mora":2,"contour":"カケ＼ザン"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -14045,7 +14257,7 @@ window.vocabN2_Nouns = [
   "word": "火口",
   "reading": "かこう",
   "romaji": "kakou",
-  "meaning_id": "a burner; origin of a fire",
+  "meaning_id": "pembakar; asal mula api",
   "meaning_en": "a burner; origin of a fire",
   "jlpt": "n2",
   "pos": "noun",
@@ -14066,12 +14278,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "火口を使います。",
-      "id": "Menggunakan a burner; origin of a fire.",
+      "id": "Menggunakan pembakar; asal mula api.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"カコウ￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -14087,7 +14300,7 @@ window.vocabN2_Nouns = [
   "word": "飾り",
   "reading": "かざり",
   "romaji": "kazari",
-  "meaning_id": "decoration",
+  "meaning_id": "dekorasi",
   "meaning_en": "decoration",
   "jlpt": "n2",
   "pos": "noun",
@@ -14108,15 +14321,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "その箱に飾りのテープをかけてください。",
-      "id": "Do up the box with decorative tape.",
+      "id": "Tutupi kotak itu dengan selotip dekoratif.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"カザリ￣"}
+},
     {
       "jp": "それは飾りにすぎない。",
-      "id": "It is merely an ornament.",
+      "id": "Itu hanyalah hiasan.",
       "level": "n2",
       "tags": [
         "umum"
@@ -14137,7 +14351,7 @@ window.vocabN2_Nouns = [
   "word": "火山",
   "reading": "かざん",
   "romaji": "kazan",
-  "meaning_id": "volcano",
+  "meaning_id": "gunung berapi",
   "meaning_en": "volcano",
   "jlpt": "n2",
   "pos": "noun",
@@ -14158,15 +14372,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "その火山は溶岩を流し出した。",
-      "id": "The volcano poured molten rock.",
+      "id": "Gunung berapi mengeluarkan batuan cair.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"カ＼ザン"}
+},
     {
       "jp": "火山の爆発がその村をおびやかした。",
-      "id": "The volcanic eruption threatened the village.",
+      "id": "Letusan gunung berapi mengancam desa tersebut.",
       "level": "n2",
       "tags": [
         "umum"
@@ -14208,15 +14423,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "私は彼の過失を指摘している。",
-      "id": "I'm pointing a finger at his mistake.",
+      "id": "Saya menuding kesalahannya.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"カシツ￣"}
+},
     {
       "jp": "それはすべて私たちの過失です。",
-      "id": "It was all our fault.",
+      "id": "Itu semua salah kami.",
       "level": "n2",
       "tags": [
         "umum"
@@ -14262,11 +14478,12 @@ window.vocabN2_Nouns = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"カ＼ジツ"}
+},
     {
       "jp": "木は果実のみの重さでたわんだ。",
-      "id": "The tree bent down beneath their weight of fruit.",
+      "id": "Pohon itu membungkuk karena berat buahnya.",
       "level": "n2",
       "tags": [
         "umum"
@@ -14287,7 +14504,7 @@ window.vocabN2_Nouns = [
   "word": "貸間",
   "reading": "かしま",
   "romaji": "kashima",
-  "meaning_id": "room to let",
+  "meaning_id": "ruang untuk dibiarkan",
   "meaning_en": "room to let",
   "jlpt": "n2",
   "pos": "noun",
@@ -14308,15 +14525,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "私は貸間を探しているところです。",
-      "id": "I'm looking for a room for rent.",
+      "id": "Saya sedang mencari kamar untuk disewa.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"カシマ￣"}
+},
     {
       "jp": "この家に貸間はありますか。",
-      "id": "Have you a room to let in this house?",
+      "id": "Apakah Anda punya kamar untuk ditinggali di rumah ini?",
       "level": "n2",
       "tags": [
         "umum"
@@ -14337,7 +14555,7 @@ window.vocabN2_Nouns = [
   "word": "貸家",
   "reading": "かしや",
   "romaji": "kashiya",
-  "meaning_id": "house for rent",
+  "meaning_id": "rumah untuk disewa",
   "meaning_en": "house for rent",
   "jlpt": "n2",
   "pos": "noun",
@@ -14362,11 +14580,12 @@ window.vocabN2_Nouns = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"カシヤ￣"}
+},
     {
       "jp": "わたしは貸家をさがしている。",
-      "id": "I am looking for a house to rent.",
+      "id": "Saya sedang mencari rumah untuk disewa.",
       "level": "n2",
       "tags": [
         "umum"
@@ -14408,15 +14627,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "私はスキー中に２箇所も骨折した。",
-      "id": "I broke my leg in two places during a skiing mishap.",
+      "id": "Kaki saya patah di dua tempat saat terjadi kecelakaan ski.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":2,"downstep_mora":1,"contour":"カ＼ショ"}
+},
     {
       "jp": "この湖はこの箇所が一番深い。",
-      "id": "The lake is deepest at this point.",
+      "id": "Danau ini berada pada titik terdalamnya.",
       "level": "n2",
       "tags": [
         "umum"
@@ -14437,7 +14657,7 @@ window.vocabN2_Nouns = [
   "word": "カセット",
   "reading": "カセット",
   "romaji": "kasetto",
-  "meaning_id": "cassette (tape)",
+  "meaning_id": "kaset (pita)",
   "meaning_en": "cassette (tape)",
   "jlpt": "n2",
   "pos": "noun",
@@ -14458,15 +14678,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "私は財布をなくしてしまっていた、それでそのカセットが買えなかった。",
-      "id": "I had lost my purse, so I couldn't buy the cassette.",
+      "id": "Saya kehilangan dompet, jadi saya tidak bisa membeli kasetnya.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":0,"downstep_mora":0,"contour":"￣"}
+},
     {
       "jp": "私はそのカセットにさらに１０ドル払わなければならなかった。",
-      "id": "I had to pay ten dollars for the cassette in addition.",
+      "id": "Saya harus membayar sepuluh dolar untuk kaset itu sebagai tambahan.",
       "level": "n2",
       "tags": [
         "umum"
@@ -14487,7 +14708,7 @@ window.vocabN2_Nouns = [
   "word": "下線",
   "reading": "かせん",
   "romaji": "kasen",
-  "meaning_id": "underline; underscore",
+  "meaning_id": "garis bawahi; garis bawah",
   "meaning_en": "underline; underscore",
   "jlpt": "n2",
   "pos": "noun",
@@ -14508,15 +14729,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "下線のある文を訳しなさい。",
-      "id": "Translate the underlined sentences.",
+      "id": "Terjemahkan kalimat yang digarisbawahi.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"カセン￣"}
+},
     {
       "jp": "下線を引いた語を正しい形にしなさい。",
-      "id": "Correct the underlined words.",
+      "id": "Perbaiki kata-kata yang digarisbawahi.",
       "level": "n2",
       "tags": [
         "umum"
@@ -14537,7 +14759,7 @@ window.vocabN2_Nouns = [
   "word": "加速度",
   "reading": "かそくど",
   "romaji": "kasokudo",
-  "meaning_id": "acceleration",
+  "meaning_id": "percepatan",
   "meaning_en": "acceleration",
   "jlpt": "n2",
   "pos": "noun",
@@ -14562,8 +14784,9 @@ window.vocabN2_Nouns = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"カソク＼ド"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -14579,7 +14802,7 @@ window.vocabN2_Nouns = [
   "word": "片仮名",
   "reading": "かたかな",
   "romaji": "katakana",
-  "meaning_id": "katakana",
+  "meaning_id": "huruf katakana",
   "meaning_en": "katakana",
   "jlpt": "n2",
   "pos": "noun",
@@ -14600,12 +14823,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "平仮名は書けるんだけど、片仮名はまだ書けないんだ。",
-      "id": "I can write hiragana, but I can't yet write katakana.",
+      "id": "Saya bisa menulis hiragana, tapi saya belum bisa menulis katakana.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"カタカ＼ナ"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -14642,15 +14866,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "巨大な肉の塊が当たった。",
-      "id": "I was hit by a huge chunk of meat.",
+      "id": "Saya terkena sepotong besar daging.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"カタマリ￣"}
+},
     {
       "jp": "石の塊はセメントで接合された。",
-      "id": "The blocks of stone were jointed with cement.",
+      "id": "Balok-balok batu itu disambung dengan semen.",
       "level": "n2",
       "tags": [
         "umum"
@@ -14671,7 +14896,7 @@ window.vocabN2_Nouns = [
   "word": "片道",
   "reading": "かたみち",
   "romaji": "katamichi",
-  "meaning_id": "one-way (trip)",
+  "meaning_id": "satu arah (perjalanan)",
   "meaning_en": "one-way (trip)",
   "jlpt": "n2",
   "pos": "noun",
@@ -14692,15 +14917,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "運賃は片道1ドルです。",
-      "id": "The fare is one dollar each way.",
+      "id": "Tarifnya satu dolar sekali jalan.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"カタミチ￣"}
+},
     {
       "jp": "Ａ市からＢ市までのチケット、片道２まいください。",
-      "id": "I'd like two one-way tickets from A to B.",
+      "id": "Saya ingin dua tiket sekali jalan dari A ke B.",
       "level": "n2",
       "tags": [
         "umum"
@@ -14721,7 +14947,7 @@ window.vocabN2_Nouns = [
   "word": "学科",
   "reading": "がっか",
   "romaji": "gakka",
-  "meaning_id": "study subject; course of study",
+  "meaning_id": "subjek studi; program studi",
   "meaning_en": "study subject; course of study",
   "jlpt": "n2",
   "pos": "noun",
@@ -14742,12 +14968,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "数学は私の好きな学科です。",
-      "id": "Mathematics is my favorite subject.",
+      "id": "Matematika adalah mata pelajaran favorit saya.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ガッカ￣"}
+},
     {
       "jp": "私は学科では美術と音楽が好きです。",
       "id": "Saya suka art and music among my school subjects.",
@@ -14771,7 +14998,7 @@ window.vocabN2_Nouns = [
   "word": "学会",
   "reading": "がっかい",
   "romaji": "gakkai",
-  "meaning_id": "scientific society; academic meeting",
+  "meaning_id": "masyarakat ilmiah; pertemuan akademik",
   "meaning_en": "scientific society; academic meeting",
   "jlpt": "n2",
   "pos": "noun",
@@ -14792,12 +15019,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "盛田教授は化学学会で司会を務めた。",
-      "id": "Professor Morita presided at a meeting of the Chemical Society.",
+      "id": "Profesor Morita memimpin pertemuan Masyarakat Kimia.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ガッカイ￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -14813,7 +15041,7 @@ window.vocabN2_Nouns = [
   "word": "楽器",
   "reading": "がっき",
   "romaji": "gakki",
-  "meaning_id": "musical instrument",
+  "meaning_id": "alat musik",
   "meaning_en": "musical instrument",
   "jlpt": "n2",
   "pos": "noun",
@@ -14834,12 +15062,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "楽器をなにか演奏しますか。",
-      "id": "Do you play a musical instrument?",
+      "id": "Apakah Anda memainkan alat musik?",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ガッキ￣"}
+},
     {
       "jp": "僕は楽器よりも声楽のほうが好きだ。",
       "id": "Saya suka vocal music better than instrumental music.",
@@ -14863,7 +15092,7 @@ window.vocabN2_Nouns = [
   "word": "学級",
   "reading": "がっきゅう",
   "romaji": "gakkyuu",
-  "meaning_id": "grade in school",
+  "meaning_id": "kelas di sekolah",
   "meaning_en": "grade in school",
   "jlpt": "n2",
   "pos": "noun",
@@ -14884,15 +15113,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "私たちは同じ学級で英語を勉強します。",
-      "id": "We study English in the same class.",
+      "id": "Kami belajar bahasa Inggris di kelas yang sama.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ガッキュウ￣"}
+},
     {
       "jp": "私たちの学校には１０の学級がある。",
-      "id": "Our school has ten classes.",
+      "id": "Sekolah kami memiliki sepuluh kelas.",
       "level": "n2",
       "tags": [
         "umum"
@@ -14913,7 +15143,7 @@ window.vocabN2_Nouns = [
   "word": "活字",
   "reading": "かつじ",
   "romaji": "katsuji",
-  "meaning_id": "printing type",
+  "meaning_id": "jenis pencetakan",
   "meaning_en": "printing type",
   "jlpt": "n2",
   "pos": "noun",
@@ -14934,15 +15164,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "彼は新聞の小さな活字をじっとみた。",
-      "id": "He peered at the small print in a newspaper.",
+      "id": "Dia mengintip tulisan kecil di koran.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"カツジ￣"}
+},
     {
       "jp": "小さい活字がかすんで見えます。",
-      "id": "The small print looks faded.",
+      "id": "Cetakan kecilnya terlihat pudar.",
       "level": "n2",
       "tags": [
         "umum"
@@ -14963,7 +15194,7 @@ window.vocabN2_Nouns = [
   "word": "活力",
   "reading": "かつりょく",
   "romaji": "katsuryoku",
-  "meaning_id": "vitality; energy",
+  "meaning_id": "vitalitas; energi",
   "meaning_en": "vitality; energy",
   "jlpt": "n2",
   "pos": "noun",
@@ -14984,12 +15215,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "この薬は活力を補給してくれます。",
-      "id": "This medicine renews your strength.",
+      "id": "Obat ini memperbaharui kekuatan Anda.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":4,"downstep_mora":2,"contour":"カツ＼リョク"}
+},
     {
       "jp": "いつも彼は活力がみなぎっている。",
       "id": "Dia always full of power.",
@@ -15013,7 +15245,7 @@ window.vocabN2_Nouns = [
   "word": "課程",
   "reading": "かてい",
   "romaji": "katei",
-  "meaning_id": "course; curriculum",
+  "meaning_id": "kursus; kurikulum",
   "meaning_en": "course; curriculum",
   "jlpt": "n2",
   "pos": "noun",
@@ -15034,15 +15266,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "その大学の課程は自然科学と社会科学から成り立っている。",
-      "id": "That university's curriculum covers natural science and social science.",
+      "id": "Kurikulum universitas tersebut mencakup ilmu alam dan ilmu sosial.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"カテイ￣"}
+},
     {
       "jp": "私は高校の全課程を修了した。",
-      "id": "I completed the whole high school curriculum.",
+      "id": "Saya menyelesaikan seluruh kurikulum sekolah menengah.",
       "level": "n2",
       "tags": [
         "umum"
@@ -15063,7 +15296,7 @@ window.vocabN2_Nouns = [
   "word": "仮名",
   "reading": "かな",
   "romaji": "kana",
-  "meaning_id": "kana; Japanese syllabaries (i.e. hiragana and katakana)",
+  "meaning_id": "kana; Suku kata Jepang (yaitu hiragana dan katakana)",
   "meaning_en": "kana; Japanese syllabaries (i.e. hiragana and katakana)",
   "jlpt": "n2",
   "pos": "noun",
@@ -15084,12 +15317,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "この漢字、送り仮名が間違ってるよ。",
-      "id": "The okurigana on this kanji is wrong.",
+      "id": "Okurigana pada kanji ini salah.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":2,"downstep_mora":0,"contour":"カナ￣"}
+},
     {
       "jp": "振り仮名はどうやって付けますか？",
       "id": "How do I add furigana?",
@@ -15113,7 +15347,7 @@ window.vocabN2_Nouns = [
   "word": "仮名遣い",
   "reading": "かなづかい",
   "romaji": "kanazukai",
-  "meaning_id": "kana orthography; syllabary spelling",
+  "meaning_id": "ortografi kana; ejaan suku kata",
   "meaning_en": "kana orthography; syllabary spelling",
   "jlpt": "n2",
   "pos": "noun",
@@ -15134,12 +15368,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "祖父は古い仮名遣いで書くことがあるの。",
-      "id": "My grandfather sometimes writes in the old kana orthography.",
+      "id": "Kakek saya terkadang menulis dalam ortografi kana lama.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":5,"downstep_mora":3,"contour":"カナヅ＼カイ"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -15155,7 +15390,7 @@ window.vocabN2_Nouns = [
   "word": "鐘",
   "reading": "かね",
   "romaji": "kane",
-  "meaning_id": "bell; chime",
+  "meaning_id": "bel; berbunyi",
   "meaning_en": "bell; chime",
   "jlpt": "n2",
   "pos": "noun",
@@ -15176,15 +15411,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "鐘の合図で彼らは食事をした。",
-      "id": "The bell chimed them to meals.",
+      "id": "Bel berbunyi untuk memberi mereka waktu makan.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":2,"downstep_mora":0,"contour":"カネ￣"}
+},
     {
       "jp": "教会の鐘は３時に鳴ったものです。",
-      "id": "The church bell used to ring at three.",
+      "id": "Lonceng gereja biasanya berbunyi pada pukul tiga.",
       "level": "n2",
       "tags": [
         "umum"
@@ -15205,7 +15441,7 @@ window.vocabN2_Nouns = [
   "word": "カバー",
   "reading": "カバー",
   "romaji": "kabaa",
-  "meaning_id": "cover (ex. book)",
+  "meaning_id": "sampul (mis. buku)",
   "meaning_en": "cover (ex. book)",
   "jlpt": "n2",
   "pos": "noun",
@@ -15226,15 +15462,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "その本のカバーにはインクのしみがいくつかあった。",
-      "id": "There were some ink spots on the book jacket.",
+      "id": "Ada beberapa noda tinta di jaket buku.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":0,"downstep_mora":1,"contour":"＼"}
+},
     {
       "jp": "事故の場合、全て保険でカバーされていますか。",
-      "id": "Am I fully covered in case of an accident?",
+      "id": "Apakah saya terlindungi sepenuhnya jika terjadi kecelakaan?",
       "level": "n2",
       "tags": [
         "umum"
@@ -15255,7 +15492,7 @@ window.vocabN2_Nouns = [
   "word": "過半数",
   "reading": "かはんすう",
   "romaji": "kahansuu",
-  "meaning_id": "majority",
+  "meaning_id": "mayoritas",
   "meaning_en": "majority",
   "jlpt": "n2",
   "pos": "noun",
@@ -15276,15 +15513,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "与党は前の選挙で過半数を占めた。",
-      "id": "The government got their majority at the last election.",
+      "id": "Pemerintah mendapatkan mayoritas pada pemilu lalu.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":5,"downstep_mora":2,"contour":"カハ＼ンスウ"}
+},
     {
       "jp": "合格者の過半数は大学出身者であった。",
-      "id": "The majority of the successful candidates were university graduates.",
+      "id": "Mayoritas kandidat yang berhasil adalah lulusan universitas.",
       "level": "n2",
       "tags": [
         "umum"
@@ -15305,7 +15543,7 @@ window.vocabN2_Nouns = [
   "word": "釜",
   "reading": "かま",
   "romaji": "kama",
-  "meaning_id": "iron pot; kettle",
+  "meaning_id": "panci besi; ketel",
   "meaning_en": "iron pot; kettle",
   "jlpt": "n2",
   "pos": "noun",
@@ -15326,15 +15564,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "きのう交差点でお釜を掘られちゃったよ。",
-      "id": "Someone ploughed into me from behind at an intersection yesterday.",
+      "id": "Seseorang menabrakku dari belakang di persimpangan kemarin.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":2,"downstep_mora":0,"contour":"カマ￣"}
+},
     {
       "jp": "あの店の釜めしは絶品だよ。",
-      "id": "That restaurant's kamameshi is absolutely superb.",
+      "id": "Kamameshi di restoran itu benar-benar luar biasa.",
       "level": "n2",
       "tags": [
         "umum"
@@ -15355,7 +15594,7 @@ window.vocabN2_Nouns = [
   "word": "紙屑",
   "reading": "かみくず",
   "romaji": "kamikuzu",
-  "meaning_id": "wastepaper",
+  "meaning_id": "kertas bekas",
   "meaning_en": "wastepaper",
   "jlpt": "n2",
   "pos": "noun",
@@ -15376,12 +15615,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "その部屋は紙くずだらけだった。",
-      "id": "The room was littered with scraps of paper.",
+      "id": "Ruangan itu dipenuhi potongan-potongan kertas.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"カミク＼ズ"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -15397,7 +15637,7 @@ window.vocabN2_Nouns = [
   "word": "神様",
   "reading": "かみさま",
   "romaji": "kamisama",
-  "meaning_id": "god",
+  "meaning_id": "tuhan",
   "meaning_en": "god",
   "jlpt": "n2",
   "pos": "noun",
@@ -15418,15 +15658,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "危険が過ぎると神様は忘れられる。",
-      "id": "The danger past and God forgotten.",
+      "id": "Bahaya telah berlalu dan Tuhan telah melupakannya.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":4,"downstep_mora":1,"contour":"カ＼ミサマ"}
+},
     {
       "jp": "神様のおぼしめしで息子は死んだ。",
-      "id": "It pleased God to take away my son.",
+      "id": "Tuhan berkenan mengambil anak saya.",
       "level": "n2",
       "tags": [
         "umum"
@@ -15447,7 +15688,7 @@ window.vocabN2_Nouns = [
   "word": "剃刀",
   "reading": "かみそり",
   "romaji": "kamisori",
-  "meaning_id": "razor",
+  "meaning_id": "pisau cukur",
   "meaning_en": "razor",
   "jlpt": "n2",
   "pos": "noun",
@@ -15468,15 +15709,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "かみそりの刃で指を切りました。",
-      "id": "I cut my finger with a razor blade.",
+      "id": "Saya memotong jari saya dengan silet.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"カミソ＼リ"}
+},
     {
       "jp": "この電気かみそりは買う前に試してみるべきだった。",
-      "id": "I should have tried out this electric shaver before buying it.",
+      "id": "Saya seharusnya mencoba alat cukur listrik ini sebelum membelinya.",
       "level": "n2",
       "tags": [
         "umum"
@@ -15497,7 +15739,7 @@ window.vocabN2_Nouns = [
   "word": "ガム",
   "reading": "ガム",
   "romaji": "gamu",
-  "meaning_id": "chewing gum",
+  "meaning_id": "permen karet",
   "meaning_en": "chewing gum",
   "jlpt": "n2",
   "pos": "noun",
@@ -15518,15 +15760,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "ガムが靴底にくっついた。",
-      "id": "The gum adhered to the sole of the shoe.",
+      "id": "Permen karet itu menempel di sol sepatu.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":0,"downstep_mora":1,"contour":"＼"}
+},
     {
       "jp": "なんとガムのおまけだったんだよ。",
-      "id": "Believe it or not, it came in a pack of gum.",
+      "id": "Percaya atau tidak, itu datang dalam kemasan permen karet.",
       "level": "n2",
       "tags": [
         "umum"
@@ -15547,7 +15790,7 @@ window.vocabN2_Nouns = [
   "word": "貨物",
   "reading": "かもつ",
   "romaji": "kamotsu",
-  "meaning_id": "cargo; freight",
+  "meaning_id": "muatan; pengiriman",
   "meaning_en": "cargo; freight",
   "jlpt": "n2",
   "pos": "noun",
@@ -15568,15 +15811,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "その航空会社は貨物のみを扱っている。",
-      "id": "That aircraft company deals in freight only.",
+      "id": "Perusahaan pesawat itu hanya menangani pengiriman barang.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"カ＼モツ"}
+},
     {
       "jp": "今では多くの貨物が飛行機で輸送されている。",
-      "id": "Many goods are now transported by air.",
+      "id": "Banyak barang sekarang diangkut melalui udara.",
       "level": "n2",
       "tags": [
         "umum"
@@ -15597,7 +15841,7 @@ window.vocabN2_Nouns = [
   "word": "歌謡",
   "reading": "かよう",
   "romaji": "kayou",
-  "meaning_id": "song; ballad",
+  "meaning_id": "lagu; balada",
   "meaning_en": "song; ballad",
   "jlpt": "n2",
   "pos": "noun",
@@ -15622,8 +15866,9 @@ window.vocabN2_Nouns = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"カヨウ￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -15660,15 +15905,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "飲み物はヤシの実の殻に入れてあった。",
-      "id": "The drinks were served in coconut shells.",
+      "id": "Minumannya disajikan dalam batok kelapa.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"odaka","mora_count":2,"downstep_mora":2,"contour":"カラ＼"}
+},
     {
       "jp": "卵の殻は壊れやすい。",
-      "id": "The shell of an egg is easily broken.",
+      "id": "Cangkang telur mudah pecah.",
       "level": "n2",
       "tags": [
         "umum"
@@ -15714,8 +15960,9 @@ window.vocabN2_Nouns = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":0,"downstep_mora":1,"contour":"＼"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -15731,7 +15978,7 @@ window.vocabN2_Nouns = [
   "word": "かるた",
   "reading": "かるた",
   "romaji": "karuta",
-  "meaning_id": "playing cards (pt: carta)",
+  "meaning_id": "bermain kartu (pt: carta)",
   "meaning_en": "playing cards (pt: carta)",
   "jlpt": "n2",
   "pos": "noun",
@@ -15752,12 +15999,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "カルタを配ってください。",
-      "id": "Tolong deal the cards.",
+      "id": "Tolong bagikan kartunya.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"カ＼ルタ"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -15773,7 +16021,7 @@ window.vocabN2_Nouns = [
   "word": "カロリー",
   "reading": "カロリー",
   "romaji": "karorii",
-  "meaning_id": "calorie",
+  "meaning_id": "kalori",
   "meaning_en": "calorie",
   "jlpt": "n2",
   "pos": "noun",
@@ -15794,15 +16042,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "あなたは必要以上のカロリーをとっている。",
-      "id": "You take more calories than are necessary.",
+      "id": "Anda mengonsumsi lebih banyak kalori daripada yang diperlukan.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":0,"downstep_mora":1,"contour":"＼"}
+},
     {
       "jp": "カロリーの高い食物は私の健康にはよくない。",
-      "id": "Rich foods don't agree with my health.",
+      "id": "Makanan kaya tidak sesuai dengan kesehatan saya.",
       "level": "n2",
       "tags": [
         "umum"
@@ -15823,7 +16072,7 @@ window.vocabN2_Nouns = [
   "word": "為替",
   "reading": "かわせ",
   "romaji": "kawase",
-  "meaning_id": "money order; exchange",
+  "meaning_id": "wesel; pertukaran",
   "meaning_en": "money order; exchange",
   "jlpt": "n2",
   "pos": "noun",
@@ -15844,12 +16093,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "この為替を作るのに銀行の手数料が５０ドルかかった。",
-      "id": "Arranging this money order cost $50 in bank fees and commissions.",
+      "id": "Mengatur wesel ini dikenakan biaya dan komisi bank sebesar $50.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"カワセ￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -15865,7 +16115,7 @@ window.vocabN2_Nouns = [
   "word": "瓦",
   "reading": "かわら",
   "romaji": "kawara",
-  "meaning_id": "roof tile",
+  "meaning_id": "ubin atap",
   "meaning_en": "roof tile",
   "jlpt": "n2",
   "pos": "noun",
@@ -15890,8 +16140,9 @@ window.vocabN2_Nouns = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"カワラ￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -15928,15 +16179,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "彼が答える前に長い時間の間隔があった。",
-      "id": "There was a long interval before he replied.",
+      "id": "Ada jeda yang lama sebelum dia menjawab.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"カンカク￣"}
+},
     {
       "jp": "小屋は５０メートルの間隔で建てられた。",
-      "id": "The huts were built with a space of 50 meters in between.",
+      "id": "Gubuk-gubuk tersebut dibangun dengan jarak antara 50 meter.",
       "level": "n2",
       "tags": [
         "umum"
@@ -15957,7 +16209,7 @@ window.vocabN2_Nouns = [
   "word": "関西",
   "reading": "かんさい",
   "romaji": "kansai",
-  "meaning_id": "Kansai (region comprising Kyoto, Osaka, Kobe and surrounding prefectures)",
+  "meaning_id": "Kansai (wilayah yang terdiri dari Kyoto, Osaka, Kobe dan prefektur sekitarnya)",
   "meaning_en": "Kansai (region comprising Kyoto, Osaka, Kobe and surrounding prefectures)",
   "jlpt": "n2",
   "pos": "noun",
@@ -15978,15 +16230,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "その飛行機は今ごろは関西空港に当然着いているはずだ。",
-      "id": "The plane should have arrived at Kansai Airport by now.",
+      "id": "Pesawat seharusnya sudah tiba di Bandara Kansai sekarang.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":4,"downstep_mora":1,"contour":"カ＼ンサイ"}
+},
     {
       "jp": "私は関西国際空港でトニー君を見送った。",
-      "id": "I saw Tony off at Kansai International Airport.",
+      "id": "Saya mengantar Tony turun di Bandara Internasional Kansai.",
       "level": "n2",
       "tags": [
         "umum"
@@ -16007,7 +16260,7 @@ window.vocabN2_Nouns = [
   "word": "感ずる",
   "reading": "かんずる",
   "romaji": "kanzuru",
-  "meaning_id": "me-feel",
+  "meaning_id": "rasakan",
   "meaning_en": "to feel; to sense",
   "jlpt": "n2",
   "pos": "noun",
@@ -16028,15 +16281,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "人生から非常な喜びを感ずる。",
-      "id": "I get a kick out of life.",
+      "id": "Saya merasakan sensasi hidup.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"カンズル￣"}
+},
     {
       "jp": "彼の言葉は正論だったが、僕は心のどこかで引っかかりを感じていた。",
-      "id": "Even though what he said was sound, I still wasn't completely convinced.",
+      "id": "Meskipun apa yang dia katakan masuk akal, aku masih belum sepenuhnya yakin.",
       "level": "n2",
       "tags": [
         "umum"
@@ -16057,7 +16311,7 @@ window.vocabN2_Nouns = [
   "word": "間接",
   "reading": "かんせつ",
   "romaji": "kansetsu",
-  "meaning_id": "indirection; indirectness",
+  "meaning_id": "tipuan; ketidaklangsungan",
   "meaning_en": "indirection; indirectness",
   "jlpt": "n2",
   "pos": "noun",
@@ -16082,8 +16336,9 @@ window.vocabN2_Nouns = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"カンセツ￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -16099,7 +16354,7 @@ window.vocabN2_Nouns = [
   "word": "感想",
   "reading": "かんそう",
   "romaji": "kansou",
-  "meaning_id": "impressions; thoughts",
+  "meaning_id": "tayangan; pikiran",
   "meaning_en": "impressions; thoughts",
   "jlpt": "n2",
   "pos": "noun",
@@ -16120,15 +16375,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "ゲームについてのご感想は？",
-      "id": "How did you feel about the game?",
+      "id": "Bagaimana perasaan Anda tentang permainan tersebut?",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"カンソウ￣"}
+},
     {
       "jp": "彼はその詩の感想を述べた。",
-      "id": "He gave us his impression of the poem.",
+      "id": "Dia memberi kami kesannya tentang puisi itu.",
       "level": "n2",
       "tags": [
         "umum"
@@ -16149,7 +16405,7 @@ window.vocabN2_Nouns = [
   "word": "寒帯",
   "reading": "かんたい",
   "romaji": "kantai",
-  "meaning_id": "frigid zone",
+  "meaning_id": "zona dingin",
   "meaning_en": "frigid zone",
   "jlpt": "n2",
   "pos": "noun",
@@ -16174,8 +16430,9 @@ window.vocabN2_Nouns = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"カンタイ￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -16191,7 +16448,7 @@ window.vocabN2_Nouns = [
   "word": "官庁",
   "reading": "かんちょう",
   "romaji": "kanchou",
-  "meaning_id": "government office; authorities",
+  "meaning_id": "kantor pemerintah; pihak berwenang",
   "meaning_en": "government office; authorities",
   "jlpt": "n2",
   "pos": "noun",
@@ -16212,12 +16469,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "彼は官庁で相当な職についている。",
-      "id": "He has a good position in a government office.",
+      "id": "Dia memiliki posisi yang baik di kantor pemerintahan.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":4,"downstep_mora":1,"contour":"カ＼ンチョウ"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -16254,15 +16512,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "なしはこの工場で缶詰にされます。",
-      "id": "Nashi are tinned in this factory.",
+      "id": "Nashi dikalengkan di pabrik ini.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"カンヅ＼メ"}
+},
     {
       "jp": "メグはトマトの缶詰を買った。",
-      "id": "Meg bought a can of tomatoes.",
+      "id": "Meg membeli sekaleng tomat.",
       "level": "n2",
       "tags": [
         "umum"
@@ -16283,7 +16542,7 @@ window.vocabN2_Nouns = [
   "word": "乾電池",
   "reading": "かんでんち",
   "romaji": "kandenchi",
-  "meaning_id": "dry cell; battery",
+  "meaning_id": "sel kering; baterai",
   "meaning_en": "dry cell; battery",
   "jlpt": "n2",
   "pos": "noun",
@@ -16304,15 +16563,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "乾電池を探しているのですが。",
-      "id": "I'm looking for batteries.",
+      "id": "Saya mencari baterai.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":5,"downstep_mora":3,"contour":"カンデ＼ンチ"}
+},
     {
       "jp": "1.5V乾電池を直接触っただけでは感電死することはないでしょう。",
-      "id": "You're not going to get electrocuted just by directly touching a 1.5V battery.",
+      "id": "Anda tidak akan tersengat listrik hanya dengan menyentuh langsung baterai 1,5V.",
       "level": "n2",
       "tags": [
         "umum"
@@ -16333,7 +16593,7 @@ window.vocabN2_Nouns = [
   "word": "関東",
   "reading": "かんとう",
   "romaji": "kantou",
-  "meaning_id": "eastern half of Japan; including Tokyo",
+  "meaning_id": "separuh bagian timur Jepang; termasuk Tokyo",
   "meaning_en": "eastern half of Japan; including Tokyo",
   "jlpt": "n2",
   "pos": "noun",
@@ -16354,15 +16614,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "ジョンは関東地区、そして太郎は関西地区を担当している。",
-      "id": "John covers the Kanto area and Taro covers the Kansai area.",
+      "id": "John mencakup wilayah Kanto dan Taro mencakup wilayah Kansai.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":4,"downstep_mora":1,"contour":"カ＼ントウ"}
+},
     {
       "jp": "台風が関東地方に上陸した。",
-      "id": "The typhoon struck the Kanto district.",
+      "id": "Topan melanda distrik Kanto.",
       "level": "n2",
       "tags": [
         "umum"
@@ -16408,11 +16669,12 @@ window.vocabN2_Nouns = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":4,"downstep_mora":1,"contour":"カ＼ンネン"}
+},
     {
       "jp": "幸福の観念はきわめて抽象的だ。",
-      "id": "The idea of happiness is extremely abstract.",
+      "id": "Gagasan tentang kebahagiaan sangatlah abstrak.",
       "level": "n2",
       "tags": [
         "umum"
@@ -16454,15 +16716,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "日光で看板の文字があせた。",
-      "id": "The sun had faded the lettering on the sign.",
+      "id": "Matahari telah memudarkan tulisan pada tanda itu.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"カンバン￣"}
+},
     {
       "jp": "その警官は家から看板をはがした。",
-      "id": "The policeman tore the signboard from the house.",
+      "id": "Polisi itu merobek papan nama dari rumah.",
       "level": "n2",
       "tags": [
         "umum"
@@ -16504,15 +16767,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "先生は生徒の作った花の冠をかぶった。",
-      "id": "The teacher put on a crown of flowers made by her pupils.",
+      "id": "Guru mengenakan mahkota bunga yang dibuat oleh murid-muridnya.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"カンムリ￣"}
+},
     {
       "jp": "マユコは花の冠をつけていた。",
-      "id": "Mayuko wore a flower crown.",
+      "id": "Mayuko mengenakan mahkota bunga.",
       "level": "n2",
       "tags": [
         "umum"
@@ -16533,7 +16797,7 @@ window.vocabN2_Nouns = [
   "word": "漢和",
   "reading": "かんわ",
   "romaji": "kanwa",
-  "meaning_id": "Chinese Character-Japanese (e.g. dictionary)",
+  "meaning_id": "Karakter Cina-Jepang (misalnya kamus)",
   "meaning_en": "Chinese Character-Japanese (e.g. dictionary)",
   "jlpt": "n2",
   "pos": "noun",
@@ -16558,8 +16822,9 @@ window.vocabN2_Nouns = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"カ＼ンワ"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -16575,7 +16840,7 @@ window.vocabN2_Nouns = [
   "word": "気圧",
   "reading": "きあつ",
   "romaji": "kiatsu",
-  "meaning_id": "atmospheric pressure",
+  "meaning_id": "tekanan atmosfer",
   "meaning_en": "atmospheric pressure",
   "jlpt": "n2",
   "pos": "noun",
@@ -16596,15 +16861,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "飛行機でお酒飲むと、気圧のせいか酔いやすい。",
-      "id": "Maybe it's the low air pressure that means you get drunk more easily on planes.",
+      "id": "Mungkin tekanan udara yang rendah membuat Anda lebih mudah mabuk di pesawat.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"キアツ￣"}
+},
     {
       "jp": "ただし押し込む瞬間気圧の変化のせいでしょうか、耳がツンとするのが難点です。",
-      "id": "However, maybe from the sudden change in pressure when you push them in, having your ears pop is a problem.",
+      "id": "Namun, mungkin karena perubahan tekanan yang tiba-tiba saat Anda menekannya, telinga Anda akan pecah-pecah adalah suatu masalah.",
       "level": "n2",
       "tags": [
         "umum"
@@ -16625,7 +16891,7 @@ window.vocabN2_Nouns = [
   "word": "器械",
   "reading": "きかい",
   "romaji": "kikai",
-  "meaning_id": "instrument",
+  "meaning_id": "instrumen",
   "meaning_en": "instrument",
   "jlpt": "n2",
   "pos": "noun",
@@ -16646,15 +16912,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "彼はその新しい機械を試してみた。",
-      "id": "He tried out that new machine.",
+      "id": "Dia mencoba mesin baru itu.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"キカ＼イ"}
+},
     {
       "jp": "機械は油がきれてキイキイいった。",
-      "id": "The machine squealed for lack of oil.",
+      "id": "Mesin itu menjerit karena kekurangan oli.",
       "level": "n2",
       "tags": [
         "umum"
@@ -16675,7 +16942,7 @@ window.vocabN2_Nouns = [
   "word": "機関車",
   "reading": "きかんしゃ",
   "romaji": "kikansha",
-  "meaning_id": "locomotive; engine",
+  "meaning_id": "lokomotif; mesin",
   "meaning_en": "locomotive; engine",
   "jlpt": "n2",
   "pos": "noun",
@@ -16696,12 +16963,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "機関車は長い貨物車の列を引っ張って走っていた。",
-      "id": "The locomotive was pulling a long line of freight cars.",
+      "id": "Lokomotif itu sedang menarik barisan panjang gerbong barang.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":4,"downstep_mora":2,"contour":"キカ＼ンシャ"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -16717,7 +16985,7 @@ window.vocabN2_Nouns = [
   "word": "飢饉",
   "reading": "ききん",
   "romaji": "kikin",
-  "meaning_id": "famine",
+  "meaning_id": "kelaparan",
   "meaning_en": "famine",
   "jlpt": "n2",
   "pos": "noun",
@@ -16738,15 +17006,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "これらの国はしばしば飢饉に襲われた。",
-      "id": "These countries were often visited with famine.",
+      "id": "Negara-negara ini sering dilanda kelaparan.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"キキ＼ン"}
+},
     {
       "jp": "その長い干ばつの後に飢饉が起こった。",
-      "id": "The long drought was followed by famine.",
+      "id": "Kemarau panjang disusul dengan kelaparan.",
       "level": "n2",
       "tags": [
         "umum"
@@ -16767,7 +17036,7 @@ window.vocabN2_Nouns = [
   "word": "器具",
   "reading": "きぐ",
   "romaji": "kigu",
-  "meaning_id": "utensil",
+  "meaning_id": "perkakas",
   "meaning_en": "utensil",
   "jlpt": "n2",
   "pos": "noun",
@@ -16788,15 +17057,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "これは主婦の手間を省く便利な器具です。",
-      "id": "Ini adalah a great time-saving gadget for the housewife.",
+      "id": "Ini adalah a great tisaving gadget for the housewife.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":2,"downstep_mora":1,"contour":"キ＼グ"}
+},
     {
       "jp": "温度計は温度を測る器具です。",
-      "id": "The thermometer is an instrument for measuring temperature.",
+      "id": "Termometer adalah alat untuk mengukur suhu.",
       "level": "n2",
       "tags": [
         "umum"
@@ -16817,7 +17087,7 @@ window.vocabN2_Nouns = [
   "word": "期限",
   "reading": "きげん",
   "romaji": "kigen",
-  "meaning_id": "term; period",
+  "meaning_id": "jangka waktu; periode",
   "meaning_en": "term; period",
   "jlpt": "n2",
   "pos": "noun",
@@ -16838,15 +17108,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "期限前にこの仕事を仕上げなさい。",
-      "id": "You must get the job done before the deadline.",
+      "id": "Anda harus menyelesaikan pekerjaan sebelum batas waktu.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"キ＼ゲン"}
+},
     {
       "jp": "すべてのレポートは期限を守って提出されなければならない。",
-      "id": "All essays must be handed in on time.",
+      "id": "Semua esai harus diserahkan tepat waktu.",
       "level": "n2",
       "tags": [
         "umum"
@@ -16867,7 +17138,7 @@ window.vocabN2_Nouns = [
   "word": "記号",
   "reading": "きごう",
   "romaji": "kigou",
-  "meaning_id": "symbol; code",
+  "meaning_id": "simbol; kode",
   "meaning_en": "symbol; code",
   "jlpt": "n2",
   "pos": "noun",
@@ -16888,15 +17159,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "＆という記号は、ａｎｄを指す。",
-      "id": "The sign '&' stands for 'and'.",
+      "id": "Tanda '&' berarti 'dan'.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"キゴウ￣"}
+},
     {
       "jp": "この記号は何を表すのかわかりません。",
-      "id": "I don't know what this symbol stands for.",
+      "id": "Saya tidak tahu apa arti simbol ini.",
       "level": "n2",
       "tags": [
         "umum"
@@ -16938,15 +17210,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "この儀式は幾世代にもわたって伝わってきた。",
-      "id": "This ceremony has been handed down from generation to generation.",
+      "id": "Upacara ini sudah dilakukan secara turun temurun.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"ギ＼シキ"}
+},
     {
       "jp": "儀式は彼の話から始まった。",
-      "id": "The ceremony began with his speech.",
+      "id": "Upacara diawali dengan sambutannya.",
       "level": "n2",
       "tags": [
         "umum"
@@ -16967,7 +17240,7 @@ window.vocabN2_Nouns = [
   "word": "基礎",
   "reading": "きそ",
   "romaji": "kiso",
-  "meaning_id": "foundation; basis",
+  "meaning_id": "yayasan; dasar",
   "meaning_en": "foundation; basis",
   "jlpt": "n2",
   "pos": "noun",
@@ -16988,15 +17261,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "その考えが彼の理論の基礎となっている。",
-      "id": "The idea underlies his theory.",
+      "id": "Ide tersebut mendasari teorinya.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":2,"downstep_mora":1,"contour":"キ＼ソ"}
+},
     {
       "jp": "数学はすべての科学の基礎である。",
-      "id": "Mathematics is basic to all sciences.",
+      "id": "Matematika adalah dasar bagi semua ilmu pengetahuan.",
       "level": "n2",
       "tags": [
         "umum"
@@ -17017,7 +17291,7 @@ window.vocabN2_Nouns = [
   "word": "気体",
   "reading": "きたい",
   "romaji": "kitai",
-  "meaning_id": "vapour; gas",
+  "meaning_id": "uap; gas",
   "meaning_en": "vapour; gas",
   "jlpt": "n2",
   "pos": "noun",
@@ -17038,15 +17312,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "その気体は悪臭を放つ。",
-      "id": "This gas gives off a bad smell.",
+      "id": "Gas ini mengeluarkan bau yang tidak sedap.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"キタイ￣"}
+},
     {
       "jp": "空気はさまざまな気体の混合物である。",
-      "id": "Air is a mixture of various gases.",
+      "id": "Udara merupakan campuran berbagai gas.",
       "level": "n2",
       "tags": [
         "umum"
@@ -17067,7 +17342,7 @@ window.vocabN2_Nouns = [
   "word": "基地",
   "reading": "きち",
   "romaji": "kichi",
-  "meaning_id": "base",
+  "meaning_id": "dasar",
   "meaning_en": "base",
   "jlpt": "n2",
   "pos": "noun",
@@ -17088,15 +17363,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "この近くに軍の基地がある。",
-      "id": "Ada a military base near here.",
+      "id": "Ada pangkalan militer di dekat sini.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":2,"downstep_mora":1,"contour":"キ＼チ"}
+},
     {
       "jp": "昨日、彼は基地に帰らなかった。",
-      "id": "He didn't come back to the base yesterday.",
+      "id": "Dia tidak kembali ke markas kemarin.",
       "level": "n2",
       "tags": [
         "umum"
@@ -17138,15 +17414,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "彼等は彼に逃げるきっかけを与えた。",
-      "id": "They gave him a chance to escape.",
+      "id": "Mereka memberinya kesempatan untuk melarikan diri.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"キッカケ￣"}
+},
     {
       "jp": "私の意見がそのグループでの議論のきっかけになった。",
-      "id": "My comment sparked off an argument in the group.",
+      "id": "Komentar saya memicu pertengkaran di grup.",
       "level": "n2",
       "tags": [
         "umum"
@@ -17167,7 +17444,7 @@ window.vocabN2_Nouns = [
   "word": "基盤",
   "reading": "きばん",
   "romaji": "kiban",
-  "meaning_id": "foundation; basis",
+  "meaning_id": "yayasan; dasar",
   "meaning_en": "foundation; basis",
   "jlpt": "n2",
   "pos": "noun",
@@ -17188,15 +17465,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "日記が彼女が後に書いた本の基盤となった。",
-      "id": "Her diaries formed the basis of the book she later wrote.",
+      "id": "Buku hariannya menjadi dasar buku yang kemudian dia tulis.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"キバン￣"}
+},
     {
       "jp": "自由諸国の基盤は民主主義である。",
-      "id": "The foundation of free nations is democracy.",
+      "id": "Landasan negara bebas adalah demokrasi.",
       "level": "n2",
       "tags": [
         "umum"
@@ -17217,7 +17495,7 @@ window.vocabN2_Nouns = [
   "word": "客席",
   "reading": "きゃくせき",
   "romaji": "kyakuseki",
-  "meaning_id": "guest seating",
+  "meaning_id": "tempat duduk tamu",
   "meaning_en": "guest seating",
   "jlpt": "n2",
   "pos": "noun",
@@ -17238,12 +17516,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "このお庭の方にね。縁台を出して客席を増やしたいんです。こんな感じに。",
-      "id": "In the garden, you know. I'd like to put out benches and increase the customer seating. Like this ...",
+      "id": "Di taman, lho. Saya ingin memasang bangku dan menambah tempat duduk pelanggan. Seperti ini...",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"キャクセキ￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -17259,7 +17538,7 @@ window.vocabN2_Nouns = [
   "word": "客間",
   "reading": "きゃくま",
   "romaji": "kyakuma",
-  "meaning_id": "parlor; guest room",
+  "meaning_id": "ruang tamu",
   "meaning_en": "parlor; guest room",
   "jlpt": "n2",
   "pos": "noun",
@@ -17280,15 +17559,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "この書斎は客間兼用だ。",
-      "id": "I also use this study for receiving guests.",
+      "id": "Saya juga menggunakan ruang belajar ini untuk menerima tamu.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"キャクマ￣"}
+},
     {
       "jp": "夜遅くに、若い男は少女とふたりきりで長い間客間に座っていた。",
-      "id": "The young man had been sitting in the drawing room alone with the girl for a long time, and it was getting late.",
+      "id": "Pemuda itu sudah lama duduk di ruang tamu sendirian bersama gadis itu, dan hari sudah larut.",
       "level": "n2",
       "tags": [
         "umum"
@@ -17309,7 +17589,7 @@ window.vocabN2_Nouns = [
   "word": "ギャング",
   "reading": "ギャング",
   "romaji": "gyangu",
-  "meaning_id": "gang",
+  "meaning_id": "geng",
   "meaning_en": "gang",
   "jlpt": "n2",
   "pos": "noun",
@@ -17330,12 +17610,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "ギャングの一団が金を盗んだ。",
-      "id": "A group of gangsters stole the money.",
+      "id": "Sekelompok gangster mencuri uang tersebut.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":0,"downstep_mora":1,"contour":"＼"}
+},
     {
       "jp": "ギャング仲間の間ではダンで通っていた。",
       "id": "Among the gangsters he went by Dan.",
@@ -17359,7 +17640,7 @@ window.vocabN2_Nouns = [
   "word": "キャンパス",
   "reading": "キャンパス",
   "romaji": "kyanpasu",
-  "meaning_id": "campus",
+  "meaning_id": "kampus",
   "meaning_en": "campus",
   "jlpt": "n2",
   "pos": "noun",
@@ -17380,15 +17661,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "彼女は私を連れてキャンパスを案内してくれた。",
-      "id": "She showed me around the campus.",
+      "id": "Dia mengajakku berkeliling kampus.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":0,"downstep_mora":1,"contour":"＼"}
+},
     {
       "jp": "キャンパスを案内してもらえますか。",
-      "id": "Could you show me the campus?",
+      "id": "Bisakah Anda menunjukkan kampusnya kepada saya?",
       "level": "n2",
       "tags": [
         "umum"
@@ -17409,7 +17691,7 @@ window.vocabN2_Nouns = [
   "word": "境界",
   "reading": "きょうかい",
   "romaji": "kyoukai",
-  "meaning_id": "boundary",
+  "meaning_id": "batas",
   "meaning_en": "boundary",
   "jlpt": "n2",
   "pos": "noun",
@@ -17430,15 +17712,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "彼らは境界を越えてスペインに入った。",
-      "id": "They crossed the border into Spain.",
+      "id": "Mereka melintasi perbatasan ke Spanyol.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"キョウカイ￣"}
+},
     {
       "jp": "彼らは石を並べて家の敷地の境界にした。",
-      "id": "They marked off the land for their house with rows of stones.",
+      "id": "Mereka menandai tanah untuk rumah mereka dengan deretan batu.",
       "level": "n2",
       "tags": [
         "umum"
@@ -17459,7 +17742,7 @@ window.vocabN2_Nouns = [
   "word": "行事",
   "reading": "ぎょうじ",
   "romaji": "gyouji",
-  "meaning_id": "event; function",
+  "meaning_id": "acara; fungsi",
   "meaning_en": "event; function",
   "jlpt": "n2",
   "pos": "noun",
@@ -17484,11 +17767,12 @@ window.vocabN2_Nouns = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"ギョ＼ウジ"}
+},
     {
       "jp": "それはわくわくする夜の行事です。",
-      "id": "It is an exciting night event.",
+      "id": "Ini adalah acara malam yang menarik.",
       "level": "n2",
       "tags": [
         "umum"
@@ -17530,12 +17814,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "その医者は教養のある人だ。",
-      "id": "The doctor is a man of culture.",
+      "id": "Dokter adalah orang yang berbudaya.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"キョウヨウ￣"}
+},
     {
       "jp": "彼女はいわゆる教養のある女性です。",
       "id": "Dia what is called a woman of culture.",
@@ -17559,7 +17844,7 @@ window.vocabN2_Nouns = [
   "word": "漁業",
   "reading": "ぎょぎょう",
   "romaji": "gyogyou",
-  "meaning_id": "fishing (industry)",
+  "meaning_id": "perikanan (industri)",
   "meaning_en": "fishing (industry)",
   "jlpt": "n2",
   "pos": "noun",
@@ -17580,15 +17865,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "その島には漁業を営む人たちが住んでいた。",
-      "id": "The island was inhabited by a fishing people.",
+      "id": "Pulau ini dihuni oleh masyarakat nelayan.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"ギョ＼ギョウ"}
+},
     {
       "jp": "その島の経済は漁業に依存している。",
-      "id": "The economy of the island is dependent on the fishing industry.",
+      "id": "Perekonomian pulau ini bergantung pada industri perikanan.",
       "level": "n2",
       "tags": [
         "umum"
@@ -17609,7 +17895,7 @@ window.vocabN2_Nouns = [
   "word": "曲線",
   "reading": "きょくせん",
   "romaji": "kyokusen",
-  "meaning_id": "curve",
+  "meaning_id": "kurva",
   "meaning_en": "curve",
   "jlpt": "n2",
   "pos": "noun",
@@ -17630,15 +17916,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "本当の女性には曲線がある。",
-      "id": "Real women have curves.",
+      "id": "Wanita sejati memiliki lekuk tubuh.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"キョクセン￣"}
+},
     {
       "jp": "新幹線の先頭車両の曲線は、職人がひとつひとつ手作業で仕上げています。",
-      "id": "A craftsman manually adds the finishing touches to each curve of a bullet train's lead car.",
+      "id": "Seorang pengrajin secara manual menambahkan sentuhan akhir pada setiap lekukan gerbong utama kereta peluru.",
       "level": "n2",
       "tags": [
         "umum"
@@ -17680,15 +17967,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "この学校は規律がやや緩やかだ。",
-      "id": "Discipline is rather mild at this school.",
+      "id": "Disiplin agak ringan di sekolah ini.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"キリツ￣"}
+},
     {
       "jp": "生徒の中には規律を守るのが大変なものもいる。",
-      "id": "Some pupils find it difficult to follow the rules.",
+      "id": "Beberapa siswa merasa sulit untuk menaati peraturan.",
       "level": "n2",
       "tags": [
         "umum"
@@ -17709,7 +17997,7 @@ window.vocabN2_Nouns = [
   "word": "金魚",
   "reading": "きんぎょ",
   "romaji": "kingyo",
-  "meaning_id": "goldfish",
+  "meaning_id": "ikan mas",
   "meaning_en": "goldfish",
   "jlpt": "n2",
   "pos": "noun",
@@ -17730,12 +18018,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "金魚に餌をやってるの。",
-      "id": "I'm feeding the goldfish.",
+      "id": "Saya sedang memberi makan ikan mas.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"キ＼ンギョ"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -17772,15 +18061,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "駐車禁止区域に車を止めてはいけません。",
-      "id": "You must not park your car in a no parking zone.",
+      "id": "Anda tidak boleh memarkir mobil Anda di zona dilarang parkir.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"ク＼イキ"}
+},
     {
       "jp": "府県はフランスや日本の行政区域である。",
-      "id": "Prefectures are governmental divisions of France and Japan.",
+      "id": "Prefektur adalah divisi pemerintahan Perancis dan Jepang.",
       "level": "n2",
       "tags": [
         "umum"
@@ -17801,7 +18091,7 @@ window.vocabN2_Nouns = [
   "word": "偶数",
   "reading": "ぐうすう",
   "romaji": "guusuu",
-  "meaning_id": "even number",
+  "meaning_id": "bilangan genap",
   "meaning_en": "even number",
   "jlpt": "n2",
   "pos": "noun",
@@ -17822,15 +18112,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "２、４、６などは偶数です。",
-      "id": "Two, four, six, etc. are even numbers.",
+      "id": "Dua, empat, enam, dst adalah bilangan genap.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"グウス＼ウ"}
+},
     {
       "jp": "１２は偶数である。",
-      "id": "Twelve is an even number.",
+      "id": "Dua belas adalah bilangan genap.",
       "level": "n2",
       "tags": [
         "umum"
@@ -17851,7 +18142,7 @@ window.vocabN2_Nouns = [
   "word": "空中",
   "reading": "くうちゅう",
   "romaji": "kuuchuu",
-  "meaning_id": "sky; air",
+  "meaning_id": "langit; udara",
   "meaning_en": "sky; air",
   "jlpt": "n2",
   "pos": "noun",
@@ -17872,15 +18163,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "煙は空中へと舞い上がった。",
-      "id": "The smoke ascended into the air.",
+      "id": "Asap membubung ke udara.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"クウチュウ￣"}
+},
     {
       "jp": "葉が空中でぐるぐる回っていた。",
-      "id": "Leaves were whirling in the air.",
+      "id": "Dedaunan berputar-putar di udara.",
       "level": "n2",
       "tags": [
         "umum"
@@ -17901,7 +18193,7 @@ window.vocabN2_Nouns = [
   "word": "クーラー",
   "reading": "クーラー",
   "romaji": "kuuraa",
-  "meaning_id": "cooler; air conditioner",
+  "meaning_id": "lebih dingin; AC",
   "meaning_en": "cooler; air conditioner",
   "jlpt": "n2",
   "pos": "noun",
@@ -17922,15 +18214,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "うちのクーラーが故障してしまった。",
-      "id": "The air conditioner is out of order.",
+      "id": "AC rusak.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":0,"downstep_mora":1,"contour":"＼"}
+},
     {
       "jp": "クーラーを入れていただけますか。",
-      "id": "Would you put on the air conditioning?",
+      "id": "Maukah Anda menyalakan AC?",
       "level": "n2",
       "tags": [
         "umum"
@@ -17951,7 +18244,7 @@ window.vocabN2_Nouns = [
   "word": "釘",
   "reading": "くぎ",
   "romaji": "kugi",
-  "meaning_id": "nail",
+  "meaning_id": "paku",
   "meaning_en": "nail",
   "jlpt": "n2",
   "pos": "noun",
@@ -17972,15 +18265,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "その板に釘を打ってください。",
-      "id": "Drive the nail into the board.",
+      "id": "Tancapkan paku ke papan.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":2,"downstep_mora":0,"contour":"クギ￣"}
+},
     {
       "jp": "セーターをあの釘にひっかけちゃった。",
-      "id": "I caught my sweater on that nail.",
+      "id": "Aku tersangkut sweterku di paku itu.",
       "level": "n2",
       "tags": [
         "umum"
@@ -18001,7 +18295,7 @@ window.vocabN2_Nouns = [
   "word": "櫛",
   "reading": "くし",
   "romaji": "kushi",
-  "meaning_id": "comb",
+  "meaning_id": "sisir",
   "meaning_en": "comb",
   "jlpt": "n2",
   "pos": "noun",
@@ -18022,15 +18316,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "外出する前に髪を櫛でときなさい。",
-      "id": "Comb your hair before you go out.",
+      "id": "Sisir rambut Anda sebelum keluar.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"odaka","mora_count":2,"downstep_mora":2,"contour":"クシ＼"}
+},
     {
       "jp": "私は木のくしを持っています。",
-      "id": "I have a wooden comb.",
+      "id": "Saya punya sisir kayu.",
       "level": "n2",
       "tags": [
         "umum"
@@ -18072,15 +18367,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "私はあなたの苦情について書いている。",
-      "id": "I am writing in relation to your complaint.",
+      "id": "Saya menulis sehubungan dengan keluhan Anda.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"クジョウ￣"}
+},
     {
       "jp": "彼女は支配人にサービスが悪いと苦情を言った。",
-      "id": "She complained to the manager about the service.",
+      "id": "Dia mengeluh kepada manajer tentang layanan tersebut.",
       "level": "n2",
       "tags": [
         "umum"
@@ -18101,7 +18397,7 @@ window.vocabN2_Nouns = [
   "word": "屑",
   "reading": "くず",
   "romaji": "kuzu",
-  "meaning_id": "waste; scrap",
+  "meaning_id": "limbah; memo",
   "meaning_en": "waste; scrap",
   "jlpt": "n2",
   "pos": "noun",
@@ -18122,12 +18418,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "ラップは屑だ。",
-      "id": "Rap is crap.",
+      "id": "Rap itu omong kosong.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":2,"downstep_mora":1,"contour":"ク＼ズ"}
+},
     {
       "jp": "残飯の屑は害虫の住処になる。",
       "id": "Garbage harbors vermin.",
@@ -18151,7 +18448,7 @@ window.vocabN2_Nouns = [
   "word": "薬指",
   "reading": "くすりゆび",
   "romaji": "kusuriyubi",
-  "meaning_id": "ring finger",
+  "meaning_id": "jari manis",
   "meaning_en": "ring finger",
   "jlpt": "n2",
   "pos": "noun",
@@ -18172,12 +18469,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "彼女は左手の薬指にダイヤの指輪をはめていた。",
-      "id": "She wore a diamond ring on her left third finger.",
+      "id": "Dia mengenakan cincin berlian di jari ketiga kirinya.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":5,"downstep_mora":3,"contour":"クスリ＼ユビ"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -18193,7 +18491,7 @@ window.vocabN2_Nouns = [
   "word": "唇",
   "reading": "くちびる",
   "romaji": "kuchibiru",
-  "meaning_id": "lips",
+  "meaning_id": "bibir",
   "meaning_en": "lips",
   "jlpt": "n2",
   "pos": "noun",
@@ -18214,15 +18512,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "冬は唇があれます。",
-      "id": "In winter, our lips get chapped.",
+      "id": "Di musim dingin, bibir kita pecah-pecah.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"クチビル￣"}
+},
     {
       "jp": "ナプキンで唇をきれいにしなさい。",
-      "id": "Clean your lips with the napkin.",
+      "id": "Bersihkan bibir Anda dengan serbet.",
       "level": "n2",
       "tags": [
         "umum"
@@ -18243,7 +18542,7 @@ window.vocabN2_Nouns = [
   "word": "口紅",
   "reading": "くちべに",
   "romaji": "kuchibeni",
-  "meaning_id": "lipstick",
+  "meaning_id": "lipstik",
   "meaning_en": "lipstick",
   "jlpt": "n2",
   "pos": "noun",
@@ -18264,15 +18563,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "ブライアンはケイトのために口紅を買った。",
-      "id": "Brian bought a lipstick for Kate.",
+      "id": "Brian membelikan lipstik untuk Kate.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"クチベニ￣"}
+},
     {
       "jp": "彼女は口紅をたくさんつけていた。",
-      "id": "There was much lipstick on her lips.",
+      "id": "Ada banyak lipstik di bibirnya.",
       "level": "n2",
       "tags": [
         "umum"
@@ -18293,7 +18593,7 @@ window.vocabN2_Nouns = [
   "word": "句読点",
   "reading": "くとうてん",
   "romaji": "kutouten",
-  "meaning_id": "punctuation marks",
+  "meaning_id": "tanda baca",
   "meaning_en": "punctuation marks",
   "jlpt": "n2",
   "pos": "noun",
@@ -18314,15 +18614,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "クエスチョンマークは句読点です。",
-      "id": "A question mark is a punctuation mark.",
+      "id": "Tanda tanya adalah tanda baca.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":5,"downstep_mora":2,"contour":"クト＼ウテン"}
+},
     {
       "jp": "びっくりマークは句読点です。",
-      "id": "An exclamation mark is a punctuation mark.",
+      "id": "Tanda seru adalah tanda baca.",
       "level": "n2",
       "tags": [
         "umum"
@@ -18343,7 +18644,7 @@ window.vocabN2_Nouns = [
   "word": "組合せ",
   "reading": "くみあわせ",
   "romaji": "kumiawase",
-  "meaning_id": "combination",
+  "meaning_id": "kombinasi",
   "meaning_en": "combination",
   "jlpt": "n2",
   "pos": "noun",
@@ -18364,12 +18665,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "一国にとって金融政策と財政政策の適切な組み合わせが大切である。",
-      "id": "It is important for a nation to have an adequate mix of monetary and fiscal policies.",
+      "id": "Penting bagi suatu negara untuk memiliki perpaduan kebijakan moneter dan fiskal yang memadai.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":5,"downstep_mora":0,"contour":"クミアワセ￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -18385,7 +18687,7 @@ window.vocabN2_Nouns = [
   "word": "郡",
   "reading": "ぐん",
   "romaji": "gun",
-  "meaning_id": "country; district",
+  "meaning_id": "negara; distrik",
   "meaning_en": "country; district",
   "jlpt": "n2",
   "pos": "noun",
@@ -18410,11 +18712,12 @@ window.vocabN2_Nouns = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":2,"downstep_mora":1,"contour":"グ＼ン"}
+},
     {
       "jp": "その発電所は、その遠く離れた郡に電気を供給している。",
-      "id": "The power plant supplies the remote district with electricity.",
+      "id": "Pembangkit listrik memasok listrik ke distrik terpencil.",
       "level": "n2",
       "tags": [
         "umum"
@@ -18435,7 +18738,7 @@ window.vocabN2_Nouns = [
   "word": "敬語",
   "reading": "けいご",
   "romaji": "keigo",
-  "meaning_id": "honorific; term of respect",
+  "meaning_id": "kehormatan; istilah penghormatan",
   "meaning_en": "honorific; term of respect",
   "jlpt": "n2",
   "pos": "noun",
@@ -18456,15 +18759,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "日本語には敬語があります。",
-      "id": "The Japanese language has honorific expressions.",
+      "id": "Bahasa Jepang mempunyai ekspresi kehormatan.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ケイゴ￣"}
+},
     {
       "jp": "最近、目上の人に敬語を使わない若者が多い。",
-      "id": "Recently there are a lot of young people who don't use respectful language to their superiors.",
+      "id": "Belakangan ini banyak sekali generasi muda yang tidak menggunakan bahasa hormat kepada atasannya.",
       "level": "n2",
       "tags": [
         "umum"
@@ -18485,7 +18789,7 @@ window.vocabN2_Nouns = [
   "word": "蛍光灯",
   "reading": "けいこうとう",
   "romaji": "keikoutou",
-  "meaning_id": "fluorescent lamp; person who is slow to react",
+  "meaning_id": "lampu neon; orang yang lambat bereaksi",
   "meaning_en": "fluorescent lamp; person who is slow to react",
   "jlpt": "n2",
   "pos": "noun",
@@ -18506,15 +18810,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "ハリーは本当に蛍光灯だね。",
-      "id": "Harry's really slow to catch on.",
+      "id": "Harry sangat lambat untuk menangkapnya.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":6,"downstep_mora":0,"contour":"ケイコウトウ￣"}
+},
     {
       "jp": "蛍光灯がチカチカしてるな。新しいのと交換しないとダメかな。",
-      "id": "This fluorescent lamp is starting to flicker. We'll have to replace it.",
+      "id": "Lampu neon ini mulai berkedip. Kita harus menggantinya.",
       "level": "n2",
       "tags": [
         "umum"
@@ -18556,15 +18861,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "彼はそれを小説の形式で表した。",
-      "id": "He expressed it in the form of fiction.",
+      "id": "Ia mengungkapkannya dalam bentuk fiksi.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ケイシキ￣"}
+},
     {
       "jp": "朝食はバイキング形式だって。",
-      "id": "Breakfast is a smorgasbord.",
+      "id": "Sarapan adalah hamparan.",
       "level": "n2",
       "tags": [
         "umum"
@@ -18585,7 +18891,7 @@ window.vocabN2_Nouns = [
   "word": "毛糸",
   "reading": "けいと",
   "romaji": "keito",
-  "meaning_id": "knitting wool",
+  "meaning_id": "merajut wol",
   "meaning_en": "knitting wool",
   "jlpt": "n2",
   "pos": "noun",
@@ -18606,12 +18912,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "赤ん坊が毛糸の玉をもつれさせた。",
-      "id": "The baby tangled the ball of yarn.",
+      "id": "Bayi itu menyibakkan bola benang.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ケイト￣"}
+},
     {
       "jp": "彼女は毛糸でセーターを編んでいる。",
       "id": "Dia knitting a sweater.",
@@ -18635,7 +18942,7 @@ window.vocabN2_Nouns = [
   "word": "経度",
   "reading": "けいど",
   "romaji": "keido",
-  "meaning_id": "longitude",
+  "meaning_id": "garis bujur",
   "meaning_en": "longitude",
   "jlpt": "n2",
   "pos": "noun",
@@ -18656,15 +18963,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "赤道における経度1度当たりの長さ。",
-      "id": "Distance per degree of longitude at equator.",
+      "id": "Jarak per derajat bujur di ekuator.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"ケ＼イド"}
+},
     {
       "jp": "この線は経度を表している。",
-      "id": "This line represents the longitude.",
+      "id": "Garis ini mewakili garis bujur.",
       "level": "n2",
       "tags": [
         "umum"
@@ -18706,12 +19014,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "システムのこの予測されなかった機能不全は不適切な配線系統によって引き起こされた。",
-      "id": "This unexpected malfunctioning of the system was caused by improper wiring.",
+      "id": "Kerusakan sistem yang tidak terduga ini disebabkan oleh pemasangan kabel yang tidak tepat.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ケイトウ￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -18752,8 +19061,9 @@ window.vocabN2_Nouns = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ゲイノウ￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -18769,7 +19079,7 @@ window.vocabN2_Nouns = [
   "word": "競馬",
   "reading": "けいば",
   "romaji": "keiba",
-  "meaning_id": "horse racing",
+  "meaning_id": "balap kuda",
   "meaning_en": "horse racing",
   "jlpt": "n2",
   "pos": "noun",
@@ -18790,15 +19100,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "ダービー競馬の日は２週間後の水曜日だ。",
-      "id": "Derby Day is Wednesday fortnight.",
+      "id": "Derby Day adalah hari Rabu dua minggu.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ケイバ￣"}
+},
     {
       "jp": "彼は競馬で時間をむだに過ごした。",
-      "id": "He wasted his time on gambling at the horse races.",
+      "id": "Dia menyia-nyiakan waktunya untuk berjudi di pacuan kuda.",
       "level": "n2",
       "tags": [
         "umum"
@@ -18819,7 +19130,7 @@ window.vocabN2_Nouns = [
   "word": "形容詞",
   "reading": "けいようし",
   "romaji": "keiyoushi",
-  "meaning_id": "true adjective",
+  "meaning_id": "kata sifat yang sebenarnya",
   "meaning_en": "true adjective",
   "jlpt": "n2",
   "pos": "noun",
@@ -18844,11 +19155,12 @@ window.vocabN2_Nouns = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":5,"downstep_mora":3,"contour":"ケイヨ＼ウシ"}
+},
     {
       "jp": "名詞を修飾するものは、形容詞または形容詞相当語句です。",
-      "id": "Things that modify nouns are adjectives or equivalent to adjectives.",
+      "id": "Hal-hal yang memodifikasi kata benda adalah kata sifat atau setara dengan kata sifat.",
       "level": "n2",
       "tags": [
         "umum"
@@ -18869,7 +19181,7 @@ window.vocabN2_Nouns = [
   "word": "形容動詞",
   "reading": "けいようどうし",
   "romaji": "keiyoudoushi",
-  "meaning_id": "adjectival noun; quasi-adjective",
+  "meaning_id": "kata benda kata sifat; kata sifat semu",
   "meaning_en": "adjectival noun; quasi-adjective",
   "jlpt": "n2",
   "pos": "noun",
@@ -18894,8 +19206,9 @@ window.vocabN2_Nouns = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":5,"category":"nakadaka","mora_count":7,"downstep_mora":5,"contour":"ケイヨウド＼ウシ"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -18911,7 +19224,7 @@ window.vocabN2_Nouns = [
   "word": "外科",
   "reading": "げか",
   "romaji": "geka",
-  "meaning_id": "surgical department",
+  "meaning_id": "departemen bedah",
   "meaning_en": "surgical department",
   "jlpt": "n2",
   "pos": "noun",
@@ -18932,15 +19245,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "外科へ行ってください。",
-      "id": "Tolong go to the Surgery Department.",
+      "id": "Tolong pergi ke Departemen Bedah.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":2,"downstep_mora":0,"contour":"ゲカ￣"}
+},
     {
       "jp": "彼は外科手術の為入院した。",
-      "id": "He was hospitalized for a surgical operation.",
+      "id": "Dia dirawat di rumah sakit untuk operasi bedah.",
       "level": "n2",
       "tags": [
         "umum"
@@ -18986,11 +19300,12 @@ window.vocabN2_Nouns = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ケガワ￣"}
+},
     {
       "jp": "毛皮を脱いでどうぞ楽にして下さい。",
-      "id": "Take off your fur, and make yourself at home.",
+      "id": "Lepaskan bulu Anda, dan anggap seperti rumah sendiri.",
       "level": "n2",
       "tags": [
         "umum"
@@ -19011,7 +19326,7 @@ window.vocabN2_Nouns = [
   "word": "下旬",
   "reading": "げじゅん",
   "romaji": "gejun",
-  "meaning_id": "month (last third of)",
+  "meaning_id": "bulan (sepertiga terakhir)",
   "meaning_en": "month (last third of)",
   "jlpt": "n2",
   "pos": "noun",
@@ -19032,15 +19347,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "８月下旬に彼らは繁殖のために長い旅に出発します。",
-      "id": "In late August, they set off on a long journey for breeding.",
+      "id": "Pada akhir Agustus, mereka memulai perjalanan panjang untuk berkembang biak.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ゲジュン￣"}
+},
     {
       "jp": "その結果、５月下旬に不安神経症や不眠症と診断された。",
-      "id": "As a result, he was diagnosed with insomnia and anxiety neurosis near the end of May.",
+      "id": "Akibatnya, ia didiagnosis menderita insomnia dan neurosis kecemasan menjelang akhir Mei.",
       "level": "n2",
       "tags": [
         "umum"
@@ -19082,15 +19398,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "下水が完全に詰まっている。",
-      "id": "The drains are blocked up.",
+      "id": "Saluran air tersumbat.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ゲスイ￣"}
+},
     {
       "jp": "下水の通りがよくなった。",
-      "id": "The drain is running freely.",
+      "id": "Saluran pembuangan mengalir dengan bebas.",
       "level": "n2",
       "tags": [
         "umum"
@@ -19132,15 +19449,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "医者なら６桁の収入は珍しくない。",
-      "id": "A six-figure income is not uncommon for physicians.",
+      "id": "Pendapatan enam digit bukanlah hal yang aneh bagi para dokter.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":2,"downstep_mora":0,"contour":"ケタ￣"}
+},
     {
       "jp": "この２桁は省くべきだ。",
-      "id": "You should leave out these two lines.",
+      "id": "Anda harus menghilangkan dua baris ini.",
       "level": "n2",
       "tags": [
         "umum"
@@ -19161,7 +19479,7 @@ window.vocabN2_Nouns = [
   "word": "下駄",
   "reading": "げた",
   "romaji": "geta",
-  "meaning_id": "geta (Japanese footwear); wooden clogs",
+  "meaning_id": "geta (alas kaki Jepang); bakiak kayu",
   "meaning_en": "geta (Japanese footwear); wooden clogs",
   "jlpt": "n2",
   "pos": "noun",
@@ -19182,12 +19500,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "下駄を突っかけて表に飛び出した。",
-      "id": "I slipped on my geta and dashed outside.",
+      "id": "Aku memakai getaku dan berlari keluar.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":2,"downstep_mora":0,"contour":"ゲタ￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -19203,7 +19522,7 @@ window.vocabN2_Nouns = [
   "word": "血圧",
   "reading": "けつあつ",
   "romaji": "ketsuatsu",
-  "meaning_id": "blood pressure",
+  "meaning_id": "tekanan darah",
   "meaning_en": "blood pressure",
   "jlpt": "n2",
   "pos": "noun",
@@ -19224,15 +19543,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "血圧を計りましょう。",
-      "id": "Let me take your blood pressure.",
+      "id": "Biarkan saya mengukur tekanan darah Anda.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ケツアツ￣"}
+},
     {
       "jp": "血圧は上が１５５で下が１０５です。",
-      "id": "My blood pressure is 155 over 105.",
+      "id": "Tekanan darah saya 155 diatas 105.",
       "level": "n2",
       "tags": [
         "umum"
@@ -19253,7 +19573,7 @@ window.vocabN2_Nouns = [
   "word": "血液",
   "reading": "けつえき",
   "romaji": "ketsueki",
-  "meaning_id": "blood",
+  "meaning_id": "darah",
   "meaning_en": "blood",
   "jlpt": "n2",
   "pos": "noun",
@@ -19274,15 +19594,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "赤十字は病院に血液を供給した。",
-      "id": "The Red Cross supplied the hospital with blood.",
+      "id": "Palang Merah memasok darah ke rumah sakit.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":4,"downstep_mora":2,"contour":"ケツ＼エキ"}
+},
     {
       "jp": "血液は体内を循環する。",
-      "id": "Blood circulates through the body.",
+      "id": "Darah beredar ke seluruh tubuh.",
       "level": "n2",
       "tags": [
         "umum"
@@ -19303,7 +19624,7 @@ window.vocabN2_Nouns = [
   "word": "月給",
   "reading": "げっきゅう",
   "romaji": "gekkyuu",
-  "meaning_id": "monthly salary",
+  "meaning_id": "gaji bulanan",
   "meaning_en": "monthly salary",
   "jlpt": "n2",
   "pos": "noun",
@@ -19324,12 +19645,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "私の月給は30万円だ。",
-      "id": "My monthly wage is 300,000 yen.",
+      "id": "Gaji bulanan saya adalah 300.000 yen.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ゲッキュウ￣"}
+},
     {
       "jp": "彼はたくさん月給をもらっている。",
       "id": "Dia paid a handsome monthly salary.",
@@ -19374,15 +19696,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "わははは！そりゃ傑作だ！",
-      "id": "A-ha-ha-ha! What a blunder!",
+      "id": "A-ha-ha-ha! Sebuah kesalahan besar!",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ケッサク￣"}
+},
     {
       "jp": "あの絵画は印象派美術の傑作である。",
-      "id": "That painting is a masterpiece of impressionist art.",
+      "id": "Lukisan itu adalah mahakarya seni impresionis.",
       "level": "n2",
       "tags": [
         "umum"
@@ -19424,15 +19747,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "秋の気配が感じられた。",
-      "id": "There was a hint of fall in the air.",
+      "id": "Ada tanda-tanda kejatuhan di udara.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"ケ＼ハイ"}
+},
     {
       "jp": "その家には人の気配はなかった。",
-      "id": "There was no sign of life in the house.",
+      "id": "Tidak ada tanda-tanda kehidupan di rumah itu.",
       "level": "n2",
       "tags": [
         "umum"
@@ -19453,7 +19777,7 @@ window.vocabN2_Nouns = [
   "word": "原稿",
   "reading": "げんこう",
   "romaji": "genkou",
-  "meaning_id": "manuscript; copy",
+  "meaning_id": "naskah; salin",
   "meaning_en": "manuscript; copy",
   "jlpt": "n2",
   "pos": "noun",
@@ -19474,15 +19798,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "この原稿は書き直したほうがいいな。",
-      "id": "I'd better rewrite this paper.",
+      "id": "Sebaiknya saya menulis ulang makalah ini.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ゲンコウ￣"}
+},
     {
       "jp": "編集者は原稿にさっと目を通した。",
-      "id": "The editor glanced over the manuscript.",
+      "id": "Editor melirik naskahnya.",
       "level": "n2",
       "tags": [
         "umum"
@@ -19503,7 +19828,7 @@ window.vocabN2_Nouns = [
   "word": "原産",
   "reading": "げんさん",
   "romaji": "gensan",
-  "meaning_id": "place of origin; habitat",
+  "meaning_id": "tempat asal; habitat",
   "meaning_en": "place of origin; habitat",
   "jlpt": "n2",
   "pos": "noun",
@@ -19524,12 +19849,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "サツマイモは、南アメリカが原産です。",
-      "id": "The sweet potato is native to South America.",
+      "id": "Ubi jalar berasal dari Amerika Selatan.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ゲンサン￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -19545,7 +19871,7 @@ window.vocabN2_Nouns = [
   "word": "原始",
   "reading": "げんし",
   "romaji": "genshi",
-  "meaning_id": "origin; primeval",
+  "meaning_id": "asal; purba",
   "meaning_en": "origin; primeval",
   "jlpt": "n2",
   "pos": "noun",
@@ -19566,15 +19892,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "その人類学者は原始文化に関する講演をした。",
-      "id": "The anthropologist delivered a lecture on primitive cultures.",
+      "id": "Antropolog menyampaikan ceramah tentang budaya primitif.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"ゲ＼ンシ"}
+},
     {
       "jp": "原始社会では、物々交換が行われた。",
-      "id": "In primitive societies barter was used.",
+      "id": "Dalam masyarakat primitif, barter digunakan.",
       "level": "n2",
       "tags": [
         "umum"
@@ -19595,7 +19922,7 @@ window.vocabN2_Nouns = [
   "word": "県庁",
   "reading": "けんちょう",
   "romaji": "kenchou",
-  "meaning_id": "prefectural office",
+  "meaning_id": "kantor prefektur",
   "meaning_en": "prefectural office",
   "jlpt": "n2",
   "pos": "noun",
@@ -19620,8 +19947,9 @@ window.vocabN2_Nouns = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":4,"downstep_mora":1,"contour":"ケ＼ンチョウ"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -19637,7 +19965,7 @@ window.vocabN2_Nouns = [
   "word": "限度",
   "reading": "げんど",
   "romaji": "gendo",
-  "meaning_id": "limit; bounds",
+  "meaning_id": "membatasi; batas",
   "meaning_en": "limit; bounds",
   "jlpt": "n2",
   "pos": "noun",
@@ -19658,15 +19986,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "物事には限度がある。",
-      "id": "Ada a limit to everything.",
+      "id": "Ada batasan untuk segalanya.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"ゲ＼ンド"}
+},
     {
       "jp": "人間の進歩には限度がない。",
-      "id": "Ada no limit to human progress.",
+      "id": "Tidak ada batasan bagi kemajuan manusia.",
       "level": "n2",
       "tags": [
         "umum"
@@ -19687,7 +20016,7 @@ window.vocabN2_Nouns = [
   "word": "顕微鏡",
   "reading": "けんびきょう",
   "romaji": "kenbikyou",
-  "meaning_id": "microscope",
+  "meaning_id": "mikroskop",
   "meaning_en": "microscope",
   "jlpt": "n2",
   "pos": "noun",
@@ -19708,15 +20037,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "顕微鏡の焦点を合わせなさい。",
-      "id": "Adjust the microscope's focus.",
+      "id": "Sesuaikan fokus mikroskop.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":5,"downstep_mora":0,"contour":"ケンビキョウ￣"}
+},
     {
       "jp": "彼はそのスライドを顕微鏡で見た。",
-      "id": "He looked at the slide under the microscope.",
+      "id": "Dia melihat slide di bawah mikroskop.",
       "level": "n2",
       "tags": [
         "umum"
@@ -19758,15 +20088,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "多数決原理が民主主義の根本原則だ。",
-      "id": "Majority rule is a basic principle of democracy.",
+      "id": "Kekuasaan mayoritas adalah prinsip dasar demokrasi.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"ゲ＼ンリ"}
+},
     {
       "jp": "彼はひとつの原理を考えだした。",
-      "id": "He figured out a principle.",
+      "id": "Dia menemukan sebuah prinsip.",
       "level": "n2",
       "tags": [
         "umum"
@@ -19787,7 +20118,7 @@ window.vocabN2_Nouns = [
   "word": "原料",
   "reading": "げんりょう",
   "romaji": "genryou",
-  "meaning_id": "raw materials",
+  "meaning_id": "bahan mentah",
   "meaning_en": "raw materials",
   "jlpt": "n2",
   "pos": "noun",
@@ -19808,12 +20139,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "日本はいろんな原料に乏しい。",
-      "id": "Japan is lacking in raw materials.",
+      "id": "Jepang kekurangan bahan mentah.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"ゲンリョ＼ウ"}
+},
     {
       "jp": "これはマレーシアから輸入した原料です。",
       "id": "Ini adalah a crude material imported from Malaysia.",
@@ -19837,7 +20169,7 @@ window.vocabN2_Nouns = [
   "word": "碁",
   "reading": "ご",
   "romaji": "go",
-  "meaning_id": "Go (board game of capturing territory)",
+  "meaning_id": "Go (permainan papan untuk merebut wilayah)",
   "meaning_en": "Go (board game of capturing territory)",
   "jlpt": "n2",
   "pos": "noun",
@@ -19858,15 +20190,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "碁を打つことが一番の気晴らしだ。",
-      "id": "Playing go is my favorite pastime.",
+      "id": "Bermain go adalah hobi favoritku.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":1,"downstep_mora":0,"contour":"ゴ￣"}
+},
     {
       "jp": "父は碁をやります。",
-      "id": "Father goes in for the game of Go.",
+      "id": "Ayah masuk untuk permainan Go.",
       "level": "n2",
       "tags": [
         "umum"
@@ -19887,7 +20220,7 @@ window.vocabN2_Nouns = [
   "word": "工員",
   "reading": "こういん",
   "romaji": "kouin",
-  "meaning_id": "factory worker",
+  "meaning_id": "pekerja pabrik",
   "meaning_en": "factory worker",
   "jlpt": "n2",
   "pos": "noun",
@@ -19908,12 +20241,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "彼は新しい工員を採用した。",
-      "id": "He hired some new workers.",
+      "id": "Dia mempekerjakan beberapa pekerja baru.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"コウイン￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -19929,7 +20263,7 @@ window.vocabN2_Nouns = [
   "word": "公害",
   "reading": "こうがい",
   "romaji": "kougai",
-  "meaning_id": "public nuisance; pollution",
+  "meaning_id": "gangguan umum; polusi",
   "meaning_en": "public nuisance; pollution",
   "jlpt": "n2",
   "pos": "noun",
@@ -19950,15 +20284,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "この地域に公害はない。",
-      "id": "This district is free from environmental pollution.",
+      "id": "Kabupaten ini bebas dari pencemaran lingkungan.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"コウガイ￣"}
+},
     {
       "jp": "政府は公害を除去しようと努めている。",
-      "id": "The government is trying to get rid of pollution.",
+      "id": "Pemerintah berupaya menghilangkan polusi.",
       "level": "n2",
       "tags": [
         "umum"
@@ -20004,11 +20339,12 @@ window.vocabN2_Nouns = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"コウキョウ￣"}
+},
     {
       "jp": "ここは公共の乗り物が不便だ。",
-      "id": "This place isn't convenient to public transportation.",
+      "id": "Tempat ini tidak nyaman untuk transportasi umum.",
       "level": "n2",
       "tags": [
         "umum"
@@ -20029,7 +20365,7 @@ window.vocabN2_Nouns = [
   "word": "工芸",
   "reading": "こうげい",
   "romaji": "kougei",
-  "meaning_id": "industrial arts",
+  "meaning_id": "seni industri",
   "meaning_en": "industrial arts",
   "jlpt": "n2",
   "pos": "noun",
@@ -20050,12 +20386,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "腕のいい工芸師は自分の作品に誇りを持っている。",
-      "id": "A good craftsman takes pride in his work.",
+      "id": "Seorang pengrajin yang baik bangga dengan karyanya.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"コウゲイ￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -20071,7 +20408,7 @@ window.vocabN2_Nouns = [
   "word": "講師",
   "reading": "こうし",
   "romaji": "koushi",
-  "meaning_id": "lecturer",
+  "meaning_id": "dosen",
   "meaning_en": "lecturer",
   "jlpt": "n2",
   "pos": "noun",
@@ -20092,15 +20429,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "講師は本題から脱線してしまった。",
-      "id": "The speaker wandered away from the subject.",
+      "id": "Pembicara menjauh dari pokok bahasan.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"コ＼ウシ"}
+},
     {
       "jp": "正確に言うと私は大学講師です。",
-      "id": "Specifically, I'm a university lecturer.",
+      "id": "Secara khusus, saya seorang dosen universitas.",
       "level": "n2",
       "tags": [
         "umum"
@@ -20142,15 +20480,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "彼は立候補することを公式に発表した。",
-      "id": "He officially announced himself as a candidate.",
+      "id": "Dia secara resmi mengumumkan dirinya sebagai kandidat.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"コウシキ￣"}
+},
     {
       "jp": "まずは公式を暗記しなさい。",
-      "id": "First of all, learn the formula by heart.",
+      "id": "Pertama-tama, hafalkan rumusnya.",
       "level": "n2",
       "tags": [
         "umum"
@@ -20171,7 +20510,7 @@ window.vocabN2_Nouns = [
   "word": "口実",
   "reading": "こうじつ",
   "romaji": "koujitsu",
-  "meaning_id": "excuse",
+  "meaning_id": "alasan",
   "meaning_en": "excuse",
   "jlpt": "n2",
   "pos": "noun",
@@ -20192,15 +20531,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "病気を口実にして彼は来なかった。",
-      "id": "He did not come on the pretext of sickness.",
+      "id": "Dia tidak datang dengan alasan sakit.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"コウジツ￣"}
+},
     {
       "jp": "彼は遅刻の口実をこしらえた。",
-      "id": "He invented an excuse for being late.",
+      "id": "Dia menemukan alasan untuk terlambat.",
       "level": "n2",
       "tags": [
         "umum"
@@ -20221,7 +20561,7 @@ window.vocabN2_Nouns = [
   "word": "こうして",
   "reading": "こうして",
   "romaji": "koushite",
-  "meaning_id": "thus",
+  "meaning_id": "demikian",
   "meaning_en": "thus",
   "jlpt": "n2",
   "pos": "noun",
@@ -20246,11 +20586,12 @@ window.vocabN2_Nouns = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"コウシテ￣"}
+},
     {
       "jp": "飛行船ってどんなかっこうしているの。",
-      "id": "What does an airship look like?",
+      "id": "Seperti apa rupa pesawat itu?",
       "level": "n2",
       "tags": [
         "umum"
@@ -20271,7 +20612,7 @@ window.vocabN2_Nouns = [
   "word": "校舎",
   "reading": "こうしゃ",
   "romaji": "kousha",
-  "meaning_id": "school building",
+  "meaning_id": "gedung sekolah",
   "meaning_en": "school building",
   "jlpt": "n2",
   "pos": "noun",
@@ -20292,15 +20633,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "校舎内では走ってはいけません。",
-      "id": "You must not run in the school buildings.",
+      "id": "Anda tidak boleh berlari di gedung sekolah.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"コ＼ウシャ"}
+},
     {
       "jp": "新しい校舎が建設中です。",
-      "id": "A new school building is under construction.",
+      "id": "Gedung sekolah baru sedang dibangun.",
       "level": "n2",
       "tags": [
         "umum"
@@ -20321,7 +20663,7 @@ window.vocabN2_Nouns = [
   "word": "公衆",
   "reading": "こうしゅう",
   "romaji": "koushuu",
-  "meaning_id": "the public",
+  "meaning_id": "publik",
   "meaning_en": "the public",
   "jlpt": "n2",
   "pos": "noun",
@@ -20342,15 +20684,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "この建物には公衆トイレがありますか。",
-      "id": "Is there a public toilet in this building?",
+      "id": "Apakah ada toilet umum di gedung ini?",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"コウシュウ￣"}
+},
     {
       "jp": "私は公衆の面前で演説するのに慣れてない。",
-      "id": "I am not accustomed to making speeches in public.",
+      "id": "Saya tidak terbiasa berpidato di depan umum.",
       "level": "n2",
       "tags": [
         "umum"
@@ -20371,7 +20714,7 @@ window.vocabN2_Nouns = [
   "word": "香水",
   "reading": "こうすい",
   "romaji": "kousui",
-  "meaning_id": "perfume",
+  "meaning_id": "parfum",
   "meaning_en": "perfume",
   "jlpt": "n2",
   "pos": "noun",
@@ -20392,15 +20735,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "彼女はいつも香水のにおいがきつすぎる。",
-      "id": "She always wears too much scent.",
+      "id": "Dia selalu memakai terlalu banyak wewangian.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"コウスイ￣"}
+},
     {
       "jp": "彼女は香水の香りがきつすぎだ。",
-      "id": "She was too heavy on the perfume.",
+      "id": "Dia terlalu berat pada parfumnya.",
       "level": "n2",
       "tags": [
         "umum"
@@ -20442,15 +20786,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "イタリアンルネッサンスを開花させるきっかけを作ったのはジョットの功績だ。",
-      "id": "Giotto is credited with sowing the seeds of the Italian Renaissance.",
+      "id": "Giotto dikreditkan dengan menabur benih Renaisans Italia.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"コウセキ￣"}
+},
     {
       "jp": "それはたいした功績だ。",
-      "id": "It is quite an achievement!",
+      "id": "Ini merupakan sebuah prestasi yang luar biasa!",
       "level": "n2",
       "tags": [
         "umum"
@@ -20471,7 +20816,7 @@ window.vocabN2_Nouns = [
   "word": "光線",
   "reading": "こうせん",
   "romaji": "kousen",
-  "meaning_id": "beam; light ray",
+  "meaning_id": "balok; sinar cahaya",
   "meaning_en": "beam; light ray",
   "jlpt": "n2",
   "pos": "noun",
@@ -20492,15 +20837,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "このランプは強い光線を出す。",
-      "id": "This lamp sends out a powerful beam.",
+      "id": "Lampu ini memancarkan sinar yang kuat.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"コウセン￣"}
+},
     {
       "jp": "夜空に光線が見えた。",
-      "id": "We found a beam of light in the night sky.",
+      "id": "Kami menemukan seberkas cahaya di langit malam.",
       "level": "n2",
       "tags": [
         "umum"
@@ -20521,7 +20867,7 @@ window.vocabN2_Nouns = [
   "word": "高層",
   "reading": "こうそう",
   "romaji": "kousou",
-  "meaning_id": "upper",
+  "meaning_id": "atas",
   "meaning_en": "upper",
   "jlpt": "n2",
   "pos": "noun",
@@ -20542,15 +20888,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "その高層ビルの上からは町がよく見える。",
-      "id": "The roof of the high rise building overlooks the whole town.",
+      "id": "Atap gedung bertingkat tinggi menghadap ke seluruh kota.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"コウソウ￣"}
+},
     {
       "jp": "ニューヨークには高層ビルが林立している。",
-      "id": "New York bristles with towering buildings.",
+      "id": "New York dipenuhi dengan gedung-gedung yang menjulang tinggi.",
       "level": "n2",
       "tags": [
         "umum"
@@ -20571,7 +20918,7 @@ window.vocabN2_Nouns = [
   "word": "構造",
   "reading": "こうぞう",
   "romaji": "kouzou",
-  "meaning_id": "structure; construction",
+  "meaning_id": "struktur; konstruksi",
   "meaning_en": "structure; construction",
   "jlpt": "n2",
   "pos": "noun",
@@ -20592,15 +20939,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "心臓の構造については中学で習う。",
-      "id": "We learn about the structure of the heart in junior high school.",
+      "id": "Kita belajar tentang struktur hati di bangku SMP.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"コウゾウ￣"}
+},
     {
       "jp": "この増加に加えて、世界の経済構造の変化があった。",
-      "id": "Along with this increase, there has been a change in the world's economic organization.",
+      "id": "Seiring dengan peningkatan tersebut, terjadi perubahan pada organisasi perekonomian dunia.",
       "level": "n2",
       "tags": [
         "umum"
@@ -20621,7 +20969,7 @@ window.vocabN2_Nouns = [
   "word": "耕地",
   "reading": "こうち",
   "romaji": "kouchi",
-  "meaning_id": "arable land",
+  "meaning_id": "tanah subur",
   "meaning_en": "arable land",
   "jlpt": "n2",
   "pos": "noun",
@@ -20646,8 +20994,9 @@ window.vocabN2_Nouns = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"コ＼ウチ"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -20663,7 +21012,7 @@ window.vocabN2_Nouns = [
   "word": "交通機関",
   "reading": "こうつうきかん",
   "romaji": "koutsuukikan",
-  "meaning_id": "transportation facilities",
+  "meaning_id": "fasilitas transportasi",
   "meaning_en": "transportation facilities",
   "jlpt": "n2",
   "pos": "noun",
@@ -20684,15 +21033,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "交通機関は何を使うんですか。",
-      "id": "What form of transport will we take?",
+      "id": "Bentuk transportasi apa yang akan kita gunakan?",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":6,"category":"nakadaka","mora_count":7,"downstep_mora":6,"contour":"コウツウキカ＼ン"}
+},
     {
       "jp": "その町の交通機関は大変よい。",
-      "id": "The transportation system in that city is quite good.",
+      "id": "Sistem transportasi di kota tersebut cukup baik.",
       "level": "n2",
       "tags": [
         "umum"
@@ -20713,7 +21063,7 @@ window.vocabN2_Nouns = [
   "word": "校庭",
   "reading": "こうてい",
   "romaji": "koutei",
-  "meaning_id": "campus",
+  "meaning_id": "kampus",
   "meaning_en": "campus",
   "jlpt": "n2",
   "pos": "noun",
@@ -20734,15 +21084,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "校庭はたいへん小さかったです。",
-      "id": "The schoolyard was very small.",
+      "id": "Halaman sekolahnya sangat kecil.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"コウテイ￣"}
+},
     {
       "jp": "彼らは校庭でしゃべっていた。",
-      "id": "They were chatting on the campus.",
+      "id": "Mereka sedang mengobrol di kampus.",
       "level": "n2",
       "tags": [
         "umum"
@@ -20784,12 +21135,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "この仕事は高度の熟練を必要とする。",
-      "id": "This work calls for a high degree of skill.",
+      "id": "Pekerjaan ini membutuhkan keterampilan tingkat tinggi.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"コ＼ウド"}
+},
     {
       "jp": "これより次第に高度を下げてまいります。",
       "id": "Kami beginning our descent.",
@@ -20813,7 +21165,7 @@ window.vocabN2_Nouns = [
   "word": "後輩",
   "reading": "こうはい",
   "romaji": "kouhai",
-  "meaning_id": "junior (at work or school)",
+  "meaning_id": "junior (di tempat kerja atau sekolah)",
   "meaning_en": "junior (at work or school)",
   "jlpt": "n2",
   "pos": "noun",
@@ -20838,11 +21190,12 @@ window.vocabN2_Nouns = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"コウハイ￣"}
+},
     {
       "jp": "後輩にノートＰＣをかりた。",
-      "id": "I borrowed the notebook PC from the junior staff member.",
+      "id": "Saya meminjam PC notebook dari anggota staf junior.",
       "level": "n2",
       "tags": [
         "umum"
@@ -20863,7 +21216,7 @@ window.vocabN2_Nouns = [
   "word": "鉱物",
   "reading": "こうぶつ",
   "romaji": "koubutsu",
-  "meaning_id": "mineral",
+  "meaning_id": "bahan mineral / tambang",
   "meaning_en": "mineral",
   "jlpt": "n2",
   "pos": "noun",
@@ -20884,15 +21237,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "オーストラリアは鉱物が豊富だ。",
-      "id": "Australia is abundant in minerals.",
+      "id": "Australia kaya akan mineral.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":4,"downstep_mora":1,"contour":"コ＼ウブツ"}
+},
     {
       "jp": "岩石や鉱物はいろいろな面で私たちに有益である。",
-      "id": "Rocks and minerals are useful for us in many ways.",
+      "id": "Batuan dan mineral bermanfaat bagi kita dalam banyak hal.",
       "level": "n2",
       "tags": [
         "umum"
@@ -20913,7 +21267,7 @@ window.vocabN2_Nouns = [
   "word": "公務",
   "reading": "こうむ",
   "romaji": "koumu",
-  "meaning_id": "official business; public business",
+  "meaning_id": "urusan resmi; bisnis publik",
   "meaning_en": "official business; public business",
   "jlpt": "n2",
   "pos": "noun",
@@ -20934,15 +21288,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "公務のために多くの時間がとられる。",
-      "id": "My public duties take a lot of time.",
+      "id": "Tugas publik saya menyita banyak waktu.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"コ＼ウム"}
+},
     {
       "jp": "会議のたびにノートをとることは、秘書の公務の一つです。",
-      "id": "Taking notes at each meeting is one of the official duties.",
+      "id": "Mencatat pada setiap pertemuan merupakan salah satu tugas resmi.",
       "level": "n2",
       "tags": [
         "umum"
@@ -20963,7 +21318,7 @@ window.vocabN2_Nouns = [
   "word": "項目",
   "reading": "こうもく",
   "romaji": "koumoku",
-  "meaning_id": "item",
+  "meaning_id": "barang",
   "meaning_en": "item",
   "jlpt": "n2",
   "pos": "noun",
@@ -20984,15 +21339,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "これは何の項目に入るか。",
-      "id": "What heading does this come under?",
+      "id": "Ini termasuk dalam judul apa?",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"コウモク￣"}
+},
     {
       "jp": "この本は何の項目に入りますか。",
-      "id": "What heading does this book come under?",
+      "id": "Apa judul buku ini?",
       "level": "n2",
       "tags": [
         "umum"
@@ -21013,7 +21369,7 @@ window.vocabN2_Nouns = [
   "word": "合理",
   "reading": "ごうり",
   "romaji": "gouri",
-  "meaning_id": "rational",
+  "meaning_id": "rasional",
   "meaning_en": "rational",
   "jlpt": "n2",
   "pos": "noun",
@@ -21038,8 +21394,9 @@ window.vocabN2_Nouns = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"ゴ＼ウリ"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -21076,15 +21433,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "その法律はもう効力はなくなっている。",
-      "id": "The law is not in effect any longer.",
+      "id": "Undang-undang tersebut sudah tidak berlaku lagi.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":4,"downstep_mora":1,"contour":"コ＼ウリョク"}
+},
     {
       "jp": "今夜の１２時からその契約は効力を発する。",
-      "id": "As of midnight tonight the contract becomes effective.",
+      "id": "Mulai tengah malam nanti kontrak tersebut berlaku efektif.",
       "level": "n2",
       "tags": [
         "umum"
@@ -21105,7 +21463,7 @@ window.vocabN2_Nouns = [
   "word": "コース",
   "reading": "コース",
   "romaji": "koosu",
-  "meaning_id": "course",
+  "meaning_id": "tentu saja",
   "meaning_en": "course",
   "jlpt": "n2",
   "pos": "noun",
@@ -21126,15 +21484,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "おすすめのコースはどこですか。",
-      "id": "Which course do you recommend?",
+      "id": "Kursus mana yang Anda rekomendasikan?",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":0,"downstep_mora":1,"contour":"＼"}
+},
     {
       "jp": "車はコースをはずれた。",
-      "id": "The car veered from its course.",
+      "id": "Mobil itu menyimpang dari jalurnya.",
       "level": "n2",
       "tags": [
         "umum"
@@ -21155,7 +21514,7 @@ window.vocabN2_Nouns = [
   "word": "コーラス",
   "reading": "コーラス",
   "romaji": "koorasu",
-  "meaning_id": "chorus",
+  "meaning_id": "paduan suara",
   "meaning_en": "chorus",
   "jlpt": "n2",
   "pos": "noun",
@@ -21176,15 +21535,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "彼らはみな一緒にコーラスを歌いました。",
-      "id": "They all joined in the chorus.",
+      "id": "Mereka semua bergabung dalam paduan suara.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":0,"downstep_mora":1,"contour":"＼"}
+},
     {
       "jp": "誰がコーラスを指揮しますか。",
-      "id": "Who leads the chorus?",
+      "id": "Siapa yang memimpin bagian refrainnya?",
       "level": "n2",
       "tags": [
         "umum"
@@ -21205,7 +21565,7 @@ window.vocabN2_Nouns = [
   "word": "国王",
   "reading": "こくおう",
   "romaji": "kokuou",
-  "meaning_id": "king",
+  "meaning_id": "raja",
   "meaning_en": "king",
   "jlpt": "n2",
   "pos": "noun",
@@ -21226,15 +21586,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "国民は歓呼して彼を国王に迎えた。",
-      "id": "The people acclaimed him King.",
+      "id": "Rakyat mengangkatnya sebagai Raja.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"コクオ＼ウ"}
+},
     {
       "jp": "今の国王が会合に出席されている。",
-      "id": "The current king is present at the party.",
+      "id": "Raja saat ini hadir di pesta itu.",
       "level": "n2",
       "tags": [
         "umum"
@@ -21255,7 +21616,7 @@ window.vocabN2_Nouns = [
   "word": "国籍",
   "reading": "こくせき",
   "romaji": "kokuseki",
-  "meaning_id": "nationality",
+  "meaning_id": "kewarganegaraan",
   "meaning_en": "nationality",
   "jlpt": "n2",
   "pos": "noun",
@@ -21276,15 +21637,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "国籍に関係なくすべての人に資格がある。",
-      "id": "Everyone is eligible regardless of nationality.",
+      "id": "Setiap orang berhak, apapun kewarganegaraannya.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"コクセキ￣"}
+},
     {
       "jp": "我々の真の国籍は人類である。",
-      "id": "Our true nationality is mankind.",
+      "id": "Kebangsaan kita yang sebenarnya adalah umat manusia.",
       "level": "n2",
       "tags": [
         "umum"
@@ -21305,7 +21667,7 @@ window.vocabN2_Nouns = [
   "word": "国立",
   "reading": "こくりつ",
   "romaji": "kokuritsu",
-  "meaning_id": "national",
+  "meaning_id": "nasional",
   "meaning_en": "national",
   "jlpt": "n2",
   "pos": "noun",
@@ -21326,12 +21688,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "老人のための国立の病院がもっとあってしかるべきだ。",
-      "id": "There should be more national hospitals for old people.",
+      "id": "Harus ada lebih banyak rumah sakit nasional untuk orang lanjut usia.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"コクリツ￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -21347,7 +21710,7 @@ window.vocabN2_Nouns = [
   "word": "心当たり",
   "reading": "こころあたり",
   "romaji": "kokoroatari",
-  "meaning_id": "having some knowledge of; happening to know",
+  "meaning_id": "memiliki pengetahuan tentang; kebetulan tahu",
   "meaning_en": "having some knowledge of; happening to know",
   "jlpt": "n2",
   "pos": "noun",
@@ -21368,15 +21731,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "その名前に心当たりある？",
-      "id": "Does that name ring a bell?",
+      "id": "Apakah nama itu menarik perhatian?",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":4,"category":"nakadaka","mora_count":6,"downstep_mora":4,"contour":"ココロア＼タリ"}
+},
     {
       "jp": "心当たりはないよ。",
-      "id": "That doesn't ring a bell.",
+      "id": "Itu tidak berarti apa-apa.",
       "level": "n2",
       "tags": [
         "umum"
@@ -21397,7 +21761,7 @@ window.vocabN2_Nouns = [
   "word": "腰掛け",
   "reading": "こしかけ",
   "romaji": "koshikake",
-  "meaning_id": "seat; bench",
+  "meaning_id": "kursi; bangku",
   "meaning_en": "seat; bench",
   "jlpt": "n2",
   "pos": "noun",
@@ -21418,15 +21782,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "君が座っている腰掛けのペンキはまだ塗り立てだよ。",
-      "id": "The paint on the seat on which you are sitting is still wet.",
+      "id": "Cat pada jok yang Anda duduki masih basah.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"コシカ＼ケ"}
+},
     {
       "jp": "腰掛けのつもりだったのに、気がついたら私もこの会社で古株になってしまった。",
-      "id": "I only figured on staying with this company a little while when I started, but before I knew it I'd become an old timer here.",
+      "id": "Saya hanya berpikir untuk tinggal di perusahaan ini sebentar ketika saya mulai, tetapi sebelum saya menyadarinya, saya sudah menjadi orang lama di sini.",
       "level": "n2",
       "tags": [
         "umum"
@@ -21447,7 +21812,7 @@ window.vocabN2_Nouns = [
   "word": "五十音",
   "reading": "ごじゅうおん",
   "romaji": "gojuuon",
-  "meaning_id": "the Japanese syllabary",
+  "meaning_id": "suku kata Jepang",
   "meaning_en": "the Japanese syllabary",
   "jlpt": "n2",
   "pos": "noun",
@@ -21468,12 +21833,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "氏名は五十音順です。",
-      "id": "The names are in Japanese alphabetical order.",
+      "id": "Nama-nama tersebut disusun berdasarkan abjad Jepang.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":5,"downstep_mora":2,"contour":"ゴジュ＼ウオン"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -21489,7 +21855,7 @@ window.vocabN2_Nouns = [
   "word": "胡椒",
   "reading": "こしょう",
   "romaji": "koshou",
-  "meaning_id": "pepper",
+  "meaning_id": "lada",
   "meaning_en": "pepper",
   "jlpt": "n2",
   "pos": "noun",
@@ -21510,15 +21876,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "コショウを入れすぎたね。",
-      "id": "You put far too much pepper in it.",
+      "id": "Anda memasukkan terlalu banyak lada ke dalamnya.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"コショ＼ウ"}
+},
     {
       "jp": "コショウで彼の口がひりひりした。",
-      "id": "Pepper burned his mouth.",
+      "id": "Pepper membakar mulutnya.",
       "level": "n2",
       "tags": [
         "umum"
@@ -21539,7 +21906,7 @@ window.vocabN2_Nouns = [
   "word": "ごぞんじですか",
   "reading": "ごぞんじですか",
   "romaji": "gozonjidesuka",
-  "meaning_id": "do you know? (honorific)",
+  "meaning_id": "tahukah kamu? (kehormatan)",
   "meaning_en": "do you know? (honorific)",
   "jlpt": "n2",
   "pos": "noun",
@@ -21560,7 +21927,7 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "この辺はよくごぞんじですか。",
-      "id": "Do you know this part of the city very well?",
+      "id": "Apakah Anda mengenal bagian kota ini dengan baik?",
       "level": "n2",
       "tags": [
         "umum"
@@ -21581,7 +21948,7 @@ window.vocabN2_Nouns = [
   "word": "個体",
   "reading": "こたい",
   "romaji": "kotai",
-  "meaning_id": "an individual",
+  "meaning_id": "seorang individu",
   "meaning_en": "an individual",
   "jlpt": "n2",
   "pos": "noun",
@@ -21602,12 +21969,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "個体を使います。",
-      "id": "Menggunakan an individual.",
+      "id": "Menggunakan individu.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"コタイ￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -21644,15 +22012,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "つまらないものに小遣いを使うな。",
-      "id": "Don't waste your allowance on useless things.",
+      "id": "Jangan sia-siakan uang sakumu untuk hal-hal yang tidak berguna.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":4,"downstep_mora":1,"contour":"コ＼ヅカイ"}
+},
     {
       "jp": "小遣いの増額を父に掛け合った。",
-      "id": "I approached my father about an increase in allowance.",
+      "id": "Saya mendekati ayah saya tentang kenaikan tunjangan.",
       "level": "n2",
       "tags": [
         "umum"
@@ -21698,8 +22067,9 @@ window.vocabN2_Nouns = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":0,"downstep_mora":1,"contour":"＼"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -21736,12 +22106,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "古典の文学書を読むことは価値のあることです。",
-      "id": "It is worthwhile reading classical works of literature.",
+      "id": "Membaca karya sastra klasik sangatlah bermanfaat.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"コテン￣"}
+},
     {
       "jp": "彼女は古典の教育を受けている。",
       "id": "Dia a woman with a classical education.",
@@ -21765,7 +22136,7 @@ window.vocabN2_Nouns = [
   "word": "琴",
   "reading": "こと",
   "romaji": "koto",
-  "meaning_id": "Koto (Japanese harp)",
+  "meaning_id": "Koto (kecapi Jepang)",
   "meaning_en": "Koto (Japanese harp)",
   "jlpt": "n2",
   "pos": "noun",
@@ -21786,12 +22157,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "彼女は琴を弾くことがとても好きだ。",
-      "id": "She likes to play the koto very much.",
+      "id": "Dia sangat suka bermain koto.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":2,"downstep_mora":1,"contour":"コ＼ト"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -21828,12 +22200,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "言葉遣いにはいつも気をつけるべきです。",
-      "id": "You should always be careful in your speech.",
+      "id": "Anda harus selalu berhati-hati dalam berbicara.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":4,"category":"nakadaka","mora_count":6,"downstep_mora":4,"contour":"コトバヅ＼カイ"}
+},
     {
       "jp": "あの子供たちは言葉使いが悪い。",
       "id": "Those children use bad words.",
@@ -21882,8 +22255,9 @@ window.vocabN2_Nouns = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":2,"downstep_mora":1,"contour":"ゴ＼ム"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -21920,15 +22294,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "待たせてごめん。",
-      "id": "Sorry to have kept you waiting.",
+      "id": "Maaf telah membuatmu menunggu.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ゴメン￣"}
+},
     {
       "jp": "自分の手を汚すようなことだけはごめんだ。",
-      "id": "I don't want to get my hands dirty.",
+      "id": "Aku tidak ingin tanganku kotor.",
       "level": "n2",
       "tags": [
         "umum"
@@ -21949,7 +22324,7 @@ window.vocabN2_Nouns = [
   "word": "小指",
   "reading": "こゆび",
   "romaji": "koyubi",
-  "meaning_id": "little finger",
+  "meaning_id": "jari kelingking",
   "meaning_en": "little finger",
   "jlpt": "n2",
   "pos": "noun",
@@ -21970,15 +22345,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "小指がはれました。",
-      "id": "My little finger is swollen.",
+      "id": "Jari kelingkingku bengkak.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"コユビ￣"}
+},
     {
       "jp": "足の小指が痛むんだ。",
-      "id": "I have a pain in my little toe.",
+      "id": "Saya merasakan sakit di jari kelingking saya.",
       "level": "n2",
       "tags": [
         "umum"
@@ -22020,15 +22396,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "あの木のてっぺんを見てごらん。",
-      "id": "Look at the top of that tree.",
+      "id": "Lihatlah puncak pohon itu.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ゴラン￣"}
+},
     {
       "jp": "辞書のその文字をご覧。",
-      "id": "Look up the word in the dictionary.",
+      "id": "Cari kata tersebut di kamus.",
       "level": "n2",
       "tags": [
         "umum"
@@ -22049,7 +22426,7 @@ window.vocabN2_Nouns = [
   "word": "紺",
   "reading": "こん",
   "romaji": "kon",
-  "meaning_id": "navy blue; deep blue",
+  "meaning_id": "biru tua",
   "meaning_en": "navy blue; deep blue",
   "jlpt": "n2",
   "pos": "noun",
@@ -22070,12 +22447,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "医者は紺のスーツの上に白衣を着ていた。",
-      "id": "The doctor was wearing a white coat over a blue suit.",
+      "id": "Dokter itu mengenakan jas putih di atas jas biru.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":2,"downstep_mora":1,"contour":"コ＼ン"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -22091,7 +22469,7 @@ window.vocabN2_Nouns = [
   "word": "コンクール",
   "reading": "コンクール",
   "romaji": "konkuuru",
-  "meaning_id": "contest (fr: concours)",
+  "meaning_id": "kontes (fr: concours)",
   "meaning_en": "contest (fr: concours)",
   "jlpt": "n2",
   "pos": "noun",
@@ -22112,15 +22490,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "私はそのコンクールに参加した。",
-      "id": "I took part in the contest.",
+      "id": "Saya ikut serta dalam kontes tersebut.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":0,"downstep_mora":0,"contour":"￣"}
+},
     {
       "jp": "ピアノ・コンクールで私が第１位になるなんて夢想だにしなかった。",
-      "id": "Never did I dream that I would take first place in the piano contest.",
+      "id": "Saya tidak pernah bermimpi akan menjadi juara pertama dalam kontes piano.",
       "level": "n2",
       "tags": [
         "umum"
@@ -22141,7 +22520,7 @@ window.vocabN2_Nouns = [
   "word": "コンクリート",
   "reading": "コンクリート",
   "romaji": "konkuriito",
-  "meaning_id": "concrete",
+  "meaning_id": "konkrit",
   "meaning_en": "concrete",
   "jlpt": "n2",
   "pos": "noun",
@@ -22162,15 +22541,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "土台はコンクリートで固められている。",
-      "id": "The foundation is bedded in concrete.",
+      "id": "Fondasinya dilapisi beton.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":4,"category":"nakadaka","mora_count":0,"downstep_mora":0,"contour":"￣"}
+},
     {
       "jp": "彼はコンクリートも発明したと言われている。",
-      "id": "It is said that he also invented concrete.",
+      "id": "Dikatakan bahwa dia juga menemukan beton.",
       "level": "n2",
       "tags": [
         "umum"
@@ -22212,12 +22592,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "彼はラジオをコンセントにつないだ。",
-      "id": "He plugged in the radio.",
+      "id": "Dia menyambungkan radio.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":0,"downstep_mora":1,"contour":"＼"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -22254,12 +22635,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "それほど多くの人々のための料理の献立を考えるのはむずかしい。",
-      "id": "It is difficult planning meals for so many people.",
+      "id": "Sulit merencanakan makanan bagi banyak orang.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"コンダテ￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -22275,7 +22657,7 @@ window.vocabN2_Nouns = [
   "word": "サークル",
   "reading": "サークル",
   "romaji": "saakuru",
-  "meaning_id": "circle; sports club (i.e. at a company)",
+  "meaning_id": "lingkaran; klub olahraga (yaitu di perusahaan)",
   "meaning_en": "circle; sports club (i.e. at a company)",
   "jlpt": "n2",
   "pos": "noun",
@@ -22296,12 +22678,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "サークルを使います。",
-      "id": "Menggunakan circle; sports club (i.e. at a company).",
+      "id": "Menggunakan lingkaran; klub olahraga (yaitu di perusahaan).",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":0,"downstep_mora":1,"contour":"＼"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -22317,7 +22700,7 @@ window.vocabN2_Nouns = [
   "word": "祭日",
   "reading": "さいじつ",
   "romaji": "saijitsu",
-  "meaning_id": "national holiday; festival day",
+  "meaning_id": "hari libur nasional; hari festival",
   "meaning_en": "national holiday; festival day",
   "jlpt": "n2",
   "pos": "noun",
@@ -22338,15 +22721,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "今度の祭日は日曜日と重なります。",
-      "id": "The next holiday falls on a Sunday.",
+      "id": "Liburan berikutnya jatuh pada hari Minggu.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"サイジツ￣"}
+},
     {
       "jp": "祭日が日曜にダブると月曜が休みになる。",
-      "id": "When a holiday falls on Sunday, we have an extra holiday on Monday.",
+      "id": "Jika hari libur jatuh pada hari Minggu, maka kita mempunyai hari libur tambahan pada hari Senin.",
       "level": "n2",
       "tags": [
         "umum"
@@ -22367,7 +22751,7 @@ window.vocabN2_Nouns = [
   "word": "災難",
   "reading": "さいなん",
   "romaji": "sainan",
-  "meaning_id": "calamity; misfortune",
+  "meaning_id": "bencana; kemalangan",
   "meaning_en": "calamity; misfortune",
   "jlpt": "n2",
   "pos": "noun",
@@ -22388,15 +22772,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "人生に災難は付き物。",
-      "id": "Accidents will happen.",
+      "id": "Kecelakaan akan terjadi.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"サイナ＼ン"}
+},
     {
       "jp": "まずその災難の原因を確かめよう。",
-      "id": "We will first ascertain the cause of the disaster.",
+      "id": "Kami akan memastikan dulu penyebab bencana tersebut.",
       "level": "n2",
       "tags": [
         "umum"
@@ -22417,7 +22802,7 @@ window.vocabN2_Nouns = [
   "word": "材木",
   "reading": "ざいもく",
   "romaji": "zaimoku",
-  "meaning_id": "lumber; timber",
+  "meaning_id": "kayu",
   "meaning_en": "lumber; timber",
   "jlpt": "n2",
   "pos": "noun",
@@ -22438,15 +22823,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "ひろしは材木をひいて板にしています。",
-      "id": "Hiroshi is sawing the wood into boards.",
+      "id": "Hiroshi sedang menggergaji kayu menjadi papan.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ザイモク￣"}
+},
     {
       "jp": "その船には石炭や材木などが積まれていた。",
-      "id": "The vessel was loaded with coal, lumber, and so on.",
+      "id": "Kapal itu memuat batu bara, kayu, dan sebagainya.",
       "level": "n2",
       "tags": [
         "umum"
@@ -22467,7 +22853,7 @@ window.vocabN2_Nouns = [
   "word": "サイレン",
   "reading": "サイレン",
   "romaji": "sairen",
-  "meaning_id": "siren",
+  "meaning_id": "sirene",
   "meaning_en": "siren",
   "jlpt": "n2",
   "pos": "noun",
@@ -22488,15 +22874,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "サイレンが急変を知らせました。",
-      "id": "The siren sounded an emergency.",
+      "id": "Sirene berbunyi darurat.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":0,"downstep_mora":1,"contour":"＼"}
+},
     {
       "jp": "正午のサイレンが鳴っている。",
-      "id": "The noon siren is blowing.",
+      "id": "Sirene tengah hari berbunyi.",
       "level": "n2",
       "tags": [
         "umum"
@@ -22517,7 +22904,7 @@ window.vocabN2_Nouns = [
   "word": "酒場",
   "reading": "さかば",
   "romaji": "sakaba",
-  "meaning_id": "bar; bar-room",
+  "meaning_id": "batang; ruang bar",
   "meaning_en": "bar; bar-room",
   "jlpt": "n2",
   "pos": "noun",
@@ -22538,15 +22925,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "彼はその酒場で歯医者に成りすましていた。",
-      "id": "He posed as a dentist at that bar.",
+      "id": "Dia menyamar sebagai dokter gigi di bar itu.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"サカバ￣"}
+},
     {
       "jp": "労働者たちはくつろげる酒場に集まることが好きである。",
-      "id": "The workers like to gather in a pub where they can let their hair down.",
+      "id": "Para pekerja suka berkumpul di pub di mana mereka bisa bersantai.",
       "level": "n2",
       "tags": [
         "umum"
@@ -22567,7 +22955,7 @@ window.vocabN2_Nouns = [
   "word": "索引",
   "reading": "さくいん",
   "romaji": "sakuin",
-  "meaning_id": "index; indices",
+  "meaning_id": "indeks",
   "meaning_en": "index; indices",
   "jlpt": "n2",
   "pos": "noun",
@@ -22588,12 +22976,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "その本には索引がついていますか。",
-      "id": "Is there an index to the book?",
+      "id": "Apakah ada indeks pada buku tersebut?",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"サクイン￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -22609,7 +22998,7 @@ window.vocabN2_Nouns = [
   "word": "作者",
   "reading": "さくしゃ",
   "romaji": "sakusha",
-  "meaning_id": "author; authoress",
+  "meaning_id": "penulis",
   "meaning_en": "author; authoress",
   "jlpt": "n2",
   "pos": "noun",
@@ -22630,15 +23019,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "その小説の作者は誰でしょうか。",
-      "id": "Who is the author of the novel?",
+      "id": "Siapa penulis novelnya?",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"サ＼クシャ"}
+},
     {
       "jp": "この小説の作者はだれだと思いますか。",
-      "id": "Who do you think is the writer of this novel?",
+      "id": "Menurut Anda siapa penulis novel ini?",
       "level": "n2",
       "tags": [
         "umum"
@@ -22659,7 +23049,7 @@ window.vocabN2_Nouns = [
   "word": "匙",
   "reading": "さじ",
   "romaji": "saji",
-  "meaning_id": "spoon",
+  "meaning_id": "sendok",
   "meaning_en": "spoon",
   "jlpt": "n2",
   "pos": "noun",
@@ -22680,12 +23070,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "私たちはさじでスープを飲む。",
-      "id": "We eat soup with a spoon.",
+      "id": "Kami makan sup dengan sendok.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":2,"downstep_mora":1,"contour":"サ＼ジ"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -22701,7 +23092,7 @@ window.vocabN2_Nouns = [
   "word": "座敷",
   "reading": "ざしき",
   "romaji": "zashiki",
-  "meaning_id": "tatami room",
+  "meaning_id": "ruang tatami",
   "meaning_en": "tatami room",
   "jlpt": "n2",
   "pos": "noun",
@@ -22726,8 +23117,9 @@ window.vocabN2_Nouns = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":3,"category":"odaka","mora_count":3,"downstep_mora":3,"contour":"ザシキ＼"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -22743,7 +23135,7 @@ window.vocabN2_Nouns = [
   "word": "差し支え",
   "reading": "さしつかえ",
   "romaji": "sashitsukae",
-  "meaning_id": "hindrance; impediment",
+  "meaning_id": "hambatan",
   "meaning_en": "hindrance; impediment",
   "jlpt": "n2",
   "pos": "noun",
@@ -22764,12 +23156,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "その家は理想的とはいえないが、まぁさしつかえはない。",
-      "id": "The house is not ideal, but it's all right.",
+      "id": "Rumahnya tidak ideal, tapi tidak apa-apa.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":5,"downstep_mora":0,"contour":"サシツカエ￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -22785,7 +23178,7 @@ window.vocabN2_Nouns = [
   "word": "刺身",
   "reading": "さしみ",
   "romaji": "sashimi",
-  "meaning_id": "sliced raw fish",
+  "meaning_id": "irisan ikan mentah",
   "meaning_en": "sliced raw fish",
   "jlpt": "n2",
   "pos": "noun",
@@ -22806,15 +23199,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "刺し身は好きではないのでしょう。",
-      "id": "You don't like sashimi, do you?",
+      "id": "Anda tidak suka sashimi, bukan?",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"odaka","mora_count":3,"downstep_mora":3,"contour":"サシミ＼"}
+},
     {
       "jp": "夕食には刺し身をつくりましょう。",
-      "id": "I'll prepare sashimi for dinner.",
+      "id": "Saya akan menyiapkan sashimi untuk makan malam.",
       "level": "n2",
       "tags": [
         "umum"
@@ -22835,7 +23229,7 @@ window.vocabN2_Nouns = [
   "word": "雑音",
   "reading": "ざつおん",
   "romaji": "zatsuon",
-  "meaning_id": "noise (jarring, grating)",
+  "meaning_id": "kebisingan (gemetar, kisi-kisi)",
   "meaning_en": "noise (jarring, grating)",
   "jlpt": "n2",
   "pos": "noun",
@@ -22856,15 +23250,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "ラジオに雑音が入る。",
-      "id": "The radio is disturbed by noises.",
+      "id": "Radio terganggu oleh suara bising.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ザツオン￣"}
+},
     {
       "jp": "雑音のせいで仕事に集中できません。",
-      "id": "I can't concentrate on my work because of the noise.",
+      "id": "Saya tidak dapat berkonsentrasi pada pekerjaan saya karena kebisingan.",
       "level": "n2",
       "tags": [
         "umum"
@@ -22885,7 +23280,7 @@ window.vocabN2_Nouns = [
   "word": "錆",
   "reading": "さび",
   "romaji": "sabi",
-  "meaning_id": "rust (colour)",
+  "meaning_id": "karat (warna)",
   "meaning_en": "rust (colour)",
   "jlpt": "n2",
   "pos": "noun",
@@ -22906,15 +23301,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "この車は錆に強い。",
-      "id": "This car is resistant to rust.",
+      "id": "Mobil ini tahan terhadap karat.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"odaka","mora_count":2,"downstep_mora":2,"contour":"サビ＼"}
+},
     {
       "jp": "彼はやすりで錆を落とした。",
-      "id": "He rubbed the rust off with a file.",
+      "id": "Dia menggosok karat itu dengan kikir.",
       "level": "n2",
       "tags": [
         "umum"
@@ -22935,7 +23331,7 @@ window.vocabN2_Nouns = [
   "word": "座布団",
   "reading": "ざぶとん",
   "romaji": "zabuton",
-  "meaning_id": "cushion (Japanese)",
+  "meaning_id": "bantal (Jepang)",
   "meaning_en": "cushion (Japanese)",
   "jlpt": "n2",
   "pos": "noun",
@@ -22956,15 +23352,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "この座布団を干して下さい。",
-      "id": "Tolong air the zabuton.",
+      "id": "Tolong tayangkan zabutonnya.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":4,"downstep_mora":2,"contour":"ザブ＼トン"}
+},
     {
       "jp": "お祖母さんが座布団の上にちんまりとすわっていました。",
-      "id": "The old woman was snugly sitting on a cushion.",
+      "id": "Wanita tua itu sedang duduk dengan nyaman di atas bantal.",
       "level": "n2",
       "tags": [
         "umum"
@@ -22985,7 +23382,7 @@ window.vocabN2_Nouns = [
   "word": "サラリーマン",
   "reading": "サラリーマン",
   "romaji": "sarariiman",
-  "meaning_id": "salary man; company employee",
+  "meaning_id": "petugas gaji; karyawan perusahaan",
   "meaning_en": "salary man; company employee",
   "jlpt": "n2",
   "pos": "noun",
@@ -23006,15 +23403,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "なあに、しがないサラリーマンですよ。",
-      "id": "Me? I'm a plain old salaryman.",
+      "id": "saya? Saya seorang pegawai biasa.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":0,"downstep_mora":0,"contour":"￣"}
+},
     {
       "jp": "彼は普通のサラリーマンだ。",
-      "id": "He's just an ordinary office worker.",
+      "id": "Dia hanya seorang pekerja kantoran biasa.",
       "level": "n2",
       "tags": [
         "umum"
@@ -23035,7 +23433,7 @@ window.vocabN2_Nouns = [
   "word": "三角",
   "reading": "さんかく",
   "romaji": "sankaku",
-  "meaning_id": "triangle; triangular",
+  "meaning_id": "segitiga",
   "meaning_en": "triangle; triangular",
   "jlpt": "n2",
   "pos": "noun",
@@ -23056,12 +23454,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "どうやったら三角のおにぎりができるの？何度やっても丸いおにぎりしかできないよ。",
-      "id": "How do you make a triangle-shaped onigiri? No matter how many times I try I can only make round onigiri.",
+      "id": "Bagaimana cara membuat onigiri berbentuk segitiga? Tidak peduli berapa kali aku mencobanya, aku hanya bisa membuat onigiri bulat.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":4,"downstep_mora":1,"contour":"サ＼ンカク"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -23077,7 +23476,7 @@ window.vocabN2_Nouns = [
   "word": "算数",
   "reading": "さんすう",
   "romaji": "sansuu",
-  "meaning_id": "arithmetic",
+  "meaning_id": "aritmatika",
   "meaning_en": "arithmetic",
   "jlpt": "n2",
   "pos": "noun",
@@ -23098,15 +23497,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "算数は数を取り扱う。",
-      "id": "Arithmetic deals with numbers.",
+      "id": "Aritmatika berkaitan dengan angka.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"サンス＼ウ"}
+},
     {
       "jp": "その子は算数ならどんな問題でも解ける。",
-      "id": "The boy can solve any problem in arithmetic.",
+      "id": "Anak laki-laki itu dapat memecahkan masalah apa pun dalam aritmatika.",
       "level": "n2",
       "tags": [
         "umum"
@@ -23127,7 +23527,7 @@ window.vocabN2_Nouns = [
   "word": "酸性",
   "reading": "さんせい",
   "romaji": "sansei",
-  "meaning_id": "acidity",
+  "meaning_id": "keasaman",
   "meaning_en": "acidity",
   "jlpt": "n2",
   "pos": "noun",
@@ -23148,15 +23548,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "パイナップルやレモンのような酸性の果実はすっぱい。",
-      "id": "Acid fruits like pineapples and lemons are sour.",
+      "id": "Buah-buahan asam seperti nanas dan lemon bersifat asam.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"サンセイ￣"}
+},
     {
       "jp": "小学校のときから、酸性・アルカリ性という性質をリトマス紙で調べたりしてきていますね。",
-      "id": "Since primary school we've been checking for the qualities known as acidity and alkalinity with litmus paper.",
+      "id": "Sejak sekolah dasar kami telah memeriksa kualitas yang disebut keasaman dan alkalinitas dengan kertas lakmus.",
       "level": "n2",
       "tags": [
         "umum"
@@ -23177,7 +23578,7 @@ window.vocabN2_Nouns = [
   "word": "産地",
   "reading": "さんち",
   "romaji": "sanchi",
-  "meaning_id": "producing area",
+  "meaning_id": "daerah produksi",
   "meaning_en": "producing area",
   "jlpt": "n2",
   "pos": "noun",
@@ -23198,12 +23599,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "その地方はお茶の産地です。",
-      "id": "The region is a production center for tea leaves.",
+      "id": "Wilayah tersebut merupakan sentra produksi daun teh.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"サ＼ンチ"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -23219,7 +23621,7 @@ window.vocabN2_Nouns = [
   "word": "サンプル",
   "reading": "サンプル",
   "romaji": "sanpuru",
-  "meaning_id": "sample",
+  "meaning_id": "sampel",
   "meaning_en": "sample",
   "jlpt": "n2",
   "pos": "noun",
@@ -23240,15 +23642,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "ＤＮＡのサンプルを貯える事は許されるべきではない。",
-      "id": "It shouldn't be permitted to store samples of DNA.",
+      "id": "Seharusnya tidak diizinkan untuk menyimpan sampel DNA.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":0,"downstep_mora":1,"contour":"＼"}
+},
     {
       "jp": "サンプルは世界２００の医療機関から収集された。",
-      "id": "The samples were collected from two hundred medical institutions all over the world.",
+      "id": "Sampel dikumpulkan dari dua ratus institusi medis di seluruh dunia.",
       "level": "n2",
       "tags": [
         "umum"
@@ -23269,7 +23672,7 @@ window.vocabN2_Nouns = [
   "word": "山林",
   "reading": "さんりん",
   "romaji": "sanrin",
-  "meaning_id": "mountain forest; mountains and forest",
+  "meaning_id": "hutan pegunungan; gunung dan hutan",
   "meaning_en": "mountain forest; mountains and forest",
   "jlpt": "n2",
   "pos": "noun",
@@ -23290,12 +23693,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "山林を使います。",
-      "id": "Menggunakan mountain forest; mountains and forest.",
+      "id": "Menggunakan hutan pegunungan; gunung dan hutan.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"サンリン￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -23311,7 +23715,7 @@ window.vocabN2_Nouns = [
   "word": "シーズン",
   "reading": "シーズン",
   "romaji": "shiizun",
-  "meaning_id": "season (sporting)",
+  "meaning_id": "musim (olahraga)",
   "meaning_en": "season (sporting)",
   "jlpt": "n2",
   "pos": "noun",
@@ -23332,15 +23736,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "まもなく野球シーズンが始まる。",
-      "id": "The baseball season opens before long.",
+      "id": "Musim bisbol akan segera dibuka.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":0,"downstep_mora":1,"contour":"＼"}
+},
     {
       "jp": "私はＸ—ファイル４シーズンを見ました。",
-      "id": "I watched the 4th season of X-files.",
+      "id": "Saya menonton X-files musim ke-4.",
       "level": "n2",
       "tags": [
         "umum"
@@ -23361,7 +23766,7 @@ window.vocabN2_Nouns = [
   "word": "シーツ",
   "reading": "シーツ",
   "romaji": "shiitsu",
-  "meaning_id": "sheet",
+  "meaning_id": "lembar",
   "meaning_en": "sheet",
   "jlpt": "n2",
   "pos": "noun",
@@ -23382,15 +23787,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "彼女はベッドにきれいなシーツを敷いた。",
-      "id": "She put clean sheets on the bed.",
+      "id": "Dia meletakkan seprai bersih di tempat tidur.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":0,"downstep_mora":1,"contour":"＼"}
+},
     {
       "jp": "ベッドの上にシーツが２枚あった。",
-      "id": "Two sheets were on the bed.",
+      "id": "Dua lembar ada di tempat tidur.",
       "level": "n2",
       "tags": [
         "umum"
@@ -23411,7 +23817,7 @@ window.vocabN2_Nouns = [
   "word": "寺院",
   "reading": "じいん",
   "romaji": "jiin",
-  "meaning_id": "temple",
+  "meaning_id": "kuil",
   "meaning_en": "temple",
   "jlpt": "n2",
   "pos": "noun",
@@ -23432,15 +23838,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "この寺院は７８０年に建てられた。",
-      "id": "This temple dates back to 780.",
+      "id": "Kuil ini dibangun pada tahun 780.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"ジ＼イン"}
+},
     {
       "jp": "京都は古い寺院で有名である。",
-      "id": "Kyoto is famous for its old temples.",
+      "id": "Kyoto terkenal dengan kuil-kuil kunonya.",
       "level": "n2",
       "tags": [
         "umum"
@@ -23461,7 +23868,7 @@ window.vocabN2_Nouns = [
   "word": "しいんと",
   "reading": "しいんと",
   "romaji": "shiinto",
-  "meaning_id": "silent (as the grave); (deathly) quiet",
+  "meaning_id": "diam (seperti kuburan); (mematikan) tenang",
   "meaning_en": "silent (as the grave); (deathly) quiet",
   "jlpt": "n2",
   "pos": "noun",
@@ -23490,7 +23897,7 @@ window.vocabN2_Nouns = [
     },
     {
       "jp": "彼の死因はガンだった。",
-      "id": "He died of cancer.",
+      "id": "Dia meninggal karena kanker.",
       "level": "n2",
       "tags": [
         "umum"
@@ -23511,7 +23918,7 @@ window.vocabN2_Nouns = [
   "word": "時間割",
   "reading": "じかんわり",
   "romaji": "jikanwari",
-  "meaning_id": "timetable; schedule",
+  "meaning_id": "jadwal",
   "meaning_en": "timetable; schedule",
   "jlpt": "n2",
   "pos": "noun",
@@ -23532,15 +23939,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "私たちは時間割に従って勉強する。",
-      "id": "We study according to the schedule.",
+      "id": "Kami belajar sesuai jadwal.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":5,"downstep_mora":0,"contour":"ジカンワリ￣"}
+},
     {
       "jp": "時間割をもらえますか。",
-      "id": "May I have a class schedule?",
+      "id": "Bolehkah saya minta jadwal kelasnya?",
       "level": "n2",
       "tags": [
         "umum"
@@ -23561,7 +23969,7 @@ window.vocabN2_Nouns = [
   "word": "四季",
   "reading": "しき",
   "romaji": "shiki",
-  "meaning_id": "four seasons",
+  "meaning_id": "empat musim",
   "meaning_en": "four seasons",
   "jlpt": "n2",
   "pos": "noun",
@@ -23582,15 +23990,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "四季のうちで春が一番好きだ。",
-      "id": "Spring is my favourite of the four seasons.",
+      "id": "Musim semi adalah favorit saya dari empat musim.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"odaka","mora_count":2,"downstep_mora":2,"contour":"シキ＼"}
+},
     {
       "jp": "一年には四季があります。",
-      "id": "Ada four seasons in a year.",
+      "id": "Ada empat musim dalam setahun.",
       "level": "n2",
       "tags": [
         "umum"
@@ -23611,7 +24020,7 @@ window.vocabN2_Nouns = [
   "word": "敷地",
   "reading": "しきち",
   "romaji": "shikichi",
-  "meaning_id": "site",
+  "meaning_id": "situs",
   "meaning_en": "site",
   "jlpt": "n2",
   "pos": "noun",
@@ -23632,15 +24041,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "彼らは石を並べて家の敷地の境界にした。",
-      "id": "They marked off the land for their house with rows of stones.",
+      "id": "Mereka menandai tanah untuk rumah mereka dengan deretan batu.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"シキチ￣"}
+},
     {
       "jp": "学校の敷地はこの垣根まで続いている。",
-      "id": "The school grounds extend as far as this fence.",
+      "id": "Halaman sekolah terbentang sampai ke pagar ini.",
       "level": "n2",
       "tags": [
         "umum"
@@ -23661,7 +24071,7 @@ window.vocabN2_Nouns = [
   "word": "至急",
   "reading": "しきゅう",
   "romaji": "shikyuu",
-  "meaning_id": "urgent; pressing",
+  "meaning_id": "mendesak; menekan",
   "meaning_en": "urgent; pressing",
   "jlpt": "n2",
   "pos": "noun",
@@ -23682,15 +24092,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "彼女は私に至急電報を打ってきた。",
-      "id": "She sent me an urgent telegram.",
+      "id": "Dia mengirimiku telegram penting.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"シキュウ￣"}
+},
     {
       "jp": "至急電報が彼女を大急ぎで東京に連れ戻した。",
-      "id": "An urgent telegram brought her hurrying back to Tokyo.",
+      "id": "Sebuah telegram penting membawanya bergegas kembali ke Tokyo.",
       "level": "n2",
       "tags": [
         "umum"
@@ -23711,7 +24122,7 @@ window.vocabN2_Nouns = [
   "word": "磁石",
   "reading": "じしゃく",
   "romaji": "jishaku",
-  "meaning_id": "magnet",
+  "meaning_id": "batu magnet",
   "meaning_en": "magnet",
   "jlpt": "n2",
   "pos": "noun",
@@ -23732,15 +24143,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "キートンはハトの頭に磁石を取り付けた。",
-      "id": "Keeton put magnets on the heads of his pigeons.",
+      "id": "Keeton memasang magnet di kepala merpatinya.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"ジ＼シャク"}
+},
     {
       "jp": "磁石の針は北を指す。",
-      "id": "Compass needles point to the north.",
+      "id": "Jarum kompas mengarah ke utara.",
       "level": "n2",
       "tags": [
         "umum"
@@ -23761,7 +24173,7 @@ window.vocabN2_Nouns = [
   "word": "姿勢",
   "reading": "しせい",
   "romaji": "shisei",
-  "meaning_id": "attitude; posture",
+  "meaning_id": "sikap",
   "meaning_en": "attitude; posture",
   "jlpt": "n2",
   "pos": "noun",
@@ -23782,15 +24194,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "彼はまっすぐな姿勢で立っていた。",
-      "id": "He stood in an upright position.",
+      "id": "Dia berdiri dalam posisi tegak.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"シセイ￣"}
+},
     {
       "jp": "彼は楽な姿勢で横になった。",
-      "id": "He lay down in a comfortable position.",
+      "id": "Dia berbaring dalam posisi yang nyaman.",
       "level": "n2",
       "tags": [
         "umum"
@@ -23811,7 +24224,7 @@ window.vocabN2_Nouns = [
   "word": "自然科学",
   "reading": "しぜんかがく",
   "romaji": "shizenkagaku",
-  "meaning_id": "natural science",
+  "meaning_id": "ilmu alam",
   "meaning_en": "natural science",
   "jlpt": "n2",
   "pos": "noun",
@@ -23832,15 +24245,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "その大学の課程は自然科学と社会科学から成り立っている。",
-      "id": "That university's curriculum covers natural science and social science.",
+      "id": "Kurikulum universitas tersebut mencakup ilmu alam dan ilmu sosial.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":4,"category":"nakadaka","mora_count":6,"downstep_mora":4,"contour":"シゼンカ＼ガク"}
+},
     {
       "jp": "娘は言語や芸術よりも自然科学が好きです。",
-      "id": "My daughter prefers science to languages or art.",
+      "id": "Putri saya lebih menyukai sains daripada bahasa atau seni.",
       "level": "n2",
       "tags": [
         "umum"
@@ -23861,7 +24275,7 @@ window.vocabN2_Nouns = [
   "word": "時速",
   "reading": "じそく",
   "romaji": "jisoku",
-  "meaning_id": "speed (per hour)",
+  "meaning_id": "kecepatan (per jam)",
   "meaning_en": "speed (per hour)",
   "jlpt": "n2",
   "pos": "noun",
@@ -23882,15 +24296,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "この車は時速６０キロで走っている。",
-      "id": "This car is going 60km an hour.",
+      "id": "Mobil ini melaju dengan kecepatan 60 km per jam.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ジソク￣"}
+},
     {
       "jp": "彼は時速８０キロで車を運転した。",
-      "id": "He drove the car at eighty kilometers an hour.",
+      "id": "Dia mengendarai mobil dengan kecepatan delapan puluh kilometer per jam.",
       "level": "n2",
       "tags": [
         "umum"
@@ -23932,15 +24347,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "子孫にきれいな、緑の地球を残したい。",
-      "id": "We want to leave our descendants a clean and green earth.",
+      "id": "Kami ingin mewariskan bumi yang bersih dan hijau kepada keturunan kami.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"シ＼ソン"}
+},
     {
       "jp": "もし核戦争になったら、われわれの子孫はどうなるのでしょう。",
-      "id": "What will become of our offspring if a nuclear war breaks out?",
+      "id": "Apa yang akan terjadi pada keturunan kita jika terjadi perang nuklir?",
       "level": "n2",
       "tags": [
         "umum"
@@ -23961,7 +24377,7 @@ window.vocabN2_Nouns = [
   "word": "死体",
   "reading": "したい",
   "romaji": "shitai",
-  "meaning_id": "corpse",
+  "meaning_id": "mayat",
   "meaning_en": "corpse",
   "jlpt": "n2",
   "pos": "noun",
@@ -23982,12 +24398,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "警官たちはその死体を運び去った。",
-      "id": "The policemen carried away the body.",
+      "id": "Polisi membawa jenazahnya.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"シタイ￣"}
+},
     {
       "jp": "これが死体の発見された部屋です。",
       "id": "Ini adalah the room where the body was found.",
@@ -24011,7 +24428,7 @@ window.vocabN2_Nouns = [
   "word": "下町",
   "reading": "したまち",
   "romaji": "shitamachi",
-  "meaning_id": "Shitamachi; lower parts of town",
+  "meaning_id": "Shitamachi; bagian bawah kota",
   "meaning_en": "Shitamachi; lower parts of town",
   "jlpt": "n2",
   "pos": "noun",
@@ -24032,15 +24449,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "彼女は下町で生まれ育った。",
-      "id": "She was born and brought up on the backstreets.",
+      "id": "Dia dilahirkan dan dibesarkan di jalan-jalan belakang.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"シタマチ￣"}
+},
     {
       "jp": "ディッケンズの考えが、ロンドンの下町の生き生きした描写と共に読者には伝わる。",
-      "id": "Dickens' thoughts come across along with the vivid depiction of old London.",
+      "id": "Pemikiran Dickens muncul seiring dengan gambaran nyata kota London kuno.",
       "level": "n2",
       "tags": [
         "umum"
@@ -24061,7 +24479,7 @@ window.vocabN2_Nouns = [
   "word": "自治",
   "reading": "じち",
   "romaji": "jichi",
-  "meaning_id": "self-government; autonomy",
+  "meaning_id": "pemerintahan sendiri; otonomi",
   "meaning_en": "self-government; autonomy",
   "jlpt": "n2",
   "pos": "noun",
@@ -24082,12 +24500,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "その教師は学生自治委員会の決定を支持した。",
-      "id": "The teacher affirmed the decision of the student council.",
+      "id": "Guru menegaskan keputusan OSIS.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":2,"downstep_mora":1,"contour":"ジ＼チ"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -24103,7 +24522,7 @@ window.vocabN2_Nouns = [
   "word": "実感",
   "reading": "じっかん",
   "romaji": "jikkan",
-  "meaning_id": "feelings (actual, true)",
+  "meaning_id": "perasaan (aktual, benar)",
   "meaning_en": "feelings (actual, true)",
   "jlpt": "n2",
   "pos": "noun",
@@ -24124,15 +24543,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "オーストラリアへ行って初めて、日本はなんと小さい国かと実感した。",
-      "id": "I didn't realize till I visited Australia how small Japan really is.",
+      "id": "Saya tidak menyadari sampai saya mengunjungi Australia betapa kecilnya Jepang sebenarnya.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ジッカン￣"}
+},
     {
       "jp": "動けるようになると健康の有難さを実感しますよね。",
-      "id": "It's when you become able to move that the real value of health hits home.",
+      "id": "Saat Anda mampu bergerak, nilai kesehatan yang sebenarnya akan terasa.",
       "level": "n2",
       "tags": [
         "umum"
@@ -24174,15 +24594,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "夏はとても湿気が多いんです。",
-      "id": "In the summer, it's very humid.",
+      "id": "Di musim panas, cuacanya sangat lembab.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"シッケ￣"}
+},
     {
       "jp": "当地の夏はひどく湿気が多い。",
-      "id": "It gets very humid here in the summer.",
+      "id": "Di sini menjadi sangat lembab di musim panas.",
       "level": "n2",
       "tags": [
         "umum"
@@ -24203,7 +24624,7 @@ window.vocabN2_Nouns = [
   "word": "湿度",
   "reading": "しつど",
   "romaji": "shitsudo",
-  "meaning_id": "level of humidity",
+  "meaning_id": "tingkat kelembaban",
   "meaning_en": "level of humidity",
   "jlpt": "n2",
   "pos": "noun",
@@ -24224,15 +24645,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "ニューヨークの天候は、夏は暑く湿度も高い。",
-      "id": "New York weather is hot and humid in the summer.",
+      "id": "Cuaca New York panas dan lembab di musim panas.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"シツ＼ド"}
+},
     {
       "jp": "暑かった。その上湿度が高かった。",
-      "id": "It was hot, and in addition, it was humid.",
+      "id": "Saat itu panas, dan selain itu, lembab.",
       "level": "n2",
       "tags": [
         "umum"
@@ -24253,7 +24675,7 @@ window.vocabN2_Nouns = [
   "word": "実物",
   "reading": "じつぶつ",
   "romaji": "jitsubutsu",
-  "meaning_id": "real thing; original",
+  "meaning_id": "hal yang nyata; asli",
   "meaning_en": "real thing; original",
   "jlpt": "n2",
   "pos": "noun",
@@ -24274,12 +24696,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "あの彼の写真は実物より悪く撮れている。",
-      "id": "That picture does not do justice to him.",
+      "id": "Gambaran itu tidak adil baginya.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ジツブツ￣"}
+},
     {
       "jp": "これは実物そっくりだ、生き写しだ。",
       "id": "Ini adalah the spitting image of the real thing, perfectly true to life.",
@@ -24303,7 +24726,7 @@ window.vocabN2_Nouns = [
   "word": "しっぽ",
   "reading": "しっぽ",
   "romaji": "shippo",
-  "meaning_id": "tail (animal)",
+  "meaning_id": "ekor (hewan)",
   "meaning_en": "tail (animal)",
   "jlpt": "n2",
   "pos": "noun",
@@ -24324,15 +24747,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "その犬はしっぽを振っていた。",
-      "id": "The dog was wagging his tail.",
+      "id": "Anjing itu mengibaskan ekornya.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"odaka","mora_count":3,"downstep_mora":3,"contour":"シッポ＼"}
+},
     {
       "jp": "子犬がしっぽをふってついてきた。",
-      "id": "A puppy followed me wagging its tail.",
+      "id": "Seekor anak anjing mengikuti saya sambil mengibaskan ekornya.",
       "level": "n2",
       "tags": [
         "umum"
@@ -24353,7 +24777,7 @@ window.vocabN2_Nouns = [
   "word": "実用",
   "reading": "じつよう",
   "romaji": "jitsuyou",
-  "meaning_id": "practical use; utility",
+  "meaning_id": "penggunaan praktis; utilitas",
   "meaning_en": "practical use; utility",
   "jlpt": "n2",
   "pos": "noun",
@@ -24374,15 +24798,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "そのような技術は多くの実用が可能であろう。",
-      "id": "Such skills could be put to many practical uses.",
+      "id": "Keterampilan seperti itu dapat dimanfaatkan untuk banyak kegunaan praktis.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ジツヨウ￣"}
+},
     {
       "jp": "実用性と芸術性が相まって住みよい家ができる。",
-      "id": "Practical utility and artistic beauty combine to make a comfortable house to live in.",
+      "id": "Kegunaan praktis dan keindahan artistik berpadu menjadikan rumah nyaman untuk ditinggali.",
       "level": "n2",
       "tags": [
         "umum"
@@ -24424,12 +24849,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "けっきょく、実力が勝つ。",
-      "id": "Real ability wins in the end.",
+      "id": "Kemampuan nyata menang pada akhirnya.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ジツリョク￣"}
+},
     {
       "jp": "彼はメキメキ英語の実力をつけている。",
       "id": "Dia making great progress in English.",
@@ -24453,7 +24879,7 @@ window.vocabN2_Nouns = [
   "word": "実例",
   "reading": "じつれい",
   "romaji": "jitsurei",
-  "meaning_id": "example; illustration",
+  "meaning_id": "contoh; ilustrasi",
   "meaning_en": "example; illustration",
   "jlpt": "n2",
   "pos": "noun",
@@ -24474,15 +24900,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "実例は教訓にまさる。",
-      "id": "Example is better than precept.",
+      "id": "Teladan lebih baik dari pada ajaran.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ジツレイ￣"}
+},
     {
       "jp": "彼は私に実例をあたえてくれた。",
-      "id": "He gave me an example.",
+      "id": "Dia memberi saya sebuah contoh.",
       "level": "n2",
       "tags": [
         "umum"
@@ -24503,7 +24930,7 @@ window.vocabN2_Nouns = [
   "word": "私鉄",
   "reading": "してつ",
   "romaji": "shitetsu",
-  "meaning_id": "private railway",
+  "meaning_id": "kereta api swasta",
   "meaning_en": "private railway",
   "jlpt": "n2",
   "pos": "noun",
@@ -24528,8 +24955,9 @@ window.vocabN2_Nouns = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"シテツ￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -24545,7 +24973,7 @@ window.vocabN2_Nouns = [
   "word": "児童",
   "reading": "じどう",
   "romaji": "jidou",
-  "meaning_id": "children; juvenile",
+  "meaning_id": "anak-anak; remaja",
   "meaning_en": "children; juvenile",
   "jlpt": "n2",
   "pos": "noun",
@@ -24566,15 +24994,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "その学校の児童はみんなその新しい先生になついた。",
-      "id": "Every child in the school took to the new teacher.",
+      "id": "Setiap anak di sekolah menerima guru baru.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"ジ＼ドウ"}
+},
     {
       "jp": "児童はみんなその新しい先生が好きになった。",
-      "id": "Every child took to the new teacher.",
+      "id": "Setiap anak mengikuti guru baru.",
       "level": "n2",
       "tags": [
         "umum"
@@ -24595,7 +25024,7 @@ window.vocabN2_Nouns = [
   "word": "地盤",
   "reading": "じばん",
   "romaji": "jiban",
-  "meaning_id": "(the) ground",
+  "meaning_id": "(di) tanah",
   "meaning_en": "(the) ground",
   "jlpt": "n2",
   "pos": "noun",
@@ -24620,8 +25049,9 @@ window.vocabN2_Nouns = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ジバン￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -24658,15 +25088,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "５ポンド紙幣をお持ちですか。",
-      "id": "Do you have a five-pound note?",
+      "id": "Apakah Anda memiliki uang kertas lima pound?",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"シ＼ヘイ"}
+},
     {
       "jp": "紙幣が合計５０枚になる。",
-      "id": "The bill amounts to fifty dollars.",
+      "id": "Tagihannya berjumlah lima puluh dolar.",
       "level": "n2",
       "tags": [
         "umum"
@@ -24687,7 +25118,7 @@ window.vocabN2_Nouns = [
   "word": "縞",
   "reading": "しま",
   "romaji": "shima",
-  "meaning_id": "stripe",
+  "meaning_id": "garis",
   "meaning_en": "stripe",
   "jlpt": "n2",
   "pos": "noun",
@@ -24708,12 +25139,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "あのグリーンの縞のシャツ、今洗濯してるん？",
-      "id": "Is that green striped shirt in the wash?",
+      "id": "Apakah kemeja bergaris hijau itu sedang dicuci?",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":2,"category":"odaka","mora_count":2,"downstep_mora":2,"contour":"シマ＼"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -24729,7 +25161,7 @@ window.vocabN2_Nouns = [
   "word": "氏名",
   "reading": "しめい",
   "romaji": "shimei",
-  "meaning_id": "full name; identity",
+  "meaning_id": "nama lengkap; identitas",
   "meaning_en": "full name; identity",
   "jlpt": "n2",
   "pos": "noun",
@@ -24750,15 +25182,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "この封筒に住所・氏名を書きなさい。",
-      "id": "Write your name and address on this envelope.",
+      "id": "Tulis nama dan alamat Anda di amplop ini.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"シ＼メイ"}
+},
     {
       "jp": "あなたの氏名は何ですか。",
-      "id": "What is your name?",
+      "id": "Siapa namamu?",
       "level": "n2",
       "tags": [
         "umum"
@@ -24804,11 +25237,12 @@ window.vocabN2_Nouns = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"シメキリ￣"}
+},
     {
       "jp": "締め切りに間に合わせるために、私は夜通し働いた。",
-      "id": "I worked all night so as to meet the deadline.",
+      "id": "Saya bekerja sepanjang malam untuk memenuhi tenggat waktu.",
       "level": "n2",
       "tags": [
         "umum"
@@ -24829,7 +25263,7 @@ window.vocabN2_Nouns = [
   "word": "ジャーナリスト",
   "reading": "ジャーナリスト",
   "romaji": "jaanarisuto",
-  "meaning_id": "journalist",
+  "meaning_id": "jurnalis",
   "meaning_en": "journalist",
   "jlpt": "n2",
   "pos": "noun",
@@ -24850,15 +25284,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "そのジャーナリストはいわゆる国際人だ。",
-      "id": "The journalist is what you call a cosmopolitan.",
+      "id": "Jurnalis adalah apa yang Anda sebut sebagai kosmopolitan.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":4,"category":"nakadaka","mora_count":0,"downstep_mora":0,"contour":"￣"}
+},
     {
       "jp": "ジャーナリストになりたいんです。",
-      "id": "I hope to be a journalist.",
+      "id": "Saya berharap menjadi seorang jurnalis.",
       "level": "n2",
       "tags": [
         "umum"
@@ -24879,7 +25314,7 @@ window.vocabN2_Nouns = [
   "word": "社会科学",
   "reading": "しゃかいかがく",
   "romaji": "shakaikagaku",
-  "meaning_id": "social science",
+  "meaning_id": "ilmu sosial",
   "meaning_en": "social science",
   "jlpt": "n2",
   "pos": "noun",
@@ -24900,12 +25335,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "その大学の課程は自然科学と社会科学から成り立っている。",
-      "id": "That university's curriculum covers natural science and social science.",
+      "id": "Kurikulum universitas tersebut mencakup ilmu alam dan ilmu sosial.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":4,"category":"nakadaka","mora_count":6,"downstep_mora":4,"contour":"シャカイカ＼ガク"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -24921,7 +25357,7 @@ window.vocabN2_Nouns = [
   "word": "蛇口",
   "reading": "じゃぐち",
   "romaji": "jaguchi",
-  "meaning_id": "faucet; tap",
+  "meaning_id": "keran; ketuk",
   "meaning_en": "faucet; tap",
   "jlpt": "n2",
   "pos": "noun",
@@ -24942,15 +25378,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "この蛇口は使えません。故障しています。",
-      "id": "You can't use this faucet. It's out of order.",
+      "id": "Anda tidak dapat menggunakan keran ini. Ini rusak.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ジャグチ￣"}
+},
     {
       "jp": "水が壊れた蛇口から吹き出した。",
-      "id": "Water spouted from the broken faucet.",
+      "id": "Air menyembur dari keran yang rusak.",
       "level": "n2",
       "tags": [
         "umum"
@@ -24971,7 +25408,7 @@ window.vocabN2_Nouns = [
   "word": "弱点",
   "reading": "じゃくてん",
   "romaji": "jakuten",
-  "meaning_id": "weak point; weakness",
+  "meaning_id": "titik lemah; kelemahan",
   "meaning_en": "weak point; weakness",
   "jlpt": "n2",
   "pos": "noun",
@@ -24992,15 +25429,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "数学は彼女の弱点です。",
-      "id": "Mathematics is her weak point.",
+      "id": "Matematika adalah titik lemahnya.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"ジャクテ＼ン"}
+},
     {
       "jp": "彼女はその男の弱点につけいった。",
-      "id": "She presumed on his weakness.",
+      "id": "Dia menduga kelemahannya.",
       "level": "n2",
       "tags": [
         "umum"
@@ -25021,7 +25459,7 @@ window.vocabN2_Nouns = [
   "word": "車庫",
   "reading": "しゃこ",
   "romaji": "shako",
-  "meaning_id": "garage; car shed",
+  "meaning_id": "garasi; gudang mobil",
   "meaning_en": "garage; car shed",
   "jlpt": "n2",
   "pos": "noun",
@@ -25042,15 +25480,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "私は車庫付きの家を借りた。",
-      "id": "I rented a house with a garage.",
+      "id": "Saya menyewa rumah dengan garasi.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":2,"downstep_mora":1,"contour":"シャ＼コ"}
+},
     {
       "jp": "彼は車をバックさせて車庫に入れた。",
-      "id": "He backed his car into the garage.",
+      "id": "Dia memundurkan mobilnya ke garasi.",
       "level": "n2",
       "tags": [
         "umum"
@@ -25071,7 +25510,7 @@ window.vocabN2_Nouns = [
   "word": "車掌",
   "reading": "しゃしょう",
   "romaji": "shashou",
-  "meaning_id": "(train) conductor",
+  "meaning_id": "(kereta api) kondektur",
   "meaning_en": "(train) conductor",
   "jlpt": "n2",
   "pos": "noun",
@@ -25092,15 +25531,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "オレンジカードは車掌が販売している。",
-      "id": "\"Orange Cards\" are available from the conductor.",
+      "id": "\"Kartu Oranye\" tersedia dari kondektur.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"シャショウ￣"}
+},
     {
       "jp": "車掌さん。次の町ってどこですか？",
-      "id": "Say, Conductor! What's the next town?",
+      "id": "Katakan, Konduktor! Apa kota berikutnya?",
       "level": "n2",
       "tags": [
         "umum"
@@ -25121,7 +25561,7 @@ window.vocabN2_Nouns = [
   "word": "社説",
   "reading": "しゃせつ",
   "romaji": "shasetsu",
-  "meaning_id": "editorial; leading article",
+  "meaning_id": "redaksi; artikel terkemuka",
   "meaning_en": "editorial; leading article",
   "jlpt": "n2",
   "pos": "noun",
@@ -25142,15 +25582,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "今朝の新聞の社説を読みましたか。",
-      "id": "Have you read the leading article in today's paper?",
+      "id": "Sudahkah Anda membaca artikel utama di koran hari ini?",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"シャセツ￣"}
+},
     {
       "jp": "今日の社説でそれを読んだ。",
-      "id": "I read it in today's edition.",
+      "id": "Saya membacanya di edisi hari ini.",
       "level": "n2",
       "tags": [
         "umum"
@@ -25171,7 +25612,7 @@ window.vocabN2_Nouns = [
   "word": "シャッター",
   "reading": "シャッター",
   "romaji": "shattaa",
-  "meaning_id": "shutter",
+  "meaning_id": "rana",
   "meaning_en": "shutter",
   "jlpt": "n2",
   "pos": "noun",
@@ -25192,15 +25633,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "シャッターを押してくれますか。",
-      "id": "Could you press this button?",
+      "id": "Bisakah Anda menekan tombol ini?",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":0,"downstep_mora":1,"contour":"＼"}
+},
     {
       "jp": "これがシャッターです。押すだけです。",
-      "id": "The shutter's over here. All you have to do is press it.",
+      "id": "Penutupnya ada di sini. Yang harus Anda lakukan hanyalah menekannya.",
       "level": "n2",
       "tags": [
         "umum"
@@ -25221,7 +25663,7 @@ window.vocabN2_Nouns = [
   "word": "車輪",
   "reading": "しゃりん",
   "romaji": "sharin",
-  "meaning_id": "(car) wheel",
+  "meaning_id": "roda (mobil).",
   "meaning_en": "(car) wheel",
   "jlpt": "n2",
   "pos": "noun",
@@ -25242,15 +25684,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "一輪車は車輪がひとつしかありません。",
-      "id": "A unicycle has only one wheel.",
+      "id": "Sepeda roda satu hanya memiliki satu roda.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"シャリン￣"}
+},
     {
       "jp": "車輪はゆっくり転がり始めた。",
-      "id": "The wheel began to roll slowly.",
+      "id": "Roda mulai berputar perlahan.",
       "level": "n2",
       "tags": [
         "umum"
@@ -25292,12 +25735,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "非常にうまい洒落だったので、満場爆笑した。",
-      "id": "It was such a nice joke that everybody burst out laughing.",
+      "id": "Itu adalah lelucon yang bagus sehingga semua orang tertawa.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":2,"downstep_mora":0,"contour":"シャレ￣"}
+},
     {
       "jp": "私たちはその教授が昔から言っているしゃれにうんざりしている。",
       "id": "Kami tired of the professor's old joke.",
@@ -25321,7 +25765,7 @@ window.vocabN2_Nouns = [
   "word": "習字",
   "reading": "しゅうじ",
   "romaji": "shuuji",
-  "meaning_id": "penmanship",
+  "meaning_id": "tulisan tangan",
   "meaning_en": "penmanship",
   "jlpt": "n2",
   "pos": "noun",
@@ -25342,12 +25786,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "手本を見ながら習字をしました。",
-      "id": "I practiced calligraphy by looking at examples.",
+      "id": "Saya berlatih kaligrafi dengan melihat contoh.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"シュウジ￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -25384,15 +25829,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "その患者は重態だ。",
-      "id": "The patient is in critical condition.",
+      "id": "Pasien dalam kondisi kritis.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ジュウタイ￣"}
+},
     {
       "jp": "メアリーは重態だ。死にかけているのではないだろうか。",
-      "id": "Mary is very ill and I'm afraid she is dying.",
+      "id": "Mary sakit parah dan saya khawatir dia sekarat.",
       "level": "n2",
       "tags": [
         "umum"
@@ -25413,7 +25859,7 @@ window.vocabN2_Nouns = [
   "word": "じゅうたん",
   "reading": "じゅうたん",
   "romaji": "juutan",
-  "meaning_id": "carpet",
+  "meaning_id": "karpet",
   "meaning_en": "carpet",
   "jlpt": "n2",
   "pos": "noun",
@@ -25434,15 +25880,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "猫はじゅうたんをひっかき始めた。",
-      "id": "The cat started to scratch the carpet.",
+      "id": "Kucing itu mulai menggaruk karpet.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ジュウタン￣"}
+},
     {
       "jp": "新しいじゅうたんが欲しい。",
-      "id": "We want a new carpet.",
+      "id": "Kami ingin karpet baru.",
       "level": "n2",
       "tags": [
         "umum"
@@ -25463,7 +25910,7 @@ window.vocabN2_Nouns = [
   "word": "終点",
   "reading": "しゅうてん",
   "romaji": "shuuten",
-  "meaning_id": "terminus; last stop (e.g train)",
+  "meaning_id": "ujung; perhentian terakhir (misalnya kereta api)",
   "meaning_en": "terminus; last stop (e.g train)",
   "jlpt": "n2",
   "pos": "noun",
@@ -25484,15 +25931,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "この線の終点はどこですか。",
-      "id": "Where is the end of this line?",
+      "id": "Di manakah akhir baris ini?",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"シュウテン￣"}
+},
     {
       "jp": "車がいかれるかと思ったころ終点に着きました。",
-      "id": "We reached our destination just as I thought the car was going to give up the ghost.",
+      "id": "Kami mencapai tujuan tepat ketika saya mengira mobil itu akan melepaskan hantunya.",
       "level": "n2",
       "tags": [
         "umum"
@@ -25534,15 +25982,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "このショーではロボットに重点がおかれている。",
-      "id": "In this show, the accent is on robots.",
+      "id": "Dalam pertunjukan ini, aksennya ada pada robot.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"ジュウテ＼ン"}
+},
     {
       "jp": "この辞書は特に語法に重点を置いている。",
-      "id": "This dictionary puts a special emphasis on usage.",
+      "id": "Kamus ini memberikan penekanan khusus pada penggunaan.",
       "level": "n2",
       "tags": [
         "umum"
@@ -25584,15 +26033,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "北極圏とは北極周辺の地域の事である。",
-      "id": "The Arctic is the area round the North Pole.",
+      "id": "Arktik adalah wilayah di sekitar Kutub Utara.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"シュウヘン￣"}
+},
     {
       "jp": "ケイトのお父さんは家の周辺にいる。",
-      "id": "Kate's father is about the house.",
+      "id": "Ayah Kate adalah tentang rumah.",
       "level": "n2",
       "tags": [
         "umum"
@@ -25613,7 +26063,7 @@ window.vocabN2_Nouns = [
   "word": "重役",
   "reading": "じゅうやく",
   "romaji": "juuyaku",
-  "meaning_id": "director; high executive",
+  "meaning_id": "direktur; eksekutif tinggi",
   "meaning_en": "director; high executive",
   "jlpt": "n2",
   "pos": "noun",
@@ -25634,15 +26084,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "彼はどこかの会社の重役に違いない。",
-      "id": "One must be an executive in some company.",
+      "id": "Seseorang harus menjadi eksekutif di suatu perusahaan.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ジュウヤク￣"}
+},
     {
       "jp": "われわれは重役と向かい合って座った。",
-      "id": "We sat face to face with executives.",
+      "id": "Kami duduk berhadapan dengan para eksekutif.",
       "level": "n2",
       "tags": [
         "umum"
@@ -25663,7 +26114,7 @@ window.vocabN2_Nouns = [
   "word": "重量",
   "reading": "じゅうりょう",
   "romaji": "juuryou",
-  "meaning_id": "weight; heavyweight boxer",
+  "meaning_id": "berat; petinju kelas berat",
   "meaning_en": "weight; heavyweight boxer",
   "jlpt": "n2",
   "pos": "noun",
@@ -25684,15 +26135,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "体積が大きいからといって常に重量も重いとは限らない。",
-      "id": "Great bulk does not always mean great weight.",
+      "id": "Bobot yang besar tidak selalu berarti bobot yang besar.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"ジュウリョ＼ウ"}
+},
     {
       "jp": "このバッグは４キロの重量オーバーです。",
-      "id": "This bag is 4 kilograms overweight.",
+      "id": "Tas ini kelebihan berat badan 4 kilogram.",
       "level": "n2",
       "tags": [
         "umum"
@@ -25713,7 +26165,7 @@ window.vocabN2_Nouns = [
   "word": "重力",
   "reading": "じゅうりょく",
   "romaji": "juuryoku",
-  "meaning_id": "gravity",
+  "meaning_id": "gravitasi",
   "meaning_en": "gravity",
   "jlpt": "n2",
   "pos": "noun",
@@ -25734,15 +26186,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "月の重力は地球の６分の１である。",
-      "id": "The gravity of the moon is one-sixth of that of the earth.",
+      "id": "Gravitasi bulan adalah seperenam gravitasi bumi.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":4,"downstep_mora":1,"contour":"ジュ＼ウリョク"}
+},
     {
       "jp": "重力が物を地球の中心に引っ張っている。",
-      "id": "Gravity pulls things toward the center of the earth.",
+      "id": "Gravitasi menarik segala sesuatu menuju pusat bumi.",
       "level": "n2",
       "tags": [
         "umum"
@@ -25788,11 +26241,12 @@ window.vocabN2_Nouns = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ジュクゴ￣"}
+},
     {
       "jp": "今まで私たちは熟語をいくつ勉強しましたか。",
-      "id": "How many idioms have we studied so far?",
+      "id": "Berapa banyak idiom yang telah kita pelajari sejauh ini?",
       "level": "n2",
       "tags": [
         "umum"
@@ -25813,7 +26267,7 @@ window.vocabN2_Nouns = [
   "word": "祝日",
   "reading": "しゅくじつ",
   "romaji": "shukujitsu",
-  "meaning_id": "national holiday",
+  "meaning_id": "hari libur nasional",
   "meaning_en": "national holiday",
   "jlpt": "n2",
   "pos": "noun",
@@ -25834,15 +26288,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "その日は国会の法令によって祝日になった。",
-      "id": "That day was made a holiday by an act of the diet.",
+      "id": "Hari itu dijadikan hari libur dengan melakukan tindakan diet.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"シュクジツ￣"}
+},
     {
       "jp": "私たちは国民の祝日に旗を立てる。",
-      "id": "We put up the flags on national holidays.",
+      "id": "Kami memasang bendera pada hari libur nasional.",
       "level": "n2",
       "tags": [
         "umum"
@@ -25863,7 +26318,7 @@ window.vocabN2_Nouns = [
   "word": "主語",
   "reading": "しゅご",
   "romaji": "shugo",
-  "meaning_id": "(gram) subject",
+  "meaning_id": "(gram) subjek",
   "meaning_en": "(gram) subject",
   "jlpt": "n2",
   "pos": "noun",
@@ -25884,15 +26339,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "文には普通、主語と動詞がある。",
-      "id": "A sentence normally has a subject and a verb.",
+      "id": "Sebuah kalimat biasanya memiliki subjek dan kata kerja.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":2,"downstep_mora":1,"contour":"シュ＼ゴ"}
+},
     {
       "jp": "英語の文構造は大抵、主語、動詞、目的語／補語だ。",
-      "id": "In English, the usual sentence structure is Subject - Verb - Object/Complement.",
+      "id": "Dalam bahasa Inggris, struktur kalimat yang biasa digunakan adalah Subjek – Kata Kerja – Objek/Pelengkap.",
       "level": "n2",
       "tags": [
         "umum"
@@ -25913,7 +26369,7 @@ window.vocabN2_Nouns = [
   "word": "述語",
   "reading": "じゅつご",
   "romaji": "jutsugo",
-  "meaning_id": "predicate",
+  "meaning_id": "predikat",
   "meaning_en": "predicate",
   "jlpt": "n2",
   "pos": "noun",
@@ -25938,8 +26394,9 @@ window.vocabN2_Nouns = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ジュツゴ￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -25955,7 +26412,7 @@ window.vocabN2_Nouns = [
   "word": "寿命",
   "reading": "じゅみょう",
   "romaji": "jumyou",
-  "meaning_id": "life span",
+  "meaning_id": "rentang hidup",
   "meaning_en": "life span",
   "jlpt": "n2",
   "pos": "noun",
@@ -25976,12 +26433,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "これらの発見のおかげで人間の寿命が以前の２倍になった。",
-      "id": "Thanks to these discoveries, man's life span has become twice as long as before.",
+      "id": "Berkat penemuan-penemuan ini, umur manusia menjadi dua kali lebih lama dari sebelumnya.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ジュミョウ￣"}
+},
     {
       "jp": "作動温度が高いと、潤滑剤の寿命は短くなる。",
       "id": "High operating temperatures shorten lubricant life.",
@@ -26005,7 +26463,7 @@ window.vocabN2_Nouns = [
   "word": "主役",
   "reading": "しゅやく",
   "romaji": "shuyaku",
-  "meaning_id": "leading part; leading actor (actress)",
+  "meaning_id": "bagian terdepan; aktor utama (aktris)",
   "meaning_en": "leading part; leading actor (actress)",
   "jlpt": "n2",
   "pos": "noun",
@@ -26026,15 +26484,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "ケイトは映画で主役を演じる機会を与えられました。",
-      "id": "Kate has been given an opportunity to play a major role in a movie.",
+      "id": "Kate telah diberi kesempatan untuk memainkan peran utama dalam sebuah film.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"シュヤク￣"}
+},
     {
       "jp": "ボブは今度の学園祭で初めて主役を演じる。",
-      "id": "Bob will play the leading role for the first time in the next school festival.",
+      "id": "Bob akan memainkan peran utama untuk pertama kalinya di festival sekolah berikutnya.",
       "level": "n2",
       "tags": [
         "umum"
@@ -26055,7 +26514,7 @@ window.vocabN2_Nouns = [
   "word": "受話器",
   "reading": "じゅわき",
   "romaji": "juwaki",
-  "meaning_id": "(telephone) receiver",
+  "meaning_id": "(telepon) penerima",
   "meaning_en": "(telephone) receiver",
   "jlpt": "n2",
   "pos": "noun",
@@ -26076,15 +26535,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "彼は急いで受話器を置いた。",
-      "id": "He put the phone down in haste.",
+      "id": "Dia meletakkan teleponnya dengan tergesa-gesa.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"ジュワ＼キ"}
+},
     {
       "jp": "彼は座るとすぐに受話器をとった。",
-      "id": "As soon as he sat down, he picked up the telephone.",
+      "id": "Begitu dia duduk, dia mengangkat telepon.",
       "level": "n2",
       "tags": [
         "umum"
@@ -26105,7 +26565,7 @@ window.vocabN2_Nouns = [
   "word": "巡査",
   "reading": "じゅんさ",
   "romaji": "junsa",
-  "meaning_id": "police; policeman",
+  "meaning_id": "polisi",
   "meaning_en": "police; policeman",
   "jlpt": "n2",
   "pos": "noun",
@@ -26126,15 +26586,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "すぐに巡査が呼びにやられた。",
-      "id": "A policeman was sent for at once.",
+      "id": "Seorang polisi segera dikirim.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ジュンサ￣"}
+},
     {
       "jp": "巡査はいつものように夜間の巡回中だった。",
-      "id": "The policeman was on his usual nightly round.",
+      "id": "Polisi itu sedang bertugas malam seperti biasanya.",
       "level": "n2",
       "tags": [
         "umum"
@@ -26176,15 +26637,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "まずご両親に話してみるのが順序というものだろう。",
-      "id": "First of all, you should talk it over with your parents.",
+      "id": "Pertama-tama, kamu harus membicarakannya dengan orang tuamu.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"ジュ＼ンジョ"}
+},
     {
       "jp": "何をするにも順序を踏んでやりなさい。",
-      "id": "No matter what you do, you must follow the correct order.",
+      "id": "Apa pun yang Anda lakukan, Anda harus mengikuti urutan yang benar.",
       "level": "n2",
       "tags": [
         "umum"
@@ -26205,7 +26667,7 @@ window.vocabN2_Nouns = [
   "word": "小学生",
   "reading": "しょうがくせい",
   "romaji": "shougakusei",
-  "meaning_id": "grade school student",
+  "meaning_id": "siswa sekolah dasar",
   "meaning_en": "grade school student",
   "jlpt": "n2",
   "pos": "noun",
@@ -26226,15 +26688,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "彼らはそのころ小学生でした。",
-      "id": "They were school children then.",
+      "id": "Saat itu mereka masih anak-anak sekolah.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":6,"downstep_mora":3,"contour":"ショウガ＼クセイ"}
+},
     {
       "jp": "彼はまるで小学生のように赤くなった。",
-      "id": "He reddened like a schoolboy.",
+      "id": "Dia memerah seperti anak sekolah.",
       "level": "n2",
       "tags": [
         "umum"
@@ -26255,7 +26718,7 @@ window.vocabN2_Nouns = [
   "word": "将棋",
   "reading": "しょうぎ",
   "romaji": "shougi",
-  "meaning_id": "Japanese chess",
+  "meaning_id": "catur Jepang",
   "meaning_en": "Japanese chess",
   "jlpt": "n2",
   "pos": "noun",
@@ -26276,12 +26739,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "いつ来てくださっても、将棋の相手をしますよ。",
-      "id": "No matter when you come, I'll play a game of Japanese chess with you.",
+      "id": "Kapan pun kamu datang, aku akan bermain catur Jepang bersamamu.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ショウギ￣"}
+},
     {
       "jp": "私は将棋をすることが好きだ。",
       "id": "I'm fond of playing shogi.",
@@ -26305,7 +26769,7 @@ window.vocabN2_Nouns = [
   "word": "蒸気",
   "reading": "じょうき",
   "romaji": "jouki",
-  "meaning_id": "steam; vapour",
+  "meaning_id": "uap; menguap",
   "meaning_en": "steam; vapour",
   "jlpt": "n2",
   "pos": "noun",
@@ -26326,15 +26790,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "そのエンジンは蒸気で動く。",
-      "id": "The engine is driven by steam.",
+      "id": "Mesinnya digerakkan oleh uap.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"ジョ＼ウキ"}
+},
     {
       "jp": "蒸気でメガネが曇ってしまった。",
-      "id": "The steam has fogged my glasses.",
+      "id": "Uapnya membuat kacamataku berkabut.",
       "level": "n2",
       "tags": [
         "umum"
@@ -26355,7 +26820,7 @@ window.vocabN2_Nouns = [
   "word": "定規",
   "reading": "じょうぎ",
   "romaji": "jougi",
-  "meaning_id": "(measuring) ruler",
+  "meaning_id": "(mengukur) penggaris",
   "meaning_en": "(measuring) ruler",
   "jlpt": "n2",
   "pos": "noun",
@@ -26376,15 +26841,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "私は本を買い、彼は定規を買った。",
-      "id": "I bought a book and he a ruler.",
+      "id": "Saya membeli sebuah buku dan dia seorang penggaris.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"ジョ＼ウギ"}
+},
     {
       "jp": "定規は直線を引くのに役立つ。",
-      "id": "A ruler helps one to draw a straight line.",
+      "id": "Penggaris membantu seseorang menggambar garis lurus.",
       "level": "n2",
       "tags": [
         "umum"
@@ -26426,15 +26892,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "この辞書は初級者に、いやそれどころか上級者にも役に立つ。",
-      "id": "This dictionary is useful to beginners, yes, and to advanced learners.",
+      "id": "Kamus ini berguna untuk pemula, ya, dan untuk pelajar tingkat lanjut.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ジョウキュウ￣"}
+},
     {
       "jp": "例えば、私は、来年進学する大学の単位が実際にもらえる数学の上級クラスにいます。",
-      "id": "For example, I am in a high-level math class that actually gives me college credits for next year.",
+      "id": "Misalnya, saya berada di kelas matematika tingkat tinggi yang sebenarnya memberi saya kredit kuliah untuk tahun depan.",
       "level": "n2",
       "tags": [
         "umum"
@@ -26476,15 +26943,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "英語は商業において役に立つ。",
-      "id": "English is useful in commerce.",
+      "id": "Bahasa Inggris berguna dalam perdagangan.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":4,"downstep_mora":1,"contour":"ショ＼ウギョウ"}
+},
     {
       "jp": "その手紙は商業用語で書かれた。",
-      "id": "The letter was written using business terms.",
+      "id": "Surat itu ditulis menggunakan istilah bisnis.",
       "level": "n2",
       "tags": [
         "umum"
@@ -26505,7 +26973,7 @@ window.vocabN2_Nouns = [
   "word": "賞金",
   "reading": "しょうきん",
   "romaji": "shoukin",
-  "meaning_id": "prize; monetary award",
+  "meaning_id": "hadiah; penghargaan moneter",
   "meaning_en": "prize; monetary award",
   "jlpt": "n2",
   "pos": "noun",
@@ -26526,15 +26994,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "協力者に対しては賞金が出ます。",
-      "id": "You'll get a reward for your cooperation.",
+      "id": "Anda akan mendapat imbalan atas kerja sama Anda.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ショウキン￣"}
+},
     {
       "jp": "彼は賞金を銀行に預金した。",
-      "id": "He deposited the prize money in the bank.",
+      "id": "Dia menyimpan uang hadiahnya di bank.",
       "level": "n2",
       "tags": [
         "umum"
@@ -26576,15 +27045,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "彼は旗を上下に動かした。",
-      "id": "He moved the flags up and down.",
+      "id": "Dia memindahkan benderanya ke atas dan ke bawah.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"ジョ＼ウゲ"}
+},
     {
       "jp": "彼女はその絵を上下さかさまにかえた。",
-      "id": "She hung the picture upside down.",
+      "id": "Dia menggantung gambar itu secara terbalik.",
       "level": "n2",
       "tags": [
         "umum"
@@ -26605,7 +27075,7 @@ window.vocabN2_Nouns = [
   "word": "障子",
   "reading": "しょうじ",
   "romaji": "shouji",
-  "meaning_id": "paper sliding door",
+  "meaning_id": "pintu geser kertas",
   "meaning_en": "paper sliding door",
   "jlpt": "n2",
   "pos": "noun",
@@ -26626,12 +27096,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "壁に耳あり障子に目あり。",
-      "id": "Walls have ears, shouji have eyes.",
+      "id": "Dinding punya telinga, shouji punya mata.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ショウジ￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -26647,7 +27118,7 @@ window.vocabN2_Nouns = [
   "word": "商社",
   "reading": "しょうしゃ",
   "romaji": "shousha",
-  "meaning_id": "trading company; firm",
+  "meaning_id": "perusahaan dagang; tegas",
   "meaning_en": "trading company; firm",
   "jlpt": "n2",
   "pos": "noun",
@@ -26668,15 +27139,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "ニューヨークにはたくさんの商社がある。",
-      "id": "Ada many commercial firms in New York.",
+      "id": "Ada banyak perusahaan komersial di New York.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"ショ＼ウシャ"}
+},
     {
       "jp": "私は商社で働いています。",
-      "id": "I work for a trading company.",
+      "id": "Saya bekerja di sebuah perusahaan dagang.",
       "level": "n2",
       "tags": [
         "umum"
@@ -26697,7 +27169,7 @@ window.vocabN2_Nouns = [
   "word": "上旬",
   "reading": "じょうじゅん",
   "romaji": "joujun",
-  "meaning_id": "first 10 days of month",
+  "meaning_id": "10 hari pertama setiap bulannya",
   "meaning_en": "first 10 days of month",
   "jlpt": "n2",
   "pos": "noun",
@@ -26718,12 +27190,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "７月の上旬は、海に行くのは早いかな？",
-      "id": "I wonder if the first week or so of July is too early to go to the beach.",
+      "id": "Saya ingin tahu apakah sekitar minggu pertama bulan Juli masih terlalu dini untuk pergi ke pantai.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ジョウジュン￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -26739,7 +27212,7 @@ window.vocabN2_Nouns = [
   "word": "小数",
   "reading": "しょうすう",
   "romaji": "shousuu",
-  "meaning_id": "fraction (part of); decimal",
+  "meaning_id": "pecahan (bagian dari); desimal",
   "meaning_en": "fraction (part of); decimal",
   "jlpt": "n2",
   "pos": "noun",
@@ -26760,12 +27233,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "次の分数を小数に直しなさい。",
-      "id": "Convert the following fractions to decimals.",
+      "id": "Ubahlah pecahan berikut menjadi desimal.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"ショウス＼ウ"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -26781,7 +27255,7 @@ window.vocabN2_Nouns = [
   "word": "生ずる",
   "reading": "しょうずる",
   "romaji": "shouzuru",
-  "meaning_id": "me-cause",
+  "meaning_id": "penyebab",
   "meaning_en": "to cause; to arise; to be generated",
   "jlpt": "n2",
   "pos": "noun",
@@ -26802,15 +27276,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "再開発によって地域に便益が生ずる。",
-      "id": "Benefits accrue to the community from reconstruction.",
+      "id": "Manfaat diperoleh masyarakat dari rekonstruksi.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ショウズル￣"}
+},
     {
       "jp": "この構成において、三角形の代わりに長方形を用いても類似の困難が生ずる。",
-      "id": "We encounter similar difficulties when we substitute rectangles for triangles in this configuration.",
+      "id": "Kita menghadapi kesulitan serupa ketika kita mengganti persegi panjang dengan segitiga dalam konfigurasi ini.",
       "level": "n2",
       "tags": [
         "umum"
@@ -26831,7 +27306,7 @@ window.vocabN2_Nouns = [
   "word": "商店",
   "reading": "しょうてん",
   "romaji": "shouten",
-  "meaning_id": "shop; business firm",
+  "meaning_id": "berbelanja; perusahaan bisnis",
   "meaning_en": "shop; business firm",
   "jlpt": "n2",
   "pos": "noun",
@@ -26852,15 +27327,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "この地域は商店が多い。",
-      "id": "Ada many stores in this area.",
+      "id": "Ada banyak toko di daerah ini.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":4,"downstep_mora":1,"contour":"ショ＼ウテン"}
+},
     {
       "jp": "商店も彼を欲しがりませんでした。",
-      "id": "The shop did not want him.",
+      "id": "Toko itu tidak menginginkannya.",
       "level": "n2",
       "tags": [
         "umum"
@@ -26881,7 +27357,7 @@ window.vocabN2_Nouns = [
   "word": "焦点",
   "reading": "しょうてん",
   "romaji": "shouten",
-  "meaning_id": "focus; point",
+  "meaning_id": "fokus; titik",
   "meaning_en": "focus; point",
   "jlpt": "n2",
   "pos": "noun",
@@ -26902,15 +27378,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "話の焦点は内容に置かれている。",
-      "id": "The focus of the talk is put on the content.",
+      "id": "Fokus pembicaraannya adalah pada isi.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":4,"downstep_mora":1,"contour":"ショ＼ウテン"}
+},
     {
       "jp": "顕微鏡の焦点を合わせなさい。",
-      "id": "Adjust the microscope's focus.",
+      "id": "Sesuaikan fokus mikroskop.",
       "level": "n2",
       "tags": [
         "umum"
@@ -26931,7 +27408,7 @@ window.vocabN2_Nouns = [
   "word": "勝敗",
   "reading": "しょうはい",
   "romaji": "shouhai",
-  "meaning_id": "victory or defeat; issue (of battle)",
+  "meaning_id": "kemenangan atau kekalahan; masalah (pertempuran)",
   "meaning_en": "victory or defeat; issue (of battle)",
   "jlpt": "n2",
   "pos": "noun",
@@ -26952,12 +27429,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "勝敗は問題ではない。",
-      "id": "It doesn't matter whether you win or not.",
+      "id": "Tidak masalah apakah Anda menang atau tidak.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ショウハイ￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -26973,7 +27451,7 @@ window.vocabN2_Nouns = [
   "word": "賞品",
   "reading": "しょうひん",
   "romaji": "shouhin",
-  "meaning_id": "prize; trophy",
+  "meaning_id": "hadiah; piala",
   "meaning_en": "prize; trophy",
   "jlpt": "n2",
   "pos": "noun",
@@ -26994,12 +27472,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "先生はジョンに賞品を与えた。",
-      "id": "The teacher gave John a prize.",
+      "id": "Guru memberi John hadiah.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ショウヒン￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -27015,7 +27494,7 @@ window.vocabN2_Nouns = [
   "word": "消防署",
   "reading": "しょうぼうしょ",
   "romaji": "shoubousho",
-  "meaning_id": "fire station",
+  "meaning_id": "stasiun pemadam kebakaran",
   "meaning_en": "fire station",
   "jlpt": "n2",
   "pos": "noun",
@@ -27036,15 +27515,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "消防署に連絡してください。",
-      "id": "Tolong call the fire department.",
+      "id": "Tolong hubungi pemadam kebakaran.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":5,"category":"odaka","mora_count":5,"downstep_mora":5,"contour":"ショウボウショ＼"}
+},
     {
       "jp": "火事のときには消防署に電話しなさい。",
-      "id": "In case of fire, telephone the fire station.",
+      "id": "Jika terjadi kebakaran, teleponlah stasiun pemadam kebakaran.",
       "level": "n2",
       "tags": [
         "umum"
@@ -27065,7 +27545,7 @@ window.vocabN2_Nouns = [
   "word": "正味",
   "reading": "しょうみ",
   "romaji": "shoumi",
-  "meaning_id": "net (weight)",
+  "meaning_id": "bersih (berat)",
   "meaning_en": "net (weight)",
   "jlpt": "n2",
   "pos": "noun",
@@ -27090,8 +27570,9 @@ window.vocabN2_Nouns = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"ショ＼ウミ"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -27107,7 +27588,7 @@ window.vocabN2_Nouns = [
   "word": "正面",
   "reading": "しょうめん",
   "romaji": "shoumen",
-  "meaning_id": "the front; honesty",
+  "meaning_id": "bagian depan; kejujuran",
   "meaning_en": "the front; honesty",
   "jlpt": "n2",
   "pos": "noun",
@@ -27128,15 +27609,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "正面のドアは鍵がかかったままだった。",
-      "id": "The front door remained locked.",
+      "id": "Pintu depan tetap terkunci.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"ショウメ＼ン"}
+},
     {
       "jp": "この建物は正面から見ると大きいが横から見るとそうでもない。",
-      "id": "This building looks large from the front, but not from the side.",
+      "id": "Bangunan ini terlihat besar dari depan, namun tidak dari samping.",
       "level": "n2",
       "tags": [
         "umum"
@@ -27157,7 +27639,7 @@ window.vocabN2_Nouns = [
   "word": "初級",
   "reading": "しょきゅう",
   "romaji": "shokyuu",
-  "meaning_id": "elementary level",
+  "meaning_id": "tingkat dasar",
   "meaning_en": "elementary level",
   "jlpt": "n2",
   "pos": "noun",
@@ -27178,12 +27660,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "この辞書は初級者に、いやそれどころか上級者にも役に立つ。",
-      "id": "This dictionary is useful to beginners, yes, and to advanced learners.",
+      "id": "Kamus ini berguna untuk pemula, ya, dan untuk pelajar tingkat lanjut.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ショキュウ￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -27199,7 +27682,7 @@ window.vocabN2_Nouns = [
   "word": "助教授",
   "reading": "じょきょうじゅ",
   "romaji": "jokyouju",
-  "meaning_id": "assistant professor",
+  "meaning_id": "asisten profesor",
   "meaning_en": "assistant professor",
   "jlpt": "n2",
   "pos": "noun",
@@ -27220,12 +27703,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "私は教授です、いやもっと正確に言えば、助教授です。",
-      "id": "I'm a professor, or rather an associate professor, to be exact.",
+      "id": "Saya seorang profesor, atau lebih tepatnya seorang profesor asosiasi.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":4,"downstep_mora":2,"contour":"ジョキョ＼ウジュ"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -27241,7 +27725,7 @@ window.vocabN2_Nouns = [
   "word": "食塩",
   "reading": "しょくえん",
   "romaji": "shokuen",
-  "meaning_id": "table salt",
+  "meaning_id": "garam meja",
   "meaning_en": "table salt",
   "jlpt": "n2",
   "pos": "noun",
@@ -27262,12 +27746,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "めんどうですが食塩をとっていただけませんか。",
-      "id": "May I trouble you for the salt?",
+      "id": "Bolehkah saya menyusahkan Anda untuk garamnya?",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":4,"downstep_mora":2,"contour":"ショク＼エン"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -27304,15 +27789,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "私はその職人がとても腕がよいと分かった。",
-      "id": "I found the workman very good.",
+      "id": "Saya menemukan pekerjanya sangat baik.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ショクニン￣"}
+},
     {
       "jp": "職人がその家にペンキを塗っている。",
-      "id": "A professional is painting the house.",
+      "id": "Seorang profesional sedang mengecat rumah.",
       "level": "n2",
       "tags": [
         "umum"
@@ -27333,7 +27819,7 @@ window.vocabN2_Nouns = [
   "word": "書籍",
   "reading": "しょせき",
   "romaji": "shoseki",
-  "meaning_id": "book; publication",
+  "meaning_id": "buku; publikasi",
   "meaning_en": "book; publication",
   "jlpt": "n2",
   "pos": "noun",
@@ -27354,15 +27840,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "ここのところ書籍の価格が上がっている。",
-      "id": "The price of books is getting higher these days.",
+      "id": "Harga buku semakin tinggi akhir-akhir ini.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"ショ＼セキ"}
+},
     {
       "jp": "私は書籍売り場を担当している。",
-      "id": "I'm in charge of the book department.",
+      "id": "Saya bertanggung jawab atas departemen buku.",
       "level": "n2",
       "tags": [
         "umum"
@@ -27383,7 +27870,7 @@ window.vocabN2_Nouns = [
   "word": "食器",
   "reading": "しょっき",
   "romaji": "shokki",
-  "meaning_id": "tableware",
+  "meaning_id": "peralatan makan",
   "meaning_en": "tableware",
   "jlpt": "n2",
   "pos": "noun",
@@ -27404,15 +27891,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "弟は銀の食器類を磨いた。",
-      "id": "My brother polished the silver.",
+      "id": "Adikku memoles peraknya.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ショッキ￣"}
+},
     {
       "jp": "汚れた食器を洗うのを手伝いましょうか。",
-      "id": "Shall I help you with the washing-up?",
+      "id": "Bolehkah saya membantu Anda mencuci?",
       "level": "n2",
       "tags": [
         "umum"
@@ -27433,7 +27921,7 @@ window.vocabN2_Nouns = [
   "word": "ショップ",
   "reading": "ショップ",
   "romaji": "shoppu",
-  "meaning_id": "a shop",
+  "meaning_id": "toko",
   "meaning_en": "a shop",
   "jlpt": "n2",
   "pos": "noun",
@@ -27458,11 +27946,12 @@ window.vocabN2_Nouns = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":0,"downstep_mora":1,"contour":"＼"}
+},
     {
       "jp": "一番近いアンティークショップはどこにあるか教えていただけますか。",
-      "id": "Can you tell me where the nearest antique shop is?",
+      "id": "Bisakah Anda memberi tahu saya di mana toko barang antik terdekat?",
       "level": "n2",
       "tags": [
         "umum"
@@ -27483,7 +27972,7 @@ window.vocabN2_Nouns = [
   "word": "書店",
   "reading": "しょてん",
   "romaji": "shoten",
-  "meaning_id": "bookshop",
+  "meaning_id": "toko buku",
   "meaning_en": "bookshop",
   "jlpt": "n2",
   "pos": "noun",
@@ -27504,15 +27993,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "書店で手に入ります。",
-      "id": "You can get it at a bookstore.",
+      "id": "Anda bisa mendapatkannya di toko buku.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ショテン￣"}
+},
     {
       "jp": "この本は駅前の書店で買ったんだ。",
-      "id": "I bought this book at the bookstore in front of the station.",
+      "id": "Saya membeli buku ini di toko buku depan stasiun.",
       "level": "n2",
       "tags": [
         "umum"
@@ -27533,7 +28023,7 @@ window.vocabN2_Nouns = [
   "word": "書道",
   "reading": "しょどう",
   "romaji": "shodou",
-  "meaning_id": "calligraphy",
+  "meaning_id": "kaligrafi",
   "meaning_en": "calligraphy",
   "jlpt": "n2",
   "pos": "noun",
@@ -27554,12 +28044,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "書道を習うのは楽しい。",
-      "id": "Learning calligraphy is fun.",
+      "id": "Belajar kaligrafi itu menyenangkan.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"ショ＼ドウ"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -27575,7 +28066,7 @@ window.vocabN2_Nouns = [
   "word": "白髪",
   "reading": "しらが",
   "romaji": "shiraga",
-  "meaning_id": "white or grey hair; trendy hair bleaching",
+  "meaning_id": "rambut putih atau abu-abu; pemutihan rambut yang trendi",
   "meaning_en": "white or grey hair; trendy hair bleaching",
   "jlpt": "n2",
   "pos": "noun",
@@ -27596,15 +28087,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "父の髪は白髪交じりになった。",
-      "id": "My father's hair has become streaked with gray.",
+      "id": "Rambut ayahku dipenuhi uban.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"odaka","mora_count":3,"downstep_mora":3,"contour":"シラガ＼"}
+},
     {
       "jp": "父は白髪が混じってきた。",
-      "id": "My father is becoming gray.",
+      "id": "Ayah saya menjadi abu-abu.",
       "level": "n2",
       "tags": [
         "umum"
@@ -27625,7 +28117,7 @@ window.vocabN2_Nouns = [
   "word": "知り合い",
   "reading": "しりあい",
   "romaji": "shiriai",
-  "meaning_id": "acquaintance",
+  "meaning_id": "kenalan",
   "meaning_en": "acquaintance",
   "jlpt": "n2",
   "pos": "noun",
@@ -27646,15 +28138,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "どこで彼女と知り合いになったのか。",
-      "id": "Where did you get to know her?",
+      "id": "Di mana Anda mengenalnya?",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"シリアイ￣"}
+},
     {
       "jp": "私たちは彼女と知り合いではない。",
-      "id": "We have no acquaintance with her.",
+      "id": "Kami tidak mengenalnya.",
       "level": "n2",
       "tags": [
         "umum"
@@ -27675,7 +28168,7 @@ window.vocabN2_Nouns = [
   "word": "シリーズ",
   "reading": "シリーズ",
   "romaji": "shiriizu",
-  "meaning_id": "series",
+  "meaning_id": "seri",
   "meaning_en": "series",
   "jlpt": "n2",
   "pos": "noun",
@@ -27696,12 +28189,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "その人気テレビシリーズが発端となって、秋には二つのショー番組が誕生することになっている。",
-      "id": "That popular television series is going to spin off two new shows in the fall.",
+      "id": "Serial televisi populer itu akan menampilkan dua acara baru di musim gugur.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":0,"downstep_mora":0,"contour":"￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -27717,7 +28211,7 @@ window.vocabN2_Nouns = [
   "word": "私立",
   "reading": "しりつ",
   "romaji": "shiritsu",
-  "meaning_id": "private (establishment)",
+  "meaning_id": "swasta (perusahaan)",
   "meaning_en": "private (establishment)",
   "jlpt": "n2",
   "pos": "noun",
@@ -27738,15 +28232,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "私立の学校はどういう感じですか。",
-      "id": "How is it in a private school?",
+      "id": "Bagaimana di sekolah swasta?",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"シ＼リツ"}
+},
     {
       "jp": "あなたは、私立高校の生徒ですか。",
-      "id": "Are you a student of a private high school?",
+      "id": "Apakah Anda seorang siswa sekolah menengah swasta?",
       "level": "n2",
       "tags": [
         "umum"
@@ -27767,7 +28262,7 @@ window.vocabN2_Nouns = [
   "word": "資料",
   "reading": "しりょう",
   "romaji": "shiryou",
-  "meaning_id": "materials; data",
+  "meaning_id": "bahan; data",
   "meaning_en": "materials; data",
   "jlpt": "n2",
   "pos": "noun",
@@ -27792,11 +28287,12 @@ window.vocabN2_Nouns = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"シ＼リョウ"}
+},
     {
       "jp": "その資料はこの部署にはありません。",
-      "id": "Our department doesn't have that information.",
+      "id": "Departemen kami tidak memiliki informasi itu.",
       "level": "n2",
       "tags": [
         "umum"
@@ -27838,15 +28334,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "彼女は御茶にレモンの汁をたらした。",
-      "id": "She dropped lemon juice into her tea.",
+      "id": "Dia memasukkan jus lemon ke dalam tehnya.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":2,"downstep_mora":1,"contour":"シ＼ル"}
+},
     {
       "jp": "奴が一人でうまい汁を吸いやがった。",
-      "id": "That guy took the best for himself.",
+      "id": "Orang itu mengambil yang terbaik untuk dirinya sendiri.",
       "level": "n2",
       "tags": [
         "umum"
@@ -27867,7 +28364,7 @@ window.vocabN2_Nouns = [
   "word": "素人",
   "reading": "しろうと",
   "romaji": "shirouto",
-  "meaning_id": "amateur; novice",
+  "meaning_id": "amatir; pemula",
   "meaning_en": "amateur; novice",
   "jlpt": "n2",
   "pos": "noun",
@@ -27888,15 +28385,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "法律用語の大半は素人にはわかりにくい。",
-      "id": "Much legal language is obscure to a layman.",
+      "id": "Banyak bahasa hukum yang tidak jelas bagi orang awam.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":4,"downstep_mora":1,"contour":"シ＼ロウト"}
+},
     {
       "jp": "その協会は設立以来、素人の入会を断ってきた。",
-      "id": "The association has excluded amateurs ever since its foundation.",
+      "id": "Asosiasi ini telah mengecualikan amatir sejak didirikan.",
       "level": "n2",
       "tags": [
         "umum"
@@ -27938,15 +28436,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "私は体の芯まで冷え切った。",
-      "id": "I was frozen to the bone.",
+      "id": "Saya membeku sampai ke tulang.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":2,"downstep_mora":1,"contour":"シ＼ン"}
+},
     {
       "jp": "シャーペンの芯２・３本もらえるかな。",
-      "id": "Could you lend me a few mechanical pencil leads?",
+      "id": "Bisakah Anda meminjamkan saya beberapa pensil mekanik?",
       "level": "n2",
       "tags": [
         "umum"
@@ -27967,7 +28466,7 @@ window.vocabN2_Nouns = [
   "word": "新幹線",
   "reading": "しんかんせん",
   "romaji": "shinkansen",
-  "meaning_id": "bullet train (very high speed); shinkansen",
+  "meaning_id": "kereta peluru (kecepatan sangat tinggi); kereta shinkansen",
   "meaning_en": "bullet train (very high speed); shinkansen",
   "jlpt": "n2",
   "pos": "noun",
@@ -27988,15 +28487,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "新しい新幹線の速いこと！",
-      "id": "How fast the new Shinkansen goes!",
+      "id": "Seberapa cepat Shinkansen baru melaju!",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":6,"downstep_mora":3,"contour":"シンカ＼ンセン"}
+},
     {
       "jp": "台風のために新幹線が一時間も遅れた。",
-      "id": "The train was delayed for one hour on account of the typhoon.",
+      "id": "Kereta tertunda selama satu jam karena topan.",
       "level": "n2",
       "tags": [
         "umum"
@@ -28038,15 +28538,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "その実験には真空が必要だ。",
-      "id": "For that experiment they need a complete vacuum.",
+      "id": "Untuk percobaan itu mereka memerlukan ruang hampa total.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"シンクウ￣"}
+},
     {
       "jp": "自然は真空を嫌う。",
-      "id": "Nature abhors a vacuum.",
+      "id": "Alam tidak menyukai ruang hampa.",
       "level": "n2",
       "tags": [
         "umum"
@@ -28067,7 +28568,7 @@ window.vocabN2_Nouns = [
   "word": "心身",
   "reading": "しんしん",
   "romaji": "shinshin",
-  "meaning_id": "mind and body",
+  "meaning_id": "pikiran dan tubuh",
   "meaning_en": "mind and body",
   "jlpt": "n2",
   "pos": "noun",
@@ -28092,11 +28593,12 @@ window.vocabN2_Nouns = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":4,"downstep_mora":1,"contour":"シ＼ンシン"}
+},
     {
       "jp": "青年時代は心身の発達が著しい。",
-      "id": "Moral and physical development are remarkable in the youth.",
+      "id": "Perkembangan moral dan fisik luar biasa di masa muda.",
       "level": "n2",
       "tags": [
         "umum"
@@ -28117,7 +28619,7 @@ window.vocabN2_Nouns = [
   "word": "信ずる",
   "reading": "しんずる",
   "romaji": "shinzuru",
-  "meaning_id": "me-believe",
+  "meaning_id": "percaya",
   "meaning_en": "to believe; to believe in; to place trust in",
   "jlpt": "n2",
   "pos": "noun",
@@ -28138,15 +28640,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "見ることは信ずることなり。",
-      "id": "Seeing is believing.",
+      "id": "Melihat berarti percaya.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"シンズ＼ル"}
+},
     {
       "jp": "信ずるところに従って行動した。",
-      "id": "I acted upon what I believed.",
+      "id": "Saya bertindak berdasarkan apa yang saya yakini.",
       "level": "n2",
       "tags": [
         "umum"
@@ -28188,15 +28691,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "これらの真珠は人造ではなく本物です。",
-      "id": "These pearls are genuine, not artificial.",
+      "id": "Mutiara ini asli, bukan buatan.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ジンゾウ￣"}
+},
     {
       "jp": "人造皮革は本物の皮にかなわない。",
-      "id": "Artificial leather can't compare with the real thing.",
+      "id": "Kulit buatan tidak bisa dibandingkan dengan yang asli.",
       "level": "n2",
       "tags": [
         "umum"
@@ -28217,7 +28721,7 @@ window.vocabN2_Nouns = [
   "word": "寝台",
   "reading": "しんだい",
   "romaji": "shindai",
-  "meaning_id": "bed; couch",
+  "meaning_id": "tempat tidur; sofa",
   "meaning_en": "bed; couch",
   "jlpt": "n2",
   "pos": "noun",
@@ -28238,15 +28742,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "彼は、寝台の長さを測った。",
-      "id": "He measured the length of the bed.",
+      "id": "Dia mengukur panjang tempat tidur.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"シンダイ￣"}
+},
     {
       "jp": "その部屋は寝台が２台備えられている。",
-      "id": "The room is furnished with two beds.",
+      "id": "Kamar ini dilengkapi dengan dua tempat tidur.",
       "level": "n2",
       "tags": [
         "umum"
@@ -28267,7 +28772,7 @@ window.vocabN2_Nouns = [
   "word": "人文科学",
   "reading": "じんぶんかがく",
   "romaji": "jinbunkagaku",
-  "meaning_id": "social sciences; humanities",
+  "meaning_id": "ilmu-ilmu sosial; humaniora",
   "meaning_en": "social sciences; humanities",
   "jlpt": "n2",
   "pos": "noun",
@@ -28288,15 +28793,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "歴史学は人文科学の一部門である。",
-      "id": "History is a branch of the humanities.",
+      "id": "Sejarah adalah salah satu cabang ilmu humaniora.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":5,"category":"nakadaka","mora_count":7,"downstep_mora":5,"contour":"ジンブンカ＼ガク"}
+},
     {
       "jp": "哲学研究は人文科学の１つだ。",
-      "id": "The study of philosophy belongs to the humanities.",
+      "id": "Ilmu filsafat termasuk dalam ilmu humaniora.",
       "level": "n2",
       "tags": [
         "umum"
@@ -28317,7 +28823,7 @@ window.vocabN2_Nouns = [
   "word": "人命",
   "reading": "じんめい",
   "romaji": "jinmei",
-  "meaning_id": "(human) life",
+  "meaning_id": "kehidupan (manusia).",
   "meaning_en": "(human) life",
   "jlpt": "n2",
   "pos": "noun",
@@ -28338,15 +28844,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "どんな大金も人命には換えられない。",
-      "id": "Even a large sum of money cannot take the place of a man's life.",
+      "id": "Bahkan uang dalam jumlah besar pun tidak dapat menggantikan kehidupan seseorang.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ジンメイ￣"}
+},
     {
       "jp": "その勝利は多数の人命を犠牲にしてかちとられた。",
-      "id": "The victory was won at the cost of many lives.",
+      "id": "Kemenangan itu diraih dengan mengorbankan banyak nyawa.",
       "level": "n2",
       "tags": [
         "umum"
@@ -28367,7 +28874,7 @@ window.vocabN2_Nouns = [
   "word": "森林",
   "reading": "しんりん",
   "romaji": "shinrin",
-  "meaning_id": "forest; woods",
+  "meaning_id": "hutan",
   "meaning_en": "forest; woods",
   "jlpt": "n2",
   "pos": "noun",
@@ -28388,15 +28895,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "その国は森林でおおわれている。",
-      "id": "The land is clothed with woods.",
+      "id": "Tanahnya ditutupi dengan hutan.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"シンリン￣"}
+},
     {
       "jp": "山火事が発生して森林を焼いた。",
-      "id": "A mountain fire broke out and burnt the forest.",
+      "id": "Kebakaran gunung terjadi dan membakar hutan.",
       "level": "n2",
       "tags": [
         "umum"
@@ -28417,7 +28925,7 @@ window.vocabN2_Nouns = [
   "word": "親類",
   "reading": "しんるい",
   "romaji": "shinrui",
-  "meaning_id": "relation; kin",
+  "meaning_id": "hubungan; saudara",
   "meaning_en": "relation; kin",
   "jlpt": "n2",
   "pos": "noun",
@@ -28438,15 +28946,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "彼は親類の者と意見が合わない。",
-      "id": "He disagrees with his relatives.",
+      "id": "Dia tidak setuju dengan kerabatnya.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"シンルイ￣"}
+},
     {
       "jp": "彼は働かないで親類にたかることばかり考えている。",
-      "id": "He doesn't work, but only thinks of sponging off his relatives.",
+      "id": "Dia tidak bekerja, tapi hanya berpikir untuk menyekap kerabatnya.",
       "level": "n2",
       "tags": [
         "umum"
@@ -28492,8 +29001,9 @@ window.vocabN2_Nouns = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"シ＼ンロ"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -28509,7 +29019,7 @@ window.vocabN2_Nouns = [
   "word": "神話",
   "reading": "しんわ",
   "romaji": "shinwa",
-  "meaning_id": "myth; legend",
+  "meaning_id": "mitos; legenda",
   "meaning_en": "myth; legend",
   "jlpt": "n2",
   "pos": "noun",
@@ -28530,15 +29040,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "どの民族も独自の神話を持っている。",
-      "id": "Every nation has its own myths.",
+      "id": "Setiap bangsa mempunyai mitosnya masing-masing.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"シンワ￣"}
+},
     {
       "jp": "小説はおとぎ話や神話と同じぐらい古い。",
-      "id": "Fiction is as old as fairy tales and myths.",
+      "id": "Fiksi sama tuanya dengan dongeng dan mitos.",
       "level": "n2",
       "tags": [
         "umum"
@@ -28559,7 +29070,7 @@ window.vocabN2_Nouns = [
   "word": "酢",
   "reading": "す",
   "romaji": "su",
-  "meaning_id": "vinegar",
+  "meaning_id": "cuka",
   "meaning_en": "vinegar",
   "jlpt": "n2",
   "pos": "noun",
@@ -28580,12 +29091,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "酢はすっぱい味がする。",
-      "id": "Vinegar has a sharp taste.",
+      "id": "Cuka memiliki rasa yang tajam.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":1,"downstep_mora":1,"contour":"ス＼"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -28601,7 +29113,7 @@ window.vocabN2_Nouns = [
   "word": "水産",
   "reading": "すいさん",
   "romaji": "suisan",
-  "meaning_id": "marine products; fisheries",
+  "meaning_id": "hasil laut; perikanan",
   "meaning_en": "marine products; fisheries",
   "jlpt": "n2",
   "pos": "noun",
@@ -28626,8 +29138,9 @@ window.vocabN2_Nouns = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"スイサン￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -28643,7 +29156,7 @@ window.vocabN2_Nouns = [
   "word": "水蒸気",
   "reading": "すいじょうき",
   "romaji": "suijouki",
-  "meaning_id": "water vapour; steam",
+  "meaning_id": "uap air; uap",
   "meaning_en": "water vapour; steam",
   "jlpt": "n2",
   "pos": "noun",
@@ -28668,11 +29181,12 @@ window.vocabN2_Nouns = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":5,"downstep_mora":3,"contour":"スイジョ＼ウキ"}
+},
     {
       "jp": "雲は水蒸気のかたまりである。",
-      "id": "A cloud is a mass of vapor.",
+      "id": "Awan adalah kumpulan uap.",
       "level": "n2",
       "tags": [
         "umum"
@@ -28693,7 +29207,7 @@ window.vocabN2_Nouns = [
   "word": "水素",
   "reading": "すいそ",
   "romaji": "suiso",
-  "meaning_id": "hydrogen",
+  "meaning_id": "hidrogen",
   "meaning_en": "hydrogen",
   "jlpt": "n2",
   "pos": "noun",
@@ -28714,15 +29228,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "酸素と水素から水ができる。",
-      "id": "Oxygen and hydrogen make water.",
+      "id": "Oksigen dan hidrogen menghasilkan air.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"ス＼イソ"}
+},
     {
       "jp": "水素の原子番号は１である。",
-      "id": "The atomic number for hydrogen is 1.",
+      "id": "Nomor atom hidrogen adalah 1.",
       "level": "n2",
       "tags": [
         "umum"
@@ -28743,7 +29258,7 @@ window.vocabN2_Nouns = [
   "word": "水滴",
   "reading": "すいてき",
   "romaji": "suiteki",
-  "meaning_id": "drop of water",
+  "meaning_id": "setetes air",
   "meaning_en": "drop of water",
   "jlpt": "n2",
   "pos": "noun",
@@ -28764,12 +29279,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "気密性でない窓ならば、水滴ができるだろう。",
-      "id": "If your windows are not airtight, moisture will seep in.",
+      "id": "Jika jendela Anda tidak kedap udara, kelembapan akan meresap ke dalam.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"スイテキ￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -28806,12 +29322,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "水筒にはほとんど水が残っていない。",
-      "id": "Ada little water left in the canteen.",
+      "id": "Ada sedikit air yang tersisa di kantin.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"スイトウ￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -28827,7 +29344,7 @@ window.vocabN2_Nouns = [
   "word": "随筆",
   "reading": "ずいひつ",
   "romaji": "zuihitsu",
-  "meaning_id": "essays; miscellaneous writings",
+  "meaning_id": "esai; tulisan lain-lain",
   "meaning_en": "essays; miscellaneous writings",
   "jlpt": "n2",
   "pos": "noun",
@@ -28848,15 +29365,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "この随筆は一個の旅行かばんについてのものです。",
-      "id": "This essay is about a piece of luggage.",
+      "id": "Esai ini tentang sebuah koper.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ズイヒツ￣"}
+},
     {
       "jp": "彼女は随筆を書き始めた。",
-      "id": "She set about writing the essay.",
+      "id": "Dia mulai menulis esai.",
       "level": "n2",
       "tags": [
         "umum"
@@ -28877,7 +29395,7 @@ window.vocabN2_Nouns = [
   "word": "水分",
   "reading": "すいぶん",
   "romaji": "suibun",
-  "meaning_id": "moisture",
+  "meaning_id": "kelembaban",
   "meaning_en": "moisture",
   "jlpt": "n2",
   "pos": "noun",
@@ -28898,15 +29416,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "水分をたくさん取ってください。",
-      "id": "You should drink a lot of liquid.",
+      "id": "Anda harus minum banyak cairan.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":4,"downstep_mora":1,"contour":"ス＼イブン"}
+},
     {
       "jp": "植物は土壌から水分をとる。",
-      "id": "Plants take in water from the soil.",
+      "id": "Tumbuhan mengambil air dari dalam tanah.",
       "level": "n2",
       "tags": [
         "umum"
@@ -28927,7 +29446,7 @@ window.vocabN2_Nouns = [
   "word": "水平線",
   "reading": "すいへいせん",
   "romaji": "suiheisen",
-  "meaning_id": "horizon",
+  "meaning_id": "cakrawala",
   "meaning_en": "horizon",
   "jlpt": "n2",
   "pos": "noun",
@@ -28948,15 +29467,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "太陽が水平線の下に沈んだ。",
-      "id": "The sun sank below the horizon.",
+      "id": "Matahari tenggelam di bawah cakrawala.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":6,"downstep_mora":0,"contour":"スイヘイセン￣"}
+},
     {
       "jp": "水平線に漁船がいくつか見えます。",
-      "id": "I see some fishing boats on the horizon.",
+      "id": "Saya melihat beberapa perahu nelayan di cakrawala.",
       "level": "n2",
       "tags": [
         "umum"
@@ -28977,7 +29497,7 @@ window.vocabN2_Nouns = [
   "word": "水曜",
   "reading": "すいよう",
   "romaji": "suiyou",
-  "meaning_id": "Wednesday",
+  "meaning_id": "Rabu",
   "meaning_en": "Wednesday",
   "jlpt": "n2",
   "pos": "noun",
@@ -28998,15 +29518,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "あなたからご都合が悪いというお知らせがなければ水曜の夕方に参ります。",
-      "id": "I will come on Wednesday evening unless I hear from you to the contrary.",
+      "id": "Saya akan datang pada Rabu malam kecuali saya mendengar kabar sebaliknya dari Anda.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"スイヨ＼ウ"}
+},
     {
       "jp": "水曜の午後は授業はありません。",
-      "id": "We have no classes on Wednesday afternoons.",
+      "id": "Kami tidak ada kelas pada hari Rabu sore.",
       "level": "n2",
       "tags": [
         "umum"
@@ -29027,7 +29548,7 @@ window.vocabN2_Nouns = [
   "word": "末っ子",
   "reading": "すえっこ",
   "romaji": "suekko",
-  "meaning_id": "youngest child",
+  "meaning_id": "anak bungsu",
   "meaning_en": "youngest child",
   "jlpt": "n2",
   "pos": "noun",
@@ -29048,15 +29569,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "私は末っ子です。",
-      "id": "I'm the youngest in the family.",
+      "id": "Saya anak bungsu di keluarga.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"スエッコ￣"}
+},
     {
       "jp": "スティーブ、あなたは末っ子なんだってね。",
-      "id": "Steve, I heard you were the baby of the family.",
+      "id": "Steve, kudengar kamu adalah bayi dalam keluarga.",
       "level": "n2",
       "tags": [
         "umum"
@@ -29077,7 +29599,7 @@ window.vocabN2_Nouns = [
   "word": "スカーフ",
   "reading": "スカーフ",
   "romaji": "sukaafu",
-  "meaning_id": "scarf",
+  "meaning_id": "syal",
   "meaning_en": "scarf",
   "jlpt": "n2",
   "pos": "noun",
@@ -29098,15 +29620,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "このスカーフは手触りが柔らかくてすべすべしている。",
-      "id": "This scarf feels soft and smooth.",
+      "id": "Syal ini terasa lembut dan halus.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":0,"downstep_mora":0,"contour":"￣"}
+},
     {
       "jp": "彼女は首にスカーフをまいている。",
-      "id": "She has a scarf around her neck.",
+      "id": "Dia memiliki syal di lehernya.",
       "level": "n2",
       "tags": [
         "umum"
@@ -29127,7 +29650,7 @@ window.vocabN2_Nouns = [
   "word": "図鑑",
   "reading": "ずかん",
   "romaji": "zukan",
-  "meaning_id": "picture book",
+  "meaning_id": "buku bergambar",
   "meaning_en": "picture book",
   "jlpt": "n2",
   "pos": "noun",
@@ -29148,12 +29671,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "昔は、平気で昆虫触れたのに、今は、図鑑を見るだけでもだめ。",
-      "id": "When I was a kid, touching bugs didn't bother me a bit. Now I can hardly stand looking at pictures of them.",
+      "id": "Ketika saya masih kecil, menyentuh serangga tidak mengganggu saya sedikit pun. Sekarang saya hampir tidak tahan melihat foto-foto mereka.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ズカン￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -29169,7 +29693,7 @@ window.vocabN2_Nouns = [
   "word": "杉",
   "reading": "すぎ",
   "romaji": "sugi",
-  "meaning_id": "Japanese cedar",
+  "meaning_id": "pohon cedar Jepang",
   "meaning_en": "Japanese cedar",
   "jlpt": "n2",
   "pos": "noun",
@@ -29190,12 +29714,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "昔そこにはスギの大木があった。",
-      "id": "There used to be a large cedar tree there.",
+      "id": "Dulu ada pohon cedar besar di sana.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":2,"downstep_mora":0,"contour":"スギ￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -29211,7 +29736,7 @@ window.vocabN2_Nouns = [
   "word": "好き嫌い",
   "reading": "すききらい",
   "romaji": "sukikirai",
-  "meaning_id": "likes and dislikes; taste",
+  "meaning_id": "suka dan tidak suka; rasa",
   "meaning_en": "likes and dislikes; taste",
   "jlpt": "n2",
   "pos": "noun",
@@ -29232,15 +29757,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "好き嫌い言わないで全部食べなさい。",
-      "id": "You shouldn't be so picky about food.",
+      "id": "Anda tidak boleh terlalu pilih-pilih tentang makanan.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":5,"downstep_mora":2,"contour":"スキ＼キライ"}
+},
     {
       "jp": "食事の好き嫌いはありますか。",
-      "id": "Do you have strong likes and dislikes for certain food?",
+      "id": "Apakah Anda memiliki rasa suka dan tidak suka yang kuat terhadap makanan tertentu?",
       "level": "n2",
       "tags": [
         "umum"
@@ -29261,7 +29787,7 @@ window.vocabN2_Nouns = [
   "word": "好き好き",
   "reading": "すきずき",
   "romaji": "sukizuki",
-  "meaning_id": "matter of taste",
+  "meaning_id": "masalah selera",
   "meaning_en": "matter of taste",
   "jlpt": "n2",
   "pos": "noun",
@@ -29282,15 +29808,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "音楽の好みは人によって好きずきです。",
-      "id": "Music preferences vary from person to person.",
+      "id": "Preferensi musik bervariasi dari orang ke orang.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":4,"downstep_mora":2,"contour":"スキ＼ズキ"}
+},
     {
       "jp": "蓼食う虫も好き好き。",
-      "id": "Ada no accounting for tastes.",
+      "id": "Ada tidak memperhitungkan selera.",
       "level": "n2",
       "tags": [
         "umum"
@@ -29332,15 +29859,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "歯が抜けて隙間が空いていた。",
-      "id": "His teeth had gaps.",
+      "id": "Giginya berlubang.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"スキマ￣"}
+},
     {
       "jp": "雨が屋根の隙間からぽたぽた落ちていた。",
-      "id": "The rain was dripping through a leak in the roof.",
+      "id": "Air hujan menetes melalui kebocoran di atap.",
       "level": "n2",
       "tags": [
         "umum"
@@ -29382,12 +29910,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "人物画を描けるスクールを探しています。",
-      "id": "I'm looking for a school where I can paint portraits.",
+      "id": "Saya mencari sekolah di mana saya bisa melukis potret.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":0,"downstep_mora":0,"contour":"￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -29403,7 +29932,7 @@ window.vocabN2_Nouns = [
   "word": "図形",
   "reading": "ずけい",
   "romaji": "zukei",
-  "meaning_id": "figure",
+  "meaning_id": "gambar",
   "meaning_en": "figure",
   "jlpt": "n2",
   "pos": "noun",
@@ -29424,12 +29953,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "この線を軸にして図形を回転してください。",
-      "id": "Tolong take this line as the axis and rotate the figure around it.",
+      "id": "Tolong ambil garis ini sebagai sumbu dan putar gambar di sekelilingnya.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ズケイ￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -29445,7 +29975,7 @@ window.vocabN2_Nouns = [
   "word": "スケジュール",
   "reading": "スケジュール",
   "romaji": "sukejuuru",
-  "meaning_id": "schedule",
+  "meaning_id": "jadwal",
   "meaning_en": "schedule",
   "jlpt": "n2",
   "pos": "noun",
@@ -29466,15 +29996,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "スケジュールがバッティングしなきゃ大丈夫です。",
-      "id": "The schedule's fine as long as nothing clashes.",
+      "id": "Jadwalnya boleh-boleh saja asalkan tidak ada bentrok.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":0,"downstep_mora":0,"contour":"￣"}
+},
     {
       "jp": "いずれにしてもスケジュールは変更できない。",
-      "id": "At any rate, we can't change the schedule.",
+      "id": "Bagaimanapun, kami tidak dapat mengubah jadwal.",
       "level": "n2",
       "tags": [
         "umum"
@@ -29495,7 +30026,7 @@ window.vocabN2_Nouns = [
   "word": "鈴",
   "reading": "すず",
   "romaji": "suzu",
-  "meaning_id": "bell",
+  "meaning_id": "bel",
   "meaning_en": "bell",
   "jlpt": "n2",
   "pos": "noun",
@@ -29516,15 +30047,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "だれがその猫に鈴をつけられるか。",
-      "id": "Who can put a bell on the cat?",
+      "id": "Siapa yang bisa membunyikan bel pada kucing?",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":2,"downstep_mora":0,"contour":"スズ￣"}
+},
     {
       "jp": "問題は誰が猫に鈴をつけるかだ。",
-      "id": "The question is: Who will bell the cat.",
+      "id": "Pertanyaannya adalah: Siapa yang akan membunyikan kucing itu.",
       "level": "n2",
       "tags": [
         "umum"
@@ -29545,7 +30077,7 @@ window.vocabN2_Nouns = [
   "word": "スチュワーデス",
   "reading": "スチュワーデス",
   "romaji": "suchuwaadesu",
-  "meaning_id": "stewardess",
+  "meaning_id": "pramugari",
   "meaning_en": "stewardess",
   "jlpt": "n2",
   "pos": "noun",
@@ -29566,15 +30098,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "日本語を話すスチュワーデスはいるか。",
-      "id": "Is there a Japanese-speaking stewardess?",
+      "id": "Apakah ada pramugari yang bisa berbahasa Jepang?",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":0,"downstep_mora":0,"contour":"￣"}
+},
     {
       "jp": "そのスチュワーデスは多少フランス語が話せる。",
-      "id": "The stewardess can speak French after a fashion.",
+      "id": "Pramugari dapat berbicara bahasa Perancis sesuai dengan gayanya.",
       "level": "n2",
       "tags": [
         "umum"
@@ -29595,7 +30128,7 @@ window.vocabN2_Nouns = [
   "word": "ステージ",
   "reading": "ステージ",
   "romaji": "suteeji",
-  "meaning_id": "stage; performance",
+  "meaning_id": "panggung; kinerja",
   "meaning_en": "stage; performance",
   "jlpt": "n2",
   "pos": "noun",
@@ -29616,15 +30149,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "ジョンはステージの上で「イマジン」を歌った。",
-      "id": "John sang \"Imagine\" on the stage.",
+      "id": "John menyanyikan \"Imagine\" di atas panggung.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":0,"downstep_mora":0,"contour":"￣"}
+},
     {
       "jp": "彼は私をステージの上で歌わせた。",
-      "id": "He made me sing on the stage.",
+      "id": "Dia membuatku bernyanyi di atas panggung.",
       "level": "n2",
       "tags": [
         "umum"
@@ -29645,7 +30179,7 @@ window.vocabN2_Nouns = [
   "word": "ストッキング",
   "reading": "ストッキング",
   "romaji": "sutokkingu",
-  "meaning_id": "stockings",
+  "meaning_id": "stoking",
   "meaning_en": "stockings",
   "jlpt": "n2",
   "pos": "noun",
@@ -29666,12 +30200,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "このストッキングはとても高い。",
-      "id": "These stockings are very dear.",
+      "id": "Stoking ini sangat mahal.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":0,"downstep_mora":0,"contour":"￣"}
+},
     {
       "jp": "やだストッキング伝線しちゃってる。",
       "id": "Fudge! My stocking's run.",
@@ -29716,15 +30251,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "二人の頭脳は一人の頭脳に勝る。",
-      "id": "Two heads are better than one.",
+      "id": "Dua kepala lebih baik dari satu.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"ズ＼ノウ"}
+},
     {
       "jp": "コンピューターはよく人の頭脳にたとえられる。",
-      "id": "The computer is often compared to the human brain.",
+      "id": "Komputer sering disamakan dengan otak manusia.",
       "level": "n2",
       "tags": [
         "umum"
@@ -29745,7 +30281,7 @@ window.vocabN2_Nouns = [
   "word": "スピーカー",
   "reading": "スピーカー",
   "romaji": "supiikaa",
-  "meaning_id": "speaker",
+  "meaning_id": "pembicara",
   "meaning_en": "speaker",
   "jlpt": "n2",
   "pos": "noun",
@@ -29766,15 +30302,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "おかしいな、スピーカーがガーガーいってるよ。",
-      "id": "That's funny. The speaker is crackling.",
+      "id": "Itu lucu. Pembicaranya berderak.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":0,"downstep_mora":0,"contour":"￣"}
+},
     {
       "jp": "彼女はいわば歩くスピーカーだ。",
-      "id": "She is, as it were, a walking speaker.",
+      "id": "Dia seolah-olah adalah seorang pembicara berjalan.",
       "level": "n2",
       "tags": [
         "umum"
@@ -29816,12 +30353,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "図表２を見ると、これらの貿易サイクルのいくつかは非常に短期のものであることが判明する。",
-      "id": "A glance at Chart 2 will reveal that some of these trade cycles are very short-lived.",
+      "id": "Sekilas pada Grafik 2 akan terlihat bahwa beberapa siklus perdagangan ini berumur sangat pendek.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ズヒョウ￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -29858,15 +30396,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "ところで、お住まいはどちらですか。",
-      "id": "By the way, where do you live?",
+      "id": "Ngomong-ngomong, kamu tinggal dimana?",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"ス＼マイ"}
+},
     {
       "jp": "ここにどれくらいお住まいですか。",
-      "id": "How long have you lived here?",
+      "id": "Berapa lama Anda tinggal di sini?",
       "level": "n2",
       "tags": [
         "umum"
@@ -29887,7 +30426,7 @@ window.vocabN2_Nouns = [
   "word": "墨",
   "reading": "すみ",
   "romaji": "sumi",
-  "meaning_id": "ink",
+  "meaning_id": "tinta",
   "meaning_en": "ink",
   "jlpt": "n2",
   "pos": "noun",
@@ -29908,12 +30447,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "墨を染料として使うと面白い模様ができます。",
-      "id": "India ink produces an interesting pattern when used as a dye.",
+      "id": "Tinta India menghasilkan pola yang menarik bila digunakan sebagai pewarna.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":2,"category":"odaka","mora_count":2,"downstep_mora":2,"contour":"スミ＼"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -29929,7 +30469,7 @@ window.vocabN2_Nouns = [
   "word": "相撲",
   "reading": "すもう",
   "romaji": "sumou",
-  "meaning_id": "sumo wrestling",
+  "meaning_id": "gulat sumo",
   "meaning_en": "sumo wrestling",
   "jlpt": "n2",
   "pos": "noun",
@@ -29950,15 +30490,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "相撲を見たことがありますか。",
-      "id": "Have you ever watched sumo wrestling?",
+      "id": "Pernahkah Anda menonton gulat sumo?",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"スモウ￣"}
+},
     {
       "jp": "ここでは私は議論を、なぜ相撲の好きな外国人が多いか、に限定したい。",
-      "id": "Here, I'll confine this discussion to why many foreigners enjoy sumo.",
+      "id": "Di sini, saya akan membatasi pembahasan ini pada mengapa banyak orang asing menyukai sumo.",
       "level": "n2",
       "tags": [
         "umum"
@@ -29979,7 +30520,7 @@ window.vocabN2_Nouns = [
   "word": "スライド",
   "reading": "スライド",
   "romaji": "suraido",
-  "meaning_id": "slide",
+  "meaning_id": "meluncur",
   "meaning_en": "slide",
   "jlpt": "n2",
   "pos": "noun",
@@ -30000,15 +30541,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "彼はそのスライドを顕微鏡で見た。",
-      "id": "He looked at the slide under the microscope.",
+      "id": "Dia melihat slide di bawah mikroskop.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":0,"downstep_mora":0,"contour":"￣"}
+},
     {
       "jp": "年金の額は原則として前年の物価変動にスライドして算出される。",
-      "id": "As a general rule, the pension amount is based on price changes in the previous year.",
+      "id": "Sebagai aturan umum, besaran pensiun didasarkan pada perubahan harga pada tahun sebelumnya.",
       "level": "n2",
       "tags": [
         "umum"
@@ -30050,15 +30592,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "あなたの寸法を計るのを許して下さい。",
-      "id": "Tolong allow me to measure you.",
+      "id": "Tolong izinkan saya mengukur Anda.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"スンポウ￣"}
+},
     {
       "jp": "これらの寸法は設計図に一致する。",
-      "id": "These measurements conform to the blueprints.",
+      "id": "Pengukuran ini sesuai dengan cetak biru.",
       "level": "n2",
       "tags": [
         "umum"
@@ -30079,7 +30622,7 @@ window.vocabN2_Nouns = [
   "word": "姓",
   "reading": "せい",
   "romaji": "sei",
-  "meaning_id": "surname; family name",
+  "meaning_id": "nama keluarga",
   "meaning_en": "surname; family name",
   "jlpt": "n2",
   "pos": "noun",
@@ -30100,15 +30643,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "あなたの姓はどう発音するのですか。",
-      "id": "How do you pronounce your last name?",
+      "id": "Bagaimana Anda mengucapkan nama belakang Anda?",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":2,"downstep_mora":1,"contour":"セ＼イ"}
+},
     {
       "jp": "あなたの姓が聞き取れませんでした。",
-      "id": "I didn't catch your last name.",
+      "id": "Saya tidak mengetahui nama belakang Anda.",
       "level": "n2",
       "tags": [
         "umum"
@@ -30129,7 +30673,7 @@ window.vocabN2_Nouns = [
   "word": "税関",
   "reading": "ぜいかん",
   "romaji": "zeikan",
-  "meaning_id": "customs house",
+  "meaning_id": "rumah adat",
   "meaning_en": "customs house",
   "jlpt": "n2",
   "pos": "noun",
@@ -30150,15 +30694,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "税関では長い列が出来ているだろう。",
-      "id": "There will be long lines at the Customs.",
+      "id": "Akan terjadi antrean panjang di Bea Cukai.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ゼイカン￣"}
+},
     {
       "jp": "税関はどこですか。",
-      "id": "Where is the Customs Service?",
+      "id": "Dimana Pelayanan Bea Cukai?",
       "level": "n2",
       "tags": [
         "umum"
@@ -30204,11 +30749,12 @@ window.vocabN2_Nouns = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"セイシツ￣"}
+},
     {
       "jp": "その２つの性質は相容れない。",
-      "id": "The two qualities are mutually exclusive.",
+      "id": "Kedua kualitas tersebut saling eksklusif.",
       "level": "n2",
       "tags": [
         "umum"
@@ -30229,7 +30775,7 @@ window.vocabN2_Nouns = [
   "word": "青少年",
   "reading": "せいしょうねん",
   "romaji": "seishounen",
-  "meaning_id": "youth; young person",
+  "meaning_id": "pemuda; orang muda",
   "meaning_en": "youth; young person",
   "jlpt": "n2",
   "pos": "noun",
@@ -30250,15 +30796,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "私には青少年の心理がわからない。",
-      "id": "I can not understand the psychology of adolescents.",
+      "id": "Saya tidak bisa memahami psikologi remaja.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":6,"downstep_mora":3,"contour":"セイショ＼ウネン"}
+},
     {
       "jp": "彼は青少年向きの本をたくさん持っている。",
-      "id": "He has a lot of books for the young.",
+      "id": "Dia punya banyak buku untuk kaum muda.",
       "level": "n2",
       "tags": [
         "umum"
@@ -30279,7 +30826,7 @@ window.vocabN2_Nouns = [
   "word": "整数",
   "reading": "せいすう",
   "romaji": "seisuu",
-  "meaning_id": "integer",
+  "meaning_id": "bilangan bulat",
   "meaning_en": "integer",
   "jlpt": "n2",
   "pos": "noun",
@@ -30304,8 +30851,9 @@ window.vocabN2_Nouns = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"セイス＼ウ"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -30321,7 +30869,7 @@ window.vocabN2_Nouns = [
   "word": "政党",
   "reading": "せいとう",
   "romaji": "seitou",
-  "meaning_id": "(member of) political party",
+  "meaning_id": "(anggota) partai politik",
   "meaning_en": "(member of) political party",
   "jlpt": "n2",
   "pos": "noun",
@@ -30342,15 +30890,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "２つのグループが団結して１つの政党になった。",
-      "id": "Two groups united to form a party.",
+      "id": "Dua kelompok bersatu membentuk sebuah partai.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"セイトウ￣"}
+},
     {
       "jp": "彼はその政党の主導権をにぎった。",
-      "id": "He assumed the leadership of the political party.",
+      "id": "Dia mengambil alih kepemimpinan partai politik.",
       "level": "n2",
       "tags": [
         "umum"
@@ -30371,7 +30920,7 @@ window.vocabN2_Nouns = [
   "word": "生年月日",
   "reading": "せいねんがっぴ",
   "romaji": "seinengappi",
-  "meaning_id": "birth date",
+  "meaning_id": "tanggal lahir",
   "meaning_en": "birth date",
   "jlpt": "n2",
   "pos": "noun",
@@ -30392,15 +30941,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "生年月日は１９６０年２月１４日です。",
-      "id": "I was born on February 14, 1960.",
+      "id": "Saya lahir pada tanggal 14 Februari 1960.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":5,"category":"nakadaka","mora_count":7,"downstep_mora":5,"contour":"セイネンガ＼ッピ"}
+},
     {
       "jp": "生年月日を教えてくださいますか？",
-      "id": "May I have your birth date?",
+      "id": "Bolehkah saya mengetahui tanggal lahir Anda?",
       "level": "n2",
       "tags": [
         "umum"
@@ -30421,7 +30971,7 @@ window.vocabN2_Nouns = [
   "word": "性能",
   "reading": "せいのう",
   "romaji": "seinou",
-  "meaning_id": "ability; efficiency",
+  "meaning_id": "kemampuan; efisiensi",
   "meaning_en": "ability; efficiency",
   "jlpt": "n2",
   "pos": "noun",
@@ -30442,15 +30992,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "この車はあの車より性能がよい。",
-      "id": "This car has a better performance than that one.",
+      "id": "Mobil ini memiliki performa yang lebih baik dari yang itu.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"セイノウ￣"}
+},
     {
       "jp": "電気自動車の性能はよくなっている。",
-      "id": "The performance of electric cars has improved.",
+      "id": "Performa mobil listrik mengalami peningkatan.",
       "level": "n2",
       "tags": [
         "umum"
@@ -30492,15 +31043,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "子宮内の羊水は、海水とほぼ同じ成分だそうです。",
-      "id": "They say amniotic fluid has roughly the same composition as sea water.",
+      "id": "Mereka mengatakan cairan ketuban memiliki komposisi yang kurang lebih sama dengan air laut.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":4,"downstep_mora":1,"contour":"セ＼イブン"}
+},
     {
       "jp": "グリーンピースは鉄分が豊富で爪の色がよくなる成分が含まれている。",
-      "id": "Green peas are high in iron and contain nutrients that improve the colour of fingernails.",
+      "id": "Kacang hijau kaya akan zat besi dan mengandung nutrisi yang memperbaiki warna kuku.",
       "level": "n2",
       "tags": [
         "umum"
@@ -30542,15 +31094,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "国籍や性別または職業などで人を差別してはいけない。",
-      "id": "Don't discriminate against people based on nationality, gender, or occupation.",
+      "id": "Jangan mendiskriminasi orang berdasarkan kebangsaan, gender, atau pekerjaan.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"セイベツ￣"}
+},
     {
       "jp": "ニワトリの赤く立派なトサカは性別や種類を見分けるときに役立っていると考えられている。",
-      "id": "The cockerel's splendid red cockscomb is thought to play a part in determining gender and breed.",
+      "id": "Jengger ayam jantan yang berwarna merah dan indah diperkirakan berperan dalam menentukan jenis kelamin dan ras.",
       "level": "n2",
       "tags": [
         "umum"
@@ -30571,7 +31124,7 @@ window.vocabN2_Nouns = [
   "word": "正方形",
   "reading": "せいほうけい",
   "romaji": "seihoukei",
-  "meaning_id": "square",
+  "meaning_id": "persegi",
   "meaning_en": "square",
   "jlpt": "n2",
   "pos": "noun",
@@ -30592,15 +31145,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "正方形は４つの同じ長さの辺をもつ。",
-      "id": "A square has four equal sides.",
+      "id": "Sebuah persegi mempunyai empat sisi yang sama panjang.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":6,"downstep_mora":3,"contour":"セイホ＼ウケイ"}
+},
     {
       "jp": "彼は黒板に正方形を二つ書いた。",
-      "id": "He drew two squares on the blackboard.",
+      "id": "Dia menggambar dua kotak di papan tulis.",
       "level": "n2",
       "tags": [
         "umum"
@@ -30621,7 +31175,7 @@ window.vocabN2_Nouns = [
   "word": "正門",
   "reading": "せいもん",
   "romaji": "seimon",
-  "meaning_id": "main gate; main entrance",
+  "meaning_id": "gerbang utama; pintu masuk utama",
   "meaning_en": "main gate; main entrance",
   "jlpt": "n2",
   "pos": "noun",
@@ -30642,15 +31196,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "車が正門のところへきて止まった。",
-      "id": "A car drew up at the main gate.",
+      "id": "Sebuah mobil berhenti di gerbang utama.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"セイモン￣"}
+},
     {
       "jp": "正門前には、まだ人の姿もない。",
-      "id": "There isn't anybody in front of the main gate yet.",
+      "id": "Belum ada orang di depan gerbang utama.",
       "level": "n2",
       "tags": [
         "umum"
@@ -30671,7 +31226,7 @@ window.vocabN2_Nouns = [
   "word": "西暦",
   "reading": "せいれき",
   "romaji": "seireki",
-  "meaning_id": "Christian Era; anno domini (A.D.)",
+  "meaning_id": "Era Kristen; anno domini (AD)",
   "meaning_en": "Christian Era; anno domini (A.D.)",
   "jlpt": "n2",
   "pos": "noun",
@@ -30692,12 +31247,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "昭和１０年は西暦１９３５年です。",
-      "id": "The 10th year of Showa is 1935 in the Western calendar.",
+      "id": "Tahun ke 10 Showa adalah tahun 1935 dalam kalender Barat.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"セイレキ￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -30713,7 +31269,7 @@ window.vocabN2_Nouns = [
   "word": "赤道",
   "reading": "せきどう",
   "romaji": "sekidou",
-  "meaning_id": "equator",
+  "meaning_id": "khatulistiwa",
   "meaning_en": "equator",
   "jlpt": "n2",
   "pos": "noun",
@@ -30734,15 +31290,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "船は今夜赤道を越すだろう。",
-      "id": "The ship will cross the equator tonight.",
+      "id": "Kapal akan melintasi garis khatulistiwa malam ini.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"セキドウ￣"}
+},
     {
       "jp": "エクアドルのキトは赤道のすぐ南にある。",
-      "id": "Quito, Ecuador, is a little south of the equator.",
+      "id": "Quito, Ekuador, terletak sedikit di selatan khatulistiwa.",
       "level": "n2",
       "tags": [
         "umum"
@@ -30763,7 +31320,7 @@ window.vocabN2_Nouns = [
   "word": "石鹸",
   "reading": "せっけん",
   "romaji": "sekken",
-  "meaning_id": "soap",
+  "meaning_id": "sabun",
   "meaning_en": "soap",
   "jlpt": "n2",
   "pos": "noun",
@@ -30788,11 +31345,12 @@ window.vocabN2_Nouns = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"セッケン￣"}
+},
     {
       "jp": "石けんは泥を落とすのに役立つ。",
-      "id": "Soap helps remove the dirt.",
+      "id": "Sabun membantu menghilangkan kotoran.",
       "level": "n2",
       "tags": [
         "umum"
@@ -30834,12 +31392,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "その店は瀬戸物を使っている。",
-      "id": "The store carries earthenware.",
+      "id": "Toko itu menjual gerabah.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"セトモノ￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -30855,7 +31414,7 @@ window.vocabN2_Nouns = [
   "word": "ゼミ",
   "reading": "ゼミ",
   "romaji": "zemi",
-  "meaning_id": "seminar",
+  "meaning_id": "seminar mahasiswa",
   "meaning_en": "seminar",
   "jlpt": "n2",
   "pos": "noun",
@@ -30880,8 +31439,9 @@ window.vocabN2_Nouns = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":0,"downstep_mora":1,"contour":"＼"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -30897,7 +31457,7 @@ window.vocabN2_Nouns = [
   "word": "せめて",
   "reading": "せめて",
   "romaji": "semete",
-  "meaning_id": "offense; method of attack",
+  "meaning_id": "pelanggaran; metode serangan",
   "meaning_en": "offense; method of attack",
   "jlpt": "n2",
   "pos": "noun",
@@ -30918,15 +31478,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "せめて日常会話ができるくらいになりたい。",
-      "id": "At the very least, I'd like to be able to have everyday conversations.",
+      "id": "Setidaknya, saya ingin bisa melakukan percakapan sehari-hari.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":0,"downstep_mora":1,"contour":"＼"}
+},
     {
       "jp": "一日にせめて二回は歯を磨くべきだ。",
-      "id": "You should brush your teeth at least twice a day.",
+      "id": "Anda harus menyikat gigi setidaknya dua kali sehari.",
       "level": "n2",
       "tags": [
         "umum"
@@ -30947,7 +31508,7 @@ window.vocabN2_Nouns = [
   "word": "セメント",
   "reading": "セメント",
   "romaji": "semento",
-  "meaning_id": "cement",
+  "meaning_id": "semen",
   "meaning_en": "cement",
   "jlpt": "n2",
   "pos": "noun",
@@ -30968,15 +31529,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "石の塊はセメントで接合された。",
-      "id": "The blocks of stone were jointed with cement.",
+      "id": "Balok-balok batu itu disambung dengan semen.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":0,"downstep_mora":0,"contour":"￣"}
+},
     {
       "jp": "砂利をセメントで固める必要がある。",
-      "id": "We need to bind gravel with cement.",
+      "id": "Kita perlu mengikat kerikil dengan semen.",
       "level": "n2",
       "tags": [
         "umum"
@@ -31018,15 +31580,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "シャンパンの栓がぽんと音を立ててとんだ。",
-      "id": "The champagne cork popped out.",
+      "id": "Gabus sampanyenya keluar.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":2,"downstep_mora":1,"contour":"セ＼ン"}
+},
     {
       "jp": "コルクの栓がどうしても抜けなかった。",
-      "id": "The cork would not come out.",
+      "id": "Sumbatnya tidak mau keluar.",
       "level": "n2",
       "tags": [
         "umum"
@@ -31068,15 +31631,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "彼は首を前後に振りました。",
-      "id": "He shook his head back and forth.",
+      "id": "Dia menggelengkan kepalanya ke depan dan ke belakang.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"ゼ＼ンゴ"}
+},
     {
       "jp": "倒置法は言葉の前後を入れ替えることにより文章を強調する効果があります。",
-      "id": "Anastrophe, by switching around words, has the effect of emphasizing text.",
+      "id": "Anastrophe, dengan mengganti kata, mempunyai efek memberi penekanan pada teks.",
       "level": "n2",
       "tags": [
         "umum"
@@ -31097,7 +31661,7 @@ window.vocabN2_Nouns = [
   "word": "洗剤",
   "reading": "せんざい",
   "romaji": "senzai",
-  "meaning_id": "detergent; washing material",
+  "meaning_id": "deterjen; bahan pencuci",
   "meaning_en": "detergent; washing material",
   "jlpt": "n2",
   "pos": "noun",
@@ -31118,15 +31682,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "誤って洗剤を飲んでしまいました。",
-      "id": "He swallowed detergent by mistake.",
+      "id": "Dia tidak sengaja menelan deterjen.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"センザイ￣"}
+},
     {
       "jp": "ランドリーには洗剤がありますか。",
-      "id": "Are there any detergents in the laundry?",
+      "id": "Apakah ada deterjen di cucian?",
       "level": "n2",
       "tags": [
         "umum"
@@ -31147,7 +31712,7 @@ window.vocabN2_Nouns = [
   "word": "全集",
   "reading": "ぜんしゅう",
   "romaji": "zenshuu",
-  "meaning_id": "complete works",
+  "meaning_id": "menyelesaikan karya",
   "meaning_en": "complete works",
   "jlpt": "n2",
   "pos": "noun",
@@ -31168,15 +31733,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "この全集の５巻目が見当たらない。",
-      "id": "The fifth volume of this set is missing.",
+      "id": "Volume kelima dari set ini hilang.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ゼンシュウ￣"}
+},
     {
       "jp": "私はシェークスピア全集を持っている。",
-      "id": "I have the complete works of Shakespeare.",
+      "id": "Saya memiliki karya lengkap Shakespeare.",
       "level": "n2",
       "tags": [
         "umum"
@@ -31197,7 +31763,7 @@ window.vocabN2_Nouns = [
   "word": "全身",
   "reading": "ぜんしん",
   "romaji": "zenshin",
-  "meaning_id": "the whole body; full-length (portrait)",
+  "meaning_id": "seluruh tubuh; panjang penuh (potret)",
   "meaning_en": "the whole body; full-length (portrait)",
   "jlpt": "n2",
   "pos": "noun",
@@ -31218,15 +31784,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "彼女は全身ずぶぬれだった。",
-      "id": "She was soaked from head to foot.",
+      "id": "Dia basah kuyup dari kepala sampai kaki.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ゼンシン￣"}
+},
     {
       "jp": "彼は全身ペンキだらけになった。",
-      "id": "He was covered all over with paint.",
+      "id": "Seluruh tubuhnya ditutupi cat.",
       "level": "n2",
       "tags": [
         "umum"
@@ -31247,7 +31814,7 @@ window.vocabN2_Nouns = [
   "word": "扇子",
   "reading": "せんす",
   "romaji": "sensu",
-  "meaning_id": "folding fan",
+  "meaning_id": "kipas lipat",
   "meaning_en": "folding fan",
   "jlpt": "n2",
   "pos": "noun",
@@ -31268,12 +31835,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "犬が腕時計と扇子を食った。",
-      "id": "The dog ate a watch and a Japanese fan.",
+      "id": "Anjing itu memakan jam tangan dan kipas angin Jepang.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"センス￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -31289,7 +31857,7 @@ window.vocabN2_Nouns = [
   "word": "先祖",
   "reading": "せんぞ",
   "romaji": "senzo",
-  "meaning_id": "ancestor",
+  "meaning_id": "nenek moyang",
   "meaning_en": "ancestor",
   "jlpt": "n2",
   "pos": "noun",
@@ -31310,15 +31878,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "この日私たちは先祖の墓参りをする。",
-      "id": "We visit the tombs of our ancestors on this day.",
+      "id": "Kami mengunjungi makam nenek moyang kami pada hari ini.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"セ＼ンゾ"}
+},
     {
       "jp": "うちの先祖には有名な人がいく人かいる。",
-      "id": "Our family has some distinguished ancestors.",
+      "id": "Keluarga kami memiliki beberapa leluhur terkemuka.",
       "level": "n2",
       "tags": [
         "umum"
@@ -31364,11 +31933,12 @@ window.vocabN2_Nouns = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"センタン￣"}
+},
     {
       "jp": "水面に現れてるのは氷山の先端にすぎない。",
-      "id": "What you see above the water is just the tip of the iceberg.",
+      "id": "Apa yang Anda lihat di atas air hanyalah puncak gunung es.",
       "level": "n2",
       "tags": [
         "umum"
@@ -31410,12 +31980,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "１メートルは１００センチである。",
-      "id": "A metre is 100 centimetres.",
+      "id": "Satu meter sama dengan 100 sentimeter.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":0,"downstep_mora":1,"contour":"＼"}
+},
     {
       "jp": "私はほとんど１８０センチです。",
       "id": "I am almost 180 centimeters tall.",
@@ -31460,15 +32031,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "さあ出発しよう。君先頭を行きなさい。",
-      "id": "Let's start now, and you go first.",
+      "id": "Ayo mulai sekarang, dan kamu duluan.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"セントウ￣"}
+},
     {
       "jp": "市長は行列の先頭に立って歩いた。",
-      "id": "The mayor walked at the head of the procession.",
+      "id": "Walikota berjalan memimpin prosesi.",
       "level": "n2",
       "tags": [
         "umum"
@@ -31510,12 +32082,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "そのことは人間全般に言える。",
-      "id": "That can be said of mankind at large.",
+      "id": "Hal ini dapat dikatakan mengenai umat manusia pada umumnya.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ゼンパン￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -31531,7 +32104,7 @@ window.vocabN2_Nouns = [
   "word": "扇風機",
   "reading": "せんぷうき",
   "romaji": "senpuuki",
-  "meaning_id": "electric fan",
+  "meaning_id": "kipas angin listrik",
   "meaning_en": "electric fan",
   "jlpt": "n2",
   "pos": "noun",
@@ -31552,15 +32125,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "暑かったので扇風機をつけた。",
-      "id": "Feeling hot, I turned on the fan.",
+      "id": "Merasa kepanasan, aku menyalakan kipas angin.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":5,"downstep_mora":3,"contour":"センプ＼ウキ"}
+},
     {
       "jp": "そんな古い扇風機は役に立たない。",
-      "id": "Such an old fan would be next to useless.",
+      "id": "Penggemar lama seperti itu tidak ada gunanya.",
       "level": "n2",
       "tags": [
         "umum"
@@ -31602,15 +32176,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "ポーターはしばしば線路を歩いて渡らなければならない。",
-      "id": "Porters often have to walk across the tracks.",
+      "id": "Porter sering kali harus berjalan melintasi rel.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"セ＼ンロ"}
+},
     {
       "jp": "鉄道の線路を歩くのは危険だ。",
-      "id": "It's dangerous to walk on railway lines.",
+      "id": "Berbahaya berjalan di jalur kereta api.",
       "level": "n2",
       "tags": [
         "umum"
@@ -31631,7 +32206,7 @@ window.vocabN2_Nouns = [
   "word": "雑巾",
   "reading": "ぞうきん",
   "romaji": "zoukin",
-  "meaning_id": "house-cloth; dust cloth",
+  "meaning_id": "kain rumah; kain debu",
   "meaning_en": "house-cloth; dust cloth",
   "jlpt": "n2",
   "pos": "noun",
@@ -31652,12 +32227,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "ぬれたぞうきんで窓をふきなさい。",
-      "id": "Clean the window with a damp cloth.",
+      "id": "Bersihkan jendela dengan iklanamp kain.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ゾウキン￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -31694,15 +32270,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "彼は倉庫の警備員として仕事をしている。",
-      "id": "Dia working as a security guard at a warehouse.",
+      "id": "Dia bekerja sebagai satpam di sebuah gudang.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"ソ＼ウコ"}
+},
     {
       "jp": "倉庫には家具が一つの他には何もなかった。",
-      "id": "The warehouse was empty except for a piece of furniture.",
+      "id": "Gudang itu kosong kecuali sebuah perabot.",
       "level": "n2",
       "tags": [
         "umum"
@@ -31723,7 +32300,7 @@ window.vocabN2_Nouns = [
   "word": "相互",
   "reading": "そうご",
   "romaji": "sougo",
-  "meaning_id": "mutual; reciprocal",
+  "meaning_id": "saling; kebalikan",
   "meaning_en": "mutual; reciprocal",
   "jlpt": "n2",
   "pos": "noun",
@@ -31744,12 +32321,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "それは相互理解の欠如がもとになっていると思う。",
-      "id": "I think that is based on a lack of mutual understanding.",
+      "id": "Saya pikir itu didasari oleh kurangnya saling pengertian.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"ソ＼ウゴ"}
+},
     {
       "jp": "友情は相互理解にある。",
       "id": "Friendship consists of mutual understanding.",
@@ -31773,7 +32351,7 @@ window.vocabN2_Nouns = [
   "word": "葬式",
   "reading": "そうしき",
   "romaji": "soushiki",
-  "meaning_id": "funeral",
+  "meaning_id": "pemakaman",
   "meaning_en": "funeral",
   "jlpt": "n2",
   "pos": "noun",
@@ -31794,15 +32372,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "１月３０日、３１日は葬式のため休みます。",
-      "id": "I'm taking bereavement leave on Jan. 30 and 31.",
+      "id": "Saya mengambil cuti duka pada tanggal 30 dan 31 Januari.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ソウシキ￣"}
+},
     {
       "jp": "葬式には黒い服を着ていくのが習慣です。",
-      "id": "It is traditional to wear black to a funeral.",
+      "id": "Merupakan tradisi untuk mengenakan pakaian hitam ke pemakaman.",
       "level": "n2",
       "tags": [
         "umum"
@@ -31823,7 +32402,7 @@ window.vocabN2_Nouns = [
   "word": "草履",
   "reading": "ぞうり",
   "romaji": "zouri",
-  "meaning_id": "zoori (Japanese footwear); sandals",
+  "meaning_id": "zoori (alas kaki Jepang); sandal",
   "meaning_en": "zoori (Japanese footwear); sandals",
   "jlpt": "n2",
   "pos": "noun",
@@ -31848,8 +32427,9 @@ window.vocabN2_Nouns = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ゾウリ￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -31865,7 +32445,7 @@ window.vocabN2_Nouns = [
   "word": "総理大臣",
   "reading": "そうりだいじん",
   "romaji": "souridaijin",
-  "meaning_id": "Prime Minister",
+  "meaning_id": "Perdana Menteri",
   "meaning_en": "Prime Minister",
   "jlpt": "n2",
   "pos": "noun",
@@ -31886,15 +32466,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "総理大臣が辞任した。",
-      "id": "The Prime Minister has resigned.",
+      "id": "Perdana Menteri telah mengundurkan diri.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":4,"category":"nakadaka","mora_count":7,"downstep_mora":4,"contour":"ソウリダ＼イジン"}
+},
     {
       "jp": "総理大臣は彼を外務大臣に任命した。",
-      "id": "The Prime Minister nominated him as Foreign Minister.",
+      "id": "Perdana Menteri menominasikannya sebagai Menteri Luar Negeri.",
       "level": "n2",
       "tags": [
         "umum"
@@ -31915,7 +32496,7 @@ window.vocabN2_Nouns = [
   "word": "送料",
   "reading": "そうりょう",
   "romaji": "souryou",
-  "meaning_id": "postage; carriage",
+  "meaning_id": "ongkos kirim; gerbong",
   "meaning_en": "postage; carriage",
   "jlpt": "n2",
   "pos": "noun",
@@ -31936,12 +32517,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "もしも無料でなければ、カタログの価格と日本までの送料をお教えください。",
-      "id": "If they are not free, please let me know how much the catalogue and the postage to Japan are.",
+      "id": "Jika tidak gratis, tolong beri tahu saya berapa harga katalog dan ongkos kirim ke Jepang.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":4,"downstep_mora":1,"contour":"ソ＼ウリョウ"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -31957,7 +32539,7 @@ window.vocabN2_Nouns = [
   "word": "速力",
   "reading": "そくりょく",
   "romaji": "sokuryoku",
-  "meaning_id": "speed",
+  "meaning_id": "kecepatan",
   "meaning_en": "speed",
   "jlpt": "n2",
   "pos": "noun",
@@ -31982,8 +32564,9 @@ window.vocabN2_Nouns = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":4,"downstep_mora":2,"contour":"ソク＼リョク"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -32020,15 +32603,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "私は優れた彼の妻になる素質がある。",
-      "id": "I make an excellent wife for him.",
+      "id": "Saya adalah istri yang luar biasa untuknya.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ソシツ￣"}
+},
     {
       "jp": "私には政治家の素質はありません。",
-      "id": "I am not cut out to be a politician.",
+      "id": "Saya tidak cocok menjadi politisi.",
       "level": "n2",
       "tags": [
         "umum"
@@ -32049,7 +32633,7 @@ window.vocabN2_Nouns = [
   "word": "祖先",
   "reading": "そせん",
   "romaji": "sosen",
-  "meaning_id": "ancestor",
+  "meaning_id": "nenek moyang",
   "meaning_en": "ancestor",
   "jlpt": "n2",
   "pos": "noun",
@@ -32070,15 +32654,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "私たちは祖先をうやまうべきだ。",
-      "id": "We should worship our ancestors.",
+      "id": "Kita harus menyembah nenek moyang kita.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"ソ＼セン"}
+},
     {
       "jp": "インディアンの祖先はアジアからやってきた。",
-      "id": "The Indians' ancestors arrived from Asia.",
+      "id": "Nenek moyang orang India datang dari Asia.",
       "level": "n2",
       "tags": [
         "umum"
@@ -32099,7 +32684,7 @@ window.vocabN2_Nouns = [
   "word": "蕎麦",
   "reading": "そば",
   "romaji": "soba",
-  "meaning_id": "soba (buckwheat noodles)",
+  "meaning_id": "soba (mie soba)",
   "meaning_en": "soba (buckwheat noodles)",
   "jlpt": "n2",
   "pos": "noun",
@@ -32120,15 +32705,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "すぐそこでそばを立ち食いしてきた。",
-      "id": "I had a bowl of noodles at a street nearby.",
+      "id": "Saya makan semangkuk mie di jalan terdekat.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":2,"downstep_mora":1,"contour":"ソ＼バ"}
+},
     {
       "jp": "そばはそば粉から、うどんやきしめんは普通の小麦粉からできてるの。",
-      "id": "Soba is made of buckwheat flour, and udon and kishimen are made of plain wheat flour.",
+      "id": "Soba terbuat dari tepung soba, dan udon serta kishimen terbuat dari tepung terigu biasa.",
       "level": "n2",
       "tags": [
         "umum"
@@ -32174,11 +32760,12 @@ window.vocabN2_Nouns = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":0,"downstep_mora":0,"contour":"￣"}
+},
     {
       "jp": "彼は帰ってくると約束した。それなのに帰ってこなかった。",
-      "id": "He promised to return and yet he didn't.",
+      "id": "Dia berjanji untuk kembali namun dia tidak melakukannya.",
       "level": "n2",
       "tags": [
         "umum"
@@ -32199,7 +32786,7 @@ window.vocabN2_Nouns = [
   "word": "算盤",
   "reading": "そろばん",
   "romaji": "soroban",
-  "meaning_id": "abacus",
+  "meaning_id": "sempoa",
   "meaning_en": "abacus",
   "jlpt": "n2",
   "pos": "noun",
@@ -32220,15 +32807,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "算盤とは日本のアバカスのことだ。",
-      "id": "A \"soroban\" is a type of Japanese abacus.",
+      "id": "Sebuah \"soroban\" adalah sejenis sempoa Jepang.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ソロバン￣"}
+},
     {
       "jp": "いや算盤やってるから暗算得意なのかと思って。",
-      "id": "No, I just thought that since you can use an abacus, you might be good at doing calculations in your head.",
+      "id": "Tidak, saya hanya berpikir karena Anda bisa menggunakan sempoa, Anda mungkin pandai melakukan perhitungan di kepala Anda.",
       "level": "n2",
       "tags": [
         "umum"
@@ -32270,12 +32858,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "こちらが考えられるデザインとなります。ご検討いただきたく存じます。",
-      "id": "We have submitted these possible designs for your consideration.",
+      "id": "Kami telah mengirimkan kemungkinan desain ini untuk pertimbangan Anda.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"ゾンズ＼ル"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -32291,7 +32880,7 @@ window.vocabN2_Nouns = [
   "word": "損得",
   "reading": "そんとく",
   "romaji": "sontoku",
-  "meaning_id": "loss and gain; advantage and disadvantage",
+  "meaning_id": "kerugian dan keuntungan; kelebihan dan kekurangan",
   "meaning_en": "loss and gain; advantage and disadvantage",
   "jlpt": "n2",
   "pos": "noun",
@@ -32312,12 +32901,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "損得なしにしよう。",
-      "id": "Let's make it a fair trade.",
+      "id": "Mari kita jadikan perdagangan yang adil.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":4,"downstep_mora":1,"contour":"ソ＼ントク"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -32333,7 +32923,7 @@ window.vocabN2_Nouns = [
   "word": "タイア",
   "reading": "タイア",
   "romaji": "taia",
-  "meaning_id": "tire; tyre",
+  "meaning_id": "ban",
   "meaning_en": "tire; tyre",
   "jlpt": "n2",
   "pos": "noun",
@@ -32358,8 +32948,9 @@ window.vocabN2_Nouns = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":0,"downstep_mora":0,"contour":"￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -32375,7 +32966,7 @@ window.vocabN2_Nouns = [
   "word": "だいいち",
   "reading": "だいいち",
   "romaji": "daiichi",
-  "meaning_id": "first; foremost",
+  "meaning_id": "pertama; yang paling utama",
   "meaning_en": "first; foremost",
   "jlpt": "n2",
   "pos": "noun",
@@ -32396,15 +32987,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "まず、第一に名前を書きなさい。",
-      "id": "Write your name, first of all.",
+      "id": "Tuliskan nama Anda terlebih dahulu.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":4,"downstep_mora":1,"contour":"ダ＼イイチ"}
+},
     {
       "jp": "日本は天下第一の国である。",
-      "id": "Japan is the best country under the sun.",
+      "id": "Jepang adalah negara terbaik di dunia.",
       "level": "n2",
       "tags": [
         "umum"
@@ -32425,7 +33017,7 @@ window.vocabN2_Nouns = [
   "word": "大学院",
   "reading": "だいがくいん",
   "romaji": "daigakuin",
-  "meaning_id": "graduate school",
+  "meaning_id": "sekolah pascasarjana",
   "meaning_en": "graduate school",
   "jlpt": "n2",
   "pos": "noun",
@@ -32446,15 +33038,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "大学院に進学するつもりです。",
-      "id": "I'm planning to go to graduate school.",
+      "id": "Saya berencana untuk melanjutkan ke sekolah pascasarjana.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":4,"category":"nakadaka","mora_count":6,"downstep_mora":4,"contour":"ダイガク＼イン"}
+},
     {
       "jp": "彼は大学院に進学しないだろう。",
-      "id": "He won't go on to graduate school.",
+      "id": "Dia tidak akan melanjutkan ke sekolah pascasarjana.",
       "level": "n2",
       "tags": [
         "umum"
@@ -32475,7 +33068,7 @@ window.vocabN2_Nouns = [
   "word": "大工",
   "reading": "だいく",
   "romaji": "daiku",
-  "meaning_id": "carpenter",
+  "meaning_id": "tukang kayu",
   "meaning_en": "carpenter",
   "jlpt": "n2",
   "pos": "noun",
@@ -32496,15 +33089,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "私のおじいちゃんは大工です。",
-      "id": "My grandfather is a carpenter.",
+      "id": "Kakek saya adalah seorang tukang kayu.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"ダ＼イク"}
+},
     {
       "jp": "父と妹は大工さんです。",
-      "id": "My father and sister are carpenters.",
+      "id": "Ayah dan saudara perempuan saya adalah tukang kayu.",
       "level": "n2",
       "tags": [
         "umum"
@@ -32525,7 +33119,7 @@ window.vocabN2_Nouns = [
   "word": "体系",
   "reading": "たいけい",
   "romaji": "taikei",
-  "meaning_id": "system; organization",
+  "meaning_id": "sistem; organisasi",
   "meaning_en": "system; organization",
   "jlpt": "n2",
   "pos": "noun",
@@ -32546,12 +33140,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "彼らはその体系を大変な思索と労力を費やして仕上げた。",
-      "id": "They worked out the system with much thought and labor.",
+      "id": "Mereka menyusun sistem itu dengan banyak pemikiran dan kerja keras.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"タイケイ￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -32567,7 +33162,7 @@ window.vocabN2_Nouns = [
   "word": "太鼓",
   "reading": "たいこ",
   "romaji": "taiko",
-  "meaning_id": "drum; tambourine",
+  "meaning_id": "gendang; rebana",
   "meaning_en": "drum; tambourine",
   "jlpt": "n2",
   "pos": "noun",
@@ -32588,15 +33183,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "彼らは太鼓をずっとたたき続けた。",
-      "id": "They had been thumping the drum all along.",
+      "id": "Mereka telah menabuh genderang selama ini.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"タイコ￣"}
+},
     {
       "jp": "太鼓の音が聞こえる。",
-      "id": "I hear the drum.",
+      "id": "Saya mendengar drumnya.",
       "level": "n2",
       "tags": [
         "umum"
@@ -32617,7 +33213,7 @@ window.vocabN2_Nouns = [
   "word": "大小",
   "reading": "だいしょう",
   "romaji": "daishou",
-  "meaning_id": "size",
+  "meaning_id": "ukuran",
   "meaning_en": "size",
   "jlpt": "n2",
   "pos": "noun",
@@ -32638,12 +33234,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "道路上の大小の石に気をつけなさい。",
-      "id": "Watch out for big and small stones on the road!",
+      "id": "Hati-hati terhadap batu besar dan kecil di jalan!",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":4,"downstep_mora":1,"contour":"ダ＼イショウ"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -32680,15 +33277,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "共産主義はソ連で実践された体制である。",
-      "id": "Communism is the system practiced in the Soviet Union.",
+      "id": "Komunisme adalah sistem yang dipraktikkan di Uni Soviet.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"タイセイ￣"}
+},
     {
       "jp": "爆破予告以来、空港の警備体制は強化された。",
-      "id": "Security at the airport has been stepped up since the bomb scare.",
+      "id": "Keamanan di bandara telah ditingkatkan sejak ketakutan akan bom.",
       "level": "n2",
       "tags": [
         "umum"
@@ -32709,7 +33307,7 @@ window.vocabN2_Nouns = [
   "word": "体積",
   "reading": "たいせき",
   "romaji": "taiseki",
-  "meaning_id": "capacity; volume",
+  "meaning_id": "kapasitas; volume",
   "meaning_en": "capacity; volume",
   "jlpt": "n2",
   "pos": "noun",
@@ -32730,15 +33328,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "体積が大きいからといって常に重量も重いとは限らない。",
-      "id": "Great bulk does not always mean great weight.",
+      "id": "Bobot yang besar tidak selalu berarti bobot yang besar.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":4,"downstep_mora":1,"contour":"タ＼イセキ"}
+},
     {
       "jp": "体積を計算するなら、縦と横と深さを掛ければよい。",
-      "id": "To calculate the volume, multiply the length by the width by the depth.",
+      "id": "Untuk menghitung volume, kalikan panjang dengan lebar dan kedalaman.",
       "level": "n2",
       "tags": [
         "umum"
@@ -32759,7 +33358,7 @@ window.vocabN2_Nouns = [
   "word": "大木",
   "reading": "たいぼく",
   "romaji": "taiboku",
-  "meaning_id": "large tree",
+  "meaning_id": "pohon besar",
   "meaning_en": "large tree",
   "jlpt": "n2",
   "pos": "noun",
@@ -32780,15 +33379,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "昔そこにはスギの大木があった。",
-      "id": "There used to be a large cedar tree there.",
+      "id": "Dulu ada pohon cedar besar di sana.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"タイボク￣"}
+},
     {
       "jp": "大木の陰に避難した。",
-      "id": "We took refuge behind a big tree.",
+      "id": "Kami berlindung di balik pohon besar.",
       "level": "n2",
       "tags": [
         "umum"
@@ -32809,7 +33409,7 @@ window.vocabN2_Nouns = [
   "word": "題名",
   "reading": "だいめい",
   "romaji": "daimei",
-  "meaning_id": "title",
+  "meaning_id": "judul",
   "meaning_en": "title",
   "jlpt": "n2",
   "pos": "noun",
@@ -32830,15 +33430,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "その小説は聖書から題名をとっている。",
-      "id": "The novel takes its title from the Bible.",
+      "id": "Novel ini mengambil judulnya dari Alkitab.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ダイメイ￣"}
+},
     {
       "jp": "彼女は私が題名を知らない歌を歌った。",
-      "id": "She sang a song, the title of which I did not know.",
+      "id": "Dia menyanyikan sebuah lagu yang saya tidak tahu judulnya.",
       "level": "n2",
       "tags": [
         "umum"
@@ -32859,7 +33460,7 @@ window.vocabN2_Nouns = [
   "word": "代名詞",
   "reading": "だいめいし",
   "romaji": "daimeishi",
-  "meaning_id": "pronoun",
+  "meaning_id": "kata ganti",
   "meaning_en": "pronoun",
   "jlpt": "n2",
   "pos": "noun",
@@ -32880,12 +33481,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "「クレオパトラ」は美人の代名詞になっている。",
-      "id": "The name Cleopatra has become a byword for a beautiful woman.",
+      "id": "Nama Cleopatra memang menjadi buah bibir bagi para wanita cantik.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":5,"downstep_mora":3,"contour":"ダイメ＼イシ"}
+},
     {
       "jp": "関係代名詞は「接続詞+代名詞」のはたらきをしています。",
       "id": "Relative pronouns perform as 'conjunction + pronoun'.",
@@ -32909,7 +33511,7 @@ window.vocabN2_Nouns = [
   "word": "ダイヤグラム",
   "reading": "ダイヤグラム",
   "romaji": "daiyaguramu",
-  "meaning_id": "diagram",
+  "meaning_id": "diagram / bagan alur",
   "meaning_en": "diagram",
   "jlpt": "n2",
   "pos": "noun",
@@ -32934,8 +33536,9 @@ window.vocabN2_Nouns = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":4,"category":"nakadaka","mora_count":0,"downstep_mora":0,"contour":"￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -32951,7 +33554,7 @@ window.vocabN2_Nouns = [
   "word": "ダイヤモンド",
   "reading": "ダイヤモンド",
   "romaji": "daiyamondo",
-  "meaning_id": "diamond",
+  "meaning_id": "berlian",
   "meaning_en": "diamond",
   "jlpt": "n2",
   "pos": "noun",
@@ -32972,15 +33575,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "ダイヤモンドほど硬いものはない。",
-      "id": "Nothing is as hard as a diamond.",
+      "id": "Tidak ada yang sekeras berlian.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":4,"category":"nakadaka","mora_count":0,"downstep_mora":0,"contour":"￣"}
+},
     {
       "jp": "ダイヤモンドの硬度は１０である。",
-      "id": "The hardness of diamond is 10.",
+      "id": "Kekerasan berlian adalah 10.",
       "level": "n2",
       "tags": [
         "umum"
@@ -33001,7 +33605,7 @@ window.vocabN2_Nouns = [
   "word": "田植え",
   "reading": "たうえ",
   "romaji": "taue",
-  "meaning_id": "rice planting",
+  "meaning_id": "penanaman padi",
   "meaning_en": "rice planting",
   "jlpt": "n2",
   "pos": "noun",
@@ -33026,8 +33630,9 @@ window.vocabN2_Nouns = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":3,"category":"odaka","mora_count":3,"downstep_mora":3,"contour":"タウエ＼"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -33043,7 +33648,7 @@ window.vocabN2_Nouns = [
   "word": "楕円",
   "reading": "だえん",
   "romaji": "daen",
-  "meaning_id": "ellipse",
+  "meaning_id": "elips",
   "meaning_en": "ellipse",
   "jlpt": "n2",
   "pos": "noun",
@@ -33064,12 +33669,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "卵は、真ん丸ではなく楕円です。",
-      "id": "An egg is not round but oval.",
+      "id": "Telur tidak bulat melainkan lonjong.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ダエン￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -33085,7 +33691,7 @@ window.vocabN2_Nouns = [
   "word": "滝",
   "reading": "たき",
   "romaji": "taki",
-  "meaning_id": "waterfall",
+  "meaning_id": "air terjun",
   "meaning_en": "waterfall",
   "jlpt": "n2",
   "pos": "noun",
@@ -33106,15 +33712,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "雨が滝のように降ってきた。",
-      "id": "Down came the rain in torrents.",
+      "id": "Turunlah hujan dengan derasnya.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":2,"downstep_mora":0,"contour":"タキ￣"}
+},
     {
       "jp": "滝のような汗が顔から流れ始めた。",
-      "id": "A waterfall of sweat began to pour down my face.",
+      "id": "Air terjun keringat mulai membasahi wajahku.",
       "level": "n2",
       "tags": [
         "umum"
@@ -33135,7 +33742,7 @@ window.vocabN2_Nouns = [
   "word": "竹",
   "reading": "たけ",
   "romaji": "take",
-  "meaning_id": "bamboo; middle (of a three-tier ranking system)",
+  "meaning_id": "bambu; tengah (dari sistem peringkat tiga tingkat)",
   "meaning_en": "bamboo; middle (of a three-tier ranking system)",
   "jlpt": "n2",
   "pos": "noun",
@@ -33156,15 +33763,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "林に竹が目立つ。",
-      "id": "Bamboo stands out in the woods.",
+      "id": "Bambu menonjol di hutan.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":2,"downstep_mora":0,"contour":"タケ￣"}
+},
     {
       "jp": "その竹はしなったが折れなかった。",
-      "id": "The bamboo gave but did not break.",
+      "id": "Bambu itu menyerah tetapi tidak patah.",
       "level": "n2",
       "tags": [
         "umum"
@@ -33206,15 +33814,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "ただし、列をつくって並ばなくてはならないが・・・。",
-      "id": "However, you have to queue...",
+      "id": "Namun, Anda harus mengantri...",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"タ＼ダシ"}
+},
     {
       "jp": "ただし、調子に乗ると失敗を招くので注意！",
-      "id": "However if you get carried away you'll risk failure so take care!",
+      "id": "Namun jika Anda terbawa suasana, Anda akan berisiko gagal, jadi berhati-hatilah!",
       "level": "n2",
       "tags": [
         "umum"
@@ -33235,7 +33844,7 @@ window.vocabN2_Nouns = [
   "word": "足袋",
   "reading": "たび",
   "romaji": "tabi",
-  "meaning_id": "tabi; Japanese socks (with split toe)",
+  "meaning_id": "tabi; Kaus kaki Jepang (dengan ujung terbelah)",
   "meaning_en": "tabi; Japanese socks (with split toe)",
   "jlpt": "n2",
   "pos": "noun",
@@ -33256,12 +33865,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "着物に足袋は欠かせません。",
-      "id": "In a kimono, tabi can't be absent.",
+      "id": "Dalam balutan kimono, tabi tidak boleh absen.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":2,"downstep_mora":1,"contour":"タ＼ビ"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -33277,7 +33887,7 @@ window.vocabN2_Nouns = [
   "word": "ダブル",
   "reading": "ダブル",
   "romaji": "daburu",
-  "meaning_id": "double",
+  "meaning_id": "ganda",
   "meaning_en": "double",
   "jlpt": "n2",
   "pos": "noun",
@@ -33298,15 +33908,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "ダブルのバスつきの部屋がいいです。",
-      "id": "I'd like a double with a bath.",
+      "id": "Aku ingin kamar ganda dengan bathtub.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":0,"downstep_mora":1,"contour":"＼"}
+},
     {
       "jp": "ダブルにしてください。",
-      "id": "A double, please.",
+      "id": "Tolong dua kali lipat.",
       "level": "n2",
       "tags": [
         "umum"
@@ -33327,7 +33938,7 @@ window.vocabN2_Nouns = [
   "word": "ダム",
   "reading": "ダム",
   "romaji": "damu",
-  "meaning_id": "dumb",
+  "meaning_id": "bodoh",
   "meaning_en": "dumb",
   "jlpt": "n2",
   "pos": "noun",
@@ -33348,15 +33959,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "大雨のためにダムが決壊した。",
-      "id": "The dam burst owing to the heavy rain.",
+      "id": "Bendungan jebol akibat hujan deras.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":0,"downstep_mora":1,"contour":"＼"}
+},
     {
       "jp": "ダムの下流に水車小屋があった。",
-      "id": "There was a water mill below the dam.",
+      "id": "Ada kincir air di bawah bendungan.",
       "level": "n2",
       "tags": [
         "umum"
@@ -33377,7 +33989,7 @@ window.vocabN2_Nouns = [
   "word": "溜息",
   "reading": "ためいき",
   "romaji": "tameiki",
-  "meaning_id": "a sigh",
+  "meaning_id": "menghela nafas",
   "meaning_en": "a sigh",
   "jlpt": "n2",
   "pos": "noun",
@@ -33398,15 +34010,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "彼は安心してホッとため息をもらした。",
-      "id": "He gave a sigh of relief.",
+      "id": "Dia menghela nafas lega.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"タメイ＼キ"}
+},
     {
       "jp": "「ごめんなさい」少年は、ため息混じりにいいました。",
-      "id": "\"I am sorry,\" sighed the boy.",
+      "id": "\"Aku minta maaf,\" desah anak laki-laki itu.",
       "level": "n2",
       "tags": [
         "umum"
@@ -33427,7 +34040,7 @@ window.vocabN2_Nouns = [
   "word": "短期",
   "reading": "たんき",
   "romaji": "tanki",
-  "meaning_id": "short term",
+  "meaning_id": "jangka pendek",
   "meaning_en": "short term",
   "jlpt": "n2",
   "pos": "noun",
@@ -33448,15 +34061,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "どんな語学も短期では無理だ。",
-      "id": "Whatever language you study, it takes time.",
+      "id": "Bahasa apa pun yang Anda pelajari, itu membutuhkan waktu.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"タ＼ンキ"}
+},
     {
       "jp": "短期契約社員達は予告なしに解雇された。",
-      "id": "The short term contract employees were dismissed without notice.",
+      "id": "Karyawan kontrak jangka pendek diberhentikan tanpa pemberitahuan.",
       "level": "n2",
       "tags": [
         "umum"
@@ -33477,7 +34091,7 @@ window.vocabN2_Nouns = [
   "word": "炭鉱",
   "reading": "たんこう",
   "romaji": "tankou",
-  "meaning_id": "coal mine; coal pit",
+  "meaning_id": "tambang batu bara; lubang batubara",
   "meaning_en": "coal mine; coal pit",
   "jlpt": "n2",
   "pos": "noun",
@@ -33498,12 +34112,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "あの支部は炭鉱労働組合に属している。",
-      "id": "That branch is affiliated to the miners' union.",
+      "id": "Cabang itu berafiliasi dengan serikat penambang.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"タンコウ￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -33540,15 +34155,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "すべての人は長所と短所を持っている。",
-      "id": "Everybody has his merits and demerits.",
+      "id": "Setiap orang mempunyai kelebihan dan kekurangan masing-masing.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"タ＼ンショ"}
+},
     {
       "jp": "なんにでも、長所と短所の両方がある。",
-      "id": "Ada pros and cons to anything.",
+      "id": "Ada pro dan kontra terhadap apapun.",
       "level": "n2",
       "tags": [
         "umum"
@@ -33569,7 +34185,7 @@ window.vocabN2_Nouns = [
   "word": "たんす",
   "reading": "たんす",
   "romaji": "tansu",
-  "meaning_id": "chest of drawers",
+  "meaning_id": "lemari berlaci",
   "meaning_en": "chest of drawers",
   "jlpt": "n2",
   "pos": "noun",
@@ -33590,12 +34206,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "タンスで探していた物が見つかった。",
-      "id": "I found what I was looking for in the drawers.",
+      "id": "Saya menemukan apa yang saya cari di laci.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"タンス￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -33611,7 +34228,7 @@ window.vocabN2_Nouns = [
   "word": "淡水",
   "reading": "たんすい",
   "romaji": "tansui",
-  "meaning_id": "fresh water",
+  "meaning_id": "air tawar",
   "meaning_en": "fresh water",
   "jlpt": "n2",
   "pos": "noun",
@@ -33632,15 +34249,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "塩水の方が淡水よりも浮力が大きい。",
-      "id": "Salt water is more buoyant than fresh water.",
+      "id": "Air asin lebih ringan dibandingkan air tawar.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"タンスイ￣"}
+},
     {
       "jp": "サケは淡水で産卵する。",
-      "id": "Salmon lay their eggs in fresh water.",
+      "id": "Salmon bertelur di air tawar.",
       "level": "n2",
       "tags": [
         "umum"
@@ -33661,7 +34279,7 @@ window.vocabN2_Nouns = [
   "word": "単数",
   "reading": "たんすう",
   "romaji": "tansuu",
-  "meaning_id": "singular (number)",
+  "meaning_id": "tunggal (angka)",
   "meaning_en": "singular (number)",
   "jlpt": "n2",
   "pos": "noun",
@@ -33686,8 +34304,9 @@ window.vocabN2_Nouns = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"タンス＼ウ"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -33703,7 +34322,7 @@ window.vocabN2_Nouns = [
   "word": "団地",
   "reading": "だんち",
   "romaji": "danchi",
-  "meaning_id": "multi-unit apartments",
+  "meaning_id": "apartemen multi-unit",
   "meaning_en": "multi-unit apartments",
   "jlpt": "n2",
   "pos": "noun",
@@ -33724,15 +34343,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "団地も昔と変わっていなかった。",
-      "id": "Even the apartment buildings were the same as they used to be.",
+      "id": "Bahkan gedung apartemennya pun masih sama seperti dulu.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ダンチ￣"}
+},
     {
       "jp": "公園を囲む団地からは明かりが漏れている。",
-      "id": "Light escaped from the apartment complex surrounding the park.",
+      "id": "Light keluar dari kompleks apartemen yang mengelilingi taman.",
       "level": "n2",
       "tags": [
         "umum"
@@ -33774,12 +34394,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "トムは短編を読んでいる。",
-      "id": "Tom is reading a short story.",
+      "id": "Tom sedang membaca cerita pendek.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"タンペン￣"}
+},
     {
       "jp": "カフカは長篇より短篇の方が好きです。",
       "id": "I prefer Kafka's shorter works more than his longer ones.",
@@ -33803,7 +34424,7 @@ window.vocabN2_Nouns = [
   "word": "田んぼ",
   "reading": "たんぼ",
   "romaji": "tanbo",
-  "meaning_id": "paddy field; farm",
+  "meaning_id": "sawah; pertanian",
   "meaning_en": "paddy field; farm",
   "jlpt": "n2",
   "pos": "noun",
@@ -33824,15 +34445,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "この辺りは昔、田んぼだったんだよ。",
-      "id": "There used to be rice fields around here.",
+      "id": "Dulunya ada sawah di sekitar sini.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"タンボ￣"}
+},
     {
       "jp": "その田んぼは荒れ果てたままだ。",
-      "id": "The rice field lies waste.",
+      "id": "Sawahnya terbuang sia-sia.",
       "level": "n2",
       "tags": [
         "umum"
@@ -33853,7 +34475,7 @@ window.vocabN2_Nouns = [
   "word": "地下水",
   "reading": "ちかすい",
   "romaji": "chikasui",
-  "meaning_id": "underground water",
+  "meaning_id": "air bawah tanah",
   "meaning_en": "underground water",
   "jlpt": "n2",
   "pos": "noun",
@@ -33874,12 +34496,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "ワイン畑の中には、未だ地下水を使用した灌漑を選択するところもある。",
-      "id": "Some vineyards still choose to irrigate using underground water sources.",
+      "id": "Beberapa kebun anggur masih memilih mengairi menggunakan sumber air bawah tanah.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":4,"downstep_mora":2,"contour":"チカ＼スイ"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -33895,7 +34518,7 @@ window.vocabN2_Nouns = [
   "word": "地質",
   "reading": "ちしつ",
   "romaji": "chishitsu",
-  "meaning_id": "geological features",
+  "meaning_id": "fitur geologi",
   "meaning_en": "geological features",
   "jlpt": "n2",
   "pos": "noun",
@@ -33916,15 +34539,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "地質学者が私たちの農場で石油の実地調査を行った。",
-      "id": "The geologists explored for oil on our farm.",
+      "id": "Para ahli geologi mengeksplorasi minyak di pertanian kami.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"チシツ￣"}
+},
     {
       "jp": "そうした決定は、今度は、丘そのものの地質的構造に影響される。",
-      "id": "That decision, in turn, was affected by the geological structure of the hill itself.",
+      "id": "Keputusan tersebut, pada gilirannya, dipengaruhi oleh struktur geologi bukit itu sendiri.",
       "level": "n2",
       "tags": [
         "umum"
@@ -33945,7 +34569,7 @@ window.vocabN2_Nouns = [
   "word": "知人",
   "reading": "ちじん",
   "romaji": "chijin",
-  "meaning_id": "friend; acquaintance",
+  "meaning_id": "teman; kenalan",
   "meaning_en": "friend; acquaintance",
   "jlpt": "n2",
   "pos": "noun",
@@ -33966,15 +34590,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "彼には知人は多いが友人は少ない。",
-      "id": "He has many acquaintances but few friends.",
+      "id": "Dia mempunyai banyak kenalan tetapi sedikit teman.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"チジン￣"}
+},
     {
       "jp": "仕事上の知人はこの電話番号を知っている。",
-      "id": "My business acquaintances know this number.",
+      "id": "Teman bisnis saya mengetahui nomor ini.",
       "level": "n2",
       "tags": [
         "umum"
@@ -33995,7 +34620,7 @@ window.vocabN2_Nouns = [
   "word": "地帯",
   "reading": "ちたい",
   "romaji": "chitai",
-  "meaning_id": "area; zone",
+  "meaning_id": "daerah; zona",
   "meaning_en": "area; zone",
   "jlpt": "n2",
   "pos": "noun",
@@ -34016,15 +34641,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "ツンドラ地帯の気候は厳しい。",
-      "id": "The tundra has a harsh climate.",
+      "id": "Tundra memiliki iklim yang keras.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"チ＼タイ"}
+},
     {
       "jp": "兵隊達は全員その地帯の地図を持っていた。",
-      "id": "The soldiers were all supplied with a map of the place.",
+      "id": "Semua prajurit diberikan peta tempat itu.",
       "level": "n2",
       "tags": [
         "umum"
@@ -34070,8 +34696,9 @@ window.vocabN2_Nouns = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":0,"downstep_mora":1,"contour":"＼"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -34087,7 +34714,7 @@ window.vocabN2_Nouns = [
   "word": "地点",
   "reading": "ちてん",
   "romaji": "chiten",
-  "meaning_id": "site; point on a map",
+  "meaning_id": "situs; menunjuk pada peta",
   "meaning_en": "site; point on a map",
   "jlpt": "n2",
   "pos": "noun",
@@ -34108,15 +34735,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "その湖はこの地点が深い。",
-      "id": "The lake is deep at this point.",
+      "id": "Danau itu dalam pada saat ini.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"チ＼テン"}
+},
     {
       "jp": "道路はこの地点で右にカーブしている。",
-      "id": "The road bends sharply to the right at this point.",
+      "id": "Saat ini jalan berbelok tajam ke kanan.",
       "level": "n2",
       "tags": [
         "umum"
@@ -34137,7 +34765,7 @@ window.vocabN2_Nouns = [
   "word": "地名",
   "reading": "ちめい",
   "romaji": "chimei",
-  "meaning_id": "place name",
+  "meaning_id": "nama tempat",
   "meaning_en": "place name",
   "jlpt": "n2",
   "pos": "noun",
@@ -34158,15 +34786,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "その地名は伝説に由来する。",
-      "id": "The legend gave the name to the place.",
+      "id": "Legenda memberi nama pada tempat itu.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"チメイ￣"}
+},
     {
       "jp": "私はその地名を思い出せなかった。",
-      "id": "I couldn't think of the name of the place.",
+      "id": "Saya tidak bisa memikirkan nama tempat itu.",
       "level": "n2",
       "tags": [
         "umum"
@@ -34208,15 +34837,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "厳しさと甘さの中間を見つける。",
-      "id": "Find a mean between harshness and indulgence.",
+      "id": "Temukan jalan tengah antara kekerasan dan kesenangan.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"チュウカン￣"}
+},
     {
       "jp": "駅はその二つの町の中間にある。",
-      "id": "The station is situated between the two towns.",
+      "id": "Stasiun ini terletak di antara dua kota.",
       "level": "n2",
       "tags": [
         "umum"
@@ -34237,7 +34867,7 @@ window.vocabN2_Nouns = [
   "word": "中旬",
   "reading": "ちゅうじゅん",
   "romaji": "chuujun",
-  "meaning_id": "second third of a month",
+  "meaning_id": "sepertiga kedua setiap bulannya",
   "meaning_en": "second third of a month",
   "jlpt": "n2",
   "pos": "noun",
@@ -34258,15 +34888,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "予定日は１月の中旬頃です。",
-      "id": "I'm expecting my baby in the middle of January.",
+      "id": "Saya mengharapkan bayi saya pada pertengahan Januari.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"チュウジュン￣"}
+},
     {
       "jp": "彼は５月中旬に日本に戻れるでしょう。",
-      "id": "He will come back to Japan in the middle of May.",
+      "id": "Dia akan kembali ke Jepang pada pertengahan Mei.",
       "level": "n2",
       "tags": [
         "umum"
@@ -34287,7 +34918,7 @@ window.vocabN2_Nouns = [
   "word": "中世",
   "reading": "ちゅうせい",
   "romaji": "chuusei",
-  "meaning_id": "Middle Ages; mediaeval times",
+  "meaning_id": "Abad Pertengahan; zaman abad pertengahan",
   "meaning_en": "Middle Ages; mediaeval times",
   "jlpt": "n2",
   "pos": "noun",
@@ -34308,15 +34939,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "中世は人間が自由でない時代だった。",
-      "id": "The medieval times were an age when a human being wasn't free.",
+      "id": "Abad pertengahan adalah zaman ketika manusia belum bebas.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":4,"downstep_mora":1,"contour":"チュ＼ウセイ"}
+},
     {
       "jp": "私の専門は中世ヨーロッパ史です。",
-      "id": "My major is medieval European history.",
+      "id": "Jurusan saya adalah sejarah Eropa abad pertengahan.",
       "level": "n2",
       "tags": [
         "umum"
@@ -34362,8 +34994,9 @@ window.vocabN2_Nouns = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"チュウセイ￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -34379,7 +35012,7 @@ window.vocabN2_Nouns = [
   "word": "中途",
   "reading": "ちゅうと",
   "romaji": "chuuto",
-  "meaning_id": "in the middle; half-way",
+  "meaning_id": "di tengah; setengah jalan",
   "meaning_en": "in the middle; half-way",
   "jlpt": "n2",
   "pos": "noun",
@@ -34400,15 +35033,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "私たちは山の中途まで登った。",
-      "id": "We went halfway up the mountain.",
+      "id": "Kami pergi setengah jalan mendaki gunung.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"チュウト￣"}
+},
     {
       "jp": "彼は中途で引き返した。",
-      "id": "He turned back halfway.",
+      "id": "Dia berbalik setengah jalan.",
       "level": "n2",
       "tags": [
         "umum"
@@ -34429,7 +35063,7 @@ window.vocabN2_Nouns = [
   "word": "中年",
   "reading": "ちゅうねん",
   "romaji": "chuunen",
-  "meaning_id": "middle-aged",
+  "meaning_id": "setengah baya",
   "meaning_en": "middle-aged",
   "jlpt": "n2",
   "pos": "noun",
@@ -34450,15 +35084,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "彼女は中年の都会派プロフェッショナルでした。",
-      "id": "She was a middle-aged urban professional.",
+      "id": "Dia adalah seorang profesional perkotaan paruh baya.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"チュウネン￣"}
+},
     {
       "jp": "彼女は中年デブだ。",
-      "id": "She's a middle-aged fat woman.",
+      "id": "Dia seorang wanita gemuk paruh baya.",
       "level": "n2",
       "tags": [
         "umum"
@@ -34500,15 +35135,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "あなたの計画は実際的だという長所がある。",
-      "id": "Your plan has the virtue of being practical.",
+      "id": "Rencana Anda memiliki manfaat praktis.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"チョ＼ウショ"}
+},
     {
       "jp": "顔が美しいことは一つの長所である。",
-      "id": "It's an advantage to be good-looking.",
+      "id": "Merupakan suatu keuntungan untuk menjadi tampan.",
       "level": "n2",
       "tags": [
         "umum"
@@ -34529,7 +35165,7 @@ window.vocabN2_Nouns = [
   "word": "長女",
   "reading": "ちょうじょ",
   "romaji": "choujo",
-  "meaning_id": "eldest daughter",
+  "meaning_id": "putri sulung",
   "meaning_en": "eldest daughter",
   "jlpt": "n2",
   "pos": "noun",
@@ -34550,15 +35186,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "彼が一番愛しているのは彼女の長女です。",
-      "id": "It is her eldest daughter that he loves most.",
+      "id": "Putri sulungnyalah yang paling dia cintai.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"チョ＼ウジョ"}
+},
     {
       "jp": "彼は二番目のレストランの経営を、長女にまかせた。",
-      "id": "He put his eldest daughter in charge of his second restaurant.",
+      "id": "Dia menugaskan putri sulungnya untuk bertanggung jawab atas restoran keduanya.",
       "level": "n2",
       "tags": [
         "umum"
@@ -34600,12 +35237,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "長短を使います。",
-      "id": "Menggunakan length; long and short.",
+      "id": "Menggunakan panjang; panjang dan pendek.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":4,"downstep_mora":1,"contour":"チョ＼ウタン"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -34621,7 +35259,7 @@ window.vocabN2_Nouns = [
   "word": "頂点",
   "reading": "ちょうてん",
   "romaji": "chouten",
-  "meaning_id": "top; summit",
+  "meaning_id": "atas; pertemuan puncak",
   "meaning_en": "top; summit",
   "jlpt": "n2",
   "pos": "noun",
@@ -34642,15 +35280,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "経済は今景気循環の頂点にある。",
-      "id": "The economy is at peak of a business cycle at present.",
+      "id": "Perekonomian berada pada puncak siklus bisnis saat ini.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":4,"downstep_mora":1,"contour":"チョ＼ウテン"}
+},
     {
       "jp": "自動車生産は頂点を超えた。",
-      "id": "Automobile production has peaked out.",
+      "id": "Produksi mobil telah mencapai puncaknya.",
       "level": "n2",
       "tags": [
         "umum"
@@ -34671,7 +35310,7 @@ window.vocabN2_Nouns = [
   "word": "長男",
   "reading": "ちょうなん",
   "romaji": "chounan",
-  "meaning_id": "eldest son",
+  "meaning_id": "putra sulung",
   "meaning_en": "eldest son",
   "jlpt": "n2",
   "pos": "noun",
@@ -34692,15 +35331,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "彼は私の長男の名付け親であった。",
-      "id": "He stood godfather to my first son.",
+      "id": "Dia menjadi ayah baptis putra pertamaku.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":4,"downstep_mora":1,"contour":"チョ＼ウナン"}
+},
     {
       "jp": "長男がすべての財産を相続した。",
-      "id": "The eldest son succeeded to all the property.",
+      "id": "Putra sulung mewarisi seluruh harta benda.",
       "level": "n2",
       "tags": [
         "umum"
@@ -34721,7 +35361,7 @@ window.vocabN2_Nouns = [
   "word": "長方形",
   "reading": "ちょうほうけい",
   "romaji": "chouhoukei",
-  "meaning_id": "rectangle; oblong",
+  "meaning_id": "persegi panjang; lonjong",
   "meaning_en": "rectangle; oblong",
   "jlpt": "n2",
   "pos": "noun",
@@ -34742,15 +35382,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "長方形の対辺は平行である。",
-      "id": "The opposite sides of a rectangle are parallel.",
+      "id": "Sisi-sisi yang berhadapan pada suatu persegi panjang sejajar.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":6,"downstep_mora":3,"contour":"チョウホ＼ウケイ"}
+},
     {
       "jp": "この構成において、三角形の代わりに長方形を用いても類似の困難が生ずる。",
-      "id": "We encounter similar difficulties when we substitute rectangles for triangles in this configuration.",
+      "id": "Kita menghadapi kesulitan serupa ketika kita mengganti persegi panjang dengan segitiga dalam konfigurasi ini.",
       "level": "n2",
       "tags": [
         "umum"
@@ -34771,7 +35412,7 @@ window.vocabN2_Nouns = [
   "word": "調味料",
   "reading": "ちょうみりょう",
   "romaji": "choumiryou",
-  "meaning_id": "condiment; seasoning",
+  "meaning_id": "bumbu",
   "meaning_en": "condiment; seasoning",
   "jlpt": "n2",
   "pos": "noun",
@@ -34792,15 +35433,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "市販の調味料よりうまいと言いきれる。",
-      "id": "I can definitively say that this seasoning tastes better than anything you could buy in a store.",
+      "id": "Saya dapat mengatakan dengan pasti bahwa bumbu ini rasanya lebih enak daripada bumbu apa pun yang bisa Anda beli di toko.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":5,"downstep_mora":3,"contour":"チョウミ＼リョウ"}
+},
     {
       "jp": "この調味料、万能すぎて何にでもかけてる。",
-      "id": "This seasoning is so versatile that you can put it on anything.",
+      "id": "Bumbu ini sangat serbaguna sehingga Anda bisa mengoleskannya pada apa saja.",
       "level": "n2",
       "tags": [
         "umum"
@@ -34821,7 +35463,7 @@ window.vocabN2_Nouns = [
   "word": "チョーク",
   "reading": "チョーク",
   "romaji": "chooku",
-  "meaning_id": "chock; chalk",
+  "meaning_id": "sesak; kapur",
   "meaning_en": "chock; chalk",
   "jlpt": "n2",
   "pos": "noun",
@@ -34846,8 +35488,9 @@ window.vocabN2_Nouns = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":0,"downstep_mora":1,"contour":"＼"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -34863,7 +35506,7 @@ window.vocabN2_Nouns = [
   "word": "直線",
   "reading": "ちょくせん",
   "romaji": "chokusen",
-  "meaning_id": "straight line",
+  "meaning_id": "garis lurus",
   "meaning_en": "straight line",
   "jlpt": "n2",
   "pos": "noun",
@@ -34884,15 +35527,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "この２つの直線は直角に交わっている。",
-      "id": "These two lines are at right angles.",
+      "id": "Kedua garis ini tegak lurus.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"チョクセン￣"}
+},
     {
       "jp": "定規は直線を引くのに役立つ。",
-      "id": "A ruler helps one to draw a straight line.",
+      "id": "Penggaris membantu seseorang menggambar garis lurus.",
       "level": "n2",
       "tags": [
         "umum"
@@ -34913,7 +35557,7 @@ window.vocabN2_Nouns = [
   "word": "直流",
   "reading": "ちょくりゅう",
   "romaji": "chokuryuu",
-  "meaning_id": "direct current",
+  "meaning_id": "arus searah",
   "meaning_en": "direct current",
   "jlpt": "n2",
   "pos": "noun",
@@ -34938,8 +35582,9 @@ window.vocabN2_Nouns = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"チョクリュウ￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -34955,7 +35600,7 @@ window.vocabN2_Nouns = [
   "word": "直径",
   "reading": "ちょっけい",
   "romaji": "chokkei",
-  "meaning_id": "diameter",
+  "meaning_id": "garis tengah (diameter)",
   "meaning_en": "diameter",
   "jlpt": "n2",
   "pos": "noun",
@@ -34976,15 +35621,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "その池は直径１００メートルある。",
-      "id": "The pond is 100 meters in diameter.",
+      "id": "Kolam tersebut berdiameter 100 meter.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"チョッケイ￣"}
+},
     {
       "jp": "その穴は直径二メートルです。",
-      "id": "The hole is two meters across.",
+      "id": "Lubang itu lebarnya dua meter.",
       "level": "n2",
       "tags": [
         "umum"
@@ -35005,7 +35651,7 @@ window.vocabN2_Nouns = [
   "word": "塵紙",
   "reading": "ちりがみ",
   "romaji": "chirigami",
-  "meaning_id": "tissue paper; toilet paper",
+  "meaning_id": "kertas tisu; tisu toilet",
   "meaning_en": "tissue paper; toilet paper",
   "jlpt": "n2",
   "pos": "noun",
@@ -35026,15 +35672,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "私は古新聞をちり紙と交換した。",
-      "id": "I traded old newspapers for toilet paper.",
+      "id": "Saya menukar koran bekas dengan tisu toilet.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"チリガミ￣"}
+},
     {
       "jp": "私はいつもポケットに十分なちり紙を持っています。",
-      "id": "I always have a good supply of tissues in my pockets.",
+      "id": "Saya selalu memiliki persediaan tisu yang cukup di saku saya.",
       "level": "n2",
       "tags": [
         "umum"
@@ -35055,7 +35702,7 @@ window.vocabN2_Nouns = [
   "word": "ついで",
   "reading": "ついで",
   "romaji": "tsuide",
-  "meaning_id": "opportunity; occasion",
+  "meaning_id": "peluang; kesempatan",
   "meaning_en": "opportunity; occasion",
   "jlpt": "n2",
   "pos": "noun",
@@ -35076,15 +35723,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "買い物ついでにでもお寄りください。",
-      "id": "Tolong drop by when you go out for shopping sometimes.",
+      "id": "Tolong mampirlah ketika Anda pergi berbelanja kadang-kadang.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ツイデ￣"}
+},
     {
       "jp": "父親は息子の体をかついで部屋から運び出した。",
-      "id": "The father carried his son bodily from the room.",
+      "id": "Sang ayah menggendong putranya keluar kamar.",
       "level": "n2",
       "tags": [
         "umum"
@@ -35105,7 +35753,7 @@ window.vocabN2_Nouns = [
   "word": "通貨",
   "reading": "つうか",
   "romaji": "tsuuka",
-  "meaning_id": "currency",
+  "meaning_id": "mata uang",
   "meaning_en": "currency",
   "jlpt": "n2",
   "pos": "noun",
@@ -35126,15 +35774,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "欧州通貨はドルに対して弱くなった。",
-      "id": "European currencies weakened against the dollar.",
+      "id": "Mata uang Eropa melemah terhadap dolar.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"ツ＼ウカ"}
+},
     {
       "jp": "当局は自国の通貨を何とか安定させた。",
-      "id": "The authorities managed to stabilize the currency.",
+      "id": "Pihak berwenang berhasil menstabilkan mata uang.",
       "level": "n2",
       "tags": [
         "umum"
@@ -35155,7 +35804,7 @@ window.vocabN2_Nouns = [
   "word": "通ずる",
   "reading": "つうずる",
   "romaji": "tsuuzuru",
-  "meaning_id": "me-be open",
+  "meaning_id": "bersikap terbuka",
   "meaning_en": "to be open (to traffic); to lead (to); to connect (to); to run (from, between; e.g. bus service)",
   "jlpt": "n2",
   "pos": "noun",
@@ -35180,11 +35829,12 @@ window.vocabN2_Nouns = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ツウズル￣"}
+},
     {
       "jp": "すべての道はローマに通ず。",
-      "id": "All roads lead to Rome.",
+      "id": "Semua jalan menuju ke Roma.",
       "level": "n2",
       "tags": [
         "umum"
@@ -35205,7 +35855,7 @@ window.vocabN2_Nouns = [
   "word": "通帳",
   "reading": "つうちょう",
   "romaji": "tsuuchou",
-  "meaning_id": "passbook",
+  "meaning_id": "buku tabungan",
   "meaning_en": "passbook",
   "jlpt": "n2",
   "pos": "noun",
@@ -35226,12 +35876,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "私は自分の通帳を見たが、幸運にも５０ドル余分に入っていた。",
-      "id": "I looked at my bank account book, and happily discovered that I had an extra $50!",
+      "id": "Saya melihat buku rekening bank saya, dan dengan gembira menemukan bahwa saya memiliki tambahan $50!",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ツウチョウ￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -35247,7 +35898,7 @@ window.vocabN2_Nouns = [
   "word": "通路",
   "reading": "つうろ",
   "romaji": "tsuuro",
-  "meaning_id": "passage; pathway",
+  "meaning_id": "bagian; jalur",
   "meaning_en": "passage; pathway",
   "jlpt": "n2",
   "pos": "noun",
@@ -35272,11 +35923,12 @@ window.vocabN2_Nouns = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"ツ＼ウロ"}
+},
     {
       "jp": "車が通路を防いでいた。",
-      "id": "A car was blocking the gateway.",
+      "id": "Sebuah mobil menghalangi pintu gerbang.",
       "level": "n2",
       "tags": [
         "umum"
@@ -35297,7 +35949,7 @@ window.vocabN2_Nouns = [
   "word": "突き当たり",
   "reading": "つきあたり",
   "romaji": "tsukiatari",
-  "meaning_id": "end (e.g. of street)",
+  "meaning_id": "ujung (misalnya jalan)",
   "meaning_en": "end (e.g. of street)",
   "jlpt": "n2",
   "pos": "noun",
@@ -35318,12 +35970,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "次の通りのつきあたりに私達の家があります。",
-      "id": "You'll find our house at the end of the next street.",
+      "id": "Anda akan menemukan rumah kami di ujung jalan berikutnya.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":5,"downstep_mora":0,"contour":"ツキアタリ￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -35360,15 +36013,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "その二つの事件の間には何年もの月日が経っている。",
-      "id": "Years intervene between the two incidents.",
+      "id": "Bertahun-tahun mengintervensi kedua insiden tersebut.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"ツキ＼ヒ"}
+},
     {
       "jp": "月日がどんどん過ぎていったが、彼の消息は何も聞こえてこなかった。",
-      "id": "The months slipped by and still there was no news of him.",
+      "id": "Bulan-bulan berlalu dan masih belum ada kabar tentang dia.",
       "level": "n2",
       "tags": [
         "umum"
@@ -35389,7 +36043,7 @@ window.vocabN2_Nouns = [
   "word": "綱",
   "reading": "つな",
   "romaji": "tsuna",
-  "meaning_id": "rope",
+  "meaning_id": "tali",
   "meaning_en": "rope",
   "jlpt": "n2",
   "pos": "noun",
@@ -35410,15 +36064,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "綱は張りすぎて切れた。",
-      "id": "The rope broke under the strain.",
+      "id": "Talinya putus karena tekanan.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"odaka","mora_count":2,"downstep_mora":2,"contour":"ツナ＼"}
+},
     {
       "jp": "彼は綱から手を放して川に落ちた。",
-      "id": "He lost hold of the rope and fell into the river.",
+      "id": "Dia kehilangan talinya dan jatuh ke sungai.",
       "level": "n2",
       "tags": [
         "umum"
@@ -35460,15 +36115,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "オランダ語はドイツ語と密接なつながりがある。",
-      "id": "Dutch is closely related to German.",
+      "id": "Bahasa Belanda berkerabat dekat dengan bahasa Jerman.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ツナガリ￣"}
+},
     {
       "jp": "２つの間には重要なつながりがある。",
-      "id": "There's a vital link between the two.",
+      "id": "Ada hubungan penting antara keduanya.",
       "level": "n2",
       "tags": [
         "umum"
@@ -35489,7 +36145,7 @@ window.vocabN2_Nouns = [
   "word": "粒",
   "reading": "つぶ",
   "romaji": "tsubu",
-  "meaning_id": "grain",
+  "meaning_id": "gandum",
   "meaning_en": "grain",
   "jlpt": "n2",
   "pos": "noun",
@@ -35514,11 +36170,12 @@ window.vocabN2_Nouns = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":2,"downstep_mora":1,"contour":"ツ＼ブ"}
+},
     {
       "jp": "私は６時間ごとに２粒飲まなければなりません。",
-      "id": "I have to take two pills every six hours.",
+      "id": "Saya harus minum dua pil setiap enam jam.",
       "level": "n2",
       "tags": [
         "umum"
@@ -35560,15 +36217,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "私は夜には決して爪を切らない。",
-      "id": "I never cut my nails at night.",
+      "id": "Saya tidak pernah memotong kuku saya di malam hari.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":2,"downstep_mora":0,"contour":"ツメ￣"}
+},
     {
       "jp": "親指の爪をはがしてしまいました。",
-      "id": "I had my thumbnail torn off.",
+      "id": "Thumbnailku sudah robek.",
       "level": "n2",
       "tags": [
         "umum"
@@ -35589,7 +36247,7 @@ window.vocabN2_Nouns = [
   "word": "艶",
   "reading": "つや",
   "romaji": "tsuya",
-  "meaning_id": "gloss; glaze",
+  "meaning_id": "kilap; glasir",
   "meaning_en": "gloss; glaze",
   "jlpt": "n2",
   "pos": "noun",
@@ -35610,15 +36268,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "飼い猫の毛のつやが悪くなった。",
-      "id": "Our cat's fur has lost its luster.",
+      "id": "Bulu kucing kita sudah kehilangan kilaunya.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":2,"downstep_mora":0,"contour":"ツヤ￣"}
+},
     {
       "jp": "この金属は磨くとつやがでる。",
-      "id": "This metal burnishes well.",
+      "id": "Logam ini dapat mengilap dengan baik.",
       "level": "n2",
       "tags": [
         "umum"
@@ -35639,7 +36298,7 @@ window.vocabN2_Nouns = [
   "word": "出合い",
   "reading": "であい",
   "romaji": "deai",
-  "meaning_id": "an encounter",
+  "meaning_id": "pertemuan",
   "meaning_en": "an encounter",
   "jlpt": "n2",
   "pos": "noun",
@@ -35660,15 +36319,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "私たちの出会いはまったくの偶然でした。",
-      "id": "Our meeting was quite accidental.",
+      "id": "Pertemuan kami sungguh tidak disengaja.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"デアイ￣"}
+},
     {
       "jp": "彼女との出会いが始まった。",
-      "id": "I began a meeting with her.",
+      "id": "Saya memulai pertemuan dengannya.",
       "level": "n2",
       "tags": [
         "umum"
@@ -35710,12 +36370,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "婦人用手洗いはどこですか。",
-      "id": "Where is the ladies' room?",
+      "id": "Dimana toilet wanita?",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":4,"downstep_mora":2,"contour":"テア＼ライ"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -35731,7 +36392,7 @@ window.vocabN2_Nouns = [
   "word": "定員",
   "reading": "ていいん",
   "romaji": "teiin",
-  "meaning_id": "fixed number of regular personnel; capacity (of boat, etc.)",
+  "meaning_id": "jumlah personel tetap yang tetap; kapasitas (perahu, dll.)",
   "meaning_en": "fixed number of regular personnel; capacity (of boat, etc.)",
   "jlpt": "n2",
   "pos": "noun",
@@ -35752,12 +36413,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "このエレベーターの定員は１０人だ。",
-      "id": "This elevator's capacity is ten people.",
+      "id": "Kapasitas lift ini sepuluh orang.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"テイイン￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -35773,7 +36435,7 @@ window.vocabN2_Nouns = [
   "word": "定価",
   "reading": "ていか",
   "romaji": "teika",
-  "meaning_id": "established price",
+  "meaning_id": "harga yang ditetapkan",
   "meaning_en": "established price",
   "jlpt": "n2",
   "pos": "noun",
@@ -35794,15 +36456,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "定価から５％値引きいたします。",
-      "id": "We'll allow a 5 percent discount off list prices.",
+      "id": "Kami akan mengizinkan diskon 5 persen dari harga yang tercantum.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"テイカ￣"}
+},
     {
       "jp": "これはバーゲン商品なので定価よりやすくなっているんじゃないですか。",
-      "id": "Aren't you selling this at a discount price?",
+      "id": "Bukankah Anda menjual ini dengan harga diskon?",
       "level": "n2",
       "tags": [
         "umum"
@@ -35823,7 +36486,7 @@ window.vocabN2_Nouns = [
   "word": "定期券",
   "reading": "ていきけん",
   "romaji": "teikiken",
-  "meaning_id": "commuter pass; season ticket",
+  "meaning_id": "tiket komuter; tiket musiman",
   "meaning_en": "commuter pass; season ticket",
   "jlpt": "n2",
   "pos": "noun",
@@ -35844,15 +36507,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "スミス氏は定期券を持っていくのを忘れた。",
-      "id": "Mr Smith forgot to take his commuter ticket.",
+      "id": "Tuan Smith lupa mengambil tiket komuternya.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":5,"downstep_mora":3,"contour":"テイキ＼ケン"}
+},
     {
       "jp": "私は愚かにも定期券を家に置き忘れた。",
-      "id": "I was foolish enough to leave my commutation ticket at home.",
+      "id": "Saya cukup bodoh untuk meninggalkan tiket pergantian saya di rumah.",
       "level": "n2",
       "tags": [
         "umum"
@@ -35873,7 +36537,7 @@ window.vocabN2_Nouns = [
   "word": "定休日",
   "reading": "ていきゅうび",
   "romaji": "teikyuubi",
-  "meaning_id": "regular holiday",
+  "meaning_id": "hari libur biasa",
   "meaning_en": "regular holiday",
   "jlpt": "n2",
   "pos": "noun",
@@ -35894,15 +36558,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "本日定休日。",
-      "id": "Today is our regular closing day.",
+      "id": "Hari ini adalah hari penutupan reguler kami.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":5,"downstep_mora":3,"contour":"テイキュ＼ウビ"}
+},
     {
       "jp": "ブルースカイスポーツ店は、何曜日が定休日だったかしら。",
-      "id": "Do you remember what day of the week Blue Sky Sports is closed?",
+      "id": "Apakah Anda ingat hari apa dalam seminggu Blue Sky Sports tutup?",
       "level": "n2",
       "tags": [
         "umum"
@@ -35923,7 +36588,7 @@ window.vocabN2_Nouns = [
   "word": "出入口",
   "reading": "でいりぐち",
   "romaji": "deiriguchi",
-  "meaning_id": "exit and entrance",
+  "meaning_id": "keluar dan masuk",
   "meaning_en": "exit and entrance",
   "jlpt": "n2",
   "pos": "noun",
@@ -35944,15 +36609,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "乗務員がただいま出入り口を開けております。",
-      "id": "The crew is now opening the hatch.",
+      "id": "Para kru sekarang membuka palka.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":5,"downstep_mora":3,"contour":"デイリ＼グチ"}
+},
     {
       "jp": "出入り口は開けたままになっていた。",
-      "id": "The gate was left open.",
+      "id": "Gerbangnya dibiarkan terbuka.",
       "level": "n2",
       "tags": [
         "umum"
@@ -35994,15 +36660,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "卒論のテーマは決めましたか。",
-      "id": "Have you decided on the subject of your thesis?",
+      "id": "Sudahkah Anda memutuskan subjek tesis Anda?",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":0,"downstep_mora":1,"contour":"＼"}
+},
     {
       "jp": "彼の発言はそのテーマとは何の関係もない。",
-      "id": "His remark has nothing to do with the subject.",
+      "id": "Pernyataannya tidak ada hubungannya dengan topik tersebut.",
       "level": "n2",
       "tags": [
         "umum"
@@ -36044,15 +36711,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "どのくらいでこの洗濯物は出来上がりますか。",
-      "id": "How soon will this laundry be ready?",
+      "id": "Seberapa cepat cucian ini akan siap?",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":5,"downstep_mora":0,"contour":"デキアガリ￣"}
+},
     {
       "jp": "これらの写真は、たいへんよく出来上がりました。",
-      "id": "These photos have come out very well.",
+      "id": "Foto-foto ini telah keluar dengan sangat baik.",
       "level": "n2",
       "tags": [
         "umum"
@@ -36073,7 +36741,7 @@ window.vocabN2_Nouns = [
   "word": "手首",
   "reading": "てくび",
   "romaji": "tekubi",
-  "meaning_id": "wrist",
+  "meaning_id": "pergelangan tangan",
   "meaning_en": "wrist",
   "jlpt": "n2",
   "pos": "noun",
@@ -36094,15 +36762,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "転んで手首を痛めました。",
-      "id": "I fell down and hurt my wrist.",
+      "id": "Aku terjatuh dan pergelangan tanganku terluka.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"テ＼クビ"}
+},
     {
       "jp": "その男は少女の手首をつかんだ。",
-      "id": "The man caught the girl by the wrist.",
+      "id": "Pria itu menangkap pergelangan tangan gadis itu.",
       "level": "n2",
       "tags": [
         "umum"
@@ -36123,7 +36792,7 @@ window.vocabN2_Nouns = [
   "word": "手帳",
   "reading": "てちょう",
   "romaji": "techou",
-  "meaning_id": "notebook",
+  "meaning_id": "buku catatan",
   "meaning_en": "notebook",
   "jlpt": "n2",
   "pos": "noun",
@@ -36144,15 +36813,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "腰を下ろし、手帳を開きました。",
-      "id": "I sat down and opened my notebook.",
+      "id": "Aku duduk dan membuka buku catatanku.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"テチョウ￣"}
+},
     {
       "jp": "手帳にお名前を書いていただけませんか。",
-      "id": "Would you write your name in my notebook?",
+      "id": "Maukah kamu menuliskan namamu di buku catatanku?",
       "level": "n2",
       "tags": [
         "umum"
@@ -36173,7 +36843,7 @@ window.vocabN2_Nouns = [
   "word": "鉄橋",
   "reading": "てっきょう",
   "romaji": "tekkyou",
-  "meaning_id": "railway bridge; iron bridge",
+  "meaning_id": "jembatan kereta api; jembatan besi",
   "meaning_en": "railway bridge; iron bridge",
   "jlpt": "n2",
   "pos": "noun",
@@ -36194,15 +36864,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "その川には鉄橋がすでに建設中だ。",
-      "id": "A railway bridge is already being built over the river.",
+      "id": "Sebuah jembatan kereta api sedang dibangun di atas sungai.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"テッキョウ￣"}
+},
     {
       "jp": "鉄橋が川にかけられた。",
-      "id": "An iron bridge was built across the river.",
+      "id": "Sebuah jembatan besi dibangun di seberang sungai.",
       "level": "n2",
       "tags": [
         "umum"
@@ -36244,15 +36915,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "搭乗手続きをするのはどこですか。",
-      "id": "Where is the check-in counter?",
+      "id": "Dimana konter check-innya?",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":4,"downstep_mora":2,"contour":"テツ＼ヅキ"}
+},
     {
       "jp": "受付で入院の手続きをしてください。",
-      "id": "You have to fill out an application for admission to the hospital at the front desk.",
+      "id": "Anda harus mengisi aplikasi untuk masuk ke rumah sakit di meja depan.",
       "level": "n2",
       "tags": [
         "umum"
@@ -36273,7 +36945,7 @@ window.vocabN2_Nouns = [
   "word": "鉄砲",
   "reading": "てっぽう",
   "romaji": "teppou",
-  "meaning_id": "gun",
+  "meaning_id": "pistol",
   "meaning_en": "gun",
   "jlpt": "n2",
   "pos": "noun",
@@ -36298,11 +36970,12 @@ window.vocabN2_Nouns = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"テッポウ￣"}
+},
     {
       "jp": "彼が鉄砲を掃除していたら暴発し、もう少しで妻に当たるところだった。",
-      "id": "The gun went off while he was cleaning it, and the bullet almost struck his wife.",
+      "id": "Pistolnya meledak saat dia sedang membersihkannya, dan pelurunya hampir mengenai istrinya.",
       "level": "n2",
       "tags": [
         "umum"
@@ -36323,7 +36996,7 @@ window.vocabN2_Nouns = [
   "word": "テニスコート",
   "reading": "テニスコート",
   "romaji": "tenisukooto",
-  "meaning_id": "tennis court",
+  "meaning_id": "lapangan tenis",
   "meaning_en": "tennis court",
   "jlpt": "n2",
   "pos": "noun",
@@ -36348,8 +37021,9 @@ window.vocabN2_Nouns = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":4,"category":"nakadaka","mora_count":0,"downstep_mora":0,"contour":"￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -36365,7 +37039,7 @@ window.vocabN2_Nouns = [
   "word": "手拭い",
   "reading": "てぬぐい",
   "romaji": "tenugui",
-  "meaning_id": "(hand) towel",
+  "meaning_id": "(tangan) handuk",
   "meaning_en": "(hand) towel",
   "jlpt": "n2",
   "pos": "noun",
@@ -36390,8 +37064,9 @@ window.vocabN2_Nouns = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"テヌグイ￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -36428,12 +37103,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "あの信号の手前で降ろしてください。",
-      "id": "Tolong let me off on this side of that traffic light.",
+      "id": "Tolong biarkan aku turun di sisi lampu lalu lintas ini.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"テマエ￣"}
+},
     {
       "jp": "手前にひいて開けてください。",
       "id": "Pull it open.",
@@ -36457,7 +37133,7 @@ window.vocabN2_Nouns = [
   "word": "出迎え",
   "reading": "でむかえ",
   "romaji": "demukae",
-  "meaning_id": "meeting; reception",
+  "meaning_id": "pertemuan; penerimaan",
   "meaning_en": "meeting; reception",
   "jlpt": "n2",
   "pos": "noun",
@@ -36478,15 +37154,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "出迎えにきてくださってありがとう。",
-      "id": "Thank you for coming to meet me.",
+      "id": "Terima kasih telah datang menemui saya.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"デムカエ￣"}
+},
     {
       "jp": "彼はウエストさんを出迎えに空港に来ていました。",
-      "id": "He was at the airport to meet Mr West.",
+      "id": "Dia berada di bandara untuk menemui Tuan West.",
       "level": "n2",
       "tags": [
         "umum"
@@ -36507,7 +37184,7 @@ window.vocabN2_Nouns = [
   "word": "伝記",
   "reading": "でんき",
   "romaji": "denki",
-  "meaning_id": "biography; life story",
+  "meaning_id": "biografi; kisah hidup",
   "meaning_en": "biography; life story",
   "jlpt": "n2",
   "pos": "noun",
@@ -36528,15 +37205,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "世界の歴史は偉人の伝記に外ならない。",
-      "id": "The history of the world is but the biography of great men.",
+      "id": "Sejarah dunia hanyalah biografi orang-orang hebat.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"デンキ￣"}
+},
     {
       "jp": "良い伝記はおもしろくて、ためにもなる。",
-      "id": "A good biography is interesting and instructive.",
+      "id": "Biografi yang baik itu menarik dan instruktif.",
       "level": "n2",
       "tags": [
         "umum"
@@ -36557,7 +37235,7 @@ window.vocabN2_Nouns = [
   "word": "電球",
   "reading": "でんきゅう",
   "romaji": "denkyuu",
-  "meaning_id": "light bulb",
+  "meaning_id": "bola lampu",
   "meaning_en": "light bulb",
   "jlpt": "n2",
   "pos": "noun",
@@ -36578,15 +37256,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "電球が切れた。",
-      "id": "The light bulb has burned out.",
+      "id": "Bola lampu telah padam.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"デンキュウ￣"}
+},
     {
       "jp": "トマス・エジソンが電球を発明した。",
-      "id": "Thomas Edison invented the light bulb.",
+      "id": "Thomas Edison menemukan bola lampu.",
       "level": "n2",
       "tags": [
         "umum"
@@ -36628,15 +37307,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "彼女は英語の点数がよい。",
-      "id": "She gets good marks in English.",
+      "id": "Dia mendapat nilai bagus dalam bahasa Inggris.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"テンス＼ウ"}
+},
     {
       "jp": "あなたはよい点数をとりましたか。",
-      "id": "Did you get good marks?",
+      "id": "Apakah kamu mendapat nilai bagus?",
       "level": "n2",
       "tags": [
         "umum"
@@ -36657,7 +37337,7 @@ window.vocabN2_Nouns = [
   "word": "電池",
   "reading": "でんち",
   "romaji": "denchi",
-  "meaning_id": "battery",
+  "meaning_id": "baterai",
   "meaning_en": "battery",
   "jlpt": "n2",
   "pos": "noun",
@@ -36678,15 +37358,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "このおもちゃの自動車は電池で動く。",
-      "id": "This toy car runs on batteries.",
+      "id": "Mobil mainan ini menggunakan baterai.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"デ＼ンチ"}
+},
     {
       "jp": "この電池はどれくらいもちますか。",
-      "id": "How long will this battery last?",
+      "id": "Berapa lama baterai ini akan bertahan?",
       "level": "n2",
       "tags": [
         "umum"
@@ -36728,15 +37409,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "彼は車を電柱にぶつけた。",
-      "id": "He ran the car into a lamppost.",
+      "id": "Dia menabrakkan mobilnya ke tiang lampu.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"デンチュウ￣"}
+},
     {
       "jp": "そのバイクは電柱にぶつかった。",
-      "id": "The motorbike struck the telephone pole.",
+      "id": "Sepeda motor itu menabrak tiang telepon.",
       "level": "n2",
       "tags": [
         "umum"
@@ -36757,7 +37439,7 @@ window.vocabN2_Nouns = [
   "word": "天皇",
   "reading": "てんのう",
   "romaji": "tennou",
-  "meaning_id": "Emperor of Japan",
+  "meaning_id": "Kaisar Jepang",
   "meaning_en": "Emperor of Japan",
   "jlpt": "n2",
   "pos": "noun",
@@ -36778,15 +37460,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "天皇は国家の象徴である。",
-      "id": "The Emperor shall be the symbol of the State.",
+      "id": "Kaisar akan menjadi simbol Negara.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"テンノ＼ウ"}
+},
     {
       "jp": "天皇は亡くなった方々の霊に祈りを捧げた。",
-      "id": "The Emperor prayed for the souls of the deceased.",
+      "id": "Kaisar berdoa untuk jiwa orang yang meninggal.",
       "level": "n2",
       "tags": [
         "umum"
@@ -36807,7 +37490,7 @@ window.vocabN2_Nouns = [
   "word": "電波",
   "reading": "でんぱ",
   "romaji": "denpa",
-  "meaning_id": "electro-magnetic wave",
+  "meaning_id": "gelombang elektromagnetik",
   "meaning_en": "electro-magnetic wave",
   "jlpt": "n2",
   "pos": "noun",
@@ -36828,15 +37511,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "彼の携帯電話は他の電話を妨害する電波を出した。",
-      "id": "His mobile phone produced radio emissions that interfered with other phones.",
+      "id": "Ponselnya menghasilkan emisi radio yang mengganggu ponsel lain.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"デ＼ンパ"}
+},
     {
       "jp": "小笠原諸島では、ＮＨＫの電波しか入らない。",
-      "id": "You can get only NHK in the Ogasawara islands.",
+      "id": "Anda hanya bisa mendapatkan NHK di kepulauan Ogasawara.",
       "level": "n2",
       "tags": [
         "umum"
@@ -36857,7 +37541,7 @@ window.vocabN2_Nouns = [
   "word": "テンポ",
   "reading": "テンポ",
   "romaji": "tenpo",
-  "meaning_id": "tempo",
+  "meaning_id": "kecepatan tempo musik",
   "meaning_en": "tempo",
   "jlpt": "n2",
   "pos": "noun",
@@ -36878,15 +37562,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "リズムは軽快でテンポは速く、その曲は若者に好まれている。",
-      "id": "The rhythm is light, and the tempo fast - that song is liked by young people.",
+      "id": "Iramanya ringan, dan temponya cepat, lagu itulah yang disukai anak muda.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":0,"downstep_mora":1,"contour":"＼"}
+},
     {
       "jp": "その試合はテンポが遅くおまけに退屈だった。",
-      "id": "The game was slow, and it was also boring.",
+      "id": "Permainannya lambat dan juga membosankan.",
       "level": "n2",
       "tags": [
         "umum"
@@ -36907,7 +37592,7 @@ window.vocabN2_Nouns = [
   "word": "電流",
   "reading": "でんりゅう",
   "romaji": "denryuu",
-  "meaning_id": "electric current",
+  "meaning_id": "arus listrik",
   "meaning_en": "electric current",
   "jlpt": "n2",
   "pos": "noun",
@@ -36928,15 +37613,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "電流が流れる電線にコイルを近づけると、コイルにも電気が流れます。",
-      "id": "When a coil is moved near to a wire with current flowing in it current flows in the coil as well.",
+      "id": "Ketika sebuah kumparan didekatkan pada kawat yang dialiri arus, maka arus juga mengalir di dalam kumparan tersebut.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"デンリュウ￣"}
+},
     {
       "jp": "ソレノイドへの突入電流でノイズが発生します。",
-      "id": "Noise is produced by the sudden flow of current into a solenoid.",
+      "id": "Kebisingan dihasilkan oleh aliran arus yang tiba-tiba ke dalam solenoid.",
       "level": "n2",
       "tags": [
         "umum"
@@ -36957,7 +37643,7 @@ window.vocabN2_Nouns = [
   "word": "電力",
   "reading": "でんりょく",
   "romaji": "denryoku",
-  "meaning_id": "electric power",
+  "meaning_id": "tenaga listrik",
   "meaning_en": "electric power",
   "jlpt": "n2",
   "pos": "noun",
@@ -36982,11 +37668,12 @@ window.vocabN2_Nouns = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":4,"downstep_mora":1,"contour":"デ＼ンリョク"}
+},
     {
       "jp": "その川は町に電力を供給する。",
-      "id": "The river furnishes electric power to the town.",
+      "id": "Sungai memberikan tenaga listrik ke kota.",
       "level": "n2",
       "tags": [
         "umum"
@@ -37007,7 +37694,7 @@ window.vocabN2_Nouns = [
   "word": "問い合わせ",
   "reading": "といあわせ",
   "romaji": "toiawase",
-  "meaning_id": "enquiry; ENQ",
+  "meaning_id": "pertanyaan; ENQ",
   "meaning_en": "enquiry; ENQ",
   "jlpt": "n2",
   "pos": "noun",
@@ -37028,15 +37715,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "ご兄弟のことはカンザス州から問い合わせを受けたばかりです。",
-      "id": "We have just received an inquiry from Kansas concerning your brother.",
+      "id": "Kami baru saja menerima pertanyaan dari Kansas mengenai saudara Anda.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":5,"downstep_mora":0,"contour":"トイアワセ￣"}
+},
     {
       "jp": "会社は心配の問い合わせでてんやわんやだった。",
-      "id": "The office was besieged by anxious inquiries.",
+      "id": "Kantor itu dikepung oleh pertanyaan-pertanyaan yang cemas.",
       "level": "n2",
       "tags": [
         "umum"
@@ -37057,7 +37745,7 @@ window.vocabN2_Nouns = [
   "word": "銅",
   "reading": "どう",
   "romaji": "dou",
-  "meaning_id": "copper",
+  "meaning_id": "tembaga",
   "meaning_en": "copper",
   "jlpt": "n2",
   "pos": "noun",
@@ -37082,11 +37770,12 @@ window.vocabN2_Nouns = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":2,"downstep_mora":1,"contour":"ド＼ウ"}
+},
     {
       "jp": "青銅は銅とすずから成り立っている。",
-      "id": "Bronze is composed of copper and tin.",
+      "id": "Perunggu terdiri dari tembaga dan timah.",
       "level": "n2",
       "tags": [
         "umum"
@@ -37128,12 +37817,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "私達が峠にさしかかる頃に雨になった。",
-      "id": "It began to rain as we came near the pass.",
+      "id": "Hujan mulai turun saat kami mendekati celah tersebut.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":3,"category":"odaka","mora_count":3,"downstep_mora":3,"contour":"トウゲ＼"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -37174,11 +37864,12 @@ window.vocabN2_Nouns = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"ド＼ウサ"}
+},
     {
       "jp": "過去の動作については過去形を用います。",
-      "id": "\"Past tense\" is used in connection with actions in the past.",
+      "id": "\"Past tense\" digunakan sehubungan dengan tindakan di masa lalu.",
       "level": "n2",
       "tags": [
         "umum"
@@ -37199,7 +37890,7 @@ window.vocabN2_Nouns = [
   "word": "東西",
   "reading": "とうざい",
   "romaji": "touzai",
-  "meaning_id": "East and West; whole country",
+  "meaning_id": "Timur dan Barat; seluruh negara",
   "meaning_en": "East and West; whole country",
   "jlpt": "n2",
   "pos": "noun",
@@ -37220,15 +37911,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "この国では東西の文化が交じり合っている。",
-      "id": "Cultures of the East and the West are mixed in this country.",
+      "id": "Budaya Timur dan Barat bercampur di negeri ini.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":4,"downstep_mora":1,"contour":"ト＼ウザイ"}
+},
     {
       "jp": "バルカン山脈はブルガリアの中央を東西に走る山脈。",
-      "id": "The Balkan Mountain range runs across Bulgaria from west to east.",
+      "id": "Pegunungan Balkan membentang melintasi Bulgaria dari barat ke timur.",
       "level": "n2",
       "tags": [
         "umum"
@@ -37249,7 +37941,7 @@ window.vocabN2_Nouns = [
   "word": "灯台",
   "reading": "とうだい",
   "romaji": "toudai",
-  "meaning_id": "lighthouse",
+  "meaning_id": "mercusuar",
   "meaning_en": "lighthouse",
   "jlpt": "n2",
   "pos": "noun",
@@ -37270,15 +37962,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "遠い灯台のかすかな光を見た。",
-      "id": "We saw the gleam of a distant lighthouse.",
+      "id": "Kami melihat kilauan mercusuar di kejauhan.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"トウダイ￣"}
+},
     {
       "jp": "灯台はきらきらと光を放っていた。",
-      "id": "The lighthouse was beaming forth rays of light.",
+      "id": "Mercusuar itu memancarkan sinar cahaya.",
       "level": "n2",
       "tags": [
         "umum"
@@ -37299,7 +37992,7 @@ window.vocabN2_Nouns = [
   "word": "盗難",
   "reading": "とうなん",
   "romaji": "tounan",
-  "meaning_id": "theft; robbery",
+  "meaning_id": "pencurian; perampokan",
   "meaning_en": "theft; robbery",
   "jlpt": "n2",
   "pos": "noun",
@@ -37320,15 +38013,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "盗難の届をだしたいのですけど。",
-      "id": "I would like to report a theft.",
+      "id": "Saya ingin melaporkan pencurian.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"トウナン￣"}
+},
     {
       "jp": "彼は盗難車を見たと知らせてきた。",
-      "id": "He reported having seen the stolen car.",
+      "id": "Dia melaporkan telah melihat mobil curian itu.",
       "level": "n2",
       "tags": [
         "umum"
@@ -37349,7 +38043,7 @@ window.vocabN2_Nouns = [
   "word": "当番",
   "reading": "とうばん",
   "romaji": "touban",
-  "meaning_id": "being on duty",
+  "meaning_id": "sedang bertugas",
   "meaning_en": "being on duty",
   "jlpt": "n2",
   "pos": "noun",
@@ -37370,15 +38064,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "先月の日直当番全部私に押し付けた形でエスケープした野郎だ。",
-      "id": "He's the pest that, on last month's class-help day, escaped leaving me with all the work.",
+      "id": "Dia adalah hama yang, pada hari bantuan kelas bulan lalu, lolos meninggalkanku dengan semua pekerjaan.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":4,"downstep_mora":1,"contour":"ト＼ウバン"}
+},
     {
       "jp": "今日はジョンが当番です。",
-      "id": "John is on duty today.",
+      "id": "John sedang bertugas hari ini.",
       "level": "n2",
       "tags": [
         "umum"
@@ -37399,7 +38094,7 @@ window.vocabN2_Nouns = [
   "word": "灯油",
   "reading": "とうゆ",
   "romaji": "touyu",
-  "meaning_id": "lamp oil; kerosene",
+  "meaning_id": "minyak lampu; minyak tanah",
   "meaning_en": "lamp oil; kerosene",
   "jlpt": "n2",
   "pos": "noun",
@@ -37420,12 +38115,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "雪の多いところでは、灯油は必需品です。",
-      "id": "In places where it snows a lot, kerosene is an indispensable item.",
+      "id": "Di tempat yang sering turun salju, minyak tanah merupakan barang yang sangat diperlukan.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"トウユ￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -37441,7 +38137,7 @@ window.vocabN2_Nouns = [
   "word": "東洋",
   "reading": "とうよう",
   "romaji": "touyou",
-  "meaning_id": "Orient",
+  "meaning_id": "Mengarahkan",
   "meaning_en": "Orient",
   "jlpt": "n2",
   "pos": "noun",
@@ -37466,11 +38162,12 @@ window.vocabN2_Nouns = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":4,"downstep_mora":1,"contour":"ト＼ウヨウ"}
+},
     {
       "jp": "東洋の陶器に興味があります。",
-      "id": "I have an interest in oriental ceramics.",
+      "id": "Saya tertarik dengan keramik oriental.",
       "level": "n2",
       "tags": [
         "umum"
@@ -37491,7 +38188,7 @@ window.vocabN2_Nouns = [
   "word": "童話",
   "reading": "どうわ",
   "romaji": "douwa",
-  "meaning_id": "fairy tale",
+  "meaning_id": "dongeng",
   "meaning_en": "fairy tale",
   "jlpt": "n2",
   "pos": "noun",
@@ -37512,15 +38209,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "あなたはこの童話を一人で書いたのですか。",
-      "id": "Did you write this fairy tale by yourself?",
+      "id": "Apakah Anda menulis dongeng ini sendiri?",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ドウワ￣"}
+},
     {
       "jp": "彼はこの童話をひとりで書いた。",
-      "id": "He wrote this fairy tale by himself.",
+      "id": "Dia menulis dongeng ini sendiri.",
       "level": "n2",
       "tags": [
         "umum"
@@ -37541,7 +38239,7 @@ window.vocabN2_Nouns = [
   "word": "特色",
   "reading": "とくしょく",
   "romaji": "tokushoku",
-  "meaning_id": "characteristic; feature",
+  "meaning_id": "karakteristik; fitur",
   "meaning_en": "characteristic; feature",
   "jlpt": "n2",
   "pos": "noun",
@@ -37562,15 +38260,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "日本には多くのはっきりとした特色がある。",
-      "id": "Japan has many distinctive traits.",
+      "id": "Jepang mempunyai banyak ciri khas.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"トクショク￣"}
+},
     {
       "jp": "湿気の多い気候はその半島の特色です。",
-      "id": "A humid climate is characteristic of the peninsula.",
+      "id": "Iklim lembab merupakan ciri khas semenanjung ini.",
       "level": "n2",
       "tags": [
         "umum"
@@ -37591,7 +38290,7 @@ window.vocabN2_Nouns = [
   "word": "特長",
   "reading": "とくちょう",
   "romaji": "tokuchou",
-  "meaning_id": "forte; merit",
+  "meaning_id": "keahlian; pantas",
   "meaning_en": "forte; merit",
   "jlpt": "n2",
   "pos": "noun",
@@ -37612,12 +38311,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "燃料の節約がこの自動車の大きな特長だ。",
-      "id": "Fuel economy is a big advantage of this car.",
+      "id": "Penghematan bahan bakar menjadi keunggulan utama mobil ini.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"トクチョウ￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -37654,15 +38354,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "別に特定の人をさして言っているのではない。",
-      "id": "I am not alluding to any person in particular.",
+      "id": "Saya tidak menyinggung siapa pun secara khusus.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"トクテイ￣"}
+},
     {
       "jp": "警察はいまだ犯人を特定できないでいる。",
-      "id": "The police still can't point out who committed the crime.",
+      "id": "Polisi masih belum bisa mengungkap siapa pelaku kejahatan tersebut.",
       "level": "n2",
       "tags": [
         "umum"
@@ -37683,7 +38384,7 @@ window.vocabN2_Nouns = [
   "word": "床の間",
   "reading": "とこのま",
   "romaji": "tokonoma",
-  "meaning_id": "alcove",
+  "meaning_id": "ceruk",
   "meaning_en": "alcove",
   "jlpt": "n2",
   "pos": "noun",
@@ -37704,12 +38405,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "手紙に貼る三銭切手が買えないで、幾日も床の間の上に置いてあるようになった。",
-      "id": "I could not buy the 3 sen stamp to put on the letter, so it ended up staying for many days on top of the tokonoma.",
+      "id": "Saya tidak bisa membeli stempel 3 sen untuk ditempelkan pada surat itu, sehingga akhirnya tetap menempel di atas tokonoma selama berhari-hari.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"トコノマ￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -37725,7 +38427,7 @@ window.vocabN2_Nouns = [
   "word": "都心",
   "reading": "としん",
   "romaji": "toshin",
-  "meaning_id": "heart (of city)",
+  "meaning_id": "jantung (kota)",
   "meaning_en": "heart (of city)",
   "jlpt": "n2",
   "pos": "noun",
@@ -37746,15 +38448,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "彼はその商売を都心に集中した。",
-      "id": "He centered his business on the metropolitan area.",
+      "id": "Ia memusatkan bisnisnya di wilayah metropolitan.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"トシン￣"}
+},
     {
       "jp": "都心では高層ビルが雨後のたけのこのように増えている。",
-      "id": "High rises are mushrooming in the heart of the city.",
+      "id": "Gedung-gedung tinggi menjamur di jantung kota.",
       "level": "n2",
       "tags": [
         "umum"
@@ -37796,15 +38499,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "この本は戸棚の上です。",
-      "id": "This book goes on the top shelf.",
+      "id": "Buku ini ada di rak paling atas.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"トダナ￣"}
+},
     {
       "jp": "皿を戸棚へしまってくれますか。",
-      "id": "Will you put the dishes away in the cupboard?",
+      "id": "Apakah Anda akan menyimpan piring-piring itu di lemari?",
       "level": "n2",
       "tags": [
         "umum"
@@ -37825,7 +38529,7 @@ window.vocabN2_Nouns = [
   "word": "丼",
   "reading": "どんぶり",
   "romaji": "donburi",
-  "meaning_id": "porcelain bowl; bowl of rice with food on top",
+  "meaning_id": "mangkuk porselen; semangkuk nasi dengan makanan di atasnya",
   "meaning_en": "porcelain bowl; bowl of rice with food on top",
   "jlpt": "n2",
   "pos": "noun",
@@ -37846,12 +38550,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "彼はご飯を丼で食べたよ。",
-      "id": "He ate rice in a big bowl.",
+      "id": "Dia makan nasi dalam mangkuk besar.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ドンブリ￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -37867,7 +38572,7 @@ window.vocabN2_Nouns = [
   "word": "内科",
   "reading": "ないか",
   "romaji": "naika",
-  "meaning_id": "internist clinic; internal medicine",
+  "meaning_id": "klinik penyakit dalam; penyakit dalam",
   "meaning_en": "internist clinic; internal medicine",
   "jlpt": "n2",
   "pos": "noun",
@@ -37888,12 +38593,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "内科はどこですか。",
-      "id": "Where is the Internal Medicine Department?",
+      "id": "Dimana letak Departemen Penyakit Dalam?",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ナイカ￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -37930,12 +38636,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "内線２１４に出る人なら誰でも構いません。",
-      "id": "I'll speak to anyone at extension 214.",
+      "id": "Saya akan berbicara dengan siapa pun di ekstensi 214.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ナイセン￣"}
+},
     {
       "jp": "内線４５番をお願いします。",
       "id": "Extension 45, please.",
@@ -37959,7 +38666,7 @@ window.vocabN2_Nouns = [
   "word": "ナイロン",
   "reading": "ナイロン",
   "romaji": "nairon",
-  "meaning_id": "nylon",
+  "meaning_id": "nilon",
   "meaning_en": "nylon",
   "jlpt": "n2",
   "pos": "noun",
@@ -37984,8 +38691,9 @@ window.vocabN2_Nouns = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":0,"downstep_mora":1,"contour":"＼"}
+},
     {
       "jp": "このナイロンソックスは、洗濯がきく。",
       "id": "These nylon socks wash well.",
@@ -38030,15 +38738,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "財布の中身をこの袋に空けなさい。",
-      "id": "Empty the purse into this bag.",
+      "id": "Kosongkan dompet ke dalam tas ini.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"ナカ＼ミ"}
+},
     {
       "jp": "彼はポケットから中身を出した。",
-      "id": "He emptied his pockets of their contents.",
+      "id": "Dia mengosongkan sakunya dari isinya.",
       "level": "n2",
       "tags": [
         "umum"
@@ -38080,15 +38789,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "財布の中身をこの袋に空けなさい。",
-      "id": "Empty the purse into this bag.",
+      "id": "Kosongkan dompet ke dalam tas ini.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"ナカ＼ミ"}
+},
     {
       "jp": "彼はポケットから中身を出した。",
-      "id": "He emptied his pockets of their contents.",
+      "id": "Dia mengosongkan sakunya dari isinya.",
       "level": "n2",
       "tags": [
         "umum"
@@ -38109,7 +38819,7 @@ window.vocabN2_Nouns = [
   "word": "中指",
   "reading": "なかゆび",
   "romaji": "nakayubi",
-  "meaning_id": "middle finger",
+  "meaning_id": "jari tengah",
   "meaning_en": "middle finger",
   "jlpt": "n2",
   "pos": "noun",
@@ -38130,15 +38840,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "トムは今日校長に中指を立てました。",
-      "id": "Tom gave the middle finger to the principal today.",
+      "id": "Tom memberikan jari tengah kepada kepala sekolah hari ini.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":4,"downstep_mora":2,"contour":"ナカ＼ユビ"}
+},
     {
       "jp": "中指が一番長いです。",
-      "id": "The middle finger is the longest.",
+      "id": "Jari tengah adalah yang terpanjang.",
       "level": "n2",
       "tags": [
         "umum"
@@ -38180,15 +38891,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "トムとジョンは仲良しです。",
-      "id": "Tom and John are good friends.",
+      "id": "Tom dan John adalah teman baik.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":4,"downstep_mora":2,"contour":"ナカ＼ヨシ"}
+},
     {
       "jp": "わたしはベスと大の仲良しです。",
-      "id": "I am good friends with Beth.",
+      "id": "Saya berteman baik dengan Beth.",
       "level": "n2",
       "tags": [
         "umum"
@@ -38230,15 +38942,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "彼はそのなぞなぞを難なく解いた。",
-      "id": "He had no difficulty explaining the mystery.",
+      "id": "Dia tidak kesulitan menjelaskan misterinya.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ナゾナゾ￣"}
+},
     {
       "jp": "そのなぞなぞは今も未解決である。",
-      "id": "The mystery still remains unsolved.",
+      "id": "Misterinya masih belum terpecahkan.",
       "level": "n2",
       "tags": [
         "umum"
@@ -38259,7 +38972,7 @@ window.vocabN2_Nouns = [
   "word": "何々",
   "reading": "なになに",
   "romaji": "naninani",
-  "meaning_id": "such and such; What?",
+  "meaning_id": "ini dan itu; Apa?",
   "meaning_en": "such and such; What?",
   "jlpt": "n2",
   "pos": "noun",
@@ -38280,12 +38993,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "何々を使います。",
-      "id": "Menggunakan such and such; What?.",
+      "id": "Menggunakan ini dan itu; Apa?.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":4,"downstep_mora":1,"contour":"ナ＼ニナニ"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -38322,12 +39036,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "なにぶんこんな辺ぴな村に住んでいるので、めったに客は来ない。",
-      "id": "Living as I do in a remote village, I seldom have visitors.",
+      "id": "Hidup seperti yang saya lakukan di desa terpencil, saya jarang mendapat pengunjung.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ナニブン￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -38343,7 +39058,7 @@ window.vocabN2_Nouns = [
   "word": "並木",
   "reading": "なみき",
   "romaji": "namiki",
-  "meaning_id": "roadside tree; row of trees",
+  "meaning_id": "pohon pinggir jalan; deretan pohon",
   "meaning_en": "roadside tree; row of trees",
   "jlpt": "n2",
   "pos": "noun",
@@ -38364,12 +39079,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "我々は背の高いポプラ並木を歩いた。",
-      "id": "We walked along an avenue of tall poplars.",
+      "id": "Kami berjalan di sepanjang jalan yang dipenuhi pohon poplar yang tinggi.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ナミキ￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -38385,7 +39101,7 @@ window.vocabN2_Nouns = [
   "word": "南極",
   "reading": "なんきょく",
   "romaji": "nankyoku",
-  "meaning_id": "south pole; Antarctic",
+  "meaning_id": "kutub selatan; Antartika",
   "meaning_en": "south pole; Antarctic",
   "jlpt": "n2",
   "pos": "noun",
@@ -38406,15 +39122,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "新聞で彼が南極から帰って来たのを知った。",
-      "id": "I saw in the paper that he had returned from the South Pole.",
+      "id": "Saya melihat di koran bahwa dia telah kembali dari Kutub Selatan.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ナンキョク￣"}
+},
     {
       "jp": "探検家は南極への出発を延期した。",
-      "id": "The expedition has postponed its departure to the Antarctic.",
+      "id": "Ekspedisi tersebut telah menunda keberangkatannya ke Antartika.",
       "level": "n2",
       "tags": [
         "umum"
@@ -38435,7 +39152,7 @@ window.vocabN2_Nouns = [
   "word": "ナンバー",
   "reading": "ナンバー",
   "romaji": "nanbaa",
-  "meaning_id": "number",
+  "meaning_id": "nomor",
   "meaning_en": "number",
   "jlpt": "n2",
   "pos": "noun",
@@ -38456,12 +39173,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "車のナンバーを書き留められなかった。",
-      "id": "I was unable to write down the number of the car.",
+      "id": "Saya tidak dapat menuliskan nomor mobilnya.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":0,"downstep_mora":1,"contour":"＼"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -38477,7 +39195,7 @@ window.vocabN2_Nouns = [
   "word": "南米",
   "reading": "なんべい",
   "romaji": "nanbei",
-  "meaning_id": "South America",
+  "meaning_id": "Amerika Selatan",
   "meaning_en": "South America",
   "jlpt": "n2",
   "pos": "noun",
@@ -38498,15 +39216,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "私は清水の舞台から飛び降りる気持ちで南米に渡ります。",
-      "id": "I am going to take a big chance by migrating to South America.",
+      "id": "Saya akan mengambil risiko besar dengan bermigrasi ke Amerika Selatan.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ナンベイ￣"}
+},
     {
       "jp": "私達は南米を旅行した。",
-      "id": "We traveled in South America.",
+      "id": "Kami bepergian di Amerika Selatan.",
       "level": "n2",
       "tags": [
         "umum"
@@ -38527,7 +39246,7 @@ window.vocabN2_Nouns = [
   "word": "南北",
   "reading": "なんぼく",
   "romaji": "nanboku",
-  "meaning_id": "south and north",
+  "meaning_id": "selatan dan utara",
   "meaning_en": "south and north",
   "jlpt": "n2",
   "pos": "noun",
@@ -38548,12 +39267,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "日本は南北に長い国です。",
-      "id": "Japan is a very long country from north to south.",
+      "id": "Jepang adalah negara yang sangat panjang dari utara ke selatan.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":4,"downstep_mora":1,"contour":"ナ＼ンボク"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -38569,7 +39289,7 @@ window.vocabN2_Nouns = [
   "word": "虹",
   "reading": "にじ",
   "romaji": "niji",
-  "meaning_id": "rainbow",
+  "meaning_id": "pelangi",
   "meaning_en": "rainbow",
   "jlpt": "n2",
   "pos": "noun",
@@ -38590,15 +39310,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "虹は自然現象である。",
-      "id": "A rainbow is a natural phenomenon.",
+      "id": "Pelangi adalah fenomena alam.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":2,"downstep_mora":0,"contour":"ニジ￣"}
+},
     {
       "jp": "虹は最も美しい自然現象の１つだ。",
-      "id": "A rainbow is one of the most beautiful phenomena of nature.",
+      "id": "Pelangi merupakan salah satu fenomena alam yang paling indah.",
       "level": "n2",
       "tags": [
         "umum"
@@ -38619,7 +39340,7 @@ window.vocabN2_Nouns = [
   "word": "日時",
   "reading": "にちじ",
   "romaji": "nichiji",
-  "meaning_id": "date and time",
+  "meaning_id": "tanggal dan waktu",
   "meaning_en": "date and time",
   "jlpt": "n2",
   "pos": "noun",
@@ -38640,15 +39361,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "会合の日時はおってお知らせします。",
-      "id": "We will let you know the time and date of the meeting soon.",
+      "id": "Kami akan segera memberi tahu Anda waktu dan tanggal pertemuan.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"ニ＼チジ"}
+},
     {
       "jp": "その日時はコーチに都合がよかった。",
-      "id": "The time and date suited our coach.",
+      "id": "Waktu dan tanggalnya sesuai dengan pelatih kami.",
       "level": "n2",
       "tags": [
         "umum"
@@ -38669,7 +39391,7 @@ window.vocabN2_Nouns = [
   "word": "日用品",
   "reading": "にちようひん",
   "romaji": "nichiyouhin",
-  "meaning_id": "daily necessities",
+  "meaning_id": "kebutuhan sehari-hari",
   "meaning_en": "daily necessities",
   "jlpt": "n2",
   "pos": "noun",
@@ -38690,15 +39412,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "あのスーパーに行けば、たいていの日用品は間に合います。",
-      "id": "If you go to that supermarket, you can buy most things you use in your daily life.",
+      "id": "Jika Anda pergi ke supermarket itu, Anda dapat membeli sebagian besar barang yang Anda gunakan sehari-hari.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":6,"downstep_mora":0,"contour":"ニチヨウヒン￣"}
+},
     {
       "jp": "日用品の値段が上がった。",
-      "id": "Daily commodities increased in price.",
+      "id": "Komoditas harian mengalami kenaikan harga.",
       "level": "n2",
       "tags": [
         "umum"
@@ -38740,12 +39463,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "朝食前に新聞を読むのが私の日課です。",
-      "id": "My routine is to read the newspaper before breakfast.",
+      "id": "Rutinitas saya adalah membaca koran sebelum sarapan.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ニッカ￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -38761,7 +39485,7 @@ window.vocabN2_Nouns = [
   "word": "日程",
   "reading": "にってい",
   "romaji": "nittei",
-  "meaning_id": "agenda",
+  "meaning_id": "agenda kegiatan / jadwal",
   "meaning_en": "agenda",
   "jlpt": "n2",
   "pos": "noun",
@@ -38782,15 +39506,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "あす雨の場合は別の日程を組まなくちゃ。",
-      "id": "In case it rains tomorrow, we should make another arrangement.",
+      "id": "Jika besok hujan, kita harus membuat pengaturan lain.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ニッテイ￣"}
+},
     {
       "jp": "私たちは日程を考慮に入れるべきだった。",
-      "id": "We should have taken the schedule into consideration.",
+      "id": "Kami seharusnya mempertimbangkan jadwalnya.",
       "level": "n2",
       "tags": [
         "umum"
@@ -38811,7 +39536,7 @@ window.vocabN2_Nouns = [
   "word": "女房",
   "reading": "にょうぼう",
   "romaji": "nyoubou",
-  "meaning_id": "wife",
+  "meaning_id": "istri",
   "meaning_en": "wife",
   "jlpt": "n2",
   "pos": "noun",
@@ -38832,15 +39557,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "女房の手は店員さんより一回り小さい。",
-      "id": "My wife's hands are slightly smaller than the shop assistant's.",
+      "id": "Tangan istri saya sedikit lebih kecil dibandingkan tangan asisten toko.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":4,"downstep_mora":1,"contour":"ニョ＼ウボウ"}
+},
     {
       "jp": "女房にどなってたのはおまえさんか。",
-      "id": "Were you shouting at my wife?",
+      "id": "Apakah kamu meneriaki istriku?",
       "level": "n2",
       "tags": [
         "umum"
@@ -38861,7 +39587,7 @@ window.vocabN2_Nouns = [
   "word": "ねじ",
   "reading": "ねじ",
   "romaji": "neji",
-  "meaning_id": "(a) screw",
+  "meaning_id": "(a) sekrup",
   "meaning_en": "(a) screw",
   "jlpt": "n2",
   "pos": "noun",
@@ -38882,15 +39608,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "この機械は１時間に千個のねじを製造する。",
-      "id": "This machine cranks out a thousand screws an hour.",
+      "id": "Mesin ini menghasilkan seribu sekrup dalam satu jam.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":2,"downstep_mora":1,"contour":"ネ＼ジ"}
+},
     {
       "jp": "ネジを回すと、急に水が吹き出してきた。",
-      "id": "When I turned the screw, water burst out.",
+      "id": "Saat saya memutar sekrupnya, air keluar.",
       "level": "n2",
       "tags": [
         "umum"
@@ -38911,7 +39638,7 @@ window.vocabN2_Nouns = [
   "word": "ネックレス",
   "reading": "ネックレス",
   "romaji": "nekkuresu",
-  "meaning_id": "necklace",
+  "meaning_id": "kalung",
   "meaning_en": "necklace",
   "jlpt": "n2",
   "pos": "noun",
@@ -38932,15 +39659,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "その婦人は真珠のネックレスをかけていた。",
-      "id": "The lady wore a necklace of pearls.",
+      "id": "Wanita itu mengenakan kalung mutiara.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":0,"downstep_mora":1,"contour":"＼"}
+},
     {
       "jp": "そのネックレスが１００ドルとは安い。",
-      "id": "The necklace is cheap at a hundred dollars.",
+      "id": "Kalung itu murah dengan harga seratus dolar.",
       "level": "n2",
       "tags": [
         "umum"
@@ -38982,15 +39710,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "寝巻きのままで朝ごはんを食べた。",
-      "id": "I had breakfast in pajamas.",
+      "id": "Saya sarapan dengan piyama.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ネマキ￣"}
+},
     {
       "jp": "寝巻のまま学校に行ってしまった。",
-      "id": "I went to school in my pajamas.",
+      "id": "Saya pergi ke sekolah dengan piyama.",
       "level": "n2",
       "tags": [
         "umum"
@@ -39032,15 +39761,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "寝巻きのままで朝ごはんを食べた。",
-      "id": "I had breakfast in pajamas.",
+      "id": "Saya sarapan dengan piyama.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ネマキ￣"}
+},
     {
       "jp": "寝巻のまま学校に行ってしまった。",
-      "id": "I went to school in my pajamas.",
+      "id": "Saya pergi ke sekolah dengan piyama.",
       "level": "n2",
       "tags": [
         "umum"
@@ -39061,7 +39791,7 @@ window.vocabN2_Nouns = [
   "word": "狙い",
   "reading": "ねらい",
   "romaji": "nerai",
-  "meaning_id": "aim",
+  "meaning_id": "tujuan",
   "meaning_en": "aim",
   "jlpt": "n2",
   "pos": "noun",
@@ -39082,15 +39812,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "彼女のねらいは教師になることである。",
-      "id": "She aims to become a teacher.",
+      "id": "Dia bercita-cita menjadi seorang guru.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ネライ￣"}
+},
     {
       "jp": "またアフィ狙いの記事か。",
-      "id": "Another spam article hoping for click-throughs?",
+      "id": "Artikel spam lain yang mengharapkan klik-tayang?",
       "level": "n2",
       "tags": [
         "umum"
@@ -39132,12 +39863,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "零細小売店などは新年度には利益を上げるでしょう。",
-      "id": "Mom-and-pop stores will turn a profit in the new fiscal year.",
+      "id": "Toko-toko kecil akan menghasilkan keuntungan di tahun fiskal baru.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"ネ＼ンド"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -39153,7 +39885,7 @@ window.vocabN2_Nouns = [
   "word": "農産物",
   "reading": "のうさんぶつ",
   "romaji": "nousanbutsu",
-  "meaning_id": "agricultural produce",
+  "meaning_id": "hasil pertanian",
   "meaning_en": "agricultural produce",
   "jlpt": "n2",
   "pos": "noun",
@@ -39174,15 +39906,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "わが国の主な農産物は米である。",
-      "id": "The chief crop of our country is rice.",
+      "id": "Tanaman utama negara kita adalah beras.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":6,"downstep_mora":3,"contour":"ノウサ＼ンブツ"}
+},
     {
       "jp": "今年の農産物の出来は思ったより良い。",
-      "id": "The farm production of this year is better than we expected.",
+      "id": "Produksi pertanian tahun ini lebih baik dari perkiraan kami.",
       "level": "n2",
       "tags": [
         "umum"
@@ -39228,8 +39961,9 @@ window.vocabN2_Nouns = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ノウソン￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -39245,7 +39979,7 @@ window.vocabN2_Nouns = [
   "word": "濃度",
   "reading": "のうど",
   "romaji": "noudo",
-  "meaning_id": "concentration; brightness",
+  "meaning_id": "konsentrasi; kecerahan",
   "meaning_en": "concentration; brightness",
   "jlpt": "n2",
   "pos": "noun",
@@ -39266,12 +40000,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "濃度10%の食塩水の作り方を教えてください。",
-      "id": "Show me how to make 10% saline solution.",
+      "id": "Tunjukkan pada saya cara membuat larutan garam 10%.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"ノ＼ウド"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -39287,7 +40022,7 @@ window.vocabN2_Nouns = [
   "word": "農薬",
   "reading": "のうやく",
   "romaji": "nouyaku",
-  "meaning_id": "agricultural chemicals",
+  "meaning_id": "bahan kimia pertanian",
   "meaning_en": "agricultural chemicals",
   "jlpt": "n2",
   "pos": "noun",
@@ -39312,11 +40047,12 @@ window.vocabN2_Nouns = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ノウヤク￣"}
+},
     {
       "jp": "無農薬栽培とは、農薬を使わずに穀物、野菜、果物などの植物を栽培する方法です。",
-      "id": "Organic cultivation is a method of growing plants (grains, vegetables, fruit, etc.) without using agricultural chemicals.",
+      "id": "Budidaya organik adalah metode menanam tanaman (biji-bijian, sayur mayur, buah, dll) tanpa menggunakan bahan kimia pertanian.",
       "level": "n2",
       "tags": [
         "umum"
@@ -39337,7 +40073,7 @@ window.vocabN2_Nouns = [
   "word": "能率",
   "reading": "のうりつ",
   "romaji": "nouritsu",
-  "meaning_id": "efficiency",
+  "meaning_id": "efisiensi",
   "meaning_en": "efficiency",
   "jlpt": "n2",
   "pos": "noun",
@@ -39358,15 +40094,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "そうすれば能率が上がりますよ。",
-      "id": "That makes for efficiency.",
+      "id": "Hal ini menghasilkan efisiensi.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ノウリツ￣"}
+},
     {
       "jp": "商売では能率のよさということが最も重要な考えである。",
-      "id": "Efficiency is the dominant idea in business.",
+      "id": "Efisiensi adalah ide dominan dalam bisnis.",
       "level": "n2",
       "tags": [
         "umum"
@@ -39387,7 +40124,7 @@ window.vocabN2_Nouns = [
   "word": "のこぎり",
   "reading": "のこぎり",
   "romaji": "nokogiri",
-  "meaning_id": "saw",
+  "meaning_id": "melihat",
   "meaning_en": "saw",
   "jlpt": "n2",
   "pos": "noun",
@@ -39412,11 +40149,12 @@ window.vocabN2_Nouns = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"ノコギ＼リ"}
+},
     {
       "jp": "父はのこぎりで木を切った。",
-      "id": "My father cut wood with a saw.",
+      "id": "Ayah saya memotong kayu dengan gergaji.",
       "level": "n2",
       "tags": [
         "umum"
@@ -39437,7 +40175,7 @@ window.vocabN2_Nouns = [
   "word": "上り",
   "reading": "のぼり",
   "romaji": "nobori",
-  "meaning_id": "up-train (going to Tokyo); ascent",
+  "meaning_id": "up-train (pergi ke Tokyo); pendakian",
   "meaning_en": "up-train (going to Tokyo); ascent",
   "jlpt": "n2",
   "pos": "noun",
@@ -39458,15 +40196,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "道はここからゆるやかな上りだ。",
-      "id": "The road ascends gently here.",
+      "id": "Jalan menanjak dengan lembut di sini.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ノボリ￣"}
+},
     {
       "jp": "頂上までの登りに６時間かかった。",
-      "id": "The climb to the summit took six hours.",
+      "id": "Pendakian menuju puncak memakan waktu enam jam.",
       "level": "n2",
       "tags": [
         "umum"
@@ -39487,7 +40226,7 @@ window.vocabN2_Nouns = [
   "word": "糊",
   "reading": "のり",
   "romaji": "nori",
-  "meaning_id": "paste; starch",
+  "meaning_id": "tempel; pati",
   "meaning_en": "paste; starch",
   "jlpt": "n2",
   "pos": "noun",
@@ -39508,15 +40247,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "彼はメモをドアに糊で貼った。",
-      "id": "He pasted the notice on the door.",
+      "id": "Dia menempelkan pemberitahuan itu di pintu.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"odaka","mora_count":2,"downstep_mora":2,"contour":"ノリ＼"}
+},
     {
       "jp": "こののりはプラスチックには付かない。",
-      "id": "This glue does not adhere to plastic.",
+      "id": "Lem ini tidak menempel pada plastik.",
       "level": "n2",
       "tags": [
         "umum"
@@ -39558,15 +40298,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "私の父は青と灰色のネクタイを持っている。",
-      "id": "My father has a blue and gray tie.",
+      "id": "Ayah saya memiliki dasi biru dan abu-abu.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ハイイロ￣"}
+},
     {
       "jp": "道路はほこりで灰色になっていた。",
-      "id": "The road was gray with dust.",
+      "id": "Jalanan berwarna abu-abu karena debu.",
       "level": "n2",
       "tags": [
         "umum"
@@ -39587,7 +40328,7 @@ window.vocabN2_Nouns = [
   "word": "俳句",
   "reading": "はいく",
   "romaji": "haiku",
-  "meaning_id": "haiku poetry",
+  "meaning_id": "puisi haiku",
   "meaning_en": "haiku poetry",
   "jlpt": "n2",
   "pos": "noun",
@@ -39608,12 +40349,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "俳句は季節と関連が深い。",
-      "id": "Haiku are closely related to the seasons of the year.",
+      "id": "Haiku berkaitan erat dengan musim dalam setahun.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ハイク￣"}
+},
     {
       "jp": "これは芭蕉の非常に有名な俳句です。",
       "id": "Ini adalah a very famous haiku by Basho.",
@@ -39637,7 +40379,7 @@ window.vocabN2_Nouns = [
   "word": "売店",
   "reading": "ばいてん",
   "romaji": "baiten",
-  "meaning_id": "shop; stand",
+  "meaning_id": "berbelanja; berdiri",
   "meaning_en": "shop; stand",
   "jlpt": "n2",
   "pos": "noun",
@@ -39658,15 +40400,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "アイスクリーム売りが外の売店で客にアイスクリームを売っている。",
-      "id": "The ice cream vendor is waiting on customers at his outdoor stand.",
+      "id": "Penjual es krim sedang menunggu pelanggan di stand luar ruangannya.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"バイテン￣"}
+},
     {
       "jp": "病院売店はどこにありますか。",
-      "id": "Where is the hospital shop?",
+      "id": "Dimana toko rumah sakitnya?",
       "level": "n2",
       "tags": [
         "umum"
@@ -39687,7 +40430,7 @@ window.vocabN2_Nouns = [
   "word": "バイバイ",
   "reading": "バイバイ",
   "romaji": "baibai",
-  "meaning_id": "bye-bye; goodbye",
+  "meaning_id": "selamat tinggal",
   "meaning_en": "bye-bye; goodbye",
   "jlpt": "n2",
   "pos": "noun",
@@ -39708,12 +40451,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "診察室を出る間際、先生が「バイバイ」と手を振ってくださいました。",
-      "id": "Just as we were leaving the exam room the doctor waved his hand saying, 'bye-bye'.",
+      "id": "Saat kami meninggalkan ruang pemeriksaan dokter melambaikan tangannya sambil berkata, 'bye-bye'.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":0,"downstep_mora":1,"contour":"＼"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -39729,7 +40473,7 @@ window.vocabN2_Nouns = [
   "word": "秤",
   "reading": "はかり",
   "romaji": "hakari",
-  "meaning_id": "scales; weighing machine",
+  "meaning_id": "timbangan; mesin timbang",
   "meaning_en": "scales; weighing machine",
   "jlpt": "n2",
   "pos": "noun",
@@ -39750,15 +40494,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "浴室の秤で体重を計った。",
-      "id": "I weighed myself on the bathroom scales.",
+      "id": "Aku menimbang diriku dengan timbangan kamar mandi.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ハカリ￣"}
+},
     {
       "jp": "このはかりであなたの荷物を量っていいですよ。",
-      "id": "You can weigh your baggage in this balance.",
+      "id": "Anda dapat menimbang bagasi Anda dengan timbangan ini.",
       "level": "n2",
       "tags": [
         "umum"
@@ -39779,7 +40524,7 @@ window.vocabN2_Nouns = [
   "word": "吐き気",
   "reading": "はきけ",
   "romaji": "hakike",
-  "meaning_id": "nausea; sickness in the stomach",
+  "meaning_id": "mual; penyakit di perut",
   "meaning_en": "nausea; sickness in the stomach",
   "jlpt": "n2",
   "pos": "noun",
@@ -39800,12 +40545,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "なんだかめまいと吐き気がします。",
-      "id": "I feel sort of dizzy and I feel like throwing up.",
+      "id": "Aku merasa agak pusing dan ingin muntah.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"odaka","mora_count":3,"downstep_mora":3,"contour":"ハキケ＼"}
+},
     {
       "jp": "吐き気がします。",
       "id": "I feel like throwing up.",
@@ -39829,7 +40575,7 @@ window.vocabN2_Nouns = [
   "word": "歯車",
   "reading": "はぐるま",
   "romaji": "haguruma",
-  "meaning_id": "gear; cog-wheel",
+  "meaning_id": "perlengkapan; roda gigi",
   "meaning_en": "gear; cog-wheel",
   "jlpt": "n2",
   "pos": "noun",
@@ -39850,15 +40596,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "歯車がかみ合っている。",
-      "id": "The cog-wheels are in gear.",
+      "id": "Roda gigi sedang dalam keadaan siap pakai.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":4,"downstep_mora":2,"contour":"ハグ＼ルマ"}
+},
     {
       "jp": "ここの小さな歯車がないんだ。",
-      "id": "A small gear is missing here.",
+      "id": "Ada peralatan kecil yang hilang di sini.",
       "level": "n2",
       "tags": [
         "umum"
@@ -39879,7 +40626,7 @@ window.vocabN2_Nouns = [
   "word": "バケツ",
   "reading": "バケツ",
   "romaji": "baketsu",
-  "meaning_id": "bucket; pail",
+  "meaning_id": "ember",
   "meaning_en": "bucket; pail",
   "jlpt": "n2",
   "pos": "noun",
@@ -39900,15 +40647,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "彼はバケツに水をいっぱい入れた。",
-      "id": "He filled the bucket with water.",
+      "id": "Dia mengisi ember itu dengan air.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":0,"downstep_mora":0,"contour":"￣"}
+},
     {
       "jp": "私はバケツを水でいっぱいにした。",
-      "id": "I filled the pail with water.",
+      "id": "Saya mengisi ember dengan air.",
       "level": "n2",
       "tags": [
         "umum"
@@ -39929,7 +40677,7 @@ window.vocabN2_Nouns = [
   "word": "梯子",
   "reading": "はしご",
   "romaji": "hashigo",
-  "meaning_id": "ladder; stairs",
+  "meaning_id": "tangga",
   "meaning_en": "ladder; stairs",
   "jlpt": "n2",
   "pos": "noun",
@@ -39950,15 +40698,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "彼は平衡を失ってはしごから落ちた。",
-      "id": "He lost his balance and fell off the ladder.",
+      "id": "Dia kehilangan keseimbangan dan jatuh dari tangga.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ハシゴ￣"}
+},
     {
       "jp": "私ははしごを使って屋根に登った。",
-      "id": "I went up to the roof by means of a ladder.",
+      "id": "Saya naik ke atap melalui tangga.",
       "level": "n2",
       "tags": [
         "umum"
@@ -39979,7 +40728,7 @@ window.vocabN2_Nouns = [
   "word": "斜",
   "reading": "はす",
   "romaji": "hasu",
-  "meaning_id": "diagonal",
+  "meaning_id": "garis diagonal / miring",
   "meaning_en": "diagonal",
   "jlpt": "n2",
   "pos": "noun",
@@ -40004,11 +40753,12 @@ window.vocabN2_Nouns = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":2,"downstep_mora":0,"contour":"ハス￣"}
+},
     {
       "jp": "布を斜めにカットします。",
-      "id": "Cut the cloth diagonally.",
+      "id": "Potong kain secara diagonal.",
       "level": "n2",
       "tags": [
         "umum"
@@ -40029,7 +40779,7 @@ window.vocabN2_Nouns = [
   "word": "パターン",
   "reading": "パターン",
   "romaji": "pataan",
-  "meaning_id": "pattern",
+  "meaning_id": "pola",
   "meaning_en": "pattern",
   "jlpt": "n2",
   "pos": "noun",
@@ -40050,15 +40800,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "世界貿易の変動パターンが次の表で明らかにされている。",
-      "id": "The shifting pattern of world trade is made clear in the following table.",
+      "id": "Pergeseran pola perdagangan dunia terlihat jelas pada tabel berikut.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":0,"downstep_mora":0,"contour":"￣"}
+},
     {
       "jp": "この母音変化はそれぞれの単語に指定される全体のアクセントパターンと大いに関係している。",
-      "id": "This vowel change has much to do with the overall accent pattern assigned to each word.",
+      "id": "Perubahan vokal ini sangat berkaitan dengan keseluruhan pola aksen yang diberikan pada setiap kata.",
       "level": "n2",
       "tags": [
         "umum"
@@ -40079,7 +40830,7 @@ window.vocabN2_Nouns = [
   "word": "肌着",
   "reading": "はだぎ",
   "romaji": "hadagi",
-  "meaning_id": "underwear",
+  "meaning_id": "pakaian dalam",
   "meaning_en": "underwear",
   "jlpt": "n2",
   "pos": "noun",
@@ -40100,12 +40851,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "彼は肌着を裏返しに着た。",
-      "id": "He put on his undershirt inside out.",
+      "id": "Dia mengenakan kaos dalamnya luar dalam.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":3,"category":"odaka","mora_count":3,"downstep_mora":3,"contour":"ハダギ＼"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -40121,7 +40873,7 @@ window.vocabN2_Nouns = [
   "word": "鉢",
   "reading": "はち",
   "romaji": "hachi",
-  "meaning_id": "a bowl; a pot",
+  "meaning_id": "mangkuk; sebuah pot",
   "meaning_en": "a bowl; a pot",
   "jlpt": "n2",
   "pos": "noun",
@@ -40142,15 +40894,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "はちには砂糖が全然ない。",
-      "id": "Ada no sugar in the bowl.",
+      "id": "Tidak ada gula di dalam mangkuk.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"odaka","mora_count":2,"downstep_mora":2,"contour":"ハチ＼"}
+},
     {
       "jp": "彼は粘土で鉢をつくった。",
-      "id": "He formed the clay into a bowl.",
+      "id": "Dia membentuk tanah liat menjadi mangkuk.",
       "level": "n2",
       "tags": [
         "umum"
@@ -40171,7 +40924,7 @@ window.vocabN2_Nouns = [
   "word": "バック",
   "reading": "バック",
   "romaji": "bakku",
-  "meaning_id": "back",
+  "meaning_id": "kembali",
   "meaning_en": "back",
   "jlpt": "n2",
   "pos": "noun",
@@ -40196,8 +40949,9 @@ window.vocabN2_Nouns = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":0,"downstep_mora":1,"contour":"＼"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -40213,7 +40967,7 @@ window.vocabN2_Nouns = [
   "word": "発想",
   "reading": "はっそう",
   "romaji": "hassou",
-  "meaning_id": "expression (music); conceptualization",
+  "meaning_id": "ekspresi (musik); konseptualisasi",
   "meaning_en": "expression (music); conceptualization",
   "jlpt": "n2",
   "pos": "noun",
@@ -40234,15 +40988,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "その人達は大胆な発想をすべきだ。",
-      "id": "They should have bold ideas.",
+      "id": "Mereka harus mempunyai ide-ide yang berani.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ハッソウ￣"}
+},
     {
       "jp": "トランプでインチキをするという良い発想を偶然思い付いた。",
-      "id": "I hit on the terrific idea of cheating at cards by chance.",
+      "id": "Saya mendapat ide bagus untuk menyontek kartu secara kebetulan.",
       "level": "n2",
       "tags": [
         "umum"
@@ -40263,7 +41018,7 @@ window.vocabN2_Nouns = [
   "word": "話中",
   "reading": "はなしちゅう",
   "romaji": "hanashichuu",
-  "meaning_id": "while talking; the line is busy",
+  "meaning_id": "saat berbicara; saluran sedang sibuk",
   "meaning_en": "while talking; the line is busy",
   "jlpt": "n2",
   "pos": "noun",
@@ -40284,15 +41039,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "すみません。ただいま話し中です。",
-      "id": "Sorry, the line is busy now.",
+      "id": "Maaf, salurannya sedang sibuk sekarang.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":5,"downstep_mora":0,"contour":"ハナシチュウ￣"}
+},
     {
       "jp": "ちょうど今電話で話し中なんだ。",
-      "id": "I've got my friend on the line right now.",
+      "id": "Aku sedang menelepon temanku sekarang.",
       "level": "n2",
       "tags": [
         "umum"
@@ -40313,7 +41069,7 @@ window.vocabN2_Nouns = [
   "word": "花火",
   "reading": "はなび",
   "romaji": "hanabi",
-  "meaning_id": "fireworks",
+  "meaning_id": "kembang api",
   "meaning_en": "fireworks",
   "jlpt": "n2",
   "pos": "noun",
@@ -40334,15 +41090,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "すごい花火だ！",
-      "id": "These fireworks are spectacular!",
+      "id": "Kembang api ini spektakuler!",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"ハ＼ナビ"}
+},
     {
       "jp": "夜までいて花火を見ていこうよ。",
-      "id": "Let's stay until nightfall and watch the fireworks.",
+      "id": "Mari kita tinggal sampai malam tiba dan menonton kembang api.",
       "level": "n2",
       "tags": [
         "umum"
@@ -40363,7 +41120,7 @@ window.vocabN2_Nouns = [
   "word": "花嫁",
   "reading": "はなよめ",
   "romaji": "hanayome",
-  "meaning_id": "bride",
+  "meaning_id": "pengantin wanita",
   "meaning_en": "bride",
   "jlpt": "n2",
   "pos": "noun",
@@ -40384,12 +41141,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "花嫁はたいへん美しく見えた。",
-      "id": "The bride looked very beautiful.",
+      "id": "Pengantin wanita terlihat sangat cantik.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":4,"downstep_mora":2,"contour":"ハナ＼ヨメ"}
+},
     {
       "jp": "彼女は花嫁のような衣装を着ている。",
       "id": "Dia dressed like a bride.",
@@ -40434,12 +41192,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "そのばね１個で車の全重量を支えている。",
-      "id": "That one spring carries the whole weight of the car.",
+      "id": "Pegas yang satu itu memikul seluruh beban mobil.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":2,"downstep_mora":1,"contour":"バ＼ネ"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -40476,15 +41235,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "彼はその破片をくっつけ合わした。",
-      "id": "He stuck the broken pieces together.",
+      "id": "Dia menyatukan pecahan-pecahan itu.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ハヘン￣"}
+},
     {
       "jp": "彼女はガラスの破片で指を切った。",
-      "id": "She cut her finger on the broken glass.",
+      "id": "Dia melukai jarinya di pecahan kaca.",
       "level": "n2",
       "tags": [
         "umum"
@@ -40505,7 +41265,7 @@ window.vocabN2_Nouns = [
   "word": "歯磨き",
   "reading": "はみがき",
   "romaji": "hamigaki",
-  "meaning_id": "dentifrice; toothpaste",
+  "meaning_id": "pasta gigi",
   "meaning_en": "dentifrice; toothpaste",
   "jlpt": "n2",
   "pos": "noun",
@@ -40526,15 +41286,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "歯磨きをしなさい。",
-      "id": "Brush your teeth.",
+      "id": "Sikat gigimu.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":4,"downstep_mora":2,"contour":"ハミ＼ガキ"}
+},
     {
       "jp": "歯磨きはどこ？",
-      "id": "Where's the toothpaste?",
+      "id": "Mana pasta giginya?",
       "level": "n2",
       "tags": [
         "umum"
@@ -40555,7 +41316,7 @@ window.vocabN2_Nouns = [
   "word": "早口",
   "reading": "はやくち",
   "romaji": "hayakuchi",
-  "meaning_id": "fast-talking",
+  "meaning_id": "berbicara cepat",
   "meaning_en": "fast-talking",
   "jlpt": "n2",
   "pos": "noun",
@@ -40576,15 +41337,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "アナウンサーは早口が出来る。",
-      "id": "The announcer can talk rapidly.",
+      "id": "Penyiar dapat berbicara dengan cepat.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":4,"downstep_mora":2,"contour":"ハヤ＼クチ"}
+},
     {
       "jp": "彼女は早口で話す傾向が多い。",
-      "id": "She tends to speak rapidly.",
+      "id": "Dia cenderung berbicara dengan cepat.",
       "level": "n2",
       "tags": [
         "umum"
@@ -40605,7 +41367,7 @@ window.vocabN2_Nouns = [
   "word": "針金",
   "reading": "はりがね",
   "romaji": "harigane",
-  "meaning_id": "wire",
+  "meaning_id": "kawat",
   "meaning_en": "wire",
   "jlpt": "n2",
   "pos": "noun",
@@ -40626,15 +41388,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "私達は二本の柱の間に針金を張った。",
-      "id": "We extended a wire between two posts.",
+      "id": "Kami merentangkan kawat di antara dua tiang.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ハリガネ￣"}
+},
     {
       "jp": "このかごは、針金でできている。",
-      "id": "This cage is made of wire.",
+      "id": "Sangkar ini terbuat dari kawat.",
       "level": "n2",
       "tags": [
         "umum"
@@ -40655,7 +41418,7 @@ window.vocabN2_Nouns = [
   "word": "半径",
   "reading": "はんけい",
   "romaji": "hankei",
-  "meaning_id": "radius",
+  "meaning_id": "jari-jari lingkaran (radius)",
   "meaning_en": "radius",
   "jlpt": "n2",
   "pos": "noun",
@@ -40676,15 +41439,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "地球の半径は、約6,000キロです。",
-      "id": "Earth's radius is about six thousand kilometres.",
+      "id": "Jari-jari bumi sekitar enam ribu kilometer.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":4,"downstep_mora":1,"contour":"ハ＼ンケイ"}
+},
     {
       "jp": "原点を中心とする半径2の円と，直線 y = x − 1 の交点を求めよ。",
-      "id": "Consider a circle of radius 2 centered at the origin. Find its points of intersection with the line y = x - 1.",
+      "id": "Misalkan sebuah lingkaran berjari-jari 2 berpusat di titik asal. Tentukan titik potongnya dengan garis y = x - 1.",
       "level": "n2",
       "tags": [
         "umum"
@@ -40705,7 +41469,7 @@ window.vocabN2_Nouns = [
   "word": "判子",
   "reading": "はんこ",
   "romaji": "hanko",
-  "meaning_id": "seal (used for signature)",
+  "meaning_id": "stempel (digunakan untuk tanda tangan)",
   "meaning_en": "seal (used for signature)",
   "jlpt": "n2",
   "pos": "noun",
@@ -40726,15 +41490,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "私たちの生活には判子が必需品です。",
-      "id": "Hanko are essential in our daily life.",
+      "id": "Hanko sangat penting dalam kehidupan kita sehari-hari.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"odaka","mora_count":3,"downstep_mora":3,"contour":"ハンコ＼"}
+},
     {
       "jp": "例えば、宅配便の受け取りには、判子は必要有りません。",
-      "id": "For example, you don't need a personal seal to collect a parcel.",
+      "id": "Misalnya, Anda tidak memerlukan stempel pribadi untuk mengambil parsel.",
       "level": "n2",
       "tags": [
         "umum"
@@ -40755,7 +41520,7 @@ window.vocabN2_Nouns = [
   "word": "判事",
   "reading": "はんじ",
   "romaji": "hanji",
-  "meaning_id": "judge; judiciary",
+  "meaning_id": "hakim; peradilan",
   "meaning_en": "judge; judiciary",
   "jlpt": "n2",
   "pos": "noun",
@@ -40776,15 +41541,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "君はあの判事を買収できない。",
-      "id": "You cannot buy that judge.",
+      "id": "Anda tidak bisa membeli hakim itu.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"ハ＼ンジ"}
+},
     {
       "jp": "判事には時間を止めれない。",
-      "id": "The judge can't stop.",
+      "id": "Hakim tidak bisa berhenti.",
       "level": "n2",
       "tags": [
         "umum"
@@ -40805,7 +41571,7 @@ window.vocabN2_Nouns = [
   "word": "番地",
   "reading": "ばんち",
   "romaji": "banchi",
-  "meaning_id": "house number; address",
+  "meaning_id": "nomor rumah; alamat",
   "meaning_en": "house number; address",
   "jlpt": "n2",
   "pos": "noun",
@@ -40826,12 +41592,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "彼女はラッセルスクエア５６番地に住んでいた。",
-      "id": "She lived at 56 Russell Square.",
+      "id": "Dia tinggal di 56 Russell Square.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"バンチ￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -40847,7 +41614,7 @@ window.vocabN2_Nouns = [
   "word": "パンツ",
   "reading": "パンツ",
   "romaji": "pantsu",
-  "meaning_id": "underpants",
+  "meaning_id": "celana dalam",
   "meaning_en": "underpants",
   "jlpt": "n2",
   "pos": "noun",
@@ -40868,15 +41635,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "パンツとブラジャー以外は全部脱いでください。",
-      "id": "Tolong take off all your clothes except your underpants and bra.",
+      "id": "Tolong lepaskan semua pakaianmu kecuali celana dalam dan bramu.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":0,"downstep_mora":1,"contour":"＼"}
+},
     {
       "jp": "おい、いい加減パンツネタはやめとけよな、読者が退く、ドンビキ。",
-      "id": "Hey, it's about time you quit it with the panty jokes. You'll put off the readers, you creeper!",
+      "id": "Hei, sudah waktunya kamu berhenti dengan lelucon celana dalam. Kau akan membuat pembacanya kecewa, dasar menjalar!",
       "level": "n2",
       "tags": [
         "umum"
@@ -40897,7 +41665,7 @@ window.vocabN2_Nouns = [
   "word": "バンド",
   "reading": "バンド",
   "romaji": "bando",
-  "meaning_id": "band",
+  "meaning_id": "pita",
   "meaning_en": "band",
   "jlpt": "n2",
   "pos": "noun",
@@ -40918,15 +41686,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "バンドの演奏は何時に始まりますか。",
-      "id": "What time will the band start playing?",
+      "id": "Jam berapa band ini akan mulai bermain?",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":0,"downstep_mora":0,"contour":"￣"}
+},
     {
       "jp": "バンドが行進曲を終えたところです。",
-      "id": "The band has played a march.",
+      "id": "Band ini telah memainkan pawai.",
       "level": "n2",
       "tags": [
         "umum"
@@ -40947,7 +41716,7 @@ window.vocabN2_Nouns = [
   "word": "半島",
   "reading": "はんとう",
   "romaji": "hantou",
-  "meaning_id": "peninsula",
+  "meaning_id": "semenanjung",
   "meaning_en": "peninsula",
   "jlpt": "n2",
   "pos": "noun",
@@ -40968,15 +41737,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "湿気の多い気候はその半島の特色です。",
-      "id": "A humid climate is characteristic of the peninsula.",
+      "id": "Iklim lembab merupakan ciri khas semenanjung ini.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ハントウ￣"}
+},
     {
       "jp": "僕はこの夏休みに数人の友達と、伊豆半島を歩いて一周するのを楽しみにしています。",
-      "id": "I am looking forward to walking around the Izu Peninsula with some of my friends during summer vacation.",
+      "id": "Saya menantikan untuk berjalan-jalan di Semenanjung Izu bersama beberapa teman saya selama liburan musim panas.",
       "level": "n2",
       "tags": [
         "umum"
@@ -40997,7 +41767,7 @@ window.vocabN2_Nouns = [
   "word": "ハンドル",
   "reading": "ハンドル",
   "romaji": "handoru",
-  "meaning_id": "handle; steering wheel",
+  "meaning_id": "menangani; roda kemudi",
   "meaning_en": "handle; steering wheel",
   "jlpt": "n2",
   "pos": "noun",
@@ -41018,15 +41788,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "このハンドルがどうしても回らないんだ。",
-      "id": "This handle will not turn.",
+      "id": "Pegangan ini tidak akan berputar.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":0,"downstep_mora":0,"contour":"￣"}
+},
     {
       "jp": "米国車のハンドルは左側にある。",
-      "id": "Steering wheels of American cars are on the left side.",
+      "id": "Roda kemudi mobil Amerika ada di sisi kiri.",
       "level": "n2",
       "tags": [
         "umum"
@@ -41047,7 +41818,7 @@ window.vocabN2_Nouns = [
   "word": "日当たり",
   "reading": "ひあたり",
   "romaji": "hiatari",
-  "meaning_id": "exposure to the sun; sunny place",
+  "meaning_id": "paparan sinar matahari; tempat yang cerah",
   "meaning_en": "exposure to the sun; sunny place",
   "jlpt": "n2",
   "pos": "noun",
@@ -41068,15 +41839,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "彼らは日当たりのよい家に住んでいる。",
-      "id": "They live in a sunny house.",
+      "id": "Mereka tinggal di rumah yang cerah.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ヒアタリ￣"}
+},
     {
       "jp": "この部屋は日当たりが良くない。",
-      "id": "This room doesn't get much sunshine.",
+      "id": "Ruangan ini tidak mendapat banyak sinar matahari.",
       "level": "n2",
       "tags": [
         "umum"
@@ -41097,7 +41869,7 @@ window.vocabN2_Nouns = [
   "word": "日陰",
   "reading": "ひかげ",
   "romaji": "hikage",
-  "meaning_id": "shadow",
+  "meaning_id": "bayangan",
   "meaning_en": "shadow",
   "jlpt": "n2",
   "pos": "noun",
@@ -41118,15 +41890,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "日陰で一休みしよう。",
-      "id": "Let's take a rest in the shade.",
+      "id": "Mari kita beristirahat di tempat teduh.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ヒカゲ￣"}
+},
     {
       "jp": "私は日陰に立っている。",
-      "id": "I'm standing in the shade.",
+      "id": "Aku berdiri di tempat teduh.",
       "level": "n2",
       "tags": [
         "umum"
@@ -41147,7 +41920,7 @@ window.vocabN2_Nouns = [
   "word": "引分け",
   "reading": "ひきわけ",
   "romaji": "hikiwake",
-  "meaning_id": "a draw (in competition); tie game",
+  "meaning_id": "hasil imbang (dalam kompetisi); permainan dasi",
   "meaning_en": "a draw (in competition); tie game",
   "jlpt": "n2",
   "pos": "noun",
@@ -41168,15 +41941,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "野球の試合は引き分けに終わった。",
-      "id": "The baseball game ended in a draw.",
+      "id": "Pertandingan bisbol berakhir seri.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ヒキワケ￣"}
+},
     {
       "jp": "二人の口論は結局引き分けに終わった。",
-      "id": "Their argument eventually ended in a draw.",
+      "id": "Pertengkaran mereka akhirnya berakhir seri.",
       "level": "n2",
       "tags": [
         "umum"
@@ -41197,7 +41971,7 @@ window.vocabN2_Nouns = [
   "word": "日差し",
   "reading": "ひざし",
   "romaji": "hizashi",
-  "meaning_id": "sunlight; rays of the sun",
+  "meaning_id": "sinar matahari",
   "meaning_en": "sunlight; rays of the sun",
   "jlpt": "n2",
   "pos": "noun",
@@ -41218,15 +41992,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "彼は手で目から日差しをさえぎった。",
-      "id": "He used his hand to screen the sunlight from his eyes.",
+      "id": "Dia menggunakan tangannya untuk menyaring sinar matahari dari matanya.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ヒザシ￣"}
+},
     {
       "jp": "強い日差しで彼の背中はひどく焼けた。",
-      "id": "Due to the intense sunlight, his back was sunburnt.",
+      "id": "Karena teriknya sinar matahari, punggungnya terbakar sinar matahari.",
       "level": "n2",
       "tags": [
         "umum"
@@ -41247,7 +42022,7 @@ window.vocabN2_Nouns = [
   "word": "肘",
   "reading": "ひじ",
   "romaji": "hiji",
-  "meaning_id": "elbow",
+  "meaning_id": "siku",
   "meaning_en": "elbow",
   "jlpt": "n2",
   "pos": "noun",
@@ -41268,15 +42043,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "彼女は私の肘をちょっと押した。",
-      "id": "She gave my elbow a little jog.",
+      "id": "Dia menggerakkan sikuku sedikit.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"odaka","mora_count":2,"downstep_mora":2,"contour":"ヒジ＼"}
+},
     {
       "jp": "テニスで肘を痛めました。",
-      "id": "I have tennis elbow.",
+      "id": "Saya menderita siku tenis.",
       "level": "n2",
       "tags": [
         "umum"
@@ -41297,7 +42073,7 @@ window.vocabN2_Nouns = [
   "word": "ピストル",
   "reading": "ピストル",
   "romaji": "pisutoru",
-  "meaning_id": "pistol",
+  "meaning_id": "senjata pistol",
   "meaning_en": "pistol",
   "jlpt": "n2",
   "pos": "noun",
@@ -41318,15 +42094,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "暴漢のピストルが発射された。",
-      "id": "A ruffian's pistol went off.",
+      "id": "Pistol seorang bajingan meledak.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":0,"downstep_mora":0,"contour":"￣"}
+},
     {
       "jp": "彼はピストルを取ろうと手を伸ばした。",
-      "id": "He reached for the pistol.",
+      "id": "Dia meraih pistolnya.",
       "level": "n2",
       "tags": [
         "umum"
@@ -41347,7 +42124,7 @@ window.vocabN2_Nouns = [
   "word": "ビタミン",
   "reading": "ビタミン",
   "romaji": "bitamin",
-  "meaning_id": "vitamin",
+  "meaning_id": "zat vitamin",
   "meaning_en": "vitamin",
   "jlpt": "n2",
   "pos": "noun",
@@ -41368,15 +42145,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "ビタミンが豊富にある野菜を食べた方がいい。",
-      "id": "You should eat some vegetables rich in vitamins.",
+      "id": "Anda harus makan beberapa sayuran yang kaya vitamin.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":0,"downstep_mora":0,"contour":"￣"}
+},
     {
       "jp": "オレンジはビタミンを多く含んでいる。",
-      "id": "Oranges have a high vitamin content.",
+      "id": "Jeruk mempunyai kandungan vitamin yang tinggi.",
       "level": "n2",
       "tags": [
         "umum"
@@ -41397,7 +42175,7 @@ window.vocabN2_Nouns = [
   "word": "筆者",
   "reading": "ひっしゃ",
   "romaji": "hissha",
-  "meaning_id": "writer; author",
+  "meaning_id": "penulis",
   "meaning_en": "writer; author",
   "jlpt": "n2",
   "pos": "noun",
@@ -41418,15 +42196,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "あなたは筆者が言っていることを理解できますか。",
-      "id": "Can you make sense of what the writer is saying?",
+      "id": "Bisakah Anda memahami apa yang penulis katakan?",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"ヒ＼ッシャ"}
+},
     {
       "jp": "筆者はそうした風潮を好まない。",
-      "id": "The present writer doesn't like such a tendency.",
+      "id": "Penulis masa kini tidak menyukai kecenderungan seperti itu.",
       "level": "n2",
       "tags": [
         "umum"
@@ -41468,15 +42247,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "カメラは私の必需品でした。",
-      "id": "The camera was essential for me.",
+      "id": "Kamera itu penting bagi saya.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":5,"downstep_mora":0,"contour":"ヒツジュヒン￣"}
+},
     {
       "jp": "雪の多いところでは、灯油は必需品です。",
-      "id": "In places where it snows a lot, kerosene is an indispensable item.",
+      "id": "Di tempat yang sering turun salju, minyak tanah merupakan barang yang sangat diperlukan.",
       "level": "n2",
       "tags": [
         "umum"
@@ -41497,7 +42277,7 @@ window.vocabN2_Nouns = [
   "word": "人差し指",
   "reading": "ひとさしゆび",
   "romaji": "hitosashiyubi",
-  "meaning_id": "index finger",
+  "meaning_id": "jari telunjuk",
   "meaning_en": "index finger",
   "jlpt": "n2",
   "pos": "noun",
@@ -41518,15 +42298,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "火ばさみで人差し指をやけどした。",
-      "id": "I burned my forefinger on fire tongs.",
+      "id": "Saya membakar jari telunjuk saya dengan penjepit api.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":4,"category":"nakadaka","mora_count":6,"downstep_mora":4,"contour":"ヒトサシ＼ユビ"}
+},
     {
       "jp": "彼女はその箱を人差し指でとんとんとたたいた。",
-      "id": "She tapped the box with her forefinger.",
+      "id": "Dia mengetuk kotak itu dengan jari telunjuknya.",
       "level": "n2",
       "tags": [
         "umum"
@@ -41568,15 +42349,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "私は生け花を一通りは習いました。",
-      "id": "I have learned the basics of the art of flower arrangement.",
+      "id": "Saya telah mempelajari dasar-dasar seni merangkai bunga.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":5,"downstep_mora":0,"contour":"ヒトトオリ￣"}
+},
     {
       "jp": "一通り読み終えたところで、あんぐり口を開けた。",
-      "id": "As his eyes ran over the paper, his jaw fell.",
+      "id": "Saat matanya menatap kertas itu, rahangnya ternganga.",
       "level": "n2",
       "tags": [
         "umum"
@@ -41597,7 +42379,7 @@ window.vocabN2_Nouns = [
   "word": "人通り",
   "reading": "ひとどおり",
   "romaji": "hitodoori",
-  "meaning_id": "pedestrian traffic",
+  "meaning_id": "lalu lintas pejalan kaki",
   "meaning_en": "pedestrian traffic",
   "jlpt": "n2",
   "pos": "noun",
@@ -41618,15 +42400,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "その道路は人通りはなかった。",
-      "id": "The road was clear of traffic.",
+      "id": "Jalan itu bersih dari lalu lintas.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":5,"downstep_mora":0,"contour":"ヒトドオリ￣"}
+},
     {
       "jp": "夜は人通りが無くなった。",
-      "id": "The streets emptied in the night.",
+      "id": "Jalanan kosong di malam hari.",
       "level": "n2",
       "tags": [
         "umum"
@@ -41647,7 +42430,7 @@ window.vocabN2_Nouns = [
   "word": "瞳",
   "reading": "ひとみ",
   "romaji": "hitomi",
-  "meaning_id": "pupil (of eye)",
+  "meaning_id": "murid (mata)",
   "meaning_en": "pupil (of eye)",
   "jlpt": "n2",
   "pos": "noun",
@@ -41668,15 +42451,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "あなたの瞳に、吸い込まれそう！",
-      "id": "I feel like I'm being drawn into your eyes.",
+      "id": "Aku merasa seperti aku tertarik ke matamu.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ヒトミ￣"}
+},
     {
       "jp": "瞳は日のあたる所では収縮する。",
-      "id": "The pupils of the eyes contract in sunlight.",
+      "id": "Pupil mata berkontraksi di bawah sinar matahari.",
       "level": "n2",
       "tags": [
         "umum"
@@ -41697,7 +42481,7 @@ window.vocabN2_Nouns = [
   "word": "独り言",
   "reading": "ひとりごと",
   "romaji": "hitorigoto",
-  "meaning_id": "a soliloquy; a monologue",
+  "meaning_id": "solilokui; sebuah monolog",
   "meaning_en": "a soliloquy; a monologue; speaking to oneself",
   "jlpt": "n2",
   "pos": "noun",
@@ -41718,15 +42502,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "私は彼がぶつぶつ独り言をいうのを聞いた。",
-      "id": "I heard him mumble to himself.",
+      "id": "Aku mendengarnya bergumam pada dirinya sendiri.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":5,"downstep_mora":0,"contour":"ヒトリゴト￣"}
+},
     {
       "jp": "私はそうひとりごとを言った。",
-      "id": "I said that to myself.",
+      "id": "Saya mengatakan itu pada diri saya sendiri.",
       "level": "n2",
       "tags": [
         "umum"
@@ -41747,7 +42532,7 @@ window.vocabN2_Nouns = [
   "word": "ビニール",
   "reading": "ビニール",
   "romaji": "biniiru",
-  "meaning_id": "vinyl",
+  "meaning_id": "vinil",
   "meaning_en": "vinyl",
   "jlpt": "n2",
   "pos": "noun",
@@ -41768,12 +42553,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "ビニールは熱に弱いのが難点だ。",
-      "id": "The weakness of vinyl is that it is easily affected by heat.",
+      "id": "Kelemahan vinyl adalah mudah terpengaruh oleh panas.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":0,"downstep_mora":0,"contour":"￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -41810,15 +42596,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "会合の日にちと場所が決定された。",
-      "id": "The date and place of the meeting have been fixed.",
+      "id": "Tanggal dan tempat pertemuan telah ditetapkan.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ヒニチ￣"}
+},
     {
       "jp": "日にちはどのくらいかかりますか。",
-      "id": "How long will it take?",
+      "id": "Berapa lama waktu yang dibutuhkan?",
       "level": "n2",
       "tags": [
         "umum"
@@ -41839,7 +42626,7 @@ window.vocabN2_Nouns = [
   "word": "日の入り",
   "reading": "ひのいり",
   "romaji": "hinoiri",
-  "meaning_id": "sunset",
+  "meaning_id": "matahari terbenam",
   "meaning_en": "sunset",
   "jlpt": "n2",
   "pos": "noun",
@@ -41860,12 +42647,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "こんなに美しい日の入りを見たことがありますか。",
-      "id": "Have you ever seen such a beautiful sunset?",
+      "id": "Pernahkah Anda melihat matahari terbenam yang begitu indah?",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ヒノイリ￣"}
+},
     {
       "jp": "これは、私が今までに見たうちで一番美しい日の入りだ。",
       "id": "Ini adalah the most beautiful sunset that I have ever seen.",
@@ -41889,7 +42677,7 @@ window.vocabN2_Nouns = [
   "word": "日の出",
   "reading": "ひので",
   "romaji": "hinode",
-  "meaning_id": "sunrise",
+  "meaning_id": "matahari terbit",
   "meaning_en": "sunrise",
   "jlpt": "n2",
   "pos": "noun",
@@ -41910,15 +42698,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "なんと美しい日の出でしょう。",
-      "id": "How beautiful a sunrise is!",
+      "id": "Betapa indahnya matahari terbit!",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ヒノデ￣"}
+},
     {
       "jp": "頂上から見る日の出は美しかった。",
-      "id": "The rising sun seen from the top was beautiful.",
+      "id": "Matahari terbit yang dilihat dari atas sungguh indah.",
       "level": "n2",
       "tags": [
         "umum"
@@ -41960,12 +42749,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "彼の声に多少怒りの響きがあった。",
-      "id": "There was a suggestion of anger in his voice.",
+      "id": "Ada kesan kemarahan dalam suaranya.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"odaka","mora_count":3,"downstep_mora":3,"contour":"ヒビキ＼"}
+},
     {
       "jp": "彼のピアノ演奏はすばらしい響きがした。",
       "id": "His piano playing sounded fantastic.",
@@ -41989,7 +42779,7 @@ window.vocabN2_Nouns = [
   "word": "皮膚",
   "reading": "ひふ",
   "romaji": "hifu",
-  "meaning_id": "skin",
+  "meaning_id": "kulit",
   "meaning_en": "skin",
   "jlpt": "n2",
   "pos": "noun",
@@ -42010,15 +42800,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "日光は皮膚に作用する。",
-      "id": "The sunbeam acts upon the skin.",
+      "id": "Sinar matahari bekerja pada kulit.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":2,"downstep_mora":1,"contour":"ヒ＼フ"}
+},
     {
       "jp": "日焼けは皮膚をヒリヒリさせる。",
-      "id": "Sunburn irritates the skin.",
+      "id": "Luka bakar akibat sinar matahari mengiritasi kulit.",
       "level": "n2",
       "tags": [
         "umum"
@@ -42039,7 +42830,7 @@ window.vocabN2_Nouns = [
   "word": "ひゃっかじてん",
   "reading": "ひゃっかじてん",
   "romaji": "hyakkajiten",
-  "meaning_id": "encyclopedia",
+  "meaning_id": "ensiklopedia",
   "meaning_en": "encyclopedia",
   "jlpt": "n2",
   "pos": "noun",
@@ -42060,12 +42851,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "この百科事典は、妻のものです。",
-      "id": "This encyclopedia belongs to my wife.",
+      "id": "Ensiklopedia ini milik istri saya.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":4,"category":"nakadaka","mora_count":6,"downstep_mora":4,"contour":"ヒャッカジ＼テン"}
+},
     {
       "jp": "彼はいわゆる歩く百科事典だ。",
       "id": "Dia what is called a walking encyclopedia.",
@@ -42089,7 +42881,7 @@ window.vocabN2_Nouns = [
   "word": "美容",
   "reading": "びよう",
   "romaji": "biyou",
-  "meaning_id": "beauty of figure or form",
+  "meaning_id": "keindahan sosok atau bentuk",
   "meaning_en": "beauty of figure or form",
   "jlpt": "n2",
   "pos": "noun",
@@ -42110,15 +42902,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "間食は美容に悪い。",
-      "id": "Eating between meals is bad for the figure.",
+      "id": "Makan di antara waktu makan berdampak buruk bagi bentuk tubuh.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ビヨウ￣"}
+},
     {
       "jp": "彼女は美容室に行った。",
-      "id": "She went to the hairdresser's.",
+      "id": "Dia pergi ke penata rambut.",
       "level": "n2",
       "tags": [
         "umum"
@@ -42139,7 +42932,7 @@ window.vocabN2_Nouns = [
   "word": "表紙",
   "reading": "ひょうし",
   "romaji": "hyoushi",
-  "meaning_id": "front cover; binding",
+  "meaning_id": "sampul depan; mengikat",
   "meaning_en": "front cover; binding",
   "jlpt": "n2",
   "pos": "noun",
@@ -42160,15 +42953,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "彼は手を伸ばして小さな皮表紙の本をとった。",
-      "id": "He reached out and took down a small leather bound book.",
+      "id": "Dia mengulurkan tangan dan mengambil sebuah buku kecil bersampul kulit.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"odaka","mora_count":3,"downstep_mora":3,"contour":"ヒョウシ＼"}
+},
     {
       "jp": "本をその表紙で判断してはいけない。",
-      "id": "Don't judge a book by its cover.",
+      "id": "Jangan menilai buku dari sampulnya.",
       "level": "n2",
       "tags": [
         "umum"
@@ -42189,7 +42983,7 @@ window.vocabN2_Nouns = [
   "word": "標識",
   "reading": "ひょうしき",
   "romaji": "hyoushiki",
-  "meaning_id": "sign; mark",
+  "meaning_id": "tanda tangan; menandai",
   "meaning_en": "sign; mark",
   "jlpt": "n2",
   "pos": "noun",
@@ -42210,15 +43004,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "彼らはその標識を壁に取り付けた。",
-      "id": "They fixed the sign to the wall.",
+      "id": "Mereka menempelkan tanda itu ke dinding.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ヒョウシキ￣"}
+},
     {
       "jp": "その標識は進む方向を示している。",
-      "id": "The sign indicates the way to go.",
+      "id": "Tanda itu menunjukkan jalan yang harus ditempuh.",
       "level": "n2",
       "tags": [
         "umum"
@@ -42239,7 +43034,7 @@ window.vocabN2_Nouns = [
   "word": "標準",
   "reading": "ひょうじゅん",
   "romaji": "hyoujun",
-  "meaning_id": "standard; level",
+  "meaning_id": "standar; tingkat",
   "meaning_en": "standard; level",
   "jlpt": "n2",
   "pos": "noun",
@@ -42264,11 +43059,12 @@ window.vocabN2_Nouns = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ヒョウジュン￣"}
+},
     {
       "jp": "彼の仕事は標準以下だ。",
-      "id": "His work is below average.",
+      "id": "Karyanya di bawah rata-rata.",
       "level": "n2",
       "tags": [
         "umum"
@@ -42289,7 +43085,7 @@ window.vocabN2_Nouns = [
   "word": "標本",
   "reading": "ひょうほん",
   "romaji": "hyouhon",
-  "meaning_id": "example; specimen",
+  "meaning_id": "contoh; spesimen",
   "meaning_en": "example; specimen",
   "jlpt": "n2",
   "pos": "noun",
@@ -42310,15 +43106,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "たとえば、標本はいくつですか。",
-      "id": "How many samples, for example?",
+      "id": "Berapa banyak sampel, misalnya?",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ヒョウホン￣"}
+},
     {
       "jp": "これらの標本はいくつかの種類に分類される。",
-      "id": "These specimens are divided into several categories.",
+      "id": "Spesimen ini dibagi menjadi beberapa kategori.",
       "level": "n2",
       "tags": [
         "umum"
@@ -42360,15 +43157,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "平仮名は書けるんだけど、片仮名はまだ書けないんだ。",
-      "id": "I can write hiragana, but I can't yet write katakana.",
+      "id": "Saya bisa menulis hiragana, tapi saya belum bisa menulis katakana.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"ヒラガ＼ナ"}
+},
     {
       "jp": "ひらがなって手書きできる？",
-      "id": "Can you write hiragana?",
+      "id": "Bisakah kamu menulis hiragana?",
       "level": "n2",
       "tags": [
         "umum"
@@ -42389,7 +43187,7 @@ window.vocabN2_Nouns = [
   "word": "ビルディング",
   "reading": "ビルディング",
   "romaji": "birudingu",
-  "meaning_id": "building",
+  "meaning_id": "bangunan",
   "meaning_en": "building",
   "jlpt": "n2",
   "pos": "noun",
@@ -42414,8 +43212,9 @@ window.vocabN2_Nouns = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":0,"downstep_mora":1,"contour":"＼"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -42431,7 +43230,7 @@ window.vocabN2_Nouns = [
   "word": "広さ",
   "reading": "ひろさ",
   "romaji": "hirosa",
-  "meaning_id": "extent",
+  "meaning_id": "sejauh mana",
   "meaning_en": "extent",
   "jlpt": "n2",
   "pos": "noun",
@@ -42452,15 +43251,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "この家の広さはどのくらいありますか。",
-      "id": "What is the area of this house?",
+      "id": "Berapa luas rumah ini?",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"ヒ＼ロサ"}
+},
     {
       "jp": "彼の部屋は私の部屋の倍の広さだ。",
-      "id": "His room is twice as large as mine.",
+      "id": "Kamarnya dua kali lebih besar dari kamarku.",
       "level": "n2",
       "tags": [
         "umum"
@@ -42481,7 +43281,7 @@ window.vocabN2_Nouns = [
   "word": "広場",
   "reading": "ひろば",
   "romaji": "hiroba",
-  "meaning_id": "plaza",
+  "meaning_id": "alun-alun",
   "meaning_en": "plaza",
   "jlpt": "n2",
   "pos": "noun",
@@ -42502,15 +43302,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "広場で野球をするのはどうでしょうか。",
-      "id": "How about we play baseball in the open space?",
+      "id": "Bagaimana kalau kita bermain bisbol di ruang terbuka?",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"ヒ＼ロバ"}
+},
     {
       "jp": "広場にあるあの棒をみてごらん。",
-      "id": "Look at that pole in the square.",
+      "id": "Lihatlah tiang di alun-alun itu.",
       "level": "n2",
       "tags": [
         "umum"
@@ -42531,7 +43332,7 @@ window.vocabN2_Nouns = [
   "word": "ピンク",
   "reading": "ピンク",
   "romaji": "pinku",
-  "meaning_id": "pink",
+  "meaning_id": "merah muda",
   "meaning_en": "pink",
   "jlpt": "n2",
   "pos": "noun",
@@ -42552,15 +43353,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "あのピンクの服を着た女性はだれですか。",
-      "id": "Who is the woman dressed in pink?",
+      "id": "Siapa wanita berbaju pink itu?",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":0,"downstep_mora":1,"contour":"＼"}
+},
     {
       "jp": "服は赤、ピンク、青色などであった。",
-      "id": "The costumes were red, pink, blue, and so forth.",
+      "id": "Kostumnya berwarna merah, pink, biru, dan lain sebagainya.",
       "level": "n2",
       "tags": [
         "umum"
@@ -42581,7 +43383,7 @@ window.vocabN2_Nouns = [
   "word": "便箋",
   "reading": "びんせん",
   "romaji": "binsen",
-  "meaning_id": "writing paper; stationery",
+  "meaning_id": "kertas tulis; alat tulis",
   "meaning_en": "writing paper; stationery",
   "jlpt": "n2",
   "pos": "noun",
@@ -42602,12 +43404,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "その便せんには校章が打ち出しにされている。",
-      "id": "The note is embossed with the school emblem.",
+      "id": "Catatan itu dihias dengan lambang sekolah.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ビンセン￣"}
+},
     {
       "jp": "便箋をください。",
       "id": "I need some writing paper.",
@@ -42631,7 +43434,7 @@ window.vocabN2_Nouns = [
   "word": "ファスナー",
   "reading": "ファスナー",
   "romaji": "fasunaa",
-  "meaning_id": "fastener; zipper",
+  "meaning_id": "pengikat; ritsleting",
   "meaning_en": "fastener; zipper",
   "jlpt": "n2",
   "pos": "noun",
@@ -42652,15 +43455,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "ファスナーを発明したとき、その実業家は何と言ったか。",
-      "id": "What did the businessman say when he invented the zip-fastener?",
+      "id": "Apa yang dikatakan pengusaha ketika ia menemukan pengikat ritsleting?",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":0,"downstep_mora":1,"contour":"＼"}
+},
     {
       "jp": "彼女はファスナーをとめることができなかった。",
-      "id": "She couldn't fasten the zip of her dress.",
+      "id": "Dia tidak bisa mengencangkan ritsleting gaunnya.",
       "level": "n2",
       "tags": [
         "umum"
@@ -42681,7 +43485,7 @@ window.vocabN2_Nouns = [
   "word": "風船",
   "reading": "ふうせん",
   "romaji": "fuusen",
-  "meaning_id": "balloon",
+  "meaning_id": "balon",
   "meaning_en": "balloon",
   "jlpt": "n2",
   "pos": "noun",
@@ -42702,15 +43506,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "風船が空に上がっていった。",
-      "id": "The balloon went up in the sky.",
+      "id": "Balon itu naik ke langit.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"フウセン￣"}
+},
     {
       "jp": "風船が空に向かって上昇しています。",
-      "id": "A balloon is ascending into the sky.",
+      "id": "Sebuah balon sedang naik ke langit.",
       "level": "n2",
       "tags": [
         "umum"
@@ -42752,15 +43557,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "この付近はモダンな建物が多い。",
-      "id": "Ada many modern buildings around here.",
+      "id": "Ada banyak bangunan modern di sekitar sini.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"フキ＼ン"}
+},
     {
       "jp": "２５号線北方面の入り口付近にいます。",
-      "id": "I'm near the on ramp to 25 north.",
+      "id": "Saya berada di dekat jalan menuju 25 utara.",
       "level": "n2",
       "tags": [
         "umum"
@@ -42781,7 +43587,7 @@ window.vocabN2_Nouns = [
   "word": "副詞",
   "reading": "ふくし",
   "romaji": "fukushi",
-  "meaning_id": "adverb",
+  "meaning_id": "kata keterangan",
   "meaning_en": "adverb",
   "jlpt": "n2",
   "pos": "noun",
@@ -42806,11 +43612,12 @@ window.vocabN2_Nouns = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"フクシ￣"}
+},
     {
       "jp": "補足情報には、副詞や副詞のはたらきをするものが入ります。",
-      "id": "Supplementary information includes adverbs and things that function as adverbs.",
+      "id": "Informasi tambahan mencakup kata keterangan dan hal-hal yang berfungsi sebagai kata keterangan.",
       "level": "n2",
       "tags": [
         "umum"
@@ -42831,7 +43638,7 @@ window.vocabN2_Nouns = [
   "word": "複数",
   "reading": "ふくすう",
   "romaji": "fukusuu",
-  "meaning_id": "plural; multiple",
+  "meaning_id": "jamak; banyak",
   "meaning_en": "plural; multiple",
   "jlpt": "n2",
   "pos": "noun",
@@ -42852,12 +43659,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "アジアの宗教から閃きを得て、彼は複数の素晴らしい彫刻を生み出した。",
-      "id": "Asian religions inspire him to create splendid sculptures.",
+      "id": "Agama-agama Asia menginspirasinya untuk membuat patung-patung indah.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"フクス＼ウ"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -42898,8 +43706,9 @@ window.vocabN2_Nouns = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"フゴウ￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -42915,7 +43724,7 @@ window.vocabN2_Nouns = [
   "word": "夫妻",
   "reading": "ふさい",
   "romaji": "fusai",
-  "meaning_id": "man and wife; married couple",
+  "meaning_id": "suami istri; pasangan yang sudah menikah",
   "meaning_en": "man and wife; married couple",
   "jlpt": "n2",
   "pos": "noun",
@@ -42936,15 +43745,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "ジョーンズ夫妻は娘を愛している。",
-      "id": "The Joneses love their daughter.",
+      "id": "Keluarga Jones mencintai putri mereka.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"フ＼サイ"}
+},
     {
       "jp": "夫妻は化学を近代科学へと一変させた。",
-      "id": "The couple transformed chemistry into a modern science.",
+      "id": "Pasangan ini mengubah kimia menjadi sains modern.",
       "level": "n2",
       "tags": [
         "umum"
@@ -42965,7 +43775,7 @@ window.vocabN2_Nouns = [
   "word": "武士",
   "reading": "ぶし",
   "romaji": "bushi",
-  "meaning_id": "warrior; samurai",
+  "meaning_id": "prajurit; samurai",
   "meaning_en": "warrior; samurai",
   "jlpt": "n2",
   "pos": "noun",
@@ -42986,15 +43796,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "武士は食わねど高楊枝。",
-      "id": "A samurai, even when he has not eaten, uses a toothpick like a lord.",
+      "id": "Seorang samurai, bahkan ketika dia belum makan, menggunakan tusuk gigi seperti seorang bangsawan.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":2,"downstep_mora":1,"contour":"ブ＼シ"}
+},
     {
       "jp": "江戸時代、武士は刀を２本刺していた。",
-      "id": "A samurai in the Edo era carried two swords.",
+      "id": "Seorang samurai di zaman Edo membawa dua pedang.",
       "level": "n2",
       "tags": [
         "umum"
@@ -43015,7 +43826,7 @@ window.vocabN2_Nouns = [
   "word": "部首",
   "reading": "ぶしゅ",
   "romaji": "bushu",
-  "meaning_id": "radical (of a kanji character)",
+  "meaning_id": "radikal (dari karakter kanji)",
   "meaning_en": "radical (of a kanji character)",
   "jlpt": "n2",
   "pos": "noun",
@@ -43036,12 +43847,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "部首を使います。",
-      "id": "Menggunakan radical (of a kanji character).",
+      "id": "Menggunakan radikal (karakter kanji).",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":2,"downstep_mora":1,"contour":"ブ＼シュ"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -43057,7 +43869,7 @@ window.vocabN2_Nouns = [
   "word": "襖",
   "reading": "ふすま",
   "romaji": "fusuma",
-  "meaning_id": "sliding screen",
+  "meaning_id": "layar geser",
   "meaning_en": "sliding screen",
   "jlpt": "n2",
   "pos": "noun",
@@ -43082,8 +43894,9 @@ window.vocabN2_Nouns = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"フスマ￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -43120,15 +43933,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "このふたはあのジャーのふただ。",
-      "id": "This lid belongs with that jar.",
+      "id": "Tutup ini milik toples itu.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":2,"downstep_mora":0,"contour":"フタ￣"}
+},
     {
       "jp": "この箱の蓋はどうしても開かない。",
-      "id": "The lid of this box won't lift.",
+      "id": "Tutup kotak ini tidak bisa diangkat.",
       "level": "n2",
       "tags": [
         "umum"
@@ -43170,15 +43984,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "電話は不通なの。",
-      "id": "The phones aren't working.",
+      "id": "Telepon tidak berfungsi.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"フツウ￣"}
+},
     {
       "jp": "地震で鉄道の運行が不通になった。",
-      "id": "The train service was suspended by the earthquake.",
+      "id": "Layanan kereta terhenti akibat gempa.",
       "level": "n2",
       "tags": [
         "umum"
@@ -43199,7 +44014,7 @@ window.vocabN2_Nouns = [
   "word": "船便",
   "reading": "ふなびん",
   "romaji": "funabin",
-  "meaning_id": "surface mail (ship)",
+  "meaning_id": "surat permukaan (kapal)",
   "meaning_en": "surface mail (ship)",
   "jlpt": "n2",
   "pos": "noun",
@@ -43220,15 +44035,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "この小包を船便で送ってください。",
-      "id": "Tolong send this parcel by surface mail.",
+      "id": "Tolong kirimkan paket ini melalui pos permukaan.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"フナビン￣"}
+},
     {
       "jp": "船便だといくらになりますか。",
-      "id": "How much will it cost by sea mail?",
+      "id": "Berapa biayanya melalui pos laut?",
       "level": "n2",
       "tags": [
         "umum"
@@ -43249,7 +44065,7 @@ window.vocabN2_Nouns = [
   "word": "部品",
   "reading": "ぶひん",
   "romaji": "buhin",
-  "meaning_id": "parts; accessories",
+  "meaning_id": "bagian; aksesoris",
   "meaning_en": "parts; accessories",
   "jlpt": "n2",
   "pos": "noun",
@@ -43270,15 +44086,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "この車の予備の部品を買うことができない。",
-      "id": "I cannot buy spare parts for this car.",
+      "id": "Saya tidak dapat membeli suku cadang untuk mobil ini.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ブヒン￣"}
+},
     {
       "jp": "古い部品を新しいのと交換しなさい。",
-      "id": "Exchange the old part for a new one.",
+      "id": "Tukarkan bagian lama dengan yang baru.",
       "level": "n2",
       "tags": [
         "umum"
@@ -43299,7 +44116,7 @@ window.vocabN2_Nouns = [
   "word": "吹雪",
   "reading": "ふぶき",
   "romaji": "fubuki",
-  "meaning_id": "snow storm",
+  "meaning_id": "badai salju",
   "meaning_en": "snow storm",
   "jlpt": "n2",
   "pos": "noun",
@@ -43320,15 +44137,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "吹雪はまる一週間荒れ狂った。",
-      "id": "The snowstorm raged for a full week.",
+      "id": "Badai salju berkecamuk selama seminggu penuh.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"フ＼ブキ"}
+},
     {
       "jp": "列車は吹雪のため２時間遅れた。",
-      "id": "The train was held up for two hours on account of the snowstorm.",
+      "id": "Kereta terhenti selama dua jam karena badai salju.",
       "level": "n2",
       "tags": [
         "umum"
@@ -43349,7 +44167,7 @@ window.vocabN2_Nouns = [
   "word": "父母",
   "reading": "ふぼ",
   "romaji": "fubo",
-  "meaning_id": "father and mother; parents",
+  "meaning_id": "ayah dan ibu; orang tua",
   "meaning_en": "father and mother; parents",
   "jlpt": "n2",
   "pos": "noun",
@@ -43370,15 +44188,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "ケンは父母がけんかしたときはいつも母の味方をする。",
-      "id": "Ken always stands up for his mom when his parents quarrel.",
+      "id": "Ken selalu membela ibunya ketika orangtuanya bertengkar.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":2,"downstep_mora":1,"contour":"フ＼ボ"}
+},
     {
       "jp": "私の父母は、そこに大きな農場を持っている。",
-      "id": "My father and mother have a big farm there.",
+      "id": "Ayah dan ibuku mempunyai peternakan besar di sana.",
       "level": "n2",
       "tags": [
         "umum"
@@ -43420,12 +44239,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "警報機が鳴っているときは絶対に踏切を渡らないでください。",
-      "id": "Don't cross the tracks when the alarm is ringing.",
+      "id": "Jangan melintasi rel saat alarm berbunyi.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"フミキリ￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -43441,7 +44261,7 @@ window.vocabN2_Nouns = [
   "word": "麓",
   "reading": "ふもと",
   "romaji": "fumoto",
-  "meaning_id": "the foot; the bottom",
+  "meaning_id": "kaki; bagian bawah",
   "meaning_en": "the foot; the bottom; the base (of a mountain)",
   "jlpt": "n2",
   "pos": "noun",
@@ -43462,15 +44282,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "山の麓に日が昇るが早いかただ一人山を登り始めた。",
-      "id": "The sun had barely risen at the foot of the mountain when she set out alone up the slope.",
+      "id": "Matahari baru saja terbit di kaki gunung ketika dia berangkat sendirian mendaki lereng.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"odaka","mora_count":3,"downstep_mora":3,"contour":"フモト＼"}
+},
     {
       "jp": "丘の麓に白い建物が見えますね。",
-      "id": "You see a white building at the foot of the hill.",
+      "id": "Anda melihat sebuah bangunan putih di kaki bukit.",
       "level": "n2",
       "tags": [
         "umum"
@@ -43491,7 +44312,7 @@ window.vocabN2_Nouns = [
   "word": "フライパン",
   "reading": "フライパン",
   "romaji": "furaipan",
-  "meaning_id": "fry pan; frying pan",
+  "meaning_id": "penggorengan",
   "meaning_en": "fry pan; frying pan",
   "jlpt": "n2",
   "pos": "noun",
@@ -43512,15 +44333,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "このフライパンのとっては持ちやすい。",
-      "id": "The handle of this pan is easy to hold.",
+      "id": "Gagang panci ini mudah dipegang.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":0,"downstep_mora":0,"contour":"￣"}
+},
     {
       "jp": "フライパンに油が回ってから肉を入れなさい。",
-      "id": "Put the meat in the frying pan after the oil has spread.",
+      "id": "Masukkan daging ke dalam penggorengan setelah minyak menyebar.",
       "level": "n2",
       "tags": [
         "umum"
@@ -43541,7 +44363,7 @@ window.vocabN2_Nouns = [
   "word": "ブラウス",
   "reading": "ブラウス",
   "romaji": "burausu",
-  "meaning_id": "blouse",
+  "meaning_id": "blus",
   "meaning_en": "blouse",
   "jlpt": "n2",
   "pos": "noun",
@@ -43562,15 +44384,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "そのブラウスを見せて下さい。",
-      "id": "May I see that blouse, please?",
+      "id": "Bolehkah saya melihat blus itu?",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":0,"downstep_mora":0,"contour":"￣"}
+},
     {
       "jp": "このブラウスはボタンが背中にある。",
-      "id": "This blouse buttons at the back.",
+      "id": "Blus ini berkancing di bagian belakang.",
       "level": "n2",
       "tags": [
         "umum"
@@ -43591,7 +44414,7 @@ window.vocabN2_Nouns = [
   "word": "ブラシ",
   "reading": "ブラシ",
   "romaji": "burashi",
-  "meaning_id": "brushy; brush",
+  "meaning_id": "kasar; sikat",
   "meaning_en": "brushy; brush",
   "jlpt": "n2",
   "pos": "noun",
@@ -43612,12 +44435,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "彼女は私の靴にさっとブラシをかけてくれた。",
-      "id": "She gave my shoes a quick brush.",
+      "id": "Dia menyikat sepatuku dengan cepat.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":0,"downstep_mora":1,"contour":"＼"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -43633,7 +44457,7 @@ window.vocabN2_Nouns = [
   "word": "プラスチック",
   "reading": "プラスチック",
   "romaji": "purasuchikku",
-  "meaning_id": "plastic",
+  "meaning_id": "plastik",
   "meaning_en": "plastic",
   "jlpt": "n2",
   "pos": "noun",
@@ -43654,15 +44478,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "この椅子はプラスチックからできている。",
-      "id": "This chair is made of plastic.",
+      "id": "Kursi ini terbuat dari plastik.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":4,"category":"nakadaka","mora_count":0,"downstep_mora":0,"contour":"￣"}
+},
     {
       "jp": "その皿は、プラスチックで出来ている。",
-      "id": "The plate is made of plastic.",
+      "id": "Piringnya terbuat dari plastik.",
       "level": "n2",
       "tags": [
         "umum"
@@ -43683,7 +44508,7 @@ window.vocabN2_Nouns = [
   "word": "プラットホーム",
   "reading": "プラットホーム",
   "romaji": "purattohoomu",
-  "meaning_id": "platform",
+  "meaning_id": "peron stasiun kereta",
   "meaning_en": "platform",
   "jlpt": "n2",
   "pos": "noun",
@@ -43704,15 +44529,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "プラットホームにはとても多くの人がいた。",
-      "id": "There were a good many people on the platform.",
+      "id": "Ada banyak orang di peron.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":5,"category":"nakadaka","mora_count":0,"downstep_mora":0,"contour":"￣"}
+},
     {
       "jp": "彼はプラットホームを行ったり来たりしていた。",
-      "id": "He was walking up and down the station platform.",
+      "id": "Dia berjalan mondar-mandir di peron stasiun.",
       "level": "n2",
       "tags": [
         "umum"
@@ -43733,7 +44559,7 @@ window.vocabN2_Nouns = [
   "word": "振り仮名",
   "reading": "ふりがな",
   "romaji": "furigana",
-  "meaning_id": "pronunciation key",
+  "meaning_id": "kunci pengucapan",
   "meaning_en": "pronunciation key",
   "jlpt": "n2",
   "pos": "noun",
@@ -43758,11 +44584,12 @@ window.vocabN2_Nouns = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"フリガナ￣"}
+},
     {
       "jp": "この本に振り仮名をつけてください。",
-      "id": "Tolong add furigana to this book.",
+      "id": "Tolong tambahkan furigana ke buku ini.",
       "level": "n2",
       "tags": [
         "umum"
@@ -43783,7 +44610,7 @@ window.vocabN2_Nouns = [
   "word": "ブローチ",
   "reading": "ブローチ",
   "romaji": "buroochi",
-  "meaning_id": "brooch",
+  "meaning_id": "bros",
   "meaning_en": "brooch",
   "jlpt": "n2",
   "pos": "noun",
@@ -43808,8 +44635,9 @@ window.vocabN2_Nouns = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":0,"downstep_mora":0,"contour":"￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -43825,7 +44653,7 @@ window.vocabN2_Nouns = [
   "word": "プログラム",
   "reading": "プログラム",
   "romaji": "puroguramu",
-  "meaning_id": "program",
+  "meaning_id": "program / susunan acara",
   "meaning_en": "program",
   "jlpt": "n2",
   "pos": "noun",
@@ -43846,15 +44674,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "私は解読プログラムを持っていません。",
-      "id": "I don't have a decryption program.",
+      "id": "Saya tidak memiliki program dekripsi.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":0,"downstep_mora":0,"contour":"￣"}
+},
     {
       "jp": "プログラムをいただけますか。",
-      "id": "May I have a program?",
+      "id": "Bolehkah saya minta programnya?",
       "level": "n2",
       "tags": [
         "umum"
@@ -43875,7 +44704,7 @@ window.vocabN2_Nouns = [
   "word": "風呂敷",
   "reading": "ふろしき",
   "romaji": "furoshiki",
-  "meaning_id": "wrapping cloth; cloth wrapper",
+  "meaning_id": "kain pembungkus; pembungkus kain",
   "meaning_en": "wrapping cloth; cloth wrapper",
   "jlpt": "n2",
   "pos": "noun",
@@ -43896,12 +44725,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "彼は風呂敷を十分に活用した。",
-      "id": "He took full advantage of the wrapper.",
+      "id": "Dia memanfaatkan bungkusnya sepenuhnya.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"フロシキ￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -43938,12 +44768,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "文芸を使います。",
-      "id": "Menggunakan literature; art and literature.",
+      "id": "Menggunakan sastra; seni dan sastra.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ブンゲイ￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -43959,7 +44790,7 @@ window.vocabN2_Nouns = [
   "word": "文献",
   "reading": "ぶんけん",
   "romaji": "bunken",
-  "meaning_id": "literature; books (reference)",
+  "meaning_id": "sastra; buku (referensi)",
   "meaning_en": "literature; books (reference)",
   "jlpt": "n2",
   "pos": "noun",
@@ -43980,12 +44811,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "その事実は古い文献のいくつかに見出される。",
-      "id": "The facts are buried in a few old books.",
+      "id": "Fakta-faktanya terkubur dalam beberapa buku lama.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ブンケン￣"}
+},
     {
       "jp": "専門の図書館が芸術に関する文献を収集している。",
       "id": "Specialized libraries collect writings about art.",
@@ -44009,7 +44841,7 @@ window.vocabN2_Nouns = [
   "word": "噴水",
   "reading": "ふんすい",
   "romaji": "funsui",
-  "meaning_id": "water fountain",
+  "meaning_id": "air mancur",
   "meaning_en": "water fountain",
   "jlpt": "n2",
   "pos": "noun",
@@ -44030,12 +44862,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "駅の前に噴水があります。",
-      "id": "Ada a fountain in front of the station.",
+      "id": "Ada air mancur di depan stasiun.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"フンスイ￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -44051,7 +44884,7 @@ window.vocabN2_Nouns = [
   "word": "分数",
   "reading": "ぶんすう",
   "romaji": "bunsuu",
-  "meaning_id": "fraction (in math)",
+  "meaning_id": "pecahan (dalam matematika)",
   "meaning_en": "fraction (in math)",
   "jlpt": "n2",
   "pos": "noun",
@@ -44072,15 +44905,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "次の分数を小数に直しなさい。",
-      "id": "Convert the following fractions to decimals.",
+      "id": "Ubahlah pecahan berikut menjadi desimal.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"ブンス＼ウ"}
+},
     {
       "jp": "分数b/aは1/aをb倍した数を意味する。",
-      "id": "The fraction b/a means b times 1/a.",
+      "id": "Pecahan b/a berarti b dikali 1/a.",
       "level": "n2",
       "tags": [
         "umum"
@@ -44101,7 +44935,7 @@ window.vocabN2_Nouns = [
   "word": "文体",
   "reading": "ぶんたい",
   "romaji": "buntai",
-  "meaning_id": "literary style",
+  "meaning_id": "gaya sastra",
   "meaning_en": "literary style",
   "jlpt": "n2",
   "pos": "noun",
@@ -44122,12 +44956,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "あの作家の文体は優れている。",
-      "id": "The writer has an excellent style.",
+      "id": "Penulis memiliki gaya yang luar biasa.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ブンタイ￣"}
+},
     {
       "jp": "これは純正の英語とは違った文体だ。",
       "id": "Ini adalah a writing style different from genuine English.",
@@ -44151,7 +44986,7 @@ window.vocabN2_Nouns = [
   "word": "文房具",
   "reading": "ぶんぼうぐ",
   "romaji": "bunbougu",
-  "meaning_id": "stationery",
+  "meaning_id": "alat tulis",
   "meaning_en": "stationery",
   "jlpt": "n2",
   "pos": "noun",
@@ -44172,15 +45007,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "私はこのペンを近所の文房具店で買った。",
-      "id": "I bought this pen at the stationer's around the corner.",
+      "id": "Saya membeli pena ini di toko alat tulis di sudut jalan.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":5,"downstep_mora":3,"contour":"ブンボ＼ウグ"}
+},
     {
       "jp": "彼は学校の売店で文房具を買った。",
-      "id": "He bought some stationery at the school store.",
+      "id": "Dia membeli beberapa alat tulis di toko sekolah.",
       "level": "n2",
       "tags": [
         "umum"
@@ -44201,7 +45037,7 @@ window.vocabN2_Nouns = [
   "word": "文脈",
   "reading": "ぶんみゃく",
   "romaji": "bunmyaku",
-  "meaning_id": "context",
+  "meaning_id": "konteks",
   "meaning_en": "context",
   "jlpt": "n2",
   "pos": "noun",
@@ -44222,15 +45058,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "言葉の意味は文脈によって変わりうる。",
-      "id": "The meaning of words can change according to their context.",
+      "id": "Arti kata dapat berubah sesuai dengan konteksnya.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ブンミャク￣"}
+},
     {
       "jp": "単語の意味はそれが使われている文脈で決まる。",
-      "id": "The meaning of a word is determined by the context where it is used.",
+      "id": "Makna suatu kata ditentukan oleh konteks penggunaannya.",
       "level": "n2",
       "tags": [
         "umum"
@@ -44251,7 +45088,7 @@ window.vocabN2_Nouns = [
   "word": "分量",
   "reading": "ぶんりょう",
   "romaji": "bunryou",
-  "meaning_id": "amount; quantity",
+  "meaning_id": "jumlah; kuantitas",
   "meaning_en": "amount; quantity",
   "jlpt": "n2",
   "pos": "noun",
@@ -44272,12 +45109,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "その作り方の分量は六人分です。",
-      "id": "The recipe serves six people.",
+      "id": "Resepnya untuk enam orang.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"ブンリョ＼ウ"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -44293,7 +45131,7 @@ window.vocabN2_Nouns = [
   "word": "兵隊",
   "reading": "へいたい",
   "romaji": "heitai",
-  "meaning_id": "soldier; sailor",
+  "meaning_id": "tentara; pelaut",
   "meaning_en": "soldier; sailor",
   "jlpt": "n2",
   "pos": "noun",
@@ -44314,15 +45152,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "その市はやがて兵隊によって占領された。",
-      "id": "The city was soon occupied by the soldiers.",
+      "id": "Kota itu segera diduduki oleh tentara.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ヘイタイ￣"}
+},
     {
       "jp": "もしあの時水がなければ、兵隊は死んでいただろう。",
-      "id": "Without water, the soldiers would have died.",
+      "id": "Tanpa air, para prajurit akan mati.",
       "level": "n2",
       "tags": [
         "umum"
@@ -44343,7 +45182,7 @@ window.vocabN2_Nouns = [
   "word": "平野",
   "reading": "へいや",
   "romaji": "heiya",
-  "meaning_id": "plain; open field",
+  "meaning_id": "polos; lapangan terbuka",
   "meaning_en": "plain; open field",
   "jlpt": "n2",
   "pos": "noun",
@@ -44364,15 +45203,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "私たちは山の上から平野を見下ろした。",
-      "id": "We looked down on the plain from the hilltop.",
+      "id": "Kami melihat ke bawah ke dataran dari puncak bukit.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ヘイヤ￣"}
+},
     {
       "jp": "川はうねるように平野を流れている。",
-      "id": "The river meanders across the plain.",
+      "id": "Sungai berkelok-kelok melintasi dataran.",
       "level": "n2",
       "tags": [
         "umum"
@@ -44393,7 +45233,7 @@ window.vocabN2_Nouns = [
   "word": "へそ",
   "reading": "へそ",
   "romaji": "heso",
-  "meaning_id": "navel; belly-button",
+  "meaning_id": "pusar",
   "meaning_en": "navel; belly-button",
   "jlpt": "n2",
   "pos": "noun",
@@ -44414,15 +45254,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "彼は臍を固めて一世一代の大事業に乗り出した。",
-      "id": "He resolved to embark on a once-in-a-lifetime enterprise.",
+      "id": "Dia memutuskan untuk memulai usaha sekali seumur hidup.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":2,"downstep_mora":0,"contour":"ヘソ￣"}
+},
     {
       "jp": "彼女は姑の気にさわるようなことを言わなければよかったと臍を噛んだ。",
-      "id": "She bitterly regretted having said something that displeased her mother-in-law.",
+      "id": "Dia sangat menyesal telah mengatakan sesuatu yang tidak menyenangkan ibu mertuanya.",
       "level": "n2",
       "tags": [
         "umum"
@@ -44443,7 +45284,7 @@ window.vocabN2_Nouns = [
   "word": "別荘",
   "reading": "べっそう",
   "romaji": "bessou",
-  "meaning_id": "holiday house; villa",
+  "meaning_id": "rumah liburan; vila",
   "meaning_en": "holiday house; villa",
   "jlpt": "n2",
   "pos": "noun",
@@ -44464,15 +45305,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "彼女は海辺に別荘を持っている。",
-      "id": "She has a cottage by the sea.",
+      "id": "Dia memiliki sebuah pondok di tepi laut.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"ベッソ＼ウ"}
+},
     {
       "jp": "私は夏のために別荘を用意した。",
-      "id": "I took a cottage for the summer.",
+      "id": "Saya mengambil sebuah pondok untuk musim panas.",
       "level": "n2",
       "tags": [
         "umum"
@@ -44493,7 +45335,7 @@ window.vocabN2_Nouns = [
   "word": "ベテラン",
   "reading": "ベテラン",
   "romaji": "beteran",
-  "meaning_id": "veteran",
+  "meaning_id": "orang berpengalaman (veteran)",
   "meaning_en": "veteran",
   "jlpt": "n2",
   "pos": "noun",
@@ -44514,12 +45356,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "父はこの道２０年のベテランです。",
-      "id": "My father has been doing this job for twenty years.",
+      "id": "Ayah saya telah melakukan pekerjaan ini selama dua puluh tahun.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":0,"downstep_mora":0,"contour":"￣"}
+},
     {
       "jp": "彼はベテランのドライバーだ。",
       "id": "Dia an expert driver.",
@@ -44543,7 +45386,7 @@ window.vocabN2_Nouns = [
   "word": "ヘリコプター",
   "reading": "ヘリコプター",
   "romaji": "herikoputaa",
-  "meaning_id": "helicopter",
+  "meaning_id": "helikopter",
   "meaning_en": "helicopter",
   "jlpt": "n2",
   "pos": "noun",
@@ -44564,15 +45407,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "彼らはヘリコプターで救出された。",
-      "id": "They were rescued by helicopter.",
+      "id": "Mereka diselamatkan dengan helikopter.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":0,"downstep_mora":0,"contour":"￣"}
+},
     {
       "jp": "彼はヘリコプターで病院に運ばれた。",
-      "id": "He was transported to the hospital by helicopter.",
+      "id": "Dia diangkut ke rumah sakit dengan helikopter.",
       "level": "n2",
       "tags": [
         "umum"
@@ -44614,12 +45458,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "生徒はこの便所を使ってはならない。",
-      "id": "Students must not use this toilet.",
+      "id": "Siswa tidak boleh menggunakan toilet ini.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":3,"category":"odaka","mora_count":3,"downstep_mora":3,"contour":"ベンジョ＼"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -44635,7 +45480,7 @@ window.vocabN2_Nouns = [
   "word": "ペンチ",
   "reading": "ペンチ",
   "romaji": "penchi",
-  "meaning_id": "(abbreviation) pliers (lit: pinchers)",
+  "meaning_id": "(singkatan) tang (lit: penjepit)",
   "meaning_en": "(abbreviation) pliers (lit: pinchers)",
   "jlpt": "n2",
   "pos": "noun",
@@ -44656,15 +45501,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "ペンチは道具箱に入れといて。",
-      "id": "Put the pliers in the tool box.",
+      "id": "Masukkan tang ke dalam kotak perkakas.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":0,"downstep_mora":1,"contour":"＼"}
+},
     {
       "jp": "車にペンチがあるよ。",
-      "id": "I've got pliers in my car.",
+      "id": "Aku punya tang di mobilku.",
       "level": "n2",
       "tags": [
         "umum"
@@ -44685,7 +45531,7 @@ window.vocabN2_Nouns = [
   "word": "望遠鏡",
   "reading": "ぼうえんきょう",
   "romaji": "bouenkyou",
-  "meaning_id": "telescope",
+  "meaning_id": "teleskop",
   "meaning_en": "telescope",
   "jlpt": "n2",
   "pos": "noun",
@@ -44706,15 +45552,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "彼は望遠鏡に目を当てた。",
-      "id": "He put his eye to a telescope.",
+      "id": "Dia mengarahkan pandangannya ke teleskop.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":6,"downstep_mora":0,"contour":"ボウエンキョウ￣"}
+},
     {
       "jp": "私は望遠鏡のピントを合わせた。",
-      "id": "I adjusted the telescope to my vision.",
+      "id": "Saya menyesuaikan teleskop dengan penglihatan saya.",
       "level": "n2",
       "tags": [
         "umum"
@@ -44756,15 +45603,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "その物体は光を放ちながら南の方角へ飛んで行った。",
-      "id": "The object flew away to the south, giving out flashes of light.",
+      "id": "Benda itu terbang ke selatan, mengeluarkan kilatan cahaya.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ホウガク￣"}
+},
     {
       "jp": "私たちは間違った方角に進んでいるのではないかと思う。",
-      "id": "I am afraid we are advancing in the wrong direction.",
+      "id": "Saya khawatir kita bergerak ke arah yang salah.",
       "level": "n2",
       "tags": [
         "umum"
@@ -44785,7 +45633,7 @@ window.vocabN2_Nouns = [
   "word": "箒",
   "reading": "ほうき",
   "romaji": "houki",
-  "meaning_id": "broom",
+  "meaning_id": "sapu",
   "meaning_en": "broom",
   "jlpt": "n2",
   "pos": "noun",
@@ -44806,15 +45654,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "彼女はほうきで部屋を掃除する。",
-      "id": "She sweeps the room with a broom.",
+      "id": "Dia menyapu ruangan dengan sapu.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ホウキ￣"}
+},
     {
       "jp": "酔っ払っておそく家に帰ったかどで、怒った女房は亭主に食ってかかり、箒で亭主をひっぱたいた。",
-      "id": "The angry wife was on the warpath; she hit her husband with a broom for coming home late and drunk.",
+      "id": "Istri yang marah berada di jalur perang; dia memukul suaminya dengan sapu karena pulang larut malam dan mabuk.",
       "level": "n2",
       "tags": [
         "umum"
@@ -44835,7 +45684,7 @@ window.vocabN2_Nouns = [
   "word": "方言",
   "reading": "ほうげん",
   "romaji": "hougen",
-  "meaning_id": "dialect",
+  "meaning_id": "dialek",
   "meaning_en": "dialect",
   "jlpt": "n2",
   "pos": "noun",
@@ -44856,12 +45705,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "彼らは南部の方言で話していた。",
-      "id": "They were speaking in a Southern dialect.",
+      "id": "Mereka berbicara dalam dialek Selatan.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"ホウゲ＼ン"}
+},
     {
       "jp": "トムはジョンが方言を使うのでいつもからかう。",
       "id": "Tom always makes fun of John because of his dialect.",
@@ -44885,7 +45735,7 @@ window.vocabN2_Nouns = [
   "word": "坊さん",
   "reading": "ぼうさん",
   "romaji": "bousan",
-  "meaning_id": "Buddhist priest; monk",
+  "meaning_id": "pendeta Buddha; biksu",
   "meaning_en": "Buddhist priest; monk",
   "jlpt": "n2",
   "pos": "noun",
@@ -44906,12 +45756,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "あの偉い坊さんを見ろよ。",
-      "id": "Look at the big shot.",
+      "id": "Lihatlah peluang besarnya.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ボウサン￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -44927,7 +45778,7 @@ window.vocabN2_Nouns = [
   "word": "法則",
   "reading": "ほうそく",
   "romaji": "housoku",
-  "meaning_id": "law; rule",
+  "meaning_id": "hukum; aturan",
   "meaning_en": "law; rule",
   "jlpt": "n2",
   "pos": "noun",
@@ -44948,15 +45799,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "あらゆるものは自然の法則を受けている。",
-      "id": "Everything is subject to the laws of nature.",
+      "id": "Semuanya tunduk pada hukum alam.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ホウソク￣"}
+},
     {
       "jp": "ニュートンは引力の法則を確立した。",
-      "id": "Newton established the law of gravity.",
+      "id": "Newton menetapkan hukum gravitasi.",
       "level": "n2",
       "tags": [
         "umum"
@@ -44977,7 +45829,7 @@ window.vocabN2_Nouns = [
   "word": "庖丁",
   "reading": "ほうちょう",
   "romaji": "houchou",
-  "meaning_id": "kitchen knife; carving knife",
+  "meaning_id": "pisau dapur; pisau ukir",
   "meaning_en": "kitchen knife; carving knife",
   "jlpt": "n2",
   "pos": "noun",
@@ -44998,15 +45850,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "子供に包丁をいたずらさせてはダメだよ。",
-      "id": "Don't let your boy play with a knife.",
+      "id": "Jangan biarkan anak Anda bermain dengan pisau.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ホウチョウ￣"}
+},
     {
       "jp": "彼女は長年の間に包丁をすり減らした。",
-      "id": "She ground down a kitchen knife in the course of many years.",
+      "id": "Dia menggunakan pisau dapur selama bertahun-tahun.",
       "level": "n2",
       "tags": [
         "umum"
@@ -45027,7 +45880,7 @@ window.vocabN2_Nouns = [
   "word": "方程式",
   "reading": "ほうていしき",
   "romaji": "houteishiki",
-  "meaning_id": "equation",
+  "meaning_id": "persamaan",
   "meaning_en": "equation",
   "jlpt": "n2",
   "pos": "noun",
@@ -45048,12 +45901,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "以下の方程式の解を求めよ。",
-      "id": "Find the solution to the following equation.",
+      "id": "Temukan solusi dari persamaan berikut.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":6,"downstep_mora":3,"contour":"ホウテ＼イシキ"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -45069,7 +45923,7 @@ window.vocabN2_Nouns = [
   "word": "防犯",
   "reading": "ぼうはん",
   "romaji": "bouhan",
-  "meaning_id": "prevention of crime",
+  "meaning_id": "pencegahan kejahatan",
   "meaning_en": "prevention of crime",
   "jlpt": "n2",
   "pos": "noun",
@@ -45090,15 +45944,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "防犯カメラの映像をよく見たら人がいた。",
-      "id": "If you look at the security camera footage closely, there's a person there.",
+      "id": "Jika Anda melihat rekaman kamera keamanan lebih dekat, ada seseorang di sana.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ボウハン￣"}
+},
     {
       "jp": "防犯のために登下校時は、名札を外してください。",
-      "id": "In order to prevent crime, please take off your name tag when travelling to and from school.",
+      "id": "Untuk mencegah kejahatan, harap melepas label nama Anda saat bepergian ke dan dari sekolah.",
       "level": "n2",
       "tags": [
         "umum"
@@ -45140,15 +45995,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "２５号線北方面の入り口付近にいます。",
-      "id": "I'm near the on ramp to 25 north.",
+      "id": "Saya berada di dekat jalan menuju 25 utara.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"ホウメ＼ン"}
+},
     {
       "jp": "兄はあなたと同じ方面の仕事をしています。",
-      "id": "My brother is in the same line of business as you are.",
+      "id": "Adikku mempunyai bisnis yang sama denganmu.",
       "level": "n2",
       "tags": [
         "umum"
@@ -45169,7 +46025,7 @@ window.vocabN2_Nouns = [
   "word": "坊や",
   "reading": "ぼうや",
   "romaji": "bouya",
-  "meaning_id": "boy",
+  "meaning_id": "anak laki-laki",
   "meaning_en": "boy",
   "jlpt": "n2",
   "pos": "noun",
@@ -45194,8 +46050,9 @@ window.vocabN2_Nouns = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"ボ＼ウヤ"}
+},
     {
       "jp": "ぐっすり寝てね、ティミー坊や。",
       "id": "Sleep well, Timmy.",
@@ -45219,7 +46076,7 @@ window.vocabN2_Nouns = [
   "word": "ボーナス",
   "reading": "ボーナス",
   "romaji": "boonasu",
-  "meaning_id": "bonus",
+  "meaning_id": "bonus / tunjangan tambahan",
   "meaning_en": "bonus",
   "jlpt": "n2",
   "pos": "noun",
@@ -45240,12 +46097,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "ボーナス全部を買い物と旅行に使ってしまった。",
-      "id": "I blew my whole bonus on shopping and travel.",
+      "id": "Saya menghabiskan seluruh bonus saya untuk berbelanja dan bepergian.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":0,"downstep_mora":1,"contour":"＼"}
+},
     {
       "jp": "ボーナスをもらった。",
       "id": "I received my bonus.",
@@ -45290,15 +46148,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "あなたの牧場は何エーカーありますか。",
-      "id": "What is the acreage of your ranch?",
+      "id": "Berapa luas lahan peternakan Anda?",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ボクジョウ￣"}
+},
     {
       "jp": "牛が牧場で草を食べている。",
-      "id": "Cows are eating grass in the meadow.",
+      "id": "Sapi sedang makan rumput di padang rumput.",
       "level": "n2",
       "tags": [
         "umum"
@@ -45319,7 +46178,7 @@ window.vocabN2_Nouns = [
   "word": "牧畜",
   "reading": "ぼくちく",
   "romaji": "bokuchiku",
-  "meaning_id": "stock-farming",
+  "meaning_id": "peternakan",
   "meaning_en": "stock-farming",
   "jlpt": "n2",
   "pos": "noun",
@@ -45344,8 +46203,9 @@ window.vocabN2_Nouns = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ボクチク￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -45382,12 +46242,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "ＷＨＯとは世界保健機構を表す。",
-      "id": "WHO stands for World Health Organization.",
+      "id": "WHO adalah singkatan Organisasi Kesehatan Dunia.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ホケン￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -45403,7 +46264,7 @@ window.vocabN2_Nouns = [
   "word": "ポスター",
   "reading": "ポスター",
   "romaji": "posutaa",
-  "meaning_id": "poster",
+  "meaning_id": "poster selebaran",
   "meaning_en": "poster",
   "jlpt": "n2",
   "pos": "noun",
@@ -45424,15 +46285,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "彼は立ち止まってポスターをのぞき込んだ。",
-      "id": "He paused to look at the poster.",
+      "id": "Dia berhenti sejenak untuk melihat poster itu.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":0,"downstep_mora":1,"contour":"＼"}
+},
     {
       "jp": "彼は壁一面にポスターをべたべた張った。",
-      "id": "He plastered the wall with posters.",
+      "id": "Dia menempelkan dinding dengan poster.",
       "level": "n2",
       "tags": [
         "umum"
@@ -45453,7 +46315,7 @@ window.vocabN2_Nouns = [
   "word": "北極",
   "reading": "ほっきょく",
   "romaji": "hokkyoku",
-  "meaning_id": "North Pole",
+  "meaning_id": "Kutub Utara",
   "meaning_en": "North Pole",
   "jlpt": "n2",
   "pos": "noun",
@@ -45474,15 +46336,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "シロクマは北極地方に住んでいる。",
-      "id": "Polar bears live in the Arctic.",
+      "id": "Beruang kutub hidup di Kutub Utara.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ホッキョク￣"}
+},
     {
       "jp": "北極圏とは北極周辺の地域の事である。",
-      "id": "The Arctic is the area round the North Pole.",
+      "id": "Arktik adalah wilayah di sekitar Kutub Utara.",
       "level": "n2",
       "tags": [
         "umum"
@@ -45503,7 +46366,7 @@ window.vocabN2_Nouns = [
   "word": "坊っちゃん",
   "reading": "ぼっちゃん",
   "romaji": "botchan",
-  "meaning_id": "son (of others)",
+  "meaning_id": "anak laki-laki (orang lain)",
   "meaning_en": "son (of others)",
   "jlpt": "n2",
   "pos": "noun",
@@ -45528,8 +46391,9 @@ window.vocabN2_Nouns = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":4,"downstep_mora":1,"contour":"ボ＼ッチャン"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -45545,7 +46409,7 @@ window.vocabN2_Nouns = [
   "word": "堀",
   "reading": "ほり",
   "romaji": "hori",
-  "meaning_id": "moat; canal",
+  "meaning_id": "parit; kanal",
   "meaning_en": "moat; canal",
   "jlpt": "n2",
   "pos": "noun",
@@ -45570,8 +46434,9 @@ window.vocabN2_Nouns = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":2,"category":"odaka","mora_count":2,"downstep_mora":2,"contour":"ホリ＼"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -45608,15 +46473,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "ぼろ服が正直者を包んでいるかもしれない。",
-      "id": "A ragged coat may cover an honest man.",
+      "id": "Mantel yang compang-camping mungkin menutupi orang yang jujur.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":2,"downstep_mora":1,"contour":"ボ＼ロ"}
+},
     {
       "jp": "その男はボロを着ていた。",
-      "id": "The man was in rags.",
+      "id": "Pria itu berpakaian compang-camping.",
       "level": "n2",
       "tags": [
         "umum"
@@ -45658,12 +46524,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "アイリーン・ペパーバーグが、アレックスと名づけたオウムの前で丸いお盆を持っている。",
-      "id": "Irene Pepperberg holds a round tray in front of a parrot she has named Alex.",
+      "id": "Irene Pepperberg memegang nampan bundar di depan seekor burung beo yang diberi nama Alex.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":2,"downstep_mora":0,"contour":"ボン￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -45679,7 +46546,7 @@ window.vocabN2_Nouns = [
   "word": "盆地",
   "reading": "ぼんち",
   "romaji": "bonchi",
-  "meaning_id": "basin (e.g. between mountains)",
+  "meaning_id": "cekungan (misalnya di antara pegunungan)",
   "meaning_en": "basin (e.g. between mountains)",
   "jlpt": "n2",
   "pos": "noun",
@@ -45700,15 +46567,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "この地方は盆地になっている。",
-      "id": "This district forms a basin.",
+      "id": "Distrik ini membentuk cekungan.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ボンチ￣"}
+},
     {
       "jp": "河川の盆地には普通肥沃な農地がある。",
-      "id": "The basin of a river usually has rich farmland.",
+      "id": "Daerah aliran sungai biasanya memiliki lahan pertanian yang kaya.",
       "level": "n2",
       "tags": [
         "umum"
@@ -45729,7 +46597,7 @@ window.vocabN2_Nouns = [
   "word": "本部",
   "reading": "ほんぶ",
   "romaji": "honbu",
-  "meaning_id": "headquarters",
+  "meaning_id": "markas besar",
   "meaning_en": "headquarters",
   "jlpt": "n2",
   "pos": "noun",
@@ -45750,12 +46618,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "大学本部はニューヨークに分校を設立することを決定した。",
-      "id": "The University Administration decided to set up a branch campus in New York.",
+      "id": "Administrasi Universitas memutuskan untuk mendirikan kampus cabang di New York.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"ホ＼ンブ"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -45771,7 +46640,7 @@ window.vocabN2_Nouns = [
   "word": "枚数",
   "reading": "まいすう",
   "romaji": "maisuu",
-  "meaning_id": "the number of flat things",
+  "meaning_id": "jumlah benda datar",
   "meaning_en": "the number of flat things",
   "jlpt": "n2",
   "pos": "noun",
@@ -45792,12 +46661,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "コピーの枚数を数えてください。",
-      "id": "Tolong count the number of copies.",
+      "id": "Tolong hitung jumlah eksemplarnya.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"マイス＼ウ"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -45813,7 +46683,7 @@ window.vocabN2_Nouns = [
   "word": "枕",
   "reading": "まくら",
   "romaji": "makura",
-  "meaning_id": "pillow; bolster",
+  "meaning_id": "bantal; mendukung",
   "meaning_en": "pillow; bolster",
   "jlpt": "n2",
   "pos": "noun",
@@ -45834,15 +46704,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "彼は枕に頭を横たえた。",
-      "id": "He laid his head on the pillow.",
+      "id": "Dia meletakkan kepalanya di atas bantal.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"マ＼クラ"}
+},
     {
       "jp": "枕と毛布をもってきていただけるか。",
-      "id": "Could you bring me a pillow and blanket, please?",
+      "id": "Bisakah Anda membawakan saya bantal dan selimut?",
       "level": "n2",
       "tags": [
         "umum"
@@ -45884,15 +46755,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "米国人とイギリス人との間の摩擦が高まった。",
-      "id": "Friction between the Americans and the British mounted.",
+      "id": "Gesekan antara Amerika dan Inggris meningkat.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"マサツ￣"}
+},
     {
       "jp": "タイヤはゴムと路面の摩擦によってすり減る。",
-      "id": "Tires wear down because of friction between the rubber and the road surface.",
+      "id": "Ban menjadi aus karena adanya gesekan antara karet dengan permukaan jalan.",
       "level": "n2",
       "tags": [
         "umum"
@@ -45913,7 +46785,7 @@ window.vocabN2_Nouns = [
   "word": "マスク",
   "reading": "マスク",
   "romaji": "masuku",
-  "meaning_id": "mask",
+  "meaning_id": "topeng",
   "meaning_en": "mask",
   "jlpt": "n2",
   "pos": "noun",
@@ -45934,12 +46806,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "医師は鼻と口に白のマスクをしていた。",
-      "id": "The doctors wore white masks over their mouths and noses.",
+      "id": "Para dokter mengenakan masker putih untuk menutupi mulut dan hidung mereka.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":0,"downstep_mora":1,"contour":"＼"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -45955,7 +46828,7 @@ window.vocabN2_Nouns = [
   "word": "待合室",
   "reading": "まちあいしつ",
   "romaji": "machiaishitsu",
-  "meaning_id": "waiting room",
+  "meaning_id": "ruang tunggu",
   "meaning_en": "waiting room",
   "jlpt": "n2",
   "pos": "noun",
@@ -45976,15 +46849,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "彼は待合室に座っています。",
-      "id": "He's sitting in the waiting room.",
+      "id": "Dia sedang duduk di ruang tunggu.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":6,"downstep_mora":3,"contour":"マチア＼イシツ"}
+},
     {
       "jp": "彼は待合室を見回した。",
-      "id": "He looked around the waiting room.",
+      "id": "Dia melihat sekeliling ruang tunggu.",
       "level": "n2",
       "tags": [
         "umum"
@@ -46005,7 +46879,7 @@ window.vocabN2_Nouns = [
   "word": "街角",
   "reading": "まちかど",
   "romaji": "machikado",
-  "meaning_id": "street corner",
+  "meaning_id": "sudut jalan",
   "meaning_en": "street corner",
   "jlpt": "n2",
   "pos": "noun",
@@ -46026,15 +46900,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "あの町かどに公衆電話ボックスがある。",
-      "id": "Ada a telephone booth at the corner of the street.",
+      "id": "Ada bilik telepon di sudut jalan.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"マチカド￣"}
+},
     {
       "jp": "あの老人たちは街角に無駄話をしに行くのが好きだ。",
-      "id": "The old men like to meet on the street corner just to shoot the bull.",
+      "id": "Orang-orang tua suka bertemu di sudut jalan hanya untuk menembak banteng.",
       "level": "n2",
       "tags": [
         "umum"
@@ -46055,7 +46930,7 @@ window.vocabN2_Nouns = [
   "word": "真っ先",
   "reading": "まっさき",
   "romaji": "massaki",
-  "meaning_id": "the head; the foremost",
+  "meaning_id": "kepala; yang paling utama",
   "meaning_en": "the head; the foremost; beginning",
   "jlpt": "n2",
   "pos": "noun",
@@ -46076,15 +46951,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "私は真っ先に母にそれを告げた。",
-      "id": "I told it to my mother first and foremost.",
+      "id": "Aku menceritakannya pada ibuku terlebih dahulu.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"マッサ＼キ"}
+},
     {
       "jp": "地震が来たら、真っ先に何をしますか。",
-      "id": "When an earthquake occurs, what will you do first?",
+      "id": "Saat terjadi gempa, apa yang pertama kali Anda lakukan?",
       "level": "n2",
       "tags": [
         "umum"
@@ -46105,7 +46981,7 @@ window.vocabN2_Nouns = [
   "word": "窓口",
   "reading": "まどぐち",
   "romaji": "madoguchi",
-  "meaning_id": "ticket window",
+  "meaning_id": "jendela tiket",
   "meaning_en": "ticket window",
   "jlpt": "n2",
   "pos": "noun",
@@ -46126,15 +47002,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "予約はどの窓口でできますか。",
-      "id": "At which window can I make a reservation?",
+      "id": "Di jendela mana saya bisa melakukan reservasi?",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":4,"downstep_mora":2,"contour":"マド＼グチ"}
+},
     {
       "jp": "入院の受付窓口はどこですか。",
-      "id": "Where is the admission's office?",
+      "id": "Dimana kantor penerimaannya?",
       "level": "n2",
       "tags": [
         "umum"
@@ -46155,7 +47032,7 @@ window.vocabN2_Nouns = [
   "word": "まぶた",
   "reading": "まぶた",
   "romaji": "mabuta",
-  "meaning_id": "eyelids",
+  "meaning_id": "kelopak mata",
   "meaning_en": "eyelids",
   "jlpt": "n2",
   "pos": "noun",
@@ -46176,12 +47053,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "彼は眠くて瞼が重かった。",
-      "id": "His eyes were heavy with sleep.",
+      "id": "Matanya berat karena kantuk.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"マ＼ブタ"}
+},
     {
       "jp": "まぶたが熱を持っています。",
       "id": "My eyelid feels hot.",
@@ -46205,7 +47083,7 @@ window.vocabN2_Nouns = [
   "word": "マフラー",
   "reading": "マフラー",
   "romaji": "mafuraa",
-  "meaning_id": "muffler; scarf",
+  "meaning_id": "knalpot; syal",
   "meaning_en": "muffler; scarf",
   "jlpt": "n2",
   "pos": "noun",
@@ -46226,12 +47104,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "五次元のマフラーはよい音がする。",
-      "id": "The 5ZIGEN exhaust makes a nice sound.",
+      "id": "Knalpot 5ZIGEN mengeluarkan suara yang bagus.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":0,"downstep_mora":1,"contour":"＼"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -46247,7 +47126,7 @@ window.vocabN2_Nouns = [
   "word": "マラソン",
   "reading": "マラソン",
   "romaji": "marason",
-  "meaning_id": "marathon",
+  "meaning_id": "maraton",
   "meaning_en": "marathon",
   "jlpt": "n2",
   "pos": "noun",
@@ -46272,8 +47151,9 @@ window.vocabN2_Nouns = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":0,"downstep_mora":0,"contour":"￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -46310,15 +47190,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "バスは満員だった。",
-      "id": "The bus was filled to capacity.",
+      "id": "Bus terisi penuh.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"マンイン￣"}
+},
     {
       "jp": "満員電車の中は息が詰まりそうだった。",
-      "id": "I thought I was going to suffocate on the crowded train.",
+      "id": "Saya pikir saya akan mati lemas di kereta yang penuh sesak.",
       "level": "n2",
       "tags": [
         "umum"
@@ -46339,7 +47220,7 @@ window.vocabN2_Nouns = [
   "word": "マンション",
   "reading": "マンション",
   "romaji": "manshon",
-  "meaning_id": "large apartment; apartment house",
+  "meaning_id": "apartemen besar; rumah apartemen",
   "meaning_en": "large apartment; apartment house",
   "jlpt": "n2",
   "pos": "noun",
@@ -46360,15 +47241,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "私のおじはマンションに住んでいる。",
-      "id": "My uncle lives in an apartment.",
+      "id": "Paman saya tinggal di apartemen.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":0,"downstep_mora":1,"contour":"＼"}
+},
     {
       "jp": "本当のマンションではありません。",
-      "id": "It isn't a real apartment.",
+      "id": "Ini bukan apartemen sungguhan.",
       "level": "n2",
       "tags": [
         "umum"
@@ -46389,7 +47271,7 @@ window.vocabN2_Nouns = [
   "word": "満点",
   "reading": "まんてん",
   "romaji": "manten",
-  "meaning_id": "perfect score",
+  "meaning_id": "skor sempurna",
   "meaning_en": "perfect score",
   "jlpt": "n2",
   "pos": "noun",
@@ -46410,15 +47292,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "ベッドは寝心地満点だった。",
-      "id": "I found the bed quite comfortable.",
+      "id": "Saya menemukan tempat tidurnya cukup nyaman.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"マンテ＼ン"}
+},
     {
       "jp": "彼は数学で満点を取った。",
-      "id": "He got full marks in mathematics.",
+      "id": "Dia mendapat nilai penuh dalam matematika.",
       "level": "n2",
       "tags": [
         "umum"
@@ -46439,7 +47322,7 @@ window.vocabN2_Nouns = [
   "word": "見掛け",
   "reading": "みかけ",
   "romaji": "mikake",
-  "meaning_id": "outward appearance",
+  "meaning_id": "penampilan luar",
   "meaning_en": "outward appearance",
   "jlpt": "n2",
   "pos": "noun",
@@ -46464,11 +47347,12 @@ window.vocabN2_Nouns = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ミカケ￣"}
+},
     {
       "jp": "人を見かけで判断してはいけない。",
-      "id": "You should not judge people by their appearance.",
+      "id": "Anda tidak boleh menilai orang dari penampilannya.",
       "level": "n2",
       "tags": [
         "umum"
@@ -46489,7 +47373,7 @@ window.vocabN2_Nouns = [
   "word": "三日月",
   "reading": "みかづき",
   "romaji": "mikazuki",
-  "meaning_id": "new moon; crescent moon",
+  "meaning_id": "bulan baru; bulan sabit",
   "meaning_en": "new moon; crescent moon",
   "jlpt": "n2",
   "pos": "noun",
@@ -46510,12 +47394,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "足で三日月を踏んでいる。",
-      "id": "I am stepping on the crescent moon with my feet.",
+      "id": "Saya menginjak bulan sabit dengan kaki saya.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ミカヅキ￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -46531,7 +47416,7 @@ window.vocabN2_Nouns = [
   "word": "岬",
   "reading": "みさき",
   "romaji": "misaki",
-  "meaning_id": "cape (on coast)",
+  "meaning_id": "tanjung (di pantai)",
   "meaning_en": "cape (on coast)",
   "jlpt": "n2",
   "pos": "noun",
@@ -46552,15 +47437,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "その船は岬を回った。",
-      "id": "The ship sailed around the cape.",
+      "id": "Kapal berlayar mengitari tanjung.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ミサキ￣"}
+},
     {
       "jp": "そこでは岬が海に突き出している。",
-      "id": "There a cape pushes out into the sea.",
+      "id": "Di sana sebuah tanjung menjorok ke laut.",
       "level": "n2",
       "tags": [
         "umum"
@@ -46581,7 +47467,7 @@ window.vocabN2_Nouns = [
   "word": "ミシン",
   "reading": "ミシン",
   "romaji": "mishin",
-  "meaning_id": "sewing machine",
+  "meaning_id": "mesin jahit",
   "meaning_en": "sewing machine",
   "jlpt": "n2",
   "pos": "noun",
@@ -46602,15 +47488,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "私は新しいミシンを買った。",
-      "id": "I bought a new sewing machine.",
+      "id": "Saya membeli mesin jahit baru.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":0,"downstep_mora":1,"contour":"＼"}
+},
     {
       "jp": "このミシンのこつをのみ込むのに、どのくらい時間がかかるのか。",
-      "id": "How long does it take to get the hang of this sewing machine?",
+      "id": "Berapa lama waktu yang dibutuhkan untuk menguasai mesin jahit ini?",
       "level": "n2",
       "tags": [
         "umum"
@@ -46631,7 +47518,7 @@ window.vocabN2_Nouns = [
   "word": "店屋",
   "reading": "みせや",
   "romaji": "miseya",
-  "meaning_id": "store; shop",
+  "meaning_id": "toko; berbelanja",
   "meaning_en": "store; shop",
   "jlpt": "n2",
   "pos": "noun",
@@ -46656,8 +47543,9 @@ window.vocabN2_Nouns = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"ミセ＼ヤ"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -46694,15 +47582,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "この辞書は見出し語が約４万はいっている。",
-      "id": "This dictionary contains about 40,000 headwords.",
+      "id": "Kamus ini berisi sekitar 40.000 kata kunci.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ミダシ￣"}
+},
     {
       "jp": "この辞書では発音は見出し語の直後にある。",
-      "id": "In this dictionary the pronunciation comes right after the headword.",
+      "id": "Dalam kamus ini, pengucapannya muncul tepat setelah kata utama.",
       "level": "n2",
       "tags": [
         "umum"
@@ -46723,7 +47612,7 @@ window.vocabN2_Nouns = [
   "word": "道順",
   "reading": "みちじゅん",
   "romaji": "michijun",
-  "meaning_id": "itinerary; route",
+  "meaning_id": "rencana perjalanan; rute",
   "meaning_en": "itinerary; route",
   "jlpt": "n2",
   "pos": "noun",
@@ -46744,15 +47633,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "地下鉄の駅までの道順を教えていただけませんか。",
-      "id": "Can you give me directions to the subway station?",
+      "id": "Bisakah Anda memberi saya petunjuk arah ke stasiun kereta bawah tanah?",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ミチジュン￣"}
+},
     {
       "jp": "私に地図を書いて駅までの道順を教えてくれませんか。",
-      "id": "Will you draw me a map to show me the way to the station?",
+      "id": "Maukah Anda menggambar peta untuk menunjukkan jalan ke stasiun?",
       "level": "n2",
       "tags": [
         "umum"
@@ -46773,7 +47663,7 @@ window.vocabN2_Nouns = [
   "word": "身分",
   "reading": "みぶん",
   "romaji": "mibun",
-  "meaning_id": "social position; social status",
+  "meaning_id": "posisi sosial; status sosial",
   "meaning_en": "social position; social status",
   "jlpt": "n2",
   "pos": "noun",
@@ -46794,12 +47684,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "支配人はドアを開いて身分を名乗った。",
-      "id": "The manager opened the door and identified himself.",
+      "id": "Manajer membuka pintu dan mengidentifikasi dirinya.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"ミ＼ブン"}
+},
     {
       "jp": "彼は身分の高い人です。",
       "id": "Dia a man of high social status.",
@@ -46823,7 +47714,7 @@ window.vocabN2_Nouns = [
   "word": "見本",
   "reading": "みほん",
   "romaji": "mihon",
-  "meaning_id": "sample",
+  "meaning_id": "sampel",
   "meaning_en": "sample",
   "jlpt": "n2",
   "pos": "noun",
@@ -46848,11 +47739,12 @@ window.vocabN2_Nouns = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ミホン￣"}
+},
     {
       "jp": "無料で見本を配っています。",
-      "id": "They're giving away samples free.",
+      "id": "Mereka membagikan sampel secara gratis.",
       "level": "n2",
       "tags": [
         "umum"
@@ -46873,7 +47765,7 @@ window.vocabN2_Nouns = [
   "word": "名字",
   "reading": "みょうじ",
   "romaji": "myouji",
-  "meaning_id": "surname; family name",
+  "meaning_id": "nama keluarga",
   "meaning_en": "surname; family name",
   "jlpt": "n2",
   "pos": "noun",
@@ -46894,15 +47786,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "あなたの名字はどうつづるのですか。",
-      "id": "How do you spell your family name?",
+      "id": "Bagaimana Anda mengeja nama keluarga Anda?",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"ミョ＼ウジ"}
+},
     {
       "jp": "トムはメアリーの苗字を知らなかった。",
-      "id": "Tom didn't know what Mary's last name was.",
+      "id": "Tom tidak tahu siapa nama belakang Mary.",
       "level": "n2",
       "tags": [
         "umum"
@@ -46923,7 +47816,7 @@ window.vocabN2_Nouns = [
   "word": "ミリ",
   "reading": "ミリ",
   "romaji": "miri",
-  "meaning_id": "milli-; 10^-3",
+  "meaning_id": "mili-; 10^-3",
   "meaning_en": "milli-; 10^-3",
   "jlpt": "n2",
   "pos": "noun",
@@ -46944,12 +47837,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "目の前で繰り広げられるやり取りは、俺が入り込む隙なんて一ミリもない。",
-      "id": "The exchange unfolding in front of my eyes had not a single millimetre of a gap in which for me to slip.",
+      "id": "Pertukaran yang terjadi di depan mataku tidak memiliki celah satu milimeter pun yang bisa membuatku tergelincir.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":0,"downstep_mora":1,"contour":"＼"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -46986,15 +47880,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "今度の税金は全ての民間企業に適用される。",
-      "id": "This tax is applied to all private-sector enterprises.",
+      "id": "Pajak ini berlaku untuk semua perusahaan sektor swasta.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ミンカン￣"}
+},
     {
       "jp": "民間企業に対する投資をもっと認めてほしい。",
-      "id": "I'm eager to be allowed to do more private-sector investment.",
+      "id": "Saya sangat ingin diizinkan melakukan lebih banyak investasi sektor swasta.",
       "level": "n2",
       "tags": [
         "umum"
@@ -47015,7 +47910,7 @@ window.vocabN2_Nouns = [
   "word": "民謡",
   "reading": "みんよう",
   "romaji": "min'you",
-  "meaning_id": "folk song; popular song",
+  "meaning_id": "lagu daerah; lagu populer",
   "meaning_en": "folk song; popular song",
   "jlpt": "n2",
   "pos": "noun",
@@ -47036,12 +47931,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "兄が民謡に興味を抱き始めたのは十二歳ごろだった。",
-      "id": "My older brother started to take interest in Japanese folk songs when he was around 12 years old.",
+      "id": "Kakak laki-laki saya mulai tertarik pada lagu daerah Jepang ketika dia berumur sekitar 12 tahun.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ミンヨウ￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -47057,7 +47953,7 @@ window.vocabN2_Nouns = [
   "word": "無地",
   "reading": "むじ",
   "romaji": "muji",
-  "meaning_id": "plain; unfigured",
+  "meaning_id": "polos; tidak tergambar",
   "meaning_en": "plain; unfigured",
   "jlpt": "n2",
   "pos": "noun",
@@ -47078,12 +47974,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "無地の白い紙で十分です。",
-      "id": "Plain white paper will do.",
+      "id": "Kertas putih biasa bisa digunakan.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":2,"downstep_mora":1,"contour":"ム＼ジ"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -47099,7 +47996,7 @@ window.vocabN2_Nouns = [
   "word": "紫",
   "reading": "むらさき",
   "romaji": "murasaki",
-  "meaning_id": "purple colour; violet",
+  "meaning_id": "warna ungu; ungu",
   "meaning_en": "purple colour; violet",
   "jlpt": "n2",
   "pos": "noun",
@@ -47120,15 +48017,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "その色はピンクというより紫だ。",
-      "id": "The color is purple rather than pink.",
+      "id": "Warnanya ungu, bukan merah muda.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":4,"downstep_mora":2,"contour":"ムラ＼サキ"}
+},
     {
       "jp": "赤と青を混ぜると紫になる。",
-      "id": "Red and blue paint mixed together give us purple.",
+      "id": "Cat merah dan biru bercampur memberi kita warna ungu.",
       "level": "n2",
       "tags": [
         "umum"
@@ -47170,15 +48068,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "鳥は群れをなして飛んでいた。",
-      "id": "The birds were flying in a group.",
+      "id": "Burung-burung itu terbang berkelompok.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"odaka","mora_count":2,"downstep_mora":2,"contour":"ムレ＼"}
+},
     {
       "jp": "二人は仲間、三人は寄せ集めの群れ。",
-      "id": "Two's company, three's a crowd.",
+      "id": "Dua kelompok, tiga kelompok.",
       "level": "n2",
       "tags": [
         "umum"
@@ -47199,7 +48098,7 @@ window.vocabN2_Nouns = [
   "word": "姪",
   "reading": "めい",
   "romaji": "mei",
-  "meaning_id": "niece",
+  "meaning_id": "keponakan",
   "meaning_en": "niece",
   "jlpt": "n2",
   "pos": "noun",
@@ -47220,15 +48119,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "その姪は彼女の叔母さんのように見えます。",
-      "id": "The niece looks like her aunt.",
+      "id": "Keponakannya mirip bibinya.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":2,"downstep_mora":1,"contour":"メ＼イ"}
+},
     {
       "jp": "エリオットさんの姪は女子大学に通っている。",
-      "id": "Mr Eliot's niece goes to a women's college.",
+      "id": "Keponakan Tuan Eliot kuliah di perguruan tinggi wanita.",
       "level": "n2",
       "tags": [
         "umum"
@@ -47249,7 +48149,7 @@ window.vocabN2_Nouns = [
   "word": "名作",
   "reading": "めいさく",
   "romaji": "meisaku",
-  "meaning_id": "masterpiece",
+  "meaning_id": "karya agung",
   "meaning_en": "masterpiece",
   "jlpt": "n2",
   "pos": "noun",
@@ -47270,12 +48170,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "この映画はまさしく不朽の名作である。",
-      "id": "This film is indeed an enduring masterpiece.",
+      "id": "Film ini memang sebuah mahakarya yang abadi.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"メイサク￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -47291,7 +48192,7 @@ window.vocabN2_Nouns = [
   "word": "名刺",
   "reading": "めいし",
   "romaji": "meishi",
-  "meaning_id": "business card",
+  "meaning_id": "kartu nama",
   "meaning_en": "business card",
   "jlpt": "n2",
   "pos": "noun",
@@ -47312,15 +48213,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "彼は名刺を出した。",
-      "id": "He presented his card.",
+      "id": "Dia menunjukkan kartunya.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"メイシ￣"}
+},
     {
       "jp": "「私の名刺です。追加情報があったらいつでも連絡下さい」と記者は言った。",
-      "id": "\"Here is my business card. Please call me anytime with more information,\" said the reporter.",
+      "id": "\"Ini kartu nama saya. Silakan hubungi saya kapan saja untuk mendapatkan informasi lebih lanjut,\" kata reporter tersebut.",
       "level": "n2",
       "tags": [
         "umum"
@@ -47341,7 +48243,7 @@ window.vocabN2_Nouns = [
   "word": "名詞",
   "reading": "めいし",
   "romaji": "meishi",
-  "meaning_id": "noun",
+  "meaning_id": "kata benda",
   "meaning_en": "noun",
   "jlpt": "n2",
   "pos": "noun",
@@ -47362,15 +48264,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "名詞を修飾するものは、形容詞または形容詞相当語句です。",
-      "id": "Things that modify nouns are adjectives or equivalent to adjectives.",
+      "id": "Hal-hal yang memodifikasi kata benda adalah kata sifat atau setara dengan kata sifat.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"メイシ￣"}
+},
     {
       "jp": "名詞から動詞が派生していることもあれば、その逆のこともある。",
-      "id": "Sometimes a verb is derived from a noun and sometimes it is the other way around.",
+      "id": "Terkadang kata kerja diturunkan dari kata benda dan terkadang sebaliknya.",
       "level": "n2",
       "tags": [
         "umum"
@@ -47391,7 +48294,7 @@ window.vocabN2_Nouns = [
   "word": "名所",
   "reading": "めいしょ",
   "romaji": "meisho",
-  "meaning_id": "famous place",
+  "meaning_id": "tempat terkenal",
   "meaning_en": "famous place",
   "jlpt": "n2",
   "pos": "noun",
@@ -47416,11 +48319,12 @@ window.vocabN2_Nouns = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"メイショ￣"}
+},
     {
       "jp": "この辺りの観光名所はどこですか？",
-      "id": "What are the main sights around here?",
+      "id": "Apa saja tempat wisata utama di sekitar sini?",
       "level": "n2",
       "tags": [
         "umum"
@@ -47441,7 +48345,7 @@ window.vocabN2_Nouns = [
   "word": "迷信",
   "reading": "めいしん",
   "romaji": "meishin",
-  "meaning_id": "superstition",
+  "meaning_id": "takhayul",
   "meaning_en": "superstition",
   "jlpt": "n2",
   "pos": "noun",
@@ -47462,15 +48366,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "その迷信は彼らの間で今なお残っている。",
-      "id": "This superstition still lingers on among them.",
+      "id": "Takhayul ini masih melekat di antara mereka.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"メイシン￣"}
+},
     {
       "jp": "多くの迷信がまだ信じられている。",
-      "id": "Lots of superstitions are still believed in.",
+      "id": "Banyak takhayul yang masih dipercaya.",
       "level": "n2",
       "tags": [
         "umum"
@@ -47491,7 +48396,7 @@ window.vocabN2_Nouns = [
   "word": "命ずる",
   "reading": "めいずる",
   "romaji": "meizuru",
-  "meaning_id": "me-command",
+  "meaning_id": "perintah",
   "meaning_en": "to command; to appoint",
   "jlpt": "n2",
   "pos": "noun",
@@ -47512,15 +48417,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "私は後に残るよう命ぜられた。",
-      "id": "I was bidden to stay behind.",
+      "id": "Saya diminta untuk tetap tinggal.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"メイズル￣"}
+},
     {
       "jp": "皿洗いを命じられて彼女は口をとがらせた。",
-      "id": "She pouted when she was told to wash the dishes.",
+      "id": "Dia cemberut ketika disuruh mencuci piring.",
       "level": "n2",
       "tags": [
         "umum"
@@ -47562,12 +48468,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "この地方の名物料理がありますか。",
-      "id": "Do you have any regional dishes?",
+      "id": "Apakah Anda punya masakan daerah?",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":4,"downstep_mora":1,"contour":"メ＼イブツ"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -47583,7 +48490,7 @@ window.vocabN2_Nouns = [
   "word": "目上",
   "reading": "めうえ",
   "romaji": "meue",
-  "meaning_id": "superior(s); senior",
+  "meaning_id": "atasan; senior",
   "meaning_en": "superior(s); senior",
   "jlpt": "n2",
   "pos": "noun",
@@ -47604,15 +48511,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "目上の人には礼儀正しくしなければならない。",
-      "id": "You must be polite to your elders.",
+      "id": "Anda harus sopan kepada orang yang lebih tua.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"メウエ￣"}
+},
     {
       "jp": "最近、目上の人に敬語を使わない若者が多い。",
-      "id": "Recently there are a lot of young people who don't use respectful language to their superiors.",
+      "id": "Belakangan ini banyak sekali generasi muda yang tidak menggunakan bahasa hormat kepada atasannya.",
       "level": "n2",
       "tags": [
         "umum"
@@ -47633,7 +48541,7 @@ window.vocabN2_Nouns = [
   "word": "メーター",
   "reading": "メーター",
   "romaji": "meetaa",
-  "meaning_id": "meter (clock)",
+  "meaning_id": "meteran (jam)",
   "meaning_en": "meter (clock)",
   "jlpt": "n2",
   "pos": "noun",
@@ -47654,15 +48562,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "メーターの数字を読んでください。",
-      "id": "Read the meter.",
+      "id": "Baca meterannya.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":0,"downstep_mora":0,"contour":"￣"}
+},
     {
       "jp": "ロープは、２〜３メーター短すぎた。",
-      "id": "The rope was a couple of meters too short.",
+      "id": "Talinya terlalu pendek beberapa meter.",
       "level": "n2",
       "tags": [
         "umum"
@@ -47683,7 +48592,7 @@ window.vocabN2_Nouns = [
   "word": "目覚し",
   "reading": "めざまし",
   "romaji": "mezamashi",
-  "meaning_id": "(abbreviation) alarm-clock",
+  "meaning_id": "(singkatan) jam alarm",
   "meaning_en": "(abbreviation) alarm-clock",
   "jlpt": "n2",
   "pos": "noun",
@@ -47704,15 +48613,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "私はめざましの音で目が覚めた。",
-      "id": "I woke up at the sound of the alarm.",
+      "id": "Aku terbangun karena bunyi alarm.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":4,"downstep_mora":2,"contour":"メザ＼マシ"}
+},
     {
       "jp": "目覚しは５時３０分に鳴った。",
-      "id": "The alarm went off at five-thirty.",
+      "id": "Alarm berbunyi pada pukul setengah lima.",
       "level": "n2",
       "tags": [
         "umum"
@@ -47754,15 +48664,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "目下の者をないがしろにするな。",
-      "id": "Don't ignore your subordinates.",
+      "id": "Jangan abaikan bawahan Anda.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"メシタ￣"}
+},
     {
       "jp": "目下増築中である。",
-      "id": "An extension is currently under construction.",
+      "id": "Perpanjangan saat ini sedang dibangun.",
       "level": "n2",
       "tags": [
         "umum"
@@ -47804,15 +48715,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "そこに行く道がわかるように、近くの目印を教えて下さい。",
-      "id": "I wish to know a landmark nearby so I can find my way there.",
+      "id": "Saya ingin mengetahui landmark terdekat sehingga saya dapat menemukan jalan ke sana.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":4,"downstep_mora":2,"contour":"メジ＼ルシ"}
+},
     {
       "jp": "彼女は自分の傘に赤いリボンで目印を付けた。",
-      "id": "She put a red ribbon on her umbrella as a mark.",
+      "id": "Dia memasang pita merah di payungnya sebagai tanda.",
       "level": "n2",
       "tags": [
         "umum"
@@ -47833,7 +48745,7 @@ window.vocabN2_Nouns = [
   "word": "メニュー",
   "reading": "メニュー",
   "romaji": "menyuu",
-  "meaning_id": "menu",
+  "meaning_id": "tidak bisa",
   "meaning_en": "menu",
   "jlpt": "n2",
   "pos": "noun",
@@ -47854,15 +48766,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "もう一度メニューを見せていただけますか。",
-      "id": "Can I have the menu again, please?",
+      "id": "Bisakah saya minta menunya lagi?",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":0,"downstep_mora":1,"contour":"＼"}
+},
     {
       "jp": "メニューを見せて下さい。",
-      "id": "Tolong let me take a look at the menu.",
+      "id": "Tolong izinkan saya melihat menunya.",
       "level": "n2",
       "tags": [
         "umum"
@@ -47883,7 +48796,7 @@ window.vocabN2_Nouns = [
   "word": "めまい",
   "reading": "めまい",
   "romaji": "memai",
-  "meaning_id": "dizziness; giddiness",
+  "meaning_id": "pusing; rasa pusing",
   "meaning_en": "dizziness; giddiness",
   "jlpt": "n2",
   "pos": "noun",
@@ -47904,15 +48817,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "私は空腹でめまいがした。",
-      "id": "I felt faint with hunger.",
+      "id": "Saya merasa pingsan karena lapar.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"メマ＼イ"}
+},
     {
       "jp": "急に立ち上がったら、クラッとめまいがした。",
-      "id": "I suddenly stood up and felt faint and light-headed.",
+      "id": "Tiba-tiba saya berdiri dan merasa lemas dan pusing.",
       "level": "n2",
       "tags": [
         "umum"
@@ -47933,7 +48847,7 @@ window.vocabN2_Nouns = [
   "word": "目安",
   "reading": "めやす",
   "romaji": "meyasu",
-  "meaning_id": "criterion; aim",
+  "meaning_id": "kriteria; tujuan",
   "meaning_en": "criterion; aim",
   "jlpt": "n2",
   "pos": "noun",
@@ -47958,8 +48872,9 @@ window.vocabN2_Nouns = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"メヤス￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -47975,7 +48890,7 @@ window.vocabN2_Nouns = [
   "word": "面積",
   "reading": "めんせき",
   "romaji": "menseki",
-  "meaning_id": "area",
+  "meaning_id": "daerah",
   "meaning_en": "area",
   "jlpt": "n2",
   "pos": "noun",
@@ -47996,15 +48911,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "この都市の面積はどれくらいか。",
-      "id": "What is the area of this city?",
+      "id": "Berapa luas kota ini?",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":4,"downstep_mora":1,"contour":"メ＼ンセキ"}
+},
     {
       "jp": "この床の面積は６００平方メートルある。",
-      "id": "The area of this floor is 600 square meters.",
+      "id": "Luas lantai ini 600 meter persegi.",
       "level": "n2",
       "tags": [
         "umum"
@@ -48025,7 +48941,7 @@ window.vocabN2_Nouns = [
   "word": "モーター",
   "reading": "モーター",
   "romaji": "mootaa",
-  "meaning_id": "motor",
+  "meaning_id": "motorik",
   "meaning_en": "motor",
   "jlpt": "n2",
   "pos": "noun",
@@ -48046,15 +48962,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "そのボートは動力にモーターを使用している。",
-      "id": "The boat uses a motor for the power.",
+      "id": "Perahu tersebut menggunakan motor sebagai tenaganya.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":0,"downstep_mora":1,"contour":"＼"}
+},
     {
       "jp": "モーターについては何も問題がない。",
-      "id": "Ada nothing the matter with the motor.",
+      "id": "Tidak ada apa-apa dengan motornya.",
       "level": "n2",
       "tags": [
         "umum"
@@ -48096,12 +49013,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "この古い家は木材でできている。",
-      "id": "This old house is made of wood.",
+      "id": "Rumah tua ini terbuat dari kayu.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":4,"downstep_mora":2,"contour":"モク＼ザイ"}
+},
     {
       "jp": "私たちは像を木材で作った。",
       "id": "We made statues out of wood.",
@@ -48125,7 +49043,7 @@ window.vocabN2_Nouns = [
   "word": "目次",
   "reading": "もくじ",
   "romaji": "mokuji",
-  "meaning_id": "table of contents",
+  "meaning_id": "daftar isi",
   "meaning_en": "table of contents",
   "jlpt": "n2",
   "pos": "noun",
@@ -48146,12 +49064,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "皆さんは目次を見てください。",
-      "id": "Tolong look at the table of contents, everyone.",
+      "id": "Tolong lihat daftar isinya ya semuanya.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"モクジ￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -48167,7 +49086,7 @@ window.vocabN2_Nouns = [
   "word": "餅",
   "reading": "もち",
   "romaji": "mochi",
-  "meaning_id": "sticky rice cake",
+  "meaning_id": "kue ketan",
   "meaning_en": "sticky rice cake",
   "jlpt": "n2",
   "pos": "noun",
@@ -48188,15 +49107,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "彼は餅をすっかり食べたわけではない。",
-      "id": "He didn't eat all of the rice cakes.",
+      "id": "Dia tidak makan semua kue beras.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":2,"downstep_mora":0,"contour":"モチ￣"}
+},
     {
       "jp": "餅は餅屋。",
-      "id": "Every man to his trade.",
+      "id": "Setiap orang melakukan perdagangannya.",
       "level": "n2",
       "tags": [
         "umum"
@@ -48217,7 +49137,7 @@ window.vocabN2_Nouns = [
   "word": "モデル",
   "reading": "モデル",
   "romaji": "moderu",
-  "meaning_id": "model",
+  "meaning_id": "model peraga / contoh",
   "meaning_en": "model",
   "jlpt": "n2",
   "pos": "noun",
@@ -48242,11 +49162,12 @@ window.vocabN2_Nouns = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":0,"downstep_mora":1,"contour":"＼"}
+},
     {
       "jp": "彼のオートバイは最新モデルだ。",
-      "id": "His motorcycle is the latest model.",
+      "id": "Sepeda motornya model terbaru.",
       "level": "n2",
       "tags": [
         "umum"
@@ -48267,7 +49188,7 @@ window.vocabN2_Nouns = [
   "word": "物置",
   "reading": "ものおき",
   "romaji": "monooki",
-  "meaning_id": "storage room",
+  "meaning_id": "ruang penyimpanan",
   "meaning_en": "storage room",
   "jlpt": "n2",
   "pos": "noun",
@@ -48288,15 +49209,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "物置に鍵をかけるのを忘れちゃった。",
-      "id": "I forgot to lock the storeroom.",
+      "id": "Aku lupa mengunci gudang.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"モノオ＼キ"}
+},
     {
       "jp": "彼は物置の中で偶然いくつかの古文書を見つけた。",
-      "id": "He came across some old documents in the closet.",
+      "id": "Dia menemukan beberapa dokumen lama di lemari.",
       "level": "n2",
       "tags": [
         "umum"
@@ -48317,7 +49239,7 @@ window.vocabN2_Nouns = [
   "word": "物差し",
   "reading": "ものさし",
   "romaji": "monosashi",
-  "meaning_id": "ruler; measure",
+  "meaning_id": "penguasa; mengukur",
   "meaning_en": "ruler; measure",
   "jlpt": "n2",
   "pos": "noun",
@@ -48338,12 +49260,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "物差しを使って線を引きなさい。",
-      "id": "Draw a line with a ruler.",
+      "id": "Gambarlah garis dengan penggaris.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"モノサ＼シ"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -48359,7 +49282,7 @@ window.vocabN2_Nouns = [
   "word": "モノレール",
   "reading": "モノレール",
   "romaji": "monoreeru",
-  "meaning_id": "monorail",
+  "meaning_id": "monorel",
   "meaning_en": "monorail",
   "jlpt": "n2",
   "pos": "noun",
@@ -48384,8 +49307,9 @@ window.vocabN2_Nouns = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":0,"downstep_mora":0,"contour":"￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -48422,15 +49346,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "今日の催しのチケットはありますか。",
-      "id": "Do you have any tickets for today's performance?",
+      "id": "Apakah Anda punya tiket untuk pertunjukan hari ini?",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"モヨオシ￣"}
+},
     {
       "jp": "アカデミー授賞式は、ハリウッド最大の華やかな催しだ。",
-      "id": "The Oscar ceremonies are Hollywood's biggest extravaganza.",
+      "id": "Upacara Oscar adalah ekstravaganza terbesar di Hollywood.",
       "level": "n2",
       "tags": [
         "umum"
@@ -48451,7 +49376,7 @@ window.vocabN2_Nouns = [
   "word": "薬缶",
   "reading": "やかん",
   "romaji": "yakan",
-  "meaning_id": "kettle",
+  "meaning_id": "ketel",
   "meaning_en": "kettle",
   "jlpt": "n2",
   "pos": "noun",
@@ -48472,15 +49397,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "薬缶がシュンシュンいうまで待ちなさい。",
-      "id": "Wait till the kettle begins to sing.",
+      "id": "Tunggu sampai ketel mulai berbunyi.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ヤカン￣"}
+},
     {
       "jp": "薬缶から湯気が立っている。",
-      "id": "The kettle is steaming.",
+      "id": "Ketelnya mengepul.",
       "level": "n2",
       "tags": [
         "umum"
@@ -48501,7 +49427,7 @@ window.vocabN2_Nouns = [
   "word": "役者",
   "reading": "やくしゃ",
   "romaji": "yakusha",
-  "meaning_id": "actor; actress",
+  "meaning_id": "aktor; aktris",
   "meaning_en": "actor; actress",
   "jlpt": "n2",
   "pos": "noun",
@@ -48522,15 +49448,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "その役者の事は聞いたことが無い。",
-      "id": "I've never heard of the actor.",
+      "id": "Saya belum pernah mendengar tentang aktornya.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ヤクシャ￣"}
+},
     {
       "jp": "あの喜劇役者は大変こっけいだ。",
-      "id": "That comedian is very funny.",
+      "id": "Komedian itu lucu sekali.",
       "level": "n2",
       "tags": [
         "umum"
@@ -48551,7 +49478,7 @@ window.vocabN2_Nouns = [
   "word": "役所",
   "reading": "やくしょ",
   "romaji": "yakusho",
-  "meaning_id": "government office; public office",
+  "meaning_id": "kantor pemerintah; jabatan publik",
   "meaning_en": "government office; public office",
   "jlpt": "n2",
   "pos": "noun",
@@ -48572,12 +49499,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "君は役所に自分で出頭する事が必要なのだ。",
-      "id": "It is essential that you present yourself at the office.",
+      "id": "Penting bagi Anda untuk hadir di kantor.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":3,"category":"odaka","mora_count":3,"downstep_mora":3,"contour":"ヤクショ＼"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -48593,7 +49521,7 @@ window.vocabN2_Nouns = [
   "word": "役人",
   "reading": "やくにん",
   "romaji": "yakunin",
-  "meaning_id": "government official",
+  "meaning_id": "pejabat pemerintah",
   "meaning_en": "government official",
   "jlpt": "n2",
   "pos": "noun",
@@ -48614,15 +49542,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "あの役人たちは全然、財政のことはわかっていない。",
-      "id": "Those officials don't understand finance at all.",
+      "id": "Para pejabat itu sama sekali tidak memahami keuangan.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ヤクニン￣"}
+},
     {
       "jp": "彼はこの町の住人によって役人に選ばれた。",
-      "id": "He was elected an official by the inhabitants of this town.",
+      "id": "Dia dipilih sebagai pejabat oleh penduduk kota ini.",
       "level": "n2",
       "tags": [
         "umum"
@@ -48643,7 +49572,7 @@ window.vocabN2_Nouns = [
   "word": "薬品",
   "reading": "やくひん",
   "romaji": "yakuhin",
-  "meaning_id": "medicine(s); chemical(s)",
+  "meaning_id": "obat-obatan; bahan kimia",
   "meaning_en": "medicine(s); chemical(s)",
   "jlpt": "n2",
   "pos": "noun",
@@ -48664,15 +49593,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "この薬品は日光に当てないようにしなさい。",
-      "id": "Don't expose this chemical to direct sunlight.",
+      "id": "Jangan memaparkan bahan kimia ini ke sinar matahari langsung.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ヤクヒン￣"}
+},
     {
       "jp": "この薬品は場合によって毒にも薬にもなる。",
-      "id": "This medicine will do you good or harm, as the case may be.",
+      "id": "Obat ini akan bermanfaat atau merugikan Anda, tergantung kasusnya.",
       "level": "n2",
       "tags": [
         "umum"
@@ -48693,7 +49623,7 @@ window.vocabN2_Nouns = [
   "word": "役目",
   "reading": "やくめ",
   "romaji": "yakume",
-  "meaning_id": "duty; business",
+  "meaning_id": "tugas; bisnis",
   "meaning_en": "duty; business",
   "jlpt": "n2",
   "pos": "noun",
@@ -48714,15 +49644,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "古い木箱がテーブルの役目をした。",
-      "id": "An old wooden box served as table.",
+      "id": "Sebuah kotak kayu tua berfungsi sebagai meja.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"odaka","mora_count":3,"downstep_mora":3,"contour":"ヤクメ＼"}
+},
     {
       "jp": "彼はその役目を引き受けましたか。",
-      "id": "Did he undertake the mission?",
+      "id": "Apakah dia menjalankan misinya?",
       "level": "n2",
       "tags": [
         "umum"
@@ -48743,7 +49674,7 @@ window.vocabN2_Nouns = [
   "word": "矢印",
   "reading": "やじるし",
   "romaji": "yajirushi",
-  "meaning_id": "directing arrow",
+  "meaning_id": "mengarahkan panah",
   "meaning_en": "directing arrow",
   "jlpt": "n2",
   "pos": "noun",
@@ -48764,15 +49695,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "矢印が進むべき方向を指示する。",
-      "id": "The arrow indicates the way to go.",
+      "id": "Panah menunjukkan jalan yang harus ditempuh.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":4,"downstep_mora":2,"contour":"ヤジ＼ルシ"}
+},
     {
       "jp": "矢印は東京へ行く道を示す。",
-      "id": "The arrow indicates the way to Tokyo.",
+      "id": "Panah menunjukkan jalan menuju Tokyo.",
       "level": "n2",
       "tags": [
         "umum"
@@ -48793,7 +49725,7 @@ window.vocabN2_Nouns = [
   "word": "薬局",
   "reading": "やっきょく",
   "romaji": "yakkyoku",
-  "meaning_id": "pharmacy; drugstore",
+  "meaning_id": "farmasi; toko obat",
   "meaning_en": "pharmacy; drugstore",
   "jlpt": "n2",
   "pos": "noun",
@@ -48814,15 +49746,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "一番近い薬局はどこにありますか。",
-      "id": "Where's the nearest drugstore?",
+      "id": "Dimana apotek terdekat?",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ヤッキョク￣"}
+},
     {
       "jp": "薬局は何時まで開いていますか。",
-      "id": "Until what time does your pharmacy stay open?",
+      "id": "Sampai jam berapa apotek Anda tetap buka?",
       "level": "n2",
       "tags": [
         "umum"
@@ -48843,7 +49776,7 @@ window.vocabN2_Nouns = [
   "word": "家主",
   "reading": "やぬし",
   "romaji": "yanushi",
-  "meaning_id": "landlord",
+  "meaning_id": "tuan tanah",
   "meaning_en": "landlord",
   "jlpt": "n2",
   "pos": "noun",
@@ -48864,15 +49797,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "家主は彼がドアを赤く塗ることを許してくれない。",
-      "id": "The landlord won't permit him to paint the door red.",
+      "id": "Pemilik rumah tidak mengizinkannya mengecat pintu dengan warna merah.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"ヤ＼ヌシ"}
+},
     {
       "jp": "犯人は家主から１０万ドルを強奪して逃走した。",
-      "id": "The criminal robbed the landlord of a hundred thousand dollars and ran away.",
+      "id": "Penjahat itu merampok seratus ribu dolar pemilik rumah dan melarikan diri.",
       "level": "n2",
       "tags": [
         "umum"
@@ -48893,7 +49827,7 @@ window.vocabN2_Nouns = [
   "word": "遊園地",
   "reading": "ゆうえんち",
   "romaji": "yuuenchi",
-  "meaning_id": "amusement park",
+  "meaning_id": "taman hiburan",
   "meaning_en": "amusement park",
   "jlpt": "n2",
   "pos": "noun",
@@ -48914,15 +49848,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "その遊園地を建設するのに１０年かかった。",
-      "id": "It took ten years to build the amusement park.",
+      "id": "Butuh sepuluh tahun untuk membangun taman hiburan.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":5,"downstep_mora":3,"contour":"ユウエ＼ンチ"}
+},
     {
       "jp": "今日はどこへ行こうか？遊園地？それとも映画でも見る？",
-      "id": "Where do you want to go today? An amusement park, or maybe a movie?",
+      "id": "Ke mana Anda ingin pergi hari ini? Taman hiburan, atau mungkin bioskop?",
       "level": "n2",
       "tags": [
         "umum"
@@ -48943,7 +49878,7 @@ window.vocabN2_Nouns = [
   "word": "夕刊",
   "reading": "ゆうかん",
   "romaji": "yuukan",
-  "meaning_id": "evening paper",
+  "meaning_id": "koran malam",
   "meaning_en": "evening paper",
   "jlpt": "n2",
   "pos": "noun",
@@ -48964,15 +49899,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "父は夕刊を読んで座っていた。",
-      "id": "My father sat reading the evening paper.",
+      "id": "Ayahku duduk membaca koran sore.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ユウカン￣"}
+},
     {
       "jp": "彼は夕刊にさっと目を通した。",
-      "id": "He looked through the evening paper.",
+      "id": "Dia melihat-lihat koran sore.",
       "level": "n2",
       "tags": [
         "umum"
@@ -48993,7 +49929,7 @@ window.vocabN2_Nouns = [
   "word": "友好",
   "reading": "ゆうこう",
   "romaji": "yuukou",
-  "meaning_id": "friendship",
+  "meaning_id": "persahabatan",
   "meaning_en": "friendship",
   "jlpt": "n2",
   "pos": "noun",
@@ -49018,8 +49954,9 @@ window.vocabN2_Nouns = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ユウコウ￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -49035,7 +49972,7 @@ window.vocabN2_Nouns = [
   "word": "夕立",
   "reading": "ゆうだち",
   "romaji": "yuudachi",
-  "meaning_id": "(sudden) evening shower (rain)",
+  "meaning_id": "(tiba-tiba) mandi sore (hujan)",
   "meaning_en": "(sudden) evening shower (rain)",
   "jlpt": "n2",
   "pos": "noun",
@@ -49056,15 +49993,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "私たちは夕立にあって、びしょ濡れになった。",
-      "id": "We were drenched in the shower.",
+      "id": "Kami basah kuyup saat mandi.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ユウダチ￣"}
+},
     {
       "jp": "５分も歩いた後、夕立に出会った。",
-      "id": "We had already walked five minutes when we were caught in a shower.",
+      "id": "Kami sudah berjalan lima menit ketika kami sedang mandi.",
       "level": "n2",
       "tags": [
         "umum"
@@ -49085,7 +50023,7 @@ window.vocabN2_Nouns = [
   "word": "夕日",
   "reading": "ゆうひ",
   "romaji": "yuuhi",
-  "meaning_id": "(in) the evening sun; setting sun",
+  "meaning_id": "(di) matahari sore; matahari terbenam",
   "meaning_en": "(in) the evening sun; setting sun",
   "jlpt": "n2",
   "pos": "noun",
@@ -49106,15 +50044,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "そのとき彼らは夕日を見ていました。",
-      "id": "They were watching the sunset then.",
+      "id": "Saat itu mereka sedang menyaksikan matahari terbenam.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ユウヒ￣"}
+},
     {
       "jp": "空は夕日で燃えているようだった。",
-      "id": "The sky was fiery with the setting sun.",
+      "id": "Langit membara seiring terbenamnya matahari.",
       "level": "n2",
       "tags": [
         "umum"
@@ -49135,7 +50074,7 @@ window.vocabN2_Nouns = [
   "word": "有料",
   "reading": "ゆうりょう",
   "romaji": "yuuryou",
-  "meaning_id": "admission-paid; toll",
+  "meaning_id": "tiket masuk berbayar; tol",
   "meaning_en": "admission-paid; toll",
   "jlpt": "n2",
   "pos": "noun",
@@ -49156,15 +50095,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "この道路は有料です。",
-      "id": "We must pay a toll to drive on this road.",
+      "id": "Kita harus membayar tol untuk berkendara di jalan ini.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ユウリョウ￣"}
+},
     {
       "jp": "配達は有料ですか。",
-      "id": "Do you charge for delivery?",
+      "id": "Apakah Anda mengenakan biaya untuk pengiriman?",
       "level": "n2",
       "tags": [
         "umum"
@@ -49206,12 +50146,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "ジャーン。それじゃ春田くん、もう見てもいいわよ。みんなの浴衣、お披露目ねぇ～。",
-      "id": "Ta-dah! Well then, Haruta, it's OK to look now! It's everybody's yukata debut.",
+      "id": "Ta-dah! Kalau begitu, Haruta, tidak apa-apa untuk melihatnya sekarang! Ini debut yukata semua orang.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ユカタ￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -49227,7 +50168,7 @@ window.vocabN2_Nouns = [
   "word": "湯気",
   "reading": "ゆげ",
   "romaji": "yuge",
-  "meaning_id": "steam; vapour",
+  "meaning_id": "uap; menguap",
   "meaning_en": "steam; vapour",
   "jlpt": "n2",
   "pos": "noun",
@@ -49248,12 +50189,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "薬缶から湯気が立っている。",
-      "id": "The kettle is steaming.",
+      "id": "Ketelnya mengepul.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":2,"downstep_mora":1,"contour":"ユ＼ゲ"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -49269,7 +50211,7 @@ window.vocabN2_Nouns = [
   "word": "湯飲み",
   "reading": "ゆのみ",
   "romaji": "yunomi",
-  "meaning_id": "teacup",
+  "meaning_id": "cangkir teh",
   "meaning_en": "teacup",
   "jlpt": "n2",
   "pos": "noun",
@@ -49290,12 +50232,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "壊れた湯飲みの補充をした。",
-      "id": "I replaced the broken cups with new ones.",
+      "id": "Saya mengganti cangkir yang pecah dengan yang baru.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":3,"category":"odaka","mora_count":3,"downstep_mora":3,"contour":"ユノミ＼"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -49311,7 +50254,7 @@ window.vocabN2_Nouns = [
   "word": "溶岩",
   "reading": "ようがん",
   "romaji": "yougan",
-  "meaning_id": "lava",
+  "meaning_id": "lahar",
   "meaning_en": "lava",
   "jlpt": "n2",
   "pos": "noun",
@@ -49332,15 +50275,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "その火山は溶岩を流し出した。",
-      "id": "The volcano poured molten rock.",
+      "id": "Gunung berapi mengeluarkan batuan cair.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":4,"downstep_mora":1,"contour":"ヨ＼ウガン"}
+},
     {
       "jp": "火山は炎と溶岩を吹き出す。",
-      "id": "The volcano shoots out flames and lava.",
+      "id": "Gunung berapi itu mengeluarkan api dan lahar.",
       "level": "n2",
       "tags": [
         "umum"
@@ -49361,7 +50305,7 @@ window.vocabN2_Nouns = [
   "word": "容器",
   "reading": "ようき",
   "romaji": "youki",
-  "meaning_id": "container; vessel",
+  "meaning_id": "wadah; kapal",
   "meaning_en": "container; vessel",
   "jlpt": "n2",
   "pos": "noun",
@@ -49382,15 +50326,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "これらの容器は気密になっている。",
-      "id": "These containers are airtight.",
+      "id": "Wadah ini kedap udara.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"ヨ＼ウキ"}
+},
     {
       "jp": "彼は容器から中に入っている物をすっかり出した。",
-      "id": "He emptied the container of its contents.",
+      "id": "Dia mengosongkan wadah isinya.",
       "level": "n2",
       "tags": [
         "umum"
@@ -49411,7 +50356,7 @@ window.vocabN2_Nouns = [
   "word": "用語",
   "reading": "ようご",
   "romaji": "yougo",
-  "meaning_id": "term; terminology",
+  "meaning_id": "jangka waktu; terminologi",
   "meaning_en": "term; terminology",
   "jlpt": "n2",
   "pos": "noun",
@@ -49432,15 +50377,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "その手紙は商業用語で書かれた。",
-      "id": "The letter was written using business terms.",
+      "id": "Surat itu ditulis menggunakan istilah bisnis.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ヨウゴ￣"}
+},
     {
       "jp": "日本料理の用語はほかの言語に訳すのが難しい。",
-      "id": "Japanese food terms are difficult to render into other languages.",
+      "id": "Istilah makanan Jepang sulit diterjemahkan ke dalam bahasa lain.",
       "level": "n2",
       "tags": [
         "umum"
@@ -49482,12 +50428,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "以下は大統領の演説の要旨だ。",
-      "id": "The following is a summary of the President's speech.",
+      "id": "Berikut ringkasan pidato Presiden.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"ヨ＼ウシ"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -49524,15 +50471,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "彼は幼児虐待で罰せられた。",
-      "id": "He was punished for child abuse.",
+      "id": "Dia dihukum karena pelecehan anak.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"ヨ＼ウジ"}
+},
     {
       "jp": "幼児は病気にかかりやすい。",
-      "id": "Infants are subject to diseases.",
+      "id": "Bayi rentan terhadap penyakit.",
       "level": "n2",
       "tags": [
         "umum"
@@ -49553,7 +50501,7 @@ window.vocabN2_Nouns = [
   "word": "容積",
   "reading": "ようせき",
   "romaji": "youseki",
-  "meaning_id": "capacity; volume",
+  "meaning_id": "kapasitas; volume",
   "meaning_en": "capacity; volume",
   "jlpt": "n2",
   "pos": "noun",
@@ -49574,15 +50522,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "容積を計算するためには縦と横と深さをかければよい。",
-      "id": "To calculate the capacity, multiply the length by the width by the depth.",
+      "id": "Untuk menghitung kapasitas, kalikan panjang dengan lebar dan kedalaman.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":4,"downstep_mora":1,"contour":"ヨ＼ウセキ"}
+},
     {
       "jp": "近い将来、ゴミ処理費用が容積基準で有料化される可能性が高い。",
-      "id": "We will soon most likely be charged for garbage disposal by how much of it there is.",
+      "id": "Kemungkinan besar kita akan segera dikenakan biaya untuk pembuangan sampah berdasarkan banyaknya sampah yang ada.",
       "level": "n2",
       "tags": [
         "umum"
@@ -49603,7 +50552,7 @@ window.vocabN2_Nouns = [
   "word": "幼稚園",
   "reading": "ようちえん",
   "romaji": "youchien",
-  "meaning_id": "kindergarten",
+  "meaning_id": "taman kanak-kanak",
   "meaning_en": "kindergarten",
   "jlpt": "n2",
   "pos": "noun",
@@ -49624,15 +50573,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "それにしても、幼稚園というところは、季節の行事にとても敏感です。",
-      "id": "Even so, kindergartens are sensitive to seasonal events.",
+      "id": "Meski begitu, taman kanak-kanak peka terhadap kejadian musiman.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":5,"downstep_mora":3,"contour":"ヨウチ＼エン"}
+},
     {
       "jp": "しげみちゃんを幼稚園に迎えに行けないの。",
-      "id": "I will not be able to pick up Shigemi at the kindergarten.",
+      "id": "Saya tidak akan bisa menjemput Shigemi di TK.",
       "level": "n2",
       "tags": [
         "umum"
@@ -49653,7 +50603,7 @@ window.vocabN2_Nouns = [
   "word": "用途",
   "reading": "ようと",
   "romaji": "youto",
-  "meaning_id": "use; usefulness",
+  "meaning_id": "gunakan; kegunaan",
   "meaning_en": "use; usefulness",
   "jlpt": "n2",
   "pos": "noun",
@@ -49674,12 +50624,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "その発見はいろいろな用途に応用できる。",
-      "id": "We can apply the discovery to various uses.",
+      "id": "Kita dapat menerapkan penemuan ini untuk berbagai kegunaan.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"ヨ＼ウト"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -49695,7 +50646,7 @@ window.vocabN2_Nouns = [
   "word": "洋品店",
   "reading": "ようひんてん",
   "romaji": "youhinten",
-  "meaning_id": "shop which handles Western-style apparel and accessories",
+  "meaning_id": "toko yang menjual pakaian dan aksesoris gaya Barat",
   "meaning_en": "shop which handles Western-style apparel and accessories",
   "jlpt": "n2",
   "pos": "noun",
@@ -49716,12 +50667,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "洋品店を使います。",
-      "id": "Menggunakan shop which handles Western-style apparel and accessories.",
+      "id": "Menggunakan toko yang menangani pakaian dan aksesoris ala Barat.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":6,"downstep_mora":3,"contour":"ヨウヒ＼ンテン"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -49737,7 +50689,7 @@ window.vocabN2_Nouns = [
   "word": "養分",
   "reading": "ようぶん",
   "romaji": "youbun",
-  "meaning_id": "nourishment; nutrient",
+  "meaning_id": "makanan; nutrisi",
   "meaning_en": "nourishment; nutrient",
   "jlpt": "n2",
   "pos": "noun",
@@ -49762,8 +50714,9 @@ window.vocabN2_Nouns = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":4,"downstep_mora":1,"contour":"ヨ＼ウブン"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -49779,7 +50732,7 @@ window.vocabN2_Nouns = [
   "word": "羊毛",
   "reading": "ようもう",
   "romaji": "youmou",
-  "meaning_id": "wool",
+  "meaning_id": "wol",
   "meaning_en": "wool",
   "jlpt": "n2",
   "pos": "noun",
@@ -49800,15 +50753,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "オーストラリアは多くの羊毛を輸出している。",
-      "id": "Australia exports a lot of wool.",
+      "id": "Australia mengekspor banyak wol.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ヨウモウ￣"}
+},
     {
       "jp": "父のしごとは羊毛の買い付けです。",
-      "id": "My father's work is to buy wool.",
+      "id": "Pekerjaan ayah saya adalah membeli wol.",
       "level": "n2",
       "tags": [
         "umum"
@@ -49850,15 +50804,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "この報告書は要領をえていない。",
-      "id": "This report isn't to the point.",
+      "id": "Laporan ini tidak tepat sasaran.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"ヨウリョ＼ウ"}
+},
     {
       "jp": "妹は要領が悪くて損ばかりしている。",
-      "id": "My sister is clumsy, which is a disadvantage to her.",
+      "id": "Adikku kikuk, dan itu merugikannya.",
       "level": "n2",
       "tags": [
         "umum"
@@ -49904,11 +50859,12 @@ window.vocabN2_Nouns = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"odaka","mora_count":2,"downstep_mora":2,"contour":"ヨソ＼"}
+},
     {
       "jp": "私の兄は、未婚なので、所帯を持たず、奉公人と一緒によその家で食事をしていた。",
-      "id": "My brother, being yet unmarried, did not keep house, but boarded with his apprentices at the home of another family.",
+      "id": "Adikku, yang belum menikah, tidak mengurus rumah, melainkan tinggal bersama murid-muridnya di rumah keluarga lain.",
       "level": "n2",
       "tags": [
         "umum"
@@ -49929,7 +50885,7 @@ window.vocabN2_Nouns = [
   "word": "四つ角",
   "reading": "よつかど",
   "romaji": "yotsukado",
-  "meaning_id": "four corners; crossroads",
+  "meaning_id": "empat sudut; persimpangan jalan",
   "meaning_en": "four corners; crossroads",
   "jlpt": "n2",
   "pos": "noun",
@@ -49950,12 +50906,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "四つ角は二つの道が十字に交わった所である。",
-      "id": "A crossroads is where two roads meet in an X.",
+      "id": "Persimpangan jalan adalah tempat bertemunya dua jalan dalam bentuk X.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ヨツカド￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -49971,7 +50928,7 @@ window.vocabN2_Nouns = [
   "word": "酔っ払い",
   "reading": "よっぱらい",
   "romaji": "yopparai",
-  "meaning_id": "drunkard",
+  "meaning_id": "pemabuk",
   "meaning_en": "drunkard",
   "jlpt": "n2",
   "pos": "noun",
@@ -49992,15 +50949,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "酔っぱらいはよろよろと彼のところへやって来た。",
-      "id": "The drunk rolled up to him.",
+      "id": "Pemabuk itu berguling ke arahnya.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":5,"downstep_mora":0,"contour":"ヨッパライ￣"}
+},
     {
       "jp": "その酔っ払いはまっすぐ歩けなかった。",
-      "id": "The drunken man couldn't walk straight.",
+      "id": "Pria mabuk itu tidak bisa berjalan lurus.",
       "level": "n2",
       "tags": [
         "umum"
@@ -50042,15 +51000,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "ガソリンがなくなったので、予備タンクに頼った。",
-      "id": "I fell back on the reserve tank when the gas ran out.",
+      "id": "Saya terjatuh kembali ke tangki cadangan ketika bensinnya habis.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":2,"downstep_mora":1,"contour":"ヨ＼ビ"}
+},
     {
       "jp": "ところで、予備の電池はあるの？",
-      "id": "By the way, do you have any spare batteries?",
+      "id": "Ngomong-ngomong, apakah Anda punya baterai cadangan?",
       "level": "n2",
       "tags": [
         "umum"
@@ -50071,7 +51030,7 @@ window.vocabN2_Nouns = [
   "word": "ラッシュアワー",
   "reading": "ラッシュアワー",
   "romaji": "rasshuawaa",
-  "meaning_id": "rush hour",
+  "meaning_id": "jam sibuk",
   "meaning_en": "rush hour",
   "jlpt": "n2",
   "pos": "noun",
@@ -50092,15 +51051,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "ラッシュアワーの交通渋滞にあった。",
-      "id": "I was caught in the rush hour.",
+      "id": "Saya terjebak di jam sibuk.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":4,"category":"nakadaka","mora_count":0,"downstep_mora":0,"contour":"￣"}
+},
     {
       "jp": "ラッシュアワーにでくわすのは最低だ。",
-      "id": "It's horrible to get caught in rush hour traffic.",
+      "id": "Sungguh mengerikan terjebak dalam lalu lintas pada jam sibuk.",
       "level": "n2",
       "tags": [
         "umum"
@@ -50121,7 +51081,7 @@ window.vocabN2_Nouns = [
   "word": "欄",
   "reading": "らん",
   "romaji": "ran",
-  "meaning_id": "column of text (e.g. as in a newspaper)",
+  "meaning_id": "kolom teks (misalnya seperti di koran)",
   "meaning_en": "column of text (e.g. as in a newspaper)",
   "jlpt": "n2",
   "pos": "noun",
@@ -50142,15 +51102,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "注はページの下欄についている。",
-      "id": "The notes are at the bottom of the page.",
+      "id": "Catatannya ada di bagian bawah halaman.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":2,"downstep_mora":1,"contour":"ラ＼ン"}
+},
     {
       "jp": "一番最初に見るのはスポーツ欄だよ。",
-      "id": "I always read the sports page first.",
+      "id": "Saya selalu membaca halaman olahraga terlebih dahulu.",
       "level": "n2",
       "tags": [
         "umum"
@@ -50171,7 +51132,7 @@ window.vocabN2_Nouns = [
   "word": "ランチ",
   "reading": "ランチ",
   "romaji": "ranchi",
-  "meaning_id": "launch; lunch",
+  "meaning_id": "peluncuran; makan siang",
   "meaning_en": "launch; lunch",
   "jlpt": "n2",
   "pos": "noun",
@@ -50192,15 +51153,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "あなたはこの店のランチがえらくお気に入りですね。",
-      "id": "You are very fond of the lunch menu of this restaurant.",
+      "id": "Anda sangat menyukai menu makan siang restoran ini.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":0,"downstep_mora":1,"contour":"＼"}
+},
     {
       "jp": "本日のランチの内容はなんですか。",
-      "id": "What are you serving today?",
+      "id": "Apa yang Anda layani hari ini?",
       "level": "n2",
       "tags": [
         "umum"
@@ -50221,7 +51183,7 @@ window.vocabN2_Nouns = [
   "word": "ランニング",
   "reading": "ランニング",
   "romaji": "ranningu",
-  "meaning_id": "running; tank top",
+  "meaning_id": "berlari; tank top",
   "meaning_en": "running; tank top",
   "jlpt": "n2",
   "pos": "noun",
@@ -50246,8 +51208,9 @@ window.vocabN2_Nouns = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":0,"downstep_mora":0,"contour":"￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -50263,7 +51226,7 @@ window.vocabN2_Nouns = [
   "word": "理科",
   "reading": "りか",
   "romaji": "rika",
-  "meaning_id": "science",
+  "meaning_id": "sains",
   "meaning_en": "science",
   "jlpt": "n2",
   "pos": "noun",
@@ -50284,15 +51247,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "彼女は理科を勉強しなければなりません。",
-      "id": "She has to study science.",
+      "id": "Dia harus belajar sains.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":2,"downstep_mora":1,"contour":"リ＼カ"}
+},
     {
       "jp": "彼は理科を２科目とらなければならない。",
-      "id": "He has to take two science classes.",
+      "id": "Dia harus mengambil dua kelas sains.",
       "level": "n2",
       "tags": [
         "umum"
@@ -50313,7 +51277,7 @@ window.vocabN2_Nouns = [
   "word": "利害",
   "reading": "りがい",
   "romaji": "rigai",
-  "meaning_id": "advantages and disadvantages; interest",
+  "meaning_id": "kelebihan dan kekurangan; bunga",
   "meaning_en": "advantages and disadvantages; interest",
   "jlpt": "n2",
   "pos": "noun",
@@ -50338,11 +51302,12 @@ window.vocabN2_Nouns = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"リ＼ガイ"}
+},
     {
       "jp": "日米の利害がこの点で衝突した。",
-      "id": "Japanese and American interests clashed on this point.",
+      "id": "Kepentingan Jepang dan Amerika berbenturan dalam hal ini.",
       "level": "n2",
       "tags": [
         "umum"
@@ -50363,7 +51328,7 @@ window.vocabN2_Nouns = [
   "word": "リズム",
   "reading": "リズム",
   "romaji": "rizumu",
-  "meaning_id": "rhythm",
+  "meaning_id": "ritme",
   "meaning_en": "rhythm",
   "jlpt": "n2",
   "pos": "noun",
@@ -50384,15 +51349,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "妻はアメリカでの新しい生活のリズムに慣れるのにえらい苦労した。",
-      "id": "My wife had a hard time getting into the swing of our new life in America.",
+      "id": "Istri saya mengalami kesulitan untuk memasuki kehidupan baru kami di Amerika.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":0,"downstep_mora":1,"contour":"＼"}
+},
     {
       "jp": "サンバはブラジルのリズムですね。",
-      "id": "Samba is a Brazilian rhythm, isn't it?",
+      "id": "Samba adalah ritme Brasil, bukan?",
       "level": "n2",
       "tags": [
         "umum"
@@ -50413,7 +51379,7 @@ window.vocabN2_Nouns = [
   "word": "リットル",
   "reading": "リットル",
   "romaji": "rittoru",
-  "meaning_id": "litre",
+  "meaning_id": "liter",
   "meaning_en": "litre",
   "jlpt": "n2",
   "pos": "noun",
@@ -50434,15 +51400,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "ガソリンはリットル単位で売られる。",
-      "id": "Gasoline is sold by the liter.",
+      "id": "Bensin dijual per liter.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":0,"downstep_mora":0,"contour":"￣"}
+},
     {
       "jp": "この瓶には２リットルのお湯が入る。",
-      "id": "This jar can hold two liters of hot water.",
+      "id": "Toples ini mampu menampung dua liter air panas.",
       "level": "n2",
       "tags": [
         "umum"
@@ -50463,7 +51430,7 @@ window.vocabN2_Nouns = [
   "word": "リボン",
   "reading": "リボン",
   "romaji": "ribon",
-  "meaning_id": "ribbon",
+  "meaning_id": "pita",
   "meaning_en": "ribbon",
   "jlpt": "n2",
   "pos": "noun",
@@ -50484,15 +51451,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "リボンをかけてもらえますか。",
-      "id": "Could you tie it with a ribbon?",
+      "id": "Bisakah Anda mengikatnya dengan pita?",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":0,"downstep_mora":1,"contour":"＼"}
+},
     {
       "jp": "そのリボンはドレスに合わない。",
-      "id": "The ribbon doesn't match the dress.",
+      "id": "Pitanya tidak cocok dengan gaunnya.",
       "level": "n2",
       "tags": [
         "umum"
@@ -50513,7 +51481,7 @@ window.vocabN2_Nouns = [
   "word": "流域",
   "reading": "りゅういき",
   "romaji": "ryuuiki",
-  "meaning_id": "(river) basin",
+  "meaning_id": "cekungan (sungai).",
   "meaning_en": "(river) basin",
   "jlpt": "n2",
   "pos": "noun",
@@ -50534,15 +51502,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "ダムが切れて流域に大水が押し寄せた。",
-      "id": "The dam gave way and sent a great flush of water down the valley.",
+      "id": "Bendungan itu jebol dan mengalirkan air dalam jumlah besar ke lembah.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"リュウイキ￣"}
+},
     {
       "jp": "激しい雨がその流域に洪水をもたらした。",
-      "id": "The heavy rain brought floods in the valley.",
+      "id": "Hujan deras membawa banjir di lembah.",
       "level": "n2",
       "tags": [
         "umum"
@@ -50563,7 +51532,7 @@ window.vocabN2_Nouns = [
   "word": "寮",
   "reading": "りょう",
   "romaji": "ryou",
-  "meaning_id": "hostel; dormitory",
+  "meaning_id": "asrama",
   "meaning_en": "hostel; dormitory",
   "jlpt": "n2",
   "pos": "noun",
@@ -50584,15 +51553,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "私の大学には寮があります。",
-      "id": "My university has a dorm.",
+      "id": "Universitas saya memiliki asrama.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":2,"downstep_mora":1,"contour":"リョ＼ウ"}
+},
     {
       "jp": "寮の規則は守らなければならない。",
-      "id": "You must observe the rules of the dormitory.",
+      "id": "Anda harus mematuhi peraturan asrama.",
       "level": "n2",
       "tags": [
         "umum"
@@ -50613,7 +51583,7 @@ window.vocabN2_Nouns = [
   "word": "両側",
   "reading": "りょうがわ",
   "romaji": "ryougawa",
-  "meaning_id": "both sides",
+  "meaning_id": "kedua sisi",
   "meaning_en": "both sides",
   "jlpt": "n2",
   "pos": "noun",
@@ -50634,15 +51604,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "舞台の両側からライトが照らされた。",
-      "id": "The stage was lit from both sides.",
+      "id": "Panggung diterangi dari kedua sisi.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"リョウガワ￣"}
+},
     {
       "jp": "その通りの両側に店が並んでいる。",
-      "id": "Ada stores on each side of the street.",
+      "id": "Ada toko di setiap sisi jalan.",
       "level": "n2",
       "tags": [
         "umum"
@@ -50663,7 +51634,7 @@ window.vocabN2_Nouns = [
   "word": "漁師",
   "reading": "りょうし",
   "romaji": "ryoushi",
-  "meaning_id": "fisherman",
+  "meaning_id": "nelayan",
   "meaning_en": "fisherman",
   "jlpt": "n2",
   "pos": "noun",
@@ -50684,15 +51655,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "漁師は釣り上げた魚の大きさをおおげさにいった。",
-      "id": "The fisherman exaggerated the size of the fish he had caught.",
+      "id": "Nelayan itu melebih-lebihkan ukuran ikan yang ditangkapnya.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"リョ＼ウシ"}
+},
     {
       "jp": "彼らは漁師に変装し船に乗って逃げた。",
-      "id": "They disguised themselves as fishermen and escaped in a boat.",
+      "id": "Mereka menyamar sebagai nelayan dan melarikan diri dengan perahu.",
       "level": "n2",
       "tags": [
         "umum"
@@ -50713,7 +51685,7 @@ window.vocabN2_Nouns = [
   "word": "領事",
   "reading": "りょうじ",
   "romaji": "ryouji",
-  "meaning_id": "consul",
+  "meaning_id": "konsul",
   "meaning_en": "consul",
   "jlpt": "n2",
   "pos": "noun",
@@ -50738,8 +51710,9 @@ window.vocabN2_Nouns = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"リョ＼ウジ"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -50776,15 +51749,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "私はその会社で臨時の仕事を得た。",
-      "id": "I got a temporary job at the firm.",
+      "id": "Saya mendapat pekerjaan sementara di perusahaan.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"リンジ￣"}
+},
     {
       "jp": "彼等は貿易問題について臨時の会合を開いた。",
-      "id": "They held a special session on trade problems.",
+      "id": "Mereka mengadakan sesi khusus mengenai masalah perdagangan.",
       "level": "n2",
       "tags": [
         "umum"
@@ -50805,7 +51779,7 @@ window.vocabN2_Nouns = [
   "word": "例外",
   "reading": "れいがい",
   "romaji": "reigai",
-  "meaning_id": "exception",
+  "meaning_id": "pengecualian",
   "meaning_en": "exception",
   "jlpt": "n2",
   "pos": "noun",
@@ -50826,15 +51800,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "この規則には例外は認められない。",
-      "id": "This rule allows no exception.",
+      "id": "Aturan ini tidak memperbolehkan pengecualian.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"レイガイ￣"}
+},
     {
       "jp": "例外は作るべきではないと思います。",
-      "id": "I insist that exceptions not be made.",
+      "id": "Saya bersikeras bahwa pengecualian tidak dibuat.",
       "level": "n2",
       "tags": [
         "umum"
@@ -50855,7 +51830,7 @@ window.vocabN2_Nouns = [
   "word": "零点",
   "reading": "れいてん",
   "romaji": "reiten",
-  "meaning_id": "zero; no marks",
+  "meaning_id": "nol; tidak ada tanda",
   "meaning_en": "zero; no marks",
   "jlpt": "n2",
   "pos": "noun",
@@ -50876,15 +51851,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "そのテストではだれも零点をとらなかった。",
-      "id": "Nobody got zero in that test.",
+      "id": "Tidak ada yang mendapat nilai nol dalam tes itu.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"レイテ＼ン"}
+},
     {
       "jp": "これは「零点」を意味する。",
-      "id": "This means nil.",
+      "id": "Artinya nihil.",
       "level": "n2",
       "tags": [
         "umum"
@@ -50905,7 +51881,7 @@ window.vocabN2_Nouns = [
   "word": "レインコート",
   "reading": "レインコート",
   "romaji": "reinkooto",
-  "meaning_id": "raincoat",
+  "meaning_id": "jas hujan",
   "meaning_en": "raincoat",
   "jlpt": "n2",
   "pos": "noun",
@@ -50930,8 +51906,9 @@ window.vocabN2_Nouns = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":4,"category":"nakadaka","mora_count":0,"downstep_mora":0,"contour":"￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -50947,7 +51924,7 @@ window.vocabN2_Nouns = [
   "word": "レクリェーション",
   "reading": "レクリェーション",
   "romaji": "rekurieeshon",
-  "meaning_id": "recreation",
+  "meaning_id": "rekreasi",
   "meaning_en": "recreation",
   "jlpt": "n2",
   "pos": "noun",
@@ -50989,7 +51966,7 @@ window.vocabN2_Nouns = [
   "word": "レジャー",
   "reading": "レジャー",
   "romaji": "rejaa",
-  "meaning_id": "leisure",
+  "meaning_id": "waktu luang",
   "meaning_en": "leisure",
   "jlpt": "n2",
   "pos": "noun",
@@ -51010,12 +51987,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "彼女はここにレジャーで来たのですか。",
-      "id": "Did she come here to relax?",
+      "id": "Apakah dia datang ke sini untuk bersantai?",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":0,"downstep_mora":1,"contour":"＼"}
+},
     {
       "jp": "私には彼のレジャー観が面白い。",
       "id": "I find his ideas about leisure interesting.",
@@ -51039,7 +52017,7 @@ window.vocabN2_Nouns = [
   "word": "列島",
   "reading": "れっとう",
   "romaji": "rettou",
-  "meaning_id": "chain of islands",
+  "meaning_id": "rangkaian pulau",
   "meaning_en": "chain of islands",
   "jlpt": "n2",
   "pos": "noun",
@@ -51060,12 +52038,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "日本は列島であり、山が多く、森は殆どない。",
-      "id": "Japan is a group of islands with many mountains and almost no forests.",
+      "id": "Jepang merupakan gugusan pulau dengan banyak gunung dan hampir tidak ada hutan.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"レットウ￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -51081,7 +52060,7 @@ window.vocabN2_Nouns = [
   "word": "レベル",
   "reading": "レベル",
   "romaji": "reberu",
-  "meaning_id": "level",
+  "meaning_id": "tingkat",
   "meaning_en": "level",
   "jlpt": "n2",
   "pos": "noun",
@@ -51106,8 +52085,9 @@ window.vocabN2_Nouns = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":0,"downstep_mora":1,"contour":"＼"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -51123,7 +52103,7 @@ window.vocabN2_Nouns = [
   "word": "煉瓦",
   "reading": "れんが",
   "romaji": "renga",
-  "meaning_id": "brick",
+  "meaning_id": "batu bata",
   "meaning_en": "brick",
   "jlpt": "n2",
   "pos": "noun",
@@ -51144,15 +52124,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "あの家はレンガ造りだ。",
-      "id": "That house is built of bricks.",
+      "id": "Rumah itu dibangun dari batu bata.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"レ＼ンガ"}
+},
     {
       "jp": "この煙突はレンガで出来ている。",
-      "id": "This chimney is made of brick.",
+      "id": "Cerobong asap ini terbuat dari batu bata.",
       "level": "n2",
       "tags": [
         "umum"
@@ -51173,7 +52154,7 @@ window.vocabN2_Nouns = [
   "word": "レンズ",
   "reading": "レンズ",
   "romaji": "renzu",
-  "meaning_id": "lens",
+  "meaning_id": "lensa",
   "meaning_en": "lens",
   "jlpt": "n2",
   "pos": "noun",
@@ -51194,15 +52175,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "レンズを通ると像は逆になった。",
-      "id": "Through the lens the image was inverted.",
+      "id": "Melalui lensa bayangan dibalik.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":0,"downstep_mora":1,"contour":"＼"}
+},
     {
       "jp": "レンズだけ交換できますか。",
-      "id": "Can I buy only the lenses?",
+      "id": "Bisakah saya membeli lensanya saja?",
       "level": "n2",
       "tags": [
         "umum"
@@ -51223,7 +52205,7 @@ window.vocabN2_Nouns = [
   "word": "蝋燭",
   "reading": "ろうそく",
   "romaji": "rousoku",
-  "meaning_id": "candle",
+  "meaning_id": "lilin",
   "meaning_en": "candle",
   "jlpt": "n2",
   "pos": "noun",
@@ -51244,15 +52226,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "ろうそくはひとりでに消えた。",
-      "id": "The candle went out of itself.",
+      "id": "Lilin itu padam dengan sendirinya.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"ロウソ＼ク"}
+},
     {
       "jp": "ローソクを消していただけますか。",
-      "id": "Would you put out the candles?",
+      "id": "Maukah Anda mematikan lilinnya?",
       "level": "n2",
       "tags": [
         "umum"
@@ -51273,7 +52256,7 @@ window.vocabN2_Nouns = [
   "word": "ローマじ",
   "reading": "ローマじ",
   "romaji": "roomaji",
-  "meaning_id": "romanization; Roman letters",
+  "meaning_id": "romanisasi; huruf Romawi",
   "meaning_en": "romanization; Roman letters",
   "jlpt": "n2",
   "pos": "noun",
@@ -51294,12 +52277,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "日本語を入力する時って、ひらがな入力してる？それともローマ字入力？",
-      "id": "When you type in Japanese, are you using hiragana input, or romaji input?",
+      "id": "Saat Anda mengetik dalam bahasa Jepang, apakah Anda menggunakan masukan hiragana atau masukan romaji?",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"ローマ＼ジ"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -51315,7 +52299,7 @@ window.vocabN2_Nouns = [
   "word": "ロッカー",
   "reading": "ロッカー",
   "romaji": "rokkaa",
-  "meaning_id": "locker",
+  "meaning_id": "loker",
   "meaning_en": "locker",
   "jlpt": "n2",
   "pos": "noun",
@@ -51340,8 +52324,9 @@ window.vocabN2_Nouns = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":0,"downstep_mora":1,"contour":"＼"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -51357,7 +52342,7 @@ window.vocabN2_Nouns = [
   "word": "ロビー",
   "reading": "ロビー",
   "romaji": "robii",
-  "meaning_id": "lobby",
+  "meaning_id": "lobi",
   "meaning_en": "lobby",
   "jlpt": "n2",
   "pos": "noun",
@@ -51378,15 +52363,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "７時までにロビーに来てください。",
-      "id": "Tolong come to the lobby by 7 o'clock.",
+      "id": "Tolong datang ke lobi jam 7.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":0,"downstep_mora":1,"contour":"＼"}
+},
     {
       "jp": "友人にロビーで待ってもらってます。",
-      "id": "I have a friend waiting for me in the lobby.",
+      "id": "Saya punya teman yang menunggu saya di lobi.",
       "level": "n2",
       "tags": [
         "umum"
@@ -51407,7 +52393,7 @@ window.vocabN2_Nouns = [
   "word": "論ずる",
   "reading": "ろんずる",
   "romaji": "ronzuru",
-  "meaning_id": "me-argue",
+  "meaning_id": "berdebat",
   "meaning_en": "to argue; to discuss; to debate",
   "jlpt": "n2",
   "pos": "noun",
@@ -51428,12 +52414,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "論ずるを使います。",
-      "id": "Menggunakan me-argue.",
+      "id": "Menggunakan berdebat.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"ロンズ＼ル"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -51449,7 +52436,7 @@ window.vocabN2_Nouns = [
   "word": "和英",
   "reading": "わえい",
   "romaji": "waei",
-  "meaning_id": "Japanese-English",
+  "meaning_id": "Jepang-Inggris",
   "meaning_en": "Japanese-English",
   "jlpt": "n2",
   "pos": "noun",
@@ -51474,8 +52461,9 @@ window.vocabN2_Nouns = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ワエイ￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -51491,7 +52479,7 @@ window.vocabN2_Nouns = [
   "word": "和服",
   "reading": "わふく",
   "romaji": "wafuku",
-  "meaning_id": "Japanese clothes",
+  "meaning_id": "pakaian Jepang",
   "meaning_en": "Japanese clothes",
   "jlpt": "n2",
   "pos": "noun",
@@ -51512,15 +52500,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "確かに彼女は和服を着ると美しく見える。",
-      "id": "She certainly looks beautiful in a Japanese kimono.",
+      "id": "Dia tentu terlihat cantik dalam balutan kimono Jepang.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ワフク￣"}
+},
     {
       "jp": "彼女は和服の方が良く似合う。",
-      "id": "She looks better in Japanese clothes.",
+      "id": "Dia terlihat lebih baik dalam pakaian Jepang.",
       "level": "n2",
       "tags": [
         "umum"
@@ -51562,15 +52551,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "現金払いには１０パーセント割引いたします。",
-      "id": "We give a 10% discount for cash.",
+      "id": "Kami memberikan diskon 10% untuk uang tunai.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ワリビキ￣"}
+},
     {
       "jp": "私はその車を１０％の割引で買った。",
-      "id": "I bought the car at a 10% discount.",
+      "id": "Saya membeli mobil dengan diskon 10%.",
       "level": "n2",
       "tags": [
         "umum"
@@ -51591,7 +52581,7 @@ window.vocabN2_Nouns = [
   "word": "椀",
   "reading": "わん",
   "romaji": "wan",
-  "meaning_id": "Japanese soup bowl; wooden bowl",
+  "meaning_id": "Mangkuk sup Jepang; mangkuk kayu",
   "meaning_en": "Japanese soup bowl; wooden bowl",
   "jlpt": "n2",
   "pos": "noun",
@@ -51612,12 +52602,13 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "そのお椀のスープはとてもおいしかった。",
-      "id": "The soup in the bowl was very delicious.",
+      "id": "Sup dalam mangkuk itu sangat lezat.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":2,"downstep_mora":0,"contour":"ワン￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -51658,8 +52649,9 @@ window.vocabN2_Nouns = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":2,"downstep_mora":0,"contour":"ワン￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -51675,7 +52667,7 @@ window.vocabN2_Nouns = [
   "word": "ワンピース",
   "reading": "ワンピース",
   "romaji": "wanpiisu",
-  "meaning_id": "one-piece dress",
+  "meaning_id": "gaun satu potong",
   "meaning_en": "one-piece dress",
   "jlpt": "n2",
   "pos": "noun",
@@ -51696,15 +52688,16 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "このワンピースはいくらですか。",
-      "id": "How much is this dress?",
+      "id": "Berapa harga gaun ini?",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":0,"downstep_mora":0,"contour":"￣"}
+},
     {
       "jp": "このワンピースは、君の雰囲気にぴったりだね。",
-      "id": "This dress is YOU.",
+      "id": "Gaun ini adalah ANDA.",
       "level": "n2",
       "tags": [
         "umum"

@@ -24,7 +24,10 @@ window.curriculumJFT_A1 = {
         "gn5-00001"
       ],
       "vocab_ids": [
-        "vg-n5-00990"
+        "vg-n5-00414",
+        "vg-n5-00417",
+        "vg-n5-00418",
+        "vg-n5-00419"
       ],
       "lessons": [
         {
@@ -38,8 +41,10 @@ window.curriculumJFT_A1 = {
             "gn5-00001"
           ],
           "vocab_ids": [
-            "vg-n5-00990",
-            "vg-n5-00732"
+            "vg-n5-00414",
+            "vg-n5-00417",
+            "vg-n5-00418",
+            "vg-n5-00419"
           ],
           "pedagogical_framework": {
             "what": {
@@ -103,10 +108,13 @@ window.curriculumJFT_A1 = {
       "icon": "💬",
       "can_do_summary": "Mampu memperkenalkan diri, menyebutkan pekerjaan, dan menanyakan harga barang di minimarket.",
       "grammar_ids": [
-        "gn5-00001"
+        "gn5-00002"
       ],
       "vocab_ids": [
-        "vg-n5-00990"
+        "vg-n5-00424",
+        "vg-n5-00488",
+        "vg-n5-00435",
+        "vg-n5-00441"
       ],
       "lessons": [
         {
@@ -117,11 +125,13 @@ window.curriculumJFT_A1 = {
           "desc_id": "Dialog percakapan dua arah interaktif yang menguji respon cepat dalam situasi sosial nyata.",
           "can_do_statement": "Mampu memperkenalkan diri, menyebutkan pekerjaan, dan menanyakan harga barang di minimarket.",
           "grammar_ids": [
-            "gn5-00001"
+            "gn5-00002"
           ],
           "vocab_ids": [
-            "vg-n5-00990",
-            "vg-n5-00732"
+            "vg-n5-00424",
+            "vg-n5-00488",
+            "vg-n5-00435",
+            "vg-n5-00441"
           ],
           "pedagogical_framework": {
             "what": {
@@ -185,10 +195,13 @@ window.curriculumJFT_A1 = {
       "icon": "🎧",
       "can_do_summary": "Mampu menyimak pengumuman stasiun, diskon jam tutup toko, dan instruksi sederhana.",
       "grammar_ids": [
-        "gn5-00001"
+        "gn5-00009"
       ],
       "vocab_ids": [
-        "vg-n5-00990"
+        "vg-n5-00491",
+        "vg-n5-00501",
+        "vg-n5-00009",
+        "vg-n5-00010"
       ],
       "lessons": [
         {
@@ -199,11 +212,13 @@ window.curriculumJFT_A1 = {
           "desc_id": "Latihan telinga mendengarkan intonasi alami orang Jepang dengan opsi transkrip bimodal.",
           "can_do_statement": "Mampu menyimak pengumuman stasiun, diskon jam tutup toko, dan instruksi sederhana.",
           "grammar_ids": [
-            "gn5-00001"
+            "gn5-00009"
           ],
           "vocab_ids": [
-            "vg-n5-00990",
-            "vg-n5-00732"
+            "vg-n5-00491",
+            "vg-n5-00501",
+            "vg-n5-00009",
+            "vg-n5-00010"
           ],
           "pedagogical_framework": {
             "what": {
@@ -264,12 +279,16 @@ window.curriculumJFT_A1 = {
       "title_id": "Seksi 4: Dokkai (Membaca Teks Pendek, Menu & Papan Pengumuman)",
       "title_jp": "読解（看板・メニュー・短い掲示）",
       "theme": "Short Reading",
+      "icon": "📖",
       "can_do_summary": "Mampu memahami rambu dilarang masuk, jadwal buka toko, dan resep petunjuk mie instan.",
       "grammar_ids": [
-        "gn5-00001"
+        "gn5-00005"
       ],
       "vocab_ids": [
-        "vg-n5-00990"
+        "vg-n5-00508",
+        "vg-n5-00509",
+        "vg-n5-00439",
+        "vg-n5-00440"
       ],
       "lessons": [
         {
@@ -280,11 +299,13 @@ window.curriculumJFT_A1 = {
           "desc_id": "Membaca visual teks autentik yang ditemui di jalanan dan fasilitas umum di Jepang.",
           "can_do_statement": "Mampu memahami rambu dilarang masuk, jadwal buka toko, dan resep petunjuk mie instan.",
           "grammar_ids": [
-            "gn5-00001"
+            "gn5-00005"
           ],
           "vocab_ids": [
-            "vg-n5-00990",
-            "vg-n5-00732"
+            "vg-n5-00508",
+            "vg-n5-00509",
+            "vg-n5-00439",
+            "vg-n5-00440"
           ],
           "pedagogical_framework": {
             "what": {

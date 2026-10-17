@@ -15,36 +15,18 @@ export function getStoredSupabaseConfig(): SupabaseConfig {
   let anonKey = '';
 
   if (typeof window !== 'undefined') {
-    // Check URL query parameters for developer setup (strictly validated)
+    // Ticket T-05: Neutralize URL query parameter injection vulnerability (?sb_url=... and ?sb_key=...)
+    // External links can no longer hijack the database connection to an attacker's Supabase project.
     try {
       const params = new URLSearchParams(window.location.search);
-      const qUrl = params.get('sb_url') || params.get('supabase_url');
-      const qKey = params.get('sb_key') || params.get('supabase_anon_key');
-      if (qUrl && qKey) {
-        const trimmedUrl = qUrl.trim().replace(/\/$/, '');
-        const trimmedKey = qKey.trim();
-
-        // Security validation (F-09): strictly allow only valid https supabase.co domains or localhost in dev
-        const parsedUrl = new URL(trimmedUrl);
-        const isDev = typeof import.meta !== 'undefined' && !import.meta.env?.PROD;
-        const isOfficialSupabase = /^https:\/\/[a-z0-9-]+\.supabase\.co$/.test(parsedUrl.origin);
-        const isLocalDev = isDev && (parsedUrl.hostname === 'localhost' || parsedUrl.hostname === '127.0.0.1');
-
-        if ((isOfficialSupabase || isLocalDev) && trimmedKey.length > 20) {
-          localStorage.setItem('nn_supabase_url', trimmedUrl);
-          localStorage.setItem('nn_supabase_anon_key', trimmedKey);
-          console.info('[supabase] Configured via validated URL params!');
-
-          // Clean query parameters from URL to avoid leaking in history / referrer
-          params.delete('sb_url');
-          params.delete('supabase_url');
-          params.delete('sb_key');
-          params.delete('supabase_anon_key');
-          const cleanUrl = window.location.pathname + (params.toString() ? `?${params.toString()}` : '') + window.location.hash;
-          window.history.replaceState({}, document.title, cleanUrl);
-        } else {
-          console.warn('[supabase] Rejected unsafe URL query parameter config override');
-        }
+      if (params.has('sb_url') || params.has('supabase_url') || params.has('sb_key') || params.has('supabase_anon_key')) {
+        params.delete('sb_url');
+        params.delete('supabase_url');
+        params.delete('sb_key');
+        params.delete('supabase_anon_key');
+        const cleanUrl = window.location.pathname + (params.toString() ? `?${params.toString()}` : '') + window.location.hash;
+        window.history.replaceState({}, document.title, cleanUrl);
+        console.warn('[supabase] Neutralized and stripped unsafe Supabase URL/key query parameter override attempt');
       }
     } catch {
       // Ignore URL parsing errors

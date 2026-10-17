@@ -659,7 +659,7 @@ for (const sector of SSW_ADDITIONAL_SECTORS) {
               title: 'Jebakan Asumsi Mandiri (Dokusen)',
               caseScenario: 'Ragu tentang tombol mesin tetapi mencoba menekan tanpa bertanya.',
               pitfallWarning: '❌ Bertindak sendiri tanpa melapor saat ada bunyi aneh pada mesin.',
-              rightSolution: '✅ Segera hentikan pekerjaan, lapor supervisor: "Sumimasen, ijin ga arimasu."',
+              rightSolution: '✅ Segera hentikan pekerjaan, lapor supervisor: "Sumimasen, ijou ga arimasu."',
               explanation: 'Prinsip nomor satu pekerja Jepang adalah Horenso (Houkoku, Renraku, Soudan).'
             }
           ]
@@ -823,7 +823,9 @@ const JFT_TRACKS = [
         theme: 'Alphabet & Basic Lexicon',
         icon: '🔤',
         can_do: 'Mampu membaca Hiragana, Katakana, dan kosakata salam perjumpaan sehari-hari.',
-        desc: 'Mengenal huruf Jepang dasar dan pelafalan formulaik yang sering muncul di soal Seksi 1 JFT-Basic.'
+        desc: 'Mengenal huruf Jepang dasar dan pelafalan formulaik yang sering muncul di soal Seksi 1 JFT-Basic.',
+        grammar_ids: ['gn5-00001'],
+        vocab_ids: ['vg-n5-00414', 'vg-n5-00417', 'vg-n5-00418', 'vg-n5-00419']
       },
       {
         unit_number: 2,
@@ -832,7 +834,9 @@ const JFT_TRACKS = [
         theme: 'Situational Dialogue',
         icon: '💬',
         can_do: 'Mampu memperkenalkan diri, menyebutkan pekerjaan, dan menanyakan harga barang di minimarket.',
-        desc: 'Dialog percakapan dua arah interaktif yang menguji respon cepat dalam situasi sosial nyata.'
+        desc: 'Dialog percakapan dua arah interaktif yang menguji respon cepat dalam situasi sosial nyata.',
+        grammar_ids: ['gn5-00002'],
+        vocab_ids: ['vg-n5-00424', 'vg-n5-00488', 'vg-n5-00435', 'vg-n5-00441']
       },
       {
         unit_number: 3,
@@ -841,15 +845,20 @@ const JFT_TRACKS = [
         theme: 'Listening Comprehension',
         icon: '🎧',
         can_do: 'Mampu menyimak pengumuman stasiun, diskon jam tutup toko, dan instruksi sederhana.',
-        desc: 'Latihan telinga mendengarkan intonasi alami orang Jepang dengan opsi transkrip bimodal.'
+        desc: 'Latihan telinga mendengarkan intonasi alami orang Jepang dengan opsi transkrip bimodal.',
+        grammar_ids: ['gn5-00009'],
+        vocab_ids: ['vg-n5-00491', 'vg-n5-00501', 'vg-n5-00009', 'vg-n5-00010']
       },
       {
         unit_number: 4,
         title_id: 'Seksi 4: Dokkai (Membaca Teks Pendek, Menu & Papan Pengumuman)',
         title_jp: '読解（看板・メニュー・短い掲示）',
         theme: 'Short Reading',
+        icon: '📖',
         can_do: 'Mampu memahami rambu dilarang masuk, jadwal buka toko, dan resep petunjuk mie instan.',
-        desc: 'Membaca visual teks autentik yang ditemui di jalanan dan fasilitas umum di Jepang.'
+        desc: 'Membaca visual teks autentik yang ditemui di jalanan dan fasilitas umum di Jepang.',
+        grammar_ids: ['gn5-00005'],
+        vocab_ids: ['vg-n5-00508', 'vg-n5-00509', 'vg-n5-00439', 'vg-n5-00440']
       }
     ]
   },
@@ -866,31 +875,42 @@ const JFT_TRACKS = [
         theme: 'Everyday Kanji & Work Vocab',
         icon: '漢字',
         can_do: 'Mampu membaca 100 kanji dasar kehidupan dan kosakata tempat kerja terapan.',
-        desc: 'Penguasaan kosakata kerja dan kanji rambu petunjuk keselamatan di lingkungan pabrik dan kota.'
+        desc: 'Penguasaan kosakata kerja dan kanji rambu petunjuk keselamatan di lingkungan pabrik dan kota.',
+        grammar_ids: ['gn4-00021'],
+        vocab_ids: ['vg-n4-00001', 'vg-n4-00010', 'vg-n4-00030', 'vg-n4-00086']
       },
       {
         unit_number: 2,
         title_id: 'Seksi 2: Kaiwa to Hyougen (Permintaan Izin & Alasan)',
         title_jp: '会話と表現（依頼・許可・理由の説明）',
         theme: 'Requests & Explanations',
+        icon: '💬',
         can_do: 'Mampu meminta bantuan atasan, menjelaskan alasan keterlambatan, dan membuat janji bertemu.',
-        desc: 'Pola kalimat percakapan kompleks yang melibatkan konjugasi bentuk Te, Nai, dan Ta.'
+        desc: 'Pola kalimat percakapan kompleks yang melibatkan konjugasi bentuk Te, Nai, dan Ta.',
+        grammar_ids: ['gn4-00023'],
+        vocab_ids: ['vg-n4-00095', 'vg-n4-00092', 'vg-n4-00021', 'vg-n4-00025']
       },
       {
         unit_number: 3,
         title_id: 'Seksi 3: Choukai (Instruksi Kerja & Dialog Multiturn)',
         title_jp: '聴解（作業指示と複数話者の会話）',
         theme: 'Multi-turn Audio',
+        icon: '🎧',
         can_do: 'Mampu menangkap inti arahan kerja mandor dan perubahan jadwal janji bertemu dari percakapan telepon.',
-        desc: 'Simulasi ujian audio mendengarkan dengan opsi jeda intonasi dan kecepatan playback.'
+        desc: 'Simulasi ujian audio mendengarkan dengan opsi jeda intonasi dan kecepatan playback.',
+        grammar_ids: ['gn4-00024'],
+        vocab_ids: ['vg-n4-00035', 'vg-n4-00045', 'vg-n4-00050', 'vg-n4-00055']
       },
       {
         unit_number: 4,
         title_id: 'Seksi 4: Dokkai (Surat Edaran, Kontrak & Petunjuk Darurat)',
         title_jp: '読解（回覧板・アパート契約書・防災マップ）',
         theme: 'Applied Reading',
+        icon: '📜',
         can_do: 'Mampu membaca surat edaran RT (Kairanban), instruksi mitigasi gempa, dan aturan sewa apartemen.',
-        desc: 'Kemampuan membaca fungsional untuk bertahan hidup mandiri di lingkungan warga Jepang.'
+        desc: 'Kemampuan membaca fungsional untuk bertahan hidup mandiri di lingkungan warga Jepang.',
+        grammar_ids: ['gn4-00028'],
+        vocab_ids: ['vg-n4-00060', 'vg-n4-00065', 'vg-n4-00070', 'vg-n4-00075']
       }
     ]
   }
@@ -898,6 +918,9 @@ const JFT_TRACKS = [
 
 for (const track of JFT_TRACKS) {
   const units = track.units.map((uDef) => {
+    if (!uDef.vocab_ids || uDef.vocab_ids.length === 0 || uDef.vocab_ids.includes('vg-n5-00990')) {
+      throw new Error(`[compile-master-curriculum] Build validation error: JFT track ${track.trackId} unit ${uDef.unit_number} must have valid non-dummy vocab IDs.`);
+    }
     const unitId = `unit-${track.trackId}-${String(uDef.unit_number).padStart(2, '0')}`;
     const lessons = [
       {
@@ -907,8 +930,8 @@ for (const track of JFT_TRACKS) {
         title_jp: `${uDef.title_jp}（基礎解説）`,
         desc_id: uDef.desc,
         can_do_statement: uDef.can_do,
-        grammar_ids: ['gn5-00001'],
-        vocab_ids: ['vg-n5-00990', 'vg-n5-00732'],
+        grammar_ids: uDef.grammar_ids,
+        vocab_ids: uDef.vocab_ids,
         pedagogical_framework: {
           what: {
             summary: uDef.desc,
@@ -966,8 +989,8 @@ for (const track of JFT_TRACKS) {
       theme: uDef.theme,
       icon: uDef.icon,
       can_do_summary: uDef.can_do,
-      grammar_ids: ['gn5-00001'],
-      vocab_ids: ['vg-n5-00990'],
+      grammar_ids: uDef.grammar_ids,
+      vocab_ids: uDef.vocab_ids,
       lessons
     };
   });
@@ -998,7 +1021,9 @@ const seikatsuUnitsDef = [
     theme: 'City Hall & Registration',
     icon: '🏛️',
     can_do: 'Mampu mengurus surat pindah (Juminhyo), mendaftar asuransi kesehatan (Kokumin Kenko Hoken), dan mengambil kartu My Number.',
-    desc: 'Langkah pertama yang wajib dilakukan dalam 14 hari pertama kedatangan di Jepang di loket balai kota.'
+    desc: 'Langkah pertama yang wajib dilakukan dalam 14 hari pertama kedatangan di Jepang di loket balai kota.',
+    grammar_ids: ['gn5-00001', 'gn5-00025'],
+    vocab_ids: ['vg-n5-00488', 'vg-n5-00439', 'vg-n5-00435', 'vg-n5-00501']
   },
   {
     unit_number: 2,
@@ -1007,7 +1032,9 @@ const seikatsuUnitsDef = [
     theme: 'Waste Sorting & Environment',
     icon: '🗑️',
     can_do: 'Mampu membedakan sampah mudah terbakar (Moeru), tidak terbakar (Moenai), plastik daur ulang (Shigen), dan sampah perabot besar (Sodai Gomi).',
-    desc: 'Etika bermasyarakat nomor satu di Jepang untuk menghindari teguran tetangga dan pengurus apartemen.'
+    desc: 'Etika bermasyarakat nomor satu di Jepang untuk menghindari teguran tetangga dan pengurus apartemen.',
+    grammar_ids: ['gn5-00025', 'gn5-00009'],
+    vocab_ids: ['vg-n5-00003', 'vg-n5-00508', 'vg-n5-00509', 'vg-n5-00024']
   },
   {
     unit_number: 3,
@@ -1016,7 +1043,9 @@ const seikatsuUnitsDef = [
     theme: 'Housing & Banking',
     icon: '🏢',
     can_do: 'Mampu membuka rekening tabungan bank Yucho, memahami tagihan listrik/air/gas, dan membayar di konbini.',
-    desc: 'Navigasi finansial mandiri dan kontrak sewa tempat tinggal di Jepang tanpa kendala.'
+    desc: 'Navigasi finansial mandiri dan kontrak sewa tempat tinggal di Jepang tanpa kendala.',
+    grammar_ids: ['gn5-00007', 'gn5-00021'],
+    vocab_ids: ['vg-n5-00505', 'vg-n5-00506', 'vg-n5-00441', 'vg-n5-00021']
   },
   {
     unit_number: 4,
@@ -1025,11 +1054,16 @@ const seikatsuUnitsDef = [
     theme: 'Disaster Safety & Emergency',
     icon: '🚨',
     can_do: 'Mampu merespon bunyi alarm gempa HP (J-Alert), menghubungi 110 (polisi) / 119 (ambulans), dan evakuasi ke Hinanjo.',
-    desc: 'Prosedur keselamatan darurat untuk melindungi diri sendiri saat bencana gempa bumi, angin topan, atau kebakaran.'
+    desc: 'Prosedur keselamatan darurat untuk melindungi diri sendiri saat bencana gempa bumi, angin topan, atau kebakaran.',
+    grammar_ids: ['gn5-00025', 'gn5-00010'],
+    vocab_ids: ['vg-n5-00510', 'vg-n5-00511', 'vg-n5-00512', 'vg-n5-00023']
   }
 ];
 
 const seikatsuUnits = seikatsuUnitsDef.map((uDef) => {
+  if (!uDef.vocab_ids || uDef.vocab_ids.length === 0 || uDef.vocab_ids.includes('vg-n5-00990')) {
+    throw new Error(`[compile-master-curriculum] Build validation error: Seikatsu unit ${uDef.unit_number} must have valid non-dummy vocab IDs.`);
+  }
   const unitId = `unit-curriculum-seikatsu-${String(uDef.unit_number).padStart(2, '0')}`;
   const lessons = [
     {
@@ -1039,8 +1073,8 @@ const seikatsuUnits = seikatsuUnitsDef.map((uDef) => {
       title_jp: `${uDef.title_jp}（手続きと必須表現）`,
       desc_id: uDef.desc,
       can_do_statement: uDef.can_do,
-      grammar_ids: ['gn5-00001'],
-      vocab_ids: ['vg-n5-00990'],
+      grammar_ids: uDef.grammar_ids,
+      vocab_ids: uDef.vocab_ids,
       pedagogical_framework: {
         what: {
           summary: uDef.desc,
@@ -1107,8 +1141,8 @@ const seikatsuUnits = seikatsuUnitsDef.map((uDef) => {
     theme: uDef.theme,
     icon: uDef.icon,
     can_do_summary: uDef.can_do,
-    grammar_ids: ['gn5-00001'],
-    vocab_ids: ['vg-n5-00990'],
+    grammar_ids: uDef.grammar_ids,
+    vocab_ids: uDef.vocab_ids,
     lessons
   };
 });

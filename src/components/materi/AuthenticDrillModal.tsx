@@ -30,6 +30,22 @@ interface AuthenticDrillModalProps {
   drills: AuthenticDrillItem[];
 }
 
+function getDrillOptions(drill: AuthenticDrillItem): string[] {
+  if (drill.options && Array.isArray(drill.options) && drill.options.length > 0) return drill.options;
+  const dAny = drill as any;
+  if (dAny.tokens && Array.isArray(dAny.tokens) && dAny.tokens.length > 0) return dAny.tokens;
+  if (dAny.scrambled_tokens && Array.isArray(dAny.scrambled_tokens) && dAny.scrambled_tokens.length > 0) return dAny.scrambled_tokens;
+  if (dAny.assessment_criteria && Array.isArray(dAny.assessment_criteria) && dAny.assessment_criteria.length > 0) return dAny.assessment_criteria;
+  if (dAny.confusing_pair && Array.isArray(dAny.confusing_pair) && dAny.confusing_pair.length > 0) {
+    if (drill.sentence_prompt) {
+      const match = drill.sentence_prompt.match(/\[\s*([^/\]]+)\s*\/\s*([^/\]]+)\s*\]/);
+      if (match) return [match[1].trim(), match[2].trim()];
+    }
+    return dAny.confusing_pair;
+  }
+  return [];
+}
+
 export const AuthenticDrillModal: React.FC<AuthenticDrillModalProps> = ({
   isOpen,
   onClose,
@@ -48,6 +64,7 @@ export const AuthenticDrillModal: React.FC<AuthenticDrillModalProps> = ({
   if (!isOpen || drills.length === 0) return null;
 
   const currentDrill = drills[currentIndex];
+  const activeOptions = currentDrill ? getDrillOptions(currentDrill) : [];
 
   const handleSelectOption = (option: string) => {
     if (isAnswered) return;
@@ -111,7 +128,7 @@ export const AuthenticDrillModal: React.FC<AuthenticDrillModalProps> = ({
                 {bookTitle}
               </h2>
               <div className="text-[11px] text-accent font-semibold truncate">
-                {chapterTitle}
+                {chapterTitle.replace(/:\s*$/, '').trim()}
               </div>
             </div>
           </div>
@@ -206,6 +223,14 @@ export const AuthenticDrillModal: React.FC<AuthenticDrillModalProps> = ({
                 </div>
               )}
 
+              {/* Target Pattern (e.g. cue_substitution, pattern_expansion) */}
+              {currentDrill.target_pattern && (
+                <div className="p-2.5 rounded-xl bg-surface-2 border border-accent/20 flex items-center gap-2">
+                  <span className="text-[10px] font-bold uppercase text-accent">Pola Target:</span>
+                  <span className="text-xs font-jp font-bold text-accent-hot">{currentDrill.target_pattern}</span>
+                </div>
+              )}
+
               {/* Dialogue Prompt (e.g. Renshuu C roleplay) */}
               {currentDrill.dialogue_prompt && (
                 <div className="p-3.5 rounded-2xl bg-surface-2 border border-accent/20 space-y-2">
@@ -218,25 +243,123 @@ export const AuthenticDrillModal: React.FC<AuthenticDrillModalProps> = ({
                 </div>
               )}
 
-              {/* Sentence Prompt (e.g. Mondai cloze) */}
-              {currentDrill.sentence_prompt && (
-                <div className="p-4 rounded-2xl bg-surface-2 border border-accent/20 flex items-center justify-between gap-3">
-                  <div className="text-base sm:text-lg font-jp font-bold text-appText-bright">
-                    {currentDrill.sentence_prompt}
-                  </div>
-                  <button
-                    onClick={() => speakJapanese(currentDrill.sentence_prompt || '')}
-                    className="w-8 h-8 rounded-full bg-surface-3 hover:bg-surface border border-accent/20 text-accent flex items-center justify-center shrink-0 active:scale-95"
-                    title="Dengarkan kalimat"
-                  >
-                    <Volume2 className="w-4 h-4" />
-                  </button>
+              {/* Situational Context */}
+              {(currentDrill.situation_context || currentDrill.situation) && (
+                <div className="p-3 rounded-xl bg-amber-500/10 border border-amber-500/25 text-xs text-amber-300">
+                  <span className="font-bold">Konteks Situasi: </span>
+                  {currentDrill.situation_context || currentDrill.situation}
                 </div>
               )}
 
-              {/* 4 Choices */}
+              {/* Dialogue Scenario (e.g. Quartet speaking roleplay) */}
+              {currentDrill.dialogue_scenario && (
+                <div className="p-3.5 rounded-xl bg-surface-2 border border-accent/20 text-xs text-appText-bright">
+                  <span className="font-bold text-accent block mb-1">Skenario Roleplay:</span>
+                  <p className="leading-relaxed">{currentDrill.dialogue_scenario}</p>
+                </div>
+              )}
+
+              {/* Sign Example (e.g. Irodori life_sign_reading) */}
+              {currentDrill.sign_example && (
+                <div className="p-3.5 rounded-2xl bg-amber-500/10 border border-amber-500/25 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+                  <div>
+                    <span className="text-[10px] font-bold uppercase text-amber-400 block mb-0.5">Tanda / Rambu Seikatsu:</span>
+                    <div className="text-base sm:text-lg font-jp font-bold text-appText-bright">
+                      {currentDrill.sign_example}
+                    </div>
+                  </div>
+                </div>
+              )}
+
+              {/* Task Can-Do (e.g. Irodori cando_listening_match) */}
+              {currentDrill.task_can_do && (
+                <div className="p-3 rounded-xl bg-surface-2 border border-accent/15 text-xs text-appText-bright">
+                  <span className="font-bold text-accent">Target Can-Do: </span>
+                  {currentDrill.task_can_do}
+                </div>
+              )}
+
+              {/* Speech Bubble Prompt & Illustration Cue (e.g. Marugoto katsudoo) */}
+              {(currentDrill.speech_bubble_prompt || currentDrill.illustration_cue) && (
+                <div className="p-3.5 rounded-2xl bg-surface-2 border border-accent/20 space-y-1.5">
+                  {currentDrill.illustration_cue && (
+                    <span className="text-[10px] font-bold text-accent uppercase block">
+                      Ilustrasi: {currentDrill.illustration_cue}
+                    </span>
+                  )}
+                  {currentDrill.speech_bubble_prompt && (
+                    <div className="text-sm font-jp font-bold text-appText-bright italic">
+                      💭 "{currentDrill.speech_bubble_prompt}"
+                    </div>
+                  )}
+                </div>
+              )}
+
+              {/* Target Word & Requested Form (e.g. form transformation) */}
+              {(currentDrill.target_word || currentDrill.requested_form) && (
+                <div className="p-3.5 rounded-2xl bg-surface-2 border border-accent/20 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+                  {currentDrill.target_word && (
+                    <div className="text-base sm:text-lg font-jp font-bold text-appText-bright">
+                      {currentDrill.target_word}
+                    </div>
+                  )}
+                  {currentDrill.requested_form && (
+                    <span className="text-xs font-semibold px-2.5 py-1 rounded-lg bg-surface-3 text-accent border border-accent/20">
+                      Ubah ke: {currentDrill.requested_form}
+                    </span>
+                  )}
+                </div>
+              )}
+
+              {/* Universal Coalesced Prompt */}
+              {(() => {
+                const promptText =
+                  currentDrill.sentence_prompt ||
+                  currentDrill.prompt ||
+                  currentDrill.question_prompt ||
+                  currentDrill.scrambled_prompt ||
+                  currentDrill.passage_context ||
+                  currentDrill.passage_snippet ||
+                  currentDrill.discussion_prompt ||
+                  null;
+
+                if (!promptText) return null;
+
+                return (
+                  <div className="p-4 rounded-2xl bg-surface-2 border border-accent/20 flex items-center justify-between gap-3">
+                    <div className="text-base sm:text-lg font-jp font-bold text-appText-bright leading-relaxed min-w-0 flex-1">
+                      {promptText}
+                    </div>
+                    <button
+                      onClick={() => speakJapanese(promptText)}
+                      className="w-8 h-8 rounded-full bg-surface-3 hover:bg-surface border border-accent/20 text-accent flex items-center justify-center shrink-0 active:scale-95"
+                      title="Dengarkan kalimat"
+                    >
+                      <Volume2 className="w-4 h-4" />
+                    </button>
+                  </div>
+                );
+              })()}
+
+              {/* Syntactic Hint or Pedagogical Tip (e.g. SKM star order) */}
+              {(currentDrill.syntactic_hint || currentDrill.pedagogical_tip) && (
+                <div className="p-2.5 rounded-xl bg-surface-2/60 border border-accent/15 text-xs text-appText-muted">
+                  <span className="font-bold text-accent">Petunjuk: </span>
+                  {currentDrill.syntactic_hint || currentDrill.pedagogical_tip}
+                </div>
+              )}
+
+              {/* Contrastive Nuance (e.g. SKM nuance comparison) */}
+              {currentDrill.contrastive_nuance && (
+                <div className="p-2.5 rounded-xl bg-amber-500/10 border border-amber-500/25 text-xs text-amber-300">
+                  <span className="font-bold">Distingsi Nuansa: </span>
+                  {currentDrill.contrastive_nuance}
+                </div>
+              )}
+
+              {/* Choices (Options) */}
               <div className="space-y-2 pt-1">
-                {currentDrill.options.map((option, idx) => {
+                {activeOptions.map((option, idx) => {
                   const isSelected = selectedOption === option;
                   const isCorrect = option === currentDrill.correct_answer;
 
@@ -256,13 +379,13 @@ export const AuthenticDrillModal: React.FC<AuthenticDrillModalProps> = ({
                       key={idx}
                       disabled={isAnswered}
                       onClick={() => handleSelectOption(option)}
-                      className={`w-full p-3.5 rounded-2xl border text-left text-xs sm:text-sm transition-all flex items-center justify-between gap-3 active:scale-98 cursor-pointer ${btnStyle}`}
+                      className={`w-full min-h-[44px] p-3.5 rounded-2xl border text-left text-xs sm:text-sm transition-all flex items-center justify-between gap-3 active:scale-98 cursor-pointer ${btnStyle}`}
                     >
-                      <div className="flex items-center gap-3 min-w-0">
+                      <div className="flex items-center gap-3 min-w-0 flex-1">
                         <span className="w-6 h-6 rounded-lg bg-surface-3/80 font-mono text-xs flex items-center justify-center shrink-0 border border-accent/10">
                           {String.fromCharCode(65 + idx)}
                         </span>
-                        <span className="font-jp truncate">{option}</span>
+                        <span className="font-jp break-words whitespace-normal leading-snug">{option}</span>
                       </div>
 
                       {isAnswered && isCorrect && (

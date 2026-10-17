@@ -19,6 +19,7 @@ import {
   ChevronRight,
   Sparkles,
 } from 'lucide-react';
+import { useFocusTrap } from '../../hooks/useFocusTrap';
 
 interface StudyToolboxModalProps {
   isOpen: boolean;
@@ -53,6 +54,7 @@ export const StudyToolboxModal: React.FC<StudyToolboxModalProps> = ({
   onOpenFeatureGuide,
   onOpenShortcuts,
 }) => {
+  const containerRef = useFocusTrap<HTMLDivElement>(isOpen, onClose);
   if (!isOpen) return null;
 
   const tools: ToolItem[] = [
@@ -145,9 +147,13 @@ export const StudyToolboxModal: React.FC<StudyToolboxModalProps> = ({
     <div
       onClick={onClose}
       className="fixed inset-0 z-[9999] flex items-end sm:items-center justify-center p-0 sm:p-4 bg-black/80 backdrop-blur-sm animate-in fade-in duration-200"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Kotak Peralatan Belajar"
     >
       {/* Modal Card / Responsive Bottom-Sheet */}
       <div
+        ref={containerRef}
         onClick={(e) => e.stopPropagation()}
         className="relative w-full max-w-xl bg-surface border-t-2 sm:border border-accent/25 rounded-t-3xl sm:rounded-3xl shadow-2xl z-10 max-h-[90dvh] sm:max-h-[92vh] flex flex-col overflow-hidden animate-in slide-in-from-bottom-6 sm:zoom-in-95 duration-200 pb-[max(1rem,env(safe-area-inset-bottom))]"
       >
@@ -173,12 +179,13 @@ export const StudyToolboxModal: React.FC<StudyToolboxModalProps> = ({
           </div>
 
           <button
+            type="button"
             onClick={onClose}
-            className="p-2 rounded-xl bg-surface hover:bg-surface-3 text-appText-muted hover:text-appText-bright transition-colors active:scale-95"
+            className="w-11 h-11 min-w-[44px] min-h-[44px] rounded-xl bg-surface hover:bg-surface-3 text-appText-muted hover:text-appText-bright transition-colors active:scale-95 flex items-center justify-center"
             title="Tutup"
-            aria-label="Tutup modal"
+            aria-label="Tutup kotak peralatan belajar"
           >
-            <X className="w-4 h-4" />
+            <X className="w-5 h-5" />
           </button>
         </div>
 

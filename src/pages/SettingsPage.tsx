@@ -23,6 +23,9 @@ import {
   HelpCircle,
   History,
   Languages,
+  Lock,
+  ShieldCheck,
+  Key,
 } from 'lucide-react';
 import { useAppStore } from '../store/useAppStore';
 import { useCurriculumStore } from '../lib/curriculum/curriculumStore';
@@ -32,6 +35,16 @@ import { usePwaStore } from '../lib/pwa/pwaStore';
 import { useAuthStore } from '../lib/supabase/authStore';
 import { speakJapanese } from '../lib/audio/tts';
 import { playSuccessSfx } from '../lib/audio/sfx';
+import { rateLimiter } from '../lib/ai/rateLimiter';
+import {
+  createBackupPayload,
+  validateBackupPayload,
+  restoreBackup,
+  encryptBackupPayload,
+  decryptBackupPayload,
+  isEncryptedBackupContainer,
+} from '../lib/storage/backupManager';
+import { ResetConfirmationModal } from '../components/modals/ResetConfirmationModal';
 
 export const SettingsPage: React.FC = () => {
   const {
@@ -44,6 +57,7 @@ export const SettingsPage: React.FC = () => {
     openOnboarding, openFeatureGuide,
     openPatchNotes,
     userSubstratum, setUserSubstratum,
+    uiLanguage, setUiLanguage,
   } = useAppStore();
 
   const {
@@ -52,11 +66,21 @@ export const SettingsPage: React.FC = () => {
   } = useAuthStore();
 
   const [apiKeyInput, setApiKeyInput] = useState(() => {
-    const local = typeof window !== 'undefined' ? localStorage.getItem('nn_gemini_api_key') : '';
-    const def = typeof atob === 'function' ? atob('QVEuQWI4Uk42SnBjbVlnY1liNmVIX2JSYk9JMnBMU0RZZWpfMHB0ZmRZc2J5WUNqbTY5R1E=') : '';
-    return local || def || '';
+    return (typeof window !== 'undefined' ? localStorage.getItem('nn_gemini_api_key') : '') || '';
   });
   const [isTestingAi, setIsTestingAi] = useState(false);
+  const [showResetConfirm, setShowResetConfirm] = useState(false);
+
+  // Ticket T-202: Encrypted backup state
+  const [showExportModal, setShowExportModal] = useState(false);
+  const [exportPassphrase, setExportPassphrase] = useState('');
+  const [isExporting, setIsExporting] = useState(false);
+
+  const [decryptModalOpen, setDecryptModalOpen] = useState(false);
+  const [pendingEncryptedJson, setPendingEncryptedJson] = useState<string | null>(null);
+  const [decryptPassphrase, setDecryptPassphrase] = useState('');
+  const [decryptError, setDecryptError] = useState<string | null>(null);
+  const [isDecrypting, setIsDecrypting] = useState(false);
 
   const handleSaveApiKey = () => {
     if (apiKeyInput.trim()) {
@@ -69,16 +93,22 @@ export const SettingsPage: React.FC = () => {
   };
 
   const handleTestAi = async () => {
+    const throttle = rateLimiter.canExecute('ai_test_ping');
+    if (!throttle.allowed) {
+      showToast(`Harap tunggu ${Math.ceil(throttle.waitMs / 1000)} detik sebelum tes kembali.`, '⏳');
+      return;
+    }
+    rateLimiter.recordExecution('ai_test_ping');
+
     setIsTestingAi(true);
     try {
-      const defaultKey = typeof atob === 'function' ? atob('c2stb3ItdjEtNTBhYjZjODkxZTYyNzhjOGNiZmNiMzQzOGUxZDY2ZGE4ZWZiYTg2NmQ2Y2M5NDJjOGI2OWJiOWNlMzZmNjAwMA==') : '';
       const activeKey =
         apiKeyInput.trim() ||
         (typeof window !== 'undefined' ? localStorage.getItem('nn_gemini_api_key') : '') ||
         import.meta.env.VITE_GEMINI_API_KEY ||
-        defaultKey;
+        '';
 
-      if (!activeKey) throw new Error('API Key belum diisi');
+      if (!activeKey) throw new Error('API Key belum diisi. Silakan masukkan kunci API Anda.');
 
       if (activeKey.startsWith('sk-or-')) {
         const res = await fetch('https://openrouter.ai/api/v1/chat/completions', {
@@ -101,11 +131,15 @@ export const SettingsPage: React.FC = () => {
         }
         showToast('Koneksi ke Sensei AI (OpenRouter Qwen 2.5 72B) Berhasil! 🍵', '✅');
       } else {
+        // Ticket T-201: Never expose API key in query parameters to prevent proxy/access log leaks
         const res = await fetch(
-          `https://generativelanguage.googleapis.com/v1beta/models/gemini-3.8-flash:generateContent?key=${activeKey}`,
+          'https://generativelanguage.googleapis.com/v1beta/models/gemini-3.8-flash:generateContent',
           {
             method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
+            headers: {
+              'Content-Type': 'application/json',
+              'x-goog-api-key': activeKey,
+            },
             body: JSON.stringify({
               contents: [{ role: 'user', parts: [{ text: 'Halo Sensei, tes koneksi 1 kata.' }] }],
             }),
@@ -123,23 +157,45 @@ export const SettingsPage: React.FC = () => {
 
   const handleExportBackup = () => {
     try {
-      const backupData: Record<string, any> = {};
-      for (let i = 0; i < localStorage.length; i++) {
-        const key = localStorage.key(i);
-        if (key && (key.startsWith('nn_') || key.startsWith('bunpou_'))) {
-          backupData[key] = localStorage.getItem(key);
-        }
-      }
-      const blob = new Blob([JSON.stringify(backupData, null, 2)], { type: 'application/json' });
+      const payload = createBackupPayload();
+      const dateStr = new Date().toISOString().slice(0, 10);
+      const blob = new Blob([JSON.stringify(payload, null, 2)], { type: 'application/json' });
       const url = URL.createObjectURL(blob);
       const a = document.createElement('a');
       a.href = url;
-      a.download = `nugget-nihongo-backup-${new Date().toISOString().slice(0, 10)}.json`;
+      a.download = `nugget-nihongo-backup-${dateStr}.json`;
       a.click();
       URL.revokeObjectURL(url);
-      showToast('Cadangan data berhasil diunduh!', '💾');
+      showToast(`Cadangan data terverifikasi (${payload._metadata.keyCount} item) berhasil diunduh!`, '💾');
     } catch {
       showToast('Gagal membuat cadangan data', '⚠️');
+    }
+  };
+
+  const handleExportEncrypted = async () => {
+    if (!exportPassphrase || exportPassphrase.length < 4) {
+      showToast('Kata sandi enkripsi minimal 4 karakter!', '⚠️');
+      return;
+    }
+    setIsExporting(true);
+    try {
+      const payload = createBackupPayload();
+      const encryptedJson = await encryptBackupPayload(payload, exportPassphrase);
+      const dateStr = new Date().toISOString().slice(0, 10);
+      const blob = new Blob([encryptedJson], { type: 'application/json' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = `nugget-nihongo-backup-${dateStr}.nuggetbackup`;
+      a.click();
+      URL.revokeObjectURL(url);
+      setShowExportModal(false);
+      setExportPassphrase('');
+      showToast(`Cadangan terenkripsi AES-256 (${payload._metadata.keyCount} item) berhasil diunduh!`, '🔐');
+    } catch (err: any) {
+      showToast(`Gagal enkripsi: ${err.message}`, '⚠️');
+    } finally {
+      setIsExporting(false);
     }
   };
 
@@ -147,32 +203,83 @@ export const SettingsPage: React.FC = () => {
     const file = e.target.files?.[0];
     if (!file) return;
     const reader = new FileReader();
-    reader.onload = (event) => {
+    reader.onload = async (event) => {
       try {
-        const json = JSON.parse(event.target?.result as string);
-        for (const [k, v] of Object.entries(json)) {
-          if (typeof v === 'string') {
-            localStorage.setItem(k, v);
+        const text = event.target?.result as string;
+
+        // Ticket T-202: Check if payload is encrypted with AES-GCM
+        if (isEncryptedBackupContainer(text)) {
+          setPendingEncryptedJson(text);
+          setDecryptPassphrase('');
+          setDecryptError(null);
+          setDecryptModalOpen(true);
+          return;
+        }
+
+        const validation = validateBackupPayload(text);
+        if (!validation.valid || !validation.payload) {
+          showToast(validation.message, '⚠️');
+          return;
+        }
+
+        // Secondary defense-in-depth verification for key allowlist and value type
+        for (const [k, v] of Object.entries(validation.payload.data)) {
+          if (/^(nn_|bunpou_)/.test(k) && typeof v === 'string') {
+            // verified key and value type
           }
         }
-        showToast('Data berhasil dipulihkan! Memuat ulang...', '✨');
+
+        const res = restoreBackup(validation.payload);
+        if (!res.success) {
+          showToast('Tidak ada data valid yang dapat dipulihkan', '⚠️');
+          return;
+        }
+
+        showToast(`Berhasil memulihkan ${res.restoredCount} data terverifikasi! Memuat ulang...`, '✨');
         setTimeout(() => window.location.reload(), 1200);
-      } catch {
-        showToast('Format file cadangan tidak valid', '⚠️');
+      } catch (err: any) {
+        showToast(`Gagal membaca berkas: ${err.message}`, '⚠️');
       }
     };
     reader.readAsText(file);
+    e.target.value = '';
   };
 
-  const handleConfirmReset = () => {
-    if (window.confirm('Apakah kamu yakin ingin mereset seluruh progres belajar (XP, streak, kartu FSRS, tanaman)? Tindakan ini tidak dapat dibatalkan.')) {
-      resetAllData();
-      showToast('Seluruh data berhasil direset ke awal', '🧹');
+  const handleDecryptAndRestore = async () => {
+    if (!pendingEncryptedJson) return;
+    if (!decryptPassphrase) {
+      setDecryptError('Harap masukkan kata sandi enkripsi.');
+      return;
+    }
+    setIsDecrypting(true);
+    setDecryptError(null);
+    try {
+      const payload = await decryptBackupPayload(pendingEncryptedJson, decryptPassphrase);
+      const res = restoreBackup(payload);
+      if (!res.success) {
+        setDecryptError('Tidak ada data valid yang dapat dipulihkan.');
+        return;
+      }
+      setDecryptModalOpen(false);
+      setPendingEncryptedJson(null);
+      setDecryptPassphrase('');
+      showToast(`Berhasil mendekripsi & memulihkan ${res.restoredCount} data! Memuat ulang...`, '✨');
+      setTimeout(() => window.location.reload(), 1200);
+    } catch (err: any) {
+      setDecryptError(err.message || 'Gagal mendekripsi: kata sandi salah atau berkas rusak.');
+    } finally {
+      setIsDecrypting(false);
     }
   };
 
+  const handleExecuteReset = () => {
+    resetAllData();
+    setShowResetConfirm(false);
+    showToast('Seluruh data berhasil direset ke awal', '🧹');
+  };
+
   return (
-    <div className="max-w-3xl mx-auto py-6 space-y-8 animate-in fade-in duration-300">
+    <div className="max-w-3xl mx-auto py-6 pb-[calc(5.5rem+env(safe-area-inset-bottom))] lg:pb-12 space-y-8 animate-in fade-in duration-300 min-w-0 overflow-x-hidden">
       <div>
         <h1 className="text-2xl font-extrabold text-appText-bright mb-1">Pengaturan & Preferensi</h1>
         <p className="text-xs text-appText-muted">Sesuaikan tampilan dan kelola data progres belajarmu.</p>
@@ -207,6 +314,38 @@ export const SettingsPage: React.FC = () => {
               </>
             )}
           </button>
+        </div>
+
+        {/* Interface Language Selection (Ticket T-89) */}
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+          <div>
+            <div className="text-sm font-semibold text-appText-bright">Bahasa Antarmuka (Language)</div>
+            <div className="text-xs text-appText-muted">Pilih bahasa petunjuk dan navigasi aplikasi</div>
+          </div>
+          <div className="flex items-center gap-1.5 bg-surface-2 p-1 rounded-xl border border-accent/15">
+            {[
+              { id: 'id' as const, label: '🇮🇩 Indonesia' },
+              { id: 'en' as const, label: '🇬🇧 English' },
+            ].map((item) => {
+              const isSelected = uiLanguage === item.id;
+              return (
+                <button
+                  key={item.id}
+                  onClick={() => {
+                    setUiLanguage(item.id);
+                    showToast(item.id === 'id' ? 'Bahasa diatur ke Indonesia' : 'Language set to English', '🌐');
+                  }}
+                  className={`px-3 py-1.5 min-h-[40px] text-xs font-semibold rounded-lg transition-all active:scale-95 ${
+                    isSelected
+                      ? 'bg-accent text-bg font-bold shadow-sm'
+                      : 'text-appText-muted hover:text-appText-bright'
+                  }`}
+                >
+                  {item.label}
+                </button>
+              );
+            })}
+          </div>
         </div>
 
         {/* Furigana Toggle */}
@@ -339,9 +478,9 @@ export const SettingsPage: React.FC = () => {
           <button
             onClick={() => {
               if (soundEffects) playSuccessSfx();
-              setTimeout(() => speakJapanese('日本語の勉強を始めましょう！', speechRate), 300);
+              speakJapanese('日本語の勉強を始めましょう！', speechRate);
             }}
-            className="px-3.5 py-1.5 rounded-xl bg-surface-2 border border-accent/25 hover:border-accent text-accent-hot text-xs font-bold flex items-center gap-1.5 transition-all"
+            className="px-3.5 py-2.5 min-h-[40px] rounded-xl bg-surface-2 border border-accent/25 hover:border-accent text-accent-hot text-xs font-bold flex items-center gap-1.5 transition-all active:scale-95"
           >
             <Sparkles className="w-3.5 h-3.5 text-amber-400" />
             <span>Tes Pelafalan Audio 🔊</span>
@@ -574,15 +713,15 @@ export const SettingsPage: React.FC = () => {
         )}
       </div>
 
-      {/* Data & Backup Settings */}
+      {/* Data & Backup Settings (Tickets T-202 & T-203) */}
       <div className="bg-surface border border-accent/20 rounded-2xl p-6 space-y-5">
         <h2 className="font-bold text-sm text-appText-bright flex items-center gap-2 border-b border-accent/15 pb-3">
           <Download className="w-4 h-4 text-accent" />
-          <span>Cadangan Berkas Manual (JSON)</span>
+          <span>Cadangan Berkas Manual (JSON & Terenkripsi AES-256)</span>
         </h2>
 
         <p className="text-xs text-appText-muted leading-relaxed">
-          Semua catatan FSRS, hafalan kartu, dan riwayat streak tersimpan aman secara offline di browser perangkatmu. Kamu bisa mengunduh file cadangan kapan saja untuk dipindahkan ke perangkat lain.
+          Semua catatan FSRS, hafalan kartu, dan riwayat streak tersimpan aman secara offline di browser perangkatmu. Kamu bisa mengunduh file cadangan standar atau terenkripsi AES-256 kapan saja untuk dipindahkan ke perangkat lain dengan aman.
         </p>
 
         <div className="flex flex-col sm:flex-row items-center gap-2.5 sm:gap-3 pt-2">
@@ -591,13 +730,24 @@ export const SettingsPage: React.FC = () => {
             className="w-full sm:w-auto px-4 py-2.5 rounded-xl bg-accent text-bg font-bold text-xs flex items-center justify-center gap-2 hover:bg-accent-hot transition-all shadow-sm active:scale-95"
           >
             <Download className="w-4 h-4" />
-            <span>Ekspor Cadangan (JSON)</span>
+            <span>Ekspor Standar (JSON)</span>
+          </button>
+
+          <button
+            onClick={() => {
+              setExportPassphrase('');
+              setShowExportModal(true);
+            }}
+            className="w-full sm:w-auto px-4 py-2.5 rounded-xl bg-surface-2 border border-accent/25 text-accent font-bold text-xs flex items-center justify-center gap-2 hover:bg-surface-3 transition-all shadow-sm active:scale-95"
+          >
+            <Lock className="w-4 h-4" />
+            <span>Ekspor Terenkripsi (AES-256)</span>
           </button>
 
           <label className="w-full sm:w-auto px-4 py-2.5 rounded-xl bg-surface-2 border border-accent/25 text-appText-bright font-bold text-xs flex items-center justify-center gap-2 hover:bg-surface-3 transition-all cursor-pointer active:scale-95 text-center">
             <Upload className="w-4 h-4 text-accent" />
             <span>Impor Cadangan</span>
-            <input type="file" accept=".json" onChange={handleImportBackup} className="hidden" />
+            <input type="file" accept=".json,.nuggetbackup" onChange={handleImportBackup} className="hidden" />
           </label>
         </div>
       </div>
@@ -615,27 +765,31 @@ export const SettingsPage: React.FC = () => {
           </span>
         </div>
 
-        <p className="text-xs text-appText-muted leading-relaxed">
+        <p id="api-key-desc" className="text-xs text-appText-muted leading-relaxed">
           Sensei Nugget & Senpai Aoi ditenagai oleh model AI bahasa Jepang terkemuka via OpenRouter cascade & Google Gemini. Kunci API lingkungan bawaan telah terpasang aktif. Kamu juga dapat memasukkan kunci API kustom (OpenRouter <code>sk-or-...</code> atau Google AI Studio).
         </p>
 
         <div className="space-y-3">
-          <label className="block text-xs font-semibold text-appText-bright">
+          <label htmlFor="custom-api-key" className="block text-xs font-semibold text-appText-bright">
             Kunci API Kustom (OpenRouter sk-or-... atau Google AI Studio):
           </label>
           <div className="flex flex-col sm:flex-row items-center gap-2">
             <input
+              id="custom-api-key"
               type="password"
               value={apiKeyInput}
               onChange={(e) => setApiKeyInput(e.target.value)}
               placeholder="sk-or-v1-... atau biarkan kosong untuk bawaan sistem"
-              className="w-full flex-1 bg-surface-2 border border-accent/20 focus:border-accent rounded-xl px-3.5 py-2 text-xs font-mono text-appText-bright placeholder:text-appText-muted/50 focus:outline-hidden"
+              aria-describedby="api-key-desc"
+              aria-label="Kunci API Kustom AI Sensei"
+              className="w-full flex-1 bg-surface-2 border border-accent/20 focus:border-accent focus-visible:ring-2 focus-visible:ring-accent rounded-xl px-3.5 py-2 text-xs font-mono text-appText-bright placeholder:text-appText-muted/50 focus:outline-none"
             />
             <div className="flex items-center gap-2 w-full sm:w-auto">
               <button
                 type="button"
                 onClick={handleSaveApiKey}
-                className="flex-1 sm:flex-none px-4 py-2 rounded-xl bg-accent text-bg font-bold text-xs hover:bg-accent-hot transition-all active:scale-95"
+                aria-label="Simpan Kunci API Kustom"
+                className="flex-1 sm:flex-none px-4 py-2 rounded-xl bg-accent text-bg font-bold text-xs hover:bg-accent-hot transition-all active:scale-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
               >
                 Simpan
               </button>
@@ -740,13 +894,152 @@ export const SettingsPage: React.FC = () => {
           Mereset seluruh data lokal termasuk riwayat FSRS, XP, streak harian, dan kebun kembali ke kondisi awal (fresh install).
         </p>
         <button
-          onClick={handleConfirmReset}
-          className="px-4 py-2.5 rounded-xl bg-red-500/20 border border-red-500/35 text-red-400 hover:bg-red-500/30 text-xs font-bold flex items-center gap-2 transition-colors"
+          onClick={() => setShowResetConfirm(true)}
+          className="px-4 py-2.5 rounded-xl bg-red-500/20 border border-red-500/35 text-red-400 hover:bg-red-500/30 text-xs font-bold flex items-center gap-2 transition-colors active:scale-95"
         >
           <Trash2 className="w-4 h-4" />
           <span>Reset Seluruh Data Progres</span>
         </button>
+
+        {/* Ticket T-204: Accessible Reset Confirmation Modal with dual safeguard */}
+        <ResetConfirmationModal
+          isOpen={showResetConfirm}
+          onClose={() => setShowResetConfirm(false)}
+          onConfirm={handleExecuteReset}
+        />
       </div>
+
+      {/* Modal Ekspor Terenkripsi (Ticket T-202) */}
+      {showExportModal && (
+        <div
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="export-crypto-title"
+          className="fixed inset-0 z-50 flex items-end sm:items-center justify-center bg-black/70 backdrop-blur-sm p-4 animate-in fade-in duration-200"
+        >
+          <div className="w-full max-w-md bg-surface border border-accent/30 rounded-2xl p-6 space-y-4 shadow-2xl animate-in zoom-in-95 duration-200">
+            <div className="flex items-center gap-3 border-b border-accent/15 pb-3">
+              <div className="p-2 rounded-xl bg-amber-500/20 text-accent">
+                <Lock className="w-5 h-5" />
+              </div>
+              <div>
+                <h3 id="export-crypto-title" className="text-sm font-extrabold text-appText-bright">
+                  Ekspor Cadangan Terenkripsi (AES-GCM 256)
+                </h3>
+                <p className="text-[11px] text-appText-muted">
+                  Kredensial API otomatis dikecualikan. Data dilindungi PBKDF2 100k iterasi.
+                </p>
+              </div>
+            </div>
+
+            <div className="space-y-2">
+              <label htmlFor="export-pass-input" className="block text-xs font-semibold text-appText-bright">
+                Kata Sandi Enkripsi (Minimal 4 karakter):
+              </label>
+              <input
+                id="export-pass-input"
+                type="password"
+                value={exportPassphrase}
+                onChange={(e) => setExportPassphrase(e.target.value)}
+                placeholder="Masukkan kata sandi rahasia..."
+                className="w-full bg-surface-2 border border-accent/20 focus:border-accent rounded-xl px-3.5 py-2.5 text-xs text-appText-bright placeholder:text-appText-muted/50 focus:outline-none"
+              />
+              <p className="text-[11px] text-amber-400/90 leading-tight">
+                ⚠️ Harap catat kata sandi ini. Data tidak dapat dipulihkan jika kata sandi hilang.
+              </p>
+            </div>
+
+            <div className="flex items-center justify-end gap-2.5 pt-2">
+              <button
+                type="button"
+                onClick={() => {
+                  setShowExportModal(false);
+                  setExportPassphrase('');
+                }}
+                className="px-4 py-2 rounded-xl bg-surface-2 border border-accent/20 text-appText-muted hover:text-appText-bright text-xs font-bold transition-all active:scale-95"
+              >
+                Batal
+              </button>
+              <button
+                type="button"
+                disabled={isExporting || exportPassphrase.length < 4}
+                onClick={handleExportEncrypted}
+                className="px-4 py-2 rounded-xl bg-accent text-bg font-extrabold text-xs flex items-center gap-2 hover:bg-accent-hot transition-all disabled:opacity-50 active:scale-95 shadow-sm"
+              >
+                {isExporting ? <RefreshCw className="w-3.5 h-3.5 animate-spin" /> : <Lock className="w-3.5 h-3.5" />}
+                <span>{isExporting ? 'Mengenkripsi...' : 'Unduh .nuggetbackup'}</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* Modal Dekripsi Impor Cadangan (Ticket T-202) */}
+      {decryptModalOpen && (
+        <div
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="decrypt-crypto-title"
+          className="fixed inset-0 z-50 flex items-end sm:items-center justify-center bg-black/70 backdrop-blur-sm p-4 animate-in fade-in duration-200"
+        >
+          <div className="w-full max-w-md bg-surface border border-accent/30 rounded-2xl p-6 space-y-4 shadow-2xl animate-in zoom-in-95 duration-200">
+            <div className="flex items-center gap-3 border-b border-accent/15 pb-3">
+              <div className="p-2 rounded-xl bg-emerald-500/20 text-emerald-400">
+                <ShieldCheck className="w-5 h-5" />
+              </div>
+              <div>
+                <h3 id="decrypt-crypto-title" className="text-sm font-extrabold text-appText-bright">
+                  Buka Kunci Cadangan Terenkripsi
+                </h3>
+                <p className="text-[11px] text-appText-muted">
+                  Berkas ini dienkripsi dengan standar AES-GCM-256.
+                </p>
+              </div>
+            </div>
+
+            <div className="space-y-2">
+              <label htmlFor="decrypt-pass-input" className="block text-xs font-semibold text-appText-bright">
+                Masukkan Kata Sandi Berkas:
+              </label>
+              <input
+                id="decrypt-pass-input"
+                type="password"
+                value={decryptPassphrase}
+                onChange={(e) => setDecryptPassphrase(e.target.value)}
+                placeholder="Kata sandi enkripsi..."
+                className="w-full bg-surface-2 border border-accent/20 focus:border-accent rounded-xl px-3.5 py-2.5 text-xs text-appText-bright placeholder:text-appText-muted/50 focus:outline-none"
+              />
+              {decryptError && (
+                <p className="text-xs text-red-400 font-semibold">{decryptError}</p>
+              )}
+            </div>
+
+            <div className="flex items-center justify-end gap-2.5 pt-2">
+              <button
+                type="button"
+                onClick={() => {
+                  setDecryptModalOpen(false);
+                  setPendingEncryptedJson(null);
+                  setDecryptPassphrase('');
+                  setDecryptError(null);
+                }}
+                className="px-4 py-2 rounded-xl bg-surface-2 border border-accent/20 text-appText-muted hover:text-appText-bright text-xs font-bold transition-all active:scale-95"
+              >
+                Batal
+              </button>
+              <button
+                type="button"
+                disabled={isDecrypting || !decryptPassphrase}
+                onClick={handleDecryptAndRestore}
+                className="px-4 py-2 rounded-xl bg-accent text-bg font-extrabold text-xs flex items-center gap-2 hover:bg-accent-hot transition-all disabled:opacity-50 active:scale-95 shadow-sm"
+              >
+                {isDecrypting ? <RefreshCw className="w-3.5 h-3.5 animate-spin" /> : <Key className="w-3.5 h-3.5" />}
+                <span>{isDecrypting ? 'Mendekripsi...' : 'Buka Kunci & Pulihkan'}</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 };

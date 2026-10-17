@@ -21,7 +21,7 @@ export interface FSRSRecord {
     reviewed_at: string;
     elapsed_days: number;
   }>;
-  source?: 'grammar' | 'vocab';
+  source?: 'grammar' | 'vocab' | 'kanji' | 'choukai' | 'panic' | 'k3' | 'gemba' | 'dialogue' | 'kotowaza';
   title?: string;
   level?: string;
 }
@@ -32,3 +32,21 @@ export interface FSRSSettings {
   new_cards_per_day: number;
   reviews_per_day: number;
 }
+
+export type CardState = 'new' | 'learning' | 'review' | 'relearning';
+
+/**
+ * FSRS v4.5 Master Synthesis Memory Card Contract
+ * Incorporates dual stability vector [S_ortho, S_audio], response latency, and L1 interference flag.
+ */
+export interface FSRSCardData extends FSRSCard {
+  card_id?: string;
+  stability_ortho: number; // S_ortho (visual / reading memory stability)
+  stability_audio: number; // S_audio (acoustic / listening memory stability)
+  latency_ms?: number;     // Response latency Delta_t in milliseconds
+  interference_flag?: boolean; // L1 negative transfer penalty trigger
+  last_review_timestamp?: number; // Unix ms
+  due_timestamp?: number;         // Unix ms
+  review_modality?: 'ortho' | 'audio' | 'hybrid';
+}
+

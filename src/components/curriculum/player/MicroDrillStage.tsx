@@ -6,6 +6,7 @@
 import React, { useState } from 'react';
 import { CheckCircle2, XCircle, ArrowRight, RotateCcw, Sparkles } from 'lucide-react';
 import { LessonDrillItem } from '../../../types/curriculum';
+import { cleanOptionText } from '../../../lib/curriculum/lessonContentAdapter';
 
 interface MicroDrillStageProps {
   drills?: LessonDrillItem[];
@@ -153,7 +154,7 @@ export const MicroDrillStage: React.FC<MicroDrillStageProps> = ({ drills = [], o
       case 'reorder':
         return { label: '🧩 Susun Kepingan Kalimat', color: 'text-amber-400' };
       case 'response':
-        return { label: '💬 Respon Percakapan Alami', color: 'text-emerald-400' };
+        return { label: '💬 Respons Percakapan Alami', color: 'text-emerald-400' };
       case 'cloze':
       default:
         return { label: '📝 Pilihan Partikel & Pola', color: 'text-accent' };
@@ -265,7 +266,7 @@ export const MicroDrillStage: React.FC<MicroDrillStageProps> = ({ drills = [], o
                       : 'bg-surface-2 hover:bg-surface-3 border-accent/15 text-appText hover:text-appText-bright'
                   }`}
                 >
-                  <span className="break-words">{opt}</span>
+                  <span className="break-words">{cleanOptionText(opt)}</span>
                   <span className="w-5 h-5 rounded-full border border-accent/20 shrink-0 flex items-center justify-center text-[10px]">
                     {String.fromCharCode(65 + oIdx)}
                   </span>

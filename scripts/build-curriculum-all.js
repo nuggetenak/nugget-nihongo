@@ -19,8 +19,10 @@ function loadData(file, varName) {
   if (!fs.existsSync(filePath)) return [];
   const win = {};
   try {
-    eval(fs.readFileSync(filePath, 'utf8').replace('window.', 'win.'));
-    return win[varName] || [];
+    const fn = new Function('window', 'module', 'exports', fs.readFileSync(filePath, 'utf8'));
+    const dummyModule = { exports: {} };
+    fn(win, dummyModule, dummyModule.exports);
+    return win[varName] || dummyModule.exports[varName] || [];
   } catch (e) {
     console.warn(`Could not load ${file}:`, e.message);
     return [];
@@ -167,7 +169,7 @@ const n1UnitsDef = [
   { title_id: 'Eksklusivitas & Keistimewaan Unik', title_jp: '固有と唯一', theme: 'Unique Exclusivity', icon: '👑', can_do_summary: 'Bisa memuji keunggulan komparatif produk tanpa tanding.' },
   { title_id: 'Kausalitas Fatal & Takdir', title_jp: '宿命と必然', theme: 'Fatal Causality', icon: '🌌', can_do_summary: 'Bisa menganalisis akar penyebab krisis sejarah/institusional.' },
   { title_id: 'Pembatasan Maksimal & Kepasrahan', title_jp: '極限譲歩', theme: 'Maximal Concession', icon: '🛡️', can_do_summary: 'Bisa menerima kompromi negosiasi kritis tingkat tinggi.' },
-  { title_id: 'Karakteristik Fisik Menyeluruh', title_jp: '充満と様態', theme: 'Full Permeation', icon: '🌧️', can_do_summary: 'Bisa mendeskripsikan kondisi visual bencana fisik komprehensif.' },
+  { title_id: 'Karakteristik Fisik Menyeluruh', title_jp: '充満と様態', theme: 'Full Permeation', icon: '🌧️', can_do_summary: 'Mampu menguraikan kondisi visual pasca-bencana fisik, tingkat kerusakan struktural, dan langkah mitigasi darurat secara rinci.' },
   { title_id: 'Ketiadaan Sarana & Penyesalan Akut', title_jp: '無力と顛末', theme: 'Helplessness & Irony', icon: '🍂', can_do_summary: 'Bisa merefleksikan kegagalan program kerja strategis.' },
   { title_id: 'Retorika Eksekutif & Wacana Mahir', title_jp: '最高峰統語', theme: 'Executive Discourse Synthesis', icon: '🏆', can_do_summary: 'Bisa berpidato dan memimpin dewan sidang internasional.' }
 ];
@@ -322,6 +324,20 @@ function main() {
   writeCurriculumFiles('curriculum-ssw-construction', 'curriculumSSWConstruction', sswConstData);
 
   console.log('\nAll 7 curriculum tracks compiled successfully!');
+
+  // Compile master additional curriculum (16 SSW tracks, JFT A1/A2, Seikatsu)
+  try {
+    require('./compile-master-curriculum.js');
+  } catch (err) {
+    console.warn('[build-curriculum-all] Error compiling master curriculum:', err.message);
+  }
+
+  // Compile 9 Book Series curriculum tracks
+  try {
+    require('./compile-book-tracks.js');
+  } catch (err) {
+    console.warn('[build-curriculum-all] Error compiling book tracks:', err.message);
+  }
 }
 
 main();

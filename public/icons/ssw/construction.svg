@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="grad_construction" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#b45309" />
+    </linearGradient>
+    <filter id="shadow_construction" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#000" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+  <rect width="64" height="64" rx="16" fill="#171410" stroke="#f59e0b" stroke-opacity="0.3" stroke-width="1.5" />
+  <circle cx="32" cy="32" r="24" fill="url(#grad_construction)" opacity="0.15" />
+  <path d="M20 44 L44 44 L42 28 C42 20, 22 20, 22 28 Z M22 44 L16 48 L48 48 L42 44" fill="none" stroke="url(#grad_construction)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" filter="url(#shadow_construction)" />
+  <circle cx="50" cy="14" r="9" fill="#0D0B08" stroke="#f59e0b" stroke-width="1.2" />
+  <text x="50" y="17.5" font-family="'Noto Sans JP', sans-serif" font-size="10" font-weight="900" fill="#fff" text-anchor="middle">建</text>
+</svg>

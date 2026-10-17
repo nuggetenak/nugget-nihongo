@@ -20,7 +20,7 @@ export const JapaneseFormattedText: React.FC<JapaneseFormattedTextProps> = ({
 
   // If no <b> tags, render as plain text
   if (!text.includes('<b>')) {
-    return <span className={className}>{text}</span>;
+    return <span lang="ja" className={className}>{text}</span>;
   }
 
   // Split by <b> and </b> tags
@@ -28,7 +28,7 @@ export const JapaneseFormattedText: React.FC<JapaneseFormattedTextProps> = ({
   let isBold = false;
 
   return (
-    <span className={className}>
+    <span lang="ja" className={className}>
       {parts.map((part, idx) => {
         if (part === '<b>') {
           isBold = true;

@@ -281,7 +281,7 @@ window.nuggetKanjiN2 = [
       {
         "word": "区切る",
         "reading": "くぎる",
-        "meaning_id": "me-punctuate"
+        "meaning_id": "memberi tanda baca"
       },
       {
         "word": "区",
@@ -533,7 +533,7 @@ window.nuggetKanjiN2 = [
       {
         "word": "設ける",
         "reading": "もうける",
-        "meaning_id": "me-create"
+        "meaning_id": "menciptakan / membuat"
       }
     ]
   },
@@ -620,7 +620,7 @@ window.nuggetKanjiN2 = [
       {
         "word": "改める",
         "reading": "あらためる",
-        "meaning_id": "me-change"
+        "meaning_id": "mengubah / berganti"
       },
       {
         "word": "改悪",
@@ -1662,7 +1662,7 @@ window.nuggetKanjiN2 = [
       {
         "word": "営む",
         "reading": "いとなむ",
-        "meaning_id": "me-carry on"
+        "meaning_id": "carry on"
       },
       {
         "word": "運営",
@@ -1908,7 +1908,7 @@ window.nuggetKanjiN2 = [
       {
         "word": "補う",
         "reading": "おぎなう",
-        "meaning_id": "me-compensate for"
+        "meaning_id": "compensate for"
       },
       {
         "word": "補給",
@@ -2084,7 +2084,7 @@ window.nuggetKanjiN2 = [
       {
         "word": "導く",
         "reading": "みちびく",
-        "meaning_id": "me-be guided"
+        "meaning_id": "menjadi / ada guided"
       },
       {
         "word": "誘導",
@@ -3020,7 +3020,7 @@ window.nuggetKanjiN2 = [
       {
         "word": "担ぐ",
         "reading": "かつぐ",
-        "meaning_id": "me-shoulder"
+        "meaning_id": "shoulder"
       },
       {
         "word": "担架",
@@ -3101,7 +3101,7 @@ window.nuggetKanjiN2 = [
       {
         "word": "準備",
         "reading": "じゅんび",
-        "meaning_id": "me-prepare"
+        "meaning_id": "prepare"
       },
       {
         "word": "水準",
@@ -3131,12 +3131,12 @@ window.nuggetKanjiN2 = [
       {
         "word": "準じる",
         "reading": "じゅんじる",
-        "meaning_id": "me-follow"
+        "meaning_id": "mengikuti"
       },
       {
         "word": "準ずる",
         "reading": "じゅんずる",
-        "meaning_id": "me-apply correspondingly"
+        "meaning_id": "apply correspondingly"
       }
     ]
   },
@@ -3452,7 +3452,7 @@ window.nuggetKanjiN2 = [
       {
         "word": "被る",
         "reading": "かぶる",
-        "meaning_id": "me-put on"
+        "meaning_id": "put on"
       },
       {
         "word": "被害",
@@ -3462,7 +3462,7 @@ window.nuggetKanjiN2 = [
       {
         "word": "被せる",
         "reading": "かぶせる",
-        "meaning_id": "me-cover"
+        "meaning_id": "cover"
       }
     ]
   },
@@ -3753,7 +3753,7 @@ window.nuggetKanjiN2 = [
       {
         "word": "移る",
         "reading": "うつる",
-        "meaning_id": "me-move house or transfer"
+        "meaning_id": "move house or transfer"
       },
       {
         "word": "移動",
@@ -4244,7 +4244,7 @@ window.nuggetKanjiN2 = [
       {
         "word": "含める",
         "reading": "ふくめる",
-        "meaning_id": "me-include"
+        "meaning_id": "include"
       },
       {
         "word": "含嗽",
@@ -4414,7 +4414,7 @@ window.nuggetKanjiN2 = [
       {
         "word": "量る",
         "reading": "はかる",
-        "meaning_id": "me-measure"
+        "meaning_id": "mengukur"
       },
       {
         "word": "分量",
@@ -5136,7 +5136,7 @@ window.nuggetKanjiN2 = [
       {
         "word": "接する",
         "reading": "せっする",
-        "meaning_id": "me-come in contact with"
+        "meaning_id": "come in contact with"
       },
       {
         "word": "接触",
@@ -5293,7 +5293,7 @@ window.nuggetKanjiN2 = [
       {
         "word": "効く",
         "reading": "きく",
-        "meaning_id": "me-be effective"
+        "meaning_id": "menjadi / ada effective"
       },
       {
         "word": "効果",
@@ -5419,7 +5419,7 @@ window.nuggetKanjiN2 = [
       {
         "word": "丸める",
         "reading": "まるめる",
-        "meaning_id": "me-make round"
+        "meaning_id": "membuat round"
       },
       {
         "word": "丸っきり",
@@ -5621,7 +5621,7 @@ window.nuggetKanjiN2 = [
       {
         "word": "省みる",
         "reading": "かえりみる",
-        "meaning_id": "me-reflect"
+        "meaning_id": "reflect"
       }
     ]
   },
@@ -6260,7 +6260,7 @@ window.nuggetKanjiN2 = [
       {
         "word": "編む",
         "reading": "あむ",
-        "meaning_id": "me-knit"
+        "meaning_id": "merajut"
       },
       {
         "word": "短編",
@@ -6334,7 +6334,7 @@ window.nuggetKanjiN2 = [
       {
         "word": "捜す",
         "reading": "さがす",
-        "meaning_id": "me-search"
+        "meaning_id": "mencari"
       },
       {
         "word": "捜査",
@@ -6447,7 +6447,7 @@ window.nuggetKanjiN2 = [
       {
         "word": "超す",
         "reading": "こす",
-        "meaning_id": "me-cross"
+        "meaning_id": "menyeberang"
       },
       {
         "word": "超過",
@@ -6457,7 +6457,7 @@ window.nuggetKanjiN2 = [
       {
         "word": "超える",
         "reading": "こえる",
-        "meaning_id": "me-exceed"
+        "meaning_id": "exceed"
       },
       {
         "word": "超",
@@ -6531,12 +6531,12 @@ window.nuggetKanjiN2 = [
       {
         "word": "並ぶ",
         "reading": "ならぶ",
-        "meaning_id": "me-line up"
+        "meaning_id": "berbaris / berjejer"
       },
       {
         "word": "並べる",
         "reading": "ならべる",
-        "meaning_id": "me-line up"
+        "meaning_id": "berbaris / berjejer"
       },
       {
         "word": "並木",
@@ -6682,7 +6682,7 @@ window.nuggetKanjiN2 = [
       {
         "word": "採る",
         "reading": "とる",
-        "meaning_id": "me-adopt"
+        "meaning_id": "adopt"
       },
       {
         "word": "採掘",
@@ -8082,12 +8082,12 @@ window.nuggetKanjiN2 = [
       {
         "word": "禁じる",
         "reading": "きんじる",
-        "meaning_id": "me-prohibit"
+        "meaning_id": "prohibit"
       },
       {
         "word": "禁ずる",
         "reading": "きんずる",
-        "meaning_id": "me-forbid"
+        "meaning_id": "melarang"
       }
     ]
   },
@@ -8338,7 +8338,7 @@ window.nuggetKanjiN2 = [
       {
         "word": "換える",
         "reading": "かえる",
-        "meaning_id": "me-exchange"
+        "meaning_id": "exchange"
       },
       {
         "word": "換気",
@@ -8656,7 +8656,7 @@ window.nuggetKanjiN2 = [
       {
         "word": "暴れる",
         "reading": "あばれる",
-        "meaning_id": "me-act violently"
+        "meaning_id": "act violently"
       },
       {
         "word": "暴露",
@@ -8823,12 +8823,12 @@ window.nuggetKanjiN2 = [
       {
         "word": "占める",
         "reading": "しめる",
-        "meaning_id": "me-comprise"
+        "meaning_id": "comprise"
       },
       {
         "word": "占う",
         "reading": "うらなう",
-        "meaning_id": "me-forecast"
+        "meaning_id": "forecast"
       },
       {
         "word": "占領",
@@ -8910,7 +8910,7 @@ window.nuggetKanjiN2 = [
       {
         "word": "植わる",
         "reading": "うわる",
-        "meaning_id": "me-be planted"
+        "meaning_id": "menjadi / ada planted"
       },
       {
         "word": "植民地",
@@ -8992,7 +8992,7 @@ window.nuggetKanjiN2 = [
       {
         "word": "清む",
         "reading": "すむ",
-        "meaning_id": "me-become clear"
+        "meaning_id": "become clear"
       },
       {
         "word": "清書",
@@ -9892,7 +9892,7 @@ window.nuggetKanjiN2 = [
       {
         "word": "狙う",
         "reading": "ねらう",
-        "meaning_id": "me-aim at"
+        "meaning_id": "aim at"
       }
     ]
   },
@@ -10053,12 +10053,12 @@ window.nuggetKanjiN2 = [
       {
         "word": "延ばす",
         "reading": "のばす",
-        "meaning_id": "me-lengthen"
+        "meaning_id": "lengthen"
       },
       {
         "word": "延びる",
         "reading": "のびる",
-        "meaning_id": "me-be prolonged"
+        "meaning_id": "menjadi / ada prolonged"
       },
       {
         "word": "延べ",
@@ -10182,7 +10182,7 @@ window.nuggetKanjiN2 = [
       {
         "word": "固まる",
         "reading": "かたまる",
-        "meaning_id": "me-harden"
+        "meaning_id": "harden"
       },
       {
         "word": "頑固",
@@ -10207,7 +10207,7 @@ window.nuggetKanjiN2 = [
       {
         "word": "固める",
         "reading": "かためる",
-        "meaning_id": "me-harden"
+        "meaning_id": "harden"
       }
     ]
   },
@@ -10360,12 +10360,12 @@ window.nuggetKanjiN2 = [
       {
         "word": "乱す",
         "reading": "みだす",
-        "meaning_id": "me-throw out of order"
+        "meaning_id": "throw out of order"
       },
       {
         "word": "乱れる",
         "reading": "みだれる",
-        "meaning_id": "me-get confused"
+        "meaning_id": "mendapatkan confused"
       }
     ]
   },
@@ -10511,7 +10511,7 @@ window.nuggetKanjiN2 = [
       {
         "word": "測る",
         "reading": "はかる",
-        "meaning_id": "me-measure"
+        "meaning_id": "mengukur"
       },
       {
         "word": "推測",
@@ -10914,7 +10914,7 @@ window.nuggetKanjiN2 = [
       {
         "word": "略す",
         "reading": "りゃくす",
-        "meaning_id": "me-abbreviate"
+        "meaning_id": "abbreviate"
       },
       {
         "word": "概略",
@@ -11247,7 +11247,7 @@ window.nuggetKanjiN2 = [
       {
         "word": "練習",
         "reading": "れんしゅう",
-        "meaning_id": "me-practice"
+        "meaning_id": "practice"
       },
       {
         "word": "訓練",
@@ -11257,7 +11257,7 @@ window.nuggetKanjiN2 = [
       {
         "word": "練る",
         "reading": "ねる",
-        "meaning_id": "me-knead"
+        "meaning_id": "knead"
       },
       {
         "word": "未練",
@@ -11959,7 +11959,7 @@ window.nuggetKanjiN2 = [
       {
         "word": "絡む",
         "reading": "からむ",
-        "meaning_id": "me-entangle"
+        "meaning_id": "entangle"
       }
     ]
   },
@@ -12199,7 +12199,7 @@ window.nuggetKanjiN2 = [
       {
         "word": "裏返す",
         "reading": "うらがえす",
-        "meaning_id": "me-turn inside out"
+        "meaning_id": "turn inside out"
       },
       {
         "word": "裏返し",
@@ -12394,7 +12394,7 @@ window.nuggetKanjiN2 = [
       {
         "word": "築く",
         "reading": "きずく",
-        "meaning_id": "me-build"
+        "meaning_id": "membangun"
       },
       {
         "word": "新築",
@@ -12546,22 +12546,22 @@ window.nuggetKanjiN2 = [
       {
         "word": "混ざる",
         "reading": "まざる",
-        "meaning_id": "me-be mixed"
+        "meaning_id": "menjadi / ada mixed"
       },
       {
         "word": "混じる",
         "reading": "まじる",
-        "meaning_id": "me-be mixed"
+        "meaning_id": "menjadi / ada mixed"
       },
       {
         "word": "混ぜる",
         "reading": "まぜる",
-        "meaning_id": "me-mix"
+        "meaning_id": "mencampur"
       },
       {
         "word": "混む",
         "reading": "こむ",
-        "meaning_id": "me-be crowded"
+        "meaning_id": "menjadi / ada crowded"
       },
       {
         "word": "混血",
@@ -13929,7 +13929,7 @@ window.nuggetKanjiN2 = [
       {
         "word": "震わせる",
         "reading": "ふるわせる",
-        "meaning_id": "me-be shaking"
+        "meaning_id": "menjadi / ada shaking"
       }
     ]
   },
@@ -14061,7 +14061,7 @@ window.nuggetKanjiN2 = [
       {
         "word": "触る",
         "reading": "さわる",
-        "meaning_id": "me-touch"
+        "meaning_id": "menyentuh"
       },
       {
         "word": "触れる",
@@ -14281,7 +14281,7 @@ window.nuggetKanjiN2 = [
       {
         "word": "汚す",
         "reading": "よごす",
-        "meaning_id": "me-disgrace"
+        "meaning_id": "disgrace"
       },
       {
         "word": "汚れ",
@@ -14624,7 +14624,7 @@ window.nuggetKanjiN2 = [
       {
         "word": "栄える",
         "reading": "さかえる",
-        "meaning_id": "me-prosper"
+        "meaning_id": "prosper"
       }
     ]
   },
@@ -14894,7 +14894,7 @@ window.nuggetKanjiN2 = [
       {
         "word": "傾く",
         "reading": "かたむく",
-        "meaning_id": "me-incline toward"
+        "meaning_id": "incline toward"
       },
       {
         "word": "傾斜",
@@ -14904,7 +14904,7 @@ window.nuggetKanjiN2 = [
       {
         "word": "傾ける",
         "reading": "かたむける",
-        "meaning_id": "me-incline"
+        "meaning_id": "incline"
       }
     ]
   },
@@ -15044,7 +15044,7 @@ window.nuggetKanjiN2 = [
       {
         "word": "巻く",
         "reading": "まく",
-        "meaning_id": "me-wind"
+        "meaning_id": "wind"
       },
       {
         "word": "巻",
@@ -15112,7 +15112,7 @@ window.nuggetKanjiN2 = [
       {
         "word": "燃やす",
         "reading": "もやす",
-        "meaning_id": "me-burn"
+        "meaning_id": "membakar / terbakar"
       },
       {
         "word": "燃焼",
@@ -15195,7 +15195,7 @@ window.nuggetKanjiN2 = [
       {
         "word": "跡切れる",
         "reading": "とぎれる",
-        "meaning_id": "me-pause"
+        "meaning_id": "pause"
       }
     ]
   },
@@ -15251,7 +15251,7 @@ window.nuggetKanjiN2 = [
       {
         "word": "包む",
         "reading": "つつむ",
-        "meaning_id": "me-wrap"
+        "meaning_id": "membungkus"
       },
       {
         "word": "小包",
@@ -15402,17 +15402,17 @@ window.nuggetKanjiN2 = [
       {
         "word": "弱る",
         "reading": "よわる",
-        "meaning_id": "me-weaken"
+        "meaning_id": "weaken"
       },
       {
         "word": "弱まる",
         "reading": "よわまる",
-        "meaning_id": "me-abate"
+        "meaning_id": "abate"
       },
       {
         "word": "弱める",
         "reading": "よわめる",
-        "meaning_id": "me-weaken"
+        "meaning_id": "weaken"
       }
     ]
   },
@@ -15584,7 +15584,7 @@ window.nuggetKanjiN2 = [
       {
         "word": "替える",
         "reading": "かえる",
-        "meaning_id": "me-exchange"
+        "meaning_id": "exchange"
       },
       {
         "word": "為替",
@@ -15609,7 +15609,7 @@ window.nuggetKanjiN2 = [
       {
         "word": "切り替える",
         "reading": "きりかえる",
-        "meaning_id": "me-change"
+        "meaning_id": "mengubah / berganti"
       }
     ]
   },
@@ -15668,7 +15668,7 @@ window.nuggetKanjiN2 = [
       {
         "word": "預かる",
         "reading": "あずかる",
-        "meaning_id": "me-keep in custody"
+        "meaning_id": "keep in custody"
       },
       {
         "word": "預金",
@@ -16134,12 +16134,12 @@ window.nuggetKanjiN2 = [
       {
         "word": "照る",
         "reading": "てる",
-        "meaning_id": "me-shine"
+        "meaning_id": "bersinar / berseri"
       },
       {
         "word": "照らす",
         "reading": "てらす",
-        "meaning_id": "me-shine on"
+        "meaning_id": "shine on"
       },
       {
         "word": "参照",
@@ -16159,7 +16159,7 @@ window.nuggetKanjiN2 = [
       {
         "word": "照り返す",
         "reading": "てりかえす",
-        "meaning_id": "me-reflect"
+        "meaning_id": "reflect"
       }
     ]
   },
@@ -16231,7 +16231,7 @@ window.nuggetKanjiN2 = [
       {
         "word": "薄める",
         "reading": "うすめる",
-        "meaning_id": "me-dilute"
+        "meaning_id": "dilute"
       },
       {
         "word": "薄弱",
@@ -16317,7 +16317,7 @@ window.nuggetKanjiN2 = [
       {
         "word": "群がる",
         "reading": "むらがる",
-        "meaning_id": "me-swarm"
+        "meaning_id": "swarm"
       }
     ]
   },
@@ -16506,12 +16506,12 @@ window.nuggetKanjiN2 = [
       {
         "word": "詰まる",
         "reading": "つまる",
-        "meaning_id": "me-be blocked"
+        "meaning_id": "menjadi / ada blocked"
       },
       {
         "word": "詰る",
         "reading": "なじる",
-        "meaning_id": "me-rebuke"
+        "meaning_id": "rebuke"
       }
     ]
   },
@@ -16692,7 +16692,7 @@ window.nuggetKanjiN2 = [
       {
         "word": "刺す",
         "reading": "さす",
-        "meaning_id": "me-pierce"
+        "meaning_id": "pierce"
       },
       {
         "word": "名刺",
@@ -16702,7 +16702,7 @@ window.nuggetKanjiN2 = [
       {
         "word": "刺さる",
         "reading": "ささる",
-        "meaning_id": "me-stick"
+        "meaning_id": "stick"
       },
       {
         "word": "刺",
@@ -16959,7 +16959,7 @@ window.nuggetKanjiN2 = [
       {
         "word": "片付ける",
         "reading": "かたづける",
-        "meaning_id": "me-tidy up"
+        "meaning_id": "tidy up"
       },
       {
         "word": "片道",
@@ -16979,12 +16979,12 @@ window.nuggetKanjiN2 = [
       {
         "word": "片付く",
         "reading": "かたづく",
-        "meaning_id": "me-put in order"
+        "meaning_id": "put in order"
       },
       {
         "word": "片寄る",
         "reading": "かたよる",
-        "meaning_id": "me-be one-sided"
+        "meaning_id": "menjadi / ada one-sided"
       },
       {
         "word": "片言",
@@ -17068,7 +17068,7 @@ window.nuggetKanjiN2 = [
       {
         "word": "敬う",
         "reading": "うやまう",
-        "meaning_id": "me-show respect"
+        "meaning_id": "show respect"
       },
       {
         "word": "敬語",
@@ -17147,7 +17147,7 @@ window.nuggetKanjiN2 = [
       {
         "word": "悩ます",
         "reading": "なやます",
-        "meaning_id": "me-afflict"
+        "meaning_id": "afflict"
       },
       {
         "word": "悩ましい",
@@ -17419,7 +17419,7 @@ window.nuggetKanjiN2 = [
       {
         "word": "荒らす",
         "reading": "あらす",
-        "meaning_id": "me-lay waste"
+        "meaning_id": "lay waste"
       },
       {
         "word": "荒っぽい",
@@ -17606,7 +17606,7 @@ window.nuggetKanjiN2 = [
       {
         "word": "埋める",
         "reading": "うめる",
-        "meaning_id": "me-bury"
+        "meaning_id": "bury"
       },
       {
         "word": "埋蔵",
@@ -17616,12 +17616,12 @@ window.nuggetKanjiN2 = [
       {
         "word": "埋まる",
         "reading": "うずまる",
-        "meaning_id": "me-be buried"
+        "meaning_id": "menjadi / ada buried"
       },
       {
         "word": "埋め込む",
         "reading": "うめこむ",
-        "meaning_id": "me-bury"
+        "meaning_id": "bury"
       }
     ]
   },
@@ -17753,7 +17753,7 @@ window.nuggetKanjiN2 = [
       {
         "word": "祭る",
         "reading": "まつる",
-        "meaning_id": "me-deify"
+        "meaning_id": "deify"
       }
     ]
   },
@@ -18881,7 +18881,7 @@ window.nuggetKanjiN2 = [
       {
         "word": "尊ぶ",
         "reading": "たっとぶ",
-        "meaning_id": "me-value"
+        "meaning_id": "value"
       },
       {
         "word": "自尊心",
@@ -19632,7 +19632,7 @@ window.nuggetKanjiN2 = [
       {
         "word": "泊める",
         "reading": "とめる",
-        "meaning_id": "me-give shelter to"
+        "meaning_id": "memberi shelter to"
       },
       {
         "word": "泊",
@@ -19831,7 +19831,7 @@ window.nuggetKanjiN2 = [
       {
         "word": "甘やかす",
         "reading": "あまやかす",
-        "meaning_id": "me-pamper"
+        "meaning_id": "pamper"
       },
       {
         "word": "甘口",
@@ -19841,7 +19841,7 @@ window.nuggetKanjiN2 = [
       {
         "word": "甘える",
         "reading": "あまえる",
-        "meaning_id": "me-behave like a spoiled child"
+        "meaning_id": "behave like a spoiled child"
       }
     ]
   },
@@ -20026,7 +20026,7 @@ window.nuggetKanjiN2 = [
       {
         "word": "掃く",
         "reading": "はく",
-        "meaning_id": "me-sweep"
+        "meaning_id": "menyapu"
       }
     ]
   },
@@ -20132,7 +20132,7 @@ window.nuggetKanjiN2 = [
       {
         "word": "掘る",
         "reading": "ほる",
-        "meaning_id": "me-dig"
+        "meaning_id": "dig"
       },
       {
         "word": "採掘",
@@ -20336,7 +20336,7 @@ window.nuggetKanjiN2 = [
       {
         "word": "沈める",
         "reading": "しずめる",
-        "meaning_id": "me-sink"
+        "meaning_id": "tenggelam"
       }
     ]
   },
@@ -20403,7 +20403,7 @@ window.nuggetKanjiN2 = [
       {
         "word": "凍える",
         "reading": "こごえる",
-        "meaning_id": "me-freeze"
+        "meaning_id": "membeku / membekukan"
       }
     ]
   },
@@ -20541,7 +20541,7 @@ window.nuggetKanjiN2 = [
       {
         "word": "恋する",
         "reading": "こいする",
-        "meaning_id": "me-fall in love with"
+        "meaning_id": "fall in love with"
       }
     ]
   },
@@ -21358,7 +21358,7 @@ window.nuggetKanjiN2 = [
       {
         "word": "干す",
         "reading": "ほす",
-        "meaning_id": "me-air"
+        "meaning_id": "air"
       },
       {
         "word": "梅干",
@@ -21501,7 +21501,7 @@ window.nuggetKanjiN2 = [
       {
         "word": "刷る",
         "reading": "する",
-        "meaning_id": "me-print"
+        "meaning_id": "print"
       },
       {
         "word": "刷り",
@@ -21630,7 +21630,7 @@ window.nuggetKanjiN2 = [
       {
         "word": "溶く",
         "reading": "とく",
-        "meaning_id": "me-dissolve"
+        "meaning_id": "dissolve"
       },
       {
         "word": "溶岩",
@@ -21640,17 +21640,17 @@ window.nuggetKanjiN2 = [
       {
         "word": "溶かす",
         "reading": "とかす",
-        "meaning_id": "me-melt"
+        "meaning_id": "mencair / meleleh"
       },
       {
         "word": "溶ける",
         "reading": "とける",
-        "meaning_id": "me-melt"
+        "meaning_id": "mencair / meleleh"
       },
       {
         "word": "溶け込む",
         "reading": "とけこむ",
-        "meaning_id": "me-melt into"
+        "meaning_id": "melt into"
       },
       {
         "word": "溶液",
@@ -22300,7 +22300,7 @@ window.nuggetKanjiN2 = [
       {
         "word": "拝む",
         "reading": "おがむ",
-        "meaning_id": "me-worship"
+        "meaning_id": "worship"
       },
       {
         "word": "崇拝",
@@ -22437,7 +22437,7 @@ window.nuggetKanjiN2 = [
       {
         "word": "乾く",
         "reading": "かわく",
-        "meaning_id": "me-get dry"
+        "meaning_id": "mendapatkan dry"
       },
       {
         "word": "乾燥",
@@ -22452,7 +22452,7 @@ window.nuggetKanjiN2 = [
       {
         "word": "乾かす",
         "reading": "かわかす",
-        "meaning_id": "me-dry"
+        "meaning_id": "mengeringkan"
       },
       {
         "word": "乾電池",
@@ -22641,7 +22641,7 @@ window.nuggetKanjiN2 = [
       {
         "word": "拾う",
         "reading": "ひろう",
-        "meaning_id": "me-pick up"
+        "meaning_id": "memungut / menjemput"
       }
     ]
   },
@@ -22977,12 +22977,12 @@ window.nuggetKanjiN2 = [
       {
         "word": "湿る",
         "reading": "しめる",
-        "meaning_id": "me-be wet"
+        "meaning_id": "menjadi / ada wet"
       },
       {
         "word": "湿気る",
         "reading": "しける",
-        "meaning_id": "me-be damp"
+        "meaning_id": "menjadi / ada damp"
       }
     ]
   },
@@ -23425,7 +23425,7 @@ window.nuggetKanjiN2 = [
       {
         "word": "蒸す",
         "reading": "むす",
-        "meaning_id": "me-steam"
+        "meaning_id": "steam"
       },
       {
         "word": "水蒸気",
@@ -23556,7 +23556,7 @@ window.nuggetKanjiN2 = [
       {
         "word": "耕す",
         "reading": "たがやす",
-        "meaning_id": "me-till"
+        "meaning_id": "till"
       },
       {
         "word": "耕作",
@@ -23633,7 +23633,7 @@ window.nuggetKanjiN2 = [
       {
         "word": "鈍る",
         "reading": "にぶる",
-        "meaning_id": "me-become less capable"
+        "meaning_id": "become less capable"
       }
     ]
   },
@@ -24440,7 +24440,7 @@ window.nuggetKanjiN2 = [
       {
         "word": "畳む",
         "reading": "たたむ",
-        "meaning_id": "me-fold"
+        "meaning_id": "melipat"
       }
     ]
   },
@@ -24604,7 +24604,7 @@ window.nuggetKanjiN2 = [
       {
         "word": "濯ぐ",
         "reading": "すすぐ",
-        "meaning_id": "me-rinse"
+        "meaning_id": "rinse"
       }
     ]
   },
@@ -24941,7 +24941,7 @@ window.nuggetKanjiN2 = [
       {
         "word": "枯れる",
         "reading": "かれる",
-        "meaning_id": "me-wither"
+        "meaning_id": "wither"
       }
     ]
   },
@@ -25052,7 +25052,7 @@ window.nuggetKanjiN2 = [
       {
         "word": "涼む",
         "reading": "すずむ",
-        "meaning_id": "me-cool oneself"
+        "meaning_id": "cool oneself"
       }
     ]
   },
@@ -25268,7 +25268,7 @@ window.nuggetKanjiN2 = [
       {
         "word": "憎む",
         "reading": "にくむ",
-        "meaning_id": "me-hate"
+        "meaning_id": "hate"
       },
       {
         "word": "憎らしい",
@@ -25613,12 +25613,12 @@ window.nuggetKanjiN2 = [
       {
         "word": "挟む",
         "reading": "はさむ",
-        "meaning_id": "me-interpose"
+        "meaning_id": "interpose"
       },
       {
         "word": "挟まる",
         "reading": "はさまる",
-        "meaning_id": "me-get between"
+        "meaning_id": "mendapatkan between"
       }
     ]
   },
@@ -25931,7 +25931,7 @@ window.nuggetKanjiN2 = [
       {
         "word": "斬る",
         "reading": "きる",
-        "meaning_id": "me-behead"
+        "meaning_id": "behead"
       }
     ]
   },
@@ -26133,7 +26133,7 @@ window.nuggetKanjiN2 = [
       {
         "word": "匂う",
         "reading": "におう",
-        "meaning_id": "me-be fragrant"
+        "meaning_id": "menjadi / ada fragrant"
       }
     ]
   },
@@ -26280,12 +26280,12 @@ window.nuggetKanjiN2 = [
       {
         "word": "蹴る",
         "reading": "ける",
-        "meaning_id": "me-kick"
+        "meaning_id": "kick"
       },
       {
         "word": "蹴飛ばす",
         "reading": "けとばす",
-        "meaning_id": "me-kick away"
+        "meaning_id": "kick away"
       }
     ]
   },
@@ -26393,7 +26393,7 @@ window.nuggetKanjiN2 = [
       {
         "word": "拭く",
         "reading": "ふく",
-        "meaning_id": "me-wipe"
+        "meaning_id": "wipe"
       },
       {
         "word": "手拭い",
@@ -26454,7 +26454,7 @@ window.nuggetKanjiN2 = [
       {
         "word": "煎る",
         "reading": "いる",
-        "meaning_id": "me-parch"
+        "meaning_id": "parch"
       }
     ]
   },
@@ -26504,7 +26504,7 @@ window.nuggetKanjiN2 = [
       {
         "word": "嗅ぐ",
         "reading": "かぐ",
-        "meaning_id": "me-sniff"
+        "meaning_id": "sniff"
       }
     ]
   },
@@ -26561,12 +26561,12 @@ window.nuggetKanjiN2 = [
       {
         "word": "塞ぐ",
         "reading": "ふさぐ",
-        "meaning_id": "me-stop up"
+        "meaning_id": "stop up"
       },
       {
         "word": "塞がる",
         "reading": "ふさがる",
-        "meaning_id": "me-be plugged up"
+        "meaning_id": "menjadi / ada plugged up"
       }
     ]
   },
@@ -26629,7 +26629,7 @@ window.nuggetKanjiN2 = [
       {
         "word": "宛てる",
         "reading": "あてる",
-        "meaning_id": "me-address"
+        "meaning_id": "address"
       }
     ]
   },
@@ -26743,12 +26743,12 @@ window.nuggetKanjiN2 = [
       {
         "word": "捻る",
         "reading": "ひねる",
-        "meaning_id": "me-turn  on or off"
+        "meaning_id": "turn  on or off"
       },
       {
         "word": "捻じれる",
         "reading": "ねじれる",
-        "meaning_id": "me-twist"
+        "meaning_id": "twist"
       }
     ]
   },
@@ -26855,12 +26855,12 @@ window.nuggetKanjiN2 = [
       {
         "word": "潰す",
         "reading": "つぶす",
-        "meaning_id": "me-smash"
+        "meaning_id": "smash"
       },
       {
         "word": "潰れる",
         "reading": "つぶれる",
-        "meaning_id": "me-be smashed"
+        "meaning_id": "menjadi / ada smashed"
       }
     ]
   },
@@ -26964,7 +26964,7 @@ window.nuggetKanjiN2 = [
       {
         "word": "羨む",
         "reading": "うらやむ",
-        "meaning_id": "me-envy"
+        "meaning_id": "iri hati"
       },
       {
         "word": "羨ましい",
@@ -27118,7 +27118,7 @@ window.nuggetKanjiN2 = [
       {
         "word": "遡る",
         "reading": "さかのぼる",
-        "meaning_id": "me-go back"
+        "meaning_id": "go back"
       }
     ]
   },

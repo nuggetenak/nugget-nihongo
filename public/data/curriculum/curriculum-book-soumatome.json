@@ -6,48 +6,69 @@
     "level": "n3",
     "publisher": "ASK Publishing",
     "version": "1.2.0",
-    "total_units": 12,
+    "total_units": 22,
     "authoritative": true
   },
   "units": [
     {
       "unit_number": 1,
       "id": "unit-curriculum-book-soumatome-01",
-      "level": "n3",
+      "level": "n5",
       "pt_stage": 2,
-      "title_id": "Soumatome N5: Soumatome N5 Bab 1",
-      "title_jp": "Soumatome N5 第1課",
+      "title_id": "Soumatome N5: 人・家族・人間関係 (Orang & Hubungan Keluarga)",
+      "title_jp": "人・家族・人間関係 (Orang & Hubungan Keluarga)",
       "theme": "Soumatome N5",
       "icon": "📗",
-      "can_do_summary": "Memahami silabus Soumatome N5 Bab 1 secara komprehensif.",
-      "grammar_ids": [],
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 人・家族・人間関係 (Orang & Hubungan Keluarga).",
+      "grammar_ids": [
+        "gn5-00001",
+        "gn5-00002",
+        "gn5-00003"
+      ],
       "vocab_ids": [
-        "vg-n5-00990"
+        "vg-n5-00001",
+        "vg-n5-00002",
+        "vg-n5-00003",
+        "vg-n5-00004"
       ],
       "lessons": [
         {
           "id": "les-curriculum-book-soumatome-u01-01",
           "lesson_number": 1,
-          "title_id": "Soumatome N5 Bab 1 (Eksplorasi Materi & Pola)",
-          "title_jp": "Soumatome N5 第1課（解説）",
+          "title_id": "人・家族・人間関係 (Orang & Hubungan Keluarga) (Eksplorasi Materi & Pola)",
+          "title_jp": "人・家族・人間関係 (Orang & Hubungan Keluarga)（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku Nihongo Sou Matome (N5–N1) pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa Nihongo Sou Matome (N5–N1) bab ini dalam konteks nyata.",
-          "grammar_ids": [],
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 人・家族・人間関係 (Orang & Hubungan Keluarga).",
+          "grammar_ids": [
+            "gn5-00001",
+            "gn5-00002",
+            "gn5-00003"
+          ],
           "vocab_ids": [
-            "vg-n5-00990"
+            "vg-n5-00001",
+            "vg-n5-00002",
+            "vg-n5-00003",
+            "vg-n5-00004"
           ],
           "pedagogical_framework": {
             "what": {
               "summary": "Silabus resmi Nihongo Sou Matome (N5–N1) bab 1.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
-              "targetPatterns": [],
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 人・家族・人間関係 (Orang & Hubungan Keluarga).",
+              "targetPatterns": [
+                "gn5-00001",
+                "gn5-00002",
+                "gn5-00003"
+              ],
               "coreVocabSample": [
-                "vg-n5-00990"
+                "vg-n5-00001",
+                "vg-n5-00002",
+                "vg-n5-00003",
+                "vg-n5-00004"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku Nihongo Sou Matome (N5–N1). Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 1 Nihongo Sou Matome (N5–N1).",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 人・家族・人間関係 (Orang & Hubungan Keluarga).",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -61,17 +82,17 @@
               "id": "d1",
               "speaker": "Sensei",
               "speakerRole": "Tutor Belajar",
-              "jp": "Soumatome N5 第1課の勉強を始めましょう！",
+              "jp": "人・家族・人間関係 (Orang & Hubungan Keluarga)の勉強を始めましょう！",
               "furigana": "べんきょうをはじめましょう！",
               "romaji": "Benkyou wo hajimemashou!",
-              "idText": "Mari kita mulai belajar Soumatome N5 Bab 1!"
+              "idText": "Mari kita mulai belajar 人・家族・人間関係 (Orang & Hubungan Keluarga)!"
             }
           ],
           "drills": [
             {
               "id": "dr1",
               "type": "multiple-choice",
-              "prompt": "Apa fokus utama pada materi Soumatome N5 Bab 1 di buku Nihongo Sou Matome (N5–N1)?",
+              "prompt": "Apa fokus utama pada materi 人・家族・人間関係 (Orang & Hubungan Keluarga) di buku Nihongo Sou Matome (N5–N1)?",
               "options": [
                 "Menguasai pola kalimat bab ini dengan pemahaman alami",
                 "Menghafal tanpa memahami konteks",
@@ -88,41 +109,62 @@
     {
       "unit_number": 2,
       "id": "unit-curriculum-book-soumatome-02",
-      "level": "n3",
+      "level": "n5",
       "pt_stage": 3,
-      "title_id": "Soumatome N5: Soumatome N5 Bab 2",
-      "title_jp": "Soumatome N5 第2課",
+      "title_id": "Soumatome N5: 日常生活・食事・買い物 (Kehidupan Sehari-hari & Makanan)",
+      "title_jp": "日常生活・食事・買い物 (Kehidupan Sehari-hari & Makanan)",
       "theme": "Soumatome N5",
       "icon": "📗",
-      "can_do_summary": "Memahami silabus Soumatome N5 Bab 2 secara komprehensif.",
-      "grammar_ids": [],
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 日常生活・食事・買い物 (Kehidupan Sehari-hari & Makanan).",
+      "grammar_ids": [
+        "gn5-00004",
+        "gn5-00005",
+        "gn5-00006"
+      ],
       "vocab_ids": [
-        "vg-n5-00990"
+        "vg-n5-00195",
+        "vg-n5-00196",
+        "vg-n5-00197",
+        "vg-n5-00198"
       ],
       "lessons": [
         {
           "id": "les-curriculum-book-soumatome-u02-01",
           "lesson_number": 1,
-          "title_id": "Soumatome N5 Bab 2 (Eksplorasi Materi & Pola)",
-          "title_jp": "Soumatome N5 第2課（解説）",
+          "title_id": "日常生活・食事・買い物 (Kehidupan Sehari-hari & Makanan) (Eksplorasi Materi & Pola)",
+          "title_jp": "日常生活・食事・買い物 (Kehidupan Sehari-hari & Makanan)（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku Nihongo Sou Matome (N5–N1) pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa Nihongo Sou Matome (N5–N1) bab ini dalam konteks nyata.",
-          "grammar_ids": [],
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 日常生活・食事・買い物 (Kehidupan Sehari-hari & Makanan).",
+          "grammar_ids": [
+            "gn5-00004",
+            "gn5-00005",
+            "gn5-00006"
+          ],
           "vocab_ids": [
-            "vg-n5-00990"
+            "vg-n5-00195",
+            "vg-n5-00196",
+            "vg-n5-00197",
+            "vg-n5-00198"
           ],
           "pedagogical_framework": {
             "what": {
               "summary": "Silabus resmi Nihongo Sou Matome (N5–N1) bab 2.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
-              "targetPatterns": [],
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 日常生活・食事・買い物 (Kehidupan Sehari-hari & Makanan).",
+              "targetPatterns": [
+                "gn5-00004",
+                "gn5-00005",
+                "gn5-00006"
+              ],
               "coreVocabSample": [
-                "vg-n5-00990"
+                "vg-n5-00195",
+                "vg-n5-00196",
+                "vg-n5-00197",
+                "vg-n5-00198"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku Nihongo Sou Matome (N5–N1). Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 2 Nihongo Sou Matome (N5–N1).",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 日常生活・食事・買い物 (Kehidupan Sehari-hari & Makanan).",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -136,17 +178,17 @@
               "id": "d1",
               "speaker": "Sensei",
               "speakerRole": "Tutor Belajar",
-              "jp": "Soumatome N5 第2課の勉強を始めましょう！",
+              "jp": "日常生活・食事・買い物 (Kehidupan Sehari-hari & Makanan)の勉強を始めましょう！",
               "furigana": "べんきょうをはじめましょう！",
               "romaji": "Benkyou wo hajimemashou!",
-              "idText": "Mari kita mulai belajar Soumatome N5 Bab 2!"
+              "idText": "Mari kita mulai belajar 日常生活・食事・買い物 (Kehidupan Sehari-hari & Makanan)!"
             }
           ],
           "drills": [
             {
               "id": "dr1",
               "type": "multiple-choice",
-              "prompt": "Apa fokus utama pada materi Soumatome N5 Bab 2 di buku Nihongo Sou Matome (N5–N1)?",
+              "prompt": "Apa fokus utama pada materi 日常生活・食事・買い物 (Kehidupan Sehari-hari & Makanan) di buku Nihongo Sou Matome (N5–N1)?",
               "options": [
                 "Menguasai pola kalimat bab ini dengan pemahaman alami",
                 "Menghafal tanpa memahami konteks",
@@ -163,41 +205,62 @@
     {
       "unit_number": 3,
       "id": "unit-curriculum-book-soumatome-03",
-      "level": "n3",
+      "level": "n5",
       "pt_stage": 4,
-      "title_id": "Soumatome N5: Soumatome N5 Bab 3",
-      "title_jp": "Soumatome N5 第3課",
+      "title_id": "Soumatome N5: 家・街・交通 (Tempat Tinggal, Kota & Transportasi)",
+      "title_jp": "家・街・交通 (Tempat Tinggal, Kota & Transportasi)",
       "theme": "Soumatome N5",
       "icon": "📗",
-      "can_do_summary": "Memahami silabus Soumatome N5 Bab 3 secara komprehensif.",
-      "grammar_ids": [],
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 家・街・交通 (Tempat Tinggal, Kota & Transportasi).",
+      "grammar_ids": [
+        "gn5-00007",
+        "gn5-00008",
+        "gn5-00009"
+      ],
       "vocab_ids": [
-        "vg-n5-00990"
+        "vg-n5-00962",
+        "vg-n5-00993",
+        "vg-n5-00994",
+        "vg-n5-00996"
       ],
       "lessons": [
         {
           "id": "les-curriculum-book-soumatome-u03-01",
           "lesson_number": 1,
-          "title_id": "Soumatome N5 Bab 3 (Eksplorasi Materi & Pola)",
-          "title_jp": "Soumatome N5 第3課（解説）",
+          "title_id": "家・街・交通 (Tempat Tinggal, Kota & Transportasi) (Eksplorasi Materi & Pola)",
+          "title_jp": "家・街・交通 (Tempat Tinggal, Kota & Transportasi)（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku Nihongo Sou Matome (N5–N1) pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa Nihongo Sou Matome (N5–N1) bab ini dalam konteks nyata.",
-          "grammar_ids": [],
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 家・街・交通 (Tempat Tinggal, Kota & Transportasi).",
+          "grammar_ids": [
+            "gn5-00007",
+            "gn5-00008",
+            "gn5-00009"
+          ],
           "vocab_ids": [
-            "vg-n5-00990"
+            "vg-n5-00962",
+            "vg-n5-00993",
+            "vg-n5-00994",
+            "vg-n5-00996"
           ],
           "pedagogical_framework": {
             "what": {
               "summary": "Silabus resmi Nihongo Sou Matome (N5–N1) bab 3.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
-              "targetPatterns": [],
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 家・街・交通 (Tempat Tinggal, Kota & Transportasi).",
+              "targetPatterns": [
+                "gn5-00007",
+                "gn5-00008",
+                "gn5-00009"
+              ],
               "coreVocabSample": [
-                "vg-n5-00990"
+                "vg-n5-00962",
+                "vg-n5-00993",
+                "vg-n5-00994",
+                "vg-n5-00996"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku Nihongo Sou Matome (N5–N1). Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 3 Nihongo Sou Matome (N5–N1).",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 家・街・交通 (Tempat Tinggal, Kota & Transportasi).",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -211,17 +274,17 @@
               "id": "d1",
               "speaker": "Sensei",
               "speakerRole": "Tutor Belajar",
-              "jp": "Soumatome N5 第3課の勉強を始めましょう！",
+              "jp": "家・街・交通 (Tempat Tinggal, Kota & Transportasi)の勉強を始めましょう！",
               "furigana": "べんきょうをはじめましょう！",
               "romaji": "Benkyou wo hajimemashou!",
-              "idText": "Mari kita mulai belajar Soumatome N5 Bab 3!"
+              "idText": "Mari kita mulai belajar 家・街・交通 (Tempat Tinggal, Kota & Transportasi)!"
             }
           ],
           "drills": [
             {
               "id": "dr1",
               "type": "multiple-choice",
-              "prompt": "Apa fokus utama pada materi Soumatome N5 Bab 3 di buku Nihongo Sou Matome (N5–N1)?",
+              "prompt": "Apa fokus utama pada materi 家・街・交通 (Tempat Tinggal, Kota & Transportasi) di buku Nihongo Sou Matome (N5–N1)?",
               "options": [
                 "Menguasai pola kalimat bab ini dengan pemahaman alami",
                 "Menghafal tanpa memahami konteks",
@@ -238,41 +301,62 @@
     {
       "unit_number": 4,
       "id": "unit-curriculum-book-soumatome-04",
-      "level": "n3",
+      "level": "n5",
       "pt_stage": 5,
-      "title_id": "Soumatome N5: Soumatome N5 Bab 4",
-      "title_jp": "Soumatome N5 第4課",
+      "title_id": "Soumatome N5: 仕事・学校・学習 (Pekerjaan, Sekolah & Belajar)",
+      "title_jp": "仕事・学校・学習 (Pekerjaan, Sekolah & Belajar)",
       "theme": "Soumatome N5",
       "icon": "📗",
-      "can_do_summary": "Memahami silabus Soumatome N5 Bab 4 secara komprehensif.",
-      "grammar_ids": [],
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 仕事・学校・学習 (Pekerjaan, Sekolah & Belajar).",
+      "grammar_ids": [
+        "gn5-00010",
+        "gn5-00011",
+        "gn5-00012"
+      ],
       "vocab_ids": [
-        "vg-n5-00990"
+        "vg-n5-01254",
+        "vg-n5-01262",
+        "vg-n5-01263",
+        "vg-n5-01277"
       ],
       "lessons": [
         {
           "id": "les-curriculum-book-soumatome-u04-01",
           "lesson_number": 1,
-          "title_id": "Soumatome N5 Bab 4 (Eksplorasi Materi & Pola)",
-          "title_jp": "Soumatome N5 第4課（解説）",
+          "title_id": "仕事・学校・学習 (Pekerjaan, Sekolah & Belajar) (Eksplorasi Materi & Pola)",
+          "title_jp": "仕事・学校・学習 (Pekerjaan, Sekolah & Belajar)（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku Nihongo Sou Matome (N5–N1) pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa Nihongo Sou Matome (N5–N1) bab ini dalam konteks nyata.",
-          "grammar_ids": [],
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 仕事・学校・学習 (Pekerjaan, Sekolah & Belajar).",
+          "grammar_ids": [
+            "gn5-00010",
+            "gn5-00011",
+            "gn5-00012"
+          ],
           "vocab_ids": [
-            "vg-n5-00990"
+            "vg-n5-01254",
+            "vg-n5-01262",
+            "vg-n5-01263",
+            "vg-n5-01277"
           ],
           "pedagogical_framework": {
             "what": {
               "summary": "Silabus resmi Nihongo Sou Matome (N5–N1) bab 4.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
-              "targetPatterns": [],
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 仕事・学校・学習 (Pekerjaan, Sekolah & Belajar).",
+              "targetPatterns": [
+                "gn5-00010",
+                "gn5-00011",
+                "gn5-00012"
+              ],
               "coreVocabSample": [
-                "vg-n5-00990"
+                "vg-n5-01254",
+                "vg-n5-01262",
+                "vg-n5-01263",
+                "vg-n5-01277"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku Nihongo Sou Matome (N5–N1). Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 4 Nihongo Sou Matome (N5–N1).",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 仕事・学校・学習 (Pekerjaan, Sekolah & Belajar).",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -286,17 +370,17 @@
               "id": "d1",
               "speaker": "Sensei",
               "speakerRole": "Tutor Belajar",
-              "jp": "Soumatome N5 第4課の勉強を始めましょう！",
+              "jp": "仕事・学校・学習 (Pekerjaan, Sekolah & Belajar)の勉強を始めましょう！",
               "furigana": "べんきょうをはじめましょう！",
               "romaji": "Benkyou wo hajimemashou!",
-              "idText": "Mari kita mulai belajar Soumatome N5 Bab 4!"
+              "idText": "Mari kita mulai belajar 仕事・学校・学習 (Pekerjaan, Sekolah & Belajar)!"
             }
           ],
           "drills": [
             {
               "id": "dr1",
               "type": "multiple-choice",
-              "prompt": "Apa fokus utama pada materi Soumatome N5 Bab 4 di buku Nihongo Sou Matome (N5–N1)?",
+              "prompt": "Apa fokus utama pada materi 仕事・学校・学習 (Pekerjaan, Sekolah & Belajar) di buku Nihongo Sou Matome (N5–N1)?",
               "options": [
                 "Menguasai pola kalimat bab ini dengan pemahaman alami",
                 "Menghafal tanpa memahami konteks",
@@ -313,41 +397,62 @@
     {
       "unit_number": 5,
       "id": "unit-curriculum-book-soumatome-05",
-      "level": "n3",
+      "level": "n5",
       "pt_stage": 6,
-      "title_id": "Soumatome N2: Soumatome N2 Bab 1",
-      "title_jp": "Soumatome N2 第1課",
-      "theme": "Soumatome N2",
+      "title_id": "Soumatome N5: からだ・健康・気持ち (Kesehatan, Tubuh & Perasaan)",
+      "title_jp": "からだ・健康・気持ち (Kesehatan, Tubuh & Perasaan)",
+      "theme": "Soumatome N5",
       "icon": "📗",
-      "can_do_summary": "Memahami silabus Soumatome N2 Bab 1 secara komprehensif.",
-      "grammar_ids": [],
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai からだ・健康・気持ち (Kesehatan, Tubuh & Perasaan).",
+      "grammar_ids": [
+        "gn5-00013",
+        "gn5-00014",
+        "gn5-00015"
+      ],
       "vocab_ids": [
-        "vg-n5-00990"
+        "vg-n5-00268",
+        "vg-n5-00269",
+        "vg-n5-00270",
+        "vg-n5-00271"
       ],
       "lessons": [
         {
           "id": "les-curriculum-book-soumatome-u05-01",
           "lesson_number": 1,
-          "title_id": "Soumatome N2 Bab 1 (Eksplorasi Materi & Pola)",
-          "title_jp": "Soumatome N2 第1課（解説）",
+          "title_id": "からだ・健康・気持ち (Kesehatan, Tubuh & Perasaan) (Eksplorasi Materi & Pola)",
+          "title_jp": "からだ・健康・気持ち (Kesehatan, Tubuh & Perasaan)（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku Nihongo Sou Matome (N5–N1) pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa Nihongo Sou Matome (N5–N1) bab ini dalam konteks nyata.",
-          "grammar_ids": [],
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai からだ・健康・気持ち (Kesehatan, Tubuh & Perasaan).",
+          "grammar_ids": [
+            "gn5-00013",
+            "gn5-00014",
+            "gn5-00015"
+          ],
           "vocab_ids": [
-            "vg-n5-00990"
+            "vg-n5-00268",
+            "vg-n5-00269",
+            "vg-n5-00270",
+            "vg-n5-00271"
           ],
           "pedagogical_framework": {
             "what": {
-              "summary": "Silabus resmi Nihongo Sou Matome (N5–N1) bab 1.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
-              "targetPatterns": [],
+              "summary": "Silabus resmi Nihongo Sou Matome (N5–N1) bab 5.",
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai からだ・健康・気持ち (Kesehatan, Tubuh & Perasaan).",
+              "targetPatterns": [
+                "gn5-00013",
+                "gn5-00014",
+                "gn5-00015"
+              ],
               "coreVocabSample": [
-                "vg-n5-00990"
+                "vg-n5-00268",
+                "vg-n5-00269",
+                "vg-n5-00270",
+                "vg-n5-00271"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku Nihongo Sou Matome (N5–N1). Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 1 Nihongo Sou Matome (N5–N1).",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai からだ・健康・気持ち (Kesehatan, Tubuh & Perasaan).",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -361,17 +466,17 @@
               "id": "d1",
               "speaker": "Sensei",
               "speakerRole": "Tutor Belajar",
-              "jp": "Soumatome N2 第1課の勉強を始めましょう！",
+              "jp": "からだ・健康・気持ち (Kesehatan, Tubuh & Perasaan)の勉強を始めましょう！",
               "furigana": "べんきょうをはじめましょう！",
               "romaji": "Benkyou wo hajimemashou!",
-              "idText": "Mari kita mulai belajar Soumatome N2 Bab 1!"
+              "idText": "Mari kita mulai belajar からだ・健康・気持ち (Kesehatan, Tubuh & Perasaan)!"
             }
           ],
           "drills": [
             {
               "id": "dr1",
               "type": "multiple-choice",
-              "prompt": "Apa fokus utama pada materi Soumatome N2 Bab 1 di buku Nihongo Sou Matome (N5–N1)?",
+              "prompt": "Apa fokus utama pada materi からだ・健康・気持ち (Kesehatan, Tubuh & Perasaan) di buku Nihongo Sou Matome (N5–N1)?",
               "options": [
                 "Menguasai pola kalimat bab ini dengan pemahaman alami",
                 "Menghafal tanpa memahami konteks",
@@ -388,41 +493,62 @@
     {
       "unit_number": 6,
       "id": "unit-curriculum-book-soumatome-06",
-      "level": "n3",
+      "level": "n5",
       "pt_stage": 1,
-      "title_id": "Soumatome N2: Soumatome N2 Bab 2",
-      "title_jp": "Soumatome N2 第2課",
-      "theme": "Soumatome N2",
+      "title_id": "Soumatome N5: 社会・自然・コミュニケーション (Masyarakat & Komunikasi)",
+      "title_jp": "社会・自然・コミュニケーション (Masyarakat & Komunikasi)",
+      "theme": "Soumatome N5",
       "icon": "📗",
-      "can_do_summary": "Memahami silabus Soumatome N2 Bab 2 secara komprehensif.",
-      "grammar_ids": [],
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 社会・自然・コミュニケーション (Masyarakat & Komunikasi).",
+      "grammar_ids": [
+        "gn5-00016",
+        "gn5-00017",
+        "gn5-00018"
+      ],
       "vocab_ids": [
-        "vg-n5-00990"
+        "vg-n5-01175",
+        "vg-n5-01177",
+        "vg-n5-01186",
+        "vg-n5-01187"
       ],
       "lessons": [
         {
           "id": "les-curriculum-book-soumatome-u06-01",
           "lesson_number": 1,
-          "title_id": "Soumatome N2 Bab 2 (Eksplorasi Materi & Pola)",
-          "title_jp": "Soumatome N2 第2課（解説）",
+          "title_id": "社会・自然・コミュニケーション (Masyarakat & Komunikasi) (Eksplorasi Materi & Pola)",
+          "title_jp": "社会・自然・コミュニケーション (Masyarakat & Komunikasi)（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku Nihongo Sou Matome (N5–N1) pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa Nihongo Sou Matome (N5–N1) bab ini dalam konteks nyata.",
-          "grammar_ids": [],
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 社会・自然・コミュニケーション (Masyarakat & Komunikasi).",
+          "grammar_ids": [
+            "gn5-00016",
+            "gn5-00017",
+            "gn5-00018"
+          ],
           "vocab_ids": [
-            "vg-n5-00990"
+            "vg-n5-01175",
+            "vg-n5-01177",
+            "vg-n5-01186",
+            "vg-n5-01187"
           ],
           "pedagogical_framework": {
             "what": {
-              "summary": "Silabus resmi Nihongo Sou Matome (N5–N1) bab 2.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
-              "targetPatterns": [],
+              "summary": "Silabus resmi Nihongo Sou Matome (N5–N1) bab 6.",
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 社会・自然・コミュニケーション (Masyarakat & Komunikasi).",
+              "targetPatterns": [
+                "gn5-00016",
+                "gn5-00017",
+                "gn5-00018"
+              ],
               "coreVocabSample": [
-                "vg-n5-00990"
+                "vg-n5-01175",
+                "vg-n5-01177",
+                "vg-n5-01186",
+                "vg-n5-01187"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku Nihongo Sou Matome (N5–N1). Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 2 Nihongo Sou Matome (N5–N1).",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 社会・自然・コミュニケーション (Masyarakat & Komunikasi).",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -436,17 +562,17 @@
               "id": "d1",
               "speaker": "Sensei",
               "speakerRole": "Tutor Belajar",
-              "jp": "Soumatome N2 第2課の勉強を始めましょう！",
+              "jp": "社会・自然・コミュニケーション (Masyarakat & Komunikasi)の勉強を始めましょう！",
               "furigana": "べんきょうをはじめましょう！",
               "romaji": "Benkyou wo hajimemashou!",
-              "idText": "Mari kita mulai belajar Soumatome N2 Bab 2!"
+              "idText": "Mari kita mulai belajar 社会・自然・コミュニケーション (Masyarakat & Komunikasi)!"
             }
           ],
           "drills": [
             {
               "id": "dr1",
               "type": "multiple-choice",
-              "prompt": "Apa fokus utama pada materi Soumatome N2 Bab 2 di buku Nihongo Sou Matome (N5–N1)?",
+              "prompt": "Apa fokus utama pada materi 社会・自然・コミュニケーション (Masyarakat & Komunikasi) di buku Nihongo Sou Matome (N5–N1)?",
               "options": [
                 "Menguasai pola kalimat bab ini dengan pemahaman alami",
                 "Menghafal tanpa memahami konteks",
@@ -463,41 +589,62 @@
     {
       "unit_number": 7,
       "id": "unit-curriculum-book-soumatome-07",
-      "level": "n3",
+      "level": "n2",
       "pt_stage": 2,
-      "title_id": "Soumatome N2: Soumatome N2 Bab 3",
-      "title_jp": "Soumatome N2 第3課",
+      "title_id": "Soumatome N2: 人間関係・性格・感情 (Hubungan Antarmanusia, Sifat & Emosi)",
+      "title_jp": "人間関係・性格・感情 (Hubungan Antarmanusia, Sifat & Emosi)",
       "theme": "Soumatome N2",
       "icon": "📗",
-      "can_do_summary": "Memahami silabus Soumatome N2 Bab 3 secara komprehensif.",
-      "grammar_ids": [],
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 人間関係・性格・感情 (Hubungan Antarmanusia, Sifat & Emosi).",
+      "grammar_ids": [
+        "gn2-00001",
+        "gn2-00002",
+        "gn2-00003"
+      ],
       "vocab_ids": [
-        "vg-n5-00990"
+        "vg-n2-00051",
+        "vg-n2-00052",
+        "vg-n2-00053",
+        "vg-n2-00054"
       ],
       "lessons": [
         {
           "id": "les-curriculum-book-soumatome-u07-01",
           "lesson_number": 1,
-          "title_id": "Soumatome N2 Bab 3 (Eksplorasi Materi & Pola)",
-          "title_jp": "Soumatome N2 第3課（解説）",
+          "title_id": "人間関係・性格・感情 (Hubungan Antarmanusia, Sifat & Emosi) (Eksplorasi Materi & Pola)",
+          "title_jp": "人間関係・性格・感情 (Hubungan Antarmanusia, Sifat & Emosi)（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku Nihongo Sou Matome (N5–N1) pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa Nihongo Sou Matome (N5–N1) bab ini dalam konteks nyata.",
-          "grammar_ids": [],
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 人間関係・性格・感情 (Hubungan Antarmanusia, Sifat & Emosi).",
+          "grammar_ids": [
+            "gn2-00001",
+            "gn2-00002",
+            "gn2-00003"
+          ],
           "vocab_ids": [
-            "vg-n5-00990"
+            "vg-n2-00051",
+            "vg-n2-00052",
+            "vg-n2-00053",
+            "vg-n2-00054"
           ],
           "pedagogical_framework": {
             "what": {
-              "summary": "Silabus resmi Nihongo Sou Matome (N5–N1) bab 3.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
-              "targetPatterns": [],
+              "summary": "Silabus resmi Nihongo Sou Matome (N5–N1) bab 1.",
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 人間関係・性格・感情 (Hubungan Antarmanusia, Sifat & Emosi).",
+              "targetPatterns": [
+                "gn2-00001",
+                "gn2-00002",
+                "gn2-00003"
+              ],
               "coreVocabSample": [
-                "vg-n5-00990"
+                "vg-n2-00051",
+                "vg-n2-00052",
+                "vg-n2-00053",
+                "vg-n2-00054"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku Nihongo Sou Matome (N5–N1). Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 3 Nihongo Sou Matome (N5–N1).",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 人間関係・性格・感情 (Hubungan Antarmanusia, Sifat & Emosi).",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -511,17 +658,17 @@
               "id": "d1",
               "speaker": "Sensei",
               "speakerRole": "Tutor Belajar",
-              "jp": "Soumatome N2 第3課の勉強を始めましょう！",
+              "jp": "人間関係・性格・感情 (Hubungan Antarmanusia, Sifat & Emosi)の勉強を始めましょう！",
               "furigana": "べんきょうをはじめましょう！",
               "romaji": "Benkyou wo hajimemashou!",
-              "idText": "Mari kita mulai belajar Soumatome N2 Bab 3!"
+              "idText": "Mari kita mulai belajar 人間関係・性格・感情 (Hubungan Antarmanusia, Sifat & Emosi)!"
             }
           ],
           "drills": [
             {
               "id": "dr1",
               "type": "multiple-choice",
-              "prompt": "Apa fokus utama pada materi Soumatome N2 Bab 3 di buku Nihongo Sou Matome (N5–N1)?",
+              "prompt": "Apa fokus utama pada materi 人間関係・性格・感情 (Hubungan Antarmanusia, Sifat & Emosi) di buku Nihongo Sou Matome (N5–N1)?",
               "options": [
                 "Menguasai pola kalimat bab ini dengan pemahaman alami",
                 "Menghafal tanpa memahami konteks",
@@ -538,41 +685,62 @@
     {
       "unit_number": 8,
       "id": "unit-curriculum-book-soumatome-08",
-      "level": "n3",
+      "level": "n2",
       "pt_stage": 3,
-      "title_id": "Soumatome N2: Soumatome N2 Bab 4",
-      "title_jp": "Soumatome N2 第4課",
+      "title_id": "Soumatome N2: 暮らし・住まい・生活行動 (Gaya Hidup & Aktivitas Harian)",
+      "title_jp": "暮らし・住まい・生活行動 (Gaya Hidup & Aktivitas Harian)",
       "theme": "Soumatome N2",
       "icon": "📗",
-      "can_do_summary": "Memahami silabus Soumatome N2 Bab 4 secara komprehensif.",
-      "grammar_ids": [],
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 暮らし・住まい・生活行動 (Gaya Hidup & Aktivitas Harian).",
+      "grammar_ids": [
+        "gn2-00004",
+        "gn2-00005",
+        "gn2-00006"
+      ],
       "vocab_ids": [
-        "vg-n5-00990"
+        "vg-n2-00216",
+        "vg-n2-00217",
+        "vg-n2-00218",
+        "vg-n2-00219"
       ],
       "lessons": [
         {
           "id": "les-curriculum-book-soumatome-u08-01",
           "lesson_number": 1,
-          "title_id": "Soumatome N2 Bab 4 (Eksplorasi Materi & Pola)",
-          "title_jp": "Soumatome N2 第4課（解説）",
+          "title_id": "暮らし・住まい・生活行動 (Gaya Hidup & Aktivitas Harian) (Eksplorasi Materi & Pola)",
+          "title_jp": "暮らし・住まい・生活行動 (Gaya Hidup & Aktivitas Harian)（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku Nihongo Sou Matome (N5–N1) pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa Nihongo Sou Matome (N5–N1) bab ini dalam konteks nyata.",
-          "grammar_ids": [],
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 暮らし・住まい・生活行動 (Gaya Hidup & Aktivitas Harian).",
+          "grammar_ids": [
+            "gn2-00004",
+            "gn2-00005",
+            "gn2-00006"
+          ],
           "vocab_ids": [
-            "vg-n5-00990"
+            "vg-n2-00216",
+            "vg-n2-00217",
+            "vg-n2-00218",
+            "vg-n2-00219"
           ],
           "pedagogical_framework": {
             "what": {
-              "summary": "Silabus resmi Nihongo Sou Matome (N5–N1) bab 4.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
-              "targetPatterns": [],
+              "summary": "Silabus resmi Nihongo Sou Matome (N5–N1) bab 2.",
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 暮らし・住まい・生活行動 (Gaya Hidup & Aktivitas Harian).",
+              "targetPatterns": [
+                "gn2-00004",
+                "gn2-00005",
+                "gn2-00006"
+              ],
               "coreVocabSample": [
-                "vg-n5-00990"
+                "vg-n2-00216",
+                "vg-n2-00217",
+                "vg-n2-00218",
+                "vg-n2-00219"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku Nihongo Sou Matome (N5–N1). Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 4 Nihongo Sou Matome (N5–N1).",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 暮らし・住まい・生活行動 (Gaya Hidup & Aktivitas Harian).",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -586,17 +754,17 @@
               "id": "d1",
               "speaker": "Sensei",
               "speakerRole": "Tutor Belajar",
-              "jp": "Soumatome N2 第4課の勉強を始めましょう！",
+              "jp": "暮らし・住まい・生活行動 (Gaya Hidup & Aktivitas Harian)の勉強を始めましょう！",
               "furigana": "べんきょうをはじめましょう！",
               "romaji": "Benkyou wo hajimemashou!",
-              "idText": "Mari kita mulai belajar Soumatome N2 Bab 4!"
+              "idText": "Mari kita mulai belajar 暮らし・住まい・生活行動 (Gaya Hidup & Aktivitas Harian)!"
             }
           ],
           "drills": [
             {
               "id": "dr1",
               "type": "multiple-choice",
-              "prompt": "Apa fokus utama pada materi Soumatome N2 Bab 4 di buku Nihongo Sou Matome (N5–N1)?",
+              "prompt": "Apa fokus utama pada materi 暮らし・住まい・生活行動 (Gaya Hidup & Aktivitas Harian) di buku Nihongo Sou Matome (N5–N1)?",
               "options": [
                 "Menguasai pola kalimat bab ini dengan pemahaman alami",
                 "Menghafal tanpa memahami konteks",
@@ -613,41 +781,62 @@
     {
       "unit_number": 9,
       "id": "unit-curriculum-book-soumatome-09",
-      "level": "n3",
+      "level": "n2",
       "pt_stage": 4,
-      "title_id": "Soumatome N1: Soumatome N1 Bab 1",
-      "title_jp": "Soumatome N1 第1課",
-      "theme": "Soumatome N1",
+      "title_id": "Soumatome N2: 街・環境・移動 (Perkotaan, Lingkungan & Mobilitas)",
+      "title_jp": "街・環境・移動 (Perkotaan, Lingkungan & Mobilitas)",
+      "theme": "Soumatome N2",
       "icon": "📗",
-      "can_do_summary": "Memahami silabus Soumatome N1 Bab 1 secara komprehensif.",
-      "grammar_ids": [],
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 街・環境・移動 (Perkotaan, Lingkungan & Mobilitas).",
+      "grammar_ids": [
+        "gn2-00007",
+        "gn2-00008",
+        "gn2-00009"
+      ],
       "vocab_ids": [
-        "vg-n5-00990"
+        "vg-n2-00491",
+        "vg-n2-00493",
+        "vg-n2-00499",
+        "vg-n2-00500"
       ],
       "lessons": [
         {
           "id": "les-curriculum-book-soumatome-u09-01",
           "lesson_number": 1,
-          "title_id": "Soumatome N1 Bab 1 (Eksplorasi Materi & Pola)",
-          "title_jp": "Soumatome N1 第1課（解説）",
+          "title_id": "街・環境・移動 (Perkotaan, Lingkungan & Mobilitas) (Eksplorasi Materi & Pola)",
+          "title_jp": "街・環境・移動 (Perkotaan, Lingkungan & Mobilitas)（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku Nihongo Sou Matome (N5–N1) pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa Nihongo Sou Matome (N5–N1) bab ini dalam konteks nyata.",
-          "grammar_ids": [],
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 街・環境・移動 (Perkotaan, Lingkungan & Mobilitas).",
+          "grammar_ids": [
+            "gn2-00007",
+            "gn2-00008",
+            "gn2-00009"
+          ],
           "vocab_ids": [
-            "vg-n5-00990"
+            "vg-n2-00491",
+            "vg-n2-00493",
+            "vg-n2-00499",
+            "vg-n2-00500"
           ],
           "pedagogical_framework": {
             "what": {
-              "summary": "Silabus resmi Nihongo Sou Matome (N5–N1) bab 1.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
-              "targetPatterns": [],
+              "summary": "Silabus resmi Nihongo Sou Matome (N5–N1) bab 3.",
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 街・環境・移動 (Perkotaan, Lingkungan & Mobilitas).",
+              "targetPatterns": [
+                "gn2-00007",
+                "gn2-00008",
+                "gn2-00009"
+              ],
               "coreVocabSample": [
-                "vg-n5-00990"
+                "vg-n2-00491",
+                "vg-n2-00493",
+                "vg-n2-00499",
+                "vg-n2-00500"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku Nihongo Sou Matome (N5–N1). Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 1 Nihongo Sou Matome (N5–N1).",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 街・環境・移動 (Perkotaan, Lingkungan & Mobilitas).",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -661,17 +850,17 @@
               "id": "d1",
               "speaker": "Sensei",
               "speakerRole": "Tutor Belajar",
-              "jp": "Soumatome N1 第1課の勉強を始めましょう！",
+              "jp": "街・環境・移動 (Perkotaan, Lingkungan & Mobilitas)の勉強を始めましょう！",
               "furigana": "べんきょうをはじめましょう！",
               "romaji": "Benkyou wo hajimemashou!",
-              "idText": "Mari kita mulai belajar Soumatome N1 Bab 1!"
+              "idText": "Mari kita mulai belajar 街・環境・移動 (Perkotaan, Lingkungan & Mobilitas)!"
             }
           ],
           "drills": [
             {
               "id": "dr1",
               "type": "multiple-choice",
-              "prompt": "Apa fokus utama pada materi Soumatome N1 Bab 1 di buku Nihongo Sou Matome (N5–N1)?",
+              "prompt": "Apa fokus utama pada materi 街・環境・移動 (Perkotaan, Lingkungan & Mobilitas) di buku Nihongo Sou Matome (N5–N1)?",
               "options": [
                 "Menguasai pola kalimat bab ini dengan pemahaman alami",
                 "Menghafal tanpa memahami konteks",
@@ -688,41 +877,62 @@
     {
       "unit_number": 10,
       "id": "unit-curriculum-book-soumatome-10",
-      "level": "n3",
+      "level": "n2",
       "pt_stage": 5,
-      "title_id": "Soumatome N1: Soumatome N1 Bab 2",
-      "title_jp": "Soumatome N1 第2課",
-      "theme": "Soumatome N1",
+      "title_id": "Soumatome N2: 仕事・ビジネス・職場 (Dunia Kerja, Bisnis & Kantor)",
+      "title_jp": "仕事・ビジネス・職場 (Dunia Kerja, Bisnis & Kantor)",
+      "theme": "Soumatome N2",
       "icon": "📗",
-      "can_do_summary": "Memahami silabus Soumatome N1 Bab 2 secara komprehensif.",
-      "grammar_ids": [],
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 仕事・ビジネス・職場 (Dunia Kerja, Bisnis & Kantor).",
+      "grammar_ids": [
+        "gn2-00010",
+        "gn2-00011",
+        "gn2-00012"
+      ],
       "vocab_ids": [
-        "vg-n5-00990"
+        "vg-n2-00690",
+        "vg-n2-00691",
+        "vg-n2-00693",
+        "vg-n2-00694"
       ],
       "lessons": [
         {
           "id": "les-curriculum-book-soumatome-u10-01",
           "lesson_number": 1,
-          "title_id": "Soumatome N1 Bab 2 (Eksplorasi Materi & Pola)",
-          "title_jp": "Soumatome N1 第2課（解説）",
+          "title_id": "仕事・ビジネス・職場 (Dunia Kerja, Bisnis & Kantor) (Eksplorasi Materi & Pola)",
+          "title_jp": "仕事・ビジネス・職場 (Dunia Kerja, Bisnis & Kantor)（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku Nihongo Sou Matome (N5–N1) pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa Nihongo Sou Matome (N5–N1) bab ini dalam konteks nyata.",
-          "grammar_ids": [],
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 仕事・ビジネス・職場 (Dunia Kerja, Bisnis & Kantor).",
+          "grammar_ids": [
+            "gn2-00010",
+            "gn2-00011",
+            "gn2-00012"
+          ],
           "vocab_ids": [
-            "vg-n5-00990"
+            "vg-n2-00690",
+            "vg-n2-00691",
+            "vg-n2-00693",
+            "vg-n2-00694"
           ],
           "pedagogical_framework": {
             "what": {
-              "summary": "Silabus resmi Nihongo Sou Matome (N5–N1) bab 2.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
-              "targetPatterns": [],
+              "summary": "Silabus resmi Nihongo Sou Matome (N5–N1) bab 4.",
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 仕事・ビジネス・職場 (Dunia Kerja, Bisnis & Kantor).",
+              "targetPatterns": [
+                "gn2-00010",
+                "gn2-00011",
+                "gn2-00012"
+              ],
               "coreVocabSample": [
-                "vg-n5-00990"
+                "vg-n2-00690",
+                "vg-n2-00691",
+                "vg-n2-00693",
+                "vg-n2-00694"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku Nihongo Sou Matome (N5–N1). Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 2 Nihongo Sou Matome (N5–N1).",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 仕事・ビジネス・職場 (Dunia Kerja, Bisnis & Kantor).",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -736,17 +946,17 @@
               "id": "d1",
               "speaker": "Sensei",
               "speakerRole": "Tutor Belajar",
-              "jp": "Soumatome N1 第2課の勉強を始めましょう！",
+              "jp": "仕事・ビジネス・職場 (Dunia Kerja, Bisnis & Kantor)の勉強を始めましょう！",
               "furigana": "べんきょうをはじめましょう！",
               "romaji": "Benkyou wo hajimemashou!",
-              "idText": "Mari kita mulai belajar Soumatome N1 Bab 2!"
+              "idText": "Mari kita mulai belajar 仕事・ビジネス・職場 (Dunia Kerja, Bisnis & Kantor)!"
             }
           ],
           "drills": [
             {
               "id": "dr1",
               "type": "multiple-choice",
-              "prompt": "Apa fokus utama pada materi Soumatome N1 Bab 2 di buku Nihongo Sou Matome (N5–N1)?",
+              "prompt": "Apa fokus utama pada materi 仕事・ビジネス・職場 (Dunia Kerja, Bisnis & Kantor) di buku Nihongo Sou Matome (N5–N1)?",
               "options": [
                 "Menguasai pola kalimat bab ini dengan pemahaman alami",
                 "Menghafal tanpa memahami konteks",
@@ -763,41 +973,62 @@
     {
       "unit_number": 11,
       "id": "unit-curriculum-book-soumatome-11",
-      "level": "n3",
+      "level": "n2",
       "pt_stage": 6,
-      "title_id": "Soumatome N1: Soumatome N1 Bab 3",
-      "title_jp": "Soumatome N1 第3課",
-      "theme": "Soumatome N1",
+      "title_id": "Soumatome N2: 教育・学校・専門 (Pendidikan, Riset & Akademis)",
+      "title_jp": "教育・学校・専門 (Pendidikan, Riset & Akademis)",
+      "theme": "Soumatome N2",
       "icon": "📗",
-      "can_do_summary": "Memahami silabus Soumatome N1 Bab 3 secara komprehensif.",
-      "grammar_ids": [],
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 教育・学校・専門 (Pendidikan, Riset & Akademis).",
+      "grammar_ids": [
+        "gn2-00013",
+        "gn2-00014",
+        "gn2-00015"
+      ],
       "vocab_ids": [
-        "vg-n5-00990"
+        "vg-n2-00919",
+        "vg-n2-00921",
+        "vg-n2-00926",
+        "vg-n2-00930"
       ],
       "lessons": [
         {
           "id": "les-curriculum-book-soumatome-u11-01",
           "lesson_number": 1,
-          "title_id": "Soumatome N1 Bab 3 (Eksplorasi Materi & Pola)",
-          "title_jp": "Soumatome N1 第3課（解説）",
+          "title_id": "教育・学校・専門 (Pendidikan, Riset & Akademis) (Eksplorasi Materi & Pola)",
+          "title_jp": "教育・学校・専門 (Pendidikan, Riset & Akademis)（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku Nihongo Sou Matome (N5–N1) pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa Nihongo Sou Matome (N5–N1) bab ini dalam konteks nyata.",
-          "grammar_ids": [],
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 教育・学校・専門 (Pendidikan, Riset & Akademis).",
+          "grammar_ids": [
+            "gn2-00013",
+            "gn2-00014",
+            "gn2-00015"
+          ],
           "vocab_ids": [
-            "vg-n5-00990"
+            "vg-n2-00919",
+            "vg-n2-00921",
+            "vg-n2-00926",
+            "vg-n2-00930"
           ],
           "pedagogical_framework": {
             "what": {
-              "summary": "Silabus resmi Nihongo Sou Matome (N5–N1) bab 3.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
-              "targetPatterns": [],
+              "summary": "Silabus resmi Nihongo Sou Matome (N5–N1) bab 5.",
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 教育・学校・専門 (Pendidikan, Riset & Akademis).",
+              "targetPatterns": [
+                "gn2-00013",
+                "gn2-00014",
+                "gn2-00015"
+              ],
               "coreVocabSample": [
-                "vg-n5-00990"
+                "vg-n2-00919",
+                "vg-n2-00921",
+                "vg-n2-00926",
+                "vg-n2-00930"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku Nihongo Sou Matome (N5–N1). Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 3 Nihongo Sou Matome (N5–N1).",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 教育・学校・専門 (Pendidikan, Riset & Akademis).",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -811,17 +1042,17 @@
               "id": "d1",
               "speaker": "Sensei",
               "speakerRole": "Tutor Belajar",
-              "jp": "Soumatome N1 第3課の勉強を始めましょう！",
+              "jp": "教育・学校・専門 (Pendidikan, Riset & Akademis)の勉強を始めましょう！",
               "furigana": "べんきょうをはじめましょう！",
               "romaji": "Benkyou wo hajimemashou!",
-              "idText": "Mari kita mulai belajar Soumatome N1 Bab 3!"
+              "idText": "Mari kita mulai belajar 教育・学校・専門 (Pendidikan, Riset & Akademis)!"
             }
           ],
           "drills": [
             {
               "id": "dr1",
               "type": "multiple-choice",
-              "prompt": "Apa fokus utama pada materi Soumatome N1 Bab 3 di buku Nihongo Sou Matome (N5–N1)?",
+              "prompt": "Apa fokus utama pada materi 教育・学校・専門 (Pendidikan, Riset & Akademis) di buku Nihongo Sou Matome (N5–N1)?",
               "options": [
                 "Menguasai pola kalimat bab ini dengan pemahaman alami",
                 "Menghafal tanpa memahami konteks",
@@ -838,41 +1069,62 @@
     {
       "unit_number": 12,
       "id": "unit-curriculum-book-soumatome-12",
-      "level": "n3",
+      "level": "n2",
       "pt_stage": 1,
-      "title_id": "Soumatome N1: Soumatome N1 Bab 4",
-      "title_jp": "Soumatome N1 第4課",
-      "theme": "Soumatome N1",
+      "title_id": "Soumatome N2: からだ・医療・安全 (Kesehatan, Medis & Keselamatan)",
+      "title_jp": "からだ・医療・安全 (Kesehatan, Medis & Keselamatan)",
+      "theme": "Soumatome N2",
       "icon": "📗",
-      "can_do_summary": "Memahami silabus Soumatome N1 Bab 4 secara komprehensif.",
-      "grammar_ids": [],
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai からだ・医療・安全 (Kesehatan, Medis & Keselamatan).",
+      "grammar_ids": [
+        "gn2-00016",
+        "gn2-00017",
+        "gn2-00018"
+      ],
       "vocab_ids": [
-        "vg-n5-00990"
+        "vg-n2-01152",
+        "vg-n2-01153",
+        "vg-n2-01154",
+        "vg-n2-01155"
       ],
       "lessons": [
         {
           "id": "les-curriculum-book-soumatome-u12-01",
           "lesson_number": 1,
-          "title_id": "Soumatome N1 Bab 4 (Eksplorasi Materi & Pola)",
-          "title_jp": "Soumatome N1 第4課（解説）",
+          "title_id": "からだ・医療・安全 (Kesehatan, Medis & Keselamatan) (Eksplorasi Materi & Pola)",
+          "title_jp": "からだ・医療・安全 (Kesehatan, Medis & Keselamatan)（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku Nihongo Sou Matome (N5–N1) pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa Nihongo Sou Matome (N5–N1) bab ini dalam konteks nyata.",
-          "grammar_ids": [],
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai からだ・医療・安全 (Kesehatan, Medis & Keselamatan).",
+          "grammar_ids": [
+            "gn2-00016",
+            "gn2-00017",
+            "gn2-00018"
+          ],
           "vocab_ids": [
-            "vg-n5-00990"
+            "vg-n2-01152",
+            "vg-n2-01153",
+            "vg-n2-01154",
+            "vg-n2-01155"
           ],
           "pedagogical_framework": {
             "what": {
-              "summary": "Silabus resmi Nihongo Sou Matome (N5–N1) bab 4.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
-              "targetPatterns": [],
+              "summary": "Silabus resmi Nihongo Sou Matome (N5–N1) bab 6.",
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai からだ・医療・安全 (Kesehatan, Medis & Keselamatan).",
+              "targetPatterns": [
+                "gn2-00016",
+                "gn2-00017",
+                "gn2-00018"
+              ],
               "coreVocabSample": [
-                "vg-n5-00990"
+                "vg-n2-01152",
+                "vg-n2-01153",
+                "vg-n2-01154",
+                "vg-n2-01155"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku Nihongo Sou Matome (N5–N1). Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 4 Nihongo Sou Matome (N5–N1).",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai からだ・医療・安全 (Kesehatan, Medis & Keselamatan).",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -886,17 +1138,977 @@
               "id": "d1",
               "speaker": "Sensei",
               "speakerRole": "Tutor Belajar",
-              "jp": "Soumatome N1 第4課の勉強を始めましょう！",
+              "jp": "からだ・医療・安全 (Kesehatan, Medis & Keselamatan)の勉強を始めましょう！",
               "furigana": "べんきょうをはじめましょう！",
               "romaji": "Benkyou wo hajimemashou!",
-              "idText": "Mari kita mulai belajar Soumatome N1 Bab 4!"
+              "idText": "Mari kita mulai belajar からだ・医療・安全 (Kesehatan, Medis & Keselamatan)!"
             }
           ],
           "drills": [
             {
               "id": "dr1",
               "type": "multiple-choice",
-              "prompt": "Apa fokus utama pada materi Soumatome N1 Bab 4 di buku Nihongo Sou Matome (N5–N1)?",
+              "prompt": "Apa fokus utama pada materi からだ・医療・安全 (Kesehatan, Medis & Keselamatan) di buku Nihongo Sou Matome (N5–N1)?",
+              "options": [
+                "Menguasai pola kalimat bab ini dengan pemahaman alami",
+                "Menghafal tanpa memahami konteks",
+                "Mengabaikan intonasi pengucapan",
+                "Hanya membaca terjemahan bahasa Inggris"
+              ],
+              "correctAnswer": "Menguasai pola kalimat bab ini dengan pemahaman alami",
+              "explanation": "Setiap bab dirancang untuk memperkuat kemampuan komunikasi fungsional pembelajar."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 13,
+      "id": "unit-curriculum-book-soumatome-13",
+      "level": "n2",
+      "pt_stage": 2,
+      "title_id": "Soumatome N2: 社会・経済・ニュース (Masyarakat, Ekonomi & Isu Berita)",
+      "title_jp": "社会・経済・ニュース (Masyarakat, Ekonomi & Isu Berita)",
+      "theme": "Soumatome N2",
+      "icon": "📗",
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 社会・経済・ニュース (Masyarakat, Ekonomi & Isu Berita).",
+      "grammar_ids": [
+        "gn2-00019",
+        "gn2-00020",
+        "gn2-00021"
+      ],
+      "vocab_ids": [
+        "vg-n2-01423",
+        "vg-n2-01424",
+        "vg-n2-01426",
+        "vg-n2-01427"
+      ],
+      "lessons": [
+        {
+          "id": "les-curriculum-book-soumatome-u13-01",
+          "lesson_number": 1,
+          "title_id": "社会・経済・ニュース (Masyarakat, Ekonomi & Isu Berita) (Eksplorasi Materi & Pola)",
+          "title_jp": "社会・経済・ニュース (Masyarakat, Ekonomi & Isu Berita)（解説）",
+          "desc_id": "Mempelajari urutan materi pedagogis buku Nihongo Sou Matome (N5–N1) pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 社会・経済・ニュース (Masyarakat, Ekonomi & Isu Berita).",
+          "grammar_ids": [
+            "gn2-00019",
+            "gn2-00020",
+            "gn2-00021"
+          ],
+          "vocab_ids": [
+            "vg-n2-01423",
+            "vg-n2-01424",
+            "vg-n2-01426",
+            "vg-n2-01427"
+          ],
+          "pedagogical_framework": {
+            "what": {
+              "summary": "Silabus resmi Nihongo Sou Matome (N5–N1) bab 7.",
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 社会・経済・ニュース (Masyarakat, Ekonomi & Isu Berita).",
+              "targetPatterns": [
+                "gn2-00019",
+                "gn2-00020",
+                "gn2-00021"
+              ],
+              "coreVocabSample": [
+                "vg-n2-01423",
+                "vg-n2-01424",
+                "vg-n2-01426",
+                "vg-n2-01427"
+              ]
+            },
+            "sensei_context": {
+              "sceneIntro": "Kamu sedang mempelajari buku Nihongo Sou Matome (N5–N1). Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 社会・経済・ニュース (Masyarakat, Ekonomi & Isu Berita).",
+              "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
+            },
+            "cultural_notes": {
+              "title": "Catatan Budaya & Konteks Pemakaian (Nihongo Sou Matome (N5–N1))",
+              "etiquette": "Perhatikan konteks formalitas saat menggunakan pola kalimat ini kepada guru, teman, atau atasan.",
+              "taboos": "Hindari penggunaan pola kasual kepada orang yang baru pertama kali ditemui."
+            }
+          },
+          "dialogue": [
+            {
+              "id": "d1",
+              "speaker": "Sensei",
+              "speakerRole": "Tutor Belajar",
+              "jp": "社会・経済・ニュース (Masyarakat, Ekonomi & Isu Berita)の勉強を始めましょう！",
+              "furigana": "べんきょうをはじめましょう！",
+              "romaji": "Benkyou wo hajimemashou!",
+              "idText": "Mari kita mulai belajar 社会・経済・ニュース (Masyarakat, Ekonomi & Isu Berita)!"
+            }
+          ],
+          "drills": [
+            {
+              "id": "dr1",
+              "type": "multiple-choice",
+              "prompt": "Apa fokus utama pada materi 社会・経済・ニュース (Masyarakat, Ekonomi & Isu Berita) di buku Nihongo Sou Matome (N5–N1)?",
+              "options": [
+                "Menguasai pola kalimat bab ini dengan pemahaman alami",
+                "Menghafal tanpa memahami konteks",
+                "Mengabaikan intonasi pengucapan",
+                "Hanya membaca terjemahan bahasa Inggris"
+              ],
+              "correctAnswer": "Menguasai pola kalimat bab ini dengan pemahaman alami",
+              "explanation": "Setiap bab dirancang untuk memperkuat kemampuan komunikasi fungsional pembelajar."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 14,
+      "id": "unit-curriculum-book-soumatome-14",
+      "level": "n2",
+      "pt_stage": 3,
+      "title_id": "Soumatome N2: 抽象・評価・論理 (Konsep Abstrak, Logika & Evaluasi)",
+      "title_jp": "抽象・評価・論理 (Konsep Abstrak, Logika & Evaluasi)",
+      "theme": "Soumatome N2",
+      "icon": "📗",
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 抽象・評価・論理 (Konsep Abstrak, Logika & Evaluasi).",
+      "grammar_ids": [
+        "gn2-00022",
+        "gn2-00023",
+        "gn2-00024"
+      ],
+      "vocab_ids": [
+        "vg-n2-01617",
+        "vg-n2-01618",
+        "vg-n2-01619",
+        "vg-n2-01620"
+      ],
+      "lessons": [
+        {
+          "id": "les-curriculum-book-soumatome-u14-01",
+          "lesson_number": 1,
+          "title_id": "抽象・評価・論理 (Konsep Abstrak, Logika & Evaluasi) (Eksplorasi Materi & Pola)",
+          "title_jp": "抽象・評価・論理 (Konsep Abstrak, Logika & Evaluasi)（解説）",
+          "desc_id": "Mempelajari urutan materi pedagogis buku Nihongo Sou Matome (N5–N1) pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 抽象・評価・論理 (Konsep Abstrak, Logika & Evaluasi).",
+          "grammar_ids": [
+            "gn2-00022",
+            "gn2-00023",
+            "gn2-00024"
+          ],
+          "vocab_ids": [
+            "vg-n2-01617",
+            "vg-n2-01618",
+            "vg-n2-01619",
+            "vg-n2-01620"
+          ],
+          "pedagogical_framework": {
+            "what": {
+              "summary": "Silabus resmi Nihongo Sou Matome (N5–N1) bab 8.",
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 抽象・評価・論理 (Konsep Abstrak, Logika & Evaluasi).",
+              "targetPatterns": [
+                "gn2-00022",
+                "gn2-00023",
+                "gn2-00024"
+              ],
+              "coreVocabSample": [
+                "vg-n2-01617",
+                "vg-n2-01618",
+                "vg-n2-01619",
+                "vg-n2-01620"
+              ]
+            },
+            "sensei_context": {
+              "sceneIntro": "Kamu sedang mempelajari buku Nihongo Sou Matome (N5–N1). Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 抽象・評価・論理 (Konsep Abstrak, Logika & Evaluasi).",
+              "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
+            },
+            "cultural_notes": {
+              "title": "Catatan Budaya & Konteks Pemakaian (Nihongo Sou Matome (N5–N1))",
+              "etiquette": "Perhatikan konteks formalitas saat menggunakan pola kalimat ini kepada guru, teman, atau atasan.",
+              "taboos": "Hindari penggunaan pola kasual kepada orang yang baru pertama kali ditemui."
+            }
+          },
+          "dialogue": [
+            {
+              "id": "d1",
+              "speaker": "Sensei",
+              "speakerRole": "Tutor Belajar",
+              "jp": "抽象・評価・論理 (Konsep Abstrak, Logika & Evaluasi)の勉強を始めましょう！",
+              "furigana": "べんきょうをはじめましょう！",
+              "romaji": "Benkyou wo hajimemashou!",
+              "idText": "Mari kita mulai belajar 抽象・評価・論理 (Konsep Abstrak, Logika & Evaluasi)!"
+            }
+          ],
+          "drills": [
+            {
+              "id": "dr1",
+              "type": "multiple-choice",
+              "prompt": "Apa fokus utama pada materi 抽象・評価・論理 (Konsep Abstrak, Logika & Evaluasi) di buku Nihongo Sou Matome (N5–N1)?",
+              "options": [
+                "Menguasai pola kalimat bab ini dengan pemahaman alami",
+                "Menghafal tanpa memahami konteks",
+                "Mengabaikan intonasi pengucapan",
+                "Hanya membaca terjemahan bahasa Inggris"
+              ],
+              "correctAnswer": "Menguasai pola kalimat bab ini dengan pemahaman alami",
+              "explanation": "Setiap bab dirancang untuk memperkuat kemampuan komunikasi fungsional pembelajar."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 15,
+      "id": "unit-curriculum-book-soumatome-15",
+      "level": "n1",
+      "pt_stage": 4,
+      "title_id": "Soumatome N1: 人間関係・性格・感情 (Hubungan Antarmanusia, Sifat & Emosi)",
+      "title_jp": "人間関係・性格・感情 (Hubungan Antarmanusia, Sifat & Emosi)",
+      "theme": "Soumatome N1",
+      "icon": "📗",
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 人間関係・性格・感情 (Hubungan Antarmanusia, Sifat & Emosi).",
+      "grammar_ids": [
+        "gn1-00001",
+        "gn1-00002",
+        "gn1-00003"
+      ],
+      "vocab_ids": [
+        "vg-n1-00029",
+        "vg-n1-00030",
+        "vg-n1-00031",
+        "vg-n1-00032"
+      ],
+      "lessons": [
+        {
+          "id": "les-curriculum-book-soumatome-u15-01",
+          "lesson_number": 1,
+          "title_id": "人間関係・性格・感情 (Hubungan Antarmanusia, Sifat & Emosi) (Eksplorasi Materi & Pola)",
+          "title_jp": "人間関係・性格・感情 (Hubungan Antarmanusia, Sifat & Emosi)（解説）",
+          "desc_id": "Mempelajari urutan materi pedagogis buku Nihongo Sou Matome (N5–N1) pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 人間関係・性格・感情 (Hubungan Antarmanusia, Sifat & Emosi).",
+          "grammar_ids": [
+            "gn1-00001",
+            "gn1-00002",
+            "gn1-00003"
+          ],
+          "vocab_ids": [
+            "vg-n1-00029",
+            "vg-n1-00030",
+            "vg-n1-00031",
+            "vg-n1-00032"
+          ],
+          "pedagogical_framework": {
+            "what": {
+              "summary": "Silabus resmi Nihongo Sou Matome (N5–N1) bab 1.",
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 人間関係・性格・感情 (Hubungan Antarmanusia, Sifat & Emosi).",
+              "targetPatterns": [
+                "gn1-00001",
+                "gn1-00002",
+                "gn1-00003"
+              ],
+              "coreVocabSample": [
+                "vg-n1-00029",
+                "vg-n1-00030",
+                "vg-n1-00031",
+                "vg-n1-00032"
+              ]
+            },
+            "sensei_context": {
+              "sceneIntro": "Kamu sedang mempelajari buku Nihongo Sou Matome (N5–N1). Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 人間関係・性格・感情 (Hubungan Antarmanusia, Sifat & Emosi).",
+              "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
+            },
+            "cultural_notes": {
+              "title": "Catatan Budaya & Konteks Pemakaian (Nihongo Sou Matome (N5–N1))",
+              "etiquette": "Perhatikan konteks formalitas saat menggunakan pola kalimat ini kepada guru, teman, atau atasan.",
+              "taboos": "Hindari penggunaan pola kasual kepada orang yang baru pertama kali ditemui."
+            }
+          },
+          "dialogue": [
+            {
+              "id": "d1",
+              "speaker": "Sensei",
+              "speakerRole": "Tutor Belajar",
+              "jp": "人間関係・性格・感情 (Hubungan Antarmanusia, Sifat & Emosi)の勉強を始めましょう！",
+              "furigana": "べんきょうをはじめましょう！",
+              "romaji": "Benkyou wo hajimemashou!",
+              "idText": "Mari kita mulai belajar 人間関係・性格・感情 (Hubungan Antarmanusia, Sifat & Emosi)!"
+            }
+          ],
+          "drills": [
+            {
+              "id": "dr1",
+              "type": "multiple-choice",
+              "prompt": "Apa fokus utama pada materi 人間関係・性格・感情 (Hubungan Antarmanusia, Sifat & Emosi) di buku Nihongo Sou Matome (N5–N1)?",
+              "options": [
+                "Menguasai pola kalimat bab ini dengan pemahaman alami",
+                "Menghafal tanpa memahami konteks",
+                "Mengabaikan intonasi pengucapan",
+                "Hanya membaca terjemahan bahasa Inggris"
+              ],
+              "correctAnswer": "Menguasai pola kalimat bab ini dengan pemahaman alami",
+              "explanation": "Setiap bab dirancang untuk memperkuat kemampuan komunikasi fungsional pembelajar."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 16,
+      "id": "unit-curriculum-book-soumatome-16",
+      "level": "n1",
+      "pt_stage": 5,
+      "title_id": "Soumatome N1: 暮らし・住まい・生活行動 (Gaya Hidup & Aktivitas Harian)",
+      "title_jp": "暮らし・住まい・生活行動 (Gaya Hidup & Aktivitas Harian)",
+      "theme": "Soumatome N1",
+      "icon": "📗",
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 暮らし・住まい・生活行動 (Gaya Hidup & Aktivitas Harian).",
+      "grammar_ids": [
+        "gn1-00004",
+        "gn1-00005",
+        "gn1-00006"
+      ],
+      "vocab_ids": [
+        "vg-n1-00166",
+        "vg-n1-00167",
+        "vg-n1-00168",
+        "vg-n1-00169"
+      ],
+      "lessons": [
+        {
+          "id": "les-curriculum-book-soumatome-u16-01",
+          "lesson_number": 1,
+          "title_id": "暮らし・住まい・生活行動 (Gaya Hidup & Aktivitas Harian) (Eksplorasi Materi & Pola)",
+          "title_jp": "暮らし・住まい・生活行動 (Gaya Hidup & Aktivitas Harian)（解説）",
+          "desc_id": "Mempelajari urutan materi pedagogis buku Nihongo Sou Matome (N5–N1) pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 暮らし・住まい・生活行動 (Gaya Hidup & Aktivitas Harian).",
+          "grammar_ids": [
+            "gn1-00004",
+            "gn1-00005",
+            "gn1-00006"
+          ],
+          "vocab_ids": [
+            "vg-n1-00166",
+            "vg-n1-00167",
+            "vg-n1-00168",
+            "vg-n1-00169"
+          ],
+          "pedagogical_framework": {
+            "what": {
+              "summary": "Silabus resmi Nihongo Sou Matome (N5–N1) bab 2.",
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 暮らし・住まい・生活行動 (Gaya Hidup & Aktivitas Harian).",
+              "targetPatterns": [
+                "gn1-00004",
+                "gn1-00005",
+                "gn1-00006"
+              ],
+              "coreVocabSample": [
+                "vg-n1-00166",
+                "vg-n1-00167",
+                "vg-n1-00168",
+                "vg-n1-00169"
+              ]
+            },
+            "sensei_context": {
+              "sceneIntro": "Kamu sedang mempelajari buku Nihongo Sou Matome (N5–N1). Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 暮らし・住まい・生活行動 (Gaya Hidup & Aktivitas Harian).",
+              "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
+            },
+            "cultural_notes": {
+              "title": "Catatan Budaya & Konteks Pemakaian (Nihongo Sou Matome (N5–N1))",
+              "etiquette": "Perhatikan konteks formalitas saat menggunakan pola kalimat ini kepada guru, teman, atau atasan.",
+              "taboos": "Hindari penggunaan pola kasual kepada orang yang baru pertama kali ditemui."
+            }
+          },
+          "dialogue": [
+            {
+              "id": "d1",
+              "speaker": "Sensei",
+              "speakerRole": "Tutor Belajar",
+              "jp": "暮らし・住まい・生活行動 (Gaya Hidup & Aktivitas Harian)の勉強を始めましょう！",
+              "furigana": "べんきょうをはじめましょう！",
+              "romaji": "Benkyou wo hajimemashou!",
+              "idText": "Mari kita mulai belajar 暮らし・住まい・生活行動 (Gaya Hidup & Aktivitas Harian)!"
+            }
+          ],
+          "drills": [
+            {
+              "id": "dr1",
+              "type": "multiple-choice",
+              "prompt": "Apa fokus utama pada materi 暮らし・住まい・生活行動 (Gaya Hidup & Aktivitas Harian) di buku Nihongo Sou Matome (N5–N1)?",
+              "options": [
+                "Menguasai pola kalimat bab ini dengan pemahaman alami",
+                "Menghafal tanpa memahami konteks",
+                "Mengabaikan intonasi pengucapan",
+                "Hanya membaca terjemahan bahasa Inggris"
+              ],
+              "correctAnswer": "Menguasai pola kalimat bab ini dengan pemahaman alami",
+              "explanation": "Setiap bab dirancang untuk memperkuat kemampuan komunikasi fungsional pembelajar."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 17,
+      "id": "unit-curriculum-book-soumatome-17",
+      "level": "n1",
+      "pt_stage": 6,
+      "title_id": "Soumatome N1: 街・環境・移動 (Perkotaan, Lingkungan & Mobilitas)",
+      "title_jp": "街・環境・移動 (Perkotaan, Lingkungan & Mobilitas)",
+      "theme": "Soumatome N1",
+      "icon": "📗",
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 街・環境・移動 (Perkotaan, Lingkungan & Mobilitas).",
+      "grammar_ids": [
+        "gn1-00007",
+        "gn1-00008",
+        "gn1-00009"
+      ],
+      "vocab_ids": [
+        "vg-n1-00386",
+        "vg-n1-00403",
+        "vg-n1-00404",
+        "vg-n1-00406"
+      ],
+      "lessons": [
+        {
+          "id": "les-curriculum-book-soumatome-u17-01",
+          "lesson_number": 1,
+          "title_id": "街・環境・移動 (Perkotaan, Lingkungan & Mobilitas) (Eksplorasi Materi & Pola)",
+          "title_jp": "街・環境・移動 (Perkotaan, Lingkungan & Mobilitas)（解説）",
+          "desc_id": "Mempelajari urutan materi pedagogis buku Nihongo Sou Matome (N5–N1) pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 街・環境・移動 (Perkotaan, Lingkungan & Mobilitas).",
+          "grammar_ids": [
+            "gn1-00007",
+            "gn1-00008",
+            "gn1-00009"
+          ],
+          "vocab_ids": [
+            "vg-n1-00386",
+            "vg-n1-00403",
+            "vg-n1-00404",
+            "vg-n1-00406"
+          ],
+          "pedagogical_framework": {
+            "what": {
+              "summary": "Silabus resmi Nihongo Sou Matome (N5–N1) bab 3.",
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 街・環境・移動 (Perkotaan, Lingkungan & Mobilitas).",
+              "targetPatterns": [
+                "gn1-00007",
+                "gn1-00008",
+                "gn1-00009"
+              ],
+              "coreVocabSample": [
+                "vg-n1-00386",
+                "vg-n1-00403",
+                "vg-n1-00404",
+                "vg-n1-00406"
+              ]
+            },
+            "sensei_context": {
+              "sceneIntro": "Kamu sedang mempelajari buku Nihongo Sou Matome (N5–N1). Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 街・環境・移動 (Perkotaan, Lingkungan & Mobilitas).",
+              "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
+            },
+            "cultural_notes": {
+              "title": "Catatan Budaya & Konteks Pemakaian (Nihongo Sou Matome (N5–N1))",
+              "etiquette": "Perhatikan konteks formalitas saat menggunakan pola kalimat ini kepada guru, teman, atau atasan.",
+              "taboos": "Hindari penggunaan pola kasual kepada orang yang baru pertama kali ditemui."
+            }
+          },
+          "dialogue": [
+            {
+              "id": "d1",
+              "speaker": "Sensei",
+              "speakerRole": "Tutor Belajar",
+              "jp": "街・環境・移動 (Perkotaan, Lingkungan & Mobilitas)の勉強を始めましょう！",
+              "furigana": "べんきょうをはじめましょう！",
+              "romaji": "Benkyou wo hajimemashou!",
+              "idText": "Mari kita mulai belajar 街・環境・移動 (Perkotaan, Lingkungan & Mobilitas)!"
+            }
+          ],
+          "drills": [
+            {
+              "id": "dr1",
+              "type": "multiple-choice",
+              "prompt": "Apa fokus utama pada materi 街・環境・移動 (Perkotaan, Lingkungan & Mobilitas) di buku Nihongo Sou Matome (N5–N1)?",
+              "options": [
+                "Menguasai pola kalimat bab ini dengan pemahaman alami",
+                "Menghafal tanpa memahami konteks",
+                "Mengabaikan intonasi pengucapan",
+                "Hanya membaca terjemahan bahasa Inggris"
+              ],
+              "correctAnswer": "Menguasai pola kalimat bab ini dengan pemahaman alami",
+              "explanation": "Setiap bab dirancang untuk memperkuat kemampuan komunikasi fungsional pembelajar."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 18,
+      "id": "unit-curriculum-book-soumatome-18",
+      "level": "n1",
+      "pt_stage": 1,
+      "title_id": "Soumatome N1: 仕事・ビジネス・職場 (Dunia Kerja, Bisnis & Kantor)",
+      "title_jp": "仕事・ビジネス・職場 (Dunia Kerja, Bisnis & Kantor)",
+      "theme": "Soumatome N1",
+      "icon": "📗",
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 仕事・ビジネス・職場 (Dunia Kerja, Bisnis & Kantor).",
+      "grammar_ids": [
+        "gn1-00010",
+        "gn1-00011",
+        "gn1-00012"
+      ],
+      "vocab_ids": [
+        "vg-n1-00631",
+        "vg-n1-00637",
+        "vg-n1-00639",
+        "vg-n1-00642"
+      ],
+      "lessons": [
+        {
+          "id": "les-curriculum-book-soumatome-u18-01",
+          "lesson_number": 1,
+          "title_id": "仕事・ビジネス・職場 (Dunia Kerja, Bisnis & Kantor) (Eksplorasi Materi & Pola)",
+          "title_jp": "仕事・ビジネス・職場 (Dunia Kerja, Bisnis & Kantor)（解説）",
+          "desc_id": "Mempelajari urutan materi pedagogis buku Nihongo Sou Matome (N5–N1) pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 仕事・ビジネス・職場 (Dunia Kerja, Bisnis & Kantor).",
+          "grammar_ids": [
+            "gn1-00010",
+            "gn1-00011",
+            "gn1-00012"
+          ],
+          "vocab_ids": [
+            "vg-n1-00631",
+            "vg-n1-00637",
+            "vg-n1-00639",
+            "vg-n1-00642"
+          ],
+          "pedagogical_framework": {
+            "what": {
+              "summary": "Silabus resmi Nihongo Sou Matome (N5–N1) bab 4.",
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 仕事・ビジネス・職場 (Dunia Kerja, Bisnis & Kantor).",
+              "targetPatterns": [
+                "gn1-00010",
+                "gn1-00011",
+                "gn1-00012"
+              ],
+              "coreVocabSample": [
+                "vg-n1-00631",
+                "vg-n1-00637",
+                "vg-n1-00639",
+                "vg-n1-00642"
+              ]
+            },
+            "sensei_context": {
+              "sceneIntro": "Kamu sedang mempelajari buku Nihongo Sou Matome (N5–N1). Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 仕事・ビジネス・職場 (Dunia Kerja, Bisnis & Kantor).",
+              "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
+            },
+            "cultural_notes": {
+              "title": "Catatan Budaya & Konteks Pemakaian (Nihongo Sou Matome (N5–N1))",
+              "etiquette": "Perhatikan konteks formalitas saat menggunakan pola kalimat ini kepada guru, teman, atau atasan.",
+              "taboos": "Hindari penggunaan pola kasual kepada orang yang baru pertama kali ditemui."
+            }
+          },
+          "dialogue": [
+            {
+              "id": "d1",
+              "speaker": "Sensei",
+              "speakerRole": "Tutor Belajar",
+              "jp": "仕事・ビジネス・職場 (Dunia Kerja, Bisnis & Kantor)の勉強を始めましょう！",
+              "furigana": "べんきょうをはじめましょう！",
+              "romaji": "Benkyou wo hajimemashou!",
+              "idText": "Mari kita mulai belajar 仕事・ビジネス・職場 (Dunia Kerja, Bisnis & Kantor)!"
+            }
+          ],
+          "drills": [
+            {
+              "id": "dr1",
+              "type": "multiple-choice",
+              "prompt": "Apa fokus utama pada materi 仕事・ビジネス・職場 (Dunia Kerja, Bisnis & Kantor) di buku Nihongo Sou Matome (N5–N1)?",
+              "options": [
+                "Menguasai pola kalimat bab ini dengan pemahaman alami",
+                "Menghafal tanpa memahami konteks",
+                "Mengabaikan intonasi pengucapan",
+                "Hanya membaca terjemahan bahasa Inggris"
+              ],
+              "correctAnswer": "Menguasai pola kalimat bab ini dengan pemahaman alami",
+              "explanation": "Setiap bab dirancang untuk memperkuat kemampuan komunikasi fungsional pembelajar."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 19,
+      "id": "unit-curriculum-book-soumatome-19",
+      "level": "n1",
+      "pt_stage": 2,
+      "title_id": "Soumatome N1: 教育・学校・専門 (Pendidikan, Riset & Akademis)",
+      "title_jp": "教育・学校・専門 (Pendidikan, Riset & Akademis)",
+      "theme": "Soumatome N1",
+      "icon": "📗",
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 教育・学校・専門 (Pendidikan, Riset & Akademis).",
+      "grammar_ids": [
+        "gn1-00013",
+        "gn1-00014",
+        "gn1-00015"
+      ],
+      "vocab_ids": [
+        "vg-n1-00861",
+        "vg-n1-00862",
+        "vg-n1-00864",
+        "vg-n1-00866"
+      ],
+      "lessons": [
+        {
+          "id": "les-curriculum-book-soumatome-u19-01",
+          "lesson_number": 1,
+          "title_id": "教育・学校・専門 (Pendidikan, Riset & Akademis) (Eksplorasi Materi & Pola)",
+          "title_jp": "教育・学校・専門 (Pendidikan, Riset & Akademis)（解説）",
+          "desc_id": "Mempelajari urutan materi pedagogis buku Nihongo Sou Matome (N5–N1) pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 教育・学校・専門 (Pendidikan, Riset & Akademis).",
+          "grammar_ids": [
+            "gn1-00013",
+            "gn1-00014",
+            "gn1-00015"
+          ],
+          "vocab_ids": [
+            "vg-n1-00861",
+            "vg-n1-00862",
+            "vg-n1-00864",
+            "vg-n1-00866"
+          ],
+          "pedagogical_framework": {
+            "what": {
+              "summary": "Silabus resmi Nihongo Sou Matome (N5–N1) bab 5.",
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 教育・学校・専門 (Pendidikan, Riset & Akademis).",
+              "targetPatterns": [
+                "gn1-00013",
+                "gn1-00014",
+                "gn1-00015"
+              ],
+              "coreVocabSample": [
+                "vg-n1-00861",
+                "vg-n1-00862",
+                "vg-n1-00864",
+                "vg-n1-00866"
+              ]
+            },
+            "sensei_context": {
+              "sceneIntro": "Kamu sedang mempelajari buku Nihongo Sou Matome (N5–N1). Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 教育・学校・専門 (Pendidikan, Riset & Akademis).",
+              "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
+            },
+            "cultural_notes": {
+              "title": "Catatan Budaya & Konteks Pemakaian (Nihongo Sou Matome (N5–N1))",
+              "etiquette": "Perhatikan konteks formalitas saat menggunakan pola kalimat ini kepada guru, teman, atau atasan.",
+              "taboos": "Hindari penggunaan pola kasual kepada orang yang baru pertama kali ditemui."
+            }
+          },
+          "dialogue": [
+            {
+              "id": "d1",
+              "speaker": "Sensei",
+              "speakerRole": "Tutor Belajar",
+              "jp": "教育・学校・専門 (Pendidikan, Riset & Akademis)の勉強を始めましょう！",
+              "furigana": "べんきょうをはじめましょう！",
+              "romaji": "Benkyou wo hajimemashou!",
+              "idText": "Mari kita mulai belajar 教育・学校・専門 (Pendidikan, Riset & Akademis)!"
+            }
+          ],
+          "drills": [
+            {
+              "id": "dr1",
+              "type": "multiple-choice",
+              "prompt": "Apa fokus utama pada materi 教育・学校・専門 (Pendidikan, Riset & Akademis) di buku Nihongo Sou Matome (N5–N1)?",
+              "options": [
+                "Menguasai pola kalimat bab ini dengan pemahaman alami",
+                "Menghafal tanpa memahami konteks",
+                "Mengabaikan intonasi pengucapan",
+                "Hanya membaca terjemahan bahasa Inggris"
+              ],
+              "correctAnswer": "Menguasai pola kalimat bab ini dengan pemahaman alami",
+              "explanation": "Setiap bab dirancang untuk memperkuat kemampuan komunikasi fungsional pembelajar."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 20,
+      "id": "unit-curriculum-book-soumatome-20",
+      "level": "n1",
+      "pt_stage": 3,
+      "title_id": "Soumatome N1: からだ・医療・安全 (Kesehatan, Medis & Keselamatan)",
+      "title_jp": "からだ・医療・安全 (Kesehatan, Medis & Keselamatan)",
+      "theme": "Soumatome N1",
+      "icon": "📗",
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai からだ・医療・安全 (Kesehatan, Medis & Keselamatan).",
+      "grammar_ids": [
+        "gn1-00016",
+        "gn1-00017",
+        "gn1-00018"
+      ],
+      "vocab_ids": [
+        "vg-n1-01100",
+        "vg-n1-01103",
+        "vg-n1-01106",
+        "vg-n1-01109"
+      ],
+      "lessons": [
+        {
+          "id": "les-curriculum-book-soumatome-u20-01",
+          "lesson_number": 1,
+          "title_id": "からだ・医療・安全 (Kesehatan, Medis & Keselamatan) (Eksplorasi Materi & Pola)",
+          "title_jp": "からだ・医療・安全 (Kesehatan, Medis & Keselamatan)（解説）",
+          "desc_id": "Mempelajari urutan materi pedagogis buku Nihongo Sou Matome (N5–N1) pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai からだ・医療・安全 (Kesehatan, Medis & Keselamatan).",
+          "grammar_ids": [
+            "gn1-00016",
+            "gn1-00017",
+            "gn1-00018"
+          ],
+          "vocab_ids": [
+            "vg-n1-01100",
+            "vg-n1-01103",
+            "vg-n1-01106",
+            "vg-n1-01109"
+          ],
+          "pedagogical_framework": {
+            "what": {
+              "summary": "Silabus resmi Nihongo Sou Matome (N5–N1) bab 6.",
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai からだ・医療・安全 (Kesehatan, Medis & Keselamatan).",
+              "targetPatterns": [
+                "gn1-00016",
+                "gn1-00017",
+                "gn1-00018"
+              ],
+              "coreVocabSample": [
+                "vg-n1-01100",
+                "vg-n1-01103",
+                "vg-n1-01106",
+                "vg-n1-01109"
+              ]
+            },
+            "sensei_context": {
+              "sceneIntro": "Kamu sedang mempelajari buku Nihongo Sou Matome (N5–N1). Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai からだ・医療・安全 (Kesehatan, Medis & Keselamatan).",
+              "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
+            },
+            "cultural_notes": {
+              "title": "Catatan Budaya & Konteks Pemakaian (Nihongo Sou Matome (N5–N1))",
+              "etiquette": "Perhatikan konteks formalitas saat menggunakan pola kalimat ini kepada guru, teman, atau atasan.",
+              "taboos": "Hindari penggunaan pola kasual kepada orang yang baru pertama kali ditemui."
+            }
+          },
+          "dialogue": [
+            {
+              "id": "d1",
+              "speaker": "Sensei",
+              "speakerRole": "Tutor Belajar",
+              "jp": "からだ・医療・安全 (Kesehatan, Medis & Keselamatan)の勉強を始めましょう！",
+              "furigana": "べんきょうをはじめましょう！",
+              "romaji": "Benkyou wo hajimemashou!",
+              "idText": "Mari kita mulai belajar からだ・医療・安全 (Kesehatan, Medis & Keselamatan)!"
+            }
+          ],
+          "drills": [
+            {
+              "id": "dr1",
+              "type": "multiple-choice",
+              "prompt": "Apa fokus utama pada materi からだ・医療・安全 (Kesehatan, Medis & Keselamatan) di buku Nihongo Sou Matome (N5–N1)?",
+              "options": [
+                "Menguasai pola kalimat bab ini dengan pemahaman alami",
+                "Menghafal tanpa memahami konteks",
+                "Mengabaikan intonasi pengucapan",
+                "Hanya membaca terjemahan bahasa Inggris"
+              ],
+              "correctAnswer": "Menguasai pola kalimat bab ini dengan pemahaman alami",
+              "explanation": "Setiap bab dirancang untuk memperkuat kemampuan komunikasi fungsional pembelajar."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 21,
+      "id": "unit-curriculum-book-soumatome-21",
+      "level": "n1",
+      "pt_stage": 4,
+      "title_id": "Soumatome N1: 社会・経済・ニュース (Masyarakat, Ekonomi & Isu Berita)",
+      "title_jp": "社会・経済・ニュース (Masyarakat, Ekonomi & Isu Berita)",
+      "theme": "Soumatome N1",
+      "icon": "📗",
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 社会・経済・ニュース (Masyarakat, Ekonomi & Isu Berita).",
+      "grammar_ids": [
+        "gn1-00019",
+        "gn1-00020",
+        "gn1-00021"
+      ],
+      "vocab_ids": [
+        "vg-n1-01303",
+        "vg-n1-01305",
+        "vg-n1-01306",
+        "vg-n1-01308"
+      ],
+      "lessons": [
+        {
+          "id": "les-curriculum-book-soumatome-u21-01",
+          "lesson_number": 1,
+          "title_id": "社会・経済・ニュース (Masyarakat, Ekonomi & Isu Berita) (Eksplorasi Materi & Pola)",
+          "title_jp": "社会・経済・ニュース (Masyarakat, Ekonomi & Isu Berita)（解説）",
+          "desc_id": "Mempelajari urutan materi pedagogis buku Nihongo Sou Matome (N5–N1) pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 社会・経済・ニュース (Masyarakat, Ekonomi & Isu Berita).",
+          "grammar_ids": [
+            "gn1-00019",
+            "gn1-00020",
+            "gn1-00021"
+          ],
+          "vocab_ids": [
+            "vg-n1-01303",
+            "vg-n1-01305",
+            "vg-n1-01306",
+            "vg-n1-01308"
+          ],
+          "pedagogical_framework": {
+            "what": {
+              "summary": "Silabus resmi Nihongo Sou Matome (N5–N1) bab 7.",
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 社会・経済・ニュース (Masyarakat, Ekonomi & Isu Berita).",
+              "targetPatterns": [
+                "gn1-00019",
+                "gn1-00020",
+                "gn1-00021"
+              ],
+              "coreVocabSample": [
+                "vg-n1-01303",
+                "vg-n1-01305",
+                "vg-n1-01306",
+                "vg-n1-01308"
+              ]
+            },
+            "sensei_context": {
+              "sceneIntro": "Kamu sedang mempelajari buku Nihongo Sou Matome (N5–N1). Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 社会・経済・ニュース (Masyarakat, Ekonomi & Isu Berita).",
+              "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
+            },
+            "cultural_notes": {
+              "title": "Catatan Budaya & Konteks Pemakaian (Nihongo Sou Matome (N5–N1))",
+              "etiquette": "Perhatikan konteks formalitas saat menggunakan pola kalimat ini kepada guru, teman, atau atasan.",
+              "taboos": "Hindari penggunaan pola kasual kepada orang yang baru pertama kali ditemui."
+            }
+          },
+          "dialogue": [
+            {
+              "id": "d1",
+              "speaker": "Sensei",
+              "speakerRole": "Tutor Belajar",
+              "jp": "社会・経済・ニュース (Masyarakat, Ekonomi & Isu Berita)の勉強を始めましょう！",
+              "furigana": "べんきょうをはじめましょう！",
+              "romaji": "Benkyou wo hajimemashou!",
+              "idText": "Mari kita mulai belajar 社会・経済・ニュース (Masyarakat, Ekonomi & Isu Berita)!"
+            }
+          ],
+          "drills": [
+            {
+              "id": "dr1",
+              "type": "multiple-choice",
+              "prompt": "Apa fokus utama pada materi 社会・経済・ニュース (Masyarakat, Ekonomi & Isu Berita) di buku Nihongo Sou Matome (N5–N1)?",
+              "options": [
+                "Menguasai pola kalimat bab ini dengan pemahaman alami",
+                "Menghafal tanpa memahami konteks",
+                "Mengabaikan intonasi pengucapan",
+                "Hanya membaca terjemahan bahasa Inggris"
+              ],
+              "correctAnswer": "Menguasai pola kalimat bab ini dengan pemahaman alami",
+              "explanation": "Setiap bab dirancang untuk memperkuat kemampuan komunikasi fungsional pembelajar."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 22,
+      "id": "unit-curriculum-book-soumatome-22",
+      "level": "n1",
+      "pt_stage": 5,
+      "title_id": "Soumatome N1: 抽象・評価・論理 (Konsep Abstrak, Logika & Evaluasi)",
+      "title_jp": "抽象・評価・論理 (Konsep Abstrak, Logika & Evaluasi)",
+      "theme": "Soumatome N1",
+      "icon": "📗",
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 抽象・評価・論理 (Konsep Abstrak, Logika & Evaluasi).",
+      "grammar_ids": [
+        "gn1-00022",
+        "gn1-00023",
+        "gn1-00024"
+      ],
+      "vocab_ids": [
+        "vg-n1-01518",
+        "vg-n1-01519",
+        "vg-n1-01520",
+        "vg-n1-01523"
+      ],
+      "lessons": [
+        {
+          "id": "les-curriculum-book-soumatome-u22-01",
+          "lesson_number": 1,
+          "title_id": "抽象・評価・論理 (Konsep Abstrak, Logika & Evaluasi) (Eksplorasi Materi & Pola)",
+          "title_jp": "抽象・評価・論理 (Konsep Abstrak, Logika & Evaluasi)（解説）",
+          "desc_id": "Mempelajari urutan materi pedagogis buku Nihongo Sou Matome (N5–N1) pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 抽象・評価・論理 (Konsep Abstrak, Logika & Evaluasi).",
+          "grammar_ids": [
+            "gn1-00022",
+            "gn1-00023",
+            "gn1-00024"
+          ],
+          "vocab_ids": [
+            "vg-n1-01518",
+            "vg-n1-01519",
+            "vg-n1-01520",
+            "vg-n1-01523"
+          ],
+          "pedagogical_framework": {
+            "what": {
+              "summary": "Silabus resmi Nihongo Sou Matome (N5–N1) bab 8.",
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 抽象・評価・論理 (Konsep Abstrak, Logika & Evaluasi).",
+              "targetPatterns": [
+                "gn1-00022",
+                "gn1-00023",
+                "gn1-00024"
+              ],
+              "coreVocabSample": [
+                "vg-n1-01518",
+                "vg-n1-01519",
+                "vg-n1-01520",
+                "vg-n1-01523"
+              ]
+            },
+            "sensei_context": {
+              "sceneIntro": "Kamu sedang mempelajari buku Nihongo Sou Matome (N5–N1). Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 抽象・評価・論理 (Konsep Abstrak, Logika & Evaluasi).",
+              "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
+            },
+            "cultural_notes": {
+              "title": "Catatan Budaya & Konteks Pemakaian (Nihongo Sou Matome (N5–N1))",
+              "etiquette": "Perhatikan konteks formalitas saat menggunakan pola kalimat ini kepada guru, teman, atau atasan.",
+              "taboos": "Hindari penggunaan pola kasual kepada orang yang baru pertama kali ditemui."
+            }
+          },
+          "dialogue": [
+            {
+              "id": "d1",
+              "speaker": "Sensei",
+              "speakerRole": "Tutor Belajar",
+              "jp": "抽象・評価・論理 (Konsep Abstrak, Logika & Evaluasi)の勉強を始めましょう！",
+              "furigana": "べんきょうをはじめましょう！",
+              "romaji": "Benkyou wo hajimemashou!",
+              "idText": "Mari kita mulai belajar 抽象・評価・論理 (Konsep Abstrak, Logika & Evaluasi)!"
+            }
+          ],
+          "drills": [
+            {
+              "id": "dr1",
+              "type": "multiple-choice",
+              "prompt": "Apa fokus utama pada materi 抽象・評価・論理 (Konsep Abstrak, Logika & Evaluasi) di buku Nihongo Sou Matome (N5–N1)?",
               "options": [
                 "Menguasai pola kalimat bab ini dengan pemahaman alami",
                 "Menghafal tanpa memahami konteks",

@@ -4,11 +4,10 @@
     "level": "n5",
     "title": "Kurikulum Original Nugget Nihongo · N5",
     "title_id": "Jalur Mandiri N5 (Kurikulum Nugget)",
-    "version": "1.1.0",
+    "version": "1.0.0",
     "total_units": 10,
     "total_grammar_points": 94,
     "core_target_vocab_count": 124,
-    "bank_supporting_vocab_count": 870,
     "authoritative": true
   },
   "id": "trk-nugget-n5",
@@ -16,7 +15,7 @@
   "name_id": "Jalur Mandiri N5 (Kurikulum Nugget)",
   "level": "n5",
   "tagline": "Dirancang khusus untuk penutur bahasa Indonesia dengan Processability Theory & Analisis Kontrasif.",
-  "desc": "Jalur belajar bertahap 10 unit lengkap: menguasai 94 pola tata bahasa inti dan 124 kosakata target pelajaran, didukung bank 870+ kosakata N5 untuk latihan mandiri dan flashcards.",
+  "desc": "Jalur belajar bertahap 10 unit lengkap dari salam dasar hingga penguasaan 94 pola tata bahasa, 124 target kosakata inti, dan 870+ bank kosakata JLPT N5.",
   "total_units": 10,
   "total_grammar_count": 94,
   "units": [
@@ -41,7 +40,7 @@
         "gn5-00018",
         "gn5-00016"
       ],
-      "vocab_count_approx": 14,
+      "vocab_count_approx": 16,
       "lessons": [
         {
           "id": "les-n5-u01-01",
@@ -110,7 +109,9 @@
           ],
           "vocab_ids": [
             "vg-n5-00480",
-            "vg-n5-00424"
+            "vg-n5-00424",
+            "vg-n5-01243",
+            "vg-n5-01211"
           ],
           "l2d_contrastive_tags": [
             "contrastive-word-order"
@@ -207,7 +208,7 @@
         "gn5-00061",
         "gn5-00062"
       ],
-      "vocab_count_approx": 13,
+      "vocab_count_approx": 14,
       "lessons": [
         {
           "id": "les-n5-u03-01",
@@ -254,7 +255,8 @@
             "vg-n5-00463",
             "vg-n5-00494",
             "vg-n5-00517",
-            "vg-n5-00887"
+            "vg-n5-00887",
+            "vg-n5-01015"
           ],
           "l2d_contrastive_tags": [
             "contrastive-ni-de"
@@ -304,7 +306,7 @@
             "vg-n5-00024",
             "vg-n5-00032",
             "vg-n5-00013",
-            "vg-n5-00104",
+            "vg-n5-00994",
             "vg-n5-00928",
             "vg-n5-00919"
           ],
@@ -464,7 +466,7 @@
         "gn5-00060",
         "gn5-00084"
       ],
-      "vocab_count_approx": 13,
+      "vocab_count_approx": 14,
       "lessons": [
         {
           "id": "les-n5-u06-01",
@@ -484,6 +486,7 @@
             "vg-n5-00058",
             "vg-n5-00063",
             "vg-n5-00064",
+            "vg-n5-01014",
             "vg-n5-00060",
             "vg-n5-00098"
           ],

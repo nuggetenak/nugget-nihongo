@@ -283,7 +283,7 @@ export const ContextualSenseiSheet: React.FC = () => {
               }}
               rows={1}
               placeholder="Tanyakan lebih lanjut ke Sensei... (Enter)"
-              className="flex-1 bg-surface-2 border border-accent/20 focus:border-accent rounded-xl px-3 py-2 text-xs sm:text-sm text-appText-bright placeholder:text-appText-muted/60 focus:outline-hidden resize-none"
+              className="flex-1 bg-surface-2 border border-accent/20 focus:border-accent rounded-xl px-3 py-2 text-xs sm:text-sm text-appText-bright placeholder:text-appText-muted/60 focus:outline-none resize-none"
             />
             <button
               onClick={() => handleSend()}

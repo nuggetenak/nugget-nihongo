@@ -35,8 +35,9 @@ window.vocabN3_Adverbs = [
       "level": "n3",
       "tags": [
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"キュウニ￣"}
+},
     {
       "jp": "急に予定が変わった。",
       "id": "Jadwalnya tiba-tiba berubah.",
@@ -101,8 +102,9 @@ window.vocabN3_Adverbs = [
       "level": "n3",
       "tags": [
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"トツゼン￣"}
+},
     {
       "jp": "突然の知らせに驚いた。",
       "id": "Kaget dengan berita yang mendadak.",
@@ -151,8 +153,9 @@ window.vocabN3_Adverbs = [
       "level": "n3",
       "tags": [
         "hubungan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"カナラズ￣"}
+},
     {
       "jp": "出かける前に必ず鍵を確認する。",
       "id": "Sebelum keluar, selalu cek kunci.",
@@ -200,8 +203,9 @@ window.vocabN3_Adverbs = [
       "level": "n3",
       "tags": [
         "hubungan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ケッシテ￣"}
+},
     {
       "jp": "この秘密は決して言わないでください。",
       "id": "Tolong jangan pernah beritahu rahasia ini.",
@@ -246,8 +250,9 @@ window.vocabN3_Adverbs = [
       "level": "n3",
       "tags": [
         "pendidikan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":0,"downstep_mora":0,"contour":"￣"}
+},
     {
       "jp": "<b>ちゃんと</b>聞いてね。",
       "id": "Dengerin baik-baik ya.",
@@ -325,8 +330,9 @@ window.vocabN3_Adverbs = [
       "level": "n3",
       "tags": [
         "kehidupan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":0,"downstep_mora":0,"contour":"￣"}
+},
     {
       "jp": "<b>きちんと</b>説明してください。",
       "id": "Tolong jelaskan dengan benar.",
@@ -390,8 +396,9 @@ window.vocabN3_Adverbs = [
       "level": "n3",
       "tags": [
         "ekspresi"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"odaka","mora_count":3,"downstep_mora":3,"contour":"ムシロ＼"}
+},
     {
       "jp": "忙しいほうが、<b>むしろ</b>充実感がある。",
       "id": "Justru saat sibuk, ada rasa kepuasan lebih.",
@@ -449,8 +456,9 @@ window.vocabN3_Adverbs = [
       "level": "n3",
       "tags": [
         "percakapan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"ム＼シロ"}
+},
     {
       "jp": "<b>確かに</b>彼は頭がいいが、努力もしている。",
       "id": "Memang dia pintar, tapi juga bekerja keras.",
@@ -504,8 +512,9 @@ window.vocabN3_Adverbs = [
       "level": "n3",
       "tags": [
         "penilaian"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ナカナカ￣"}
+},
     {
       "jp": "彼女は<b>なかなか</b>来ない。",
       "id": "Dia tidak kunjung datang.",
@@ -613,8 +622,9 @@ window.vocabN3_Adverbs = [
       "level": "n3",
       "tags": [
         "penyesalan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ナカナカ￣"}
+},
     {
       "jp": "<b>せっかく</b>日本に来たから着物を着てみたい。",
       "id": "Karena sudah khusus datang ke Jepang, ingin coba kimono.",
@@ -673,8 +683,9 @@ window.vocabN3_Adverbs = [
       "level": "n3",
       "tags": [
         "ajakan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":0,"downstep_mora":1,"contour":"＼"}
+},
     {
       "jp": "<b>もし</b>よければ、これを使ってください。",
       "id": "Kalau tidak keberatan, silakan pakai ini.",
@@ -720,8 +731,9 @@ window.vocabN3_Adverbs = [
       "level": "n3",
       "tags": [
         "makanan-minuman"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"ト＼クニ"}
+},
     {
       "jp": "<b>特に</b>問題はありません。",
       "id": "Tidak ada masalah khusus.",
@@ -764,8 +776,9 @@ window.vocabN3_Adverbs = [
       "level": "n3",
       "tags": [
         "pendidikan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":6,"downstep_mora":3,"contour":"スクナ＼クトモ"}
+},
     {
       "jp": "<b>少なくとも</b>10人は来ると思う。",
       "id": "Saya pikir setidaknya 10 orang akan datang.",
@@ -828,8 +841,9 @@ window.vocabN3_Adverbs = [
       "level": "n3",
       "tags": [
         "perjalanan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":6,"downstep_mora":3,"contour":"スクナ＼クトモ"}
+},
     {
       "jp": "初めて会ったときから好きだった。",
       "id": "Sejak pertama kali bertemu aku sudah suka.",
@@ -926,8 +940,9 @@ window.vocabN3_Adverbs = [
       "tags": [
         "emosi-positif",
         "karakter"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":4,"downstep_mora":2,"contour":"ハジ＼メテ"}
+},
     {
       "jp": "再び同じ過ちを繰り返してはならない。",
       "id": "Kita tidak boleh mengulangi kesalahan yang sama lagi.",
@@ -997,8 +1012,9 @@ window.vocabN3_Adverbs = [
       "tags": [
         "sopan-santun",
         "keigo-vocabulary"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"フタタビ￣"}
+},
     {
       "jp": "改めて連絡します。",
       "id": "Saya akan menghubungi lagi nanti.",
@@ -1082,8 +1098,9 @@ window.vocabN3_Adverbs = [
       "tags": [
         "keluarga",
         "emosi"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":5,"downstep_mora":3,"contour":"アラタ＼メテ"}
+},
     {
       "jp": "いつの間にか夜が明けていた。",
       "id": "Tidak terasa hari sudah berganti pagi.",
@@ -1148,8 +1165,9 @@ window.vocabN3_Adverbs = [
       "level": "n3",
       "tags": [
         "alam-lingkungan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":5,"category":"nakadaka","mora_count":6,"downstep_mora":5,"contour":"イツノマニ＼カ"}
+},
     {
       "jp": "努力を続ければ、やがて結果が出る。",
       "id": "Jika terus berusaha, lambat laun hasilnya akan terlihat.",
@@ -1255,8 +1273,9 @@ window.vocabN3_Adverbs = [
       "level": "n3",
       "tags": [
         "emosi-negatif"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ヤガテ￣"}
+},
     {
       "jp": "長い治療の末、とうとう病気が治った。",
       "id": "Setelah pengobatan panjang, penyakitnya akhirnya sembuh juga.",
@@ -1319,8 +1338,9 @@ window.vocabN3_Adverbs = [
       "tags": [
         "emosi-positif",
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"ツ＼イニ"}
+},
     {
       "jp": "三年間の努力で、ついに合格した。",
       "id": "Setelah tiga tahun berjuang, akhirnya lulus.",
@@ -1418,8 +1438,9 @@ window.vocabN3_Adverbs = [
       "tags": [
         "kesehatan",
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"ツ＼イニ"}
+},
     {
       "jp": "まず自己紹介から始めましょう。",
       "id": "Mari kita mulai dari perkenalan diri terlebih dahulu.",
@@ -1510,8 +1531,9 @@ window.vocabN3_Adverbs = [
       "level": "n3",
       "tags": [
         "makanan-minuman"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"ツギ＼ニ"}
+},
     {
       "jp": "次に、グラフを見てください。",
       "id": "Selanjutnya, tolong lihat grafiknya.",
@@ -1632,8 +1654,9 @@ window.vocabN3_Adverbs = [
       "tags": [
         "emosi-negatif",
         "hubungan-konsep"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"イマサラ￣"}
+},
     {
       "jp": "今さらそんなこと言われても困る。",
       "id": "Aku bingung kalau sekarang baru dibilang hal seperti itu.",
@@ -1716,8 +1739,9 @@ window.vocabN3_Adverbs = [
       "tags": [
         "bisnis",
         "sopan-santun"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"イマサラ￣"}
+},
     {
       "jp": "彼はたびたび約束を破る。",
       "id": "Dia berkali-kali melanggar janji.",
@@ -1788,8 +1812,9 @@ window.vocabN3_Adverbs = [
       "tags": [
         "kehidupan-sehari",
         "pertemanan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"タビタビ￣"}
+},
     {
       "jp": "彼女は<b>相変わらず</b>明るくて元気だ。",
       "id": "Dia tetap ceria dan penuh semangat seperti dulu.",
@@ -1873,8 +1898,9 @@ window.vocabN3_Adverbs = [
       "tags": [
         "kehidupan-sehari",
         "perjalanan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":6,"downstep_mora":0,"contour":"アイカワラズ￣"}
+},
     {
       "jp": "試験は<b>ぎりぎり</b>合格だった。",
       "id": "Ujiannya lulus dengan nilai yang pas-pasan.",
@@ -1928,8 +1954,9 @@ window.vocabN3_Adverbs = [
       "tags": [
         "hiburan",
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"カ＼ナリ"}
+},
     {
       "jp": "今日は<b>かなり</b>疲れたので、早く寝ます。",
       "id": "Hari ini saya cukup lelah, jadi akan tidur lebih awal.",
@@ -2008,8 +2035,9 @@ window.vocabN3_Adverbs = [
       "tags": [
         "makanan-minuman",
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"カ＼ナリ"}
+},
     {
       "jp": "今日は<b>特に</b>何もなかった。",
       "id": "Hari ini tidak ada yang istimewa.",
@@ -2059,8 +2087,9 @@ window.vocabN3_Adverbs = [
       "tags": [
         "pikiran-opini",
         "belanja"
-      ]
-    },
+      ],
+  "pitch": {"pattern":4,"category":"nakadaka","mora_count":6,"downstep_mora":4,"contour":"カナラズ＼シモ"}
+},
     {
       "jp": "努力が<b>必ずしも</b>成功につながるわけではない。",
       "id": "Kerja keras tidak selalu berujung pada kesuksesan.",
@@ -2110,8 +2139,9 @@ window.vocabN3_Adverbs = [
       "tags": [
         "kehidupan-sehari",
         "karakter"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"サッソク￣"}
+},
     {
       "jp": "<b>さっそく</b>ですが、本題に入りましょう。",
       "id": "Langsung saja, mari masuk ke inti pembicaraan.",
@@ -2161,8 +2191,9 @@ window.vocabN3_Adverbs = [
       "tags": [
         "sopan-santun",
         "pertemanan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":4,"downstep_mora":1,"contour":"ワ＼ザワザ"}
+},
     {
       "jp": "<b>わざわざ</b>そこまでしなくてもいいのに。",
       "id": "Kamu tidak perlu repot-repot sejauh itu.",
@@ -2245,8 +2276,9 @@ window.vocabN3_Adverbs = [
       "tags": [
         "keputusan",
         "karakter"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":4,"downstep_mora":1,"contour":"ワ＼ザワザ"}
+},
     {
       "jp": "<b>あえて</b>反対意見を言うことも、時には必要だ。",
       "id": "Terkadang perlu untuk dengan berani menyampaikan pendapat yang berlawanan.",
@@ -2336,8 +2368,9 @@ window.vocabN3_Adverbs = [
       "tags": [
         "perubahan",
         "hiburan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"ア＼エテ"}
+},
     {
       "jp": "景気が<b>ますます</b>悪くなっている。",
       "id": "Kondisi ekonomi semakin memburuk.",
@@ -2424,8 +2457,9 @@ window.vocabN3_Adverbs = [
       "tags": [
         "alam-lingkungan",
         "waktu"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":4,"downstep_mora":2,"contour":"マス＼マス"}
+},
     {
       "jp": "練習を続けた結果、<b>次第に</b>上達してきた。",
       "id": "Berkat terus berlatih, kemampuan saya perlahan-lahan meningkat.",
@@ -2475,8 +2509,9 @@ window.vocabN3_Adverbs = [
       "tags": [
         "karakter",
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":4,"downstep_mora":1,"contour":"メ＼ッタニ"}
+},
     {
       "jp": "父は忙しくて、<b>めったに</b>家にいない。",
       "id": "Ayah sibuk sehingga jarang sekali ada di rumah.",
@@ -2526,8 +2561,9 @@ window.vocabN3_Adverbs = [
       "tags": [
         "emosi-negatif",
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"セッカク￣"}
+},
     {
       "jp": "<b>せっかく</b>日本に来たんだから、京都にも行こう。",
       "id": "Karena sudah jauh-jauh ke Jepang, ayo pergi ke Kyoto juga.",
@@ -2593,8 +2629,9 @@ window.vocabN3_Adverbs = [
       "tags": [
         "emosi-negatif",
         "keputusan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":0,"downstep_mora":0,"contour":"￣"}
+},
     {
       "jp": "<b>どうせ</b>なら、もっと大きいものを買えばよかった。",
       "id": "Kalau memang begitu, seharusnya beli yang lebih besar sekalian.",
@@ -2656,8 +2693,9 @@ window.vocabN3_Adverbs = [
       "tags": [
         "pikiran-opini",
         "bahasa-komunikasi"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"odaka","mora_count":3,"downstep_mora":3,"contour":"ツマリ＼"}
+},
     {
       "jp": "今日は財布を忘れた。<b>つまり</b>、お金が一円もないってことだ。",
       "id": "Hari ini aku lupa bawa dompet. Dengan kata lain, aku tidak punya uang sama sekali.",
@@ -2774,8 +2812,9 @@ window.vocabN3_Adverbs = [
       "tags": [
         "hukum-aturan",
         "politik-masyarakat"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"odaka","mora_count":3,"downstep_mora":3,"contour":"ツマリ＼"}
+},
     {
       "jp": "彼女は本校の創設者の孫、<b>すなわち</b>田中家の最後の子孫だ。",
       "id": "Dia adalah cucu pendiri sekolah ini, yaitu keturunan terakhir keluarga Tanaka.",
@@ -2881,8 +2920,9 @@ window.vocabN3_Adverbs = [
       "tags": [
         "budaya",
         "bahasa-komunikasi"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":4,"downstep_mora":2,"contour":"スナ＼ワチ"}
+},
     {
       "jp": "健康のためにできることはいろいろある。<b>たとえば</b>、毎日散歩することや野菜を多く食べることだ。",
       "id": "Ada berbagai hal yang bisa dilakukan untuk kesehatan. Contohnya, berjalan kaki setiap hari dan makan banyak sayuran.",
@@ -2932,8 +2972,9 @@ window.vocabN3_Adverbs = [
       "tags": [
         "politik-masyarakat",
         "pikiran-opini"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"イッポ＼ウ"}
+},
     {
       "jp": "兄は理系が得意だ。<b>一方</b>、妹は文系に向いている。",
       "id": "Kakak laki-laki pandai di bidang sains. Di satu sisi, adik perempuan lebih cocok di bidang humaniora.",
@@ -2999,8 +3040,9 @@ window.vocabN3_Adverbs = [
       "tags": [
         "ilmu-pengetahuan",
         "sebab-akibat"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":5,"downstep_mora":0,"contour":"シタガッテ￣"}
+},
     {
       "jp": "規則違反が確認された。<b>したがって</b>、該当者には処分が下された。",
       "id": "Pelanggaran aturan telah dikonfirmasi. Dengan demikian, sanksi dijatuhkan kepada yang bersangkutan.",
@@ -3053,8 +3095,9 @@ window.vocabN3_Adverbs = [
       "tags": [
         "ilmu-pengetahuan",
         "klasik"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ソレユエ￣"}
+},
     {
       "jp": "彼は幼い頃から貧しかった。<b>それゆえ</b>、努力の大切さを誰よりも知っていた。",
       "id": "Sejak kecil dia hidup dalam kemiskinan. Oleh karena itu, dia lebih dari siapapun memahami pentingnya kerja keras.",
@@ -3116,8 +3159,9 @@ window.vocabN3_Adverbs = [
       "tags": [
         "hiburan",
         "bahasa-komunikasi"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ソレユエ￣"}
+},
     {
       "jp": "この計画は成功する。<b>なぜなら</b>、チーム全員が本気で取り組んでいるからだ。",
       "id": "Rencana ini akan berhasil. Sebab seluruh anggota tim bekerja dengan sepenuh hati.",
@@ -3224,8 +3268,9 @@ window.vocabN3_Adverbs = [
       "tags": [
         "kehidupan-sehari",
         "perjalanan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"クワエテ￣"}
+},
     {
       "jp": "彼女は英語が話せる。<b>加えて</b>、中国語とスペイン語も堪能だ。",
       "id": "Dia bisa berbicara bahasa Inggris. Selain itu, dia juga fasih berbahasa Mandarin dan Spanyol.",
@@ -3274,8 +3319,9 @@ window.vocabN3_Adverbs = [
       "tags": [
         "alam-lingkungan",
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"サ＼ラニ"}
+},
     {
       "jp": "練習を続けることで、技術は<b>さらに</b>向上するだろう。",
       "id": "Dengan terus berlatih, kemampuanmu akan semakin meningkat.",
@@ -3328,8 +3374,9 @@ window.vocabN3_Adverbs = [
       "tags": [
         "pikiran-opini",
         "karakter"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"odaka","mora_count":3,"downstep_mora":3,"contour":"ムシロ＼"}
+},
     {
       "jp": "暑い日は冷たい飲み物より、<b>むしろ</b>温かいお茶の方が体にいいらしい。",
       "id": "Di hari yang panas, katanya minuman hangat seperti teh justru lebih baik untuk tubuh daripada minuman dingin.",
@@ -3394,8 +3441,9 @@ window.vocabN3_Adverbs = [
       "tags": [
         "olahraga",
         "emosi"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"ム＼シロ"}
+},
     {
       "jp": "いろいろ試したけど、<b>やはり</b>ご飯は日本米が一番おいしい。",
       "id": "Sudah mencoba berbagai macam, tapi memang nasi dari beras Jepang tetap yang paling enak.",
@@ -3500,8 +3548,9 @@ window.vocabN3_Adverbs = [
       "tags": [
         "emosi",
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"ヤハ＼リ"}
+},
     {
       "jp": "今日は<b>どうも</b>調子が悪い気がする。",
       "id": "Entah kenapa, hari ini rasanya badanku tidak fit.",
@@ -3588,8 +3637,9 @@ window.vocabN3_Adverbs = [
       "tags": [
         "pekerjaan",
         "karakter"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"イワ＼バ"}
+},
     {
       "jp": "この経験は<b>いわば</b>人生の授業料だった。",
       "id": "Pengalaman ini ibarat biaya pendidikan kehidupan.",
@@ -3652,8 +3702,9 @@ window.vocabN3_Adverbs = [
       "tags": [
         "emosi",
         "pekerjaan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"イ＼ワバ"}
+},
     {
       "jp": "「彼女と結婚するよ」「<b>まさか</b>！」",
       "id": "\"Aku akan menikahi dia.\" \"Masa iya!\"",
@@ -3745,8 +3796,9 @@ window.vocabN3_Adverbs = [
       "tags": [
         "keputusan",
         "pekerjaan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":0,"downstep_mora":0,"contour":"￣"}
+},
     {
       "jp": "こんなに遅れるなら、<b>いっそ</b>休んでしまおうか。",
       "id": "Kalau sudah terlambat seperti ini, sekalian saja tidak masuk deh.",
@@ -3809,8 +3861,9 @@ window.vocabN3_Adverbs = [
       "tags": [
         "emosi-negatif",
         "keputusan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":0,"downstep_mora":0,"contour":"￣"}
+},
     {
       "jp": "<b>どうせ</b>やるなら、最高のものを作ろう。",
       "id": "Kalau bagaimanapun harus dilakukan, lebih baik buat yang terbaik.",
@@ -3872,8 +3925,9 @@ window.vocabN3_Adverbs = [
       "tags": [
         "perjalanan",
         "emosi"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"セッカク￣"}
+},
     {
       "jp": "<b>せっかく</b>料理を作ったのに、誰も食べてくれなかった。",
       "id": "Sudah susah payah memasak, tapi tidak ada yang mau makan.",
@@ -3939,8 +3993,9 @@ window.vocabN3_Adverbs = [
       "tags": [
         "karakter",
         "keputusan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"ア＼エテ"}
+},
     {
       "jp": "便利な道があるのに、<b>あえて</b>険しい山道を選んだ。",
       "id": "Ada jalan yang mudah, tapi dia sengaja memilih jalur pegunungan yang terjal.",
@@ -4030,8 +4085,9 @@ window.vocabN3_Adverbs = [
       "tags": [
         "sopan-santun",
         "pertemanan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"ア＼エテ"}
+},
     {
       "jp": "メールで済むのに、<b>わざわざ</b>電話をかけてくるのは迷惑だ。",
       "id": "Padahal bisa dengan email, repot-repot telepon begini malah mengganggu.",
@@ -4114,8 +4170,9 @@ window.vocabN3_Adverbs = [
       "tags": [
         "sopan-santun",
         "emosi"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":4,"downstep_mora":1,"contour":"ワ＼ザワザ"}
+},
     {
       "jp": "お金はないけど、<b>せめて</b>健康でいたい。",
       "id": "Tidak punya uang, tapi paling tidak aku ingin tetap sehat.",
@@ -4165,8 +4222,9 @@ window.vocabN3_Adverbs = [
       "tags": [
         "karakter",
         "pikiran-opini"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"タトエ￣"}
+},
     {
       "jp": "<b>たとえ</b>どんなに忙しくても、家族の時間は大切にする。",
       "id": "Walaupun sesibuk apapun, aku akan tetap menjaga waktu bersama keluarga.",
@@ -4256,8 +4314,9 @@ window.vocabN3_Adverbs = [
       "tags": [
         "olahraga",
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"odaka","mora_count":3,"downstep_mora":3,"contour":"タトエ＼"}
+},
     {
       "jp": "<b>もし</b>よかったら、一緒に食事でもどうですか。",
       "id": "Kalau berkenan, bagaimana kalau makan bersama?",
@@ -4310,8 +4369,9 @@ window.vocabN3_Adverbs = [
       "tags": [
         "keputusan",
         "pikiran-opini"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"カリニ￣"}
+},
     {
       "jp": "<b>仮に</b>この計画が失敗したとしても、学べることは多いはずだ。",
       "id": "Andaikan rencana ini gagal sekalipun, seharusnya ada banyak yang bisa dipelajari.",
@@ -4373,8 +4433,9 @@ window.vocabN3_Adverbs = [
       "tags": [
         "pikiran-opini",
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":4,"downstep_mora":2,"contour":"オソ＼ラク"}
+},
     {
       "jp": "この天気では、<b>おそらく</b>試合は延期になると思われる。",
       "id": "Dengan cuaca seperti ini, pertandingan kemungkinan besar akan ditunda.",
@@ -4532,8 +4593,9 @@ window.vocabN3_Adverbs = [
       "tags": [
         "kehidupan-sehari",
         "perjalanan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":5,"downstep_mora":0,"contour":"アラカジメ￣"}
+},
     {
       "jp": "<b>あらかじめ</b>内容を確認してからご参加ください。",
       "id": "Tolong periksa materinya terlebih dahulu sebelum ikut serta.",
@@ -4590,8 +4652,9 @@ window.vocabN3_Adverbs = [
       "tags": [
         "komunikasi",
         "bisnis"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"ジ＼カニ"}
+},
     {
       "jp": "熱いフライパンを木のテーブルの上に直に置かないように注意してください。",
       "id": "Harap berhati-hati agar tidak meletakkan wajan panas langsung di atas meja kayu tanpa alas.",
@@ -4653,8 +4716,9 @@ window.vocabN3_Adverbs = [
       "tags": [
         "kesehatan",
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":2,"downstep_mora":0,"contour":"ジキ￣"}
+},
     {
       "jp": "父は「直に戻ってくるから待っていてくれ」と言い残して事務所を出ました。",
       "id": "Ayah meninggalkan kantor sambil berpesan, 'Tunggulah, aku akan segera kembali sebentar lagi.'",
@@ -4718,8 +4782,9 @@ window.vocabN3_Adverbs = [
       "tags": [
         "bisnis",
         "komunikasi"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"シキュウ￣"}
+},
     {
       "jp": "システムに不具合が見つかったため、至急エンジニアを現場へ派遣しました。",
       "id": "Karena ditemukan gangguan pada sistem, kami segera mengirimkan teknisi ke lokasi secepatnya.",
@@ -4787,8 +4852,9 @@ window.vocabN3_Adverbs = [
       "tags": [
         "perilaku",
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"シキリニ￣"}
+},
     {
       "jp": "窓の外では冷たい冬の雨がしきりに降り続いて、辺りを濡らしていました。",
       "id": "Di luar jendela, hujan musim dingin yang menusuk terus-menerus turun tiada henti membasahi sekitarnya.",
@@ -4853,8 +4919,9 @@ window.vocabN3_Adverbs = [
       "tags": [
         "deskripsi",
         "pemandangan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"ジツ＼ニ"}
+},
     {
       "jp": "彼の提出した解決策は簡潔で、実に理にかなった素晴らしい提案でした。",
       "id": "Solusi yang diajukannya sangat padat dan sungguh merupakan usulan cerdas yang amat masuk akal.",
@@ -4920,8 +4987,9 @@ window.vocabN3_Adverbs = [
       "tags": [
         "pekerjaan",
         "komunikasi"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"ジツ＼ハ"}
+},
     {
       "jp": "彼とは初対面のふりをしていましたが、実は中学時代からの古い友人なんです。",
       "id": "Saya tadinya bersikap seolah baru pertama kali bertemu dengannya, padahal sebenarnya kami kawan lama sejak masa SMP.",
@@ -4985,8 +5053,9 @@ window.vocabN3_Adverbs = [
       "tags": [
         "kejadian",
         "sosial"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":0,"downstep_mora":1,"contour":"＼"}
+},
     {
       "jp": "初心者が新しい言語を習得する際、文法の混同はしばしば見られます。",
       "id": "Saat pemula menguasai bahasa baru, kerancuan tata bahasa sering kali dijumpai.",
@@ -5050,8 +5119,9 @@ window.vocabN3_Adverbs = [
       "tags": [
         "sopan-santun",
         "bisnis"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":4,"downstep_mora":1,"contour":"ショ＼ウショウ"}
+},
     {
       "jp": "道路の工事渋滞により、目的地の到着が予定より少々遅れてしまいそうです。",
       "id": "Akibat kemacetan proyek jalan, waktu tiba di tempat tujuan tampaknya akan sedikit terlambat dari jadwal.",
@@ -5182,8 +5252,9 @@ window.vocabN3_Adverbs = [
       "tags": [
         "deskripsi",
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":4,"downstep_mora":2,"contour":"スコ＼シモ"}
+},
     {
       "jp": "何度丁寧に説明されても、この難解な科学の理論が私には少しも理解できない。",
       "id": "Betapa pun dijelaskan dengan saksama berkali-kali, teori sains rumit ini sedikit pun tidak bisa kupahami.",
@@ -5245,8 +5316,9 @@ window.vocabN3_Adverbs = [
       "level": "n3",
       "tags": [
         "kuantitas"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":4,"downstep_mora":1,"contour":"セ＼イゼイ"}
+},
     {
       "jp": "私が出せるお金は、精々三千円くらいです。",
       "id": "Uang yang sanggup saya keluarkan paling-paling sekitar tiga ribu yen.",
@@ -5305,8 +5377,9 @@ window.vocabN3_Adverbs = [
       "level": "n3",
       "tags": [
         "penekanan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ゼッタイ￣"}
+},
     {
       "jp": "努力を続ければ、この夢は絶対に叶うと信じています。",
       "id": "Jika terus berusaha, saya yakin mimpi ini pasti akan terwujud.",
@@ -5366,8 +5439,9 @@ window.vocabN3_Adverbs = [
       "level": "n3",
       "tags": [
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"アイニク￣"}
+},
     {
       "jp": "あいにく担当の山田はただいま席を外しております。",
       "id": "Sayang sekali penanggung jawab Yamada saat ini sedang tidak berada di tempatnya.",
@@ -5427,8 +5501,9 @@ window.vocabN3_Adverbs = [
       "level": "n3",
       "tags": [
         "perjalanan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":4,"downstep_mora":2,"contour":"アチ＼コチ"}
+},
     {
       "jp": "地震の揺れが激しかったため、部屋のあちこちに本が散らばった。",
       "id": "Karena guncangan gempa bumi begitu hebat, buku-buku berserakan di sana-sini di kamar.",
@@ -5486,8 +5561,9 @@ window.vocabN3_Adverbs = [
       "level": "n3",
       "tags": [
         "pendidikan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":4,"downstep_mora":1,"contour":"ア＼ンガイ"}
+},
     {
       "jp": "あの二人はいつも喧嘩ばかりしているが案外仲が良いのかもしれない。",
       "id": "Keduanya selalu bertengkar terus, tapi ternyata tak disangka hubungan mereka mungkin cukup akrab.",
@@ -5550,8 +5626,9 @@ window.vocabN3_Adverbs = [
       "tags": [
         "pendidikan",
         "perasaan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":0,"downstep_mora":0,"contour":"￣"}
+},
     {
       "jp": "昔はあんなに静かだった街が今では賑やかな観光地になった。",
       "id": "Kota yang dulunya begitu sepi sunyi, kini telah berubah menjadi tempat wisata yang ramai.",
@@ -5611,8 +5688,9 @@ window.vocabN3_Adverbs = [
       "tags": [
         "kehidupan-sehari",
         "kesehatan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"アンマリ￣"}
+},
     {
       "jp": "一生懸命作った料理を一口も食べないなんてあんまりだよ。",
       "id": "Tidak memakan masakan yang sudah dibuat susah payah walau sesuap pun itu sungguh keterlaluan lho.",
@@ -5674,8 +5752,9 @@ window.vocabN3_Adverbs = [
       "tags": [
         "pendidikan",
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"イズレ￣"}
+},
     {
       "jp": "いずれにしても締め切りまでに企画書を提出しなければならない。",
       "id": "Bagaimanapun juga, kita harus menyerahkan proposal rencana sebelum tenggat waktu.",
@@ -5735,8 +5814,9 @@ window.vocabN3_Adverbs = [
       "tags": [
         "transportasi",
         "sosial"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"イチ＼ジ"}
+},
     {
       "jp": "一時は命も危ぶまれたが懸命な治療により無事に回復した。",
       "id": "Pada satu waktu nyawanya sempat dikhawatirkan, namun melalui perawatan intensif dia berhasil pulih.",
@@ -5800,8 +5880,9 @@ window.vocabN3_Adverbs = [
       "tags": [
         "pekerjaan",
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"イチド＼ニ"}
+},
     {
       "jp": "人気歌手のチケット発売日にアクセスが一度に集中してサーバーが落ちた。",
       "id": "Pada hari penjualan tiket penyanyi populer, akses terpusat sekaligus dalam satu waktu sehingga server tumbang.",
@@ -5865,8 +5946,9 @@ window.vocabN3_Adverbs = [
       "tags": [
         "perjalanan",
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"イツカ￣"}
+},
     {
       "jp": "あの人とはいつかどこかで会ったような気がしてならない。",
       "id": "Saya merasa tidak asing dan yakin pernah bertemu dengan orang itu suatu waktu di suatu tempat.",
@@ -5926,8 +6008,9 @@ window.vocabN3_Adverbs = [
       "tags": [
         "alam-lingkungan",
         "hiburan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"イッシュン￣"}
+},
     {
       "jp": "突然の質問に一瞬言葉を詰まらせたがすぐに冷静に答えた。",
       "id": "Mendapat pertanyaan mendadak saya sempat terdiam sekejap, namun segera menjawab dengan tenang.",
@@ -5990,8 +6073,9 @@ window.vocabN3_Adverbs = [
       "tags": [
         "cuaca",
         "alam-lingkungan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":4,"downstep_mora":1,"contour":"イ＼ッソウ"}
+},
     {
       "jp": "お客様のご期待に応えられるよう今後とも一層の努力を重ねてまいります。",
       "id": "Kami akan terus mengerahkan upaya yang jauh lebih giat ke depannya demi memenuhi harapan para pelanggan.",
@@ -6051,8 +6135,9 @@ window.vocabN3_Adverbs = [
       "tags": [
         "emosi",
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"イッタイ￣"}
+},
     {
       "jp": "選手と観客が一体となってスタジアム全体に応援の声が響き渡った。",
       "id": "Para pemain dan penonton menyatu padu menjadi satu kesatuan hingga sorak dukungan bergema di seantero stadion.",
@@ -6112,8 +6197,9 @@ window.vocabN3_Adverbs = [
       "tags": [
         "komunikasi",
         "hubungan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":4,"downstep_mora":1,"contour":"イ＼ツデモ"}
+},
     {
       "jp": "このコンビニは二十四時間営業なのでいつでも買い物ができる。",
       "id": "Minimarket ini beroperasi dua puluh empat jam sehingga kita bisa berbelanja kapan saja.",
@@ -6172,8 +6258,9 @@ window.vocabN3_Adverbs = [
       "tags": [
         "keluarga",
         "perasaan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":5,"downstep_mora":1,"contour":"イ＼ツマデモ"}
+},
     {
       "jp": "失敗したことをいつまでもくよくよ悩んでいても何も始まらないよ。",
       "id": "Meski terus mengkhawatirkan kegagalan sampai kapan pun tanpa henti, tidak ada hal baru yang akan dimulai lho.",
@@ -6235,8 +6322,9 @@ window.vocabN3_Adverbs = [
       "level": "n3",
       "tags": [
         "kesehatan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"イ＼マニ"}
+},
     {
       "jp": "今は苦しいかもしれないが、努力を続ければ今に成果が出るはずだ。",
       "id": "Sekarang mungkin terasa berat, tetapi jika terus berusaha, sebentar lagi hasilnya pasti akan terlihat.",
@@ -6294,8 +6382,9 @@ window.vocabN3_Adverbs = [
       "level": "n3",
       "tags": [
         "alam-lingkungan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":4,"downstep_mora":1,"contour":"イ＼マニモ"}
+},
     {
       "jp": "彼女は悲しみのあまり、今にも泣き崩れそうな表情をしていた。",
       "id": "Saking sedihnya, dia memasang ekspresi seperti hampir saja menangis tersedu-sedu.",
@@ -6352,8 +6441,9 @@ window.vocabN3_Adverbs = [
       "level": "n3",
       "tags": [
         "derajat"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":4,"downstep_mora":1,"contour":"オ＼オイニ"}
+},
     {
       "jp": "久しぶりに開かれた同窓会で、昔の仲間たちと一緒に大いに盛り上がった。",
       "id": "Di reuni sekolah yang digelar setelah sekian lama, kami sangat bersemangat dan bergembira bersama kawan-kawan lama.",
@@ -6414,8 +6504,9 @@ window.vocabN3_Adverbs = [
       "level": "n3",
       "tags": [
         "deskripsi"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"オ＼モニ"}
+},
     {
       "jp": "仕事が休みの週末は、主に自宅で本を読んだり料理を作ったりしてのんびりと過ごす。",
       "id": "Pada akhir pekan saat libur kerja, saya terutama menghabiskan waktu dengan santai di rumah membaca buku atau memasak.",
@@ -6476,8 +6567,9 @@ window.vocabN3_Adverbs = [
       "level": "n3",
       "tags": [
         "emosi"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":4,"downstep_mora":2,"contour":"オモ＼ワズ"}
+},
     {
       "jp": "映画のクライマックスの切ない別れのシーンを見て、思わず目頭が熱くなり涙がこぼれた。",
       "id": "Menyaksikan adegan perpisahan mengharukan di klimaks film, mata saya tanpa terasa menjadi hangat dan air mata menetes secara refleks.",
@@ -6538,8 +6630,9 @@ window.vocabN3_Adverbs = [
       "level": "n3",
       "tags": [
         "kuantitas"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"オヨソ￣"}
+},
     {
       "jp": "今回の駅前再開発プロジェクトに要する総事業費は、およそ百億円と試算されている。",
       "id": "Total anggaran proyek yang dibutuhkan untuk penataan ulang kawasan depan stasiun ini diestimasikan berkisar kurang lebih sepuluh miliar yen.",
@@ -6601,8 +6694,9 @@ window.vocabN3_Adverbs = [
       "tags": [
         "kehidupan-sehari",
         "sosial"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"グウゼン￣"}
+},
     {
       "jp": "二人が同じ日に同じ色の服を着てきたのは、単なる偶然にすぎない。",
       "id": "Kalian berdua memakai baju warna sama di hari yang sama itu hanyalah sebuah kebetulan belaka.",
@@ -6665,8 +6759,9 @@ window.vocabN3_Adverbs = [
       "tags": [
         "makanan-minuman",
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":4,"category":"odaka","mora_count":4,"downstep_mora":4,"contour":"ケッキョク＼"}
+},
     {
       "jp": "雨が降ったり止んだりしていたが、結局午後からの試合は中止になった。",
       "id": "Hujan sempat turun dan reda berulang kali, tetapi pada akhirnya pertandingan siang dibatalkan.",
@@ -6727,8 +6822,9 @@ window.vocabN3_Adverbs = [
       "tags": [
         "kehidupan-sehari",
         "derajat"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":2,"downstep_mora":1,"contour":"ゴ＼ク"}
+},
     {
       "jp": "その計画に賛成している住民は全体の中で極少数にすぎなかった。",
       "id": "Warga yang menyetujui rencana tersebut hanya berjumlah amat sedikit di antara keseluruhan penduduk.",
@@ -6852,8 +6948,9 @@ window.vocabN3_Adverbs = [
       "tags": [
         "pekerjaan",
         "bisnis"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":0,"downstep_mora":0,"contour":"￣"}
+},
     {
       "jp": "今回のイベントの参加者はざっと見積もって五百人くらいだろう。",
       "id": "Peserta acara kali ini diperkirakan secara garis besar sekitar lima ratus orang.",
@@ -6917,8 +7014,9 @@ window.vocabN3_Adverbs = [
       "tags": [
         "alam-lingkungan",
         "deskripsi"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"マルデ￣"}
+},
     {
       "jp": "彼の説明を聞いても、私にはまるで理解できなかった。",
       "id": "Meskipun mendengarkan penjelasannya, saya sama sekali tidak dapat memahaminya.",
@@ -6980,8 +7078,9 @@ window.vocabN3_Adverbs = [
       "tags": [
         "cuaca",
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":6,"downstep_mora":1,"contour":"モ＼シカスルト"}
+},
     {
       "jp": "彼が来ないのは、もしかすると集合場所を間違えたのではないだろうか。",
       "id": "Ketidakhadirannya itu, jangan-jangan karena dia salah lokasi tempat berkumpul.",
@@ -7045,8 +7144,9 @@ window.vocabN3_Adverbs = [
       "tags": [
         "bencana",
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"モ＼シモ"}
+},
     {
       "jp": "もしも宝くじで一億円が当たったら、世界一周旅行に出かけたい。",
       "id": "Seandainya memenangkan lotre seratus juta yen, saya ingin pergi berlibur keliling dunia.",
@@ -7108,8 +7208,9 @@ window.vocabN3_Adverbs = [
       "tags": [
         "kendaraan-transportasi",
         "perjalanan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":2,"downstep_mora":1,"contour":"ヤ＼ク"}
+},
     {
       "jp": "今回の野外コンサートには、国内外から約一万人のファンが集まった。",
       "id": "Pada konser luar ruangan kali ini, sekitar sepuluh ribu penggemar dari dalam dan luar negeri berkumpul.",
@@ -7174,8 +7275,9 @@ window.vocabN3_Adverbs = [
       "tags": [
         "pekerjaan-bisnis",
         "ekonomi"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":0,"downstep_mora":1,"contour":"＼"}
+},
     {
       "jp": "今朝の健康診断で、血圧が標準値よりやや高めだと指摘された。",
       "id": "Dalam pemeriksaan kesehatan tadi pagi, saya diberi tahu bahwa tekanan darah saya agak sedikit lebih tinggi dari nilai normal.",
@@ -7242,8 +7344,9 @@ window.vocabN3_Adverbs = [
       "tags": [
         "pikiran-opini",
         "percakapan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":5,"downstep_mora":3,"contour":"ヨウス＼ルニ"}
+},
     {
       "jp": "説明が長くなりましたが、要するにこのプロジェクトは予算不足が原因で中止になりました。",
       "id": "Penjelasannya menjadi panjang, tetapi pendek kata proyek ini dibatalkan karena kekurangan anggaran.",
@@ -7304,8 +7407,9 @@ window.vocabN3_Adverbs = [
       "tags": [
         "pertemanan",
         "aksi"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"ワ＼ザト"}
+},
     {
       "jp": "ゲームで小さな弟を勝たせてあげるため、兄はわざと失敗してみせた。",
       "id": "Agar adik kecilnya bisa menang dalam permainan, sang kakak sengaja berbuat salah.",
@@ -7370,8 +7474,9 @@ window.vocabN3_Adverbs = [
       "tags": [
         "keluarga",
         "deskripsi"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":0,"downstep_mora":0,"contour":"￣"}
+},
     {
       "jp": "財布を落として慌てたが、親切な人が届けてくれたおかげで中身がそっくり残っていた。",
       "id": "Saya panik karena dompet terjatuh, namun berkat orang baik hati yang menyerahkannya, seluruh isinya masih utuh tanpa berkurang sedikit pun.",
@@ -7436,8 +7541,9 @@ window.vocabN3_Adverbs = [
       "tags": [
         "kehidupan-sehari",
         "keluarga"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":0,"downstep_mora":0,"contour":"￣"}
+},
     {
       "jp": "深く落ち込んでいる友人を無理に質問攻めにせず、今はそっとしておくのが一番の優しさだ。",
       "id": "Tanpa menghujani kawan yang sedang terpukul dengan pertanyaan bertubi-tubi, membiarkannya tenang saat ini adalah bentuk kebaikan terbesar.",
@@ -7502,8 +7608,9 @@ window.vocabN3_Adverbs = [
       "tags": [
         "pekerjaan",
         "motivasi"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ソノウチ￣"}
+},
     {
       "jp": "雨がだんだん小降りになってきたから、そのうち完全に止んで晴れるだろう。",
       "id": "Karena hujan sudah mulai rintik-rintik mengecil, dalam waktu dekat pasti akan berhenti total dan menjadi cerah.",
@@ -7568,8 +7675,9 @@ window.vocabN3_Adverbs = [
       "tags": [
         "pendidikan",
         "sopan-santun"
-      ]
-    },
+      ],
+  "pitch": {"pattern":4,"category":"odaka","mora_count":4,"downstep_mora":4,"contour":"ソノママ＼"}
+},
     {
       "jp": "仕事から帰ってきてソファに横になったら、着替えるのも忘れてそのまま寝てしまった。",
       "id": "Pulang dari bekerja dan berbaring di sofa, saya lupa berganti pakaian dan tertidur begitu saja.",
@@ -7633,8 +7741,9 @@ window.vocabN3_Adverbs = [
       "tags": [
         "pertemanan",
         "pendidikan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":4,"downstep_mora":2,"contour":"ソレ＼ゾレ"}
+},
     {
       "jp": "旅行の自由行動の時間になり、ツアーの参加者はそれぞれ好きな場所へ出かけていった。",
       "id": "Ketika waktu bebas dalam perjalanan tiba, para peserta tur berangkat menuju tempat yang disukai oleh masing-masing orang.",
@@ -7700,8 +7809,9 @@ window.vocabN3_Adverbs = [
       "tags": [
         "kesehatan",
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"タショウ￣"}
+},
     {
       "jp": "納期のスケジュールには多少の余裕を持たせておいたほうが安心だ。",
       "id": "Akan lebih tenang jika kita memberikan sedikit kelonggaran pada jadwal tenggat pengiriman.",
@@ -7766,8 +7876,9 @@ window.vocabN3_Adverbs = [
       "tags": [
         "literatur",
         "suasana"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":2,"downstep_mora":1,"contour":"タ＼ダ"}
+},
     {
       "jp": "世界で唯ひとつの特別なプレゼントを、大切な友人に贈りたい。",
       "id": "Saya ingin memberikan hadiah istimewa yang satu-satunya di dunia ini kepada sahabat tercinta.",
@@ -7831,8 +7942,9 @@ window.vocabN3_Adverbs = [
       "tags": [
         "keselamatan",
         "darurat"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":4,"downstep_mora":1,"contour":"タ＼ダチニ"}
+},
     {
       "jp": "システムに重大な障害が発生したため、担当者は直ちに対応を始めた。",
       "id": "Karena terjadi kendala fatal pada sistem, penanggung jawab segera memulai tindakan perbaikan saat itu juga.",
@@ -7897,8 +8009,9 @@ window.vocabN3_Adverbs = [
       "tags": [
         "pendidikan",
         "waktu"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":2,"downstep_mora":1,"contour":"タ＼ダ"}
+},
     {
       "jp": "彼はたった一人でその難しいプロジェクトをやり遂げた。",
       "id": "Dia menyelesaikan proyek sulit itu hanya seorang diri.",
@@ -7963,8 +8076,9 @@ window.vocabN3_Adverbs = [
       "tags": [
         "kesehatan",
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":0,"downstep_mora":0,"contour":"￣"}
+},
     {
       "jp": "このレストランのカレーは、具材がたっぷり入っていて食べ応えがある。",
       "id": "Kari restoran ini isiannya banyak melimpah dan sangat mengenyangkan.",
@@ -8030,8 +8144,9 @@ window.vocabN3_Adverbs = [
       "tags": [
         "perjalanan",
         "pertemanan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"タマタマ￣"}
+},
     {
       "jp": "たまたま通りかかった道で、とても魅力的なカフェを見つけた。",
       "id": "Di jalan yang kebetulan saya lewati, saya menemukan kafe yang amat memikat.",
@@ -8096,8 +8211,9 @@ window.vocabN3_Adverbs = [
       "tags": [
         "pekerjaan",
         "pikiran-opini"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"タ＼ンニ"}
+},
     {
       "jp": "言葉の意味を単に暗記するのではなく、実際の会話で使ってみることが大切だ。",
       "id": "Daripada sekadar menghafal arti kata, sangat penting untuk mencobanya dalam percakapan nyata.",
@@ -8162,8 +8278,9 @@ window.vocabN3_Adverbs = [
       "tags": [
         "cuaca",
         "kesehatan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":4,"downstep_mora":2,"contour":"チカ＼ゴロ"}
+},
     {
       "jp": "仕事が立て込んでいて、近頃ゆっくり映画を見る時間さえ取れない。",
       "id": "Karena urusan pekerjaan menumpuk, akhir-akhir ini bahkan waktu untuk menonton film santai pun tidak ada.",
@@ -8229,8 +8346,9 @@ window.vocabN3_Adverbs = [
       "tags": [
         "bisnis",
         "kejadian"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":4,"downstep_mora":2,"contour":"ツギ＼ツギ"}
+},
     {
       "jp": "会議では出席者から新しいアイデアが次々に出された。",
       "id": "Dalam rapat tersebut, gagasan-gagasan baru diajukan berturut-turut oleh para peserta.",
@@ -8295,8 +8413,9 @@ window.vocabN3_Adverbs = [
       "tags": [
         "karakter",
         "pikiran-opini"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"ツ＼ネニ"}
+},
     {
       "jp": "地震などの自然災害に備えて、非常用品を常に部屋の隅に用意しておくべきだ。",
       "id": "Demi bersiap menghadapi bencana alam seperti gempa bumi, kita senantiasa harus menyiapkan perlengkapan darurat di sudut kamar.",
@@ -8361,8 +8480,9 @@ window.vocabN3_Adverbs = [
       "tags": [
         "motivasi",
         "emosi"
-      ]
-    },
+      ],
+  "pitch": {"pattern":4,"category":"nakadaka","mora_count":5,"downstep_mora":4,"contour":"ドウシテ＼モ"}
+},
     {
       "jp": "パスワードを何度も入力し直したが、エラーが出てどうしてもシステムに接続できない。",
       "id": "Saya sudah berkali-kali memasukkan ulang kata sandi, tetapi muncul galat dan mau tidak mau tetap tidak dapat terhubung ke sistem.",
@@ -8424,8 +8544,9 @@ window.vocabN3_Adverbs = [
       "tags": [
         "perjalanan",
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"ド＼コカ"}
+},
     {
       "jp": "彼の話し方や雰囲気には、どこか父親を思い出させる懐かしさがある。",
       "id": "Pada cara bicara dan pembawaannya, ada sesuatu yang entah mengapa mengingatkan pada sosok sang ayah.",
@@ -8484,8 +8605,9 @@ window.vocabN3_Adverbs = [
       "tags": [
         "pikiran",
         "tindakan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":4,"downstep_mora":1,"contour":"ト＼ニカク"}
+},
     {
       "jp": "飛行機の出発時間に遅れそうなので、とにかくタクシーを呼びましょう。",
       "id": "Karena kita sepertinya bakal terlambat dari jam keberangkatan pesawat, pokoknya ayo kita panggil taksi sekarang.",
@@ -8547,8 +8669,9 @@ window.vocabN3_Adverbs = [
       "tags": [
         "pekerjaan",
         "hubungan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"トモニ￣"}
+},
     {
       "jp": "インターネットの普及とともに、人々の生活様式や買い物の方法は大きく変化した。",
       "id": "Seiring dengan meluasnya pemakaian internet, gaya hidup serta cara belanja masyarakat telah berubah drastis.",
@@ -8612,8 +8735,9 @@ window.vocabN3_Adverbs = [
       "tags": [
         "kehidupan-sehari",
         "kebiasaan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":0,"downstep_mora":1,"contour":"＼"}
+},
     {
       "jp": "志望校に合格したと知らせを聞いたとき、両親がどんなに喜んだことか。",
       "id": "Saat mendengar kabar bahwa saya lulus ke sekolah idaman, betapa gembiranya orang tua saya kala itu!",
@@ -8673,8 +8797,9 @@ window.vocabN3_Adverbs = [
       "tags": [
         "komunikasi",
         "pertemanan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"ナ＼ンデ"}
+},
     {
       "jp": "なんでそんなにつまらなそうな顔をしているのか、理由を教えてよ。",
       "id": "Beri tahu aku alasannya, kenapa kamu memasang wajah yang tampak sangat bosan begitu.",
@@ -8734,8 +8859,9 @@ window.vocabN3_Adverbs = [
       "tags": [
         "pekerjaan",
         "pendidikan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":4,"downstep_mora":1,"contour":"ナ＼ントカ"}
+},
     {
       "jp": "今は先が見えない状況でも、諦めなければ何とかなるはずだと信じている。",
       "id": "Bahkan di saat situasi belum menentu seperti sekarang, saya yakin pasti akan ada jalan keluarnya asal tidak menyerah.",
@@ -8796,8 +8922,9 @@ window.vocabN3_Adverbs = [
       "tags": [
         "komunikasi",
         "emosi-positif"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":0,"downstep_mora":0,"contour":"￣"}
+},
     {
       "jp": "小さな赤ちゃんはお母さんの優しい顔を見ると、嬉しそうににっこり微笑んだ。",
       "id": "Bayi mungil itu tersenyum simpul penuh riang saat menatap wajah lembut sang ibu.",
@@ -8860,8 +8987,9 @@ window.vocabN3_Adverbs = [
       "tags": [
         "kehidupan-sehari",
         "belanja"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":4,"downstep_mora":1,"contour":"ネ＼ンジュウ"}
+},
     {
       "jp": "あの二人は顔を合わせさえすれば、年中くだらない口喧嘩ばかりしている。",
       "id": "Kedua orang itu asal bertatap muka, selalu saja terus-menerus bertengkar mulut soal hal sepele.",
@@ -8922,8 +9050,9 @@ window.vocabN3_Adverbs = [
       "tags": [
         "pertemanan",
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":0,"downstep_mora":0,"contour":"￣"}
+},
     {
       "jp": "一日中休まず歩き回って疲れ果て、ベッドの上にばったりと倒れ込んでしまった。",
       "id": "Saking penatnya berjalan seharian tanpa jeda istirahat, saya langsung jatuh terkapar di atas kasur.",
@@ -8984,8 +9113,9 @@ window.vocabN3_Adverbs = [
       "tags": [
         "pendidikan",
         "sekolah"
-      ]
-    },
+      ],
+  "pitch": {"pattern":4,"category":"nakadaka","mora_count":6,"downstep_mora":4,"contour":"ヒトリヒ＼トリ"}
+},
     {
       "jp": "地球温暖化を止めるには、市民一人一人が環境問題への意識を高めることが重要だ。",
       "id": "Untuk menghentikan pemanasan global, penting bagi setiap warga untuk meningkatkan kesadaran terhadap masalah lingkungan.",
@@ -9051,8 +9181,9 @@ window.vocabN3_Adverbs = [
       "tags": [
         "alam-lingkungan",
         "perasaan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"odaka","mora_count":2,"downstep_mora":2,"contour":"フト＼"}
+},
     {
       "jp": "机の引き出しを整理していたら、学生時代の懐かしい手紙をふと思い出した。",
       "id": "Ketika merapikan laci meja kerja, saya tiba-tiba teringat kembali pada surat-surat mengharukan semasa sekolah.",
@@ -9116,8 +9247,9 @@ window.vocabN3_Adverbs = [
       "tags": [
         "percakapan",
         "kesehatan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ベツニ￣"}
+},
     {
       "jp": "今日の夕飯は特に決めていないので、別に何でも食べられます。",
       "id": "Karena belum menentukan makan malam hari ini secara khusus, makan apa saja tidak masalah bagi saya.",
@@ -9182,8 +9314,9 @@ window.vocabN3_Adverbs = [
       "tags": [
         "kehidupan-sehari",
         "aktivitas"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":4,"downstep_mora":1,"contour":"ホ＼ウボウ"}
+},
     {
       "jp": "留学費用の支援を受けられるよう、方々の奨学金財団に書類を提出した。",
       "id": "Agar bisa mendapatkan bantuan biaya kuliah di luar negeri, saya mengajukan berkas ke berbagai yayasan beasiswa di pelbagai penjuru.",
@@ -9247,8 +9380,9 @@ window.vocabN3_Adverbs = [
       "tags": [
         "pekerjaan",
         "jadwal"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":2,"downstep_mora":1,"contour":"ホ＼ボ"}
+},
     {
       "jp": "二つの製品の性能を比較してみたが、日常で使う分にはほぼ違いがない。",
       "id": "Saya mencoba membandingkan performa kedua produk tersebut, namun untuk pemakaian sehari-hari hampir tidak ada perbedaan.",
@@ -9312,8 +9446,9 @@ window.vocabN3_Adverbs = [
       "tags": [
         "percakapan",
         "bisnis"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":0,"downstep_mora":1,"contour":"＼"}
+},
     {
       "jp": "もう過ぎてしまった失敗を悔やんでも仕方がないから、まあ前を向いて次を頑張ろう。",
       "id": "Menyesali kegagalan yang telah berlalu tak ada gunanya, jadi ya sudahlah mari kita tatap ke depan dan berjuang untuk kesempatan berikutnya.",
@@ -9375,8 +9510,9 @@ window.vocabN3_Adverbs = [
       "tags": [
         "diskusi",
         "komunikasi"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"マ＼サニ"}
+},
     {
       "jp": "山頂から眺めた朝日と雲海は、まさに息をのむ美しさだった。",
       "id": "Matahari terbit dan lautan awan yang dilihat dari puncak gunung sungguh keindahan yang membuat takjub.",
@@ -9437,8 +9573,9 @@ window.vocabN3_Adverbs = [
       "tags": [
         "pemahaman",
         "komunikasi"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"マッタク￣"}
+},
     {
       "jp": "約束の時間を1時間も過ぎるなんて、全くあきれた人だ。",
       "id": "Terlambat dari waktu janji sampai 1 jam lebih, benar-benar orang yang bikin geleng-geleng kepala.",
@@ -9503,8 +9640,9 @@ window.vocabN3_Adverbs = [
       "tags": [
         "emosi-perasaan",
         "pendidikan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":0,"downstep_mora":0,"contour":"￣"}
+},
     {
       "jp": "迷子になっていた子どもが無事に見つかり、親たちはほっと胸をなで下ろした。",
       "id": "Anak yang sempat tersesat berhasil ditemukan dengan selamat, membuat para orang tua mengelus dada lega.",
@@ -9569,8 +9707,9 @@ window.vocabN3_Adverbs = [
       "tags": [
         "bisnis",
         "komunikasi"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":5,"downstep_mora":3,"contour":"マエモ＼ッテ"}
+},
     {
       "jp": "休日は混雑が予想されるため、映画のチケットを前もって買っておいた。",
       "id": "Karena hari libur diperkirakan ramai, saya membeli tiket bioskop terlebih dahulu jauh-jauh hari.",

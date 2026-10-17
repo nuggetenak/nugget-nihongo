@@ -1,6 +1,6 @@
 {
   "name": "nugget-nihongo",
-  "version": "19.3.3",
+  "version": "20.0.0",
   "description": "Hybrid PWA for learning Japanese — JLPT N5 to N1, targeting Indonesian speakers",
   "private": true,
   "license": "MIT",
@@ -27,8 +27,12 @@
     "changelog": "node scripts/sync-changelog.js",
     "build:curriculum": "node scripts/build-curriculum-all.js",
     "compile:diagnostics": "node scripts/compile_diagnostics.js",
-    "test": "node tests/run.js && node tests/test-backend-consolidation.js && node tests/test-backend-exhaustive-audit.js && node tests/test-fallback-integrity.js && node tests/test-curriculum-semantics.js",
+    "test": "node tests/fsrs-engine.test.js && node tests/cat-engine.test.js && node tests/stores.test.js && node tests/test-curriculum-adapter.js && node scripts/run-persona-simulations.js && node tests/run.js && node tests/test-backend-consolidation.js && node tests/test-backend-exhaustive-audit.js && node tests/test-fallback-integrity.js && node tests/test-curriculum-semantics.js",
+    "test:engines": "node tests/fsrs-engine.test.js && node tests/cat-engine.test.js && node tests/stores.test.js && node tests/test-curriculum-adapter.js",
+    "test:personas": "node scripts/run-persona-simulations.js",
+    "test:quality": "node tests/quality.js",
     "test:responsive": "node tests/verify-frontend-responsive.js",
+    "verify:budget": "node scripts/verify-bundle-budget.js",
     "validate": "node tests/run.js",
     "dev": "vite",
     "build:vite": "vite build",
@@ -42,11 +46,13 @@
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.117.3",
+    "budoux": "^0.9.3",
     "clsx": "^2.1.1",
     "lucide-react": "^1.16.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "tailwind-merge": "^3.0.2",
+    "tinybase": "^10.0.1",
     "zustand": "^5.0.3"
   },
   "devDependencies": {
@@ -58,6 +64,7 @@
     "autoprefixer": "^10.4.20",
     "postcss": "^8.5.1",
     "tailwindcss": "^3.4.17",
+    "tailwindcss-animate": "^1.0.7",
     "typescript": "^5.7.3",
     "vite": "^6.1.0",
     "wrangler": "^4.81.0"

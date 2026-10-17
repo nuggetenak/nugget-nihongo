@@ -43,10 +43,12 @@ function loadVocabForLevel(lvl) {
   const prodFile = path.join(PROD_VOCAB, `vocab-${lvl}.js`);
   if (fs.existsSync(prodFile)) {
     const raw = fs.readFileSync(prodFile, 'utf8');
-    const matches = raw.match(/"id":\s*"([^"]+)"[\s\S]*?"word":\s*"([^"]+)"/g) || [];
+    const matches = (raw.match(/"id":\s*"(vg-[^"]+)"[\s\S]*?"word":\s*"([^"]+)"/g) || []).concat(
+      raw.match(/id:\s*'(vg-[^']+)'[\s\S]*?word:\s*'([^']+)'/g) || []
+    );
     for (const m of matches) {
-      const idM = m.match(/"id":\s*"([^"]+)"/);
-      const wordM = m.match(/"word":\s*"([^"]+)"/);
+      const idM = m.match(/(?:"id"|id):\s*["'](vg-[^"']+)["']/);
+      const wordM = m.match(/(?:"word"|word):\s*["']([^"']+)["']/);
       if (idM && wordM) {
         items.push({ id: idM[1], word: wordM[1] });
       }

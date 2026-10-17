@@ -292,8 +292,9 @@ window.vocabN4_Adverbs = [
       "tags": [
         "perasaan",
         "komunikasi"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":4,"downstep_mora":2,"contour":"シバ＼ラク"}
+},
     {
       "jp": "彼は名前を呼ばれると、席からすっと立ち上がりました。",
       "id": "Ketika namanya dipanggil, dia langsung berdiri dengan luwes dari tempat duduknya.",
@@ -414,8 +415,9 @@ window.vocabN4_Adverbs = [
       "tags": [
         "bisnis",
         "kerja"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ヒジョウニ￣"}
+},
     {
       "jp": "昨夜の地震は非常に強い揺れでした。",
       "id": "Gempa bumi tadi malam guncangannya sangat kuat.",
@@ -479,8 +481,9 @@ window.vocabN4_Adverbs = [
       "tags": [
         "belajar",
         "ujian"
-      ]
-    },
+      ],
+  "pitch": {"pattern":5,"category":"nakadaka","mora_count":8,"downstep_mora":5,"contour":"イッショウケ＼ンメイ"}
+},
     {
       "jp": "選手たちは試合の最後まで一生懸命に走りました。",
       "id": "Para pemain berlari dengan sekuat tenaga hingga akhir pertandingan.",
@@ -544,8 +547,9 @@ window.vocabN4_Adverbs = [
       "tags": [
         "percakapan",
         "opini"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":2,"downstep_mora":0,"contour":"ソウ￣"}
+},
     {
       "jp": "そう簡単に諦めてはいけませんよ。",
       "id": "Kamu tidak boleh menyerah begitu mudahnya lho.",
@@ -607,8 +611,9 @@ window.vocabN4_Adverbs = [
       "tags": [
         "kesehatan",
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ナルベク￣"}
+},
     {
       "jp": "会議で配る資料はなるべく早く準備して提出してください。",
       "id": "Tolong siapkan dan kumpulkan dokumen yang akan dibagikan dalam rapat sebisa mungkin lebih awal.",
@@ -668,8 +673,9 @@ window.vocabN4_Adverbs = [
       "tags": [
         "pendidikan",
         "perubahan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":0,"downstep_mora":1,"contour":"＼"}
+},
     {
       "jp": "分からない言葉や質問があれば遠慮しないでどんどん聞いてください。",
       "id": "Jika ada kata yang tidak dimengerti atau ada pertanyaan, jangan sungkan dan silakan bertanya terus.",
@@ -732,8 +738,9 @@ window.vocabN4_Adverbs = [
       "tags": [
         "perjalanan",
         "motivasi"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"odaka","mora_count":3,"downstep_mora":3,"contour":"イチド＼"}
+},
     {
       "jp": "この頑丈な時計は買ってから今まで一度も壊れたことがありません。",
       "id": "Jam tangan kokoh ini belum pernah rusak sekalipun sejak dibeli hingga sekarang.",
@@ -796,8 +803,9 @@ window.vocabN4_Adverbs = [
       "tags": [
         "makanan",
         "kondisi"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"イッパイ￣"}
+},
     {
       "jp": "休日のショッピングモールは買い物客でいっぱいでした。",
       "id": "Pusat perbelanjaan pada hari libur penuh sesak dengan pengunjung yang berbelanja.",
@@ -860,8 +868,9 @@ window.vocabN4_Adverbs = [
       "tags": [
         "petunjuk",
         "kegiatan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":2,"downstep_mora":1,"contour":"コ＼ウ"}
+},
     {
       "jp": "こう毎日雨が続いては、洗濯物が乾かなくて困りますね。",
       "id": "Kalau hujan terus-menerus setiap hari begini, repot sekali karena jemuran pakaian tidak kering-kering ya.",
@@ -923,8 +932,9 @@ window.vocabN4_Adverbs = [
       "tags": [
         "pendidikan",
         "motivasi"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"キット￣"}
+},
     {
       "jp": "明日は雲が消えてきっといい天気になるでしょう。",
       "id": "Besok awan akan menghilang dan pasti cuaca menjadi cerah.",
@@ -987,8 +997,9 @@ window.vocabN4_Adverbs = [
       "tags": [
         "alam-lingkungan",
         "deskripsi"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"モット＼モ"}
+},
     {
       "jp": "これが今年発売された商品の中で最も人気を集めています。",
       "id": "Ini adalah yang paling banyak menarik kepopuleran di antara barang-barang yang dirilis tahun ini.",
@@ -1049,8 +1060,9 @@ window.vocabN4_Adverbs = [
       "tags": [
         "kuantitas",
         "perjalanan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":2,"downstep_mora":0,"contour":"ホド￣"}
+},
     {
       "jp": "今年の夏は去年の夏ほど暑くありませんでした。",
       "id": "Musim panas tahun ini tidak sepanas musim panas tahun lalu.",

@@ -1,0 +1,48 @@
+{
+  "id": "choukai-jft-a2-01",
+  "level": "JFT-A2",
+  "title": "Pelayanan di Restoran Keluarga (ファミレスでの接客)",
+  "scenario": "Menyambut pelanggan dan menanyakan pesanan tempat duduk",
+  "audioSrc": "/data/choukai/audio/set2/q1_mondai1.mp3",
+  "duration": 28,
+  "sentences": [
+    {
+      "id": "s1",
+      "startMs": 0,
+      "endMs": 3200,
+      "speaker": "店員 (Pelayan)",
+      "text": "いらっしゃいませ！何名様でしょうか？",
+      "romaji": "Irasshaimase! Nan-mei-sama deshou ka?",
+      "translation": "Selamat datang! Berapa orang ya?"
+    },
+    {
+      "id": "s2",
+      "startMs": 3500,
+      "endMs": 5800,
+      "speaker": "客 (Pelanggan)",
+      "text": "二人です。禁煙席をお願いします。",
+      "romaji": "Futari desu. Kin'en-seki o onegai shimasu.",
+      "translation": "Dua orang. Minta meja bebas rokok ya."
+    },
+    {
+      "id": "s3",
+      "startMs": 6200,
+      "endMs": 9800,
+      "speaker": "店員 (Pelayan)",
+      "text": "かしこまりました。ただいま満席ですので、こちらのお名前表にご記入ください。",
+      "romaji": "Kashikomarimashita. Tadaima manseki desu no de, kochira no onamae-hyou ni gokinyuu kudasai.",
+      "translation": "Baik dimengerti. Saat ini kursi penuh, silakan isi formulir daftar nama di sebelah sini."
+    }
+  ],
+  "question": {
+    "prompt": "Apa yang diminta pelayan kepada pelanggan?",
+    "options": [
+      "Langsung menuju meja nomor 2",
+      "Menuliskan nama di daftar tunggu karena meja penuh",
+      "Pindah ke ruangan merokok",
+      "Membayar tagihan terlebih dahulu"
+    ],
+    "correctAnswerIndex": 1,
+    "explanationId": "Pelayan mengatakan: \"ただいま満席ですので、こちらのお名前表にご記入ください\" (Meja penuh, mohon tulis nama di tabel ini)."
+  }
+}

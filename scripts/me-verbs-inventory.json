@@ -1,0 +1,7889 @@
+{
+  "bathe": [
+    {
+      "word": "あびる",
+      "reading": "あびる",
+      "romaji": "abiru",
+      "meaning_id": "me-bathe",
+      "meaning_en": "to bathe; to shower"
+    }
+  ],
+  "be": [
+    {
+      "word": "ある",
+      "reading": "ある",
+      "romaji": "aru",
+      "meaning_id": "me-be",
+      "meaning_en": "to be; to have (used for inanimate objects)"
+    },
+    {
+      "word": "いる",
+      "reading": "いる",
+      "romaji": "iru",
+      "meaning_id": "me-be",
+      "meaning_en": "to be; to have (used for people and animals)"
+    },
+    {
+      "word": "居る",
+      "reading": "おる",
+      "romaji": "oru",
+      "meaning_id": "me-be",
+      "meaning_en": "to be (animate); to be; to exist"
+    },
+    {
+      "word": "ございます",
+      "reading": "ございます",
+      "romaji": "gozaimasu",
+      "meaning_id": "me-be",
+      "meaning_en": "to be (polite); to exist"
+    }
+  ],
+  "need": [
+    {
+      "word": "要る",
+      "reading": "いる",
+      "romaji": "iru",
+      "meaning_id": "me-need",
+      "meaning_en": "to need"
+    }
+  ],
+  "get up": [
+    {
+      "word": "起きる",
+      "reading": "おきる",
+      "romaji": "okiru",
+      "meaning_id": "me-get up",
+      "meaning_en": "to get up"
+    }
+  ],
+  "return something": [
+    {
+      "word": "返す",
+      "reading": "かえす",
+      "romaji": "kaesu",
+      "meaning_id": "me-return something",
+      "meaning_en": "to return something"
+    }
+  ],
+  "take time or money": [
+    {
+      "word": "かかる",
+      "reading": "かかる",
+      "romaji": "kakaru",
+      "meaning_id": "me-take time or money",
+      "meaning_en": "to take time or money"
+    }
+  ],
+  "call by phone": [
+    {
+      "word": "かける",
+      "reading": "かける",
+      "romaji": "kakeru",
+      "meaning_id": "me-call by phone",
+      "meaning_en": "to call by phone"
+    }
+  ],
+  "cut": [
+    {
+      "word": "切る",
+      "reading": "きる",
+      "romaji": "kiru",
+      "meaning_id": "me-cut",
+      "meaning_en": "to cut"
+    }
+  ],
+  "erase": [
+    {
+      "word": "消す",
+      "reading": "けす",
+      "romaji": "kesu",
+      "meaning_id": "me-erase",
+      "meaning_en": "to erase; to turn off power"
+    }
+  ],
+  "answer": [
+    {
+      "word": "答える",
+      "reading": "こたえる",
+      "romaji": "kotaeru",
+      "meaning_id": "me-answer",
+      "meaning_en": "to answer"
+    },
+    {
+      "word": "応ずる",
+      "reading": "おうずる",
+      "romaji": "ouzuru",
+      "meaning_id": "me-answer",
+      "meaning_en": "to answer; to respond; to meet; to satisfy; to accept"
+    }
+  ],
+  "be worried": [
+    {
+      "word": "困る",
+      "reading": "こまる",
+      "romaji": "komaru",
+      "meaning_id": "me-be worried",
+      "meaning_en": "to be worried"
+    }
+  ],
+  "die": [
+    {
+      "word": "死ぬ",
+      "reading": "しぬ",
+      "romaji": "shinu",
+      "meaning_id": "me-die",
+      "meaning_en": "to die"
+    }
+  ],
+  "tie": [
+    {
+      "word": "締める",
+      "reading": "しめる",
+      "romaji": "shimeru",
+      "meaning_id": "me-tie",
+      "meaning_en": "to tie"
+    },
+    {
+      "word": "縛る",
+      "reading": "しばる",
+      "romaji": "shibaru",
+      "meaning_id": "me-tie",
+      "meaning_en": "to tie; to bind"
+    }
+  ],
+  "close something": [
+    {
+      "word": "閉める",
+      "reading": "しめる",
+      "romaji": "shimeru",
+      "meaning_id": "me-close something",
+      "meaning_en": "to close something"
+    }
+  ],
+  "live in": [
+    {
+      "word": "住む",
+      "reading": "すむ",
+      "romaji": "sumu",
+      "meaning_id": "me-live in",
+      "meaning_en": "to live in"
+    }
+  ],
+  "do": [
+    {
+      "word": "する",
+      "reading": "する",
+      "romaji": "suru",
+      "meaning_id": "me-do",
+      "meaning_en": "to do"
+    },
+    {
+      "word": "やる",
+      "reading": "やる",
+      "romaji": "yaru",
+      "meaning_id": "me-do",
+      "meaning_en": "to do"
+    }
+  ],
+  "put out": [
+    {
+      "word": "出す",
+      "reading": "だす",
+      "romaji": "dasu",
+      "meaning_id": "me-put out",
+      "meaning_en": "to put out"
+    }
+  ],
+  "ask": [
+    {
+      "word": "頼む",
+      "reading": "たのむ",
+      "romaji": "tanomu",
+      "meaning_id": "me-ask",
+      "meaning_en": "to ask"
+    },
+    {
+      "word": "請う",
+      "reading": "こう",
+      "romaji": "kou",
+      "meaning_id": "me-ask",
+      "meaning_en": "to ask; to request"
+    },
+    {
+      "word": "問う",
+      "reading": "とう",
+      "romaji": "tou",
+      "meaning_id": "me-ask",
+      "meaning_en": "to ask; to question; to charge (i.e. with a crime); to accuse; without regard to (neg)"
+    }
+  ],
+  "differ": [
+    {
+      "word": "違う",
+      "reading": "ちがう",
+      "romaji": "chigau",
+      "meaning_id": "me-differ",
+      "meaning_en": "to differ"
+    }
+  ],
+  "arrive at": [
+    {
+      "word": "着く",
+      "reading": "つく",
+      "romaji": "tsuku",
+      "meaning_id": "me-arrive at",
+      "meaning_en": "to arrive at"
+    }
+  ],
+  "turn on": [
+    {
+      "word": "つける",
+      "reading": "つける",
+      "romaji": "tsukeru",
+      "meaning_id": "me-turn on",
+      "meaning_en": "to turn on"
+    }
+  ],
+  "be able to": [
+    {
+      "word": "できる",
+      "reading": "できる",
+      "romaji": "dekiru",
+      "meaning_id": "me-be able to",
+      "meaning_en": "to be able to"
+    }
+  ],
+  "appear": [
+    {
+      "word": "出る",
+      "reading": "でる",
+      "romaji": "deru",
+      "meaning_id": "me-appear",
+      "meaning_en": "to appear; to leave"
+    },
+    {
+      "word": "載る",
+      "reading": "のる",
+      "romaji": "noru",
+      "meaning_id": "me-appear",
+      "meaning_en": "to appear (in print); to be recorded"
+    }
+  ],
+  "take something": [
+    {
+      "word": "取る",
+      "reading": "とる",
+      "romaji": "toru",
+      "meaning_id": "me-take something",
+      "meaning_en": "to take something"
+    }
+  ],
+  "make a sound": [
+    {
+      "word": "鳴く",
+      "reading": "なく",
+      "romaji": "naku",
+      "meaning_id": "me-make a sound",
+      "meaning_en": "to make a sound (of an animal); to cry; to chirp; to sing (of birds)"
+    }
+  ],
+  "line up": [
+    {
+      "word": "並ぶ",
+      "reading": "ならぶ",
+      "romaji": "narabu",
+      "meaning_id": "me-line up",
+      "meaning_en": "to line up; to stand in a line"
+    },
+    {
+      "word": "並べる",
+      "reading": "ならべる",
+      "romaji": "naraberu",
+      "meaning_id": "me-line up",
+      "meaning_en": "to line up; to set up"
+    }
+  ],
+  "become": [
+    {
+      "word": "なる",
+      "reading": "なる",
+      "romaji": "naru",
+      "meaning_id": "me-become",
+      "meaning_en": "to become"
+    }
+  ],
+  "take off clothes": [
+    {
+      "word": "脱ぐ",
+      "reading": "ぬぐ",
+      "romaji": "nugu",
+      "meaning_id": "me-take off clothes",
+      "meaning_en": "to take off clothes"
+    }
+  ],
+  "wear": [
+    {
+      "word": "はく",
+      "reading": "はく",
+      "romaji": "haku",
+      "meaning_id": "me-wear",
+      "meaning_en": "to wear; to put on trousers"
+    }
+  ],
+  "begin": [
+    {
+      "word": "始まる",
+      "reading": "はじまる",
+      "romaji": "hajimaru",
+      "meaning_id": "me-begin",
+      "meaning_en": "to begin"
+    }
+  ],
+  "stick": [
+    {
+      "word": "貼る",
+      "reading": "はる",
+      "romaji": "haru",
+      "meaning_id": "me-stick",
+      "meaning_en": "to stick"
+    },
+    {
+      "word": "張る",
+      "reading": "はる",
+      "romaji": "haru",
+      "meaning_id": "me-stick",
+      "meaning_en": "to stick; to paste"
+    },
+    {
+      "word": "刺さる",
+      "reading": "ささる",
+      "romaji": "sasaru",
+      "meaning_id": "me-stick",
+      "meaning_en": "to stick; to be stuck"
+    }
+  ],
+  "play an instrument with strings": [
+    {
+      "word": "弾く",
+      "reading": "ひく",
+      "romaji": "hiku",
+      "meaning_id": "me-play an instrument with strings",
+      "meaning_en": "to play an instrument with strings; including piano"
+    }
+  ],
+  "hold": [
+    {
+      "word": "持つ",
+      "reading": "もつ",
+      "romaji": "motsu",
+      "meaning_id": "me-hold",
+      "meaning_en": "to hold"
+    },
+    {
+      "word": "兼ねる",
+      "reading": "かねる",
+      "romaji": "kaneru",
+      "meaning_id": "me-hold",
+      "meaning_en": "to hold (position); to serve; to be unable"
+    },
+    {
+      "word": "催す",
+      "reading": "もよおす",
+      "romaji": "moyoosu",
+      "meaning_id": "me-hold",
+      "meaning_en": "to hold (a meeting); to give (a dinner); to feel; to show signs of; to develop symptoms of"
+    }
+  ],
+  "rest": [
+    {
+      "word": "休む",
+      "reading": "やすむ",
+      "romaji": "yasumu",
+      "meaning_id": "me-rest",
+      "meaning_en": "to rest"
+    },
+    {
+      "word": "休める",
+      "reading": "やすめる",
+      "romaji": "yasumeru",
+      "meaning_id": "me-rest",
+      "meaning_en": "to rest; to suspend; to give relief"
+    }
+  ],
+  "practice": [
+    {
+      "word": "練習",
+      "reading": "れんしゅう",
+      "romaji": "renshuu",
+      "meaning_id": "me-practice",
+      "meaning_en": "to practice"
+    }
+  ],
+  "hand over": [
+    {
+      "word": "渡す",
+      "reading": "わたす",
+      "romaji": "watasu",
+      "meaning_id": "me-hand over",
+      "meaning_en": "to hand over"
+    }
+  ],
+  "collect something": [
+    {
+      "word": "集める",
+      "reading": "あつめる",
+      "romaji": "atsumeru",
+      "meaning_id": "me-collect something",
+      "meaning_en": "to collect something"
+    }
+  ],
+  "apologize": [
+    {
+      "word": "謝る",
+      "reading": "あやまる",
+      "romaji": "ayamaru",
+      "meaning_id": "me-apologize",
+      "meaning_en": "to apologize"
+    },
+    {
+      "word": "詫びる",
+      "reading": "わびる",
+      "romaji": "wabiru",
+      "meaning_id": "me-apologize",
+      "meaning_en": "to apologize"
+    }
+  ],
+  "guide": [
+    {
+      "word": "案内",
+      "reading": "あんない",
+      "romaji": "annai",
+      "meaning_id": "me-guide",
+      "meaning_en": "to guide"
+    }
+  ],
+  "hurry": [
+    {
+      "word": "急ぐ",
+      "reading": "いそぐ",
+      "romaji": "isogu",
+      "meaning_id": "me-hurry",
+      "meaning_en": "to hurry"
+    },
+    {
+      "word": "急かす",
+      "reading": "せかす",
+      "romaji": "sekasu",
+      "meaning_id": "me-hurry",
+      "meaning_en": "to hurry; to urge on"
+    }
+  ],
+  "move": [
+    {
+      "word": "動く",
+      "reading": "うごく",
+      "romaji": "ugoku",
+      "meaning_id": "me-move",
+      "meaning_en": "to move"
+    },
+    {
+      "word": "動かす",
+      "reading": "うごかす",
+      "romaji": "ugokasu",
+      "meaning_id": "me-move",
+      "meaning_en": "to move; to shift"
+    }
+  ],
+  "hit": [
+    {
+      "word": "打つ",
+      "reading": "うつ",
+      "romaji": "utsu",
+      "meaning_id": "me-hit",
+      "meaning_en": "to hit"
+    }
+  ],
+  "copy or photograph": [
+    {
+      "word": "写す",
+      "reading": "うつす",
+      "romaji": "utsusu",
+      "meaning_id": "me-copy or photograph",
+      "meaning_en": "to copy or photograph"
+    }
+  ],
+  "move house or transfer": [
+    {
+      "word": "移る",
+      "reading": "うつる",
+      "romaji": "utsuru",
+      "meaning_id": "me-move house or transfer",
+      "meaning_en": "to move house or transfer"
+    }
+  ],
+  "drive": [
+    {
+      "word": "運転",
+      "reading": "うんてん",
+      "romaji": "unten",
+      "meaning_id": "me-drive",
+      "meaning_en": "to drive"
+    }
+  ],
+  "exercise": [
+    {
+      "word": "運動",
+      "reading": "うんどう",
+      "romaji": "undou",
+      "meaning_id": "me-exercise",
+      "meaning_en": "to exercise"
+    }
+  ],
+  "get off": [
+    {
+      "word": "下りる",
+      "reading": "おりる",
+      "romaji": "oriru",
+      "meaning_id": "me-get off",
+      "meaning_en": "to get off"
+    }
+  ],
+  "break or to fold": [
+    {
+      "word": "折る",
+      "reading": "おる",
+      "romaji": "oru",
+      "meaning_id": "me-break or to fold",
+      "meaning_en": "to break or to fold"
+    }
+  ],
+  "change": [
+    {
+      "word": "変える",
+      "reading": "かえる",
+      "romaji": "kaeru",
+      "meaning_id": "me-change",
+      "meaning_en": "to change"
+    },
+    {
+      "word": "改める",
+      "reading": "あらためる",
+      "romaji": "aratameru",
+      "meaning_id": "me-change",
+      "meaning_en": "to change; to alter; to reform; to revise"
+    },
+    {
+      "word": "切り替える",
+      "reading": "きりかえる",
+      "romaji": "kirikaeru",
+      "meaning_id": "me-change",
+      "meaning_en": "to change; to exchange; to convert; to renew; to throw a switch; to replace; to switch over"
+    },
+    {
+      "word": "違える",
+      "reading": "ちがえる",
+      "romaji": "chigaeru",
+      "meaning_id": "me-change",
+      "meaning_en": "to change"
+    }
+  ],
+  "tidy up": [
+    {
+      "word": "片付ける",
+      "reading": "かたづける",
+      "romaji": "katazukeru",
+      "meaning_id": "me-tidy up",
+      "meaning_en": "to tidy up"
+    }
+  ],
+  "get dry": [
+    {
+      "word": "乾く",
+      "reading": "かわく",
+      "romaji": "kawaku",
+      "meaning_id": "me-get dry",
+      "meaning_en": "to get dry"
+    }
+  ],
+  "be heard": [
+    {
+      "word": "聞こえる",
+      "reading": "きこえる",
+      "romaji": "kikoeru",
+      "meaning_id": "me-be heard",
+      "meaning_en": "to be heard"
+    }
+  ],
+  "get dark": [
+    {
+      "word": "暮れる",
+      "reading": "くれる",
+      "romaji": "kureru",
+      "meaning_id": "me-get dark",
+      "meaning_en": "to get dark; to come to an end"
+    }
+  ],
+  "plan": [
+    {
+      "word": "計画",
+      "reading": "けいかく",
+      "romaji": "keikaku",
+      "meaning_id": "me-plan",
+      "meaning_en": "to plan"
+    },
+    {
+      "word": "志す",
+      "reading": "こころざす",
+      "romaji": "kokorozasu",
+      "meaning_id": "me-plan",
+      "meaning_en": "to plan; to intend; to aspire to; to set aims (sights on)"
+    }
+  ],
+  "experience": [
+    {
+      "word": "経験",
+      "reading": "けいけん",
+      "romaji": "keiken",
+      "meaning_id": "me-experience",
+      "meaning_en": "to experience"
+    }
+  ],
+  "break-down": [
+    {
+      "word": "故障",
+      "reading": "こしょう",
+      "romaji": "koshou",
+      "meaning_id": "me-break-down",
+      "meaning_en": "to break-down"
+    }
+  ],
+  "hang": [
+    {
+      "word": "下げる",
+      "reading": "さげる",
+      "romaji": "sageru",
+      "meaning_id": "me-hang",
+      "meaning_en": "to hang; to lower; to move back"
+    },
+    {
+      "word": "吊る",
+      "reading": "つる",
+      "romaji": "tsuru",
+      "meaning_id": "me-hang",
+      "meaning_en": "to hang"
+    },
+    {
+      "word": "吊す",
+      "reading": "つるす",
+      "romaji": "tsurusu",
+      "meaning_id": "me-hang",
+      "meaning_en": "to hang"
+    },
+    {
+      "word": "ぶらさげる",
+      "reading": "ぶらさげる",
+      "romaji": "burasageru",
+      "meaning_id": "me-hang",
+      "meaning_en": "to hang; to suspend; to dangle; to swing"
+    },
+    {
+      "word": "垂れる",
+      "reading": "たれる",
+      "romaji": "tareru",
+      "meaning_id": "me-hang",
+      "meaning_en": "to hang; to droop; to drop; to lower; to pull down; to dangle; to sag; to drip; to ooze; to trickle; to leave behind (at death)"
+    }
+  ],
+  "touch": [
+    {
+      "word": "触る",
+      "reading": "さわる",
+      "romaji": "sawaru",
+      "meaning_id": "me-touch",
+      "meaning_en": "to touch"
+    },
+    {
+      "word": "弄る",
+      "reading": "いじる",
+      "romaji": "ijiru",
+      "meaning_id": "me-touch",
+      "meaning_en": "to touch; to tamper with"
+    }
+  ],
+  "attend": [
+    {
+      "word": "出席",
+      "reading": "しゅっせき",
+      "romaji": "shusseki",
+      "meaning_id": "me-attend",
+      "meaning_en": "to attend"
+    }
+  ],
+  "depart": [
+    {
+      "word": "出発",
+      "reading": "しゅっぱつ",
+      "romaji": "shuppatsu",
+      "meaning_id": "me-depart",
+      "meaning_en": "to depart"
+    },
+    {
+      "word": "発つ",
+      "reading": "たつ",
+      "romaji": "tatsu",
+      "meaning_id": "me-depart",
+      "meaning_en": "to depart (on a plane, train, etc.)"
+    }
+  ],
+  "prepare": [
+    {
+      "word": "準備",
+      "reading": "じゅんび",
+      "romaji": "junbi",
+      "meaning_id": "me-prepare",
+      "meaning_en": "to prepare"
+    }
+  ],
+  "have a meal": [
+    {
+      "word": "食事",
+      "reading": "しょくじ",
+      "romaji": "shokuji",
+      "meaning_id": "me-have a meal",
+      "meaning_en": "to have a meal"
+    }
+  ],
+  "investigate": [
+    {
+      "word": "調べる",
+      "reading": "しらべる",
+      "romaji": "shiraberu",
+      "meaning_id": "me-investigate",
+      "meaning_en": "to investigate"
+    },
+    {
+      "word": "取り調べる",
+      "reading": "とりしらべる",
+      "romaji": "torishiraberu",
+      "meaning_id": "me-investigate",
+      "meaning_en": "to investigate; to examine"
+    }
+  ],
+  "worry": [
+    {
+      "word": "心配",
+      "reading": "しんぱい",
+      "romaji": "shinpai",
+      "meaning_id": "me-worry",
+      "meaning_en": "to worry"
+    }
+  ],
+  "become empty": [
+    {
+      "word": "すく",
+      "reading": "すく",
+      "romaji": "suku",
+      "meaning_id": "me-become empty",
+      "meaning_en": "to become empty"
+    }
+  ],
+  "slide": [
+    {
+      "word": "滑る",
+      "reading": "すべる",
+      "romaji": "suberu",
+      "meaning_id": "me-slide",
+      "meaning_en": "to slide; to slip"
+    },
+    {
+      "word": "ずれる",
+      "reading": "ずれる",
+      "romaji": "zureru",
+      "meaning_id": "me-slide",
+      "meaning_en": "to slide; to slip off; to deviate; to be out of alignment"
+    }
+  ],
+  "produce": [
+    {
+      "word": "生産",
+      "reading": "せいさん",
+      "romaji": "seisan",
+      "meaning_id": "me-produce",
+      "meaning_en": "to produce"
+    }
+  ],
+  "look after": [
+    {
+      "word": "世話",
+      "reading": "せわ",
+      "romaji": "sewa",
+      "meaning_id": "me-look after",
+      "meaning_en": "to look after"
+    }
+  ],
+  "discuss": [
+    {
+      "word": "相談",
+      "reading": "そうだん",
+      "romaji": "soudan",
+      "meaning_id": "me-discuss",
+      "meaning_en": "to discuss"
+    },
+    {
+      "word": "話し合う",
+      "reading": "はなしあう",
+      "romaji": "hanashiau",
+      "meaning_id": "me-discuss",
+      "meaning_en": "to discuss; to talk together"
+    }
+  ],
+  "rear": [
+    {
+      "word": "育てる",
+      "reading": "そだてる",
+      "romaji": "sodateru",
+      "meaning_id": "me-rear",
+      "meaning_en": "to rear; to bring up"
+    },
+    {
+      "word": "養う",
+      "reading": "やしなう",
+      "romaji": "yashinau",
+      "meaning_id": "me-rear",
+      "meaning_en": "to rear; to maintain; to cultivate"
+    }
+  ],
+  "that extent": [
+    {
+      "word": "それほど",
+      "reading": "それほど",
+      "romaji": "sorehodo",
+      "meaning_id": "me-that extent",
+      "meaning_en": "to that extent"
+    }
+  ],
+  "leave hospital": [
+    {
+      "word": "退院",
+      "reading": "たいいん",
+      "romaji": "taiin",
+      "meaning_id": "me-leave hospital",
+      "meaning_en": "to leave hospital"
+    }
+  ],
+  "add a number": [
+    {
+      "word": "足す",
+      "reading": "たす",
+      "romaji": "tasu",
+      "meaning_id": "me-add a number",
+      "meaning_en": "to add a number"
+    }
+  ],
+  "visit": [
+    {
+      "word": "訪ねる",
+      "reading": "たずねる",
+      "romaji": "tazuneru",
+      "meaning_id": "me-visit",
+      "meaning_en": "to visit"
+    },
+    {
+      "word": "寄る",
+      "reading": "よる",
+      "romaji": "yoru",
+      "meaning_id": "me-visit",
+      "meaning_en": "to visit"
+    },
+    {
+      "word": "訪れる",
+      "reading": "おとずれる",
+      "romaji": "otozureru",
+      "meaning_id": "me-visit",
+      "meaning_en": "to visit"
+    }
+  ],
+  "build": [
+    {
+      "word": "建てる",
+      "reading": "たてる",
+      "romaji": "tateru",
+      "meaning_id": "me-build",
+      "meaning_en": "to build"
+    },
+    {
+      "word": "築く",
+      "reading": "きずく",
+      "romaji": "kizuku",
+      "meaning_id": "me-build",
+      "meaning_en": "to build; to pile up; to amass"
+    }
+  ],
+  "stand something up": [
+    {
+      "word": "立てる",
+      "reading": "たてる",
+      "romaji": "tateru",
+      "meaning_id": "me-stand something up",
+      "meaning_en": "to stand something up"
+    }
+  ],
+  "be enough": [
+    {
+      "word": "足りる",
+      "reading": "たりる",
+      "romaji": "tariru",
+      "meaning_id": "me-be enough",
+      "meaning_en": "to be enough"
+    }
+  ],
+  "be attached": [
+    {
+      "word": "付く",
+      "reading": "つく",
+      "romaji": "tsuku",
+      "meaning_id": "me-be attached",
+      "meaning_en": "to be attached"
+    }
+  ],
+  "soak": [
+    {
+      "word": "漬ける",
+      "reading": "つける",
+      "romaji": "tsukeru",
+      "meaning_id": "me-soak",
+      "meaning_en": "to soak; to pickle"
+    },
+    {
+      "word": "浸す",
+      "reading": "ひたす",
+      "romaji": "hitasu",
+      "meaning_id": "me-soak",
+      "meaning_en": "to soak; to dip; to drench"
+    }
+  ],
+  "report": [
+    {
+      "word": "伝える",
+      "reading": "つたえる",
+      "romaji": "tsutaeru",
+      "meaning_id": "me-report",
+      "meaning_en": "to report"
+    }
+  ],
+  "be continued": [
+    {
+      "word": "続く",
+      "reading": "つづく",
+      "romaji": "tsuzuku",
+      "meaning_id": "me-be continued",
+      "meaning_en": "to be continued"
+    }
+  ],
+  "continue": [
+    {
+      "word": "続ける",
+      "reading": "つづける",
+      "romaji": "tsuzukeru",
+      "meaning_id": "me-continue",
+      "meaning_en": "to continue"
+    }
+  ],
+  "wrap": [
+    {
+      "word": "包む",
+      "reading": "つつむ",
+      "romaji": "tsutsumu",
+      "meaning_id": "me-wrap",
+      "meaning_en": "to wrap"
+    }
+  ],
+  "lead": [
+    {
+      "word": "連れる",
+      "reading": "つれる",
+      "romaji": "tsureru",
+      "meaning_id": "me-lead",
+      "meaning_en": "to lead"
+    },
+    {
+      "word": "率いる",
+      "reading": "ひきいる",
+      "romaji": "hikiiru",
+      "meaning_id": "me-lead",
+      "meaning_en": "to lead; to spearhead (a group); to command (troops)"
+    }
+  ],
+  "fix": [
+    {
+      "word": "直す",
+      "reading": "なおす",
+      "romaji": "naosu",
+      "meaning_id": "me-fix",
+      "meaning_en": "to fix; to repair"
+    }
+  ],
+  "be cured": [
+    {
+      "word": "治る",
+      "reading": "なおる",
+      "romaji": "naoru",
+      "meaning_id": "me-be cured",
+      "meaning_en": "to be cured; to heal"
+    }
+  ],
+  "be fixed": [
+    {
+      "word": "直る",
+      "reading": "なおる",
+      "romaji": "naoru",
+      "meaning_id": "me-be fixed",
+      "meaning_en": "to be fixed; to be repaired"
+    },
+    {
+      "word": "留まる",
+      "reading": "とどまる",
+      "romaji": "todomaru",
+      "meaning_id": "me-be fixed",
+      "meaning_en": "to be fixed; to abide; to stay (in the one place)"
+    }
+  ],
+  "weep": [
+    {
+      "word": "泣く",
+      "reading": "なく",
+      "romaji": "naku",
+      "meaning_id": "me-weep",
+      "meaning_en": "to weep"
+    }
+  ],
+  "throw or cast away": [
+    {
+      "word": "投げる",
+      "reading": "なげる",
+      "romaji": "nageru",
+      "meaning_id": "me-throw or cast away",
+      "meaning_en": "to throw or cast away"
+    }
+  ],
+  "sound": [
+    {
+      "word": "鳴る",
+      "reading": "なる",
+      "romaji": "naru",
+      "meaning_id": "me-sound",
+      "meaning_en": "to sound"
+    }
+  ],
+  "grow accustomed to": [
+    {
+      "word": "慣れる",
+      "reading": "なれる",
+      "romaji": "nareru",
+      "meaning_id": "me-grow accustomed to",
+      "meaning_en": "to grow accustomed to"
+    }
+  ],
+  "escape": [
+    {
+      "word": "逃げる",
+      "reading": "にげる",
+      "romaji": "nigeru",
+      "meaning_id": "me-escape",
+      "meaning_en": "to escape"
+    },
+    {
+      "word": "逃れる",
+      "reading": "のがれる",
+      "romaji": "nogareru",
+      "meaning_id": "me-escape",
+      "meaning_en": "to escape"
+    }
+  ],
+  "hospitalise": [
+    {
+      "word": "入院",
+      "reading": "にゅういん",
+      "romaji": "nyuuin",
+      "meaning_id": "me-hospitalise",
+      "meaning_en": "to hospitalise"
+    }
+  ],
+  "enter school or university": [
+    {
+      "word": "入学",
+      "reading": "にゅうがく",
+      "romaji": "nyuugaku",
+      "meaning_id": "me-enter school or university",
+      "meaning_en": "to enter school or university"
+    }
+  ],
+  "be similar": [
+    {
+      "word": "似る",
+      "reading": "にる",
+      "romaji": "niru",
+      "meaning_id": "me-be similar",
+      "meaning_en": "to be similar"
+    }
+  ],
+  "get wet": [
+    {
+      "word": "ぬれる",
+      "reading": "ぬれる",
+      "romaji": "nureru",
+      "meaning_id": "me-get wet",
+      "meaning_en": "to get wet"
+    }
+  ],
+  "transport": [
+    {
+      "word": "運ぶ",
+      "reading": "はこぶ",
+      "romaji": "hakobu",
+      "meaning_id": "me-transport",
+      "meaning_en": "to transport"
+    }
+  ],
+  "withdraw": [
+    {
+      "word": "引き出す",
+      "reading": "ひきだす",
+      "romaji": "hikidasu",
+      "meaning_id": "me-withdraw",
+      "meaning_en": "to withdraw"
+    },
+    {
+      "word": "引き上げる",
+      "reading": "ひきあげる",
+      "romaji": "hikiageru",
+      "meaning_id": "me-withdraw",
+      "meaning_en": "to withdraw; to leave; to pull out; to retire"
+    }
+  ],
+  "be surprised": [
+    {
+      "word": "びっくりする",
+      "reading": "びっくりする",
+      "romaji": "bikkurisuru",
+      "meaning_id": "me-be surprised",
+      "meaning_en": "to be surprised"
+    }
+  ],
+  "open an event": [
+    {
+      "word": "開く",
+      "reading": "ひらく",
+      "romaji": "hiraku",
+      "meaning_id": "me-open an event",
+      "meaning_en": "to open an event"
+    }
+  ],
+  "pick up": [
+    {
+      "word": "拾う",
+      "reading": "ひろう",
+      "romaji": "hirou",
+      "meaning_id": "me-pick up",
+      "meaning_en": "to pick up; to gather"
+    }
+  ],
+  "start to rain": [
+    {
+      "word": "降り出す",
+      "reading": "ふりだす",
+      "romaji": "furidasu",
+      "meaning_id": "me-start to rain",
+      "meaning_en": "to start to rain"
+    }
+  ],
+  "broadcast": [
+    {
+      "word": "放送",
+      "reading": "ほうそう",
+      "romaji": "housou",
+      "meaning_id": "me-broadcast",
+      "meaning_en": "to broadcast"
+    }
+  ],
+  "praise": [
+    {
+      "word": "ほめる",
+      "reading": "ほめる",
+      "romaji": "homeru",
+      "meaning_id": "me-praise",
+      "meaning_en": "to praise"
+    }
+  ],
+  "be in time for": [
+    {
+      "word": "間に合う",
+      "reading": "まにあう",
+      "romaji": "maniau",
+      "meaning_id": "me-be in time for",
+      "meaning_en": "to be in time for"
+    }
+  ],
+  "go around": [
+    {
+      "word": "回る",
+      "reading": "まわる",
+      "romaji": "mawaru",
+      "meaning_id": "me-go around",
+      "meaning_en": "to go around"
+    },
+    {
+      "word": "巡る",
+      "reading": "めぐる",
+      "romaji": "meguru",
+      "meaning_id": "me-go around",
+      "meaning_en": "to go around"
+    }
+  ],
+  "be in sight": [
+    {
+      "word": "見える",
+      "reading": "みえる",
+      "romaji": "mieru",
+      "meaning_id": "me-be in sight",
+      "meaning_en": "to be in sight"
+    }
+  ],
+  "be discovered": [
+    {
+      "word": "見つかる",
+      "reading": "みつかる",
+      "romaji": "mitsukaru",
+      "meaning_id": "me-be discovered",
+      "meaning_en": "to be discovered"
+    }
+  ],
+  "discover": [
+    {
+      "word": "見つける",
+      "reading": "みつける",
+      "romaji": "mitsukeru",
+      "meaning_id": "me-discover",
+      "meaning_en": "to discover"
+    }
+  ],
+  "face": [
+    {
+      "word": "向かう",
+      "reading": "むかう",
+      "romaji": "mukau",
+      "meaning_id": "me-face",
+      "meaning_en": "to face"
+    }
+  ],
+  "go out to meet": [
+    {
+      "word": "迎える",
+      "reading": "むかえる",
+      "romaji": "mukaeru",
+      "meaning_id": "me-go out to meet",
+      "meaning_en": "to go out to meet"
+    }
+  ],
+  "dawn": [
+    {
+      "word": "明ける",
+      "reading": "あける",
+      "romaji": "akeru",
+      "meaning_id": "me-dawn",
+      "meaning_en": "to dawn; to become daylight"
+    }
+  ],
+  "show": [
+    {
+      "word": "現す",
+      "reading": "あらわす",
+      "romaji": "arawasu",
+      "meaning_id": "me-show",
+      "meaning_en": "to show; to indicate; to display"
+    }
+  ],
+  "keep": [
+    {
+      "word": "飼う",
+      "reading": "かう",
+      "romaji": "kau",
+      "meaning_id": "me-keep",
+      "meaning_en": "to keep; to raise; to feed"
+    },
+    {
+      "word": "保つ",
+      "reading": "たもつ",
+      "romaji": "tamotsu",
+      "meaning_id": "me-keep",
+      "meaning_en": "to keep; to preserve; to hold; to retain; to maintain; to support; to sustain; to last; to endure; to keep well (food)"
+    }
+  ],
+  "exchange": [
+    {
+      "word": "換える",
+      "reading": "かえる",
+      "romaji": "kaeru",
+      "meaning_id": "me-exchange",
+      "meaning_en": "to exchange; to interchange; to substitute; to replace"
+    },
+    {
+      "word": "替える",
+      "reading": "かえる",
+      "romaji": "kaeru",
+      "meaning_id": "me-exchange",
+      "meaning_en": "to exchange; to interchange; to substitute; to replace"
+    },
+    {
+      "word": "代える",
+      "reading": "かえる",
+      "romaji": "kaeru",
+      "meaning_id": "me-exchange",
+      "meaning_en": "to exchange; to interchange; to substitute; to replace"
+    },
+    {
+      "word": "交わす",
+      "reading": "かわす",
+      "romaji": "kawasu",
+      "meaning_id": "me-exchange",
+      "meaning_en": "to exchange (messages); to dodge; to parry; to avoid; to turn aside"
+    }
+  ],
+  "suffer from": [
+    {
+      "word": "罹る",
+      "reading": "かかる",
+      "romaji": "kakaru",
+      "meaning_id": "me-suffer from",
+      "meaning_en": "to suffer from"
+    }
+  ],
+  "be lacking": [
+    {
+      "word": "欠ける",
+      "reading": "かける",
+      "romaji": "kakeru",
+      "meaning_id": "me-be lacking",
+      "meaning_en": "to be lacking"
+    }
+  ],
+  "count": [
+    {
+      "word": "数える",
+      "reading": "かぞえる",
+      "romaji": "kazoeru",
+      "meaning_id": "me-count",
+      "meaning_en": "to count"
+    }
+  ],
+  "put on": [
+    {
+      "word": "被る",
+      "reading": "かぶる",
+      "romaji": "kaburu",
+      "meaning_id": "me-put on",
+      "meaning_en": "to put on (one's head); to wear; to have on; to pull over (one's head)"
+    }
+  ],
+  "be effective": [
+    {
+      "word": "効く",
+      "reading": "きく",
+      "romaji": "kiku",
+      "meaning_id": "me-be effective",
+      "meaning_en": "to be effective"
+    }
+  ],
+  "comprise": [
+    {
+      "word": "占める",
+      "reading": "しめる",
+      "romaji": "shimeru",
+      "meaning_id": "me-comprise",
+      "meaning_en": "to comprise; to account for; to make up (of); to hold; to occupy"
+    }
+  ],
+  "believe": [
+    {
+      "word": "信じる",
+      "reading": "しんじる",
+      "romaji": "shinjiru",
+      "meaning_id": "me-believe",
+      "meaning_en": "to believe; to place trust in"
+    },
+    {
+      "word": "信ずる",
+      "reading": "しんずる",
+      "romaji": "shinzuru",
+      "meaning_id": "me-believe",
+      "meaning_en": "to believe; to believe in; to place trust in"
+    }
+  ],
+  "pass": [
+    {
+      "word": "経つ",
+      "reading": "たつ",
+      "romaji": "tatsu",
+      "meaning_id": "me-pass",
+      "meaning_en": "to pass; to lapse"
+    },
+    {
+      "word": "追い越す",
+      "reading": "おいこす",
+      "romaji": "oikosu",
+      "meaning_id": "me-pass",
+      "meaning_en": "to pass (e.g. car); to outdistance; to outstrip"
+    },
+    {
+      "word": "明かす",
+      "reading": "あかす",
+      "romaji": "akasu",
+      "meaning_id": "me-pass",
+      "meaning_en": "to pass; spend; to reveal; to divulge"
+    },
+    {
+      "word": "受かる",
+      "reading": "うかる",
+      "romaji": "ukaru",
+      "meaning_id": "me-pass",
+      "meaning_en": "to pass (examination)"
+    },
+    {
+      "word": "経る",
+      "reading": "へる",
+      "romaji": "heru",
+      "meaning_id": "me-pass",
+      "meaning_en": "to pass; to elapse; to experience"
+    }
+  ],
+  "attempt": [
+    {
+      "word": "試す",
+      "reading": "ためす",
+      "romaji": "tamesu",
+      "meaning_id": "me-attempt",
+      "meaning_en": "to attempt; to test"
+    }
+  ],
+  "settle in": [
+    {
+      "word": "就く",
+      "reading": "つく",
+      "romaji": "tsuku",
+      "meaning_id": "me-settle in",
+      "meaning_en": "to settle in (place); to take (seat, position); to study (under teacher)"
+    }
+  ],
+  "attach": [
+    {
+      "word": "付ける",
+      "reading": "つける",
+      "romaji": "tsukeru",
+      "meaning_id": "me-attach",
+      "meaning_en": "to attach; to join; to add; to append"
+    },
+    {
+      "word": "くっつける",
+      "reading": "くっつける",
+      "romaji": "kuttsukeru",
+      "meaning_id": "me-attach",
+      "meaning_en": "to attach"
+    },
+    {
+      "word": "着ける",
+      "reading": "つける",
+      "romaji": "tsukeru",
+      "meaning_id": "me-attach",
+      "meaning_en": "to attach; to join; to add; to append"
+    }
+  ],
+  "jump out": [
+    {
+      "word": "飛び出す",
+      "reading": "とびだす",
+      "romaji": "tobidasu",
+      "meaning_id": "me-jump out",
+      "meaning_en": "to jump out; to rush out; to fly out"
+    }
+  ],
+  "fasten": [
+    {
+      "word": "留める",
+      "reading": "とめる",
+      "romaji": "tomeru",
+      "meaning_id": "me-fasten",
+      "meaning_en": "to fasten; to turn off; to detain"
+    }
+  ],
+  "breathe": [
+    {
+      "word": "吐く",
+      "reading": "はく",
+      "romaji": "haku",
+      "meaning_id": "me-breathe",
+      "meaning_en": "to breathe; to tell (lies); to vomit; to disgorge"
+    },
+    {
+      "word": "吐く",
+      "reading": "つく",
+      "romaji": "tsuku",
+      "meaning_id": "me-breathe",
+      "meaning_en": "to breathe; to tell (lies); to vomit; to disgorge"
+    }
+  ],
+  "separate": [
+    {
+      "word": "放す",
+      "reading": "はなす",
+      "romaji": "hanasu",
+      "meaning_id": "me-separate",
+      "meaning_en": "to separate; to set free"
+    }
+  ],
+  "part": [
+    {
+      "word": "離す",
+      "reading": "はなす",
+      "romaji": "hanasu",
+      "meaning_id": "me-part",
+      "meaning_en": "to part; divide; separate"
+    }
+  ],
+  "run somebody over": [
+    {
+      "word": "轢く",
+      "reading": "ひく",
+      "romaji": "hiku",
+      "meaning_id": "me-run somebody over",
+      "meaning_en": "to run somebody over (with vehicle); to knock someone down"
+    }
+  ],
+  "wave": [
+    {
+      "word": "振る",
+      "reading": "ふる",
+      "romaji": "furu",
+      "meaning_id": "me-wave",
+      "meaning_en": "to wave; to shake; to swing; to sprinkle; to cast (actor); to allocate (work)"
+    }
+  ],
+  "turn": [
+    {
+      "word": "回す",
+      "reading": "まわす",
+      "romaji": "mawasu",
+      "meaning_id": "me-turn",
+      "meaning_en": "to turn; to revolve"
+    },
+    {
+      "word": "転じる",
+      "reading": "てんじる",
+      "romaji": "tenjiru",
+      "meaning_id": "me-turn",
+      "meaning_en": "to turn; to shift; to alter; to distract"
+    }
+  ],
+  "fan": [
+    {
+      "word": "扇ぐ",
+      "reading": "あおぐ",
+      "romaji": "aogu",
+      "meaning_id": "me-fan",
+      "meaning_en": "to fan; to flap"
+    }
+  ],
+  "be amazed": [
+    {
+      "word": "あきれる",
+      "reading": "あきれる",
+      "romaji": "akireru",
+      "meaning_id": "me-be amazed",
+      "meaning_en": "to be amazed; to be shocked"
+    }
+  ],
+  "the end": [
+    {
+      "word": "あくまで",
+      "reading": "あくまで",
+      "romaji": "akumade",
+      "meaning_id": "me-the end",
+      "meaning_en": "to the end; to the last; stubbornly"
+    }
+  ],
+  "raise": [
+    {
+      "word": "挙げる",
+      "reading": "あげる",
+      "romaji": "ageru",
+      "meaning_id": "me-raise",
+      "meaning_en": "to raise; to fly"
+    },
+    {
+      "word": "高める",
+      "reading": "たかめる",
+      "romaji": "takameru",
+      "meaning_id": "me-raise",
+      "meaning_en": "to raise; to lift; to boost"
+    }
+  ],
+  "lift": [
+    {
+      "word": "揚げる",
+      "reading": "あげる",
+      "romaji": "ageru",
+      "meaning_id": "me-lift",
+      "meaning_en": "to lift; to fry"
+    }
+  ],
+  "long for": [
+    {
+      "word": "憧れる",
+      "reading": "あこがれる",
+      "romaji": "akogareru",
+      "meaning_id": "me-long for",
+      "meaning_en": "to long for; to yearn after; to admire"
+    }
+  ],
+  "taste": [
+    {
+      "word": "味わう",
+      "reading": "あじわう",
+      "romaji": "ajiwau",
+      "meaning_id": "me-taste",
+      "meaning_en": "to taste; to savor; to relish"
+    }
+  ],
+  "keep in custody": [
+    {
+      "word": "預かる",
+      "reading": "あずかる",
+      "romaji": "azukaru",
+      "meaning_id": "me-keep in custody",
+      "meaning_en": "to keep in custody; to receive on deposit; to take charge of"
+    }
+  ],
+  "warm up": [
+    {
+      "word": "暖まる",
+      "reading": "あたたまる",
+      "romaji": "atatamaru",
+      "meaning_id": "me-warm up",
+      "meaning_en": "to warm up; to get warm"
+    }
+  ],
+  "be applicable": [
+    {
+      "word": "あてはまる",
+      "reading": "あてはまる",
+      "romaji": "atehamaru",
+      "meaning_id": "me-be applicable",
+      "meaning_en": "to be applicable; to come under (a category); to fulfill"
+    }
+  ],
+  "apply": [
+    {
+      "word": "あてはめる",
+      "reading": "あてはめる",
+      "romaji": "atehameru",
+      "meaning_id": "me-apply",
+      "meaning_en": "to apply; to adapt"
+    }
+  ],
+  "act violently": [
+    {
+      "word": "暴れる",
+      "reading": "あばれる",
+      "romaji": "abareru",
+      "meaning_id": "me-act violently",
+      "meaning_en": "to act violently; to rage; to struggle; to be riotous"
+    }
+  ],
+  "scorch": [
+    {
+      "word": "あぶる",
+      "reading": "あぶる",
+      "romaji": "aburu",
+      "meaning_id": "me-scorch",
+      "meaning_en": "to scorch"
+    }
+  ],
+  "flood": [
+    {
+      "word": "あふれる",
+      "reading": "あふれる",
+      "romaji": "afureru",
+      "meaning_id": "me-flood",
+      "meaning_en": "to flood; to overflow; to brim over"
+    }
+  ],
+  "pamper": [
+    {
+      "word": "甘やかす",
+      "reading": "あまやかす",
+      "romaji": "amayakasu",
+      "meaning_id": "me-pamper",
+      "meaning_en": "to pamper; to spoil"
+    }
+  ],
+  "remain": [
+    {
+      "word": "余る",
+      "reading": "あまる",
+      "romaji": "amaru",
+      "meaning_id": "me-remain",
+      "meaning_en": "to remain; to be left over; to be in excess; to be too many"
+    }
+  ],
+  "knit": [
+    {
+      "word": "編む",
+      "reading": "あむ",
+      "romaji": "amu",
+      "meaning_id": "me-knit",
+      "meaning_en": "to knit"
+    }
+  ],
+  "dispute": [
+    {
+      "word": "争う",
+      "reading": "あらそう",
+      "romaji": "arasou",
+      "meaning_id": "me-dispute",
+      "meaning_en": "to dispute; to argue; to be at variance; to compete"
+    }
+  ],
+  "become confused": [
+    {
+      "word": "あわてる",
+      "reading": "あわてる",
+      "romaji": "awateru",
+      "meaning_id": "me-become confused",
+      "meaning_en": "to become confused"
+    }
+  ],
+  "start talking": [
+    {
+      "word": "言い出す",
+      "reading": "いいだす",
+      "romaji": "iidasu",
+      "meaning_id": "me-start talking",
+      "meaning_en": "to start talking; to speak; to tell; to propose; to suggest; to break the ice"
+    }
+  ],
+  "tell": [
+    {
+      "word": "言い付ける",
+      "reading": "いいつける",
+      "romaji": "iitsukeru",
+      "meaning_id": "me-tell",
+      "meaning_en": "to tell; to tell on (someone); to order"
+    },
+    {
+      "word": "物語る",
+      "reading": "ものがたる",
+      "romaji": "monogataru",
+      "meaning_id": "me-tell",
+      "meaning_en": "to tell; to indicate"
+    }
+  ],
+  "be proud": [
+    {
+      "word": "威張る",
+      "reading": "いばる",
+      "romaji": "ibaru",
+      "meaning_id": "me-be proud",
+      "meaning_en": "to be proud; to swagger"
+    },
+    {
+      "word": "おごる",
+      "reading": "おごる",
+      "romaji": "ogoru",
+      "meaning_id": "me-be proud",
+      "meaning_en": "to be proud"
+    }
+  ],
+  "hate": [
+    {
+      "word": "嫌がる",
+      "reading": "いやがる",
+      "romaji": "iyagaru",
+      "meaning_id": "me-hate",
+      "meaning_en": "to hate; to dislike"
+    },
+    {
+      "word": "憎む",
+      "reading": "にくむ",
+      "romaji": "nikumu",
+      "meaning_id": "me-hate",
+      "meaning_en": "to hate; to detest"
+    }
+  ],
+  "parch": [
+    {
+      "word": "煎る",
+      "reading": "いる",
+      "romaji": "iru",
+      "meaning_id": "me-parch",
+      "meaning_en": "to parch; to fry"
+    }
+  ],
+  "roast": [
+    {
+      "word": "炒る",
+      "reading": "いる",
+      "romaji": "iru",
+      "meaning_id": "me-roast",
+      "meaning_en": "to roast; to parch; to toast; to boil down"
+    }
+  ],
+  "starve": [
+    {
+      "word": "飢える",
+      "reading": "うえる",
+      "romaji": "ueru",
+      "meaning_id": "me-starve",
+      "meaning_en": "to starve"
+    }
+  ],
+  "float": [
+    {
+      "word": "浮かぶ",
+      "reading": "うかぶ",
+      "romaji": "ukabu",
+      "meaning_id": "me-float",
+      "meaning_en": "to float; to rise to surface; to come to mind"
+    },
+    {
+      "word": "浮かべる",
+      "reading": "うかべる",
+      "romaji": "ukaberu",
+      "meaning_id": "me-float",
+      "meaning_en": "to float; to express; to look (sad, glad)"
+    },
+    {
+      "word": "浮く",
+      "reading": "うく",
+      "romaji": "uku",
+      "meaning_id": "me-float",
+      "meaning_en": "to float; to become merry; to become loose"
+    }
+  ],
+  "take  charge of": [
+    {
+      "word": "受け持つ",
+      "reading": "うけもつ",
+      "romaji": "ukemotsu",
+      "meaning_id": "me-take  charge of",
+      "meaning_en": "to take (be in) charge of"
+    }
+  ],
+  "dilute": [
+    {
+      "word": "薄める",
+      "reading": "うすめる",
+      "romaji": "usumeru",
+      "meaning_id": "me-dilute",
+      "meaning_en": "to dilute; to water down"
+    }
+  ],
+  "deny": [
+    {
+      "word": "打ち消す",
+      "reading": "うちけす",
+      "romaji": "uchikesu",
+      "meaning_id": "me-deny",
+      "meaning_en": "to deny; to negate; to contradict"
+    }
+  ],
+  "attack": [
+    {
+      "word": "討つ",
+      "reading": "うつ",
+      "romaji": "utsu",
+      "meaning_id": "me-attack",
+      "meaning_en": "to attack; to avenge"
+    },
+    {
+      "word": "攻める",
+      "reading": "せめる",
+      "romaji": "semeru",
+      "meaning_id": "me-attack",
+      "meaning_en": "to attack; to assault"
+    },
+    {
+      "word": "やっつける",
+      "reading": "やっつける",
+      "romaji": "yattsukeru",
+      "meaning_id": "me-attack",
+      "meaning_en": "to attack (an enemy); to beat; to do away with; to finish off"
+    },
+    {
+      "word": "襲う",
+      "reading": "おそう",
+      "romaji": "osou",
+      "meaning_id": "me-attack",
+      "meaning_en": "to attack"
+    }
+  ],
+  "project": [
+    {
+      "word": "映す",
+      "reading": "うつす",
+      "romaji": "utsusu",
+      "meaning_id": "me-project",
+      "meaning_en": "to project; to reflect; to cast (shadow)"
+    }
+  ],
+  "be reflected": [
+    {
+      "word": "映る",
+      "reading": "うつる",
+      "romaji": "utsuru",
+      "meaning_id": "me-be reflected",
+      "meaning_en": "to be reflected; to harmonize with; to come out (photo)"
+    }
+  ],
+  "be photographed": [
+    {
+      "word": "写る",
+      "reading": "うつる",
+      "romaji": "utsuru",
+      "meaning_id": "me-be photographed",
+      "meaning_en": "to be photographed; to be projected"
+    }
+  ],
+  "bury": [
+    {
+      "word": "埋める",
+      "reading": "うめる",
+      "romaji": "umeru",
+      "meaning_id": "me-bury",
+      "meaning_en": "to bury; to fill up; to fill (a seat, a vacant position)"
+    },
+    {
+      "word": "埋め込む",
+      "reading": "うめこむ",
+      "romaji": "umekomu",
+      "meaning_id": "me-bury",
+      "meaning_en": "to bury"
+    },
+    {
+      "word": "葬る",
+      "reading": "ほうむる",
+      "romaji": "houmuru",
+      "meaning_id": "me-bury",
+      "meaning_en": "to bury; to inter; to entomb; to consign to oblivion; to shelve"
+    }
+  ],
+  "show respect": [
+    {
+      "word": "敬う",
+      "reading": "うやまう",
+      "romaji": "uyamau",
+      "meaning_id": "me-show respect",
+      "meaning_en": "to show respect; to honour"
+    }
+  ],
+  "turn inside out": [
+    {
+      "word": "裏返す",
+      "reading": "うらがえす",
+      "romaji": "uragaesu",
+      "meaning_id": "me-turn inside out",
+      "meaning_en": "to turn inside out; to turn (something) over"
+    }
+  ],
+  "forecast": [
+    {
+      "word": "占う",
+      "reading": "うらなう",
+      "romaji": "uranau",
+      "meaning_id": "me-forecast",
+      "meaning_en": "to forecast; to predict"
+    }
+  ],
+  "curse": [
+    {
+      "word": "恨む",
+      "reading": "うらむ",
+      "romaji": "uramu",
+      "meaning_id": "me-curse",
+      "meaning_en": "to curse; to feel bitter"
+    }
+  ],
+  "envy": [
+    {
+      "word": "羨む",
+      "reading": "うらやむ",
+      "romaji": "urayamu",
+      "meaning_id": "me-envy",
+      "meaning_en": "to envy"
+    }
+  ],
+  "be sold out": [
+    {
+      "word": "売り切れる",
+      "reading": "うりきれる",
+      "romaji": "urikireru",
+      "meaning_id": "me-be sold out",
+      "meaning_en": "to be sold out"
+    }
+  ],
+  "chase or run after someone": [
+    {
+      "word": "追い掛ける",
+      "reading": "おいかける",
+      "romaji": "oikakeru",
+      "meaning_id": "me-chase or run after someone",
+      "meaning_en": "to chase or run after someone; to run down; to pursue"
+    }
+  ],
+  "worship": [
+    {
+      "word": "拝む",
+      "reading": "おがむ",
+      "romaji": "ogamu",
+      "meaning_id": "me-worship",
+      "meaning_en": "to worship; to beg; to make a supplication"
+    }
+  ],
+  "compensate for": [
+    {
+      "word": "補う",
+      "reading": "おぎなう",
+      "romaji": "oginau",
+      "meaning_id": "me-compensate for",
+      "meaning_en": "to compensate for"
+    }
+  ],
+  "neglect": [
+    {
+      "word": "怠る",
+      "reading": "おこたる",
+      "romaji": "okotaru",
+      "meaning_id": "me-neglect",
+      "meaning_en": "to neglect; to be off guard; to be feeling better"
+    }
+  ],
+  "stop": [
+    {
+      "word": "押える",
+      "reading": "おさえる",
+      "romaji": "osaeru",
+      "meaning_id": "me-stop",
+      "meaning_en": "to stop; to restrain; to seize; to repress; to suppress; to press down"
+    },
+    {
+      "word": "立ち止まる",
+      "reading": "たちどまる",
+      "romaji": "tachidomaru",
+      "meaning_id": "me-stop",
+      "meaning_en": "to stop; to halt; to stand still"
+    },
+    {
+      "word": "打ち切る",
+      "reading": "うちきる",
+      "romaji": "uchikiru",
+      "meaning_id": "me-stop",
+      "meaning_en": "to stop; to abort; to discontinue; to close"
+    },
+    {
+      "word": "途絶える",
+      "reading": "とだえる",
+      "romaji": "todaeru",
+      "meaning_id": "me-stop",
+      "meaning_en": "to stop; to cease; to come to an end"
+    },
+    {
+      "word": "止める",
+      "reading": "とどめる",
+      "romaji": "todomeru",
+      "meaning_id": "me-stop",
+      "meaning_en": "to stop; to cease; to put an end to"
+    },
+    {
+      "word": "留める",
+      "reading": "とどめる",
+      "romaji": "todomeru",
+      "meaning_id": "me-stop",
+      "meaning_en": "to stop; to cease; to put an end to"
+    }
+  ],
+  "govern": [
+    {
+      "word": "治める",
+      "reading": "おさめる",
+      "romaji": "osameru",
+      "meaning_id": "me-govern",
+      "meaning_en": "to govern; to manage; to subdue"
+    }
+  ],
+  "obtain": [
+    {
+      "word": "納める",
+      "reading": "おさめる",
+      "romaji": "osameru",
+      "meaning_id": "me-obtain",
+      "meaning_en": "to obtain; to reap; to pay; to supply; to accept"
+    }
+  ],
+  "be taught": [
+    {
+      "word": "教わる",
+      "reading": "おそわる",
+      "romaji": "osowaru",
+      "meaning_id": "me-be taught",
+      "meaning_en": "to be taught"
+    }
+  ],
+  "calm down": [
+    {
+      "word": "落着く",
+      "reading": "おちつく",
+      "romaji": "ochitsuku",
+      "meaning_id": "me-calm down",
+      "meaning_en": "to calm down; to settle down"
+    }
+  ],
+  "threaten": [
+    {
+      "word": "おどかす",
+      "reading": "おどかす",
+      "romaji": "odokasu",
+      "meaning_id": "me-threaten",
+      "meaning_en": "to threaten; to coerce"
+    },
+    {
+      "word": "脅す",
+      "reading": "おどす",
+      "romaji": "odosu",
+      "meaning_id": "me-threaten",
+      "meaning_en": "to threaten; to menace"
+    }
+  ],
+  "surprise": [
+    {
+      "word": "驚かす",
+      "reading": "おどろかす",
+      "romaji": "odorokasu",
+      "meaning_id": "me-surprise",
+      "meaning_en": "to surprise; to frighten; to create a stir"
+    }
+  ],
+  "be under impression that": [
+    {
+      "word": "思い込む",
+      "reading": "おもいこむ",
+      "romaji": "omoikomu",
+      "meaning_id": "me-be under impression that",
+      "meaning_en": "to be under impression that; to be convinced that"
+    }
+  ],
+  "one's heart's content": [
+    {
+      "word": "思いっきり",
+      "reading": "おもいっきり",
+      "romaji": "omoikkiri",
+      "meaning_id": "me-one's heart's content",
+      "meaning_en": "to one's heart's content; as much as one wants; as hard as one can; with all one's strength"
+    }
+  ],
+  "think of": [
+    {
+      "word": "思い付く",
+      "reading": "おもいつく",
+      "romaji": "omoitsuku",
+      "meaning_id": "me-think of",
+      "meaning_en": "to think of; to hit upon"
+    }
+  ],
+  "sell wholesale": [
+    {
+      "word": "卸す",
+      "reading": "おろす",
+      "romaji": "orosu",
+      "meaning_id": "me-sell wholesale",
+      "meaning_en": "to sell wholesale; grated (vegetables)"
+    }
+  ],
+  "send back": [
+    {
+      "word": "帰す",
+      "reading": "かえす",
+      "romaji": "kaesu",
+      "meaning_id": "me-send back",
+      "meaning_en": "to send back"
+    }
+  ],
+  "scratch": [
+    {
+      "word": "掻く",
+      "reading": "かく",
+      "romaji": "kaku",
+      "meaning_id": "me-scratch",
+      "meaning_en": "to scratch; to perspire"
+    },
+    {
+      "word": "引っ掻く",
+      "reading": "ひっかく",
+      "romaji": "hikkaku",
+      "meaning_id": "me-scratch",
+      "meaning_en": "to scratch"
+    }
+  ],
+  "sniff": [
+    {
+      "word": "嗅ぐ",
+      "reading": "かぐ",
+      "romaji": "kagu",
+      "meaning_id": "me-sniff",
+      "meaning_en": "to sniff; to smell"
+    }
+  ],
+  "be piled up": [
+    {
+      "word": "重なる",
+      "reading": "かさなる",
+      "romaji": "kasanaru",
+      "meaning_id": "me-be piled up",
+      "meaning_en": "to be piled up; lie on top of one another; overlap each other"
+    }
+  ],
+  "pile up": [
+    {
+      "word": "重ねる",
+      "reading": "かさねる",
+      "romaji": "kasaneru",
+      "meaning_id": "me-pile up",
+      "meaning_en": "to pile up; to put something on another; to heap up; to add; to repeat"
+    },
+    {
+      "word": "積む",
+      "reading": "つむ",
+      "romaji": "tsumu",
+      "meaning_id": "me-pile up",
+      "meaning_en": "to pile up; to stack"
+    },
+    {
+      "word": "嵩む",
+      "reading": "かさむ",
+      "romaji": "kasamu",
+      "meaning_id": "me-pile up",
+      "meaning_en": "to pile up; to increase"
+    }
+  ],
+  "chew": [
+    {
+      "word": "かじる",
+      "reading": "かじる",
+      "romaji": "kajiru",
+      "meaning_id": "me-chew",
+      "meaning_en": "to chew; to bite (at); to gnaw; to nibble"
+    }
+  ],
+  "put in order": [
+    {
+      "word": "片付く",
+      "reading": "かたづく",
+      "romaji": "katazuku",
+      "meaning_id": "me-put in order",
+      "meaning_en": "to put in order; to dispose of; to solve"
+    },
+    {
+      "word": "まとめる",
+      "reading": "まとめる",
+      "romaji": "matomeru",
+      "meaning_id": "me-put in order",
+      "meaning_en": "to put in order; to collect; to bring to a conclusion"
+    },
+    {
+      "word": "整える",
+      "reading": "ととのえる",
+      "romaji": "totonoeru",
+      "meaning_id": "me-put in order",
+      "meaning_en": "to put in order; to get ready; to arrange; to adjust"
+    }
+  ],
+  "harden": [
+    {
+      "word": "固まる",
+      "reading": "かたまる",
+      "romaji": "katamaru",
+      "meaning_id": "me-harden",
+      "meaning_en": "to harden; to solidify; to become firm; to become certain"
+    },
+    {
+      "word": "固める",
+      "reading": "かためる",
+      "romaji": "katameru",
+      "meaning_id": "me-harden",
+      "meaning_en": "to harden; to freeze; to fortify"
+    }
+  ],
+  "incline toward": [
+    {
+      "word": "傾く",
+      "reading": "かたむく",
+      "romaji": "katamuku",
+      "meaning_id": "me-incline toward",
+      "meaning_en": "to incline toward; to slant; to lurch"
+    }
+  ],
+  "be one-sided": [
+    {
+      "word": "片寄る",
+      "reading": "かたよる",
+      "romaji": "katayoru",
+      "meaning_id": "me-be one-sided",
+      "meaning_en": "to be one-sided; to incline; to be partial"
+    },
+    {
+      "word": "偏る",
+      "reading": "かたよる",
+      "romaji": "katayoru",
+      "meaning_id": "me-be one-sided",
+      "meaning_en": "to be one-sided; to incline; to be partial; to be prejudiced; to lean; to be biased"
+    }
+  ],
+  "shoulder": [
+    {
+      "word": "担ぐ",
+      "reading": "かつぐ",
+      "romaji": "katsugu",
+      "meaning_id": "me-shoulder",
+      "meaning_en": "to shoulder; to carry on shoulder"
+    }
+  ],
+  "cover": [
+    {
+      "word": "被せる",
+      "reading": "かぶせる",
+      "romaji": "kabuseru",
+      "meaning_id": "me-cover",
+      "meaning_en": "to cover (with something)"
+    }
+  ],
+  "ridicule": [
+    {
+      "word": "からかう",
+      "reading": "からかう",
+      "romaji": "karakau",
+      "meaning_id": "me-ridicule",
+      "meaning_en": "to ridicule; to tease; to banter with; to make fun of"
+    }
+  ],
+  "wither": [
+    {
+      "word": "枯れる",
+      "reading": "かれる",
+      "romaji": "kareru",
+      "meaning_id": "me-wither",
+      "meaning_en": "to wither; to die (plant); to be blasted (plant)"
+    },
+    {
+      "word": "しぼむ",
+      "reading": "しぼむ",
+      "romaji": "shibomu",
+      "meaning_id": "me-wither",
+      "meaning_en": "to wither; to fade (away); to shrivel; to wilt"
+    }
+  ],
+  "love": [
+    {
+      "word": "かわいがる",
+      "reading": "かわいがる",
+      "romaji": "kawaigaru",
+      "meaning_id": "me-love",
+      "meaning_en": "to love; to be affectionate"
+    }
+  ],
+  "dry": [
+    {
+      "word": "乾かす",
+      "reading": "かわかす",
+      "romaji": "kawakasu",
+      "meaning_id": "me-dry",
+      "meaning_en": "to dry (clothes, etc.); to desiccate"
+    }
+  ],
+  "be thirsty": [
+    {
+      "word": "渇く",
+      "reading": "かわく",
+      "romaji": "kawaku",
+      "meaning_id": "me-be thirsty",
+      "meaning_en": "to be thirsty"
+    }
+  ],
+  "take the place of": [
+    {
+      "word": "代る",
+      "reading": "かわる",
+      "romaji": "kawaru",
+      "meaning_id": "me-take the place of",
+      "meaning_en": "to take the place of; to relieve; to be substituted for"
+    }
+  ],
+  "feel": [
+    {
+      "word": "感ずる",
+      "reading": "かんずる",
+      "romaji": "kanzuru",
+      "meaning_id": "me-feel",
+      "meaning_en": "to feel; to sense"
+    }
+  ],
+  "mince": [
+    {
+      "word": "刻む",
+      "reading": "きざむ",
+      "romaji": "kizamu",
+      "meaning_id": "me-mince",
+      "meaning_en": "to mince; to carve; to engrave"
+    }
+  ],
+  "put on clothes": [
+    {
+      "word": "着せる",
+      "reading": "きせる",
+      "romaji": "kiseru",
+      "meaning_id": "me-put on clothes",
+      "meaning_en": "to put on clothes"
+    }
+  ],
+  "behead": [
+    {
+      "word": "斬る",
+      "reading": "きる",
+      "romaji": "kiru",
+      "meaning_id": "me-behead",
+      "meaning_en": "to behead; to murder"
+    }
+  ],
+  "be careful": [
+    {
+      "word": "気を付ける",
+      "reading": "きをつける",
+      "romaji": "kiotsukeru",
+      "meaning_id": "me-be careful",
+      "meaning_en": "to be careful; to pay attention; to take care"
+    },
+    {
+      "word": "慎む",
+      "reading": "つつしむ",
+      "romaji": "tsutsushimu",
+      "meaning_id": "me-be careful",
+      "meaning_en": "to be careful; to be chaste or discreet; to abstain or refrain"
+    }
+  ],
+  "punctuate": [
+    {
+      "word": "区切る",
+      "reading": "くぎる",
+      "romaji": "kugiru",
+      "meaning_id": "me-punctuate",
+      "meaning_en": "to punctuate; to cut off; to mark off; to stop; to put an end to"
+    }
+  ],
+  "destroy": [
+    {
+      "word": "崩す",
+      "reading": "くずす",
+      "romaji": "kuzusu",
+      "meaning_id": "me-destroy",
+      "meaning_en": "to destroy; to pull down; to make change (money)"
+    },
+    {
+      "word": "滅ぼす",
+      "reading": "ほろぼす",
+      "romaji": "horobosu",
+      "meaning_id": "me-destroy",
+      "meaning_en": "to destroy; to overthrow; to wreck; to ruin"
+    }
+  ],
+  "collapse": [
+    {
+      "word": "崩れる",
+      "reading": "くずれる",
+      "romaji": "kuzureru",
+      "meaning_id": "me-collapse",
+      "meaning_en": "to collapse; to crumble"
+    }
+  ],
+  "break": [
+    {
+      "word": "砕く",
+      "reading": "くだく",
+      "romaji": "kudaku",
+      "meaning_id": "me-break",
+      "meaning_en": "to break; to smash"
+    },
+    {
+      "word": "砕ける",
+      "reading": "くだける",
+      "romaji": "kudakeru",
+      "meaning_id": "me-break",
+      "meaning_en": "to break; to be broken"
+    }
+  ],
+  "get tired": [
+    {
+      "word": "くたびれる",
+      "reading": "くたびれる",
+      "romaji": "kutabireru",
+      "meaning_id": "me-get tired",
+      "meaning_en": "to get tired; to wear out"
+    }
+  ],
+  "get down": [
+    {
+      "word": "下る",
+      "reading": "くだる",
+      "romaji": "kudaru",
+      "meaning_id": "me-get down",
+      "meaning_en": "to get down; to descend"
+    }
+  ],
+  "adhere to": [
+    {
+      "word": "くっつく",
+      "reading": "くっつく",
+      "romaji": "kuttsuku",
+      "meaning_id": "me-adhere to",
+      "meaning_en": "to adhere to; to keep close to"
+    }
+  ],
+  "distribute": [
+    {
+      "word": "配る",
+      "reading": "くばる",
+      "romaji": "kubaru",
+      "meaning_id": "me-distribute",
+      "meaning_en": "to distribute; to deliver"
+    }
+  ],
+  "assemble": [
+    {
+      "word": "組み立てる",
+      "reading": "くみたてる",
+      "romaji": "kumitateru",
+      "meaning_id": "me-assemble",
+      "meaning_en": "to assemble; to set up; to construct"
+    }
+  ],
+  "draw": [
+    {
+      "word": "汲む",
+      "reading": "くむ",
+      "romaji": "kumu",
+      "meaning_id": "me-draw",
+      "meaning_en": "to draw (water); to dip; to scoop; to pump"
+    }
+  ],
+  "serve sake": [
+    {
+      "word": "酌む",
+      "reading": "くむ",
+      "romaji": "kumu",
+      "meaning_id": "me-serve sake",
+      "meaning_en": "to serve sake"
+    }
+  ],
+  "mourn": [
+    {
+      "word": "悔やむ",
+      "reading": "くやむ",
+      "romaji": "kuyamu",
+      "meaning_id": "me-mourn",
+      "meaning_en": "to mourn"
+    }
+  ],
+  "be engulfed in": [
+    {
+      "word": "くるむ",
+      "reading": "くるむ",
+      "romaji": "kurumu",
+      "meaning_id": "me-be engulfed in",
+      "meaning_en": "to be engulfed in; to be enveloped by; to wrap up"
+    }
+  ],
+  "hold in one's mouth": [
+    {
+      "word": "咥える",
+      "reading": "くわえる",
+      "romaji": "kuwaeru",
+      "meaning_id": "me-hold in one's mouth",
+      "meaning_en": "to hold in one's mouth"
+    }
+  ],
+  "cut down little by little": [
+    {
+      "word": "削る",
+      "reading": "けずる",
+      "romaji": "kezuru",
+      "meaning_id": "me-cut down little by little",
+      "meaning_en": "to cut down little by little; to take a percentage"
+    }
+  ],
+  "kick": [
+    {
+      "word": "蹴る",
+      "reading": "ける",
+      "romaji": "keru",
+      "meaning_id": "me-kick",
+      "meaning_en": "to kick"
+    }
+  ],
+  "exceed": [
+    {
+      "word": "超える",
+      "reading": "こえる",
+      "romaji": "koeru",
+      "meaning_id": "me-exceed",
+      "meaning_en": "to exceed; to cross over; to cross"
+    },
+    {
+      "word": "上回る",
+      "reading": "うわまわる",
+      "romaji": "uwamawaru",
+      "meaning_id": "me-exceed",
+      "meaning_en": "to exceed"
+    }
+  ],
+  "burn": [
+    {
+      "word": "焦がす",
+      "reading": "こがす",
+      "romaji": "kogasu",
+      "meaning_id": "me-burn",
+      "meaning_en": "to burn; to scorch; to singe; to char"
+    },
+    {
+      "word": "焦げる",
+      "reading": "こげる",
+      "romaji": "kogeru",
+      "meaning_id": "me-burn",
+      "meaning_en": "to burn; to be burned"
+    },
+    {
+      "word": "焚く",
+      "reading": "たく",
+      "romaji": "taku",
+      "meaning_id": "me-burn",
+      "meaning_en": "to burn; to kindle; to build a fire"
+    },
+    {
+      "word": "燃やす",
+      "reading": "もやす",
+      "romaji": "moyasu",
+      "meaning_id": "me-burn",
+      "meaning_en": "to burn"
+    }
+  ],
+  "freeze": [
+    {
+      "word": "凍える",
+      "reading": "こごえる",
+      "romaji": "kogoeru",
+      "meaning_id": "me-freeze",
+      "meaning_en": "to freeze; to be chilled; to be frozen"
+    },
+    {
+      "word": "凝らす",
+      "reading": "こごらす",
+      "romaji": "kogorasu",
+      "meaning_id": "me-freeze",
+      "meaning_en": "to freeze; to congeal"
+    }
+  ],
+  "be informed": [
+    {
+      "word": "心得る",
+      "reading": "こころえる",
+      "romaji": "kokoroeru",
+      "meaning_id": "me-be informed",
+      "meaning_en": "to be informed; to have thorough knowledge"
+    }
+  ],
+  "cross": [
+    {
+      "word": "超す",
+      "reading": "こす",
+      "romaji": "kosu",
+      "meaning_id": "me-cross",
+      "meaning_en": "to cross; to pass; to tide over"
+    },
+    {
+      "word": "交わる",
+      "reading": "まじわる",
+      "romaji": "majiwaru",
+      "meaning_id": "me-cross",
+      "meaning_en": "to cross; to intersect; to associate with; to mingle with; to interest; to join"
+    }
+  ],
+  "rub": [
+    {
+      "word": "擦る",
+      "reading": "こする",
+      "romaji": "kosuru",
+      "meaning_id": "me-rub",
+      "meaning_en": "to rub; to chafe; to file; to frost (glass); to strike (match)"
+    },
+    {
+      "word": "揉む",
+      "reading": "もむ",
+      "romaji": "momu",
+      "meaning_id": "me-rub",
+      "meaning_en": "to rub; to crumple (up); to wrinkle"
+    },
+    {
+      "word": "擦れる",
+      "reading": "すれる",
+      "romaji": "sureru",
+      "meaning_id": "me-rub",
+      "meaning_en": "to rub; to chafe; to wear; to become sophisticated"
+    }
+  ],
+  "send word": [
+    {
+      "word": "言付ける",
+      "reading": "ことづける",
+      "romaji": "kotozukeru",
+      "meaning_id": "me-send word",
+      "meaning_en": "to send word; to send a message"
+    }
+  ],
+  "spill": [
+    {
+      "word": "こぼす",
+      "reading": "こぼす",
+      "romaji": "kobosu",
+      "meaning_id": "me-spill",
+      "meaning_en": "to spill"
+    }
+  ],
+  "overflow": [
+    {
+      "word": "こぼれる",
+      "reading": "こぼれる",
+      "romaji": "koboreru",
+      "meaning_id": "me-overflow",
+      "meaning_en": "to overflow; to spill"
+    }
+  ],
+  "bear": [
+    {
+      "word": "こらえる",
+      "reading": "こらえる",
+      "romaji": "koraeru",
+      "meaning_id": "me-bear",
+      "meaning_en": "to bear; to stand; to endure; to put up with"
+    },
+    {
+      "word": "負う",
+      "reading": "おう",
+      "romaji": "ou",
+      "meaning_id": "me-bear",
+      "meaning_en": "to bear; to owe"
+    },
+    {
+      "word": "堪える",
+      "reading": "こたえる",
+      "romaji": "kotaeru",
+      "meaning_id": "me-bear",
+      "meaning_en": "to bear; to stand; to endure; to put up with; to support; to withstand; to resist; to brave; to be fit for"
+    },
+    {
+      "word": "耐える",
+      "reading": "たえる",
+      "romaji": "taeru",
+      "meaning_id": "me-bear",
+      "meaning_en": "to bear; to endure"
+    }
+  ],
+  "roll": [
+    {
+      "word": "転がす",
+      "reading": "ころがす",
+      "romaji": "korogasu",
+      "meaning_id": "me-roll",
+      "meaning_en": "to roll"
+    },
+    {
+      "word": "転がる",
+      "reading": "ころがる",
+      "romaji": "korogaru",
+      "meaning_id": "me-roll",
+      "meaning_en": "to roll; to tumble"
+    }
+  ],
+  "search": [
+    {
+      "word": "捜す",
+      "reading": "さがす",
+      "romaji": "sagasu",
+      "meaning_id": "me-search",
+      "meaning_en": "to search; to seek; to look for"
+    },
+    {
+      "word": "探る",
+      "reading": "さぐる",
+      "romaji": "saguru",
+      "meaning_id": "me-search",
+      "meaning_en": "to search; to look for; to sound out"
+    }
+  ],
+  "go back": [
+    {
+      "word": "遡る",
+      "reading": "さかのぼる",
+      "romaji": "sakanoboru",
+      "meaning_id": "me-go back",
+      "meaning_en": "to go back; to go upstream; to make retroactive"
+    }
+  ],
+  "tear": [
+    {
+      "word": "裂く",
+      "reading": "さく",
+      "romaji": "saku",
+      "meaning_id": "me-tear",
+      "meaning_en": "to tear; to split"
+    },
+    {
+      "word": "破く",
+      "reading": "やぶく",
+      "romaji": "yabuku",
+      "meaning_id": "me-tear",
+      "meaning_en": "to tear; to rip"
+    }
+  ],
+  "whisper": [
+    {
+      "word": "囁く",
+      "reading": "ささやく",
+      "romaji": "sasayaku",
+      "meaning_id": "me-whisper",
+      "meaning_en": "to whisper; to murmur"
+    }
+  ],
+  "pierce": [
+    {
+      "word": "刺す",
+      "reading": "さす",
+      "romaji": "sasu",
+      "meaning_id": "me-pierce",
+      "meaning_en": "to pierce; to stab; to prick; to thrust"
+    },
+    {
+      "word": "染みる",
+      "reading": "しみる",
+      "romaji": "shimiru",
+      "meaning_id": "me-pierce",
+      "meaning_en": "to pierce; to permeate"
+    }
+  ],
+  "shine": [
+    {
+      "word": "射す",
+      "reading": "さす",
+      "romaji": "sasu",
+      "meaning_id": "me-shine",
+      "meaning_en": "to shine; to strike"
+    },
+    {
+      "word": "照る",
+      "reading": "てる",
+      "romaji": "teru",
+      "meaning_id": "me-shine",
+      "meaning_en": "to shine"
+    }
+  ],
+  "insert": [
+    {
+      "word": "挿す",
+      "reading": "さす",
+      "romaji": "sasu",
+      "meaning_id": "me-insert",
+      "meaning_en": "to insert; to put in; to graft; to wear in belt"
+    },
+    {
+      "word": "組み込む",
+      "reading": "くみこむ",
+      "romaji": "kumikomu",
+      "meaning_id": "me-insert",
+      "meaning_en": "to insert; to include; to cut in (printing)"
+    }
+  ],
+  "pour": [
+    {
+      "word": "注す",
+      "reading": "さす",
+      "romaji": "sasu",
+      "meaning_id": "me-pour",
+      "meaning_en": "to pour (drink); to serve (drinks)"
+    }
+  ],
+  "rust": [
+    {
+      "word": "錆びる",
+      "reading": "さびる",
+      "romaji": "sabiru",
+      "meaning_id": "me-rust",
+      "meaning_en": "to rust; to become rusty"
+    }
+  ],
+  "become cool": [
+    {
+      "word": "冷める",
+      "reading": "さめる",
+      "romaji": "sameru",
+      "meaning_id": "me-become cool",
+      "meaning_en": "to become cool; to wear off; to abate; to subside"
+    }
+  ],
+  "be finished": [
+    {
+      "word": "仕上がる",
+      "reading": "しあがる",
+      "romaji": "shiagaru",
+      "meaning_id": "me-be finished",
+      "meaning_en": "to be finished"
+    },
+    {
+      "word": "出来上がる",
+      "reading": "できあがる",
+      "romaji": "dekiagaru",
+      "meaning_id": "me-be finished",
+      "meaning_en": "to be finished; to be ready; by definition; to be very drunk"
+    }
+  ],
+  "spread out": [
+    {
+      "word": "敷く",
+      "reading": "しく",
+      "romaji": "shiku",
+      "meaning_id": "me-spread out",
+      "meaning_en": "to spread out; to lay out"
+    }
+  ],
+  "grow thick": [
+    {
+      "word": "茂る",
+      "reading": "しげる",
+      "romaji": "shigeru",
+      "meaning_id": "me-grow thick",
+      "meaning_en": "to grow thick; to luxuriate; to be luxurious"
+    }
+  ],
+  "quieten down": [
+    {
+      "word": "静まる",
+      "reading": "しずまる",
+      "romaji": "shizumaru",
+      "meaning_id": "me-quieten down",
+      "meaning_en": "to quieten down; to calm down; to subside"
+    }
+  ],
+  "become numb": [
+    {
+      "word": "しびれる",
+      "reading": "しびれる",
+      "romaji": "shibireru",
+      "meaning_id": "me-become numb",
+      "meaning_en": "to become numb; to go to sleep (i.e., a limb)"
+    }
+  ],
+  "press": [
+    {
+      "word": "絞る",
+      "reading": "しぼる",
+      "romaji": "shiboru",
+      "meaning_id": "me-press",
+      "meaning_en": "to press; to wring; to squeeze"
+    }
+  ],
+  "shut up": [
+    {
+      "word": "締め切る",
+      "reading": "しめきる",
+      "romaji": "shimekiru",
+      "meaning_id": "me-shut up",
+      "meaning_en": "to shut up"
+    }
+  ],
+  "be wet": [
+    {
+      "word": "湿る",
+      "reading": "しめる",
+      "romaji": "shimeru",
+      "meaning_id": "me-be wet",
+      "meaning_en": "to be wet; to become wet; to be damp"
+    }
+  ],
+  "squat": [
+    {
+      "word": "しゃがむ",
+      "reading": "しゃがむ",
+      "romaji": "shagamu",
+      "meaning_id": "me-squat",
+      "meaning_en": "to squat"
+    }
+  ],
+  "suck": [
+    {
+      "word": "しゃぶる",
+      "reading": "しゃぶる",
+      "romaji": "shaburu",
+      "meaning_id": "me-suck",
+      "meaning_en": "to suck; to chew"
+    }
+  ],
+  "cause": [
+    {
+      "word": "生ずる",
+      "reading": "しょうずる",
+      "romaji": "shouzuru",
+      "meaning_id": "me-cause",
+      "meaning_en": "to cause; to arise; to be generated"
+    }
+  ],
+  "be transparent": [
+    {
+      "word": "透き通る",
+      "reading": "すきとおる",
+      "romaji": "sukitooru",
+      "meaning_id": "me-be transparent",
+      "meaning_en": "to be(come) transparent"
+    }
+  ],
+  "cool oneself": [
+    {
+      "word": "涼む",
+      "reading": "すずむ",
+      "romaji": "suzumu",
+      "meaning_id": "me-cool oneself",
+      "meaning_en": "to cool oneself; to cool off; to enjoy evening cool"
+    }
+  ],
+  "clear": [
+    {
+      "word": "澄む",
+      "reading": "すむ",
+      "romaji": "sumu",
+      "meaning_id": "me-clear",
+      "meaning_en": "to clear (e.g. weather); to become transparent"
+    },
+    {
+      "word": "澄ます",
+      "reading": "すます",
+      "romaji": "sumasu",
+      "meaning_id": "me-clear",
+      "meaning_en": "to clear; to make clear; to be unruffled; to look unconcerned; to look demure; look prim; put on airs"
+    }
+  ],
+  "become clear": [
+    {
+      "word": "清む",
+      "reading": "すむ",
+      "romaji": "sumu",
+      "meaning_id": "me-become clear",
+      "meaning_en": "to become clear (water, air, etc.); to become transparent"
+    }
+  ],
+  "put off": [
+    {
+      "word": "ずらす",
+      "reading": "ずらす",
+      "romaji": "zurasu",
+      "meaning_id": "me-put off",
+      "meaning_en": "to put off; to delay"
+    }
+  ],
+  "print": [
+    {
+      "word": "刷る",
+      "reading": "する",
+      "romaji": "suru",
+      "meaning_id": "me-print",
+      "meaning_en": "to print"
+    }
+  ],
+  "pass by one another": [
+    {
+      "word": "すれちがう",
+      "reading": "すれちがう",
+      "romaji": "surechigau",
+      "meaning_id": "me-pass by one another",
+      "meaning_en": "to pass by one another; to disagree"
+    }
+  ],
+  "be burdened with": [
+    {
+      "word": "背負う",
+      "reading": "せおう",
+      "romaji": "seou",
+      "meaning_id": "me-be burdened with",
+      "meaning_en": "to be burdened with; to carry on back or shoulder"
+    }
+  ],
+  "come in contact with": [
+    {
+      "word": "接する",
+      "reading": "せっする",
+      "romaji": "sessuru",
+      "meaning_id": "me-come in contact with",
+      "meaning_en": "to come in contact with; to connect; to attend; to receive"
+    }
+  ],
+  "draw near": [
+    {
+      "word": "迫る",
+      "reading": "せまる",
+      "romaji": "semaru",
+      "meaning_id": "me-draw near",
+      "meaning_en": "to draw near; to press"
+    }
+  ],
+  "belong to": [
+    {
+      "word": "属する",
+      "reading": "ぞくする",
+      "romaji": "zokusuru",
+      "meaning_id": "me-belong to",
+      "meaning_en": "to belong to; to come under; to be affiliated with; to be subject to"
+    }
+  ],
+  "shave": [
+    {
+      "word": "剃る",
+      "reading": "そる",
+      "romaji": "soru",
+      "meaning_id": "me-shave",
+      "meaning_en": "to shave"
+    }
+  ],
+  "warp": [
+    {
+      "word": "反る",
+      "reading": "そる",
+      "romaji": "soru",
+      "meaning_id": "me-warp",
+      "meaning_en": "to warp; to be warped; to curve"
+    }
+  ],
+  "stray  from subject": [
+    {
+      "word": "逸れる",
+      "reading": "それる",
+      "romaji": "soreru",
+      "meaning_id": "me-stray  from subject",
+      "meaning_en": "to stray (turn) from subject; to get lost; to go astray"
+    }
+  ],
+  "become complete": [
+    {
+      "word": "揃う",
+      "reading": "そろう",
+      "romaji": "sorou",
+      "meaning_id": "me-become complete",
+      "meaning_en": "to become complete; to be equal; to be all present; to gather"
+    }
+  ],
+  "put things in order": [
+    {
+      "word": "揃える",
+      "reading": "そろえる",
+      "romaji": "soroeru",
+      "meaning_id": "me-put things in order",
+      "meaning_en": "to put things in order; to arrange; to make uniform; to get something ready"
+    }
+  ],
+  "till": [
+    {
+      "word": "耕す",
+      "reading": "たがやす",
+      "romaji": "tagayasu",
+      "meaning_id": "me-till",
+      "meaning_en": "to till; to plow; to cultivate"
+    }
+  ],
+  "boil": [
+    {
+      "word": "炊く",
+      "reading": "たく",
+      "romaji": "taku",
+      "meaning_id": "me-boil",
+      "meaning_en": "to boil; to cook"
+    },
+    {
+      "word": "煮える",
+      "reading": "にえる",
+      "romaji": "nieru",
+      "meaning_id": "me-boil",
+      "meaning_en": "to boil; to cook; to be cooked"
+    },
+    {
+      "word": "煮る",
+      "reading": "にる",
+      "romaji": "niru",
+      "meaning_id": "me-boil",
+      "meaning_en": "to boil; to cook"
+    },
+    {
+      "word": "ゆでる",
+      "reading": "ゆでる",
+      "romaji": "yuderu",
+      "meaning_id": "me-boil",
+      "meaning_en": "to boil"
+    },
+    {
+      "word": "湧く",
+      "reading": "わく",
+      "romaji": "waku",
+      "meaning_id": "me-boil",
+      "meaning_en": "to boil; to grow hot; to get excited; to gush forth"
+    }
+  ],
+  "store": [
+    {
+      "word": "蓄える",
+      "reading": "たくわえる",
+      "romaji": "takuwaeru",
+      "meaning_id": "me-store",
+      "meaning_en": "to store; to lay in stock"
+    }
+  ],
+  "be saved": [
+    {
+      "word": "助かる",
+      "reading": "たすかる",
+      "romaji": "tasukaru",
+      "meaning_id": "me-be saved",
+      "meaning_en": "to be saved; to be rescued; to survive; to be helpful"
+    }
+  ],
+  "fold": [
+    {
+      "word": "畳む",
+      "reading": "たたむ",
+      "romaji": "tatamu",
+      "meaning_id": "me-fold",
+      "meaning_en": "to fold (clothes)"
+    }
+  ],
+  "erect": [
+    {
+      "word": "建つ",
+      "reading": "たつ",
+      "romaji": "tatsu",
+      "meaning_id": "me-erect",
+      "meaning_en": "to erect; to be erected; to be built"
+    }
+  ],
+  "compare": [
+    {
+      "word": "例える",
+      "reading": "たとえる",
+      "romaji": "tatoeru",
+      "meaning_id": "me-compare",
+      "meaning_en": "to compare; to liken; to speak figuratively; to illustrate; to use a simile"
+    }
+  ],
+  "trick": [
+    {
+      "word": "だます",
+      "reading": "だます",
+      "romaji": "damasu",
+      "meaning_id": "me-trick",
+      "meaning_en": "to trick; to cheat; to deceive"
+    }
+  ],
+  "collect": [
+    {
+      "word": "溜まる",
+      "reading": "たまる",
+      "romaji": "tamaru",
+      "meaning_id": "me-collect",
+      "meaning_en": "to collect; to gather; to save"
+    },
+    {
+      "word": "寄せる",
+      "reading": "よせる",
+      "romaji": "yoseru",
+      "meaning_id": "me-collect",
+      "meaning_en": "to collect; to gather; to add; to put aside"
+    },
+    {
+      "word": "取り立てる",
+      "reading": "とりたてる",
+      "romaji": "toritateru",
+      "meaning_id": "me-collect",
+      "meaning_en": "to collect; to extort; to appoint; to promote"
+    }
+  ],
+  "hesitate": [
+    {
+      "word": "ためらう",
+      "reading": "ためらう",
+      "romaji": "tamerau",
+      "meaning_id": "me-hesitate",
+      "meaning_en": "to hesitate"
+    }
+  ],
+  "amass": [
+    {
+      "word": "溜める",
+      "reading": "ためる",
+      "romaji": "tameru",
+      "meaning_id": "me-amass",
+      "meaning_en": "to amass; to accumulate"
+    }
+  ],
+  "be sufficient": [
+    {
+      "word": "足る",
+      "reading": "たる",
+      "romaji": "taru",
+      "meaning_id": "me-be sufficient",
+      "meaning_en": "to be sufficient; to be enough"
+    }
+  ],
+  "swear": [
+    {
+      "word": "誓う",
+      "reading": "ちかう",
+      "romaji": "chikau",
+      "meaning_id": "me-swear",
+      "meaning_en": "to swear; to vow; to take an oath; to pledge"
+    }
+  ],
+  "bring near": [
+    {
+      "word": "近付ける",
+      "reading": "ちかづける",
+      "romaji": "chikazukeru",
+      "meaning_id": "me-bring near",
+      "meaning_en": "to bring near; to put close; to let come near; to associate with"
+    }
+  ],
+  "approach": [
+    {
+      "word": "近寄る",
+      "reading": "ちかよる",
+      "romaji": "chikayoru",
+      "meaning_id": "me-approach",
+      "meaning_en": "to approach; to draw near"
+    },
+    {
+      "word": "近付く",
+      "reading": "ちかづく",
+      "romaji": "chikazuku",
+      "meaning_id": "me-approach",
+      "meaning_en": "to approach; to get near; to get acquainted with; to get closer"
+    }
+  ],
+  "cut up fine": [
+    {
+      "word": "ちぎる",
+      "reading": "ちぎる",
+      "romaji": "chigiru",
+      "meaning_id": "me-cut up fine",
+      "meaning_en": "to cut up fine; to pick (fruit)"
+    }
+  ],
+  "shrink": [
+    {
+      "word": "縮む",
+      "reading": "ちぢむ",
+      "romaji": "chijimu",
+      "meaning_id": "me-shrink",
+      "meaning_en": "to shrink; to be contracted"
+    }
+  ],
+  "shorten": [
+    {
+      "word": "縮める",
+      "reading": "ちぢめる",
+      "romaji": "chijimeru",
+      "meaning_id": "me-shorten",
+      "meaning_en": "to shorten; to reduce; to boil down; to shrink"
+    }
+  ],
+  "be wavy": [
+    {
+      "word": "縮れる",
+      "reading": "ちぢれる",
+      "romaji": "chijireru",
+      "meaning_id": "me-be wavy",
+      "meaning_en": "to be wavy; to be curled"
+    }
+  ],
+  "scatter around": [
+    {
+      "word": "散らかす",
+      "reading": "ちらかす",
+      "romaji": "chirakasu",
+      "meaning_id": "me-scatter around",
+      "meaning_en": "to scatter around; to leave untidy"
+    }
+  ],
+  "be in disorder": [
+    {
+      "word": "散らかる",
+      "reading": "ちらかる",
+      "romaji": "chirakaru",
+      "meaning_id": "me-be in disorder",
+      "meaning_en": "to be in disorder; to lie scattered around"
+    }
+  ],
+  "scatter": [
+    {
+      "word": "散らす",
+      "reading": "ちらす",
+      "romaji": "chirasu",
+      "meaning_id": "me-scatter",
+      "meaning_en": "to scatter; to disperse; to distribute"
+    },
+    {
+      "word": "撒く",
+      "reading": "まく",
+      "romaji": "maku",
+      "meaning_id": "me-scatter",
+      "meaning_en": "to scatter; to sprinkle; to sow"
+    }
+  ],
+  "be open": [
+    {
+      "word": "通ずる",
+      "reading": "つうずる",
+      "romaji": "tsuuzuru",
+      "meaning_id": "me-be open",
+      "meaning_en": "to be open (to traffic); to lead (to); to connect (to); to run (from, between; e.g. bus service)"
+    }
+  ],
+  "associate with": [
+    {
+      "word": "付き合う",
+      "reading": "つきあう",
+      "romaji": "tsukiau",
+      "meaning_id": "me-associate with",
+      "meaning_en": "to associate with; to keep company with; to get on with"
+    }
+  ],
+  "run into": [
+    {
+      "word": "突き当たる",
+      "reading": "つきあたる",
+      "romaji": "tsukiataru",
+      "meaning_id": "me-run into",
+      "meaning_en": "to run into; to collide with"
+    }
+  ],
+  "catch fire": [
+    {
+      "word": "点く",
+      "reading": "つく",
+      "romaji": "tsuku",
+      "meaning_id": "me-catch fire",
+      "meaning_en": "to catch fire; (electricity) comes on"
+    }
+  ],
+  "thrust": [
+    {
+      "word": "突く",
+      "reading": "つく",
+      "romaji": "tsuku",
+      "meaning_id": "me-thrust",
+      "meaning_en": "to thrust; to strike; to poke"
+    },
+    {
+      "word": "突く",
+      "reading": "つつく",
+      "romaji": "tsutsuku",
+      "meaning_id": "me-thrust",
+      "meaning_en": "to thrust; to strike; to attack; to poke; to nudge; to pick at"
+    }
+  ],
+  "rank next to": [
+    {
+      "word": "次ぐ",
+      "reading": "つぐ",
+      "romaji": "tsugu",
+      "meaning_id": "me-rank next to",
+      "meaning_en": "to rank next to; to come after"
+    }
+  ],
+  "dip in": [
+    {
+      "word": "浸ける",
+      "reading": "つける",
+      "romaji": "tsukeru",
+      "meaning_id": "me-dip in",
+      "meaning_en": "to dip in; to soak"
+    }
+  ],
+  "be handed down": [
+    {
+      "word": "伝わる",
+      "reading": "つたわる",
+      "romaji": "tsutawaru",
+      "meaning_id": "me-be handed down",
+      "meaning_en": "to be handed down; to be introduced; to be transmitted"
+    }
+  ],
+  "plunge into": [
+    {
+      "word": "突っ込む",
+      "reading": "つっこむ",
+      "romaji": "tsukkomu",
+      "meaning_id": "me-plunge into",
+      "meaning_en": "to plunge into; to go into deeply"
+    }
+  ],
+  "serve": [
+    {
+      "word": "努める",
+      "reading": "つとめる",
+      "romaji": "tsutomeru",
+      "meaning_id": "me-serve",
+      "meaning_en": "to serve; to fill a post; to serve under; to work (for)"
+    },
+    {
+      "word": "務める",
+      "reading": "つとめる",
+      "romaji": "tsutomeru",
+      "meaning_id": "me-serve",
+      "meaning_en": "to serve; to fill a post; to serve under; to work (for)"
+    },
+    {
+      "word": "盛る",
+      "reading": "もる",
+      "romaji": "moru",
+      "meaning_id": "me-serve",
+      "meaning_en": "to serve (food, etc.); to fill up; to prescribe"
+    },
+    {
+      "word": "仕える",
+      "reading": "つかえる",
+      "romaji": "tsukaeru",
+      "meaning_id": "me-serve",
+      "meaning_en": "to serve; to work for"
+    }
+  ],
+  "be tied together": [
+    {
+      "word": "繋がる",
+      "reading": "つながる",
+      "romaji": "tsunagaru",
+      "meaning_id": "me-be tied together",
+      "meaning_en": "to be tied together; to be connected to; to be related to"
+    }
+  ],
+  "connect": [
+    {
+      "word": "繋げる",
+      "reading": "つなげる",
+      "romaji": "tsunageru",
+      "meaning_id": "me-connect",
+      "meaning_en": "to connect"
+    }
+  ],
+  "smash": [
+    {
+      "word": "潰す",
+      "reading": "つぶす",
+      "romaji": "tsubusu",
+      "meaning_id": "me-smash",
+      "meaning_en": "to smash; to waste"
+    }
+  ],
+  "be smashed": [
+    {
+      "word": "潰れる",
+      "reading": "つぶれる",
+      "romaji": "tsubureru",
+      "meaning_id": "me-be smashed",
+      "meaning_en": "to be smashed; to go bankrupt"
+    }
+  ],
+  "stumble": [
+    {
+      "word": "つまずく",
+      "reading": "つまずく",
+      "romaji": "tsumazuku",
+      "meaning_id": "me-stumble",
+      "meaning_en": "to stumble; to trip"
+    }
+  ],
+  "be blocked": [
+    {
+      "word": "詰まる",
+      "reading": "つまる",
+      "romaji": "tsumaru",
+      "meaning_id": "me-be blocked",
+      "meaning_en": "to be blocked; to be packed"
+    }
+  ],
+  "balance": [
+    {
+      "word": "釣り合う",
+      "reading": "つりあう",
+      "romaji": "tsuriau",
+      "meaning_id": "me-balance",
+      "meaning_en": "to balance; to be in harmony; to suit"
+    }
+  ],
+  "shine on": [
+    {
+      "word": "照らす",
+      "reading": "てらす",
+      "romaji": "terasu",
+      "meaning_id": "me-shine on",
+      "meaning_en": "to shine on; to illuminate"
+    }
+  ],
+  "happen to pass by": [
+    {
+      "word": "通り掛かる",
+      "reading": "とおりかかる",
+      "romaji": "toorikakaru",
+      "meaning_id": "me-happen to pass by",
+      "meaning_en": "to happen to pass by"
+    }
+  ],
+  "melt": [
+    {
+      "word": "溶かす",
+      "reading": "とかす",
+      "romaji": "tokasu",
+      "meaning_id": "me-melt",
+      "meaning_en": "to melt; to dissolve"
+    },
+    {
+      "word": "溶ける",
+      "reading": "とける",
+      "romaji": "tokeru",
+      "meaning_id": "me-melt",
+      "meaning_en": "to melt; to thaw; to fuse; to dissolve"
+    }
+  ],
+  "taper to a point": [
+    {
+      "word": "尖る",
+      "reading": "とがる",
+      "romaji": "togaru",
+      "meaning_id": "me-taper to a point",
+      "meaning_en": "to taper to a point; to become sharp; to be sour; to look displeased"
+    }
+  ],
+  "dissolve": [
+    {
+      "word": "溶く",
+      "reading": "とく",
+      "romaji": "toku",
+      "meaning_id": "me-dissolve",
+      "meaning_en": "to dissolve (paint)"
+    }
+  ],
+  "step aside": [
+    {
+      "word": "退く",
+      "reading": "どく",
+      "romaji": "doku",
+      "meaning_id": "me-step aside",
+      "meaning_en": "to step aside; to move (out of the way); to make way"
+    }
+  ],
+  "melt into": [
+    {
+      "word": "溶け込む",
+      "reading": "とけこむ",
+      "romaji": "tokekomu",
+      "meaning_id": "me-melt into",
+      "meaning_en": "to melt into"
+    }
+  ],
+  "remove": [
+    {
+      "word": "退ける",
+      "reading": "どける",
+      "romaji": "dokeru",
+      "meaning_id": "me-remove",
+      "meaning_en": "to remove; to take away; to dislodge; to put something out of the way"
+    },
+    {
+      "word": "取り除く",
+      "reading": "とりのぞく",
+      "romaji": "torinozoku",
+      "meaning_id": "me-remove",
+      "meaning_en": "to remove; to take away; to set apart"
+    }
+  ],
+  "be prepared": [
+    {
+      "word": "整う",
+      "reading": "ととのう",
+      "romaji": "totonou",
+      "meaning_id": "me-be prepared",
+      "meaning_en": "to be prepared; to be in order; to be put in order; to be arranged"
+    }
+  ],
+  "shout": [
+    {
+      "word": "どなる",
+      "reading": "どなる",
+      "romaji": "donaru",
+      "meaning_id": "me-shout",
+      "meaning_en": "to shout; to yell"
+    }
+  ],
+  "jump in": [
+    {
+      "word": "飛び込む",
+      "reading": "とびこむ",
+      "romaji": "tobikomu",
+      "meaning_id": "me-jump in",
+      "meaning_en": "to jump in; to leap in; to plunge into; to dive"
+    }
+  ],
+  "jump": [
+    {
+      "word": "跳ぶ",
+      "reading": "とぶ",
+      "romaji": "tobu",
+      "meaning_id": "me-jump",
+      "meaning_en": "to jump; to fly; to leap"
+    },
+    {
+      "word": "跳ねる",
+      "reading": "はねる",
+      "romaji": "haneru",
+      "meaning_id": "me-jump",
+      "meaning_en": "to jump; to leap"
+    }
+  ],
+  "give shelter to": [
+    {
+      "word": "泊める",
+      "reading": "とめる",
+      "romaji": "tomeru",
+      "meaning_id": "me-give shelter to",
+      "meaning_en": "to give shelter to; to lodge"
+    }
+  ],
+  "seize": [
+    {
+      "word": "捕える",
+      "reading": "とらえる",
+      "romaji": "toraeru",
+      "meaning_id": "me-seize",
+      "meaning_en": "to seize; to grasp; to capture; to arrest"
+    }
+  ],
+  "harvest": [
+    {
+      "word": "取り入れる",
+      "reading": "とりいれる",
+      "romaji": "toriireru",
+      "meaning_id": "me-harvest",
+      "meaning_en": "to harvest; to take in; to adopt"
+    }
+  ],
+  "cancel": [
+    {
+      "word": "取り消す",
+      "reading": "とりけす",
+      "romaji": "torikesu",
+      "meaning_id": "me-cancel",
+      "meaning_en": "to cancel"
+    }
+  ],
+  "take out": [
+    {
+      "word": "取り出す",
+      "reading": "とりだす",
+      "romaji": "toridasu",
+      "meaning_id": "me-take out",
+      "meaning_en": "to take out; to produce; to pick out"
+    }
+  ],
+  "adopt": [
+    {
+      "word": "採る",
+      "reading": "とる",
+      "romaji": "toru",
+      "meaning_id": "me-adopt",
+      "meaning_en": "to adopt (measure, proposal); to pick (fruit)"
+    }
+  ],
+  "cure": [
+    {
+      "word": "治す",
+      "reading": "なおす",
+      "romaji": "naosu",
+      "meaning_id": "me-cure",
+      "meaning_en": "to cure; to heal; to fix; to correct; to repair"
+    }
+  ],
+  "be prolonged": [
+    {
+      "word": "長引く",
+      "reading": "ながびく",
+      "romaji": "nagabiku",
+      "meaning_id": "me-be prolonged",
+      "meaning_en": "to be prolonged; to drag on"
+    },
+    {
+      "word": "延びる",
+      "reading": "のびる",
+      "romaji": "nobiru",
+      "meaning_id": "me-be prolonged",
+      "meaning_en": "to be prolonged"
+    }
+  ],
+  "comfort": [
+    {
+      "word": "慰める",
+      "reading": "なぐさめる",
+      "romaji": "nagusameru",
+      "meaning_id": "me-comfort",
+      "meaning_en": "to comfort; to console"
+    }
+  ],
+  "lose": [
+    {
+      "word": "亡くす",
+      "reading": "なくす",
+      "romaji": "nakusu",
+      "meaning_id": "me-lose",
+      "meaning_en": "to lose (a family member, e.g. a wife or child); to be bereaved of"
+    }
+  ],
+  "strike": [
+    {
+      "word": "なぐる",
+      "reading": "なぐる",
+      "romaji": "naguru",
+      "meaning_id": "me-strike",
+      "meaning_en": "to strike; to hit"
+    },
+    {
+      "word": "ぶつかる",
+      "reading": "ぶつかる",
+      "romaji": "butsukaru",
+      "meaning_id": "me-strike",
+      "meaning_en": "to strike; to collide with"
+    }
+  ],
+  "accomplish": [
+    {
+      "word": "為す",
+      "reading": "なす",
+      "romaji": "nasu",
+      "meaning_id": "me-accomplish",
+      "meaning_en": "to accomplish; to do"
+    },
+    {
+      "word": "遂げる",
+      "reading": "とげる",
+      "romaji": "togeru",
+      "meaning_id": "me-accomplish",
+      "meaning_en": "to accomplish; to achieve; to carry out"
+    },
+    {
+      "word": "果たす",
+      "reading": "はたす",
+      "romaji": "hatasu",
+      "meaning_id": "me-accomplish",
+      "meaning_en": "to accomplish; to fulfill; to carry out; to achieve"
+    },
+    {
+      "word": "やり遂げる",
+      "reading": "やりとげる",
+      "romaji": "yaritogeru",
+      "meaning_id": "me-accomplish",
+      "meaning_en": "to accomplish"
+    }
+  ],
+  "brush gently": [
+    {
+      "word": "撫でる",
+      "reading": "なでる",
+      "romaji": "naderu",
+      "meaning_id": "me-brush gently",
+      "meaning_en": "to brush gently; to stroke"
+    }
+  ],
+  "imitate": [
+    {
+      "word": "倣う",
+      "reading": "ならう",
+      "romaji": "narau",
+      "meaning_id": "me-imitate",
+      "meaning_en": "to imitate; to follow; to emulate"
+    }
+  ],
+  "ring": [
+    {
+      "word": "鳴らす",
+      "reading": "ならす",
+      "romaji": "narasu",
+      "meaning_id": "me-ring",
+      "meaning_en": "to ring; to sound; to chime; to beat; to snort (nose)"
+    }
+  ],
+  "bear fruit": [
+    {
+      "word": "生る",
+      "reading": "なる",
+      "romaji": "naru",
+      "meaning_id": "me-bear fruit",
+      "meaning_en": "to bear fruit"
+    },
+    {
+      "word": "実る",
+      "reading": "みのる",
+      "romaji": "minoru",
+      "meaning_id": "me-bear fruit",
+      "meaning_en": "to bear fruit; to ripen"
+    }
+  ],
+  "become domesticated": [
+    {
+      "word": "馴れる",
+      "reading": "なれる",
+      "romaji": "nareru",
+      "meaning_id": "me-become domesticated",
+      "meaning_en": "to become domesticated; to become tame"
+    }
+  ],
+  "be fragrant": [
+    {
+      "word": "匂う",
+      "reading": "におう",
+      "romaji": "niou",
+      "meaning_id": "me-be fragrant",
+      "meaning_en": "to be fragrant; to smell; to stink"
+    }
+  ],
+  "let loose": [
+    {
+      "word": "逃がす",
+      "reading": "にがす",
+      "romaji": "nigasu",
+      "meaning_id": "me-let loose",
+      "meaning_en": "to let loose; to set free; to let escape"
+    },
+    {
+      "word": "逃す",
+      "reading": "のがす",
+      "romaji": "nogasu",
+      "meaning_id": "me-let loose",
+      "meaning_en": "to let loose; to set free; to let escape"
+    }
+  ],
+  "become muddy": [
+    {
+      "word": "濁る",
+      "reading": "にごる",
+      "romaji": "nigoru",
+      "meaning_id": "me-become muddy",
+      "meaning_en": "to become muddy; to get impure"
+    }
+  ],
+  "glare at": [
+    {
+      "word": "睨む",
+      "reading": "にらむ",
+      "romaji": "niramu",
+      "meaning_id": "me-glare at",
+      "meaning_en": "to glare at; to scowl at; to keep an eye on"
+    }
+  ],
+  "sew": [
+    {
+      "word": "縫う",
+      "reading": "ぬう",
+      "romaji": "nuu",
+      "meaning_id": "me-sew",
+      "meaning_en": "to sew"
+    }
+  ],
+  "wet": [
+    {
+      "word": "濡らす",
+      "reading": "ぬらす",
+      "romaji": "nurasu",
+      "meaning_id": "me-wet",
+      "meaning_en": "to wet; to soak; to dip"
+    }
+  ],
+  "twist": [
+    {
+      "word": "捩る",
+      "reading": "ねじる",
+      "romaji": "nejiru",
+      "meaning_id": "me-twist",
+      "meaning_en": "to twist"
+    },
+    {
+      "word": "捻じれる",
+      "reading": "ねじれる",
+      "romaji": "nejireru",
+      "meaning_id": "me-twist",
+      "meaning_en": "to twist; to wrench; to screw"
+    }
+  ],
+  "heat": [
+    {
+      "word": "熱する",
+      "reading": "ねっする",
+      "romaji": "nessuru",
+      "meaning_id": "me-heat",
+      "meaning_en": "to heat"
+    }
+  ],
+  "aim at": [
+    {
+      "word": "狙う",
+      "reading": "ねらう",
+      "romaji": "nerau",
+      "meaning_id": "me-aim at",
+      "meaning_en": "to aim at"
+    }
+  ],
+  "place on": [
+    {
+      "word": "載せる",
+      "reading": "のせる",
+      "romaji": "noseru",
+      "meaning_id": "me-place on",
+      "meaning_en": "to place on (something); to take on board; to give a ride"
+    }
+  ],
+  "peep in": [
+    {
+      "word": "覗く",
+      "reading": "のぞく",
+      "romaji": "nozoku",
+      "meaning_id": "me-peep in",
+      "meaning_en": "to peep in; to look in; to peek in; to stick out"
+    }
+  ],
+  "lengthen": [
+    {
+      "word": "延ばす",
+      "reading": "のばす",
+      "romaji": "nobasu",
+      "meaning_id": "me-lengthen",
+      "meaning_en": "to lengthen; to stretch; to reach out; to grow (beard)"
+    }
+  ],
+  "ascend": [
+    {
+      "word": "上る",
+      "reading": "のぼる",
+      "romaji": "noboru",
+      "meaning_id": "me-ascend",
+      "meaning_en": "to ascend; to go up; to climb"
+    }
+  ],
+  "creep": [
+    {
+      "word": "這う",
+      "reading": "はう",
+      "romaji": "hau",
+      "meaning_id": "me-creep",
+      "meaning_en": "to creep; to crawl"
+    }
+  ],
+  "grow": [
+    {
+      "word": "生える",
+      "reading": "はえる",
+      "romaji": "haeru",
+      "meaning_id": "me-grow",
+      "meaning_en": "to grow; to spring up; to cut (teeth)"
+    },
+    {
+      "word": "生やす",
+      "reading": "はやす",
+      "romaji": "hayasu",
+      "meaning_id": "me-grow",
+      "meaning_en": "to grow; to cultivate; to wear beard"
+    }
+  ],
+  "tear off": [
+    {
+      "word": "はがす",
+      "reading": "はがす",
+      "romaji": "hagasu",
+      "meaning_id": "me-tear off",
+      "meaning_en": "to tear off; to peel off; to rip off"
+    },
+    {
+      "word": "剥ぐ",
+      "reading": "はぐ",
+      "romaji": "hagu",
+      "meaning_id": "me-tear off",
+      "meaning_en": "to tear off; to peel off; to rip off; to strip off; to skin; to flay; to disrobe; to deprive of"
+    }
+  ],
+  "measure": [
+    {
+      "word": "測る",
+      "reading": "はかる",
+      "romaji": "hakaru",
+      "meaning_id": "me-measure",
+      "meaning_en": "to measure; to weigh; to survey"
+    },
+    {
+      "word": "量る",
+      "reading": "はかる",
+      "romaji": "hakaru",
+      "meaning_id": "me-measure",
+      "meaning_en": "to measure; to weigh; to survey"
+    }
+  ],
+  "sweep": [
+    {
+      "word": "掃く",
+      "reading": "はく",
+      "romaji": "haku",
+      "meaning_id": "me-sweep",
+      "meaning_en": "to sweep; to brush; to gather up"
+    }
+  ],
+  "get between": [
+    {
+      "word": "挟まる",
+      "reading": "はさまる",
+      "romaji": "hasamaru",
+      "meaning_id": "me-get between",
+      "meaning_en": "to get between; to be caught in"
+    }
+  ],
+  "interpose": [
+    {
+      "word": "挟む",
+      "reading": "はさむ",
+      "romaji": "hasamu",
+      "meaning_id": "me-interpose",
+      "meaning_en": "to interpose; to hold between; to insert"
+    }
+  ],
+  "begin with": [
+    {
+      "word": "始めに",
+      "reading": "はじめに",
+      "romaji": "hajimeni",
+      "meaning_id": "me-begin with",
+      "meaning_en": "to begin with; first of all"
+    }
+  ],
+  "be disconnected": [
+    {
+      "word": "外れる",
+      "reading": "はずれる",
+      "romaji": "hazureru",
+      "meaning_id": "me-be disconnected",
+      "meaning_en": "to be disconnected; to get out of place; to be off; to be out (e.g. of gear)"
+    }
+  ],
+  "accost a person": [
+    {
+      "word": "話し掛ける",
+      "reading": "はなしかける",
+      "romaji": "hanashikakeru",
+      "meaning_id": "me-accost a person",
+      "meaning_en": "to accost a person; to talk (to someone)"
+    }
+  ],
+  "leave": [
+    {
+      "word": "放れる",
+      "reading": "はなれる",
+      "romaji": "hanareru",
+      "meaning_id": "me-leave",
+      "meaning_en": "to leave; to get free; to cut oneself off"
+    }
+  ],
+  "flourish": [
+    {
+      "word": "流行る",
+      "reading": "はやる",
+      "romaji": "hayaru",
+      "meaning_id": "me-flourish",
+      "meaning_en": "to flourish; to thrive; to be popular; to come into fashion"
+    }
+  ],
+  "deposit": [
+    {
+      "word": "払い込む",
+      "reading": "はらいこむ",
+      "romaji": "haraikomu",
+      "meaning_id": "me-deposit",
+      "meaning_en": "to deposit; to pay in"
+    }
+  ],
+  "repay": [
+    {
+      "word": "払い戻す",
+      "reading": "はらいもどす",
+      "romaji": "haraimodosu",
+      "meaning_id": "me-repay",
+      "meaning_en": "to repay; to pay back"
+    }
+  ],
+  "be in high spirits": [
+    {
+      "word": "張り切る",
+      "reading": "はりきる",
+      "romaji": "harikiru",
+      "meaning_id": "me-be in high spirits",
+      "meaning_en": "to be in high spirits; to be full of vigor"
+    }
+  ],
+  "repeat": [
+    {
+      "word": "引き返す",
+      "reading": "ひきかえす",
+      "romaji": "hikikaesu",
+      "meaning_id": "me-repeat",
+      "meaning_en": "to repeat; to send back; to bring back"
+    }
+  ],
+  "detain": [
+    {
+      "word": "引き止める",
+      "reading": "ひきとめる",
+      "romaji": "hikitomeru",
+      "meaning_id": "me-detain",
+      "meaning_en": "to detain; to check; to restrain"
+    }
+  ],
+  "be caught in": [
+    {
+      "word": "引っ掛かる",
+      "reading": "ひっかかる",
+      "romaji": "hikkakaru",
+      "meaning_id": "me-be caught in",
+      "meaning_en": "to be caught in; to be stuck in; to be cheated"
+    }
+  ],
+  "turn over": [
+    {
+      "word": "ひっくり返す",
+      "reading": "ひっくりかえす",
+      "romaji": "hikkurikaesu",
+      "meaning_id": "me-turn over",
+      "meaning_en": "to turn over; to overturn; to knock over; to upset; to turn inside out"
+    }
+  ],
+  "be overturned": [
+    {
+      "word": "引っ繰り返る",
+      "reading": "ひっくりかえる",
+      "romaji": "hikkurikaeru",
+      "meaning_id": "me-be overturned",
+      "meaning_en": "to be overturned; to be upset; to topple over; to be reversed"
+    }
+  ],
+  "draw back": [
+    {
+      "word": "引っ込む",
+      "reading": "ひっこむ",
+      "romaji": "hikkomu",
+      "meaning_id": "me-draw back",
+      "meaning_en": "to draw back; to sink; to cave in"
+    }
+  ],
+  "turn  on or off": [
+    {
+      "word": "捻る",
+      "reading": "ひねる",
+      "romaji": "hineru",
+      "meaning_id": "me-turn  on or off",
+      "meaning_en": "to turn (a switch) on or off; to twist; to puzzle over"
+    }
+  ],
+  "resound": [
+    {
+      "word": "響く",
+      "reading": "ひびく",
+      "romaji": "hibiku",
+      "meaning_id": "me-resound",
+      "meaning_en": "to resound"
+    }
+  ],
+  "spread": [
+    {
+      "word": "広げる",
+      "reading": "ひろげる",
+      "romaji": "hirogeru",
+      "meaning_id": "me-spread",
+      "meaning_en": "to spread; to extend; to expand; to enlarge"
+    },
+    {
+      "word": "広まる",
+      "reading": "ひろまる",
+      "romaji": "hiromaru",
+      "meaning_id": "me-spread",
+      "meaning_en": "to spread; to be propagated"
+    }
+  ],
+  "broaden": [
+    {
+      "word": "広める",
+      "reading": "ひろめる",
+      "romaji": "hiromeru",
+      "meaning_id": "me-broaden",
+      "meaning_en": "to broaden; to propagate"
+    }
+  ],
+  "increase": [
+    {
+      "word": "殖える",
+      "reading": "ふえる",
+      "romaji": "fueru",
+      "meaning_id": "me-increase",
+      "meaning_en": "to increase; to multiply"
+    },
+    {
+      "word": "増やす",
+      "reading": "ふやす",
+      "romaji": "fuyasu",
+      "meaning_id": "me-increase",
+      "meaning_en": "to increase; to add to; to augment"
+    }
+  ],
+  "deepen": [
+    {
+      "word": "深まる",
+      "reading": "ふかまる",
+      "romaji": "fukamaru",
+      "meaning_id": "me-deepen",
+      "meaning_en": "to deepen; to heighten; to intensify"
+    },
+    {
+      "word": "深める",
+      "reading": "ふかめる",
+      "romaji": "fukameru",
+      "meaning_id": "me-deepen",
+      "meaning_en": "to deepen; to heighten; to intensify"
+    }
+  ],
+  "wipe": [
+    {
+      "word": "拭く",
+      "reading": "ふく",
+      "romaji": "fuku",
+      "meaning_id": "me-wipe",
+      "meaning_en": "to wipe; to dry"
+    }
+  ],
+  "include": [
+    {
+      "word": "含める",
+      "reading": "ふくめる",
+      "romaji": "fukumeru",
+      "meaning_id": "me-include",
+      "meaning_en": "to include; to instruct; to make one understand"
+    },
+    {
+      "word": "込める",
+      "reading": "こめる",
+      "romaji": "komeru",
+      "meaning_id": "me-include",
+      "meaning_en": "to include; to put into"
+    }
+  ],
+  "swell": [
+    {
+      "word": "膨らます",
+      "reading": "ふくらます",
+      "romaji": "fukuramasu",
+      "meaning_id": "me-swell",
+      "meaning_en": "to swell; to expand; to inflate; to bulge"
+    },
+    {
+      "word": "腫れる",
+      "reading": "はれる",
+      "romaji": "hareru",
+      "meaning_id": "me-swell",
+      "meaning_en": "to swell (from inflammation); to become swollen"
+    }
+  ],
+  "expand": [
+    {
+      "word": "膨らむ",
+      "reading": "ふくらむ",
+      "romaji": "fukuramu",
+      "meaning_id": "me-expand",
+      "meaning_en": "to expand; to swell (out); to get big; to become inflated"
+    }
+  ],
+  "get late": [
+    {
+      "word": "更ける",
+      "reading": "ふける",
+      "romaji": "fukeru",
+      "meaning_id": "me-get late",
+      "meaning_en": "to get late; to advance; to wear on"
+    }
+  ],
+  "be plugged up": [
+    {
+      "word": "塞がる",
+      "reading": "ふさがる",
+      "romaji": "fusagaru",
+      "meaning_id": "me-be plugged up",
+      "meaning_en": "to be plugged up; to be shut up"
+    }
+  ],
+  "stop up": [
+    {
+      "word": "塞ぐ",
+      "reading": "ふさぐ",
+      "romaji": "fusagu",
+      "meaning_id": "me-stop up",
+      "meaning_en": "to stop up; to close up; to block (up)"
+    }
+  ],
+  "romp": [
+    {
+      "word": "ふざける",
+      "reading": "ふざける",
+      "romaji": "fuzakeru",
+      "meaning_id": "me-romp",
+      "meaning_en": "to romp; to gambol; to frolic; to joke"
+    }
+  ],
+  "knock": [
+    {
+      "word": "ぶつける",
+      "reading": "ぶつける",
+      "romaji": "butsukeru",
+      "meaning_id": "me-knock",
+      "meaning_en": "to knock; to run into; to nail on; to strike hard; to hit and attack"
+    }
+  ],
+  "behave": [
+    {
+      "word": "振舞う",
+      "reading": "ふるまう",
+      "romaji": "furumau",
+      "meaning_id": "me-behave",
+      "meaning_en": "to behave; to conduct oneself; to entertain (vt)"
+    }
+  ],
+  "be dented": [
+    {
+      "word": "凹む",
+      "reading": "へこむ",
+      "romaji": "hekomu",
+      "meaning_id": "me-be dented",
+      "meaning_en": "to be dented; to be indented; to yield to; to give; to sink; to collapse; to cave in; to be snubbed"
+    }
+  ],
+  "be shut out": [
+    {
+      "word": "隔てる",
+      "reading": "へだてる",
+      "romaji": "hedateru",
+      "meaning_id": "me-be shut out",
+      "meaning_en": "to be shut out"
+    }
+  ],
+  "let go": [
+    {
+      "word": "放る",
+      "reading": "ほうる",
+      "romaji": "houru",
+      "meaning_id": "me-let go",
+      "meaning_en": "to let go"
+    }
+  ],
+  "air": [
+    {
+      "word": "干す",
+      "reading": "ほす",
+      "romaji": "hosu",
+      "meaning_id": "me-air",
+      "meaning_en": "to air; to dry; to desiccate; to drain (off); to drink up"
+    }
+  ],
+  "unfasten": [
+    {
+      "word": "ほどく",
+      "reading": "ほどく",
+      "romaji": "hodoku",
+      "meaning_id": "me-unfasten",
+      "meaning_en": "to unfasten"
+    }
+  ],
+  "dig": [
+    {
+      "word": "掘る",
+      "reading": "ほる",
+      "romaji": "horu",
+      "meaning_id": "me-dig",
+      "meaning_en": "to dig; to excavate"
+    }
+  ],
+  "carve": [
+    {
+      "word": "彫る",
+      "reading": "ほる",
+      "romaji": "horu",
+      "meaning_id": "me-carve",
+      "meaning_en": "to carve; to engrave; to sculpture; to chisel"
+    }
+  ],
+  "wind": [
+    {
+      "word": "巻く",
+      "reading": "まく",
+      "romaji": "maku",
+      "meaning_id": "me-wind",
+      "meaning_en": "to wind; to coil; to roll"
+    }
+  ],
+  "sow": [
+    {
+      "word": "蒔く",
+      "reading": "まく",
+      "romaji": "maku",
+      "meaning_id": "me-sow",
+      "meaning_en": "to sow (seeds)"
+    }
+  ],
+  "bend": [
+    {
+      "word": "曲げる",
+      "reading": "まげる",
+      "romaji": "mageru",
+      "meaning_id": "me-bend",
+      "meaning_en": "to bend; to crook; to lean"
+    }
+  ],
+  "be mixed": [
+    {
+      "word": "交ざる",
+      "reading": "まざる",
+      "romaji": "mazaru",
+      "meaning_id": "me-be mixed",
+      "meaning_en": "to be mixed; to be blended with; to associate with; to mingle with; to join"
+    },
+    {
+      "word": "混ざる",
+      "reading": "まざる",
+      "romaji": "mazaru",
+      "meaning_id": "me-be mixed",
+      "meaning_en": "to be mixed; to be blended with; to associate with; to mingle with; to join"
+    },
+    {
+      "word": "交じる",
+      "reading": "まじる",
+      "romaji": "majiru",
+      "meaning_id": "me-be mixed",
+      "meaning_en": "to be mixed; to be blended with; to associate with"
+    },
+    {
+      "word": "混じる",
+      "reading": "まじる",
+      "romaji": "majiru",
+      "meaning_id": "me-be mixed",
+      "meaning_en": "to be mixed; to be blended with; to associate with"
+    },
+    {
+      "word": "交ぜる",
+      "reading": "まぜる",
+      "romaji": "mazeru",
+      "meaning_id": "me-be mixed",
+      "meaning_en": "to be mixed; to be blended with"
+    }
+  ],
+  "mix": [
+    {
+      "word": "混ぜる",
+      "reading": "まぜる",
+      "romaji": "mazeru",
+      "meaning_id": "me-mix",
+      "meaning_en": "to mix; to stir"
+    },
+    {
+      "word": "取り混ぜる",
+      "reading": "とりまぜる",
+      "romaji": "torimazeru",
+      "meaning_id": "me-mix",
+      "meaning_en": "to mix; to put together"
+    },
+    {
+      "word": "交える",
+      "reading": "まじえる",
+      "romaji": "majieru",
+      "meaning_id": "me-mix",
+      "meaning_en": "to mix; to converse with; to cross (swords)"
+    }
+  ],
+  "straddle": [
+    {
+      "word": "またぐ",
+      "reading": "またぐ",
+      "romaji": "matagu",
+      "meaning_id": "me-straddle",
+      "meaning_en": "to straddle"
+    }
+  ],
+  "rendezvous": [
+    {
+      "word": "待ち合わせる",
+      "reading": "まちあわせる",
+      "romaji": "machiawaseru",
+      "meaning_id": "me-rendezvous",
+      "meaning_en": "to rendezvous; to meet at a prearranged place and time"
+    }
+  ],
+  "deify": [
+    {
+      "word": "祭る",
+      "reading": "まつる",
+      "romaji": "matsuru",
+      "meaning_id": "me-deify",
+      "meaning_en": "to deify; to enshrine"
+    }
+  ],
+  "be collected": [
+    {
+      "word": "纏まる",
+      "reading": "まとまる",
+      "romaji": "matomaru",
+      "meaning_id": "me-be collected",
+      "meaning_en": "to be collected; to be settled; to be in order"
+    }
+  ],
+  "mimic": [
+    {
+      "word": "真似る",
+      "reading": "まねる",
+      "romaji": "maneru",
+      "meaning_id": "me-mimic",
+      "meaning_en": "to mimic; to imitate"
+    }
+  ],
+  "see off": [
+    {
+      "word": "見送る",
+      "reading": "みおくる",
+      "romaji": "miokuru",
+      "meaning_id": "me-see off",
+      "meaning_en": "to see off; to farewell; to escort; to let pass"
+    }
+  ],
+  "overlook": [
+    {
+      "word": "見下ろす",
+      "reading": "みおろす",
+      "romaji": "miorosu",
+      "meaning_id": "me-overlook",
+      "meaning_en": "to overlook; to command a view of; to look down on something"
+    },
+    {
+      "word": "見落とす",
+      "reading": "みおとす",
+      "romaji": "miotosu",
+      "meaning_id": "me-overlook",
+      "meaning_en": "to overlook; to fail to notice"
+    }
+  ],
+  "become used to seeing": [
+    {
+      "word": "見慣れる",
+      "reading": "みなれる",
+      "romaji": "minareru",
+      "meaning_id": "me-become used to seeing",
+      "meaning_en": "to become used to seeing; to be familiar with"
+    }
+  ],
+  "ask after": [
+    {
+      "word": "見舞う",
+      "reading": "みまう",
+      "romaji": "mimau",
+      "meaning_id": "me-ask after",
+      "meaning_en": "to ask after (health); to visit"
+    }
+  ],
+  "examine": [
+    {
+      "word": "診る",
+      "reading": "みる",
+      "romaji": "miru",
+      "meaning_id": "me-examine",
+      "meaning_en": "to examine (medical)"
+    }
+  ],
+  "peel": [
+    {
+      "word": "剥く",
+      "reading": "むく",
+      "romaji": "muku",
+      "meaning_id": "me-peel",
+      "meaning_en": "to peel; to skin; to pare; to hull"
+    }
+  ],
+  "steam": [
+    {
+      "word": "蒸す",
+      "reading": "むす",
+      "romaji": "musu",
+      "meaning_id": "me-steam",
+      "meaning_en": "to steam; to poultice; to be sultry"
+    }
+  ],
+  "command": [
+    {
+      "word": "命ずる",
+      "reading": "めいずる",
+      "romaji": "meizuru",
+      "meaning_id": "me-command",
+      "meaning_en": "to command; to appoint"
+    }
+  ],
+  "be blessed with": [
+    {
+      "word": "恵まれる",
+      "reading": "めぐまれる",
+      "romaji": "megumareru",
+      "meaning_id": "me-be blessed with",
+      "meaning_en": "to be blessed with; to be rich in"
+    }
+  ],
+  "be conspicuous": [
+    {
+      "word": "目立つ",
+      "reading": "めだつ",
+      "romaji": "medatsu",
+      "meaning_id": "me-be conspicuous",
+      "meaning_en": "to be conspicuous; to stand out"
+    }
+  ],
+  "be profitable": [
+    {
+      "word": "儲かる",
+      "reading": "もうかる",
+      "romaji": "moukaru",
+      "meaning_id": "me-be profitable",
+      "meaning_en": "to be profitable; to yield a profit"
+    }
+  ],
+  "get": [
+    {
+      "word": "儲ける",
+      "reading": "もうける",
+      "romaji": "moukeru",
+      "meaning_id": "me-get",
+      "meaning_en": "to get; to earn; to gain; to have (bear, beget) a child"
+    }
+  ],
+  "dive": [
+    {
+      "word": "潜る",
+      "reading": "もぐる",
+      "romaji": "moguru",
+      "meaning_id": "me-dive",
+      "meaning_en": "to dive (into or under water); to go underground; to hide oneself; to get under (e.g. a desk)"
+    }
+  ],
+  "lean against": [
+    {
+      "word": "もたれる",
+      "reading": "もたれる",
+      "romaji": "motareru",
+      "meaning_id": "me-lean against",
+      "meaning_en": "to lean against; to lean on; to recline on; to lie heavy (on the stomach)"
+    },
+    {
+      "word": "寄り掛かる",
+      "reading": "よりかかる",
+      "romaji": "yorikakaru",
+      "meaning_id": "me-lean against",
+      "meaning_en": "to lean against; to recline on; to lean on; to rely on"
+    }
+  ],
+  "translate": [
+    {
+      "word": "訳す",
+      "reading": "やくす",
+      "romaji": "yakusu",
+      "meaning_id": "me-translate",
+      "meaning_en": "to translate"
+    }
+  ],
+  "get torn": [
+    {
+      "word": "破れる",
+      "reading": "やぶれる",
+      "romaji": "yabureru",
+      "meaning_id": "me-get torn",
+      "meaning_en": "to get torn; to wear out"
+    }
+  ],
+  "disgrace": [
+    {
+      "word": "汚す",
+      "reading": "よごす",
+      "romaji": "yogosu",
+      "meaning_id": "me-disgrace",
+      "meaning_en": "to disgrace; to dishonour; to pollute; to contaminate; to soil; to make dirty; to stain"
+    },
+    {
+      "word": "汚す",
+      "reading": "けがす",
+      "romaji": "kegasu",
+      "meaning_id": "me-disgrace",
+      "meaning_en": "to disgrace; to dishonour"
+    }
+  ],
+  "call out to": [
+    {
+      "word": "呼び掛ける",
+      "reading": "よびかける",
+      "romaji": "yobikakeru",
+      "meaning_id": "me-call out to",
+      "meaning_en": "to call out to; to accost; to address (crowd); to appeal"
+    }
+  ],
+  "summon": [
+    {
+      "word": "呼び出す",
+      "reading": "よびだす",
+      "romaji": "yobidasu",
+      "meaning_id": "me-summon",
+      "meaning_en": "to summon; to call (e.g. phone)"
+    }
+  ],
+  "be resurrected": [
+    {
+      "word": "蘇る",
+      "reading": "よみがえる",
+      "romaji": "yomigaeru",
+      "meaning_id": "me-be resurrected",
+      "meaning_en": "to be resurrected; to be revived; to be resuscitated; to be rehabilitated"
+    }
+  ],
+  "come from": [
+    {
+      "word": "よる",
+      "reading": "よる",
+      "romaji": "yoru",
+      "meaning_id": "me-come from",
+      "meaning_en": "to come from"
+    }
+  ],
+  "abbreviate": [
+    {
+      "word": "略す",
+      "reading": "りゃくす",
+      "romaji": "ryakusu",
+      "meaning_id": "me-abbreviate",
+      "meaning_en": "to abbreviate"
+    }
+  ],
+  "argue": [
+    {
+      "word": "論ずる",
+      "reading": "ろんずる",
+      "romaji": "ronzuru",
+      "meaning_id": "me-argue",
+      "meaning_en": "to argue; to discuss; to debate"
+    }
+  ],
+  "branch off": [
+    {
+      "word": "分かれる",
+      "reading": "わかれる",
+      "romaji": "wakareru",
+      "meaning_id": "me-branch off",
+      "meaning_en": "to branch off; to diverge from; to fork; to split; to dispense; to scatter; to divide into"
+    }
+  ],
+  "look up": [
+    {
+      "word": "仰ぐ",
+      "reading": "あおぐ",
+      "romaji": "aogu",
+      "meaning_id": "me-look up",
+      "meaning_en": "to look up (to); to respect; to depend on; to ask for; to seek; to revere; to drink; to take"
+    }
+  ],
+  "become red": [
+    {
+      "word": "赤らむ",
+      "reading": "あからむ",
+      "romaji": "akaramu",
+      "meaning_id": "me-become red",
+      "meaning_en": "to become red; to redden; to blush"
+    }
+  ],
+  "deceive": [
+    {
+      "word": "欺く",
+      "reading": "あざむく",
+      "romaji": "azamuku",
+      "meaning_id": "me-deceive",
+      "meaning_en": "to deceive"
+    },
+    {
+      "word": "誤魔化す",
+      "reading": "ごまかす",
+      "romaji": "gomakasu",
+      "meaning_id": "me-deceive",
+      "meaning_en": "to deceive; to falsify; to misrepresent"
+    }
+  ],
+  "sneer at": [
+    {
+      "word": "あざ笑う",
+      "reading": "あざわらう",
+      "romaji": "azawarau",
+      "meaning_id": "me-sneer at",
+      "meaning_en": "to sneer at; to ridicule"
+    }
+  ],
+  "be in a hurry": [
+    {
+      "word": "焦る",
+      "reading": "あせる",
+      "romaji": "aseru",
+      "meaning_id": "me-be in a hurry",
+      "meaning_en": "to be in a hurry; to be impatient"
+    }
+  ],
+  "be worth": [
+    {
+      "word": "値する",
+      "reading": "あたいする",
+      "romaji": "ataisuru",
+      "meaning_id": "me-be worth",
+      "meaning_en": "to be worth; to deserve; to merit"
+    }
+  ],
+  "give an order": [
+    {
+      "word": "誂える",
+      "reading": "あつらえる",
+      "romaji": "atsuraeru",
+      "meaning_id": "me-give an order",
+      "meaning_en": "to give an order; to place an order"
+    }
+  ],
+  "address": [
+    {
+      "word": "宛てる",
+      "reading": "あてる",
+      "romaji": "ateru",
+      "meaning_id": "me-address",
+      "meaning_en": "to address"
+    }
+  ],
+  "behave like a spoiled child": [
+    {
+      "word": "甘える",
+      "reading": "あまえる",
+      "romaji": "amaeru",
+      "meaning_id": "me-behave like a spoiled child",
+      "meaning_en": "to behave like a spoiled child; to fawn on"
+    }
+  ],
+  "manipulate": [
+    {
+      "word": "操る",
+      "reading": "あやつる",
+      "romaji": "ayatsuru",
+      "meaning_id": "me-manipulate",
+      "meaning_en": "to manipulate; to operate; to pull strings"
+    }
+  ],
+  "fear": [
+    {
+      "word": "危ぶむ",
+      "reading": "あやぶむ",
+      "romaji": "ayabumu",
+      "meaning_id": "me-fear",
+      "meaning_en": "to fear; to have misgivings; to be doubtful; to mistrust"
+    }
+  ],
+  "make a mistake": [
+    {
+      "word": "誤る",
+      "reading": "あやまる",
+      "romaji": "ayamaru",
+      "meaning_id": "me-make a mistake",
+      "meaning_en": "to make a mistake"
+    },
+    {
+      "word": "間違う",
+      "reading": "まちがう",
+      "romaji": "machigau",
+      "meaning_id": "me-make a mistake",
+      "meaning_en": "to make a mistake; to be incorrect; to be mistaken"
+    }
+  ],
+  "lay waste": [
+    {
+      "word": "荒らす",
+      "reading": "あらす",
+      "romaji": "arasu",
+      "meaning_id": "me-lay waste",
+      "meaning_en": "to lay waste; to devastate; to damage; to invade; to break into"
+    }
+  ],
+  "be renewed": [
+    {
+      "word": "改まる",
+      "reading": "あらたまる",
+      "romaji": "aratamaru",
+      "meaning_id": "me-be renewed",
+      "meaning_en": "to be renewed"
+    }
+  ],
+  "join together": [
+    {
+      "word": "合わす",
+      "reading": "あわす",
+      "romaji": "awasu",
+      "meaning_id": "me-join together",
+      "meaning_en": "to join together; to face; to unite; to be opposite; to combine; to connect; to add up; to mix; to match"
+    },
+    {
+      "word": "組み合わせる",
+      "reading": "くみあわせる",
+      "romaji": "kumiawaseru",
+      "meaning_id": "me-join together",
+      "meaning_en": "to join together; to combine; to join up"
+    }
+  ],
+  "be anxious": [
+    {
+      "word": "案じる",
+      "reading": "あんじる",
+      "romaji": "anjiru",
+      "meaning_id": "me-be anxious",
+      "meaning_en": "to be anxious; to ponder"
+    }
+  ],
+  "revive": [
+    {
+      "word": "生かす",
+      "reading": "いかす",
+      "romaji": "ikasu",
+      "meaning_id": "me-revive",
+      "meaning_en": "to revive; to resuscitate; to make use of"
+    }
+  ],
+  "get angry": [
+    {
+      "word": "怒る",
+      "reading": "いかる",
+      "romaji": "ikaru",
+      "meaning_id": "me-get angry",
+      "meaning_en": "to get angry; to be angry"
+    }
+  ],
+  "be enthusiastic about": [
+    {
+      "word": "意気込む",
+      "reading": "いきごむ",
+      "romaji": "ikigomu",
+      "meaning_id": "me-be enthusiastic about",
+      "meaning_en": "to be enthusiastic about"
+    }
+  ],
+  "arrange": [
+    {
+      "word": "活ける",
+      "reading": "いける",
+      "romaji": "ikeru",
+      "meaning_id": "me-arrange",
+      "meaning_en": "to arrange (flowers)"
+    }
+  ],
+  "hurt": [
+    {
+      "word": "痛む",
+      "reading": "いたむ",
+      "romaji": "itamu",
+      "meaning_id": "me-hurt",
+      "meaning_en": "to hurt; to feel a pain; to be injured"
+    },
+    {
+      "word": "痛める",
+      "reading": "いためる",
+      "romaji": "itameru",
+      "meaning_id": "me-hurt",
+      "meaning_en": "to hurt; to injure; to cause pain; to worry; to bother; to afflict; to be grieved over"
+    }
+  ],
+  "stir-fry": [
+    {
+      "word": "炒める",
+      "reading": "いためる",
+      "romaji": "itameru",
+      "meaning_id": "me-stir-fry",
+      "meaning_en": "to stir-fry"
+    }
+  ],
+  "pity": [
+    {
+      "word": "労る",
+      "reading": "いたわる",
+      "romaji": "itawaru",
+      "meaning_id": "me-pity",
+      "meaning_en": "to pity; to sympathize with; to console; to care for; to be kind to"
+    }
+  ],
+  "carry on": [
+    {
+      "word": "営む",
+      "reading": "いとなむ",
+      "romaji": "itonamu",
+      "meaning_id": "me-carry on",
+      "meaning_en": "to carry on (e.g. in ceremony); to run a business"
+    }
+  ],
+  "challenge": [
+    {
+      "word": "挑む",
+      "reading": "いどむ",
+      "romaji": "idomu",
+      "meaning_id": "me-challenge",
+      "meaning_en": "to challenge; to contend for; to make love to"
+    },
+    {
+      "word": "呼び止める",
+      "reading": "よびとめる",
+      "romaji": "yobitomeru",
+      "meaning_id": "me-challenge",
+      "meaning_en": "to challenge; to call somebody to halt"
+    }
+  ],
+  "get in": [
+    {
+      "word": "入る",
+      "reading": "いる",
+      "romaji": "iru",
+      "meaning_id": "me-get in",
+      "meaning_en": "to get in; to go in; to come in; to flow into; to set; to set in"
+    }
+  ],
+  "accept": [
+    {
+      "word": "受け入れる",
+      "reading": "うけいれる",
+      "romaji": "ukeireru",
+      "meaning_id": "me-accept",
+      "meaning_en": "to accept; to receive"
+    }
+  ],
+  "inherit": [
+    {
+      "word": "受け継ぐ",
+      "reading": "うけつぐ",
+      "romaji": "uketsugu",
+      "meaning_id": "me-inherit",
+      "meaning_en": "to inherit; to succeed; to take over"
+    }
+  ],
+  "be accepted": [
+    {
+      "word": "受け付ける",
+      "reading": "うけつける",
+      "romaji": "uketsukeru",
+      "meaning_id": "me-be accepted",
+      "meaning_en": "to be accepted; to receive (an application)"
+    }
+  ],
+  "catch": [
+    {
+      "word": "受け止める",
+      "reading": "うけとめる",
+      "romaji": "uketomeru",
+      "meaning_id": "me-catch",
+      "meaning_en": "to catch; to stop the blow; to react to; to take"
+    }
+  ],
+  "be buried": [
+    {
+      "word": "埋まる",
+      "reading": "うずまる",
+      "romaji": "uzumaru",
+      "meaning_id": "me-be buried",
+      "meaning_en": "to be buried; to be surrounded; to overflow; to be filled"
+    }
+  ],
+  "knock together": [
+    {
+      "word": "打ち合わせる",
+      "reading": "うちあわせる",
+      "romaji": "uchiawaseru",
+      "meaning_id": "me-knock together",
+      "meaning_en": "to knock together; to arrange"
+    }
+  ],
+  "give birth": [
+    {
+      "word": "産む",
+      "reading": "うむ",
+      "romaji": "umu",
+      "meaning_id": "me-give birth",
+      "meaning_en": "to give birth; to deliver; to produce"
+    }
+  ],
+  "put on sale": [
+    {
+      "word": "売り出す",
+      "reading": "うりだす",
+      "romaji": "uridasu",
+      "meaning_id": "me-put on sale",
+      "meaning_en": "to put on sale; to market; to become popular"
+    }
+  ],
+  "be moist": [
+    {
+      "word": "潤う",
+      "reading": "うるおう",
+      "romaji": "uruou",
+      "meaning_id": "me-be moist",
+      "meaning_en": "to be moist; to be damp; to get wet; to profit by; to be watered; to receive benefits; to favor; to charm"
+    }
+  ],
+  "be planted": [
+    {
+      "word": "植わる",
+      "reading": "うわる",
+      "romaji": "uwaru",
+      "meaning_id": "me-be planted",
+      "meaning_en": "to be planted"
+    }
+  ],
+  "perform": [
+    {
+      "word": "演じる",
+      "reading": "えんじる",
+      "romaji": "enjiru",
+      "meaning_id": "me-perform",
+      "meaning_en": "to perform (a play); to play (a part); to act (a part); to commit (a blunder)"
+    },
+    {
+      "word": "演ずる",
+      "reading": "えんずる",
+      "romaji": "enzuru",
+      "meaning_id": "me-perform",
+      "meaning_en": "to perform; to play"
+    }
+  ],
+  "herd": [
+    {
+      "word": "追い込む",
+      "reading": "おいこむ",
+      "romaji": "oikomu",
+      "meaning_id": "me-herd",
+      "meaning_en": "to herd; to corner; to drive"
+    }
+  ],
+  "expel": [
+    {
+      "word": "追い出す",
+      "reading": "おいだす",
+      "romaji": "oidasu",
+      "meaning_id": "me-expel",
+      "meaning_en": "to expel; to drive out"
+    }
+  ],
+  "age": [
+    {
+      "word": "老いる",
+      "reading": "おいる",
+      "romaji": "oiru",
+      "meaning_id": "me-age",
+      "meaning_en": "to age; to grow old"
+    },
+    {
+      "word": "老ける",
+      "reading": "ふける",
+      "romaji": "fukeru",
+      "meaning_id": "me-age",
+      "meaning_en": "to age"
+    }
+  ],
+  "invade": [
+    {
+      "word": "侵す",
+      "reading": "おかす",
+      "romaji": "okasu",
+      "meaning_id": "me-invade",
+      "meaning_en": "to invade; to raid; to trespass; to violate; to intrude on"
+    }
+  ],
+  "commit": [
+    {
+      "word": "犯す",
+      "reading": "おかす",
+      "romaji": "okasu",
+      "meaning_id": "me-commit",
+      "meaning_en": "to commit; to perpetrate; to violate; to rape"
+    }
+  ],
+  "retard": [
+    {
+      "word": "遅らす",
+      "reading": "おくらす",
+      "romaji": "okurasu",
+      "meaning_id": "me-retard",
+      "meaning_en": "to retard; to delay"
+    }
+  ],
+  "be at peace": [
+    {
+      "word": "治まる",
+      "reading": "おさまる",
+      "romaji": "osamaru",
+      "meaning_id": "me-be at peace",
+      "meaning_en": "to be at peace; to clamp down; to lessen (storm, terror, anger)"
+    }
+  ],
+  "be obtained": [
+    {
+      "word": "収まる",
+      "reading": "おさまる",
+      "romaji": "osamaru",
+      "meaning_id": "me-be obtained",
+      "meaning_en": "to be obtained; to end; to settle into; to fit into; to be settled; to be paid; to be delivered"
+    },
+    {
+      "word": "納まる",
+      "reading": "おさまる",
+      "romaji": "osamaru",
+      "meaning_id": "me-be obtained",
+      "meaning_en": "to be obtained; to end; to settle into; to fit into; to be settled; to be paid; to be delivered"
+    }
+  ],
+  "push into": [
+    {
+      "word": "押し込む",
+      "reading": "おしこむ",
+      "romaji": "oshikomu",
+      "meaning_id": "me-push into",
+      "meaning_en": "to push into; to crowd into"
+    }
+  ],
+  "be frugal": [
+    {
+      "word": "惜しむ",
+      "reading": "おしむ",
+      "romaji": "oshimu",
+      "meaning_id": "me-be frugal",
+      "meaning_en": "to be frugal; to value; to regret"
+    }
+  ],
+  "push aside": [
+    {
+      "word": "押し寄せる",
+      "reading": "おしよせる",
+      "romaji": "oshiyoseru",
+      "meaning_id": "me-push aside",
+      "meaning_en": "to push aside; to advance on"
+    }
+  ],
+  "be filled with awe": [
+    {
+      "word": "恐れ入る",
+      "reading": "おそれいる",
+      "romaji": "osoreiru",
+      "meaning_id": "me-be filled with awe",
+      "meaning_en": "to be filled with awe; to feel small; to be amazed; to be surprised; to be disconcerted; to be sorry"
+    }
+  ],
+  "stir up": [
+    {
+      "word": "煽てる",
+      "reading": "おだてる",
+      "romaji": "odateru",
+      "meaning_id": "me-stir up",
+      "meaning_en": "to stir up; to instigate; to flatter"
+    },
+    {
+      "word": "掻き回す",
+      "reading": "かきまわす",
+      "romaji": "kakimawasu",
+      "meaning_id": "me-stir up",
+      "meaning_en": "to stir up; to churn; to ransack; to disturb"
+    }
+  ],
+  "fall into": [
+    {
+      "word": "落ち込む",
+      "reading": "おちこむ",
+      "romaji": "ochikomu",
+      "meaning_id": "me-fall into",
+      "meaning_en": "to fall into; to feel down (sad)"
+    }
+  ],
+  "become weak": [
+    {
+      "word": "衰える",
+      "reading": "おとろえる",
+      "romaji": "otoroeru",
+      "meaning_id": "me-become weak",
+      "meaning_en": "to become weak; to decline; to wear; to abate; to decay; to wither; to waste away"
+    }
+  ],
+  "become frightened": [
+    {
+      "word": "怯える",
+      "reading": "おびえる",
+      "romaji": "obieru",
+      "meaning_id": "me-become frightened",
+      "meaning_en": "to become frightened; to have a nightmare"
+    }
+  ],
+  "respect": [
+    {
+      "word": "重んじる",
+      "reading": "おもんじる",
+      "romaji": "omonjiru",
+      "meaning_id": "me-respect",
+      "meaning_en": "to respect; to honor; to esteem; to prize"
+    }
+  ],
+  "honor": [
+    {
+      "word": "重んずる",
+      "reading": "おもんずる",
+      "romaji": "omonzuru",
+      "meaning_id": "me-honor",
+      "meaning_en": "to honor; to respect; to esteem; to prize"
+    }
+  ],
+  "turn up": [
+    {
+      "word": "折り返す",
+      "reading": "おりかえす",
+      "romaji": "orikaesu",
+      "meaning_id": "me-turn up",
+      "meaning_en": "to turn up; to fold back"
+    }
+  ],
+  "weave": [
+    {
+      "word": "織る",
+      "reading": "おる",
+      "romaji": "oru",
+      "meaning_id": "me-weave",
+      "meaning_en": "to weave"
+    }
+  ],
+  "injure": [
+    {
+      "word": "害する",
+      "reading": "がいする",
+      "romaji": "gaisuru",
+      "meaning_id": "me-injure",
+      "meaning_en": "to injure; to damage; to harm; to kill; to hinder"
+    }
+  ],
+  "look back": [
+    {
+      "word": "顧みる",
+      "reading": "かえりみる",
+      "romaji": "kaerimiru",
+      "meaning_id": "me-look back",
+      "meaning_en": "to look back; to turn around; to review"
+    }
+  ],
+  "reflect": [
+    {
+      "word": "省みる",
+      "reading": "かえりみる",
+      "romaji": "kaerimiru",
+      "meaning_id": "me-reflect",
+      "meaning_en": "to reflect"
+    },
+    {
+      "word": "照り返す",
+      "reading": "てりかえす",
+      "romaji": "terikaesu",
+      "meaning_id": "me-reflect",
+      "meaning_en": "to reflect; to throw back light"
+    }
+  ],
+  "publish": [
+    {
+      "word": "掲げる",
+      "reading": "かかげる",
+      "romaji": "kakageru",
+      "meaning_id": "me-publish",
+      "meaning_en": "to publish; to print; to carry (an article); to put up; to hang out; to hoist; to fly (a sail)"
+    }
+  ],
+  "write down": [
+    {
+      "word": "書き取る",
+      "reading": "かきとる",
+      "romaji": "kakitoru",
+      "meaning_id": "me-write down",
+      "meaning_en": "to write down; to take dictation; to take notes"
+    }
+  ],
+  "lack": [
+    {
+      "word": "欠く",
+      "reading": "かく",
+      "romaji": "kaku",
+      "meaning_id": "me-lack",
+      "meaning_en": "to lack; to break; to crack; to chip"
+    }
+  ],
+  "wager": [
+    {
+      "word": "賭ける",
+      "reading": "かける",
+      "romaji": "kakeru",
+      "meaning_id": "me-wager",
+      "meaning_en": "to wager; to bet; to risk; to stake; to gamble"
+    }
+  ],
+  "be bulky": [
+    {
+      "word": "嵩張る",
+      "reading": "かさばる",
+      "romaji": "kasabaru",
+      "meaning_id": "me-be bulky",
+      "meaning_en": "to be bulky; to be unwieldy; to grow voluminous"
+    }
+  ],
+  "grow hazy": [
+    {
+      "word": "霞む",
+      "reading": "かすむ",
+      "romaji": "kasumu",
+      "meaning_id": "me-grow hazy",
+      "meaning_en": "to grow hazy; to be misty"
+    }
+  ],
+  "change into": [
+    {
+      "word": "化する",
+      "reading": "かする",
+      "romaji": "kasuru",
+      "meaning_id": "me-change into",
+      "meaning_en": "to change into; to convert into; to transform; to be reduced; to influence; to improve (someone)"
+    }
+  ],
+  "touch lightly": [
+    {
+      "word": "擦る",
+      "reading": "かする",
+      "romaji": "kasuru",
+      "meaning_id": "me-touch lightly",
+      "meaning_en": "to touch lightly; to take a percentage (from)"
+    }
+  ],
+  "incline": [
+    {
+      "word": "傾ける",
+      "reading": "かたむける",
+      "romaji": "katamukeru",
+      "meaning_id": "me-incline",
+      "meaning_en": "to incline; to list; to bend; to lean; to tip; to tilt; to slant; to concentrate on; to ruin (a country)"
+    }
+  ],
+  "come true": [
+    {
+      "word": "叶う",
+      "reading": "かなう",
+      "romaji": "kanau",
+      "meaning_id": "me-come true",
+      "meaning_en": "to come true (wish)"
+    }
+  ],
+  "grant": [
+    {
+      "word": "叶える",
+      "reading": "かなえる",
+      "romaji": "kanaeru",
+      "meaning_id": "me-grant",
+      "meaning_en": "to grant (request, wish)"
+    },
+    {
+      "word": "授ける",
+      "reading": "さずける",
+      "romaji": "sazukeru",
+      "meaning_id": "me-grant",
+      "meaning_en": "to grant; to award; to teach"
+    },
+    {
+      "word": "賜る",
+      "reading": "たまわる",
+      "romaji": "tamawaru",
+      "meaning_id": "me-grant",
+      "meaning_en": "to grant; to bestow"
+    }
+  ],
+  "react to": [
+    {
+      "word": "かぶれる",
+      "reading": "かぶれる",
+      "romaji": "kabureru",
+      "meaning_id": "me-react to",
+      "meaning_en": "to react to; to be influenced by; to go overboard for"
+    }
+  ],
+  "set up": [
+    {
+      "word": "構える",
+      "reading": "かまえる",
+      "romaji": "kamaeru",
+      "meaning_id": "me-set up",
+      "meaning_en": "to set up"
+    }
+  ],
+  "bite off": [
+    {
+      "word": "噛み切る",
+      "reading": "かみきる",
+      "romaji": "kamikiru",
+      "meaning_id": "me-bite off",
+      "meaning_en": "to bite off; to gnaw through"
+    }
+  ],
+  "entangle": [
+    {
+      "word": "絡む",
+      "reading": "からむ",
+      "romaji": "karamu",
+      "meaning_id": "me-entangle",
+      "meaning_en": "to entangle; to entwine"
+    }
+  ],
+  "dry up": [
+    {
+      "word": "涸れる",
+      "reading": "かれる",
+      "romaji": "kareru",
+      "meaning_id": "me-dry up",
+      "meaning_en": "to dry up; to run out"
+    }
+  ],
+  "dress up": [
+    {
+      "word": "着飾る",
+      "reading": "きかざる",
+      "romaji": "kikazaru",
+      "meaning_id": "me-dress up",
+      "meaning_en": "to dress up"
+    }
+  ],
+  "jar": [
+    {
+      "word": "軋む",
+      "reading": "きしむ",
+      "romaji": "kishimu",
+      "meaning_id": "me-jar",
+      "meaning_en": "to jar; to creak; to grate"
+    }
+  ],
+  "be hurt": [
+    {
+      "word": "傷付く",
+      "reading": "きずつく",
+      "romaji": "kizutsuku",
+      "meaning_id": "me-be hurt",
+      "meaning_en": "to be hurt; to be wounded; to get injured"
+    }
+  ],
+  "forge": [
+    {
+      "word": "鍛える",
+      "reading": "きたえる",
+      "romaji": "kitaeru",
+      "meaning_id": "me-forge",
+      "meaning_en": "to forge; to drill; to temper; to train; to discipline"
+    }
+  ],
+  "amuse oneself": [
+    {
+      "word": "興じる",
+      "reading": "きょうじる",
+      "romaji": "kyoujiru",
+      "meaning_id": "me-amuse oneself",
+      "meaning_en": "to amuse oneself; to make merry"
+    }
+  ],
+  "prohibit": [
+    {
+      "word": "禁じる",
+      "reading": "きんじる",
+      "romaji": "kinjiru",
+      "meaning_id": "me-prohibit",
+      "meaning_en": "to prohibit"
+    }
+  ],
+  "forbid": [
+    {
+      "word": "禁ずる",
+      "reading": "きんずる",
+      "romaji": "kinzuru",
+      "meaning_id": "me-forbid",
+      "meaning_en": "to forbid; to suppress"
+    }
+  ],
+  "cross each other": [
+    {
+      "word": "食い違う",
+      "reading": "くいちがう",
+      "romaji": "kuichigau",
+      "meaning_id": "me-cross each other",
+      "meaning_en": "to cross each other; to run counter to; to differ; to clash; to go awry"
+    }
+  ],
+  "pass through": [
+    {
+      "word": "潜る",
+      "reading": "くぐる",
+      "romaji": "kuguru",
+      "meaning_id": "me-pass through",
+      "meaning_en": "to pass through; to go under; to slip through; to evade"
+    }
+  ],
+  "hum something": [
+    {
+      "word": "口ずさむ",
+      "reading": "くちずさむ",
+      "romaji": "kuchizusamu",
+      "meaning_id": "me-hum something",
+      "meaning_en": "to hum something; to sing to oneself"
+    }
+  ],
+  "rot": [
+    {
+      "word": "朽ちる",
+      "reading": "くちる",
+      "romaji": "kuchiru",
+      "meaning_id": "me-rot",
+      "meaning_en": "to rot"
+    }
+  ],
+  "torment": [
+    {
+      "word": "苦しめる",
+      "reading": "くるしめる",
+      "romaji": "kurushimeru",
+      "meaning_id": "me-torment",
+      "meaning_en": "to torment; to harass; to inflict pain"
+    }
+  ],
+  "kick away": [
+    {
+      "word": "蹴飛ばす",
+      "reading": "けとばす",
+      "romaji": "ketobasu",
+      "meaning_id": "me-kick away",
+      "meaning_en": "to kick away; to kick off; to kick (someone); to refuse; to reject"
+    }
+  ],
+  "speak ill of": [
+    {
+      "word": "貶す",
+      "reading": "けなす",
+      "romaji": "kenasu",
+      "meaning_id": "me-speak ill of",
+      "meaning_en": "to speak ill of"
+    },
+    {
+      "word": "罵る",
+      "reading": "ののしる",
+      "romaji": "nonoshiru",
+      "meaning_id": "me-speak ill of",
+      "meaning_en": "to speak ill of; to abuse"
+    }
+  ],
+  "smoke": [
+    {
+      "word": "煙る",
+      "reading": "けむる",
+      "romaji": "kemuru",
+      "meaning_id": "me-smoke",
+      "meaning_en": "to smoke (e.g. fire)"
+    }
+  ],
+  "fall in love with": [
+    {
+      "word": "恋する",
+      "reading": "こいする",
+      "romaji": "koisuru",
+      "meaning_id": "me-fall in love with",
+      "meaning_en": "to fall in love with; to love"
+    }
+  ],
+  "row": [
+    {
+      "word": "漕ぐ",
+      "reading": "こぐ",
+      "romaji": "kogu",
+      "meaning_id": "me-row",
+      "meaning_en": "to row; to scull; to pedal"
+    }
+  ],
+  "congeal": [
+    {
+      "word": "凝る",
+      "reading": "こごる",
+      "romaji": "kogoru",
+      "meaning_id": "me-congeal",
+      "meaning_en": "to congeal; to freeze"
+    }
+  ],
+  "bear in mind": [
+    {
+      "word": "心掛ける",
+      "reading": "こころがける",
+      "romaji": "kokorogakeru",
+      "meaning_id": "me-bear in mind",
+      "meaning_en": "to bear in mind; to aim to do"
+    }
+  ],
+  "try": [
+    {
+      "word": "試みる",
+      "reading": "こころみる",
+      "romaji": "kokoromiru",
+      "meaning_id": "me-try",
+      "meaning_en": "to try; to test"
+    }
+  ],
+  "get complicated": [
+    {
+      "word": "拗れる",
+      "reading": "こじれる",
+      "romaji": "kojireru",
+      "meaning_id": "me-get complicated",
+      "meaning_en": "to get complicated; to grow worse"
+    }
+  ],
+  "fuss over": [
+    {
+      "word": "こだわる",
+      "reading": "こだわる",
+      "romaji": "kodawaru",
+      "meaning_id": "me-fuss over",
+      "meaning_en": "to fuss over; to be particular about; to be concerned about"
+    }
+  ],
+  "be crowded": [
+    {
+      "word": "混む",
+      "reading": "こむ",
+      "romaji": "komu",
+      "meaning_id": "me-be crowded",
+      "meaning_en": "to be crowded"
+    }
+  ],
+  "seclude oneself": [
+    {
+      "word": "こもる",
+      "reading": "こもる",
+      "romaji": "komoru",
+      "meaning_id": "me-seclude oneself",
+      "meaning_en": "to seclude oneself; to be confined in; to be implied; to be stuffy"
+    }
+  ],
+  "learn by experience": [
+    {
+      "word": "懲りる",
+      "reading": "こりる",
+      "romaji": "koriru",
+      "meaning_id": "me-learn by experience",
+      "meaning_en": "to learn by experience; to be disgusted with"
+    }
+  ],
+  "interrupt": [
+    {
+      "word": "遮る",
+      "reading": "さえぎる",
+      "romaji": "saegiru",
+      "meaning_id": "me-interrupt",
+      "meaning_en": "to interrupt; to intercept; to obstruct"
+    }
+  ],
+  "be clear": [
+    {
+      "word": "冴える",
+      "reading": "さえる",
+      "romaji": "saeru",
+      "meaning_id": "me-be clear",
+      "meaning_en": "to be clear; to be serene; to be cold; to be skillful"
+    }
+  ],
+  "prosper": [
+    {
+      "word": "栄える",
+      "reading": "さかえる",
+      "romaji": "sakaeru",
+      "meaning_id": "me-prosper",
+      "meaning_en": "to prosper; to flourish"
+    },
+    {
+      "word": "盛る",
+      "reading": "さかる",
+      "romaji": "sakaru",
+      "meaning_id": "me-prosper",
+      "meaning_en": "to prosper; to flourish; to copulate (animals)"
+    },
+    {
+      "word": "賑わう",
+      "reading": "にぎわう",
+      "romaji": "nigiwau",
+      "meaning_id": "me-prosper",
+      "meaning_en": "to prosper; to flourish; to do thriving business; to be crowded with people"
+    }
+  ],
+  "split": [
+    {
+      "word": "裂ける",
+      "reading": "さける",
+      "romaji": "sakeru",
+      "meaning_id": "me-split",
+      "meaning_en": "to split; to tear; to burst"
+    }
+  ],
+  "lift up": [
+    {
+      "word": "捧げる",
+      "reading": "ささげる",
+      "romaji": "sasageru",
+      "meaning_id": "me-lift up",
+      "meaning_en": "to lift up; to give; to offer; to consecrate; to devote; to sacrifice; to dedicate"
+    }
+  ],
+  "come near to": [
+    {
+      "word": "差し掛かる",
+      "reading": "さしかかる",
+      "romaji": "sashikakaru",
+      "meaning_id": "me-come near to",
+      "meaning_en": "to come near to; to approach"
+    }
+  ],
+  "present": [
+    {
+      "word": "差し出す",
+      "reading": "さしだす",
+      "romaji": "sashidasu",
+      "meaning_id": "me-present",
+      "meaning_en": "to present; to submit; to tender; to hold out"
+    }
+  ],
+  "interfere": [
+    {
+      "word": "差し支える",
+      "reading": "さしつかえる",
+      "romaji": "sashitsukaeru",
+      "meaning_id": "me-interfere",
+      "meaning_en": "to interfere; to hinder; to become impeded"
+    }
+  ],
+  "deduct": [
+    {
+      "word": "差し引く",
+      "reading": "さしひく",
+      "romaji": "sashihiku",
+      "meaning_id": "me-deduct",
+      "meaning_en": "to deduct"
+    }
+  ],
+  "become settled": [
+    {
+      "word": "定まる",
+      "reading": "さだまる",
+      "romaji": "sadamaru",
+      "meaning_id": "me-become settled",
+      "meaning_en": "to become settled; to be fixed"
+    }
+  ],
+  "decide": [
+    {
+      "word": "定める",
+      "reading": "さだめる",
+      "romaji": "sadameru",
+      "meaning_id": "me-decide",
+      "meaning_en": "to decide; to establish; to determine"
+    }
+  ],
+  "guess": [
+    {
+      "word": "察する",
+      "reading": "さっする",
+      "romaji": "sassuru",
+      "meaning_id": "me-guess",
+      "meaning_en": "to guess; to sense; to presume; to judge; to sympathize with"
+    }
+  ],
+  "attain enlightenment": [
+    {
+      "word": "悟る",
+      "reading": "さとる",
+      "romaji": "satoru",
+      "meaning_id": "me-attain enlightenment",
+      "meaning_en": "to attain enlightenment; to perceive; to understand; to discern"
+    }
+  ],
+  "judge": [
+    {
+      "word": "裁く",
+      "reading": "さばく",
+      "romaji": "sabaku",
+      "meaning_id": "me-judge",
+      "meaning_en": "to judge"
+    }
+  ],
+  "be truant": [
+    {
+      "word": "サボる",
+      "reading": "サボる",
+      "romaji": "saboru",
+      "meaning_id": "me-be truant",
+      "meaning_en": "to be truant; to be idle; to sabotage by slowness"
+    }
+  ],
+  "carry off": [
+    {
+      "word": "さらう",
+      "reading": "さらう",
+      "romaji": "sarau",
+      "meaning_id": "me-carry off",
+      "meaning_en": "to carry off; to run away with; to kidnap; to abduct"
+    }
+  ],
+  "hinder": [
+    {
+      "word": "障る",
+      "reading": "さわる",
+      "romaji": "sawaru",
+      "meaning_id": "me-hinder",
+      "meaning_en": "to hinder; to interfere with; to affect; to do one harm; to be harmful to"
+    }
+  ],
+  "finish up": [
+    {
+      "word": "仕上げる",
+      "reading": "しあげる",
+      "romaji": "shiageru",
+      "meaning_id": "me-finish up",
+      "meaning_en": "to finish up; to complete"
+    }
+  ],
+  "force": [
+    {
+      "word": "強いる",
+      "reading": "しいる",
+      "romaji": "shiiru",
+      "meaning_id": "me-force",
+      "meaning_en": "to force; to compel; to coerce"
+    }
+  ],
+  "lay in stock": [
+    {
+      "word": "仕入れる",
+      "reading": "しいれる",
+      "romaji": "shiireru",
+      "meaning_id": "me-lay in stock",
+      "meaning_en": "to lay in stock; to replenish stock; to procure"
+    }
+  ],
+  "commence": [
+    {
+      "word": "仕掛ける",
+      "reading": "しかける",
+      "romaji": "shikakeru",
+      "meaning_id": "me-commence",
+      "meaning_en": "to commence; to lay (mines); to set (traps); to wage (war); to challenge"
+    }
+  ],
+  "partition": [
+    {
+      "word": "仕切る",
+      "reading": "しきる",
+      "romaji": "shikiru",
+      "meaning_id": "me-partition",
+      "meaning_en": "to partition; to divide; to mark off; to settle accounts; to toe the mark"
+    }
+  ],
+  "fail": [
+    {
+      "word": "しくじる",
+      "reading": "しくじる",
+      "romaji": "shikujiru",
+      "meaning_id": "me-fail",
+      "meaning_en": "to fail; to fall through; to blunder"
+    }
+  ],
+  "be damp": [
+    {
+      "word": "湿気る",
+      "reading": "しける",
+      "romaji": "shikeru",
+      "meaning_id": "me-be damp",
+      "meaning_en": "to be damp; to be moist"
+    }
+  ],
+  "sink": [
+    {
+      "word": "沈める",
+      "reading": "しずめる",
+      "romaji": "shizumeru",
+      "meaning_id": "me-sink",
+      "meaning_en": "to sink; to submerge"
+    }
+  ],
+  "yearn for": [
+    {
+      "word": "慕う",
+      "reading": "したう",
+      "romaji": "shitau",
+      "meaning_id": "me-yearn for",
+      "meaning_en": "to yearn for; to miss; to adore; to love dearly"
+    }
+  ],
+  "be intimate with": [
+    {
+      "word": "親しむ",
+      "reading": "したしむ",
+      "romaji": "shitashimu",
+      "meaning_id": "me-be intimate with",
+      "meaning_en": "to be intimate with; to befriend"
+    }
+  ],
+  "write up": [
+    {
+      "word": "認める",
+      "reading": "したためる",
+      "romaji": "shitatameru",
+      "meaning_id": "me-write up",
+      "meaning_en": "to write up"
+    }
+  ],
+  "tailor": [
+    {
+      "word": "仕立てる",
+      "reading": "したてる",
+      "romaji": "shitateru",
+      "meaning_id": "me-tailor",
+      "meaning_en": "to tailor; to make; to prepare; to train; to send (a messenger)"
+    }
+  ],
+  "be used to a job": [
+    {
+      "word": "仕付ける",
+      "reading": "しつける",
+      "romaji": "shitsukeru",
+      "meaning_id": "me-be used to a job",
+      "meaning_en": "to be used to a job; to begin to do; to baste; to tack; to plant"
+    }
+  ],
+  "wilt": [
+    {
+      "word": "萎びる",
+      "reading": "しなびる",
+      "romaji": "shinabiru",
+      "meaning_id": "me-wilt",
+      "meaning_en": "to wilt; to fade"
+    }
+  ],
+  "joke": [
+    {
+      "word": "洒落る",
+      "reading": "しゃれる",
+      "romaji": "shareru",
+      "meaning_id": "me-joke",
+      "meaning_en": "to joke; to play on words; to dress stylishly"
+    }
+  ],
+  "follow": [
+    {
+      "word": "準じる",
+      "reading": "じゅんじる",
+      "romaji": "junjiru",
+      "meaning_id": "me-follow",
+      "meaning_en": "to follow; to conform; to apply to"
+    },
+    {
+      "word": "辿る",
+      "reading": "たどる",
+      "romaji": "tadoru",
+      "meaning_id": "me-follow",
+      "meaning_en": "to follow (road); to pursue (course); to follow up"
+    }
+  ],
+  "apply correspondingly": [
+    {
+      "word": "準ずる",
+      "reading": "じゅんずる",
+      "romaji": "junzuru",
+      "meaning_id": "me-apply correspondingly",
+      "meaning_en": "to apply correspondingly; to correspond to; to be proportionate to; to conform to"
+    }
+  ],
+  "pretend": [
+    {
+      "word": "称する",
+      "reading": "しょうする",
+      "romaji": "shousuru",
+      "meaning_id": "me-pretend",
+      "meaning_en": "to pretend; to take the name of; to feign; to purport"
+    }
+  ],
+  "retreat": [
+    {
+      "word": "退く",
+      "reading": "しりぞく",
+      "romaji": "shirizoku",
+      "meaning_id": "me-retreat",
+      "meaning_en": "to retreat; to recede; to withdraw"
+    }
+  ],
+  "repel": [
+    {
+      "word": "退ける",
+      "reading": "しりぞける",
+      "romaji": "shirizokeru",
+      "meaning_id": "me-repel",
+      "meaning_en": "to repel; to drive away"
+    }
+  ],
+  "note": [
+    {
+      "word": "記す",
+      "reading": "しるす",
+      "romaji": "shirusu",
+      "meaning_id": "me-note",
+      "meaning_en": "to note; to write down"
+    }
+  ],
+  "install": [
+    {
+      "word": "据え付ける",
+      "reading": "すえつける",
+      "romaji": "suetsukeru",
+      "meaning_id": "me-install",
+      "meaning_en": "to install; to equip; to mount"
+    }
+  ],
+  "set": [
+    {
+      "word": "据える",
+      "reading": "すえる",
+      "romaji": "sueru",
+      "meaning_id": "me-set",
+      "meaning_en": "to set (table); to lay (foundation); to place (gun); to apply (moxa)"
+    }
+  ],
+  "scoop": [
+    {
+      "word": "掬う",
+      "reading": "すくう",
+      "romaji": "sukuu",
+      "meaning_id": "me-scoop",
+      "meaning_en": "to scoop; to ladle out"
+    }
+  ],
+  "rinse": [
+    {
+      "word": "濯ぐ",
+      "reading": "すすぐ",
+      "romaji": "susugu",
+      "meaning_id": "me-rinse",
+      "meaning_en": "to rinse; to wash out"
+    }
+  ],
+  "go out of use": [
+    {
+      "word": "廃れる",
+      "reading": "すたれる",
+      "romaji": "sutareru",
+      "meaning_id": "me-go out of use",
+      "meaning_en": "to go out of use; to become obsolete; to die out; to go out of fashion"
+    }
+  ],
+  "control": [
+    {
+      "word": "制する",
+      "reading": "せいする",
+      "romaji": "seisuru",
+      "meaning_id": "me-control",
+      "meaning_en": "to control; to command; to get the better of"
+    }
+  ],
+  "run along": [
+    {
+      "word": "沿う",
+      "reading": "そう",
+      "romaji": "sou",
+      "meaning_id": "me-run along",
+      "meaning_en": "to run along; to follow"
+    }
+  ],
+  "accompany": [
+    {
+      "word": "添う",
+      "reading": "そう",
+      "romaji": "sou",
+      "meaning_id": "me-accompany",
+      "meaning_en": "to accompany; to become married; to comply with"
+    },
+    {
+      "word": "伴う",
+      "reading": "ともなう",
+      "romaji": "tomonau",
+      "meaning_id": "me-accompany",
+      "meaning_en": "to accompany; to bring with; to be accompanied by; to be involved in"
+    }
+  ],
+  "add to": [
+    {
+      "word": "添える",
+      "reading": "そえる",
+      "romaji": "soeru",
+      "meaning_id": "me-add to",
+      "meaning_en": "to add to; to attach; to append; to accompany; to garnish; to imitate; to annex"
+    }
+  ],
+  "conform to": [
+    {
+      "word": "即する",
+      "reading": "そくする",
+      "romaji": "sokusuru",
+      "meaning_id": "me-conform to",
+      "meaning_en": "to conform to; to agree with; to be adapted to; to be based on"
+    }
+  ],
+  "provide": [
+    {
+      "word": "備え付ける",
+      "reading": "そなえつける",
+      "romaji": "sonaetsukeru",
+      "meaning_id": "me-provide",
+      "meaning_en": "to provide; to furnish; to equip; to install"
+    }
+  ],
+  "be furnished with": [
+    {
+      "word": "備わる",
+      "reading": "そなわる",
+      "romaji": "sonawaru",
+      "meaning_id": "me-be furnished with",
+      "meaning_en": "to be furnished with; to be endowed with; to possess; to be among; to be one of; to be possessed of"
+    }
+  ],
+  "rise": [
+    {
+      "word": "聳える",
+      "reading": "そびえる",
+      "romaji": "sobieru",
+      "meaning_id": "me-rise",
+      "meaning_en": "to rise; to tower; to soar"
+    },
+    {
+      "word": "高まる",
+      "reading": "たかまる",
+      "romaji": "takamaru",
+      "meaning_id": "me-rise",
+      "meaning_en": "to rise; to swell; to be promoted"
+    }
+  ],
+  "dye": [
+    {
+      "word": "染まる",
+      "reading": "そまる",
+      "romaji": "somaru",
+      "meaning_id": "me-dye",
+      "meaning_en": "to dye"
+    },
+    {
+      "word": "染める",
+      "reading": "そめる",
+      "romaji": "someru",
+      "meaning_id": "me-dye",
+      "meaning_en": "to dye; to colour"
+    }
+  ],
+  "run counter to": [
+    {
+      "word": "背く",
+      "reading": "そむく",
+      "romaji": "somuku",
+      "meaning_id": "me-run counter to",
+      "meaning_en": "to run counter to; to go against; to disobey; to infringe"
+    }
+  ],
+  "turn away": [
+    {
+      "word": "逸らす",
+      "reading": "そらす",
+      "romaji": "sorasu",
+      "meaning_id": "me-turn away",
+      "meaning_en": "to turn away; to avert"
+    }
+  ],
+  "die out": [
+    {
+      "word": "絶える",
+      "reading": "たえる",
+      "romaji": "taeru",
+      "meaning_id": "me-die out",
+      "meaning_en": "to die out; to peter out; to become extinct"
+    }
+  ],
+  "participate": [
+    {
+      "word": "携わる",
+      "reading": "たずさわる",
+      "romaji": "tazusawaru",
+      "meaning_id": "me-participate",
+      "meaning_en": "to participate; to take part"
+    }
+  ],
+  "stop by": [
+    {
+      "word": "立ち寄る",
+      "reading": "たちよる",
+      "romaji": "tachiyoru",
+      "meaning_id": "me-stop by",
+      "meaning_en": "to stop by; to drop in for a short visit"
+    }
+  ],
+  "sever": [
+    {
+      "word": "絶つ",
+      "reading": "たつ",
+      "romaji": "tatsu",
+      "meaning_id": "me-sever",
+      "meaning_en": "to sever; to cut off; to suppress; to abstain (from)"
+    }
+  ],
+  "escape from": [
+    {
+      "word": "脱する",
+      "reading": "だっする",
+      "romaji": "dassuru",
+      "meaning_id": "me-escape from",
+      "meaning_en": "to escape from; to get out"
+    },
+    {
+      "word": "免れる",
+      "reading": "まぬがれる",
+      "romaji": "manugareru",
+      "meaning_id": "me-escape from",
+      "meaning_en": "to escape from; to be rescued from; to avoid; to evade; to avert; to elude; to be exempted"
+    }
+  ],
+  "value": [
+    {
+      "word": "尊ぶ",
+      "reading": "たっとぶ",
+      "romaji": "tattobu",
+      "meaning_id": "me-value",
+      "meaning_en": "to value; to prize; to esteem"
+    }
+  ],
+  "offer": [
+    {
+      "word": "奉る",
+      "reading": "たてまつる",
+      "romaji": "tatematsuru",
+      "meaning_id": "me-offer",
+      "meaning_en": "to offer; to present; to revere; to do respectfully"
+    }
+  ],
+  "grope along to": [
+    {
+      "word": "辿り着く",
+      "reading": "たどりつく",
+      "romaji": "tadoritsuku",
+      "meaning_id": "me-grope along to",
+      "meaning_en": "to grope along to; to struggle on to; to arrive somewhere after a struggle"
+    }
+  ],
+  "coincide": [
+    {
+      "word": "ダブる",
+      "reading": "ダブる",
+      "romaji": "daburu",
+      "meaning_id": "me-coincide",
+      "meaning_en": "to coincide (fall on the same day); to have two of something; to repeat a school year after failing"
+    }
+  ],
+  "slacken": [
+    {
+      "word": "弛む",
+      "reading": "たるむ",
+      "romaji": "tarumu",
+      "meaning_id": "me-slacken",
+      "meaning_en": "to slacken; to loosen; to relax"
+    }
+  ],
+  "pledge": [
+    {
+      "word": "契る",
+      "reading": "ちぎる",
+      "romaji": "chigiru",
+      "meaning_id": "me-pledge",
+      "meaning_en": "to pledge; to promise; to swear"
+    }
+  ],
+  "be shortened": [
+    {
+      "word": "縮まる",
+      "reading": "ちぢまる",
+      "romaji": "chijimaru",
+      "meaning_id": "me-be shortened",
+      "meaning_en": "to be shortened; to be contracted; to shrink"
+    }
+  ],
+  "spend": [
+    {
+      "word": "費やす",
+      "reading": "ついやす",
+      "romaji": "tsuiyasu",
+      "meaning_id": "me-spend",
+      "meaning_en": "to spend; to devote; to waste"
+    }
+  ],
+  "rule": [
+    {
+      "word": "司る",
+      "reading": "つかさどる",
+      "romaji": "tsukasadoru",
+      "meaning_id": "me-rule",
+      "meaning_en": "to rule; to govern; to administer"
+    }
+  ],
+  "be used up": [
+    {
+      "word": "尽きる",
+      "reading": "つきる",
+      "romaji": "tsukiru",
+      "meaning_id": "me-be used up",
+      "meaning_en": "to be used up; to be run out; to be exhausted; to be consumed; to come to an end"
+    }
+  ],
+  "succeed": [
+    {
+      "word": "継ぐ",
+      "reading": "つぐ",
+      "romaji": "tsugu",
+      "meaning_id": "me-succeed",
+      "meaning_en": "to succeed"
+    }
+  ],
+  "join": [
+    {
+      "word": "接ぐ",
+      "reading": "つぐ",
+      "romaji": "tsugu",
+      "meaning_id": "me-join",
+      "meaning_en": "to join; to piece together; to set (bones); to graft (trees)"
+    }
+  ],
+  "exhaust": [
+    {
+      "word": "尽くす",
+      "reading": "つくす",
+      "romaji": "tsukusu",
+      "meaning_id": "me-exhaust",
+      "meaning_en": "to exhaust; to run out; to serve (a person); to befriend"
+    }
+  ],
+  "mend": [
+    {
+      "word": "繕う",
+      "reading": "つくろう",
+      "romaji": "tsukurou",
+      "meaning_id": "me-mend",
+      "meaning_en": "to mend; to repair; to fix; to patch up; to darn; to tidy up; to adjust; to trim"
+    }
+  ],
+  "add one thing to another": [
+    {
+      "word": "付け加える",
+      "reading": "つけくわえる",
+      "romaji": "tsukekuwaeru",
+      "meaning_id": "me-add one thing to another",
+      "meaning_en": "to add one thing to another"
+    }
+  ],
+  "inform": [
+    {
+      "word": "告げる",
+      "reading": "つげる",
+      "romaji": "tsugeru",
+      "meaning_id": "me-inform",
+      "meaning_en": "to inform"
+    },
+    {
+      "word": "報じる",
+      "reading": "ほうじる",
+      "romaji": "houjiru",
+      "meaning_id": "me-inform",
+      "meaning_en": "to inform; to report"
+    },
+    {
+      "word": "報ずる",
+      "reading": "ほうずる",
+      "romaji": "houzuru",
+      "meaning_id": "me-inform",
+      "meaning_en": "to inform; to report"
+    }
+  ],
+  "support": [
+    {
+      "word": "突っ張る",
+      "reading": "つっぱる",
+      "romaji": "tsupparu",
+      "meaning_id": "me-support",
+      "meaning_en": "to support; to become stiff; to become taut; to thrust (ones opponent); to stick to (ones opinion)"
+    }
+  ],
+  "be fit for": [
+    {
+      "word": "勤まる",
+      "reading": "つとまる",
+      "romaji": "tsutomaru",
+      "meaning_id": "me-be fit for",
+      "meaning_en": "to be fit for; to be equal to; to function properly"
+    }
+  ],
+  "pinch": [
+    {
+      "word": "抓る",
+      "reading": "つねる",
+      "romaji": "tsuneru",
+      "meaning_id": "me-pinch",
+      "meaning_en": "to pinch"
+    },
+    {
+      "word": "摘む",
+      "reading": "つまむ",
+      "romaji": "tsumamu",
+      "meaning_id": "me-pinch",
+      "meaning_en": "to pinch; to hold; to pick up"
+    }
+  ],
+  "mutter": [
+    {
+      "word": "呟く",
+      "reading": "つぶやく",
+      "romaji": "tsubuyaku",
+      "meaning_id": "me-mutter",
+      "meaning_en": "to mutter; to murmur"
+    }
+  ],
+  "close the eyes": [
+    {
+      "word": "瞑る",
+      "reading": "つぶる",
+      "romaji": "tsuburu",
+      "meaning_id": "me-close the eyes",
+      "meaning_en": "to close the eyes"
+    }
+  ],
+  "get strong": [
+    {
+      "word": "強まる",
+      "reading": "つよまる",
+      "romaji": "tsuyomaru",
+      "meaning_id": "me-get strong",
+      "meaning_en": "to get strong; to gain strength"
+    }
+  ],
+  "strengthen": [
+    {
+      "word": "強める",
+      "reading": "つよめる",
+      "romaji": "tsuyomeru",
+      "meaning_id": "me-strengthen",
+      "meaning_en": "to strengthen; to emphasize"
+    }
+  ],
+  "extend": [
+    {
+      "word": "連なる",
+      "reading": "つらなる",
+      "romaji": "tsuranaru",
+      "meaning_id": "me-extend",
+      "meaning_en": "to extend; to stretch out; to stand in a row"
+    }
+  ],
+  "link": [
+    {
+      "word": "連ねる",
+      "reading": "つらねる",
+      "romaji": "tsuraneru",
+      "meaning_id": "me-link",
+      "meaning_en": "to link; to join; to put together"
+    }
+  ],
+  "meet by chance": [
+    {
+      "word": "出合う",
+      "reading": "であう",
+      "romaji": "deau",
+      "meaning_id": "me-meet by chance",
+      "meaning_en": "to meet by chance; to come across; to happen to encounter; to hold a rendezvous; to have a date"
+    }
+  ],
+  "handle": [
+    {
+      "word": "手掛ける",
+      "reading": "てがける",
+      "romaji": "tegakeru",
+      "meaning_id": "me-handle",
+      "meaning_en": "to handle; to manage; to work with; to rear; to look after; to have experience with"
+    }
+  ],
+  "be out of": [
+    {
+      "word": "出切る",
+      "reading": "できる",
+      "romaji": "dekiru",
+      "meaning_id": "me-be out of",
+      "meaning_en": "to be out of; to have no more at hand"
+    }
+  ],
+  "happen to meet": [
+    {
+      "word": "出くわす",
+      "reading": "でくわす",
+      "romaji": "dekuwasu",
+      "meaning_id": "me-happen to meet",
+      "meaning_en": "to happen to meet; to come across"
+    }
+  ],
+  "sink in": [
+    {
+      "word": "徹する",
+      "reading": "てっする",
+      "romaji": "tessuru",
+      "meaning_id": "me-sink in",
+      "meaning_en": "to sink in; to penetrate; to devote oneself; to believe in; to go through"
+    }
+  ],
+  "enquire": [
+    {
+      "word": "問い合わせる",
+      "reading": "といあわせる",
+      "romaji": "toiawaseru",
+      "meaning_id": "me-enquire",
+      "meaning_en": "to enquire; to seek information"
+    }
+  ],
+  "go far off": [
+    {
+      "word": "遠ざかる",
+      "reading": "とおざかる",
+      "romaji": "toozakaru",
+      "meaning_id": "me-go far off",
+      "meaning_en": "to go far off"
+    }
+  ],
+  "blame": [
+    {
+      "word": "咎める",
+      "reading": "とがめる",
+      "romaji": "togameru",
+      "meaning_id": "me-blame",
+      "meaning_en": "to blame; to find fault; to take someone to task; to aggravate (an injury)"
+    }
+  ],
+  "pause": [
+    {
+      "word": "跡切れる",
+      "reading": "とぎれる",
+      "romaji": "togireru",
+      "meaning_id": "me-pause",
+      "meaning_en": "to pause; to be interrupted"
+    }
+  ],
+  "explain": [
+    {
+      "word": "説く",
+      "reading": "とく",
+      "romaji": "toku",
+      "meaning_id": "me-explain",
+      "meaning_en": "to explain; to advocate; to preach; to persuade"
+    }
+  ],
+  "sharpen": [
+    {
+      "word": "研ぐ",
+      "reading": "とぐ",
+      "romaji": "togu",
+      "meaning_id": "me-sharpen",
+      "meaning_en": "to sharpen; to grind; to scour; to hone; to polish; to wash (rice)"
+    }
+  ],
+  "bind": [
+    {
+      "word": "綴じる",
+      "reading": "とじる",
+      "romaji": "tojiru",
+      "meaning_id": "me-bind",
+      "meaning_en": "to bind; to file"
+    }
+  ],
+  "stagnate": [
+    {
+      "word": "滞る",
+      "reading": "とどこおる",
+      "romaji": "todokooru",
+      "meaning_id": "me-stagnate",
+      "meaning_en": "to stagnate; to be delayed"
+    }
+  ],
+  "be limited to": [
+    {
+      "word": "止まる",
+      "reading": "とどまる",
+      "romaji": "todomaru",
+      "meaning_id": "me-be limited to",
+      "meaning_en": "to be limited to"
+    }
+  ],
+  "recite": [
+    {
+      "word": "唱える",
+      "reading": "となえる",
+      "romaji": "tonaeru",
+      "meaning_id": "me-recite",
+      "meaning_en": "to recite; to chant; to call upon"
+    }
+  ],
+  "be rich": [
+    {
+      "word": "富む",
+      "reading": "とむ",
+      "romaji": "tomu",
+      "meaning_id": "me-be rich",
+      "meaning_en": "to be rich; to become rich"
+    }
+  ],
+  "treat": [
+    {
+      "word": "取り扱う",
+      "reading": "とりあつかう",
+      "romaji": "toriatsukau",
+      "meaning_id": "me-treat",
+      "meaning_en": "to treat; to handle; to deal in"
+    }
+  ],
+  "tackle": [
+    {
+      "word": "取り組む",
+      "reading": "とりくむ",
+      "romaji": "torikumu",
+      "meaning_id": "me-tackle",
+      "meaning_en": "to tackle; to wrestle with; to engage in a bout; to come to grips with"
+    }
+  ],
+  "manage": [
+    {
+      "word": "取り締まる",
+      "reading": "とりしまる",
+      "romaji": "torishimaru",
+      "meaning_id": "me-manage",
+      "meaning_en": "to manage; to control; to supervise"
+    }
+  ],
+  "act as an agent for": [
+    {
+      "word": "取り次ぐ",
+      "reading": "とりつぐ",
+      "romaji": "toritsugu",
+      "meaning_id": "me-act as an agent for",
+      "meaning_en": "to act as an agent for; to announce (someone); to convey (a message)"
+    }
+  ],
+  "take back": [
+    {
+      "word": "取り戻す",
+      "reading": "とりもどす",
+      "romaji": "torimodosu",
+      "meaning_id": "me-take back",
+      "meaning_en": "to take back; to regain"
+    }
+  ],
+  "order": [
+    {
+      "word": "取り寄せる",
+      "reading": "とりよせる",
+      "romaji": "toriyoseru",
+      "meaning_id": "me-order",
+      "meaning_en": "to order; to send away for"
+    }
+  ],
+  "be enchanted with": [
+    {
+      "word": "とろける",
+      "reading": "とろける",
+      "romaji": "torokeru",
+      "meaning_id": "me-be enchanted with",
+      "meaning_en": "to be enchanted with"
+    }
+  ],
+  "sigh": [
+    {
+      "word": "嘆く",
+      "reading": "なげく",
+      "romaji": "nageku",
+      "meaning_id": "me-sigh",
+      "meaning_en": "to sigh; to lament; to grieve"
+    }
+  ],
+  "throw down": [
+    {
+      "word": "投げ出す",
+      "reading": "なげだす",
+      "romaji": "nagedasu",
+      "meaning_id": "me-throw down",
+      "meaning_en": "to throw down; to abandon; to sacrifice; to throw out"
+    }
+  ],
+  "rebuke": [
+    {
+      "word": "詰る",
+      "reading": "なじる",
+      "romaji": "najiru",
+      "meaning_id": "me-rebuke",
+      "meaning_en": "to rebuke; to scold; to tell off"
+    }
+  ],
+  "become emotionally attached": [
+    {
+      "word": "懐く",
+      "reading": "なつく",
+      "romaji": "natsuku",
+      "meaning_id": "me-become emotionally attached",
+      "meaning_en": "to become emotionally attached"
+    }
+  ],
+  "name": [
+    {
+      "word": "名付ける",
+      "reading": "なづける",
+      "romaji": "nazukeru",
+      "meaning_id": "me-name",
+      "meaning_en": "to name (someone)"
+    }
+  ],
+  "lick": [
+    {
+      "word": "なめる",
+      "reading": "なめる",
+      "romaji": "nameru",
+      "meaning_id": "me-lick",
+      "meaning_en": "to lick; to taste; to experience; to make fun of; to make light of; to put down; to treat with contempt"
+    }
+  ],
+  "afflict": [
+    {
+      "word": "悩ます",
+      "reading": "なやます",
+      "romaji": "nayamasu",
+      "meaning_id": "me-afflict",
+      "meaning_en": "to afflict; to torment; to harass; to molest"
+    }
+  ],
+  "accustom": [
+    {
+      "word": "慣らす",
+      "reading": "ならす",
+      "romaji": "narasu",
+      "meaning_id": "me-accustom",
+      "meaning_en": "to accustom"
+    }
+  ],
+  "domesticate": [
+    {
+      "word": "馴らす",
+      "reading": "ならす",
+      "romaji": "narasu",
+      "meaning_id": "me-domesticate",
+      "meaning_en": "to domesticate; to tame"
+    }
+  ],
+  "resemble closely": [
+    {
+      "word": "似通う",
+      "reading": "にかよう",
+      "romaji": "nikayou",
+      "meaning_id": "me-resemble closely",
+      "meaning_en": "to resemble closely"
+    }
+  ],
+  "run away": [
+    {
+      "word": "逃げ出す",
+      "reading": "にげだす",
+      "romaji": "nigedasu",
+      "meaning_id": "me-run away",
+      "meaning_en": "to run away; to escape from"
+    }
+  ],
+  "become less capable": [
+    {
+      "word": "鈍る",
+      "reading": "にぶる",
+      "romaji": "niburu",
+      "meaning_id": "me-become less capable",
+      "meaning_en": "to become less capable; to grow dull; to become blunt; to weaken"
+    }
+  ],
+  "omit": [
+    {
+      "word": "抜かす",
+      "reading": "ぬかす",
+      "romaji": "nukasu",
+      "meaning_id": "me-omit",
+      "meaning_en": "to omit; to leave out"
+    }
+  ],
+  "slip out": [
+    {
+      "word": "抜け出す",
+      "reading": "ぬけだす",
+      "romaji": "nukedasu",
+      "meaning_id": "me-slip out",
+      "meaning_en": "to slip out; to sneak away; to excel"
+    }
+  ],
+  "put to bed": [
+    {
+      "word": "寝かせる",
+      "reading": "ねかせる",
+      "romaji": "nekaseru",
+      "meaning_id": "me-put to bed",
+      "meaning_en": "to put to bed; to lay down; to ferment"
+    }
+  ],
+  "be jealous": [
+    {
+      "word": "妬む",
+      "reading": "ねたむ",
+      "romaji": "netamu",
+      "meaning_id": "me-be jealous",
+      "meaning_en": "to be jealous; to be envious"
+    }
+  ],
+  "tease": [
+    {
+      "word": "強請る",
+      "reading": "ねだる",
+      "romaji": "nedaru",
+      "meaning_id": "me-tease",
+      "meaning_en": "to tease; to coax; to solicit; to demand"
+    }
+  ],
+  "be sticky": [
+    {
+      "word": "粘る",
+      "reading": "ねばる",
+      "romaji": "nebaru",
+      "meaning_id": "me-be sticky",
+      "meaning_en": "to be sticky; to be adhesive; to persevere; to persist; to stick to"
+    }
+  ],
+  "knead": [
+    {
+      "word": "練る",
+      "reading": "ねる",
+      "romaji": "neru",
+      "meaning_id": "me-knead",
+      "meaning_en": "to knead; to work over; to polish up"
+    }
+  ],
+  "look out on": [
+    {
+      "word": "臨む",
+      "reading": "のぞむ",
+      "romaji": "nozomu",
+      "meaning_id": "me-look out on",
+      "meaning_en": "to look out on; to face; to deal with; to attend (function)"
+    }
+  ],
+  "capture": [
+    {
+      "word": "乗っ取る",
+      "reading": "のっとる",
+      "romaji": "nottoru",
+      "meaning_id": "me-capture",
+      "meaning_en": "to capture; to occupy; to usurp"
+    }
+  ],
+  "gulp down": [
+    {
+      "word": "飲み込む",
+      "reading": "のみこむ",
+      "romaji": "nomikomu",
+      "meaning_id": "me-gulp down",
+      "meaning_en": "to gulp down; to swallow deeply; to understand; to take in; to catch on to; to learn; to digest"
+    }
+  ],
+  "board": [
+    {
+      "word": "乗り込む",
+      "reading": "のりこむ",
+      "romaji": "norikomu",
+      "meaning_id": "me-board",
+      "meaning_en": "to board; to embark on; to get into (a car); to ship (passengers); to man (a ship)"
+    }
+  ],
+  "make progress": [
+    {
+      "word": "捗る",
+      "reading": "はかどる",
+      "romaji": "hakadoru",
+      "meaning_id": "me-make progress",
+      "meaning_en": "to make progress; to move right ahead (with the work); to advance"
+    }
+  ],
+  "consult with": [
+    {
+      "word": "諮る",
+      "reading": "はかる",
+      "romaji": "hakaru",
+      "meaning_id": "me-consult with",
+      "meaning_en": "to consult with; to confer"
+    }
+  ],
+  "plot": [
+    {
+      "word": "図る",
+      "reading": "はかる",
+      "romaji": "hakaru",
+      "meaning_id": "me-plot",
+      "meaning_en": "to plot; to attempt; to plan; to take in; to deceive; to devise; to design; to refer A to B"
+    }
+  ],
+  "encourage": [
+    {
+      "word": "励ます",
+      "reading": "はげます",
+      "romaji": "hagemasu",
+      "meaning_id": "me-encourage",
+      "meaning_en": "to encourage; to cheer; to raise (the voice)"
+    }
+  ],
+  "be zealous": [
+    {
+      "word": "励む",
+      "reading": "はげむ",
+      "romaji": "hagemu",
+      "meaning_id": "me-be zealous",
+      "meaning_en": "to be zealous; to brace oneself; to endeavour; to strive; to make an effort"
+    }
+  ],
+  "come off": [
+    {
+      "word": "剥げる",
+      "reading": "はげる",
+      "romaji": "hageru",
+      "meaning_id": "me-come off",
+      "meaning_en": "to come off; to be worn off; to fade; to discolor"
+    }
+  ],
+  "appear in disguise": [
+    {
+      "word": "化ける",
+      "reading": "ばける",
+      "romaji": "bakeru",
+      "meaning_id": "me-appear in disguise",
+      "meaning_en": "to appear in disguise; to take the form of; to change for the worse"
+    }
+  ],
+  "flip": [
+    {
+      "word": "弾く",
+      "reading": "はじく",
+      "romaji": "hajiku",
+      "meaning_id": "me-flip",
+      "meaning_en": "to flip; to snap"
+    }
+  ],
+  "feel shy": [
+    {
+      "word": "恥じらう",
+      "reading": "はじらう",
+      "romaji": "hajirau",
+      "meaning_id": "me-feel shy",
+      "meaning_en": "to feel shy; to be bashful; to blush"
+    }
+  ],
+  "feel ashamed": [
+    {
+      "word": "恥じる",
+      "reading": "はじる",
+      "romaji": "hajiru",
+      "meaning_id": "me-feel ashamed",
+      "meaning_en": "to feel ashamed"
+    }
+  ],
+  "end": [
+    {
+      "word": "果てる",
+      "reading": "はてる",
+      "romaji": "hateru",
+      "meaning_id": "me-end",
+      "meaning_en": "to end; to be finished; to be exhausted; to die; to perish"
+    }
+  ],
+  "be exhausted": [
+    {
+      "word": "ばてる",
+      "reading": "ばてる",
+      "romaji": "bateru",
+      "meaning_id": "me-be exhausted",
+      "meaning_en": "to be exhausted; to be worn out"
+    }
+  ],
+  "get into": [
+    {
+      "word": "はまる",
+      "reading": "はまる",
+      "romaji": "hamaru",
+      "meaning_id": "me-get into",
+      "meaning_en": "to get into; to go into; to fit; to be fit for; to suit; to fall into; to plunge into; to be deceived"
+    }
+  ],
+  "hasten": [
+    {
+      "word": "早める",
+      "reading": "はやめる",
+      "romaji": "hayameru",
+      "meaning_id": "me-hasten",
+      "meaning_en": "to hasten; to quicken; to expedite; to precipitate; to accelerate"
+    }
+  ],
+  "disseminate": [
+    {
+      "word": "ばらまく",
+      "reading": "ばらまく",
+      "romaji": "baramaku",
+      "meaning_id": "me-disseminate",
+      "meaning_en": "to disseminate; to scatter; to give money freely"
+    }
+  ],
+  "be inconsistent with": [
+    {
+      "word": "反する",
+      "reading": "はんする",
+      "romaji": "hansuru",
+      "meaning_id": "me-be inconsistent with",
+      "meaning_en": "to be inconsistent with; to oppose; to contradict; to transgress; to rebel"
+    }
+  ],
+  "draw in": [
+    {
+      "word": "控える",
+      "reading": "ひかえる",
+      "romaji": "hikaeru",
+      "meaning_id": "me-draw in",
+      "meaning_en": "to draw in; to hold back; to make notes; to be temperate in"
+    }
+  ],
+  "pull down": [
+    {
+      "word": "引き下げる",
+      "reading": "ひきさげる",
+      "romaji": "hikisageru",
+      "meaning_id": "me-pull down",
+      "meaning_en": "to pull down; to lower; to reduce; to withdraw"
+    }
+  ],
+  "seduce": [
+    {
+      "word": "引きずる",
+      "reading": "ひきずる",
+      "romaji": "hikizuru",
+      "meaning_id": "me-seduce",
+      "meaning_en": "to seduce; to drag along; to pull; to prolong; to support"
+    }
+  ],
+  "take charge of": [
+    {
+      "word": "引き取る",
+      "reading": "ひきとる",
+      "romaji": "hikitoru",
+      "meaning_id": "me-take charge of",
+      "meaning_en": "to take charge of; to take over; to retire to a private place"
+    }
+  ],
+  "hang  on": [
+    {
+      "word": "引っ掛ける",
+      "reading": "ひっかける",
+      "romaji": "hikkakeru",
+      "meaning_id": "me-hang  on",
+      "meaning_en": "to hang (something) on (something); to throw on (clothes); to hook; to catch; to trap; to ensnare"
+    }
+  ],
+  "banter": [
+    {
+      "word": "冷やかす",
+      "reading": "ひやかす",
+      "romaji": "hiyakasu",
+      "meaning_id": "me-banter",
+      "meaning_en": "to banter; to make fun of; to jeer at; to cool; to refrigerate"
+    }
+  ],
+  "get cross": [
+    {
+      "word": "膨れる",
+      "reading": "ふくれる",
+      "romaji": "fukureru",
+      "meaning_id": "me-get cross",
+      "meaning_en": "to get cross; to get sulky; to swell (out); to expand; to be inflated; to distend; to bulge"
+    }
+  ],
+  "be shaking": [
+    {
+      "word": "震わせる",
+      "reading": "ふるわせる",
+      "romaji": "furuwaseru",
+      "meaning_id": "me-be shaking",
+      "meaning_en": "to be shaking; to be trembling"
+    }
+  ],
+  "be distant": [
+    {
+      "word": "隔たる",
+      "reading": "へだたる",
+      "romaji": "hedataru",
+      "meaning_id": "me-be distant",
+      "meaning_en": "to be distant"
+    }
+  ],
+  "deprecate oneself and praise the listener": [
+    {
+      "word": "謙る",
+      "reading": "へりくだる",
+      "romaji": "herikudaru",
+      "meaning_id": "me-deprecate oneself and praise the listener",
+      "meaning_en": "to deprecate oneself and praise the listener"
+    }
+  ],
+  "throw into": [
+    {
+      "word": "放り込む",
+      "reading": "ほうりこむ",
+      "romaji": "hourikomu",
+      "meaning_id": "me-throw into",
+      "meaning_en": "to throw into"
+    }
+  ],
+  "throw out": [
+    {
+      "word": "放り出す",
+      "reading": "ほうりだす",
+      "romaji": "houridasu",
+      "meaning_id": "me-throw out",
+      "meaning_en": "to throw out; to fire; to expel; to give up; to abandon; to neglect"
+    }
+  ],
+  "boast of": [
+    {
+      "word": "誇る",
+      "reading": "ほこる",
+      "romaji": "hokoru",
+      "meaning_id": "me-boast of",
+      "meaning_en": "to boast of; to be proud of"
+    }
+  ],
+  "come apart at the seams": [
+    {
+      "word": "綻びる",
+      "reading": "ほころびる",
+      "romaji": "hokorobiru",
+      "meaning_id": "me-come apart at the seams",
+      "meaning_en": "to come apart at the seams; to begin to open; to smile broadly"
+    }
+  ],
+  "donate": [
+    {
+      "word": "施す",
+      "reading": "ほどこす",
+      "romaji": "hodokosu",
+      "meaning_id": "me-donate",
+      "meaning_en": "to donate; to give; to conduct; to apply; to perform"
+    }
+  ],
+  "grumble": [
+    {
+      "word": "ぼやく",
+      "reading": "ぼやく",
+      "romaji": "boyaku",
+      "meaning_id": "me-grumble",
+      "meaning_en": "to grumble; to complain"
+    }
+  ],
+  "become dim": [
+    {
+      "word": "ぼやける",
+      "reading": "ぼやける",
+      "romaji": "boyakeru",
+      "meaning_id": "me-become dim",
+      "meaning_en": "to become dim; to become blurred"
+    }
+  ],
+  "be ruined": [
+    {
+      "word": "滅びる",
+      "reading": "ほろびる",
+      "romaji": "horobiru",
+      "meaning_id": "me-be ruined",
+      "meaning_en": "to be ruined; to go under; to perish; to be destroyed"
+    }
+  ],
+  "dance": [
+    {
+      "word": "舞う",
+      "reading": "まう",
+      "romaji": "mau",
+      "meaning_id": "me-dance",
+      "meaning_en": "to dance; to flutter about; to revolve"
+    }
+  ],
+  "entrust": [
+    {
+      "word": "任す",
+      "reading": "まかす",
+      "romaji": "makasu",
+      "meaning_id": "me-entrust",
+      "meaning_en": "to entrust; to leave to a person"
+    }
+  ],
+  "defeat": [
+    {
+      "word": "負かす",
+      "reading": "まかす",
+      "romaji": "makasu",
+      "meaning_id": "me-defeat",
+      "meaning_en": "to defeat"
+    }
+  ],
+  "give board to": [
+    {
+      "word": "賄う",
+      "reading": "まかなう",
+      "romaji": "makanau",
+      "meaning_id": "me-give board to",
+      "meaning_en": "to give board to; to provide meals; to pay"
+    }
+  ],
+  "be diverted": [
+    {
+      "word": "紛れる",
+      "reading": "まぎれる",
+      "romaji": "magireru",
+      "meaning_id": "me-be diverted",
+      "meaning_en": "to be diverted; to slip into"
+    }
+  ],
+  "be confused": [
+    {
+      "word": "まごつく",
+      "reading": "まごつく",
+      "romaji": "magotsuku",
+      "meaning_id": "me-be confused",
+      "meaning_en": "to be confused; to be flustered"
+    }
+  ],
+  "excel": [
+    {
+      "word": "勝る",
+      "reading": "まさる",
+      "romaji": "masaru",
+      "meaning_id": "me-excel",
+      "meaning_en": "to excel; to surpass; to outrival"
+    }
+  ],
+  "extend over or into": [
+    {
+      "word": "またがる",
+      "reading": "またがる",
+      "romaji": "matagaru",
+      "meaning_id": "me-extend over or into",
+      "meaning_en": "to extend over or into; to straddle"
+    }
+  ],
+  "look anxiously for": [
+    {
+      "word": "待ち望む",
+      "reading": "まちのぞむ",
+      "romaji": "machinozomu",
+      "meaning_id": "me-look anxiously for",
+      "meaning_en": "to look anxiously for; to wait eagerly for"
+    }
+  ],
+  "make round": [
+    {
+      "word": "丸める",
+      "reading": "まるめる",
+      "romaji": "marumeru",
+      "meaning_id": "me-make round",
+      "meaning_en": "to make round; to round off; to roll up; to curl up; to seduce; to cajole; to explain away"
+    }
+  ],
+  "exchange glances": [
+    {
+      "word": "見合わせる",
+      "reading": "みあわせる",
+      "romaji": "miawaseru",
+      "meaning_id": "me-exchange glances",
+      "meaning_en": "to exchange glances; to postpone; to suspend operations; to refrain from performing an action"
+    }
+  ],
+  "show off": [
+    {
+      "word": "見せびらかす",
+      "reading": "みせびらかす",
+      "romaji": "misebirakasu",
+      "meaning_id": "me-show off",
+      "meaning_en": "to show off; to flaunt"
+    }
+  ],
+  "satisfy": [
+    {
+      "word": "満たす",
+      "reading": "みたす",
+      "romaji": "mitasu",
+      "meaning_id": "me-satisfy",
+      "meaning_en": "to satisfy; to ingratiate; to fill; to fulfill"
+    }
+  ],
+  "throw out of order": [
+    {
+      "word": "乱す",
+      "reading": "みだす",
+      "romaji": "midasu",
+      "meaning_id": "me-throw out of order",
+      "meaning_en": "to throw out of order; to disarrange; to disturb"
+    }
+  ],
+  "get confused": [
+    {
+      "word": "乱れる",
+      "reading": "みだれる",
+      "romaji": "midareru",
+      "meaning_id": "me-get confused",
+      "meaning_en": "to get confused; to be disordered; to be disturbed"
+    }
+  ],
+  "be guided": [
+    {
+      "word": "導く",
+      "reading": "みちびく",
+      "romaji": "michibiku",
+      "meaning_id": "me-be guided",
+      "meaning_en": "to be guided; to be shown"
+    }
+  ],
+  "miss": [
+    {
+      "word": "見逃す",
+      "reading": "みのがす",
+      "romaji": "minogasu",
+      "meaning_id": "me-miss",
+      "meaning_en": "to miss; to overlook; to leave at large"
+    }
+  ],
+  "pluck": [
+    {
+      "word": "毟る",
+      "reading": "むしる",
+      "romaji": "mushiru",
+      "meaning_id": "me-pluck",
+      "meaning_en": "to pluck; to pick; to tear"
+    }
+  ],
+  "be connected or related": [
+    {
+      "word": "結び付く",
+      "reading": "むすびつく",
+      "romaji": "musubitsuku",
+      "meaning_id": "me-be connected or related",
+      "meaning_en": "to be connected or related; to join together"
+    }
+  ],
+  "combine": [
+    {
+      "word": "結び付ける",
+      "reading": "むすびつける",
+      "romaji": "musubitsukeru",
+      "meaning_id": "me-combine",
+      "meaning_en": "to combine; to join; to tie on; to attach with a knot"
+    }
+  ],
+  "swarm": [
+    {
+      "word": "群がる",
+      "reading": "むらがる",
+      "romaji": "muragaru",
+      "meaning_id": "me-swarm",
+      "meaning_en": "to swarm; to gather"
+    }
+  ],
+  "bless": [
+    {
+      "word": "恵む",
+      "reading": "めぐむ",
+      "romaji": "megumu",
+      "meaning_id": "me-bless",
+      "meaning_en": "to bless; to show mercy to"
+    }
+  ],
+  "face on": [
+    {
+      "word": "面する",
+      "reading": "めんする",
+      "romaji": "mensuru",
+      "meaning_id": "me-face on",
+      "meaning_en": "to face on; to look out on to"
+    }
+  ],
+  "create": [
+    {
+      "word": "設ける",
+      "reading": "もうける",
+      "romaji": "moukeru",
+      "meaning_id": "me-create",
+      "meaning_en": "to create; to establish"
+    }
+  ],
+  "propose": [
+    {
+      "word": "申し入れる",
+      "reading": "もうしいれる",
+      "romaji": "moushiireru",
+      "meaning_id": "me-propose",
+      "meaning_en": "to propose; to suggest"
+    }
+  ],
+  "report to": [
+    {
+      "word": "申し出る",
+      "reading": "もうしでる",
+      "romaji": "moushideru",
+      "meaning_id": "me-report to",
+      "meaning_en": "to report to; to tell; to suggest; to submit; to request; to make an offer"
+    }
+  ],
+  "struggle": [
+    {
+      "word": "もがく",
+      "reading": "もがく",
+      "romaji": "mogaku",
+      "meaning_id": "me-struggle",
+      "meaning_en": "to struggle; to wriggle; to be impatient"
+    }
+  ],
+  "entertain": [
+    {
+      "word": "もてなす",
+      "reading": "もてなす",
+      "romaji": "motenasu",
+      "meaning_id": "me-entertain",
+      "meaning_en": "to entertain; to make welcome"
+    }
+  ],
+  "be well liked": [
+    {
+      "word": "持てる",
+      "reading": "もてる",
+      "romaji": "moteru",
+      "meaning_id": "me-be well liked",
+      "meaning_en": "to be well liked; to be popular"
+    }
+  ],
+  "disagree": [
+    {
+      "word": "揉める",
+      "reading": "もめる",
+      "romaji": "momeru",
+      "meaning_id": "me-disagree",
+      "meaning_en": "to disagree; to dispute"
+    }
+  ],
+  "let leak": [
+    {
+      "word": "漏らす",
+      "reading": "もらす",
+      "romaji": "morasu",
+      "meaning_id": "me-let leak",
+      "meaning_en": "to let leak; to reveal"
+    }
+  ],
+  "rouse": [
+    {
+      "word": "盛り上がる",
+      "reading": "もりあがる",
+      "romaji": "moriagaru",
+      "meaning_id": "me-rouse",
+      "meaning_en": "to rouse; to swell; to rise"
+    }
+  ],
+  "leak": [
+    {
+      "word": "漏る",
+      "reading": "もる",
+      "romaji": "moru",
+      "meaning_id": "me-leak",
+      "meaning_en": "to leak; to run out"
+    }
+  ],
+  "leak out": [
+    {
+      "word": "漏れる",
+      "reading": "もれる",
+      "romaji": "moreru",
+      "meaning_id": "me-leak out",
+      "meaning_en": "to leak out; to escape; to come through; to shine through; to filter out; to be omitted"
+    }
+  ],
+  "be useful": [
+    {
+      "word": "役立つ",
+      "reading": "やくだつ",
+      "romaji": "yakudatsu",
+      "meaning_id": "me-be useful",
+      "meaning_en": "to be useful; to be helpful; to serve the purpose"
+    }
+  ],
+  "fall ill": [
+    {
+      "word": "病む",
+      "reading": "やむ",
+      "romaji": "yamu",
+      "meaning_id": "me-fall ill",
+      "meaning_en": "to fall ill; to be ill"
+    }
+  ],
+  "carry through": [
+    {
+      "word": "遣り通す",
+      "reading": "やりとおす",
+      "romaji": "yaritoosu",
+      "meaning_id": "me-carry through",
+      "meaning_en": "to carry through; to achieve; to complete"
+    }
+  ],
+  "soften": [
+    {
+      "word": "和らげる",
+      "reading": "やわらげる",
+      "romaji": "yawarageru",
+      "meaning_id": "me-soften",
+      "meaning_en": "to soften; to moderate; to relieve"
+    }
+  ],
+  "own": [
+    {
+      "word": "有する",
+      "reading": "ゆうする",
+      "romaji": "yuusuru",
+      "meaning_id": "me-own",
+      "meaning_en": "to own; to be endowed with"
+    }
+  ],
+  "point at": [
+    {
+      "word": "指差す",
+      "reading": "ゆびさす",
+      "romaji": "yubisasu",
+      "meaning_id": "me-point at",
+      "meaning_en": "to point at"
+    }
+  ],
+  "become loose": [
+    {
+      "word": "緩む",
+      "reading": "ゆるむ",
+      "romaji": "yurumu",
+      "meaning_id": "me-become loose",
+      "meaning_en": "to become loose; to slacken"
+    }
+  ],
+  "loosen": [
+    {
+      "word": "緩める",
+      "reading": "ゆるめる",
+      "romaji": "yurumeru",
+      "meaning_id": "me-loosen",
+      "meaning_en": "to loosen; to slow down"
+    }
+  ],
+  "demand": [
+    {
+      "word": "要する",
+      "reading": "ようする",
+      "romaji": "yousuru",
+      "meaning_id": "me-demand",
+      "meaning_en": "to demand; to require; to take"
+    }
+  ],
+  "read out loud": [
+    {
+      "word": "読み上げる",
+      "reading": "よみあげる",
+      "romaji": "yomiageru",
+      "meaning_id": "me-read out loud",
+      "meaning_en": "to read out loud (and clearly); to call a roll"
+    }
+  ],
+  "abate": [
+    {
+      "word": "弱まる",
+      "reading": "よわまる",
+      "romaji": "yowamaru",
+      "meaning_id": "me-abate",
+      "meaning_en": "to abate; to weaken; to be emaciated; to be dejected; to be perplexed"
+    }
+  ],
+  "weaken": [
+    {
+      "word": "弱める",
+      "reading": "よわめる",
+      "romaji": "yowameru",
+      "meaning_id": "me-weaken",
+      "meaning_en": "to weaken"
+    },
+    {
+      "word": "弱る",
+      "reading": "よわる",
+      "romaji": "yowaru",
+      "meaning_id": "me-weaken",
+      "meaning_en": "to weaken; to be troubled; to be downcast; to be emaciated; to be dejected; to be perplexed; to impair"
+    }
+  ],
+  "cut in": [
+    {
+      "word": "割り込む",
+      "reading": "わりこむ",
+      "romaji": "warikomu",
+      "meaning_id": "me-cut in",
+      "meaning_en": "to cut in; to thrust oneself into; to wedge oneself in; to muscle in on; to interrupt; to disturb"
+    }
+  ]
+}

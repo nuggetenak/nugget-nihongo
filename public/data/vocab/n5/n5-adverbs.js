@@ -252,7 +252,7 @@ window.vocabN5_Adverbs = [
   meaning_id: 'tapi; tetapi',
   meaning_en: 'but; however',
   jlpt: 'n5',
-  pos: 'conj',
+  pos: 'conjunction',
   common: true,
   related_grammar: [],
   formalitas: 2,
@@ -281,7 +281,7 @@ window.vocabN5_Adverbs = [
   meaning_id: 'dan kemudian; lalu',
   meaning_en: 'and then',
   jlpt: 'n5',
-  pos: 'conj',
+  pos: 'conjunction',
   common: true,
   related_grammar: [],
   formalitas: 2,
@@ -632,8 +632,9 @@ window.vocabN5_Adverbs = [
       "tags": [
         "tawaran",
         "sopan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"スコ＼シ"}
+},
     {
       "jp": "その後、お体の調子はいかがですか。",
       "id": "Setelah itu, bagaimana kondisi kesehatan Anda?",
@@ -692,8 +693,9 @@ window.vocabN5_Adverbs = [
       "tags": [
         "cuaca",
         "dugaan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"タブン￣"}
+},
     {
       "jp": "山田さんは多分もう家に帰ったと思います。",
       "id": "Saya kira Yamada-san barangkali sudah pulang ke rumah.",
@@ -756,8 +758,9 @@ window.vocabN5_Adverbs = [
       "tags": [
         "cuaca",
         "alam"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ダンダン￣"}
+},
     {
       "jp": "毎日練習して、日本語が段々上手になりました。",
       "id": "Dengan berlatih tiap hari, bahasa Jepang saya lambat laun menjadi mahir.",
@@ -820,8 +823,9 @@ window.vocabN5_Adverbs = [
       "tags": [
         "waktu",
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"チョウド￣"}
+},
     {
       "jp": "この靴のサイズは私の足にちょうどいいです。",
       "id": "Ukuran sepatu ini pas sekali untuk kaki saya.",
@@ -879,8 +883,9 @@ window.vocabN5_Adverbs = [
       "tags": [
         "kerja",
         "tanya"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":0,"downstep_mora":1,"contour":"＼"}
+},
     {
       "jp": "コーヒーはどうですか。",
       "id": "Bagaimana kalau minum kopi? (Mau kopi?)",
@@ -938,8 +943,9 @@ window.vocabN5_Adverbs = [
       "tags": [
         "percakapan",
         "tanya"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":4,"downstep_mora":1,"contour":"ド＼ウシテ"}
+},
     {
       "jp": "どうして日本語の勉強を始めましたか。",
       "id": "Mengapa kamu mulai belajar bahasa Jepang?",
@@ -998,8 +1004,9 @@ window.vocabN5_Adverbs = [
       "tags": [
         "sekolah",
         "tanya"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":2,"downstep_mora":1,"contour":"ナ＼ゼ"}
+},
     {
       "jp": "なぜ遅刻したのか教えてください。",
       "id": "Tolong beritahu mengapa kamu terlambat.",

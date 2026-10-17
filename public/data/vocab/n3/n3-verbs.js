@@ -6,10 +6,6 @@
 
 window.vocabN3_Verbs = [
 
-
-
-
-
 {
   "id": "vg-n3-00003",
   "word": "届ける",
@@ -40,8 +36,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "pekerjaan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"トドケ＼ル"}
+},
     {
       "jp": "警察に届けたほうがいい。",
       "id": "Sebaiknya dilaporkan ke polisi.",
@@ -127,8 +124,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"トドケ＼ル"}
+},
     {
       "jp": "棚の上に手が届かない。",
       "id": "Tangan saya tidak sampai ke atas rak.",
@@ -213,8 +211,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"ナレ＼ル"}
+},
     {
       "jp": "新しい仕事にまだ慣れていない。",
       "id": "Belum terbiasa dengan pekerjaan baru.",
@@ -277,8 +276,6 @@ window.vocabN3_Verbs = [
   }
 },
 
-
-
 {
   "id": "vg-n3-00007",
   "word": "壊す",
@@ -308,8 +305,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"ナレ＼ル"}
+},
     {
       "jp": "体を壊さないように気をつけて。",
       "id": "Hati-hati jangan sampai sakit (merusak tubuh).",
@@ -369,8 +367,6 @@ window.vocabN3_Verbs = [
   }
 },
 
-
-
 {
   "id": "vg-n3-00009",
   "word": "直る",
@@ -401,8 +397,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "kesehatan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"コワ＼ス"}
+},
     {
       "jp": "エアコンが直ったらしい。",
       "id": "Katanya AC-nya sudah diperbaiki.",
@@ -502,8 +499,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "keputusan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"キメル￣"}
+},
     {
       "jp": "将来の目標を決めるのは大切だ。",
       "id": "Menentukan tujuan masa depan itu penting.",
@@ -625,8 +623,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "pekerjaan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"キメル￣"}
+},
     {
       "jp": "まだ何も決まっていない。",
       "id": "Belum ada yang diputuskan.",
@@ -719,8 +718,6 @@ window.vocabN3_Verbs = [
   }
 },
 
-
-
 {
   "id": "vg-n3-00013",
   "word": "伝わる",
@@ -750,8 +747,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "emosi"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"キマル￣"}
+},
     {
       "jp": "噂がすぐに伝わった。",
       "id": "Rumor langsung menyebar.",
@@ -816,10 +814,6 @@ window.vocabN3_Verbs = [
   }
 },
 
-
-
-
-
 {
   "id": "vg-n3-00016",
   "word": "育てる",
@@ -850,8 +844,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "keluarga"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"ソダテ＼ル"}
+},
     {
       "jp": "花を育てるのが好きだ。",
       "id": "Saya suka menanam bunga.",
@@ -931,8 +926,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "keluarga"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"ソダ＼ツ"}
+},
     {
       "jp": "この植物は日陰でも育つ。",
       "id": "Tanaman ini tumbuh meskipun di tempat teduh.",
@@ -995,8 +991,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "emosi"
-      ]
-    },
+      ],
+  "pitch": {"pattern":4,"category":"nakadaka","mora_count":5,"downstep_mora":4,"contour":"アキラメ＼ル"}
+},
     {
       "jp": "何度失敗しても諦めなかった。",
       "id": "Meskipun gagal berkali-kali, dia tidak menyerah.",
@@ -1059,8 +1056,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "pendidikan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"ガンバ＼ル"}
+},
     {
       "jp": "頑張ってください！",
       "id": "Semangat!",
@@ -1140,8 +1138,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "keputusan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"マヨ＼ウ"}
+},
     {
       "jp": "道に迷ってしまった。",
       "id": "Tersesat di jalan.",
@@ -1235,8 +1234,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "keluarga"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"マヨ＼ウ"}
+},
     {
       "jp": "仕事を早く片付けたい。",
       "id": "Ingin cepat menyelesaikan pekerjaan.",
@@ -1340,8 +1340,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "hubungan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":4,"category":"nakadaka","mora_count":5,"downstep_mora":4,"contour":"カタヅケ＼ル"}
+},
     {
       "jp": "家族を守りたい。",
       "id": "Ingin melindungi keluarga.",
@@ -1437,8 +1438,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"マモ＼ル"}
+},
     {
       "jp": "問題から逃げてはいけない。",
       "id": "Jangan lari dari masalah.",
@@ -1514,8 +1516,6 @@ window.vocabN3_Verbs = [
   }
 },
 
-
-
 {
   "id": "vg-n3-00025",
   "word": "似る",
@@ -1546,8 +1546,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "keluarga"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"ニゲ＼ル"}
+},
     {
       "jp": "この二つの漢字は似ている。",
       "id": "Dua kanji ini mirip.",
@@ -1577,8 +1578,6 @@ window.vocabN3_Verbs = [
     "cond_tara": "にたら"
   }
 },
-
-
 
 {
   "id": "vg-n3-00029",
@@ -1610,8 +1609,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "akademik"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"カンケイ￣"}
+},
     {
       "jp": "彼とはいい関係を続けたい。",
       "id": "Ingin menjaga hubungan baik dengannya.",
@@ -1686,8 +1686,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"サンカ￣"}
+},
     {
       "jp": "会議に参加できますか。",
       "id": "Bisa ikut rapatnya?",
@@ -1704,8 +1705,6 @@ window.vocabN3_Verbs = [
   "jmdict_seq": "1302090",
   "frequency": 500
 },
-
-
 
 {
   "id": "vg-n3-00055",
@@ -1737,8 +1736,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "kesehatan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"エイキョウ￣"}
+},
     {
       "jp": "親の言葉は子供に大きな影響を与える。",
       "id": "Kata-kata orang tua memberikan pengaruh besar pada anak.",
@@ -1785,8 +1785,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "pekerjaan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"セイコウ￣"}
+},
     {
       "jp": "成功するまで頑張る。",
       "id": "Akan berusaha sampai berhasil.",
@@ -1848,8 +1849,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"シッパイ￣"}
+},
     {
       "jp": "テストに失敗してしまった。",
       "id": "Gagal di ujian.",
@@ -1868,8 +1870,6 @@ window.vocabN3_Verbs = [
   "jmdict_seq": "1320140",
   "frequency": 2000
 },
-
-
 
 {
   "id": "vg-n3-00059",
@@ -1900,8 +1900,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "pekerjaan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"カクニン￣"}
+},
     {
       "jp": "予約を確認したい。",
       "id": "Ingin mengonfirmasi reservasi.",
@@ -1918,8 +1919,6 @@ window.vocabN3_Verbs = [
   "jmdict_seq": "1205900",
   "frequency": 1500
 },
-
-
 
 {
   "id": "vg-n3-00061",
@@ -1951,8 +1950,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"フエ＼ル"}
+},
     {
       "jp": "体重が増えてしまった。",
       "id": "Berat badan naik.",
@@ -2027,8 +2027,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "pendidikan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"フエ＼ル"}
+},
     {
       "jp": "社員の数を増やす予定だ。",
       "id": "Berencana menambah jumlah karyawan.",
@@ -2104,8 +2105,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "akademik"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"フヤ＼ス"}
+},
     {
       "jp": "お腹が減った。",
       "id": "Lapar (perut berkurang).",
@@ -2170,8 +2172,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ヘラス￣"}
+},
     {
       "jp": "コストを減らす方法を考える。",
       "id": "Memikirkan cara mengurangi biaya.",
@@ -2236,8 +2239,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "pendidikan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"ウケ＼ル"}
+},
     {
       "jp": "手術を受けることにした。",
       "id": "Memutuskan untuk menjalani operasi.",
@@ -2389,8 +2393,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "hubungan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"ウケ＼ル"}
+},
     {
       "jp": "丁寧に断った。",
       "id": "Menolak dengan sopan.",
@@ -2478,8 +2483,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "pendidikan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"コトワ＼ル"}
+},
     {
       "jp": "原因を調べている。",
       "id": "Sedang menyelidiki penyebabnya.",
@@ -2510,8 +2516,6 @@ window.vocabN3_Verbs = [
   }
 },
 
-
-
 {
   "id": "vg-n3-00069",
   "word": "続く",
@@ -2541,8 +2545,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ツヅク￣"}
+},
     {
       "jp": "この道はどこまで続くのだろう。",
       "id": "Jalan ini berlanjut sampai mana ya.",
@@ -2637,8 +2642,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"チュ＼ウイ"}
+},
     {
       "jp": "先生に注意された。",
       "id": "Diperingatkan oleh guru.",
@@ -2678,12 +2684,6 @@ window.vocabN3_Verbs = [
   ]
 },
 
-
-
-
-
-
-
 {
   "id": "vg-n3-00074",
   "word": "渡る",
@@ -2713,8 +2713,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "perjalanan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ワタル￣"}
+},
     {
       "jp": "橋を渡るとすぐに公園がある。",
       "id": "Setelah menyeberangi jembatan, langsung ada taman.",
@@ -2794,8 +2795,6 @@ window.vocabN3_Verbs = [
   }
 },
 
-
-
 {
   "id": "vg-n3-00076",
   "word": "押す",
@@ -2825,8 +2824,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ワタル￣"}
+},
     {
       "jp": "ドアが重くて一人では押せなかった。",
       "id": "Pintunya berat sehingga tidak bisa kudorong sendiri.",
@@ -2938,8 +2938,6 @@ window.vocabN3_Verbs = [
   }
 },
 
-
-
 {
   "id": "vg-n3-00078",
   "word": "叩く",
@@ -2969,8 +2967,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":2,"downstep_mora":0,"contour":"オス￣"}
+},
     {
       "jp": "彼は怒ってテーブルを叩いた。",
       "id": "Dia marah dan memukul meja.",
@@ -3056,8 +3055,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"ツカ＼ム"}
+},
     {
       "jp": "このチャンスをつかまなければならない。",
       "id": "Saya harus meraih kesempatan ini.",
@@ -3176,8 +3176,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "olahraga"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"ツカ＼ム"}
+},
     {
       "jp": "緊張して拳を握りしめた。",
       "id": "Karena gugup, saya mengepalkan tangan.",
@@ -3260,8 +3261,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "alam-lingkungan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"オチ＼ル"}
+},
     {
       "jp": "財布がカバンから落ちてしまった。",
       "id": "Dompet tanpa sengaja jatuh dari tas.",
@@ -3477,8 +3479,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"オチ＼ル"}
+},
     {
       "jp": "うっかり鍵を落とした。",
       "id": "Saya tidak sengaja menjatuhkan kunci.",
@@ -3622,8 +3625,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"オト＼ス"}
+},
     {
       "jp": "道に財布が落ちていたので拾って交番に届けた。",
       "id": "Ada dompet di jalan, jadi saya pungut dan serahkan ke pos polisi.",
@@ -3737,8 +3741,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ナラベル￣"}
+},
     {
       "jp": "商品を棚にきれいに並べてください。",
       "id": "Tolong susun barang-barang dengan rapi di rak.",
@@ -3829,8 +3834,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "makanan-minuman"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ナラベル￣"}
+},
     {
       "jp": "コンサートのチケットを買うために朝から並んだ。",
       "id": "Saya mengantri dari pagi untuk membeli tiket konser.",
@@ -3923,8 +3929,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "belanja"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ナラブ￣"}
+},
     {
       "jp": "おにぎりを海苔で包んで食べた。",
       "id": "Saya membungkus onigiri dengan nori lalu memakannya.",
@@ -3987,8 +3994,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "alam-lingkungan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"タオレ＼ル"}
+},
     {
       "jp": "過労で会社で倒れてしまった。",
       "id": "Dia jatuh pingsan di kantor karena kelelahan.",
@@ -4112,8 +4120,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"タオレ＼ル"}
+},
     {
       "jp": "強い相手を倒して決勝に進んだ。",
       "id": "Mengalahkan lawan yang kuat dan maju ke final.",
@@ -4195,8 +4204,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "alam-lingkungan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":2,"downstep_mora":0,"contour":"ウク￣"}
+},
     {
       "jp": "空に白い雲が浮かんでいる。",
       "id": "Awan putih mengapung di langit.",
@@ -4302,8 +4312,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "alam-lingkungan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"シズム￣"}
+},
     {
       "jp": "重い石は水に沈む。",
       "id": "Batu yang berat tenggelam di air.",
@@ -4385,8 +4396,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "pekerjaan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"ウツ＼ス"}
+},
     {
       "jp": "荷物を新しいオフィスに移す作業が大変だった。",
       "id": "Pekerjaan memindahkan barang ke kantor baru sangat melelahkan.",
@@ -4498,8 +4510,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "pekerjaan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"ウツ＼ス"}
+},
     {
       "jp": "話題がいつの間にか別の方向に移っていた。",
       "id": "Topik pembicaraan tanpa sadar sudah beralih ke arah lain.",
@@ -4607,8 +4620,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"ウツ＼ル"}
+},
     {
       "jp": "新しいアパートに引っ越したばかりでまだ片付いていない。",
       "id": "Saya baru saja pindah ke apartemen baru dan belum beres-beres.",
@@ -4695,8 +4709,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"ヒッコ＼ス"}
+},
     {
       "jp": "試合前に呼吸を整えてから走り始めた。",
       "id": "Sebelum lomba, saya mengatur napas dulu baru mulai berlari.",
@@ -4794,8 +4809,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "olahraga"
-      ]
-    },
+      ],
+  "pitch": {"pattern":4,"category":"nakadaka","mora_count":5,"downstep_mora":4,"contour":"トトノエ＼ル"}
+},
     {
       "jp": "ペンチで針金を曲げた。",
       "id": "Saya membengkokkan kawat dengan tang.",
@@ -4896,8 +4912,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "perjalanan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"マゲル￣"}
+},
     {
       "jp": "長く使ったスプーンが少し曲がってしまった。",
       "id": "Sendok yang lama dipakai sedikit bengkok.",
@@ -4987,8 +5004,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "kesehatan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"マガル￣"}
+},
     {
       "jp": "子どもが公園で転んで泣き出した。",
       "id": "Anak itu terjatuh di taman dan mulai menangis.",
@@ -5082,8 +5100,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "alam-lingkungan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"コロガル￣"}
+},
     {
       "jp": "空き缶が風で道を転がっていた。",
       "id": "Kaleng kosong menggelinding di jalan karena angin.",
@@ -5178,8 +5197,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"コロガス￣"}
+},
     {
       "jp": "重い樽を転がして倉庫に入れた。",
       "id": "Saya menggelindingkan tong berat ke dalam gudang.",
@@ -5264,8 +5284,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":5,"downstep_mora":0,"contour":"モチアゲル￣"}
+},
     {
       "jp": "赤ちゃんをそっと持ち上げてベッドに置いた。",
       "id": "Saya mengangkat bayi dengan lembut dan meletakkannya di tempat tidur.",
@@ -5353,8 +5374,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "kehidupan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":5,"downstep_mora":0,"contour":"モチアゲル￣"}
+},
     {
       "jp": "どう返事すべきか<b>悩んだ</b>末、断ることにした。",
       "id": "Setelah lama galau, akhirnya memutuskan menolak.",
@@ -5410,8 +5432,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "emosi"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"オドロ＼ク"}
+},
     {
       "jp": "彼女の才能に<b>驚かされた</b>。",
       "id": "Aku terkejut oleh bakatnya.",
@@ -5488,7 +5511,7 @@ window.vocabN3_Verbs = [
     "emosi"
   ],
   "register": "neutral",
-  nuance: 'Means \'to be glad/delighted.\' Expresses joy outwardly. 喜んで is often used to mean \'with pleasure!\' when accepting a request or invitation.',
+  "nuance": "Means 'to be glad/delighted.' Expresses joy outwardly. 喜んで is often used to mean 'with pleasure!' when accepting a request or invitation.",
   "conj_type": "godan",
   "examples": [
     {
@@ -5497,8 +5520,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "emosi"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"オドロ＼ク"}
+},
     {
       "jp": "合格の知らせに家族みんなが<b>喜んだ</b>。",
       "id": "Seluruh keluarga senang mendengar kabar kelulusan.",
@@ -5597,7 +5621,7 @@ window.vocabN3_Verbs = [
     "emosi"
   ],
   "register": "neutral",
-  nuance: 'Means \'to grieve\' or \'to feel sad.\' Unlike 悲しい (adjective), this verb emphasizes the act of mourning or being sorrowful over time.',
+  "nuance": "Means 'to grieve' or 'to feel sad.' Unlike 悲しい (adjective), this verb emphasizes the act of mourning or being sorrowful over time.",
   "conj_type": "godan",
   "examples": [
     {
@@ -5606,8 +5630,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "emosi"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"ヨロコ＼ブ"}
+},
     {
       "jp": "ニュースを聞いて<b>悲しんだ</b>。",
       "id": "Saya bersedih mendengar berita itu.",
@@ -5673,8 +5698,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "pendidikan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"カナシ＼ム"}
+},
     {
       "jp": "彼は些細なことで<b>怒る</b>。",
       "id": "Dia marah karena hal sepele.",
@@ -5760,8 +5786,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "kejadian"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"オコ＼ル"}
+},
     {
       "jp": "なぜこんな問題が<b>起こる</b>のか。",
       "id": "Mengapa masalah seperti ini terjadi?",
@@ -5829,8 +5856,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "olahraga"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"オコ＼ル"}
+},
     {
       "jp": "三時間歩き<b>続けて</b>疲れた。",
       "id": "Lelah setelah terus berjalan tiga jam.",
@@ -5898,8 +5926,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "perjalanan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"トマル￣"}
+},
     {
       "jp": "時計が<b>止まって</b>いる。",
       "id": "Jam sedang tidak jalan.",
@@ -5958,8 +5987,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "teknologi"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"フエ＼ル"}
+},
     {
       "jp": "体重が<b>増えた</b>のでダイエットを始めた。",
       "id": "Berat badan naik jadi mulai diet.",
@@ -6025,8 +6055,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "pekerjaan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"フエ＼ル"}
+},
     {
       "jp": "貯金が<b>減った</b>。",
       "id": "Tabungan berkurang.",
@@ -6057,10 +6088,6 @@ window.vocabN3_Verbs = [
   }
 },
 
-
-
-
-
 {
   "id": "vg-n3-00123",
   "word": "伝える",
@@ -6077,7 +6104,7 @@ window.vocabN3_Verbs = [
     "komunikasi"
   ],
   "register": "neutral",
-  nuance: 'Means \'to convey/communicate.\' Transitive: 伝える (to tell someone). Compare with 伝わる (intransitive: the message gets across).',
+  "nuance": "Means 'to convey/communicate.' Transitive: 伝える (to tell someone). Compare with 伝わる (intransitive: the message gets across).",
   "conj_type": "ichidan",
   "examples": [
     {
@@ -6086,8 +6113,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "bahasa-komunikasi"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ツタエル￣"}
+},
     {
       "jp": "よろしくお<b>伝え</b>ください。",
       "id": "Tolong sampaikan salam saya.",
@@ -6118,10 +6146,6 @@ window.vocabN3_Verbs = [
   }
 },
 
-
-
-
-
 {
   "id": "vg-n3-00126",
   "word": "断る",
@@ -6147,8 +6171,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "hubungan-konsep"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"コトワ＼ル"}
+},
     {
       "jp": "申し訳ありませんが、<b>お断り</b>します。",
       "id": "Maaf, saya harus menolak.",
@@ -6231,8 +6256,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "pekerjaan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"コトワ＼ル"}
+},
     {
       "jp": "メールを<b>確認</b>しましたか？",
       "id": "Sudah cek emailnya?",
@@ -6277,7 +6303,7 @@ window.vocabN3_Verbs = [
     "aksi"
   ],
   "register": "neutral",
-  nuance: 'Means \'to prepare.\' する verb: 準備する. Slightly more formal than 用意する, which implies making something ready at hand.',
+  "nuance": "Means 'to prepare.' する verb: 準備する. Slightly more formal than 用意する, which implies making something ready at hand.",
   "conj_type": "suru",
   "examples": [
     {
@@ -6371,8 +6397,6 @@ window.vocabN3_Verbs = [
   }
 },
 
-
-
 {
   "id": "vg-n3-00151",
   "word": "移る",
@@ -6402,8 +6426,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"ウツ＼ル"}
+},
     {
       "jp": "彼の関心は仕事から家族に移った。",
       "id": "Perhatiannya beralih dari pekerjaan ke keluarga.",
@@ -6489,10 +6514,6 @@ window.vocabN3_Verbs = [
   }
 },
 
-
-
-
-
 {
   "id": "vg-n3-00154",
   "word": "変える",
@@ -6522,8 +6543,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"ウツ＼ル"}
+},
     {
       "jp": "彼女は髪型を変えた。",
       "id": "Dia mengubah gaya rambutnya.",
@@ -6606,8 +6628,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "perjalanan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"フエ＼ル"}
+},
     {
       "jp": "体重が3キロ増えてしまった。",
       "id": "Berat badanku bertambah 3 kg tanpa terasa.",
@@ -6690,8 +6713,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "ekonomi-keuangan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"フエ＼ル"}
+},
     {
       "jp": "運動する回数を増やすことにした。",
       "id": "Aku memutuskan untuk menambah frekuensi olahraga.",
@@ -6778,8 +6802,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "ekonomi-keuangan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"フヤ＼ス"}
+},
     {
       "jp": "薬を飲んだら痛みが減った。",
       "id": "Setelah minum obat, rasa sakitnya berkurang.",
@@ -6853,8 +6878,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "kesehatan",
         "makanan-minuman"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ヘラス￣"}
+},
     {
       "jp": "コストを減らすために努力している。",
       "id": "Kami berusaha keras untuk mengurangi biaya.",
@@ -6929,8 +6955,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "alam-lingkungan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ツヅク￣"}
+},
     {
       "jp": "会議は3時間以上続いた。",
       "id": "Rapat berlanjut lebih dari 3 jam.",
@@ -7034,8 +7061,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "pendidikan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ツヅケル￣"}
+},
     {
       "jp": "雨の中でも走り続けた。",
       "id": "Aku terus berlari meski di tengah hujan.",
@@ -7118,8 +7146,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "alam-lingkungan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"オチ＼ル"}
+},
     {
       "jp": "成績が落ちてしまって、親に怒られた。",
       "id": "Nilaiku turun dan aku dimarahi orang tua.",
@@ -7346,8 +7375,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "kehidupan-sehari",
         "teknologi"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"オチ＼ル"}
+},
     {
       "jp": "声を落として話してください。周りに人がいます。",
       "id": "Tolong bicara dengan suara lebih rendah. Ada orang di sekitar.",
@@ -7502,8 +7532,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "ekonomi-keuangan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"オト＼ス"}
+},
     {
       "jp": "どうぞ上がってください。",
       "id": "Silakan masuk (ke dalam rumah).",
@@ -7744,8 +7775,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "pekerjaan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"アガル￣"}
+},
     {
       "jp": "手を上げて質問してください。",
       "id": "Tolong angkat tangan jika ingin bertanya.",
@@ -7975,8 +8007,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "kesehatan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"アゲル￣"}
+},
     {
       "jp": "物価が下がることを期待している。",
       "id": "Aku berharap harga barang turun.",
@@ -8107,8 +8140,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "belanja",
         "ekonomi-keuangan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"サガ＼ル"}
+},
     {
       "jp": "頭を下げてお詫びした。",
       "id": "Aku menundukkan kepala untuk meminta maaf.",
@@ -8212,8 +8246,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "alam-lingkungan",
         "budaya"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"ヒラ＼ク"}
+},
     {
       "jp": "来月、新しい支店が開く予定です。",
       "id": "Bulan depan, cabang baru dijadwalkan akan dibuka.",
@@ -8346,8 +8381,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":2,"downstep_mora":0,"contour":"アク￣"}
+},
     {
       "jp": "誕生日プレゼントをわくわくしながら開けた。",
       "id": "Aku membuka hadiah ulang tahun dengan penuh semangat.",
@@ -8460,8 +8496,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "perjalanan",
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"アケル￣"}
+},
     {
       "jp": "銀行は午後3時に閉まる。",
       "id": "Bank tutup pukul 3 sore.",
@@ -8576,8 +8613,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"シマ＼ル"}
+},
     {
       "jp": "エアコンをつけるので窓を閉めた。",
       "id": "Karena menyalakan AC, aku menutup jendela.",
@@ -8650,8 +8688,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "pendidikan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"キマル￣"}
+},
     {
       "jp": "どこで会うかまだ決まっていない。",
       "id": "Tempat bertemu belum ditentukan.",
@@ -8753,8 +8792,6 @@ window.vocabN3_Verbs = [
   }
 },
 
-
-
 {
   "id": "vg-n3-00173",
   "word": "壊れる",
@@ -8783,8 +8820,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "teknologi"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"キマル￣"}
+},
     {
       "jp": "古い自転車がまた壊れた。",
       "id": "Sepeda tua itu rusak lagi.",
@@ -8884,8 +8922,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"コワレ＼ル"}
+},
     {
       "jp": "彼は健康を壊すほど働き続けた。",
       "id": "Dia terus bekerja sampai merusak kesehatannya.",
@@ -8983,8 +9022,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"コワ＼ス"}
+},
     {
       "jp": "お茶を入れましょうか？",
       "id": "Mau saya buatkan teh?",
@@ -9121,8 +9161,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"イレル￣"}
+},
     {
       "jp": "レポートを明日までに出してください。",
       "id": "Tolong kumpulkan laporan paling lambat besok.",
@@ -9243,8 +9284,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "olahraga",
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"ハシ＼ル"}
+},
     {
       "jp": "電車が時速200キロで走っている。",
       "id": "Kereta melaju dengan kecepatan 200 km per jam.",
@@ -9381,8 +9423,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "perjalanan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"ハシ＼ル"}
+},
     {
       "jp": "毎日1万歩歩くようにしている。",
       "id": "Aku berusaha berjalan 10.000 langkah setiap hari.",
@@ -9438,8 +9481,6 @@ window.vocabN3_Verbs = [
   }
 },
 
-
-
 {
   "id": "vg-n3-00180",
   "word": "飛ぶ",
@@ -9469,8 +9510,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "alam-lingkungan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"アル＼ク"}
+},
     {
       "jp": "飛行機で東京から大阪まで飛んだ。",
       "id": "Aku terbang dari Tokyo ke Osaka dengan pesawat.",
@@ -9608,8 +9650,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "perjalanan",
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":2,"downstep_mora":0,"contour":"トブ￣"}
+},
     {
       "jp": "橋を渡ると、右側に公園がある。",
       "id": "Setelah menyeberangi jembatan, ada taman di sisi kanan.",
@@ -9729,8 +9772,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "kehidupan-sehari",
         "pertemanan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ワタル￣"}
+},
     {
       "jp": "夜遅いので駅まで送っていきます。",
       "id": "Karena sudah malam, aku antar kamu ke stasiun.",
@@ -9832,8 +9876,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "pekerjaan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"ウケ＼ル"}
+},
     {
       "jp": "定期的に健康診断を受けることが大切だ。",
       "id": "Penting untuk mengikuti pemeriksaan kesehatan secara rutin.",
@@ -9993,8 +10038,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "pekerjaan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"ウケ＼ル"}
+},
     {
       "jp": "合格証書を一人ずつ学生に渡した。",
       "id": "Sertifikat kelulusan diserahkan satu per satu kepada siswa.",
@@ -10081,8 +10127,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":2,"downstep_mora":1,"contour":"ト＼ル"}
+},
     {
       "jp": "来週、有給休暇を取るつもりだ。",
       "id": "Minggu depan, aku berencana mengambil cuti berbayar.",
@@ -10244,8 +10291,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":2,"downstep_mora":0,"contour":"オク￣"}
+},
     {
       "jp": "旅行の前に宿を予約しておいた。",
       "id": "Aku sudah memesan penginapan sebagai persiapan sebelum perjalanan.",
@@ -10375,8 +10423,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "kehidupan-sehari",
         "hukum-aturan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ステル￣"}
+},
     {
       "jp": "古い服を捨てて新しいのを買った。",
       "id": "Aku membuang baju lama dan membeli yang baru.",
@@ -10485,8 +10534,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "kehidupan-sehari",
         "hukum-aturan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ステル￣"}
+},
     {
       "jp": "公園のゴミを拾うボランティアに参加した。",
       "id": "Aku ikut kegiatan sukarela memungut sampah di taman.",
@@ -10610,8 +10660,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "pendidikan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"オボエ＼ル"}
+},
     {
       "jp": "彼女の名前がどうしても覚えられない。",
       "id": "Bagaimanapun aku tidak bisa mengingat namanya.",
@@ -10717,8 +10768,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"オボエ＼ル"}
+},
     {
       "jp": "彼女の誕生日を忘れないようにしなければ。",
       "id": "Aku harus memastikan tidak lupa ulang tahunnya.",
@@ -10792,8 +10844,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "emosi",
         "karakter"
-      ]
-    },
+      ],
+  "pitch": {"pattern":4,"category":"nakadaka","mora_count":5,"downstep_mora":4,"contour":"アキラメ＼ル"}
+},
     {
       "jp": "彼はやっとその計画を諦めた。",
       "id": "Akhirnya dia melepaskan rencana itu.",
@@ -10864,8 +10917,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "keputusan",
         "karakter"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"エラ＼ブ"}
+},
     {
       "jp": "メニューから好きな料理を選んでください。",
       "id": "Tolong pilih makanan favorit dari menu.",
@@ -10953,8 +11007,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "bisnis",
         "sopan-santun"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"エラ＼ブ"}
+},
     {
       "jp": "急用ができたので飲み会の誘いを断った。",
       "id": "Karena ada urusan mendadak, aku menolak ajakan minum bersama.",
@@ -11052,8 +11107,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "perjalanan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"コトワ＼ル"}
+},
     {
       "jp": "彼は黒板に向かって字を書いた。",
       "id": "Dia menulis huruf sambil menghadap papan tulis.",
@@ -11151,8 +11207,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "kehidupan-sehari",
         "emosi"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ムカウ￣"}
+},
     {
       "jp": "少し離れた場所から写真を撮った。",
       "id": "Aku mengambil foto dari jarak yang agak jauh.",
@@ -11245,8 +11302,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "pekerjaan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"カ＼イギ"}
+},
     {
       "jp": "会議の結果、新しいプロジェクトが承認された。",
       "id": "Sebagai hasil rapat, proyek baru disetujui.",
@@ -11303,8 +11361,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "pekerjaan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ホウコク￣"}
+},
     {
       "jp": "事故が起きたら、すぐに報告してください。",
       "id": "Jika terjadi kecelakaan, segera laporkan.",
@@ -11363,8 +11422,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"レンラク￣"}
+},
     {
       "jp": "彼からの連絡をずっと待っている。",
       "id": "Terus menunggu kabar darinya.",
@@ -11465,8 +11525,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"レンラク￣"}
+},
     {
       "jp": "転職について親に相談した。",
       "id": "Membicarakan soal pindah kerja kepada orang tua.",
@@ -11524,8 +11585,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "bisnis"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ケッテイ￣"}
+},
     {
       "jp": "この件については、社長が最終決定を下す。",
       "id": "Untuk hal ini, direktur yang mengambil keputusan akhir.",
@@ -11584,8 +11646,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "perjalanan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ケイカク￣"}
+},
     {
       "jp": "この計画には問題があると思う。",
       "id": "Saya rasa rencana ini ada masalahnya.",
@@ -11641,8 +11704,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "pendidikan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"ジュ＼ンビ"}
+},
     {
       "jp": "パーティーの準備で忙しかった。",
       "id": "Sibuk mempersiapkan pesta.",
@@ -11699,8 +11763,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "perjalanan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"カクニン￣"}
+},
     {
       "jp": "メールの内容を確認してから返信した。",
       "id": "Mengecek isi email dulu sebelum membalas.",
@@ -11757,8 +11822,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "pendidikan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"セツメイ￣"}
+},
     {
       "jp": "この機械の使い方を説明できますか？",
       "id": "Bisakah Anda menjelaskan cara menggunakan mesin ini?",
@@ -11817,8 +11883,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "emosi-sosial"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"リ＼カイ"}
+},
     {
       "jp": "この内容が理解できない場合は、質問してください。",
       "id": "Jika tidak dapat memahami konten ini, silakan bertanya.",
@@ -11890,8 +11957,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "hukum-aturan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"シュチョウ￣"}
+},
     {
       "jp": "その主張には根拠がない。",
       "id": "Argumen itu tidak berdasar.",
@@ -11951,8 +12019,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "kesehatan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ドウイ￣"}
+},
     {
       "jp": "彼女の提案に全員が同意した。",
       "id": "Semua orang menyetujui proposalnya.",
@@ -12027,8 +12096,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":2,"downstep_mora":1,"contour":"キョ＼ヒ"}
+},
     {
       "jp": "入国を拒否されたケースが増えている。",
       "id": "Kasus penolakan masuk ke negara semakin meningkat.",
@@ -12088,8 +12158,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "pekerjaan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"ヒョ＼ウカ"}
+},
     {
       "jp": "この映画は海外でも高く評価されている。",
       "id": "Film ini juga mendapat apresiasi tinggi di luar negeri.",
@@ -12160,8 +12231,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "politik-masyarakat"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ヒハン￣"}
+},
     {
       "jp": "彼の発言はメディアから厳しく批判された。",
       "id": "Pernyataannya dikritik keras oleh media.",
@@ -12221,8 +12293,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "bisnis"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"テイアン￣"}
+},
     {
       "jp": "部長は彼の提案を採用した。",
       "id": "Kepala divisi menerima proposalnya.",
@@ -12278,8 +12351,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "pendidikan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"センタク￣"}
+},
     {
       "jp": "選択肢が多すぎて迷ってしまった。",
       "id": "Terlalu banyak pilihan sehingga bingung.",
@@ -12338,8 +12412,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "kesehatan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":4,"downstep_mora":1,"contour":"ハ＼ンダン"}
+},
     {
       "jp": "状況を冷静に判断することが大切だ。",
       "id": "Penting untuk menilai situasi dengan kepala dingin.",
@@ -12418,8 +12493,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "politik-masyarakat"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"ソ＼シキ"}
+},
     {
       "jp": "組織の目標を全員が共有することが大切だ。",
       "id": "Penting bagi semua anggota untuk berbagi tujuan organisasi.",
@@ -12494,8 +12570,6 @@ window.vocabN3_Verbs = [
   ]
 },
 
-
-
 {
   "id": "vg-n3-00286",
   "word": "感じる",
@@ -12525,8 +12599,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "emosi"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"ソ＼シキ"}
+},
     {
       "jp": "春の風を感じながら歩いた。",
       "id": "Saya berjalan sambil merasakan angin musim semi.",
@@ -12688,8 +12763,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "emosi"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"オドロ＼ク"}
+},
     {
       "jp": "彼の才能には誰もが驚いた。",
       "id": "Semua orang terkejut dengan bakatnya.",
@@ -12790,8 +12866,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"オドロ＼ク"}
+},
     {
       "jp": "彼の行動にはいつも困らされる。",
       "id": "Saya selalu dibuat repot oleh kelakuannya.",
@@ -12880,8 +12957,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "pekerjaan",
         "keputusan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"ナヤ＼ム"}
+},
     {
       "jp": "彼に正直に言うべきかどうか悩んだ。",
       "id": "Saya bimbang apakah harus jujur kepadanya atau tidak.",
@@ -13097,8 +13175,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "emosi-positif",
         "keluarga"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"ヨロコ＼ブ"}
+},
     {
       "jp": "よろこんでお手伝いします。",
       "id": "Dengan senang hati saya akan membantu.",
@@ -13225,8 +13304,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "keluarga",
         "emosi-positif"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"ヨロコ＼ブ"}
+},
     {
       "jp": "お客様を喜ばせるのが私たちの仕事です。",
       "id": "Pekerjaan kami adalah menyenangkan hati pelanggan.",
@@ -13297,8 +13377,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "pendidikan",
         "emosi-negatif"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"オコ＼ル"}
+},
     {
       "jp": "そんなことで怒らないでよ。",
       "id": "Jangan marah hanya karena itu.",
@@ -13368,8 +13449,6 @@ window.vocabN3_Verbs = [
   }
 },
 
-
-
 {
   "id": "vg-n3-00297",
   "word": "笑う",
@@ -13400,8 +13479,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "emosi-positif",
         "pertemanan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"イカ＼ル"}
+},
     {
       "jp": "笑う門には福来たる。",
       "id": "Keberuntungan datang ke rumah yang dipenuhi tawa.",
@@ -13521,8 +13601,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "pendidikan",
         "emosi-positif"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ワラウ￣"}
+},
     {
       "jp": "彼女は何も言わずにただ微笑んだ。",
       "id": "Dia hanya tersenyum tanpa berkata apa pun.",
@@ -13612,8 +13693,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "olahraga",
         "emosi"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"ホホエ＼ム"}
+},
     {
       "jp": "助けを求めて叫んだが、誰も来なかった。",
       "id": "Dia berteriak meminta tolong, tapi tidak ada yang datang.",
@@ -13699,8 +13781,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "emosi",
         "karakter"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"ダマ＼ル"}
+},
     {
       "jp": "だまって話を聞いてほしかった。",
       "id": "Saya ingin dia diam dan mendengarkan.",
@@ -13771,8 +13854,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "emosi-sosial"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"テレ＼ル"}
+},
     {
       "jp": "照れながらも、ありがとうと言った。",
       "id": "Meski malu-malu, dia tetap mengucapkan terima kasih.",
@@ -13990,8 +14074,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "percintaan",
         "emosi-negatif"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"オチコム￣"}
+},
     {
       "jp": "ミスをして落ち込んだが、また頑張ろうと思った。",
       "id": "Saya terpuruk karena melakukan kesalahan, tapi bertekad untuk bangkit lagi.",
@@ -14097,8 +14182,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "karakter",
         "emosi-positif"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"オチコム￣"}
+},
     {
       "jp": "失敗しても、必ず立ち直れる。",
       "id": "Meski gagal, pasti bisa bangkit kembali.",
@@ -14196,8 +14282,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "olahraga",
         "emosi-negatif"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":5,"downstep_mora":0,"contour":"タチナオル￣"}
+},
     {
       "jp": "期待していたのに、がっかりさせないでよ。",
       "id": "Padahal sudah berharap, jangan buat kecewa dong.",
@@ -14701,8 +14788,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "pekerjaan",
         "emosi-negatif"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"アセ＼ル"}
+},
     {
       "jp": "焦らず、落ち着いて考えよう。",
       "id": "Jangan panik, mari berpikir dengan tenang.",
@@ -14866,8 +14954,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "keluarga",
         "konsep-jepang"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"アマエル￣"}
+},
     {
       "jp": "彼女に甘えてばかりいてはダメだ。",
       "id": "Tidak boleh terus-terusan bergantung pada kebaikannya.",
@@ -14950,8 +15039,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "bahasa-komunikasi"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ツタエル￣"}
+},
     {
       "jp": "彼に感謝の気持ちを伝えた。",
       "id": "Saya menyampaikan rasa terima kasih kepada dia.",
@@ -15023,8 +15113,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "bahasa-komunikasi",
         "emosi"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ツタワル￣"}
+},
     {
       "jp": "言葉は違っても、思いは伝わった。",
       "id": "Meski bahasanya berbeda, maksudnya tersampaikan.",
@@ -15119,8 +15210,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "bahasa-komunikasi"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"シラセル￣"}
+},
     {
       "jp": "彼女に合格したことを知らせた。",
       "id": "Saya memberitahu dia bahwa saya lulus.",
@@ -15196,8 +15288,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "pertemanan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"シラセル￣"}
+},
     {
       "jp": "ラーメンを一つ頼みました。",
       "id": "Saya memesan satu ramen.",
@@ -15319,8 +15412,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "pertemanan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"タノ＼ム"}
+},
     {
       "jp": "一人で解決しようとして、誰にも頼らなかった。",
       "id": "Saya mencoba menyelesaikannya sendiri tanpa mengandalkan siapapun.",
@@ -15397,8 +15491,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "pertemanan",
         "hiburan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"タヨ＼ル"}
+},
     {
       "jp": "飲み会に誘ってもらって嬉しかった。",
       "id": "Saya senang diajak ke acara minum-minum.",
@@ -15542,8 +15637,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "pertemanan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ヤクソク￣"}
+},
     {
       "jp": "約束は必ず守ってください。",
       "id": "Tolong selalu tepati janji.",
@@ -15622,8 +15718,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "bisnis",
         "sopan-santun"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"アヤマ＼ル"}
+},
     {
       "jp": "ちゃんと謝れば許してもらえる。",
       "id": "Kalau minta maaf dengan sungguh-sungguh, pasti dimaafkan.",
@@ -15710,8 +15807,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "emosi-sosial"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"ユル＼ス"}
+},
     {
       "jp": "この場所への立ち入りは許されていない。",
       "id": "Memasuki tempat ini tidak diizinkan.",
@@ -15824,8 +15922,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "pendidikan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"ユル＼ス"}
+},
     {
       "jp": "子供をたくさん褒めて育てることが大切だ。",
       "id": "Penting untuk membesarkan anak dengan banyak pujian.",
@@ -15916,8 +16015,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "pendidikan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"ホメ＼ル"}
+},
     {
       "jp": "子供が嘘をついたので、しっかり叱った。",
       "id": "Karena anak berbohong, saya memarahinya dengan serius.",
@@ -15999,8 +16099,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"シカル￣"}
+},
     {
       "jp": "もう一度、日程を確かめてもいいですか？",
       "id": "Boleh saya mengecek jadwalnya sekali lagi?",
@@ -16073,8 +16174,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "karakter"
-      ]
-    },
+      ],
+  "pitch": {"pattern":4,"category":"nakadaka","mora_count":5,"downstep_mora":4,"contour":"タシカメ＼ル"}
+},
     {
       "jp": "彼の才能を認めている。",
       "id": "Saya mengakui bakatnya.",
@@ -16176,8 +16278,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "bisnis"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"サンセイ￣"}
+},
     {
       "jp": "みんなが賛成したので、計画が決まった。",
       "id": "Karena semua setuju, rencana pun ditetapkan.",
@@ -16227,8 +16330,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "pikiran-opini"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ハンタイ￣"}
+},
     {
       "jp": "両親は私の留学に反対した。",
       "id": "Orang tua saya menentang rencana saya untuk studi di luar negeri.",
@@ -16290,8 +16394,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "pendidikan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"ギ＼ロン"}
+},
     {
       "jp": "二人は夜遅くまで議論を続けた。",
       "id": "Keduanya terus berdebat hingga larut malam.",
@@ -16340,8 +16445,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "bahasa-komunikasi",
         "pendidikan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"クラベル￣"}
+},
     {
       "jp": "二つの商品を比べてから選んでください。",
       "id": "Tolong bandingkan dua produk ini sebelum memilih.",
@@ -16432,8 +16538,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "pekerjaan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"クラベル￣"}
+},
     {
       "jp": "荷物をまとめて出発の準備をした。",
       "id": "Saya mengatur barang bawaan dan bersiap berangkat.",
@@ -16535,8 +16642,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "pertemanan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ショウカイ￣"}
+},
     {
       "jp": "自己紹介をお願いします。",
       "id": "Mohon perkenalkan diri Anda.",
@@ -16593,8 +16701,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":4,"downstep_mora":1,"contour":"ショ＼ウタイ"}
+},
     {
       "jp": "パーティーに招待されて光栄です。",
       "id": "Saya merasa terhormat diundang ke pesta ini.",
@@ -16656,8 +16765,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "bisnis"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":4,"downstep_mora":1,"contour":"ショ＼ウタイ"}
+},
     {
       "jp": "ご意見はいつでも歓迎します。",
       "id": "Pendapat Anda selalu kami sambut dengan tangan terbuka.",
@@ -16707,8 +16817,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "pertemanan",
         "emosi-positif"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"カ＼ンシャ"}
+},
     {
       "jp": "毎日の生活に感謝することが大切だ。",
       "id": "Penting untuk bersyukur atas kehidupan sehari-hari.",
@@ -16758,8 +16869,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "pekerjaan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"レンラク￣"}
+},
     {
       "jp": "彼女からまだ連絡がない。",
       "id": "Dari dia belum ada kabar.",
@@ -16857,8 +16969,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "pekerjaan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"レンラク￣"}
+},
     {
       "jp": "毎週、進捗を報告する義務がある。",
       "id": "Ada kewajiban untuk melaporkan kemajuan setiap minggu.",
@@ -16908,8 +17021,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":4,"category":"nakadaka","mora_count":5,"downstep_mora":4,"contour":"ヨビカケ＼ル"}
+},
     {
       "jp": "市民にボランティア参加を呼びかけた。",
       "id": "Masyarakat diimbau untuk berpartisipasi sebagai sukarelawan.",
@@ -16998,8 +17112,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "perjalanan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":4,"category":"nakadaka","mora_count":5,"downstep_mora":4,"contour":"ヨビカケ＼ル"}
+},
     {
       "jp": "詳しい事情を尋ねてもいいですか？",
       "id": "Boleh saya menanyakan situasinya lebih detail?",
@@ -17084,8 +17199,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "pertemanan",
         "emosi-sosial"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"タズネ＼ル"}
+},
     {
       "jp": "その仕事のオファーを<b>断る</b>ことにした。",
       "id": "Aku memutuskan untuk menolak tawaran pekerjaan itu.",
@@ -17176,8 +17292,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "pendidikan",
         "sopan-santun"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"コトワ＼ル"}
+},
     {
       "jp": "まず<b>謝る</b>ことが大切だと思う。",
       "id": "Aku rasa hal yang penting adalah meminta maaf terlebih dahulu.",
@@ -17234,8 +17351,6 @@ window.vocabN3_Verbs = [
   }
 },
 
-
-
 {
   "id": "vg-n3-00409",
   "word": "叱る",
@@ -17268,8 +17383,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "pendidikan",
         "emosi-sosial"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"シカル￣"}
+},
     {
       "jp": "母は私が嘘をついたとき、厳しく<b>叱った</b>。",
       "id": "Ibu memarahi saya dengan keras saat saya berbohong.",
@@ -17352,8 +17468,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "pendidikan",
         "emosi-negatif"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"シカル￣"}
+},
     {
       "jp": "どちらを選ぶか<b>悩んだ</b>末、やめることにした。",
       "id": "Setelah lama dilema memilih mana, aku akhirnya memutuskan untuk berhenti.",
@@ -17416,8 +17533,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "emosi",
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"オドロ＼ク"}
+},
     {
       "jp": "彼女の実力に<b>驚かされた</b>。",
       "id": "Aku dibuat terkagum-kagum oleh kemampuannya.",
@@ -17510,8 +17628,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "keluarga",
         "emosi-positif"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"オドロ＼ク"}
+},
     {
       "jp": "合格の知らせを聞いて、家族みんな<b>喜んだ</b>。",
       "id": "Mendengar kabar kelulusan, seluruh keluarga bersukacita.",
@@ -17626,8 +17745,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "emosi-negatif",
         "karakter"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"ヨロコ＼ブ"}
+},
     {
       "jp": "遅刻したら上司に<b>怒られた</b>。",
       "id": "Aku dimarahi atasan karena terlambat.",
@@ -17688,10 +17808,6 @@ window.vocabN3_Verbs = [
   }
 },
 
-
-
-
-
 {
   "id": "vg-n3-00416",
   "word": "落ち込む",
@@ -17722,8 +17838,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "pendidikan",
         "emosi-negatif"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"イカ＼ル"}
+},
     {
       "jp": "彼女と別れてから、ずっと<b>落ち込んで</b>いる。",
       "id": "Sejak putus dengan pacarnya, dia terus terpuruk.",
@@ -17818,8 +17935,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "emosi-negatif",
         "karakter"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"オチコム￣"}
+},
     {
       "jp": "もっと勉強しておけばよかったと<b>後悔した</b>。",
       "id": "Aku menyesal tidak lebih giat belajar sebelumnya.",
@@ -18191,8 +18309,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "olahraga"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"ナゲ＼ル"}
+},
     {
       "jp": "川に石を<b>投げて</b>遊んだ。",
       "id": "Kami bermain dengan melempar batu ke sungai.",
@@ -18270,8 +18389,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ヒロウ￣"}
+},
     {
       "jp": "公園でゴミを<b>拾う</b>ボランティア活動に参加した。",
       "id": "Aku ikut kegiatan sukarela memungut sampah di taman.",
@@ -18384,8 +18504,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":2,"downstep_mora":0,"contour":"オス￣"}
+},
     {
       "jp": "エレベーターのボタンを<b>押した</b>。",
       "id": "Aku menekan tombol lift.",
@@ -18523,8 +18644,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":2,"downstep_mora":0,"contour":"オス￣"}
+},
     {
       "jp": "綱引きで力いっぱい<b>引いた</b>。",
       "id": "Aku menarik sekuat tenaga dalam tarik tambang.",
@@ -18707,8 +18829,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":2,"downstep_mora":0,"contour":"ヒク￣"}
+},
     {
       "jp": "お皿を食卓に<b>並べて</b>ください。",
       "id": "Tolong susunkan piring-piring di meja makan.",
@@ -18798,8 +18921,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ナラベル￣"}
+},
     {
       "jp": "ゴミはゴミ箱に<b>捨てて</b>ください。",
       "id": "Tolong buang sampah di tempat sampah.",
@@ -18897,8 +19021,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ステル￣"}
+},
     {
       "jp": "バスに乗り遅れそうになって、走って<b>追いかけた</b>。",
       "id": "Hampir ketinggalan bus, aku berlari mengejarnya.",
@@ -18993,8 +19118,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":4,"category":"nakadaka","mora_count":5,"downstep_mora":4,"contour":"オイカケ＼ル"}
+},
     {
       "jp": "責任から<b>逃げる</b>のはよくない。",
       "id": "Tidak baik melarikan diri dari tanggung jawab.",
@@ -19100,8 +19226,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"ニゲ＼ル"}
+},
     {
       "jp": "猫が棚の裏に<b>隠れて</b>いる。",
       "id": "Kucing itu bersembunyi di balik rak.",
@@ -19205,8 +19332,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"カクレ＼ル"}
+},
     {
       "jp": "新しいアルバイトを<b>見つけた</b>。",
       "id": "Aku menemukan pekerjaan paruh waktu baru.",
@@ -19295,8 +19423,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ミツケル￣"}
+},
     {
       "jp": "隠れていたのに先生に<b>見つかって</b>しまった。",
       "id": "Walaupun sudah bersembunyi, tetap ketahuan guru.",
@@ -19375,8 +19504,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ミツカル￣"}
+},
     {
       "jp": "今、いいアパートを<b>探して</b>いる。",
       "id": "Aku sedang mencari apartemen yang bagus.",
@@ -19460,8 +19590,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "makanan-minuman",
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"サガス￣"}
+},
     {
       "jp": "たくさんの候補の中から最終的に彼女を<b>選んだ</b>。",
       "id": "Dari banyak kandidat, akhirnya dia yang dipilih.",
@@ -19543,8 +19674,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "pekerjaan",
         "bisnis"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"エラ＼ブ"}
+},
     {
       "jp": "<b>会議</b>の資料を事前に配布してください。",
       "id": "Tolong bagikan materi rapat sebelumnya.",
@@ -19595,8 +19727,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "bisnis",
         "pekerjaan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ハッピョウ￣"}
+},
     {
       "jp": "研究結果を学会で<b>発表した</b>。",
       "id": "Hasil penelitian dipresentasikan di konferensi akademik.",
@@ -19647,8 +19780,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "pekerjaan",
         "bisnis"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ホウコク￣"}
+},
     {
       "jp": "毎週月曜日に<b>報告書</b>を提出する。",
       "id": "Setiap Senin aku menyerahkan laporan.",
@@ -19698,8 +19832,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "pekerjaan",
         "bisnis"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"ソ＼シキ"}
+},
     {
       "jp": "<b>組織</b>の一員として責任を果たしたい。",
       "id": "Aku ingin memenuhi tanggung jawab sebagai anggota organisasi.",
@@ -19798,8 +19933,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "pekerjaan",
         "bisnis"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"ソ＼シキ"}
+},
     {
       "jp": "このプロジェクトは私が<b>担当している</b>。",
       "id": "Proyek ini aku yang bertanggung jawab.",
@@ -19848,8 +19984,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "ekonomi-keuangan",
         "bisnis"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"トウシ￣"}
+},
     {
       "jp": "教育への<b>投資</b>は将来の自分への投資だ。",
       "id": "Investasi pada pendidikan adalah investasi untuk diri di masa depan.",
@@ -19899,8 +20036,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "kehidupan-sehari",
         "hukum-aturan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ケイヤク￣"}
+},
     {
       "jp": "<b>契約</b>書をよく読んでからサインしてください。",
       "id": "Tolong baca kontraknya dengan teliti sebelum menandatangani.",
@@ -19951,8 +20089,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "bisnis",
         "ekonomi-keuangan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":4,"downstep_mora":2,"contour":"トリ＼ヒキ"}
+},
     {
       "jp": "あの会社とは長年<b>取引</b>している。",
       "id": "Kami sudah bertransaksi dengan perusahaan itu selama bertahun-tahun.",
@@ -20018,8 +20157,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "pekerjaan",
         "bisnis"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":4,"downstep_mora":2,"contour":"トリ＼ヒキ"}
+},
     {
       "jp": "両国の<b>交渉</b>は難航している。",
       "id": "Perundingan antara kedua negara berlangsung alot.",
@@ -20083,8 +20223,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "bisnis",
         "pekerjaan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"テイアン￣"}
+},
     {
       "jp": "部長の<b>提案</b>をチーム全員が支持した。",
       "id": "Seluruh tim mendukung proposal dari kepala divisi.",
@@ -20135,8 +20276,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "perjalanan",
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ケイカク￣"}
+},
     {
       "jp": "プロジェクトの<b>計画</b>書を作成してください。",
       "id": "Tolong buat dokumen perencanaan proyek.",
@@ -20155,8 +20297,6 @@ window.vocabN3_Verbs = [
   "jmdict_seq": "1252090",
   "frequency": 500
 },
-
-
 
 {
   "id": "vg-n3-00462",
@@ -20189,8 +20329,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "politik-masyarakat",
         "pendidikan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"カイカク￣"}
+},
     {
       "jp": "会社の体制を根本から<b>改革する</b>必要がある。",
       "id": "Perlu melakukan reformasi mendasar pada struktur perusahaan.",
@@ -20241,8 +20382,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "kehidupan-sehari",
         "emosi-sosial"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"カイケツ￣"}
+},
     {
       "jp": "このトラブルの<b>解決</b>には時間がかかる。",
       "id": "Penyelesaian masalah ini membutuhkan waktu.",
@@ -20293,8 +20435,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "pekerjaan",
         "karakter"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"シンライ￣"}
+},
     {
       "jp": "友達を<b>信頼</b>することが本当の友情の基本だ。",
       "id": "Mempercayai teman adalah dasar dari persahabatan yang sejati.",
@@ -20356,8 +20499,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "bisnis",
         "pekerjaan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"シンヨウ￣"}
+},
     {
       "jp": "彼の言葉は<b>信用</b>できない。いつも嘘をつくから。",
       "id": "Kata-katanya tidak bisa dipercaya. Karena dia selalu berbohong.",
@@ -20433,8 +20577,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "keluarga",
         "emosi-positif"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ソンケイ￣"}
+},
     {
       "jp": "彼女の努力と誠実さには<b>尊敬</b>の念を感じる。",
       "id": "Saya merasakan rasa hormat atas kerja keras dan kejujurannya.",
@@ -20485,8 +20630,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "pertemanan",
         "emosi-positif"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"カ＼ンシャ"}
+},
     {
       "jp": "毎日の小さなことにも<b>感謝</b>する気持ちが大切だ。",
       "id": "Penting untuk memiliki rasa syukur atas hal-hal kecil sehari-hari.",
@@ -20537,8 +20683,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "politik-masyarakat",
         "pikiran-opini"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ヒハン￣"}
+},
     {
       "jp": "他人を<b>批判</b>する前に、自分の行動を振り返ろう。",
       "id": "Sebelum mengkritik orang lain, mari introspeksi tindakan diri sendiri.",
@@ -20589,8 +20736,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "bisnis",
         "pikiran-opini"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"ギ＼ロン"}
+},
     {
       "jp": "クラスで環境問題について活発な<b>議論</b>をした。",
       "id": "Kami melakukan diskusi aktif tentang masalah lingkungan di kelas.",
@@ -20641,8 +20789,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "alam-lingkungan",
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"イ＼シキ"}
+},
     {
       "jp": "事故で頭を打って<b>意識</b>を失った。",
       "id": "Ia kehilangan kesadaran setelah kepalanya terbentur dalam kecelakaan.",
@@ -20710,8 +20859,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "kehidupan-sehari",
         "waktu"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"キオク￣"}
+},
     {
       "jp": "単語を<b>記憶</b>するために毎日復習している。",
       "id": "Saya mengulang setiap hari untuk menghafal kosakata.",
@@ -20775,8 +20925,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "emosi-sosial",
         "karakter"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ソウゾウ￣"}
+},
     {
       "jp": "10年後の自分を<b>想像</b>するのは難しい。",
       "id": "Sulit untuk membayangkan diri saya 10 tahun ke depan.",
@@ -20827,8 +20978,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "keputusan",
         "bisnis"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":4,"downstep_mora":1,"contour":"ハ＼ンダン"}
+},
     {
       "jp": "医師の<b>判断</b>を信じて治療を続けた。",
       "id": "Saya melanjutkan pengobatan dengan mempercayai penilaian dokter.",
@@ -20900,8 +21052,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "pekerjaan",
         "keputusan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ケツダン￣"}
+},
     {
       "jp": "困難な状況でも素早く<b>決断</b>できる人が求められる。",
       "id": "Dibutuhkan orang yang bisa mengambil keputusan cepat bahkan dalam situasi sulit.",
@@ -20954,8 +21107,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "keluarga",
         "sebab-akibat"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"エイキョウ￣"}
+},
     {
       "jp": "台風の<b>影響</b>で電車が止まった。",
       "id": "Kereta berhenti akibat dampak dari angin topan.",
@@ -21006,8 +21160,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "bahasa-komunikasi",
         "pikiran-opini"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ムジュン￣"}
+},
     {
       "jp": "この政策には多くの<b>矛盾</b>が含まれている。",
       "id": "Kebijakan ini mengandung banyak kontradiksi.",
@@ -21070,8 +21225,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "hubungan-konsep",
         "ilmu-pengetahuan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ムジュン￣"}
+},
     {
       "jp": "健康と食事の<b>関連</b>について研究している。",
       "id": "Saya sedang meneliti tentang kaitan antara kesehatan dan pola makan.",
@@ -21134,8 +21290,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "bahasa-komunikasi",
         "pikiran-opini"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"カンレン￣"}
+},
     {
       "jp": "<b>意図</b>せず相手を傷つけてしまった。",
       "id": "Saya tanpa sengaja menyakiti perasaan orang lain.",
@@ -21185,8 +21342,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "pendidikan",
         "keputusan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"キメル￣"}
+},
     {
       "jp": "会議でプロジェクトの日程を<b>決める</b>。",
       "id": "Kami memutuskan jadwal proyek dalam rapat.",
@@ -21311,8 +21469,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "perjalanan",
         "keputusan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"キメル￣"}
+},
     {
       "jp": "勝者が<b>決まる</b>まで試合を続けます。",
       "id": "Pertandingan dilanjutkan sampai pemenang ditentukan.",
@@ -21437,8 +21596,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "emosi",
         "perubahan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"キマル￣"}
+},
     {
       "jp": "髪型を<b>変えた</b>ら、友達に褒められた。",
       "id": "Setelah mengubah gaya rambut, teman-teman memuji.",
@@ -21515,8 +21675,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "kehidupan-sehari",
         "perubahan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"カワル￣"}
+},
     {
       "jp": "天気が<b>変わりやすい</b>季節だ。",
       "id": "Ini adalah musim di mana cuaca mudah berubah.",
@@ -21608,8 +21769,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "teknologi",
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"カワル￣"}
+},
     {
       "jp": "運動不足で体重が<b>増えた</b>。",
       "id": "Karena kurang olahraga, berat badan bertambah.",
@@ -21685,8 +21847,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "ekonomi-keuangan",
         "keputusan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"フエ＼ル"}
+},
     {
       "jp": "会社は従業員を<b>増やす</b>計画だ。",
       "id": "Perusahaan berencana menambah jumlah karyawan.",
@@ -21764,8 +21927,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "makanan-minuman",
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"フヤ＼ス"}
+},
     {
       "jp": "過疎化が進み、村の人口が<b>減っている</b>。",
       "id": "Depopulasi terus berlanjut dan populasi desa semakin berkurang.",
@@ -21831,8 +21995,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "kesehatan",
         "keputusan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ヘラス￣"}
+},
     {
       "jp": "会社はコストを<b>減らす</b>ために、在宅勤務を導入した。",
       "id": "Perusahaan memperkenalkan kerja dari rumah untuk menekan biaya.",
@@ -21898,8 +22063,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "alam-lingkungan",
         "perjalanan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ヒロガル￣"}
+},
     {
       "jp": "SNSでその話題が<b>広がった</b>。",
       "id": "Topik itu menyebar di media sosial.",
@@ -21974,8 +22140,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "perjalanan",
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ヒロガル￣"}
+},
     {
       "jp": "留学で人間関係を<b>広げる</b>ことができた。",
       "id": "Berkat studi di luar negeri, aku bisa memperluas jaringan pertemanan.",
@@ -22078,8 +22245,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "kehidupan-sehari",
         "pendidikan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ヒロゲル￣"}
+},
     {
       "jp": "雨の中でも走り<b>続けた</b>。",
       "id": "Aku terus berlari meski di tengah hujan.",
@@ -22156,8 +22324,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "alam-lingkungan",
         "waktu"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ツヅク￣"}
+},
     {
       "jp": "この道はどこまで<b>続く</b>のだろう。",
       "id": "Entah sampai mana jalan ini berlanjut.",
@@ -22254,8 +22423,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "hiburan",
         "waktu"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ハジマル￣"}
+},
     {
       "jp": "新学期が<b>始まる</b>と、気持ちも新たになる。",
       "id": "Ketika semester baru dimulai, semangat pun terbarukan.",
@@ -22338,8 +22508,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "pekerjaan",
         "keputusan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ハジメル￣"}
+},
     {
       "jp": "子どもたちは遊び<b>始めた</b>。",
       "id": "Anak-anak mulai bermain.",
@@ -22434,8 +22605,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "pendidikan",
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ハジメル￣"}
+},
     {
       "jp": "夏休みが<b>終わり</b>、また学校が始まった。",
       "id": "Liburan musim panas usai, sekolah pun dimulai lagi.",
@@ -22569,8 +22741,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "pekerjaan",
         "emosi-positif"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"オワル￣"}
+},
     {
       "jp": "すべての手続きを<b>終えた</b>ので、帰ってもいい。",
       "id": "Karena semua prosedur sudah diselesaikan, boleh pulang.",
@@ -22661,8 +22834,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "alam-lingkungan",
         "budaya"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"オエル￣"}
+},
     {
       "jp": "来週、創立記念パーティーを<b>開く</b>。",
       "id": "Minggu depan, pesta peringatan pendirian akan diadakan.",
@@ -22788,8 +22962,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "kehidupan-sehari",
         "emosi"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":2,"downstep_mora":0,"contour":"アク￣"}
+},
     {
       "jp": "パソコンのタブを<b>閉じる</b>のを忘れた。",
       "id": "Lupa menutup tab di komputer.",
@@ -22854,8 +23029,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "ekonomi-keuangan",
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"アガル￣"}
+},
     {
       "jp": "雨が<b>上がったら</b>、散歩しよう。",
       "id": "Kalau hujannya sudah berhenti, ayo jalan-jalan.",
@@ -23088,8 +23264,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "pendidikan",
         "pekerjaan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"アガル￣"}
+},
     {
       "jp": "スピードを<b>上げて</b>ください。",
       "id": "Tolong naikkan kecepatannya.",
@@ -23312,8 +23489,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "alam-lingkungan",
         "waktu"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"アゲル￣"}
+},
     {
       "jp": "売り上げが<b>下がって</b>、会社が心配だ。",
       "id": "Penjualan menurun dan perusahaan jadi khawatir.",
@@ -23436,8 +23614,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "bisnis",
         "belanja"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"サガ＼ル"}
+},
     {
       "jp": "図書館ではスマホの音量を<b>下げて</b>ください。",
       "id": "Di perpustakaan, tolong pelankan volume ponsel.",
@@ -23532,8 +23711,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "kehidupan-sehari",
         "budaya"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"アツマ＼ル"}
+},
     {
       "jp": "ここに世界中から観光客が<b>集まる</b>。",
       "id": "Wisatawan dari seluruh dunia berkumpul di sini.",
@@ -23610,8 +23790,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "hiburan",
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"アツマ＼ル"}
+},
     {
       "jp": "その映画は世界中で注目を<b>集めた</b>。",
       "id": "Film itu menarik perhatian dari seluruh dunia.",
@@ -23676,8 +23857,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "emosi",
         "bahasa-komunikasi"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ツタワル￣"}
+},
     {
       "jp": "この料理は昔から地域に<b>伝わって</b>いる。",
       "id": "Masakan ini telah diturunkan di daerah ini sejak zaman dahulu.",
@@ -23774,8 +23956,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "emosi-positif",
         "bahasa-komunikasi"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ツタエル￣"}
+},
     {
       "jp": "大切な技術を次の世代に<b>伝える</b>のが使命だ。",
       "id": "Mewariskan teknik penting kepada generasi berikutnya adalah sebuah misi.",
@@ -23840,8 +24023,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "teknologi",
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"コワレ＼ル"}
+},
     {
       "jp": "落としたら時計が<b>壊れて</b>しまった。",
       "id": "Setelah terjatuh, jam tangannya rusak.",
@@ -23935,8 +24119,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "keluarga",
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"コワレ＼ル"}
+},
     {
       "jp": "無理をしすぎて体を<b>壊した</b>。",
       "id": "Karena terlalu memaksakan diri, kesehatan tubuhnya rusak.",
@@ -24028,8 +24213,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "kehidupan-sehari",
         "perubahan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"コワ＼ス"}
+},
     {
       "jp": "梅雨の時期は洗濯物が<b>乾きにくい</b>。",
       "id": "Saat musim hujan, cucian susah kering.",
@@ -24093,8 +24279,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"カワカ＼ス"}
+},
     {
       "jp": "濡れた靴を日光で<b>乾かす</b>。",
       "id": "Mengeringkan sepatu yang basah dengan sinar matahari.",
@@ -24159,8 +24346,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "alam-lingkungan",
         "hukum-aturan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"オセン￣"}
+},
     {
       "jp": "大気<b>汚染</b>が健康に与える影響は深刻だ。",
       "id": "Dampak polusi udara terhadap kesehatan sangat serius.",
@@ -24212,8 +24400,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "kesehatan",
         "ilmu-pengetahuan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"チリョウ￣"}
+},
     {
       "jp": "医師の指示に従って、きちんと<b>治療</b>を受けてください。",
       "id": "Ikuti petunjuk dokter dan terimalah pengobatan dengan benar.",
@@ -24262,8 +24451,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "kesehatan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"カイフク￣"}
+},
     {
       "jp": "病気から<b>回復</b>するまで、無理をしないでください。",
       "id": "Sampai pulih dari sakit, jangan memaksakan diri.",
@@ -24341,8 +24531,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "kesehatan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"カイフク￣"}
+},
     {
       "jp": "<b>予防</b>は治療よりも重要だと言われている。",
       "id": "Konon pencegahan lebih penting daripada pengobatan.",
@@ -24402,8 +24593,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "kesehatan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ヨボウ￣"}
+},
     {
       "jp": "精密検査の結果、<b>診断</b>が確定した。",
       "id": "Berdasarkan hasil pemeriksaan mendetail, diagnosis dikonfirmasi.",
@@ -24451,8 +24643,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "kesehatan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ショホウ￣"}
+},
     {
       "jp": "<b>処方</b>箋なしでは買えない薬もある。",
       "id": "Ada juga obat yang tidak bisa dibeli tanpa resep.",
@@ -24500,8 +24693,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "kesehatan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"シュ＼ジュツ"}
+},
     {
       "jp": "<b>手術</b>は成功し、患者は回復中です。",
       "id": "Operasi berhasil dan pasien sedang dalam proses pemulihan.",
@@ -24565,8 +24759,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "kesehatan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ニュウイン￣"}
+},
     {
       "jp": "検査のために<b>入院</b>が必要かもしれない。",
       "id": "Mungkin diperlukan rawat inap untuk keperluan pemeriksaan.",
@@ -24613,8 +24808,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "kesehatan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"タイイン￣"}
+},
     {
       "jp": "<b>退院</b>後も定期的に通院が必要です。",
       "id": "Setelah keluar dari RS, tetap diperlukan kunjungan rutin.",
@@ -24842,8 +25038,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "kesehatan",
         "衛生"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"カンセン￣"}
+},
     {
       "jp": "ウイルスに<b>感染</b>した可能性があるため、検査を受けた。",
       "id": "Karena ada kemungkinan terinfeksi virus, aku menjalani pemeriksaan.",
@@ -24905,8 +25102,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "bahasa-komunikasi",
         "pikiran-opini"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ツタエル￣"}
+},
     {
       "jp": "彼女への気持ちを<b>伝える</b>勇気がなかった。",
       "id": "Aku tidak punya keberanian untuk menyampaikan perasaanku kepadanya.",
@@ -24967,8 +25165,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "bahasa-komunikasi"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ツタワル￣"}
+},
     {
       "jp": "このニュースはすぐに全国に<b>伝わった</b>。",
       "id": "Berita ini segera tersebar ke seluruh negeri.",
@@ -25124,8 +25323,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "bahasa-komunikasi",
         "budaya"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"アラワ＼ス"}
+},
     {
       "jp": "彼の表情は深い悲しみを<b>表して</b>いた。",
       "id": "Ekspresi wajahnya mengungkapkan kesedihan yang mendalam.",
@@ -25187,8 +25387,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "ilmu-pengetahuan",
         "bahasa-komunikasi"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"シメ＼ス"}
+},
     {
       "jp": "地図で目的地への道を<b>示して</b>もらった。",
       "id": "Aku diperlihatkan jalan menuju tujuan di peta.",
@@ -25330,8 +25531,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "bahasa-komunikasi",
         "bisnis"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"ノベ＼ル"}
+},
     {
       "jp": "彼は報告書の中で問題点を詳しく<b>述べた</b>。",
       "id": "Dia menguraikan poin-poin masalah secara rinci dalam laporan.",
@@ -25412,8 +25614,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "pekerjaan",
         "bahasa-komunikasi"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"ノベ＼ル"}
+},
     {
       "jp": "専門家は計画のリスクを早い段階で<b>指摘した</b>。",
       "id": "Para ahli menunjukkan risiko dari rencana tersebut sejak tahap awal.",
@@ -25536,8 +25739,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "pendidikan",
         "bahasa-komunikasi"
-      ]
-    },
+      ],
+  "pitch": {"pattern":5,"category":"nakadaka","mora_count":6,"downstep_mora":5,"contour":"トイアワセ＼ル"}
+},
     {
       "jp": "商品の在庫状況についてお<b>問い合わせ</b>ください。",
       "id": "Silakan hubungi kami untuk menanyakan ketersediaan produk.",
@@ -25618,8 +25822,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "pendidikan",
         "bisnis"
-      ]
-    },
+      ],
+  "pitch": {"pattern":5,"category":"nakadaka","mora_count":6,"downstep_mora":5,"contour":"トイアワセ＼ル"}
+},
     {
       "jp": "奨学金を<b>申し込む</b>には、書類の準備が必要だ。",
       "id": "Untuk mengajukan beasiswa, persiapan dokumen diperlukan.",
@@ -25698,8 +25903,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "hukum-aturan",
         "pikiran-opini"
-      ]
-    },
+      ],
+  "pitch": {"pattern":4,"category":"nakadaka","mora_count":5,"downstep_mora":4,"contour":"モウシコ＼ム"}
+},
     {
       "jp": "彼はこの薬が必ず効くと<b>断言した</b>が、本当だろうか。",
       "id": "Dia menyatakan dengan tegas bahwa obat ini pasti manjur, tapi apakah itu benar?",
@@ -25884,8 +26090,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "bahasa-komunikasi",
         "karakter"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ミトメル￣"}
+},
     {
       "jp": "この資格は多くの国で正式に<b>認められている</b>。",
       "id": "Sertifikasi ini diakui secara resmi di banyak negara.",
@@ -25978,8 +26185,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "bahasa-komunikasi"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ゴカイ￣"}
+},
     {
       "jp": "その件については<b>誤解</b>があるようなので、説明させてください。",
       "id": "Tampaknya ada kesalahpahaman soal hal itu, jadi izinkan saya menjelaskan.",
@@ -26028,8 +26236,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "bahasa-komunikasi",
         "sastra"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ホンヤク￣"}
+},
     {
       "jp": "機械<b>翻訳</b>の精度は近年大幅に向上している。",
       "id": "Akurasi terjemahan mesin meningkat pesat dalam beberapa tahun terakhir.",
@@ -26110,8 +26319,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "bahasa-komunikasi",
         "bisnis"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ホンヤク￣"}
+},
     {
       "jp": "日本語と英語の<b>通訳</b>として長年活躍している。",
       "id": "Dia sudah bertahun-tahun aktif bekerja sebagai juru bahasa Jepang-Inggris.",
@@ -26172,8 +26382,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "bahasa-komunikasi"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ハツオン￣"}
+},
     {
       "jp": "正しい<b>発音</b>を身につけるには、声に出して繰り返し練習することが大切だ。",
       "id": "Untuk menguasai pengucapan yang benar, penting untuk berlatih dengan mengucapkannya berulang kali.",
@@ -26234,8 +26445,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "pendidikan",
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"ジュ＼ギョウ"}
+},
     {
       "jp": "先生の<b>授業</b>はいつもわかりやすい。",
       "id": "Pelajaran guru itu selalu mudah dipahami.",
@@ -26282,8 +26494,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "pendidikan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"odaka","mora_count":3,"downstep_mora":3,"contour":"コウギ＼"}
+},
     {
       "jp": "その<b>講義</b>はとても難しくて、メモを取るのが大変だった。",
       "id": "Kuliah itu sangat sulit sehingga sangat susah mencatat.",
@@ -26332,8 +26545,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "pendidikan",
         "ilmu-pengetahuan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"エンシュウ￣"}
+},
     {
       "jp": "<b>演習</b>の授業では、学生が発表する機会が多い。",
       "id": "Dalam kelas seminar, mahasiswa sering mendapat kesempatan presentasi.",
@@ -26399,8 +26613,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "pendidikan",
         "kesehatan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ジッシュウ￣"}
+},
     {
       "jp": "教育<b>実習</b>で中学校に行った。",
       "id": "Aku pergi ke SMP untuk praktik mengajar.",
@@ -26447,8 +26662,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "pendidikan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"シケ＼ン"}
+},
     {
       "jp": "<b>試験</b>に合格するために、毎日勉強している。",
       "id": "Aku belajar setiap hari agar lulus ujian.",
@@ -26511,8 +26727,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "pendidikan",
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":0,"downstep_mora":1,"contour":"＼"}
+},
     {
       "jp": "その<b>テスト</b>は10点満点で、私は8点だった。",
       "id": "Tes itu nilainya dari 10, dan aku mendapat 8.",
@@ -26576,8 +26793,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "pendidikan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ソツギョウ￣"}
+},
     {
       "jp": "<b>卒業</b>式には家族全員が来てくれた。",
       "id": "Saat wisuda seluruh keluarga datang.",
@@ -26642,8 +26860,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "pendidikan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ニュウガク￣"}
+},
     {
       "jp": "<b>入学</b>試験に合格して、夢の大学に入れた。",
       "id": "Lulus ujian masuk dan berhasil masuk universitas impian.",
@@ -26691,8 +26910,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "pendidikan",
         "keputusan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"シンガク￣"}
+},
     {
       "jp": "<b>進学</b>するか就職するかで悩んでいる。",
       "id": "Aku sedang bimbang antara melanjutkan sekolah atau langsung bekerja.",
@@ -26742,8 +26962,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "pendidikan",
         "perjalanan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"リュウガク￣"}
+},
     {
       "jp": "<b>留学</b>中に英語力がかなり上がった。",
       "id": "Kemampuan bahasa Inggrisku meningkat pesat selama belajar di luar negeri.",
@@ -27229,8 +27450,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "pendidikan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"センコウ￣"}
+},
     {
       "jp": "何を<b>専攻</b>しているんですか。",
       "id": "Kamu mengambil jurusan apa?",
@@ -27280,8 +27502,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "kehidupan-sehari",
         "keluarga"
-      ]
-    },
+      ],
+  "pitch": {"pattern":4,"category":"nakadaka","mora_count":5,"downstep_mora":4,"contour":"カタヅケ＼ル"}
+},
     {
       "jp": "部屋を<b>片付けて</b>から友達を呼ぼう。",
       "id": "Mari rapikan kamar dulu sebelum memanggil teman.",
@@ -27386,8 +27609,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":4,"category":"nakadaka","mora_count":5,"downstep_mora":4,"contour":"カタヅケ＼ル"}
+},
     {
       "jp": "頭の中を<b>整理して</b>から話してください。",
       "id": "Tolong tata pikiranmu dulu sebelum berbicara.",
@@ -27818,8 +28042,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "kehidupan-sehari",
         "ekonomi-keuangan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"シハラ＼ウ"}
+},
     {
       "jp": "請求書の金額を確認してから<b>支払った</b>。",
       "id": "Aku memeriksa jumlah tagihan sebelum membayar.",
@@ -27882,8 +28107,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "kehidupan-sehari",
         "ekonomi-keuangan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"フリコ＼ム"}
+},
     {
       "jp": "お金を<b>振り込む</b>前に口座番号を確認してください。",
       "id": "Tolong periksa nomor rekening sebelum mentransfer uang.",
@@ -27970,8 +28196,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "pendidikan",
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"フリコ＼ム"}
+},
     {
       "jp": "締め切り前に<b>申し込み</b>を済ませてください。",
       "id": "Tolong selesaikan pendaftaran sebelum batas waktu.",
@@ -28051,8 +28278,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "kehidupan-sehari",
         "hukum-aturan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":4,"category":"nakadaka","mora_count":5,"downstep_mora":4,"contour":"モウシコ＼ム"}
+},
     {
       "jp": "ビザの<b>手続き</b>には時間がかかる。",
       "id": "Pengurusan prosedur visa membutuhkan waktu.",
@@ -28301,8 +28529,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "kehidupan-sehari",
         "waktu"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"マニア＼ウ"}
+},
     {
       "jp": "締め切りに<b>間に合う</b>ように急いだ。",
       "id": "Aku bergegas agar sempat memenuhi deadline.",
@@ -28388,8 +28617,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "kehidupan-sehari",
         "pendidikan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"マニア＼ウ"}
+},
     {
       "jp": "<b>遅刻</b>しないように、目覚ましを2つセットした。",
       "id": "Aku memasang dua alarm agar tidak terlambat.",
@@ -28450,8 +28680,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "kehidupan-sehari",
         "waktu"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"イソ＼グ"}
+},
     {
       "jp": "<b>急いで</b>いるので、簡単に説明します。",
       "id": "Karena sedang terburu-buru, aku akan menjelaskan secara singkat.",
@@ -28518,8 +28749,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "makanan",
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"サマ＼ス"}
+},
     {
       "jp": "怒っている時は、少し外の空気を吸って頭を冷ましたほうがいいですよ。",
       "id": "Saat sedang marah, sebaiknya menghirup udara luar sebentar untuk mendinginkan kepala.",
@@ -28550,6 +28782,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-00739",
   "word": "覚ます",
@@ -28584,8 +28817,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "kehidupan-sehari",
         "kesehatan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"サマ＼ス"}
+},
     {
       "jp": "今朝は小鳥の心地よいさえずりでパッと目を覚ましました。",
       "id": "Pagi ini saya langsung membuka mata dan terbangun oleh kicauan burung yang merdu.",
@@ -28616,6 +28850,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-00740",
   "word": "冷める",
@@ -28650,8 +28885,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "makanan",
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"サメ＼ル"}
+},
     {
       "jp": "あんなに夢中になっていた趣味なのに、最近急に熱が冷めてしまいました。",
       "id": "Padahal dulu sangat tergila-gila pada hobi itu, tapi belakangan ini antusiasme saya tiba-tiba mereda.",
@@ -28682,6 +28918,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-00741",
   "word": "覚める",
@@ -28716,8 +28953,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "kehidupan-sehari",
         "perasaan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"サメ＼ル"}
+},
     {
       "jp": "酔いが覚めるまで、駅前のカフェで温かいお茶を飲んで休みました。",
       "id": "Saya beristirahat sambil minum teh hangat di kafe depan stasiun sampai rasa mabuk saya hilang.",
@@ -28750,6 +28988,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-00742",
   "word": "左右",
@@ -28784,8 +29023,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "kehidupan-sehari",
         "keselamatan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"サ＼ユウ"}
+},
     {
       "jp": "景気の変動が我が社の今後の採用計画を大きく左右します。",
       "id": "Fluktuasi kondisi perekonomian sangat memengaruhi rencana perekrutan karyawan perusahaan kami ke depan.",
@@ -28813,6 +29053,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-00743",
   "word": "去る",
@@ -28847,8 +29088,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "alam-lingkungan",
         "peristiwa"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":2,"downstep_mora":1,"contour":"サ＼ル"}
+},
     {
       "jp": "彼は仲間たちに感謝の言葉を告げて、静かに故郷を去っていきました。",
       "id": "Dia menyampaikan kata-kata terima kasih kepada teman-temannya lalu pergi meninggalkan kampung halamannya dengan tenang.",
@@ -28880,6 +29122,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-00757",
   "word": "支給",
@@ -28913,8 +29156,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "pekerjaan",
         "ekonomi"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"シキュウ￣"}
+},
     {
       "jp": "入社した新入社員全員に、業務で使用する最新のパソコンが支給されました。",
       "id": "Kepada seluruh karyawan baru yang bergabung, disediakan komputer jinjing terbaru oleh perusahaan untuk dipakai bekerja.",
@@ -28945,6 +29189,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-00760",
   "word": "刺激",
@@ -28980,8 +29225,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "psikologi",
         "hubungan-sosial"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"シゲキ￣"}
+},
     {
       "jp": "胃の調子がすぐれない時は、辛い料理など胃に刺激を与えるものは控えてください。",
       "id": "Saat kondisi lambung kurang baik, tolong hindari makanan yang memberi rangsangan kuat pada lambung seperti makanan pedas.",
@@ -29009,6 +29255,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-00763",
   "word": "自殺",
@@ -29041,8 +29288,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "sosial",
         "kesehatan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ジサツ￣"}
+},
     {
       "jp": "悩みを抱える人々を支援するため、24時間対応の自殺予防相談窓口が設置されています。",
       "id": "Demi mendukung orang-orang yang memiliki masalah berat, dibuka loket konsultasi pencegahan bunuh diri yang melayani 24 jam.",
@@ -29071,6 +29319,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-00764",
   "word": "支出",
@@ -29105,8 +29354,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "keuangan",
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"シシュツ￣"}
+},
     {
       "jp": "家計簿アプリを使って日々の支出を記録し、無駄遣いをなくす工夫をしています。",
       "id": "Saya memanfaatkan aplikasi buku kas rumah tangga untuk mencatat pengeluaran harian dan berusaha meniadakan pemborosan.",
@@ -29137,6 +29387,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-00769",
   "word": "従う",
@@ -29172,8 +29423,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "keselamatan",
         "sosial"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"シタガウ￣"}
+},
     {
       "jp": "時代の変化に従って、人々の働き方や生活様式も大きく変わってきています。",
       "id": "Seiring dengan perubahan zaman, gaya bekerja dan gaya hidup masyarakat pun banyak mengalami perubahan.",
@@ -29205,6 +29457,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-00772",
   "word": "失業",
@@ -29239,8 +29492,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "pekerjaan",
         "ekonomi"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"シツギョウ￣"}
+},
     {
       "jp": "失業した人たちが早期に再就職できるよう、公的な職業訓練センターが支援しています。",
       "id": "Pusat pelatihan kerja pemerintah memberikan dukungan agar orang-orang yang menganggur dapat segera memperoleh pekerjaan kembali.",
@@ -29272,6 +29526,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-00774",
   "word": "実験",
@@ -29306,8 +29561,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "sains",
         "pendidikan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ジッケン￣"}
+},
     {
       "jp": "実験の結果、仮説が正しかったことがデータによって科学的に証明されました。",
       "id": "Hasil dari eksperimen membuktikan secara ilmiah melalui data bahwa hipotesis yang diajukan memang benar.",
@@ -29335,6 +29591,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-00775",
   "word": "実現",
@@ -29369,8 +29626,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "pendidikan",
         "perasaan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ジツゲン￣"}
+},
     {
       "jp": "誰もが安心して暮らせる社会を実現するために、行政と市民が協力しています。",
       "id": "Pemerintah dan masyarakat bekerja sama demi merealisasikan lingkungan sosial yang aman bagi siapa saja.",
@@ -29403,6 +29661,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-00776",
   "word": "実行",
@@ -29437,8 +29696,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "pekerjaan",
         "bisnis"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ジッコウ￣"}
+},
     {
       "jp": "健康のために立てた「毎朝ジョギングする」という計画を、今日から早速実行しました。",
       "id": "Rencana 'berlari pagi setiap hari' yang saya susun demi kesehatan, mulai hari ini langsung saya laksanakan.",
@@ -29472,6 +29732,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-00778",
   "word": "実施",
@@ -29506,8 +29767,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "pendidikan",
         "acara"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ジッシ￣"}
+},
     {
       "jp": "市民の意見を市政に反映させるため、市役所でアンケート調査が実施されました。",
       "id": "Demi merefleksikan pendapat warga ke dalam kebijakan kota, survei kuesioner diselenggarakan di kantor balai kota.",
@@ -29542,6 +29804,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-00781",
   "word": "失望",
@@ -29576,8 +29839,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "emosi",
         "hubungan-sosial"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"シツボウ￣"}
+},
     {
       "jp": "応援していたサッカーチームのふがいない試合運びに、多くのファンが失望しました。",
       "id": "Atas performa pertandingan tim sepak bola idola yang mengecewakan, banyak penggemar merasa sangat kecewa.",
@@ -29608,6 +29872,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-00784",
   "word": "指導",
@@ -29642,8 +29907,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "pekerjaan",
         "pendidikan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"シドウ￣"}
+},
     {
       "jp": "名監督の熱心な指導を受けた選手たちは、見事に全国大会で優勝を果たしました。",
       "id": "Para atlet yang menerima pembinaan penuh semangat dari pelatih kenamaan berhasil dengan gemilang meraih juara di turnamen nasional.",
@@ -29672,6 +29938,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-00788",
   "word": "支配",
@@ -29705,8 +29972,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "politik-masyarakat",
         "kejadian"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"シ＼ハイ"}
+},
     {
       "jp": "不安や恐怖に心を支配されないように、深呼吸をして落ち着いた。",
       "id": "Agar batin tidak dikuasai oleh kecemasan dan rasa takut, saya menarik napas dalam lalu menenangkan diri.",
@@ -29737,6 +30005,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-00793",
   "word": "死亡",
@@ -29770,8 +30039,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "kejadian",
         "sosial"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"シボウ￣"}
+},
     {
       "jp": "家族が亡くなった場合、七日以内に市役所へ死亡届を提出する必要があります。",
       "id": "Jika ada anggota keluarga yang wafat, surat pemberitahuan kematian perlu diserahkan ke kantor kelurahan dalam waktu tujuh hari.",
@@ -29802,6 +30072,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-00797",
   "word": "自慢",
@@ -29835,8 +30106,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "karakter",
         "komunikasi"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ジマン￣"}
+},
     {
       "jp": "祖母が丹精込めて作った家庭菜園の野菜は、我が家の一番の自慢です。",
       "id": "Sayuran kebun rumah yang ditanam nenek dengan sepenuh hati adalah kebanggaan utama di keluarga kami.",
@@ -29867,6 +30139,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-00800",
   "word": "借金",
@@ -29900,8 +30173,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "ekonomi-keuangan",
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"シャッキ＼ン"}
+},
     {
       "jp": "無理な投資に失敗した友人が、多額の借金を背負って苦しんでいる。",
       "id": "Teman yang gagal dalam investasi nekat kini menderita karena menanggung utang dalam jumlah besar.",
@@ -29932,6 +30206,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-00801",
   "word": "しゃべる",
@@ -29965,8 +30240,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "bahasa-komunikasi",
         "pertemanan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"シャベ＼ル"}
+},
     {
       "jp": "先生の話を聞かずに隣の席の同級生としゃべっていて、厳しく注意された。",
       "id": "Saya ditegur dengan keras karena mengobrol dengan teman sebangku alih-alih mendengarkan penjelasan guru.",
@@ -29996,6 +30272,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-00805",
   "word": "収穫",
@@ -30029,8 +30306,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "alam-lingkungan",
         "pekerjaan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"シュウカク￣"}
+},
     {
       "jp": "他社の優れた取り組みを視察できたことは、今回の出張の最大の収穫だった。",
       "id": "Dapat meninjau langsung terobosan unggul perusahaan lain merupakan perolehan paling berharga dari perjalanan dinas kali ini.",
@@ -30058,6 +30336,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-00807",
   "word": "重視",
@@ -30092,8 +30371,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "pekerjaan",
         "pikiran-opini"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"ジュ＼ウシ"}
+},
     {
       "jp": "当社は製造コストの削減だけでなく、製品の耐久性と安全性を何より重視している。",
       "id": "Perusahaan kami tidak hanya memangkas biaya produksi, melainkan paling mengutamakan keawetan dan keamanan produk di atas segalanya.",
@@ -30124,6 +30404,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-00808",
   "word": "就職",
@@ -30158,8 +30439,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "pekerjaan",
         "keluarga"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"シュウショク￣"}
+},
     {
       "jp": "就職活動を有利に進めるため、在学中に様々な資格を取得しておいた。",
       "id": "Demi mempermudah kegiatan mencari kerja, saya telah mengambil berbagai sertifikat kompetensi semasa masih kuliah.",
@@ -30191,6 +30473,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-00809",
   "word": "修正",
@@ -30225,8 +30508,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "pekerjaan",
         "bisnis"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"シュウセイ￣"}
+},
     {
       "jp": "システム開発担当者が発見された不具合を修正するパッチを配布した。",
       "id": "Penanggung jawab pengembang sistem telah menyalurkan tambalan pembaruan untuk memperbaiki gangguan yang ditemukan.",
@@ -30254,6 +30538,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-00811",
   "word": "渋滞",
@@ -30287,8 +30572,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "perjalanan",
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ジュウタイ￣"}
+},
     {
       "jp": "工事による交通渋滞に巻き込まれて、待ち合わせの時間に遅刻してしまった。",
       "id": "Karena terjebak kemacetan lalu lintas akibat perbaikan jalan, saya terlambat dari waktu janjian temu.",
@@ -30318,6 +30604,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-00815",
   "word": "集中",
@@ -30352,8 +30639,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "pendidikan",
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"シュウチュウ￣"}
+},
     {
       "jp": "大都市圏へ過度に人口が集中することにより、通勤ラッシュなど多くの弊害が生じる。",
       "id": "Karena penduduk terpusat secara berlebihan ke kawasan metropolitan, timbul banyak dampak negatif seperti kepadatan jam sibuk.",
@@ -30384,6 +30672,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-00817",
   "word": "修理",
@@ -30417,8 +30706,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "teknologi",
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"シュ＼ウリ"}
+},
     {
       "jp": "パンクした自転車のタイヤを自分で修理しようと試みたが、結局うまくいかなかった。",
       "id": "Saya mencoba memperbaiki ban sepeda yang bocor sendiri, tetapi pada akhirnya tidak berhasil.",
@@ -30449,6 +30739,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-00819",
   "word": "宿泊",
@@ -30483,8 +30774,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "perjalanan",
         "hiburan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"シュクハク￣"}
+},
     {
       "jp": "出張先のホテルに二泊宿泊し、無事にすべての商談を終えて帰社した。",
       "id": "Saya menginap dua malam di hotel tempat perjalanan dinas, lalu kembali ke kantor setelah menyelesaikan seluruh perundingan bisnis tanpa kendala.",
@@ -30514,6 +30806,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-00822",
   "word": "出場",
@@ -30547,8 +30840,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "olahraga",
         "kejadian"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"シュツジョウ￣"}
+},
     {
       "jp": "足の怪我から順調に回復した選手が、後半から試合に出場して大活躍した。",
       "id": "Atlet yang pulih dengan baik dari cedera kakinya tampil bertanding di pertandingan mulai babak kedua dan bermain cemerlang.",
@@ -30579,6 +30873,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-00824",
   "word": "出版",
@@ -30612,8 +30907,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "pendidikan",
         "media"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"シュッパン￣"}
+},
     {
       "jp": "電子書籍サービスの普及によって、個人作家でも手軽に本を出版できる時代になった。",
       "id": "Berkat menyebarnya layanan buku digital, kini tiba zaman di mana penulis mandiri pun bisa menerbitkan buku dengan mudah.",
@@ -30643,6 +30939,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-00834",
   "word": "使用",
@@ -30677,8 +30974,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "sopan-santun",
         "sosial"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"シヨウ￣"}
+},
     {
       "jp": "精密機械を安全に使用するためには、作業前に取扱説明書の手順を必ず確認してください。",
       "id": "Untuk menggunakan mesin presisi secara aman, pastikan memeriksa tahapan buku pedoman sebelum memulai pekerjaan.",
@@ -30709,6 +31007,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-00845",
   "word": "生じる",
@@ -30743,8 +31042,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "sebab-akibat",
         "hubungan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ショウジル￣"}
+},
     {
       "jp": "作業の途中で何か疑問や問題が生じた場合は、速やかに上司へ報告してください。",
       "id": "Jika timbul keraguan atau masalah di tengah proses kerja, segera laporkan kepada atasan.",
@@ -30774,6 +31074,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-00846",
   "word": "上達",
@@ -30807,8 +31108,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "hiburan",
         "pendidikan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ジョウタツ￣"}
+},
     {
       "jp": "外国語の会話を上達させる秘訣は、失敗を恥ずかしがらずに話すことです。",
       "id": "Kunci meningkatkan percakapan bahasa asing adalah berbicara tanpa merasa malu saat membuat kesalahan.",
@@ -30839,6 +31141,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-00849",
   "word": "衝突",
@@ -30873,8 +31176,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "perjalanan",
         "kejadian"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ショウトツ￣"}
+},
     {
       "jp": "チームの今後の方針を巡って、リーダーとメンバーの意見が激しく衝突した。",
       "id": "Terkait arah kebijakan tim ke depan, pendapat ketua dan para anggota bertentangan dengan sengit.",
@@ -30905,6 +31209,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-00851",
   "word": "承認",
@@ -30938,8 +31243,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "bisnis",
         "pekerjaan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ショウニン￣"}
+},
     {
       "jp": "長期休暇を取得するためには、事前に直属の上司から承認を得る必要があります。",
       "id": "Untuk mengambil cuti kerja jangka panjang, kita perlu mendapatkan persetujuan terlebih dahulu dari atasan langsung.",
@@ -30972,6 +31278,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-00854",
   "word": "消費",
@@ -31005,8 +31312,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "kehidupan-sehari",
         "ekonomi"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ショウヒ￣"}
+},
     {
       "jp": "日々のジョギングを通じて体内の余分な脂肪やカロリーを消費するように心がけている。",
       "id": "Saya membiasakan diri membakar konsumsi lemak dan kalori berlebih di tubuh melalui lari santai harian.",
@@ -31035,6 +31343,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-00858",
   "word": "証明",
@@ -31069,8 +31378,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "hukum-aturan",
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ショウメイ￣"}
+},
     {
       "jp": "研究チームは十年にわたる地道な実験データによって、新理論の正しさを証明した。",
       "id": "Tim peneliti membuktikan kebenaran teori baru melalui data eksperimen telaten selama sepuluh tahun.",
@@ -31100,6 +31410,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-00859",
   "word": "省略",
@@ -31133,8 +31444,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "bahasa-komunikasi",
         "pekerjaan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ショウリャク￣"}
+},
     {
       "jp": "親しい友人同士のメールでは、堅苦しい挨拶や敬語が省略されることが普通です。",
       "id": "Dalam email antarteman akrab, adalah hal yang lumrah jika sapaan kaku maupun bahasa hormat dihilangkan.",
@@ -31165,6 +31477,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-00872",
   "word": "署名",
@@ -31199,8 +31512,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "bisnis",
         "hukum-aturan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ショメイ￣"}
+},
     {
       "jp": "森林伐採を阻止するため、環境保護団体が街頭で市民に対して署名を呼びかけている。",
       "id": "Guna mencegah penebangan hutan, kelompok pelindung lingkungan mengajak masyarakat di jalan untuk membubuhkan tanda tangan petisi.",
@@ -31228,6 +31542,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-00875",
   "word": "処理",
@@ -31262,8 +31577,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "teknologi",
         "bisnis"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":2,"downstep_mora":1,"contour":"ショ＼リ"}
+},
     {
       "jp": "今日中に処理しなければならない伝票が山積みになっており、同僚と手分けして片付けた。",
       "id": "Kuitansi yang mesti diproses hari ini sudah menggunung, sehingga saya dan rekan kerja membagi tugas untuk menuntaskannya.",
@@ -31291,6 +31607,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-00881",
   "word": "信仰",
@@ -31324,8 +31641,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "hukum-aturan",
         "politik-masyarakat"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"シンコウ￣"}
+},
     {
       "jp": "村人たちは山の神に対する素朴な信仰を守り、毎年秋になると豊かな実りに感謝する祭りを催す。",
       "id": "Penduduk desa menjaga keyakinan luhur terhadap dewa gunung, dan menggelar festival mengucap syukur atas panen melimpah setiap tiba musim gugur.",
@@ -31356,6 +31674,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-00884",
   "word": "診察",
@@ -31388,8 +31707,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "kesehatan",
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"シンサツ￣"}
+},
     {
       "jp": "診察を受ける前に問診票へ症状を詳しく書き込み、看護師に手渡して待合室で待った。",
       "id": "Sebelum menjalani pemeriksaan medis, saya menuliskan gejala secara terperinci di lembar kuesioner medis, menyerahkannya ke perawat lalu menunggu di ruang tunggu.",
@@ -31417,6 +31737,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-00890",
   "word": "審判",
@@ -31450,8 +31771,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "olahraga",
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"シンパン￣"}
+},
     {
       "jp": "選挙を通じて、現職議員たちのこれまでの実績が国民に審判される。",
       "id": "Melalui pemilihan umum, rekam jejak para anggota dewan yang sedang menjabat akan diadili oleh rakyat.",
@@ -31479,6 +31801,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-00892",
   "word": "進歩",
@@ -31512,8 +31835,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "teknologi",
         "masyarakat"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"シ＼ンポ"}
+},
     {
       "jp": "毎日コツコツと練習を重ねた結果、彼女のピアノ演奏は目覚ましく進歩した。",
       "id": "Sebagai hasil dari latihan tekun setiap hari, permainan pianonya mengalami kemajuan yang luar biasa.",
@@ -31544,6 +31868,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-00900",
   "word": "推薦",
@@ -31577,8 +31902,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "pendidikan",
         "formal"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"スイセン￣"}
+},
     {
       "jp": "真面目で責任感の強い彼を、次のプロジェクトリーダーの候補として推薦します。",
       "id": "Saya merekomendasikan dia yang tekun dan berjiwa tanggung jawab tinggi sebagai kandidat pemimpin proyek berikutnya.",
@@ -31606,6 +31932,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-00907",
   "word": "救う",
@@ -31639,8 +31966,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "aksi",
         "masyarakat"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"スクウ￣"}
+},
     {
       "jp": "医師たちの迅速な処置と懸命な治療が、重傷を負った患者の命を救った。",
       "id": "Tindakan cepat dan perawatan gigih para dokter telah menyelamatkan nyawa pasien yang mengalami luka berat.",
@@ -31671,6 +31999,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-00908",
   "word": "優れる",
@@ -31704,8 +32033,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "teknologi",
         "deskripsi"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"スグレ＼ル"}
+},
     {
       "jp": "今朝からどうも気分が優れないので、今日の午後は無理せず自宅で休みます。",
       "id": "Karena sejak pagi perasaan dan kondisi badan saya terasa kurang prima, siang ini saya tidak memaksakan diri dan beristirahat di rumah.",
@@ -31735,6 +32065,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-00909",
   "word": "スケート",
@@ -31768,8 +32099,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "olahraga",
         "rekreasi"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":0,"downstep_mora":0,"contour":"￣"}
+},
     {
       "jp": "生まれて初めてスケート場に行ったときは、バランスが取れず何度も転んでしまった。",
       "id": "Saat pertama kali seumur hidup pergi ke gelanggang seluncur es, saya berkali-kali terjatuh karena tidak bisa menjaga keseimbangan.",
@@ -31796,6 +32128,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-00911",
   "word": "過ごす",
@@ -31829,8 +32162,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "kehidupan-sehari",
         "waktu"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"スゴ＼ス"}
+},
     {
       "jp": "大学時代の四年間を京都の古い下宿で過ごした経験は、私のかけがえのない財産だ。",
       "id": "Pengalaman menjalani empat tahun masa kuliah di rumah kos tua di Kyoto adalah aset berharga yang tak tergantikan bagi saya.",
@@ -31858,6 +32192,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-00913",
   "word": "進める",
@@ -31891,8 +32226,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "pekerjaan",
         "bisnis"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ススメル￣"}
+},
     {
       "jp": "来年度の新規事業計画を具体化するための準備を前向きに進めています。",
       "id": "Kami sedang menjalankan persiapan secara positif untuk mengonkritkan rencana bisnis baru tahun depan.",
@@ -31923,6 +32259,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-00914",
   "word": "勧める",
@@ -31956,8 +32293,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "kesehatan",
         "komunikasi"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ススメル￣"}
+},
     {
       "jp": "同僚に勧められて読んだ小説が思いのほか面白く、すっかりその作家のファンになった。",
       "id": "Novel yang dibaca atas saran rekan kerja ternyata di luar dugaan sangat menarik, dan saya menjadi penggemar berat penulis tersebut.",
@@ -31988,6 +32326,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-00920",
   "word": "済ませる",
@@ -32021,8 +32360,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "pendidikan",
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"スマセ＼ル"}
+},
     {
       "jp": "今朝は会議の準備で忙しかったので、朝ご飯をバナナ一本だけで簡単に済ませた。",
       "id": "Karena pagi ini sibuk mempersiapkan rapat, saya menyelesaikan sarapan secara ringkas hanya dengan sebutir pisang.",
@@ -32053,6 +32393,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-00923",
   "word": "すれ違う",
@@ -32086,8 +32427,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "gerakan",
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":4,"category":"nakadaka","mora_count":5,"downstep_mora":4,"contour":"スレチガ＼ウ"}
+},
     {
       "jp": "お互いに仕事の勤務時間がバラバラで、夫婦の生活時間やすれ違いが増えてしまった。",
       "id": "Karena jam kerja masing-masing tidak menentu, jam hidup dan perselisihan waktu di antara suami istri tersebut menjadi makin sering.",
@@ -32114,6 +32456,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-00924",
   "word": "ずれる",
@@ -32147,8 +32490,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "kehidupan-sehari",
         "deskripsi"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":0,"downstep_mora":0,"contour":"￣"}
+},
     {
       "jp": "会議の議論が本来のテーマから大きくずれてきたので、本筋に戻しましょう。",
       "id": "Karena diskusi rapat telah melenceng jauh dari tema awal, mari kita kembalikan ke pokok persoalan.",
@@ -32179,6 +32523,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-00932",
   "word": "請求",
@@ -32212,8 +32557,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "kehidupan-sehari",
         "ekonomi"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"セイキュウ￣"}
+},
     {
       "jp": "納品が完了したため、契約書に基づいてクライアントに代金を請求した。",
       "id": "Karena pengiriman barang telah selesai, kami menagihkan pembayaran kepada klien berdasarkan surat kontrak.",
@@ -32244,6 +32590,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-00934",
   "word": "制限",
@@ -32277,8 +32624,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "transportasi",
         "aturan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"セイゲ＼ン"}
+},
     {
       "jp": "健康維持のために、医師から甘いお菓子や塩分の摂取を厳しく制限されている。",
       "id": "Demi menjaga kesehatan, saya dibatasi secara ketat oleh dokter dalam mengonsumsi camilan manis dan garam.",
@@ -32310,6 +32658,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-00939",
   "word": "製造",
@@ -32341,8 +32690,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "pekerjaan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"セイゾウ￣"}
+},
     {
       "jp": "部品の製造工程を見学するために工場を訪れた。",
       "id": "Saya mengunjungi pabrik untuk mengamati proses pembuatan suku cadang.",
@@ -32370,6 +32720,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-00941",
   "word": "成長",
@@ -32401,8 +32752,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "keluarga"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"セイチョウ￣"}
+},
     {
       "jp": "この実践的な研修を通じて社員一人ひとりが大きく成長した。",
       "id": "Melalui pelatihan praktis ini, setiap karyawan telah berkembang secara pesat.",
@@ -32431,6 +32783,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-00942",
   "word": "生長",
@@ -32461,8 +32814,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "alam-lingkungan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"セイチョウ￣"}
+},
     {
       "jp": "十分な日光と水分が稲の健康な生長には欠かせない。",
       "id": "Sinar matahari dan kadar air yang cukup sangat penting bagi pertumbuhan sehat tanaman padi.",
@@ -32490,6 +32844,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-00947",
   "word": "整理",
@@ -32521,8 +32876,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"セ＼イリ"}
+},
     {
       "jp": "会議を始める前に自分の考えや意見を整理しておこう。",
       "id": "Mari kita rapikan dan susun pemikiran serta pendapat sendiri sebelum memulai rapat.",
@@ -32552,6 +32908,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-00952",
   "word": "設計",
@@ -32583,8 +32940,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "pekerjaan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"セッケイ￣"}
+},
     {
       "jp": "安全性を第一に考えて最新の橋を設計する必要があります。",
       "id": "Kita perlu merancang jembatan terkini dengan memprioritaskan keselamatan sebagai yang utama.",
@@ -32610,6 +32968,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-00957",
   "word": "合図",
@@ -32641,8 +33000,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "pendidikan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"ア＼イズ"}
+},
     {
       "jp": "準備ができたら窓から手を振って合図してください。",
       "id": "Jika sudah siap, tolong beri tanda dengan melambaikan tangan dari jendela.",
@@ -32668,6 +33028,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-00958",
   "word": "愛する",
@@ -32699,8 +33060,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "emosi-positif"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"アイス＼ル"}
+},
     {
       "jp": "愛する家族を守るために毎日一生懸命働いています。",
       "id": "Saya bekerja sekuat tenaga setiap hari demi melindungi keluarga yang saya cintai.",
@@ -32730,6 +33092,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-00963",
   "word": "握手",
@@ -32761,8 +33124,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "bisnis"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"ア＼クシュ"}
+},
     {
       "jp": "大好きな歌手のイベントに参加して直接握手してもらった。",
       "id": "Saya menghadiri acara penyanyi favorit saya dan bisa langsung bersalaman dengannya.",
@@ -32787,6 +33151,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-00965",
   "word": "預かる",
@@ -32818,8 +33183,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"アズカ＼ル"}
+},
     {
       "jp": "フロントでお客様の貴重品を大切にお預かりしております。",
       "id": "Di meja resepsionis kami mengamankan dan menjaga barang berharga pelanggan dengan baik.",
@@ -32847,6 +33213,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-00966",
   "word": "預ける",
@@ -32878,8 +33245,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "perjalanan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"アズケ＼ル"}
+},
     {
       "jp": "毎月の給料の一部を将来のために銀行へ預けています。",
       "id": "Saya menyimpan sebagian dari gaji bulanan ke bank demi masa depan.",
@@ -32908,6 +33276,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-00968",
   "word": "与える",
@@ -32939,8 +33308,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "keluarga"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"アタエル￣"}
+},
     {
       "jp": "動物園の飼育員が時間通りにパンダにエサを与えている。",
       "id": "Petugas kebun binatang memberikan pakan kepada panda tepat pada waktunya.",
@@ -32970,6 +33340,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-00969",
   "word": "暖まる",
@@ -33001,8 +33372,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":4,"category":"nakadaka","mora_count":5,"downstep_mora":4,"contour":"アタタマ＼ル"}
+},
     {
       "jp": "春が近づくにつれて、日中の気温もしだいに暖まってきた。",
       "id": "Seiring mendekatnya musim semi, suhu pada siang hari pun berangsur-angsur menjadi hangat.",
@@ -33030,6 +33402,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-00970",
   "word": "温まる",
@@ -33061,8 +33434,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "kesehatan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":4,"category":"nakadaka","mora_count":5,"downstep_mora":4,"contour":"アタタマ＼ル"}
+},
     {
       "jp": "子供たちの優しい笑顔を見て沈んでいた心が温まった。",
       "id": "Melihat senyum ramah anak-anak, hati saya yang sempat murung menjadi terasa hangat.",
@@ -33089,6 +33463,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-00971",
   "word": "暖める",
@@ -33120,8 +33495,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":4,"category":"nakadaka","mora_count":5,"downstep_mora":4,"contour":"アタタメ＼ル"}
+},
     {
       "jp": "冷たい風が入らないように窓を閉めて部屋を暖めましょう。",
       "id": "Mari kita tutup jendela dan menghangatkan kamar agar angin dingin tidak masuk.",
@@ -33148,6 +33524,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-00972",
   "word": "温める",
@@ -33179,8 +33556,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "makanan-minuman"
-      ]
-    },
+      ],
+  "pitch": {"pattern":4,"category":"nakadaka","mora_count":5,"downstep_mora":4,"contour":"アタタメ＼ル"}
+},
     {
       "jp": "冷えた指先をポケットの中のカイロでしっかり温めた。",
       "id": "Saya menghangatkan ujung-ujung jari yang kedinginan dengan penghangat saku.",
@@ -33209,6 +33587,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-00975",
   "word": "当たる",
@@ -33240,8 +33619,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "olahraga"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"アタル￣"}
+},
     {
       "jp": "彼の天気予報の予想は見事に当たって午後から雨になった。",
       "id": "Tebakan prakiraan cuacanya tepat mengenai sasaran dan turun hujan sejak siang.",
@@ -33269,6 +33649,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-00977",
   "word": "扱う",
@@ -33300,8 +33681,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"アツカウ￣"}
+},
     {
       "jp": "こちらの文房具店では輸入の高級ペンも幅広く扱っている。",
       "id": "Toko alat tulis di sebelah sini juga memperdagangkan berbagai pulpen mewah impor secara luas.",
@@ -33328,6 +33710,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-00979",
   "word": "当てる",
@@ -33359,8 +33742,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "kesehatan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"アテル￣"}
+},
     {
       "jp": "先生が出した難しいなぞなぞの答えを見事に当てることができた。",
       "id": "Saya berhasil menebak dengan tepat jawaban teka-teki sulit yang diberikan oleh guru.",
@@ -33388,6 +33772,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-00987",
   "word": "争う",
@@ -33420,8 +33805,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "olahraga"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"アラソ＼ウ"}
+},
     {
       "jp": "救急医療の現場では一刻を争う迅速な判断が求められる。",
       "id": "Di tempat medis gawat darurat, dibutuhkan penilaian cepat yang berpacu dengan waktu.",
@@ -33452,6 +33838,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-00991",
   "word": "現れる",
@@ -33483,8 +33870,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "kesehatan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":4,"category":"nakadaka","mora_count":5,"downstep_mora":4,"contour":"アラワレ＼ル"}
+},
     {
       "jp": "約束の時間を三十分も過ぎてからようやく彼が姿を現した。",
       "id": "Setelah lewat tiga puluh menit dari waktu janjian, barulah akhirnya dia menampakkan diri.",
@@ -33514,6 +33902,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-00995",
   "word": "合わせる",
@@ -33547,8 +33936,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "bisnis",
         "komunikasi"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"アワセ＼ル"}
+},
     {
       "jp": "困難な状況を乗り切るために全員で力を合わせる必要がある。",
       "id": "Kita perlu menyatukan tenaga bersama-sama demi melewati situasi sulit ini.",
@@ -33579,6 +33969,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-00996",
   "word": "慌てる",
@@ -33611,8 +34002,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "kehidupan-sehari",
         "keselamatan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"アワテル￣"}
+},
     {
       "jp": "寝坊して電車の時間に遅れそうになり慌てて家を出た。",
       "id": "Karena bangun kesiangan dan nyaris terlambat naik kereta, saya kelabakan keluar dari rumah.",
@@ -33642,6 +34034,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01000",
   "word": "暗記",
@@ -33673,8 +34066,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "pendidikan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"アンキ￣"}
+},
     {
       "jp": "歴史の年表を丸ごと暗記するだけでなく事件の背景も理解すべきだ。",
       "id": "Kita tidak boleh sekadar menghafal di luar kepala garis waktu sejarah saja, melainkan juga harus memahami latar belakang peristiwanya.",
@@ -33704,6 +34098,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01001",
   "word": "安定",
@@ -33736,8 +34131,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "kesehatan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"アンテイ￣"}
+},
     {
       "jp": "将来のために給料が高くても不安定な仕事より安定した職業を選びたい。",
       "id": "Demi masa depan, saya lebih memilih pekerjaan yang stabil daripada pekerjaan berpenghasilan tinggi tetapi labil.",
@@ -33768,6 +34164,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01012",
   "word": "維持",
@@ -33800,8 +34197,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "kesehatan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":2,"downstep_mora":1,"contour":"イ＼ジ"}
+},
     {
       "jp": "古い建物を安全に維持するためには定期的な点検と修理が必要です。",
       "id": "Demi merawat dan menjaga bangunan tua tetap aman, dibutuhkan inspeksi dan perbaikan berkala.",
@@ -33833,6 +34231,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01018",
   "word": "抱く",
@@ -33864,8 +34263,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "perasaan",
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"イダ＼ク"}
+},
     {
       "jp": "彼の不可解な説明を聞いて多くの参加者が強い不信感を抱いた。",
       "id": "Mendengar penjelasannya yang tidak masuk akal, banyak peserta menaruh rasa ketidakpercayaan yang mendalam.",
@@ -33896,6 +34296,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01019",
   "word": "いたずら",
@@ -33927,8 +34328,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "keluarga",
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"イタズラ￣"}
+},
     {
       "jp": "悪気のないいたずらのつもりでも相手をひどく傷つけることがある。",
       "id": "Meski bermaksud iseng tanpa niat jahat, hal itu terkadang bisa melukai perasaan orang lain secara mendalam.",
@@ -33959,6 +34361,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01022",
   "word": "至る",
@@ -33992,8 +34395,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "perjalanan",
         "alam-lingkungan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"イタ＼ル"}
+},
     {
       "jp": "徹底的な協議を重ねた結果、両社は提携の合意に至った。",
       "id": "Sebagai hasil dari perundingan yang mendalam dan berulang kali, kedua perusahaan mencapai kesepakatan kemitraan.",
@@ -34024,6 +34428,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01032",
   "word": "一致",
@@ -34057,8 +34462,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "hukum",
         "sosial"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"イッチ￣"}
+},
     {
       "jp": "メンバー全員の意見が一致するまで何度も話し合いを重ねた。",
       "id": "Kami berdiskusi berulang kali sampai pendapat seluruh anggota benar-benar bersepakat sejalan.",
@@ -34090,6 +34496,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01036",
   "word": "移動",
@@ -34121,8 +34528,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "perjalanan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"イドウ￣"}
+},
     {
       "jp": "台風が近づいているため、鉢植えを家の中に移動させた。",
       "id": "Karena angin topan mendekat, saya memindahkan pot tanaman ke dalam rumah.",
@@ -34152,6 +34560,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01038",
   "word": "居眠り",
@@ -34182,8 +34591,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "pendidikan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"イネム＼リ"}
+},
     {
       "jp": "電車の中で居眠りをしてしまい、目的の駅を乗り過ごした。",
       "id": "Saya tertidur di dalam kereta sehingga stasiun tujuan saya terlewat.",
@@ -34209,6 +34619,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01040",
   "word": "違反",
@@ -34240,8 +34651,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "hukum-aturan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"イハン￣"}
+},
     {
       "jp": "契約書に記載された条項に違反した場合は、罰金が科されます。",
       "id": "Jika melanggar ketentuan yang tertera dalam surat kontrak, akan dikenakan denda.",
@@ -34271,6 +34683,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01044",
   "word": "イメージ",
@@ -34302,8 +34715,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "bisnis"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":0,"downstep_mora":0,"contour":"￣"}
+},
     {
       "jp": "成功した自分の姿を具体的にイメージしながらトレーニングを重ねている。",
       "id": "Saya terus berlatih sambil membayangkan wujud diri yang telah meraih kesuksesan secara konkret.",
@@ -34329,6 +34743,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01047",
   "word": "依頼",
@@ -34360,8 +34775,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "bisnis"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"イライ￣"}
+},
     {
       "jp": "取引先からの急な依頼だったが、何とか期限までに対応できた。",
       "id": "Meskipun itu permintaan mendadak dari klien, kami berhasil menyelesaikannya tepat waktu.",
@@ -34388,6 +34804,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01048",
   "word": "いらいら",
@@ -34418,8 +34835,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "emosi-negatif"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":4,"downstep_mora":1,"contour":"イ＼ライラ"}
+},
     {
       "jp": "渋滞に巻き込まれても、いらいらしないで落ち着いて運転してください。",
       "id": "Meskipun terjebak kemacetan, tolong jangan merasa kesal dan tetaplah mengemudi dengan tenang.",
@@ -34448,6 +34866,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01052",
   "word": "祝う",
@@ -34479,8 +34898,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "keluarga"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"イワ＼ウ"}
+},
     {
       "jp": "新年の訪れを祝うために、世界各地で美しい花火が打ち上げられた。",
       "id": "Kembang api indah dinyalakan di berbagai belahan dunia untuk merayakan kedatangan tahun baru.",
@@ -34506,6 +34926,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01055",
   "word": "印刷",
@@ -34537,8 +34958,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "pekerjaan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"インサツ￣"}
+},
     {
       "jp": "このポスターは高品質な紙に印刷されているため、発色がとても鮮やかだ。",
       "id": "Karena poster ini dicetak di atas kertas berkualitas tinggi, warnanya tampak sangat cerah.",
@@ -34564,6 +34986,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01056",
   "word": "引退",
@@ -34595,8 +35018,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "olahraga"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"インタイ￣"}
+},
     {
       "jp": "長年務めた社長の座を後進に譲り、政界からの引退を表明した。",
       "id": "Ia menyerahkan kursi kepemimpinan kepada generasi penerus dan mengumumkan pensiun dari dunia politik.",
@@ -34626,6 +35050,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01057",
   "word": "引用",
@@ -34657,8 +35082,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "pendidikan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"インヨウ￣"}
+},
     {
       "jp": "有名な哲学者の言葉を引用して、スピーチを締めくくった。",
       "id": "Dia menutup pidatonya dengan mengutip perkataan dari seorang filsuf terkenal.",
@@ -34684,6 +35110,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01061",
   "word": "失う",
@@ -34715,8 +35142,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "pertemanan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ウシナウ￣"}
+},
     {
       "jp": "大事故の後、運転手は一時的に意識を失ったが、すぐに回復した。",
       "id": "Setelah kecelakaan hebat itu sang pengemudi sempat kehilangan kesadaran, tetapi segera pulih kembali.",
@@ -34745,6 +35173,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01062",
   "word": "疑う",
@@ -34776,8 +35205,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "hukum-aturan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ウタガウ￣"}
+},
     {
       "jp": "いつも正直な親友の言葉だから、少しも疑うことなく受け入れた。",
       "id": "Karena itu adalah kata-kata dari sahabat yang selalu jujur, saya menerimanya tanpa ragu sedikit pun.",
@@ -34806,6 +35236,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01064",
   "word": "訴える",
@@ -34837,8 +35268,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "hukum-aturan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":4,"category":"nakadaka","mora_count":5,"downstep_mora":4,"contour":"ウッタエ＼ル"}
+},
     {
       "jp": "患者は昨夜から激しい腹痛を訴えており、緊急の検査が行われた。",
       "id": "Pasien mengeluhkan sakit perut yang hebat sejak kemarin malam, sehingga pemeriksaan darurat segera dilakukan.",
@@ -34865,6 +35297,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01065",
   "word": "うなる",
@@ -34896,8 +35329,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "alam-lingkungan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"ウナ＼ル"}
+},
     {
       "jp": "外では強い冬の風がビュービューとうなり声を上げて吹き荒れている。",
       "id": "Di luar, angin musim dingin berhembus kencang dengan suara menderu-deru.",
@@ -34923,6 +35357,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01066",
   "word": "奪う",
@@ -34954,8 +35389,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "hukum-aturan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"ウバ＼ウ"}
+},
     {
       "jp": "美術館に展示された名画の美しさに、誰もが一瞬で目を奪われた。",
       "id": "Semua orang seketika terpukau oleh keindahan lukisan mahakarya yang dipamerkan di museum seni.",
@@ -34985,6 +35421,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01071",
   "word": "埋める",
@@ -35016,8 +35453,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ウメル￣"}
+},
     {
       "jp": "急な欠員が出たため、来週までにその穴を埋める人材を探さなければならない。",
       "id": "Karena terjadi kekosongan staf mendadak, kami harus mencari orang untuk mengisi posisi tersebut sebelum pekan depan.",
@@ -35046,6 +35484,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01072",
   "word": "裏切る",
@@ -35077,8 +35516,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "pertemanan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"ウラギ＼ル"}
+},
     {
       "jp": "新製品の性能は素晴らしく、ファンの期待を裏切らない見事な出来栄えだった。",
       "id": "Performa produk baru itu sangat luar biasa dan merupakan hasil karya gemilang yang tidak mengecewakan ekspektasi para penggemar.",
@@ -35107,6 +35547,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01073",
   "word": "売れる",
@@ -35138,8 +35579,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "bisnis"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ウレル￣"}
+},
     {
       "jp": "暑い夏になると、冷たいアイスクリームや麦茶が飛ぶように売れる。",
       "id": "Saat musim panas yang terik tiba, es krim dingin dan teh gandum laku sangat keras.",
@@ -35167,6 +35609,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01077",
   "word": "営業",
@@ -35198,8 +35641,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "bisnis"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"エイギョウ￣"}
+},
     {
       "jp": "大学を卒業した後は、大手商社の営業部門でバリバリ働きたい。",
       "id": "Setelah lulus dari universitas, saya ingin bekerja giat di departemen penjualan perusahaan dagang ternama.",
@@ -35229,6 +35673,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01079",
   "word": "描く",
@@ -35260,8 +35705,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "seni-budaya"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"エガ＼ク"}
+},
     {
       "jp": "この小説は、戦後の厳しい時代を生き抜いた若者たちの姿を克明に描いている。",
       "id": "Novel ini menggambarkan secara jelas wujud para pemuda yang berjuang bertahan hidup di era pascaperang yang keras.",
@@ -35287,6 +35733,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01081",
   "word": "得る",
@@ -35318,8 +35765,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "pekerjaan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":2,"downstep_mora":1,"contour":"エ＼ル"}
+},
     {
       "jp": "海外留学の経験を通じて、かけがえのない広い視野を得ることができた。",
       "id": "Melalui pengalaman studi di luar negeri, saya berhasil memperoleh wawasan luas yang tak tergantikan.",
@@ -35349,6 +35797,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01082",
   "word": "延期",
@@ -35380,8 +35829,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "pendidikan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"エンキ￣"}
+},
     {
       "jp": "工事の進捗が遅れており、オープン予定日をひと月延期することになった。",
       "id": "Karena kemajuan konstruksi tertunda, tanggal rencana pembukaan terpaksa ditunda selama satu bulan.",
@@ -35410,6 +35860,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01083",
   "word": "演技",
@@ -35441,8 +35892,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "hiburan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"エ＼ンギ"}
+},
     {
       "jp": "彼女の驚いた表情はあまりに不自然で、すぐに演技だと見抜かれた。",
       "id": "Ekspresi terkejutnya terlalu dibuat-buat, sehingga seketika ketahuan bahwa itu hanyalah akting belaka.",
@@ -35468,6 +35920,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01084",
   "word": "援助",
@@ -35499,8 +35952,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "sosial"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"エ＼ンジョ"}
+},
     {
       "jp": "親からの資金援助を一切頼らずに、自力で学費を稼ぎながら大学を卒業した。",
       "id": "Tanpa bergantung pada bantuan keuangan dari orang tua sedikit pun, dia lulus kuliah sembari mencari biaya sekolah dengan keringat sendiri.",
@@ -35530,6 +35984,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01086",
   "word": "演説",
@@ -35561,8 +36016,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "politik-masyarakat"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"エンゼツ￣"}
+},
     {
       "jp": "候補者の演説を聞いて、どの政党に投票するかを決めた。",
       "id": "Setelah mendengarkan pidato sang kandidat, saya memutuskan partai politik mana yang akan saya pilih.",
@@ -35588,6 +36044,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01087",
   "word": "演奏",
@@ -35619,8 +36076,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "seni-budaya"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"エンソウ￣"}
+},
     {
       "jp": "市民ホールで地元のオーケストラがクラシック音楽を演奏する予定だ。",
       "id": "Orkestra lokal dijadwalkan memainkan musik klasik di aula warga kota.",
@@ -35647,6 +36105,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01088",
   "word": "追い付く",
@@ -35678,8 +36137,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "gerakan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"オイツ＼ク"}
+},
     {
       "jp": "休んだ分の授業に追い付くために、毎晩遅くまで復習している。",
       "id": "Untuk mengejar ketertinggalan materi pelajaran selama absen, saya mengulang pelajaran hingga larut setiap malam.",
@@ -35708,6 +36168,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01090",
   "word": "追う",
@@ -35739,8 +36200,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "aksi"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":2,"downstep_mora":0,"contour":"オウ￣"}
+},
     {
       "jp": "彼は若者の流行を追うのが好きで、最新のデザインの服ばかり着ている。",
       "id": "Dia suka mengikuti tren anak muda dan hanya mengenakan pakaian berdesain terbaru.",
@@ -35769,6 +36231,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01091",
   "word": "応援",
@@ -35800,8 +36263,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "olahraga"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"オウエン￣"}
+},
     {
       "jp": "自分の夢に向かって努力する友達を、これからも心から応援したい。",
       "id": "Saya ingin terus mendukung dari lubuk hati teman saya yang berjuang keras menuju impiannya.",
@@ -35828,6 +36292,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01094",
   "word": "応じる",
@@ -35859,8 +36324,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "hubungan-konsep"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"オウジル￣"}
+},
     {
       "jp": "お客様のご予算に応じて、最も最適なプランをご提案させていただきます。",
       "id": "Kami akan mengajukan rencana yang paling optimal disesuaikan dengan anggaran belanja pelanggan.",
@@ -35890,6 +36356,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01095",
   "word": "横断",
@@ -35921,8 +36388,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"オウダン￣"}
+},
     {
       "jp": "彼はバイクだけを使って北アメリカ大陸を横断する長い旅に挑戦した。",
       "id": "Dia menantang diri dalam perjalanan panjang melintasi benua Amerika Utara hanya dengan sepeda motor.",
@@ -35950,6 +36418,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01097",
   "word": "覆う",
@@ -35981,8 +36450,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "alam-lingkungan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"オオウ￣"}
+},
     {
       "jp": "彼女はあまりの悲しい知らせに、両手で顔を覆って泣き崩れてしまった。",
       "id": "Mendengar kabar yang teramat menyedihkan itu, dia menutupi wajahnya dengan kedua tangan lalu menangis tersedu-sedu.",
@@ -36012,6 +36482,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01101",
   "word": "押える",
@@ -36043,8 +36514,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "aksi"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"オサエ＼ル"}
+},
     {
       "jp": "急な激しい腹痛に耐えかねて、お腹を手で強く押えながら病院へ向かった。",
       "id": "Karena tak sanggup menahan sakit perut hebat yang mendadak, ia menuju rumah sakit sambil menekan perutnya erat-erat dengan tangan.",
@@ -36074,6 +36546,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01103",
   "word": "収める",
@@ -36105,8 +36578,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "pekerjaan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"オサメ＼ル"}
+},
     {
       "jp": "見終わった大切な記念写真を、机の奥にある専用の箱にきちんと収めた。",
       "id": "Saya memasukkan dan menyimpan foto kenangan berharga yang selesai dilihat ke kotak khusus di dalam meja secara rapi.",
@@ -36136,6 +36610,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01104",
   "word": "納める",
@@ -36167,8 +36642,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "hukum-aturan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"オサメ＼ル"}
+},
     {
       "jp": "大学の事務窓口へ行って、今年度の後期分の授業料を無事に納めてきた。",
       "id": "Saya pergi ke loket administrasi universitas dan telah berhasil menyetor uang kuliah untuk semester kedua tahun ini.",
@@ -36198,6 +36674,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01105",
   "word": "治める",
@@ -36229,8 +36706,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "politik-masyarakat"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"オサメ＼ル"}
+},
     {
       "jp": "村長は住民同士の対立が激しくならないように、巧みな話し合いで騒ぎを治めた。",
       "id": "Kepala desa meredakan keributan dengan perundingan yang lihai agar perselisihan antarpenduduk tidak semakin memanas.",
@@ -36259,6 +36737,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01106",
   "word": "お辞儀",
@@ -36290,8 +36769,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "sopan-santun"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"オジギ￣"}
+},
     {
       "jp": "面接官に名前を呼ばれた後、部屋に入る前に一歩止まって深くお辞儀をした。",
       "id": "Setelah nama dipanggil pewawancara, saya berhenti sejenak sebelum masuk ruangan lalu membungkuk memberi hormat secara mendalam.",
@@ -36318,6 +36798,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01108",
   "word": "お喋り",
@@ -36348,8 +36829,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "bahasa-komunikasi"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":4,"downstep_mora":2,"contour":"オシャ＼ベリ"}
+},
     {
       "jp": "妹はとてもお喋りな性格なので、家族で食卓を囲むといつも場が賑やかになる。",
       "id": "Karena adik perempuan saya berkarakter sangat suka bicara, suasana selalu meriah saat keluarga berkumpul di meja makan.",
@@ -36379,6 +36861,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01109",
   "word": "恐れる",
@@ -36410,8 +36893,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "pikiran-opini"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"オソレ＼ル"}
+},
     {
       "jp": "多くの専門家が、環境破壊による異常気象のさらなる深刻化を強く恐れている。",
       "id": "Banyak pakar sangat mengkhawatirkan semakin parahnya cuaca ekstrem akibat perusakan lingkungan.",
@@ -36441,6 +36925,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01110",
   "word": "教わる",
@@ -36472,8 +36957,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "pendidikan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"オソワル￣"}
+},
     {
       "jp": "入社したばかりのころ、仕事の進め方について職場の先輩に詳しく教わった。",
       "id": "Ketika baru saja masuk perusahaan, saya diajari secara terperinci perihal cara menjalankan pekerjaan oleh senior di tempat kerja.",
@@ -36502,6 +36988,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01112",
   "word": "劣る",
@@ -36533,8 +37020,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "kualitas"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"オトル￣"}
+},
     {
       "jp": "知識の深さでは先輩に劣るかもしれないが、行動の素早さなら絶対に負けない。",
       "id": "Dalam kedalaman ilmu saya mungkin lebih rendah dibandingkan senior, tetapi kalau soal kecepatan aksi saya tidak akan kalah.",
@@ -36563,6 +37051,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01117",
   "word": "溺れる",
@@ -36594,8 +37083,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "kejadian"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"オボレル￣"}
+},
     {
       "jp": "彼は日々の強いストレスから逃れようとして、毎晩のように酒に溺れて健康を害してしまった。",
       "id": "Mencoba melarikan diri dari tekanan stres sehari-hari, dia terhanyut dalam minuman keras hampir setiap malam hingga merusak kesehatannya.",
@@ -36624,6 +37114,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01126",
   "word": "及ぼす",
@@ -36655,8 +37146,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "sebab-akibat"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"オヨボ＼ス"}
+},
     {
       "jp": "先週末に列島を襲った大型台風は、各地の農作物や交通機関に甚大な被害を及ぼした。",
       "id": "Topan berskala besar yang menerjang kepulauan akhir pekan lalu menimbulkan kerusakan amat dahsyat pada hasil bumi dan sarana transportasi di berbagai tempat.",
@@ -36683,6 +37175,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01127",
   "word": "下す",
@@ -36714,8 +37207,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "hukum-aturan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"オロ＼ス"}
+},
     {
       "jp": "会社の上層部は市場環境の激変を受けて、新規プロジェクトから撤退するという厳しい決断を下した。",
       "id": "Pihak pimpinan atas perusahaan menjatuhkan keputusan tegas untuk mundur dari proyek baru akibat perubahan drastis kondisi pasar.",
@@ -36745,6 +37239,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01128",
   "word": "降ろす",
@@ -36776,8 +37271,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "perjalanan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"オロ＼ス"}
+},
     {
       "jp": "新幹線が駅に到着する前に、座席の上の荷物棚から重いスーツケースを慎重に降ろした。",
       "id": "Sebelum kereta Shinkansen tiba di stasiun, saya menurunkan koper berat dengan hati-hati dari rak bagasi di atas kursi.",
@@ -36806,6 +37302,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01129",
   "word": "卸す",
@@ -36837,8 +37334,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "bisnis"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"オロ＼ス"}
+},
     {
       "jp": "香ばしく焼き上げた秋刀魚に添えるために、みずみずしい大根をおろし器で丁寧に卸した。",
       "id": "Saya memarut lobak yang segar dengan parutan secara hati-hati untuk disajikan bersama ikan sanma bakar yang harum.",
@@ -36867,6 +37365,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01146",
   "word": "解釈",
@@ -36900,8 +37399,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "sastra",
         "pikiran-opini"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":4,"downstep_mora":1,"contour":"カ＼イシャク"}
+},
     {
       "jp": "相手の発言を悪く解釈せず、前向きに意図を受け止めるように努めた。",
       "id": "Saya berusaha tidak menafsirkan ucapan lawan bicara secara buruk, melainkan menangkap maksudnya secara positif.",
@@ -36931,6 +37431,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01147",
   "word": "外出",
@@ -36964,8 +37465,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "pekerjaan",
         "bisnis"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ガイシュツ￣"}
+},
     {
       "jp": "激しい雨が降っていたので、休日の外出を取りやめて家で読書をした。",
       "id": "Karena hujan deras sedang turun, saya membatalkan rencana bepergian keluar di hari libur dan membaca buku di rumah.",
@@ -36995,6 +37497,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01148",
   "word": "改善",
@@ -37029,8 +37532,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "pekerjaan",
         "bisnis"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"カイゼン￣"}
+},
     {
       "jp": "食生活をしっかり見直した結果、健康状態が目に見えて改善された。",
       "id": "Sebagai hasil dari meninjau pola makan dengan saksama, kondisi kesehatan tampak membaik secara nyata.",
@@ -37061,6 +37565,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01152",
   "word": "抱える",
@@ -37094,8 +37599,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "aksi",
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"カカエル￣"}
+},
     {
       "jp": "一人で深刻な悩みを抱え込まずに、信頼できる仲間に相談してください。",
       "id": "Jangan memikul beban kegelisahan mendalam sendirian, tolong ceritakan kepada kawan yang Anda percayai.",
@@ -37123,6 +37629,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01154",
   "word": "輝く",
@@ -37156,8 +37663,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "alam-lingkungan",
         "deskripsi"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"カガヤ＼ク"}
+},
     {
       "jp": "優勝トロフィーを手にした選手たちの顔は、達成感と喜びで輝いていた。",
       "id": "Wajah para atlet yang menggenggam piala kemenangan tampak berseri-seri gemilang oleh rasa kepuasan dan suka cita.",
@@ -37188,6 +37696,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01155",
   "word": "限る",
@@ -37221,8 +37730,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "makanan-minuman",
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"カギ＼ル"}
+},
     {
       "jp": "値段が高い製品だからといって、必ずしも品質が良いとは限らない。",
       "id": "Hanya karena suatu produk berharga mahal, belum tentu mutunya selalu bagus.",
@@ -37250,6 +37760,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01156",
   "word": "嗅ぐ",
@@ -37283,8 +37794,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "makanan-minuman",
         "aksi"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":2,"downstep_mora":0,"contour":"カグ￣"}
+},
     {
       "jp": "警察犬は地面の匂いを丹念に嗅ぎながら、行方不明者の手がかりを追った。",
       "id": "Anjing polisi mengendus bebauan tanah dengan teliti sembari melacak petunjuk orang hilang.",
@@ -37311,6 +37823,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01160",
   "word": "覚悟",
@@ -37344,8 +37857,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "pikiran-opini",
         "motivasi"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"カ＼クゴ"}
+},
     {
       "jp": "起業には失敗の危険が伴うが、彼はすべてを失う覚悟で挑戦した。",
       "id": "Mendirikan usaha memang disertai risiko kegagalan, namun dia berani mencoba dengan kebulatan tekad siap kehilangan segalanya.",
@@ -37373,6 +37887,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01163",
   "word": "学習",
@@ -37406,8 +37921,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "pendidikan",
         "bahasa-komunikasi"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ガクシュウ￣"}
+},
     {
       "jp": "学校の授業だけでなく、タブレット端末を活用した自主的な学習も普及している。",
       "id": "Tidak hanya pembelajaran tatap muka di sekolah, belajar mandiri memanfaatkan perangkat tablet pun kian meluas.",
@@ -37435,6 +37951,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01164",
   "word": "隠す",
@@ -37468,8 +37985,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "kehidupan-sehari",
         "aksi"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"カク＼ス"}
+},
     {
       "jp": "失敗した事実を隠さずに正直に報告したことで、上司からの信頼を得た。",
       "id": "Dengan melaporkan fakta kegagalan secara jujur tanpa menyembunyikannya, dia memperoleh kepercayaan dari atasan.",
@@ -37501,6 +38019,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01165",
   "word": "拡大",
@@ -37534,8 +38053,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "teknologi",
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"カクダイ￣"}
+},
     {
       "jp": "海外市場での需要増加を受けて、会社は生産ラインの大幅な拡大を決めた。",
       "id": "Menyikapi peningkatan permintaan di pasar luar negeri, perusahaan memutuskan perluasan besar-besaran jalur produksi.",
@@ -37565,6 +38085,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01172",
   "word": "囲む",
@@ -37598,8 +38119,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "keluarga",
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"カコム￣"}
+},
     {
       "jp": "この小さな盆地は周囲を険しい山々に囲まれており、独自の気候を持つ。",
       "id": "Cekungan lembah kecil ini dikelilingi pegunungan terjal di sekelilingnya sehingga memiliki iklim khas tersendiri.",
@@ -37627,6 +38149,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01174",
   "word": "重なる",
@@ -37660,8 +38183,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "kejadian",
         "waktu"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"カサナル￣"}
+},
     {
       "jp": "机の上には未処理の書類が何重にも高く重なっていて、整理が大変だ。",
       "id": "Di atas meja, berkas dokumen yang belum diproses bertumpuk tinggi berlapis-lapis sehingga merapikannya cukup merepotkan.",
@@ -37689,6 +38213,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01175",
   "word": "重ねる",
@@ -37722,8 +38247,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "kehidupan-sehari",
         "aksi"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"カサネル￣"}
+},
     {
       "jp": "失敗を恐れずに挑戦と研究を重ねた末に、画期的な新製品が誕生した。",
       "id": "Setelah berulang kali melakukan riset dan uji coba tanpa takut gagal, sebuah produk baru yang revolusioner akhirnya lahir.",
@@ -37751,6 +38277,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01182",
   "word": "稼ぐ",
@@ -37784,8 +38311,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "pekerjaan",
         "pendidikan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"カセ＼グ"}
+},
     {
       "jp": "サッカーの試合終了間際、リードしているチームはパスを回して時間を稼いだ。",
       "id": "Menjelang akhir pertandingan sepak bola, tim yang memimpin saling mengoper bola demi mengulur waktu kemenangan.",
@@ -37813,6 +38341,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01186",
   "word": "片付く",
@@ -37844,8 +38373,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"カタヅ＼ク"}
+},
     {
       "jp": "溜まっていた仕事がやっと片付いて、ほっと安心しました。",
       "id": "Pekerjaan yang menumpuk akhirnya selesai juga, saya pun merasa sangat lega.",
@@ -37875,6 +38405,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01188",
   "word": "語る",
@@ -37906,8 +38437,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "bahasa-komunikasi"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"カタル￣"}
+},
     {
       "jp": "彼女は自分の夢や将来への熱い思いについて熱心に語った。",
       "id": "Dia menceritakan impian dan tekad masa depannya dengan penuh semangat.",
@@ -37936,6 +38468,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01191",
   "word": "がっかり",
@@ -37967,8 +38500,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "emosi"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":0,"downstep_mora":0,"contour":"￣"}
+},
     {
       "jp": "楽しみにしていた遠足が雨で中止になり、子どもたちはがっかりしていた。",
       "id": "Karena darmawisata yang dinanti-nanti batal akibat hujan, anak-anak terlihat murung dan kecewa.",
@@ -37998,6 +38532,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01195",
   "word": "活動",
@@ -38029,8 +38564,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "sosial"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"カツドウ￣"}
+},
     {
       "jp": "その環境保護団体は世界各地で精力的に活動を行っている。",
       "id": "Organisasi perlindungan lingkungan tersebut giat melakukan kegiatan di berbagai belahan dunia.",
@@ -38060,6 +38596,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01196",
   "word": "活躍",
@@ -38092,8 +38629,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "olahraga"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"カツヤク￣"}
+},
     {
       "jp": "将来は国際社会の舞台で活躍できるような人材になりたいです。",
       "id": "Di masa depan saya ingin menjadi sumber daya manusia yang mampu berkiprah aktif di panggung masyarakat internasional.",
@@ -38120,6 +38658,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01197",
   "word": "活用",
@@ -38151,8 +38690,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "pekerjaan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"カツヨウ￣"}
+},
     {
       "jp": "日本語の動詞の活用をしっかり覚えることが文法理解の第一歩だ。",
       "id": "Mengingat konjugasi kata kerja bahasa Jepang dengan baik adalah langkah awal dalam memahami tata bahasa.",
@@ -38179,6 +38719,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01198",
   "word": "仮定",
@@ -38210,8 +38751,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "logika"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"カテイ￣"}
+},
     {
       "jp": "この科学的な計算は、ある一定の条件を仮定して導き出されたものだ。",
       "id": "Perhitungan ilmiah ini diperoleh dengan mengasumsikan adanya kondisi-kondisi tertentu.",
@@ -38241,6 +38783,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01205",
   "word": "我慢",
@@ -38272,8 +38815,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"ガ＼マン"}
+},
     {
       "jp": "ダイエット中なので、夜食のラーメンを食べるのを必死に我慢している。",
       "id": "Karena sedang berdiet, saya berusaha mati-matian menahan diri untuk tidak makan ramen tengah malam.",
@@ -38303,6 +38847,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01215",
   "word": "刈る",
@@ -38334,8 +38879,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":2,"downstep_mora":0,"contour":"カル￣"}
+},
     {
       "jp": "秋になると、黄金色に実った稲を刈る農家の姿が見られる。",
       "id": "Saat musim gugur tiba, terlihat pemandangan para petani yang menuai bulir padi yang menguning keemasan.",
@@ -38364,6 +38910,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01222",
   "word": "観光",
@@ -38395,8 +38942,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "perjalanan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"カンコウ￣"}
+},
     {
       "jp": "この町は古い街並みが残っており、毎年世界中から多くの観光客が訪れる。",
       "id": "Kota ini masih melestarikan deretan jalan kuno, sehingga setiap tahun dikunjungi oleh banyak wisatawan dari seluruh dunia.",
@@ -38423,6 +38971,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01223",
   "word": "観察",
@@ -38454,8 +39003,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "pendidikan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"カンサツ￣"}
+},
     {
       "jp": "医師は患者の容態の変化を慎重に観察し続けている。",
       "id": "Dokter terus mengamati perubahan kondisi pasien dengan sangat hati-hati.",
@@ -38482,6 +39032,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01226",
   "word": "感心",
@@ -38513,8 +39064,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "emosi"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"カンシン￣"}
+},
     {
       "jp": "毎朝早く起きて勉強を続けている彼の努力には本当に感心させられる。",
       "id": "Saya benar-benar dibuat kagum oleh kegigihan usahanya yang bangun pagi setiap hari untuk terus belajar.",
@@ -38543,6 +39095,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01228",
   "word": "関する",
@@ -38574,8 +39127,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "pekerjaan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"カンス＼ル"}
+},
     {
       "jp": "日本の伝統文化に関して、外国人の留学生に向けて分かりやすく説明した。",
       "id": "Mengenai kebudayaan tradisional Jepang, saya menjelaskannya secara mudah dipahami kepada para mahasiswa asing.",
@@ -38602,6 +39156,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01229",
   "word": "完成",
@@ -38633,8 +39188,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "pekerjaan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"カンセイ￣"}
+},
     {
       "jp": "全員で協力して準備を進めたおかげで、無事に企画書を完成させることができた。",
       "id": "Berkat kerja sama seluruh anggota dalam persiapan, proposal kegiatan berhasil diselesaikan dengan baik.",
@@ -38664,6 +39220,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01231",
   "word": "乾燥",
@@ -38696,8 +39253,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "kesehatan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"カンソウ￣"}
+},
     {
       "jp": "洗濯物が雨で外に干せない日は、浴室乾燥機を使って乾かしている。",
       "id": "Pada hari saat jemuran pakaian tidak bisa dijemur di luar karena hujan, saya mengeringkannya memakai mesin pengering kamar mandi.",
@@ -38727,6 +39285,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01233",
   "word": "感動",
@@ -38758,8 +39317,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "emosi"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"カンドウ￣"}
+},
     {
       "jp": "旅先で目にした壮大な夕焼けの美しさに、言葉を失うほど感動した。",
       "id": "Saya begitu terpukau dan terharu hingga kehabisan kata-kata menyaksikan kemegahan matahari terbenam di tempat wisata.",
@@ -38789,6 +39349,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01234",
   "word": "監督",
@@ -38821,8 +39382,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "hiburan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"カントク￣"}
+},
     {
       "jp": "工事現場の責任者として、作業員が安全ルールを守っているか監督している。",
       "id": "Sebagai penanggung jawab lokasi proyek, dia mengawasi apakah para pekerja mematuhi aturan keselamatan.",
@@ -38849,6 +39411,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01235",
   "word": "管理",
@@ -38881,8 +39444,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"カ＼ンリ"}
+},
     {
       "jp": "パスワードや個人情報の管理には十分注意を払わなければならない。",
       "id": "Kita harus memberikan perhatian penuh terhadap pengelolaan kata sandi dan informasi data pribadi.",
@@ -38911,6 +39475,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01249",
   "word": "期待",
@@ -38942,8 +39507,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "pendidikan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"キタイ￣"}
+},
     {
       "jp": "新入社員の活躍にみんなが大きな期待を抱いている。",
       "id": "Semua orang menaruh ekspektasi besar terhadap performa karyawan baru tersebut.",
@@ -38973,6 +39539,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01251",
   "word": "帰宅",
@@ -39003,8 +39570,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"キタク￣"}
+},
     {
       "jp": "帰宅したら、まず手を洗ってうがいをする習慣をつけている。",
       "id": "Begitu pulang ke rumah, saya membiasakan diri untuk pertama-tama mencuci tangan dan berkumur.",
@@ -39033,6 +39601,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01255",
   "word": "気付く",
@@ -39064,8 +39633,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"キヅ＼ク"}
+},
     {
       "jp": "同僚が髪型を変えたのに、一日中誰も気付かなかった。",
       "id": "Meskipun rekan kerja saya mengubah gaya rambutnya, seharian tidak ada seorang pun yang menyadarinya.",
@@ -39095,6 +39665,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01256",
   "word": "気に入る",
@@ -39126,8 +39697,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"キニイル￣"}
+},
     {
       "jp": "旅先で泊まったホテルの部屋が静かで、すっかり気に入ってしまった。",
       "id": "Kamar hotel tempat saya menginap saat perjalanan sangat tenang, saya pun benar-benar merasa cocok dan menyukainya.",
@@ -39157,6 +39729,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01257",
   "word": "記入",
@@ -39188,8 +39761,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "pekerjaan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"キニュウ￣"}
+},
     {
       "jp": "アンケートの空欄に正直な感想を記入してください。",
       "id": "Silakan isikan kesan jujur Anda pada kolom kuesioner yang kosong.",
@@ -39215,6 +39789,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01258",
   "word": "記念",
@@ -39246,8 +39821,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "pendidikan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"キネン￣"}
+},
     {
       "jp": "創立十周年を記念して、関係者を招いた祝賀パーティーが開かれた。",
       "id": "Untuk memperingati ulang tahun pendirian yang ke-10, sebuah pesta perayaan diadakan dengan mengundang pihak terkait.",
@@ -39274,6 +39850,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01260",
   "word": "寄付",
@@ -39305,8 +39882,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "sosial"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":2,"downstep_mora":1,"contour":"キ＼フ"}
+},
     {
       "jp": "その慈善団体は世界中の子供たちへの教育支援のために寄付を募っている。",
       "id": "Organisasi amal itu mengumpulkan donasi demi bantuan pendidikan untuk anak-anak di seluruh dunia.",
@@ -39333,6 +39911,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01261",
   "word": "希望",
@@ -39364,8 +39943,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "emosi"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"キボウ￣"}
+},
     {
       "jp": "面接の日程について、ご希望の時間があれば事前にお知らせください。",
       "id": "Mengenai jadwal wawancara, jika ada waktu yang Anda inginkan silakan beritahukan terlebih dahulu.",
@@ -39394,6 +39974,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01268",
   "word": "キャンプ",
@@ -39425,8 +40006,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "hiburan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":0,"downstep_mora":1,"contour":"＼"}
+},
     {
       "jp": "夜はキャンプファイヤーを囲みながら、星空を眺めて語り合った。",
       "id": "Di malam hari kami berbincang sambil mengelilingi api unggun dan memandangi langit berbintang.",
@@ -39452,6 +40034,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01270",
   "word": "休憩",
@@ -39483,8 +40066,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"キュウケイ￣"}
+},
     {
       "jp": "会議が長引いているため、ここで十分間の休憩を挟むことになった。",
       "id": "Karena rapatnya berlarut-larut, diputuskan untuk menyisipkan jeda istirahat selama sepuluh menit di sini.",
@@ -39514,6 +40098,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01272",
   "word": "吸収",
@@ -39545,8 +40130,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "ilmu-pengetahuan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"キュウシュウ￣"}
+},
     {
       "jp": "子供は柔軟な頭脳を持っているので、新しい言語をあっという間に吸収する。",
       "id": "Karena memiliki otak yang lentur, anak-anak menyerap bahasa baru dalam sekejap.",
@@ -39576,6 +40162,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01273",
   "word": "救助",
@@ -39607,8 +40194,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "sosial"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"キュ＼ウジョ"}
+},
     {
       "jp": "洪水で孤立した住民を救助するために、消防隊がボートで駆けつけた。",
       "id": "Demi mengevakuasi warga yang terisolasi akibat banjir, tim pemadam kebakaran bergegas datang dengan perahu.",
@@ -39635,6 +40223,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01275",
   "word": "休息",
@@ -39666,8 +40255,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "kesehatan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"キュウソク￣"}
+},
     {
       "jp": "週末は家で静かに読書をして、心身の休息をとるようにしている。",
       "id": "Di akhir pekan saya membiasakan diri membaca buku dengan tenang di rumah untuk memberi istirahat bagi jiwa dan raga.",
@@ -39697,6 +40287,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01278",
   "word": "競技",
@@ -39727,8 +40318,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "olahraga"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"キョ＼ウギ"}
+},
     {
       "jp": "選手たちは fair play の精神で正々堂々と競技に臨んだ。",
       "id": "Para atlet mengikuti pertandingan secara sportif dengan semangat fair play.",
@@ -39755,6 +40347,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01280",
   "word": "供給",
@@ -39785,8 +40378,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "sosial"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"キョウキュウ￣"}
+},
     {
       "jp": "市場では需要と供給のバランスによって商品の価格が決まる。",
       "id": "Di pasar, harga barang ditentukan oleh keseimbangan antara permintaan dan penawaran/pasokan.",
@@ -39815,6 +40409,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01282",
   "word": "強調",
@@ -39846,8 +40441,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "pekerjaan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"キョウチョウ￣"}
+},
     {
       "jp": "先生は試験に出るポイントを赤ペンでマークし、その重要性を強調した。",
       "id": "Guru menandai poin-poin yang akan keluar dalam ujian dengan pulpen merah dan menegaskan kepentingannya.",
@@ -39874,6 +40470,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01285",
   "word": "恐怖",
@@ -39905,8 +40502,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "emosi"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"キョ＼ウフ"}
+},
     {
       "jp": "暗い夜道を一人で歩いていると、後ろから足音が聞こえて恐怖を覚えた。",
       "id": "Saat berjalan sendirian di jalan malam yang gelap, saya merasa takut ketika mendengar suara langkah kaki dari belakang.",
@@ -39936,6 +40534,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01286",
   "word": "協力",
@@ -39970,8 +40569,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "pekerjaan",
         "sosial"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"キョウリョク￣"}
+},
     {
       "jp": "困難な課題を解決するために、二つの会社が協力して新製品を開発している。",
       "id": "Untuk menyelesaikan tantangan yang sulit, kedua perusahaan saling bekerja sama mengembangkan produk baru.",
@@ -40004,6 +40604,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01288",
   "word": "許可",
@@ -40038,8 +40639,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "pendidikan",
         "aturan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":2,"downstep_mora":1,"contour":"キョ＼カ"}
+},
     {
       "jp": "市役所から道路工事の許可が正式に下りたので、明日から作業を始める。",
       "id": "Karena izin pekerjaan jalan dari balai kota sudah resmi keluar, pengerjaan dimulai besok.",
@@ -40072,6 +40674,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01291",
   "word": "嫌う",
@@ -40105,8 +40708,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "kepribadian",
         "emosi"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"キラウ￣"}
+},
     {
       "jp": "この観葉植物は直射日光と湿気を嫌うので、風通しのよい日陰に置いてください。",
       "id": "Tanaman hias ini tidak menyukai sinar matahari langsung dan kelembapan tinggi, jadi letakkanlah di tempat teduh dengan ventilasi baik.",
@@ -40136,6 +40740,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01293",
   "word": "切れる",
@@ -40168,8 +40773,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "makanan-minuman",
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"キレ＼ル"}
+},
     {
       "jp": "急に強く引っ張ったせいで、ネックレスの細い鎖が切れてしまった。",
       "id": "Karena tiba-tiba ditarik dengan kuat, rantai tipis kalung itu putus.",
@@ -40199,6 +40805,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01294",
   "word": "記録",
@@ -40232,8 +40839,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "pendidikan",
         "pekerjaan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"キロク￣"}
+},
     {
       "jp": "あの水泳選手は自身の持つ大会記録を1秒以上縮める新記録を樹立した。",
       "id": "Perenang itu mencetak rekor baru dengan memangkas rekor kejuaraan miliknya sendiri lebih dari satu detik.",
@@ -40260,6 +40868,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01297",
   "word": "禁煙",
@@ -40293,8 +40902,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "aturan",
         "transportasi"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"キンエン￣"}
+},
     {
       "jp": "生まれたばかりの赤ちゃんのために、夫はきっぱりと禁煙を決意した。",
       "id": "Demi bayi yang baru saja lahir, suami bertekad bulat untuk berhenti merokok.",
@@ -40323,6 +40933,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01300",
   "word": "禁止",
@@ -40356,8 +40967,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "aturan",
         "budaya"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"キンシ￣"}
+},
     {
       "jp": "危険な作業現場では、安全ヘルメットを着用しない立ち入りを禁止している。",
       "id": "Di lokasi kerja yang berbahaya, dilarang masuk bagi siapa saja yang tidak mengenakan helm keselamatan.",
@@ -40389,6 +41001,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01304",
   "word": "緊張",
@@ -40422,8 +41035,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "pekerjaan",
         "emosi"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"キンチョウ￣"}
+},
     {
       "jp": "二国間の政治的な対立が深まり、国境付近では軍事的な緊張が高まっている。",
       "id": "Konflik politik antara kedua negara semakin mendalam, dan ketegangan militer di dekat perbatasan kian meningkat.",
@@ -40454,6 +41068,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01308",
   "word": "食う",
@@ -40484,8 +41099,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "kehidupan-sehari",
         "makanan-minuman"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":2,"downstep_mora":1,"contour":"ク＼ウ"}
+},
     {
       "jp": "この古いパソコンは動作が重くて、起動するだけでも無駄に時間を食う。",
       "id": "Komputer jadul ini kinerjanya lambat, bahkan untuk menyala saja memakan banyak waktu sia-sia.",
@@ -40513,6 +41129,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01312",
   "word": "腐る",
@@ -40546,8 +41163,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "makanan-minuman",
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"クサ＼ル"}
+},
     {
       "jp": "試合に負けたからといって腐っていないで、次の大会に向けて前向きに練習しよう。",
       "id": "Jangan patah arang hanya karena kalah bertanding, mari berlatih secara positif menyongsong kejuaraan berikutnya.",
@@ -40578,6 +41196,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01317",
   "word": "下る",
@@ -40611,8 +41230,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "perjalanan",
         "alam-lingkungan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"クダル￣"}
+},
     {
       "jp": "長年にわたる裁判の末、ついに最高裁判所から最終的な判決が下った。",
       "id": "Setelah proses pengadilan bertahun-tahun, akhirnya vonis final dijatuhkan oleh Mahkamah Agung.",
@@ -40643,6 +41263,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01319",
   "word": "区別",
@@ -40676,8 +41297,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "sosial",
         "ekonomi"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"ク＼ベツ"}
+},
     {
       "jp": "公私のけじめをしっかりと区別して行動することが、社会人としての最低限のマナーだ。",
       "id": "Membedakan secara tegas antara urusan dinas dan pribadi dalam bertindak merupakan etika paling mendasar bagi seorang profesional.",
@@ -40708,6 +41330,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01322",
   "word": "組む",
@@ -40741,8 +41364,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "bisnis",
         "pekerjaan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":2,"downstep_mora":1,"contour":"ク＼ム"}
+},
     {
       "jp": "彼は面接中、緊張を隠すかのように椅子の背もたれに寄りかかり腕を組んでいた。",
       "id": "Selama wawancara, dia bersandar di punggung kursi sambil bersedekap seolah berusaha menyembunyikan rasa gugupnya.",
@@ -40774,6 +41398,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01323",
   "word": "汲む",
@@ -40807,8 +41432,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "alam-lingkungan",
         "perjalanan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":2,"downstep_mora":0,"contour":"クム￣"}
+},
     {
       "jp": "店長は急病で出勤できなくなったアルバイトの事情を汲んで、急遽代役を手配した。",
       "id": "Manajer toko memaklumi keadaan staf paruh waktu yang tiba-tiba sakit sehingga tak bisa masuk kerja, lalu segera mengatur orang pengganti.",
@@ -40837,6 +41463,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01324",
   "word": "酌む",
@@ -40870,8 +41497,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "budaya",
         "sosial"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":2,"downstep_mora":0,"contour":"クム￣"}
+},
     {
       "jp": "相手が言いにくそうにしている胸の内を深く酌んで、それ以上詮索するのを控えた。",
       "id": "Memahami dan menenggang isi hati lawan bicara yang tampak sungkan mengungkapkannya, saya menahan diri untuk tidak mengoreknya lebih jauh.",
@@ -40900,6 +41528,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01327",
   "word": "暮らす",
@@ -40932,8 +41561,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "kehidupan-sehari",
         "alam-lingkungan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"クラス￣"}
+},
     {
       "jp": "大学の4年間を外国の寮で暮らした経験は、私にとってかけがえのない財産だ。",
       "id": "Pengalaman hidup di asrama luar negeri selama empat tahun kuliah merupakan harta tak ternilai bagi saya.",
@@ -40961,6 +41591,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01331",
   "word": "繰り返す",
@@ -40994,8 +41625,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "pendidikan",
         "bahasa-komunikasi"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":5,"downstep_mora":3,"contour":"クリカ＼エス"}
+},
     {
       "jp": "過去の失敗を二度と繰り返さないために、チームで徹底的な原因究明を行った。",
       "id": "Agar tidak mengulangi kegagalan masa lalu untuk kedua kalinya, kami segenap tim mengusut tuntas penyebabnya.",
@@ -41023,6 +41655,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01333",
   "word": "狂う",
@@ -41056,8 +41689,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "perjalanan",
         "cuaca"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"クル＼ウ"}
+},
     {
       "jp": "何年も手入れをしていないアンティークの時計は、針の進み方が狂って時間が合わない。",
       "id": "Jam antik yang tidak dirawat bertahun-tahun ini pergerakan jarumnya tidak beres sehingga waktunya tidak cocok.",
@@ -41088,6 +41722,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01336",
   "word": "苦しむ",
@@ -41121,8 +41756,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "kesehatan",
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"クルシ＼ム"}
+},
     {
       "jp": "多くの企業が物価の高騰と人手不足に苦しめられている。",
       "id": "Banyak perusahaan dibuat menderita oleh lonjakan harga dan kekurangan tenaga kerja.",
@@ -41153,6 +41789,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01338",
   "word": "苦労",
@@ -41186,8 +41823,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "keluarga",
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"ク＼ロウ"}
+},
     {
       "jp": "異国の地で言葉が通じず、最初は人間関係にずいぶん苦労した。",
       "id": "Di negeri asing saya tidak bisa berbahasa setempat, sehingga pada awalnya sangat kesulitan dalam berinteraksi dengan orang.",
@@ -41218,6 +41856,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01339",
   "word": "加える",
@@ -41251,8 +41890,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "makanan-minuman",
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"クワエル￣"}
+},
     {
       "jp": "会議の資料に最新の売上データを加えて提出してください。",
       "id": "Tolong tambahkan data penjualan terbaru ke dalam materi rapat lalu kumpulkan.",
@@ -41286,6 +41926,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01340",
   "word": "咥える",
@@ -41318,8 +41959,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "kehidupan-sehari",
         "alam-lingkungan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"クワエル￣"}
+},
     {
       "jp": "急いでいた彼は、パンをくわえたまま家を飛び出した。",
       "id": "Karena terburu-buru, dia bergegas keluar rumah sambil mengulum/menggigit roti di mulutnya.",
@@ -41350,6 +41992,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01341",
   "word": "加わる",
@@ -41383,8 +42026,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "pekerjaan",
         "bisnis"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"クワワル￣"}
+},
     {
       "jp": "風の音に雨の音が加わり、嵐はいっそう激しさを増した。",
       "id": "Suara hujan bertambah menyertai deru angin, membuat badai semakin menghebat.",
@@ -41418,6 +42062,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01346",
   "word": "訓練",
@@ -41451,8 +42096,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "pendidikan",
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":4,"downstep_mora":1,"contour":"ク＼ンレン"}
+},
     {
       "jp": "新入社員たちは現場に配属される前に、三ヶ月間の厳しい訓練を受けた。",
       "id": "Karyawan baru menjalani pelatihan ketat selama tiga bulan sebelum ditugaskan ke lapangan.",
@@ -41480,6 +42126,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01349",
   "word": "経営",
@@ -41514,8 +42161,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "bisnis",
         "keluarga"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ケイエイ￣"}
+},
     {
       "jp": "景気の悪化に伴い、会社の経営方針を根本から見直すことになった。",
       "id": "Seiring memburuknya perekonomian, kebijakan manajemen perusahaan diputuskan untuk ditinjau ulang secara mendasar.",
@@ -41543,6 +42191,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01352",
   "word": "警告",
@@ -41576,8 +42225,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "alam-lingkungan",
         "ilmu-pengetahuan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ケイコク￣"}
+},
     {
       "jp": "危険な場所に立ち入ろうとした観光客に、警備員が笛を吹いて警告した。",
       "id": "Petugas keamanan meniup peluit dan memberi peringatan kepada wisatawan yang hendak memasuki area berbahaya.",
@@ -41605,6 +42255,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01353",
   "word": "計算",
@@ -41638,8 +42289,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "belanja",
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ケイサン￣"}
+},
     {
       "jp": "旅行の総費用を計算してみたら、思っていたよりも安く済みそうだ。",
       "id": "Setelah mencoba menghitung total biaya perjalanan, sepertinya akan memakan biaya lebih murah dari dugaan.",
@@ -41669,6 +42321,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01354",
   "word": "掲示",
@@ -41702,8 +42355,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "pendidikan",
         "komunikasi"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ケイジ￣"}
+},
     {
       "jp": "マンションのエントランスに、水道工事のお知らせが掲示されている。",
       "id": "Di lobi pintu masuk apartemen, pemberitahuan pekerjaan perpipaan air sedang ditempelkan.",
@@ -41731,6 +42385,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01357",
   "word": "経由",
@@ -41764,8 +42419,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "perjalanan",
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ケイユ￣"}
+},
     {
       "jp": "このバスは市役所を経由して駅の西口へと向かいます。",
       "id": "Bus ini melewati balai kota sebelum mengarah ke pintu keluar barat stasiun.",
@@ -41796,6 +42452,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01362",
   "word": "化粧",
@@ -41828,8 +42485,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "kehidupan-sehari",
         "pekerjaan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"ケショ＼ウ"}
+},
     {
       "jp": "肌荒れを防ぐために、帰宅したらすぐに化粧を落とすようにしている。",
       "id": "Untuk mencegah kulit kasar, saya membiasakan diri langsung menghapus riasan wajah begitu pulang ke rumah.",
@@ -41860,6 +42518,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01367",
   "word": "決心",
@@ -41893,8 +42552,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "pendidikan",
         "motivasi"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":4,"downstep_mora":1,"contour":"ケ＼ッシン"}
+},
     {
       "jp": "長年勤めた会社を辞めて自分の店を持つのは、大きな決心が必要だった。",
       "id": "Mengundurkan diri dari perusahaan tempat bekerja bertahun-tahun demi membuka toko sendiri memerlukan ketetapan hati yang besar.",
@@ -41925,6 +42585,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01368",
   "word": "欠席",
@@ -41959,8 +42620,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "kesehatan",
         "pendidikan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ケッセキ￣"}
+},
     {
       "jp": "出張と重なってしまい、友人の結婚式をやむを得ず欠席した。",
       "id": "Karena bertabrakan dengan jadwal dinas luar kota, saya terpaksa tidak bisa menghadiri pesta pernikahan teman.",
@@ -41990,6 +42652,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01371",
   "word": "蹴る",
@@ -42023,8 +42686,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "olahraga",
         "aksi"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":2,"downstep_mora":1,"contour":"ケ＼ル"}
+},
     {
       "jp": "提示された給料があまりにも低かったため、その内定を蹴ることにした。",
       "id": "Karena tawaran gaji yang diajukan terlalu rendah, saya memutuskan untuk menolak mentah-mentah tawaran kerja tersebut.",
@@ -42055,6 +42719,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01378",
   "word": "検査",
@@ -42088,8 +42753,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "perjalanan",
         "kejadian"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"ケ＼ンサ"}
+},
     {
       "jp": "病院で詳しい胃の検査をしてもらったが、特に異常は見つからなかった。",
       "id": "Saya menjalani pemeriksaan lambung terperinci di rumah sakit, tetapi tidak ditemukan keabnormalan apa pun.",
@@ -42117,6 +42783,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01381",
   "word": "建設",
@@ -42150,8 +42817,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "bisnis",
         "pekerjaan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ケンセツ￣"}
+},
     {
       "jp": "会議ではお互いに批判するだけでなく、建設的な意見を出し合いましょう。",
       "id": "Dalam rapat, mari saling mengeluarkan pendapat yang konstruktif, bukan hanya saling mengkritik.",
@@ -42183,6 +42851,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01384",
   "word": "検討",
@@ -42217,8 +42886,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "bisnis",
         "keigo-vocabulary"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ケントウ￣"}
+},
     {
       "jp": "新しいシステムの導入には多額の費用がかかるため、慎重な検討が求められる。",
       "id": "Karena penerapan sistem baru memakan biaya besar, diperlukan peninjauan yang matang dan berhati-hati.",
@@ -42249,6 +42919,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01395",
   "word": "合格",
@@ -42281,8 +42952,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "pendidikan",
         "emosi-positif"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ゴウカク￣"}
+},
     {
       "jp": "厳しい安全検査に合格した車だけが市場に出荷される。",
       "id": "Hanya mobil yang telah lolos pemeriksaan keselamatan ketat yang akan dikirim ke pasar.",
@@ -42312,6 +42984,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01396",
   "word": "交換",
@@ -42345,8 +43018,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "komunikasi",
         "pertemanan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"コウカン￣"}
+},
     {
       "jp": "購入したシャツのサイズが合わなかったので、店で別のサイズに交換してもらった。",
       "id": "Karena ukuran kemeja yang dibeli tidak pas, saya meminta ditukarkan dengan ukuran lain di toko.",
@@ -42373,6 +43047,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01399",
   "word": "攻撃",
@@ -42405,8 +43080,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "olahraga",
         "aksi"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"コウゲキ￣"}
+},
     {
       "jp": "ネット上で根拠のない噂によって個人を攻撃することは許されない。",
       "id": "Menyerang pribadi seseorang di internet berdasarkan rumor tanpa bukti tidak boleh dibiarkan.",
@@ -42436,6 +43112,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01400",
   "word": "貢献",
@@ -42468,8 +43145,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "alam-lingkungan",
         "teknologi"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"コウケン￣"}
+},
     {
       "jp": "地域社会に貢献できるような仕事に就きたいと考えている。",
       "id": "Saya ingin mendapatkan pekerjaan yang dapat memberikan sumbangsih bagi masyarakat daerah.",
@@ -42496,6 +43174,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01401",
   "word": "広告",
@@ -42528,8 +43207,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "media",
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"コウコク￣"}
+},
     {
       "jp": "新商品の売上を伸ばすためにインターネット上に広告を掲載した。",
       "id": "Demi mendongkrak penjualan produk baru, perusahaan memasang iklan di internet.",
@@ -42556,6 +43236,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01402",
   "word": "交際",
@@ -42588,8 +43269,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "percintaan",
         "hubungan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"コウサイ￣"}
+},
     {
       "jp": "彼女に勇気を出して交際を申し込んだら、笑顔で受け入れてくれた。",
       "id": "Ketika saya memberanikan diri untuk mengajak pacaran, dia menerimanya sambil tersenyum.",
@@ -42618,6 +43300,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01406",
   "word": "構成",
@@ -42649,8 +43332,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "pendidikan",
         "komunikasi"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"コウセイ￣"}
+},
     {
       "jp": "委員会のメンバー構成を見直して、若い世代の意見も取り入れることになった。",
       "id": "Susunan anggota komite ditinjau ulang demi menampung aspirasi dari generasi muda.",
@@ -42677,6 +43361,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01408",
   "word": "行動",
@@ -42709,8 +43394,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "aksi",
         "motivasi"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"コウドウ￣"}
+},
     {
       "jp": "彼の責任ある行動は周囲の人々から高く評価されている。",
       "id": "Tindakannya yang penuh tanggung jawab mendapat apresiasi tinggi dari orang-orang di sekitarnya.",
@@ -42737,6 +43423,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01413",
   "word": "考慮",
@@ -42769,8 +43456,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "bisnis",
         "keputusan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"コ＼ウリョ"}
+},
     {
       "jp": "相手の立場を考慮しない身勝手な発言はトラブルのもとになる。",
       "id": "Ucapan egois yang tidak memperhitungkan posisi lawan bicara dapat memicu timbulnya masalah.",
@@ -42800,6 +43488,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01414",
   "word": "越える",
@@ -42832,8 +43521,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "alam",
         "perjalanan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"コエル￣"}
+},
     {
       "jp": "困難を乗り越えて目標を達成したときの喜びは大きい。",
       "id": "Kegembiraan saat berhasil melewati masa sulit dan meraih tujuan sungguh amat besar.",
@@ -42860,6 +43550,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01415",
   "word": "超える",
@@ -42892,8 +43583,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "alam-lingkungan",
         "kuantitas"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"コエル￣"}
+},
     {
       "jp": "新型スマートフォンの予約件数はメーカーの予想を大きく超えた。",
       "id": "Jumlah pesanan awal untuk ponsel pintar model baru telah jauh melampaui perkiraan produsen.",
@@ -42923,6 +43615,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01416",
   "word": "コーチ",
@@ -42955,8 +43648,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "olahraga",
         "pendidikan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":0,"downstep_mora":1,"contour":"＼"}
+},
     {
       "jp": "彼は引退後も地元の少年野球チームで子供たちを熱心にコーチしている。",
       "id": "Bahkan setelah pensiun, dia tetap antusias melatih anak-anak di tim bisbol junior setempat.",
@@ -42983,6 +43677,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01419",
   "word": "凍る",
@@ -43015,8 +43710,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "alam-lingkungan",
         "perjalanan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"コオル￣"}
+},
     {
       "jp": "外の気温が氷点下まで下がったため、水道管の中の水が凍ってしまった。",
       "id": "Karena suhu udara di luar turun hingga di bawah titik beku, air di dalam pipa saluran membeku.",
@@ -43045,6 +43741,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01420",
   "word": "ゴール",
@@ -43077,8 +43774,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "olahraga",
         "motivasi"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":0,"downstep_mora":1,"contour":"＼"}
+},
     {
       "jp": "プロジェクトの最終ゴールに向けて、チーム全員で力を合わせている。",
       "id": "Menjelang sasaran akhir dari proyek tersebut, seluruh anggota tim menyatukan kekuatan bersama.",
@@ -43108,6 +43806,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01422",
   "word": "呼吸",
@@ -43140,8 +43839,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "kesehatan",
         "emosi"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"コキュウ￣"}
+},
     {
       "jp": "ダブルスの試合ではパートナーとお互いの呼吸を合わせることが勝利の鍵だ。",
       "id": "Dalam pertandingan ganda, menyelaraskan kekompakan ritme dengan pasangan adalah kunci kemenangan.",
@@ -43168,6 +43868,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01428",
   "word": "克服",
@@ -43200,8 +43901,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "motivasi",
         "komunikasi"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"コクフク￣"}
+},
     {
       "jp": "多くの企業が協力し合って今回の深刻な不況を克服しようとしている。",
       "id": "Banyak perusahaan saling bekerja sama berupaya menaklukkan krisis resesi parah saat ini.",
@@ -43231,6 +43933,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01433",
   "word": "越す",
@@ -43263,8 +43966,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "kehidupan-sehari",
         "pekerjaan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":2,"downstep_mora":0,"contour":"コス￣"}
+},
     {
       "jp": "大晦日の夜は家族で年越しそばを食べながら新しい年を越した。",
       "id": "Pada malam pergantian tahun baru, kami sekeluarga melewati pergantian tahun sambil menyantap toshikoshi soba bersama.",
@@ -43291,6 +43995,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01434",
   "word": "超す",
@@ -43323,8 +44028,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "sosial",
         "kuantitas"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":2,"downstep_mora":0,"contour":"コス￣"}
+},
     {
       "jp": "残業時間が月間四十時間を超すと健康管理の面で注意が必要となる。",
       "id": "Jika waktu lembur kerja melampaui empat puluh jam dalam sebulan, diperlukan perhatian dari segi pengelolaan kesehatan.",
@@ -43353,6 +44059,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01438",
   "word": "骨折",
@@ -43386,8 +44093,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "kesehatan-medis",
         "olahraga"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"コッセツ￣"}
+},
     {
       "jp": "医師の診察を受けたところ、ただの打撲ではなく骨折していることが分かった。",
       "id": "Setelah diperiksa dokter, ternyata bukan sekadar memar melainkan patah tulang.",
@@ -43413,6 +44121,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01441",
   "word": "異なる",
@@ -43447,8 +44156,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "bahasa-komunikasi",
         "akademik"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"コトナ＼ル"}
+},
     {
       "jp": "文化や生活習慣が異なる人々と交流することは、良い刺激になる。",
       "id": "Berinteraksi dengan orang-orang yang budaya dan kebiasaan hidupnya berbeda memberikan stimulus yang baik.",
@@ -43479,6 +44189,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01445",
   "word": "好む",
@@ -43512,8 +44223,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "gaya-hidup",
         "keluarga"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"コノ＼ム"}
+},
     {
       "jp": "この作家の小説は、独特な世界観で若い読者に広く好まれている。",
       "id": "Novel-novel karya penulis ini digemari secara luas oleh pembaca muda karena pandangan dunianya yang unik.",
@@ -43544,6 +44256,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01446",
   "word": "こぼす",
@@ -43577,8 +44290,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "kehidupan-sehari",
         "aksi"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"コボ＼ス"}
+},
     {
       "jp": "同僚は仕事が終わったあと、居酒屋で会社への不満や愚痴をこぼしていた。",
       "id": "Rekan kerja menumpahkan ketidakpuasan dan keluhannya terhadap perusahaan di kedai izakaya setelah jam kerja usai.",
@@ -43606,6 +44320,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01447",
   "word": "こぼれる",
@@ -43639,8 +44354,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "kehidupan-sehari",
         "peristiwa"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"コボレ＼ル"}
+},
     {
       "jp": "合格通知を見た瞬間、安心して目から自然と涙がこぼれた。",
       "id": "Saat melihat surat pemberitahuan kelulusan, karena merasa lega air mata spontan mengalir dari mataku.",
@@ -43668,6 +44384,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01453",
   "word": "殺す",
@@ -43701,8 +44418,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "kehidupan-sehari",
         "aksi"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"コロス￣"}
+},
     {
       "jp": "物音を立てないように、全員が息を殺して犯人の足音を聞いていた。",
       "id": "Agar tidak menimbulkan suara sedikit pun, semua orang menahan napas mendengarkan langkah kaki si pelaku.",
@@ -43732,6 +44450,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01455",
   "word": "混雑",
@@ -43765,8 +44484,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "transportasi",
         "perjalanan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":4,"downstep_mora":1,"contour":"コ＼ンザツ"}
+},
     {
       "jp": "通勤ラッシュ時の混雑を避けるため、いつもより30分早く家を出ている。",
       "id": "Demi menghindari kepadatan jam sibuk berangkat kerja, saya keluar rumah 30 menit lebih awal dari biasanya.",
@@ -43797,6 +44517,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01458",
   "word": "婚約",
@@ -43831,8 +44552,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "keluarga-pernikahan",
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"コンヤク￣"}
+},
     {
       "jp": "給料の数か月分を貯金して、彼女のために素敵な婚約指輪を購入した。",
       "id": "Saya menabung beberapa bulan gaji demi membelikan cincin pertunangan yang indah untuknya.",
@@ -43862,6 +44584,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01459",
   "word": "混乱",
@@ -43895,8 +44618,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "transportasi",
         "peristiwa"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"コンラン￣"}
+},
     {
       "jp": "あまりにも多くの情報を一度に聞かされて、頭の中がすっかり混乱してしまった。",
       "id": "Karena dijejali terlalu banyak informasi dalam satu waktu, isi kepalaku menjadi benar-benar kacau bingung.",
@@ -43928,6 +44652,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01467",
   "word": "裁判",
@@ -43961,8 +44686,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "hukum-keadilan",
         "masyarakat"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":4,"downstep_mora":1,"contour":"サ＼イバン"}
+},
     {
       "jp": "長年にわたる著作権の争いに決着をつけるべく、両社は裁判で争う道を選んだ。",
       "id": "Demi menuntaskan sengketa hak cipta bertahun-tahun, kedua perusahaan memilih jalur berseteru di pengadilan.",
@@ -43990,6 +44716,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01469",
   "word": "サイン",
@@ -44023,8 +44750,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "belanja",
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":0,"downstep_mora":1,"contour":"＼"}
+},
     {
       "jp": "体のだるさは、働きすぎを知らせる体からの危険なサインかもしれない。",
       "id": "Rasa letih pada tubuh mungkin merupakan tanda bahaya dari tubuh yang memberitahu bahwa Anda bekerja terlalu keras.",
@@ -44052,6 +44780,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01471",
   "word": "逆らう",
@@ -44085,8 +44814,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "kehidupan-sehari",
         "aksi"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"サカラ＼ウ"}
+},
     {
       "jp": "若い頃は上司の理不尽な指示に逆らって、よく職場で衝突していた。",
       "id": "Saat masih muda saya sering menentang instruksi atasan yang tak masuk akal dan kerap berbenturan di tempat kerja.",
@@ -44117,6 +44847,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01473",
   "word": "作業",
@@ -44151,8 +44882,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "pekerjaan",
         "keselamatan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"サ＼ギョウ"}
+},
     {
       "jp": "書類の整理作業が予定より早く終わったので、同僚の仕事を手伝った。",
       "id": "Karena tugas perapian dokumen selesai lebih cepat dari jadwal, saya membantu pekerjaan rekan.",
@@ -44180,6 +44912,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01474",
   "word": "裂く",
@@ -44213,8 +44946,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "kesehatan-medis",
         "aksi"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":2,"downstep_mora":1,"contour":"サ＼ク"}
+},
     {
       "jp": "親の強い反対によって、深く愛し合っていた二人の仲が無残にも裂かれてしまった。",
       "id": "Akibat penolakan keras orang tua, hubungan kedua orang yang saling mencintai itu terkoyak secara menyedihkan.",
@@ -44245,6 +44979,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01478",
   "word": "避ける",
@@ -44278,8 +45013,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "kehidupan-sehari",
         "transportasi"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"サケ＼ル"}
+},
     {
       "jp": "余計な人間関係のトラブルを避けるため、噂話には加わらないようにしている。",
       "id": "Demi menghindari masalah relasi antarmanusia yang tak perlu, saya berusaha tidak ikut serta dalam pembicaraan gosip.",
@@ -44310,6 +45046,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01479",
   "word": "支える",
@@ -44343,8 +45080,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "kesehatan-medis",
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ササエル￣"}
+},
     {
       "jp": "苦しい受験勉強の時期を乗り越えられたのは、家族がいつも温かく支えてくれたおかげだ。",
       "id": "Bisa melewati masa-masa sulit belajar menghadapi ujian adalah berkat keluarga yang selalu menyokong dengan hangat.",
@@ -44372,6 +45110,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01480",
   "word": "刺さる",
@@ -44405,8 +45144,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "kehidupan-sehari",
         "makanan-kuliner"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"ササ＼ル"}
+},
     {
       "jp": "板を素手で触った拍子に、指先に小さなトゲが刺さってしまった。",
       "id": "Saat menyentuh papan dengan tangan telanjang, duri kecil tertancap di ujung jari.",
@@ -44435,6 +45175,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01481",
   "word": "刺す",
@@ -44468,8 +45209,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "kehidupan-sehari",
         "alam"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":2,"downstep_mora":1,"contour":"サ＼ス"}
+},
     {
       "jp": "裁縫中にうっかり手元を滑らせて、針で指先を刺してしまった。",
       "id": "Saat menjahit tak sengaja tangan saya terpeleset, lalu menusuk ujung jari dengan jarum.",
@@ -44499,6 +45241,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01482",
   "word": "指す",
@@ -44532,8 +45275,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "etika",
         "komunikasi"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":2,"downstep_mora":1,"contour":"サ＼ス"}
+},
     {
       "jp": "授業中に先生から急に指されて、緊張しながら答えを発表した。",
       "id": "Saat jam pelajaran saya tiba-tiba ditunjuk oleh guru, lalu memaparkan jawaban dengan gugup.",
@@ -44561,6 +45305,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01483",
   "word": "挿す",
@@ -44594,8 +45339,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "kehidupan-sehari",
         "seni-budaya"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":2,"downstep_mora":1,"contour":"サ＼ス"}
+},
     {
       "jp": "スーツの胸ポケットにお気に入りの万年筆をすっと挿して出勤した。",
       "id": "Saya menyelipkan pena bulpoin favorit ke saku dada jas lalu berangkat kerja.",
@@ -44625,6 +45371,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01484",
   "word": "注す",
@@ -44658,8 +45405,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "kesehatan-medis",
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":2,"downstep_mora":1,"contour":"サ＼ス"}
+},
     {
       "jp": "自転車のチェーンがギシギシと音を立てていたので、機械油を注して手入れをした。",
       "id": "Karena rantai sepeda berdecit-decit berisik, saya merawatnya dengan meneteskan minyak mesin pelumas.",
@@ -44687,6 +45435,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01485",
   "word": "射す",
@@ -44720,8 +45469,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "alam",
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":2,"downstep_mora":1,"contour":"サ＼ス"}
+},
     {
       "jp": "厚い雲の切れ間から一筋の光が射して、海面をキラキラと照らした。",
       "id": "Dari celah awan tebal terpancar seberkas sinar cahaya, menyinari permukaan laut hingga berkilau-kilau.",
@@ -44751,6 +45501,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01488",
   "word": "作曲",
@@ -44783,8 +45534,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "seni-budaya",
         "hiburan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"サッキョク￣"}
+},
     {
       "jp": "ピアノを弾きながら新しい曲を作曲するのはとても楽しい。",
       "id": "Menggubah lagu baru sambil memainkan piano sangat menyenangkan.",
@@ -44810,6 +45562,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01491",
   "word": "差別",
@@ -44843,8 +45596,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "politik-masyarakat",
         "hukum-aturan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"サ＼ベツ"}
+},
     {
       "jp": "どのような理由があっても人を不当に差別してはいけない。",
       "id": "Apa pun alasannya, kita tidak boleh mendiskriminasi orang secara tidak adil.",
@@ -44874,6 +45628,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01497",
   "word": "満足",
@@ -44907,8 +45662,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "bisnis",
         "pekerjaan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":4,"downstep_mora":1,"contour":"マ＼ンゾク"}
+},
     {
       "jp": "今学期の試験の結果にはとても満足しています。",
       "id": "Saya merasa sangat puas terhadap perolehan nilai ujian semester ini.",
@@ -44937,6 +45693,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01503",
   "word": "ミス",
@@ -44970,8 +45727,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "pekerjaan",
         "bisnis"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":0,"downstep_mora":1,"contour":"＼"}
+},
     {
       "jp": "人間は誰でもミスをするものだから、次に生かすことが大切だ。",
       "id": "Manusia siapa pun pasti pernah berbuat kekeliruan, yang penting belajar untuk kemudian hari.",
@@ -45002,6 +45760,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01504",
   "word": "満ちる",
@@ -45035,8 +45794,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "emosi-positif",
         "deskripsi"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"ミチ＼ル"}
+},
     {
       "jp": "今夜の空には、明るく輝く満月が丸く満ちている。",
       "id": "Di angkasa malam ini, bulan purnama bersinar terang benderang bundar penuh.",
@@ -45066,6 +45826,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01517",
   "word": "向く",
@@ -45099,8 +45860,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "pendidikan",
         "ruang-arah"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":2,"downstep_mora":0,"contour":"ムク￣"}
+},
     {
       "jp": "彼女は人と話すのが大好きなので、営業の仕事に向いていると思う。",
       "id": "Lantaran dia gemar bercakap-cakap, saya rasa dia sangat cocok menekuni bidang penjualan.",
@@ -45130,6 +45892,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01518",
   "word": "剥く",
@@ -45162,8 +45925,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "makanan-minuman",
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":2,"downstep_mora":0,"contour":"ムク￣"}
+},
     {
       "jp": "ゆで卵の殻をきれいに剥くのは意外と難しい。",
       "id": "Mengelupas kulit telur rebus secara mulus rupanya tidak semudah yang dikira.",
@@ -45190,6 +45954,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01519",
   "word": "向ける",
@@ -45223,8 +45988,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "perjalanan",
         "ruang-arah"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ムケル￣"}
+},
     {
       "jp": "彼女は質問してきた記者に向けて優しい笑顔を向けた。",
       "id": "Dia mengarahkan senyuman ramah menatap wartawan yang tengah melontarkan pertanyaan.",
@@ -45254,6 +46020,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01522",
   "word": "蒸す",
@@ -45286,8 +46053,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "makanan-minuman",
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":2,"downstep_mora":1,"contour":"ム＼ス"}
+},
     {
       "jp": "梅雨の時期になると、毎日雨が続いて部屋の中が蒸して息苦しい。",
       "id": "Saat musim hujan tiba, guyuran hujan tanpa henti membuat kamar terasa pengap lembap.",
@@ -45314,6 +46082,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01523",
   "word": "結ぶ",
@@ -45347,8 +46116,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "olahraga",
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ムスブ￣"}
+},
     {
       "jp": "両国は平和的な協力関係を深めるために、新しい条約を結んだ。",
       "id": "Kedua negara mengikat traktat baru guna memperkokoh kerja sama damai bersahabat.",
@@ -45379,6 +46149,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01529",
   "word": "命じる",
@@ -45412,8 +46183,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "pekerjaan",
         "bisnis"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"メイジル￣"}
+},
     {
       "jp": "裁判所は会社に対して、被害者へ損害賠償を支払うよう命じる判決を下した。",
       "id": "Hakim memvonis putusan memerintahkan perseroan melunasi ganti rugi terhadap korban.",
@@ -45444,6 +46216,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01531",
   "word": "命令",
@@ -45477,8 +46250,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "hukum-aturan",
         "politik-masyarakat"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"メイレイ￣"}
+},
     {
       "jp": "上司から急な出張を命令されて、大急ぎで荷物を準備した。",
       "id": "Kena instruksi mendadak dari atasan untuk perjalanan dinas, saya bergegas merapikan bawaan.",
@@ -45508,6 +46282,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01538",
   "word": "面接",
@@ -45541,8 +46316,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "pekerjaan-bisnis",
         "persiapan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"メンセツ￣"}
+},
     {
       "jp": "緊張のあまり、面接試験でうまく質問に答えられなかった。",
       "id": "Saking gugupnya, saya tidak bisa menjawab pertanyaan dengan baik saat ujian wawancara.",
@@ -45571,6 +46347,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01543",
   "word": "燃える",
@@ -45604,8 +46381,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "bencana",
         "alam"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"モエル￣"}
+},
     {
       "jp": "選手たちは優勝を目指して、強い闘志を燃え上がらせている。",
       "id": "Para atlet berkobar semangat juangnya yang kuat demi mengincar gelar juara.",
@@ -45635,6 +46413,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01548",
   "word": "用いる",
@@ -45669,8 +46448,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "akademik",
         "teknologi-informasi"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"モチイ＼ル"}
+},
     {
       "jp": "日本の伝統料理では、四季折々の新鮮な旬の食材が多く用いられる。",
       "id": "Dalam masakan tradisional Jepang, banyak digunakan bahan musiman segar dari empat musim.",
@@ -45698,6 +46478,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01554",
   "word": "戻す",
@@ -45731,8 +46512,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "kehidupan-sehari",
         "pendidikan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"モド＼ス"}
+},
     {
       "jp": "ひどい食あたりで胃が受け付けず、食べたものをすべて戻してしまった。",
       "id": "Karena keracunan makanan parah dan perut menolak, saya memuntahkan semua makanan yang telah ditelan.",
@@ -45763,6 +46545,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01555",
   "word": "基づく",
@@ -45797,8 +46580,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "pekerjaan-bisnis",
         "ekonomi"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"モトヅ＼ク"}
+},
     {
       "jp": "裁判官は個人的な感情ではなく、法律の定めに従って証拠に基づき判断を下す。",
       "id": "Hakim menjatuhkan putusan berdasarkan bukti dan sesuai ketentuan hukum, bukan atas perasaan pribadi.",
@@ -45826,6 +46610,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01556",
   "word": "求める",
@@ -45860,8 +46645,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "masyarakat",
         "politik"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"モトメ＼ル"}
+},
     {
       "jp": "彼はより良い研究環境を求めて、海外の大学院へ進学することを決めた。",
       "id": "Demi mencari lingkungan riset yang lebih baik, ia memutuskan melanjutkan studi ke pascasarjana di luar negeri.",
@@ -45892,6 +46678,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01561",
   "word": "燃やす",
@@ -45925,8 +46712,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "kehidupan-sehari",
         "lingkungan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"モヤス￣"}
+},
     {
       "jp": "決勝戦を控えた選手たちは、リベンジに強い情熱を燃やしている。",
       "id": "Para atlet menjelang babak final mengobarkan semangat membara untuk membalas kekalahan.",
@@ -45957,6 +46745,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01567",
   "word": "訳す",
@@ -45991,8 +46780,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "pendidikan",
         "bahasa-komunikasi"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"ヤク＼ス"}
+},
     {
       "jp": "ことわざを直訳すると、本来のニュアンスがうまく伝わらないことが多い。",
       "id": "Jika menerjemahkan peribahasa secara harfiah, nuansa aslinya sering kali tidak tersampaikan dengan baik.",
@@ -46020,6 +46810,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01572",
   "word": "雇う",
@@ -46054,8 +46845,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "pekerjaan-bisnis",
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"ヤト＼ウ"}
+},
     {
       "jp": "人手不足を解消するために、会社は海外からの優秀なエンジニアを積極的に雇っている。",
       "id": "Demi mengatasi kekurangan tenaga kerja, perusahaan secara aktif mempekerjakan insinyur andal dari luar negeri.",
@@ -46086,6 +46878,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01574",
   "word": "破る",
@@ -46119,8 +46912,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "hubungan",
         "sikap"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"ヤブ＼ル"}
+},
     {
       "jp": "わが校のサッカー部は、前年王者の強豪チームを破って決勝戦へと進出した。",
       "id": "Klub sepak bola sekolah kami mengalahkan tim tangguh juara bertahan tahun lalu dan melaju ke babak final.",
@@ -46151,6 +46945,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01575",
   "word": "破れる",
@@ -46184,8 +46979,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "pakaian-busana",
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"ヤブレ＼ル"}
+},
     {
       "jp": "長年追いかけ続けてきた夢が破れて、しばらくは何も手につかなかった。",
       "id": "Mimpi yang telah saya kejar selama bertahun-tahun kandas, sehingga untuk sementara saya tidak bisa mengerjakan apa pun.",
@@ -46215,6 +47011,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01576",
   "word": "辞める",
@@ -46249,8 +47046,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "pekerjaan-bisnis",
         "keluarga"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ヤメル￣"}
+},
     {
       "jp": "自分自身の夢であったカフェを開くため、安定した公務員の職を辞める決意をした。",
       "id": "Demi membuka kafe yang menjadi impian diri sendiri, ia bertekad mengundurkan diri dari jabatan pegawai negeri yang mapan.",
@@ -46282,6 +47080,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01583",
   "word": "優勝",
@@ -46315,8 +47114,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "olahraga",
         "pendidikan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ユウショウ￣"}
+},
     {
       "jp": "地元出身の力士が初優勝を果たし、街中がお祝いムードに包まれた。",
       "id": "Pesumo asal daerah setempat berhasil merebut kemenangan pertamanya, dan seisi kota diselimuti suasana suka cita.",
@@ -46347,6 +47147,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01591",
   "word": "譲る",
@@ -46382,8 +47183,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "etika",
         "transportasi"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ユズル￣"}
+},
     {
       "jp": "使わなくなった一眼レフカメラを、写真が趣味の後輩に安く譲った。",
       "id": "Saya menyerahkan kamera SLR yang sudah tidak terpakai kepada junior yang hobi fotografi dengan harga murah.",
@@ -46414,6 +47216,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01593",
   "word": "茹でる",
@@ -46447,8 +47250,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "makanan-kuliner",
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"ユデ＼ル"}
+},
     {
       "jp": "朝食に半熟の卵を茹でて、トーストと一緒に食べた。",
       "id": "Saya merebus telur setengah matang untuk sarapan dan memakannya bersama roti panggang.",
@@ -46474,6 +47278,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01595",
   "word": "酔う",
@@ -46508,8 +47313,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "kehidupan-sehari",
         "sosial"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":2,"downstep_mora":1,"contour":"ヨ＼ウ"}
+},
     {
       "jp": "山道を長時間ドライブすると車に酔いやすいので、前もって薬を飲んでおいた。",
       "id": "Karena saya mudah mabuk perjalanan saat berkendara di jalan pegunungan dalam waktu lama, saya meminum obat terlebih dahulu.",
@@ -46539,6 +47345,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01599",
   "word": "要求",
@@ -46573,8 +47380,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "bisnis",
         "pekerjaan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ヨウキュウ￣"}
+},
     {
       "jp": "お客様の厳しい要求にも迅速かつ柔軟に応えられるよう、体制を整えています。",
       "id": "Kami menyusun sistem agar mampu merespons tuntutan ketat pelanggan dengan cepat dan fleksibel.",
@@ -46605,6 +47413,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01600",
   "word": "用心",
@@ -46639,8 +47448,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "keselamatan",
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":4,"downstep_mora":1,"contour":"ヨ＼ウジン"}
+},
     {
       "jp": "風邪が流行しているので、念のため用心してマスクをつけて外出した。",
       "id": "Karena flu sedang mewabah, saya berjaga-jaga dengan mengenakan masker saat keluar rumah.",
@@ -46671,6 +47481,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01606",
   "word": "予期",
@@ -46705,8 +47516,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "pekerjaan",
         "sains-teknik"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":2,"downstep_mora":1,"contour":"ヨ＼キ"}
+},
     {
       "jp": "景気の回復が予期していたよりも早く進み、会社の売上も大幅に伸びた。",
       "id": "Pemulihan ekonomi berjalan lebih cepat daripada yang diperkirakan, dan penjualan perusahaan pun meningkat drastis.",
@@ -46734,6 +47546,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01607",
   "word": "横切る",
@@ -46768,8 +47581,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "transportasi",
         "keselamatan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"ヨコギ＼ル"}
+},
     {
       "jp": "夜道を歩いていたら、目の前を一匹の黒猫が素早く横切っていった。",
       "id": "Saat berjalan di jalanan malam, seekor kucing hitam melintas dengan cepat di depan mata saya.",
@@ -46797,6 +47611,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01608",
   "word": "汚す",
@@ -46831,8 +47646,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "kehidupan-sehari",
         "makanan-kuliner"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ヨゴス￣"}
+},
     {
       "jp": "工場からの排水が川の水を汚し、魚などの生態系に悪影響を与えている。",
       "id": "Limbah cair dari pabrik mengotori air sungai dan berdampak buruk pada ekosistem seperti ikan.",
@@ -46862,6 +47678,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01609",
   "word": "止す",
@@ -46894,8 +47711,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "percakapan",
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":2,"downstep_mora":1,"contour":"ヨ＼ス"}
+},
     {
       "jp": "つまらないことで喧嘩をするのはもう止せよ。",
       "id": "Sudahlah, hentikan bertengkar karena hal-hal sepele!",
@@ -46926,6 +47744,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01610",
   "word": "寄せる",
@@ -46960,8 +47779,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "transportasi",
         "aksi"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ヨセル￣"}
+},
     {
       "jp": "世界中の人々が、被災地の復興に向けて温かい支援の声を寄せている。",
       "id": "Orang-orang dari seluruh dunia mengirimkan suara dukungan hangat untuk pemulihan daerah bencana.",
@@ -46992,6 +47812,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01611",
   "word": "予測",
@@ -47027,8 +47848,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "cuaca",
         "sains-alam"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ヨソク￣"}
+},
     {
       "jp": "新商品の売上を予測するために、過去の市場調査データを詳細に分析した。",
       "id": "Untuk memperkirakan penjualan produk baru, kami menganalisis data riset pasar terdahulu secara terperinci.",
@@ -47056,6 +47878,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01626",
   "word": "離婚",
@@ -47090,8 +47913,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "keluarga-pernikahan",
         "hubungan-sosial"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"リコン￣"}
+},
     {
       "jp": "日本でも共働き世帯の増加に伴い、離婚に関する価値観が以前より変化している。",
       "id": "Di Jepang pun, seiring bertambahnya rumah tangga dengan kedua pasangan bekerja, pandangan tentang perceraian telah berubah dibanding dahulu.",
@@ -47120,6 +47944,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01632",
   "word": "両替",
@@ -47154,8 +47979,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "perjalanan",
         "ekonomi-keuangan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"リョウガエ￣"}
+},
     {
       "jp": "バスの運賃を払いたいのですが、一万円札しかないので両替してもらえませんか。",
       "id": "Saya ingin membayar ongkos bus, tetapi karena hanya ada uang sepuluh ribu yen, bisakah tolong ditukarkan uang pecahan?",
@@ -47182,6 +48008,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01640",
   "word": "連想",
@@ -47215,8 +48042,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "budaya",
         "pikiran-opini"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"レンソウ￣"}
+},
     {
       "jp": "このメロディーを聞くと、幼い頃に家族と過ごした夏休みが連想される。",
       "id": "Ketika mendengar melodi ini, liburan musim panas bersama keluarga saat kecil langsung terlintas di ingatan.",
@@ -47244,6 +48072,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01641",
   "word": "連続",
@@ -47278,8 +48107,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "pekerjaan",
         "waktu"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"レンゾク￣"}
+},
     {
       "jp": "彼のチームは練習の成果を発揮して、大会で5年連続の優勝を果たした。",
       "id": "Timnya menunjukkan hasil latihan keras dan berhasil meraih gelar juara lima tahun berturut-turut di turnamen.",
@@ -47310,6 +48140,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01644",
   "word": "論じる",
@@ -47343,8 +48174,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "pendidikan",
         "ekonomi"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ロンジル￣"}
+},
     {
       "jp": "専門家たちがテレビ番組で、環境問題の解決策について熱心に論じていた。",
       "id": "Para pakar memperdebatkan solusi masalah lingkungan secara antusias dalam siaran acara televisi.",
@@ -47372,6 +48204,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01645",
   "word": "論争",
@@ -47405,8 +48238,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "politik",
         "ekonomi"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ロンソウ￣"}
+},
     {
       "jp": "二人の学者は古代の歴史解釈をめぐり、長年にわたって論争を続けている。",
       "id": "Kedua sarjana tersebut terus melanjutkan silang pendapat selama bertahun-tahun mengenai penafsiran sejarah kuno.",
@@ -47437,6 +48271,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01651",
   "word": "分かれる",
@@ -47470,8 +48305,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "ruang-arah",
         "perjalanan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"ワカレ＼ル"}
+},
     {
       "jp": "新しい計画について賛成派と反対派で意見が大きく分かれ、結論が出なかった。",
       "id": "Mengenai rencana baru, pendapat terbelah tajam antara pihak pro dan kontra sehingga mufakat belum tercapai.",
@@ -47503,6 +48339,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01653",
   "word": "湧く",
@@ -47536,8 +48373,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "alam-lingkungan",
         "kejadian"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":2,"downstep_mora":0,"contour":"ワク￣"}
+},
     {
       "jp": "先生の励ましの言葉を聞いて、絶対に試験に合格しようという勇気が湧いてきた。",
       "id": "Mendengar nasihat pembakar semangat dari guru, keberanian untuk pasti lulus ujian langsung meluap di dada.",
@@ -47568,6 +48406,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01654",
   "word": "分ける",
@@ -47601,8 +48440,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "kehidupan-sehari",
         "makanan-minuman"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"ワケ＼ル"}
+},
     {
       "jp": "ゴミ出しのルールに従って、燃えるゴミと燃えないゴミをきちんと分ける必要がある。",
       "id": "Sesuai tata tertib pembuangan sampah, kita wajib memisahkan sampah organik dan anorganik dengan tertib.",
@@ -47634,6 +48474,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01660",
   "word": "割る",
@@ -47667,8 +48508,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "kehidupan-sehari",
         "kejadian"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":2,"downstep_mora":0,"contour":"ワル￣"}
+},
     {
       "jp": "居酒屋で注文したウイスキーが強すぎたので、冷たい水で割って飲むことにした。",
       "id": "Karena wiski yang dipesan di kedai terlalu pekat, saya memutuskan mengencerkannya dengan air dingin sebelum diminum.",
@@ -47700,6 +48542,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01667",
   "word": "アップ",
@@ -47733,8 +48576,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "pekerjaan",
         "ekonomi"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":0,"downstep_mora":1,"contour":"＼"}
+},
     {
       "jp": "毎日の地道な筋トレを続けた結果、走るスピードが大幅にアップした。",
       "id": "Berkat ketekunan melatih otot setiap hari, akselerasi kecepatan lari saya meningkat drastis.",
@@ -47766,6 +48610,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01668",
   "word": "宛てる",
@@ -47800,8 +48645,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "bahasa-komunikasi",
         "sopan-santun"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"アテル￣"}
+},
     {
       "jp": "この重要書類は、本社の社長に宛てて速達で発送してください。",
       "id": "Tolong kirimkan dokumen penting ini lewat kurir kilat yang dialamatkan langsung kepada direktur kantor pusat.",
@@ -47829,6 +48675,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01675",
   "word": "傷める",
@@ -47862,8 +48709,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "kesehatan",
         "kejadian"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"イタメ＼ル"}
+},
     {
       "jp": "災害で被災した人々の苦しい暮らしをニュースで見て、深く胸を傷めた。",
       "id": "Menyaksikan derita korban bencana alam di warta berita, hati saya terasa amat teriris pilu.",
@@ -47895,6 +48743,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01676",
   "word": "炒める",
@@ -47927,8 +48776,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "makanan-minuman",
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"イタメ＼ル"}
+},
     {
       "jp": "玉ねぎが透き通るくらいまでじっくり炒めると、料理の甘みと旨みが引き立つ。",
       "id": "Bila bawang bombai ditumis sabar sampai layu bening, cita rasa manis gurih hidangan akan kian terpancar.",
@@ -47955,6 +48805,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01678",
   "word": "異動",
@@ -47987,8 +48838,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "pekerjaan",
         "bisnis"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"イドウ￣"}
+},
     {
       "jp": "異動が決まった上司のために、部署の全員でお別れの送別会を企画した。",
       "id": "Bagi atasan yang telah resmi dipindahtugaskan melalui mutasi, segenap anggota departemen menghelat jamuan perpisahan.",
@@ -48016,6 +48868,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01680",
   "word": "埋まる",
@@ -48049,8 +48902,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "alam-lingkungan",
         "kejadian"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ウマル￣"}
+},
     {
       "jp": "人気歌手のコンサートチケットの予約受付が始まると、全ての席があっという間に埋まった。",
       "id": "Begitu reservasi tiket konser pelantun lagu tenar itu dibuka, segenap kursi penonton langsung terisi penuh seketika.",
@@ -48082,6 +48936,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01681",
   "word": "産む",
@@ -48115,8 +48970,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "keluarga",
         "kesehatan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":2,"downstep_mora":0,"contour":"ウム￣"}
+},
     {
       "jp": "庭の木に巣を作った小鳥が、小さな青い卵を3つ産んでいるのを発見した。",
       "id": "Saya mendapati burung mungil yang bersarang di pohon pekarangan telah bertelur sebanyak tiga butir telur biru kecil.",
@@ -48144,6 +49000,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01683",
   "word": "負う",
@@ -48177,8 +49034,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "pekerjaan",
         "hukum-aturan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":2,"downstep_mora":0,"contour":"オウ￣"}
+},
     {
       "jp": "交通事故で足に重い怪我を負ったが、懸命なリハビリのおかげで歩けるようになった。",
       "id": "Meski menderita cedera luka parah pada bagian kaki saat kecelakaan jalan raya, berkat rehabilitasi tekun ia sanggup berjalan kembali.",
@@ -48209,6 +49067,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01689",
   "word": "加味",
@@ -48243,8 +49102,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "pendidikan",
         "keputusan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":2,"downstep_mora":1,"contour":"カ＼ミ"}
+},
     {
       "jp": "現地の気候や文化を加味した上で、新商品の開発計画を進めるべきだ。",
       "id": "Kita harus memajukan rencana pengembangan produk baru setelah memasukkan pertimbangan iklim dan budaya setempat.",
@@ -48274,6 +49134,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01695",
   "word": "刊行",
@@ -48308,8 +49169,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "ilmu-pengetahuan",
         "media"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"カンコウ￣"}
+},
     {
       "jp": "この記念誌は創立五十周年を祝うために特別に刊行されたものだ。",
       "id": "Buku kenangan ini diterbitkan secara khusus untuk merayakan hari ulang tahun pendirian yang ke-50.",
@@ -48339,6 +49201,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01702",
   "word": "築く",
@@ -48373,8 +49236,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "bisnis",
         "hubungan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"キズ＼ク"}
+},
     {
       "jp": "彼は一代で莫大な富と高い名声を築き上げた。",
       "id": "Dia membangun kekayaan melimpah dan reputasi tinggi hanya dalam kurun satu generasi hidupnya.",
@@ -48405,6 +49269,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01703",
   "word": "規制",
@@ -48439,8 +49304,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "hukum-aturan",
         "alam-lingkungan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"キセイ￣"}
+},
     {
       "jp": "環境を守るために、工場からの有害物質の排出を厳しく規制する法律が制定された。",
       "id": "Demi menjaga kelestarian lingkungan, undang-undang yang meregulasi secara ketat pembuangan zat berbahaya dari pabrik telah disahkan.",
@@ -48472,6 +49338,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01705",
   "word": "協議",
@@ -48506,8 +49373,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "pekerjaan",
         "bisnis"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"キョ＼ウギ"}
+},
     {
       "jp": "両国の代表が今後の貿易協定について協議し、前向きな合意に達した。",
       "id": "Perwakilan kedua negara memusyawarahkan perjanjian dagang mendatang dan mencapai kesepakatan positif.",
@@ -48536,6 +49404,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01706",
   "word": "享受",
@@ -48569,8 +49438,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "teknologi",
         "sosial"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"キョ＼ウジュ"}
+},
     {
       "jp": "すべての国民が基本的人権を享受できるよう、法律が整備されている。",
       "id": "Peraturan perundang-undangan ditata agar segenap warga negara dapat mengecap hak-hak asasi manusia yang mendasar.",
@@ -48598,6 +49468,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01707",
   "word": "協調",
@@ -48632,8 +49503,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "pekerjaan",
         "hubungan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"キョウチョウ￣"}
+},
     {
       "jp": "環境問題のような地球規模の課題を解決するためには、世界各国の協調が不可欠だ。",
       "id": "Untuk menyelesaikan tantangan berskala global seperti masalah lingkungan, keselarasan kerja sama dari negara-negara di dunia adalah hal mutlak.",
@@ -48666,6 +49538,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01716",
   "word": "携帯",
@@ -48700,8 +49573,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "perjalanan",
         "hukum-aturan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ケイタイ￣"}
+},
     {
       "jp": "電車の中では携帯をマナーモードに設定して、通話を控えるのがルールだ。",
       "id": "Di dalam kereta, peraturannya adalah mengatur ponsel ke mode senyap dan menahan diri untuk tidak menelepon.",
@@ -48730,6 +49604,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01719",
   "word": "決行",
@@ -48763,8 +49638,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "kejadian",
         "keputusan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ケッコウ￣"}
+},
     {
       "jp": "登山隊は悪天候の中、頂上を目指して早朝からのアタックを決行した。",
       "id": "Di tengah cuaca buruk, tim pendaki tetap melancarkan upaya penyerbuan ke puncak gunung sejak dini hari.",
@@ -48796,6 +49672,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01721",
   "word": "減少",
@@ -48831,8 +49708,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "ekonomi",
         "sosial"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ゲンショウ￣"}
+},
     {
       "jp": "少子高齢化の影響を受けて、地方都市では労働人口の減少が深刻な課題となっている。",
       "id": "Akibat dampak penurunan angka kelahiran dan penuaan populasi, penurunan angkatan kerja di kota-kota daerah menjadi persoalan serius.",
@@ -48865,6 +49743,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01722",
   "word": "後悔",
@@ -48899,8 +49778,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "emosi-negatif",
         "pendidikan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":4,"downstep_mora":1,"contour":"コ＼ウカイ"}
+},
     {
       "jp": "どんなに後悔しても過去の出来事は変えられないのだから、前を向いて歩もう。",
       "id": "Sebesar apa pun kita menyesal, peristiwa masa lalu tidak bisa diubah, jadi mari melangkah maju menatap ke depan.",
@@ -48928,6 +49808,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01723",
   "word": "航海",
@@ -48961,8 +49842,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "perjalanan",
         "alam-lingkungan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":4,"downstep_mora":1,"contour":"コ＼ウカイ"}
+},
     {
       "jp": "大航海時代には、多くの冒険家たちが未知の大陸を求めて海へと旅立った。",
       "id": "Pada Zaman Penjelajahan Samudra, banyak petualang berangkat mengarungi lautan demi mencari benua yang belum dikenal.",
@@ -48990,6 +49872,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01724",
   "word": "拘束",
@@ -49023,8 +49906,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "pekerjaan",
         "kerja"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"コウソク￣"}
+},
     {
       "jp": "警察は現場から逃走しようとした犯人をその場ですぐに身柄拘束した。",
       "id": "Polisi langsung menahan fisik pelaku yang berusaha kabur dari tempat kejadian perkara saat itu juga.",
@@ -49057,6 +49941,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01725",
   "word": "荒廃",
@@ -49090,8 +49975,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "sosial",
         "sosial"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"コウハイ￣"}
+},
     {
       "jp": "過疎化が進む山村では、手入れされない荒廃した山林の増加が問題になっている。",
       "id": "Di desa pegunungan yang mengalami penyusutan populasi, pertambahan hutan terbengkalai yang rusak menjadi persoalan nyata.",
@@ -49124,6 +50010,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01726",
   "word": "降伏",
@@ -49157,8 +50044,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "politik",
         "sosial"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"コウフク￣"}
+},
     {
       "jp": "圧倒的な戦力差を前にして、城を守る兵士たちは降伏せざるを得なかった。",
       "id": "Di hadapan ketimpangan kekuatan tempur yang teramat jauh, prajurit penjaga benteng tak punya pilihan selain menyerah takluk.",
@@ -49190,6 +50078,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01727",
   "word": "興奮",
@@ -49223,8 +50112,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "emosi-positif",
         "olahraga"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"コウフン￣"}
+},
     {
       "jp": "議論が白熱するあまり興奮して大声を出すのは避けて、冷静に話し合おう。",
       "id": "Saat perdebatan memanas, hindari terbawa emosi hingga berteriak, mari berdiskusi dengan kepala dingin.",
@@ -49256,6 +50146,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01734",
   "word": "採集",
@@ -49289,8 +50180,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "alam-lingkungan",
         "pendidikan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"サイシュウ￣"}
+},
     {
       "jp": "生物学の研究チームは、川の水質を調査するために各地でプランクトンを採集した。",
       "id": "Tim riset biologi mengambil sampel plankton di berbagai lokasi untuk meneliti kualitas air sungai.",
@@ -49318,6 +50210,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01737",
   "word": "設備",
@@ -49352,8 +50245,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "kehidupan-sehari",
         "teknologi"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"セ＼ツビ"}
+},
     {
       "jp": "工場の生産効率を高めるために、古い設備を新しい機械に更新した。",
       "id": "Demi meningkatkan efisiensi produksi pabrik, fasilitas lama diperbarui dengan mesin-mesin baru.",
@@ -49381,6 +50275,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01738",
   "word": "絶滅",
@@ -49415,8 +50310,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "alam-lingkungan",
         "ilmu-pengetahuan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ゼツメツ￣"}
+},
     {
       "jp": "かつて地球上を支配していた恐竜は、巨大隕石の衝突により絶滅したとされる。",
       "id": "Dinosaurus yang dahulu menguasai bumi konon punah akibat hantaman meteorit raksasa.",
@@ -49447,6 +50343,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01739",
   "word": "節約",
@@ -49481,8 +50378,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "kehidupan-sehari",
         "ekonomi-keuangan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"セツヤク￣"}
+},
     {
       "jp": "こまめに部屋の明かりを消すことは、電気代の節約だけでなく環境保護にもつながる。",
       "id": "Rajin mematikan lampu ruangan tidak hanya menghemat tagihan listrik tetapi juga berdampak pada pelestarian lingkungan.",
@@ -49513,6 +50411,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01740",
   "word": "攻める",
@@ -49547,8 +50446,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "olahraga",
         "aksi"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"セメ＼ル"}
+},
     {
       "jp": "城を守る兵士たちは、四方から攻めてくる敵の大軍を必死に防いだ。",
       "id": "Prajurit yang mempertahankan kastel berjuang mati-matian menahan pasukan musuh besar yang menyerbu dari segala penjuru.",
@@ -49579,6 +50479,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01741",
   "word": "責める",
@@ -49613,8 +50514,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "pekerjaan",
         "hubungan-konsep"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"セメ＼ル"}
+},
     {
       "jp": "大切な約束を守れなかったことを悔やんで、彼女はいつまでも自分を責めていた。",
       "id": "Menyesali ketidakmampuannya menepati janji berharga tersebut, ia terus-menerus menyalahkan dirinya sendiri.",
@@ -49646,6 +50548,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01750",
   "word": "前進",
@@ -49680,8 +50583,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "pikiran-opini",
         "motivasi"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ゼンシン￣"}
+},
     {
       "jp": "二国間の平和条約締結に向けて、長年の交渉が一歩前進した。",
       "id": "Perundingan bertahun-tahun mengalami kemajuan selangkah menuju penandatanganan perjanjian damai kedua negara.",
@@ -49713,6 +50617,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01753",
   "word": "宣伝",
@@ -49747,8 +50652,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "bisnis",
         "media"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"センデン￣"}
+},
     {
       "jp": "口コミを通じて評判が広まり、特別な宣伝をしなくても客足が絶えない人気店となった。",
       "id": "Reputasinya menyebar dari mulut ke mulut, sehingga menjadi toko populer yang ramai pembeli meski tanpa promosi khusus.",
@@ -49776,6 +50682,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01756",
   "word": "増加",
@@ -49810,8 +50717,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "kesehatan",
         "sosial"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ゾウカ￣"}
+},
     {
       "jp": "夏の猛暑が続いた影響で、エアコンの売上台数が前年比で三割以上も増加した。",
       "id": "Akibat terpaan panas terik musim panas yang berlanjut, volume penjualan pendingin ruangan meningkat lebih dari tiga puluh persen dibanding tahun lalu.",
@@ -49843,6 +50751,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01757",
   "word": "相続",
@@ -49877,8 +50786,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "keluarga",
         "hukum-aturan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ソウゾク￣"}
+},
     {
       "jp": "不動産を相続した際には、期限内に法律に基づいた名義変更と税金の申告が必要となる。",
       "id": "Ketika mewarisi properti tanah atau bangunan, diperlukan perubahan nama kepemilikan dan pelaporan pajak sesuai hukum dalam batas waktu yang ditentukan.",
@@ -49906,6 +50816,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01758",
   "word": "装置",
@@ -49940,8 +50851,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "teknologi",
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"ソ＼ウチ"}
+},
     {
       "jp": "実験室の精密な装置を扱うときは、必ずマニュアルの手順に従わなければならない。",
       "id": "Saat mengoperasikan peranti presisi di laboratorium, seseorang wajib mematuhi langkah-langkah yang ada di buku petunjuk.",
@@ -49970,6 +50882,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01759",
   "word": "相当",
@@ -50004,8 +50917,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "kesehatan",
         "pekerjaan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ソウトウ￣"}
+},
     {
       "jp": "日本の十万円は、現在の為替レートでおよそ千ドルに相当する。",
       "id": "Uang sepuluh ribu yen Jepang setara dengan sekitar seribu dolar menurut kurs saat ini.",
@@ -50033,6 +50947,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01763",
   "word": "注ぐ",
@@ -50067,8 +50982,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "kehidupan-sehari",
         "makanan-minuman"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ソソグ￣"}
+},
     {
       "jp": "彼は生涯の情熱のすべてを、恵まれない子どもたちの教育支援活動に注ぎ込んだ。",
       "id": "Ia mencurahkan segenap gairah hidupnya ke dalam kegiatan bantuan pendidikan bagi anak-anak kurang mampu.",
@@ -50096,6 +51012,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01767",
   "word": "備える",
@@ -50130,8 +51047,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "kehidupan-sehari",
         "alam-lingkungan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"ソナエ＼ル"}
+},
     {
       "jp": "将来の予期せぬ出費や万が一の病気に備えて、毎月一定の金額を貯金している。",
       "id": "Untuk mengantisipasi pengeluaran mendadak atau risiko sakit di masa depan, saya menabung uang dalam jumlah tertentu setiap bulannya.",
@@ -50159,6 +51077,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01768",
   "word": "具える",
@@ -50193,8 +51112,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "karakter",
         "pekerjaan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"ソナエ＼ル"}
+},
     {
       "jp": "この最新のスマートフォンは、優れた処理能力と美しい画面表示を具えている。",
       "id": "Telepon pintar mutakhir ini dilengkapi dengan daya pemrosesan yang unggul serta tampilan layar yang memukau.",
@@ -50225,6 +51145,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01778",
   "word": "揃う",
@@ -50259,8 +51180,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "pendidikan",
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"ソロ＼ウ"}
+},
     {
       "jp": "演奏者全員の息がぴったり揃って、素晴らしいハーモニーがホールいっぱいに響き渡った。",
       "id": "Kekompakan seluruh pemain musik berpadu selaras secara sempurna, menghasilkan harmoni indah yang menggema ke seisi aula.",
@@ -50291,6 +51213,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01779",
   "word": "揃える",
@@ -50325,8 +51248,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "budaya",
         "sopan-santun"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"ソロエ＼ル"}
+},
     {
       "jp": "海外旅行へ出発する前に、パスポートや現地通貨などの必需品を早めに揃えておいた。",
       "id": "Sebelum berangkat berwisata ke luar negeri, saya telah mengumpulkan barang-barang kebutuhan pokok seperti paspor dan mata uang lokal sejak dini.",
@@ -50357,6 +51281,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01780",
   "word": "損",
@@ -50391,8 +51316,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "belanja",
         "ekonomi-keuangan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":2,"downstep_mora":1,"contour":"ソ＼ン"}
+},
     {
       "jp": "目先の小さな利益にとらわれていると、長い目で見たときに大きな損をすることになる。",
       "id": "Jika terpaku pada keuntungan kecil jangka pendek, kita justru akan mengalami kerugian besar bila dilihat dalam jangka panjang.",
@@ -50424,6 +51350,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01781",
   "word": "損害",
@@ -50458,8 +51385,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "alam-lingkungan",
         "ekonomi-keuangan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ソンガイ￣"}
+},
     {
       "jp": "契約違反によって相手企業に多大な損害を与えてしまい、賠償金を支払うことになった。",
       "id": "Akibat pelanggaran kontrak kerja yang menimbulkan kerugian besar bagi perusahaan mitra, kami harus membayar uang ganti rugi.",
@@ -50490,6 +51418,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01782",
   "word": "存在",
@@ -50524,8 +51453,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "ilmu-pengetahuan",
         "alam-lingkungan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ソンザイ￣"}
+},
     {
       "jp": "どんなに仕事でつらいことがあっても、温かい家族の存在が私の心の大きな支えになっている。",
       "id": "Sebesar apa pun cobaan berat dalam pekerjaan, keberadaan keluarga yang hangat selalu menjadi penopang batin yang besar bagi saya.",
@@ -50557,6 +51487,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01783",
   "word": "尊重",
@@ -50591,8 +51522,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "sosial",
         "budaya"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ソンチョウ￣"}
+},
     {
       "jp": "進路を決めるにあたり、両親は私の将来の夢や希望を最大限に尊重して背中を押してくれた。",
       "id": "Saat menentukan jurusan pendidikan, orang tua saya sangat menghargai impian serta harapan masa depan saya dan memberikan dorongan semangat.",
@@ -50624,6 +51556,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01795",
   "word": "滞在",
@@ -50659,8 +51592,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "bisnis",
         "perjalanan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"タイザイ￣"}
+},
     {
       "jp": "ホテルのフロントで、滞在中の注意事項について説明を受けた。",
       "id": "Di resepsionis hotel, saya menerima penjelasan tentang hal-hal yang perlu diperhatikan selama masa tinggal.",
@@ -50691,6 +51625,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01799",
   "word": "対照",
@@ -50725,8 +51660,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "kepribadian",
         "keluarga"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"タイショウ￣"}
+},
     {
       "jp": "翻訳されたテキストと原文を対照しながら、誤訳がないか細かく確認した。",
       "id": "Sambil membandingkan teks terjemahan dan teks asli secara langsung, saya memeriksa dengan teliti apakah ada salah terjemah.",
@@ -50757,6 +51693,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01801",
   "word": "対する",
@@ -50792,8 +51729,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "pekerjaan",
         "komunikasi"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"タイス＼ル"}
+},
     {
       "jp": "厳しい批判に対して、監督は冷静に受け止める姿勢を見せた。",
       "id": "Menyikapi kritik yang tajam, pelatih menunjukkan sikap menerima dengan kepala dingin.",
@@ -50821,6 +51759,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01805",
   "word": "代表",
@@ -50856,8 +51795,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "sekolah",
         "prestasi"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ダイヒョウ￣"}
+},
     {
       "jp": "富士山は日本を代表する美しい山として、世界中に広く知られている。",
       "id": "Gunung Fuji dikenal luas di seluruh dunia sebagai gunung indah yang merepresentasikan Jepang.",
@@ -50885,6 +51825,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01808",
   "word": "逮捕",
@@ -50919,8 +51860,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "kriminal",
         "hukum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"タ＼イホ"}
+},
     {
       "jp": "詐欺の疑いで容疑者が逮捕されたというニュースが流れた。",
       "id": "Berita tersiar bahwa seorang tersangka telah ditangkap atas dugaan penipuan.",
@@ -50951,6 +51893,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01813",
   "word": "代理",
@@ -50986,8 +51929,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "bisnis",
         "pekerjaan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ダイリ￣"}
+},
     {
       "jp": "本人が市役所に行けない場合は、代理人が委任状を持って申請できます。",
       "id": "Jika orang yang bersangkutan tidak bisa datang ke kantor balai kota, seorang wakil dapat mengajukan permohonan dengan membawa surat kuasa.",
@@ -51017,6 +51961,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01818",
   "word": "高める",
@@ -51052,8 +51997,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "pendidikan",
         "kebiasaan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"タカメ＼ル"}
+},
     {
       "jp": "社員一人ひとりのモチベーションを高めるような職場環境を作りたい。",
       "id": "Saya ingin menciptakan lingkungan kerja yang mampu meningkatkan motivasi setiap karyawan.",
@@ -51085,6 +52031,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01821",
   "word": "炊く",
@@ -51119,8 +52066,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "makanan",
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":2,"downstep_mora":0,"contour":"タク￣"}
+},
     {
       "jp": "今夜はカレーを作るので、いつもより少し多めにご飯を炊いておこう。",
       "id": "Karena malam ini mau membuat kari, mari kita tanak nasi sedikit lebih banyak dari biasanya.",
@@ -51147,6 +52095,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01822",
   "word": "焚く",
@@ -51181,8 +52130,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "kehidupan-sehari",
         "musim"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":2,"downstep_mora":0,"contour":"タク￣"}
+},
     {
       "jp": "気分をリラックスさせるために、寝る前にお気に入りのアロマのお香を焚く。",
       "id": "Untuk membuat pikiran rileks, saya menyalakan dupa aroma favorit sebelum tidur.",
@@ -51212,6 +52162,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01823",
   "word": "抱く",
@@ -51246,8 +52197,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "keluarga",
         "kasih-sayang"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":2,"downstep_mora":0,"contour":"ダク￣"}
+},
     {
       "jp": "久しぶりに空港で再会した二人は、思わず強く抱き合った。",
       "id": "Keduanya yang bertemu kembali di bandara setelah sekian lama, secara spontan saling berpelukan erat.",
@@ -51278,6 +52230,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01826",
   "word": "助かる",
@@ -51311,8 +52264,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "keselamatan",
         "kejadian"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"タスカ＼ル"}
+},
     {
       "jp": "忙しい時に駅まで車で迎えに来てもらえて、本当に助かりました。",
       "id": "Saya sungguh sangat terbantu karena dijemput dengan mobil ke stasiun saat sedang sibuk.",
@@ -51344,6 +52298,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01827",
   "word": "助ける",
@@ -51378,8 +52333,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "kebajikan",
         "masyarakat"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"タスケ＼ル"}
+},
     {
       "jp": "困っている仲間がいれば、いつでも手を差し伸べて助けるのが当然だ。",
       "id": "Jika ada teman yang sedang kesulitan, sudah sewajarnya kita mengulurkan tangan dan menolongnya kapan pun.",
@@ -51410,6 +52366,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01832",
   "word": "戦う",
@@ -51444,8 +52401,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "olahraga",
         "emosi"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"タタカウ￣"}
+},
     {
       "jp": "不当な差別や偏見をなくすため、社会全体で戦っていかなければならない。",
       "id": "Untuk menghapuskan diskriminasi dan prasangka yang tidak adil, kita harus berjuang bersama-sama sebagai satu masyarakat.",
@@ -51478,6 +52436,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01834",
   "word": "畳む",
@@ -51512,8 +52471,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "kehidupan-sehari",
         "rumah-tangga"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"タタム￣"}
+},
     {
       "jp": "長年地域の人々に愛されてきたパン屋が、店主の高齢化のため店を畳んだ。",
       "id": "Toko roti yang telah lama dicintai warga setempat akhirnya menutup usahanya karena usia sang pemilik yang sudah lanjut.",
@@ -51544,6 +52504,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01835",
   "word": "立ち上がる",
@@ -51578,8 +52539,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "kehidupan-sehari",
         "etika"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":5,"downstep_mora":0,"contour":"タチアガル￣"}
+},
     {
       "jp": "電源ボタンを押しても、パソコンのシステムがなかなか立ち上がらない。",
       "id": "Meskipun tombol daya sudah ditekan, sistem komputer tidak kunjung menyala (booting).",
@@ -51611,6 +52573,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01836",
   "word": "達する",
@@ -51645,8 +52608,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "masyarakat",
         "jumlah-kuantitas"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"タッスル￣"}
+},
     {
       "jp": "長い話し合いの末、双方の意見が一致して合意に達した。",
       "id": "Setelah perundingan yang panjang, kedua belah pihak akhirnya sepakat dan mencapai kesepakatan.",
@@ -51678,6 +52642,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01848",
   "word": "騙す",
@@ -51711,8 +52676,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "kejahatan",
         "hukum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"ダマ＼ス"}
+},
     {
       "jp": "親友に騙されていたと知ったとき、彼は深いショックを受けた。",
       "id": "Ketika mengetahui bahwa dirinya telah dibohongi oleh sahabat karibnya, dia mengalami syok mendalam.",
@@ -51744,6 +52710,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01851",
   "word": "溜まる",
@@ -51778,8 +52745,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "kehidupan-sehari",
         "komunikasi"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"タマル￣"}
+},
     {
       "jp": "連日の残業で睡眠不足が続き、身体に疲労が溜まっているのを感じる。",
       "id": "Karena kurang tidur akibat lembur berhari-hari, saya merasakan rasa lelah menumpuk di tubuh saya.",
@@ -51811,6 +52779,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01853",
   "word": "溜める",
@@ -51845,8 +52814,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "ekonomi",
         "pendidikan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"タメル￣"}
+},
     {
       "jp": "洗濯物を何日も溜めてしまうと、洗って干すのがとても大変になる。",
       "id": "Jika membiarkan cucian menumpuk berhari-hari, mencuci dan menjemurnya akan menjadi sangat merepotkan.",
@@ -51879,6 +52849,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01859",
   "word": "誕生",
@@ -51913,8 +52884,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "keluarga",
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"タンジョウ￣"}
+},
     {
       "jp": "今回の選挙の結果、この国に初めて女性の首相が誕生することになった。",
       "id": "Sebagai hasil pemilihan umum kali ini, telah lahir perdana menteri perempuan pertama di negara ini.",
@@ -51947,6 +52919,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01860",
   "word": "ダンス",
@@ -51980,8 +52953,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "sekolah",
         "seni-budaya"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":0,"downstep_mora":1,"contour":"＼"}
+},
     {
       "jp": "健康維持のために、毎週水曜日の夜にダンススクールへ通っている。",
       "id": "Demi menjaga kesehatan, saya pergi ke sekolah tari setiap Rabu malam.",
@@ -52009,6 +52983,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01874",
   "word": "遅刻",
@@ -52043,8 +53018,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "pekerjaan",
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"チコク￣"}
+},
     {
       "jp": "電車が事故で遅延したため、遅刻証明書をもらって学校に提出した。",
       "id": "Karena kereta api terlambat akibat kecelakaan, saya meminta surat bukti keterlambatan dan menyerahkannya ke sekolah.",
@@ -52075,6 +53051,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01885",
   "word": "中止",
@@ -52109,8 +53086,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "cuaca",
         "acara"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"チュウシ￣"}
+},
     {
       "jp": "発熱のため体調が優れず、楽しみにしていた旅行の計画をやむを得ず中止した。",
       "id": "Karena demam dan kondisi fisik menurun, rencana perjalanan yang dinanti-nanti terpaksa saya batalkan.",
@@ -52144,6 +53122,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01886",
   "word": "駐車",
@@ -52177,8 +53156,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "perjalanan",
         "hukum-aturan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"チュウシャ￣"}
+},
     {
       "jp": "駅前のショッピングセンターの地下に車を駐車した。",
       "id": "Saya memarkir mobil di ruang bawah tanah pusat perbelanjaan depan stasiun.",
@@ -52207,6 +53187,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01889",
   "word": "注目",
@@ -52241,8 +53222,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "ilmu-pengetahuan",
         "media"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"チュウモク￣"}
+},
     {
       "jp": "環境に優しい次世代自動車が、今市場で大きな注目を集めている。",
       "id": "Mobil generasi baru yang ramah lingkungan kini sedang menarik sorotan besar di pasar.",
@@ -52273,6 +53255,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01890",
   "word": "注文",
@@ -52307,8 +53290,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "makanan-minuman",
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"チュウモン￣"}
+},
     {
       "jp": "インターネットで注文した本が、翌日の朝には届いた。",
       "id": "Buku yang saya pesan melalui internet sudah tiba pada keesokan paginya.",
@@ -52339,6 +53323,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01892",
   "word": "調査",
@@ -52373,8 +53358,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "hukum-aturan",
         "kejadian"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"チョ＼ウサ"}
+},
     {
       "jp": "消費者の意識に関する市場調査の結果、新商品の売れ行きが予想を上回った。",
       "id": "Berdasarkan hasil survei pasar mengenai kesadaran konsumen, penjualan produk baru melampaui perkiraan.",
@@ -52402,6 +53388,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01895",
   "word": "貯金",
@@ -52435,8 +53422,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "kehidupan-sehari",
         "pendidikan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"チョキン￣"}
+},
     {
       "jp": "車を買うには、まだ貯金が少し足りない。",
       "id": "Untuk membeli mobil, tabungan saya masih sedikit kurang.",
@@ -52468,6 +53456,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01897",
   "word": "散らす",
@@ -52501,8 +53490,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "alam-lingkungan",
         "kejadian"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"チラス￣"}
+},
     {
       "jp": "勉強中にスマートフォンを机の上に置くと、気が散ってしまう。",
       "id": "Jika menaruh ponsel pintar di atas meja saat belajar, konsentrasi akan terpecah/buyar.",
@@ -52533,6 +53523,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01898",
   "word": "散る",
@@ -52566,8 +53557,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "alam-lingkungan",
         "kejadian"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":2,"downstep_mora":0,"contour":"チル￣"}
+},
     {
       "jp": "隣の部屋のテレビの音がうるさくて、気が散って仕事に集中できない。",
       "id": "Suara televisi di kamar sebelah sangat bising, membuat fokusku buyar dan tidak bisa berkonsentrasi bekerja.",
@@ -52598,6 +53590,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01899",
   "word": "通過",
@@ -52632,8 +53625,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "perjalanan",
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ツウカ￣"}
+},
     {
       "jp": "厳しい書類選考を無事に通過し、来週一次面接を受けることになった。",
       "id": "Saya berhasil lolos seleksi berkas yang ketat dan dijadwalkan mengikuti wawancara tahap pertama minggu depan.",
@@ -52665,6 +53659,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01901",
   "word": "通学",
@@ -52699,8 +53694,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "pendidikan",
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ツウガク￣"}
+},
     {
       "jp": "大学の近くにアパートを借りたので、通学がとても楽になった。",
       "id": "Karena menyewa apartemen di dekat kampus, pergi-pulang sekolah menjadi sangat praktis.",
@@ -52730,6 +53726,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01902",
   "word": "通勤",
@@ -52764,8 +53761,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "pekerjaan",
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ツウキン￣"}
+},
     {
       "jp": "会社の近くに引っ越したおかげで、通勤時間が大幅に短縮された。",
       "id": "Berkat pindah rumah ke dekat kantor, waktu perjalanan ke tempat kerja terpangkas drastis.",
@@ -52795,6 +53793,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01903",
   "word": "通行",
@@ -52828,8 +53827,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "perjalanan",
         "hukum-aturan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ツウコウ￣"}
+},
     {
       "jp": "夜遅い時間になると、この路地は通行する人がほとんどいなくなる。",
       "id": "Ketika larut malam tiba, hampir tidak ada lagi orang yang melintas di gang ini.",
@@ -52860,6 +53860,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01904",
   "word": "通じる",
@@ -52894,8 +53895,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "bahasa-komunikasi",
         "perjalanan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ツウジル￣"}
+},
     {
       "jp": "この細い路地をまっすぐ抜けると、大通りに通じています。",
       "id": "Jika terus melewati gang sempit ini lurus ke depan, Anda akan terhubung ke jalan raya besar.",
@@ -52926,6 +53928,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01905",
   "word": "通信",
@@ -52960,8 +53963,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "teknologi",
         "perjalanan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ツウシン￣"}
+},
     {
       "jp": "働きながら通信制の大学で学んで、教員免許を取得した。",
       "id": "Sambil bekerja, dia belajar di universitas sistem pendidikan jarak jauh dan berhasil memperoleh lisensi mengajar.",
@@ -52989,6 +53993,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01906",
   "word": "捕まる",
@@ -53022,8 +54027,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "hukum-aturan",
         "kejadian"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ツカマル￣"}
+},
     {
       "jp": "駅前で上司に捕まって話し込まれ、危うく約束の時間に遅れそうになった。",
       "id": "Saya tertahan diajak mengobrol oleh atasan di depan stasiun, nyaris saja terlambat dari waktu janjian.",
@@ -53053,6 +54059,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01909",
   "word": "付合う",
@@ -53086,8 +54093,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "pertemanan",
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"ツキア＼ウ"}
+},
     {
       "jp": "彼らは大学時代から付き合い始めて、今年結婚することになった。",
       "id": "Mereka mulai berpacaran sejak zaman kuliah, dan memutuskan untuk menikah tahun ini.",
@@ -53118,6 +54126,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01911",
   "word": "次ぐ",
@@ -53152,8 +54161,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "alam-lingkungan",
         "ilmu-pengetahuan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":2,"downstep_mora":0,"contour":"ツグ￣"}
+},
     {
       "jp": "この国では、米に次いで小麦の消費量が年々増加している。",
       "id": "Di negara ini, setelah beras, jumlah konsumsi gandum meningkat dari tahun ke tahun.",
@@ -53184,6 +54194,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01912",
   "word": "注ぐ",
@@ -53218,8 +54229,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "pekerjaan",
         "sopan-santun"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":2,"downstep_mora":0,"contour":"ツグ￣"}
+},
     {
       "jp": "祖父の湯呑みに温かい緑茶をゆっくりと注いであげた。",
       "id": "Saya menuangkan teh hijau hangat perlahan-lahan ke cangkir keramik kakek.",
@@ -53247,6 +54259,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01917",
   "word": "繋がる",
@@ -53281,8 +54294,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "teknologi",
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ツナガル￣"}
+},
     {
       "jp": "毎日の小さな勉強の積み重ねが、将来の試験合格へと繋がっている。",
       "id": "Akumulasi belajar sedikit demi sedikit setiap hari akan berujung pada kelulusan ujian di masa mendatang.",
@@ -53314,6 +54328,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01918",
   "word": "繋ぐ",
@@ -53347,8 +54362,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "keluarga",
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ツナグ￣"}
+},
     {
       "jp": "テレビとゲーム機をケーブルで繋ぐだけで、簡単に大画面で遊べます。",
       "id": "Hanya dengan menyambungkan televisi dan konsol gim menggunakan kabel, Anda bisa bermain di layar lebar dengan mudah.",
@@ -53380,6 +54396,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01919",
   "word": "繋げる",
@@ -53414,8 +54431,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "sosial",
         "budaya"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ツナゲル￣"}
+},
     {
       "jp": "失敗した原因を深く分析し、次のプロジェクトの成功へ繋げることが重要だ。",
       "id": "Sangat penting menganalisis penyebab kegagalan secara mendalam dan mengaitkannya menuju kesuksesan proyek berikutnya.",
@@ -53446,6 +54464,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01923",
   "word": "積む",
@@ -53480,8 +54499,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "pekerjaan",
         "pendidikan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":2,"downstep_mora":0,"contour":"ツム￣"}
+},
     {
       "jp": "キャンプに出発するため、テントや寝袋を車の荷台にたくさん積んだ。",
       "id": "Untuk berangkat berkemah, kami memuat banyak tenda dan kantong tidur ke atas bagasi mobil.",
@@ -53512,6 +54532,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01924",
   "word": "詰める",
@@ -53546,8 +54567,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "makanan-minuman",
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"ツメ＼ル"}
+},
     {
       "jp": "プロジェクトの開始に向けて、来週の会議で細かいスケジュールを詰める予定だ。",
       "id": "Menjelang dimulainya proyek, kami berencana mematangkan jadwal terperinci dalam rapat minggu depan.",
@@ -53578,6 +54600,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01925",
   "word": "積もる",
@@ -53611,8 +54634,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "alam-lingkungan",
         "kejadian"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"ツモ＼ル"}
+},
     {
       "jp": "久しぶりに帰省した実家で、幼なじみと積もる話に花を咲かせた。",
       "id": "Saat pulang kampung setelah sekian lama, obrolan kami dengan teman masa kecil begitu mengalir membahas cerita-cerita yang lama menumpuk.",
@@ -53642,6 +54666,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01932",
   "word": "出会う",
@@ -53675,8 +54700,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "pertemanan",
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"デア＼ウ"}
+},
     {
       "jp": "旅先で素晴らしい景色や温かい人々に出会い、忘れられない経験となった。",
       "id": "Di tempat perjalanan wisata saya menjumpai pemandangan luar biasa dan orang-orang yang hangat, menjadi pengalaman yang tak terlupakan.",
@@ -53706,6 +54732,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01934",
   "word": "抵抗",
@@ -53740,8 +54767,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "pekerjaan",
         "sosial"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"テイコウ￣"}
+},
     {
       "jp": "一人で高級なレストランに入って食事をすることには、少し抵抗がある。",
       "id": "Masuk dan makan sendirian di restoran mewah terasa agak membuat saya risih/enggan.",
@@ -53773,6 +54801,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01935",
   "word": "提出",
@@ -53807,8 +54836,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "pendidikan",
         "pekerjaan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"テイシュツ￣"}
+},
     {
       "jp": "ビザの更新手続きに必要な書類を揃えて、市役所の窓口へ提出した。",
       "id": "Saya melengkapi dokumen yang diperlukan untuk prosedur perpanjangan visa dan menyerahkannya ke loket kantor balai kota.",
@@ -53840,6 +54870,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01941",
   "word": "適する",
@@ -53874,8 +54905,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "alam-lingkungan",
         "kualitas"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"テキス＼ル"}
+},
     {
       "jp": "彼の冷静沈着な性格と判断力は、リーダーの補佐役に適している。",
       "id": "Karakternya yang tenang mantap serta daya pertimbangannya sangat sesuai untuk peran asisten pemimpin.",
@@ -53906,6 +54938,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01944",
   "word": "適用",
@@ -53940,8 +54973,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "bisnis",
         "ekonomi"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"テキヨウ￣"}
+},
     {
       "jp": "裁判所は情状を酌量し、刑の減軽に関する条文を被告人に適用した。",
       "id": "Pengadilan mempertimbangkan keadaan yang meringankan dan menerapkan pasal keringanan hukuman kepada terdakwa.",
@@ -53971,6 +55005,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01951",
   "word": "徹底",
@@ -54005,8 +55040,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "pekerjaan",
         "hukum-aturan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"テッテイ￣"}
+},
     {
       "jp": "新商品の発売に先立ち、競合他社の商品との違いを徹底的に分析した。",
       "id": "Menjelang peluncuran produk baru, kami menganalisis perbedaan dengan produk pesaing secara menyeluruh.",
@@ -54037,6 +55073,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01953",
   "word": "徹夜",
@@ -54070,8 +55107,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "pendidikan",
         "kesehatan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"テツヤ￣"}
+},
     {
       "jp": "納期間近の原稿を仕上げるため、昨夜は同僚と一緒に徹夜で作業を続けた。",
       "id": "Demi menuntaskan naskah menjelang tenggat, tadi malam saya terus bekerja begadang semalam suntuk bersama rekan kerja.",
@@ -54102,6 +55140,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01972",
   "word": "投票",
@@ -54135,8 +55174,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "politik-masyarakat",
         "keputusan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"トウヒョウ￣"}
+},
     {
       "jp": "投票用紙に支持する立候補者の名前を丁寧に記入し、投票箱へと投函した。",
       "id": "Saya menuliskan nama calon yang didukung pada kertas suara secara saksama, lalu memasukkannya ke dalam kotak suara.",
@@ -54166,6 +55206,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01976",
   "word": "通す",
@@ -54200,8 +55241,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "kehidupan-sehari",
         "aksi"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"ト＼オス"}
+},
     {
       "jp": "他部署への公式な連絡事項は、必ず直属の上司を通して伝える決まりになっている。",
       "id": "Pemberitahuan resmi ke bagian lain sudah menjadi aturan untuk wajib disampaikan melalui atasan langsung.",
@@ -54232,6 +55274,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01977",
   "word": "通り過ぎる",
@@ -54265,8 +55308,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "perjalanan",
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":5,"category":"nakadaka","mora_count":6,"downstep_mora":5,"contour":"トオリスギ＼ル"}
+},
     {
       "jp": "激しい雨雲が通り過ぎた途端に空がからりと晴れ上がり、爽やかな風が吹き抜けた。",
       "id": "Begitu gumpalan awan hujan lebat melintas berlalu, langit seketika cerah membiru dan angin sejuk bertiup semilir.",
@@ -54296,6 +55340,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01979",
   "word": "溶く",
@@ -54329,8 +55374,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "makanan-minuman",
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":2,"downstep_mora":1,"contour":"ト＼ク"}
+},
     {
       "jp": "水彩画を描くときは、パレットの上で絵の具を水で溶いて好みの濃さに調整する。",
       "id": "Saat melukis cat air, larutkan cat dengan air di atas palet untuk mengatur tingkat kepekatan warna yang diinginkan.",
@@ -54358,6 +55404,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01980",
   "word": "解く",
@@ -54392,8 +55439,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "pendidikan",
         "logika"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":2,"downstep_mora":1,"contour":"ト＼ク"}
+},
     {
       "jp": "固く結ばれてしまって取れなくなった靴ひもの結び目を、爪を使ってゆっくり解いた。",
       "id": "Simpul tali sepatu yang terikat kencang dan tidak bisa lepas saya uraikan perlahan dengan ujung kuku.",
@@ -54424,6 +55472,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01981",
   "word": "退く",
@@ -54456,8 +55505,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "kehidupan-sehari",
         "gerakan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":2,"downstep_mora":0,"contour":"ドク￣"}
+},
     {
       "jp": "救急車がサイレンを鳴らして近づいてきたので、歩行者たちは道を空けるために慌てて脇へ退いた。",
       "id": "Karena mobil ambulans mendekat sambil membunyikan sirene, para pejalan kaki bergegas menyingkir ke tepi demi membuka jalan.",
@@ -54487,6 +55537,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01983",
   "word": "読書",
@@ -54520,8 +55571,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "hiburan",
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"ド＼クショ"}
+},
     {
       "jp": "幼少期からの読書の習慣は、豊かな語彙力と深い洞察力を養う土台となる。",
       "id": "Kebiasaan membaca buku sejak masa kanak-kanak menjadi pondasi yang memupuk perbendaharaan kata yang kaya dan daya wawasan mendalam.",
@@ -54549,6 +55601,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01987",
   "word": "独立",
@@ -54583,8 +55636,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "pekerjaan",
         "bisnis"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ドクリツ￣"}
+},
     {
       "jp": "大学を卒業して就職したのをきっかけに、親元を離れて独立して暮らすことにした。",
       "id": "Mengambil kesempatan setelah lulus kuliah dan mendapat pekerjaan, ia memutuskan berpisah dari orang tua dan hidup mandiri.",
@@ -54614,6 +55668,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01988",
   "word": "溶ける",
@@ -54648,8 +55703,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "makanan",
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"トケ＼ル"}
+},
     {
       "jp": "スープに入れると、このチーズは熱でトロリとよく溶けます。",
       "id": "Saat dimasukkan ke dalam sup, keju ini meleleh dengan lembut dan lumer terkena panas.",
@@ -54679,6 +55735,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01989",
   "word": "解ける",
@@ -54712,8 +55769,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "kehidupan-sehari",
         "tindakan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"トケ＼ル"}
+},
     {
       "jp": "お互いに腹を割ってじっくり話し合ったおかげで、長年の誤解がようやく解けた。",
       "id": "Berkat berbicara terus terang dan mendalam dari hati ke hati, salah paham selama bertahun-tahun akhirnya terselesaikan.",
@@ -54743,6 +55801,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01992",
   "word": "登山",
@@ -54777,8 +55836,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "olahraga",
         "keselamatan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"ト＼ザン"}
+},
     {
       "jp": "秋になると、紅葉の美しい景色を楽しむために多くの観光客が登山に訪れる。",
       "id": "Saat musim gugur tiba, banyak wisatawan berkunjung untuk mendaki gunung demi menikmati panorama daun musim gugur yang indah.",
@@ -54807,6 +55867,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-02001",
   "word": "飛ばす",
@@ -54840,8 +55901,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "pendidikan",
         "tindakan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"トバス￣"}
+},
     {
       "jp": "子どもたちが広い公園の原っぱで、楽しそうに手作りの紙飛行機を飛ばしている。",
       "id": "Anak-anak sedang menerbangkan pesawat kertas buatan sendiri dengan gembira di padang rumput taman yang luas.",
@@ -54869,6 +55931,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-02005",
   "word": "ドライブ",
@@ -54903,8 +55966,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "hobi",
         "perjalanan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":0,"downstep_mora":0,"contour":"￣"}
+},
     {
       "jp": "運転免許を取ってから初めて、友達を助手席に乗せて遠くまでドライブに行った。",
       "id": "Untuk pertama kalinya setelah mendapatkan SIM, saya mengajak teman duduk di kursi penumpang dan jalan-jalan mobil ke tempat yang jauh.",
@@ -54931,6 +55995,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-02009",
   "word": "取り上げる",
@@ -54966,8 +56031,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "media",
         "masyarakat"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":5,"downstep_mora":0,"contour":"トリアゲル￣"}
+},
     {
       "jp": "授業中にゲームをしていた生徒から、先生は厳しく端末を取り上げた。",
       "id": "Dari siswa yang asyik bermain game di tengah jam pelajaran, sang guru dengan tegas menyita gawai miliknya.",
@@ -54998,6 +56064,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-02010",
   "word": "トレーニング",
@@ -55032,8 +56099,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "olahraga",
         "kesehatan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":0,"downstep_mora":0,"contour":"￣"}
+},
     {
       "jp": "新入社員を対象としたビジネスマナーのトレーニングが来週から実施される予定だ。",
       "id": "Pelatihan etika bisnis yang ditujukan bagi karyawan baru dijadwalkan untuk dilaksanakan mulai pekan depan.",
@@ -55062,6 +56130,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-02012",
   "word": "取れる",
@@ -55095,8 +56164,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "pakaian",
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"トレ＼ル"}
+},
     {
       "jp": "週末に温泉へ行ってゆっくり休んだおかげで、一週間の仕事の疲れがすっかり取れた。",
       "id": "Berkat pergi ke pemandian air panas dan beristirahat santai di akhir pekan, rasa lelah bekerja selama seminggu benar-benar hilang tuntas.",
@@ -55127,6 +56197,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-02019",
   "word": "流す",
@@ -55160,8 +56231,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "perasaan",
         "hiburan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"ナガ＼ス"}
+},
     {
       "jp": "食事の後片付けをする前に、お皿についた油汚れをぬるま湯で軽く流しておいた。",
       "id": "Sebelum mencuci piring seusai makan, saya membilas sisa minyak yang menempel di piring dengan air hangat terlebih dahulu.",
@@ -55192,6 +56264,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-02025",
   "word": "眺める",
@@ -55225,8 +56298,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "alam-lingkungan",
         "perasaan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"ナガメ＼ル"}
+},
     {
       "jp": "電車の窓の外の景色をぼんやり眺めているうちに、いつの間にか眠ってしまった。",
       "id": "Saat melamun menatap pemandangan di luar jendela kereta, tanpa terasa saya pun tertidur pulas.",
@@ -55254,6 +56328,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-02027",
   "word": "流れる",
@@ -55287,8 +56362,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "kehidupan-sehari",
         "hiburan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"ナガレ＼ル"}
+},
     {
       "jp": "大雨によって増水した川に流されないよう、近隣の住民に避難指示が出された。",
       "id": "Perintah evakuasi dikeluarkan bagi warga sekitar agar tidak terseret luapan sungai yang membesar akibat hujan deras.",
@@ -55319,6 +56395,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-02028",
   "word": "殴る",
@@ -55352,8 +56429,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "hukum-aturan",
         "moral"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"ナグ＼ル"}
+},
     {
       "jp": "街角で男同士が口論になり、ついに殴り合いのけんかに発展して警察が駆けつけた。",
       "id": "Terjadi adu mulut antar-pria di sudut jalan, yang akhirnya berujung perkelahian saling pukul hingga polisi bergegas datang.",
@@ -55383,6 +56461,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-02031",
   "word": "納得",
@@ -55417,8 +56496,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "bisnis",
         "komunikasi"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ナットク￣"}
+},
     {
       "jp": "なぜ自分が不合格になったのか、その理由についてどうしても納得がいかない。",
       "id": "Mengapa saya sampai tidak lulus, perihal alasan di baliknya benar-benar sulit saya terima akal sehat.",
@@ -55451,6 +56531,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-02036",
   "word": "怠ける",
@@ -55484,8 +56565,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "pendidikan",
         "karakter"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"ナマケ＼ル"}
+},
     {
       "jp": "日々の地道な努力を怠けていると、せっかくの成果も台無しになってしまう。",
       "id": "Jika terus bermalas-malasan dan melalaikan usaha tekun setiap hari, hasil yang sudah susah payah diraih akan sia-sia.",
@@ -55515,6 +56597,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-02039",
   "word": "鳴らす",
@@ -55548,8 +56631,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "kehidupan-sehari",
         "aksi"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ナラス￣"}
+},
     {
       "jp": "歩行者に危険を知らせるため、急いで自転車のベルを鳴らした。",
       "id": "Untuk memberi tahu bahaya kepada pejalan kaki, saya lekas membunyikan bel sepeda.",
@@ -55576,6 +56660,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-02044",
   "word": "似合う",
@@ -55609,8 +56694,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "belanja",
         "deskripsi"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"ニア＼ウ"}
+},
     {
       "jp": "落ち着いた髪型に変えたことで、彼のスーツ姿が一段と似合うようになった。",
       "id": "Dengan berganti gaya rambut yang lebih kalem, penampilan setelan jasnya menjadi semakin terlihat serasi.",
@@ -55640,6 +56726,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-02045",
   "word": "煮える",
@@ -55674,8 +56761,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "makanan-minuman",
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ニエル￣"}
+},
     {
       "jp": "お肉と野菜が十分に煮えたら、味付けとして味噌を少しずつ溶き入れます。",
       "id": "Setelah daging dan sayuran telah matang empuk, larutkan miso sedikit demi sedikit sebagai bumbu penyedap.",
@@ -55702,6 +56790,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-02051",
   "word": "入場",
@@ -55736,8 +56825,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "hiburan",
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ニュウジョウ￣"}
+},
     {
       "jp": "試合の開始を告げるアナウンスが流れ、両チームの選手たちが堂々とピッチに入場した。",
       "id": "Pengumuman yang menandai dimulainya pertandingan terdengar, dan para atlet kedua kubu melangkah masuk ke lapangan dengan gagah.",
@@ -55766,6 +56856,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-02054",
   "word": "抜く",
@@ -55799,8 +56890,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "kehidupan-sehari",
         "aksi"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":2,"downstep_mora":0,"contour":"ヌク￣"}
+},
     {
       "jp": "長距離走のラストスパートで、先頭を走っていたライバルを一気に抜いて逆転勝利した。",
       "id": "Pada saat pacuan akhir lari jarak jauh, dia menyalip rival yang memimpin lomba sekaligus dan memetik kemenangan gemilang.",
@@ -55831,6 +56923,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-02055",
   "word": "抜ける",
@@ -55864,8 +56957,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "perjalanan",
         "deskripsi"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ヌケル￣"}
+},
     {
       "jp": "提出前に企画書を入念に確認したところ、肝心な予算の見積もりが抜けていた。",
       "id": "Saat memeriksa proposal secara saksama sebelum dikumpulkan, estimasi anggaran penting ternyata ada yang terlewat.",
@@ -55896,6 +56990,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-02057",
   "word": "濡らす",
@@ -55928,8 +57023,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "kehidupan-sehari",
         "pekerjaan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ヌラス￣"}
+},
     {
       "jp": "冷たい水でタオルを軽く濡らして絞り、高熱で苦しむ子供の額に当てて冷やした。",
       "id": "Saya membasahi handuk sedikit dengan air dingin lalu memerasnya, lalu menaruhnya di dahi anak yang demam tinggi untuk meredakannya.",
@@ -55959,6 +57055,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-02061",
   "word": "願う",
@@ -55993,8 +57090,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "pertemanan",
         "emosi-positif"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"ネガ＼ウ"}
+},
     {
       "jp": "被災地の一日も早い復旧と、住民の穏やかな日常が戻ることを切に願わずにはいられない。",
       "id": "Saya tidak bisa tidak berdoa memohon pemulihan kawasan terdampak bencana secepat mungkin dan kembalinya keseharian warga yang damai.",
@@ -56022,6 +57120,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-02064",
   "word": "熱中",
@@ -56055,8 +57154,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "hiburan",
         "keluarga"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ネッチュウ￣"}
+},
     {
       "jp": "学生時代にプログラミングの面白さに熱中した経験が、現在のITエンジニアの仕事に生きている。",
       "id": "Pengalaman asyik tenggelam mendalami keasyikan pemrograman semasa kuliah, kini sangat bermanfaat dalam profesi insinyur IT.",
@@ -56087,6 +57187,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-02077",
   "word": "残す",
@@ -56121,8 +57222,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "makanan-minuman",
         "pendidikan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"ノコ＼ス"}
+},
     {
       "jp": "急用で先に退社した上司は、机の上に詳しいプロジェクトの指示書を残してくれた。",
       "id": "Atasan yang terpaksa pulang kantor lebih dulu karena urusan mendadak, meninggalkan surat petunjuk proyek terperinci di atas meja.",
@@ -56152,6 +57254,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-02079",
   "word": "乗せる",
@@ -56185,8 +57288,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "kehidupan-sehari",
         "perjalanan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ノセル￣"}
+},
     {
       "jp": "幼い子供を自転車の後部座席に乗せる時は、安全のため必ずヘルメットを着用させるべきだ。",
       "id": "Ketika memboncengkan anak kecil di kursi belakang sepeda, wajib mengenakan helm demi keselamatan.",
@@ -56215,6 +57319,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-02080",
   "word": "載せる",
@@ -56249,8 +57354,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "media",
         "hiburan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ノセル￣"}
+},
     {
       "jp": "重い荷物をたくさん台車の上に載せて運ぶ際は、荷崩れしないよう十分に注意してください。",
       "id": "Saat menaruh banyak muatan berat di atas gerobak dorong dan mengangkutnya, harap sangat berhati-hati agar barang tidak roboh.",
@@ -56281,6 +57387,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-02081",
   "word": "覗く",
@@ -56314,8 +57421,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "aksi",
         "keluarga"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ノゾク￣"}
+},
     {
       "jp": "買い物のついでに新しく開店した雑貨屋を少し覗いて、可愛らしい小物を買った。",
       "id": "Sembari berbelanja saya menjenguk sekilas toko pernak-pernik yang baru buka, lalu membeli perhiasan kecil yang lucu.",
@@ -56343,6 +57451,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-02082",
   "word": "除く",
@@ -56377,8 +57486,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "pekerjaan",
         "sosial"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ノゾク￣"}
+},
     {
       "jp": "料理の前に、水で野菜の表面についた泥や汚れをきれいに洗い流して除く。",
       "id": "Sebelum memasak, singkirkan lumpur dan kotoran yang menempel di permukaan sayuran dengan mencucinya hingga bersih dengan air.",
@@ -56409,6 +57519,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-02084",
   "word": "望む",
@@ -56443,8 +57554,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "politik-masyarakat",
         "pikiran-opini"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ノゾム￣"}
+},
     {
       "jp": "山頂の展望台に立つと、眼下に広大な湖と美しい街並みを正面に望むことができる。",
       "id": "Berdiri di menara pandang puncak gunung, kita dapat menghadap langsung pemandangan danau luas dan tata kota yang indah di bawah mata.",
@@ -56472,6 +57584,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-02086",
   "word": "ノック",
@@ -56504,8 +57617,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "kehidupan-sehari",
         "sopan-santun"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":0,"downstep_mora":1,"contour":"＼"}
+},
     {
       "jp": "ノックの音が聞こえたので、急いで玄関へ向かった。",
       "id": "Karena mendengar suara ketukan pintu, saya bergegas menuju ke pintu depan.",
@@ -56531,6 +57645,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-02087",
   "word": "伸ばす",
@@ -56564,8 +57679,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "olahraga",
         "kesehatan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"ノバ＼ス"}
+},
     {
       "jp": "留学を通して、自分の語学力をさらに伸ばしたいと考えている。",
       "id": "Melalui belajar di luar negeri, saya ingin lebih mengembangkan kemampuan bahasa saya.",
@@ -56598,6 +57714,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-02088",
   "word": "延ばす",
@@ -56631,8 +57748,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "waktu",
         "keputusan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"ノバ＼ス"}
+},
     {
       "jp": "レポートの提出期限を来週の月曜日まで延ばしてもらえませんか。",
       "id": "Bisakah batas pengumpulan laporan diperpanjang hingga hari Senin depan?",
@@ -56665,6 +57783,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-02089",
   "word": "伸びる",
@@ -56698,8 +57817,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "keluarga",
         "perubahan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"ノビ＼ル"}
+},
     {
       "jp": "毎日練習を重ねたおかげで、日本語のテストの点数が大幅に伸びた。",
       "id": "Berkat latihan berulang-ulang setiap hari, nilai ujian bahasa Jepang saya meningkat secara drastis.",
@@ -56731,6 +57851,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-02090",
   "word": "延びる",
@@ -56764,8 +57885,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "pekerjaan",
         "waktu"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"ノビ＼ル"}
+},
     {
       "jp": "工事の遅れの影響で、新しい道路の開通予定が来年まで延びることになった。",
       "id": "Akibat pengaruh keterlambatan proyek, jadwal peresmian jalan baru menjadi tertunda hingga tahun depan.",
@@ -56798,6 +57920,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-02091",
   "word": "上る",
@@ -56831,8 +57954,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "gerakan",
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ノボル￣"}
+},
     {
       "jp": "今回の水害による被害総額は、数十億円に上ると見られている。",
       "id": "Total kerugian akibat bencana banjir kali ini diperkirakan mencapai puluhan miliar yen.",
@@ -56864,6 +57988,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-02092",
   "word": "昇る",
@@ -56897,8 +58022,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "alam",
         "deskripsi"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ノボル￣"}
+},
     {
       "jp": "工場の煙突から白い煙が青空高く昇っていくのが見えた。",
       "id": "Terlihat asap putih membubung tinggi ke langit biru dari cerobong pabrik.",
@@ -56930,6 +58056,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-02099",
   "word": "ハイキング",
@@ -56963,8 +58090,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "perjalanan",
         "hiburan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":0,"downstep_mora":1,"contour":"＼"}
+},
     {
       "jp": "豊かな自然の中をハイキングしながら、きれいな空気を胸いっぱいに吸い込んだ。",
       "id": "Sembari lintas alam di tengah alam yang asri, saya menghirup udara segar sepuas-puasnya.",
@@ -56991,6 +58119,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-02100",
   "word": "配達",
@@ -57024,8 +58153,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "belanja",
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ハイタツ￣"}
+},
     {
       "jp": "雨の日も風の日も休まずに、郵便配達員が手紙を届けてくれる。",
       "id": "Baik saat hujan lebat maupun angin kencang tanpa libur, kurir pos tetap mengantarkan surat untuk kita.",
@@ -57053,6 +58183,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-02104",
   "word": "生える",
@@ -57086,8 +58217,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "alam-lingkungan",
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"ハエ＼ル"}
+},
     {
       "jp": "生まれたばかりの赤ちゃんに、小さな前歯が一本生えてきた。",
       "id": "Pada bayi yang belum lama lahir itu, sebutir gigi seri mungil mulai tumbuh keluar.",
@@ -57117,6 +58249,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-02108",
   "word": "計る",
@@ -57150,8 +58283,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "olahraga",
         "waktu"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"ハカ＼ル"}
+},
     {
       "jp": "相手の様子を見ながら、話しかけるタイミングを慎重に計った。",
       "id": "Sembari memperhatikan gelagat lawan bicara, saya memperhitungkan waktu yang pas dengan hati-hati untuk menegurnya.",
@@ -57181,6 +58315,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-02109",
   "word": "量る",
@@ -57214,8 +58349,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "kesehatan",
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"ハカ＼ル"}
+},
     {
       "jp": "お菓子を上手に作るためには、砂糖や小麦粉の分量を正確に量らなければならない。",
       "id": "Untuk membuat kue dengan lezat, kita harus menimbang takaran gula dan tepung terigu dengan cermat.",
@@ -57244,6 +58380,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-02110",
   "word": "測る",
@@ -57277,8 +58414,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "kesehatan",
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"ハカ＼ル"}
+},
     {
       "jp": "新しいカーテンを買う前に、窓の横幅と高さをメジャーで測った。",
       "id": "Sebelum membeli tirai baru, saya mengukur lebar dan tinggi jendela menggunakan meteran gulung.",
@@ -57308,6 +58446,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-02113",
   "word": "爆発",
@@ -57341,8 +58480,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "kejadian",
         "sosial"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"バクハツ￣"}
+},
     {
       "jp": "ずっと我慢を重ねていた不満が、ある日突然爆発して激しい口論になった。",
       "id": "Kekesalan yang telah lama dipendam tiba-tiba meledak suatu hari hingga berujung pada pertengkaran hebat.",
@@ -57369,6 +58509,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-02116",
   "word": "破産",
@@ -57402,8 +58543,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "ekonomi",
         "kejadian"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ハサン￣"}
+},
     {
       "jp": "不況のあおりを受けて取引先の会社が破産宣告を受けたと聞き、驚いた。",
       "id": "Saya terperanjat mendengar bahwa mitra dagang telah menerima vonis pailit akibat imbas lesunya ekonomi.",
@@ -57430,6 +58572,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-02118",
   "word": "パス",
@@ -57462,8 +58605,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "komunikasi",
         "pertemanan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":0,"downstep_mora":1,"contour":"＼"}
+},
     {
       "jp": "味方の選手へ正確なパスを出したことで、見事なシュートが決まった。",
       "id": "Berkat sodoran operan yang akurat kepada rekan setim, tembakan gol menawan berhasil dilesakkan.",
@@ -57490,6 +58634,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-02119",
   "word": "外す",
@@ -57523,8 +58668,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "pekerjaan",
         "keigo-vocabulary"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ハズス￣"}
+},
     {
       "jp": "帰宅したらすぐにマスクを外して、手洗いうがいを徹底している。",
       "id": "Setibanya di rumah, saya langsung mencopot masker lalu mencuci tangan dan berkumur secara seksama.",
@@ -57556,6 +58702,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-02121",
   "word": "外れる",
@@ -57589,8 +58736,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "kehidupan-sehari",
         "perubahan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ハズレル￣"}
+},
     {
       "jp": "明日は晴れるという天気予報が外れて、朝から冷たい雨が降っている。",
       "id": "Prakiraan cuaca bahwa hari esok cerah ternyata meleset, dan sejak pagi hujan dingin malah turun.",
@@ -57623,6 +58771,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-02127",
   "word": "発見",
@@ -57656,8 +58805,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "ilmu-pengetahuan",
         "alam-lingkungan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ハッケン￣"}
+},
     {
       "jp": "病気は早期に発見して適切な治療を受ければ、完治する可能性が高くなる。",
       "id": "Jika penyakit ditemukan sejak dini dan lekas ditangani dengan benar, potensi sembuh total akan jauh lebih tinggi.",
@@ -57688,6 +58838,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-02128",
   "word": "発行",
@@ -57721,8 +58872,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "hukum-aturan",
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ハッコウ￣"}
+},
     {
       "jp": "その雑誌は毎月一回発行されており、若い読者から絶大な人気を集めている。",
       "id": "Majalah berkala itu diterbitkan sebulan sekali dan memanen popularitas tinggi di kalangan pembaca muda.",
@@ -57753,6 +58905,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-02129",
   "word": "発車",
@@ -57786,8 +58939,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "perjalanan",
         "sopan-santun"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ハッシャ￣"}
+},
     {
       "jp": "バスは定刻通りに駅前の停留所を発車して、空港へと向かった。",
       "id": "Bus berangkat tepat waktu dari halte depan stasiun lalu melaju menuju ke bandar udara.",
@@ -57819,6 +58973,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-02130",
   "word": "発射",
@@ -57852,8 +59007,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "teknologi",
         "ilmu-pengetahuan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ハッシャ￣"}
+},
     {
       "jp": "周囲の安全を確認しないまま銃を発射してはならないと厳しく指導された。",
       "id": "Kami diinstruksikan dengan ketat bahwa senjata pantang ditembakkan tanpa memastikan keselamatan lingkungan sekitar terlebih dahulu.",
@@ -57882,6 +59038,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-02131",
   "word": "罰する",
@@ -57915,8 +59072,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "hukum-aturan",
         "sosial"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"バッスル￣"}
+},
     {
       "jp": "校則を破った生徒を一方的に罰するのではなく、理由をしっかり聞くことが大切だ。",
       "id": "Alih-alih menghukum siswa yang melanggar tata tertib secara sepihak, penting untuk mendengarkan alasannya terlebih dahulu.",
@@ -57946,6 +59104,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-02132",
   "word": "発達",
@@ -57979,8 +59138,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "teknologi",
         "komunikasi"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ハッタツ￣"}
+},
     {
       "jp": "幼少期の適度な運動は、子供の骨や筋肉の健全な発達にとても良い影響を与える。",
       "id": "Olahraga yang tepat pada masa kanak-kanak memberikan pengaruh amat baik bagi pertumbuhan tulang dan otot anak yang sehat.",
@@ -58012,6 +59172,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-02134",
   "word": "発展",
@@ -58045,8 +59206,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "ekonomi",
         "perjalanan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ハッテン￣"}
+},
     {
       "jp": "二人の友情はやがて深い愛情へと発展し、来月ついに結婚することになった。",
       "id": "Pertemanan keduanya berangsur berkembang menjadi cinta yang mendalam, dan bulan depan mereka akhirnya melangkah ke jenjang pernikahan.",
@@ -58078,6 +59240,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-02135",
   "word": "発明",
@@ -58111,8 +59274,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "makanan-minuman",
         "budaya"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ハツメイ￣"}
+},
     {
       "jp": "日々の生活をもっと便利にするために、新しい掃除ロボットを発明したい。",
       "id": "Demi menjadikan kehidupan sehari-hari kian praktis, saya bertekad menemukan robot pembersih model baru.",
@@ -58141,6 +59305,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-02141",
   "word": "省く",
@@ -58175,8 +59340,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "pekerjaan",
         "bisnis"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"ハブ＼ク"}
+},
     {
       "jp": "業務の無駄な手続きを省くことで、作業効率を大幅に向上させた。",
       "id": "Dengan memangkas prosedur kerja yang tidak berguna, efisiensi kerja meningkat secara drastis.",
@@ -58207,6 +59373,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-02143",
   "word": "流行る",
@@ -58241,8 +59408,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "kesehatan",
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"ハヤ＼ル"}
+},
     {
       "jp": "今このカフェでは、SNSで写真映えする特大パフェが大いに流行っている。",
       "id": "Sekarang di kafe ini, parfait porsi besar yang fotogenik di media sosial sangat digandrungi.",
@@ -58273,6 +59441,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-02146",
   "word": "バランス",
@@ -58307,8 +59476,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "kesehatan",
         "makanan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":0,"downstep_mora":0,"contour":"￣"}
+},
     {
       "jp": "仕事と私生活のバランスをうまく保つことが、長く働き続ける秘訣だ。",
       "id": "Mampu menjaga keseimbangan antara pekerjaan dan kehidupan pribadi dengan baik adalah rahasia untuk terus bekerja dalam jangka panjang.",
@@ -58339,6 +59509,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-02149",
   "word": "反抗",
@@ -58373,8 +59544,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "keluarga",
         "psikologi"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ハンコウ￣"}
+},
     {
       "jp": "理不尽な命令に対して反抗的な態度を取ったため、上司から厳しく叱られた。",
       "id": "Karena menunjukkan sikap membangkang terhadap perintah yang tidak masuk akal, dia ditegur keras oleh atasannya.",
@@ -58406,6 +59578,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-02152",
   "word": "反省",
@@ -58440,8 +59613,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "hubungan",
         "etika"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ハンセイ￣"}
+},
     {
       "jp": "プロジェクトの失敗を振り返り、チーム全員で反省会を開くことにした。",
       "id": "Mengingat kegagalan proyek tersebut, kami memutuskan menggelar rapat evaluasi bersama seluruh anggota tim.",
@@ -58471,6 +59645,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-02154",
   "word": "販売",
@@ -58505,8 +59680,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "bisnis",
         "hiburan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ハンバイ￣"}
+},
     {
       "jp": "インターネットを利用した通信販売の普及により、買い物が格段に便利になった。",
       "id": "Dengan maraknya penjualan daring lewat internet, aktivitas belanja menjadi jauh lebih praktis.",
@@ -58538,6 +59714,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-02157",
   "word": "比較",
@@ -58572,8 +59749,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "bisnis",
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ヒカク￣"}
+},
     {
       "jp": "今年の夏は去年に比較して猛暑日の日数が多く、熱中症対策がより重要だ。",
       "id": "Musim panas tahun ini memiliki jumlah hari terik lebih banyak dibandingkan tahun lalu, sehingga pencegahan sengatan panas menjadi lebih penting.",
@@ -58601,6 +59779,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-02160",
   "word": "飛行",
@@ -58635,8 +59814,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "transportasi",
         "perjalanan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ヒコウ￣"}
+},
     {
       "jp": "新型の無人ドローンは、最大で三時間の連続飛行が可能となっている。",
       "id": "Drone nirawak model terbaru ini memiliki kemampuan penerbangan terus-menerus hingga maksimal tiga jam.",
@@ -58667,6 +59847,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-02166",
   "word": "引越し",
@@ -58700,8 +59881,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "tempat-tinggal",
         "pekerjaan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ヒッコシ￣"}
+},
     {
       "jp": "週末に引越しを控えているので、いらない荷物をまとめて段ボールに詰めている。",
       "id": "Menjelang jadwal pindahan rumah akhir pekan ini, saya merapikan barang yang tak terpakai dan mengemasnya ke dalam kardus.",
@@ -58729,6 +59911,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-02168",
   "word": "引っ張る",
@@ -58763,8 +59946,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "pekerjaan",
         "olahraga"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"ヒッパ＼ル"}
+},
     {
       "jp": "子供が母親の袖をぐいっと引っ張って、おもちゃ売り場の方へ連れて行こうとした。",
       "id": "Sang anak menarik ujung lengan baju ibunya dengan kuat, berusaha membawanya ke arah gerai mainan.",
@@ -58795,6 +59979,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-02169",
   "word": "否定",
@@ -58829,8 +60014,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "politik",
         "berita"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ヒテイ￣"}
+},
     {
       "jp": "相手の意見を頭ごなしに否定するのではなく、まずは言い分に耳を傾けるべきだ。",
       "id": "Jangan langsung menyangkal opini lawan bicara secara membabi buta, tetapi dengarkanlah argumennya terlebih dahulu.",
@@ -58862,6 +60048,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-02176",
   "word": "批評",
@@ -58896,8 +60083,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "seni",
         "media"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ヒヒョウ￣"}
+},
     {
       "jp": "他人の作品を批評するだけでなく、自分自身の創作活動にも真摯に向き合うべきだ。",
       "id": "Bukan hanya mengkritisi karya orang lain, kita juga semestinya menghadapi kegiatan kreasi kita sendiri dengan tulus.",
@@ -58925,6 +60113,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-02180",
   "word": "冷やす",
@@ -58959,8 +60148,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "makanan",
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"ヒヤ＼ス"}
+},
     {
       "jp": "感情的になって議論を続けても解決しないので、一度頭を冷やしてから話し合おう。",
       "id": "Melanjutkan perdebatan dalam keadaan emosional tidak akan menyelesaikan masalah, jadi mari dinginkan kepala dulu sebelum berdiskusi kembali.",
@@ -58991,6 +60181,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-02183",
   "word": "表現",
@@ -59025,8 +60216,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "bahasa",
         "komunikasi"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"ヒョウゲ＼ン"}
+},
     {
       "jp": "その画家は故郷の美しい夕暮れの風景を、独特の鮮やかな色彩で見事に表現した。",
       "id": "Pelukis itu secara memukau mengekspresikan pemandangan senja nan indah di kampung halamannya dengan paduan warna cerah yang khas.",
@@ -59054,6 +60246,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-02188",
   "word": "広める",
@@ -59088,8 +60281,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "seni-budaya",
         "aktivitas"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"ヒロメ＼ル"}
+},
     {
       "jp": "SNSを利用することで、環境問題に関する正しい知識を若者の間に広める。",
       "id": "Dengan memanfaatkan media sosial, kita menyebarkan pengetahuan yang benar tentang masalah lingkungan di kalangan pemuda.",
@@ -59119,6 +60313,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-02200",
   "word": "深まる",
@@ -59153,8 +60348,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "alam-lingkungan",
         "deskripsi"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"フカマ＼ル"}
+},
     {
       "jp": "合宿で寝食を共にしたことで、チームメンバー同士の友情がより深まった。",
       "id": "Dengan tinggal dan makan bersama selama kamp pelatihan, persahabatan antaranggotan tim kian mendalam.",
@@ -59185,6 +60381,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-02202",
   "word": "拭く",
@@ -59219,8 +60416,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "kehidupan-sehari",
         "kebersihan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":2,"downstep_mora":0,"contour":"フク￣"}
+},
     {
       "jp": "激しい運動を終えた後、タオルで顔や首の汗を丁寧に拭き取った。",
       "id": "Setelah selesai berolahraga berat, saya menyeka keringat di wajah dan leher secara cermat dengan handuk.",
@@ -59248,6 +60446,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-02204",
   "word": "含む",
@@ -59282,8 +60481,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "kesehatan",
         "alam-lingkungan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"フク＼ム"}
+},
     {
       "jp": "メニューに書かれている料金は、サービス料を含んだ金額となっております。",
       "id": "Tarif yang tertulis di buku menu merupakan jumlah harga yang sudah mencakup biaya layanan.",
@@ -59314,6 +60514,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-02205",
   "word": "含める",
@@ -59348,8 +60549,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "hubungan",
         "acara"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"フクメ＼ル"}
+},
     {
       "jp": "出張の経費を精算する際は、移動中の電車賃も含めて計算してください。",
       "id": "Saat mereimburse biaya dinas luar kota, tolong hitung dengan mengikutsertakan ongkos kereta selama perjalanan juga.",
@@ -59380,6 +60582,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-02214",
   "word": "防ぐ",
@@ -59414,8 +60617,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "kesehatan",
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"フセ＼グ"}
+},
     {
       "jp": "頑丈な防波堤が津波の勢いを食い止め、沿岸部の壊滅的な被害を防いだ。",
       "id": "Tanggul pemecah ombak yang kokoh meredam laju tsunami dan mencegah kerusakan parah di wilayah pesisir.",
@@ -59446,6 +60650,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-02220",
   "word": "打つ",
@@ -59477,8 +60682,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "hubungan",
         "kejadian"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":2,"downstep_mora":1,"contour":"ブ＼ツ"}
+},
     {
       "jp": "親に強くぶたれた記憶は、大人になった今でも鮮明に残っている。",
       "id": "Kenangan saat dipukul keras oleh orang tua masih tersisa dengan jelas bahkan setelah saya dewasa.",
@@ -59508,6 +60714,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-02223",
   "word": "ぶつかる",
@@ -59542,8 +60749,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "kejadian",
         "transportasi"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ブツカル￣"}
+},
     {
       "jp": "新商品の企画会議で、ベテラン社員と新入社員の意見が真っ向からぶつかった。",
       "id": "Dalam rapat perencanaan produk baru, pendapat karyawan senior dan karyawan baru berbenturan secara frontal.",
@@ -59574,6 +60782,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-02224",
   "word": "ぶつける",
@@ -59637,6 +60846,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-02234",
   "word": "震える",
@@ -59671,8 +60881,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "kesehatan",
         "cuaca"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"フルエル￣"}
+},
     {
       "jp": "大勢の聴衆を前にして初めてスピーチをした際、極度の緊張でマイクを持つ手が震えた。",
       "id": "Saat berpidato untuk pertama kalinya di hadapan banyak pendengar, tangan yang memegang mikrofon gemetar karena sangat gugup.",
@@ -59700,6 +60911,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-02236",
   "word": "触れる",
@@ -59734,8 +60946,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "aturan",
         "tempat"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"フレル￣"}
+},
     {
       "jp": "今日の会議では、今後の予算削減案についても少し触れました。",
       "id": "Dalam rapat hari ini, kami juga sedikit menyinggung rencana pemotongan anggaran mendatang.",
@@ -59766,6 +60979,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-02241",
   "word": "分析",
@@ -59800,8 +61014,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "bisnis",
         "aktivitas"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ブンセキ￣"}
+},
     {
       "jp": "試合の映像を見直しながら、チームの敗因を冷静に分析した。",
       "id": "Sambil menonton kembali rekaman pertandingan, kami menganalisis penyebab kekalahan tim secara berkepala dingin.",
@@ -59832,6 +61047,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-02244",
   "word": "平均",
@@ -59866,8 +61082,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "pendidikan",
         "evaluasi"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ヘイキン￣"}
+},
     {
       "jp": "成人の１日の平均睡眠時間は、約６時間から８時間程度とされている。",
       "id": "Waktu tidur rata-rata harian orang dewasa diperkirakan sekitar 6 hingga 8 jam.",
@@ -59898,6 +61115,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-02248",
   "word": "変化",
@@ -59932,8 +61150,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "cuaca",
         "kesehatan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"ヘ＼ンカ"}
+},
     {
       "jp": "スマートフォンの普及によって、人々の生活様式は急速に変化した。",
       "id": "Dengan meluasnya telepon pintar, pola hidup masyarakat telah berubah dengan amat cepat.",
@@ -59965,6 +61184,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-02250",
   "word": "変更",
@@ -59999,8 +61219,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "jadwal",
         "cuaca"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ヘンコウ￣"}
+},
     {
       "jp": "契約内容の一部に変更が生じた場合は、速やかに担当者までご連絡ください。",
       "id": "Jika terjadi perubahan pada sebagian isi kontrak, harap segera hubungi pihak yang bertugas.",
@@ -60032,6 +61253,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-02256",
   "word": "冒険",
@@ -60066,8 +61288,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "kenangan",
         "kegiatan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ボウケン￣"}
+},
     {
       "jp": "十分な資金の準備もないまま会社を辞めて起業するのは、かなりの冒険だ。",
       "id": "Keluar dari perusahaan lalu merintis usaha sendiri tanpa persiapan dana yang cukup adalah tindakan yang sangat berisiko.",
@@ -60099,6 +61322,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-02261",
   "word": "訪問",
@@ -60132,8 +61356,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "bisnis",
         "jadwal"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ホウモン￣"}
+},
     {
       "jp": "両国の友好関係を深めるため、首相が近隣諸国を公式に訪問した。",
       "id": "Guna mempererat hubungan persahabatan kedua negara, perdana menteri berkunjung secara resmi ke negara-negara tetangga.",
@@ -60161,6 +61386,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-02262",
   "word": "吠える",
@@ -60195,8 +61421,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "hewan",
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"ホエ＼ル"}
+},
     {
       "jp": "真夜中の山奥から、遠くの野犬が月に吠える不気味な声が響いてきた。",
       "id": "Dari pedalaman gunung di tengah malam, gema suara anjing liar yang melolong ke arah bulan terdengar menyeramkan.",
@@ -60224,6 +61451,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-02270",
   "word": "保証",
@@ -60258,8 +61486,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "belanja",
         "elektronik"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ホショウ￣"}
+},
     {
       "jp": "どれほど慎重に計画を立てても、将来の成功を百パーセント保証することはできない。",
       "id": "Sebaik dan secermat apa pun menyusun rencana, kita tidak dapat menjamin keberhasilan masa depan seratus persen.",
@@ -60287,6 +61516,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-02271",
   "word": "保存",
@@ -60321,8 +61551,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "teknologi",
         "pendidikan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ホゾン￣"}
+},
     {
       "jp": "余った料理は密閉容器に移し替え、冷蔵庫に入れて清潔に保存しよう。",
       "id": "Pindahkan sisa makanan ke dalam wadah kedap udara, lalu simpanlah secara higienis di kulkas.",
@@ -60354,6 +61585,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-02290",
   "word": "任せる",
@@ -60388,8 +61620,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "pekerjaan",
         "tanggung-jawab"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"マカセ＼ル"}
+},
     {
       "jp": "今日の夕飯のメニューは何でもいいよ、君に任せるね。",
       "id": "Menu makan malam hari ini apa saja boleh kok, kuserahkan padamu ya.",
@@ -60418,6 +61651,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-02291",
   "word": "巻く",
@@ -60451,8 +61685,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "kehidupan-sehari",
         "pakaian"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":2,"downstep_mora":0,"contour":"マク￣"}
+},
     {
       "jp": "足を怪我したので、看護師さんに包帯を巻いてもらった。",
       "id": "Karena kaki saya terluka, perawat membalutkannya dengan perban.",
@@ -60482,6 +61717,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-02292",
   "word": "蒔く",
@@ -60515,8 +61751,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "alam",
         "berkebun"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":2,"downstep_mora":1,"contour":"マ＼ク"}
+},
     {
       "jp": "自分で蒔いた種なのだから、どんな結果になっても最後まで責任を取りなさい。",
       "id": "Karena ini benih yang kamu tabur sendiri, apa pun hasilnya tanggunglah sampai tuntas.",
@@ -60546,6 +61783,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-02293",
   "word": "撒く",
@@ -60578,8 +61816,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "kehidupan-sehari",
         "kebiasaan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":2,"downstep_mora":1,"contour":"マ＼ク"}
+},
     {
       "jp": "駅前で新しいカフェのオープンを知らせるチラシを撒いている。",
       "id": "Mereka sedang menyebarkan selebaran di depan stasiun untuk mengumumkan pembukaan kafe baru.",
@@ -60608,6 +61847,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-02297",
   "word": "混ざる",
@@ -60641,8 +61881,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "sains",
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"マザ＼ル"}
+},
     {
       "jp": "白の中に少しだけ青い絵の具が混ざって、きれいな水色になった。",
       "id": "Sedikit cat biru bercampur ke dalam warna putih, lalu menghasilkan warna biru muda yang indah.",
@@ -60672,6 +61913,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-02298",
   "word": "交ざる",
@@ -60704,8 +61946,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "sosial",
         "pendidikan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"マザ＼ル"}
+},
     {
       "jp": "大人の輪に子どもたちが交ざって、一緒に伝統的な踊りを踊った。",
       "id": "Anak-anak berbaur ke dalam lingkaran orang dewasa dan menarikan tarian tradisional bersama-sama.",
@@ -60735,6 +61978,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-02299",
   "word": "混じる",
@@ -60767,8 +62011,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "penampilan",
         "keluarga"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"マジ＼ル"}
+},
     {
       "jp": "彼女の優しい笑顔の奥に、どこか寂しそうな表情が混じっていた。",
       "id": "Di balik senyum ramahnya, terselip raut wajah yang tampak sedikit kesepian.",
@@ -60798,6 +62043,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-02300",
   "word": "交じる",
@@ -60830,8 +62076,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "percakapan",
         "emosi"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"マジ＼ル"}
+},
     {
       "jp": "真面目な講義の中にも時折ユーモアが交じっていて、とても面白かった。",
       "id": "Di dalam perkuliahan yang serius itu pun sesekali terselip humor, sehingga sangat menarik.",
@@ -60858,6 +62105,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-02301",
   "word": "増す",
@@ -60891,8 +62139,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "alam",
         "cuaca"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":2,"downstep_mora":0,"contour":"マス￣"}
+},
     {
       "jp": "日本語の学習を進めるうちに、日本文化への関心がいっそう増した。",
       "id": "Seiring berjalannya proses belajar bahasa Jepang, minat saya terhadap budaya Jepang semakin meningkat.",
@@ -60924,6 +62173,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-02303",
   "word": "マスター",
@@ -60957,8 +62207,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "pembelajaran",
         "kemampuan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":0,"downstep_mora":1,"contour":"＼"}
+},
     {
       "jp": "駅前の小さな喫茶店のマスターは、いつも淹れたての美味しいコーヒーを出してくれる。",
       "id": "Pemilik kedai kopi kecil di depan stasiun selalu menyajikan kopi nikmat yang baru diseduh.",
@@ -60986,6 +62237,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-02304",
   "word": "混ぜる",
@@ -61018,8 +62270,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "memasak",
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"マゼ＼ル"}
+},
     {
       "jp": "ドレッシングをかける前に、容器を上下に振って中身をしっかり混ぜよう。",
       "id": "Sebelum menuangkan saus salad, kocok wadahnya ke atas dan ke bawah agar isinya tercampur rata.",
@@ -61049,6 +62302,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-02305",
   "word": "交ぜる",
@@ -61082,8 +62336,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "presentasi",
         "komunikasi"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"マゼ＼ル"}
+},
     {
       "jp": "先輩と後輩を交ぜた混合チームを作って、社内スポーツ大会に参加した。",
       "id": "Kami membuat tim gabungan yang mencampurkan senior dan junior, lalu berpartisipasi dalam festival olahraga kantor.",
@@ -61113,6 +62368,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-02311",
   "word": "まとまる",
@@ -61146,8 +62402,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "diskusi",
         "pekerjaan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"マトマル￣"}
+},
     {
       "jp": "頭の中の考えがうまくまとまってから、報告書を書き始めよう。",
       "id": "Mari mulai menulis laporannya setelah gagasan di dalam kepala tersusun dengan baik.",
@@ -61179,6 +62436,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-02312",
   "word": "学ぶ",
@@ -61211,8 +62469,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "pendidikan",
         "cita-cita"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"マナブ￣"}
+},
     {
       "jp": "過去の失敗から謙虚に学ぶ姿勢こそが、成長するために欠かせない。",
       "id": "Sikap rendah hati untuk memetik pelajaran dari kegagalan masa lalulah yang paling krusial untuk berkembang.",
@@ -61240,6 +62499,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-02313",
   "word": "真似",
@@ -61273,8 +62533,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "keluarga",
         "permainan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":2,"downstep_mora":0,"contour":"マネ￣"}
+},
     {
       "jp": "危険だから、そんな無茶な真似は二度としないでください。",
       "id": "Karena berbahaya, tolong jangan pernah mengulangi tindakan nekat seperti itu lagi.",
@@ -61304,6 +62565,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-02314",
   "word": "招く",
@@ -61337,8 +62599,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "sosial",
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"マネ＼ク"}
+},
     {
       "jp": "言葉足らずな説明は、取引先との間に大きな誤解を招く原因になる。",
       "id": "Penjelasan yang kurang lengkap bisa menjadi penyebab yang mendatangkan kesalahpahaman besar dengan klien.",
@@ -61366,6 +62629,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-02317",
   "word": "裂ける",
@@ -61399,8 +62663,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "kehidupan-sehari",
         "kejadian"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"サケ＼ル"}
+},
     {
       "jp": "被災地で家族を探す人々の姿を見て、胸が引き裂けるような痛みを覚えた。",
       "id": "Melihat sosok orang-orang yang mencari keluarganya di daerah bencana, dada saya terasa sangat pilu seakan terbelah.",
@@ -61430,6 +62695,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-02321",
   "word": "指揮",
@@ -61463,8 +62729,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "musik",
         "seni"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"odaka","mora_count":2,"downstep_mora":2,"contour":"シキ＼"}
+},
     {
       "jp": "事故現場では、警察署長自らが先頭に立って救出活動の指揮を執った。",
       "id": "Di lokasi kecelakaan, kepala kepolisian sendiri yang turun langsung memimpin komando operasi penyelamatan.",
@@ -61492,6 +62759,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-02325",
   "word": "辞退",
@@ -61525,8 +62793,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "pekerjaan",
         "etika"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"ジ＼タイ"}
+},
     {
       "jp": "彼は体調不良を理由に、次期会長への推薦を丁重に辞退した。",
       "id": "Dengan alasan kondisi kesehatan yang menurun, ia menolak pencalonan sebagai ketua periode berikutnya dengan sangat sopan.",
@@ -61558,6 +62827,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-02328",
   "word": "志望",
@@ -61592,8 +62862,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "pekerjaan",
         "wawancara"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"シボウ￣"}
+},
     {
       "jp": "彼女は昔からの夢を叶えるため、第一志望の医学部を目指して猛勉強している。",
       "id": "Demi mewujudkan impiannya sejak dulu, dia belajar mati-matian membidik fakultas kedokteran pilihan pertamanya.",
@@ -61621,6 +62892,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-02330",
   "word": "修飾",
@@ -61654,8 +62926,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "tata-bahasa",
         "pendidikan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"シュウショク￣"}
+},
     {
       "jp": "余計な修飾を省いて、伝えたい事実だけを簡潔に書くことがビジネス文書の基本だ。",
       "id": "Menghilangkan hiasan kata yang tidak perlu dan hanya menuliskan fakta secara ringkas adalah dasar dari surat bisnis.",
@@ -61682,6 +62955,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-02335",
   "word": "照明",
@@ -61715,8 +62989,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "rumah",
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ショウメイ￣"}
+},
     {
       "jp": "演劇のクライマックスでは、主人公にスポットライトの照明が集中して当てられた。",
       "id": "Pada klimaks pementasan drama, tata cahaya lampu sorot dipusatkan menyorot kepada sang tokoh utama.",
@@ -61747,6 +63022,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-02339",
   "word": "進行",
@@ -61781,8 +63057,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "pekerjaan",
         "bisnis"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"シンコウ￣"}
+},
     {
       "jp": "この病気は早期に発見して治療を始めないと、急速に進行する恐れがある。",
       "id": "Jika penyakit ini tidak ditemukan sejak dini dan segera diobati, ada kekhawatiran kondisinya akan memburuk dengan cepat.",
@@ -61814,6 +63091,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-02341",
   "word": "振興",
@@ -61847,8 +63125,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "pemerintahan",
         "ekonomi"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"シンコウ￣"}
+},
     {
       "jp": "日本の伝統芸能の振興と後継者の育成に向けて、国からの手厚い支援が必要とされている。",
       "id": "Dukungan nyata dari negara sangat dibutuhkan demi pemajuan seni pertunjukan tradisional Jepang dan pembinaan generasi penerus.",
@@ -61880,6 +63159,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-02342",
   "word": "申告",
@@ -61913,8 +63193,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "hukum",
         "ekonomi"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"シンコク￣"}
+},
     {
       "jp": "免税の範囲を超える品物を所持している場合は、入国時に税関申告書に記入して申告してください。",
       "id": "Jika membawa barang yang melebihi batas bebas pajak, harap isi formulir bea cukai dan laporkan pada saat memasuki negara.",
@@ -61942,6 +63223,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-02344",
   "word": "水洗",
@@ -61975,8 +63257,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "rumah-tangga",
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"スイセン￣"}
+},
     {
       "jp": "野菜についた泥や農薬を落とすため、食べる前によく水洗してください。",
       "id": "Bilaslah dengan air bersih secara saksama sebelum dimakan untuk membersihkan lumpur dan pestisida pada sayuran.",
@@ -62006,6 +63289,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-02354",
   "word": "沿う",
@@ -62040,8 +63324,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "olahraga",
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":2,"downstep_mora":0,"contour":"ソウ￣"}
+},
     {
       "jp": "提出された企画書は、当社の新しい事業方針によく沿った素晴らしい内容だった。",
       "id": "Proposal proyek yang diajukan memiliki konten luar biasa yang sangat sejalan dengan kebijakan bisnis baru perusahaan kami.",
@@ -62073,6 +63358,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-02355",
   "word": "添う",
@@ -62107,8 +63393,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "bisnis",
         "komunikasi"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":2,"downstep_mora":0,"contour":"ソウ￣"}
+},
     {
       "jp": "困難な状況にある被災者の心に寄り添い、温かい支援の手を差し伸べることが大切だ。",
       "id": "Sangat penting untuk memahami dan mendampingi perasaan para korban bencana yang berada dalam situasi sulit serta mengulurkan tangan bantuan hangat.",
@@ -62139,6 +63426,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-02358",
   "word": "操縦",
@@ -62173,8 +63461,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "transportasi",
         "pekerjaan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ソウジュウ￣"}
+},
     {
       "jp": "小型のドローンを安全に操縦するためには、専門的な訓練と基本的なルールの理解が欠かせない。",
       "id": "Untuk menerbangkan drone kecil dengan aman, pelatihan keahlian khusus dan pemahaman aturan dasar mutlak diperlukan.",
@@ -62202,6 +63491,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-02360",
   "word": "退学",
@@ -62235,8 +63525,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "pendidikan",
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"タイガク￣"}
+},
     {
       "jp": "校則に重く違反する行為を繰り返した生徒には、最終的に退学処分が下された。",
       "id": "Siswa yang berulang kali melakukan pelanggaran berat terhadap aturan sekolah akhirnya dijatuhi hukuman dikeluarkan dari sekolah (drop out).",
@@ -62267,6 +63558,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-02362",
   "word": "ダウン",
@@ -62300,8 +63592,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "kesehatan",
         "pekerjaan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":0,"downstep_mora":1,"contour":"＼"}
+},
     {
       "jp": "アクセス集中が原因でオンライン予約サイトがダウンし、多くの利用者が困惑した。",
       "id": "Situs web pemesanan daring down karena lonjakan akses yang membludak, membuat banyak pengguna kebingungan.",
@@ -62333,6 +63626,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-02363",
   "word": "高まる",
@@ -62367,8 +63661,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "teknologi",
         "perasaan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"タカマ＼ル"}
+},
     {
       "jp": "健康志向の高まりを背景に、無農薬野菜やオーガニック食品を好む消費者が増えている。",
       "id": "Dengan latar belakang meningkatnya kepedulian terhadap kesehatan, konsumen yang menyukai sayuran bebas pestisida dan makanan organik semakin bertambah.",
@@ -62400,6 +63695,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-02366",
   "word": "挑戦",
@@ -62434,8 +63730,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "perasaan",
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"チョウセン￣"}
+},
     {
       "jp": "彼女は世界最高峰のエベレスト登頂という過酷な目標に挑戦することを決意した。",
       "id": "Ia membulatkan tekad untuk menantang target berat mendaki puncak tertinggi di dunia, Gunung Everest.",
@@ -62467,6 +63764,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-02368",
   "word": "接ぐ",
@@ -62500,8 +63798,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "kerajinan",
         "seni-budaya"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":2,"downstep_mora":0,"contour":"ツグ￣"}
+},
     {
       "jp": "寒さに強い野生の木の台木に、甘い果実をつける品種の枝を丁寧に接いだ。",
       "id": "Dahan dari varietas yang menghasilkan buah manis dicangkokkan secara hati-hati pada batang pokok pohon liar yang tahan terhadap cuaca dingin.",
@@ -62532,6 +63831,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-02369",
   "word": "継ぐ",
@@ -62566,8 +63866,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "pekerjaan",
         "keluarga"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":2,"downstep_mora":0,"contour":"ツグ￣"}
+},
     {
       "jp": "三代にわたって受け継がれてきた伝統的な染色技術を絶やさないよう、後継者の育成に力を注いでいる。",
       "id": "Agar teknik pewarnaan tradisional yang telah diwarisi selama tiga generasi tidak punah, ia mencurahkan tenaga dalam membina generasi penerus.",
@@ -62598,6 +63899,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-02370",
   "word": "摘む",
@@ -62631,8 +63933,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "pertanian",
         "budaya"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":2,"downstep_mora":0,"contour":"ツム￣"}
+},
     {
       "jp": "道端に咲いていた野の花をいくつか摘んで、小さなガラス瓶に挿して部屋に飾った。",
       "id": "Saya memetik beberapa kuntum bunga liar yang mekar di tepi jalan, lalu menaruhnya ke dalam botol kaca kecil untuk dipajang di kamar.",
@@ -62662,6 +63965,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-02372",
   "word": "強まる",
@@ -62695,8 +63999,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "cuaca",
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"ツヨマ＼ル"}
+},
     {
       "jp": "相次ぐ不祥事の隠蔽を受けて、責任ある幹部たちの辞任を求める世論の声が一層強まった。",
       "id": "Menyusul penutupan skandal yang terjadi berturut-turut, suara opini publik yang menuntut pengunduran diri para pejabat penanggung jawab kian menguat.",
@@ -62728,6 +64033,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-02373",
   "word": "強める",
@@ -62762,8 +64068,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "keamanan",
         "masyarakat"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"ツヨメ＼ル"}
+},
     {
       "jp": "鍋の具材に火が通りやすくするために、煮立ったら少し火力を強めて蓋をしてください。",
       "id": "Agar bahan-bahan di dalam panci cepat matang, besarkan sedikit apinya setelah mendidih lalu tutup pancinya.",
@@ -62795,6 +64102,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-02374",
   "word": "デザイン",
@@ -62828,8 +64136,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "furnitur",
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":0,"downstep_mora":0,"contour":"￣"}
+},
     {
       "jp": "彼女はフリーランスのグラフィックデザイナーとして、企業のロゴや広告をデザインしている。",
       "id": "Sebagai desainer grafis lepas, ia merancang logo dan iklan untuk berbagai perusahaan.",
@@ -62857,6 +64166,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-02376",
   "word": "転校",
@@ -62891,8 +64201,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "pendidikan",
         "keluarga"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"テンコウ￣"}
+},
     {
       "jp": "転校生が教室に入ってきたとき、クラスのみんなは興味津々で彼女の自己紹介を聞いていた。",
       "id": "Saat anak pindahan baru itu melangkah masuk ke ruang kelas, semua teman sekelas mendengarkan perkenalan dirinya dengan penuh rasa ingin tahu.",
@@ -62918,6 +64229,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-02379",
   "word": "問う",
@@ -62951,8 +64263,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "hukum",
         "masyarakat"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":2,"downstep_mora":0,"contour":"トウ￣"}
+},
     {
       "jp": "当ボランティア活動は、国籍や年齢を問わず、意欲のある方ならどなたでも歓迎いたします。",
       "id": "Kegiatan sukarelawan ini menyambut siapa saja yang memiliki antusiasme, tanpa memandang kewarganegaraan ataupun usia.",
@@ -62984,6 +64297,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-02381",
   "word": "倒産",
@@ -63018,8 +64332,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "bisnis",
         "ekonomi"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"トウサン￣"}
+},
     {
       "jp": "主要な取引先が連鎖倒産した影響を受け、多くの関連企業が深刻な経営難に陥った。",
       "id": "Terkena imbas bangkrutnya mitra bisnis utama secara berantai, banyak perusahaan terkait mengalami kesulitan manajerial yang serius.",
@@ -63051,6 +64366,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-02385",
   "word": "動揺",
@@ -63085,8 +64401,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "pekerjaan",
         "perasaan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ドウヨウ￣"}
+},
     {
       "jp": "鋭い質問を投げかけられた容疑者は一瞬動揺の表情を見せたが、すぐに口を閉ざした。",
       "id": "Saat dihujani pertanyaan tajam, tersangka sempat memperlihatkan raut panik sesaat, tetapi segera kembali bungkam.",
@@ -63118,6 +64435,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-02386",
   "word": "説く",
@@ -63151,8 +64469,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "pendidikan",
         "komunikasi"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":2,"downstep_mora":1,"contour":"ト＼ク"}
+},
     {
       "jp": "その本は、日々の生活における健康管理の大切さを分かりやすく説いている。",
       "id": "Buku itu menganjurkan pentingnya menjaga kesehatan dalam kehidupan sehari-hari secara mudah dipahami.",
@@ -63180,6 +64499,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-02389",
   "word": "慣らす",
@@ -63214,8 +64534,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "pendidikan",
         "kebiasaan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"ナラ＼ス"}
+},
     {
       "jp": "激しい運動を始める前に、軽いストレッチをして体を慣らしておこう。",
       "id": "Sebelum memulai olahraga berat, mari lakukan peregangan ringan untuk membiasakan tubuh.",
@@ -63242,6 +64563,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-02390",
   "word": "馴らす",
@@ -63275,8 +64597,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "hewan",
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"ナラ＼ス"}
+},
     {
       "jp": "野生の馬を馴らすには、長い時間と根気強い愛情が必要だ。",
       "id": "Untuk menjinakkan kuda liar, dibutuhkan waktu yang lama dan kesabaran penuh kasih sayang.",
@@ -63303,6 +64626,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-02395",
   "word": "臨む",
@@ -63337,8 +64661,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "olahraga",
         "aktivitas"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ノゾム￣"}
+},
     {
       "jp": "海に臨む高台のホテルから、素晴らしい朝日を見ることができた。",
       "id": "Dari hotel di dataran tinggi yang menghadap ke laut, saya bisa melihat matahari terbit yang luar biasa.",
@@ -63366,6 +64691,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-02398",
   "word": "映える",
@@ -63399,8 +64725,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "pemandangan",
         "deskripsi"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"ハエ＼ル"}
+},
     {
       "jp": "この赤いドレスは照明の光に映えて、彼女の美しさを引き立てている。",
       "id": "Gaun merah ini tampak memukau terkena sorotan lampu, semakin memancarkan kecantikannya.",
@@ -63428,6 +64755,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-02399",
   "word": "諮る",
@@ -63461,8 +64789,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "bisnis",
         "organisasi"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"ハカ＼ル"}
+},
     {
       "jp": "市民の意見を聞くため、都市開発の基本方針を専門家会議に諮った。",
       "id": "Untuk mendengarkan opini masyarakat, arah kebijakan dasar pembangunan kota diajukan ke dewan pakar.",
@@ -63490,6 +64819,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-02400",
   "word": "図る",
@@ -63524,8 +64854,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "bisnis",
         "pekerjaan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"ハカ＼ル"}
+},
     {
       "jp": "両国は対話を通じて、関係の改善を図ろうとしている。",
       "id": "Kedua negara berusaha mengupayakan perbaikan hubungan melalui dialog.",
@@ -63553,6 +64884,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-02401",
   "word": "生やす",
@@ -63586,8 +64918,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "keluarga",
         "penampilan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"ハヤ＼ス"}
+},
     {
       "jp": "庭の空いているスペースに芝生を生やして、緑を増やしたい。",
       "id": "Saya ingin menumbuhkan rumput di ruang kosong halaman rumah untuk menambah kehijauan.",
@@ -63617,6 +64950,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-02408",
   "word": "広まる",
@@ -63651,8 +64985,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "masyarakat",
         "pekerjaan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"ヒロマ＼ル"}
+},
     {
       "jp": "SNSを通じて、正しい情報だけでなく誤ったうわさもあっという間に広まる。",
       "id": "Melalui media sosial, bukan hanya informasi yang benar, tetapi rumor keliru pun menyebar luas dalam sekejap.",
@@ -63683,6 +65018,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-02409",
   "word": "深める",
@@ -63717,8 +65053,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "hubungan",
         "aktivitas"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"フカメ＼ル"}
+},
     {
       "jp": "現地の人々と対話することで、異文化に対する理解をさらに深めた。",
       "id": "Dengan berdialog bersama warga setempat, saya semakin memperdalam pemahaman mengenai budaya asing.",
@@ -63748,6 +65085,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-02412",
   "word": "保護",
@@ -63782,8 +65120,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "alam-lingkungan",
         "hewan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":2,"downstep_mora":1,"contour":"ホ＼ゴ"}
+},
     {
       "jp": "お客様の個人情報は厳重に管理し、漏洩がないよう確実に保護しています。",
       "id": "Data pribadi pelanggan dikelola secara ketat dan dilindungi dengan aman agar tidak terjadi kebocoran.",
@@ -63815,6 +65154,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-02413",
   "word": "保障",
@@ -63848,8 +65188,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "hukum-politik",
         "masyarakat"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ホショウ￣"}
+},
     {
       "jp": "国は高齢者が安心して暮らせるよう、社会保障制度の充実を図っている。",
       "id": "Negara mengupayakan penyempurnaan sistem jaminan sosial agar kaum lansia dapat hidup tenang.",
@@ -63879,6 +65220,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-02414",
   "word": "補償",
@@ -63912,8 +65254,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "ekonomi",
         "pertanian"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ホショウ￣"}
+},
     {
       "jp": "工事に伴う騒音について、近隣の住民に適切な補償を行うべきだ。",
       "id": "Terkait kebisingan akibat proyek konstruksi, harus diberikan kompensasi yang layak kepada warga sekitar.",
@@ -63941,6 +65284,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-02419",
   "word": "マッサージ",
@@ -63973,8 +65317,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "kesehatan",
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":0,"downstep_mora":0,"contour":"￣"}
+},
     {
       "jp": "週末に専門のサロンで全身マッサージを受けて、日頃の疲れを癒やした。",
       "id": "Pada akhir pekan saya mendapatkan pijat seluruh tubuh di salon profesional untuk memulihkan kelelahan sehari-hari.",
@@ -64001,6 +65346,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-02420",
   "word": "見掛ける",
@@ -64035,8 +65381,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "kehidupan-sehari",
         "hubungan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ミカケル￣"}
+},
     {
       "jp": "この鳥は珍しい種類で、住宅街で見かけることはめったにない。",
       "id": "Burung ini jenisnya langka, jarang sekali kebetulan terlihat di kawasan perumahan.",
@@ -64064,6 +65411,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-02421",
   "word": "捲る",
@@ -64096,8 +65444,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "kehidupan-sehari",
         "hobi"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"メクル￣"}
+},
     {
       "jp": "食器を洗う前に、濡れないようにシャツの袖をめくった。",
       "id": "Sebelum mencuci piring, saya menyingsingkan lengan baju agar tidak basah.",
@@ -64124,6 +65473,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-02427",
   "word": "予想",
@@ -64158,8 +65508,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "cuaca",
         "masyarakat"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ヨソウ￣"}
+},
     {
       "jp": "新商品の売れ行きは当初の予想をはるかに上回り、大ヒットした。",
       "id": "Penjualan produk baru tersebut jauh melampaui prediksi awal dan menjadi sukses besar.",
@@ -64190,6 +65541,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-02428",
   "word": "弱まる",
@@ -64224,8 +65576,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "cuaca",
         "alam-lingkungan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"ヨワマ＼ル"}
+},
     {
       "jp": "病気のせいで体力が弱まっているときは、無理をせずゆっくり休むべきだ。",
       "id": "Ketika stamina tubuh sedang melemah akibat sakit, sebaiknya jangan memaksakan diri dan beristirahatlah dengan santai.",
@@ -64255,6 +65608,7 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-02429",
   "word": "弱める",
@@ -64289,8 +65643,9 @@ window.vocabN3_Verbs = [
       "tags": [
         "makanan",
         "kuliner"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"ヨワメ＼ル"}
+},
     {
       "jp": "冷房の風が直接当たって寒いので、少し設定温度を上げて風を弱めた。",
       "id": "Karena angin AC langsung menerpa dan terasa dingin, saya sedikit menaikkan suhu dan mengecilkan embusan anginnya.",
@@ -64320,8 +65675,6 @@ window.vocabN3_Verbs = [
     "review_notes": ""
   }
 },
-
-// ── Staged Expansion (71) ──
 
 {
   "id": "vg-n3-02432",
@@ -64353,8 +65706,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":4,"downstep_mora":1,"contour":"ア＼イサツ"}
+},
     {
       "jp": "この場をお借りして一言挨拶を申し上げます。",
       "id": "Izinkan saya menyampaikan sepatah dua patah kata pada kesempatan ini.",
@@ -64381,7 +65735,7 @@ window.vocabN3_Verbs = [
   "meaning_id": "bosan; jenuh",
   "meaning_en": "to get tired of; to lose interest in; to have enough",
   "jlpt": "n3",
-  "pos": "verb-ichidan",
+  "pos": "verb-ru",
   "common": true,
   "related_grammar": [],
   "formalitas": 2,
@@ -64403,8 +65757,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"アキ＼ル"}
+},
     {
       "jp": "彼はテレビを見るのに飽きている。",
       "id": "Dia tired of watching television.",
@@ -64428,10 +65783,10 @@ window.vocabN3_Verbs = [
   "word": "明ける",
   "reading": "あける",
   "romaji": "akeru",
-  "meaning_id": "me-dawn",
+  "meaning_id": "fajar",
   "meaning_en": "to dawn; to become daylight",
   "jlpt": "n3",
-  "pos": "verb-ichidan",
+  "pos": "verb-ru",
   "common": true,
   "related_grammar": [],
   "formalitas": 2,
@@ -64453,8 +65808,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"アケル￣"}
+},
     {
       "jp": "夜がちょうど明けようとしている。",
       "id": "The dawn is just breaking.",
@@ -64478,10 +65834,10 @@ window.vocabN3_Verbs = [
   "word": "現す",
   "reading": "あらわす",
   "romaji": "arawasu",
-  "meaning_id": "me-show",
+  "meaning_id": "menunjukkan",
   "meaning_en": "to show; to indicate; to display",
   "jlpt": "n3",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 2,
@@ -64503,8 +65859,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"アラワ＼ス"}
+},
     {
       "jp": "正規表現で空白はどのように表されるのでしょうか？",
       "id": "How is whitespace represented in regular expressions?",
@@ -64553,8 +65910,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":2,"downstep_mora":1,"contour":"イ＼チ"}
+},
     {
       "jp": "彼の事務所は町の中心部に位置している。",
       "id": "His office is located in the center of the town.",
@@ -64581,7 +65939,7 @@ window.vocabN3_Verbs = [
   "meaning_id": "menerima",
   "meaning_en": "to receive; to get; to accept; to take",
   "jlpt": "n3",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 2,
@@ -64603,8 +65961,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ウケトル￣"}
+},
     {
       "jp": "小切手で受け取ってもらえますか。",
       "id": "Will you take a check?",
@@ -64628,10 +65987,10 @@ window.vocabN3_Verbs = [
   "word": "動かす",
   "reading": "うごかす",
   "romaji": "ugokasu",
-  "meaning_id": "me-move",
+  "meaning_id": "bergerak",
   "meaning_en": "to move; to shift",
   "jlpt": "n3",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 2,
@@ -64653,8 +66012,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"ウゴカ＼ス"}
+},
     {
       "jp": "ここからあそこへこの石を動かして下さい。",
       "id": "Tolong move this stone from here to there.",
@@ -64703,8 +66063,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ウワサ￣"}
+},
     {
       "jp": "人の噂って当てにならないからな。",
       "id": "You can't trust rumors.",
@@ -64731,7 +66092,7 @@ window.vocabN3_Verbs = [
   "meaning_id": "mengirim",
   "meaning_en": "to send; to give to; to award to; to confer on",
   "jlpt": "n3",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 2,
@@ -64753,8 +66114,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"オクル￣"}
+},
     {
       "jp": "市長は彼に市の鍵を贈った。",
       "id": "The mayor presented him with the key to the city.",
@@ -64803,8 +66165,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":4,"downstep_mora":2,"contour":"オシャ＼ベリ"}
+},
     {
       "jp": "彼女は要するにおしゃべりなんだ。",
       "id": "She is, in brief, a chatterbox.",
@@ -64828,10 +66191,10 @@ window.vocabN3_Verbs = [
   "word": "居る",
   "reading": "おる",
   "romaji": "oru",
-  "meaning_id": "me-be",
+  "meaning_id": "ada",
   "meaning_en": "to be (animate); to be; to exist",
   "jlpt": "n3",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 2,
@@ -64853,8 +66216,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":2,"downstep_mora":1,"contour":"オ＼ル"}
+},
     {
       "jp": "私は疑念を表明せずにはおれない。",
       "id": "I cannot forbear expressing my doubts.",
@@ -64903,8 +66267,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"カイシ￣"}
+},
     {
       "jp": "パーティーの開始に間に合うでしょうか。",
       "id": "Will we be in time for the beginning of the party?",
@@ -64928,10 +66293,10 @@ window.vocabN3_Verbs = [
   "word": "飼う",
   "reading": "かう",
   "romaji": "kau",
-  "meaning_id": "me-keep",
+  "meaning_id": "simpan",
   "meaning_en": "to keep; to raise; to feed",
   "jlpt": "n3",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 2,
@@ -64953,8 +66318,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":2,"downstep_mora":1,"contour":"カ＼ウ"}
+},
     {
       "jp": "彼女は小さな黒い犬を飼っている。",
       "id": "She has a small black dog.",
@@ -64978,10 +66344,10 @@ window.vocabN3_Verbs = [
   "word": "換える",
   "reading": "かえる",
   "romaji": "kaeru",
-  "meaning_id": "me-exchange",
+  "meaning_id": "pertukaran",
   "meaning_en": "to exchange; to interchange; to substitute; to replace",
   "jlpt": "n3",
-  "pos": "verb-ichidan",
+  "pos": "verb-ru",
   "common": true,
   "related_grammar": [],
   "formalitas": 2,
@@ -65003,8 +66369,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"カエル￣"}
+},
     {
       "jp": "これを現金に換えてもらえますか。",
       "id": "Can you cash these for me?",
@@ -65028,10 +66395,10 @@ window.vocabN3_Verbs = [
   "word": "替える",
   "reading": "かえる",
   "romaji": "kaeru",
-  "meaning_id": "me-exchange",
+  "meaning_id": "pertukaran",
   "meaning_en": "to exchange; to interchange; to substitute; to replace",
   "jlpt": "n3",
-  "pos": "verb-ichidan",
+  "pos": "verb-ru",
   "common": true,
   "related_grammar": [],
   "formalitas": 2,
@@ -65053,8 +66420,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"カエル￣"}
+},
     {
       "jp": "チャンネルを替えてもかまわない？",
       "id": "Do you mind if I change the channel?",
@@ -65078,10 +66446,10 @@ window.vocabN3_Verbs = [
   "word": "罹る",
   "reading": "かかる",
   "romaji": "kakaru",
-  "meaning_id": "me-suffer from",
+  "meaning_id": "menderita",
   "meaning_en": "to suffer from",
   "jlpt": "n3",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 2,
@@ -65103,8 +66471,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"カカ＼ル"}
+},
     {
       "jp": "食中毒に罹ったことはありますか。",
       "id": "Have you ever had food poisoning?",
@@ -65128,10 +66497,10 @@ window.vocabN3_Verbs = [
   "word": "欠ける",
   "reading": "かける",
   "romaji": "kakeru",
-  "meaning_id": "me-be lacking",
+  "meaning_id": "menjadi kurang",
   "meaning_en": "to be lacking",
   "jlpt": "n3",
-  "pos": "verb-ichidan",
+  "pos": "verb-ru",
   "common": true,
   "related_grammar": [],
   "formalitas": 2,
@@ -65153,8 +66522,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"カケル￣"}
+},
     {
       "jp": "奥歯が欠けました。",
       "id": "My back tooth has chipped.",
@@ -65178,10 +66548,10 @@ window.vocabN3_Verbs = [
   "word": "数える",
   "reading": "かぞえる",
   "romaji": "kazoeru",
-  "meaning_id": "me-count",
+  "meaning_id": "menghitung",
   "meaning_en": "to count",
   "jlpt": "n3",
-  "pos": "verb-ichidan",
+  "pos": "verb-ru",
   "common": true,
   "related_grammar": [],
   "formalitas": 2,
@@ -65203,8 +66573,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"カゾエ＼ル"}
+},
     {
       "jp": "目を閉じて、１０まで数えなさい。",
       "id": "Close your eyes, and count to ten.",
@@ -65228,10 +66599,10 @@ window.vocabN3_Verbs = [
   "word": "被る",
   "reading": "かぶる",
   "romaji": "kaburu",
-  "meaning_id": "me-put on",
+  "meaning_id": "pakai",
   "meaning_en": "to put on (one's head); to wear; to have on; to pull over (one's head)",
   "jlpt": "n3",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 2,
@@ -65253,8 +66624,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"カブ＼ル"}
+},
     {
       "jp": "教室では帽子を被るべきではない。",
       "id": "Your hat should not be worn in the classroom.",
@@ -65303,8 +66675,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"カンジョ＼ウ"}
+},
     {
       "jp": "勘定は全部で５０ドルになります。",
       "id": "The bill amounts to fifty dollars.",
@@ -65328,10 +66701,10 @@ window.vocabN3_Verbs = [
   "word": "効く",
   "reading": "きく",
   "romaji": "kiku",
-  "meaning_id": "me-be effective",
+  "meaning_id": "menjadi efektif",
   "meaning_en": "to be effective",
   "jlpt": "n3",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 2,
@@ -65353,8 +66726,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":2,"downstep_mora":0,"contour":"キク￣"}
+},
     {
       "jp": "この薬は君にはおおいに効くと思う。",
       "id": "I think this medicine will do you a lot of good.",
@@ -65378,7 +66752,7 @@ window.vocabN3_Verbs = [
   "word": "機能",
   "reading": "きのう",
   "romaji": "kinou",
-  "meaning_id": "function; faculty",
+  "meaning_id": "fungsi; fakultas",
   "meaning_en": "function; faculty",
   "jlpt": "n3",
   "pos": "verb-suru",
@@ -65403,8 +66777,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"キ＼ノウ"}
+},
     {
       "jp": "ブレーキの機能は車を止めることだ。",
       "id": "The function of the brake is to stop the car.",
@@ -65428,7 +66803,7 @@ window.vocabN3_Verbs = [
   "word": "ぐっすり",
   "reading": "ぐっすり",
   "romaji": "gussuri",
-  "meaning_id": "sound asleep; fast asleep",
+  "meaning_id": "tertidur lelap",
   "meaning_en": "sound asleep; fast asleep",
   "jlpt": "n3",
   "pos": "adverb",
@@ -65453,8 +66828,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":0,"downstep_mora":0,"contour":"￣"}
+},
     {
       "jp": "疲れた少年はぐっすり眠っている。",
       "id": "The tired boy is fast asleep.",
@@ -65478,7 +66854,7 @@ window.vocabN3_Verbs = [
   "word": "怪我",
   "reading": "けが",
   "romaji": "kega",
-  "meaning_id": "injury (to animate object); hurt",
+  "meaning_id": "cedera (untuk menghidupkan objek); terluka",
   "meaning_en": "injury (to animate object); hurt",
   "jlpt": "n3",
   "pos": "verb-suru",
@@ -65503,8 +66879,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"odaka","mora_count":2,"downstep_mora":2,"contour":"ケガ＼"}
+},
     {
       "jp": "「あいたたたー」「ケガないか？」",
       "id": "\"Ow-ow-ouch.\" \"Are you alright?\"",
@@ -65553,8 +66930,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ケンカ￣"}
+},
     {
       "jp": "彼らは絶えずけんかばかりしていた。",
       "id": "They were constantly quarreling.",
@@ -65578,7 +66956,7 @@ window.vocabN3_Verbs = [
   "word": "建築",
   "reading": "けんちく",
   "romaji": "kenchiku",
-  "meaning_id": "construction; architecture",
+  "meaning_id": "konstruksi; arsitektur",
   "meaning_en": "construction; architecture",
   "jlpt": "n3",
   "pos": "verb-suru",
@@ -65603,8 +66981,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ケンチク￣"}
+},
     {
       "jp": "彼らは建築においてとても進歩していた。",
       "id": "They were making great progress in architecture.",
@@ -65628,7 +67007,7 @@ window.vocabN3_Verbs = [
   "word": "講演",
   "reading": "こうえん",
   "romaji": "kouen",
-  "meaning_id": "lecture; address",
+  "meaning_id": "kuliah; alamat",
   "meaning_en": "lecture; address",
   "jlpt": "n3",
   "pos": "verb-suru",
@@ -65653,8 +67032,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"コウエン￣"}
+},
     {
       "jp": "その講演を聞き逃して残念です。",
       "id": "I regret missing the speech.",
@@ -65678,7 +67058,7 @@ window.vocabN3_Verbs = [
   "word": "合計",
   "reading": "ごうけい",
   "romaji": "goukei",
-  "meaning_id": "sum total; total amount",
+  "meaning_id": "jumlah total",
   "meaning_en": "sum total; total amount",
   "jlpt": "n3",
   "pos": "verb-suru",
@@ -65703,8 +67083,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ゴウケイ￣"}
+},
     {
       "jp": "それらの数字は、合計があわない。",
       "id": "These figures don't add up.",
@@ -65753,8 +67134,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":2,"downstep_mora":1,"contour":"コ＼ロ"}
+},
     {
       "jp": "金がなくなる頃にはもうひと月ある。",
       "id": "When the money runs out, there'll still be one month left.",
@@ -65778,7 +67160,7 @@ window.vocabN3_Verbs = [
   "word": "今日",
   "reading": "こんにち",
   "romaji": "konnichi",
-  "meaning_id": "today; this day",
+  "meaning_id": "hari ini",
   "meaning_en": "today; this day",
   "jlpt": "n3",
   "pos": "adverb",
@@ -65803,8 +67185,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":4,"downstep_mora":1,"contour":"コ＼ンニチ"}
+},
     {
       "jp": "彼がその会社を今日の会社にした。",
       "id": "He has made the company what it is today.",
@@ -65853,8 +67236,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":0,"downstep_mora":1,"contour":"＼"}
+},
     {
       "jp": "あのレストランはサービスがよい。",
       "id": "They give good service at that restaurant.",
@@ -65903,8 +67287,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":0,"downstep_mora":0,"contour":"￣"}
+},
     {
       "jp": "あなたをさっぱり理解できない。",
       "id": "I can never make you out.",
@@ -65953,8 +67338,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"サ＼ラニ"}
+},
     {
       "jp": "この木は高いがあの木は更に高い。",
       "id": "This tree is tall, but that one is even taller.",
@@ -66023,7 +67409,7 @@ window.vocabN3_Verbs = [
   "meaning_id": "selesai / mengakhiri",
   "meaning_en": "to finish; to close; to do something completely",
   "jlpt": "n3",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 2,
@@ -66045,8 +67431,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"シマウ￣"}
+},
     {
       "jp": "やってしまったことは元に戻らない。",
       "id": "What is done cannot be undone.",
@@ -66070,10 +67457,10 @@ window.vocabN3_Verbs = [
   "word": "占める",
   "reading": "しめる",
   "romaji": "shimeru",
-  "meaning_id": "me-comprise",
+  "meaning_id": "terdiri",
   "meaning_en": "to comprise; to account for; to make up (of); to hold; to occupy",
   "jlpt": "n3",
-  "pos": "verb-ichidan",
+  "pos": "verb-ru",
   "common": true,
   "related_grammar": [],
   "formalitas": 2,
@@ -66095,8 +67482,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"シメ＼ル"}
+},
     {
       "jp": "広告費はこの会社の経費の約７％を占めている。",
       "id": "Advertising makes up about 7% of this company's expenses.",
@@ -66120,7 +67508,7 @@ window.vocabN3_Verbs = [
   "word": "上京",
   "reading": "じょうきょう",
   "romaji": "joukyou",
-  "meaning_id": "proceeding to the capital (Tokyo)",
+  "meaning_id": "melanjutkan ke ibukota (Tokyo)",
   "meaning_en": "proceeding to the capital (Tokyo)",
   "jlpt": "n3",
   "pos": "verb-suru",
@@ -66145,8 +67533,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ジョウキョウ￣"}
+},
     {
       "jp": "高校を出るとすぐ、私は上京した。",
       "id": "On leaving high school, I went to Tokyo.",
@@ -66170,10 +67559,10 @@ window.vocabN3_Verbs = [
   "word": "信じる",
   "reading": "しんじる",
   "romaji": "shinjiru",
-  "meaning_id": "me-believe",
+  "meaning_id": "percaya",
   "meaning_en": "to believe; to place trust in",
   "jlpt": "n3",
-  "pos": "verb-ichidan",
+  "pos": "verb-ru",
   "common": true,
   "related_grammar": [],
   "formalitas": 2,
@@ -66195,8 +67584,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"シンジ＼ル"}
+},
     {
       "jp": "彼らは地球が平らであると信じた。",
       "id": "They believed that the earth was flat.",
@@ -66245,8 +67635,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":0,"downstep_mora":0,"contour":"￣"}
+},
     {
       "jp": "彼女はずっと質問ばかりしていた。",
       "id": "She kept on asking me questions the whole time.",
@@ -66270,7 +67661,7 @@ window.vocabN3_Verbs = [
   "word": "既に",
   "reading": "すでに",
   "romaji": "sudeni",
-  "meaning_id": "already; too late",
+  "meaning_id": "sudah; terlambat",
   "meaning_en": "already; too late",
   "jlpt": "n3",
   "pos": "adverb",
@@ -66295,8 +67686,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"ス＼デニ"}
+},
     {
       "jp": "彼女は既にその話を知っていた。",
       "id": "She knew the story already.",
@@ -66345,8 +67737,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"ソ＼ウサ"}
+},
     {
       "jp": "その操作に全く危険はありません。",
       "id": "The operation is quite free from danger.",
@@ -66370,10 +67763,10 @@ window.vocabN3_Verbs = [
   "word": "経つ",
   "reading": "たつ",
   "romaji": "tatsu",
-  "meaning_id": "me-pass",
+  "meaning_id": "lulus",
   "meaning_en": "to pass; to lapse",
   "jlpt": "n3",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 2,
@@ -66395,8 +67788,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":2,"downstep_mora":1,"contour":"タ＼ツ"}
+},
     {
       "jp": "時が経つにつれて、問題が生じてきた。",
       "id": "The problem came about as time passed.",
@@ -66445,8 +67839,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"タマタマ￣"}
+},
     {
       "jp": "私はたまたま駅で先生に出会った。",
       "id": "It happened that I saw my teacher at the station.",
@@ -66470,10 +67865,10 @@ window.vocabN3_Verbs = [
   "word": "試す",
   "reading": "ためす",
   "romaji": "tamesu",
-  "meaning_id": "me-attempt",
+  "meaning_id": "upaya",
   "meaning_en": "to attempt; to test",
   "jlpt": "n3",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 2,
@@ -66495,8 +67890,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"タメ＼ス"}
+},
     {
       "jp": "おいしいよ。試してみるべきだよ。",
       "id": "It's good. You should try it.",
@@ -66520,10 +67916,10 @@ window.vocabN3_Verbs = [
   "word": "就く",
   "reading": "つく",
   "romaji": "tsuku",
-  "meaning_id": "me-settle in",
+  "meaning_id": "menetap",
   "meaning_en": "to settle in (place); to take (seat, position); to study (under teacher)",
   "jlpt": "n3",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 2,
@@ -66545,8 +67941,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":2,"downstep_mora":1,"contour":"ツ＼ク"}
+},
     {
       "jp": "私たちは家路についた。",
       "id": "We set out for home.",
@@ -66570,10 +67967,10 @@ window.vocabN3_Verbs = [
   "word": "付ける",
   "reading": "つける",
   "romaji": "tsukeru",
-  "meaning_id": "me-attach",
+  "meaning_id": "lampirkan",
   "meaning_en": "to attach; to join; to add; to append",
   "jlpt": "n3",
-  "pos": "verb-ichidan",
+  "pos": "verb-ru",
   "common": true,
   "related_grammar": [],
   "formalitas": 2,
@@ -66595,8 +67992,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"ツケ＼ル"}
+},
     {
       "jp": "君この車に高い値を付けすぎだよ。",
       "id": "You are asking too much for this car.",
@@ -66620,7 +68018,7 @@ window.vocabN3_Verbs = [
   "word": "到着",
   "reading": "とうちゃく",
   "romaji": "touchaku",
-  "meaning_id": "arrival",
+  "meaning_id": "kedatangan",
   "meaning_en": "arrival",
   "jlpt": "n3",
   "pos": "verb-suru",
@@ -66645,8 +68043,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"トウチャク￣"}
+},
     {
       "jp": "列車は１０番ホームに到着します。",
       "id": "The train will come in at platform ten.",
@@ -66670,10 +68069,10 @@ window.vocabN3_Verbs = [
   "word": "飛び出す",
   "reading": "とびだす",
   "romaji": "tobidasu",
-  "meaning_id": "me-jump out",
+  "meaning_id": "melompat keluar",
   "meaning_en": "to jump out; to rush out; to fly out",
   "jlpt": "n3",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 2,
@@ -66695,8 +68094,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"トビダ＼ス"}
+},
     {
       "jp": "通りに飛び出してしまったのです。",
       "id": "He ran out into traffic.",
@@ -66720,10 +68120,10 @@ window.vocabN3_Verbs = [
   "word": "留める",
   "reading": "とめる",
   "romaji": "tomeru",
-  "meaning_id": "me-fasten",
+  "meaning_id": "kencangkan",
   "meaning_en": "to fasten; to turn off; to detain",
   "jlpt": "n3",
-  "pos": "verb-ichidan",
+  "pos": "verb-ru",
   "common": true,
   "related_grammar": [],
   "formalitas": 2,
@@ -66745,8 +68145,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"トメル￣"}
+},
     {
       "jp": "この文書はあなたのお目にだけ留めていただきたい。",
       "id": "This document is for your eyes only.",
@@ -66770,7 +68171,7 @@ window.vocabN3_Verbs = [
   "word": "なお",
   "reading": "なお",
   "romaji": "nao",
-  "meaning_id": "still; yet",
+  "meaning_id": "tetap saja; belum",
   "meaning_en": "still; yet",
   "jlpt": "n3",
   "pos": "adverb",
@@ -66795,8 +68196,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":2,"downstep_mora":1,"contour":"ナ＼オ"}
+},
     {
       "jp": "彼は背が高いが、兄はなお高い。",
       "id": "Dia tall, but his brother is much taller.",
@@ -66820,7 +68222,7 @@ window.vocabN3_Verbs = [
   "word": "のんびり",
   "reading": "のんびり",
   "romaji": "nonbiri",
-  "meaning_id": "carefree; at leisure",
+  "meaning_id": "riang; di waktu senggang",
   "meaning_en": "carefree; at leisure",
   "jlpt": "n3",
   "pos": "adverb",
@@ -66845,8 +68247,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":0,"downstep_mora":0,"contour":"￣"}
+},
     {
       "jp": "退職したのでしばらくのんびり暮らすつもりです。",
       "id": "I've retired and I'm going to take it easy for a while.",
@@ -66870,10 +68273,10 @@ window.vocabN3_Verbs = [
   "word": "吐く",
   "reading": "はく",
   "romaji": "haku",
-  "meaning_id": "me-breathe",
+  "meaning_id": "bernapas",
   "meaning_en": "to breathe; to tell (lies); to vomit; to disgorge",
   "jlpt": "n3",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 2,
@@ -66891,12 +68294,13 @@ window.vocabN3_Verbs = [
   "examples": [
     {
       "jp": "吐くを使います。",
-      "id": "Menggunakan me-breathe.",
+      "id": "Menggunakan bernapas.",
       "level": "n3",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":2,"downstep_mora":1,"contour":"ハ＼ク"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -66912,10 +68316,10 @@ window.vocabN3_Verbs = [
   "word": "話し合う",
   "reading": "はなしあう",
   "romaji": "hanashiau",
-  "meaning_id": "me-discuss",
+  "meaning_id": "berdiskusi",
   "meaning_en": "to discuss; to talk together",
   "jlpt": "n3",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 2,
@@ -66937,8 +68341,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":4,"category":"nakadaka","mora_count":5,"downstep_mora":4,"contour":"ハナシア＼ウ"}
+},
     {
       "jp": "父と話し合って、転職を決意した。",
       "id": "I discussed it with my father and decided to change my job.",
@@ -66962,10 +68367,10 @@ window.vocabN3_Verbs = [
   "word": "放す",
   "reading": "はなす",
   "romaji": "hanasu",
-  "meaning_id": "me-separate",
+  "meaning_id": "terpisah",
   "meaning_en": "to separate; to set free",
   "jlpt": "n3",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 2,
@@ -66987,8 +68392,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"ハナ＼ス"}
+},
     {
       "jp": "犬を放さないよう、ご注意ください。",
       "id": "Tolong be careful not to let the dog loose.",
@@ -67012,10 +68418,10 @@ window.vocabN3_Verbs = [
   "word": "離す",
   "reading": "はなす",
   "romaji": "hanasu",
-  "meaning_id": "me-part",
+  "meaning_id": "bagian",
   "meaning_en": "to part; divide; separate",
   "jlpt": "n3",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 2,
@@ -67037,8 +68443,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"ハナ＼ス"}
+},
     {
       "jp": "私から手を離してくださらない？",
       "id": "Will you take your hand off me?",
@@ -67062,10 +68469,10 @@ window.vocabN3_Verbs = [
   "word": "張る",
   "reading": "はる",
   "romaji": "haru",
-  "meaning_id": "me-stick",
+  "meaning_id": "menempel",
   "meaning_en": "to stick; to paste",
   "jlpt": "n3",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 2,
@@ -67087,8 +68494,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":2,"downstep_mora":0,"contour":"ハル￣"}
+},
     {
       "jp": "明るい内にテントを張ってしまおう。",
       "id": "Let's put up the tent while it is still light.",
@@ -67112,10 +68520,10 @@ window.vocabN3_Verbs = [
   "word": "轢く",
   "reading": "ひく",
   "romaji": "hiku",
-  "meaning_id": "me-run somebody over",
+  "meaning_id": "menabrak seseorang",
   "meaning_en": "to run somebody over (with vehicle); to knock someone down",
   "jlpt": "n3",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 2,
@@ -67137,8 +68545,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":2,"downstep_mora":0,"contour":"ヒク￣"}
+},
     {
       "jp": "彼は危うく車に轢かれそうになった。",
       "id": "He came near being run over by a car.",
@@ -67237,8 +68646,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":0,"downstep_mora":0,"contour":"￣"}
+},
     {
       "jp": "オフィスに時間ぴったりについた。",
       "id": "We arrived at the office on time.",
@@ -67262,10 +68672,10 @@ window.vocabN3_Verbs = [
   "word": "振る",
   "reading": "ふる",
   "romaji": "furu",
-  "meaning_id": "me-wave",
+  "meaning_id": "gelombang",
   "meaning_en": "to wave; to shake; to swing; to sprinkle; to cast (actor); to allocate (work)",
   "jlpt": "n3",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 2,
@@ -67287,8 +68697,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":2,"downstep_mora":0,"contour":"フル￣"}
+},
     {
       "jp": "よく振ってから使用してください。",
       "id": "Shake before using.",
@@ -67337,8 +68748,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":0,"downstep_mora":0,"contour":"￣"}
+},
     {
       "jp": "ジムは、いわゆるぼんやりした学生だ。",
       "id": "Jim is what is called an absent-minded student.",
@@ -67362,10 +68774,10 @@ window.vocabN3_Verbs = [
   "word": "回す",
   "reading": "まわす",
   "romaji": "mawasu",
-  "meaning_id": "me-turn",
+  "meaning_id": "belok",
   "meaning_en": "to turn; to revolve",
   "jlpt": "n3",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 2,
@@ -67387,8 +68799,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"マワス￣"}
+},
     {
       "jp": "社長に電話を回します。",
       "id": "I'll put you through to the president.",
@@ -67412,7 +68825,7 @@ window.vocabN3_Verbs = [
   "word": "無視",
   "reading": "むし",
   "romaji": "mushi",
-  "meaning_id": "disregard; ignore",
+  "meaning_id": "mengabaikan; abaikan",
   "meaning_en": "disregard; ignore",
   "jlpt": "n3",
   "pos": "verb-suru",
@@ -67437,8 +68850,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":2,"downstep_mora":1,"contour":"ム＼シ"}
+},
     {
       "jp": "警察は君の事を無視すると思うよ。",
       "id": "I believe the police will ignore you.",
@@ -67462,7 +68876,7 @@ window.vocabN3_Verbs = [
   "word": "滅多に",
   "reading": "めったに",
   "romaji": "mettani",
-  "meaning_id": "rarely (with neg. verb); seldom",
+  "meaning_id": "jarang (dengan kata kerja neg.); jarang",
   "meaning_en": "rarely (with neg. verb); seldom",
   "jlpt": "n3",
   "pos": "adverb",
@@ -67487,8 +68901,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":4,"downstep_mora":1,"contour":"メ＼ッタニ"}
+},
     {
       "jp": "当地では滅多に雪が降らない。",
       "id": "We seldom have snow here.",
@@ -67512,7 +68927,7 @@ window.vocabN3_Verbs = [
   "word": "メモ",
   "reading": "メモ",
   "romaji": "memo",
-  "meaning_id": "memorandum",
+  "meaning_id": "catatan ringkas (memo)",
   "meaning_en": "memorandum",
   "jlpt": "n3",
   "pos": "verb-suru",
@@ -67537,8 +68952,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":0,"downstep_mora":1,"contour":"＼"}
+},
     {
       "jp": "彼はいつもメモを見ながら話す。",
       "id": "He always speaks from notes.",
@@ -67565,7 +68981,7 @@ window.vocabN3_Verbs = [
   "meaning_id": "berkata",
   "meaning_en": "to say",
   "jlpt": "n3",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 2,
@@ -67587,8 +69003,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":2,"downstep_mora":0,"contour":"ユウ￣"}
+},
     {
       "jp": "「みんなひと休みしようぜ」とジョンは言った。",
       "id": "John said, \"Hey guys, let's take a break.\"",
@@ -67612,7 +69029,7 @@ window.vocabN3_Verbs = [
   "word": "ゆっくり",
   "reading": "ゆっくり",
   "romaji": "yukkuri",
-  "meaning_id": "slowly; at ease",
+  "meaning_id": "perlahan; dengan nyaman",
   "meaning_en": "slowly; at ease",
   "jlpt": "n3",
   "pos": "verb-suru",
@@ -67637,8 +69054,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":0,"downstep_mora":0,"contour":"￣"}
+},
     {
       "jp": "ゆっくりでも着実にやってゆけば勝負には勝つ。",
       "id": "Slow and steady wins the race.",
@@ -67662,7 +69080,7 @@ window.vocabN3_Verbs = [
   "word": "予報",
   "reading": "よほう",
   "romaji": "yohou",
-  "meaning_id": "forecast; prediction",
+  "meaning_id": "perkiraan; prediksi",
   "meaning_en": "forecast; prediction",
   "jlpt": "n3",
   "pos": "verb-suru",
@@ -67687,8 +69105,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ヨホウ￣"}
+},
     {
       "jp": "予報はさらに降雪があると伝えていた。",
       "id": "The prediction was for more snow.",
@@ -67712,10 +69131,10 @@ window.vocabN3_Verbs = [
   "word": "よると",
   "reading": "よると",
   "romaji": "yoruto",
-  "meaning_id": "according to",
+  "meaning_id": "menurut",
   "meaning_en": "according to",
   "jlpt": "n3",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 2,
@@ -67787,8 +69206,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":4,"downstep_mora":2,"contour":"ヨロ＼シク"}
+},
     {
       "jp": "あなたのおうちの皆様によろしく。",
       "id": "Tolong remember me to all your family.",
@@ -67837,8 +69257,9 @@ window.vocabN3_Verbs = [
       "level": "n3",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ロウドウ￣"}
+},
     {
       "jp": "むかしのような激しい日雇い労働はできやしない。",
       "id": "I can't work as hard as I used to.",

@@ -1,0 +1,71 @@
+[
+  {
+    "id": "syntax-sov-order",
+    "topic": "Struktur Dasar SOV (Subject - Object - Verb)",
+    "category": "syntax",
+    "role": "Kerangka Dasar Sintaksis Bahasa Jepang",
+    "summary_id": "Bahasa Jepang adalah bahasa berkepala akhir (head-final) dengan struktur inti Subjek - Objek - Predikat di paling akhir.",
+    "explanation_id": "Aturan emas sintaksis Jepang: PREDICAT SELALU DI AKHIR. Komponen lain di depan predikat dapat bertukar posisi dengan cukup fleksibel selama partikel penandanya tidak berubah. Karena predikat selalu di akhir, pendengar harus mendengarkan kalimat sampai selesai untuk mengetahui apakah kalimat itu positif, negatif, lampau, ajakan, atau pengandaian.",
+    "rules": [
+      "Predikat (kata kerja / kata sifat / kopula) mengunci akhir klausa.",
+      "Kata penjelas (modifikator) SELALU mendahului kata yang dijelaskan (head).",
+      "Urutan konstituen relatif bebas berkat peran partikel pasca-posisional (postpositions)."
+    ],
+    "examples": [
+      {
+        "jp": "田中さんが（S）図書館で（Loc）日本語を（O）勉強する（V）。",
+        "id": "Saudara Tanaka belajar bahasa Jepang di perpustakaan."
+      },
+      {
+        "jp": "日本語を（O）図書館で（Loc）田中さんが（S）勉強する（V）。",
+        "id": "Tetap bermakna sama persis, hanya fokus penekanan yang bergeser ke objek."
+      }
+    ]
+  },
+  {
+    "id": "syntax-zero-pronoun",
+    "topic": "Zero Pronoun & Elipsis Kontekstual (Subjek Tersirat)",
+    "category": "syntax",
+    "role": "Efisiensi Pragmatik Percakapan Alami",
+    "summary_id": "Subjek atau objek yang sudah dapat dipahami dari konteks WAJIB dihilangkan agar bahasa Jepang terdengar alami.",
+    "explanation_id": "Pembelajar pemula dari bahasa yang berorientasi pronomina (seperti bahasa Indonesia \"saya\" atau bahasa Inggris \"I\") cenderung mengulang 私は di setiap kalimat. Dalam sintaksis Jepang asli, jika pembicara membicarakan dirinya sendiri atau situasi sudah jelas, kata ganti seperti 私は atau あなたは HARUS dihilangkan (disebut zero pronoun atau zero anaphora). Menyebutkan \"kamu\" berulang-ulang justru terdengar tidak sopan atau menuduh.",
+    "rules": [
+      "Jangan mengulang 私は di setiap kalimat baru.",
+      "Gunakan nama orang + さん daripada あなた saat berbicara dengan lawan bicara.",
+      "Arah tindakan pada kata kerja memberi/menerima (あげる/くれる/もらう) secara otomatis menjelaskan siapa subjek dan objeknya tanpa perlu menyebut kata ganti."
+    ],
+    "examples": [
+      {
+        "jp": "（私は）明日、（東京へ）行きます。",
+        "id": "(Saya) besok akan pergi (ke Tokyo). Cukup ucapkan \"明日行きます\"."
+      },
+      {
+        "jp": "手伝ってあげましょうか。",
+        "id": "Bolehkah saya bantu? (Tak perlu sebut \"saya membantu Anda\")."
+      }
+    ]
+  },
+  {
+    "id": "syntax-relative-clause",
+    "topic": "Klausa Penjelas Nomina (Relative Clauses)",
+    "category": "syntax",
+    "role": "Penggabungan Kalimat Penjelas ke Kata Benda",
+    "summary_id": "Klausa penjelas diletakkan langsung di depan kata benda tanpa kata penghubung seperti \"yang\" dalam bahasa Indonesia.",
+    "explanation_id": "Bahasa Indonesia menggunakan kata \"yang\" untuk merangkai kalimat penjelas di belakang kata benda (misal: \"Buku yang kemarin saya beli\"). Dalam bahasa Jepang, klausa penjelas berbentuk bentuk biasa (biasa/kamus/ta-form) diletakkan LANGSUNG di DEPAN kata benda sasaran. Jika di dalam klausa penjelas terdapat subjek, partikel が sering kali dapat melunak menjadi の.",
+    "rules": [
+      "Gunakan bentuk biasa (plain form / futsuukei) di akhir klausa penjelas, jangan bentuk masu/desu.",
+      "Tidak ada kata yang setara dengan \"yang\" (seperti which/who/that).",
+      "Partikel が dalam klausa penjelas boleh berubah menjadi の (misal: 私が買った本 -> 私の買った本)."
+    ],
+    "examples": [
+      {
+        "jp": "昨日買った本を読み終えた。",
+        "id": "Saya selesai membaca [buku yang saya beli kemarin]."
+      },
+      {
+        "jp": "背が高い人は田中さんです。",
+        "id": "[Orang yang bertubuh tinggi itu] adalah Saudara Tanaka."
+      }
+    ]
+  }
+]

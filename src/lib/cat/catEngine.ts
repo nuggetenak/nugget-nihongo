@@ -6,6 +6,7 @@
 
 import { JLPTLevel } from '../../types/vocab';
 import { DiagnosticPair, loadDiagnosticPairs } from '../data/diagnosticManager';
+export type { CATQuestionItem } from '../../types/cat';
 
 export interface CATQuestion {
   id: string;
@@ -16,6 +17,7 @@ export interface CATQuestion {
   level: JLPTLevel;
   difficulty: number; // b parameter (-2.0 .. +2.0)
   discrimination: number; // a parameter
+  guessing?: number; // c parameter (pseudo-guessing, default 0.25)
   explanation: string;
   patterns: string[];
   rootCause: string;
@@ -38,6 +40,7 @@ export interface CATResult {
   estimatedLevel: JLPTLevel;
   levelName: string;
   theta: number; // ability parameter
+  sem: number; // standard error of measurement
   accuracy: number; // percentage
   correctCount: number;
   totalCount: number;
@@ -142,6 +145,75 @@ export async function buildCATQuestionPool(): Promise<CATQuestion[]> {
 }
 
 /**
+ * 3PL Item Response Theory (IRT) Item Fisher Information:
+ * I_i(theta) = a_i^2 * ((P_i(theta) - c_i)^2 / (1 - c_i)^2) * ((1 - P_i(theta)) / P_i(theta))
+ *
+ * For a 4-option multiple-choice question, c_i = 0.25 (guessing parameter).
+ */
+export function calculateFisherInformation(
+  question: Pick<CATQuestion, 'difficulty'> & { discrimination?: number; guessing?: number },
+  theta: number
+): number {
+  const a = question.discrimination ?? 1.25;
+  const b = question.difficulty;
+  const c = question.guessing ?? 0.25;
+
+  const logit = Math.max(-20, Math.min(20, a * (theta - b)));
+  const pStar = 1 / (1 + Math.exp(-logit));
+  const p = c + (1 - c) * pStar;
+
+  if (p <= 0.0001 || p >= 0.9999) return 0.0001;
+
+  const pMinusC = p - c;
+  const oneMinusC = 1 - c;
+  const info = (a * a) * ((pMinusC * pMinusC) / (oneMinusC * oneMinusC)) * ((1 - p) / p);
+  return Math.max(0.0001, info);
+}
+
+/**
+ * Standard Error of Measurement (SEM):
+ * SEM(theta) = 1 / sqrt(I_prior + sum_{i=1}^n I_i(theta))
+ *
+ * Prior information: standard normal prior N(0, 1) has Fisher Information = 1.0.
+ */
+export function calculateCATSEM(
+  answeredItems: Array<
+    | { question: Pick<CATQuestion, 'difficulty'> & { discrimination?: number; guessing?: number } }
+    | (Pick<CATQuestion, 'difficulty'> & { discrimination?: number; guessing?: number })
+  >,
+  theta: number
+): number {
+  let totalInformation = 1.0; // Standard normal prior (sigma_0 = 1.0)
+  for (const item of answeredItems) {
+    const q = item && 'question' in item ? item.question : item;
+    if (q) {
+      totalInformation += calculateFisherInformation(q, theta);
+    }
+  }
+  return 1 / Math.sqrt(totalInformation);
+}
+
+export const CAT_TARGET_SEM = 0.35;
+export const CAT_MIN_QUESTIONS = 6;
+export const CAT_MAX_QUESTIONS = 12;
+
+/**
+ * CAT dynamic stopping criterion:
+ * Stops when standard error of measurement SEM <= 0.35 after at least 6 questions,
+ * or when maximum test length (12 questions) is reached.
+ */
+export function shouldStopCAT(
+  answeredCount: number,
+  sem: number,
+  minQuestions: number = CAT_MIN_QUESTIONS,
+  maxQuestions: number = CAT_MAX_QUESTIONS
+): boolean {
+  if (answeredCount >= maxQuestions) return true;
+  if (answeredCount >= minQuestions && sem <= CAT_TARGET_SEM) return true;
+  return false;
+}
+
+/**
  * Select the best next question that maximizes Fisher Information
  * at the current estimated ability theta
  */
@@ -153,17 +225,17 @@ export function selectNextCATQuestion(
   const available = pool.filter((q) => !usedQuestionIds.has(q.id));
   if (available.length === 0) return null;
 
-  // Find question with difficulty closest to current ability theta
-  // with a small random jitter to prevent identical tests
-  available.sort((a, b) => {
-    const diffA = Math.abs(a.difficulty - currentTheta);
-    const diffB = Math.abs(b.difficulty - currentTheta);
-    return diffA - diffB;
-  });
+  // Rank available questions by Fisher Information at current theta estimate
+  const scored = available.map((q) => ({
+    question: q,
+    info: calculateFisherInformation(q, currentTheta),
+  }));
 
-  // Pick from the top 3 closest items randomly
-  const topCandidates = available.slice(0, Math.min(3, available.length));
-  return topCandidates[Math.floor(Math.random() * topCandidates.length)];
+  scored.sort((a, b) => b.info - a.info);
+
+  // Pick from the top 3 highest information items with slight randomization for test variety
+  const topCandidates = scored.slice(0, Math.min(3, scored.length));
+  return topCandidates[Math.floor(Math.random() * topCandidates.length)].question;
 }
 
 /**
@@ -206,6 +278,7 @@ export function finalizeCATResult(
   const correctCount = answered.filter((a) => a.isCorrect).length;
   const totalCount = answered.length;
   const accuracy = totalCount > 0 ? Math.round((correctCount / totalCount) * 100) : 0;
+  const sem = Math.round(calculateCATSEM(answered, finalTheta) * 1000) / 1000;
 
   let estimatedLevel: JLPTLevel = 'n5';
   let levelName = 'JLPT N5 · Pemula Dasar (Fondasi)';
@@ -260,6 +333,7 @@ export function finalizeCATResult(
     estimatedLevel,
     levelName,
     theta: Math.round(finalTheta * 100) / 100,
+    sem,
     accuracy,
     correctCount,
     totalCount,

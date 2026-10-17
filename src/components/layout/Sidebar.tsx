@@ -1,6 +1,7 @@
 import React from 'react';
 import { Home, BookOpen, Layers, Sprout, Brain, Sparkles, Settings, HelpCircle, History, Quote, Wrench } from 'lucide-react';
 import { useAppStore, AppState } from '../../store/useAppStore';
+import { transitionTabChange } from '../../lib/ui/navigation';
 import { APP_VERSION } from '../../config/version';
 
 interface NavItem {
@@ -19,7 +20,7 @@ export const Sidebar: React.FC = () => {
     { id: 'home', label: 'Beranda', jp: 'ホーム', icon: <Home className="w-5 h-5" /> },
     { id: 'materi', label: 'Materi Hub', jp: '学習', icon: <BookOpen className="w-5 h-5" /> },
     { id: 'quiz', label: 'Arena Kuis', jp: '練習', icon: <Layers className="w-5 h-5" /> },
-    { id: 'kebun', label: 'Pusat Retensi', jp: '保持', icon: <Brain className="w-5 h-5" /> },
+    { id: 'kebun', label: 'Pusat Retensi (Brankas FSRS)', jp: '保持', icon: <Brain className="w-5 h-5" /> },
     { 
       id: 'sensei', 
       label: 'Sensei AI', 
@@ -32,7 +33,11 @@ export const Sidebar: React.FC = () => {
   ];
 
   return (
-    <aside className="hidden lg:flex flex-col w-[260px] h-screen fixed left-0 top-0 bg-surface border-r border-accent/15 z-40 select-none">
+    <aside 
+      role="complementary" 
+      aria-label="Navigasi Utama Desktop" 
+      className="hidden lg:flex flex-col w-[260px] h-screen fixed left-0 top-0 bg-surface border-r border-accent/15 z-40 select-none"
+    >
       {/* Brand Header */}
       <div className="p-5 border-b border-accent/15 flex items-center justify-between">
         <div className="flex items-center gap-3">
@@ -53,14 +58,20 @@ export const Sidebar: React.FC = () => {
       </div>
 
       {/* Navigation Links */}
-      <nav className="flex-1 px-3 py-4 space-y-1.5 overflow-y-auto">
+      <nav 
+        role="navigation" 
+        aria-label="Menu Navigasi Utama Desktop" 
+        className="flex-1 px-3 py-4 space-y-1.5 overflow-y-auto"
+      >
         {navItems.map((item) => {
           const isActive = activeTab === item.id;
           return (
             <button
               key={item.id}
-              onClick={() => setActiveTab(item.id)}
-              className={`w-full flex items-center justify-between px-3.5 py-3 rounded-xl text-sm font-medium transition-all ${
+              onClick={() => transitionTabChange(item.id, setActiveTab)}
+              aria-label={`${item.label} (${item.jp})`}
+              aria-current={isActive ? 'page' : undefined}
+              className={`w-full flex items-center justify-between px-3.5 py-3 rounded-xl text-sm font-medium transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent ${
                 isActive
                   ? 'bg-amber-500/15 text-accent-hot font-bold border border-amber-500/30 shadow-sm'
                   : 'text-appText/80 hover:bg-surface-2 hover:text-appText-bright'
@@ -79,7 +90,7 @@ export const Sidebar: React.FC = () => {
                     {item.badge}
                   </span>
                 ) : (
-                  <span className="text-[11px] font-jp opacity-40">{item.jp}</span>
+                  <span lang="ja" className="text-[11px] font-jp opacity-40">{item.jp}</span>
                 )}
               </div>
             </button>
@@ -90,7 +101,8 @@ export const Sidebar: React.FC = () => {
         <div className="pt-2">
           <button
             onClick={openToolbox}
-            className="w-full flex items-center justify-between px-3.5 py-2.5 rounded-xl text-xs font-semibold bg-surface-2 hover:bg-surface-3 border border-accent/20 hover:border-accent text-appText-bright transition-all group"
+            aria-label="Buka Kotak Peralatan Belajar"
+            className="w-full flex items-center justify-between px-3.5 py-2.5 rounded-xl text-xs font-semibold bg-surface-2 hover:bg-surface-3 border border-accent/20 hover:border-accent text-appText-bright transition-all group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
             title="Buka Kotak Peralatan Belajar (Bagan Kana, Konjugasi, Nuansa, Tes CAT)"
           >
             <div className="flex items-center gap-2.5">

@@ -15,13 +15,13 @@ window.curriculumBook_shin_kanzen_master = {
     {
       "unit_number": 1,
       "id": "unit-curriculum-book-shin-kanzen-master-01",
-      "level": "n2",
+      "level": "n3",
       "pt_stage": 2,
       "title_id": "SKM N3: SKM N3 Bab 1",
       "title_jp": "SKM N3 第1課",
       "theme": "SKM N3",
       "icon": "🏆",
-      "can_do_summary": "Memahami silabus SKM N3 Bab 1 secara komprehensif.",
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai SKM N3 Bab 1.",
       "grammar_ids": [
         "gn3-00001",
         "gn3-00002",
@@ -29,9 +29,9 @@ window.curriculumBook_shin_kanzen_master = {
       ],
       "vocab_ids": [
         "vg-n3-00003",
-        "Saya datang untuk mengantar paket.",
-        "Sebaiknya dilaporkan ke polisi.",
-        "vg-n3-00004"
+        "vg-n3-00004",
+        "vg-n3-00005",
+        "vg-n3-00007"
       ],
       "lessons": [
         {
@@ -40,7 +40,7 @@ window.curriculumBook_shin_kanzen_master = {
           "title_id": "SKM N3 Bab 1 (Eksplorasi Materi & Pola)",
           "title_jp": "SKM N3 第1課（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku Shin Kanzen Master (N3, N2, N1) pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa Shin Kanzen Master (N3, N2, N1) bab ini dalam konteks nyata.",
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai SKM N3 Bab 1.",
           "grammar_ids": [
             "gn3-00001",
             "gn3-00002",
@@ -48,14 +48,14 @@ window.curriculumBook_shin_kanzen_master = {
           ],
           "vocab_ids": [
             "vg-n3-00003",
-            "Saya datang untuk mengantar paket.",
-            "Sebaiknya dilaporkan ke polisi.",
-            "vg-n3-00004"
+            "vg-n3-00004",
+            "vg-n3-00005",
+            "vg-n3-00007"
           ],
           "pedagogical_framework": {
             "what": {
               "summary": "Silabus resmi Shin Kanzen Master (N3, N2, N1) bab 1.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai SKM N3 Bab 1.",
               "targetPatterns": [
                 "gn3-00001",
                 "gn3-00002",
@@ -63,14 +63,14 @@ window.curriculumBook_shin_kanzen_master = {
               ],
               "coreVocabSample": [
                 "vg-n3-00003",
-                "Saya datang untuk mengantar paket.",
-                "Sebaiknya dilaporkan ke polisi.",
-                "vg-n3-00004"
+                "vg-n3-00004",
+                "vg-n3-00005",
+                "vg-n3-00007"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku Shin Kanzen Master (N3, N2, N1). Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 1 Shin Kanzen Master (N3, N2, N1).",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai SKM N3 Bab 1.",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -111,23 +111,23 @@ window.curriculumBook_shin_kanzen_master = {
     {
       "unit_number": 2,
       "id": "unit-curriculum-book-shin-kanzen-master-02",
-      "level": "n2",
+      "level": "n3",
       "pt_stage": 3,
       "title_id": "SKM N3: SKM N3 Bab 2",
       "title_jp": "SKM N3 第2課",
       "theme": "SKM N3",
       "icon": "🏆",
-      "can_do_summary": "Memahami silabus SKM N3 Bab 2 secara komprehensif.",
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai SKM N3 Bab 2.",
       "grammar_ids": [
         "gn3-00004",
         "gn3-00005",
         "gn3-00006"
       ],
       "vocab_ids": [
-        "vg-n3-00018",
-        "Aku tidak mau menyerah pada impianku.",
-        "Meskipun gagal berkali-kali, dia tidak menyerah.",
-        "vg-n3-00019"
+        "vg-n3-00069",
+        "vg-n3-00070",
+        "vg-n3-00074",
+        "vg-n3-00076"
       ],
       "lessons": [
         {
@@ -136,37 +136,37 @@ window.curriculumBook_shin_kanzen_master = {
           "title_id": "SKM N3 Bab 2 (Eksplorasi Materi & Pola)",
           "title_jp": "SKM N3 第2課（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku Shin Kanzen Master (N3, N2, N1) pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa Shin Kanzen Master (N3, N2, N1) bab ini dalam konteks nyata.",
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai SKM N3 Bab 2.",
           "grammar_ids": [
             "gn3-00004",
             "gn3-00005",
             "gn3-00006"
           ],
           "vocab_ids": [
-            "vg-n3-00018",
-            "Aku tidak mau menyerah pada impianku.",
-            "Meskipun gagal berkali-kali, dia tidak menyerah.",
-            "vg-n3-00019"
+            "vg-n3-00069",
+            "vg-n3-00070",
+            "vg-n3-00074",
+            "vg-n3-00076"
           ],
           "pedagogical_framework": {
             "what": {
               "summary": "Silabus resmi Shin Kanzen Master (N3, N2, N1) bab 2.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai SKM N3 Bab 2.",
               "targetPatterns": [
                 "gn3-00004",
                 "gn3-00005",
                 "gn3-00006"
               ],
               "coreVocabSample": [
-                "vg-n3-00018",
-                "Aku tidak mau menyerah pada impianku.",
-                "Meskipun gagal berkali-kali, dia tidak menyerah.",
-                "vg-n3-00019"
+                "vg-n3-00069",
+                "vg-n3-00070",
+                "vg-n3-00074",
+                "vg-n3-00076"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku Shin Kanzen Master (N3, N2, N1). Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 2 Shin Kanzen Master (N3, N2, N1).",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai SKM N3 Bab 2.",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -207,23 +207,23 @@ window.curriculumBook_shin_kanzen_master = {
     {
       "unit_number": 3,
       "id": "unit-curriculum-book-shin-kanzen-master-03",
-      "level": "n2",
+      "level": "n3",
       "pt_stage": 4,
       "title_id": "SKM N3: SKM N3 Bab 3",
       "title_jp": "SKM N3 第3課",
       "theme": "SKM N3",
       "icon": "🏆",
-      "can_do_summary": "Memahami silabus SKM N3 Bab 3 secara komprehensif.",
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai SKM N3 Bab 3.",
       "grammar_ids": [
         "gn3-00007",
         "gn3-00008",
         "gn3-00009"
       ],
       "vocab_ids": [
-        "vg-n3-00056",
-        "Proyeknya berhasil.",
-        "Akan berusaha sampai berhasil.",
-        "vg-n3-00057"
+        "vg-n3-00104",
+        "vg-n3-00105",
+        "vg-n3-00106",
+        "vg-n3-00107"
       ],
       "lessons": [
         {
@@ -232,37 +232,37 @@ window.curriculumBook_shin_kanzen_master = {
           "title_id": "SKM N3 Bab 3 (Eksplorasi Materi & Pola)",
           "title_jp": "SKM N3 第3課（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku Shin Kanzen Master (N3, N2, N1) pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa Shin Kanzen Master (N3, N2, N1) bab ini dalam konteks nyata.",
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai SKM N3 Bab 3.",
           "grammar_ids": [
             "gn3-00007",
             "gn3-00008",
             "gn3-00009"
           ],
           "vocab_ids": [
-            "vg-n3-00056",
-            "Proyeknya berhasil.",
-            "Akan berusaha sampai berhasil.",
-            "vg-n3-00057"
+            "vg-n3-00104",
+            "vg-n3-00105",
+            "vg-n3-00106",
+            "vg-n3-00107"
           ],
           "pedagogical_framework": {
             "what": {
               "summary": "Silabus resmi Shin Kanzen Master (N3, N2, N1) bab 3.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai SKM N3 Bab 3.",
               "targetPatterns": [
                 "gn3-00007",
                 "gn3-00008",
                 "gn3-00009"
               ],
               "coreVocabSample": [
-                "vg-n3-00056",
-                "Proyeknya berhasil.",
-                "Akan berusaha sampai berhasil.",
-                "vg-n3-00057"
+                "vg-n3-00104",
+                "vg-n3-00105",
+                "vg-n3-00106",
+                "vg-n3-00107"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku Shin Kanzen Master (N3, N2, N1). Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 3 Shin Kanzen Master (N3, N2, N1).",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai SKM N3 Bab 3.",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -303,23 +303,23 @@ window.curriculumBook_shin_kanzen_master = {
     {
       "unit_number": 4,
       "id": "unit-curriculum-book-shin-kanzen-master-04",
-      "level": "n2",
+      "level": "n3",
       "pt_stage": 5,
       "title_id": "SKM N3: SKM N3 Bab 4",
       "title_jp": "SKM N3 第4課",
       "theme": "SKM N3",
       "icon": "🏆",
-      "can_do_summary": "Memahami silabus SKM N3 Bab 4 secara komprehensif.",
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai SKM N3 Bab 4.",
       "grammar_ids": [
         "gn3-00010",
         "gn3-00011",
         "gn3-00012"
       ],
       "vocab_ids": [
-        "vg-n3-00069",
-        "Hujan berlanjut selama tiga hari.",
-        "Jalan ini berlanjut sampai mana ya.",
-        "vg-n3-00070"
+        "vg-n3-00171",
+        "vg-n3-00173",
+        "vg-n3-00174",
+        "vg-n3-00175"
       ],
       "lessons": [
         {
@@ -328,37 +328,37 @@ window.curriculumBook_shin_kanzen_master = {
           "title_id": "SKM N3 Bab 4 (Eksplorasi Materi & Pola)",
           "title_jp": "SKM N3 第4課（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku Shin Kanzen Master (N3, N2, N1) pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa Shin Kanzen Master (N3, N2, N1) bab ini dalam konteks nyata.",
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai SKM N3 Bab 4.",
           "grammar_ids": [
             "gn3-00010",
             "gn3-00011",
             "gn3-00012"
           ],
           "vocab_ids": [
-            "vg-n3-00069",
-            "Hujan berlanjut selama tiga hari.",
-            "Jalan ini berlanjut sampai mana ya.",
-            "vg-n3-00070"
+            "vg-n3-00171",
+            "vg-n3-00173",
+            "vg-n3-00174",
+            "vg-n3-00175"
           ],
           "pedagogical_framework": {
             "what": {
               "summary": "Silabus resmi Shin Kanzen Master (N3, N2, N1) bab 4.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai SKM N3 Bab 4.",
               "targetPatterns": [
                 "gn3-00010",
                 "gn3-00011",
                 "gn3-00012"
               ],
               "coreVocabSample": [
-                "vg-n3-00069",
-                "Hujan berlanjut selama tiga hari.",
-                "Jalan ini berlanjut sampai mana ya.",
-                "vg-n3-00070"
+                "vg-n3-00171",
+                "vg-n3-00173",
+                "vg-n3-00174",
+                "vg-n3-00175"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku Shin Kanzen Master (N3, N2, N1). Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 4 Shin Kanzen Master (N3, N2, N1).",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai SKM N3 Bab 4.",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -399,23 +399,23 @@ window.curriculumBook_shin_kanzen_master = {
     {
       "unit_number": 5,
       "id": "unit-curriculum-book-shin-kanzen-master-05",
-      "level": "n2",
+      "level": "n3",
       "pt_stage": 6,
       "title_id": "SKM N3: SKM N3 Bab 5",
       "title_jp": "SKM N3 第5課",
       "theme": "SKM N3",
       "icon": "🏆",
-      "can_do_summary": "Memahami silabus SKM N3 Bab 5 secara komprehensif.",
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai SKM N3 Bab 5.",
       "grammar_ids": [
         "gn3-00013",
         "gn3-00014",
         "gn3-00015"
       ],
       "vocab_ids": [
-        "vg-n3-00084",
-        "Saya menyusun piring-piring di atas meja.",
-        "Tolong susun barang-barang dengan rapi di rak.",
-        "vg-n3-00085"
+        "vg-n3-00248",
+        "vg-n3-00249",
+        "vg-n3-00250",
+        "vg-n3-00252"
       ],
       "lessons": [
         {
@@ -424,37 +424,37 @@ window.curriculumBook_shin_kanzen_master = {
           "title_id": "SKM N3 Bab 5 (Eksplorasi Materi & Pola)",
           "title_jp": "SKM N3 第5課（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku Shin Kanzen Master (N3, N2, N1) pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa Shin Kanzen Master (N3, N2, N1) bab ini dalam konteks nyata.",
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai SKM N3 Bab 5.",
           "grammar_ids": [
             "gn3-00013",
             "gn3-00014",
             "gn3-00015"
           ],
           "vocab_ids": [
-            "vg-n3-00084",
-            "Saya menyusun piring-piring di atas meja.",
-            "Tolong susun barang-barang dengan rapi di rak.",
-            "vg-n3-00085"
+            "vg-n3-00248",
+            "vg-n3-00249",
+            "vg-n3-00250",
+            "vg-n3-00252"
           ],
           "pedagogical_framework": {
             "what": {
               "summary": "Silabus resmi Shin Kanzen Master (N3, N2, N1) bab 5.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai SKM N3 Bab 5.",
               "targetPatterns": [
                 "gn3-00013",
                 "gn3-00014",
                 "gn3-00015"
               ],
               "coreVocabSample": [
-                "vg-n3-00084",
-                "Saya menyusun piring-piring di atas meja.",
-                "Tolong susun barang-barang dengan rapi di rak.",
-                "vg-n3-00085"
+                "vg-n3-00248",
+                "vg-n3-00249",
+                "vg-n3-00250",
+                "vg-n3-00252"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku Shin Kanzen Master (N3, N2, N1). Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 5 Shin Kanzen Master (N3, N2, N1).",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai SKM N3 Bab 5.",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -495,23 +495,23 @@ window.curriculumBook_shin_kanzen_master = {
     {
       "unit_number": 6,
       "id": "unit-curriculum-book-shin-kanzen-master-06",
-      "level": "n2",
+      "level": "n3",
       "pt_stage": 1,
       "title_id": "SKM N3: SKM N3 Bab 6",
       "title_jp": "SKM N3 第6課",
       "theme": "SKM N3",
       "icon": "🏆",
-      "can_do_summary": "Memahami silabus SKM N3 Bab 6 secara komprehensif.",
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai SKM N3 Bab 6.",
       "grammar_ids": [
         "gn3-00016",
         "gn3-00017",
         "gn3-00018"
       ],
       "vocab_ids": [
-        "vg-n3-00094",
-        "Saya merapikan rambut sebelum keluar.",
-        "Sebelum lomba, saya mengatur napas dulu baru mulai berlari.",
-        "vg-n3-00095"
+        "vg-n3-00305",
+        "vg-n3-00306",
+        "vg-n3-00307",
+        "vg-n3-00308"
       ],
       "lessons": [
         {
@@ -520,37 +520,37 @@ window.curriculumBook_shin_kanzen_master = {
           "title_id": "SKM N3 Bab 6 (Eksplorasi Materi & Pola)",
           "title_jp": "SKM N3 第6課（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku Shin Kanzen Master (N3, N2, N1) pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa Shin Kanzen Master (N3, N2, N1) bab ini dalam konteks nyata.",
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai SKM N3 Bab 6.",
           "grammar_ids": [
             "gn3-00016",
             "gn3-00017",
             "gn3-00018"
           ],
           "vocab_ids": [
-            "vg-n3-00094",
-            "Saya merapikan rambut sebelum keluar.",
-            "Sebelum lomba, saya mengatur napas dulu baru mulai berlari.",
-            "vg-n3-00095"
+            "vg-n3-00305",
+            "vg-n3-00306",
+            "vg-n3-00307",
+            "vg-n3-00308"
           ],
           "pedagogical_framework": {
             "what": {
               "summary": "Silabus resmi Shin Kanzen Master (N3, N2, N1) bab 6.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai SKM N3 Bab 6.",
               "targetPatterns": [
                 "gn3-00016",
                 "gn3-00017",
                 "gn3-00018"
               ],
               "coreVocabSample": [
-                "vg-n3-00094",
-                "Saya merapikan rambut sebelum keluar.",
-                "Sebelum lomba, saya mengatur napas dulu baru mulai berlari.",
-                "vg-n3-00095"
+                "vg-n3-00305",
+                "vg-n3-00306",
+                "vg-n3-00307",
+                "vg-n3-00308"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku Shin Kanzen Master (N3, N2, N1). Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 6 Shin Kanzen Master (N3, N2, N1).",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai SKM N3 Bab 6.",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -591,23 +591,23 @@ window.curriculumBook_shin_kanzen_master = {
     {
       "unit_number": 7,
       "id": "unit-curriculum-book-shin-kanzen-master-07",
-      "level": "n2",
+      "level": "n3",
       "pt_stage": 2,
       "title_id": "SKM N3: SKM N3 Bab 7",
       "title_jp": "SKM N3 第7課",
       "theme": "SKM N3",
       "icon": "🏆",
-      "can_do_summary": "Memahami silabus SKM N3 Bab 7 secara komprehensif.",
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai SKM N3 Bab 7.",
       "grammar_ids": [
         "gn3-00019",
         "gn3-00020",
         "gn3-00021"
       ],
       "vocab_ids": [
-        "vg-n3-00104",
-        "Dia bersedih atas kematian temannya.",
-        "Saya bersedih mendengar berita itu.",
-        "vg-n3-00105"
+        "vg-n3-00337",
+        "vg-n3-00338",
+        "vg-n3-00339",
+        "vg-n3-00340"
       ],
       "lessons": [
         {
@@ -616,37 +616,37 @@ window.curriculumBook_shin_kanzen_master = {
           "title_id": "SKM N3 Bab 7 (Eksplorasi Materi & Pola)",
           "title_jp": "SKM N3 第7課（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku Shin Kanzen Master (N3, N2, N1) pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa Shin Kanzen Master (N3, N2, N1) bab ini dalam konteks nyata.",
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai SKM N3 Bab 7.",
           "grammar_ids": [
             "gn3-00019",
             "gn3-00020",
             "gn3-00021"
           ],
           "vocab_ids": [
-            "vg-n3-00104",
-            "Dia bersedih atas kematian temannya.",
-            "Saya bersedih mendengar berita itu.",
-            "vg-n3-00105"
+            "vg-n3-00337",
+            "vg-n3-00338",
+            "vg-n3-00339",
+            "vg-n3-00340"
           ],
           "pedagogical_framework": {
             "what": {
               "summary": "Silabus resmi Shin Kanzen Master (N3, N2, N1) bab 7.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai SKM N3 Bab 7.",
               "targetPatterns": [
                 "gn3-00019",
                 "gn3-00020",
                 "gn3-00021"
               ],
               "coreVocabSample": [
-                "vg-n3-00104",
-                "Dia bersedih atas kematian temannya.",
-                "Saya bersedih mendengar berita itu.",
-                "vg-n3-00105"
+                "vg-n3-00337",
+                "vg-n3-00338",
+                "vg-n3-00339",
+                "vg-n3-00340"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku Shin Kanzen Master (N3, N2, N1). Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 7 Shin Kanzen Master (N3, N2, N1).",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai SKM N3 Bab 7.",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -687,23 +687,23 @@ window.curriculumBook_shin_kanzen_master = {
     {
       "unit_number": 8,
       "id": "unit-curriculum-book-shin-kanzen-master-08",
-      "level": "n2",
+      "level": "n3",
       "pt_stage": 3,
       "title_id": "SKM N3: SKM N3 Bab 8",
       "title_jp": "SKM N3 第8課",
       "theme": "SKM N3",
       "icon": "🏆",
-      "can_do_summary": "Memahami silabus SKM N3 Bab 8 secara komprehensif.",
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai SKM N3 Bab 8.",
       "grammar_ids": [
         "gn3-00022",
         "gn3-00023",
         "gn3-00024"
       ],
       "vocab_ids": [
-        "vg-n3-00128",
-        "Persiapan ujian dilakukan sungguh-sungguh.",
-        "Sudah siap berangkat?",
-        "vg-n3-00129"
+        "vg-n3-00431",
+        "vg-n3-00432",
+        "vg-n3-00433",
+        "vg-n3-00434"
       ],
       "lessons": [
         {
@@ -712,37 +712,37 @@ window.curriculumBook_shin_kanzen_master = {
           "title_id": "SKM N3 Bab 8 (Eksplorasi Materi & Pola)",
           "title_jp": "SKM N3 第8課（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku Shin Kanzen Master (N3, N2, N1) pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa Shin Kanzen Master (N3, N2, N1) bab ini dalam konteks nyata.",
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai SKM N3 Bab 8.",
           "grammar_ids": [
             "gn3-00022",
             "gn3-00023",
             "gn3-00024"
           ],
           "vocab_ids": [
-            "vg-n3-00128",
-            "Persiapan ujian dilakukan sungguh-sungguh.",
-            "Sudah siap berangkat?",
-            "vg-n3-00129"
+            "vg-n3-00431",
+            "vg-n3-00432",
+            "vg-n3-00433",
+            "vg-n3-00434"
           ],
           "pedagogical_framework": {
             "what": {
               "summary": "Silabus resmi Shin Kanzen Master (N3, N2, N1) bab 8.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai SKM N3 Bab 8.",
               "targetPatterns": [
                 "gn3-00022",
                 "gn3-00023",
                 "gn3-00024"
               ],
               "coreVocabSample": [
-                "vg-n3-00128",
-                "Persiapan ujian dilakukan sungguh-sungguh.",
-                "Sudah siap berangkat?",
-                "vg-n3-00129"
+                "vg-n3-00431",
+                "vg-n3-00432",
+                "vg-n3-00433",
+                "vg-n3-00434"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku Shin Kanzen Master (N3, N2, N1). Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 8 Shin Kanzen Master (N3, N2, N1).",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai SKM N3 Bab 8.",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -783,21 +783,21 @@ window.curriculumBook_shin_kanzen_master = {
     {
       "unit_number": 9,
       "id": "unit-curriculum-book-shin-kanzen-master-09",
-      "level": "n2",
+      "level": "n3",
       "pt_stage": 4,
       "title_id": "SKM N3: SKM N3 Bab 9",
       "title_jp": "SKM N3 第9課",
       "theme": "SKM N3",
       "icon": "🏆",
-      "can_do_summary": "Memahami silabus SKM N3 Bab 9 secara komprehensif.",
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai SKM N3 Bab 9.",
       "grammar_ids": [
         "gn3-00025"
       ],
       "vocab_ids": [
-        "vg-n3-00159",
-        "Hujan berlanjut selama satu minggu.",
-        "Rapat berlanjut lebih dari 3 jam.",
-        "Sampai mana ya jalan ini berlanjut."
+        "vg-n3-00513",
+        "vg-n3-00514",
+        "vg-n3-00518",
+        "vg-n3-00526"
       ],
       "lessons": [
         {
@@ -806,33 +806,33 @@ window.curriculumBook_shin_kanzen_master = {
           "title_id": "SKM N3 Bab 9 (Eksplorasi Materi & Pola)",
           "title_jp": "SKM N3 第9課（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku Shin Kanzen Master (N3, N2, N1) pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa Shin Kanzen Master (N3, N2, N1) bab ini dalam konteks nyata.",
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai SKM N3 Bab 9.",
           "grammar_ids": [
             "gn3-00025"
           ],
           "vocab_ids": [
-            "vg-n3-00159",
-            "Hujan berlanjut selama satu minggu.",
-            "Rapat berlanjut lebih dari 3 jam.",
-            "Sampai mana ya jalan ini berlanjut."
+            "vg-n3-00513",
+            "vg-n3-00514",
+            "vg-n3-00518",
+            "vg-n3-00526"
           ],
           "pedagogical_framework": {
             "what": {
               "summary": "Silabus resmi Shin Kanzen Master (N3, N2, N1) bab 9.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai SKM N3 Bab 9.",
               "targetPatterns": [
                 "gn3-00025"
               ],
               "coreVocabSample": [
-                "vg-n3-00159",
-                "Hujan berlanjut selama satu minggu.",
-                "Rapat berlanjut lebih dari 3 jam.",
-                "Sampai mana ya jalan ini berlanjut."
+                "vg-n3-00513",
+                "vg-n3-00514",
+                "vg-n3-00518",
+                "vg-n3-00526"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku Shin Kanzen Master (N3, N2, N1). Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 9 Shin Kanzen Master (N3, N2, N1).",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai SKM N3 Bab 9.",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -873,19 +873,23 @@ window.curriculumBook_shin_kanzen_master = {
     {
       "unit_number": 10,
       "id": "unit-curriculum-book-shin-kanzen-master-10",
-      "level": "n2",
+      "level": "n3",
       "pt_stage": 5,
       "title_id": "SKM N3: SKM N3 Bab 10",
       "title_jp": "SKM N3 第10課",
       "theme": "SKM N3",
       "icon": "🏆",
-      "can_do_summary": "Memahami silabus SKM N3 Bab 10 secara komprehensif.",
-      "grammar_ids": [],
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai SKM N3 Bab 10.",
+      "grammar_ids": [
+        "gn3-00001",
+        "gn3-00002",
+        "gn3-00003"
+      ],
       "vocab_ids": [
-        "Aku menundukkan kepala untuk meminta maaf.",
-        "Tolong turunkan volume TV-nya.",
-        "vg-n3-00167",
-        "Bunga sakura mekar (terbuka)."
+        "vg-n3-00553",
+        "vg-n3-00554",
+        "vg-n3-00555",
+        "vg-n3-00573"
       ],
       "lessons": [
         {
@@ -894,29 +898,37 @@ window.curriculumBook_shin_kanzen_master = {
           "title_id": "SKM N3 Bab 10 (Eksplorasi Materi & Pola)",
           "title_jp": "SKM N3 第10課（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku Shin Kanzen Master (N3, N2, N1) pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa Shin Kanzen Master (N3, N2, N1) bab ini dalam konteks nyata.",
-          "grammar_ids": [],
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai SKM N3 Bab 10.",
+          "grammar_ids": [
+            "gn3-00001",
+            "gn3-00002",
+            "gn3-00003"
+          ],
           "vocab_ids": [
-            "Aku menundukkan kepala untuk meminta maaf.",
-            "Tolong turunkan volume TV-nya.",
-            "vg-n3-00167",
-            "Bunga sakura mekar (terbuka)."
+            "vg-n3-00553",
+            "vg-n3-00554",
+            "vg-n3-00555",
+            "vg-n3-00573"
           ],
           "pedagogical_framework": {
             "what": {
               "summary": "Silabus resmi Shin Kanzen Master (N3, N2, N1) bab 10.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
-              "targetPatterns": [],
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai SKM N3 Bab 10.",
+              "targetPatterns": [
+                "gn3-00001",
+                "gn3-00002",
+                "gn3-00003"
+              ],
               "coreVocabSample": [
-                "Aku menundukkan kepala untuk meminta maaf.",
-                "Tolong turunkan volume TV-nya.",
-                "vg-n3-00167",
-                "Bunga sakura mekar (terbuka)."
+                "vg-n3-00553",
+                "vg-n3-00554",
+                "vg-n3-00555",
+                "vg-n3-00573"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku Shin Kanzen Master (N3, N2, N1). Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 10 Shin Kanzen Master (N3, N2, N1).",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai SKM N3 Bab 10.",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -963,7 +975,7 @@ window.curriculumBook_shin_kanzen_master = {
       "title_jp": "SKM N2 第1課",
       "theme": "SKM N2",
       "icon": "🏆",
-      "can_do_summary": "Memahami silabus SKM N2 Bab 1 secara komprehensif.",
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai SKM N2 Bab 1.",
       "grammar_ids": [
         "gn2-00001",
         "gn2-00002",
@@ -971,9 +983,9 @@ window.curriculumBook_shin_kanzen_master = {
       ],
       "vocab_ids": [
         "vg-n2-00051",
-        "Mari kita susun strategi setelah benar-benar memahami situasi saat ini.",
-        "Kepala departemen selalu menguasai tren pasar.",
-        "Penting untuk memahami alur keseluruhan."
+        "vg-n2-00052",
+        "vg-n2-00053",
+        "vg-n2-00054"
       ],
       "lessons": [
         {
@@ -982,7 +994,7 @@ window.curriculumBook_shin_kanzen_master = {
           "title_id": "SKM N2 Bab 1 (Eksplorasi Materi & Pola)",
           "title_jp": "SKM N2 第1課（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku Shin Kanzen Master (N3, N2, N1) pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa Shin Kanzen Master (N3, N2, N1) bab ini dalam konteks nyata.",
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai SKM N2 Bab 1.",
           "grammar_ids": [
             "gn2-00001",
             "gn2-00002",
@@ -990,14 +1002,14 @@ window.curriculumBook_shin_kanzen_master = {
           ],
           "vocab_ids": [
             "vg-n2-00051",
-            "Mari kita susun strategi setelah benar-benar memahami situasi saat ini.",
-            "Kepala departemen selalu menguasai tren pasar.",
-            "Penting untuk memahami alur keseluruhan."
+            "vg-n2-00052",
+            "vg-n2-00053",
+            "vg-n2-00054"
           ],
           "pedagogical_framework": {
             "what": {
               "summary": "Silabus resmi Shin Kanzen Master (N3, N2, N1) bab 1.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai SKM N2 Bab 1.",
               "targetPatterns": [
                 "gn2-00001",
                 "gn2-00002",
@@ -1005,14 +1017,14 @@ window.curriculumBook_shin_kanzen_master = {
               ],
               "coreVocabSample": [
                 "vg-n2-00051",
-                "Mari kita susun strategi setelah benar-benar memahami situasi saat ini.",
-                "Kepala departemen selalu menguasai tren pasar.",
-                "Penting untuk memahami alur keseluruhan."
+                "vg-n2-00052",
+                "vg-n2-00053",
+                "vg-n2-00054"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku Shin Kanzen Master (N3, N2, N1). Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 1 Shin Kanzen Master (N3, N2, N1).",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai SKM N2 Bab 1.",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -1059,17 +1071,17 @@ window.curriculumBook_shin_kanzen_master = {
       "title_jp": "SKM N2 第2課",
       "theme": "SKM N2",
       "icon": "🏆",
-      "can_do_summary": "Memahami silabus SKM N2 Bab 2 secara komprehensif.",
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai SKM N2 Bab 2.",
       "grammar_ids": [
         "gn2-00004",
         "gn2-00005",
         "gn2-00006"
       ],
       "vocab_ids": [
-        "Perawatan rutin diperlukan untuk mempertahankan stabilitas sistem.",
-        "vg-n2-00060",
-        "Masalah ini harus diselesaikan sesegera mungkin.",
-        "Konflik diselesaikan melalui perundingan."
+        "vg-n2-00086",
+        "vg-n2-00087",
+        "vg-n2-00088",
+        "vg-n2-00089"
       ],
       "lessons": [
         {
@@ -1078,37 +1090,37 @@ window.curriculumBook_shin_kanzen_master = {
           "title_id": "SKM N2 Bab 2 (Eksplorasi Materi & Pola)",
           "title_jp": "SKM N2 第2課（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku Shin Kanzen Master (N3, N2, N1) pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa Shin Kanzen Master (N3, N2, N1) bab ini dalam konteks nyata.",
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai SKM N2 Bab 2.",
           "grammar_ids": [
             "gn2-00004",
             "gn2-00005",
             "gn2-00006"
           ],
           "vocab_ids": [
-            "Perawatan rutin diperlukan untuk mempertahankan stabilitas sistem.",
-            "vg-n2-00060",
-            "Masalah ini harus diselesaikan sesegera mungkin.",
-            "Konflik diselesaikan melalui perundingan."
+            "vg-n2-00086",
+            "vg-n2-00087",
+            "vg-n2-00088",
+            "vg-n2-00089"
           ],
           "pedagogical_framework": {
             "what": {
               "summary": "Silabus resmi Shin Kanzen Master (N3, N2, N1) bab 2.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai SKM N2 Bab 2.",
               "targetPatterns": [
                 "gn2-00004",
                 "gn2-00005",
                 "gn2-00006"
               ],
               "coreVocabSample": [
-                "Perawatan rutin diperlukan untuk mempertahankan stabilitas sistem.",
-                "vg-n2-00060",
-                "Masalah ini harus diselesaikan sesegera mungkin.",
-                "Konflik diselesaikan melalui perundingan."
+                "vg-n2-00086",
+                "vg-n2-00087",
+                "vg-n2-00088",
+                "vg-n2-00089"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku Shin Kanzen Master (N3, N2, N1). Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 2 Shin Kanzen Master (N3, N2, N1).",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai SKM N2 Bab 2.",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -1155,17 +1167,17 @@ window.curriculumBook_shin_kanzen_master = {
       "title_jp": "SKM N2 第3課",
       "theme": "SKM N2",
       "icon": "🏆",
-      "can_do_summary": "Memahami silabus SKM N2 Bab 3 secara komprehensif.",
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai SKM N2 Bab 3.",
       "grammar_ids": [
         "gn2-00007",
         "gn2-00008",
         "gn2-00009"
       ],
       "vocab_ids": [
-        "Menafikan masa lalumu sendiri tidak akan menyelesaikan apa pun.",
-        "Merespons pertanyaan wartawan, penanggung jawab menyangkal keterlibatannya.",
-        "vg-n2-00069",
-        "Dia belajar untuk menerima dan membenarkan perasaannya sendiri."
+        "vg-n2-00196",
+        "vg-n2-00197",
+        "vg-n2-00198",
+        "vg-n2-00199"
       ],
       "lessons": [
         {
@@ -1174,37 +1186,37 @@ window.curriculumBook_shin_kanzen_master = {
           "title_id": "SKM N2 Bab 3 (Eksplorasi Materi & Pola)",
           "title_jp": "SKM N2 第3課（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku Shin Kanzen Master (N3, N2, N1) pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa Shin Kanzen Master (N3, N2, N1) bab ini dalam konteks nyata.",
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai SKM N2 Bab 3.",
           "grammar_ids": [
             "gn2-00007",
             "gn2-00008",
             "gn2-00009"
           ],
           "vocab_ids": [
-            "Menafikan masa lalumu sendiri tidak akan menyelesaikan apa pun.",
-            "Merespons pertanyaan wartawan, penanggung jawab menyangkal keterlibatannya.",
-            "vg-n2-00069",
-            "Dia belajar untuk menerima dan membenarkan perasaannya sendiri."
+            "vg-n2-00196",
+            "vg-n2-00197",
+            "vg-n2-00198",
+            "vg-n2-00199"
           ],
           "pedagogical_framework": {
             "what": {
               "summary": "Silabus resmi Shin Kanzen Master (N3, N2, N1) bab 3.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai SKM N2 Bab 3.",
               "targetPatterns": [
                 "gn2-00007",
                 "gn2-00008",
                 "gn2-00009"
               ],
               "coreVocabSample": [
-                "Menafikan masa lalumu sendiri tidak akan menyelesaikan apa pun.",
-                "Merespons pertanyaan wartawan, penanggung jawab menyangkal keterlibatannya.",
-                "vg-n2-00069",
-                "Dia belajar untuk menerima dan membenarkan perasaannya sendiri."
+                "vg-n2-00196",
+                "vg-n2-00197",
+                "vg-n2-00198",
+                "vg-n2-00199"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku Shin Kanzen Master (N3, N2, N1). Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 3 Shin Kanzen Master (N3, N2, N1).",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai SKM N2 Bab 3.",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -1251,17 +1263,17 @@ window.curriculumBook_shin_kanzen_master = {
       "title_jp": "SKM N2 第4課",
       "theme": "SKM N2",
       "icon": "🏆",
-      "can_do_summary": "Memahami silabus SKM N2 Bab 4 secara komprehensif.",
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai SKM N2 Bab 4.",
       "grammar_ids": [
         "gn2-00010",
         "gn2-00011",
         "gn2-00012"
       ],
       "vocab_ids": [
-        "Karena kinerja yang buruk, diputuskan untuk mengecilkan skala bisnis.",
-        "Tolong perkecil gambar ini lalu cetak.",
-        "Pemerintah meluncurkan kebijakan untuk memperkecil kesenjangan.",
-        "vg-n2-00078"
+        "vg-n2-00282",
+        "vg-n2-00283",
+        "vg-n2-00284",
+        "vg-n2-00285"
       ],
       "lessons": [
         {
@@ -1270,37 +1282,37 @@ window.curriculumBook_shin_kanzen_master = {
           "title_id": "SKM N2 Bab 4 (Eksplorasi Materi & Pola)",
           "title_jp": "SKM N2 第4課（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku Shin Kanzen Master (N3, N2, N1) pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa Shin Kanzen Master (N3, N2, N1) bab ini dalam konteks nyata.",
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai SKM N2 Bab 4.",
           "grammar_ids": [
             "gn2-00010",
             "gn2-00011",
             "gn2-00012"
           ],
           "vocab_ids": [
-            "Karena kinerja yang buruk, diputuskan untuk mengecilkan skala bisnis.",
-            "Tolong perkecil gambar ini lalu cetak.",
-            "Pemerintah meluncurkan kebijakan untuk memperkecil kesenjangan.",
-            "vg-n2-00078"
+            "vg-n2-00282",
+            "vg-n2-00283",
+            "vg-n2-00284",
+            "vg-n2-00285"
           ],
           "pedagogical_framework": {
             "what": {
               "summary": "Silabus resmi Shin Kanzen Master (N3, N2, N1) bab 4.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai SKM N2 Bab 4.",
               "targetPatterns": [
                 "gn2-00010",
                 "gn2-00011",
                 "gn2-00012"
               ],
               "coreVocabSample": [
-                "Karena kinerja yang buruk, diputuskan untuk mengecilkan skala bisnis.",
-                "Tolong perkecil gambar ini lalu cetak.",
-                "Pemerintah meluncurkan kebijakan untuk memperkecil kesenjangan.",
-                "vg-n2-00078"
+                "vg-n2-00282",
+                "vg-n2-00283",
+                "vg-n2-00284",
+                "vg-n2-00285"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku Shin Kanzen Master (N3, N2, N1). Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 4 Shin Kanzen Master (N3, N2, N1).",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai SKM N2 Bab 4.",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -1347,17 +1359,17 @@ window.curriculumBook_shin_kanzen_master = {
       "title_jp": "SKM N2 第5課",
       "theme": "SKM N2",
       "icon": "🏆",
-      "can_do_summary": "Memahami silabus SKM N2 Bab 5 secara komprehensif.",
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai SKM N2 Bab 5.",
       "grammar_ids": [
         "gn2-00013",
         "gn2-00014",
         "gn2-00015"
       ],
       "vocab_ids": [
-        "vg-n2-00086",
-        "Dengan susah payah, berhasil terhindar dari bencana besar.",
-        "Tidak bisa lolos dari tanggung jawab.",
-        "Dengan mengambil langkah yang tepat, situasi terburuk berhasil dihindari."
+        "vg-n2-00349",
+        "vg-n2-00350",
+        "vg-n2-00356",
+        "vg-n2-00359"
       ],
       "lessons": [
         {
@@ -1366,37 +1378,37 @@ window.curriculumBook_shin_kanzen_master = {
           "title_id": "SKM N2 Bab 5 (Eksplorasi Materi & Pola)",
           "title_jp": "SKM N2 第5課（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku Shin Kanzen Master (N3, N2, N1) pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa Shin Kanzen Master (N3, N2, N1) bab ini dalam konteks nyata.",
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai SKM N2 Bab 5.",
           "grammar_ids": [
             "gn2-00013",
             "gn2-00014",
             "gn2-00015"
           ],
           "vocab_ids": [
-            "vg-n2-00086",
-            "Dengan susah payah, berhasil terhindar dari bencana besar.",
-            "Tidak bisa lolos dari tanggung jawab.",
-            "Dengan mengambil langkah yang tepat, situasi terburuk berhasil dihindari."
+            "vg-n2-00349",
+            "vg-n2-00350",
+            "vg-n2-00356",
+            "vg-n2-00359"
           ],
           "pedagogical_framework": {
             "what": {
               "summary": "Silabus resmi Shin Kanzen Master (N3, N2, N1) bab 5.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai SKM N2 Bab 5.",
               "targetPatterns": [
                 "gn2-00013",
                 "gn2-00014",
                 "gn2-00015"
               ],
               "coreVocabSample": [
-                "vg-n2-00086",
-                "Dengan susah payah, berhasil terhindar dari bencana besar.",
-                "Tidak bisa lolos dari tanggung jawab.",
-                "Dengan mengambil langkah yang tepat, situasi terburuk berhasil dihindari."
+                "vg-n2-00349",
+                "vg-n2-00350",
+                "vg-n2-00356",
+                "vg-n2-00359"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku Shin Kanzen Master (N3, N2, N1). Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 5 Shin Kanzen Master (N3, N2, N1).",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai SKM N2 Bab 5.",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -1443,17 +1455,17 @@ window.curriculumBook_shin_kanzen_master = {
       "title_jp": "SKM N2 第6課",
       "theme": "SKM N2",
       "icon": "🏆",
-      "can_do_summary": "Memahami silabus SKM N2 Bab 6 secara komprehensif.",
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai SKM N2 Bab 6.",
       "grammar_ids": [
         "gn2-00016",
         "gn2-00017",
         "gn2-00018"
       ],
       "vocab_ids": [
-        "Ketika konsentrasi tidak bisa bertahan, istirahat diperlukan.",
-        "vg-n2-00121",
-        "Tolong utamakan keselamatan di atas segalanya.",
-        "Tugas dikerjakan dengan mengurutkan prioritas."
+        "vg-n2-00484",
+        "vg-n2-00485",
+        "vg-n2-00487",
+        "vg-n2-00488"
       ],
       "lessons": [
         {
@@ -1462,37 +1474,37 @@ window.curriculumBook_shin_kanzen_master = {
           "title_id": "SKM N2 Bab 6 (Eksplorasi Materi & Pola)",
           "title_jp": "SKM N2 第6課（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku Shin Kanzen Master (N3, N2, N1) pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa Shin Kanzen Master (N3, N2, N1) bab ini dalam konteks nyata.",
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai SKM N2 Bab 6.",
           "grammar_ids": [
             "gn2-00016",
             "gn2-00017",
             "gn2-00018"
           ],
           "vocab_ids": [
-            "Ketika konsentrasi tidak bisa bertahan, istirahat diperlukan.",
-            "vg-n2-00121",
-            "Tolong utamakan keselamatan di atas segalanya.",
-            "Tugas dikerjakan dengan mengurutkan prioritas."
+            "vg-n2-00484",
+            "vg-n2-00485",
+            "vg-n2-00487",
+            "vg-n2-00488"
           ],
           "pedagogical_framework": {
             "what": {
               "summary": "Silabus resmi Shin Kanzen Master (N3, N2, N1) bab 6.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai SKM N2 Bab 6.",
               "targetPatterns": [
                 "gn2-00016",
                 "gn2-00017",
                 "gn2-00018"
               ],
               "coreVocabSample": [
-                "Ketika konsentrasi tidak bisa bertahan, istirahat diperlukan.",
-                "vg-n2-00121",
-                "Tolong utamakan keselamatan di atas segalanya.",
-                "Tugas dikerjakan dengan mengurutkan prioritas."
+                "vg-n2-00484",
+                "vg-n2-00485",
+                "vg-n2-00487",
+                "vg-n2-00488"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku Shin Kanzen Master (N3, N2, N1). Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 6 Shin Kanzen Master (N3, N2, N1).",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai SKM N2 Bab 6.",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -1539,17 +1551,17 @@ window.curriculumBook_shin_kanzen_master = {
       "title_jp": "SKM N2 第7課",
       "theme": "SKM N2",
       "icon": "🏆",
-      "can_do_summary": "Memahami silabus SKM N2 Bab 7 secara komprehensif.",
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai SKM N2 Bab 7.",
       "grammar_ids": [
         "gn2-00019",
         "gn2-00020",
         "gn2-00021"
       ],
       "vocab_ids": [
-        "Negosiasi menemui hambatan karena pertentangan kepentingan.",
-        "Upaya diplomatik terus dilakukan untuk menyelesaikan konflik dua negara.",
-        "vg-n2-00177",
-        "Kerja sama internasional sangat penting."
+        "vg-n2-00554",
+        "vg-n2-00555",
+        "vg-n2-00556",
+        "vg-n2-00557"
       ],
       "lessons": [
         {
@@ -1558,37 +1570,37 @@ window.curriculumBook_shin_kanzen_master = {
           "title_id": "SKM N2 Bab 7 (Eksplorasi Materi & Pola)",
           "title_jp": "SKM N2 第7課（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku Shin Kanzen Master (N3, N2, N1) pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa Shin Kanzen Master (N3, N2, N1) bab ini dalam konteks nyata.",
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai SKM N2 Bab 7.",
           "grammar_ids": [
             "gn2-00019",
             "gn2-00020",
             "gn2-00021"
           ],
           "vocab_ids": [
-            "Negosiasi menemui hambatan karena pertentangan kepentingan.",
-            "Upaya diplomatik terus dilakukan untuk menyelesaikan konflik dua negara.",
-            "vg-n2-00177",
-            "Kerja sama internasional sangat penting."
+            "vg-n2-00554",
+            "vg-n2-00555",
+            "vg-n2-00556",
+            "vg-n2-00557"
           ],
           "pedagogical_framework": {
             "what": {
               "summary": "Silabus resmi Shin Kanzen Master (N3, N2, N1) bab 7.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai SKM N2 Bab 7.",
               "targetPatterns": [
                 "gn2-00019",
                 "gn2-00020",
                 "gn2-00021"
               ],
               "coreVocabSample": [
-                "Negosiasi menemui hambatan karena pertentangan kepentingan.",
-                "Upaya diplomatik terus dilakukan untuk menyelesaikan konflik dua negara.",
-                "vg-n2-00177",
-                "Kerja sama internasional sangat penting."
+                "vg-n2-00554",
+                "vg-n2-00555",
+                "vg-n2-00556",
+                "vg-n2-00557"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku Shin Kanzen Master (N3, N2, N1). Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 7 Shin Kanzen Master (N3, N2, N1).",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai SKM N2 Bab 7.",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -1635,15 +1647,15 @@ window.curriculumBook_shin_kanzen_master = {
       "title_jp": "SKM N2 第8課",
       "theme": "SKM N2",
       "icon": "🏆",
-      "can_do_summary": "Memahami silabus SKM N2 Bab 8 secara komprehensif.",
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai SKM N2 Bab 8.",
       "grammar_ids": [
         "gn2-00022"
       ],
       "vocab_ids": [
-        "Kedua negara mencapai kesepakatan mengenai perjanjian perdagangan.",
-        "Setelah negosiasi panjang, akhirnya kesepakatan tercapai.",
-        "Diperlukan persetujuan dari semua pihak yang terlibat.",
-        "vg-n2-00187"
+        "vg-n2-00630",
+        "vg-n2-00631",
+        "vg-n2-00632",
+        "vg-n2-00633"
       ],
       "lessons": [
         {
@@ -1652,33 +1664,33 @@ window.curriculumBook_shin_kanzen_master = {
           "title_id": "SKM N2 Bab 8 (Eksplorasi Materi & Pola)",
           "title_jp": "SKM N2 第8課（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku Shin Kanzen Master (N3, N2, N1) pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa Shin Kanzen Master (N3, N2, N1) bab ini dalam konteks nyata.",
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai SKM N2 Bab 8.",
           "grammar_ids": [
             "gn2-00022"
           ],
           "vocab_ids": [
-            "Kedua negara mencapai kesepakatan mengenai perjanjian perdagangan.",
-            "Setelah negosiasi panjang, akhirnya kesepakatan tercapai.",
-            "Diperlukan persetujuan dari semua pihak yang terlibat.",
-            "vg-n2-00187"
+            "vg-n2-00630",
+            "vg-n2-00631",
+            "vg-n2-00632",
+            "vg-n2-00633"
           ],
           "pedagogical_framework": {
             "what": {
               "summary": "Silabus resmi Shin Kanzen Master (N3, N2, N1) bab 8.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai SKM N2 Bab 8.",
               "targetPatterns": [
                 "gn2-00022"
               ],
               "coreVocabSample": [
-                "Kedua negara mencapai kesepakatan mengenai perjanjian perdagangan.",
-                "Setelah negosiasi panjang, akhirnya kesepakatan tercapai.",
-                "Diperlukan persetujuan dari semua pihak yang terlibat.",
-                "vg-n2-00187"
+                "vg-n2-00630",
+                "vg-n2-00631",
+                "vg-n2-00632",
+                "vg-n2-00633"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku Shin Kanzen Master (N3, N2, N1). Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 8 Shin Kanzen Master (N3, N2, N1).",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai SKM N2 Bab 8.",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -1725,13 +1737,17 @@ window.curriculumBook_shin_kanzen_master = {
       "title_jp": "SKM N2 第9課",
       "theme": "SKM N2",
       "icon": "🏆",
-      "can_do_summary": "Memahami silabus SKM N2 Bab 9 secara komprehensif.",
-      "grammar_ids": [],
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai SKM N2 Bab 9.",
+      "grammar_ids": [
+        "gn2-00001",
+        "gn2-00002",
+        "gn2-00003"
+      ],
       "vocab_ids": [
-        "vg-n2-00197",
-        "Keamanan bandara perlu diperketat lebih lanjut.",
-        "Pemusatan latihan diadakan untuk memperkuat kerja tim.",
-        "vg-n2-00198"
+        "vg-n2-00707",
+        "vg-n2-00708",
+        "vg-n2-00711",
+        "vg-n2-00719"
       ],
       "lessons": [
         {
@@ -1740,29 +1756,37 @@ window.curriculumBook_shin_kanzen_master = {
           "title_id": "SKM N2 Bab 9 (Eksplorasi Materi & Pola)",
           "title_jp": "SKM N2 第9課（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku Shin Kanzen Master (N3, N2, N1) pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa Shin Kanzen Master (N3, N2, N1) bab ini dalam konteks nyata.",
-          "grammar_ids": [],
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai SKM N2 Bab 9.",
+          "grammar_ids": [
+            "gn2-00001",
+            "gn2-00002",
+            "gn2-00003"
+          ],
           "vocab_ids": [
-            "vg-n2-00197",
-            "Keamanan bandara perlu diperketat lebih lanjut.",
-            "Pemusatan latihan diadakan untuk memperkuat kerja tim.",
-            "vg-n2-00198"
+            "vg-n2-00707",
+            "vg-n2-00708",
+            "vg-n2-00711",
+            "vg-n2-00719"
           ],
           "pedagogical_framework": {
             "what": {
               "summary": "Silabus resmi Shin Kanzen Master (N3, N2, N1) bab 9.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
-              "targetPatterns": [],
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai SKM N2 Bab 9.",
+              "targetPatterns": [
+                "gn2-00001",
+                "gn2-00002",
+                "gn2-00003"
+              ],
               "coreVocabSample": [
-                "vg-n2-00197",
-                "Keamanan bandara perlu diperketat lebih lanjut.",
-                "Pemusatan latihan diadakan untuk memperkuat kerja tim.",
-                "vg-n2-00198"
+                "vg-n2-00707",
+                "vg-n2-00708",
+                "vg-n2-00711",
+                "vg-n2-00719"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku Shin Kanzen Master (N3, N2, N1). Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 9 Shin Kanzen Master (N3, N2, N1).",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai SKM N2 Bab 9.",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -1809,13 +1833,17 @@ window.curriculumBook_shin_kanzen_master = {
       "title_jp": "SKM N2 第10課",
       "theme": "SKM N2",
       "icon": "🏆",
-      "can_do_summary": "Memahami silabus SKM N2 Bab 10 secara komprehensif.",
-      "grammar_ids": [],
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai SKM N2 Bab 10.",
+      "grammar_ids": [
+        "gn2-00001",
+        "gn2-00002",
+        "gn2-00003"
+      ],
       "vocab_ids": [
-        "Kata-kata atasan mendorong pertumbuhan saya.",
-        "vg-n2-00209",
-        "Prosedur birokrasi menghambat inovasi.",
-        "Hujan mengganggu jalannya pertandingan."
+        "vg-n2-00807",
+        "vg-n2-00812",
+        "vg-n2-00818",
+        "vg-n2-00820"
       ],
       "lessons": [
         {
@@ -1824,29 +1852,37 @@ window.curriculumBook_shin_kanzen_master = {
           "title_id": "SKM N2 Bab 10 (Eksplorasi Materi & Pola)",
           "title_jp": "SKM N2 第10課（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku Shin Kanzen Master (N3, N2, N1) pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa Shin Kanzen Master (N3, N2, N1) bab ini dalam konteks nyata.",
-          "grammar_ids": [],
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai SKM N2 Bab 10.",
+          "grammar_ids": [
+            "gn2-00001",
+            "gn2-00002",
+            "gn2-00003"
+          ],
           "vocab_ids": [
-            "Kata-kata atasan mendorong pertumbuhan saya.",
-            "vg-n2-00209",
-            "Prosedur birokrasi menghambat inovasi.",
-            "Hujan mengganggu jalannya pertandingan."
+            "vg-n2-00807",
+            "vg-n2-00812",
+            "vg-n2-00818",
+            "vg-n2-00820"
           ],
           "pedagogical_framework": {
             "what": {
               "summary": "Silabus resmi Shin Kanzen Master (N3, N2, N1) bab 10.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
-              "targetPatterns": [],
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai SKM N2 Bab 10.",
+              "targetPatterns": [
+                "gn2-00001",
+                "gn2-00002",
+                "gn2-00003"
+              ],
               "coreVocabSample": [
-                "Kata-kata atasan mendorong pertumbuhan saya.",
-                "vg-n2-00209",
-                "Prosedur birokrasi menghambat inovasi.",
-                "Hujan mengganggu jalannya pertandingan."
+                "vg-n2-00807",
+                "vg-n2-00812",
+                "vg-n2-00818",
+                "vg-n2-00820"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku Shin Kanzen Master (N3, N2, N1). Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 10 Shin Kanzen Master (N3, N2, N1).",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai SKM N2 Bab 10.",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -1893,13 +1929,17 @@ window.curriculumBook_shin_kanzen_master = {
       "title_jp": "SKM N2 第11課",
       "theme": "SKM N2",
       "icon": "🏆",
-      "can_do_summary": "Memahami silabus SKM N2 Bab 11 secara komprehensif.",
-      "grammar_ids": [],
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai SKM N2 Bab 11.",
+      "grammar_ids": [
+        "gn2-00001",
+        "gn2-00002",
+        "gn2-00003"
+      ],
       "vocab_ids": [
-        "Dia memikul peran sentral dalam proyek ini.",
-        "Kaum muda adalah generasi yang memikul masa depan Jepang.",
-        "vg-n2-00226",
-        "Setelah persidangan yang panjang, akhirnya vonis dijatuhkan."
+        "vg-n2-00885",
+        "vg-n2-00886",
+        "vg-n2-00887",
+        "vg-n2-00889"
       ],
       "lessons": [
         {
@@ -1908,29 +1948,37 @@ window.curriculumBook_shin_kanzen_master = {
           "title_id": "SKM N2 Bab 11 (Eksplorasi Materi & Pola)",
           "title_jp": "SKM N2 第11課（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku Shin Kanzen Master (N3, N2, N1) pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa Shin Kanzen Master (N3, N2, N1) bab ini dalam konteks nyata.",
-          "grammar_ids": [],
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai SKM N2 Bab 11.",
+          "grammar_ids": [
+            "gn2-00001",
+            "gn2-00002",
+            "gn2-00003"
+          ],
           "vocab_ids": [
-            "Dia memikul peran sentral dalam proyek ini.",
-            "Kaum muda adalah generasi yang memikul masa depan Jepang.",
-            "vg-n2-00226",
-            "Setelah persidangan yang panjang, akhirnya vonis dijatuhkan."
+            "vg-n2-00885",
+            "vg-n2-00886",
+            "vg-n2-00887",
+            "vg-n2-00889"
           ],
           "pedagogical_framework": {
             "what": {
               "summary": "Silabus resmi Shin Kanzen Master (N3, N2, N1) bab 11.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
-              "targetPatterns": [],
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai SKM N2 Bab 11.",
+              "targetPatterns": [
+                "gn2-00001",
+                "gn2-00002",
+                "gn2-00003"
+              ],
               "coreVocabSample": [
-                "Dia memikul peran sentral dalam proyek ini.",
-                "Kaum muda adalah generasi yang memikul masa depan Jepang.",
-                "vg-n2-00226",
-                "Setelah persidangan yang panjang, akhirnya vonis dijatuhkan."
+                "vg-n2-00885",
+                "vg-n2-00886",
+                "vg-n2-00887",
+                "vg-n2-00889"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku Shin Kanzen Master (N3, N2, N1). Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 11 Shin Kanzen Master (N3, N2, N1).",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai SKM N2 Bab 11.",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -1977,13 +2025,17 @@ window.curriculumBook_shin_kanzen_master = {
       "title_jp": "SKM N2 第12課",
       "theme": "SKM N2",
       "icon": "🏆",
-      "can_do_summary": "Memahami silabus SKM N2 Bab 12 secara komprehensif.",
-      "grammar_ids": [],
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai SKM N2 Bab 12.",
+      "grammar_ids": [
+        "gn2-00001",
+        "gn2-00002",
+        "gn2-00003"
+      ],
       "vocab_ids": [
-        "Tolong pahami situasi lapangan secara menyeluruh sebelum melapor.",
-        "Butuh waktu untuk memahami gambaran keseluruhannya.",
-        "Seorang pemimpin harus selalu menguasai pergerakan timnya.",
-        "vg-n2-00283"
+        "vg-n2-01003",
+        "vg-n2-01005",
+        "vg-n2-01006",
+        "vg-n2-01007"
       ],
       "lessons": [
         {
@@ -1992,29 +2044,37 @@ window.curriculumBook_shin_kanzen_master = {
           "title_id": "SKM N2 Bab 12 (Eksplorasi Materi & Pola)",
           "title_jp": "SKM N2 第12課（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku Shin Kanzen Master (N3, N2, N1) pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa Shin Kanzen Master (N3, N2, N1) bab ini dalam konteks nyata.",
-          "grammar_ids": [],
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai SKM N2 Bab 12.",
+          "grammar_ids": [
+            "gn2-00001",
+            "gn2-00002",
+            "gn2-00003"
+          ],
           "vocab_ids": [
-            "Tolong pahami situasi lapangan secara menyeluruh sebelum melapor.",
-            "Butuh waktu untuk memahami gambaran keseluruhannya.",
-            "Seorang pemimpin harus selalu menguasai pergerakan timnya.",
-            "vg-n2-00283"
+            "vg-n2-01003",
+            "vg-n2-01005",
+            "vg-n2-01006",
+            "vg-n2-01007"
           ],
           "pedagogical_framework": {
             "what": {
               "summary": "Silabus resmi Shin Kanzen Master (N3, N2, N1) bab 12.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
-              "targetPatterns": [],
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai SKM N2 Bab 12.",
+              "targetPatterns": [
+                "gn2-00001",
+                "gn2-00002",
+                "gn2-00003"
+              ],
               "coreVocabSample": [
-                "Tolong pahami situasi lapangan secara menyeluruh sebelum melapor.",
-                "Butuh waktu untuk memahami gambaran keseluruhannya.",
-                "Seorang pemimpin harus selalu menguasai pergerakan timnya.",
-                "vg-n2-00283"
+                "vg-n2-01003",
+                "vg-n2-01005",
+                "vg-n2-01006",
+                "vg-n2-01007"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku Shin Kanzen Master (N3, N2, N1). Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 12 Shin Kanzen Master (N3, N2, N1).",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai SKM N2 Bab 12.",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -2055,13 +2115,13 @@ window.curriculumBook_shin_kanzen_master = {
     {
       "unit_number": 23,
       "id": "unit-curriculum-book-shin-kanzen-master-23",
-      "level": "n2",
+      "level": "n1",
       "pt_stage": 6,
       "title_id": "SKM N1: SKM N1 Bab 1",
       "title_jp": "SKM N1 第1課",
       "theme": "SKM N1",
       "icon": "🏆",
-      "can_do_summary": "Memahami silabus SKM N1 Bab 1 secara komprehensif.",
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai SKM N1 Bab 1.",
       "grammar_ids": [
         "gn1-00001",
         "gn1-00002",
@@ -2069,9 +2129,9 @@ window.curriculumBook_shin_kanzen_master = {
       ],
       "vocab_ids": [
         "vg-n1-00029",
-        "Apakah percaya pada keberadaan Tuhan adalah urusan pribadi.",
-        "Baginya, dia adalah sosok yang tidak tergantikan bagiku.",
-        "Kita harus mengakui bahwa masalah seperti itu memang ada."
+        "vg-n1-00030",
+        "vg-n1-00031",
+        "vg-n1-00032"
       ],
       "lessons": [
         {
@@ -2080,7 +2140,7 @@ window.curriculumBook_shin_kanzen_master = {
           "title_id": "SKM N1 Bab 1 (Eksplorasi Materi & Pola)",
           "title_jp": "SKM N1 第1課（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku Shin Kanzen Master (N3, N2, N1) pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa Shin Kanzen Master (N3, N2, N1) bab ini dalam konteks nyata.",
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai SKM N1 Bab 1.",
           "grammar_ids": [
             "gn1-00001",
             "gn1-00002",
@@ -2088,14 +2148,14 @@ window.curriculumBook_shin_kanzen_master = {
           ],
           "vocab_ids": [
             "vg-n1-00029",
-            "Apakah percaya pada keberadaan Tuhan adalah urusan pribadi.",
-            "Baginya, dia adalah sosok yang tidak tergantikan bagiku.",
-            "Kita harus mengakui bahwa masalah seperti itu memang ada."
+            "vg-n1-00030",
+            "vg-n1-00031",
+            "vg-n1-00032"
           ],
           "pedagogical_framework": {
             "what": {
               "summary": "Silabus resmi Shin Kanzen Master (N3, N2, N1) bab 1.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai SKM N1 Bab 1.",
               "targetPatterns": [
                 "gn1-00001",
                 "gn1-00002",
@@ -2103,14 +2163,14 @@ window.curriculumBook_shin_kanzen_master = {
               ],
               "coreVocabSample": [
                 "vg-n1-00029",
-                "Apakah percaya pada keberadaan Tuhan adalah urusan pribadi.",
-                "Baginya, dia adalah sosok yang tidak tergantikan bagiku.",
-                "Kita harus mengakui bahwa masalah seperti itu memang ada."
+                "vg-n1-00030",
+                "vg-n1-00031",
+                "vg-n1-00032"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku Shin Kanzen Master (N3, N2, N1). Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 1 Shin Kanzen Master (N3, N2, N1).",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai SKM N1 Bab 1.",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -2151,23 +2211,23 @@ window.curriculumBook_shin_kanzen_master = {
     {
       "unit_number": 24,
       "id": "unit-curriculum-book-shin-kanzen-master-24",
-      "level": "n2",
+      "level": "n1",
       "pt_stage": 1,
       "title_id": "SKM N1: SKM N1 Bab 2",
       "title_jp": "SKM N1 第2課",
       "theme": "SKM N1",
       "icon": "🏆",
-      "can_do_summary": "Memahami silabus SKM N1 Bab 2 secara komprehensif.",
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai SKM N1 Bab 2.",
       "grammar_ids": [
         "gn1-00004",
         "gn1-00005",
         "gn1-00006"
       ],
       "vocab_ids": [
-        "vg-n1-00055",
-        "Menekan perasaan tidak selalu merupakan hal yang benar.",
-        "Obat ini memiliki fungsi untuk menekan peradangan.",
-        "Mengendalikan kenaikan harga adalah tantangan mendesak pemerintah."
+        "vg-n1-00088",
+        "vg-n1-00089",
+        "vg-n1-00090",
+        "vg-n1-00091"
       ],
       "lessons": [
         {
@@ -2176,37 +2236,37 @@ window.curriculumBook_shin_kanzen_master = {
           "title_id": "SKM N1 Bab 2 (Eksplorasi Materi & Pola)",
           "title_jp": "SKM N1 第2課（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku Shin Kanzen Master (N3, N2, N1) pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa Shin Kanzen Master (N3, N2, N1) bab ini dalam konteks nyata.",
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai SKM N1 Bab 2.",
           "grammar_ids": [
             "gn1-00004",
             "gn1-00005",
             "gn1-00006"
           ],
           "vocab_ids": [
-            "vg-n1-00055",
-            "Menekan perasaan tidak selalu merupakan hal yang benar.",
-            "Obat ini memiliki fungsi untuk menekan peradangan.",
-            "Mengendalikan kenaikan harga adalah tantangan mendesak pemerintah."
+            "vg-n1-00088",
+            "vg-n1-00089",
+            "vg-n1-00090",
+            "vg-n1-00091"
           ],
           "pedagogical_framework": {
             "what": {
               "summary": "Silabus resmi Shin Kanzen Master (N3, N2, N1) bab 2.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai SKM N1 Bab 2.",
               "targetPatterns": [
                 "gn1-00004",
                 "gn1-00005",
                 "gn1-00006"
               ],
               "coreVocabSample": [
-                "vg-n1-00055",
-                "Menekan perasaan tidak selalu merupakan hal yang benar.",
-                "Obat ini memiliki fungsi untuk menekan peradangan.",
-                "Mengendalikan kenaikan harga adalah tantangan mendesak pemerintah."
+                "vg-n1-00088",
+                "vg-n1-00089",
+                "vg-n1-00090",
+                "vg-n1-00091"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku Shin Kanzen Master (N3, N2, N1). Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 2 Shin Kanzen Master (N3, N2, N1).",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai SKM N1 Bab 2.",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -2247,23 +2307,23 @@ window.curriculumBook_shin_kanzen_master = {
     {
       "unit_number": 25,
       "id": "unit-curriculum-book-shin-kanzen-master-25",
-      "level": "n2",
+      "level": "n1",
       "pt_stage": 2,
       "title_id": "SKM N1: SKM N1 Bab 3",
       "title_jp": "SKM N1 第3課",
       "theme": "SKM N1",
       "icon": "🏆",
-      "can_do_summary": "Memahami silabus SKM N1 Bab 3 secara komprehensif.",
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai SKM N1 Bab 3.",
       "grammar_ids": [
         "gn1-00007",
         "gn1-00008",
         "gn1-00009"
       ],
       "vocab_ids": [
-        "vg-n1-00068",
-        "Lingkungan sosial yang mengelilingi kita telah berubah secara besar-besaran.",
-        "Ia tampil dikelilingi oleh banyak pendukung.",
-        "Memahami secara akurat risiko-risiko yang mengepung perusahaan."
+        "vg-n1-00156",
+        "vg-n1-00157",
+        "vg-n1-00158",
+        "vg-n1-00159"
       ],
       "lessons": [
         {
@@ -2272,37 +2332,37 @@ window.curriculumBook_shin_kanzen_master = {
           "title_id": "SKM N1 Bab 3 (Eksplorasi Materi & Pola)",
           "title_jp": "SKM N1 第3課（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku Shin Kanzen Master (N3, N2, N1) pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa Shin Kanzen Master (N3, N2, N1) bab ini dalam konteks nyata.",
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai SKM N1 Bab 3.",
           "grammar_ids": [
             "gn1-00007",
             "gn1-00008",
             "gn1-00009"
           ],
           "vocab_ids": [
-            "vg-n1-00068",
-            "Lingkungan sosial yang mengelilingi kita telah berubah secara besar-besaran.",
-            "Ia tampil dikelilingi oleh banyak pendukung.",
-            "Memahami secara akurat risiko-risiko yang mengepung perusahaan."
+            "vg-n1-00156",
+            "vg-n1-00157",
+            "vg-n1-00158",
+            "vg-n1-00159"
           ],
           "pedagogical_framework": {
             "what": {
               "summary": "Silabus resmi Shin Kanzen Master (N3, N2, N1) bab 3.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai SKM N1 Bab 3.",
               "targetPatterns": [
                 "gn1-00007",
                 "gn1-00008",
                 "gn1-00009"
               ],
               "coreVocabSample": [
-                "vg-n1-00068",
-                "Lingkungan sosial yang mengelilingi kita telah berubah secara besar-besaran.",
-                "Ia tampil dikelilingi oleh banyak pendukung.",
-                "Memahami secara akurat risiko-risiko yang mengepung perusahaan."
+                "vg-n1-00156",
+                "vg-n1-00157",
+                "vg-n1-00158",
+                "vg-n1-00159"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku Shin Kanzen Master (N3, N2, N1). Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 3 Shin Kanzen Master (N3, N2, N1).",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai SKM N1 Bab 3.",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -2343,23 +2403,23 @@ window.curriculumBook_shin_kanzen_master = {
     {
       "unit_number": 26,
       "id": "unit-curriculum-book-shin-kanzen-master-26",
-      "level": "n2",
+      "level": "n1",
       "pt_stage": 3,
       "title_id": "SKM N1: SKM N1 Bab 4",
       "title_jp": "SKM N1 第4課",
       "theme": "SKM N1",
       "icon": "🏆",
-      "can_do_summary": "Memahami silabus SKM N1 Bab 4 secara komprehensif.",
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai SKM N1 Bab 4.",
       "grammar_ids": [
         "gn1-00010",
         "gn1-00011",
         "gn1-00012"
       ],
       "vocab_ids": [
-        "vg-n1-00078",
-        "Pemerintah mengambil kebijakan yang mendorong perusahaan untuk hemat energi.",
-        "Diumumkan kebijakan yang mendorong pensiun dini.",
-        "Guru mendorong pembelajaran mandiri dari para murid."
+        "vg-n1-00256",
+        "vg-n1-00261",
+        "vg-n1-00265",
+        "vg-n1-00267"
       ],
       "lessons": [
         {
@@ -2368,37 +2428,37 @@ window.curriculumBook_shin_kanzen_master = {
           "title_id": "SKM N1 Bab 4 (Eksplorasi Materi & Pola)",
           "title_jp": "SKM N1 第4課（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku Shin Kanzen Master (N3, N2, N1) pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa Shin Kanzen Master (N3, N2, N1) bab ini dalam konteks nyata.",
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai SKM N1 Bab 4.",
           "grammar_ids": [
             "gn1-00010",
             "gn1-00011",
             "gn1-00012"
           ],
           "vocab_ids": [
-            "vg-n1-00078",
-            "Pemerintah mengambil kebijakan yang mendorong perusahaan untuk hemat energi.",
-            "Diumumkan kebijakan yang mendorong pensiun dini.",
-            "Guru mendorong pembelajaran mandiri dari para murid."
+            "vg-n1-00256",
+            "vg-n1-00261",
+            "vg-n1-00265",
+            "vg-n1-00267"
           ],
           "pedagogical_framework": {
             "what": {
               "summary": "Silabus resmi Shin Kanzen Master (N3, N2, N1) bab 4.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai SKM N1 Bab 4.",
               "targetPatterns": [
                 "gn1-00010",
                 "gn1-00011",
                 "gn1-00012"
               ],
               "coreVocabSample": [
-                "vg-n1-00078",
-                "Pemerintah mengambil kebijakan yang mendorong perusahaan untuk hemat energi.",
-                "Diumumkan kebijakan yang mendorong pensiun dini.",
-                "Guru mendorong pembelajaran mandiri dari para murid."
+                "vg-n1-00256",
+                "vg-n1-00261",
+                "vg-n1-00265",
+                "vg-n1-00267"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku Shin Kanzen Master (N3, N2, N1). Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 4 Shin Kanzen Master (N3, N2, N1).",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai SKM N1 Bab 4.",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -2439,23 +2499,23 @@ window.curriculumBook_shin_kanzen_master = {
     {
       "unit_number": 27,
       "id": "unit-curriculum-book-shin-kanzen-master-27",
-      "level": "n2",
+      "level": "n1",
       "pt_stage": 4,
       "title_id": "SKM N1: SKM N1 Bab 5",
       "title_jp": "SKM N1 第5課",
       "theme": "SKM N1",
       "icon": "🏆",
-      "can_do_summary": "Memahami silabus SKM N1 Bab 5 secara komprehensif.",
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai SKM N1 Bab 5.",
       "grammar_ids": [
         "gn1-00013",
         "gn1-00014",
         "gn1-00015"
       ],
       "vocab_ids": [
-        "vg-n1-00088",
-        "Dari atas bukit, seluruh kota dapat dipandang secara menyeluruh.",
-        "Strategi disusun setelah meninjau secara menyeluruh keseluruhan industri.",
-        "Jika kita memandang sejarah secara menyeluruh, kesalahan yang sama terus terulang."
+        "vg-n1-00343",
+        "vg-n1-00344",
+        "vg-n1-00349",
+        "vg-n1-00351"
       ],
       "lessons": [
         {
@@ -2464,37 +2524,37 @@ window.curriculumBook_shin_kanzen_master = {
           "title_id": "SKM N1 Bab 5 (Eksplorasi Materi & Pola)",
           "title_jp": "SKM N1 第5課（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku Shin Kanzen Master (N3, N2, N1) pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa Shin Kanzen Master (N3, N2, N1) bab ini dalam konteks nyata.",
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai SKM N1 Bab 5.",
           "grammar_ids": [
             "gn1-00013",
             "gn1-00014",
             "gn1-00015"
           ],
           "vocab_ids": [
-            "vg-n1-00088",
-            "Dari atas bukit, seluruh kota dapat dipandang secara menyeluruh.",
-            "Strategi disusun setelah meninjau secara menyeluruh keseluruhan industri.",
-            "Jika kita memandang sejarah secara menyeluruh, kesalahan yang sama terus terulang."
+            "vg-n1-00343",
+            "vg-n1-00344",
+            "vg-n1-00349",
+            "vg-n1-00351"
           ],
           "pedagogical_framework": {
             "what": {
               "summary": "Silabus resmi Shin Kanzen Master (N3, N2, N1) bab 5.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai SKM N1 Bab 5.",
               "targetPatterns": [
                 "gn1-00013",
                 "gn1-00014",
                 "gn1-00015"
               ],
               "coreVocabSample": [
-                "vg-n1-00088",
-                "Dari atas bukit, seluruh kota dapat dipandang secara menyeluruh.",
-                "Strategi disusun setelah meninjau secara menyeluruh keseluruhan industri.",
-                "Jika kita memandang sejarah secara menyeluruh, kesalahan yang sama terus terulang."
+                "vg-n1-00343",
+                "vg-n1-00344",
+                "vg-n1-00349",
+                "vg-n1-00351"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku Shin Kanzen Master (N3, N2, N1). Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 5 Shin Kanzen Master (N3, N2, N1).",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai SKM N1 Bab 5.",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -2535,23 +2595,23 @@ window.curriculumBook_shin_kanzen_master = {
     {
       "unit_number": 28,
       "id": "unit-curriculum-book-shin-kanzen-master-28",
-      "level": "n2",
+      "level": "n1",
       "pt_stage": 5,
       "title_id": "SKM N1: SKM N1 Bab 6",
       "title_jp": "SKM N1 第6課",
       "theme": "SKM N1",
       "icon": "🏆",
-      "can_do_summary": "Memahami silabus SKM N1 Bab 6 secara komprehensif.",
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai SKM N1 Bab 6.",
       "grammar_ids": [
         "gn1-00016",
         "gn1-00017",
         "gn1-00018"
       ],
       "vocab_ids": [
-        "vg-n1-00114",
-        "Dia berada dalam konflik batin yang dalam antara mengejar mimpi atau melindungi keluarga.",
-        "Novel itu menggambarkan dengan cermat konflik batin sang tokoh utama.",
-        "vg-n1-00115"
+        "vg-n1-00446",
+        "vg-n1-00449",
+        "vg-n1-00452",
+        "vg-n1-00458"
       ],
       "lessons": [
         {
@@ -2560,37 +2620,37 @@ window.curriculumBook_shin_kanzen_master = {
           "title_id": "SKM N1 Bab 6 (Eksplorasi Materi & Pola)",
           "title_jp": "SKM N1 第6課（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku Shin Kanzen Master (N3, N2, N1) pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa Shin Kanzen Master (N3, N2, N1) bab ini dalam konteks nyata.",
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai SKM N1 Bab 6.",
           "grammar_ids": [
             "gn1-00016",
             "gn1-00017",
             "gn1-00018"
           ],
           "vocab_ids": [
-            "vg-n1-00114",
-            "Dia berada dalam konflik batin yang dalam antara mengejar mimpi atau melindungi keluarga.",
-            "Novel itu menggambarkan dengan cermat konflik batin sang tokoh utama.",
-            "vg-n1-00115"
+            "vg-n1-00446",
+            "vg-n1-00449",
+            "vg-n1-00452",
+            "vg-n1-00458"
           ],
           "pedagogical_framework": {
             "what": {
               "summary": "Silabus resmi Shin Kanzen Master (N3, N2, N1) bab 6.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai SKM N1 Bab 6.",
               "targetPatterns": [
                 "gn1-00016",
                 "gn1-00017",
                 "gn1-00018"
               ],
               "coreVocabSample": [
-                "vg-n1-00114",
-                "Dia berada dalam konflik batin yang dalam antara mengejar mimpi atau melindungi keluarga.",
-                "Novel itu menggambarkan dengan cermat konflik batin sang tokoh utama.",
-                "vg-n1-00115"
+                "vg-n1-00446",
+                "vg-n1-00449",
+                "vg-n1-00452",
+                "vg-n1-00458"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku Shin Kanzen Master (N3, N2, N1). Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 6 Shin Kanzen Master (N3, N2, N1).",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai SKM N1 Bab 6.",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -2631,19 +2691,23 @@ window.curriculumBook_shin_kanzen_master = {
     {
       "unit_number": 29,
       "id": "unit-curriculum-book-shin-kanzen-master-29",
-      "level": "n2",
+      "level": "n1",
       "pt_stage": 6,
       "title_id": "SKM N1: SKM N1 Bab 7",
       "title_jp": "SKM N1 第7課",
       "theme": "SKM N1",
       "icon": "🏆",
-      "can_do_summary": "Memahami silabus SKM N1 Bab 7 secara komprehensif.",
-      "grammar_ids": [],
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai SKM N1 Bab 7.",
+      "grammar_ids": [
+        "gn1-00001",
+        "gn1-00002",
+        "gn1-00003"
+      ],
       "vocab_ids": [
-        "Setelah terpojok oleh bukti, tersangka akhirnya mengaku.",
-        "Aku terpojok secara mental oleh tekanan pekerjaan.",
-        "Sebaiknya hindari cara bicara yang memojokkan lawan bicara.",
-        "vg-n1-00128"
+        "vg-n1-00581",
+        "vg-n1-00584",
+        "vg-n1-00589",
+        "vg-n1-00590"
       ],
       "lessons": [
         {
@@ -2652,29 +2716,37 @@ window.curriculumBook_shin_kanzen_master = {
           "title_id": "SKM N1 Bab 7 (Eksplorasi Materi & Pola)",
           "title_jp": "SKM N1 第7課（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku Shin Kanzen Master (N3, N2, N1) pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa Shin Kanzen Master (N3, N2, N1) bab ini dalam konteks nyata.",
-          "grammar_ids": [],
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai SKM N1 Bab 7.",
+          "grammar_ids": [
+            "gn1-00001",
+            "gn1-00002",
+            "gn1-00003"
+          ],
           "vocab_ids": [
-            "Setelah terpojok oleh bukti, tersangka akhirnya mengaku.",
-            "Aku terpojok secara mental oleh tekanan pekerjaan.",
-            "Sebaiknya hindari cara bicara yang memojokkan lawan bicara.",
-            "vg-n1-00128"
+            "vg-n1-00581",
+            "vg-n1-00584",
+            "vg-n1-00589",
+            "vg-n1-00590"
           ],
           "pedagogical_framework": {
             "what": {
               "summary": "Silabus resmi Shin Kanzen Master (N3, N2, N1) bab 7.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
-              "targetPatterns": [],
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai SKM N1 Bab 7.",
+              "targetPatterns": [
+                "gn1-00001",
+                "gn1-00002",
+                "gn1-00003"
+              ],
               "coreVocabSample": [
-                "Setelah terpojok oleh bukti, tersangka akhirnya mengaku.",
-                "Aku terpojok secara mental oleh tekanan pekerjaan.",
-                "Sebaiknya hindari cara bicara yang memojokkan lawan bicara.",
-                "vg-n1-00128"
+                "vg-n1-00581",
+                "vg-n1-00584",
+                "vg-n1-00589",
+                "vg-n1-00590"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku Shin Kanzen Master (N3, N2, N1). Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 7 Shin Kanzen Master (N3, N2, N1).",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai SKM N1 Bab 7.",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -2715,19 +2787,23 @@ window.curriculumBook_shin_kanzen_master = {
     {
       "unit_number": 30,
       "id": "unit-curriculum-book-shin-kanzen-master-30",
-      "level": "n2",
+      "level": "n1",
       "pt_stage": 1,
       "title_id": "SKM N1: SKM N1 Bab 8",
       "title_jp": "SKM N1 第8課",
       "theme": "SKM N1",
       "icon": "🏆",
-      "can_do_summary": "Memahami silabus SKM N1 Bab 8 secara komprehensif.",
-      "grammar_ids": [],
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai SKM N1 Bab 8.",
+      "grammar_ids": [
+        "gn1-00001",
+        "gn1-00002",
+        "gn1-00003"
+      ],
       "vocab_ids": [
-        "Langit senja memancarkan nuansa warna jingga.",
-        "Suaranya mengandung kesedihan yang samar.",
-        "Pernyataan itu dianggap mengandung nuansa politis.",
-        "vg-n1-00153"
+        "vg-n1-00660",
+        "vg-n1-00661",
+        "vg-n1-00662",
+        "vg-n1-00663"
       ],
       "lessons": [
         {
@@ -2736,29 +2812,37 @@ window.curriculumBook_shin_kanzen_master = {
           "title_id": "SKM N1 Bab 8 (Eksplorasi Materi & Pola)",
           "title_jp": "SKM N1 第8課（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku Shin Kanzen Master (N3, N2, N1) pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa Shin Kanzen Master (N3, N2, N1) bab ini dalam konteks nyata.",
-          "grammar_ids": [],
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai SKM N1 Bab 8.",
+          "grammar_ids": [
+            "gn1-00001",
+            "gn1-00002",
+            "gn1-00003"
+          ],
           "vocab_ids": [
-            "Langit senja memancarkan nuansa warna jingga.",
-            "Suaranya mengandung kesedihan yang samar.",
-            "Pernyataan itu dianggap mengandung nuansa politis.",
-            "vg-n1-00153"
+            "vg-n1-00660",
+            "vg-n1-00661",
+            "vg-n1-00662",
+            "vg-n1-00663"
           ],
           "pedagogical_framework": {
             "what": {
               "summary": "Silabus resmi Shin Kanzen Master (N3, N2, N1) bab 8.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
-              "targetPatterns": [],
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai SKM N1 Bab 8.",
+              "targetPatterns": [
+                "gn1-00001",
+                "gn1-00002",
+                "gn1-00003"
+              ],
               "coreVocabSample": [
-                "Langit senja memancarkan nuansa warna jingga.",
-                "Suaranya mengandung kesedihan yang samar.",
-                "Pernyataan itu dianggap mengandung nuansa politis.",
-                "vg-n1-00153"
+                "vg-n1-00660",
+                "vg-n1-00661",
+                "vg-n1-00662",
+                "vg-n1-00663"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku Shin Kanzen Master (N3, N2, N1). Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 8 Shin Kanzen Master (N3, N2, N1).",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai SKM N1 Bab 8.",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -2799,19 +2883,23 @@ window.curriculumBook_shin_kanzen_master = {
     {
       "unit_number": 31,
       "id": "unit-curriculum-book-shin-kanzen-master-31",
-      "level": "n2",
+      "level": "n1",
       "pt_stage": 2,
       "title_id": "SKM N1: SKM N1 Bab 9",
       "title_jp": "SKM N1 第9課",
       "theme": "SKM N1",
       "icon": "🏆",
-      "can_do_summary": "Memahami silabus SKM N1 Bab 9 secara komprehensif.",
-      "grammar_ids": [],
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai SKM N1 Bab 9.",
+      "grammar_ids": [
+        "gn1-00001",
+        "gn1-00002",
+        "gn1-00003"
+      ],
       "vocab_ids": [
-        "vg-n1-00163",
-        "Di tengah keheningan, pianis itu memainkan melodi yang lembut dan halus.",
-        "Keduanya menghasilkan musik yang indah, lahir dari kepercayaan yang terjalin bertahun-tahun.",
-        "Di alam, serangga dan burung memainkan simfoni malam."
+        "vg-n1-00744",
+        "vg-n1-00756",
+        "vg-n1-00758",
+        "vg-n1-00760"
       ],
       "lessons": [
         {
@@ -2820,29 +2908,37 @@ window.curriculumBook_shin_kanzen_master = {
           "title_id": "SKM N1 Bab 9 (Eksplorasi Materi & Pola)",
           "title_jp": "SKM N1 第9課（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku Shin Kanzen Master (N3, N2, N1) pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa Shin Kanzen Master (N3, N2, N1) bab ini dalam konteks nyata.",
-          "grammar_ids": [],
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai SKM N1 Bab 9.",
+          "grammar_ids": [
+            "gn1-00001",
+            "gn1-00002",
+            "gn1-00003"
+          ],
           "vocab_ids": [
-            "vg-n1-00163",
-            "Di tengah keheningan, pianis itu memainkan melodi yang lembut dan halus.",
-            "Keduanya menghasilkan musik yang indah, lahir dari kepercayaan yang terjalin bertahun-tahun.",
-            "Di alam, serangga dan burung memainkan simfoni malam."
+            "vg-n1-00744",
+            "vg-n1-00756",
+            "vg-n1-00758",
+            "vg-n1-00760"
           ],
           "pedagogical_framework": {
             "what": {
               "summary": "Silabus resmi Shin Kanzen Master (N3, N2, N1) bab 9.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
-              "targetPatterns": [],
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai SKM N1 Bab 9.",
+              "targetPatterns": [
+                "gn1-00001",
+                "gn1-00002",
+                "gn1-00003"
+              ],
               "coreVocabSample": [
-                "vg-n1-00163",
-                "Di tengah keheningan, pianis itu memainkan melodi yang lembut dan halus.",
-                "Keduanya menghasilkan musik yang indah, lahir dari kepercayaan yang terjalin bertahun-tahun.",
-                "Di alam, serangga dan burung memainkan simfoni malam."
+                "vg-n1-00744",
+                "vg-n1-00756",
+                "vg-n1-00758",
+                "vg-n1-00760"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku Shin Kanzen Master (N3, N2, N1). Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 9 Shin Kanzen Master (N3, N2, N1).",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai SKM N1 Bab 9.",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -2883,19 +2979,23 @@ window.curriculumBook_shin_kanzen_master = {
     {
       "unit_number": 32,
       "id": "unit-curriculum-book-shin-kanzen-master-32",
-      "level": "n2",
+      "level": "n1",
       "pt_stage": 3,
       "title_id": "SKM N1: SKM N1 Bab 10",
       "title_jp": "SKM N1 第10課",
       "theme": "SKM N1",
       "icon": "🏆",
-      "can_do_summary": "Memahami silabus SKM N1 Bab 10 secara komprehensif.",
-      "grammar_ids": [],
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai SKM N1 Bab 10.",
+      "grammar_ids": [
+        "gn1-00001",
+        "gn1-00002",
+        "gn1-00003"
+      ],
       "vocab_ids": [
-        "Ia meruntuhkan segala prasangka dan berhasil menjadi dokter.",
-        "Atlet muda yang memecahkan rekor bertahun-tahun menarik banyak perhatian.",
-        "Ide-ide inovatif yang mampu meruntuhkan anggapan konvensional sangat dibutuhkan.",
-        "vg-n1-00174"
+        "vg-n1-00861",
+        "vg-n1-00862",
+        "vg-n1-00864",
+        "vg-n1-00866"
       ],
       "lessons": [
         {
@@ -2904,29 +3004,37 @@ window.curriculumBook_shin_kanzen_master = {
           "title_id": "SKM N1 Bab 10 (Eksplorasi Materi & Pola)",
           "title_jp": "SKM N1 第10課（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku Shin Kanzen Master (N3, N2, N1) pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa Shin Kanzen Master (N3, N2, N1) bab ini dalam konteks nyata.",
-          "grammar_ids": [],
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai SKM N1 Bab 10.",
+          "grammar_ids": [
+            "gn1-00001",
+            "gn1-00002",
+            "gn1-00003"
+          ],
           "vocab_ids": [
-            "Ia meruntuhkan segala prasangka dan berhasil menjadi dokter.",
-            "Atlet muda yang memecahkan rekor bertahun-tahun menarik banyak perhatian.",
-            "Ide-ide inovatif yang mampu meruntuhkan anggapan konvensional sangat dibutuhkan.",
-            "vg-n1-00174"
+            "vg-n1-00861",
+            "vg-n1-00862",
+            "vg-n1-00864",
+            "vg-n1-00866"
           ],
           "pedagogical_framework": {
             "what": {
               "summary": "Silabus resmi Shin Kanzen Master (N3, N2, N1) bab 10.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
-              "targetPatterns": [],
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai SKM N1 Bab 10.",
+              "targetPatterns": [
+                "gn1-00001",
+                "gn1-00002",
+                "gn1-00003"
+              ],
               "coreVocabSample": [
-                "Ia meruntuhkan segala prasangka dan berhasil menjadi dokter.",
-                "Atlet muda yang memecahkan rekor bertahun-tahun menarik banyak perhatian.",
-                "Ide-ide inovatif yang mampu meruntuhkan anggapan konvensional sangat dibutuhkan.",
-                "vg-n1-00174"
+                "vg-n1-00861",
+                "vg-n1-00862",
+                "vg-n1-00864",
+                "vg-n1-00866"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku Shin Kanzen Master (N3, N2, N1). Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 10 Shin Kanzen Master (N3, N2, N1).",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai SKM N1 Bab 10.",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -2967,19 +3075,23 @@ window.curriculumBook_shin_kanzen_master = {
     {
       "unit_number": 33,
       "id": "unit-curriculum-book-shin-kanzen-master-33",
-      "level": "n2",
+      "level": "n1",
       "pt_stage": 4,
       "title_id": "SKM N1: SKM N1 Bab 11",
       "title_jp": "SKM N1 第11課",
       "theme": "SKM N1",
       "icon": "🏆",
-      "can_do_summary": "Memahami silabus SKM N1 Bab 11 secara komprehensif.",
-      "grammar_ids": [],
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai SKM N1 Bab 11.",
+      "grammar_ids": [
+        "gn1-00001",
+        "gn1-00002",
+        "gn1-00003"
+      ],
       "vocab_ids": [
-        "Dukungan bagi kelompok yang rentan secara ekonomi menjadi hal yang mendesak.",
-        "Memperkuat infrastruktur yang rentan terhadap gempa adalah tantangan yang harus diatasi.",
-        "vg-n1-00051",
-        "Dengan tekad yang tangguh, dia bangkit kembali setiap kali terjatuh."
+        "vg-n1-00959",
+        "vg-n1-00963",
+        "vg-n1-00965",
+        "vg-n1-00966"
       ],
       "lessons": [
         {
@@ -2988,29 +3100,37 @@ window.curriculumBook_shin_kanzen_master = {
           "title_id": "SKM N1 Bab 11 (Eksplorasi Materi & Pola)",
           "title_jp": "SKM N1 第11課（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku Shin Kanzen Master (N3, N2, N1) pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa Shin Kanzen Master (N3, N2, N1) bab ini dalam konteks nyata.",
-          "grammar_ids": [],
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai SKM N1 Bab 11.",
+          "grammar_ids": [
+            "gn1-00001",
+            "gn1-00002",
+            "gn1-00003"
+          ],
           "vocab_ids": [
-            "Dukungan bagi kelompok yang rentan secara ekonomi menjadi hal yang mendesak.",
-            "Memperkuat infrastruktur yang rentan terhadap gempa adalah tantangan yang harus diatasi.",
-            "vg-n1-00051",
-            "Dengan tekad yang tangguh, dia bangkit kembali setiap kali terjatuh."
+            "vg-n1-00959",
+            "vg-n1-00963",
+            "vg-n1-00965",
+            "vg-n1-00966"
           ],
           "pedagogical_framework": {
             "what": {
               "summary": "Silabus resmi Shin Kanzen Master (N3, N2, N1) bab 11.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
-              "targetPatterns": [],
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai SKM N1 Bab 11.",
+              "targetPatterns": [
+                "gn1-00001",
+                "gn1-00002",
+                "gn1-00003"
+              ],
               "coreVocabSample": [
-                "Dukungan bagi kelompok yang rentan secara ekonomi menjadi hal yang mendesak.",
-                "Memperkuat infrastruktur yang rentan terhadap gempa adalah tantangan yang harus diatasi.",
-                "vg-n1-00051",
-                "Dengan tekad yang tangguh, dia bangkit kembali setiap kali terjatuh."
+                "vg-n1-00959",
+                "vg-n1-00963",
+                "vg-n1-00965",
+                "vg-n1-00966"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku Shin Kanzen Master (N3, N2, N1). Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 11 Shin Kanzen Master (N3, N2, N1).",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai SKM N1 Bab 11.",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -3051,19 +3171,23 @@ window.curriculumBook_shin_kanzen_master = {
     {
       "unit_number": 34,
       "id": "unit-curriculum-book-shin-kanzen-master-34",
-      "level": "n2",
+      "level": "n1",
       "pt_stage": 5,
       "title_id": "SKM N1: SKM N1 Bab 12",
       "title_jp": "SKM N1 第12課",
       "theme": "SKM N1",
       "icon": "🏆",
-      "can_do_summary": "Memahami silabus SKM N1 Bab 12 secara komprehensif.",
-      "grammar_ids": [],
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai SKM N1 Bab 12.",
+      "grammar_ids": [
+        "gn1-00001",
+        "gn1-00002",
+        "gn1-00003"
+      ],
       "vocab_ids": [
-        "vg-n1-00143",
-        "Jalan cerita film itu hanya berisi klise yang membosankan.",
-        "Sebaiknya hindari ungkapan klise dan pilih kata-kata yang lebih orisinal.",
-        "vg-n1-00144"
+        "vg-n1-01071",
+        "vg-n1-01073",
+        "vg-n1-01082",
+        "vg-n1-01090"
       ],
       "lessons": [
         {
@@ -3072,29 +3196,37 @@ window.curriculumBook_shin_kanzen_master = {
           "title_id": "SKM N1 Bab 12 (Eksplorasi Materi & Pola)",
           "title_jp": "SKM N1 第12課（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku Shin Kanzen Master (N3, N2, N1) pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa Shin Kanzen Master (N3, N2, N1) bab ini dalam konteks nyata.",
-          "grammar_ids": [],
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai SKM N1 Bab 12.",
+          "grammar_ids": [
+            "gn1-00001",
+            "gn1-00002",
+            "gn1-00003"
+          ],
           "vocab_ids": [
-            "vg-n1-00143",
-            "Jalan cerita film itu hanya berisi klise yang membosankan.",
-            "Sebaiknya hindari ungkapan klise dan pilih kata-kata yang lebih orisinal.",
-            "vg-n1-00144"
+            "vg-n1-01071",
+            "vg-n1-01073",
+            "vg-n1-01082",
+            "vg-n1-01090"
           ],
           "pedagogical_framework": {
             "what": {
               "summary": "Silabus resmi Shin Kanzen Master (N3, N2, N1) bab 12.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
-              "targetPatterns": [],
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai SKM N1 Bab 12.",
+              "targetPatterns": [
+                "gn1-00001",
+                "gn1-00002",
+                "gn1-00003"
+              ],
               "coreVocabSample": [
-                "vg-n1-00143",
-                "Jalan cerita film itu hanya berisi klise yang membosankan.",
-                "Sebaiknya hindari ungkapan klise dan pilih kata-kata yang lebih orisinal.",
-                "vg-n1-00144"
+                "vg-n1-01071",
+                "vg-n1-01073",
+                "vg-n1-01082",
+                "vg-n1-01090"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku Shin Kanzen Master (N3, N2, N1). Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 12 Shin Kanzen Master (N3, N2, N1).",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai SKM N1 Bab 12.",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {

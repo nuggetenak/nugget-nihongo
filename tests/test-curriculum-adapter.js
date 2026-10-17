@@ -25,11 +25,13 @@ const { getAdaptiveLessonContent } = require('../src/lib/curriculum/lessonConten
 const adaptedL1 = getAdaptiveLessonContent('n5', u1, l1);
 assert(adaptedL1.pedagogical_framework, 'Curated lesson 1 has pedagogical_framework');
 assert(adaptedL1.pedagogical_framework.what, 'Has WHAT section');
-assert(adaptedL1.pedagogical_framework.why_research, 'Has WHY section with SLA research');
-assert(adaptedL1.pedagogical_framework.why_research.sla_citations.length > 0, 'Has SLA citations');
+assert(adaptedL1.pedagogical_framework.sensei_context, 'Has SENSEI CONTEXT section');
+assert(adaptedL1.pedagogical_framework.sensei_context.whyOrder, 'Has whyOrder rationale in sensei context');
+assert(adaptedL1.pedagogical_framework.cultural_notes, 'Has CULTURAL NOTES section');
+assert(adaptedL1.pedagogical_framework.pronunciation_tips, 'Has PRONUNCIATION TIPS section');
 assert(adaptedL1.pedagogical_framework.who_and_when, 'Has WHO & WHEN section');
 assert(adaptedL1.pedagogical_framework.scenario, 'Has SCENARIO section');
-assert(adaptedL1.pedagogical_framework.edge_cases.length > 0, 'Has EDGE CASES');
+assert(Array.isArray(adaptedL1.pedagogical_framework.common_pitfalls) && adaptedL1.pedagogical_framework.common_pitfalls.length > 0, 'Has COMMON PITFALLS');
 
 // Verify dialogue
 assert(adaptedL1.dialogue && adaptedL1.dialogue.length >= 2, 'Has dialogue with at least 2 lines');
@@ -40,7 +42,7 @@ assert(adaptedL1.drills && adaptedL1.drills.length >= 2, 'Has drills');
 const hasEdgeCaseDrill = adaptedL1.drills.some(d => d.type === 'trap_detect');
 assert(hasEdgeCaseDrill, 'Has Spot the Edge Case drill');
 
-console.log('✅ Curated N5 Lesson 1 verified with 100% 5W1H integrity!');
+console.log('✅ Curated N5 Lesson 1 verified with 100% pedagogical framework integrity!');
 
 // Test dynamic fallback on N4 lesson
 const n4Json = JSON.parse(fs.readFileSync(path.join(ROOT, 'public/data/curriculum/curriculum-n4.json'), 'utf8'));
@@ -48,6 +50,11 @@ const n4U1 = n4Json.units[0];
 const n4L1 = n4U1.lessons[0];
 const adaptedN4 = getAdaptiveLessonContent('n4', n4U1, n4L1);
 assert(adaptedN4.pedagogical_framework, 'Fallback generated pedagogical_framework');
+assert(adaptedN4.pedagogical_framework.what, 'Fallback has WHAT section');
+assert(adaptedN4.pedagogical_framework.sensei_context, 'Fallback has SENSEI CONTEXT section');
+assert(adaptedN4.pedagogical_framework.cultural_notes, 'Fallback has CULTURAL NOTES section');
+assert(adaptedN4.pedagogical_framework.pronunciation_tips, 'Fallback has PRONUNCIATION TIPS section');
+assert(Array.isArray(adaptedN4.pedagogical_framework.common_pitfalls) && adaptedN4.pedagogical_framework.common_pitfalls.length > 0, 'Fallback has COMMON PITFALLS');
 assert(adaptedN4.dialogue && adaptedN4.dialogue.length >= 2, 'Fallback generated dialogue');
 assert(adaptedN4.drills && adaptedN4.drills.length >= 2, 'Fallback generated in-place drills');
 

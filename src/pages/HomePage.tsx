@@ -23,17 +23,15 @@ import {
 } from 'lucide-react';
 import { useAppStore } from '../store/useAppStore';
 import { useCurriculumStore, TrackId } from '../lib/curriculum/curriculumStore';
+import { useGamificationStore } from '../lib/gamification/gamificationStore';
 import { HeatmapCalendar } from '../components/gamification/HeatmapCalendar';
 import { BadgesModal } from '../components/gamification/BadgesModal';
-import { DetailModal } from '../components/ui/DetailModal';
-import { KanaChartModal } from '../components/kana/KanaChartModal';
-import { ConjugationModal } from '../components/grammar/ConjugationModal';
-import { NuanceCompareModal } from '../components/grammar/NuanceCompareModal';
 import { loadVocab, NormalizedVocab } from '../lib/data/dataManager';
 import { getDailyKotowaza, Kotowaza } from '../lib/data/kotowaza';
 import { speakJapanese } from '../lib/audio/tts';
 import { JLPTLevel } from '../types/vocab';
 import { JapaneseFormattedText } from '../components/ui/JapaneseFormattedText';
+import { SkeletonCard } from '../components/ui/SkeletonCard';
 
 // Robust, sanitized unit and lesson extractor (safely prevents "Unit 51" concatenation bug)
 function extractUnitAndLessonNumbers(
@@ -73,6 +71,8 @@ export const HomePage: React.FC = () => {
     streak,
     xp,
     setActiveTab,
+    openBookStudio,
+    dailyGoalXP,
     openOnboarding,
     openFeatureGuide,
     openKotowaza,
@@ -82,17 +82,23 @@ export const HomePage: React.FC = () => {
     lastStudiedLesson,
     openToolbox,
     openCatPlacement,
+    openKana,
+    openConjugation,
+    openNuance,
+    openDetailModal,
   } = useAppStore();
 
   const [isBadgesOpen, setIsBadgesOpen] = useState(false);
-  const [isKanaOpen, setIsKanaOpen] = useState(false);
-  const [isConjugationOpen, setIsConjugationOpen] = useState(false);
-  const [isNuanceOpen, setIsNuanceOpen] = useState(false);
   const [dailyWord, setDailyWord] = useState<NormalizedVocab | null>(null);
-  const [selectedWordForModal, setSelectedWordForModal] = useState<NormalizedVocab | null>(null);
   const [activeSection, setActiveSection] = useState<'grammar' | 'vocab' | 'ssw' | 'stats'>('grammar');
 
   const { trackProgress, setActiveTrack } = useCurriculumStore();
+
+  const heatmap = useGamificationStore((s) => s.heatmap);
+  const todayStr = useMemo(() => new Date().toISOString().split('T')[0], []);
+  const todayXP = heatmap[todayStr]?.xp || 0;
+  const isGoalReached = todayXP >= dailyGoalXP;
+  const goalProgressPercent = Math.min(100, Math.round((todayXP / dailyGoalXP) * 100));
 
   const dailyKotowaza: Kotowaza = useMemo(() => getDailyKotowaza(), []);
 
@@ -345,7 +351,7 @@ export const HomePage: React.FC = () => {
               </p>
             </div>
             <button
-              onClick={() => setIsKanaOpen(true)}
+              onClick={openKana}
               className="w-full py-2 px-3 rounded-xl bg-surface-2 group-hover:bg-emerald-500/20 text-emerald-400 border border-accent/15 group-hover:border-emerald-500/30 text-xs font-bold transition-all flex items-center justify-center gap-1.5 cursor-pointer active:scale-98"
             >
               <span>Buka Bagan Kana</span>
@@ -395,7 +401,7 @@ export const HomePage: React.FC = () => {
               </p>
             </div>
             <button
-              onClick={() => setActiveTab('materi')}
+              onClick={openBookStudio}
               className="w-full py-2 px-3 rounded-xl bg-surface-2 group-hover:bg-blue-500/20 text-blue-400 border border-accent/15 group-hover:border-blue-500/30 text-xs font-bold transition-all flex items-center justify-center gap-1.5 cursor-pointer active:scale-98"
             >
               <span>Perpustakaan Buku</span>
@@ -408,7 +414,7 @@ export const HomePage: React.FC = () => {
       {/* Tier 2B: Sleek Low-Profile Quick Utilities Ribbon */}
       <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5">
         <button
-          onClick={() => setIsKanaOpen(true)}
+          onClick={openKana}
           className="p-2.5 rounded-2xl bg-surface border border-accent/20 hover:border-accent/40 text-left transition-all hover:bg-surface-2 group flex items-center gap-2.5 active:scale-98 shadow-sm"
         >
           <div className="w-8 h-8 rounded-xl bg-amber-500/15 text-accent-hot font-jp font-bold flex items-center justify-center text-xs shrink-0 group-hover:scale-105 transition-transform">
@@ -423,7 +429,7 @@ export const HomePage: React.FC = () => {
         </button>
 
         <button
-          onClick={() => setIsConjugationOpen(true)}
+          onClick={openConjugation}
           className="p-2.5 rounded-2xl bg-surface border border-accent/20 hover:border-accent/40 text-left transition-all hover:bg-surface-2 group flex items-center gap-2.5 active:scale-98 shadow-sm"
         >
           <div className="w-8 h-8 rounded-xl bg-purple-500/15 text-purple-400 font-bold flex items-center justify-center text-xs shrink-0 group-hover:scale-105 transition-transform">
@@ -438,7 +444,7 @@ export const HomePage: React.FC = () => {
         </button>
 
         <button
-          onClick={() => setIsNuanceOpen(true)}
+          onClick={openNuance}
           className="p-2.5 rounded-2xl bg-surface border border-accent/20 hover:border-accent/40 text-left transition-all hover:bg-surface-2 group flex items-center gap-2.5 active:scale-98 shadow-sm"
         >
           <div className="w-8 h-8 rounded-xl bg-blue-500/15 text-blue-400 font-bold flex items-center justify-center text-xs shrink-0 group-hover:scale-105 transition-transform">
@@ -471,82 +477,84 @@ export const HomePage: React.FC = () => {
       {/* Tier 3: Daily Inspiration: Kotoba Hari Ini & Daily Kotowaza (ことわざ) */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-3.5 sm:gap-5">
         {/* Kotoba Hari Ini */}
-        <div className="md:col-span-2 bg-surface-2 border border-accent/20 rounded-2xl sm:rounded-3xl p-4 sm:p-6 flex flex-col justify-between shadow-sm">
-          <div className="flex items-center justify-between mb-2 sm:mb-3">
-            <span className="text-[11px] font-bold uppercase tracking-wider text-accent flex items-center gap-1.5">
-              <span>Kotoba Hari Ini · 今日の言葉</span>
-            </span>
-            <div className="flex items-center gap-2">
-              <span className="text-[10.5px] sm:text-xs font-bold px-2 py-0.5 rounded-full bg-amber-500/15 text-accent border border-amber-500/30 uppercase">
-                {dailyWord ? `JLPT ${dailyWord.level.toUpperCase()}` : 'JLPT N5'}
+        {!dailyWord ? (
+          <SkeletonCard type="word" className="md:col-span-2" />
+        ) : (
+          <div className="md:col-span-2 bg-surface-2 border border-accent/20 rounded-2xl sm:rounded-3xl p-4 sm:p-6 flex flex-col justify-between shadow-sm min-h-[180px]">
+            <div className="flex items-center justify-between mb-2 sm:mb-3">
+              <span className="text-[11px] font-bold uppercase tracking-wider text-accent flex items-center gap-1.5">
+                <span>Kotoba Hari Ini · 今日の言葉</span>
               </span>
-              {dailyWord && (
-                <button
-                  onClick={() => setSelectedWordForModal(dailyWord)}
-                  className="p-1 rounded-lg bg-surface hover:bg-surface-3 text-appText-muted hover:text-accent transition-colors"
-                  title="Lihat Detail & Contoh Kalimat"
-                >
-                  <Info className="w-3.5 h-3.5" />
-                </button>
-              )}
-            </div>
-          </div>
-
-          <div className="space-y-1.5 sm:space-y-2 my-1.5 sm:my-2">
-            <div className="flex items-center gap-2.5 sm:gap-3 flex-wrap">
-              <div className="text-xl sm:text-2xl font-jp font-bold text-appText-bright">
-                {dailyWord ? dailyWord.word : '頑張る'}
-                <span className="text-xs sm:text-sm font-normal text-appText-muted font-ui ml-2">
-                  【{dailyWord ? dailyWord.reading : 'がんばる'}】
+              <div className="flex items-center gap-2">
+                <span className="text-[10.5px] sm:text-xs font-bold px-2 py-0.5 rounded-full bg-amber-500/15 text-accent border border-amber-500/30 uppercase">
+                  {`JLPT ${dailyWord.level.toUpperCase()}`}
                 </span>
+                <button
+                  type="button"
+                  onClick={() => openDetailModal(dailyWord, 'vocab')}
+                  className="w-11 h-11 min-w-[44px] min-h-[44px] rounded-xl bg-surface hover:bg-surface-3 text-appText-muted hover:text-accent flex items-center justify-center transition-colors active:scale-95"
+                  title="Lihat Detail & Contoh Kalimat"
+                  aria-label={`Lihat detail kosakata ${dailyWord.word}`}
+                >
+                  <Info className="w-5 h-5" />
+                </button>
               </div>
-              <button
-                onClick={() => speakJapanese(dailyWord ? dailyWord.word : '頑張る')}
-                className="w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-amber-500/15 hover:bg-amber-500/25 border border-amber-500/30 text-accent flex items-center justify-center transition-all active:scale-95 shrink-0"
-                title="Dengarkan pelafalan"
-              >
-                <Volume2 className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
-              </button>
             </div>
 
-            <div className="text-xs sm:text-sm font-semibold text-accent-hot">
-              {dailyWord ? dailyWord.meaning : 'Berusaha keras / Bersemangat'}
-            </div>
+            <div className="space-y-1.5 sm:space-y-2 my-1.5 sm:my-2">
+              <div className="flex items-center gap-2.5 sm:gap-3 flex-wrap">
+                <div className="text-xl sm:text-2xl font-jp font-bold text-appText-bright" lang="ja">
+                  {dailyWord.word}
+                  <span className="text-xs sm:text-sm font-normal text-appText-muted font-ui ml-2">
+                    【{dailyWord.reading}】
+                  </span>
+                </div>
+                <button
+                  type="button"
+                  onClick={() => speakJapanese(dailyWord.word)}
+                  className="w-11 h-11 min-w-[40px] min-h-[40px] sm:min-w-[44px] sm:min-h-[44px] rounded-full bg-amber-500/15 hover:bg-amber-500/25 border border-amber-500/30 text-accent flex items-center justify-center transition-all active:scale-95 shrink-0"
+                  title="Dengarkan pelafalan"
+                  aria-label={`Dengarkan pelafalan ${dailyWord.word}`}
+                >
+                  <Volume2 className="w-5 h-5" />
+                </button>
+              </div>
 
-            {dailyWord ? (() => {
-              const ex = dailyWord.examples?.find((e) => e.id && !e.id.includes('[TBD]')) || dailyWord.examples?.[0];
-              if (ex && ex.jp) {
+              <div className="text-xs sm:text-sm font-semibold text-accent-hot">
+                {dailyWord.meaning}
+              </div>
+
+              {(() => {
+                const ex = dailyWord.examples?.find((e) => e.id && !e.id.includes('[TBD]')) || dailyWord.examples?.[0];
+                if (ex && ex.jp) {
+                  return (
+                    <div className="text-xs text-appText-muted italic leading-relaxed">
+                      <JapaneseFormattedText text={`"${ex.jp}"`} /> {ex.id && !ex.id.includes('[TBD]') ? `(${ex.id})` : ''}
+                    </div>
+                  );
+                }
                 return (
                   <div className="text-xs text-appText-muted italic leading-relaxed">
-                    <JapaneseFormattedText text={`"${ex.jp}"`} /> {ex.id && !ex.id.includes('[TBD]') ? `(${ex.id})` : ''}
+                    "諦めずに最後まで頑張りましょう。" (Mari berusaha keras sampai akhir tanpa menyerah.)
                   </div>
                 );
-              }
-              return (
-                <div className="text-xs text-appText-muted italic leading-relaxed">
-                  "諦めずに最後まで頑張りましょう。" (Mari berusaha keras sampai akhir tanpa menyerah.)
-                </div>
-              );
-            })() : (
-              <div className="text-xs text-appText-muted italic leading-relaxed">
-                "諦めずに最後まで頑張りましょう。" (Mari berusaha keras sampai akhir tanpa menyerah.)
-              </div>
-            )}
-          </div>
+              })()}
+            </div>
 
-          <div className="text-[11px] text-appText-muted/70 mt-2.5 pt-2.5 sm:mt-3 sm:pt-3 border-t border-accent/10 flex items-center justify-between">
-            <span className="capitalize">{dailyWord?.pos || 'Kata kerja · Bentuk kamus'}</span>
-            {dailyWord && (
+            <div className="text-[11px] text-appText-muted/70 mt-2.5 pt-2.5 sm:mt-3 sm:pt-3 border-t border-accent/10 flex items-center justify-between">
+              <span className="capitalize">{dailyWord.pos || 'Kata kerja · Bentuk kamus'}</span>
               <button
-                onClick={() => setSelectedWordForModal(dailyWord)}
-                className="text-accent hover:underline font-semibold text-[11px] flex items-center gap-1"
+                type="button"
+                onClick={() => openDetailModal(dailyWord, 'vocab')}
+                className="text-accent hover:underline font-semibold text-[11px] flex items-center gap-1 min-h-[44px] px-2 active:scale-95"
+                aria-label={`Pelajari selengkapnya tentang ${dailyWord.word}`}
               >
                 <span>Pelajari Selengkapnya</span>
-                <ChevronRight className="w-3 h-3" />
+                <ChevronRight className="w-3.5 h-3.5" />
               </button>
-            )}
+            </div>
           </div>
-        </div>
+        )}
 
         {/* Kotowaza: Daily Authentic Japanese Proverb */}
         <div className="relative overflow-hidden bg-surface-2 border border-accent/20 rounded-2xl sm:rounded-3xl p-4 sm:p-6 flex flex-col justify-between shadow-sm group">
@@ -559,7 +567,7 @@ export const HomePage: React.FC = () => {
             <div className="flex items-center justify-between mb-2 sm:mb-3">
               <span className="text-[11px] font-bold uppercase tracking-wider text-accent flex items-center gap-1.5">
                 <Quote className="w-3.5 h-3.5 text-accent" />
-                <span>Peribahasa · ことわざ</span>
+                <span>Peribahasa · <span lang="ja">ことわざ</span></span>
               </span>
               <span className="text-[10px] font-bold uppercase px-2 py-0.5 rounded-full bg-amber-500/15 text-accent border border-amber-500/25">
                 {dailyKotowaza.category}
@@ -568,15 +576,17 @@ export const HomePage: React.FC = () => {
 
             <div className="space-y-1.5 my-1">
               <div className="flex items-center justify-between gap-2">
-                <div className="text-base sm:text-lg font-jp font-bold text-appText-bright">
+                <div className="text-base sm:text-lg font-jp font-bold text-appText-bright" lang="ja">
                   {dailyKotowaza.jp}
                 </div>
                 <button
+                  type="button"
                   onClick={() => speakJapanese(dailyKotowaza.jp)}
-                  className="w-7 h-7 rounded-full bg-amber-500/15 hover:bg-amber-500/25 text-accent flex items-center justify-center transition-all shrink-0 active:scale-95"
+                  className="w-11 h-11 min-w-[40px] min-h-[40px] sm:min-w-[44px] sm:min-h-[44px] rounded-full bg-amber-500/15 hover:bg-amber-500/25 text-accent flex items-center justify-center transition-all shrink-0 active:scale-95"
                   title="Dengarkan peribahasa"
+                  aria-label={`Dengarkan peribahasa ${dailyKotowaza.jp}`}
                 >
-                  <Volume2 className="w-3.5 h-3.5" />
+                  <Volume2 className="w-5 h-5" />
                 </button>
               </div>
 
@@ -675,7 +685,7 @@ export const HomePage: React.FC = () => {
               <span>Kurikulum Tata Bahasa JLPT N5–N1 (850+ Pola Terstruktur):</span>
               <div className="flex items-center gap-3">
                 <button
-                  onClick={() => setIsConjugationOpen(true)}
+                  onClick={openConjugation}
                   className="font-bold text-accent hover:underline flex items-center gap-1"
                 >
                   <span>Simulator Konjugasi ⚙️</span>
@@ -743,7 +753,7 @@ export const HomePage: React.FC = () => {
               <span>Perbendaharaan Kosakata & 2.136 Kanji Jouyou (10.000+ Kosakata):</span>
               <div className="flex items-center gap-3">
                 <button
-                  onClick={() => setIsKanaOpen(true)}
+                  onClick={openKana}
                   className="font-bold text-accent hover:underline flex items-center gap-1"
                 >
                   <span>Tabel Kana あ</span>
@@ -893,9 +903,21 @@ export const HomePage: React.FC = () => {
                     <span className="text-xs text-appText-muted">Total Kartu FSRS</span>
                     <span className="text-sm font-bold font-mono text-appText-bright">{totalLearnedCards}</span>
                   </div>
-                  <div className="flex items-center justify-between">
-                    <span className="text-xs text-appText-muted">Target Harian</span>
-                    <span className="text-xs font-bold text-emerald-400">Tercapai 🎯</span>
+                  <div className="space-y-1.5 pt-1">
+                    <div className="flex items-center justify-between">
+                      <span className="text-xs text-appText-muted">Target Harian ({dailyGoalXP} XP)</span>
+                      <span className={`text-xs font-bold font-mono ${isGoalReached ? 'text-emerald-400' : 'text-amber-400'}`}>
+                        {todayXP} / {dailyGoalXP} XP {isGoalReached ? '🎯' : ''}
+                      </span>
+                    </div>
+                    <div className="w-full bg-surface-3 h-1.5 rounded-full overflow-hidden border border-accent/10">
+                      <div
+                        className={`h-full rounded-full transition-all duration-500 ${
+                          isGoalReached ? 'bg-emerald-400 shadow-glow' : 'bg-amber-400'
+                        }`}
+                        style={{ width: `${goalProgressPercent}%` }}
+                      />
+                    </div>
                   </div>
                 </div>
               </div>
@@ -920,18 +942,6 @@ export const HomePage: React.FC = () => {
 
       {/* Badges Modal */}
       <BadgesModal isOpen={isBadgesOpen} onClose={() => setIsBadgesOpen(false)} />
-
-      {/* Word Detail Modal */}
-      <DetailModal item={selectedWordForModal} type="vocab" onClose={() => setSelectedWordForModal(null)} />
-
-      {/* Kana Chart Modal */}
-      <KanaChartModal isOpen={isKanaOpen} onClose={() => setIsKanaOpen(false)} />
-
-      {/* Conjugation Modal */}
-      <ConjugationModal isOpen={isConjugationOpen} onClose={() => setIsConjugationOpen(false)} />
-
-      {/* Nuance Compare Modal */}
-      <NuanceCompareModal isOpen={isNuanceOpen} onClose={() => setIsNuanceOpen(false)} />
     </div>
   );
 };

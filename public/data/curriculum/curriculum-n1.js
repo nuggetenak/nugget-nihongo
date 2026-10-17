@@ -5102,7 +5102,7 @@ window.curriculumN1 = {
       "title_jp": "充満と様態",
       "theme": "Full Permeation",
       "icon": "🌧️",
-      "can_do_summary": "Bisa mendeskripsikan kondisi visual bencana fisik komprehensif.",
+      "can_do_summary": "Mampu menguraikan kondisi visual pasca-bencana fisik, tingkat kerusakan struktural, dan langkah mitigasi darurat secara rinci.",
       "l2d_focus_notes": "",
       "grammar_ids": [
         "gn1-00106",
@@ -5457,7 +5457,7 @@ window.curriculumN1 = {
           "title_id": "Karakteristik Fisik Menyeluruh (Pengenalan Pola & Input)",
           "title_jp": "充満と様態（基礎）",
           "desc_id": "Pengenalan struktur inti dan pola dasar Karakteristik Fisik Menyeluruh.",
-          "can_do_statement": "Bisa mendeskripsikan kondisi visual bencana fisik komprehensif.",
+          "can_do_statement": "Mampu menguraikan kondisi visual pasca-bencana fisik, tingkat kerusakan struktural, dan langkah mitigasi darurat secara rinci.",
           "grammar_ids": [
             "gn1-00106",
             "gn1-00107",
@@ -5640,7 +5640,7 @@ window.curriculumN1 = {
           "title_id": "Karakteristik Fisik Menyeluruh (Penerapan & Produksi Aktif)",
           "title_jp": "充満と様態（応用と産出）",
           "desc_id": "Latihan produksi aktif, perbandingan nuansa, dan konsolidasi.",
-          "can_do_statement": "Bisa mendeskripsikan kondisi visual bencana fisik komprehensif.",
+          "can_do_statement": "Mampu menguraikan kondisi visual pasca-bencana fisik, tingkat kerusakan struktural, dan langkah mitigasi darurat secara rinci.",
           "grammar_ids": [
             "gn1-00125",
             "gn1-00136",

@@ -7,474 +7,819 @@
 window.vocabN5_Expressions = [
 
 {
-  id: 'vg-n5-00124',
-  word: 'すみません',
-  reading: 'すみません',
-  romaji: 'sumimasen',
-  meaning_id: 'permisi; maaf',
-  meaning_en: 'excuse me; I\\\'m sorry',
-  jlpt: 'n5',
-  pos: 'expr',
-  common: true,
-  related_grammar: [],
-  formalitas: 3,
-  domain: ['sopan-santun'],
-  register: 'formal',
-  lawan_bicara: ['teman', 'umum', 'orang asing'],
-  nuance: 'Serba guna: minta perhatian, minta maaf, berterima kasih.',
-  conj_type: null,
-  examples: [
-      {"jp": "すみません, トイレはどこですか。", "id": "Permisi, di mana toiletnya?", "level": "n5", "tags": ["perjalanan", "sopan-santun"]}],
-  synonyms: [],
-  antonyms: [],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus',
-  jmdict_seq: '1295060',
-  frequency: 1000,
-  meanings: [{"en": "excuse me; pardon me; I'm sorry; I beg your pardon", "misc": ["biasanya kana saja", "polite (teineigo) language"], "field": []}, {"en": "thank you; you shouldn't have; it's too much", "misc": ["biasanya kana saja", "polite (teineigo) language"], "field": []}],
-  misc_jm: ["biasanya kana saja", "polite (teineigo) language"],
+  "id": "vg-n5-00124",
+  "word": "すみません",
+  "reading": "すみません",
+  "romaji": "sumimasen",
+  "meaning_id": "permisi; maaf",
+  "meaning_en": "excuse me; I\\'m sorry",
+  "jlpt": "n5",
+  "pos": "expression",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 3,
+  "domain": [
+    "sopan-santun"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "teman",
+    "umum",
+    "orang asing"
+  ],
+  "nuance": "Serba guna: minta perhatian, minta maaf, berterima kasih.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "すみません, トイレはどこですか。",
+      "id": "Permisi, di mana toiletnya?",
+      "level": "n5",
+      "tags": [
+        "perjalanan",
+        "sopan-santun"
+      ],
+  "pitch": {"pattern":4,"category":"nakadaka","mora_count":5,"downstep_mora":4,"contour":"スミマセ＼ン"}
+}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus",
+  "jmdict_seq": "1295060",
+  "frequency": 1000,
+  "meanings": [
+    {
+      "en": "excuse me; pardon me; I'm sorry; I beg your pardon",
+      "misc": [
+        "biasanya kana saja",
+        "polite (teineigo) language"
+      ],
+      "field": []
+    },
+    {
+      "en": "thank you; you shouldn't have; it's too much",
+      "misc": [
+        "biasanya kana saja",
+        "polite (teineigo) language"
+      ],
+      "field": []
+    }
+  ],
+  "misc_jm": [
+    "biasanya kana saja",
+    "polite (teineigo) language"
+  ]
 },
 
 {
-  id: 'vg-n5-00125',
-  word: 'ありがとうございます',
-  reading: 'ありがとうございます',
-  romaji: 'arigatou gozaimasu',
-  meaning_id: 'terima kasih',
-  meaning_en: 'thank you',
-  jlpt: 'n5',
-  pos: 'expr',
-  common: true,
-  related_grammar: [],
-  formalitas: 4,
-  domain: ['sopan-santun'],
-  register: 'formal',
-  lawan_bicara: ['umum', 'atasan'],
-  nuance: 'ありがとう untuk kasual. ありがとうございます untuk formal.',
-  conj_type: null,
-  examples: [
-      {"jp": "ありがとうございます。助かりました。", "id": "Terima kasih. Sangat membantu.", "level": "n5", "tags": ["sopan-santun"]}],
-  synonyms: [],
-  antonyms: [],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus',
-  jmdict_seq: '1541040',
-  frequency: 1000,
-  forms: [{"word": "有難うございます", "info": []}, {"word": "有り難うございます", "info": []}, {"word": "有難う御座います", "info": []}, {"word": "ありがとう御座います", "info": []}, {"word": "有り難う御座います", "info": []}],
-  misc_jm: ["biasanya kana saja", "polite (teineigo) language"],
+  "id": "vg-n5-00125",
+  "word": "ありがとうございます",
+  "reading": "ありがとうございます",
+  "romaji": "arigatou gozaimasu",
+  "meaning_id": "terima kasih",
+  "meaning_en": "thank you",
+  "jlpt": "n5",
+  "pos": "expression",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 4,
+  "domain": [
+    "sopan-santun"
+  ],
+  "register": "formal",
+  "lawan_bicara": [
+    "umum",
+    "atasan"
+  ],
+  "nuance": "ありがとう untuk kasual. ありがとうございます untuk formal.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "ありがとうございます。助かりました。",
+      "id": "Terima kasih. Sangat membantu.",
+      "level": "n5",
+      "tags": [
+        "sopan-santun"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus",
+  "jmdict_seq": "1541040",
+  "frequency": 1000,
+  "forms": [
+    {
+      "word": "有難うございます",
+      "info": []
+    },
+    {
+      "word": "有り難うございます",
+      "info": []
+    },
+    {
+      "word": "有難う御座います",
+      "info": []
+    },
+    {
+      "word": "ありがとう御座います",
+      "info": []
+    },
+    {
+      "word": "有り難う御座います",
+      "info": []
+    }
+  ],
+  "misc_jm": [
+    "biasanya kana saja",
+    "polite (teineigo) language"
+  ]
 },
 
 {
-  id: 'vg-n5-00126',
-  word: 'どうぞ',
-  reading: 'どうぞ',
-  romaji: 'douzo',
-  meaning_id: 'silakan',
-  meaning_en: 'please; go ahead',
-  jlpt: 'n5',
-  pos: 'expr',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['sopan-santun'],
-  register: 'neutral',
-  lawan_bicara: ['teman', 'umum'],
-  nuance: 'Menawarkan atau mempersilakan. どうぞ〜ください = tolong…',
-  conj_type: 'suru',
-  examples: [
-      {"jp": "どうぞ, 座ってください。", "id": "Silakan duduk.", "level": "n5", "tags": ["sopan-santun"]}],
-  synonyms: [],
-  antonyms: [],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus',
-  jmdict_seq: '1189130',
-  frequency: 1000,
-  meanings: [{"en": "please; kindly; pray; I beg (of you)", "misc": [], "field": []}, {"en": "by all means; certainly; of course; (go) ahead; (feel) free (to); (you are) welcome (to); please (help yourself to)", "misc": [], "field": []}, {"en": "here you are", "misc": [], "field": []}, {"en": "to give", "misc": ["children's language"], "field": []}],
-  misc_jm: ["children's language"],
+  "id": "vg-n5-00126",
+  "word": "どうぞ",
+  "reading": "どうぞ",
+  "romaji": "douzo",
+  "meaning_id": "silakan",
+  "meaning_en": "please; go ahead",
+  "jlpt": "n5",
+  "pos": "expression",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "sopan-santun"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "umum"
+  ],
+  "nuance": "Menawarkan atau mempersilakan. どうぞ〜ください = tolong…",
+  "conj_type": "suru",
+  "examples": [
+    {
+      "jp": "どうぞ, 座ってください。",
+      "id": "Silakan duduk.",
+      "level": "n5",
+      "tags": [
+        "sopan-santun"
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":0,"downstep_mora":1,"contour":"＼"}
+}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus",
+  "jmdict_seq": "1189130",
+  "frequency": 1000,
+  "meanings": [
+    {
+      "en": "please; kindly; pray; I beg (of you)",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "by all means; certainly; of course; (go) ahead; (feel) free (to); (you are) welcome (to); please (help yourself to)",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "here you are",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "to give",
+      "misc": [
+        "children's language"
+      ],
+      "field": []
+    }
+  ],
+  "misc_jm": [
+    "children's language"
+  ]
 },
 
 {
-  id: 'vg-n5-00141',
-  word: '〜から',
-  reading: '〜から',
-  romaji: '~kara',
-  meaning_id: 'dari; karena',
-  meaning_en: 'from; because',
-  jlpt: 'n5',
-  pos: 'particle',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['kehidupan-sehari'],
-  register: 'neutral',
-  lawan_bicara: ['teman', 'umum'],
-  nuance: 'Dua fungsi: titik asal (東京から来た) dan alasan (雨だから行かない).',
-  conj_type: null,
-  examples: [{"jp": "学校から家まで歩きます。", "id": "Saya berjalan dari sekolah ke rumah.", "level": "n5", "tags": ["kehidupan-sehari"]}],
-  synonyms: [],
-  antonyms: [],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  "id": "vg-n5-00141",
+  "word": "〜から",
+  "reading": "〜から",
+  "romaji": "~kara",
+  "meaning_id": "dari; karena",
+  "meaning_en": "from; because",
+  "jlpt": "n5",
+  "pos": "particle",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kehidupan-sehari"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "umum"
+  ],
+  "nuance": "Dua fungsi: titik asal (東京から来た) dan alasan (雨だから行かない).",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "学校から家まで歩きます。",
+      "id": "Saya berjalan dari sekolah ke rumah.",
+      "level": "n5",
+      "tags": [
+        "kehidupan-sehari"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus"
 },
 
 {
-  id: 'vg-n5-00142',
-  word: '〜まで',
-  reading: '〜まで',
-  romaji: '~made',
-  meaning_id: 'sampai; hingga',
-  meaning_en: 'until; up to',
-  jlpt: 'n5',
-  pos: 'particle',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['kehidupan-sehari'],
-  register: 'neutral',
-  lawan_bicara: ['teman', 'umum'],
-  nuance: 'Untuk tempat dan waktu. Sering dipasangkan dengan から.',
-  conj_type: null,
-  examples: [{"jp": "駅まで歩きます。", "id": "Saya berjalan sampai stasiun.", "level": "n5", "tags": ["perjalanan"]}],
-  synonyms: [],
-  antonyms: [],
-  see_also: ['vg-n5-00141'],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  "id": "vg-n5-00142",
+  "word": "〜まで",
+  "reading": "〜まで",
+  "romaji": "~made",
+  "meaning_id": "sampai; hingga",
+  "meaning_en": "until; up to",
+  "jlpt": "n5",
+  "pos": "particle",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kehidupan-sehari"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "umum"
+  ],
+  "nuance": "Untuk tempat dan waktu. Sering dipasangkan dengan から.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "駅まで歩きます。",
+      "id": "Saya berjalan sampai stasiun.",
+      "level": "n5",
+      "tags": [
+        "perjalanan"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [
+    "vg-n5-00141"
+  ],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus"
 },
 
 {
-  id: 'vg-n5-00413',
-  word: 'お先に失礼します',
-  reading: 'おさきにしつれいします',
-  romaji: 'osakinishitsureishimasu',
-  meaning_id: 'Permisi, saya duluan.',
-  meaning_en: 'Sorry, but I\'ll be leaving now.',
-  jlpt: 'n5',
-  pos: 'expr',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['pertemanan', 'keigo-vocabulary'],
-  register: 'neutral',
-  lawan_bicara: ['teman', 'umum'],
-  nuance: 'This is a standard workplace phrase used when leaving the office before your colleagues. It literally translates to \'I am doing something rude before you\', acknowledging the perceived impoliteness of leaving while others are still working.',
-  conj_type: null,
-  examples: [
-      {"jp":"仕事が終わりましたので、お先に失礼します。","id":"Karena pekerjaan sudah selesai, permisi saya pulang duluan.","level":"n5","tags":["pekerjaan"]}],
-  synonyms: [],
-  antonyms: [],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus',
-  jmdict_seq: '2196920',
+  "id": "vg-n5-00413",
+  "word": "お先に失礼します",
+  "reading": "おさきにしつれいします",
+  "romaji": "osakinishitsureishimasu",
+  "meaning_id": "Permisi, saya duluan.",
+  "meaning_en": "Sorry, but I'll be leaving now.",
+  "jlpt": "n5",
+  "pos": "expression",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "pertemanan",
+    "keigo-vocabulary"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "umum"
+  ],
+  "nuance": "This is a standard workplace phrase used when leaving the office before your colleagues. It literally translates to 'I am doing something rude before you', acknowledging the perceived impoliteness of leaving while others are still working.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "仕事が終わりましたので、お先に失礼します。",
+      "id": "Karena pekerjaan sudah selesai, permisi saya pulang duluan.",
+      "level": "n5",
+      "tags": [
+        "pekerjaan"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus",
+  "jmdict_seq": "2196920"
 },
 
 {
-  id: 'vg-n5-00615',
-  word: 'シャワーをあびる',
-  reading: 'シャワーをあびる',
-  romaji: 'shawa-woabiru',
-  meaning_id: 'mandi shower',
-  meaning_en: 'take a shower',
-  jlpt: 'n5',
-  pos: 'expr',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['kehidupan-sehari', 'pekerjaan'],
-  register: 'neutral',
-  lawan_bicara: ['teman', 'umum'],
-  nuance: 'シャワーをあびる: mandi shower. Pakai あびる (mandi kena air) bukan 入る.',
-  conj_type: 'ichidan',
-  examples: [{"jp": "シャワーをあびてから着替えます。", "id": "Saya ganti baju setelah mandi shower.", "level": "n5", "tags": ["kehidupan-sehari"]}],
-  synonyms: [],
-  antonyms: [],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus',
-  jmdict_seq: '2836288',
+  "id": "vg-n5-00615",
+  "word": "シャワーをあびる",
+  "reading": "シャワーをあびる",
+  "romaji": "shawa-woabiru",
+  "meaning_id": "mandi shower",
+  "meaning_en": "take a shower",
+  "jlpt": "n5",
+  "pos": "expression",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kehidupan-sehari",
+    "pekerjaan"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "umum"
+  ],
+  "nuance": "シャワーをあびる: mandi shower. Pakai あびる (mandi kena air) bukan 入る.",
+  "conj_type": "ichidan",
+  "examples": [
+    {
+      "jp": "シャワーをあびてから着替えます。",
+      "id": "Saya ganti baju setelah mandi shower.",
+      "level": "n5",
+      "tags": [
+        "kehidupan-sehari"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus",
+  "jmdict_seq": "2836288"
 },
 
 {
-  id: 'vg-n5-00696',
-  word: 'ネクタイをする',
-  reading: 'ネクタイをする',
-  romaji: 'nekutaiwosuru',
-  meaning_id: 'memakai dasi',
-  meaning_en: 'wear a tie',
-  jlpt: 'n5',
-  pos: 'expr',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['kehidupan-sehari', 'pekerjaan'],
-  register: 'neutral',
-  lawan_bicara: ['teman', 'umum'],
-  nuance: 'する dipakai untuk aksesori: ネクタイ・ベルト・めがねをする。',
-  conj_type: null,
-  examples: [{"jp": "ネクタイをしています。", "id": "Dia sedang memakai dasi.", "level": "n5", "tags": ["pekerjaan"]}],
-  synonyms: [],
-  antonyms: [],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  "id": "vg-n5-00696",
+  "word": "ネクタイをする",
+  "reading": "ネクタイをする",
+  "romaji": "nekutaiwosuru",
+  "meaning_id": "memakai dasi",
+  "meaning_en": "wear a tie",
+  "jlpt": "n5",
+  "pos": "expression",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kehidupan-sehari",
+    "pekerjaan"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "umum"
+  ],
+  "nuance": "する dipakai untuk aksesori: ネクタイ・ベルト・めがねをする。",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "ネクタイをしています。",
+      "id": "Dia sedang memakai dasi.",
+      "level": "n5",
+      "tags": [
+        "pekerjaan"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus"
 },
 
 {
-  id: 'vg-n5-00697',
-  word: 'とけいをする',
-  reading: 'とけいをする',
-  romaji: 'tokeiwosuru',
-  meaning_id: 'memakai jam tangan',
-  meaning_en: 'wear a watch',
-  jlpt: 'n5',
-  pos: 'expr',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['kehidupan-sehari'],
-  register: 'neutral',
-  lawan_bicara: ['teman', 'umum'],
-  nuance: 'In Japanese, different verbs are used for wearing things depending on the body part. \'する\' (to do) is commonly used for accessories fastened to the body, such as watches, ties, and belts.',
-  conj_type: null,
-  examples: [{"jp": "とけいをしていますか。", "id": "Apakah kamu memakai jam tangan?", "level": "n5", "tags": ["kehidupan-sehari"]}],
-  synonyms: [],
-  antonyms: [],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  "id": "vg-n5-00697",
+  "word": "とけいをする",
+  "reading": "とけいをする",
+  "romaji": "tokeiwosuru",
+  "meaning_id": "memakai jam tangan",
+  "meaning_en": "wear a watch",
+  "jlpt": "n5",
+  "pos": "expression",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kehidupan-sehari"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "umum"
+  ],
+  "nuance": "In Japanese, different verbs are used for wearing things depending on the body part. 'する' (to do) is commonly used for accessories fastened to the body, such as watches, ties, and belts.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "とけいをしていますか。",
+      "id": "Apakah kamu memakai jam tangan?",
+      "level": "n5",
+      "tags": [
+        "kehidupan-sehari"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus"
 },
 
 {
-  id: 'vg-n5-00698',
-  word: 'シャツをきる',
-  reading: 'シャツをきる',
-  romaji: 'shatsuwokiru',
-  meaning_id: 'memakai kemeja',
-  meaning_en: 'wear a shirt',
-  jlpt: 'n5',
-  pos: 'expr',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['kehidupan-sehari'],
-  register: 'neutral',
-  lawan_bicara: ['teman', 'umum'],
-  nuance: 'きる dipakai untuk pakaian atas (kemeja, jaket, mantel).',
-  conj_type: null,
-  examples: [{"jp": "白いシャツをきています。", "id": "Dia memakai kemeja putih.", "level": "n5", "tags": ["kehidupan-sehari"]}],
-  synonyms: [],
-  antonyms: [],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  "id": "vg-n5-00698",
+  "word": "シャツをきる",
+  "reading": "シャツをきる",
+  "romaji": "shatsuwokiru",
+  "meaning_id": "memakai kemeja",
+  "meaning_en": "wear a shirt",
+  "jlpt": "n5",
+  "pos": "expression",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kehidupan-sehari"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "umum"
+  ],
+  "nuance": "きる dipakai untuk pakaian atas (kemeja, jaket, mantel).",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "白いシャツをきています。",
+      "id": "Dia memakai kemeja putih.",
+      "level": "n5",
+      "tags": [
+        "kehidupan-sehari"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus"
 },
 
 {
-  id: 'vg-n5-00699',
-  word: 'ベルトをする',
-  reading: 'ベルトをする',
-  romaji: 'berutowosuru',
-  meaning_id: 'memakai sabuk',
-  meaning_en: 'wear a belt',
-  jlpt: 'n5',
-  pos: 'expr',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['kehidupan-sehari'],
-  register: 'neutral',
-  lawan_bicara: ['teman', 'umum'],
-  nuance: 'Just like with watches, wearing a belt requires the verb \'する\' instead of a typical \'wearing\' verb. It generally applies to accessories that you tie, buckle, or wrap around yourself.',
-  conj_type: null,
-  examples: [{"jp": "ベルトをしてください。", "id": "Tolong pakai sabuk.", "level": "n5", "tags": ["kehidupan-sehari"]}],
-  synonyms: [],
-  antonyms: [],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  "id": "vg-n5-00699",
+  "word": "ベルトをする",
+  "reading": "ベルトをする",
+  "romaji": "berutowosuru",
+  "meaning_id": "memakai sabuk",
+  "meaning_en": "wear a belt",
+  "jlpt": "n5",
+  "pos": "expression",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kehidupan-sehari"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "umum"
+  ],
+  "nuance": "Just like with watches, wearing a belt requires the verb 'する' instead of a typical 'wearing' verb. It generally applies to accessories that you tie, buckle, or wrap around yourself.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "ベルトをしてください。",
+      "id": "Tolong pakai sabuk.",
+      "level": "n5",
+      "tags": [
+        "kehidupan-sehari"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus"
 },
 
 {
-  id: 'vg-n5-00701',
-  word: 'ズボンをはく',
-  reading: 'ズボンをはく',
-  romaji: 'zubonwohaku',
-  meaning_id: 'memakai celana',
-  meaning_en: 'wear pants',
-  jlpt: 'n5',
-  pos: 'expr',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['kehidupan-sehari'],
-  register: 'neutral',
-  lawan_bicara: ['teman', 'umum'],
-  nuance: 'はく dipakai untuk pakaian bawah (celana, rok) dan alas kaki.',
-  conj_type: null,
-  examples: [{"jp": "ジーンズをはいています。", "id": "Dia memakai jeans.", "level": "n5", "tags": ["kehidupan-sehari"]}],
-  synonyms: [],
-  antonyms: [],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  "id": "vg-n5-00701",
+  "word": "ズボンをはく",
+  "reading": "ズボンをはく",
+  "romaji": "zubonwohaku",
+  "meaning_id": "memakai celana",
+  "meaning_en": "wear pants",
+  "jlpt": "n5",
+  "pos": "expression",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kehidupan-sehari"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "umum"
+  ],
+  "nuance": "はく dipakai untuk pakaian bawah (celana, rok) dan alas kaki.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "ジーンズをはいています。",
+      "id": "Dia memakai jeans.",
+      "level": "n5",
+      "tags": [
+        "kehidupan-sehari"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus"
 },
 
 {
-  id: 'vg-n5-00702',
-  word: 'ぼうしをかぶる',
-  reading: 'ぼうしをかぶる',
-  romaji: 'boushiwokaburu',
-  meaning_id: 'memakai topi',
-  meaning_en: 'wear a hat',
-  jlpt: 'n5',
-  pos: 'expr',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['kehidupan-sehari'],
-  register: 'neutral',
-  lawan_bicara: ['teman', 'umum'],
-  nuance: 'かぶる dipakai khusus untuk topi dan helm.',
-  conj_type: null,
-  examples: [{"jp": "ぼうしをかぶってください。", "id": "Tolong pakai topi.", "level": "n5", "tags": ["kehidupan-sehari"]}],
-  synonyms: [],
-  antonyms: [],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  "id": "vg-n5-00702",
+  "word": "ぼうしをかぶる",
+  "reading": "ぼうしをかぶる",
+  "romaji": "boushiwokaburu",
+  "meaning_id": "memakai topi",
+  "meaning_en": "wear a hat",
+  "jlpt": "n5",
+  "pos": "expression",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kehidupan-sehari"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "umum"
+  ],
+  "nuance": "かぶる dipakai khusus untuk topi dan helm.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "ぼうしをかぶってください。",
+      "id": "Tolong pakai topi.",
+      "level": "n5",
+      "tags": [
+        "kehidupan-sehari"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus"
 },
 
 {
-  id: 'vg-n5-00703',
-  word: 'めがねをかける',
-  reading: 'めがねをかける',
-  romaji: 'meganewokakeru',
-  meaning_id: 'memakai kacamata',
-  meaning_en: 'wear glasses',
-  jlpt: 'n5',
-  pos: 'expr',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['kehidupan-sehari'],
-  register: 'neutral',
-  lawan_bicara: ['teman', 'umum'],
-  nuance: 'かける dipakai untuk kacamata. Berbeda nuansa: かける = menggantungkan di wajah.',
-  conj_type: 'ichidan',
-  examples: [{"jp": "めがねをかけています。", "id": "Dia memakai kacamata.", "level": "n5", "tags": ["kehidupan-sehari"]}],
-  synonyms: [],
-  antonyms: [],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus',
-  jmdict_seq: '1911810',
-  forms: [{"word": "眼鏡をかける", "info": []}, {"word": "眼鏡を掛ける", "info": []}, {"word": "メガネを掛ける", "info": []}, {"word": "めがねを掛ける", "info": []}],
-  misc_jm: ["biasanya kana saja"],
+  "id": "vg-n5-00703",
+  "word": "めがねをかける",
+  "reading": "めがねをかける",
+  "romaji": "meganewokakeru",
+  "meaning_id": "memakai kacamata",
+  "meaning_en": "wear glasses",
+  "jlpt": "n5",
+  "pos": "expression",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kehidupan-sehari"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "umum"
+  ],
+  "nuance": "かける dipakai untuk kacamata. Berbeda nuansa: かける = menggantungkan di wajah.",
+  "conj_type": "ichidan",
+  "examples": [
+    {
+      "jp": "めがねをかけています。",
+      "id": "Dia memakai kacamata.",
+      "level": "n5",
+      "tags": [
+        "kehidupan-sehari"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus",
+  "jmdict_seq": "1911810",
+  "forms": [
+    {
+      "word": "眼鏡をかける",
+      "info": []
+    },
+    {
+      "word": "眼鏡を掛ける",
+      "info": []
+    },
+    {
+      "word": "メガネを掛ける",
+      "info": []
+    },
+    {
+      "word": "めがねを掛ける",
+      "info": []
+    }
+  ],
+  "misc_jm": [
+    "biasanya kana saja"
+  ]
 },
 
 {
-  id: 'vg-n5-00704',
-  word: 'スカーフをする',
-  reading: 'スカーフをする',
-  romaji: 'suka-fuwosuru',
-  meaning_id: 'memakai syal',
-  meaning_en: 'wear a scarf',
-  jlpt: 'n5',
-  pos: 'expr',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['kehidupan-sehari'],
-  register: 'neutral',
-  lawan_bicara: ['teman', 'umum'],
-  nuance: 'The verb \'する\' is used for accessories worn around the neck, such as scarves or necklaces. While \'巻く\' (to wrap) can also be used for scarves, \'する\' is very natural for everyday conversation.',
-  conj_type: null,
-  examples: [{"jp": "スカーフをしています。", "id": "Dia memakai syal.", "level": "n5", "tags": ["kehidupan-sehari"]}],
-  synonyms: [],
-  antonyms: [],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  "id": "vg-n5-00704",
+  "word": "スカーフをする",
+  "reading": "スカーフをする",
+  "romaji": "suka-fuwosuru",
+  "meaning_id": "memakai syal",
+  "meaning_en": "wear a scarf",
+  "jlpt": "n5",
+  "pos": "expression",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kehidupan-sehari"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "umum"
+  ],
+  "nuance": "The verb 'する' is used for accessories worn around the neck, such as scarves or necklaces. While '巻く' (to wrap) can also be used for scarves, 'する' is very natural for everyday conversation.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "スカーフをしています。",
+      "id": "Dia memakai syal.",
+      "level": "n5",
+      "tags": [
+        "kehidupan-sehari"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus"
 },
 
 {
-  id: 'vg-n5-00705',
-  word: 'セーターをきる',
-  reading: 'セーターをきる',
-  romaji: 'se-ta-wokiru',
-  meaning_id: 'memakai sweater',
-  meaning_en: 'wear a sweater',
-  jlpt: 'n5',
-  pos: 'expr',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['kehidupan-sehari'],
-  register: 'neutral',
-  lawan_bicara: ['teman', 'umum'],
-  nuance: 'For clothing worn on the upper body, such as shirts, sweaters, and coats, Japanese uses the verb \'着る\' (きる). This is distinct from wearing pants, shoes, or accessories.',
-  conj_type: null,
-  examples: [{"jp": "セーターをきて出かけました。", "id": "Saya keluar dengan memakai sweater.", "level": "n5", "tags": ["kehidupan-sehari"]}],
-  synonyms: [],
-  antonyms: [],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  "id": "vg-n5-00705",
+  "word": "セーターをきる",
+  "reading": "セーターをきる",
+  "romaji": "se-ta-wokiru",
+  "meaning_id": "memakai sweater",
+  "meaning_en": "wear a sweater",
+  "jlpt": "n5",
+  "pos": "expression",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kehidupan-sehari"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "umum"
+  ],
+  "nuance": "For clothing worn on the upper body, such as shirts, sweaters, and coats, Japanese uses the verb '着る' (きる). This is distinct from wearing pants, shoes, or accessories.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "セーターをきて出かけました。",
+      "id": "Saya keluar dengan memakai sweater.",
+      "level": "n5",
+      "tags": [
+        "kehidupan-sehari"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus"
 },
 
 {
-  id: 'vg-n5-00706',
-  word: 'くつしたをはく',
-  reading: 'くつしたをはく',
-  romaji: 'kutsushitawohaku',
-  meaning_id: 'memakai kaus kaki',
-  meaning_en: 'wear socks',
-  jlpt: 'n5',
-  pos: 'expr',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['kehidupan-sehari'],
-  register: 'neutral',
-  lawan_bicara: ['teman', 'umum'],
-  nuance: 'For items worn on the lower half of the body or feet, such as pants, skirts, and socks, the verb \'はく\' is used. It applies to anything you \'step into\'.',
-  conj_type: null,
-  examples: [{"jp": "くつしたをはいてください。", "id": "Tolong pakai kaus kaki.", "level": "n5", "tags": ["kehidupan-sehari"]}],
-  synonyms: [],
-  antonyms: [],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  "id": "vg-n5-00706",
+  "word": "くつしたをはく",
+  "reading": "くつしたをはく",
+  "romaji": "kutsushitawohaku",
+  "meaning_id": "memakai kaus kaki",
+  "meaning_en": "wear socks",
+  "jlpt": "n5",
+  "pos": "expression",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kehidupan-sehari"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "umum"
+  ],
+  "nuance": "For items worn on the lower half of the body or feet, such as pants, skirts, and socks, the verb 'はく' is used. It applies to anything you 'step into'.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "くつしたをはいてください。",
+      "id": "Tolong pakai kaus kaki.",
+      "level": "n5",
+      "tags": [
+        "kehidupan-sehari"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus"
 },
 
 {
-  id: 'vg-n5-00707',
-  word: 'くつをはく',
-  reading: 'くつをはく',
-  romaji: 'kutsuwohaku',
-  meaning_id: 'memakai sepatu',
-  meaning_en: 'wear shoes',
-  jlpt: 'n5',
-  pos: 'expr',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['kehidupan-sehari'],
-  register: 'neutral',
-  lawan_bicara: ['teman', 'umum'],
-  nuance: 'Similar to socks and trousers, shoes are put on using the verb \'はく\'. This rule applies consistently to all footwear in Japanese.',
-  conj_type: null,
-  examples: [{"jp": "くつをはいてから入ってください。", "id": "Tolong pakai sepatu sebelum masuk.", "level": "n5", "tags": ["kehidupan-sehari"]}],
-  synonyms: [],
-  antonyms: [],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  "id": "vg-n5-00707",
+  "word": "くつをはく",
+  "reading": "くつをはく",
+  "romaji": "kutsuwohaku",
+  "meaning_id": "memakai sepatu",
+  "meaning_en": "wear shoes",
+  "jlpt": "n5",
+  "pos": "expression",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kehidupan-sehari"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "umum"
+  ],
+  "nuance": "Similar to socks and trousers, shoes are put on using the verb 'はく'. This rule applies consistently to all footwear in Japanese.",
+  "conj_type": null,
+  "examples": [
+    {
+      "jp": "くつをはいてから入ってください。",
+      "id": "Tolong pakai sepatu sebelum masuk.",
+      "level": "n5",
+      "tags": [
+        "kehidupan-sehari"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus"
 },
 
 {
@@ -485,7 +830,7 @@ window.vocabN5_Expressions = [
   "meaning_id": "ah, oh (seruan ekspresi kesadaran atau keterkejutan)",
   "meaning_en": "Ah!, Oh!",
   "jlpt": "n5",
-  "pos": "expr",
+  "pos": "expression",
   "common": true,
   "related_grammar": [],
   "formalitas": 1,
@@ -509,8 +854,9 @@ window.vocabN5_Expressions = [
       "tags": [
         "percakapan",
         "pemahaman"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":0,"downstep_mora":0,"contour":"￣"}
+},
     {
       "jp": "ああ、おいしい！このケーキは最高です。",
       "id": "Wah, enaknya! Kue ini mantap sekali.",
@@ -536,6 +882,7 @@ window.vocabN5_Expressions = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n5-00733",
   "word": "あの",
@@ -544,7 +891,7 @@ window.vocabN5_Expressions = [
   "meaning_id": "itu (jauh di sana); anu, permisi... (kata pembuka)",
   "meaning_en": "that (over there); um..., well...",
   "jlpt": "n5",
-  "pos": "expr",
+  "pos": "expression",
   "common": true,
   "related_grammar": [],
   "formalitas": 2,
@@ -568,8 +915,9 @@ window.vocabN5_Expressions = [
       "tags": [
         "deskripsi",
         "kota"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":0,"downstep_mora":0,"contour":"￣"}
+},
     {
       "jp": "あの、駅はどちらでしょうか。",
       "id": "Permisi (anu), stasiun ada di sebelah mana ya?",
@@ -598,6 +946,7 @@ window.vocabN5_Expressions = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n5-00736",
   "word": "いいえ",
@@ -606,7 +955,7 @@ window.vocabN5_Expressions = [
   "meaning_id": "tidak, bukan; sama-sama (tidak apa-apa)",
   "meaning_en": "no, not at all",
   "jlpt": "n5",
-  "pos": "expr",
+  "pos": "expression",
   "common": true,
   "related_grammar": [],
   "formalitas": 2,
@@ -661,6 +1010,7 @@ window.vocabN5_Expressions = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n5-00748",
   "word": "ええ",
@@ -669,7 +1019,7 @@ window.vocabN5_Expressions = [
   "meaning_id": "ya, betul",
   "meaning_en": "yes (conversational), right",
   "jlpt": "n5",
-  "pos": "expr",
+  "pos": "expression",
   "common": true,
   "related_grammar": [],
   "formalitas": 2,
@@ -693,8 +1043,9 @@ window.vocabN5_Expressions = [
       "tags": [
         "percakapan",
         "tanya"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":0,"downstep_mora":1,"contour":"＼"}
+},
     {
       "jp": "ええ、私もそう思います。",
       "id": "Ya, saya juga berpikir demikian.",
@@ -724,6 +1075,7 @@ window.vocabN5_Expressions = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n5-00750",
   "word": "お～",
@@ -732,7 +1084,7 @@ window.vocabN5_Expressions = [
   "meaning_id": "awalan sopan / penghormatan (bikago/keigo)",
   "meaning_en": "honorable ~ (polite/honorific prefix)",
   "jlpt": "n5",
-  "pos": "expr",
+  "pos": "expression",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -785,6 +1137,7 @@ window.vocabN5_Expressions = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n5-00780",
   "word": "下さい",
@@ -793,7 +1146,7 @@ window.vocabN5_Expressions = [
   "meaning_id": "tolong, silakan; berikanlah",
   "meaning_en": "please do; please give me",
   "jlpt": "n5",
-  "pos": "expr",
+  "pos": "expression",
   "common": true,
   "related_grammar": [],
   "formalitas": 2,
@@ -817,8 +1170,9 @@ window.vocabN5_Expressions = [
       "tags": [
         "komunikasi",
         "sopan-santun"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"クダサ＼イ"}
+},
     {
       "jp": "すみません、水を一杯ください。",
       "id": "Permisi, tolong beri saya segelas air.",
@@ -844,6 +1198,7 @@ window.vocabN5_Expressions = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n5-00807",
   "word": "さあ",
@@ -852,7 +1207,7 @@ window.vocabN5_Expressions = [
   "meaning_id": "ayo, mari; entahlah (kata seru)",
   "meaning_en": "come now; well; let's see",
   "jlpt": "n5",
-  "pos": "expr",
+  "pos": "expression",
   "common": true,
   "related_grammar": [],
   "formalitas": 1,
@@ -875,8 +1230,9 @@ window.vocabN5_Expressions = [
       "tags": [
         "komunikasi",
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":0,"downstep_mora":1,"contour":"＼"}
+},
     {
       "jp": "田中さんはどこですか。さあ、よく知りません。",
       "id": "Di mana Tanaka-san? Entahlah, saya tidak tahu persis.",
@@ -901,6 +1257,7 @@ window.vocabN5_Expressions = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n5-00842",
   "word": "そう; そうです",
@@ -909,7 +1266,7 @@ window.vocabN5_Expressions = [
   "meaning_id": "begitu, demikian, ya benar",
   "meaning_en": "so, like that, that's right, yes",
   "jlpt": "n5",
-  "pos": "expr",
+  "pos": "expression",
   "common": true,
   "related_grammar": [],
   "formalitas": 2,
@@ -963,6 +1320,7 @@ window.vocabN5_Expressions = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n5-00908",
   "word": "はい",
@@ -971,7 +1329,7 @@ window.vocabN5_Expressions = [
   "meaning_id": "ya, betul; baik (tanggapan setuju/hadir)",
   "meaning_en": "yes; alright, present (affirmative response)",
   "jlpt": "n5",
-  "pos": "expr",
+  "pos": "expression",
   "common": true,
   "related_grammar": [],
   "formalitas": 2,
@@ -996,8 +1354,9 @@ window.vocabN5_Expressions = [
       "tags": [
         "percakapan",
         "sopan-santun"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":0,"downstep_mora":1,"contour":"＼"}
+},
     {
       "jp": "はい、分かりました。",
       "id": "Ya, saya mengerti.",
@@ -1025,6 +1384,7 @@ window.vocabN5_Expressions = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n5-00971",
   "word": "もしもし",
@@ -1033,7 +1393,7 @@ window.vocabN5_Expressions = [
   "meaning_id": "halo (ketika berbicara di telepon)",
   "meaning_en": "hello (when speaking on the phone)",
   "jlpt": "n5",
-  "pos": "expr",
+  "pos": "expression",
   "common": true,
   "related_grammar": [],
   "formalitas": 2,
@@ -1059,8 +1419,9 @@ window.vocabN5_Expressions = [
       "tags": [
         "telepon",
         "percakapan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":0,"downstep_mora":1,"contour":"＼"}
+},
     {
       "jp": "もしもし、電波が悪くて声がよく聞こえません。",
       "id": "Halo, sinyalnya buruk sehingga suaranya kurang terdengar jelas.",
@@ -1085,14 +1446,12 @@ window.vocabN5_Expressions = [
   }
 },
 
-// ── Staged Expansion (9) ──
-
 {
   "id": "vg-n5-01020",
   "word": "いただきます",
   "reading": "いただきます",
   "romaji": "itadakimasu",
-  "meaning_id": "expression of gratitude before meals",
+  "meaning_id": "ungkapan terima kasih sebelum makan",
   "meaning_en": "expression of gratitude before meals",
   "jlpt": "n5",
   "pos": "expression",
@@ -1142,7 +1501,7 @@ window.vocabN5_Expressions = [
   "word": "お願いします",
   "reading": "おねがいします",
   "romaji": "onegaishimasu",
-  "meaning_id": "please",
+  "meaning_id": "silakan / tolong",
   "meaning_en": "please",
   "jlpt": "n5",
   "pos": "expression",
@@ -1192,7 +1551,7 @@ window.vocabN5_Expressions = [
   "word": "女の子",
   "reading": "おんなのこ",
   "romaji": "onnanoko",
-  "meaning_id": "girl",
+  "meaning_id": "gadis",
   "meaning_en": "girl",
   "jlpt": "n5",
   "pos": "expression",
@@ -1217,8 +1576,9 @@ window.vocabN5_Expressions = [
       "level": "n5",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":5,"downstep_mora":3,"contour":"オンナ＼ノコ"}
+},
     {
       "jp": "ほかの女の子たちはどこにいるの。",
       "id": "Where are the other girls?",
@@ -1242,7 +1602,7 @@ window.vocabN5_Expressions = [
   "word": "ください",
   "reading": "ください",
   "romaji": "kudasai",
-  "meaning_id": "please",
+  "meaning_id": "silakan / tolong",
   "meaning_en": "please",
   "jlpt": "n5",
   "pos": "expression",
@@ -1267,8 +1627,9 @@ window.vocabN5_Expressions = [
       "level": "n5",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"クダサ＼イ"}
+},
     {
       "jp": "話があったら電話をかけて下さい。",
       "id": "If you want to speak to me, please call me up.",
@@ -1292,7 +1653,7 @@ window.vocabN5_Expressions = [
   "word": "ごめんなさい",
   "reading": "ごめんなさい",
   "romaji": "gomennasai",
-  "meaning_id": "I beg your pardon; excuse me",
+  "meaning_id": "Saya mohon maaf; permisi",
   "meaning_en": "I beg your pardon; excuse me",
   "jlpt": "n5",
   "pos": "expression",
@@ -1342,7 +1703,7 @@ window.vocabN5_Expressions = [
   "word": "すみません",
   "reading": "すみません",
   "romaji": "sumimasen",
-  "meaning_id": "sorry; excuse me",
+  "meaning_id": "maaf; permisi",
   "meaning_en": "sorry; excuse me",
   "jlpt": "n5",
   "pos": "expression",
@@ -1367,8 +1728,9 @@ window.vocabN5_Expressions = [
       "level": "n5",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":4,"category":"nakadaka","mora_count":5,"downstep_mora":4,"contour":"スミマセ＼ン"}
+},
     {
       "jp": "すみませんが電話に出てください。",
       "id": "Tolong answer the phone.",
@@ -1392,7 +1754,7 @@ window.vocabN5_Expressions = [
   "word": "それから",
   "reading": "それから",
   "romaji": "sorekara",
-  "meaning_id": "after that",
+  "meaning_id": "setelah itu",
   "meaning_en": "after that",
   "jlpt": "n5",
   "pos": "expression",
@@ -1442,7 +1804,7 @@ window.vocabN5_Expressions = [
   "word": "どうぞよろしく",
   "reading": "どうぞよろしく",
   "romaji": "douzoyoroshiku",
-  "meaning_id": "pleased to meet you",
+  "meaning_id": "senang bertemu denganmu",
   "meaning_en": "pleased to meet you",
   "jlpt": "n5",
   "pos": "expression",
@@ -1492,7 +1854,7 @@ window.vocabN5_Expressions = [
   "word": "はじめまして",
   "reading": "はじめまして",
   "romaji": "hajimemashite",
-  "meaning_id": "How do you do?; I am glad to meet you",
+  "meaning_id": "Bagaimana kabarmu?; Saya senang bertemu dengan Anda",
   "meaning_en": "How do you do?; I am glad to meet you",
   "jlpt": "n5",
   "pos": "expression",
@@ -1517,8 +1879,9 @@ window.vocabN5_Expressions = [
       "level": "n5",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":4,"category":"nakadaka","mora_count":6,"downstep_mora":4,"contour":"ハジメマ＼シテ"}
+},
     {
       "jp": "はじめまして、ジョーンズ夫人。",
       "id": "How do you do, Mrs. Jones?",

@@ -36,7 +36,18 @@ import { PanicRecallCard } from '../components/quiz/PanicRecallCard';
 import { MoraPacingCard } from '../components/quiz/MoraPacingCard';
 
 export const QuizPage: React.FC = () => {
-  const { selectedLevel, setSelectedLevel, showToast, incrementXp, setActiveTab, setCard, cards, userSubstratum } = useAppStore();
+  const {
+    selectedLevel,
+    setSelectedLevel,
+    showToast,
+    incrementXp,
+    setActiveTab,
+    setCard,
+    cards,
+    userSubstratum,
+    fsrsDueReviewTrigger,
+    clearFSRSDueReviewTrigger,
+  } = useAppStore();
 
   // Navigation state within Quiz Arena: 'hub' (dashboard) | 'quiz' (active session)
   const [viewState, setViewState] = useState<'hub' | 'quiz'>('hub');
@@ -158,6 +169,14 @@ export const QuizPage: React.FC = () => {
     }
   };
 
+  // Automatically trigger FSRS due review session when dispatched from KebunPage
+  useEffect(() => {
+    if (fsrsDueReviewTrigger) {
+      clearFSRSDueReviewTrigger();
+      startFSRSDueSession();
+    }
+  }, [fsrsDueReviewTrigger]);
+
   // Load Mistake Retry session
   const startMistakeSession = () => {
     if (mistakesList.length === 0) {
@@ -198,12 +217,11 @@ export const QuizPage: React.FC = () => {
     setViewState('hub');
   };
 
-  // Touch Swipe Gesture for Mobile Flashcards
-  const { swipeHint, touchHandlers } = useSwipeGesture({
+  // Touch Swipe Gesture for Mobile Flashcards (Ticket T-221 - T-224)
+  const { swipeHint, touchHandlers, dragOffset, isDragging, wasRecentlySwiped } = useSwipeGesture({
     enabled: activeMode === 'flashcard' && isFlipped && viewState === 'quiz',
     onSwipeLeft: () => handleFlashcardRate(3),
     onSwipeRight: () => handleFlashcardRate(1),
-    onSwipeDown: () => handleFlashcardRate(2),
   });
 
   // Set up tokens when moving to next rearrange question
@@ -305,6 +323,11 @@ export const QuizPage: React.FC = () => {
           (v.level || 'n5').toLowerCase() as any
         );
       }
+    } else if (!isCorrect || rating === 1) {
+      // Dynamic Kanji garden wilting on lapse (Ticket T-199)
+      const v = target as any;
+      const kanjiMatch = v.word?.match(/[\u4e00-\u9faf]/);
+      useGardenStore.getState().applyLapseWilt(kanjiMatch ? kanjiMatch[0] : undefined);
     }
   };
 
@@ -552,7 +575,7 @@ export const QuizPage: React.FC = () => {
         />
       ) : (
         /* State 2: Active Focused Quiz Arena */
-        <div className="space-y-5 animate-in fade-in duration-200">
+        <div className="space-y-5 animate-in fade-in duration-200 overscroll-y-contain">
           {/* Zen Focus Top Control Bar */}
           <div className="flex items-center justify-between gap-3 border-b border-theme pb-3.5">
             <button
@@ -657,8 +680,19 @@ export const QuizPage: React.FC = () => {
                 <div className="space-y-4">
                   <div
                     {...touchHandlers}
-                    onClick={toggleFlip}
-                    className={`relative cursor-pointer min-h-[260px] sm:min-h-[300px] rounded-2xl sm:rounded-3xl border-2 p-5 sm:p-8 flex flex-col justify-between text-center transition-all duration-300 select-none shadow-xl overflow-hidden ${
+                    onClick={() => {
+                      if (wasRecentlySwiped()) return;
+                      toggleFlip();
+                    }}
+                    style={{
+                      transform: isDragging
+                        ? `translate3d(${dragOffset.x}px, ${dragOffset.y * 0.2}px, 0) rotate(${dragOffset.x * 0.04}deg)`
+                        : undefined,
+                      transition: isDragging ? 'none' : 'transform 0.3s cubic-bezier(0.2, 0.8, 0.2, 1)',
+                      touchAction: isDragging ? 'none' : 'pan-y',
+                      overscrollBehaviorY: 'contain',
+                    }}
+                    className={`relative cursor-pointer min-h-[260px] sm:min-h-[300px] rounded-2xl sm:rounded-3xl border-2 p-5 sm:p-8 flex flex-col justify-between text-center transition-all duration-300 select-none shadow-xl perspective-1000 transform-style-3d card-preserve-3d ${
                       isFlipped
                         ? 'bg-amber-500/15 dark:bg-amber-950/40 border-amber-500/60'
                         : 'bg-surface border-accent/30 hover:border-accent/50'
@@ -676,13 +710,6 @@ export const QuizPage: React.FC = () => {
                       <div className="absolute inset-0 bg-red-500/25 backdrop-blur-[2px] rounded-3xl flex items-center justify-center pointer-events-none z-20 animate-in fade-in duration-150">
                         <span className="text-xl sm:text-2xl font-bold text-red-300 bg-surface/95 px-5 py-2.5 rounded-2xl border border-red-500/50 shadow-2xl">
                           ❌ Lupa (Geser Kanan)
-                        </span>
-                      </div>
-                    )}
-                    {isFlipped && swipeHint === 'down' && (
-                      <div className="absolute inset-0 bg-amber-500/25 backdrop-blur-[2px] rounded-3xl flex items-center justify-center pointer-events-none z-20 animate-in fade-in duration-150">
-                        <span className="text-xl sm:text-2xl font-bold text-amber-300 bg-surface/95 px-5 py-2.5 rounded-2xl border border-amber-500/50 shadow-2xl">
-                          😅 Ragu (Geser Bawah)
                         </span>
                       </div>
                     )}
@@ -805,7 +832,15 @@ export const QuizPage: React.FC = () => {
                           <Flag className="w-3.5 h-3.5" />
                         </button>
                         <button
-                          onClick={() => speakJapanese(currentQ.questionText)}
+                          onClick={() => {
+                            const cleanAudioText = currentQ.questionText
+                              .replace(/^Kata:\s*"?/, '')
+                              .replace(/["'”]/g, '')
+                              .replace(/\s*[\(（].*?[\)）]/g, '')
+                              .replace(/\s*—.*$/, '')
+                              .trim();
+                            speakJapanese(cleanAudioText || currentQ.questionText);
+                          }}
                           className="p-1.5 rounded-xl bg-surface-2 hover:bg-surface-3 text-appText-muted hover:text-accent transition-all"
                           title="Dengarkan pelafalan"
                         >
@@ -816,8 +851,8 @@ export const QuizPage: React.FC = () => {
                     <div className="text-2xl sm:text-4xl font-jp font-bold text-appText-bright">
                       {currentQ.questionText}
                     </div>
-                    {currentQ.pitchContour && (
-                      <div className="inline-flex items-center gap-2 px-3 py-1 rounded-xl bg-purple-500/15 border border-purple-500/30 text-purple-300 text-xs font-mono">
+                    {feedback && currentQ.pitchContour && (
+                      <div className="inline-flex items-center gap-2 px-3 py-1 rounded-xl bg-purple-500/15 border border-purple-500/30 text-purple-300 text-xs font-mono animate-in fade-in">
                         <span className="font-semibold text-appText-muted">Aksen Tokyo:</span>
                         <span className="font-extrabold text-accent-hot">{currentQ.pitchContour}</span>
                       </div>
@@ -911,9 +946,9 @@ export const QuizPage: React.FC = () => {
                   </div>
 
                   {/* Assembled Sentence Box */}
-                  <div className="min-h-[70px] bg-surface-2 border border-accent/30 rounded-2xl p-4 flex flex-wrap gap-2 items-center">
+                  <div className="min-h-[76px] bg-surface-2 border border-accent/30 rounded-2xl p-3 sm:p-4 flex flex-wrap gap-2 sm:gap-2.5 items-center">
                     {assembledTokens.length === 0 ? (
-                      <span className="text-xs text-appText-muted/60 italic">
+                      <span className="text-xs text-appText-muted/60 italic px-2">
                         Ketuk kata di bawah untuk mulai menyusun kalimat...
                       </span>
                     ) : (
@@ -921,21 +956,25 @@ export const QuizPage: React.FC = () => {
                         <button
                           key={idx}
                           onClick={() => handleRemoveToken(token, idx)}
-                          className="px-3.5 py-2 rounded-xl bg-amber-500 text-bg font-jp font-bold text-sm shadow-sm hover:opacity-90 transition-all active:scale-95"
+                          className="min-h-[44px] px-3.5 py-2 rounded-xl sm:rounded-2xl bg-amber-500 text-bg font-japanese font-bold text-sm sm:text-base shadow-md hover:bg-amber-400 transition-all active:scale-95 flex items-center gap-1.5 border border-amber-600/30"
+                          title={`Posisi ke-${idx + 1}: Ketuk untuk membatalkan`}
                         >
-                          {token}
+                          <span className="w-5 h-5 rounded-full bg-black/20 text-[10px] font-mono flex items-center justify-center text-bg font-black">
+                            {idx + 1}
+                          </span>
+                          <span>{token}</span>
                         </button>
                       ))
                     )}
                   </div>
 
                   {/* Available Token Chips */}
-                  <div className="flex flex-wrap gap-2.5 p-2">
+                  <div className="flex flex-wrap gap-2 sm:gap-2.5 p-1 sm:p-2">
                     {availableTokens.map((token, idx) => (
                       <button
                         key={idx}
                         onClick={() => handleAddToken(token, idx)}
-                        className="px-4 py-2.5 rounded-xl bg-surface border border-accent/25 hover:border-accent text-appText-bright font-jp font-bold text-sm hover:-translate-y-0.5 transition-all shadow-sm active:scale-95"
+                        className="min-h-[44px] px-4 py-2.5 rounded-xl sm:rounded-2xl bg-surface border-2 border-accent/30 hover:border-accent text-appText-bright font-japanese font-bold text-sm sm:text-base hover:-translate-y-0.5 hover:shadow-glow transition-all shadow-sm active:scale-95"
                       >
                         {token}
                       </button>
@@ -959,7 +998,7 @@ export const QuizPage: React.FC = () => {
 
               {/* Floating Two-Phase Bottom Action Sheet */}
               {feedback && (
-                <div className="fixed bottom-0 inset-x-0 z-40 bg-surface/95 backdrop-blur-md border-t-2 border-theme-primary/30 p-3.5 sm:p-5 shadow-2xl animate-slide-up">
+                <div className="fixed bottom-0 inset-x-0 z-40 bg-surface/95 backdrop-blur-md border-t-2 border-theme-primary/30 p-3.5 sm:p-5 pb-[calc(1.5rem+env(safe-area-inset-bottom))] sm:pb-5 shadow-2xl animate-slide-up">
                   <div className="max-w-2xl mx-auto flex flex-col sm:flex-row sm:items-center justify-between gap-3.5">
                     <div className="space-y-1 min-w-0 flex-1">
                       <div className="flex items-center gap-2">
@@ -1010,7 +1049,7 @@ export const QuizPage: React.FC = () => {
                   onClick={() => setIsDetailDrawerOpen(false)}
                 >
                   <div
-                    className="w-full max-w-lg bg-surface border border-theme rounded-t-3xl sm:rounded-3xl shadow-2xl p-5 sm:p-6 max-h-[85vh] overflow-y-auto space-y-4 animate-slide-up"
+                    className="w-full max-w-lg bg-surface border border-theme rounded-t-3xl sm:rounded-3xl shadow-2xl p-5 sm:p-6 max-h-[85dvh] overflow-y-auto space-y-4 animate-slide-up"
                     onClick={(e) => e.stopPropagation()}
                   >
                     <div className="flex items-center justify-between border-b border-theme pb-3">

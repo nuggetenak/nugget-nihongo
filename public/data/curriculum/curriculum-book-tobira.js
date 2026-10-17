@@ -21,16 +21,16 @@ window.curriculumBook_tobira = {
       "title_jp": "第1章: 日本の地理 (Japanese Geography)",
       "theme": "Tobira",
       "icon": "🚪",
-      "can_do_summary": "Memahami silabus Tobira Bab 1 secara komprehensif.",
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Geografi, Iklim & Bentang Alam Kepulauan Jepang.",
       "grammar_ids": [
         "gn3-00050",
         "gn3-00051"
       ],
       "vocab_ids": [
         "vg-n3-00003",
-        "Saya datang untuk mengantar paket.",
-        "Sebaiknya dilaporkan ke polisi.",
-        "vg-n3-00004"
+        "vg-n3-00004",
+        "vg-n3-00005",
+        "vg-n3-00007"
       ],
       "lessons": [
         {
@@ -39,35 +39,35 @@ window.curriculumBook_tobira = {
           "title_id": "Geografi, Iklim & Bentang Alam Kepulauan Jepang (Eksplorasi Materi & Pola)",
           "title_jp": "第1章: 日本の地理 (Japanese Geography)（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku Tobira: Gateway to Advanced Japanese pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa Tobira: Gateway to Advanced Japanese bab ini dalam konteks nyata.",
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Geografi, Iklim & Bentang Alam Kepulauan Jepang.",
           "grammar_ids": [
             "gn3-00050",
             "gn3-00051"
           ],
           "vocab_ids": [
             "vg-n3-00003",
-            "Saya datang untuk mengantar paket.",
-            "Sebaiknya dilaporkan ke polisi.",
-            "vg-n3-00004"
+            "vg-n3-00004",
+            "vg-n3-00005",
+            "vg-n3-00007"
           ],
           "pedagogical_framework": {
             "what": {
               "summary": "Silabus resmi Tobira: Gateway to Advanced Japanese bab 1.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Geografi, Iklim & Bentang Alam Kepulauan Jepang.",
               "targetPatterns": [
                 "gn3-00050",
                 "gn3-00051"
               ],
               "coreVocabSample": [
                 "vg-n3-00003",
-                "Saya datang untuk mengantar paket.",
-                "Sebaiknya dilaporkan ke polisi.",
-                "vg-n3-00004"
+                "vg-n3-00004",
+                "vg-n3-00005",
+                "vg-n3-00007"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku Tobira: Gateway to Advanced Japanese. Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 1 Tobira: Gateway to Advanced Japanese.",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Geografi, Iklim & Bentang Alam Kepulauan Jepang.",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -114,15 +114,15 @@ window.curriculumBook_tobira = {
       "title_jp": "第2章: 日本語の多様性 (Japanese Language Diversity)",
       "theme": "Tobira",
       "icon": "🚪",
-      "can_do_summary": "Memahami silabus Tobira Bab 2 secara komprehensif.",
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Variasi Bahasa, Dialek Daerah & Pola Tutur.",
       "grammar_ids": [
         "gn3-00052"
       ],
       "vocab_ids": [
-        "Membesarkan anak sendirian.",
-        "Saya suka menanam bunga.",
-        "vg-n3-00017",
-        "Saya besar di pedesaan."
+        "vg-n3-00063",
+        "vg-n3-00064",
+        "vg-n3-00065",
+        "vg-n3-00066"
       ],
       "lessons": [
         {
@@ -131,33 +131,33 @@ window.curriculumBook_tobira = {
           "title_id": "Variasi Bahasa, Dialek Daerah & Pola Tutur (Eksplorasi Materi & Pola)",
           "title_jp": "第2章: 日本語の多様性 (Japanese Language Diversity)（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku Tobira: Gateway to Advanced Japanese pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa Tobira: Gateway to Advanced Japanese bab ini dalam konteks nyata.",
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Variasi Bahasa, Dialek Daerah & Pola Tutur.",
           "grammar_ids": [
             "gn3-00052"
           ],
           "vocab_ids": [
-            "Membesarkan anak sendirian.",
-            "Saya suka menanam bunga.",
-            "vg-n3-00017",
-            "Saya besar di pedesaan."
+            "vg-n3-00063",
+            "vg-n3-00064",
+            "vg-n3-00065",
+            "vg-n3-00066"
           ],
           "pedagogical_framework": {
             "what": {
               "summary": "Silabus resmi Tobira: Gateway to Advanced Japanese bab 2.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Variasi Bahasa, Dialek Daerah & Pola Tutur.",
               "targetPatterns": [
                 "gn3-00052"
               ],
               "coreVocabSample": [
-                "Membesarkan anak sendirian.",
-                "Saya suka menanam bunga.",
-                "vg-n3-00017",
-                "Saya besar di pedesaan."
+                "vg-n3-00063",
+                "vg-n3-00064",
+                "vg-n3-00065",
+                "vg-n3-00066"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku Tobira: Gateway to Advanced Japanese. Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 2 Tobira: Gateway to Advanced Japanese.",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Variasi Bahasa, Dialek Daerah & Pola Tutur.",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -204,15 +204,15 @@ window.curriculumBook_tobira = {
       "title_jp": "第3章: 伝統芸能 (Traditional Performing Arts)",
       "theme": "Tobira",
       "icon": "🚪",
-      "can_do_summary": "Memahami silabus Tobira Bab 3 secara komprehensif.",
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Seni Pertunjukan Tradisional (Noh, Kabuki, Rakugo).",
       "grammar_ids": [
         "gn3-00053"
       ],
       "vocab_ids": [
-        "Dua kanji ini mirip.",
-        "vg-n3-00029",
-        "Meneliti hubungan antara pekerjaan dan kesehatan.",
-        "Ingin menjaga hubungan baik dengannya."
+        "vg-n3-00094",
+        "vg-n3-00095",
+        "vg-n3-00096",
+        "vg-n3-00097"
       ],
       "lessons": [
         {
@@ -221,33 +221,33 @@ window.curriculumBook_tobira = {
           "title_id": "Seni Pertunjukan Tradisional (Noh, Kabuki, Rakugo) (Eksplorasi Materi & Pola)",
           "title_jp": "第3章: 伝統芸能 (Traditional Performing Arts)（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku Tobira: Gateway to Advanced Japanese pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa Tobira: Gateway to Advanced Japanese bab ini dalam konteks nyata.",
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Seni Pertunjukan Tradisional (Noh, Kabuki, Rakugo).",
           "grammar_ids": [
             "gn3-00053"
           ],
           "vocab_ids": [
-            "Dua kanji ini mirip.",
-            "vg-n3-00029",
-            "Meneliti hubungan antara pekerjaan dan kesehatan.",
-            "Ingin menjaga hubungan baik dengannya."
+            "vg-n3-00094",
+            "vg-n3-00095",
+            "vg-n3-00096",
+            "vg-n3-00097"
           ],
           "pedagogical_framework": {
             "what": {
               "summary": "Silabus resmi Tobira: Gateway to Advanced Japanese bab 3.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Seni Pertunjukan Tradisional (Noh, Kabuki, Rakugo).",
               "targetPatterns": [
                 "gn3-00053"
               ],
               "coreVocabSample": [
-                "Dua kanji ini mirip.",
-                "vg-n3-00029",
-                "Meneliti hubungan antara pekerjaan dan kesehatan.",
-                "Ingin menjaga hubungan baik dengannya."
+                "vg-n3-00094",
+                "vg-n3-00095",
+                "vg-n3-00096",
+                "vg-n3-00097"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku Tobira: Gateway to Advanced Japanese. Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 3 Tobira: Gateway to Advanced Japanese.",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Seni Pertunjukan Tradisional (Noh, Kabuki, Rakugo).",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -294,15 +294,15 @@ window.curriculumBook_tobira = {
       "title_jp": "第4章: 日本の武道 (Japanese Martial Arts)",
       "theme": "Tobira",
       "icon": "🚪",
-      "can_do_summary": "Memahami silabus Tobira Bab 4 secara komprehensif.",
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Spirit Budo & Seni Bela Diri Tradisional.",
       "grammar_ids": [
         "gn3-00054"
       ],
       "vocab_ids": [
-        "vg-n3-00063",
-        "Populasi berkurang.",
-        "Lapar (perut berkurang).",
-        "vg-n3-00064"
+        "vg-n3-00156",
+        "vg-n3-00157",
+        "vg-n3-00158",
+        "vg-n3-00159"
       ],
       "lessons": [
         {
@@ -311,33 +311,33 @@ window.curriculumBook_tobira = {
           "title_id": "Spirit Budo & Seni Bela Diri Tradisional (Eksplorasi Materi & Pola)",
           "title_jp": "第4章: 日本の武道 (Japanese Martial Arts)（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku Tobira: Gateway to Advanced Japanese pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa Tobira: Gateway to Advanced Japanese bab ini dalam konteks nyata.",
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Spirit Budo & Seni Bela Diri Tradisional.",
           "grammar_ids": [
             "gn3-00054"
           ],
           "vocab_ids": [
-            "vg-n3-00063",
-            "Populasi berkurang.",
-            "Lapar (perut berkurang).",
-            "vg-n3-00064"
+            "vg-n3-00156",
+            "vg-n3-00157",
+            "vg-n3-00158",
+            "vg-n3-00159"
           ],
           "pedagogical_framework": {
             "what": {
               "summary": "Silabus resmi Tobira: Gateway to Advanced Japanese bab 4.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Spirit Budo & Seni Bela Diri Tradisional.",
               "targetPatterns": [
                 "gn3-00054"
               ],
               "coreVocabSample": [
-                "vg-n3-00063",
-                "Populasi berkurang.",
-                "Lapar (perut berkurang).",
-                "vg-n3-00064"
+                "vg-n3-00156",
+                "vg-n3-00157",
+                "vg-n3-00158",
+                "vg-n3-00159"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku Tobira: Gateway to Advanced Japanese. Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 4 Tobira: Gateway to Advanced Japanese.",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Spirit Budo & Seni Bela Diri Tradisional.",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -384,15 +384,15 @@ window.curriculumBook_tobira = {
       "title_jp": "第5章: 現代のテクノロジー (Modern Technology)",
       "theme": "Tobira",
       "icon": "🚪",
-      "can_do_summary": "Memahami silabus Tobira Bab 5 secara komprehensif.",
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Teknologi Modern, Otomasi & Robotika.",
       "grammar_ids": [
         "gn3-00055"
       ],
       "vocab_ids": [
-        "Tolong tekan tombol lift.",
-        "Pintunya berat sehingga tidak bisa kudorong sendiri.",
-        "vg-n3-00078",
-        "Saya mengetuk pintu untuk memanggil orang di dalam."
+        "vg-n3-00183",
+        "vg-n3-00184",
+        "vg-n3-00185",
+        "vg-n3-00186"
       ],
       "lessons": [
         {
@@ -401,33 +401,33 @@ window.curriculumBook_tobira = {
           "title_id": "Teknologi Modern, Otomasi & Robotika (Eksplorasi Materi & Pola)",
           "title_jp": "第5章: 現代のテクノロジー (Modern Technology)（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku Tobira: Gateway to Advanced Japanese pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa Tobira: Gateway to Advanced Japanese bab ini dalam konteks nyata.",
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Teknologi Modern, Otomasi & Robotika.",
           "grammar_ids": [
             "gn3-00055"
           ],
           "vocab_ids": [
-            "Tolong tekan tombol lift.",
-            "Pintunya berat sehingga tidak bisa kudorong sendiri.",
-            "vg-n3-00078",
-            "Saya mengetuk pintu untuk memanggil orang di dalam."
+            "vg-n3-00183",
+            "vg-n3-00184",
+            "vg-n3-00185",
+            "vg-n3-00186"
           ],
           "pedagogical_framework": {
             "what": {
               "summary": "Silabus resmi Tobira: Gateway to Advanced Japanese bab 5.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Teknologi Modern, Otomasi & Robotika.",
               "targetPatterns": [
                 "gn3-00055"
               ],
               "coreVocabSample": [
-                "Tolong tekan tombol lift.",
-                "Pintunya berat sehingga tidak bisa kudorong sendiri.",
-                "vg-n3-00078",
-                "Saya mengetuk pintu untuk memanggil orang di dalam."
+                "vg-n3-00183",
+                "vg-n3-00184",
+                "vg-n3-00185",
+                "vg-n3-00186"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku Tobira: Gateway to Advanced Japanese. Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 5 Tobira: Gateway to Advanced Japanese.",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Teknologi Modern, Otomasi & Robotika.",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -474,15 +474,15 @@ window.curriculumBook_tobira = {
       "title_jp": "第6章: 日本の宗教と信仰 (Religion and Faith in Japan)",
       "theme": "Tobira",
       "icon": "🚪",
-      "can_do_summary": "Memahami silabus Tobira Bab 6 secara komprehensif.",
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Spiritualitas, Shinto, Buddha & Tradisi Kepercayaan.",
       "grammar_ids": [
         "gn3-00056"
       ],
       "vocab_ids": [
-        "Saya mengantri dari pagi untuk membeli tiket konser.",
-        "vg-n3-00086",
-        "Saya membungkus hadiah dengan kertas cantik.",
-        "Saya membungkus onigiri dengan nori lalu memakannya."
+        "vg-n3-00254",
+        "vg-n3-00255",
+        "vg-n3-00256",
+        "vg-n3-00257"
       ],
       "lessons": [
         {
@@ -491,33 +491,33 @@ window.curriculumBook_tobira = {
           "title_id": "Spiritualitas, Shinto, Buddha & Tradisi Kepercayaan (Eksplorasi Materi & Pola)",
           "title_jp": "第6章: 日本の宗教と信仰 (Religion and Faith in Japan)（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku Tobira: Gateway to Advanced Japanese pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa Tobira: Gateway to Advanced Japanese bab ini dalam konteks nyata.",
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Spiritualitas, Shinto, Buddha & Tradisi Kepercayaan.",
           "grammar_ids": [
             "gn3-00056"
           ],
           "vocab_ids": [
-            "Saya mengantri dari pagi untuk membeli tiket konser.",
-            "vg-n3-00086",
-            "Saya membungkus hadiah dengan kertas cantik.",
-            "Saya membungkus onigiri dengan nori lalu memakannya."
+            "vg-n3-00254",
+            "vg-n3-00255",
+            "vg-n3-00256",
+            "vg-n3-00257"
           ],
           "pedagogical_framework": {
             "what": {
               "summary": "Silabus resmi Tobira: Gateway to Advanced Japanese bab 6.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Spiritualitas, Shinto, Buddha & Tradisi Kepercayaan.",
               "targetPatterns": [
                 "gn3-00056"
               ],
               "coreVocabSample": [
-                "Saya mengantri dari pagi untuk membeli tiket konser.",
-                "vg-n3-00086",
-                "Saya membungkus hadiah dengan kertas cantik.",
-                "Saya membungkus onigiri dengan nori lalu memakannya."
+                "vg-n3-00254",
+                "vg-n3-00255",
+                "vg-n3-00256",
+                "vg-n3-00257"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku Tobira: Gateway to Advanced Japanese. Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 6 Tobira: Gateway to Advanced Japanese.",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Spiritualitas, Shinto, Buddha & Tradisi Kepercayaan.",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -564,15 +564,15 @@ window.curriculumBook_tobira = {
       "title_jp": "第7章: ポップカルチャー・漫画 (Pop Culture and Manga)",
       "theme": "Tobira",
       "icon": "🚪",
-      "can_do_summary": "Memahami silabus Tobira Bab 7 secara komprehensif.",
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Budaya Populer Kontemporer, Anime & Komik Jepang.",
       "grammar_ids": [
         "gn3-00057"
       ],
       "vocab_ids": [
-        "vg-n3-00094",
-        "Saya merapikan rambut sebelum keluar.",
-        "Sebelum lomba, saya mengatur napas dulu baru mulai berlari.",
-        "vg-n3-00095"
+        "vg-n3-00305",
+        "vg-n3-00306",
+        "vg-n3-00307",
+        "vg-n3-00308"
       ],
       "lessons": [
         {
@@ -581,33 +581,33 @@ window.curriculumBook_tobira = {
           "title_id": "Budaya Populer Kontemporer, Anime & Komik Jepang (Eksplorasi Materi & Pola)",
           "title_jp": "第7章: ポップカルチャー・漫画 (Pop Culture and Manga)（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku Tobira: Gateway to Advanced Japanese pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa Tobira: Gateway to Advanced Japanese bab ini dalam konteks nyata.",
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Budaya Populer Kontemporer, Anime & Komik Jepang.",
           "grammar_ids": [
             "gn3-00057"
           ],
           "vocab_ids": [
-            "vg-n3-00094",
-            "Saya merapikan rambut sebelum keluar.",
-            "Sebelum lomba, saya mengatur napas dulu baru mulai berlari.",
-            "vg-n3-00095"
+            "vg-n3-00305",
+            "vg-n3-00306",
+            "vg-n3-00307",
+            "vg-n3-00308"
           ],
           "pedagogical_framework": {
             "what": {
               "summary": "Silabus resmi Tobira: Gateway to Advanced Japanese bab 7.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Budaya Populer Kontemporer, Anime & Komik Jepang.",
               "targetPatterns": [
                 "gn3-00057"
               ],
               "coreVocabSample": [
-                "vg-n3-00094",
-                "Saya merapikan rambut sebelum keluar.",
-                "Sebelum lomba, saya mengatur napas dulu baru mulai berlari.",
-                "vg-n3-00095"
+                "vg-n3-00305",
+                "vg-n3-00306",
+                "vg-n3-00307",
+                "vg-n3-00308"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku Tobira: Gateway to Advanced Japanese. Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 7 Tobira: Gateway to Advanced Japanese.",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Budaya Populer Kontemporer, Anime & Komik Jepang.",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -654,15 +654,15 @@ window.curriculumBook_tobira = {
       "title_jp": "第8章: 日本のコンビニと生活 (Convenience Stores and Daily Life)",
       "theme": "Tobira",
       "icon": "🚪",
-      "can_do_summary": "Memahami silabus Tobira Bab 8 secara komprehensif.",
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Konbini, Logistik & Kenyamanan Gaya Hidup 24 Jam.",
       "grammar_ids": [
         "gn3-00058"
       ],
       "vocab_ids": [
-        "Saya kaget mendengar berita itu.",
-        "Aku terkejut oleh bakatnya.",
-        "vg-n3-00103",
-        "Dia gembira mendapat hadiah."
+        "vg-n3-00332",
+        "vg-n3-00333",
+        "vg-n3-00334",
+        "vg-n3-00335"
       ],
       "lessons": [
         {
@@ -671,33 +671,33 @@ window.curriculumBook_tobira = {
           "title_id": "Konbini, Logistik & Kenyamanan Gaya Hidup 24 Jam (Eksplorasi Materi & Pola)",
           "title_jp": "第8章: 日本のコンビニと生活 (Convenience Stores and Daily Life)（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku Tobira: Gateway to Advanced Japanese pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa Tobira: Gateway to Advanced Japanese bab ini dalam konteks nyata.",
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Konbini, Logistik & Kenyamanan Gaya Hidup 24 Jam.",
           "grammar_ids": [
             "gn3-00058"
           ],
           "vocab_ids": [
-            "Saya kaget mendengar berita itu.",
-            "Aku terkejut oleh bakatnya.",
-            "vg-n3-00103",
-            "Dia gembira mendapat hadiah."
+            "vg-n3-00332",
+            "vg-n3-00333",
+            "vg-n3-00334",
+            "vg-n3-00335"
           ],
           "pedagogical_framework": {
             "what": {
               "summary": "Silabus resmi Tobira: Gateway to Advanced Japanese bab 8.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Konbini, Logistik & Kenyamanan Gaya Hidup 24 Jam.",
               "targetPatterns": [
                 "gn3-00058"
               ],
               "coreVocabSample": [
-                "Saya kaget mendengar berita itu.",
-                "Aku terkejut oleh bakatnya.",
-                "vg-n3-00103",
-                "Dia gembira mendapat hadiah."
+                "vg-n3-00332",
+                "vg-n3-00333",
+                "vg-n3-00334",
+                "vg-n3-00335"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku Tobira: Gateway to Advanced Japanese. Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 8 Tobira: Gateway to Advanced Japanese.",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Konbini, Logistik & Kenyamanan Gaya Hidup 24 Jam.",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -744,15 +744,15 @@ window.curriculumBook_tobira = {
       "title_jp": "第9章: 教育システム (The Education System)",
       "theme": "Tobira",
       "icon": "🚪",
-      "can_do_summary": "Memahami silabus Tobira Bab 9 secara komprehensif.",
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Sistem Pendidikan, Persaingan Masuk & Ujian.",
       "grammar_ids": [
         "gn3-00059"
       ],
       "vocab_ids": [
-        "Tabungan berkurang.",
-        "vg-n3-00123",
-        "Susah menyampaikan perasaan dengan baik.",
-        "Tolong sampaikan salam saya."
+        "vg-n3-00421",
+        "vg-n3-00422",
+        "vg-n3-00423",
+        "vg-n3-00424"
       ],
       "lessons": [
         {
@@ -761,33 +761,33 @@ window.curriculumBook_tobira = {
           "title_id": "Sistem Pendidikan, Persaingan Masuk & Ujian (Eksplorasi Materi & Pola)",
           "title_jp": "第9章: 教育システム (The Education System)（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku Tobira: Gateway to Advanced Japanese pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa Tobira: Gateway to Advanced Japanese bab ini dalam konteks nyata.",
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Sistem Pendidikan, Persaingan Masuk & Ujian.",
           "grammar_ids": [
             "gn3-00059"
           ],
           "vocab_ids": [
-            "Tabungan berkurang.",
-            "vg-n3-00123",
-            "Susah menyampaikan perasaan dengan baik.",
-            "Tolong sampaikan salam saya."
+            "vg-n3-00421",
+            "vg-n3-00422",
+            "vg-n3-00423",
+            "vg-n3-00424"
           ],
           "pedagogical_framework": {
             "what": {
               "summary": "Silabus resmi Tobira: Gateway to Advanced Japanese bab 9.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Sistem Pendidikan, Persaingan Masuk & Ujian.",
               "targetPatterns": [
                 "gn3-00059"
               ],
               "coreVocabSample": [
-                "Tabungan berkurang.",
-                "vg-n3-00123",
-                "Susah menyampaikan perasaan dengan baik.",
-                "Tolong sampaikan salam saya."
+                "vg-n3-00421",
+                "vg-n3-00422",
+                "vg-n3-00423",
+                "vg-n3-00424"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku Tobira: Gateway to Advanced Japanese. Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 9 Tobira: Gateway to Advanced Japanese.",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Sistem Pendidikan, Persaingan Masuk & Ujian.",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -830,54 +830,54 @@ window.curriculumBook_tobira = {
       "id": "unit-curriculum-book-tobira-10",
       "level": "n3",
       "pt_stage": 5,
-      "title_id": "Tobira: Dunia Kerja, Budaya Korporat & Reformasi Karier",
+      "title_id": "Tobira: Dunia Kerja, Budaya Korporat & Reformasi Karir",
       "title_jp": "第10章: 職場環境と働き方 (Work Environment and Working Styles)",
       "theme": "Tobira",
       "icon": "🚪",
-      "can_do_summary": "Memahami silabus Tobira Bab 10 secara komprehensif.",
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Dunia Kerja, Budaya Korporat & Reformasi Karir.",
       "grammar_ids": [
         "gn2-00050"
       ],
       "vocab_ids": [
-        "Belakangan ini wisatawan asing semakin bertambah.",
-        "Berat badanku bertambah 3 kg tanpa terasa.",
-        "Jumlah PR bertambah, jadi aku kerepotan.",
-        "vg-n3-00156"
+        "vg-n3-00459",
+        "vg-n3-00462",
+        "vg-n3-00464",
+        "vg-n3-00496"
       ],
       "lessons": [
         {
           "id": "les-curriculum-book-tobira-u10-01",
           "lesson_number": 1,
-          "title_id": "Dunia Kerja, Budaya Korporat & Reformasi Karier (Eksplorasi Materi & Pola)",
+          "title_id": "Dunia Kerja, Budaya Korporat & Reformasi Karir (Eksplorasi Materi & Pola)",
           "title_jp": "第10章: 職場環境と働き方 (Work Environment and Working Styles)（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku Tobira: Gateway to Advanced Japanese pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa Tobira: Gateway to Advanced Japanese bab ini dalam konteks nyata.",
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Dunia Kerja, Budaya Korporat & Reformasi Karir.",
           "grammar_ids": [
             "gn2-00050"
           ],
           "vocab_ids": [
-            "Belakangan ini wisatawan asing semakin bertambah.",
-            "Berat badanku bertambah 3 kg tanpa terasa.",
-            "Jumlah PR bertambah, jadi aku kerepotan.",
-            "vg-n3-00156"
+            "vg-n3-00459",
+            "vg-n3-00462",
+            "vg-n3-00464",
+            "vg-n3-00496"
           ],
           "pedagogical_framework": {
             "what": {
               "summary": "Silabus resmi Tobira: Gateway to Advanced Japanese bab 10.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Dunia Kerja, Budaya Korporat & Reformasi Karir.",
               "targetPatterns": [
                 "gn2-00050"
               ],
               "coreVocabSample": [
-                "Belakangan ini wisatawan asing semakin bertambah.",
-                "Berat badanku bertambah 3 kg tanpa terasa.",
-                "Jumlah PR bertambah, jadi aku kerepotan.",
-                "vg-n3-00156"
+                "vg-n3-00459",
+                "vg-n3-00462",
+                "vg-n3-00464",
+                "vg-n3-00496"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku Tobira: Gateway to Advanced Japanese. Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 10 Tobira: Gateway to Advanced Japanese.",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Dunia Kerja, Budaya Korporat & Reformasi Karir.",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -894,14 +894,14 @@ window.curriculumBook_tobira = {
               "jp": "第10章: 職場環境と働き方 (Work Environment and Working Styles)の勉強を始めましょう！",
               "furigana": "べんきょうをはじめましょう！",
               "romaji": "Benkyou wo hajimemashou!",
-              "idText": "Mari kita mulai belajar Dunia Kerja, Budaya Korporat & Reformasi Karier!"
+              "idText": "Mari kita mulai belajar Dunia Kerja, Budaya Korporat & Reformasi Karir!"
             }
           ],
           "drills": [
             {
               "id": "dr1",
               "type": "multiple-choice",
-              "prompt": "Apa fokus utama pada materi Dunia Kerja, Budaya Korporat & Reformasi Karier di buku Tobira: Gateway to Advanced Japanese?",
+              "prompt": "Apa fokus utama pada materi Dunia Kerja, Budaya Korporat & Reformasi Karir di buku Tobira: Gateway to Advanced Japanese?",
               "options": [
                 "Menguasai pola kalimat bab ini dengan pemahaman alami",
                 "Menghafal tanpa memahami konteks",
@@ -924,15 +924,15 @@ window.curriculumBook_tobira = {
       "title_jp": "第11章: 環境問題とリサイクル (Environmental Issues and Recycling)",
       "theme": "Tobira",
       "icon": "🚪",
-      "can_do_summary": "Memahami silabus Tobira Bab 11 secara komprehensif.",
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Ekologi, Daur Ulang & Kelestarian Alam.",
       "grammar_ids": [
         "gn2-00051"
       ],
       "vocab_ids": [
-        "Nilaiku turun dan aku dimarahi orang tua.",
-        "Aku gagal ujian dan sangat kecewa.",
-        "vg-n3-00162",
-        "Tidak sengaja aku menjatuhkan HP-ku."
+        "vg-n3-00533",
+        "vg-n3-00534",
+        "vg-n3-00535",
+        "vg-n3-00536"
       ],
       "lessons": [
         {
@@ -941,33 +941,33 @@ window.curriculumBook_tobira = {
           "title_id": "Ekologi, Daur Ulang & Kelestarian Alam (Eksplorasi Materi & Pola)",
           "title_jp": "第11章: 環境問題とリサイクル (Environmental Issues and Recycling)（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku Tobira: Gateway to Advanced Japanese pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa Tobira: Gateway to Advanced Japanese bab ini dalam konteks nyata.",
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Ekologi, Daur Ulang & Kelestarian Alam.",
           "grammar_ids": [
             "gn2-00051"
           ],
           "vocab_ids": [
-            "Nilaiku turun dan aku dimarahi orang tua.",
-            "Aku gagal ujian dan sangat kecewa.",
-            "vg-n3-00162",
-            "Tidak sengaja aku menjatuhkan HP-ku."
+            "vg-n3-00533",
+            "vg-n3-00534",
+            "vg-n3-00535",
+            "vg-n3-00536"
           ],
           "pedagogical_framework": {
             "what": {
               "summary": "Silabus resmi Tobira: Gateway to Advanced Japanese bab 11.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Ekologi, Daur Ulang & Kelestarian Alam.",
               "targetPatterns": [
                 "gn2-00051"
               ],
               "coreVocabSample": [
-                "Nilaiku turun dan aku dimarahi orang tua.",
-                "Aku gagal ujian dan sangat kecewa.",
-                "vg-n3-00162",
-                "Tidak sengaja aku menjatuhkan HP-ku."
+                "vg-n3-00533",
+                "vg-n3-00534",
+                "vg-n3-00535",
+                "vg-n3-00536"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku Tobira: Gateway to Advanced Japanese. Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 11 Tobira: Gateway to Advanced Japanese.",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Ekologi, Daur Ulang & Kelestarian Alam.",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -1014,15 +1014,15 @@ window.curriculumBook_tobira = {
       "title_jp": "第12章: 伝統料理と食文化 (Traditional Cuisine and Food Culture)",
       "theme": "Tobira",
       "icon": "🚪",
-      "can_do_summary": "Memahami silabus Tobira Bab 12 secara komprehensif.",
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Washoku, Cita Rasa Musim & Filosofi Kuliner Jepang.",
       "grammar_ids": [
         "gn2-00052"
       ],
       "vocab_ids": [
-        "Upacara akan dimulai/dibuka pukul 10.",
-        "vg-n3-00168",
-        "Boleh saya membuka jendelanya?",
-        "Aku membuka hadiah ulang tahun dengan penuh semangat."
+        "vg-n3-00619",
+        "vg-n3-00620",
+        "vg-n3-00621",
+        "vg-n3-00622"
       ],
       "lessons": [
         {
@@ -1031,33 +1031,33 @@ window.curriculumBook_tobira = {
           "title_id": "Washoku, Cita Rasa Musim & Filosofi Kuliner Jepang (Eksplorasi Materi & Pola)",
           "title_jp": "第12章: 伝統料理と食文化 (Traditional Cuisine and Food Culture)（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku Tobira: Gateway to Advanced Japanese pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa Tobira: Gateway to Advanced Japanese bab ini dalam konteks nyata.",
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Washoku, Cita Rasa Musim & Filosofi Kuliner Jepang.",
           "grammar_ids": [
             "gn2-00052"
           ],
           "vocab_ids": [
-            "Upacara akan dimulai/dibuka pukul 10.",
-            "vg-n3-00168",
-            "Boleh saya membuka jendelanya?",
-            "Aku membuka hadiah ulang tahun dengan penuh semangat."
+            "vg-n3-00619",
+            "vg-n3-00620",
+            "vg-n3-00621",
+            "vg-n3-00622"
           ],
           "pedagogical_framework": {
             "what": {
               "summary": "Silabus resmi Tobira: Gateway to Advanced Japanese bab 12.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Washoku, Cita Rasa Musim & Filosofi Kuliner Jepang.",
               "targetPatterns": [
                 "gn2-00052"
               ],
               "coreVocabSample": [
-                "Upacara akan dimulai/dibuka pukul 10.",
-                "vg-n3-00168",
-                "Boleh saya membuka jendelanya?",
-                "Aku membuka hadiah ulang tahun dengan penuh semangat."
+                "vg-n3-00619",
+                "vg-n3-00620",
+                "vg-n3-00621",
+                "vg-n3-00622"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku Tobira: Gateway to Advanced Japanese. Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 12 Tobira: Gateway to Advanced Japanese.",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Washoku, Cita Rasa Musim & Filosofi Kuliner Jepang.",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {

@@ -4,7 +4,17 @@
 // ══════════════════════════════════════════════════════════════════
 
 import { create } from 'zustand';
-import { useGamificationStore } from '../gamification/gamificationStore';
+
+function notifyBloomBadge() {
+  try {
+    const mod = typeof require !== 'undefined'
+      ? (require('../gamification/gamificationStore.ts') || require('../gamification/gamificationStore'))
+      : null;
+    if (mod?.useGamificationStore) {
+      mod.useGamificationStore.getState().checkAndAwardBadges({ gardenBloomed: true });
+    }
+  } catch {}
+}
 
 export interface PlantItem {
   id: string;
@@ -29,6 +39,8 @@ const DEFAULT_PLANTS: PlantItem[] = [
   { id: 'p-ai', kanji: '愛', reading: 'あい', meaning: 'Kasih Sayang / Cinta', level: 'n2', stage: 0, waterCount: 0, maxWater: 5 },
 ];
 
+export const MAX_GARDEN_CAPACITY = 36;
+
 export interface GardenStoreState {
   waterDrops: number;
   plants: PlantItem[];
@@ -36,6 +48,8 @@ export interface GardenStoreState {
   waterPlant: (plantId: string) => boolean;
   waterAll: () => number;
   seedPlant: (kanji: string, reading: string, meaning: string, level: 'n5' | 'n4' | 'n3' | 'n2' | 'n1') => boolean;
+  applyLapseWilt: (lapsedKanji?: string) => boolean;
+  checkDailyRefill: () => boolean;
 }
 
 function loadSavedPlants(): PlantItem[] {
@@ -102,7 +116,7 @@ export const useGardenStore = create<GardenStoreState>((set, get) => ({
     }
 
     if (newStage >= 4) {
-      useGamificationStore.getState().checkAndAwardBadges({ gardenBloomed: true });
+      notifyBloomBadge();
     }
 
     return true;
@@ -138,7 +152,7 @@ export const useGardenStore = create<GardenStoreState>((set, get) => ({
     }
 
     if (updatedPlants.some((p) => p.stage >= 4)) {
-      useGamificationStore.getState().checkAndAwardBadges({ gardenBloomed: true });
+      notifyBloomBadge();
     }
 
     return dropsUsed;
@@ -147,6 +161,7 @@ export const useGardenStore = create<GardenStoreState>((set, get) => ({
   seedPlant: (kanji, reading, meaning, level) => {
     const { plants } = get();
     if (plants.some((p) => p.kanji === kanji)) return false;
+    if (plants.length >= MAX_GARDEN_CAPACITY) return false;
 
     const newPlant: PlantItem = {
       id: `p-${Date.now()}-${kanji}`,
@@ -168,5 +183,61 @@ export const useGardenStore = create<GardenStoreState>((set, get) => ({
       } catch {}
     }
     return true;
+  },
+
+  applyLapseWilt: (lapsedKanji?: string) => {
+    const { plants } = get();
+    if (plants.length === 0) return false;
+    let modified = false;
+
+    const updated = plants.map((p) => {
+      const isTarget = lapsedKanji ? p.kanji === lapsedKanji : p.stage > 0;
+      if (isTarget && p.stage > 0 && !modified) {
+        modified = true;
+        const newWater = Math.max(0, p.waterCount - 1);
+        const newStage = Math.max(0, Math.min(4, Math.floor((newWater / p.maxWater) * 4)));
+        return {
+          ...p,
+          waterCount: newWater,
+          stage: newStage,
+        };
+      }
+      return p;
+    });
+
+    if (modified) {
+      set({ plants: updated });
+      if (typeof window !== 'undefined') {
+        try {
+          localStorage.setItem('nn_garden_plants', JSON.stringify(updated));
+        } catch {}
+      }
+    }
+    return modified;
+  },
+
+  checkDailyRefill: () => {
+    if (typeof window === 'undefined') return false;
+    try {
+      let todayStr = '';
+      try {
+        todayStr = new Intl.DateTimeFormat('en-CA', {
+          timeZone: typeof Intl !== 'undefined' ? Intl.DateTimeFormat().resolvedOptions().timeZone : 'Asia/Jakarta',
+          year: 'numeric',
+          month: '2-digit',
+          day: '2-digit',
+        }).format(new Date());
+      } catch {
+        todayStr = new Date().toISOString().slice(0, 10);
+      }
+
+      const lastRefill = localStorage.getItem('nn_garden_last_refill');
+      if (lastRefill !== todayStr) {
+        localStorage.setItem('nn_garden_last_refill', todayStr);
+        get().addWaterDrop(3);
+        return true;
+      }
+    } catch {}
+    return false;
   },
 }));

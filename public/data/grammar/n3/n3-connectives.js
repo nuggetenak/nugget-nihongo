@@ -678,6 +678,350 @@ window.grammarN3_Connectives = [
   notes: null,
   provenance: 'jlpt-corpus',
   added_v: 'v15',
+},
+
+{
+  id: 'gn3-00100',
+  level: 'n3',
+  pattern: '〜わけではない',
+  reading: '〜wake de wa nai',
+  meaning: 'bukan berarti bahwa ... / tidak selalu ...',
+  cat: 'negative',
+  connection: 'V-plain / Adj-い / Adj-な + な / N + という + わけではない',
+  desc: '<b>〜わけではない</b> menyatakan penolakan parsial atau halus terhadap asumsi pendengar. "Bukan berarti bahwa...", "tidak selalu...". Sering dipakai bersama kata seperti いつも, 全部, atau 必ずしも.',
+  nuance: 'Digunakan untuk menyangkal generalisasi tanpa menolak keseluruhan kenyataan.',
+  examples: [
+    { jp: '料理が嫌いな<b>わけではない</b>が、毎日作る時間がない。', id: 'Bukan berarti saya benci memasak, tapi saya tidak punya waktu untuk memasak setiap hari.' },
+    { jp: '値段が高ければおいしいという<b>わけではない</b>。', id: 'Bukan berarti barang yang mahal itu pasti enak.' },
+    { jp: '全然分からない<b>わけではありません</b>が、もう少しゆっくり話していただけますか。', id: 'Bukan berarti saya sama sekali tidak mengerti, tapi bisakah bicara sedikit lebih pelan?' }
+  ],
+  see_also_grammar: ['gn3-00099'],
+  see_also_vocab: [],
+  register: null,
+  exceptions: null,
+  notes: 'Berbeda dari 〜わけがない yang merupakan penolakan mutlak (mustahil).'
+},
+{
+  id: 'gn3-00105',
+  level: 'n3',
+  pattern: '〜ものではない',
+  reading: '〜mono de wa nai',
+  meaning: 'tidak pantas untuk ... / janganlah ... / tidak baik ...',
+  cat: 'obligation-necessity',
+  connection: 'Vる + ものではない',
+  desc: '<b>〜ものではない</b> digunakan untuk memberikan nasihat atau teguran moral berdasarkan norma umum bahwa sesuatu tidak pantas dilakukan. "Tidak seharusnya...", "janganlah...".',
+  nuance: 'Berdasarkan etika umum masyarakat Jepang, bukan kehendak pribadi pembicara semata.',
+  examples: [
+    { jp: '目上の人にそんな口の利き方をする<b>ものではない</b>。', id: 'Tidak pantas berbicara seperti itu kepada atasan atau orang yang lebih tua.' },
+    { jp: '人の悪口を言う<b>ものではありません</b>。', id: 'Janganlah membicarakan keburukan orang lain.' }
+  ],
+  see_also_grammar: [],
+  see_also_vocab: [],
+  register: null,
+  exceptions: null,
+  notes: null
+},
+{
+  id: 'gn3-00106',
+  level: 'n3',
+  pattern: '〜もの / 〜もん',
+  reading: '〜mono / mon',
+  meaning: 'karena ... / habisnya sih ... (alasan santai / pembenaran diri)',
+  cat: 'reason-cause',
+  connection: 'V-plain / Adj-い / Adj-な / N + だ + もの / もん',
+  desc: '<b>〜もの / 〜もん</b> dipakai di akhir kalimat dalam percakapan santai untuk memberikan alasan atau pembelaan diri. Sering terdengar pada tuturan anak-anak atau wanita muda. "Habisnya sih...", "soalnya...".',
+  nuance: 'Percakapan akrab / informal. Versi 〜もん terkesan manja atau membela diri.',
+  examples: [
+    { jp: '「どうして食べないの？」「だって、おいしくないんだ<b>もん</b>。」', id: '「Kenapa tidak dimakan?」「Habisnya tidak enak sih.」' },
+    { jp: '遅刻したのは電車の事故があったんだ<b>もの</b>。', id: 'Saya terlambat karena ada kecelakaan kereta kok.' }
+  ],
+  see_also_grammar: [],
+  see_also_vocab: [],
+  register: 'casual',
+  exceptions: null,
+  notes: null
+},
+{
+  id: 'gn3-00107',
+  level: 'n3',
+  pattern: '〜ものだから / 〜もので',
+  reading: '〜mono da kara / mono de',
+  meaning: 'berhubung ... / karena alasan tak terelakkan ...',
+  cat: 'reason-cause',
+  connection: 'V-plain / Adj-い / Adj-な + な / N + な + ものだから / もので',
+  desc: '<b>〜ものだから / 〜もので</b> memberikan alasan pembenaran yang bernuansa objektif atau di luar kendali pembicara saat meminta maaf atau menjelaskan kesalahan.',
+  nuance: 'Sopan dan bernuansa menjelaskan situasi tak terduga kepada lawan bicara.',
+  examples: [
+    { jp: '道が混んでいた<b>ものだから</b>、遅れてしまいました。', id: 'Berhubung jalannya macet, saya jadi terlambat.' },
+    { jp: '急な用事ができた<b>もので</b>、失礼いたします。', id: 'Karena ada urusan mendadak, saya mohon pamit.' }
+  ],
+  see_also_grammar: [],
+  see_also_vocab: [],
+  register: null,
+  exceptions: null,
+  notes: null
+},
+{
+  id: 'gn3-00108',
+  level: 'n3',
+  pattern: '〜ことにしている',
+  reading: '〜koto ni shite iru',
+  meaning: 'membiasakan diri untuk ... / punya kebiasaan ...',
+  cat: 'progressive-state',
+  connection: 'Vる / Vない + ことにしている',
+  desc: '<b>〜ことにしている</b> menyatakan keputusan pribadi yang dijalankan secara rutin menjadi kebiasaan hidup. "Saya membiasakan diri untuk...".',
+  nuance: 'Keputusan yang diputuskan sendiri oleh pembicara dan dijaga kedisiplinannya.',
+  examples: [
+    { jp: '健康のために、毎朝ジョギングをする<b>ことにしています</b>。', id: 'Demi kesehatan, saya membiasakan diri joging setiap pagi.' },
+    { jp: '夜遅くには甘いものを食べない<b>ことにしている</b>。', id: 'Saya membiasakan diri tidak makan makanan manis di larut malam.' }
+  ],
+  see_also_grammar: [],
+  see_also_vocab: [],
+  register: null,
+  exceptions: null,
+  notes: null
+},
+{
+  id: 'gn3-00109',
+  level: 'n3',
+  pattern: '〜こと（instruksi）',
+  reading: '〜koto',
+  meaning: 'wajib ... / harus ... (instruksi / aturan tertulis)',
+  cat: 'obligation-necessity',
+  connection: 'Vる / Vない + こと',
+  desc: '<b>〜こと</b> digunakan dalam pengumuman tertulis, papan peraturan, atau instruksi ujian untuk memerintahkan atau melarang tindakan.',
+  nuance: 'Gaya bahasa tertulis resmi, sering pada papan petunjuk atau peraturan sekolah/kantor.',
+  examples: [
+    { jp: 'レポートは来週の金曜日までに提出する<b>こと</b>。', id: 'Laporan wajib dikumpulkan paling lambat hari Jumat minggu depan.' },
+    { jp: '試験中は携帯電話の電源を切る<b>こと</b>。', id: 'Selama ujian wajib mematikan daya ponsel.' }
+  ],
+  see_also_grammar: [],
+  see_also_vocab: [],
+  register: 'formal-written',
+  exceptions: null,
+  notes: null
+},
+{
+  id: 'gn3-00110',
+  level: 'n3',
+  pattern: '〜ように言う / 〜ように頼む',
+  reading: '〜you ni iu / you ni tanomu',
+  meaning: 'menyampaikan pesan agar ... / meminta agar ...',
+  cat: 'quotation-thought',
+  connection: 'Vる / Vない + ように言う / 頼む / 伝える',
+  desc: '<b>〜ように言う / 頼む</b> digunakan untuk kalimat tidak langsung (reported speech) saat meneruskan perintah atau permohonan dari pihak lain.',
+  nuance: 'Bentuk tidak langsung yang lebih halus dibandingkan kutipan langsung kata perintah.',
+  examples: [
+    { jp: '先生から、明日早く来る<b>ように言われました</b>。', id: 'Saya diberitahu oleh guru agar datang lebih awal besok.' },
+    { jp: '田中さんに書類を持ってくる<b>ように頼んで</b>ください。', id: 'Tolong mintalah kepada Tanaka-san agar membawa dokumennya.' }
+  ],
+  see_also_grammar: [],
+  see_also_vocab: [],
+  register: null,
+  exceptions: null,
+  notes: null
+},
+{
+  id: 'gn3-00111',
+  level: 'n3',
+  pattern: '〜そうにない / 〜そうもない',
+  reading: '〜sou ni nai / sou mo nai',
+  meaning: 'tampaknya mustahil ... / kecil kemungkinan untuk ...',
+  cat: 'conjecture-possibility',
+  connection: 'V-stem + そうにない / そうもない',
+  desc: '<b>〜そうにない</b> menyatakan perkiraan negatif pembicara bahwa sesuatu tampaknya tidak mungkin terjadi berdasarkan pengamatan.',
+  nuance: '〜そうもない memberikan penekanan kemustahilan yang lebih kuat daripada 〜そうにない.',
+  examples: [
+    { jp: 'この雨はまだやみ<b>そうにない</b>。', id: 'Hujan ini tampaknya belum akan reda.' },
+    { jp: '締め切りまでに仕事が終わり<b>そうもありません</b>。', id: 'Pekerjaan ini tampaknya mustahil selesai sebelum tenggat waktu.' }
+  ],
+  see_also_grammar: [],
+  see_also_vocab: [],
+  register: null,
+  exceptions: null,
+  notes: null
+},
+{
+  id: 'gn3-00112',
+  level: 'n3',
+  pattern: '〜一方だ',
+  reading: '〜ippou da',
+  meaning: 'semakin bertambah ... / terus-menerus ke satu arah',
+  cat: 'progressive-state',
+  connection: 'Vる + 一方だ',
+  desc: '<b>〜一方だ</b> menyatakan bahwa suatu tren atau perubahan terus berlanjut ke satu arah (biasanya memburuk atau meningkat tajam).',
+  nuance: 'Sering dipakai bersama kata kerja perubahan seperti 増える, 減る, 悪化する.',
+  examples: [
+    { jp: '物価が上がる<b>一方だ</b>。', id: 'Harga barang terus-menerus naik.' },
+    { jp: '祖父の病気は悪くなる<b>一方です</b>。', id: 'Penyakit kakek saya terus memburuk.' }
+  ],
+  see_also_grammar: ['gn3-00113'],
+  see_also_vocab: [],
+  register: null,
+  exceptions: null,
+  notes: null
+},
+{
+  id: 'gn3-00113',
+  level: 'n3',
+  pattern: '〜一方で',
+  reading: '〜ippou de',
+  meaning: 'di satu sisi ... di sisi lain ... / sementara itu',
+  cat: 'contrast-concession',
+  connection: 'Vる / Adj-い / Adj-な + な / N + である + 一方で',
+  desc: '<b>〜一方で</b> menghubungkan dua aspek yang kontras atau saling melengkapi dari subjek atau situasi yang sama.',
+  nuance: 'Menunjukkan dualitas situasi secara objektif.',
+  examples: [
+    { jp: 'この仕事は大変な<b>一方で</b>、やりがいもあります。', id: 'Pekerjaan ini berat di satu sisi, tetapi di sisi lain juga sangat memuaskan.' },
+    { jp: '科学技術が進歩する<b>一方で</b>、自然環境が破壊されている。', id: 'Di satu sisi sains dan teknologi maju, sementara di sisi lain lingkungan alam dirusak.' }
+  ],
+  see_also_grammar: ['gn3-00112'],
+  see_also_vocab: [],
+  register: null,
+  exceptions: null,
+  notes: null
+},
+{
+  id: 'gn3-00114',
+  level: 'n3',
+  pattern: '〜について',
+  reading: '〜ni tsuite',
+  meaning: 'tentang ... / mengenai topik ...',
+  cat: 'particle',
+  connection: 'N + について / についての + N',
+  desc: '<b>〜について</b> menandai pokok pembicaraan, kajian, atau penulisan. "Tentang...", "mengenai...".',
+  nuance: 'Menandai tema atau subjek penyelidikan, diskusi, atau pemikiran.',
+  examples: [
+    { jp: '日本の文化<b>について</b>研究しています。', id: 'Saya sedang meneliti tentang kebudayaan Jepang.' },
+    { jp: '将来の進路<b>について</b>両親と話し合いました。', id: 'Saya telah berdiskusi dengan orang tua mengenai jalur masa depan.' }
+  ],
+  see_also_grammar: [],
+  see_also_vocab: [],
+  register: null,
+  exceptions: null,
+  notes: null
+},
+{
+  id: 'gn3-00115',
+  level: 'n3',
+  pattern: '〜によって / 〜による',
+  reading: '〜ni yotte / ni yoru',
+  meaning: 'berdasarkan ... / tergantung pada ... / oleh ... / akibat ...',
+  cat: 'reason-cause',
+  connection: 'N + によって / による + N',
+  desc: '<b>〜によって</b> menyatakan cara/metode, penyebab suatu musibah, keberagaman menurut kelompok, atau pelaku dalam kalimat pasif formal.',
+  nuance: 'Salah satu partikel majemuk paling serbaguna dalam JLPT N3.',
+  examples: [
+    { jp: '人<b>によって</b>考え方が違います。', id: 'Tergantung orangnya, cara berpikirnya berbeda-beda.' },
+    { jp: '台風<b>によって</b>大きな被害が出ました。', id: 'Akibat angin topan timbul kerusakan besar.' },
+    { jp: 'インターネット<b>によって</b>多くの情報を得ることができます。', id: 'Melalui internet kita dapat memperoleh banyak informasi.' }
+  ],
+  see_also_grammar: ['gn3-00116'],
+  see_also_vocab: [],
+  register: null,
+  exceptions: null,
+  notes: null
+},
+{
+  id: 'gn3-00116',
+  level: 'n3',
+  pattern: '〜によると / 〜によれば',
+  reading: '〜ni yoru to / ni yoreba',
+  meaning: 'menurut ... / berdasarkan sumber kabar ...',
+  cat: 'hearsay-report',
+  connection: 'N + によると / によれば + 〜そうだ / 〜らしい',
+  desc: '<b>〜によると</b> menyebutkan sumber informasi atau berita yang didengar. Selalu dipasangkan dengan kata kabar seperti 〜そうだ atau 〜ということだ di akhir kalimat.',
+  nuance: 'Menyampaikan kutipan sumber berita eksternal.',
+  examples: [
+    { jp: '天気予報<b>によると</b>、明日は雨が降るそうです。', id: 'Menurut ramalan cuaca, besok katanya akan turun hujan.' },
+    { jp: 'ニュース<b>によれば</b>、事故の原因はまだ分かっていない。', id: 'Berdasarkan berita, penyebab kecelakaan masih belum diketahui.' }
+  ],
+  see_also_grammar: ['gn3-00115'],
+  see_also_vocab: [],
+  register: null,
+  exceptions: null,
+  notes: null
+},
+{
+  id: 'gn3-00117',
+  level: 'n3',
+  pattern: '〜だけでなく',
+  reading: '〜dake de naku',
+  meaning: 'tidak hanya ... tetapi juga ...',
+  cat: 'extent-degree',
+  connection: 'V-plain / Adj-い / Adj-な + な / N + だけでなく',
+  desc: '<b>〜だけでなく</b> menyatakan penambahan bahwa hal lain juga berlaku selain hal yang sudah disebutkan. "Tidak hanya A, tetapi juga B".',
+  nuance: 'Sering dipasangkan dengan 〜も di klausa berikutnya.',
+  examples: [
+    { jp: '彼は日本語<b>だけでなく</b>、英語もペラペラです。', id: 'Dia tidak hanya lancar bahasa Jepang, tetapi juga fasih bahasa Inggris.' },
+    { jp: 'この商品はデザインが良い<b>だけでなく</b>、使いやすい。', id: 'Produk ini tidak hanya desainnya bagus, tetapi juga mudah digunakan.' }
+  ],
+  see_also_grammar: ['gn3-00118'],
+  see_also_vocab: [],
+  register: null,
+  exceptions: null,
+  notes: null
+},
+{
+  id: 'gn3-00118',
+  level: 'n3',
+  pattern: '〜も〜ば〜も',
+  reading: '〜mo〜ba〜mo',
+  meaning: 'baik ... maupun ... / ada ... dan juga ada ...',
+  cat: 'listing-addition',
+  connection: 'N + も + V-ば / Adj-ければ / Adj-なら + N + も',
+  desc: '<b>〜も〜ば〜も</b> menyebutkan dua hal yang berdampingan atau beraneka ragam. "Baik hal positif maupun negatif, ada semuanya".',
+  nuance: 'Memberikan kesan keberagaman atau kelengkapan situasi.',
+  examples: [
+    { jp: '人生には楽しいこと<b>もあれば</b>、苦しいこと<b>もある</b>。', id: 'Dalam hidup ini ada hal yang menyenangkan, dan ada pula hal yang menyusahkan.' },
+    { jp: 'この店は料理<b>もおいしければ</b>、サービス<b>もいい</b>。', id: 'Toko ini makanannya enak, pelayanannya pun ramah.' }
+  ],
+  see_also_grammar: ['gn3-00117'],
+  see_also_vocab: [],
+  register: null,
+  exceptions: null,
+  notes: null
+},
+{
+  id: 'gn3-00119',
+  level: 'n3',
+  pattern: '〜らしい',
+  reading: '〜rashii',
+  meaning: 'khas ... / benar-benar mencerminkan karakter ...',
+  cat: 'conjecture-possibility',
+  connection: 'N + らしい',
+  desc: '<b>〜らしい</b> menyatakan bahwa sesuatu memiliki kualitas sejati yang khas dan mencerminkan sifat hakiki dari kata benda tersebut. "Sangat khas...", "layaknya...".',
+  nuance: 'Berbeda dari 〜らしい sebagai kabar angin (hearsay). Di sini maknanya adalah kualitas tipikal.',
+  examples: [
+    { jp: '今日は春<b>らしい</b>暖かい日ですね。', id: 'Hari ini hari hangat yang sangat khas musim semi ya.' },
+    { jp: '男<b>らしく</b>堂々としていなさい。', id: 'Tegap dan percaya dirilah layaknya seorang pria sejati.' }
+  ],
+  see_also_grammar: [],
+  see_also_vocab: [],
+  register: null,
+  exceptions: null,
+  notes: null
+},
+{
+  id: 'gn3-00120',
+  level: 'n3',
+  pattern: '〜的',
+  reading: '〜teki',
+  meaning: 'secara ... / bersifat ... / bernuansa ...',
+  cat: 'expression',
+  connection: 'N + 的（な/に/だ）',
+  desc: '<b>〜的な</b> adalah akhiran pembentuk kata sifat atau kata keterangan yang bermakna "bersifat", "berkaitan dengan", atau "secara...".',
+  nuance: 'Mengubah kata benda konsep menjadi adjektiva atau adverbia.',
+  examples: [
+    { jp: 'これらは基本<b>的な</b>文法規則です。', id: 'Ini adalah aturan-aturan tata bahasa yang bersifat mendasar.' },
+    { jp: '健康<b>的な</b>生活を心がけています。', id: 'Saya berusaha menjalani gaya hidup yang sehat.' },
+    { jp: '経済<b>的に</b>自立したい。', id: 'Saya ingin mandiri secara finansial/ekonomi.' }
+  ],
+  see_also_grammar: [],
+  see_also_vocab: [],
+  register: null,
+  exceptions: null,
+  notes: null
 }
 
 ];

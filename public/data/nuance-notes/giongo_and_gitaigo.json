@@ -1,0 +1,152 @@
+[
+  {
+    "id": "ono-dokidoki",
+    "word": "ドキドキ",
+    "type": "gijougo",
+    "reading": "dokidoki",
+    "meaning_id": "berdebar-debar; deg-degan",
+    "nuance_id": "Detak jantung yang berdegup kencang karena cemas, gugup, atau jatuh cinta.",
+    "domain": "emosi",
+    "examples": [
+      {
+        "jp": "面接の前で心臓がドキドキしている。",
+        "id": "Jantung saya berdebar-debar kencang sebelum wawancara."
+      }
+    ]
+  },
+  {
+    "id": "ono-wakuwaku",
+    "word": "ワクワク",
+    "type": "gijougo",
+    "reading": "wakuwaku",
+    "meaning_id": "antusias; sangat bersemangat menantikan sesuatu",
+    "nuance_id": "Perasaan gembira dan tidak sabar menyambut kejadian membahagiakan di masa depan.",
+    "domain": "emosi",
+    "examples": [
+      {
+        "jp": "明日からの日本旅行を思うと胸がワクワクする。",
+        "id": "Membayangkan perjalanan ke Jepang mulai besok membuat hati saya sangat antusias."
+      }
+    ]
+  },
+  {
+    "id": "ono-perapera",
+    "word": "ペラペラ",
+    "type": "gitaigo",
+    "reading": "perapera",
+    "meaning_id": "lancar fasih (berbahasa); tipis (kertas)",
+    "nuance_id": "Kemampuan berbicara bahasa asing mengalir tanpa terbata-bata.",
+    "domain": "kemampuan-bahasa",
+    "examples": [
+      {
+        "jp": "彼は日本語も英語もペラペラです。",
+        "id": "Dia sangat fasih berbahasa Jepang maupun bahasa Inggris."
+      }
+    ]
+  },
+  {
+    "id": "ono-girigiri",
+    "word": "ギリギリ",
+    "type": "gitaigo",
+    "reading": "girigiri",
+    "meaning_id": "pas-pasan; di detik-detik terakhir; batas tipis",
+    "nuance_id": "Kondisi waktu atau nilai yang nyaris tidak mencukupi namun berhasil selamat di detik terakhir.",
+    "domain": "waktu-kondisi",
+    "examples": [
+      {
+        "jp": "電車の出発時間ギリギリに間に合った。",
+        "id": "Saya berhasil tepat waktu pas di detik-detik terakhir sebelum kereta berangkat."
+      }
+    ]
+  },
+  {
+    "id": "ono-iraira",
+    "word": "イライラ",
+    "type": "gijougo",
+    "reading": "iraira",
+    "meaning_id": "jengkel; kesal; geregetan karena tertahan",
+    "nuance_id": "Emosi frustrasi karena hal-hal tidak berjalan lancar seperti antrean lama atau kemacetan.",
+    "domain": "emosi",
+    "examples": [
+      {
+        "jp": "渋滞に巻き込まれてイライラした。",
+        "id": "Saya merasa kesal jengkel karena terjebak macet."
+      }
+    ]
+  },
+  {
+    "id": "ono-sarasara",
+    "word": "サラサラ",
+    "type": "gitaigo / giongo",
+    "reading": "sarasara",
+    "meaning_id": "halus lembut mengalir (rambut, aliran sungai kecil, pasir)",
+    "nuance_id": "Kondisi permukaan yang kering, bersih, dan meluncur mulus tanpa ada rasa lengket.",
+    "domain": "tekstur-aliran",
+    "examples": [
+      {
+        "jp": "シャンプーの後、髪がサラサラになった。",
+        "id": "Setelah keramas dengan sampo, rambut menjadi halus lembut mengalir."
+      }
+    ]
+  },
+  {
+    "id": "ono-pikapika",
+    "word": "ピカピカ",
+    "type": "gitaigo",
+    "reading": "pikapika",
+    "meaning_id": "berkilau bersih; mengkilap baru",
+    "nuance_id": "Cahaya gemerlap dari benda yang baru, bersih dipoles, atau belum tergores.",
+    "domain": "visual-kebersihan",
+    "examples": [
+      {
+        "jp": "床をピカピカに磨き上げました。",
+        "id": "Saya memoles lantai hingga berkilau bersih mengkilap."
+      }
+    ]
+  },
+  {
+    "id": "ono-barabara",
+    "word": "バラバラ",
+    "type": "gitaigo",
+    "reading": "barabara",
+    "meaning_id": "berantakan terpisah-pisah; tidak serempak",
+    "nuance_id": "Benda atau pendapat anggota tim yang tercerai-berai dan tidak bersatu padu.",
+    "domain": "kondisi-sosial",
+    "examples": [
+      {
+        "jp": "チームの意見がバラバラでまとまらない。",
+        "id": "Pendapat tim tercerai-berai dan sulit disatukan."
+      }
+    ]
+  },
+  {
+    "id": "ono-zukizuki",
+    "word": "ズキズキ",
+    "type": "gitaigo",
+    "reading": "zukizuki",
+    "meaning_id": "berdenyut-denyut nyeri (sakit kepala, sakit gigi)",
+    "nuance_id": "Rasa sakit berirama ritmis seiring detak pembuluh darah (nyeri tajam berdenyut).",
+    "domain": "kesehatan-k3",
+    "examples": [
+      {
+        "jp": "虫歯がズキズキ痛んで眠れない。",
+        "id": "Gigi berlubang terasa sakit berdenyut-denyut hingga tidak bisa tidur."
+      }
+    ]
+  },
+  {
+    "id": "ono-gangan",
+    "word": "ガンガン",
+    "type": "giongo / gitaigo",
+    "reading": "gangan",
+    "meaning_id": "sakit kepala berat serasa dipukul palu; suara dentuman keras bertalu-talu",
+    "nuance_id": "Sakit kepala hebat (hangover/migrain berat) atau aksi dilakukan dengan intensitas maksimal tanpa ragu.",
+    "domain": "kesehatan-k3",
+    "examples": [
+      {
+        "jp": "二日酔いで頭がガンガンする。",
+        "id": "Kepala saya sakit serasa dipukul palu karena mabuk kemarin."
+      }
+    ]
+  }
+]

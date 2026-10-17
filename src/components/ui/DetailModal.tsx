@@ -3,9 +3,12 @@ import { createPortal } from 'react-dom';
 import { Volume2, X, Sparkles, BookOpen, RotateCcw, Flag, Eye, EyeOff, Zap } from 'lucide-react';
 import { NormalizedVocab, NormalizedGrammar } from '../../lib/data/dataManager';
 import { speakJapanese } from '../../lib/audio/tts';
-import { ConjugationModal } from '../grammar/ConjugationModal';
-import { ReportIssueModal } from './ReportIssueModal';
 import { useAppStore } from '../../store/useAppStore';
+import { useModalStore } from '../../store/useModalStore';
+import { PitchAccentBadge } from '../curriculum/interactive/PitchAccentBadge';
+import { RubyText } from './RubyText';
+import { lookupPitch } from '../../lib/data/pitchAccentManager';
+import { useFocusTrap } from '../../hooks/useFocusTrap';
 
 interface DetailModalProps {
   item: (NormalizedVocab | NormalizedGrammar) | null;
@@ -15,10 +18,9 @@ interface DetailModalProps {
 
 export const DetailModal: React.FC<DetailModalProps> = ({ item, type, onClose }) => {
   const { setActiveTab } = useAppStore();
-  const [isConjugationModalOpen, setIsConjugationModalOpen] = useState(false);
   const [blurTranslations, setBlurTranslations] = useState(false);
   const [revealedSentences, setRevealedSentences] = useState<Record<number, boolean>>({});
-  const [isReportOpen, setIsReportOpen] = useState(false);
+  const focusTrapRef = useFocusTrap<HTMLDivElement>(!!item, onClose);
 
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
@@ -41,9 +43,13 @@ export const DetailModal: React.FC<DetailModalProps> = ({ item, type, onClose })
   const modalContent = (
     <div
       onClick={onClose}
-      className="fixed inset-0 z-[9999] bg-black/80 backdrop-blur-md flex items-end sm:items-center justify-center p-0 sm:p-4 animate-in fade-in duration-200"
+      className="fixed inset-0 z-50 bg-black/80 backdrop-blur-md flex items-end sm:items-center justify-center p-0 sm:p-4 animate-in fade-in duration-200"
     >
       <div
+        ref={focusTrapRef}
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="detail-modal-title"
         onClick={(e) => e.stopPropagation()}
         className="w-full max-w-lg max-h-[88dvh] sm:max-h-[90vh] overflow-y-auto bg-surface border-t-2 sm:border-2 border-accent/30 rounded-t-3xl sm:rounded-3xl p-5 sm:p-8 space-y-5 sm:space-y-6 shadow-2xl relative animate-in slide-in-from-bottom-6 sm:zoom-in-95 duration-200"
       >
@@ -61,26 +67,37 @@ export const DetailModal: React.FC<DetailModalProps> = ({ item, type, onClose })
           </div>
 
           <button
+            type="button"
             onClick={onClose}
-            className="w-8 h-8 rounded-full bg-surface-2 hover:bg-surface-3 flex items-center justify-center text-appText-muted hover:text-appText-bright transition-all"
-            title="Tutup"
-            aria-label="Tutup modal"
+            className="min-w-[44px] min-h-[44px] w-11 h-11 rounded-full bg-surface-2 hover:bg-surface-3 border border-accent/20 flex items-center justify-center text-appText-muted hover:text-appText-bright transition-all active:scale-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+            title="Tutup dialog detail materi"
+            aria-label="Tutup dialog detail materi"
           >
-            <X className="w-4 h-4" />
+            <X className="w-5 h-5" />
+            <span className="sr-only">Tutup dialog</span>
           </button>
         </div>
 
         {/* Word Display & Audio Button */}
         <div className="flex items-start justify-between gap-4">
           <div className="space-y-1">
-            <div className="text-3xl sm:text-4xl font-jp font-bold text-appText-bright leading-tight">
-              {title}
+            <div id="detail-modal-title" className="text-3xl sm:text-4xl font-jp font-bold text-appText-bright leading-tight [word-break:keep-all] [overflow-wrap:anywhere]">
+              <RubyText text={title || ''} furigana={reading} />
             </div>
-            {reading && reading !== title && (
-              <div className="text-sm font-jp text-amber-300">
-                【{reading}】 {vocab?.romaji && <span className="font-ui text-xs text-appText-muted ml-1">({vocab.romaji})</span>}
+            {vocab?.romaji && (
+              <div className="text-xs font-ui text-appText-muted">
+                ({vocab.romaji})
               </div>
             )}
+            {isVocab && (() => {
+              const pitch = (vocab as any)?.pitch || (title ? lookupPitch(title, reading) : undefined);
+              if (!pitch) return null;
+              return (
+                <div className="pt-1.5">
+                  <PitchAccentBadge reading={reading || title || ''} pattern={pitch.pattern} />
+                </div>
+              );
+            })()}
           </div>
 
           <button
@@ -118,7 +135,7 @@ export const DetailModal: React.FC<DetailModalProps> = ({ item, type, onClose })
         {isVocab && (
           <div>
             <button
-              onClick={() => setIsConjugationModalOpen(true)}
+              onClick={() => useModalStore.getState().openModal('conjugation', { initialVerb: title || '' })}
               className="w-full py-2.5 px-4 rounded-xl bg-surface-2 hover:bg-surface-3 border border-accent/20 hover:border-accent/40 text-accent-hot text-xs font-bold transition-all flex items-center justify-center gap-2 shadow-sm"
             >
               <RotateCcw className="w-3.5 h-3.5 text-accent" />
@@ -205,7 +222,14 @@ export const DetailModal: React.FC<DetailModalProps> = ({ item, type, onClose })
         {/* Report Content Mistake / Unnatural Sentence */}
         <div className="pt-1 border-t border-accent/15">
           <button
-            onClick={() => setIsReportOpen(true)}
+            onClick={() =>
+              useModalStore.getState().openModal('reportIssue', {
+                itemId: item.id,
+                itemType: isVocab ? 'vocab' : 'grammar',
+                originalJapanese: title || '',
+                originalTranslation: isVocab ? vocab?.meaning : grammar?.meaning,
+              })
+            }
             className="w-full py-2 px-3 rounded-xl bg-surface-2/60 hover:bg-surface-2 border border-accent/15 text-appText-muted hover:text-amber-400 text-xs font-medium transition-all flex items-center justify-center gap-1.5 active:scale-95"
           >
             <Flag className="w-3.5 h-3.5 text-accent" />
@@ -213,25 +237,6 @@ export const DetailModal: React.FC<DetailModalProps> = ({ item, type, onClose })
           </button>
         </div>
       </div>
-
-      {/* Verb Conjugation Matrix Modal */}
-      <ConjugationModal
-        isOpen={isConjugationModalOpen}
-        onClose={() => setIsConjugationModalOpen(false)}
-        initialVerb={title}
-      />
-
-      {/* Content Issue Report Modal */}
-      <ReportIssueModal
-        isOpen={isReportOpen}
-        onClose={() => setIsReportOpen(false)}
-        context={{
-          itemId: item.id,
-          itemType: isVocab ? 'vocab' : 'grammar',
-          originalJapanese: title || '',
-          originalTranslation: isVocab ? vocab?.meaning : grammar?.meaning,
-        }}
-      />
     </div>
   );
 

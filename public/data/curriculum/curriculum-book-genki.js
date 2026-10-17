@@ -21,17 +21,17 @@ window.curriculumBook_genki = {
       "title_jp": "第1課: 新しい友達 (New Friends)",
       "theme": "Genki I",
       "icon": "📘",
-      "can_do_summary": "Memahami silabus Genki I Bab 1 secara komprehensif.",
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Teman Baru & Perkenalan Identitas.",
       "grammar_ids": [
         "gn5-00001",
         "gn5-00005",
         "gn5-00016"
       ],
       "vocab_ids": [
-        "Saya bertemu teman.",
-        "Besok saya akan bertemu guru.",
-        "Pintunya terbuka.",
-        "Tolong buka jendelanya."
+        "vg-n5-00001",
+        "vg-n5-00002",
+        "vg-n5-00003",
+        "vg-n5-00004"
       ],
       "lessons": [
         {
@@ -40,37 +40,37 @@ window.curriculumBook_genki = {
           "title_id": "Teman Baru & Perkenalan Identitas (Eksplorasi Materi & Pola)",
           "title_jp": "第1課: 新しい友達 (New Friends)（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku GENKI I & II (3rd Edition) pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa GENKI I & II (3rd Edition) bab ini dalam konteks nyata.",
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Teman Baru & Perkenalan Identitas.",
           "grammar_ids": [
             "gn5-00001",
             "gn5-00005",
             "gn5-00016"
           ],
           "vocab_ids": [
-            "Saya bertemu teman.",
-            "Besok saya akan bertemu guru.",
-            "Pintunya terbuka.",
-            "Tolong buka jendelanya."
+            "vg-n5-00001",
+            "vg-n5-00002",
+            "vg-n5-00003",
+            "vg-n5-00004"
           ],
           "pedagogical_framework": {
             "what": {
               "summary": "Silabus resmi GENKI I & II (3rd Edition) bab 1.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Teman Baru & Perkenalan Identitas.",
               "targetPatterns": [
                 "gn5-00001",
                 "gn5-00005",
                 "gn5-00016"
               ],
               "coreVocabSample": [
-                "Saya bertemu teman.",
-                "Besok saya akan bertemu guru.",
-                "Pintunya terbuka.",
-                "Tolong buka jendelanya."
+                "vg-n5-00001",
+                "vg-n5-00002",
+                "vg-n5-00003",
+                "vg-n5-00004"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku GENKI I & II (3rd Edition). Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 1 GENKI I & II (3rd Edition).",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Teman Baru & Perkenalan Identitas.",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -117,7 +117,7 @@ window.curriculumBook_genki = {
       "title_jp": "第2課: 買い物 (Shopping)",
       "theme": "Genki I",
       "icon": "📘",
-      "can_do_summary": "Memahami silabus Genki I Bab 2 secara komprehensif.",
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Berbelanja & Menunjuk Benda.",
       "grammar_ids": [
         "gn5-00017",
         "gn5-00018",
@@ -125,10 +125,10 @@ window.curriculumBook_genki = {
         "gn5-00004"
       ],
       "vocab_ids": [
-        "Saya tinggal di Tokyo.",
-        "Saya olahraga setiap hari.",
-        "Silakan duduk di kursi.",
-        "Silakan berdiri."
+        "vg-n5-00021",
+        "vg-n5-00022",
+        "vg-n5-00023",
+        "vg-n5-00024"
       ],
       "lessons": [
         {
@@ -137,7 +137,7 @@ window.curriculumBook_genki = {
           "title_id": "Berbelanja & Menunjuk Benda (Eksplorasi Materi & Pola)",
           "title_jp": "第2課: 買い物 (Shopping)（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku GENKI I & II (3rd Edition) pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa GENKI I & II (3rd Edition) bab ini dalam konteks nyata.",
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Berbelanja & Menunjuk Benda.",
           "grammar_ids": [
             "gn5-00017",
             "gn5-00018",
@@ -145,15 +145,15 @@ window.curriculumBook_genki = {
             "gn5-00004"
           ],
           "vocab_ids": [
-            "Saya tinggal di Tokyo.",
-            "Saya olahraga setiap hari.",
-            "Silakan duduk di kursi.",
-            "Silakan berdiri."
+            "vg-n5-00021",
+            "vg-n5-00022",
+            "vg-n5-00023",
+            "vg-n5-00024"
           ],
           "pedagogical_framework": {
             "what": {
               "summary": "Silabus resmi GENKI I & II (3rd Edition) bab 2.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Berbelanja & Menunjuk Benda.",
               "targetPatterns": [
                 "gn5-00017",
                 "gn5-00018",
@@ -161,15 +161,15 @@ window.curriculumBook_genki = {
                 "gn5-00004"
               ],
               "coreVocabSample": [
-                "Saya tinggal di Tokyo.",
-                "Saya olahraga setiap hari.",
-                "Silakan duduk di kursi.",
-                "Silakan berdiri."
+                "vg-n5-00021",
+                "vg-n5-00022",
+                "vg-n5-00023",
+                "vg-n5-00024"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku GENKI I & II (3rd Edition). Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 2 GENKI I & II (3rd Edition).",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Berbelanja & Menunjuk Benda.",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -216,17 +216,17 @@ window.curriculumBook_genki = {
       "title_jp": "第3課: デートの約束 (Making a Date)",
       "theme": "Genki I",
       "icon": "📘",
-      "can_do_summary": "Memahami silabus Genki I Bab 3 secara komprehensif.",
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Menyusun Janji Temu & Rutinitas Harian.",
       "grammar_ids": [
         "gn5-00021",
         "gn5-00003",
         "gn5-00022"
       ],
       "vocab_ids": [
-        "Tolong pinjamkan payung.",
-        "Saya meminjam buku di perpustakaan.",
-        "Saya mengajar bahasa Jepang.",
-        "Saya menghafal kosakata."
+        "vg-n5-00041",
+        "vg-n5-00042",
+        "vg-n5-00043",
+        "vg-n5-00044"
       ],
       "lessons": [
         {
@@ -235,37 +235,37 @@ window.curriculumBook_genki = {
           "title_id": "Menyusun Janji Temu & Rutinitas Harian (Eksplorasi Materi & Pola)",
           "title_jp": "第3課: デートの約束 (Making a Date)（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku GENKI I & II (3rd Edition) pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa GENKI I & II (3rd Edition) bab ini dalam konteks nyata.",
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Menyusun Janji Temu & Rutinitas Harian.",
           "grammar_ids": [
             "gn5-00021",
             "gn5-00003",
             "gn5-00022"
           ],
           "vocab_ids": [
-            "Tolong pinjamkan payung.",
-            "Saya meminjam buku di perpustakaan.",
-            "Saya mengajar bahasa Jepang.",
-            "Saya menghafal kosakata."
+            "vg-n5-00041",
+            "vg-n5-00042",
+            "vg-n5-00043",
+            "vg-n5-00044"
           ],
           "pedagogical_framework": {
             "what": {
               "summary": "Silabus resmi GENKI I & II (3rd Edition) bab 3.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Menyusun Janji Temu & Rutinitas Harian.",
               "targetPatterns": [
                 "gn5-00021",
                 "gn5-00003",
                 "gn5-00022"
               ],
               "coreVocabSample": [
-                "Tolong pinjamkan payung.",
-                "Saya meminjam buku di perpustakaan.",
-                "Saya mengajar bahasa Jepang.",
-                "Saya menghafal kosakata."
+                "vg-n5-00041",
+                "vg-n5-00042",
+                "vg-n5-00043",
+                "vg-n5-00044"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku GENKI I & II (3rd Edition). Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 3 GENKI I & II (3rd Edition).",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Menyusun Janji Temu & Rutinitas Harian.",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -312,17 +312,17 @@ window.curriculumBook_genki = {
       "title_jp": "第4課: 初めてのデート (The First Date)",
       "theme": "Genki I",
       "icon": "📘",
-      "can_do_summary": "Memahami silabus Genki I Bab 4 secara komprehensif.",
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Kencan Pertama & Keberadaan Benda / Orang.",
       "grammar_ids": [
         "gn5-00023",
         "gn5-00024",
         "gn5-00025"
       ],
       "vocab_ids": [
-        "Saya bekerja setiap hari.",
-        "Saya belajar bahasa Jepang setiap hari.",
-        "Saya belajar untuk ujian.",
-        "Setiap Sabtu saya membersihkan kamar."
+        "vg-n5-00164",
+        "vg-n5-00165",
+        "vg-n5-00166",
+        "vg-n5-00168"
       ],
       "lessons": [
         {
@@ -331,37 +331,37 @@ window.curriculumBook_genki = {
           "title_id": "Kencan Pertama & Keberadaan Benda / Orang (Eksplorasi Materi & Pola)",
           "title_jp": "第4課: 初めてのデート (The First Date)（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku GENKI I & II (3rd Edition) pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa GENKI I & II (3rd Edition) bab ini dalam konteks nyata.",
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Kencan Pertama & Keberadaan Benda / Orang.",
           "grammar_ids": [
             "gn5-00023",
             "gn5-00024",
             "gn5-00025"
           ],
           "vocab_ids": [
-            "Saya bekerja setiap hari.",
-            "Saya belajar bahasa Jepang setiap hari.",
-            "Saya belajar untuk ujian.",
-            "Setiap Sabtu saya membersihkan kamar."
+            "vg-n5-00164",
+            "vg-n5-00165",
+            "vg-n5-00166",
+            "vg-n5-00168"
           ],
           "pedagogical_framework": {
             "what": {
               "summary": "Silabus resmi GENKI I & II (3rd Edition) bab 4.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Kencan Pertama & Keberadaan Benda / Orang.",
               "targetPatterns": [
                 "gn5-00023",
                 "gn5-00024",
                 "gn5-00025"
               ],
               "coreVocabSample": [
-                "Saya bekerja setiap hari.",
-                "Saya belajar bahasa Jepang setiap hari.",
-                "Saya belajar untuk ujian.",
-                "Setiap Sabtu saya membersihkan kamar."
+                "vg-n5-00164",
+                "vg-n5-00165",
+                "vg-n5-00166",
+                "vg-n5-00168"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku GENKI I & II (3rd Edition). Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 4 GENKI I & II (3rd Edition).",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Kencan Pertama & Keberadaan Benda / Orang.",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -408,17 +408,17 @@ window.curriculumBook_genki = {
       "title_jp": "第5課: 沖縄旅行 (A Trip to Okinawa)",
       "theme": "Genki I",
       "icon": "📘",
-      "can_do_summary": "Memahami silabus Genki I Bab 5 secara komprehensif.",
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Wisata ke Okinawa & Kata Sifat.",
       "grammar_ids": [
         "gn5-00026",
         "gn5-00027",
         "gn5-00028"
       ],
       "vocab_ids": [
-        "Tolong tekan tombolnya.",
-        "Film selesai jam berapa?",
-        "Hari ini saya pulang lebih awal.",
-        "Dari sini ke stasiun butuh sepuluh menit."
+        "vg-n5-00185",
+        "vg-n5-00186",
+        "vg-n5-00187",
+        "vg-n5-00188"
       ],
       "lessons": [
         {
@@ -427,37 +427,37 @@ window.curriculumBook_genki = {
           "title_id": "Wisata ke Okinawa & Kata Sifat (Eksplorasi Materi & Pola)",
           "title_jp": "第5課: 沖縄旅行 (A Trip to Okinawa)（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku GENKI I & II (3rd Edition) pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa GENKI I & II (3rd Edition) bab ini dalam konteks nyata.",
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Wisata ke Okinawa & Kata Sifat.",
           "grammar_ids": [
             "gn5-00026",
             "gn5-00027",
             "gn5-00028"
           ],
           "vocab_ids": [
-            "Tolong tekan tombolnya.",
-            "Film selesai jam berapa?",
-            "Hari ini saya pulang lebih awal.",
-            "Dari sini ke stasiun butuh sepuluh menit."
+            "vg-n5-00185",
+            "vg-n5-00186",
+            "vg-n5-00187",
+            "vg-n5-00188"
           ],
           "pedagogical_framework": {
             "what": {
               "summary": "Silabus resmi GENKI I & II (3rd Edition) bab 5.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Wisata ke Okinawa & Kata Sifat.",
               "targetPatterns": [
                 "gn5-00026",
                 "gn5-00027",
                 "gn5-00028"
               ],
               "coreVocabSample": [
-                "Tolong tekan tombolnya.",
-                "Film selesai jam berapa?",
-                "Hari ini saya pulang lebih awal.",
-                "Dari sini ke stasiun butuh sepuluh menit."
+                "vg-n5-00185",
+                "vg-n5-00186",
+                "vg-n5-00187",
+                "vg-n5-00188"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku GENKI I & II (3rd Edition). Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 5 GENKI I & II (3rd Edition).",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Wisata ke Okinawa & Kata Sifat.",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -504,17 +504,17 @@ window.curriculumBook_genki = {
       "title_jp": "第6課: ロバートさんの一日 (A Day in Robert's Life)",
       "theme": "Genki I",
       "icon": "📘",
-      "can_do_summary": "Memahami silabus Genki I Bab 6 secara komprehensif.",
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Keseharian & Bentuk -Te yang Serbaguna.",
       "grammar_ids": [
         "gn5-00029",
         "gn5-00030",
         "gn5-00031"
       ],
       "vocab_ids": [
-        "Tolong berdiri.",
-        "Mau makan apa?",
-        "Saya sering menggunakan smartphone.",
-        "Saya membuat masakan."
+        "vg-n5-00205",
+        "vg-n5-00206",
+        "vg-n5-00207",
+        "vg-n5-00208"
       ],
       "lessons": [
         {
@@ -523,37 +523,37 @@ window.curriculumBook_genki = {
           "title_id": "Keseharian & Bentuk -Te yang Serbaguna (Eksplorasi Materi & Pola)",
           "title_jp": "第6課: ロバートさんの一日 (A Day in Robert's Life)（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku GENKI I & II (3rd Edition) pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa GENKI I & II (3rd Edition) bab ini dalam konteks nyata.",
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Keseharian & Bentuk -Te yang Serbaguna.",
           "grammar_ids": [
             "gn5-00029",
             "gn5-00030",
             "gn5-00031"
           ],
           "vocab_ids": [
-            "Tolong berdiri.",
-            "Mau makan apa?",
-            "Saya sering menggunakan smartphone.",
-            "Saya membuat masakan."
+            "vg-n5-00205",
+            "vg-n5-00206",
+            "vg-n5-00207",
+            "vg-n5-00208"
           ],
           "pedagogical_framework": {
             "what": {
               "summary": "Silabus resmi GENKI I & II (3rd Edition) bab 6.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Keseharian & Bentuk -Te yang Serbaguna.",
               "targetPatterns": [
                 "gn5-00029",
                 "gn5-00030",
                 "gn5-00031"
               ],
               "coreVocabSample": [
-                "Tolong berdiri.",
-                "Mau makan apa?",
-                "Saya sering menggunakan smartphone.",
-                "Saya membuat masakan."
+                "vg-n5-00205",
+                "vg-n5-00206",
+                "vg-n5-00207",
+                "vg-n5-00208"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku GENKI I & II (3rd Edition). Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 6 GENKI I & II (3rd Edition).",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Keseharian & Bentuk -Te yang Serbaguna.",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -600,17 +600,17 @@ window.curriculumBook_genki = {
       "title_jp": "第7課: 家族の写真 (Family Picture)",
       "theme": "Genki I",
       "icon": "📘",
-      "can_do_summary": "Memahami silabus Genki I Bab 7 secara komprehensif.",
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Foto Keluarga & Keadaan Sedang Berlangsung.",
       "grammar_ids": [
         "gn5-00032",
         "gn5-00033",
         "gn5-00034"
       ],
       "vocab_ids": [
-        "Saya menempelkan poster di dinding.",
-        "Saya suka memainkan piano.",
-        "Hujan turun.",
-        "Tolong belok kanan di sudut itu."
+        "vg-n5-00225",
+        "vg-n5-00226",
+        "vg-n5-00227",
+        "vg-n5-00228"
       ],
       "lessons": [
         {
@@ -619,37 +619,37 @@ window.curriculumBook_genki = {
           "title_id": "Foto Keluarga & Keadaan Sedang Berlangsung (Eksplorasi Materi & Pola)",
           "title_jp": "第7課: 家族の写真 (Family Picture)（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku GENKI I & II (3rd Edition) pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa GENKI I & II (3rd Edition) bab ini dalam konteks nyata.",
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Foto Keluarga & Keadaan Sedang Berlangsung.",
           "grammar_ids": [
             "gn5-00032",
             "gn5-00033",
             "gn5-00034"
           ],
           "vocab_ids": [
-            "Saya menempelkan poster di dinding.",
-            "Saya suka memainkan piano.",
-            "Hujan turun.",
-            "Tolong belok kanan di sudut itu."
+            "vg-n5-00225",
+            "vg-n5-00226",
+            "vg-n5-00227",
+            "vg-n5-00228"
           ],
           "pedagogical_framework": {
             "what": {
               "summary": "Silabus resmi GENKI I & II (3rd Edition) bab 7.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Foto Keluarga & Keadaan Sedang Berlangsung.",
               "targetPatterns": [
                 "gn5-00032",
                 "gn5-00033",
                 "gn5-00034"
               ],
               "coreVocabSample": [
-                "Saya menempelkan poster di dinding.",
-                "Saya suka memainkan piano.",
-                "Hujan turun.",
-                "Tolong belok kanan di sudut itu."
+                "vg-n5-00225",
+                "vg-n5-00226",
+                "vg-n5-00227",
+                "vg-n5-00228"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku GENKI I & II (3rd Edition). Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 7 GENKI I & II (3rd Edition).",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Foto Keluarga & Keadaan Sedang Berlangsung.",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -696,7 +696,7 @@ window.curriculumBook_genki = {
       "title_jp": "第8課: バーベキュー (Barbecue)",
       "theme": "Genki I",
       "icon": "📘",
-      "can_do_summary": "Memahami silabus Genki I Bab 8 secara komprehensif.",
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Pesta Barbeque & Gaya Bahasa Biasa (Plain Form).",
       "grammar_ids": [
         "gn5-00035",
         "gn5-00036",
@@ -704,10 +704,10 @@ window.curriculumBook_genki = {
         "gn5-00038"
       ],
       "vocab_ids": [
-        "Saya suka membuat masakan Jepang.",
-        "Saya berbelanja di akhir pekan.",
-        "Saya jalan-jalan bersama anjing.",
-        "Bulan depan saya wisata ke Kyoto."
+        "vg-n5-00456",
+        "vg-n5-00484",
+        "vg-n5-00495",
+        "vg-n5-00497"
       ],
       "lessons": [
         {
@@ -716,7 +716,7 @@ window.curriculumBook_genki = {
           "title_id": "Pesta Barbeque & Gaya Bahasa Biasa (Plain Form) (Eksplorasi Materi & Pola)",
           "title_jp": "第8課: バーベキュー (Barbecue)（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku GENKI I & II (3rd Edition) pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa GENKI I & II (3rd Edition) bab ini dalam konteks nyata.",
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Pesta Barbeque & Gaya Bahasa Biasa (Plain Form).",
           "grammar_ids": [
             "gn5-00035",
             "gn5-00036",
@@ -724,15 +724,15 @@ window.curriculumBook_genki = {
             "gn5-00038"
           ],
           "vocab_ids": [
-            "Saya suka membuat masakan Jepang.",
-            "Saya berbelanja di akhir pekan.",
-            "Saya jalan-jalan bersama anjing.",
-            "Bulan depan saya wisata ke Kyoto."
+            "vg-n5-00456",
+            "vg-n5-00484",
+            "vg-n5-00495",
+            "vg-n5-00497"
           ],
           "pedagogical_framework": {
             "what": {
               "summary": "Silabus resmi GENKI I & II (3rd Edition) bab 8.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Pesta Barbeque & Gaya Bahasa Biasa (Plain Form).",
               "targetPatterns": [
                 "gn5-00035",
                 "gn5-00036",
@@ -740,15 +740,15 @@ window.curriculumBook_genki = {
                 "gn5-00038"
               ],
               "coreVocabSample": [
-                "Saya suka membuat masakan Jepang.",
-                "Saya berbelanja di akhir pekan.",
-                "Saya jalan-jalan bersama anjing.",
-                "Bulan depan saya wisata ke Kyoto."
+                "vg-n5-00456",
+                "vg-n5-00484",
+                "vg-n5-00495",
+                "vg-n5-00497"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku GENKI I & II (3rd Edition). Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 8 GENKI I & II (3rd Edition).",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Pesta Barbeque & Gaya Bahasa Biasa (Plain Form).",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -795,17 +795,17 @@ window.curriculumBook_genki = {
       "title_jp": "第9課: かぶき (Kabuki)",
       "theme": "Genki I",
       "icon": "📘",
-      "can_do_summary": "Memahami silabus Genki I Bab 9 secara komprehensif.",
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Pertunjukan Kabuki & Masa Lalu Kasual.",
       "grammar_ids": [
         "gn5-00039",
         "gn5-00040",
         "gn5-00041"
       ],
       "vocab_ids": [
-        "work for a company",
-        "work in a factory",
-        "Silakan ke loket nomor 3.",
-        "Tolong jangan merokok di ruangan ini."
+        "vg-n5-00618",
+        "vg-n5-00619",
+        "vg-n5-00620",
+        "vg-n5-00725"
       ],
       "lessons": [
         {
@@ -814,37 +814,37 @@ window.curriculumBook_genki = {
           "title_id": "Pertunjukan Kabuki & Masa Lalu Kasual (Eksplorasi Materi & Pola)",
           "title_jp": "第9課: かぶき (Kabuki)（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku GENKI I & II (3rd Edition) pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa GENKI I & II (3rd Edition) bab ini dalam konteks nyata.",
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Pertunjukan Kabuki & Masa Lalu Kasual.",
           "grammar_ids": [
             "gn5-00039",
             "gn5-00040",
             "gn5-00041"
           ],
           "vocab_ids": [
-            "work for a company",
-            "work in a factory",
-            "Silakan ke loket nomor 3.",
-            "Tolong jangan merokok di ruangan ini."
+            "vg-n5-00618",
+            "vg-n5-00619",
+            "vg-n5-00620",
+            "vg-n5-00725"
           ],
           "pedagogical_framework": {
             "what": {
               "summary": "Silabus resmi GENKI I & II (3rd Edition) bab 9.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Pertunjukan Kabuki & Masa Lalu Kasual.",
               "targetPatterns": [
                 "gn5-00039",
                 "gn5-00040",
                 "gn5-00041"
               ],
               "coreVocabSample": [
-                "work for a company",
-                "work in a factory",
-                "Silakan ke loket nomor 3.",
-                "Tolong jangan merokok di ruangan ini."
+                "vg-n5-00618",
+                "vg-n5-00619",
+                "vg-n5-00620",
+                "vg-n5-00725"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku GENKI I & II (3rd Edition). Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 9 GENKI I & II (3rd Edition).",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Pertunjukan Kabuki & Masa Lalu Kasual.",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -891,7 +891,7 @@ window.curriculumBook_genki = {
       "title_jp": "第10課: 冬休みの予定 (Winter Vacation Plans)",
       "theme": "Genki I",
       "icon": "📘",
-      "can_do_summary": "Memahami silabus Genki I Bab 10 secara komprehensif.",
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Rencana Libur Musim Dingin & Komparasi.",
       "grammar_ids": [
         "gn5-00042",
         "gn5-00043",
@@ -899,10 +899,10 @@ window.curriculumBook_genki = {
         "gn5-00045"
       ],
       "vocab_ids": [
-        "Kacamata saya menjadi buram saat memakan ramen panas.",
-        "vg-n5-00789",
-        "Kakak perempuan saya menikah pada musim semi tahun lalu.",
-        "Tanaka-san sudah menikah dan mempunyai dua orang anak."
+        "vg-n5-00962",
+        "vg-n5-00993",
+        "vg-n5-00994",
+        "vg-n5-00996"
       ],
       "lessons": [
         {
@@ -911,7 +911,7 @@ window.curriculumBook_genki = {
           "title_id": "Rencana Libur Musim Dingin & Komparasi (Eksplorasi Materi & Pola)",
           "title_jp": "第10課: 冬休みの予定 (Winter Vacation Plans)（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku GENKI I & II (3rd Edition) pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa GENKI I & II (3rd Edition) bab ini dalam konteks nyata.",
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Rencana Libur Musim Dingin & Komparasi.",
           "grammar_ids": [
             "gn5-00042",
             "gn5-00043",
@@ -919,15 +919,15 @@ window.curriculumBook_genki = {
             "gn5-00045"
           ],
           "vocab_ids": [
-            "Kacamata saya menjadi buram saat memakan ramen panas.",
-            "vg-n5-00789",
-            "Kakak perempuan saya menikah pada musim semi tahun lalu.",
-            "Tanaka-san sudah menikah dan mempunyai dua orang anak."
+            "vg-n5-00962",
+            "vg-n5-00993",
+            "vg-n5-00994",
+            "vg-n5-00996"
           ],
           "pedagogical_framework": {
             "what": {
               "summary": "Silabus resmi GENKI I & II (3rd Edition) bab 10.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Rencana Libur Musim Dingin & Komparasi.",
               "targetPatterns": [
                 "gn5-00042",
                 "gn5-00043",
@@ -935,15 +935,15 @@ window.curriculumBook_genki = {
                 "gn5-00045"
               ],
               "coreVocabSample": [
-                "Kacamata saya menjadi buram saat memakan ramen panas.",
-                "vg-n5-00789",
-                "Kakak perempuan saya menikah pada musim semi tahun lalu.",
-                "Tanaka-san sudah menikah dan mempunyai dua orang anak."
+                "vg-n5-00962",
+                "vg-n5-00993",
+                "vg-n5-00994",
+                "vg-n5-00996"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku GENKI I & II (3rd Edition). Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 10 GENKI I & II (3rd Edition).",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Rencana Libur Musim Dingin & Komparasi.",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -990,17 +990,17 @@ window.curriculumBook_genki = {
       "title_jp": "第11課: 休みのあとの会話 (After the Vacation)",
       "theme": "Genki I",
       "icon": "📘",
-      "can_do_summary": "Memahami silabus Genki I Bab 11 secara komprehensif.",
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Percakapan Pascavokasi & Pengalaman.",
       "grammar_ids": [
         "gn5-00046",
         "gn5-00047",
         "gn5-00048"
       ],
       "vocab_ids": [
-        "Saya menghirup udara pagi yang segar dalam-dalam.",
-        "Tolong jangan merokok di sini.",
-        "vg-n5-00843",
-        "Setiap pagi saya membersihkan kamar saya sampai rapi dan bersih."
+        "vg-n5-01066",
+        "vg-n5-01067",
+        "vg-n5-01069",
+        "vg-n5-01070"
       ],
       "lessons": [
         {
@@ -1009,37 +1009,37 @@ window.curriculumBook_genki = {
           "title_id": "Percakapan Pascavokasi & Pengalaman (Eksplorasi Materi & Pola)",
           "title_jp": "第11課: 休みのあとの会話 (After the Vacation)（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku GENKI I & II (3rd Edition) pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa GENKI I & II (3rd Edition) bab ini dalam konteks nyata.",
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Percakapan Pascavokasi & Pengalaman.",
           "grammar_ids": [
             "gn5-00046",
             "gn5-00047",
             "gn5-00048"
           ],
           "vocab_ids": [
-            "Saya menghirup udara pagi yang segar dalam-dalam.",
-            "Tolong jangan merokok di sini.",
-            "vg-n5-00843",
-            "Setiap pagi saya membersihkan kamar saya sampai rapi dan bersih."
+            "vg-n5-01066",
+            "vg-n5-01067",
+            "vg-n5-01069",
+            "vg-n5-01070"
           ],
           "pedagogical_framework": {
             "what": {
               "summary": "Silabus resmi GENKI I & II (3rd Edition) bab 11.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Percakapan Pascavokasi & Pengalaman.",
               "targetPatterns": [
                 "gn5-00046",
                 "gn5-00047",
                 "gn5-00048"
               ],
               "coreVocabSample": [
-                "Saya menghirup udara pagi yang segar dalam-dalam.",
-                "Tolong jangan merokok di sini.",
-                "vg-n5-00843",
-                "Setiap pagi saya membersihkan kamar saya sampai rapi dan bersih."
+                "vg-n5-01066",
+                "vg-n5-01067",
+                "vg-n5-01069",
+                "vg-n5-01070"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku GENKI I & II (3rd Edition). Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 11 GENKI I & II (3rd Edition).",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Percakapan Pascavokasi & Pengalaman.",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -1086,7 +1086,7 @@ window.curriculumBook_genki = {
       "title_jp": "第12課: 気分が悪い (Feeling Ill)",
       "theme": "Genki I",
       "icon": "📘",
-      "can_do_summary": "Memahami silabus Genki I Bab 12 secara komprehensif.",
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Kondisi Kurang Sehat & Memberi Saran.",
       "grammar_ids": [
         "gn5-00049",
         "gn5-00050",
@@ -1095,10 +1095,10 @@ window.curriculumBook_genki = {
         "gn5-00053"
       ],
       "vocab_ids": [
-        "vg-n5-00962",
-        "Saya selalu menyikat gigi setiap malam sebelum tidur.",
-        "Sebelum berangkat, saya memoles sepatu kulit hitam hingga mengilap bersih.",
-        "Ada anjing besar."
+        "vg-n5-01136",
+        "vg-n5-01140",
+        "vg-n5-01141",
+        "vg-n5-01142"
       ],
       "lessons": [
         {
@@ -1107,7 +1107,7 @@ window.curriculumBook_genki = {
           "title_id": "Kondisi Kurang Sehat & Memberi Saran (Eksplorasi Materi & Pola)",
           "title_jp": "第12課: 気分が悪い (Feeling Ill)（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku GENKI I & II (3rd Edition) pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa GENKI I & II (3rd Edition) bab ini dalam konteks nyata.",
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Kondisi Kurang Sehat & Memberi Saran.",
           "grammar_ids": [
             "gn5-00049",
             "gn5-00050",
@@ -1116,15 +1116,15 @@ window.curriculumBook_genki = {
             "gn5-00053"
           ],
           "vocab_ids": [
-            "vg-n5-00962",
-            "Saya selalu menyikat gigi setiap malam sebelum tidur.",
-            "Sebelum berangkat, saya memoles sepatu kulit hitam hingga mengilap bersih.",
-            "Ada anjing besar."
+            "vg-n5-01136",
+            "vg-n5-01140",
+            "vg-n5-01141",
+            "vg-n5-01142"
           ],
           "pedagogical_framework": {
             "what": {
               "summary": "Silabus resmi GENKI I & II (3rd Edition) bab 12.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Kondisi Kurang Sehat & Memberi Saran.",
               "targetPatterns": [
                 "gn5-00049",
                 "gn5-00050",
@@ -1133,15 +1133,15 @@ window.curriculumBook_genki = {
                 "gn5-00053"
               ],
               "coreVocabSample": [
-                "vg-n5-00962",
-                "Saya selalu menyikat gigi setiap malam sebelum tidur.",
-                "Sebelum berangkat, saya memoles sepatu kulit hitam hingga mengilap bersih.",
-                "Ada anjing besar."
+                "vg-n5-01136",
+                "vg-n5-01140",
+                "vg-n5-01141",
+                "vg-n5-01142"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku GENKI I & II (3rd Edition). Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 12 GENKI I & II (3rd Edition).",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Kondisi Kurang Sehat & Memberi Saran.",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -1182,53 +1182,65 @@ window.curriculumBook_genki = {
     {
       "unit_number": 13,
       "id": "unit-curriculum-book-genki-13",
-      "level": "n5",
+      "level": "n4",
       "pt_stage": 2,
-      "title_id": "Genki II: Genki II Bab 1",
-      "title_jp": "Genki II 第1課",
+      "title_id": "Genki II: Mencari Kerja Paruh Waktu & Bentuk Potensial",
+      "title_jp": "第13課: アルバイト探し (Looking for a Part-Time Job)",
       "theme": "Genki II",
       "icon": "📘",
-      "can_do_summary": "Memahami silabus Genki II Bab 1 secara komprehensif.",
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Mencari Kerja Paruh Waktu & Bentuk Potensial.",
       "grammar_ids": [
         "gn4-00001",
         "gn4-00002",
-        "gn4-00003"
+        "gn4-00003",
+        "gn4-00004"
       ],
       "vocab_ids": [
-        "vg-n5-00990"
+        "vg-n4-00001",
+        "vg-n4-00002",
+        "vg-n4-00003",
+        "vg-n4-00005"
       ],
       "lessons": [
         {
           "id": "les-curriculum-book-genki-u13-01",
           "lesson_number": 1,
-          "title_id": "Genki II Bab 1 (Eksplorasi Materi & Pola)",
-          "title_jp": "Genki II 第1課（解説）",
+          "title_id": "Mencari Kerja Paruh Waktu & Bentuk Potensial (Eksplorasi Materi & Pola)",
+          "title_jp": "第13課: アルバイト探し (Looking for a Part-Time Job)（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku GENKI I & II (3rd Edition) pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa GENKI I & II (3rd Edition) bab ini dalam konteks nyata.",
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Mencari Kerja Paruh Waktu & Bentuk Potensial.",
           "grammar_ids": [
             "gn4-00001",
             "gn4-00002",
-            "gn4-00003"
+            "gn4-00003",
+            "gn4-00004"
           ],
           "vocab_ids": [
-            "vg-n5-00990"
+            "vg-n4-00001",
+            "vg-n4-00002",
+            "vg-n4-00003",
+            "vg-n4-00005"
           ],
           "pedagogical_framework": {
             "what": {
-              "summary": "Silabus resmi GENKI I & II (3rd Edition) bab 1.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
+              "summary": "Silabus resmi GENKI I & II (3rd Edition) bab 13.",
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Mencari Kerja Paruh Waktu & Bentuk Potensial.",
               "targetPatterns": [
                 "gn4-00001",
                 "gn4-00002",
-                "gn4-00003"
+                "gn4-00003",
+                "gn4-00004"
               ],
               "coreVocabSample": [
-                "vg-n5-00990"
+                "vg-n4-00001",
+                "vg-n4-00002",
+                "vg-n4-00003",
+                "vg-n4-00005"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku GENKI I & II (3rd Edition). Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 1 GENKI I & II (3rd Edition).",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Mencari Kerja Paruh Waktu & Bentuk Potensial.",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -1242,17 +1254,17 @@ window.curriculumBook_genki = {
               "id": "d1",
               "speaker": "Sensei",
               "speakerRole": "Tutor Belajar",
-              "jp": "Genki II 第1課の勉強を始めましょう！",
+              "jp": "第13課: アルバイト探し (Looking for a Part-Time Job)の勉強を始めましょう！",
               "furigana": "べんきょうをはじめましょう！",
               "romaji": "Benkyou wo hajimemashou!",
-              "idText": "Mari kita mulai belajar Genki II Bab 1!"
+              "idText": "Mari kita mulai belajar Mencari Kerja Paruh Waktu & Bentuk Potensial!"
             }
           ],
           "drills": [
             {
               "id": "dr1",
               "type": "multiple-choice",
-              "prompt": "Apa fokus utama pada materi Genki II Bab 1 di buku GENKI I & II (3rd Edition)?",
+              "prompt": "Apa fokus utama pada materi Mencari Kerja Paruh Waktu & Bentuk Potensial di buku GENKI I & II (3rd Edition)?",
               "options": [
                 "Menguasai pola kalimat bab ini dengan pemahaman alami",
                 "Menghafal tanpa memahami konteks",
@@ -1269,53 +1281,62 @@ window.curriculumBook_genki = {
     {
       "unit_number": 14,
       "id": "unit-curriculum-book-genki-14",
-      "level": "n5",
+      "level": "n4",
       "pt_stage": 3,
-      "title_id": "Genki II: Genki II Bab 2",
-      "title_jp": "Genki II 第2課",
+      "title_id": "Genki II: Hari Kasih Sayang & Memberi Benda",
+      "title_jp": "第14課: バレンタインデー (Valentine's Day)",
       "theme": "Genki II",
       "icon": "📘",
-      "can_do_summary": "Memahami silabus Genki II Bab 2 secara komprehensif.",
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Hari Kasih Sayang & Memberi Benda.",
       "grammar_ids": [
-        "gn4-00004",
         "gn4-00005",
-        "gn4-00006"
+        "gn4-00006",
+        "gn4-00007"
       ],
       "vocab_ids": [
-        "vg-n5-00990"
+        "vg-n4-00061",
+        "vg-n4-00062",
+        "vg-n4-00064",
+        "vg-n4-00066"
       ],
       "lessons": [
         {
           "id": "les-curriculum-book-genki-u14-01",
           "lesson_number": 1,
-          "title_id": "Genki II Bab 2 (Eksplorasi Materi & Pola)",
-          "title_jp": "Genki II 第2課（解説）",
+          "title_id": "Hari Kasih Sayang & Memberi Benda (Eksplorasi Materi & Pola)",
+          "title_jp": "第14課: バレンタインデー (Valentine's Day)（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku GENKI I & II (3rd Edition) pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa GENKI I & II (3rd Edition) bab ini dalam konteks nyata.",
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Hari Kasih Sayang & Memberi Benda.",
           "grammar_ids": [
-            "gn4-00004",
             "gn4-00005",
-            "gn4-00006"
+            "gn4-00006",
+            "gn4-00007"
           ],
           "vocab_ids": [
-            "vg-n5-00990"
+            "vg-n4-00061",
+            "vg-n4-00062",
+            "vg-n4-00064",
+            "vg-n4-00066"
           ],
           "pedagogical_framework": {
             "what": {
-              "summary": "Silabus resmi GENKI I & II (3rd Edition) bab 2.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
+              "summary": "Silabus resmi GENKI I & II (3rd Edition) bab 14.",
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Hari Kasih Sayang & Memberi Benda.",
               "targetPatterns": [
-                "gn4-00004",
                 "gn4-00005",
-                "gn4-00006"
+                "gn4-00006",
+                "gn4-00007"
               ],
               "coreVocabSample": [
-                "vg-n5-00990"
+                "vg-n4-00061",
+                "vg-n4-00062",
+                "vg-n4-00064",
+                "vg-n4-00066"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku GENKI I & II (3rd Edition). Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 2 GENKI I & II (3rd Edition).",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Hari Kasih Sayang & Memberi Benda.",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -1329,17 +1350,17 @@ window.curriculumBook_genki = {
               "id": "d1",
               "speaker": "Sensei",
               "speakerRole": "Tutor Belajar",
-              "jp": "Genki II 第2課の勉強を始めましょう！",
+              "jp": "第14課: バレンタインデー (Valentine's Day)の勉強を始めましょう！",
               "furigana": "べんきょうをはじめましょう！",
               "romaji": "Benkyou wo hajimemashou!",
-              "idText": "Mari kita mulai belajar Genki II Bab 2!"
+              "idText": "Mari kita mulai belajar Hari Kasih Sayang & Memberi Benda!"
             }
           ],
           "drills": [
             {
               "id": "dr1",
               "type": "multiple-choice",
-              "prompt": "Apa fokus utama pada materi Genki II Bab 2 di buku GENKI I & II (3rd Edition)?",
+              "prompt": "Apa fokus utama pada materi Hari Kasih Sayang & Memberi Benda di buku GENKI I & II (3rd Edition)?",
               "options": [
                 "Menguasai pola kalimat bab ini dengan pemahaman alami",
                 "Menghafal tanpa memahami konteks",
@@ -1356,53 +1377,62 @@ window.curriculumBook_genki = {
     {
       "unit_number": 15,
       "id": "unit-curriculum-book-genki-15",
-      "level": "n5",
+      "level": "n4",
       "pt_stage": 4,
-      "title_id": "Genki II: Genki II Bab 3",
-      "title_jp": "Genki II 第3課",
+      "title_id": "Genki II: Perjalanan ke Nagano & Niat Bersama",
+      "title_jp": "第15課: 長野旅行 (A Trip to Nagano)",
       "theme": "Genki II",
       "icon": "📘",
-      "can_do_summary": "Memahami silabus Genki II Bab 3 secara komprehensif.",
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Perjalanan ke Nagano & Niat Bersama.",
       "grammar_ids": [
-        "gn4-00007",
         "gn4-00008",
-        "gn4-00009"
+        "gn4-00009",
+        "gn4-00010"
       ],
       "vocab_ids": [
-        "vg-n5-00990"
+        "vg-n4-00126",
+        "vg-n4-00129",
+        "vg-n4-00130",
+        "vg-n4-00131"
       ],
       "lessons": [
         {
           "id": "les-curriculum-book-genki-u15-01",
           "lesson_number": 1,
-          "title_id": "Genki II Bab 3 (Eksplorasi Materi & Pola)",
-          "title_jp": "Genki II 第3課（解説）",
+          "title_id": "Perjalanan ke Nagano & Niat Bersama (Eksplorasi Materi & Pola)",
+          "title_jp": "第15課: 長野旅行 (A Trip to Nagano)（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku GENKI I & II (3rd Edition) pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa GENKI I & II (3rd Edition) bab ini dalam konteks nyata.",
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Perjalanan ke Nagano & Niat Bersama.",
           "grammar_ids": [
-            "gn4-00007",
             "gn4-00008",
-            "gn4-00009"
+            "gn4-00009",
+            "gn4-00010"
           ],
           "vocab_ids": [
-            "vg-n5-00990"
+            "vg-n4-00126",
+            "vg-n4-00129",
+            "vg-n4-00130",
+            "vg-n4-00131"
           ],
           "pedagogical_framework": {
             "what": {
-              "summary": "Silabus resmi GENKI I & II (3rd Edition) bab 3.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
+              "summary": "Silabus resmi GENKI I & II (3rd Edition) bab 15.",
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Perjalanan ke Nagano & Niat Bersama.",
               "targetPatterns": [
-                "gn4-00007",
                 "gn4-00008",
-                "gn4-00009"
+                "gn4-00009",
+                "gn4-00010"
               ],
               "coreVocabSample": [
-                "vg-n5-00990"
+                "vg-n4-00126",
+                "vg-n4-00129",
+                "vg-n4-00130",
+                "vg-n4-00131"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku GENKI I & II (3rd Edition). Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 3 GENKI I & II (3rd Edition).",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Perjalanan ke Nagano & Niat Bersama.",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -1416,17 +1446,17 @@ window.curriculumBook_genki = {
               "id": "d1",
               "speaker": "Sensei",
               "speakerRole": "Tutor Belajar",
-              "jp": "Genki II 第3課の勉強を始めましょう！",
+              "jp": "第15課: 長野旅行 (A Trip to Nagano)の勉強を始めましょう！",
               "furigana": "べんきょうをはじめましょう！",
               "romaji": "Benkyou wo hajimemashou!",
-              "idText": "Mari kita mulai belajar Genki II Bab 3!"
+              "idText": "Mari kita mulai belajar Perjalanan ke Nagano & Niat Bersama!"
             }
           ],
           "drills": [
             {
               "id": "dr1",
               "type": "multiple-choice",
-              "prompt": "Apa fokus utama pada materi Genki II Bab 3 di buku GENKI I & II (3rd Edition)?",
+              "prompt": "Apa fokus utama pada materi Perjalanan ke Nagano & Niat Bersama di buku GENKI I & II (3rd Edition)?",
               "options": [
                 "Menguasai pola kalimat bab ini dengan pemahaman alami",
                 "Menghafal tanpa memahami konteks",
@@ -1443,53 +1473,62 @@ window.curriculumBook_genki = {
     {
       "unit_number": 16,
       "id": "unit-curriculum-book-genki-16",
-      "level": "n5",
+      "level": "n4",
       "pt_stage": 5,
-      "title_id": "Genki II: Genki II Bab 4",
-      "title_jp": "Genki II 第4課",
+      "title_id": "Genki II: Barang Ketinggalan & Bantuan Jasa",
+      "title_jp": "第16課: 忘れ物 (Lost and Found)",
       "theme": "Genki II",
       "icon": "📘",
-      "can_do_summary": "Memahami silabus Genki II Bab 4 secara komprehensif.",
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Barang Ketinggalan & Bantuan Jasa.",
       "grammar_ids": [
-        "gn4-00010",
         "gn4-00011",
-        "gn4-00012"
+        "gn4-00012",
+        "gn4-00013"
       ],
       "vocab_ids": [
-        "vg-n5-00990"
+        "vg-n4-00171",
+        "vg-n4-00173",
+        "vg-n4-00174",
+        "vg-n4-00175"
       ],
       "lessons": [
         {
           "id": "les-curriculum-book-genki-u16-01",
           "lesson_number": 1,
-          "title_id": "Genki II Bab 4 (Eksplorasi Materi & Pola)",
-          "title_jp": "Genki II 第4課（解説）",
+          "title_id": "Barang Ketinggalan & Bantuan Jasa (Eksplorasi Materi & Pola)",
+          "title_jp": "第16課: 忘れ物 (Lost and Found)（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku GENKI I & II (3rd Edition) pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa GENKI I & II (3rd Edition) bab ini dalam konteks nyata.",
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Barang Ketinggalan & Bantuan Jasa.",
           "grammar_ids": [
-            "gn4-00010",
             "gn4-00011",
-            "gn4-00012"
+            "gn4-00012",
+            "gn4-00013"
           ],
           "vocab_ids": [
-            "vg-n5-00990"
+            "vg-n4-00171",
+            "vg-n4-00173",
+            "vg-n4-00174",
+            "vg-n4-00175"
           ],
           "pedagogical_framework": {
             "what": {
-              "summary": "Silabus resmi GENKI I & II (3rd Edition) bab 4.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
+              "summary": "Silabus resmi GENKI I & II (3rd Edition) bab 16.",
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Barang Ketinggalan & Bantuan Jasa.",
               "targetPatterns": [
-                "gn4-00010",
                 "gn4-00011",
-                "gn4-00012"
+                "gn4-00012",
+                "gn4-00013"
               ],
               "coreVocabSample": [
-                "vg-n5-00990"
+                "vg-n4-00171",
+                "vg-n4-00173",
+                "vg-n4-00174",
+                "vg-n4-00175"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku GENKI I & II (3rd Edition). Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 4 GENKI I & II (3rd Edition).",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Barang Ketinggalan & Bantuan Jasa.",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -1503,17 +1542,17 @@ window.curriculumBook_genki = {
               "id": "d1",
               "speaker": "Sensei",
               "speakerRole": "Tutor Belajar",
-              "jp": "Genki II 第4課の勉強を始めましょう！",
+              "jp": "第16課: 忘れ物 (Lost and Found)の勉強を始めましょう！",
               "furigana": "べんきょうをはじめましょう！",
               "romaji": "Benkyou wo hajimemashou!",
-              "idText": "Mari kita mulai belajar Genki II Bab 4!"
+              "idText": "Mari kita mulai belajar Barang Ketinggalan & Bantuan Jasa!"
             }
           ],
           "drills": [
             {
               "id": "dr1",
               "type": "multiple-choice",
-              "prompt": "Apa fokus utama pada materi Genki II Bab 4 di buku GENKI I & II (3rd Edition)?",
+              "prompt": "Apa fokus utama pada materi Barang Ketinggalan & Bantuan Jasa di buku GENKI I & II (3rd Edition)?",
               "options": [
                 "Menguasai pola kalimat bab ini dengan pemahaman alami",
                 "Menghafal tanpa memahami konteks",
@@ -1530,53 +1569,62 @@ window.curriculumBook_genki = {
     {
       "unit_number": 17,
       "id": "unit-curriculum-book-genki-17",
-      "level": "n5",
+      "level": "n4",
       "pt_stage": 6,
-      "title_id": "Genki II: Genki II Bab 5",
-      "title_jp": "Genki II 第5課",
+      "title_id": "Genki II: Kabar Angin & Pengandaian Kondisional",
+      "title_jp": "第17課: うわさ (Rumors)",
       "theme": "Genki II",
       "icon": "📘",
-      "can_do_summary": "Memahami silabus Genki II Bab 5 secara komprehensif.",
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Kabar Angin & Pengandaian Kondisional.",
       "grammar_ids": [
-        "gn4-00013",
         "gn4-00014",
-        "gn4-00015"
+        "gn4-00015",
+        "gn4-00016"
       ],
       "vocab_ids": [
-        "vg-n5-00990"
+        "vg-n4-00238",
+        "vg-n4-00265",
+        "vg-n4-00266",
+        "vg-n4-00267"
       ],
       "lessons": [
         {
           "id": "les-curriculum-book-genki-u17-01",
           "lesson_number": 1,
-          "title_id": "Genki II Bab 5 (Eksplorasi Materi & Pola)",
-          "title_jp": "Genki II 第5課（解説）",
+          "title_id": "Kabar Angin & Pengandaian Kondisional (Eksplorasi Materi & Pola)",
+          "title_jp": "第17課: うわさ (Rumors)（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku GENKI I & II (3rd Edition) pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa GENKI I & II (3rd Edition) bab ini dalam konteks nyata.",
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Kabar Angin & Pengandaian Kondisional.",
           "grammar_ids": [
-            "gn4-00013",
             "gn4-00014",
-            "gn4-00015"
+            "gn4-00015",
+            "gn4-00016"
           ],
           "vocab_ids": [
-            "vg-n5-00990"
+            "vg-n4-00238",
+            "vg-n4-00265",
+            "vg-n4-00266",
+            "vg-n4-00267"
           ],
           "pedagogical_framework": {
             "what": {
-              "summary": "Silabus resmi GENKI I & II (3rd Edition) bab 5.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
+              "summary": "Silabus resmi GENKI I & II (3rd Edition) bab 17.",
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Kabar Angin & Pengandaian Kondisional.",
               "targetPatterns": [
-                "gn4-00013",
                 "gn4-00014",
-                "gn4-00015"
+                "gn4-00015",
+                "gn4-00016"
               ],
               "coreVocabSample": [
-                "vg-n5-00990"
+                "vg-n4-00238",
+                "vg-n4-00265",
+                "vg-n4-00266",
+                "vg-n4-00267"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku GENKI I & II (3rd Edition). Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 5 GENKI I & II (3rd Edition).",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Kabar Angin & Pengandaian Kondisional.",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -1590,17 +1638,17 @@ window.curriculumBook_genki = {
               "id": "d1",
               "speaker": "Sensei",
               "speakerRole": "Tutor Belajar",
-              "jp": "Genki II 第5課の勉強を始めましょう！",
+              "jp": "第17課: うわさ (Rumors)の勉強を始めましょう！",
               "furigana": "べんきょうをはじめましょう！",
               "romaji": "Benkyou wo hajimemashou!",
-              "idText": "Mari kita mulai belajar Genki II Bab 5!"
+              "idText": "Mari kita mulai belajar Kabar Angin & Pengandaian Kondisional!"
             }
           ],
           "drills": [
             {
               "id": "dr1",
               "type": "multiple-choice",
-              "prompt": "Apa fokus utama pada materi Genki II Bab 5 di buku GENKI I & II (3rd Edition)?",
+              "prompt": "Apa fokus utama pada materi Kabar Angin & Pengandaian Kondisional di buku GENKI I & II (3rd Edition)?",
               "options": [
                 "Menguasai pola kalimat bab ini dengan pemahaman alami",
                 "Menghafal tanpa memahami konteks",
@@ -1617,53 +1665,62 @@ window.curriculumBook_genki = {
     {
       "unit_number": 18,
       "id": "unit-curriculum-book-genki-18",
-      "level": "n5",
+      "level": "n4",
       "pt_stage": 1,
-      "title_id": "Genki II: Genki II Bab 6",
-      "title_jp": "Genki II 第6課",
+      "title_id": "Genki II: Aktivitas Simultan & Penyelesaian Tuntas",
+      "title_jp": "第18課: ジョンさんのアルバイト (John's Part-Time Job)",
       "theme": "Genki II",
       "icon": "📘",
-      "can_do_summary": "Memahami silabus Genki II Bab 6 secara komprehensif.",
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Aktivitas Simultan & Penyelesaian Tuntas.",
       "grammar_ids": [
-        "gn4-00016",
         "gn4-00017",
-        "gn4-00018"
+        "gn4-00018",
+        "gn4-00019"
       ],
       "vocab_ids": [
-        "vg-n5-00990"
+        "vg-n4-00396",
+        "vg-n4-00397",
+        "vg-n4-00398",
+        "vg-n4-00399"
       ],
       "lessons": [
         {
           "id": "les-curriculum-book-genki-u18-01",
           "lesson_number": 1,
-          "title_id": "Genki II Bab 6 (Eksplorasi Materi & Pola)",
-          "title_jp": "Genki II 第6課（解説）",
+          "title_id": "Aktivitas Simultan & Penyelesaian Tuntas (Eksplorasi Materi & Pola)",
+          "title_jp": "第18課: ジョンさんのアルバイト (John's Part-Time Job)（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku GENKI I & II (3rd Edition) pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa GENKI I & II (3rd Edition) bab ini dalam konteks nyata.",
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Aktivitas Simultan & Penyelesaian Tuntas.",
           "grammar_ids": [
-            "gn4-00016",
             "gn4-00017",
-            "gn4-00018"
+            "gn4-00018",
+            "gn4-00019"
           ],
           "vocab_ids": [
-            "vg-n5-00990"
+            "vg-n4-00396",
+            "vg-n4-00397",
+            "vg-n4-00398",
+            "vg-n4-00399"
           ],
           "pedagogical_framework": {
             "what": {
-              "summary": "Silabus resmi GENKI I & II (3rd Edition) bab 6.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
+              "summary": "Silabus resmi GENKI I & II (3rd Edition) bab 18.",
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Aktivitas Simultan & Penyelesaian Tuntas.",
               "targetPatterns": [
-                "gn4-00016",
                 "gn4-00017",
-                "gn4-00018"
+                "gn4-00018",
+                "gn4-00019"
               ],
               "coreVocabSample": [
-                "vg-n5-00990"
+                "vg-n4-00396",
+                "vg-n4-00397",
+                "vg-n4-00398",
+                "vg-n4-00399"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku GENKI I & II (3rd Edition). Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 6 GENKI I & II (3rd Edition).",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Aktivitas Simultan & Penyelesaian Tuntas.",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -1677,17 +1734,17 @@ window.curriculumBook_genki = {
               "id": "d1",
               "speaker": "Sensei",
               "speakerRole": "Tutor Belajar",
-              "jp": "Genki II 第6課の勉強を始めましょう！",
+              "jp": "第18課: ジョンさんのアルバイト (John's Part-Time Job)の勉強を始めましょう！",
               "furigana": "べんきょうをはじめましょう！",
               "romaji": "Benkyou wo hajimemashou!",
-              "idText": "Mari kita mulai belajar Genki II Bab 6!"
+              "idText": "Mari kita mulai belajar Aktivitas Simultan & Penyelesaian Tuntas!"
             }
           ],
           "drills": [
             {
               "id": "dr1",
               "type": "multiple-choice",
-              "prompt": "Apa fokus utama pada materi Genki II Bab 6 di buku GENKI I & II (3rd Edition)?",
+              "prompt": "Apa fokus utama pada materi Aktivitas Simultan & Penyelesaian Tuntas di buku GENKI I & II (3rd Edition)?",
               "options": [
                 "Menguasai pola kalimat bab ini dengan pemahaman alami",
                 "Menghafal tanpa memahami konteks",
@@ -1704,53 +1761,59 @@ window.curriculumBook_genki = {
     {
       "unit_number": 19,
       "id": "unit-curriculum-book-genki-19",
-      "level": "n5",
+      "level": "n4",
       "pt_stage": 2,
-      "title_id": "Genki II: Genki II Bab 7",
-      "title_jp": "Genki II 第7課",
+      "title_id": "Genki II: Etika Menghormati & Bahasa Sonkeigo",
+      "title_jp": "第19課: 出迎え (Meeting the Boss)",
       "theme": "Genki II",
       "icon": "📘",
-      "can_do_summary": "Memahami silabus Genki II Bab 7 secara komprehensif.",
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Etika Menghormati & Bahasa Sonkeigo.",
       "grammar_ids": [
-        "gn4-00019",
         "gn4-00020",
         "gn4-00021"
       ],
       "vocab_ids": [
-        "vg-n5-00990"
+        "vg-n4-00424",
+        "vg-n4-00425",
+        "vg-n4-00426",
+        "vg-n4-00427"
       ],
       "lessons": [
         {
           "id": "les-curriculum-book-genki-u19-01",
           "lesson_number": 1,
-          "title_id": "Genki II Bab 7 (Eksplorasi Materi & Pola)",
-          "title_jp": "Genki II 第7課（解説）",
+          "title_id": "Etika Menghormati & Bahasa Sonkeigo (Eksplorasi Materi & Pola)",
+          "title_jp": "第19課: 出迎え (Meeting the Boss)（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku GENKI I & II (3rd Edition) pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa GENKI I & II (3rd Edition) bab ini dalam konteks nyata.",
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Etika Menghormati & Bahasa Sonkeigo.",
           "grammar_ids": [
-            "gn4-00019",
             "gn4-00020",
             "gn4-00021"
           ],
           "vocab_ids": [
-            "vg-n5-00990"
+            "vg-n4-00424",
+            "vg-n4-00425",
+            "vg-n4-00426",
+            "vg-n4-00427"
           ],
           "pedagogical_framework": {
             "what": {
-              "summary": "Silabus resmi GENKI I & II (3rd Edition) bab 7.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
+              "summary": "Silabus resmi GENKI I & II (3rd Edition) bab 19.",
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Etika Menghormati & Bahasa Sonkeigo.",
               "targetPatterns": [
-                "gn4-00019",
                 "gn4-00020",
                 "gn4-00021"
               ],
               "coreVocabSample": [
-                "vg-n5-00990"
+                "vg-n4-00424",
+                "vg-n4-00425",
+                "vg-n4-00426",
+                "vg-n4-00427"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku GENKI I & II (3rd Edition). Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 7 GENKI I & II (3rd Edition).",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Etika Menghormati & Bahasa Sonkeigo.",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -1764,17 +1827,17 @@ window.curriculumBook_genki = {
               "id": "d1",
               "speaker": "Sensei",
               "speakerRole": "Tutor Belajar",
-              "jp": "Genki II 第7課の勉強を始めましょう！",
+              "jp": "第19課: 出迎え (Meeting the Boss)の勉強を始めましょう！",
               "furigana": "べんきょうをはじめましょう！",
               "romaji": "Benkyou wo hajimemashou!",
-              "idText": "Mari kita mulai belajar Genki II Bab 7!"
+              "idText": "Mari kita mulai belajar Etika Menghormati & Bahasa Sonkeigo!"
             }
           ],
           "drills": [
             {
               "id": "dr1",
               "type": "multiple-choice",
-              "prompt": "Apa fokus utama pada materi Genki II Bab 7 di buku GENKI I & II (3rd Edition)?",
+              "prompt": "Apa fokus utama pada materi Etika Menghormati & Bahasa Sonkeigo di buku GENKI I & II (3rd Edition)?",
               "options": [
                 "Menguasai pola kalimat bab ini dengan pemahaman alami",
                 "Menghafal tanpa memahami konteks",
@@ -1791,53 +1854,62 @@ window.curriculumBook_genki = {
     {
       "unit_number": 20,
       "id": "unit-curriculum-book-genki-20",
-      "level": "n5",
+      "level": "n4",
       "pt_stage": 3,
-      "title_id": "Genki II: Genki II Bab 8",
-      "title_jp": "Genki II 第8課",
+      "title_id": "Genki II: Upacara Pernikahan & Bahasa Merendah (Kenjougo)",
+      "title_jp": "第20課: 友だちの結婚式 (A Friend's Wedding)",
       "theme": "Genki II",
       "icon": "📘",
-      "can_do_summary": "Memahami silabus Genki II Bab 8 secara komprehensif.",
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Upacara Pernikahan & Bahasa Merendah (Kenjougo).",
       "grammar_ids": [
         "gn4-00022",
         "gn4-00023",
         "gn4-00024"
       ],
       "vocab_ids": [
-        "vg-n5-00990"
+        "vg-n4-00456",
+        "vg-n4-00457",
+        "vg-n4-00458",
+        "vg-n4-00463"
       ],
       "lessons": [
         {
           "id": "les-curriculum-book-genki-u20-01",
           "lesson_number": 1,
-          "title_id": "Genki II Bab 8 (Eksplorasi Materi & Pola)",
-          "title_jp": "Genki II 第8課（解説）",
+          "title_id": "Upacara Pernikahan & Bahasa Merendah (Kenjougo) (Eksplorasi Materi & Pola)",
+          "title_jp": "第20課: 友だちの結婚式 (A Friend's Wedding)（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku GENKI I & II (3rd Edition) pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa GENKI I & II (3rd Edition) bab ini dalam konteks nyata.",
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Upacara Pernikahan & Bahasa Merendah (Kenjougo).",
           "grammar_ids": [
             "gn4-00022",
             "gn4-00023",
             "gn4-00024"
           ],
           "vocab_ids": [
-            "vg-n5-00990"
+            "vg-n4-00456",
+            "vg-n4-00457",
+            "vg-n4-00458",
+            "vg-n4-00463"
           ],
           "pedagogical_framework": {
             "what": {
-              "summary": "Silabus resmi GENKI I & II (3rd Edition) bab 8.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
+              "summary": "Silabus resmi GENKI I & II (3rd Edition) bab 20.",
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Upacara Pernikahan & Bahasa Merendah (Kenjougo).",
               "targetPatterns": [
                 "gn4-00022",
                 "gn4-00023",
                 "gn4-00024"
               ],
               "coreVocabSample": [
-                "vg-n5-00990"
+                "vg-n4-00456",
+                "vg-n4-00457",
+                "vg-n4-00458",
+                "vg-n4-00463"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku GENKI I & II (3rd Edition). Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 8 GENKI I & II (3rd Edition).",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Upacara Pernikahan & Bahasa Merendah (Kenjougo).",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -1851,17 +1923,17 @@ window.curriculumBook_genki = {
               "id": "d1",
               "speaker": "Sensei",
               "speakerRole": "Tutor Belajar",
-              "jp": "Genki II 第8課の勉強を始めましょう！",
+              "jp": "第20課: 友だちの結婚式 (A Friend's Wedding)の勉強を始めましょう！",
               "furigana": "べんきょうをはじめましょう！",
               "romaji": "Benkyou wo hajimemashou!",
-              "idText": "Mari kita mulai belajar Genki II Bab 8!"
+              "idText": "Mari kita mulai belajar Upacara Pernikahan & Bahasa Merendah (Kenjougo)!"
             }
           ],
           "drills": [
             {
               "id": "dr1",
               "type": "multiple-choice",
-              "prompt": "Apa fokus utama pada materi Genki II Bab 8 di buku GENKI I & II (3rd Edition)?",
+              "prompt": "Apa fokus utama pada materi Upacara Pernikahan & Bahasa Merendah (Kenjougo) di buku GENKI I & II (3rd Edition)?",
               "options": [
                 "Menguasai pola kalimat bab ini dengan pemahaman alami",
                 "Menghafal tanpa memahami konteks",
@@ -1878,53 +1950,62 @@ window.curriculumBook_genki = {
     {
       "unit_number": 21,
       "id": "unit-curriculum-book-genki-21",
-      "level": "n5",
+      "level": "n4",
       "pt_stage": 4,
-      "title_id": "Genki II: Genki II Bab 9",
-      "title_jp": "Genki II 第9課",
+      "title_id": "Genki II: Pencurian & Kalimat Pasif (Ukemi)",
+      "title_jp": "第21課: 泥棒 (Burglar)",
       "theme": "Genki II",
       "icon": "📘",
-      "can_do_summary": "Memahami silabus Genki II Bab 9 secara komprehensif.",
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Pencurian & Kalimat Pasif (Ukemi).",
       "grammar_ids": [
         "gn4-00025",
         "gn4-00026",
         "gn4-00027"
       ],
       "vocab_ids": [
-        "vg-n5-00990"
+        "vg-n4-00662",
+        "vg-n4-00663",
+        "vg-n4-00664",
+        "vg-n4-00665"
       ],
       "lessons": [
         {
           "id": "les-curriculum-book-genki-u21-01",
           "lesson_number": 1,
-          "title_id": "Genki II Bab 9 (Eksplorasi Materi & Pola)",
-          "title_jp": "Genki II 第9課（解説）",
+          "title_id": "Pencurian & Kalimat Pasif (Ukemi) (Eksplorasi Materi & Pola)",
+          "title_jp": "第21課: 泥棒 (Burglar)（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku GENKI I & II (3rd Edition) pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa GENKI I & II (3rd Edition) bab ini dalam konteks nyata.",
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Pencurian & Kalimat Pasif (Ukemi).",
           "grammar_ids": [
             "gn4-00025",
             "gn4-00026",
             "gn4-00027"
           ],
           "vocab_ids": [
-            "vg-n5-00990"
+            "vg-n4-00662",
+            "vg-n4-00663",
+            "vg-n4-00664",
+            "vg-n4-00665"
           ],
           "pedagogical_framework": {
             "what": {
-              "summary": "Silabus resmi GENKI I & II (3rd Edition) bab 9.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
+              "summary": "Silabus resmi GENKI I & II (3rd Edition) bab 21.",
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Pencurian & Kalimat Pasif (Ukemi).",
               "targetPatterns": [
                 "gn4-00025",
                 "gn4-00026",
                 "gn4-00027"
               ],
               "coreVocabSample": [
-                "vg-n5-00990"
+                "vg-n4-00662",
+                "vg-n4-00663",
+                "vg-n4-00664",
+                "vg-n4-00665"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku GENKI I & II (3rd Edition). Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 9 GENKI I & II (3rd Edition).",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Pencurian & Kalimat Pasif (Ukemi).",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -1938,17 +2019,17 @@ window.curriculumBook_genki = {
               "id": "d1",
               "speaker": "Sensei",
               "speakerRole": "Tutor Belajar",
-              "jp": "Genki II 第9課の勉強を始めましょう！",
+              "jp": "第21課: 泥棒 (Burglar)の勉強を始めましょう！",
               "furigana": "べんきょうをはじめましょう！",
               "romaji": "Benkyou wo hajimemashou!",
-              "idText": "Mari kita mulai belajar Genki II Bab 9!"
+              "idText": "Mari kita mulai belajar Pencurian & Kalimat Pasif (Ukemi)!"
             }
           ],
           "drills": [
             {
               "id": "dr1",
               "type": "multiple-choice",
-              "prompt": "Apa fokus utama pada materi Genki II Bab 9 di buku GENKI I & II (3rd Edition)?",
+              "prompt": "Apa fokus utama pada materi Pencurian & Kalimat Pasif (Ukemi) di buku GENKI I & II (3rd Edition)?",
               "options": [
                 "Menguasai pola kalimat bab ini dengan pemahaman alami",
                 "Menghafal tanpa memahami konteks",
@@ -1965,53 +2046,62 @@ window.curriculumBook_genki = {
     {
       "unit_number": 22,
       "id": "unit-curriculum-book-genki-22",
-      "level": "n5",
+      "level": "n4",
       "pt_stage": 5,
-      "title_id": "Genki II: Genki II Bab 10",
-      "title_jp": "Genki II 第10課",
+      "title_id": "Genki II: Sistem Pendidikan & Kalimat Kausatif (Shieki)",
+      "title_jp": "第22課: 日本の教育 (Education in Japan)",
       "theme": "Genki II",
       "icon": "📘",
-      "can_do_summary": "Memahami silabus Genki II Bab 10 secara komprehensif.",
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Sistem Pendidikan & Kalimat Kausatif (Shieki).",
       "grammar_ids": [
         "gn4-00028",
         "gn4-00029",
         "gn4-00030"
       ],
       "vocab_ids": [
-        "vg-n5-00990"
+        "vg-n4-00684",
+        "vg-n4-00685",
+        "vg-n4-00686",
+        "vg-n4-00687"
       ],
       "lessons": [
         {
           "id": "les-curriculum-book-genki-u22-01",
           "lesson_number": 1,
-          "title_id": "Genki II Bab 10 (Eksplorasi Materi & Pola)",
-          "title_jp": "Genki II 第10課（解説）",
+          "title_id": "Sistem Pendidikan & Kalimat Kausatif (Shieki) (Eksplorasi Materi & Pola)",
+          "title_jp": "第22課: 日本の教育 (Education in Japan)（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku GENKI I & II (3rd Edition) pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa GENKI I & II (3rd Edition) bab ini dalam konteks nyata.",
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Sistem Pendidikan & Kalimat Kausatif (Shieki).",
           "grammar_ids": [
             "gn4-00028",
             "gn4-00029",
             "gn4-00030"
           ],
           "vocab_ids": [
-            "vg-n5-00990"
+            "vg-n4-00684",
+            "vg-n4-00685",
+            "vg-n4-00686",
+            "vg-n4-00687"
           ],
           "pedagogical_framework": {
             "what": {
-              "summary": "Silabus resmi GENKI I & II (3rd Edition) bab 10.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
+              "summary": "Silabus resmi GENKI I & II (3rd Edition) bab 22.",
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Sistem Pendidikan & Kalimat Kausatif (Shieki).",
               "targetPatterns": [
                 "gn4-00028",
                 "gn4-00029",
                 "gn4-00030"
               ],
               "coreVocabSample": [
-                "vg-n5-00990"
+                "vg-n4-00684",
+                "vg-n4-00685",
+                "vg-n4-00686",
+                "vg-n4-00687"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku GENKI I & II (3rd Edition). Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 10 GENKI I & II (3rd Edition).",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Sistem Pendidikan & Kalimat Kausatif (Shieki).",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -2025,17 +2115,17 @@ window.curriculumBook_genki = {
               "id": "d1",
               "speaker": "Sensei",
               "speakerRole": "Tutor Belajar",
-              "jp": "Genki II 第10課の勉強を始めましょう！",
+              "jp": "第22課: 日本の教育 (Education in Japan)の勉強を始めましょう！",
               "furigana": "べんきょうをはじめましょう！",
               "romaji": "Benkyou wo hajimemashou!",
-              "idText": "Mari kita mulai belajar Genki II Bab 10!"
+              "idText": "Mari kita mulai belajar Sistem Pendidikan & Kalimat Kausatif (Shieki)!"
             }
           ],
           "drills": [
             {
               "id": "dr1",
               "type": "multiple-choice",
-              "prompt": "Apa fokus utama pada materi Genki II Bab 10 di buku GENKI I & II (3rd Edition)?",
+              "prompt": "Apa fokus utama pada materi Sistem Pendidikan & Kalimat Kausatif (Shieki) di buku GENKI I & II (3rd Edition)?",
               "options": [
                 "Menguasai pola kalimat bab ini dengan pemahaman alami",
                 "Menghafal tanpa memahami konteks",
@@ -2052,53 +2142,62 @@ window.curriculumBook_genki = {
     {
       "unit_number": 23,
       "id": "unit-curriculum-book-genki-23",
-      "level": "n5",
+      "level": "n4",
       "pt_stage": 6,
-      "title_id": "Genki II: Genki II Bab 11",
-      "title_jp": "Genki II 第11課",
+      "title_id": "Genki II: Perpisahan & Kausatif-Pasif (Shieki-Ukemi)",
+      "title_jp": "第23課: さようなら (Good-bye)",
       "theme": "Genki II",
       "icon": "📘",
-      "can_do_summary": "Memahami silabus Genki II Bab 11 secara komprehensif.",
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Perpisahan & Kausatif-Pasif (Shieki-Ukemi).",
       "grammar_ids": [
         "gn4-00031",
         "gn4-00032",
         "gn4-00033"
       ],
       "vocab_ids": [
-        "vg-n5-00990"
+        "vg-n4-00753",
+        "vg-n4-00754",
+        "vg-n4-00757",
+        "vg-n4-00758"
       ],
       "lessons": [
         {
           "id": "les-curriculum-book-genki-u23-01",
           "lesson_number": 1,
-          "title_id": "Genki II Bab 11 (Eksplorasi Materi & Pola)",
-          "title_jp": "Genki II 第11課（解説）",
+          "title_id": "Perpisahan & Kausatif-Pasif (Shieki-Ukemi) (Eksplorasi Materi & Pola)",
+          "title_jp": "第23課: さようなら (Good-bye)（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku GENKI I & II (3rd Edition) pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa GENKI I & II (3rd Edition) bab ini dalam konteks nyata.",
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Perpisahan & Kausatif-Pasif (Shieki-Ukemi).",
           "grammar_ids": [
             "gn4-00031",
             "gn4-00032",
             "gn4-00033"
           ],
           "vocab_ids": [
-            "vg-n5-00990"
+            "vg-n4-00753",
+            "vg-n4-00754",
+            "vg-n4-00757",
+            "vg-n4-00758"
           ],
           "pedagogical_framework": {
             "what": {
-              "summary": "Silabus resmi GENKI I & II (3rd Edition) bab 11.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
+              "summary": "Silabus resmi GENKI I & II (3rd Edition) bab 23.",
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Perpisahan & Kausatif-Pasif (Shieki-Ukemi).",
               "targetPatterns": [
                 "gn4-00031",
                 "gn4-00032",
                 "gn4-00033"
               ],
               "coreVocabSample": [
-                "vg-n5-00990"
+                "vg-n4-00753",
+                "vg-n4-00754",
+                "vg-n4-00757",
+                "vg-n4-00758"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku GENKI I & II (3rd Edition). Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 11 GENKI I & II (3rd Edition).",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Perpisahan & Kausatif-Pasif (Shieki-Ukemi).",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -2112,17 +2211,17 @@ window.curriculumBook_genki = {
               "id": "d1",
               "speaker": "Sensei",
               "speakerRole": "Tutor Belajar",
-              "jp": "Genki II 第11課の勉強を始めましょう！",
+              "jp": "第23課: さようなら (Good-bye)の勉強を始めましょう！",
               "furigana": "べんきょうをはじめましょう！",
               "romaji": "Benkyou wo hajimemashou!",
-              "idText": "Mari kita mulai belajar Genki II Bab 11!"
+              "idText": "Mari kita mulai belajar Perpisahan & Kausatif-Pasif (Shieki-Ukemi)!"
             }
           ],
           "drills": [
             {
               "id": "dr1",
               "type": "multiple-choice",
-              "prompt": "Apa fokus utama pada materi Genki II Bab 11 di buku GENKI I & II (3rd Edition)?",
+              "prompt": "Apa fokus utama pada materi Perpisahan & Kausatif-Pasif (Shieki-Ukemi) di buku GENKI I & II (3rd Edition)?",
               "options": [
                 "Menguasai pola kalimat bab ini dengan pemahaman alami",
                 "Menghafal tanpa memahami konteks",

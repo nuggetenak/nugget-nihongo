@@ -1103,7 +1103,7 @@ window.nuggetKanjiN5 = [
       {
         "word": "出す",
         "reading": "だす",
-        "meaning_id": "me-put out"
+        "meaning_id": "mengeluarkan / memadamkan"
       },
       {
         "word": "出口",
@@ -1113,7 +1113,7 @@ window.nuggetKanjiN5 = [
       {
         "word": "出る",
         "reading": "でる",
-        "meaning_id": "me-appear"
+        "meaning_id": "muncul / tampak"
       },
       {
         "word": "出かける",
@@ -1123,12 +1123,12 @@ window.nuggetKanjiN5 = [
       {
         "word": "出席",
         "reading": "しゅっせき",
-        "meaning_id": "me-attend"
+        "meaning_id": "menghadiri"
       },
       {
         "word": "出発",
         "reading": "しゅっぱつ",
-        "meaning_id": "me-depart"
+        "meaning_id": "berangkat"
       },
       {
         "word": "輸出",
@@ -1523,7 +1523,7 @@ window.nuggetKanjiN5 = [
       {
         "word": "見える",
         "reading": "みえる",
-        "meaning_id": "me-be in sight"
+        "meaning_id": "menjadi / ada in sight"
       },
       {
         "word": "お見舞い",
@@ -2050,7 +2050,7 @@ window.nuggetKanjiN5 = [
       {
         "word": "生産",
         "reading": "せいさん",
-        "meaning_id": "me-produce"
+        "meaning_id": "produce"
       }
     ]
   },
@@ -2207,7 +2207,7 @@ window.nuggetKanjiN5 = [
       {
         "word": "間に合う",
         "reading": "まにあう",
-        "meaning_id": "me-be in time for"
+        "meaning_id": "menjadi / ada in time for"
       },
       {
         "word": "居間",
@@ -2808,12 +2808,12 @@ window.nuggetKanjiN5 = [
       {
         "word": "入院",
         "reading": "にゅういん",
-        "meaning_id": "me-hospitalise"
+        "meaning_id": "hospitalise"
       },
       {
         "word": "入学",
         "reading": "にゅうがく",
-        "meaning_id": "me-enter school or university"
+        "meaning_id": "enter school or university"
       },
       {
         "word": "輸入",
@@ -2917,7 +2917,7 @@ window.nuggetKanjiN5 = [
       {
         "word": "入学",
         "reading": "にゅうがく",
-        "meaning_id": "me-enter school or university"
+        "meaning_id": "enter school or university"
       }
     ]
   },
@@ -4038,7 +4038,7 @@ window.nuggetKanjiN5 = [
       {
         "word": "世話",
         "reading": "せわ",
-        "meaning_id": "me-look after"
+        "meaning_id": "look after"
       },
       {
         "word": "話題",
@@ -4048,7 +4048,7 @@ window.nuggetKanjiN5 = [
       {
         "word": "話し合う",
         "reading": "はなしあう",
-        "meaning_id": "me-discuss"
+        "meaning_id": "discuss"
       },
       {
         "word": "神話",
@@ -5652,7 +5652,7 @@ window.nuggetKanjiN5 = [
       {
         "word": "聞こえる",
         "reading": "きこえる",
-        "meaning_id": "me-be heard"
+        "meaning_id": "menjadi / ada heard"
       },
       {
         "word": "聞き取り",
@@ -5726,7 +5726,7 @@ window.nuggetKanjiN5 = [
       {
         "word": "食事",
         "reading": "しょくじ",
-        "meaning_id": "me-have a meal"
+        "meaning_id": "memiliki a meal"
       },
       {
         "word": "食料品",
@@ -6838,7 +6838,7 @@ window.nuggetKanjiN5 = [
       {
         "word": "休む",
         "reading": "やすむ",
-        "meaning_id": "me-rest"
+        "meaning_id": "beristirahat"
       },
       {
         "word": "夏休み",
@@ -7213,7 +7213,7 @@ window.nuggetKanjiN5 = [
       {
         "word": "貼る",
         "reading": "はる",
-        "meaning_id": "me-stick"
+        "meaning_id": "stick"
       }
     ]
   }

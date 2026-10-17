@@ -66,7 +66,10 @@ export const AuthModal: React.FC = () => {
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-4 bg-black/80 backdrop-blur-sm animate-fade-in">
       <div
-        className="relative w-full max-w-md bg-surface border border-accent/25 rounded-3xl p-6 sm:p-8 shadow-2xl space-y-6 animate-scale-in overflow-hidden"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="auth-modal-title"
+        className="relative w-full max-w-md bg-surface border border-accent/25 rounded-3xl p-6 sm:p-8 shadow-2xl space-y-6 animate-scale-in max-h-[90dvh] overflow-y-auto"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Subtle background glow */}
@@ -76,9 +79,9 @@ export const AuthModal: React.FC = () => {
         {/* Close Button */}
         <button
           onClick={closeAuthModal}
-          className="absolute top-4 right-4 p-2 text-appText-muted hover:text-appText-bright rounded-full hover:bg-surface-2 transition-colors z-10"
+          className="absolute top-4 right-4 p-2 text-appText-muted hover:text-appText-bright rounded-full hover:bg-surface-2 transition-colors z-10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
           title="Tutup"
-          aria-label="Tutup modal"
+          aria-label="Tutup modal login"
         >
           <X className="w-5 h-5" />
         </button>
@@ -88,7 +91,7 @@ export const AuthModal: React.FC = () => {
           <div className="inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-amber-500/15 border border-amber-500/30 shadow-glow mb-1">
             <Cloud className="w-7 h-7 text-accent" />
           </div>
-          <h2 className="text-xl sm:text-2xl font-extrabold text-appText-bright tracking-tight">
+          <h2 id="auth-modal-title" className="text-xl sm:text-2xl font-extrabold text-appText-bright tracking-tight">
             Masuk dengan Google
           </h2>
           <p className="text-xs text-appText-muted leading-relaxed">
@@ -131,7 +134,7 @@ export const AuthModal: React.FC = () => {
 
         {/* Error / Notice Banner */}
         {errorMessage && (
-          <div className="p-3.5 rounded-xl bg-amber-500/10 border border-amber-500/30 flex items-start gap-2.5 text-xs text-amber-300 animate-in fade-in">
+          <div role="alert" aria-live="assertive" className="p-3.5 rounded-xl bg-amber-500/10 border border-amber-500/30 flex items-start gap-2.5 text-xs text-amber-300 animate-in fade-in">
             <Info className="w-4 h-4 shrink-0 text-amber-400 mt-0.5" />
             <div className="leading-relaxed">{errorMessage}</div>
           </div>
@@ -143,7 +146,8 @@ export const AuthModal: React.FC = () => {
             type="button"
             onClick={handleGoogleSignIn}
             disabled={loading}
-            className="w-full py-3.5 px-4 rounded-2xl bg-white hover:bg-neutral-100 text-neutral-800 font-bold text-sm flex items-center justify-center gap-3 transition-all shadow-md active:scale-95 disabled:opacity-60"
+            aria-label="Lanjutkan autentikasi dengan akun Google"
+            className="w-full py-3.5 px-4 rounded-2xl bg-white hover:bg-neutral-100 text-neutral-800 font-bold text-sm flex items-center justify-center gap-3 transition-all shadow-md active:scale-95 disabled:opacity-60 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
           >
             {loading ? (
               <Loader2 className="w-5 h-5 animate-spin text-neutral-800" />

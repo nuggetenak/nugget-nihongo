@@ -3,9 +3,10 @@
 //  Contrasting tricky grammar pairs with semantic distinction & exam traps
 // ══════════════════════════════════════════════════════════════════
 
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { X, Volume2, Sparkles, Scale, AlertTriangle, ArrowRight } from 'lucide-react';
 import { speakJapanese } from '../../lib/audio/tts';
+import { useFocusTrap } from '../../hooks/useFocusTrap';
 
 interface NuancePair {
   id: string;
@@ -174,14 +175,7 @@ interface NuanceCompareModalProps {
 
 export const NuanceCompareModal: React.FC<NuanceCompareModalProps> = ({ isOpen, onClose }) => {
   const [selectedPairId, setSelectedPairId] = useState<string>('wake-vs-kagiranai');
-
-  useEffect(() => {
-    const handleKeyDown = (e: KeyboardEvent) => {
-      if (e.key === 'Escape' && isOpen) onClose();
-    };
-    window.addEventListener('keydown', handleKeyDown);
-    return () => window.removeEventListener('keydown', handleKeyDown);
-  }, [isOpen, onClose]);
+  const containerRef = useFocusTrap<HTMLDivElement>(isOpen, onClose);
 
   if (!isOpen) return null;
 
@@ -192,9 +186,11 @@ export const NuanceCompareModal: React.FC<NuanceCompareModalProps> = ({ isOpen, 
       onClick={onClose}
       className="fixed inset-0 z-50 bg-black/80 backdrop-blur-md flex items-end sm:items-center justify-center p-0 sm:p-5 animate-in fade-in duration-200"
       role="dialog"
+      aria-modal="true"
       aria-label="Inspektor Perbandingan Nuansa Tata Bahasa"
     >
       <div
+        ref={containerRef}
         onClick={(e) => e.stopPropagation()}
         className="w-full max-w-4xl max-h-[90dvh] sm:max-h-[92vh] overflow-y-auto bg-surface border-t-2 sm:border-2 border-accent/30 rounded-t-3xl sm:rounded-3xl p-5 sm:p-8 space-y-6 shadow-2xl relative animate-in slide-in-from-bottom-6 sm:zoom-in-95 duration-200 scrollbar-none"
       >
@@ -209,7 +205,7 @@ export const NuanceCompareModal: React.FC<NuanceCompareModalProps> = ({ isOpen, 
             <div>
               <h2 className="text-lg sm:text-xl font-bold text-appText-bright flex items-center gap-2">
                 <span>Inspektor Nuansa Tata Bahasa</span>
-                <span className="text-xs font-mono text-accent">ニュアンス比較</span>
+                <span className="text-xs font-mono text-accent" lang="ja">ニュアンス比較</span>
               </h2>
               <p className="text-xs text-appText-muted">
                 Bedah perbedaan pola serupa yang sering menjebak peserta ujian JLPT.
@@ -219,11 +215,11 @@ export const NuanceCompareModal: React.FC<NuanceCompareModalProps> = ({ isOpen, 
 
           <button
             onClick={onClose}
-            className="w-8 h-8 rounded-full bg-surface-2 hover:bg-surface-3 flex items-center justify-center text-appText-muted hover:text-appText-bright transition-all"
+            className="w-11 h-11 min-w-[44px] min-h-[44px] rounded-full bg-surface-2 hover:bg-surface-3 flex items-center justify-center text-appText-muted hover:text-appText-bright transition-all active:scale-95"
             title="Tutup"
             aria-label="Tutup modal"
           >
-            <X className="w-4 h-4" />
+            <X className="w-5 h-5" />
           </button>
         </div>
 
@@ -258,7 +254,7 @@ export const NuanceCompareModal: React.FC<NuanceCompareModalProps> = ({ isOpen, 
                 <span className="text-[10px] font-extrabold uppercase px-2 py-0.5 rounded-full bg-blue-500/20 text-blue-300 border border-blue-500/30">
                   Pola A
                 </span>
-                <h3 className="text-xl font-jp font-bold text-appText-bright mt-1.5">
+                <h3 className="text-xl font-jp font-bold text-appText-bright mt-1.5" lang="ja">
                   {currentPair.patternA.pattern}
                 </h3>
                 <div className="text-xs text-accent font-semibold mt-0.5">
@@ -267,10 +263,12 @@ export const NuanceCompareModal: React.FC<NuanceCompareModalProps> = ({ isOpen, 
               </div>
 
               <button
+                type="button"
                 onClick={() => speakJapanese(currentPair.patternA.pattern)}
-                className="p-2 rounded-xl bg-surface hover:bg-amber-500/20 text-accent transition-all shrink-0"
+                className="w-11 h-11 min-w-[44px] min-h-[44px] rounded-xl bg-surface hover:bg-amber-500/20 text-accent flex items-center justify-center transition-all shrink-0 active:scale-95"
+                aria-label={`Dengarkan pengucapan ${currentPair.patternA.pattern}`}
               >
-                <Volume2 className="w-4 h-4" />
+                <Volume2 className="w-5 h-5" />
               </button>
             </div>
 
@@ -281,12 +279,14 @@ export const NuanceCompareModal: React.FC<NuanceCompareModalProps> = ({ isOpen, 
 
             <div className="bg-surface/70 rounded-xl p-3 border border-accent/10 space-y-1">
               <div className="flex items-center justify-between text-xs font-jp text-appText-bright font-semibold">
-                <span>{currentPair.patternA.example.jp}</span>
+                <span lang="ja">{currentPair.patternA.example.jp}</span>
                 <button
+                  type="button"
                   onClick={() => speakJapanese(currentPair.patternA.example.jp)}
-                  className="p-1 text-appText-muted hover:text-accent transition-colors"
+                  className="w-8 h-8 min-w-[32px] min-h-[32px] sm:min-w-[44px] sm:min-h-[44px] flex items-center justify-center text-appText-muted hover:text-accent transition-colors active:scale-95"
+                  aria-label="Dengarkan contoh kalimat A"
                 >
-                  <Volume2 className="w-3.5 h-3.5" />
+                  <Volume2 className="w-4 h-4" />
                 </button>
               </div>
               <div className="text-[11px] text-appText-muted italic">
@@ -302,7 +302,7 @@ export const NuanceCompareModal: React.FC<NuanceCompareModalProps> = ({ isOpen, 
                 <span className="text-[10px] font-extrabold uppercase px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-500/30">
                   Pola B
                 </span>
-                <h3 className="text-xl font-jp font-bold text-appText-bright mt-1.5">
+                <h3 className="text-xl font-jp font-bold text-appText-bright mt-1.5" lang="ja">
                   {currentPair.patternB.pattern}
                 </h3>
                 <div className="text-xs text-accent font-semibold mt-0.5">
@@ -311,10 +311,12 @@ export const NuanceCompareModal: React.FC<NuanceCompareModalProps> = ({ isOpen, 
               </div>
 
               <button
+                type="button"
                 onClick={() => speakJapanese(currentPair.patternB.pattern)}
-                className="p-2 rounded-xl bg-surface hover:bg-amber-500/20 text-accent transition-all shrink-0"
+                className="w-11 h-11 min-w-[44px] min-h-[44px] rounded-xl bg-surface hover:bg-amber-500/20 text-accent flex items-center justify-center transition-all shrink-0 active:scale-95"
+                aria-label={`Dengarkan pengucapan ${currentPair.patternB.pattern}`}
               >
-                <Volume2 className="w-4 h-4" />
+                <Volume2 className="w-5 h-5" />
               </button>
             </div>
 
@@ -325,12 +327,14 @@ export const NuanceCompareModal: React.FC<NuanceCompareModalProps> = ({ isOpen, 
 
             <div className="bg-surface/70 rounded-xl p-3 border border-accent/10 space-y-1">
               <div className="flex items-center justify-between text-xs font-jp text-appText-bright font-semibold">
-                <span>{currentPair.patternB.example.jp}</span>
+                <span lang="ja">{currentPair.patternB.example.jp}</span>
                 <button
+                  type="button"
                   onClick={() => speakJapanese(currentPair.patternB.example.jp)}
-                  className="p-1 text-appText-muted hover:text-accent transition-colors"
+                  className="w-8 h-8 min-w-[32px] min-h-[32px] sm:min-w-[44px] sm:min-h-[44px] flex items-center justify-center text-appText-muted hover:text-accent transition-colors active:scale-95"
+                  aria-label="Dengarkan contoh kalimat B"
                 >
-                  <Volume2 className="w-3.5 h-3.5" />
+                  <Volume2 className="w-4 h-4" />
                 </button>
               </div>
               <div className="text-[11px] text-appText-muted italic">

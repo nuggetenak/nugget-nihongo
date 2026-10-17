@@ -17,6 +17,9 @@ import {
   generateDiscourseQuestions,
   generateCollocationQuestions,
 } from '../data/discourseManager';
+import { generatePainOnomatopoeiaQuestions } from '../data/painOnomatopoeiaManager';
+import { generateWordScrambleChunks } from '../typography/budouxParser';
+import { splitIntoMora, generatePhonologicalDistractors } from '../audio/moraTokenizer';
 
 export type { QuizQuestionItem, PanicScenarioItem };
 
@@ -99,6 +102,10 @@ export function generateQuizQuestions(
 
   if (mode === 'collocation-matrix') {
     return generateCollocationQuestions(CANONICAL_COLLOCATIONS, Math.min(count, CANONICAL_COLLOCATIONS.length));
+  }
+
+  if (mode === 'onomatopoeia') {
+    return generatePainOnomatopoeiaQuestions(count);
   }
 
   const questions: QuizQuestionItem[] = [];
@@ -521,44 +528,11 @@ export function generateQuizQuestions(
 }
 
 /**
- * Split sentence into natural Japanese phrase chunks
+ * Split sentence into natural Japanese phrase chunks using Google BudouX
+ * Eliminates particle lookbehind mutilation of copulas (です) and nouns (ごはん)
  */
 function splitIntoTokens(sentence: string): string[] {
-  // Strip trailing punctuation
-  const clean = sentence.replace(/[。！？\s]+$/, '');
-
-  // Split after particles and natural grammatical pauses
-  const parts = clean.split(/(?<=[はがをにでへとからもより、])/g).filter(Boolean);
-  if (parts.length >= 3 && parts.length <= 6) {
-    return parts;
-  }
-
-  // If too many chunks, merge adjacent short ones
-  if (parts.length > 6) {
-    const combined: string[] = [];
-    for (let i = 0; i < parts.length; i += 2) {
-      if (i + 1 < parts.length) {
-        combined.push(parts[i] + parts[i + 1]);
-      } else {
-        if (combined.length > 0) {
-          combined[combined.length - 1] += parts[i];
-        } else {
-          combined.push(parts[i]);
-        }
-      }
-    }
-    if (combined.length >= 3) return combined;
-  }
-
-  // Fallback: chunk by 2-4 chars
-  const chunks: string[] = [];
-  let i = 0;
-  while (i < clean.length) {
-    const len = Math.min(3, clean.length - i);
-    chunks.push(clean.slice(i, i + len));
-    i += len;
-  }
-  return chunks;
+  return generateWordScrambleChunks(sentence, 6);
 }
 
 /**
@@ -651,27 +625,9 @@ export function generateMistakeQuestions(
 
 /**
  * Segments a Japanese text string into phonetic mora units.
- * Digraphs (e.g. きゃ, しゅ, ちょ) are grouped as single morae.
- * Geminate stop (っ) and moraic nasal (ん) each count as an individual mora.
+ * Delegated to canonical phonological mora tokenizer in src/lib/audio/moraTokenizer.ts
  */
-export function splitIntoMora(text: string): string[] {
-  const smallKana = new Set([
-    'ゃ', 'ゅ', 'ょ', 'ぁ', 'ぃ', 'ぅ', 'ぇ', 'ぉ',
-    'ャ', 'ュ', 'ョ', 'ァ', 'ィ', 'ゥ', 'ェ', 'ォ'
-  ]);
-  const morae: string[] = [];
-  const chars = Array.from(text);
-  for (let i = 0; i < chars.length; i++) {
-    const c = chars[i];
-    if (i + 1 < chars.length && smallKana.has(chars[i + 1])) {
-      morae.push(c + chars[i + 1]);
-      i++;
-    } else {
-      morae.push(c);
-    }
-  }
-  return morae;
-}
+export { splitIntoMora };
 
 /**
  * Generate diagnostic confusion pair drill questions from the 300 compiled items.
@@ -804,21 +760,22 @@ export function generateMoraPacingQuestions(
   const questions: QuizQuestionItem[] = [];
 
   for (const v of selected) {
-    const morae = splitIntoMora(v.reading || v.word);
+    const reading = v.reading || v.word;
+    const morae = splitIntoMora(reading);
+    const correctAnswer = morae.join(' • ');
+    const distractors = generatePhonologicalDistractors(reading);
+    const options = shuffle([correctAnswer, ...distractors]);
+
     questions.push({
       id: `mora-${v.id}-${Date.now()}`,
       mode: 'mora-pacing',
       prompt: `[Pemandu Irama Mora] Ikuti ketukan metronom (${morae.length} mora) dengan tempo teratur:`,
       targetItem: v,
-      questionText: `${v.word} (${v.reading})`,
-      subText: `Artikulasi ${morae.length} mora merata: ${morae.join(' • ')}`,
-      correctAnswer: morae.join(' • '),
-      options: [
-        morae.join(' • '),
-        shuffle([...morae]).join(' • '),
-        morae.slice(0, Math.max(1, morae.length - 1)).join(' • '),
-      ],
-      explanation: `Kata "${v.word}" terdiri dari ${morae.length} mora: [${morae.join(' | ')}]. Ucapkan setiap mora dengan durasi waktu yang sama rata!`,
+      questionText: `${v.word} (${reading})`,
+      subText: 'Dengarkan ketukan metronom dan tentukan susunan pemisahan mora yang tepat!',
+      correctAnswer,
+      options,
+      explanation: `Kata "${v.word}" (${reading}) terdiri dari ${morae.length} mora: [${morae.join(' | ')}]. Ucapkan setiap mora dengan durasi waktu yang sama rata!`,
       level: v.level,
       moraBeats: morae,
     });
@@ -841,19 +798,24 @@ export function generatePitchAccentQuestions(
   const selected = shuffle(pool).slice(0, count);
   const questions: QuizQuestionItem[] = [];
 
-  const PITCH_LABELS: Record<string, string> = {
-    heiban: '[⓪] Heiban (Datar)',
-    atamadaka: '[①] Atamadaka (Awal Tinggi)',
-    nakadaka: '[②] Nakadaka (Tengah Tinggi)',
-    odaka: '[④] Odaka (Akhir Tinggi)',
-  };
-
   for (const p of selected) {
-    const correctLabel = p.pitch_accent_type
-      ? PITCH_LABELS[p.pitch_accent_type] || p.accent_pattern || p.target_form
-      : p.target_form;
+    const targetWord = (p.target_form || p.title).replace(/\s*[\(（].*?[\)）]/, '').trim();
+    const morae = splitIntoMora(targetWord);
+    const moraCount = Math.max(1, morae.length);
 
-    const allOptions = Object.values(PITCH_LABELS);
+    // Dynamically calculate Odaka label based on actual word mora count (N)
+    const odakaLabel = `[${moraCount}] Odaka (Akhir Tinggi / Partikel Turun)`;
+    const pitchLabels: Record<string, string> = {
+      heiban: '[0] Heiban (Datar)',
+      atamadaka: '[1] Atamadaka (Awal Tinggi)',
+      nakadaka: '[2] Nakadaka (Tengah Tinggi)',
+      odaka: odakaLabel,
+    };
+
+    const correctType = p.pitch_accent_type || 'atamadaka';
+    const correctLabel = pitchLabels[correctType] || pitchLabels.atamadaka;
+
+    const allOptions = Object.values(pitchLabels);
     const options = shuffle(allOptions);
 
     questions.push({
@@ -862,7 +824,7 @@ export function generatePitchAccentQuestions(
       prompt: `[Aksen Nada Tokyo] Tentukan pola kontur nada yang benar untuk kata:`,
       targetItem: {
         id: p.id,
-        word: p.title,
+        word: targetWord,
         reading: p.accent_pattern || p.target_form,
         romaji: p.patterns.join(' vs '),
         meaning: p.stimulus_l1,
@@ -870,11 +832,11 @@ export function generatePitchAccentQuestions(
         pos: 'phonology',
         examples: [{ jp: p.target_form, id: p.stimulus_l1 }],
       } as any,
-      questionText: `Kata: "${p.title}"`,
-      subText: `Arti: ${p.stimulus_l1} | Pola Partikel: ${p.particle_pitch || '-'}`,
+      questionText: `${p.target_form}`,
+      subText: `Arti: ${p.stimulus_l1}`,
       correctAnswer: correctLabel,
       options,
-      explanation: `Pola nada untuk "${p.title}" adalah ${correctLabel}. Pola partikel: ${p.particle_pitch || '-'}.\n⚠️ Bahaya salah aksen: ${p.prescription}`,
+      explanation: `Pola nada untuk "${targetWord}" adalah ${correctLabel}. Pola partikel: ${p.particle_pitch || '-'}.\n⚠️ Bahaya salah aksen: ${p.prescription}`,
       level: p.level,
       pitchContour: p.accent_pattern,
     });

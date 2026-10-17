@@ -28,9 +28,9 @@ function loadVocabIds(level) {
   const prodFile = path.join(PROD_VOCAB, `vocab-${level}.js`);
   if (fs.existsSync(prodFile)) {
     const txt = fs.readFileSync(prodFile, 'utf8');
-    const matches = txt.match(/"id":\s*"([^"]+)"/g) || [];
+    const matches = (txt.match(/"id":\s*"(vg-[^"]+)"/g) || []).concat(txt.match(/id:\s*'(vg-[^']+)'/g) || []);
     for (const m of matches) {
-      const match = m.match(/"id":\s*"([^"]+)"/);
+      const match = m.match(/(?:"id"|id):\s*["'](vg-[^"']+)["']/);
       if (match) ids.push(match[1]);
     }
   }

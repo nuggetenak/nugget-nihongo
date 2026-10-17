@@ -6,7 +6,9 @@
 import React, { useState, useEffect } from 'react';
 import { X, Volume2, Sparkles, Search, Layers, RotateCcw } from 'lucide-react';
 import { conjugateVerb, inferType, VerbType } from '../../lib/grammar/conjugation';
+import { deinflectWord, DeinflectionCandidate } from '../../lib/grammar/deinflector';
 import { speakJapanese } from '../../lib/audio/tts';
+import { useFocusTrap } from '../../hooks/useFocusTrap';
 
 interface ConjugationModalProps {
   isOpen: boolean;
@@ -37,13 +39,31 @@ export const ConjugationModal: React.FC<ConjugationModalProps> = ({
   onClose,
   initialVerb = '食べる',
 }) => {
+  const containerRef = useFocusTrap<HTMLDivElement>(isOpen, onClose);
   const [inputVerb, setInputVerb] = useState(initialVerb);
   const [selectedVerb, setSelectedVerb] = useState(initialVerb);
+  const [detectedDeinflection, setDetectedDeinflection] = useState<DeinflectionCandidate | null>(null);
+
+  const resolveAndSetVerb = (raw: string) => {
+    const trimmed = raw.trim();
+    if (!trimmed) return;
+    setInputVerb(trimmed);
+
+    // Run Yomitan de-inflection to verify if user typed an inflected form (e.g. 食べました or 住んでいる)
+    const candidates = deinflectWord(trimmed);
+    if (candidates.length > 0 && candidates[0].lemma !== trimmed) {
+      const best = candidates[0];
+      setDetectedDeinflection(best);
+      setSelectedVerb(best.lemma);
+    } else {
+      setDetectedDeinflection(null);
+      setSelectedVerb(trimmed);
+    }
+  };
 
   useEffect(() => {
     if (initialVerb) {
-      setInputVerb(initialVerb);
-      setSelectedVerb(initialVerb);
+      resolveAndSetVerb(initialVerb);
     }
   }, [initialVerb]);
 
@@ -73,18 +93,19 @@ export const ConjugationModal: React.FC<ConjugationModalProps> = ({
   ];
 
   const handleApplyVerb = (dict: string) => {
-    setInputVerb(dict);
-    setSelectedVerb(dict);
+    resolveAndSetVerb(dict);
   };
 
   return (
     <div
       onClick={onClose}
       className="fixed inset-0 z-50 bg-black/80 backdrop-blur-md flex items-end sm:items-center justify-center p-0 sm:p-5 animate-in fade-in duration-200"
-      role="dialog"
-      aria-label="Tabel Konjugasi Verba"
     >
       <div
+        ref={containerRef}
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="conjugation-modal-title"
         onClick={(e) => e.stopPropagation()}
         className="w-full max-w-2xl max-h-[90dvh] sm:max-h-[90vh] overflow-y-auto bg-surface border-t-2 sm:border-2 border-accent/30 rounded-t-3xl sm:rounded-3xl p-5 sm:p-8 space-y-5 shadow-2xl relative animate-in slide-in-from-bottom-6 sm:zoom-in-95 duration-200 scrollbar-none"
       >
@@ -97,8 +118,9 @@ export const ConjugationModal: React.FC<ConjugationModalProps> = ({
               <RotateCcw className="w-5 h-5" />
             </div>
             <div>
-              <h2 className="text-lg sm:text-xl font-bold text-appText-bright">
-                Tabel Konjugasi Kata Kerja · 動詞活用
+              <h2 id="conjugation-modal-title" className="text-lg sm:text-xl font-bold text-appText-bright">
+                <span>Tabel Konjugasi Kata Kerja · </span>
+                <span lang="ja">動詞活用</span>
               </h2>
               <p className="text-xs text-appText-muted">
                 Perubahan bentuk kata kerja lengkap untuk ujian dan percakapan.
@@ -107,12 +129,14 @@ export const ConjugationModal: React.FC<ConjugationModalProps> = ({
           </div>
 
           <button
+            type="button"
             onClick={onClose}
-            className="w-8 h-8 rounded-full bg-surface-2 hover:bg-surface-3 flex items-center justify-center text-appText-muted hover:text-appText-bright transition-all"
-            title="Tutup"
-            aria-label="Tutup modal"
+            className="min-w-[44px] min-h-[44px] w-11 h-11 rounded-full bg-surface-2 hover:bg-surface-3 border border-accent/20 flex items-center justify-center text-appText-muted hover:text-appText-bright transition-all active:scale-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+            title="Tutup dialog konjugasi kata kerja"
+            aria-label="Tutup jendela dialog konjugasi kata kerja"
           >
-            <X className="w-4 h-4" />
+            <X className="w-5 h-5" />
+            <span className="sr-only">Tutup dialog</span>
           </button>
         </div>
 
@@ -159,6 +183,23 @@ export const ConjugationModal: React.FC<ConjugationModalProps> = ({
               </button>
             ))}
           </div>
+
+          {/* Detected De-inflection Notification Badge */}
+          {detectedDeinflection && (
+            <div className="flex items-start sm:items-center gap-2.5 px-3.5 py-2.5 rounded-xl bg-amber-500/15 border border-amber-500/30 text-accent text-xs animate-in fade-in duration-200">
+              <Sparkles className="w-4 h-4 shrink-0 text-accent-hot mt-0.5 sm:mt-0" />
+              <div className="flex-1 min-w-0 leading-relaxed">
+                <span className="font-bold text-accent-hot">🔍 Terdeteksi: </span>
+                <span className="text-appText-bright font-medium">
+                  {detectedDeinflection.reasons.join(' → ')}
+                </span>
+                <span className="text-appText-muted"> dari bentuk kamus </span>
+                <strong className="font-jp text-sm text-accent-hot underline decoration-accent/40 font-bold ml-1">
+                  {selectedVerb}
+                </strong>
+              </div>
+            </div>
+          )}
         </div>
 
         {/* Current Verb Summary Banner */}
@@ -172,7 +213,7 @@ export const ConjugationModal: React.FC<ConjugationModalProps> = ({
                 Golongan: {verbType}
               </div>
               <div className="text-[11px] text-appText-muted">
-                Kamus / Bentuk Dasar
+                {detectedDeinflection ? `Akar kata dasar dari: "${inputVerb}"` : 'Kamus / Bentuk Dasar'}
               </div>
             </div>
           </div>

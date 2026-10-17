@@ -1,0 +1,134 @@
+[
+  {
+    "id": "conn-aruiwa",
+    "topic": "或いは (あるいは / aruiwa)",
+    "category": "connectives",
+    "reading": "aruiwa",
+    "role": "Pilihan Alternatif / Kemungkinan Lain",
+    "summary_id": "Menyajikan alternatif pilihan setara secara formal (\"atau / mungkin pula\"), sering dipakai dalam teks resmi, hukum, dan presentasi bisnis.",
+    "explanation_id": "Secara etimologi linguistik Pomax, kata ini merupakan gabungan dari bentuk Renyoukei 或る (arui) + partikel klasik い (penegas klausa) + partikel は. Digunakan untuk menyajikan alternatif kemungkinan atau opsi yang setara dalam analisis suatu situasi (AあるいはB). Dapat pula berpasangan di awal dua kalimat (あるいは〜、あるいは〜) menyerupai \"di satu sisi..., di sisi lain...\".",
+    "register": "formal / tulisan ilmiah / bisnis",
+    "examples": [
+      {
+        "jp": "書類は郵送あるいは直接窓口にご持参ください。",
+        "id": "Dokumen harap dikirim lewat pos atau dibawa langsung ke loket pendaftaran."
+      },
+      {
+        "jp": "午後は曇り、あるいは雨になるでしょう。",
+        "id": "Siang hari akan berawan, atau kemungkinan pula turun hujan."
+      }
+    ]
+  },
+  {
+    "id": "conn-matawa",
+    "topic": "又は (または / matawa)",
+    "category": "connectives",
+    "reading": "matawa",
+    "role": "Pilihan Eksklusif Regulasi (\"Atau\")",
+    "summary_id": "Konjungsi standar untuk menyatakan \"atau\" di antara dua pilihan yang bersifat mutually exclusive (pilih salah satu).",
+    "explanation_id": "Berasal dari kata keterangan 又 (kembali/lagi) + partikel topik は. Dalam teks hukum dan peraturan Jepang, 又は memiliki hirarki legal khusus: digunakan untuk menghubungkan pilihan tingkat dasar, berbeda dengan 若しくは (moshiku wa) yang digunakan untuk sub-pilihan di dalam cabang pilihan utama.",
+    "register": "formal / standar tulisan",
+    "examples": [
+      {
+        "jp": "黒または青のボールペンで記入してください。",
+        "id": "Harap isi dengan pulpen hitam atau biru."
+      },
+      {
+        "jp": "電話またはメールでご連絡いたします。",
+        "id": "Kami akan menghubungi Anda melalui telepon atau email."
+      }
+    ]
+  },
+  {
+    "id": "conn-omakeni",
+    "topic": "おまけに (omake ni)",
+    "category": "connectives",
+    "reading": "omake ni",
+    "role": "Penambahan Kumulatif (\"Ditambah Lagi / Parahnya Lagi\")",
+    "summary_id": "Menambahkan fakta berikutnya yang memperkuat situasi sebelumnya, sering dengan nuansa kekecewaan (\"sudah begitu, ditambah lagi...\").",
+    "explanation_id": "Berasal dari kata kerja 負ける (memberi diskon/bonus cuma-cuma) dengan awalan honorific お dan partikel に. Dalam tata bahasa diskursus, おまけに menghubungkan dua kejadian yang sejalan, di mana fakta kedua datang sebagai pukulan tambahan atau kejutan ekstra yang tidak diharapkan.",
+    "register": "informal / semi-formal lisan",
+    "examples": [
+      {
+        "jp": "雨が激しく降り出し、おまけに風まで強くなってきた。",
+        "id": "Hujan mulai turun deras, ditambah lagi angin pun menjadi sangat kencang."
+      },
+      {
+        "jp": "このアパートは狭く、おまけに駅から遠い。",
+        "id": "Apartemen ini sempit, dan parahnya lagi jauh dari stasiun."
+      }
+    ]
+  },
+  {
+    "id": "conn-oyobi",
+    "topic": "及び (および / oyobi)",
+    "category": "connectives",
+    "reading": "oyobi",
+    "role": "Penggabungan Resmi Dua Elemen (\"Serta / Dan\")",
+    "summary_id": "Konjungsi formal tertulis untuk menyatukan dua kata benda atau frasa setara (\"A serta B\") dalam dokumen hukum atau perjanjian.",
+    "explanation_id": "Berasal dari Renyoukei kata kerja klasik 及ぶ (mencapai/meliputi). Digunakan dalam bahasa resmi negara dan kontrak bisnis untuk menghubungkan subjek atau objek yang setara derajatnya. Sering dikombinasikan dengan 並びに (narabi ni) dalam klausul bertingkat.",
+    "register": "sangat formal / hukum / kontrak",
+    "examples": [
+      {
+        "jp": "氏名及び住所を記入してください。",
+        "id": "Harap cantumkan nama lengkap serta alamat tempat tinggal."
+      },
+      {
+        "jp": "日本国及び東南アジア諸国との友好関係。",
+        "id": "Hubungan persahabatan antara Negara Jepang serta negara-negara Asia Tenggara."
+      }
+    ]
+  },
+  {
+    "id": "conn-sorekara",
+    "topic": "それから (sore kara)",
+    "category": "connectives",
+    "reading": "sore kara",
+    "role": "Urutan Kronologis / Penambahan Item Susulan",
+    "summary_id": "Menyambung urutan waktu (\"setelah itu / kemudian\") atau menambahkan barang belanjaan/daftar yang baru teringat (\"dan juga...\").",
+    "explanation_id": "Tersusun dari kata ganti penunjuk それ + partikel awal から (dari hal itu). Sangat sering dipakai dalam bercerita kronologis kejadian masa lalu atau saat memesan makanan di kasir ketika teringat item tambahan yang ingin dipesan.",
+    "register": "netral / percakapan sehari-hari",
+    "examples": [
+      {
+        "jp": "宿題を終わらせた。それから、友達とゲームをした。",
+        "id": "Saya menyelesaikan PR. Setelah itu, saya bermain game bersama teman."
+      },
+      {
+        "jp": "コーヒーを一つ。それから、チーズケーキもお願いします。",
+        "id": "Satu cangkir kopi. Dan juga, tolong satu cheesecake."
+      }
+    ]
+  },
+  {
+    "id": "conn-dakara",
+    "topic": "だから / ですから (dakara / desu kara)",
+    "category": "connectives",
+    "reading": "dakara / desu kara",
+    "role": "Kesimpulan Logis Konsekuensial (\"Oleh Karena Itu\")",
+    "summary_id": "Menyatakan bahwa kalimat kedua merupakan konsekuensi langsung atau keputusan yang ditarik dari kondisi kalimat pertama.",
+    "explanation_id": "Kopula だ/です + partikel kausal から. Menghubungkan sebab obyektif atau subyektif dengan tindakan selanjutnya. Berhati-hatilah saat memakai だから sendirian secara singkat kepada orang yang lebih tua karena bisa terdengar mendesak atau tidak sabar (\"kan sudah kubilang!\").",
+    "register": "percakapan netral (ですから untuk situasi sopan)",
+    "examples": [
+      {
+        "jp": "明日は大事な試験があります。ですから、今夜は早く寝ます。",
+        "id": "Besok ada ujian penting. Oleh karena itu, malam ini saya akan tidur lebih awal."
+      }
+    ]
+  },
+  {
+    "id": "conn-shikashi",
+    "topic": "しかし / けれども (shikashi / keredomo)",
+    "category": "connectives",
+    "reading": "shikashi / keredomo",
+    "role": "Pertentangan / Pembalikan Arah Pemikiran (\"Namun / Tetapi\")",
+    "summary_id": "Membalikkan alur ekspektasi yang dibangun oleh kalimat pertama dengan menyajikan kenyataan kontras pada kalimat kedua.",
+    "explanation_id": "しかし adalah konjungsi adversatif klasik yang tegas dan bermartabat, umum dipakai dalam pidato, esai, dan diskusi serius. Dalam percakapan lisan kasual, orang lebih sering memakai でも, けど, atau だけど.",
+    "register": "shikashi: formal/tertulis; keredomo: sopan percakapan; demo: kasual",
+    "examples": [
+      {
+        "jp": "全力を尽くした。しかし、結果は惜しくも敗北だった。",
+        "id": "Kami sudah mengerahkan seluruh daya upaya. Namun, hasilnya sayangnya kalah."
+      }
+    ]
+  }
+]

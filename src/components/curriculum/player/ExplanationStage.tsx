@@ -19,6 +19,7 @@ import { speakJapanese } from '../../../lib/audio/speechEngine';
 import { PitchAccentBadge } from '../interactive/PitchAccentBadge';
 import { KanjiStrokeModal, KanjiDetailInfo } from '../interactive/KanjiStrokeModal';
 import { useAppStore } from '../../../store/useAppStore';
+import { lookupPitch } from '../../../lib/data/pitchAccentManager';
 
 interface ExplanationStageProps {
   explanations?: LessonExplanationSection[];
@@ -111,7 +112,17 @@ export const ExplanationStage: React.FC<ExplanationStageProps> = ({
                         <span className="text-xs text-accent font-jp font-semibold">
                           {vb.reading}
                         </span>
-                        <PitchAccentBadge reading={vb.reading || vb.word} compact />
+                        {(() => {
+                          const pitch = vb.pitch || lookupPitch(vb.word, vb.reading);
+                          if (!pitch) return null;
+                          return (
+                            <PitchAccentBadge
+                              reading={vb.reading || vb.word}
+                              pattern={pitch.pattern}
+                              compact
+                            />
+                          );
+                        })()}
                       </div>
                       <div className="text-[11px] font-mono text-appText-muted">
                         {vb.romaji}
@@ -407,7 +418,7 @@ export const ExplanationStage: React.FC<ExplanationStageProps> = ({
                           </button>
                         </div>
 
-                        {/* Pembicara B (Respon) */}
+                        {/* Pembicara B (Respons) */}
                         <div className="flex items-start justify-between gap-2 pt-2 border-t border-accent/10">
                           <div className="space-y-0.5 min-w-0">
                             <span className="text-[10px] font-bold text-emerald-400">

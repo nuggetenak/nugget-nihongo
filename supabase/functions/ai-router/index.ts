@@ -18,6 +18,13 @@
 // ══════════════════════════════════════════════════════
 
 import { serve } from 'https://deno.land/std@0.224.0/http/server.ts';
+import { createClient } from 'https://esm.sh/@supabase/supabase-js@2.42.0';
+
+const SUPABASE_URL = Deno.env.get('SUPABASE_URL') || '';
+const SUPABASE_ANON_KEY = Deno.env.get('SUPABASE_ANON_KEY') || '';
+const supabase = (SUPABASE_URL && SUPABASE_ANON_KEY)
+  ? createClient(SUPABASE_URL, SUPABASE_ANON_KEY)
+  : null;
 
 // ── Master Persona Prompt (v2 — canonical, see FRONTEND-OVERHAUL-PLAN.md §5.3) ─
 // Source of truth: /shared/sensei-persona-v2.txt
@@ -202,27 +209,92 @@ class RateLimitError extends Error {
   }
 }
 
-// ── CORS headers ──────────────────────────────────────
-function corsHeaders(origin: string) {
+// ── CORS headers & strict origin validation ────────────
+function isAllowedOrigin(origin: string | null): boolean {
+  if (!origin) return false;
+  try {
+    const parsed = new URL(origin);
+    const host = parsed.hostname;
+    // Local dev
+    if (host === 'localhost' || host === '127.0.0.1') return true;
+    // Production and staging allowlist — strictly scoped to Nugget Nihongo domains
+    if (
+      host === 'nuggetnihongo.com' ||
+      host.endsWith('.nuggetnihongo.com') ||
+      host === 'nugget-nihongo.com' ||
+      host.endsWith('.nugget-nihongo.com') ||
+      /^(nugget-?nihongo.*)\.vercel\.app$/i.test(host) ||
+      /^(nugget-?nihongo.*)\.pages\.dev$/i.test(host) ||
+      /^(.*nugget.*)\.github\.io$/i.test(host)
+    ) {
+      return true;
+    }
+    const envOrigins = Deno.env.get('ALLOWED_ORIGINS');
+    if (envOrigins && envOrigins.split(',').map((o: string) => o.trim()).includes(origin)) {
+      return true;
+    }
+    return false;
+  } catch {
+    return false;
+  }
+}
+
+function corsHeaders(origin: string | null) {
+  const allowed = isAllowedOrigin(origin);
+  const allowOrigin = allowed && origin ? origin : 'https://nuggetnihongo.com';
   return {
-    'Access-Control-Allow-Origin': origin || '*',
+    'Access-Control-Allow-Origin': allowOrigin,
     'Access-Control-Allow-Methods': 'POST, OPTIONS',
-    'Access-Control-Allow-Headers': 'Content-Type, Authorization',
+    'Access-Control-Allow-Headers': 'Content-Type, Authorization, x-client-info, apikey',
+    'Vary': 'Origin',
   };
 }
 
 // ── Main handler ──────────────────────────────────────
 serve(async (req: Request) => {
-  const origin = req.headers.get('origin') || '*';
+  const origin = req.headers.get('origin');
 
   // Handle CORS preflight
   if (req.method === 'OPTIONS') {
     return new Response(null, { status: 204, headers: corsHeaders(origin) });
   }
 
+  // Reject disallowed origins if origin header is present
+  if (origin && !isAllowedOrigin(origin)) {
+    return new Response(JSON.stringify({ error: 'Forbidden: Origin not allowed' }), {
+      status: 403,
+      headers: { ...corsHeaders(origin), 'Content-Type': 'application/json' },
+    });
+  }
+
   if (req.method !== 'POST') {
     return new Response(JSON.stringify({ error: 'Method not allowed' }), {
       status: 405,
+      headers: { ...corsHeaders(origin), 'Content-Type': 'application/json' },
+    });
+  }
+
+  // Enforce JWT authentication to prevent unauthenticated token draining
+  const authHeader = req.headers.get('Authorization');
+  if (!authHeader || !authHeader.startsWith('Bearer ')) {
+    return new Response(JSON.stringify({ error: 'Unauthorized: Missing Authorization Bearer token' }), {
+      status: 401,
+      headers: { ...corsHeaders(origin), 'Content-Type': 'application/json' },
+    });
+  }
+
+  const token = authHeader.replace(/^Bearer\s+/i, '');
+  if (!supabase) {
+    return new Response(JSON.stringify({ error: 'Internal Server Error: Supabase client not initialized' }), {
+      status: 500,
+      headers: { ...corsHeaders(origin), 'Content-Type': 'application/json' },
+    });
+  }
+
+  const { data: { user }, error: authError } = await supabase.auth.getUser(token);
+  if (authError || !user) {
+    return new Response(JSON.stringify({ error: 'Unauthorized: Invalid Supabase user session token' }), {
+      status: 401,
       headers: { ...corsHeaders(origin), 'Content-Type': 'application/json' },
     });
   }

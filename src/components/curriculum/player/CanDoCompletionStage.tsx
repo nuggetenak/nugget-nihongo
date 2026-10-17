@@ -32,17 +32,18 @@ export const CanDoCompletionStage: React.FC<CanDoCompletionStageProps> = ({
   onNextLesson,
   onBackToCatalog,
 }) => {
-  const { injectLessonItemsToFSRS, incrementXp } = useAppStore();
+  const { completedLessonIds, completeLesson } = useAppStore();
   const isPassed = drillScore >= 80;
   const [showPocketSummary, setShowPocketSummary] = useState(true);
 
+  // Ticket T-48 & Ticket T-196: Eradicate Infinite XP Exploit & Implement Deduplicated Lesson Completion
+  // Uses persistent completed lessons registry ('nn_completed_lesson_xp_ids') to ensure incrementXp(50) only fires once
+  const awardedSet = new Set(completedLessonIds);
   useEffect(() => {
-    if (isPassed) {
-      // Injeksi kosakata dan tata bahasa pelajaran ini ke antrean FSRS Beranda
-      injectLessonItemsToFSRS(lesson.grammar_ids || [], lesson.vocab_ids || []);
-      incrementXp(50);
+    if (isPassed && lesson?.id && !awardedSet.has(lesson.id)) {
+      completeLesson(lesson.id, lesson.grammar_ids || [], lesson.vocab_ids || []);
     }
-  }, [isPassed, lesson, injectLessonItemsToFSRS, incrementXp]);
+  }, [isPassed, lesson?.id, completedLessonIds, completeLesson]);
 
   const challenge = lesson.can_do_challenge;
   const pocketSummary = lesson.pocket_summary || challenge?.pocketSummary;

@@ -28,7 +28,7 @@ window.vocabN3_Expressions = [
     "umum"
   ],
   "nuance": "Idiom yang berarti bersedia aktif mendengarkan dan membantu seseorang yang punya masalah. Lebih dari sekadar 聞く — menyiratkan keterlibatan dan dukungan nyata. 相談を受ける memiliki nuansa yang lebih formal.",
-  "conj_type": 'godan',
+  "conj_type": "godan",
   "examples": [
     {
       "jp": "いつでも相談に乗るから、気軽に話してね。",
@@ -77,18 +77,39 @@ window.vocabN3_Expressions = [
   "common": true,
   "related_grammar": [],
   "formalitas": 2,
-  "domain": ["sopan-santun", "kehidupan-sehari"],
+  "domain": [
+    "sopan-santun",
+    "kehidupan-sehari"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "Menekankan tindakan verbal mengucapkan terima kasih. Berbeda dari 感謝する yang lebih bersifat internal/perasaan — お礼を言う adalah aksi lisannya. お礼 juga bisa berupa hadiah atau kunjungan sebagai wujud terima kasih.",
   "conj_type": null,
   "examples": [
-    {"jp": "助けてもらったので、直接お礼を言いに行った。", "id": "Karena sudah dibantu, saya langsung pergi untuk mengucapkan terima kasih.", "level": "n3", "tags": ["sopan-santun"]},
-    {"jp": "お礼を言うのを忘れてしまった。", "id": "Saya lupa mengucapkan terima kasih.", "level": "n3", "tags": ["kehidupan-sehari"]}
+    {
+      "jp": "助けてもらったので、直接お礼を言いに行った。",
+      "id": "Karena sudah dibantu, saya langsung pergi untuk mengucapkan terima kasih.",
+      "level": "n3",
+      "tags": [
+        "sopan-santun"
+      ]
+    },
+    {
+      "jp": "お礼を言うのを忘れてしまった。",
+      "id": "Saya lupa mengucapkan terima kasih.",
+      "level": "n3",
+      "tags": [
+        "kehidupan-sehari"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
-  "see_also": ["vg-n3-00340"],
+  "see_also": [
+    "vg-n3-00340"
+  ],
   "provenance": "jlpt-corpus",
   "added_v": "v15"
 },
@@ -105,14 +126,35 @@ window.vocabN3_Expressions = [
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
-  "domain": ["bahasa-komunikasi", "pikiran-opini"],
+  "domain": [
+    "bahasa-komunikasi",
+    "pikiran-opini"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "Menekankan dua hal yang terjadi secara bersamaan atau dua aspek yang berbeda dari subjek yang sama. Berbeda dari 一方 (sendiri) yang lebih sering memulai kalimat baru — 一方で dapat melekat langsung pada frasa sebelumnya dalam satu kalimat, menyoroti kontras atau simultan.",
   "conj_type": null,
   "examples": [
-    {"jp": "彼女は仕事を続ける<b>一方で</b>、子育てにも全力を注いでいる。", "id": "Dia terus bekerja, sementara di sisi lain juga mencurahkan sepenuh hati untuk membesarkan anak.", "level": "n3", "tags": ["pekerjaan", "keluarga"]},
-    {"jp": "SNSは人々をつなげる<b>一方で</b>、孤独を深めることもある。", "id": "Media sosial menghubungkan orang-orang, sementara di sisi lain juga bisa memperburuk rasa kesepian.", "level": "n3", "tags": ["teknologi", "emosi"]}
+    {
+      "jp": "彼女は仕事を続ける<b>一方で</b>、子育てにも全力を注いでいる。",
+      "id": "Dia terus bekerja, sementara di sisi lain juga mencurahkan sepenuh hati untuk membesarkan anak.",
+      "level": "n3",
+      "tags": [
+        "pekerjaan",
+        "keluarga"
+      ]
+    },
+    {
+      "jp": "SNSは人々をつなげる<b>一方で</b>、孤独を深めることもある。",
+      "id": "Media sosial menghubungkan orang-orang, sementara di sisi lain juga bisa memperburuk rasa kesepian.",
+      "level": "n3",
+      "tags": [
+        "teknologi",
+        "emosi"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
@@ -133,14 +175,35 @@ window.vocabN3_Expressions = [
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
-  "domain": ["bahasa-komunikasi", "pikiran-opini"],
+  "domain": [
+    "bahasa-komunikasi",
+    "pikiran-opini"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "Menyoroti kontras yang lebih eksplisit dan langsung dibanding 一方 — secara harfiah 'terhadap itu'. Biasanya digunakan ketika dua hal sudah disebutkan sebelumnya dan pembicara ingin membandingkan keduanya secara tegas. Lebih terstruktur dari 一方 dan lebih to-the-point dari しかし.",
   "conj_type": null,
   "examples": [
-    {"jp": "A社の製品は安いが品質が低い。<b>それに対して</b>、B社は高くても長持ちする。", "id": "Produk perusahaan A murah tapi kualitasnya rendah. Sebagai perbandingan, perusahaan B mahal tapi tahan lama.", "level": "n3", "tags": ["bisnis", "pikiran-opini"]},
-    {"jp": "春は花が咲いて明るい。<b>それに対して</b>、冬は枯れ木ばかりで寂しい感じがする。", "id": "Musim semi cerah dengan bunga bermekaran. Berbeda dengan itu, musim dingin terasa sepi dengan pohon-pohon gundul.", "level": "n3", "tags": ["alam-lingkungan", "emosi"]}
+    {
+      "jp": "A社の製品は安いが品質が低い。<b>それに対して</b>、B社は高くても長持ちする。",
+      "id": "Produk perusahaan A murah tapi kualitasnya rendah. Sebagai perbandingan, perusahaan B mahal tapi tahan lama.",
+      "level": "n3",
+      "tags": [
+        "bisnis",
+        "pikiran-opini"
+      ]
+    },
+    {
+      "jp": "春は花が咲いて明るい。<b>それに対して</b>、冬は枯れ木ばかりで寂しい感じがする。",
+      "id": "Musim semi cerah dengan bunga bermekaran. Berbeda dengan itu, musim dingin terasa sepi dengan pohon-pohon gundul.",
+      "level": "n3",
+      "tags": [
+        "alam-lingkungan",
+        "emosi"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
@@ -304,8 +367,9 @@ window.vocabN3_Expressions = [
       "tags": [
         "emosi",
         "hiburan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"ナ＼ゼカ"}
+},
     {
       "jp": "彼女に会うと<b>なぜか</b>緊張する。自分でもよくわからない。",
       "id": "Entah kenapa aku selalu gugup kalau bertemu dengannya. Aku sendiri pun tidak mengerti.",
@@ -340,14 +404,35 @@ window.vocabN3_Expressions = [
   "common": true,
   "related_grammar": [],
   "formalitas": 2,
-  "domain": ["kehidupan-sehari", "keputusan"],
+  "domain": [
+    "kehidupan-sehari",
+    "keputusan"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "Merujuk pada tindakan sengaja menggeser suatu pekerjaan ke waktu yang lebih lambat — menaruhnya di akhir antrean. Berbeda dari 延期する yang lebih formal (menunda secara resmi, biasanya dengan batas waktu baru); 後回しにする lebih kasual dan sering berkonotasi negatif (procrastination) — sesuatu yang sebenarnya perlu dikerjakan tapi ditunda-tunda.",
   "conj_type": null,
   "examples": [
-    {"jp": "苦手なことをいつも<b>後回しにして</b>しまう。", "id": "Aku selalu menunda-nunda hal yang tidak aku sukai.", "level": "n3", "tags": ["kehidupan-sehari", "karakter"]},
-    {"jp": "重要な仕事を<b>後回しにしない</b>ように気をつけている。", "id": "Aku berusaha agar tidak menunda pekerjaan yang penting.", "level": "n3", "tags": ["pekerjaan", "keputusan"]}
+    {
+      "jp": "苦手なことをいつも<b>後回しにして</b>しまう。",
+      "id": "Aku selalu menunda-nunda hal yang tidak aku sukai.",
+      "level": "n3",
+      "tags": [
+        "kehidupan-sehari",
+        "karakter"
+      ]
+    },
+    {
+      "jp": "重要な仕事を<b>後回しにしない</b>ように気をつけている。",
+      "id": "Aku berusaha agar tidak menunda pekerjaan yang penting.",
+      "level": "n3",
+      "tags": [
+        "pekerjaan",
+        "keputusan"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
@@ -364,7 +449,7 @@ window.vocabN3_Expressions = [
   "meaning_id": "aduh!, gawat!, celaka!, ya ampun!",
   "meaning_en": "Damn it!, Oh no!, Oops!",
   "jlpt": "n3",
-  "pos": "expr",
+  "pos": "expression",
   "common": true,
   "related_grammar": [],
   "formalitas": 1,
@@ -416,6 +501,7 @@ window.vocabN3_Expressions = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-00921",
   "word": "すみません (かん)",
@@ -424,7 +510,7 @@ window.vocabN3_Expressions = [
   "meaning_id": "maaf; permisi; terima kasih (ungkapan santun multi-situasi)",
   "meaning_en": "excuse me, I'm sorry, thank you (polite interjection)",
   "jlpt": "n3",
-  "pos": "expr",
+  "pos": "expression",
   "common": true,
   "related_grammar": [],
   "formalitas": 2,
@@ -478,6 +564,7 @@ window.vocabN3_Expressions = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-00992",
   "word": "ありがとう",
@@ -486,7 +573,7 @@ window.vocabN3_Expressions = [
   "meaning_id": "terima kasih",
   "meaning_en": "thank you, thanks",
   "jlpt": "n3",
-  "pos": "expr",
+  "pos": "expression",
   "common": true,
   "related_grammar": [],
   "formalitas": 1,
@@ -509,8 +596,9 @@ window.vocabN3_Expressions = [
       "tags": [
         "kehidupan-sehari",
         "hubungan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":5,"downstep_mora":2,"contour":"アリ＼ガトウ"}
+},
     {
       "jp": "いつも相談に乗ってくれてありがとう、すごく助かっているよ。",
       "id": "Terima kasih selalu mau mendengarkan curhatanku, itu sangat membantuku.",
@@ -537,6 +625,7 @@ window.vocabN3_Expressions = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01011",
   "word": "いけない",
@@ -545,7 +634,7 @@ window.vocabN3_Expressions = [
   "meaning_id": "tidak boleh, buruk, gawat, keliru",
   "meaning_en": "must not do, bad, wrong, hopeless",
   "jlpt": "n3",
-  "pos": "expr",
+  "pos": "expression",
   "common": true,
   "related_grammar": [],
   "formalitas": 2,
@@ -600,6 +689,7 @@ window.vocabN3_Expressions = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01020",
   "word": "いただきます",
@@ -608,7 +698,7 @@ window.vocabN3_Expressions = [
   "meaning_id": "selamat makan, ucapan syukur sebelum makan",
   "meaning_en": "expression of gratitude before eating (bon appetit / grace)",
   "jlpt": "n3",
-  "pos": "expr",
+  "pos": "expression",
   "common": true,
   "related_grammar": [],
   "formalitas": 2,
@@ -660,6 +750,7 @@ window.vocabN3_Expressions = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01045",
   "word": "否",
@@ -668,7 +759,7 @@ window.vocabN3_Expressions = [
   "meaning_id": "bukan, tidak, atau bahkan",
   "meaning_en": "no, nay, well, rather",
   "jlpt": "n3",
-  "pos": "expr",
+  "pos": "expression",
   "common": true,
   "related_grammar": [],
   "formalitas": 2,
@@ -691,8 +782,9 @@ window.vocabN3_Expressions = [
       "level": "n3",
       "tags": [
         "bahasa-komunikasi"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":2,"downstep_mora":1,"contour":"イ＼ヤ"}
+},
     {
       "jp": "彼は数か月、否、一年以上もこのプロジェクトに全力を注いできた。",
       "id": "Dia telah mencurahkan seluruh tenaganya untuk proyek ini selama beberapa bulan, atau bahkan lebih dari satu tahun.",
@@ -721,6 +813,7 @@ window.vocabN3_Expressions = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01049",
   "word": "いらっしゃい",
@@ -729,7 +822,7 @@ window.vocabN3_Expressions = [
   "meaning_id": "selamat datang, silakan masuk",
   "meaning_en": "welcome, come in",
   "jlpt": "n3",
-  "pos": "expr",
+  "pos": "expression",
   "common": true,
   "related_grammar": [],
   "formalitas": 2,
@@ -752,8 +845,9 @@ window.vocabN3_Expressions = [
       "level": "n3",
       "tags": [
         "keluarga"
-      ]
-    },
+      ],
+  "pitch": {"pattern":4,"category":"nakadaka","mora_count":0,"downstep_mora":0,"contour":"￣"}
+},
     {
       "jp": "路地裏の居酒屋ののれんをくぐると、大将が「いらっしゃい！」と元気に声をかけた。",
       "id": "Saat menyibak tirai kedai di gang sempit, sang pemilik menyapa dengan riang, “Selamat datang!”",
@@ -779,6 +873,7 @@ window.vocabN3_Expressions = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01053",
   "word": "いわゆる",
@@ -787,7 +882,7 @@ window.vocabN3_Expressions = [
   "meaning_id": "yang disebut-sebut, apa yang dinamakan, istilahnya",
   "meaning_en": "so-called, what is called, as they say",
   "jlpt": "n3",
-  "pos": "expr",
+  "pos": "expression",
   "common": true,
   "related_grammar": [],
   "formalitas": 2,
@@ -810,8 +905,9 @@ window.vocabN3_Expressions = [
       "level": "n3",
       "tags": [
         "sosial"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"イワユ＼ル"}
+},
     {
       "jp": "これは専門用語ではなく、いわゆる日常会話でよく使われる俗語です。",
       "id": "Ini bukanlah istilah teknis khusus, melainkan apa yang biasa disebut bahasa gaul dalam percakapan sehari-hari.",
@@ -837,6 +933,7 @@ window.vocabN3_Expressions = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01119",
   "word": "おめでとう",
@@ -845,7 +942,7 @@ window.vocabN3_Expressions = [
   "meaning_id": "selamat, salam perayaan",
   "meaning_en": "congratulations, felicitations",
   "jlpt": "n3",
-  "pos": "expr",
+  "pos": "expression",
   "common": true,
   "related_grammar": [],
   "formalitas": 1,
@@ -867,8 +964,9 @@ window.vocabN3_Expressions = [
       "level": "n3",
       "tags": [
         "emosi-positif"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":5,"downstep_mora":0,"contour":"オメデトウ￣"}
+},
     {
       "jp": "難関の大学入試に見事合格したと聞いて本当に嬉しいよ、心からおめでとう！",
       "id": "Saya sangat gembira mendengar kau berhasil lulus seleksi masuk universitas yang sulit, selamat dari lubuk hati terdalam!",
@@ -894,6 +992,7 @@ window.vocabN3_Expressions = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01120",
   "word": "お目に掛かる",
@@ -902,7 +1001,7 @@ window.vocabN3_Expressions = [
   "meaning_id": "bertemu, berjumpa (ragam hormat merendah kenjougo)",
   "meaning_en": "to meet, to see (humble honorific form of 会う)",
   "jlpt": "n3",
-  "pos": "expr",
+  "pos": "expression",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -952,6 +1051,7 @@ window.vocabN3_Expressions = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01210",
   "word": "かもしれない",
@@ -960,7 +1060,7 @@ window.vocabN3_Expressions = [
   "meaning_id": "mungkin, barangkali, bisa jadi",
   "meaning_en": "may, might, perhaps, possibly",
   "jlpt": "n3",
-  "pos": "expr",
+  "pos": "expression",
   "common": true,
   "related_grammar": [],
   "formalitas": 2,
@@ -983,8 +1083,9 @@ window.vocabN3_Expressions = [
       "level": "n3",
       "tags": [
         "pikiran-opini"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":6,"downstep_mora":1,"contour":"カ＼モシレナイ"}
+},
     {
       "jp": "彼は道に迷っているのかもしれないので、電話をかけてみましょう。",
       "id": "Mungkin dia sedang tersesat, jadi mari kita coba meneleponnya.",
@@ -1014,6 +1115,7 @@ window.vocabN3_Expressions = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01450",
   "word": "ごめんなさい",
@@ -1022,7 +1124,7 @@ window.vocabN3_Expressions = [
   "meaning_id": "maaf, mohon maaf, saya minta maaf",
   "meaning_en": "I'm sorry, excuse me, pardon me",
   "jlpt": "n3",
-  "pos": "expr",
+  "pos": "expression",
   "common": true,
   "related_grammar": [],
   "formalitas": 2,
@@ -1076,6 +1178,7 @@ window.vocabN3_Expressions = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01457",
   "word": "こんにちは",
@@ -1084,7 +1187,7 @@ window.vocabN3_Expressions = [
   "meaning_id": "halo, selamat siang",
   "meaning_en": "hello, good afternoon, good day",
   "jlpt": "n3",
-  "pos": "expr",
+  "pos": "expression",
   "common": true,
   "related_grammar": [],
   "formalitas": 2,
@@ -1110,8 +1213,9 @@ window.vocabN3_Expressions = [
       "tags": [
         "kehidupan-sehari",
         "etika"
-      ]
-    },
+      ],
+  "pitch": {"pattern":5,"category":"odaka","mora_count":5,"downstep_mora":5,"contour":"コンニチハ＼"}
+},
     {
       "jp": "「田中さん、こんにちは。今日はお出かけですか」「ええ、ちょっと駅前まで」",
       "id": "'Pak Tanaka, selamat siang. Mau bepergian hari ini?' 'Iya, sebentar mau ke depan stasiun.'",
@@ -1138,6 +1242,7 @@ window.vocabN3_Expressions = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01619",
   "word": "よろしく (かん)",
@@ -1146,7 +1251,7 @@ window.vocabN3_Expressions = [
   "meaning_id": "salam kenal, mohon bantuannya, tolong sampaikan salam",
   "meaning_en": "best regards, please remember me, pleased to meet you",
   "jlpt": "n3",
-  "pos": "expr",
+  "pos": "expression",
   "common": true,
   "related_grammar": [],
   "formalitas": 1,
@@ -1199,6 +1304,7 @@ window.vocabN3_Expressions = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01620",
   "word": "来",
@@ -1207,7 +1313,7 @@ window.vocabN3_Expressions = [
   "meaning_id": "mendatang, yang akan datang, berikutnya; sejak...",
   "meaning_en": "next, coming; since",
   "jlpt": "n3",
-  "pos": "expr",
+  "pos": "expression",
   "common": true,
   "related_grammar": [],
   "formalitas": 2,
@@ -1233,8 +1339,9 @@ window.vocabN3_Expressions = [
       "tags": [
         "waktu",
         "pekerjaan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":2,"downstep_mora":1,"contour":"ラ＼イ"}
+},
     {
       "jp": "来日してから半年が経ち、日本の生活や習慣にもだいぶ慣れてきた。",
       "id": "Sudah setengah tahun berlalu sejak saya datang ke Jepang, dan saya sudah cukup terbiasa dengan kehidupan dan kebiasaan di Jepang.",
@@ -1265,6 +1372,7 @@ window.vocabN3_Expressions = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01732",
   "word": "ことによると",
@@ -1273,7 +1381,7 @@ window.vocabN3_Expressions = [
   "meaning_en": "possibly, perhaps, depending on circumstances",
   "meaning_id": "mungkin saja, bisa jadi, ada kemungkinan",
   "jlpt": "n3",
-  "pos": "expr",
+  "pos": "expression",
   "common": true,
   "related_grammar": [],
   "formalitas": 2,
@@ -1299,8 +1407,9 @@ window.vocabN3_Expressions = [
       "tags": [
         "pikiran-opini",
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":6,"downstep_mora":0,"contour":"コトニヨルト￣"}
+},
     {
       "jp": "彼の最近の体調の悪さから見ると、ことによると今度の試合には出場できないかもしれない。",
       "id": "Dilihat dari kondisi fisiknya yang memburuk akhir-akhir ini, ada kemungkinan dia mungkin tidak bisa tampil dalam pertandingan kali ini.",
@@ -1332,6 +1441,7 @@ window.vocabN3_Expressions = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01871",
   "word": "違いない",
@@ -1340,7 +1450,7 @@ window.vocabN3_Expressions = [
   "meaning_id": "pasti, tidak salah lagi, tentu saja",
   "meaning_en": "sure, no mistaking it, for certain, must be",
   "jlpt": "n3",
-  "pos": "expr",
+  "pos": "expression",
   "common": true,
   "related_grammar": [],
   "formalitas": 2,
@@ -1366,8 +1476,9 @@ window.vocabN3_Expressions = [
       "tags": [
         "pikiran-opini",
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":4,"category":"nakadaka","mora_count":5,"downstep_mora":4,"contour":"チガイナ＼イ"}
+},
     {
       "jp": "あれほど毎日熱心に練習していたのだから、彼なら試験に合格するに違いない。",
       "id": "Mengingat dia berlatih begitu giat setiap hari, kalau dia pasti tidak salah lagi akan lulus ujian.",
@@ -1398,6 +1509,7 @@ window.vocabN3_Expressions = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01894",
   "word": "ちょうだい",
@@ -1406,7 +1518,7 @@ window.vocabN3_Expressions = [
   "meaning_id": "tolong berikan, minta (ragam akrab); menerima (bentuk merendah)",
   "meaning_en": "please give me (casual); receiving (humble)",
   "jlpt": "n3",
-  "pos": "expr",
+  "pos": "expression",
   "common": true,
   "related_grammar": [],
   "formalitas": 1,
@@ -1430,8 +1542,9 @@ window.vocabN3_Expressions = [
       "tags": [
         "kehidupan-sehari",
         "keluarga"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"チョウダイ￣"}
+},
     {
       "jp": "その本を読み終わったら、今度は私にも貸してちょうだいね。",
       "id": "Kalau sudah selesai baca buku itu, pinjamkan ke aku juga ya.",
@@ -1461,6 +1574,7 @@ window.vocabN3_Expressions = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01945",
   "word": "できれば",
@@ -1469,7 +1583,7 @@ window.vocabN3_Expressions = [
   "meaning_id": "kalau bisa, jika memungkinkan, sekiranya dapat",
   "meaning_en": "if possible, if you can, if circumstances allow",
   "jlpt": "n3",
-  "pos": "expr",
+  "pos": "expression",
   "common": true,
   "related_grammar": [],
   "formalitas": 2,
@@ -1524,6 +1638,7 @@ window.vocabN3_Expressions = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-01970",
   "word": "どうぞよろしく",
@@ -1532,7 +1647,7 @@ window.vocabN3_Expressions = [
   "meaning_id": "senang berkenalan, mohon bantuannya, mohon kerja samanya",
   "meaning_en": "pleased to meet you, please treat me well, looking forward to working with you",
   "jlpt": "n3",
-  "pos": "expr",
+  "pos": "expression",
   "common": true,
   "related_grammar": [],
   "formalitas": 2,
@@ -1585,6 +1700,7 @@ window.vocabN3_Expressions = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-02033",
   "word": "なにも",
@@ -1593,7 +1709,7 @@ window.vocabN3_Expressions = [
   "meaning_id": "tidak ada apa pun, sama sekali tidak (perlu/bermaksud)",
   "meaning_en": "nothing, (not) anything, (with neg) not necessarily, no need to",
   "jlpt": "n3",
-  "pos": "expr",
+  "pos": "expression",
   "common": true,
   "related_grammar": [],
   "formalitas": 2,
@@ -1619,8 +1735,9 @@ window.vocabN3_Expressions = [
       "tags": [
         "pikiran",
         "komunikasi"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ナニモ￣"}
+},
     {
       "jp": "ちょっとした勘違いなのだから、なにもそんなに激しく怒る必要はないでしょう。",
       "id": "Karena ini hanyalah salah paham kecil, rasanya tidak perlu sampai semarah itu bukan?",
@@ -1651,6 +1768,7 @@ window.vocabN3_Expressions = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-02042",
   "word": "何でも",
@@ -1659,7 +1777,7 @@ window.vocabN3_Expressions = [
   "meaning_id": "apa saja, apa pun, konon kabarnya",
   "meaning_en": "anything, everything, reportedly, by all accounts",
   "jlpt": "n3",
-  "pos": "expr",
+  "pos": "expression",
   "common": true,
   "related_grammar": [],
   "formalitas": 2,
@@ -1684,8 +1802,9 @@ window.vocabN3_Expressions = [
       "tags": [
         "komunikasi",
         "pendidikan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ナンデモ￣"}
+},
     {
       "jp": "何でも、隣の町に新しい大型ショッピングモールができるらしいですよ。",
       "id": "Konon kabarnya, pusat perbelanjaan besar baru akan segera dibangun di kota sebelah lho.",
@@ -1712,6 +1831,7 @@ window.vocabN3_Expressions = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-02075",
   "word": "ノー",
@@ -1720,7 +1840,7 @@ window.vocabN3_Expressions = [
   "meaning_id": "tidak, penolakan, pelarangan",
   "meaning_en": "no, refusal, rejection",
   "jlpt": "n3",
-  "pos": "expr",
+  "pos": "expression",
   "common": true,
   "related_grammar": [],
   "formalitas": 1,
@@ -1744,8 +1864,9 @@ window.vocabN3_Expressions = [
       "tags": [
         "komunikasi",
         "karakter"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":0,"downstep_mora":1,"contour":"＼"}
+},
     {
       "jp": "毎週水曜日はノー残業デーに指定されているため、社員全員が定時で気持ちよく退社する。",
       "id": "Karena setiap hari Rabu ditetapkan sebagai hari tanpa lembur, seluruh karyawan pulang tepat waktu dengan perasaan gembira.",
@@ -1776,6 +1897,7 @@ window.vocabN3_Expressions = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n3-02094",
   "word": "はあ (かん)",
@@ -1784,7 +1906,7 @@ window.vocabN3_Expressions = [
   "meaning_id": "hela napas (keluhan/kelegaan); ah, ya (jawaban ragu atau setengah hati)",
   "meaning_en": "sigh; ah, yeah (hesitant or reluctant reply)",
   "jlpt": "n3",
-  "pos": "expr",
+  "pos": "expression",
   "common": true,
   "related_grammar": [],
   "formalitas": 1,
@@ -1837,14 +1959,12 @@ window.vocabN3_Expressions = [
   }
 },
 
-// ── Staged Expansion (1) ──
-
 {
   "id": "vg-n3-02468",
   "word": "男の人",
   "reading": "おとこのひと",
   "romaji": "otokonohito",
-  "meaning_id": "man",
+  "meaning_id": "laki-laki",
   "meaning_en": "man",
   "jlpt": "n3",
   "pos": "expression",

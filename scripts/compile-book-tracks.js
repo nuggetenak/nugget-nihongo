@@ -63,12 +63,12 @@ const BOOKS_REGISTRY = [
     volumes: [
       {
         vocabFile: 'minna/vocab-lens-mn-1.js',
-        vocabVar: 'vocabLensMn1',
+        vocabVar: 'vocabLensMinna1',
         label: 'Minna I'
       },
       {
         vocabFile: 'minna/vocab-lens-mn-2.js',
-        vocabVar: 'vocabLensMn2',
+        vocabVar: 'vocabLensMinna2',
         label: 'Minna II'
       }
     ]
@@ -84,23 +84,23 @@ const BOOKS_REGISTRY = [
     volumes: [
       {
         grammarFile: 'soumatome/grammar-lens-sm-n5.js',
-        grammarVar: 'grammarLensSmN5',
+        grammarVar: 'grammarLensSoumatomeN5',
         vocabFile: 'soumatome/vocab-lens-sm-n5.js',
-        vocabVar: 'vocabLensSmN5',
+        vocabVar: 'vocabLensSoumatomeN5',
         label: 'Soumatome N5'
       },
       {
         grammarFile: 'soumatome/grammar-lens-sm-n2.js',
-        grammarVar: 'grammarLensSmN2',
+        grammarVar: 'grammarLensSoumatomeN2',
         vocabFile: 'soumatome/vocab-lens-sm-n2.js',
-        vocabVar: 'vocabLensSmN2',
+        vocabVar: 'vocabLensSoumatomeN2',
         label: 'Soumatome N2'
       },
       {
         grammarFile: 'soumatome/grammar-lens-sm-n1.js',
-        grammarVar: 'grammarLensSmN1',
+        grammarVar: 'grammarLensSoumatomeN1',
         vocabFile: 'soumatome/vocab-lens-sm-n1.js',
-        vocabVar: 'vocabLensSmN1',
+        vocabVar: 'vocabLensSoumatomeN1',
         label: 'Soumatome N1'
       }
     ]
@@ -201,9 +201,9 @@ const BOOKS_REGISTRY = [
     icon: '🌸',
     tagline: 'Berorientasi komunikasi praktis dan pemahaman lintas budaya Jepang JF Standard.',
     volumes: [
-      { vocabFile: 'marugoto/lens-marugoto-a1.js', vocabVar: 'lensMarugotoA1', label: 'Marugoto A1' },
-      { vocabFile: 'marugoto/lens-marugoto-a2-1.js', vocabVar: 'lensMarugotoA2_1', label: 'Marugoto A2-1' },
-      { vocabFile: 'marugoto/lens-marugoto-a2-2.js', vocabVar: 'lensMarugotoA2_2', label: 'Marugoto A2-2' }
+      { vocabFile: 'marugoto/lens-marugoto-a1.js', vocabVar: 'vocabLensMarugotoA1', label: 'Marugoto A1' },
+      { vocabFile: 'marugoto/lens-marugoto-a2-1.js', vocabVar: 'vocabLensMarugotoA2_1', label: 'Marugoto A2-1' },
+      { vocabFile: 'marugoto/lens-marugoto-a2-2.js', vocabVar: 'vocabLensMarugotoA2_2', label: 'Marugoto A2-2' }
     ]
   },
   {
@@ -215,9 +215,9 @@ const BOOKS_REGISTRY = [
     icon: '🌈',
     tagline: 'Kurikulum terbuka resmi pemerintah Jepang untuk hidup mandiri dan berinteraksi sehari-hari.',
     volumes: [
-      { vocabFile: 'irodori/vocab-lens-ir-a1.js', vocabVar: 'vocabLensIrA1', label: 'Irodori A1' },
-      { vocabFile: 'irodori/vocab-lens-ir-a2-1.js', vocabVar: 'vocabLensIrA2_1', label: 'Irodori A2-1' },
-      { vocabFile: 'irodori/vocab-lens-ir-a2-2.js', vocabVar: 'vocabLensIrA2_2', label: 'Irodori A2-2' }
+      { vocabFile: 'irodori/vocab-lens-ir-a1.js', vocabVar: 'vocabLensIrodoriA1', label: 'Irodori A1' },
+      { vocabFile: 'irodori/vocab-lens-ir-a2-1.js', vocabVar: 'vocabLensIrodoriA2_1', label: 'Irodori A2-1' },
+      { vocabFile: 'irodori/vocab-lens-ir-a2-2.js', vocabVar: 'vocabLensIrodoriA2_2', label: 'Irodori A2-2' }
     ]
   }
 ];
@@ -249,23 +249,81 @@ for (const book of BOOKS_REGISTRY) {
     let grammarData = vol.grammarFile ? safeEvalVar(path.join(STAGED_BOOKS_DIR, vol.grammarFile), vol.grammarVar) : null;
     let vocabData = vol.vocabFile ? safeEvalVar(path.join(STAGED_BOOKS_DIR, vol.vocabFile), vol.vocabVar) : null;
 
+    const volLevel = vol.level || (vocabData && vocabData.meta && vocabData.meta.jlpt) || (grammarData && grammarData.meta && grammarData.meta.jlpt) || book.level;
+    const cleanVolLevel = (['n5', 'n4', 'n3', 'n2', 'n1'].includes(volLevel) ? volLevel : book.level);
+
     // Collect chapters or entries
-    const chaptersObj = (vocabData && (vocabData.chapters || vocabData.lessons || vocabData.topics || vocabData.units)) || {};
+    let chaptersObj = {};
+    if (vocabData) {
+      if (vocabData.chapters) chaptersObj = vocabData.chapters;
+      else if (vocabData.lessons) chaptersObj = vocabData.lessons;
+      else if (vocabData.topics) chaptersObj = vocabData.topics;
+      else if (vocabData.units) chaptersObj = vocabData.units;
+      else if (Array.isArray(vocabData.weeks)) {
+        vocabData.weeks.forEach((w, idx) => {
+          const vIds = [];
+          if (Array.isArray(w.days)) {
+            w.days.forEach(d => {
+              if (Array.isArray(d.vocab_ids)) vIds.push(...d.vocab_ids);
+            });
+          }
+          chaptersObj[String(w.week || idx + 1)] = {
+            topic: w.title,
+            vocab_ids: vIds
+          };
+        });
+      }
+    }
     const entriesList = (grammarData && grammarData.entries) || [];
 
-    const numUnits = Object.keys(chaptersObj).length || (entriesList.length > 0 ? Math.ceil(entriesList.length / 4) : 4);
+    const chapterKeys = Object.keys(chaptersObj);
+    const numUnits = chapterKeys.length || (entriesList.length > 0 ? Math.ceil(entriesList.length / 4) : 4);
 
-    for (let c = 1; c <= Math.min(numUnits, 12); c++) {
-      const chapterKey = String(c);
+    for (let idx = 0; idx < Math.min(numUnits, 12); idx++) {
+      const chapterKey = chapterKeys[idx] || String(idx + 1);
       const chInfo = chaptersObj[chapterKey] || {};
+      const c = chapterKey;
       const unitNumber = unitCounter++;
       const unitId = `unit-${trackId}-${String(unitNumber).padStart(2, '0')}`;
 
       const titleId = chInfo.topic_id || chInfo.topic || `${vol.label} Bab ${c}`;
       const titleJp = chInfo.topic || `${vol.label} 第${c}課`;
 
-      const gIds = chInfo.grammar_ids || (entriesList.slice((c - 1) * 3, c * 3).map(e => e.global_grammar_id || e.id)) || ['gn5-00001'];
-      const vIds = Array.isArray(chInfo.vocab_ids) ? chInfo.vocab_ids.slice(0, 4) : ['vg-n5-00990'];
+      // Resolve grammar array properly so no track compiles empty 0-length grammar
+      let gIds = (Array.isArray(chInfo.grammar_ids) && chInfo.grammar_ids.length > 0)
+        ? chInfo.grammar_ids
+        : (entriesList.length > 0
+          ? entriesList.slice(idx * 3, (idx + 1) * 3).map(e => e.global_grammar_id || e.id)
+          : null);
+      if (!gIds || gIds.length === 0) {
+        const defaultLevelGrammar = {
+          n5: ['gn5-00001', 'gn5-00002', 'gn5-00004'],
+          n4: ['gn4-00001', 'gn4-00002', 'gn4-00003'],
+          n3: ['gn3-00001', 'gn3-00002', 'gn3-00003'],
+          n2: ['gn2-00001', 'gn2-00002', 'gn2-00003'],
+          n1: ['gn1-00001', 'gn1-00002', 'gn1-00003'],
+        };
+        gIds = defaultLevelGrammar[cleanVolLevel] || ['gn5-00001'];
+      }
+
+      // Resolve vocab array properly, avoiding sentences and eliminating dummy fallback
+      let vIds = Array.isArray(chInfo.vocab_ids) && chInfo.vocab_ids.length > 0
+        ? chInfo.vocab_ids.filter(id => typeof id === 'string' && id.startsWith('vg-')).slice(0, 4)
+        : null;
+      if (!vIds || vIds.length === 0) {
+        const defaultLevelVocab = {
+          n5: ['vg-n5-00001', 'vg-n5-00002', 'vg-n5-00003', 'vg-n5-00004'],
+          n4: ['vg-n4-00001', 'vg-n4-00002', 'vg-n4-00003', 'vg-n4-00005'],
+          n3: ['vg-n3-00003', 'vg-n3-00004', 'vg-n3-00005', 'vg-n3-00007'],
+          n2: ['vg-n2-00051', 'vg-n2-00052', 'vg-n2-00053', 'vg-n2-00054'],
+          n1: ['vg-n1-00029', 'vg-n1-00030', 'vg-n1-00031', 'vg-n1-00032'],
+        };
+        vIds = defaultLevelVocab[cleanVolLevel] || ['vg-n5-00001'];
+      }
+
+      // Authentic communicative action statement (replacing robotic boilerplate)
+      const cleanTopic = String(titleId).replace(/^.*—\s*/, '').replace(/^Bab \d+:?\s*/, '').replace(/^第\d+課:?\s*/, '').trim();
+      const communicativeCanDo = `Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai ${cleanTopic || titleId}.`;
 
       const lessons = [
         {
@@ -274,19 +332,19 @@ for (const book of BOOKS_REGISTRY) {
           title_id: `${titleId} (Eksplorasi Materi & Pola)`,
           title_jp: `${titleJp}（解説）`,
           desc_id: `Mempelajari urutan materi pedagogis buku ${book.title} pada bab ini dengan penjelasan bahasa Indonesia orisinal.`,
-          can_do_statement: `Mampu memahami dan menerapkan tata bahasa ${book.title} bab ini dalam konteks nyata.`,
+          can_do_statement: communicativeCanDo,
           grammar_ids: gIds,
           vocab_ids: vIds,
           pedagogical_framework: {
             what: {
               summary: `Silabus resmi ${book.title} bab ${c}.`,
-              canDo: `Menguasai pola kalimat dan perbendaharaan kata bab ini.`,
+              canDo: communicativeCanDo,
               targetPatterns: gIds,
               coreVocabSample: vIds
             },
             sensei_context: {
               sceneIntro: `Kamu sedang mempelajari buku ${book.title}. Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.`,
-              dailyMission: `Menyelesaikan target pemahaman bab ${c} ${book.title}.`,
+              dailyMission: communicativeCanDo,
               whyOrder: `Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo.`
             },
             cultural_notes: {
@@ -327,13 +385,13 @@ for (const book of BOOKS_REGISTRY) {
       units.push({
         unit_number: unitNumber,
         id: unitId,
-        level: book.level,
+        level: cleanVolLevel,
         pt_stage: (unitNumber % 6) + 1,
         title_id: `${vol.label}: ${titleId}`,
         title_jp: titleJp,
         theme: vol.label,
         icon: book.icon,
-        can_do_summary: `Memahami silabus ${vol.label} Bab ${c} secara komprehensif.`,
+        can_do_summary: communicativeCanDo,
         grammar_ids: gIds,
         vocab_ids: vIds,
         lessons

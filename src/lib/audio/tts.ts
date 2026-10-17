@@ -1,76 +1,64 @@
 // ══════════════════════════════════════════════════════════════════
-//  tts.ts — Native Japanese Speech Synthesis (Web Speech API)
-//  Plays pronunciation instantly offline without any external API calls
+//  tts.ts — Native Japanese Speech Synthesis Facade
+//  Delegates to unified speechEngine.ts with Deadlock Watchdog Protection
 // ══════════════════════════════════════════════════════════════════
 
-let jaVoice: SpeechSynthesisVoice | null = null;
+import {
+  speakJapanese as unifiedSpeakJapanese,
+  getJaVoice as unifiedGetJaVoice,
+  hasNativeJapaneseVoice as unifiedHasNativeJapaneseVoice,
+  stopJapaneseSpeech as unifiedStopJapaneseSpeech,
+  isSpeechSynthesisSupported as unifiedIsSpeechSynthesisSupported,
+} from './speechEngine';
+import { syntheticAudio } from './syntheticAudioFallback';
 
-function getJaVoice(): SpeechSynthesisVoice | null {
-  if (typeof window === 'undefined' || !('speechSynthesis' in window)) return null;
-  if (jaVoice) return jaVoice;
+export const getJaVoice = unifiedGetJaVoice;
+export const hasNativeJapaneseVoice = unifiedHasNativeJapaneseVoice;
+export const stopJapaneseSpeech = unifiedStopJapaneseSpeech;
+export const isSpeechSynthesisSupported = unifiedIsSpeechSynthesisSupported;
+export { syntheticAudio };
 
-  const voices = window.speechSynthesis.getVoices();
-  jaVoice = voices.find((v) => v.lang === 'ja-JP' || v.lang.startsWith('ja')) || null;
-  return jaVoice;
-}
+// 104 Kana to Audio Clip Name Mapping for /audio/kana/ clips
+export const KANA_TO_ROMAJI: Record<string, string> = {
+  // Hiragana
+  'あ': 'a', 'い': 'i', 'う': 'u', 'え': 'e', 'お': 'o',
+  'か': 'ka', 'き': 'ki', 'く': 'ku', 'け': 'ke', 'こ': 'ko',
+  'さ': 'sa', 'し': 'shi', 'す': 'su', 'せ': 'se', 'そ': 'so',
+  'た': 'ta', 'ち': 'chi', 'つ': 'tsu', 'て': 'te', 'と': 'to',
+  'な': 'na', 'に': 'ni', 'ぬ': 'nu', 'ね': 'ne', 'の': 'no',
+  'は': 'ha', 'ひ': 'hi', 'ふ': 'fu', 'へ': 'he', 'ほ': 'ho',
+  'ま': 'ma', 'み': 'mi', 'む': 'mu', 'め': 'me', 'も': 'mo',
+  'や': 'ya', 'ゆ': 'yu', 'よ': 'yo',
+  'ら': 'ra', 'り': 'ri', 'る': 'ru', 'れ': 're', 'ろ': 'ro',
+  'わ': 'wa', 'を': 'wo', 'ん': 'n',
+  'が': 'ga', 'ぎ': 'gi', 'ぐ': 'gu', 'げ': 'ge', 'ご': 'go',
+  'ざ': 'za', 'じ': 'ji', 'ず': 'zu', 'ぜ': 'ze', 'ぞ': 'zo',
+  'だ': 'da', 'ぢ': 'dji', 'づ': 'dzu', 'で': 'de', 'ど': 'do',
+  'ば': 'ba', 'び': 'bi', 'ぶ': 'bu', 'べ': 'be', 'ぼ': 'bo',
+  'ぱ': 'pa', 'ぴ': 'pi', 'ぷ': 'pu', 'ぺ': 'pe', 'ぽ': 'po',
 
-if (typeof window !== 'undefined' && 'speechSynthesis' in window) {
-  window.speechSynthesis.onvoiceschanged = () => {
-    jaVoice = null;
-    getJaVoice();
-  };
-}
+  // Katakana
+  'ア': 'a', 'イ': 'i', 'ウ': 'u', 'エ': 'e', 'オ': 'o',
+  'カ': 'ka', 'キ': 'ki', 'ク': 'ku', 'ケ': 'ke', 'コ': 'ko',
+  'サ': 'sa', 'シ': 'shi', 'ス': 'su', 'セ': 'se', 'ソ': 'so',
+  'タ': 'ta', 'チ': 'chi', 'ツ': 'tsu', 'テ': 'te', 'ト': 'to',
+  'ナ': 'na', 'ニ': 'ni', 'ヌ': 'nu', 'ネ': 'ne', 'ノ': 'no',
+  'ハ': 'ha', 'ヒ': 'hi', 'フ': 'fu', 'ヘ': 'he', 'ホ': 'ho',
+  'マ': 'ma', 'ミ': 'mi', 'ム': 'mu', 'メ': 'me', 'モ': 'mo',
+  'ヤ': 'ya', 'ユ': 'yu', 'ヨ': 'yo',
+  'ラ': 'ra', 'リ': 'ri', 'ル': 'ru', 'レ': 're', 'ロ': 'ro',
+  'ワ': 'wa', 'ヲ': 'wo', 'ン': 'n',
+  'ガ': 'ga', 'ギ': 'gi', 'グ': 'gu', 'ゲ': 'ge', 'ゴ': 'go',
+  'ザ': 'za', 'ジ': 'ji', 'ズ': 'zu', 'ゼ': 'ze', 'ゾ': 'zo',
+  'ダ': 'da', 'ヂ': 'dji', 'ヅ': 'dzu', 'デ': 'de', 'ド': 'do',
+  'バ': 'ba', 'ビ': 'bi', 'ブ': 'bu', 'ベ': 'be', 'ボ': 'bo',
+  'パ': 'pa', 'ピ': 'pi', 'プ': 'pu', 'ペ': 'pe', 'ポ': 'po',
+};
 
 /**
- * Pronounce Japanese text
+ * Legacy tts facade: delegating directly to unified speechEngine
+ * Plays local /audio/kana/ clips or native speech synthesis with syntheticAudio fallback
  */
 export function speakJapanese(text: string, customRate?: number): void {
-  if (typeof window === 'undefined' || !('speechSynthesis' in window)) {
-    console.warn('[tts] Web Speech API not supported on this device.');
-    return;
-  }
-
-  // Cancel any ongoing utterance
-  window.speechSynthesis.cancel();
-
-  // Strip HTML tags and parenthetical/bracketed furigana or notes
-  let cleanText = text.replace(/<[^>]*>/g, '').trim();
-  const stripped = cleanText
-    .replace(/【[^】]*】/g, '')
-    .replace(/〔[^〕]*〕/g, '')
-    .replace(/（[^）]*）/g, '')
-    .replace(/\([^)]*\)/g, '')
-    .replace(/\[[^\]]*\]/g, '')
-    .trim();
-
-  // If stripped isn't empty, use stripped; otherwise remove bare brackets
-  if (stripped) {
-    cleanText = stripped;
-  } else {
-    cleanText = cleanText.replace(/[【】〔〕（）\(\)\[\]]/g, '').trim();
-  }
-
-  if (!cleanText) return;
-
-  let effectiveRate = customRate;
-  if (!effectiveRate) {
-    try {
-      const stored = localStorage.getItem('nn_speech_rate');
-      effectiveRate = stored ? parseFloat(stored) : 0.9;
-    } catch {
-      effectiveRate = 0.9;
-    }
-  }
-
-  const utterance = new SpeechSynthesisUtterance(cleanText);
-  utterance.lang = 'ja-JP';
-  utterance.rate = effectiveRate; // default 0.9 for pedagogical clarity
-  utterance.pitch = 1.0;
-
-  const voice = getJaVoice();
-  if (voice) {
-    utterance.voice = voice;
-  }
-
-  window.speechSynthesis.speak(utterance);
+  unifiedSpeakJapanese(text, customRate);
 }

@@ -27,7 +27,7 @@ export const QuizExitGuardModal: React.FC<QuizExitGuardModalProps> = ({
     >
       <div
         onClick={(e) => e.stopPropagation()}
-        className="w-full max-w-sm bg-surface border-t-2 sm:border-2 border-amber-500/40 rounded-t-3xl sm:rounded-3xl p-6 sm:p-7 space-y-5 shadow-2xl relative animate-in slide-in-from-bottom-6 sm:zoom-in-95 duration-200 text-center"
+        className="w-full max-w-sm bg-surface border-t-2 sm:border-2 border-amber-500/40 rounded-t-3xl sm:rounded-3xl p-6 sm:p-7 space-y-5 shadow-2xl relative animate-in slide-in-from-bottom-6 sm:zoom-in-95 duration-200 text-center max-h-[90dvh] overflow-y-auto"
       >
         <div className="w-12 h-1.5 rounded-full bg-accent/25 mx-auto -mt-2 mb-2 sm:hidden shrink-0" />
         <div className="w-12 h-12 rounded-2xl bg-amber-500/20 border border-amber-500/35 flex items-center justify-center text-accent-hot mx-auto shadow-sm">
@@ -46,14 +46,14 @@ export const QuizExitGuardModal: React.FC<QuizExitGuardModalProps> = ({
         <div className="grid grid-cols-2 gap-3 pt-2">
           <button
             onClick={onStay}
-            className="px-4 py-2.5 rounded-xl bg-accent hover:bg-accent-hot text-bg font-bold text-xs transition-all shadow-glow flex items-center justify-center gap-1.5"
+            className="min-h-[44px] px-4 py-2.5 rounded-xl bg-accent hover:bg-accent-hot text-bg font-bold text-xs transition-all shadow-glow flex items-center justify-center gap-1.5 active:scale-95"
           >
             <Check className="w-4 h-4" />
             <span>Lanjutkan</span>
           </button>
           <button
             onClick={onConfirmExit}
-            className="px-4 py-2.5 rounded-xl bg-surface-2 hover:bg-red-950/40 border border-red-500/30 text-red-300 font-bold text-xs transition-all flex items-center justify-center gap-1.5"
+            className="min-h-[44px] px-4 py-2.5 rounded-xl bg-surface-2 hover:bg-red-950/40 border border-red-500/30 text-red-300 font-bold text-xs transition-all flex items-center justify-center gap-1.5 active:scale-95"
           >
             <ArrowLeft className="w-4 h-4" />
             <span>Keluar Sesi</span>

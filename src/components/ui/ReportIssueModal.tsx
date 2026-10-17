@@ -7,6 +7,8 @@ import React, { useState } from 'react';
 import { X, Flag, AlertTriangle, Send, CheckCircle2, Sparkles } from 'lucide-react';
 import { useReportStore, ReportCategory, ContentReport } from '../../lib/report/reportStore';
 import { useAppStore } from '../../store/useAppStore';
+import { scrubSensitiveData } from '../../lib/telemetry/errorReporter';
+import { useFocusTrap } from '../../hooks/useFocusTrap';
 
 export interface ReportItemContext {
   itemId: string;
@@ -65,6 +67,7 @@ export const ReportIssueModal: React.FC<ReportIssueModalProps> = ({
   onClose,
   context,
 }) => {
+  const containerRef = useFocusTrap<HTMLDivElement>(isOpen, onClose);
   const { submitReport, isSubmitting } = useReportStore();
   const { showToast } = useAppStore();
 
@@ -87,8 +90,8 @@ export const ReportIssueModal: React.FC<ReportIssueModalProps> = ({
       originalJapanese: context.originalJapanese,
       originalTranslation: context.originalTranslation,
       category,
-      description: description.trim(),
-      suggestedCorrection: suggestedCorrection.trim() || undefined,
+      description: scrubSensitiveData(description.trim()),
+      suggestedCorrection: suggestedCorrection.trim() ? scrubSensitiveData(suggestedCorrection.trim()) : undefined,
     });
 
     showToast(res.message, '🚩');
@@ -98,8 +101,15 @@ export const ReportIssueModal: React.FC<ReportIssueModalProps> = ({
   };
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/75 backdrop-blur-sm animate-in fade-in duration-200">
+    <div
+      onClick={onClose}
+      className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/75 backdrop-blur-sm animate-in fade-in duration-200"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Laporkan Masalah Materi"
+    >
       <div
+        ref={containerRef}
         className="w-full max-w-lg bg-surface border border-accent/25 rounded-3xl p-6 sm:p-7 shadow-2xl relative space-y-5 max-h-[90vh] overflow-y-auto"
         onClick={(e) => e.stopPropagation()}
       >
@@ -115,10 +125,11 @@ export const ReportIssueModal: React.FC<ReportIssueModalProps> = ({
             </div>
           </div>
           <button
+            type="button"
             onClick={onClose}
-            className="p-1.5 rounded-xl bg-surface-2 hover:bg-surface-3 text-appText-muted hover:text-appText-bright transition-colors"
+            className="w-11 h-11 min-w-[44px] min-h-[44px] rounded-xl bg-surface-2 hover:bg-surface-3 text-appText-muted hover:text-appText-bright transition-all flex items-center justify-center active:scale-95"
             title="Tutup"
-            aria-label="Tutup modal"
+            aria-label="Tutup laporan masalah"
           >
             <X className="w-5 h-5" />
           </button>
@@ -130,7 +141,7 @@ export const ReportIssueModal: React.FC<ReportIssueModalProps> = ({
             <span>Bagian yang Dilaporkan</span>
             <span className="font-mono opacity-60">({context.itemType})</span>
           </div>
-          <div className="text-base sm:text-lg font-jp font-bold text-appText-bright">
+          <div className="text-base sm:text-lg font-jp font-bold text-appText-bright" lang="ja">
             {context.originalJapanese}
           </div>
           {context.originalTranslation && (

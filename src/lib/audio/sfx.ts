@@ -29,6 +29,31 @@ export function isSfxEnabled(): boolean {
 }
 
 /**
+ * Schedule disconnect on gain and oscillator nodes after sound finishes to eliminate Web Audio leaks
+ */
+function scheduleNodeCleanup(gain: GainNode, oscillators: OscillatorNode[], stopTime: number, ctx: AudioContext) {
+  let cleaned = false;
+  const doCleanup = () => {
+    if (cleaned) return;
+    cleaned = true;
+    try {
+      oscillators.forEach((o) => {
+        try { o.disconnect(); } catch {}
+      });
+      gain.disconnect();
+    } catch {}
+  };
+
+  const lastOsc = oscillators[oscillators.length - 1];
+  if (lastOsc) {
+    lastOsc.onended = doCleanup;
+  }
+
+  const delayMs = Math.max(10, Math.ceil((stopTime - ctx.currentTime) * 1000) + 60);
+  setTimeout(doCleanup, delayMs);
+}
+
+/**
  * Play pleasant cheerful chime when answering correctly or watering
  */
 export function playSuccessSfx() {
@@ -62,6 +87,7 @@ export function playSuccessSfx() {
   osc2.start(now);
   osc1.stop(now + 0.36);
   osc2.stop(now + 0.36);
+  scheduleNodeCleanup(gain, [osc1, osc2], now + 0.36, ctx);
 }
 
 /**
@@ -88,6 +114,7 @@ export function playErrorSfx() {
 
   osc.start(now);
   osc.stop(now + 0.26);
+  scheduleNodeCleanup(gain, [osc], now + 0.26, ctx);
 }
 
 /**
@@ -114,6 +141,7 @@ export function playWaterSfx() {
 
   osc.start(now);
   osc.stop(now + 0.23);
+  scheduleNodeCleanup(gain, [osc], now + 0.23, ctx);
 }
 
 /**
@@ -140,6 +168,7 @@ export function playFlipSfx() {
 
   osc.start(now);
   osc.stop(now + 0.08);
+  scheduleNodeCleanup(gain, [osc], now + 0.08, ctx);
 }
 
 /**
@@ -167,6 +196,7 @@ export function playFanfareSfx() {
 
     osc.start(noteTime);
     osc.stop(noteTime + 0.3);
+    scheduleNodeCleanup(gain, [osc], noteTime + 0.3, ctx);
   });
 }
 
@@ -194,4 +224,5 @@ export function playBrushSfx() {
 
   osc.start(now);
   osc.stop(now + 0.16);
+  scheduleNodeCleanup(gain, [osc], now + 0.16, ctx);
 }

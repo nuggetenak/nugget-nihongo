@@ -6,7 +6,7 @@
     "level": "n5",
     "publisher": "3A Corporation",
     "version": "1.2.0",
-    "total_units": 8,
+    "total_units": 24,
     "authoritative": true
   },
   "units": [
@@ -15,39 +15,69 @@
       "id": "unit-curriculum-book-minna-01",
       "level": "n5",
       "pt_stage": 2,
-      "title_id": "Minna I: Minna I Bab 1",
-      "title_jp": "Minna I 第1課",
+      "title_id": "Minna I: わたしは〜です — Perkenalan dan Profesi",
+      "title_jp": "わたしは〜です — Perkenalan dan Profesi",
       "theme": "Minna I",
       "icon": "📙",
-      "can_do_summary": "Memahami silabus Minna I Bab 1 secara komprehensif.",
-      "grammar_ids": [],
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Perkenalan dan Profesi.",
+      "grammar_ids": [
+        "gn5-00001",
+        "gn5-00002",
+        "gn5-00018",
+        "gn5-00016",
+        "gn5-00017",
+        "gn5-00005"
+      ],
       "vocab_ids": [
-        "vg-n5-00990"
+        "vg-n5-00093",
+        "vg-n5-00417",
+        "vg-n5-00414",
+        "vg-n5-00418"
       ],
       "lessons": [
         {
           "id": "les-curriculum-book-minna-u01-01",
           "lesson_number": 1,
-          "title_id": "Minna I Bab 1 (Eksplorasi Materi & Pola)",
-          "title_jp": "Minna I 第1課（解説）",
+          "title_id": "わたしは〜です — Perkenalan dan Profesi (Eksplorasi Materi & Pola)",
+          "title_jp": "わたしは〜です — Perkenalan dan Profesi（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku Minna no Nihongo I & II pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa Minna no Nihongo I & II bab ini dalam konteks nyata.",
-          "grammar_ids": [],
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Perkenalan dan Profesi.",
+          "grammar_ids": [
+            "gn5-00001",
+            "gn5-00002",
+            "gn5-00018",
+            "gn5-00016",
+            "gn5-00017",
+            "gn5-00005"
+          ],
           "vocab_ids": [
-            "vg-n5-00990"
+            "vg-n5-00093",
+            "vg-n5-00417",
+            "vg-n5-00414",
+            "vg-n5-00418"
           ],
           "pedagogical_framework": {
             "what": {
               "summary": "Silabus resmi Minna no Nihongo I & II bab 1.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
-              "targetPatterns": [],
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Perkenalan dan Profesi.",
+              "targetPatterns": [
+                "gn5-00001",
+                "gn5-00002",
+                "gn5-00018",
+                "gn5-00016",
+                "gn5-00017",
+                "gn5-00005"
+              ],
               "coreVocabSample": [
-                "vg-n5-00990"
+                "vg-n5-00093",
+                "vg-n5-00417",
+                "vg-n5-00414",
+                "vg-n5-00418"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku Minna no Nihongo I & II. Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 1 Minna no Nihongo I & II.",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Perkenalan dan Profesi.",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -61,17 +91,17 @@
               "id": "d1",
               "speaker": "Sensei",
               "speakerRole": "Tutor Belajar",
-              "jp": "Minna I 第1課の勉強を始めましょう！",
+              "jp": "わたしは〜です — Perkenalan dan Profesiの勉強を始めましょう！",
               "furigana": "べんきょうをはじめましょう！",
               "romaji": "Benkyou wo hajimemashou!",
-              "idText": "Mari kita mulai belajar Minna I Bab 1!"
+              "idText": "Mari kita mulai belajar わたしは〜です — Perkenalan dan Profesi!"
             }
           ],
           "drills": [
             {
               "id": "dr1",
               "type": "multiple-choice",
-              "prompt": "Apa fokus utama pada materi Minna I Bab 1 di buku Minna no Nihongo I & II?",
+              "prompt": "Apa fokus utama pada materi わたしは〜です — Perkenalan dan Profesi di buku Minna no Nihongo I & II?",
               "options": [
                 "Menguasai pola kalimat bab ini dengan pemahaman alami",
                 "Menghafal tanpa memahami konteks",
@@ -90,39 +120,60 @@
       "id": "unit-curriculum-book-minna-02",
       "level": "n5",
       "pt_stage": 3,
-      "title_id": "Minna I: Minna I Bab 2",
-      "title_jp": "Minna I 第2課",
+      "title_id": "Minna I: これは〜です — Menanyakan Benda",
+      "title_jp": "これは〜です — Menanyakan Benda",
       "theme": "Minna I",
       "icon": "📙",
-      "can_do_summary": "Memahami silabus Minna I Bab 2 secara komprehensif.",
-      "grammar_ids": [],
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Menanyakan Benda.",
+      "grammar_ids": [
+        "gn5-00017",
+        "gn5-00016",
+        "gn5-00018"
+      ],
       "vocab_ids": [
-        "vg-n5-00990"
+        "vg-n5-00108",
+        "vg-n5-00526",
+        "vg-n5-00486",
+        "vg-n5-00406"
       ],
       "lessons": [
         {
           "id": "les-curriculum-book-minna-u02-01",
           "lesson_number": 1,
-          "title_id": "Minna I Bab 2 (Eksplorasi Materi & Pola)",
-          "title_jp": "Minna I 第2課（解説）",
+          "title_id": "これは〜です — Menanyakan Benda (Eksplorasi Materi & Pola)",
+          "title_jp": "これは〜です — Menanyakan Benda（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku Minna no Nihongo I & II pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa Minna no Nihongo I & II bab ini dalam konteks nyata.",
-          "grammar_ids": [],
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Menanyakan Benda.",
+          "grammar_ids": [
+            "gn5-00017",
+            "gn5-00016",
+            "gn5-00018"
+          ],
           "vocab_ids": [
-            "vg-n5-00990"
+            "vg-n5-00108",
+            "vg-n5-00526",
+            "vg-n5-00486",
+            "vg-n5-00406"
           ],
           "pedagogical_framework": {
             "what": {
               "summary": "Silabus resmi Minna no Nihongo I & II bab 2.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
-              "targetPatterns": [],
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Menanyakan Benda.",
+              "targetPatterns": [
+                "gn5-00017",
+                "gn5-00016",
+                "gn5-00018"
+              ],
               "coreVocabSample": [
-                "vg-n5-00990"
+                "vg-n5-00108",
+                "vg-n5-00526",
+                "vg-n5-00486",
+                "vg-n5-00406"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku Minna no Nihongo I & II. Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 2 Minna no Nihongo I & II.",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Menanyakan Benda.",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -136,17 +187,17 @@
               "id": "d1",
               "speaker": "Sensei",
               "speakerRole": "Tutor Belajar",
-              "jp": "Minna I 第2課の勉強を始めましょう！",
+              "jp": "これは〜です — Menanyakan Bendaの勉強を始めましょう！",
               "furigana": "べんきょうをはじめましょう！",
               "romaji": "Benkyou wo hajimemashou!",
-              "idText": "Mari kita mulai belajar Minna I Bab 2!"
+              "idText": "Mari kita mulai belajar これは〜です — Menanyakan Benda!"
             }
           ],
           "drills": [
             {
               "id": "dr1",
               "type": "multiple-choice",
-              "prompt": "Apa fokus utama pada materi Minna I Bab 2 di buku Minna no Nihongo I & II?",
+              "prompt": "Apa fokus utama pada materi これは〜です — Menanyakan Benda di buku Minna no Nihongo I & II?",
               "options": [
                 "Menguasai pola kalimat bab ini dengan pemahaman alami",
                 "Menghafal tanpa memahami konteks",
@@ -165,39 +216,60 @@
       "id": "unit-curriculum-book-minna-03",
       "level": "n5",
       "pt_stage": 4,
-      "title_id": "Minna I: Minna I Bab 3",
-      "title_jp": "Minna I 第3課",
+      "title_id": "Minna I: ここは〜です — Menanyakan Tempat",
+      "title_jp": "ここは〜です — Menanyakan Tempat",
       "theme": "Minna I",
       "icon": "📙",
-      "can_do_summary": "Memahami silabus Minna I Bab 3 secara komprehensif.",
-      "grammar_ids": [],
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Menanyakan Tempat.",
+      "grammar_ids": [
+        "gn5-00009",
+        "gn5-00011",
+        "gn5-00062"
+      ],
       "vocab_ids": [
-        "vg-n5-00990"
+        "vg-n5-00088",
+        "vg-n5-00089",
+        "vg-n5-00524",
+        "vg-n5-00086"
       ],
       "lessons": [
         {
           "id": "les-curriculum-book-minna-u03-01",
           "lesson_number": 1,
-          "title_id": "Minna I Bab 3 (Eksplorasi Materi & Pola)",
-          "title_jp": "Minna I 第3課（解説）",
+          "title_id": "ここは〜です — Menanyakan Tempat (Eksplorasi Materi & Pola)",
+          "title_jp": "ここは〜です — Menanyakan Tempat（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku Minna no Nihongo I & II pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa Minna no Nihongo I & II bab ini dalam konteks nyata.",
-          "grammar_ids": [],
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Menanyakan Tempat.",
+          "grammar_ids": [
+            "gn5-00009",
+            "gn5-00011",
+            "gn5-00062"
+          ],
           "vocab_ids": [
-            "vg-n5-00990"
+            "vg-n5-00088",
+            "vg-n5-00089",
+            "vg-n5-00524",
+            "vg-n5-00086"
           ],
           "pedagogical_framework": {
             "what": {
               "summary": "Silabus resmi Minna no Nihongo I & II bab 3.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
-              "targetPatterns": [],
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Menanyakan Tempat.",
+              "targetPatterns": [
+                "gn5-00009",
+                "gn5-00011",
+                "gn5-00062"
+              ],
               "coreVocabSample": [
-                "vg-n5-00990"
+                "vg-n5-00088",
+                "vg-n5-00089",
+                "vg-n5-00524",
+                "vg-n5-00086"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku Minna no Nihongo I & II. Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 3 Minna no Nihongo I & II.",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Menanyakan Tempat.",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -211,17 +283,17 @@
               "id": "d1",
               "speaker": "Sensei",
               "speakerRole": "Tutor Belajar",
-              "jp": "Minna I 第3課の勉強を始めましょう！",
+              "jp": "ここは〜です — Menanyakan Tempatの勉強を始めましょう！",
               "furigana": "べんきょうをはじめましょう！",
               "romaji": "Benkyou wo hajimemashou!",
-              "idText": "Mari kita mulai belajar Minna I Bab 3!"
+              "idText": "Mari kita mulai belajar ここは〜です — Menanyakan Tempat!"
             }
           ],
           "drills": [
             {
               "id": "dr1",
               "type": "multiple-choice",
-              "prompt": "Apa fokus utama pada materi Minna I Bab 3 di buku Minna no Nihongo I & II?",
+              "prompt": "Apa fokus utama pada materi ここは〜です — Menanyakan Tempat di buku Minna no Nihongo I & II?",
               "options": [
                 "Menguasai pola kalimat bab ini dengan pemahaman alami",
                 "Menghafal tanpa memahami konteks",
@@ -240,39 +312,57 @@
       "id": "unit-curriculum-book-minna-04",
       "level": "n5",
       "pt_stage": 5,
-      "title_id": "Minna I: Minna I Bab 4",
-      "title_jp": "Minna I 第4課",
+      "title_id": "Minna I: 今〜時です — Jam dan Waktu",
+      "title_jp": "今〜時です — Jam dan Waktu",
       "theme": "Minna I",
       "icon": "📙",
-      "can_do_summary": "Memahami silabus Minna I Bab 4 secara komprehensif.",
-      "grammar_ids": [],
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Jam dan Waktu.",
+      "grammar_ids": [
+        "gn5-00010",
+        "gn5-00020"
+      ],
       "vocab_ids": [
-        "vg-n5-00990"
+        "vg-n5-00094",
+        "vg-n5-00466",
+        "vg-n5-00459",
+        "vg-n5-00460"
       ],
       "lessons": [
         {
           "id": "les-curriculum-book-minna-u04-01",
           "lesson_number": 1,
-          "title_id": "Minna I Bab 4 (Eksplorasi Materi & Pola)",
-          "title_jp": "Minna I 第4課（解説）",
+          "title_id": "今〜時です — Jam dan Waktu (Eksplorasi Materi & Pola)",
+          "title_jp": "今〜時です — Jam dan Waktu（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku Minna no Nihongo I & II pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa Minna no Nihongo I & II bab ini dalam konteks nyata.",
-          "grammar_ids": [],
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Jam dan Waktu.",
+          "grammar_ids": [
+            "gn5-00010",
+            "gn5-00020"
+          ],
           "vocab_ids": [
-            "vg-n5-00990"
+            "vg-n5-00094",
+            "vg-n5-00466",
+            "vg-n5-00459",
+            "vg-n5-00460"
           ],
           "pedagogical_framework": {
             "what": {
               "summary": "Silabus resmi Minna no Nihongo I & II bab 4.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
-              "targetPatterns": [],
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Jam dan Waktu.",
+              "targetPatterns": [
+                "gn5-00010",
+                "gn5-00020"
+              ],
               "coreVocabSample": [
-                "vg-n5-00990"
+                "vg-n5-00094",
+                "vg-n5-00466",
+                "vg-n5-00459",
+                "vg-n5-00460"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku Minna no Nihongo I & II. Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 4 Minna no Nihongo I & II.",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Jam dan Waktu.",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -286,17 +376,17 @@
               "id": "d1",
               "speaker": "Sensei",
               "speakerRole": "Tutor Belajar",
-              "jp": "Minna I 第4課の勉強を始めましょう！",
+              "jp": "今〜時です — Jam dan Waktuの勉強を始めましょう！",
               "furigana": "べんきょうをはじめましょう！",
               "romaji": "Benkyou wo hajimemashou!",
-              "idText": "Mari kita mulai belajar Minna I Bab 4!"
+              "idText": "Mari kita mulai belajar 今〜時です — Jam dan Waktu!"
             }
           ],
           "drills": [
             {
               "id": "dr1",
               "type": "multiple-choice",
-              "prompt": "Apa fokus utama pada materi Minna I Bab 4 di buku Minna no Nihongo I & II?",
+              "prompt": "Apa fokus utama pada materi 今〜時です — Jam dan Waktu di buku Minna no Nihongo I & II?",
               "options": [
                 "Menguasai pola kalimat bab ini dengan pemahaman alami",
                 "Menghafal tanpa memahami konteks",
@@ -315,39 +405,63 @@
       "id": "unit-curriculum-book-minna-05",
       "level": "n5",
       "pt_stage": 6,
-      "title_id": "Minna II: Minna II Bab 1",
-      "title_jp": "Minna II 第1課",
-      "theme": "Minna II",
+      "title_id": "Minna I: 行きます・来ます・帰ります — Pergerakan",
+      "title_jp": "行きます・来ます・帰ります — Pergerakan",
+      "theme": "Minna I",
       "icon": "📙",
-      "can_do_summary": "Memahami silabus Minna II Bab 1 secara komprehensif.",
-      "grammar_ids": [],
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Pergerakan.",
+      "grammar_ids": [
+        "gn5-00013",
+        "gn5-00012",
+        "gn5-00015",
+        "gn5-00027"
+      ],
       "vocab_ids": [
-        "vg-n5-00990"
+        "vg-n5-00009",
+        "vg-n5-00010",
+        "vg-n5-00011",
+        "vg-n5-00027"
       ],
       "lessons": [
         {
           "id": "les-curriculum-book-minna-u05-01",
           "lesson_number": 1,
-          "title_id": "Minna II Bab 1 (Eksplorasi Materi & Pola)",
-          "title_jp": "Minna II 第1課（解説）",
+          "title_id": "行きます・来ます・帰ります — Pergerakan (Eksplorasi Materi & Pola)",
+          "title_jp": "行きます・来ます・帰ります — Pergerakan（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku Minna no Nihongo I & II pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa Minna no Nihongo I & II bab ini dalam konteks nyata.",
-          "grammar_ids": [],
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Pergerakan.",
+          "grammar_ids": [
+            "gn5-00013",
+            "gn5-00012",
+            "gn5-00015",
+            "gn5-00027"
+          ],
           "vocab_ids": [
-            "vg-n5-00990"
+            "vg-n5-00009",
+            "vg-n5-00010",
+            "vg-n5-00011",
+            "vg-n5-00027"
           ],
           "pedagogical_framework": {
             "what": {
-              "summary": "Silabus resmi Minna no Nihongo I & II bab 1.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
-              "targetPatterns": [],
+              "summary": "Silabus resmi Minna no Nihongo I & II bab 5.",
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Pergerakan.",
+              "targetPatterns": [
+                "gn5-00013",
+                "gn5-00012",
+                "gn5-00015",
+                "gn5-00027"
+              ],
               "coreVocabSample": [
-                "vg-n5-00990"
+                "vg-n5-00009",
+                "vg-n5-00010",
+                "vg-n5-00011",
+                "vg-n5-00027"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku Minna no Nihongo I & II. Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 1 Minna no Nihongo I & II.",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Pergerakan.",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -361,17 +475,17 @@
               "id": "d1",
               "speaker": "Sensei",
               "speakerRole": "Tutor Belajar",
-              "jp": "Minna II 第1課の勉強を始めましょう！",
+              "jp": "行きます・来ます・帰ります — Pergerakanの勉強を始めましょう！",
               "furigana": "べんきょうをはじめましょう！",
               "romaji": "Benkyou wo hajimemashou!",
-              "idText": "Mari kita mulai belajar Minna II Bab 1!"
+              "idText": "Mari kita mulai belajar 行きます・来ます・帰ります — Pergerakan!"
             }
           ],
           "drills": [
             {
               "id": "dr1",
               "type": "multiple-choice",
-              "prompt": "Apa fokus utama pada materi Minna II Bab 1 di buku Minna no Nihongo I & II?",
+              "prompt": "Apa fokus utama pada materi 行きます・来ます・帰ります — Pergerakan di buku Minna no Nihongo I & II?",
               "options": [
                 "Menguasai pola kalimat bab ini dengan pemahaman alami",
                 "Menghafal tanpa memahami konteks",
@@ -390,39 +504,66 @@
       "id": "unit-curriculum-book-minna-06",
       "level": "n5",
       "pt_stage": 1,
-      "title_id": "Minna II: Minna II Bab 2",
-      "title_jp": "Minna II 第2課",
-      "theme": "Minna II",
+      "title_id": "Minna I: 食べます・飲みます — Kegiatan Sehari-hari",
+      "title_jp": "食べます・飲みます — Kegiatan Sehari-hari",
+      "theme": "Minna I",
       "icon": "📙",
-      "can_do_summary": "Memahami silabus Minna II Bab 2 secara komprehensif.",
-      "grammar_ids": [],
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Kegiatan Sehari-hari.",
+      "grammar_ids": [
+        "gn5-00007",
+        "gn5-00011",
+        "gn5-00089",
+        "gn5-00087",
+        "gn5-00016"
+      ],
       "vocab_ids": [
-        "vg-n5-00990"
+        "vg-n5-00023",
+        "vg-n5-00024",
+        "vg-n5-00032",
+        "vg-n5-00013"
       ],
       "lessons": [
         {
           "id": "les-curriculum-book-minna-u06-01",
           "lesson_number": 1,
-          "title_id": "Minna II Bab 2 (Eksplorasi Materi & Pola)",
-          "title_jp": "Minna II 第2課（解説）",
+          "title_id": "食べます・飲みます — Kegiatan Sehari-hari (Eksplorasi Materi & Pola)",
+          "title_jp": "食べます・飲みます — Kegiatan Sehari-hari（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku Minna no Nihongo I & II pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa Minna no Nihongo I & II bab ini dalam konteks nyata.",
-          "grammar_ids": [],
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Kegiatan Sehari-hari.",
+          "grammar_ids": [
+            "gn5-00007",
+            "gn5-00011",
+            "gn5-00089",
+            "gn5-00087",
+            "gn5-00016"
+          ],
           "vocab_ids": [
-            "vg-n5-00990"
+            "vg-n5-00023",
+            "vg-n5-00024",
+            "vg-n5-00032",
+            "vg-n5-00013"
           ],
           "pedagogical_framework": {
             "what": {
-              "summary": "Silabus resmi Minna no Nihongo I & II bab 2.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
-              "targetPatterns": [],
+              "summary": "Silabus resmi Minna no Nihongo I & II bab 6.",
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Kegiatan Sehari-hari.",
+              "targetPatterns": [
+                "gn5-00007",
+                "gn5-00011",
+                "gn5-00089",
+                "gn5-00087",
+                "gn5-00016"
+              ],
               "coreVocabSample": [
-                "vg-n5-00990"
+                "vg-n5-00023",
+                "vg-n5-00024",
+                "vg-n5-00032",
+                "vg-n5-00013"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku Minna no Nihongo I & II. Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 2 Minna no Nihongo I & II.",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Kegiatan Sehari-hari.",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -436,17 +577,17 @@
               "id": "d1",
               "speaker": "Sensei",
               "speakerRole": "Tutor Belajar",
-              "jp": "Minna II 第2課の勉強を始めましょう！",
+              "jp": "食べます・飲みます — Kegiatan Sehari-hariの勉強を始めましょう！",
               "furigana": "べんきょうをはじめましょう！",
               "romaji": "Benkyou wo hajimemashou!",
-              "idText": "Mari kita mulai belajar Minna II Bab 2!"
+              "idText": "Mari kita mulai belajar 食べます・飲みます — Kegiatan Sehari-hari!"
             }
           ],
           "drills": [
             {
               "id": "dr1",
               "type": "multiple-choice",
-              "prompt": "Apa fokus utama pada materi Minna II Bab 2 di buku Minna no Nihongo I & II?",
+              "prompt": "Apa fokus utama pada materi 食べます・飲みます — Kegiatan Sehari-hari di buku Minna no Nihongo I & II?",
               "options": [
                 "Menguasai pola kalimat bab ini dengan pemahaman alami",
                 "Menghafal tanpa memahami konteks",
@@ -465,39 +606,60 @@
       "id": "unit-curriculum-book-minna-07",
       "level": "n5",
       "pt_stage": 2,
-      "title_id": "Minna II: Minna II Bab 3",
-      "title_jp": "Minna II 第3課",
-      "theme": "Minna II",
+      "title_id": "Minna I: あげます・もらいます — Memberi dan Menerima",
+      "title_jp": "あげます・もらいます — Memberi dan Menerima",
+      "theme": "Minna I",
       "icon": "📙",
-      "can_do_summary": "Memahami silabus Minna II Bab 3 secara komprehensif.",
-      "grammar_ids": [],
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Memberi dan Menerima.",
+      "grammar_ids": [
+        "gn5-00037",
+        "gn5-00038",
+        "gn5-00039"
+      ],
       "vocab_ids": [
-        "vg-n5-00990"
+        "vg-n5-00051",
+        "vg-n5-00050",
+        "vg-n5-00052",
+        "vg-n5-00049"
       ],
       "lessons": [
         {
           "id": "les-curriculum-book-minna-u07-01",
           "lesson_number": 1,
-          "title_id": "Minna II Bab 3 (Eksplorasi Materi & Pola)",
-          "title_jp": "Minna II 第3課（解説）",
+          "title_id": "あげます・もらいます — Memberi dan Menerima (Eksplorasi Materi & Pola)",
+          "title_jp": "あげます・もらいます — Memberi dan Menerima（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku Minna no Nihongo I & II pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa Minna no Nihongo I & II bab ini dalam konteks nyata.",
-          "grammar_ids": [],
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Memberi dan Menerima.",
+          "grammar_ids": [
+            "gn5-00037",
+            "gn5-00038",
+            "gn5-00039"
+          ],
           "vocab_ids": [
-            "vg-n5-00990"
+            "vg-n5-00051",
+            "vg-n5-00050",
+            "vg-n5-00052",
+            "vg-n5-00049"
           ],
           "pedagogical_framework": {
             "what": {
-              "summary": "Silabus resmi Minna no Nihongo I & II bab 3.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
-              "targetPatterns": [],
+              "summary": "Silabus resmi Minna no Nihongo I & II bab 7.",
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Memberi dan Menerima.",
+              "targetPatterns": [
+                "gn5-00037",
+                "gn5-00038",
+                "gn5-00039"
+              ],
               "coreVocabSample": [
-                "vg-n5-00990"
+                "vg-n5-00051",
+                "vg-n5-00050",
+                "vg-n5-00052",
+                "vg-n5-00049"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku Minna no Nihongo I & II. Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 3 Minna no Nihongo I & II.",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Memberi dan Menerima.",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -511,17 +673,17 @@
               "id": "d1",
               "speaker": "Sensei",
               "speakerRole": "Tutor Belajar",
-              "jp": "Minna II 第3課の勉強を始めましょう！",
+              "jp": "あげます・もらいます — Memberi dan Menerimaの勉強を始めましょう！",
               "furigana": "べんきょうをはじめましょう！",
               "romaji": "Benkyou wo hajimemashou!",
-              "idText": "Mari kita mulai belajar Minna II Bab 3!"
+              "idText": "Mari kita mulai belajar あげます・もらいます — Memberi dan Menerima!"
             }
           ],
           "drills": [
             {
               "id": "dr1",
               "type": "multiple-choice",
-              "prompt": "Apa fokus utama pada materi Minna II Bab 3 di buku Minna no Nihongo I & II?",
+              "prompt": "Apa fokus utama pada materi あげます・もらいます — Memberi dan Menerima di buku Minna no Nihongo I & II?",
               "options": [
                 "Menguasai pola kalimat bab ini dengan pemahaman alami",
                 "Menghafal tanpa memahami konteks",
@@ -540,39 +702,60 @@
       "id": "unit-curriculum-book-minna-08",
       "level": "n5",
       "pt_stage": 3,
-      "title_id": "Minna II: Minna II Bab 4",
-      "title_jp": "Minna II 第4課",
-      "theme": "Minna II",
+      "title_id": "Minna I: 〜ませんか — Ajakan Kegiatan",
+      "title_jp": "〜ませんか — Ajakan Kegiatan",
+      "theme": "Minna I",
       "icon": "📙",
-      "can_do_summary": "Memahami silabus Minna II Bab 4 secara komprehensif.",
-      "grammar_ids": [],
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Ajakan Kegiatan.",
+      "grammar_ids": [
+        "gn5-00043",
+        "gn5-00042",
+        "gn5-00044"
+      ],
       "vocab_ids": [
-        "vg-n5-00990"
+        "vg-n5-00540",
+        "vg-n5-00541",
+        "vg-n5-00005",
+        "vg-n5-00715"
       ],
       "lessons": [
         {
           "id": "les-curriculum-book-minna-u08-01",
           "lesson_number": 1,
-          "title_id": "Minna II Bab 4 (Eksplorasi Materi & Pola)",
-          "title_jp": "Minna II 第4課（解説）",
+          "title_id": "〜ませんか — Ajakan Kegiatan (Eksplorasi Materi & Pola)",
+          "title_jp": "〜ませんか — Ajakan Kegiatan（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku Minna no Nihongo I & II pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa Minna no Nihongo I & II bab ini dalam konteks nyata.",
-          "grammar_ids": [],
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Ajakan Kegiatan.",
+          "grammar_ids": [
+            "gn5-00043",
+            "gn5-00042",
+            "gn5-00044"
+          ],
           "vocab_ids": [
-            "vg-n5-00990"
+            "vg-n5-00540",
+            "vg-n5-00541",
+            "vg-n5-00005",
+            "vg-n5-00715"
           ],
           "pedagogical_framework": {
             "what": {
-              "summary": "Silabus resmi Minna no Nihongo I & II bab 4.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
-              "targetPatterns": [],
+              "summary": "Silabus resmi Minna no Nihongo I & II bab 8.",
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Ajakan Kegiatan.",
+              "targetPatterns": [
+                "gn5-00043",
+                "gn5-00042",
+                "gn5-00044"
+              ],
               "coreVocabSample": [
-                "vg-n5-00990"
+                "vg-n5-00540",
+                "vg-n5-00541",
+                "vg-n5-00005",
+                "vg-n5-00715"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku Minna no Nihongo I & II. Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 4 Minna no Nihongo I & II.",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Ajakan Kegiatan.",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -586,17 +769,1514 @@
               "id": "d1",
               "speaker": "Sensei",
               "speakerRole": "Tutor Belajar",
-              "jp": "Minna II 第4課の勉強を始めましょう！",
+              "jp": "〜ませんか — Ajakan Kegiatanの勉強を始めましょう！",
               "furigana": "べんきょうをはじめましょう！",
               "romaji": "Benkyou wo hajimemashou!",
-              "idText": "Mari kita mulai belajar Minna II Bab 4!"
+              "idText": "Mari kita mulai belajar 〜ませんか — Ajakan Kegiatan!"
             }
           ],
           "drills": [
             {
               "id": "dr1",
               "type": "multiple-choice",
-              "prompt": "Apa fokus utama pada materi Minna II Bab 4 di buku Minna no Nihongo I & II?",
+              "prompt": "Apa fokus utama pada materi 〜ませんか — Ajakan Kegiatan di buku Minna no Nihongo I & II?",
+              "options": [
+                "Menguasai pola kalimat bab ini dengan pemahaman alami",
+                "Menghafal tanpa memahami konteks",
+                "Mengabaikan intonasi pengucapan",
+                "Hanya membaca terjemahan bahasa Inggris"
+              ],
+              "correctAnswer": "Menguasai pola kalimat bab ini dengan pemahaman alami",
+              "explanation": "Setiap bab dirancang untuk memperkuat kemampuan komunikasi fungsional pembelajar."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 9,
+      "id": "unit-curriculum-book-minna-09",
+      "level": "n5",
+      "pt_stage": 4,
+      "title_id": "Minna I: あります・います — Keberadaan Benda dan Orang",
+      "title_jp": "あります・います — Keberadaan Benda dan Orang",
+      "theme": "Minna I",
+      "icon": "📙",
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Keberadaan Benda dan Orang.",
+      "grammar_ids": [
+        "gn5-00061",
+        "gn5-00062",
+        "gn5-00009"
+      ],
+      "vocab_ids": [
+        "vg-n5-00054",
+        "vg-n5-00053",
+        "vg-n5-00293",
+        "vg-n5-00294"
+      ],
+      "lessons": [
+        {
+          "id": "les-curriculum-book-minna-u09-01",
+          "lesson_number": 1,
+          "title_id": "あります・います — Keberadaan Benda dan Orang (Eksplorasi Materi & Pola)",
+          "title_jp": "あります・います — Keberadaan Benda dan Orang（解説）",
+          "desc_id": "Mempelajari urutan materi pedagogis buku Minna no Nihongo I & II pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Keberadaan Benda dan Orang.",
+          "grammar_ids": [
+            "gn5-00061",
+            "gn5-00062",
+            "gn5-00009"
+          ],
+          "vocab_ids": [
+            "vg-n5-00054",
+            "vg-n5-00053",
+            "vg-n5-00293",
+            "vg-n5-00294"
+          ],
+          "pedagogical_framework": {
+            "what": {
+              "summary": "Silabus resmi Minna no Nihongo I & II bab 9.",
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Keberadaan Benda dan Orang.",
+              "targetPatterns": [
+                "gn5-00061",
+                "gn5-00062",
+                "gn5-00009"
+              ],
+              "coreVocabSample": [
+                "vg-n5-00054",
+                "vg-n5-00053",
+                "vg-n5-00293",
+                "vg-n5-00294"
+              ]
+            },
+            "sensei_context": {
+              "sceneIntro": "Kamu sedang mempelajari buku Minna no Nihongo I & II. Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Keberadaan Benda dan Orang.",
+              "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
+            },
+            "cultural_notes": {
+              "title": "Catatan Budaya & Konteks Pemakaian (Minna no Nihongo I & II)",
+              "etiquette": "Perhatikan konteks formalitas saat menggunakan pola kalimat ini kepada guru, teman, atau atasan.",
+              "taboos": "Hindari penggunaan pola kasual kepada orang yang baru pertama kali ditemui."
+            }
+          },
+          "dialogue": [
+            {
+              "id": "d1",
+              "speaker": "Sensei",
+              "speakerRole": "Tutor Belajar",
+              "jp": "あります・います — Keberadaan Benda dan Orangの勉強を始めましょう！",
+              "furigana": "べんきょうをはじめましょう！",
+              "romaji": "Benkyou wo hajimemashou!",
+              "idText": "Mari kita mulai belajar あります・います — Keberadaan Benda dan Orang!"
+            }
+          ],
+          "drills": [
+            {
+              "id": "dr1",
+              "type": "multiple-choice",
+              "prompt": "Apa fokus utama pada materi あります・います — Keberadaan Benda dan Orang di buku Minna no Nihongo I & II?",
+              "options": [
+                "Menguasai pola kalimat bab ini dengan pemahaman alami",
+                "Menghafal tanpa memahami konteks",
+                "Mengabaikan intonasi pengucapan",
+                "Hanya membaca terjemahan bahasa Inggris"
+              ],
+              "correctAnswer": "Menguasai pola kalimat bab ini dengan pemahaman alami",
+              "explanation": "Setiap bab dirancang untuk memperkuat kemampuan komunikasi fungsional pembelajar."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 10,
+      "id": "unit-curriculum-book-minna-10",
+      "level": "n5",
+      "pt_stage": 5,
+      "title_id": "Minna I: 好きですか — Kesukaan dan Hobi",
+      "title_jp": "好きですか — Kesukaan dan Hobi",
+      "theme": "Minna I",
+      "icon": "📙",
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Kesukaan dan Hobi.",
+      "grammar_ids": [
+        "gn5-00006",
+        "gn5-00091",
+        "gn5-00087",
+        "gn5-00093"
+      ],
+      "vocab_ids": [
+        "vg-n5-00076",
+        "vg-n5-00077",
+        "vg-n5-00078",
+        "vg-n5-00079"
+      ],
+      "lessons": [
+        {
+          "id": "les-curriculum-book-minna-u10-01",
+          "lesson_number": 1,
+          "title_id": "好きですか — Kesukaan dan Hobi (Eksplorasi Materi & Pola)",
+          "title_jp": "好きですか — Kesukaan dan Hobi（解説）",
+          "desc_id": "Mempelajari urutan materi pedagogis buku Minna no Nihongo I & II pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Kesukaan dan Hobi.",
+          "grammar_ids": [
+            "gn5-00006",
+            "gn5-00091",
+            "gn5-00087",
+            "gn5-00093"
+          ],
+          "vocab_ids": [
+            "vg-n5-00076",
+            "vg-n5-00077",
+            "vg-n5-00078",
+            "vg-n5-00079"
+          ],
+          "pedagogical_framework": {
+            "what": {
+              "summary": "Silabus resmi Minna no Nihongo I & II bab 10.",
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Kesukaan dan Hobi.",
+              "targetPatterns": [
+                "gn5-00006",
+                "gn5-00091",
+                "gn5-00087",
+                "gn5-00093"
+              ],
+              "coreVocabSample": [
+                "vg-n5-00076",
+                "vg-n5-00077",
+                "vg-n5-00078",
+                "vg-n5-00079"
+              ]
+            },
+            "sensei_context": {
+              "sceneIntro": "Kamu sedang mempelajari buku Minna no Nihongo I & II. Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Kesukaan dan Hobi.",
+              "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
+            },
+            "cultural_notes": {
+              "title": "Catatan Budaya & Konteks Pemakaian (Minna no Nihongo I & II)",
+              "etiquette": "Perhatikan konteks formalitas saat menggunakan pola kalimat ini kepada guru, teman, atau atasan.",
+              "taboos": "Hindari penggunaan pola kasual kepada orang yang baru pertama kali ditemui."
+            }
+          },
+          "dialogue": [
+            {
+              "id": "d1",
+              "speaker": "Sensei",
+              "speakerRole": "Tutor Belajar",
+              "jp": "好きですか — Kesukaan dan Hobiの勉強を始めましょう！",
+              "furigana": "べんきょうをはじめましょう！",
+              "romaji": "Benkyou wo hajimemashou!",
+              "idText": "Mari kita mulai belajar 好きですか — Kesukaan dan Hobi!"
+            }
+          ],
+          "drills": [
+            {
+              "id": "dr1",
+              "type": "multiple-choice",
+              "prompt": "Apa fokus utama pada materi 好きですか — Kesukaan dan Hobi di buku Minna no Nihongo I & II?",
+              "options": [
+                "Menguasai pola kalimat bab ini dengan pemahaman alami",
+                "Menghafal tanpa memahami konteks",
+                "Mengabaikan intonasi pengucapan",
+                "Hanya membaca terjemahan bahasa Inggris"
+              ],
+              "correctAnswer": "Menguasai pola kalimat bab ini dengan pemahaman alami",
+              "explanation": "Setiap bab dirancang untuk memperkuat kemampuan komunikasi fungsional pembelajar."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 11,
+      "id": "unit-curriculum-book-minna-11",
+      "level": "n5",
+      "pt_stage": 6,
+      "title_id": "Minna I: どんな〜ですか — Deskripsi Tempat",
+      "title_jp": "どんな〜ですか — Deskripsi Tempat",
+      "theme": "Minna I",
+      "icon": "📙",
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Deskripsi Tempat.",
+      "grammar_ids": [
+        "gn5-00024",
+        "gn5-00025",
+        "gn5-00057",
+        "gn5-00093"
+      ],
+      "vocab_ids": [
+        "vg-n5-00054",
+        "vg-n5-00053",
+        "vg-n5-00712",
+        "vg-n5-00131"
+      ],
+      "lessons": [
+        {
+          "id": "les-curriculum-book-minna-u11-01",
+          "lesson_number": 1,
+          "title_id": "どんな〜ですか — Deskripsi Tempat (Eksplorasi Materi & Pola)",
+          "title_jp": "どんな〜ですか — Deskripsi Tempat（解説）",
+          "desc_id": "Mempelajari urutan materi pedagogis buku Minna no Nihongo I & II pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Deskripsi Tempat.",
+          "grammar_ids": [
+            "gn5-00024",
+            "gn5-00025",
+            "gn5-00057",
+            "gn5-00093"
+          ],
+          "vocab_ids": [
+            "vg-n5-00054",
+            "vg-n5-00053",
+            "vg-n5-00712",
+            "vg-n5-00131"
+          ],
+          "pedagogical_framework": {
+            "what": {
+              "summary": "Silabus resmi Minna no Nihongo I & II bab 11.",
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Deskripsi Tempat.",
+              "targetPatterns": [
+                "gn5-00024",
+                "gn5-00025",
+                "gn5-00057",
+                "gn5-00093"
+              ],
+              "coreVocabSample": [
+                "vg-n5-00054",
+                "vg-n5-00053",
+                "vg-n5-00712",
+                "vg-n5-00131"
+              ]
+            },
+            "sensei_context": {
+              "sceneIntro": "Kamu sedang mempelajari buku Minna no Nihongo I & II. Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Deskripsi Tempat.",
+              "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
+            },
+            "cultural_notes": {
+              "title": "Catatan Budaya & Konteks Pemakaian (Minna no Nihongo I & II)",
+              "etiquette": "Perhatikan konteks formalitas saat menggunakan pola kalimat ini kepada guru, teman, atau atasan.",
+              "taboos": "Hindari penggunaan pola kasual kepada orang yang baru pertama kali ditemui."
+            }
+          },
+          "dialogue": [
+            {
+              "id": "d1",
+              "speaker": "Sensei",
+              "speakerRole": "Tutor Belajar",
+              "jp": "どんな〜ですか — Deskripsi Tempatの勉強を始めましょう！",
+              "furigana": "べんきょうをはじめましょう！",
+              "romaji": "Benkyou wo hajimemashou!",
+              "idText": "Mari kita mulai belajar どんな〜ですか — Deskripsi Tempat!"
+            }
+          ],
+          "drills": [
+            {
+              "id": "dr1",
+              "type": "multiple-choice",
+              "prompt": "Apa fokus utama pada materi どんな〜ですか — Deskripsi Tempat di buku Minna no Nihongo I & II?",
+              "options": [
+                "Menguasai pola kalimat bab ini dengan pemahaman alami",
+                "Menghafal tanpa memahami konteks",
+                "Mengabaikan intonasi pengucapan",
+                "Hanya membaca terjemahan bahasa Inggris"
+              ],
+              "correctAnswer": "Menguasai pola kalimat bab ini dengan pemahaman alami",
+              "explanation": "Setiap bab dirancang untuk memperkuat kemampuan komunikasi fungsional pembelajar."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 12,
+      "id": "unit-curriculum-book-minna-12",
+      "level": "n5",
+      "pt_stage": 1,
+      "title_id": "Minna I: もう〜ましたか — Sudah atau Belum",
+      "title_jp": "もう〜ましたか — Sudah atau Belum",
+      "theme": "Minna I",
+      "icon": "📙",
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Sudah atau Belum.",
+      "grammar_ids": [
+        "gn5-00082",
+        "gn5-00083"
+      ],
+      "vocab_ids": [
+        "vg-n5-00115",
+        "vg-n5-00116",
+        "vg-n5-00046",
+        "vg-n5-00047"
+      ],
+      "lessons": [
+        {
+          "id": "les-curriculum-book-minna-u12-01",
+          "lesson_number": 1,
+          "title_id": "もう〜ましたか — Sudah atau Belum (Eksplorasi Materi & Pola)",
+          "title_jp": "もう〜ましたか — Sudah atau Belum（解説）",
+          "desc_id": "Mempelajari urutan materi pedagogis buku Minna no Nihongo I & II pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Sudah atau Belum.",
+          "grammar_ids": [
+            "gn5-00082",
+            "gn5-00083"
+          ],
+          "vocab_ids": [
+            "vg-n5-00115",
+            "vg-n5-00116",
+            "vg-n5-00046",
+            "vg-n5-00047"
+          ],
+          "pedagogical_framework": {
+            "what": {
+              "summary": "Silabus resmi Minna no Nihongo I & II bab 12.",
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Sudah atau Belum.",
+              "targetPatterns": [
+                "gn5-00082",
+                "gn5-00083"
+              ],
+              "coreVocabSample": [
+                "vg-n5-00115",
+                "vg-n5-00116",
+                "vg-n5-00046",
+                "vg-n5-00047"
+              ]
+            },
+            "sensei_context": {
+              "sceneIntro": "Kamu sedang mempelajari buku Minna no Nihongo I & II. Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Sudah atau Belum.",
+              "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
+            },
+            "cultural_notes": {
+              "title": "Catatan Budaya & Konteks Pemakaian (Minna no Nihongo I & II)",
+              "etiquette": "Perhatikan konteks formalitas saat menggunakan pola kalimat ini kepada guru, teman, atau atasan.",
+              "taboos": "Hindari penggunaan pola kasual kepada orang yang baru pertama kali ditemui."
+            }
+          },
+          "dialogue": [
+            {
+              "id": "d1",
+              "speaker": "Sensei",
+              "speakerRole": "Tutor Belajar",
+              "jp": "もう〜ましたか — Sudah atau Belumの勉強を始めましょう！",
+              "furigana": "べんきょうをはじめましょう！",
+              "romaji": "Benkyou wo hajimemashou!",
+              "idText": "Mari kita mulai belajar もう〜ましたか — Sudah atau Belum!"
+            }
+          ],
+          "drills": [
+            {
+              "id": "dr1",
+              "type": "multiple-choice",
+              "prompt": "Apa fokus utama pada materi もう〜ましたか — Sudah atau Belum di buku Minna no Nihongo I & II?",
+              "options": [
+                "Menguasai pola kalimat bab ini dengan pemahaman alami",
+                "Menghafal tanpa memahami konteks",
+                "Mengabaikan intonasi pengucapan",
+                "Hanya membaca terjemahan bahasa Inggris"
+              ],
+              "correctAnswer": "Menguasai pola kalimat bab ini dengan pemahaman alami",
+              "explanation": "Setiap bab dirancang untuk memperkuat kemampuan komunikasi fungsional pembelajar."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 13,
+      "id": "unit-curriculum-book-minna-13",
+      "level": "n4",
+      "pt_stage": 2,
+      "title_id": "Minna II: 普通形 — Bentuk Biasa (Plain Form)",
+      "title_jp": "普通形 — Bentuk Biasa (Plain Form)",
+      "theme": "Minna II",
+      "icon": "📙",
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Bentuk Biasa (Plain Form).",
+      "grammar_ids": [
+        "gn5-00027",
+        "gn5-00028",
+        "gn4-00048"
+      ],
+      "vocab_ids": [
+        "vg-n5-00023",
+        "vg-n5-00024",
+        "vg-n5-00009",
+        "vg-n5-00010"
+      ],
+      "lessons": [
+        {
+          "id": "les-curriculum-book-minna-u13-01",
+          "lesson_number": 1,
+          "title_id": "普通形 — Bentuk Biasa (Plain Form) (Eksplorasi Materi & Pola)",
+          "title_jp": "普通形 — Bentuk Biasa (Plain Form)（解説）",
+          "desc_id": "Mempelajari urutan materi pedagogis buku Minna no Nihongo I & II pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Bentuk Biasa (Plain Form).",
+          "grammar_ids": [
+            "gn5-00027",
+            "gn5-00028",
+            "gn4-00048"
+          ],
+          "vocab_ids": [
+            "vg-n5-00023",
+            "vg-n5-00024",
+            "vg-n5-00009",
+            "vg-n5-00010"
+          ],
+          "pedagogical_framework": {
+            "what": {
+              "summary": "Silabus resmi Minna no Nihongo I & II bab 26.",
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Bentuk Biasa (Plain Form).",
+              "targetPatterns": [
+                "gn5-00027",
+                "gn5-00028",
+                "gn4-00048"
+              ],
+              "coreVocabSample": [
+                "vg-n5-00023",
+                "vg-n5-00024",
+                "vg-n5-00009",
+                "vg-n5-00010"
+              ]
+            },
+            "sensei_context": {
+              "sceneIntro": "Kamu sedang mempelajari buku Minna no Nihongo I & II. Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Bentuk Biasa (Plain Form).",
+              "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
+            },
+            "cultural_notes": {
+              "title": "Catatan Budaya & Konteks Pemakaian (Minna no Nihongo I & II)",
+              "etiquette": "Perhatikan konteks formalitas saat menggunakan pola kalimat ini kepada guru, teman, atau atasan.",
+              "taboos": "Hindari penggunaan pola kasual kepada orang yang baru pertama kali ditemui."
+            }
+          },
+          "dialogue": [
+            {
+              "id": "d1",
+              "speaker": "Sensei",
+              "speakerRole": "Tutor Belajar",
+              "jp": "普通形 — Bentuk Biasa (Plain Form)の勉強を始めましょう！",
+              "furigana": "べんきょうをはじめましょう！",
+              "romaji": "Benkyou wo hajimemashou!",
+              "idText": "Mari kita mulai belajar 普通形 — Bentuk Biasa (Plain Form)!"
+            }
+          ],
+          "drills": [
+            {
+              "id": "dr1",
+              "type": "multiple-choice",
+              "prompt": "Apa fokus utama pada materi 普通形 — Bentuk Biasa (Plain Form) di buku Minna no Nihongo I & II?",
+              "options": [
+                "Menguasai pola kalimat bab ini dengan pemahaman alami",
+                "Menghafal tanpa memahami konteks",
+                "Mengabaikan intonasi pengucapan",
+                "Hanya membaca terjemahan bahasa Inggris"
+              ],
+              "correctAnswer": "Menguasai pola kalimat bab ini dengan pemahaman alami",
+              "explanation": "Setiap bab dirancang untuk memperkuat kemampuan komunikasi fungsional pembelajar."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 14,
+      "id": "unit-curriculum-book-minna-14",
+      "level": "n4",
+      "pt_stage": 3,
+      "title_id": "Minna II: 〜と思います — Menyatakan Pendapat",
+      "title_jp": "〜と思います — Menyatakan Pendapat",
+      "theme": "Minna II",
+      "icon": "📙",
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Menyatakan Pendapat.",
+      "grammar_ids": [
+        "gn4-00047",
+        "gn5-00072"
+      ],
+      "vocab_ids": [
+        "vg-n4-00368",
+        "vg-n4-00367",
+        "vg-n4-00130",
+        "vg-n4-00136"
+      ],
+      "lessons": [
+        {
+          "id": "les-curriculum-book-minna-u14-01",
+          "lesson_number": 1,
+          "title_id": "〜と思います — Menyatakan Pendapat (Eksplorasi Materi & Pola)",
+          "title_jp": "〜と思います — Menyatakan Pendapat（解説）",
+          "desc_id": "Mempelajari urutan materi pedagogis buku Minna no Nihongo I & II pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Menyatakan Pendapat.",
+          "grammar_ids": [
+            "gn4-00047",
+            "gn5-00072"
+          ],
+          "vocab_ids": [
+            "vg-n4-00368",
+            "vg-n4-00367",
+            "vg-n4-00130",
+            "vg-n4-00136"
+          ],
+          "pedagogical_framework": {
+            "what": {
+              "summary": "Silabus resmi Minna no Nihongo I & II bab 27.",
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Menyatakan Pendapat.",
+              "targetPatterns": [
+                "gn4-00047",
+                "gn5-00072"
+              ],
+              "coreVocabSample": [
+                "vg-n4-00368",
+                "vg-n4-00367",
+                "vg-n4-00130",
+                "vg-n4-00136"
+              ]
+            },
+            "sensei_context": {
+              "sceneIntro": "Kamu sedang mempelajari buku Minna no Nihongo I & II. Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Menyatakan Pendapat.",
+              "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
+            },
+            "cultural_notes": {
+              "title": "Catatan Budaya & Konteks Pemakaian (Minna no Nihongo I & II)",
+              "etiquette": "Perhatikan konteks formalitas saat menggunakan pola kalimat ini kepada guru, teman, atau atasan.",
+              "taboos": "Hindari penggunaan pola kasual kepada orang yang baru pertama kali ditemui."
+            }
+          },
+          "dialogue": [
+            {
+              "id": "d1",
+              "speaker": "Sensei",
+              "speakerRole": "Tutor Belajar",
+              "jp": "〜と思います — Menyatakan Pendapatの勉強を始めましょう！",
+              "furigana": "べんきょうをはじめましょう！",
+              "romaji": "Benkyou wo hajimemashou!",
+              "idText": "Mari kita mulai belajar 〜と思います — Menyatakan Pendapat!"
+            }
+          ],
+          "drills": [
+            {
+              "id": "dr1",
+              "type": "multiple-choice",
+              "prompt": "Apa fokus utama pada materi 〜と思います — Menyatakan Pendapat di buku Minna no Nihongo I & II?",
+              "options": [
+                "Menguasai pola kalimat bab ini dengan pemahaman alami",
+                "Menghafal tanpa memahami konteks",
+                "Mengabaikan intonasi pengucapan",
+                "Hanya membaca terjemahan bahasa Inggris"
+              ],
+              "correctAnswer": "Menguasai pola kalimat bab ini dengan pemahaman alami",
+              "explanation": "Setiap bab dirancang untuk memperkuat kemampuan komunikasi fungsional pembelajar."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 15,
+      "id": "unit-curriculum-book-minna-15",
+      "level": "n4",
+      "pt_stage": 4,
+      "title_id": "Minna II: 〜でしょう — Perkiraan dan Ramalan",
+      "title_jp": "〜でしょう — Perkiraan dan Ramalan",
+      "theme": "Minna II",
+      "icon": "📙",
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Perkiraan dan Ramalan.",
+      "grammar_ids": [
+        "gn5-00045",
+        "gn4-00023"
+      ],
+      "vocab_ids": [
+        "vg-n5-00098",
+        "vg-n5-00672",
+        "vg-n5-00673",
+        "vg-n5-00134"
+      ],
+      "lessons": [
+        {
+          "id": "les-curriculum-book-minna-u15-01",
+          "lesson_number": 1,
+          "title_id": "〜でしょう — Perkiraan dan Ramalan (Eksplorasi Materi & Pola)",
+          "title_jp": "〜でしょう — Perkiraan dan Ramalan（解説）",
+          "desc_id": "Mempelajari urutan materi pedagogis buku Minna no Nihongo I & II pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Perkiraan dan Ramalan.",
+          "grammar_ids": [
+            "gn5-00045",
+            "gn4-00023"
+          ],
+          "vocab_ids": [
+            "vg-n5-00098",
+            "vg-n5-00672",
+            "vg-n5-00673",
+            "vg-n5-00134"
+          ],
+          "pedagogical_framework": {
+            "what": {
+              "summary": "Silabus resmi Minna no Nihongo I & II bab 28.",
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Perkiraan dan Ramalan.",
+              "targetPatterns": [
+                "gn5-00045",
+                "gn4-00023"
+              ],
+              "coreVocabSample": [
+                "vg-n5-00098",
+                "vg-n5-00672",
+                "vg-n5-00673",
+                "vg-n5-00134"
+              ]
+            },
+            "sensei_context": {
+              "sceneIntro": "Kamu sedang mempelajari buku Minna no Nihongo I & II. Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Perkiraan dan Ramalan.",
+              "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
+            },
+            "cultural_notes": {
+              "title": "Catatan Budaya & Konteks Pemakaian (Minna no Nihongo I & II)",
+              "etiquette": "Perhatikan konteks formalitas saat menggunakan pola kalimat ini kepada guru, teman, atau atasan.",
+              "taboos": "Hindari penggunaan pola kasual kepada orang yang baru pertama kali ditemui."
+            }
+          },
+          "dialogue": [
+            {
+              "id": "d1",
+              "speaker": "Sensei",
+              "speakerRole": "Tutor Belajar",
+              "jp": "〜でしょう — Perkiraan dan Ramalanの勉強を始めましょう！",
+              "furigana": "べんきょうをはじめましょう！",
+              "romaji": "Benkyou wo hajimemashou!",
+              "idText": "Mari kita mulai belajar 〜でしょう — Perkiraan dan Ramalan!"
+            }
+          ],
+          "drills": [
+            {
+              "id": "dr1",
+              "type": "multiple-choice",
+              "prompt": "Apa fokus utama pada materi 〜でしょう — Perkiraan dan Ramalan di buku Minna no Nihongo I & II?",
+              "options": [
+                "Menguasai pola kalimat bab ini dengan pemahaman alami",
+                "Menghafal tanpa memahami konteks",
+                "Mengabaikan intonasi pengucapan",
+                "Hanya membaca terjemahan bahasa Inggris"
+              ],
+              "correctAnswer": "Menguasai pola kalimat bab ini dengan pemahaman alami",
+              "explanation": "Setiap bab dirancang untuk memperkuat kemampuan komunikasi fungsional pembelajar."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 16,
+      "id": "unit-curriculum-book-minna-16",
+      "level": "n4",
+      "pt_stage": 5,
+      "title_id": "Minna II: 〜ながら — Sambil Melakukan",
+      "title_jp": "〜ながら — Sambil Melakukan",
+      "theme": "Minna II",
+      "icon": "📙",
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Sambil Melakukan.",
+      "grammar_ids": [
+        "gn4-00087",
+        "gn4-00053",
+        "gn4-00085"
+      ],
+      "vocab_ids": [
+        "vg-n5-00715",
+        "vg-n5-00032",
+        "vg-n5-00033",
+        "vg-n5-00024"
+      ],
+      "lessons": [
+        {
+          "id": "les-curriculum-book-minna-u16-01",
+          "lesson_number": 1,
+          "title_id": "〜ながら — Sambil Melakukan (Eksplorasi Materi & Pola)",
+          "title_jp": "〜ながら — Sambil Melakukan（解説）",
+          "desc_id": "Mempelajari urutan materi pedagogis buku Minna no Nihongo I & II pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Sambil Melakukan.",
+          "grammar_ids": [
+            "gn4-00087",
+            "gn4-00053",
+            "gn4-00085"
+          ],
+          "vocab_ids": [
+            "vg-n5-00715",
+            "vg-n5-00032",
+            "vg-n5-00033",
+            "vg-n5-00024"
+          ],
+          "pedagogical_framework": {
+            "what": {
+              "summary": "Silabus resmi Minna no Nihongo I & II bab 29.",
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Sambil Melakukan.",
+              "targetPatterns": [
+                "gn4-00087",
+                "gn4-00053",
+                "gn4-00085"
+              ],
+              "coreVocabSample": [
+                "vg-n5-00715",
+                "vg-n5-00032",
+                "vg-n5-00033",
+                "vg-n5-00024"
+              ]
+            },
+            "sensei_context": {
+              "sceneIntro": "Kamu sedang mempelajari buku Minna no Nihongo I & II. Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Sambil Melakukan.",
+              "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
+            },
+            "cultural_notes": {
+              "title": "Catatan Budaya & Konteks Pemakaian (Minna no Nihongo I & II)",
+              "etiquette": "Perhatikan konteks formalitas saat menggunakan pola kalimat ini kepada guru, teman, atau atasan.",
+              "taboos": "Hindari penggunaan pola kasual kepada orang yang baru pertama kali ditemui."
+            }
+          },
+          "dialogue": [
+            {
+              "id": "d1",
+              "speaker": "Sensei",
+              "speakerRole": "Tutor Belajar",
+              "jp": "〜ながら — Sambil Melakukanの勉強を始めましょう！",
+              "furigana": "べんきょうをはじめましょう！",
+              "romaji": "Benkyou wo hajimemashou!",
+              "idText": "Mari kita mulai belajar 〜ながら — Sambil Melakukan!"
+            }
+          ],
+          "drills": [
+            {
+              "id": "dr1",
+              "type": "multiple-choice",
+              "prompt": "Apa fokus utama pada materi 〜ながら — Sambil Melakukan di buku Minna no Nihongo I & II?",
+              "options": [
+                "Menguasai pola kalimat bab ini dengan pemahaman alami",
+                "Menghafal tanpa memahami konteks",
+                "Mengabaikan intonasi pengucapan",
+                "Hanya membaca terjemahan bahasa Inggris"
+              ],
+              "correctAnswer": "Menguasai pola kalimat bab ini dengan pemahaman alami",
+              "explanation": "Setiap bab dirancang untuk memperkuat kemampuan komunikasi fungsional pembelajar."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 17,
+      "id": "unit-curriculum-book-minna-17",
+      "level": "n4",
+      "pt_stage": 6,
+      "title_id": "Minna II: 〜てから — Urutan Kegiatan",
+      "title_jp": "〜てから — Urutan Kegiatan",
+      "theme": "Minna II",
+      "icon": "📙",
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Urutan Kegiatan.",
+      "grammar_ids": [
+        "gn4-00046"
+      ],
+      "vocab_ids": [
+        "vg-n5-00046",
+        "vg-n5-00047",
+        "vg-n5-00106",
+        "vg-n4-00105"
+      ],
+      "lessons": [
+        {
+          "id": "les-curriculum-book-minna-u17-01",
+          "lesson_number": 1,
+          "title_id": "〜てから — Urutan Kegiatan (Eksplorasi Materi & Pola)",
+          "title_jp": "〜てから — Urutan Kegiatan（解説）",
+          "desc_id": "Mempelajari urutan materi pedagogis buku Minna no Nihongo I & II pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Urutan Kegiatan.",
+          "grammar_ids": [
+            "gn4-00046"
+          ],
+          "vocab_ids": [
+            "vg-n5-00046",
+            "vg-n5-00047",
+            "vg-n5-00106",
+            "vg-n4-00105"
+          ],
+          "pedagogical_framework": {
+            "what": {
+              "summary": "Silabus resmi Minna no Nihongo I & II bab 30.",
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Urutan Kegiatan.",
+              "targetPatterns": [
+                "gn4-00046"
+              ],
+              "coreVocabSample": [
+                "vg-n5-00046",
+                "vg-n5-00047",
+                "vg-n5-00106",
+                "vg-n4-00105"
+              ]
+            },
+            "sensei_context": {
+              "sceneIntro": "Kamu sedang mempelajari buku Minna no Nihongo I & II. Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Urutan Kegiatan.",
+              "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
+            },
+            "cultural_notes": {
+              "title": "Catatan Budaya & Konteks Pemakaian (Minna no Nihongo I & II)",
+              "etiquette": "Perhatikan konteks formalitas saat menggunakan pola kalimat ini kepada guru, teman, atau atasan.",
+              "taboos": "Hindari penggunaan pola kasual kepada orang yang baru pertama kali ditemui."
+            }
+          },
+          "dialogue": [
+            {
+              "id": "d1",
+              "speaker": "Sensei",
+              "speakerRole": "Tutor Belajar",
+              "jp": "〜てから — Urutan Kegiatanの勉強を始めましょう！",
+              "furigana": "べんきょうをはじめましょう！",
+              "romaji": "Benkyou wo hajimemashou!",
+              "idText": "Mari kita mulai belajar 〜てから — Urutan Kegiatan!"
+            }
+          ],
+          "drills": [
+            {
+              "id": "dr1",
+              "type": "multiple-choice",
+              "prompt": "Apa fokus utama pada materi 〜てから — Urutan Kegiatan di buku Minna no Nihongo I & II?",
+              "options": [
+                "Menguasai pola kalimat bab ini dengan pemahaman alami",
+                "Menghafal tanpa memahami konteks",
+                "Mengabaikan intonasi pengucapan",
+                "Hanya membaca terjemahan bahasa Inggris"
+              ],
+              "correctAnswer": "Menguasai pola kalimat bab ini dengan pemahaman alami",
+              "explanation": "Setiap bab dirancang untuk memperkuat kemampuan komunikasi fungsional pembelajar."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 18,
+      "id": "unit-curriculum-book-minna-18",
+      "level": "n4",
+      "pt_stage": 1,
+      "title_id": "Minna II: 〜たことがあります — Pengalaman Pernah",
+      "title_jp": "〜たことがあります — Pengalaman Pernah",
+      "theme": "Minna II",
+      "icon": "📙",
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Pengalaman Pernah.",
+      "grammar_ids": [
+        "gn5-00050"
+      ],
+      "vocab_ids": [
+        "vg-n4-00365",
+        "vg-n4-00357",
+        "vg-n4-00353",
+        "vg-n4-00355"
+      ],
+      "lessons": [
+        {
+          "id": "les-curriculum-book-minna-u18-01",
+          "lesson_number": 1,
+          "title_id": "〜たことがあります — Pengalaman Pernah (Eksplorasi Materi & Pola)",
+          "title_jp": "〜たことがあります — Pengalaman Pernah（解説）",
+          "desc_id": "Mempelajari urutan materi pedagogis buku Minna no Nihongo I & II pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Pengalaman Pernah.",
+          "grammar_ids": [
+            "gn5-00050"
+          ],
+          "vocab_ids": [
+            "vg-n4-00365",
+            "vg-n4-00357",
+            "vg-n4-00353",
+            "vg-n4-00355"
+          ],
+          "pedagogical_framework": {
+            "what": {
+              "summary": "Silabus resmi Minna no Nihongo I & II bab 31.",
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Pengalaman Pernah.",
+              "targetPatterns": [
+                "gn5-00050"
+              ],
+              "coreVocabSample": [
+                "vg-n4-00365",
+                "vg-n4-00357",
+                "vg-n4-00353",
+                "vg-n4-00355"
+              ]
+            },
+            "sensei_context": {
+              "sceneIntro": "Kamu sedang mempelajari buku Minna no Nihongo I & II. Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Pengalaman Pernah.",
+              "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
+            },
+            "cultural_notes": {
+              "title": "Catatan Budaya & Konteks Pemakaian (Minna no Nihongo I & II)",
+              "etiquette": "Perhatikan konteks formalitas saat menggunakan pola kalimat ini kepada guru, teman, atau atasan.",
+              "taboos": "Hindari penggunaan pola kasual kepada orang yang baru pertama kali ditemui."
+            }
+          },
+          "dialogue": [
+            {
+              "id": "d1",
+              "speaker": "Sensei",
+              "speakerRole": "Tutor Belajar",
+              "jp": "〜たことがあります — Pengalaman Pernahの勉強を始めましょう！",
+              "furigana": "べんきょうをはじめましょう！",
+              "romaji": "Benkyou wo hajimemashou!",
+              "idText": "Mari kita mulai belajar 〜たことがあります — Pengalaman Pernah!"
+            }
+          ],
+          "drills": [
+            {
+              "id": "dr1",
+              "type": "multiple-choice",
+              "prompt": "Apa fokus utama pada materi 〜たことがあります — Pengalaman Pernah di buku Minna no Nihongo I & II?",
+              "options": [
+                "Menguasai pola kalimat bab ini dengan pemahaman alami",
+                "Menghafal tanpa memahami konteks",
+                "Mengabaikan intonasi pengucapan",
+                "Hanya membaca terjemahan bahasa Inggris"
+              ],
+              "correctAnswer": "Menguasai pola kalimat bab ini dengan pemahaman alami",
+              "explanation": "Setiap bab dirancang untuk memperkuat kemampuan komunikasi fungsional pembelajar."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 19,
+      "id": "unit-curriculum-book-minna-19",
+      "level": "n4",
+      "pt_stage": 2,
+      "title_id": "Minna II: 〜たり〜たりします — Berbagai Kegiatan",
+      "title_jp": "〜たり〜たりします — Berbagai Kegiatan",
+      "theme": "Minna II",
+      "icon": "📙",
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Berbagai Kegiatan.",
+      "grammar_ids": [
+        "gn5-00051",
+        "gn4-00089"
+      ],
+      "vocab_ids": [
+        "vg-n5-00005",
+        "vg-n5-00043",
+        "vg-n5-00034",
+        "vg-n5-00398"
+      ],
+      "lessons": [
+        {
+          "id": "les-curriculum-book-minna-u19-01",
+          "lesson_number": 1,
+          "title_id": "〜たり〜たりします — Berbagai Kegiatan (Eksplorasi Materi & Pola)",
+          "title_jp": "〜たり〜たりします — Berbagai Kegiatan（解説）",
+          "desc_id": "Mempelajari urutan materi pedagogis buku Minna no Nihongo I & II pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Berbagai Kegiatan.",
+          "grammar_ids": [
+            "gn5-00051",
+            "gn4-00089"
+          ],
+          "vocab_ids": [
+            "vg-n5-00005",
+            "vg-n5-00043",
+            "vg-n5-00034",
+            "vg-n5-00398"
+          ],
+          "pedagogical_framework": {
+            "what": {
+              "summary": "Silabus resmi Minna no Nihongo I & II bab 32.",
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Berbagai Kegiatan.",
+              "targetPatterns": [
+                "gn5-00051",
+                "gn4-00089"
+              ],
+              "coreVocabSample": [
+                "vg-n5-00005",
+                "vg-n5-00043",
+                "vg-n5-00034",
+                "vg-n5-00398"
+              ]
+            },
+            "sensei_context": {
+              "sceneIntro": "Kamu sedang mempelajari buku Minna no Nihongo I & II. Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Berbagai Kegiatan.",
+              "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
+            },
+            "cultural_notes": {
+              "title": "Catatan Budaya & Konteks Pemakaian (Minna no Nihongo I & II)",
+              "etiquette": "Perhatikan konteks formalitas saat menggunakan pola kalimat ini kepada guru, teman, atau atasan.",
+              "taboos": "Hindari penggunaan pola kasual kepada orang yang baru pertama kali ditemui."
+            }
+          },
+          "dialogue": [
+            {
+              "id": "d1",
+              "speaker": "Sensei",
+              "speakerRole": "Tutor Belajar",
+              "jp": "〜たり〜たりします — Berbagai Kegiatanの勉強を始めましょう！",
+              "furigana": "べんきょうをはじめましょう！",
+              "romaji": "Benkyou wo hajimemashou!",
+              "idText": "Mari kita mulai belajar 〜たり〜たりします — Berbagai Kegiatan!"
+            }
+          ],
+          "drills": [
+            {
+              "id": "dr1",
+              "type": "multiple-choice",
+              "prompt": "Apa fokus utama pada materi 〜たり〜たりします — Berbagai Kegiatan di buku Minna no Nihongo I & II?",
+              "options": [
+                "Menguasai pola kalimat bab ini dengan pemahaman alami",
+                "Menghafal tanpa memahami konteks",
+                "Mengabaikan intonasi pengucapan",
+                "Hanya membaca terjemahan bahasa Inggris"
+              ],
+              "correctAnswer": "Menguasai pola kalimat bab ini dengan pemahaman alami",
+              "explanation": "Setiap bab dirancang untuk memperkuat kemampuan komunikasi fungsional pembelajar."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 20,
+      "id": "unit-curriculum-book-minna-20",
+      "level": "n4",
+      "pt_stage": 3,
+      "title_id": "Minna II: 〜なります — Menyatakan Perubahan",
+      "title_jp": "〜なります — Menyatakan Perubahan",
+      "theme": "Minna II",
+      "icon": "📙",
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Menyatakan Perubahan.",
+      "grammar_ids": [
+        "gn5-00072",
+        "gn4-00047"
+      ],
+      "vocab_ids": [
+        "vg-n4-00136",
+        "vg-n4-00234",
+        "vg-n4-00236",
+        "vg-n5-00078"
+      ],
+      "lessons": [
+        {
+          "id": "les-curriculum-book-minna-u20-01",
+          "lesson_number": 1,
+          "title_id": "〜なります — Menyatakan Perubahan (Eksplorasi Materi & Pola)",
+          "title_jp": "〜なります — Menyatakan Perubahan（解説）",
+          "desc_id": "Mempelajari urutan materi pedagogis buku Minna no Nihongo I & II pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Menyatakan Perubahan.",
+          "grammar_ids": [
+            "gn5-00072",
+            "gn4-00047"
+          ],
+          "vocab_ids": [
+            "vg-n4-00136",
+            "vg-n4-00234",
+            "vg-n4-00236",
+            "vg-n5-00078"
+          ],
+          "pedagogical_framework": {
+            "what": {
+              "summary": "Silabus resmi Minna no Nihongo I & II bab 33.",
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Menyatakan Perubahan.",
+              "targetPatterns": [
+                "gn5-00072",
+                "gn4-00047"
+              ],
+              "coreVocabSample": [
+                "vg-n4-00136",
+                "vg-n4-00234",
+                "vg-n4-00236",
+                "vg-n5-00078"
+              ]
+            },
+            "sensei_context": {
+              "sceneIntro": "Kamu sedang mempelajari buku Minna no Nihongo I & II. Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Menyatakan Perubahan.",
+              "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
+            },
+            "cultural_notes": {
+              "title": "Catatan Budaya & Konteks Pemakaian (Minna no Nihongo I & II)",
+              "etiquette": "Perhatikan konteks formalitas saat menggunakan pola kalimat ini kepada guru, teman, atau atasan.",
+              "taboos": "Hindari penggunaan pola kasual kepada orang yang baru pertama kali ditemui."
+            }
+          },
+          "dialogue": [
+            {
+              "id": "d1",
+              "speaker": "Sensei",
+              "speakerRole": "Tutor Belajar",
+              "jp": "〜なります — Menyatakan Perubahanの勉強を始めましょう！",
+              "furigana": "べんきょうをはじめましょう！",
+              "romaji": "Benkyou wo hajimemashou!",
+              "idText": "Mari kita mulai belajar 〜なります — Menyatakan Perubahan!"
+            }
+          ],
+          "drills": [
+            {
+              "id": "dr1",
+              "type": "multiple-choice",
+              "prompt": "Apa fokus utama pada materi 〜なります — Menyatakan Perubahan di buku Minna no Nihongo I & II?",
+              "options": [
+                "Menguasai pola kalimat bab ini dengan pemahaman alami",
+                "Menghafal tanpa memahami konteks",
+                "Mengabaikan intonasi pengucapan",
+                "Hanya membaca terjemahan bahasa Inggris"
+              ],
+              "correctAnswer": "Menguasai pola kalimat bab ini dengan pemahaman alami",
+              "explanation": "Setiap bab dirancang untuk memperkuat kemampuan komunikasi fungsional pembelajar."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 21,
+      "id": "unit-curriculum-book-minna-21",
+      "level": "n4",
+      "pt_stage": 4,
+      "title_id": "Minna II: 〜くて・〜で — Menghubungkan Kata Sifat",
+      "title_jp": "〜くて・〜で — Menghubungkan Kata Sifat",
+      "theme": "Minna II",
+      "icon": "📙",
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Menghubungkan Kata Sifat.",
+      "grammar_ids": [
+        "gn5-00080",
+        "gn4-00065"
+      ],
+      "vocab_ids": [
+        "vg-n5-00080",
+        "vg-n5-00081",
+        "vg-n5-00082",
+        "vg-n5-00073"
+      ],
+      "lessons": [
+        {
+          "id": "les-curriculum-book-minna-u21-01",
+          "lesson_number": 1,
+          "title_id": "〜くて・〜で — Menghubungkan Kata Sifat (Eksplorasi Materi & Pola)",
+          "title_jp": "〜くて・〜で — Menghubungkan Kata Sifat（解説）",
+          "desc_id": "Mempelajari urutan materi pedagogis buku Minna no Nihongo I & II pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Menghubungkan Kata Sifat.",
+          "grammar_ids": [
+            "gn5-00080",
+            "gn4-00065"
+          ],
+          "vocab_ids": [
+            "vg-n5-00080",
+            "vg-n5-00081",
+            "vg-n5-00082",
+            "vg-n5-00073"
+          ],
+          "pedagogical_framework": {
+            "what": {
+              "summary": "Silabus resmi Minna no Nihongo I & II bab 34.",
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Menghubungkan Kata Sifat.",
+              "targetPatterns": [
+                "gn5-00080",
+                "gn4-00065"
+              ],
+              "coreVocabSample": [
+                "vg-n5-00080",
+                "vg-n5-00081",
+                "vg-n5-00082",
+                "vg-n5-00073"
+              ]
+            },
+            "sensei_context": {
+              "sceneIntro": "Kamu sedang mempelajari buku Minna no Nihongo I & II. Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Menghubungkan Kata Sifat.",
+              "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
+            },
+            "cultural_notes": {
+              "title": "Catatan Budaya & Konteks Pemakaian (Minna no Nihongo I & II)",
+              "etiquette": "Perhatikan konteks formalitas saat menggunakan pola kalimat ini kepada guru, teman, atau atasan.",
+              "taboos": "Hindari penggunaan pola kasual kepada orang yang baru pertama kali ditemui."
+            }
+          },
+          "dialogue": [
+            {
+              "id": "d1",
+              "speaker": "Sensei",
+              "speakerRole": "Tutor Belajar",
+              "jp": "〜くて・〜で — Menghubungkan Kata Sifatの勉強を始めましょう！",
+              "furigana": "べんきょうをはじめましょう！",
+              "romaji": "Benkyou wo hajimemashou!",
+              "idText": "Mari kita mulai belajar 〜くて・〜で — Menghubungkan Kata Sifat!"
+            }
+          ],
+          "drills": [
+            {
+              "id": "dr1",
+              "type": "multiple-choice",
+              "prompt": "Apa fokus utama pada materi 〜くて・〜で — Menghubungkan Kata Sifat di buku Minna no Nihongo I & II?",
+              "options": [
+                "Menguasai pola kalimat bab ini dengan pemahaman alami",
+                "Menghafal tanpa memahami konteks",
+                "Mengabaikan intonasi pengucapan",
+                "Hanya membaca terjemahan bahasa Inggris"
+              ],
+              "correctAnswer": "Menguasai pola kalimat bab ini dengan pemahaman alami",
+              "explanation": "Setiap bab dirancang untuk memperkuat kemampuan komunikasi fungsional pembelajar."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 22,
+      "id": "unit-curriculum-book-minna-22",
+      "level": "n4",
+      "pt_stage": 5,
+      "title_id": "Minna II: 〜から — Menyatakan Alasan",
+      "title_jp": "〜から — Menyatakan Alasan",
+      "theme": "Minna II",
+      "icon": "📙",
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Menyatakan Alasan.",
+      "grammar_ids": [
+        "gn4-00034"
+      ],
+      "vocab_ids": [
+        "vg-n4-00367",
+        "vg-n5-00087",
+        "vg-n4-00054",
+        "vg-n5-00045"
+      ],
+      "lessons": [
+        {
+          "id": "les-curriculum-book-minna-u22-01",
+          "lesson_number": 1,
+          "title_id": "〜から — Menyatakan Alasan (Eksplorasi Materi & Pola)",
+          "title_jp": "〜から — Menyatakan Alasan（解説）",
+          "desc_id": "Mempelajari urutan materi pedagogis buku Minna no Nihongo I & II pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Menyatakan Alasan.",
+          "grammar_ids": [
+            "gn4-00034"
+          ],
+          "vocab_ids": [
+            "vg-n4-00367",
+            "vg-n5-00087",
+            "vg-n4-00054",
+            "vg-n5-00045"
+          ],
+          "pedagogical_framework": {
+            "what": {
+              "summary": "Silabus resmi Minna no Nihongo I & II bab 35.",
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Menyatakan Alasan.",
+              "targetPatterns": [
+                "gn4-00034"
+              ],
+              "coreVocabSample": [
+                "vg-n4-00367",
+                "vg-n5-00087",
+                "vg-n4-00054",
+                "vg-n5-00045"
+              ]
+            },
+            "sensei_context": {
+              "sceneIntro": "Kamu sedang mempelajari buku Minna no Nihongo I & II. Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Menyatakan Alasan.",
+              "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
+            },
+            "cultural_notes": {
+              "title": "Catatan Budaya & Konteks Pemakaian (Minna no Nihongo I & II)",
+              "etiquette": "Perhatikan konteks formalitas saat menggunakan pola kalimat ini kepada guru, teman, atau atasan.",
+              "taboos": "Hindari penggunaan pola kasual kepada orang yang baru pertama kali ditemui."
+            }
+          },
+          "dialogue": [
+            {
+              "id": "d1",
+              "speaker": "Sensei",
+              "speakerRole": "Tutor Belajar",
+              "jp": "〜から — Menyatakan Alasanの勉強を始めましょう！",
+              "furigana": "べんきょうをはじめましょう！",
+              "romaji": "Benkyou wo hajimemashou!",
+              "idText": "Mari kita mulai belajar 〜から — Menyatakan Alasan!"
+            }
+          ],
+          "drills": [
+            {
+              "id": "dr1",
+              "type": "multiple-choice",
+              "prompt": "Apa fokus utama pada materi 〜から — Menyatakan Alasan di buku Minna no Nihongo I & II?",
+              "options": [
+                "Menguasai pola kalimat bab ini dengan pemahaman alami",
+                "Menghafal tanpa memahami konteks",
+                "Mengabaikan intonasi pengucapan",
+                "Hanya membaca terjemahan bahasa Inggris"
+              ],
+              "correctAnswer": "Menguasai pola kalimat bab ini dengan pemahaman alami",
+              "explanation": "Setiap bab dirancang untuk memperkuat kemampuan komunikasi fungsional pembelajar."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 23,
+      "id": "unit-curriculum-book-minna-23",
+      "level": "n4",
+      "pt_stage": 6,
+      "title_id": "Minna II: 〜ので・〜のに — Alasan dan Kontras",
+      "title_jp": "〜ので・〜のに — Alasan dan Kontras",
+      "theme": "Minna II",
+      "icon": "📙",
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Alasan dan Kontras.",
+      "grammar_ids": [
+        "gn4-00028"
+      ],
+      "vocab_ids": [
+        "vg-n4-00368",
+        "vg-n4-00359",
+        "vg-n4-00358",
+        "vg-n4-00029"
+      ],
+      "lessons": [
+        {
+          "id": "les-curriculum-book-minna-u23-01",
+          "lesson_number": 1,
+          "title_id": "〜ので・〜のに — Alasan dan Kontras (Eksplorasi Materi & Pola)",
+          "title_jp": "〜ので・〜のに — Alasan dan Kontras（解説）",
+          "desc_id": "Mempelajari urutan materi pedagogis buku Minna no Nihongo I & II pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Alasan dan Kontras.",
+          "grammar_ids": [
+            "gn4-00028"
+          ],
+          "vocab_ids": [
+            "vg-n4-00368",
+            "vg-n4-00359",
+            "vg-n4-00358",
+            "vg-n4-00029"
+          ],
+          "pedagogical_framework": {
+            "what": {
+              "summary": "Silabus resmi Minna no Nihongo I & II bab 36.",
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Alasan dan Kontras.",
+              "targetPatterns": [
+                "gn4-00028"
+              ],
+              "coreVocabSample": [
+                "vg-n4-00368",
+                "vg-n4-00359",
+                "vg-n4-00358",
+                "vg-n4-00029"
+              ]
+            },
+            "sensei_context": {
+              "sceneIntro": "Kamu sedang mempelajari buku Minna no Nihongo I & II. Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Alasan dan Kontras.",
+              "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
+            },
+            "cultural_notes": {
+              "title": "Catatan Budaya & Konteks Pemakaian (Minna no Nihongo I & II)",
+              "etiquette": "Perhatikan konteks formalitas saat menggunakan pola kalimat ini kepada guru, teman, atau atasan.",
+              "taboos": "Hindari penggunaan pola kasual kepada orang yang baru pertama kali ditemui."
+            }
+          },
+          "dialogue": [
+            {
+              "id": "d1",
+              "speaker": "Sensei",
+              "speakerRole": "Tutor Belajar",
+              "jp": "〜ので・〜のに — Alasan dan Kontrasの勉強を始めましょう！",
+              "furigana": "べんきょうをはじめましょう！",
+              "romaji": "Benkyou wo hajimemashou!",
+              "idText": "Mari kita mulai belajar 〜ので・〜のに — Alasan dan Kontras!"
+            }
+          ],
+          "drills": [
+            {
+              "id": "dr1",
+              "type": "multiple-choice",
+              "prompt": "Apa fokus utama pada materi 〜ので・〜のに — Alasan dan Kontras di buku Minna no Nihongo I & II?",
+              "options": [
+                "Menguasai pola kalimat bab ini dengan pemahaman alami",
+                "Menghafal tanpa memahami konteks",
+                "Mengabaikan intonasi pengucapan",
+                "Hanya membaca terjemahan bahasa Inggris"
+              ],
+              "correctAnswer": "Menguasai pola kalimat bab ini dengan pemahaman alami",
+              "explanation": "Setiap bab dirancang untuk memperkuat kemampuan komunikasi fungsional pembelajar."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 24,
+      "id": "unit-curriculum-book-minna-24",
+      "level": "n4",
+      "pt_stage": 1,
+      "title_id": "Minna II: 〜てはいけません・〜なければなりません — Larangan dan Kewajiban",
+      "title_jp": "〜てはいけません・〜なければなりません — Larangan dan Kewajiban",
+      "theme": "Minna II",
+      "icon": "📙",
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Larangan dan Kewajiban.",
+      "grammar_ids": [
+        "gn4-00032",
+        "gn4-00033"
+      ],
+      "vocab_ids": [
+        "vg-n4-00447",
+        "vg-n4-00506",
+        "vg-n5-00083",
+        "vg-n4-00362"
+      ],
+      "lessons": [
+        {
+          "id": "les-curriculum-book-minna-u24-01",
+          "lesson_number": 1,
+          "title_id": "〜てはいけません・〜なければなりません — Larangan dan Kewajiban (Eksplorasi Materi & Pola)",
+          "title_jp": "〜てはいけません・〜なければなりません — Larangan dan Kewajiban（解説）",
+          "desc_id": "Mempelajari urutan materi pedagogis buku Minna no Nihongo I & II pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Larangan dan Kewajiban.",
+          "grammar_ids": [
+            "gn4-00032",
+            "gn4-00033"
+          ],
+          "vocab_ids": [
+            "vg-n4-00447",
+            "vg-n4-00506",
+            "vg-n5-00083",
+            "vg-n4-00362"
+          ],
+          "pedagogical_framework": {
+            "what": {
+              "summary": "Silabus resmi Minna no Nihongo I & II bab 37.",
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Larangan dan Kewajiban.",
+              "targetPatterns": [
+                "gn4-00032",
+                "gn4-00033"
+              ],
+              "coreVocabSample": [
+                "vg-n4-00447",
+                "vg-n4-00506",
+                "vg-n5-00083",
+                "vg-n4-00362"
+              ]
+            },
+            "sensei_context": {
+              "sceneIntro": "Kamu sedang mempelajari buku Minna no Nihongo I & II. Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Larangan dan Kewajiban.",
+              "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
+            },
+            "cultural_notes": {
+              "title": "Catatan Budaya & Konteks Pemakaian (Minna no Nihongo I & II)",
+              "etiquette": "Perhatikan konteks formalitas saat menggunakan pola kalimat ini kepada guru, teman, atau atasan.",
+              "taboos": "Hindari penggunaan pola kasual kepada orang yang baru pertama kali ditemui."
+            }
+          },
+          "dialogue": [
+            {
+              "id": "d1",
+              "speaker": "Sensei",
+              "speakerRole": "Tutor Belajar",
+              "jp": "〜てはいけません・〜なければなりません — Larangan dan Kewajibanの勉強を始めましょう！",
+              "furigana": "べんきょうをはじめましょう！",
+              "romaji": "Benkyou wo hajimemashou!",
+              "idText": "Mari kita mulai belajar 〜てはいけません・〜なければなりません — Larangan dan Kewajiban!"
+            }
+          ],
+          "drills": [
+            {
+              "id": "dr1",
+              "type": "multiple-choice",
+              "prompt": "Apa fokus utama pada materi 〜てはいけません・〜なければなりません — Larangan dan Kewajiban di buku Minna no Nihongo I & II?",
               "options": [
                 "Menguasai pola kalimat bab ini dengan pemahaman alami",
                 "Menghafal tanpa memahami konteks",

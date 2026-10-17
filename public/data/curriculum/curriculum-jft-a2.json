@@ -19,10 +19,13 @@
       "icon": "漢字",
       "can_do_summary": "Mampu membaca 100 kanji dasar kehidupan dan kosakata tempat kerja terapan.",
       "grammar_ids": [
-        "gn5-00001"
+        "gn4-00021"
       ],
       "vocab_ids": [
-        "vg-n5-00990"
+        "vg-n4-00001",
+        "vg-n4-00010",
+        "vg-n4-00030",
+        "vg-n4-00086"
       ],
       "lessons": [
         {
@@ -33,11 +36,13 @@
           "desc_id": "Penguasaan kosakata kerja dan kanji rambu petunjuk keselamatan di lingkungan pabrik dan kota.",
           "can_do_statement": "Mampu membaca 100 kanji dasar kehidupan dan kosakata tempat kerja terapan.",
           "grammar_ids": [
-            "gn5-00001"
+            "gn4-00021"
           ],
           "vocab_ids": [
-            "vg-n5-00990",
-            "vg-n5-00732"
+            "vg-n4-00001",
+            "vg-n4-00010",
+            "vg-n4-00030",
+            "vg-n4-00086"
           ],
           "pedagogical_framework": {
             "what": {
@@ -98,12 +103,16 @@
       "title_id": "Seksi 2: Kaiwa to Hyougen (Permintaan Izin & Alasan)",
       "title_jp": "会話と表現（依頼・許可・理由の説明）",
       "theme": "Requests & Explanations",
+      "icon": "💬",
       "can_do_summary": "Mampu meminta bantuan atasan, menjelaskan alasan keterlambatan, dan membuat janji bertemu.",
       "grammar_ids": [
-        "gn5-00001"
+        "gn4-00023"
       ],
       "vocab_ids": [
-        "vg-n5-00990"
+        "vg-n4-00095",
+        "vg-n4-00092",
+        "vg-n4-00021",
+        "vg-n4-00025"
       ],
       "lessons": [
         {
@@ -114,11 +123,13 @@
           "desc_id": "Pola kalimat percakapan kompleks yang melibatkan konjugasi bentuk Te, Nai, dan Ta.",
           "can_do_statement": "Mampu meminta bantuan atasan, menjelaskan alasan keterlambatan, dan membuat janji bertemu.",
           "grammar_ids": [
-            "gn5-00001"
+            "gn4-00023"
           ],
           "vocab_ids": [
-            "vg-n5-00990",
-            "vg-n5-00732"
+            "vg-n4-00095",
+            "vg-n4-00092",
+            "vg-n4-00021",
+            "vg-n4-00025"
           ],
           "pedagogical_framework": {
             "what": {
@@ -179,12 +190,16 @@
       "title_id": "Seksi 3: Choukai (Instruksi Kerja & Dialog Multiturn)",
       "title_jp": "聴解（作業指示と複数話者の会話）",
       "theme": "Multi-turn Audio",
+      "icon": "🎧",
       "can_do_summary": "Mampu menangkap inti arahan kerja mandor dan perubahan jadwal janji bertemu dari percakapan telepon.",
       "grammar_ids": [
-        "gn5-00001"
+        "gn4-00024"
       ],
       "vocab_ids": [
-        "vg-n5-00990"
+        "vg-n4-00035",
+        "vg-n4-00045",
+        "vg-n4-00050",
+        "vg-n4-00055"
       ],
       "lessons": [
         {
@@ -195,11 +210,13 @@
           "desc_id": "Simulasi ujian audio mendengarkan dengan opsi jeda intonasi dan kecepatan playback.",
           "can_do_statement": "Mampu menangkap inti arahan kerja mandor dan perubahan jadwal janji bertemu dari percakapan telepon.",
           "grammar_ids": [
-            "gn5-00001"
+            "gn4-00024"
           ],
           "vocab_ids": [
-            "vg-n5-00990",
-            "vg-n5-00732"
+            "vg-n4-00035",
+            "vg-n4-00045",
+            "vg-n4-00050",
+            "vg-n4-00055"
           ],
           "pedagogical_framework": {
             "what": {
@@ -260,12 +277,16 @@
       "title_id": "Seksi 4: Dokkai (Surat Edaran, Kontrak & Petunjuk Darurat)",
       "title_jp": "読解（回覧板・アパート契約書・防災マップ）",
       "theme": "Applied Reading",
+      "icon": "📜",
       "can_do_summary": "Mampu membaca surat edaran RT (Kairanban), instruksi mitigasi gempa, dan aturan sewa apartemen.",
       "grammar_ids": [
-        "gn5-00001"
+        "gn4-00028"
       ],
       "vocab_ids": [
-        "vg-n5-00990"
+        "vg-n4-00060",
+        "vg-n4-00065",
+        "vg-n4-00070",
+        "vg-n4-00075"
       ],
       "lessons": [
         {
@@ -276,11 +297,13 @@
           "desc_id": "Kemampuan membaca fungsional untuk bertahan hidup mandiri di lingkungan warga Jepang.",
           "can_do_statement": "Mampu membaca surat edaran RT (Kairanban), instruksi mitigasi gempa, dan aturan sewa apartemen.",
           "grammar_ids": [
-            "gn5-00001"
+            "gn4-00028"
           ],
           "vocab_ids": [
-            "vg-n5-00990",
-            "vg-n5-00732"
+            "vg-n4-00060",
+            "vg-n4-00065",
+            "vg-n4-00070",
+            "vg-n4-00075"
           ],
           "pedagogical_framework": {
             "what": {

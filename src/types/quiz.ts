@@ -13,7 +13,8 @@ export type QuizMode =
   | 'mora-pacing'
   | 'pitch-accent'
   | 'discourse-deconstruct'
-  | 'collocation-matrix';
+  | 'collocation-matrix'
+  | 'onomatopoeia';
 
 export interface QuizQuestion {
   id: string;
@@ -59,6 +60,8 @@ export interface QuizQuestionItem {
   tokens?: string[];  // for rearrange
   explanation: string;
   level: JLPTLevel;
+  audioUrl?: string;
+  promptImage?: string;
   panicTimeoutSeconds?: number;
   actionChecklist?: string[];
   moraBeats?: string[];

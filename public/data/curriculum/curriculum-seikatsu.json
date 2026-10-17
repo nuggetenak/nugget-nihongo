@@ -19,10 +19,14 @@
       "icon": "🏛️",
       "can_do_summary": "Mampu mengurus surat pindah (Juminhyo), mendaftar asuransi kesehatan (Kokumin Kenko Hoken), dan mengambil kartu My Number.",
       "grammar_ids": [
-        "gn5-00001"
+        "gn5-00001",
+        "gn5-00025"
       ],
       "vocab_ids": [
-        "vg-n5-00990"
+        "vg-n5-00488",
+        "vg-n5-00439",
+        "vg-n5-00435",
+        "vg-n5-00501"
       ],
       "lessons": [
         {
@@ -33,10 +37,14 @@
           "desc_id": "Langkah pertama yang wajib dilakukan dalam 14 hari pertama kedatangan di Jepang di loket balai kota.",
           "can_do_statement": "Mampu mengurus surat pindah (Juminhyo), mendaftar asuransi kesehatan (Kokumin Kenko Hoken), dan mengambil kartu My Number.",
           "grammar_ids": [
-            "gn5-00001"
+            "gn5-00001",
+            "gn5-00025"
           ],
           "vocab_ids": [
-            "vg-n5-00990"
+            "vg-n5-00488",
+            "vg-n5-00439",
+            "vg-n5-00435",
+            "vg-n5-00501"
           ],
           "pedagogical_framework": {
             "what": {
@@ -111,10 +119,14 @@
       "icon": "🗑️",
       "can_do_summary": "Mampu membedakan sampah mudah terbakar (Moeru), tidak terbakar (Moenai), plastik daur ulang (Shigen), dan sampah perabot besar (Sodai Gomi).",
       "grammar_ids": [
-        "gn5-00001"
+        "gn5-00025",
+        "gn5-00009"
       ],
       "vocab_ids": [
-        "vg-n5-00990"
+        "vg-n5-00003",
+        "vg-n5-00508",
+        "vg-n5-00509",
+        "vg-n5-00024"
       ],
       "lessons": [
         {
@@ -125,10 +137,14 @@
           "desc_id": "Etika bermasyarakat nomor satu di Jepang untuk menghindari teguran tetangga dan pengurus apartemen.",
           "can_do_statement": "Mampu membedakan sampah mudah terbakar (Moeru), tidak terbakar (Moenai), plastik daur ulang (Shigen), dan sampah perabot besar (Sodai Gomi).",
           "grammar_ids": [
-            "gn5-00001"
+            "gn5-00025",
+            "gn5-00009"
           ],
           "vocab_ids": [
-            "vg-n5-00990"
+            "vg-n5-00003",
+            "vg-n5-00508",
+            "vg-n5-00509",
+            "vg-n5-00024"
           ],
           "pedagogical_framework": {
             "what": {
@@ -203,10 +219,14 @@
       "icon": "🏢",
       "can_do_summary": "Mampu membuka rekening tabungan bank Yucho, memahami tagihan listrik/air/gas, dan membayar di konbini.",
       "grammar_ids": [
-        "gn5-00001"
+        "gn5-00007",
+        "gn5-00021"
       ],
       "vocab_ids": [
-        "vg-n5-00990"
+        "vg-n5-00505",
+        "vg-n5-00506",
+        "vg-n5-00441",
+        "vg-n5-00021"
       ],
       "lessons": [
         {
@@ -217,10 +237,14 @@
           "desc_id": "Navigasi finansial mandiri dan kontrak sewa tempat tinggal di Jepang tanpa kendala.",
           "can_do_statement": "Mampu membuka rekening tabungan bank Yucho, memahami tagihan listrik/air/gas, dan membayar di konbini.",
           "grammar_ids": [
-            "gn5-00001"
+            "gn5-00007",
+            "gn5-00021"
           ],
           "vocab_ids": [
-            "vg-n5-00990"
+            "vg-n5-00505",
+            "vg-n5-00506",
+            "vg-n5-00441",
+            "vg-n5-00021"
           ],
           "pedagogical_framework": {
             "what": {
@@ -295,10 +319,14 @@
       "icon": "🚨",
       "can_do_summary": "Mampu merespon bunyi alarm gempa HP (J-Alert), menghubungi 110 (polisi) / 119 (ambulans), dan evakuasi ke Hinanjo.",
       "grammar_ids": [
-        "gn5-00001"
+        "gn5-00025",
+        "gn5-00010"
       ],
       "vocab_ids": [
-        "vg-n5-00990"
+        "vg-n5-00510",
+        "vg-n5-00511",
+        "vg-n5-00512",
+        "vg-n5-00023"
       ],
       "lessons": [
         {
@@ -309,10 +337,14 @@
           "desc_id": "Prosedur keselamatan darurat untuk melindungi diri sendiri saat bencana gempa bumi, angin topan, atau kebakaran.",
           "can_do_statement": "Mampu merespon bunyi alarm gempa HP (J-Alert), menghubungi 110 (polisi) / 119 (ambulans), dan evakuasi ke Hinanjo.",
           "grammar_ids": [
-            "gn5-00001"
+            "gn5-00025",
+            "gn5-00010"
           ],
           "vocab_ids": [
-            "vg-n5-00990"
+            "vg-n5-00510",
+            "vg-n5-00511",
+            "vg-n5-00512",
+            "vg-n5-00023"
           ],
           "pedagogical_framework": {
             "what": {

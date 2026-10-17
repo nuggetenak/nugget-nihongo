@@ -1,7 +1,7 @@
 {
-  "name": "Nugget Nihongo · Belajar JLPT",
+  "name": "Nugget Nihongo · Belajar JLPT & SSW",
   "short_name": "Nugget日本語",
-  "description": "Aplikasi belajar bahasa Jepang JLPT N5–N1: Kosakata, Tata Bahasa, Latihan Kuis, dan Kebun Kata.",
+  "description": "Aplikasi belajar bahasa Jepang JLPT N5–N1 & SSW: Kosakata, Tata Bahasa, Latihan Kuis, dan Kebun Kata.",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",
@@ -11,8 +11,32 @@
   "categories": ["education", "reference"],
   "icons": [
     {
-      "src": "/icons/icon-192.png",
-      "sizes": "192x192",
+      "src": "/icons/icon-48.png",
+      "sizes": "48x48",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-72.png",
+      "sizes": "72x72",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-96.png",
+      "sizes": "96x96",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-128.png",
+      "sizes": "128x128",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-144.png",
+      "sizes": "144x144",
       "type": "image/png",
       "purpose": "any"
     },
@@ -20,7 +44,19 @@
       "src": "/icons/icon-192.png",
       "sizes": "192x192",
       "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-192-maskable.png",
+      "sizes": "192x192",
+      "type": "image/png",
       "purpose": "maskable"
+    },
+    {
+      "src": "/icons/icon-384.png",
+      "sizes": "384x384",
+      "type": "image/png",
+      "purpose": "any"
     },
     {
       "src": "/icons/icon-512.png",
@@ -29,10 +65,26 @@
       "purpose": "any"
     },
     {
-      "src": "/icons/icon-512.png",
+      "src": "/icons/icon-512-maskable.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/icons/screenshot-desktop.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Tampilan Desktop Nugget Nihongo"
+    },
+    {
+      "src": "/icons/screenshot-mobile.png",
+      "sizes": "390x844",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Tampilan Mobile Nugget Nihongo"
     }
   ],
   "shortcuts": [

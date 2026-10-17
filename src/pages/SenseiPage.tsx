@@ -43,7 +43,7 @@ const ROLEPLAY_SCENARIOS = [
   {
     id: 'konbini',
     title: '🏪 Kasir Konbini',
-    prompt: 'Halo! Saya sedang membayar onigiri dan teh hijau di kasir 7-Eleven. Tolong layani saya dan tanyakan apakah saya butuh kantong plastik atau struk.',
+    prompt: 'Halo! Saya sedang membayar onigiri dan teh hijau di kasir 7-Eleven. Tolong layani saya dan tanyakan apakah saya butuh kantung plastik atau struk.',
   },
   {
     id: 'station',
@@ -89,6 +89,7 @@ export const SenseiPage: React.FC = () => {
   const [inputText, setInputText] = useState('');
   const [isLoading, setIsLoading] = useState(false);
   const [isPlayingVoice, setIsPlayingVoice] = useState<string | null>(null);
+  const [isClearConfirmOpen, setIsClearConfirmOpen] = useState(false);
 
   const messagesEndRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLTextAreaElement>(null);
@@ -180,13 +181,16 @@ export const SenseiPage: React.FC = () => {
   };
 
   const handleClearChat = () => {
-    if (confirm('Hapus seluruh riwayat percakapan pada mode ini?')) {
-      clearChatHistory(mode);
-      setMessages([]);
-      stopPersonaVoice();
-      setIsPlayingVoice(null);
-      showToast('Riwayat chat telah dibersihkan', '🗑️');
-    }
+    setIsClearConfirmOpen(true);
+  };
+
+  const handleConfirmClear = () => {
+    clearChatHistory(mode);
+    setMessages([]);
+    stopPersonaVoice();
+    setIsPlayingVoice(null);
+    setIsClearConfirmOpen(false);
+    showToast('Riwayat chat telah dibersihkan', '🗑️');
   };
 
   const handlePlayVoice = (msgId: string, content: string) => {
@@ -211,7 +215,7 @@ export const SenseiPage: React.FC = () => {
   };
 
   return (
-    <div className="w-full max-w-4xl mx-auto py-3 sm:py-6 px-2 sm:px-4 space-y-4 sm:space-y-6 animate-in fade-in duration-300 overflow-x-hidden">
+    <div className="w-full max-w-4xl mx-auto py-3 sm:py-6 px-2 sm:px-4 pb-[calc(5.5rem+env(safe-area-inset-bottom))] lg:pb-12 space-y-4 sm:space-y-6 animate-in fade-in duration-300 overflow-x-hidden min-w-0">
       {/* ── Header Studio & Persona Switcher ── */}
       <div className="bg-surface border border-accent/20 rounded-2xl sm:rounded-3xl p-4 sm:p-6 shadow-sm flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
         <div className="flex items-center gap-3 sm:gap-4">
@@ -458,7 +462,7 @@ export const SenseiPage: React.FC = () => {
                 : 'Tulis kalimat bahasa Jepangmu di sini untuk diperiksa... (Tekan Enter)'
             }
             rows={2}
-            className="flex-1 bg-surface-2 border border-accent/15 focus:border-accent rounded-xl px-3.5 py-2.5 text-xs sm:text-sm text-appText-bright placeholder:text-appText-muted/60 focus:outline-hidden resize-none transition-colors"
+            className="flex-1 bg-surface-2 border border-accent/15 focus:border-accent rounded-xl px-3.5 py-2.5 text-xs sm:text-sm text-appText-bright placeholder:text-appText-muted/60 focus:outline-none resize-none transition-colors"
           />
 
           <button
@@ -491,6 +495,50 @@ export const SenseiPage: React.FC = () => {
           </button>
         </div>
       </div>
+
+      {/* Non-Blocking Chat Clear Confirmation Modal */}
+      {isClearConfirmOpen && (
+        <div
+          className="fixed inset-0 z-50 bg-black/70 backdrop-blur-sm flex items-end sm:items-center justify-center p-0 sm:p-4 animate-in fade-in duration-150"
+          role="dialog"
+          aria-modal="true"
+        >
+          <div
+            onClick={(e) => e.stopPropagation()}
+            className="w-full max-w-sm bg-surface border border-accent/25 rounded-t-3xl sm:rounded-2xl p-6 space-y-4 shadow-2xl animate-in slide-in-from-bottom-4 duration-200"
+          >
+            <div className="w-12 h-1.5 rounded-full bg-accent/25 mx-auto -mt-2 mb-2 sm:hidden" />
+            <div className="flex items-center gap-3 text-red-500">
+              <div className="w-10 h-10 rounded-xl bg-red-500/15 border border-red-500/30 flex items-center justify-center text-xl">
+                🗑️
+              </div>
+              <div>
+                <h3 className="font-bold text-sm text-appText-bright">Hapus Riwayat Chat</h3>
+                <p className="text-[11px] text-appText-muted">Tindakan ini tidak dapat dibatalkan.</p>
+              </div>
+            </div>
+            <p className="text-xs text-appText-muted leading-relaxed">
+              Apakah kamu yakin ingin membersihkan seluruh percakapan mode ini bersama {persona === 'sensei_nugget' ? 'Sensei Nugget' : 'Senpai Aoi'}?
+            </p>
+            <div className="flex items-center justify-end gap-2.5 pt-2">
+              <button
+                type="button"
+                onClick={() => setIsClearConfirmOpen(false)}
+                className="px-4 py-2 rounded-xl bg-surface-2 hover:bg-surface-3 text-xs font-semibold text-appText-muted transition-colors active:scale-95"
+              >
+                Batal
+              </button>
+              <button
+                type="button"
+                onClick={handleConfirmClear}
+                className="px-4 py-2 rounded-xl bg-red-600 hover:bg-red-500 text-white text-xs font-bold transition-all shadow-md active:scale-95"
+              >
+                Ya, Hapus Riwayat
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 };

@@ -7,6 +7,8 @@ import React, { useState, useRef } from 'react';
 import { Volume2, Eye, EyeOff, Gauge, Play, Square, Compass, Sparkles } from 'lucide-react';
 import { LessonDialogueLine } from '../../../types/curriculum';
 import { speakJapanese } from '../../../lib/audio/speechEngine';
+import { resolveSpeakerPersona } from '../../../lib/audio/personaVoices';
+import { RubyText } from '../../ui/RubyText';
 
 interface DialogueStageProps {
   dialogue?: LessonDialogueLine[];
@@ -24,8 +26,27 @@ export const DialogueStage: React.FC<DialogueStageProps> = ({ dialogue = [], sce
 
   const handlePlayAudio = async (line: LessonDialogueLine) => {
     setPlayingLineId(line.id);
+
+    // Bimodal audio playback: try pre-rendered audio asset first if available
+    if (line.audio_url) {
+      try {
+        const audio = new Audio(line.audio_url);
+        audio.playbackRate = speechRate;
+        await new Promise<void>((resolve, reject) => {
+          audio.onended = () => resolve();
+          audio.onerror = () => reject(new Error('Pre-rendered audio playback failed'));
+          audio.play().catch(reject);
+        });
+        setPlayingLineId(null);
+        return;
+      } catch {
+        // Fallback to Web Speech API on error or offline
+      }
+    }
+
+    const persona = resolveSpeakerPersona(line.speaker);
     const textToSpeak = line.jp || line.furigana || '';
-    await speakJapanese(textToSpeak, speechRate, () => {
+    await speakJapanese(textToSpeak, { rate: speechRate, gender: persona.gender }, () => {
       setPlayingLineId(null);
     });
   };
@@ -51,12 +72,9 @@ export const DialogueStage: React.FC<DialogueStageProps> = ({ dialogue = [], sce
       const line = dialogue[i];
       setPlayingLineId(line.id);
 
-      await new Promise<void>((resolve) => {
-        const textToSpeak = line.jp || line.furigana || '';
-        speakJapanese(textToSpeak, speechRate, () => {
-          resolve();
-        });
-      });
+      const persona = resolveSpeakerPersona(line.speaker);
+      const textToSpeak = line.jp || line.furigana || '';
+      await speakJapanese(textToSpeak, { rate: speechRate, gender: persona.gender });
 
       // Jeda alami antar penutur
       await new Promise((r) => setTimeout(r, 400));
@@ -167,8 +185,10 @@ export const DialogueStage: React.FC<DialogueStageProps> = ({ dialogue = [], sce
               }`}
             >
               {/* Avatar Penutur */}
-              <div className="w-11 h-11 rounded-2xl bg-surface-2 border border-accent/20 flex items-center justify-center text-2xl shrink-0 select-none shadow-sm">
-                {line.avatar || (isEven ? '🧑‍💼' : '🙋‍♂️')}
+              <div className={`w-11 h-11 rounded-2xl bg-surface-2 border border-accent/20 flex items-center justify-center text-2xl shrink-0 select-none shadow-sm transition-transform ${
+                isPlaying ? 'scale-110 animate-pulse ring-2 ring-amber-400/50' : ''
+              }`}>
+                {line.avatar || resolveSpeakerPersona(line.speaker, line.speakerRole).avatar}
               </div>
 
               {/* Isi Dialog */}
@@ -205,8 +225,8 @@ export const DialogueStage: React.FC<DialogueStageProps> = ({ dialogue = [], sce
                 </div>
 
                 {/* Teks Bahasa Jepang */}
-                <div className="text-base sm:text-lg font-jp font-semibold text-appText-bright leading-relaxed break-words">
-                  {showFurigana && line.furigana ? line.furigana : line.jp}
+                <div className="text-base sm:text-lg font-jp font-semibold text-appText-bright leading-relaxed [word-break:keep-all] [overflow-wrap:anywhere]">
+                  <RubyText text={line.jp} furigana={line.furigana} showFurigana={showFurigana} />
                 </div>
 
                 {/* Romaji */}

@@ -13,17 +13,173 @@ export interface XPLevelInfo {
 }
 
 export const XP_LEVELS: XPLevelInfo[] = [
-  { level: 1,  xp: 0,      title: 'Pemula',          titleJp: '初心者' },
-  { level: 2,  xp: 100,    title: 'Pelajar Baru',    titleJp: '新入生' },
-  { level: 3,  xp: 300,    title: 'Murid Tekun',     titleJp: '勤勉な生徒' },
-  { level: 4,  xp: 600,    title: 'Pencari Ilmu',    titleJp: '学び人' },
-  { level: 5,  xp: 1000,   title: 'Pejuang Kanji',   titleJp: '漢字戦士' },
-  { level: 6,  xp: 1500,   title: 'Penerjemah Muda', titleJp: '若き通訳' },
-  { level: 7,  xp: 2500,   title: 'Ahli Bunpou',     titleJp: '文法達人' },
-  { level: 8,  xp: 4000,   title: 'Pembaca Lancar',  titleJp: '速読家' },
-  { level: 9,  xp: 6000,   title: 'Penguasa Bahasa', titleJp: '言葉の主' },
-  { level: 10, xp: 10000,  title: 'Nihongo Master',  titleJp: '日本語マスター' },
+  // ── Levels 1–10: N5 Foundation (0 to 5,000 XP) ──
+  { level: 1,  xp: 0,      title: 'Pemula',                   titleJp: '初心者' },
+  { level: 2,  xp: 100,    title: 'Pelajar Baru',             titleJp: '新入生' },
+  { level: 3,  xp: 300,    title: 'Murid Tekun',              titleJp: '勤勉な生徒' },
+  { level: 4,  xp: 600,    title: 'Pencari Ilmu',             titleJp: '学び人' },
+  { level: 5,  xp: 1000,   title: 'Pejuang Hiragana',         titleJp: 'ひらがな戦士' },
+  { level: 6,  xp: 1500,   title: 'Penerjemah Muda',          titleJp: '若き通訳' },
+  { level: 7,  xp: 2200,   title: 'Pelafal Mora',             titleJp: 'モーラ発音手' },
+  { level: 8,  xp: 3000,   title: 'Penghafal Katakana',       titleJp: 'カタカナ使い' },
+  { level: 9,  xp: 4000,   title: 'Pionir Bunpou',            titleJp: '文法の開拓者' },
+  { level: 10, xp: 5000,   title: 'Pejuang Dasar N5',         titleJp: 'N5基礎戦士' },
+
+  // ── Levels 11–20: N4 Daily Communicator (5,001 to 20,000 XP) ──
+  { level: 11, xp: 6200,   title: 'Penutur Pemula',           titleJp: '初級対話者' },
+  { level: 12, xp: 7500,   title: 'Penjelajah Pola',          titleJp: 'パターン探究者' },
+  { level: 13, xp: 9000,   title: 'Pendengar Seikatsu',       titleJp: '生活の聴き手' },
+  { level: 14, xp: 10500,  title: 'Pembeda Partikel',         titleJp: '助詞の見分け手' },
+  { level: 15, xp: 12000,  title: 'Pengrajin Kalimat',        titleJp: '文章の職人' },
+  { level: 16, xp: 13500,  title: 'Penutur Sopan Teinei',     titleJp: '丁寧語の遣い手' },
+  { level: 17, xp: 15000,  title: 'Penjelajah Kota',          titleJp: '街の案内人' },
+  { level: 18, xp: 16500,  title: 'Pengatur Waktu Toki',      titleJp: '時の把握者' },
+  { level: 19, xp: 18200,  title: 'Penguasa Aizuchi',         titleJp: '相槌の名手' },
+  { level: 20, xp: 20000,  title: 'Penutur Seikatsu N4',      titleJp: 'N4生活達人' },
+
+  // ── Levels 21–30: N3 Bridge Master (20,001 to 60,000 XP) ──
+  { level: 21, xp: 23000,  title: 'Penyambung Wacana',        titleJp: '接続の架け橋' },
+  { level: 22, xp: 26500,  title: 'Pembeda Nuansa',           titleJp: 'ニュアンス看破者' },
+  { level: 23, xp: 30000,  title: 'Penutur Pengandaian',      titleJp: '仮定の探求者' },
+  { level: 24, xp: 34000,  title: 'Pengamat Shieki Ukemi',    titleJp: '使役受動の解読者' },
+  { level: 25, xp: 38500,  title: 'Pembaca Wacana',           titleJp: '文章読解手' },
+  { level: 26, xp: 43000,  title: 'Penakluk Kanji Menengah',  titleJp: '中級漢字の覇者' },
+  { level: 27, xp: 48000,  title: 'Penutur Keigo Pemula',     titleJp: '敬語の門弟' },
+  { level: 28, xp: 52500,  title: 'Penyimak Siaran',          titleJp: '放送の聞き手' },
+  { level: 29, xp: 56500,  title: 'Arsitek Logika Jepang',    titleJp: '日本語論理の構築者' },
+  { level: 30, xp: 60000,  title: 'Jembatan Menengah N3',     titleJp: 'N3中級の架橋者' },
+
+  // ── Levels 31–40: N2 Advanced Professional (60,001 to 140,000 XP) ──
+  { level: 31, xp: 66000,  title: 'Praktisi Bisnis',          titleJp: 'ビジネス実務者' },
+  { level: 32, xp: 73000,  title: 'Penutur Sonkeigo',         titleJp: '尊敬語の達手' },
+  { level: 33, xp: 81000,  title: 'Penutur Kenjougo',         titleJp: '謙譲語の達手' },
+  { level: 34, xp: 89000,  title: 'Pembeda Makro Diskurus',   titleJp: 'マクロ言説の分析者' },
+  { level: 35, xp: 98000,  title: 'Penyimak Diskusi Cepat',   titleJp: '迅速対話の傍聴者' },
+  { level: 36, xp: 107000, title: 'Penganalisis Opini',       titleJp: '評論の解読者' },
+  { level: 37, xp: 117000, title: 'Spesialis Gemba K3',       titleJp: '現場安全の指南役' },
+  { level: 38, xp: 127000, title: 'Penyusun Dokumen Resmi',   titleJp: '公的文書の起草者' },
+  { level: 39, xp: 135000, title: 'Pakar Negosiasi',          titleJp: '交渉の調停者' },
+  { level: 40, xp: 140000, title: 'Praktisi Mahir N2',        titleJp: 'N2上級実務者' },
+
+  // ── Levels 41–50: N1 / Master Sage (140,001 to 250,000 XP) ──
+  { level: 41, xp: 150000, title: 'Penelaah Sastra',          titleJp: '文芸の探訪者' },
+  { level: 42, xp: 161000, title: 'Pakar Ungkapan Klasik',    titleJp: '慣用句の碩学' },
+  { level: 43, xp: 173000, title: 'Pengurai Struktur Abstrak',titleJp: '抽象論理の解明者' },
+  { level: 44, xp: 185000, title: 'Penyimak Nuansa Halus',    titleJp: '微妙なニュアンスの鑑賞者' },
+  { level: 45, xp: 198000, title: 'Pakar Yojijukugo',         titleJp: '四字熟語の大家' },
+  { level: 46, xp: 211000, title: 'Ahli Retorika Tinggi',     titleJp: '高度レトリックの達人' },
+  { level: 47, xp: 224000, title: 'Filsuf Bahasa Jepang',     titleJp: '日本語の哲人' },
+  { level: 48, xp: 236000, title: 'Penerjemah Simultan',      titleJp: '同時通訳の巨匠' },
+  { level: 49, xp: 245000, title: 'Begawan Nihongo',          titleJp: '日本語の長老' },
+  { level: 50, xp: 250000, title: 'Nihongo Master (Tatsujin)',titleJp: '日本語究極の達人' },
 ];
+
+/**
+ * Returns the highest reached level for a given XP value
+ */
+export function getLevelForXp(xp: number): XPLevelInfo {
+  let highest = XP_LEVELS[0];
+  for (const lvl of XP_LEVELS) {
+    if (xp >= lvl.xp) {
+      highest = lvl;
+    } else {
+      break;
+    }
+  }
+  return highest;
+}
+
+/**
+ * Computes level progression percentage and remaining XP to next level
+ */
+export function getNextLevelProgress(xp: number): {
+  currentLevel: XPLevelInfo;
+  nextLevel: XPLevelInfo | null;
+  progressPercent: number;
+  xpNeeded: number;
+} {
+  const current = getLevelForXp(xp);
+  const next = XP_LEVELS.find((l) => l.level === current.level + 1) || null;
+  if (!next) {
+    return { currentLevel: current, nextLevel: null, progressPercent: 100, xpNeeded: 0 };
+  }
+  const range = next.xp - current.xp;
+  const currentProgress = xp - current.xp;
+  const progressPercent = Math.min(100, Math.max(0, Math.round((currentProgress / range) * 100)));
+  const xpNeeded = Math.max(0, next.xp - xp);
+  return { currentLevel: current, nextLevel: next, progressPercent, xpNeeded };
+}
+
+// ── Anti-Cheat Rate Limiting & Daily Ceiling Constants (Ticket T-200) ──
+export const DAILY_XP_CAP = 2500;
+export const BURST_XP_CAP = 150; // max 150 XP per 10s
+export const BURST_WINDOW_MS = 10000;
+
+let xpBurstHistory: Array<{ timestamp: number; amount: number }> = [];
+
+/**
+ * Validates XP increment against daily ceiling (2,500 XP) and burst rate limits (150 XP / 10s).
+ */
+export function checkXpAntiCheat(amount: number): { allowed: boolean; effectiveAmount: number; reason?: string } {
+  if (amount <= 0) return { allowed: false, effectiveAmount: 0, reason: 'Invalid non-positive XP amount' };
+
+  const now = Date.now();
+  xpBurstHistory = xpBurstHistory.filter((item) => now - item.timestamp < BURST_WINDOW_MS);
+  const currentBurstTotal = xpBurstHistory.reduce((sum, item) => sum + item.amount, 0);
+
+  let effective = amount;
+  if (currentBurstTotal + effective > BURST_XP_CAP) {
+    const remainingBurst = Math.max(0, BURST_XP_CAP - currentBurstTotal);
+    if (remainingBurst <= 0) {
+      return { allowed: false, effectiveAmount: 0, reason: 'Burst rate limit exceeded (>150 XP / 10s)' };
+    }
+    effective = remainingBurst;
+  }
+
+  let todayStr = '';
+  try {
+    todayStr = new Intl.DateTimeFormat('en-CA', {
+      timeZone: typeof Intl !== 'undefined' ? Intl.DateTimeFormat().resolvedOptions().timeZone : 'Asia/Jakarta',
+      year: 'numeric',
+      month: '2-digit',
+      day: '2-digit',
+    }).format(new Date());
+  } catch {
+    todayStr = new Date().toISOString().slice(0, 10);
+  }
+
+  let dailyEarned = 0;
+  if (typeof window !== 'undefined') {
+    try {
+      const rawCap = localStorage.getItem('nn_daily_xp_cap');
+      if (rawCap) {
+        const parsed = JSON.parse(rawCap);
+        if (parsed.date === todayStr) {
+          dailyEarned = parsed.earned || 0;
+        }
+      }
+    } catch {}
+  }
+
+  if (dailyEarned >= DAILY_XP_CAP) {
+    return { allowed: false, effectiveAmount: 0, reason: 'Daily XP ceiling reached (2500 XP/day)' };
+  }
+
+  effective = Math.min(effective, DAILY_XP_CAP - dailyEarned);
+  if (effective <= 0) {
+    return { allowed: false, effectiveAmount: 0, reason: 'Daily XP ceiling reached' };
+  }
+
+  xpBurstHistory.push({ timestamp: now, amount: effective });
+
+  if (typeof window !== 'undefined') {
+    try {
+      localStorage.setItem('nn_daily_xp_cap', JSON.stringify({ date: todayStr, earned: dailyEarned + effective }));
+    } catch {}
+  }
+
+  return { allowed: true, effectiveAmount: effective };
+}
 
 export interface BadgeItem {
   id: string;
@@ -98,6 +254,7 @@ export interface GamificationState {
     streak?: number;
     gardenBloomed?: boolean;
     perfectQuizSession?: boolean;
+    clientTimestamp?: number;
   }) => BadgeItem[];
 }
 
@@ -212,6 +369,14 @@ export const useGamificationStore = create<GamificationState>((set, get) => {
         try { localStorage.setItem('nn_quiz_mode_stats', JSON.stringify(stats)); } catch {}
       }
 
+      // Ticket T-199: Award +1 water drop for completing a Choukai listening session
+      if (mode === 'listening' || mode === 'choukai') {
+        try {
+          const { useGardenStore } = require('../garden/gardenStore');
+          useGardenStore.getState().addWaterDrop(1);
+        } catch {}
+      }
+
       get().checkAndAwardBadges({
         perfectQuizSession: score === total && total > 0,
       });
@@ -273,6 +438,9 @@ export const useGamificationStore = create<GamificationState>((set, get) => {
       const overall = get().getOverallQuizStats();
       const modeStats = get().quizModeStats;
 
+      // Ticket T-200: Monotonic clock validation against client tampering
+      const isTimeMonotonic = !context.clientTimestamp || Math.abs(Date.now() - context.clientTimestamp) <= 300000;
+
       updated.forEach((b, idx) => {
         if (b.earned) return;
 
@@ -294,8 +462,8 @@ export const useGamificationStore = create<GamificationState>((set, get) => {
         if (b.id === 'quiz-conjugation-3' && (modeStats['conjugation']?.sessionsCompleted || 0) >= 3) shouldEarn = true;
         if (b.id === 'quiz-rearrange-3' && (modeStats['rearrange']?.sessionsCompleted || 0) >= 3) shouldEarn = true;
         if (b.id === 'quiz-50-correct' && overall.totalCorrect >= 50) shouldEarn = true;
-        if (b.id === 'night-owl' && hour >= 0 && hour < 4) shouldEarn = true;
-        if (b.id === 'early-bird' && hour >= 4 && hour < 6) shouldEarn = true;
+        if (b.id === 'night-owl' && isTimeMonotonic && hour >= 0 && hour < 4) shouldEarn = true;
+        if (b.id === 'early-bird' && isTimeMonotonic && hour >= 4 && hour < 6) shouldEarn = true;
 
         if (shouldEarn) {
           const earnedItem = {

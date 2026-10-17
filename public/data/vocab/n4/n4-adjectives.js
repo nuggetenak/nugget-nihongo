@@ -7,1716 +7,3802 @@
 window.vocabN4_Adjectives = [
 
 {
-  id: 'vg-n4-00074',
-  word: '痛い',
-  reading: 'いたい',
-  romaji: 'itai',
-  meaning_id: 'sakit, nyeri',
-  meaning_en: 'painful, it hurts',
-  jlpt: 'n4',
-  pos: 'i-adj',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['kesehatan'],
-  register: 'neutral',
-  lawan_bicara: [],
-  nuance: null,
-  conj_type: 'adj-i',
-  examples: [{"jp":"昨日から歯が痛いので、歯医者に行きます。","id":"Karena sejak kemarin gigi saya sakit, saya akan pergi ke dokter gigi.","level":"n4","tags":["kesehatan"]},{"jp":"重い荷物を持って腕が痛くなりました。","id":"Lengan saya menjadi sakit karena mengangkat barang bawaan berat.","level":"n4","tags":["kesehatan","kehidupan-sehari"]}],
-  synonyms: [],
-  antonyms: [],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus',
-  jmdict_seq: '1432680',
-  frequency: 8000,
-  forms: [{"word": "痛い", "info": []}, {"word": "甚い", "info": ["kanji jarang dipakai"]}],
-  meanings: [{"en": "painful; sore", "misc": [], "field": []}, {"en": "cringy; embarrassing", "misc": ["percakapan kasual"], "field": []}],
-  misc_jm: ["kasual"],
+  "id": "vg-n4-00074",
+  "word": "痛い",
+  "reading": "いたい",
+  "romaji": "itai",
+  "meaning_id": "sakit, nyeri",
+  "meaning_en": "painful, it hurts",
+  "jlpt": "n4",
+  "pos": "i-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kesehatan"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [],
+  "nuance": null,
+  "conj_type": "adj-i",
+  "examples": [
+    {
+      "jp": "昨日から歯が痛いので、歯医者に行きます。",
+      "id": "Karena sejak kemarin gigi saya sakit, saya akan pergi ke dokter gigi.",
+      "level": "n4",
+      "tags": [
+        "kesehatan"
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"イタ＼イ"}
+},
+    {
+      "jp": "重い荷物を持って腕が痛くなりました。",
+      "id": "Lengan saya menjadi sakit karena mengangkat barang bawaan berat.",
+      "level": "n4",
+      "tags": [
+        "kesehatan",
+        "kehidupan-sehari"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus",
+  "jmdict_seq": "1432680",
+  "frequency": 8000,
+  "forms": [
+    {
+      "word": "痛い",
+      "info": []
+    },
+    {
+      "word": "甚い",
+      "info": [
+        "kanji jarang dipakai"
+      ]
+    }
+  ],
+  "meanings": [
+    {
+      "en": "painful; sore",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "cringy; embarrassing",
+      "misc": [
+        "percakapan kasual"
+      ],
+      "field": []
+    }
+  ],
+  "misc_jm": [
+    "kasual"
+  ]
 },
 
 {
-  id: 'vg-n4-00138',
-  word: '変な',
-  reading: 'へんな',
-  romaji: 'henna',
-  meaning_id: 'aneh',
-  meaning_en: 'strange, odd',
-  jlpt: 'n4',
-  pos: 'na-adj',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['perubahan'],
-  register: 'neutral',
-  lawan_bicara: [],
-  nuance: null,
-  conj_type: 'adj-na',
-  examples: [{"jp":"夜中に外から変な音が聞こえて目が覚めました。","id":"Saya terbangun karena mendengar suara aneh dari luar di tengah malam.","level":"n4","tags":["kehidupan-sehari"]},{"jp":"このスープは少し変な味がします。","id":"Sup ini rasanya agak aneh.","level":"n4","tags":["makanan-minuman"]}],
-  synonyms: [],
-  antonyms: [],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  "id": "vg-n4-00138",
+  "word": "変な",
+  "reading": "へんな",
+  "romaji": "henna",
+  "meaning_id": "aneh",
+  "meaning_en": "strange, odd",
+  "jlpt": "n4",
+  "pos": "na-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "perubahan"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [],
+  "nuance": null,
+  "conj_type": "adj-na",
+  "examples": [
+    {
+      "jp": "夜中に外から変な音が聞こえて目が覚めました。",
+      "id": "Saya terbangun karena mendengar suara aneh dari luar di tengah malam.",
+      "level": "n4",
+      "tags": [
+        "kehidupan-sehari"
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"イタ＼イ"}
+},
+    {
+      "jp": "このスープは少し変な味がします。",
+      "id": "Sup ini rasanya agak aneh.",
+      "level": "n4",
+      "tags": [
+        "makanan-minuman"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus"
 },
 
 {
-  id: 'vg-n4-00144',
-  word: '悲しい',
-  reading: 'かなしい',
-  romaji: 'kanashii',
-  meaning_id: 'sedih',
-  meaning_en: 'sad, sorrowful',
-  jlpt: 'n4',
-  pos: 'i-adj',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['emosi'],
-  register: 'neutral',
-  lawan_bicara: [],
-  nuance: '悲しい = sedih (adj-i). Lawan: 嬉しい/楽しい. 悲しくなる = menjadi sedih.',
-  conj_type: 'adj-i',
-  examples: [{"jp": "大切な人と別れて悲しいです。", "id": "Saya sedih berpisah dari orang yang penting.", "level": "n4", "tags": ["emosi", "hubungan"]}],
-  synonyms: [],
-  antonyms: [],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus',
-  jmdict_seq: '1483190',
-  frequency: 17500,
-  forms: [{"word": "悲しい", "info": []}, {"word": "哀しい", "info": []}, {"word": "愛しい", "info": ["kanji jarang dipakai"]}],
-  meanings: [{"en": "sad; miserable; unhappy; sorrowful", "misc": [], "field": []}, {"en": "sad; lamentable; deplorable; grievous", "misc": [], "field": []}],
+  "id": "vg-n4-00144",
+  "word": "悲しい",
+  "reading": "かなしい",
+  "romaji": "kanashii",
+  "meaning_id": "sedih",
+  "meaning_en": "sad, sorrowful",
+  "jlpt": "n4",
+  "pos": "i-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "emosi"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [],
+  "nuance": "悲しい = sedih (adj-i). Lawan: 嬉しい/楽しい. 悲しくなる = menjadi sedih.",
+  "conj_type": "adj-i",
+  "examples": [
+    {
+      "jp": "大切な人と別れて悲しいです。",
+      "id": "Saya sedih berpisah dari orang yang penting.",
+      "level": "n4",
+      "tags": [
+        "emosi",
+        "hubungan"
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"カナシイ￣"}
+}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus",
+  "jmdict_seq": "1483190",
+  "frequency": 17500,
+  "forms": [
+    {
+      "word": "悲しい",
+      "info": []
+    },
+    {
+      "word": "哀しい",
+      "info": []
+    },
+    {
+      "word": "愛しい",
+      "info": [
+        "kanji jarang dipakai"
+      ]
+    }
+  ],
+  "meanings": [
+    {
+      "en": "sad; miserable; unhappy; sorrowful",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "sad; lamentable; deplorable; grievous",
+      "misc": [],
+      "field": []
+    }
+  ]
 },
 
 {
-  id: 'vg-n4-00185',
-  word: '様々な',
-  reading: 'さまざまな',
-  romaji: 'samazamana',
-  meaning_id: 'beragam, berbagai',
-  meaning_en: 'various, diverse',
-  jlpt: 'n4',
-  pos: 'na-adj',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['kualitas'],
-  register: 'neutral',
-  lawan_bicara: [],
-  nuance: null,
-  conj_type: 'adj-na',
-  examples: [{"jp":"このデパートには様々な国の商品が並んでいます。","id":"Di toserba ini berjejer barang-barang dari berbagai negara.","level":"n4","tags":["belanja"]},{"jp":"大学で様々な分野の専門知識を学びたいです。","id":"Saya ingin mempelajari pengetahuan khusus dari berbagai bidang di universitas.","level":"n4","tags":["pendidikan"]}],
-  synonyms: [],
-  antonyms: [],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  "id": "vg-n4-00185",
+  "word": "様々な",
+  "reading": "さまざまな",
+  "romaji": "samazamana",
+  "meaning_id": "beragam, berbagai",
+  "meaning_en": "various, diverse",
+  "jlpt": "n4",
+  "pos": "na-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kualitas"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [],
+  "nuance": null,
+  "conj_type": "adj-na",
+  "examples": [
+    {
+      "jp": "このデパートには様々な国の商品が並んでいます。",
+      "id": "Di toserba ini berjejer barang-barang dari berbagai negara.",
+      "level": "n4",
+      "tags": [
+        "belanja"
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"カナシイ￣"}
+},
+    {
+      "jp": "大学で様々な分野の専門知識を学びたいです。",
+      "id": "Saya ingin mempelajari pengetahuan khusus dari berbagai bidang di universitas.",
+      "level": "n4",
+      "tags": [
+        "pendidikan"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus"
 },
 
 {
-  id: 'vg-n4-00187',
-  word: 'うれしい',
-  reading: 'うれしい',
-  romaji: 'ureshii',
-  meaning_id: 'senang, gembira',
-  meaning_en: 'happy, glad',
-  jlpt: 'n4',
-  pos: 'i-adj',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['kualitas'],
-  register: 'neutral',
-  lawan_bicara: [],
-  nuance: null,
-  conj_type: 'adj-i',
-  examples: [{"jp":"友達から誕生日のプレゼントをもらってとてもうれしいです。","id":"Saya sangat gembira mendapat hadiah ulang tahun dari teman.","level":"n4","tags":["pertemanan","kehidupan-sehari"]},{"jp":"試験に合格できて、家族みんなでうれしい涙を流しました。","id":"Bisa lulus ujian, kami sekeluarga meneteskan air mata bahagia.","level":"n4","tags":["keluarga","pendidikan"]}],
-  synonyms: [],
-  antonyms: [],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus',
-  jmdict_seq: '1219510',
-  frequency: 1000,
-  forms: [{"word": "嬉しい", "info": []}, {"word": "欣しい", "info": ["search-only kanji form"]}],
-  meanings: [{"en": "happy; glad; pleased; delighted; overjoyed", "misc": [], "field": []}, {"en": "joyful; delightful; gratifying; pleasant", "misc": [], "field": []}],
+  "id": "vg-n4-00187",
+  "word": "うれしい",
+  "reading": "うれしい",
+  "romaji": "ureshii",
+  "meaning_id": "senang, gembira",
+  "meaning_en": "happy, glad",
+  "jlpt": "n4",
+  "pos": "i-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kualitas"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [],
+  "nuance": null,
+  "conj_type": "adj-i",
+  "examples": [
+    {
+      "jp": "友達から誕生日のプレゼントをもらってとてもうれしいです。",
+      "id": "Saya sangat gembira mendapat hadiah ulang tahun dari teman.",
+      "level": "n4",
+      "tags": [
+        "pertemanan",
+        "kehidupan-sehari"
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"ウレシ＼イ"}
+},
+    {
+      "jp": "試験に合格できて、家族みんなでうれしい涙を流しました。",
+      "id": "Bisa lulus ujian, kami sekeluarga meneteskan air mata bahagia.",
+      "level": "n4",
+      "tags": [
+        "keluarga",
+        "pendidikan"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus",
+  "jmdict_seq": "1219510",
+  "frequency": 1000,
+  "forms": [
+    {
+      "word": "嬉しい",
+      "info": []
+    },
+    {
+      "word": "欣しい",
+      "info": [
+        "search-only kanji form"
+      ]
+    }
+  ],
+  "meanings": [
+    {
+      "en": "happy; glad; pleased; delighted; overjoyed",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "joyful; delightful; gratifying; pleasant",
+      "misc": [],
+      "field": []
+    }
+  ]
 },
 
 {
-  id: 'vg-n4-00188',
-  word: 'かなしい',
-  reading: 'かなしい',
-  romaji: 'kanashii',
-  meaning_id: 'sedih',
-  meaning_en: 'sad, sorrowful',
-  jlpt: 'n4',
-  pos: 'i-adj',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['kualitas'],
-  register: 'neutral',
-  lawan_bicara: [],
-  nuance: null,
-  conj_type: 'adj-i',
-  examples: [{"jp":"かわいがっていた犬が死んでしまって本当にかなしいです。","id":"Saya sungguh sedih karena anjing kesayangan saya telah tiada.","level":"n4","tags":["keluarga","kehidupan-sehari"]},{"jp":"映画の最後の場面を見て、かなしい気持ちになりました。","id":"Melihat adegan terakhir film itu, perasaan saya menjadi sedih.","level":"n4","tags":["kehidupan-sehari"]}],
-  synonyms: [],
-  antonyms: [],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus',
-  jmdict_seq: '1483190',
-  frequency: 17500,
-  forms: [{"word": "悲しい", "info": []}, {"word": "哀しい", "info": []}, {"word": "愛しい", "info": ["kanji jarang dipakai"]}],
-  meanings: [{"en": "sad; miserable; unhappy; sorrowful", "misc": [], "field": []}, {"en": "sad; lamentable; deplorable; grievous", "misc": [], "field": []}],
+  "id": "vg-n4-00188",
+  "word": "かなしい",
+  "reading": "かなしい",
+  "romaji": "kanashii",
+  "meaning_id": "sedih",
+  "meaning_en": "sad, sorrowful",
+  "jlpt": "n4",
+  "pos": "i-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kualitas"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [],
+  "nuance": null,
+  "conj_type": "adj-i",
+  "examples": [
+    {
+      "jp": "かわいがっていた犬が死んでしまって本当にかなしいです。",
+      "id": "Saya sungguh sedih karena anjing kesayangan saya telah tiada.",
+      "level": "n4",
+      "tags": [
+        "keluarga",
+        "kehidupan-sehari"
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"ウレシ＼イ"}
+},
+    {
+      "jp": "映画の最後の場面を見て、かなしい気持ちになりました。",
+      "id": "Melihat adegan terakhir film itu, perasaan saya menjadi sedih.",
+      "level": "n4",
+      "tags": [
+        "kehidupan-sehari"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus",
+  "jmdict_seq": "1483190",
+  "frequency": 17500,
+  "forms": [
+    {
+      "word": "悲しい",
+      "info": []
+    },
+    {
+      "word": "哀しい",
+      "info": []
+    },
+    {
+      "word": "愛しい",
+      "info": [
+        "kanji jarang dipakai"
+      ]
+    }
+  ],
+  "meanings": [
+    {
+      "en": "sad; miserable; unhappy; sorrowful",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "sad; lamentable; deplorable; grievous",
+      "misc": [],
+      "field": []
+    }
+  ]
 },
 
 {
-  id: 'vg-n4-00189',
-  word: 'はずかしい',
-  reading: 'はずかしい',
-  romaji: 'hazukashii',
-  meaning_id: 'malu',
-  meaning_en: 'embarrassed, shy',
-  jlpt: 'n4',
-  pos: 'i-adj',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['kualitas'],
-  register: 'neutral',
-  lawan_bicara: [],
-  nuance: null,
-  conj_type: 'adj-i',
-  examples: [{"jp":"みんなの前で名前を間違えられてはずかしかったです。","id":"Saya merasa malu karena salah dipanggil nama di depan semua orang.","level":"n4","tags":["pendidikan","kehidupan-sehari"]},{"jp":"服を裏返しに着ていて、とてもはずかしい思いをしました。","id":"Saya memakai baju terbalik dan merasa sangat malu.","level":"n4","tags":["kehidupan-sehari"]}],
-  synonyms: [],
-  antonyms: [],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus',
-  jmdict_seq: '1421630',
-  frequency: 14000,
-  forms: [{"word": "恥ずかしい", "info": []}, {"word": "恥かしい", "info": ["search-only kanji form"]}, {"word": "恥しい", "info": ["search-only kanji form"]}, {"word": "羞ずかしい", "info": ["search-only kanji form"]}, {"word": "羞しい", "info": ["search-only kanji form"]}, {"word": "羞かしい", "info": ["search-only kanji form"]}],
-  meanings: [{"en": "embarrassing; embarrassed; ashamed; humiliated; shy", "misc": [], "field": []}, {"en": "disgraceful; shameful", "misc": [], "field": []}],
+  "id": "vg-n4-00189",
+  "word": "はずかしい",
+  "reading": "はずかしい",
+  "romaji": "hazukashii",
+  "meaning_id": "malu",
+  "meaning_en": "embarrassed, shy",
+  "jlpt": "n4",
+  "pos": "i-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kualitas"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [],
+  "nuance": null,
+  "conj_type": "adj-i",
+  "examples": [
+    {
+      "jp": "みんなの前で名前を間違えられてはずかしかったです。",
+      "id": "Saya merasa malu karena salah dipanggil nama di depan semua orang.",
+      "level": "n4",
+      "tags": [
+        "pendidikan",
+        "kehidupan-sehari"
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"カナシイ￣"}
+},
+    {
+      "jp": "服を裏返しに着ていて、とてもはずかしい思いをしました。",
+      "id": "Saya memakai baju terbalik dan merasa sangat malu.",
+      "level": "n4",
+      "tags": [
+        "kehidupan-sehari"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus",
+  "jmdict_seq": "1421630",
+  "frequency": 14000,
+  "forms": [
+    {
+      "word": "恥ずかしい",
+      "info": []
+    },
+    {
+      "word": "恥かしい",
+      "info": [
+        "search-only kanji form"
+      ]
+    },
+    {
+      "word": "恥しい",
+      "info": [
+        "search-only kanji form"
+      ]
+    },
+    {
+      "word": "羞ずかしい",
+      "info": [
+        "search-only kanji form"
+      ]
+    },
+    {
+      "word": "羞しい",
+      "info": [
+        "search-only kanji form"
+      ]
+    },
+    {
+      "word": "羞かしい",
+      "info": [
+        "search-only kanji form"
+      ]
+    }
+  ],
+  "meanings": [
+    {
+      "en": "embarrassing; embarrassed; ashamed; humiliated; shy",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "disgraceful; shameful",
+      "misc": [],
+      "field": []
+    }
+  ]
 },
 
 {
-  id: 'vg-n4-00190',
-  word: 'うらやましい',
-  reading: 'うらやましい',
-  romaji: 'urayamashii',
-  meaning_id: 'iri hati',
-  meaning_en: 'envious, jealous',
-  jlpt: 'n4',
-  pos: 'i-adj',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['kualitas'],
-  register: 'neutral',
-  lawan_bicara: [],
-  nuance: null,
-  conj_type: 'adj-i',
-  examples: [{"jp":"夏休みにハワイへ旅行に行く友達がうらやましいです。","id":"Saya iri kepada teman yang pergi berlibur ke Hawaii saat liburan musim panas.","level":"n4","tags":["pertemanan"]},{"jp":"彼は何でも上手にできて本当にうらやましいです。","id":"Dia bisa melakukan apa pun dengan mahir, sungguh membuat iri.","level":"n4","tags":["pertemanan","pekerjaan"]}],
-  synonyms: [],
-  antonyms: [],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus',
-  jmdict_seq: '1391940',
-  frequency: 1000,
-  forms: [{"word": "羨ましい", "info": []}, {"word": "羨しい", "info": ["search-only kanji form"]}],
-  meanings: [{"en": "envious; jealous", "misc": [], "field": []}, {"en": "enviable (position, etc.)", "misc": [], "field": []}],
+  "id": "vg-n4-00190",
+  "word": "うらやましい",
+  "reading": "うらやましい",
+  "romaji": "urayamashii",
+  "meaning_id": "iri hati",
+  "meaning_en": "envious, jealous",
+  "jlpt": "n4",
+  "pos": "i-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kualitas"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [],
+  "nuance": null,
+  "conj_type": "adj-i",
+  "examples": [
+    {
+      "jp": "夏休みにハワイへ旅行に行く友達がうらやましいです。",
+      "id": "Saya iri kepada teman yang pergi berlibur ke Hawaii saat liburan musim panas.",
+      "level": "n4",
+      "tags": [
+        "pertemanan"
+      ],
+  "pitch": {"pattern":4,"category":"nakadaka","mora_count":5,"downstep_mora":4,"contour":"ハズカシ＼イ"}
+},
+    {
+      "jp": "彼は何でも上手にできて本当にうらやましいです。",
+      "id": "Dia bisa melakukan apa pun dengan mahir, sungguh membuat iri.",
+      "level": "n4",
+      "tags": [
+        "pertemanan",
+        "pekerjaan"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus",
+  "jmdict_seq": "1391940",
+  "frequency": 1000,
+  "forms": [
+    {
+      "word": "羨ましい",
+      "info": []
+    },
+    {
+      "word": "羨しい",
+      "info": [
+        "search-only kanji form"
+      ]
+    }
+  ],
+  "meanings": [
+    {
+      "en": "envious; jealous",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "enviable (position, etc.)",
+      "misc": [],
+      "field": []
+    }
+  ]
 },
 
 {
-  id: 'vg-n4-00191',
-  word: 'くわしい',
-  reading: 'くわしい',
-  romaji: 'kuwashii',
-  meaning_id: 'terperinci, menguasai',
-  meaning_en: 'detailed, knowledgeable',
-  jlpt: 'n4',
-  pos: 'i-adj',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['kualitas'],
-  register: 'neutral',
-  lawan_bicara: [],
-  nuance: null,
-  conj_type: 'adj-i',
-  examples: [{"jp":"彼はパソコンの機能についてとてもくわしいです。","id":"Dia sangat menguasai fungsi-fungsi komputer secara terperinci.","level":"n4","tags":["pendidikan","pekerjaan"]},{"jp":"詳しい道順を紙に書いて教えてもらいました。","id":"Saya meminta petunjuk jalan yang terperinci dituliskan di kertas.","level":"n4","tags":["ruang-arah","kehidupan-sehari"]}],
-  synonyms: [],
-  antonyms: [],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus',
-  jmdict_seq: '1351730',
-  frequency: 3500,
-  forms: [{"word": "詳しい", "info": []}, {"word": "精しい", "info": []}, {"word": "委しい", "info": []}],
-  meanings: [{"en": "detailed; full; minute", "misc": [], "field": []}, {"en": "knowing very well; knowledgeable (about); well-acquainted (with); well-informed (about); familiar (with)", "misc": [], "field": []}],
+  "id": "vg-n4-00191",
+  "word": "くわしい",
+  "reading": "くわしい",
+  "romaji": "kuwashii",
+  "meaning_id": "terperinci, menguasai",
+  "meaning_en": "detailed, knowledgeable",
+  "jlpt": "n4",
+  "pos": "i-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kualitas"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [],
+  "nuance": null,
+  "conj_type": "adj-i",
+  "examples": [
+    {
+      "jp": "彼はパソコンの機能についてとてもくわしいです。",
+      "id": "Dia sangat menguasai fungsi-fungsi komputer secara terperinci.",
+      "level": "n4",
+      "tags": [
+        "pendidikan",
+        "pekerjaan"
+      ],
+  "pitch": {"pattern":5,"category":"nakadaka","mora_count":6,"downstep_mora":5,"contour":"ウラヤマシ＼イ"}
+},
+    {
+      "jp": "詳しい道順を紙に書いて教えてもらいました。",
+      "id": "Saya meminta petunjuk jalan yang terperinci dituliskan di kertas.",
+      "level": "n4",
+      "tags": [
+        "ruang-arah",
+        "kehidupan-sehari"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus",
+  "jmdict_seq": "1351730",
+  "frequency": 3500,
+  "forms": [
+    {
+      "word": "詳しい",
+      "info": []
+    },
+    {
+      "word": "精しい",
+      "info": []
+    },
+    {
+      "word": "委しい",
+      "info": []
+    }
+  ],
+  "meanings": [
+    {
+      "en": "detailed; full; minute",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "knowing very well; knowledgeable (about); well-acquainted (with); well-informed (about); familiar (with)",
+      "misc": [],
+      "field": []
+    }
+  ]
 },
 
 {
-  id: 'vg-n4-00192',
-  word: 'ひどい',
-  reading: 'ひどい',
-  romaji: 'hidoi',
-  meaning_id: 'parah, buruk',
-  meaning_en: 'terrible, awful, severe',
-  jlpt: 'n4',
-  pos: 'i-adj',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['kualitas'],
-  register: 'neutral',
-  lawan_bicara: [],
-  nuance: null,
-  conj_type: 'adj-i',
-  examples: [{"jp":"雨と風がひどいので、今日は外出をやめましょう。","id":"Karena hujan dan anginnya sangat buruk, mari kita urungkan keluar rumah hari ini.","level":"n4","tags":["alam-lingkungan","kehidupan-sehari"]},{"jp":"ひどい風邪をひいて三日間会社を休みました。","id":"Saya terkena flu parah dan tidak masuk kerja selama tiga hari.","level":"n4","tags":["kesehatan","pekerjaan"]}],
-  synonyms: [],
-  antonyms: [],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus',
-  jmdict_seq: '1602060',
-  frequency: 1000,
-  forms: [{"word": "酷い", "info": []}, {"word": "非道い", "info": ["kanji jarang dipakai"]}],
-  meanings: [{"en": "cruel; heartless; hard; harsh; severe", "misc": ["biasanya kana saja"], "field": []}, {"en": "violent; intense; strong; heavy; extreme", "misc": ["biasanya kana saja"], "field": []}, {"en": "very bad; terrible; awful", "misc": ["biasanya kana saja"], "field": []}, {"en": "excessive; exorbitant; unreasonable; outrageous; unfair; unjust", "misc": ["biasanya kana saja"], "field": []}],
-  misc_jm: ["biasanya kana saja"],
+  "id": "vg-n4-00192",
+  "word": "ひどい",
+  "reading": "ひどい",
+  "romaji": "hidoi",
+  "meaning_id": "parah, buruk",
+  "meaning_en": "terrible, awful, severe",
+  "jlpt": "n4",
+  "pos": "i-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kualitas"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [],
+  "nuance": null,
+  "conj_type": "adj-i",
+  "examples": [
+    {
+      "jp": "雨と風がひどいので、今日は外出をやめましょう。",
+      "id": "Karena hujan dan anginnya sangat buruk, mari kita urungkan keluar rumah hari ini.",
+      "level": "n4",
+      "tags": [
+        "alam-lingkungan",
+        "kehidupan-sehari"
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"クワシ＼イ"}
+},
+    {
+      "jp": "ひどい風邪をひいて三日間会社を休みました。",
+      "id": "Saya terkena flu parah dan tidak masuk kerja selama tiga hari.",
+      "level": "n4",
+      "tags": [
+        "kesehatan",
+        "pekerjaan"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus",
+  "jmdict_seq": "1602060",
+  "frequency": 1000,
+  "forms": [
+    {
+      "word": "酷い",
+      "info": []
+    },
+    {
+      "word": "非道い",
+      "info": [
+        "kanji jarang dipakai"
+      ]
+    }
+  ],
+  "meanings": [
+    {
+      "en": "cruel; heartless; hard; harsh; severe",
+      "misc": [
+        "biasanya kana saja"
+      ],
+      "field": []
+    },
+    {
+      "en": "violent; intense; strong; heavy; extreme",
+      "misc": [
+        "biasanya kana saja"
+      ],
+      "field": []
+    },
+    {
+      "en": "very bad; terrible; awful",
+      "misc": [
+        "biasanya kana saja"
+      ],
+      "field": []
+    },
+    {
+      "en": "excessive; exorbitant; unreasonable; outrageous; unfair; unjust",
+      "misc": [
+        "biasanya kana saja"
+      ],
+      "field": []
+    }
+  ],
+  "misc_jm": [
+    "biasanya kana saja"
+  ]
 },
 
 {
-  id: 'vg-n4-00193',
-  word: 'すっぱい',
-  reading: 'すっぱい',
-  romaji: 'suppai',
-  meaning_id: 'asam',
-  meaning_en: 'sour, acidic',
-  jlpt: 'n4',
-  pos: 'i-adj',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['kualitas'],
-  register: 'neutral',
-  lawan_bicara: [],
-  nuance: null,
-  conj_type: 'adj-i',
-  examples: [{"jp":"このレモンはすっぱすぎて、そのまま食べられません。","id":"Lemon ini terlalu asam sehingga tidak bisa dimakan langsung begitu saja.","level":"n4","tags":["makanan-minuman"]},{"jp":"疲れたときにすっぱい梅干しを食べると元気になります。","id":"Saat lelah, memakan umeboshi yang asam membuat tubuh kembali berenergi.","level":"n4","tags":["makanan-minuman","kesehatan"]}],
-  synonyms: [],
-  antonyms: [],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus',
-  jmdict_seq: '1304280',
-  frequency: 23000,
+  "id": "vg-n4-00193",
+  "word": "すっぱい",
+  "reading": "すっぱい",
+  "romaji": "suppai",
+  "meaning_id": "asam",
+  "meaning_en": "sour, acidic",
+  "jlpt": "n4",
+  "pos": "i-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kualitas"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [],
+  "nuance": null,
+  "conj_type": "adj-i",
+  "examples": [
+    {
+      "jp": "このレモンはすっぱすぎて、そのまま食べられません。",
+      "id": "Lemon ini terlalu asam sehingga tidak bisa dimakan langsung begitu saja.",
+      "level": "n4",
+      "tags": [
+        "makanan-minuman"
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"ヒド＼イ"}
+},
+    {
+      "jp": "疲れたときにすっぱい梅干しを食べると元気になります。",
+      "id": "Saat lelah, memakan umeboshi yang asam membuat tubuh kembali berenergi.",
+      "level": "n4",
+      "tags": [
+        "makanan-minuman",
+        "kesehatan"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus",
+  "jmdict_seq": "1304280",
+  "frequency": 23000
 },
 
 {
-  id: 'vg-n4-00194',
-  word: 'かたい',
-  reading: 'かたい',
-  romaji: 'katai',
-  meaning_id: 'keras, kaku',
-  meaning_en: 'hard, stiff, tough',
-  jlpt: 'n4',
-  pos: 'i-adj',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['kualitas'],
-  register: 'neutral',
-  lawan_bicara: [],
-  nuance: null,
-  conj_type: 'adj-i',
-  examples: [{"jp":"この肉は少し焼きすぎてかたくなってしまいました。","id":"Daging ini agak terlalu lama dipanggang sehingga menjadi keras.","level":"n4","tags":["makanan-minuman"]},{"jp":"このパンは古くなって石のようにかたいです。","id":"Roti ini sudah lama dan menjadi keras seperti batu.","level":"n4","tags":["makanan-minuman"]}],
-  synonyms: [],
-  antonyms: [],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus',
-  jmdict_seq: '1196240',
+  "id": "vg-n4-00194",
+  "word": "かたい",
+  "reading": "かたい",
+  "romaji": "katai",
+  "meaning_id": "keras, kaku",
+  "meaning_en": "hard, stiff, tough",
+  "jlpt": "n4",
+  "pos": "i-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kualitas"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [],
+  "nuance": null,
+  "conj_type": "adj-i",
+  "examples": [
+    {
+      "jp": "この肉は少し焼きすぎてかたくなってしまいました。",
+      "id": "Daging ini agak terlalu lama dipanggang sehingga menjadi keras.",
+      "level": "n4",
+      "tags": [
+        "makanan-minuman"
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"カタイ￣"}
+},
+    {
+      "jp": "このパンは古くなって石のようにかたいです。",
+      "id": "Roti ini sudah lama dan menjadi keras seperti batu.",
+      "level": "n4",
+      "tags": [
+        "makanan-minuman"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus",
+  "jmdict_seq": "1196240"
 },
 
 {
-  id: 'vg-n4-00195',
-  word: 'やわらかい',
-  reading: 'やわらかい',
-  romaji: 'yawarakai',
-  meaning_id: 'lembut, lentur',
-  meaning_en: 'soft, tender, flexible',
-  jlpt: 'n4',
-  pos: 'i-adj',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['kualitas'],
-  register: 'neutral',
-  lawan_bicara: [],
-  nuance: null,
-  conj_type: 'adj-i',
-  examples: [{"jp":"焼きたてのパンはとてもやわらかくておいしいです。","id":"Roti yang baru matang sangat lembut dan lezat.","level":"n4","tags":["makanan-minuman"]},{"jp":"この新しい枕はやわらかくて気持ちよく眠れます。","id":"Bantal baru ini lembut sehingga saya bisa tidur dengan nyaman.","level":"n4","tags":["kehidupan-sehari"]}],
-  synonyms: [],
-  antonyms: [],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus',
-  jmdict_seq: '1605630',
-  frequency: 10000,
-  forms: [{"word": "柔らかい", "info": []}, {"word": "軟らかい", "info": []}, {"word": "柔かい", "info": ["search-only kanji form"]}],
-  meanings: [{"en": "soft; tender; supple; flexible; limber; limp", "misc": [], "field": []}, {"en": "gentle; mild; soft; mellow", "misc": [], "field": []}, {"en": "light (topic, book, etc.); informal", "misc": [], "field": []}, {"en": "flexible (thinking, mind, etc.); malleable; adaptable", "misc": [], "field": []}],
+  "id": "vg-n4-00195",
+  "word": "やわらかい",
+  "reading": "やわらかい",
+  "romaji": "yawarakai",
+  "meaning_id": "lembut, lentur",
+  "meaning_en": "soft, tender, flexible",
+  "jlpt": "n4",
+  "pos": "i-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kualitas"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [],
+  "nuance": null,
+  "conj_type": "adj-i",
+  "examples": [
+    {
+      "jp": "焼きたてのパンはとてもやわらかくておいしいです。",
+      "id": "Roti yang baru matang sangat lembut dan lezat.",
+      "level": "n4",
+      "tags": [
+        "makanan-minuman"
+      ],
+  "pitch": {"pattern":4,"category":"nakadaka","mora_count":5,"downstep_mora":4,"contour":"ヤワラカ＼イ"}
+},
+    {
+      "jp": "この新しい枕はやわらかくて気持ちよく眠れます。",
+      "id": "Bantal baru ini lembut sehingga saya bisa tidur dengan nyaman.",
+      "level": "n4",
+      "tags": [
+        "kehidupan-sehari"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus",
+  "jmdict_seq": "1605630",
+  "frequency": 10000,
+  "forms": [
+    {
+      "word": "柔らかい",
+      "info": []
+    },
+    {
+      "word": "軟らかい",
+      "info": []
+    },
+    {
+      "word": "柔かい",
+      "info": [
+        "search-only kanji form"
+      ]
+    }
+  ],
+  "meanings": [
+    {
+      "en": "soft; tender; supple; flexible; limber; limp",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "gentle; mild; soft; mellow",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "light (topic, book, etc.); informal",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "flexible (thinking, mind, etc.); malleable; adaptable",
+      "misc": [],
+      "field": []
+    }
+  ]
 },
 
 {
-  id: 'vg-n4-00196',
-  word: '太い',
-  reading: 'ふとい',
-  romaji: 'futoi',
-  meaning_id: 'tebal, gemuk',
-  meaning_en: 'thick, fat',
-  jlpt: 'n4',
-  pos: 'i-adj',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['kualitas'],
-  register: 'neutral',
-  lawan_bicara: [],
-  nuance: null,
-  conj_type: 'adj-i',
-  examples: [{"jp":"このノートには太いペンで大きく名前を書いてください。","id":"Tolong tulis nama dengan jelas menggunakan pulpen tebal pada buku catatan ini.","level":"n4","tags":["pendidikan"]},{"jp":"公園には幹がとても太い大きな木があります。","id":"Di taman terdapat pohon besar dengan batang yang sangat tebal.","level":"n4","tags":["alam-lingkungan"]}],
-  synonyms: [],
-  antonyms: [],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus',
-  jmdict_seq: '1408180',
-  frequency: 10000,
-  meanings: [{"en": "fat; thick", "misc": [], "field": []}, {"en": "deep (of a voice); thick; sonorous", "misc": [], "field": []}, {"en": "daring; shameless; brazen; audacious", "misc": [], "field": []}],
+  "id": "vg-n4-00196",
+  "word": "太い",
+  "reading": "ふとい",
+  "romaji": "futoi",
+  "meaning_id": "tebal, gemuk",
+  "meaning_en": "thick, fat",
+  "jlpt": "n4",
+  "pos": "i-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kualitas"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [],
+  "nuance": null,
+  "conj_type": "adj-i",
+  "examples": [
+    {
+      "jp": "このノートには太いペンで大きく名前を書いてください。",
+      "id": "Tolong tulis nama dengan jelas menggunakan pulpen tebal pada buku catatan ini.",
+      "level": "n4",
+      "tags": [
+        "pendidikan"
+      ],
+  "pitch": {"pattern":4,"category":"nakadaka","mora_count":5,"downstep_mora":4,"contour":"ヤワラカ＼イ"}
+},
+    {
+      "jp": "公園には幹がとても太い大きな木があります。",
+      "id": "Di taman terdapat pohon besar dengan batang yang sangat tebal.",
+      "level": "n4",
+      "tags": [
+        "alam-lingkungan"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus",
+  "jmdict_seq": "1408180",
+  "frequency": 10000,
+  "meanings": [
+    {
+      "en": "fat; thick",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "deep (of a voice); thick; sonorous",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "daring; shameless; brazen; audacious",
+      "misc": [],
+      "field": []
+    }
+  ]
 },
 
 {
-  id: 'vg-n4-00197',
-  word: '細い',
-  reading: 'ほそい',
-  romaji: 'hosoi',
-  meaning_id: 'tipis, langsing, sempit',
-  meaning_en: 'thin, slender, narrow',
-  jlpt: 'n4',
-  pos: 'i-adj',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['kualitas'],
-  register: 'neutral',
-  lawan_bicara: [],
-  nuance: null,
-  conj_type: 'adj-i',
-  examples: [{"jp":"この道はとても細いので、車が通ることができません。","id":"Karena jalan ini sangat sempit, mobil tidak bisa melintas.","level":"n4","tags":["kehidupan-sehari","ruang-arah"]},{"jp":"細い糸を使って丁寧にシャツのボタンを付けました。","id":"Menggunakan benang tipis, saya memasang kancing kemeja dengan rapi.","level":"n4","tags":["kehidupan-sehari"]}],
-  synonyms: [],
-  antonyms: [],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus',
-  jmdict_seq: '2719870',
-  meanings: [{"en": "small; fine; minute", "misc": [], "field": []}, {"en": "stingy; cheap", "misc": [], "field": []}],
+  "id": "vg-n4-00197",
+  "word": "細い",
+  "reading": "ほそい",
+  "romaji": "hosoi",
+  "meaning_id": "tipis, langsing, sempit",
+  "meaning_en": "thin, slender, narrow",
+  "jlpt": "n4",
+  "pos": "i-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kualitas"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [],
+  "nuance": null,
+  "conj_type": "adj-i",
+  "examples": [
+    {
+      "jp": "この道はとても細いので、車が通ることができません。",
+      "id": "Karena jalan ini sangat sempit, mobil tidak bisa melintas.",
+      "level": "n4",
+      "tags": [
+        "kehidupan-sehari",
+        "ruang-arah"
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"ホソ＼イ"}
+},
+    {
+      "jp": "細い糸を使って丁寧にシャツのボタンを付けました。",
+      "id": "Menggunakan benang tipis, saya memasang kancing kemeja dengan rapi.",
+      "level": "n4",
+      "tags": [
+        "kehidupan-sehari"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus",
+  "jmdict_seq": "2719870",
+  "meanings": [
+    {
+      "en": "small; fine; minute",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "stingy; cheap",
+      "misc": [],
+      "field": []
+    }
+  ]
 },
 
 {
-  id: 'vg-n4-00198',
-  word: 'ふかい',
-  reading: 'ふかい',
-  romaji: 'fukai',
-  meaning_id: 'dalam',
-  meaning_en: 'deep',
-  jlpt: 'n4',
-  pos: 'i-adj',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['kualitas'],
-  register: 'neutral',
-  lawan_bicara: [],
-  nuance: null,
-  conj_type: 'adj-i',
-  examples: [{"jp":"このプールは水がふかいので、気をつけて泳いでください。","id":"Karena air kolam renang ini dalam, tolong berenang dengan hati-hati.","level":"n4","tags":["kehidupan-sehari"]},{"jp":"ふかい森の中に入ると、涼しい風が吹いていました。","id":"Ketika masuk ke dalam hutan lebat yang dalam, angin sejuk berhembus.","level":"n4","tags":["alam-lingkungan"]}],
-  synonyms: [],
-  antonyms: [],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus',
-  jmdict_seq: '1362640',
-  frequency: 11500,
-  meanings: [{"en": "deep", "misc": [], "field": []}, {"en": "profound", "misc": [], "field": []}, {"en": "dense; thick", "misc": [], "field": []}, {"en": "close (relationship)", "misc": [], "field": []}, {"en": "intense; strong", "misc": [], "field": []}, {"en": "late", "misc": [], "field": []}],
+  "id": "vg-n4-00198",
+  "word": "ふかい",
+  "reading": "ふかい",
+  "romaji": "fukai",
+  "meaning_id": "dalam",
+  "meaning_en": "deep",
+  "jlpt": "n4",
+  "pos": "i-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kualitas"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [],
+  "nuance": null,
+  "conj_type": "adj-i",
+  "examples": [
+    {
+      "jp": "このプールは水がふかいので、気をつけて泳いでください。",
+      "id": "Karena air kolam renang ini dalam, tolong berenang dengan hati-hati.",
+      "level": "n4",
+      "tags": [
+        "kehidupan-sehari"
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"フカ＼イ"}
+},
+    {
+      "jp": "ふかい森の中に入ると、涼しい風が吹いていました。",
+      "id": "Ketika masuk ke dalam hutan lebat yang dalam, angin sejuk berhembus.",
+      "level": "n4",
+      "tags": [
+        "alam-lingkungan"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus",
+  "jmdict_seq": "1362640",
+  "frequency": 11500,
+  "meanings": [
+    {
+      "en": "deep",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "profound",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "dense; thick",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "close (relationship)",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "intense; strong",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "late",
+      "misc": [],
+      "field": []
+    }
+  ]
 },
 
 {
-  id: 'vg-n4-00199',
-  word: 'あさい',
-  reading: 'あさい',
-  romaji: 'asai',
-  meaning_id: 'dangkal',
-  meaning_en: 'shallow',
-  jlpt: 'n4',
-  pos: 'i-adj',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['kualitas'],
-  register: 'neutral',
-  lawan_bicara: [],
-  nuance: null,
-  conj_type: 'adj-i',
-  examples: [{"jp":"この川はあさいですから、小さな子どもでも安全に渡れます。","id":"Karena sungai ini dangkal, anak kecil pun dapat menyeberang dengan aman.","level":"n4","tags":["alam-lingkungan","kehidupan-sehari"]},{"jp":"池のあさい場所で小さな魚がたくさん泳いでいます。","id":"Di tempat kolam yang dangkal, banyak ikan kecil berenang.","level":"n4","tags":["alam-lingkungan"]}],
-  synonyms: [],
-  antonyms: [],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus',
-  jmdict_seq: '1390800',
-  frequency: 22500,
-  meanings: [{"en": "shallow; superficial", "misc": [], "field": []}, {"en": "slight (wound); light (sleep); pale (colour); inadequate (knowledge)", "misc": [], "field": []}, {"en": "short (time); early; young", "misc": [], "field": []}],
+  "id": "vg-n4-00199",
+  "word": "あさい",
+  "reading": "あさい",
+  "romaji": "asai",
+  "meaning_id": "dangkal",
+  "meaning_en": "shallow",
+  "jlpt": "n4",
+  "pos": "i-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kualitas"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [],
+  "nuance": null,
+  "conj_type": "adj-i",
+  "examples": [
+    {
+      "jp": "この川はあさいですから、小さな子どもでも安全に渡れます。",
+      "id": "Karena sungai ini dangkal, anak kecil pun dapat menyeberang dengan aman.",
+      "level": "n4",
+      "tags": [
+        "alam-lingkungan",
+        "kehidupan-sehari"
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"アサイ￣"}
+},
+    {
+      "jp": "池のあさい場所で小さな魚がたくさん泳いでいます。",
+      "id": "Di tempat kolam yang dangkal, banyak ikan kecil berenang.",
+      "level": "n4",
+      "tags": [
+        "alam-lingkungan"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus",
+  "jmdict_seq": "1390800",
+  "frequency": 22500,
+  "meanings": [
+    {
+      "en": "shallow; superficial",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "slight (wound); light (sleep); pale (colour); inadequate (knowledge)",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "short (time); early; young",
+      "misc": [],
+      "field": []
+    }
+  ]
 },
 
 {
-  id: 'vg-n4-00200',
-  word: 'めずらしい',
-  reading: 'めずらしい',
-  romaji: 'mezurashii',
-  meaning_id: 'langka, jarang',
-  meaning_en: 'rare, unusual',
-  jlpt: 'n4',
-  pos: 'i-adj',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['kualitas'],
-  register: 'neutral',
-  lawan_bicara: [],
-  nuance: null,
-  conj_type: 'adj-i',
-  examples: [{"jp":"近所の公園でめずらしい鳥を見つけて写真を撮りました。","id":"Saya menemukan burung langka di taman dekat rumah lalu memotretnya.","level":"n4","tags":["alam-lingkungan","kehidupan-sehari"]},{"jp":"海外からめずらしい果物をお土産にもらいました。","id":"Saya menerima buah langka dari luar negeri sebagai oleh-oleh.","level":"n4","tags":["makanan-minuman","pertemanan"]}],
-  synonyms: [],
-  antonyms: [],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus',
-  jmdict_seq: '1431850',
-  frequency: 16500,
-  forms: [{"word": "珍しい", "info": []}, {"word": "珍らしい", "info": ["search-only kanji form"]}],
-  meanings: [{"en": "rare; uncommon; unusual; curious", "misc": [], "field": []}, {"en": "new; novel", "misc": [], "field": []}, {"en": "fine; nice; splendid; precious", "misc": [], "field": []}],
+  "id": "vg-n4-00200",
+  "word": "めずらしい",
+  "reading": "めずらしい",
+  "romaji": "mezurashii",
+  "meaning_id": "langka, jarang",
+  "meaning_en": "rare, unusual",
+  "jlpt": "n4",
+  "pos": "i-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kualitas"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [],
+  "nuance": null,
+  "conj_type": "adj-i",
+  "examples": [
+    {
+      "jp": "近所の公園でめずらしい鳥を見つけて写真を撮りました。",
+      "id": "Saya menemukan burung langka di taman dekat rumah lalu memotretnya.",
+      "level": "n4",
+      "tags": [
+        "alam-lingkungan",
+        "kehidupan-sehari"
+      ],
+  "pitch": {"pattern":4,"category":"nakadaka","mora_count":5,"downstep_mora":4,"contour":"メズラシ＼イ"}
+},
+    {
+      "jp": "海外からめずらしい果物をお土産にもらいました。",
+      "id": "Saya menerima buah langka dari luar negeri sebagai oleh-oleh.",
+      "level": "n4",
+      "tags": [
+        "makanan-minuman",
+        "pertemanan"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus",
+  "jmdict_seq": "1431850",
+  "frequency": 16500,
+  "forms": [
+    {
+      "word": "珍しい",
+      "info": []
+    },
+    {
+      "word": "珍らしい",
+      "info": [
+        "search-only kanji form"
+      ]
+    }
+  ],
+  "meanings": [
+    {
+      "en": "rare; uncommon; unusual; curious",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "new; novel",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "fine; nice; splendid; precious",
+      "misc": [],
+      "field": []
+    }
+  ]
 },
 
 {
-  id: 'vg-n4-00201',
-  word: 'なつかしい',
-  reading: 'なつかしい',
-  romaji: 'natsukashii',
-  meaning_id: 'nostalgia, dirindukan',
-  meaning_en: 'nostalgic, dear, missed',
-  jlpt: 'n4',
-  pos: 'i-adj',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['kualitas'],
-  register: 'neutral',
-  lawan_bicara: [],
-  nuance: null,
-  conj_type: 'adj-i',
-  examples: [{"jp":"高校の卒業アルバムを開くと、昔のことがなつかしいです。","id":"Saat membuka album kelulusan SMA, saya merasa rindu masa lalu.","level":"n4","tags":["pendidikan","pertemanan"]},{"jp":"子供のころによく聴いた音楽がラジオから流れてなつかしいです。","id":"Musik yang sering didengar saat masih anak-anak mengalun dari radio, terasa nostalgia.","level":"n4","tags":["kehidupan-sehari"]}],
-  synonyms: [],
-  antonyms: [],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus',
-  jmdict_seq: '1200490',
-  frequency: 12000,
+  "id": "vg-n4-00201",
+  "word": "なつかしい",
+  "reading": "なつかしい",
+  "romaji": "natsukashii",
+  "meaning_id": "nostalgia, dirindukan",
+  "meaning_en": "nostalgic, dear, missed",
+  "jlpt": "n4",
+  "pos": "i-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kualitas"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [],
+  "nuance": null,
+  "conj_type": "adj-i",
+  "examples": [
+    {
+      "jp": "高校の卒業アルバムを開くと、昔のことがなつかしいです。",
+      "id": "Saat membuka album kelulusan SMA, saya merasa rindu masa lalu.",
+      "level": "n4",
+      "tags": [
+        "pendidikan",
+        "pertemanan"
+      ],
+  "pitch": {"pattern":4,"category":"nakadaka","mora_count":5,"downstep_mora":4,"contour":"メズラシ＼イ"}
+},
+    {
+      "jp": "子供のころによく聴いた音楽がラジオから流れてなつかしいです。",
+      "id": "Musik yang sering didengar saat masih anak-anak mengalun dari radio, terasa nostalgia.",
+      "level": "n4",
+      "tags": [
+        "kehidupan-sehari"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus",
+  "jmdict_seq": "1200490",
+  "frequency": 12000
 },
 
 {
-  id: 'vg-n4-00202',
-  word: 'おそろしい',
-  reading: 'おそろしい',
-  romaji: 'osoroshii',
-  meaning_id: 'menakutkan, mengerikan',
-  meaning_en: 'terrifying, frightening',
-  jlpt: 'n4',
-  pos: 'i-adj',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['kualitas'],
-  register: 'neutral',
-  lawan_bicara: [],
-  nuance: null,
-  conj_type: 'adj-i',
-  examples: [{"jp":"昨夜はおそろしい夢を見て途中で目が覚めてしまいました。","id":"Semalam saya bermimpi mengerikan dan terbangun di tengah malam.","level":"n4","tags":["kehidupan-sehari"]},{"jp":"大きな台風が近づいてきて、おそろしい風の音がします。","id":"Angin topan besar mendekat dan terdengar suara angin yang menakutkan.","level":"n4","tags":["alam-lingkungan"]}],
-  synonyms: [],
-  antonyms: [],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus',
-  jmdict_seq: '1236690',
-  frequency: 10000,
-  forms: [{"word": "恐ろしい", "info": []}, {"word": "怖ろしい", "info": ["kanji jarang dipakai"]}, {"word": "畏ろしい", "info": ["search-only kanji form"]}],
-  meanings: [{"en": "terrible; dreadful; terrifying; frightening", "misc": [], "field": []}, {"en": "surprising; startling; tremendous; amazing", "misc": [], "field": []}],
+  "id": "vg-n4-00202",
+  "word": "おそろしい",
+  "reading": "おそろしい",
+  "romaji": "osoroshii",
+  "meaning_id": "menakutkan, mengerikan",
+  "meaning_en": "terrifying, frightening",
+  "jlpt": "n4",
+  "pos": "i-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kualitas"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [],
+  "nuance": null,
+  "conj_type": "adj-i",
+  "examples": [
+    {
+      "jp": "昨夜はおそろしい夢を見て途中で目が覚めてしまいました。",
+      "id": "Semalam saya bermimpi mengerikan dan terbangun di tengah malam.",
+      "level": "n4",
+      "tags": [
+        "kehidupan-sehari"
+      ],
+  "pitch": {"pattern":4,"category":"nakadaka","mora_count":5,"downstep_mora":4,"contour":"オソロシ＼イ"}
+},
+    {
+      "jp": "大きな台風が近づいてきて、おそろしい風の音がします。",
+      "id": "Angin topan besar mendekat dan terdengar suara angin yang menakutkan.",
+      "level": "n4",
+      "tags": [
+        "alam-lingkungan"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus",
+  "jmdict_seq": "1236690",
+  "frequency": 10000,
+  "forms": [
+    {
+      "word": "恐ろしい",
+      "info": []
+    },
+    {
+      "word": "怖ろしい",
+      "info": [
+        "kanji jarang dipakai"
+      ]
+    },
+    {
+      "word": "畏ろしい",
+      "info": [
+        "search-only kanji form"
+      ]
+    }
+  ],
+  "meanings": [
+    {
+      "en": "terrible; dreadful; terrifying; frightening",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "surprising; startling; tremendous; amazing",
+      "misc": [],
+      "field": []
+    }
+  ]
 },
 
 {
-  id: 'vg-n4-00203',
-  word: 'くやしい',
-  reading: 'くやしい',
-  romaji: 'kuyashii',
-  meaning_id: 'kesal, frustrasi',
-  meaning_en: 'frustrated, regretful',
-  jlpt: 'n4',
-  pos: 'i-adj',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['kualitas'],
-  register: 'neutral',
-  lawan_bicara: [],
-  nuance: null,
-  conj_type: 'adj-i',
-  examples: [{"jp":"あと少しで試合に勝てたのに、負けてしまってくやしいです。","id":"Padahal sedikit lagi menang, tetapi akhirnya kalah dan saya sangat kesal.","level":"n4","tags":["pendidikan","pertemanan"]},{"jp":"一生懸命勉強したのにテストの点数が悪くてくやしいです。","id":"Padahal sudah belajar mati-matian, nilai ujian jelek sehingga saya merasa frustrasi.","level":"n4","tags":["pendidikan"]}],
-  synonyms: [],
-  antonyms: [],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus',
-  jmdict_seq: '1592350',
-  frequency: 13500,
-  forms: [{"word": "悔しい", "info": []}, {"word": "口惜しい", "info": ["kanji jarang dipakai"]}, {"word": "悔やしい", "info": ["search-only kanji form"]}],
+  "id": "vg-n4-00203",
+  "word": "くやしい",
+  "reading": "くやしい",
+  "romaji": "kuyashii",
+  "meaning_id": "kesal, frustrasi",
+  "meaning_en": "frustrated, regretful",
+  "jlpt": "n4",
+  "pos": "i-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kualitas"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [],
+  "nuance": null,
+  "conj_type": "adj-i",
+  "examples": [
+    {
+      "jp": "あと少しで試合に勝てたのに、負けてしまってくやしいです。",
+      "id": "Padahal sedikit lagi menang, tetapi akhirnya kalah dan saya sangat kesal.",
+      "level": "n4",
+      "tags": [
+        "pendidikan",
+        "pertemanan"
+      ],
+  "pitch": {"pattern":4,"category":"nakadaka","mora_count":5,"downstep_mora":4,"contour":"オソロシ＼イ"}
+},
+    {
+      "jp": "一生懸命勉強したのにテストの点数が悪くてくやしいです。",
+      "id": "Padahal sudah belajar mati-matian, nilai ujian jelek sehingga saya merasa frustrasi.",
+      "level": "n4",
+      "tags": [
+        "pendidikan"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus",
+  "jmdict_seq": "1592350",
+  "frequency": 13500,
+  "forms": [
+    {
+      "word": "悔しい",
+      "info": []
+    },
+    {
+      "word": "口惜しい",
+      "info": [
+        "kanji jarang dipakai"
+      ]
+    },
+    {
+      "word": "悔やしい",
+      "info": [
+        "search-only kanji form"
+      ]
+    }
+  ]
 },
 
 {
-  id: 'vg-n4-00204',
-  word: 'たのしい',
-  reading: 'たのしい',
-  romaji: 'tanoshii',
-  meaning_id: 'menyenangkan, seru',
-  meaning_en: 'fun, enjoyable',
-  jlpt: 'n4',
-  pos: 'i-adj',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['kualitas'],
-  register: 'neutral',
-  lawan_bicara: [],
-  nuance: null,
-  conj_type: 'adj-i',
-  examples: [{"jp":"週末に家族と一緒に遊園地へ行ってたのしかったです。","id":"Akhir pekan pergi ke taman hiburan bersama keluarga dan sangat menyenangkan.","level":"n4","tags":["keluarga","kehidupan-sehari"]},{"jp":"クラスの友達とおしゃべりするのは毎日本当にたのしいです。","id":"Mengobrol dengan teman-teman sekelas setiap hari benar-benar seru.","level":"n4","tags":["pertemanan","pendidikan"]}],
-  synonyms: [],
-  antonyms: [],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus',
-  jmdict_seq: '1207240',
-  frequency: 8000,
-  forms: [{"word": "楽しい", "info": []}, {"word": "愉しい", "info": ["kanji jarang dipakai"]}, {"word": "樂しい", "info": ["search-only kanji form"]}, {"word": "娯しい", "info": ["search-only kanji form"]}],
+  "id": "vg-n4-00204",
+  "word": "たのしい",
+  "reading": "たのしい",
+  "romaji": "tanoshii",
+  "meaning_id": "menyenangkan, seru",
+  "meaning_en": "fun, enjoyable",
+  "jlpt": "n4",
+  "pos": "i-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kualitas"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [],
+  "nuance": null,
+  "conj_type": "adj-i",
+  "examples": [
+    {
+      "jp": "週末に家族と一緒に遊園地へ行ってたのしかったです。",
+      "id": "Akhir pekan pergi ke taman hiburan bersama keluarga dan sangat menyenangkan.",
+      "level": "n4",
+      "tags": [
+        "keluarga",
+        "kehidupan-sehari"
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"クヤシ＼イ"}
+},
+    {
+      "jp": "クラスの友達とおしゃべりするのは毎日本当にたのしいです。",
+      "id": "Mengobrol dengan teman-teman sekelas setiap hari benar-benar seru.",
+      "level": "n4",
+      "tags": [
+        "pertemanan",
+        "pendidikan"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus",
+  "jmdict_seq": "1207240",
+  "frequency": 8000,
+  "forms": [
+    {
+      "word": "楽しい",
+      "info": []
+    },
+    {
+      "word": "愉しい",
+      "info": [
+        "kanji jarang dipakai"
+      ]
+    },
+    {
+      "word": "樂しい",
+      "info": [
+        "search-only kanji form"
+      ]
+    },
+    {
+      "word": "娯しい",
+      "info": [
+        "search-only kanji form"
+      ]
+    }
+  ]
 },
 
 {
-  id: 'vg-n4-00205',
-  word: 'きびしい',
-  reading: 'きびしい',
-  romaji: 'kibishii',
-  meaning_id: 'ketat, tegas, keras',
-  meaning_en: 'strict, severe, harsh',
-  jlpt: 'n4',
-  pos: 'i-adj',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['kualitas'],
-  register: 'neutral',
-  lawan_bicara: [],
-  nuance: null,
-  conj_type: 'adj-i',
-  examples: [{"jp":"山田先生は宿題の提出にとてもきびしいです。","id":"Guru Yamada sangat ketat soal pengumpulan pekerjaan rumah.","level":"n4","tags":["pendidikan"]},{"jp":"父は礼儀にきびしい人ですが、本当はとても優しいです。","id":"Ayah adalah orang yang tegas soal tata krama, tetapi sebenarnya sangat penyayang.","level":"n4","tags":["keluarga"]}],
-  synonyms: [],
-  antonyms: [],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus',
-  jmdict_seq: '1262530',
-  frequency: 9000,
-  forms: [{"word": "厳しい", "info": []}, {"word": "酷しい", "info": ["kanji jarang dipakai"]}],
-  meanings: [{"en": "severe; strict; rigid; unsparing; relentless", "misc": [], "field": []}, {"en": "hard (to do); difficult; tricky", "misc": [], "field": []}, {"en": "intense (e.g. cold); harsh (weather); inclement", "misc": [], "field": []}],
+  "id": "vg-n4-00205",
+  "word": "きびしい",
+  "reading": "きびしい",
+  "romaji": "kibishii",
+  "meaning_id": "ketat, tegas, keras",
+  "meaning_en": "strict, severe, harsh",
+  "jlpt": "n4",
+  "pos": "i-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kualitas"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [],
+  "nuance": null,
+  "conj_type": "adj-i",
+  "examples": [
+    {
+      "jp": "山田先生は宿題の提出にとてもきびしいです。",
+      "id": "Guru Yamada sangat ketat soal pengumpulan pekerjaan rumah.",
+      "level": "n4",
+      "tags": [
+        "pendidikan"
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"タノシ＼イ"}
+},
+    {
+      "jp": "父は礼儀にきびしい人ですが、本当はとても優しいです。",
+      "id": "Ayah adalah orang yang tegas soal tata krama, tetapi sebenarnya sangat penyayang.",
+      "level": "n4",
+      "tags": [
+        "keluarga"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus",
+  "jmdict_seq": "1262530",
+  "frequency": 9000,
+  "forms": [
+    {
+      "word": "厳しい",
+      "info": []
+    },
+    {
+      "word": "酷しい",
+      "info": [
+        "kanji jarang dipakai"
+      ]
+    }
+  ],
+  "meanings": [
+    {
+      "en": "severe; strict; rigid; unsparing; relentless",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "hard (to do); difficult; tricky",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "intense (e.g. cold); harsh (weather); inclement",
+      "misc": [],
+      "field": []
+    }
+  ]
 },
 
 {
-  id: 'vg-n4-00206',
-  word: '親切な',
-  reading: 'しんせつな',
-  romaji: 'shinsetsuna',
-  meaning_id: 'ramah, baik hati',
-  meaning_en: 'kind, helpful',
-  jlpt: 'n4',
-  pos: 'na-adj',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['kualitas'],
-  register: 'neutral',
-  lawan_bicara: [],
-  nuance: null,
-  conj_type: 'adj-na',
-  examples: [{"jp":"駅員さんが親切に行き方を教えてくれました。","id":"Petugas stasiun dengan ramah memberitahu arah jalan kepada saya.","level":"n4","tags":["kehidupan-sehari"]},{"jp":"道に迷ったとき、親切な人に助けてもらいました。","id":"Saat tersesat di jalan, saya dibantu oleh orang yang baik hati.","level":"n4","tags":["kehidupan-sehari","pertemanan"]}],
-  synonyms: [],
-  antonyms: [],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  "id": "vg-n4-00206",
+  "word": "親切な",
+  "reading": "しんせつな",
+  "romaji": "shinsetsuna",
+  "meaning_id": "ramah, baik hati",
+  "meaning_en": "kind, helpful",
+  "jlpt": "n4",
+  "pos": "na-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kualitas"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [],
+  "nuance": null,
+  "conj_type": "adj-na",
+  "examples": [
+    {
+      "jp": "駅員さんが親切に行き方を教えてくれました。",
+      "id": "Petugas stasiun dengan ramah memberitahu arah jalan kepada saya.",
+      "level": "n4",
+      "tags": [
+        "kehidupan-sehari"
+      ],
+  "pitch": {"pattern":4,"category":"nakadaka","mora_count":5,"downstep_mora":4,"contour":"イカメシ＼イ"}
+},
+    {
+      "jp": "道に迷ったとき、親切な人に助けてもらいました。",
+      "id": "Saat tersesat di jalan, saya dibantu oleh orang yang baik hati.",
+      "level": "n4",
+      "tags": [
+        "kehidupan-sehari",
+        "pertemanan"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus"
 },
 
 {
-  id: 'vg-n4-00207',
-  word: '丁寧な',
-  reading: 'ていねいな',
-  romaji: 'teineina',
-  meaning_id: 'sopan, teliti',
-  meaning_en: 'polite, careful, thorough',
-  jlpt: 'n4',
-  pos: 'na-adj',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['kualitas'],
-  register: 'neutral',
-  lawan_bicara: [],
-  nuance: null,
-  conj_type: 'adj-na',
-  examples: [{"jp":"ホテルの店員はいつも丁寧な言葉づかいで話します。","id":"Petugas hotel selalu berbicara dengan pilihan kata yang sopan.","level":"n4","tags":["pekerjaan"]},{"jp":"字をきれいに見せるために丁寧な文字を書く練習をしています。","id":"Saya berlatih menulis huruf dengan teliti agar terlihat rapi.","level":"n4","tags":["pendidikan"]}],
-  synonyms: [],
-  antonyms: [],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  "id": "vg-n4-00207",
+  "word": "丁寧な",
+  "reading": "ていねいな",
+  "romaji": "teineina",
+  "meaning_id": "sopan, teliti",
+  "meaning_en": "polite, careful, thorough",
+  "jlpt": "n4",
+  "pos": "na-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kualitas"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [],
+  "nuance": null,
+  "conj_type": "adj-na",
+  "examples": [
+    {
+      "jp": "ホテルの店員はいつも丁寧な言葉づかいで話します。",
+      "id": "Petugas hotel selalu berbicara dengan pilihan kata yang sopan.",
+      "level": "n4",
+      "tags": [
+        "pekerjaan"
+      ]
+    },
+    {
+      "jp": "字をきれいに見せるために丁寧な文字を書く練習をしています。",
+      "id": "Saya berlatih menulis huruf dengan teliti agar terlihat rapi.",
+      "level": "n4",
+      "tags": [
+        "pendidikan"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus"
 },
 
 {
-  id: 'vg-n4-00208',
-  word: '真剣な',
-  reading: 'しんけんな',
-  romaji: 'shinkenna',
-  meaning_id: 'serius, sungguh-sungguh',
-  meaning_en: 'serious, earnest',
-  jlpt: 'n4',
-  pos: 'na-adj',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['kualitas'],
-  register: 'neutral',
-  lawan_bicara: [],
-  nuance: null,
-  conj_type: 'adj-na',
-  examples: [{"jp":"学生たちは先生の説明を真剣な表情で聞いています。","id":"Para siswa menyimak penjelasan guru dengan ekspresi serius.","level":"n4","tags":["pendidikan"]},{"jp":"将来の進路について両親と真剣な話し合いをしました。","id":"Saya berdiskusi dengan serius bersama orang tua tentang rencana masa depan.","level":"n4","tags":["keluarga","pendidikan"]}],
-  synonyms: [],
-  antonyms: [],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  "id": "vg-n4-00208",
+  "word": "真剣な",
+  "reading": "しんけんな",
+  "romaji": "shinkenna",
+  "meaning_id": "serius, sungguh-sungguh",
+  "meaning_en": "serious, earnest",
+  "jlpt": "n4",
+  "pos": "na-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kualitas"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [],
+  "nuance": null,
+  "conj_type": "adj-na",
+  "examples": [
+    {
+      "jp": "学生たちは先生の説明を真剣な表情で聞いています。",
+      "id": "Para siswa menyimak penjelasan guru dengan ekspresi serius.",
+      "level": "n4",
+      "tags": [
+        "pendidikan"
+      ]
+    },
+    {
+      "jp": "将来の進路について両親と真剣な話し合いをしました。",
+      "id": "Saya berdiskusi dengan serius bersama orang tua tentang rencana masa depan.",
+      "level": "n4",
+      "tags": [
+        "keluarga",
+        "pendidikan"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus"
 },
 
 {
-  id: 'vg-n4-00209',
-  word: '正直な',
-  reading: 'しょうじきな',
-  romaji: 'shoujikina',
-  meaning_id: 'jujur',
-  meaning_en: 'honest, straightforward',
-  jlpt: 'n4',
-  pos: 'na-adj',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['kualitas'],
-  register: 'neutral',
-  lawan_bicara: [],
-  nuance: null,
-  conj_type: 'adj-na',
-  examples: [{"jp":"自分の失敗について正直な気持ちを話しました。","id":"Saya menceritakan perasaan yang jujur mengenai kesalahan saya.","level":"n4","tags":["pertemanan","kehidupan-sehari"]},{"jp":"彼は嘘をつかない正直な人なので、みんなから信頼されています。","id":"Karena dia orang jujur yang tidak berbohong, dia dipercaya oleh semua orang.","level":"n4","tags":["pekerjaan","pertemanan"]}],
-  synonyms: [],
-  antonyms: [],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  "id": "vg-n4-00209",
+  "word": "正直な",
+  "reading": "しょうじきな",
+  "romaji": "shoujikina",
+  "meaning_id": "jujur",
+  "meaning_en": "honest, straightforward",
+  "jlpt": "n4",
+  "pos": "na-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kualitas"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [],
+  "nuance": null,
+  "conj_type": "adj-na",
+  "examples": [
+    {
+      "jp": "自分の失敗について正直な気持ちを話しました。",
+      "id": "Saya menceritakan perasaan yang jujur mengenai kesalahan saya.",
+      "level": "n4",
+      "tags": [
+        "pertemanan",
+        "kehidupan-sehari"
+      ]
+    },
+    {
+      "jp": "彼は嘘をつかない正直な人なので、みんなから信頼されています。",
+      "id": "Karena dia orang jujur yang tidak berbohong, dia dipercaya oleh semua orang.",
+      "level": "n4",
+      "tags": [
+        "pekerjaan",
+        "pertemanan"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus"
 },
 
 {
-  id: 'vg-n4-00210',
-  word: '不思議な',
-  reading: 'ふしぎな',
-  romaji: 'fushigina',
-  meaning_id: 'misterius, aneh, menakjubkan',
-  meaning_en: 'mysterious, strange, wonderful',
-  jlpt: 'n4',
-  pos: 'na-adj',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['kualitas'],
-  register: 'neutral',
-  lawan_bicara: [],
-  nuance: null,
-  conj_type: 'adj-na',
-  examples: [{"jp":"森の中で見たこともない不思議な花を見つけました。","id":"Saya menemukan bunga misterius yang belum pernah dilihat di tengah hutan.","level":"n4","tags":["alam-lingkungan"]},{"jp":"朝起きたら机の上に不思議な手紙が置いてありました。","id":"Saat bangun pagi, ada sepucuk surat misterius diletakkan di atas meja.","level":"n4","tags":["kehidupan-sehari"]}],
-  synonyms: [],
-  antonyms: [],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  "id": "vg-n4-00210",
+  "word": "不思議な",
+  "reading": "ふしぎな",
+  "romaji": "fushigina",
+  "meaning_id": "misterius, aneh, menakjubkan",
+  "meaning_en": "mysterious, strange, wonderful",
+  "jlpt": "n4",
+  "pos": "na-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kualitas"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [],
+  "nuance": null,
+  "conj_type": "adj-na",
+  "examples": [
+    {
+      "jp": "森の中で見たこともない不思議な花を見つけました。",
+      "id": "Saya menemukan bunga misterius yang belum pernah dilihat di tengah hutan.",
+      "level": "n4",
+      "tags": [
+        "alam-lingkungan"
+      ]
+    },
+    {
+      "jp": "朝起きたら机の上に不思議な手紙が置いてありました。",
+      "id": "Saat bangun pagi, ada sepucuk surat misterius diletakkan di atas meja.",
+      "level": "n4",
+      "tags": [
+        "kehidupan-sehari"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus"
 },
 
 {
-  id: 'vg-n4-00211',
-  word: '大事な',
-  reading: 'だいじな',
-  romaji: 'daijina',
-  meaning_id: 'penting, serius',
-  meaning_en: 'important, serious',
-  jlpt: 'n4',
-  pos: 'na-adj',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['kualitas'],
-  register: 'neutral',
-  lawan_bicara: [],
-  nuance: null,
-  conj_type: 'adj-na',
-  examples: [{"jp":"パスポートは旅行の時にとても大事な書類です。","id":"Paspor adalah dokumen yang sangat penting saat bepergian.","level":"n4","tags":["kehidupan-sehari"]},{"jp":"家族と過ごす時間は私にとって一番大事なものです。","id":"Waktu yang dihabiskan bersama keluarga adalah hal yang paling berharga bagi saya.","level":"n4","tags":["keluarga"]}],
-  synonyms: [],
-  antonyms: [],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  "id": "vg-n4-00211",
+  "word": "大事な",
+  "reading": "だいじな",
+  "romaji": "daijina",
+  "meaning_id": "penting, serius",
+  "meaning_en": "important, serious",
+  "jlpt": "n4",
+  "pos": "na-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kualitas"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [],
+  "nuance": null,
+  "conj_type": "adj-na",
+  "examples": [
+    {
+      "jp": "パスポートは旅行の時にとても大事な書類です。",
+      "id": "Paspor adalah dokumen yang sangat penting saat bepergian.",
+      "level": "n4",
+      "tags": [
+        "kehidupan-sehari"
+      ]
+    },
+    {
+      "jp": "家族と過ごす時間は私にとって一番大事なものです。",
+      "id": "Waktu yang dihabiskan bersama keluarga adalah hal yang paling berharga bagi saya.",
+      "level": "n4",
+      "tags": [
+        "keluarga"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus"
 },
 
 {
-  id: 'vg-n4-00212',
-  word: '必要な',
-  reading: 'ひつような',
-  romaji: 'hitsuyouna',
-  meaning_id: 'perlu, diperlukan',
-  meaning_en: 'necessary, needed',
-  jlpt: 'n4',
-  pos: 'na-adj',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['kualitas'],
-  register: 'neutral',
-  lawan_bicara: [],
-  nuance: null,
-  conj_type: 'adj-na',
-  examples: [{"jp":"ビザを申請するために必要な書類を集めました。","id":"Saya mengumpulkan dokumen-dokumen yang diperlukan untuk mengajukan visa.","level":"n4","tags":["kehidupan-sehari"]},{"jp":"キャンプに行く前に必要な道具をメモして確認しました。","id":"Sebelum pergi berkemah, saya mencatat dan memeriksa perlengkapan yang diperlukan.","level":"n4","tags":["kehidupan-sehari","belanja"]}],
-  synonyms: [],
-  antonyms: [],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  "id": "vg-n4-00212",
+  "word": "必要な",
+  "reading": "ひつような",
+  "romaji": "hitsuyouna",
+  "meaning_id": "perlu, diperlukan",
+  "meaning_en": "necessary, needed",
+  "jlpt": "n4",
+  "pos": "na-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kualitas"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [],
+  "nuance": null,
+  "conj_type": "adj-na",
+  "examples": [
+    {
+      "jp": "ビザを申請するために必要な書類を集めました。",
+      "id": "Saya mengumpulkan dokumen-dokumen yang diperlukan untuk mengajukan visa.",
+      "level": "n4",
+      "tags": [
+        "kehidupan-sehari"
+      ]
+    },
+    {
+      "jp": "キャンプに行く前に必要な道具をメモして確認しました。",
+      "id": "Sebelum pergi berkemah, saya mencatat dan memeriksa perlengkapan yang diperlukan.",
+      "level": "n4",
+      "tags": [
+        "kehidupan-sehari",
+        "belanja"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus"
 },
 
 {
-  id: 'vg-n4-00213',
-  word: '自由な',
-  reading: 'じゆうな',
-  romaji: 'jiyuuna',
-  meaning_id: 'bebas, merdeka',
-  meaning_en: 'free, unrestricted',
-  jlpt: 'n4',
-  pos: 'na-adj',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['kualitas'],
-  register: 'neutral',
-  lawan_bicara: [],
-  nuance: null,
-  conj_type: 'adj-na',
-  examples: [{"jp":"大学生になってから、自由な時間が増えました。","id":"Sejak menjadi mahasiswa, waktu bebas saya bertambah.","level":"n4","tags":["pendidikan","waktu"]},{"jp":"この授業では自由なテーマで作文を書いてもいいです。","id":"Di kelas ini, boleh menulis karangan dengan topik yang bebas.","level":"n4","tags":["pendidikan"]}],
-  synonyms: [],
-  antonyms: [],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  "id": "vg-n4-00213",
+  "word": "自由な",
+  "reading": "じゆうな",
+  "romaji": "jiyuuna",
+  "meaning_id": "bebas, merdeka",
+  "meaning_en": "free, unrestricted",
+  "jlpt": "n4",
+  "pos": "na-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kualitas"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [],
+  "nuance": null,
+  "conj_type": "adj-na",
+  "examples": [
+    {
+      "jp": "大学生になってから、自由な時間が増えました。",
+      "id": "Sejak menjadi mahasiswa, waktu bebas saya bertambah.",
+      "level": "n4",
+      "tags": [
+        "pendidikan",
+        "waktu"
+      ]
+    },
+    {
+      "jp": "この授業では自由なテーマで作文を書いてもいいです。",
+      "id": "Di kelas ini, boleh menulis karangan dengan topik yang bebas.",
+      "level": "n4",
+      "tags": [
+        "pendidikan"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus"
 },
 
 {
-  id: 'vg-n4-00214',
-  word: '危険な',
-  reading: 'きけんな',
-  romaji: 'kikenna',
-  meaning_id: 'berbahaya, berisiko',
-  meaning_en: 'dangerous, risky',
-  jlpt: 'n4',
-  pos: 'na-adj',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['kualitas'],
-  register: 'neutral',
-  lawan_bicara: [],
-  nuance: null,
-  conj_type: 'adj-na',
-  examples: [{"jp":"夜遅くに一人で暗い道を歩くのは危険です。","id":"Berjalan sendirian di jalan gelap saat larut malam adalah hal yang berbahaya.","level":"n4","tags":["kehidupan-sehari"]},{"jp":"台風の日は川の近くに行くのは非常に危険です。","id":"Pada hari badai taifun, pergi ke dekat sungai sangat berbahaya.","level":"n4","tags":["alam-lingkungan","kesehatan"]}],
-  synonyms: [],
-  antonyms: [],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  "id": "vg-n4-00214",
+  "word": "危険な",
+  "reading": "きけんな",
+  "romaji": "kikenna",
+  "meaning_id": "berbahaya, berisiko",
+  "meaning_en": "dangerous, risky",
+  "jlpt": "n4",
+  "pos": "na-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kualitas"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [],
+  "nuance": null,
+  "conj_type": "adj-na",
+  "examples": [
+    {
+      "jp": "夜遅くに一人で暗い道を歩くのは危険です。",
+      "id": "Berjalan sendirian di jalan gelap saat larut malam adalah hal yang berbahaya.",
+      "level": "n4",
+      "tags": [
+        "kehidupan-sehari"
+      ]
+    },
+    {
+      "jp": "台風の日は川の近くに行くのは非常に危険です。",
+      "id": "Pada hari badai taifun, pergi ke dekat sungai sangat berbahaya.",
+      "level": "n4",
+      "tags": [
+        "alam-lingkungan",
+        "kesehatan"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus"
 },
 
 {
-  id: 'vg-n4-00215',
-  word: '得意な',
-  reading: 'とくいな',
-  romaji: 'tokuina',
-  meaning_id: 'pandai, mahir dalam',
-  meaning_en: 'good at, skilled in',
-  jlpt: 'n4',
-  pos: 'na-adj',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['kualitas'],
-  register: 'neutral',
-  lawan_bicara: [],
-  nuance: null,
-  conj_type: 'adj-na',
-  examples: [{"jp":"姉は料理が得意なので、よくおいしいお菓子を作ってくれます。","id":"Kakak perempuan saya pandai memasak, sehingga sering membuat kue yang enak.","level":"n4","tags":["keluarga","makanan-minuman"]},{"jp":"私は英語を話すことが得意なので、留学生を案内しました。","id":"Karena saya mahir berbahasa Inggris, saya memandu mahasiswa asing.","level":"n4","tags":["pendidikan","pertemanan"]}],
-  synonyms: [],
-  antonyms: [],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  "id": "vg-n4-00215",
+  "word": "得意な",
+  "reading": "とくいな",
+  "romaji": "tokuina",
+  "meaning_id": "pandai, mahir dalam",
+  "meaning_en": "good at, skilled in",
+  "jlpt": "n4",
+  "pos": "na-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kualitas"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [],
+  "nuance": null,
+  "conj_type": "adj-na",
+  "examples": [
+    {
+      "jp": "姉は料理が得意なので、よくおいしいお菓子を作ってくれます。",
+      "id": "Kakak perempuan saya pandai memasak, sehingga sering membuat kue yang enak.",
+      "level": "n4",
+      "tags": [
+        "keluarga",
+        "makanan-minuman"
+      ]
+    },
+    {
+      "jp": "私は英語を話すことが得意なので、留学生を案内しました。",
+      "id": "Karena saya mahir berbahasa Inggris, saya memandu mahasiswa asing.",
+      "level": "n4",
+      "tags": [
+        "pendidikan",
+        "pertemanan"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus"
 },
 
 {
-  id: 'vg-n4-00216',
-  word: '苦手な',
-  reading: 'にがてな',
-  romaji: 'nigatena',
-  meaning_id: 'tidak pandai, lemah dalam',
-  meaning_en: 'not good at, weak in',
-  jlpt: 'n4',
-  pos: 'na-adj',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['kualitas'],
-  register: 'neutral',
-  lawan_bicara: [],
-  nuance: null,
-  conj_type: 'adj-na',
-  examples: [{"jp":"私は辛い食べ物が苦手なので、カレーは甘口にします。","id":"Saya tidak kuat makanan pedas, jadi saya memilih kari yang tidak pedas.","level":"n4","tags":["makanan-minuman"]},{"jp":"人前でスピーチをするのが苦手で緊張してしまいます。","id":"Saya tidak pandai berpidato di depan umum dan sering merasa gugup.","level":"n4","tags":["pendidikan","pekerjaan"]}],
-  synonyms: [],
-  antonyms: [],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  "id": "vg-n4-00216",
+  "word": "苦手な",
+  "reading": "にがてな",
+  "romaji": "nigatena",
+  "meaning_id": "tidak pandai, lemah dalam",
+  "meaning_en": "not good at, weak in",
+  "jlpt": "n4",
+  "pos": "na-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kualitas"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [],
+  "nuance": null,
+  "conj_type": "adj-na",
+  "examples": [
+    {
+      "jp": "私は辛い食べ物が苦手なので、カレーは甘口にします。",
+      "id": "Saya tidak kuat makanan pedas, jadi saya memilih kari yang tidak pedas.",
+      "level": "n4",
+      "tags": [
+        "makanan-minuman"
+      ]
+    },
+    {
+      "jp": "人前でスピーチをするのが苦手で緊張してしまいます。",
+      "id": "Saya tidak pandai berpidato di depan umum dan sering merasa gugup.",
+      "level": "n4",
+      "tags": [
+        "pendidikan",
+        "pekerjaan"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus"
 },
 
 {
-  id: 'vg-n4-00217',
-  word: '複雑な',
-  reading: 'ふくざつな',
-  romaji: 'fukuzatsuna',
-  meaning_id: 'rumit, kompleks',
-  meaning_en: 'complicated, complex',
-  jlpt: 'n4',
-  pos: 'na-adj',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['kualitas'],
-  register: 'neutral',
-  lawan_bicara: [],
-  nuance: null,
-  conj_type: 'adj-na',
-  examples: [{"jp":"この機械の使い方は複雑なので、マニュアルをよく読んでください。","id":"Cara pengoperasian mesin ini rumit, jadi tolong baca buku panduan dengan saksama.","level":"n4","tags":["pekerjaan"]},{"jp":"東京の地下鉄は路線が複雑で迷いやすいです。","id":"Jalur kereta bawah tanah Tokyo rumit sehingga mudah tersesat.","level":"n4","tags":["kehidupan-sehari","ruang-arah"]}],
-  synonyms: [],
-  antonyms: [],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  "id": "vg-n4-00217",
+  "word": "複雑な",
+  "reading": "ふくざつな",
+  "romaji": "fukuzatsuna",
+  "meaning_id": "rumit, kompleks",
+  "meaning_en": "complicated, complex",
+  "jlpt": "n4",
+  "pos": "na-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kualitas"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [],
+  "nuance": null,
+  "conj_type": "adj-na",
+  "examples": [
+    {
+      "jp": "この機械の使い方は複雑なので、マニュアルをよく読んでください。",
+      "id": "Cara pengoperasian mesin ini rumit, jadi tolong baca buku panduan dengan saksama.",
+      "level": "n4",
+      "tags": [
+        "pekerjaan"
+      ]
+    },
+    {
+      "jp": "東京の地下鉄は路線が複雑で迷いやすいです。",
+      "id": "Jalur kereta bawah tanah Tokyo rumit sehingga mudah tersesat.",
+      "level": "n4",
+      "tags": [
+        "kehidupan-sehari",
+        "ruang-arah"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus"
 },
 
 {
-  id: 'vg-n4-00218',
-  word: '簡単な',
-  reading: 'かんたんな',
-  romaji: 'kantanna',
-  meaning_id: 'mudah, sederhana',
-  meaning_en: 'easy, simple',
-  jlpt: 'n4',
-  pos: 'na-adj',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['kualitas'],
-  register: 'neutral',
-  lawan_bicara: [],
-  nuance: null,
-  conj_type: 'adj-na',
-  examples: [{"jp":"この料理は簡単な材料ですぐに作ることができます。","id":"Hidangan ini bisa dibuat dengan cepat menggunakan bahan yang sederhana.","level":"n4","tags":["makanan-minuman"]},{"jp":"今日のテストは思ったより簡単な問題ばかりでした。","id":"Ujian hari ini isinya soal-soal mudah di luar dugaan saya.","level":"n4","tags":["pendidikan"]}],
-  synonyms: [],
-  antonyms: [],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  "id": "vg-n4-00218",
+  "word": "簡単な",
+  "reading": "かんたんな",
+  "romaji": "kantanna",
+  "meaning_id": "mudah, sederhana",
+  "meaning_en": "easy, simple",
+  "jlpt": "n4",
+  "pos": "na-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kualitas"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [],
+  "nuance": null,
+  "conj_type": "adj-na",
+  "examples": [
+    {
+      "jp": "この料理は簡単な材料ですぐに作ることができます。",
+      "id": "Hidangan ini bisa dibuat dengan cepat menggunakan bahan yang sederhana.",
+      "level": "n4",
+      "tags": [
+        "makanan-minuman"
+      ]
+    },
+    {
+      "jp": "今日のテストは思ったより簡単な問題ばかりでした。",
+      "id": "Ujian hari ini isinya soal-soal mudah di luar dugaan saya.",
+      "level": "n4",
+      "tags": [
+        "pendidikan"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus"
 },
 
 {
-  id: 'vg-n4-00219',
-  word: '便利な',
-  reading: 'べんりな',
-  romaji: 'benrina',
-  meaning_id: 'praktis, berguna',
-  meaning_en: 'convenient, useful',
-  jlpt: 'n4',
-  pos: 'na-adj',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['kualitas'],
-  register: 'neutral',
-  lawan_bicara: [],
-  nuance: null,
-  conj_type: 'adj-na',
-  examples: [{"jp":"スマートフォンのアプリを使えば、買い物がとても便利になります。","id":"Menggunakan aplikasi di ponsel pintar membuat berbelanja menjadi sangat praktis.","level":"n4","tags":["belanja","kehidupan-sehari"]},{"jp":"駅の近くに住んでいるので、通勤にとても便利な場所です。","id":"Karena tinggal di dekat stasiun, lokasinya sangat praktis untuk berangkat bekerja.","level":"n4","tags":["pekerjaan","kehidupan-sehari"]}],
-  synonyms: [],
-  antonyms: [],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  "id": "vg-n4-00219",
+  "word": "便利な",
+  "reading": "べんりな",
+  "romaji": "benrina",
+  "meaning_id": "praktis, berguna",
+  "meaning_en": "convenient, useful",
+  "jlpt": "n4",
+  "pos": "na-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kualitas"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [],
+  "nuance": null,
+  "conj_type": "adj-na",
+  "examples": [
+    {
+      "jp": "スマートフォンのアプリを使えば、買い物がとても便利になります。",
+      "id": "Menggunakan aplikasi di ponsel pintar membuat berbelanja menjadi sangat praktis.",
+      "level": "n4",
+      "tags": [
+        "belanja",
+        "kehidupan-sehari"
+      ]
+    },
+    {
+      "jp": "駅の近くに住んでいるので、通勤にとても便利な場所です。",
+      "id": "Karena tinggal di dekat stasiun, lokasinya sangat praktis untuk berangkat bekerja.",
+      "level": "n4",
+      "tags": [
+        "pekerjaan",
+        "kehidupan-sehari"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus"
 },
 
 {
-  id: 'vg-n4-00220',
-  word: '不便な',
-  reading: 'ふべんな',
-  romaji: 'fubenna',
-  meaning_id: 'tidak praktis, merepotkan',
-  meaning_en: 'inconvenient, impractical',
-  jlpt: 'n4',
-  pos: 'na-adj',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['kualitas'],
-  register: 'neutral',
-  lawan_bicara: [],
-  nuance: null,
-  conj_type: 'adj-na',
-  examples: [{"jp":"この町は近くにスーパーがなくて生活が不便です。","id":"Kota ini tidak punya supermarket di dekatnya sehingga kehidupan terasa merepotkan.","level":"n4","tags":["kehidupan-sehari","belanja"]},{"jp":"バスが１時間に１本しか来ないのでとても不便です。","id":"Karena bus hanya datang satu jam sekali, transportasinya sangat tidak praktis.","level":"n4","tags":["kehidupan-sehari","waktu"]}],
-  synonyms: [],
-  antonyms: [],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  "id": "vg-n4-00220",
+  "word": "不便な",
+  "reading": "ふべんな",
+  "romaji": "fubenna",
+  "meaning_id": "tidak praktis, merepotkan",
+  "meaning_en": "inconvenient, impractical",
+  "jlpt": "n4",
+  "pos": "na-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kualitas"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [],
+  "nuance": null,
+  "conj_type": "adj-na",
+  "examples": [
+    {
+      "jp": "この町は近くにスーパーがなくて生活が不便です。",
+      "id": "Kota ini tidak punya supermarket di dekatnya sehingga kehidupan terasa merepotkan.",
+      "level": "n4",
+      "tags": [
+        "kehidupan-sehari",
+        "belanja"
+      ]
+    },
+    {
+      "jp": "バスが１時間に１本しか来ないのでとても不便です。",
+      "id": "Karena bus hanya datang satu jam sekali, transportasinya sangat tidak praktis.",
+      "level": "n4",
+      "tags": [
+        "kehidupan-sehari",
+        "waktu"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus"
 },
 
 {
-  id: 'vg-n4-00221',
-  word: '熱心な',
-  reading: 'ねっしんな',
-  romaji: 'nesshinna',
-  meaning_id: 'bersemangat, antusias',
-  meaning_en: 'enthusiastic, eager',
-  jlpt: 'n4',
-  pos: 'na-adj',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['kualitas'],
-  register: 'neutral',
-  lawan_bicara: [],
-  nuance: null,
-  conj_type: 'adj-na',
-  examples: [{"jp":"彼女は日本語の勉強にとても熱心に取り組んでいます。","id":"Dia berusaha dengan sangat bersemangat dalam belajar bahasa Jepang.","level":"n4","tags":["pendidikan"]},{"jp":"熱心な先生のおかげで、苦手な数学が好きになりました。","id":"Berkat guru yang berdedikasi tinggi, saya jadi menyukai pelajaran matematika.","level":"n4","tags":["pendidikan"]}],
-  synonyms: [],
-  antonyms: [],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  "id": "vg-n4-00221",
+  "word": "熱心な",
+  "reading": "ねっしんな",
+  "romaji": "nesshinna",
+  "meaning_id": "bersemangat, antusias",
+  "meaning_en": "enthusiastic, eager",
+  "jlpt": "n4",
+  "pos": "na-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kualitas"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [],
+  "nuance": null,
+  "conj_type": "adj-na",
+  "examples": [
+    {
+      "jp": "彼女は日本語の勉強にとても熱心に取り組んでいます。",
+      "id": "Dia berusaha dengan sangat bersemangat dalam belajar bahasa Jepang.",
+      "level": "n4",
+      "tags": [
+        "pendidikan"
+      ]
+    },
+    {
+      "jp": "熱心な先生のおかげで、苦手な数学が好きになりました。",
+      "id": "Berkat guru yang berdedikasi tinggi, saya jadi menyukai pelajaran matematika.",
+      "level": "n4",
+      "tags": [
+        "pendidikan"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus"
 },
 
 {
-  id: 'vg-n4-00222',
-  word: '丈夫な',
-  reading: 'じょうぶな',
-  romaji: 'joubuna',
-  meaning_id: 'kuat, kokoh, sehat',
-  meaning_en: 'sturdy, healthy, durable',
-  jlpt: 'n4',
-  pos: 'na-adj',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['kualitas'],
-  register: 'neutral',
-  lawan_bicara: [],
-  nuance: null,
-  conj_type: 'adj-na',
-  examples: [{"jp":"この革のかばんはとても丈夫で、十年以上使っています。","id":"Tas kulit ini sangat kokoh dan sudah saya pakai lebih dari sepuluh tahun.","level":"n4","tags":["belanja","kehidupan-sehari"]},{"jp":"祖父は毎日散歩をしているので、今でも体が丈夫です。","id":"Kakek setiap hari berjalan-jalan, sehingga badannya masih sehat dan kuat.","level":"n4","tags":["keluarga","kesehatan"]}],
-  synonyms: [],
-  antonyms: [],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  "id": "vg-n4-00222",
+  "word": "丈夫な",
+  "reading": "じょうぶな",
+  "romaji": "joubuna",
+  "meaning_id": "kuat, kokoh, sehat",
+  "meaning_en": "sturdy, healthy, durable",
+  "jlpt": "n4",
+  "pos": "na-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kualitas"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [],
+  "nuance": null,
+  "conj_type": "adj-na",
+  "examples": [
+    {
+      "jp": "この革のかばんはとても丈夫で、十年以上使っています。",
+      "id": "Tas kulit ini sangat kokoh dan sudah saya pakai lebih dari sepuluh tahun.",
+      "level": "n4",
+      "tags": [
+        "belanja",
+        "kehidupan-sehari"
+      ]
+    },
+    {
+      "jp": "祖父は毎日散歩をしているので、今でも体が丈夫です。",
+      "id": "Kakek setiap hari berjalan-jalan, sehingga badannya masih sehat dan kuat.",
+      "level": "n4",
+      "tags": [
+        "keluarga",
+        "kesehatan"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus"
 },
 
 {
-  id: 'vg-n4-00223',
-  word: '正確な',
-  reading: 'せいかくな',
-  romaji: 'seikakuna',
-  meaning_id: 'akurat, tepat',
-  meaning_en: 'accurate, precise',
-  jlpt: 'n4',
-  pos: 'na-adj',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['kualitas'],
-  register: 'neutral',
-  lawan_bicara: [],
-  nuance: null,
-  conj_type: 'adj-na',
-  examples: [{"jp":"時計を見て、正確な時間をメモ帳に記入しました。","id":"Melihat jam, saya mencatat waktu yang tepat di buku agenda.","level":"n4","tags":["pekerjaan","waktu"]},{"jp":"実験では正確なデータを記録することが求められます。","id":"Dalam eksperimen, pencatatan data yang akurat sangat dituntut.","level":"n4","tags":["pendidikan"]}],
-  synonyms: [],
-  antonyms: [],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
+  "id": "vg-n4-00223",
+  "word": "正確な",
+  "reading": "せいかくな",
+  "romaji": "seikakuna",
+  "meaning_id": "akurat, tepat",
+  "meaning_en": "accurate, precise",
+  "jlpt": "n4",
+  "pos": "na-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kualitas"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [],
+  "nuance": null,
+  "conj_type": "adj-na",
+  "examples": [
+    {
+      "jp": "時計を見て、正確な時間をメモ帳に記入しました。",
+      "id": "Melihat jam, saya mencatat waktu yang tepat di buku agenda.",
+      "level": "n4",
+      "tags": [
+        "pekerjaan",
+        "waktu"
+      ]
+    },
+    {
+      "jp": "実験では正確なデータを記録することが求められます。",
+      "id": "Dalam eksperimen, pencatatan data yang akurat sangat dituntut.",
+      "level": "n4",
+      "tags": [
+        "pendidikan"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus"
 },
 
 {
-  id: 'vg-n4-00339',
-  word: '恥ずかしい',
-  reading: 'はずかしい',
-  romaji: 'hazukashii',
-  meaning_id: 'malu',
-  meaning_en: 'embarrassed, ashamed, shy',
-  jlpt: 'n4',
-  pos: 'i-adj',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['emosi'],
-  register: 'neutral',
-  lawan_bicara: [],
-  nuance: '恥ずかしい = malu (perasaan, adj-i). 恥ずかしがり屋 = pemalu.',
-  conj_type: 'adj-i',
-  examples: [{"jp": "みんなの前で発表するのは恥ずかしいです。", "id": "Presentasi di depan semua orang itu memalukan.", "level": "n4", "tags": ["emosi", "pendidikan"]}],
-  synonyms: [],
-  antonyms: [],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus',
-  jmdict_seq: '1421630',
-  frequency: 14000,
-  forms: [{"word": "恥ずかしい", "info": []}, {"word": "恥かしい", "info": ["search-only kanji form"]}, {"word": "恥しい", "info": ["search-only kanji form"]}, {"word": "羞ずかしい", "info": ["search-only kanji form"]}, {"word": "羞しい", "info": ["search-only kanji form"]}, {"word": "羞かしい", "info": ["search-only kanji form"]}],
-  meanings: [{"en": "embarrassing; embarrassed; ashamed; humiliated; shy", "misc": [], "field": []}, {"en": "disgraceful; shameful", "misc": [], "field": []}],
+  "id": "vg-n4-00339",
+  "word": "恥ずかしい",
+  "reading": "はずかしい",
+  "romaji": "hazukashii",
+  "meaning_id": "malu",
+  "meaning_en": "embarrassed, ashamed, shy",
+  "jlpt": "n4",
+  "pos": "i-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "emosi"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [],
+  "nuance": "恥ずかしい = malu (perasaan, adj-i). 恥ずかしがり屋 = pemalu.",
+  "conj_type": "adj-i",
+  "examples": [
+    {
+      "jp": "みんなの前で発表するのは恥ずかしいです。",
+      "id": "Presentasi di depan semua orang itu memalukan.",
+      "level": "n4",
+      "tags": [
+        "emosi",
+        "pendidikan"
+      ],
+  "pitch": {"pattern":4,"category":"nakadaka","mora_count":5,"downstep_mora":4,"contour":"ハズカシ＼イ"}
+}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus",
+  "jmdict_seq": "1421630",
+  "frequency": 14000,
+  "forms": [
+    {
+      "word": "恥ずかしい",
+      "info": []
+    },
+    {
+      "word": "恥かしい",
+      "info": [
+        "search-only kanji form"
+      ]
+    },
+    {
+      "word": "恥しい",
+      "info": [
+        "search-only kanji form"
+      ]
+    },
+    {
+      "word": "羞ずかしい",
+      "info": [
+        "search-only kanji form"
+      ]
+    },
+    {
+      "word": "羞しい",
+      "info": [
+        "search-only kanji form"
+      ]
+    },
+    {
+      "word": "羞かしい",
+      "info": [
+        "search-only kanji form"
+      ]
+    }
+  ],
+  "meanings": [
+    {
+      "en": "embarrassing; embarrassed; ashamed; humiliated; shy",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "disgraceful; shameful",
+      "misc": [],
+      "field": []
+    }
+  ]
 },
 
 {
-  id: 'vg-n4-00482',
-  word: '浅い',
-  reading: 'あさい',
-  romaji: 'asai',
-  meaning_id: 'dangkal',
-  meaning_en: 'shallow',
-  jlpt: 'n4',
-  pos: 'i-adj',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['kualitas'],
-  register: 'neutral',
-  lawan_bicara: [],
-  nuance: null,
-  conj_type: 'adj-i',
-  examples: [{"jp":"海岸の近くは水深が浅いので、安心して泳げます。","id":"Karena kedalaman air di dekat pesisir dangkal, kita bisa berenang tanpa cemas.","level":"n4","tags":["alam-lingkungan","kehidupan-sehari"]},{"jp":"まだ日本に来て日が浅いので、分からない言葉が多いです。","id":"Karena hari sejak datang ke Jepang masih baru sebentar, banyak kata yang belum saya tahu.","level":"n4","tags":["pendidikan","waktu"]}],
-  synonyms: [],
-  antonyms: [],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus',
-  jmdict_seq: '1390800',
-  frequency: 22500,
-  meanings: [{"en": "shallow; superficial", "misc": [], "field": []}, {"en": "slight (wound); light (sleep); pale (colour); inadequate (knowledge)", "misc": [], "field": []}, {"en": "short (time); early; young", "misc": [], "field": []}],
+  "id": "vg-n4-00482",
+  "word": "浅い",
+  "reading": "あさい",
+  "romaji": "asai",
+  "meaning_id": "dangkal",
+  "meaning_en": "shallow",
+  "jlpt": "n4",
+  "pos": "i-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kualitas"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [],
+  "nuance": null,
+  "conj_type": "adj-i",
+  "examples": [
+    {
+      "jp": "海岸の近くは水深が浅いので、安心して泳げます。",
+      "id": "Karena kedalaman air di dekat pesisir dangkal, kita bisa berenang tanpa cemas.",
+      "level": "n4",
+      "tags": [
+        "alam-lingkungan",
+        "kehidupan-sehari"
+      ],
+  "pitch": {"pattern":4,"category":"nakadaka","mora_count":5,"downstep_mora":4,"contour":"ハズカシ＼イ"}
+},
+    {
+      "jp": "まだ日本に来て日が浅いので、分からない言葉が多いです。",
+      "id": "Karena hari sejak datang ke Jepang masih baru sebentar, banyak kata yang belum saya tahu.",
+      "level": "n4",
+      "tags": [
+        "pendidikan",
+        "waktu"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus",
+  "jmdict_seq": "1390800",
+  "frequency": 22500,
+  "meanings": [
+    {
+      "en": "shallow; superficial",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "slight (wound); light (sleep); pale (colour); inadequate (knowledge)",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "short (time); early; young",
+      "misc": [],
+      "field": []
+    }
+  ]
 },
 
 {
-  id: 'vg-n4-00483',
-  word: '薄い',
-  reading: 'うすい',
-  romaji: 'usui',
-  meaning_id: 'tipis; pucat (warna)',
-  meaning_en: 'thin; light (color)',
-  jlpt: 'n4',
-  pos: 'i-adj',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['kualitas'],
-  register: 'neutral',
-  lawan_bicara: [],
-  nuance: null,
-  conj_type: 'adj-i',
-  examples: [{"jp":"夏は涼しくて薄い生地のシャツを着るのが好きです。","id":"Pada musim panas, saya suka memakai kemeja berbahan tipis yang sejuk.","level":"n4","tags":["belanja","kehidupan-sehari"]},{"jp":"このお茶は少し味が薄いので、もう少し濃くしてください。","id":"Rasa teh ini agak hambar, tolong buatkan sedikit lebih pekat.","level":"n4","tags":["makanan-minuman"]}],
-  synonyms: [],
-  antonyms: [],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus',
-  jmdict_seq: '1475480',
-  frequency: 10000,
-  meanings: [{"en": "thin (of an object)", "misc": [], "field": []}, {"en": "pale; light; faint", "misc": [], "field": []}, {"en": "watery; thin; diluted", "misc": [], "field": []}, {"en": "weak (taste, etc.); little (affection, etc.); not much (of a presence)", "misc": [], "field": []}, {"en": "slim (probability, etc.); small", "misc": [], "field": []}, {"en": "sparse; patchy; scattered", "misc": [], "field": []}],
+  "id": "vg-n4-00483",
+  "word": "薄い",
+  "reading": "うすい",
+  "romaji": "usui",
+  "meaning_id": "tipis; pucat (warna)",
+  "meaning_en": "thin; light (color)",
+  "jlpt": "n4",
+  "pos": "i-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kualitas"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [],
+  "nuance": null,
+  "conj_type": "adj-i",
+  "examples": [
+    {
+      "jp": "夏は涼しくて薄い生地のシャツを着るのが好きです。",
+      "id": "Pada musim panas, saya suka memakai kemeja berbahan tipis yang sejuk.",
+      "level": "n4",
+      "tags": [
+        "belanja",
+        "kehidupan-sehari"
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ウスイ￣"}
+},
+    {
+      "jp": "このお茶は少し味が薄いので、もう少し濃くしてください。",
+      "id": "Rasa teh ini agak hambar, tolong buatkan sedikit lebih pekat.",
+      "level": "n4",
+      "tags": [
+        "makanan-minuman"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus",
+  "jmdict_seq": "1475480",
+  "frequency": 10000,
+  "meanings": [
+    {
+      "en": "thin (of an object)",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "pale; light; faint",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "watery; thin; diluted",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "weak (taste, etc.); little (affection, etc.); not much (of a presence)",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "slim (probability, etc.); small",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "sparse; patchy; scattered",
+      "misc": [],
+      "field": []
+    }
+  ]
 },
 
 {
-  id: 'vg-n4-00484',
-  word: '厳しい',
-  reading: 'きびしい',
-  romaji: 'kibishii',
-  meaning_id: 'ketat; tegas',
-  meaning_en: 'strict; severe',
-  jlpt: 'n4',
-  pos: 'i-adj',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['kualitas'],
-  register: 'neutral',
-  lawan_bicara: [],
-  nuance: null,
-  conj_type: 'adj-i',
-  examples: [{"jp":"この寮では門限の時間がとても厳しく決められています。","id":"Di asrama ini, waktu jam malam ditetapkan dengan sangat ketat.","level":"n4","tags":["pendidikan","kehidupan-sehari"]},{"jp":"冬の北海道は寒さが非常に厳しいです。","id":"Musim dingin di Hokkaido cuaca dinginnya luar biasa menusuk.","level":"n4","tags":["alam-lingkungan"]}],
-  synonyms: [],
-  antonyms: [],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus',
-  jmdict_seq: '2831771',
-  forms: [{"word": "厳めしい", "info": []}, {"word": "厳しい", "info": ["okurigana tidak biasa"]}],
-  meanings: [{"en": "stern; grave; austere; imposing; dignified; formidable; solemn; majestic", "misc": ["biasanya kana saja"], "field": []}, {"en": "strict (e.g. security); severe; firm; rigid; rigorous", "misc": ["biasanya kana saja"], "field": []}],
-  misc_jm: ["biasanya kana saja"],
+  "id": "vg-n4-00484",
+  "word": "厳しい",
+  "reading": "きびしい",
+  "romaji": "kibishii",
+  "meaning_id": "ketat; tegas",
+  "meaning_en": "strict; severe",
+  "jlpt": "n4",
+  "pos": "i-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kualitas"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [],
+  "nuance": null,
+  "conj_type": "adj-i",
+  "examples": [
+    {
+      "jp": "この寮では門限の時間がとても厳しく決められています。",
+      "id": "Di asrama ini, waktu jam malam ditetapkan dengan sangat ketat.",
+      "level": "n4",
+      "tags": [
+        "pendidikan",
+        "kehidupan-sehari"
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"キビシ＼イ"}
+},
+    {
+      "jp": "冬の北海道は寒さが非常に厳しいです。",
+      "id": "Musim dingin di Hokkaido cuaca dinginnya luar biasa menusuk.",
+      "level": "n4",
+      "tags": [
+        "alam-lingkungan"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus",
+  "jmdict_seq": "2831771",
+  "forms": [
+    {
+      "word": "厳めしい",
+      "info": []
+    },
+    {
+      "word": "厳しい",
+      "info": [
+        "okurigana tidak biasa"
+      ]
+    }
+  ],
+  "meanings": [
+    {
+      "en": "stern; grave; austere; imposing; dignified; formidable; solemn; majestic",
+      "misc": [
+        "biasanya kana saja"
+      ],
+      "field": []
+    },
+    {
+      "en": "strict (e.g. security); severe; firm; rigid; rigorous",
+      "misc": [
+        "biasanya kana saja"
+      ],
+      "field": []
+    }
+  ],
+  "misc_jm": [
+    "biasanya kana saja"
+  ]
 },
 
 {
-  id: 'vg-n4-00485',
-  word: '細かい',
-  reading: 'こまかい',
-  romaji: 'komakai',
-  meaning_id: 'kecil; rinci; halus',
-  meaning_en: 'small; detailed; fine',
-  jlpt: 'n4',
-  pos: 'i-adj',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['kualitas'],
-  register: 'neutral',
-  lawan_bicara: [],
-  nuance: null,
-  conj_type: 'adj-i',
-  examples: [{"jp":"千円札しかないので、細かい小銭に両替してもらえますか。","id":"Karena cuma punya uang kertas seribu yen, bisakah ditukarkan ke koin receh?","level":"n4","tags":["belanja","kehidupan-sehari"]},{"jp":"料理をするときに玉ねぎを細かいみじん切りにしました。","id":"Saat memasak, saya mencincang bawang bombay menjadi potongan kecil-kecil halus.","level":"n4","tags":["makanan-minuman"]}],
-  synonyms: [],
-  antonyms: [],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus',
-  jmdict_seq: '1295530',
-  frequency: 4500,
-  meanings: [{"en": "small", "misc": [], "field": []}, {"en": "fine; minute", "misc": [], "field": []}, {"en": "minor; trivial", "misc": [], "field": []}, {"en": "sensitive; attentive", "misc": [], "field": []}, {"en": "careful; frugal; stingy", "misc": [], "field": []}],
+  "id": "vg-n4-00485",
+  "word": "細かい",
+  "reading": "こまかい",
+  "romaji": "komakai",
+  "meaning_id": "kecil; rinci; halus",
+  "meaning_en": "small; detailed; fine",
+  "jlpt": "n4",
+  "pos": "i-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kualitas"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [],
+  "nuance": null,
+  "conj_type": "adj-i",
+  "examples": [
+    {
+      "jp": "千円札しかないので、細かい小銭に両替してもらえますか。",
+      "id": "Karena cuma punya uang kertas seribu yen, bisakah ditukarkan ke koin receh?",
+      "level": "n4",
+      "tags": [
+        "belanja",
+        "kehidupan-sehari"
+      ],
+  "pitch": {"pattern":4,"category":"nakadaka","mora_count":5,"downstep_mora":4,"contour":"イカメシ＼イ"}
+},
+    {
+      "jp": "料理をするときに玉ねぎを細かいみじん切りにしました。",
+      "id": "Saat memasak, saya mencincang bawang bombay menjadi potongan kecil-kecil halus.",
+      "level": "n4",
+      "tags": [
+        "makanan-minuman"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus",
+  "jmdict_seq": "1295530",
+  "frequency": 4500,
+  "meanings": [
+    {
+      "en": "small",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "fine; minute",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "minor; trivial",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "sensitive; attentive",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "careful; frugal; stingy",
+      "misc": [],
+      "field": []
+    }
+  ]
 },
 
 {
-  id: 'vg-n4-00486',
-  word: '怖い',
-  reading: 'こわい',
-  romaji: 'kowai',
-  meaning_id: 'menakutkan; seram',
-  meaning_en: 'scary; frightening',
-  jlpt: 'n4',
-  pos: 'i-adj',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['kualitas'],
-  register: 'neutral',
-  lawan_bicara: [],
-  nuance: '怖い = menakutkan/seram (adj-i). 怖がる = merasa takut.',
-  conj_type: 'adj-i',
-  examples: [{"jp": "暗い道を一人で歩くのは怖いです。", "id": "Berjalan sendirian di jalan gelap itu menakutkan.", "level": "n4", "tags": ["emosi"]}],
-  synonyms: [],
-  antonyms: [],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus',
-  jmdict_seq: '1593480',
-  frequency: 9500,
-  forms: [{"word": "怖い", "info": []}, {"word": "恐い", "info": []}],
+  "id": "vg-n4-00486",
+  "word": "怖い",
+  "reading": "こわい",
+  "romaji": "kowai",
+  "meaning_id": "menakutkan; seram",
+  "meaning_en": "scary; frightening",
+  "jlpt": "n4",
+  "pos": "i-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kualitas"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [],
+  "nuance": "怖い = menakutkan/seram (adj-i). 怖がる = merasa takut.",
+  "conj_type": "adj-i",
+  "examples": [
+    {
+      "jp": "暗い道を一人で歩くのは怖いです。",
+      "id": "Berjalan sendirian di jalan gelap itu menakutkan.",
+      "level": "n4",
+      "tags": [
+        "emosi"
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"コワ＼イ"}
+}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus",
+  "jmdict_seq": "1593480",
+  "frequency": 9500,
+  "forms": [
+    {
+      "word": "怖い",
+      "info": []
+    },
+    {
+      "word": "恐い",
+      "info": []
+    }
+  ]
 },
 
 {
-  id: 'vg-n4-00487',
-  word: '寂しい',
-  reading: 'さびしい',
-  romaji: 'sabishii',
-  meaning_id: 'kesepian',
-  meaning_en: 'lonely; lonesome',
-  jlpt: 'n4',
-  pos: 'i-adj',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['kualitas'],
-  register: 'neutral',
-  lawan_bicara: [],
-  nuance: '寂しい = kesepian/merindukan. 寂しくなる = menjadi kesepian. Lawan: 賑やか.',
-  conj_type: 'adj-i',
-  examples: [{"jp": "一人暮らしは少し寂しいです。", "id": "Tinggal sendiri itu sedikit kesepian.", "level": "n4", "tags": ["emosi", "kehidupan-sehari"]}],
-  synonyms: [],
-  antonyms: [],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus',
-  jmdict_seq: '1579720',
-  frequency: 16500,
-  forms: [{"word": "寂しい", "info": []}, {"word": "淋しい", "info": []}],
+  "id": "vg-n4-00487",
+  "word": "寂しい",
+  "reading": "さびしい",
+  "romaji": "sabishii",
+  "meaning_id": "kesepian",
+  "meaning_en": "lonely; lonesome",
+  "jlpt": "n4",
+  "pos": "i-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kualitas"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [],
+  "nuance": "寂しい = kesepian/merindukan. 寂しくなる = menjadi kesepian. Lawan: 賑やか.",
+  "conj_type": "adj-i",
+  "examples": [
+    {
+      "jp": "一人暮らしは少し寂しいです。",
+      "id": "Tinggal sendiri itu sedikit kesepian.",
+      "level": "n4",
+      "tags": [
+        "emosi",
+        "kehidupan-sehari"
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"コワ＼イ"}
+}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus",
+  "jmdict_seq": "1579720",
+  "frequency": 16500,
+  "forms": [
+    {
+      "word": "寂しい",
+      "info": []
+    },
+    {
+      "word": "淋しい",
+      "info": []
+    }
+  ]
 },
 
 {
-  id: 'vg-n4-00488',
-  word: '素晴らしい',
-  reading: 'すばらしい',
-  romaji: 'subarashii',
-  meaning_id: 'luar biasa; menakjubkan',
-  meaning_en: 'wonderful; splendid',
-  jlpt: 'n4',
-  pos: 'i-adj',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['kualitas'],
-  register: 'neutral',
-  lawan_bicara: [],
-  nuance: null,
-  conj_type: 'adj-i',
-  examples: [{"jp":"山の上から見下ろした景色は本当に素晴らしかったです。","id":"Pemandangan yang terhampar dari puncak gunung sungguh menakjubkan.","level":"n4","tags":["alam-lingkungan"]},{"jp":"劇場のコンサートで素晴らしい演奏を聴きました。","id":"Saya mendengarkan pertunjukan musik yang luar biasa di konser gedung teater.","level":"n4","tags":["kehidupan-sehari"]}],
-  synonyms: [],
-  antonyms: [],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus',
-  jmdict_seq: '1397300',
-  frequency: 8000,
-  forms: [{"word": "素晴らしい", "info": []}, {"word": "素晴しい", "info": ["search-only kanji form"]}, {"word": "素薔薇しい", "info": ["search-only kanji form"]}],
+  "id": "vg-n4-00488",
+  "word": "素晴らしい",
+  "reading": "すばらしい",
+  "romaji": "subarashii",
+  "meaning_id": "luar biasa; menakjubkan",
+  "meaning_en": "wonderful; splendid",
+  "jlpt": "n4",
+  "pos": "i-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kualitas"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [],
+  "nuance": null,
+  "conj_type": "adj-i",
+  "examples": [
+    {
+      "jp": "山の上から見下ろした景色は本当に素晴らしかったです。",
+      "id": "Pemandangan yang terhampar dari puncak gunung sungguh menakjubkan.",
+      "level": "n4",
+      "tags": [
+        "alam-lingkungan"
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"サビシ＼イ"}
+},
+    {
+      "jp": "劇場のコンサートで素晴らしい演奏を聴きました。",
+      "id": "Saya mendengarkan pertunjukan musik yang luar biasa di konser gedung teater.",
+      "level": "n4",
+      "tags": [
+        "kehidupan-sehari"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus",
+  "jmdict_seq": "1397300",
+  "frequency": 8000,
+  "forms": [
+    {
+      "word": "素晴らしい",
+      "info": []
+    },
+    {
+      "word": "素晴しい",
+      "info": [
+        "search-only kanji form"
+      ]
+    },
+    {
+      "word": "素薔薇しい",
+      "info": [
+        "search-only kanji form"
+      ]
+    }
+  ]
 },
 
 {
-  id: 'vg-n4-00489',
-  word: '凄い',
-  reading: 'すごい',
-  romaji: 'sugoi',
-  meaning_id: 'luar biasa; menakjubkan',
-  meaning_en: 'amazing; incredible; terrible',
-  jlpt: 'n4',
-  pos: 'i-adj',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['kualitas'],
-  register: 'neutral',
-  lawan_bicara: [],
-  nuance: null,
-  conj_type: 'adj-i',
-  examples: [{"jp":"プロの選手の走るスピードは本当に凄いです。","id":"Kecepatan lari atlet profesional itu benar-benar mengagumkan.","level":"n4","tags":["kehidupan-sehari"]},{"jp":"昨日の雨は凄い勢いで降っていました。","id":"Hujan kemarin turun dengan intensitas yang luar biasa deras.","level":"n4","tags":["alam-lingkungan"]}],
-  synonyms: [],
-  antonyms: [],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus',
-  jmdict_seq: '1374550',
-  frequency: 1000,
-  meanings: [{"en": "terrible; dreadful", "misc": ["biasanya kana saja"], "field": []}, {"en": "amazing (e.g. of strength); great (e.g. of skills); wonderful; terrific", "misc": ["biasanya kana saja"], "field": []}, {"en": "to a great extent; vast (in numbers)", "misc": ["biasanya kana saja"], "field": []}, {"en": "awfully; very; immensely", "misc": ["biasanya kana saja", "percakapan kasual"], "field": []}],
-  misc_jm: ["biasanya kana saja", "kasual"],
+  "id": "vg-n4-00489",
+  "word": "凄い",
+  "reading": "すごい",
+  "romaji": "sugoi",
+  "meaning_id": "luar biasa; menakjubkan",
+  "meaning_en": "amazing; incredible; terrible",
+  "jlpt": "n4",
+  "pos": "i-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kualitas"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [],
+  "nuance": null,
+  "conj_type": "adj-i",
+  "examples": [
+    {
+      "jp": "プロの選手の走るスピードは本当に凄いです。",
+      "id": "Kecepatan lari atlet profesional itu benar-benar mengagumkan.",
+      "level": "n4",
+      "tags": [
+        "kehidupan-sehari"
+      ],
+  "pitch": {"pattern":4,"category":"nakadaka","mora_count":5,"downstep_mora":4,"contour":"スバラシ＼イ"}
+},
+    {
+      "jp": "昨日の雨は凄い勢いで降っていました。",
+      "id": "Hujan kemarin turun dengan intensitas yang luar biasa deras.",
+      "level": "n4",
+      "tags": [
+        "alam-lingkungan"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus",
+  "jmdict_seq": "1374550",
+  "frequency": 1000,
+  "meanings": [
+    {
+      "en": "terrible; dreadful",
+      "misc": [
+        "biasanya kana saja"
+      ],
+      "field": []
+    },
+    {
+      "en": "amazing (e.g. of strength); great (e.g. of skills); wonderful; terrific",
+      "misc": [
+        "biasanya kana saja"
+      ],
+      "field": []
+    },
+    {
+      "en": "to a great extent; vast (in numbers)",
+      "misc": [
+        "biasanya kana saja"
+      ],
+      "field": []
+    },
+    {
+      "en": "awfully; very; immensely",
+      "misc": [
+        "biasanya kana saja",
+        "percakapan kasual"
+      ],
+      "field": []
+    }
+  ],
+  "misc_jm": [
+    "biasanya kana saja",
+    "kasual"
+  ]
 },
 
 {
-  id: 'vg-n4-00490',
-  word: '正しい',
-  reading: 'ただしい',
-  romaji: 'tadashii',
-  meaning_id: 'benar; tepat',
-  meaning_en: 'correct; right',
-  jlpt: 'n4',
-  pos: 'i-adj',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['kualitas'],
-  register: 'neutral',
-  lawan_bicara: [],
-  nuance: null,
-  conj_type: 'adj-i',
-  examples: [{"jp":"辞書を調べて、漢字の正しい書き方を覚えました。","id":"Mengecek di kamus, saya mempelajari urutan penulisan kanji yang benar.","level":"n4","tags":["pendidikan"]},{"jp":"正しい答えをノートに赤ペンで書き写してください。","id":"Tolong salin jawaban yang benar ke buku catatan menggunakan pena merah.","level":"n4","tags":["pendidikan"]}],
-  synonyms: [],
-  antonyms: [],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus',
-  jmdict_seq: '1376600',
-  frequency: 12000,
-  meanings: [{"en": "right; correct", "misc": [], "field": []}, {"en": "proper; righteous; just; honest; truthful; lawful", "misc": [], "field": []}],
+  "id": "vg-n4-00490",
+  "word": "正しい",
+  "reading": "ただしい",
+  "romaji": "tadashii",
+  "meaning_id": "benar; tepat",
+  "meaning_en": "correct; right",
+  "jlpt": "n4",
+  "pos": "i-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kualitas"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [],
+  "nuance": null,
+  "conj_type": "adj-i",
+  "examples": [
+    {
+      "jp": "辞書を調べて、漢字の正しい書き方を覚えました。",
+      "id": "Mengecek di kamus, saya mempelajari urutan penulisan kanji yang benar.",
+      "level": "n4",
+      "tags": [
+        "pendidikan"
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"タダシ＼イ"}
+},
+    {
+      "jp": "正しい答えをノートに赤ペンで書き写してください。",
+      "id": "Tolong salin jawaban yang benar ke buku catatan menggunakan pena merah.",
+      "level": "n4",
+      "tags": [
+        "pendidikan"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus",
+  "jmdict_seq": "1376600",
+  "frequency": 12000,
+  "meanings": [
+    {
+      "en": "right; correct",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "proper; righteous; just; honest; truthful; lawful",
+      "misc": [],
+      "field": []
+    }
+  ]
 },
 
 {
-  id: 'vg-n4-00492',
-  word: '丁寧',
-  reading: 'ていねい',
-  romaji: 'teinei',
-  meaning_id: 'sopan; teliti; seksama',
-  meaning_en: 'polite; careful; thorough',
-  jlpt: 'n4',
-  pos: 'na-adj',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['kualitas'],
-  register: 'neutral',
-  lawan_bicara: [],
-  nuance: '丁寧な = sopan/teliti. 丁寧に話す = berbicara dengan sopan.',
-  conj_type: 'adj-na',
-  examples: [{"jp": "丁寧な言葉を使ってください。", "id": "Tolong gunakan bahasa yang sopan.", "level": "n4", "tags": ["sopan-santun", "keigo"]}],
-  synonyms: [],
-  antonyms: [],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus',
-  jmdict_seq: '1427360',
-  frequency: 4500,
-  forms: [{"word": "丁寧", "info": []}, {"word": "叮嚀", "info": ["kanji jarang dipakai"]}],
-  meanings: [{"en": "polite; courteous; civil", "misc": [], "field": []}, {"en": "careful; close; thorough; conscientious", "misc": [], "field": []}],
+  "id": "vg-n4-00492",
+  "word": "丁寧",
+  "reading": "ていねい",
+  "romaji": "teinei",
+  "meaning_id": "sopan; teliti; seksama",
+  "meaning_en": "polite; careful; thorough",
+  "jlpt": "n4",
+  "pos": "na-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kualitas"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [],
+  "nuance": "丁寧な = sopan/teliti. 丁寧に話す = berbicara dengan sopan.",
+  "conj_type": "adj-na",
+  "examples": [
+    {
+      "jp": "丁寧な言葉を使ってください。",
+      "id": "Tolong gunakan bahasa yang sopan.",
+      "level": "n4",
+      "tags": [
+        "sopan-santun",
+        "keigo"
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":4,"downstep_mora":1,"contour":"テ＼イネイ"}
+}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus",
+  "jmdict_seq": "1427360",
+  "frequency": 4500,
+  "forms": [
+    {
+      "word": "丁寧",
+      "info": []
+    },
+    {
+      "word": "叮嚀",
+      "info": [
+        "kanji jarang dipakai"
+      ]
+    }
+  ],
+  "meanings": [
+    {
+      "en": "polite; courteous; civil",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "careful; close; thorough; conscientious",
+      "misc": [],
+      "field": []
+    }
+  ]
 },
 
 {
-  id: 'vg-n4-00493',
-  word: '適当',
-  reading: 'てきとう',
-  romaji: 'tekitou',
-  meaning_id: 'cocok; tepat; sesuai',
-  meaning_en: 'suitable; appropriate',
-  jlpt: 'n4',
-  pos: 'na-adj',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['kualitas'],
-  register: 'neutral',
-  lawan_bicara: [],
-  nuance: null,
-  conj_type: 'adj-na',
-  examples: [{"jp":"冷蔵庫にある適当な野菜を使ってスープを作りました。","id":"Saya membuat sup dengan sayuran seadanya yang pas di dalam kulkas.","level":"n4","tags":["makanan-minuman"]},{"jp":"空欄に適当な言葉を入れて文を完成させてください。","id":"Silakan masukkan kata yang tepat ke bagian kosong untuk melengkapi kalimat.","level":"n4","tags":["pendidikan"]}],
-  synonyms: [],
-  antonyms: [],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus',
-  jmdict_seq: '1437450',
-  frequency: 3000,
-  meanings: [{"en": "suitable; proper; appropriate; adequate; fit; fair", "misc": [], "field": []}, {"en": "perfunctory; half-minded; sloppy; lazy; careless; noncommittal; unreliable; irresponsible; haphazard", "misc": [], "field": []}],
+  "id": "vg-n4-00493",
+  "word": "適当",
+  "reading": "てきとう",
+  "romaji": "tekitou",
+  "meaning_id": "cocok; tepat; sesuai",
+  "meaning_en": "suitable; appropriate",
+  "jlpt": "n4",
+  "pos": "na-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kualitas"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [],
+  "nuance": null,
+  "conj_type": "adj-na",
+  "examples": [
+    {
+      "jp": "冷蔵庫にある適当な野菜を使ってスープを作りました。",
+      "id": "Saya membuat sup dengan sayuran seadanya yang pas di dalam kulkas.",
+      "level": "n4",
+      "tags": [
+        "makanan-minuman"
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":4,"downstep_mora":1,"contour":"テ＼イネイ"}
+},
+    {
+      "jp": "空欄に適当な言葉を入れて文を完成させてください。",
+      "id": "Silakan masukkan kata yang tepat ke bagian kosong untuk melengkapi kalimat.",
+      "level": "n4",
+      "tags": [
+        "pendidikan"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus",
+  "jmdict_seq": "1437450",
+  "frequency": 3000,
+  "meanings": [
+    {
+      "en": "suitable; proper; appropriate; adequate; fit; fair",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "perfunctory; half-minded; sloppy; lazy; careless; noncommittal; unreliable; irresponsible; haphazard",
+      "misc": [],
+      "field": []
+    }
+  ]
 },
 
 {
-  id: 'vg-n4-00500',
-  word: '自由',
-  reading: 'じゆう',
-  romaji: 'jiyuu',
-  meaning_id: 'bebas; kebebasan',
-  meaning_en: 'free; freedom; liberty',
-  jlpt: 'n4',
-  pos: 'na-adj',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['kualitas'],
-  register: 'neutral',
-  lawan_bicara: [],
-  nuance: null,
-  conj_type: 'adj-na',
-  examples: [{"jp":"放課後は自分の好きなことをする自由があります。","id":"Sepulang sekolah kami memiliki kebebasan untuk melakukan hal-hal yang disukai.","level":"n4","tags":["pendidikan","kehidupan-sehari"]},{"jp":"休憩時間ですから、席を離れて自由に過ごしてください。","id":"Karena ini waktu istirahat, silakan tinggalkan tempat duduk dan beraktivitas dengan bebas.","level":"n4","tags":["pekerjaan","kehidupan-sehari"]}],
-  synonyms: [],
-  antonyms: [],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus',
-  jmdict_seq: '1318720',
-  frequency: 500,
+  "id": "vg-n4-00500",
+  "word": "自由",
+  "reading": "じゆう",
+  "romaji": "jiyuu",
+  "meaning_id": "bebas; kebebasan",
+  "meaning_en": "free; freedom; liberty",
+  "jlpt": "n4",
+  "pos": "na-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kualitas"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [],
+  "nuance": null,
+  "conj_type": "adj-na",
+  "examples": [
+    {
+      "jp": "放課後は自分の好きなことをする自由があります。",
+      "id": "Sepulang sekolah kami memiliki kebebasan untuk melakukan hal-hal yang disukai.",
+      "level": "n4",
+      "tags": [
+        "pendidikan",
+        "kehidupan-sehari"
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"ジユ＼ウ"}
+},
+    {
+      "jp": "休憩時間ですから、席を離れて自由に過ごしてください。",
+      "id": "Karena ini waktu istirahat, silakan tinggalkan tempat duduk dan beraktivitas dengan bebas.",
+      "level": "n4",
+      "tags": [
+        "pekerjaan",
+        "kehidupan-sehari"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus",
+  "jmdict_seq": "1318720",
+  "frequency": 500
 },
 
 {
-  id: 'vg-n4-00501',
-  word: '親切',
-  reading: 'しんせつ',
-  romaji: 'shinsetsu',
-  meaning_id: 'baik hati; ramah',
-  meaning_en: 'kind; helpful',
-  jlpt: 'n4',
-  pos: 'na-adj',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['kualitas'],
-  register: 'neutral',
-  lawan_bicara: [],
-  nuance: '親切な = baik hati/ramah. 親切にする = bersikap baik.',
-  conj_type: 'adj-na',
-  examples: [{"jp": "駅員さんが親切に道を教えてくれました。", "id": "Petugas stasiun dengan ramah menunjukkan jalan.", "level": "n4", "tags": ["perjalanan", "sopan-santun"]}],
-  synonyms: [],
-  antonyms: [],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus',
-  jmdict_seq: '1365250',
-  frequency: 7500,
-  forms: [{"word": "親切", "info": []}, {"word": "深切", "info": ["kanji jarang dipakai"]}],
+  "id": "vg-n4-00501",
+  "word": "親切",
+  "reading": "しんせつ",
+  "romaji": "shinsetsu",
+  "meaning_id": "baik hati; ramah",
+  "meaning_en": "kind; helpful",
+  "jlpt": "n4",
+  "pos": "na-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kualitas"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [],
+  "nuance": "親切な = baik hati/ramah. 親切にする = bersikap baik.",
+  "conj_type": "adj-na",
+  "examples": [
+    {
+      "jp": "駅員さんが親切に道を教えてくれました。",
+      "id": "Petugas stasiun dengan ramah menunjukkan jalan.",
+      "level": "n4",
+      "tags": [
+        "perjalanan",
+        "sopan-santun"
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":4,"downstep_mora":1,"contour":"シ＼ンセツ"}
+}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus",
+  "jmdict_seq": "1365250",
+  "frequency": 7500,
+  "forms": [
+    {
+      "word": "親切",
+      "info": []
+    },
+    {
+      "word": "深切",
+      "info": [
+        "kanji jarang dipakai"
+      ]
+    }
+  ]
 },
 
 {
-  id: 'vg-n4-00504',
-  word: '得意',
-  reading: 'とくい',
-  romaji: 'tokui',
-  meaning_id: 'pandai; ahli; bangga',
-  meaning_en: 'good at; proud; triumphant',
-  jlpt: 'n4',
-  pos: 'na-adj',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['kualitas'],
-  register: 'neutral',
-  lawan_bicara: [],
-  nuance: null,
-  conj_type: 'adj-na',
-  examples: [{"jp":"弟は数学が得意で、いつも満点を取っています。","id":"Adik laki-laki saya ahli dalam matematika dan selalu mendapatkan nilai sempurna.","level":"n4","tags":["keluarga","pendidikan"]},{"jp":"得意な曲をピアノでみんなの前で演奏しました。","id":"Saya memainkan lagu keahlian saya dengan piano di depan semua orang.","level":"n4","tags":["kehidupan-sehari","pertemanan"]}],
-  synonyms: [],
-  antonyms: [],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus',
-  jmdict_seq: '1454510',
-  frequency: 2500,
-  meanings: [{"en": "satisfaction; pride; triumph; elation", "misc": [], "field": []}, {"en": "one's strong point; one's forte; one's specialty", "misc": [], "field": []}, {"en": "regular customer; regular client; patron", "misc": [], "field": []}],
+  "id": "vg-n4-00504",
+  "word": "得意",
+  "reading": "とくい",
+  "romaji": "tokui",
+  "meaning_id": "pandai; ahli; bangga",
+  "meaning_en": "good at; proud; triumphant",
+  "jlpt": "n4",
+  "pos": "na-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kualitas"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [],
+  "nuance": null,
+  "conj_type": "adj-na",
+  "examples": [
+    {
+      "jp": "弟は数学が得意で、いつも満点を取っています。",
+      "id": "Adik laki-laki saya ahli dalam matematika dan selalu mendapatkan nilai sempurna.",
+      "level": "n4",
+      "tags": [
+        "keluarga",
+        "pendidikan"
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":4,"downstep_mora":1,"contour":"シ＼ンセツ"}
+},
+    {
+      "jp": "得意な曲をピアノでみんなの前で演奏しました。",
+      "id": "Saya memainkan lagu keahlian saya dengan piano di depan semua orang.",
+      "level": "n4",
+      "tags": [
+        "kehidupan-sehari",
+        "pertemanan"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus",
+  "jmdict_seq": "1454510",
+  "frequency": 2500,
+  "meanings": [
+    {
+      "en": "satisfaction; pride; triumph; elation",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "one's strong point; one's forte; one's specialty",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "regular customer; regular client; patron",
+      "misc": [],
+      "field": []
+    }
+  ]
 },
 
 {
-  id: 'vg-n4-00506',
-  word: '必要',
-  reading: 'ひつよう',
-  romaji: 'hitsuyou',
-  meaning_id: 'perlu; diperlukan',
-  meaning_en: 'necessary; needed',
-  jlpt: 'n4',
-  pos: 'na-adj',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['kualitas'],
-  register: 'neutral',
-  lawan_bicara: [],
-  nuance: '必要な = perlu/diperlukan. 必要がある = ada keperluan.',
-  conj_type: 'adj-na',
-  examples: [{"jp": "ビザが必要ですか。", "id": "Apakah diperlukan visa?", "level": "n4", "tags": ["perjalanan"]}],
-  synonyms: [],
-  antonyms: [],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus',
-  jmdict_seq: '1487660',
-  frequency: 500,
-  forms: [{"word": "必要", "info": []}, {"word": "必用", "info": []}],
-  meanings: [{"en": "necessary; needed; essential; indispensable", "misc": [], "field": []}, {"en": "necessity; need; requirement", "misc": [], "field": []}],
+  "id": "vg-n4-00506",
+  "word": "必要",
+  "reading": "ひつよう",
+  "romaji": "hitsuyou",
+  "meaning_id": "perlu; diperlukan",
+  "meaning_en": "necessary; needed",
+  "jlpt": "n4",
+  "pos": "na-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kualitas"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [],
+  "nuance": "必要な = perlu/diperlukan. 必要がある = ada keperluan.",
+  "conj_type": "adj-na",
+  "examples": [
+    {
+      "jp": "ビザが必要ですか。",
+      "id": "Apakah diperlukan visa?",
+      "level": "n4",
+      "tags": [
+        "perjalanan"
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ヒツヨウ￣"}
+}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus",
+  "jmdict_seq": "1487660",
+  "frequency": 500,
+  "forms": [
+    {
+      "word": "必要",
+      "info": []
+    },
+    {
+      "word": "必用",
+      "info": []
+    }
+  ],
+  "meanings": [
+    {
+      "en": "necessary; needed; essential; indispensable",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "necessity; need; requirement",
+      "misc": [],
+      "field": []
+    }
+  ]
 },
 
 {
-  id: 'vg-n4-00508',
-  word: '急',
-  reading: 'きゅう',
-  romaji: 'kyuu',
-  meaning_id: 'mendadak; mendesak',
-  meaning_en: 'sudden; urgent',
-  jlpt: 'n4',
-  pos: 'na-adj',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['kualitas'],
-  register: 'neutral',
-  lawan_bicara: [],
-  nuance: null,
-  conj_type: 'adj-na',
-  examples: [{"jp":"急な用事ができたので、今日の約束をキャンセルしました。","id":"Karena ada urusan mendadak, saya membatalkan janji temu hari ini.","level":"n4","tags":["kehidupan-sehari","pertemanan"]},{"jp":"車を運転しているときは急に止まらないでください。","id":"Jangan berhenti mendadak saat sedang mengemudikan mobil.","level":"n4","tags":["kehidupan-sehari"]}],
-  synonyms: [],
-  antonyms: [],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus',
-  jmdict_seq: '1228560',
-  frequency: 1500,
-  meanings: [{"en": "sudden; abrupt; unexpected", "misc": [], "field": []}, {"en": "urgent; pressing", "misc": [], "field": []}, {"en": "steep; sharp; precipitous", "misc": [], "field": []}, {"en": "rapid; swift; fast", "misc": [], "field": []}, {"en": "emergency; crisis; danger", "misc": [], "field": []}, {"en": "urgency; hurrying; haste", "misc": [], "field": []}, {"en": "(in gagaku or noh) end of a song", "misc": [], "field": []}],
+  "id": "vg-n4-00508",
+  "word": "急",
+  "reading": "きゅう",
+  "romaji": "kyuu",
+  "meaning_id": "mendadak; mendesak",
+  "meaning_en": "sudden; urgent",
+  "jlpt": "n4",
+  "pos": "na-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kualitas"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [],
+  "nuance": null,
+  "conj_type": "adj-na",
+  "examples": [
+    {
+      "jp": "急な用事ができたので、今日の約束をキャンセルしました。",
+      "id": "Karena ada urusan mendadak, saya membatalkan janji temu hari ini.",
+      "level": "n4",
+      "tags": [
+        "kehidupan-sehari",
+        "pertemanan"
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ヒツヨウ￣"}
+},
+    {
+      "jp": "車を運転しているときは急に止まらないでください。",
+      "id": "Jangan berhenti mendadak saat sedang mengemudikan mobil.",
+      "level": "n4",
+      "tags": [
+        "kehidupan-sehari"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus",
+  "jmdict_seq": "1228560",
+  "frequency": 1500,
+  "meanings": [
+    {
+      "en": "sudden; abrupt; unexpected",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "urgent; pressing",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "steep; sharp; precipitous",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "rapid; swift; fast",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "emergency; crisis; danger",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "urgency; hurrying; haste",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "(in gagaku or noh) end of a song",
+      "misc": [],
+      "field": []
+    }
+  ]
 },
 
 {
-  id: 'vg-n4-00509',
-  word: '特別',
-  reading: 'とくべつ',
-  romaji: 'tokubetsu',
-  meaning_id: 'khusus; istimewa',
-  meaning_en: 'special; particular',
-  jlpt: 'n4',
-  pos: 'na-adj',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['kualitas'],
-  register: 'neutral',
-  lawan_bicara: [],
-  nuance: null,
-  conj_type: 'adj-na',
-  examples: [{"jp":"母の誕生日のために、特別なケーキを予約しました。","id":"Untuk hari ulang tahun ibu, saya memesan kue yang istimewa.","level":"n4","tags":["keluarga","makanan-minuman"]},{"jp":"このイベントは会員だけの特別な案内となっています。","id":"Acara ini merupakan pengumuman khusus hanya bagi para anggota.","level":"n4","tags":["belanja","pekerjaan"]}],
-  synonyms: [],
-  antonyms: [],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus',
-  jmdict_seq: '1455280',
-  frequency: 500,
+  "id": "vg-n4-00509",
+  "word": "特別",
+  "reading": "とくべつ",
+  "romaji": "tokubetsu",
+  "meaning_id": "khusus; istimewa",
+  "meaning_en": "special; particular",
+  "jlpt": "n4",
+  "pos": "na-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kualitas"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [],
+  "nuance": null,
+  "conj_type": "adj-na",
+  "examples": [
+    {
+      "jp": "母の誕生日のために、特別なケーキを予約しました。",
+      "id": "Untuk hari ulang tahun ibu, saya memesan kue yang istimewa.",
+      "level": "n4",
+      "tags": [
+        "keluarga",
+        "makanan-minuman"
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"トクベツ￣"}
+},
+    {
+      "jp": "このイベントは会員だけの特別な案内となっています。",
+      "id": "Acara ini merupakan pengumuman khusus hanya bagi para anggota.",
+      "level": "n4",
+      "tags": [
+        "belanja",
+        "pekerjaan"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus",
+  "jmdict_seq": "1455280",
+  "frequency": 500
 },
 
 {
-  id: 'vg-n4-00512',
-  word: '大丈夫',
-  reading: 'だいじょうぶ',
-  romaji: 'daijoubu',
-  meaning_id: 'tidak apa-apa; baik-baik saja',
-  meaning_en: 'okay; all right; no problem',
-  jlpt: 'n4',
-  pos: 'na-adj',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['kualitas'],
-  register: 'neutral',
-  lawan_bicara: [],
-  nuance: '大丈夫 = tidak apa-apa / baik-baik saja. Serbaguna: persetujuan, ketenangan, penolakan halus.',
-  conj_type: 'adj-na',
-  examples: [{"jp": "大丈夫ですか。怪我はないですか。", "id": "Apakah kamu baik-baik saja? Tidak luka?", "level": "n4", "tags": ["kesehatan", "hubungan"]}, {"jp": "手伝いましょうか。大丈夫です、自分でできます。", "id": "Boleh saya bantu? Tidak apa-apa, saya bisa sendiri.", "level": "n4", "tags": ["kehidupan-sehari"]}],
-  synonyms: [],
-  antonyms: [],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus',
-  jmdict_seq: '2825470',
+  "id": "vg-n4-00512",
+  "word": "大丈夫",
+  "reading": "だいじょうぶ",
+  "romaji": "daijoubu",
+  "meaning_id": "tidak apa-apa; baik-baik saja",
+  "meaning_en": "okay; all right; no problem",
+  "jlpt": "n4",
+  "pos": "na-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kualitas"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [],
+  "nuance": "大丈夫 = tidak apa-apa / baik-baik saja. Serbaguna: persetujuan, ketenangan, penolakan halus.",
+  "conj_type": "adj-na",
+  "examples": [
+    {
+      "jp": "大丈夫ですか。怪我はないですか。",
+      "id": "Apakah kamu baik-baik saja? Tidak luka?",
+      "level": "n4",
+      "tags": [
+        "kesehatan",
+        "hubungan"
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":5,"downstep_mora":3,"contour":"ダイジョ＼ウブ"}
+},
+    {
+      "jp": "手伝いましょうか。大丈夫です、自分でできます。",
+      "id": "Boleh saya bantu? Tidak apa-apa, saya bisa sendiri.",
+      "level": "n4",
+      "tags": [
+        "kehidupan-sehari"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus",
+  "jmdict_seq": "2825470"
 },
 
 {
-  id: 'vg-n4-00624',
-  word: 'あんな',
-  reading: 'あんな',
-  romaji: 'anna',
-  meaning_id: 'seperti itu; semacam itu',
-  meaning_en: 'that kind of; such',
-  jlpt: 'n4',
-  pos: 'na-adj',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['bahasa-komunikasi'],
-  register: 'neutral',
-  lawan_bicara: [],
-  nuance: null,
-  conj_type: 'adj-na',
-  examples: [{"jp":"あんなに高いビルに登ったのは初めてです。","id":"Ini pertama kalinya saya naik ke gedung setinggi itu.","level":"n4","tags":["kehidupan-sehari","ruang-arah"]},{"jp":"あんな失敗は二度と繰り返さないように気をつけます。","id":"Saya akan berhati-hati agar tidak mengulangi kegagalan seperti itu lagi.","level":"n4","tags":["pekerjaan","pendidikan"]}],
-  synonyms: [],
-  antonyms: [],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus',
-  jmdict_seq: '1000590',
-  frequency: 1000,
+  "id": "vg-n4-00624",
+  "word": "あんな",
+  "reading": "あんな",
+  "romaji": "anna",
+  "meaning_id": "seperti itu; semacam itu",
+  "meaning_en": "that kind of; such",
+  "jlpt": "n4",
+  "pos": "na-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "bahasa-komunikasi"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [],
+  "nuance": null,
+  "conj_type": "adj-na",
+  "examples": [
+    {
+      "jp": "あんなに高いビルに登ったのは初めてです。",
+      "id": "Ini pertama kalinya saya naik ke gedung setinggi itu.",
+      "level": "n4",
+      "tags": [
+        "kehidupan-sehari",
+        "ruang-arah"
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":0,"downstep_mora":0,"contour":"￣"}
+},
+    {
+      "jp": "あんな失敗は二度と繰り返さないように気をつけます。",
+      "id": "Saya akan berhati-hati agar tidak mengulangi kegagalan seperti itu lagi.",
+      "level": "n4",
+      "tags": [
+        "pekerjaan",
+        "pendidikan"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus",
+  "jmdict_seq": "1000590",
+  "frequency": 1000
 },
 
 {
-  id: 'vg-n4-00627',
-  word: 'だいじょうぶ',
-  reading: 'だいじょうぶ',
-  romaji: 'daijoubu',
-  meaning_id: 'tidak apa-apa; baik-baik saja',
-  meaning_en: 'okay; all right; no problem',
-  jlpt: 'n4',
-  pos: 'na-adj',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['bahasa-komunikasi'],
-  register: 'neutral',
-  lawan_bicara: [],
-  nuance: null,
-  conj_type: 'adj-na',
-  examples: [{"jp":"少し転びましたが、怪我はないのでだいじょうぶです。","id":"Saya sedikit terjatuh, tetapi karena tidak ada luka saya baik-baik saja.","level":"n4","tags":["kesehatan","kehidupan-sehari"]},{"jp":"「手伝いましょうか」「いいえ、一人でだいじょうぶです」","id":"\"Boleh saya bantu?\" \"Tidak, saya sendiri tidak apa-apa.\"","level":"n4","tags":["kehidupan-sehari","pertemanan"]}],
-  synonyms: [],
-  antonyms: [],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus',
-  jmdict_seq: '1414150',
-  frequency: 3000,
-  meanings: [{"en": "safe; secure; sound; problem-free; without fear; all right; alright; OK; okay", "misc": [], "field": []}, {"en": "certainly; surely; undoubtedly", "misc": [], "field": []}, {"en": "no thanks; I'm good; that's alright", "misc": ["percakapan kasual"], "field": []}, {"en": "great man; fine figure of a man", "misc": ["archaic"], "field": []}],
-  misc_jm: ["arkais", "kasual"],
+  "id": "vg-n4-00627",
+  "word": "だいじょうぶ",
+  "reading": "だいじょうぶ",
+  "romaji": "daijoubu",
+  "meaning_id": "tidak apa-apa; baik-baik saja",
+  "meaning_en": "okay; all right; no problem",
+  "jlpt": "n4",
+  "pos": "na-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "bahasa-komunikasi"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [],
+  "nuance": null,
+  "conj_type": "adj-na",
+  "examples": [
+    {
+      "jp": "少し転びましたが、怪我はないのでだいじょうぶです。",
+      "id": "Saya sedikit terjatuh, tetapi karena tidak ada luka saya baik-baik saja.",
+      "level": "n4",
+      "tags": [
+        "kesehatan",
+        "kehidupan-sehari"
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":5,"downstep_mora":3,"contour":"ダイジョ＼ウブ"}
+},
+    {
+      "jp": "「手伝いましょうか」「いいえ、一人でだいじょうぶです」",
+      "id": "\"Boleh saya bantu?\" \"Tidak, saya sendiri tidak apa-apa.\"",
+      "level": "n4",
+      "tags": [
+        "kehidupan-sehari",
+        "pertemanan"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus",
+  "jmdict_seq": "1414150",
+  "frequency": 3000,
+  "meanings": [
+    {
+      "en": "safe; secure; sound; problem-free; without fear; all right; alright; OK; okay",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "certainly; surely; undoubtedly",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "no thanks; I'm good; that's alright",
+      "misc": [
+        "percakapan kasual"
+      ],
+      "field": []
+    },
+    {
+      "en": "great man; fine figure of a man",
+      "misc": [
+        "archaic"
+      ],
+      "field": []
+    }
+  ],
+  "misc_jm": [
+    "arkais",
+    "kasual"
+  ]
 },
 
 {
-  id: 'vg-n4-00656',
-  word: '優しい',
-  reading: 'やさしい',
-  romaji: 'yasashii',
-  meaning_id: 'baik hati, lembut, ramah',
-  meaning_en: 'kind; gentle',
-  jlpt: 'n4',
-  pos: 'i-adj',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['emosi', 'pertemanan'],
-  register: 'neutral',
-  lawan_bicara: ['teman', 'umum'],
-  nuance: 'Perhatikan: 優しい (yasashii=baik hati) berbeda dengan 易しい (yasashii=mudah). Kanji berbeda!',
-  conj_type: 'adj-i',
-  examples: [{"jp": "田中さんはとても優しい人です。", "id": "Tanaka-san adalah orang yang sangat baik hati.", "level": "n4", "tags": ["hubungan"]}, {"jp": "優しく話してください。", "id": "Tolong bicara dengan lembut.", "level": "n4", "tags": ["sopan-santun"]}],
-  synonyms: [],
-  antonyms: [],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus',
-  jmdict_seq: '1539040',
-  frequency: 7000,
+  "id": "vg-n4-00656",
+  "word": "優しい",
+  "reading": "やさしい",
+  "romaji": "yasashii",
+  "meaning_id": "baik hati, lembut, ramah",
+  "meaning_en": "kind; gentle",
+  "jlpt": "n4",
+  "pos": "i-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "emosi",
+    "pertemanan"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "umum"
+  ],
+  "nuance": "Perhatikan: 優しい (yasashii=baik hati) berbeda dengan 易しい (yasashii=mudah). Kanji berbeda!",
+  "conj_type": "adj-i",
+  "examples": [
+    {
+      "jp": "田中さんはとても優しい人です。",
+      "id": "Tanaka-san adalah orang yang sangat baik hati.",
+      "level": "n4",
+      "tags": [
+        "hubungan"
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ヤサシイ￣"}
+},
+    {
+      "jp": "優しく話してください。",
+      "id": "Tolong bicara dengan lembut.",
+      "level": "n4",
+      "tags": [
+        "sopan-santun"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus",
+  "jmdict_seq": "1539040",
+  "frequency": 7000
 },
 
 {
@@ -1751,8 +3837,9 @@ window.vocabN4_Adjectives = [
       "tags": [
         "belanja",
         "pakaian"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":2,"downstep_mora":0,"contour":"ベツ￣"}
+},
     {
       "jp": "彼とは別々の道を進むことにしました。",
       "id": "Saya memutuskan untuk menempuh jalan yang berbeda dengannya.",
@@ -1783,6 +3870,7 @@ window.vocabN4_Adjectives = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n4-00715",
   "word": "だめ",
@@ -1816,8 +3904,9 @@ window.vocabN4_Adjectives = [
       "tags": [
         "larangan",
         "aturan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"odaka","mora_count":2,"downstep_mora":2,"contour":"ダメ＼"}
+},
     {
       "jp": "パソコンの電源が入らなくなって、もうだめかもしれません。",
       "id": "Komputernya tidak mau menyala lagi, mungkin sudah rusak sama sekali.",
@@ -1848,6 +3937,7 @@ window.vocabN4_Adjectives = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n4-00751",
   "word": "無理",
@@ -1881,8 +3971,9 @@ window.vocabN4_Adjectives = [
       "tags": [
         "pendidikan",
         "pikiran-opini"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":2,"downstep_mora":1,"contour":"ム＼リ"}
+},
     {
       "jp": "まだ熱があるのだから、あまり無理をして学校に行かないでね。",
       "id": "Karena badanmu masih demam, jangan terlalu memaksakan diri untuk pergi ke sekolah ya.",
@@ -1912,6 +4003,7 @@ window.vocabN4_Adjectives = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n4-00759",
   "word": "そんな",
@@ -1944,8 +4036,9 @@ window.vocabN4_Adjectives = [
       "tags": [
         "pendidikan",
         "deskripsi"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":0,"downstep_mora":0,"contour":"￣"}
+},
     {
       "jp": "そんなに落ち込まなくても次の機会に頑張れば大丈夫ですよ。",
       "id": "Jangan sampai berkecil hati seperti itu, kalau berjuang di kesempatan berikutnya pasti tidak apa-apa kok.",
@@ -1975,6 +4068,7 @@ window.vocabN4_Adjectives = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n4-00772",
   "word": "美しい",
@@ -2008,8 +4102,9 @@ window.vocabN4_Adjectives = [
       "tags": [
         "alam-lingkungan",
         "deskripsi"
-      ]
-    },
+      ],
+  "pitch": {"pattern":4,"category":"nakadaka","mora_count":5,"downstep_mora":4,"contour":"ウツクシ＼イ"}
+},
     {
       "jp": "彼女が弾くピアノの美しい旋律を聴いて深く感動しました。",
       "id": "Saya merasa sangat terharu saat mendengarkan lantunan melodi piano yang indah darinya.",
@@ -2038,6 +4133,7 @@ window.vocabN4_Adjectives = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n4-00782",
   "word": "変",
@@ -2071,8 +4167,9 @@ window.vocabN4_Adjectives = [
       "tags": [
         "kejadian",
         "emosi-negatif"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":2,"downstep_mora":1,"contour":"ヘ＼ン"}
+},
     {
       "jp": "このスマートフォンの画面の動きが変なので一度電源を切ってみます。",
       "id": "Pergerakan layar ponsel pintar ini terasa aneh, jadi saya coba matikan daya sekali.",
@@ -2103,6 +4200,7 @@ window.vocabN4_Adjectives = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n4-00808",
   "word": "真面目",
@@ -2137,8 +4235,9 @@ window.vocabN4_Adjectives = [
       "tags": [
         "kepribadian",
         "pujian"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"マジメ￣"}
+},
     {
       "jp": "将来後悔しないように、今から真面目に勉強に取り組もう。",
       "id": "Agar tidak menyesal di masa depan, mari mulai sekarang bersungguh-sungguh dalam belajar.",
@@ -2168,6 +4267,7 @@ window.vocabN4_Adjectives = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n4-00810",
   "word": "よろしい",
@@ -2202,8 +4302,9 @@ window.vocabN4_Adjectives = [
       "tags": [
         "pelayanan",
         "restoran"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"ヨロシ＼イ"}
+},
     {
       "jp": "こちらの書類にお名前をご記入いただいてもよろしいですか。",
       "id": "Bolehkah saya memohon Anda untuk mengisi nama pada dokumen ini?",
@@ -2234,6 +4335,7 @@ window.vocabN4_Adjectives = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n4-00832",
   "word": "～やすい",
@@ -2298,6 +4400,7 @@ window.vocabN4_Adjectives = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n4-00833",
   "word": "うまい",
@@ -2331,8 +4434,9 @@ window.vocabN4_Adjectives = [
       "tags": [
         "makanan",
         "keluarga"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"ウマ＼イ"}
+},
     {
       "jp": "鈴木さんは英語の発音もうまくて、流暢に会話ができます。",
       "id": "Suzuki-san pelafalan bahasa Inggrisnya pun sangat mahir dan bisa bercakap-cakap dengan fasih.",
@@ -2362,6 +4466,7 @@ window.vocabN4_Adjectives = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n4-00874",
   "word": "普通",
@@ -2395,8 +4500,9 @@ window.vocabN4_Adjectives = [
       "tags": [
         "pendidikan",
         "deskripsi"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"フツウ￣"}
+},
     {
       "jp": "急行が止まらない小さな駅なので、普通電車に乗ってください。",
       "id": "Karena ini stasiun kecil yang tidak disinggahi kereta ekspres, silakan naik kereta lokal.",
@@ -2427,6 +4533,7 @@ window.vocabN4_Adjectives = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n4-00888",
   "word": "久しぶり",
@@ -2460,8 +4567,9 @@ window.vocabN4_Adjectives = [
       "tags": [
         "pertemanan",
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":5,"downstep_mora":0,"contour":"ヒサシブリ￣"}
+},
     {
       "jp": "「田中さん、本当にお久しぶりですね！お元気でしたか。」",
       "id": "\"Tanaka-san, sungguh sudah lama tidak bertemu ya! Apakah Anda sehat-sehat saja?\"",
@@ -2487,6 +4595,7 @@ window.vocabN4_Adjectives = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n4-00924",
   "word": "簡単",
@@ -2520,8 +4629,9 @@ window.vocabN4_Adjectives = [
       "tags": [
         "makanan-minuman",
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"カンタン￣"}
+},
     {
       "jp": "面接の最初に、一分程度で簡単な自己紹介をお願いします。",
       "id": "Di awal wawancara, mohon berikan perkenalan diri yang singkat sekitar satu menit.",
@@ -2553,6 +4663,7 @@ window.vocabN4_Adjectives = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n4-00936",
   "word": "～にくい",
@@ -2615,6 +4726,7 @@ window.vocabN4_Adjectives = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n4-00943",
   "word": "ソフト",
@@ -2648,8 +4760,9 @@ window.vocabN4_Adjectives = [
       "tags": [
         "sifat",
         "pelayanan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":0,"downstep_mora":1,"contour":"＼"}
+},
     {
       "jp": "パソコンに新しい日本語入力ソフトを入れました。",
       "id": "Saya memasang perangkat lunak pengetikan bahasa Jepang baru di komputer.",
@@ -2680,14 +4793,12 @@ window.vocabN4_Adjectives = [
   }
 },
 
-// ── Staged Expansion (24) ──
-
 {
   "id": "vg-n4-00953",
   "word": "浅い",
   "reading": "あさい",
   "romaji": "asai",
-  "meaning_id": "shallow; superficial",
+  "meaning_id": "dangkal",
   "meaning_en": "shallow; superficial",
   "jlpt": "n4",
   "pos": "i-adj",
@@ -2712,8 +4823,9 @@ window.vocabN4_Adjectives = [
       "level": "n4",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"アサイ￣"}
+},
     {
       "jp": "この学校のカリキュラムは広く浅い。",
       "id": "The curriculum of this school is wide and shallow.",
@@ -2737,7 +4849,7 @@ window.vocabN4_Adjectives = [
   "word": "安全",
   "reading": "あんぜん",
   "romaji": "anzen",
-  "meaning_id": "safety",
+  "meaning_id": "keamanan",
   "meaning_en": "safety",
   "jlpt": "n4",
   "pos": "na-adj",
@@ -2762,8 +4874,9 @@ window.vocabN4_Adjectives = [
       "level": "n4",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"アンゼン￣"}
+},
     {
       "jp": "この川で泳ぐのは、安全ですか。",
       "id": "Is it safe to swim in this river?",
@@ -2787,7 +4900,7 @@ window.vocabN4_Adjectives = [
   "word": "うれしい",
   "reading": "うれしい",
   "romaji": "ureshii",
-  "meaning_id": "glad",
+  "meaning_id": "senang",
   "meaning_en": "glad",
   "jlpt": "n4",
   "pos": "i-adj",
@@ -2812,8 +4925,9 @@ window.vocabN4_Adjectives = [
       "level": "n4",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"ウレシ＼イ"}
+},
     {
       "jp": "私はその知らせを聞いてうれしい。",
       "id": "I am glad to hear the news.",
@@ -2837,7 +4951,7 @@ window.vocabN4_Adjectives = [
   "word": "おかしい",
   "reading": "おかしい",
   "romaji": "okashii",
-  "meaning_id": "strange or funny",
+  "meaning_id": "aneh atau lucu",
   "meaning_en": "strange or funny",
   "jlpt": "n4",
   "pos": "i-adj",
@@ -2862,8 +4976,9 @@ window.vocabN4_Adjectives = [
       "level": "n4",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"オカシ＼イ"}
+},
     {
       "jp": "この車のエンジンはおかしい。",
       "id": "Something is wrong with the engine of this car.",
@@ -2887,7 +5002,7 @@ window.vocabN4_Adjectives = [
   "word": "堅い",
   "reading": "かたい",
   "romaji": "katai",
-  "meaning_id": "hard",
+  "meaning_id": "keras",
   "meaning_en": "hard",
   "jlpt": "n4",
   "pos": "i-adj",
@@ -2912,8 +5027,9 @@ window.vocabN4_Adjectives = [
       "level": "n4",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"カタイ￣"}
+},
     {
       "jp": "このステーキは堅すぎる。",
       "id": "This steak is too tough.",
@@ -2937,7 +5053,7 @@ window.vocabN4_Adjectives = [
   "word": "危険",
   "reading": "きけん",
   "romaji": "kiken",
-  "meaning_id": "danger",
+  "meaning_id": "bahaya",
   "meaning_en": "danger",
   "jlpt": "n4",
   "pos": "na-adj",
@@ -2962,8 +5078,9 @@ window.vocabN4_Adjectives = [
       "level": "n4",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"キケン￣"}
+},
     {
       "jp": "はっきりわかる危険はなかった。",
       "id": "There were no visible dangers.",
@@ -2987,7 +5104,7 @@ window.vocabN4_Adjectives = [
   "word": "急",
   "reading": "きゅう",
   "romaji": "kyuu",
-  "meaning_id": "urgent; steep",
+  "meaning_id": "mendesak; curam",
   "meaning_en": "urgent; steep",
   "jlpt": "n4",
   "pos": "na-adj",
@@ -3012,8 +5129,9 @@ window.vocabN4_Adjectives = [
       "level": "n4",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":2,"downstep_mora":0,"contour":"キュウ￣"}
+},
     {
       "jp": "急がなくてもいいよ。",
       "id": "You can take your time.",
@@ -3062,8 +5180,9 @@ window.vocabN4_Adjectives = [
       "level": "n4",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"コマカ＼イ"}
+},
     {
       "jp": "わたしはこまかい点までしらべました。",
       "id": "I went into details.",
@@ -3087,7 +5206,7 @@ window.vocabN4_Adjectives = [
   "word": "残念",
   "reading": "ざんねん",
   "romaji": "zannen",
-  "meaning_id": "disappointment",
+  "meaning_id": "kekecewaan",
   "meaning_en": "disappointment",
   "jlpt": "n4",
   "pos": "na-adj",
@@ -3112,8 +5231,9 @@ window.vocabN4_Adjectives = [
       "level": "n4",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"ザンネ＼ン"}
+},
     {
       "jp": "そんなことをしたのは残念である。",
       "id": "I'm sorry for what I did.",
@@ -3137,7 +5257,7 @@ window.vocabN4_Adjectives = [
   "word": "自由",
   "reading": "じゆう",
   "romaji": "jiyuu",
-  "meaning_id": "freedom",
+  "meaning_id": "kebebasan",
   "meaning_en": "freedom",
   "jlpt": "n4",
   "pos": "na-adj",
@@ -3162,8 +5282,9 @@ window.vocabN4_Adjectives = [
       "level": "n4",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"ジユ＼ウ"}
+},
     {
       "jp": "自由すぎると人はみなだめになる。",
       "id": "Too much liberty spoils all.",
@@ -3187,7 +5308,7 @@ window.vocabN4_Adjectives = [
   "word": "凄い",
   "reading": "すごい",
   "romaji": "sugoi",
-  "meaning_id": "terrific",
+  "meaning_id": "hebat",
   "meaning_en": "terrific",
   "jlpt": "n4",
   "pos": "i-adj",
@@ -3212,8 +5333,9 @@ window.vocabN4_Adjectives = [
       "level": "n4",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"スゴ＼イ"}
+},
     {
       "jp": "マドンナのコンサートはすごい数の客を集めた。",
       "id": "Madonna's concert drew a large audience.",
@@ -3237,7 +5359,7 @@ window.vocabN4_Adjectives = [
   "word": "すばらしい",
   "reading": "すばらしい",
   "romaji": "subarashii",
-  "meaning_id": "wonderful",
+  "meaning_id": "luar biasa",
   "meaning_en": "wonderful",
   "jlpt": "n4",
   "pos": "i-adj",
@@ -3262,8 +5384,9 @@ window.vocabN4_Adjectives = [
       "level": "n4",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":4,"category":"nakadaka","mora_count":5,"downstep_mora":4,"contour":"スバラシ＼イ"}
+},
     {
       "jp": "なんてすばらしい家族なんだろう。",
       "id": "What a wonderful family.",
@@ -3287,7 +5410,7 @@ window.vocabN4_Adjectives = [
   "word": "たいてい",
   "reading": "たいてい",
   "romaji": "taitei",
-  "meaning_id": "usually",
+  "meaning_id": "biasanya",
   "meaning_en": "usually",
   "jlpt": "n4",
   "pos": "na-adj",
@@ -3312,8 +5435,9 @@ window.vocabN4_Adjectives = [
       "level": "n4",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"タイテイ￣"}
+},
     {
       "jp": "父は、日曜日はたいてい家にいます。",
       "id": "My father is usually at home on Sundays.",
@@ -3337,7 +5461,7 @@ window.vocabN4_Adjectives = [
   "word": "正しい",
   "reading": "ただしい",
   "romaji": "tadashii",
-  "meaning_id": "correct",
+  "meaning_id": "benar",
   "meaning_en": "correct",
   "jlpt": "n4",
   "pos": "i-adj",
@@ -3362,8 +5486,9 @@ window.vocabN4_Adjectives = [
       "level": "n4",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"タダシ＼イ"}
+},
     {
       "jp": "どちらの方が正しいと思いますか。",
       "id": "Which one do you think is correct?",
@@ -3387,7 +5512,7 @@ window.vocabN4_Adjectives = [
   "word": "適当",
   "reading": "てきとう",
   "romaji": "tekitou",
-  "meaning_id": "suitability",
+  "meaning_id": "kesesuaian",
   "meaning_en": "suitability",
   "jlpt": "n4",
   "pos": "na-adj",
@@ -3412,8 +5537,9 @@ window.vocabN4_Adjectives = [
       "level": "n4",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"テキトウ￣"}
+},
     {
       "jp": "靴下は適当な大きさのものがよい。",
       "id": "Stockings should be of the proper size.",
@@ -3437,7 +5563,7 @@ window.vocabN4_Adjectives = [
   "word": "特別",
   "reading": "とくべつ",
   "romaji": "tokubetsu",
-  "meaning_id": "special",
+  "meaning_id": "istimewa",
   "meaning_en": "special",
   "jlpt": "n4",
   "pos": "na-adj",
@@ -3462,8 +5588,9 @@ window.vocabN4_Adjectives = [
       "level": "n4",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"トクベツ￣"}
+},
     {
       "jp": "ベジタリアン用の特別メニューはありますか？",
       "id": "Do you have a special menu for vegetarians?",
@@ -3487,7 +5614,7 @@ window.vocabN4_Adjectives = [
   "word": "苦い",
   "reading": "にがい",
   "romaji": "nigai",
-  "meaning_id": "bitter",
+  "meaning_id": "pahit",
   "meaning_en": "bitter",
   "jlpt": "n4",
   "pos": "i-adj",
@@ -3512,8 +5639,9 @@ window.vocabN4_Adjectives = [
       "level": "n4",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"ニガ＼イ"}
+},
     {
       "jp": "このビールは苦い。",
       "id": "This beer tastes bitter.",
@@ -3537,7 +5665,7 @@ window.vocabN4_Adjectives = [
   "word": "ねっしん",
   "reading": "ねっしん",
   "romaji": "nesshin",
-  "meaning_id": "enthusiasm",
+  "meaning_id": "antusiasme",
   "meaning_en": "enthusiasm",
   "jlpt": "n4",
   "pos": "na-adj",
@@ -3562,8 +5690,9 @@ window.vocabN4_Adjectives = [
       "level": "n4",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":4,"downstep_mora":1,"contour":"ネ＼ッシン"}
+},
     {
       "jp": "彼女は熱心にピアノをひきだした。",
       "id": "She played the piano with enthusiasm.",
@@ -3612,8 +5741,9 @@ window.vocabN4_Adjectives = [
       "level": "n4",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ネムイ￣"}
+},
     {
       "jp": "コーヒーを飲むと眠くならない。",
       "id": "Coffee keeps me awake.",
@@ -3637,7 +5767,7 @@ window.vocabN4_Adjectives = [
   "word": "ひどい",
   "reading": "ひどい",
   "romaji": "hidoi",
-  "meaning_id": "awful",
+  "meaning_id": "mengerikan",
   "meaning_en": "awful",
   "jlpt": "n4",
   "pos": "i-adj",
@@ -3662,8 +5792,9 @@ window.vocabN4_Adjectives = [
       "level": "n4",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"ヒド＼イ"}
+},
     {
       "jp": "私は仕事でひどくくたびれている。",
       "id": "I'm very tired from work.",
@@ -3687,7 +5818,7 @@ window.vocabN4_Adjectives = [
   "word": "深い",
   "reading": "ふかい",
   "romaji": "fukai",
-  "meaning_id": "deep",
+  "meaning_id": "dalam",
   "meaning_en": "deep",
   "jlpt": "n4",
   "pos": "i-adj",
@@ -3712,8 +5843,9 @@ window.vocabN4_Adjectives = [
       "level": "n4",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"フカ＼イ"}
+},
     {
       "jp": "水はここがいちばん深い。",
       "id": "The water is deepest here.",
@@ -3737,7 +5869,7 @@ window.vocabN4_Adjectives = [
   "word": "複雑",
   "reading": "ふくざつ",
   "romaji": "fukuzatsu",
-  "meaning_id": "complexity; complication",
+  "meaning_id": "kompleksitas; komplikasi",
   "meaning_en": "complexity; complication",
   "jlpt": "n4",
   "pos": "na-adj",
@@ -3762,8 +5894,9 @@ window.vocabN4_Adjectives = [
       "level": "n4",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"フクザツ￣"}
+},
     {
       "jp": "それは問題をより複雑にするでしょう。",
       "id": "That'll complicate matters more.",
@@ -3787,7 +5920,7 @@ window.vocabN4_Adjectives = [
   "word": "まじめ",
   "reading": "まじめ",
   "romaji": "majime",
-  "meaning_id": "serious",
+  "meaning_id": "serius",
   "meaning_en": "serious",
   "jlpt": "n4",
   "pos": "na-adj",
@@ -3812,8 +5945,9 @@ window.vocabN4_Adjectives = [
       "level": "n4",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"マジメ￣"}
+},
     {
       "jp": "トムは勉強にまじめでない。",
       "id": "Tom is not serious about his studies.",
@@ -3837,7 +5971,7 @@ window.vocabN4_Adjectives = [
   "word": "優しい",
   "reading": "やさしい",
   "romaji": "yasashii",
-  "meaning_id": "kind",
+  "meaning_id": "baik hati",
   "meaning_en": "kind",
   "jlpt": "n4",
   "pos": "i-adj",
@@ -3862,8 +5996,9 @@ window.vocabN4_Adjectives = [
       "level": "n4",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ヤサシイ￣"}
+},
     {
       "jp": "母は優しい目で私を見た。",
       "id": "My mother gazed at me fondly.",

@@ -276,7 +276,7 @@ window.grammarLensGenki2 = {
       "id": "gk2-18-02",
       "global_grammar_id": "gn4-00018",
       "pattern": "〜てしまう (Tuntas Selesai / Menyesal)",
-      "meaning": "selesai total / telanjur (mengandung rasa penyesalan)",
+      "meaning": "selesai total / terlanjur (mengandung rasa penyesalan)",
       "raw": "Verb て-form + しまう / しまいました",
       "desc": "Menyatakan aksi yang diselesaikan secara tuntas atau peristiwa kecelakaan yang tidak diinginkan.",
       "examples": [

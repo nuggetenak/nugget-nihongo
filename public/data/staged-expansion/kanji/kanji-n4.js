@@ -258,7 +258,7 @@ window.nuggetKanjiN4 = [
       {
         "word": "食事",
         "reading": "しょくじ",
-        "meaning_id": "me-have a meal"
+        "meaning_id": "memiliki a meal"
       },
       {
         "word": "大事",
@@ -523,7 +523,7 @@ window.nuggetKanjiN4 = [
       {
         "word": "出発",
         "reading": "しゅっぱつ",
-        "meaning_id": "me-depart"
+        "meaning_id": "berangkat"
       },
       {
         "word": "発音",
@@ -1258,7 +1258,7 @@ window.nuggetKanjiN4 = [
       {
         "word": "立てる",
         "reading": "たてる",
-        "meaning_id": "me-stand something up"
+        "meaning_id": "stand something up"
       },
       {
         "word": "役に立つ",
@@ -1944,12 +1944,12 @@ window.nuggetKanjiN4 = [
       {
         "word": "動く",
         "reading": "うごく",
-        "meaning_id": "me-move"
+        "meaning_id": "bergerak / berpindah"
       },
       {
         "word": "運動",
         "reading": "うんどう",
-        "meaning_id": "me-exercise"
+        "meaning_id": "exercise"
       },
       {
         "word": "動物園",
@@ -2320,7 +2320,7 @@ window.nuggetKanjiN4 = [
       {
         "word": "言い出す",
         "reading": "いいだす",
-        "meaning_id": "me-start talking"
+        "meaning_id": "start talking"
       }
     ]
   },
@@ -3497,7 +3497,7 @@ window.nuggetKanjiN4 = [
       {
         "word": "持つ",
         "reading": "もつ",
-        "meaning_id": "me-hold"
+        "meaning_id": "memegang"
       },
       {
         "word": "気持ち",
@@ -3532,7 +3532,7 @@ window.nuggetKanjiN4 = [
       {
         "word": "受け持つ",
         "reading": "うけもつ",
-        "meaning_id": "me-take  charge of"
+        "meaning_id": "mengambil charge of"
       }
     ]
   },
@@ -3801,7 +3801,7 @@ window.nuggetKanjiN4 = [
       {
         "word": "思い込む",
         "reading": "おもいこむ",
-        "meaning_id": "me-be under impression that"
+        "meaning_id": "menjadi / ada under impression that"
       }
     ]
   },
@@ -3965,7 +3965,7 @@ window.nuggetKanjiN4 = [
       {
         "word": "世話",
         "reading": "せわ",
-        "meaning_id": "me-look after"
+        "meaning_id": "look after"
       },
       {
         "word": "世紀",
@@ -4341,12 +4341,12 @@ window.nuggetKanjiN4 = [
       {
         "word": "退院",
         "reading": "たいいん",
-        "meaning_id": "me-leave hospital"
+        "meaning_id": "leave hospital"
       },
       {
         "word": "入院",
         "reading": "にゅういん",
-        "meaning_id": "me-hospitalise"
+        "meaning_id": "hospitalise"
       },
       {
         "word": "寺院",
@@ -4429,7 +4429,7 @@ window.nuggetKanjiN4 = [
       {
         "word": "心配",
         "reading": "しんぱい",
-        "meaning_id": "me-worry"
+        "meaning_id": "worry"
       },
       {
         "word": "感心",
@@ -5142,7 +5142,7 @@ window.nuggetKanjiN4 = [
       {
         "word": "計画",
         "reading": "けいかく",
-        "meaning_id": "me-plan"
+        "meaning_id": "plan"
       },
       {
         "word": "漫画",
@@ -5615,7 +5615,7 @@ window.nuggetKanjiN4 = [
       {
         "word": "集める",
         "reading": "あつめる",
-        "meaning_id": "me-collect something"
+        "meaning_id": "collect something"
       },
       {
         "word": "集団",
@@ -6082,7 +6082,7 @@ window.nuggetKanjiN4 = [
       {
         "word": "計画",
         "reading": "けいかく",
-        "meaning_id": "me-plan"
+        "meaning_id": "plan"
       },
       {
         "word": "計",
@@ -6162,7 +6162,7 @@ window.nuggetKanjiN4 = [
       {
         "word": "死ぬ",
         "reading": "しぬ",
-        "meaning_id": "me-die"
+        "meaning_id": "meninggal / mati"
       },
       {
         "word": "死亡",
@@ -6402,7 +6402,7 @@ window.nuggetKanjiN4 = [
       {
         "word": "始まる",
         "reading": "はじまる",
-        "meaning_id": "me-begin"
+        "meaning_id": "mulai / memulai"
       },
       {
         "word": "始める",
@@ -6432,7 +6432,7 @@ window.nuggetKanjiN4 = [
       {
         "word": "始めに",
         "reading": "はじめに",
-        "meaning_id": "me-begin with"
+        "meaning_id": "begin with"
       },
       {
         "word": "始発",
@@ -6583,17 +6583,17 @@ window.nuggetKanjiN4 = [
       {
         "word": "運転",
         "reading": "うんてん",
-        "meaning_id": "me-drive"
+        "meaning_id": "mengemudi"
       },
       {
         "word": "運動",
         "reading": "うんどう",
-        "meaning_id": "me-exercise"
+        "meaning_id": "exercise"
       },
       {
         "word": "運ぶ",
         "reading": "はこぶ",
-        "meaning_id": "me-transport"
+        "meaning_id": "transport"
       },
       {
         "word": "運転手",
@@ -6889,7 +6889,7 @@ window.nuggetKanjiN4 = [
       {
         "word": "広げる",
         "reading": "ひろげる",
-        "meaning_id": "me-spread"
+        "meaning_id": "spread"
       }
     ]
   },
@@ -6950,7 +6950,7 @@ window.nuggetKanjiN4 = [
       {
         "word": "住む",
         "reading": "すむ",
-        "meaning_id": "me-live in"
+        "meaning_id": "tinggal / bermukim"
       },
       {
         "word": "住所",
@@ -7644,7 +7644,7 @@ window.nuggetKanjiN4 = [
       {
         "word": "建てる",
         "reading": "たてる",
-        "meaning_id": "me-build"
+        "meaning_id": "membangun"
       },
       {
         "word": "二階建て",
@@ -7664,7 +7664,7 @@ window.nuggetKanjiN4 = [
       {
         "word": "建つ",
         "reading": "たつ",
-        "meaning_id": "me-erect"
+        "meaning_id": "erect"
       },
       {
         "word": "再建",
@@ -7837,7 +7837,7 @@ window.nuggetKanjiN4 = [
       {
         "word": "急ぐ",
         "reading": "いそぐ",
-        "meaning_id": "me-hurry"
+        "meaning_id": "hurry"
       },
       {
         "word": "急行",
@@ -8020,7 +8020,7 @@ window.nuggetKanjiN4 = [
       {
         "word": "放送",
         "reading": "ほうそう",
-        "meaning_id": "me-broadcast"
+        "meaning_id": "broadcast"
       },
       {
         "word": "見送り",
@@ -8050,7 +8050,7 @@ window.nuggetKanjiN4 = [
       {
         "word": "見送る",
         "reading": "みおくる",
-        "meaning_id": "me-see off"
+        "meaning_id": "see off"
       }
     ]
   },
@@ -8125,7 +8125,7 @@ window.nuggetKanjiN4 = [
       {
         "word": "切る",
         "reading": "きる",
-        "meaning_id": "me-cut"
+        "meaning_id": "memotong"
       },
       {
         "word": "大切",
@@ -8213,7 +8213,7 @@ window.nuggetKanjiN4 = [
       {
         "word": "運転",
         "reading": "うんてん",
-        "meaning_id": "me-drive"
+        "meaning_id": "mengemudi"
       },
       {
         "word": "運転手",
@@ -8243,7 +8243,7 @@ window.nuggetKanjiN4 = [
       {
         "word": "転がす",
         "reading": "ころがす",
-        "meaning_id": "me-roll"
+        "meaning_id": "roll"
       }
     ]
   },
@@ -8311,7 +8311,7 @@ window.nuggetKanjiN4 = [
       {
         "word": "研ぐ",
         "reading": "とぐ",
-        "meaning_id": "me-sharpen"
+        "meaning_id": "sharpen"
       }
     ]
   },
@@ -8375,12 +8375,12 @@ window.nuggetKanjiN4 = [
       {
         "word": "足す",
         "reading": "たす",
-        "meaning_id": "me-add a number"
+        "meaning_id": "add a number"
       },
       {
         "word": "足りる",
         "reading": "たりる",
-        "meaning_id": "me-be enough"
+        "meaning_id": "menjadi / ada enough"
       },
       {
         "word": "不足",
@@ -8618,7 +8618,7 @@ window.nuggetKanjiN4 = [
       {
         "word": "起きる",
         "reading": "おきる",
-        "meaning_id": "me-get up"
+        "meaning_id": "bangun"
       },
       {
         "word": "起す",
@@ -8722,7 +8722,7 @@ window.nuggetKanjiN4 = [
       {
         "word": "着く",
         "reading": "つく",
-        "meaning_id": "me-arrive at"
+        "meaning_id": "tiba / sampai"
       },
       {
         "word": "着物",
@@ -8914,7 +8914,7 @@ window.nuggetKanjiN4 = [
       {
         "word": "病む",
         "reading": "やむ",
-        "meaning_id": "me-fall ill"
+        "meaning_id": "fall ill"
       }
     ]
   },
@@ -9080,7 +9080,7 @@ window.nuggetKanjiN4 = [
       {
         "word": "待ち合わせる",
         "reading": "まちあわせる",
-        "meaning_id": "me-rendezvous"
+        "meaning_id": "rendezvous"
       },
       {
         "word": "待遇",
@@ -9095,7 +9095,7 @@ window.nuggetKanjiN4 = [
       {
         "word": "待ち望む",
         "reading": "まちのぞむ",
-        "meaning_id": "me-look anxiously for"
+        "meaning_id": "look anxiously for"
       }
     ]
   },
@@ -9167,7 +9167,7 @@ window.nuggetKanjiN4 = [
       {
         "word": "試す",
         "reading": "ためす",
-        "meaning_id": "me-attempt"
+        "meaning_id": "attempt"
       },
       {
         "word": "試み",
@@ -9177,7 +9177,7 @@ window.nuggetKanjiN4 = [
       {
         "word": "試みる",
         "reading": "こころみる",
-        "meaning_id": "me-try"
+        "meaning_id": "mencoba"
       }
     ]
   },
@@ -9383,7 +9383,7 @@ window.nuggetKanjiN4 = [
       {
         "word": "早める",
         "reading": "はやめる",
-        "meaning_id": "me-hasten"
+        "meaning_id": "hasten"
       }
     ]
   },
@@ -9451,12 +9451,12 @@ window.nuggetKanjiN4 = [
       {
         "word": "映す",
         "reading": "うつす",
-        "meaning_id": "me-project"
+        "meaning_id": "project"
       },
       {
         "word": "映る",
         "reading": "うつる",
-        "meaning_id": "me-be reflected"
+        "meaning_id": "menjadi / ada reflected"
       },
       {
         "word": "反映",
@@ -9629,7 +9629,7 @@ window.nuggetKanjiN4 = [
       {
         "word": "経験",
         "reading": "けいけん",
-        "meaning_id": "me-experience"
+        "meaning_id": "experience"
       },
       {
         "word": "試験",
@@ -9874,7 +9874,7 @@ window.nuggetKanjiN4 = [
       {
         "word": "仕上がる",
         "reading": "しあがる",
-        "meaning_id": "me-be finished"
+        "meaning_id": "menjadi / ada finished"
       },
       {
         "word": "給仕",
@@ -10123,12 +10123,12 @@ window.nuggetKanjiN4 = [
       {
         "word": "写す",
         "reading": "うつす",
-        "meaning_id": "me-copy or photograph"
+        "meaning_id": "copy or photograph"
       },
       {
         "word": "写る",
         "reading": "うつる",
-        "meaning_id": "me-be photographed"
+        "meaning_id": "menjadi / ada photographed"
       },
       {
         "word": "写生",
@@ -10295,7 +10295,7 @@ window.nuggetKanjiN4 = [
       {
         "word": "答える",
         "reading": "こたえる",
-        "meaning_id": "me-answer"
+        "meaning_id": "menjawab"
       },
       {
         "word": "答",
@@ -10595,7 +10595,7 @@ window.nuggetKanjiN4 = [
       {
         "word": "注す",
         "reading": "さす",
-        "meaning_id": "me-pour"
+        "meaning_id": "menuangkan"
       }
     ]
   },
@@ -10668,7 +10668,7 @@ window.nuggetKanjiN4 = [
       {
         "word": "帰す",
         "reading": "かえす",
-        "meaning_id": "me-send back"
+        "meaning_id": "send back"
       },
       {
         "word": "お帰り",
@@ -11830,7 +11830,7 @@ window.nuggetKanjiN4 = [
       {
         "word": "赤らむ",
         "reading": "あからむ",
-        "meaning_id": "me-become red"
+        "meaning_id": "become red"
       }
     ]
   },
@@ -12401,7 +12401,7 @@ window.nuggetKanjiN4 = [
       {
         "word": "練習",
         "reading": "れんしゅう",
-        "meaning_id": "me-practice"
+        "meaning_id": "practice"
       },
       {
         "word": "習慣",
@@ -13017,7 +13017,7 @@ window.nuggetKanjiN4 = [
       {
         "word": "飲み込む",
         "reading": "のみこむ",
-        "meaning_id": "me-gulp down"
+        "meaning_id": "gulp down"
       }
     ]
   },

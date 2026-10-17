@@ -6,7 +6,7 @@ window.curriculumN3 = {
     "level": "n3",
     "version": "1.0.0",
     "total_units": 10,
-    "total_grammar_points": 163,
+    "total_grammar_points": 180,
     "total_vocab_points": 2580,
     "authoritative": true
   },
@@ -39,7 +39,8 @@ window.curriculumN3 = {
         "gn3-00058",
         "gn3-00060",
         "gn3-00061",
-        "gn3-00069"
+        "gn3-00069",
+        "gn3-00072"
       ],
       "vocab_ids": [
         "vg-n3-00003",
@@ -467,7 +468,8 @@ window.curriculumN3 = {
             "gn3-00058",
             "gn3-00060",
             "gn3-00061",
-            "gn3-00069"
+            "gn3-00069",
+            "gn3-00072"
           ],
           "vocab_ids": [
             "vg-n3-00258",
@@ -615,7 +617,6 @@ window.curriculumN3 = {
       "can_do_summary": "Bisa mendefinisikan batasan aturan spesifik departemen.",
       "l2d_focus_notes": "",
       "grammar_ids": [
-        "gn3-00072",
         "gn3-00091",
         "gn3-00102",
         "gn3-00125",
@@ -631,7 +632,9 @@ window.curriculumN3 = {
         "gn3-00147",
         "gn3-00163",
         "gn3-00164",
-        "gn3-00165"
+        "gn3-00165",
+        "gn3-00166",
+        "gn3-00059"
       ],
       "vocab_ids": [
         "vg-n3-00541",
@@ -902,7 +905,6 @@ window.curriculumN3 = {
           "desc_id": "Pengenalan struktur inti dan pola dasar Batasan, Lingkup & Representasi.",
           "can_do_statement": "Bisa mendefinisikan batasan aturan spesifik departemen.",
           "grammar_ids": [
-            "gn3-00072",
             "gn3-00091",
             "gn3-00102",
             "gn3-00125",
@@ -910,7 +912,8 @@ window.curriculumN3 = {
             "gn3-00129",
             "gn3-00130",
             "gn3-00131",
-            "gn3-00132"
+            "gn3-00132",
+            "gn3-00133"
           ],
           "vocab_ids": [
             "vg-n3-00541",
@@ -1052,14 +1055,15 @@ window.curriculumN3 = {
           "desc_id": "Latihan produksi aktif, perbandingan nuansa, dan konsolidasi.",
           "can_do_statement": "Bisa mendefinisikan batasan aturan spesifik departemen.",
           "grammar_ids": [
-            "gn3-00133",
             "gn3-00134",
             "gn3-00145",
             "gn3-00146",
             "gn3-00147",
             "gn3-00163",
             "gn3-00164",
-            "gn3-00165"
+            "gn3-00165",
+            "gn3-00166",
+            "gn3-00059"
           ],
           "vocab_ids": [
             "vg-n3-00892",
@@ -1207,8 +1211,6 @@ window.curriculumN3 = {
       "can_do_summary": "Bisa menganalisis faktor kegagalan dan dampak positif bimbingan.",
       "l2d_focus_notes": "",
       "grammar_ids": [
-        "gn3-00166",
-        "gn3-00059",
         "gn3-00077",
         "gn3-00081",
         "gn3-00082",
@@ -1223,7 +1225,10 @@ window.curriculumN3 = {
         "gn3-00172",
         "gn3-00013",
         "gn3-00014",
-        "gn3-00017"
+        "gn3-00017",
+        "gn3-00139",
+        "gn3-00005",
+        "gn3-00011"
       ],
       "vocab_ids": [
         "vg-n3-01268",
@@ -1494,15 +1499,15 @@ window.curriculumN3 = {
           "desc_id": "Pengenalan struktur inti dan pola dasar Kausalitas, Tanggung Jawab & Dampak.",
           "can_do_statement": "Bisa menganalisis faktor kegagalan dan dampak positif bimbingan.",
           "grammar_ids": [
-            "gn3-00166",
-            "gn3-00059",
             "gn3-00077",
             "gn3-00081",
             "gn3-00082",
             "gn3-00084",
             "gn3-00085",
             "gn3-00121",
-            "gn3-00124"
+            "gn3-00124",
+            "gn3-00127",
+            "gn3-00128"
           ],
           "vocab_ids": [
             "vg-n3-01268",
@@ -1644,14 +1649,15 @@ window.curriculumN3 = {
           "desc_id": "Latihan produksi aktif, perbandingan nuansa, dan konsolidasi.",
           "can_do_statement": "Bisa menganalisis faktor kegagalan dan dampak positif bimbingan.",
           "grammar_ids": [
-            "gn3-00127",
-            "gn3-00128",
             "gn3-00170",
             "gn3-00171",
             "gn3-00172",
             "gn3-00013",
             "gn3-00014",
-            "gn3-00017"
+            "gn3-00017",
+            "gn3-00139",
+            "gn3-00005",
+            "gn3-00011"
           ],
           "vocab_ids": [
             "vg-n3-01654",
@@ -1799,9 +1805,6 @@ window.curriculumN3 = {
       "can_do_summary": "Bisa memanfaatkan jeda waktu dan melaporkan gangguan di tengah tugas.",
       "l2d_focus_notes": "",
       "grammar_ids": [
-        "gn3-00139",
-        "gn3-00005",
-        "gn3-00011",
         "gn3-00027",
         "gn3-00028",
         "gn3-00030",
@@ -1815,7 +1818,11 @@ window.curriculumN3 = {
         "gn3-00040",
         "gn3-00041",
         "gn3-00042",
-        "gn3-00043"
+        "gn3-00043",
+        "gn3-00070",
+        "gn3-00073",
+        "gn3-00074",
+        "gn3-00075"
       ],
       "vocab_ids": [
         "vg-n3-02061",
@@ -2086,15 +2093,15 @@ window.curriculumN3 = {
           "desc_id": "Pengenalan struktur inti dan pola dasar Momentum & Jendela Kesempatan.",
           "can_do_statement": "Bisa memanfaatkan jeda waktu dan melaporkan gangguan di tengah tugas.",
           "grammar_ids": [
-            "gn3-00139",
-            "gn3-00005",
-            "gn3-00011",
             "gn3-00027",
             "gn3-00028",
             "gn3-00030",
             "gn3-00031",
             "gn3-00032",
-            "gn3-00034"
+            "gn3-00034",
+            "gn3-00035",
+            "gn3-00036",
+            "gn3-00038"
           ],
           "vocab_ids": [
             "vg-n3-02061",
@@ -2236,14 +2243,15 @@ window.curriculumN3 = {
           "desc_id": "Latihan produksi aktif, perbandingan nuansa, dan konsolidasi.",
           "can_do_statement": "Bisa memanfaatkan jeda waktu dan melaporkan gangguan di tengah tugas.",
           "grammar_ids": [
-            "gn3-00035",
-            "gn3-00036",
-            "gn3-00038",
             "gn3-00039",
             "gn3-00040",
             "gn3-00041",
             "gn3-00042",
-            "gn3-00043"
+            "gn3-00043",
+            "gn3-00070",
+            "gn3-00073",
+            "gn3-00074",
+            "gn3-00075"
           ],
           "vocab_ids": [
             "vg-n3-02429",
@@ -2391,10 +2399,6 @@ window.curriculumN3 = {
       "can_do_summary": "Bisa menyimpulkan kegagalan sistem dan etika kerja profesional.",
       "l2d_focus_notes": "",
       "grammar_ids": [
-        "gn3-00070",
-        "gn3-00073",
-        "gn3-00074",
-        "gn3-00075",
         "gn3-00076",
         "gn3-00083",
         "gn3-00089",
@@ -2407,7 +2411,12 @@ window.curriculumN3 = {
         "gn3-00123",
         "gn3-00138",
         "gn3-00151",
-        "gn3-00152"
+        "gn3-00152",
+        "gn3-00153",
+        "gn3-00154",
+        "gn3-00156",
+        "gn3-00157",
+        "gn3-00158"
       ],
       "vocab_ids": [
         "vg-n3-00471",
@@ -2678,15 +2687,15 @@ window.curriculumN3 = {
           "desc_id": "Pengenalan struktur inti dan pola dasar Keyakinan Logis & Keharusan Moral.",
           "can_do_statement": "Bisa menyimpulkan kegagalan sistem dan etika kerja profesional.",
           "grammar_ids": [
-            "gn3-00070",
-            "gn3-00073",
-            "gn3-00074",
-            "gn3-00075",
             "gn3-00076",
             "gn3-00083",
             "gn3-00089",
             "gn3-00090",
-            "gn3-00092"
+            "gn3-00092",
+            "gn3-00093",
+            "gn3-00095",
+            "gn3-00099",
+            "gn3-00104"
           ],
           "vocab_ids": [
             "vg-n3-00471",
@@ -2828,14 +2837,15 @@ window.curriculumN3 = {
           "desc_id": "Latihan produksi aktif, perbandingan nuansa, dan konsolidasi.",
           "can_do_statement": "Bisa menyimpulkan kegagalan sistem dan etika kerja profesional.",
           "grammar_ids": [
-            "gn3-00093",
-            "gn3-00095",
-            "gn3-00099",
-            "gn3-00104",
             "gn3-00123",
             "gn3-00138",
             "gn3-00151",
-            "gn3-00152"
+            "gn3-00152",
+            "gn3-00153",
+            "gn3-00154",
+            "gn3-00156",
+            "gn3-00157",
+            "gn3-00158"
           ],
           "vocab_ids": [
             "vg-n3-02492",
@@ -2983,11 +2993,6 @@ window.curriculumN3 = {
       "can_do_summary": "Bisa menyanggah pendapat secara halus tanpa konfrontasi.",
       "l2d_focus_notes": "",
       "grammar_ids": [
-        "gn3-00153",
-        "gn3-00154",
-        "gn3-00156",
-        "gn3-00157",
-        "gn3-00158",
         "gn3-00168",
         "gn3-00169",
         "gn3-00173",
@@ -2999,7 +3004,13 @@ window.curriculumN3 = {
         "gn3-00179",
         "gn3-00180",
         "gn3-00015",
-        "gn3-00029"
+        "gn3-00029",
+        "gn3-00033",
+        "gn3-00044",
+        "gn3-00046",
+        "gn3-00047",
+        "gn3-00051",
+        "gn3-00052"
       ],
       "vocab_ids": [
         "vg-n3-01849",
@@ -3270,15 +3281,15 @@ window.curriculumN3 = {
           "desc_id": "Pengenalan struktur inti dan pola dasar Negasi Parsial & Keraguan Halus.",
           "can_do_statement": "Bisa menyanggah pendapat secara halus tanpa konfrontasi.",
           "grammar_ids": [
-            "gn3-00153",
-            "gn3-00154",
-            "gn3-00156",
-            "gn3-00157",
-            "gn3-00158",
             "gn3-00168",
             "gn3-00169",
             "gn3-00173",
-            "gn3-00174"
+            "gn3-00174",
+            "gn3-00175",
+            "gn3-00176",
+            "gn3-00177",
+            "gn3-00178",
+            "gn3-00179"
           ],
           "vocab_ids": [
             "vg-n3-01849",
@@ -3420,14 +3431,15 @@ window.curriculumN3 = {
           "desc_id": "Latihan produksi aktif, perbandingan nuansa, dan konsolidasi.",
           "can_do_statement": "Bisa menyanggah pendapat secara halus tanpa konfrontasi.",
           "grammar_ids": [
-            "gn3-00175",
-            "gn3-00176",
-            "gn3-00177",
-            "gn3-00178",
-            "gn3-00179",
             "gn3-00180",
             "gn3-00015",
-            "gn3-00029"
+            "gn3-00029",
+            "gn3-00033",
+            "gn3-00044",
+            "gn3-00046",
+            "gn3-00047",
+            "gn3-00051",
+            "gn3-00052"
           ],
           "vocab_ids": [
             "vg-n3-00515",
@@ -3575,12 +3587,6 @@ window.curriculumN3 = {
       "can_do_summary": "Bisa melaporkan progres tugas mendekati akhir.",
       "l2d_focus_notes": "",
       "grammar_ids": [
-        "gn3-00033",
-        "gn3-00044",
-        "gn3-00046",
-        "gn3-00047",
-        "gn3-00051",
-        "gn3-00052",
         "gn3-00067",
         "gn3-00068",
         "gn3-00080",
@@ -3591,7 +3597,14 @@ window.curriculumN3 = {
         "gn3-00002",
         "gn3-00003",
         "gn3-00004",
-        "gn3-00006"
+        "gn3-00006",
+        "gn3-00018",
+        "gn3-00019",
+        "gn3-00020",
+        "gn3-00021",
+        "gn3-00022",
+        "gn3-00023",
+        "gn3-00024"
       ],
       "vocab_ids": [
         "vg-n3-00836",
@@ -3862,15 +3875,15 @@ window.curriculumN3 = {
           "desc_id": "Pengenalan struktur inti dan pola dasar Usaha, Ketuntasan & Kondisi Kritis.",
           "can_do_statement": "Bisa melaporkan progres tugas mendekati akhir.",
           "grammar_ids": [
-            "gn3-00033",
-            "gn3-00044",
-            "gn3-00046",
-            "gn3-00047",
-            "gn3-00051",
-            "gn3-00052",
             "gn3-00067",
             "gn3-00068",
-            "gn3-00080"
+            "gn3-00080",
+            "gn3-00098",
+            "gn3-00137",
+            "gn3-00140",
+            "gn3-00001",
+            "gn3-00002",
+            "gn3-00003"
           ],
           "vocab_ids": [
             "vg-n3-00836",
@@ -4012,14 +4025,15 @@ window.curriculumN3 = {
           "desc_id": "Latihan produksi aktif, perbandingan nuansa, dan konsolidasi.",
           "can_do_statement": "Bisa melaporkan progres tugas mendekati akhir.",
           "grammar_ids": [
-            "gn3-00098",
-            "gn3-00137",
-            "gn3-00140",
-            "gn3-00001",
-            "gn3-00002",
-            "gn3-00003",
             "gn3-00004",
-            "gn3-00006"
+            "gn3-00006",
+            "gn3-00018",
+            "gn3-00019",
+            "gn3-00020",
+            "gn3-00021",
+            "gn3-00022",
+            "gn3-00023",
+            "gn3-00024"
           ],
           "vocab_ids": [
             "vg-n3-01093",
@@ -4167,13 +4181,6 @@ window.curriculumN3 = {
       "can_do_summary": "Bisa melaporkan kelemahan desain alat yang sering tersumbat.",
       "l2d_focus_notes": "",
       "grammar_ids": [
-        "gn3-00018",
-        "gn3-00019",
-        "gn3-00020",
-        "gn3-00021",
-        "gn3-00022",
-        "gn3-00023",
-        "gn3-00024",
         "gn3-00025",
         "gn3-00026",
         "gn3-00050",
@@ -4183,7 +4190,15 @@ window.curriculumN3 = {
         "gn3-00071",
         "gn3-00086",
         "gn3-00087",
-        "gn3-00088"
+        "gn3-00088",
+        "gn3-00094",
+        "gn3-00096",
+        "gn3-00101",
+        "gn3-00142",
+        "gn3-00143",
+        "gn3-00148",
+        "gn3-00149",
+        "gn3-00150"
       ],
       "vocab_ids": [
         "vg-n3-01343",
@@ -4454,15 +4469,15 @@ window.curriculumN3 = {
           "desc_id": "Pengenalan struktur inti dan pola dasar Tendensi & Karakteristik Negatif.",
           "can_do_statement": "Bisa melaporkan kelemahan desain alat yang sering tersumbat.",
           "grammar_ids": [
-            "gn3-00018",
-            "gn3-00019",
-            "gn3-00020",
-            "gn3-00021",
-            "gn3-00022",
-            "gn3-00023",
-            "gn3-00024",
             "gn3-00025",
-            "gn3-00026"
+            "gn3-00026",
+            "gn3-00050",
+            "gn3-00062",
+            "gn3-00065",
+            "gn3-00066",
+            "gn3-00071",
+            "gn3-00086",
+            "gn3-00087"
           ],
           "vocab_ids": [
             "vg-n3-01343",
@@ -4604,14 +4619,15 @@ window.curriculumN3 = {
           "desc_id": "Latihan produksi aktif, perbandingan nuansa, dan konsolidasi.",
           "can_do_statement": "Bisa melaporkan kelemahan desain alat yang sering tersumbat.",
           "grammar_ids": [
-            "gn3-00050",
-            "gn3-00062",
-            "gn3-00065",
-            "gn3-00066",
-            "gn3-00071",
-            "gn3-00086",
-            "gn3-00087",
-            "gn3-00088"
+            "gn3-00088",
+            "gn3-00094",
+            "gn3-00096",
+            "gn3-00101",
+            "gn3-00142",
+            "gn3-00143",
+            "gn3-00148",
+            "gn3-00149",
+            "gn3-00150"
           ],
           "vocab_ids": [
             "vg-n3-01580",
@@ -4759,23 +4775,24 @@ window.curriculumN3 = {
       "can_do_summary": "Bisa berbicara mewakili posisi jabatan kerja.",
       "l2d_focus_notes": "",
       "grammar_ids": [
-        "gn3-00094",
-        "gn3-00096",
-        "gn3-00101",
-        "gn3-00142",
-        "gn3-00143",
-        "gn3-00148",
-        "gn3-00149",
-        "gn3-00150",
-        "gn3-00063",
-        "gn3-00064",
-        "gn3-00097",
-        "gn3-00103",
-        "gn3-00048",
-        "gn3-00049",
-        "gn3-00078",
-        "gn3-00079",
-        "gn3-00135"
+        "gn3-00100",
+        "gn3-00105",
+        "gn3-00106",
+        "gn3-00107",
+        "gn3-00108",
+        "gn3-00109",
+        "gn3-00110",
+        "gn3-00111",
+        "gn3-00112",
+        "gn3-00113",
+        "gn3-00114",
+        "gn3-00115",
+        "gn3-00116",
+        "gn3-00117",
+        "gn3-00118",
+        "gn3-00119",
+        "gn3-00120",
+        "gn3-00063"
       ],
       "vocab_ids": [
         "vg-n3-01807",
@@ -5046,15 +5063,15 @@ window.curriculumN3 = {
           "desc_id": "Pengenalan struktur inti dan pola dasar Sudut Pandang, Peran & Paradoks.",
           "can_do_statement": "Bisa berbicara mewakili posisi jabatan kerja.",
           "grammar_ids": [
-            "gn3-00094",
-            "gn3-00096",
-            "gn3-00101",
-            "gn3-00142",
-            "gn3-00143",
-            "gn3-00148",
-            "gn3-00149",
-            "gn3-00150",
-            "gn3-00063"
+            "gn3-00100",
+            "gn3-00105",
+            "gn3-00106",
+            "gn3-00107",
+            "gn3-00108",
+            "gn3-00109",
+            "gn3-00110",
+            "gn3-00111",
+            "gn3-00112"
           ],
           "vocab_ids": [
             "vg-n3-01807",
@@ -5196,14 +5213,15 @@ window.curriculumN3 = {
           "desc_id": "Latihan produksi aktif, perbandingan nuansa, dan konsolidasi.",
           "can_do_statement": "Bisa berbicara mewakili posisi jabatan kerja.",
           "grammar_ids": [
-            "gn3-00064",
-            "gn3-00097",
-            "gn3-00103",
-            "gn3-00048",
-            "gn3-00049",
-            "gn3-00078",
-            "gn3-00079",
-            "gn3-00135"
+            "gn3-00113",
+            "gn3-00114",
+            "gn3-00115",
+            "gn3-00116",
+            "gn3-00117",
+            "gn3-00118",
+            "gn3-00119",
+            "gn3-00120",
+            "gn3-00063"
           ],
           "vocab_ids": [
             "vg-n3-02034",
@@ -5351,6 +5369,14 @@ window.curriculumN3 = {
       "can_do_summary": "Bisa mempresentasikan materi dalam rapat tim operasional.",
       "l2d_focus_notes": "",
       "grammar_ids": [
+        "gn3-00064",
+        "gn3-00097",
+        "gn3-00103",
+        "gn3-00048",
+        "gn3-00049",
+        "gn3-00078",
+        "gn3-00079",
+        "gn3-00135",
         "gn3-00136",
         "gn3-00155",
         "gn3-00159",
@@ -5631,11 +5657,15 @@ window.curriculumN3 = {
           "desc_id": "Pengenalan struktur inti dan pola dasar Topik Wacana, Diskusi & Negosiasi.",
           "can_do_statement": "Bisa mempresentasikan materi dalam rapat tim operasional.",
           "grammar_ids": [
-            "gn3-00136",
-            "gn3-00155",
-            "gn3-00159",
-            "gn3-00160",
-            "gn3-00161"
+            "gn3-00064",
+            "gn3-00097",
+            "gn3-00103",
+            "gn3-00048",
+            "gn3-00049",
+            "gn3-00078",
+            "gn3-00079",
+            "gn3-00135",
+            "gn3-00136"
           ],
           "vocab_ids": [
             "vg-n3-02258",
@@ -5777,6 +5807,10 @@ window.curriculumN3 = {
           "desc_id": "Latihan produksi aktif, perbandingan nuansa, dan konsolidasi.",
           "can_do_statement": "Bisa mempresentasikan materi dalam rapat tim operasional.",
           "grammar_ids": [
+            "gn3-00155",
+            "gn3-00159",
+            "gn3-00160",
+            "gn3-00161",
             "gn3-00162",
             "gn3-00167",
             "gn3-00141",

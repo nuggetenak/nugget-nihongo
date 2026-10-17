@@ -575,6 +575,7 @@ const curriculumTrackN5 = {
     version: '1.0.0',
     total_units: fullUnits.length,
     total_grammar_points: grammarN5.length,
+    core_target_vocab_count: 124,
     authoritative: true
   },
   id: 'trk-nugget-n5',
@@ -582,7 +583,7 @@ const curriculumTrackN5 = {
   name_id: 'Jalur Mandiri N5 (Kurikulum Nugget)',
   level: 'n5',
   tagline: 'Dirancang khusus untuk penutur bahasa Indonesia dengan Processability Theory & Analisis Kontrasif.',
-  desc: 'Jalur belajar bertahap 10 unit lengkap dari salam dasar hingga penguasaan 94 pola tata bahasa dan 990+ kosakata JLPT N5.',
+  desc: 'Jalur belajar bertahap 10 unit lengkap dari salam dasar hingga penguasaan 94 pola tata bahasa, 124 target kosakata inti, dan 870+ bank kosakata JLPT N5.',
   total_units: fullUnits.length,
   total_grammar_count: grammarN5.length,
   units: fullUnits

@@ -1,0 +1,66 @@
+{
+  "id": "choukai-n5-01",
+  "level": "N5",
+  "title": "Percakapan di Stasiun Kereta (駅での会話)",
+  "scenario": "Menanyakan peron keberangkatan kereta Yamanote Line di Stasiun Shinjuku",
+  "audioSrc": "/data/choukai/audio/set1/q1_mondai1.mp3",
+  "duration": 32.5,
+  "sentences": [
+    {
+      "id": "s1",
+      "startMs": 0,
+      "endMs": 3800,
+      "speaker": "A (Wisatawan)",
+      "text": "すみません、渋谷駅へ行きたいんですが、何番線ですか？",
+      "romaji": "Sumimasen, Shibuya-eki e ikitai n desu ga, nanban-sen desu ka?",
+      "translation": "Permisi, saya mau pergi ke Stasiun Shibuya, peron nomor berapa ya?"
+    },
+    {
+      "id": "s2",
+      "startMs": 4000,
+      "endMs": 8200,
+      "speaker": "B (Petugas Stasiun)",
+      "text": "渋谷駅ですね。14番線の山手線内回りにお乗りください。",
+      "romaji": "Shibuya-eki desu ne. Jyuu-yon-ban-sen no Yamanote-sen uchimawari ni onori kudasai.",
+      "translation": "Stasiun Shibuya ya. Silakan naik Yamanote Line arah dalam di peron 14."
+    },
+    {
+      "id": "s3",
+      "startMs": 8500,
+      "endMs": 12400,
+      "speaker": "A (Wisatawan)",
+      "text": "14番線ですね。電車は何分ごとに来ますか？",
+      "romaji": "Jyuu-yon-ban-sen desu ne. Densha wa nanpun goto ni kimasu ka?",
+      "translation": "Peron 14 ya. Keretanya datang setiap berapa menit?"
+    },
+    {
+      "id": "s4",
+      "startMs": 12600,
+      "endMs": 16500,
+      "speaker": "B (Petugas Stasiun)",
+      "text": "だいたい3分から4分間隔で来ますよ。すぐ来ます。",
+      "romaji": "Daitai san-pun kara yon-pun kankaku de kimasu yo. Sugu kimasu.",
+      "translation": "Kira-kira berjarak 3 sampai 4 menit. Sebentar lagi datang."
+    },
+    {
+      "id": "s5",
+      "startMs": 17000,
+      "endMs": 19500,
+      "speaker": "A (Wisatawan)",
+      "text": "わかりました。ありがとうございます！",
+      "romaji": "Wakarimashita. Arigatou gozaimasu!",
+      "translation": "Saya mengerti. Terima kasih banyak!"
+    }
+  ],
+  "question": {
+    "prompt": "Wisatawan harus naik kereta di peron nomor berapa?",
+    "options": [
+      "11番線 (Peron 11)",
+      "12番線 (Peron 12)",
+      "14番線 (Peron 14)",
+      "15番線 (Peron 15)"
+    ],
+    "correctAnswerIndex": 2,
+    "explanationId": "Petugas stasiun dengan jelas mengatakan: \"14番線の山手線内回りにお乗りください\" (Peron 14)."
+  }
+}

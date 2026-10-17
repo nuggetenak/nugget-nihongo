@@ -1,6 +1,6 @@
 // ────────────────────────────────────────────────────────────
-//  n1-adjectives.js — Nugget Nihongo · JLPT N1 · Adjectives
-//  17 entries | Auto-split from vocab-n1.js
+//  n1-adjectives.js — Nugget Nihongo · JLPT N1 · ADJECTIVES
+//  294 entries | Verified Indonesian Translations
 //  Schema: data/_schema-vocab.md | Part of vocab/n1/ module
 // ────────────────────────────────────────────────────────────
 
@@ -35,8 +35,9 @@ window.vocabN1_Adjectives = [
       "level": "n1",
       "tags": [
         "pekerjaan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"トクシュ￣"}
+},
     {
       "jp": "彼女の置かれた状況は非常に特殊だ。",
       "id": "Situasi yang dihadapinya sangat tidak biasa.",
@@ -93,8 +94,9 @@ window.vocabN1_Adjectives = [
       "level": "n1",
       "tags": [
         "teknologi"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ゼイジャク￣"}
+},
     {
       "jp": "経済的に脆弱な層への支援が急務となっている。",
       "id": "Dukungan bagi kelompok yang rentan secara ekonomi menjadi hal yang mendesak.",
@@ -163,8 +165,9 @@ window.vocabN1_Adjectives = [
       "level": "n1",
       "tags": [
         "karakter"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ゼイジャク￣"}
+},
     {
       "jp": "多様性を取り入れた強靭な経済を構築することが目標だ。",
       "id": "Tujuannya adalah membangun ekonomi yang tangguh dengan mengintegrasikan keberagaman.",
@@ -236,8 +239,9 @@ window.vocabN1_Adjectives = [
       "level": "n1",
       "tags": [
         "alam-lingkungan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"キョウジン￣"}
+},
     {
       "jp": "この薬は症状の改善に顕著な効果を示した。",
       "id": "Obat ini menunjukkan efek yang sangat jelas dalam perbaikan gejala.",
@@ -305,8 +309,9 @@ window.vocabN1_Adjectives = [
       "level": "n1",
       "tags": [
         "karakter"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"ケ＼ンチョ"}
+},
     {
       "jp": "彼は批判を<b>謙虚に</b>受け止め、改善に努めた。",
       "id": "Dia menerima kritik dengan rendah hati dan berusaha untuk memperbaiki diri.",
@@ -356,8 +361,9 @@ window.vocabN1_Adjectives = [
       "level": "n1",
       "tags": [
         "pekerjaan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ゴウマン￣"}
+},
     {
       "jp": "権力を持つと<b>傲慢に</b>なる人が多い。",
       "id": "Banyak orang yang menjadi arogan setelah memiliki kekuasaan.",
@@ -427,8 +433,9 @@ window.vocabN1_Adjectives = [
       "level": "n1",
       "tags": [
         "politik-masyarakat"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ゴウマン￣"}
+},
     {
       "jp": "公務員には<b>清廉な</b>姿勢が求められる。",
       "id": "Para pegawai negeri dituntut untuk memiliki sikap yang bersih dari korupsi.",
@@ -477,8 +484,9 @@ window.vocabN1_Adjectives = [
       "level": "n1",
       "tags": [
         "hukum-aturan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"シイテキ￣"}
+},
     {
       "jp": "法律の<b>恣意的な</b>解釈は法の支配を損なう。",
       "id": "Penafsiran undang-undang yang sewenang-wenang merusak supremasi hukum.",
@@ -527,8 +535,9 @@ window.vocabN1_Adjectives = [
       "level": "n1",
       "tags": [
         "karakter"
-      ]
-    },
+      ],
+  "pitch": {"pattern":4,"category":"nakadaka","mora_count":5,"downstep_mora":4,"contour":"ユルギナ＼イ"}
+},
     {
       "jp": "両国の間には<b>揺るぎない</b>信頼関係が築かれている。",
       "id": "Hubungan kepercayaan yang tidak tergoyahkan telah dibangun antara kedua negara.",
@@ -602,8 +611,9 @@ window.vocabN1_Adjectives = [
       "tags": [
         "ilmu-pengetahuan",
         "pekerjaan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":4,"category":"nakadaka","mora_count":5,"downstep_mora":4,"contour":"ユルギナ＼イ"}
+},
     {
       "jp": "<b>綿密に</b>計画を立てたにもかかわらず、予期せぬ問題が生じた。",
       "id": "Meskipun sudah merencanakan dengan sangat cermat, masalah tak terduga tetap muncul.",
@@ -662,8 +672,9 @@ window.vocabN1_Adjectives = [
       "tags": [
         "pekerjaan",
         "bisnis"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"シュウトウ￣"}
+},
     {
       "jp": "犯人は<b>周到に</b>計画を練り、証拠を残さなかった。",
       "id": "Pelaku merencanakan semuanya dengan sangat matang sehingga tidak meninggalkan bukti.",
@@ -720,8 +731,9 @@ window.vocabN1_Adjectives = [
       "level": "n1",
       "tags": [
         "seni-budaya"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"セ＼イチ"}
+},
     {
       "jp": "その理論は<b>精緻な</b>論理構造を持っている。",
       "id": "Teori tersebut memiliki struktur logika yang sangat terperinci dan presisi.",
@@ -780,8 +792,9 @@ window.vocabN1_Adjectives = [
       "tags": [
         "karakter",
         "emosi-positif"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"スウコウ￣"}
+},
     {
       "jp": "芸術は<b>崇高な</b>美を追求するものだという信念がある。",
       "id": "Ada keyakinan bahwa seni adalah upaya mengejar keindahan yang agung.",
@@ -851,8 +864,9 @@ window.vocabN1_Adjectives = [
       "tags": [
         "karakter",
         "emosi-negatif"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ヒレツ￣"}
+},
     {
       "jp": "そんな<b>卑劣な</b>手段を使うとは、信じられない。",
       "id": "Tidak bisa dipercaya bahwa dia menggunakan cara yang begitu hina.",
@@ -923,8 +937,9 @@ window.vocabN1_Adjectives = [
       "tags": [
         "hiburan",
         "seni-budaya"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ヒレツ￣"}
+},
     {
       "jp": "<b>陳腐な</b>表現を避け、もっと独自の言葉を選ぶべきだ。",
       "id": "Sebaiknya hindari ungkapan klise dan pilih kata-kata yang lebih orisinal.",
@@ -980,8 +995,9 @@ window.vocabN1_Adjectives = [
       "tags": [
         "seni-budaya",
         "karakter"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":2,"downstep_mora":1,"contour":"ケ＼ウ"}
+},
     {
       "jp": "これほどの大雪は<b>稀有な</b>気象現象だ。",
       "id": "Salju lebat sebesar ini adalah fenomena cuaca yang sangat jarang terjadi.",
@@ -1046,8 +1062,9 @@ window.vocabN1_Adjectives = [
       "tags": [
         "pikiran-opini",
         "sastra"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":2,"downstep_mora":1,"contour":"ケ＼ウ"}
+},
     {
       "jp": "<b>皮相的な</b>理解では、この問題の複雑さを見誤る。",
       "id": "Dengan pemahaman yang hanya di permukaan, kita akan salah memahami kompleksitas masalah ini.",
@@ -1084,8 +1101,6 @@ window.vocabN1_Adjectives = [
   ]
 },
 
-// ── Staged Expansion (277) ──
-
 {
   "id": "vg-n1-00230",
   "word": "あくどい",
@@ -1112,7 +1127,7 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "かなりあくどい事をしてきたそうだな。",
-      "id": "I hear you've done some pretty extreme stuff.",
+      "id": "Saya dengar Anda telah melakukan beberapa hal yang cukup ekstrem.",
       "level": "n1",
       "tags": [
         "umum"
@@ -1166,8 +1181,9 @@ window.vocabN1_Adjectives = [
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":4,"category":"nakadaka","mora_count":5,"downstep_mora":4,"contour":"アサマシ＼イ"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -1204,15 +1220,16 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "月は鮮やかに輝いていた。",
-      "id": "The moon was shining brightly.",
+      "id": "Bulan bersinar terang.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":4,"downstep_mora":2,"contour":"アザ＼ヤカ"}
+},
     {
       "jp": "庭は花で色鮮やかである。",
-      "id": "The garden is bright with flowers.",
+      "id": "Tamannya cerah dengan bunga-bunga.",
       "level": "n1",
       "tags": [
         "umum"
@@ -1233,7 +1250,7 @@ window.vocabN1_Adjectives = [
   "word": "呆気ない",
   "reading": "あっけない",
   "romaji": "akkenai",
-  "meaning_id": "not enough; too quick (short, long, etc.)",
+  "meaning_id": "tidak cukup; terlalu cepat (pendek, panjang, dll.)",
   "meaning_en": "not enough; too quick (short, long, etc.)",
   "jlpt": "n1",
   "pos": "i-adj",
@@ -1254,15 +1271,16 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "休暇はいつもあっけなく終わる。",
-      "id": "The holidays always end all too soon.",
+      "id": "Liburan selalu berakhir terlalu cepat.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":4,"category":"nakadaka","mora_count":5,"downstep_mora":4,"contour":"アッケナ＼イ"}
+},
     {
       "jp": "彼はあっけなく負けてしまった。",
-      "id": "He was beaten too easily.",
+      "id": "Dia dikalahkan terlalu mudah.",
       "level": "n1",
       "tags": [
         "umum"
@@ -1304,12 +1322,13 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "あなたはシャツをあべこべに着ている。",
-      "id": "You are wearing your shirt inside out.",
+      "id": "Anda mengenakan baju Anda luar dalam.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":0,"downstep_mora":0,"contour":"￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -1346,15 +1365,16 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "そんな甘口には乗らないよ。",
-      "id": "That sort of flattery will get you nowhere.",
+      "id": "Sanjungan semacam itu tidak akan membawa Anda kemana-mana.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"アマクチ￣"}
+},
     {
       "jp": "「ドイツワインは甘口が多く料理に合わない」というイメージが広まっている。",
-      "id": "The impression that many German wines are sweet, and don't go well with food, is widespread.",
+      "id": "Kesan bahwa banyak wine Jerman rasanya manis dan tidak cocok dengan makanan tersebar luas.",
       "level": "n1",
       "tags": [
         "umum"
@@ -1396,12 +1416,13 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "あやふやな手つきで一枚の紙を動かした。",
-      "id": "She fumbled with a piece of paper.",
+      "id": "Dia meraba-raba selembar kertas.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":0,"downstep_mora":0,"contour":"￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -1417,7 +1438,7 @@ window.vocabN1_Adjectives = [
   "word": "荒っぽい",
   "reading": "あらっぽい",
   "romaji": "arappoi",
-  "meaning_id": "rough; rude",
+  "meaning_id": "kasar",
   "meaning_en": "rough; rude",
   "jlpt": "n1",
   "pos": "i-adj",
@@ -1438,12 +1459,13 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "ボクシングは必ずしも荒っぽいスポーツではない。",
-      "id": "Boxing is not always a rough sport.",
+      "id": "Tinju tidak selalu merupakan olahraga yang kasar.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":4,"category":"nakadaka","mora_count":5,"downstep_mora":4,"contour":"アラッポ＼イ"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -1459,7 +1481,7 @@ window.vocabN1_Adjectives = [
   "word": "安静",
   "reading": "あんせい",
   "romaji": "ansei",
-  "meaning_id": "rest",
+  "meaning_id": "istirahat",
   "meaning_en": "rest",
   "jlpt": "n1",
   "pos": "na-adj",
@@ -1480,15 +1502,16 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "しばらく安静にしておきなさい。",
-      "id": "Keep quiet in bed for a while.",
+      "id": "Diam di tempat tidur untuk sementara waktu.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"アンセイ￣"}
+},
     {
       "jp": "安静にして寝ていてください。",
-      "id": "You should stay in bed.",
+      "id": "Anda harus tetap di tempat tidur.",
       "level": "n1",
       "tags": [
         "umum"
@@ -1530,15 +1553,16 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "この静かな生活にはいい加減飽きてしまった。",
-      "id": "I'm about tired of this quiet life.",
+      "id": "Aku sudah bosan dengan kehidupan yang tenang ini.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":5,"downstep_mora":0,"contour":"イイカゲン￣"}
+},
     {
       "jp": "いいかげんに仕事をするな。",
-      "id": "Don't do the job just any old way.",
+      "id": "Jangan melakukan pekerjaan dengan cara lama.",
       "level": "n1",
       "tags": [
         "umum"
@@ -1580,12 +1604,13 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "今日の格好はとっても粋ですね。",
-      "id": "You're looking snappy today.",
+      "id": "Kamu tampak tajam hari ini.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":2,"downstep_mora":0,"contour":"イキ￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -1622,15 +1647,16 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "彼は自転車を一定の速度で走らせた。",
-      "id": "He rode his bicycle at a uniform speed.",
+      "id": "Dia mengendarai sepedanya dengan kecepatan seragam.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"イチジョウ￣"}
+},
     {
       "jp": "その本の返却には一定の期限がある。",
-      "id": "Ada a definite time to return the book.",
+      "id": "Ada waktu pasti untuk mengembalikan buku tersebut.",
       "level": "n1",
       "tags": [
         "umum"
@@ -1651,7 +1677,7 @@ window.vocabN1_Adjectives = [
   "word": "著しい",
   "reading": "いちじるしい",
   "romaji": "ichijirushii",
-  "meaning_id": "remarkable; considerable",
+  "meaning_id": "luar biasa; cukup besar",
   "meaning_en": "remarkable; considerable",
   "jlpt": "n1",
   "pos": "i-adj",
@@ -1672,15 +1698,16 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "科学は著しく進歩した。",
-      "id": "Science has made remarkable progress.",
+      "id": "Ilmu pengetahuan telah mencapai kemajuan yang luar biasa.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":5,"category":"nakadaka","mora_count":6,"downstep_mora":5,"contour":"イチジルシ＼イ"}
+},
     {
       "jp": "両者の間には著しい違いがある。",
-      "id": "Ada noticeable differences between the two.",
+      "id": "Ada perbedaan mencolok di antara keduanya.",
       "level": "n1",
       "tags": [
         "umum"
@@ -1726,8 +1753,9 @@ window.vocabN1_Adjectives = [
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"イチヨウ￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -1768,8 +1796,9 @@ window.vocabN1_Adjectives = [
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"イチリツ￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -1810,11 +1839,12 @@ window.vocabN1_Adjectives = [
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"イヤシ＼イ"}
+},
     {
       "jp": "彼は卑しい振舞いをした。",
-      "id": "He behaved in a cheap manner.",
+      "id": "Dia berperilaku murahan.",
       "level": "n1",
       "tags": [
         "umum"
@@ -1835,7 +1865,7 @@ window.vocabN1_Adjectives = [
   "word": "嫌らしい",
   "reading": "いやらしい",
   "romaji": "iyarashii",
-  "meaning_id": "detestable; disagreeable",
+  "meaning_id": "menjijikkan; tidak menyenangkan",
   "meaning_en": "detestable; disagreeable",
   "jlpt": "n1",
   "pos": "i-adj",
@@ -1856,15 +1886,16 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "彼女の厚化粧が嫌らしい。",
-      "id": "Her thick makeup is disgusting.",
+      "id": "Riasannya yang tebal menjijikkan.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":4,"category":"nakadaka","mora_count":5,"downstep_mora":4,"contour":"イヤラシ＼イ"}
+},
     {
       "jp": "なんていやらしい男でしょう。",
-      "id": "What a nasty man he is!",
+      "id": "Dia pria yang sangat jahat!",
       "level": "n1",
       "tags": [
         "umum"
@@ -1885,7 +1916,7 @@ window.vocabN1_Adjectives = [
   "word": "陰気",
   "reading": "いんき",
   "romaji": "inki",
-  "meaning_id": "gloom; melancholy",
+  "meaning_id": "kesuraman; melankolis",
   "meaning_en": "gloom; melancholy",
   "jlpt": "n1",
   "pos": "na-adj",
@@ -1906,12 +1937,13 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "その家は見かけがたいへん陰気だった。",
-      "id": "The house looked very dismal.",
+      "id": "Rumah itu tampak sangat suram.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"イ＼ンキ"}
+},
     {
       "jp": "彼女の目つきは陰気になった。",
       "id": "Her eyes darkened.",
@@ -1935,7 +1967,7 @@ window.vocabN1_Adjectives = [
   "word": "インターナショナル",
   "reading": "インターナショナル",
   "romaji": "intaanashonaru",
-  "meaning_id": "international",
+  "meaning_id": "internasional",
   "meaning_en": "international",
   "jlpt": "n1",
   "pos": "na-adj",
@@ -1960,8 +1992,9 @@ window.vocabN1_Adjectives = [
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":5,"category":"nakadaka","mora_count":0,"downstep_mora":0,"contour":"￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -1977,7 +2010,7 @@ window.vocabN1_Adjectives = [
   "word": "受身",
   "reading": "うけみ",
   "romaji": "ukemi",
-  "meaning_id": "passive; passive voice",
+  "meaning_id": "pasif; suara pasif",
   "meaning_en": "passive; passive voice",
   "jlpt": "n1",
   "pos": "na-adj",
@@ -1998,15 +2031,16 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "公式問題集には\"受け身の現在進行形\"と説明されています。",
-      "id": "In the official question collection it is explained as being \"passive voice of the present continuous tense\".",
+      "id": "Dalam kumpulan pertanyaan resmi dijelaskan sebagai \"suara pasif dari present continuous tense\".",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ウケミ￣"}
+},
     {
       "jp": "テレビは精神を受け身の状態にして置くという点で有害である。",
-      "id": "TV is harmful in that it keeps your mind in a passive state.",
+      "id": "TV berbahaya karena membuat pikiran Anda tetap pasif.",
       "level": "n1",
       "tags": [
         "umum"
@@ -2027,7 +2061,7 @@ window.vocabN1_Adjectives = [
   "word": "鬱陶しい",
   "reading": "うっとうしい",
   "romaji": "uttoushii",
-  "meaning_id": "gloomy; depressing",
+  "meaning_id": "suram; menyedihkan",
   "meaning_en": "gloomy; depressing",
   "jlpt": "n1",
   "pos": "i-adj",
@@ -2048,15 +2082,16 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "毎日うっとうしくていやですね。",
-      "id": "Don't you just hate this weather?",
+      "id": "Bukankah kamu benci cuaca seperti ini?",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":5,"category":"nakadaka","mora_count":6,"downstep_mora":5,"contour":"ウットウシ＼イ"}
+},
     {
       "jp": "ベタベタするんじゃねえよっ！鬱陶しい！",
-      "id": "Get off me you little pest!",
+      "id": "Lepaskan aku, hama kecil!",
       "level": "n1",
       "tags": [
         "umum"
@@ -2098,12 +2133,13 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "洞窟からうつろに反響する音を耳にした。",
-      "id": "We heard somber hollow sounds from the cave.",
+      "id": "Kami mendengar suara-suara hampa yang suram dari dalam gua.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ウツロ￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -2140,12 +2176,13 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "あの子はなんてうるさい子だろう。",
-      "id": "What a nuisance that child is!",
+      "id": "Sungguh merepotkan anak itu!",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"ウルサ＼イ"}
+},
     {
       "jp": "彼女は服装にうるさい。",
       "id": "Dia particular about what she wears.",
@@ -2169,7 +2206,7 @@ window.vocabN1_Adjectives = [
   "word": "エレガント",
   "reading": "エレガント",
   "romaji": "ereganto",
-  "meaning_id": "elegant",
+  "meaning_id": "elegan",
   "meaning_en": "elegant",
   "jlpt": "n1",
   "pos": "na-adj",
@@ -2190,12 +2227,13 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "なんてエレガントなヨットなんでしょう！",
-      "id": "What an elegant yacht!",
+      "id": "Kapal pesiar yang elegan!",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":0,"downstep_mora":1,"contour":"＼"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -2236,8 +2274,9 @@ window.vocabN1_Adjectives = [
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":2,"downstep_mora":1,"contour":"エ＼ン"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -2253,7 +2292,7 @@ window.vocabN1_Adjectives = [
   "word": "円滑",
   "reading": "えんかつ",
   "romaji": "enkatsu",
-  "meaning_id": "harmony; smoothness",
+  "meaning_id": "harmoni; kelancaran",
   "meaning_en": "harmony; smoothness",
   "jlpt": "n1",
   "pos": "na-adj",
@@ -2274,12 +2313,13 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "彼は、中国語をしっていたので、私たちは計画を円滑に実行できた。",
-      "id": "His knowledge of Chinese enabled us to carry out our plan smoothly.",
+      "id": "Pengetahuannya tentang bahasa Mandarin memungkinkan kami melaksanakan rencana kami dengan lancar.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"エンカツ￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -2320,8 +2360,9 @@ window.vocabN1_Adjectives = [
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"エンキョク￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -2358,15 +2399,16 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "争議は円満に解決した。",
-      "id": "The dispute was settled peacefully.",
+      "id": "Perselisihan tersebut diselesaikan secara damai.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"エンマン￣"}
+},
     {
       "jp": "家庭は円満だ。",
-      "id": "I have peace at home.",
+      "id": "Saya memiliki kedamaian di rumah.",
       "level": "n1",
       "tags": [
         "umum"
@@ -2387,7 +2429,7 @@ window.vocabN1_Adjectives = [
   "word": "大柄",
   "reading": "おおがら",
   "romaji": "oogara",
-  "meaning_id": "large build; large pattern",
+  "meaning_id": "bangunan besar; pola besar",
   "meaning_en": "large build; large pattern",
   "jlpt": "n1",
   "pos": "na-adj",
@@ -2408,15 +2450,16 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "彼は肥満とはいえないが、大柄の人だった。",
-      "id": "He was well built, if not fat as such.",
+      "id": "Dia berbadan tegap, jika tidak gemuk.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"オオガラ￣"}
+},
     {
       "jp": "ある研究によれば、大柄な女性は双子を生む傾向がより強い。",
-      "id": "According to a study, big women are more prone to have twins.",
+      "id": "Menurut sebuah penelitian, wanita bertubuh besar lebih rentan memiliki anak kembar.",
       "level": "n1",
       "tags": [
         "umum"
@@ -2437,7 +2480,7 @@ window.vocabN1_Adjectives = [
   "word": "大げさ",
   "reading": "おおげさ",
   "romaji": "oogesa",
-  "meaning_id": "grandiose; exaggerated",
+  "meaning_id": "muluk; berlebihan",
   "meaning_en": "grandiose; exaggerated",
   "jlpt": "n1",
   "pos": "na-adj",
@@ -2458,15 +2501,16 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "漁師は釣り上げた魚の大きさをおおげさにいった。",
-      "id": "The fisherman exaggerated the size of the fish he had caught.",
+      "id": "Nelayan itu melebih-lebihkan ukuran ikan yang ditangkapnya.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"オオゲサ￣"}
+},
     {
       "jp": "彼は何でも大げさに言う傾向がある。",
-      "id": "He has a tendency toward exaggeration.",
+      "id": "Dia mempunyai kecenderungan untuk melebih-lebihkan.",
       "level": "n1",
       "tags": [
         "umum"
@@ -2487,7 +2531,7 @@ window.vocabN1_Adjectives = [
   "word": "オートマチック",
   "reading": "オートマチック",
   "romaji": "ootomachikku",
-  "meaning_id": "automatic",
+  "meaning_id": "otomatis",
   "meaning_en": "automatic",
   "jlpt": "n1",
   "pos": "na-adj",
@@ -2512,8 +2556,9 @@ window.vocabN1_Adjectives = [
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":5,"category":"nakadaka","mora_count":0,"downstep_mora":0,"contour":"￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -2550,15 +2595,16 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "この政策で物価は大幅に値上がりした。",
-      "id": "This policy resulted in a great rise in prices.",
+      "id": "Kebijakan ini mengakibatkan kenaikan harga yang besar.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"オオハバ￣"}
+},
     {
       "jp": "この政策の結果、物価が大幅に上昇した。",
-      "id": "Prices rose drastically as a result of this policy.",
+      "id": "Harga naik drastis akibat kebijakan ini.",
       "level": "n1",
       "tags": [
         "umum"
@@ -2579,7 +2625,7 @@ window.vocabN1_Adjectives = [
   "word": "オープン",
   "reading": "オープン",
   "romaji": "oopun",
-  "meaning_id": "open",
+  "meaning_id": "terbuka",
   "meaning_en": "open",
   "jlpt": "n1",
   "pos": "na-adj",
@@ -2600,15 +2646,16 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "新しいショッピングモールが街のはずれにオープンした。",
-      "id": "A new shopping mall opened on the edge of town.",
+      "id": "Sebuah pusat perbelanjaan baru dibuka di pinggir kota.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":0,"downstep_mora":1,"contour":"＼"}
+},
     {
       "jp": "オープン戦が終わり、いよいよ開幕だ。",
-      "id": "The exhibition games are over and the regular season finally begins.",
+      "id": "Pertandingan eksibisi telah usai dan musim reguler akhirnya dimulai.",
       "level": "n1",
       "tags": [
         "umum"
@@ -2629,7 +2676,7 @@ window.vocabN1_Adjectives = [
   "word": "臆病",
   "reading": "おくびょう",
   "romaji": "okubyou",
-  "meaning_id": "cowardice; timidity",
+  "meaning_id": "pengecut; sifat takut-takut",
   "meaning_en": "cowardice; timidity",
   "jlpt": "n1",
   "pos": "na-adj",
@@ -2650,12 +2697,13 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "彼がああ臆病だとは思わなかった。",
-      "id": "I did not think he was so timid.",
+      "id": "Saya tidak berpikir dia begitu penakut.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"オクビョ＼ウ"}
+},
     {
       "jp": "彼は臆病というより内気だ。",
       "id": "Dia more shy than timid.",
@@ -2700,12 +2748,13 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "彼は群衆に向かって厳かに語りかけた。",
-      "id": "He addressed the crowd gravely.",
+      "id": "Dia berbicara kepada orang banyak dengan serius.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":4,"downstep_mora":2,"contour":"オゴ＼ソカ"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -2742,15 +2791,16 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "甲の損は乙の得。",
-      "id": "One man's gain is another man's loss.",
+      "id": "Keuntungan satu orang adalah kerugian orang lain.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":2,"downstep_mora":1,"contour":"オ＼ツ"}
+},
     {
       "jp": "甲の食物は乙の毒。",
-      "id": "One man's meat is another man's poison.",
+      "id": "Daging seseorang adalah racun bagi orang lain.",
       "level": "n1",
       "tags": [
         "umum"
@@ -2771,7 +2821,7 @@ window.vocabN1_Adjectives = [
   "word": "おっかない",
   "reading": "おっかない",
   "romaji": "okkanai",
-  "meaning_id": "frightening; huge",
+  "meaning_id": "menakutkan; sangat besar",
   "meaning_en": "frightening; huge",
   "jlpt": "n1",
   "pos": "i-adj",
@@ -2792,15 +2842,16 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "それを飲むのはおっかないな。",
-      "id": "I'm afraid to drink it.",
+      "id": "Aku takut meminumnya.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":4,"category":"nakadaka","mora_count":0,"downstep_mora":0,"contour":"￣"}
+},
     {
       "jp": "今日、トムはおっかない顔をした人を見ました。",
-      "id": "Tom saw a person with a scary looking face today.",
+      "id": "Tom melihat seseorang dengan wajah menakutkan hari ini.",
       "level": "n1",
       "tags": [
         "umum"
@@ -2821,7 +2872,7 @@ window.vocabN1_Adjectives = [
   "word": "夥しい",
   "reading": "おびただしい",
   "romaji": "obitadashii",
-  "meaning_id": "abundantly; innumerably",
+  "meaning_id": "berlimpah; tak terhitung banyaknya",
   "meaning_en": "abundantly; innumerably",
   "jlpt": "n1",
   "pos": "i-adj",
@@ -2842,15 +2893,16 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "子供に少し愛情を注いで見給え、すると君におびただしい愛情が戻ってくる。",
-      "id": "Give a little love to a child, and you get a great deal back.",
+      "id": "Berikan sedikit cinta kepada seorang anak, dan Anda akan mendapatkan balasan yang besar.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":5,"category":"nakadaka","mora_count":6,"downstep_mora":5,"contour":"オビタダシ＼イ"}
+},
     {
       "jp": "おびただしい数の人々が集まってきていた。",
-      "id": "People were gathering in a huge mass.",
+      "id": "Orang-orang berkumpul dalam jumlah besar.",
       "level": "n1",
       "tags": [
         "umum"
@@ -2871,7 +2923,7 @@ window.vocabN1_Adjectives = [
   "word": "愚か",
   "reading": "おろか",
   "romaji": "oroka",
-  "meaning_id": "foolish; stupid",
+  "meaning_id": "bodoh",
   "meaning_en": "foolish; stupid",
   "jlpt": "n1",
   "pos": "na-adj",
@@ -2892,15 +2944,16 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "そんな愚かなことを言うな。",
-      "id": "Do not say such foolish things.",
+      "id": "Jangan mengatakan hal bodoh seperti itu.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"オ＼ロカ"}
+},
     {
       "jp": "彼は愚かにもその計画に同意した。",
-      "id": "He was foolish to agree to the plan.",
+      "id": "Dia bodoh untuk menyetujui rencana itu.",
       "level": "n1",
       "tags": [
         "umum"
@@ -2942,12 +2995,13 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "学業をおろそかにするなんて、君はばかだ。",
-      "id": "It is silly of you to neglect your studies.",
+      "id": "Sungguh konyol jika Anda mengabaikan studi Anda.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":4,"downstep_mora":2,"contour":"オロ＼ソカ"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -2984,15 +3038,16 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "その国は気候が温和だ。",
-      "id": "That country has a mild climate.",
+      "id": "Negara itu memiliki iklim sedang.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"オンワ￣"}
+},
     {
       "jp": "概して言えば、当地の気候は温和です。",
-      "id": "Generally speaking, the climate here is mild.",
+      "id": "Secara umum, iklim di sini sedang.",
       "level": "n1",
       "tags": [
         "umum"
@@ -3038,8 +3093,9 @@ window.vocabN1_Adjectives = [
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":2,"downstep_mora":1,"contour":"カ＼シャ"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -3080,11 +3136,12 @@ window.vocabN1_Adjectives = [
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"カ＼スカ"}
+},
     {
       "jp": "すぐそばでかすかな音がした。",
-      "id": "I heard a faint sound nearby.",
+      "id": "Saya mendengar suara samar di dekatnya.",
       "level": "n1",
       "tags": [
         "umum"
@@ -3105,7 +3162,7 @@ window.vocabN1_Adjectives = [
   "word": "過多",
   "reading": "かた",
   "romaji": "kata",
-  "meaning_id": "excess; superabundance",
+  "meaning_id": "kelebihan; kelimpahan yang berlebihan",
   "meaning_en": "excess; superabundance",
   "jlpt": "n1",
   "pos": "na-adj",
@@ -3130,8 +3187,9 @@ window.vocabN1_Adjectives = [
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":2,"downstep_mora":1,"contour":"カ＼タ"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -3172,8 +3230,9 @@ window.vocabN1_Adjectives = [
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"カタイ￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -3189,7 +3248,7 @@ window.vocabN1_Adjectives = [
   "word": "活発",
   "reading": "かっぱつ",
   "romaji": "kappatsu",
-  "meaning_id": "vigor; active",
+  "meaning_id": "kekuatan; aktif",
   "meaning_en": "vigor; active",
   "jlpt": "n1",
   "pos": "na-adj",
@@ -3210,15 +3269,16 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "私たちはとても活発な討論をした。",
-      "id": "We had a very vigorous debate.",
+      "id": "Kami berdebat dengan sangat sengit.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"カッパツ￣"}
+},
     {
       "jp": "売れ行きはものすごく活発だ。",
-      "id": "Sales are amazingly brisk.",
+      "id": "Penjualan luar biasa cepat.",
       "level": "n1",
       "tags": [
         "umum"
@@ -3260,12 +3320,13 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "結婚の後、アランは黴だらけの小さいアパートを出て、生活が華美に流れた。",
-      "id": "After his wedding, Alain left his small, moldy apartment and led an extravagant life.",
+      "id": "Setelah pernikahannya, Alain meninggalkan apartemennya yang kecil dan berjamur dan menjalani kehidupan mewah.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":2,"downstep_mora":1,"contour":"カ＼ビ"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -3281,7 +3342,7 @@ window.vocabN1_Adjectives = [
   "word": "過密",
   "reading": "かみつ",
   "romaji": "kamitsu",
-  "meaning_id": "crowded",
+  "meaning_id": "penuh sesak",
   "meaning_en": "crowded",
   "jlpt": "n1",
   "pos": "na-adj",
@@ -3302,12 +3363,13 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "彼は過密スケジュールを都合して、私の舞台を見に来てくれた。",
-      "id": "He organized his overcrowded schedule and managed to come to see my performance.",
+      "id": "Dia mengatur jadwalnya yang padat dan berhasil datang melihat penampilanku.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"カミツ￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -3344,15 +3406,16 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "簡易ベッドの組み立て方を教えてもらえますか。",
-      "id": "Will you show me how to set up a cot?",
+      "id": "Maukah Anda menunjukkan cara menyiapkan tempat tidur bayi?",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"カ＼ンイ"}
+},
     {
       "jp": "簡易ベッドで寝てるんだ。",
-      "id": "I sleep on a cot.",
+      "id": "Saya tidur di dipan.",
       "level": "n1",
       "tags": [
         "umum"
@@ -3394,12 +3457,13 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "簡潔は機知の精髄。",
-      "id": "Brevity is the soul of wit.",
+      "id": "Ringkasnya adalah jiwa kecerdasan.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"カンケツ￣"}
+},
     {
       "jp": "それを簡潔にしましょう。",
       "id": "Let's make it brief.",
@@ -3423,7 +3487,7 @@ window.vocabN1_Adjectives = [
   "word": "頑固",
   "reading": "がんこ",
   "romaji": "ganko",
-  "meaning_id": "stubbornness; obstinacy",
+  "meaning_id": "keras kepala",
   "meaning_en": "stubbornness; obstinacy",
   "jlpt": "n1",
   "pos": "na-adj",
@@ -3448,11 +3512,12 @@ window.vocabN1_Adjectives = [
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"ガ＼ンコ"}
+},
     {
       "jp": "頑固になればなるほど独立するよ。",
-      "id": "The more stubborn you are, the more isolated you become.",
+      "id": "Semakin keras kepala Anda, semakin Anda terisolasi.",
       "level": "n1",
       "tags": [
         "umum"
@@ -3498,11 +3563,12 @@ window.vocabN1_Adjectives = [
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ガンジョウ￣"}
+},
     {
       "jp": "その納屋は小さかったが頑丈だった。",
-      "id": "The barn was small, but it was strong.",
+      "id": "Gudangnya kecil, tapi kuat.",
       "level": "n1",
       "tags": [
         "umum"
@@ -3544,15 +3610,16 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "なんであれ物事の本体を捕らえる事が肝心だ。",
-      "id": "No matter what the problem is, it's essential to get at the heart of the matter.",
+      "id": "Apa pun masalahnya, penting untuk memahami inti permasalahannya.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"カンジン￣"}
+},
     {
       "jp": "何事も最初が肝心だよな。",
-      "id": "Whatever you're doing, starting off on the right foot is essential.",
+      "id": "Apa pun yang Anda lakukan, memulai dengan langkah yang benar sangatlah penting.",
       "level": "n1",
       "tags": [
         "umum"
@@ -3573,7 +3640,7 @@ window.vocabN1_Adjectives = [
   "word": "簡素",
   "reading": "かんそ",
   "romaji": "kanso",
-  "meaning_id": "simplicity; plain",
+  "meaning_id": "kesederhanaan; polos",
   "meaning_en": "simplicity; plain",
   "jlpt": "n1",
   "pos": "na-adj",
@@ -3594,15 +3661,16 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "芝刈り機が簡素な作りの荷車に積んである。",
-      "id": "Some lawn equipment is loaded into the jerry-built cart.",
+      "id": "Beberapa peralatan rumput dimasukkan ke dalam gerobak yang terbuat dari jerigen.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"カ＼ンソ"}
+},
     {
       "jp": "その式典は簡素だった。",
-      "id": "The ceremony was simple.",
+      "id": "Upacaranya sederhana.",
       "level": "n1",
       "tags": [
         "umum"
@@ -3644,15 +3712,16 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "君は完璧な仕事をしてくれた。",
-      "id": "You've done a perfect job.",
+      "id": "Anda telah melakukan pekerjaan dengan sempurna.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"カンペキ￣"}
+},
     {
       "jp": "この英作文は決して完璧ではない。",
-      "id": "This English composition is far from perfect.",
+      "id": "Komposisi bahasa Inggris ini jauh dari sempurna.",
       "level": "n1",
       "tags": [
         "umum"
@@ -3698,8 +3767,9 @@ window.vocabN1_Adjectives = [
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":5,"downstep_mora":1,"contour":"カ＼ンムリョウ"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -3736,15 +3806,16 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "私たちの惑星は飛ぶ鳥の気軽さで宇宙を動いている。",
-      "id": "Our planet moves in space with the lightness of a bird in flight.",
+      "id": "Planet kita bergerak di luar angkasa dengan ringannya seekor burung yang sedang terbang.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"キガル￣"}
+},
     {
       "jp": "気軽にして下さい。",
-      "id": "Tolong make yourself at home.",
+      "id": "Tolong jadikan dirimu seperti di rumah sendiri.",
       "level": "n1",
       "tags": [
         "umum"
@@ -3786,15 +3857,16 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "彼らは彼のきざな話し方を笑った。",
-      "id": "They laughed at the affectations in his speech.",
+      "id": "Mereka menertawakan kepura-puraan dalam pidatonya.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":2,"downstep_mora":1,"contour":"キ＼ザ"}
+},
     {
       "jp": "彼のきざな態度は頭にくる。",
-      "id": "His affectations are annoying.",
+      "id": "Kepura-puraannya menjengkelkan.",
       "level": "n1",
       "tags": [
         "umum"
@@ -3840,8 +3912,9 @@ window.vocabN1_Adjectives = [
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":4,"category":"nakadaka","mora_count":5,"downstep_mora":4,"contour":"キチョウメ＼ン"}
+},
     {
       "jp": "彼女は仕事が非常にきちょうめんだ。",
       "id": "Dia very exact in her job.",
@@ -3890,8 +3963,9 @@ window.vocabN1_Adjectives = [
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":4,"downstep_mora":2,"contour":"キマ＼ジメ"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -3907,7 +3981,7 @@ window.vocabN1_Adjectives = [
   "word": "決まり悪い",
   "reading": "きまりわるい",
   "romaji": "kimariwarui",
-  "meaning_id": "feeling awkward; being ashamed",
+  "meaning_id": "merasa canggung; merasa malu",
   "meaning_en": "feeling awkward; being ashamed",
   "jlpt": "n1",
   "pos": "i-adj",
@@ -3928,12 +4002,13 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "私は誤りを指摘されて決まり悪い思いをした。",
-      "id": "I was abashed when my mistakes were pointed out.",
+      "id": "Saya malu ketika kesalahan saya ditunjukkan.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":5,"category":"nakadaka","mora_count":6,"downstep_mora":5,"contour":"キマリワル＼イ"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -3974,11 +4049,12 @@ window.vocabN1_Adjectives = [
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":4,"downstep_mora":1,"contour":"キュ＼ウクツ"}
+},
     {
       "jp": "非の打ち所がない計画は、窮屈だなあ。",
-      "id": "A faultless plan is stifling, isn't it?",
+      "id": "Rencana yang tidak sempurna akan terasa menyesakkan, bukan?",
       "level": "n1",
       "tags": [
         "umum"
@@ -4020,15 +4096,16 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "大統領は強硬路線をとった。",
-      "id": "The President took a hard line.",
+      "id": "Presiden mengambil tindakan keras.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"キョウコウ￣"}
+},
     {
       "jp": "非行者に対して強硬な対策を講じるべきだ。",
-      "id": "Strong measures should be taken against wrong doers.",
+      "id": "Tindakan tegas harus diambil terhadap pelaku kesalahan.",
       "level": "n1",
       "tags": [
         "umum"
@@ -4070,15 +4147,16 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "彼の返報は鼻への強烈なパンチだった。",
-      "id": "His answer was a hard punch on the nose.",
+      "id": "Jawabannya adalah pukulan keras di hidung.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"キョウレツ￣"}
+},
     {
       "jp": "その薬の効果は強烈だが短い。",
-      "id": "The effects of the drug are intense but brief.",
+      "id": "Efek obat ini sangat kuat namun singkat.",
       "level": "n1",
       "tags": [
         "umum"
@@ -4099,7 +4177,7 @@ window.vocabN1_Adjectives = [
   "word": "極端",
   "reading": "きょくたん",
   "romaji": "kyokutan",
-  "meaning_id": "extreme; extremity",
+  "meaning_id": "ekstrim; ekstremitas",
   "meaning_en": "extreme; extremity",
   "jlpt": "n1",
   "pos": "na-adj",
@@ -4120,15 +4198,16 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "君の言うことは極端じゃないか。",
-      "id": "Aren't you pushing it too far?",
+      "id": "Apakah kamu tidak mendorongnya terlalu jauh?",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"キョクタ＼ン"}
+},
     {
       "jp": "それはちょっと極端じゃないですか。",
-      "id": "You're carrying this too far.",
+      "id": "Anda membawa ini terlalu jauh.",
       "level": "n1",
       "tags": [
         "umum"
@@ -4174,8 +4253,9 @@ window.vocabN1_Adjectives = [
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":4,"downstep_mora":2,"contour":"キヨ＼ラカ"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -4191,7 +4271,7 @@ window.vocabN1_Adjectives = [
   "word": "気楽",
   "reading": "きらく",
   "romaji": "kiraku",
-  "meaning_id": "at ease; comfortable",
+  "meaning_id": "nyaman",
   "meaning_en": "at ease; comfortable",
   "jlpt": "n1",
   "pos": "na-adj",
@@ -4212,15 +4292,16 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "ほんの気楽なパーティーだった。",
-      "id": "It was only an informal party.",
+      "id": "Itu hanya pesta informal.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"キラク￣"}
+},
     {
       "jp": "彼女は今は気楽に暮らしている。",
-      "id": "She lives in comfort now.",
+      "id": "Dia hidup dengan nyaman sekarang.",
       "level": "n1",
       "tags": [
         "umum"
@@ -4262,15 +4343,16 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "きらびやかでいて重厚な宮殿を前に言葉も出ない。",
-      "id": "I'm speechless before such a beautiful and stately palace.",
+      "id": "Aku terdiam di hadapan istana yang begitu indah dan megah.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":5,"downstep_mora":3,"contour":"キラビ＼ヤカ"}
+},
     {
       "jp": "思い出のつまったお店がきらびやかにリニューアルしてうれしいような悲しいような。",
-      "id": "I have mixed feelings about the sumptuous renovations at the store where I have so many memories.",
+      "id": "Saya memiliki perasaan campur aduk tentang renovasi mewah di toko tempat saya memiliki begitu banyak kenangan.",
       "level": "n1",
       "tags": [
         "umum"
@@ -4312,12 +4394,13 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "十人に一人は近眼である。",
-      "id": "One out of ten persons is nearsighted.",
+      "id": "Satu dari sepuluh orang menderita rabun jauh.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"キンガン￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -4354,15 +4437,16 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "緊急の場合は、１１９番に電話しなさい。",
-      "id": "In case of emergency, call 119.",
+      "id": "Dalam keadaan darurat, hubungi 119.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"キンキュウ￣"}
+},
     {
       "jp": "緊急の場合は警察を呼びなさい。",
-      "id": "In case of an emergency, call the police.",
+      "id": "Dalam keadaan darurat, hubungi polisi.",
       "level": "n1",
       "tags": [
         "umum"
@@ -4383,7 +4467,7 @@ window.vocabN1_Adjectives = [
   "word": "勤勉",
   "reading": "きんべん",
   "romaji": "kinben",
-  "meaning_id": "industry; diligence",
+  "meaning_id": "industri; ketekunan",
   "meaning_en": "industry; diligence",
   "jlpt": "n1",
   "pos": "na-adj",
@@ -4408,8 +4492,9 @@ window.vocabN1_Adjectives = [
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"キンベン￣"}
+},
     {
       "jp": "彼は勤勉でもないし利口でもない。",
       "id": "Dia neither diligent nor clever.",
@@ -4433,7 +4518,7 @@ window.vocabN1_Adjectives = [
   "word": "空腹",
   "reading": "くうふく",
   "romaji": "kuufuku",
-  "meaning_id": "hunger",
+  "meaning_id": "kelaparan",
   "meaning_en": "hunger",
   "jlpt": "n1",
   "pos": "na-adj",
@@ -4454,15 +4539,16 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "その食事で彼は空腹を満たした。",
-      "id": "The meal satisfied his hunger.",
+      "id": "Makanan itu memuaskan rasa laparnya.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"クウフク￣"}
+},
     {
       "jp": "長く歩いてきたので空腹を感じた。",
-      "id": "I felt hungry after the long walk.",
+      "id": "Saya merasa lapar setelah berjalan jauh.",
       "level": "n1",
       "tags": [
         "umum"
@@ -4483,7 +4569,7 @@ window.vocabN1_Adjectives = [
   "word": "くすぐったい",
   "reading": "くすぐったい",
   "romaji": "kusuguttai",
-  "meaning_id": "ticklish",
+  "meaning_id": "geli",
   "meaning_en": "ticklish",
   "jlpt": "n1",
   "pos": "i-adj",
@@ -4504,15 +4590,16 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "やめて。くすぐったい。",
-      "id": "Stop. That tickles.",
+      "id": "Berhenti. Itu menggelitik.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":5,"category":"nakadaka","mora_count":6,"downstep_mora":5,"contour":"クスグッタ＼イ"}
+},
     {
       "jp": "もぅ、止めてよ。くすぐったい！",
-      "id": "Oh stop, that tickles!",
+      "id": "Oh hentikan, itu menggelitik!",
       "level": "n1",
       "tags": [
         "umum"
@@ -4554,12 +4641,13 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "リズムは軽快でテンポは速く、その曲は若者に好まれている。",
-      "id": "The rhythm is light, and the tempo fast - that song is liked by young people.",
+      "id": "Iramanya ringan, dan temponya cepat, lagu itulah yang disukai anak muda.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ケイカイ￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -4596,15 +4684,16 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "あの連中は軽率で、仕事がのろかったから、くびになった。",
-      "id": "They got the sack for being careless and tardy.",
+      "id": "Mereka dipecat karena ceroboh dan terlambat.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ケイソツ￣"}
+},
     {
       "jp": "彼は軽率だという評判だった。",
-      "id": "He had a reputation for carelessness.",
+      "id": "Dia memiliki reputasi sebagai orang yang ceroboh.",
       "level": "n1",
       "tags": [
         "umum"
@@ -4625,7 +4714,7 @@ window.vocabN1_Adjectives = [
   "word": "汚らわしい",
   "reading": "けがらわしい",
   "romaji": "kegarawashii",
-  "meaning_id": "filthy; unfair",
+  "meaning_id": "kotor; tidak adil",
   "meaning_en": "filthy; unfair",
   "jlpt": "n1",
   "pos": "i-adj",
@@ -4650,8 +4739,9 @@ window.vocabN1_Adjectives = [
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":5,"category":"nakadaka","mora_count":6,"downstep_mora":5,"contour":"ケガラワシ＼イ"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -4667,7 +4757,7 @@ window.vocabN1_Adjectives = [
   "word": "煙たい",
   "reading": "けむたい",
   "romaji": "kemutai",
-  "meaning_id": "smoky; feeling awkward",
+  "meaning_id": "berasap; merasa canggung",
   "meaning_en": "smoky; feeling awkward",
   "jlpt": "n1",
   "pos": "i-adj",
@@ -4688,15 +4778,16 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "あの人は煙たい。",
-      "id": "I feel awkward in his presence.",
+      "id": "Aku merasa canggung dengan kehadirannya.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"ケムタ＼イ"}
+},
     {
       "jp": "煙たくて、困っています。",
-      "id": "I can't be around smoke.",
+      "id": "Aku tidak bisa berada di sekitar asap.",
       "level": "n1",
       "tags": [
         "umum"
@@ -4717,7 +4808,7 @@ window.vocabN1_Adjectives = [
   "word": "健在",
   "reading": "けんざい",
   "romaji": "kenzai",
-  "meaning_id": "in good health; well",
+  "meaning_id": "dalam keadaan sehat; baik",
   "meaning_en": "in good health; well",
   "jlpt": "n1",
   "pos": "na-adj",
@@ -4738,15 +4829,16 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "両親ともに健在とは限らない。",
-      "id": "Neither of my parents are alive.",
+      "id": "Tak satu pun dari orang tua saya yang masih hidup.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ケンザイ￣"}
+},
     {
       "jp": "彼女の４人の姉妹のうち１人は他界したが、ほかは健在だ。",
-      "id": "One of her four sisters has passed away, but the others are still with us.",
+      "id": "Salah satu dari empat saudara perempuannya telah meninggal dunia, namun yang lainnya masih bersama kami.",
       "level": "n1",
       "tags": [
         "umum"
@@ -4788,15 +4880,16 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "母子ともに健全です。",
-      "id": "Mother and child are both doing well.",
+      "id": "Ibu dan anak keduanya baik-baik saja.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ケンゼン￣"}
+},
     {
       "jp": "健全な精神は健全な肉体に宿る。",
-      "id": "A sound mind dwells in a sound body.",
+      "id": "Pikiran yang sehat bersemayam di dalam tubuh yang sehat.",
       "level": "n1",
       "tags": [
         "umum"
@@ -4817,7 +4910,7 @@ window.vocabN1_Adjectives = [
   "word": "厳密",
   "reading": "げんみつ",
   "romaji": "genmitsu",
-  "meaning_id": "strict; close",
+  "meaning_id": "ketat; tutup",
   "meaning_en": "strict; close",
   "jlpt": "n1",
   "pos": "na-adj",
@@ -4838,15 +4931,16 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "彼らは船長の命令を厳密に実行した。",
-      "id": "They carried out the captain's order to the letter.",
+      "id": "Mereka melaksanakan perintah kapten sampai tuntas.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ゲンミツ￣"}
+},
     {
       "jp": "厳密な科学的観点からは、歴史は科学とはいえない。",
-      "id": "From a strictly scientific point of view, history cannot be called a science.",
+      "id": "Dari sudut pandang ilmiah, sejarah tidak bisa disebut sebagai ilmu.",
       "level": "n1",
       "tags": [
         "umum"
@@ -4888,15 +4982,16 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "あなたが彼女と別れるのは賢明である。",
-      "id": "You will do well to leave her.",
+      "id": "Anda sebaiknya meninggalkannya.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ケンメイ￣"}
+},
     {
       "jp": "彼は提案を受け入れて賢明だった。",
-      "id": "He did well to accept the offer.",
+      "id": "Dia melakukannya dengan baik untuk menerima tawaran itu.",
       "level": "n1",
       "tags": [
         "umum"
@@ -4917,7 +5012,7 @@ window.vocabN1_Adjectives = [
   "word": "強気",
   "reading": "ごうぎ",
   "romaji": "gougi",
-  "meaning_id": "great; grand",
+  "meaning_id": "bagus; agung",
   "meaning_en": "great; grand",
   "jlpt": "n1",
   "pos": "na-adj",
@@ -4942,8 +5037,9 @@ window.vocabN1_Adjectives = [
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"ゴ＼ウギ"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -4980,12 +5076,13 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "彼は趣味が高尚です。",
-      "id": "He has elegant tastes.",
+      "id": "Dia memiliki selera yang elegan.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"コウショウ￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -5022,15 +5119,16 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "滑り出しが好調なら事は半ば成就したのに等しい。",
-      "id": "Well begun is half done.",
+      "id": "Permulaan yang baik sudah setengah selesai.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"コウチョウ￣"}
+},
     {
       "jp": "彼女好調ですね。",
-      "id": "She's on a roll.",
+      "id": "Dia sedang bersemangat.",
       "level": "n1",
       "tags": [
         "umum"
@@ -5051,7 +5149,7 @@ window.vocabN1_Adjectives = [
   "word": "好評",
   "reading": "こうひょう",
   "romaji": "kouhyou",
-  "meaning_id": "popularity; favorable reputation",
+  "meaning_id": "popularitas; reputasi yang menguntungkan",
   "meaning_en": "popularity; favorable reputation",
   "jlpt": "n1",
   "pos": "na-adj",
@@ -5072,15 +5170,16 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "その劇は好評を得た。",
-      "id": "The play got a favorable notice.",
+      "id": "Drama tersebut mendapat perhatian yang baik.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"コウヒョウ￣"}
+},
     {
       "jp": "劇の批評はおしなべて好評だった。",
-      "id": "Almost all of the reviews of the play were favorable.",
+      "id": "Hampir semua ulasan drama tersebut positif.",
       "level": "n1",
       "tags": [
         "umum"
@@ -5122,15 +5221,16 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "あのピアニストは巧妙でよく知られている。",
-      "id": "That pianist is known for his skill.",
+      "id": "Pianis itu terkenal karena keahliannya.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"コウミョウ￣"}
+},
     {
       "jp": "やつの巧妙な話に僕は簡単にだまされてしまった。",
-      "id": "I was easily taken in by his smooth talk.",
+      "id": "Saya dengan mudah terpesona oleh pembicaraannya yang halus.",
       "level": "n1",
       "tags": [
         "umum"
@@ -5172,15 +5272,16 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "彼らはその少女は小柄だと言った。",
-      "id": "They described the girl as being small.",
+      "id": "Mereka menggambarkan gadis itu bertubuh kecil.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"コガラ￣"}
+},
     {
       "jp": "息子は年の割には小柄だ。",
-      "id": "My son is small for his age.",
+      "id": "Anakku kecil untuk anak seusianya.",
       "level": "n1",
       "tags": [
         "umum"
@@ -5201,7 +5302,7 @@ window.vocabN1_Adjectives = [
   "word": "心強い",
   "reading": "こころづよい",
   "romaji": "kokorozuyoi",
-  "meaning_id": "heartening; reassuring",
+  "meaning_id": "membesarkan hati; meyakinkan",
   "meaning_en": "heartening; reassuring",
   "jlpt": "n1",
   "pos": "i-adj",
@@ -5222,12 +5323,13 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "僕には警察よりも何よりもみんながいてくれることの方が心強いのですよ。",
-      "id": "For my part, having you lot with me is more reassuring than the police or anything!",
+      "id": "Bagiku, mengajakmu bersamaku lebih menenangkan daripada polisi atau apa pun!",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":5,"category":"nakadaka","mora_count":6,"downstep_mora":5,"contour":"ココロヅヨ＼イ"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -5264,12 +5366,13 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "彼が帰ってきたのは、ホームシックにかかったからではなく、ふところが心細くなったからである。",
-      "id": "He came back not because he was homesick, but because he was running short of money.",
+      "id": "Dia kembali bukan karena rindu kampung halaman, tapi karena kekurangan uang.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":5,"category":"nakadaka","mora_count":6,"downstep_mora":5,"contour":"ココロボソ＼イ"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -5285,7 +5388,7 @@ window.vocabN1_Adjectives = [
   "word": "快い",
   "reading": "こころよい",
   "romaji": "kokoroyoi",
-  "meaning_id": "pleasant; agreeable",
+  "meaning_id": "menyenangkan",
   "meaning_en": "pleasant; agreeable",
   "jlpt": "n1",
   "pos": "i-adj",
@@ -5310,11 +5413,12 @@ window.vocabN1_Adjectives = [
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":4,"category":"nakadaka","mora_count":5,"downstep_mora":4,"contour":"ココロヨ＼イ"}
+},
     {
       "jp": "彼女は快く願いを聞いてくれた。",
-      "id": "She graciously listened to my request.",
+      "id": "Dia dengan ramah mendengarkan permintaan saya.",
       "level": "n1",
       "tags": [
         "umum"
@@ -5360,11 +5464,12 @@ window.vocabN1_Adjectives = [
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"コッケイ￣"}
+},
     {
       "jp": "あの喜劇役者は大変こっけいだ。",
-      "id": "That comedian is very funny.",
+      "id": "Komedian itu lucu sekali.",
       "level": "n1",
       "tags": [
         "umum"
@@ -5406,15 +5511,16 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "私はこの上なくさびしく、孤独だ。",
-      "id": "I am as sad and lonely as can be.",
+      "id": "Saya sangat sedih dan kesepian.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"コドク￣"}
+},
     {
       "jp": "富と名声はあるのに、彼は孤独だ。",
-      "id": "For all his wealth and fame, he is a lonely man.",
+      "id": "Terlepas dari semua kekayaan dan ketenarannya, dia adalah pria yang kesepian.",
       "level": "n1",
       "tags": [
         "umum"
@@ -5435,7 +5541,7 @@ window.vocabN1_Adjectives = [
   "word": "粉々",
   "reading": "こなごな",
   "romaji": "konagona",
-  "meaning_id": "in very small pieces",
+  "meaning_id": "dalam potongan yang sangat kecil",
   "meaning_en": "in very small pieces",
   "jlpt": "n1",
   "pos": "na-adj",
@@ -5456,15 +5562,16 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "花びんは粉々になった。",
-      "id": "The vase broke into fragments.",
+      "id": "Vas itu pecah berkeping-keping.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"コナゴナ￣"}
+},
     {
       "jp": "その爆発で真空管は粉々になった。",
-      "id": "The tube was shattered by the explosion.",
+      "id": "Tabung itu pecah akibat ledakan.",
       "level": "n1",
       "tags": [
         "umum"
@@ -5506,15 +5613,16 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "この映画は、子供に好ましくない影響を与えるかもしれない。",
-      "id": "This movie may have an undesirable influence on children.",
+      "id": "Film ini mungkin mempunyai pengaruh yang tidak diinginkan pada anak-anak.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":4,"category":"nakadaka","mora_count":5,"downstep_mora":4,"contour":"コノマシ＼イ"}
+},
     {
       "jp": "その志望者は試験官に好ましい印象を与えた。",
-      "id": "The applicant impressed the examiner favorably.",
+      "id": "Pemohon memberikan kesan positif kepada pemeriksa.",
       "level": "n1",
       "tags": [
         "umum"
@@ -5535,7 +5643,7 @@ window.vocabN1_Adjectives = [
   "word": "細やか",
   "reading": "こまやか",
   "romaji": "komayaka",
-  "meaning_id": "friendly",
+  "meaning_id": "ramah",
   "meaning_en": "friendly",
   "jlpt": "n1",
   "pos": "na-adj",
@@ -5556,12 +5664,13 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "愛情こまやかな老夫婦を見るのはいいものだ。",
-      "id": "It is pleasant to watch a loving old couple.",
+      "id": "Sangat menyenangkan melihat pasangan tua yang penuh kasih.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":4,"downstep_mora":2,"contour":"コマ＼ヤカ"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -5598,15 +5707,16 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "羽は鳥に固有のものだ。",
-      "id": "Feathers are peculiar to birds.",
+      "id": "Bulu merupakan ciri khas burung.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"コユウ￣"}
+},
     {
       "jp": "その問題はこのシステムに固有のものだ。",
-      "id": "The problems are inherent in this system.",
+      "id": "Permasalahan melekat pada sistem ini.",
       "level": "n1",
       "tags": [
         "umum"
@@ -5627,7 +5737,7 @@ window.vocabN1_Adjectives = [
   "word": "雑",
   "reading": "ざつ",
   "romaji": "zatsu",
-  "meaning_id": "rough; crude",
+  "meaning_id": "kasar",
   "meaning_en": "rough; crude",
   "jlpt": "n1",
   "pos": "na-adj",
@@ -5648,12 +5758,13 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "お客が雑な作りのスタンドに座って靴を磨いてもらっている。",
-      "id": "A customer is having his shoes shined on a slapped-together stand.",
+      "id": "Seorang pelanggan sedang menyemir sepatunya di tempat yang ditampar.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":2,"downstep_mora":0,"contour":"ザツ￣"}
+},
     {
       "jp": "彼は仕事が雑だ。",
       "id": "Dia careless and untidy in his work.",
@@ -5677,7 +5788,7 @@ window.vocabN1_Adjectives = [
   "word": "残酷",
   "reading": "ざんこく",
   "romaji": "zankoku",
-  "meaning_id": "cruelty; harshness",
+  "meaning_id": "kekejaman; kekerasan",
   "meaning_en": "cruelty; harshness",
   "jlpt": "n1",
   "pos": "na-adj",
@@ -5698,15 +5809,16 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "怪物は残酷な微笑みを浮かべた。",
-      "id": "The monster's smile was cruel.",
+      "id": "Senyuman monster itu kejam.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ザンコク￣"}
+},
     {
       "jp": "彼女は私には残酷そうに見える。",
-      "id": "She appears to me to be cruel.",
+      "id": "Bagiku dia tampak kejam.",
       "level": "n1",
       "tags": [
         "umum"
@@ -5727,7 +5839,7 @@ window.vocabN1_Adjectives = [
   "word": "自在",
   "reading": "じざい",
   "romaji": "jizai",
-  "meaning_id": "freely; at will",
+  "meaning_id": "dengan bebas; sesuka hati",
   "meaning_en": "freely; at will",
   "jlpt": "n1",
   "pos": "na-adj",
@@ -5748,12 +5860,13 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "彼はフランス語が自在にこなせる。",
-      "id": "He has a good command of French.",
+      "id": "Dia menguasai bahasa Prancis dengan baik.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ジザイ￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -5769,7 +5882,7 @@ window.vocabN1_Adjectives = [
   "word": "シック",
   "reading": "シック",
   "romaji": "shikku",
-  "meaning_id": "chic",
+  "meaning_id": "cantik",
   "meaning_en": "chic",
   "jlpt": "n1",
   "pos": "na-adj",
@@ -5794,8 +5907,9 @@ window.vocabN1_Adjectives = [
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":0,"downstep_mora":1,"contour":"＼"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -5836,11 +5950,12 @@ window.vocabN1_Adjectives = [
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"シ＼ッソ"}
+},
     {
       "jp": "ドイツ人は質素な国民だ。",
-      "id": "Germans are a frugal people.",
+      "id": "Orang Jerman adalah bangsa yang hemat.",
       "level": "n1",
       "tags": [
         "umum"
@@ -5882,12 +5997,13 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "僕的にはもっと地味ってか渋い服が欲しいんですけどね。",
-      "id": "For my tastes, I'd prefer plainer, or rather, more tasteful clothing.",
+      "id": "Menurut seleraku, aku lebih memilih pakaian yang lebih polos, atau lebih tepatnya, lebih berselera tinggi.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"シブ＼イ"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -5903,7 +6019,7 @@ window.vocabN1_Adjectives = [
   "word": "しぶとい",
   "reading": "しぶとい",
   "romaji": "shibutoi",
-  "meaning_id": "tenacious; stubborn",
+  "meaning_id": "ulet; keras kepala",
   "meaning_en": "tenacious; stubborn",
   "jlpt": "n1",
   "pos": "i-adj",
@@ -5924,12 +6040,13 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "彼は結構しぶといね。転んでもただでは起きぬ、いい根性しているよ。",
-      "id": "He's a tenacious guy who always manages to come out on top. He's the kind of guy who can turn any situation to his advantage.",
+      "id": "Dia pria ulet yang selalu berhasil menjadi yang teratas. Dia tipe pria yang bisa mengubah situasi apa pun menjadi keuntungannya.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":0,"downstep_mora":0,"contour":"￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -5945,7 +6062,7 @@ window.vocabN1_Adjectives = [
   "word": "洒落",
   "reading": "しゃらく",
   "romaji": "sharaku",
-  "meaning_id": "frank; open-hearted",
+  "meaning_id": "jujur; berhati terbuka",
   "meaning_en": "frank; open-hearted",
   "jlpt": "n1",
   "pos": "na-adj",
@@ -5970,8 +6087,9 @@ window.vocabN1_Adjectives = [
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"シャラク￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -5987,7 +6105,7 @@ window.vocabN1_Adjectives = [
   "word": "ジャンボ",
   "reading": "ジャンボ",
   "romaji": "janbo",
-  "meaning_id": "jumbo",
+  "meaning_id": "ukuran jumbo / raksasa",
   "meaning_en": "jumbo",
   "jlpt": "n1",
   "pos": "na-adj",
@@ -6008,12 +6126,13 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "ジャンボ尾崎ほど人気のあるプロゴルファーは日本にいない。",
-      "id": "No pro golfer in Japan is as popular as Jumbo Ozaki.",
+      "id": "Tidak ada pegolf profesional di Jepang yang sepopuler Jumbo Ozaki.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":0,"downstep_mora":1,"contour":"＼"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -6029,7 +6148,7 @@ window.vocabN1_Adjectives = [
   "word": "柔軟",
   "reading": "じゅうなん",
   "romaji": "juunan",
-  "meaning_id": "flexible; lithe",
+  "meaning_id": "fleksibel; lentur",
   "meaning_en": "flexible; lithe",
   "jlpt": "n1",
   "pos": "na-adj",
@@ -6050,12 +6169,13 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "考え方は柔軟でなければならない。",
-      "id": "You must be flexible in your thinking.",
+      "id": "Anda harus fleksibel dalam berpikir.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ジュウナン￣"}
+},
     {
       "jp": "もっと柔軟な態度をとりなさい。",
       "id": "Be more flexible.",
@@ -6079,7 +6199,7 @@ window.vocabN1_Adjectives = [
   "word": "真実",
   "reading": "しんじつ",
   "romaji": "shinjitsu",
-  "meaning_id": "truth; reality",
+  "meaning_id": "kebenaran; kenyataan",
   "meaning_en": "truth; reality",
   "jlpt": "n1",
   "pos": "na-adj",
@@ -6100,15 +6220,16 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "その真実が明るみに出た。",
-      "id": "The fact was brought to light.",
+      "id": "Faktanya terungkap.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":4,"downstep_mora":1,"contour":"シ＼ンジツ"}
+},
     {
       "jp": "彼が真実を知っているはずはない。",
-      "id": "He can't know the truth.",
+      "id": "Dia tidak bisa mengetahui kebenarannya.",
       "level": "n1",
       "tags": [
         "umum"
@@ -6150,15 +6271,16 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "インドでは牛は神聖な動物です。",
-      "id": "In India, the cow is a sacred animal.",
+      "id": "Di India, sapi merupakan hewan suci.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"シンセイ￣"}
+},
     {
       "jp": "神聖ローマ帝国は１８０６年に終わりを告げた。",
-      "id": "The Holy Roman Empire came to an end in the year 1806.",
+      "id": "Kekaisaran Romawi Suci berakhir pada tahun 1806.",
       "level": "n1",
       "tags": [
         "umum"
@@ -6200,15 +6322,16 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "彼はその事態に迅速に対応した。",
-      "id": "He promptly coped with the situation.",
+      "id": "Dia segera mengatasi situasi tersebut.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ジンソク￣"}
+},
     {
       "jp": "あなたの迅速な返事が是非とも必要です。",
-      "id": "Your prompt reply is urgently required.",
+      "id": "Balasan cepat Anda sangat dibutuhkan.",
       "level": "n1",
       "tags": [
         "umum"
@@ -6229,7 +6352,7 @@ window.vocabN1_Adjectives = [
   "word": "神秘",
   "reading": "しんぴ",
   "romaji": "shinpi",
-  "meaning_id": "mystery",
+  "meaning_id": "misteri",
   "meaning_en": "mystery",
   "jlpt": "n1",
   "pos": "na-adj",
@@ -6250,15 +6373,16 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "その夢は私には神秘だった。",
-      "id": "The dream was a mystery to me.",
+      "id": "Mimpi itu adalah sebuah misteri bagiku.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"シ＼ンピ"}
+},
     {
       "jp": "この神秘を解いたものはいますか。",
-      "id": "Has anybody solved this mystery?",
+      "id": "Apakah ada yang memecahkan misteri ini?",
       "level": "n1",
       "tags": [
         "umum"
@@ -6279,7 +6403,7 @@ window.vocabN1_Adjectives = [
   "word": "清々しい",
   "reading": "すがすがしい",
   "romaji": "sugasugashii",
-  "meaning_id": "fresh; refreshing",
+  "meaning_id": "segar; menyegarkan",
   "meaning_en": "fresh; refreshing",
   "jlpt": "n1",
   "pos": "i-adj",
@@ -6300,12 +6424,13 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "今日はすがすがしいお天気ですね。",
-      "id": "It's a nice day, isn't it?",
+      "id": "Ini hari yang menyenangkan, bukan?",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":5,"category":"nakadaka","mora_count":6,"downstep_mora":5,"contour":"スガスガシ＼イ"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -6342,12 +6467,13 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "インコやオウムと仲良く楽しく健やかに暮らすために、飼鳥の行動学やペットロスについて考える。",
-      "id": "In order to live happily and healthily with parakeets or parrots, you should understand the science of animal behavior for domesticated birds, and consider the emotional effect of eventually losing them.",
+      "id": "Agar bisa hidup bahagia dan sehat bersama burung parkit atau burung beo, Anda harus memahami ilmu tentang perilaku hewan pada burung peliharaan, dan mempertimbangkan dampak emosional jika pada akhirnya kehilangan mereka.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":4,"downstep_mora":2,"contour":"スコ＼ヤカ"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -6384,15 +6510,16 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "リスはすばしこく木を登る。",
-      "id": "Squirrels are nimble in climbing trees.",
+      "id": "Tupai gesit memanjat pohon.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":4,"category":"nakadaka","mora_count":0,"downstep_mora":0,"contour":"￣"}
+},
     {
       "jp": "雀は動作が非常にすばしこい。",
-      "id": "A sparrow is very alert in its movements.",
+      "id": "Seekor burung pipit sangat waspada dalam pergerakannya.",
       "level": "n1",
       "tags": [
         "umum"
@@ -6434,15 +6561,16 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "彼は素早くフランス語を習得した。",
-      "id": "He acquired French quickly.",
+      "id": "Dia menguasai bahasa Prancis dengan cepat.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"スバヤ＼イ"}
+},
     {
       "jp": "そのクモは素早い反撃をする。",
-      "id": "The spider responds with a swift attack.",
+      "id": "Laba-laba merespons dengan serangan cepat.",
       "level": "n1",
       "tags": [
         "umum"
@@ -6484,12 +6612,13 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "私はぬかるんだ斜面をずるずると滑り下りた。",
-      "id": "I slithered down the muddy slope.",
+      "id": "Aku meluncur menuruni lereng berlumpur.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":0,"downstep_mora":1,"contour":"＼"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -6530,8 +6659,9 @@ window.vocabN1_Adjectives = [
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"セ＼イキ"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -6568,15 +6698,16 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "その機械は精巧に出来ているので、すぐ壊れる。",
-      "id": "The machine is so delicate that it easily breaks.",
+      "id": "Mesin ini sangat halus sehingga mudah rusak.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"セイコウ￣"}
+},
     {
       "jp": "彼はその恐竜の精巧な縮小模型をじっと見つめた。",
-      "id": "He stared at the faithful miniature of the dinosaur.",
+      "id": "Dia menatap miniatur dinosaurus yang setia.",
       "level": "n1",
       "tags": [
         "umum"
@@ -6618,12 +6749,13 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "ナンシーには誠実さが欠けているようだ。",
-      "id": "Nancy seems to lack sincerity.",
+      "id": "Nancy tampaknya kurang tulus.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"セイジツ￣"}
+},
     {
       "jp": "彼女が誠実だなんてとんでもない。",
       "id": "Dia by no means honest.",
@@ -6647,7 +6779,7 @@ window.vocabN1_Adjectives = [
   "word": "清純",
   "reading": "せいじゅん",
   "romaji": "seijun",
-  "meaning_id": "purity; innocence",
+  "meaning_id": "kemurnian; tidak bersalah",
   "meaning_en": "purity; innocence",
   "jlpt": "n1",
   "pos": "na-adj",
@@ -6668,12 +6800,13 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "写真が暴露された後で女優の清純なイメージが汚された。",
-      "id": "After the pictures were revealed, the actress' clean image was tainted.",
+      "id": "Setelah foto-fotonya terungkap, citra bersih aktris tersebut ternoda.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"セイジュン￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -6710,15 +6843,16 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "赤ん坊は正常な発育を示した。",
-      "id": "The baby showed a normal development.",
+      "id": "Bayi itu menunjukkan perkembangan normal.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"セイジョウ￣"}
+},
     {
       "jp": "政府は事態を正常に戻す努力をしている。",
-      "id": "The government is trying to bring things back to normal.",
+      "id": "Pemerintah berupaya mengembalikan keadaan menjadi normal.",
       "level": "n1",
       "tags": [
         "umum"
@@ -6760,15 +6894,16 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "彼を空港で盛大に見送った。",
-      "id": "We gave him a royal send-off at the airport.",
+      "id": "Kami memberinya perpisahan kerajaan di bandara.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"セイダイ￣"}
+},
     {
       "jp": "結婚式の後で盛大な披露宴が催された。",
-      "id": "There was a big reception after the wedding.",
+      "id": "Ada resepsi besar setelah pernikahan.",
       "level": "n1",
       "tags": [
         "umum"
@@ -6789,7 +6924,7 @@ window.vocabN1_Adjectives = [
   "word": "静的",
   "reading": "せいてき",
   "romaji": "seiteki",
-  "meaning_id": "static",
+  "meaning_id": "statis",
   "meaning_en": "static",
   "jlpt": "n1",
   "pos": "na-adj",
@@ -6814,8 +6949,9 @@ window.vocabN1_Adjectives = [
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"セイテキ￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -6852,12 +6988,13 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "先生は彼女に正当な取り扱いをしなかった。",
-      "id": "The teacher didn't do her justice.",
+      "id": "Guru tidak melakukan keadilannya.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"セイトウ￣"}
+},
     {
       "jp": "私はよい音楽を正当に評価する。",
       "id": "I appreciate good music.",
@@ -6902,12 +7039,13 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "精密検査をしましょう。",
-      "id": "I'd like you to have a thorough examination.",
+      "id": "Saya ingin Anda melakukan pemeriksaan menyeluruh.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"セイミツ￣"}
+},
     {
       "jp": "なぜならば、精密に検査しても何か欠点が現れないほど美しいものは存在しないからである。",
       "id": "Ini adalah because there is nothing so beautiful that, even on close inspection, no defects will be found.",
@@ -6952,12 +7090,13 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "太っているのが私の切実な問題です。",
-      "id": "Being fat is a serious problem for me.",
+      "id": "Menjadi gemuk adalah masalah serius bagi saya.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"セツジツ￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -6994,15 +7133,16 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "ちょっぴり切ない朝を迎えました。",
-      "id": "I was greeted with a slightly sad morning.",
+      "id": "Aku disambut dengan pagi yang sedikit menyedihkan.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"セツナ＼イ"}
+},
     {
       "jp": "切ない曲をよく聴きます。",
-      "id": "I often listen to sad songs.",
+      "id": "Saya sering mendengarkan lagu-lagu sedih.",
       "level": "n1",
       "tags": [
         "umum"
@@ -7023,7 +7163,7 @@ window.vocabN1_Adjectives = [
   "word": "先天的",
   "reading": "せんてんてき",
   "romaji": "sententeki",
-  "meaning_id": "a priori; inborn",
+  "meaning_id": "secara apriori; bawaan",
   "meaning_en": "a priori; inborn; innate; inherent; congenital; hereditary",
   "jlpt": "n1",
   "pos": "na-adj",
@@ -7044,12 +7184,13 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "その習慣は後天的で、先天的なものではない。",
-      "id": "That habit is acquired, not innate.",
+      "id": "Kebiasaan itu didapat, bukan bawaan.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":6,"downstep_mora":0,"contour":"センテンテキ￣"}
+},
     {
       "jp": "彼は先天的な詩人です。",
       "id": "Dia a born poet.",
@@ -7094,12 +7235,13 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "善良な市民は法律に従う。",
-      "id": "A good citizen obeys the laws.",
+      "id": "Warga negara yang baik menaati hukum.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ゼンリョウ￣"}
+},
     {
       "jp": "彼は善良そのものである。",
       "id": "Dia the epitome of goodness.",
@@ -7123,7 +7265,7 @@ window.vocabN1_Adjectives = [
   "word": "早急",
   "reading": "そうきゅう",
   "romaji": "soukyuu",
-  "meaning_id": "urgent",
+  "meaning_id": "mendesak",
   "meaning_en": "urgent",
   "jlpt": "n1",
   "pos": "na-adj",
@@ -7144,15 +7286,16 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "この問題は早急に手を打つ必要がある。",
-      "id": "Something must be done immediately to deal with this problem.",
+      "id": "Sesuatu harus segera dilakukan untuk mengatasi masalah ini.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ソウキュウ￣"}
+},
     {
       "jp": "この件について早急に調べてください。",
-      "id": "Tolong look into this matter as soon as you can.",
+      "id": "Tolong selidiki masalah ini sesegera mungkin.",
       "level": "n1",
       "tags": [
         "umum"
@@ -7194,15 +7337,16 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "壮大な眺めですね。",
-      "id": "It's a magnificent view, isn't it?",
+      "id": "Sungguh pemandangan yang luar biasa, bukan?",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ソウダイ￣"}
+},
     {
       "jp": "その王室の結婚式は壮大な祭典であった。",
-      "id": "The royal wedding was a magnificent occasion.",
+      "id": "Pernikahan kerajaan adalah peristiwa yang luar biasa.",
       "level": "n1",
       "tags": [
         "umum"
@@ -7244,15 +7388,16 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "彼女は彼を素っ気なくあしらった。",
-      "id": "She turned up her nose at him.",
+      "id": "Dia mengangkat hidungnya ke arahnya.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":4,"category":"nakadaka","mora_count":5,"downstep_mora":4,"contour":"ソッケナ＼イ"}
+},
     {
       "jp": "彼女はいつも私に素っ気ない。",
-      "id": "She always gives me the cold shoulder.",
+      "id": "Dia selalu bersikap dingin padaku.",
       "level": "n1",
       "tags": [
         "umum"
@@ -7294,12 +7439,13 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "素朴な疑問なんだけど、・・・トラとライオンはどっちが強いの？",
-      "id": "This may be a silly question, but which is stronger - a tiger or a lion?",
+      "id": "Ini mungkin pertanyaan konyol, tapi mana yang lebih kuat - harimau atau singa?",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ソボク￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -7336,15 +7482,16 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "その警官は私に対してかなりぞんざいだった。",
-      "id": "The policeman was rather abrupt with me.",
+      "id": "Polisi itu agak kasar terhadap saya.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":0,"downstep_mora":0,"contour":"￣"}
+},
     {
       "jp": "彼は引き出しに物をぞんざいに押し込んだ。",
-      "id": "He put his things carelessly in the drawer.",
+      "id": "Dia menaruh barang-barangnya sembarangan di laci.",
       "level": "n1",
       "tags": [
         "umum"
@@ -7386,15 +7533,16 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "私達は彼の大胆な企てに舌を巻いた。",
-      "id": "We marveled at his bold attempt.",
+      "id": "Kami kagum dengan usahanya yang berani.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"ダイタ＼ン"}
+},
     {
       "jp": "私たちの申し出を断るとは大胆だ。",
-      "id": "It is bold of him to refuse our offer.",
+      "id": "Dia berani menolak tawaran kami.",
       "level": "n1",
       "tags": [
         "umum"
@@ -7415,7 +7563,7 @@ window.vocabN1_Adjectives = [
   "word": "対等",
   "reading": "たいとう",
   "romaji": "taitou",
-  "meaning_id": "equivalent",
+  "meaning_id": "setara",
   "meaning_en": "equivalent",
   "jlpt": "n1",
   "pos": "na-adj",
@@ -7436,15 +7584,16 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "あなたは私と対等で私より下でも上でもない。",
-      "id": "You are my equal; not my inferior or superior.",
+      "id": "Anda setara dengan saya; bukan inferior atau superior saya.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"タイトウ￣"}
+},
     {
       "jp": "すべての人は対等の権利を有する。",
-      "id": "All men have equal rights.",
+      "id": "Semua pria mempunyai hak yang sama.",
       "level": "n1",
       "tags": [
         "umum"
@@ -7486,15 +7635,16 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "風やら雨やらで旅行は台無しだった。",
-      "id": "What with the wind and the rain, our trip was spoiled.",
+      "id": "Dengan adanya angin dan hujan, perjalanan kami menjadi manja.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ダイナシ￣"}
+},
     {
       "jp": "この赤色で柄全体がだいなしだ。",
-      "id": "The red kills the whole pattern.",
+      "id": "Warna merah mematikan keseluruhan pola.",
       "level": "n1",
       "tags": [
         "umum"
@@ -7536,15 +7686,16 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "彼は義務怠慢で非難された。",
-      "id": "He was blamed for neglect of duty.",
+      "id": "Dia disalahkan karena mengabaikan tugas.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"タイマン￣"}
+},
     {
       "jp": "彼女は怠慢という理由で解雇された。",
-      "id": "She was dismissed on the grounds of neglect of duty.",
+      "id": "Dia diberhentikan dengan alasan mengabaikan tugas.",
       "level": "n1",
       "tags": [
         "umum"
@@ -7586,15 +7737,16 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "彼女は逞しく逆境に耐えた。",
-      "id": "She bore her misfortunes with a brave spirit.",
+      "id": "Dia menanggung kemalangannya dengan semangat pemberani.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":4,"category":"nakadaka","mora_count":5,"downstep_mora":4,"contour":"タクマシ＼イ"}
+},
     {
       "jp": "彼は想像力のたくましい少年であった。",
-      "id": "He used to be an imaginative boy.",
+      "id": "Dia dulunya adalah anak yang imajinatif.",
       "level": "n1",
       "tags": [
         "umum"
@@ -7615,7 +7767,7 @@ window.vocabN1_Adjectives = [
   "word": "達者",
   "reading": "たっしゃ",
   "romaji": "tassha",
-  "meaning_id": "skillful; in good health",
+  "meaning_id": "terampil; dalam keadaan sehat",
   "meaning_en": "skillful; in good health",
   "jlpt": "n1",
   "pos": "na-adj",
@@ -7636,12 +7788,13 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "彼女はフランス語が達者だ。",
-      "id": "She has a good command of French.",
+      "id": "Dia menguasai bahasa Prancis dengan baik.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"タッシャ￣"}
+},
     {
       "jp": "彼は水泳が達者でテニスもうまい。",
       "id": "Dia a good swimmer and also plays tennis well.",
@@ -7686,15 +7839,16 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "愛より尊い物はない。",
-      "id": "Nothing is as precious as love.",
+      "id": "Tidak ada yang lebih berharga dari cinta.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"タット＼イ"}
+},
     {
       "jp": "ご友情は私にはたいそう尊いものです。",
-      "id": "Your friendship means much to me.",
+      "id": "Persahabatanmu sangat berarti bagiku.",
       "level": "n1",
       "tags": [
         "umum"
@@ -7736,15 +7890,16 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "愛より尊い物はない。",
-      "id": "Nothing is as precious as love.",
+      "id": "Tidak ada yang lebih berharga dari cinta.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"タット＼イ"}
+},
     {
       "jp": "ご友情は私にはたいそう尊いものです。",
-      "id": "Your friendship means much to me.",
+      "id": "Persahabatanmu sangat berarti bagiku.",
       "level": "n1",
       "tags": [
         "umum"
@@ -7786,15 +7941,16 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "たとえ多忙でも彼は来るだろう。",
-      "id": "Even if he is busy, he will come.",
+      "id": "Walaupun dia sibuk, dia akan datang.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"タボウ￣"}
+},
     {
       "jp": "彼女は多忙のため来られなかった。",
-      "id": "She couldn't come on account of being busy.",
+      "id": "Dia tidak bisa datang karena sibuk.",
       "level": "n1",
       "tags": [
         "umum"
@@ -7836,12 +7992,13 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "君が問題を解く容易さには驚くぜ。",
-      "id": "I'm amazed by the ease with which you solve the problem.",
+      "id": "Saya kagum dengan kemudahan Anda memecahkan masalah.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"タヤス＼イ"}
+},
     {
       "jp": "言うのはた易いが、行うのは難しい。",
       "id": "Easier said than done.",
@@ -7865,7 +8022,7 @@ window.vocabN1_Adjectives = [
   "word": "多様",
   "reading": "たよう",
   "romaji": "tayou",
-  "meaning_id": "diversity; variety",
+  "meaning_id": "keragaman; variasi",
   "meaning_en": "diversity; variety",
   "jlpt": "n1",
   "pos": "na-adj",
@@ -7886,15 +8043,16 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "話題は多様多種だった。",
-      "id": "We talked about a variety of topics.",
+      "id": "Kami berbicara tentang berbagai topik.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"タヨウ￣"}
+},
     {
       "jp": "彼の才能は大変素晴らしくそして多様であった。",
-      "id": "His abilities were very great and various.",
+      "id": "Kemampuannya sangat hebat dan beragam.",
       "level": "n1",
       "tags": [
         "umum"
@@ -7936,15 +8094,16 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "だるいし頭がずきずきする。",
-      "id": "I feel listless and have a throbbing headache.",
+      "id": "Saya merasa lesu dan sakit kepala berdenyut-denyut.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"ダル＼イ"}
+},
     {
       "jp": "教授のだるい講演で寝てしまった。",
-      "id": "The professor's boring lecture put me to sleep.",
+      "id": "Ceramah profesor yang membosankan membuatku tertidur.",
       "level": "n1",
       "tags": [
         "umum"
@@ -7986,15 +8145,16 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "ねじ、てこ、くさび、滑車などは単一機械と呼ばれる。",
-      "id": "The screw, the lever, the wedge, the pulley, etc. are called simple machines.",
+      "id": "Sekrup, tuas, baji, katrol, dan lain-lain disebut mesin sederhana.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"タンイツ￣"}
+},
     {
       "jp": "体制に従おうとする意識は、この単一民族社会の本質的な要素である。",
-      "id": "Conformity is an essential element of our homogeneous community.",
+      "id": "Kesesuaian adalah elemen penting dari komunitas homogen kita.",
       "level": "n1",
       "tags": [
         "umum"
@@ -8015,7 +8175,7 @@ window.vocabN1_Adjectives = [
   "word": "短気",
   "reading": "たんき",
   "romaji": "tanki",
-  "meaning_id": "quick temper",
+  "meaning_id": "cepat marah",
   "meaning_en": "quick temper",
   "jlpt": "n1",
   "pos": "na-adj",
@@ -8036,15 +8196,16 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "彼の短気は手に負えない。",
-      "id": "He has an uncontrollable temper.",
+      "id": "Dia mempunyai sifat mudah marah yang tidak dapat dikendalikan.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"タ＼ンキ"}
+},
     {
       "jp": "子供に対して短気を起こしてはいけない。",
-      "id": "You shouldn't be impatient with children.",
+      "id": "Anda tidak boleh tidak sabar dengan anak-anak.",
       "level": "n1",
       "tags": [
         "umum"
@@ -8086,15 +8247,16 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "この話はちょっと単調だ。",
-      "id": "This story is rather monotonous.",
+      "id": "Cerita ini agak monoton.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"タンチョウ￣"}
+},
     {
       "jp": "小さな村では生活はひどく単調です。",
-      "id": "Life is very flat in a small village.",
+      "id": "Kehidupan sangat datar di sebuah desa kecil.",
       "level": "n1",
       "tags": [
         "umum"
@@ -8140,8 +8302,9 @@ window.vocabN1_Adjectives = [
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"タンドク￣"}
+},
     {
       "jp": "不幸は単独でやってこない。",
       "id": "Misfortune never come single.",
@@ -8165,7 +8328,7 @@ window.vocabN1_Adjectives = [
   "word": "知的",
   "reading": "ちてき",
   "romaji": "chiteki",
-  "meaning_id": "intellectual",
+  "meaning_id": "intelektual",
   "meaning_en": "intellectual",
   "jlpt": "n1",
   "pos": "na-adj",
@@ -8190,11 +8353,12 @@ window.vocabN1_Adjectives = [
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"チテキ￣"}
+},
     {
       "jp": "チェスはとても知的なゲームです。",
-      "id": "Chess is a highly intellectual game.",
+      "id": "Catur adalah permainan yang sangat intelektual.",
       "level": "n1",
       "tags": [
         "umum"
@@ -8215,7 +8379,7 @@ window.vocabN1_Adjectives = [
   "word": "忠実",
   "reading": "ちゅうじつ",
   "romaji": "chuujitsu",
-  "meaning_id": "fidelity; faithfulness",
+  "meaning_id": "kesetiaan",
   "meaning_en": "fidelity; faithfulness",
   "jlpt": "n1",
   "pos": "na-adj",
@@ -8236,15 +8400,16 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "あの翻訳は原文に忠実だそうだ。",
-      "id": "That translation is said to be true to the original.",
+      "id": "Terjemahan tersebut dikatakan sesuai dengan aslinya.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"チュウジツ￣"}
+},
     {
       "jp": "約束には忠実でなくてはいけない。",
-      "id": "You must be faithful to your word.",
+      "id": "Anda harus setia pada kata-kata Anda.",
       "level": "n1",
       "tags": [
         "umum"
@@ -8265,7 +8430,7 @@ window.vocabN1_Adjectives = [
   "word": "長大",
   "reading": "ちょうだい",
   "romaji": "choudai",
-  "meaning_id": "very long; great length",
+  "meaning_id": "sangat panjang",
   "meaning_en": "very long; great length",
   "jlpt": "n1",
   "pos": "na-adj",
@@ -8290,8 +8455,9 @@ window.vocabN1_Adjectives = [
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"チョウダイ￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -8328,12 +8494,13 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "スミス氏は著名なバイオリニストである。",
-      "id": "Mr Smith is an eminent violinist.",
+      "id": "Mr Smith adalah pemain biola terkemuka.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"チョメイ￣"}
+},
     {
       "jp": "彼は教師としても作家としても著名である。",
       "id": "Dia eminent both as a teacher and writer.",
@@ -8357,7 +8524,7 @@ window.vocabN1_Adjectives = [
   "word": "痛切",
   "reading": "つうせつ",
   "romaji": "tsuusetsu",
-  "meaning_id": "keen; acute",
+  "meaning_id": "tertarik; akut",
   "meaning_en": "keen; acute",
   "jlpt": "n1",
   "pos": "na-adj",
@@ -8378,15 +8545,16 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "算数教育が非常に大事だと痛切に感じていた。",
-      "id": "I was acutely aware of how very important mathematical education was.",
+      "id": "Saya sangat menyadari betapa pentingnya pendidikan matematika.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ツウセツ￣"}
+},
     {
       "jp": "その痛ましいエピソードは私には痛切に感じられた。",
-      "id": "The touching episode came home to me.",
+      "id": "Episode yang menyentuh itu terlintas di benak saya.",
       "level": "n1",
       "tags": [
         "umum"
@@ -8407,7 +8575,7 @@ window.vocabN1_Adjectives = [
   "word": "でかい",
   "reading": "でかい",
   "romaji": "dekai",
-  "meaning_id": "huge",
+  "meaning_id": "sangat besar",
   "meaning_en": "huge",
   "jlpt": "n1",
   "pos": "i-adj",
@@ -8428,15 +8596,16 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "こんなデカイのがチャリの荷台に乗るわけないだろ。",
-      "id": "There's no way one that big is going to go on a bike's luggage rest.",
+      "id": "Tidak mungkin orang sebesar itu mau membawa sisa bagasi sepedanya.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":0,"downstep_mora":0,"contour":"￣"}
+},
     {
       "jp": "あいつでかいことばかり言ってるけど、そのうちぼろを出すよ。",
-      "id": "He's always talking like a big shot, but it won't be long before all his faults are exposed.",
+      "id": "Dia selalu berbicara seperti orang penting, tetapi tidak lama kemudian semua kesalahannya terungkap.",
       "level": "n1",
       "tags": [
         "umum"
@@ -8478,12 +8647,13 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "年来の経済病には手軽にきく万能薬などありません。",
-      "id": "Ada no easy cure-all for old economic ills.",
+      "id": "Tidak ada obat yang mudah untuk menyembuhkan penyakit ekonomi lama.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"テガル￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -8499,7 +8669,7 @@ window.vocabN1_Adjectives = [
   "word": "的",
   "reading": "てき",
   "romaji": "teki",
-  "meaning_id": "-like; typical",
+  "meaning_id": "-seperti; khas",
   "meaning_en": "-like; typical",
   "jlpt": "n1",
   "pos": "na-adj",
@@ -8520,15 +8690,16 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "その女性は非常に協力的である。",
-      "id": "The women are very supportive.",
+      "id": "Para wanita sangat mendukung.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":2,"downstep_mora":0,"contour":"テキ￣"}
+},
     {
       "jp": "食物繊維はダイエットに効果的だ。",
-      "id": "Dietary fibre is good for losing weight.",
+      "id": "Serat makanan baik untuk menurunkan berat badan.",
       "level": "n1",
       "tags": [
         "umum"
@@ -8549,7 +8720,7 @@ window.vocabN1_Adjectives = [
   "word": "適宜",
   "reading": "てきぎ",
   "romaji": "tekigi",
-  "meaning_id": "suitability",
+  "meaning_id": "kesesuaian",
   "meaning_en": "suitability",
   "jlpt": "n1",
   "pos": "na-adj",
@@ -8574,8 +8745,9 @@ window.vocabN1_Adjectives = [
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"テ＼キギ"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -8612,15 +8784,16 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "いつも手近に辞書を持っていなさい。",
-      "id": "Always have your dictionary near at hand.",
+      "id": "Selalu siapkan kamus Anda.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"テヂカ￣"}
+},
     {
       "jp": "この辞書は、いつも手の届くとこに置いときなさい。",
-      "id": "Always keep this dictionary handy.",
+      "id": "Selalu sediakan kamus ini.",
       "level": "n1",
       "tags": [
         "umum"
@@ -8641,7 +8814,7 @@ window.vocabN1_Adjectives = [
   "word": "動的",
   "reading": "どうてき",
   "romaji": "douteki",
-  "meaning_id": "dynamic; kinetic",
+  "meaning_id": "dinamis; kinetik",
   "meaning_en": "dynamic; kinetic",
   "jlpt": "n1",
   "pos": "na-adj",
@@ -8666,8 +8839,9 @@ window.vocabN1_Adjectives = [
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ドウテキ￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -8704,15 +8878,16 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "１メートルは１ヤードとは完全に同等ではない。",
-      "id": "A meter is not quite equivalent to a yard.",
+      "id": "Satu meter tidak setara dengan satu yard.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ドウトウ￣"}
+},
     {
       "jp": "男と女は同等だと切に感じる。",
-      "id": "I feel strongly that men and women are equal.",
+      "id": "Saya sangat yakin bahwa laki-laki dan perempuan adalah setara.",
       "level": "n1",
       "tags": [
         "umum"
@@ -8754,15 +8929,16 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "どの民族も独自の神話を持っている。",
-      "id": "Every nation has its own myths.",
+      "id": "Setiap bangsa mempunyai mitosnya masing-masing.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"ド＼クジ"}
+},
     {
       "jp": "彼らは独自の文化を持っていた。",
-      "id": "They had a culture of their own.",
+      "id": "Mereka memiliki budaya mereka sendiri.",
       "level": "n1",
       "tags": [
         "umum"
@@ -8783,7 +8959,7 @@ window.vocabN1_Adjectives = [
   "word": "特有",
   "reading": "とくゆう",
   "romaji": "tokuyuu",
-  "meaning_id": "characteristic (of); peculiar (to)",
+  "meaning_id": "karakteristik (dari); aneh (untuk)",
   "meaning_en": "characteristic (of); peculiar (to)",
   "jlpt": "n1",
   "pos": "na-adj",
@@ -8804,15 +8980,16 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "この習慣は日本に特有のものである。",
-      "id": "This custom is peculiar to Japan.",
+      "id": "Kebiasaan ini khas Jepang.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"トクユウ￣"}
+},
     {
       "jp": "その植物はその地域特有のものだ。",
-      "id": "The plants are peculiar to the district.",
+      "id": "Tumbuhan tersebut merupakan ciri khas daerah tersebut.",
       "level": "n1",
       "tags": [
         "umum"
@@ -8854,15 +9031,16 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "この国には石油が乏しい。",
-      "id": "Oil is scarce in this country.",
+      "id": "Minyak langka di negara ini.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"トボシ＼イ"}
+},
     {
       "jp": "彼は生まれつき積極性に乏しかった。",
-      "id": "He was assertive by nature.",
+      "id": "Dia pada dasarnya tegas.",
       "level": "n1",
       "tags": [
         "umum"
@@ -8883,7 +9061,7 @@ window.vocabN1_Adjectives = [
   "word": "ドライ",
   "reading": "ドライ",
   "romaji": "dorai",
-  "meaning_id": "dry",
+  "meaning_id": "kering",
   "meaning_en": "dry",
   "jlpt": "n1",
   "pos": "na-adj",
@@ -8904,15 +9082,16 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "彼にはドライなユーモアはわかりませんよ。",
-      "id": "He doesn't have a dry sense of humor.",
+      "id": "Dia tidak memiliki selera humor yang kering.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":0,"downstep_mora":0,"contour":"￣"}
+},
     {
       "jp": "このビールはドライだ。",
-      "id": "This beer is dry.",
+      "id": "Bir ini kering.",
       "level": "n1",
       "tags": [
         "umum"
@@ -8933,7 +9112,7 @@ window.vocabN1_Adjectives = [
   "word": "鈍感",
   "reading": "どんかん",
   "romaji": "donkan",
-  "meaning_id": "thickheadedness; stolidity",
+  "meaning_id": "sifat keras kepala; kekakuan",
   "meaning_en": "thickheadedness; stolidity",
   "jlpt": "n1",
   "pos": "na-adj",
@@ -8954,15 +9133,16 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "概してエリート達は批判に対して鈍感である。",
-      "id": "On the whole, the elite are not sensitive to criticism.",
+      "id": "Secara umum, kelompok elit tidak peka terhadap kritik.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ドンカン￣"}
+},
     {
       "jp": "僕は流行に鈍感だって、君は言っているけどね。",
-      "id": "And you say I don't have a nose for what's popular.",
+      "id": "Dan Anda bilang saya tidak tertarik pada hal-hal yang populer.",
       "level": "n1",
       "tags": [
         "umum"
@@ -9004,12 +9184,13 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "オフィスにはなごやかな雰囲気がある。",
-      "id": "Ada a friendly atmosphere in the office.",
+      "id": "Ada suasana bersahabat di kantor.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":4,"downstep_mora":2,"contour":"ナゴ＼ヤカ"}
+},
     {
       "jp": "メリーのにこやかな顔は彼女の幸せを表していた。",
       "id": "Mary beamed her happiness.",
@@ -9033,7 +9214,7 @@ window.vocabN1_Adjectives = [
   "word": "情け深い",
   "reading": "なさけぶかい",
   "romaji": "nasakebukai",
-  "meaning_id": "tender-hearted; compassionate",
+  "meaning_id": "berhati lembut; penyayang",
   "meaning_en": "tender-hearted; compassionate",
   "jlpt": "n1",
   "pos": "i-adj",
@@ -9054,12 +9235,13 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "あんなに愛情深いご両親がいらっしゃるなんてあなたは幸運です。",
-      "id": "You are fortunate to have such loving parents.",
+      "id": "Anda beruntung memiliki orang tua yang penuh kasih sayang.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":5,"category":"nakadaka","mora_count":6,"downstep_mora":5,"contour":"ナサケブカ＼イ"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -9096,12 +9278,13 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "その教授はシェークスピアの研究で名高い。",
-      "id": "The professor is noted for his study of Shakespeare.",
+      "id": "Profesor ini terkenal karena studinya tentang Shakespeare.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"ナダカ＼イ"}
+},
     {
       "jp": "彼女は歌手として名高い。",
       "id": "Dia famous as a singer.",
@@ -9125,7 +9308,7 @@ window.vocabN1_Adjectives = [
   "word": "何気ない",
   "reading": "なにげない",
   "romaji": "nanigenai",
-  "meaning_id": "casual; unconcerned",
+  "meaning_id": "santai; tidak peduli",
   "meaning_en": "casual; unconcerned",
   "jlpt": "n1",
   "pos": "i-adj",
@@ -9146,15 +9329,16 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "彼女はその本に何気なく目をやった。",
-      "id": "She took a casual glance at the book.",
+      "id": "Dia melirik buku itu dengan santai.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":4,"category":"nakadaka","mora_count":5,"downstep_mora":4,"contour":"ナニゲナ＼イ"}
+},
     {
       "jp": "私は何気なくその雑誌を見た。",
-      "id": "I took a casual look at the magazine.",
+      "id": "Aku melihat majalah itu dengan santai.",
       "level": "n1",
       "tags": [
         "umum"
@@ -9175,7 +9359,7 @@ window.vocabN1_Adjectives = [
   "word": "生臭い",
   "reading": "なまぐさい",
   "romaji": "namagusai",
-  "meaning_id": "smelling of fish or blood; fish or meat",
+  "meaning_id": "berbau ikan atau darah; ikan atau daging",
   "meaning_en": "smelling of fish or blood; fish or meat",
   "jlpt": "n1",
   "pos": "i-adj",
@@ -9196,12 +9380,13 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "まな板が生臭いです。",
-      "id": "The chopping board smells fishy.",
+      "id": "Talenannya berbau amis.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":4,"category":"nakadaka","mora_count":5,"downstep_mora":4,"contour":"ナマグサ＼イ"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -9217,7 +9402,7 @@ window.vocabN1_Adjectives = [
   "word": "生温い",
   "reading": "なまぬるい",
   "romaji": "namanurui",
-  "meaning_id": "lukewarm; halfhearted",
+  "meaning_id": "suam-suam kuku; setengah hati",
   "meaning_en": "lukewarm; halfhearted",
   "jlpt": "n1",
   "pos": "i-adj",
@@ -9238,15 +9423,16 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "その水、生ぬるいよ。",
-      "id": "The water is lukewarm.",
+      "id": "Airnya suam-suam kuku.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":4,"category":"nakadaka","mora_count":5,"downstep_mora":4,"contour":"ナマヌル＼イ"}
+},
     {
       "jp": "コストダウンもできない生ぬるいリストラがJAL再建を危うくする。",
-      "id": "Half-hearted cutbacks that can't save money leave JAL's rehabilitation in doubt.",
+      "id": "Pemotongan setengah hati yang tidak bisa menghemat uang membuat rehabilitasi JAL diragukan.",
       "level": "n1",
       "tags": [
         "umum"
@@ -9267,7 +9453,7 @@ window.vocabN1_Adjectives = [
   "word": "滑らか",
   "reading": "なめらか",
   "romaji": "nameraka",
-  "meaning_id": "smoothness; glassiness",
+  "meaning_id": "kehalusan; sifat seperti kaca",
   "meaning_en": "smoothness; glassiness",
   "jlpt": "n1",
   "pos": "na-adj",
@@ -9288,12 +9474,13 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "このテーブルの表面は滑らかだ。",
-      "id": "This table has a smooth surface.",
+      "id": "Meja ini memiliki permukaan yang halus.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":4,"downstep_mora":2,"contour":"ナメ＼ラカ"}
+},
     {
       "jp": "彼女は滑らかに英語を話す。",
       "id": "Dia a fluent speaker of English.",
@@ -9338,12 +9525,13 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "彼女は悩ましい目つきで僕を見た。",
-      "id": "She looked at me seductively.",
+      "id": "Dia menatapku dengan menggoda.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":4,"category":"nakadaka","mora_count":5,"downstep_mora":4,"contour":"ナヤマシ＼イ"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -9359,7 +9547,7 @@ window.vocabN1_Adjectives = [
   "word": "馴れ馴れしい",
   "reading": "なれなれしい",
   "romaji": "narenareshii",
-  "meaning_id": "over-familiar",
+  "meaning_id": "terlalu familiar",
   "meaning_en": "over-familiar",
   "jlpt": "n1",
   "pos": "i-adj",
@@ -9384,11 +9572,12 @@ window.vocabN1_Adjectives = [
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":5,"category":"nakadaka","mora_count":6,"downstep_mora":5,"contour":"ナレナレシ＼イ"}
+},
     {
       "jp": "年上の人にあまり馴れ馴れしくしてはいけない。",
-      "id": "You must not take liberties with older people.",
+      "id": "Anda tidak boleh mengambil kebebasan dengan orang yang lebih tua.",
       "level": "n1",
       "tags": [
         "umum"
@@ -9409,7 +9598,7 @@ window.vocabN1_Adjectives = [
   "word": "ナンセンス",
   "reading": "ナンセンス",
   "romaji": "nansensu",
-  "meaning_id": "nonsense",
+  "meaning_id": "omong kosong",
   "meaning_en": "nonsense",
   "jlpt": "n1",
   "pos": "na-adj",
@@ -9430,15 +9619,16 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "それは、いくぶんナンセンスな趣きの楽しさがあった。",
-      "id": "It was a delightful bit of nonsense.",
+      "id": "Itu adalah omong kosong yang menyenangkan.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":0,"downstep_mora":1,"contour":"＼"}
+},
     {
       "jp": "そんなナンセンスなことはやめてくれよ。",
-      "id": "Cut out the nonsense, will you?",
+      "id": "Hentikan omong kosong itu, ya?",
       "level": "n1",
       "tags": [
         "umum"
@@ -9480,15 +9670,16 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "かわいさ余って憎さ百倍。",
-      "id": "The greatest hate springs from the greatest love.",
+      "id": "Kebencian terbesar muncul dari cinta terbesar.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"ニク＼イ"}
+},
     {
       "jp": "一度悪い評判が立ったらどうにもならぬ。",
-      "id": "Give a dog a bad name and hang him.",
+      "id": "Beri nama buruk pada anjing dan gantung dia.",
       "level": "n1",
       "tags": [
         "umum"
@@ -9530,15 +9721,16 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "その薬を飲むと私はとても眠たくなりました。",
-      "id": "The medicine made me very sleepy.",
+      "id": "Obatnya membuatku sangat mengantuk.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ネムタイ￣"}
+},
     {
       "jp": "ちょうど目を覚ましたところで私はまだ眠たかった。",
-      "id": "I'd just woken up and was still drowsy.",
+      "id": "Saya baru saja bangun dan masih mengantuk.",
       "level": "n1",
       "tags": [
         "umum"
@@ -9559,7 +9751,7 @@ window.vocabN1_Adjectives = [
   "word": "年長",
   "reading": "ねんちょう",
   "romaji": "nenchou",
-  "meaning_id": "seniority",
+  "meaning_id": "senioritas",
   "meaning_en": "seniority",
   "jlpt": "n1",
   "pos": "na-adj",
@@ -9580,12 +9772,13 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "年長の息子たちは今は父親からまったく独立している。",
-      "id": "The elder sons are now quite independent of their father.",
+      "id": "Anak laki-laki tertua sekarang sudah cukup mandiri dari ayah mereka.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ネンチョウ￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -9601,7 +9794,7 @@ window.vocabN1_Adjectives = [
   "word": "望ましい",
   "reading": "のぞましい",
   "romaji": "nozomashii",
-  "meaning_id": "desirable; hoped for",
+  "meaning_id": "diinginkan; diharapkan",
   "meaning_en": "desirable; hoped for",
   "jlpt": "n1",
   "pos": "i-adj",
@@ -9622,15 +9815,16 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "その会合には出席されることが望ましい。",
-      "id": "It is desirable that you should attend the meeting.",
+      "id": "Sebaiknya Anda menghadiri pertemuan tersebut.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":4,"category":"nakadaka","mora_count":5,"downstep_mora":4,"contour":"ノゾマシ＼イ"}
+},
     {
       "jp": "彼女はひとりでやるのが望ましい。",
-      "id": "It is preferable that she do it alone.",
+      "id": "Lebih baik dia melakukannya sendiri.",
       "level": "n1",
       "tags": [
         "umum"
@@ -9672,15 +9866,16 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "こんなのどかな眺めは見たことがない。",
-      "id": "Never have I seen such a peaceful scene.",
+      "id": "Saya belum pernah melihat pemandangan yang begitu damai.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"ノ＼ドカ"}
+},
     {
       "jp": "私は今まではそんなにのどかな光景を見たことがない。",
-      "id": "Never in my life have I seen such a peaceful sight.",
+      "id": "Belum pernah dalam hidupku aku melihat pemandangan yang begitu damai.",
       "level": "n1",
       "tags": [
         "umum"
@@ -9722,15 +9917,16 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "人生は、はかない夢にすぎない。",
-      "id": "Life is but an empty dream.",
+      "id": "Hidup hanyalah mimpi kosong.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"ハカナ＼イ"}
+},
     {
       "jp": "人の人生は、はかないものだ。",
-      "id": "The life of a person is a transient thing.",
+      "id": "Kehidupan seseorang adalah sesuatu yang sementara.",
       "level": "n1",
       "tags": [
         "umum"
@@ -9751,7 +9947,7 @@ window.vocabN1_Adjectives = [
   "word": "馬鹿馬鹿しい",
   "reading": "ばかばかしい",
   "romaji": "bakabakashii",
-  "meaning_id": "stupid",
+  "meaning_id": "bodoh",
   "meaning_en": "stupid",
   "jlpt": "n1",
   "pos": "i-adj",
@@ -9772,15 +9968,16 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "ばかばかしいとしか言いようがない。",
-      "id": "It is neither more nor less than absurd.",
+      "id": "Ini tidak lebih dan tidak kurang dari absurd.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":5,"category":"nakadaka","mora_count":6,"downstep_mora":5,"contour":"バカバカシ＼イ"}
+},
     {
       "jp": "彼の話はばかばかしいと言ってもいいくらいだった。",
-      "id": "His speech verged on the ridiculous.",
+      "id": "Pidatonya hampir menggelikan.",
       "level": "n1",
       "tags": [
         "umum"
@@ -9826,8 +10023,9 @@ window.vocabN1_Adjectives = [
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ハクジャク￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -9868,8 +10066,9 @@ window.vocabN1_Adjectives = [
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":5,"category":"nakadaka","mora_count":6,"downstep_mora":5,"contour":"ハナバナシ＼イ"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -9906,15 +10105,16 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "ショービジネスというのは本当に華やかだ。",
-      "id": "Show business is really glamorous.",
+      "id": "Bisnis pertunjukan sangat glamor.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":4,"downstep_mora":2,"contour":"ハナ＼ヤカ"}
+},
     {
       "jp": "アカデミー授賞式は、ハリウッド最大の華やかな催しだ。",
-      "id": "The Oscar ceremonies are Hollywood's biggest extravaganza.",
+      "id": "Upacara Oscar adalah ekstravaganza terbesar di Hollywood.",
       "level": "n1",
       "tags": [
         "umum"
@@ -9956,15 +10156,16 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "私の故郷は海のはるか向こうにある。",
-      "id": "My home lies far across the sea.",
+      "id": "Rumahku terletak jauh di seberang laut.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"ハ＼ルカ"}
+},
     {
       "jp": "はるか遠方に稲妻が走るのが見えた。",
-      "id": "I saw a flash of lightning far in the distance.",
+      "id": "Saya melihat kilatan petir jauh di kejauhan.",
       "level": "n1",
       "tags": [
         "umum"
@@ -10006,12 +10207,13 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "半端な時間に自転車に乗るだけだ。",
-      "id": "I only ride a bicycle at odd times.",
+      "id": "Saya hanya mengendarai sepeda pada waktu-waktu ganjil.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ハンパ￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -10048,15 +10250,16 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "彼が学校を出てからずいぶん久しい。",
-      "id": "It's such a long time since he left school.",
+      "id": "Sudah lama sekali sejak dia meninggalkan sekolah.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"ヒサシ＼イ"}
+},
     {
       "jp": "驕る平家は久しからず。",
-      "id": "Pride will have a fall.",
+      "id": "Kebanggaan akan jatuh.",
       "level": "n1",
       "tags": [
         "umum"
@@ -10077,7 +10280,7 @@ window.vocabN1_Adjectives = [
   "word": "悲惨",
   "reading": "ひさん",
   "romaji": "hisan",
-  "meaning_id": "misery",
+  "meaning_id": "kesengsaraan",
   "meaning_en": "misery",
   "jlpt": "n1",
   "pos": "na-adj",
@@ -10098,15 +10301,16 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "戦争には悲惨と悲しみが伴う。",
-      "id": "Misery and sorrow accompany war.",
+      "id": "Kesengsaraan dan kesedihan menyertai perang.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ヒサン￣"}
+},
     {
       "jp": "台風で多くの悲惨な事態が生じた。",
-      "id": "Much misery came about because of the typhoon.",
+      "id": "Banyak penderitaan yang terjadi karena topan tersebut.",
       "level": "n1",
       "tags": [
         "umum"
@@ -10148,15 +10352,16 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "彼は密かに遊びたいと思っている。",
-      "id": "He has a secret desire to play.",
+      "id": "Dia memiliki keinginan rahasia untuk bermain.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"ヒソ＼カ"}
+},
     {
       "jp": "彼女は密かに彼の失敗を笑った。",
-      "id": "She laughed up her sleeve at his failure.",
+      "id": "Dia tertawa terbahak-bahak atas kegagalannya.",
       "level": "n1",
       "tags": [
         "umum"
@@ -10177,7 +10382,7 @@ window.vocabN1_Adjectives = [
   "word": "ひたすら",
   "reading": "ひたすら",
   "romaji": "hitasura",
-  "meaning_id": "earnestly",
+  "meaning_id": "dengan sungguh-sungguh",
   "meaning_en": "earnestly",
   "jlpt": "n1",
   "pos": "na-adj",
@@ -10198,15 +10403,16 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "私はそれで一向に構いません。",
-      "id": "That's just fine with me.",
+      "id": "Tidak masalah bagi saya.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ヒタスラ￣"}
+},
     {
       "jp": "議論が空回りして一向に発展しなかった。",
-      "id": "The discussion produced a great deal of noise, but no forward motion.",
+      "id": "Diskusi tersebut menghasilkan banyak keributan, namun tidak ada gerakan maju.",
       "level": "n1",
       "tags": [
         "umum"
@@ -10227,7 +10433,7 @@ window.vocabN1_Adjectives = [
   "word": "びっしょり",
   "reading": "びっしょり",
   "romaji": "bisshori",
-  "meaning_id": "wet through; drenched",
+  "meaning_id": "basah kuyup",
   "meaning_en": "wet through; drenched",
   "jlpt": "n1",
   "pos": "na-adj",
@@ -10248,15 +10454,16 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "彼女の顔は汗でびっしょりだった。",
-      "id": "Her face was drenched with sweat.",
+      "id": "Wajahnya basah oleh keringat.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":0,"downstep_mora":0,"contour":"￣"}
+},
     {
       "jp": "暑かったので、彼女は汗びっしょりになりました。",
-      "id": "It being hot, she was wet with sweat.",
+      "id": "Karena panas, dia basah oleh keringat.",
       "level": "n1",
       "tags": [
         "umum"
@@ -10298,15 +10505,16 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "その人の人柄は友を見ればわかる。",
-      "id": "A man may be known by the company he keeps.",
+      "id": "Seorang pria mungkin dikenal dari perusahaan yang dia jalani.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ヒトガラ￣"}
+},
     {
       "jp": "人柄のほうが財産よりも重要である。",
-      "id": "What you are is more important than what you have.",
+      "id": "Siapa diri Anda lebih penting daripada apa yang Anda miliki.",
       "level": "n1",
       "tags": [
         "umum"
@@ -10348,15 +10556,16 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "古代人たちは地球は平たいと信じていた。",
-      "id": "The ancients believed the earth was flat.",
+      "id": "Orang dahulu percaya bahwa bumi itu datar.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ヒラタイ￣"}
+},
     {
       "jp": "彼女はハンバーグの肉をたたいて平たくした。",
-      "id": "She patted the hamburger meat into a flat shape.",
+      "id": "Dia menepuk-nepuk daging hamburger hingga berbentuk pipih.",
       "level": "n1",
       "tags": [
         "umum"
@@ -10377,7 +10586,7 @@ window.vocabN1_Adjectives = [
   "word": "微量",
   "reading": "びりょう",
   "romaji": "biryou",
-  "meaning_id": "minuscule amount; extremely small quantity",
+  "meaning_id": "jumlah yang sangat kecil; kuantitas yang sangat kecil",
   "meaning_en": "minuscule amount; extremely small quantity",
   "jlpt": "n1",
   "pos": "na-adj",
@@ -10402,8 +10611,9 @@ window.vocabN1_Adjectives = [
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ビリョウ￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -10440,12 +10650,13 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "私は寒さに敏感だ。",
-      "id": "I am very sensitive to the cold.",
+      "id": "Saya sangat sensitif terhadap dingin.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ビンカン￣"}
+},
     {
       "jp": "彼は批評に対してたいへん敏感だ。",
       "id": "Dia very sensitive to criticism.",
@@ -10469,7 +10680,7 @@ window.vocabN1_Adjectives = [
   "word": "貧困",
   "reading": "ひんこん",
   "romaji": "hinkon",
-  "meaning_id": "poverty; lack",
+  "meaning_id": "kemiskinan; kekurangan",
   "meaning_en": "poverty; lack",
   "jlpt": "n1",
   "pos": "na-adj",
@@ -10490,12 +10701,13 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "貧困は幸福への障害とはならない。",
-      "id": "Poverty is not a bar to happiness.",
+      "id": "Kemiskinan bukanlah penghalang menuju kebahagiaan.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ヒンコン￣"}
+},
     {
       "jp": "貧困はしばしば犯罪の原因となる。",
       "id": "Poverty often engenders crime.",
@@ -10540,15 +10752,16 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "私のドイツ語の知識は貧弱です。",
-      "id": "My knowledge of German is poor.",
+      "id": "Pengetahuan saya tentang bahasa Jerman buruk.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ヒンジャク￣"}
+},
     {
       "jp": "彼の英語の知識は貧弱である。",
-      "id": "His knowledge of English is poor.",
+      "id": "Pengetahuannya tentang bahasa Inggris buruk.",
       "level": "n1",
       "tags": [
         "umum"
@@ -10569,7 +10782,7 @@ window.vocabN1_Adjectives = [
   "word": "頻繁",
   "reading": "ひんぱん",
   "romaji": "hinpan",
-  "meaning_id": "frequency",
+  "meaning_id": "frekuensi",
   "meaning_en": "frequency",
   "jlpt": "n1",
   "pos": "na-adj",
@@ -10594,11 +10807,12 @@ window.vocabN1_Adjectives = [
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ヒンパン￣"}
+},
     {
       "jp": "頻繁にパーティーを開くのが大好きだ。",
-      "id": "They love to give parties all the time.",
+      "id": "Mereka suka mengadakan pesta sepanjang waktu.",
       "level": "n1",
       "tags": [
         "umum"
@@ -10640,15 +10854,16 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "伝染病が不意にその町を襲った。",
-      "id": "A contagious disease descended on the town.",
+      "id": "Penyakit menular melanda kota itu.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":2,"downstep_mora":0,"contour":"フイ￣"}
+},
     {
       "jp": "砦は不意に攻撃された。",
-      "id": "The fort was attacked by surprise.",
+      "id": "Benteng diserang secara tiba-tiba.",
       "level": "n1",
       "tags": [
         "umum"
@@ -10669,7 +10884,7 @@ window.vocabN1_Adjectives = [
   "word": "不可欠",
   "reading": "ふかけつ",
   "romaji": "fukaketsu",
-  "meaning_id": "indispensable; essential",
+  "meaning_id": "sangat diperlukan; penting",
   "meaning_en": "indispensable; essential",
   "jlpt": "n1",
   "pos": "na-adj",
@@ -10690,15 +10905,16 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "自由こそ不可欠なものだ。",
-      "id": "Freedom is the breath of life.",
+      "id": "Kebebasan adalah nafas kehidupan.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":4,"downstep_mora":2,"contour":"フカ＼ケツ"}
+},
     {
       "jp": "政治家には洞察力が不可欠である。",
-      "id": "Vision is indispensable to a statesman.",
+      "id": "Visi sangat diperlukan bagi seorang negarawan.",
       "level": "n1",
       "tags": [
         "umum"
@@ -10740,15 +10956,16 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "１３日の金曜日は不吉な日だと言われている。",
-      "id": "It is said that Friday the 13th is an unlucky day.",
+      "id": "Dikatakan bahwa hari Jumat tanggal 13 adalah hari sial.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"フキツ￣"}
+},
     {
       "jp": "１３は不吉な数であるという人がいる。",
-      "id": "Some people say thirteen is an unlucky number.",
+      "id": "Ada yang bilang tiga belas adalah angka sial.",
       "level": "n1",
       "tags": [
         "umum"
@@ -10790,15 +11007,16 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "不景気になってきているみたいね。",
-      "id": "We're in store for a recession.",
+      "id": "Kita sedang bersiap menghadapi resesi.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":4,"downstep_mora":2,"contour":"フケ＼イキ"}
+},
     {
       "jp": "商売が不景気になりつつある。",
-      "id": "Trade is getting depressed.",
+      "id": "Perdagangan semakin tertekan.",
       "level": "n1",
       "tags": [
         "umum"
@@ -10819,7 +11037,7 @@ window.vocabN1_Adjectives = [
   "word": "相応しい",
   "reading": "ふさわしい",
   "romaji": "fusawashii",
-  "meaning_id": "appropriate",
+  "meaning_id": "sesuai",
   "meaning_en": "appropriate",
   "jlpt": "n1",
   "pos": "i-adj",
@@ -10840,15 +11058,16 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "そのような行為は紳士に相応しくない。",
-      "id": "Such conduct does not become a gentleman.",
+      "id": "Tingkah laku seperti itu tidak menjadikan kita seorang pria sejati.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":4,"category":"nakadaka","mora_count":5,"downstep_mora":4,"contour":"フサワシ＼イ"}
+},
     {
       "jp": "君にふさわしいはずはないのだから。",
-      "id": "He couldn't be good for you.",
+      "id": "Dia tidak mungkin baik untukmu.",
       "level": "n1",
       "tags": [
         "umum"
@@ -10869,7 +11088,7 @@ window.vocabN1_Adjectives = [
   "word": "不順",
   "reading": "ふじゅん",
   "romaji": "fujun",
-  "meaning_id": "irregularity; unseasonableness",
+  "meaning_id": "ketidakteraturan; ketidaksesuaian musim",
   "meaning_en": "irregularity; unseasonableness",
   "jlpt": "n1",
   "pos": "na-adj",
@@ -10890,12 +11109,13 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "今年は天候不順だった。",
-      "id": "The weather has been unusual this year.",
+      "id": "Cuaca tahun ini tidak biasa.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"フジュン￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -10932,15 +11152,16 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "警官が不審な歩行者をじっと見つめていた。",
-      "id": "A policeman was gazing at a suspicious pedestrian.",
+      "id": "Seorang polisi sedang menatap pejalan kaki yang mencurigakan.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"フシン￣"}
+},
     {
       "jp": "不審な人をみかけたら警察に知らせてください。",
-      "id": "If you see a suspicious person, please inform the police.",
+      "id": "Jika Anda melihat orang yang mencurigakan, harap lapor ke polisi.",
       "level": "n1",
       "tags": [
         "umum"
@@ -10982,15 +11203,16 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "株式市場は長い不振を続けている。",
-      "id": "The stock market is in a prolonged slump.",
+      "id": "Pasar saham berada dalam kemerosotan berkepanjangan.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"フシン￣"}
+},
     {
       "jp": "自動車産業の不振で多くの人が職を失うだろう。",
-      "id": "Many people will lose their jobs due to the slump in the auto industry.",
+      "id": "Banyak orang akan kehilangan pekerjaan karena kemerosotan industri otomotif.",
       "level": "n1",
       "tags": [
         "umum"
@@ -11032,12 +11254,13 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "商売は先月ちょっと不調だった。",
-      "id": "Business was a little slow last month.",
+      "id": "Bisnis agak lambat bulan lalu.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"フチョウ￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -11074,15 +11297,16 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "その女性は不当に私を責めた。",
-      "id": "That woman has wrongly accused me.",
+      "id": "Wanita itu telah salah menuduhku.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"フトウ￣"}
+},
     {
       "jp": "ビルは不当にも弱みに付け込まれた。",
-      "id": "Unfair advantage was taken of Bill's weakness.",
+      "id": "Kelemahan Bill dimanfaatkan secara tidak adil.",
       "level": "n1",
       "tags": [
         "umum"
@@ -11103,7 +11327,7 @@ window.vocabN1_Adjectives = [
   "word": "無難",
   "reading": "ぶなん",
   "romaji": "bunan",
-  "meaning_id": "safety; security",
+  "meaning_id": "keamanan",
   "meaning_en": "safety; security",
   "jlpt": "n1",
   "pos": "na-adj",
@@ -11124,12 +11348,13 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "男性の一部と女性の一部が計算は速いと言うほうが無難だ。",
-      "id": "It is safer to say that some men and some women are good at figures.",
+      "id": "Lebih aman untuk mengatakan bahwa beberapa pria dan beberapa wanita pandai dalam hal angka.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ブナン￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -11145,7 +11370,7 @@ window.vocabN1_Adjectives = [
   "word": "不憫",
   "reading": "ふびん",
   "romaji": "fubin",
-  "meaning_id": "pity; compassion",
+  "meaning_id": "kasihan; kasih sayang",
   "meaning_en": "pity; compassion",
   "jlpt": "n1",
   "pos": "na-adj",
@@ -11170,8 +11395,9 @@ window.vocabN1_Adjectives = [
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"フ＼ビン"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -11208,15 +11434,16 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "彼は不服そうに口をとがらせた。",
-      "id": "He pouted with dissatisfaction.",
+      "id": "Dia cemberut karena ketidakpuasan.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"フフク￣"}
+},
     {
       "jp": "彼はその決定に不服を唱えた。",
-      "id": "He raised an objection to the decision.",
+      "id": "Dia mengajukan keberatan atas keputusan tersebut.",
       "level": "n1",
       "tags": [
         "umum"
@@ -11258,15 +11485,16 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "彼がそれをした時間は不明である。",
-      "id": "The time when he did it was not known.",
+      "id": "Kapan dia melakukannya tidak diketahui.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"フメイ￣"}
+},
     {
       "jp": "火事の原因は不明である。",
-      "id": "The cause of the fire is not known.",
+      "id": "Penyebab kebakaran belum diketahui.",
       "level": "n1",
       "tags": [
         "umum"
@@ -11308,15 +11536,16 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "彼は不良仲間とぐるになっていた。",
-      "id": "He fell into bad company.",
+      "id": "Dia jatuh ke dalam pergaulan yang buruk.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"フリョウ￣"}
+},
     {
       "jp": "不良たちは彼を殴り倒して財布を奪った。",
-      "id": "The delinquents knocked him down and stole his wallet.",
+      "id": "Para penjahat itu menjatuhkannya dan mencuri dompetnya.",
       "level": "n1",
       "tags": [
         "umum"
@@ -11337,7 +11566,7 @@ window.vocabN1_Adjectives = [
   "word": "無礼",
   "reading": "ぶれい",
   "romaji": "burei",
-  "meaning_id": "impolite; rude",
+  "meaning_id": "tidak sopan; kasar",
   "meaning_en": "impolite; rude",
   "jlpt": "n1",
   "pos": "na-adj",
@@ -11358,15 +11587,16 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "彼の無礼さには我慢出来ない。",
-      "id": "I can't stand his impoliteness.",
+      "id": "Saya tidak tahan dengan ketidaksopanannya.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"ブ＼レイ"}
+},
     {
       "jp": "人をじっと見つめるのは無礼である。",
-      "id": "It's impolite to stare at people.",
+      "id": "Tidak sopan menatap orang.",
       "level": "n1",
       "tags": [
         "umum"
@@ -11412,8 +11642,9 @@ window.vocabN1_Adjectives = [
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":0,"downstep_mora":0,"contour":"￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -11429,7 +11660,7 @@ window.vocabN1_Adjectives = [
   "word": "ぺこぺこ",
   "reading": "ぺこぺこ",
   "romaji": "pekopeko",
-  "meaning_id": "fawn; be very hungry",
+  "meaning_id": "coklat kekuningan; menjadi sangat lapar",
   "meaning_en": "fawn; be very hungry",
   "jlpt": "n1",
   "pos": "na-adj",
@@ -11450,12 +11681,13 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "上役にやたらにぺこぺこするな。",
-      "id": "Don't be subservient to your boss.",
+      "id": "Jangan tunduk pada atasan Anda.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":0,"downstep_mora":1,"contour":"＼"}
+},
     {
       "jp": "お腹がぺこぺこです。",
       "id": "I'm starved.",
@@ -11479,7 +11711,7 @@ window.vocabN1_Adjectives = [
   "word": "ベスト",
   "reading": "ベスト",
   "romaji": "besuto",
-  "meaning_id": "best; vest",
+  "meaning_id": "terbaik; rompi",
   "meaning_en": "best; vest",
   "jlpt": "n1",
   "pos": "na-adj",
@@ -11504,8 +11736,9 @@ window.vocabN1_Adjectives = [
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":0,"downstep_mora":1,"contour":"＼"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -11542,15 +11775,16 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "ケンさん、君は本気かい。",
-      "id": "Are you on the level, Ken?",
+      "id": "Apakah kamu berada di level yang sama, Ken?",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ホンキ￣"}
+},
     {
       "jp": "本気で会社辞めること考えてるの？",
-      "id": "Are you seriously thinking about quitting your job?",
+      "id": "Apakah Anda serius berpikir untuk berhenti dari pekerjaan Anda?",
       "level": "n1",
       "tags": [
         "umum"
@@ -11596,8 +11830,9 @@ window.vocabN1_Adjectives = [
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":5,"category":"nakadaka","mora_count":6,"downstep_mora":5,"contour":"マギラワシ＼イ"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -11634,15 +11869,16 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "非会員は50ドル増しとなります。",
-      "id": "Non-members pay an additional 50 dollars.",
+      "id": "Non-anggota membayar tambahan 50 dolar.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":2,"downstep_mora":0,"contour":"マシ￣"}
+},
     {
       "jp": "彼女は会社の床掃除よりましな仕事を望んだ。",
-      "id": "She wanted a better job than cleaning office floors.",
+      "id": "Dia menginginkan pekerjaan yang lebih baik daripada membersihkan lantai kantor.",
       "level": "n1",
       "tags": [
         "umum"
@@ -11663,7 +11899,7 @@ window.vocabN1_Adjectives = [
   "word": "待ち遠しい",
   "reading": "まちどおしい",
   "romaji": "machidooshii",
-  "meaning_id": "looking forward to",
+  "meaning_id": "menantikannya",
   "meaning_en": "looking forward to",
   "jlpt": "n1",
   "pos": "i-adj",
@@ -11684,15 +11920,16 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "パーティーが待ち遠しくて仕方ない。",
-      "id": "I just can't wait for the party.",
+      "id": "Aku tidak sabar menunggu pestanya.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":5,"category":"nakadaka","mora_count":6,"downstep_mora":5,"contour":"マチドオシ＼イ"}
+},
     {
       "jp": "金曜日のパーティーが待ち遠しいよ。",
-      "id": "We can hardly wait for the party on Friday.",
+      "id": "Kami tidak sabar menunggu pesta pada hari Jumat.",
       "level": "n1",
       "tags": [
         "umum"
@@ -11734,15 +11971,16 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "その件について彼らの意見はまちまちだ。",
-      "id": "Their views vary on the subject.",
+      "id": "Pandangan mereka berbeda-beda mengenai topik ini.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":4,"downstep_mora":2,"contour":"マチ＼マチ"}
+},
     {
       "jp": "箱の大きさは小さいのから大きいのまでまちまちだ。",
-      "id": "The boxes vary in size from small to large.",
+      "id": "Ukuran kotak bervariasi dari kecil hingga besar.",
       "level": "n1",
       "tags": [
         "umum"
@@ -11763,7 +12001,7 @@ window.vocabN1_Adjectives = [
   "word": "真ん丸い",
   "reading": "まんまるい",
   "romaji": "manmarui",
-  "meaning_id": "perfectly circular",
+  "meaning_id": "melingkar sempurna",
   "meaning_en": "perfectly circular",
   "jlpt": "n1",
   "pos": "i-adj",
@@ -11788,8 +12026,9 @@ window.vocabN1_Adjectives = [
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":4,"category":"nakadaka","mora_count":5,"downstep_mora":4,"contour":"マンマル＼イ"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -11805,7 +12044,7 @@ window.vocabN1_Adjectives = [
   "word": "見苦しい",
   "reading": "みぐるしい",
   "romaji": "migurushii",
-  "meaning_id": "unsightly; ugly",
+  "meaning_id": "tidak sedap dipandang; jelek",
   "meaning_en": "unsightly; ugly",
   "jlpt": "n1",
   "pos": "i-adj",
@@ -11826,12 +12065,13 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "ここだけの話だけれど、あの太った見苦しい魔女は減量中なのだ。",
-      "id": "Between ourselves, the fat ugly witch is on a diet.",
+      "id": "Di antara kami sendiri, penyihir gemuk jelek sedang diet.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":4,"category":"nakadaka","mora_count":5,"downstep_mora":4,"contour":"ミグルシ＼イ"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -11868,12 +12108,13 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "彼のフランス語の知識は未熟だ。",
-      "id": "His knowledge of French is poor.",
+      "id": "Pengetahuannya tentang bahasa Prancis buruk.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ミジュク￣"}
+},
     {
       "jp": "彼は商売はまだ未熟だ。",
       "id": "Dia still green in business.",
@@ -11897,7 +12138,7 @@ window.vocabN1_Adjectives = [
   "word": "見すぼらしい",
   "reading": "みすぼらしい",
   "romaji": "misuborashii",
-  "meaning_id": "shabby; seedy",
+  "meaning_id": "lusuh; kumuh",
   "meaning_en": "shabby; seedy",
   "jlpt": "n1",
   "pos": "i-adj",
@@ -11918,15 +12159,16 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "彼女はみすぼらしい小さいおうちを見ましたが急いで通り過ぎてしまいませんでした。",
-      "id": "She saw the shabby little house, but she didn't hurry by.",
+      "id": "Dia melihat rumah kecil yang kumuh itu, tapi dia tidak bergegas melewatinya.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":5,"category":"nakadaka","mora_count":6,"downstep_mora":5,"contour":"ミスボラシ＼イ"}
+},
     {
       "jp": "彼らはみすぼらしい小さな家に住んでいる。",
-      "id": "They live in a wretched little house.",
+      "id": "Mereka tinggal di sebuah rumah kecil yang menyedihkan.",
       "level": "n1",
       "tags": [
         "umum"
@@ -11968,12 +12210,13 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "そもそも事故の大半は熱帯雨林ではなく、身近な場所でおこるのである。",
-      "id": "Most accidents, after all, happen around the corner, not in the rainforest.",
+      "id": "Kebanyakan kecelakaan terjadi di sekitar lokasi, bukan di hutan hujan.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ミヂカ￣"}
+},
     {
       "jp": "身近にいないと忘れ去られる。",
       "id": "Out of sight, out of mind.",
@@ -12018,15 +12261,16 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "オランダ語はドイツ語と密接なつながりがある。",
-      "id": "Dutch is closely related to German.",
+      "id": "Bahasa Belanda berkerabat dekat dengan bahasa Jerman.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ミッセツ￣"}
+},
     {
       "jp": "両国はお互いに密接な関係がある。",
-      "id": "The two countries are closely related to each other.",
+      "id": "Kedua negara mempunyai hubungan dekat satu sama lain.",
       "level": "n1",
       "tags": [
         "umum"
@@ -12068,15 +12312,16 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "計画はまだ未定である。",
-      "id": "The plans are still up in the air.",
+      "id": "Rencananya masih belum jelas.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ミテイ￣"}
+},
     {
       "jp": "新工場の建設用地はまだ未定である。",
-      "id": "The site for the new factory has not been decided.",
+      "id": "Lokasi pabrik baru belum diputuskan.",
       "level": "n1",
       "tags": [
         "umum"
@@ -12118,12 +12363,13 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "彼女にはまだ未練がある。",
-      "id": "I still have some feelings for her.",
+      "id": "Aku masih punya perasaan padanya.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"ミ＼レン"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -12139,7 +12385,7 @@ window.vocabN1_Adjectives = [
   "word": "無意味",
   "reading": "むいみ",
   "romaji": "muimi",
-  "meaning_id": "nonsense; no meaning",
+  "meaning_id": "omong kosong; tidak ada artinya",
   "meaning_en": "nonsense; no meaning",
   "jlpt": "n1",
   "pos": "na-adj",
@@ -12160,15 +12406,16 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "そんなことをしても無意味だ。",
-      "id": "It's nonsense to try that.",
+      "id": "Tidak masuk akal untuk mencobanya.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"ムイ＼ミ"}
+},
     {
       "jp": "それはまったく無意味だ。",
-      "id": "That's quite meaningless.",
+      "id": "Itu tidak ada artinya.",
       "level": "n1",
       "tags": [
         "umum"
@@ -12189,7 +12436,7 @@ window.vocabN1_Adjectives = [
   "word": "無口",
   "reading": "むくち",
   "romaji": "mukuchi",
-  "meaning_id": "reticence",
+  "meaning_id": "keengganan",
   "meaning_en": "reticence",
   "jlpt": "n1",
   "pos": "na-adj",
@@ -12210,12 +12457,13 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "大きくて、のろくて、無口でした。",
-      "id": "He was big and slow and silent.",
+      "id": "Dia besar, lambat, dan pendiam.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"ム＼クチ"}
+},
     {
       "jp": "無口だからなおさら彼が好きなのだ。",
       "id": "Saya suka him all the more for his reticence.",
@@ -12260,15 +12508,16 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "脅迫のもとになされた約束は無効だ。",
-      "id": "A promise given under a threat is worthless.",
+      "id": "Janji yang diberikan di bawah ancaman tidak ada gunanya.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ムコウ￣"}
+},
     {
       "jp": "その遺言は法廷で無効と宣告された。",
-      "id": "The will was declared void by the court.",
+      "id": "Surat wasiat tersebut dinyatakan batal oleh pengadilan.",
       "level": "n1",
       "tags": [
         "umum"
@@ -12289,7 +12538,7 @@ window.vocabN1_Adjectives = [
   "word": "無邪気",
   "reading": "むじゃき",
   "romaji": "mujaki",
-  "meaning_id": "innocence; simple-mindedness",
+  "meaning_id": "tidak bersalah; kesederhanaan pikiran",
   "meaning_en": "innocence; simple-mindedness",
   "jlpt": "n1",
   "pos": "na-adj",
@@ -12310,15 +12559,16 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "彼女は無邪気を装った。",
-      "id": "She put on an air of innocence.",
+      "id": "Dia memasang tampang polos.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"ム＼ジャキ"}
+},
     {
       "jp": "無邪気とはどういうものなのですか。",
-      "id": "What is it like to be innocent?",
+      "id": "Bagaimana rasanya tidak bersalah?",
       "level": "n1",
       "tags": [
         "umum"
@@ -12339,7 +12589,7 @@ window.vocabN1_Adjectives = [
   "word": "無知",
   "reading": "むち",
   "romaji": "muchi",
-  "meaning_id": "ignorance",
+  "meaning_id": "ketidaktahuan",
   "meaning_en": "ignorance",
   "jlpt": "n1",
   "pos": "na-adj",
@@ -12360,15 +12610,16 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "彼はすぐに無知をさらけ出した。",
-      "id": "He soon betrayed his ignorance.",
+      "id": "Dia segera mengkhianati ketidaktahuannya.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":2,"downstep_mora":1,"contour":"ム＼チ"}
+},
     {
       "jp": "彼は政治にはまったく無知である。",
-      "id": "He knows nothing about politics.",
+      "id": "Dia tidak tahu apa-apa tentang politik.",
       "level": "n1",
       "tags": [
         "umum"
@@ -12410,15 +12661,16 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "冬にその山に登るなんて彼は無茶だ。",
-      "id": "He'd be crazy to climb the mountain in winter.",
+      "id": "Dia akan gila jika mendaki gunung di musim dingin.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":2,"downstep_mora":1,"contour":"ム＼チャ"}
+},
     {
       "jp": "無茶しなければよかった。",
-      "id": "I shouldn't have overdone it.",
+      "id": "Seharusnya aku tidak melakukannya secara berlebihan.",
       "level": "n1",
       "tags": [
         "umum"
@@ -12460,12 +12712,13 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "彼女は泣きながら、彼からの手紙をむちゃくちゃに引き裂いて捨てた。",
-      "id": "In tears, she tore up his letter and threw it away.",
+      "id": "Sambil menangis, dia merobek suratnya dan membuangnya.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ムチャクチャ￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -12502,15 +12755,16 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "彼の死は彼らの生活に空しさをもたらした。",
-      "id": "His death has left a vacuum in their lives.",
+      "id": "Kematiannya meninggalkan kekosongan dalam hidup mereka.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"ムナシ＼イ"}
+},
     {
       "jp": "医者の努力も空しく、その男はまもなく死んでしまいました。",
-      "id": "All the doctor's efforts were in vain and the man soon died.",
+      "id": "Semua usaha dokter sia-sia dan pria tersebut segera meninggal.",
       "level": "n1",
       "tags": [
         "umum"
@@ -12531,7 +12785,7 @@ window.vocabN1_Adjectives = [
   "word": "無念",
   "reading": "むねん",
   "romaji": "munen",
-  "meaning_id": "chagrin; regret",
+  "meaning_id": "kecewa; penyesalan",
   "meaning_en": "chagrin; regret",
   "jlpt": "n1",
   "pos": "na-adj",
@@ -12556,8 +12810,9 @@ window.vocabN1_Adjectives = [
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ムネン￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -12573,7 +12828,7 @@ window.vocabN1_Adjectives = [
   "word": "無能",
   "reading": "むのう",
   "romaji": "munou",
-  "meaning_id": "inefficiency; incompetence",
+  "meaning_id": "inefisiensi; ketidakmampuan",
   "meaning_en": "inefficiency; incompetence",
   "jlpt": "n1",
   "pos": "na-adj",
@@ -12594,12 +12849,13 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "あらゆる芸術評論家達は無能であり危険な存在である。",
-      "id": "Regard all art critics as useless and dangerous.",
+      "id": "Menganggap semua kritikus seni tidak berguna dan berbahaya.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ムノウ￣"}
+},
     {
       "jp": "彼は弁護士としては無能だ。",
       "id": "Dia no good as a lawyer.",
@@ -12644,15 +12900,16 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "無用の立ち入り禁止。",
-      "id": "No admittance except on business.",
+      "id": "Tidak ada izin masuk kecuali untuk urusan bisnis.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ムヨウ￣"}
+},
     {
       "jp": "あせって仕事を仕上げようとすれば、無用な間違いを犯す。",
-      "id": "When we rush to complete our work, we make needless errors.",
+      "id": "Saat kita terburu-buru menyelesaikan pekerjaan, kita membuat kesalahan yang tidak perlu.",
       "level": "n1",
       "tags": [
         "umum"
@@ -12694,15 +12951,16 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "何をしなければならないかは明白です。",
-      "id": "It is clear what must be done.",
+      "id": "Sudah jelas apa yang harus dilakukan.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"メイハク￣"}
+},
     {
       "jp": "彼は過ちをあからさまに白状した。",
-      "id": "He openly confessed his faults.",
+      "id": "Dia secara terbuka mengakui kesalahannya.",
       "level": "n1",
       "tags": [
         "umum"
@@ -12744,15 +13002,16 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "大学は彼に名誉学位を与えた。",
-      "id": "The college bestowed an honorary degree on him.",
+      "id": "Perguruan tinggi menganugerahkan gelar kehormatan kepadanya.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"メ＼イヨ"}
+},
     {
       "jp": "これは我が校の名誉にかかわる問題だ。",
-      "id": "The problem affects the prestige of our school.",
+      "id": "Masalah tersebut berdampak pada prestise sekolah kita.",
       "level": "n1",
       "tags": [
         "umum"
@@ -12773,7 +13032,7 @@ window.vocabN1_Adjectives = [
   "word": "明瞭",
   "reading": "めいりょう",
   "romaji": "meiryou",
-  "meaning_id": "clarity",
+  "meaning_id": "kejelasan",
   "meaning_en": "clarity",
   "jlpt": "n1",
   "pos": "na-adj",
@@ -12794,12 +13053,13 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "その２語の用法の区別は明瞭である。",
-      "id": "The distinction in usage between the two words is clear.",
+      "id": "Perbedaan penggunaan antara kedua kata tersebut jelas.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"メイリョウ￣"}
+},
     {
       "jp": "その人たちは明瞭さをよしとする。",
       "id": "Those people appreciate clarity.",
@@ -12848,8 +13108,9 @@ window.vocabN1_Adjectives = [
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"メイロウ￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -12886,15 +13147,16 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "日本は戦後目覚ましい産業の進歩をとげた。",
-      "id": "Japan achieved a remarkable development in industrial technology after the war.",
+      "id": "Jepang mencapai perkembangan luar biasa dalam teknologi industri setelah perang.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":4,"category":"nakadaka","mora_count":5,"downstep_mora":4,"contour":"メザマシ＼イ"}
+},
     {
       "jp": "彼が１９歳で優勝したのは目覚しい。",
-      "id": "It's amazing that he won the championship at the age of nineteen.",
+      "id": "Sungguh menakjubkan dia memenangkan kejuaraan pada usia sembilan belas tahun.",
       "level": "n1",
       "tags": [
         "umum"
@@ -12936,15 +13198,16 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "彼らは、猛烈にいがみあっている。",
-      "id": "They fight like cat and dog.",
+      "id": "Mereka berkelahi seperti kucing dan anjing.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"モウレツ￣"}
+},
     {
       "jp": "警官がやってくるのを見ると彼は猛烈に走り出した。",
-      "id": "When he saw a policeman coming, he began to run like anything.",
+      "id": "Ketika dia melihat seorang polisi datang, dia mulai berlari seperti apa pun.",
       "level": "n1",
       "tags": [
         "umum"
@@ -12965,7 +13228,7 @@ window.vocabN1_Adjectives = [
   "word": "物好き",
   "reading": "ものずき",
   "romaji": "monozuki",
-  "meaning_id": "curiosity",
+  "meaning_id": "rasa ingin tahu",
   "meaning_en": "curiosity",
   "jlpt": "n1",
   "pos": "na-adj",
@@ -12990,11 +13253,12 @@ window.vocabN1_Adjectives = [
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"モノズ＼キ"}
+},
     {
       "jp": "私は甘いもの好きだ。",
-      "id": "I have a sweet tooth.",
+      "id": "Saya menyukai makanan manis.",
       "level": "n1",
       "tags": [
         "umum"
@@ -13015,7 +13279,7 @@ window.vocabN1_Adjectives = [
   "word": "物足りない",
   "reading": "ものたりない",
   "romaji": "monotarinai",
-  "meaning_id": "unsatisfied; unsatisfactory",
+  "meaning_id": "tidak puas; tidak memuaskan",
   "meaning_en": "unsatisfied; unsatisfactory",
   "jlpt": "n1",
   "pos": "i-adj",
@@ -13036,12 +13300,13 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "このドラマは単純な勧善懲悪もので、今一つ深みに欠けて物足りない。",
-      "id": "This drama is missing something. All it is is a simple cautionary tale with no real depth.",
+      "id": "Ada sesuatu yang hilang dalam drama ini. Semua itu hanyalah sebuah kisah peringatan sederhana tanpa kedalaman nyata.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":6,"downstep_mora":0,"contour":"モノタリナイ￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -13078,12 +13343,13 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "彼が作った模型飛行機はもろかった。",
-      "id": "His paper plane was fragile.",
+      "id": "Pesawat kertasnya rapuh.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"モロ＼イ"}
+},
     {
       "jp": "彼女は情にもろい。",
       "id": "Dia accessible to pity.",
@@ -13132,8 +13398,9 @@ window.vocabN1_Adjectives = [
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"ヤス＼イ"}
+},
     {
       "jp": "彼は人の名前を忘れやすい。",
       "id": "Dia apt to forget people's name.",
@@ -13178,12 +13445,13 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "彼女の服はとても安っぽい生地でできていた。",
-      "id": "Her dress was made of very cheap material.",
+      "id": "Gaunnya terbuat dari bahan yang sangat murah.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":4,"category":"nakadaka","mora_count":5,"downstep_mora":4,"contour":"ヤスッポ＼イ"}
+},
     {
       "jp": "何でそんな安っぽいペテンにひっかかるんだ。",
       "id": "Why do people get fooled by such cheap schemes?",
@@ -13228,15 +13496,16 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "あの５人の関係は、ややこしい。",
-      "id": "The relationships among those five people are complicated.",
+      "id": "Hubungan kelima orang itu rumit.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":4,"category":"nakadaka","mora_count":0,"downstep_mora":0,"contour":"￣"}
+},
     {
       "jp": "やっとややこしい迷路の外に出られた。",
-      "id": "I finally found my way out of the confusing maze.",
+      "id": "Saya akhirnya menemukan jalan keluar dari labirin yang membingungkan.",
       "level": "n1",
       "tags": [
         "umum"
@@ -13278,12 +13547,13 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "広告に関してはコークの方が優位にたっている。",
-      "id": "When it comes to advertising, Coke is ahead of the game.",
+      "id": "Dalam hal periklanan, Coke adalah yang terdepan.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"ユ＼ウイ"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -13320,15 +13590,16 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "雨が降ると彼女は憂鬱になる。",
-      "id": "When it rains, she feels blue.",
+      "id": "Saat hujan, dia merasa biru.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ユウウツ￣"}
+},
     {
       "jp": "彼は憂うつな感情に打ちのめされた。",
-      "id": "He was overcome by a feeling of melancholy.",
+      "id": "Dia diliputi perasaan melankolis.",
       "level": "n1",
       "tags": [
         "umum"
@@ -13349,7 +13620,7 @@ window.vocabN1_Adjectives = [
   "word": "有益",
   "reading": "ゆうえき",
   "romaji": "yuueki",
-  "meaning_id": "beneficial; profitable",
+  "meaning_id": "bermanfaat; menguntungkan",
   "meaning_en": "beneficial; profitable",
   "jlpt": "n1",
   "pos": "na-adj",
@@ -13370,15 +13641,16 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "私にはとても有益だった。",
-      "id": "It was of great benefit to me.",
+      "id": "Ini memberikan manfaat yang besar bagi saya.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ユウエキ￣"}
+},
     {
       "jp": "ミミズも時には土壌に有益です。",
-      "id": "Worms are sometimes beneficial to soil.",
+      "id": "Cacing terkadang bermanfaat bagi tanah.",
       "level": "n1",
       "tags": [
         "umum"
@@ -13424,11 +13696,12 @@ window.vocabN1_Adjectives = [
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ユウカン￣"}
+},
     {
       "jp": "彼女は子供だったが勇敢であった。",
-      "id": "Child as she was, she was brave.",
+      "id": "Meski masih anak-anak, dia pemberani.",
       "level": "n1",
       "tags": [
         "umum"
@@ -13470,15 +13743,16 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "人類は地球上で最も優勢である。",
-      "id": "The human race is dominant on earth.",
+      "id": "Ras manusia dominan di bumi.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ユウセイ￣"}
+},
     {
       "jp": "彼は相手より少し優勢だった。",
-      "id": "He had a slight edge on his opponent.",
+      "id": "Dia memiliki sedikit keunggulan dibandingkan lawannya.",
       "level": "n1",
       "tags": [
         "umum"
@@ -13520,15 +13794,16 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "彼女は私たちみんな驚かせるほど優美に踊った。",
-      "id": "She danced with a grace that surprised us all.",
+      "id": "Dia menari dengan anggun yang mengejutkan kami semua.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"ユ＼ウビ"}
+},
     {
       "jp": "彼女の動作はすべて優美だった。",
-      "id": "All her motions were graceful.",
+      "id": "Semua gerakannya anggun.",
       "level": "n1",
       "tags": [
         "umum"
@@ -13570,15 +13845,16 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "彼女は有望な仕事に就いている。",
-      "id": "She has a job with good prospects.",
+      "id": "Dia memiliki pekerjaan dengan prospek bagus.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ユウボウ￣"}
+},
     {
       "jp": "若い時、彼はおおいに有望だった。",
-      "id": "In his youth, he had shown great promise.",
+      "id": "Di masa mudanya, dia telah menunjukkan harapan besar.",
       "level": "n1",
       "tags": [
         "umum"
@@ -13620,15 +13896,16 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "コカ・コーラは清涼飲料水ではいつも最有力会社だ。",
-      "id": "Coke has always been the top dog when it comes to soft drinks.",
+      "id": "Coke selalu menjadi yang teratas dalam hal minuman ringan.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ユウリョク￣"}
+},
     {
       "jp": "彼は出版業界に有力なコネがある。",
-      "id": "He has powerful connections in the publishing industry.",
+      "id": "Dia memiliki koneksi yang kuat di industri penerbitan.",
       "level": "n1",
       "tags": [
         "umum"
@@ -13649,7 +13926,7 @@ window.vocabN1_Adjectives = [
   "word": "ユニーク",
   "reading": "ユニーク",
   "romaji": "yuniiku",
-  "meaning_id": "unique",
+  "meaning_id": "unik",
   "meaning_en": "unique",
   "jlpt": "n1",
   "pos": "na-adj",
@@ -13670,12 +13947,13 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "会社にパンタロンとアロハシャツを着てくる彼は、かなりユニークな存在だ。",
-      "id": "He's a pretty unique guy, wearing bell bottoms and Hawaiian shirts to the office.",
+      "id": "Dia pria yang cukup unik, mengenakan bawahan lonceng dan kemeja Hawaii ke kantor.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":0,"downstep_mora":0,"contour":"￣"}
+},
     {
       "jp": "彼のユニークな建築スタイルの誕生についての歴史的研究である。",
       "id": "Ini adalah a historical examination of the birth of his unique architectural style.",
@@ -13699,7 +13977,7 @@ window.vocabN1_Adjectives = [
   "word": "緩やか",
   "reading": "ゆるやか",
   "romaji": "yuruyaka",
-  "meaning_id": "lenient",
+  "meaning_id": "lunak",
   "meaning_en": "lenient",
   "jlpt": "n1",
   "pos": "na-adj",
@@ -13720,15 +13998,16 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "この学校は規律がやや緩やかだ。",
-      "id": "Discipline is rather mild at this school.",
+      "id": "Disiplin agak ringan di sekolah ini.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":4,"downstep_mora":2,"contour":"ユル＼ヤカ"}
+},
     {
       "jp": "Ｖの角度が広ければ広いほど、スピードは緩やかになる。",
-      "id": "The wider the V angle, the slower the speed.",
+      "id": "Semakin lebar sudut V, semakin lambat kecepatannya.",
       "level": "n1",
       "tags": [
         "umum"
@@ -13749,7 +14028,7 @@ window.vocabN1_Adjectives = [
   "word": "洋風",
   "reading": "ようふう",
   "romaji": "youfuu",
-  "meaning_id": "western style",
+  "meaning_id": "gaya barat",
   "meaning_en": "western style",
   "jlpt": "n1",
   "pos": "na-adj",
@@ -13770,12 +14049,13 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "私は洋風の家に住んでいます。",
-      "id": "I live in a Western-style house.",
+      "id": "Saya tinggal di rumah bergaya Barat.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ヨウフウ￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -13791,7 +14071,7 @@ window.vocabN1_Adjectives = [
   "word": "欲深い",
   "reading": "よくふかい",
   "romaji": "yokufukai",
-  "meaning_id": "greedy",
+  "meaning_id": "serakah",
   "meaning_en": "greedy",
   "jlpt": "n1",
   "pos": "i-adj",
@@ -13812,12 +14092,13 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "さて人間とは欲深いものです。",
-      "id": "Men are greedy.",
+      "id": "Pria itu serakah.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":4,"category":"nakadaka","mora_count":5,"downstep_mora":4,"contour":"ヨクブカ＼イ"}
+},
     {
       "jp": "強気な者はお金を儲け、弱気な者はお金を儲け、欲深い取引者は損失ぞ。",
       "id": "Bulls make money, bears make money, hogs get slaughtered.",
@@ -13866,11 +14147,12 @@ window.vocabN1_Adjectives = [
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ヨッポド￣"}
+},
     {
       "jp": "よっぽどの自信なんだなぁ。",
-      "id": "You have considerable confidence.",
+      "id": "Anda memiliki kepercayaan diri yang besar.",
       "level": "n1",
       "tags": [
         "umum"
@@ -13891,7 +14173,7 @@ window.vocabN1_Adjectives = [
   "word": "利根",
   "reading": "りこん",
   "romaji": "rikon",
-  "meaning_id": "intelligence",
+  "meaning_id": "intelijen",
   "meaning_en": "intelligence",
   "jlpt": "n1",
   "pos": "na-adj",
@@ -13916,8 +14198,9 @@ window.vocabN1_Adjectives = [
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"リコン￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -13933,7 +14216,7 @@ window.vocabN1_Adjectives = [
   "word": "良好",
   "reading": "りょうこう",
   "romaji": "ryoukou",
-  "meaning_id": "favorable; satisfactory",
+  "meaning_id": "menguntungkan; memuaskan",
   "meaning_en": "favorable; satisfactory",
   "jlpt": "n1",
   "pos": "na-adj",
@@ -13954,15 +14237,16 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "それに比べ最近彼女のお天気は良好。",
-      "id": "In comparison to which she's been in a really good mood recently.",
+      "id": "Dibandingkan dengan suasana hatinya yang sedang bagus akhir-akhir ini.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"リョウコウ￣"}
+},
     {
       "jp": "今年のポマトの生育はおしなべて良好です。",
-      "id": "On the whole, the pomato plants are growing well this year.",
+      "id": "Secara keseluruhan tanaman pomato tumbuh baik tahun ini.",
       "level": "n1",
       "tags": [
         "umum"
@@ -13983,7 +14267,7 @@ window.vocabN1_Adjectives = [
   "word": "良質",
   "reading": "りょうしつ",
   "romaji": "ryoushitsu",
-  "meaning_id": "good quality; superior quality",
+  "meaning_id": "kualitas bagus; kualitas unggul",
   "meaning_en": "good quality; superior quality",
   "jlpt": "n1",
   "pos": "na-adj",
@@ -14004,12 +14288,13 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "このテーブルは良質のオーク材でできている。",
-      "id": "This table is made of good oak.",
+      "id": "Meja ini terbuat dari kayu ek yang bagus.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"リョウシツ￣"}
+},
     {
       "jp": "カナダは良質の小麦を生産する。",
       "id": "Canada produces good wheat.",
@@ -14033,7 +14318,7 @@ window.vocabN1_Adjectives = [
   "word": "ルーズ",
   "reading": "ルーズ",
   "romaji": "ruuzu",
-  "meaning_id": "loose",
+  "meaning_id": "longgar",
   "meaning_en": "loose",
   "jlpt": "n1",
   "pos": "na-adj",
@@ -14058,11 +14343,12 @@ window.vocabN1_Adjectives = [
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":0,"downstep_mora":1,"contour":"＼"}
+},
     {
       "jp": "新しい英語の先生、トム・クルーズ似のイケメンらしいよ。",
-      "id": "I heard that the new English teacher is a handsome guy who looks like Tom Cruise.",
+      "id": "Saya mendengar bahwa guru bahasa Inggris yang baru adalah seorang pria tampan yang mirip dengan Tom Cruise.",
       "level": "n1",
       "tags": [
         "umum"
@@ -14104,15 +14390,16 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "犬を叩くなんて彼は冷酷だ。",
-      "id": "It was cruel of him to beat his dog.",
+      "id": "Sungguh kejam dia memukuli anjingnya.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"レイコク￣"}
+},
     {
       "jp": "彼の冷酷な言葉が今でも私の心の中でうずいている。",
-      "id": "His bitter words still rankle in my mind.",
+      "id": "Kata-kata pahitnya masih terngiang-ngiang di pikiranku.",
       "level": "n1",
       "tags": [
         "umum"
@@ -14133,7 +14420,7 @@ window.vocabN1_Adjectives = [
   "word": "冷淡",
   "reading": "れいたん",
   "romaji": "reitan",
-  "meaning_id": "coolness; indifference",
+  "meaning_id": "kesejukan; ketidakpedulian",
   "meaning_en": "coolness; indifference",
   "jlpt": "n1",
   "pos": "na-adj",
@@ -14154,12 +14441,13 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "私の演説は冷淡な沈黙で迎えられた。",
-      "id": "My speech was greeted with cold silence.",
+      "id": "Pidatoku disambut dengan keheningan yang dingin.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"レイタ＼ン"}
+},
     {
       "jp": "彼は確かに利口ではあるが、冷淡でもある。",
       "id": "Dia clever, no doubt, but he is cold, too.",
@@ -14204,15 +14492,16 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "露骨に嫌な顔をして、彼を睨みつけた。",
-      "id": "I glared at him with a blatant look of disapproval on my face.",
+      "id": "Aku memelototinya dengan ekspresi ketidaksetujuan yang mencolok di wajahku.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ロコツ￣"}
+},
     {
       "jp": "彼は私の手伝いをするのを露骨にいやがった。",
-      "id": "He showed a great reluctance to help me.",
+      "id": "Dia menunjukkan keengganan yang besar untuk membantu saya.",
       "level": "n1",
       "tags": [
         "umum"
@@ -14233,7 +14522,7 @@ window.vocabN1_Adjectives = [
   "word": "ロマンチック",
   "reading": "ロマンチック",
   "romaji": "romanchikku",
-  "meaning_id": "romantic",
+  "meaning_id": "romantis",
   "meaning_en": "romantic",
   "jlpt": "n1",
   "pos": "na-adj",
@@ -14254,12 +14543,13 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "その映画はロマンチックだった。",
-      "id": "I found the film romantic.",
+      "id": "Menurutku film itu romantis.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":4,"category":"nakadaka","mora_count":0,"downstep_mora":0,"contour":"￣"}
+},
     {
       "jp": "とってもロマンチックだな～！",
       "id": "It's very romantic!",
@@ -14304,12 +14594,13 @@ window.vocabN1_Adjectives = [
   "examples": [
     {
       "jp": "ワープロがあれば、こんな煩わしさはなくなるだろう。",
-      "id": "If you had a word processor, you'd be free from all this trouble.",
+      "id": "Jika Anda memiliki pengolah kata, Anda akan terbebas dari semua masalah ini.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":5,"category":"nakadaka","mora_count":6,"downstep_mora":5,"contour":"ワズラワシ＼イ"}
+}
   ],
   "synonyms": [],
   "antonyms": [],

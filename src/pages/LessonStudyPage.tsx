@@ -24,6 +24,7 @@ import { DialogueStage } from '../components/curriculum/player/DialogueStage';
 import { ExplanationStage } from '../components/curriculum/player/ExplanationStage';
 import { MicroDrillStage } from '../components/curriculum/player/MicroDrillStage';
 import { CanDoCompletionStage } from '../components/curriculum/player/CanDoCompletionStage';
+import { withViewTransition } from '../lib/ui/viewTransition';
 
 export const LessonStudyPage: React.FC = () => {
   const { activeLessonContext, closeLessonStudy, openLessonStudy } = useAppStore();
@@ -113,6 +114,14 @@ export const LessonStudyPage: React.FC = () => {
       isMounted = false;
     };
   }, [trackId, unitId, lessonId, trackProgress]);
+
+  // Viewport scroll stabilization upon stage change (Ticket T-227)
+  useEffect(() => {
+    const studioContainer = document.getElementById('lesson-studio-top');
+    if (studioContainer) {
+      studioContainer.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    }
+  }, [activeStage]);
 
   // Cek apakah pelajaran ini sudah pernah tuntas
   const isLessonDone =
@@ -226,7 +235,7 @@ export const LessonStudyPage: React.FC = () => {
   }
 
   return (
-    <div className="w-full max-w-4xl mx-auto space-y-5 pb-12 animate-fade-in min-w-0 overflow-x-hidden">
+    <div className="w-full max-w-4xl mx-auto space-y-5 pb-[calc(5.5rem+env(safe-area-inset-bottom))] lg:pb-12 animate-fade-in min-w-0 overflow-x-hidden">
       {/* ── 1. HEADER STUDIO BELAJAR FOKUS ───────────────────────── */}
       <div className="p-4 sm:p-5 rounded-3xl bg-surface border border-accent/20 flex flex-col sm:flex-row sm:items-center justify-between gap-3 shadow-sm">
         <div className="flex items-center gap-3 min-w-0">
@@ -297,38 +306,43 @@ export const LessonStudyPage: React.FC = () => {
       </div>
 
       {/* ── 3. PANEL TAHAP KONTEN DINAMIS ────────────────────────── */}
-      <div className="p-4 sm:p-7 rounded-3xl bg-surface border border-accent/20 shadow-sm min-h-[380px]">
-        {activeStage === 'dialogue' && (
-          <DialogueStage
-            dialogue={currentLesson.dialogue}
-            onCompleteStage={() => setActiveStage('explanation')}
-          />
-        )}
+      <div 
+        id="lesson-studio-top"
+        className="p-4 sm:p-7 rounded-3xl bg-surface border border-accent/20 shadow-sm transition-[min-height] duration-300 ease-out min-h-[380px] sm:min-h-[420px] overflow-hidden animate-in fade-in slide-in-from-right-4 duration-300"
+      >
+        <div key={activeStage} className="animate-in fade-in duration-200">
+          {activeStage === 'dialogue' && (
+            <DialogueStage
+              dialogue={currentLesson.dialogue}
+              onCompleteStage={() => withViewTransition(() => setActiveStage('explanation'))}
+            />
+          )}
 
-        {activeStage === 'explanation' && (
-          <ExplanationStage
-            explanations={currentLesson.explanations}
-            pedagogicalFramework={currentLesson.pedagogical_framework}
-            vocabBreakdown={currentLesson.vocab_breakdown}
-            commonPitfalls={currentLesson.common_pitfalls || currentLesson.pedagogical_framework?.common_pitfalls}
-          />
-        )}
+          {activeStage === 'explanation' && (
+            <ExplanationStage
+              explanations={currentLesson.explanations}
+              pedagogicalFramework={currentLesson.pedagogical_framework}
+              vocabBreakdown={currentLesson.vocab_breakdown}
+              commonPitfalls={currentLesson.common_pitfalls || currentLesson.pedagogical_framework?.common_pitfalls}
+            />
+          )}
 
-        {activeStage === 'drills' && (
-          <MicroDrillStage
-            drills={currentLesson.drills}
-            onComplete={handleDrillComplete}
-          />
-        )}
+          {activeStage === 'drills' && (
+            <MicroDrillStage
+              drills={currentLesson.drills}
+              onComplete={handleDrillComplete}
+            />
+          )}
 
-        {activeStage === 'cando' && (
-          <CanDoCompletionStage
-            lesson={currentLesson}
-            drillScore={drillScore}
-            onNextLesson={nextLessonInfo ? handleNextLesson : undefined}
-            onBackToCatalog={closeLessonStudy}
-          />
-        )}
+          {activeStage === 'cando' && (
+            <CanDoCompletionStage
+              lesson={currentLesson}
+              drillScore={drillScore}
+              onNextLesson={nextLessonInfo ? handleNextLesson : undefined}
+              onBackToCatalog={closeLessonStudy}
+            />
+          )}
+        </div>
       </div>
 
       {/* ── 4. FOOTER NAVIGASI LANGKAH INTERNAL ─────────────────── */}
@@ -337,9 +351,11 @@ export const LessonStudyPage: React.FC = () => {
           type="button"
           disabled={activeStage === 'dialogue'}
           onClick={() => {
-            if (activeStage === 'explanation') setActiveStage('dialogue');
-            if (activeStage === 'drills') setActiveStage('explanation');
-            if (activeStage === 'cando') setActiveStage('drills');
+            withViewTransition(() => {
+              if (activeStage === 'explanation') setActiveStage('dialogue');
+              if (activeStage === 'drills') setActiveStage('explanation');
+              if (activeStage === 'cando') setActiveStage('drills');
+            });
             window.scrollTo({ top: 0, behavior: 'smooth' });
           }}
           className="min-h-[44px] px-4 py-2 rounded-xl bg-surface hover:bg-surface-2 border border-accent/30 text-xs font-bold text-appText hover:text-appText-bright disabled:opacity-30 disabled:pointer-events-none shadow-sm transition-all active:scale-95"
@@ -350,13 +366,16 @@ export const LessonStudyPage: React.FC = () => {
         {activeStage !== 'cando' ? (
           <button
             type="button"
+            disabled={activeStage === 'drills' && drillScore < 80 && !isLessonDone}
             onClick={() => {
-              if (activeStage === 'dialogue') setActiveStage('explanation');
-              else if (activeStage === 'explanation') setActiveStage('drills');
-              else if (activeStage === 'drills') setActiveStage('cando');
+              withViewTransition(() => {
+                if (activeStage === 'dialogue') setActiveStage('explanation');
+                else if (activeStage === 'explanation') setActiveStage('drills');
+                else if (activeStage === 'drills') setActiveStage('cando');
+              });
               window.scrollTo({ top: 0, behavior: 'smooth' });
             }}
-            className="min-h-[44px] px-5 py-2 rounded-xl bg-accent text-bg text-xs font-extrabold uppercase tracking-wider shadow-md hover:brightness-110 flex items-center gap-1.5 transition-all active:scale-95"
+            className="min-h-[44px] px-5 py-2 rounded-xl bg-accent text-bg text-xs font-extrabold uppercase tracking-wider shadow-md hover:brightness-110 flex items-center gap-1.5 transition-all active:scale-95 disabled:opacity-40 disabled:pointer-events-none"
           >
             <span>Lanjut Tahap Berikutnya</span>
             <ChevronRight className="w-4 h-4" />

@@ -17,12 +17,15 @@ import {
   Layers,
   Brain,
   Droplets,
+  Award,
 } from 'lucide-react';
 import { QuizMode } from '../../types/quiz';
 import { JLPTLevel } from '../../types/vocab';
 import { useGamificationStore } from '../../lib/gamification/gamificationStore';
 import { useGardenStore } from '../../lib/garden/gardenStore';
 import { useAppStore } from '../../store/useAppStore';
+import { PrometricCbtModal } from './PrometricCbtModal';
+import { JftBasicCbtModal } from './JftBasicCbtModal';
 
 interface QuizArenaHubProps {
   onStartMode: (mode: QuizMode) => void;
@@ -196,6 +199,17 @@ const ARENA_MODES: ModeCard[] = [
     estTime: '~3 mnt',
     badgeColor: 'border-amber-500/40 text-amber-600 dark:text-amber-300 bg-amber-500/10 font-bold',
   },
+  {
+    id: 'onomatopoeia',
+    category: 'specialty',
+    name: 'Onomatopoeia Nyeri Lansia (Kaigo)',
+    nameJp: '痛みのオノマトペ臨床演習',
+    icon: '🩺',
+    desc: 'Latih kepekaan mendengar keluhan fisik lansia (ズキズキ, チクチク) dan tentukan tindakan klinis darurat yang tepat.',
+    tag: 'SSW Kaigo',
+    estTime: '~4 mnt',
+    badgeColor: 'border-rose-500/40 text-rose-600 dark:text-rose-300 bg-rose-500/10 font-bold',
+  },
 ];
 
 export const QuizArenaHub: React.FC<QuizArenaHubProps> = ({
@@ -216,6 +230,8 @@ export const QuizArenaHub: React.FC<QuizArenaHubProps> = ({
   const overall = getOverallQuizStats();
 
   const [activeCategory, setActiveCategory] = useState<'all' | 'core' | 'specialty'>('all');
+  const [isPrometricModalOpen, setIsPrometricModalOpen] = useState(false);
+  const [isJftModalOpen, setIsJftModalOpen] = useState(false);
 
   const filteredModes = ARENA_MODES.filter((m) => {
     if (activeCategory === 'all') return true;
@@ -434,6 +450,48 @@ export const QuizArenaHub: React.FC<QuizArenaHubProps> = ({
         </div>
       </div>
 
+      {/* ── OFFICIAL JAPANESE PROMETRIC CBT SIMULATOR ─────────────── */}
+      <div className="relative overflow-hidden rounded-3xl bg-gradient-to-r from-stone-900 via-surface to-stone-900 border-2 border-amber-500/35 p-5 sm:p-6 shadow-md flex flex-col md:flex-row md:items-center justify-between gap-4">
+        <div className="flex items-start gap-3.5 min-w-0">
+          <div className="w-12 h-12 rounded-2xl bg-amber-500/20 border border-amber-500/40 flex items-center justify-center text-2xl shrink-0">
+            🏛️
+          </div>
+          <div className="space-y-1 min-w-0">
+            <div className="flex flex-wrap items-center gap-2">
+              <h3 className="text-sm sm:text-base font-extrabold text-appText-bright">
+                Simulasi Ujian Prometric CBT (Tokutei Ginou SSW)
+              </h3>
+              <span className="px-2 py-0.5 rounded-full bg-amber-500 text-stone-950 font-black text-[9px] uppercase tracking-wider">
+                19 Sektor Resmi
+              </span>
+            </div>
+            <p className="text-xs text-appText-muted leading-relaxed">
+              Simulasi ujian komputer resmi berstandar Prometric Jepang dengan penilaian ganda (Dual-Pass Statutory Scoring) standar kementerian MHLW, METI, MLIT, dan MAFF.
+            </p>
+          </div>
+        </div>
+
+        <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-2 shrink-0">
+          <button
+            type="button"
+            onClick={() => setIsPrometricModalOpen(true)}
+            className="min-h-[44px] px-4 py-2.5 rounded-2xl bg-gradient-to-r from-amber-500 to-amber-400 text-stone-950 font-black text-xs flex items-center justify-center gap-2 transition-all shadow-md active:scale-95 hover:from-amber-400 hover:to-amber-300"
+          >
+            <Sparkles className="w-4 h-4 text-stone-950" />
+            <span>Prometric SSW CBT</span>
+          </button>
+
+          <button
+            type="button"
+            onClick={() => setIsJftModalOpen(true)}
+            className="min-h-[44px] px-4 py-2.5 rounded-2xl bg-gradient-to-r from-emerald-500 to-emerald-400 text-stone-950 font-black text-xs flex items-center justify-center gap-2 transition-all shadow-md active:scale-95 hover:from-emerald-400 hover:to-emerald-300"
+          >
+            <Award className="w-4 h-4 text-stone-950" />
+            <span>JFT-Basic CBT (A2)</span>
+          </button>
+        </div>
+      </div>
+
       {/* ── CATEGORIZED DRILL CATALOG ─────────────────────────────── */}
       <div className="space-y-4">
         {/* Category Tabs */}
@@ -579,6 +637,18 @@ export const QuizArenaHub: React.FC<QuizArenaHubProps> = ({
           })}
         </div>
       </div>
+
+      {/* Official Japanese Prometric CBT Simulator Modal */}
+      <PrometricCbtModal
+        isOpen={isPrometricModalOpen}
+        onClose={() => setIsPrometricModalOpen(false)}
+      />
+
+      {/* Official Japan Foundation JFT-Basic CBT Simulator Modal */}
+      <JftBasicCbtModal
+        isOpen={isJftModalOpen}
+        onClose={() => setIsJftModalOpen(false)}
+      />
     </div>
   );
 };

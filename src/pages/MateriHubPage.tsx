@@ -12,21 +12,19 @@ import {
   LayoutGrid,
   List,
   Compass,
+  Headphones,
 } from 'lucide-react';
 import { useAppStore } from '../store/useAppStore';
 import { JLPTLevel } from '../types/vocab';
 import { loadVocab, loadGrammar, NormalizedVocab, NormalizedGrammar } from '../lib/data/dataManager';
 import { speakJapanese } from '../lib/audio/tts';
-import { DetailModal } from '../components/ui/DetailModal';
 import { BookTrackBrowser } from '../components/materi/BookTrackBrowser';
 import { CurriculumTrackBrowser } from '../components/materi/CurriculumTrackBrowser';
 import { KanjiDojoView } from '../components/kanji/KanjiDojoView';
-import { KanaChartModal } from '../components/kana/KanaChartModal';
-import { ConjugationModal } from '../components/grammar/ConjugationModal';
-import { NuanceCompareModal } from '../components/grammar/NuanceCompareModal';
 import { SkeletonGrid } from '../components/ui/SkeletonCard';
 import { loadFreewayTrack } from '../lib/data/dataManager';
 import { JapaneseFormattedText } from '../components/ui/JapaneseFormattedText';
+import { RubyText } from '../components/ui/RubyText';
 
 export const MateriHubPage: React.FC = () => {
   const {
@@ -34,28 +32,25 @@ export const MateriHubPage: React.FC = () => {
     searchQuery, setSearchQuery,
     showFurigana, showRomaji,
     cards,
+    openDetailModal,
+    openKana,
+    openConjugation,
+    openNuance,
+    materiStudio: activeStudio,
+    setMateriStudio: setActiveStudio,
   } = useAppStore();
 
-  const [activeStudio, setActiveStudio] = useState<'kurikulum' | 'kanji' | 'buku'>('kurikulum');
   const [kurikulumSub, setKurikulumSub] = useState<'spiral' | 'freeway' | 'jlpt'>('spiral');
   const [activeTab, setActiveTab] = useState<'all' | 'vocab' | 'grammar'>('vocab');
   const [viewMode, setViewMode] = useState<'grid' | 'compact'>('grid');
   const [selectedParticle, setSelectedParticle] = useState<string>('all');
   const [selectedPos, setSelectedPos] = useState<string>('all');
 
-  const [isKanaOpen, setIsKanaOpen] = useState(false);
-  const [isConjugationOpen, setIsConjugationOpen] = useState(false);
-  const [isNuanceOpen, setIsNuanceOpen] = useState(false);
-
   // Loaded items
   const [vocabList, setVocabList] = useState<NormalizedVocab[]>([]);
   const [grammarList, setGrammarList] = useState<NormalizedGrammar[]>([]);
   const [freewayList, setFreewayList] = useState<NormalizedGrammar[]>([]);
   const [isLoading, setIsLoading] = useState(false);
-
-  // Selected item for modal
-  const [selectedItem, setSelectedItem] = useState<(NormalizedVocab | NormalizedGrammar) | null>(null);
-  const [itemType, setItemType] = useState<'vocab' | 'grammar'>('vocab');
 
   // Max items to render in list for instantaneous rendering
   const [renderLimit, setRenderLimit] = useState(60);
@@ -102,6 +97,9 @@ export const MateriHubPage: React.FC = () => {
     { id: 'verb', label: 'Kata Kerja (動詞)' },
     { id: 'adj', label: 'Kata Sifat (形容詞)' },
     { id: 'noun', label: 'Kata Benda (名詞)' },
+    { id: 'adverb', label: 'Kata Keterangan (副詞)' },
+    { id: 'counter', label: 'Bilangan & Counter (助数詞)' },
+    { id: 'conjunction', label: 'Kata Hubung (接続詞)' },
     { id: 'expression', label: 'Ungkapan (表現)' },
   ];
 
@@ -111,10 +109,13 @@ export const MateriHubPage: React.FC = () => {
     if (selectedPos !== 'all') {
       list = list.filter((v) => {
         const pos = (v.pos || '').toLowerCase();
-        if (selectedPos === 'verb') return pos.includes('verb') || pos.includes('kerja');
+        if (selectedPos === 'verb') return (pos.includes('verb') || pos.includes('kerja') || pos.includes('suru')) && !pos.includes('adverb');
         if (selectedPos === 'adj') return pos.includes('adj') || pos.includes('sifat');
-        if (selectedPos === 'noun') return pos.includes('noun') || pos.includes('benda');
-        if (selectedPos === 'expression') return pos.includes('exp') || pos.includes('ungkapan');
+        if (selectedPos === 'noun') return (pos.includes('noun') || pos.includes('benda')) && !pos.includes('suru');
+        if (selectedPos === 'adverb') return pos.includes('adverb') || pos.includes('keterangan');
+        if (selectedPos === 'counter') return pos.includes('counter') || pos.includes('bilangan') || pos.includes('angka');
+        if (selectedPos === 'conjunction') return pos.includes('conjunction') || pos.includes('hubung') || pos.includes('sambung');
+        if (selectedPos === 'expression') return pos.includes('exp') || pos.includes('ungkapan') || pos.includes('frasa');
         return true;
       });
     }
@@ -152,7 +153,7 @@ export const MateriHubPage: React.FC = () => {
   }, [grammarList, searchQuery, selectedParticle]);
 
   return (
-    <div className="max-w-5xl mx-auto py-3 sm:py-6 space-y-4 sm:space-y-7 animate-in fade-in duration-300">
+    <div className="max-w-5xl mx-auto py-3 sm:py-6 pb-[calc(5.5rem+env(safe-area-inset-bottom))] lg:pb-12 space-y-4 sm:space-y-7 animate-in fade-in duration-300 min-w-0 overflow-x-hidden">
       {/* Header and Quick Tools: Consolidated single-row on mobile */}
       <div className="flex items-center justify-between gap-2 sm:gap-4">
         <div className="min-w-0">
@@ -167,51 +168,67 @@ export const MateriHubPage: React.FC = () => {
         {/* Quick Tools Ribbon (Desktop/Tablet) */}
         <div className="hidden sm:flex flex-wrap items-center gap-2 shrink-0">
           <button
-            onClick={() => setIsKanaOpen(true)}
-            className="px-3.5 py-2 rounded-xl bg-amber-500/15 hover:bg-amber-500/25 border border-amber-500/35 text-accent-hot text-xs font-bold transition-all flex items-center gap-1.5 shadow-sm active:scale-95"
+            onClick={() => useAppStore.getState().setActiveTab('choukai')}
+            className="min-h-[40px] px-3.5 py-2 rounded-xl bg-amber-500/20 hover:bg-amber-500/30 border border-amber-500/40 text-amber-300 text-xs font-bold transition-all flex items-center gap-1.5 shadow-sm active:scale-95"
+          >
+            <Headphones className="w-3.5 h-3.5 text-amber-400" />
+            <span>Simulasi Choukai (JFT)</span>
+            <span>🎧</span>
+          </button>
+          <button
+            onClick={openKana}
+            className="min-h-[40px] px-3.5 py-2 rounded-xl bg-amber-500/15 hover:bg-amber-500/25 border border-amber-500/35 text-accent-hot text-xs font-bold transition-all flex items-center gap-1.5 shadow-sm active:scale-95"
           >
             <span>Tabel Kana</span>
             <span className="font-mono text-xs">あ/ア</span>
           </button>
           <button
-            onClick={() => setIsConjugationOpen(true)}
-            className="px-3.5 py-2 rounded-xl bg-surface-2 hover:bg-surface-3 border border-accent/25 text-appText-bright text-xs font-bold transition-all flex items-center gap-1.5 shadow-sm active:scale-95"
+            onClick={openConjugation}
+            className="min-h-[40px] px-3.5 py-2 rounded-xl bg-surface-2 hover:bg-surface-3 border border-accent/25 text-appText-bright text-xs font-bold transition-all flex items-center gap-1.5 shadow-sm active:scale-95"
           >
             <span>Konjugasi</span>
             <span>🔄</span>
           </button>
           <button
-            onClick={() => setIsNuanceOpen(true)}
-            className="px-3.5 py-2 rounded-xl bg-surface-2 hover:bg-surface-3 border border-accent/25 text-appText-bright text-xs font-bold transition-all flex items-center gap-1.5 shadow-sm active:scale-95"
+            onClick={openNuance}
+            className="min-h-[40px] px-3.5 py-2 rounded-xl bg-surface-2 hover:bg-surface-3 border border-accent/25 text-appText-bright text-xs font-bold transition-all flex items-center gap-1.5 shadow-sm active:scale-95"
           >
             <span>Inspektor Nuansa</span>
             <span>⚖️</span>
           </button>
         </div>
 
-        {/* Quick Tools Compact Icons (Mobile phones: sleek 36px icon buttons) */}
+        {/* Quick Tools Compact Icons (Mobile phones: compliant >= 40px touch targets) */}
         <div className="flex sm:hidden items-center gap-1.5 shrink-0">
           <button
-            onClick={() => setIsKanaOpen(true)}
+            onClick={() => useAppStore.getState().setActiveTab('choukai')}
+            title="Simulasi Choukai CBT"
+            aria-label="Simulasi Choukai CBT"
+            className="min-h-[40px] min-w-[40px] rounded-xl bg-amber-500/20 border border-amber-500/40 text-amber-300 text-sm flex items-center justify-center active:scale-95"
+          >
+            🎧
+          </button>
+          <button
+            onClick={openKana}
             title="Tabel Kana"
             aria-label="Tabel Kana"
-            className="h-8 px-2 rounded-xl bg-amber-500/15 border border-amber-500/30 text-accent-hot text-[11px] font-extrabold flex items-center gap-1 active:scale-95"
+            className="min-h-[40px] min-w-[40px] px-2.5 rounded-xl bg-amber-500/15 border border-amber-500/30 text-accent-hot text-xs font-extrabold flex items-center justify-center gap-1 active:scale-95"
           >
             <span>あ</span>
           </button>
           <button
-            onClick={() => setIsConjugationOpen(true)}
+            onClick={openConjugation}
             title="Konjugasi Verba"
             aria-label="Konjugasi Verba"
-            className="w-8 h-8 rounded-xl bg-surface-2 border border-accent/20 text-appText-bright text-xs flex items-center justify-center active:scale-95"
+            className="min-h-[40px] min-w-[40px] rounded-xl bg-surface-2 border border-accent/20 text-appText-bright text-sm flex items-center justify-center active:scale-95"
           >
             🔄
           </button>
           <button
-            onClick={() => setIsNuanceOpen(true)}
+            onClick={openNuance}
             title="Inspektor Nuansa"
             aria-label="Inspektor Nuansa"
-            className="w-8 h-8 rounded-xl bg-surface-2 border border-accent/20 text-appText-bright text-xs flex items-center justify-center active:scale-95"
+            className="min-h-[40px] min-w-[40px] rounded-xl bg-surface-2 border border-accent/20 text-appText-bright text-sm flex items-center justify-center active:scale-95"
           >
             ⚖️
           </button>
@@ -319,8 +336,7 @@ export const MateriHubPage: React.FC = () => {
           vocabList={vocabList}
           grammarList={grammarList}
           onSelectItem={(item, type) => {
-            setSelectedItem(item);
-            setItemType(type);
+            openDetailModal(item, type);
           }}
         />
       )}
@@ -331,8 +347,7 @@ export const MateriHubPage: React.FC = () => {
           vocabList={vocabList}
           grammarList={grammarList}
           onSelectItem={(item, type) => {
-            setSelectedItem(item);
-            setItemType(type);
+            openDetailModal(item, type);
           }}
           onNavigateToQuiz={() => {
             useAppStore.getState().setActiveTab('quiz');
@@ -522,19 +537,25 @@ export const MateriHubPage: React.FC = () => {
                   {filteredVocab.slice(0, renderLimit).map((v) => (
                     <div
                       key={v.id}
-                      onClick={() => {
-                        setSelectedItem(v);
-                        setItemType('vocab');
+                      role="button"
+                      tabIndex={0}
+                      onClick={() => openDetailModal(v, 'vocab')}
+                      onKeyDown={(e) => {
+                        if (e.key === 'Enter' || e.key === ' ') {
+                          e.preventDefault();
+                          openDetailModal(v, 'vocab');
+                        }
                       }}
-                      className="bg-surface-2 hover:bg-surface-3 border border-accent/20 hover:border-accent/40 rounded-2xl p-4 flex flex-col justify-between cursor-pointer transition-all hover:-translate-y-0.5 shadow-sm group"
+                      aria-label={`Detail kosakata ${v.word}: ${v.meaning}`}
+                      className="bg-surface-2 hover:bg-surface-3 border border-accent/20 hover:border-accent/40 rounded-2xl p-4 flex flex-col justify-between cursor-pointer transition-all hover:-translate-y-0.5 shadow-sm group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
                     >
                       <div className="flex items-start justify-between gap-2">
                         <div>
-                          <div className="text-xl font-jp font-bold text-appText-bright group-hover:text-amber-300 transition-colors">
+                          <div className="text-xl font-jp font-bold text-appText-bright group-hover:text-amber-300 transition-colors" lang="ja">
                             {v.word}
                           </div>
                           {showFurigana && v.reading && v.reading !== v.word && (
-                            <div className="text-xs font-jp text-amber-400/80">
+                            <div className="text-xs font-jp text-amber-400/80" lang="ja">
                               【{v.reading}】
                             </div>
                           )}
@@ -546,14 +567,16 @@ export const MateriHubPage: React.FC = () => {
                         </div>
 
                         <button
+                          type="button"
                           onClick={(e) => {
                             e.stopPropagation();
                             speakJapanese(v.word);
                           }}
-                          className="p-1.5 rounded-lg bg-surface/70 hover:bg-amber-500/20 text-appText-muted hover:text-accent-hot transition-all"
+                          className="w-11 h-11 min-w-[40px] min-h-[40px] sm:min-w-[44px] sm:min-h-[44px] rounded-xl bg-surface/70 hover:bg-amber-500/20 text-appText-muted hover:text-accent-hot flex items-center justify-center transition-all active:scale-95 shrink-0"
                           title="Dengarkan pelafalan"
+                          aria-label={`Dengarkan pelafalan ${v.word}`}
                         >
-                          <Volume2 className="w-4 h-4" />
+                          <Volume2 className="w-5 h-5" />
                         </button>
                       </div>
 
@@ -584,34 +607,37 @@ export const MateriHubPage: React.FC = () => {
                   {filteredVocab.slice(0, renderLimit).map((v) => (
                     <div
                       key={v.id}
-                      onClick={() => {
-                        setSelectedItem(v);
-                        setItemType('vocab');
+                      role="button"
+                      tabIndex={0}
+                      onClick={() => openDetailModal(v, 'vocab')}
+                      onKeyDown={(e) => {
+                        if (e.key === 'Enter' || e.key === ' ') {
+                          e.preventDefault();
+                          openDetailModal(v, 'vocab');
+                        }
                       }}
-                      className="p-3 rounded-xl bg-surface-2 hover:bg-surface-3 border border-accent/15 hover:border-accent/35 flex items-center justify-between gap-3 cursor-pointer transition-colors group"
+                      aria-label={`Detail kosakata ${v.word}: ${v.meaning}`}
+                      className="p-3 rounded-xl bg-surface-2 hover:bg-surface-3 border border-accent/15 hover:border-accent/35 flex items-center justify-between gap-3 cursor-pointer transition-colors group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
                     >
                       <div className="flex items-center gap-3 min-w-0">
                         <button
+                          type="button"
                           onClick={(e) => {
                             e.stopPropagation();
                             speakJapanese(v.word);
                           }}
-                          className="p-1.5 rounded-lg bg-surface hover:bg-amber-500/20 text-appText-muted hover:text-accent shrink-0"
+                          className="w-11 h-11 min-w-[40px] min-h-[40px] sm:min-w-[44px] sm:min-h-[44px] rounded-xl bg-surface hover:bg-amber-500/20 text-appText-muted hover:text-accent flex items-center justify-center shrink-0 transition-all active:scale-95"
                           title="Dengarkan pelafalan"
+                          aria-label={`Dengarkan pelafalan ${v.word}`}
                         >
-                          <Volume2 className="w-3.5 h-3.5" />
+                          <Volume2 className="w-5 h-5" />
                         </button>
 
                         <div className="min-w-0">
                           <div className="flex items-baseline gap-2">
-                            <span className="text-base font-jp font-bold text-appText-bright group-hover:text-accent transition-colors">
-                              {v.word}
+                            <span className="text-base font-jp font-bold text-appText-bright group-hover:text-accent transition-colors" lang="ja">
+                              <RubyText text={v.word} furigana={v.reading} />
                             </span>
-                            {v.reading && v.reading !== v.word && (
-                              <span className="text-xs font-jp text-amber-400/80">
-                                {v.reading}
-                              </span>
-                            )}
                           </div>
                           <div className="text-xs text-appText-muted truncate">
                             {v.meaning}
@@ -663,32 +689,41 @@ export const MateriHubPage: React.FC = () => {
                   {filteredGrammar.slice(0, renderLimit).map((g) => (
                     <div
                       key={g.id}
-                      onClick={() => {
-                        setSelectedItem(g);
-                        setItemType('grammar');
+                      role="button"
+                      tabIndex={0}
+                      onClick={() => openDetailModal(g, 'grammar')}
+                      onKeyDown={(e) => {
+                        if (e.key === 'Enter' || e.key === ' ') {
+                          e.preventDefault();
+                          openDetailModal(g, 'grammar');
+                        }
                       }}
-                      className="bg-surface-2 hover:bg-surface-3 border border-accent/20 hover:border-accent/40 rounded-2xl p-5 flex flex-col justify-between cursor-pointer transition-all hover:-translate-y-0.5 shadow-sm group"
+                      aria-label={`Detail tata bahasa ${g.pattern}: ${g.meaning}`}
+                      className="bg-surface-2 hover:bg-surface-3 border border-accent/20 hover:border-accent/40 rounded-2xl p-5 flex flex-col justify-between cursor-pointer transition-all hover:-translate-y-0.5 shadow-sm group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
                     >
                       <div className="flex items-start justify-between gap-2">
                         <div>
-                          <div className="text-lg font-jp font-bold text-appText-bright group-hover:text-amber-300 transition-colors">
+                          <div className="text-lg font-jp font-bold text-appText-bright group-hover:text-amber-300 transition-colors" lang="ja">
                             {g.pattern}
                           </div>
                           {g.reading && (
-                            <div className="text-xs text-appText-muted font-mono">
+                            <div className="text-xs text-appText-muted font-mono" lang="ja">
                               {g.reading}
                             </div>
                           )}
                         </div>
 
                         <button
+                          type="button"
                           onClick={(e) => {
                             e.stopPropagation();
                             speakJapanese(g.pattern);
                           }}
-                          className="p-1.5 rounded-lg bg-surface/70 hover:bg-amber-500/20 text-appText-muted hover:text-accent-hot transition-all"
+                          className="w-11 h-11 min-w-[40px] min-h-[40px] sm:min-w-[44px] sm:min-h-[44px] rounded-xl bg-surface/70 hover:bg-amber-500/20 text-appText-muted hover:text-accent-hot flex items-center justify-center transition-all active:scale-95 shrink-0"
+                          title="Dengarkan pelafalan"
+                          aria-label={`Dengarkan pelafalan ${g.pattern}`}
                         >
-                          <Volume2 className="w-4 h-4" />
+                          <Volume2 className="w-5 h-5" />
                         </button>
                       </div>
 
@@ -719,31 +754,39 @@ export const MateriHubPage: React.FC = () => {
                   {filteredGrammar.slice(0, renderLimit).map((g) => (
                     <div
                       key={g.id}
-                      onClick={() => {
-                        setSelectedItem(g);
-                        setItemType('grammar');
+                      role="button"
+                      tabIndex={0}
+                      onClick={() => openDetailModal(g, 'grammar')}
+                      onKeyDown={(e) => {
+                        if (e.key === 'Enter' || e.key === ' ') {
+                          e.preventDefault();
+                          openDetailModal(g, 'grammar');
+                        }
                       }}
-                      className="p-3 rounded-xl bg-surface-2 hover:bg-surface-3 border border-accent/15 hover:border-accent/35 flex items-center justify-between gap-3 cursor-pointer transition-colors group"
+                      aria-label={`Detail tata bahasa ${g.pattern}: ${g.meaning}`}
+                      className="p-3 rounded-xl bg-surface-2 hover:bg-surface-3 border border-accent/15 hover:border-accent/35 flex items-center justify-between gap-3 cursor-pointer transition-colors group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
                     >
                       <div className="flex items-center gap-3 min-w-0">
                         <button
+                          type="button"
                           onClick={(e) => {
                             e.stopPropagation();
                             speakJapanese(g.pattern);
                           }}
-                          className="p-1.5 rounded-lg bg-surface hover:bg-amber-500/20 text-appText-muted hover:text-accent shrink-0"
+                          className="w-11 h-11 min-w-[40px] min-h-[40px] sm:min-w-[44px] sm:min-h-[44px] rounded-xl bg-surface hover:bg-amber-500/20 text-appText-muted hover:text-accent flex items-center justify-center shrink-0 transition-all active:scale-95"
                           title="Dengarkan pelafalan"
+                          aria-label={`Dengarkan pelafalan ${g.pattern}`}
                         >
-                          <Volume2 className="w-3.5 h-3.5" />
+                          <Volume2 className="w-5 h-5" />
                         </button>
 
                         <div className="min-w-0">
                           <div className="flex items-baseline gap-2">
-                            <span className="text-base font-jp font-bold text-appText-bright group-hover:text-accent transition-colors">
+                            <span className="text-base font-jp font-bold text-appText-bright group-hover:text-accent transition-colors" lang="ja">
                               {g.pattern}
                             </span>
                             {g.reading && (
-                              <span className="text-xs font-mono text-appText-muted">
+                              <span className="text-xs font-mono text-appText-muted" lang="ja">
                                 {g.reading}
                               </span>
                             )}
@@ -806,10 +849,7 @@ export const MateriHubPage: React.FC = () => {
             {freewayList.map((item, index) => (
               <div
                 key={item.id}
-                onClick={() => {
-                  setSelectedItem(item);
-                  setItemType('grammar');
-                }}
+                onClick={() => openDetailModal(item, 'grammar')}
                 className="bg-surface-2 hover:bg-surface-3 border border-accent/20 hover:border-accent/40 rounded-2xl p-5 flex flex-col justify-between cursor-pointer transition-all hover:-translate-y-0.5 shadow-sm group"
               >
                 <div className="flex items-start justify-between gap-3">
@@ -834,7 +874,7 @@ export const MateriHubPage: React.FC = () => {
                       e.stopPropagation();
                       speakJapanese(item.pattern);
                     }}
-                    className="p-2 rounded-xl bg-surface hover:bg-amber-500/20 text-appText-muted hover:text-accent transition-all shrink-0"
+                    className="w-10 h-10 min-w-[40px] min-h-[40px] rounded-xl bg-surface hover:bg-amber-500/20 text-appText-muted hover:text-accent flex items-center justify-center transition-all shrink-0 active:scale-95"
                     title="Dengarkan pelafalan"
                   >
                     <Volume2 className="w-4 h-4" />
@@ -855,18 +895,6 @@ export const MateriHubPage: React.FC = () => {
           </div>
         </div>
       )}
-
-      {/* Detail Modal */}
-      <DetailModal item={selectedItem} type={itemType} onClose={() => setSelectedItem(null)} />
-
-      {/* Kana Chart Modal (Hiragana & Katakana) */}
-      <KanaChartModal isOpen={isKanaOpen} onClose={() => setIsKanaOpen(false)} />
-
-      {/* Verb Conjugation Matrix Modal */}
-      <ConjugationModal isOpen={isConjugationOpen} onClose={() => setIsConjugationOpen(false)} />
-
-      {/* Grammar Nuance Comparison Inspector Modal */}
-      <NuanceCompareModal isOpen={isNuanceOpen} onClose={() => setIsNuanceOpen(false)} />
     </div>
   );
 };

@@ -1,11 +1,11 @@
 // ══════════════════════════════════════════════════════════════════
-//  MoraPacingCard.tsx — Visual Mora Metronome Drill Component
-//  Research Basis: ADR-009, Phonological SLA, Elimination of Stress-Timed Rush
-//  Visually and rhythmically paces words into equal-duration morae (240 bpm)
+//  MoraPacingCard.tsx — Visual & Acoustic Mora Metronome Drill Component
+//  Research Basis: ADR-009, Phonological SLA, Port et al. (1987)
+//  Synthesizes 240 bpm Web Audio click tones and visual isochronous beats
 // ══════════════════════════════════════════════════════════════════
 
-import React, { useState, useEffect } from 'react';
-import { Volume2, Play, Pause, RotateCcw, Clock, Music } from 'lucide-react';
+import React, { useState, useEffect, useRef } from 'react';
+import { Volume2, Play, Pause, Music } from 'lucide-react';
 import { QuizQuestionItem } from '../../types/quiz';
 import { speakJapanese } from '../../lib/audio/tts';
 
@@ -14,6 +14,38 @@ interface MoraPacingCardProps {
   selectedOption: string | null;
   feedback: { isCorrect: boolean; text: string } | null;
   onSelectOption: (option: string) => void;
+}
+
+let sharedAudioContext: AudioContext | null = null;
+
+function playMoraClickTone(frequency = 800, duration = 0.025) {
+  try {
+    const AudioCtx = window.AudioContext || (window as any).webkitAudioContext;
+    if (!AudioCtx) return;
+    if (!sharedAudioContext) {
+      sharedAudioContext = new AudioCtx();
+    }
+    if (sharedAudioContext.state === 'suspended') {
+      sharedAudioContext.resume();
+    }
+    const ctx = sharedAudioContext;
+    const osc = ctx.createOscillator();
+    const gain = ctx.createGain();
+
+    osc.type = 'sine';
+    osc.frequency.setValueAtTime(frequency, ctx.currentTime);
+
+    gain.gain.setValueAtTime(0.35, ctx.currentTime);
+    gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + duration);
+
+    osc.connect(gain);
+    gain.connect(ctx.destination);
+
+    osc.start(ctx.currentTime);
+    osc.stop(ctx.currentTime + duration);
+  } catch {
+    // Graceful fallback for audio-disabled environments
+  }
 }
 
 export const MoraPacingCard: React.FC<MoraPacingCardProps> = ({
@@ -25,48 +57,60 @@ export const MoraPacingCard: React.FC<MoraPacingCardProps> = ({
   const morae = question.moraBeats || [question.questionText];
   const [activeMoraIndex, setActiveMoraIndex] = useState<number>(-1);
   const [isPlayingMetronome, setIsPlayingMetronome] = useState<boolean>(false);
+  const timerRef = useRef<number | null>(null);
 
   // Stop metronome when question changes
   useEffect(() => {
     setIsPlayingMetronome(false);
     setActiveMoraIndex(-1);
+    if (timerRef.current) clearInterval(timerRef.current);
   }, [question.id]);
 
-  // Metronome beat ticker at ~240 bpm (250ms per mora)
+  // Web Audio Synthesized Metronome ticker at 240 bpm (250ms per mora)
   useEffect(() => {
     if (!isPlayingMetronome || morae.length === 0) return;
 
     let currentIndex = 0;
     setActiveMoraIndex(0);
+    // Play initial beat click (1000Hz accent on beat 1)
+    playMoraClickTone(1000, 0.03);
 
-    const interval = setInterval(() => {
+    const interval = window.setInterval(() => {
       currentIndex++;
       if (currentIndex >= morae.length) {
-        // Pause briefly at the end, then loop once more or stop
         clearInterval(interval);
-        setTimeout(() => {
+        window.setTimeout(() => {
           setIsPlayingMetronome(false);
           setActiveMoraIndex(-1);
         }, 300);
       } else {
         setActiveMoraIndex(currentIndex);
+        // Play beat click (800Hz standard mora tone)
+        playMoraClickTone(800, 0.025);
       }
     }, 250);
 
-    return () => clearInterval(interval);
+    timerRef.current = interval;
+
+    return () => {
+      clearInterval(interval);
+    };
   }, [isPlayingMetronome, morae.length]);
 
   const toggleMetronome = () => {
     if (isPlayingMetronome) {
       setIsPlayingMetronome(false);
       setActiveMoraIndex(-1);
+      if (timerRef.current) clearInterval(timerRef.current);
     } else {
       setIsPlayingMetronome(true);
     }
   };
 
   const handleSpeak = () => {
-    speakJapanese(question.questionText.split(' ')[0] || question.correctAnswer);
+    const raw = question.questionText.split(' ')[0] || question.correctAnswer;
+    const clean = raw.replace(/[\(（].*?[\)）]/g, '').trim();
+    speakJapanese(clean);
   };
 
   return (
@@ -145,7 +189,7 @@ export const MoraPacingCard: React.FC<MoraPacingCardProps> = ({
               ) : (
                 <>
                   <Play className="w-3.5 h-3.5" />
-                  <span>Mainkan Tempo Metronom (240 bpm)</span>
+                  <span>Mainkan Tempo Metronom Audio (240 bpm)</span>
                 </>
               )}
             </button>

@@ -1,6 +1,7 @@
 // ────────────────────────────────────────────────────────────
 //  n2-expressions.js — Nugget Nihongo · JLPT N2 · EXPRESSIONS
-//  19 entries | Staged expansion
+//  19 entries | Verified Indonesian Translations
+//  Schema: data/_schema-vocab.md | Part of vocab/n2/ module
 // ────────────────────────────────────────────────────────────
 
 window.vocabN2_Expressions = [
@@ -52,7 +53,7 @@ window.vocabN2_Expressions = [
   "word": "絵の具",
   "reading": "えのぐ",
   "romaji": "enogu",
-  "meaning_id": "colors; paints",
+  "meaning_id": "warna; cat",
   "meaning_en": "colors; paints",
   "jlpt": "n2",
   "pos": "expression",
@@ -73,12 +74,13 @@ window.vocabN2_Expressions = [
   "examples": [
     {
       "jp": "赤い絵の具に青い絵の具を混ぜなさい。",
-      "id": "Blend the red paint with the blue paint.",
+      "id": "Campurkan cat merah dengan cat biru.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"エノグ￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -94,7 +96,7 @@ window.vocabN2_Expressions = [
   "word": "おかけください",
   "reading": "おかけください",
   "romaji": "okakekudasai",
-  "meaning_id": "please sit down; please have a seat",
+  "meaning_id": "silakan duduk",
   "meaning_en": "please sit down; please have a seat",
   "jlpt": "n2",
   "pos": "expression",
@@ -123,7 +125,7 @@ window.vocabN2_Expressions = [
     },
     {
       "jp": "こちらにおかけください。",
-      "id": "Tolong have a seat here.",
+      "id": "Silakan duduk di sini.",
       "level": "n2",
       "tags": [
         "umum"
@@ -144,7 +146,7 @@ window.vocabN2_Expressions = [
   "word": "おかげさまで",
   "reading": "おかげさまで",
   "romaji": "okagesamade",
-  "meaning_id": "Thanks to god; thanks to you",
+  "meaning_id": "Terima kasih kepada Tuhan; terima kasih padamu",
   "meaning_en": "Thanks to god; thanks to you",
   "jlpt": "n2",
   "pos": "expression",
@@ -165,7 +167,7 @@ window.vocabN2_Expressions = [
   "examples": [
     {
       "jp": "おかげさまで助かりました。",
-      "id": "Thank you very much for your help.",
+      "id": "Terima kasih banyak atas bantuan Anda.",
       "level": "n2",
       "tags": [
         "umum"
@@ -173,7 +175,7 @@ window.vocabN2_Expressions = [
     },
     {
       "jp": "おかげさまで元気です。",
-      "id": "I'm fine, thank you.",
+      "id": "Saya baik-baik saja, terima kasih.",
       "level": "n2",
       "tags": [
         "umum"
@@ -215,7 +217,7 @@ window.vocabN2_Expressions = [
   "examples": [
     {
       "jp": "お姉さんのことはたいへんお気の毒に思います。",
-      "id": "I feel very sorry for your sister.",
+      "id": "Aku merasa sangat kasihan pada adikmu.",
       "level": "n2",
       "tags": [
         "umum"
@@ -223,7 +225,7 @@ window.vocabN2_Expressions = [
     },
     {
       "jp": "それはお気の毒に。お体を大切に。",
-      "id": "That's too bad. Please take care of yourself.",
+      "id": "Itu terlalu buruk. Tolong jaga dirimu baik-baik.",
       "level": "n2",
       "tags": [
         "umum"
@@ -244,7 +246,7 @@ window.vocabN2_Expressions = [
   "word": "おじゃまします",
   "reading": "おじゃまします",
   "romaji": "ojamashimasu",
-  "meaning_id": "Excuse me for disturbing you",
+  "meaning_id": "Maafkan saya karena mengganggu Anda",
   "meaning_en": "Excuse me for disturbing you",
   "jlpt": "n2",
   "pos": "expression",
@@ -265,7 +267,7 @@ window.vocabN2_Expressions = [
   "examples": [
     {
       "jp": "お邪魔します。",
-      "id": "Hello, sorry for any trouble.",
+      "id": "Halo, maaf atas masalah apa pun.",
       "level": "n2",
       "tags": [
         "umum"
@@ -286,7 +288,7 @@ window.vocabN2_Expressions = [
   "word": "おだいじに",
   "reading": "おだいじに",
   "romaji": "odaijini",
-  "meaning_id": "Take care of yourself",
+  "meaning_id": "Jaga dirimu",
   "meaning_en": "Take care of yourself",
   "jlpt": "n2",
   "pos": "expression",
@@ -311,8 +313,9 @@ window.vocabN2_Expressions = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":5,"downstep_mora":0,"contour":"オダイジニ￣"}
+},
     {
       "jp": "どうぞお大事に。",
       "id": "Tolong take care of yourself.",
@@ -336,7 +339,7 @@ window.vocabN2_Expressions = [
   "word": "おまたせしました",
   "reading": "おまたせしました",
   "romaji": "omataseshimashita",
-  "meaning_id": "Sorry to have kept you waiting",
+  "meaning_id": "Maaf telah membuatmu menunggu",
   "meaning_en": "Sorry to have kept you waiting",
   "jlpt": "n2",
   "pos": "expression",
@@ -357,7 +360,7 @@ window.vocabN2_Expressions = [
   "examples": [
     {
       "jp": "長いことお待たせしましたか。",
-      "id": "Have I kept you waiting long?",
+      "id": "Apakah aku sudah membuatmu menunggu lama?",
       "level": "n2",
       "tags": [
         "umum"
@@ -365,7 +368,7 @@ window.vocabN2_Expressions = [
     },
     {
       "jp": "すみません、お待たせしました。",
-      "id": "I'm sorry to have kept you waiting so long.",
+      "id": "Aku minta maaf telah membuatmu menunggu begitu lama.",
       "level": "n2",
       "tags": [
         "umum"
@@ -386,7 +389,7 @@ window.vocabN2_Expressions = [
   "word": "おまちどおさま",
   "reading": "おまちどおさま",
   "romaji": "omachidoosama",
-  "meaning_id": "Sorry to have kept you waiting",
+  "meaning_id": "Maaf telah membuatmu menunggu",
   "meaning_en": "Sorry to have kept you waiting",
   "jlpt": "n2",
   "pos": "expression",
@@ -407,12 +410,13 @@ window.vocabN2_Expressions = [
   "examples": [
     {
       "jp": "お待ちどおさま",
-      "id": "I'm sorry to have kept you waiting.",
+      "id": "Aku minta maaf telah membuatmu menunggu.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":7,"downstep_mora":0,"contour":"オマチドオサマ￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -428,7 +432,7 @@ window.vocabN2_Expressions = [
   "word": "女の人",
   "reading": "おんなのひと",
   "romaji": "onnanohito",
-  "meaning_id": "woman",
+  "meaning_id": "wanita",
   "meaning_en": "woman",
   "jlpt": "n2",
   "pos": "expression",
@@ -449,7 +453,7 @@ window.vocabN2_Expressions = [
   "examples": [
     {
       "jp": "今、女の人が１人入っていきましたよ。",
-      "id": "A woman is going into it now.",
+      "id": "Seorang wanita sedang melakukannya sekarang.",
       "level": "n2",
       "tags": [
         "umum"
@@ -457,7 +461,7 @@ window.vocabN2_Expressions = [
     },
     {
       "jp": "あの女の人は私よりずっと年上です。",
-      "id": "That woman is much older than I.",
+      "id": "Wanita itu jauh lebih tua dariku.",
       "level": "n2",
       "tags": [
         "umum"
@@ -478,7 +482,7 @@ window.vocabN2_Expressions = [
   "word": "かしこまりました",
   "reading": "かしこまりました",
   "romaji": "kashikomarimashita",
-  "meaning_id": "certainly!",
+  "meaning_id": "tentu saja!",
   "meaning_en": "certainly!",
   "jlpt": "n2",
   "pos": "expression",
@@ -499,7 +503,7 @@ window.vocabN2_Expressions = [
   "examples": [
     {
       "jp": "かしこまりました。サラダバーはあちらです。",
-      "id": "All right, sir. The salad bar is over there.",
+      "id": "Baiklah, Pak. Bar saladnya ada di sana.",
       "level": "n2",
       "tags": [
         "umum"
@@ -520,7 +524,7 @@ window.vocabN2_Expressions = [
   "word": "こちらこそ",
   "reading": "こちらこそ",
   "romaji": "kochirakoso",
-  "meaning_id": "it is I who should say so",
+  "meaning_id": "akulah yang seharusnya mengatakan demikian",
   "meaning_en": "it is I who should say so",
   "jlpt": "n2",
   "pos": "expression",
@@ -549,7 +553,7 @@ window.vocabN2_Expressions = [
     },
     {
       "jp": "こちらこそ、はじめまして。",
-      "id": "Nice to meet you too.",
+      "id": "Senang bertemu denganmu juga.",
       "level": "n2",
       "tags": [
         "umum"
@@ -570,7 +574,7 @@ window.vocabN2_Expressions = [
   "word": "ごめんください",
   "reading": "ごめんください",
   "romaji": "gomenkudasai",
-  "meaning_id": "May I come in?",
+  "meaning_id": "Bolehkah saya masuk?",
   "meaning_en": "May I come in?",
   "jlpt": "n2",
   "pos": "expression",
@@ -591,7 +595,7 @@ window.vocabN2_Expressions = [
   "examples": [
     {
       "jp": "ごめんください。どなたかいらっしゃいませんか？",
-      "id": "Excuse me. Is anyone home?",
+      "id": "Permisi. Apakah ada orang di rumah?",
       "level": "n2",
       "tags": [
         "umum"
@@ -599,7 +603,7 @@ window.vocabN2_Expressions = [
     },
     {
       "jp": "ごめんください、山田です。ご主人にお目にかかりたいのですが。",
-      "id": "Excuse me, I'm Mr. Yamada. I would like to meet with your husband, if I may.",
+      "id": "Permisi, saya Tuan Yamada. Saya ingin bertemu dengan suami Anda, jika boleh.",
       "level": "n2",
       "tags": [
         "umum"
@@ -620,7 +624,7 @@ window.vocabN2_Expressions = [
   "word": "そういえば",
   "reading": "そういえば",
   "romaji": "souieba",
-  "meaning_id": "which reminds me ..",
+  "meaning_id": "yang mengingatkanku..",
   "meaning_en": "which reminds me ..",
   "jlpt": "n2",
   "pos": "expression",
@@ -641,7 +645,7 @@ window.vocabN2_Expressions = [
   "examples": [
     {
       "jp": "そういえば、確かに太郎を見かけました。",
-      "id": "Come to think of it, I did see Taro.",
+      "id": "Kalau dipikir-pikir, aku memang melihat Taro.",
       "level": "n2",
       "tags": [
         "umum"
@@ -649,7 +653,7 @@ window.vocabN2_Expressions = [
     },
     {
       "jp": "そう言えば買い物もしたいな。",
-      "id": "Come to that, I'd like to do some shopping too.",
+      "id": "Kalau begitu, aku juga ingin berbelanja.",
       "level": "n2",
       "tags": [
         "umum"
@@ -691,15 +695,16 @@ window.vocabN2_Expressions = [
   "examples": [
     {
       "jp": "そのころ彼はいつも飲んでばかりいた。",
-      "id": "He was always drinking in those days.",
+      "id": "Dia selalu minum pada hari-hari itu.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"ソノコ＼ロ"}
+},
     {
       "jp": "彼女はそのころ今より美しかった。",
-      "id": "She was then more beautiful than she is now.",
+      "id": "Dia saat itu lebih cantik dari sekarang.",
       "level": "n2",
       "tags": [
         "umum"
@@ -720,7 +725,7 @@ window.vocabN2_Expressions = [
   "word": "そのため",
   "reading": "そのため",
   "romaji": "sonotame",
-  "meaning_id": "hence; for that reason",
+  "meaning_id": "karenanya; karena alasan itu",
   "meaning_en": "hence; for that reason",
   "jlpt": "n2",
   "pos": "expression",
@@ -741,12 +746,13 @@ window.vocabN2_Expressions = [
   "examples": [
     {
       "jp": "そのため、派遣労働者は劣悪な労働条件の下で働いている。",
-      "id": "For that reason, temporary workers are working under inferior conditions.",
+      "id": "Oleh karena itu, pekerja sementara bekerja dalam kondisi yang lebih rendah.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ソノタメ￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -762,7 +768,7 @@ window.vocabN2_Expressions = [
   "word": "そのほか",
   "reading": "そのほか",
   "romaji": "sonohoka",
-  "meaning_id": "otherwise",
+  "meaning_id": "sebaliknya",
   "meaning_en": "otherwise",
   "jlpt": "n2",
   "pos": "expression",
@@ -783,15 +789,16 @@ window.vocabN2_Expressions = [
   "examples": [
     {
       "jp": "私はその他の計画を思い付かない。",
-      "id": "I can't think of any other plan.",
+      "id": "Saya tidak bisa memikirkan rencana lain.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":4,"downstep_mora":2,"contour":"ソノ＼ホカ"}
+},
     {
       "jp": "その他のことならなんでもします。",
-      "id": "I will do anything but that.",
+      "id": "Saya akan melakukan apa pun kecuali itu.",
       "level": "n2",
       "tags": [
         "umum"
@@ -812,7 +819,7 @@ window.vocabN2_Expressions = [
   "word": "始めに",
   "reading": "はじめに",
   "romaji": "hajimeni",
-  "meaning_id": "me-begin with",
+  "meaning_id": "mulai dengan",
   "meaning_en": "to begin with; first of all",
   "jlpt": "n2",
   "pos": "expression",

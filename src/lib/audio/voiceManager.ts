@@ -81,7 +81,8 @@ export function extractJapaneseSpeechText(raw: string): string {
 export function speakPersona(
   text: string,
   persona: SenseiPersona = 'sensei_nugget',
-  onEnd?: () => void
+  onEnd?: () => void,
+  customRate?: number
 ): void {
   if (typeof window === 'undefined' || !('speechSynthesis' in window)) {
     if (onEnd) onEnd();
@@ -105,12 +106,27 @@ export function speakPersona(
       utterance.voice = voice;
     }
 
+    // Observe user-configured speech rate from localStorage
+    let effectiveRate = customRate;
+    if (!effectiveRate) {
+      try {
+        const stored = localStorage.getItem('nn_speech_rate');
+        if (stored) {
+          const parsed = parseFloat(stored);
+          if (!isNaN(parsed) && parsed > 0) effectiveRate = parsed;
+        }
+      } catch {}
+    }
+    if (!effectiveRate) {
+      effectiveRate = persona === 'sensei_nugget' ? 0.9 : 0.95;
+    }
+
     if (persona === 'sensei_nugget') {
       utterance.pitch = 0.95; // Sedikit lebih dalam, tegas
-      utterance.rate = 0.9;   // Kecepatan stabil untuk kejelasan mora
+      utterance.rate = effectiveRate;
     } else {
       utterance.pitch = 1.15; // Ramah, cerah
-      utterance.rate = 0.95;
+      utterance.rate = effectiveRate;
     }
 
     utterance.onend = () => {
@@ -142,8 +158,8 @@ export function stopPersonaVoice(): void {
 /**
  * Convenient helper to pronounce standard Japanese text
  */
-export function speakJapaneseText(text: string, onEnd?: () => void): void {
-  speakPersona(text, 'sensei_nugget', onEnd);
+export function speakJapaneseText(text: string, onEnd?: () => void, customRate?: number): void {
+  speakPersona(text, 'sensei_nugget', onEnd, customRate);
 }
 
 /**

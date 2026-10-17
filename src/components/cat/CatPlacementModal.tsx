@@ -23,22 +23,28 @@ import {
   selectNextCATQuestion,
   updateThetaEstimate,
   finalizeCATResult,
+  calculateCATSEM,
+  shouldStopCAT,
+  CAT_MAX_QUESTIONS,
+  CAT_MIN_QUESTIONS,
   CATQuestion,
   CATResult,
 } from '../../lib/cat/catEngine';
 import { useAppStore } from '../../store/useAppStore';
 import { useCurriculumStore, TrackId } from '../../lib/curriculum/curriculumStore';
 import { playSuccessSfx, playErrorSfx, playFanfareSfx } from '../../lib/audio/sfx';
+import { useFocusTrap } from '../../hooks/useFocusTrap';
 
 interface CatPlacementModalProps {
   isOpen: boolean;
   onClose: () => void;
 }
 
-const TOTAL_QUESTIONS = 10;
+const TOTAL_QUESTIONS = CAT_MAX_QUESTIONS;
 
 export const CatPlacementModal: React.FC<CatPlacementModalProps> = ({ isOpen, onClose }) => {
-  const { setSelectedLevel, setActiveTab, showToast } = useAppStore();
+  const containerRef = useFocusTrap<HTMLDivElement>(isOpen, onClose);
+  const { setSelectedLevel, setActiveTab, showToast, addPlacementResult } = useAppStore();
   const { setActiveTrack } = useCurriculumStore();
 
   const [isLoading, setIsLoading] = useState(true);
@@ -116,11 +122,26 @@ export const CatPlacementModal: React.FC<CatPlacementModalProps> = ({ isOpen, on
   };
 
   const handleNextQuestion = () => {
-    if (questionIndex + 1 >= TOTAL_QUESTIONS) {
-      // Test finished, calculate final result
+    const currentSem = calculateCATSEM(answeredHistory, currentTheta);
+    const reachedStopCondition = shouldStopCAT(
+      answeredHistory.length,
+      currentSem,
+      CAT_MIN_QUESTIONS,
+      TOTAL_QUESTIONS
+    );
+
+    if (reachedStopCondition || questionIndex + 1 >= TOTAL_QUESTIONS) {
+      // Test finished, calculate final result (adaptively via SEM or max questions)
       playFanfareSfx();
       const finalRes = finalizeCATResult(answeredHistory, currentTheta);
       setResult(finalRes);
+      addPlacementResult({
+        theta: finalRes.theta,
+        sem: finalRes.sem,
+        recommendedLevel: finalRes.estimatedLevel,
+        questionsAnswered: finalRes.totalCount,
+        accuracy: finalRes.accuracy,
+      });
       return;
     }
 
@@ -140,6 +161,13 @@ export const CatPlacementModal: React.FC<CatPlacementModalProps> = ({ isOpen, on
       playFanfareSfx();
       const finalRes = finalizeCATResult(answeredHistory, currentTheta);
       setResult(finalRes);
+      addPlacementResult({
+        theta: finalRes.theta,
+        sem: finalRes.sem,
+        recommendedLevel: finalRes.estimatedLevel,
+        questionsAnswered: finalRes.totalCount,
+        accuracy: finalRes.accuracy,
+      });
     }
   };
 
@@ -159,9 +187,13 @@ export const CatPlacementModal: React.FC<CatPlacementModalProps> = ({ isOpen, on
     <div
       onClick={onClose}
       className="fixed inset-0 z-[9999] flex items-end sm:items-center justify-center p-0 sm:p-4 bg-black/80 backdrop-blur-sm animate-in fade-in duration-200"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Tes Penempatan Mandiri (CAT)"
     >
       {/* Modal Card / Bottom Sheet on Mobile */}
       <div
+        ref={containerRef}
         onClick={(e) => e.stopPropagation()}
         className="relative w-full max-w-xl bg-surface border-t-2 sm:border border-accent/25 rounded-t-3xl sm:rounded-3xl shadow-2xl z-10 max-h-[90dvh] sm:max-h-[92vh] flex flex-col overflow-hidden animate-in slide-in-from-bottom-6 sm:zoom-in-95 duration-200 pb-[max(1rem,env(safe-area-inset-bottom))]"
       >
@@ -181,18 +213,19 @@ export const CatPlacementModal: React.FC<CatPlacementModalProps> = ({ isOpen, on
                 Tes Penempatan Mandiri (CAT)
               </h2>
               <div className="text-[11px] text-accent font-semibold truncate flex items-center gap-1.5">
-                <span>Computer Adaptive Testing · 10 Soal</span>
+                <span>Computer Adaptive Testing · Adaptif (6–12 Soal)</span>
               </div>
             </div>
           </div>
 
           <button
+            type="button"
             onClick={onClose}
-            className="p-2 rounded-xl bg-surface hover:bg-surface-3 text-appText-muted hover:text-appText-bright transition-colors"
+            className="w-11 h-11 min-w-[44px] min-h-[44px] rounded-xl bg-surface hover:bg-surface-3 text-appText-muted hover:text-appText-bright transition-colors active:scale-95 flex items-center justify-center"
             title="Tutup"
-            aria-label="Tutup modal"
+            aria-label="Tutup tes penempatan"
           >
-            <X className="w-4 h-4" />
+            <X className="w-5 h-5" />
           </button>
         </div>
 
@@ -352,7 +385,7 @@ export const CatPlacementModal: React.FC<CatPlacementModalProps> = ({ isOpen, on
                         <span className="w-6 h-6 rounded-lg bg-surface-3/80 font-mono text-xs flex items-center justify-center shrink-0 border border-accent/10">
                           {String.fromCharCode(65 + idx)}
                         </span>
-                        <span className="font-jp truncate">{option}</span>
+                        <span className="font-jp truncate" lang="ja">{option}</span>
                       </div>
 
                       {isAnswered && isCorrect && (
@@ -367,24 +400,33 @@ export const CatPlacementModal: React.FC<CatPlacementModalProps> = ({ isOpen, on
               </div>
 
               {/* Diagnostic Feedback upon answering */}
-              {isAnswered && (
-                <div className="p-3.5 rounded-2xl bg-surface-2 border border-accent/20 space-y-2 animate-in fade-in duration-200">
-                  <div className="text-xs text-appText-muted leading-relaxed">
-                    <span className="font-bold text-accent">Penjelasan: </span>
-                    {currentQuestion.explanation}
-                  </div>
+              {isAnswered && (() => {
+                const isStopConditionMet = shouldStopCAT(
+                  answeredHistory.length,
+                  calculateCATSEM(answeredHistory, currentTheta),
+                  CAT_MIN_QUESTIONS,
+                  TOTAL_QUESTIONS
+                ) || questionIndex + 1 >= TOTAL_QUESTIONS;
 
-                  <button
-                    onClick={handleNextQuestion}
-                    className="w-full py-2.5 px-4 rounded-xl bg-accent hover:bg-accent-hot text-bg font-bold text-xs flex items-center justify-center gap-1.5 transition-all shadow-glow active:scale-98 cursor-pointer mt-2"
-                  >
-                    <span>
-                      {questionIndex + 1 >= TOTAL_QUESTIONS ? 'Lihat Hasil Diagnosis' : 'Lanjut ke Soal Berikutnya'}
-                    </span>
-                    <ArrowRight className="w-3.5 h-3.5" />
-                  </button>
-                </div>
-              )}
+                return (
+                  <div className="p-3.5 rounded-2xl bg-surface-2 border border-accent/20 space-y-2 animate-in fade-in duration-200">
+                    <div className="text-xs text-appText-muted leading-relaxed">
+                      <span className="font-bold text-accent">Penjelasan: </span>
+                      {currentQuestion.explanation}
+                    </div>
+
+                    <button
+                      onClick={handleNextQuestion}
+                      className="w-full py-2.5 px-4 rounded-xl bg-accent hover:bg-accent-hot text-bg font-bold text-xs flex items-center justify-center gap-1.5 transition-all shadow-glow active:scale-98 cursor-pointer mt-2"
+                    >
+                      <span>
+                        {isStopConditionMet ? 'Lihat Hasil Diagnosis' : 'Lanjut ke Soal Berikutnya'}
+                      </span>
+                      <ArrowRight className="w-3.5 h-3.5" />
+                    </button>
+                  </div>
+                );
+              })()}
             </div>
           ) : null}
         </div>

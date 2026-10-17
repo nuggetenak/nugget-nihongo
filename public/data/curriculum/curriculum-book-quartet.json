@@ -19,13 +19,17 @@
       "title_jp": "第1課: 人とのお付き合い (Interpersonal Relations)",
       "theme": "Quartet I",
       "icon": "🎻",
-      "can_do_summary": "Memahami silabus Quartet I Bab 1 secara komprehensif.",
-      "grammar_ids": [],
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Interaksi Sosial, Sahabat & Hubungan Bertetangga.",
+      "grammar_ids": [
+        "gn3-00001",
+        "gn3-00002",
+        "gn3-00003"
+      ],
       "vocab_ids": [
         "vg-n3-00003",
-        "Saya datang untuk mengantar paket.",
-        "Sebaiknya dilaporkan ke polisi.",
-        "vg-n3-00004"
+        "vg-n3-00004",
+        "vg-n3-00005",
+        "vg-n3-00007"
       ],
       "lessons": [
         {
@@ -34,29 +38,37 @@
           "title_id": "Interaksi Sosial, Sahabat & Hubungan Bertetangga (Eksplorasi Materi & Pola)",
           "title_jp": "第1課: 人とのお付き合い (Interpersonal Relations)（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku QUARTET: Intermediate Japanese I & II pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa QUARTET: Intermediate Japanese I & II bab ini dalam konteks nyata.",
-          "grammar_ids": [],
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Interaksi Sosial, Sahabat & Hubungan Bertetangga.",
+          "grammar_ids": [
+            "gn3-00001",
+            "gn3-00002",
+            "gn3-00003"
+          ],
           "vocab_ids": [
             "vg-n3-00003",
-            "Saya datang untuk mengantar paket.",
-            "Sebaiknya dilaporkan ke polisi.",
-            "vg-n3-00004"
+            "vg-n3-00004",
+            "vg-n3-00005",
+            "vg-n3-00007"
           ],
           "pedagogical_framework": {
             "what": {
               "summary": "Silabus resmi QUARTET: Intermediate Japanese I & II bab 1.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
-              "targetPatterns": [],
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Interaksi Sosial, Sahabat & Hubungan Bertetangga.",
+              "targetPatterns": [
+                "gn3-00001",
+                "gn3-00002",
+                "gn3-00003"
+              ],
               "coreVocabSample": [
                 "vg-n3-00003",
-                "Saya datang untuk mengantar paket.",
-                "Sebaiknya dilaporkan ke polisi.",
-                "vg-n3-00004"
+                "vg-n3-00004",
+                "vg-n3-00005",
+                "vg-n3-00007"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku QUARTET: Intermediate Japanese I & II. Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 1 QUARTET: Intermediate Japanese I & II.",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Interaksi Sosial, Sahabat & Hubungan Bertetangga.",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -103,13 +115,17 @@
       "title_jp": "第2課: 日本の食文化 (Food Culture)",
       "theme": "Quartet I",
       "icon": "🎻",
-      "can_do_summary": "Memahami silabus Quartet I Bab 2 secara komprehensif.",
-      "grammar_ids": [],
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Kearifan Gastronomi, Cita Rasa & Etika Bersantap.",
+      "grammar_ids": [
+        "gn3-00001",
+        "gn3-00002",
+        "gn3-00003"
+      ],
       "vocab_ids": [
-        "vg-n3-00018",
-        "Aku tidak mau menyerah pada impianku.",
-        "Meskipun gagal berkali-kali, dia tidak menyerah.",
-        "vg-n3-00019"
+        "vg-n3-00069",
+        "vg-n3-00070",
+        "vg-n3-00074",
+        "vg-n3-00076"
       ],
       "lessons": [
         {
@@ -118,29 +134,37 @@
           "title_id": "Kearifan Gastronomi, Cita Rasa & Etika Bersantap (Eksplorasi Materi & Pola)",
           "title_jp": "第2課: 日本の食文化 (Food Culture)（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku QUARTET: Intermediate Japanese I & II pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa QUARTET: Intermediate Japanese I & II bab ini dalam konteks nyata.",
-          "grammar_ids": [],
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Kearifan Gastronomi, Cita Rasa & Etika Bersantap.",
+          "grammar_ids": [
+            "gn3-00001",
+            "gn3-00002",
+            "gn3-00003"
+          ],
           "vocab_ids": [
-            "vg-n3-00018",
-            "Aku tidak mau menyerah pada impianku.",
-            "Meskipun gagal berkali-kali, dia tidak menyerah.",
-            "vg-n3-00019"
+            "vg-n3-00069",
+            "vg-n3-00070",
+            "vg-n3-00074",
+            "vg-n3-00076"
           ],
           "pedagogical_framework": {
             "what": {
               "summary": "Silabus resmi QUARTET: Intermediate Japanese I & II bab 2.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
-              "targetPatterns": [],
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Kearifan Gastronomi, Cita Rasa & Etika Bersantap.",
+              "targetPatterns": [
+                "gn3-00001",
+                "gn3-00002",
+                "gn3-00003"
+              ],
               "coreVocabSample": [
-                "vg-n3-00018",
-                "Aku tidak mau menyerah pada impianku.",
-                "Meskipun gagal berkali-kali, dia tidak menyerah.",
-                "vg-n3-00019"
+                "vg-n3-00069",
+                "vg-n3-00070",
+                "vg-n3-00074",
+                "vg-n3-00076"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku QUARTET: Intermediate Japanese I & II. Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 2 QUARTET: Intermediate Japanese I & II.",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Kearifan Gastronomi, Cita Rasa & Etika Bersantap.",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -187,13 +211,17 @@
       "title_jp": "第3課: 旅と地域の魅力 (Travel and Regional Charm)",
       "theme": "Quartet I",
       "icon": "🎻",
-      "can_do_summary": "Memahami silabus Quartet I Bab 3 secara komprehensif.",
-      "grammar_ids": [],
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Eksplorasi Pariwisata & Daya Tarik Daerah Lokal.",
+      "grammar_ids": [
+        "gn3-00001",
+        "gn3-00002",
+        "gn3-00003"
+      ],
       "vocab_ids": [
-        "vg-n3-00056",
-        "Proyeknya berhasil.",
-        "Akan berusaha sampai berhasil.",
-        "vg-n3-00057"
+        "vg-n3-00104",
+        "vg-n3-00105",
+        "vg-n3-00106",
+        "vg-n3-00107"
       ],
       "lessons": [
         {
@@ -202,29 +230,37 @@
           "title_id": "Eksplorasi Pariwisata & Daya Tarik Daerah Lokal (Eksplorasi Materi & Pola)",
           "title_jp": "第3課: 旅と地域の魅力 (Travel and Regional Charm)（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku QUARTET: Intermediate Japanese I & II pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa QUARTET: Intermediate Japanese I & II bab ini dalam konteks nyata.",
-          "grammar_ids": [],
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Eksplorasi Pariwisata & Daya Tarik Daerah Lokal.",
+          "grammar_ids": [
+            "gn3-00001",
+            "gn3-00002",
+            "gn3-00003"
+          ],
           "vocab_ids": [
-            "vg-n3-00056",
-            "Proyeknya berhasil.",
-            "Akan berusaha sampai berhasil.",
-            "vg-n3-00057"
+            "vg-n3-00104",
+            "vg-n3-00105",
+            "vg-n3-00106",
+            "vg-n3-00107"
           ],
           "pedagogical_framework": {
             "what": {
               "summary": "Silabus resmi QUARTET: Intermediate Japanese I & II bab 3.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
-              "targetPatterns": [],
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Eksplorasi Pariwisata & Daya Tarik Daerah Lokal.",
+              "targetPatterns": [
+                "gn3-00001",
+                "gn3-00002",
+                "gn3-00003"
+              ],
               "coreVocabSample": [
-                "vg-n3-00056",
-                "Proyeknya berhasil.",
-                "Akan berusaha sampai berhasil.",
-                "vg-n3-00057"
+                "vg-n3-00104",
+                "vg-n3-00105",
+                "vg-n3-00106",
+                "vg-n3-00107"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku QUARTET: Intermediate Japanese I & II. Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 3 QUARTET: Intermediate Japanese I & II.",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Eksplorasi Pariwisata & Daya Tarik Daerah Lokal.",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -271,13 +307,17 @@
       "title_jp": "第4課: 現代社会のルールとマナー (Rules and Manners in Modern Society)",
       "theme": "Quartet I",
       "icon": "🎻",
-      "can_do_summary": "Memahami silabus Quartet I Bab 4 secara komprehensif.",
-      "grammar_ids": [],
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Norma Etika Publik & Kedisiplinan Warga.",
+      "grammar_ids": [
+        "gn3-00001",
+        "gn3-00002",
+        "gn3-00003"
+      ],
       "vocab_ids": [
-        "vg-n3-00069",
-        "Hujan berlanjut selama tiga hari.",
-        "Jalan ini berlanjut sampai mana ya.",
-        "vg-n3-00070"
+        "vg-n3-00171",
+        "vg-n3-00173",
+        "vg-n3-00174",
+        "vg-n3-00175"
       ],
       "lessons": [
         {
@@ -286,29 +326,37 @@
           "title_id": "Norma Etika Publik & Kedisiplinan Warga (Eksplorasi Materi & Pola)",
           "title_jp": "第4課: 現代社会のルールとマナー (Rules and Manners in Modern Society)（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku QUARTET: Intermediate Japanese I & II pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa QUARTET: Intermediate Japanese I & II bab ini dalam konteks nyata.",
-          "grammar_ids": [],
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Norma Etika Publik & Kedisiplinan Warga.",
+          "grammar_ids": [
+            "gn3-00001",
+            "gn3-00002",
+            "gn3-00003"
+          ],
           "vocab_ids": [
-            "vg-n3-00069",
-            "Hujan berlanjut selama tiga hari.",
-            "Jalan ini berlanjut sampai mana ya.",
-            "vg-n3-00070"
+            "vg-n3-00171",
+            "vg-n3-00173",
+            "vg-n3-00174",
+            "vg-n3-00175"
           ],
           "pedagogical_framework": {
             "what": {
               "summary": "Silabus resmi QUARTET: Intermediate Japanese I & II bab 4.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
-              "targetPatterns": [],
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Norma Etika Publik & Kedisiplinan Warga.",
+              "targetPatterns": [
+                "gn3-00001",
+                "gn3-00002",
+                "gn3-00003"
+              ],
               "coreVocabSample": [
-                "vg-n3-00069",
-                "Hujan berlanjut selama tiga hari.",
-                "Jalan ini berlanjut sampai mana ya.",
-                "vg-n3-00070"
+                "vg-n3-00171",
+                "vg-n3-00173",
+                "vg-n3-00174",
+                "vg-n3-00175"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku QUARTET: Intermediate Japanese I & II. Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 4 QUARTET: Intermediate Japanese I & II.",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Norma Etika Publik & Kedisiplinan Warga.",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -355,13 +403,17 @@
       "title_jp": "第5課: 科学技術と私たちの暮らし (Science, Tech, and Daily Life)",
       "theme": "Quartet I",
       "icon": "🎻",
-      "can_do_summary": "Memahami silabus Quartet I Bab 5 secara komprehensif.",
-      "grammar_ids": [],
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Revolusi Sains Digital & Dampaknya bagi Keseharian.",
+      "grammar_ids": [
+        "gn3-00001",
+        "gn3-00002",
+        "gn3-00003"
+      ],
       "vocab_ids": [
-        "vg-n3-00084",
-        "Saya menyusun piring-piring di atas meja.",
-        "Tolong susun barang-barang dengan rapi di rak.",
-        "vg-n3-00085"
+        "vg-n3-00248",
+        "vg-n3-00249",
+        "vg-n3-00250",
+        "vg-n3-00252"
       ],
       "lessons": [
         {
@@ -370,29 +422,37 @@
           "title_id": "Revolusi Sains Digital & Dampaknya bagi Keseharian (Eksplorasi Materi & Pola)",
           "title_jp": "第5課: 科学技術と私たちの暮らし (Science, Tech, and Daily Life)（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku QUARTET: Intermediate Japanese I & II pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa QUARTET: Intermediate Japanese I & II bab ini dalam konteks nyata.",
-          "grammar_ids": [],
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Revolusi Sains Digital & Dampaknya bagi Keseharian.",
+          "grammar_ids": [
+            "gn3-00001",
+            "gn3-00002",
+            "gn3-00003"
+          ],
           "vocab_ids": [
-            "vg-n3-00084",
-            "Saya menyusun piring-piring di atas meja.",
-            "Tolong susun barang-barang dengan rapi di rak.",
-            "vg-n3-00085"
+            "vg-n3-00248",
+            "vg-n3-00249",
+            "vg-n3-00250",
+            "vg-n3-00252"
           ],
           "pedagogical_framework": {
             "what": {
               "summary": "Silabus resmi QUARTET: Intermediate Japanese I & II bab 5.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
-              "targetPatterns": [],
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Revolusi Sains Digital & Dampaknya bagi Keseharian.",
+              "targetPatterns": [
+                "gn3-00001",
+                "gn3-00002",
+                "gn3-00003"
+              ],
               "coreVocabSample": [
-                "vg-n3-00084",
-                "Saya menyusun piring-piring di atas meja.",
-                "Tolong susun barang-barang dengan rapi di rak.",
-                "vg-n3-00085"
+                "vg-n3-00248",
+                "vg-n3-00249",
+                "vg-n3-00250",
+                "vg-n3-00252"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku QUARTET: Intermediate Japanese I & II. Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 5 QUARTET: Intermediate Japanese I & II.",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Revolusi Sains Digital & Dampaknya bagi Keseharian.",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -439,13 +499,17 @@
       "title_jp": "第6課: 伝統と新しい文化 (Tradition and New Culture)",
       "theme": "Quartet I",
       "icon": "🎻",
-      "can_do_summary": "Memahami silabus Quartet I Bab 6 secara komprehensif.",
-      "grammar_ids": [],
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Harmoni Warisan Leluhur & Kreativitas Generasi Baru.",
+      "grammar_ids": [
+        "gn3-00001",
+        "gn3-00002",
+        "gn3-00003"
+      ],
       "vocab_ids": [
-        "vg-n3-00094",
-        "Saya merapikan rambut sebelum keluar.",
-        "Sebelum lomba, saya mengatur napas dulu baru mulai berlari.",
-        "vg-n3-00095"
+        "vg-n3-00305",
+        "vg-n3-00306",
+        "vg-n3-00307",
+        "vg-n3-00308"
       ],
       "lessons": [
         {
@@ -454,29 +518,37 @@
           "title_id": "Harmoni Warisan Leluhur & Kreativitas Generasi Baru (Eksplorasi Materi & Pola)",
           "title_jp": "第6課: 伝統と新しい文化 (Tradition and New Culture)（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku QUARTET: Intermediate Japanese I & II pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa QUARTET: Intermediate Japanese I & II bab ini dalam konteks nyata.",
-          "grammar_ids": [],
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Harmoni Warisan Leluhur & Kreativitas Generasi Baru.",
+          "grammar_ids": [
+            "gn3-00001",
+            "gn3-00002",
+            "gn3-00003"
+          ],
           "vocab_ids": [
-            "vg-n3-00094",
-            "Saya merapikan rambut sebelum keluar.",
-            "Sebelum lomba, saya mengatur napas dulu baru mulai berlari.",
-            "vg-n3-00095"
+            "vg-n3-00305",
+            "vg-n3-00306",
+            "vg-n3-00307",
+            "vg-n3-00308"
           ],
           "pedagogical_framework": {
             "what": {
               "summary": "Silabus resmi QUARTET: Intermediate Japanese I & II bab 6.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
-              "targetPatterns": [],
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Harmoni Warisan Leluhur & Kreativitas Generasi Baru.",
+              "targetPatterns": [
+                "gn3-00001",
+                "gn3-00002",
+                "gn3-00003"
+              ],
               "coreVocabSample": [
-                "vg-n3-00094",
-                "Saya merapikan rambut sebelum keluar.",
-                "Sebelum lomba, saya mengatur napas dulu baru mulai berlari.",
-                "vg-n3-00095"
+                "vg-n3-00305",
+                "vg-n3-00306",
+                "vg-n3-00307",
+                "vg-n3-00308"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku QUARTET: Intermediate Japanese I & II. Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 6 QUARTET: Intermediate Japanese I & II.",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Harmoni Warisan Leluhur & Kreativitas Generasi Baru.",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -517,41 +589,62 @@
     {
       "unit_number": 7,
       "id": "unit-curriculum-book-quartet-07",
-      "level": "n3",
+      "level": "n2",
       "pt_stage": 2,
-      "title_id": "Quartet II: Quartet II Bab 1",
-      "title_jp": "Quartet II 第1課",
+      "title_id": "Quartet II: Kemakmuran Warga & Konservasi Ekologi Bumi",
+      "title_jp": "第7課: 豊かな社会と環境 (Affluent Society and Environment)",
       "theme": "Quartet II",
       "icon": "🎻",
-      "can_do_summary": "Memahami silabus Quartet II Bab 1 secara komprehensif.",
-      "grammar_ids": [],
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Kemakmuran Warga & Konservasi Ekologi Bumi.",
+      "grammar_ids": [
+        "gn2-00001",
+        "gn2-00002",
+        "gn2-00003"
+      ],
       "vocab_ids": [
-        "vg-n5-00990"
+        "vg-n2-00051",
+        "vg-n2-00052",
+        "vg-n2-00053",
+        "vg-n2-00054"
       ],
       "lessons": [
         {
           "id": "les-curriculum-book-quartet-u07-01",
           "lesson_number": 1,
-          "title_id": "Quartet II Bab 1 (Eksplorasi Materi & Pola)",
-          "title_jp": "Quartet II 第1課（解説）",
+          "title_id": "Kemakmuran Warga & Konservasi Ekologi Bumi (Eksplorasi Materi & Pola)",
+          "title_jp": "第7課: 豊かな社会と環境 (Affluent Society and Environment)（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku QUARTET: Intermediate Japanese I & II pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa QUARTET: Intermediate Japanese I & II bab ini dalam konteks nyata.",
-          "grammar_ids": [],
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Kemakmuran Warga & Konservasi Ekologi Bumi.",
+          "grammar_ids": [
+            "gn2-00001",
+            "gn2-00002",
+            "gn2-00003"
+          ],
           "vocab_ids": [
-            "vg-n5-00990"
+            "vg-n2-00051",
+            "vg-n2-00052",
+            "vg-n2-00053",
+            "vg-n2-00054"
           ],
           "pedagogical_framework": {
             "what": {
-              "summary": "Silabus resmi QUARTET: Intermediate Japanese I & II bab 1.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
-              "targetPatterns": [],
+              "summary": "Silabus resmi QUARTET: Intermediate Japanese I & II bab 7.",
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Kemakmuran Warga & Konservasi Ekologi Bumi.",
+              "targetPatterns": [
+                "gn2-00001",
+                "gn2-00002",
+                "gn2-00003"
+              ],
               "coreVocabSample": [
-                "vg-n5-00990"
+                "vg-n2-00051",
+                "vg-n2-00052",
+                "vg-n2-00053",
+                "vg-n2-00054"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku QUARTET: Intermediate Japanese I & II. Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 1 QUARTET: Intermediate Japanese I & II.",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Kemakmuran Warga & Konservasi Ekologi Bumi.",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -565,17 +658,17 @@
               "id": "d1",
               "speaker": "Sensei",
               "speakerRole": "Tutor Belajar",
-              "jp": "Quartet II 第1課の勉強を始めましょう！",
+              "jp": "第7課: 豊かな社会と環境 (Affluent Society and Environment)の勉強を始めましょう！",
               "furigana": "べんきょうをはじめましょう！",
               "romaji": "Benkyou wo hajimemashou!",
-              "idText": "Mari kita mulai belajar Quartet II Bab 1!"
+              "idText": "Mari kita mulai belajar Kemakmuran Warga & Konservasi Ekologi Bumi!"
             }
           ],
           "drills": [
             {
               "id": "dr1",
               "type": "multiple-choice",
-              "prompt": "Apa fokus utama pada materi Quartet II Bab 1 di buku QUARTET: Intermediate Japanese I & II?",
+              "prompt": "Apa fokus utama pada materi Kemakmuran Warga & Konservasi Ekologi Bumi di buku QUARTET: Intermediate Japanese I & II?",
               "options": [
                 "Menguasai pola kalimat bab ini dengan pemahaman alami",
                 "Menghafal tanpa memahami konteks",
@@ -592,41 +685,62 @@
     {
       "unit_number": 8,
       "id": "unit-curriculum-book-quartet-08",
-      "level": "n3",
+      "level": "n2",
       "pt_stage": 3,
-      "title_id": "Quartet II: Quartet II Bab 2",
-      "title_jp": "Quartet II 第2課",
+      "title_id": "Quartet II: Kekuatan Bahasa, Gaya Bertutur & Pola Pikir",
+      "title_jp": "第8課: 言葉とコミュニケーション (Language and Communication)",
       "theme": "Quartet II",
       "icon": "🎻",
-      "can_do_summary": "Memahami silabus Quartet II Bab 2 secara komprehensif.",
-      "grammar_ids": [],
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Kekuatan Bahasa, Gaya Bertutur & Pola Pikir.",
+      "grammar_ids": [
+        "gn2-00001",
+        "gn2-00002",
+        "gn2-00003"
+      ],
       "vocab_ids": [
-        "vg-n5-00990"
+        "vg-n2-00086",
+        "vg-n2-00087",
+        "vg-n2-00088",
+        "vg-n2-00089"
       ],
       "lessons": [
         {
           "id": "les-curriculum-book-quartet-u08-01",
           "lesson_number": 1,
-          "title_id": "Quartet II Bab 2 (Eksplorasi Materi & Pola)",
-          "title_jp": "Quartet II 第2課（解説）",
+          "title_id": "Kekuatan Bahasa, Gaya Bertutur & Pola Pikir (Eksplorasi Materi & Pola)",
+          "title_jp": "第8課: 言葉とコミュニケーション (Language and Communication)（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku QUARTET: Intermediate Japanese I & II pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa QUARTET: Intermediate Japanese I & II bab ini dalam konteks nyata.",
-          "grammar_ids": [],
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Kekuatan Bahasa, Gaya Bertutur & Pola Pikir.",
+          "grammar_ids": [
+            "gn2-00001",
+            "gn2-00002",
+            "gn2-00003"
+          ],
           "vocab_ids": [
-            "vg-n5-00990"
+            "vg-n2-00086",
+            "vg-n2-00087",
+            "vg-n2-00088",
+            "vg-n2-00089"
           ],
           "pedagogical_framework": {
             "what": {
-              "summary": "Silabus resmi QUARTET: Intermediate Japanese I & II bab 2.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
-              "targetPatterns": [],
+              "summary": "Silabus resmi QUARTET: Intermediate Japanese I & II bab 8.",
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Kekuatan Bahasa, Gaya Bertutur & Pola Pikir.",
+              "targetPatterns": [
+                "gn2-00001",
+                "gn2-00002",
+                "gn2-00003"
+              ],
               "coreVocabSample": [
-                "vg-n5-00990"
+                "vg-n2-00086",
+                "vg-n2-00087",
+                "vg-n2-00088",
+                "vg-n2-00089"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku QUARTET: Intermediate Japanese I & II. Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 2 QUARTET: Intermediate Japanese I & II.",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Kekuatan Bahasa, Gaya Bertutur & Pola Pikir.",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -640,17 +754,17 @@
               "id": "d1",
               "speaker": "Sensei",
               "speakerRole": "Tutor Belajar",
-              "jp": "Quartet II 第2課の勉強を始めましょう！",
+              "jp": "第8課: 言葉とコミュニケーション (Language and Communication)の勉強を始めましょう！",
               "furigana": "べんきょうをはじめましょう！",
               "romaji": "Benkyou wo hajimemashou!",
-              "idText": "Mari kita mulai belajar Quartet II Bab 2!"
+              "idText": "Mari kita mulai belajar Kekuatan Bahasa, Gaya Bertutur & Pola Pikir!"
             }
           ],
           "drills": [
             {
               "id": "dr1",
               "type": "multiple-choice",
-              "prompt": "Apa fokus utama pada materi Quartet II Bab 2 di buku QUARTET: Intermediate Japanese I & II?",
+              "prompt": "Apa fokus utama pada materi Kekuatan Bahasa, Gaya Bertutur & Pola Pikir di buku QUARTET: Intermediate Japanese I & II?",
               "options": [
                 "Menguasai pola kalimat bab ini dengan pemahaman alami",
                 "Menghafal tanpa memahami konteks",
@@ -667,41 +781,62 @@
     {
       "unit_number": 9,
       "id": "unit-curriculum-book-quartet-09",
-      "level": "n3",
+      "level": "n2",
       "pt_stage": 4,
-      "title_id": "Quartet II: Quartet II Bab 3",
-      "title_jp": "Quartet II 第3課",
+      "title_id": "Quartet II: Inklusivitas, Hak Asasi & Koeksistensi Lintas Budaya",
+      "title_jp": "第9課: 多様性と多文化共生 (Diversity and Multicultural Society)",
       "theme": "Quartet II",
       "icon": "🎻",
-      "can_do_summary": "Memahami silabus Quartet II Bab 3 secara komprehensif.",
-      "grammar_ids": [],
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Inklusivitas, Hak Asasi & Koeksistensi Lintas Budaya.",
+      "grammar_ids": [
+        "gn2-00001",
+        "gn2-00002",
+        "gn2-00003"
+      ],
       "vocab_ids": [
-        "vg-n5-00990"
+        "vg-n2-00196",
+        "vg-n2-00197",
+        "vg-n2-00198",
+        "vg-n2-00199"
       ],
       "lessons": [
         {
           "id": "les-curriculum-book-quartet-u09-01",
           "lesson_number": 1,
-          "title_id": "Quartet II Bab 3 (Eksplorasi Materi & Pola)",
-          "title_jp": "Quartet II 第3課（解説）",
+          "title_id": "Inklusivitas, Hak Asasi & Koeksistensi Lintas Budaya (Eksplorasi Materi & Pola)",
+          "title_jp": "第9課: 多様性と多文化共生 (Diversity and Multicultural Society)（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku QUARTET: Intermediate Japanese I & II pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa QUARTET: Intermediate Japanese I & II bab ini dalam konteks nyata.",
-          "grammar_ids": [],
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Inklusivitas, Hak Asasi & Koeksistensi Lintas Budaya.",
+          "grammar_ids": [
+            "gn2-00001",
+            "gn2-00002",
+            "gn2-00003"
+          ],
           "vocab_ids": [
-            "vg-n5-00990"
+            "vg-n2-00196",
+            "vg-n2-00197",
+            "vg-n2-00198",
+            "vg-n2-00199"
           ],
           "pedagogical_framework": {
             "what": {
-              "summary": "Silabus resmi QUARTET: Intermediate Japanese I & II bab 3.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
-              "targetPatterns": [],
+              "summary": "Silabus resmi QUARTET: Intermediate Japanese I & II bab 9.",
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Inklusivitas, Hak Asasi & Koeksistensi Lintas Budaya.",
+              "targetPatterns": [
+                "gn2-00001",
+                "gn2-00002",
+                "gn2-00003"
+              ],
               "coreVocabSample": [
-                "vg-n5-00990"
+                "vg-n2-00196",
+                "vg-n2-00197",
+                "vg-n2-00198",
+                "vg-n2-00199"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku QUARTET: Intermediate Japanese I & II. Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 3 QUARTET: Intermediate Japanese I & II.",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Inklusivitas, Hak Asasi & Koeksistensi Lintas Budaya.",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -715,17 +850,17 @@
               "id": "d1",
               "speaker": "Sensei",
               "speakerRole": "Tutor Belajar",
-              "jp": "Quartet II 第3課の勉強を始めましょう！",
+              "jp": "第9課: 多様性と多文化共生 (Diversity and Multicultural Society)の勉強を始めましょう！",
               "furigana": "べんきょうをはじめましょう！",
               "romaji": "Benkyou wo hajimemashou!",
-              "idText": "Mari kita mulai belajar Quartet II Bab 3!"
+              "idText": "Mari kita mulai belajar Inklusivitas, Hak Asasi & Koeksistensi Lintas Budaya!"
             }
           ],
           "drills": [
             {
               "id": "dr1",
               "type": "multiple-choice",
-              "prompt": "Apa fokus utama pada materi Quartet II Bab 3 di buku QUARTET: Intermediate Japanese I & II?",
+              "prompt": "Apa fokus utama pada materi Inklusivitas, Hak Asasi & Koeksistensi Lintas Budaya di buku QUARTET: Intermediate Japanese I & II?",
               "options": [
                 "Menguasai pola kalimat bab ini dengan pemahaman alami",
                 "Menghafal tanpa memahami konteks",
@@ -742,41 +877,62 @@
     {
       "unit_number": 10,
       "id": "unit-curriculum-book-quartet-10",
-      "level": "n3",
+      "level": "n2",
       "pt_stage": 5,
-      "title_id": "Quartet II: Quartet II Bab 4",
-      "title_jp": "Quartet II 第4課",
+      "title_id": "Quartet II: Etos Kerja, Panggilan Jiwa & Transformasi Vokasi",
+      "title_jp": "第10課: 働くことの意義と未来 (Meaning and Future of Work)",
       "theme": "Quartet II",
       "icon": "🎻",
-      "can_do_summary": "Memahami silabus Quartet II Bab 4 secara komprehensif.",
-      "grammar_ids": [],
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Etos Kerja, Panggilan Jiwa & Transformasi Vokasi.",
+      "grammar_ids": [
+        "gn2-00001",
+        "gn2-00002",
+        "gn2-00003"
+      ],
       "vocab_ids": [
-        "vg-n5-00990"
+        "vg-n2-00282",
+        "vg-n2-00283",
+        "vg-n2-00284",
+        "vg-n2-00285"
       ],
       "lessons": [
         {
           "id": "les-curriculum-book-quartet-u10-01",
           "lesson_number": 1,
-          "title_id": "Quartet II Bab 4 (Eksplorasi Materi & Pola)",
-          "title_jp": "Quartet II 第4課（解説）",
+          "title_id": "Etos Kerja, Panggilan Jiwa & Transformasi Vokasi (Eksplorasi Materi & Pola)",
+          "title_jp": "第10課: 働くことの意義と未来 (Meaning and Future of Work)（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku QUARTET: Intermediate Japanese I & II pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa QUARTET: Intermediate Japanese I & II bab ini dalam konteks nyata.",
-          "grammar_ids": [],
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Etos Kerja, Panggilan Jiwa & Transformasi Vokasi.",
+          "grammar_ids": [
+            "gn2-00001",
+            "gn2-00002",
+            "gn2-00003"
+          ],
           "vocab_ids": [
-            "vg-n5-00990"
+            "vg-n2-00282",
+            "vg-n2-00283",
+            "vg-n2-00284",
+            "vg-n2-00285"
           ],
           "pedagogical_framework": {
             "what": {
-              "summary": "Silabus resmi QUARTET: Intermediate Japanese I & II bab 4.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
-              "targetPatterns": [],
+              "summary": "Silabus resmi QUARTET: Intermediate Japanese I & II bab 10.",
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Etos Kerja, Panggilan Jiwa & Transformasi Vokasi.",
+              "targetPatterns": [
+                "gn2-00001",
+                "gn2-00002",
+                "gn2-00003"
+              ],
               "coreVocabSample": [
-                "vg-n5-00990"
+                "vg-n2-00282",
+                "vg-n2-00283",
+                "vg-n2-00284",
+                "vg-n2-00285"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku QUARTET: Intermediate Japanese I & II. Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 4 QUARTET: Intermediate Japanese I & II.",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Etos Kerja, Panggilan Jiwa & Transformasi Vokasi.",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -790,17 +946,17 @@
               "id": "d1",
               "speaker": "Sensei",
               "speakerRole": "Tutor Belajar",
-              "jp": "Quartet II 第4課の勉強を始めましょう！",
+              "jp": "第10課: 働くことの意義と未来 (Meaning and Future of Work)の勉強を始めましょう！",
               "furigana": "べんきょうをはじめましょう！",
               "romaji": "Benkyou wo hajimemashou!",
-              "idText": "Mari kita mulai belajar Quartet II Bab 4!"
+              "idText": "Mari kita mulai belajar Etos Kerja, Panggilan Jiwa & Transformasi Vokasi!"
             }
           ],
           "drills": [
             {
               "id": "dr1",
               "type": "multiple-choice",
-              "prompt": "Apa fokus utama pada materi Quartet II Bab 4 di buku QUARTET: Intermediate Japanese I & II?",
+              "prompt": "Apa fokus utama pada materi Etos Kerja, Panggilan Jiwa & Transformasi Vokasi di buku QUARTET: Intermediate Japanese I & II?",
               "options": [
                 "Menguasai pola kalimat bab ini dengan pemahaman alami",
                 "Menghafal tanpa memahami konteks",
@@ -817,41 +973,62 @@
     {
       "unit_number": 11,
       "id": "unit-curriculum-book-quartet-11",
-      "level": "n3",
+      "level": "n2",
       "pt_stage": 6,
-      "title_id": "Quartet II: Quartet II Bab 5",
-      "title_jp": "Quartet II 第5課",
+      "title_id": "Quartet II: Estetika Sastra, Ekspresi Jiwa & Seni Kontemporer",
+      "title_jp": "第11課: 芸術と創造性 (Art and Human Creativity)",
       "theme": "Quartet II",
       "icon": "🎻",
-      "can_do_summary": "Memahami silabus Quartet II Bab 5 secara komprehensif.",
-      "grammar_ids": [],
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Estetika Sastra, Ekspresi Jiwa & Seni Kontemporer.",
+      "grammar_ids": [
+        "gn2-00001",
+        "gn2-00002",
+        "gn2-00003"
+      ],
       "vocab_ids": [
-        "vg-n5-00990"
+        "vg-n2-00349",
+        "vg-n2-00350",
+        "vg-n2-00356",
+        "vg-n2-00359"
       ],
       "lessons": [
         {
           "id": "les-curriculum-book-quartet-u11-01",
           "lesson_number": 1,
-          "title_id": "Quartet II Bab 5 (Eksplorasi Materi & Pola)",
-          "title_jp": "Quartet II 第5課（解説）",
+          "title_id": "Estetika Sastra, Ekspresi Jiwa & Seni Kontemporer (Eksplorasi Materi & Pola)",
+          "title_jp": "第11課: 芸術と創造性 (Art and Human Creativity)（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku QUARTET: Intermediate Japanese I & II pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa QUARTET: Intermediate Japanese I & II bab ini dalam konteks nyata.",
-          "grammar_ids": [],
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Estetika Sastra, Ekspresi Jiwa & Seni Kontemporer.",
+          "grammar_ids": [
+            "gn2-00001",
+            "gn2-00002",
+            "gn2-00003"
+          ],
           "vocab_ids": [
-            "vg-n5-00990"
+            "vg-n2-00349",
+            "vg-n2-00350",
+            "vg-n2-00356",
+            "vg-n2-00359"
           ],
           "pedagogical_framework": {
             "what": {
-              "summary": "Silabus resmi QUARTET: Intermediate Japanese I & II bab 5.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
-              "targetPatterns": [],
+              "summary": "Silabus resmi QUARTET: Intermediate Japanese I & II bab 11.",
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Estetika Sastra, Ekspresi Jiwa & Seni Kontemporer.",
+              "targetPatterns": [
+                "gn2-00001",
+                "gn2-00002",
+                "gn2-00003"
+              ],
               "coreVocabSample": [
-                "vg-n5-00990"
+                "vg-n2-00349",
+                "vg-n2-00350",
+                "vg-n2-00356",
+                "vg-n2-00359"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku QUARTET: Intermediate Japanese I & II. Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 5 QUARTET: Intermediate Japanese I & II.",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Estetika Sastra, Ekspresi Jiwa & Seni Kontemporer.",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -865,17 +1042,17 @@
               "id": "d1",
               "speaker": "Sensei",
               "speakerRole": "Tutor Belajar",
-              "jp": "Quartet II 第5課の勉強を始めましょう！",
+              "jp": "第11課: 芸術と創造性 (Art and Human Creativity)の勉強を始めましょう！",
               "furigana": "べんきょうをはじめましょう！",
               "romaji": "Benkyou wo hajimemashou!",
-              "idText": "Mari kita mulai belajar Quartet II Bab 5!"
+              "idText": "Mari kita mulai belajar Estetika Sastra, Ekspresi Jiwa & Seni Kontemporer!"
             }
           ],
           "drills": [
             {
               "id": "dr1",
               "type": "multiple-choice",
-              "prompt": "Apa fokus utama pada materi Quartet II Bab 5 di buku QUARTET: Intermediate Japanese I & II?",
+              "prompt": "Apa fokus utama pada materi Estetika Sastra, Ekspresi Jiwa & Seni Kontemporer di buku QUARTET: Intermediate Japanese I & II?",
               "options": [
                 "Menguasai pola kalimat bab ini dengan pemahaman alami",
                 "Menghafal tanpa memahami konteks",
@@ -892,41 +1069,62 @@
     {
       "unit_number": 12,
       "id": "unit-curriculum-book-quartet-12",
-      "level": "n3",
+      "level": "n2",
       "pt_stage": 1,
-      "title_id": "Quartet II: Quartet II Bab 6",
-      "title_jp": "Quartet II 第6課",
+      "title_id": "Quartet II: Refleksi Sejarah Peradaban & Kelangsungan Bumi",
+      "title_jp": "第12課: 歴史の教訓と地球の未来 (Historical Lessons and Global Future)",
       "theme": "Quartet II",
       "icon": "🎻",
-      "can_do_summary": "Memahami silabus Quartet II Bab 6 secara komprehensif.",
-      "grammar_ids": [],
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Refleksi Sejarah Peradaban & Kelangsungan Bumi.",
+      "grammar_ids": [
+        "gn2-00001",
+        "gn2-00002",
+        "gn2-00003"
+      ],
       "vocab_ids": [
-        "vg-n5-00990"
+        "vg-n2-00484",
+        "vg-n2-00485",
+        "vg-n2-00487",
+        "vg-n2-00488"
       ],
       "lessons": [
         {
           "id": "les-curriculum-book-quartet-u12-01",
           "lesson_number": 1,
-          "title_id": "Quartet II Bab 6 (Eksplorasi Materi & Pola)",
-          "title_jp": "Quartet II 第6課（解説）",
+          "title_id": "Refleksi Sejarah Peradaban & Kelangsungan Bumi (Eksplorasi Materi & Pola)",
+          "title_jp": "第12課: 歴史の教訓と地球の未来 (Historical Lessons and Global Future)（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku QUARTET: Intermediate Japanese I & II pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa QUARTET: Intermediate Japanese I & II bab ini dalam konteks nyata.",
-          "grammar_ids": [],
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Refleksi Sejarah Peradaban & Kelangsungan Bumi.",
+          "grammar_ids": [
+            "gn2-00001",
+            "gn2-00002",
+            "gn2-00003"
+          ],
           "vocab_ids": [
-            "vg-n5-00990"
+            "vg-n2-00484",
+            "vg-n2-00485",
+            "vg-n2-00487",
+            "vg-n2-00488"
           ],
           "pedagogical_framework": {
             "what": {
-              "summary": "Silabus resmi QUARTET: Intermediate Japanese I & II bab 6.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
-              "targetPatterns": [],
+              "summary": "Silabus resmi QUARTET: Intermediate Japanese I & II bab 12.",
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Refleksi Sejarah Peradaban & Kelangsungan Bumi.",
+              "targetPatterns": [
+                "gn2-00001",
+                "gn2-00002",
+                "gn2-00003"
+              ],
               "coreVocabSample": [
-                "vg-n5-00990"
+                "vg-n2-00484",
+                "vg-n2-00485",
+                "vg-n2-00487",
+                "vg-n2-00488"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku QUARTET: Intermediate Japanese I & II. Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 6 QUARTET: Intermediate Japanese I & II.",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Refleksi Sejarah Peradaban & Kelangsungan Bumi.",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -940,17 +1138,17 @@
               "id": "d1",
               "speaker": "Sensei",
               "speakerRole": "Tutor Belajar",
-              "jp": "Quartet II 第6課の勉強を始めましょう！",
+              "jp": "第12課: 歴史の教訓と地球の未来 (Historical Lessons and Global Future)の勉強を始めましょう！",
               "furigana": "べんきょうをはじめましょう！",
               "romaji": "Benkyou wo hajimemashou!",
-              "idText": "Mari kita mulai belajar Quartet II Bab 6!"
+              "idText": "Mari kita mulai belajar Refleksi Sejarah Peradaban & Kelangsungan Bumi!"
             }
           ],
           "drills": [
             {
               "id": "dr1",
               "type": "multiple-choice",
-              "prompt": "Apa fokus utama pada materi Quartet II Bab 6 di buku QUARTET: Intermediate Japanese I & II?",
+              "prompt": "Apa fokus utama pada materi Refleksi Sejarah Peradaban & Kelangsungan Bumi di buku QUARTET: Intermediate Japanese I & II?",
               "options": [
                 "Menguasai pola kalimat bab ini dengan pemahaman alami",
                 "Menghafal tanpa memahami konteks",

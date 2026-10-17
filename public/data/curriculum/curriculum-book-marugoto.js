@@ -8,7 +8,7 @@ window.curriculumBook_marugoto = {
     "level": "n5",
     "publisher": "The Japan Foundation",
     "version": "1.2.0",
-    "total_units": 12,
+    "total_units": 27,
     "authoritative": true
   },
   "units": [
@@ -17,39 +17,60 @@ window.curriculumBook_marugoto = {
       "id": "unit-curriculum-book-marugoto-01",
       "level": "n5",
       "pt_stage": 2,
-      "title_id": "Marugoto A1: Marugoto A1 Bab 1",
-      "title_jp": "Marugoto A1 第1課",
+      "title_id": "Marugoto A1: Huruf Dasar & Salam Pertemuan",
+      "title_jp": "トピック1: 日本語",
       "theme": "Marugoto A1",
       "icon": "🌸",
-      "can_do_summary": "Memahami silabus Marugoto A1 Bab 1 secara komprehensif.",
-      "grammar_ids": [],
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Huruf Dasar & Salam Pertemuan.",
+      "grammar_ids": [
+        "gn5-00001",
+        "gn5-00002",
+        "gn5-00004"
+      ],
       "vocab_ids": [
-        "vg-n5-00990"
+        "vg-n5-00001",
+        "vg-n5-00002",
+        "vg-n5-00003",
+        "vg-n5-00004"
       ],
       "lessons": [
         {
           "id": "les-curriculum-book-marugoto-u01-01",
           "lesson_number": 1,
-          "title_id": "Marugoto A1 Bab 1 (Eksplorasi Materi & Pola)",
-          "title_jp": "Marugoto A1 第1課（解説）",
+          "title_id": "Huruf Dasar & Salam Pertemuan (Eksplorasi Materi & Pola)",
+          "title_jp": "トピック1: 日本語（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku Marugoto: Japanese Language and Culture pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa Marugoto: Japanese Language and Culture bab ini dalam konteks nyata.",
-          "grammar_ids": [],
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Huruf Dasar & Salam Pertemuan.",
+          "grammar_ids": [
+            "gn5-00001",
+            "gn5-00002",
+            "gn5-00004"
+          ],
           "vocab_ids": [
-            "vg-n5-00990"
+            "vg-n5-00001",
+            "vg-n5-00002",
+            "vg-n5-00003",
+            "vg-n5-00004"
           ],
           "pedagogical_framework": {
             "what": {
               "summary": "Silabus resmi Marugoto: Japanese Language and Culture bab 1.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
-              "targetPatterns": [],
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Huruf Dasar & Salam Pertemuan.",
+              "targetPatterns": [
+                "gn5-00001",
+                "gn5-00002",
+                "gn5-00004"
+              ],
               "coreVocabSample": [
-                "vg-n5-00990"
+                "vg-n5-00001",
+                "vg-n5-00002",
+                "vg-n5-00003",
+                "vg-n5-00004"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku Marugoto: Japanese Language and Culture. Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 1 Marugoto: Japanese Language and Culture.",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Huruf Dasar & Salam Pertemuan.",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -63,17 +84,17 @@ window.curriculumBook_marugoto = {
               "id": "d1",
               "speaker": "Sensei",
               "speakerRole": "Tutor Belajar",
-              "jp": "Marugoto A1 第1課の勉強を始めましょう！",
+              "jp": "トピック1: 日本語の勉強を始めましょう！",
               "furigana": "べんきょうをはじめましょう！",
               "romaji": "Benkyou wo hajimemashou!",
-              "idText": "Mari kita mulai belajar Marugoto A1 Bab 1!"
+              "idText": "Mari kita mulai belajar Huruf Dasar & Salam Pertemuan!"
             }
           ],
           "drills": [
             {
               "id": "dr1",
               "type": "multiple-choice",
-              "prompt": "Apa fokus utama pada materi Marugoto A1 Bab 1 di buku Marugoto: Japanese Language and Culture?",
+              "prompt": "Apa fokus utama pada materi Huruf Dasar & Salam Pertemuan di buku Marugoto: Japanese Language and Culture?",
               "options": [
                 "Menguasai pola kalimat bab ini dengan pemahaman alami",
                 "Menghafal tanpa memahami konteks",
@@ -92,39 +113,60 @@ window.curriculumBook_marugoto = {
       "id": "unit-curriculum-book-marugoto-02",
       "level": "n5",
       "pt_stage": 3,
-      "title_id": "Marugoto A1: Marugoto A1 Bab 2",
-      "title_jp": "Marugoto A1 第2課",
+      "title_id": "Marugoto A1: Identitas Diri & Asal Negara",
+      "title_jp": "トピック2: わたし",
       "theme": "Marugoto A1",
       "icon": "🌸",
-      "can_do_summary": "Memahami silabus Marugoto A1 Bab 2 secara komprehensif.",
-      "grammar_ids": [],
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Identitas Diri & Asal Negara.",
+      "grammar_ids": [
+        "gn5-00001",
+        "gn5-00002",
+        "gn5-00004"
+      ],
       "vocab_ids": [
-        "vg-n5-00990"
+        "vg-n5-00021",
+        "vg-n5-00022",
+        "vg-n5-00023",
+        "vg-n5-00024"
       ],
       "lessons": [
         {
           "id": "les-curriculum-book-marugoto-u02-01",
           "lesson_number": 1,
-          "title_id": "Marugoto A1 Bab 2 (Eksplorasi Materi & Pola)",
-          "title_jp": "Marugoto A1 第2課（解説）",
+          "title_id": "Identitas Diri & Asal Negara (Eksplorasi Materi & Pola)",
+          "title_jp": "トピック2: わたし（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku Marugoto: Japanese Language and Culture pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa Marugoto: Japanese Language and Culture bab ini dalam konteks nyata.",
-          "grammar_ids": [],
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Identitas Diri & Asal Negara.",
+          "grammar_ids": [
+            "gn5-00001",
+            "gn5-00002",
+            "gn5-00004"
+          ],
           "vocab_ids": [
-            "vg-n5-00990"
+            "vg-n5-00021",
+            "vg-n5-00022",
+            "vg-n5-00023",
+            "vg-n5-00024"
           ],
           "pedagogical_framework": {
             "what": {
               "summary": "Silabus resmi Marugoto: Japanese Language and Culture bab 2.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
-              "targetPatterns": [],
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Identitas Diri & Asal Negara.",
+              "targetPatterns": [
+                "gn5-00001",
+                "gn5-00002",
+                "gn5-00004"
+              ],
               "coreVocabSample": [
-                "vg-n5-00990"
+                "vg-n5-00021",
+                "vg-n5-00022",
+                "vg-n5-00023",
+                "vg-n5-00024"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku Marugoto: Japanese Language and Culture. Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 2 Marugoto: Japanese Language and Culture.",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Identitas Diri & Asal Negara.",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -138,17 +180,17 @@ window.curriculumBook_marugoto = {
               "id": "d1",
               "speaker": "Sensei",
               "speakerRole": "Tutor Belajar",
-              "jp": "Marugoto A1 第2課の勉強を始めましょう！",
+              "jp": "トピック2: わたしの勉強を始めましょう！",
               "furigana": "べんきょうをはじめましょう！",
               "romaji": "Benkyou wo hajimemashou!",
-              "idText": "Mari kita mulai belajar Marugoto A1 Bab 2!"
+              "idText": "Mari kita mulai belajar Identitas Diri & Asal Negara!"
             }
           ],
           "drills": [
             {
               "id": "dr1",
               "type": "multiple-choice",
-              "prompt": "Apa fokus utama pada materi Marugoto A1 Bab 2 di buku Marugoto: Japanese Language and Culture?",
+              "prompt": "Apa fokus utama pada materi Identitas Diri & Asal Negara di buku Marugoto: Japanese Language and Culture?",
               "options": [
                 "Menguasai pola kalimat bab ini dengan pemahaman alami",
                 "Menghafal tanpa memahami konteks",
@@ -167,39 +209,60 @@ window.curriculumBook_marugoto = {
       "id": "unit-curriculum-book-marugoto-03",
       "level": "n5",
       "pt_stage": 4,
-      "title_id": "Marugoto A1: Marugoto A1 Bab 3",
-      "title_jp": "Marugoto A1 第3課",
+      "title_id": "Marugoto A1: Makanan Favorit & Sarapan",
+      "title_jp": "トピック3: たべもの",
       "theme": "Marugoto A1",
       "icon": "🌸",
-      "can_do_summary": "Memahami silabus Marugoto A1 Bab 3 secara komprehensif.",
-      "grammar_ids": [],
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Makanan Favorit & Sarapan.",
+      "grammar_ids": [
+        "gn5-00001",
+        "gn5-00002",
+        "gn5-00004"
+      ],
       "vocab_ids": [
-        "vg-n5-00990"
+        "vg-n5-00041",
+        "vg-n5-00042",
+        "vg-n5-00043",
+        "vg-n5-00044"
       ],
       "lessons": [
         {
           "id": "les-curriculum-book-marugoto-u03-01",
           "lesson_number": 1,
-          "title_id": "Marugoto A1 Bab 3 (Eksplorasi Materi & Pola)",
-          "title_jp": "Marugoto A1 第3課（解説）",
+          "title_id": "Makanan Favorit & Sarapan (Eksplorasi Materi & Pola)",
+          "title_jp": "トピック3: たべもの（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku Marugoto: Japanese Language and Culture pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa Marugoto: Japanese Language and Culture bab ini dalam konteks nyata.",
-          "grammar_ids": [],
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Makanan Favorit & Sarapan.",
+          "grammar_ids": [
+            "gn5-00001",
+            "gn5-00002",
+            "gn5-00004"
+          ],
           "vocab_ids": [
-            "vg-n5-00990"
+            "vg-n5-00041",
+            "vg-n5-00042",
+            "vg-n5-00043",
+            "vg-n5-00044"
           ],
           "pedagogical_framework": {
             "what": {
               "summary": "Silabus resmi Marugoto: Japanese Language and Culture bab 3.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
-              "targetPatterns": [],
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Makanan Favorit & Sarapan.",
+              "targetPatterns": [
+                "gn5-00001",
+                "gn5-00002",
+                "gn5-00004"
+              ],
               "coreVocabSample": [
-                "vg-n5-00990"
+                "vg-n5-00041",
+                "vg-n5-00042",
+                "vg-n5-00043",
+                "vg-n5-00044"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku Marugoto: Japanese Language and Culture. Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 3 Marugoto: Japanese Language and Culture.",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Makanan Favorit & Sarapan.",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -213,17 +276,17 @@ window.curriculumBook_marugoto = {
               "id": "d1",
               "speaker": "Sensei",
               "speakerRole": "Tutor Belajar",
-              "jp": "Marugoto A1 第3課の勉強を始めましょう！",
+              "jp": "トピック3: たべものの勉強を始めましょう！",
               "furigana": "べんきょうをはじめましょう！",
               "romaji": "Benkyou wo hajimemashou!",
-              "idText": "Mari kita mulai belajar Marugoto A1 Bab 3!"
+              "idText": "Mari kita mulai belajar Makanan Favorit & Sarapan!"
             }
           ],
           "drills": [
             {
               "id": "dr1",
               "type": "multiple-choice",
-              "prompt": "Apa fokus utama pada materi Marugoto A1 Bab 3 di buku Marugoto: Japanese Language and Culture?",
+              "prompt": "Apa fokus utama pada materi Makanan Favorit & Sarapan di buku Marugoto: Japanese Language and Culture?",
               "options": [
                 "Menguasai pola kalimat bab ini dengan pemahaman alami",
                 "Menghafal tanpa memahami konteks",
@@ -242,39 +305,60 @@ window.curriculumBook_marugoto = {
       "id": "unit-curriculum-book-marugoto-04",
       "level": "n5",
       "pt_stage": 5,
-      "title_id": "Marugoto A1: Marugoto A1 Bab 4",
-      "title_jp": "Marugoto A1 第4課",
+      "title_id": "Marugoto A1: Rumah Tinggal & Tata Ruangan",
+      "title_jp": "トピック4: いえ",
       "theme": "Marugoto A1",
       "icon": "🌸",
-      "can_do_summary": "Memahami silabus Marugoto A1 Bab 4 secara komprehensif.",
-      "grammar_ids": [],
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Rumah Tinggal & Tata Ruangan.",
+      "grammar_ids": [
+        "gn5-00001",
+        "gn5-00002",
+        "gn5-00004"
+      ],
       "vocab_ids": [
-        "vg-n5-00990"
+        "vg-n5-00164",
+        "vg-n5-00165",
+        "vg-n5-00166",
+        "vg-n5-00168"
       ],
       "lessons": [
         {
           "id": "les-curriculum-book-marugoto-u04-01",
           "lesson_number": 1,
-          "title_id": "Marugoto A1 Bab 4 (Eksplorasi Materi & Pola)",
-          "title_jp": "Marugoto A1 第4課（解説）",
+          "title_id": "Rumah Tinggal & Tata Ruangan (Eksplorasi Materi & Pola)",
+          "title_jp": "トピック4: いえ（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku Marugoto: Japanese Language and Culture pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa Marugoto: Japanese Language and Culture bab ini dalam konteks nyata.",
-          "grammar_ids": [],
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Rumah Tinggal & Tata Ruangan.",
+          "grammar_ids": [
+            "gn5-00001",
+            "gn5-00002",
+            "gn5-00004"
+          ],
           "vocab_ids": [
-            "vg-n5-00990"
+            "vg-n5-00164",
+            "vg-n5-00165",
+            "vg-n5-00166",
+            "vg-n5-00168"
           ],
           "pedagogical_framework": {
             "what": {
               "summary": "Silabus resmi Marugoto: Japanese Language and Culture bab 4.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
-              "targetPatterns": [],
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Rumah Tinggal & Tata Ruangan.",
+              "targetPatterns": [
+                "gn5-00001",
+                "gn5-00002",
+                "gn5-00004"
+              ],
               "coreVocabSample": [
-                "vg-n5-00990"
+                "vg-n5-00164",
+                "vg-n5-00165",
+                "vg-n5-00166",
+                "vg-n5-00168"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku Marugoto: Japanese Language and Culture. Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 4 Marugoto: Japanese Language and Culture.",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Rumah Tinggal & Tata Ruangan.",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -288,17 +372,17 @@ window.curriculumBook_marugoto = {
               "id": "d1",
               "speaker": "Sensei",
               "speakerRole": "Tutor Belajar",
-              "jp": "Marugoto A1 第4課の勉強を始めましょう！",
+              "jp": "トピック4: いえの勉強を始めましょう！",
               "furigana": "べんきょうをはじめましょう！",
               "romaji": "Benkyou wo hajimemashou!",
-              "idText": "Mari kita mulai belajar Marugoto A1 Bab 4!"
+              "idText": "Mari kita mulai belajar Rumah Tinggal & Tata Ruangan!"
             }
           ],
           "drills": [
             {
               "id": "dr1",
               "type": "multiple-choice",
-              "prompt": "Apa fokus utama pada materi Marugoto A1 Bab 4 di buku Marugoto: Japanese Language and Culture?",
+              "prompt": "Apa fokus utama pada materi Rumah Tinggal & Tata Ruangan di buku Marugoto: Japanese Language and Culture?",
               "options": [
                 "Menguasai pola kalimat bab ini dengan pemahaman alami",
                 "Menghafal tanpa memahami konteks",
@@ -317,39 +401,60 @@ window.curriculumBook_marugoto = {
       "id": "unit-curriculum-book-marugoto-05",
       "level": "n5",
       "pt_stage": 6,
-      "title_id": "Marugoto A2-1: Marugoto A2-1 Bab 1",
-      "title_jp": "Marugoto A2-1 第1課",
-      "theme": "Marugoto A2-1",
+      "title_id": "Marugoto A1: Rutinitas Harian & Keseharian",
+      "title_jp": "トピック5: せいかつ",
+      "theme": "Marugoto A1",
       "icon": "🌸",
-      "can_do_summary": "Memahami silabus Marugoto A2-1 Bab 1 secara komprehensif.",
-      "grammar_ids": [],
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Rutinitas Harian & Keseharian.",
+      "grammar_ids": [
+        "gn5-00001",
+        "gn5-00002",
+        "gn5-00004"
+      ],
       "vocab_ids": [
-        "vg-n5-00990"
+        "vg-n5-00185",
+        "vg-n5-00186",
+        "vg-n5-00187",
+        "vg-n5-00188"
       ],
       "lessons": [
         {
           "id": "les-curriculum-book-marugoto-u05-01",
           "lesson_number": 1,
-          "title_id": "Marugoto A2-1 Bab 1 (Eksplorasi Materi & Pola)",
-          "title_jp": "Marugoto A2-1 第1課（解説）",
+          "title_id": "Rutinitas Harian & Keseharian (Eksplorasi Materi & Pola)",
+          "title_jp": "トピック5: せいかつ（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku Marugoto: Japanese Language and Culture pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa Marugoto: Japanese Language and Culture bab ini dalam konteks nyata.",
-          "grammar_ids": [],
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Rutinitas Harian & Keseharian.",
+          "grammar_ids": [
+            "gn5-00001",
+            "gn5-00002",
+            "gn5-00004"
+          ],
           "vocab_ids": [
-            "vg-n5-00990"
+            "vg-n5-00185",
+            "vg-n5-00186",
+            "vg-n5-00187",
+            "vg-n5-00188"
           ],
           "pedagogical_framework": {
             "what": {
-              "summary": "Silabus resmi Marugoto: Japanese Language and Culture bab 1.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
-              "targetPatterns": [],
+              "summary": "Silabus resmi Marugoto: Japanese Language and Culture bab 5.",
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Rutinitas Harian & Keseharian.",
+              "targetPatterns": [
+                "gn5-00001",
+                "gn5-00002",
+                "gn5-00004"
+              ],
               "coreVocabSample": [
-                "vg-n5-00990"
+                "vg-n5-00185",
+                "vg-n5-00186",
+                "vg-n5-00187",
+                "vg-n5-00188"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku Marugoto: Japanese Language and Culture. Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 1 Marugoto: Japanese Language and Culture.",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Rutinitas Harian & Keseharian.",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -363,17 +468,17 @@ window.curriculumBook_marugoto = {
               "id": "d1",
               "speaker": "Sensei",
               "speakerRole": "Tutor Belajar",
-              "jp": "Marugoto A2-1 第1課の勉強を始めましょう！",
+              "jp": "トピック5: せいかつの勉強を始めましょう！",
               "furigana": "べんきょうをはじめましょう！",
               "romaji": "Benkyou wo hajimemashou!",
-              "idText": "Mari kita mulai belajar Marugoto A2-1 Bab 1!"
+              "idText": "Mari kita mulai belajar Rutinitas Harian & Keseharian!"
             }
           ],
           "drills": [
             {
               "id": "dr1",
               "type": "multiple-choice",
-              "prompt": "Apa fokus utama pada materi Marugoto A2-1 Bab 1 di buku Marugoto: Japanese Language and Culture?",
+              "prompt": "Apa fokus utama pada materi Rutinitas Harian & Keseharian di buku Marugoto: Japanese Language and Culture?",
               "options": [
                 "Menguasai pola kalimat bab ini dengan pemahaman alami",
                 "Menghafal tanpa memahami konteks",
@@ -392,39 +497,60 @@ window.curriculumBook_marugoto = {
       "id": "unit-curriculum-book-marugoto-06",
       "level": "n5",
       "pt_stage": 1,
-      "title_id": "Marugoto A2-1: Marugoto A2-1 Bab 2",
-      "title_jp": "Marugoto A2-1 第2課",
-      "theme": "Marugoto A2-1",
+      "title_id": "Marugoto A1: Hari Libur & Aktivitas Hobi",
+      "title_jp": "トピック6: やすみのひ",
+      "theme": "Marugoto A1",
       "icon": "🌸",
-      "can_do_summary": "Memahami silabus Marugoto A2-1 Bab 2 secara komprehensif.",
-      "grammar_ids": [],
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Hari Libur & Aktivitas Hobi.",
+      "grammar_ids": [
+        "gn5-00001",
+        "gn5-00002",
+        "gn5-00004"
+      ],
       "vocab_ids": [
-        "vg-n5-00990"
+        "vg-n5-00205",
+        "vg-n5-00206",
+        "vg-n5-00207",
+        "vg-n5-00208"
       ],
       "lessons": [
         {
           "id": "les-curriculum-book-marugoto-u06-01",
           "lesson_number": 1,
-          "title_id": "Marugoto A2-1 Bab 2 (Eksplorasi Materi & Pola)",
-          "title_jp": "Marugoto A2-1 第2課（解説）",
+          "title_id": "Hari Libur & Aktivitas Hobi (Eksplorasi Materi & Pola)",
+          "title_jp": "トピック6: やすみのひ（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku Marugoto: Japanese Language and Culture pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa Marugoto: Japanese Language and Culture bab ini dalam konteks nyata.",
-          "grammar_ids": [],
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Hari Libur & Aktivitas Hobi.",
+          "grammar_ids": [
+            "gn5-00001",
+            "gn5-00002",
+            "gn5-00004"
+          ],
           "vocab_ids": [
-            "vg-n5-00990"
+            "vg-n5-00205",
+            "vg-n5-00206",
+            "vg-n5-00207",
+            "vg-n5-00208"
           ],
           "pedagogical_framework": {
             "what": {
-              "summary": "Silabus resmi Marugoto: Japanese Language and Culture bab 2.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
-              "targetPatterns": [],
+              "summary": "Silabus resmi Marugoto: Japanese Language and Culture bab 6.",
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Hari Libur & Aktivitas Hobi.",
+              "targetPatterns": [
+                "gn5-00001",
+                "gn5-00002",
+                "gn5-00004"
+              ],
               "coreVocabSample": [
-                "vg-n5-00990"
+                "vg-n5-00205",
+                "vg-n5-00206",
+                "vg-n5-00207",
+                "vg-n5-00208"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku Marugoto: Japanese Language and Culture. Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 2 Marugoto: Japanese Language and Culture.",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Hari Libur & Aktivitas Hobi.",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -438,17 +564,17 @@ window.curriculumBook_marugoto = {
               "id": "d1",
               "speaker": "Sensei",
               "speakerRole": "Tutor Belajar",
-              "jp": "Marugoto A2-1 第2課の勉強を始めましょう！",
+              "jp": "トピック6: やすみのひの勉強を始めましょう！",
               "furigana": "べんきょうをはじめましょう！",
               "romaji": "Benkyou wo hajimemashou!",
-              "idText": "Mari kita mulai belajar Marugoto A2-1 Bab 2!"
+              "idText": "Mari kita mulai belajar Hari Libur & Aktivitas Hobi!"
             }
           ],
           "drills": [
             {
               "id": "dr1",
               "type": "multiple-choice",
-              "prompt": "Apa fokus utama pada materi Marugoto A2-1 Bab 2 di buku Marugoto: Japanese Language and Culture?",
+              "prompt": "Apa fokus utama pada materi Hari Libur & Aktivitas Hobi di buku Marugoto: Japanese Language and Culture?",
               "options": [
                 "Menguasai pola kalimat bab ini dengan pemahaman alami",
                 "Menghafal tanpa memahami konteks",
@@ -467,39 +593,60 @@ window.curriculumBook_marugoto = {
       "id": "unit-curriculum-book-marugoto-07",
       "level": "n5",
       "pt_stage": 2,
-      "title_id": "Marugoto A2-1: Marugoto A2-1 Bab 3",
-      "title_jp": "Marugoto A2-1 第3課",
-      "theme": "Marugoto A2-1",
+      "title_id": "Marugoto A1: Tata Kota & Fasilitas Publik",
+      "title_jp": "トピック7: まち",
+      "theme": "Marugoto A1",
       "icon": "🌸",
-      "can_do_summary": "Memahami silabus Marugoto A2-1 Bab 3 secara komprehensif.",
-      "grammar_ids": [],
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Tata Kota & Fasilitas Publik.",
+      "grammar_ids": [
+        "gn5-00001",
+        "gn5-00002",
+        "gn5-00004"
+      ],
       "vocab_ids": [
-        "vg-n5-00990"
+        "vg-n5-00225",
+        "vg-n5-00226",
+        "vg-n5-00227",
+        "vg-n5-00228"
       ],
       "lessons": [
         {
           "id": "les-curriculum-book-marugoto-u07-01",
           "lesson_number": 1,
-          "title_id": "Marugoto A2-1 Bab 3 (Eksplorasi Materi & Pola)",
-          "title_jp": "Marugoto A2-1 第3課（解説）",
+          "title_id": "Tata Kota & Fasilitas Publik (Eksplorasi Materi & Pola)",
+          "title_jp": "トピック7: まち（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku Marugoto: Japanese Language and Culture pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa Marugoto: Japanese Language and Culture bab ini dalam konteks nyata.",
-          "grammar_ids": [],
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Tata Kota & Fasilitas Publik.",
+          "grammar_ids": [
+            "gn5-00001",
+            "gn5-00002",
+            "gn5-00004"
+          ],
           "vocab_ids": [
-            "vg-n5-00990"
+            "vg-n5-00225",
+            "vg-n5-00226",
+            "vg-n5-00227",
+            "vg-n5-00228"
           ],
           "pedagogical_framework": {
             "what": {
-              "summary": "Silabus resmi Marugoto: Japanese Language and Culture bab 3.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
-              "targetPatterns": [],
+              "summary": "Silabus resmi Marugoto: Japanese Language and Culture bab 7.",
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Tata Kota & Fasilitas Publik.",
+              "targetPatterns": [
+                "gn5-00001",
+                "gn5-00002",
+                "gn5-00004"
+              ],
               "coreVocabSample": [
-                "vg-n5-00990"
+                "vg-n5-00225",
+                "vg-n5-00226",
+                "vg-n5-00227",
+                "vg-n5-00228"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku Marugoto: Japanese Language and Culture. Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 3 Marugoto: Japanese Language and Culture.",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Tata Kota & Fasilitas Publik.",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -513,17 +660,17 @@ window.curriculumBook_marugoto = {
               "id": "d1",
               "speaker": "Sensei",
               "speakerRole": "Tutor Belajar",
-              "jp": "Marugoto A2-1 第3課の勉強を始めましょう！",
+              "jp": "トピック7: まちの勉強を始めましょう！",
               "furigana": "べんきょうをはじめましょう！",
               "romaji": "Benkyou wo hajimemashou!",
-              "idText": "Mari kita mulai belajar Marugoto A2-1 Bab 3!"
+              "idText": "Mari kita mulai belajar Tata Kota & Fasilitas Publik!"
             }
           ],
           "drills": [
             {
               "id": "dr1",
               "type": "multiple-choice",
-              "prompt": "Apa fokus utama pada materi Marugoto A2-1 Bab 3 di buku Marugoto: Japanese Language and Culture?",
+              "prompt": "Apa fokus utama pada materi Tata Kota & Fasilitas Publik di buku Marugoto: Japanese Language and Culture?",
               "options": [
                 "Menguasai pola kalimat bab ini dengan pemahaman alami",
                 "Menghafal tanpa memahami konteks",
@@ -542,39 +689,60 @@ window.curriculumBook_marugoto = {
       "id": "unit-curriculum-book-marugoto-08",
       "level": "n5",
       "pt_stage": 3,
-      "title_id": "Marugoto A2-1: Marugoto A2-1 Bab 4",
-      "title_jp": "Marugoto A2-1 第4課",
-      "theme": "Marugoto A2-1",
+      "title_id": "Marugoto A1: Berbelanja Kebutuhan & Harga",
+      "title_jp": "トピック8: かいもの",
+      "theme": "Marugoto A1",
       "icon": "🌸",
-      "can_do_summary": "Memahami silabus Marugoto A2-1 Bab 4 secara komprehensif.",
-      "grammar_ids": [],
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Berbelanja Kebutuhan & Harga.",
+      "grammar_ids": [
+        "gn5-00001",
+        "gn5-00002",
+        "gn5-00004"
+      ],
       "vocab_ids": [
-        "vg-n5-00990"
+        "vg-n5-00456",
+        "vg-n5-00484",
+        "vg-n5-00495",
+        "vg-n5-00497"
       ],
       "lessons": [
         {
           "id": "les-curriculum-book-marugoto-u08-01",
           "lesson_number": 1,
-          "title_id": "Marugoto A2-1 Bab 4 (Eksplorasi Materi & Pola)",
-          "title_jp": "Marugoto A2-1 第4課（解説）",
+          "title_id": "Berbelanja Kebutuhan & Harga (Eksplorasi Materi & Pola)",
+          "title_jp": "トピック8: かいもの（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku Marugoto: Japanese Language and Culture pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa Marugoto: Japanese Language and Culture bab ini dalam konteks nyata.",
-          "grammar_ids": [],
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Berbelanja Kebutuhan & Harga.",
+          "grammar_ids": [
+            "gn5-00001",
+            "gn5-00002",
+            "gn5-00004"
+          ],
           "vocab_ids": [
-            "vg-n5-00990"
+            "vg-n5-00456",
+            "vg-n5-00484",
+            "vg-n5-00495",
+            "vg-n5-00497"
           ],
           "pedagogical_framework": {
             "what": {
-              "summary": "Silabus resmi Marugoto: Japanese Language and Culture bab 4.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
-              "targetPatterns": [],
+              "summary": "Silabus resmi Marugoto: Japanese Language and Culture bab 8.",
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Berbelanja Kebutuhan & Harga.",
+              "targetPatterns": [
+                "gn5-00001",
+                "gn5-00002",
+                "gn5-00004"
+              ],
               "coreVocabSample": [
-                "vg-n5-00990"
+                "vg-n5-00456",
+                "vg-n5-00484",
+                "vg-n5-00495",
+                "vg-n5-00497"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku Marugoto: Japanese Language and Culture. Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 4 Marugoto: Japanese Language and Culture.",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Berbelanja Kebutuhan & Harga.",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -588,17 +756,17 @@ window.curriculumBook_marugoto = {
               "id": "d1",
               "speaker": "Sensei",
               "speakerRole": "Tutor Belajar",
-              "jp": "Marugoto A2-1 第4課の勉強を始めましょう！",
+              "jp": "トピック8: かいものの勉強を始めましょう！",
               "furigana": "べんきょうをはじめましょう！",
               "romaji": "Benkyou wo hajimemashou!",
-              "idText": "Mari kita mulai belajar Marugoto A2-1 Bab 4!"
+              "idText": "Mari kita mulai belajar Berbelanja Kebutuhan & Harga!"
             }
           ],
           "drills": [
             {
               "id": "dr1",
               "type": "multiple-choice",
-              "prompt": "Apa fokus utama pada materi Marugoto A2-1 Bab 4 di buku Marugoto: Japanese Language and Culture?",
+              "prompt": "Apa fokus utama pada materi Berbelanja Kebutuhan & Harga di buku Marugoto: Japanese Language and Culture?",
               "options": [
                 "Menguasai pola kalimat bab ini dengan pemahaman alami",
                 "Menghafal tanpa memahami konteks",
@@ -617,39 +785,60 @@ window.curriculumBook_marugoto = {
       "id": "unit-curriculum-book-marugoto-09",
       "level": "n5",
       "pt_stage": 4,
-      "title_id": "Marugoto A2-2: Marugoto A2-2 Bab 1",
-      "title_jp": "Marugoto A2-2 第1課",
-      "theme": "Marugoto A2-2",
+      "title_id": "Marugoto A1: Rencana Perjalanan Liburan",
+      "title_jp": "トピック9: やすみのひ２",
+      "theme": "Marugoto A1",
       "icon": "🌸",
-      "can_do_summary": "Memahami silabus Marugoto A2-2 Bab 1 secara komprehensif.",
-      "grammar_ids": [],
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Rencana Perjalanan Liburan.",
+      "grammar_ids": [
+        "gn5-00001",
+        "gn5-00002",
+        "gn5-00004"
+      ],
       "vocab_ids": [
-        "vg-n5-00990"
+        "vg-n5-00618",
+        "vg-n5-00619",
+        "vg-n5-00620",
+        "vg-n5-00725"
       ],
       "lessons": [
         {
           "id": "les-curriculum-book-marugoto-u09-01",
           "lesson_number": 1,
-          "title_id": "Marugoto A2-2 Bab 1 (Eksplorasi Materi & Pola)",
-          "title_jp": "Marugoto A2-2 第1課（解説）",
+          "title_id": "Rencana Perjalanan Liburan (Eksplorasi Materi & Pola)",
+          "title_jp": "トピック9: やすみのひ２（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku Marugoto: Japanese Language and Culture pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa Marugoto: Japanese Language and Culture bab ini dalam konteks nyata.",
-          "grammar_ids": [],
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Rencana Perjalanan Liburan.",
+          "grammar_ids": [
+            "gn5-00001",
+            "gn5-00002",
+            "gn5-00004"
+          ],
           "vocab_ids": [
-            "vg-n5-00990"
+            "vg-n5-00618",
+            "vg-n5-00619",
+            "vg-n5-00620",
+            "vg-n5-00725"
           ],
           "pedagogical_framework": {
             "what": {
-              "summary": "Silabus resmi Marugoto: Japanese Language and Culture bab 1.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
-              "targetPatterns": [],
+              "summary": "Silabus resmi Marugoto: Japanese Language and Culture bab 9.",
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Rencana Perjalanan Liburan.",
+              "targetPatterns": [
+                "gn5-00001",
+                "gn5-00002",
+                "gn5-00004"
+              ],
               "coreVocabSample": [
-                "vg-n5-00990"
+                "vg-n5-00618",
+                "vg-n5-00619",
+                "vg-n5-00620",
+                "vg-n5-00725"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku Marugoto: Japanese Language and Culture. Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 1 Marugoto: Japanese Language and Culture.",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Rencana Perjalanan Liburan.",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -663,17 +852,17 @@ window.curriculumBook_marugoto = {
               "id": "d1",
               "speaker": "Sensei",
               "speakerRole": "Tutor Belajar",
-              "jp": "Marugoto A2-2 第1課の勉強を始めましょう！",
+              "jp": "トピック9: やすみのひ２の勉強を始めましょう！",
               "furigana": "べんきょうをはじめましょう！",
               "romaji": "Benkyou wo hajimemashou!",
-              "idText": "Mari kita mulai belajar Marugoto A2-2 Bab 1!"
+              "idText": "Mari kita mulai belajar Rencana Perjalanan Liburan!"
             }
           ],
           "drills": [
             {
               "id": "dr1",
               "type": "multiple-choice",
-              "prompt": "Apa fokus utama pada materi Marugoto A2-2 Bab 1 di buku Marugoto: Japanese Language and Culture?",
+              "prompt": "Apa fokus utama pada materi Rencana Perjalanan Liburan di buku Marugoto: Japanese Language and Culture?",
               "options": [
                 "Menguasai pola kalimat bab ini dengan pemahaman alami",
                 "Menghafal tanpa memahami konteks",
@@ -690,41 +879,62 @@ window.curriculumBook_marugoto = {
     {
       "unit_number": 10,
       "id": "unit-curriculum-book-marugoto-10",
-      "level": "n5",
+      "level": "n4",
       "pt_stage": 5,
-      "title_id": "Marugoto A2-2: Marugoto A2-2 Bab 2",
-      "title_jp": "Marugoto A2-2 第2課",
-      "theme": "Marugoto A2-2",
+      "title_id": "Marugoto A2-1: Membangun Sahabat Baru",
+      "title_jp": "トピック1: あたらしい ともだち",
+      "theme": "Marugoto A2-1",
       "icon": "🌸",
-      "can_do_summary": "Memahami silabus Marugoto A2-2 Bab 2 secara komprehensif.",
-      "grammar_ids": [],
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Membangun Sahabat Baru.",
+      "grammar_ids": [
+        "gn4-00001",
+        "gn4-00002",
+        "gn4-00003"
+      ],
       "vocab_ids": [
-        "vg-n5-00990"
+        "vg-n4-00001",
+        "vg-n4-00002",
+        "vg-n4-00003",
+        "vg-n4-00005"
       ],
       "lessons": [
         {
           "id": "les-curriculum-book-marugoto-u10-01",
           "lesson_number": 1,
-          "title_id": "Marugoto A2-2 Bab 2 (Eksplorasi Materi & Pola)",
-          "title_jp": "Marugoto A2-2 第2課（解説）",
+          "title_id": "Membangun Sahabat Baru (Eksplorasi Materi & Pola)",
+          "title_jp": "トピック1: あたらしい ともだち（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku Marugoto: Japanese Language and Culture pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa Marugoto: Japanese Language and Culture bab ini dalam konteks nyata.",
-          "grammar_ids": [],
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Membangun Sahabat Baru.",
+          "grammar_ids": [
+            "gn4-00001",
+            "gn4-00002",
+            "gn4-00003"
+          ],
           "vocab_ids": [
-            "vg-n5-00990"
+            "vg-n4-00001",
+            "vg-n4-00002",
+            "vg-n4-00003",
+            "vg-n4-00005"
           ],
           "pedagogical_framework": {
             "what": {
-              "summary": "Silabus resmi Marugoto: Japanese Language and Culture bab 2.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
-              "targetPatterns": [],
+              "summary": "Silabus resmi Marugoto: Japanese Language and Culture bab 1.",
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Membangun Sahabat Baru.",
+              "targetPatterns": [
+                "gn4-00001",
+                "gn4-00002",
+                "gn4-00003"
+              ],
               "coreVocabSample": [
-                "vg-n5-00990"
+                "vg-n4-00001",
+                "vg-n4-00002",
+                "vg-n4-00003",
+                "vg-n4-00005"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku Marugoto: Japanese Language and Culture. Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 2 Marugoto: Japanese Language and Culture.",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Membangun Sahabat Baru.",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -738,17 +948,17 @@ window.curriculumBook_marugoto = {
               "id": "d1",
               "speaker": "Sensei",
               "speakerRole": "Tutor Belajar",
-              "jp": "Marugoto A2-2 第2課の勉強を始めましょう！",
+              "jp": "トピック1: あたらしい ともだちの勉強を始めましょう！",
               "furigana": "べんきょうをはじめましょう！",
               "romaji": "Benkyou wo hajimemashou!",
-              "idText": "Mari kita mulai belajar Marugoto A2-2 Bab 2!"
+              "idText": "Mari kita mulai belajar Membangun Sahabat Baru!"
             }
           ],
           "drills": [
             {
               "id": "dr1",
               "type": "multiple-choice",
-              "prompt": "Apa fokus utama pada materi Marugoto A2-2 Bab 2 di buku Marugoto: Japanese Language and Culture?",
+              "prompt": "Apa fokus utama pada materi Membangun Sahabat Baru di buku Marugoto: Japanese Language and Culture?",
               "options": [
                 "Menguasai pola kalimat bab ini dengan pemahaman alami",
                 "Menghafal tanpa memahami konteks",
@@ -765,41 +975,62 @@ window.curriculumBook_marugoto = {
     {
       "unit_number": 11,
       "id": "unit-curriculum-book-marugoto-11",
-      "level": "n5",
+      "level": "n4",
       "pt_stage": 6,
-      "title_id": "Marugoto A2-2: Marugoto A2-2 Bab 3",
-      "title_jp": "Marugoto A2-2 第3課",
-      "theme": "Marugoto A2-2",
+      "title_id": "Marugoto A2-1: Kuliner & Restoran Pilihan",
+      "title_jp": "トピック2: しょくじの おみせ",
+      "theme": "Marugoto A2-1",
       "icon": "🌸",
-      "can_do_summary": "Memahami silabus Marugoto A2-2 Bab 3 secara komprehensif.",
-      "grammar_ids": [],
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Kuliner & Restoran Pilihan.",
+      "grammar_ids": [
+        "gn4-00001",
+        "gn4-00002",
+        "gn4-00003"
+      ],
       "vocab_ids": [
-        "vg-n5-00990"
+        "vg-n4-00061",
+        "vg-n4-00062",
+        "vg-n4-00064",
+        "vg-n4-00066"
       ],
       "lessons": [
         {
           "id": "les-curriculum-book-marugoto-u11-01",
           "lesson_number": 1,
-          "title_id": "Marugoto A2-2 Bab 3 (Eksplorasi Materi & Pola)",
-          "title_jp": "Marugoto A2-2 第3課（解説）",
+          "title_id": "Kuliner & Restoran Pilihan (Eksplorasi Materi & Pola)",
+          "title_jp": "トピック2: しょくじの おみせ（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku Marugoto: Japanese Language and Culture pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa Marugoto: Japanese Language and Culture bab ini dalam konteks nyata.",
-          "grammar_ids": [],
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Kuliner & Restoran Pilihan.",
+          "grammar_ids": [
+            "gn4-00001",
+            "gn4-00002",
+            "gn4-00003"
+          ],
           "vocab_ids": [
-            "vg-n5-00990"
+            "vg-n4-00061",
+            "vg-n4-00062",
+            "vg-n4-00064",
+            "vg-n4-00066"
           ],
           "pedagogical_framework": {
             "what": {
-              "summary": "Silabus resmi Marugoto: Japanese Language and Culture bab 3.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
-              "targetPatterns": [],
+              "summary": "Silabus resmi Marugoto: Japanese Language and Culture bab 2.",
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Kuliner & Restoran Pilihan.",
+              "targetPatterns": [
+                "gn4-00001",
+                "gn4-00002",
+                "gn4-00003"
+              ],
               "coreVocabSample": [
-                "vg-n5-00990"
+                "vg-n4-00061",
+                "vg-n4-00062",
+                "vg-n4-00064",
+                "vg-n4-00066"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku Marugoto: Japanese Language and Culture. Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 3 Marugoto: Japanese Language and Culture.",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Kuliner & Restoran Pilihan.",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -813,17 +1044,17 @@ window.curriculumBook_marugoto = {
               "id": "d1",
               "speaker": "Sensei",
               "speakerRole": "Tutor Belajar",
-              "jp": "Marugoto A2-2 第3課の勉強を始めましょう！",
+              "jp": "トピック2: しょくじの おみせの勉強を始めましょう！",
               "furigana": "べんきょうをはじめましょう！",
               "romaji": "Benkyou wo hajimemashou!",
-              "idText": "Mari kita mulai belajar Marugoto A2-2 Bab 3!"
+              "idText": "Mari kita mulai belajar Kuliner & Restoran Pilihan!"
             }
           ],
           "drills": [
             {
               "id": "dr1",
               "type": "multiple-choice",
-              "prompt": "Apa fokus utama pada materi Marugoto A2-2 Bab 3 di buku Marugoto: Japanese Language and Culture?",
+              "prompt": "Apa fokus utama pada materi Kuliner & Restoran Pilihan di buku Marugoto: Japanese Language and Culture?",
               "options": [
                 "Menguasai pola kalimat bab ini dengan pemahaman alami",
                 "Menghafal tanpa memahami konteks",
@@ -840,41 +1071,62 @@ window.curriculumBook_marugoto = {
     {
       "unit_number": 12,
       "id": "unit-curriculum-book-marugoto-12",
-      "level": "n5",
+      "level": "n4",
       "pt_stage": 1,
-      "title_id": "Marugoto A2-2: Marugoto A2-2 Bab 4",
-      "title_jp": "Marugoto A2-2 第4課",
-      "theme": "Marugoto A2-2",
+      "title_id": "Marugoto A2-1: Wisata Kota & Pemanduan Tokyo",
+      "title_jp": "トピック3: とうきょう あんない",
+      "theme": "Marugoto A2-1",
       "icon": "🌸",
-      "can_do_summary": "Memahami silabus Marugoto A2-2 Bab 4 secara komprehensif.",
-      "grammar_ids": [],
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Wisata Kota & Pemanduan Tokyo.",
+      "grammar_ids": [
+        "gn4-00001",
+        "gn4-00002",
+        "gn4-00003"
+      ],
       "vocab_ids": [
-        "vg-n5-00990"
+        "vg-n4-00126",
+        "vg-n4-00129",
+        "vg-n4-00130",
+        "vg-n4-00131"
       ],
       "lessons": [
         {
           "id": "les-curriculum-book-marugoto-u12-01",
           "lesson_number": 1,
-          "title_id": "Marugoto A2-2 Bab 4 (Eksplorasi Materi & Pola)",
-          "title_jp": "Marugoto A2-2 第4課（解説）",
+          "title_id": "Wisata Kota & Pemanduan Tokyo (Eksplorasi Materi & Pola)",
+          "title_jp": "トピック3: とうきょう あんない（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku Marugoto: Japanese Language and Culture pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa Marugoto: Japanese Language and Culture bab ini dalam konteks nyata.",
-          "grammar_ids": [],
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Wisata Kota & Pemanduan Tokyo.",
+          "grammar_ids": [
+            "gn4-00001",
+            "gn4-00002",
+            "gn4-00003"
+          ],
           "vocab_ids": [
-            "vg-n5-00990"
+            "vg-n4-00126",
+            "vg-n4-00129",
+            "vg-n4-00130",
+            "vg-n4-00131"
           ],
           "pedagogical_framework": {
             "what": {
-              "summary": "Silabus resmi Marugoto: Japanese Language and Culture bab 4.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
-              "targetPatterns": [],
+              "summary": "Silabus resmi Marugoto: Japanese Language and Culture bab 3.",
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Wisata Kota & Pemanduan Tokyo.",
+              "targetPatterns": [
+                "gn4-00001",
+                "gn4-00002",
+                "gn4-00003"
+              ],
               "coreVocabSample": [
-                "vg-n5-00990"
+                "vg-n4-00126",
+                "vg-n4-00129",
+                "vg-n4-00130",
+                "vg-n4-00131"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku Marugoto: Japanese Language and Culture. Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 4 Marugoto: Japanese Language and Culture.",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Wisata Kota & Pemanduan Tokyo.",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -888,17 +1140,1457 @@ window.curriculumBook_marugoto = {
               "id": "d1",
               "speaker": "Sensei",
               "speakerRole": "Tutor Belajar",
-              "jp": "Marugoto A2-2 第4課の勉強を始めましょう！",
+              "jp": "トピック3: とうきょう あんないの勉強を始めましょう！",
               "furigana": "べんきょうをはじめましょう！",
               "romaji": "Benkyou wo hajimemashou!",
-              "idText": "Mari kita mulai belajar Marugoto A2-2 Bab 4!"
+              "idText": "Mari kita mulai belajar Wisata Kota & Pemanduan Tokyo!"
             }
           ],
           "drills": [
             {
               "id": "dr1",
               "type": "multiple-choice",
-              "prompt": "Apa fokus utama pada materi Marugoto A2-2 Bab 4 di buku Marugoto: Japanese Language and Culture?",
+              "prompt": "Apa fokus utama pada materi Wisata Kota & Pemanduan Tokyo di buku Marugoto: Japanese Language and Culture?",
+              "options": [
+                "Menguasai pola kalimat bab ini dengan pemahaman alami",
+                "Menghafal tanpa memahami konteks",
+                "Mengabaikan intonasi pengucapan",
+                "Hanya membaca terjemahan bahasa Inggris"
+              ],
+              "correctAnswer": "Menguasai pola kalimat bab ini dengan pemahaman alami",
+              "explanation": "Setiap bab dirancang untuk memperkuat kemampuan komunikasi fungsional pembelajar."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 13,
+      "id": "unit-curriculum-book-marugoto-13",
+      "level": "n4",
+      "pt_stage": 2,
+      "title_id": "Marugoto A2-1: Festival Budaya & Matsuri Jepang",
+      "title_jp": "トピック4: にほんの まつり",
+      "theme": "Marugoto A2-1",
+      "icon": "🌸",
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Festival Budaya & Matsuri Jepang.",
+      "grammar_ids": [
+        "gn4-00001",
+        "gn4-00002",
+        "gn4-00003"
+      ],
+      "vocab_ids": [
+        "vg-n4-00171",
+        "vg-n4-00173",
+        "vg-n4-00174",
+        "vg-n4-00175"
+      ],
+      "lessons": [
+        {
+          "id": "les-curriculum-book-marugoto-u13-01",
+          "lesson_number": 1,
+          "title_id": "Festival Budaya & Matsuri Jepang (Eksplorasi Materi & Pola)",
+          "title_jp": "トピック4: にほんの まつり（解説）",
+          "desc_id": "Mempelajari urutan materi pedagogis buku Marugoto: Japanese Language and Culture pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Festival Budaya & Matsuri Jepang.",
+          "grammar_ids": [
+            "gn4-00001",
+            "gn4-00002",
+            "gn4-00003"
+          ],
+          "vocab_ids": [
+            "vg-n4-00171",
+            "vg-n4-00173",
+            "vg-n4-00174",
+            "vg-n4-00175"
+          ],
+          "pedagogical_framework": {
+            "what": {
+              "summary": "Silabus resmi Marugoto: Japanese Language and Culture bab 4.",
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Festival Budaya & Matsuri Jepang.",
+              "targetPatterns": [
+                "gn4-00001",
+                "gn4-00002",
+                "gn4-00003"
+              ],
+              "coreVocabSample": [
+                "vg-n4-00171",
+                "vg-n4-00173",
+                "vg-n4-00174",
+                "vg-n4-00175"
+              ]
+            },
+            "sensei_context": {
+              "sceneIntro": "Kamu sedang mempelajari buku Marugoto: Japanese Language and Culture. Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Festival Budaya & Matsuri Jepang.",
+              "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
+            },
+            "cultural_notes": {
+              "title": "Catatan Budaya & Konteks Pemakaian (Marugoto: Japanese Language and Culture)",
+              "etiquette": "Perhatikan konteks formalitas saat menggunakan pola kalimat ini kepada guru, teman, atau atasan.",
+              "taboos": "Hindari penggunaan pola kasual kepada orang yang baru pertama kali ditemui."
+            }
+          },
+          "dialogue": [
+            {
+              "id": "d1",
+              "speaker": "Sensei",
+              "speakerRole": "Tutor Belajar",
+              "jp": "トピック4: にほんの まつりの勉強を始めましょう！",
+              "furigana": "べんきょうをはじめましょう！",
+              "romaji": "Benkyou wo hajimemashou!",
+              "idText": "Mari kita mulai belajar Festival Budaya & Matsuri Jepang!"
+            }
+          ],
+          "drills": [
+            {
+              "id": "dr1",
+              "type": "multiple-choice",
+              "prompt": "Apa fokus utama pada materi Festival Budaya & Matsuri Jepang di buku Marugoto: Japanese Language and Culture?",
+              "options": [
+                "Menguasai pola kalimat bab ini dengan pemahaman alami",
+                "Menghafal tanpa memahami konteks",
+                "Mengabaikan intonasi pengucapan",
+                "Hanya membaca terjemahan bahasa Inggris"
+              ],
+              "correctAnswer": "Menguasai pola kalimat bab ini dengan pemahaman alami",
+              "explanation": "Setiap bab dirancang untuk memperkuat kemampuan komunikasi fungsional pembelajar."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 14,
+      "id": "unit-curriculum-book-marugoto-14",
+      "level": "n4",
+      "pt_stage": 3,
+      "title_id": "Marugoto A2-1: Hari Istimewa & Tradisi Perayaan",
+      "title_jp": "トピック5: とくべつな ひ",
+      "theme": "Marugoto A2-1",
+      "icon": "🌸",
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Hari Istimewa & Tradisi Perayaan.",
+      "grammar_ids": [
+        "gn4-00001",
+        "gn4-00002",
+        "gn4-00003"
+      ],
+      "vocab_ids": [
+        "vg-n4-00238",
+        "vg-n4-00265",
+        "vg-n4-00266",
+        "vg-n4-00267"
+      ],
+      "lessons": [
+        {
+          "id": "les-curriculum-book-marugoto-u14-01",
+          "lesson_number": 1,
+          "title_id": "Hari Istimewa & Tradisi Perayaan (Eksplorasi Materi & Pola)",
+          "title_jp": "トピック5: とくべつな ひ（解説）",
+          "desc_id": "Mempelajari urutan materi pedagogis buku Marugoto: Japanese Language and Culture pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Hari Istimewa & Tradisi Perayaan.",
+          "grammar_ids": [
+            "gn4-00001",
+            "gn4-00002",
+            "gn4-00003"
+          ],
+          "vocab_ids": [
+            "vg-n4-00238",
+            "vg-n4-00265",
+            "vg-n4-00266",
+            "vg-n4-00267"
+          ],
+          "pedagogical_framework": {
+            "what": {
+              "summary": "Silabus resmi Marugoto: Japanese Language and Culture bab 5.",
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Hari Istimewa & Tradisi Perayaan.",
+              "targetPatterns": [
+                "gn4-00001",
+                "gn4-00002",
+                "gn4-00003"
+              ],
+              "coreVocabSample": [
+                "vg-n4-00238",
+                "vg-n4-00265",
+                "vg-n4-00266",
+                "vg-n4-00267"
+              ]
+            },
+            "sensei_context": {
+              "sceneIntro": "Kamu sedang mempelajari buku Marugoto: Japanese Language and Culture. Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Hari Istimewa & Tradisi Perayaan.",
+              "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
+            },
+            "cultural_notes": {
+              "title": "Catatan Budaya & Konteks Pemakaian (Marugoto: Japanese Language and Culture)",
+              "etiquette": "Perhatikan konteks formalitas saat menggunakan pola kalimat ini kepada guru, teman, atau atasan.",
+              "taboos": "Hindari penggunaan pola kasual kepada orang yang baru pertama kali ditemui."
+            }
+          },
+          "dialogue": [
+            {
+              "id": "d1",
+              "speaker": "Sensei",
+              "speakerRole": "Tutor Belajar",
+              "jp": "トピック5: とくべつな ひの勉強を始めましょう！",
+              "furigana": "べんきょうをはじめましょう！",
+              "romaji": "Benkyou wo hajimemashou!",
+              "idText": "Mari kita mulai belajar Hari Istimewa & Tradisi Perayaan!"
+            }
+          ],
+          "drills": [
+            {
+              "id": "dr1",
+              "type": "multiple-choice",
+              "prompt": "Apa fokus utama pada materi Hari Istimewa & Tradisi Perayaan di buku Marugoto: Japanese Language and Culture?",
+              "options": [
+                "Menguasai pola kalimat bab ini dengan pemahaman alami",
+                "Menghafal tanpa memahami konteks",
+                "Mengabaikan intonasi pengucapan",
+                "Hanya membaca terjemahan bahasa Inggris"
+              ],
+              "correctAnswer": "Menguasai pola kalimat bab ini dengan pemahaman alami",
+              "explanation": "Setiap bab dirancang untuk memperkuat kemampuan komunikasi fungsional pembelajar."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 15,
+      "id": "unit-curriculum-book-marugoto-15",
+      "level": "n4",
+      "pt_stage": 4,
+      "title_id": "Marugoto A2-1: Belanja Daring & Transaksi Digital",
+      "title_jp": "トピック6: インターネットでの かいもの",
+      "theme": "Marugoto A2-1",
+      "icon": "🌸",
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Belanja Daring & Transaksi Digital.",
+      "grammar_ids": [
+        "gn4-00001",
+        "gn4-00002",
+        "gn4-00003"
+      ],
+      "vocab_ids": [
+        "vg-n4-00396",
+        "vg-n4-00397",
+        "vg-n4-00398",
+        "vg-n4-00399"
+      ],
+      "lessons": [
+        {
+          "id": "les-curriculum-book-marugoto-u15-01",
+          "lesson_number": 1,
+          "title_id": "Belanja Daring & Transaksi Digital (Eksplorasi Materi & Pola)",
+          "title_jp": "トピック6: インターネットでの かいもの（解説）",
+          "desc_id": "Mempelajari urutan materi pedagogis buku Marugoto: Japanese Language and Culture pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Belanja Daring & Transaksi Digital.",
+          "grammar_ids": [
+            "gn4-00001",
+            "gn4-00002",
+            "gn4-00003"
+          ],
+          "vocab_ids": [
+            "vg-n4-00396",
+            "vg-n4-00397",
+            "vg-n4-00398",
+            "vg-n4-00399"
+          ],
+          "pedagogical_framework": {
+            "what": {
+              "summary": "Silabus resmi Marugoto: Japanese Language and Culture bab 6.",
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Belanja Daring & Transaksi Digital.",
+              "targetPatterns": [
+                "gn4-00001",
+                "gn4-00002",
+                "gn4-00003"
+              ],
+              "coreVocabSample": [
+                "vg-n4-00396",
+                "vg-n4-00397",
+                "vg-n4-00398",
+                "vg-n4-00399"
+              ]
+            },
+            "sensei_context": {
+              "sceneIntro": "Kamu sedang mempelajari buku Marugoto: Japanese Language and Culture. Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Belanja Daring & Transaksi Digital.",
+              "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
+            },
+            "cultural_notes": {
+              "title": "Catatan Budaya & Konteks Pemakaian (Marugoto: Japanese Language and Culture)",
+              "etiquette": "Perhatikan konteks formalitas saat menggunakan pola kalimat ini kepada guru, teman, atau atasan.",
+              "taboos": "Hindari penggunaan pola kasual kepada orang yang baru pertama kali ditemui."
+            }
+          },
+          "dialogue": [
+            {
+              "id": "d1",
+              "speaker": "Sensei",
+              "speakerRole": "Tutor Belajar",
+              "jp": "トピック6: インターネットでの かいものの勉強を始めましょう！",
+              "furigana": "べんきょうをはじめましょう！",
+              "romaji": "Benkyou wo hajimemashou!",
+              "idText": "Mari kita mulai belajar Belanja Daring & Transaksi Digital!"
+            }
+          ],
+          "drills": [
+            {
+              "id": "dr1",
+              "type": "multiple-choice",
+              "prompt": "Apa fokus utama pada materi Belanja Daring & Transaksi Digital di buku Marugoto: Japanese Language and Culture?",
+              "options": [
+                "Menguasai pola kalimat bab ini dengan pemahaman alami",
+                "Menghafal tanpa memahami konteks",
+                "Mengabaikan intonasi pengucapan",
+                "Hanya membaca terjemahan bahasa Inggris"
+              ],
+              "correctAnswer": "Menguasai pola kalimat bab ini dengan pemahaman alami",
+              "explanation": "Setiap bab dirancang untuk memperkuat kemampuan komunikasi fungsional pembelajar."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 16,
+      "id": "unit-curriculum-book-marugoto-16",
+      "level": "n4",
+      "pt_stage": 5,
+      "title_id": "Marugoto A2-1: Kebugaran Jasmani & Olahraga",
+      "title_jp": "トピック7: けんこうと スポーツ",
+      "theme": "Marugoto A2-1",
+      "icon": "🌸",
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Kebugaran Jasmani & Olahraga.",
+      "grammar_ids": [
+        "gn4-00001",
+        "gn4-00002",
+        "gn4-00003"
+      ],
+      "vocab_ids": [
+        "vg-n4-00424",
+        "vg-n4-00425",
+        "vg-n4-00426",
+        "vg-n4-00427"
+      ],
+      "lessons": [
+        {
+          "id": "les-curriculum-book-marugoto-u16-01",
+          "lesson_number": 1,
+          "title_id": "Kebugaran Jasmani & Olahraga (Eksplorasi Materi & Pola)",
+          "title_jp": "トピック7: けんこうと スポーツ（解説）",
+          "desc_id": "Mempelajari urutan materi pedagogis buku Marugoto: Japanese Language and Culture pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Kebugaran Jasmani & Olahraga.",
+          "grammar_ids": [
+            "gn4-00001",
+            "gn4-00002",
+            "gn4-00003"
+          ],
+          "vocab_ids": [
+            "vg-n4-00424",
+            "vg-n4-00425",
+            "vg-n4-00426",
+            "vg-n4-00427"
+          ],
+          "pedagogical_framework": {
+            "what": {
+              "summary": "Silabus resmi Marugoto: Japanese Language and Culture bab 7.",
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Kebugaran Jasmani & Olahraga.",
+              "targetPatterns": [
+                "gn4-00001",
+                "gn4-00002",
+                "gn4-00003"
+              ],
+              "coreVocabSample": [
+                "vg-n4-00424",
+                "vg-n4-00425",
+                "vg-n4-00426",
+                "vg-n4-00427"
+              ]
+            },
+            "sensei_context": {
+              "sceneIntro": "Kamu sedang mempelajari buku Marugoto: Japanese Language and Culture. Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Kebugaran Jasmani & Olahraga.",
+              "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
+            },
+            "cultural_notes": {
+              "title": "Catatan Budaya & Konteks Pemakaian (Marugoto: Japanese Language and Culture)",
+              "etiquette": "Perhatikan konteks formalitas saat menggunakan pola kalimat ini kepada guru, teman, atau atasan.",
+              "taboos": "Hindari penggunaan pola kasual kepada orang yang baru pertama kali ditemui."
+            }
+          },
+          "dialogue": [
+            {
+              "id": "d1",
+              "speaker": "Sensei",
+              "speakerRole": "Tutor Belajar",
+              "jp": "トピック7: けんこうと スポーツの勉強を始めましょう！",
+              "furigana": "べんきょうをはじめましょう！",
+              "romaji": "Benkyou wo hajimemashou!",
+              "idText": "Mari kita mulai belajar Kebugaran Jasmani & Olahraga!"
+            }
+          ],
+          "drills": [
+            {
+              "id": "dr1",
+              "type": "multiple-choice",
+              "prompt": "Apa fokus utama pada materi Kebugaran Jasmani & Olahraga di buku Marugoto: Japanese Language and Culture?",
+              "options": [
+                "Menguasai pola kalimat bab ini dengan pemahaman alami",
+                "Menghafal tanpa memahami konteks",
+                "Mengabaikan intonasi pengucapan",
+                "Hanya membaca terjemahan bahasa Inggris"
+              ],
+              "correctAnswer": "Menguasai pola kalimat bab ini dengan pemahaman alami",
+              "explanation": "Setiap bab dirancang untuk memperkuat kemampuan komunikasi fungsional pembelajar."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 17,
+      "id": "unit-curriculum-book-marugoto-17",
+      "level": "n4",
+      "pt_stage": 6,
+      "title_id": "Marugoto A2-1: Kota Favorit Penuh Kenangan",
+      "title_jp": "トピック8: わたしが すきな まち",
+      "theme": "Marugoto A2-1",
+      "icon": "🌸",
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Kota Favorit Penuh Kenangan.",
+      "grammar_ids": [
+        "gn4-00001",
+        "gn4-00002",
+        "gn4-00003"
+      ],
+      "vocab_ids": [
+        "vg-n4-00456",
+        "vg-n4-00457",
+        "vg-n4-00458",
+        "vg-n4-00463"
+      ],
+      "lessons": [
+        {
+          "id": "les-curriculum-book-marugoto-u17-01",
+          "lesson_number": 1,
+          "title_id": "Kota Favorit Penuh Kenangan (Eksplorasi Materi & Pola)",
+          "title_jp": "トピック8: わたしが すきな まち（解説）",
+          "desc_id": "Mempelajari urutan materi pedagogis buku Marugoto: Japanese Language and Culture pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Kota Favorit Penuh Kenangan.",
+          "grammar_ids": [
+            "gn4-00001",
+            "gn4-00002",
+            "gn4-00003"
+          ],
+          "vocab_ids": [
+            "vg-n4-00456",
+            "vg-n4-00457",
+            "vg-n4-00458",
+            "vg-n4-00463"
+          ],
+          "pedagogical_framework": {
+            "what": {
+              "summary": "Silabus resmi Marugoto: Japanese Language and Culture bab 8.",
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Kota Favorit Penuh Kenangan.",
+              "targetPatterns": [
+                "gn4-00001",
+                "gn4-00002",
+                "gn4-00003"
+              ],
+              "coreVocabSample": [
+                "vg-n4-00456",
+                "vg-n4-00457",
+                "vg-n4-00458",
+                "vg-n4-00463"
+              ]
+            },
+            "sensei_context": {
+              "sceneIntro": "Kamu sedang mempelajari buku Marugoto: Japanese Language and Culture. Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Kota Favorit Penuh Kenangan.",
+              "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
+            },
+            "cultural_notes": {
+              "title": "Catatan Budaya & Konteks Pemakaian (Marugoto: Japanese Language and Culture)",
+              "etiquette": "Perhatikan konteks formalitas saat menggunakan pola kalimat ini kepada guru, teman, atau atasan.",
+              "taboos": "Hindari penggunaan pola kasual kepada orang yang baru pertama kali ditemui."
+            }
+          },
+          "dialogue": [
+            {
+              "id": "d1",
+              "speaker": "Sensei",
+              "speakerRole": "Tutor Belajar",
+              "jp": "トピック8: わたしが すきな まちの勉強を始めましょう！",
+              "furigana": "べんきょうをはじめましょう！",
+              "romaji": "Benkyou wo hajimemashou!",
+              "idText": "Mari kita mulai belajar Kota Favorit Penuh Kenangan!"
+            }
+          ],
+          "drills": [
+            {
+              "id": "dr1",
+              "type": "multiple-choice",
+              "prompt": "Apa fokus utama pada materi Kota Favorit Penuh Kenangan di buku Marugoto: Japanese Language and Culture?",
+              "options": [
+                "Menguasai pola kalimat bab ini dengan pemahaman alami",
+                "Menghafal tanpa memahami konteks",
+                "Mengabaikan intonasi pengucapan",
+                "Hanya membaca terjemahan bahasa Inggris"
+              ],
+              "correctAnswer": "Menguasai pola kalimat bab ini dengan pemahaman alami",
+              "explanation": "Setiap bab dirancang untuk memperkuat kemampuan komunikasi fungsional pembelajar."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 18,
+      "id": "unit-curriculum-book-marugoto-18",
+      "level": "n4",
+      "pt_stage": 1,
+      "title_id": "Marugoto A2-1: Kenangan Manis Masa Kecil",
+      "title_jp": "トピック9: こどもの ころ",
+      "theme": "Marugoto A2-1",
+      "icon": "🌸",
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Kenangan Manis Masa Kecil.",
+      "grammar_ids": [
+        "gn4-00001",
+        "gn4-00002",
+        "gn4-00003"
+      ],
+      "vocab_ids": [
+        "vg-n4-00662",
+        "vg-n4-00663",
+        "vg-n4-00664",
+        "vg-n4-00665"
+      ],
+      "lessons": [
+        {
+          "id": "les-curriculum-book-marugoto-u18-01",
+          "lesson_number": 1,
+          "title_id": "Kenangan Manis Masa Kecil (Eksplorasi Materi & Pola)",
+          "title_jp": "トピック9: こどもの ころ（解説）",
+          "desc_id": "Mempelajari urutan materi pedagogis buku Marugoto: Japanese Language and Culture pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Kenangan Manis Masa Kecil.",
+          "grammar_ids": [
+            "gn4-00001",
+            "gn4-00002",
+            "gn4-00003"
+          ],
+          "vocab_ids": [
+            "vg-n4-00662",
+            "vg-n4-00663",
+            "vg-n4-00664",
+            "vg-n4-00665"
+          ],
+          "pedagogical_framework": {
+            "what": {
+              "summary": "Silabus resmi Marugoto: Japanese Language and Culture bab 9.",
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Kenangan Manis Masa Kecil.",
+              "targetPatterns": [
+                "gn4-00001",
+                "gn4-00002",
+                "gn4-00003"
+              ],
+              "coreVocabSample": [
+                "vg-n4-00662",
+                "vg-n4-00663",
+                "vg-n4-00664",
+                "vg-n4-00665"
+              ]
+            },
+            "sensei_context": {
+              "sceneIntro": "Kamu sedang mempelajari buku Marugoto: Japanese Language and Culture. Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Kenangan Manis Masa Kecil.",
+              "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
+            },
+            "cultural_notes": {
+              "title": "Catatan Budaya & Konteks Pemakaian (Marugoto: Japanese Language and Culture)",
+              "etiquette": "Perhatikan konteks formalitas saat menggunakan pola kalimat ini kepada guru, teman, atau atasan.",
+              "taboos": "Hindari penggunaan pola kasual kepada orang yang baru pertama kali ditemui."
+            }
+          },
+          "dialogue": [
+            {
+              "id": "d1",
+              "speaker": "Sensei",
+              "speakerRole": "Tutor Belajar",
+              "jp": "トピック9: こどもの ころの勉強を始めましょう！",
+              "furigana": "べんきょうをはじめましょう！",
+              "romaji": "Benkyou wo hajimemashou!",
+              "idText": "Mari kita mulai belajar Kenangan Manis Masa Kecil!"
+            }
+          ],
+          "drills": [
+            {
+              "id": "dr1",
+              "type": "multiple-choice",
+              "prompt": "Apa fokus utama pada materi Kenangan Manis Masa Kecil di buku Marugoto: Japanese Language and Culture?",
+              "options": [
+                "Menguasai pola kalimat bab ini dengan pemahaman alami",
+                "Menghafal tanpa memahami konteks",
+                "Mengabaikan intonasi pengucapan",
+                "Hanya membaca terjemahan bahasa Inggris"
+              ],
+              "correctAnswer": "Menguasai pola kalimat bab ini dengan pemahaman alami",
+              "explanation": "Setiap bab dirancang untuk memperkuat kemampuan komunikasi fungsional pembelajar."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 19,
+      "id": "unit-curriculum-book-marugoto-19",
+      "level": "n4",
+      "pt_stage": 2,
+      "title_id": "Marugoto A2-2: Etika Hubungan Sosial & Bertamu",
+      "title_jp": "トピック1: おつきあい",
+      "theme": "Marugoto A2-2",
+      "icon": "🌸",
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Etika Hubungan Sosial & Bertamu.",
+      "grammar_ids": [
+        "gn4-00001",
+        "gn4-00002",
+        "gn4-00003"
+      ],
+      "vocab_ids": [
+        "vg-n4-00001",
+        "vg-n4-00002",
+        "vg-n4-00003",
+        "vg-n4-00005"
+      ],
+      "lessons": [
+        {
+          "id": "les-curriculum-book-marugoto-u19-01",
+          "lesson_number": 1,
+          "title_id": "Etika Hubungan Sosial & Bertamu (Eksplorasi Materi & Pola)",
+          "title_jp": "トピック1: おつきあい（解説）",
+          "desc_id": "Mempelajari urutan materi pedagogis buku Marugoto: Japanese Language and Culture pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Etika Hubungan Sosial & Bertamu.",
+          "grammar_ids": [
+            "gn4-00001",
+            "gn4-00002",
+            "gn4-00003"
+          ],
+          "vocab_ids": [
+            "vg-n4-00001",
+            "vg-n4-00002",
+            "vg-n4-00003",
+            "vg-n4-00005"
+          ],
+          "pedagogical_framework": {
+            "what": {
+              "summary": "Silabus resmi Marugoto: Japanese Language and Culture bab 1.",
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Etika Hubungan Sosial & Bertamu.",
+              "targetPatterns": [
+                "gn4-00001",
+                "gn4-00002",
+                "gn4-00003"
+              ],
+              "coreVocabSample": [
+                "vg-n4-00001",
+                "vg-n4-00002",
+                "vg-n4-00003",
+                "vg-n4-00005"
+              ]
+            },
+            "sensei_context": {
+              "sceneIntro": "Kamu sedang mempelajari buku Marugoto: Japanese Language and Culture. Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Etika Hubungan Sosial & Bertamu.",
+              "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
+            },
+            "cultural_notes": {
+              "title": "Catatan Budaya & Konteks Pemakaian (Marugoto: Japanese Language and Culture)",
+              "etiquette": "Perhatikan konteks formalitas saat menggunakan pola kalimat ini kepada guru, teman, atau atasan.",
+              "taboos": "Hindari penggunaan pola kasual kepada orang yang baru pertama kali ditemui."
+            }
+          },
+          "dialogue": [
+            {
+              "id": "d1",
+              "speaker": "Sensei",
+              "speakerRole": "Tutor Belajar",
+              "jp": "トピック1: おつきあいの勉強を始めましょう！",
+              "furigana": "べんきょうをはじめましょう！",
+              "romaji": "Benkyou wo hajimemashou!",
+              "idText": "Mari kita mulai belajar Etika Hubungan Sosial & Bertamu!"
+            }
+          ],
+          "drills": [
+            {
+              "id": "dr1",
+              "type": "multiple-choice",
+              "prompt": "Apa fokus utama pada materi Etika Hubungan Sosial & Bertamu di buku Marugoto: Japanese Language and Culture?",
+              "options": [
+                "Menguasai pola kalimat bab ini dengan pemahaman alami",
+                "Menghafal tanpa memahami konteks",
+                "Mengabaikan intonasi pengucapan",
+                "Hanya membaca terjemahan bahasa Inggris"
+              ],
+              "correctAnswer": "Menguasai pola kalimat bab ini dengan pemahaman alami",
+              "explanation": "Setiap bab dirancang untuk memperkuat kemampuan komunikasi fungsional pembelajar."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 20,
+      "id": "unit-curriculum-book-marugoto-20",
+      "level": "n4",
+      "pt_stage": 3,
+      "title_id": "Marugoto A2-2: Partisipasi Acara Komunitas Kota",
+      "title_jp": "トピック2: まちの イベント",
+      "theme": "Marugoto A2-2",
+      "icon": "🌸",
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Partisipasi Acara Komunitas Kota.",
+      "grammar_ids": [
+        "gn4-00001",
+        "gn4-00002",
+        "gn4-00003"
+      ],
+      "vocab_ids": [
+        "vg-n4-00064",
+        "vg-n4-00066",
+        "vg-n4-00092",
+        "vg-n4-00094"
+      ],
+      "lessons": [
+        {
+          "id": "les-curriculum-book-marugoto-u20-01",
+          "lesson_number": 1,
+          "title_id": "Partisipasi Acara Komunitas Kota (Eksplorasi Materi & Pola)",
+          "title_jp": "トピック2: まちの イベント（解説）",
+          "desc_id": "Mempelajari urutan materi pedagogis buku Marugoto: Japanese Language and Culture pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Partisipasi Acara Komunitas Kota.",
+          "grammar_ids": [
+            "gn4-00001",
+            "gn4-00002",
+            "gn4-00003"
+          ],
+          "vocab_ids": [
+            "vg-n4-00064",
+            "vg-n4-00066",
+            "vg-n4-00092",
+            "vg-n4-00094"
+          ],
+          "pedagogical_framework": {
+            "what": {
+              "summary": "Silabus resmi Marugoto: Japanese Language and Culture bab 2.",
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Partisipasi Acara Komunitas Kota.",
+              "targetPatterns": [
+                "gn4-00001",
+                "gn4-00002",
+                "gn4-00003"
+              ],
+              "coreVocabSample": [
+                "vg-n4-00064",
+                "vg-n4-00066",
+                "vg-n4-00092",
+                "vg-n4-00094"
+              ]
+            },
+            "sensei_context": {
+              "sceneIntro": "Kamu sedang mempelajari buku Marugoto: Japanese Language and Culture. Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Partisipasi Acara Komunitas Kota.",
+              "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
+            },
+            "cultural_notes": {
+              "title": "Catatan Budaya & Konteks Pemakaian (Marugoto: Japanese Language and Culture)",
+              "etiquette": "Perhatikan konteks formalitas saat menggunakan pola kalimat ini kepada guru, teman, atau atasan.",
+              "taboos": "Hindari penggunaan pola kasual kepada orang yang baru pertama kali ditemui."
+            }
+          },
+          "dialogue": [
+            {
+              "id": "d1",
+              "speaker": "Sensei",
+              "speakerRole": "Tutor Belajar",
+              "jp": "トピック2: まちの イベントの勉強を始めましょう！",
+              "furigana": "べんきょうをはじめましょう！",
+              "romaji": "Benkyou wo hajimemashou!",
+              "idText": "Mari kita mulai belajar Partisipasi Acara Komunitas Kota!"
+            }
+          ],
+          "drills": [
+            {
+              "id": "dr1",
+              "type": "multiple-choice",
+              "prompt": "Apa fokus utama pada materi Partisipasi Acara Komunitas Kota di buku Marugoto: Japanese Language and Culture?",
+              "options": [
+                "Menguasai pola kalimat bab ini dengan pemahaman alami",
+                "Menghafal tanpa memahami konteks",
+                "Mengabaikan intonasi pengucapan",
+                "Hanya membaca terjemahan bahasa Inggris"
+              ],
+              "correctAnswer": "Menguasai pola kalimat bab ini dengan pemahaman alami",
+              "explanation": "Setiap bab dirancang untuk memperkuat kemampuan komunikasi fungsional pembelajar."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 21,
+      "id": "unit-curriculum-book-marugoto-21",
+      "level": "n4",
+      "pt_stage": 4,
+      "title_id": "Marugoto A2-2: Apresiasi Budaya Kreatif Anime",
+      "title_jp": "トピック3: にほんの アニメ",
+      "theme": "Marugoto A2-2",
+      "icon": "🌸",
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Apresiasi Budaya Kreatif Anime.",
+      "grammar_ids": [
+        "gn4-00001",
+        "gn4-00002",
+        "gn4-00003"
+      ],
+      "vocab_ids": [
+        "vg-n4-00132",
+        "vg-n4-00133",
+        "vg-n4-00135",
+        "vg-n4-00136"
+      ],
+      "lessons": [
+        {
+          "id": "les-curriculum-book-marugoto-u21-01",
+          "lesson_number": 1,
+          "title_id": "Apresiasi Budaya Kreatif Anime (Eksplorasi Materi & Pola)",
+          "title_jp": "トピック3: にほんの アニメ（解説）",
+          "desc_id": "Mempelajari urutan materi pedagogis buku Marugoto: Japanese Language and Culture pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Apresiasi Budaya Kreatif Anime.",
+          "grammar_ids": [
+            "gn4-00001",
+            "gn4-00002",
+            "gn4-00003"
+          ],
+          "vocab_ids": [
+            "vg-n4-00132",
+            "vg-n4-00133",
+            "vg-n4-00135",
+            "vg-n4-00136"
+          ],
+          "pedagogical_framework": {
+            "what": {
+              "summary": "Silabus resmi Marugoto: Japanese Language and Culture bab 3.",
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Apresiasi Budaya Kreatif Anime.",
+              "targetPatterns": [
+                "gn4-00001",
+                "gn4-00002",
+                "gn4-00003"
+              ],
+              "coreVocabSample": [
+                "vg-n4-00132",
+                "vg-n4-00133",
+                "vg-n4-00135",
+                "vg-n4-00136"
+              ]
+            },
+            "sensei_context": {
+              "sceneIntro": "Kamu sedang mempelajari buku Marugoto: Japanese Language and Culture. Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Apresiasi Budaya Kreatif Anime.",
+              "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
+            },
+            "cultural_notes": {
+              "title": "Catatan Budaya & Konteks Pemakaian (Marugoto: Japanese Language and Culture)",
+              "etiquette": "Perhatikan konteks formalitas saat menggunakan pola kalimat ini kepada guru, teman, atau atasan.",
+              "taboos": "Hindari penggunaan pola kasual kepada orang yang baru pertama kali ditemui."
+            }
+          },
+          "dialogue": [
+            {
+              "id": "d1",
+              "speaker": "Sensei",
+              "speakerRole": "Tutor Belajar",
+              "jp": "トピック3: にほんの アニメの勉強を始めましょう！",
+              "furigana": "べんきょうをはじめましょう！",
+              "romaji": "Benkyou wo hajimemashou!",
+              "idText": "Mari kita mulai belajar Apresiasi Budaya Kreatif Anime!"
+            }
+          ],
+          "drills": [
+            {
+              "id": "dr1",
+              "type": "multiple-choice",
+              "prompt": "Apa fokus utama pada materi Apresiasi Budaya Kreatif Anime di buku Marugoto: Japanese Language and Culture?",
+              "options": [
+                "Menguasai pola kalimat bab ini dengan pemahaman alami",
+                "Menghafal tanpa memahami konteks",
+                "Mengabaikan intonasi pengucapan",
+                "Hanya membaca terjemahan bahasa Inggris"
+              ],
+              "correctAnswer": "Menguasai pola kalimat bab ini dengan pemahaman alami",
+              "explanation": "Setiap bab dirancang untuk memperkuat kemampuan komunikasi fungsional pembelajar."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 22,
+      "id": "unit-curriculum-book-marugoto-22",
+      "level": "n4",
+      "pt_stage": 5,
+      "title_id": "Marugoto A2-2: Akomodasi Penginapan & Ryokan",
+      "title_jp": "トピック4: ホテルと りょこう",
+      "theme": "Marugoto A2-2",
+      "icon": "🌸",
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Akomodasi Penginapan & Ryokan.",
+      "grammar_ids": [
+        "gn4-00001",
+        "gn4-00002",
+        "gn4-00003"
+      ],
+      "vocab_ids": [
+        "vg-n4-00179",
+        "vg-n4-00180",
+        "vg-n4-00224",
+        "vg-n4-00225"
+      ],
+      "lessons": [
+        {
+          "id": "les-curriculum-book-marugoto-u22-01",
+          "lesson_number": 1,
+          "title_id": "Akomodasi Penginapan & Ryokan (Eksplorasi Materi & Pola)",
+          "title_jp": "トピック4: ホテルと りょこう（解説）",
+          "desc_id": "Mempelajari urutan materi pedagogis buku Marugoto: Japanese Language and Culture pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Akomodasi Penginapan & Ryokan.",
+          "grammar_ids": [
+            "gn4-00001",
+            "gn4-00002",
+            "gn4-00003"
+          ],
+          "vocab_ids": [
+            "vg-n4-00179",
+            "vg-n4-00180",
+            "vg-n4-00224",
+            "vg-n4-00225"
+          ],
+          "pedagogical_framework": {
+            "what": {
+              "summary": "Silabus resmi Marugoto: Japanese Language and Culture bab 4.",
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Akomodasi Penginapan & Ryokan.",
+              "targetPatterns": [
+                "gn4-00001",
+                "gn4-00002",
+                "gn4-00003"
+              ],
+              "coreVocabSample": [
+                "vg-n4-00179",
+                "vg-n4-00180",
+                "vg-n4-00224",
+                "vg-n4-00225"
+              ]
+            },
+            "sensei_context": {
+              "sceneIntro": "Kamu sedang mempelajari buku Marugoto: Japanese Language and Culture. Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Akomodasi Penginapan & Ryokan.",
+              "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
+            },
+            "cultural_notes": {
+              "title": "Catatan Budaya & Konteks Pemakaian (Marugoto: Japanese Language and Culture)",
+              "etiquette": "Perhatikan konteks formalitas saat menggunakan pola kalimat ini kepada guru, teman, atau atasan.",
+              "taboos": "Hindari penggunaan pola kasual kepada orang yang baru pertama kali ditemui."
+            }
+          },
+          "dialogue": [
+            {
+              "id": "d1",
+              "speaker": "Sensei",
+              "speakerRole": "Tutor Belajar",
+              "jp": "トピック4: ホテルと りょこうの勉強を始めましょう！",
+              "furigana": "べんきょうをはじめましょう！",
+              "romaji": "Benkyou wo hajimemashou!",
+              "idText": "Mari kita mulai belajar Akomodasi Penginapan & Ryokan!"
+            }
+          ],
+          "drills": [
+            {
+              "id": "dr1",
+              "type": "multiple-choice",
+              "prompt": "Apa fokus utama pada materi Akomodasi Penginapan & Ryokan di buku Marugoto: Japanese Language and Culture?",
+              "options": [
+                "Menguasai pola kalimat bab ini dengan pemahaman alami",
+                "Menghafal tanpa memahami konteks",
+                "Mengabaikan intonasi pengucapan",
+                "Hanya membaca terjemahan bahasa Inggris"
+              ],
+              "correctAnswer": "Menguasai pola kalimat bab ini dengan pemahaman alami",
+              "explanation": "Setiap bab dirancang untuk memperkuat kemampuan komunikasi fungsional pembelajar."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 23,
+      "id": "unit-curriculum-book-marugoto-23",
+      "level": "n4",
+      "pt_stage": 6,
+      "title_id": "Marugoto A2-2: Konsultasi Klinik & Pemulihan Sehat",
+      "title_jp": "トピック5: びょうきと けが",
+      "theme": "Marugoto A2-2",
+      "icon": "🌸",
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Konsultasi Klinik & Pemulihan Sehat.",
+      "grammar_ids": [
+        "gn4-00001",
+        "gn4-00002",
+        "gn4-00003"
+      ],
+      "vocab_ids": [
+        "vg-n4-00272",
+        "vg-n4-00273",
+        "vg-n4-00274",
+        "vg-n4-00275"
+      ],
+      "lessons": [
+        {
+          "id": "les-curriculum-book-marugoto-u23-01",
+          "lesson_number": 1,
+          "title_id": "Konsultasi Klinik & Pemulihan Sehat (Eksplorasi Materi & Pola)",
+          "title_jp": "トピック5: びょうきと けが（解説）",
+          "desc_id": "Mempelajari urutan materi pedagogis buku Marugoto: Japanese Language and Culture pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Konsultasi Klinik & Pemulihan Sehat.",
+          "grammar_ids": [
+            "gn4-00001",
+            "gn4-00002",
+            "gn4-00003"
+          ],
+          "vocab_ids": [
+            "vg-n4-00272",
+            "vg-n4-00273",
+            "vg-n4-00274",
+            "vg-n4-00275"
+          ],
+          "pedagogical_framework": {
+            "what": {
+              "summary": "Silabus resmi Marugoto: Japanese Language and Culture bab 5.",
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Konsultasi Klinik & Pemulihan Sehat.",
+              "targetPatterns": [
+                "gn4-00001",
+                "gn4-00002",
+                "gn4-00003"
+              ],
+              "coreVocabSample": [
+                "vg-n4-00272",
+                "vg-n4-00273",
+                "vg-n4-00274",
+                "vg-n4-00275"
+              ]
+            },
+            "sensei_context": {
+              "sceneIntro": "Kamu sedang mempelajari buku Marugoto: Japanese Language and Culture. Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Konsultasi Klinik & Pemulihan Sehat.",
+              "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
+            },
+            "cultural_notes": {
+              "title": "Catatan Budaya & Konteks Pemakaian (Marugoto: Japanese Language and Culture)",
+              "etiquette": "Perhatikan konteks formalitas saat menggunakan pola kalimat ini kepada guru, teman, atau atasan.",
+              "taboos": "Hindari penggunaan pola kasual kepada orang yang baru pertama kali ditemui."
+            }
+          },
+          "dialogue": [
+            {
+              "id": "d1",
+              "speaker": "Sensei",
+              "speakerRole": "Tutor Belajar",
+              "jp": "トピック5: びょうきと けがの勉強を始めましょう！",
+              "furigana": "べんきょうをはじめましょう！",
+              "romaji": "Benkyou wo hajimemashou!",
+              "idText": "Mari kita mulai belajar Konsultasi Klinik & Pemulihan Sehat!"
+            }
+          ],
+          "drills": [
+            {
+              "id": "dr1",
+              "type": "multiple-choice",
+              "prompt": "Apa fokus utama pada materi Konsultasi Klinik & Pemulihan Sehat di buku Marugoto: Japanese Language and Culture?",
+              "options": [
+                "Menguasai pola kalimat bab ini dengan pemahaman alami",
+                "Menghafal tanpa memahami konteks",
+                "Mengabaikan intonasi pengucapan",
+                "Hanya membaca terjemahan bahasa Inggris"
+              ],
+              "correctAnswer": "Menguasai pola kalimat bab ini dengan pemahaman alami",
+              "explanation": "Setiap bab dirancang untuk memperkuat kemampuan komunikasi fungsional pembelajar."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 24,
+      "id": "unit-curriculum-book-marugoto-24",
+      "level": "n4",
+      "pt_stage": 1,
+      "title_id": "Marugoto A2-2: Menangani Barang Temuan & Bantuan",
+      "title_jp": "トピック6: まいご・おとしもの",
+      "theme": "Marugoto A2-2",
+      "icon": "🌸",
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Menangani Barang Temuan & Bantuan.",
+      "grammar_ids": [
+        "gn4-00001",
+        "gn4-00002",
+        "gn4-00003"
+      ],
+      "vocab_ids": [
+        "vg-n4-00408",
+        "vg-n4-00409",
+        "vg-n4-00410",
+        "vg-n4-00411"
+      ],
+      "lessons": [
+        {
+          "id": "les-curriculum-book-marugoto-u24-01",
+          "lesson_number": 1,
+          "title_id": "Menangani Barang Temuan & Bantuan (Eksplorasi Materi & Pola)",
+          "title_jp": "トピック6: まいご・おとしもの（解説）",
+          "desc_id": "Mempelajari urutan materi pedagogis buku Marugoto: Japanese Language and Culture pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Menangani Barang Temuan & Bantuan.",
+          "grammar_ids": [
+            "gn4-00001",
+            "gn4-00002",
+            "gn4-00003"
+          ],
+          "vocab_ids": [
+            "vg-n4-00408",
+            "vg-n4-00409",
+            "vg-n4-00410",
+            "vg-n4-00411"
+          ],
+          "pedagogical_framework": {
+            "what": {
+              "summary": "Silabus resmi Marugoto: Japanese Language and Culture bab 6.",
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Menangani Barang Temuan & Bantuan.",
+              "targetPatterns": [
+                "gn4-00001",
+                "gn4-00002",
+                "gn4-00003"
+              ],
+              "coreVocabSample": [
+                "vg-n4-00408",
+                "vg-n4-00409",
+                "vg-n4-00410",
+                "vg-n4-00411"
+              ]
+            },
+            "sensei_context": {
+              "sceneIntro": "Kamu sedang mempelajari buku Marugoto: Japanese Language and Culture. Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Menangani Barang Temuan & Bantuan.",
+              "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
+            },
+            "cultural_notes": {
+              "title": "Catatan Budaya & Konteks Pemakaian (Marugoto: Japanese Language and Culture)",
+              "etiquette": "Perhatikan konteks formalitas saat menggunakan pola kalimat ini kepada guru, teman, atau atasan.",
+              "taboos": "Hindari penggunaan pola kasual kepada orang yang baru pertama kali ditemui."
+            }
+          },
+          "dialogue": [
+            {
+              "id": "d1",
+              "speaker": "Sensei",
+              "speakerRole": "Tutor Belajar",
+              "jp": "トピック6: まいご・おとしものの勉強を始めましょう！",
+              "furigana": "べんきょうをはじめましょう！",
+              "romaji": "Benkyou wo hajimemashou!",
+              "idText": "Mari kita mulai belajar Menangani Barang Temuan & Bantuan!"
+            }
+          ],
+          "drills": [
+            {
+              "id": "dr1",
+              "type": "multiple-choice",
+              "prompt": "Apa fokus utama pada materi Menangani Barang Temuan & Bantuan di buku Marugoto: Japanese Language and Culture?",
+              "options": [
+                "Menguasai pola kalimat bab ini dengan pemahaman alami",
+                "Menghafal tanpa memahami konteks",
+                "Mengabaikan intonasi pengucapan",
+                "Hanya membaca terjemahan bahasa Inggris"
+              ],
+              "correctAnswer": "Menguasai pola kalimat bab ini dengan pemahaman alami",
+              "explanation": "Setiap bab dirancang untuk memperkuat kemampuan komunikasi fungsional pembelajar."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 25,
+      "id": "unit-curriculum-book-marugoto-25",
+      "level": "n4",
+      "pt_stage": 2,
+      "title_id": "Marugoto A2-2: Pola Hidup Ramah Lingkungan",
+      "title_jp": "トピック7: かんきょうに やさしい せいかつ",
+      "theme": "Marugoto A2-2",
+      "icon": "🌸",
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Pola Hidup Ramah Lingkungan.",
+      "grammar_ids": [
+        "gn4-00001",
+        "gn4-00002",
+        "gn4-00003"
+      ],
+      "vocab_ids": [
+        "vg-n4-00436",
+        "vg-n4-00437",
+        "vg-n4-00438",
+        "vg-n4-00439"
+      ],
+      "lessons": [
+        {
+          "id": "les-curriculum-book-marugoto-u25-01",
+          "lesson_number": 1,
+          "title_id": "Pola Hidup Ramah Lingkungan (Eksplorasi Materi & Pola)",
+          "title_jp": "トピック7: かんきょうに やさしい せいかつ（解説）",
+          "desc_id": "Mempelajari urutan materi pedagogis buku Marugoto: Japanese Language and Culture pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Pola Hidup Ramah Lingkungan.",
+          "grammar_ids": [
+            "gn4-00001",
+            "gn4-00002",
+            "gn4-00003"
+          ],
+          "vocab_ids": [
+            "vg-n4-00436",
+            "vg-n4-00437",
+            "vg-n4-00438",
+            "vg-n4-00439"
+          ],
+          "pedagogical_framework": {
+            "what": {
+              "summary": "Silabus resmi Marugoto: Japanese Language and Culture bab 7.",
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Pola Hidup Ramah Lingkungan.",
+              "targetPatterns": [
+                "gn4-00001",
+                "gn4-00002",
+                "gn4-00003"
+              ],
+              "coreVocabSample": [
+                "vg-n4-00436",
+                "vg-n4-00437",
+                "vg-n4-00438",
+                "vg-n4-00439"
+              ]
+            },
+            "sensei_context": {
+              "sceneIntro": "Kamu sedang mempelajari buku Marugoto: Japanese Language and Culture. Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Pola Hidup Ramah Lingkungan.",
+              "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
+            },
+            "cultural_notes": {
+              "title": "Catatan Budaya & Konteks Pemakaian (Marugoto: Japanese Language and Culture)",
+              "etiquette": "Perhatikan konteks formalitas saat menggunakan pola kalimat ini kepada guru, teman, atau atasan.",
+              "taboos": "Hindari penggunaan pola kasual kepada orang yang baru pertama kali ditemui."
+            }
+          },
+          "dialogue": [
+            {
+              "id": "d1",
+              "speaker": "Sensei",
+              "speakerRole": "Tutor Belajar",
+              "jp": "トピック7: かんきょうに やさしい せいかつの勉強を始めましょう！",
+              "furigana": "べんきょうをはじめましょう！",
+              "romaji": "Benkyou wo hajimemashou!",
+              "idText": "Mari kita mulai belajar Pola Hidup Ramah Lingkungan!"
+            }
+          ],
+          "drills": [
+            {
+              "id": "dr1",
+              "type": "multiple-choice",
+              "prompt": "Apa fokus utama pada materi Pola Hidup Ramah Lingkungan di buku Marugoto: Japanese Language and Culture?",
+              "options": [
+                "Menguasai pola kalimat bab ini dengan pemahaman alami",
+                "Menghafal tanpa memahami konteks",
+                "Mengabaikan intonasi pengucapan",
+                "Hanya membaca terjemahan bahasa Inggris"
+              ],
+              "correctAnswer": "Menguasai pola kalimat bab ini dengan pemahaman alami",
+              "explanation": "Setiap bab dirancang untuk memperkuat kemampuan komunikasi fungsional pembelajar."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 26,
+      "id": "unit-curriculum-book-marugoto-26",
+      "level": "n4",
+      "pt_stage": 3,
+      "title_id": "Marugoto A2-2: Catatan Perjalanan Bersejarah",
+      "title_jp": "トピック8: おもいでの りょこう",
+      "theme": "Marugoto A2-2",
+      "icon": "🌸",
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Catatan Perjalanan Bersejarah.",
+      "grammar_ids": [
+        "gn4-00001",
+        "gn4-00002",
+        "gn4-00003"
+      ],
+      "vocab_ids": [
+        "vg-n4-00651",
+        "vg-n4-00654",
+        "vg-n4-00655",
+        "vg-n4-00657"
+      ],
+      "lessons": [
+        {
+          "id": "les-curriculum-book-marugoto-u26-01",
+          "lesson_number": 1,
+          "title_id": "Catatan Perjalanan Bersejarah (Eksplorasi Materi & Pola)",
+          "title_jp": "トピック8: おもいでの りょこう（解説）",
+          "desc_id": "Mempelajari urutan materi pedagogis buku Marugoto: Japanese Language and Culture pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Catatan Perjalanan Bersejarah.",
+          "grammar_ids": [
+            "gn4-00001",
+            "gn4-00002",
+            "gn4-00003"
+          ],
+          "vocab_ids": [
+            "vg-n4-00651",
+            "vg-n4-00654",
+            "vg-n4-00655",
+            "vg-n4-00657"
+          ],
+          "pedagogical_framework": {
+            "what": {
+              "summary": "Silabus resmi Marugoto: Japanese Language and Culture bab 8.",
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Catatan Perjalanan Bersejarah.",
+              "targetPatterns": [
+                "gn4-00001",
+                "gn4-00002",
+                "gn4-00003"
+              ],
+              "coreVocabSample": [
+                "vg-n4-00651",
+                "vg-n4-00654",
+                "vg-n4-00655",
+                "vg-n4-00657"
+              ]
+            },
+            "sensei_context": {
+              "sceneIntro": "Kamu sedang mempelajari buku Marugoto: Japanese Language and Culture. Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Catatan Perjalanan Bersejarah.",
+              "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
+            },
+            "cultural_notes": {
+              "title": "Catatan Budaya & Konteks Pemakaian (Marugoto: Japanese Language and Culture)",
+              "etiquette": "Perhatikan konteks formalitas saat menggunakan pola kalimat ini kepada guru, teman, atau atasan.",
+              "taboos": "Hindari penggunaan pola kasual kepada orang yang baru pertama kali ditemui."
+            }
+          },
+          "dialogue": [
+            {
+              "id": "d1",
+              "speaker": "Sensei",
+              "speakerRole": "Tutor Belajar",
+              "jp": "トピック8: おもいでの りょこうの勉強を始めましょう！",
+              "furigana": "べんきょうをはじめましょう！",
+              "romaji": "Benkyou wo hajimemashou!",
+              "idText": "Mari kita mulai belajar Catatan Perjalanan Bersejarah!"
+            }
+          ],
+          "drills": [
+            {
+              "id": "dr1",
+              "type": "multiple-choice",
+              "prompt": "Apa fokus utama pada materi Catatan Perjalanan Bersejarah di buku Marugoto: Japanese Language and Culture?",
+              "options": [
+                "Menguasai pola kalimat bab ini dengan pemahaman alami",
+                "Menghafal tanpa memahami konteks",
+                "Mengabaikan intonasi pengucapan",
+                "Hanya membaca terjemahan bahasa Inggris"
+              ],
+              "correctAnswer": "Menguasai pola kalimat bab ini dengan pemahaman alami",
+              "explanation": "Setiap bab dirancang untuk memperkuat kemampuan komunikasi fungsional pembelajar."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 27,
+      "id": "unit-curriculum-book-marugoto-27",
+      "level": "n4",
+      "pt_stage": 4,
+      "title_id": "Marugoto A2-2: Cita-Cita Masa Depan & Harapan",
+      "title_jp": "トピック9: これからの わたし",
+      "theme": "Marugoto A2-2",
+      "icon": "🌸",
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Cita-Cita Masa Depan & Harapan.",
+      "grammar_ids": [
+        "gn4-00001",
+        "gn4-00002",
+        "gn4-00003"
+      ],
+      "vocab_ids": [
+        "vg-n4-00678",
+        "vg-n4-00679",
+        "vg-n4-00680",
+        "vg-n4-00681"
+      ],
+      "lessons": [
+        {
+          "id": "les-curriculum-book-marugoto-u27-01",
+          "lesson_number": 1,
+          "title_id": "Cita-Cita Masa Depan & Harapan (Eksplorasi Materi & Pola)",
+          "title_jp": "トピック9: これからの わたし（解説）",
+          "desc_id": "Mempelajari urutan materi pedagogis buku Marugoto: Japanese Language and Culture pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Cita-Cita Masa Depan & Harapan.",
+          "grammar_ids": [
+            "gn4-00001",
+            "gn4-00002",
+            "gn4-00003"
+          ],
+          "vocab_ids": [
+            "vg-n4-00678",
+            "vg-n4-00679",
+            "vg-n4-00680",
+            "vg-n4-00681"
+          ],
+          "pedagogical_framework": {
+            "what": {
+              "summary": "Silabus resmi Marugoto: Japanese Language and Culture bab 9.",
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Cita-Cita Masa Depan & Harapan.",
+              "targetPatterns": [
+                "gn4-00001",
+                "gn4-00002",
+                "gn4-00003"
+              ],
+              "coreVocabSample": [
+                "vg-n4-00678",
+                "vg-n4-00679",
+                "vg-n4-00680",
+                "vg-n4-00681"
+              ]
+            },
+            "sensei_context": {
+              "sceneIntro": "Kamu sedang mempelajari buku Marugoto: Japanese Language and Culture. Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Cita-Cita Masa Depan & Harapan.",
+              "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
+            },
+            "cultural_notes": {
+              "title": "Catatan Budaya & Konteks Pemakaian (Marugoto: Japanese Language and Culture)",
+              "etiquette": "Perhatikan konteks formalitas saat menggunakan pola kalimat ini kepada guru, teman, atau atasan.",
+              "taboos": "Hindari penggunaan pola kasual kepada orang yang baru pertama kali ditemui."
+            }
+          },
+          "dialogue": [
+            {
+              "id": "d1",
+              "speaker": "Sensei",
+              "speakerRole": "Tutor Belajar",
+              "jp": "トピック9: これからの わたしの勉強を始めましょう！",
+              "furigana": "べんきょうをはじめましょう！",
+              "romaji": "Benkyou wo hajimemashou!",
+              "idText": "Mari kita mulai belajar Cita-Cita Masa Depan & Harapan!"
+            }
+          ],
+          "drills": [
+            {
+              "id": "dr1",
+              "type": "multiple-choice",
+              "prompt": "Apa fokus utama pada materi Cita-Cita Masa Depan & Harapan di buku Marugoto: Japanese Language and Culture?",
               "options": [
                 "Menguasai pola kalimat bab ini dengan pemahaman alami",
                 "Menghafal tanpa memahami konteks",

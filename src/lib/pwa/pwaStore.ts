@@ -10,9 +10,12 @@ interface PwaState {
   isInstalled: boolean;
   isIos: boolean;
   showInstallModal: boolean;
+  hasUpdate: boolean;
+  waitingWorker: ServiceWorker | null;
   deferredPrompt: BeforeInstallPromptEvent | null;
   setShowInstallModal: (show: boolean) => void;
   promptInstall: () => Promise<boolean>;
+  applyUpdate: () => void;
   initPwa: () => void;
 }
 
@@ -21,6 +24,8 @@ export const usePwaStore = create<PwaState>((set, get) => ({
   isInstalled: false,
   isIos: false,
   showInstallModal: false,
+  hasUpdate: false,
+  waitingWorker: null,
   deferredPrompt: null,
 
   setShowInstallModal: (show: boolean) => set({ showInstallModal: show }),
@@ -42,6 +47,15 @@ export const usePwaStore = create<PwaState>((set, get) => ({
     return false;
   },
 
+  applyUpdate: () => {
+    const { waitingWorker } = get();
+    if (waitingWorker) {
+      waitingWorker.postMessage({ type: 'SKIP_WAITING' });
+    } else {
+      window.location.reload();
+    }
+  },
+
   initPwa: () => {
     if (typeof window === 'undefined') return;
 
@@ -56,17 +70,44 @@ export const usePwaStore = create<PwaState>((set, get) => ({
 
     set({ isInstalled: isStandalone, isIos });
 
-    // Register Service Worker
+    // Register Service Worker with safe update flow
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', () => {
         navigator.serviceWorker
           .register('/sw.js')
           .then((reg) => {
             console.log('[PWA] Service Worker registered with scope:', reg.scope);
+
+            // If a worker is already waiting, trigger update state
+            if (reg.waiting) {
+              set({ hasUpdate: true, waitingWorker: reg.waiting });
+            }
+
+            // Listen for waiting workers on updatefound
+            reg.addEventListener('updatefound', () => {
+              const newWorker = reg.installing;
+              if (!newWorker) return;
+
+              newWorker.addEventListener('statechange', () => {
+                if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
+                  set({ hasUpdate: true, waitingWorker: newWorker });
+                  console.log('[PWA] New version ready. User prompt required.');
+                }
+              });
+            });
           })
           .catch((err) => {
             console.warn('[PWA] Service Worker registration failed:', err);
           });
+
+        // Auto reload only when controller actually changes following prompt
+        let refreshing = false;
+        navigator.serviceWorker.addEventListener('controllerchange', () => {
+          if (!refreshing) {
+            refreshing = true;
+            window.location.reload();
+          }
+        });
       });
     }
 

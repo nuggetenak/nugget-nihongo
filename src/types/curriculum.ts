@@ -1,4 +1,6 @@
 import { JLPTLevel } from './vocab';
+import type { PersonaProfileId } from '../lib/audio/personaVoices';
+import type { PitchAccentEntry } from '../lib/data/pitchAccentManager';
 
 export interface LessonDialogueLine {
   id: string;
@@ -10,6 +12,9 @@ export interface LessonDialogueLine {
   romaji?: string;
   idText: string;
   note?: string;
+  speaker_persona_id?: PersonaProfileId;
+  audio_url?: string;
+  duration_ms?: number;
 }
 
 export interface LessonContrastiveTrap {
@@ -35,6 +40,7 @@ export interface LessonVocabDetail {
     romaji?: string;
     idText: string;
   };
+  pitch?: PitchAccentEntry;
 }
 
 export interface LessonExplanationSection {

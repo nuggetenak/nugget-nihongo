@@ -11,11 +11,36 @@ export interface AuthenticDrillItem {
   instruction: string;
   prompt?: string;
   sentence_prompt?: string;
+  question_prompt?: string;
+  scrambled_prompt?: string;
+  passage_context?: string;
+  passage_snippet?: string;
+  discussion_prompt?: string;
   dialogue_prompt?: {
     speaker_a: string;
     speaker_b_blank: string;
   };
   cue_tokens?: string[];
+  target_pattern?: string;
+  target_word?: string;
+  requested_form?: string;
+  situation_context?: string;
+  situation?: string;
+  dialogue_scenario?: string;
+  speech_bubble_prompt?: string;
+  illustration_cue?: string;
+  sign_example?: string;
+  task_can_do?: string;
+  assessment_criteria?: string[];
+  tokens?: string[];
+  scrambled_tokens?: string[];
+  correct_sequence?: string[];
+  star_position?: number;
+  confusing_pair?: string[];
+  contrastive_nuance?: string;
+  syntactic_hint?: string;
+  pedagogical_tip?: string;
+  collocation_note?: string;
   options: string[];
   correct_answer: string;
   explanation: string;
@@ -131,16 +156,19 @@ export async function loadBookDrills(bookId: string, volumeKey?: string): Promis
       break;
 
     case 'soumatome': {
-      const lvl = volumeKey?.toLowerCase().replace('n', '') || '5';
+      const match = volumeKey?.match(/[1-5]/);
+      const lvl = match ? match[0] : '5';
       scriptPath = `/data/staged-expansion/exercises/soumatome/exercises-sm-n${lvl}.js`;
       varName = `exercisesSoumatomeN${lvl}`;
       break;
     }
 
-    case 'shin-kanzen-master': {
-      const lvl = volumeKey?.toLowerCase().replace('n', '') || '3';
+    case 'shin-kanzen-master':
+    case 'shin_kanzen_master': {
+      const match = volumeKey?.match(/[1-5]/);
+      const lvl = match ? match[0] : '3';
       scriptPath = `/data/staged-expansion/exercises/shin-kanzen-master/exercises-skm-n${lvl}.js`;
-      varName = `exercisesSKMN${lvl}`;
+      varName = `exercisesSkmN${lvl}`;
       break;
     }
 
@@ -160,37 +188,42 @@ export async function loadBookDrills(bookId: string, volumeKey?: string): Promis
       break;
 
     case 'try': {
-      const lvl = volumeKey?.toLowerCase().replace('n', '') || '5';
+      const match = volumeKey?.match(/[1-5]/);
+      const lvl = match ? match[0] : '5';
       scriptPath = `/data/staged-expansion/exercises/try/exercises-try-n${lvl}.js`;
       varName = `exercisesTryN${lvl}`;
       break;
     }
 
-    case 'irodori':
-      if (volumeKey === 'a2-1') {
-        scriptPath = '/data/staged-expansion/exercises/irodori/exercises-ir-a2-1.js';
-        varName = 'exercisesIrodoriA2_1';
-      } else if (volumeKey === 'a2-2') {
+    case 'irodori': {
+      const vk = (volumeKey || '').toLowerCase();
+      if (vk.includes('a2-2') || vk.includes('a2_2') || vk.includes('elementary 2') || vk === '2') {
         scriptPath = '/data/staged-expansion/exercises/irodori/exercises-ir-a2-2.js';
         varName = 'exercisesIrodoriA2_2';
+      } else if (vk.includes('a2-1') || vk.includes('a2_1') || vk.includes('elementary 1') || vk === '1') {
+        scriptPath = '/data/staged-expansion/exercises/irodori/exercises-ir-a2-1.js';
+        varName = 'exercisesIrodoriA2_1';
       } else {
         scriptPath = '/data/staged-expansion/exercises/irodori/exercises-ir-a1.js';
         varName = 'exercisesIrodoriA1';
       }
       break;
+    }
 
-    case 'marugoto':
-      if (volumeKey === 'a2-1') {
-        scriptPath = '/data/staged-expansion/exercises/marugoto/exercises-marugoto-a2-1.js';
-        varName = 'exercisesMarugotoA2_1';
-      } else if (volumeKey === 'a2-2') {
+    case 'marugoto': {
+      const vk = (volumeKey || '').toLowerCase();
+      if (vk.includes('a2-2') || vk.includes('a2_2') || vk.includes('elementary 2') || vk === '2') {
         scriptPath = '/data/staged-expansion/exercises/marugoto/exercises-marugoto-a2-2.js';
         varName = 'exercisesMarugotoA2_2';
+      } else if (vk.includes('a2-1') || vk.includes('a2_1') || vk.includes('elementary 1') || vk === '1') {
+        scriptPath = '/data/staged-expansion/exercises/marugoto/exercises-marugoto-a2-1.js';
+        varName = 'exercisesMarugotoA2_1';
       } else {
         scriptPath = '/data/staged-expansion/exercises/marugoto/exercises-marugoto-a1.js';
         varName = 'exercisesMarugotoA1';
       }
       break;
+    }
 
     default:
       return {};
@@ -198,19 +231,110 @@ export async function loadBookDrills(bookId: string, volumeKey?: string): Promis
 
   try {
     await loadScript(scriptPath);
-    const data = window[varName];
-    if (data?.chapters) {
-      return data.chapters;
-    } else if (data?.units) {
-      return data.units;
-    } else if (data?.lessons) {
-      return data.lessons;
-    } else if (data?.weeks) {
-      return data.weeks;
-    } else if (data?.topics) {
-      return data.topics;
+    const data =
+      window[varName] ||
+      (window as any)[varName.toLowerCase()] ||
+      (window as any)[`exercisesSkmN${varName.replace(/\D/g, '')}`] ||
+      (window as any)[`exercisesSKMN${varName.replace(/\D/g, '')}`] ||
+      (window as any)[`exercisesTryN${varName.replace(/\D/g, '')}`] ||
+      (window as any)[`exercisesSoumatomeN${varName.replace(/\D/g, '')}`];
+
+    if (!data) return {};
+
+    const rawContainer =
+      data.chapters ||
+      data.units ||
+      data.lessons ||
+      data.weeks ||
+      data.topics ||
+      {};
+
+    const normalizedMap: Record<
+      string,
+      { chapter: number | string; topic?: string; drills: AuthenticDrillItem[] }
+    > = {};
+
+    for (const [key, rawItem] of Object.entries<any>(rawContainer)) {
+      if (!rawItem) continue;
+
+      const chapterNum =
+        rawItem.chapter ??
+        rawItem.unit ??
+        rawItem.week ??
+        rawItem.lesson ??
+        (typeof rawItem.topic === 'number' ? rawItem.topic : undefined) ??
+        key;
+
+      // Descriptive topic resolution
+      let resolvedTopic = '';
+      if (typeof rawItem.topic === 'string' && rawItem.topic.trim().length > 0) {
+        resolvedTopic = rawItem.topic.trim();
+      } else if (typeof rawItem.title === 'string' && rawItem.title.trim().length > 0) {
+        resolvedTopic = rawItem.title.trim();
+      } else if (rawItem.drills && rawItem.drills.length > 0) {
+        const d0 = rawItem.drills[0];
+        if (d0.target_pattern) {
+          resolvedTopic = `Fokus: ${d0.target_pattern}`;
+        } else if (d0.task_can_do) {
+          resolvedTopic = `Can-Do: ${d0.task_can_do}`;
+        } else if (d0.title) {
+          resolvedTopic =
+            d0.title.split('—')[1]?.trim() ||
+            d0.title.split('(')[0]?.trim() ||
+            d0.title;
+        }
+      }
+
+      if (!resolvedTopic) {
+        resolvedTopic = `Unit ${chapterNum}`;
+      }
+
+      // Normalize drills inside item
+      const normalizedDrills: AuthenticDrillItem[] = (rawItem.drills || []).map((drill: any) => {
+        const d = { ...drill };
+        d.chapter = d.chapter ?? d.unit ?? d.week ?? d.lesson ?? chapterNum;
+
+        // Ensure options are populated if empty or missing
+        if (!d.options || d.options.length === 0) {
+          if (d.scrambled_tokens && d.scrambled_tokens.length > 0) {
+            d.options = [...d.scrambled_tokens];
+          } else if (d.tokens && d.tokens.length > 0) {
+            d.options = [...d.tokens];
+          } else if (d.assessment_criteria && d.assessment_criteria.length > 0) {
+            d.options = [...d.assessment_criteria];
+          } else if (d.mechanic === 'nuance_comparison' && d.sentence_prompt) {
+            const match = d.sentence_prompt.match(/\[\s*A:\s*([^/]+)\s*\/\s*B:\s*([^\]]+)\s*\]/);
+            if (match) {
+              d.options = ['A: ' + match[1].trim(), 'B: ' + match[2].trim()];
+            } else if (d.confusing_pair && d.confusing_pair.length > 0) {
+              d.options = [...d.confusing_pair];
+            }
+          }
+        }
+
+        // Clean option distractors parentheticals if any
+        if (d.options) {
+          d.options = d.options.map((opt: string) =>
+            typeof opt === 'string'
+              ? opt.replace(/\s*\([^)]*(?:distraktor|salah|pilihan|urutan)[^)]*\)/gi, '').trim()
+              : opt
+          );
+        }
+
+        return d;
+      });
+
+      const normalizedItem = {
+        chapter: chapterNum,
+        topic: resolvedTopic,
+        drills: normalizedDrills,
+      };
+
+      normalizedMap[String(chapterNum)] = normalizedItem;
+      normalizedMap[key] = normalizedItem;
     }
-    return {};
+
+    return normalizedMap;
   } catch (err) {
     console.warn(`[authenticExerciseManager] Could not load drills for ${bookId} (${scriptPath})`, err);
     return {};

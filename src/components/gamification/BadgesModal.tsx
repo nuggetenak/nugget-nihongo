@@ -60,8 +60,17 @@ export const BadgesModal: React.FC<BadgesModalProps> = ({ isOpen, onClose }) => 
                   : 'bg-surface-2/50 border-accent/10 opacity-60'
               }`}
             >
-              <div className="text-3xl p-2 rounded-xl bg-surface shrink-0 shadow-inner">
-                {b.icon}
+              <div className="w-12 h-12 p-1 rounded-xl bg-surface shrink-0 shadow-inner flex items-center justify-center overflow-hidden">
+                <img
+                  src={`/assets/badges/${b.id}.svg`}
+                  alt={b.name}
+                  className={`w-10 h-10 object-contain transition-all ${
+                    b.earned ? 'filter-none scale-100' : 'grayscale opacity-40 scale-90'
+                  }`}
+                  onError={(e) => {
+                    (e.target as HTMLElement).style.display = 'none';
+                  }}
+                />
               </div>
 
               <div className="space-y-1 flex-1">

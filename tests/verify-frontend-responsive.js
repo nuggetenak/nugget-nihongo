@@ -182,37 +182,45 @@ async function runVerification() {
         // On mobile: Open the mobile track picker bottom sheet
         const mobileTrackBtn = page.locator('div.block.sm\\:hidden button').first();
         await mobileTrackBtn.click();
-        await page.waitForTimeout(300);
+        await page.waitForTimeout(400);
 
         // Click SSW Vokasional tab in bottom sheet
         const sswTab = page.locator('div[role="dialog"] button:has-text("SSW Vokasional")');
         await sswTab.click();
-        await page.waitForTimeout(300);
+        await page.waitForTimeout(400);
 
-        // Select SSW Pengolahan track
-        const sswFoodPill = page.locator('div[role="dialog"] button:has-text("SSW Pengolahan")').first();
+        // Select SSW Pengolahan & Pabrik Makanan track
+        const sswFoodPill = page.locator('div[role="dialog"] button:has-text("Pabrik Makanan")').first();
+        await sswFoodPill.scrollIntoViewIfNeeded().catch(() => {});
         await sswFoodPill.click();
         await page.waitForTimeout(600);
 
-        const foodHeading = page.locator('h2:has-text("SSW Pengolahan")').locator('visible=true').first();
+        const foodHeading = page.locator('h2:has-text("Pengolahan")').first();
         await foodHeading.waitFor({ state: 'visible', timeout: 5000 });
         pass(`SSW Food Service & Processing track loaded successfully (mobile modal)`);
       } else {
-        const sswCategoryBtn = page.locator('button:has-text("Jalur Kerja SSW")').first();
+        const sswCategoryBtn = page.locator('button:has-text("Jalur Kerja SSW"):visible').first();
         await sswCategoryBtn.click();
         await page.waitForTimeout(500);
 
-        const sswKaigoPill = page.locator('button:has-text("SSW Keperawatan Lansia")').locator('visible=true').first();
+        const sswKaigoPill = page.locator('button:has-text("SSW Keperawatan Lansia"):visible').first();
         await sswKaigoPill.waitFor({ state: 'visible', timeout: 5000 });
         pass(`SSW Vocational category opened, Kaigo track visible`);
 
         // Click SSW Food track
-        const sswFoodPill = page.locator('button:has-text("SSW Pengolahan")').locator('visible=true').first();
+        const sswFoodPill = page.locator('button:has-text("Pabrik Makanan"):visible').first();
+        await sswFoodPill.scrollIntoViewIfNeeded().catch(() => {});
         await sswFoodPill.click();
-        await page.waitForTimeout(600);
+        await page.waitForTimeout(1000);
 
-        const foodHeading = page.locator('h2:has-text("SSW Pengolahan")').locator('visible=true').first();
-        await foodHeading.waitFor({ state: 'visible', timeout: 5000 });
+        const foodHeading = page.locator('h2:has-text("Pengolahan"):visible').first();
+        try {
+          await foodHeading.waitFor({ state: 'visible', timeout: 5000 });
+        } catch {
+          // Retry click in case of transition delay
+          await sswFoodPill.click().catch(() => {});
+          await foodHeading.waitFor({ state: 'visible', timeout: 6000 });
+        }
         pass(`SSW Food Service & Processing track loaded successfully`);
       }
 
@@ -222,22 +230,22 @@ async function runVerification() {
         await switchSubBtn.click();
         await page.waitForTimeout(300);
 
-        const jawaOption = page.locator('button:has-text("Jawa")').first();
+        const jawaOption = page.locator('button:has-text("Jawa"):visible').first();
         await jawaOption.waitFor({ state: 'visible', timeout: 3000 });
         await jawaOption.click();
         await page.waitForTimeout(300);
         pass(`Substratum dynamically switched to Substratum Jawa (mobile)`);
       } else {
-        const switchSubBtn = page.locator('button:has-text("Ganti Dialek")').first();
+        const switchSubBtn = page.locator('button:has-text("Ganti Dialek"):visible').first();
         await switchSubBtn.click();
         await page.waitForTimeout(300);
 
-        const jawaOption = page.locator('button:has-text("Jawa")').locator('visible=true').first();
+        const jawaOption = page.locator('button:has-text("Jawa"):visible').first();
         await jawaOption.waitFor({ state: 'visible', timeout: 3000 });
         await jawaOption.click();
         await page.waitForTimeout(300);
 
-        const activeDialectText = page.locator('text=Jawa').first();
+        const activeDialectText = page.locator('span:has-text("Jawa"):visible').first();
         await activeDialectText.waitFor({ state: 'visible', timeout: 3000 });
         pass(`Substratum dynamically switched to Substratum Jawa`);
       }

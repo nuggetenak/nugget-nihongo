@@ -63,7 +63,28 @@ module.exports = {
         glow: '0 4px 24px rgba(245, 158, 11, 0.30)',
         card: '0 1px 0 rgba(255, 255, 255, 0.05) inset, 0 8px 24px rgba(0, 0, 0, 0.40)',
       },
+      keyframes: {
+        shimmer: {
+          '0%': { transform: 'translateX(-100%)' },
+          '100%': { transform: 'translateX(100%)' },
+        },
+        fadeIn: {
+          from: { opacity: '0' },
+          to: { opacity: '1' },
+        },
+        zoomIn95: {
+          from: { opacity: '0', transform: 'scale(0.95)' },
+          to: { opacity: '1', transform: 'scale(1)' },
+        },
+      },
+      animation: {
+        'shimmer-flow': 'shimmer 1.8s infinite linear',
+        'fade-in': 'fadeIn 200ms cubic-bezier(0.16, 1, 0.3, 1) both',
+        'zoom-in-95': 'zoomIn95 200ms cubic-bezier(0.16, 1, 0.3, 1) both',
+      },
     },
   },
-  plugins: [],
+  plugins: [
+    require('tailwindcss-animate'),
+  ],
 }

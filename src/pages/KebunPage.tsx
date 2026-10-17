@@ -3,7 +3,7 @@
 //  Scientific Memory Retention Curves, FSRS v4 Metrics & Kanji Garden
 // ══════════════════════════════════════════════════════════════════
 
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useEffect } from 'react';
 import {
   Brain,
   Sprout,
@@ -20,21 +20,29 @@ import {
   Calendar,
   ChevronRight,
   Info,
+  BookOpen,
 } from 'lucide-react';
 import { useGardenStore, PlantItem } from '../lib/garden/gardenStore';
 import { useAppStore } from '../store/useAppStore';
 import { speakJapanese } from '../lib/audio/tts';
 import { playWaterSfx } from '../lib/audio/sfx';
+import { SkeletonGrid } from '../components/ui/SkeletonCard';
+import { fsrsForgettingCurve } from '../lib/fsrs/math';
 
 export const KebunPage: React.FC = () => {
-  const { waterDrops, plants, waterPlant, waterAll } = useGardenStore();
-  const { cards, showToast, incrementXp, setActiveTab } = useAppStore();
+  const { waterDrops, plants, waterPlant, waterAll, checkDailyRefill } = useGardenStore();
+  const { cards, showToast, incrementXp, setActiveTab, startFSRSDueSession } = useAppStore();
 
   const [activeTab, setVaultTab] = useState<'vault' | 'garden'>('vault');
   const [selectedLevelFilter, setSelectedLevelFilter] = useState<'all' | 'n5' | 'n4' | 'n3' | 'n2'>('all');
   const [wateringId, setWateringId] = useState<string | null>(null);
 
-  // ── FSRS METRICS COMPUTATION ────────────────────────────────────
+  // Ticket T-199: Check and grant daily morning water refill (+3 drops)
+  useEffect(() => {
+    checkDailyRefill();
+  }, [checkDailyRefill]);
+
+  // ── FSRS METRICS COMPUTATION (Ye et al. 2022) ───────────────────
   const fsrsStats = useMemo(() => {
     const cardList = Object.entries(cards)
       .map(([id, entry]) => ({ id, ...entry.card }))
@@ -44,6 +52,7 @@ export const KebunPage: React.FC = () => {
     let dueCount = 0;
     let totalStability = 0;
     let totalDifficulty = 0;
+    let totalRetrievability = 0;
     let stateCounts = { new: 0, learning: 0, review: 0, relearning: 0 };
 
     cardList.forEach((c) => {
@@ -52,6 +61,12 @@ export const KebunPage: React.FC = () => {
 
       totalStability += c.stability || 1;
       totalDifficulty += c.difficulty || 5;
+
+      const elapsedDays = c.last_review
+        ? Math.max(0, (now - new Date(c.last_review).getTime()) / 86400000)
+        : (c.elapsed_days || 0);
+      const r = fsrsForgettingCurve(elapsedDays, c.stability || 1);
+      totalRetrievability += r;
 
       const state = c.state;
       if (state === 0) stateCounts.new++;
@@ -64,9 +79,9 @@ export const KebunPage: React.FC = () => {
     const totalCards = cardList.length;
     const avgStability = totalCards > 0 ? (totalStability / totalCards).toFixed(1) : '0.0';
     const avgDifficulty = totalCards > 0 ? (totalDifficulty / totalCards).toFixed(1) : '0.0';
-    // Est retrievability: approx 90% target retention
+    // True FSRS Retrievability based on Ye et al. (2022) forgetting curve
     const estimatedRetrievability = totalCards > 0
-      ? Math.max(75, Math.min(98, Math.round(100 - (dueCount / totalCards) * 20)))
+      ? Math.round((totalRetrievability / totalCards) * 100)
       : 90;
 
     return {
@@ -130,7 +145,7 @@ export const KebunPage: React.FC = () => {
   const bloomingCount = plants.filter((p) => p.stage === 4).length;
 
   return (
-    <div className="max-w-5xl mx-auto py-4 sm:py-6 space-y-6 sm:space-y-8 animate-in fade-in duration-300">
+    <div className="max-w-5xl mx-auto py-4 sm:py-6 pb-[calc(5.5rem+env(safe-area-inset-bottom))] lg:pb-12 space-y-6 sm:space-y-8 animate-in fade-in duration-300 min-w-0 overflow-x-hidden">
       {/* ── HEADER & DUAL-TAB SWITCHER ────────────────────────────── */}
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
         <div>
@@ -197,16 +212,40 @@ export const KebunPage: React.FC = () => {
               </div>
 
               <div className="flex flex-col sm:flex-row md:flex-col gap-2 shrink-0">
-                <button
-                  onClick={() => setActiveTab('quiz')}
-                  className="px-5 py-3 rounded-2xl bg-amber-500 hover:bg-amber-600 text-stone-950 font-black text-xs sm:text-sm flex items-center justify-center gap-2 shadow-md transition-all active:scale-95"
-                >
-                  <Zap className="w-4 h-4 fill-stone-950" />
-                  <span>Review {fsrsStats.dueCount} Kartu Jatuh Tempo</span>
-                  <ChevronRight className="w-4 h-4 stroke-[3]" />
-                </button>
+                {fsrsStats.totalCards === 0 ? (
+                  <button
+                    onClick={() => setActiveTab('materi')}
+                    className="px-5 py-3 rounded-2xl bg-amber-500 hover:bg-amber-400 text-stone-950 font-black text-xs sm:text-sm flex items-center justify-center gap-2 shadow-md transition-all active:scale-95"
+                  >
+                    <BookOpen className="w-4 h-4" />
+                    <span>Mulai Pelajaran Pertama di Materi Hub</span>
+                    <ChevronRight className="w-4 h-4 stroke-[3]" />
+                  </button>
+                ) : fsrsStats.dueCount === 0 ? (
+                  <button
+                    onClick={() => setActiveTab('quiz')}
+                    className="px-5 py-3 rounded-2xl bg-stone-800 hover:bg-stone-750 text-stone-200 border border-stone-700/60 font-bold text-xs sm:text-sm flex items-center justify-center gap-2 transition-all active:scale-95"
+                  >
+                    <Sparkles className="w-4 h-4 text-amber-400" />
+                    <span>Latihan Bebas (Semua Kartu Segar)</span>
+                    <ChevronRight className="w-4 h-4 stroke-[2]" />
+                  </button>
+                ) : (
+                  <button
+                    onClick={startFSRSDueSession}
+                    className="px-5 py-3 rounded-2xl bg-amber-500 hover:bg-amber-400 text-stone-950 font-black text-xs sm:text-sm flex items-center justify-center gap-2 shadow-md transition-all active:scale-95"
+                  >
+                    <Zap className="w-4 h-4 fill-stone-950" />
+                    <span>Review {fsrsStats.dueCount} Kartu Jatuh Tempo</span>
+                    <ChevronRight className="w-4 h-4 stroke-[3]" />
+                  </button>
+                )}
                 <div className="text-[11px] text-center text-appText-muted">
-                  {fsrsStats.dueCount === 0 ? '✨ Semua kartu segar & up-to-date!' : '⚠️ Review harian menjaga daya ingat stabil'}
+                  {fsrsStats.totalCards === 0
+                    ? '🌱 Pelajari materi baru untuk menumbuhkan tanaman memori'
+                    : fsrsStats.dueCount === 0
+                    ? '✨ Semua kartu segar & up-to-date!'
+                    : '⚠️ Review harian menjaga daya ingat stabil'}
                 </div>
               </div>
             </div>
@@ -418,8 +457,11 @@ export const KebunPage: React.FC = () => {
           </div>
 
           {/* Responsive Plants Grid */}
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4">
-            {filteredPlants.map((plant) => {
+          {plants.length === 0 ? (
+            <SkeletonGrid count={8} type="plant" />
+          ) : (
+            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4">
+              {filteredPlants.map((plant) => {
               const stageInfo = STAGE_LABELS[plant.stage];
               const isMaxBloom = plant.stage >= 4;
 
@@ -499,6 +541,7 @@ export const KebunPage: React.FC = () => {
               );
             })}
           </div>
+          )}
         </div>
       )}
     </div>

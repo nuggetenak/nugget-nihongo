@@ -15,19 +15,23 @@ window.curriculumBook_try = {
     {
       "unit_number": 1,
       "id": "unit-curriculum-book-try-01",
-      "level": "n4",
+      "level": "n5",
       "pt_stage": 2,
       "title_id": "TRY N5: Salam Perkenalan & Identitas Awal",
       "title_jp": "第1章: はじめまして",
       "theme": "TRY N5",
       "icon": "🎯",
-      "can_do_summary": "Memahami silabus TRY N5 Bab 1 secara komprehensif.",
-      "grammar_ids": [],
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Salam Perkenalan & Identitas Awal.",
+      "grammar_ids": [
+        "gn5-00001",
+        "gn5-00002",
+        "gn5-00004"
+      ],
       "vocab_ids": [
-        "Saya bertemu teman.",
-        "Besok saya akan bertemu guru.",
-        "Pintunya terbuka.",
-        "Tolong buka jendelanya."
+        "vg-n5-00001",
+        "vg-n5-00002",
+        "vg-n5-00003",
+        "vg-n5-00004"
       ],
       "lessons": [
         {
@@ -36,29 +40,37 @@ window.curriculumBook_try = {
           "title_id": "Salam Perkenalan & Identitas Awal (Eksplorasi Materi & Pola)",
           "title_jp": "第1章: はじめまして（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku TRY! JLPT Communicative (N5–N1) pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa TRY! JLPT Communicative (N5–N1) bab ini dalam konteks nyata.",
-          "grammar_ids": [],
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Salam Perkenalan & Identitas Awal.",
+          "grammar_ids": [
+            "gn5-00001",
+            "gn5-00002",
+            "gn5-00004"
+          ],
           "vocab_ids": [
-            "Saya bertemu teman.",
-            "Besok saya akan bertemu guru.",
-            "Pintunya terbuka.",
-            "Tolong buka jendelanya."
+            "vg-n5-00001",
+            "vg-n5-00002",
+            "vg-n5-00003",
+            "vg-n5-00004"
           ],
           "pedagogical_framework": {
             "what": {
               "summary": "Silabus resmi TRY! JLPT Communicative (N5–N1) bab 1.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
-              "targetPatterns": [],
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Salam Perkenalan & Identitas Awal.",
+              "targetPatterns": [
+                "gn5-00001",
+                "gn5-00002",
+                "gn5-00004"
+              ],
               "coreVocabSample": [
-                "Saya bertemu teman.",
-                "Besok saya akan bertemu guru.",
-                "Pintunya terbuka.",
-                "Tolong buka jendelanya."
+                "vg-n5-00001",
+                "vg-n5-00002",
+                "vg-n5-00003",
+                "vg-n5-00004"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku TRY! JLPT Communicative (N5–N1). Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 1 TRY! JLPT Communicative (N5–N1).",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Salam Perkenalan & Identitas Awal.",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -99,19 +111,23 @@ window.curriculumBook_try = {
     {
       "unit_number": 2,
       "id": "unit-curriculum-book-try-02",
-      "level": "n4",
+      "level": "n5",
       "pt_stage": 3,
       "title_id": "TRY N5: Keberadaan Benda & Tata Ruangan",
       "title_jp": "第2章: 部屋に何がありますか",
       "theme": "TRY N5",
       "icon": "🎯",
-      "can_do_summary": "Memahami silabus TRY N5 Bab 2 secara komprehensif.",
-      "grammar_ids": [],
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Keberadaan Benda & Tata Ruangan.",
+      "grammar_ids": [
+        "gn5-00001",
+        "gn5-00002",
+        "gn5-00004"
+      ],
       "vocab_ids": [
-        "Tolong minum air.",
-        "Tolong bicara menggunakan bahasa Jepang.",
-        "Saya membuat kue.",
-        "Saya akan keluar sekarang."
+        "vg-n5-00026",
+        "vg-n5-00027",
+        "vg-n5-00028",
+        "vg-n5-00029"
       ],
       "lessons": [
         {
@@ -120,29 +136,37 @@ window.curriculumBook_try = {
           "title_id": "Keberadaan Benda & Tata Ruangan (Eksplorasi Materi & Pola)",
           "title_jp": "第2章: 部屋に何がありますか（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku TRY! JLPT Communicative (N5–N1) pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa TRY! JLPT Communicative (N5–N1) bab ini dalam konteks nyata.",
-          "grammar_ids": [],
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Keberadaan Benda & Tata Ruangan.",
+          "grammar_ids": [
+            "gn5-00001",
+            "gn5-00002",
+            "gn5-00004"
+          ],
           "vocab_ids": [
-            "Tolong minum air.",
-            "Tolong bicara menggunakan bahasa Jepang.",
-            "Saya membuat kue.",
-            "Saya akan keluar sekarang."
+            "vg-n5-00026",
+            "vg-n5-00027",
+            "vg-n5-00028",
+            "vg-n5-00029"
           ],
           "pedagogical_framework": {
             "what": {
               "summary": "Silabus resmi TRY! JLPT Communicative (N5–N1) bab 2.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
-              "targetPatterns": [],
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Keberadaan Benda & Tata Ruangan.",
+              "targetPatterns": [
+                "gn5-00001",
+                "gn5-00002",
+                "gn5-00004"
+              ],
               "coreVocabSample": [
-                "Tolong minum air.",
-                "Tolong bicara menggunakan bahasa Jepang.",
-                "Saya membuat kue.",
-                "Saya akan keluar sekarang."
+                "vg-n5-00026",
+                "vg-n5-00027",
+                "vg-n5-00028",
+                "vg-n5-00029"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku TRY! JLPT Communicative (N5–N1). Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 2 TRY! JLPT Communicative (N5–N1).",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Keberadaan Benda & Tata Ruangan.",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -183,19 +207,23 @@ window.curriculumBook_try = {
     {
       "unit_number": 3,
       "id": "unit-curriculum-book-try-03",
-      "level": "n4",
+      "level": "n5",
       "pt_stage": 4,
       "title_id": "TRY N5: Waktu Kedatangan & Mobilitas",
       "title_jp": "第3章: いつ日本へ来ましたか",
       "theme": "TRY N5",
       "icon": "🎯",
-      "can_do_summary": "Memahami silabus TRY N5 Bab 3 secara komprehensif.",
-      "grammar_ids": [],
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Waktu Kedatangan & Mobilitas.",
+      "grammar_ids": [
+        "gn5-00001",
+        "gn5-00002",
+        "gn5-00004"
+      ],
       "vocab_ids": [
-        "Saya mengirim email.",
-        "Saya menerima hadiah.",
-        "Saya memberi hadiah ke teman.",
-        "Teman memberiku buku."
+        "vg-n5-00051",
+        "vg-n5-00052",
+        "vg-n5-00053",
+        "vg-n5-00054"
       ],
       "lessons": [
         {
@@ -204,29 +232,37 @@ window.curriculumBook_try = {
           "title_id": "Waktu Kedatangan & Mobilitas (Eksplorasi Materi & Pola)",
           "title_jp": "第3章: いつ日本へ来ましたか（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku TRY! JLPT Communicative (N5–N1) pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa TRY! JLPT Communicative (N5–N1) bab ini dalam konteks nyata.",
-          "grammar_ids": [],
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Waktu Kedatangan & Mobilitas.",
+          "grammar_ids": [
+            "gn5-00001",
+            "gn5-00002",
+            "gn5-00004"
+          ],
           "vocab_ids": [
-            "Saya mengirim email.",
-            "Saya menerima hadiah.",
-            "Saya memberi hadiah ke teman.",
-            "Teman memberiku buku."
+            "vg-n5-00051",
+            "vg-n5-00052",
+            "vg-n5-00053",
+            "vg-n5-00054"
           ],
           "pedagogical_framework": {
             "what": {
               "summary": "Silabus resmi TRY! JLPT Communicative (N5–N1) bab 3.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
-              "targetPatterns": [],
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Waktu Kedatangan & Mobilitas.",
+              "targetPatterns": [
+                "gn5-00001",
+                "gn5-00002",
+                "gn5-00004"
+              ],
               "coreVocabSample": [
-                "Saya mengirim email.",
-                "Saya menerima hadiah.",
-                "Saya memberi hadiah ke teman.",
-                "Teman memberiku buku."
+                "vg-n5-00051",
+                "vg-n5-00052",
+                "vg-n5-00053",
+                "vg-n5-00054"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku TRY! JLPT Communicative (N5–N1). Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 3 TRY! JLPT Communicative (N5–N1).",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Waktu Kedatangan & Mobilitas.",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -267,19 +303,23 @@ window.curriculumBook_try = {
     {
       "unit_number": 4,
       "id": "unit-curriculum-book-try-04",
-      "level": "n4",
+      "level": "n5",
       "pt_stage": 5,
       "title_id": "TRY N5: Aktivitas Belanja & Tempat Toko",
       "title_jp": "第4章: デパートで買い物をします",
       "theme": "TRY N5",
       "icon": "🎯",
-      "can_do_summary": "Memahami silabus TRY N5 Bab 4 secara komprehensif.",
-      "grammar_ids": [],
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Aktivitas Belanja & Tempat Toko.",
+      "grammar_ids": [
+        "gn5-00001",
+        "gn5-00002",
+        "gn5-00004"
+      ],
       "vocab_ids": [
-        "Anda bilang apa?",
-        "Saya pergi ke sekolah.",
-        "Lift ini tidak bergerak.",
-        "Saya lahir di Osaka."
+        "vg-n5-00180",
+        "vg-n5-00181",
+        "vg-n5-00182",
+        "vg-n5-00183"
       ],
       "lessons": [
         {
@@ -288,29 +328,37 @@ window.curriculumBook_try = {
           "title_id": "Aktivitas Belanja & Tempat Toko (Eksplorasi Materi & Pola)",
           "title_jp": "第4章: デパートで買い物をします（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku TRY! JLPT Communicative (N5–N1) pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa TRY! JLPT Communicative (N5–N1) bab ini dalam konteks nyata.",
-          "grammar_ids": [],
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Aktivitas Belanja & Tempat Toko.",
+          "grammar_ids": [
+            "gn5-00001",
+            "gn5-00002",
+            "gn5-00004"
+          ],
           "vocab_ids": [
-            "Anda bilang apa?",
-            "Saya pergi ke sekolah.",
-            "Lift ini tidak bergerak.",
-            "Saya lahir di Osaka."
+            "vg-n5-00180",
+            "vg-n5-00181",
+            "vg-n5-00182",
+            "vg-n5-00183"
           ],
           "pedagogical_framework": {
             "what": {
               "summary": "Silabus resmi TRY! JLPT Communicative (N5–N1) bab 4.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
-              "targetPatterns": [],
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Aktivitas Belanja & Tempat Toko.",
+              "targetPatterns": [
+                "gn5-00001",
+                "gn5-00002",
+                "gn5-00004"
+              ],
               "coreVocabSample": [
-                "Anda bilang apa?",
-                "Saya pergi ke sekolah.",
-                "Lift ini tidak bergerak.",
-                "Saya lahir di Osaka."
+                "vg-n5-00180",
+                "vg-n5-00181",
+                "vg-n5-00182",
+                "vg-n5-00183"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku TRY! JLPT Communicative (N5–N1). Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 4 TRY! JLPT Communicative (N5–N1).",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Aktivitas Belanja & Tempat Toko.",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -351,19 +399,23 @@ window.curriculumBook_try = {
     {
       "unit_number": 5,
       "id": "unit-curriculum-book-try-05",
-      "level": "n4",
+      "level": "n5",
       "pt_stage": 6,
       "title_id": "TRY N5: Ajakan Bersahabat & Rencana Wisata",
       "title_jp": "第5章: 一緒に京都へ行きませんか",
       "theme": "TRY N5",
       "icon": "🎯",
-      "can_do_summary": "Memahami silabus TRY N5 Bab 5 secara komprehensif.",
-      "grammar_ids": [],
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Ajakan Bersahabat & Rencana Wisata.",
+      "grammar_ids": [
+        "gn5-00001",
+        "gn5-00002",
+        "gn5-00004"
+      ],
       "vocab_ids": [
-        "Tolong berdiri.",
-        "Mau makan apa?",
-        "Saya sering menggunakan smartphone.",
-        "Saya membuat masakan."
+        "vg-n5-00205",
+        "vg-n5-00206",
+        "vg-n5-00207",
+        "vg-n5-00208"
       ],
       "lessons": [
         {
@@ -372,29 +424,37 @@ window.curriculumBook_try = {
           "title_id": "Ajakan Bersahabat & Rencana Wisata (Eksplorasi Materi & Pola)",
           "title_jp": "第5章: 一緒に京都へ行きませんか（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku TRY! JLPT Communicative (N5–N1) pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa TRY! JLPT Communicative (N5–N1) bab ini dalam konteks nyata.",
-          "grammar_ids": [],
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Ajakan Bersahabat & Rencana Wisata.",
+          "grammar_ids": [
+            "gn5-00001",
+            "gn5-00002",
+            "gn5-00004"
+          ],
           "vocab_ids": [
-            "Tolong berdiri.",
-            "Mau makan apa?",
-            "Saya sering menggunakan smartphone.",
-            "Saya membuat masakan."
+            "vg-n5-00205",
+            "vg-n5-00206",
+            "vg-n5-00207",
+            "vg-n5-00208"
           ],
           "pedagogical_framework": {
             "what": {
               "summary": "Silabus resmi TRY! JLPT Communicative (N5–N1) bab 5.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
-              "targetPatterns": [],
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Ajakan Bersahabat & Rencana Wisata.",
+              "targetPatterns": [
+                "gn5-00001",
+                "gn5-00002",
+                "gn5-00004"
+              ],
               "coreVocabSample": [
-                "Tolong berdiri.",
-                "Mau makan apa?",
-                "Saya sering menggunakan smartphone.",
-                "Saya membuat masakan."
+                "vg-n5-00205",
+                "vg-n5-00206",
+                "vg-n5-00207",
+                "vg-n5-00208"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku TRY! JLPT Communicative (N5–N1). Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 5 TRY! JLPT Communicative (N5–N1).",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Ajakan Bersahabat & Rencana Wisata.",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -435,19 +495,23 @@ window.curriculumBook_try = {
     {
       "unit_number": 6,
       "id": "unit-curriculum-book-try-06",
-      "level": "n4",
+      "level": "n5",
       "pt_stage": 1,
       "title_id": "TRY N5: Kesan & Cita Rasa Kuliner",
       "title_jp": "第6章: 日本の食べ物はどうですか",
       "theme": "TRY N5",
       "icon": "🎯",
-      "can_do_summary": "Memahami silabus TRY N5 Bab 6 secara komprehensif.",
-      "grammar_ids": [],
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Kesan & Cita Rasa Kuliner.",
+      "grammar_ids": [
+        "gn5-00001",
+        "gn5-00002",
+        "gn5-00004"
+      ],
       "vocab_ids": [
-        "Tolong tunjukkan paspornya.",
-        "Tolong jemput saya di bandara.",
-        "Boleh saya bawakan barangnya?",
-        "Hari ini badan tidak enak jadi tidak masuk kerja."
+        "vg-n5-00230",
+        "vg-n5-00231",
+        "vg-n5-00232",
+        "vg-n5-00233"
       ],
       "lessons": [
         {
@@ -456,29 +520,37 @@ window.curriculumBook_try = {
           "title_id": "Kesan & Cita Rasa Kuliner (Eksplorasi Materi & Pola)",
           "title_jp": "第6章: 日本の食べ物はどうですか（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku TRY! JLPT Communicative (N5–N1) pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa TRY! JLPT Communicative (N5–N1) bab ini dalam konteks nyata.",
-          "grammar_ids": [],
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Kesan & Cita Rasa Kuliner.",
+          "grammar_ids": [
+            "gn5-00001",
+            "gn5-00002",
+            "gn5-00004"
+          ],
           "vocab_ids": [
-            "Tolong tunjukkan paspornya.",
-            "Tolong jemput saya di bandara.",
-            "Boleh saya bawakan barangnya?",
-            "Hari ini badan tidak enak jadi tidak masuk kerja."
+            "vg-n5-00230",
+            "vg-n5-00231",
+            "vg-n5-00232",
+            "vg-n5-00233"
           ],
           "pedagogical_framework": {
             "what": {
               "summary": "Silabus resmi TRY! JLPT Communicative (N5–N1) bab 6.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
-              "targetPatterns": [],
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Kesan & Cita Rasa Kuliner.",
+              "targetPatterns": [
+                "gn5-00001",
+                "gn5-00002",
+                "gn5-00004"
+              ],
               "coreVocabSample": [
-                "Tolong tunjukkan paspornya.",
-                "Tolong jemput saya di bandara.",
-                "Boleh saya bawakan barangnya?",
-                "Hari ini badan tidak enak jadi tidak masuk kerja."
+                "vg-n5-00230",
+                "vg-n5-00231",
+                "vg-n5-00232",
+                "vg-n5-00233"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku TRY! JLPT Communicative (N5–N1). Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 6 TRY! JLPT Communicative (N5–N1).",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Kesan & Cita Rasa Kuliner.",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -519,19 +591,23 @@ window.curriculumBook_try = {
     {
       "unit_number": 7,
       "id": "unit-curriculum-book-try-07",
-      "level": "n4",
+      "level": "n5",
       "pt_stage": 2,
       "title_id": "TRY N5: Hasrat Batin & Impian Diri",
       "title_jp": "第7章: 富士山に登りたいです",
       "theme": "TRY N5",
       "icon": "🎯",
-      "can_do_summary": "Memahami silabus TRY N5 Bab 7 secara komprehensif.",
-      "grammar_ids": [],
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Hasrat Batin & Impian Diri.",
+      "grammar_ids": [
+        "gn5-00001",
+        "gn5-00002",
+        "gn5-00004"
+      ],
       "vocab_ids": [
-        "Terdengar musik dari kamar sebelah.",
-        "Saya mengirim surat di kantor pos.",
-        "Saya memasukkan buku dan buku catatan ke dalam tas.",
-        "Karena masuk angin, saya izin tidak masuk kerja."
+        "vg-n5-00547",
+        "vg-n5-00548",
+        "vg-n5-00609",
+        "vg-n5-00610"
       ],
       "lessons": [
         {
@@ -540,29 +616,37 @@ window.curriculumBook_try = {
           "title_id": "Hasrat Batin & Impian Diri (Eksplorasi Materi & Pola)",
           "title_jp": "第7章: 富士山に登りたいです（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku TRY! JLPT Communicative (N5–N1) pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa TRY! JLPT Communicative (N5–N1) bab ini dalam konteks nyata.",
-          "grammar_ids": [],
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Hasrat Batin & Impian Diri.",
+          "grammar_ids": [
+            "gn5-00001",
+            "gn5-00002",
+            "gn5-00004"
+          ],
           "vocab_ids": [
-            "Terdengar musik dari kamar sebelah.",
-            "Saya mengirim surat di kantor pos.",
-            "Saya memasukkan buku dan buku catatan ke dalam tas.",
-            "Karena masuk angin, saya izin tidak masuk kerja."
+            "vg-n5-00547",
+            "vg-n5-00548",
+            "vg-n5-00609",
+            "vg-n5-00610"
           ],
           "pedagogical_framework": {
             "what": {
               "summary": "Silabus resmi TRY! JLPT Communicative (N5–N1) bab 7.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
-              "targetPatterns": [],
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Hasrat Batin & Impian Diri.",
+              "targetPatterns": [
+                "gn5-00001",
+                "gn5-00002",
+                "gn5-00004"
+              ],
               "coreVocabSample": [
-                "Terdengar musik dari kamar sebelah.",
-                "Saya mengirim surat di kantor pos.",
-                "Saya memasukkan buku dan buku catatan ke dalam tas.",
-                "Karena masuk angin, saya izin tidak masuk kerja."
+                "vg-n5-00547",
+                "vg-n5-00548",
+                "vg-n5-00609",
+                "vg-n5-00610"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku TRY! JLPT Communicative (N5–N1). Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 7 TRY! JLPT Communicative (N5–N1).",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Hasrat Batin & Impian Diri.",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -603,19 +687,23 @@ window.curriculumBook_try = {
     {
       "unit_number": 8,
       "id": "unit-curriculum-book-try-08",
-      "level": "n4",
+      "level": "n5",
       "pt_stage": 3,
       "title_id": "TRY N5: Menikmati Panorama Musim Semi",
       "title_jp": "第8章: 桜がきれいですね",
       "theme": "TRY N5",
       "icon": "🎯",
-      "can_do_summary": "Memahami silabus TRY N5 Bab 8 secara komprehensif.",
-      "grammar_ids": [],
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Menikmati Panorama Musim Semi.",
+      "grammar_ids": [
+        "gn5-00001",
+        "gn5-00002",
+        "gn5-00004"
+      ],
       "vocab_ids": [
-        "vg-n5-00773",
-        "Tiba-tiba lampu kamar padam.",
-        "Hujan reda dan kabut pun menghilang.",
-        "vg-n5-00783"
+        "vg-n5-00868",
+        "vg-n5-00906",
+        "vg-n5-00917",
+        "vg-n5-00933"
       ],
       "lessons": [
         {
@@ -624,29 +712,37 @@ window.curriculumBook_try = {
           "title_id": "Menikmati Panorama Musim Semi (Eksplorasi Materi & Pola)",
           "title_jp": "第8章: 桜がきれいですね（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku TRY! JLPT Communicative (N5–N1) pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa TRY! JLPT Communicative (N5–N1) bab ini dalam konteks nyata.",
-          "grammar_ids": [],
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Menikmati Panorama Musim Semi.",
+          "grammar_ids": [
+            "gn5-00001",
+            "gn5-00002",
+            "gn5-00004"
+          ],
           "vocab_ids": [
-            "vg-n5-00773",
-            "Tiba-tiba lampu kamar padam.",
-            "Hujan reda dan kabut pun menghilang.",
-            "vg-n5-00783"
+            "vg-n5-00868",
+            "vg-n5-00906",
+            "vg-n5-00917",
+            "vg-n5-00933"
           ],
           "pedagogical_framework": {
             "what": {
               "summary": "Silabus resmi TRY! JLPT Communicative (N5–N1) bab 8.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
-              "targetPatterns": [],
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Menikmati Panorama Musim Semi.",
+              "targetPatterns": [
+                "gn5-00001",
+                "gn5-00002",
+                "gn5-00004"
+              ],
               "coreVocabSample": [
-                "vg-n5-00773",
-                "Tiba-tiba lampu kamar padam.",
-                "Hujan reda dan kabut pun menghilang.",
-                "vg-n5-00783"
+                "vg-n5-00868",
+                "vg-n5-00906",
+                "vg-n5-00917",
+                "vg-n5-00933"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku TRY! JLPT Communicative (N5–N1). Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 8 TRY! JLPT Communicative (N5–N1).",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Menikmati Panorama Musim Semi.",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -687,19 +783,23 @@ window.curriculumBook_try = {
     {
       "unit_number": 9,
       "id": "unit-curriculum-book-try-09",
-      "level": "n4",
+      "level": "n5",
       "pt_stage": 4,
       "title_id": "TRY N5: Perkembangan Kemahiran Berbahasa",
       "title_jp": "第9章: 日本語が上手になりました",
       "theme": "TRY N5",
       "icon": "🎯",
-      "can_do_summary": "Memahami silabus TRY N5 Bab 9 secara komprehensif.",
-      "grammar_ids": [],
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Perkembangan Kemahiran Berbahasa.",
+      "grammar_ids": [
+        "gn5-00001",
+        "gn5-00002",
+        "gn5-00004"
+      ],
       "vocab_ids": [
-        "Saya menghirup udara pagi yang segar dalam-dalam.",
-        "Tolong jangan merokok di sini.",
-        "vg-n5-00843",
-        "Setiap pagi saya membersihkan kamar saya sampai rapi dan bersih."
+        "vg-n5-01066",
+        "vg-n5-01067",
+        "vg-n5-01069",
+        "vg-n5-01070"
       ],
       "lessons": [
         {
@@ -708,29 +808,37 @@ window.curriculumBook_try = {
           "title_id": "Perkembangan Kemahiran Berbahasa (Eksplorasi Materi & Pola)",
           "title_jp": "第9章: 日本語が上手になりました（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku TRY! JLPT Communicative (N5–N1) pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa TRY! JLPT Communicative (N5–N1) bab ini dalam konteks nyata.",
-          "grammar_ids": [],
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Perkembangan Kemahiran Berbahasa.",
+          "grammar_ids": [
+            "gn5-00001",
+            "gn5-00002",
+            "gn5-00004"
+          ],
           "vocab_ids": [
-            "Saya menghirup udara pagi yang segar dalam-dalam.",
-            "Tolong jangan merokok di sini.",
-            "vg-n5-00843",
-            "Setiap pagi saya membersihkan kamar saya sampai rapi dan bersih."
+            "vg-n5-01066",
+            "vg-n5-01067",
+            "vg-n5-01069",
+            "vg-n5-01070"
           ],
           "pedagogical_framework": {
             "what": {
               "summary": "Silabus resmi TRY! JLPT Communicative (N5–N1) bab 9.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
-              "targetPatterns": [],
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Perkembangan Kemahiran Berbahasa.",
+              "targetPatterns": [
+                "gn5-00001",
+                "gn5-00002",
+                "gn5-00004"
+              ],
               "coreVocabSample": [
-                "Saya menghirup udara pagi yang segar dalam-dalam.",
-                "Tolong jangan merokok di sini.",
-                "vg-n5-00843",
-                "Setiap pagi saya membersihkan kamar saya sampai rapi dan bersih."
+                "vg-n5-01066",
+                "vg-n5-01067",
+                "vg-n5-01069",
+                "vg-n5-01070"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku TRY! JLPT Communicative (N5–N1). Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 9 TRY! JLPT Communicative (N5–N1).",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Perkembangan Kemahiran Berbahasa.",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -777,13 +885,17 @@ window.curriculumBook_try = {
       "title_jp": "第1章: 日本へ来たばかりです",
       "theme": "TRY N4",
       "icon": "🎯",
-      "can_do_summary": "Memahami silabus TRY N4 Bab 1 secara komprehensif.",
-      "grammar_ids": [],
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Baru Saja Tiba di Negeri Sakura.",
+      "grammar_ids": [
+        "gn4-00001",
+        "gn4-00002",
+        "gn4-00003"
+      ],
       "vocab_ids": [
-        "Mesin ini bergerak jika tombolnya ditekan.",
-        "Saat gempa bumi, rumah berguncang hebat.",
-        "Saya memindahkan barang berat itu sendirian.",
-        "Kaki saya sakit sehingga tidak bisa digerakkan."
+        "vg-n4-00001",
+        "vg-n4-00002",
+        "vg-n4-00003",
+        "vg-n4-00005"
       ],
       "lessons": [
         {
@@ -792,29 +904,37 @@ window.curriculumBook_try = {
           "title_id": "Baru Saja Tiba di Negeri Sakura (Eksplorasi Materi & Pola)",
           "title_jp": "第1章: 日本へ来たばかりです（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku TRY! JLPT Communicative (N5–N1) pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa TRY! JLPT Communicative (N5–N1) bab ini dalam konteks nyata.",
-          "grammar_ids": [],
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Baru Saja Tiba di Negeri Sakura.",
+          "grammar_ids": [
+            "gn4-00001",
+            "gn4-00002",
+            "gn4-00003"
+          ],
           "vocab_ids": [
-            "Mesin ini bergerak jika tombolnya ditekan.",
-            "Saat gempa bumi, rumah berguncang hebat.",
-            "Saya memindahkan barang berat itu sendirian.",
-            "Kaki saya sakit sehingga tidak bisa digerakkan."
+            "vg-n4-00001",
+            "vg-n4-00002",
+            "vg-n4-00003",
+            "vg-n4-00005"
           ],
           "pedagogical_framework": {
             "what": {
               "summary": "Silabus resmi TRY! JLPT Communicative (N5–N1) bab 1.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
-              "targetPatterns": [],
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Baru Saja Tiba di Negeri Sakura.",
+              "targetPatterns": [
+                "gn4-00001",
+                "gn4-00002",
+                "gn4-00003"
+              ],
               "coreVocabSample": [
-                "Mesin ini bergerak jika tombolnya ditekan.",
-                "Saat gempa bumi, rumah berguncang hebat.",
-                "Saya memindahkan barang berat itu sendirian.",
-                "Kaki saya sakit sehingga tidak bisa digerakkan."
+                "vg-n4-00001",
+                "vg-n4-00002",
+                "vg-n4-00003",
+                "vg-n4-00005"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku TRY! JLPT Communicative (N5–N1). Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 1 TRY! JLPT Communicative (N5–N1).",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Baru Saja Tiba di Negeri Sakura.",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -861,13 +981,17 @@ window.curriculumBook_try = {
       "title_jp": "第2章: 電車に乗る時、気をつけてください",
       "theme": "TRY N4",
       "icon": "🎯",
-      "can_do_summary": "Memahami silabus TRY N4 Bab 2 secara komprehensif.",
-      "grammar_ids": [],
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Petunjuk Naik Transportasi Umum.",
+      "grammar_ids": [
+        "gn4-00001",
+        "gn4-00002",
+        "gn4-00003"
+      ],
       "vocab_ids": [
-        "Saya dimarahi guru karena lupa mengerjakan PR.",
-        "Saya tertawa terbahak-bahak mendengar lelucon lucu teman saya.",
-        "Bayi itu tersenyum dengan gembira.",
-        "Saya tanpa sadar menangis saat menonton film yang mengharukan."
+        "vg-n4-00066",
+        "vg-n4-00092",
+        "vg-n4-00094",
+        "vg-n4-00098"
       ],
       "lessons": [
         {
@@ -876,29 +1000,37 @@ window.curriculumBook_try = {
           "title_id": "Petunjuk Naik Transportasi Umum (Eksplorasi Materi & Pola)",
           "title_jp": "第2章: 電車に乗る時、気をつけてください（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku TRY! JLPT Communicative (N5–N1) pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa TRY! JLPT Communicative (N5–N1) bab ini dalam konteks nyata.",
-          "grammar_ids": [],
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Petunjuk Naik Transportasi Umum.",
+          "grammar_ids": [
+            "gn4-00001",
+            "gn4-00002",
+            "gn4-00003"
+          ],
           "vocab_ids": [
-            "Saya dimarahi guru karena lupa mengerjakan PR.",
-            "Saya tertawa terbahak-bahak mendengar lelucon lucu teman saya.",
-            "Bayi itu tersenyum dengan gembira.",
-            "Saya tanpa sadar menangis saat menonton film yang mengharukan."
+            "vg-n4-00066",
+            "vg-n4-00092",
+            "vg-n4-00094",
+            "vg-n4-00098"
           ],
           "pedagogical_framework": {
             "what": {
               "summary": "Silabus resmi TRY! JLPT Communicative (N5–N1) bab 2.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
-              "targetPatterns": [],
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Petunjuk Naik Transportasi Umum.",
+              "targetPatterns": [
+                "gn4-00001",
+                "gn4-00002",
+                "gn4-00003"
+              ],
               "coreVocabSample": [
-                "Saya dimarahi guru karena lupa mengerjakan PR.",
-                "Saya tertawa terbahak-bahak mendengar lelucon lucu teman saya.",
-                "Bayi itu tersenyum dengan gembira.",
-                "Saya tanpa sadar menangis saat menonton film yang mengharukan."
+                "vg-n4-00066",
+                "vg-n4-00092",
+                "vg-n4-00094",
+                "vg-n4-00098"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku TRY! JLPT Communicative (N5–N1). Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 2 TRY! JLPT Communicative (N5–N1).",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Petunjuk Naik Transportasi Umum.",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -945,13 +1077,17 @@ window.curriculumBook_try = {
       "title_jp": "第3章: 日本の生活に慣れました",
       "theme": "TRY N4",
       "icon": "🎯",
-      "can_do_summary": "Memahami silabus TRY N4 Bab 3 secara komprehensif.",
-      "grammar_ids": [],
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Adaptasi Pola Hidup di Jepang.",
+      "grammar_ids": [
+        "gn4-00001",
+        "gn4-00002",
+        "gn4-00003"
+      ],
       "vocab_ids": [
-        "Jangan mendorong pintu, tolong tarik ke arah Anda untuk membukanya.",
-        "Saya terkena flu dan tidak masuk sekolah.",
-        "Bulan depan saya pindah ke apartemen baru.",
-        "Saya mencoba resep masakan baru di rumah."
+        "vg-n4-00135",
+        "vg-n4-00136",
+        "vg-n4-00137",
+        "vg-n4-00139"
       ],
       "lessons": [
         {
@@ -960,29 +1096,37 @@ window.curriculumBook_try = {
           "title_id": "Adaptasi Pola Hidup di Jepang (Eksplorasi Materi & Pola)",
           "title_jp": "第3章: 日本の生活に慣れました（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku TRY! JLPT Communicative (N5–N1) pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa TRY! JLPT Communicative (N5–N1) bab ini dalam konteks nyata.",
-          "grammar_ids": [],
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Adaptasi Pola Hidup di Jepang.",
+          "grammar_ids": [
+            "gn4-00001",
+            "gn4-00002",
+            "gn4-00003"
+          ],
           "vocab_ids": [
-            "Jangan mendorong pintu, tolong tarik ke arah Anda untuk membukanya.",
-            "Saya terkena flu dan tidak masuk sekolah.",
-            "Bulan depan saya pindah ke apartemen baru.",
-            "Saya mencoba resep masakan baru di rumah."
+            "vg-n4-00135",
+            "vg-n4-00136",
+            "vg-n4-00137",
+            "vg-n4-00139"
           ],
           "pedagogical_framework": {
             "what": {
               "summary": "Silabus resmi TRY! JLPT Communicative (N5–N1) bab 3.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
-              "targetPatterns": [],
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Adaptasi Pola Hidup di Jepang.",
+              "targetPatterns": [
+                "gn4-00001",
+                "gn4-00002",
+                "gn4-00003"
+              ],
               "coreVocabSample": [
-                "Jangan mendorong pintu, tolong tarik ke arah Anda untuk membukanya.",
-                "Saya terkena flu dan tidak masuk sekolah.",
-                "Bulan depan saya pindah ke apartemen baru.",
-                "Saya mencoba resep masakan baru di rumah."
+                "vg-n4-00135",
+                "vg-n4-00136",
+                "vg-n4-00137",
+                "vg-n4-00139"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku TRY! JLPT Communicative (N5–N1). Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 3 TRY! JLPT Communicative (N5–N1).",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Adaptasi Pola Hidup di Jepang.",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -1029,13 +1173,17 @@ window.curriculumBook_try = {
       "title_jp": "第4章: 友達に手伝ってもらいました",
       "theme": "TRY N4",
       "icon": "🎯",
-      "can_do_summary": "Memahami silabus TRY N4 Bab 4 secara komprehensif.",
-      "grammar_ids": [],
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Menerima Pertolongan Sahabat.",
+      "grammar_ids": [
+        "gn4-00001",
+        "gn4-00002",
+        "gn4-00003"
+      ],
       "vocab_ids": [
-        "Saya minta tolong teman untuk bantu pindahan.",
-        "Jika dalam kesulitan, andalkan saya kapan saja.",
-        "Jangan hanya bergantung pada orang tua, mari berpikir sendiri.",
-        "Dia dipercaya karena selalu menepati janji."
+        "vg-n4-00225",
+        "vg-n4-00226",
+        "vg-n4-00227",
+        "vg-n4-00228"
       ],
       "lessons": [
         {
@@ -1044,29 +1192,37 @@ window.curriculumBook_try = {
           "title_id": "Menerima Pertolongan Sahabat (Eksplorasi Materi & Pola)",
           "title_jp": "第4章: 友達に手伝ってもらいました（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku TRY! JLPT Communicative (N5–N1) pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa TRY! JLPT Communicative (N5–N1) bab ini dalam konteks nyata.",
-          "grammar_ids": [],
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Menerima Pertolongan Sahabat.",
+          "grammar_ids": [
+            "gn4-00001",
+            "gn4-00002",
+            "gn4-00003"
+          ],
           "vocab_ids": [
-            "Saya minta tolong teman untuk bantu pindahan.",
-            "Jika dalam kesulitan, andalkan saya kapan saja.",
-            "Jangan hanya bergantung pada orang tua, mari berpikir sendiri.",
-            "Dia dipercaya karena selalu menepati janji."
+            "vg-n4-00225",
+            "vg-n4-00226",
+            "vg-n4-00227",
+            "vg-n4-00228"
           ],
           "pedagogical_framework": {
             "what": {
               "summary": "Silabus resmi TRY! JLPT Communicative (N5–N1) bab 4.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
-              "targetPatterns": [],
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Menerima Pertolongan Sahabat.",
+              "targetPatterns": [
+                "gn4-00001",
+                "gn4-00002",
+                "gn4-00003"
+              ],
               "coreVocabSample": [
-                "Saya minta tolong teman untuk bantu pindahan.",
-                "Jika dalam kesulitan, andalkan saya kapan saja.",
-                "Jangan hanya bergantung pada orang tua, mari berpikir sendiri.",
-                "Dia dipercaya karena selalu menepati janji."
+                "vg-n4-00225",
+                "vg-n4-00226",
+                "vg-n4-00227",
+                "vg-n4-00228"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku TRY! JLPT Communicative (N5–N1). Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 4 TRY! JLPT Communicative (N5–N1).",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Menerima Pertolongan Sahabat.",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -1113,13 +1269,17 @@ window.curriculumBook_try = {
       "title_jp": "第5章: お祭りの準備をしておきます",
       "theme": "TRY N4",
       "icon": "🎯",
-      "can_do_summary": "Memahami silabus TRY N4 Bab 5 secara komprehensif.",
-      "grammar_ids": [],
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Persiapan Acara Festival Budaya.",
+      "grammar_ids": [
+        "gn4-00001",
+        "gn4-00002",
+        "gn4-00003"
+      ],
       "vocab_ids": [
-        "Komputer sempat bermasalah, tapi langsung normal kembali.",
-        "Flu saya sembuh setelah minum obat dan tidur nyenyak.",
-        "Saya gembira lulus.",
-        "Seluruh keluarga bersedih karena anjing peliharaan mati."
+        "vg-n4-00276",
+        "vg-n4-00335",
+        "vg-n4-00336",
+        "vg-n4-00337"
       ],
       "lessons": [
         {
@@ -1128,29 +1288,37 @@ window.curriculumBook_try = {
           "title_id": "Persiapan Acara Festival Budaya (Eksplorasi Materi & Pola)",
           "title_jp": "第5章: お祭りの準備をしておきます（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku TRY! JLPT Communicative (N5–N1) pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa TRY! JLPT Communicative (N5–N1) bab ini dalam konteks nyata.",
-          "grammar_ids": [],
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Persiapan Acara Festival Budaya.",
+          "grammar_ids": [
+            "gn4-00001",
+            "gn4-00002",
+            "gn4-00003"
+          ],
           "vocab_ids": [
-            "Komputer sempat bermasalah, tapi langsung normal kembali.",
-            "Flu saya sembuh setelah minum obat dan tidur nyenyak.",
-            "Saya gembira lulus.",
-            "Seluruh keluarga bersedih karena anjing peliharaan mati."
+            "vg-n4-00276",
+            "vg-n4-00335",
+            "vg-n4-00336",
+            "vg-n4-00337"
           ],
           "pedagogical_framework": {
             "what": {
               "summary": "Silabus resmi TRY! JLPT Communicative (N5–N1) bab 5.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
-              "targetPatterns": [],
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Persiapan Acara Festival Budaya.",
+              "targetPatterns": [
+                "gn4-00001",
+                "gn4-00002",
+                "gn4-00003"
+              ],
               "coreVocabSample": [
-                "Komputer sempat bermasalah, tapi langsung normal kembali.",
-                "Flu saya sembuh setelah minum obat dan tidur nyenyak.",
-                "Saya gembira lulus.",
-                "Seluruh keluarga bersedih karena anjing peliharaan mati."
+                "vg-n4-00276",
+                "vg-n4-00335",
+                "vg-n4-00336",
+                "vg-n4-00337"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku TRY! JLPT Communicative (N5–N1). Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 5 TRY! JLPT Communicative (N5–N1).",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Persiapan Acara Festival Budaya.",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -1197,13 +1365,17 @@ window.curriculumBook_try = {
       "title_jp": "第6章: 旅行に行けたらいいですね",
       "theme": "TRY N4",
       "icon": "🎯",
-      "can_do_summary": "Memahami silabus TRY N4 Bab 6 secara komprehensif.",
-      "grammar_ids": [],
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Harapan Liburan Impian.",
+      "grammar_ids": [
+        "gn4-00001",
+        "gn4-00002",
+        "gn4-00003"
+      ],
       "vocab_ids": [
-        "Tangan saya licin dan tak sengaja menjatuhkan cangkir ke lantai.",
-        "Saya menjatuhkan dompet di tengah perjalanan saat berjalan-jalan.",
-        "Saya menarik napas dalam-dalam untuk menenangkan perasaan.",
-        "Kehidupan akhirnya tenang kembali setelah urusan pindahan selesai."
+        "vg-n4-00417",
+        "vg-n4-00418",
+        "vg-n4-00419",
+        "vg-n4-00420"
       ],
       "lessons": [
         {
@@ -1212,29 +1384,37 @@ window.curriculumBook_try = {
           "title_id": "Harapan Liburan Impian (Eksplorasi Materi & Pola)",
           "title_jp": "第6章: 旅行に行けたらいいですね（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku TRY! JLPT Communicative (N5–N1) pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa TRY! JLPT Communicative (N5–N1) bab ini dalam konteks nyata.",
-          "grammar_ids": [],
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Harapan Liburan Impian.",
+          "grammar_ids": [
+            "gn4-00001",
+            "gn4-00002",
+            "gn4-00003"
+          ],
           "vocab_ids": [
-            "Tangan saya licin dan tak sengaja menjatuhkan cangkir ke lantai.",
-            "Saya menjatuhkan dompet di tengah perjalanan saat berjalan-jalan.",
-            "Saya menarik napas dalam-dalam untuk menenangkan perasaan.",
-            "Kehidupan akhirnya tenang kembali setelah urusan pindahan selesai."
+            "vg-n4-00417",
+            "vg-n4-00418",
+            "vg-n4-00419",
+            "vg-n4-00420"
           ],
           "pedagogical_framework": {
             "what": {
               "summary": "Silabus resmi TRY! JLPT Communicative (N5–N1) bab 6.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
-              "targetPatterns": [],
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Harapan Liburan Impian.",
+              "targetPatterns": [
+                "gn4-00001",
+                "gn4-00002",
+                "gn4-00003"
+              ],
               "coreVocabSample": [
-                "Tangan saya licin dan tak sengaja menjatuhkan cangkir ke lantai.",
-                "Saya menjatuhkan dompet di tengah perjalanan saat berjalan-jalan.",
-                "Saya menarik napas dalam-dalam untuk menenangkan perasaan.",
-                "Kehidupan akhirnya tenang kembali setelah urusan pindahan selesai."
+                "vg-n4-00417",
+                "vg-n4-00418",
+                "vg-n4-00419",
+                "vg-n4-00420"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku TRY! JLPT Communicative (N5–N1). Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 6 TRY! JLPT Communicative (N5–N1).",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Harapan Liburan Impian.",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -1281,13 +1461,17 @@ window.curriculumBook_try = {
       "title_jp": "第7章: 規則を守らなければなりません",
       "theme": "TRY N4",
       "icon": "🎯",
-      "can_do_summary": "Memahami silabus TRY N4 Bab 7 secara komprehensif.",
-      "grammar_ids": [],
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Kewajiban Mematuhi Norma Tata Tertib.",
+      "grammar_ids": [
+        "gn4-00001",
+        "gn4-00002",
+        "gn4-00003"
+      ],
       "vocab_ids": [
-        "Jangan sampai merusak kesehatan karena bekerja terlalu keras.",
-        "Mesin cuci yang dipakai bertahun-tahun tiba-tiba rusak.",
-        "Layar smartphone yang jatuh itu rusak.",
-        "Saya menambah jumlah tabungan bulanan demi masa depan."
+        "vg-n4-00442",
+        "vg-n4-00443",
+        "vg-n4-00444",
+        "vg-n4-00450"
       ],
       "lessons": [
         {
@@ -1296,29 +1480,37 @@ window.curriculumBook_try = {
           "title_id": "Kewajiban Mematuhi Norma Tata Tertib (Eksplorasi Materi & Pola)",
           "title_jp": "第7章: 規則を守らなければなりません（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku TRY! JLPT Communicative (N5–N1) pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa TRY! JLPT Communicative (N5–N1) bab ini dalam konteks nyata.",
-          "grammar_ids": [],
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Kewajiban Mematuhi Norma Tata Tertib.",
+          "grammar_ids": [
+            "gn4-00001",
+            "gn4-00002",
+            "gn4-00003"
+          ],
           "vocab_ids": [
-            "Jangan sampai merusak kesehatan karena bekerja terlalu keras.",
-            "Mesin cuci yang dipakai bertahun-tahun tiba-tiba rusak.",
-            "Layar smartphone yang jatuh itu rusak.",
-            "Saya menambah jumlah tabungan bulanan demi masa depan."
+            "vg-n4-00442",
+            "vg-n4-00443",
+            "vg-n4-00444",
+            "vg-n4-00450"
           ],
           "pedagogical_framework": {
             "what": {
               "summary": "Silabus resmi TRY! JLPT Communicative (N5–N1) bab 7.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
-              "targetPatterns": [],
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Kewajiban Mematuhi Norma Tata Tertib.",
+              "targetPatterns": [
+                "gn4-00001",
+                "gn4-00002",
+                "gn4-00003"
+              ],
               "coreVocabSample": [
-                "Jangan sampai merusak kesehatan karena bekerja terlalu keras.",
-                "Mesin cuci yang dipakai bertahun-tahun tiba-tiba rusak.",
-                "Layar smartphone yang jatuh itu rusak.",
-                "Saya menambah jumlah tabungan bulanan demi masa depan."
+                "vg-n4-00442",
+                "vg-n4-00443",
+                "vg-n4-00444",
+                "vg-n4-00450"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku TRY! JLPT Communicative (N5–N1). Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 7 TRY! JLPT Communicative (N5–N1).",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Kewajiban Mematuhi Norma Tata Tertib.",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -1365,13 +1557,17 @@ window.curriculumBook_try = {
       "title_jp": "第8章: 料理の作り方を教えてください",
       "theme": "TRY N4",
       "icon": "🎯",
-      "can_do_summary": "Memahami silabus TRY N4 Bab 8 secara komprehensif.",
-      "grammar_ids": [],
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Tata Cara Memasak Makanan.",
+      "grammar_ids": [
+        "gn4-00001",
+        "gn4-00002",
+        "gn4-00003"
+      ],
       "vocab_ids": [
-        "Saya membatalkan pemesanan hotel karena ada urusan mendadak.",
-        "Saya segera membatalkan email pesanan yang keliru terkirim.",
-        "Saya dipanggil ke ruang guru dan mendapat teguran.",
-        "Saya menunggu nama saya dipanggil di ruang tunggu klinik."
+        "vg-n4-00661",
+        "vg-n4-00662",
+        "vg-n4-00663",
+        "vg-n4-00664"
       ],
       "lessons": [
         {
@@ -1380,29 +1576,37 @@ window.curriculumBook_try = {
           "title_id": "Tata Cara Memasak Makanan (Eksplorasi Materi & Pola)",
           "title_jp": "第8章: 料理の作り方を教えてください（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku TRY! JLPT Communicative (N5–N1) pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa TRY! JLPT Communicative (N5–N1) bab ini dalam konteks nyata.",
-          "grammar_ids": [],
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Tata Cara Memasak Makanan.",
+          "grammar_ids": [
+            "gn4-00001",
+            "gn4-00002",
+            "gn4-00003"
+          ],
           "vocab_ids": [
-            "Saya membatalkan pemesanan hotel karena ada urusan mendadak.",
-            "Saya segera membatalkan email pesanan yang keliru terkirim.",
-            "Saya dipanggil ke ruang guru dan mendapat teguran.",
-            "Saya menunggu nama saya dipanggil di ruang tunggu klinik."
+            "vg-n4-00661",
+            "vg-n4-00662",
+            "vg-n4-00663",
+            "vg-n4-00664"
           ],
           "pedagogical_framework": {
             "what": {
               "summary": "Silabus resmi TRY! JLPT Communicative (N5–N1) bab 8.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
-              "targetPatterns": [],
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Tata Cara Memasak Makanan.",
+              "targetPatterns": [
+                "gn4-00001",
+                "gn4-00002",
+                "gn4-00003"
+              ],
               "coreVocabSample": [
-                "Saya membatalkan pemesanan hotel karena ada urusan mendadak.",
-                "Saya segera membatalkan email pesanan yang keliru terkirim.",
-                "Saya dipanggil ke ruang guru dan mendapat teguran.",
-                "Saya menunggu nama saya dipanggil di ruang tunggu klinik."
+                "vg-n4-00661",
+                "vg-n4-00662",
+                "vg-n4-00663",
+                "vg-n4-00664"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku TRY! JLPT Communicative (N5–N1). Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 8 TRY! JLPT Communicative (N5–N1).",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Tata Cara Memasak Makanan.",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -1449,13 +1653,17 @@ window.curriculumBook_try = {
       "title_jp": "第9章: 先生に褒められました",
       "theme": "TRY N4",
       "icon": "🎯",
-      "can_do_summary": "Memahami silabus TRY N4 Bab 9 secara komprehensif.",
-      "grammar_ids": [],
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Menerima Penghargaan & Pujian Guru.",
+      "grammar_ids": [
+        "gn4-00001",
+        "gn4-00002",
+        "gn4-00003"
+      ],
       "vocab_ids": [
-        "Pekerjaan sedang sibuk, tapi jaga kesehatan dan tetap semangat ya.",
-        "Sensei Tanaka saat ini sedang berada di ruang risetnya.",
-        "Apakah Bapak Direktur ada di kantor besok pagi?",
-        "Saya mencatat dengan cermat nasihat yang diucapkan oleh guru."
+        "vg-n4-00686",
+        "vg-n4-00687",
+        "vg-n4-00688",
+        "vg-n4-00689"
       ],
       "lessons": [
         {
@@ -1464,29 +1672,37 @@ window.curriculumBook_try = {
           "title_id": "Menerima Penghargaan & Pujian Guru (Eksplorasi Materi & Pola)",
           "title_jp": "第9章: 先生に褒められました（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku TRY! JLPT Communicative (N5–N1) pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa TRY! JLPT Communicative (N5–N1) bab ini dalam konteks nyata.",
-          "grammar_ids": [],
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Menerima Penghargaan & Pujian Guru.",
+          "grammar_ids": [
+            "gn4-00001",
+            "gn4-00002",
+            "gn4-00003"
+          ],
           "vocab_ids": [
-            "Pekerjaan sedang sibuk, tapi jaga kesehatan dan tetap semangat ya.",
-            "Sensei Tanaka saat ini sedang berada di ruang risetnya.",
-            "Apakah Bapak Direktur ada di kantor besok pagi?",
-            "Saya mencatat dengan cermat nasihat yang diucapkan oleh guru."
+            "vg-n4-00686",
+            "vg-n4-00687",
+            "vg-n4-00688",
+            "vg-n4-00689"
           ],
           "pedagogical_framework": {
             "what": {
               "summary": "Silabus resmi TRY! JLPT Communicative (N5–N1) bab 9.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
-              "targetPatterns": [],
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Menerima Penghargaan & Pujian Guru.",
+              "targetPatterns": [
+                "gn4-00001",
+                "gn4-00002",
+                "gn4-00003"
+              ],
               "coreVocabSample": [
-                "Pekerjaan sedang sibuk, tapi jaga kesehatan dan tetap semangat ya.",
-                "Sensei Tanaka saat ini sedang berada di ruang risetnya.",
-                "Apakah Bapak Direktur ada di kantor besok pagi?",
-                "Saya mencatat dengan cermat nasihat yang diucapkan oleh guru."
+                "vg-n4-00686",
+                "vg-n4-00687",
+                "vg-n4-00688",
+                "vg-n4-00689"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku TRY! JLPT Communicative (N5–N1). Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 9 TRY! JLPT Communicative (N5–N1).",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Menerima Penghargaan & Pujian Guru.",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -1533,13 +1749,17 @@ window.curriculumBook_try = {
       "title_jp": "第10章: これからも頑張りましょう",
       "theme": "TRY N4",
       "icon": "🎯",
-      "can_do_summary": "Memahami silabus TRY N4 Bab 10 secara komprehensif.",
-      "grammar_ids": [],
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Ikrar Semangat Belajar Berkesinambungan.",
+      "grammar_ids": [
+        "gn4-00001",
+        "gn4-00002",
+        "gn4-00003"
+      ],
       "vocab_ids": [
-        "Kita dapat mendengarkan siaran radio Jepang setiap hari lewat internet.",
-        "Perpustakaan begitu tenang hingga suara burung pun terdengar jelas.",
-        "Dulu saya kurang bisa makan pedas, tapi kini sudah mulai bisa.",
-        "Saya masih belum bisa makan natto karena aromanya yang menyengat."
+        "vg-n4-00762",
+        "vg-n4-00764",
+        "vg-n4-00765",
+        "vg-n4-00767"
       ],
       "lessons": [
         {
@@ -1548,29 +1768,37 @@ window.curriculumBook_try = {
           "title_id": "Ikrar Semangat Belajar Berkesinambungan (Eksplorasi Materi & Pola)",
           "title_jp": "第10章: これからも頑張りましょう（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku TRY! JLPT Communicative (N5–N1) pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa TRY! JLPT Communicative (N5–N1) bab ini dalam konteks nyata.",
-          "grammar_ids": [],
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Ikrar Semangat Belajar Berkesinambungan.",
+          "grammar_ids": [
+            "gn4-00001",
+            "gn4-00002",
+            "gn4-00003"
+          ],
           "vocab_ids": [
-            "Kita dapat mendengarkan siaran radio Jepang setiap hari lewat internet.",
-            "Perpustakaan begitu tenang hingga suara burung pun terdengar jelas.",
-            "Dulu saya kurang bisa makan pedas, tapi kini sudah mulai bisa.",
-            "Saya masih belum bisa makan natto karena aromanya yang menyengat."
+            "vg-n4-00762",
+            "vg-n4-00764",
+            "vg-n4-00765",
+            "vg-n4-00767"
           ],
           "pedagogical_framework": {
             "what": {
               "summary": "Silabus resmi TRY! JLPT Communicative (N5–N1) bab 10.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
-              "targetPatterns": [],
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Ikrar Semangat Belajar Berkesinambungan.",
+              "targetPatterns": [
+                "gn4-00001",
+                "gn4-00002",
+                "gn4-00003"
+              ],
               "coreVocabSample": [
-                "Kita dapat mendengarkan siaran radio Jepang setiap hari lewat internet.",
-                "Perpustakaan begitu tenang hingga suara burung pun terdengar jelas.",
-                "Dulu saya kurang bisa makan pedas, tapi kini sudah mulai bisa.",
-                "Saya masih belum bisa makan natto karena aromanya yang menyengat."
+                "vg-n4-00762",
+                "vg-n4-00764",
+                "vg-n4-00765",
+                "vg-n4-00767"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku TRY! JLPT Communicative (N5–N1). Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 10 TRY! JLPT Communicative (N5–N1).",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Ikrar Semangat Belajar Berkesinambungan.",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -1611,19 +1839,23 @@ window.curriculumBook_try = {
     {
       "unit_number": 20,
       "id": "unit-curriculum-book-try-20",
-      "level": "n4",
+      "level": "n3",
       "pt_stage": 3,
       "title_id": "TRY N3: Bimbingan Prosedur & Administrasi",
       "title_jp": "第1章: 案内と手続き",
       "theme": "TRY N3",
       "icon": "🎯",
-      "can_do_summary": "Memahami silabus TRY N3 Bab 1 secara komprehensif.",
-      "grammar_ids": [],
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Bimbingan Prosedur & Administrasi.",
+      "grammar_ids": [
+        "gn3-00001",
+        "gn3-00002",
+        "gn3-00003"
+      ],
       "vocab_ids": [
         "vg-n3-00003",
-        "Saya datang untuk mengantar paket.",
-        "Sebaiknya dilaporkan ke polisi.",
-        "vg-n3-00004"
+        "vg-n3-00004",
+        "vg-n3-00005",
+        "vg-n3-00007"
       ],
       "lessons": [
         {
@@ -1632,29 +1864,37 @@ window.curriculumBook_try = {
           "title_id": "Bimbingan Prosedur & Administrasi (Eksplorasi Materi & Pola)",
           "title_jp": "第1章: 案内と手続き（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku TRY! JLPT Communicative (N5–N1) pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa TRY! JLPT Communicative (N5–N1) bab ini dalam konteks nyata.",
-          "grammar_ids": [],
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Bimbingan Prosedur & Administrasi.",
+          "grammar_ids": [
+            "gn3-00001",
+            "gn3-00002",
+            "gn3-00003"
+          ],
           "vocab_ids": [
             "vg-n3-00003",
-            "Saya datang untuk mengantar paket.",
-            "Sebaiknya dilaporkan ke polisi.",
-            "vg-n3-00004"
+            "vg-n3-00004",
+            "vg-n3-00005",
+            "vg-n3-00007"
           ],
           "pedagogical_framework": {
             "what": {
               "summary": "Silabus resmi TRY! JLPT Communicative (N5–N1) bab 1.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
-              "targetPatterns": [],
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Bimbingan Prosedur & Administrasi.",
+              "targetPatterns": [
+                "gn3-00001",
+                "gn3-00002",
+                "gn3-00003"
+              ],
               "coreVocabSample": [
                 "vg-n3-00003",
-                "Saya datang untuk mengantar paket.",
-                "Sebaiknya dilaporkan ke polisi.",
-                "vg-n3-00004"
+                "vg-n3-00004",
+                "vg-n3-00005",
+                "vg-n3-00007"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku TRY! JLPT Communicative (N5–N1). Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 1 TRY! JLPT Communicative (N5–N1).",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Bimbingan Prosedur & Administrasi.",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -1695,19 +1935,23 @@ window.curriculumBook_try = {
     {
       "unit_number": 21,
       "id": "unit-curriculum-book-try-21",
-      "level": "n4",
+      "level": "n3",
       "pt_stage": 4,
       "title_id": "TRY N3: Permohonan Santun & Konsultasi",
       "title_jp": "第2章: お願いと相談",
       "theme": "TRY N3",
       "icon": "🎯",
-      "can_do_summary": "Memahami silabus TRY N3 Bab 2 secara komprehensif.",
-      "grammar_ids": [],
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Permohonan Santun & Konsultasi.",
+      "grammar_ids": [
+        "gn3-00001",
+        "gn3-00002",
+        "gn3-00003"
+      ],
       "vocab_ids": [
-        "vg-n3-00018",
-        "Aku tidak mau menyerah pada impianku.",
-        "Meskipun gagal berkali-kali, dia tidak menyerah.",
-        "vg-n3-00019"
+        "vg-n3-00069",
+        "vg-n3-00070",
+        "vg-n3-00074",
+        "vg-n3-00076"
       ],
       "lessons": [
         {
@@ -1716,29 +1960,37 @@ window.curriculumBook_try = {
           "title_id": "Permohonan Santun & Konsultasi (Eksplorasi Materi & Pola)",
           "title_jp": "第2章: お願いと相談（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku TRY! JLPT Communicative (N5–N1) pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa TRY! JLPT Communicative (N5–N1) bab ini dalam konteks nyata.",
-          "grammar_ids": [],
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Permohonan Santun & Konsultasi.",
+          "grammar_ids": [
+            "gn3-00001",
+            "gn3-00002",
+            "gn3-00003"
+          ],
           "vocab_ids": [
-            "vg-n3-00018",
-            "Aku tidak mau menyerah pada impianku.",
-            "Meskipun gagal berkali-kali, dia tidak menyerah.",
-            "vg-n3-00019"
+            "vg-n3-00069",
+            "vg-n3-00070",
+            "vg-n3-00074",
+            "vg-n3-00076"
           ],
           "pedagogical_framework": {
             "what": {
               "summary": "Silabus resmi TRY! JLPT Communicative (N5–N1) bab 2.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
-              "targetPatterns": [],
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Permohonan Santun & Konsultasi.",
+              "targetPatterns": [
+                "gn3-00001",
+                "gn3-00002",
+                "gn3-00003"
+              ],
               "coreVocabSample": [
-                "vg-n3-00018",
-                "Aku tidak mau menyerah pada impianku.",
-                "Meskipun gagal berkali-kali, dia tidak menyerah.",
-                "vg-n3-00019"
+                "vg-n3-00069",
+                "vg-n3-00070",
+                "vg-n3-00074",
+                "vg-n3-00076"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku TRY! JLPT Communicative (N5–N1). Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 2 TRY! JLPT Communicative (N5–N1).",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Permohonan Santun & Konsultasi.",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -1779,19 +2031,23 @@ window.curriculumBook_try = {
     {
       "unit_number": 22,
       "id": "unit-curriculum-book-try-22",
-      "level": "n4",
+      "level": "n3",
       "pt_stage": 5,
       "title_id": "TRY N3: Penyampaian Pendapat & Apresiasi",
       "title_jp": "第3章: 意見と感想",
       "theme": "TRY N3",
       "icon": "🎯",
-      "can_do_summary": "Memahami silabus TRY N3 Bab 3 secara komprehensif.",
-      "grammar_ids": [],
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Penyampaian Pendapat & Apresiasi.",
+      "grammar_ids": [
+        "gn3-00001",
+        "gn3-00002",
+        "gn3-00003"
+      ],
       "vocab_ids": [
-        "vg-n3-00056",
-        "Proyeknya berhasil.",
-        "Akan berusaha sampai berhasil.",
-        "vg-n3-00057"
+        "vg-n3-00104",
+        "vg-n3-00105",
+        "vg-n3-00106",
+        "vg-n3-00107"
       ],
       "lessons": [
         {
@@ -1800,29 +2056,37 @@ window.curriculumBook_try = {
           "title_id": "Penyampaian Pendapat & Apresiasi (Eksplorasi Materi & Pola)",
           "title_jp": "第3章: 意見と感想（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku TRY! JLPT Communicative (N5–N1) pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa TRY! JLPT Communicative (N5–N1) bab ini dalam konteks nyata.",
-          "grammar_ids": [],
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Penyampaian Pendapat & Apresiasi.",
+          "grammar_ids": [
+            "gn3-00001",
+            "gn3-00002",
+            "gn3-00003"
+          ],
           "vocab_ids": [
-            "vg-n3-00056",
-            "Proyeknya berhasil.",
-            "Akan berusaha sampai berhasil.",
-            "vg-n3-00057"
+            "vg-n3-00104",
+            "vg-n3-00105",
+            "vg-n3-00106",
+            "vg-n3-00107"
           ],
           "pedagogical_framework": {
             "what": {
               "summary": "Silabus resmi TRY! JLPT Communicative (N5–N1) bab 3.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
-              "targetPatterns": [],
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Penyampaian Pendapat & Apresiasi.",
+              "targetPatterns": [
+                "gn3-00001",
+                "gn3-00002",
+                "gn3-00003"
+              ],
               "coreVocabSample": [
-                "vg-n3-00056",
-                "Proyeknya berhasil.",
-                "Akan berusaha sampai berhasil.",
-                "vg-n3-00057"
+                "vg-n3-00104",
+                "vg-n3-00105",
+                "vg-n3-00106",
+                "vg-n3-00107"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku TRY! JLPT Communicative (N5–N1). Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 3 TRY! JLPT Communicative (N5–N1).",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Penyampaian Pendapat & Apresiasi.",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -1863,19 +2127,23 @@ window.curriculumBook_try = {
     {
       "unit_number": 23,
       "id": "unit-curriculum-book-try-23",
-      "level": "n4",
+      "level": "n3",
       "pt_stage": 6,
       "title_id": "TRY N3: Dinamika Perubahan Kondisi",
       "title_jp": "第4章: 変化と推移",
       "theme": "TRY N3",
       "icon": "🎯",
-      "can_do_summary": "Memahami silabus TRY N3 Bab 4 secara komprehensif.",
-      "grammar_ids": [],
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Dinamika Perubahan Kondisi.",
+      "grammar_ids": [
+        "gn3-00001",
+        "gn3-00002",
+        "gn3-00003"
+      ],
       "vocab_ids": [
-        "vg-n3-00069",
-        "Hujan berlanjut selama tiga hari.",
-        "Jalan ini berlanjut sampai mana ya.",
-        "vg-n3-00070"
+        "vg-n3-00171",
+        "vg-n3-00173",
+        "vg-n3-00174",
+        "vg-n3-00175"
       ],
       "lessons": [
         {
@@ -1884,29 +2152,37 @@ window.curriculumBook_try = {
           "title_id": "Dinamika Perubahan Kondisi (Eksplorasi Materi & Pola)",
           "title_jp": "第4章: 変化と推移（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku TRY! JLPT Communicative (N5–N1) pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa TRY! JLPT Communicative (N5–N1) bab ini dalam konteks nyata.",
-          "grammar_ids": [],
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Dinamika Perubahan Kondisi.",
+          "grammar_ids": [
+            "gn3-00001",
+            "gn3-00002",
+            "gn3-00003"
+          ],
           "vocab_ids": [
-            "vg-n3-00069",
-            "Hujan berlanjut selama tiga hari.",
-            "Jalan ini berlanjut sampai mana ya.",
-            "vg-n3-00070"
+            "vg-n3-00171",
+            "vg-n3-00173",
+            "vg-n3-00174",
+            "vg-n3-00175"
           ],
           "pedagogical_framework": {
             "what": {
               "summary": "Silabus resmi TRY! JLPT Communicative (N5–N1) bab 4.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
-              "targetPatterns": [],
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Dinamika Perubahan Kondisi.",
+              "targetPatterns": [
+                "gn3-00001",
+                "gn3-00002",
+                "gn3-00003"
+              ],
               "coreVocabSample": [
-                "vg-n3-00069",
-                "Hujan berlanjut selama tiga hari.",
-                "Jalan ini berlanjut sampai mana ya.",
-                "vg-n3-00070"
+                "vg-n3-00171",
+                "vg-n3-00173",
+                "vg-n3-00174",
+                "vg-n3-00175"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku TRY! JLPT Communicative (N5–N1). Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 4 TRY! JLPT Communicative (N5–N1).",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Dinamika Perubahan Kondisi.",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -1947,19 +2223,23 @@ window.curriculumBook_try = {
     {
       "unit_number": 24,
       "id": "unit-curriculum-book-try-24",
-      "level": "n4",
+      "level": "n3",
       "pt_stage": 1,
       "title_id": "TRY N3: Eksplorasi Sebab Musabab Logis",
       "title_jp": "第5章: 原因と理由",
       "theme": "TRY N3",
       "icon": "🎯",
-      "can_do_summary": "Memahami silabus TRY N3 Bab 5 secara komprehensif.",
-      "grammar_ids": [],
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Eksplorasi Sebab Musabab Logis.",
+      "grammar_ids": [
+        "gn3-00001",
+        "gn3-00002",
+        "gn3-00003"
+      ],
       "vocab_ids": [
-        "vg-n3-00084",
-        "Saya menyusun piring-piring di atas meja.",
-        "Tolong susun barang-barang dengan rapi di rak.",
-        "vg-n3-00085"
+        "vg-n3-00248",
+        "vg-n3-00249",
+        "vg-n3-00250",
+        "vg-n3-00252"
       ],
       "lessons": [
         {
@@ -1968,29 +2248,37 @@ window.curriculumBook_try = {
           "title_id": "Eksplorasi Sebab Musabab Logis (Eksplorasi Materi & Pola)",
           "title_jp": "第5章: 原因と理由（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku TRY! JLPT Communicative (N5–N1) pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa TRY! JLPT Communicative (N5–N1) bab ini dalam konteks nyata.",
-          "grammar_ids": [],
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Eksplorasi Sebab Musabab Logis.",
+          "grammar_ids": [
+            "gn3-00001",
+            "gn3-00002",
+            "gn3-00003"
+          ],
           "vocab_ids": [
-            "vg-n3-00084",
-            "Saya menyusun piring-piring di atas meja.",
-            "Tolong susun barang-barang dengan rapi di rak.",
-            "vg-n3-00085"
+            "vg-n3-00248",
+            "vg-n3-00249",
+            "vg-n3-00250",
+            "vg-n3-00252"
           ],
           "pedagogical_framework": {
             "what": {
               "summary": "Silabus resmi TRY! JLPT Communicative (N5–N1) bab 5.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
-              "targetPatterns": [],
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Eksplorasi Sebab Musabab Logis.",
+              "targetPatterns": [
+                "gn3-00001",
+                "gn3-00002",
+                "gn3-00003"
+              ],
               "coreVocabSample": [
-                "vg-n3-00084",
-                "Saya menyusun piring-piring di atas meja.",
-                "Tolong susun barang-barang dengan rapi di rak.",
-                "vg-n3-00085"
+                "vg-n3-00248",
+                "vg-n3-00249",
+                "vg-n3-00250",
+                "vg-n3-00252"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku TRY! JLPT Communicative (N5–N1). Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 5 TRY! JLPT Communicative (N5–N1).",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Eksplorasi Sebab Musabab Logis.",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -2031,19 +2319,23 @@ window.curriculumBook_try = {
     {
       "unit_number": 25,
       "id": "unit-curriculum-book-try-25",
-      "level": "n4",
+      "level": "n3",
       "pt_stage": 2,
       "title_id": "TRY N3: Komparasi & Penjajaran Kontras",
       "title_jp": "第6章: 比較と対比",
       "theme": "TRY N3",
       "icon": "🎯",
-      "can_do_summary": "Memahami silabus TRY N3 Bab 6 secara komprehensif.",
-      "grammar_ids": [],
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Komparasi & Penjajaran Kontras.",
+      "grammar_ids": [
+        "gn3-00001",
+        "gn3-00002",
+        "gn3-00003"
+      ],
       "vocab_ids": [
-        "vg-n3-00094",
-        "Saya merapikan rambut sebelum keluar.",
-        "Sebelum lomba, saya mengatur napas dulu baru mulai berlari.",
-        "vg-n3-00095"
+        "vg-n3-00305",
+        "vg-n3-00306",
+        "vg-n3-00307",
+        "vg-n3-00308"
       ],
       "lessons": [
         {
@@ -2052,29 +2344,37 @@ window.curriculumBook_try = {
           "title_id": "Komparasi & Penjajaran Kontras (Eksplorasi Materi & Pola)",
           "title_jp": "第6章: 比較と対比（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku TRY! JLPT Communicative (N5–N1) pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa TRY! JLPT Communicative (N5–N1) bab ini dalam konteks nyata.",
-          "grammar_ids": [],
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Komparasi & Penjajaran Kontras.",
+          "grammar_ids": [
+            "gn3-00001",
+            "gn3-00002",
+            "gn3-00003"
+          ],
           "vocab_ids": [
-            "vg-n3-00094",
-            "Saya merapikan rambut sebelum keluar.",
-            "Sebelum lomba, saya mengatur napas dulu baru mulai berlari.",
-            "vg-n3-00095"
+            "vg-n3-00305",
+            "vg-n3-00306",
+            "vg-n3-00307",
+            "vg-n3-00308"
           ],
           "pedagogical_framework": {
             "what": {
               "summary": "Silabus resmi TRY! JLPT Communicative (N5–N1) bab 6.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
-              "targetPatterns": [],
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Komparasi & Penjajaran Kontras.",
+              "targetPatterns": [
+                "gn3-00001",
+                "gn3-00002",
+                "gn3-00003"
+              ],
               "coreVocabSample": [
-                "vg-n3-00094",
-                "Saya merapikan rambut sebelum keluar.",
-                "Sebelum lomba, saya mengatur napas dulu baru mulai berlari.",
-                "vg-n3-00095"
+                "vg-n3-00305",
+                "vg-n3-00306",
+                "vg-n3-00307",
+                "vg-n3-00308"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku TRY! JLPT Communicative (N5–N1). Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 6 TRY! JLPT Communicative (N5–N1).",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Komparasi & Penjajaran Kontras.",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -2115,19 +2415,23 @@ window.curriculumBook_try = {
     {
       "unit_number": 26,
       "id": "unit-curriculum-book-try-26",
-      "level": "n4",
+      "level": "n3",
       "pt_stage": 3,
       "title_id": "TRY N3: Pembatasan Lingkup & Penegasan",
       "title_jp": "第7章: 限定と強調",
       "theme": "TRY N3",
       "icon": "🎯",
-      "can_do_summary": "Memahami silabus TRY N3 Bab 7 secara komprehensif.",
-      "grammar_ids": [],
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Pembatasan Lingkup & Penegasan.",
+      "grammar_ids": [
+        "gn3-00001",
+        "gn3-00002",
+        "gn3-00003"
+      ],
       "vocab_ids": [
-        "vg-n3-00104",
-        "Dia bersedih atas kematian temannya.",
-        "Saya bersedih mendengar berita itu.",
-        "vg-n3-00105"
+        "vg-n3-00337",
+        "vg-n3-00338",
+        "vg-n3-00339",
+        "vg-n3-00340"
       ],
       "lessons": [
         {
@@ -2136,29 +2440,37 @@ window.curriculumBook_try = {
           "title_id": "Pembatasan Lingkup & Penegasan (Eksplorasi Materi & Pola)",
           "title_jp": "第7章: 限定と強調（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku TRY! JLPT Communicative (N5–N1) pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa TRY! JLPT Communicative (N5–N1) bab ini dalam konteks nyata.",
-          "grammar_ids": [],
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Pembatasan Lingkup & Penegasan.",
+          "grammar_ids": [
+            "gn3-00001",
+            "gn3-00002",
+            "gn3-00003"
+          ],
           "vocab_ids": [
-            "vg-n3-00104",
-            "Dia bersedih atas kematian temannya.",
-            "Saya bersedih mendengar berita itu.",
-            "vg-n3-00105"
+            "vg-n3-00337",
+            "vg-n3-00338",
+            "vg-n3-00339",
+            "vg-n3-00340"
           ],
           "pedagogical_framework": {
             "what": {
               "summary": "Silabus resmi TRY! JLPT Communicative (N5–N1) bab 7.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
-              "targetPatterns": [],
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Pembatasan Lingkup & Penegasan.",
+              "targetPatterns": [
+                "gn3-00001",
+                "gn3-00002",
+                "gn3-00003"
+              ],
               "coreVocabSample": [
-                "vg-n3-00104",
-                "Dia bersedih atas kematian temannya.",
-                "Saya bersedih mendengar berita itu.",
-                "vg-n3-00105"
+                "vg-n3-00337",
+                "vg-n3-00338",
+                "vg-n3-00339",
+                "vg-n3-00340"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku TRY! JLPT Communicative (N5–N1). Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 7 TRY! JLPT Communicative (N5–N1).",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Pembatasan Lingkup & Penegasan.",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -2199,19 +2511,23 @@ window.curriculumBook_try = {
     {
       "unit_number": 27,
       "id": "unit-curriculum-book-try-27",
-      "level": "n4",
+      "level": "n3",
       "pt_stage": 4,
       "title_id": "TRY N3: Penerusan Berita & Kutipan Wacana",
       "title_jp": "第8章: 伝達と伝聞",
       "theme": "TRY N3",
       "icon": "🎯",
-      "can_do_summary": "Memahami silabus TRY N3 Bab 8 secara komprehensif.",
-      "grammar_ids": [],
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Penerusan Berita & Kutipan Wacana.",
+      "grammar_ids": [
+        "gn3-00001",
+        "gn3-00002",
+        "gn3-00003"
+      ],
       "vocab_ids": [
-        "vg-n3-00128",
-        "Persiapan ujian dilakukan sungguh-sungguh.",
-        "Sudah siap berangkat?",
-        "vg-n3-00129"
+        "vg-n3-00431",
+        "vg-n3-00432",
+        "vg-n3-00433",
+        "vg-n3-00434"
       ],
       "lessons": [
         {
@@ -2220,29 +2536,37 @@ window.curriculumBook_try = {
           "title_id": "Penerusan Berita & Kutipan Wacana (Eksplorasi Materi & Pola)",
           "title_jp": "第8章: 伝達と伝聞（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku TRY! JLPT Communicative (N5–N1) pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa TRY! JLPT Communicative (N5–N1) bab ini dalam konteks nyata.",
-          "grammar_ids": [],
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Penerusan Berita & Kutipan Wacana.",
+          "grammar_ids": [
+            "gn3-00001",
+            "gn3-00002",
+            "gn3-00003"
+          ],
           "vocab_ids": [
-            "vg-n3-00128",
-            "Persiapan ujian dilakukan sungguh-sungguh.",
-            "Sudah siap berangkat?",
-            "vg-n3-00129"
+            "vg-n3-00431",
+            "vg-n3-00432",
+            "vg-n3-00433",
+            "vg-n3-00434"
           ],
           "pedagogical_framework": {
             "what": {
               "summary": "Silabus resmi TRY! JLPT Communicative (N5–N1) bab 8.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
-              "targetPatterns": [],
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Penerusan Berita & Kutipan Wacana.",
+              "targetPatterns": [
+                "gn3-00001",
+                "gn3-00002",
+                "gn3-00003"
+              ],
               "coreVocabSample": [
-                "vg-n3-00128",
-                "Persiapan ujian dilakukan sungguh-sungguh.",
-                "Sudah siap berangkat?",
-                "vg-n3-00129"
+                "vg-n3-00431",
+                "vg-n3-00432",
+                "vg-n3-00433",
+                "vg-n3-00434"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku TRY! JLPT Communicative (N5–N1). Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 8 TRY! JLPT Communicative (N5–N1).",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Penerusan Berita & Kutipan Wacana.",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -2283,19 +2607,23 @@ window.curriculumBook_try = {
     {
       "unit_number": 28,
       "id": "unit-curriculum-book-try-28",
-      "level": "n4",
+      "level": "n3",
       "pt_stage": 5,
       "title_id": "TRY N3: Resonansi Afektif & Nuansa Emosi",
       "title_jp": "第9章: 感情と心理",
       "theme": "TRY N3",
       "icon": "🎯",
-      "can_do_summary": "Memahami silabus TRY N3 Bab 9 secara komprehensif.",
-      "grammar_ids": [],
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Resonansi Afektif & Nuansa Emosi.",
+      "grammar_ids": [
+        "gn3-00001",
+        "gn3-00002",
+        "gn3-00003"
+      ],
       "vocab_ids": [
-        "vg-n3-00159",
-        "Hujan berlanjut selama satu minggu.",
-        "Rapat berlanjut lebih dari 3 jam.",
-        "Sampai mana ya jalan ini berlanjut."
+        "vg-n3-00513",
+        "vg-n3-00514",
+        "vg-n3-00518",
+        "vg-n3-00526"
       ],
       "lessons": [
         {
@@ -2304,29 +2632,37 @@ window.curriculumBook_try = {
           "title_id": "Resonansi Afektif & Nuansa Emosi (Eksplorasi Materi & Pola)",
           "title_jp": "第9章: 感情と心理（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku TRY! JLPT Communicative (N5–N1) pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa TRY! JLPT Communicative (N5–N1) bab ini dalam konteks nyata.",
-          "grammar_ids": [],
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Resonansi Afektif & Nuansa Emosi.",
+          "grammar_ids": [
+            "gn3-00001",
+            "gn3-00002",
+            "gn3-00003"
+          ],
           "vocab_ids": [
-            "vg-n3-00159",
-            "Hujan berlanjut selama satu minggu.",
-            "Rapat berlanjut lebih dari 3 jam.",
-            "Sampai mana ya jalan ini berlanjut."
+            "vg-n3-00513",
+            "vg-n3-00514",
+            "vg-n3-00518",
+            "vg-n3-00526"
           ],
           "pedagogical_framework": {
             "what": {
               "summary": "Silabus resmi TRY! JLPT Communicative (N5–N1) bab 9.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
-              "targetPatterns": [],
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Resonansi Afektif & Nuansa Emosi.",
+              "targetPatterns": [
+                "gn3-00001",
+                "gn3-00002",
+                "gn3-00003"
+              ],
               "coreVocabSample": [
-                "vg-n3-00159",
-                "Hujan berlanjut selama satu minggu.",
-                "Rapat berlanjut lebih dari 3 jam.",
-                "Sampai mana ya jalan ini berlanjut."
+                "vg-n3-00513",
+                "vg-n3-00514",
+                "vg-n3-00518",
+                "vg-n3-00526"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku TRY! JLPT Communicative (N5–N1). Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 9 TRY! JLPT Communicative (N5–N1).",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Resonansi Afektif & Nuansa Emosi.",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -2367,19 +2703,23 @@ window.curriculumBook_try = {
     {
       "unit_number": 29,
       "id": "unit-curriculum-book-try-29",
-      "level": "n4",
+      "level": "n3",
       "pt_stage": 6,
       "title_id": "TRY N3: Etika Kehormatan & Adab Formal",
       "title_jp": "第10章: 敬語とマナー",
       "theme": "TRY N3",
       "icon": "🎯",
-      "can_do_summary": "Memahami silabus TRY N3 Bab 10 secara komprehensif.",
-      "grammar_ids": [],
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Etika Kehormatan & Adab Formal.",
+      "grammar_ids": [
+        "gn3-00001",
+        "gn3-00002",
+        "gn3-00003"
+      ],
       "vocab_ids": [
-        "Aku menundukkan kepala untuk meminta maaf.",
-        "Tolong turunkan volume TV-nya.",
-        "vg-n3-00167",
-        "Bunga sakura mekar (terbuka)."
+        "vg-n3-00553",
+        "vg-n3-00554",
+        "vg-n3-00555",
+        "vg-n3-00573"
       ],
       "lessons": [
         {
@@ -2388,29 +2728,37 @@ window.curriculumBook_try = {
           "title_id": "Etika Kehormatan & Adab Formal (Eksplorasi Materi & Pola)",
           "title_jp": "第10章: 敬語とマナー（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku TRY! JLPT Communicative (N5–N1) pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa TRY! JLPT Communicative (N5–N1) bab ini dalam konteks nyata.",
-          "grammar_ids": [],
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Etika Kehormatan & Adab Formal.",
+          "grammar_ids": [
+            "gn3-00001",
+            "gn3-00002",
+            "gn3-00003"
+          ],
           "vocab_ids": [
-            "Aku menundukkan kepala untuk meminta maaf.",
-            "Tolong turunkan volume TV-nya.",
-            "vg-n3-00167",
-            "Bunga sakura mekar (terbuka)."
+            "vg-n3-00553",
+            "vg-n3-00554",
+            "vg-n3-00555",
+            "vg-n3-00573"
           ],
           "pedagogical_framework": {
             "what": {
               "summary": "Silabus resmi TRY! JLPT Communicative (N5–N1) bab 10.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
-              "targetPatterns": [],
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Etika Kehormatan & Adab Formal.",
+              "targetPatterns": [
+                "gn3-00001",
+                "gn3-00002",
+                "gn3-00003"
+              ],
               "coreVocabSample": [
-                "Aku menundukkan kepala untuk meminta maaf.",
-                "Tolong turunkan volume TV-nya.",
-                "vg-n3-00167",
-                "Bunga sakura mekar (terbuka)."
+                "vg-n3-00553",
+                "vg-n3-00554",
+                "vg-n3-00555",
+                "vg-n3-00573"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku TRY! JLPT Communicative (N5–N1). Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 10 TRY! JLPT Communicative (N5–N1).",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Etika Kehormatan & Adab Formal.",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -2451,19 +2799,23 @@ window.curriculumBook_try = {
     {
       "unit_number": 30,
       "id": "unit-curriculum-book-try-30",
-      "level": "n4",
+      "level": "n3",
       "pt_stage": 1,
       "title_id": "TRY N3: Integrasi Praktik & Refleksi Wacana",
       "title_jp": "第11章: 総合実戦とまとめ",
       "theme": "TRY N3",
       "icon": "🎯",
-      "can_do_summary": "Memahami silabus TRY N3 Bab 11 secara komprehensif.",
-      "grammar_ids": [],
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Integrasi Praktik & Refleksi Wacana.",
+      "grammar_ids": [
+        "gn3-00001",
+        "gn3-00002",
+        "gn3-00003"
+      ],
       "vocab_ids": [
-        "vg-n3-00175",
-        "Aku memasukkan dompet ke dalam tas.",
-        "Mau saya buatkan teh?",
-        "Karena dingin, aku menyalakan AC."
+        "vg-n3-00660",
+        "vg-n3-00667",
+        "vg-n3-00669",
+        "vg-n3-00670"
       ],
       "lessons": [
         {
@@ -2472,29 +2824,37 @@ window.curriculumBook_try = {
           "title_id": "Integrasi Praktik & Refleksi Wacana (Eksplorasi Materi & Pola)",
           "title_jp": "第11章: 総合実戦とまとめ（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku TRY! JLPT Communicative (N5–N1) pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa TRY! JLPT Communicative (N5–N1) bab ini dalam konteks nyata.",
-          "grammar_ids": [],
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Integrasi Praktik & Refleksi Wacana.",
+          "grammar_ids": [
+            "gn3-00001",
+            "gn3-00002",
+            "gn3-00003"
+          ],
           "vocab_ids": [
-            "vg-n3-00175",
-            "Aku memasukkan dompet ke dalam tas.",
-            "Mau saya buatkan teh?",
-            "Karena dingin, aku menyalakan AC."
+            "vg-n3-00660",
+            "vg-n3-00667",
+            "vg-n3-00669",
+            "vg-n3-00670"
           ],
           "pedagogical_framework": {
             "what": {
               "summary": "Silabus resmi TRY! JLPT Communicative (N5–N1) bab 11.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
-              "targetPatterns": [],
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Integrasi Praktik & Refleksi Wacana.",
+              "targetPatterns": [
+                "gn3-00001",
+                "gn3-00002",
+                "gn3-00003"
+              ],
               "coreVocabSample": [
-                "vg-n3-00175",
-                "Aku memasukkan dompet ke dalam tas.",
-                "Mau saya buatkan teh?",
-                "Karena dingin, aku menyalakan AC."
+                "vg-n3-00660",
+                "vg-n3-00667",
+                "vg-n3-00669",
+                "vg-n3-00670"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku TRY! JLPT Communicative (N5–N1). Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 11 TRY! JLPT Communicative (N5–N1).",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Integrasi Praktik & Refleksi Wacana.",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -2535,19 +2895,23 @@ window.curriculumBook_try = {
     {
       "unit_number": 31,
       "id": "unit-curriculum-book-try-31",
-      "level": "n4",
+      "level": "n2",
       "pt_stage": 2,
       "title_id": "TRY N2: Babak Baru Kehidupan & Jejaring Kolega",
       "title_jp": "第1章: 新しい生活と出会い",
       "theme": "TRY N2",
       "icon": "🎯",
-      "can_do_summary": "Memahami silabus TRY N2 Bab 1 secara komprehensif.",
-      "grammar_ids": [],
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Babak Baru Kehidupan & Jejaring Kolega.",
+      "grammar_ids": [
+        "gn2-00001",
+        "gn2-00002",
+        "gn2-00003"
+      ],
       "vocab_ids": [
         "vg-n2-00051",
-        "Mari kita susun strategi setelah benar-benar memahami situasi saat ini.",
-        "Kepala departemen selalu menguasai tren pasar.",
-        "Penting untuk memahami alur keseluruhan."
+        "vg-n2-00052",
+        "vg-n2-00053",
+        "vg-n2-00054"
       ],
       "lessons": [
         {
@@ -2556,29 +2920,37 @@ window.curriculumBook_try = {
           "title_id": "Babak Baru Kehidupan & Jejaring Kolega (Eksplorasi Materi & Pola)",
           "title_jp": "第1章: 新しい生活と出会い（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku TRY! JLPT Communicative (N5–N1) pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa TRY! JLPT Communicative (N5–N1) bab ini dalam konteks nyata.",
-          "grammar_ids": [],
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Babak Baru Kehidupan & Jejaring Kolega.",
+          "grammar_ids": [
+            "gn2-00001",
+            "gn2-00002",
+            "gn2-00003"
+          ],
           "vocab_ids": [
             "vg-n2-00051",
-            "Mari kita susun strategi setelah benar-benar memahami situasi saat ini.",
-            "Kepala departemen selalu menguasai tren pasar.",
-            "Penting untuk memahami alur keseluruhan."
+            "vg-n2-00052",
+            "vg-n2-00053",
+            "vg-n2-00054"
           ],
           "pedagogical_framework": {
             "what": {
               "summary": "Silabus resmi TRY! JLPT Communicative (N5–N1) bab 1.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
-              "targetPatterns": [],
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Babak Baru Kehidupan & Jejaring Kolega.",
+              "targetPatterns": [
+                "gn2-00001",
+                "gn2-00002",
+                "gn2-00003"
+              ],
               "coreVocabSample": [
                 "vg-n2-00051",
-                "Mari kita susun strategi setelah benar-benar memahami situasi saat ini.",
-                "Kepala departemen selalu menguasai tren pasar.",
-                "Penting untuk memahami alur keseluruhan."
+                "vg-n2-00052",
+                "vg-n2-00053",
+                "vg-n2-00054"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku TRY! JLPT Communicative (N5–N1). Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 1 TRY! JLPT Communicative (N5–N1).",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Babak Baru Kehidupan & Jejaring Kolega.",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -2619,19 +2991,23 @@ window.curriculumBook_try = {
     {
       "unit_number": 32,
       "id": "unit-curriculum-book-try-32",
-      "level": "n4",
+      "level": "n2",
       "pt_stage": 3,
       "title_id": "TRY N2: Negosiasi Bisnis & Diplomasi Kerja",
       "title_jp": "第2章: ビジネスと交渉",
       "theme": "TRY N2",
       "icon": "🎯",
-      "can_do_summary": "Memahami silabus TRY N2 Bab 2 secara komprehensif.",
-      "grammar_ids": [],
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Negosiasi Bisnis & Diplomasi Kerja.",
+      "grammar_ids": [
+        "gn2-00001",
+        "gn2-00002",
+        "gn2-00003"
+      ],
       "vocab_ids": [
-        "Perawatan rutin diperlukan untuk mempertahankan stabilitas sistem.",
-        "vg-n2-00060",
-        "Masalah ini harus diselesaikan sesegera mungkin.",
-        "Konflik diselesaikan melalui perundingan."
+        "vg-n2-00086",
+        "vg-n2-00087",
+        "vg-n2-00088",
+        "vg-n2-00089"
       ],
       "lessons": [
         {
@@ -2640,29 +3016,37 @@ window.curriculumBook_try = {
           "title_id": "Negosiasi Bisnis & Diplomasi Kerja (Eksplorasi Materi & Pola)",
           "title_jp": "第2章: ビジネスと交渉（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku TRY! JLPT Communicative (N5–N1) pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa TRY! JLPT Communicative (N5–N1) bab ini dalam konteks nyata.",
-          "grammar_ids": [],
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Negosiasi Bisnis & Diplomasi Kerja.",
+          "grammar_ids": [
+            "gn2-00001",
+            "gn2-00002",
+            "gn2-00003"
+          ],
           "vocab_ids": [
-            "Perawatan rutin diperlukan untuk mempertahankan stabilitas sistem.",
-            "vg-n2-00060",
-            "Masalah ini harus diselesaikan sesegera mungkin.",
-            "Konflik diselesaikan melalui perundingan."
+            "vg-n2-00086",
+            "vg-n2-00087",
+            "vg-n2-00088",
+            "vg-n2-00089"
           ],
           "pedagogical_framework": {
             "what": {
               "summary": "Silabus resmi TRY! JLPT Communicative (N5–N1) bab 2.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
-              "targetPatterns": [],
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Negosiasi Bisnis & Diplomasi Kerja.",
+              "targetPatterns": [
+                "gn2-00001",
+                "gn2-00002",
+                "gn2-00003"
+              ],
               "coreVocabSample": [
-                "Perawatan rutin diperlukan untuk mempertahankan stabilitas sistem.",
-                "vg-n2-00060",
-                "Masalah ini harus diselesaikan sesegera mungkin.",
-                "Konflik diselesaikan melalui perundingan."
+                "vg-n2-00086",
+                "vg-n2-00087",
+                "vg-n2-00088",
+                "vg-n2-00089"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku TRY! JLPT Communicative (N5–N1). Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 2 TRY! JLPT Communicative (N5–N1).",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Negosiasi Bisnis & Diplomasi Kerja.",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -2703,19 +3087,23 @@ window.curriculumBook_try = {
     {
       "unit_number": 33,
       "id": "unit-curriculum-book-try-33",
-      "level": "n4",
+      "level": "n2",
       "pt_stage": 4,
       "title_id": "TRY N2: Diskusi Isu Sosial & Opini Publik",
       "title_jp": "第3章: 社会問題と議論",
       "theme": "TRY N2",
       "icon": "🎯",
-      "can_do_summary": "Memahami silabus TRY N2 Bab 3 secara komprehensif.",
-      "grammar_ids": [],
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Diskusi Isu Sosial & Opini Publik.",
+      "grammar_ids": [
+        "gn2-00001",
+        "gn2-00002",
+        "gn2-00003"
+      ],
       "vocab_ids": [
-        "Menafikan masa lalumu sendiri tidak akan menyelesaikan apa pun.",
-        "Merespons pertanyaan wartawan, penanggung jawab menyangkal keterlibatannya.",
-        "vg-n2-00069",
-        "Dia belajar untuk menerima dan membenarkan perasaannya sendiri."
+        "vg-n2-00196",
+        "vg-n2-00197",
+        "vg-n2-00198",
+        "vg-n2-00199"
       ],
       "lessons": [
         {
@@ -2724,29 +3112,37 @@ window.curriculumBook_try = {
           "title_id": "Diskusi Isu Sosial & Opini Publik (Eksplorasi Materi & Pola)",
           "title_jp": "第3章: 社会問題と議論（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku TRY! JLPT Communicative (N5–N1) pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa TRY! JLPT Communicative (N5–N1) bab ini dalam konteks nyata.",
-          "grammar_ids": [],
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Diskusi Isu Sosial & Opini Publik.",
+          "grammar_ids": [
+            "gn2-00001",
+            "gn2-00002",
+            "gn2-00003"
+          ],
           "vocab_ids": [
-            "Menafikan masa lalumu sendiri tidak akan menyelesaikan apa pun.",
-            "Merespons pertanyaan wartawan, penanggung jawab menyangkal keterlibatannya.",
-            "vg-n2-00069",
-            "Dia belajar untuk menerima dan membenarkan perasaannya sendiri."
+            "vg-n2-00196",
+            "vg-n2-00197",
+            "vg-n2-00198",
+            "vg-n2-00199"
           ],
           "pedagogical_framework": {
             "what": {
               "summary": "Silabus resmi TRY! JLPT Communicative (N5–N1) bab 3.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
-              "targetPatterns": [],
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Diskusi Isu Sosial & Opini Publik.",
+              "targetPatterns": [
+                "gn2-00001",
+                "gn2-00002",
+                "gn2-00003"
+              ],
               "coreVocabSample": [
-                "Menafikan masa lalumu sendiri tidak akan menyelesaikan apa pun.",
-                "Merespons pertanyaan wartawan, penanggung jawab menyangkal keterlibatannya.",
-                "vg-n2-00069",
-                "Dia belajar untuk menerima dan membenarkan perasaannya sendiri."
+                "vg-n2-00196",
+                "vg-n2-00197",
+                "vg-n2-00198",
+                "vg-n2-00199"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku TRY! JLPT Communicative (N5–N1). Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 3 TRY! JLPT Communicative (N5–N1).",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Diskusi Isu Sosial & Opini Publik.",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -2787,19 +3183,23 @@ window.curriculumBook_try = {
     {
       "unit_number": 34,
       "id": "unit-curriculum-book-try-34",
-      "level": "n4",
+      "level": "n2",
       "pt_stage": 5,
       "title_id": "TRY N2: Disrupsi Sains & Inovasi Teknologi",
       "title_jp": "第4章: 科学とテクノロジー",
       "theme": "TRY N2",
       "icon": "🎯",
-      "can_do_summary": "Memahami silabus TRY N2 Bab 4 secara komprehensif.",
-      "grammar_ids": [],
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Disrupsi Sains & Inovasi Teknologi.",
+      "grammar_ids": [
+        "gn2-00001",
+        "gn2-00002",
+        "gn2-00003"
+      ],
       "vocab_ids": [
-        "Karena kinerja yang buruk, diputuskan untuk mengecilkan skala bisnis.",
-        "Tolong perkecil gambar ini lalu cetak.",
-        "Pemerintah meluncurkan kebijakan untuk memperkecil kesenjangan.",
-        "vg-n2-00078"
+        "vg-n2-00282",
+        "vg-n2-00283",
+        "vg-n2-00284",
+        "vg-n2-00285"
       ],
       "lessons": [
         {
@@ -2808,29 +3208,37 @@ window.curriculumBook_try = {
           "title_id": "Disrupsi Sains & Inovasi Teknologi (Eksplorasi Materi & Pola)",
           "title_jp": "第4章: 科学とテクノロジー（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku TRY! JLPT Communicative (N5–N1) pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa TRY! JLPT Communicative (N5–N1) bab ini dalam konteks nyata.",
-          "grammar_ids": [],
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Disrupsi Sains & Inovasi Teknologi.",
+          "grammar_ids": [
+            "gn2-00001",
+            "gn2-00002",
+            "gn2-00003"
+          ],
           "vocab_ids": [
-            "Karena kinerja yang buruk, diputuskan untuk mengecilkan skala bisnis.",
-            "Tolong perkecil gambar ini lalu cetak.",
-            "Pemerintah meluncurkan kebijakan untuk memperkecil kesenjangan.",
-            "vg-n2-00078"
+            "vg-n2-00282",
+            "vg-n2-00283",
+            "vg-n2-00284",
+            "vg-n2-00285"
           ],
           "pedagogical_framework": {
             "what": {
               "summary": "Silabus resmi TRY! JLPT Communicative (N5–N1) bab 4.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
-              "targetPatterns": [],
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Disrupsi Sains & Inovasi Teknologi.",
+              "targetPatterns": [
+                "gn2-00001",
+                "gn2-00002",
+                "gn2-00003"
+              ],
               "coreVocabSample": [
-                "Karena kinerja yang buruk, diputuskan untuk mengecilkan skala bisnis.",
-                "Tolong perkecil gambar ini lalu cetak.",
-                "Pemerintah meluncurkan kebijakan untuk memperkecil kesenjangan.",
-                "vg-n2-00078"
+                "vg-n2-00282",
+                "vg-n2-00283",
+                "vg-n2-00284",
+                "vg-n2-00285"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku TRY! JLPT Communicative (N5–N1). Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 4 TRY! JLPT Communicative (N5–N1).",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Disrupsi Sains & Inovasi Teknologi.",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -2871,19 +3279,23 @@ window.curriculumBook_try = {
     {
       "unit_number": 35,
       "id": "unit-curriculum-book-try-35",
-      "level": "n4",
+      "level": "n2",
       "pt_stage": 6,
       "title_id": "TRY N2: Pelestarian Ekologi & Energi Terbarukan",
       "title_jp": "第5章: 環境と持続可能性",
       "theme": "TRY N2",
       "icon": "🎯",
-      "can_do_summary": "Memahami silabus TRY N2 Bab 5 secara komprehensif.",
-      "grammar_ids": [],
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Pelestarian Ekologi & Energi Terbarukan.",
+      "grammar_ids": [
+        "gn2-00001",
+        "gn2-00002",
+        "gn2-00003"
+      ],
       "vocab_ids": [
-        "vg-n2-00086",
-        "Dengan susah payah, berhasil terhindar dari bencana besar.",
-        "Tidak bisa lolos dari tanggung jawab.",
-        "Dengan mengambil langkah yang tepat, situasi terburuk berhasil dihindari."
+        "vg-n2-00349",
+        "vg-n2-00350",
+        "vg-n2-00356",
+        "vg-n2-00359"
       ],
       "lessons": [
         {
@@ -2892,29 +3304,37 @@ window.curriculumBook_try = {
           "title_id": "Pelestarian Ekologi & Energi Terbarukan (Eksplorasi Materi & Pola)",
           "title_jp": "第5章: 環境と持続可能性（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku TRY! JLPT Communicative (N5–N1) pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa TRY! JLPT Communicative (N5–N1) bab ini dalam konteks nyata.",
-          "grammar_ids": [],
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Pelestarian Ekologi & Energi Terbarukan.",
+          "grammar_ids": [
+            "gn2-00001",
+            "gn2-00002",
+            "gn2-00003"
+          ],
           "vocab_ids": [
-            "vg-n2-00086",
-            "Dengan susah payah, berhasil terhindar dari bencana besar.",
-            "Tidak bisa lolos dari tanggung jawab.",
-            "Dengan mengambil langkah yang tepat, situasi terburuk berhasil dihindari."
+            "vg-n2-00349",
+            "vg-n2-00350",
+            "vg-n2-00356",
+            "vg-n2-00359"
           ],
           "pedagogical_framework": {
             "what": {
               "summary": "Silabus resmi TRY! JLPT Communicative (N5–N1) bab 5.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
-              "targetPatterns": [],
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Pelestarian Ekologi & Energi Terbarukan.",
+              "targetPatterns": [
+                "gn2-00001",
+                "gn2-00002",
+                "gn2-00003"
+              ],
               "coreVocabSample": [
-                "vg-n2-00086",
-                "Dengan susah payah, berhasil terhindar dari bencana besar.",
-                "Tidak bisa lolos dari tanggung jawab.",
-                "Dengan mengambil langkah yang tepat, situasi terburuk berhasil dihindari."
+                "vg-n2-00349",
+                "vg-n2-00350",
+                "vg-n2-00356",
+                "vg-n2-00359"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku TRY! JLPT Communicative (N5–N1). Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 5 TRY! JLPT Communicative (N5–N1).",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Pelestarian Ekologi & Energi Terbarukan.",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -2955,19 +3375,23 @@ window.curriculumBook_try = {
     {
       "unit_number": 36,
       "id": "unit-curriculum-book-try-36",
-      "level": "n4",
+      "level": "n2",
       "pt_stage": 1,
       "title_id": "TRY N2: Pewarisan Aset Budaya & Kearifan Lokal",
       "title_jp": "第6章: 文化と伝統の継承",
       "theme": "TRY N2",
       "icon": "🎯",
-      "can_do_summary": "Memahami silabus TRY N2 Bab 6 secara komprehensif.",
-      "grammar_ids": [],
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Pewarisan Aset Budaya & Kearifan Lokal.",
+      "grammar_ids": [
+        "gn2-00001",
+        "gn2-00002",
+        "gn2-00003"
+      ],
       "vocab_ids": [
-        "Ketika konsentrasi tidak bisa bertahan, istirahat diperlukan.",
-        "vg-n2-00121",
-        "Tolong utamakan keselamatan di atas segalanya.",
-        "Tugas dikerjakan dengan mengurutkan prioritas."
+        "vg-n2-00484",
+        "vg-n2-00485",
+        "vg-n2-00487",
+        "vg-n2-00488"
       ],
       "lessons": [
         {
@@ -2976,29 +3400,37 @@ window.curriculumBook_try = {
           "title_id": "Pewarisan Aset Budaya & Kearifan Lokal (Eksplorasi Materi & Pola)",
           "title_jp": "第6章: 文化と伝統の継承（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku TRY! JLPT Communicative (N5–N1) pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa TRY! JLPT Communicative (N5–N1) bab ini dalam konteks nyata.",
-          "grammar_ids": [],
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Pewarisan Aset Budaya & Kearifan Lokal.",
+          "grammar_ids": [
+            "gn2-00001",
+            "gn2-00002",
+            "gn2-00003"
+          ],
           "vocab_ids": [
-            "Ketika konsentrasi tidak bisa bertahan, istirahat diperlukan.",
-            "vg-n2-00121",
-            "Tolong utamakan keselamatan di atas segalanya.",
-            "Tugas dikerjakan dengan mengurutkan prioritas."
+            "vg-n2-00484",
+            "vg-n2-00485",
+            "vg-n2-00487",
+            "vg-n2-00488"
           ],
           "pedagogical_framework": {
             "what": {
               "summary": "Silabus resmi TRY! JLPT Communicative (N5–N1) bab 6.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
-              "targetPatterns": [],
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Pewarisan Aset Budaya & Kearifan Lokal.",
+              "targetPatterns": [
+                "gn2-00001",
+                "gn2-00002",
+                "gn2-00003"
+              ],
               "coreVocabSample": [
-                "Ketika konsentrasi tidak bisa bertahan, istirahat diperlukan.",
-                "vg-n2-00121",
-                "Tolong utamakan keselamatan di atas segalanya.",
-                "Tugas dikerjakan dengan mengurutkan prioritas."
+                "vg-n2-00484",
+                "vg-n2-00485",
+                "vg-n2-00487",
+                "vg-n2-00488"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku TRY! JLPT Communicative (N5–N1). Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 6 TRY! JLPT Communicative (N5–N1).",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Pewarisan Aset Budaya & Kearifan Lokal.",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -3039,19 +3471,23 @@ window.curriculumBook_try = {
     {
       "unit_number": 37,
       "id": "unit-curriculum-book-try-37",
-      "level": "n4",
+      "level": "n2",
       "pt_stage": 2,
       "title_id": "TRY N2: Dinamika Psikologi & Karakter Manusia",
       "title_jp": "第7章: 心理と人間行動",
       "theme": "TRY N2",
       "icon": "🎯",
-      "can_do_summary": "Memahami silabus TRY N2 Bab 7 secara komprehensif.",
-      "grammar_ids": [],
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Dinamika Psikologi & Karakter Manusia.",
+      "grammar_ids": [
+        "gn2-00001",
+        "gn2-00002",
+        "gn2-00003"
+      ],
       "vocab_ids": [
-        "Negosiasi menemui hambatan karena pertentangan kepentingan.",
-        "Upaya diplomatik terus dilakukan untuk menyelesaikan konflik dua negara.",
-        "vg-n2-00177",
-        "Kerja sama internasional sangat penting."
+        "vg-n2-00554",
+        "vg-n2-00555",
+        "vg-n2-00556",
+        "vg-n2-00557"
       ],
       "lessons": [
         {
@@ -3060,29 +3496,37 @@ window.curriculumBook_try = {
           "title_id": "Dinamika Psikologi & Karakter Manusia (Eksplorasi Materi & Pola)",
           "title_jp": "第7章: 心理と人間行動（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku TRY! JLPT Communicative (N5–N1) pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa TRY! JLPT Communicative (N5–N1) bab ini dalam konteks nyata.",
-          "grammar_ids": [],
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Dinamika Psikologi & Karakter Manusia.",
+          "grammar_ids": [
+            "gn2-00001",
+            "gn2-00002",
+            "gn2-00003"
+          ],
           "vocab_ids": [
-            "Negosiasi menemui hambatan karena pertentangan kepentingan.",
-            "Upaya diplomatik terus dilakukan untuk menyelesaikan konflik dua negara.",
-            "vg-n2-00177",
-            "Kerja sama internasional sangat penting."
+            "vg-n2-00554",
+            "vg-n2-00555",
+            "vg-n2-00556",
+            "vg-n2-00557"
           ],
           "pedagogical_framework": {
             "what": {
               "summary": "Silabus resmi TRY! JLPT Communicative (N5–N1) bab 7.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
-              "targetPatterns": [],
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Dinamika Psikologi & Karakter Manusia.",
+              "targetPatterns": [
+                "gn2-00001",
+                "gn2-00002",
+                "gn2-00003"
+              ],
               "coreVocabSample": [
-                "Negosiasi menemui hambatan karena pertentangan kepentingan.",
-                "Upaya diplomatik terus dilakukan untuk menyelesaikan konflik dua negara.",
-                "vg-n2-00177",
-                "Kerja sama internasional sangat penting."
+                "vg-n2-00554",
+                "vg-n2-00555",
+                "vg-n2-00556",
+                "vg-n2-00557"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku TRY! JLPT Communicative (N5–N1). Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 7 TRY! JLPT Communicative (N5–N1).",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Dinamika Psikologi & Karakter Manusia.",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -3123,19 +3567,23 @@ window.curriculumBook_try = {
     {
       "unit_number": 38,
       "id": "unit-curriculum-book-try-38",
-      "level": "n4",
+      "level": "n2",
       "pt_stage": 3,
       "title_id": "TRY N2: Masyarakat Informasi & Literasi Digital",
       "title_jp": "第8章: メディアと情報社会",
       "theme": "TRY N2",
       "icon": "🎯",
-      "can_do_summary": "Memahami silabus TRY N2 Bab 8 secara komprehensif.",
-      "grammar_ids": [],
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Masyarakat Informasi & Literasi Digital.",
+      "grammar_ids": [
+        "gn2-00001",
+        "gn2-00002",
+        "gn2-00003"
+      ],
       "vocab_ids": [
-        "Kedua negara mencapai kesepakatan mengenai perjanjian perdagangan.",
-        "Setelah negosiasi panjang, akhirnya kesepakatan tercapai.",
-        "Diperlukan persetujuan dari semua pihak yang terlibat.",
-        "vg-n2-00187"
+        "vg-n2-00630",
+        "vg-n2-00631",
+        "vg-n2-00632",
+        "vg-n2-00633"
       ],
       "lessons": [
         {
@@ -3144,29 +3592,37 @@ window.curriculumBook_try = {
           "title_id": "Masyarakat Informasi & Literasi Digital (Eksplorasi Materi & Pola)",
           "title_jp": "第8章: メディアと情報社会（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku TRY! JLPT Communicative (N5–N1) pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa TRY! JLPT Communicative (N5–N1) bab ini dalam konteks nyata.",
-          "grammar_ids": [],
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Masyarakat Informasi & Literasi Digital.",
+          "grammar_ids": [
+            "gn2-00001",
+            "gn2-00002",
+            "gn2-00003"
+          ],
           "vocab_ids": [
-            "Kedua negara mencapai kesepakatan mengenai perjanjian perdagangan.",
-            "Setelah negosiasi panjang, akhirnya kesepakatan tercapai.",
-            "Diperlukan persetujuan dari semua pihak yang terlibat.",
-            "vg-n2-00187"
+            "vg-n2-00630",
+            "vg-n2-00631",
+            "vg-n2-00632",
+            "vg-n2-00633"
           ],
           "pedagogical_framework": {
             "what": {
               "summary": "Silabus resmi TRY! JLPT Communicative (N5–N1) bab 8.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
-              "targetPatterns": [],
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Masyarakat Informasi & Literasi Digital.",
+              "targetPatterns": [
+                "gn2-00001",
+                "gn2-00002",
+                "gn2-00003"
+              ],
               "coreVocabSample": [
-                "Kedua negara mencapai kesepakatan mengenai perjanjian perdagangan.",
-                "Setelah negosiasi panjang, akhirnya kesepakatan tercapai.",
-                "Diperlukan persetujuan dari semua pihak yang terlibat.",
-                "vg-n2-00187"
+                "vg-n2-00630",
+                "vg-n2-00631",
+                "vg-n2-00632",
+                "vg-n2-00633"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku TRY! JLPT Communicative (N5–N1). Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 8 TRY! JLPT Communicative (N5–N1).",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Masyarakat Informasi & Literasi Digital.",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -3207,19 +3663,23 @@ window.curriculumBook_try = {
     {
       "unit_number": 39,
       "id": "unit-curriculum-book-try-39",
-      "level": "n4",
+      "level": "n2",
       "pt_stage": 4,
       "title_id": "TRY N2: Makroekonomi & Perilaku Konsumen",
       "title_jp": "第9章: 経済と消費動向",
       "theme": "TRY N2",
       "icon": "🎯",
-      "can_do_summary": "Memahami silabus TRY N2 Bab 9 secara komprehensif.",
-      "grammar_ids": [],
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Makroekonomi & Perilaku Konsumen.",
+      "grammar_ids": [
+        "gn2-00001",
+        "gn2-00002",
+        "gn2-00003"
+      ],
       "vocab_ids": [
-        "vg-n2-00197",
-        "Keamanan bandara perlu diperketat lebih lanjut.",
-        "Pemusatan latihan diadakan untuk memperkuat kerja tim.",
-        "vg-n2-00198"
+        "vg-n2-00707",
+        "vg-n2-00708",
+        "vg-n2-00711",
+        "vg-n2-00719"
       ],
       "lessons": [
         {
@@ -3228,29 +3688,37 @@ window.curriculumBook_try = {
           "title_id": "Makroekonomi & Perilaku Konsumen (Eksplorasi Materi & Pola)",
           "title_jp": "第9章: 経済と消費動向（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku TRY! JLPT Communicative (N5–N1) pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa TRY! JLPT Communicative (N5–N1) bab ini dalam konteks nyata.",
-          "grammar_ids": [],
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Makroekonomi & Perilaku Konsumen.",
+          "grammar_ids": [
+            "gn2-00001",
+            "gn2-00002",
+            "gn2-00003"
+          ],
           "vocab_ids": [
-            "vg-n2-00197",
-            "Keamanan bandara perlu diperketat lebih lanjut.",
-            "Pemusatan latihan diadakan untuk memperkuat kerja tim.",
-            "vg-n2-00198"
+            "vg-n2-00707",
+            "vg-n2-00708",
+            "vg-n2-00711",
+            "vg-n2-00719"
           ],
           "pedagogical_framework": {
             "what": {
               "summary": "Silabus resmi TRY! JLPT Communicative (N5–N1) bab 9.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
-              "targetPatterns": [],
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Makroekonomi & Perilaku Konsumen.",
+              "targetPatterns": [
+                "gn2-00001",
+                "gn2-00002",
+                "gn2-00003"
+              ],
               "coreVocabSample": [
-                "vg-n2-00197",
-                "Keamanan bandara perlu diperketat lebih lanjut.",
-                "Pemusatan latihan diadakan untuk memperkuat kerja tim.",
-                "vg-n2-00198"
+                "vg-n2-00707",
+                "vg-n2-00708",
+                "vg-n2-00711",
+                "vg-n2-00719"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku TRY! JLPT Communicative (N5–N1). Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 9 TRY! JLPT Communicative (N5–N1).",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Makroekonomi & Perilaku Konsumen.",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -3291,19 +3759,23 @@ window.curriculumBook_try = {
     {
       "unit_number": 40,
       "id": "unit-curriculum-book-try-40",
-      "level": "n4",
+      "level": "n2",
       "pt_stage": 5,
       "title_id": "TRY N2: Hikmah Sejarah & Refleksi Zaman",
       "title_jp": "第10章: 歴史と教訓",
       "theme": "TRY N2",
       "icon": "🎯",
-      "can_do_summary": "Memahami silabus TRY N2 Bab 10 secara komprehensif.",
-      "grammar_ids": [],
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Hikmah Sejarah & Refleksi Zaman.",
+      "grammar_ids": [
+        "gn2-00001",
+        "gn2-00002",
+        "gn2-00003"
+      ],
       "vocab_ids": [
-        "Kata-kata atasan mendorong pertumbuhan saya.",
-        "vg-n2-00209",
-        "Prosedur birokrasi menghambat inovasi.",
-        "Hujan mengganggu jalannya pertandingan."
+        "vg-n2-00807",
+        "vg-n2-00812",
+        "vg-n2-00818",
+        "vg-n2-00820"
       ],
       "lessons": [
         {
@@ -3312,29 +3784,37 @@ window.curriculumBook_try = {
           "title_id": "Hikmah Sejarah & Refleksi Zaman (Eksplorasi Materi & Pola)",
           "title_jp": "第10章: 歴史と教訓（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku TRY! JLPT Communicative (N5–N1) pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa TRY! JLPT Communicative (N5–N1) bab ini dalam konteks nyata.",
-          "grammar_ids": [],
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Hikmah Sejarah & Refleksi Zaman.",
+          "grammar_ids": [
+            "gn2-00001",
+            "gn2-00002",
+            "gn2-00003"
+          ],
           "vocab_ids": [
-            "Kata-kata atasan mendorong pertumbuhan saya.",
-            "vg-n2-00209",
-            "Prosedur birokrasi menghambat inovasi.",
-            "Hujan mengganggu jalannya pertandingan."
+            "vg-n2-00807",
+            "vg-n2-00812",
+            "vg-n2-00818",
+            "vg-n2-00820"
           ],
           "pedagogical_framework": {
             "what": {
               "summary": "Silabus resmi TRY! JLPT Communicative (N5–N1) bab 10.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
-              "targetPatterns": [],
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Hikmah Sejarah & Refleksi Zaman.",
+              "targetPatterns": [
+                "gn2-00001",
+                "gn2-00002",
+                "gn2-00003"
+              ],
               "coreVocabSample": [
-                "Kata-kata atasan mendorong pertumbuhan saya.",
-                "vg-n2-00209",
-                "Prosedur birokrasi menghambat inovasi.",
-                "Hujan mengganggu jalannya pertandingan."
+                "vg-n2-00807",
+                "vg-n2-00812",
+                "vg-n2-00818",
+                "vg-n2-00820"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku TRY! JLPT Communicative (N5–N1). Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 10 TRY! JLPT Communicative (N5–N1).",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Hikmah Sejarah & Refleksi Zaman.",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -3375,19 +3855,23 @@ window.curriculumBook_try = {
     {
       "unit_number": 41,
       "id": "unit-curriculum-book-try-41",
-      "level": "n4",
+      "level": "n2",
       "pt_stage": 6,
       "title_id": "TRY N2: Sistem Medis & Bioetika Kehidupan",
       "title_jp": "第11章: 医療と生命倫理",
       "theme": "TRY N2",
       "icon": "🎯",
-      "can_do_summary": "Memahami silabus TRY N2 Bab 11 secara komprehensif.",
-      "grammar_ids": [],
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Sistem Medis & Bioetika Kehidupan.",
+      "grammar_ids": [
+        "gn2-00001",
+        "gn2-00002",
+        "gn2-00003"
+      ],
       "vocab_ids": [
-        "Dia memikul peran sentral dalam proyek ini.",
-        "Kaum muda adalah generasi yang memikul masa depan Jepang.",
-        "vg-n2-00226",
-        "Setelah persidangan yang panjang, akhirnya vonis dijatuhkan."
+        "vg-n2-00885",
+        "vg-n2-00886",
+        "vg-n2-00887",
+        "vg-n2-00889"
       ],
       "lessons": [
         {
@@ -3396,29 +3880,37 @@ window.curriculumBook_try = {
           "title_id": "Sistem Medis & Bioetika Kehidupan (Eksplorasi Materi & Pola)",
           "title_jp": "第11章: 医療と生命倫理（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku TRY! JLPT Communicative (N5–N1) pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa TRY! JLPT Communicative (N5–N1) bab ini dalam konteks nyata.",
-          "grammar_ids": [],
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Sistem Medis & Bioetika Kehidupan.",
+          "grammar_ids": [
+            "gn2-00001",
+            "gn2-00002",
+            "gn2-00003"
+          ],
           "vocab_ids": [
-            "Dia memikul peran sentral dalam proyek ini.",
-            "Kaum muda adalah generasi yang memikul masa depan Jepang.",
-            "vg-n2-00226",
-            "Setelah persidangan yang panjang, akhirnya vonis dijatuhkan."
+            "vg-n2-00885",
+            "vg-n2-00886",
+            "vg-n2-00887",
+            "vg-n2-00889"
           ],
           "pedagogical_framework": {
             "what": {
               "summary": "Silabus resmi TRY! JLPT Communicative (N5–N1) bab 11.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
-              "targetPatterns": [],
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Sistem Medis & Bioetika Kehidupan.",
+              "targetPatterns": [
+                "gn2-00001",
+                "gn2-00002",
+                "gn2-00003"
+              ],
               "coreVocabSample": [
-                "Dia memikul peran sentral dalam proyek ini.",
-                "Kaum muda adalah generasi yang memikul masa depan Jepang.",
-                "vg-n2-00226",
-                "Setelah persidangan yang panjang, akhirnya vonis dijatuhkan."
+                "vg-n2-00885",
+                "vg-n2-00886",
+                "vg-n2-00887",
+                "vg-n2-00889"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku TRY! JLPT Communicative (N5–N1). Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 11 TRY! JLPT Communicative (N5–N1).",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Sistem Medis & Bioetika Kehidupan.",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -3459,19 +3951,23 @@ window.curriculumBook_try = {
     {
       "unit_number": 42,
       "id": "unit-curriculum-book-try-42",
-      "level": "n4",
+      "level": "n2",
       "pt_stage": 1,
       "title_id": "TRY N2: Visi Masa Depan Peradaban Manusia",
       "title_jp": "第12章: 未来への展望",
       "theme": "TRY N2",
       "icon": "🎯",
-      "can_do_summary": "Memahami silabus TRY N2 Bab 12 secara komprehensif.",
-      "grammar_ids": [],
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Visi Masa Depan Peradaban Manusia.",
+      "grammar_ids": [
+        "gn2-00001",
+        "gn2-00002",
+        "gn2-00003"
+      ],
       "vocab_ids": [
-        "Tolong pahami situasi lapangan secara menyeluruh sebelum melapor.",
-        "Butuh waktu untuk memahami gambaran keseluruhannya.",
-        "Seorang pemimpin harus selalu menguasai pergerakan timnya.",
-        "vg-n2-00283"
+        "vg-n2-01003",
+        "vg-n2-01005",
+        "vg-n2-01006",
+        "vg-n2-01007"
       ],
       "lessons": [
         {
@@ -3480,29 +3976,37 @@ window.curriculumBook_try = {
           "title_id": "Visi Masa Depan Peradaban Manusia (Eksplorasi Materi & Pola)",
           "title_jp": "第12章: 未来への展望（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku TRY! JLPT Communicative (N5–N1) pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa TRY! JLPT Communicative (N5–N1) bab ini dalam konteks nyata.",
-          "grammar_ids": [],
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Visi Masa Depan Peradaban Manusia.",
+          "grammar_ids": [
+            "gn2-00001",
+            "gn2-00002",
+            "gn2-00003"
+          ],
           "vocab_ids": [
-            "Tolong pahami situasi lapangan secara menyeluruh sebelum melapor.",
-            "Butuh waktu untuk memahami gambaran keseluruhannya.",
-            "Seorang pemimpin harus selalu menguasai pergerakan timnya.",
-            "vg-n2-00283"
+            "vg-n2-01003",
+            "vg-n2-01005",
+            "vg-n2-01006",
+            "vg-n2-01007"
           ],
           "pedagogical_framework": {
             "what": {
               "summary": "Silabus resmi TRY! JLPT Communicative (N5–N1) bab 12.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
-              "targetPatterns": [],
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Visi Masa Depan Peradaban Manusia.",
+              "targetPatterns": [
+                "gn2-00001",
+                "gn2-00002",
+                "gn2-00003"
+              ],
               "coreVocabSample": [
-                "Tolong pahami situasi lapangan secara menyeluruh sebelum melapor.",
-                "Butuh waktu untuk memahami gambaran keseluruhannya.",
-                "Seorang pemimpin harus selalu menguasai pergerakan timnya.",
-                "vg-n2-00283"
+                "vg-n2-01003",
+                "vg-n2-01005",
+                "vg-n2-01006",
+                "vg-n2-01007"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku TRY! JLPT Communicative (N5–N1). Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 12 TRY! JLPT Communicative (N5–N1).",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Visi Masa Depan Peradaban Manusia.",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -3543,19 +4047,23 @@ window.curriculumBook_try = {
     {
       "unit_number": 43,
       "id": "unit-curriculum-book-try-43",
-      "level": "n4",
+      "level": "n1",
       "pt_stage": 2,
       "title_id": "TRY N1: Dinamika Mendalam Masyarakat Kontemporer",
       "title_jp": "第1章: 現代社会の深層",
       "theme": "TRY N1",
       "icon": "🎯",
-      "can_do_summary": "Memahami silabus TRY N1 Bab 1 secara komprehensif.",
-      "grammar_ids": [],
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Dinamika Mendalam Masyarakat Kontemporer.",
+      "grammar_ids": [
+        "gn1-00001",
+        "gn1-00002",
+        "gn1-00003"
+      ],
       "vocab_ids": [
         "vg-n1-00029",
-        "Apakah percaya pada keberadaan Tuhan adalah urusan pribadi.",
-        "Baginya, dia adalah sosok yang tidak tergantikan bagiku.",
-        "Kita harus mengakui bahwa masalah seperti itu memang ada."
+        "vg-n1-00030",
+        "vg-n1-00031",
+        "vg-n1-00032"
       ],
       "lessons": [
         {
@@ -3564,29 +4072,37 @@ window.curriculumBook_try = {
           "title_id": "Dinamika Mendalam Masyarakat Kontemporer (Eksplorasi Materi & Pola)",
           "title_jp": "第1章: 現代社会の深層（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku TRY! JLPT Communicative (N5–N1) pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa TRY! JLPT Communicative (N5–N1) bab ini dalam konteks nyata.",
-          "grammar_ids": [],
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Dinamika Mendalam Masyarakat Kontemporer.",
+          "grammar_ids": [
+            "gn1-00001",
+            "gn1-00002",
+            "gn1-00003"
+          ],
           "vocab_ids": [
             "vg-n1-00029",
-            "Apakah percaya pada keberadaan Tuhan adalah urusan pribadi.",
-            "Baginya, dia adalah sosok yang tidak tergantikan bagiku.",
-            "Kita harus mengakui bahwa masalah seperti itu memang ada."
+            "vg-n1-00030",
+            "vg-n1-00031",
+            "vg-n1-00032"
           ],
           "pedagogical_framework": {
             "what": {
               "summary": "Silabus resmi TRY! JLPT Communicative (N5–N1) bab 1.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
-              "targetPatterns": [],
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Dinamika Mendalam Masyarakat Kontemporer.",
+              "targetPatterns": [
+                "gn1-00001",
+                "gn1-00002",
+                "gn1-00003"
+              ],
               "coreVocabSample": [
                 "vg-n1-00029",
-                "Apakah percaya pada keberadaan Tuhan adalah urusan pribadi.",
-                "Baginya, dia adalah sosok yang tidak tergantikan bagiku.",
-                "Kita harus mengakui bahwa masalah seperti itu memang ada."
+                "vg-n1-00030",
+                "vg-n1-00031",
+                "vg-n1-00032"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku TRY! JLPT Communicative (N5–N1). Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 1 TRY! JLPT Communicative (N5–N1).",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Dinamika Mendalam Masyarakat Kontemporer.",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -3627,19 +4143,23 @@ window.curriculumBook_try = {
     {
       "unit_number": 44,
       "id": "unit-curriculum-book-try-44",
-      "level": "n4",
+      "level": "n1",
       "pt_stage": 3,
       "title_id": "TRY N1: Filsafat Etika dalam Pengembangan Sains",
       "title_jp": "第2章: 科学知と倫理",
       "theme": "TRY N1",
       "icon": "🎯",
-      "can_do_summary": "Memahami silabus TRY N1 Bab 2 secara komprehensif.",
-      "grammar_ids": [],
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Filsafat Etika dalam Pengembangan Sains.",
+      "grammar_ids": [
+        "gn1-00001",
+        "gn1-00002",
+        "gn1-00003"
+      ],
       "vocab_ids": [
-        "vg-n1-00055",
-        "Menekan perasaan tidak selalu merupakan hal yang benar.",
-        "Obat ini memiliki fungsi untuk menekan peradangan.",
-        "Mengendalikan kenaikan harga adalah tantangan mendesak pemerintah."
+        "vg-n1-00088",
+        "vg-n1-00089",
+        "vg-n1-00090",
+        "vg-n1-00091"
       ],
       "lessons": [
         {
@@ -3648,29 +4168,37 @@ window.curriculumBook_try = {
           "title_id": "Filsafat Etika dalam Pengembangan Sains (Eksplorasi Materi & Pola)",
           "title_jp": "第2章: 科学知と倫理（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku TRY! JLPT Communicative (N5–N1) pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa TRY! JLPT Communicative (N5–N1) bab ini dalam konteks nyata.",
-          "grammar_ids": [],
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Filsafat Etika dalam Pengembangan Sains.",
+          "grammar_ids": [
+            "gn1-00001",
+            "gn1-00002",
+            "gn1-00003"
+          ],
           "vocab_ids": [
-            "vg-n1-00055",
-            "Menekan perasaan tidak selalu merupakan hal yang benar.",
-            "Obat ini memiliki fungsi untuk menekan peradangan.",
-            "Mengendalikan kenaikan harga adalah tantangan mendesak pemerintah."
+            "vg-n1-00088",
+            "vg-n1-00089",
+            "vg-n1-00090",
+            "vg-n1-00091"
           ],
           "pedagogical_framework": {
             "what": {
               "summary": "Silabus resmi TRY! JLPT Communicative (N5–N1) bab 2.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
-              "targetPatterns": [],
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Filsafat Etika dalam Pengembangan Sains.",
+              "targetPatterns": [
+                "gn1-00001",
+                "gn1-00002",
+                "gn1-00003"
+              ],
               "coreVocabSample": [
-                "vg-n1-00055",
-                "Menekan perasaan tidak selalu merupakan hal yang benar.",
-                "Obat ini memiliki fungsi untuk menekan peradangan.",
-                "Mengendalikan kenaikan harga adalah tantangan mendesak pemerintah."
+                "vg-n1-00088",
+                "vg-n1-00089",
+                "vg-n1-00090",
+                "vg-n1-00091"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku TRY! JLPT Communicative (N5–N1). Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 2 TRY! JLPT Communicative (N5–N1).",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Filsafat Etika dalam Pengembangan Sains.",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -3711,19 +4239,23 @@ window.curriculumBook_try = {
     {
       "unit_number": 45,
       "id": "unit-curriculum-book-try-45",
-      "level": "n4",
+      "level": "n1",
       "pt_stage": 4,
       "title_id": "TRY N1: Globalisasi & Koeksistensi Multikultural",
       "title_jp": "第3章: グローバル化と多文化共生",
       "theme": "TRY N1",
       "icon": "🎯",
-      "can_do_summary": "Memahami silabus TRY N1 Bab 3 secara komprehensif.",
-      "grammar_ids": [],
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Globalisasi & Koeksistensi Multikultural.",
+      "grammar_ids": [
+        "gn1-00001",
+        "gn1-00002",
+        "gn1-00003"
+      ],
       "vocab_ids": [
-        "vg-n1-00068",
-        "Lingkungan sosial yang mengelilingi kita telah berubah secara besar-besaran.",
-        "Ia tampil dikelilingi oleh banyak pendukung.",
-        "Memahami secara akurat risiko-risiko yang mengepung perusahaan."
+        "vg-n1-00156",
+        "vg-n1-00157",
+        "vg-n1-00158",
+        "vg-n1-00159"
       ],
       "lessons": [
         {
@@ -3732,29 +4264,37 @@ window.curriculumBook_try = {
           "title_id": "Globalisasi & Koeksistensi Multikultural (Eksplorasi Materi & Pola)",
           "title_jp": "第3章: グローバル化と多文化共生（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku TRY! JLPT Communicative (N5–N1) pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa TRY! JLPT Communicative (N5–N1) bab ini dalam konteks nyata.",
-          "grammar_ids": [],
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Globalisasi & Koeksistensi Multikultural.",
+          "grammar_ids": [
+            "gn1-00001",
+            "gn1-00002",
+            "gn1-00003"
+          ],
           "vocab_ids": [
-            "vg-n1-00068",
-            "Lingkungan sosial yang mengelilingi kita telah berubah secara besar-besaran.",
-            "Ia tampil dikelilingi oleh banyak pendukung.",
-            "Memahami secara akurat risiko-risiko yang mengepung perusahaan."
+            "vg-n1-00156",
+            "vg-n1-00157",
+            "vg-n1-00158",
+            "vg-n1-00159"
           ],
           "pedagogical_framework": {
             "what": {
               "summary": "Silabus resmi TRY! JLPT Communicative (N5–N1) bab 3.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
-              "targetPatterns": [],
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Globalisasi & Koeksistensi Multikultural.",
+              "targetPatterns": [
+                "gn1-00001",
+                "gn1-00002",
+                "gn1-00003"
+              ],
               "coreVocabSample": [
-                "vg-n1-00068",
-                "Lingkungan sosial yang mengelilingi kita telah berubah secara besar-besaran.",
-                "Ia tampil dikelilingi oleh banyak pendukung.",
-                "Memahami secara akurat risiko-risiko yang mengepung perusahaan."
+                "vg-n1-00156",
+                "vg-n1-00157",
+                "vg-n1-00158",
+                "vg-n1-00159"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku TRY! JLPT Communicative (N5–N1). Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 3 TRY! JLPT Communicative (N5–N1).",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Globalisasi & Koeksistensi Multikultural.",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -3795,19 +4335,23 @@ window.curriculumBook_try = {
     {
       "unit_number": 46,
       "id": "unit-curriculum-book-try-46",
-      "level": "n4",
+      "level": "n1",
       "pt_stage": 5,
       "title_id": "TRY N1: Filsafat Bahasa & Kognisi Pikiran Manusia",
       "title_jp": "第4章: 言語と認知",
       "theme": "TRY N1",
       "icon": "🎯",
-      "can_do_summary": "Memahami silabus TRY N1 Bab 4 secara komprehensif.",
-      "grammar_ids": [],
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Filsafat Bahasa & Kognisi Pikiran Manusia.",
+      "grammar_ids": [
+        "gn1-00001",
+        "gn1-00002",
+        "gn1-00003"
+      ],
       "vocab_ids": [
-        "vg-n1-00078",
-        "Pemerintah mengambil kebijakan yang mendorong perusahaan untuk hemat energi.",
-        "Diumumkan kebijakan yang mendorong pensiun dini.",
-        "Guru mendorong pembelajaran mandiri dari para murid."
+        "vg-n1-00256",
+        "vg-n1-00261",
+        "vg-n1-00265",
+        "vg-n1-00267"
       ],
       "lessons": [
         {
@@ -3816,29 +4360,37 @@ window.curriculumBook_try = {
           "title_id": "Filsafat Bahasa & Kognisi Pikiran Manusia (Eksplorasi Materi & Pola)",
           "title_jp": "第4章: 言語と認知（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku TRY! JLPT Communicative (N5–N1) pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa TRY! JLPT Communicative (N5–N1) bab ini dalam konteks nyata.",
-          "grammar_ids": [],
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Filsafat Bahasa & Kognisi Pikiran Manusia.",
+          "grammar_ids": [
+            "gn1-00001",
+            "gn1-00002",
+            "gn1-00003"
+          ],
           "vocab_ids": [
-            "vg-n1-00078",
-            "Pemerintah mengambil kebijakan yang mendorong perusahaan untuk hemat energi.",
-            "Diumumkan kebijakan yang mendorong pensiun dini.",
-            "Guru mendorong pembelajaran mandiri dari para murid."
+            "vg-n1-00256",
+            "vg-n1-00261",
+            "vg-n1-00265",
+            "vg-n1-00267"
           ],
           "pedagogical_framework": {
             "what": {
               "summary": "Silabus resmi TRY! JLPT Communicative (N5–N1) bab 4.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
-              "targetPatterns": [],
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Filsafat Bahasa & Kognisi Pikiran Manusia.",
+              "targetPatterns": [
+                "gn1-00001",
+                "gn1-00002",
+                "gn1-00003"
+              ],
               "coreVocabSample": [
-                "vg-n1-00078",
-                "Pemerintah mengambil kebijakan yang mendorong perusahaan untuk hemat energi.",
-                "Diumumkan kebijakan yang mendorong pensiun dini.",
-                "Guru mendorong pembelajaran mandiri dari para murid."
+                "vg-n1-00256",
+                "vg-n1-00261",
+                "vg-n1-00265",
+                "vg-n1-00267"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku TRY! JLPT Communicative (N5–N1). Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 4 TRY! JLPT Communicative (N5–N1).",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Filsafat Bahasa & Kognisi Pikiran Manusia.",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -3879,19 +4431,23 @@ window.curriculumBook_try = {
     {
       "unit_number": 47,
       "id": "unit-curriculum-book-try-47",
-      "level": "n4",
+      "level": "n1",
       "pt_stage": 6,
       "title_id": "TRY N1: Hakikat Estetika & Kreativitas Sastra Seni",
       "title_jp": "第5章: 芸術の本質と創造",
       "theme": "TRY N1",
       "icon": "🎯",
-      "can_do_summary": "Memahami silabus TRY N1 Bab 5 secara komprehensif.",
-      "grammar_ids": [],
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Hakikat Estetika & Kreativitas Sastra Seni.",
+      "grammar_ids": [
+        "gn1-00001",
+        "gn1-00002",
+        "gn1-00003"
+      ],
       "vocab_ids": [
-        "vg-n1-00088",
-        "Dari atas bukit, seluruh kota dapat dipandang secara menyeluruh.",
-        "Strategi disusun setelah meninjau secara menyeluruh keseluruhan industri.",
-        "Jika kita memandang sejarah secara menyeluruh, kesalahan yang sama terus terulang."
+        "vg-n1-00343",
+        "vg-n1-00344",
+        "vg-n1-00349",
+        "vg-n1-00351"
       ],
       "lessons": [
         {
@@ -3900,29 +4456,37 @@ window.curriculumBook_try = {
           "title_id": "Hakikat Estetika & Kreativitas Sastra Seni (Eksplorasi Materi & Pola)",
           "title_jp": "第5章: 芸術の本質と創造（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku TRY! JLPT Communicative (N5–N1) pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa TRY! JLPT Communicative (N5–N1) bab ini dalam konteks nyata.",
-          "grammar_ids": [],
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Hakikat Estetika & Kreativitas Sastra Seni.",
+          "grammar_ids": [
+            "gn1-00001",
+            "gn1-00002",
+            "gn1-00003"
+          ],
           "vocab_ids": [
-            "vg-n1-00088",
-            "Dari atas bukit, seluruh kota dapat dipandang secara menyeluruh.",
-            "Strategi disusun setelah meninjau secara menyeluruh keseluruhan industri.",
-            "Jika kita memandang sejarah secara menyeluruh, kesalahan yang sama terus terulang."
+            "vg-n1-00343",
+            "vg-n1-00344",
+            "vg-n1-00349",
+            "vg-n1-00351"
           ],
           "pedagogical_framework": {
             "what": {
               "summary": "Silabus resmi TRY! JLPT Communicative (N5–N1) bab 5.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
-              "targetPatterns": [],
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Hakikat Estetika & Kreativitas Sastra Seni.",
+              "targetPatterns": [
+                "gn1-00001",
+                "gn1-00002",
+                "gn1-00003"
+              ],
               "coreVocabSample": [
-                "vg-n1-00088",
-                "Dari atas bukit, seluruh kota dapat dipandang secara menyeluruh.",
-                "Strategi disusun setelah meninjau secara menyeluruh keseluruhan industri.",
-                "Jika kita memandang sejarah secara menyeluruh, kesalahan yang sama terus terulang."
+                "vg-n1-00343",
+                "vg-n1-00344",
+                "vg-n1-00349",
+                "vg-n1-00351"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku TRY! JLPT Communicative (N5–N1). Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 5 TRY! JLPT Communicative (N5–N1).",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Hakikat Estetika & Kreativitas Sastra Seni.",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -3963,19 +4527,23 @@ window.curriculumBook_try = {
     {
       "unit_number": 48,
       "id": "unit-curriculum-book-try-48",
-      "level": "n4",
+      "level": "n1",
       "pt_stage": 1,
       "title_id": "TRY N1: Tata Kelola Negara, Hukum & Hak Asasi",
       "title_jp": "第6章: 政治・法・人権",
       "theme": "TRY N1",
       "icon": "🎯",
-      "can_do_summary": "Memahami silabus TRY N1 Bab 6 secara komprehensif.",
-      "grammar_ids": [],
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Tata Kelola Negara, Hukum & Hak Asasi.",
+      "grammar_ids": [
+        "gn1-00001",
+        "gn1-00002",
+        "gn1-00003"
+      ],
       "vocab_ids": [
-        "vg-n1-00114",
-        "Dia berada dalam konflik batin yang dalam antara mengejar mimpi atau melindungi keluarga.",
-        "Novel itu menggambarkan dengan cermat konflik batin sang tokoh utama.",
-        "vg-n1-00115"
+        "vg-n1-00446",
+        "vg-n1-00449",
+        "vg-n1-00452",
+        "vg-n1-00458"
       ],
       "lessons": [
         {
@@ -3984,29 +4552,37 @@ window.curriculumBook_try = {
           "title_id": "Tata Kelola Negara, Hukum & Hak Asasi (Eksplorasi Materi & Pola)",
           "title_jp": "第6章: 政治・法・人権（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku TRY! JLPT Communicative (N5–N1) pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa TRY! JLPT Communicative (N5–N1) bab ini dalam konteks nyata.",
-          "grammar_ids": [],
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Tata Kelola Negara, Hukum & Hak Asasi.",
+          "grammar_ids": [
+            "gn1-00001",
+            "gn1-00002",
+            "gn1-00003"
+          ],
           "vocab_ids": [
-            "vg-n1-00114",
-            "Dia berada dalam konflik batin yang dalam antara mengejar mimpi atau melindungi keluarga.",
-            "Novel itu menggambarkan dengan cermat konflik batin sang tokoh utama.",
-            "vg-n1-00115"
+            "vg-n1-00446",
+            "vg-n1-00449",
+            "vg-n1-00452",
+            "vg-n1-00458"
           ],
           "pedagogical_framework": {
             "what": {
               "summary": "Silabus resmi TRY! JLPT Communicative (N5–N1) bab 6.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
-              "targetPatterns": [],
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Tata Kelola Negara, Hukum & Hak Asasi.",
+              "targetPatterns": [
+                "gn1-00001",
+                "gn1-00002",
+                "gn1-00003"
+              ],
               "coreVocabSample": [
-                "vg-n1-00114",
-                "Dia berada dalam konflik batin yang dalam antara mengejar mimpi atau melindungi keluarga.",
-                "Novel itu menggambarkan dengan cermat konflik batin sang tokoh utama.",
-                "vg-n1-00115"
+                "vg-n1-00446",
+                "vg-n1-00449",
+                "vg-n1-00452",
+                "vg-n1-00458"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku TRY! JLPT Communicative (N5–N1). Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 6 TRY! JLPT Communicative (N5–N1).",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Tata Kelola Negara, Hukum & Hak Asasi.",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -4047,19 +4623,23 @@ window.curriculumBook_try = {
     {
       "unit_number": 49,
       "id": "unit-curriculum-book-try-49",
-      "level": "n4",
+      "level": "n1",
       "pt_stage": 2,
       "title_id": "TRY N1: Keadilan Fiskal & Pembangunan Berkelanjutan",
       "title_jp": "第7章: 経済格差と持続的発展",
       "theme": "TRY N1",
       "icon": "🎯",
-      "can_do_summary": "Memahami silabus TRY N1 Bab 7 secara komprehensif.",
-      "grammar_ids": [],
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Keadilan Fiskal & Pembangunan Berkelanjutan.",
+      "grammar_ids": [
+        "gn1-00001",
+        "gn1-00002",
+        "gn1-00003"
+      ],
       "vocab_ids": [
-        "Setelah terpojok oleh bukti, tersangka akhirnya mengaku.",
-        "Aku terpojok secara mental oleh tekanan pekerjaan.",
-        "Sebaiknya hindari cara bicara yang memojokkan lawan bicara.",
-        "vg-n1-00128"
+        "vg-n1-00581",
+        "vg-n1-00584",
+        "vg-n1-00589",
+        "vg-n1-00590"
       ],
       "lessons": [
         {
@@ -4068,29 +4648,37 @@ window.curriculumBook_try = {
           "title_id": "Keadilan Fiskal & Pembangunan Berkelanjutan (Eksplorasi Materi & Pola)",
           "title_jp": "第7章: 経済格差と持続的発展（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku TRY! JLPT Communicative (N5–N1) pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa TRY! JLPT Communicative (N5–N1) bab ini dalam konteks nyata.",
-          "grammar_ids": [],
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Keadilan Fiskal & Pembangunan Berkelanjutan.",
+          "grammar_ids": [
+            "gn1-00001",
+            "gn1-00002",
+            "gn1-00003"
+          ],
           "vocab_ids": [
-            "Setelah terpojok oleh bukti, tersangka akhirnya mengaku.",
-            "Aku terpojok secara mental oleh tekanan pekerjaan.",
-            "Sebaiknya hindari cara bicara yang memojokkan lawan bicara.",
-            "vg-n1-00128"
+            "vg-n1-00581",
+            "vg-n1-00584",
+            "vg-n1-00589",
+            "vg-n1-00590"
           ],
           "pedagogical_framework": {
             "what": {
               "summary": "Silabus resmi TRY! JLPT Communicative (N5–N1) bab 7.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
-              "targetPatterns": [],
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Keadilan Fiskal & Pembangunan Berkelanjutan.",
+              "targetPatterns": [
+                "gn1-00001",
+                "gn1-00002",
+                "gn1-00003"
+              ],
               "coreVocabSample": [
-                "Setelah terpojok oleh bukti, tersangka akhirnya mengaku.",
-                "Aku terpojok secara mental oleh tekanan pekerjaan.",
-                "Sebaiknya hindari cara bicara yang memojokkan lawan bicara.",
-                "vg-n1-00128"
+                "vg-n1-00581",
+                "vg-n1-00584",
+                "vg-n1-00589",
+                "vg-n1-00590"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku TRY! JLPT Communicative (N5–N1). Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 7 TRY! JLPT Communicative (N5–N1).",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Keadilan Fiskal & Pembangunan Berkelanjutan.",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -4131,19 +4719,23 @@ window.curriculumBook_try = {
     {
       "unit_number": 50,
       "id": "unit-curriculum-book-try-50",
-      "level": "n4",
+      "level": "n1",
       "pt_stage": 3,
       "title_id": "TRY N1: Kesucian Hayat & Rekayasa Bioteknologi",
       "title_jp": "第8章: 生命の尊厳と先端技術",
       "theme": "TRY N1",
       "icon": "🎯",
-      "can_do_summary": "Memahami silabus TRY N1 Bab 8 secara komprehensif.",
-      "grammar_ids": [],
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Kesucian Hayat & Rekayasa Bioteknologi.",
+      "grammar_ids": [
+        "gn1-00001",
+        "gn1-00002",
+        "gn1-00003"
+      ],
       "vocab_ids": [
-        "Langit senja memancarkan nuansa warna jingga.",
-        "Suaranya mengandung kesedihan yang samar.",
-        "Pernyataan itu dianggap mengandung nuansa politis.",
-        "vg-n1-00153"
+        "vg-n1-00660",
+        "vg-n1-00661",
+        "vg-n1-00662",
+        "vg-n1-00663"
       ],
       "lessons": [
         {
@@ -4152,29 +4744,37 @@ window.curriculumBook_try = {
           "title_id": "Kesucian Hayat & Rekayasa Bioteknologi (Eksplorasi Materi & Pola)",
           "title_jp": "第8章: 生命の尊厳と先端技術（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku TRY! JLPT Communicative (N5–N1) pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa TRY! JLPT Communicative (N5–N1) bab ini dalam konteks nyata.",
-          "grammar_ids": [],
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Kesucian Hayat & Rekayasa Bioteknologi.",
+          "grammar_ids": [
+            "gn1-00001",
+            "gn1-00002",
+            "gn1-00003"
+          ],
           "vocab_ids": [
-            "Langit senja memancarkan nuansa warna jingga.",
-            "Suaranya mengandung kesedihan yang samar.",
-            "Pernyataan itu dianggap mengandung nuansa politis.",
-            "vg-n1-00153"
+            "vg-n1-00660",
+            "vg-n1-00661",
+            "vg-n1-00662",
+            "vg-n1-00663"
           ],
           "pedagogical_framework": {
             "what": {
               "summary": "Silabus resmi TRY! JLPT Communicative (N5–N1) bab 8.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
-              "targetPatterns": [],
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Kesucian Hayat & Rekayasa Bioteknologi.",
+              "targetPatterns": [
+                "gn1-00001",
+                "gn1-00002",
+                "gn1-00003"
+              ],
               "coreVocabSample": [
-                "Langit senja memancarkan nuansa warna jingga.",
-                "Suaranya mengandung kesedihan yang samar.",
-                "Pernyataan itu dianggap mengandung nuansa politis.",
-                "vg-n1-00153"
+                "vg-n1-00660",
+                "vg-n1-00661",
+                "vg-n1-00662",
+                "vg-n1-00663"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku TRY! JLPT Communicative (N5–N1). Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 8 TRY! JLPT Communicative (N5–N1).",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Kesucian Hayat & Rekayasa Bioteknologi.",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -4215,19 +4815,23 @@ window.curriculumBook_try = {
     {
       "unit_number": 51,
       "id": "unit-curriculum-book-try-51",
-      "level": "n4",
+      "level": "n1",
       "pt_stage": 4,
       "title_id": "TRY N1: Reinterpretasi Historiografi & Memori Bangsa",
       "title_jp": "第9章: 歴史の再解釈と記憶",
       "theme": "TRY N1",
       "icon": "🎯",
-      "can_do_summary": "Memahami silabus TRY N1 Bab 9 secara komprehensif.",
-      "grammar_ids": [],
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Reinterpretasi Historiografi & Memori Bangsa.",
+      "grammar_ids": [
+        "gn1-00001",
+        "gn1-00002",
+        "gn1-00003"
+      ],
       "vocab_ids": [
-        "vg-n1-00163",
-        "Di tengah keheningan, pianis itu memainkan melodi yang lembut dan halus.",
-        "Keduanya menghasilkan musik yang indah, lahir dari kepercayaan yang terjalin bertahun-tahun.",
-        "Di alam, serangga dan burung memainkan simfoni malam."
+        "vg-n1-00744",
+        "vg-n1-00756",
+        "vg-n1-00758",
+        "vg-n1-00760"
       ],
       "lessons": [
         {
@@ -4236,29 +4840,37 @@ window.curriculumBook_try = {
           "title_id": "Reinterpretasi Historiografi & Memori Bangsa (Eksplorasi Materi & Pola)",
           "title_jp": "第9章: 歴史の再解釈と記憶（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku TRY! JLPT Communicative (N5–N1) pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa TRY! JLPT Communicative (N5–N1) bab ini dalam konteks nyata.",
-          "grammar_ids": [],
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Reinterpretasi Historiografi & Memori Bangsa.",
+          "grammar_ids": [
+            "gn1-00001",
+            "gn1-00002",
+            "gn1-00003"
+          ],
           "vocab_ids": [
-            "vg-n1-00163",
-            "Di tengah keheningan, pianis itu memainkan melodi yang lembut dan halus.",
-            "Keduanya menghasilkan musik yang indah, lahir dari kepercayaan yang terjalin bertahun-tahun.",
-            "Di alam, serangga dan burung memainkan simfoni malam."
+            "vg-n1-00744",
+            "vg-n1-00756",
+            "vg-n1-00758",
+            "vg-n1-00760"
           ],
           "pedagogical_framework": {
             "what": {
               "summary": "Silabus resmi TRY! JLPT Communicative (N5–N1) bab 9.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
-              "targetPatterns": [],
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Reinterpretasi Historiografi & Memori Bangsa.",
+              "targetPatterns": [
+                "gn1-00001",
+                "gn1-00002",
+                "gn1-00003"
+              ],
               "coreVocabSample": [
-                "vg-n1-00163",
-                "Di tengah keheningan, pianis itu memainkan melodi yang lembut dan halus.",
-                "Keduanya menghasilkan musik yang indah, lahir dari kepercayaan yang terjalin bertahun-tahun.",
-                "Di alam, serangga dan burung memainkan simfoni malam."
+                "vg-n1-00744",
+                "vg-n1-00756",
+                "vg-n1-00758",
+                "vg-n1-00760"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku TRY! JLPT Communicative (N5–N1). Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 9 TRY! JLPT Communicative (N5–N1).",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Reinterpretasi Historiografi & Memori Bangsa.",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -4299,19 +4911,23 @@ window.curriculumBook_try = {
     {
       "unit_number": 52,
       "id": "unit-curriculum-book-try-52",
-      "level": "n4",
+      "level": "n1",
       "pt_stage": 5,
       "title_id": "TRY N1: Sintesis Akademis & Penulisan Disertasi",
       "title_jp": "第10章: 総合読解と論文論述",
       "theme": "TRY N1",
       "icon": "🎯",
-      "can_do_summary": "Memahami silabus TRY N1 Bab 10 secara komprehensif.",
-      "grammar_ids": [],
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Sintesis Akademis & Penulisan Disertasi.",
+      "grammar_ids": [
+        "gn1-00001",
+        "gn1-00002",
+        "gn1-00003"
+      ],
       "vocab_ids": [
-        "Ia meruntuhkan segala prasangka dan berhasil menjadi dokter.",
-        "Atlet muda yang memecahkan rekor bertahun-tahun menarik banyak perhatian.",
-        "Ide-ide inovatif yang mampu meruntuhkan anggapan konvensional sangat dibutuhkan.",
-        "vg-n1-00174"
+        "vg-n1-00861",
+        "vg-n1-00862",
+        "vg-n1-00864",
+        "vg-n1-00866"
       ],
       "lessons": [
         {
@@ -4320,29 +4936,37 @@ window.curriculumBook_try = {
           "title_id": "Sintesis Akademis & Penulisan Disertasi (Eksplorasi Materi & Pola)",
           "title_jp": "第10章: 総合読解と論文論述（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku TRY! JLPT Communicative (N5–N1) pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa TRY! JLPT Communicative (N5–N1) bab ini dalam konteks nyata.",
-          "grammar_ids": [],
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Sintesis Akademis & Penulisan Disertasi.",
+          "grammar_ids": [
+            "gn1-00001",
+            "gn1-00002",
+            "gn1-00003"
+          ],
           "vocab_ids": [
-            "Ia meruntuhkan segala prasangka dan berhasil menjadi dokter.",
-            "Atlet muda yang memecahkan rekor bertahun-tahun menarik banyak perhatian.",
-            "Ide-ide inovatif yang mampu meruntuhkan anggapan konvensional sangat dibutuhkan.",
-            "vg-n1-00174"
+            "vg-n1-00861",
+            "vg-n1-00862",
+            "vg-n1-00864",
+            "vg-n1-00866"
           ],
           "pedagogical_framework": {
             "what": {
               "summary": "Silabus resmi TRY! JLPT Communicative (N5–N1) bab 10.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
-              "targetPatterns": [],
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Sintesis Akademis & Penulisan Disertasi.",
+              "targetPatterns": [
+                "gn1-00001",
+                "gn1-00002",
+                "gn1-00003"
+              ],
               "coreVocabSample": [
-                "Ia meruntuhkan segala prasangka dan berhasil menjadi dokter.",
-                "Atlet muda yang memecahkan rekor bertahun-tahun menarik banyak perhatian.",
-                "Ide-ide inovatif yang mampu meruntuhkan anggapan konvensional sangat dibutuhkan.",
-                "vg-n1-00174"
+                "vg-n1-00861",
+                "vg-n1-00862",
+                "vg-n1-00864",
+                "vg-n1-00866"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku TRY! JLPT Communicative (N5–N1). Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 10 TRY! JLPT Communicative (N5–N1).",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai Sintesis Akademis & Penulisan Disertasi.",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {

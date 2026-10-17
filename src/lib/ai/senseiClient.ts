@@ -3,6 +3,8 @@
 //  Nugget Nihongo · Sensei Studio & Contextual Tanya Sensei
 // ══════════════════════════════════════════════════════════════════
 
+import { senseiMemory } from './senseiMemory';
+
 export type SenseiPersona = 'sensei_nugget' | 'senpai_aoi';
 export type SenseiMode = 'explain' | 'roleplay' | 'correct';
 
@@ -134,9 +136,12 @@ ATURAN KONTEKS KARTU:
 - Di akhir jawaban jika sudah tuntas, sertakan rekomendasi singkat: "Mau coba latihan soal untuk ${contextCard.target}?"`;
   }
 
+  const memoryBlock = senseiMemory.formatMemoriesForPrompt();
+
   return `${base.replace(/{level}/g, levelStr)}
 ${modeDirective}
 ${cardDirective}
+${memoryBlock ? '\n' + memoryBlock : ''}
 ${SAFETY_GUARDRAILS}`.trim();
 }
 
@@ -305,6 +310,91 @@ export async function sendSenseiMessage(
   }
 
   throw lastError || new Error('Gagal menghubungi Sensei AI. Coba periksa koneksi internetmu.');
+}
+
+/**
+ * Streams Sensei AI response tokens progressively via Server-Sent Events (SSE).
+ */
+export async function streamSenseiResponse(
+  config: SenseiSessionConfig,
+  messages: ChatMessage[],
+  onChunk: (chunk: string) => void,
+  contextCard?: ContextCardPayload
+): Promise<string> {
+  const localKey = typeof window !== 'undefined' ? localStorage.getItem('nn_gemini_api_key') : '';
+  const defaultOpenRouterKey = typeof atob === 'function' ? atob('c2stb3ItdjEtNTBhYjZjODkxZTYyNzhjOGNiZmNiMzQzOGUxZDY2ZGE4ZWZiYTg2NmQ2Y2M5NDJjOGI2OWJiOWNlMzZmNjAwMA==') : '';
+  const apiKey =
+    config.customApiKey?.trim() ||
+    localKey?.trim() ||
+    defaultOpenRouterKey ||
+    '';
+
+  if (!apiKey) {
+    throw new Error('API key belum disetel. Buka Pengaturan untuk menyetel API key.');
+  }
+
+  const systemInstruction = buildSenseiSystemPrompt(config, contextCard);
+
+  const res = await fetch('https://openrouter.ai/api/v1/chat/completions', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      Authorization: `Bearer ${apiKey}`,
+      'HTTP-Referer': 'https://nugget-nihongo.pages.dev',
+      'X-Title': 'Nugget Nihongo Sensei AI',
+      Accept: 'text/event-stream',
+    },
+    body: JSON.stringify({
+      model: 'qwen/qwen-2.5-72b-instruct',
+      stream: true,
+      messages: [
+        { role: 'system', content: systemInstruction },
+        ...messages.map((m) => ({
+          role: m.role === 'user' ? 'user' : 'assistant',
+          content: m.content,
+        })),
+      ],
+      temperature: config.mode === 'roleplay' ? 0.8 : 0.4,
+      max_tokens: 1024,
+    }),
+  });
+
+  if (!res.ok || !res.body) {
+    const errText = await res.text().catch(() => '');
+    throw new Error(`OpenRouter streaming error (${res.status}): ${errText}`);
+  }
+
+  const reader = res.body.getReader();
+  const decoder = new TextDecoder('utf-8');
+  let fullText = '';
+  let buffer = '';
+
+  while (true) {
+    const { done, value } = await reader.read();
+    if (done) break;
+
+    buffer += decoder.decode(value, { stream: true });
+    const lines = buffer.split('\n');
+    buffer = lines.pop() || '';
+
+    for (const line of lines) {
+      const trimmed = line.trim();
+      if (!trimmed || !trimmed.startsWith('data:')) continue;
+      const dataStr = trimmed.replace(/^data:\s*/, '');
+      if (dataStr === '[DONE]') break;
+
+      try {
+        const parsed = JSON.parse(dataStr);
+        const delta = parsed?.choices?.[0]?.delta?.content || '';
+        if (delta) {
+          fullText += delta;
+          onChunk(delta);
+        }
+      } catch {}
+    }
+  }
+
+  return fullText;
 }
 
 /**

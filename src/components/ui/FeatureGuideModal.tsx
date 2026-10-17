@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import {
   X,
   Compass,
@@ -19,6 +19,7 @@ import {
   Lightbulb,
 } from 'lucide-react';
 import { useAppStore } from '../../store/useAppStore';
+import { useFocusTrap } from '../../hooks/useFocusTrap';
 
 interface FeatureGuideModalProps {
   onOpenKana?: () => void;
@@ -35,15 +36,7 @@ export const FeatureGuideModal: React.FC<FeatureGuideModalProps> = ({
 }) => {
   const { isFeatureGuideOpen, closeFeatureGuide, setActiveTab, openOnboarding } = useAppStore();
   const [activeSection, setActiveSection] = useState<'modules' | 'tools' | 'tips'>('modules');
-
-  useEffect(() => {
-    if (!isFeatureGuideOpen) return;
-    const handleKeyDown = (e: KeyboardEvent) => {
-      if (e.key === 'Escape') closeFeatureGuide();
-    };
-    window.addEventListener('keydown', handleKeyDown);
-    return () => window.removeEventListener('keydown', handleKeyDown);
-  }, [isFeatureGuideOpen, closeFeatureGuide]);
+  const containerRef = useFocusTrap<HTMLDivElement>(isFeatureGuideOpen, closeFeatureGuide);
 
   if (!isFeatureGuideOpen) return null;
 
@@ -53,8 +46,15 @@ export const FeatureGuideModal: React.FC<FeatureGuideModalProps> = ({
   };
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-4 bg-black/85 backdrop-blur-md animate-fade-in">
+    <div
+      onClick={closeFeatureGuide}
+      className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-4 bg-black/85 backdrop-blur-md animate-fade-in"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Panduan Fitur & Navigasi"
+    >
       <div
+        ref={containerRef}
         className="w-full max-w-2xl bg-surface border border-accent/25 rounded-3xl shadow-glow overflow-hidden relative flex flex-col max-h-[92vh]"
         onClick={(e) => e.stopPropagation()}
       >
@@ -78,10 +78,11 @@ export const FeatureGuideModal: React.FC<FeatureGuideModalProps> = ({
           </div>
 
           <button
+            type="button"
             onClick={closeFeatureGuide}
-            className="p-1.5 rounded-xl text-appText-muted hover:text-appText-bright hover:bg-surface-2 transition-colors"
+            className="w-11 h-11 min-w-[44px] min-h-[44px] rounded-xl text-appText-muted hover:text-appText-bright hover:bg-surface-2 transition-all flex items-center justify-center active:scale-95"
             title="Tutup"
-            aria-label="Tutup panduan"
+            aria-label="Tutup panduan fitur"
           >
             <X className="w-5 h-5" />
           </button>

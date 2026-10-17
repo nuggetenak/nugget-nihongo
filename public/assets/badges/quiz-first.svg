@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" width="80" height="80">
+  <defs>
+    <radialGradient id="rim_quiz-first" cx="40%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#fff" stop-opacity="0.5" />
+      <stop offset="40%" stop-color="#B45309" />
+      <stop offset="100%" stop-color="#1c1917" />
+    </radialGradient>
+    <filter id="badgeShadow_quiz-first">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#000" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+  <!-- Outer Medallion Disc -->
+  <circle cx="40" cy="40" r="36" fill="url(#rim_quiz-first)" stroke="#B45309" stroke-width="2" filter="url(#badgeShadow_quiz-first)" />
+  <!-- Inner Ring -->
+  <circle cx="40" cy="40" r="28" fill="#171410" stroke="#B45309" stroke-width="1.5" stroke-dasharray="3 2" />
+  <!-- Center Emblem -->
+  <text x="40" y="47" font-size="24" text-anchor="middle" dominant-baseline="central">🎯</text>
+  <!-- Stars Accent -->
+  <circle cx="40" cy="16" r="2" fill="#B45309" />
+  <circle cx="40" cy="64" r="2" fill="#B45309" />
+</svg>

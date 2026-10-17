@@ -23,19 +23,19 @@
   var MATSUNAGA_MULTIPLIER = 2.3;
 
   // ── Forgetting Curve ───────────────────────────────────
-  // R(t, S) = (1 + FACTOR * t / S) ^ (-1/DECAY)
+  // R(t, S) = (1 + FACTOR * t / S) ^ (-DECAY)
   // Returns retrievability R ∈ [0, 1]
   window.fsrsForgettingCurve = function (elapsedDays, stability) {
     if (stability <= 0) return 0;
-    return Math.pow(1 + FACTOR * (elapsedDays / stability), -1 / DECAY);
+    return Math.pow(1 + FACTOR * (elapsedDays / stability), -DECAY);
   };
 
   // ── Next Interval from Target Retention ────────────────
   // Inverse of forgetting curve: given S and target R, compute t
-  // t = S / FACTOR * (R^(-DECAY) - 1)
+  // t = S / FACTOR * (R^(-1/DECAY) - 1)
   window.fsrsNextInterval = function (stability, requestRetention) {
     if (stability <= 0 || requestRetention <= 0 || requestRetention >= 1) return 0;
-    return stability / FACTOR * (Math.pow(requestRetention, -DECAY) - 1);
+    return stability / FACTOR * (Math.pow(requestRetention, -1 / DECAY) - 1);
   };
 
   // ── Indonesian Learner Difficulty Priors ────────────────

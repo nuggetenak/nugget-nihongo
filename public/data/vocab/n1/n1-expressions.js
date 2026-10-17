@@ -1,6 +1,6 @@
 // ────────────────────────────────────────────────────────────
-//  n1-expressions.js — Nugget Nihongo · JLPT N1 · Expressions
-//  4 entries | Auto-split from vocab-n1.js
+//  n1-expressions.js — Nugget Nihongo · JLPT N1 · EXPRESSIONS
+//  14 entries | Verified Indonesian Translations
 //  Schema: data/_schema-vocab.md | Part of vocab/n1/ module
 // ────────────────────────────────────────────────────────────
 
@@ -29,7 +29,7 @@ window.vocabN1_Expressions = [
     "rekan"
   ],
   "nuance": "Metafora dari seni ukir relief (浮き彫り) di mana figur muncul dari latar. Berbeda dari 強調する (menekankan secara eksplisit), 浮き彫りにする menyiratkan bahwa sesuatu yang sudah ada menjadi tampak jelas — sering dipakai dalam konteks masalah sosial yang 'terkuak' atau 'terungkap'.",
-  "conj_type": 'suru',
+  "conj_type": "suru",
   "examples": [
     {
       "jp": "この事件は社会格差の問題を<b>浮き彫りにした</b>。",
@@ -109,18 +109,39 @@ window.vocabN1_Expressions = [
   "common": true,
   "related_grammar": [],
   "formalitas": 4,
-  "domain": ["karakter", "seni-budaya"],
+  "domain": [
+    "karakter",
+    "seni-budaya"
+  ],
   "register": "formal",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "Berasal dari 凛 (rin) yang menggambarkan kedinginan yang tajam sekaligus bermartabat. 凛とした態度 = sikap yang tegak dan berwibawa tanpa tergoyahkan. Berbeda dari ただ「冷たい」(dingin) atau「厳しい」(ketat/keras), 凛とした mengandung keagungan dan kepercayaan diri yang tenang. Sering dipakai untuk wanita berkarakter kuat, samurai, atau alam musim dingin.",
   "conj_type": null,
   "examples": [
-    {"jp": "彼女は困難な状況でも<b>凛とした</b>態度を崩さなかった。", "id": "Bahkan dalam situasi sulit, dia tidak kehilangan sikapnya yang tegak dan berwibawa.", "level": "n1", "tags": ["karakter"]},
-    {"jp": "冬の朝の<b>凛とした</b>空気が心地よかった。", "id": "Udara musim dingin yang tajam dan segar terasa menyenangkan.", "level": "n1", "tags": ["alam-lingkungan"]}
+    {
+      "jp": "彼女は困難な状況でも<b>凛とした</b>態度を崩さなかった。",
+      "id": "Bahkan dalam situasi sulit, dia tidak kehilangan sikapnya yang tegak dan berwibawa.",
+      "level": "n1",
+      "tags": [
+        "karakter"
+      ]
+    },
+    {
+      "jp": "冬の朝の<b>凛とした</b>空気が心地よかった。",
+      "id": "Udara musim dingin yang tajam dan segar terasa menyenangkan.",
+      "level": "n1",
+      "tags": [
+        "alam-lingkungan"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
-  "see_also": ["vg-n1-00141"],
+  "see_also": [
+    "vg-n1-00141"
+  ],
   "provenance": "jlpt-corpus",
   "added_v": "v15"
 },
@@ -147,7 +168,7 @@ window.vocabN1_Expressions = [
     "rekan"
   ],
   "nuance": "Yojijukugo: 本 (hal utama/pokok) + 末 (hal sekunder/ujung) + 転倒 (terbalik). Menggambarkan kondisi di mana yang utama dan yang tidak utama tertukar posisinya. Sering dipakai untuk mengkritik kebijakan, keputusan, atau perilaku yang salah prioritas. Berbeda dari ただ「間違い」(kesalahan umum), 本末転倒 lebih spesifik pada urutan atau hierarki nilai yang terbalik.",
-  "conj_type": 'suru',
+  "conj_type": "suru",
   "examples": [
     {
       "jp": "健康のために運動するのに、それで体を壊すのでは<b>本末転倒</b>だ。",
@@ -156,8 +177,9 @@ window.vocabN1_Expressions = [
       "tags": [
         "kesehatan",
         "keputusan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":8,"downstep_mora":1,"contour":"ホ＼ンマツテントウ"}
+},
     {
       "jp": "試験に合格するための勉強が目的になってしまうのは<b>本末転倒</b>だ。",
       "id": "Belajar yang bertujuan hanya untuk lulus ujian adalah terbaliknya prioritas.",
@@ -231,8 +253,9 @@ window.vocabN1_Expressions = [
       "tags": [
         "kehidupan-sehari",
         "pendidikan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":8,"downstep_mora":1,"contour":"ホ＼ンマツテントウ"}
+},
     {
       "jp": "旅行で観光もビジネスもこなせるなら<b>一石二鳥</b>だ。",
       "id": "Jika dalam satu perjalanan bisa sekaligus wisata dan urusan bisnis, itu benar-benar menguntungkan dua sisi.",
@@ -256,8 +279,6 @@ window.vocabN1_Expressions = [
     "yojijukugo"
   ]
 },
-
-// ── Staged Expansion (10) ──
 
 {
   "id": "vg-n1-00448",
@@ -285,12 +306,13 @@ window.vocabN1_Expressions = [
   "examples": [
     {
       "jp": "云々を使います。",
-      "id": "Menggunakan and so on; and so forth.",
+      "id": "Menggunakan dan sebagainya; dan sebagainya.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ウンヌン￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -327,12 +349,13 @@ window.vocabN1_Expressions = [
   "examples": [
     {
       "jp": "ちょっとの時間、電話を切らないでおいて下さい。",
-      "id": "Hold on a moment, please.",
+      "id": "Tolong tunggu sebentar.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"オ＼イテ"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -390,7 +413,7 @@ window.vocabN1_Expressions = [
   "word": "ございます",
   "reading": "ございます",
   "romaji": "gozaimasu",
-  "meaning_id": "me-be",
+  "meaning_id": "ada",
   "meaning_en": "to be (polite); to exist",
   "jlpt": "n1",
   "pos": "expression",
@@ -411,15 +434,16 @@ window.vocabN1_Expressions = [
   "examples": [
     {
       "jp": "ご親切誠にありがとうございます。",
-      "id": "Thank you for your kindness.",
+      "id": "Terima kasih atas kebaikan Anda.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":4,"category":"nakadaka","mora_count":5,"downstep_mora":4,"contour":"ゴザイマ＼ス"}
+},
     {
       "jp": "クリスマスおめでとうございます。",
-      "id": "I wish you a Merry Christmas.",
+      "id": "Saya mengucapkan Selamat Natal.",
       "level": "n1",
       "tags": [
         "umum"
@@ -440,7 +464,7 @@ window.vocabN1_Expressions = [
   "word": "事によると",
   "reading": "ことによると",
   "romaji": "kotoniyoruto",
-  "meaning_id": "depending on the circumstances",
+  "meaning_id": "tergantung pada keadaan",
   "meaning_en": "depending on the circumstances",
   "jlpt": "n1",
   "pos": "expression",
@@ -461,15 +485,16 @@ window.vocabN1_Expressions = [
   "examples": [
     {
       "jp": "ことによると、きみにも一緒にきてもらう。",
-      "id": "Maybe you'd better come with us.",
+      "id": "Mungkin sebaiknya Anda ikut dengan kami.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":6,"downstep_mora":0,"contour":"コトニヨルト￣"}
+},
     {
       "jp": "ことによると父は次の列車で帰るかもしれません。",
-      "id": "My father will possibly come on the next train.",
+      "id": "Ayah saya mungkin akan datang dengan kereta berikutnya.",
       "level": "n1",
       "tags": [
         "umum"
@@ -511,12 +536,13 @@ window.vocabN1_Expressions = [
   "examples": [
     {
       "jp": "彼は目上の人に対して丁重である。",
-      "id": "He behaves respectfully toward his superiors.",
+      "id": "Dia berperilaku hormat terhadap atasannya.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":4,"downstep_mora":1,"contour":"タ＼イシテ"}
+},
     {
       "jp": "彼は批評に対してたいへん敏感だ。",
       "id": "Dia very sensitive to criticism.",
@@ -561,15 +587,16 @@ window.vocabN1_Expressions = [
   "examples": [
     {
       "jp": "がっかりしたことに、彼の勝利は、つかの間の勝利にすぎなかった。",
-      "id": "To my regret, his was nothing but a short-lived triumph.",
+      "id": "Saya menyesal, kemenangannya hanyalah kemenangan yang berumur pendek.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ツカノマ￣"}
+},
     {
       "jp": "つかの間の平和の後でまた戦争が起こった。",
-      "id": "After a brief peace, war broke out again.",
+      "id": "Setelah perdamaian singkat, perang kembali terjadi.",
       "level": "n1",
       "tags": [
         "umum"
@@ -590,7 +617,7 @@ window.vocabN1_Expressions = [
   "word": "何より",
   "reading": "なにより",
   "romaji": "naniyori",
-  "meaning_id": "most; best",
+  "meaning_id": "sebagian besar; terbaik",
   "meaning_en": "most; best",
   "jlpt": "n1",
   "pos": "expression",
@@ -611,15 +638,16 @@ window.vocabN1_Expressions = [
   "examples": [
     {
       "jp": "一日中働いたあとは、一杯のビールが何よりだ。",
-      "id": "Ada nothing like a glass of beer after a whole day's work.",
+      "id": "Tidak ada yang seperti segelas bir setelah seharian bekerja.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":4,"downstep_mora":1,"contour":"ナ＼ニヨリ"}
+},
     {
       "jp": "私は自分が健康で何よりだと思っている。",
-      "id": "I count myself lucky in having good health.",
+      "id": "Saya menganggap diri saya beruntung memiliki kesehatan yang baik.",
       "level": "n1",
       "tags": [
         "umum"
@@ -640,7 +668,7 @@ window.vocabN1_Expressions = [
   "word": "にも拘らず",
   "reading": "にもかかわらず",
   "romaji": "nimokakawarazu",
-  "meaning_id": "in spite of; nevertheless",
+  "meaning_id": "meskipun; namun demikian",
   "meaning_en": "in spite of; nevertheless",
   "jlpt": "n1",
   "pos": "expression",
@@ -661,15 +689,16 @@ window.vocabN1_Expressions = [
   "examples": [
     {
       "jp": "それにも関わらず彼は試験に合格することができた。",
-      "id": "And yet he could pass the exam.",
+      "id": "Namun dia bisa lulus ujian.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":7,"downstep_mora":1,"contour":"ニ＼モカカワラズ"}
+},
     {
       "jp": "彼は大雪にもかかわらず来ました。",
-      "id": "He came in spite of the heavy snow.",
+      "id": "Dia datang meskipun salju lebat.",
       "level": "n1",
       "tags": [
         "umum"
@@ -711,12 +740,13 @@ window.vocabN1_Expressions = [
   "examples": [
     {
       "jp": "その状況は戦争を以てしか決着できない。",
-      "id": "The situation could only be settled by war.",
+      "id": "Situasi ini hanya bisa diselesaikan dengan perang.",
       "level": "n1",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"モ＼ッテ"}
+},
     {
       "jp": "どうしてもって時以外は、タクシーは使わないんだ。",
       "id": "I don't use taxis unless it's absolutely necessary.",

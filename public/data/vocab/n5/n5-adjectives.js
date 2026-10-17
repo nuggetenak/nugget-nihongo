@@ -7,3062 +7,6966 @@
 window.vocabN5_Adjectives = [
 
 {
-  id: 'vg-n5-00057',
-  word: '大きい',
-  reading: 'おおきい',
-  romaji: 'ookii',
-  meaning_id: 'besar',
-  meaning_en: 'big',
-  jlpt: 'n5',
-  pos: 'i-adj',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['kehidupan-sehari', 'alam-lingkungan'],
-  register: 'neutral',
-  lawan_bicara: ['teman', 'umum'],
-  nuance: 'Used for physical size and can also apply to abstract concepts like voices or dreams. It is an i-adjective, unlike the na-adjective 大きな which must precede a noun.',
-  conj_type: 'adj-i',
-  examples: [
-      {"jp": "大きい犬がいます。", "id": "Ada anjing besar.", "level": "n5", "tags": ["kehidupan-sehari"]}],
-  synonyms: [],
-  antonyms: ['vg-n5-00058'],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus',
-  jmdict_seq: '1588880',
-  frequency: 3500,
-  forms: [{"word": "大きい", "info": []}, {"word": "巨きい", "info": ["search-only kanji form"]}],
-  meanings: [{"en": "big; large; great", "misc": [], "field": []}, {"en": "loud", "misc": [], "field": []}, {"en": "extensive; spacious", "misc": [], "field": []}, {"en": "important; decisive; valuable", "misc": [], "field": []}, {"en": "older; grown-up", "misc": [], "field": []}],
-},
-
-{
-  id: 'vg-n5-00058',
-  word: '小さい',
-  reading: 'ちいさい',
-  romaji: 'chiisai',
-  meaning_id: 'kecil',
-  meaning_en: 'small',
-  jlpt: 'n5',
-  pos: 'i-adj',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['kehidupan-sehari', 'alam-lingkungan'],
-  register: 'neutral',
-  lawan_bicara: ['teman', 'umum'],
-  nuance: 'Means \'small\' or \'little.\' Compare with 少ない (few in quantity). 小さい describes physical size. Casual speech often shortens it to ちっちゃい.',
-  conj_type: 'adj-i',
-  examples: [{"jp": "小さい猫がかわいいです。", "id": "Kucing kecil itu lucu.", "level": "n5", "tags": ["kehidupan-sehari"]}],
-  synonyms: [],
-  antonyms: ['vg-n5-00057'],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus',
-  jmdict_seq: '1347750',
-  frequency: 12000,
-  meanings: [{"en": "small; little; tiny", "misc": [], "field": []}, {"en": "slight; below average (in degree, amount, etc.); minor; small", "misc": [], "field": []}, {"en": "low (e.g. sound); soft (e.g. voice)", "misc": [], "field": []}, {"en": "unimportant; petty; insignificant; trifling; trivial", "misc": [], "field": []}, {"en": "young; juvenile", "misc": [], "field": []}],
-},
-
-{
-  id: 'vg-n5-00059',
-  word: '良い',
-  reading: 'いい・よい',
-  romaji: 'ii / yoi',
-  meaning_id: 'bagus, baik',
-  meaning_en: 'good',
-  jlpt: 'n5',
-  pos: 'i-adj',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['kehidupan-sehari'],
-  register: 'neutral',
-  lawan_bicara: ['teman', 'umum'],
-  nuance: 'Konjugasi pakai よ sebagai stem: よくない, よかった. いい hanya untuk bentuk kamus.',
-  conj_type: 'adj-i',
-  examples: [
-      {"jp": "いい天気ですね。", "id": "Cuacanya bagus ya.", "level": "n5", "tags": ["alam-lingkungan"]}],
-  synonyms: [],
-  antonyms: ['vg-n5-00060'],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus',
-  jmdict_seq: '1605820',
-  frequency: 4000,
-  forms: [{"word": "良い", "info": []}, {"word": "好い", "info": []}, {"word": "善い", "info": []}, {"word": "佳い", "info": ["kanji jarang dipakai"]}, {"word": "吉い", "info": ["kanji jarang dipakai"]}, {"word": "宜い", "info": ["kanji jarang dipakai"]}],
-  meanings: [{"en": "good; excellent; fine; nice; pleasant; agreeable", "misc": [], "field": []}, {"en": "sufficient; enough; ready; prepared", "misc": [], "field": []}, {"en": "profitable (deal, business offer, etc.); beneficial", "misc": [], "field": []}, {"en": "OK; all right; fine; no problem", "misc": [], "field": []}, {"en": "easy to ...", "misc": [], "field": []}],
-},
-
-{
-  id: 'vg-n5-00060',
-  word: '悪い',
-  reading: 'わるい',
-  romaji: 'warui',
-  meaning_id: 'buruk, jelek',
-  meaning_en: 'bad',
-  jlpt: 'n5',
-  pos: 'i-adj',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['kehidupan-sehari'],
-  register: 'neutral',
-  lawan_bicara: ['teman', 'umum'],
-  nuance: 'Juga dipakai untuk meminta maaf: 悪かった！',
-  conj_type: 'adj-i',
-  examples: [{"jp": "天気が悪いです。", "id": "Cuacanya buruk.", "level": "n5", "tags": ["alam-lingkungan"]}],
-  synonyms: [],
-  antonyms: ['vg-n5-00059'],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus',
-  jmdict_seq: '2772730',
-  frequency: 14000,
-  forms: [{"word": "難い", "info": ["kanji jarang dipakai"]}, {"word": "悪い", "info": ["search-only kanji form"]}],
-  misc_jm: ["biasanya kana saja"],
-},
-
-{
-  id: 'vg-n5-00061',
-  word: '高い',
-  reading: 'たかい',
-  romaji: 'takai',
-  meaning_id: 'tinggi; mahal',
-  meaning_en: 'tall; expensive',
-  jlpt: 'n5',
-  pos: 'i-adj',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['belanja', 'kehidupan-sehari'],
-  register: 'neutral',
-  lawan_bicara: ['teman', 'umum'],
-  nuance: 'Dua arti: tinggi secara fisik (山が高い) dan harga mahal (値段が高い).',
-  conj_type: 'adj-i',
-  examples: [
-      {"jp": "この店は高いです。", "id": "Toko ini mahal.", "level": "n5", "tags": ["belanja"]}],
-  synonyms: [],
-  antonyms: ['vg-n5-00062'],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus',
-  jmdict_seq: '1283190',
-  frequency: 4000,
-  forms: [{"word": "高い", "info": []}, {"word": "高価い", "info": ["search-only kanji form"]}, {"word": "高ーい", "info": ["search-only kanji form"]}],
-  meanings: [{"en": "high; tall", "misc": [], "field": []}, {"en": "expensive; high-priced", "misc": [], "field": []}, {"en": "high (level); above average (in degree, quality, etc.)", "misc": [], "field": []}, {"en": "loud", "misc": [], "field": []}, {"en": "high-pitched; shrill", "misc": [], "field": []}],
-},
-
-{
-  id: 'vg-n5-00062',
-  word: '安い',
-  reading: 'やすい',
-  romaji: 'yasui',
-  meaning_id: 'murah',
-  meaning_en: 'cheap; inexpensive',
-  jlpt: 'n5',
-  pos: 'i-adj',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['belanja', 'kehidupan-sehari'],
-  register: 'neutral',
-  lawan_bicara: ['teman', 'umum'],
-  nuance: '古い = tua/lama/usang. 古い建物 = bangunan tua. Untuk orang pakai 年を取った.',
-  conj_type: 'adj-i',
-  examples: [{"jp": "スーパーの野菜は安いです。", "id": "Sayuran di supermarket murah.", "level": "n5", "tags": ["belanja", "makanan-minuman"]}],
-  synonyms: [],
-  antonyms: ['vg-n5-00061'],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus',
-  jmdict_seq: '1153670',
-  frequency: 23500,
-  forms: [{"word": "安い", "info": []}, {"word": "廉い", "info": []}],
-  meanings: [{"en": "cheap; inexpensive", "misc": [], "field": []}, {"en": "calm; peaceful; quiet", "misc": [], "field": []}],
-},
-
-{
-  id: 'vg-n5-00063',
-  word: '暑い',
-  reading: 'あつい',
-  romaji: 'atsui',
-  meaning_id: 'panas (cuaca/udara)',
-  meaning_en: 'hot (weather)',
-  jlpt: 'n5',
-  pos: 'i-adj',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['alam-lingkungan'],
-  register: 'neutral',
-  lawan_bicara: ['teman', 'umum'],
-  nuance: 'Untuk suhu udara. 熱い untuk benda panas (お湯が熱い).',
-  conj_type: 'adj-i',
-  examples: [
-      {"jp": "今日はとても暑いですね。", "id": "Hari ini sangat panas ya.", "level": "n5", "tags": ["alam-lingkungan"]}],
-  synonyms: [],
-  antonyms: ['vg-n5-00064'],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus',
-  jmdict_seq: '1343460',
-  frequency: 17000,
-  meanings: [{"en": "hot; warm; sultry; heated", "misc": [], "field": []}, {"en": "passionate; impassioned; burning (desire, etc.)", "misc": [], "field": []}, {"en": "on everybody's mind; on the radar; du jour; interested (gaze, etc.)", "misc": [], "field": []}],
-},
-
-{
-  id: 'vg-n5-00064',
-  word: '寒い',
-  reading: 'さむい',
-  romaji: 'samui',
-  meaning_id: 'dingin (cuaca)',
-  meaning_en: 'cold (weather)',
-  jlpt: 'n5',
-  pos: 'i-adj',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['alam-lingkungan'],
-  register: 'neutral',
-  lawan_bicara: ['teman', 'umum'],
-  nuance: 'Untuk suhu udara. 冷たい untuk benda dingin.',
-  conj_type: 'adj-i',
-  examples: [{"jp": "冬は寒いです。", "id": "Musim dingin itu dingin.", "level": "n5", "tags": ["alam-lingkungan"]}],
-  synonyms: [],
-  antonyms: ['vg-n5-00063'],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus',
-  jmdict_seq: '1210360',
-  frequency: 20000,
-  meanings: [{"en": "cold (e.g. weather)", "misc": [], "field": []}, {"en": "uninteresting (esp. joke); lame; dull; weak; corny", "misc": [], "field": []}],
-},
-
-{
-  id: 'vg-n5-00065',
-  word: '新しい',
-  reading: 'あたらしい',
-  romaji: 'atarashii',
-  meaning_id: 'baru',
-  meaning_en: 'new',
-  jlpt: 'n5',
-  pos: 'i-adj',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['kehidupan-sehari'],
-  register: 'neutral',
-  lawan_bicara: ['teman', 'umum'],
-  nuance: '暖かい = hangat (cuaca yang menyenangkan). Berbeda: 熱い = panas menyengat.',
-  conj_type: 'adj-i',
-  examples: [
-      {"jp": "新しい車を買いました。", "id": "Saya membeli mobil baru.", "level": "n5", "tags": ["kehidupan-sehari"]}],
-  synonyms: [],
-  antonyms: ['vg-n5-00066'],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus',
-  jmdict_seq: '1361490',
-  frequency: 4000,
-  forms: [{"word": "新しい", "info": []}, {"word": "新らしい", "info": ["search-only kanji form"]}],
-},
-
-{
-  id: 'vg-n5-00066',
-  word: '古い',
-  reading: 'ふるい',
-  romaji: 'furui',
-  meaning_id: 'lama, tua (benda)',
-  meaning_en: 'old (thing)',
-  jlpt: 'n5',
-  pos: 'i-adj',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['kehidupan-sehari'],
-  register: 'neutral',
-  lawan_bicara: ['teman', 'umum'],
-  nuance: 'Untuk benda. Untuk orang pakai 年上 (lebih tua).',
-  conj_type: 'adj-i',
-  examples: [{"jp": "古い建物が好きです。", "id": "Saya suka bangunan tua.", "level": "n5", "tags": ["kehidupan-sehari"]}],
-  synonyms: [],
-  antonyms: ['vg-n5-00065'],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus',
-  jmdict_seq: '1265070',
-  frequency: 8000,
-  forms: [{"word": "古い", "info": []}, {"word": "旧い", "info": ["kanji jarang dipakai"]}, {"word": "故い", "info": ["kanji jarang dipakai"]}],
-  meanings: [{"en": "old; aged; ancient; antiquated; antique; timeworn", "misc": [], "field": []}, {"en": "long; since long ago; time-honored", "misc": [], "field": []}, {"en": "of the distant past; long-ago", "misc": [], "field": []}, {"en": "stale; threadbare; hackneyed; corny", "misc": [], "field": []}, {"en": "old-fashioned; outmoded; out-of-date", "misc": [], "field": []}],
-},
-
-{
-  id: 'vg-n5-00067',
-  word: '面白い',
-  reading: 'おもしろい',
-  romaji: 'omoshiroi',
-  meaning_id: 'menarik, lucu',
-  meaning_en: 'interesting; funny',
-  jlpt: 'n5',
-  pos: 'i-adj',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['kehidupan-sehari'],
-  register: 'neutral',
-  lawan_bicara: ['teman'],
-  nuance: 'Can mean both intellectually stimulating and humorously amusing. Context usually clarifies whether a book is \'interesting\' or a comedian is \'funny\'.',
-  conj_type: 'adj-i',
-  examples: [
-      {"jp": "この映画は面白いです。", "id": "Film ini menarik.", "level": "n5", "tags": ["kehidupan-sehari"]}],
-  synonyms: [],
-  antonyms: ['vg-n5-00068'],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus',
-  jmdict_seq: '1533580',
-  frequency: 9500,
-  meanings: [{"en": "interesting; fascinating; intriguing; enthralling", "misc": [], "field": []}, {"en": "amusing; funny; comical", "misc": [], "field": []}, {"en": "enjoyable; fun; entertaining; pleasant; agreeable", "misc": [], "field": []}, {"en": "good; satisfactory; favourable; desirable; encouraging", "misc": [], "field": []}],
-},
-
-{
-  id: 'vg-n5-00068',
-  word: 'つまらない',
-  reading: 'つまらない',
-  romaji: 'tsumaranai',
-  meaning_id: 'membosankan',
-  meaning_en: 'boring; dull',
-  jlpt: 'n5',
-  pos: 'i-adj',
-  common: true,
-  related_grammar: [],
-  formalitas: 1,
-  domain: ['kehidupan-sehari'],
-  register: 'casual',
-  lawan_bicara: ['teman'],
-  nuance: 'つまらない = membosankan/tidak menarik. Lawan: 面白い. Juga: merendahkan diri: つまらないものですが (hadiah).',
-  conj_type: 'adj-i',
-  examples: [{"jp": "この本はつまらないです。", "id": "Buku ini membosankan.", "level": "n5", "tags": ["kehidupan-sehari"]}],
-  synonyms: [],
-  antonyms: ['vg-n5-00067'],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus',
-  jmdict_seq: '1008190',
-  frequency: 1000,
-  forms: [{"word": "詰らない", "info": []}, {"word": "詰まらない", "info": []}],
-  meanings: [{"en": "dull; uninteresting; boring; tedious", "misc": ["biasanya kana saja"], "field": []}, {"en": "insignificant; unimportant; trifling; trivial; worthless", "misc": ["biasanya kana saja"], "field": []}, {"en": "absurd; foolish; silly; stupid", "misc": ["biasanya kana saja"], "field": []}, {"en": "useless; pointless; disappointing", "misc": ["biasanya kana saja"], "field": []}],
-  misc_jm: ["biasanya kana saja"],
-},
-
-{
-  id: 'vg-n5-00069',
-  word: '美味しい',
-  reading: 'おいしい',
-  romaji: 'oishii',
-  meaning_id: 'enak, lezat',
-  meaning_en: 'delicious',
-  jlpt: 'n5',
-  pos: 'i-adj',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['pendidikan', 'emosi'],
-  register: 'neutral',
-  lawan_bicara: ['teman', 'umum'],
-  nuance: '難しい = sulit/susah. Lawan: やさしい/簡単な. 発音が難しい = pengucapannya sulit.',
-  conj_type: 'adj-i',
-  examples: [
-      {"jp": "このラーメンはおいしいです。", "id": "Ramen ini enak.", "level": "n5", "tags": ["makanan-minuman"]}],
-  synonyms: [],
-  antonyms: [],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus',
-  jmdict_seq: '1486650',
-  frequency: 1000,
-  forms: [{"word": "美味しい", "info": []}, {"word": "旨味しい", "info": ["search-only kanji form"]}],
-  meanings: [{"en": "good(-tasting); nice; delicious; tasty", "misc": ["biasanya kana saja"], "field": []}, {"en": "attractive (offer, opportunity, etc.); appealing; convenient; favorable; desirable; profitable", "misc": ["biasanya kana saja"], "field": []}],
-  misc_jm: ["biasanya kana saja"],
-},
-
-{
-  id: 'vg-n5-00070',
-  word: '難しい',
-  reading: 'むずかしい',
-  romaji: 'muzukashii',
-  meaning_id: 'sulit',
-  meaning_en: 'difficult',
-  jlpt: 'n5',
-  pos: 'i-adj',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['pendidikan', 'emosi'],
-  register: 'neutral',
-  lawan_bicara: ['teman', 'umum'],
-  nuance: '易しい/簡単な = mudah. HATI-HATI: 易しい (yaさしい) vs 優しい (やさしい = baik hati). Kanji beda!',
-  conj_type: 'adj-i',
-  examples: [
-      {"jp": "日本語は難しいです。", "id": "Bahasa Jepang itu sulit.", "level": "n5", "tags": ["pendidikan"]}],
-  synonyms: [],
-  antonyms: ['vg-n5-00071'],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus',
-  jmdict_seq: '1460850',
-  frequency: 3500,
-  forms: [{"word": "難しい", "info": []}, {"word": "六借しい", "info": ["search-only kanji form"]}, {"word": "六ヶ敷い", "info": ["search-only kanji form"]}, {"word": "六かしい", "info": ["search-only kanji form"]}],
-  meanings: [{"en": "difficult; hard; troublesome; complicated; serious (disease, problem, etc.)", "misc": [], "field": []}, {"en": "impossible; unfeasible", "misc": ["euphemistic"], "field": []}, {"en": "fussy; particular; fastidious; hard to please; displeased", "misc": [], "field": []}, {"en": "gloomy; glum; sullen; serious (look)", "misc": [], "field": []}, {"en": "dirty; unclean; filthy; detestable", "misc": ["archaic"], "field": []}, {"en": "unpleasant; uncomfortable; creepy; spooky", "misc": ["archaic"], "field": []}],
-  misc_jm: ["arkais", "euphemistic"],
-},
-
-{
-  id: 'vg-n5-00071',
-  word: '易しい',
-  reading: 'やさしい',
-  romaji: 'yasashii',
-  meaning_id: 'mudah, gampang',
-  meaning_en: 'easy',
-  jlpt: 'n5',
-  pos: 'i-adj',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['pendidikan'],
-  register: 'neutral',
-  lawan_bicara: ['teman', 'umum'],
-  nuance: 'Beda dengan 優しい (baik hati) — homofon tapi beda kanji.',
-  conj_type: 'adj-i',
-  examples: [{"jp": "この問題は易しいです。", "id": "Soal ini mudah.", "level": "n5", "tags": ["pendidikan"]}],
-  synonyms: [],
-  antonyms: ['vg-n5-00070'],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus',
-  jmdict_seq: '1157000',
-  frequency: 19500,
-  misc_jm: ["biasanya kana saja"],
-},
-
-{
-  id: 'vg-n5-00072',
-  word: '忙しい',
-  reading: 'いそがしい',
-  romaji: 'isogashii',
-  meaning_id: 'sibuk',
-  meaning_en: 'busy',
-  jlpt: 'n5',
-  pos: 'i-adj',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['belanja'],
-  register: 'neutral',
-  lawan_bicara: ['teman', 'rekan'],
-  nuance: '安い = murah. Lawan: 高い. 安くておいしい = murah dan enak (sering dipakai bersama).',
-  conj_type: 'adj-i',
-  examples: [
-      {"jp": "最近, とても忙しいです。", "id": "Belakangan ini saya sangat sibuk.", "level": "n5", "tags": ["pekerjaan"]}],
-  synonyms: [],
-  antonyms: [],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus',
-  jmdict_seq: '2835296',
-  meanings: [{"en": "busy; hectic; frantic", "misc": ["biasanya kana saja"], "field": []}, {"en": "restless; hurried; fidgety", "misc": ["biasanya kana saja"], "field": []}],
-  misc_jm: ["biasanya kana saja"],
-},
-
-{
-  id: 'vg-n5-00073',
-  word: '可愛い',
-  reading: 'かわいい',
-  romaji: 'kawaii',
-  meaning_id: 'lucu, imut',
-  meaning_en: 'cute',
-  jlpt: 'n5',
-  pos: 'i-adj',
-  common: true,
-  related_grammar: [],
-  formalitas: 1,
-  domain: ['kehidupan-sehari'],
-  register: 'casual',
-  lawan_bicara: ['teman'],
-  nuance: '長い = panjang (ukuran) ATAU lama (waktu). Lawan: 短い. 長い時間 = waktu yang lama.',
-  conj_type: 'adj-i',
-  examples: [
-      {"jp": "かわいいネコですね。", "id": "Kucing yang lucu ya.", "level": "n5", "tags": ["kehidupan-sehari"]}],
-  synonyms: [],
-  antonyms: [],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus',
-  jmdict_seq: '2863274',
-  meanings: [{"en": "cute; adorable; charming; lovely; pretty", "misc": ["biasanya kana saja", "dated term"], "field": []}, {"en": "dear; precious; darling; pet", "misc": ["biasanya kana saja", "dated term"], "field": []}, {"en": "innocent; childlike; childish; lovable", "misc": ["biasanya kana saja", "dated term"], "field": []}, {"en": "dainty; little; tiny", "misc": ["biasanya kana saja", "dated term"], "field": []}],
-  misc_jm: ["biasanya kana saja", "dated term"],
-},
-
-{
-  id: 'vg-n5-00074',
-  word: '長い',
-  reading: 'ながい',
-  romaji: 'nagai',
-  meaning_id: 'panjang; lama',
-  meaning_en: 'long',
-  jlpt: 'n5',
-  pos: 'i-adj',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['kehidupan-sehari'],
-  register: 'neutral',
-  lawan_bicara: ['teman', 'umum'],
-  nuance: '短い = pendek (ukuran/waktu). Lawan: 長い. 時間が短い = waktunya singkat.',
-  conj_type: 'adj-i',
-  examples: [
-      {"jp": "この川は長いです。", "id": "Sungai ini panjang.", "level": "n5", "tags": ["alam-lingkungan"]}],
-  synonyms: [],
-  antonyms: ['vg-n5-00075'],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus',
-  jmdict_seq: '1429750',
-  frequency: 7500,
-  forms: [{"word": "長い", "info": []}, {"word": "永い", "info": []}],
-  meanings: [{"en": "long (distance, length)", "misc": [], "field": []}, {"en": "long (time); protracted; prolonged", "misc": [], "field": []}],
-},
-
-{
-  id: 'vg-n5-00075',
-  word: '短い',
-  reading: 'みじかい',
-  romaji: 'mijikai',
-  meaning_id: 'pendek; singkat',
-  meaning_en: 'short',
-  jlpt: 'n5',
-  pos: 'i-adj',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['kehidupan-sehari'],
-  register: 'neutral',
-  lawan_bicara: ['teman', 'umum'],
-  nuance: 'Means \'short\' (in length or duration). Opposite of 長い. Used for physical objects (短いスカート) and time (短い時間).',
-  conj_type: 'adj-i',
-  examples: [{"jp": "この映画は短いです。", "id": "Film ini singkat.", "level": "n5", "tags": ["kehidupan-sehari"]}],
-  synonyms: [],
-  antonyms: ['vg-n5-00074'],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus',
-  jmdict_seq: '1418620',
-  frequency: 12500,
-  forms: [{"word": "短い", "info": []}, {"word": "短かい", "info": ["search-only kanji form"]}],
-  meanings: [{"en": "short", "misc": [], "field": []}, {"en": "brief", "misc": [], "field": []}],
-},
-
-{
-  id: 'vg-n5-00076',
-  word: '好き',
-  reading: 'すき',
-  romaji: 'suki',
-  meaning_id: 'suka',
-  meaning_en: 'to like',
-  jlpt: 'n5',
-  pos: 'na-adj',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['kehidupan-sehari'],
-  register: 'neutral',
-  lawan_bicara: ['teman', 'umum'],
-  nuance: 'Secara gramatikal adalah な形容詞. 〜が好き (bukan 〜を).',
-  conj_type: 'adj-na',
-  examples: [
-      {"jp": "音楽が好きです。", "id": "Saya suka musik.", "level": "n5", "tags": ["kehidupan-sehari"]}],
-  synonyms: [],
-  antonyms: ['vg-n5-00077'],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus',
-  jmdict_seq: '2146440',
-  meanings: [{"en": "love of; affection for; enthusiast for; lover of; fan; -phile", "misc": [], "field": []}, {"en": "being attractive to; being liked by", "misc": [], "field": []}],
-},
-
-{
-  id: 'vg-n5-00077',
-  word: '嫌い',
-  reading: 'きらい',
-  romaji: 'kirai',
-  meaning_id: 'tidak suka',
-  meaning_en: 'to dislike',
-  jlpt: 'n5',
-  pos: 'na-adj',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['kehidupan-sehari'],
-  register: 'neutral',
-  lawan_bicara: ['teman'],
-  nuance: 'Bisa kasar jika dipakai langsung ke orang. 〜が嫌い.',
-  conj_type: 'adj-na',
-  examples: [{"jp": "虫が嫌いです。", "id": "Saya tidak suka serangga.", "level": "n5", "tags": ["kehidupan-sehari"]}],
-  synonyms: [],
-  antonyms: ['vg-n5-00076'],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus',
-  jmdict_seq: '2796330',
-},
-
-{
-  id: 'vg-n5-00078',
-  word: '上手',
-  reading: 'じょうず',
-  romaji: 'jouzu',
-  meaning_id: 'pandai, mahir',
-  meaning_en: 'skilled; good at',
-  jlpt: 'n5',
-  pos: 'na-adj',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['pendidikan'],
-  register: 'neutral',
-  lawan_bicara: ['teman', 'umum'],
-  nuance: 'Jangan pakai untuk diri sendiri — terkesan sombong. Gunakan 得意 untuk diri sendiri.',
-  conj_type: 'adj-na',
-  examples: [
-      {"jp": "田中さんは料理が上手ですね。", "id": "Tanaka-san pandai masak ya.", "level": "n5", "tags": ["makanan-minuman", "sopan-santun"]}],
-  synonyms: [],
-  antonyms: ['vg-n5-00079'],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus',
-  jmdict_seq: '1580400',
-  meanings: [{"en": "upper part", "misc": [], "field": []}, {"en": "upper stream; upper course of a river", "misc": [], "field": []}, {"en": "right side of the stage (audience's or camera's POV); stage left (actor's POV)", "misc": [], "field": []}, {"en": "skillful (in comparisons); dexterity", "misc": [], "field": []}, {"en": "over-arm grip on opponent's belt", "misc": [], "field": ["sumo"]}],
-},
-
-{
-  id: 'vg-n5-00079',
-  word: '下手',
-  reading: 'へた',
-  romaji: 'heta',
-  meaning_id: 'tidak pandai, kurang mahir',
-  meaning_en: 'unskilled; bad at',
-  jlpt: 'n5',
-  pos: 'na-adj',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['kehidupan-sehari'],
-  register: 'casual',
-  lawan_bicara: ['teman'],
-  nuance: 'Bisa kasar kalau dipakai ke orang lain tanpa konteks yang tepat.',
-  conj_type: 'adj-na',
-  examples: [{"jp": "歌が下手です。", "id": "Saya tidak pandai bernyanyi.", "level": "n5", "tags": ["kehidupan-sehari"]}],
-  synonyms: [],
-  antonyms: ['vg-n5-00078'],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus',
-  jmdict_seq: '1185200',
-  frequency: 7500,
-  meanings: [{"en": "unskillful; poor; awkward", "misc": [], "field": []}, {"en": "imprudent; untactful", "misc": [], "field": []}],
-},
-
-{
-  id: 'vg-n5-00080',
-  word: 'きれい',
-  reading: 'きれい',
-  romaji: 'kirei',
-  meaning_id: 'cantik; bersih',
-  meaning_en: 'beautiful; clean',
-  jlpt: 'n5',
-  pos: 'na-adj',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['kehidupan-sehari'],
-  register: 'neutral',
-  lawan_bicara: ['teman', 'umum'],
-  nuance: 'Dua arti: cantik/indah dan bersih. Perhatikan konteks.',
-  conj_type: 'adj-na',
-  examples: [
-      {"jp": "この花はきれいですね。", "id": "Bunga ini cantik ya.", "level": "n5", "tags": ["alam-lingkungan"]}],
-  synonyms: [],
-  antonyms: [],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus',
-  jmdict_seq: '1591900',
-  frequency: 1000,
-  forms: [{"word": "綺麗", "info": []}, {"word": "奇麗", "info": []}, {"word": "暉麗", "info": ["search-only kanji form"]}],
-  meanings: [{"en": "pretty; lovely; beautiful; fair", "misc": [], "field": []}, {"en": "clean; clear; pure; tidy; neat", "misc": ["biasanya kana saja"], "field": []}, {"en": "completely; entirely", "misc": ["biasanya kana saja"], "field": []}],
-  misc_jm: ["biasanya kana saja"],
-},
-
-{
-  id: 'vg-n5-00081',
-  word: '静か',
-  reading: 'しずか',
-  romaji: 'shizuka',
-  meaning_id: 'tenang, hening',
-  meaning_en: 'quiet; calm',
-  jlpt: 'n5',
-  pos: 'na-adj',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['kehidupan-sehari'],
-  register: 'neutral',
-  lawan_bicara: ['teman', 'umum'],
-  nuance: 'Describes peaceful environments, silence, or a calm personality. It\'s a na-adjective, meaning you must append \'na\' when directly modifying a noun.',
-  conj_type: 'adj-na',
-  examples: [
-      {"jp": "この図書館は静かです。", "id": "Perpustakaan ini tenang.", "level": "n5", "tags": ["pendidikan"]}],
-  synonyms: [],
-  antonyms: ['vg-n5-00082'],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus',
-  jmdict_seq: '1381820',
-  frequency: 2500,
-  forms: [{"word": "静か", "info": []}, {"word": "閑か", "info": ["kanji jarang dipakai"]}],
-  meanings: [{"en": "quiet; silent", "misc": [], "field": []}, {"en": "slow; unhurried", "misc": [], "field": []}, {"en": "calm; peaceful", "misc": [], "field": []}],
-},
-
-{
-  id: 'vg-n5-00082',
-  word: '賑やか',
-  reading: 'にぎやか',
-  romaji: 'nigiyaka',
-  meaning_id: 'ramai, meriah',
-  meaning_en: 'lively; bustling',
-  jlpt: 'n5',
-  pos: 'na-adj',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['kehidupan-sehari'],
-  register: 'neutral',
-  lawan_bicara: ['teman', 'umum'],
-  nuance: 'Na-adjective meaning \'lively\' or \'bustling.\' Describes places full of energy: 賑やかな街 (a lively town). Positive connotation, unlike うるさい (noisy).',
-  conj_type: 'adj-na',
-  examples: [{"jp": "渋谷はにぎやかです。", "id": "Shibuya itu ramai.", "level": "n5", "tags": ["perjalanan"]}],
-  synonyms: [],
-  antonyms: ['vg-n5-00081'],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus',
-  jmdict_seq: '1463480',
-  frequency: 1000,
-  meanings: [{"en": "bustling; busy; crowded; lively; prosperous; thriving", "misc": [], "field": []}, {"en": "lively (party, voices, etc.); loud; noisy; merry; cheerful", "misc": [], "field": []}],
-},
-
-{
-  id: 'vg-n5-00083',
-  word: '大切',
-  reading: 'たいせつ',
-  romaji: 'taisetsu',
-  meaning_id: 'penting, berharga',
-  meaning_en: 'important; precious',
-  jlpt: 'n5',
-  pos: 'na-adj',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['kehidupan-sehari'],
-  register: 'neutral',
-  lawan_bicara: ['teman', 'umum'],
-  nuance: 'Refers to something highly valued or carefully treated, often with an emotional attachment. It\'s a na-adjective and commonly used when telling someone to take care.',
-  conj_type: 'adj-na',
-  examples: [
-      {"jp": "健康が大切です。", "id": "Kesehatan itu penting.", "level": "n5", "tags": ["kesehatan"]}],
-  synonyms: [],
-  antonyms: [],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus',
-  jmdict_seq: '1643470',
-  forms: [{"word": "大切り", "info": []}, {"word": "大切", "info": ["okurigana tidak biasa"]}],
-},
-
-{
-  id: 'vg-n5-00145',
-  word: '白い',
-  reading: 'しろい',
-  romaji: 'shiroi',
-  meaning_id: 'putih',
-  meaning_en: 'white',
-  jlpt: 'n5',
-  pos: 'i-adj',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['kehidupan-sehari'],
-  register: 'neutral',
-  lawan_bicara: ['teman', 'umum'],
-  nuance: 'Warna sebagai adj-i: 白い. Sebagai noun: 白 (shiro).',
-  conj_type: 'adj-i',
-  examples: [
-      {"jp": "白い猫がいます。", "id": "Ada kucing putih.", "level": "n5", "tags": ["kehidupan-sehari"]}],
-  synonyms: [],
-  antonyms: ['vg-n5-00146'],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus',
-  jmdict_seq: '1474910',
-  frequency: 8000,
-  meanings: [{"en": "white", "misc": [], "field": []}, {"en": "blank (e.g. paper); uncolored; unmarked; spotless; immaculate", "misc": [], "field": []}, {"en": "innocent; not guilty; pure", "misc": [], "field": []}, {"en": "bright; vivid", "misc": ["archaic"], "field": []}, {"en": "inexperienced; naive; unrefined", "misc": ["archaic"], "field": []}],
-  misc_jm: ["arkais"],
-},
-
-{
-  id: 'vg-n5-00146',
-  word: '黒い',
-  reading: 'くろい',
-  romaji: 'kuroi',
-  meaning_id: 'hitam',
-  meaning_en: 'black',
-  jlpt: 'n5',
-  pos: 'i-adj',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['kehidupan-sehari'],
-  register: 'neutral',
-  lawan_bicara: ['teman', 'umum'],
-  nuance: 'Means \'black.\' One of the basic color i-adjectives. Also used figuratively: 腹黒い means \'scheming\' (literally \'black-bellied\').',
-  conj_type: 'adj-i',
-  examples: [{"jp": "黒いかばんを買いました。", "id": "Saya membeli tas hitam.", "level": "n5", "tags": ["belanja"]}],
-  synonyms: [],
-  antonyms: ['vg-n5-00145'],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus',
-  jmdict_seq: '1287420',
-  frequency: 9000,
-  meanings: [{"en": "black", "misc": [], "field": []}, {"en": "dark; blackish; sun-tanned (skin)", "misc": [], "field": []}, {"en": "suspicious; criminal; illicit", "misc": [], "field": []}, {"en": "darkened and dirty; sooty; covered in dirt", "misc": [], "field": []}, {"en": "evil; wicked; black-hearted", "misc": [], "field": []}, {"en": "inauspicious; ill-boding; unlucky", "misc": [], "field": []}],
-},
-
-{
-  id: 'vg-n5-00147',
-  word: '赤い',
-  reading: 'あかい',
-  romaji: 'akai',
-  meaning_id: 'merah',
-  meaning_en: 'red',
-  jlpt: 'n5',
-  pos: 'i-adj',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['kehidupan-sehari'],
-  register: 'neutral',
-  lawan_bicara: ['teman', 'umum'],
-  nuance: 'An i-adjective for the color red. It functions grammatically to describe red objects directly without needing the particle \'no\'.',
-  conj_type: 'adj-i',
-  examples: [
-      {"jp": "赤いりんごがおいしいです。", "id": "Apel merah itu enak.", "level": "n5", "tags": ["makanan-minuman"]}],
-  synonyms: [],
-  antonyms: [],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus',
-  jmdict_seq: '1383240',
-  frequency: 7500,
-  forms: [{"word": "赤い", "info": []}, {"word": "紅い", "info": []}, {"word": "朱い", "info": ["kanji jarang dipakai"]}, {"word": "緋い", "info": ["search-only kanji form"]}, {"word": "赭い", "info": ["search-only kanji form"]}, {"word": "丹い", "info": ["search-only kanji form"]}],
-  meanings: [{"en": "red; crimson; scarlet; vermilion", "misc": [], "field": []}, {"en": "Red; communist", "misc": ["percakapan kasual"], "field": []}],
-  misc_jm: ["kasual"],
-},
-
-{
-  id: 'vg-n5-00148',
-  word: '青い',
-  reading: 'あおい',
-  romaji: 'aoi',
-  meaning_id: 'biru; hijau (langit/tumbuhan)',
-  meaning_en: 'blue; green',
-  jlpt: 'n5',
-  pos: 'i-adj',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['kehidupan-sehari'],
-  register: 'neutral',
-  lawan_bicara: ['teman', 'umum'],
-  nuance: 'Bahasa Jepang klasik: 青 mencakup biru dan hijau untuk alam (青信号=lampu hijau).',
-  conj_type: 'adj-i',
-  examples: [
-      {"jp": "青い空がきれいです。", "id": "Langit biru itu indah.", "level": "n5", "tags": ["alam-lingkungan"]}],
-  synonyms: [],
-  antonyms: [],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus',
-  jmdict_seq: '1381390',
-  frequency: 12500,
-  forms: [{"word": "青い", "info": []}, {"word": "蒼い", "info": []}, {"word": "碧い", "info": ["kanji jarang dipakai"]}],
-  meanings: [{"en": "blue; azure", "misc": [], "field": []}, {"en": "green", "misc": [], "field": []}, {"en": "pale (facial color); gray; grey", "misc": [], "field": []}, {"en": "unripe; inexperienced", "misc": [], "field": []}],
-},
-
-{
-  id: 'vg-n5-00151',
-  word: '楽しい',
-  reading: 'たのしい',
-  romaji: 'tanoshii',
-  meaning_id: 'menyenangkan, mengasyikkan',
-  meaning_en: 'fun; enjoyable',
-  jlpt: 'n5',
-  pos: 'i-adj',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['emosi', 'kehidupan-sehari'],
-  register: 'neutral',
-  lawan_bicara: ['teman', 'umum'],
-  nuance: 'Menggambarkan perasaan senang yang aktif. Berbeda dengan 嬉しい (ureshii) yang lebih pasif/situasional.',
-  conj_type: 'adj-i',
-  examples: [{"jp": "パーティーはとても楽しかったです。", "id": "Pestanya sangat menyenangkan.", "level": "n5", "tags": ["emosi", "kehidupan-sehari"]}, {"jp": "日本語の勉強は楽しいです。", "id": "Belajar bahasa Jepang itu menyenangkan.", "level": "n5", "tags": ["pendidikan", "emosi"]}],
-  synonyms: [],
-  antonyms: [],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus',
-  jmdict_seq: '1207240',
-  frequency: 8000,
-  forms: [{"word": "楽しい", "info": []}, {"word": "愉しい", "info": ["kanji jarang dipakai"]}, {"word": "樂しい", "info": ["search-only kanji form"]}, {"word": "娯しい", "info": ["search-only kanji form"]}],
-},
-
-{
-  id: 'vg-n5-00167',
-  word: '同じ',
-  reading: 'おなじ',
-  romaji: 'onaji',
-  meaning_id: 'sama, serupa',
-  meaning_en: 'same; identical',
-  jlpt: 'n5',
-  pos: 'na-adj',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['kehidupan-sehari'],
-  register: 'neutral',
-  lawan_bicara: ['teman', 'umum'],
-  nuance: 'Unik: adj-na tapi tidak pakai な saat atributif (同じ学校, bukan 同じな学校).',
-  conj_type: 'adj-na',
-  examples: [{"jp": "私たちは同じ学校に通っています。", "id": "Kami bersekolah di sekolah yang sama.", "level": "n5", "tags": ["pendidikan"]}, {"jp": "二人は同じ意見です。", "id": "Keduanya berpendapat sama.", "level": "n5", "tags": ["kehidupan-sehari"]}],
-  synonyms: [],
-  antonyms: [],
-  see_also: ['vg-n5-00166'],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus',
-  jmdict_seq: '1451750',
-  frequency: 16500,
-  meanings: [{"en": "same; identical; equal; alike; equivalent", "misc": [], "field": []}, {"en": "anyway; in any case; if one must ...; if one has to ...; as long as ...", "misc": [], "field": []}],
-},
-
-{
-  id: 'vg-n5-00235',
-  word: 'あかい',
-  reading: 'あかい',
-  romaji: 'akai',
-  meaning_id: 'merah',
-  meaning_en: 'red',
-  jlpt: 'n5',
-  pos: 'i-adj',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['kehidupan-sehari'],
-  register: 'neutral',
-  lawan_bicara: [],
-  nuance: 'An i-adjective for the color red, written in hiragana. Used to directly describe red objects and can conjugate for past and negative forms.',
-  conj_type: 'adj-i',
-  examples: [{"jp": "赤いバラが好きです。", "id": "Saya suka bunga mawar merah.", "level": "n5", "tags": ["alam-lingkungan"]}],
-  synonyms: [],
-  antonyms: [],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus',
-  jmdict_seq: '1383240',
-  frequency: 7500,
-  forms: [{"word": "赤い", "info": []}, {"word": "紅い", "info": []}, {"word": "朱い", "info": ["kanji jarang dipakai"]}, {"word": "緋い", "info": ["search-only kanji form"]}, {"word": "赭い", "info": ["search-only kanji form"]}, {"word": "丹い", "info": ["search-only kanji form"]}],
-  meanings: [{"en": "red; crimson; scarlet; vermilion", "misc": [], "field": []}, {"en": "Red; communist", "misc": ["percakapan kasual"], "field": []}],
-  misc_jm: ["kasual"],
-},
-
-{
-  id: 'vg-n5-00236',
-  word: 'あおい',
-  reading: 'あおい',
-  romaji: 'aoi',
-  meaning_id: 'biru; hijau (rambu)',
-  meaning_en: 'blue; green (traffic)',
-  jlpt: 'n5',
-  pos: 'i-adj',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['kehidupan-sehari'],
-  register: 'neutral',
-  lawan_bicara: [],
-  nuance: '青い = biru (langit, laut). Di lampu lalu lintas, "hijau" disebut 青 di Jepang.',
-  conj_type: 'adj-i',
-  examples: [{"jp": "空が青いですね。", "id": "Langitnya biru ya.", "level": "n5", "tags": ["alam-lingkungan"]}],
-  synonyms: [],
-  antonyms: [],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus',
-  jmdict_seq: '1151180',
-  meanings: [{"en": "mallow (any plant of family Malvaceae)", "misc": ["biasanya kana saja"], "field": []}, {"en": "Asarum caulescens (species of wild ginger)", "misc": ["biasanya kana saja"], "field": []}],
-  misc_jm: ["biasanya kana saja"],
-},
-
-{
-  id: 'vg-n5-00237',
-  word: 'しろい',
-  reading: 'しろい',
-  romaji: 'shiroi',
-  meaning_id: 'putih',
-  meaning_en: 'white',
-  jlpt: 'n5',
-  pos: 'i-adj',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['kehidupan-sehari'],
-  register: 'neutral',
-  lawan_bicara: [],
-  nuance: 'An i-adjective describing the color white. Distinct from the noun form, it can conjugate and directly modify nouns.',
-  conj_type: 'adj-i',
-  examples: [
-      {"jp": "白いシャツを着ています。", "id": "Dia memakai kemeja putih.", "level": "n5", "tags": ["kehidupan-sehari"]}],
-  synonyms: [],
-  antonyms: [],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus',
-  jmdict_seq: '1474910',
-  frequency: 8000,
-  meanings: [{"en": "white", "misc": [], "field": []}, {"en": "blank (e.g. paper); uncolored; unmarked; spotless; immaculate", "misc": [], "field": []}, {"en": "innocent; not guilty; pure", "misc": [], "field": []}, {"en": "bright; vivid", "misc": ["archaic"], "field": []}, {"en": "inexperienced; naive; unrefined", "misc": ["archaic"], "field": []}],
-  misc_jm: ["arkais"],
-},
-
-{
-  id: 'vg-n5-00238',
-  word: 'くろい',
-  reading: 'くろい',
-  romaji: 'kuroi',
-  meaning_id: 'hitam',
-  meaning_en: 'black',
-  jlpt: 'n5',
-  pos: 'i-adj',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['kehidupan-sehari'],
-  register: 'neutral',
-  lawan_bicara: [],
-  nuance: 'An i-adjective for the color black, presented in hiragana. It is used to qualify objects and states rather than referring to the color conceptually.',
-  conj_type: 'adj-i',
-  examples: [{"jp": "黒い猫が好きです。", "id": "Saya suka kucing hitam.", "level": "n5", "tags": ["kehidupan-sehari"]}],
-  synonyms: [],
-  antonyms: [],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus',
-  jmdict_seq: '1287420',
-  frequency: 9000,
-  meanings: [{"en": "black", "misc": [], "field": []}, {"en": "dark; blackish; sun-tanned (skin)", "misc": [], "field": []}, {"en": "suspicious; criminal; illicit", "misc": [], "field": []}, {"en": "darkened and dirty; sooty; covered in dirt", "misc": [], "field": []}, {"en": "evil; wicked; black-hearted", "misc": [], "field": []}, {"en": "inauspicious; ill-boding; unlucky", "misc": [], "field": []}],
-},
-
-{
-  id: 'vg-n5-00239',
-  word: 'あたらしい',
-  reading: 'あたらしい',
-  romaji: 'atarashii',
-  meaning_id: 'baru',
-  meaning_en: 'new',
-  jlpt: 'n5',
-  pos: 'i-adj',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['kehidupan-sehari'],
-  register: 'neutral',
-  lawan_bicara: [],
-  nuance: 'Describes fresh, modern, or recently acquired things. It can refer to physical objects as well as abstract ideas like a new year.',
-  conj_type: 'adj-i',
-  examples: [{"jp": "新しいスマホを買いました。", "id": "Saya membeli smartphone baru.", "level": "n5", "tags": ["teknologi", "belanja"]}],
-  synonyms: [],
-  antonyms: [],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus',
-  jmdict_seq: '1361490',
-  frequency: 4000,
-  forms: [{"word": "新しい", "info": []}, {"word": "新らしい", "info": ["search-only kanji form"]}],
-},
-
-{
-  id: 'vg-n5-00240',
-  word: 'ふるい',
-  reading: 'ふるい',
-  romaji: 'furui',
-  meaning_id: 'tua; lama; kuno',
-  meaning_en: 'old (things), ancient',
-  jlpt: 'n5',
-  pos: 'i-adj',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['kehidupan-sehari'],
-  register: 'neutral',
-  lawan_bicara: [],
-  nuance: '古い = untuk benda. Untuk orang tua: 年を取った / 年配の。',
-  conj_type: 'adj-i',
-  examples: [{"jp": "この建物はとても古いです。", "id": "Bangunan ini sangat tua.", "level": "n5", "tags": ["perjalanan"]}],
-  synonyms: [],
-  antonyms: [],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus',
-  jmdict_seq: '1265070',
-  frequency: 8000,
-  forms: [{"word": "古い", "info": []}, {"word": "旧い", "info": ["kanji jarang dipakai"]}, {"word": "故い", "info": ["kanji jarang dipakai"]}],
-  meanings: [{"en": "old; aged; ancient; antiquated; antique; timeworn", "misc": [], "field": []}, {"en": "long; since long ago; time-honored", "misc": [], "field": []}, {"en": "of the distant past; long-ago", "misc": [], "field": []}, {"en": "stale; threadbare; hackneyed; corny", "misc": [], "field": []}, {"en": "old-fashioned; outmoded; out-of-date", "misc": [], "field": []}],
-},
-
-{
-  id: 'vg-n5-00241',
-  word: 'たかい',
-  reading: 'たかい',
-  romaji: 'takai',
-  meaning_id: 'mahal; tinggi',
-  meaning_en: 'expensive; tall/high',
-  jlpt: 'n5',
-  pos: 'i-adj',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['belanja'],
-  register: 'neutral',
-  lawan_bicara: [],
-  nuance: '高い = mahal (uang) ATAU tinggi (fisik). Konteks menentukan.',
-  conj_type: 'adj-i',
-  examples: [
-      {"jp": "このレストランは高いですが, おいしいです。", "id": "Restoran ini mahal tapi enak.", "level": "n5", "tags": ["makanan-minuman", "belanja"]}],
-  synonyms: [],
-  antonyms: [],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus',
-  jmdict_seq: '1283190',
-  frequency: 4000,
-  forms: [{"word": "高い", "info": []}, {"word": "高価い", "info": ["search-only kanji form"]}, {"word": "高ーい", "info": ["search-only kanji form"]}],
-  meanings: [{"en": "high; tall", "misc": [], "field": []}, {"en": "expensive; high-priced", "misc": [], "field": []}, {"en": "high (level); above average (in degree, quality, etc.)", "misc": [], "field": []}, {"en": "loud", "misc": [], "field": []}, {"en": "high-pitched; shrill", "misc": [], "field": []}],
-},
-
-{
-  id: 'vg-n5-00242',
-  word: 'やすい',
-  reading: 'やすい',
-  romaji: 'yasui',
-  meaning_id: 'murah',
-  meaning_en: 'cheap, inexpensive',
-  jlpt: 'n5',
-  pos: 'i-adj',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['belanja'],
-  register: 'neutral',
-  lawan_bicara: [],
-  nuance: 'Refers primarily to price and affordability. It is an i-adjective and does not generally carry the negative connotation of poor quality that \'cheap\' sometimes has in English.',
-  conj_type: 'adj-i',
-  examples: [
-      {"jp": "このスーパーは安くて便利です。", "id": "Supermarket ini murah dan praktis.", "level": "n5", "tags": ["belanja"]}],
-  synonyms: [],
-  antonyms: [],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus',
-  jmdict_seq: '1153670',
-  frequency: 23500,
-  forms: [{"word": "安い", "info": []}, {"word": "廉い", "info": []}],
-  meanings: [{"en": "cheap; inexpensive", "misc": [], "field": []}, {"en": "calm; peaceful; quiet", "misc": [], "field": []}],
-},
-
-{
-  id: 'vg-n5-00243',
-  word: 'ながい',
-  reading: 'ながい',
-  romaji: 'nagai',
-  meaning_id: 'panjang; lama',
-  meaning_en: 'long',
-  jlpt: 'n5',
-  pos: 'i-adj',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['kehidupan-sehari'],
-  register: 'neutral',
-  lawan_bicara: [],
-  nuance: 'Used for spatial length and temporal duration. It applies to distances, objects, time, and abstract things like stories.',
-  conj_type: 'adj-i',
-  examples: [
-      {"jp": "この道はとても長いです。", "id": "Jalan ini sangat panjang.", "level": "n5", "tags": ["perjalanan"]}],
-  synonyms: [],
-  antonyms: [],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus',
-  jmdict_seq: '1429750',
-  frequency: 7500,
-  forms: [{"word": "長い", "info": []}, {"word": "永い", "info": []}],
-  meanings: [{"en": "long (distance, length)", "misc": [], "field": []}, {"en": "long (time); protracted; prolonged", "misc": [], "field": []}],
-},
-
-{
-  id: 'vg-n5-00244',
-  word: 'みじかい',
-  reading: 'みじかい',
-  romaji: 'mijikai',
-  meaning_id: 'pendek; sebentar',
-  meaning_en: 'short',
-  jlpt: 'n5',
-  pos: 'i-adj',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['kehidupan-sehari'],
-  register: 'neutral',
-  lawan_bicara: [],
-  nuance: 'Refers to length or duration, written in hiragana. Cannot be used to describe someone\'s height, which requires a different term.',
-  conj_type: 'adj-i',
-  examples: [{"jp": "彼女の髪は短いです。", "id": "Rambutnya pendek.", "level": "n5", "tags": ["hubungan"]}],
-  synonyms: [],
-  antonyms: [],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus',
-  jmdict_seq: '1418620',
-  frequency: 12500,
-  forms: [{"word": "短い", "info": []}, {"word": "短かい", "info": ["search-only kanji form"]}],
-  meanings: [{"en": "short", "misc": [], "field": []}, {"en": "brief", "misc": [], "field": []}],
-},
-
-{
-  id: 'vg-n5-00245',
-  word: 'おおきい',
-  reading: 'おおきい',
-  romaji: 'ookii',
-  meaning_id: 'besar',
-  meaning_en: 'big, large',
-  jlpt: 'n5',
-  pos: 'i-adj',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['kehidupan-sehari'],
-  register: 'neutral',
-  lawan_bicara: [],
-  nuance: 'An i-adjective indicating large size, scale, or volume. It can describe everything from physical objects to loud voices.',
-  conj_type: 'adj-i',
-  examples: [{"jp": "大きい犬が好きです。", "id": "Saya suka anjing besar.", "level": "n5", "tags": ["kehidupan-sehari"]}],
-  synonyms: [],
-  antonyms: [],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus',
-  jmdict_seq: '1588880',
-  frequency: 3500,
-  forms: [{"word": "大きい", "info": []}, {"word": "巨きい", "info": ["search-only kanji form"]}],
-  meanings: [{"en": "big; large; great", "misc": [], "field": []}, {"en": "loud", "misc": [], "field": []}, {"en": "extensive; spacious", "misc": [], "field": []}, {"en": "important; decisive; valuable", "misc": [], "field": []}, {"en": "older; grown-up", "misc": [], "field": []}],
-},
-
-{
-  id: 'vg-n5-00246',
-  word: 'ちいさい',
-  reading: 'ちいさい',
-  romaji: 'chiisai',
-  meaning_id: 'kecil',
-  meaning_en: 'small, little',
-  jlpt: 'n5',
-  pos: 'i-adj',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['kehidupan-sehari'],
-  register: 'neutral',
-  lawan_bicara: [],
-  nuance: 'Indicates smallness in size, scale, or volume. When used for voices or sounds, it means quiet.',
-  conj_type: 'adj-i',
-  examples: [{"jp": "小さい猫がいます。", "id": "Ada kucing kecil.", "level": "n5", "tags": ["kehidupan-sehari"]}],
-  synonyms: [],
-  antonyms: [],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus',
-  jmdict_seq: '1347750',
-  frequency: 12000,
-  meanings: [{"en": "small; little; tiny", "misc": [], "field": []}, {"en": "slight; below average (in degree, amount, etc.); minor; small", "misc": [], "field": []}, {"en": "low (e.g. sound); soft (e.g. voice)", "misc": [], "field": []}, {"en": "unimportant; petty; insignificant; trifling; trivial", "misc": [], "field": []}, {"en": "young; juvenile", "misc": [], "field": []}],
-},
-
-{
-  id: 'vg-n5-00247',
-  word: 'あつい',
-  reading: 'あつい',
-  romaji: 'atsui',
-  meaning_id: 'panas (benda)',
-  meaning_en: 'hot (to the touch)',
-  jlpt: 'n5',
-  pos: 'i-adj',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['makanan-minuman'],
-  register: 'neutral',
-  lawan_bicara: [],
-  nuance: '熱い = panas saat disentuh/diminum. Beda: 暑い (atsui) = panas cuaca. Kanji beda!',
-  conj_type: 'adj-i',
-  examples: [{"jp": "スープが熱いので気をつけてください。", "id": "Supnya panas, hati-hati ya.", "level": "n5", "tags": ["makanan-minuman"]}],
-  synonyms: [],
-  antonyms: [],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus',
-  jmdict_seq: '1275320',
-  frequency: 14500,
-  forms: [{"word": "厚い", "info": []}, {"word": "篤い", "info": []}],
-  meanings: [{"en": "thick; deep; heavy", "misc": [], "field": []}, {"en": "kind; cordial; hospitable; warm; faithful", "misc": [], "field": []}, {"en": "serious (of an illness)", "misc": [], "field": []}, {"en": "abundant", "misc": [], "field": []}],
-},
-
-{
-  id: 'vg-n5-00248',
-  word: 'さむい',
-  reading: 'さむい',
-  romaji: 'samui',
-  meaning_id: 'dingin (cuaca)',
-  meaning_en: 'cold (weather/air)',
-  jlpt: 'n5',
-  pos: 'i-adj',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['alam-lingkungan'],
-  register: 'neutral',
-  lawan_bicara: [],
-  nuance: '寒い = dingin cuaca/suhu udara. Beda: 冷たい = dingin saat disentuh.',
-  conj_type: 'adj-i',
-  examples: [{"jp": "今日はとても寒いですね。", "id": "Hari ini sangat dingin ya.", "level": "n5", "tags": ["alam-lingkungan"]}],
-  synonyms: [],
-  antonyms: [],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus',
-  jmdict_seq: '1210360',
-  frequency: 20000,
-  meanings: [{"en": "cold (e.g. weather)", "misc": [], "field": []}, {"en": "uninteresting (esp. joke); lame; dull; weak; corny", "misc": [], "field": []}],
-},
-
-{
-  id: 'vg-n5-00249',
-  word: 'つめたい',
-  reading: 'つめたい',
-  romaji: 'tsumetai',
-  meaning_id: 'dingin (benda)',
-  meaning_en: 'cold (to the touch)',
-  jlpt: 'n5',
-  pos: 'i-adj',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['makanan-minuman'],
-  register: 'neutral',
-  lawan_bicara: [],
-  nuance: '冷たい = dingin saat disentuh. Beda: 寒い = cuaca dingin.',
-  conj_type: 'adj-i',
-  examples: [{"jp": "冷たい水をください。", "id": "Tolong berikan air dingin.", "level": "n5", "tags": ["makanan-minuman"]}],
-  synonyms: [],
-  antonyms: [],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus',
-  jmdict_seq: '1556730',
-  frequency: 14000,
-  meanings: [{"en": "cold (to the touch); chilly; icy; freezing", "misc": [], "field": []}, {"en": "(emotionally) cold; coldhearted; unfeeling; indifferent; unfriendly; distant", "misc": [], "field": []}],
-},
-
-{
-  id: 'vg-n5-00250',
-  word: 'あたたかい',
-  reading: 'あたたかい',
-  romaji: 'atatakai',
-  meaning_id: 'hangat',
-  meaning_en: 'warm',
-  jlpt: 'n5',
-  pos: 'i-adj',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['alam-lingkungan'],
-  register: 'neutral',
-  lawan_bicara: [],
-  nuance: 'Can refer to mild, pleasant weather or things that are warm to the touch, like food. The kanji changes depending on whether it describes climate or physical temperature.',
-  conj_type: 'adj-i',
-  examples: [
-      {"jp": "春は暖かくて気持ちいいですね。", "id": "Musim semi itu hangat dan enak ya.", "level": "n5", "tags": ["alam-lingkungan"]}],
-  synonyms: [],
-  antonyms: [],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus',
-  jmdict_seq: '1586420',
-  frequency: 10500,
-  forms: [{"word": "暖かい", "info": []}, {"word": "温かい", "info": []}, {"word": "暖い", "info": ["search-only kanji form"]}],
-  meanings: [{"en": "warm; mild; (pleasantly) hot", "misc": [], "field": []}, {"en": "considerate; kind; genial", "misc": [], "field": []}, {"en": "warm (of a colour); mellow", "misc": [], "field": []}, {"en": "having enough money", "misc": [], "field": []}],
-},
-
-{
-  id: 'vg-n5-00251',
-  word: 'すずしい',
-  reading: 'すずしい',
-  romaji: 'suzushii',
-  meaning_id: 'sejuk',
-  meaning_en: 'cool, refreshing',
-  jlpt: 'n5',
-  pos: 'i-adj',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['alam-lingkungan'],
-  register: 'neutral',
-  lawan_bicara: [],
-  nuance: 'Refers to a pleasant, cool temperature, usually in the context of weather or a breeze. It has a positive connotation compared to feeling uncomfortably cold.',
-  conj_type: 'adj-i',
-  examples: [
-      {"jp": "秋は涼しくて好きです。", "id": "Saya suka musim gugur karena sejuk.", "level": "n5", "tags": ["alam-lingkungan"]}],
-  synonyms: [],
-  antonyms: [],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus',
-  jmdict_seq: '1554370',
-  frequency: 15000,
-  forms: [{"word": "涼しい", "info": []}, {"word": "凉しい", "info": ["kanji jarang dipakai"]}],
-  meanings: [{"en": "cool; refreshing", "misc": [], "field": []}, {"en": "clear (e.g. eyes); bright", "misc": [], "field": []}, {"en": "clear; distinct", "misc": [], "field": []}, {"en": "composed (facial expression); unruffled; unconcerned", "misc": [], "field": []}, {"en": "pure; upright; innocent", "misc": ["archaic"], "field": []}],
-  misc_jm: ["arkais"],
-},
-
-{
-  id: 'vg-n5-00252',
-  word: 'たのしい',
-  reading: 'たのしい',
-  romaji: 'tanoshii',
-  meaning_id: 'menyenangkan; seru',
-  meaning_en: 'fun, enjoyable',
-  jlpt: 'n5',
-  pos: 'i-adj',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['emosi'],
-  register: 'neutral',
-  lawan_bicara: [],
-  nuance: 'Describes an experience or activity that brings joy and pleasure. It is a subjective feeling and typically used to express one\'s own enjoyment.',
-  conj_type: 'adj-i',
-  examples: [{"jp": "日本語の授業はとても楽しいです。", "id": "Pelajaran bahasa Jepang sangat menyenangkan.", "level": "n5", "tags": ["pendidikan", "emosi"]}],
-  synonyms: [],
-  antonyms: [],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus',
-  jmdict_seq: '1207240',
-  frequency: 8000,
-  forms: [{"word": "楽しい", "info": []}, {"word": "愉しい", "info": ["kanji jarang dipakai"]}, {"word": "樂しい", "info": ["search-only kanji form"]}, {"word": "娯しい", "info": ["search-only kanji form"]}],
-},
-
-{
-  id: 'vg-n5-00253',
-  word: 'うれしい',
-  reading: 'うれしい',
-  romaji: 'ureshii',
-  meaning_id: 'senang; gembira',
-  meaning_en: 'happy, glad',
-  jlpt: 'n5',
-  pos: 'i-adj',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['emosi'],
-  register: 'neutral',
-  lawan_bicara: [],
-  nuance: '嬉しい = senang atas sesuatu yang diterima. 楽しい = saat melakukan sesuatu yang menyenangkan.',
-  conj_type: 'adj-i',
-  examples: [
-      {"jp": "合格して, とても嬉しいです。", "id": "Saya sangat senang bisa lulus.", "level": "n5", "tags": ["emosi", "pendidikan"]}],
-  synonyms: [],
-  antonyms: [],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus',
-  jmdict_seq: '1219510',
-  frequency: 1000,
-  forms: [{"word": "嬉しい", "info": []}, {"word": "欣しい", "info": ["search-only kanji form"]}],
-  meanings: [{"en": "happy; glad; pleased; delighted; overjoyed", "misc": [], "field": []}, {"en": "joyful; delightful; gratifying; pleasant", "misc": [], "field": []}],
-},
-
-{
-  id: 'vg-n5-00254',
-  word: 'かわいい',
-  reading: 'かわいい',
-  romaji: 'kawaii',
-  meaning_id: 'lucu; menggemaskan',
-  meaning_en: 'cute, adorable',
-  jlpt: 'n5',
-  pos: 'i-adj',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['kehidupan-sehari'],
-  register: 'neutral',
-  lawan_bicara: [],
-  nuance: 'A versatile i-adjective used for babies, animals, clothing, and anything endearing. It implies affection and a sense of charm.',
-  conj_type: 'adj-i',
-  examples: [
-      {"jp": "この猫はとても可愛いですね。", "id": "Kucing ini sangat lucu ya.", "level": "n5", "tags": ["kehidupan-sehari"]}],
-  synonyms: [],
-  antonyms: [],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus',
-  jmdict_seq: '1577200',
-  frequency: 16000,
-  meanings: [{"en": "cute; adorable; charming; lovely; pretty", "misc": ["biasanya kana saja"], "field": []}, {"en": "dear; precious; darling; pet", "misc": ["biasanya kana saja"], "field": []}, {"en": "innocent; childlike; childish; lovable", "misc": ["biasanya kana saja"], "field": []}, {"en": "dainty; little; tiny", "misc": ["biasanya kana saja"], "field": []}],
-  misc_jm: ["biasanya kana saja"],
-},
-
-{
-  id: 'vg-n5-00255',
-  word: 'からい',
-  reading: 'からい',
-  romaji: 'karai',
-  meaning_id: 'pedas; asin',
-  meaning_en: 'spicy; salty',
-  jlpt: 'n5',
-  pos: 'i-adj',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['makanan-minuman'],
-  register: 'neutral',
-  lawan_bicara: [],
-  nuance: '辛い = pedas (料理が辛い) ATAU asin (塩辛い). Konteks menentukan.',
-  conj_type: 'adj-i',
-  examples: [
-      {"jp": "この料理は辛いですか。", "id": "Apakah masakan ini pedas?", "level": "n5", "tags": ["makanan-minuman"]}],
-  synonyms: [],
-  antonyms: [],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus',
-  jmdict_seq: '1365850',
-  frequency: 12000,
-  meanings: [{"en": "spicy; hot", "misc": [], "field": []}, {"en": "salty", "misc": [], "field": []}, {"en": "harsh (criticism); severe (punishment); strict", "misc": [], "field": []}, {"en": "painful; bitter; difficult; tough", "misc": [], "field": []}],
-},
-
-{
-  id: 'vg-n5-00256',
-  word: 'あまい',
-  reading: 'あまい',
-  romaji: 'amai',
-  meaning_id: 'manis',
-  meaning_en: 'sweet',
-  jlpt: 'n5',
-  pos: 'i-adj',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['makanan-minuman'],
-  register: 'neutral',
-  lawan_bicara: ['teman', 'umum'],
-  nuance: 'Lawan kata: からい (spicy/salty)',
-  conj_type: 'adj-i',
-  examples: [{"jp": "このケーキはとても甘いです。", "id": "Kue ini sangat manis.", "level": "n5", "tags": ["makanan-minuman"]}],
-  synonyms: [],
-  antonyms: [],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus',
-  jmdict_seq: '1213400',
-  frequency: 9500,
-  meanings: [{"en": "sweet-tasting; sweet; sugary; sugared", "misc": [], "field": []}, {"en": "fragrant (smelling); sweet (music)", "misc": [], "field": []}, {"en": "lightly salted; light in salt; not spicy", "misc": [], "field": []}, {"en": "naive; overly optimistic; soft on; generous; indulgent; easy-going; lenient", "misc": [], "field": []}, {"en": "half-hearted; not finished properly", "misc": [], "field": []}, {"en": "insufficient; not satisfactory; inadequate; loose", "misc": [], "field": []}, {"en": "mild", "misc": [], "field": []}, {"en": "tempting; enticing; luring", "misc": [], "field": []}],
-},
-
-{
-  id: 'vg-n5-00257',
-  word: 'にがい',
-  reading: 'にがい',
-  romaji: 'nigai',
-  meaning_id: 'pahit',
-  meaning_en: 'bitter',
-  jlpt: 'n5',
-  pos: 'i-adj',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['makanan-minuman'],
-  register: 'neutral',
-  lawan_bicara: ['teman', 'umum'],
-  nuance: 'にがい (苦い) = pahit. 苦手 (nigate) = tidak pandai/tidak suka — kata turunan penting.',
-  conj_type: 'adj-i',
-  examples: [
-      {"jp": "コーヒーは苦いですが, 好きです。", "id": "Kopi itu pahit tapi saya suka.", "level": "n5", "tags": ["makanan-minuman"]}],
-  synonyms: [],
-  antonyms: [],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus',
-  jmdict_seq: '1244310',
-  frequency: 5500,
-},
-
-{
-  id: 'vg-n5-00258',
-  word: 'いそがしい',
-  reading: 'いそがしい',
-  romaji: 'isogashii',
-  meaning_id: 'sibuk',
-  meaning_en: 'busy',
-  jlpt: 'n5',
-  pos: 'i-adj',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['pekerjaan'],
-  register: 'neutral',
-  lawan_bicara: [],
-  nuance: 'Describes a person\'s schedule or state of having a lot to do. It should not be used to describe a place as bustling or busy.',
-  conj_type: 'adj-i',
-  examples: [
-      {"jp": "今週はとても忙しいです。", "id": "Minggu ini saya sangat sibuk.", "level": "n5", "tags": ["pekerjaan"]}],
-  synonyms: [],
-  antonyms: [],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus',
-  jmdict_seq: '1519290',
-  frequency: 9000,
-  forms: [{"word": "忙しい", "info": []}, {"word": "忙がしい", "info": ["search-only kanji form"]}],
-  meanings: [{"en": "busy; occupied; hectic", "misc": [], "field": []}, {"en": "restless; hurried; fidgety", "misc": [], "field": []}],
-},
-
-{
-  id: 'vg-n5-00259',
-  word: 'ひま',
-  reading: 'ひま',
-  romaji: 'hima',
-  meaning_id: 'santai; tidak sibuk; punya waktu luang',
-  meaning_en: 'free time, not busy',
-  jlpt: 'n5',
-  pos: 'na-adj',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['kehidupan-sehari'],
-  register: 'neutral',
-  lawan_bicara: [],
-  nuance: 'A na-adjective or noun describing a state of having nothing to do or being unoccupied. It contrasts with being busy and can sometimes imply boredom.',
-  conj_type: 'adj-na',
-  examples: [
-      {"jp": "今週末はひまですか。", "id": "Apakah akhir pekan ini kamu bebas?", "level": "n5", "tags": ["hubungan"]}],
-  synonyms: [],
-  antonyms: [],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus',
-  jmdict_seq: '1571650',
-},
-
-{
-  id: 'vg-n5-00260',
-  word: 'にぎやか',
-  reading: 'にぎやか',
-  romaji: 'nigiyaka',
-  meaning_id: 'ramai; meriah',
-  meaning_en: 'lively, bustling',
-  jlpt: 'n5',
-  pos: 'na-adj',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['kehidupan-sehari'],
-  register: 'neutral',
-  lawan_bicara: [],
-  nuance: 'A na-adjective for a bustling atmosphere filled with people and cheerful activity. It is generally positive and not used to mean just noisy.',
-  conj_type: 'adj-na',
-  examples: [
-      {"jp": "渋谷はとても賑やかな街です。", "id": "Shibuya adalah kota yang sangat ramai.", "level": "n5", "tags": ["perjalanan"]}],
-  synonyms: [],
-  antonyms: [],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus',
-  jmdict_seq: '1463480',
-  frequency: 1000,
-  meanings: [{"en": "bustling; busy; crowded; lively; prosperous; thriving", "misc": [], "field": []}, {"en": "lively (party, voices, etc.); loud; noisy; merry; cheerful", "misc": [], "field": []}],
-},
-
-{
-  id: 'vg-n5-00261',
-  word: 'しずか',
-  reading: 'しずか',
-  romaji: 'shizuka',
-  meaning_id: 'tenang; sepi; sunyi',
-  meaning_en: 'quiet, peaceful',
-  jlpt: 'n5',
-  pos: 'na-adj',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['kehidupan-sehari'],
-  register: 'neutral',
-  lawan_bicara: [],
-  nuance: 'A na-adjective denoting a lack of noise or a calm environment. It can describe a peaceful location or a gentle, quiet person.',
-  conj_type: 'adj-na',
-  examples: [{"jp": "図書館は静かです。", "id": "Perpustakaan itu tenang.", "level": "n5", "tags": ["pendidikan"]}],
-  synonyms: [],
-  antonyms: [],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus',
-  jmdict_seq: '1381820',
-  frequency: 2500,
-  forms: [{"word": "静か", "info": []}, {"word": "閑か", "info": ["kanji jarang dipakai"]}],
-  meanings: [{"en": "quiet; silent", "misc": [], "field": []}, {"en": "slow; unhurried", "misc": [], "field": []}, {"en": "calm; peaceful", "misc": [], "field": []}],
-},
-
-{
-  id: 'vg-n5-00262',
-  word: 'すき',
-  reading: 'すき',
-  romaji: 'suki',
-  meaning_id: 'suka; favorit',
-  meaning_en: 'to like, favorite',
-  jlpt: 'n5',
-  pos: 'na-adj',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['emosi'],
-  register: 'neutral',
-  lawan_bicara: [],
-  nuance: '〜が好きです = saya suka ~. Derajat: 大好き > 好き。',
-  conj_type: 'adj-na',
-  examples: [
-      {"jp": "日本語が好きです。", "id": "Saya suka bahasa Jepang.", "level": "n5", "tags": ["emosi", "pendidikan"]}],
-  synonyms: [],
-  antonyms: [],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus',
-  jmdict_seq: '1253780',
-  frequency: 21500,
-  forms: [{"word": "隙", "info": []}, {"word": "透き", "info": []}],
-  meanings: [{"en": "gap; opening; room; space", "misc": [], "field": []}, {"en": "break; interval; spare moment; spare time", "misc": [], "field": []}, {"en": "unguarded moment; carelessness; weak spot; chink in one's armor; flaw; fault", "misc": [], "field": []}, {"en": "chance; opportunity", "misc": [], "field": []}],
-},
-
-{
-  id: 'vg-n5-00263',
-  word: 'きらい',
-  reading: 'きらい',
-  romaji: 'kirai',
-  meaning_id: 'tidak suka; benci',
-  meaning_en: 'dislike, hate',
-  jlpt: 'n5',
-  pos: 'na-adj',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['emosi'],
-  register: 'neutral',
-  lawan_bicara: [],
-  nuance: '嫌い = tidak suka. 大嫌い = sangat benci. Lawan: 好き.',
-  conj_type: 'adj-na',
-  examples: [
-      {"jp": "野菜が嫌いな子どもが多いです。", "id": "Banyak anak yang tidak suka sayuran.", "level": "n5", "tags": ["makanan-minuman", "keluarga"]}],
-  synonyms: [],
-  antonyms: [],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus',
-  jmdict_seq: '1221210',
-  frequency: 5500,
-  misc_jm: ["abbreviation"],
-},
-
-{
-  id: 'vg-n5-00264',
-  word: 'じょうず',
-  reading: 'じょうず',
-  romaji: 'jouzu',
-  meaning_id: 'pandai; mahir',
-  meaning_en: 'skilled, good at',
-  jlpt: 'n5',
-  pos: 'na-adj',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['pendidikan'],
-  register: 'neutral',
-  lawan_bicara: [],
-  nuance: '上手 = pandai (bicara tentang orang lain). Untuk diri sendiri: 得意 (tokui). Lawan: 下手.',
-  conj_type: 'adj-na',
-  examples: [
-      {"jp": "彼女はピアノが上手ですね。", "id": "Dia pandai bermain piano ya.", "level": "n5", "tags": ["pendidikan"]}],
-  synonyms: [],
-  antonyms: [],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus',
-  jmdict_seq: '1353320',
-  frequency: 6000,
-  meanings: [{"en": "skillful; skilled; proficient; good (at); adept; clever", "misc": [], "field": []}, {"en": "flattery", "misc": [], "field": []}],
-},
-
-{
-  id: 'vg-n5-00265',
-  word: 'へた',
-  reading: 'へた',
-  romaji: 'heta',
-  meaning_id: 'tidak pandai; kurang mahir',
-  meaning_en: 'unskilled, bad at',
-  jlpt: 'n5',
-  pos: 'na-adj',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['pendidikan'],
-  register: 'neutral',
-  lawan_bicara: [],
-  nuance: '下手 = tidak pandai. Lawan: 上手。 苦手 (nigate) = kurang ahli/kurang suka.',
-  conj_type: 'adj-na',
-  examples: [
-      {"jp": "私は料理が下手です。", "id": "Saya tidak pandai memasak.", "level": "n5", "tags": ["makanan-minuman"]}],
-  synonyms: [],
-  antonyms: [],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus',
-  jmdict_seq: '1011310',
-  misc_jm: ["biasanya kana saja"],
-},
-
-{
-  id: 'vg-n5-00266',
-  word: 'げんき',
-  reading: 'げんき',
-  romaji: 'genki',
-  meaning_id: 'sehat; bersemangat',
-  meaning_en: 'healthy, energetic',
-  jlpt: 'n5',
-  pos: 'na-adj',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['kesehatan'],
-  register: 'neutral',
-  lawan_bicara: [],
-  nuance: 'A na-adjective describing vitality, good health, and high spirits. It is frequently used in greetings to ask about someone\'s well-being.',
-  conj_type: 'adj-na',
-  examples: [{"jp": "お元気ですか。", "id": "Apakah kabarmu baik?", "level": "n5", "tags": ["sopan-santun", "kesehatan"]}],
-  synonyms: [],
-  antonyms: [],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus',
-  jmdict_seq: '1260720',
-  frequency: 3000,
-  forms: [{"word": "元気", "info": []}, {"word": "元氣", "info": ["search-only kanji form"]}],
-  meanings: [{"en": "lively; full of spirit; energetic; vigorous; vital; spirited", "misc": [], "field": []}, {"en": "healthy; well; fit; in good health", "misc": [], "field": []}],
-},
-
-{
-  id: 'vg-n5-00267',
-  word: 'たいせつ',
-  reading: 'たいせつ',
-  romaji: 'taisetsu',
-  meaning_id: 'penting; berharga',
-  meaning_en: 'important, precious',
-  jlpt: 'n5',
-  pos: 'na-adj',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['emosi'],
-  register: 'neutral',
-  lawan_bicara: [],
-  nuance: '大切 = berharga (emosional). Berbeda: 重要 (juuyou) = penting (objektif/formal).',
-  conj_type: 'adj-na',
-  examples: [{"jp": "友達はとても大切な存在です。", "id": "Teman adalah keberadaan yang sangat berharga.", "level": "n5", "tags": ["hubungan", "emosi"]}],
-  synonyms: [],
-  antonyms: [],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus',
-  jmdict_seq: '1414340',
-  frequency: 1000,
-  meanings: [{"en": "important; significant; serious; crucial", "misc": [], "field": []}, {"en": "precious; valuable; dear; cherished; beloved", "misc": [], "field": []}, {"en": "careful", "misc": [], "field": []}],
-},
-
-{
-  id: 'vg-n5-00268',
-  word: 'だいじょうぶ',
-  reading: 'だいじょうぶ',
-  romaji: 'daijoubu',
-  meaning_id: 'tidak apa-apa; baik-baik saja',
-  meaning_en: 'it\'s okay, no problem',
-  jlpt: 'n5',
-  pos: 'na-adj',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['kehidupan-sehari'],
-  register: 'neutral',
-  lawan_bicara: [],
-  nuance: '大丈夫 = serbaguna: persetujuan, ketenangan, atau penolakan halus.',
-  conj_type: 'adj-na',
-  examples: [
-      {"jp": "大丈夫ですか。怪我はないですか。", "id": "Apakah kamu baik-baik saja? Tidak ada yang luka?", "level": "n5", "tags": ["kesehatan", "hubungan"]}],
-  synonyms: [],
-  antonyms: [],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus',
-  jmdict_seq: '1414150',
-  frequency: 3000,
-  meanings: [{"en": "safe; secure; sound; problem-free; without fear; all right; alright; OK; okay", "misc": [], "field": []}, {"en": "certainly; surely; undoubtedly", "misc": [], "field": []}, {"en": "no thanks; I'm good; that's alright", "misc": ["percakapan kasual"], "field": []}, {"en": "great man; fine figure of a man", "misc": ["archaic"], "field": []}],
-  misc_jm: ["arkais", "kasual"],
-},
-
-{
-  id: 'vg-n5-00269',
-  word: 'むずかしい',
-  reading: 'むずかしい',
-  romaji: 'muzukashii',
-  meaning_id: 'sulit; susah',
-  meaning_en: 'difficult',
-  jlpt: 'n5',
-  pos: 'i-adj',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['pendidikan'],
-  register: 'neutral',
-  lawan_bicara: [],
-  nuance: 'Can mean hard to understand or accomplish, and is also a polite way to indirectly say \'no\' or \'impossible\'. It implies complexity and challenge.',
-  conj_type: 'adj-i',
-  examples: [
-      {"jp": "この問題はとても難しいです。", "id": "Soal ini sangat sulit.", "level": "n5", "tags": ["pendidikan"]}],
-  synonyms: [],
-  antonyms: [],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus',
-  jmdict_seq: '1460850',
-  frequency: 3500,
-  forms: [{"word": "難しい", "info": []}, {"word": "六借しい", "info": ["search-only kanji form"]}, {"word": "六ヶ敷い", "info": ["search-only kanji form"]}, {"word": "六かしい", "info": ["search-only kanji form"]}],
-  meanings: [{"en": "difficult; hard; troublesome; complicated; serious (disease, problem, etc.)", "misc": [], "field": []}, {"en": "impossible; unfeasible", "misc": ["euphemistic"], "field": []}, {"en": "fussy; particular; fastidious; hard to please; displeased", "misc": [], "field": []}, {"en": "gloomy; glum; sullen; serious (look)", "misc": [], "field": []}, {"en": "dirty; unclean; filthy; detestable", "misc": ["archaic"], "field": []}, {"en": "unpleasant; uncomfortable; creepy; spooky", "misc": ["archaic"], "field": []}],
-  misc_jm: ["arkais", "euphemistic"],
-},
-
-{
-  id: 'vg-n5-00270',
-  word: 'やさしい',
-  reading: 'やさしい',
-  romaji: 'yasashii',
-  meaning_id: 'baik hati; lembut',
-  meaning_en: 'kind, gentle',
-  jlpt: 'n5',
-  pos: 'i-adj',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['emosi'],
-  register: 'neutral',
-  lawan_bicara: [],
-  nuance: '優しい = baik hati. HATI-HATI: 易しい = mudah. Kanji berbeda!',
-  conj_type: 'adj-i',
-  examples: [
-      {"jp": "田中さんはとても優しい人です。", "id": "Tanaka-san adalah orang yang sangat baik hati.", "level": "n5", "tags": ["hubungan", "emosi"]}],
-  synonyms: [],
-  antonyms: [],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus',
-  jmdict_seq: '1157000',
-  frequency: 19500,
-  misc_jm: ["biasanya kana saja"],
-},
-
-{
-  id: 'vg-n5-00271',
-  word: 'おもしろい',
-  reading: 'おもしろい',
-  romaji: 'omoshiroi',
-  meaning_id: 'menarik, seru',
-  meaning_en: 'interesting, fun',
-  jlpt: 'n5',
-  pos: 'i-adj',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['emosi'],
-  register: 'neutral',
-  lawan_bicara: ['teman', 'umum'],
-  nuance: 'Lawan kata: つまらない (boring)',
-  conj_type: 'adj-i',
-  examples: [
-      {"jp": "この本はとても面白いです。", "id": "Buku ini sangat menarik.", "level": "n5", "tags": ["emosi", "kehidupan-sehari"]}],
-  synonyms: [],
-  antonyms: [],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus',
-  jmdict_seq: '1533580',
-  frequency: 9500,
-  meanings: [{"en": "interesting; fascinating; intriguing; enthralling", "misc": [], "field": []}, {"en": "amusing; funny; comical", "misc": [], "field": []}, {"en": "enjoyable; fun; entertaining; pleasant; agreeable", "misc": [], "field": []}, {"en": "good; satisfactory; favourable; desirable; encouraging", "misc": [], "field": []}],
-},
-
-{
-  id: 'vg-n5-00272',
-  word: 'ひろい',
-  reading: 'ひろい',
-  romaji: 'hiroi',
-  meaning_id: 'luas, lebar',
-  meaning_en: 'wide, large',
-  jlpt: 'n5',
-  pos: 'i-adj',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['kualitas'],
-  register: 'neutral',
-  lawan_bicara: ['teman', 'umum'],
-  nuance: 'ひろい (広い) = luas/lebar. 広い部屋 = kamar luas. Juga: 広い心 = berjiwa besar.',
-  conj_type: 'adj-i',
-  examples: [{"jp": "この公園はとても広いです。", "id": "Taman ini sangat luas.", "level": "n5", "tags": ["alam-lingkungan", "perjalanan"]}],
-  synonyms: [],
-  antonyms: [],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus',
-  jmdict_seq: '1211900',
-},
-
-{
-  id: 'vg-n5-00273',
-  word: 'せまい',
-  reading: 'せまい',
-  romaji: 'semai',
-  meaning_id: 'sempit',
-  meaning_en: 'narrow, small (space)',
-  jlpt: 'n5',
-  pos: 'i-adj',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['kualitas'],
-  register: 'neutral',
-  lawan_bicara: ['teman', 'umum'],
-  nuance: 'Lawan kata: ひろい (wide/large)',
-  conj_type: 'adj-i',
-  examples: [{"jp": "私の部屋はせまいですが, きれいです。", "id": "Kamar saya sempit tapi bersih.", "level": "n5", "tags": ["kehidupan-sehari"]}],
-  synonyms: [],
-  antonyms: [],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus',
-  jmdict_seq: '1237680',
-  frequency: 23500,
-  meanings: [{"en": "narrow; confined; small; cramped", "misc": [], "field": []}, {"en": "limited; narrow-minded; confining", "misc": [], "field": []}],
-},
-
-{
-  id: 'vg-n5-00274',
-  word: 'とおい',
-  reading: 'とおい',
-  romaji: 'tooi',
-  meaning_id: 'jauh',
-  meaning_en: 'far',
-  jlpt: 'n5',
-  pos: 'i-adj',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['perjalanan'],
-  register: 'neutral',
-  lawan_bicara: ['teman', 'umum'],
-  nuance: 'Lawan kata: ちかい (close)',
-  conj_type: 'adj-i',
-  examples: [{"jp": "駅から家まで遠いですか。", "id": "Apakah dari stasiun ke rumah jauh?", "level": "n5", "tags": ["perjalanan"]}],
-  synonyms: [],
-  antonyms: [],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus',
-  jmdict_seq: '1177800',
-  frequency: 17000,
-  meanings: [{"en": "far; distant; far away; a long way off; in the distance", "misc": [], "field": []}, {"en": "distant (past); remote (in time); remote; far-removed (in time)", "misc": [], "field": []}, {"en": "distant (relationship or kinship); having little to do (with someone)", "misc": [], "field": []}, {"en": "far (from something else in quality, degree, etc.); not similar; way off", "misc": [], "field": []}, {"en": "hard (of hearing)", "misc": [], "field": []}, {"en": "nearsighted", "misc": [], "field": []}],
-},
-
-{
-  id: 'vg-n5-00275',
-  word: 'ちかい',
-  reading: 'ちかい',
-  romaji: 'chikai',
-  meaning_id: 'dekat',
-  meaning_en: 'close, near',
-  jlpt: 'n5',
-  pos: 'i-adj',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['perjalanan'],
-  register: 'neutral',
-  lawan_bicara: ['teman', 'umum'],
-  nuance: 'ちかい (近い) = dekat. 近くに = di dekat sini. Lawan: 遠い.',
-  conj_type: 'adj-i',
-  examples: [{"jp": "学校はここから近いです。", "id": "Sekolah dekat dari sini.", "level": "n5", "tags": ["perjalanan", "pendidikan"]}],
-  synonyms: [],
-  antonyms: [],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus',
-  jmdict_seq: '1242130',
-  frequency: 10000,
-  meanings: [{"en": "near; close; short (distance)", "misc": [], "field": []}, {"en": "close (in time); soon", "misc": [], "field": []}, {"en": "close (relationship); friendly; intimate", "misc": [], "field": []}, {"en": "closely related", "misc": [], "field": []}, {"en": "similar; almost the same; close to; nearly", "misc": [], "field": []}],
-},
-
-{
-  id: 'vg-n5-00276',
-  word: 'おおい',
-  reading: 'おおい',
-  romaji: 'ooi',
-  meaning_id: 'banyak',
-  meaning_en: 'many, numerous',
-  jlpt: 'n5',
-  pos: 'i-adj',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['kehidupan-sehari'],
-  register: 'neutral',
-  lawan_bicara: [],
-  nuance: '多い = banyak (adj). Berbeda dari たくさん (adv). 多い人 = banyak orang.',
-  conj_type: 'adj-i',
-  examples: [
-      {"jp": "今日は人が多いですね。", "id": "Hari ini banyak orang ya.", "level": "n5", "tags": ["kehidupan-sehari"]}],
-  synonyms: [],
-  antonyms: [],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus',
-  jmdict_seq: '1407460',
-  frequency: 22000,
-  meanings: [{"en": "many; numerous; a lot", "misc": [], "field": []}, {"en": "large amount of; large quantity of; a lot; much", "misc": [], "field": []}, {"en": "frequent; common", "misc": [], "field": []}],
-},
-
-{
-  id: 'vg-n5-00277',
-  word: 'すくない',
-  reading: 'すくない',
-  romaji: 'sukunai',
-  meaning_id: 'sedikit; tidak banyak',
-  meaning_en: 'few, not many',
-  jlpt: 'n5',
-  pos: 'i-adj',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['kehidupan-sehari'],
-  register: 'neutral',
-  lawan_bicara: [],
-  nuance: '少ない (adj) = sedikit (kuantitas). Berbeda: 少し (adv).',
-  conj_type: 'adj-i',
-  examples: [{"jp": "今日はお客さんが少ないです。", "id": "Hari ini pelanggannya sedikit.", "level": "n5", "tags": ["belanja", "pekerjaan"]}],
-  synonyms: [],
-  antonyms: [],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus',
-  jmdict_seq: '1348910',
-  frequency: 8000,
-  forms: [{"word": "少ない", "info": []}, {"word": "尠い", "info": ["kanji jarang dipakai"]}, {"word": "寡い", "info": ["kanji jarang dipakai"]}, {"word": "少い", "info": ["search-only kanji form"]}, {"word": "尠ない", "info": ["search-only kanji form"]}, {"word": "寡ない", "info": ["search-only kanji form"]}],
-},
-
-{
-  id: 'vg-n5-00278',
-  word: 'わかい',
-  reading: 'わかい',
-  romaji: 'wakai',
-  meaning_id: 'muda; berusia muda',
-  meaning_en: 'young',
-  jlpt: 'n5',
-  pos: 'i-adj',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['pertemanan'],
-  register: 'neutral',
-  lawan_bicara: [],
-  nuance: 'An i-adjective describing youth in age or appearance. It is generally not used for young children or babies.',
-  conj_type: 'adj-i',
-  examples: [{"jp": "彼はまだ若いですね。", "id": "Dia masih muda ya.", "level": "n5", "tags": ["hubungan"]}],
-  synonyms: [],
-  antonyms: [],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus',
-  jmdict_seq: '1324300',
-  frequency: 15000,
-  meanings: [{"en": "young; youthful", "misc": [], "field": []}, {"en": "immature; green", "misc": [], "field": []}, {"en": "low (number); small", "misc": [], "field": []}],
-},
-
-{
-  id: 'vg-n5-00279',
-  word: 'おそい',
-  reading: 'おそい',
-  romaji: 'osoi',
-  meaning_id: 'lambat; terlambat; larut',
-  meaning_en: 'slow; late',
-  jlpt: 'n5',
-  pos: 'i-adj',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['kehidupan-sehari'],
-  register: 'neutral',
-  lawan_bicara: [],
-  nuance: 'Can describe something lacking speed or an event occurring late in time. The specific kanji distinguishes between the two meanings when written.',
-  conj_type: 'adj-i',
-  examples: [{"jp": "バスが遅いので歩きます。", "id": "Busnya lambat jadi saya jalan kaki.", "level": "n5", "tags": ["perjalanan"]}],
-  synonyms: [],
-  antonyms: [],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus',
-  jmdict_seq: '1421970',
-  frequency: 9000,
-  forms: [{"word": "遅い", "info": []}, {"word": "鈍い", "info": ["search-only kanji form"]}, {"word": "晩い", "info": ["search-only kanji form"]}, {"word": "遲い", "info": ["search-only kanji form"]}],
-  meanings: [{"en": "slow", "misc": [], "field": []}, {"en": "late", "misc": [], "field": []}, {"en": "too late", "misc": [], "field": []}],
-},
-
-{
-  id: 'vg-n5-00280',
-  word: 'はやい',
-  reading: 'はやい',
-  romaji: 'hayai',
-  meaning_id: 'cepat; awal',
-  meaning_en: 'fast; early',
-  jlpt: 'n5',
-  pos: 'i-adj',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['kehidupan-sehari'],
-  register: 'neutral',
-  lawan_bicara: [],
-  nuance: '早い (hayai) = awal/pagi. 速い (hayai) = cepat. Pelafalan sama, kanji beda.',
-  conj_type: 'adj-i',
-  examples: [
-      {"jp": "新幹線はとても速いです。", "id": "Shinkansen sangat cepat.", "level": "n5", "tags": ["perjalanan"]}],
-  synonyms: [],
-  antonyms: [],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus',
-  jmdict_seq: '1404975',
-  frequency: 15500,
-  forms: [{"word": "早い", "info": []}, {"word": "速い", "info": []}, {"word": "疾い", "info": ["kanji jarang dipakai"]}, {"word": "捷い", "info": ["kanji jarang dipakai"]}, {"word": "迅い", "info": ["search-only kanji form"]}],
-  meanings: [{"en": "fast; quick; rapid; swift; speedy; brisk; prompt", "misc": [], "field": []}, {"en": "early; soon; earlier than usual", "misc": [], "field": []}, {"en": "premature; too soon; too early", "misc": [], "field": []}, {"en": "easy; simple; quick; fast", "misc": [], "field": []}, {"en": "as soon as ...; the moment ...; the instant ...", "misc": [], "field": []}],
-},
-
-{
-  id: 'vg-n5-00281',
-  word: 'おもい',
-  reading: 'おもい',
-  romaji: 'omoi',
-  meaning_id: 'berat',
-  meaning_en: 'heavy',
-  jlpt: 'n5',
-  pos: 'i-adj',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['kehidupan-sehari'],
-  register: 'neutral',
-  lawan_bicara: [],
-  nuance: 'Refers to physical weight and can also describe a heavy atmosphere, mood, or serious illness. It is an i-adjective describing a state of being burdensome.',
-  conj_type: 'adj-i',
-  examples: [
-      {"jp": "このスーツケースは重いですね。", "id": "Koper ini berat ya.", "level": "n5", "tags": ["perjalanan"]}],
-  synonyms: [],
-  antonyms: [],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus',
-  jmdict_seq: '1335750',
-  frequency: 12500,
-  meanings: [{"en": "heavy; weighty", "misc": [], "field": []}, {"en": "heavy (feeling); depressed; gloomy; blue; uneasy", "misc": [], "field": []}, {"en": "slow; sluggish; lumbering; ponderous; clumsy", "misc": [], "field": []}, {"en": "important (position, responsibility, etc.); serious; grave", "misc": [], "field": []}, {"en": "serious (punishment, illness, etc.); severe; critical", "misc": [], "field": []}, {"en": "solid; established; dignified; sensible", "misc": [], "field": []}],
-},
-
-{
-  id: 'vg-n5-00282',
-  word: 'かるい',
-  reading: 'かるい',
-  romaji: 'karui',
-  meaning_id: 'ringan',
-  meaning_en: 'light (weight)',
-  jlpt: 'n5',
-  pos: 'i-adj',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['kehidupan-sehari'],
-  register: 'neutral',
-  lawan_bicara: [],
-  nuance: 'Describes objects that are physically light and easy to carry. It can also describe light meals, mild illnesses, or a casual mood.',
-  conj_type: 'adj-i',
-  examples: [{"jp": "このバッグはとても軽いです。", "id": "Tas ini sangat ringan.", "level": "n5", "tags": ["belanja"]}],
-  synonyms: [],
-  antonyms: [],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus',
-  jmdict_seq: '1252560',
-  frequency: 17000,
-  meanings: [{"en": "light (i.e. not heavy); feeling light (i.e. offering little resistance, moving easily)", "misc": [], "field": []}, {"en": "light (i.e. of foot); effortless; nimble; agile", "misc": [], "field": []}, {"en": "non-serious; minor; unimportant; trivial", "misc": [], "field": []}, {"en": "slight; small; gentle; soft; easy; lighthearted (e.g. joke)", "misc": [], "field": []}, {"en": "easy; simple", "misc": [], "field": []}, {"en": "indiscriminate", "misc": [], "field": []}],
-},
-
-{
-  id: 'vg-n5-00283',
-  word: 'つよい',
-  reading: 'つよい',
-  romaji: 'tsuyoi',
-  meaning_id: 'kuat',
-  meaning_en: 'strong',
-  jlpt: 'n5',
-  pos: 'i-adj',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['kehidupan-sehari'],
-  register: 'neutral',
-  lawan_bicara: [],
-  nuance: 'Can denote physical strength, durability, or intense forces like wind or flavor. It also describes a strong resistance, like being good at handling alcohol.',
-  conj_type: 'adj-i',
-  examples: [{"jp": "風が強いですね。", "id": "Anginnya kencang ya.", "level": "n5", "tags": ["alam-lingkungan"]}],
-  synonyms: [],
-  antonyms: [],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus',
-  jmdict_seq: '1236070',
-  frequency: 9000,
-  forms: [{"word": "強い", "info": []}, {"word": "勁い", "info": ["search-only kanji form"]}, {"word": "剛い", "info": ["search-only kanji form"]}],
-  meanings: [{"en": "strong; potent; competent; domineering; tough", "misc": [], "field": []}, {"en": "strong; brawny; powerful; healthy; rugged", "misc": [], "field": []}, {"en": "good (at); skilled; knowledgeable", "misc": [], "field": []}, {"en": "being able to handle; know how to deal (with); durable (against); resistant (to); resilient", "misc": [], "field": []}, {"en": "firm; rigid; solid", "misc": [], "field": []}, {"en": "intense; strong; fierce; high", "misc": [], "field": []}, {"en": "dependable; trustworthy", "misc": [], "field": []}],
-},
-
-{
-  id: 'vg-n5-00284',
-  word: 'よわい',
-  reading: 'よわい',
-  romaji: 'yowai',
-  meaning_id: 'lemah',
-  meaning_en: 'weak',
-  jlpt: 'n5',
-  pos: 'i-adj',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['kehidupan-sehari'],
-  register: 'neutral',
-  lawan_bicara: [],
-  nuance: 'Indicates a lack of physical strength, fragility, or low intensity. It can also describe a poor tolerance for something like alcohol or stress.',
-  conj_type: 'adj-i',
-  examples: [{"jp": "体が弱いので気をつけています。", "id": "Badan saya lemah jadi saya hati-hati.", "level": "n5", "tags": ["kesehatan"]}],
-  synonyms: [],
-  antonyms: [],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus',
-  jmdict_seq: '1324520',
-  frequency: 12000,
-},
-
-{
-  id: 'vg-n5-00285',
-  word: 'ゆうめい',
-  reading: 'ゆうめい',
-  romaji: 'yuumei',
-  meaning_id: 'terkenal; populer',
-  meaning_en: 'famous',
-  jlpt: 'n5',
-  pos: 'na-adj',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['kehidupan-sehari'],
-  register: 'neutral',
-  lawan_bicara: [],
-  nuance: 'A na-adjective that combines kanji for \'have\' and \'name\', denoting widespread recognition. It is used to describe well-known people, places, or products.',
-  conj_type: 'adj-na',
-  examples: [{"jp": "富士山は有名な山です。", "id": "Gunung Fuji adalah gunung yang terkenal.", "level": "n5", "tags": ["perjalanan", "alam-lingkungan"]}],
-  synonyms: [],
-  antonyms: [],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus',
-  jmdict_seq: '1539910',
-},
-
-{
-  id: 'vg-n5-00286',
-  word: 'たいへん',
-  reading: 'たいへん',
-  romaji: 'taihen',
-  meaning_id: 'susah; berat; sangat',
-  meaning_en: 'tough, terrible; very (adv)',
-  jlpt: 'n5',
-  pos: 'na-adj',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['emosi'],
-  register: 'neutral',
-  lawan_bicara: [],
-  nuance: '大変 = susah (adj-na) ATAU sangat (adv). 大変でしたね = pasti susah ya.',
-  conj_type: 'adj-na',
-  examples: [
-      {"jp": "仕事がとても大変です。", "id": "Pekerjaannya sangat berat.", "level": "n5", "tags": ["pekerjaan", "emosi"]}],
-  synonyms: [],
-  antonyms: [],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus',
-  jmdict_seq: '1415000',
-  frequency: 1000,
-  forms: [{"word": "大変", "info": []}, {"word": "大へん", "info": []}],
-  meanings: [{"en": "very; greatly; terribly; awfully", "misc": [], "field": []}, {"en": "immense; enormous; great", "misc": [], "field": []}, {"en": "serious; grave; dreadful; terrible", "misc": [], "field": []}, {"en": "difficult; hard; challenging", "misc": [], "field": []}, {"en": "major incident; disaster", "misc": ["archaic"], "field": []}],
-  misc_jm: ["arkais"],
-},
-
-{
-  id: 'vg-n5-00287',
-  word: 'あんぜん',
-  reading: 'あんぜん',
-  romaji: 'anzen',
-  meaning_id: 'aman; keselamatan',
-  meaning_en: 'safe, safety',
-  jlpt: 'n5',
-  pos: 'na-adj',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['perjalanan'],
-  register: 'neutral',
-  lawan_bicara: [],
-  nuance: 'Can function as a noun or a na-adjective describing a state free from danger. Often used in warnings or to reassure about security.',
-  conj_type: 'adj-na',
-  examples: [{"jp": "この道は安全ですか。", "id": "Apakah jalan ini aman?", "level": "n5", "tags": ["perjalanan"]}],
-  synonyms: [],
-  antonyms: [],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus',
-  jmdict_seq: '1153930',
-  frequency: 500,
-},
-
-{
-  id: 'vg-n5-00288',
-  word: 'べんり',
-  reading: 'べんり',
-  romaji: 'benri',
-  meaning_id: 'praktis; berguna',
-  meaning_en: 'convenient, useful',
-  jlpt: 'n5',
-  pos: 'na-adj',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['kehidupan-sehari'],
-  register: 'neutral',
-  lawan_bicara: [],
-  nuance: 'A na-adjective describing something practical that saves time or effort, like a tool or location. It contrasts with inconvenience rather than uselessness.',
-  conj_type: 'adj-na',
-  examples: [{"jp": "電車はとても便利です。", "id": "Kereta sangat praktis.", "level": "n5", "tags": ["perjalanan"]}],
-  synonyms: [],
-  antonyms: [],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus',
-  jmdict_seq: '1512610',
-  frequency: 3000,
-},
-
-{
-  id: 'vg-n5-00301',
-  word: 'いたい',
-  reading: 'いたい',
-  romaji: 'itai',
-  meaning_id: 'sakit; nyeri',
-  meaning_en: 'painful, it hurts',
-  jlpt: 'n5',
-  pos: 'i-adj',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['kesehatan'],
-  register: 'neutral',
-  lawan_bicara: [],
-  nuance: 'An i-adjective used to express physical pain, often exclaimed when hurt. It can also describe a sore body part by combining with the body part name.',
-  conj_type: 'adj-i',
-  examples: [
-      {"jp": "頭が痛いです。", "id": "Kepala saya sakit.", "level": "n5", "tags": ["kesehatan"]}],
-  synonyms: [],
-  antonyms: [],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus',
-  jmdict_seq: '1157920',
-},
-
-{
-  id: 'vg-n5-00434',
-  word: '有名な',
-  reading: 'ゆうめいな',
-  romaji: 'yuumeina',
-  meaning_id: 'terkenal, termasyhur',
-  meaning_en: 'famous',
-  jlpt: 'n5',
-  pos: 'na-adj',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['kehidupan-sehari'],
-  register: 'neutral',
-  lawan_bicara: ['teman', 'umum'],
-  nuance: 'The attributive na-adjective form of \'yuumei\' used directly before a noun. It explicitly links the quality of being well-known to the following noun.',
-  conj_type: 'adj-na',
-  examples: [
-      {"jp":"京都はとても有名な町です。","id":"Kyoto adalah kota yang sangat terkenal.","level":"n5","tags":["kehidupan-sehari"]}],
-  synonyms: [],
-  antonyms: [],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
-},
-
-{
-  id: 'vg-n5-00477',
-  word: '少ない',
-  reading: 'すくない',
-  romaji: 'sukunai',
-  meaning_id: 'sedikit, tidak banyak',
-  meaning_en: 'few, a little',
-  jlpt: 'n5',
-  pos: 'i-adj',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['kualitas'],
-  register: 'neutral',
-  lawan_bicara: ['teman', 'umum'],
-  nuance: '少ない (すくない) = sedikit (adj-i, untuk kuantitas). Berbeda: 少し (adv).',
-  conj_type: 'adj-i',
-  examples: [
-      {"jp": "今日はお客さんが少ないです。", "id": "Hari ini pelanggannya sedikit.", "level": "n5", "tags": ["pekerjaan", "belanja"]}],
-  synonyms: [],
-  antonyms: [],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus',
-  jmdict_seq: '1348910',
-  frequency: 8000,
-  forms: [{"word": "少ない", "info": []}, {"word": "尠い", "info": ["kanji jarang dipakai"]}, {"word": "寡い", "info": ["kanji jarang dipakai"]}, {"word": "少い", "info": ["search-only kanji form"]}, {"word": "尠ない", "info": ["search-only kanji form"]}, {"word": "寡ない", "info": ["search-only kanji form"]}],
-},
-
-{
-  id: 'vg-n5-00478',
-  word: '多い',
-  reading: 'おおい',
-  romaji: 'ooi',
-  meaning_id: 'banyak',
-  meaning_en: 'many, a lot',
-  jlpt: 'n5',
-  pos: 'i-adj',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['kualitas'],
-  register: 'neutral',
-  lawan_bicara: ['teman', 'umum'],
-  nuance: '多い (おおい) = banyak (adj-i). Berbeda dari たくさん (adv). 多い人 = banyak orang.',
-  conj_type: 'adj-i',
-  examples: [
-      {"jp": "駅に人が多いです。", "id": "Di stasiun banyak orang.", "level": "n5", "tags": ["perjalanan"]}],
-  synonyms: [],
-  antonyms: [],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus',
-  jmdict_seq: '1407460',
-  frequency: 22000,
-  meanings: [{"en": "many; numerous; a lot", "misc": [], "field": []}, {"en": "large amount of; large quantity of; a lot; much", "misc": [], "field": []}, {"en": "frequent; common", "misc": [], "field": []}],
-},
-
-{
-  id: 'vg-n5-00481',
-  word: '大変な',
-  reading: 'たいへんな',
-  romaji: 'taihenna',
-  meaning_id: 'susah, berat',
-  meaning_en: 'terrible, hard',
-  jlpt: 'n5',
-  pos: 'na-adj',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['emosi', 'kehidupan-sehari'],
-  register: 'neutral',
-  lawan_bicara: ['teman', 'umum'],
-  nuance: '大変な = susah/berat (sebagai adj-na). Juga bisa sebagai adv: 大変です！= Gawat!',
-  conj_type: 'adj-na',
-  examples: [{"jp": "仕事が大変です。", "id": "Pekerjaannya berat.", "level": "n5", "tags": ["pekerjaan", "emosi"]}, {"jp": "大変でしたね。", "id": "Susah banget ya.", "level": "n5", "tags": ["emosi"]}],
-  synonyms: [],
-  antonyms: [],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
-},
-
-{
-  id: 'vg-n5-00482',
-  word: '大切な',
-  reading: 'たいせつな',
-  romaji: 'taisetsuna',
-  meaning_id: 'berharga, penting',
-  meaning_en: 'precious, important',
-  jlpt: 'n5',
-  pos: 'na-adj',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['emosi', 'emosi-positif'],
-  register: 'neutral',
-  lawan_bicara: ['teman', 'umum'],
-  nuance: '大切な = penting/berharga (bernilai emosional). Berbeda: 重要な = penting (objektif).',
-  conj_type: 'adj-na',
-  examples: [
-      {"jp": "これは私にとって大切なものです。", "id": "Ini adalah sesuatu yang berharga bagi saya.", "level": "n5", "tags": ["emosi", "motivasi"]}],
-  synonyms: [],
-  antonyms: [],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
-},
-
-{
-  id: 'vg-n5-00483',
-  word: '安全な',
-  reading: 'あんぜんな',
-  romaji: 'anzenna',
-  meaning_id: 'aman',
-  meaning_en: 'safe',
-  jlpt: 'n5',
-  pos: 'na-adj',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['kehidupan-sehari', 'perjalanan'],
-  register: 'neutral',
-  lawan_bicara: ['teman', 'umum'],
-  nuance: '安全な = aman (bebas dari bahaya). Lawan: 危険な (kiken-na = berbahaya).',
-  conj_type: 'adj-na',
-  examples: [
-      {"jp": "この道は安全ですか。", "id": "Apakah jalan ini aman?", "level": "n5", "tags": ["perjalanan"]}],
-  synonyms: [],
-  antonyms: [],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
-},
-
-{
-  id: 'vg-n5-00487',
-  word: '早い',
-  reading: 'はやい',
-  romaji: 'hayai',
-  meaning_id: 'awal, cepat',
-  meaning_en: 'early, fast',
-  jlpt: 'n5',
-  pos: 'i-adj',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['waktu', 'kehidupan-sehari'],
-  register: 'neutral',
-  lawan_bicara: ['teman', 'umum'],
-  nuance: 'Lawan kata: おそい (late/slow)',
-  conj_type: 'adj-i',
-  examples: [
-      {"jp":"毎朝、早い時間に起きます。","id":"Setiap pagi, saya bangun di waktu yang awal.","level":"n5","tags":["kehidupan-sehari","waktu"]}],
-  synonyms: [],
-  antonyms: [],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus',
-  jmdict_seq: '1404975',
-  frequency: 15500,
-  forms: [{"word": "早い", "info": []}, {"word": "速い", "info": []}, {"word": "疾い", "info": ["kanji jarang dipakai"]}, {"word": "捷い", "info": ["kanji jarang dipakai"]}, {"word": "迅い", "info": ["search-only kanji form"]}],
-  meanings: [{"en": "fast; quick; rapid; swift; speedy; brisk; prompt", "misc": [], "field": []}, {"en": "early; soon; earlier than usual", "misc": [], "field": []}, {"en": "premature; too soon; too early", "misc": [], "field": []}, {"en": "easy; simple; quick; fast", "misc": [], "field": []}, {"en": "as soon as ...; the moment ...; the instant ...", "misc": [], "field": []}],
-},
-
-{
-  id: 'vg-n5-00511',
-  word: '上手な',
-  reading: 'じょうずな',
-  romaji: 'jouzuna',
-  meaning_id: 'pandai, mahir',
-  meaning_en: 'good at, skillful',
-  jlpt: 'n5',
-  pos: 'na-adj',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['perjalanan', 'kehidupan-sehari'],
-  register: 'neutral',
-  lawan_bicara: ['teman', 'umum'],
-  nuance: 'A na-adjective used to praise someone\'s skill or proficiency, often in arts, sports, or languages. It is typically used for others, as using it for oneself sounds boastful.',
-  conj_type: 'adj-na',
-  examples: [
-      {"jp":"田中さんは日本語がとても上手です。","id":"Tanaka sangat pandai berbahasa Jepang.","level":"n5","tags":["pendidikan","pertemanan"]}],
-  synonyms: [],
-  antonyms: [],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
-},
-
-{
-  id: 'vg-n5-00516',
-  word: '下手な',
-  reading: 'へたな',
-  romaji: 'hetana',
-  meaning_id: 'tidak pandai',
-  meaning_en: 'unskillful, not good at',
-  jlpt: 'n5',
-  pos: 'na-adj',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['perjalanan', 'kehidupan-sehari'],
-  register: 'neutral',
-  lawan_bicara: ['teman', 'umum'],
-  nuance: 'Lawan kata: 上手な skillful',
-  conj_type: 'adj-na',
-  examples: [
-      {"jp":"私は歌が下手ですから、歌いません。","id":"Karena saya tidak pandai bernyanyi, saya tidak bernyanyi.","level":"n5","tags":["kehidupan-sehari"]}],
-  synonyms: [],
-  antonyms: [],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
-},
-
-{
-  id: 'vg-n5-00606',
-  word: 'ひまな',
-  reading: 'ひまな',
-  romaji: 'himana',
-  meaning_id: 'santai, tidak sibuk',
-  meaning_en: 'free, leisurely',
-  jlpt: 'n5',
-  pos: 'na-adj',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['kehidupan-sehari'],
-  register: 'neutral',
-  lawan_bicara: ['teman', 'umum'],
-  nuance: 'ひまな (暇な) = tidak sibuk/punya waktu luang. 暇つぶし = mengisi waktu luang.',
-  conj_type: 'adj-na',
-  examples: [{"jp": "今週末はひまです。いっしょにどうですか。", "id": "Akhir pekan ini saya bebas. Bagaimana kalau bersama?", "level": "n5", "tags": ["kehidupan-sehari", "hubungan"]}],
-  synonyms: [],
-  antonyms: [],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
-},
-
-{
-  id: 'vg-n5-00607',
-  word: 'きらいな',
-  reading: 'きらいな',
-  romaji: 'kiraina',
-  meaning_id: 'tidak suka, benci',
-  meaning_en: 'hate, dislike',
-  jlpt: 'n5',
-  pos: 'na-adj',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['emosi'],
-  register: 'neutral',
-  lawan_bicara: ['teman', 'umum'],
-  nuance: 'Lawan kata: すきな (favorite/like)',
-  conj_type: 'adj-na',
-  examples: [{"jp":"野菜がきらいですから、食べません。","id":"Karena saya tidak suka sayur, saya tidak memakannya.","level":"n5","tags":["makanan-minuman"]}],
-  synonyms: [],
-  antonyms: [],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
-},
-
-{
-  id: 'vg-n5-00608',
-  word: 'すきな',
-  reading: 'すきな',
-  romaji: 'sukina',
-  meaning_id: 'suka, favorit',
-  meaning_en: 'favorite, liked',
-  jlpt: 'n5',
-  pos: 'na-adj',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['emosi'],
-  register: 'neutral',
-  lawan_bicara: ['teman', 'umum'],
-  nuance: 'すきな (好きな) = suka. Derajat: 大好き > 好き > まあまあ好き. Lawan: 嫌い.',
-  conj_type: 'adj-na',
-  examples: [{"jp": "日本語が好きです。", "id": "Saya suka bahasa Jepang.", "level": "n5", "tags": ["emosi", "pendidikan"]}],
-  synonyms: [],
-  antonyms: [],
-  see_also: [],
-  added_v: 'v15-migrated',
-  provenance: 'jlpt-corpus'
-},
-
-{
-  id: 'vg-n5-00716',
-  word: '広い',
-  reading: 'ひろい',
-  romaji: 'hiroi',
-  meaning_id: 'luas; lebar',
-  meaning_en: 'wide, spacious',
-  jlpt: 'n5',
-  pos: 'adj-i',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['deskripsi', 'tempat'],
-  register: 'neutral',
-  lawan_bicara: ['umum'],
-  nuance: 'Lawan dari 狭い (sempit).',
-  conj_type: 'i-adj',
-  examples: [
-      {"jp": "この部屋は広いですね。", "id": "Ruangan ini luas ya.", "level": "n5", "tags": ["tempat"]}],
-  synonyms: [],
-  antonyms: ['vg-n5-00717'],
-  see_also: [],
-  added_v: 'v15.6.1-plan-c',
-  provenance: 'jlpt-corpus',
-  jmdict_seq: '1278410',
-  frequency: 2000,
-  forms: [{"word": "広い", "info": []}, {"word": "廣い", "info": ["search-only kanji form"]}, {"word": "宏い", "info": ["search-only kanji form"]}, {"word": "弘い", "info": ["search-only kanji form"]}],
-},
-
-{
-  id: 'vg-n5-00717',
-  word: '狭い',
-  reading: 'せまい',
-  romaji: 'semai',
-  meaning_id: 'sempit; kecil',
-  meaning_en: 'narrow, small, cramped',
-  jlpt: 'n5',
-  pos: 'adj-i',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['deskripsi', 'tempat'],
-  register: 'neutral',
-  lawan_bicara: ['umum'],
-  nuance: 'Lawan dari 広い (luas).',
-  conj_type: 'i-adj',
-  examples: [{"jp": "このアパートは狭いです。", "id": "Apartemen ini sempit.", "level": "n5", "tags": ["tempat"]}],
-  synonyms: [],
-  antonyms: ['vg-n5-00716'],
-  see_also: [],
-  added_v: 'v15.6.1-plan-c',
-  provenance: 'jlpt-corpus',
-  jmdict_seq: '1237680',
-  frequency: 23500,
-  meanings: [{"en": "narrow; confined; small; cramped", "misc": [], "field": []}, {"en": "limited; narrow-minded; confining", "misc": [], "field": []}],
-},
-
-{
-  id: 'vg-n5-00718',
-  word: '遠い',
-  reading: 'とおい',
-  romaji: 'tooi',
-  meaning_id: 'jauh',
-  meaning_en: 'far, distant',
-  jlpt: 'n5',
-  pos: 'adj-i',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['deskripsi', 'tempat', 'perjalanan'],
-  register: 'neutral',
-  lawan_bicara: ['umum'],
-  nuance: 'Lawan dari 近い (dekat).',
-  conj_type: 'i-adj',
-  examples: [
-      {"jp": "駅から遠いです。", "id": "Jauh dari stasiun.", "level": "n5", "tags": ["tempat"]}],
-  synonyms: [],
-  antonyms: ['vg-n5-00719'],
-  see_also: [],
-  added_v: 'v15.6.1-plan-c',
-  provenance: 'jlpt-corpus',
-  jmdict_seq: '1177800',
-  frequency: 17000,
-  meanings: [{"en": "far; distant; far away; a long way off; in the distance", "misc": [], "field": []}, {"en": "distant (past); remote (in time); remote; far-removed (in time)", "misc": [], "field": []}, {"en": "distant (relationship or kinship); having little to do (with someone)", "misc": [], "field": []}, {"en": "far (from something else in quality, degree, etc.); not similar; way off", "misc": [], "field": []}, {"en": "hard (of hearing)", "misc": [], "field": []}, {"en": "nearsighted", "misc": [], "field": []}],
-},
-
-{
-  id: 'vg-n5-00719',
-  word: '近い',
-  reading: 'ちかい',
-  romaji: 'chikai',
-  meaning_id: 'dekat',
-  meaning_en: 'near, close',
-  jlpt: 'n5',
-  pos: 'adj-i',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['deskripsi', 'tempat', 'perjalanan'],
-  register: 'neutral',
-  lawan_bicara: ['umum'],
-  nuance: 'Lawan dari 遠い (jauh).',
-  conj_type: 'i-adj',
-  examples: [{"jp": "駅から近いですよ。", "id": "Dekat dari stasiun lho.", "level": "n5", "tags": ["tempat"]}],
-  synonyms: [],
-  antonyms: ['vg-n5-00718'],
-  see_also: [],
-  added_v: 'v15.6.1-plan-c',
-  provenance: 'jlpt-corpus',
-  jmdict_seq: '1242130',
-  frequency: 10000,
-  meanings: [{"en": "near; close; short (distance)", "misc": [], "field": []}, {"en": "close (in time); soon", "misc": [], "field": []}, {"en": "close (relationship); friendly; intimate", "misc": [], "field": []}, {"en": "closely related", "misc": [], "field": []}, {"en": "similar; almost the same; close to; nearly", "misc": [], "field": []}],
-},
-
-{
-  id: 'vg-n5-00720',
-  word: '暇',
-  reading: 'ひま',
-  romaji: 'hima',
-  meaning_id: 'waktu luang; tidak sibuk',
-  meaning_en: 'free time, not busy',
-  jlpt: 'n5',
-  pos: 'adj-na',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['waktu', 'kehidupan-sehari'],
-  register: 'neutral',
-  lawan_bicara: ['teman', 'umum'],
-  nuance: 'Bisa berarti punya waktu luang (positif) atau tidak ada kegiatan (bisa negatif tergantung konteks).',
-  conj_type: 'na-adj',
-  examples: [
-      {"jp": "暇なとき, 何をしますか。", "id": "Kalau punya waktu luang, kamu ngapain?", "level": "n5", "tags": ["waktu"]}],
-  synonyms: [],
-  antonyms: [],
-  see_also: [],
-  added_v: 'v15.6.1-plan-c',
-  provenance: 'jlpt-corpus',
-  jmdict_seq: '2858986',
-  forms: [{"word": "暇", "info": []}, {"word": "遑", "info": ["kanji jarang dipakai"]}],
-  meanings: [{"en": "(spare) time; free time; leisure", "misc": ["biasanya kana saja"], "field": []}, {"en": "time off; leave; vacation; holiday", "misc": ["biasanya kana saja"], "field": []}, {"en": "resignation; dismissal; divorce", "misc": ["biasanya kana saja", "dated term"], "field": []}, {"en": "leaving; taking one's leave; farewell", "misc": ["biasanya kana saja"], "field": []}],
-  misc_jm: ["biasanya kana saja", "dated term"],
-},
-
-{
-  id: 'vg-n5-00723',
-  word: '大変',
-  reading: 'たいへん',
-  romaji: 'taihen',
-  meaning_id: 'sangat; parah; berat',
-  meaning_en: 'very; terrible; tough',
-  jlpt: 'n5',
-  pos: 'adj-na',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['ekspresi', 'perasaan'],
-  register: 'neutral',
-  lawan_bicara: ['teman', 'umum'],
-  nuance: 'Sebagai kata sifat: situasi yang berat/susah. Sebagai adverb: sangat/amat.',
-  conj_type: 'na-adj',
-  examples: [{"jp": "大変でしたね。", "id": "Berat ya keadaannya.", "level": "n5", "tags": ["emosi"]}, {"jp": "大変おいしいです。", "id": "Ini sangat enak.", "level": "n5", "tags": ["emosi"]}],
-  synonyms: [],
-  antonyms: [],
-  see_also: [],
-  added_v: 'v15.6.1-plan-c',
-  provenance: 'jlpt-corpus',
-  jmdict_seq: '1415000',
-  frequency: 1000,
-  forms: [{"word": "大変", "info": []}, {"word": "大へん", "info": []}],
-  meanings: [{"en": "very; greatly; terribly; awfully", "misc": [], "field": []}, {"en": "immense; enormous; great", "misc": [], "field": []}, {"en": "serious; grave; dreadful; terrible", "misc": [], "field": []}, {"en": "difficult; hard; challenging", "misc": [], "field": []}, {"en": "major incident; disaster", "misc": ["archaic"], "field": []}],
-  misc_jm: ["arkais"],
-},
-
-{
-  id: 'vg-n5-00724',
-  word: '有名',
-  reading: 'ゆうめい',
-  romaji: 'yuumei',
-  meaning_id: 'terkenal; termasyhur',
-  meaning_en: 'famous, well-known',
-  jlpt: 'n5',
-  pos: 'adj-na',
-  common: true,
-  related_grammar: [],
-  formalitas: 2,
-  domain: ['deskripsi', 'orang'],
-  register: 'neutral',
-  lawan_bicara: ['teman', 'umum'],
-  nuance: 'A na-adjective for something widely recognized. As the base form, it requires \'na\' when modifying nouns and conjugates like a noun at the end of a sentence.',
-  conj_type: 'na-adj',
-  examples: [
-      {"jp": "あの歌手はとても有名です。", "id": "Penyanyi itu sangat terkenal.", "level": "n5", "tags": ["bahasa-komunikasi"]}],
-  synonyms: [],
-  antonyms: [],
-  see_also: [],
-  added_v: 'v15.6.1-plan-c',
-  provenance: 'jlpt-corpus',
-  jmdict_seq: '1541620',
-  frequency: 1500,
+  "id": "vg-n5-00057",
+  "word": "大きい",
+  "reading": "おおきい",
+  "romaji": "ookii",
+  "meaning_id": "besar",
+  "meaning_en": "big",
+  "jlpt": "n5",
+  "pos": "i-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kehidupan-sehari",
+    "alam-lingkungan"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "umum"
+  ],
+  "nuance": "Used for physical size and can also apply to abstract concepts like voices or dreams. It is an i-adjective, unlike the na-adjective 大きな which must precede a noun.",
+  "conj_type": "adj-i",
+  "examples": [
+    {
+      "jp": "大きい犬がいます。",
+      "id": "Ada anjing besar.",
+      "level": "n5",
+      "tags": [
+        "kehidupan-sehari"
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"オオキ＼イ"}
+}
+  ],
+  "synonyms": [],
+  "antonyms": [
+    "vg-n5-00058"
+  ],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus",
+  "jmdict_seq": "1588880",
+  "frequency": 3500,
+  "forms": [
+    {
+      "word": "大きい",
+      "info": []
+    },
+    {
+      "word": "巨きい",
+      "info": [
+        "search-only kanji form"
+      ]
+    }
+  ],
+  "meanings": [
+    {
+      "en": "big; large; great",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "loud",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "extensive; spacious",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "important; decisive; valuable",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "older; grown-up",
+      "misc": [],
+      "field": []
+    }
+  ]
+},
+
+{
+  "id": "vg-n5-00058",
+  "word": "小さい",
+  "reading": "ちいさい",
+  "romaji": "chiisai",
+  "meaning_id": "kecil",
+  "meaning_en": "small",
+  "jlpt": "n5",
+  "pos": "i-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kehidupan-sehari",
+    "alam-lingkungan"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "umum"
+  ],
+  "nuance": "Means 'small' or 'little.' Compare with 少ない (few in quantity). 小さい describes physical size. Casual speech often shortens it to ちっちゃい.",
+  "conj_type": "adj-i",
+  "examples": [
+    {
+      "jp": "小さい猫がかわいいです。",
+      "id": "Kucing kecil itu lucu.",
+      "level": "n5",
+      "tags": [
+        "kehidupan-sehari"
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"オオキ＼イ"}
+}
+  ],
+  "synonyms": [],
+  "antonyms": [
+    "vg-n5-00057"
+  ],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus",
+  "jmdict_seq": "1347750",
+  "frequency": 12000,
+  "meanings": [
+    {
+      "en": "small; little; tiny",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "slight; below average (in degree, amount, etc.); minor; small",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "low (e.g. sound); soft (e.g. voice)",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "unimportant; petty; insignificant; trifling; trivial",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "young; juvenile",
+      "misc": [],
+      "field": []
+    }
+  ]
+},
+
+{
+  "id": "vg-n5-00059",
+  "word": "良い",
+  "reading": "いい・よい",
+  "romaji": "ii / yoi",
+  "meaning_id": "bagus, baik",
+  "meaning_en": "good",
+  "jlpt": "n5",
+  "pos": "i-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kehidupan-sehari"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "umum"
+  ],
+  "nuance": "Konjugasi pakai よ sebagai stem: よくない, よかった. いい hanya untuk bentuk kamus.",
+  "conj_type": "adj-i",
+  "examples": [
+    {
+      "jp": "いい天気ですね。",
+      "id": "Cuacanya bagus ya.",
+      "level": "n5",
+      "tags": [
+        "alam-lingkungan"
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":2,"downstep_mora":1,"contour":"イ＼イ"}
+}
+  ],
+  "synonyms": [],
+  "antonyms": [
+    "vg-n5-00060"
+  ],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus",
+  "jmdict_seq": "1605820",
+  "frequency": 4000,
+  "forms": [
+    {
+      "word": "良い",
+      "info": []
+    },
+    {
+      "word": "好い",
+      "info": []
+    },
+    {
+      "word": "善い",
+      "info": []
+    },
+    {
+      "word": "佳い",
+      "info": [
+        "kanji jarang dipakai"
+      ]
+    },
+    {
+      "word": "吉い",
+      "info": [
+        "kanji jarang dipakai"
+      ]
+    },
+    {
+      "word": "宜い",
+      "info": [
+        "kanji jarang dipakai"
+      ]
+    }
+  ],
+  "meanings": [
+    {
+      "en": "good; excellent; fine; nice; pleasant; agreeable",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "sufficient; enough; ready; prepared",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "profitable (deal, business offer, etc.); beneficial",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "OK; all right; fine; no problem",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "easy to ...",
+      "misc": [],
+      "field": []
+    }
+  ]
+},
+
+{
+  "id": "vg-n5-00060",
+  "word": "悪い",
+  "reading": "わるい",
+  "romaji": "warui",
+  "meaning_id": "buruk, jelek",
+  "meaning_en": "bad",
+  "jlpt": "n5",
+  "pos": "i-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kehidupan-sehari"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "umum"
+  ],
+  "nuance": "Juga dipakai untuk meminta maaf: 悪かった！",
+  "conj_type": "adj-i",
+  "examples": [
+    {
+      "jp": "天気が悪いです。",
+      "id": "Cuacanya buruk.",
+      "level": "n5",
+      "tags": [
+        "alam-lingkungan"
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":2,"downstep_mora":1,"contour":"イ＼イ"}
+}
+  ],
+  "synonyms": [],
+  "antonyms": [
+    "vg-n5-00059"
+  ],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus",
+  "jmdict_seq": "2772730",
+  "frequency": 14000,
+  "forms": [
+    {
+      "word": "難い",
+      "info": [
+        "kanji jarang dipakai"
+      ]
+    },
+    {
+      "word": "悪い",
+      "info": [
+        "search-only kanji form"
+      ]
+    }
+  ],
+  "misc_jm": [
+    "biasanya kana saja"
+  ]
+},
+
+{
+  "id": "vg-n5-00061",
+  "word": "高い",
+  "reading": "たかい",
+  "romaji": "takai",
+  "meaning_id": "tinggi; mahal",
+  "meaning_en": "tall; expensive",
+  "jlpt": "n5",
+  "pos": "i-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "belanja",
+    "kehidupan-sehari"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "umum"
+  ],
+  "nuance": "Dua arti: tinggi secara fisik (山が高い) dan harga mahal (値段が高い).",
+  "conj_type": "adj-i",
+  "examples": [
+    {
+      "jp": "この店は高いです。",
+      "id": "Toko ini mahal.",
+      "level": "n5",
+      "tags": [
+        "belanja"
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"カタイ￣"}
+}
+  ],
+  "synonyms": [],
+  "antonyms": [
+    "vg-n5-00062"
+  ],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus",
+  "jmdict_seq": "1283190",
+  "frequency": 4000,
+  "forms": [
+    {
+      "word": "高い",
+      "info": []
+    },
+    {
+      "word": "高価い",
+      "info": [
+        "search-only kanji form"
+      ]
+    },
+    {
+      "word": "高ーい",
+      "info": [
+        "search-only kanji form"
+      ]
+    }
+  ],
+  "meanings": [
+    {
+      "en": "high; tall",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "expensive; high-priced",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "high (level); above average (in degree, quality, etc.)",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "loud",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "high-pitched; shrill",
+      "misc": [],
+      "field": []
+    }
+  ]
+},
+
+{
+  "id": "vg-n5-00062",
+  "word": "安い",
+  "reading": "やすい",
+  "romaji": "yasui",
+  "meaning_id": "murah",
+  "meaning_en": "cheap; inexpensive",
+  "jlpt": "n5",
+  "pos": "i-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "belanja",
+    "kehidupan-sehari"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "umum"
+  ],
+  "nuance": "古い = tua/lama/usang. 古い建物 = bangunan tua. Untuk orang pakai 年を取った.",
+  "conj_type": "adj-i",
+  "examples": [
+    {
+      "jp": "スーパーの野菜は安いです。",
+      "id": "Sayuran di supermarket murah.",
+      "level": "n5",
+      "tags": [
+        "belanja",
+        "makanan-minuman"
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"タカ＼イ"}
+}
+  ],
+  "synonyms": [],
+  "antonyms": [
+    "vg-n5-00061"
+  ],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus",
+  "jmdict_seq": "1153670",
+  "frequency": 23500,
+  "forms": [
+    {
+      "word": "安い",
+      "info": []
+    },
+    {
+      "word": "廉い",
+      "info": []
+    }
+  ],
+  "meanings": [
+    {
+      "en": "cheap; inexpensive",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "calm; peaceful; quiet",
+      "misc": [],
+      "field": []
+    }
+  ]
+},
+
+{
+  "id": "vg-n5-00063",
+  "word": "暑い",
+  "reading": "あつい",
+  "romaji": "atsui",
+  "meaning_id": "panas (cuaca/udara)",
+  "meaning_en": "hot (weather)",
+  "jlpt": "n5",
+  "pos": "i-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "alam-lingkungan"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "umum"
+  ],
+  "nuance": "Untuk suhu udara. 熱い untuk benda panas (お湯が熱い).",
+  "conj_type": "adj-i",
+  "examples": [
+    {
+      "jp": "今日はとても暑いですね。",
+      "id": "Hari ini sangat panas ya.",
+      "level": "n5",
+      "tags": [
+        "alam-lingkungan"
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"ヤス＼イ"}
+}
+  ],
+  "synonyms": [],
+  "antonyms": [
+    "vg-n5-00064"
+  ],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus",
+  "jmdict_seq": "1343460",
+  "frequency": 17000,
+  "meanings": [
+    {
+      "en": "hot; warm; sultry; heated",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "passionate; impassioned; burning (desire, etc.)",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "on everybody's mind; on the radar; du jour; interested (gaze, etc.)",
+      "misc": [],
+      "field": []
+    }
+  ]
+},
+
+{
+  "id": "vg-n5-00064",
+  "word": "寒い",
+  "reading": "さむい",
+  "romaji": "samui",
+  "meaning_id": "dingin (cuaca)",
+  "meaning_en": "cold (weather)",
+  "jlpt": "n5",
+  "pos": "i-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "alam-lingkungan"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "umum"
+  ],
+  "nuance": "Untuk suhu udara. 冷たい untuk benda dingin.",
+  "conj_type": "adj-i",
+  "examples": [
+    {
+      "jp": "冬は寒いです。",
+      "id": "Musim dingin itu dingin.",
+      "level": "n5",
+      "tags": [
+        "alam-lingkungan"
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"サム＼イ"}
+}
+  ],
+  "synonyms": [],
+  "antonyms": [
+    "vg-n5-00063"
+  ],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus",
+  "jmdict_seq": "1210360",
+  "frequency": 20000,
+  "meanings": [
+    {
+      "en": "cold (e.g. weather)",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "uninteresting (esp. joke); lame; dull; weak; corny",
+      "misc": [],
+      "field": []
+    }
+  ]
+},
+
+{
+  "id": "vg-n5-00065",
+  "word": "新しい",
+  "reading": "あたらしい",
+  "romaji": "atarashii",
+  "meaning_id": "baru",
+  "meaning_en": "new",
+  "jlpt": "n5",
+  "pos": "i-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kehidupan-sehari"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "umum"
+  ],
+  "nuance": "暖かい = hangat (cuaca yang menyenangkan). Berbeda: 熱い = panas menyengat.",
+  "conj_type": "adj-i",
+  "examples": [
+    {
+      "jp": "新しい車を買いました。",
+      "id": "Saya membeli mobil baru.",
+      "level": "n5",
+      "tags": [
+        "kehidupan-sehari"
+      ],
+  "pitch": {"pattern":4,"category":"nakadaka","mora_count":5,"downstep_mora":4,"contour":"アタラシ＼イ"}
+}
+  ],
+  "synonyms": [],
+  "antonyms": [
+    "vg-n5-00066"
+  ],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus",
+  "jmdict_seq": "1361490",
+  "frequency": 4000,
+  "forms": [
+    {
+      "word": "新しい",
+      "info": []
+    },
+    {
+      "word": "新らしい",
+      "info": [
+        "search-only kanji form"
+      ]
+    }
+  ]
+},
+
+{
+  "id": "vg-n5-00066",
+  "word": "古い",
+  "reading": "ふるい",
+  "romaji": "furui",
+  "meaning_id": "lama, tua (benda)",
+  "meaning_en": "old (thing)",
+  "jlpt": "n5",
+  "pos": "i-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kehidupan-sehari"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "umum"
+  ],
+  "nuance": "Untuk benda. Untuk orang pakai 年上 (lebih tua).",
+  "conj_type": "adj-i",
+  "examples": [
+    {
+      "jp": "古い建物が好きです。",
+      "id": "Saya suka bangunan tua.",
+      "level": "n5",
+      "tags": [
+        "kehidupan-sehari"
+      ],
+  "pitch": {"pattern":4,"category":"nakadaka","mora_count":5,"downstep_mora":4,"contour":"アタラシ＼イ"}
+}
+  ],
+  "synonyms": [],
+  "antonyms": [
+    "vg-n5-00065"
+  ],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus",
+  "jmdict_seq": "1265070",
+  "frequency": 8000,
+  "forms": [
+    {
+      "word": "古い",
+      "info": []
+    },
+    {
+      "word": "旧い",
+      "info": [
+        "kanji jarang dipakai"
+      ]
+    },
+    {
+      "word": "故い",
+      "info": [
+        "kanji jarang dipakai"
+      ]
+    }
+  ],
+  "meanings": [
+    {
+      "en": "old; aged; ancient; antiquated; antique; timeworn",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "long; since long ago; time-honored",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "of the distant past; long-ago",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "stale; threadbare; hackneyed; corny",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "old-fashioned; outmoded; out-of-date",
+      "misc": [],
+      "field": []
+    }
+  ]
+},
+
+{
+  "id": "vg-n5-00067",
+  "word": "面白い",
+  "reading": "おもしろい",
+  "romaji": "omoshiroi",
+  "meaning_id": "menarik, lucu",
+  "meaning_en": "interesting; funny",
+  "jlpt": "n5",
+  "pos": "i-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kehidupan-sehari"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman"
+  ],
+  "nuance": "Can mean both intellectually stimulating and humorously amusing. Context usually clarifies whether a book is 'interesting' or a comedian is 'funny'.",
+  "conj_type": "adj-i",
+  "examples": [
+    {
+      "jp": "この映画は面白いです。",
+      "id": "Film ini menarik.",
+      "level": "n5",
+      "tags": [
+        "kehidupan-sehari"
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"フル＼イ"}
+}
+  ],
+  "synonyms": [],
+  "antonyms": [
+    "vg-n5-00068"
+  ],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus",
+  "jmdict_seq": "1533580",
+  "frequency": 9500,
+  "meanings": [
+    {
+      "en": "interesting; fascinating; intriguing; enthralling",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "amusing; funny; comical",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "enjoyable; fun; entertaining; pleasant; agreeable",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "good; satisfactory; favourable; desirable; encouraging",
+      "misc": [],
+      "field": []
+    }
+  ]
+},
+
+{
+  "id": "vg-n5-00068",
+  "word": "つまらない",
+  "reading": "つまらない",
+  "romaji": "tsumaranai",
+  "meaning_id": "membosankan",
+  "meaning_en": "boring; dull",
+  "jlpt": "n5",
+  "pos": "i-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 1,
+  "domain": [
+    "kehidupan-sehari"
+  ],
+  "register": "casual",
+  "lawan_bicara": [
+    "teman"
+  ],
+  "nuance": "つまらない = membosankan/tidak menarik. Lawan: 面白い. Juga: merendahkan diri: つまらないものですが (hadiah).",
+  "conj_type": "adj-i",
+  "examples": [
+    {
+      "jp": "この本はつまらないです。",
+      "id": "Buku ini membosankan.",
+      "level": "n5",
+      "tags": [
+        "kehidupan-sehari"
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":5,"downstep_mora":3,"contour":"ツマラ＼ナイ"}
+}
+  ],
+  "synonyms": [],
+  "antonyms": [
+    "vg-n5-00067"
+  ],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus",
+  "jmdict_seq": "1008190",
+  "frequency": 1000,
+  "forms": [
+    {
+      "word": "詰らない",
+      "info": []
+    },
+    {
+      "word": "詰まらない",
+      "info": []
+    }
+  ],
+  "meanings": [
+    {
+      "en": "dull; uninteresting; boring; tedious",
+      "misc": [
+        "biasanya kana saja"
+      ],
+      "field": []
+    },
+    {
+      "en": "insignificant; unimportant; trifling; trivial; worthless",
+      "misc": [
+        "biasanya kana saja"
+      ],
+      "field": []
+    },
+    {
+      "en": "absurd; foolish; silly; stupid",
+      "misc": [
+        "biasanya kana saja"
+      ],
+      "field": []
+    },
+    {
+      "en": "useless; pointless; disappointing",
+      "misc": [
+        "biasanya kana saja"
+      ],
+      "field": []
+    }
+  ],
+  "misc_jm": [
+    "biasanya kana saja"
+  ]
+},
+
+{
+  "id": "vg-n5-00069",
+  "word": "美味しい",
+  "reading": "おいしい",
+  "romaji": "oishii",
+  "meaning_id": "enak, lezat",
+  "meaning_en": "delicious",
+  "jlpt": "n5",
+  "pos": "i-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "pendidikan",
+    "emosi"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "umum"
+  ],
+  "nuance": "難しい = sulit/susah. Lawan: やさしい/簡単な. 発音が難しい = pengucapannya sulit.",
+  "conj_type": "adj-i",
+  "examples": [
+    {
+      "jp": "このラーメンはおいしいです。",
+      "id": "Ramen ini enak.",
+      "level": "n5",
+      "tags": [
+        "makanan-minuman"
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":5,"downstep_mora":3,"contour":"ツマラ＼ナイ"}
+}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus",
+  "jmdict_seq": "1486650",
+  "frequency": 1000,
+  "forms": [
+    {
+      "word": "美味しい",
+      "info": []
+    },
+    {
+      "word": "旨味しい",
+      "info": [
+        "search-only kanji form"
+      ]
+    }
+  ],
+  "meanings": [
+    {
+      "en": "good(-tasting); nice; delicious; tasty",
+      "misc": [
+        "biasanya kana saja"
+      ],
+      "field": []
+    },
+    {
+      "en": "attractive (offer, opportunity, etc.); appealing; convenient; favorable; desirable; profitable",
+      "misc": [
+        "biasanya kana saja"
+      ],
+      "field": []
+    }
+  ],
+  "misc_jm": [
+    "biasanya kana saja"
+  ]
+},
+
+{
+  "id": "vg-n5-00070",
+  "word": "難しい",
+  "reading": "むずかしい",
+  "romaji": "muzukashii",
+  "meaning_id": "sulit",
+  "meaning_en": "difficult",
+  "jlpt": "n5",
+  "pos": "i-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "pendidikan",
+    "emosi"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "umum"
+  ],
+  "nuance": "易しい/簡単な = mudah. HATI-HATI: 易しい (yaさしい) vs 優しい (やさしい = baik hati). Kanji beda!",
+  "conj_type": "adj-i",
+  "examples": [
+    {
+      "jp": "日本語は難しいです。",
+      "id": "Bahasa Jepang itu sulit.",
+      "level": "n5",
+      "tags": [
+        "pendidikan"
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"オイシイ￣"}
+}
+  ],
+  "synonyms": [],
+  "antonyms": [
+    "vg-n5-00071"
+  ],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus",
+  "jmdict_seq": "1460850",
+  "frequency": 3500,
+  "forms": [
+    {
+      "word": "難しい",
+      "info": []
+    },
+    {
+      "word": "六借しい",
+      "info": [
+        "search-only kanji form"
+      ]
+    },
+    {
+      "word": "六ヶ敷い",
+      "info": [
+        "search-only kanji form"
+      ]
+    },
+    {
+      "word": "六かしい",
+      "info": [
+        "search-only kanji form"
+      ]
+    }
+  ],
+  "meanings": [
+    {
+      "en": "difficult; hard; troublesome; complicated; serious (disease, problem, etc.)",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "impossible; unfeasible",
+      "misc": [
+        "euphemistic"
+      ],
+      "field": []
+    },
+    {
+      "en": "fussy; particular; fastidious; hard to please; displeased",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "gloomy; glum; sullen; serious (look)",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "dirty; unclean; filthy; detestable",
+      "misc": [
+        "archaic"
+      ],
+      "field": []
+    },
+    {
+      "en": "unpleasant; uncomfortable; creepy; spooky",
+      "misc": [
+        "archaic"
+      ],
+      "field": []
+    }
+  ],
+  "misc_jm": [
+    "arkais",
+    "euphemistic"
+  ]
+},
+
+{
+  "id": "vg-n5-00071",
+  "word": "易しい",
+  "reading": "やさしい",
+  "romaji": "yasashii",
+  "meaning_id": "mudah, gampang",
+  "meaning_en": "easy",
+  "jlpt": "n5",
+  "pos": "i-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "pendidikan"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "umum"
+  ],
+  "nuance": "Beda dengan 優しい (baik hati) — homofon tapi beda kanji.",
+  "conj_type": "adj-i",
+  "examples": [
+    {
+      "jp": "この問題は易しいです。",
+      "id": "Soal ini mudah.",
+      "level": "n5",
+      "tags": [
+        "pendidikan"
+      ],
+  "pitch": {"pattern":4,"category":"nakadaka","mora_count":5,"downstep_mora":4,"contour":"ムズカシ＼イ"}
+}
+  ],
+  "synonyms": [],
+  "antonyms": [
+    "vg-n5-00070"
+  ],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus",
+  "jmdict_seq": "1157000",
+  "frequency": 19500,
+  "misc_jm": [
+    "biasanya kana saja"
+  ]
+},
+
+{
+  "id": "vg-n5-00072",
+  "word": "忙しい",
+  "reading": "いそがしい",
+  "romaji": "isogashii",
+  "meaning_id": "sibuk",
+  "meaning_en": "busy",
+  "jlpt": "n5",
+  "pos": "i-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "belanja"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "rekan"
+  ],
+  "nuance": "安い = murah. Lawan: 高い. 安くておいしい = murah dan enak (sering dipakai bersama).",
+  "conj_type": "adj-i",
+  "examples": [
+    {
+      "jp": "最近, とても忙しいです。",
+      "id": "Belakangan ini saya sangat sibuk.",
+      "level": "n5",
+      "tags": [
+        "pekerjaan"
+      ],
+  "pitch": {"pattern":4,"category":"nakadaka","mora_count":5,"downstep_mora":4,"contour":"イソガシ＼イ"}
+}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus",
+  "jmdict_seq": "2835296",
+  "meanings": [
+    {
+      "en": "busy; hectic; frantic",
+      "misc": [
+        "biasanya kana saja"
+      ],
+      "field": []
+    },
+    {
+      "en": "restless; hurried; fidgety",
+      "misc": [
+        "biasanya kana saja"
+      ],
+      "field": []
+    }
+  ],
+  "misc_jm": [
+    "biasanya kana saja"
+  ]
+},
+
+{
+  "id": "vg-n5-00073",
+  "word": "可愛い",
+  "reading": "かわいい",
+  "romaji": "kawaii",
+  "meaning_id": "lucu, imut",
+  "meaning_en": "cute",
+  "jlpt": "n5",
+  "pos": "i-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 1,
+  "domain": [
+    "kehidupan-sehari"
+  ],
+  "register": "casual",
+  "lawan_bicara": [
+    "teman"
+  ],
+  "nuance": "長い = panjang (ukuran) ATAU lama (waktu). Lawan: 短い. 長い時間 = waktu yang lama.",
+  "conj_type": "adj-i",
+  "examples": [
+    {
+      "jp": "かわいいネコですね。",
+      "id": "Kucing yang lucu ya.",
+      "level": "n5",
+      "tags": [
+        "kehidupan-sehari"
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"カワイ＼イ"}
+}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus",
+  "jmdict_seq": "2863274",
+  "meanings": [
+    {
+      "en": "cute; adorable; charming; lovely; pretty",
+      "misc": [
+        "biasanya kana saja",
+        "dated term"
+      ],
+      "field": []
+    },
+    {
+      "en": "dear; precious; darling; pet",
+      "misc": [
+        "biasanya kana saja",
+        "dated term"
+      ],
+      "field": []
+    },
+    {
+      "en": "innocent; childlike; childish; lovable",
+      "misc": [
+        "biasanya kana saja",
+        "dated term"
+      ],
+      "field": []
+    },
+    {
+      "en": "dainty; little; tiny",
+      "misc": [
+        "biasanya kana saja",
+        "dated term"
+      ],
+      "field": []
+    }
+  ],
+  "misc_jm": [
+    "biasanya kana saja",
+    "dated term"
+  ]
+},
+
+{
+  "id": "vg-n5-00074",
+  "word": "長い",
+  "reading": "ながい",
+  "romaji": "nagai",
+  "meaning_id": "panjang; lama",
+  "meaning_en": "long",
+  "jlpt": "n5",
+  "pos": "i-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kehidupan-sehari"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "umum"
+  ],
+  "nuance": "短い = pendek (ukuran/waktu). Lawan: 長い. 時間が短い = waktunya singkat.",
+  "conj_type": "adj-i",
+  "examples": [
+    {
+      "jp": "この川は長いです。",
+      "id": "Sungai ini panjang.",
+      "level": "n5",
+      "tags": [
+        "alam-lingkungan"
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"ナガ＼イ"}
+}
+  ],
+  "synonyms": [],
+  "antonyms": [
+    "vg-n5-00075"
+  ],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus",
+  "jmdict_seq": "1429750",
+  "frequency": 7500,
+  "forms": [
+    {
+      "word": "長い",
+      "info": []
+    },
+    {
+      "word": "永い",
+      "info": []
+    }
+  ],
+  "meanings": [
+    {
+      "en": "long (distance, length)",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "long (time); protracted; prolonged",
+      "misc": [],
+      "field": []
+    }
+  ]
+},
+
+{
+  "id": "vg-n5-00075",
+  "word": "短い",
+  "reading": "みじかい",
+  "romaji": "mijikai",
+  "meaning_id": "pendek; singkat",
+  "meaning_en": "short",
+  "jlpt": "n5",
+  "pos": "i-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kehidupan-sehari"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "umum"
+  ],
+  "nuance": "Means 'short' (in length or duration). Opposite of 長い. Used for physical objects (短いスカート) and time (短い時間).",
+  "conj_type": "adj-i",
+  "examples": [
+    {
+      "jp": "この映画は短いです。",
+      "id": "Film ini singkat.",
+      "level": "n5",
+      "tags": [
+        "kehidupan-sehari"
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"ナガ＼イ"}
+}
+  ],
+  "synonyms": [],
+  "antonyms": [
+    "vg-n5-00074"
+  ],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus",
+  "jmdict_seq": "1418620",
+  "frequency": 12500,
+  "forms": [
+    {
+      "word": "短い",
+      "info": []
+    },
+    {
+      "word": "短かい",
+      "info": [
+        "search-only kanji form"
+      ]
+    }
+  ],
+  "meanings": [
+    {
+      "en": "short",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "brief",
+      "misc": [],
+      "field": []
+    }
+  ]
+},
+
+{
+  "id": "vg-n5-00076",
+  "word": "好き",
+  "reading": "すき",
+  "romaji": "suki",
+  "meaning_id": "suka",
+  "meaning_en": "to like",
+  "jlpt": "n5",
+  "pos": "na-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kehidupan-sehari"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "umum"
+  ],
+  "nuance": "Secara gramatikal adalah な形容詞. 〜が好き (bukan 〜を).",
+  "conj_type": "adj-na",
+  "examples": [
+    {
+      "jp": "音楽が好きです。",
+      "id": "Saya suka musik.",
+      "level": "n5",
+      "tags": [
+        "kehidupan-sehari"
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"ミジカ＼イ"}
+}
+  ],
+  "synonyms": [],
+  "antonyms": [
+    "vg-n5-00077"
+  ],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus",
+  "jmdict_seq": "2146440",
+  "meanings": [
+    {
+      "en": "love of; affection for; enthusiast for; lover of; fan; -phile",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "being attractive to; being liked by",
+      "misc": [],
+      "field": []
+    }
+  ]
+},
+
+{
+  "id": "vg-n5-00077",
+  "word": "嫌い",
+  "reading": "きらい",
+  "romaji": "kirai",
+  "meaning_id": "tidak suka",
+  "meaning_en": "to dislike",
+  "jlpt": "n5",
+  "pos": "na-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kehidupan-sehari"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman"
+  ],
+  "nuance": "Bisa kasar jika dipakai langsung ke orang. 〜が嫌い.",
+  "conj_type": "adj-na",
+  "examples": [
+    {
+      "jp": "虫が嫌いです。",
+      "id": "Saya tidak suka serangga.",
+      "level": "n5",
+      "tags": [
+        "kehidupan-sehari"
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"キライ￣"}
+}
+  ],
+  "synonyms": [],
+  "antonyms": [
+    "vg-n5-00076"
+  ],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus",
+  "jmdict_seq": "2796330"
+},
+
+{
+  "id": "vg-n5-00078",
+  "word": "上手",
+  "reading": "じょうず",
+  "romaji": "jouzu",
+  "meaning_id": "pandai, mahir",
+  "meaning_en": "skilled; good at",
+  "jlpt": "n5",
+  "pos": "na-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "pendidikan"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "umum"
+  ],
+  "nuance": "Jangan pakai untuk diri sendiri — terkesan sombong. Gunakan 得意 untuk diri sendiri.",
+  "conj_type": "adj-na",
+  "examples": [
+    {
+      "jp": "田中さんは料理が上手ですね。",
+      "id": "Tanaka-san pandai masak ya.",
+      "level": "n5",
+      "tags": [
+        "makanan-minuman",
+        "sopan-santun"
+      ],
+  "pitch": {"pattern":3,"category":"odaka","mora_count":3,"downstep_mora":3,"contour":"ジョウズ＼"}
+}
+  ],
+  "synonyms": [],
+  "antonyms": [
+    "vg-n5-00079"
+  ],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus",
+  "jmdict_seq": "1580400",
+  "meanings": [
+    {
+      "en": "upper part",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "upper stream; upper course of a river",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "right side of the stage (audience's or camera's POV); stage left (actor's POV)",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "skillful (in comparisons); dexterity",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "over-arm grip on opponent's belt",
+      "misc": [],
+      "field": [
+        "sumo"
+      ]
+    }
+  ]
+},
+
+{
+  "id": "vg-n5-00079",
+  "word": "下手",
+  "reading": "へた",
+  "romaji": "heta",
+  "meaning_id": "tidak pandai, kurang mahir",
+  "meaning_en": "unskilled; bad at",
+  "jlpt": "n5",
+  "pos": "na-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kehidupan-sehari"
+  ],
+  "register": "casual",
+  "lawan_bicara": [
+    "teman"
+  ],
+  "nuance": "Bisa kasar kalau dipakai ke orang lain tanpa konteks yang tepat.",
+  "conj_type": "adj-na",
+  "examples": [
+    {
+      "jp": "歌が下手です。",
+      "id": "Saya tidak pandai bernyanyi.",
+      "level": "n5",
+      "tags": [
+        "kehidupan-sehari"
+      ],
+  "pitch": {"pattern":2,"category":"odaka","mora_count":2,"downstep_mora":2,"contour":"ヘタ＼"}
+}
+  ],
+  "synonyms": [],
+  "antonyms": [
+    "vg-n5-00078"
+  ],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus",
+  "jmdict_seq": "1185200",
+  "frequency": 7500,
+  "meanings": [
+    {
+      "en": "unskillful; poor; awkward",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "imprudent; untactful",
+      "misc": [],
+      "field": []
+    }
+  ]
+},
+
+{
+  "id": "vg-n5-00080",
+  "word": "きれい",
+  "reading": "きれい",
+  "romaji": "kirei",
+  "meaning_id": "cantik; bersih",
+  "meaning_en": "beautiful; clean",
+  "jlpt": "n5",
+  "pos": "na-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kehidupan-sehari"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "umum"
+  ],
+  "nuance": "Dua arti: cantik/indah dan bersih. Perhatikan konteks.",
+  "conj_type": "adj-na",
+  "examples": [
+    {
+      "jp": "この花はきれいですね。",
+      "id": "Bunga ini cantik ya.",
+      "level": "n5",
+      "tags": [
+        "alam-lingkungan"
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"キ＼レイ"}
+}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus",
+  "jmdict_seq": "1591900",
+  "frequency": 1000,
+  "forms": [
+    {
+      "word": "綺麗",
+      "info": []
+    },
+    {
+      "word": "奇麗",
+      "info": []
+    },
+    {
+      "word": "暉麗",
+      "info": [
+        "search-only kanji form"
+      ]
+    }
+  ],
+  "meanings": [
+    {
+      "en": "pretty; lovely; beautiful; fair",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "clean; clear; pure; tidy; neat",
+      "misc": [
+        "biasanya kana saja"
+      ],
+      "field": []
+    },
+    {
+      "en": "completely; entirely",
+      "misc": [
+        "biasanya kana saja"
+      ],
+      "field": []
+    }
+  ],
+  "misc_jm": [
+    "biasanya kana saja"
+  ]
+},
+
+{
+  "id": "vg-n5-00081",
+  "word": "静か",
+  "reading": "しずか",
+  "romaji": "shizuka",
+  "meaning_id": "tenang, hening",
+  "meaning_en": "quiet; calm",
+  "jlpt": "n5",
+  "pos": "na-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kehidupan-sehari"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "umum"
+  ],
+  "nuance": "Describes peaceful environments, silence, or a calm personality. It's a na-adjective, meaning you must append 'na' when directly modifying a noun.",
+  "conj_type": "adj-na",
+  "examples": [
+    {
+      "jp": "この図書館は静かです。",
+      "id": "Perpustakaan ini tenang.",
+      "level": "n5",
+      "tags": [
+        "pendidikan"
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"キ＼レイ"}
+}
+  ],
+  "synonyms": [],
+  "antonyms": [
+    "vg-n5-00082"
+  ],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus",
+  "jmdict_seq": "1381820",
+  "frequency": 2500,
+  "forms": [
+    {
+      "word": "静か",
+      "info": []
+    },
+    {
+      "word": "閑か",
+      "info": [
+        "kanji jarang dipakai"
+      ]
+    }
+  ],
+  "meanings": [
+    {
+      "en": "quiet; silent",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "slow; unhurried",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "calm; peaceful",
+      "misc": [],
+      "field": []
+    }
+  ]
+},
+
+{
+  "id": "vg-n5-00082",
+  "word": "賑やか",
+  "reading": "にぎやか",
+  "romaji": "nigiyaka",
+  "meaning_id": "ramai, meriah",
+  "meaning_en": "lively; bustling",
+  "jlpt": "n5",
+  "pos": "na-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kehidupan-sehari"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "umum"
+  ],
+  "nuance": "Na-adjective meaning 'lively' or 'bustling.' Describes places full of energy: 賑やかな街 (a lively town). Positive connotation, unlike うるさい (noisy).",
+  "conj_type": "adj-na",
+  "examples": [
+    {
+      "jp": "渋谷はにぎやかです。",
+      "id": "Shibuya itu ramai.",
+      "level": "n5",
+      "tags": [
+        "perjalanan"
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"シ＼ズカ"}
+}
+  ],
+  "synonyms": [],
+  "antonyms": [
+    "vg-n5-00081"
+  ],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus",
+  "jmdict_seq": "1463480",
+  "frequency": 1000,
+  "meanings": [
+    {
+      "en": "bustling; busy; crowded; lively; prosperous; thriving",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "lively (party, voices, etc.); loud; noisy; merry; cheerful",
+      "misc": [],
+      "field": []
+    }
+  ]
+},
+
+{
+  "id": "vg-n5-00083",
+  "word": "大切",
+  "reading": "たいせつ",
+  "romaji": "taisetsu",
+  "meaning_id": "penting, berharga",
+  "meaning_en": "important; precious",
+  "jlpt": "n5",
+  "pos": "na-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kehidupan-sehari"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "umum"
+  ],
+  "nuance": "Refers to something highly valued or carefully treated, often with an emotional attachment. It's a na-adjective and commonly used when telling someone to take care.",
+  "conj_type": "adj-na",
+  "examples": [
+    {
+      "jp": "健康が大切です。",
+      "id": "Kesehatan itu penting.",
+      "level": "n5",
+      "tags": [
+        "kesehatan"
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"タイセツ￣"}
+}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus",
+  "jmdict_seq": "1643470",
+  "forms": [
+    {
+      "word": "大切り",
+      "info": []
+    },
+    {
+      "word": "大切",
+      "info": [
+        "okurigana tidak biasa"
+      ]
+    }
+  ]
+},
+
+{
+  "id": "vg-n5-00145",
+  "word": "白い",
+  "reading": "しろい",
+  "romaji": "shiroi",
+  "meaning_id": "putih",
+  "meaning_en": "white",
+  "jlpt": "n5",
+  "pos": "i-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kehidupan-sehari"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "umum"
+  ],
+  "nuance": "Warna sebagai adj-i: 白い. Sebagai noun: 白 (shiro).",
+  "conj_type": "adj-i",
+  "examples": [
+    {
+      "jp": "白い猫がいます。",
+      "id": "Ada kucing putih.",
+      "level": "n5",
+      "tags": [
+        "kehidupan-sehari"
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"オオギリ￣"}
+}
+  ],
+  "synonyms": [],
+  "antonyms": [
+    "vg-n5-00146"
+  ],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus",
+  "jmdict_seq": "1474910",
+  "frequency": 8000,
+  "meanings": [
+    {
+      "en": "white",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "blank (e.g. paper); uncolored; unmarked; spotless; immaculate",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "innocent; not guilty; pure",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "bright; vivid",
+      "misc": [
+        "archaic"
+      ],
+      "field": []
+    },
+    {
+      "en": "inexperienced; naive; unrefined",
+      "misc": [
+        "archaic"
+      ],
+      "field": []
+    }
+  ],
+  "misc_jm": [
+    "arkais"
+  ]
+},
+
+{
+  "id": "vg-n5-00146",
+  "word": "黒い",
+  "reading": "くろい",
+  "romaji": "kuroi",
+  "meaning_id": "hitam",
+  "meaning_en": "black",
+  "jlpt": "n5",
+  "pos": "i-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kehidupan-sehari"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "umum"
+  ],
+  "nuance": "Means 'black.' One of the basic color i-adjectives. Also used figuratively: 腹黒い means 'scheming' (literally 'black-bellied').",
+  "conj_type": "adj-i",
+  "examples": [
+    {
+      "jp": "黒いかばんを買いました。",
+      "id": "Saya membeli tas hitam.",
+      "level": "n5",
+      "tags": [
+        "belanja"
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"クロ＼イ"}
+}
+  ],
+  "synonyms": [],
+  "antonyms": [
+    "vg-n5-00145"
+  ],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus",
+  "jmdict_seq": "1287420",
+  "frequency": 9000,
+  "meanings": [
+    {
+      "en": "black",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "dark; blackish; sun-tanned (skin)",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "suspicious; criminal; illicit",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "darkened and dirty; sooty; covered in dirt",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "evil; wicked; black-hearted",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "inauspicious; ill-boding; unlucky",
+      "misc": [],
+      "field": []
+    }
+  ]
+},
+
+{
+  "id": "vg-n5-00147",
+  "word": "赤い",
+  "reading": "あかい",
+  "romaji": "akai",
+  "meaning_id": "merah",
+  "meaning_en": "red",
+  "jlpt": "n5",
+  "pos": "i-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kehidupan-sehari"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "umum"
+  ],
+  "nuance": "An i-adjective for the color red. It functions grammatically to describe red objects directly without needing the particle 'no'.",
+  "conj_type": "adj-i",
+  "examples": [
+    {
+      "jp": "赤いりんごがおいしいです。",
+      "id": "Apel merah itu enak.",
+      "level": "n5",
+      "tags": [
+        "makanan-minuman"
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"アカイ￣"}
+}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus",
+  "jmdict_seq": "1383240",
+  "frequency": 7500,
+  "forms": [
+    {
+      "word": "赤い",
+      "info": []
+    },
+    {
+      "word": "紅い",
+      "info": []
+    },
+    {
+      "word": "朱い",
+      "info": [
+        "kanji jarang dipakai"
+      ]
+    },
+    {
+      "word": "緋い",
+      "info": [
+        "search-only kanji form"
+      ]
+    },
+    {
+      "word": "赭い",
+      "info": [
+        "search-only kanji form"
+      ]
+    },
+    {
+      "word": "丹い",
+      "info": [
+        "search-only kanji form"
+      ]
+    }
+  ],
+  "meanings": [
+    {
+      "en": "red; crimson; scarlet; vermilion",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "Red; communist",
+      "misc": [
+        "percakapan kasual"
+      ],
+      "field": []
+    }
+  ],
+  "misc_jm": [
+    "kasual"
+  ]
+},
+
+{
+  "id": "vg-n5-00148",
+  "word": "青い",
+  "reading": "あおい",
+  "romaji": "aoi",
+  "meaning_id": "biru; hijau (langit/tumbuhan)",
+  "meaning_en": "blue; green",
+  "jlpt": "n5",
+  "pos": "i-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kehidupan-sehari"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "umum"
+  ],
+  "nuance": "Bahasa Jepang klasik: 青 mencakup biru dan hijau untuk alam (青信号=lampu hijau).",
+  "conj_type": "adj-i",
+  "examples": [
+    {
+      "jp": "青い空がきれいです。",
+      "id": "Langit biru itu indah.",
+      "level": "n5",
+      "tags": [
+        "alam-lingkungan"
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"アカイ￣"}
+}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus",
+  "jmdict_seq": "1381390",
+  "frequency": 12500,
+  "forms": [
+    {
+      "word": "青い",
+      "info": []
+    },
+    {
+      "word": "蒼い",
+      "info": []
+    },
+    {
+      "word": "碧い",
+      "info": [
+        "kanji jarang dipakai"
+      ]
+    }
+  ],
+  "meanings": [
+    {
+      "en": "blue; azure",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "green",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "pale (facial color); gray; grey",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "unripe; inexperienced",
+      "misc": [],
+      "field": []
+    }
+  ]
+},
+
+{
+  "id": "vg-n5-00151",
+  "word": "楽しい",
+  "reading": "たのしい",
+  "romaji": "tanoshii",
+  "meaning_id": "menyenangkan, mengasyikkan",
+  "meaning_en": "fun; enjoyable",
+  "jlpt": "n5",
+  "pos": "i-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "emosi",
+    "kehidupan-sehari"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "umum"
+  ],
+  "nuance": "Menggambarkan perasaan senang yang aktif. Berbeda dengan 嬉しい (ureshii) yang lebih pasif/situasional.",
+  "conj_type": "adj-i",
+  "examples": [
+    {
+      "jp": "パーティーはとても楽しかったです。",
+      "id": "Pestanya sangat menyenangkan.",
+      "level": "n5",
+      "tags": [
+        "emosi",
+        "kehidupan-sehari"
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"アオ＼イ"}
+},
+    {
+      "jp": "日本語の勉強は楽しいです。",
+      "id": "Belajar bahasa Jepang itu menyenangkan.",
+      "level": "n5",
+      "tags": [
+        "pendidikan",
+        "emosi"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus",
+  "jmdict_seq": "1207240",
+  "frequency": 8000,
+  "forms": [
+    {
+      "word": "楽しい",
+      "info": []
+    },
+    {
+      "word": "愉しい",
+      "info": [
+        "kanji jarang dipakai"
+      ]
+    },
+    {
+      "word": "樂しい",
+      "info": [
+        "search-only kanji form"
+      ]
+    },
+    {
+      "word": "娯しい",
+      "info": [
+        "search-only kanji form"
+      ]
+    }
+  ]
+},
+
+{
+  "id": "vg-n5-00167",
+  "word": "同じ",
+  "reading": "おなじ",
+  "romaji": "onaji",
+  "meaning_id": "sama, serupa",
+  "meaning_en": "same; identical",
+  "jlpt": "n5",
+  "pos": "na-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kehidupan-sehari"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "umum"
+  ],
+  "nuance": "Unik: adj-na tapi tidak pakai な saat atributif (同じ学校, bukan 同じな学校).",
+  "conj_type": "adj-na",
+  "examples": [
+    {
+      "jp": "私たちは同じ学校に通っています。",
+      "id": "Kami bersekolah di sekolah yang sama.",
+      "level": "n5",
+      "tags": [
+        "pendidikan"
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"タノシ＼イ"}
+},
+    {
+      "jp": "二人は同じ意見です。",
+      "id": "Keduanya berpendapat sama.",
+      "level": "n5",
+      "tags": [
+        "kehidupan-sehari"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [
+    "vg-n5-00166"
+  ],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus",
+  "jmdict_seq": "1451750",
+  "frequency": 16500,
+  "meanings": [
+    {
+      "en": "same; identical; equal; alike; equivalent",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "anyway; in any case; if one must ...; if one has to ...; as long as ...",
+      "misc": [],
+      "field": []
+    }
+  ]
+},
+
+{
+  "id": "vg-n5-00235",
+  "word": "あかい",
+  "reading": "あかい",
+  "romaji": "akai",
+  "meaning_id": "merah",
+  "meaning_en": "red",
+  "jlpt": "n5",
+  "pos": "i-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kehidupan-sehari"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [],
+  "nuance": "An i-adjective for the color red, written in hiragana. Used to directly describe red objects and can conjugate for past and negative forms.",
+  "conj_type": "adj-i",
+  "examples": [
+    {
+      "jp": "赤いバラが好きです。",
+      "id": "Saya suka bunga mawar merah.",
+      "level": "n5",
+      "tags": [
+        "alam-lingkungan"
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"アカイ￣"}
+}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus",
+  "jmdict_seq": "1383240",
+  "frequency": 7500,
+  "forms": [
+    {
+      "word": "赤い",
+      "info": []
+    },
+    {
+      "word": "紅い",
+      "info": []
+    },
+    {
+      "word": "朱い",
+      "info": [
+        "kanji jarang dipakai"
+      ]
+    },
+    {
+      "word": "緋い",
+      "info": [
+        "search-only kanji form"
+      ]
+    },
+    {
+      "word": "赭い",
+      "info": [
+        "search-only kanji form"
+      ]
+    },
+    {
+      "word": "丹い",
+      "info": [
+        "search-only kanji form"
+      ]
+    }
+  ],
+  "meanings": [
+    {
+      "en": "red; crimson; scarlet; vermilion",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "Red; communist",
+      "misc": [
+        "percakapan kasual"
+      ],
+      "field": []
+    }
+  ],
+  "misc_jm": [
+    "kasual"
+  ]
+},
+
+{
+  "id": "vg-n5-00236",
+  "word": "あおい",
+  "reading": "あおい",
+  "romaji": "aoi",
+  "meaning_id": "biru; hijau (rambu)",
+  "meaning_en": "blue; green (traffic)",
+  "jlpt": "n5",
+  "pos": "i-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kehidupan-sehari"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [],
+  "nuance": "青い = biru (langit, laut). Di lampu lalu lintas, \"hijau\" disebut 青 di Jepang.",
+  "conj_type": "adj-i",
+  "examples": [
+    {
+      "jp": "空が青いですね。",
+      "id": "Langitnya biru ya.",
+      "level": "n5",
+      "tags": [
+        "alam-lingkungan"
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"アカイ￣"}
+}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus",
+  "jmdict_seq": "1151180",
+  "meanings": [
+    {
+      "en": "mallow (any plant of family Malvaceae)",
+      "misc": [
+        "biasanya kana saja"
+      ],
+      "field": []
+    },
+    {
+      "en": "Asarum caulescens (species of wild ginger)",
+      "misc": [
+        "biasanya kana saja"
+      ],
+      "field": []
+    }
+  ],
+  "misc_jm": [
+    "biasanya kana saja"
+  ]
+},
+
+{
+  "id": "vg-n5-00237",
+  "word": "しろい",
+  "reading": "しろい",
+  "romaji": "shiroi",
+  "meaning_id": "putih",
+  "meaning_en": "white",
+  "jlpt": "n5",
+  "pos": "i-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kehidupan-sehari"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [],
+  "nuance": "An i-adjective describing the color white. Distinct from the noun form, it can conjugate and directly modify nouns.",
+  "conj_type": "adj-i",
+  "examples": [
+    {
+      "jp": "白いシャツを着ています。",
+      "id": "Dia memakai kemeja putih.",
+      "level": "n5",
+      "tags": [
+        "kehidupan-sehari"
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"シロ＼イ"}
+}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus",
+  "jmdict_seq": "1474910",
+  "frequency": 8000,
+  "meanings": [
+    {
+      "en": "white",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "blank (e.g. paper); uncolored; unmarked; spotless; immaculate",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "innocent; not guilty; pure",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "bright; vivid",
+      "misc": [
+        "archaic"
+      ],
+      "field": []
+    },
+    {
+      "en": "inexperienced; naive; unrefined",
+      "misc": [
+        "archaic"
+      ],
+      "field": []
+    }
+  ],
+  "misc_jm": [
+    "arkais"
+  ]
+},
+
+{
+  "id": "vg-n5-00238",
+  "word": "くろい",
+  "reading": "くろい",
+  "romaji": "kuroi",
+  "meaning_id": "hitam",
+  "meaning_en": "black",
+  "jlpt": "n5",
+  "pos": "i-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kehidupan-sehari"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [],
+  "nuance": "An i-adjective for the color black, presented in hiragana. It is used to qualify objects and states rather than referring to the color conceptually.",
+  "conj_type": "adj-i",
+  "examples": [
+    {
+      "jp": "黒い猫が好きです。",
+      "id": "Saya suka kucing hitam.",
+      "level": "n5",
+      "tags": [
+        "kehidupan-sehari"
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"クロ＼イ"}
+}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus",
+  "jmdict_seq": "1287420",
+  "frequency": 9000,
+  "meanings": [
+    {
+      "en": "black",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "dark; blackish; sun-tanned (skin)",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "suspicious; criminal; illicit",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "darkened and dirty; sooty; covered in dirt",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "evil; wicked; black-hearted",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "inauspicious; ill-boding; unlucky",
+      "misc": [],
+      "field": []
+    }
+  ]
+},
+
+{
+  "id": "vg-n5-00239",
+  "word": "あたらしい",
+  "reading": "あたらしい",
+  "romaji": "atarashii",
+  "meaning_id": "baru",
+  "meaning_en": "new",
+  "jlpt": "n5",
+  "pos": "i-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kehidupan-sehari"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [],
+  "nuance": "Describes fresh, modern, or recently acquired things. It can refer to physical objects as well as abstract ideas like a new year.",
+  "conj_type": "adj-i",
+  "examples": [
+    {
+      "jp": "新しいスマホを買いました。",
+      "id": "Saya membeli smartphone baru.",
+      "level": "n5",
+      "tags": [
+        "teknologi",
+        "belanja"
+      ],
+  "pitch": {"pattern":4,"category":"nakadaka","mora_count":5,"downstep_mora":4,"contour":"アタラシ＼イ"}
+}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus",
+  "jmdict_seq": "1361490",
+  "frequency": 4000,
+  "forms": [
+    {
+      "word": "新しい",
+      "info": []
+    },
+    {
+      "word": "新らしい",
+      "info": [
+        "search-only kanji form"
+      ]
+    }
+  ]
+},
+
+{
+  "id": "vg-n5-00240",
+  "word": "ふるい",
+  "reading": "ふるい",
+  "romaji": "furui",
+  "meaning_id": "tua; lama; kuno",
+  "meaning_en": "old (things), ancient",
+  "jlpt": "n5",
+  "pos": "i-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kehidupan-sehari"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [],
+  "nuance": "古い = untuk benda. Untuk orang tua: 年を取った / 年配の。",
+  "conj_type": "adj-i",
+  "examples": [
+    {
+      "jp": "この建物はとても古いです。",
+      "id": "Bangunan ini sangat tua.",
+      "level": "n5",
+      "tags": [
+        "perjalanan"
+      ],
+  "pitch": {"pattern":4,"category":"nakadaka","mora_count":5,"downstep_mora":4,"contour":"アタラシ＼イ"}
+}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus",
+  "jmdict_seq": "1265070",
+  "frequency": 8000,
+  "forms": [
+    {
+      "word": "古い",
+      "info": []
+    },
+    {
+      "word": "旧い",
+      "info": [
+        "kanji jarang dipakai"
+      ]
+    },
+    {
+      "word": "故い",
+      "info": [
+        "kanji jarang dipakai"
+      ]
+    }
+  ],
+  "meanings": [
+    {
+      "en": "old; aged; ancient; antiquated; antique; timeworn",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "long; since long ago; time-honored",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "of the distant past; long-ago",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "stale; threadbare; hackneyed; corny",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "old-fashioned; outmoded; out-of-date",
+      "misc": [],
+      "field": []
+    }
+  ]
+},
+
+{
+  "id": "vg-n5-00241",
+  "word": "たかい",
+  "reading": "たかい",
+  "romaji": "takai",
+  "meaning_id": "mahal; tinggi",
+  "meaning_en": "expensive; tall/high",
+  "jlpt": "n5",
+  "pos": "i-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "belanja"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [],
+  "nuance": "高い = mahal (uang) ATAU tinggi (fisik). Konteks menentukan.",
+  "conj_type": "adj-i",
+  "examples": [
+    {
+      "jp": "このレストランは高いですが, おいしいです。",
+      "id": "Restoran ini mahal tapi enak.",
+      "level": "n5",
+      "tags": [
+        "makanan-minuman",
+        "belanja"
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"フル＼イ"}
+}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus",
+  "jmdict_seq": "1283190",
+  "frequency": 4000,
+  "forms": [
+    {
+      "word": "高い",
+      "info": []
+    },
+    {
+      "word": "高価い",
+      "info": [
+        "search-only kanji form"
+      ]
+    },
+    {
+      "word": "高ーい",
+      "info": [
+        "search-only kanji form"
+      ]
+    }
+  ],
+  "meanings": [
+    {
+      "en": "high; tall",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "expensive; high-priced",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "high (level); above average (in degree, quality, etc.)",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "loud",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "high-pitched; shrill",
+      "misc": [],
+      "field": []
+    }
+  ]
+},
+
+{
+  "id": "vg-n5-00242",
+  "word": "やすい",
+  "reading": "やすい",
+  "romaji": "yasui",
+  "meaning_id": "murah",
+  "meaning_en": "cheap, inexpensive",
+  "jlpt": "n5",
+  "pos": "i-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "belanja"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [],
+  "nuance": "Refers primarily to price and affordability. It is an i-adjective and does not generally carry the negative connotation of poor quality that 'cheap' sometimes has in English.",
+  "conj_type": "adj-i",
+  "examples": [
+    {
+      "jp": "このスーパーは安くて便利です。",
+      "id": "Supermarket ini murah dan praktis.",
+      "level": "n5",
+      "tags": [
+        "belanja"
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"タカ＼イ"}
+}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus",
+  "jmdict_seq": "1153670",
+  "frequency": 23500,
+  "forms": [
+    {
+      "word": "安い",
+      "info": []
+    },
+    {
+      "word": "廉い",
+      "info": []
+    }
+  ],
+  "meanings": [
+    {
+      "en": "cheap; inexpensive",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "calm; peaceful; quiet",
+      "misc": [],
+      "field": []
+    }
+  ]
+},
+
+{
+  "id": "vg-n5-00243",
+  "word": "ながい",
+  "reading": "ながい",
+  "romaji": "nagai",
+  "meaning_id": "panjang; lama",
+  "meaning_en": "long",
+  "jlpt": "n5",
+  "pos": "i-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kehidupan-sehari"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [],
+  "nuance": "Used for spatial length and temporal duration. It applies to distances, objects, time, and abstract things like stories.",
+  "conj_type": "adj-i",
+  "examples": [
+    {
+      "jp": "この道はとても長いです。",
+      "id": "Jalan ini sangat panjang.",
+      "level": "n5",
+      "tags": [
+        "perjalanan"
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"ヤス＼イ"}
+}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus",
+  "jmdict_seq": "1429750",
+  "frequency": 7500,
+  "forms": [
+    {
+      "word": "長い",
+      "info": []
+    },
+    {
+      "word": "永い",
+      "info": []
+    }
+  ],
+  "meanings": [
+    {
+      "en": "long (distance, length)",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "long (time); protracted; prolonged",
+      "misc": [],
+      "field": []
+    }
+  ]
+},
+
+{
+  "id": "vg-n5-00244",
+  "word": "みじかい",
+  "reading": "みじかい",
+  "romaji": "mijikai",
+  "meaning_id": "pendek; sebentar",
+  "meaning_en": "short",
+  "jlpt": "n5",
+  "pos": "i-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kehidupan-sehari"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [],
+  "nuance": "Refers to length or duration, written in hiragana. Cannot be used to describe someone's height, which requires a different term.",
+  "conj_type": "adj-i",
+  "examples": [
+    {
+      "jp": "彼女の髪は短いです。",
+      "id": "Rambutnya pendek.",
+      "level": "n5",
+      "tags": [
+        "hubungan"
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"ナガ＼イ"}
+}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus",
+  "jmdict_seq": "1418620",
+  "frequency": 12500,
+  "forms": [
+    {
+      "word": "短い",
+      "info": []
+    },
+    {
+      "word": "短かい",
+      "info": [
+        "search-only kanji form"
+      ]
+    }
+  ],
+  "meanings": [
+    {
+      "en": "short",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "brief",
+      "misc": [],
+      "field": []
+    }
+  ]
+},
+
+{
+  "id": "vg-n5-00245",
+  "word": "おおきい",
+  "reading": "おおきい",
+  "romaji": "ookii",
+  "meaning_id": "besar",
+  "meaning_en": "big, large",
+  "jlpt": "n5",
+  "pos": "i-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kehidupan-sehari"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [],
+  "nuance": "An i-adjective indicating large size, scale, or volume. It can describe everything from physical objects to loud voices.",
+  "conj_type": "adj-i",
+  "examples": [
+    {
+      "jp": "大きい犬が好きです。",
+      "id": "Saya suka anjing besar.",
+      "level": "n5",
+      "tags": [
+        "kehidupan-sehari"
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"ミジカ＼イ"}
+}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus",
+  "jmdict_seq": "1588880",
+  "frequency": 3500,
+  "forms": [
+    {
+      "word": "大きい",
+      "info": []
+    },
+    {
+      "word": "巨きい",
+      "info": [
+        "search-only kanji form"
+      ]
+    }
+  ],
+  "meanings": [
+    {
+      "en": "big; large; great",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "loud",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "extensive; spacious",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "important; decisive; valuable",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "older; grown-up",
+      "misc": [],
+      "field": []
+    }
+  ]
+},
+
+{
+  "id": "vg-n5-00246",
+  "word": "ちいさい",
+  "reading": "ちいさい",
+  "romaji": "chiisai",
+  "meaning_id": "kecil",
+  "meaning_en": "small, little",
+  "jlpt": "n5",
+  "pos": "i-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kehidupan-sehari"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [],
+  "nuance": "Indicates smallness in size, scale, or volume. When used for voices or sounds, it means quiet.",
+  "conj_type": "adj-i",
+  "examples": [
+    {
+      "jp": "小さい猫がいます。",
+      "id": "Ada kucing kecil.",
+      "level": "n5",
+      "tags": [
+        "kehidupan-sehari"
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"オオキ＼イ"}
+}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus",
+  "jmdict_seq": "1347750",
+  "frequency": 12000,
+  "meanings": [
+    {
+      "en": "small; little; tiny",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "slight; below average (in degree, amount, etc.); minor; small",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "low (e.g. sound); soft (e.g. voice)",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "unimportant; petty; insignificant; trifling; trivial",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "young; juvenile",
+      "misc": [],
+      "field": []
+    }
+  ]
+},
+
+{
+  "id": "vg-n5-00247",
+  "word": "あつい",
+  "reading": "あつい",
+  "romaji": "atsui",
+  "meaning_id": "panas (benda)",
+  "meaning_en": "hot (to the touch)",
+  "jlpt": "n5",
+  "pos": "i-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "makanan-minuman"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [],
+  "nuance": "熱い = panas saat disentuh/diminum. Beda: 暑い (atsui) = panas cuaca. Kanji beda!",
+  "conj_type": "adj-i",
+  "examples": [
+    {
+      "jp": "スープが熱いので気をつけてください。",
+      "id": "Supnya panas, hati-hati ya.",
+      "level": "n5",
+      "tags": [
+        "makanan-minuman"
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"アツイ￣"}
+}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus",
+  "jmdict_seq": "1275320",
+  "frequency": 14500,
+  "forms": [
+    {
+      "word": "厚い",
+      "info": []
+    },
+    {
+      "word": "篤い",
+      "info": []
+    }
+  ],
+  "meanings": [
+    {
+      "en": "thick; deep; heavy",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "kind; cordial; hospitable; warm; faithful",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "serious (of an illness)",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "abundant",
+      "misc": [],
+      "field": []
+    }
+  ]
+},
+
+{
+  "id": "vg-n5-00248",
+  "word": "さむい",
+  "reading": "さむい",
+  "romaji": "samui",
+  "meaning_id": "dingin (cuaca)",
+  "meaning_en": "cold (weather/air)",
+  "jlpt": "n5",
+  "pos": "i-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "alam-lingkungan"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [],
+  "nuance": "寒い = dingin cuaca/suhu udara. Beda: 冷たい = dingin saat disentuh.",
+  "conj_type": "adj-i",
+  "examples": [
+    {
+      "jp": "今日はとても寒いですね。",
+      "id": "Hari ini sangat dingin ya.",
+      "level": "n5",
+      "tags": [
+        "alam-lingkungan"
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"アツイ￣"}
+}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus",
+  "jmdict_seq": "1210360",
+  "frequency": 20000,
+  "meanings": [
+    {
+      "en": "cold (e.g. weather)",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "uninteresting (esp. joke); lame; dull; weak; corny",
+      "misc": [],
+      "field": []
+    }
+  ]
+},
+
+{
+  "id": "vg-n5-00249",
+  "word": "つめたい",
+  "reading": "つめたい",
+  "romaji": "tsumetai",
+  "meaning_id": "dingin (benda)",
+  "meaning_en": "cold (to the touch)",
+  "jlpt": "n5",
+  "pos": "i-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "makanan-minuman"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [],
+  "nuance": "冷たい = dingin saat disentuh. Beda: 寒い = cuaca dingin.",
+  "conj_type": "adj-i",
+  "examples": [
+    {
+      "jp": "冷たい水をください。",
+      "id": "Tolong berikan air dingin.",
+      "level": "n5",
+      "tags": [
+        "makanan-minuman"
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ツメタイ￣"}
+}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus",
+  "jmdict_seq": "1556730",
+  "frequency": 14000,
+  "meanings": [
+    {
+      "en": "cold (to the touch); chilly; icy; freezing",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "(emotionally) cold; coldhearted; unfeeling; indifferent; unfriendly; distant",
+      "misc": [],
+      "field": []
+    }
+  ]
+},
+
+{
+  "id": "vg-n5-00250",
+  "word": "あたたかい",
+  "reading": "あたたかい",
+  "romaji": "atatakai",
+  "meaning_id": "hangat",
+  "meaning_en": "warm",
+  "jlpt": "n5",
+  "pos": "i-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "alam-lingkungan"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [],
+  "nuance": "Can refer to mild, pleasant weather or things that are warm to the touch, like food. The kanji changes depending on whether it describes climate or physical temperature.",
+  "conj_type": "adj-i",
+  "examples": [
+    {
+      "jp": "春は暖かくて気持ちいいですね。",
+      "id": "Musim semi itu hangat dan enak ya.",
+      "level": "n5",
+      "tags": [
+        "alam-lingkungan"
+      ],
+  "pitch": {"pattern":4,"category":"nakadaka","mora_count":5,"downstep_mora":4,"contour":"アタタカ＼イ"}
+}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus",
+  "jmdict_seq": "1586420",
+  "frequency": 10500,
+  "forms": [
+    {
+      "word": "暖かい",
+      "info": []
+    },
+    {
+      "word": "温かい",
+      "info": []
+    },
+    {
+      "word": "暖い",
+      "info": [
+        "search-only kanji form"
+      ]
+    }
+  ],
+  "meanings": [
+    {
+      "en": "warm; mild; (pleasantly) hot",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "considerate; kind; genial",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "warm (of a colour); mellow",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "having enough money",
+      "misc": [],
+      "field": []
+    }
+  ]
+},
+
+{
+  "id": "vg-n5-00251",
+  "word": "すずしい",
+  "reading": "すずしい",
+  "romaji": "suzushii",
+  "meaning_id": "sejuk",
+  "meaning_en": "cool, refreshing",
+  "jlpt": "n5",
+  "pos": "i-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "alam-lingkungan"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [],
+  "nuance": "Refers to a pleasant, cool temperature, usually in the context of weather or a breeze. It has a positive connotation compared to feeling uncomfortably cold.",
+  "conj_type": "adj-i",
+  "examples": [
+    {
+      "jp": "秋は涼しくて好きです。",
+      "id": "Saya suka musim gugur karena sejuk.",
+      "level": "n5",
+      "tags": [
+        "alam-lingkungan"
+      ],
+  "pitch": {"pattern":4,"category":"nakadaka","mora_count":5,"downstep_mora":4,"contour":"アタタカ＼イ"}
+}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus",
+  "jmdict_seq": "1554370",
+  "frequency": 15000,
+  "forms": [
+    {
+      "word": "涼しい",
+      "info": []
+    },
+    {
+      "word": "凉しい",
+      "info": [
+        "kanji jarang dipakai"
+      ]
+    }
+  ],
+  "meanings": [
+    {
+      "en": "cool; refreshing",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "clear (e.g. eyes); bright",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "clear; distinct",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "composed (facial expression); unruffled; unconcerned",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "pure; upright; innocent",
+      "misc": [
+        "archaic"
+      ],
+      "field": []
+    }
+  ],
+  "misc_jm": [
+    "arkais"
+  ]
+},
+
+{
+  "id": "vg-n5-00252",
+  "word": "たのしい",
+  "reading": "たのしい",
+  "romaji": "tanoshii",
+  "meaning_id": "menyenangkan; seru",
+  "meaning_en": "fun, enjoyable",
+  "jlpt": "n5",
+  "pos": "i-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "emosi"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [],
+  "nuance": "Describes an experience or activity that brings joy and pleasure. It is a subjective feeling and typically used to express one's own enjoyment.",
+  "conj_type": "adj-i",
+  "examples": [
+    {
+      "jp": "日本語の授業はとても楽しいです。",
+      "id": "Pelajaran bahasa Jepang sangat menyenangkan.",
+      "level": "n5",
+      "tags": [
+        "pendidikan",
+        "emosi"
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"スズシ＼イ"}
+}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus",
+  "jmdict_seq": "1207240",
+  "frequency": 8000,
+  "forms": [
+    {
+      "word": "楽しい",
+      "info": []
+    },
+    {
+      "word": "愉しい",
+      "info": [
+        "kanji jarang dipakai"
+      ]
+    },
+    {
+      "word": "樂しい",
+      "info": [
+        "search-only kanji form"
+      ]
+    },
+    {
+      "word": "娯しい",
+      "info": [
+        "search-only kanji form"
+      ]
+    }
+  ]
+},
+
+{
+  "id": "vg-n5-00253",
+  "word": "うれしい",
+  "reading": "うれしい",
+  "romaji": "ureshii",
+  "meaning_id": "senang; gembira",
+  "meaning_en": "happy, glad",
+  "jlpt": "n5",
+  "pos": "i-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "emosi"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [],
+  "nuance": "嬉しい = senang atas sesuatu yang diterima. 楽しい = saat melakukan sesuatu yang menyenangkan.",
+  "conj_type": "adj-i",
+  "examples": [
+    {
+      "jp": "合格して, とても嬉しいです。",
+      "id": "Saya sangat senang bisa lulus.",
+      "level": "n5",
+      "tags": [
+        "emosi",
+        "pendidikan"
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"タノシ＼イ"}
+}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus",
+  "jmdict_seq": "1219510",
+  "frequency": 1000,
+  "forms": [
+    {
+      "word": "嬉しい",
+      "info": []
+    },
+    {
+      "word": "欣しい",
+      "info": [
+        "search-only kanji form"
+      ]
+    }
+  ],
+  "meanings": [
+    {
+      "en": "happy; glad; pleased; delighted; overjoyed",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "joyful; delightful; gratifying; pleasant",
+      "misc": [],
+      "field": []
+    }
+  ]
+},
+
+{
+  "id": "vg-n5-00254",
+  "word": "かわいい",
+  "reading": "かわいい",
+  "romaji": "kawaii",
+  "meaning_id": "lucu; menggemaskan",
+  "meaning_en": "cute, adorable",
+  "jlpt": "n5",
+  "pos": "i-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kehidupan-sehari"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [],
+  "nuance": "A versatile i-adjective used for babies, animals, clothing, and anything endearing. It implies affection and a sense of charm.",
+  "conj_type": "adj-i",
+  "examples": [
+    {
+      "jp": "この猫はとても可愛いですね。",
+      "id": "Kucing ini sangat lucu ya.",
+      "level": "n5",
+      "tags": [
+        "kehidupan-sehari"
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"ウレシ＼イ"}
+}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus",
+  "jmdict_seq": "1577200",
+  "frequency": 16000,
+  "meanings": [
+    {
+      "en": "cute; adorable; charming; lovely; pretty",
+      "misc": [
+        "biasanya kana saja"
+      ],
+      "field": []
+    },
+    {
+      "en": "dear; precious; darling; pet",
+      "misc": [
+        "biasanya kana saja"
+      ],
+      "field": []
+    },
+    {
+      "en": "innocent; childlike; childish; lovable",
+      "misc": [
+        "biasanya kana saja"
+      ],
+      "field": []
+    },
+    {
+      "en": "dainty; little; tiny",
+      "misc": [
+        "biasanya kana saja"
+      ],
+      "field": []
+    }
+  ],
+  "misc_jm": [
+    "biasanya kana saja"
+  ]
+},
+
+{
+  "id": "vg-n5-00255",
+  "word": "からい",
+  "reading": "からい",
+  "romaji": "karai",
+  "meaning_id": "pedas; asin",
+  "meaning_en": "spicy; salty",
+  "jlpt": "n5",
+  "pos": "i-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "makanan-minuman"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [],
+  "nuance": "辛い = pedas (料理が辛い) ATAU asin (塩辛い). Konteks menentukan.",
+  "conj_type": "adj-i",
+  "examples": [
+    {
+      "jp": "この料理は辛いですか。",
+      "id": "Apakah masakan ini pedas?",
+      "level": "n5",
+      "tags": [
+        "makanan-minuman"
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"カライ￣"}
+}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus",
+  "jmdict_seq": "1365850",
+  "frequency": 12000,
+  "meanings": [
+    {
+      "en": "spicy; hot",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "salty",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "harsh (criticism); severe (punishment); strict",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "painful; bitter; difficult; tough",
+      "misc": [],
+      "field": []
+    }
+  ]
+},
+
+{
+  "id": "vg-n5-00256",
+  "word": "あまい",
+  "reading": "あまい",
+  "romaji": "amai",
+  "meaning_id": "manis",
+  "meaning_en": "sweet",
+  "jlpt": "n5",
+  "pos": "i-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "makanan-minuman"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "umum"
+  ],
+  "nuance": "Lawan kata: からい (spicy/salty)",
+  "conj_type": "adj-i",
+  "examples": [
+    {
+      "jp": "このケーキはとても甘いです。",
+      "id": "Kue ini sangat manis.",
+      "level": "n5",
+      "tags": [
+        "makanan-minuman"
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"アマイ￣"}
+}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus",
+  "jmdict_seq": "1213400",
+  "frequency": 9500,
+  "meanings": [
+    {
+      "en": "sweet-tasting; sweet; sugary; sugared",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "fragrant (smelling); sweet (music)",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "lightly salted; light in salt; not spicy",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "naive; overly optimistic; soft on; generous; indulgent; easy-going; lenient",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "half-hearted; not finished properly",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "insufficient; not satisfactory; inadequate; loose",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "mild",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "tempting; enticing; luring",
+      "misc": [],
+      "field": []
+    }
+  ]
+},
+
+{
+  "id": "vg-n5-00257",
+  "word": "にがい",
+  "reading": "にがい",
+  "romaji": "nigai",
+  "meaning_id": "pahit",
+  "meaning_en": "bitter",
+  "jlpt": "n5",
+  "pos": "i-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "makanan-minuman"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "umum"
+  ],
+  "nuance": "にがい (苦い) = pahit. 苦手 (nigate) = tidak pandai/tidak suka — kata turunan penting.",
+  "conj_type": "adj-i",
+  "examples": [
+    {
+      "jp": "コーヒーは苦いですが, 好きです。",
+      "id": "Kopi itu pahit tapi saya suka.",
+      "level": "n5",
+      "tags": [
+        "makanan-minuman"
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"ニガ＼イ"}
+}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus",
+  "jmdict_seq": "1244310",
+  "frequency": 5500
+},
+
+{
+  "id": "vg-n5-00258",
+  "word": "いそがしい",
+  "reading": "いそがしい",
+  "romaji": "isogashii",
+  "meaning_id": "sibuk",
+  "meaning_en": "busy",
+  "jlpt": "n5",
+  "pos": "i-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "pekerjaan"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [],
+  "nuance": "Describes a person's schedule or state of having a lot to do. It should not be used to describe a place as bustling or busy.",
+  "conj_type": "adj-i",
+  "examples": [
+    {
+      "jp": "今週はとても忙しいです。",
+      "id": "Minggu ini saya sangat sibuk.",
+      "level": "n5",
+      "tags": [
+        "pekerjaan"
+      ],
+  "pitch": {"pattern":4,"category":"nakadaka","mora_count":5,"downstep_mora":4,"contour":"イソガシ＼イ"}
+}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus",
+  "jmdict_seq": "1519290",
+  "frequency": 9000,
+  "forms": [
+    {
+      "word": "忙しい",
+      "info": []
+    },
+    {
+      "word": "忙がしい",
+      "info": [
+        "search-only kanji form"
+      ]
+    }
+  ],
+  "meanings": [
+    {
+      "en": "busy; occupied; hectic",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "restless; hurried; fidgety",
+      "misc": [],
+      "field": []
+    }
+  ]
+},
+
+{
+  "id": "vg-n5-00259",
+  "word": "ひま",
+  "reading": "ひま",
+  "romaji": "hima",
+  "meaning_id": "santai; tidak sibuk; punya waktu luang",
+  "meaning_en": "free time, not busy",
+  "jlpt": "n5",
+  "pos": "na-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kehidupan-sehari"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [],
+  "nuance": "A na-adjective or noun describing a state of having nothing to do or being unoccupied. It contrasts with being busy and can sometimes imply boredom.",
+  "conj_type": "adj-na",
+  "examples": [
+    {
+      "jp": "今週末はひまですか。",
+      "id": "Apakah akhir pekan ini kamu bebas?",
+      "level": "n5",
+      "tags": [
+        "hubungan"
+      ],
+  "pitch": {"pattern":4,"category":"nakadaka","mora_count":5,"downstep_mora":4,"contour":"イソガシ＼イ"}
+}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus",
+  "jmdict_seq": "1571650"
+},
+
+{
+  "id": "vg-n5-00260",
+  "word": "にぎやか",
+  "reading": "にぎやか",
+  "romaji": "nigiyaka",
+  "meaning_id": "ramai; meriah",
+  "meaning_en": "lively, bustling",
+  "jlpt": "n5",
+  "pos": "na-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kehidupan-sehari"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [],
+  "nuance": "A na-adjective for a bustling atmosphere filled with people and cheerful activity. It is generally positive and not used to mean just noisy.",
+  "conj_type": "adj-na",
+  "examples": [
+    {
+      "jp": "渋谷はとても賑やかな街です。",
+      "id": "Shibuya adalah kota yang sangat ramai.",
+      "level": "n5",
+      "tags": [
+        "perjalanan"
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":4,"downstep_mora":2,"contour":"ニギ＼ヤカ"}
+}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus",
+  "jmdict_seq": "1463480",
+  "frequency": 1000,
+  "meanings": [
+    {
+      "en": "bustling; busy; crowded; lively; prosperous; thriving",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "lively (party, voices, etc.); loud; noisy; merry; cheerful",
+      "misc": [],
+      "field": []
+    }
+  ]
+},
+
+{
+  "id": "vg-n5-00261",
+  "word": "しずか",
+  "reading": "しずか",
+  "romaji": "shizuka",
+  "meaning_id": "tenang; sepi; sunyi",
+  "meaning_en": "quiet, peaceful",
+  "jlpt": "n5",
+  "pos": "na-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kehidupan-sehari"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [],
+  "nuance": "A na-adjective denoting a lack of noise or a calm environment. It can describe a peaceful location or a gentle, quiet person.",
+  "conj_type": "adj-na",
+  "examples": [
+    {
+      "jp": "図書館は静かです。",
+      "id": "Perpustakaan itu tenang.",
+      "level": "n5",
+      "tags": [
+        "pendidikan"
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"シ＼ズカ"}
+}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus",
+  "jmdict_seq": "1381820",
+  "frequency": 2500,
+  "forms": [
+    {
+      "word": "静か",
+      "info": []
+    },
+    {
+      "word": "閑か",
+      "info": [
+        "kanji jarang dipakai"
+      ]
+    }
+  ],
+  "meanings": [
+    {
+      "en": "quiet; silent",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "slow; unhurried",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "calm; peaceful",
+      "misc": [],
+      "field": []
+    }
+  ]
+},
+
+{
+  "id": "vg-n5-00262",
+  "word": "すき",
+  "reading": "すき",
+  "romaji": "suki",
+  "meaning_id": "suka; favorit",
+  "meaning_en": "to like, favorite",
+  "jlpt": "n5",
+  "pos": "na-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "emosi"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [],
+  "nuance": "〜が好きです = saya suka ~. Derajat: 大好き > 好き。",
+  "conj_type": "adj-na",
+  "examples": [
+    {
+      "jp": "日本語が好きです。",
+      "id": "Saya suka bahasa Jepang.",
+      "level": "n5",
+      "tags": [
+        "emosi",
+        "pendidikan"
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"シ＼ズカ"}
+}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus",
+  "jmdict_seq": "1253780",
+  "frequency": 21500,
+  "forms": [
+    {
+      "word": "隙",
+      "info": []
+    },
+    {
+      "word": "透き",
+      "info": []
+    }
+  ],
+  "meanings": [
+    {
+      "en": "gap; opening; room; space",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "break; interval; spare moment; spare time",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "unguarded moment; carelessness; weak spot; chink in one's armor; flaw; fault",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "chance; opportunity",
+      "misc": [],
+      "field": []
+    }
+  ]
+},
+
+{
+  "id": "vg-n5-00263",
+  "word": "きらい",
+  "reading": "きらい",
+  "romaji": "kirai",
+  "meaning_id": "tidak suka; benci",
+  "meaning_en": "dislike, hate",
+  "jlpt": "n5",
+  "pos": "na-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "emosi"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [],
+  "nuance": "嫌い = tidak suka. 大嫌い = sangat benci. Lawan: 好き.",
+  "conj_type": "adj-na",
+  "examples": [
+    {
+      "jp": "野菜が嫌いな子どもが多いです。",
+      "id": "Banyak anak yang tidak suka sayuran.",
+      "level": "n5",
+      "tags": [
+        "makanan-minuman",
+        "keluarga"
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":2,"downstep_mora":1,"contour":"ゲ＼キ"}
+}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus",
+  "jmdict_seq": "1221210",
+  "frequency": 5500,
+  "misc_jm": [
+    "abbreviation"
+  ]
+},
+
+{
+  "id": "vg-n5-00264",
+  "word": "じょうず",
+  "reading": "じょうず",
+  "romaji": "jouzu",
+  "meaning_id": "pandai; mahir",
+  "meaning_en": "skilled, good at",
+  "jlpt": "n5",
+  "pos": "na-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "pendidikan"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [],
+  "nuance": "上手 = pandai (bicara tentang orang lain). Untuk diri sendiri: 得意 (tokui). Lawan: 下手.",
+  "conj_type": "adj-na",
+  "examples": [
+    {
+      "jp": "彼女はピアノが上手ですね。",
+      "id": "Dia pandai bermain piano ya.",
+      "level": "n5",
+      "tags": [
+        "pendidikan"
+      ],
+  "pitch": {"pattern":3,"category":"odaka","mora_count":3,"downstep_mora":3,"contour":"ジョウズ＼"}
+}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus",
+  "jmdict_seq": "1353320",
+  "frequency": 6000,
+  "meanings": [
+    {
+      "en": "skillful; skilled; proficient; good (at); adept; clever",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "flattery",
+      "misc": [],
+      "field": []
+    }
+  ]
+},
+
+{
+  "id": "vg-n5-00265",
+  "word": "へた",
+  "reading": "へた",
+  "romaji": "heta",
+  "meaning_id": "tidak pandai; kurang mahir",
+  "meaning_en": "unskilled, bad at",
+  "jlpt": "n5",
+  "pos": "na-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "pendidikan"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [],
+  "nuance": "下手 = tidak pandai. Lawan: 上手。 苦手 (nigate) = kurang ahli/kurang suka.",
+  "conj_type": "adj-na",
+  "examples": [
+    {
+      "jp": "私は料理が下手です。",
+      "id": "Saya tidak pandai memasak.",
+      "level": "n5",
+      "tags": [
+        "makanan-minuman"
+      ],
+  "pitch": {"pattern":2,"category":"odaka","mora_count":2,"downstep_mora":2,"contour":"ヘタ＼"}
+}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus",
+  "jmdict_seq": "1011310",
+  "misc_jm": [
+    "biasanya kana saja"
+  ]
+},
+
+{
+  "id": "vg-n5-00266",
+  "word": "げんき",
+  "reading": "げんき",
+  "romaji": "genki",
+  "meaning_id": "sehat; bersemangat",
+  "meaning_en": "healthy, energetic",
+  "jlpt": "n5",
+  "pos": "na-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kesehatan"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [],
+  "nuance": "A na-adjective describing vitality, good health, and high spirits. It is frequently used in greetings to ask about someone's well-being.",
+  "conj_type": "adj-na",
+  "examples": [
+    {
+      "jp": "お元気ですか。",
+      "id": "Apakah kabarmu baik?",
+      "level": "n5",
+      "tags": [
+        "sopan-santun",
+        "kesehatan"
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"ゲ＼ンキ"}
+}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus",
+  "jmdict_seq": "1260720",
+  "frequency": 3000,
+  "forms": [
+    {
+      "word": "元気",
+      "info": []
+    },
+    {
+      "word": "元氣",
+      "info": [
+        "search-only kanji form"
+      ]
+    }
+  ],
+  "meanings": [
+    {
+      "en": "lively; full of spirit; energetic; vigorous; vital; spirited",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "healthy; well; fit; in good health",
+      "misc": [],
+      "field": []
+    }
+  ]
+},
+
+{
+  "id": "vg-n5-00267",
+  "word": "たいせつ",
+  "reading": "たいせつ",
+  "romaji": "taisetsu",
+  "meaning_id": "penting; berharga",
+  "meaning_en": "important, precious",
+  "jlpt": "n5",
+  "pos": "na-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "emosi"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [],
+  "nuance": "大切 = berharga (emosional). Berbeda: 重要 (juuyou) = penting (objektif/formal).",
+  "conj_type": "adj-na",
+  "examples": [
+    {
+      "jp": "友達はとても大切な存在です。",
+      "id": "Teman adalah keberadaan yang sangat berharga.",
+      "level": "n5",
+      "tags": [
+        "hubungan",
+        "emosi"
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"ゲ＼ンキ"}
+}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus",
+  "jmdict_seq": "1414340",
+  "frequency": 1000,
+  "meanings": [
+    {
+      "en": "important; significant; serious; crucial",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "precious; valuable; dear; cherished; beloved",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "careful",
+      "misc": [],
+      "field": []
+    }
+  ]
+},
+
+{
+  "id": "vg-n5-00268",
+  "word": "だいじょうぶ",
+  "reading": "だいじょうぶ",
+  "romaji": "daijoubu",
+  "meaning_id": "tidak apa-apa; baik-baik saja",
+  "meaning_en": "it's okay, no problem",
+  "jlpt": "n5",
+  "pos": "na-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kehidupan-sehari"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [],
+  "nuance": "大丈夫 = serbaguna: persetujuan, ketenangan, atau penolakan halus.",
+  "conj_type": "adj-na",
+  "examples": [
+    {
+      "jp": "大丈夫ですか。怪我はないですか。",
+      "id": "Apakah kamu baik-baik saja? Tidak ada yang luka?",
+      "level": "n5",
+      "tags": [
+        "kesehatan",
+        "hubungan"
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":5,"downstep_mora":3,"contour":"ダイジョ＼ウブ"}
+}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus",
+  "jmdict_seq": "1414150",
+  "frequency": 3000,
+  "meanings": [
+    {
+      "en": "safe; secure; sound; problem-free; without fear; all right; alright; OK; okay",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "certainly; surely; undoubtedly",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "no thanks; I'm good; that's alright",
+      "misc": [
+        "percakapan kasual"
+      ],
+      "field": []
+    },
+    {
+      "en": "great man; fine figure of a man",
+      "misc": [
+        "archaic"
+      ],
+      "field": []
+    }
+  ],
+  "misc_jm": [
+    "arkais",
+    "kasual"
+  ]
+},
+
+{
+  "id": "vg-n5-00269",
+  "word": "むずかしい",
+  "reading": "むずかしい",
+  "romaji": "muzukashii",
+  "meaning_id": "sulit; susah",
+  "meaning_en": "difficult",
+  "jlpt": "n5",
+  "pos": "i-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "pendidikan"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [],
+  "nuance": "Can mean hard to understand or accomplish, and is also a polite way to indirectly say 'no' or 'impossible'. It implies complexity and challenge.",
+  "conj_type": "adj-i",
+  "examples": [
+    {
+      "jp": "この問題はとても難しいです。",
+      "id": "Soal ini sangat sulit.",
+      "level": "n5",
+      "tags": [
+        "pendidikan"
+      ],
+  "pitch": {"pattern":4,"category":"nakadaka","mora_count":5,"downstep_mora":4,"contour":"ムズカシ＼イ"}
+}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus",
+  "jmdict_seq": "1460850",
+  "frequency": 3500,
+  "forms": [
+    {
+      "word": "難しい",
+      "info": []
+    },
+    {
+      "word": "六借しい",
+      "info": [
+        "search-only kanji form"
+      ]
+    },
+    {
+      "word": "六ヶ敷い",
+      "info": [
+        "search-only kanji form"
+      ]
+    },
+    {
+      "word": "六かしい",
+      "info": [
+        "search-only kanji form"
+      ]
+    }
+  ],
+  "meanings": [
+    {
+      "en": "difficult; hard; troublesome; complicated; serious (disease, problem, etc.)",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "impossible; unfeasible",
+      "misc": [
+        "euphemistic"
+      ],
+      "field": []
+    },
+    {
+      "en": "fussy; particular; fastidious; hard to please; displeased",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "gloomy; glum; sullen; serious (look)",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "dirty; unclean; filthy; detestable",
+      "misc": [
+        "archaic"
+      ],
+      "field": []
+    },
+    {
+      "en": "unpleasant; uncomfortable; creepy; spooky",
+      "misc": [
+        "archaic"
+      ],
+      "field": []
+    }
+  ],
+  "misc_jm": [
+    "arkais",
+    "euphemistic"
+  ]
+},
+
+{
+  "id": "vg-n5-00270",
+  "word": "やさしい",
+  "reading": "やさしい",
+  "romaji": "yasashii",
+  "meaning_id": "baik hati; lembut",
+  "meaning_en": "kind, gentle",
+  "jlpt": "n5",
+  "pos": "i-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "emosi"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [],
+  "nuance": "優しい = baik hati. HATI-HATI: 易しい = mudah. Kanji berbeda!",
+  "conj_type": "adj-i",
+  "examples": [
+    {
+      "jp": "田中さんはとても優しい人です。",
+      "id": "Tanaka-san adalah orang yang sangat baik hati.",
+      "level": "n5",
+      "tags": [
+        "hubungan",
+        "emosi"
+      ],
+  "pitch": {"pattern":4,"category":"nakadaka","mora_count":5,"downstep_mora":4,"contour":"ムズカシ＼イ"}
+}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus",
+  "jmdict_seq": "1157000",
+  "frequency": 19500,
+  "misc_jm": [
+    "biasanya kana saja"
+  ]
+},
+
+{
+  "id": "vg-n5-00271",
+  "word": "おもしろい",
+  "reading": "おもしろい",
+  "romaji": "omoshiroi",
+  "meaning_id": "menarik, seru",
+  "meaning_en": "interesting, fun",
+  "jlpt": "n5",
+  "pos": "i-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "emosi"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "umum"
+  ],
+  "nuance": "Lawan kata: つまらない (boring)",
+  "conj_type": "adj-i",
+  "examples": [
+    {
+      "jp": "この本はとても面白いです。",
+      "id": "Buku ini sangat menarik.",
+      "level": "n5",
+      "tags": [
+        "emosi",
+        "kehidupan-sehari"
+      ],
+  "pitch": {"pattern":4,"category":"nakadaka","mora_count":5,"downstep_mora":4,"contour":"オモシロ＼イ"}
+}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus",
+  "jmdict_seq": "1533580",
+  "frequency": 9500,
+  "meanings": [
+    {
+      "en": "interesting; fascinating; intriguing; enthralling",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "amusing; funny; comical",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "enjoyable; fun; entertaining; pleasant; agreeable",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "good; satisfactory; favourable; desirable; encouraging",
+      "misc": [],
+      "field": []
+    }
+  ]
+},
+
+{
+  "id": "vg-n5-00272",
+  "word": "ひろい",
+  "reading": "ひろい",
+  "romaji": "hiroi",
+  "meaning_id": "luas, lebar",
+  "meaning_en": "wide, large",
+  "jlpt": "n5",
+  "pos": "i-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kualitas"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "umum"
+  ],
+  "nuance": "ひろい (広い) = luas/lebar. 広い部屋 = kamar luas. Juga: 広い心 = berjiwa besar.",
+  "conj_type": "adj-i",
+  "examples": [
+    {
+      "jp": "この公園はとても広いです。",
+      "id": "Taman ini sangat luas.",
+      "level": "n5",
+      "tags": [
+        "alam-lingkungan",
+        "perjalanan"
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"ヒロ＼イ"}
+}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus",
+  "jmdict_seq": "1211900"
+},
+
+{
+  "id": "vg-n5-00273",
+  "word": "せまい",
+  "reading": "せまい",
+  "romaji": "semai",
+  "meaning_id": "sempit",
+  "meaning_en": "narrow, small (space)",
+  "jlpt": "n5",
+  "pos": "i-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kualitas"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "umum"
+  ],
+  "nuance": "Lawan kata: ひろい (wide/large)",
+  "conj_type": "adj-i",
+  "examples": [
+    {
+      "jp": "私の部屋はせまいですが, きれいです。",
+      "id": "Kamar saya sempit tapi bersih.",
+      "level": "n5",
+      "tags": [
+        "kehidupan-sehari"
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"セマ＼イ"}
+}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus",
+  "jmdict_seq": "1237680",
+  "frequency": 23500,
+  "meanings": [
+    {
+      "en": "narrow; confined; small; cramped",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "limited; narrow-minded; confining",
+      "misc": [],
+      "field": []
+    }
+  ]
+},
+
+{
+  "id": "vg-n5-00274",
+  "word": "とおい",
+  "reading": "とおい",
+  "romaji": "tooi",
+  "meaning_id": "jauh",
+  "meaning_en": "far",
+  "jlpt": "n5",
+  "pos": "i-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "perjalanan"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "umum"
+  ],
+  "nuance": "Lawan kata: ちかい (close)",
+  "conj_type": "adj-i",
+  "examples": [
+    {
+      "jp": "駅から家まで遠いですか。",
+      "id": "Apakah dari stasiun ke rumah jauh?",
+      "level": "n5",
+      "tags": [
+        "perjalanan"
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"トオイ￣"}
+}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus",
+  "jmdict_seq": "1177800",
+  "frequency": 17000,
+  "meanings": [
+    {
+      "en": "far; distant; far away; a long way off; in the distance",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "distant (past); remote (in time); remote; far-removed (in time)",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "distant (relationship or kinship); having little to do (with someone)",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "far (from something else in quality, degree, etc.); not similar; way off",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "hard (of hearing)",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "nearsighted",
+      "misc": [],
+      "field": []
+    }
+  ]
+},
+
+{
+  "id": "vg-n5-00275",
+  "word": "ちかい",
+  "reading": "ちかい",
+  "romaji": "chikai",
+  "meaning_id": "dekat",
+  "meaning_en": "close, near",
+  "jlpt": "n5",
+  "pos": "i-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "perjalanan"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "umum"
+  ],
+  "nuance": "ちかい (近い) = dekat. 近くに = di dekat sini. Lawan: 遠い.",
+  "conj_type": "adj-i",
+  "examples": [
+    {
+      "jp": "学校はここから近いです。",
+      "id": "Sekolah dekat dari sini.",
+      "level": "n5",
+      "tags": [
+        "perjalanan",
+        "pendidikan"
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"チカ＼イ"}
+}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus",
+  "jmdict_seq": "1242130",
+  "frequency": 10000,
+  "meanings": [
+    {
+      "en": "near; close; short (distance)",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "close (in time); soon",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "close (relationship); friendly; intimate",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "closely related",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "similar; almost the same; close to; nearly",
+      "misc": [],
+      "field": []
+    }
+  ]
+},
+
+{
+  "id": "vg-n5-00276",
+  "word": "おおい",
+  "reading": "おおい",
+  "romaji": "ooi",
+  "meaning_id": "banyak",
+  "meaning_en": "many, numerous",
+  "jlpt": "n5",
+  "pos": "i-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kehidupan-sehari"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [],
+  "nuance": "多い = banyak (adj). Berbeda dari たくさん (adv). 多い人 = banyak orang.",
+  "conj_type": "adj-i",
+  "examples": [
+    {
+      "jp": "今日は人が多いですね。",
+      "id": "Hari ini banyak orang ya.",
+      "level": "n5",
+      "tags": [
+        "kehidupan-sehari"
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":0,"downstep_mora":0,"contour":"￣"}
+}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus",
+  "jmdict_seq": "1407460",
+  "frequency": 22000,
+  "meanings": [
+    {
+      "en": "many; numerous; a lot",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "large amount of; large quantity of; a lot; much",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "frequent; common",
+      "misc": [],
+      "field": []
+    }
+  ]
+},
+
+{
+  "id": "vg-n5-00277",
+  "word": "すくない",
+  "reading": "すくない",
+  "romaji": "sukunai",
+  "meaning_id": "sedikit; tidak banyak",
+  "meaning_en": "few, not many",
+  "jlpt": "n5",
+  "pos": "i-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kehidupan-sehari"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [],
+  "nuance": "少ない (adj) = sedikit (kuantitas). Berbeda: 少し (adv).",
+  "conj_type": "adj-i",
+  "examples": [
+    {
+      "jp": "今日はお客さんが少ないです。",
+      "id": "Hari ini pelanggannya sedikit.",
+      "level": "n5",
+      "tags": [
+        "belanja",
+        "pekerjaan"
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"スクナ＼イ"}
+}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus",
+  "jmdict_seq": "1348910",
+  "frequency": 8000,
+  "forms": [
+    {
+      "word": "少ない",
+      "info": []
+    },
+    {
+      "word": "尠い",
+      "info": [
+        "kanji jarang dipakai"
+      ]
+    },
+    {
+      "word": "寡い",
+      "info": [
+        "kanji jarang dipakai"
+      ]
+    },
+    {
+      "word": "少い",
+      "info": [
+        "search-only kanji form"
+      ]
+    },
+    {
+      "word": "尠ない",
+      "info": [
+        "search-only kanji form"
+      ]
+    },
+    {
+      "word": "寡ない",
+      "info": [
+        "search-only kanji form"
+      ]
+    }
+  ]
+},
+
+{
+  "id": "vg-n5-00278",
+  "word": "わかい",
+  "reading": "わかい",
+  "romaji": "wakai",
+  "meaning_id": "muda; berusia muda",
+  "meaning_en": "young",
+  "jlpt": "n5",
+  "pos": "i-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "pertemanan"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [],
+  "nuance": "An i-adjective describing youth in age or appearance. It is generally not used for young children or babies.",
+  "conj_type": "adj-i",
+  "examples": [
+    {
+      "jp": "彼はまだ若いですね。",
+      "id": "Dia masih muda ya.",
+      "level": "n5",
+      "tags": [
+        "hubungan"
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"スクナ＼イ"}
+}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus",
+  "jmdict_seq": "1324300",
+  "frequency": 15000,
+  "meanings": [
+    {
+      "en": "young; youthful",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "immature; green",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "low (number); small",
+      "misc": [],
+      "field": []
+    }
+  ]
+},
+
+{
+  "id": "vg-n5-00279",
+  "word": "おそい",
+  "reading": "おそい",
+  "romaji": "osoi",
+  "meaning_id": "lambat; terlambat; larut",
+  "meaning_en": "slow; late",
+  "jlpt": "n5",
+  "pos": "i-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kehidupan-sehari"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [],
+  "nuance": "Can describe something lacking speed or an event occurring late in time. The specific kanji distinguishes between the two meanings when written.",
+  "conj_type": "adj-i",
+  "examples": [
+    {
+      "jp": "バスが遅いので歩きます。",
+      "id": "Busnya lambat jadi saya jalan kaki.",
+      "level": "n5",
+      "tags": [
+        "perjalanan"
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"オソイ￣"}
+}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus",
+  "jmdict_seq": "1421970",
+  "frequency": 9000,
+  "forms": [
+    {
+      "word": "遅い",
+      "info": []
+    },
+    {
+      "word": "鈍い",
+      "info": [
+        "search-only kanji form"
+      ]
+    },
+    {
+      "word": "晩い",
+      "info": [
+        "search-only kanji form"
+      ]
+    },
+    {
+      "word": "遲い",
+      "info": [
+        "search-only kanji form"
+      ]
+    }
+  ],
+  "meanings": [
+    {
+      "en": "slow",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "late",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "too late",
+      "misc": [],
+      "field": []
+    }
+  ]
+},
+
+{
+  "id": "vg-n5-00280",
+  "word": "はやい",
+  "reading": "はやい",
+  "romaji": "hayai",
+  "meaning_id": "cepat; awal",
+  "meaning_en": "fast; early",
+  "jlpt": "n5",
+  "pos": "i-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kehidupan-sehari"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [],
+  "nuance": "早い (hayai) = awal/pagi. 速い (hayai) = cepat. Pelafalan sama, kanji beda.",
+  "conj_type": "adj-i",
+  "examples": [
+    {
+      "jp": "新幹線はとても速いです。",
+      "id": "Shinkansen sangat cepat.",
+      "level": "n5",
+      "tags": [
+        "perjalanan"
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"オソイ￣"}
+}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus",
+  "jmdict_seq": "1404975",
+  "frequency": 15500,
+  "forms": [
+    {
+      "word": "早い",
+      "info": []
+    },
+    {
+      "word": "速い",
+      "info": []
+    },
+    {
+      "word": "疾い",
+      "info": [
+        "kanji jarang dipakai"
+      ]
+    },
+    {
+      "word": "捷い",
+      "info": [
+        "kanji jarang dipakai"
+      ]
+    },
+    {
+      "word": "迅い",
+      "info": [
+        "search-only kanji form"
+      ]
+    }
+  ],
+  "meanings": [
+    {
+      "en": "fast; quick; rapid; swift; speedy; brisk; prompt",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "early; soon; earlier than usual",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "premature; too soon; too early",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "easy; simple; quick; fast",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "as soon as ...; the moment ...; the instant ...",
+      "misc": [],
+      "field": []
+    }
+  ]
+},
+
+{
+  "id": "vg-n5-00281",
+  "word": "おもい",
+  "reading": "おもい",
+  "romaji": "omoi",
+  "meaning_id": "berat",
+  "meaning_en": "heavy",
+  "jlpt": "n5",
+  "pos": "i-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kehidupan-sehari"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [],
+  "nuance": "Refers to physical weight and can also describe a heavy atmosphere, mood, or serious illness. It is an i-adjective describing a state of being burdensome.",
+  "conj_type": "adj-i",
+  "examples": [
+    {
+      "jp": "このスーツケースは重いですね。",
+      "id": "Koper ini berat ya.",
+      "level": "n5",
+      "tags": [
+        "perjalanan"
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"ハヤ＼イ"}
+}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus",
+  "jmdict_seq": "1335750",
+  "frequency": 12500,
+  "meanings": [
+    {
+      "en": "heavy; weighty",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "heavy (feeling); depressed; gloomy; blue; uneasy",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "slow; sluggish; lumbering; ponderous; clumsy",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "important (position, responsibility, etc.); serious; grave",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "serious (punishment, illness, etc.); severe; critical",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "solid; established; dignified; sensible",
+      "misc": [],
+      "field": []
+    }
+  ]
+},
+
+{
+  "id": "vg-n5-00282",
+  "word": "かるい",
+  "reading": "かるい",
+  "romaji": "karui",
+  "meaning_id": "ringan",
+  "meaning_en": "light (weight)",
+  "jlpt": "n5",
+  "pos": "i-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kehidupan-sehari"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [],
+  "nuance": "Describes objects that are physically light and easy to carry. It can also describe light meals, mild illnesses, or a casual mood.",
+  "conj_type": "adj-i",
+  "examples": [
+    {
+      "jp": "このバッグはとても軽いです。",
+      "id": "Tas ini sangat ringan.",
+      "level": "n5",
+      "tags": [
+        "belanja"
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"カルイ￣"}
+}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus",
+  "jmdict_seq": "1252560",
+  "frequency": 17000,
+  "meanings": [
+    {
+      "en": "light (i.e. not heavy); feeling light (i.e. offering little resistance, moving easily)",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "light (i.e. of foot); effortless; nimble; agile",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "non-serious; minor; unimportant; trivial",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "slight; small; gentle; soft; easy; lighthearted (e.g. joke)",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "easy; simple",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "indiscriminate",
+      "misc": [],
+      "field": []
+    }
+  ]
+},
+
+{
+  "id": "vg-n5-00283",
+  "word": "つよい",
+  "reading": "つよい",
+  "romaji": "tsuyoi",
+  "meaning_id": "kuat",
+  "meaning_en": "strong",
+  "jlpt": "n5",
+  "pos": "i-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kehidupan-sehari"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [],
+  "nuance": "Can denote physical strength, durability, or intense forces like wind or flavor. It also describes a strong resistance, like being good at handling alcohol.",
+  "conj_type": "adj-i",
+  "examples": [
+    {
+      "jp": "風が強いですね。",
+      "id": "Anginnya kencang ya.",
+      "level": "n5",
+      "tags": [
+        "alam-lingkungan"
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"ツヨ＼イ"}
+}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus",
+  "jmdict_seq": "1236070",
+  "frequency": 9000,
+  "forms": [
+    {
+      "word": "強い",
+      "info": []
+    },
+    {
+      "word": "勁い",
+      "info": [
+        "search-only kanji form"
+      ]
+    },
+    {
+      "word": "剛い",
+      "info": [
+        "search-only kanji form"
+      ]
+    }
+  ],
+  "meanings": [
+    {
+      "en": "strong; potent; competent; domineering; tough",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "strong; brawny; powerful; healthy; rugged",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "good (at); skilled; knowledgeable",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "being able to handle; know how to deal (with); durable (against); resistant (to); resilient",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "firm; rigid; solid",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "intense; strong; fierce; high",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "dependable; trustworthy",
+      "misc": [],
+      "field": []
+    }
+  ]
+},
+
+{
+  "id": "vg-n5-00284",
+  "word": "よわい",
+  "reading": "よわい",
+  "romaji": "yowai",
+  "meaning_id": "lemah",
+  "meaning_en": "weak",
+  "jlpt": "n5",
+  "pos": "i-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kehidupan-sehari"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [],
+  "nuance": "Indicates a lack of physical strength, fragility, or low intensity. It can also describe a poor tolerance for something like alcohol or stress.",
+  "conj_type": "adj-i",
+  "examples": [
+    {
+      "jp": "体が弱いので気をつけています。",
+      "id": "Badan saya lemah jadi saya hati-hati.",
+      "level": "n5",
+      "tags": [
+        "kesehatan"
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"コワ＼イ"}
+}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus",
+  "jmdict_seq": "1324520",
+  "frequency": 12000
+},
+
+{
+  "id": "vg-n5-00285",
+  "word": "ゆうめい",
+  "reading": "ゆうめい",
+  "romaji": "yuumei",
+  "meaning_id": "terkenal; populer",
+  "meaning_en": "famous",
+  "jlpt": "n5",
+  "pos": "na-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kehidupan-sehari"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [],
+  "nuance": "A na-adjective that combines kanji for 'have' and 'name', denoting widespread recognition. It is used to describe well-known people, places, or products.",
+  "conj_type": "adj-na",
+  "examples": [
+    {
+      "jp": "富士山は有名な山です。",
+      "id": "Gunung Fuji adalah gunung yang terkenal.",
+      "level": "n5",
+      "tags": [
+        "perjalanan",
+        "alam-lingkungan"
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ユウメイ￣"}
+}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus",
+  "jmdict_seq": "1539910"
+},
+
+{
+  "id": "vg-n5-00286",
+  "word": "たいへん",
+  "reading": "たいへん",
+  "romaji": "taihen",
+  "meaning_id": "susah; berat; sangat",
+  "meaning_en": "tough, terrible; very (adv)",
+  "jlpt": "n5",
+  "pos": "na-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "emosi"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [],
+  "nuance": "大変 = susah (adj-na) ATAU sangat (adv). 大変でしたね = pasti susah ya.",
+  "conj_type": "adj-na",
+  "examples": [
+    {
+      "jp": "仕事がとても大変です。",
+      "id": "Pekerjaannya sangat berat.",
+      "level": "n5",
+      "tags": [
+        "pekerjaan",
+        "emosi"
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":4,"downstep_mora":1,"contour":"タ＼イヘン"}
+}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus",
+  "jmdict_seq": "1415000",
+  "frequency": 1000,
+  "forms": [
+    {
+      "word": "大変",
+      "info": []
+    },
+    {
+      "word": "大へん",
+      "info": []
+    }
+  ],
+  "meanings": [
+    {
+      "en": "very; greatly; terribly; awfully",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "immense; enormous; great",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "serious; grave; dreadful; terrible",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "difficult; hard; challenging",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "major incident; disaster",
+      "misc": [
+        "archaic"
+      ],
+      "field": []
+    }
+  ],
+  "misc_jm": [
+    "arkais"
+  ]
+},
+
+{
+  "id": "vg-n5-00287",
+  "word": "あんぜん",
+  "reading": "あんぜん",
+  "romaji": "anzen",
+  "meaning_id": "aman; keselamatan",
+  "meaning_en": "safe, safety",
+  "jlpt": "n5",
+  "pos": "na-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "perjalanan"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [],
+  "nuance": "Can function as a noun or a na-adjective describing a state free from danger. Often used in warnings or to reassure about security.",
+  "conj_type": "adj-na",
+  "examples": [
+    {
+      "jp": "この道は安全ですか。",
+      "id": "Apakah jalan ini aman?",
+      "level": "n5",
+      "tags": [
+        "perjalanan"
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"タイヘン￣"}
+}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus",
+  "jmdict_seq": "1153930",
+  "frequency": 500
+},
+
+{
+  "id": "vg-n5-00288",
+  "word": "べんり",
+  "reading": "べんり",
+  "romaji": "benri",
+  "meaning_id": "praktis; berguna",
+  "meaning_en": "convenient, useful",
+  "jlpt": "n5",
+  "pos": "na-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kehidupan-sehari"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [],
+  "nuance": "A na-adjective describing something practical that saves time or effort, like a tool or location. It contrasts with inconvenience rather than uselessness.",
+  "conj_type": "adj-na",
+  "examples": [
+    {
+      "jp": "電車はとても便利です。",
+      "id": "Kereta sangat praktis.",
+      "level": "n5",
+      "tags": [
+        "perjalanan"
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"ベ＼ンリ"}
+}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus",
+  "jmdict_seq": "1512610",
+  "frequency": 3000
+},
+
+{
+  "id": "vg-n5-00301",
+  "word": "いたい",
+  "reading": "いたい",
+  "romaji": "itai",
+  "meaning_id": "sakit; nyeri",
+  "meaning_en": "painful, it hurts",
+  "jlpt": "n5",
+  "pos": "i-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kesehatan"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [],
+  "nuance": "An i-adjective used to express physical pain, often exclaimed when hurt. It can also describe a sore body part by combining with the body part name.",
+  "conj_type": "adj-i",
+  "examples": [
+    {
+      "jp": "頭が痛いです。",
+      "id": "Kepala saya sakit.",
+      "level": "n5",
+      "tags": [
+        "kesehatan"
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"イタイ￣"}
+}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus",
+  "jmdict_seq": "1157920"
+},
+
+{
+  "id": "vg-n5-00434",
+  "word": "有名な",
+  "reading": "ゆうめいな",
+  "romaji": "yuumeina",
+  "meaning_id": "terkenal, termasyhur",
+  "meaning_en": "famous",
+  "jlpt": "n5",
+  "pos": "na-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kehidupan-sehari"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "umum"
+  ],
+  "nuance": "The attributive na-adjective form of 'yuumei' used directly before a noun. It explicitly links the quality of being well-known to the following noun.",
+  "conj_type": "adj-na",
+  "examples": [
+    {
+      "jp": "京都はとても有名な町です。",
+      "id": "Kyoto adalah kota yang sangat terkenal.",
+      "level": "n5",
+      "tags": [
+        "kehidupan-sehari"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus"
+},
+
+{
+  "id": "vg-n5-00477",
+  "word": "少ない",
+  "reading": "すくない",
+  "romaji": "sukunai",
+  "meaning_id": "sedikit, tidak banyak",
+  "meaning_en": "few, a little",
+  "jlpt": "n5",
+  "pos": "i-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kualitas"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "umum"
+  ],
+  "nuance": "少ない (すくない) = sedikit (adj-i, untuk kuantitas). Berbeda: 少し (adv).",
+  "conj_type": "adj-i",
+  "examples": [
+    {
+      "jp": "今日はお客さんが少ないです。",
+      "id": "Hari ini pelanggannya sedikit.",
+      "level": "n5",
+      "tags": [
+        "pekerjaan",
+        "belanja"
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"スクナ＼イ"}
+}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus",
+  "jmdict_seq": "1348910",
+  "frequency": 8000,
+  "forms": [
+    {
+      "word": "少ない",
+      "info": []
+    },
+    {
+      "word": "尠い",
+      "info": [
+        "kanji jarang dipakai"
+      ]
+    },
+    {
+      "word": "寡い",
+      "info": [
+        "kanji jarang dipakai"
+      ]
+    },
+    {
+      "word": "少い",
+      "info": [
+        "search-only kanji form"
+      ]
+    },
+    {
+      "word": "尠ない",
+      "info": [
+        "search-only kanji form"
+      ]
+    },
+    {
+      "word": "寡ない",
+      "info": [
+        "search-only kanji form"
+      ]
+    }
+  ]
+},
+
+{
+  "id": "vg-n5-00478",
+  "word": "多い",
+  "reading": "おおい",
+  "romaji": "ooi",
+  "meaning_id": "banyak",
+  "meaning_en": "many, a lot",
+  "jlpt": "n5",
+  "pos": "i-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kualitas"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "umum"
+  ],
+  "nuance": "多い (おおい) = banyak (adj-i). Berbeda dari たくさん (adv). 多い人 = banyak orang.",
+  "conj_type": "adj-i",
+  "examples": [
+    {
+      "jp": "駅に人が多いです。",
+      "id": "Di stasiun banyak orang.",
+      "level": "n5",
+      "tags": [
+        "perjalanan"
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"スクナ＼イ"}
+}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus",
+  "jmdict_seq": "1407460",
+  "frequency": 22000,
+  "meanings": [
+    {
+      "en": "many; numerous; a lot",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "large amount of; large quantity of; a lot; much",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "frequent; common",
+      "misc": [],
+      "field": []
+    }
+  ]
+},
+
+{
+  "id": "vg-n5-00481",
+  "word": "大変な",
+  "reading": "たいへんな",
+  "romaji": "taihenna",
+  "meaning_id": "susah, berat",
+  "meaning_en": "terrible, hard",
+  "jlpt": "n5",
+  "pos": "na-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "emosi",
+    "kehidupan-sehari"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "umum"
+  ],
+  "nuance": "大変な = susah/berat (sebagai adj-na). Juga bisa sebagai adv: 大変です！= Gawat!",
+  "conj_type": "adj-na",
+  "examples": [
+    {
+      "jp": "仕事が大変です。",
+      "id": "Pekerjaannya berat.",
+      "level": "n5",
+      "tags": [
+        "pekerjaan",
+        "emosi"
+      ]
+    },
+    {
+      "jp": "大変でしたね。",
+      "id": "Susah banget ya.",
+      "level": "n5",
+      "tags": [
+        "emosi"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus"
+},
+
+{
+  "id": "vg-n5-00482",
+  "word": "大切な",
+  "reading": "たいせつな",
+  "romaji": "taisetsuna",
+  "meaning_id": "berharga, penting",
+  "meaning_en": "precious, important",
+  "jlpt": "n5",
+  "pos": "na-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "emosi",
+    "emosi-positif"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "umum"
+  ],
+  "nuance": "大切な = penting/berharga (bernilai emosional). Berbeda: 重要な = penting (objektif).",
+  "conj_type": "adj-na",
+  "examples": [
+    {
+      "jp": "これは私にとって大切なものです。",
+      "id": "Ini adalah sesuatu yang berharga bagi saya.",
+      "level": "n5",
+      "tags": [
+        "emosi",
+        "motivasi"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus"
+},
+
+{
+  "id": "vg-n5-00483",
+  "word": "安全な",
+  "reading": "あんぜんな",
+  "romaji": "anzenna",
+  "meaning_id": "aman",
+  "meaning_en": "safe",
+  "jlpt": "n5",
+  "pos": "na-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kehidupan-sehari",
+    "perjalanan"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "umum"
+  ],
+  "nuance": "安全な = aman (bebas dari bahaya). Lawan: 危険な (kiken-na = berbahaya).",
+  "conj_type": "adj-na",
+  "examples": [
+    {
+      "jp": "この道は安全ですか。",
+      "id": "Apakah jalan ini aman?",
+      "level": "n5",
+      "tags": [
+        "perjalanan"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus"
+},
+
+{
+  "id": "vg-n5-00487",
+  "word": "早い",
+  "reading": "はやい",
+  "romaji": "hayai",
+  "meaning_id": "awal, cepat",
+  "meaning_en": "early, fast",
+  "jlpt": "n5",
+  "pos": "i-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "waktu",
+    "kehidupan-sehari"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "umum"
+  ],
+  "nuance": "Lawan kata: おそい (late/slow)",
+  "conj_type": "adj-i",
+  "examples": [
+    {
+      "jp": "毎朝、早い時間に起きます。",
+      "id": "Setiap pagi, saya bangun di waktu yang awal.",
+      "level": "n5",
+      "tags": [
+        "kehidupan-sehari",
+        "waktu"
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"ハヤ＼イ"}
+}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus",
+  "jmdict_seq": "1404975",
+  "frequency": 15500,
+  "forms": [
+    {
+      "word": "早い",
+      "info": []
+    },
+    {
+      "word": "速い",
+      "info": []
+    },
+    {
+      "word": "疾い",
+      "info": [
+        "kanji jarang dipakai"
+      ]
+    },
+    {
+      "word": "捷い",
+      "info": [
+        "kanji jarang dipakai"
+      ]
+    },
+    {
+      "word": "迅い",
+      "info": [
+        "search-only kanji form"
+      ]
+    }
+  ],
+  "meanings": [
+    {
+      "en": "fast; quick; rapid; swift; speedy; brisk; prompt",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "early; soon; earlier than usual",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "premature; too soon; too early",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "easy; simple; quick; fast",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "as soon as ...; the moment ...; the instant ...",
+      "misc": [],
+      "field": []
+    }
+  ]
+},
+
+{
+  "id": "vg-n5-00511",
+  "word": "上手な",
+  "reading": "じょうずな",
+  "romaji": "jouzuna",
+  "meaning_id": "pandai, mahir",
+  "meaning_en": "good at, skillful",
+  "jlpt": "n5",
+  "pos": "na-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "perjalanan",
+    "kehidupan-sehari"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "umum"
+  ],
+  "nuance": "A na-adjective used to praise someone's skill or proficiency, often in arts, sports, or languages. It is typically used for others, as using it for oneself sounds boastful.",
+  "conj_type": "adj-na",
+  "examples": [
+    {
+      "jp": "田中さんは日本語がとても上手です。",
+      "id": "Tanaka sangat pandai berbahasa Jepang.",
+      "level": "n5",
+      "tags": [
+        "pendidikan",
+        "pertemanan"
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"ハヤ＼イ"}
+}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus"
+},
+
+{
+  "id": "vg-n5-00516",
+  "word": "下手な",
+  "reading": "へたな",
+  "romaji": "hetana",
+  "meaning_id": "tidak pandai",
+  "meaning_en": "unskillful, not good at",
+  "jlpt": "n5",
+  "pos": "na-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "perjalanan",
+    "kehidupan-sehari"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "umum"
+  ],
+  "nuance": "Lawan kata: 上手な skillful",
+  "conj_type": "adj-na",
+  "examples": [
+    {
+      "jp": "私は歌が下手ですから、歌いません。",
+      "id": "Karena saya tidak pandai bernyanyi, saya tidak bernyanyi.",
+      "level": "n5",
+      "tags": [
+        "kehidupan-sehari"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus"
+},
+
+{
+  "id": "vg-n5-00606",
+  "word": "ひまな",
+  "reading": "ひまな",
+  "romaji": "himana",
+  "meaning_id": "santai, tidak sibuk",
+  "meaning_en": "free, leisurely",
+  "jlpt": "n5",
+  "pos": "na-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "kehidupan-sehari"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "umum"
+  ],
+  "nuance": "ひまな (暇な) = tidak sibuk/punya waktu luang. 暇つぶし = mengisi waktu luang.",
+  "conj_type": "adj-na",
+  "examples": [
+    {
+      "jp": "今週末はひまです。いっしょにどうですか。",
+      "id": "Akhir pekan ini saya bebas. Bagaimana kalau bersama?",
+      "level": "n5",
+      "tags": [
+        "kehidupan-sehari",
+        "hubungan"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus"
+},
+
+{
+  "id": "vg-n5-00607",
+  "word": "きらいな",
+  "reading": "きらいな",
+  "romaji": "kiraina",
+  "meaning_id": "tidak suka, benci",
+  "meaning_en": "hate, dislike",
+  "jlpt": "n5",
+  "pos": "na-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "emosi"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "umum"
+  ],
+  "nuance": "Lawan kata: すきな (favorite/like)",
+  "conj_type": "adj-na",
+  "examples": [
+    {
+      "jp": "野菜がきらいですから、食べません。",
+      "id": "Karena saya tidak suka sayur, saya tidak memakannya.",
+      "level": "n5",
+      "tags": [
+        "makanan-minuman"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus"
+},
+
+{
+  "id": "vg-n5-00608",
+  "word": "すきな",
+  "reading": "すきな",
+  "romaji": "sukina",
+  "meaning_id": "suka, favorit",
+  "meaning_en": "favorite, liked",
+  "jlpt": "n5",
+  "pos": "na-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "emosi"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "umum"
+  ],
+  "nuance": "すきな (好きな) = suka. Derajat: 大好き > 好き > まあまあ好き. Lawan: 嫌い.",
+  "conj_type": "adj-na",
+  "examples": [
+    {
+      "jp": "日本語が好きです。",
+      "id": "Saya suka bahasa Jepang.",
+      "level": "n5",
+      "tags": [
+        "emosi",
+        "pendidikan"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15-migrated",
+  "provenance": "jlpt-corpus"
+},
+
+{
+  "id": "vg-n5-00716",
+  "word": "広い",
+  "reading": "ひろい",
+  "romaji": "hiroi",
+  "meaning_id": "luas; lebar",
+  "meaning_en": "wide, spacious",
+  "jlpt": "n5",
+  "pos": "i-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "deskripsi",
+    "tempat"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "umum"
+  ],
+  "nuance": "Lawan dari 狭い (sempit).",
+  "conj_type": "i-adj",
+  "examples": [
+    {
+      "jp": "この部屋は広いですね。",
+      "id": "Ruangan ini luas ya.",
+      "level": "n5",
+      "tags": [
+        "tempat"
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"ヒロ＼イ"}
+}
+  ],
+  "synonyms": [],
+  "antonyms": [
+    "vg-n5-00717"
+  ],
+  "see_also": [],
+  "added_v": "v15.6.1-plan-c",
+  "provenance": "jlpt-corpus",
+  "jmdict_seq": "1278410",
+  "frequency": 2000,
+  "forms": [
+    {
+      "word": "広い",
+      "info": []
+    },
+    {
+      "word": "廣い",
+      "info": [
+        "search-only kanji form"
+      ]
+    },
+    {
+      "word": "宏い",
+      "info": [
+        "search-only kanji form"
+      ]
+    },
+    {
+      "word": "弘い",
+      "info": [
+        "search-only kanji form"
+      ]
+    }
+  ]
+},
+
+{
+  "id": "vg-n5-00717",
+  "word": "狭い",
+  "reading": "せまい",
+  "romaji": "semai",
+  "meaning_id": "sempit; kecil",
+  "meaning_en": "narrow, small, cramped",
+  "jlpt": "n5",
+  "pos": "i-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "deskripsi",
+    "tempat"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "umum"
+  ],
+  "nuance": "Lawan dari 広い (luas).",
+  "conj_type": "i-adj",
+  "examples": [
+    {
+      "jp": "このアパートは狭いです。",
+      "id": "Apartemen ini sempit.",
+      "level": "n5",
+      "tags": [
+        "tempat"
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"ヒロ＼イ"}
+}
+  ],
+  "synonyms": [],
+  "antonyms": [
+    "vg-n5-00716"
+  ],
+  "see_also": [],
+  "added_v": "v15.6.1-plan-c",
+  "provenance": "jlpt-corpus",
+  "jmdict_seq": "1237680",
+  "frequency": 23500,
+  "meanings": [
+    {
+      "en": "narrow; confined; small; cramped",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "limited; narrow-minded; confining",
+      "misc": [],
+      "field": []
+    }
+  ]
+},
+
+{
+  "id": "vg-n5-00718",
+  "word": "遠い",
+  "reading": "とおい",
+  "romaji": "tooi",
+  "meaning_id": "jauh",
+  "meaning_en": "far, distant",
+  "jlpt": "n5",
+  "pos": "i-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "deskripsi",
+    "tempat",
+    "perjalanan"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "umum"
+  ],
+  "nuance": "Lawan dari 近い (dekat).",
+  "conj_type": "i-adj",
+  "examples": [
+    {
+      "jp": "駅から遠いです。",
+      "id": "Jauh dari stasiun.",
+      "level": "n5",
+      "tags": [
+        "tempat"
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"トオイ￣"}
+}
+  ],
+  "synonyms": [],
+  "antonyms": [
+    "vg-n5-00719"
+  ],
+  "see_also": [],
+  "added_v": "v15.6.1-plan-c",
+  "provenance": "jlpt-corpus",
+  "jmdict_seq": "1177800",
+  "frequency": 17000,
+  "meanings": [
+    {
+      "en": "far; distant; far away; a long way off; in the distance",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "distant (past); remote (in time); remote; far-removed (in time)",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "distant (relationship or kinship); having little to do (with someone)",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "far (from something else in quality, degree, etc.); not similar; way off",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "hard (of hearing)",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "nearsighted",
+      "misc": [],
+      "field": []
+    }
+  ]
+},
+
+{
+  "id": "vg-n5-00719",
+  "word": "近い",
+  "reading": "ちかい",
+  "romaji": "chikai",
+  "meaning_id": "dekat",
+  "meaning_en": "near, close",
+  "jlpt": "n5",
+  "pos": "i-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "deskripsi",
+    "tempat",
+    "perjalanan"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "umum"
+  ],
+  "nuance": "Lawan dari 遠い (jauh).",
+  "conj_type": "i-adj",
+  "examples": [
+    {
+      "jp": "駅から近いですよ。",
+      "id": "Dekat dari stasiun lho.",
+      "level": "n5",
+      "tags": [
+        "tempat"
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"チカ＼イ"}
+}
+  ],
+  "synonyms": [],
+  "antonyms": [
+    "vg-n5-00718"
+  ],
+  "see_also": [],
+  "added_v": "v15.6.1-plan-c",
+  "provenance": "jlpt-corpus",
+  "jmdict_seq": "1242130",
+  "frequency": 10000,
+  "meanings": [
+    {
+      "en": "near; close; short (distance)",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "close (in time); soon",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "close (relationship); friendly; intimate",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "closely related",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "similar; almost the same; close to; nearly",
+      "misc": [],
+      "field": []
+    }
+  ]
+},
+
+{
+  "id": "vg-n5-00720",
+  "word": "暇",
+  "reading": "ひま",
+  "romaji": "hima",
+  "meaning_id": "waktu luang; tidak sibuk",
+  "meaning_en": "free time, not busy",
+  "jlpt": "n5",
+  "pos": "na-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "waktu",
+    "kehidupan-sehari"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "umum"
+  ],
+  "nuance": "Bisa berarti punya waktu luang (positif) atau tidak ada kegiatan (bisa negatif tergantung konteks).",
+  "conj_type": "na-adj",
+  "examples": [
+    {
+      "jp": "暇なとき, 何をしますか。",
+      "id": "Kalau punya waktu luang, kamu ngapain?",
+      "level": "n5",
+      "tags": [
+        "waktu"
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":2,"downstep_mora":0,"contour":"ヒマ￣"}
+}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15.6.1-plan-c",
+  "provenance": "jlpt-corpus",
+  "jmdict_seq": "2858986",
+  "forms": [
+    {
+      "word": "暇",
+      "info": []
+    },
+    {
+      "word": "遑",
+      "info": [
+        "kanji jarang dipakai"
+      ]
+    }
+  ],
+  "meanings": [
+    {
+      "en": "(spare) time; free time; leisure",
+      "misc": [
+        "biasanya kana saja"
+      ],
+      "field": []
+    },
+    {
+      "en": "time off; leave; vacation; holiday",
+      "misc": [
+        "biasanya kana saja"
+      ],
+      "field": []
+    },
+    {
+      "en": "resignation; dismissal; divorce",
+      "misc": [
+        "biasanya kana saja",
+        "dated term"
+      ],
+      "field": []
+    },
+    {
+      "en": "leaving; taking one's leave; farewell",
+      "misc": [
+        "biasanya kana saja"
+      ],
+      "field": []
+    }
+  ],
+  "misc_jm": [
+    "biasanya kana saja",
+    "dated term"
+  ]
+},
+
+{
+  "id": "vg-n5-00723",
+  "word": "大変",
+  "reading": "たいへん",
+  "romaji": "taihen",
+  "meaning_id": "sangat; parah; berat",
+  "meaning_en": "very; terrible; tough",
+  "jlpt": "n5",
+  "pos": "na-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "ekspresi",
+    "perasaan"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "umum"
+  ],
+  "nuance": "Sebagai kata sifat: situasi yang berat/susah. Sebagai adverb: sangat/amat.",
+  "conj_type": "na-adj",
+  "examples": [
+    {
+      "jp": "大変でしたね。",
+      "id": "Berat ya keadaannya.",
+      "level": "n5",
+      "tags": [
+        "emosi"
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"イトマ￣"}
+},
+    {
+      "jp": "大変おいしいです。",
+      "id": "Ini sangat enak.",
+      "level": "n5",
+      "tags": [
+        "emosi"
+      ]
+    }
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15.6.1-plan-c",
+  "provenance": "jlpt-corpus",
+  "jmdict_seq": "1415000",
+  "frequency": 1000,
+  "forms": [
+    {
+      "word": "大変",
+      "info": []
+    },
+    {
+      "word": "大へん",
+      "info": []
+    }
+  ],
+  "meanings": [
+    {
+      "en": "very; greatly; terribly; awfully",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "immense; enormous; great",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "serious; grave; dreadful; terrible",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "difficult; hard; challenging",
+      "misc": [],
+      "field": []
+    },
+    {
+      "en": "major incident; disaster",
+      "misc": [
+        "archaic"
+      ],
+      "field": []
+    }
+  ],
+  "misc_jm": [
+    "arkais"
+  ]
+},
+
+{
+  "id": "vg-n5-00724",
+  "word": "有名",
+  "reading": "ゆうめい",
+  "romaji": "yuumei",
+  "meaning_id": "terkenal; termasyhur",
+  "meaning_en": "famous, well-known",
+  "jlpt": "n5",
+  "pos": "na-adj",
+  "common": true,
+  "related_grammar": [],
+  "formalitas": 2,
+  "domain": [
+    "deskripsi",
+    "orang"
+  ],
+  "register": "neutral",
+  "lawan_bicara": [
+    "teman",
+    "umum"
+  ],
+  "nuance": "A na-adjective for something widely recognized. As the base form, it requires 'na' when modifying nouns and conjugates like a noun at the end of a sentence.",
+  "conj_type": "na-adj",
+  "examples": [
+    {
+      "jp": "あの歌手はとても有名です。",
+      "id": "Penyanyi itu sangat terkenal.",
+      "level": "n5",
+      "tags": [
+        "bahasa-komunikasi"
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"タイヘン￣"}
+}
+  ],
+  "synonyms": [],
+  "antonyms": [],
+  "see_also": [],
+  "added_v": "v15.6.1-plan-c",
+  "provenance": "jlpt-corpus",
+  "jmdict_seq": "1541620",
+  "frequency": 1500
 },
 
 {
@@ -3098,8 +7002,9 @@ window.vocabN5_Adjectives = [
       "tags": [
         "deskripsi",
         "rumah"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"アカルイ￣"}
+},
     {
       "jp": "田中さんは明るい性格で、みんなに好かれています。",
       "id": "Tanaka-san memiliki kepribadian yang ceria dan disukai semua orang.",
@@ -3127,6 +7032,7 @@ window.vocabN5_Adjectives = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n5-00735",
   "word": "いい; よい",
@@ -3188,6 +7094,7 @@ window.vocabN5_Adjectives = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n5-00745",
   "word": "嫌",
@@ -3219,8 +7126,9 @@ window.vocabN5_Adjectives = [
       "tags": [
         "perasaan",
         "cuaca"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"odaka","mora_count":2,"downstep_mora":2,"contour":"イヤ＼"}
+},
     {
       "jp": "嫌なことがあっても、諦めないでください。",
       "id": "Meskipun ada hal yang tidak menyenangkan, tolong jangan menyerah.",
@@ -3249,6 +7157,7 @@ window.vocabN5_Adjectives = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n5-00747",
   "word": "うるさい",
@@ -3281,8 +7190,9 @@ window.vocabN5_Adjectives = [
       "tags": [
         "lingkungan",
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"ウルサ＼イ"}
+},
     {
       "jp": "教室ではうるさくしないでください。",
       "id": "Tolong jangan berisik di dalam ruang kelas.",
@@ -3310,6 +7220,7 @@ window.vocabN5_Adjectives = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n5-00751",
   "word": "大きな",
@@ -3343,8 +7254,9 @@ window.vocabN5_Adjectives = [
       "tags": [
         "deskripsi",
         "alam"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":4,"downstep_mora":1,"contour":"オ＼オキナ"}
+},
     {
       "jp": "彼は大きな声で挨拶しました。",
       "id": "Dia menyapa dengan suara yang lantang (besar).",
@@ -3372,6 +7284,7 @@ window.vocabN5_Adjectives = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n5-00772",
   "word": "黄色い",
@@ -3405,8 +7318,9 @@ window.vocabN5_Adjectives = [
       "tags": [
         "alam",
         "deskripsi"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"キイロイ￣"}
+},
     {
       "jp": "黄色い帽子をかぶっている子は弟です。",
       "id": "Anak yang memakai topi kuning itu adalah adik laki-laki saya.",
@@ -3432,6 +7346,7 @@ window.vocabN5_Adjectives = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n5-00775",
   "word": "汚い",
@@ -3465,8 +7380,9 @@ window.vocabN5_Adjectives = [
       "tags": [
         "kebersihan",
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"キタナ＼イ"}
+},
     {
       "jp": "この川は汚いので、泳いではいけません。",
       "id": "Sungai ini kotor, jadi tidak boleh berenang di sini.",
@@ -3495,6 +7411,7 @@ window.vocabN5_Adjectives = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n5-00784",
   "word": "暗い",
@@ -3527,8 +7444,9 @@ window.vocabN5_Adjectives = [
       "tags": [
         "deskripsi",
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"クライ￣"}
+},
     {
       "jp": "夜遅い道は暗いので気をつけて歩いてください。",
       "id": "Jalan saat larut malam gelap, jadi berhati-hatilah saat berjalan kaki.",
@@ -3555,6 +7473,7 @@ window.vocabN5_Adjectives = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n5-00788",
   "word": "結構",
@@ -3587,8 +7506,9 @@ window.vocabN5_Adjectives = [
       "tags": [
         "komunikasi",
         "sopan-santun"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ケッコウ￣"}
+},
     {
       "jp": "昨日のテストは結構難しかったです。",
       "id": "Ujian kemarin lumayan sulit.",
@@ -3614,6 +7534,7 @@ window.vocabN5_Adjectives = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n5-00805",
   "word": "こんな",
@@ -3646,8 +7567,9 @@ window.vocabN5_Adjectives = [
       "tags": [
         "makanan-minuman",
         "deskripsi"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":0,"downstep_mora":0,"contour":"￣"}
+},
     {
       "jp": "雨の日にこんな傘があると便利ですね。",
       "id": "Punya payung seperti ini saat hari hujan sangat praktis ya.",
@@ -3676,6 +7598,7 @@ window.vocabN5_Adjectives = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n5-00827",
   "word": "丈夫",
@@ -3710,8 +7633,9 @@ window.vocabN5_Adjectives = [
       "tags": [
         "sifat",
         "benda"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ジョウブ￣"}
+},
     {
       "jp": "祖父は体が丈夫で、毎日散歩しています。",
       "id": "Kakek badannya sehat dan bugar, setiap hari berjalan-jalan.",
@@ -3740,6 +7664,7 @@ window.vocabN5_Adjectives = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n5-00853",
   "word": "大好き",
@@ -3773,8 +7698,9 @@ window.vocabN5_Adjectives = [
       "tags": [
         "emosi",
         "hiburan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":4,"downstep_mora":1,"contour":"ダ＼イスキ"}
+},
     {
       "jp": "子供たちは甘いイチゴが大好きです。",
       "id": "Anak-anak sangat suka buah stroberi manis.",
@@ -3803,6 +7729,7 @@ window.vocabN5_Adjectives = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n5-00863",
   "word": "小さな",
@@ -3836,8 +7763,9 @@ window.vocabN5_Adjectives = [
       "tags": [
         "alam",
         "sifat"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":4,"downstep_mora":1,"contour":"チ＼イサナ"}
+},
     {
       "jp": "彼は静かな小さな町で生まれました。",
       "id": "Dia lahir di sebuah kota kecil yang tenang.",
@@ -3868,6 +7796,7 @@ window.vocabN5_Adjectives = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n5-00892",
   "word": "ない",
@@ -3899,8 +7828,9 @@ window.vocabN5_Adjectives = [
       "tags": [
         "kehidupan-sehari",
         "kasual"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":2,"downstep_mora":1,"contour":"ナ＼イ"}
+},
     {
       "jp": "部屋にテレビがない。",
       "id": "Di kamar tidak ada televisi.",
@@ -3928,6 +7858,7 @@ window.vocabN5_Adjectives = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n5-00903",
   "word": "温い",
@@ -3961,8 +7892,9 @@ window.vocabN5_Adjectives = [
       "tags": [
         "makanan",
         "kondisi"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"ヌル＼イ"}
+},
     {
       "jp": "このお風呂のお湯は少し温いです。",
       "id": "Air bak mandi ini agak suam kuku.",
@@ -3989,6 +7921,7 @@ window.vocabN5_Adjectives = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n5-00925",
   "word": "低い",
@@ -4021,8 +7954,9 @@ window.vocabN5_Adjectives = [
       "tags": [
         "benda",
         "kondisi"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"ヒク＼イ"}
+},
     {
       "jp": "冬は気温が低くて寒いです。",
       "id": "Saat musim dingin suhu udaranya rendah dan dingin.",
@@ -4048,6 +7982,7 @@ window.vocabN5_Adjectives = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n5-00946",
   "word": "欲しい",
@@ -4082,8 +8017,9 @@ window.vocabN5_Adjectives = [
       "tags": [
         "keinginan",
         "perasaan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"ホシ＼イ"}
+},
     {
       "jp": "今は新しい車があまり欲しくないです。",
       "id": "Saat ini saya tidak begitu menginginkan mobil baru.",
@@ -4107,6 +8043,7 @@ window.vocabN5_Adjectives = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n5-00950",
   "word": "本当",
@@ -4141,8 +8078,9 @@ window.vocabN5_Adjectives = [
       "tags": [
         "percakapan",
         "tanya"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ホントウ￣"}
+},
     {
       "jp": "うそをつかないで、本当のことを言ってください。",
       "id": "Jangan berbohong, katakanlah hal yang sejujurnya.",
@@ -4171,6 +8109,7 @@ window.vocabN5_Adjectives = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n5-00956",
   "word": "まずい",
@@ -4205,8 +8144,9 @@ window.vocabN5_Adjectives = [
       "tags": [
         "kesehatan",
         "makanan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"マズ＼イ"}
+},
     {
       "jp": "宿題を家に忘れてしまって、まずいことになりました。",
       "id": "Saya ketinggalan PR di rumah, situasinya jadi gawat.",
@@ -4235,6 +8175,7 @@ window.vocabN5_Adjectives = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n5-00958",
   "word": "まっすぐ",
@@ -4269,8 +8210,9 @@ window.vocabN5_Adjectives = [
       "tags": [
         "arah",
         "lokasi"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"マッス＼グ"}
+},
     {
       "jp": "放課後はどこにも寄らず、まっすぐ家に帰りました。",
       "id": "Sepulang sekolah saya langsung pulang lurus ke rumah tanpa mampir.",
@@ -4299,6 +8241,7 @@ window.vocabN5_Adjectives = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n5-00960",
   "word": "丸い; 円い",
@@ -4333,8 +8276,9 @@ window.vocabN5_Adjectives = [
       "tags": [
         "alam",
         "pemandangan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"マルイ￣"}
+},
     {
       "jp": "部屋の真ん中に丸いテーブルを置きました。",
       "id": "Saya menaruh meja bundar di tengah kamar.",
@@ -4362,6 +8306,7 @@ window.vocabN5_Adjectives = [
     "review_notes": ""
   }
 },
+
 {
   "id": "vg-n5-00984",
   "word": "りっぱ",
@@ -4395,8 +8340,9 @@ window.vocabN5_Adjectives = [
       "tags": [
         "tempat",
         "pujian"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"リッパ￣"}
+},
     {
       "jp": "将来は立派な医者になりたいです。",
       "id": "Di masa depan saya ingin menjadi dokter yang hebat.",
@@ -4425,8 +8371,6 @@ window.vocabN5_Adjectives = [
     "review_notes": ""
   }
 },
-
-// ── Staged Expansion (45) ──
 
 {
   "id": "vg-n5-01000",
@@ -4458,8 +8402,9 @@ window.vocabN5_Adjectives = [
       "level": "n5",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"アツ＼イ"}
+},
     {
       "jp": "暑くならないうちに出かけよう。",
       "id": "Let's go out before it gets hot.",
@@ -4483,7 +8428,7 @@ window.vocabN5_Adjectives = [
   "word": "熱い",
   "reading": "あつい",
   "romaji": "atsui",
-  "meaning_id": "hot to the touch",
+  "meaning_id": "panas saat disentuh",
   "meaning_en": "hot to the touch",
   "jlpt": "n5",
   "pos": "i-adj",
@@ -4508,8 +8453,9 @@ window.vocabN5_Adjectives = [
       "level": "n5",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"アツ＼イ"}
+},
     {
       "jp": "熱いダックスフント・ソーセージはいかが。",
       "id": "Get your hot dachshund sausages!",
@@ -4533,7 +8479,7 @@ window.vocabN5_Adjectives = [
   "word": "危ない",
   "reading": "あぶない",
   "romaji": "abunai",
-  "meaning_id": "dangerous",
+  "meaning_id": "berbahaya",
   "meaning_en": "dangerous",
   "jlpt": "n5",
   "pos": "i-adj",
@@ -4558,8 +8504,9 @@ window.vocabN5_Adjectives = [
       "level": "n5",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"アブナイ￣"}
+},
     {
       "jp": "危ない！トラックが来るぞ！",
       "id": "Look out! There's a truck coming!",
@@ -4583,7 +8530,7 @@ window.vocabN5_Adjectives = [
   "word": "甘い",
   "reading": "あまい",
   "romaji": "amai",
-  "meaning_id": "sweet",
+  "meaning_id": "manis",
   "meaning_en": "sweet",
   "jlpt": "n5",
   "pos": "i-adj",
@@ -4608,8 +8555,9 @@ window.vocabN5_Adjectives = [
       "level": "n5",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"アマイ￣"}
+},
     {
       "jp": "このチョコレートはとっても甘くておいしい。",
       "id": "This chocolate is very sweet and tasty.",
@@ -4658,8 +8606,9 @@ window.vocabN5_Adjectives = [
       "level": "n5",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":2,"downstep_mora":1,"contour":"イ＼イ"}
+},
     {
       "jp": "ダンスはスタイルをよくするのにいい。",
       "id": "Dancing is good for the figure.",
@@ -4683,7 +8632,7 @@ window.vocabN5_Adjectives = [
   "word": "痛い",
   "reading": "いたい",
   "romaji": "itai",
-  "meaning_id": "painful",
+  "meaning_id": "menyakitkan",
   "meaning_en": "painful",
   "jlpt": "n5",
   "pos": "i-adj",
@@ -4708,8 +8657,9 @@ window.vocabN5_Adjectives = [
       "level": "n5",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"イタ＼イ"}
+},
     {
       "jp": "痛くないようにしてください。",
       "id": "Tolong be gentle.",
@@ -4733,7 +8683,7 @@ window.vocabN5_Adjectives = [
   "word": "いろいろ",
   "reading": "いろいろ",
   "romaji": "iroiro",
-  "meaning_id": "various",
+  "meaning_id": "berbagai",
   "meaning_en": "various",
   "jlpt": "n5",
   "pos": "na-adj",
@@ -4758,8 +8708,9 @@ window.vocabN5_Adjectives = [
       "level": "n5",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"イロイロ￣"}
+},
     {
       "jp": "コーヒーにもいろいろある。",
       "id": "Ada various kinds of coffee.",
@@ -4783,7 +8734,7 @@ window.vocabN5_Adjectives = [
   "word": "薄い",
   "reading": "うすい",
   "romaji": "usui",
-  "meaning_id": "thin; weak",
+  "meaning_id": "kurus; lemah",
   "meaning_en": "thin; weak",
   "jlpt": "n5",
   "pos": "i-adj",
@@ -4808,8 +8759,9 @@ window.vocabN5_Adjectives = [
       "level": "n5",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ウスイ￣"}
+},
     {
       "jp": "肉を薄く切りなさい。",
       "id": "Cut the meat into thin slices.",
@@ -4833,7 +8785,7 @@ window.vocabN5_Adjectives = [
   "word": "煩い",
   "reading": "うるさい",
   "romaji": "urusai",
-  "meaning_id": "noisy; annoying",
+  "meaning_id": "berisik; menjengkelkan",
   "meaning_en": "noisy; annoying",
   "jlpt": "n5",
   "pos": "i-adj",
@@ -4858,8 +8810,9 @@ window.vocabN5_Adjectives = [
       "level": "n5",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"ウルサ＼イ"}
+},
     {
       "jp": "つべこべうるさいよ。やるのかやらないのか！？",
       "id": "Quit your bellyaching. You goin' to do it, or not!?",
@@ -4908,8 +8861,9 @@ window.vocabN5_Adjectives = [
       "level": "n5",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"オイシイ￣"}
+},
     {
       "jp": "なんておいしいスープなんだろう。",
       "id": "This soup is exquisite.",
@@ -4933,7 +8887,7 @@ window.vocabN5_Adjectives = [
   "word": "多い",
   "reading": "おおい",
   "romaji": "ooi",
-  "meaning_id": "many",
+  "meaning_id": "banyak",
   "meaning_en": "many",
   "jlpt": "n5",
   "pos": "i-adj",
@@ -4958,8 +8912,9 @@ window.vocabN5_Adjectives = [
       "level": "n5",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"オ＼オイ"}
+},
     {
       "jp": "そこには、水が多かったからである。",
       "id": "Because there was plenty of water...",
@@ -4983,7 +8938,7 @@ window.vocabN5_Adjectives = [
   "word": "大人",
   "reading": "おとな",
   "romaji": "otona",
-  "meaning_id": "adult",
+  "meaning_id": "dewasa",
   "meaning_en": "adult",
   "jlpt": "n5",
   "pos": "na-adj",
@@ -5008,8 +8963,9 @@ window.vocabN5_Adjectives = [
       "level": "n5",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"オトナ￣"}
+},
     {
       "jp": "この本は大人によく読まれている。",
       "id": "Ini adalah a book often read by adults.",
@@ -5058,8 +9014,9 @@ window.vocabN5_Adjectives = [
       "level": "n5",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"オナジ￣"}
+},
     {
       "jp": "マイクとトムは同じクラスです。",
       "id": "Mike and Tom are in the same class.",
@@ -5083,7 +9040,7 @@ window.vocabN5_Adjectives = [
   "word": "重い",
   "reading": "おもい",
   "romaji": "omoi",
-  "meaning_id": "heavy",
+  "meaning_id": "berat",
   "meaning_en": "heavy",
   "jlpt": "n5",
   "pos": "i-adj",
@@ -5108,8 +9065,9 @@ window.vocabN5_Adjectives = [
       "level": "n5",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"オモイ￣"}
+},
     {
       "jp": "この本はあの本ほど重くない。",
       "id": "This book isn't as heavy as that book.",
@@ -5133,7 +9091,7 @@ window.vocabN5_Adjectives = [
   "word": "おもしろい",
   "reading": "おもしろい",
   "romaji": "omoshiroi",
-  "meaning_id": "interesting",
+  "meaning_id": "menarik",
   "meaning_en": "interesting",
   "jlpt": "n5",
   "pos": "i-adj",
@@ -5158,8 +9116,9 @@ window.vocabN5_Adjectives = [
       "level": "n5",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":4,"category":"nakadaka","mora_count":5,"downstep_mora":4,"contour":"オモシロ＼イ"}
+},
     {
       "jp": "これはとってもおもしろい本です。",
       "id": "Ini adalah a very interesting book.",
@@ -5183,7 +9142,7 @@ window.vocabN5_Adjectives = [
   "word": "辛い",
   "reading": "からい",
   "romaji": "karai",
-  "meaning_id": "spicy",
+  "meaning_id": "pedas",
   "meaning_en": "spicy",
   "jlpt": "n5",
   "pos": "i-adj",
@@ -5208,8 +9167,9 @@ window.vocabN5_Adjectives = [
       "level": "n5",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"カラ＼イ"}
+},
     {
       "jp": "できるだけ辛くしてください。",
       "id": "Make it as spicy as you can.",
@@ -5233,7 +9193,7 @@ window.vocabN5_Adjectives = [
   "word": "軽い",
   "reading": "かるい",
   "romaji": "karui",
-  "meaning_id": "light",
+  "meaning_id": "ringan",
   "meaning_en": "light",
   "jlpt": "n5",
   "pos": "i-adj",
@@ -5258,8 +9218,9 @@ window.vocabN5_Adjectives = [
       "level": "n5",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"カルイ￣"}
+},
     {
       "jp": "朝食はたいてい軽くとります。",
       "id": "I usually have a light breakfast.",
@@ -5283,7 +9244,7 @@ window.vocabN5_Adjectives = [
   "word": "かわいい",
   "reading": "かわいい",
   "romaji": "kawaii",
-  "meaning_id": "cute",
+  "meaning_id": "lucu",
   "meaning_en": "cute",
   "jlpt": "n5",
   "pos": "i-adj",
@@ -5308,8 +9269,9 @@ window.vocabN5_Adjectives = [
       "level": "n5",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"カワイ＼イ"}
+},
     {
       "jp": "ナンシーさんはとてもかわいいそうです。",
       "id": "I hear that Nancy is very pretty.",
@@ -5358,8 +9320,9 @@ window.vocabN5_Adjectives = [
       "level": "n5",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"キイロ￣"}
+},
     {
       "jp": "この花は黄色だが、ほかの花はみな青い。",
       "id": "This flower is yellow, but all the others are blue.",
@@ -5383,7 +9346,7 @@ window.vocabN5_Adjectives = [
   "word": "嫌い",
   "reading": "きらい",
   "romaji": "kirai",
-  "meaning_id": "hate",
+  "meaning_id": "benci",
   "meaning_en": "hate",
   "jlpt": "n5",
   "pos": "na-adj",
@@ -5408,8 +9371,9 @@ window.vocabN5_Adjectives = [
       "level": "n5",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"キライ￣"}
+},
     {
       "jp": "いいや。あいつは水がキライなんだ。",
       "id": "No. He doesn't like water!",
@@ -5433,7 +9397,7 @@ window.vocabN5_Adjectives = [
   "word": "きれい",
   "reading": "きれい",
   "romaji": "kirei",
-  "meaning_id": "pretty; clean",
+  "meaning_id": "cantik; bersih",
   "meaning_en": "pretty; clean",
   "jlpt": "n5",
   "pos": "na-adj",
@@ -5458,8 +9422,9 @@ window.vocabN5_Adjectives = [
       "level": "n5",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"キ＼レイ"}
+},
     {
       "jp": "その川はあまりきれいではなかった。",
       "id": "The river was not so clean.",
@@ -5508,8 +9473,9 @@ window.vocabN5_Adjectives = [
       "level": "n5",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"クロ＼イ"}
+},
     {
       "jp": "あの黒いかばんはあなたのですか。",
       "id": "Is that black bag yours?",
@@ -5558,8 +9524,9 @@ window.vocabN5_Adjectives = [
       "level": "n5",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"サム＼イ"}
+},
     {
       "jp": "天気は寒いだけでなく雨であった。",
       "id": "The weather was not only cold, but also wet.",
@@ -5583,7 +9550,7 @@ window.vocabN5_Adjectives = [
   "word": "上手",
   "reading": "じょうず",
   "romaji": "jouzu",
-  "meaning_id": "skillful",
+  "meaning_id": "terampil",
   "meaning_en": "skillful",
   "jlpt": "n5",
   "pos": "na-adj",
@@ -5608,8 +9575,9 @@ window.vocabN5_Adjectives = [
       "level": "n5",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"odaka","mora_count":3,"downstep_mora":3,"contour":"ジョウズ＼"}
+},
     {
       "jp": "マイクは日本語を話すのが上手だ。",
       "id": "Mike speaks good Japanese.",
@@ -5658,8 +9626,9 @@ window.vocabN5_Adjectives = [
       "level": "n5",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"シロ＼イ"}
+},
     {
       "jp": "それはここからでは白く見える。",
       "id": "It shows white from here.",
@@ -5683,7 +9652,7 @@ window.vocabN5_Adjectives = [
   "word": "好き",
   "reading": "すき",
   "romaji": "suki",
-  "meaning_id": "likeable",
+  "meaning_id": "menyenangkan",
   "meaning_en": "likeable",
   "jlpt": "n5",
   "pos": "na-adj",
@@ -5708,8 +9677,9 @@ window.vocabN5_Adjectives = [
       "level": "n5",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"odaka","mora_count":2,"downstep_mora":2,"contour":"スキ＼"}
+},
     {
       "jp": "あなたはマルチーズは好きですか。",
       "id": "Are you fond of Maltese dogs?",
@@ -5733,7 +9703,7 @@ window.vocabN5_Adjectives = [
   "word": "狭い",
   "reading": "せまい",
   "romaji": "semai",
-  "meaning_id": "narrow",
+  "meaning_id": "sempit",
   "meaning_en": "narrow",
   "jlpt": "n5",
   "pos": "i-adj",
@@ -5758,8 +9728,9 @@ window.vocabN5_Adjectives = [
       "level": "n5",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"セマ＼イ"}
+},
     {
       "jp": "その通りはとても狭いんだ。",
       "id": "The street is very narrow.",
@@ -5783,7 +9754,7 @@ window.vocabN5_Adjectives = [
   "word": "大丈夫",
   "reading": "だいじょうぶ",
   "romaji": "daijoubu",
-  "meaning_id": "all right",
+  "meaning_id": "baiklah",
   "meaning_en": "all right",
   "jlpt": "n5",
   "pos": "na-adj",
@@ -5808,8 +9779,9 @@ window.vocabN5_Adjectives = [
       "level": "n5",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":5,"downstep_mora":3,"contour":"ダイジョ＼ウブ"}
+},
     {
       "jp": "彼女は今のところ大丈夫です。",
       "id": "Dia all right at the moment.",
@@ -5833,7 +9805,7 @@ window.vocabN5_Adjectives = [
   "word": "たくさん",
   "reading": "たくさん",
   "romaji": "takusan",
-  "meaning_id": "many",
+  "meaning_id": "banyak",
   "meaning_en": "many",
   "jlpt": "n5",
   "pos": "na-adj",
@@ -5858,8 +9830,9 @@ window.vocabN5_Adjectives = [
       "level": "n5",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"タクサ＼ン"}
+},
     {
       "jp": "そんなにたくさんくださいました。",
       "id": "You have given me so many.",
@@ -5883,7 +9856,7 @@ window.vocabN5_Adjectives = [
   "word": "小さい",
   "reading": "ちいさい",
   "romaji": "chiisai",
-  "meaning_id": "little",
+  "meaning_id": "sedikit",
   "meaning_en": "little",
   "jlpt": "n5",
   "pos": "i-adj",
@@ -5908,8 +9881,9 @@ window.vocabN5_Adjectives = [
       "level": "n5",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"チイサ＼イ"}
+},
     {
       "jp": "これより小さいのはないんですか？",
       "id": "Don't you have anything smaller than this?",
@@ -5958,8 +9932,9 @@ window.vocabN5_Adjectives = [
       "level": "n5",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"チカ＼イ"}
+},
     {
       "jp": "トイレが近いのです。",
       "id": "Is there a toilet near here?",
@@ -5983,7 +9958,7 @@ window.vocabN5_Adjectives = [
   "word": "つまらない",
   "reading": "つまらない",
   "romaji": "tsumaranai",
-  "meaning_id": "boring",
+  "meaning_id": "membosankan",
   "meaning_en": "boring",
   "jlpt": "n5",
   "pos": "i-adj",
@@ -6008,8 +9983,9 @@ window.vocabN5_Adjectives = [
       "level": "n5",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":5,"downstep_mora":3,"contour":"ツマラ＼ナイ"}
+},
     {
       "jp": "あの新しい映画は、つまらんかった。",
       "id": "That new movie was a bummer.",
@@ -6033,7 +10009,7 @@ window.vocabN5_Adjectives = [
   "word": "冷たい",
   "reading": "つめたい",
   "romaji": "tsumetai",
-  "meaning_id": "cold to the touch",
+  "meaning_id": "dingin saat disentuh",
   "meaning_en": "cold to the touch",
   "jlpt": "n5",
   "pos": "i-adj",
@@ -6058,8 +10034,9 @@ window.vocabN5_Adjectives = [
       "level": "n5",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ツメタイ￣"}
+},
     {
       "jp": "夏は冷たいポテトサラダがいいな。",
       "id": "Saya suka cold potato salad in the summertime.",
@@ -6108,8 +10085,9 @@ window.vocabN5_Adjectives = [
       "level": "n5",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"トオイ￣"}
+},
     {
       "jp": "ここからシドニーは遠いですね。",
       "id": "Sydney is far from here.",
@@ -6133,7 +10111,7 @@ window.vocabN5_Adjectives = [
   "word": "賑やか",
   "reading": "にぎやか",
   "romaji": "nigiyaka",
-  "meaning_id": "bustling; busy",
+  "meaning_id": "ramai; sibuk",
   "meaning_en": "bustling; busy",
   "jlpt": "n5",
   "pos": "na-adj",
@@ -6158,8 +10136,9 @@ window.vocabN5_Adjectives = [
       "level": "n5",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":4,"downstep_mora":2,"contour":"ニギ＼ヤカ"}
+},
     {
       "jp": "にぎやかなところが好きだ。",
       "id": "Saya suka busy places.",
@@ -6183,7 +10162,7 @@ window.vocabN5_Adjectives = [
   "word": "太い",
   "reading": "ふとい",
   "romaji": "futoi",
-  "meaning_id": "fat",
+  "meaning_id": "gemuk",
   "meaning_en": "fat",
   "jlpt": "n5",
   "pos": "i-adj",
@@ -6208,8 +10187,9 @@ window.vocabN5_Adjectives = [
       "level": "n5",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"フト＼イ"}
+},
     {
       "jp": "私の妹は足が太いのをひどく気にしている。",
       "id": "My sister is sensitive about her thick legs.",
@@ -6233,7 +10213,7 @@ window.vocabN5_Adjectives = [
   "word": "下手",
   "reading": "へた",
   "romaji": "heta",
-  "meaning_id": "unskillful",
+  "meaning_id": "tidak terampil",
   "meaning_en": "unskillful",
   "jlpt": "n5",
   "pos": "na-adj",
@@ -6258,8 +10238,9 @@ window.vocabN5_Adjectives = [
       "level": "n5",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"odaka","mora_count":2,"downstep_mora":2,"contour":"ヘタ＼"}
+},
     {
       "jp": "彼はイギリス生まれだが、英語がとても下手である。",
       "id": "He comes from England, but is very poor at English.",
@@ -6283,7 +10264,7 @@ window.vocabN5_Adjectives = [
   "word": "便利",
   "reading": "べんり",
   "romaji": "benri",
-  "meaning_id": "useful; convenient",
+  "meaning_id": "berguna; nyaman",
   "meaning_en": "useful; convenient",
   "jlpt": "n5",
   "pos": "na-adj",
@@ -6308,8 +10289,9 @@ window.vocabN5_Adjectives = [
       "level": "n5",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"ベ＼ンリ"}
+},
     {
       "jp": "そりゃ便利だね。",
       "id": "That comes in handy.",
@@ -6333,7 +10315,7 @@ window.vocabN5_Adjectives = [
   "word": "細い",
   "reading": "ほそい",
   "romaji": "hosoi",
-  "meaning_id": "thin",
+  "meaning_id": "tipis",
   "meaning_en": "thin",
   "jlpt": "n5",
   "pos": "i-adj",
@@ -6358,8 +10340,9 @@ window.vocabN5_Adjectives = [
       "level": "n5",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"ホソ＼イ"}
+},
     {
       "jp": "細く長く愛して。",
       "id": "Love me lithe, love me long.",
@@ -6383,7 +10366,7 @@ window.vocabN5_Adjectives = [
   "word": "ほんとう",
   "reading": "ほんとう",
   "romaji": "hontou",
-  "meaning_id": "truth",
+  "meaning_id": "kebenaran",
   "meaning_en": "truth",
   "jlpt": "n5",
   "pos": "na-adj",
@@ -6408,8 +10391,9 @@ window.vocabN5_Adjectives = [
       "level": "n5",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ホントウ￣"}
+},
     {
       "jp": "もしそれが本当ならどうしますか。",
       "id": "Suppose it were true; what would you do?",
@@ -6433,7 +10417,7 @@ window.vocabN5_Adjectives = [
   "word": "丸い",
   "reading": "まるい",
   "romaji": "marui",
-  "meaning_id": "round; circular",
+  "meaning_id": "bulat; melingkar",
   "meaning_en": "round; circular",
   "jlpt": "n5",
   "pos": "i-adj",
@@ -6458,8 +10442,9 @@ window.vocabN5_Adjectives = [
       "level": "n5",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"マルイ￣"}
+},
     {
       "jp": "私たちは丸いテーブルを買った。",
       "id": "We bought a round table.",
@@ -6508,8 +10493,9 @@ window.vocabN5_Adjectives = [
       "level": "n5",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ヤサシイ￣"}
+},
     {
       "jp": "この本は易しい英語で書かれている。",
       "id": "This book is written in easy English.",
@@ -6533,7 +10519,7 @@ window.vocabN5_Adjectives = [
   "word": "有名",
   "reading": "ゆうめい",
   "romaji": "yuumei",
-  "meaning_id": "famous",
+  "meaning_id": "terkenal",
   "meaning_en": "famous",
   "jlpt": "n5",
   "pos": "na-adj",
@@ -6558,8 +10544,9 @@ window.vocabN5_Adjectives = [
       "level": "n5",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ユウメイ￣"}
+},
     {
       "jp": "トーマス先生はとても有名な先生です。",
       "id": "Mr Thomas is a very able teacher.",
@@ -6583,7 +10570,7 @@ window.vocabN5_Adjectives = [
   "word": "弱い",
   "reading": "よわい",
   "romaji": "yowai",
-  "meaning_id": "weak",
+  "meaning_id": "lemah",
   "meaning_en": "weak",
   "jlpt": "n5",
   "pos": "i-adj",
@@ -6608,8 +10595,9 @@ window.vocabN5_Adjectives = [
       "level": "n5",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"ヨワ＼イ"}
+},
     {
       "jp": "そのひもはとても弱い。",
       "id": "The string is very weak.",
@@ -6633,7 +10621,7 @@ window.vocabN5_Adjectives = [
   "word": "若い",
   "reading": "わかい",
   "romaji": "wakai",
-  "meaning_id": "young",
+  "meaning_id": "muda",
   "meaning_en": "young",
   "jlpt": "n5",
   "pos": "i-adj",
@@ -6658,8 +10646,9 @@ window.vocabN5_Adjectives = [
       "level": "n5",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"ワカ＼イ"}
+},
     {
       "jp": "若いときは、よくサッカーをした。",
       "id": "I often played soccer when I was young.",

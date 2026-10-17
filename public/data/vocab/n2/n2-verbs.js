@@ -1,7 +1,6 @@
 // ────────────────────────────────────────────────────────────
-//  n2-verbs.js — Nugget Nihongo · JLPT N2 · Verbs
-//  159 entries | Auto-split from vocab-n2.js
-//  Schema: data/_schema-vocab.md | Part of vocab/n2/ module
+//  n2-verbs.js — Nugget Nihongo · JLPT N2 · VERBS
+//  783 entries | Fully Curated Indonesian
 // ────────────────────────────────────────────────────────────
 
 window.vocabN2_Verbs = [
@@ -819,8 +818,9 @@ window.vocabN2_Verbs = [
       "tags": [
         "pekerjaan",
         "bisnis"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ショウジル￣"}
+},
     {
       "jp": "経済的な格差から様々な問題が生じている。",
       "id": "Berbagai masalah timbul dari kesenjangan ekonomi.",
@@ -903,8 +903,9 @@ window.vocabN2_Verbs = [
       "tags": [
         "sebab-akibat",
         "politik-masyarakat"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"アタエル￣"}
+},
     {
       "jp": "先生の言葉が彼の人生に深い意味を与えた。",
       "id": "Kata-kata gurunya memberikan makna yang mendalam bagi kehidupannya.",
@@ -1006,8 +1007,9 @@ window.vocabN2_Verbs = [
       "tags": [
         "pekerjaan",
         "karakter"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"モトメ＼ル"}
+},
     {
       "jp": "人間はいつも幸せを求めている。",
       "id": "Manusia selalu mencari kebahagiaan.",
@@ -1105,8 +1107,9 @@ window.vocabN2_Verbs = [
       "tags": [
         "ilmu-pengetahuan",
         "media"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"ノベ＼ル"}
+},
     {
       "jp": "意見を述べる機会を与えてください。",
       "id": "Tolong beri saya kesempatan untuk menyatakan pendapat saya.",
@@ -1197,8 +1200,9 @@ window.vocabN2_Verbs = [
       "level": "n2",
       "tags": [
         "pekerjaan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"ノベ＼ル"}
+},
     {
       "jp": "専門家はこの政策の問題点を鋭く指摘した。",
       "id": "Para ahli dengan tajam mengkritik kelemahan kebijakan ini.",
@@ -2190,8 +2194,9 @@ window.vocabN2_Verbs = [
       "tags": [
         "bisnis",
         "ilmu-pengetahuan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"シメ＼ス"}
+},
     {
       "jp": "彼の行動は強い意志を示している。",
       "id": "Tindakannya mengindikasikan tekad yang kuat.",
@@ -2279,8 +2284,9 @@ window.vocabN2_Verbs = [
       "tags": [
         "belanja",
         "ekonomi-keuangan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"フク＼ム"}
+},
     {
       "jp": "報告書はすべての関連データを含む必要がある。",
       "id": "Laporan harus mencakup semua data yang relevan.",
@@ -2384,8 +2390,9 @@ window.vocabN2_Verbs = [
       "tags": [
         "ilmu-pengetahuan",
         "keputusan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"クク＼ム"}
+},
     {
       "jp": "法律に基づいて、適切な処分が下された。",
       "id": "Berdasarkan hukum, sanksi yang tepat dijatuhkan.",
@@ -2492,8 +2499,9 @@ window.vocabN2_Verbs = [
       "level": "n2",
       "tags": [
         "hukum-aturan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"モトヅ＼ク"}
+},
     {
       "jp": "彼は20年間、教育に関わる仕事をしてきた。",
       "id": "Selama 20 tahun dia bekerja di bidang yang berkaitan dengan pendidikan.",
@@ -2618,8 +2626,9 @@ window.vocabN2_Verbs = [
       "tags": [
         "kesehatan",
         "sebab-akibat"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"カカワ＼ル"}
+},
     {
       "jp": "この政策は中小企業に大きな影響を及ぼした。",
       "id": "Kebijakan ini memberikan dampak besar pada usaha kecil dan menengah.",
@@ -2691,8 +2700,9 @@ window.vocabN2_Verbs = [
       "tags": [
         "politik-masyarakat",
         "alam-lingkungan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ウナガス￣"}
+},
     {
       "jp": "コーチは選手に積極的なプレーを促した。",
       "id": "Pelatih mendorong para atlet untuk bermain lebih agresif.",
@@ -2773,8 +2783,9 @@ window.vocabN2_Verbs = [
       "level": "n2",
       "tags": [
         "emosi-positif"
-      ]
-    },
+      ],
+  "pitch": {"pattern":4,"category":"nakadaka","mora_count":5,"downstep_mora":4,"contour":"マヌカレ＼ル"}
+},
     {
       "jp": "責任を免れることはできない。",
       "id": "Tidak bisa lolos dari tanggung jawab.",
@@ -2857,8 +2868,9 @@ window.vocabN2_Verbs = [
       "level": "n2",
       "tags": [
         "pendidikan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":4,"category":"nakadaka","mora_count":5,"downstep_mora":4,"contour":"サマタゲ＼ル"}
+},
     {
       "jp": "偏見は人の成長を妨げることがある。",
       "id": "Prasangka bisa menghambat pertumbuhan seseorang.",
@@ -2931,8 +2943,9 @@ window.vocabN2_Verbs = [
       "tags": [
         "keluarga",
         "emosi-positif"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ササエル￣"}
+},
     {
       "jp": "この柱が建物全体を支えている。",
       "id": "Pilar ini menopang seluruh bangunan.",
@@ -3058,8 +3071,9 @@ window.vocabN2_Verbs = [
       "tags": [
         "karakter",
         "emosi-positif"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"ツカエ＼ル"}
+},
     {
       "jp": "この困難を二人で乗り越えよう。",
       "id": "Mari kita atasi kesulitan ini bersama.",
@@ -3169,8 +3183,9 @@ window.vocabN2_Verbs = [
       "tags": [
         "kesehatan",
         "karakter"
-      ]
-    },
+      ],
+  "pitch": {"pattern":4,"category":"nakadaka","mora_count":5,"downstep_mora":4,"contour":"ノリコエ＼ル"}
+},
     {
       "jp": "人前で話す恐怖を克服するために練習を続けた。",
       "id": "Dia terus berlatih untuk mengatasi rasa takut berbicara di depan umum.",
@@ -3242,8 +3257,9 @@ window.vocabN2_Verbs = [
       "level": "n2",
       "tags": [
         "politik-masyarakat"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"キョウキュウ￣"}
+},
     {
       "jp": "電力を安定的に供給することが課題だ。",
       "id": "Memasok listrik secara stabil adalah tantangan tersendiri.",
@@ -3300,8 +3316,9 @@ window.vocabN2_Verbs = [
       "level": "n2",
       "tags": [
         "ekonomi-keuangan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"フタン￣"}
+},
     {
       "jp": "費用は会社が負担する。",
       "id": "Biaya akan ditanggung oleh perusahaan.",
@@ -3370,8 +3387,9 @@ window.vocabN2_Verbs = [
       "level": "n2",
       "tags": [
         "makanan-minuman"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"クフウ￣"}
+},
     {
       "jp": "限られた予算でも工夫次第でうまくいく。",
       "id": "Meskipun anggaran terbatas, dengan kreativitas yang tepat semuanya bisa berjalan baik.",
@@ -3431,8 +3449,9 @@ window.vocabN2_Verbs = [
       "level": "n2",
       "tags": [
         "pendidikan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"シュウチュウ￣"}
+},
     {
       "jp": "権力が一人に集中するのは危険だ。",
       "id": "Berbahaya jika kekuasaan terpusat pada satu orang.",
@@ -3506,8 +3525,9 @@ window.vocabN2_Verbs = [
       "level": "n2",
       "tags": [
         "hukum-aturan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ユウセン￣"}
+},
     {
       "jp": "優先順位をつけてタスクをこなした。",
       "id": "Tugas dikerjakan dengan mengurutkan prioritas.",
@@ -3564,8 +3584,9 @@ window.vocabN2_Verbs = [
       "level": "n2",
       "tags": [
         "bisnis"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ダキョウ￣"}
+},
     {
       "jp": "品質に関しては妥協できない。",
       "id": "Kami tidak bisa berkompromi dalam hal kualitas.",
@@ -3622,8 +3643,9 @@ window.vocabN2_Verbs = [
       "level": "n2",
       "tags": [
         "sopan-santun"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"ハ＼イリョ"}
+},
     {
       "jp": "環境への配慮から再生可能エネルギーを使う。",
       "id": "Dari pertimbangan terhadap lingkungan, energi terbarukan digunakan.",
@@ -3680,8 +3702,9 @@ window.vocabN2_Verbs = [
       "level": "n2",
       "tags": [
         "hukum-aturan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"イチヅケ￣"}
+},
     {
       "jp": "彼の役割を組織の中でどう位置づけるかが課題だ。",
       "id": "Tantangannya adalah bagaimana memposisikan perannya dalam organisasi.",
@@ -3747,8 +3770,9 @@ window.vocabN2_Verbs = [
       "level": "n2",
       "tags": [
         "hukum-aturan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"イチヅケ￣"}
+},
     {
       "jp": "環境規制を遵守しなければならない。",
       "id": "Harus mematuhi regulasi lingkungan.",
@@ -3805,8 +3829,9 @@ window.vocabN2_Verbs = [
       "level": "n2",
       "tags": [
         "politik-masyarakat"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"サ＼ベツ"}
+},
     {
       "jp": "職場での差別をなくすための取り組みが進んでいる。",
       "id": "Upaya untuk menghapus diskriminasi di tempat kerja terus berlanjut.",
@@ -3874,8 +3899,9 @@ window.vocabN2_Verbs = [
       "level": "n2",
       "tags": [
         "politik-masyarakat"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":2,"downstep_mora":1,"contour":"シ＼ジ"}
+},
     {
       "jp": "多くの市民がその政策を支持している。",
       "id": "Banyak warga mendukung kebijakan tersebut.",
@@ -3946,8 +3972,9 @@ window.vocabN2_Verbs = [
       "tags": [
         "politik-masyarakat",
         "ekonomi-keuangan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ハンパツ￣"}
+},
     {
       "jp": "新しい規則に反発する社員が多かった。",
       "id": "Banyak karyawan yang menolak keras aturan baru.",
@@ -4033,8 +4060,9 @@ window.vocabN2_Verbs = [
       "level": "n2",
       "tags": [
         "politik-masyarakat"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ハンパツ￣"}
+},
     {
       "jp": "利害の対立から交渉が難航した。",
       "id": "Negosiasi menemui hambatan karena pertentangan kepentingan.",
@@ -4094,8 +4122,9 @@ window.vocabN2_Verbs = [
       "level": "n2",
       "tags": [
         "politik-masyarakat"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"キョウリョク￣"}
+},
     {
       "jp": "ご協力いただきありがとうございます。",
       "id": "Terima kasih atas kerja sama Anda.",
@@ -4168,8 +4197,9 @@ window.vocabN2_Verbs = [
       "level": "n2",
       "tags": [
         "politik-masyarakat"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"キョウリョク￣"}
+},
     {
       "jp": "産学連携によって革新的な技術が生まれた。",
       "id": "Koordinasi antara industri dan akademi menghasilkan teknologi inovatif.",
@@ -4243,8 +4273,9 @@ window.vocabN2_Verbs = [
       "level": "n2",
       "tags": [
         "politik-masyarakat"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"トウゴウ￣"}
+},
     {
       "jp": "二つのシステムを統合する作業が進んでいる。",
       "id": "Pekerjaan untuk mengintegrasikan dua sistem sedang berlangsung.",
@@ -4302,8 +4333,9 @@ window.vocabN2_Verbs = [
       "level": "n2",
       "tags": [
         "politik-masyarakat"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ブンダン￣"}
+},
     {
       "jp": "戦争は国を二つに分断した。",
       "id": "Perang membelah negara menjadi dua.",
@@ -4361,8 +4393,9 @@ window.vocabN2_Verbs = [
       "level": "n2",
       "tags": [
         "politik-masyarakat"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"カイカク￣"}
+},
     {
       "jp": "教育改革によって授業のスタイルが変わった。",
       "id": "Gaya pengajaran berubah karena reformasi pendidikan.",
@@ -4419,8 +4452,9 @@ window.vocabN2_Verbs = [
       "tags": [
         "hukum-aturan",
         "politik-masyarakat"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ハイシ￣"}
+},
     {
       "jp": "旧来の法律が廃止された。",
       "id": "Undang-undang lama telah dihapus.",
@@ -4478,8 +4512,9 @@ window.vocabN2_Verbs = [
       "tags": [
         "teknologi",
         "bisnis"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ドウニュウ￣"}
+},
     {
       "jp": "新しい税制が来年から導入される。",
       "id": "Sistem perpajakan baru akan diterapkan mulai tahun depan.",
@@ -4551,8 +4586,9 @@ window.vocabN2_Verbs = [
       "level": "n2",
       "tags": [
         "politik-masyarakat"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"シ＼ンギ"}
+},
     {
       "jp": "国会で憲法改正について活発な議論が続いた。",
       "id": "Perdebatan aktif mengenai amandemen konstitusi berlangsung di parlemen.",
@@ -4611,8 +4647,9 @@ window.vocabN2_Verbs = [
       "tags": [
         "politik-masyarakat",
         "ekonomi-keuangan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"ゴ＼ウイ"}
+},
     {
       "jp": "長い交渉の末、ようやく合意に達した。",
       "id": "Setelah negosiasi panjang, akhirnya kesepakatan tercapai.",
@@ -4640,8 +4677,6 @@ window.vocabN2_Verbs = [
   "jmdict_seq": "1284550",
   "frequency": 500
 },
-
-
 
 {
   "id": "vg-n2-00187",
@@ -4673,8 +4708,9 @@ window.vocabN2_Verbs = [
       "tags": [
         "politik-masyarakat",
         "hukum-aturan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ショメイ￣"}
+},
     {
       "jp": "廃止を求める署名活動に10万人が参加した。",
       "id": "Seratus ribu orang berpartisipasi dalam kampanye tanda tangan yang menuntut penghapusan.",
@@ -4730,8 +4766,9 @@ window.vocabN2_Verbs = [
       "level": "n2",
       "tags": [
         "politik-masyarakat"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"トウヒョウ￣"}
+},
     {
       "jp": "投票率の低下が民主主義の課題となっている。",
       "id": "Rendahnya tingkat partisipasi pemilih menjadi tantangan bagi demokrasi.",
@@ -4787,8 +4824,9 @@ window.vocabN2_Verbs = [
       "level": "n2",
       "tags": [
         "politik-masyarakat"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ダイヒョウ￣"}
+},
     {
       "jp": "会議に日本代表団が参加した。",
       "id": "Delegasi Jepang berpartisipasi dalam konferensi.",
@@ -4950,8 +4988,9 @@ window.vocabN2_Verbs = [
       "tags": [
         "ilmu-pengetahuan",
         "alam-lingkungan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ロンジル￣"}
+},
     {
       "jp": "教授は経済格差の原因を詳細に<b>論じた</b>。",
       "id": "Profesor tersebut mengulas secara rinci penyebab kesenjangan ekonomi.",
@@ -6080,8 +6119,9 @@ window.vocabN2_Verbs = [
       "tags": [
         "kesehatan",
         "bahasa-komunikasi"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ウナガス￣"}
+},
     {
       "jp": "上司の言葉が私の成長を<b>促した</b>。",
       "id": "Kata-kata atasan mendorong pertumbuhan saya.",
@@ -6164,8 +6204,9 @@ window.vocabN2_Verbs = [
       "tags": [
         "bisnis",
         "politik-masyarakat"
-      ]
-    },
+      ],
+  "pitch": {"pattern":4,"category":"nakadaka","mora_count":5,"downstep_mora":4,"contour":"サマタゲ＼ル"}
+},
     {
       "jp": "雨が試合の進行を<b>妨げた</b>。",
       "id": "Hujan mengganggu jalannya pertandingan.",
@@ -6373,8 +6414,9 @@ window.vocabN2_Verbs = [
       "tags": [
         "bisnis",
         "keputusan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ミナオス￣"}
+},
     {
       "jp": "新しいデータをもとに計画を<b>見直した</b>。",
       "id": "Rencana ditinjau ulang berdasarkan data baru.",
@@ -6473,8 +6515,9 @@ window.vocabN2_Verbs = [
       "tags": [
         "hukum-aturan",
         "perjalanan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ミナオス￣"}
+},
     {
       "jp": "この薬は副作用を<b>引き起こす</b>可能性がある。",
       "id": "Obat ini berpotensi menimbulkan efek samping.",
@@ -6607,8 +6650,9 @@ window.vocabN2_Verbs = [
       "tags": [
         "karakter",
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":4,"category":"nakadaka","mora_count":5,"downstep_mora":4,"contour":"ヒキオコ＼ス"}
+},
     {
       "jp": "チーム全員で力を合わせて危機を<b>乗り越えた</b>。",
       "id": "Seluruh tim bersatu untuk mengatasi krisis bersama.",
@@ -6710,8 +6754,9 @@ window.vocabN2_Verbs = [
       "tags": [
         "bisnis",
         "keputusan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":4,"category":"nakadaka","mora_count":5,"downstep_mora":4,"contour":"ノリコエ＼ル"}
+},
     {
       "jp": "現状を<b>踏まえた</b>上で政策を議論すべきだ。",
       "id": "Kebijakan seharusnya didiskusikan dengan mempertimbangkan situasi saat ini.",
@@ -6790,8 +6835,9 @@ window.vocabN2_Verbs = [
       "tags": [
         "politik-masyarakat",
         "hukum-aturan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"マキコ＼ム"}
+},
     {
       "jp": "自分の問題に他の人を<b>巻き込む</b>のは避けてほしい。",
       "id": "Mohon hindari menyeret orang lain ke dalam masalahmu sendiri.",
@@ -6904,8 +6950,9 @@ window.vocabN2_Verbs = [
       "tags": [
         "pekerjaan",
         "bisnis"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"マキコ＼ム"}
+},
     {
       "jp": "友人の代わりに仕事を<b>引き受けた</b>。",
       "id": "Saya mengambil alih pekerjaan menggantikan teman.",
@@ -7019,8 +7066,9 @@ window.vocabN2_Verbs = [
       "tags": [
         "pekerjaan",
         "karakter"
-      ]
-    },
+      ],
+  "pitch": {"pattern":4,"category":"nakadaka","mora_count":5,"downstep_mora":4,"contour":"ヒキウケ＼ル"}
+},
     {
       "jp": "何かご不明な点があれば、いつでも<b>申し出て</b>ください。",
       "id": "Jika ada yang tidak jelas, silakan ajukan pertanyaan kapan saja.",
@@ -7099,8 +7147,9 @@ window.vocabN2_Verbs = [
       "tags": [
         "pendidikan",
         "karakter"
-      ]
-    },
+      ],
+  "pitch": {"pattern":4,"category":"nakadaka","mora_count":5,"downstep_mora":4,"contour":"モウシデ＼ル"}
+},
     {
       "jp": "チームは優勝を<b>目指して</b>練習を重ねた。",
       "id": "Tim berlatih tanpa henti dengan tujuan meraih juara.",
@@ -7197,8 +7246,9 @@ window.vocabN2_Verbs = [
       "tags": [
         "pekerjaan",
         "bisnis"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"メザ＼ス"}
+},
     {
       "jp": "若者は日本の未来を<b>担う</b>存在だ。",
       "id": "Kaum muda adalah generasi yang memikul masa depan Jepang.",
@@ -7296,8 +7346,9 @@ window.vocabN2_Verbs = [
       "level": "n2",
       "tags": [
         "hukum-aturan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"ニナ＼ウ"}
+},
     {
       "jp": "民事<b>裁判</b>と刑事<b>裁判</b>では手続きや立証責任が異なる。",
       "id": "Prosedur dan beban pembuktian dalam persidangan perdata dan pidana berbeda.",
@@ -7352,8 +7403,9 @@ window.vocabN2_Verbs = [
       "tags": [
         "hukum-aturan",
         "bisnis"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ソショウ￣"}
+},
     {
       "jp": "<b>訴訟</b>費用は双方にとって大きな経済的負担となった。",
       "id": "Biaya litigasi menjadi beban ekonomi yang besar bagi kedua pihak.",
@@ -7412,8 +7464,9 @@ window.vocabN2_Verbs = [
       "tags": [
         "politik-masyarakat",
         "ekonomi-keuangan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"キョウテイ￣"}
+},
     {
       "jp": "労使<b>協定</b>に基づいて残業時間の上限が設けられた。",
       "id": "Batas atas jam lembur ditetapkan berdasarkan perjanjian antara manajemen dan karyawan.",
@@ -7469,8 +7522,9 @@ window.vocabN2_Verbs = [
       "tags": [
         "ekonomi-keuangan",
         "bisnis"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"ユ＼ウシ"}
+},
     {
       "jp": "<b>融資</b>を受けるためには、詳細な事業計画書と財務諸表が必要だ。",
       "id": "Untuk mendapatkan pinjaman, diperlukan rencana bisnis terperinci dan laporan keuangan.",
@@ -7528,8 +7582,9 @@ window.vocabN2_Verbs = [
       "tags": [
         "media",
         "alam-lingkungan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ホウドウ￣"}
+},
     {
       "jp": "<b>報道</b>の自由は民主主義社会の根幹をなす重要な権利だ。",
       "id": "Kebebasan pers adalah hak penting yang menjadi pilar utama masyarakat demokratis.",
@@ -7597,8 +7652,9 @@ window.vocabN2_Verbs = [
       "tags": [
         "politik-masyarakat",
         "hukum-aturan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ホウドウ￣"}
+},
     {
       "jp": "人種や性別による<b>差別</b>は許されるべきではない。",
       "id": "Diskriminasi berdasarkan ras atau jenis kelamin tidak boleh ditoleransi.",
@@ -7676,8 +7732,9 @@ window.vocabN2_Verbs = [
       "tags": [
         "politik-masyarakat",
         "budaya"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"キョウソン￣"}
+},
     {
       "jp": "人間と自然が<b>共存</b>するための知恵が求められている。",
       "id": "Diperlukan kearifan agar manusia dan alam bisa hidup berdampingan.",
@@ -7735,8 +7792,9 @@ window.vocabN2_Verbs = [
       "tags": [
         "emosi-sosial",
         "politik-masyarakat"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"レンタイ￣"}
+},
     {
       "jp": "国際社会の<b>連帯</b>なしに、地球規模の問題は解決できない。",
       "id": "Tanpa solidaritas komunitas internasional, masalah berskala global tidak bisa diselesaikan.",
@@ -7805,8 +7863,9 @@ window.vocabN2_Verbs = [
       "tags": [
         "konsep-jepang",
         "sopan-santun"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ケンソン￣"}
+},
     {
       "jp": "日本では自分の料理を「たいしたものではないですが」と言って出すのが<b>謙遜</b>の表れだ。",
       "id": "Di Jepang, menyajikan masakan sambil berkata 'ini bukan apa-apa' adalah bentuk ungkapan kerendahan hati.",
@@ -7858,19 +7917,52 @@ window.vocabN2_Verbs = [
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
-  "domain": ["pikiran-opini", "bahasa-komunikasi"],
+  "domain": [
+    "pikiran-opini",
+    "bahasa-komunikasi"
+  ],
   "register": "formal",
-  "lawan_bicara": ["rekan", "umum"],
+  "lawan_bicara": [
+    "rekan",
+    "umum"
+  ],
   "nuance": "Berbeda dari 気づく (kizuku) yang bersifat spontan dan intuitif — 認識する lebih formal dan kognitif, menekankan pemahaman atau penerimaan suatu fakta secara sadar dan konseptual. Sering digunakan dalam konteks ilmiah, manajemen, atau pernyataan resmi.",
   "conj_type": "suru",
   "examples": [
-    {"jp": "私たちは問題の深刻さを<b>認識する</b>必要がある。", "id": "Kita perlu menyadari betapa seriusnya masalah ini.", "level": "n2", "tags": ["pikiran-opini"]},
-    {"jp": "彼は自分のミスを<b>認識して</b>いなかった。", "id": "Dia tidak menyadari kesalahannya sendiri.", "level": "n2", "tags": ["pikiran-opini"]},
-    {"jp": "このシステムは顔を<b>認識する</b>機能がある。", "id": "Sistem ini memiliki fitur untuk mengidentifikasi wajah.", "level": "n2", "tags": ["teknologi"]}
+    {
+      "jp": "私たちは問題の深刻さを<b>認識する</b>必要がある。",
+      "id": "Kita perlu menyadari betapa seriusnya masalah ini.",
+      "level": "n2",
+      "tags": [
+        "pikiran-opini"
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ケンソン￣"}
+},
+    {
+      "jp": "彼は自分のミスを<b>認識して</b>いなかった。",
+      "id": "Dia tidak menyadari kesalahannya sendiri.",
+      "level": "n2",
+      "tags": [
+        "pikiran-opini"
+      ]
+    },
+    {
+      "jp": "このシステムは顔を<b>認識する</b>機能がある。",
+      "id": "Sistem ini memiliki fitur untuk mengidentifikasi wajah.",
+      "level": "n2",
+      "tags": [
+        "teknologi"
+      ]
+    }
   ],
-  "synonyms": ["気づく", "理解する"],
+  "synonyms": [
+    "気づく",
+    "理解する"
+  ],
   "antonyms": [],
-  "see_also": ["把握する"],
+  "see_also": [
+    "把握する"
+  ],
   "provenance": "jlpt-corpus",
   "added_v": "v15"
 },
@@ -7887,19 +7979,53 @@ window.vocabN2_Verbs = [
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
-  "domain": ["pikiran-opini", "bisnis", "pekerjaan"],
+  "domain": [
+    "pikiran-opini",
+    "bisnis",
+    "pekerjaan"
+  ],
   "register": "formal",
-  "lawan_bicara": ["rekan"],
+  "lawan_bicara": [
+    "rekan"
+  ],
   "nuance": "Lebih kuat dan aktif dari 理解する (rikai suru) — 把握する menekankan pemahaman menyeluruh dan menguasai situasi secara penuh, bukan sekadar mengerti. Sangat umum dalam konteks manajerial: 状況を把握する = 'menguasai situasi'.",
   "conj_type": "suru",
   "examples": [
-    {"jp": "現場の状況をしっかり<b>把握して</b>から報告してください。", "id": "Tolong pahami situasi lapangan secara menyeluruh sebelum melapor.", "level": "n2", "tags": ["bisnis", "pekerjaan"]},
-    {"jp": "全体像を<b>把握する</b>のに時間がかかった。", "id": "Butuh waktu untuk memahami gambaran keseluruhannya.", "level": "n2", "tags": ["pikiran-opini"]},
-    {"jp": "リーダーは常にチームの動きを<b>把握する</b>べきだ。", "id": "Seorang pemimpin harus selalu menguasai pergerakan timnya.", "level": "n2", "tags": ["bisnis"]}
+    {
+      "jp": "現場の状況をしっかり<b>把握して</b>から報告してください。",
+      "id": "Tolong pahami situasi lapangan secara menyeluruh sebelum melapor.",
+      "level": "n2",
+      "tags": [
+        "bisnis",
+        "pekerjaan"
+      ]
+    },
+    {
+      "jp": "全体像を<b>把握する</b>のに時間がかかった。",
+      "id": "Butuh waktu untuk memahami gambaran keseluruhannya.",
+      "level": "n2",
+      "tags": [
+        "pikiran-opini"
+      ]
+    },
+    {
+      "jp": "リーダーは常にチームの動きを<b>把握する</b>べきだ。",
+      "id": "Seorang pemimpin harus selalu menguasai pergerakan timnya.",
+      "level": "n2",
+      "tags": [
+        "bisnis"
+      ]
+    }
   ],
-  "synonyms": ["理解する", "掌握する"],
+  "synonyms": [
+    "理解する",
+    "掌握する"
+  ],
   "antonyms": [],
-  "see_also": ["認識する", "判断する"],
+  "see_also": [
+    "認識する",
+    "判断する"
+  ],
   "provenance": "jlpt-corpus",
   "added_v": "v15"
 },
@@ -7916,19 +8042,53 @@ window.vocabN2_Verbs = [
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
-  "domain": ["keputusan", "bisnis", "hukum-aturan"],
+  "domain": [
+    "keputusan",
+    "bisnis",
+    "hukum-aturan"
+  ],
   "register": "formal",
-  "lawan_bicara": ["rekan", "umum"],
+  "lawan_bicara": [
+    "rekan",
+    "umum"
+  ],
   "nuance": "Berbeda dari 決める (kimeru = memutuskan) yang lebih sederhana — 判断する menekankan proses evaluasi dan pertimbangan rasional sebelum mengambil keputusan. Lebih berat secara kognitif dan sering dipakai dalam situasi profesional, hukum, atau medis.",
   "conj_type": "suru",
   "examples": [
-    {"jp": "医師は患者の症状を見て適切な治療法を<b>判断した</b>。", "id": "Dokter menilai gejala pasien dan memutuskan pengobatan yang tepat.", "level": "n2", "tags": ["kesehatan"]},
-    {"jp": "状況を正しく<b>判断する</b>力が必要だ。", "id": "Kita perlu kemampuan untuk menilai situasi dengan tepat.", "level": "n2", "tags": ["keputusan"]},
-    {"jp": "それは個人が<b>判断する</b>べきことだ。", "id": "Itu adalah hal yang harus diputuskan oleh individu masing-masing.", "level": "n2", "tags": ["keputusan"]}
+    {
+      "jp": "医師は患者の症状を見て適切な治療法を<b>判断した</b>。",
+      "id": "Dokter menilai gejala pasien dan memutuskan pengobatan yang tepat.",
+      "level": "n2",
+      "tags": [
+        "kesehatan"
+      ]
+    },
+    {
+      "jp": "状況を正しく<b>判断する</b>力が必要だ。",
+      "id": "Kita perlu kemampuan untuk menilai situasi dengan tepat.",
+      "level": "n2",
+      "tags": [
+        "keputusan"
+      ]
+    },
+    {
+      "jp": "それは個人が<b>判断する</b>べきことだ。",
+      "id": "Itu adalah hal yang harus diputuskan oleh individu masing-masing.",
+      "level": "n2",
+      "tags": [
+        "keputusan"
+      ]
+    }
   ],
-  "synonyms": ["決める", "評価する"],
+  "synonyms": [
+    "決める",
+    "評価する"
+  ],
   "antonyms": [],
-  "see_also": ["評価する", "検討する"],
+  "see_also": [
+    "評価する",
+    "検討する"
+  ],
   "provenance": "jlpt-corpus",
   "added_v": "v15"
 },
@@ -7945,19 +8105,55 @@ window.vocabN2_Verbs = [
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
-  "domain": ["bisnis", "pendidikan", "pikiran-opini"],
+  "domain": [
+    "bisnis",
+    "pendidikan",
+    "pikiran-opini"
+  ],
   "register": "formal",
-  "lawan_bicara": ["rekan", "umum"],
+  "lawan_bicara": [
+    "rekan",
+    "umum"
+  ],
   "nuance": "Berbeda dari 判断する — 評価する fokus pada penilaian kualitas, kinerja, atau nilai suatu objek atau orang secara sistematis, sedangkan 判断する lebih ke keputusan umum. 高く評価する = 'menilai tinggi = menghargai', bisa bermakna positif atau negatif.",
   "conj_type": "suru",
   "examples": [
-    {"jp": "彼女の研究は国際的に高く<b>評価されて</b>いる。", "id": "Penelitiannya dihargai tinggi secara internasional.", "level": "n2", "tags": ["pendidikan", "ilmu-pengetahuan"]},
-    {"jp": "上司は部下の仕事を定期的に<b>評価する</b>。", "id": "Atasan mengevaluasi pekerjaan bawahannya secara berkala.", "level": "n2", "tags": ["bisnis", "pekerjaan"]},
-    {"jp": "このシステムのリスクを正確に<b>評価する</b>必要がある。", "id": "Kita perlu menilai risiko sistem ini secara akurat.", "level": "n2", "tags": ["bisnis"]}
+    {
+      "jp": "彼女の研究は国際的に高く<b>評価されて</b>いる。",
+      "id": "Penelitiannya dihargai tinggi secara internasional.",
+      "level": "n2",
+      "tags": [
+        "pendidikan",
+        "ilmu-pengetahuan"
+      ]
+    },
+    {
+      "jp": "上司は部下の仕事を定期的に<b>評価する</b>。",
+      "id": "Atasan mengevaluasi pekerjaan bawahannya secara berkala.",
+      "level": "n2",
+      "tags": [
+        "bisnis",
+        "pekerjaan"
+      ]
+    },
+    {
+      "jp": "このシステムのリスクを正確に<b>評価する</b>必要がある。",
+      "id": "Kita perlu menilai risiko sistem ini secara akurat.",
+      "level": "n2",
+      "tags": [
+        "bisnis"
+      ]
+    }
   ],
-  "synonyms": ["査定する", "鑑定する"],
+  "synonyms": [
+    "査定する",
+    "鑑定する"
+  ],
   "antonyms": [],
-  "see_also": ["判断する", "分析する"],
+  "see_also": [
+    "判断する",
+    "分析する"
+  ],
   "provenance": "jlpt-corpus",
   "added_v": "v15"
 },
@@ -7974,19 +8170,54 @@ window.vocabN2_Verbs = [
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
-  "domain": ["pikiran-opini", "ilmu-pengetahuan", "bahasa-komunikasi"],
+  "domain": [
+    "pikiran-opini",
+    "ilmu-pengetahuan",
+    "bahasa-komunikasi"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["rekan", "umum"],
+  "lawan_bicara": [
+    "rekan",
+    "umum"
+  ],
   "nuance": "Lebih formal dari 比べる (kuraberu) — 比較する sering digunakan dalam tulisan akademik, presentasi bisnis, atau analisis terstruktur. 比べる lebih kasual dan bisa digunakan sehari-hari. 比較的 = 'secara relatif/komparatif' adalah turunan adverbia yang sangat umum.",
   "conj_type": "suru",
   "examples": [
-    {"jp": "二つの製品を<b>比較する</b>と、価格に大きな差がある。", "id": "Ketika membandingkan kedua produk, ada perbedaan harga yang besar.", "level": "n2", "tags": ["bisnis", "belanja"]},
-    {"jp": "昨年と今年のデータを<b>比較して</b>傾向を分析した。", "id": "Kami membandingkan data tahun lalu dan tahun ini untuk menganalisis tren.", "level": "n2", "tags": ["ilmu-pengetahuan", "bisnis"]},
-    {"jp": "他国の制度と<b>比較する</b>ことで問題点が見えてくる。", "id": "Dengan membandingkan sistem negara lain, kita bisa melihat titik-titik masalahnya.", "level": "n2", "tags": ["politik-masyarakat"]}
+    {
+      "jp": "二つの製品を<b>比較する</b>と、価格に大きな差がある。",
+      "id": "Ketika membandingkan kedua produk, ada perbedaan harga yang besar.",
+      "level": "n2",
+      "tags": [
+        "bisnis",
+        "belanja"
+      ]
+    },
+    {
+      "jp": "昨年と今年のデータを<b>比較して</b>傾向を分析した。",
+      "id": "Kami membandingkan data tahun lalu dan tahun ini untuk menganalisis tren.",
+      "level": "n2",
+      "tags": [
+        "ilmu-pengetahuan",
+        "bisnis"
+      ]
+    },
+    {
+      "jp": "他国の制度と<b>比較する</b>ことで問題点が見えてくる。",
+      "id": "Dengan membandingkan sistem negara lain, kita bisa melihat titik-titik masalahnya.",
+      "level": "n2",
+      "tags": [
+        "politik-masyarakat"
+      ]
+    }
   ],
-  "synonyms": ["比べる"],
+  "synonyms": [
+    "比べる"
+  ],
   "antonyms": [],
-  "see_also": ["区別する", "分析する"],
+  "see_also": [
+    "区別する",
+    "分析する"
+  ],
   "provenance": "jlpt-corpus",
   "added_v": "v15"
 },
@@ -8003,19 +8234,55 @@ window.vocabN2_Verbs = [
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
-  "domain": ["pikiran-opini", "bahasa-komunikasi"],
+  "domain": [
+    "pikiran-opini",
+    "bahasa-komunikasi"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["rekan", "umum"],
+  "lawan_bicara": [
+    "rekan",
+    "umum"
+  ],
   "nuance": "Berbeda dari 分ける (wakeru = memisahkan secara fisik) — 区別する menekankan pembedaan konseptual atau kategorisasi berdasarkan ciri dan karakteristik. 差別する (sabetsu suru) adalah kata yang serupa secara bunyi tetapi bermakna negatif (mendiskriminasi).",
   "conj_type": "suru",
   "examples": [
-    {"jp": "公私を<b>区別する</b>ことが社会人として重要だ。", "id": "Membedakan urusan publik dan pribadi adalah hal penting sebagai orang dewasa bekerja.", "level": "n2", "tags": ["pekerjaan", "bisnis"]},
-    {"jp": "この二つの概念を明確に<b>区別する</b>必要がある。", "id": "Kita perlu membedakan kedua konsep ini dengan jelas.", "level": "n2", "tags": ["bahasa-komunikasi", "pikiran-opini"]},
-    {"jp": "色覚異常があると赤と緑を<b>区別する</b>のが難しい。", "id": "Penderita buta warna sulit membedakan merah dan hijau.", "level": "n2", "tags": ["kesehatan"]}
+    {
+      "jp": "公私を<b>区別する</b>ことが社会人として重要だ。",
+      "id": "Membedakan urusan publik dan pribadi adalah hal penting sebagai orang dewasa bekerja.",
+      "level": "n2",
+      "tags": [
+        "pekerjaan",
+        "bisnis"
+      ]
+    },
+    {
+      "jp": "この二つの概念を明確に<b>区別する</b>必要がある。",
+      "id": "Kita perlu membedakan kedua konsep ini dengan jelas.",
+      "level": "n2",
+      "tags": [
+        "bahasa-komunikasi",
+        "pikiran-opini"
+      ]
+    },
+    {
+      "jp": "色覚異常があると赤と緑を<b>区別する</b>のが難しい。",
+      "id": "Penderita buta warna sulit membedakan merah dan hijau.",
+      "level": "n2",
+      "tags": [
+        "kesehatan"
+      ]
+    }
   ],
-  "synonyms": ["識別する", "見分ける"],
-  "antonyms": ["混同する"],
-  "see_also": ["比較する"],
+  "synonyms": [
+    "識別する",
+    "見分ける"
+  ],
+  "antonyms": [
+    "混同する"
+  ],
+  "see_also": [
+    "比較する"
+  ],
   "provenance": "jlpt-corpus",
   "added_v": "v15"
 },
@@ -8032,19 +8299,52 @@ window.vocabN2_Verbs = [
   "common": true,
   "related_grammar": [],
   "formalitas": 4,
-  "domain": ["ilmu-pengetahuan", "bisnis", "pikiran-opini"],
+  "domain": [
+    "ilmu-pengetahuan",
+    "bisnis",
+    "pikiran-opini"
+  ],
   "register": "formal",
-  "lawan_bicara": ["rekan"],
+  "lawan_bicara": [
+    "rekan"
+  ],
   "nuance": "Lebih mendalam dan terstruktur dari 調べる (shiraberu = meneliti) — 分析する menunjukkan proses pemecahan sesuatu menjadi komponen-komponen untuk dipahami secara sistematis. Umumnya digunakan dalam konteks akademik, riset, dan profesional.",
   "conj_type": "suru",
   "examples": [
-    {"jp": "市場のデータを<b>分析する</b>と消費者の傾向がわかる。", "id": "Dengan menganalisis data pasar, kita bisa memahami tren konsumen.", "level": "n2", "tags": ["bisnis"]},
-    {"jp": "研究者は実験結果を詳しく<b>分析した</b>。", "id": "Para peneliti menganalisis hasil eksperimen secara mendetail.", "level": "n2", "tags": ["ilmu-pengetahuan"]},
-    {"jp": "失敗の原因を<b>分析する</b>ことで次に活かせる。", "id": "Dengan menganalisis penyebab kegagalan, kita bisa memanfaatkannya untuk ke depan.", "level": "n2", "tags": ["bisnis", "pikiran-opini"]}
+    {
+      "jp": "市場のデータを<b>分析する</b>と消費者の傾向がわかる。",
+      "id": "Dengan menganalisis data pasar, kita bisa memahami tren konsumen.",
+      "level": "n2",
+      "tags": [
+        "bisnis"
+      ]
+    },
+    {
+      "jp": "研究者は実験結果を詳しく<b>分析した</b>。",
+      "id": "Para peneliti menganalisis hasil eksperimen secara mendetail.",
+      "level": "n2",
+      "tags": [
+        "ilmu-pengetahuan"
+      ]
+    },
+    {
+      "jp": "失敗の原因を<b>分析する</b>ことで次に活かせる。",
+      "id": "Dengan menganalisis penyebab kegagalan, kita bisa memanfaatkannya untuk ke depan.",
+      "level": "n2",
+      "tags": [
+        "bisnis",
+        "pikiran-opini"
+      ]
+    }
   ],
-  "synonyms": ["解析する"],
+  "synonyms": [
+    "解析する"
+  ],
   "antonyms": [],
-  "see_also": ["評価する", "解釈する"],
+  "see_also": [
+    "評価する",
+    "解釈する"
+  ],
   "provenance": "jlpt-corpus",
   "added_v": "v15"
 },
@@ -8061,19 +8361,52 @@ window.vocabN2_Verbs = [
   "common": true,
   "related_grammar": [],
   "formalitas": 4,
-  "domain": ["bahasa-komunikasi", "hukum-aturan", "pikiran-opini"],
+  "domain": [
+    "bahasa-komunikasi",
+    "hukum-aturan",
+    "pikiran-opini"
+  ],
   "register": "formal",
-  "lawan_bicara": ["rekan"],
+  "lawan_bicara": [
+    "rekan"
+  ],
   "nuance": "Berbeda dari 理解する (rikai suru) — 解釈する menekankan proses penafsiran terhadap sesuatu yang ambigu, kompleks, atau terbuka untuk berbagai sudut pandang (hukum, teks sastra, perilaku). Hasilnya bisa berbeda antara satu orang dengan orang lain.",
   "conj_type": "suru",
   "examples": [
-    {"jp": "この法律をどう<b>解釈する</b>かは専門家でも意見が分かれる。", "id": "Bahkan para ahli pun berbeda pendapat dalam menafsirkan undang-undang ini.", "level": "n2", "tags": ["hukum-aturan"]},
-    {"jp": "彼の言葉を好意的に<b>解釈する</b>と、謝罪の意図があったようだ。", "id": "Jika kita menafsirkan kata-katanya secara positif, sepertinya ada maksud untuk minta maaf.", "level": "n2", "tags": ["bahasa-komunikasi"]},
-    {"jp": "詩の意味を自由に<b>解釈する</b>のが文学鑑賞の醍醐味だ。", "id": "Menafsirkan makna puisi secara bebas adalah inti dari apresiasi sastra.", "level": "n2", "tags": ["sastra"]}
+    {
+      "jp": "この法律をどう<b>解釈する</b>かは専門家でも意見が分かれる。",
+      "id": "Bahkan para ahli pun berbeda pendapat dalam menafsirkan undang-undang ini.",
+      "level": "n2",
+      "tags": [
+        "hukum-aturan"
+      ]
+    },
+    {
+      "jp": "彼の言葉を好意的に<b>解釈する</b>と、謝罪の意図があったようだ。",
+      "id": "Jika kita menafsirkan kata-katanya secara positif, sepertinya ada maksud untuk minta maaf.",
+      "level": "n2",
+      "tags": [
+        "bahasa-komunikasi"
+      ]
+    },
+    {
+      "jp": "詩の意味を自由に<b>解釈する</b>のが文学鑑賞の醍醐味だ。",
+      "id": "Menafsirkan makna puisi secara bebas adalah inti dari apresiasi sastra.",
+      "level": "n2",
+      "tags": [
+        "sastra"
+      ]
+    }
   ],
-  "synonyms": ["解読する", "読み解く"],
+  "synonyms": [
+    "解読する",
+    "読み解く"
+  ],
   "antonyms": [],
-  "see_also": ["分析する", "証明する"],
+  "see_also": [
+    "分析する",
+    "証明する"
+  ],
   "provenance": "jlpt-corpus",
   "added_v": "v15"
 },
@@ -8090,19 +8423,55 @@ window.vocabN2_Verbs = [
   "common": true,
   "related_grammar": [],
   "formalitas": 4,
-  "domain": ["hukum-aturan", "ilmu-pengetahuan", "bahasa-komunikasi"],
+  "domain": [
+    "hukum-aturan",
+    "ilmu-pengetahuan",
+    "bahasa-komunikasi"
+  ],
   "register": "formal",
-  "lawan_bicara": ["rekan", "umum"],
+  "lawan_bicara": [
+    "rekan",
+    "umum"
+  ],
   "nuance": "Berbeda dari 説明する (setsumei suru = menjelaskan) — 証明する menekankan pembuktian kebenaran secara formal melalui bukti, data, logika, atau dokumen resmi. Dalam kehidupan sehari-hari juga digunakan untuk sertifikasi: 身分を証明する = 'membuktikan identitas'.",
   "conj_type": "suru",
   "examples": [
-    {"jp": "科学者はその仮説を実験で<b>証明した</b>。", "id": "Para ilmuwan membuktikan hipotesis tersebut melalui eksperimen.", "level": "n2", "tags": ["ilmu-pengetahuan"]},
-    {"jp": "無実を<b>証明する</b>ために弁護士を雇った。", "id": "Dia menyewa pengacara untuk membuktikan tidak bersalah.", "level": "n2", "tags": ["hukum-aturan"]},
-    {"jp": "パスポートで身分を<b>証明する</b>必要がある。", "id": "Kita perlu membuktikan identitas dengan paspor.", "level": "n2", "tags": ["perjalanan", "hukum-aturan"]}
+    {
+      "jp": "科学者はその仮説を実験で<b>証明した</b>。",
+      "id": "Para ilmuwan membuktikan hipotesis tersebut melalui eksperimen.",
+      "level": "n2",
+      "tags": [
+        "ilmu-pengetahuan"
+      ]
+    },
+    {
+      "jp": "無実を<b>証明する</b>ために弁護士を雇った。",
+      "id": "Dia menyewa pengacara untuk membuktikan tidak bersalah.",
+      "level": "n2",
+      "tags": [
+        "hukum-aturan"
+      ]
+    },
+    {
+      "jp": "パスポートで身分を<b>証明する</b>必要がある。",
+      "id": "Kita perlu membuktikan identitas dengan paspor.",
+      "level": "n2",
+      "tags": [
+        "perjalanan",
+        "hukum-aturan"
+      ]
+    }
   ],
-  "synonyms": ["立証する"],
-  "antonyms": ["反証する"],
-  "see_also": ["反論する", "主張する"],
+  "synonyms": [
+    "立証する"
+  ],
+  "antonyms": [
+    "反証する"
+  ],
+  "see_also": [
+    "反論する",
+    "主張する"
+  ],
   "provenance": "jlpt-corpus",
   "added_v": "v15"
 },
@@ -8119,19 +8488,56 @@ window.vocabN2_Verbs = [
   "common": true,
   "related_grammar": [],
   "formalitas": 4,
-  "domain": ["bahasa-komunikasi", "pikiran-opini", "hukum-aturan"],
+  "domain": [
+    "bahasa-komunikasi",
+    "pikiran-opini",
+    "hukum-aturan"
+  ],
   "register": "formal",
-  "lawan_bicara": ["rekan"],
+  "lawan_bicara": [
+    "rekan"
+  ],
   "nuance": "Lebih formal dan spesifik dari 反対する (hantai suru = menentang) — 反論する secara khusus berarti merespons argumen orang lain dengan argumen balasan yang logis. Digunakan dalam debat, diskusi akademik, atau persidangan, bukan sekadar menyatakan ketidaksetujuan.",
   "conj_type": "suru",
   "examples": [
-    {"jp": "彼は証拠を示して相手の主張に<b>反論した</b>。", "id": "Dia menunjukkan bukti dan membantah klaim lawan bicaranya.", "level": "n2", "tags": ["hukum-aturan", "bahasa-komunikasi"]},
-    {"jp": "教授の意見に対して学生が鋭く<b>反論した</b>。", "id": "Seorang mahasiswa membantah dengan tajam terhadap pendapat dosen.", "level": "n2", "tags": ["pendidikan"]},
-    {"jp": "この批判には明確に<b>反論する</b>必要がある。", "id": "Kritik ini perlu dibantah dengan jelas.", "level": "n2", "tags": ["pikiran-opini"]}
+    {
+      "jp": "彼は証拠を示して相手の主張に<b>反論した</b>。",
+      "id": "Dia menunjukkan bukti dan membantah klaim lawan bicaranya.",
+      "level": "n2",
+      "tags": [
+        "hukum-aturan",
+        "bahasa-komunikasi"
+      ]
+    },
+    {
+      "jp": "教授の意見に対して学生が鋭く<b>反論した</b>。",
+      "id": "Seorang mahasiswa membantah dengan tajam terhadap pendapat dosen.",
+      "level": "n2",
+      "tags": [
+        "pendidikan"
+      ]
+    },
+    {
+      "jp": "この批判には明確に<b>反論する</b>必要がある。",
+      "id": "Kritik ini perlu dibantah dengan jelas.",
+      "level": "n2",
+      "tags": [
+        "pikiran-opini"
+      ]
+    }
   ],
-  "synonyms": ["反駁する", "論駁する"],
-  "antonyms": ["同意する", "賛同する"],
-  "see_also": ["主張する", "反対する"],
+  "synonyms": [
+    "反駁する",
+    "論駁する"
+  ],
+  "antonyms": [
+    "同意する",
+    "賛同する"
+  ],
+  "see_also": [
+    "主張する",
+    "反対する"
+  ],
   "provenance": "jlpt-corpus",
   "added_v": "v15"
 },
@@ -8148,19 +8554,54 @@ window.vocabN2_Verbs = [
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
-  "domain": ["bahasa-komunikasi", "pikiran-opini", "hukum-aturan"],
+  "domain": [
+    "bahasa-komunikasi",
+    "pikiran-opini",
+    "hukum-aturan"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["rekan", "umum"],
+  "lawan_bicara": [
+    "rekan",
+    "umum"
+  ],
   "nuance": "Berbeda dari 言う (iu) atau 述べる (noberu) yang netral — 主張する mengandung nuansa ketegasan dan kekukuhan dalam menyampaikan pendapat atau posisi. Ada kesan tidak mudah mundur. Dalam hukum: 無罪を主張する = 'menyatakan tidak bersalah'.",
   "conj_type": "suru",
   "examples": [
-    {"jp": "彼女は自分の無実を強く<b>主張した</b>。", "id": "Dia dengan tegas menyatakan ketidakbersalahannya.", "level": "n2", "tags": ["hukum-aturan"]},
-    {"jp": "労働者たちは賃上げを<b>主張して</b>ストライキを行った。", "id": "Para pekerja melakukan mogok kerja sambil menuntut kenaikan upah.", "level": "n2", "tags": ["pekerjaan", "politik-masyarakat"]},
-    {"jp": "専門家は環境保護の重要性を<b>主張し続けている</b>。", "id": "Para ahli terus-menerus menegaskan pentingnya perlindungan lingkungan.", "level": "n2", "tags": ["alam-lingkungan"]}
+    {
+      "jp": "彼女は自分の無実を強く<b>主張した</b>。",
+      "id": "Dia dengan tegas menyatakan ketidakbersalahannya.",
+      "level": "n2",
+      "tags": [
+        "hukum-aturan"
+      ]
+    },
+    {
+      "jp": "労働者たちは賃上げを<b>主張して</b>ストライキを行った。",
+      "id": "Para pekerja melakukan mogok kerja sambil menuntut kenaikan upah.",
+      "level": "n2",
+      "tags": [
+        "pekerjaan",
+        "politik-masyarakat"
+      ]
+    },
+    {
+      "jp": "専門家は環境保護の重要性を<b>主張し続けている</b>。",
+      "id": "Para ahli terus-menerus menegaskan pentingnya perlindungan lingkungan.",
+      "level": "n2",
+      "tags": [
+        "alam-lingkungan"
+      ]
+    }
   ],
-  "synonyms": ["訴える", "唱える"],
+  "synonyms": [
+    "訴える",
+    "唱える"
+  ],
   "antonyms": [],
-  "see_also": ["反論する", "議論する"],
+  "see_also": [
+    "反論する",
+    "議論する"
+  ],
   "provenance": "jlpt-corpus",
   "added_v": "v15"
 },
@@ -8177,19 +8618,57 @@ window.vocabN2_Verbs = [
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
-  "domain": ["bahasa-komunikasi", "bisnis", "hukum-aturan"],
+  "domain": [
+    "bahasa-komunikasi",
+    "bisnis",
+    "hukum-aturan"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["rekan", "umum"],
+  "lawan_bicara": [
+    "rekan",
+    "umum"
+  ],
   "nuance": "Berbeda dari 賛成する (sansei suru) yang lebih cenderung pada ekspresi dukungan aktif (misalnya dalam voting) — 同意する lebih luas, mencakup persetujuan terhadap ide, kondisi, atau tindakan. Dalam konteks hukum dan medis: 同意書 = 'surat persetujuan/consent form'.",
   "conj_type": "suru",
   "examples": [
-    {"jp": "彼はすべての条件に<b>同意した</b>。", "id": "Dia menyetujui semua persyaratan tersebut.", "level": "n2", "tags": ["bisnis", "hukum-aturan"]},
-    {"jp": "手術の前に患者が<b>同意する</b>ことが必要だ。", "id": "Pasien perlu memberikan persetujuan sebelum operasi dilakukan.", "level": "n2", "tags": ["kesehatan"]},
-    {"jp": "私もその意見に<b>同意します</b>。", "id": "Saya juga setuju dengan pendapat itu.", "level": "n2", "tags": ["bahasa-komunikasi"]}
+    {
+      "jp": "彼はすべての条件に<b>同意した</b>。",
+      "id": "Dia menyetujui semua persyaratan tersebut.",
+      "level": "n2",
+      "tags": [
+        "bisnis",
+        "hukum-aturan"
+      ]
+    },
+    {
+      "jp": "手術の前に患者が<b>同意する</b>ことが必要だ。",
+      "id": "Pasien perlu memberikan persetujuan sebelum operasi dilakukan.",
+      "level": "n2",
+      "tags": [
+        "kesehatan"
+      ]
+    },
+    {
+      "jp": "私もその意見に<b>同意します</b>。",
+      "id": "Saya juga setuju dengan pendapat itu.",
+      "level": "n2",
+      "tags": [
+        "bahasa-komunikasi"
+      ]
+    }
   ],
-  "synonyms": ["賛成する", "承諾する"],
-  "antonyms": ["反対する", "拒否する"],
-  "see_also": ["承認する", "反対する"],
+  "synonyms": [
+    "賛成する",
+    "承諾する"
+  ],
+  "antonyms": [
+    "反対する",
+    "拒否する"
+  ],
+  "see_also": [
+    "承認する",
+    "反対する"
+  ],
   "provenance": "jlpt-corpus",
   "added_v": "v15"
 },
@@ -8206,19 +8685,58 @@ window.vocabN2_Verbs = [
   "common": true,
   "related_grammar": [],
   "formalitas": 2,
-  "domain": ["bahasa-komunikasi", "politik-masyarakat", "pikiran-opini"],
+  "domain": [
+    "bahasa-komunikasi",
+    "politik-masyarakat",
+    "pikiran-opini"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["teman", "rekan", "umum"],
+  "lawan_bicara": [
+    "teman",
+    "rekan",
+    "umum"
+  ],
   "nuance": "Berlawanan dengan 同意する dan 賛成する. 反対する mencakup ketidaksetujuan umum terhadap pendapat, kebijakan, atau keputusan — digunakan dari situasi kasual hingga formal. Berbeda dari 反論する yang khusus untuk membantah secara argumentatif. 反対意見 = 'pendapat yang berlawanan/oposisi'.",
   "conj_type": "suru",
   "examples": [
-    {"jp": "住民の多くがそのビル建設計画に<b>反対した</b>。", "id": "Sebagian besar warga menentang rencana pembangunan gedung itu.", "level": "n2", "tags": ["politik-masyarakat"]},
-    {"jp": "親の決定に<b>反対する</b>のは難しかった。", "id": "Sulit untuk menentang keputusan orang tua.", "level": "n2", "tags": ["keluarga"]},
-    {"jp": "委員会の一部がその提案に<b>反対した</b>。", "id": "Sebagian anggota komite menentang usulan tersebut.", "level": "n2", "tags": ["bisnis", "politik-masyarakat"]}
+    {
+      "jp": "住民の多くがそのビル建設計画に<b>反対した</b>。",
+      "id": "Sebagian besar warga menentang rencana pembangunan gedung itu.",
+      "level": "n2",
+      "tags": [
+        "politik-masyarakat"
+      ]
+    },
+    {
+      "jp": "親の決定に<b>反対する</b>のは難しかった。",
+      "id": "Sulit untuk menentang keputusan orang tua.",
+      "level": "n2",
+      "tags": [
+        "keluarga"
+      ]
+    },
+    {
+      "jp": "委員会の一部がその提案に<b>反対した</b>。",
+      "id": "Sebagian anggota komite menentang usulan tersebut.",
+      "level": "n2",
+      "tags": [
+        "bisnis",
+        "politik-masyarakat"
+      ]
+    }
   ],
-  "synonyms": ["異議を唱える", "抵抗する"],
-  "antonyms": ["同意する", "賛成する"],
-  "see_also": ["反論する", "却下する"],
+  "synonyms": [
+    "異議を唱える",
+    "抵抗する"
+  ],
+  "antonyms": [
+    "同意する",
+    "賛成する"
+  ],
+  "see_also": [
+    "反論する",
+    "却下する"
+  ],
   "provenance": "jlpt-corpus",
   "added_v": "v15"
 },
@@ -8235,19 +8753,57 @@ window.vocabN2_Verbs = [
   "common": true,
   "related_grammar": [],
   "formalitas": 4,
-  "domain": ["bisnis", "hukum-aturan", "politik-masyarakat"],
+  "domain": [
+    "bisnis",
+    "hukum-aturan",
+    "politik-masyarakat"
+  ],
   "register": "formal",
-  "lawan_bicara": ["rekan"],
+  "lawan_bicara": [
+    "rekan"
+  ],
   "nuance": "Jauh lebih formal dari 同意する — 承認する digunakan ketika pihak yang memiliki kewenangan secara resmi menyetujui atau mengesahkan sesuatu (anggaran, proposal, dokumen). Ada unsur otoritas yang tidak ada di 同意する. 承認印 = 'stempel persetujuan resmi'.",
   "conj_type": "suru",
   "examples": [
-    {"jp": "上司が予算案を<b>承認した</b>。", "id": "Atasan menyetujui rancangan anggaran tersebut.", "level": "n2", "tags": ["bisnis"]},
-    {"jp": "国会が新しい法案を<b>承認した</b>。", "id": "Parlemen mengesahkan rancangan undang-undang baru.", "level": "n2", "tags": ["politik-masyarakat", "hukum-aturan"]},
-    {"jp": "申請は委員会によって正式に<b>承認された</b>。", "id": "Permohonan tersebut secara resmi disetujui oleh komite.", "level": "n2", "tags": ["bisnis", "hukum-aturan"]}
+    {
+      "jp": "上司が予算案を<b>承認した</b>。",
+      "id": "Atasan menyetujui rancangan anggaran tersebut.",
+      "level": "n2",
+      "tags": [
+        "bisnis"
+      ]
+    },
+    {
+      "jp": "国会が新しい法案を<b>承認した</b>。",
+      "id": "Parlemen mengesahkan rancangan undang-undang baru.",
+      "level": "n2",
+      "tags": [
+        "politik-masyarakat",
+        "hukum-aturan"
+      ]
+    },
+    {
+      "jp": "申請は委員会によって正式に<b>承認された</b>。",
+      "id": "Permohonan tersebut secara resmi disetujui oleh komite.",
+      "level": "n2",
+      "tags": [
+        "bisnis",
+        "hukum-aturan"
+      ]
+    }
   ],
-  "synonyms": ["認可する", "許可する"],
-  "antonyms": ["却下する", "否認する"],
-  "see_also": ["却下する", "同意する"],
+  "synonyms": [
+    "認可する",
+    "許可する"
+  ],
+  "antonyms": [
+    "却下する",
+    "否認する"
+  ],
+  "see_also": [
+    "却下する",
+    "同意する"
+  ],
   "provenance": "jlpt-corpus",
   "added_v": "v15"
 },
@@ -8264,19 +8820,54 @@ window.vocabN2_Verbs = [
   "common": true,
   "related_grammar": [],
   "formalitas": 4,
-  "domain": ["hukum-aturan", "bisnis"],
+  "domain": [
+    "hukum-aturan",
+    "bisnis"
+  ],
   "register": "formal",
-  "lawan_bicara": ["rekan"],
+  "lawan_bicara": [
+    "rekan"
+  ],
   "nuance": "Lebih kuat dan resmi dari 断る (kotowaru = menolak secara umum) — 却下する digunakan saat pihak berwenang menolak secara formal suatu permintaan, banding, atau proposal. Mengandung konotasi keputusan final dan sering berkekuatan hukum. 申請を却下する = 'menolak permohonan'.",
   "conj_type": "suru",
   "examples": [
-    {"jp": "裁判所はその申請を<b>却下した</b>。", "id": "Pengadilan menolak permohonan tersebut secara resmi.", "level": "n2", "tags": ["hukum-aturan"]},
-    {"jp": "採用担当者は彼の応募を書類審査の段階で<b>却下した</b>。", "id": "Petugas rekrutmen mendiskualifikasi lamarannya pada tahap seleksi dokumen.", "level": "n2", "tags": ["pekerjaan"]},
-    {"jp": "予算が不足しているとして提案が<b>却下された</b>。", "id": "Usulan tersebut ditolak dengan alasan anggaran yang tidak mencukupi.", "level": "n2", "tags": ["bisnis"]}
+    {
+      "jp": "裁判所はその申請を<b>却下した</b>。",
+      "id": "Pengadilan menolak permohonan tersebut secara resmi.",
+      "level": "n2",
+      "tags": [
+        "hukum-aturan"
+      ]
+    },
+    {
+      "jp": "採用担当者は彼の応募を書類審査の段階で<b>却下した</b>。",
+      "id": "Petugas rekrutmen mendiskualifikasi lamarannya pada tahap seleksi dokumen.",
+      "level": "n2",
+      "tags": [
+        "pekerjaan"
+      ]
+    },
+    {
+      "jp": "予算が不足しているとして提案が<b>却下された</b>。",
+      "id": "Usulan tersebut ditolak dengan alasan anggaran yang tidak mencukupi.",
+      "level": "n2",
+      "tags": [
+        "bisnis"
+      ]
+    }
   ],
-  "synonyms": ["否決する", "棄却する"],
-  "antonyms": ["承認する", "許可する"],
-  "see_also": ["承認する", "反対する"],
+  "synonyms": [
+    "否決する",
+    "棄却する"
+  ],
+  "antonyms": [
+    "承認する",
+    "許可する"
+  ],
+  "see_also": [
+    "承認する",
+    "反対する"
+  ],
   "provenance": "jlpt-corpus",
   "added_v": "v15"
 },
@@ -8293,19 +8884,54 @@ window.vocabN2_Verbs = [
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
-  "domain": ["bisnis", "hukum-aturan"],
+  "domain": [
+    "bisnis",
+    "hukum-aturan"
+  ],
   "register": "formal",
-  "lawan_bicara": ["rekan", "umum"],
+  "lawan_bicara": [
+    "rekan",
+    "umum"
+  ],
   "nuance": "Berbeda dari 確認する (kakunin suru = mengkonfirmasi) — 保証する berarti berkomitmen dan menanggung tanggung jawab bahwa sesuatu adalah benar atau akan terjadi. Ada unsur pertanggungjawaban jika meleset. 品質保証 = 'jaminan kualitas'. 保証書 = 'kartu garansi'.",
   "conj_type": "suru",
   "examples": [
-    {"jp": "メーカーは製品の品質を一年間<b>保証する</b>。", "id": "Produsen menjamin kualitas produk selama satu tahun.", "level": "n2", "tags": ["bisnis", "belanja"]},
-    {"jp": "彼の誠実さは私が<b>保証します</b>。", "id": "Saya menjamin kejujuran dirinya.", "level": "n2", "tags": ["bahasa-komunikasi"]},
-    {"jp": "安全性が<b>保証されない</b>限り、このシステムは使用できない。", "id": "Sistem ini tidak bisa digunakan selama keamanannya belum terjamin.", "level": "n2", "tags": ["teknologi", "hukum-aturan"]}
+    {
+      "jp": "メーカーは製品の品質を一年間<b>保証する</b>。",
+      "id": "Produsen menjamin kualitas produk selama satu tahun.",
+      "level": "n2",
+      "tags": [
+        "bisnis",
+        "belanja"
+      ]
+    },
+    {
+      "jp": "彼の誠実さは私が<b>保証します</b>。",
+      "id": "Saya menjamin kejujuran dirinya.",
+      "level": "n2",
+      "tags": [
+        "bahasa-komunikasi"
+      ]
+    },
+    {
+      "jp": "安全性が<b>保証されない</b>限り、このシステムは使用できない。",
+      "id": "Sistem ini tidak bisa digunakan selama keamanannya belum terjamin.",
+      "level": "n2",
+      "tags": [
+        "teknologi",
+        "hukum-aturan"
+      ]
+    }
   ],
-  "synonyms": ["担保する", "請け合う"],
+  "synonyms": [
+    "担保する",
+    "請け合う"
+  ],
   "antonyms": [],
-  "see_also": ["確認する", "証明する"],
+  "see_also": [
+    "確認する",
+    "証明する"
+  ],
   "provenance": "jlpt-corpus",
   "added_v": "v15"
 },
@@ -8322,19 +8948,56 @@ window.vocabN2_Verbs = [
   "common": true,
   "related_grammar": [],
   "formalitas": 2,
-  "domain": ["bisnis", "kehidupan-sehari", "pekerjaan"],
+  "domain": [
+    "bisnis",
+    "kehidupan-sehari",
+    "pekerjaan"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["teman", "rekan", "umum"],
+  "lawan_bicara": [
+    "teman",
+    "rekan",
+    "umum"
+  ],
   "nuance": "Berbeda dari 保証する — 確認する berarti memeriksa ulang untuk memastikan kebenaran, keberadaan, atau kondisi sesuatu, tanpa menanggung jaminan. Penggunaannya sangat luas, dari situasi kasual (memastikan jadwal) hingga formal (verifikasi dokumen). Salah satu kata kerja bisnis paling sering digunakan.",
   "conj_type": "suru",
   "examples": [
-    {"jp": "会議の日時をもう一度<b>確認して</b>おいてください。", "id": "Tolong konfirmasi kembali tanggal dan waktu rapat.", "level": "n2", "tags": ["bisnis", "pekerjaan"]},
-    {"jp": "注文内容を<b>確認する</b>ためにメールを送った。", "id": "Kami mengirim email untuk memverifikasi isi pesanan.", "level": "n2", "tags": ["bisnis", "belanja"]},
-    {"jp": "飛行機に乗る前にパスポートを<b>確認する</b>。", "id": "Kita memeriksa paspor sebelum naik pesawat.", "level": "n2", "tags": ["perjalanan"]}
+    {
+      "jp": "会議の日時をもう一度<b>確認して</b>おいてください。",
+      "id": "Tolong konfirmasi kembali tanggal dan waktu rapat.",
+      "level": "n2",
+      "tags": [
+        "bisnis",
+        "pekerjaan"
+      ]
+    },
+    {
+      "jp": "注文内容を<b>確認する</b>ためにメールを送った。",
+      "id": "Kami mengirim email untuk memverifikasi isi pesanan.",
+      "level": "n2",
+      "tags": [
+        "bisnis",
+        "belanja"
+      ]
+    },
+    {
+      "jp": "飛行機に乗る前にパスポートを<b>確認する</b>。",
+      "id": "Kita memeriksa paspor sebelum naik pesawat.",
+      "level": "n2",
+      "tags": [
+        "perjalanan"
+      ]
+    }
   ],
-  "synonyms": ["チェックする", "検証する"],
+  "synonyms": [
+    "チェックする",
+    "検証する"
+  ],
   "antonyms": [],
-  "see_also": ["保証する", "検討する"],
+  "see_also": [
+    "保証する",
+    "検討する"
+  ],
   "provenance": "jlpt-corpus",
   "added_v": "v15"
 },
@@ -8351,19 +9014,53 @@ window.vocabN2_Verbs = [
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
-  "domain": ["bisnis", "keputusan", "pekerjaan"],
+  "domain": [
+    "bisnis",
+    "keputusan",
+    "pekerjaan"
+  ],
   "register": "formal",
-  "lawan_bicara": ["rekan"],
+  "lawan_bicara": [
+    "rekan"
+  ],
   "nuance": "Berbeda dari 考える (kangaeru = berpikir/mempertimbangkan) yang lebih umum — 検討する menekankan kajian mendalam dan terstruktur terhadap suatu masalah atau usulan. Dalam rapat bisnis, 検討します adalah respons umum yang berarti 'kami akan mengkaji hal ini' — sering digunakan secara diplomatik untuk menghindari penolakan langsung.",
   "conj_type": "suru",
   "examples": [
-    {"jp": "この件についてはさらに<b>検討する</b>必要があります。", "id": "Masalah ini masih perlu dikaji lebih lanjut.", "level": "n2", "tags": ["bisnis"]},
-    {"jp": "委員会が新しい政策案を<b>検討している</b>。", "id": "Komite sedang mengkaji rancangan kebijakan baru.", "level": "n2", "tags": ["politik-masyarakat", "hukum-aturan"]},
-    {"jp": "転職の可能性を真剣に<b>検討した</b>。", "id": "Saya mempertimbangkan secara serius kemungkinan pindah kerja.", "level": "n2", "tags": ["pekerjaan"]}
+    {
+      "jp": "この件についてはさらに<b>検討する</b>必要があります。",
+      "id": "Masalah ini masih perlu dikaji lebih lanjut.",
+      "level": "n2",
+      "tags": [
+        "bisnis"
+      ]
+    },
+    {
+      "jp": "委員会が新しい政策案を<b>検討している</b>。",
+      "id": "Komite sedang mengkaji rancangan kebijakan baru.",
+      "level": "n2",
+      "tags": [
+        "politik-masyarakat",
+        "hukum-aturan"
+      ]
+    },
+    {
+      "jp": "転職の可能性を真剣に<b>検討した</b>。",
+      "id": "Saya mempertimbangkan secara serius kemungkinan pindah kerja.",
+      "level": "n2",
+      "tags": [
+        "pekerjaan"
+      ]
+    }
   ],
-  "synonyms": ["考慮する", "審議する"],
+  "synonyms": [
+    "考慮する",
+    "審議する"
+  ],
   "antonyms": [],
-  "see_also": ["判断する", "議論する"],
+  "see_also": [
+    "判断する",
+    "議論する"
+  ],
   "provenance": "jlpt-corpus",
   "added_v": "v15"
 },
@@ -8380,19 +9077,55 @@ window.vocabN2_Verbs = [
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
-  "domain": ["bahasa-komunikasi", "pikiran-opini", "politik-masyarakat"],
+  "domain": [
+    "bahasa-komunikasi",
+    "pikiran-opini",
+    "politik-masyarakat"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["rekan", "umum"],
+  "lawan_bicara": [
+    "rekan",
+    "umum"
+  ],
   "nuance": "Berbeda dari 話し合う (hanashiau) yang lebih kasual dan kooperatif — 議論する mengandung nuansa perdebatan yang lebih serius dan sering melibatkan perbedaan pendapat yang tajam. Bisa berkonotasi debat yang memanas. 議論が白熱する = 'diskusi/debat memanas'.",
   "conj_type": "suru",
   "examples": [
-    {"jp": "チームメンバーが戦略について熱く<b>議論した</b>。", "id": "Anggota tim berdebat sengit mengenai strategi.", "level": "n2", "tags": ["bisnis", "pekerjaan"]},
-    {"jp": "この問題は社会全体で<b>議論する</b>必要がある。", "id": "Masalah ini perlu dibahas oleh seluruh masyarakat.", "level": "n2", "tags": ["politik-masyarakat"]},
-    {"jp": "学生たちは倫理問題について深く<b>議論した</b>。", "id": "Para mahasiswa berdiskusi mendalam mengenai isu etika.", "level": "n2", "tags": ["pendidikan", "pikiran-opini"]}
+    {
+      "jp": "チームメンバーが戦略について熱く<b>議論した</b>。",
+      "id": "Anggota tim berdebat sengit mengenai strategi.",
+      "level": "n2",
+      "tags": [
+        "bisnis",
+        "pekerjaan"
+      ]
+    },
+    {
+      "jp": "この問題は社会全体で<b>議論する</b>必要がある。",
+      "id": "Masalah ini perlu dibahas oleh seluruh masyarakat.",
+      "level": "n2",
+      "tags": [
+        "politik-masyarakat"
+      ]
+    },
+    {
+      "jp": "学生たちは倫理問題について深く<b>議論した</b>。",
+      "id": "Para mahasiswa berdiskusi mendalam mengenai isu etika.",
+      "level": "n2",
+      "tags": [
+        "pendidikan",
+        "pikiran-opini"
+      ]
+    }
   ],
-  "synonyms": ["討論する", "話し合う"],
+  "synonyms": [
+    "討論する",
+    "話し合う"
+  ],
   "antonyms": [],
-  "see_also": ["協議する", "反論する"],
+  "see_also": [
+    "協議する",
+    "反論する"
+  ],
   "provenance": "jlpt-corpus",
   "added_v": "v15"
 },
@@ -8409,19 +9142,53 @@ window.vocabN2_Verbs = [
   "common": true,
   "related_grammar": [],
   "formalitas": 4,
-  "domain": ["bisnis", "politik-masyarakat", "hukum-aturan"],
+  "domain": [
+    "bisnis",
+    "politik-masyarakat",
+    "hukum-aturan"
+  ],
   "register": "formal",
-  "lawan_bicara": ["rekan"],
+  "lawan_bicara": [
+    "rekan"
+  ],
   "nuance": "Lebih formal dari 議論する dan menekankan konsultasi antara dua pihak atau lebih dengan tujuan mencapai kesepakatan bersama — tanpa nuansa konflik. Umum digunakan dalam konteks diplomatik, bisnis resmi, atau hukum. 協議の結果 = 'hasil musyawarah'.",
   "conj_type": "suru",
   "examples": [
-    {"jp": "両国の代表が貿易問題について<b>協議した</b>。", "id": "Perwakilan kedua negara berunding mengenai masalah perdagangan.", "level": "n2", "tags": ["politik-masyarakat", "ekonomi-keuangan"]},
-    {"jp": "弁護士たちは和解案について<b>協議している</b>。", "id": "Para pengacara sedang bermusyawarah mengenai rancangan penyelesaian damai.", "level": "n2", "tags": ["hukum-aturan"]},
-    {"jp": "問題の解決策を関係者全員で<b>協議する</b>必要がある。", "id": "Semua pihak terkait perlu berunding untuk mencari solusi masalah ini.", "level": "n2", "tags": ["bisnis"]}
+    {
+      "jp": "両国の代表が貿易問題について<b>協議した</b>。",
+      "id": "Perwakilan kedua negara berunding mengenai masalah perdagangan.",
+      "level": "n2",
+      "tags": [
+        "politik-masyarakat",
+        "ekonomi-keuangan"
+      ]
+    },
+    {
+      "jp": "弁護士たちは和解案について<b>協議している</b>。",
+      "id": "Para pengacara sedang bermusyawarah mengenai rancangan penyelesaian damai.",
+      "level": "n2",
+      "tags": [
+        "hukum-aturan"
+      ]
+    },
+    {
+      "jp": "問題の解決策を関係者全員で<b>協議する</b>必要がある。",
+      "id": "Semua pihak terkait perlu berunding untuk mencari solusi masalah ini.",
+      "level": "n2",
+      "tags": [
+        "bisnis"
+      ]
+    }
   ],
-  "synonyms": ["協商する", "相談する"],
+  "synonyms": [
+    "協商する",
+    "相談する"
+  ],
   "antonyms": [],
-  "see_also": ["議論する", "交渉する"],
+  "see_also": [
+    "議論する",
+    "交渉する"
+  ],
   "provenance": "jlpt-corpus",
   "added_v": "v15"
 },
@@ -8438,19 +9205,53 @@ window.vocabN2_Verbs = [
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
-  "domain": ["bisnis", "politik-masyarakat", "ekonomi-keuangan"],
+  "domain": [
+    "bisnis",
+    "politik-masyarakat",
+    "ekonomi-keuangan"
+  ],
   "register": "formal",
-  "lawan_bicara": ["rekan"],
+  "lawan_bicara": [
+    "rekan"
+  ],
   "nuance": "Berbeda dari 協議する yang menekankan musyawarah damai — 交渉する menekankan proses tawar-menawar antara pihak-pihak yang memiliki kepentingan berbeda atau berlawanan. Ada unsur strategi dan kompromi. 交渉決裂 = 'negosiasi gagal/buntu'.",
   "conj_type": "suru",
   "examples": [
-    {"jp": "労働組合は経営側と賃金について<b>交渉した</b>。", "id": "Serikat buruh bernegosiasi dengan pihak manajemen mengenai gaji.", "level": "n2", "tags": ["pekerjaan", "bisnis"]},
-    {"jp": "外交官が停戦条件を<b>交渉している</b>。", "id": "Para diplomat sedang bernegosiasi mengenai syarat gencatan senjata.", "level": "n2", "tags": ["politik-masyarakat"]},
-    {"jp": "価格を<b>交渉する</b>のは商売の基本だ。", "id": "Bernegosiasi soal harga adalah dasar dari berbisnis.", "level": "n2", "tags": ["bisnis", "ekonomi-keuangan"]}
+    {
+      "jp": "労働組合は経営側と賃金について<b>交渉した</b>。",
+      "id": "Serikat buruh bernegosiasi dengan pihak manajemen mengenai gaji.",
+      "level": "n2",
+      "tags": [
+        "pekerjaan",
+        "bisnis"
+      ]
+    },
+    {
+      "jp": "外交官が停戦条件を<b>交渉している</b>。",
+      "id": "Para diplomat sedang bernegosiasi mengenai syarat gencatan senjata.",
+      "level": "n2",
+      "tags": [
+        "politik-masyarakat"
+      ]
+    },
+    {
+      "jp": "価格を<b>交渉する</b>のは商売の基本だ。",
+      "id": "Bernegosiasi soal harga adalah dasar dari berbisnis.",
+      "level": "n2",
+      "tags": [
+        "bisnis",
+        "ekonomi-keuangan"
+      ]
+    }
   ],
-  "synonyms": ["折衝する"],
+  "synonyms": [
+    "折衝する"
+  ],
   "antonyms": [],
-  "see_also": ["協議する", "調整する"],
+  "see_also": [
+    "協議する",
+    "調整する"
+  ],
   "provenance": "jlpt-corpus",
   "added_v": "v15"
 },
@@ -8467,19 +9268,55 @@ window.vocabN2_Verbs = [
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
-  "domain": ["bisnis", "pekerjaan", "kehidupan-sehari"],
+  "domain": [
+    "bisnis",
+    "pekerjaan",
+    "kehidupan-sehari"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["rekan", "umum"],
+  "lawan_bicara": [
+    "rekan",
+    "umum"
+  ],
   "nuance": "Berbeda dari 変える (kaeru = mengubah) — 調整する menekankan penyesuaian halus atau koordinasi terhadap sesuatu yang sudah ada agar berjalan lebih lancar atau sesuai target. Kata ini sangat umum dalam konteks kerja: スケジュールを調整する = 'menyesuaikan jadwal'.",
   "conj_type": "suru",
   "examples": [
-    {"jp": "会議の日程を<b>調整する</b>ために参加者に連絡した。", "id": "Kami menghubungi peserta untuk menyesuaikan jadwal rapat.", "level": "n2", "tags": ["bisnis", "pekerjaan"]},
-    {"jp": "音量を<b>調整して</b>ちょうどいい音にした。", "id": "Kami menyesuaikan volume hingga mendapatkan suara yang pas.", "level": "n2", "tags": ["kehidupan-sehari"]},
-    {"jp": "予算と実際の費用の差を<b>調整する</b>必要がある。", "id": "Kita perlu menyesuaikan selisih antara anggaran dan biaya aktual.", "level": "n2", "tags": ["bisnis", "ekonomi-keuangan"]}
+    {
+      "jp": "会議の日程を<b>調整する</b>ために参加者に連絡した。",
+      "id": "Kami menghubungi peserta untuk menyesuaikan jadwal rapat.",
+      "level": "n2",
+      "tags": [
+        "bisnis",
+        "pekerjaan"
+      ]
+    },
+    {
+      "jp": "音量を<b>調整して</b>ちょうどいい音にした。",
+      "id": "Kami menyesuaikan volume hingga mendapatkan suara yang pas.",
+      "level": "n2",
+      "tags": [
+        "kehidupan-sehari"
+      ]
+    },
+    {
+      "jp": "予算と実際の費用の差を<b>調整する</b>必要がある。",
+      "id": "Kita perlu menyesuaikan selisih antara anggaran dan biaya aktual.",
+      "level": "n2",
+      "tags": [
+        "bisnis",
+        "ekonomi-keuangan"
+      ]
+    }
   ],
-  "synonyms": ["調節する", "調和する"],
+  "synonyms": [
+    "調節する",
+    "調和する"
+  ],
   "antonyms": [],
-  "see_also": ["管理する", "交渉する"],
+  "see_also": [
+    "管理する",
+    "交渉する"
+  ],
   "provenance": "jlpt-corpus",
   "added_v": "v15"
 },
@@ -8496,19 +9333,53 @@ window.vocabN2_Verbs = [
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
-  "domain": ["bisnis", "pekerjaan"],
+  "domain": [
+    "bisnis",
+    "pekerjaan"
+  ],
   "register": "formal",
-  "lawan_bicara": ["rekan"],
+  "lawan_bicara": [
+    "rekan"
+  ],
   "nuance": "Lebih luas dari 監視する — 管理する mencakup seluruh aspek pengelolaan (sumber daya manusia, keuangan, data, fasilitas), bukan sekadar memantau. Kunci dalam manajemen: 人材管理 = 'manajemen SDM', データ管理 = 'manajemen data', 品質管理 = 'kontrol kualitas'.",
   "conj_type": "suru",
   "examples": [
-    {"jp": "彼はチーム全体のプロジェクトを<b>管理している</b>。", "id": "Dia mengelola proyek untuk seluruh tim.", "level": "n2", "tags": ["bisnis", "pekerjaan"]},
-    {"jp": "このソフトウェアはファイルを自動的に<b>管理する</b>。", "id": "Perangkat lunak ini mengelola berkas secara otomatis.", "level": "n2", "tags": ["teknologi"]},
-    {"jp": "健康を<b>管理する</b>ために毎日運動している。", "id": "Saya berolahraga setiap hari untuk menjaga kesehatan.", "level": "n2", "tags": ["kesehatan", "kehidupan-sehari"]}
+    {
+      "jp": "彼はチーム全体のプロジェクトを<b>管理している</b>。",
+      "id": "Dia mengelola proyek untuk seluruh tim.",
+      "level": "n2",
+      "tags": [
+        "bisnis",
+        "pekerjaan"
+      ]
+    },
+    {
+      "jp": "このソフトウェアはファイルを自動的に<b>管理する</b>。",
+      "id": "Perangkat lunak ini mengelola berkas secara otomatis.",
+      "level": "n2",
+      "tags": [
+        "teknologi"
+      ]
+    },
+    {
+      "jp": "健康を<b>管理する</b>ために毎日運動している。",
+      "id": "Saya berolahraga setiap hari untuk menjaga kesehatan.",
+      "level": "n2",
+      "tags": [
+        "kesehatan",
+        "kehidupan-sehari"
+      ]
+    }
   ],
-  "synonyms": ["運営する", "統括する"],
+  "synonyms": [
+    "運営する",
+    "統括する"
+  ],
   "antonyms": [],
-  "see_also": ["監視する", "調整する"],
+  "see_also": [
+    "監視する",
+    "調整する"
+  ],
   "provenance": "jlpt-corpus",
   "added_v": "v15"
 },
@@ -8525,19 +9396,54 @@ window.vocabN2_Verbs = [
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
-  "domain": ["hukum-aturan", "pekerjaan", "teknologi"],
+  "domain": [
+    "hukum-aturan",
+    "pekerjaan",
+    "teknologi"
+  ],
   "register": "formal",
-  "lawan_bicara": ["rekan"],
+  "lawan_bicara": [
+    "rekan"
+  ],
   "nuance": "Berbeda dari 管理する — 監視する secara spesifik berarti memantau atau mengawasi agar tidak terjadi pelanggaran, masalah, atau bahaya. Bisa berkonotasi pengawasan keamanan (kamera CCTV, sipir penjara) maupun pemantauan data sistem. 監視カメラ = 'kamera pengawas/CCTV'.",
   "conj_type": "suru",
   "examples": [
-    {"jp": "警備員が施設内を<b>監視している</b>。", "id": "Petugas keamanan memantau seluruh area fasilitas.", "level": "n2", "tags": ["pekerjaan", "hukum-aturan"]},
-    {"jp": "システムのログを定期的に<b>監視する</b>ことで異常を早期発見できる。", "id": "Dengan memantau log sistem secara berkala, anomali bisa dideteksi lebih awal.", "level": "n2", "tags": ["teknologi"]},
-    {"jp": "政府が国民のネット活動を<b>監視する</b>ことへの懸念が高まっている。", "id": "Kekhawatiran meningkat terhadap pemantauan aktivitas internet warga oleh pemerintah.", "level": "n2", "tags": ["politik-masyarakat", "teknologi"]}
+    {
+      "jp": "警備員が施設内を<b>監視している</b>。",
+      "id": "Petugas keamanan memantau seluruh area fasilitas.",
+      "level": "n2",
+      "tags": [
+        "pekerjaan",
+        "hukum-aturan"
+      ]
+    },
+    {
+      "jp": "システムのログを定期的に<b>監視する</b>ことで異常を早期発見できる。",
+      "id": "Dengan memantau log sistem secara berkala, anomali bisa dideteksi lebih awal.",
+      "level": "n2",
+      "tags": [
+        "teknologi"
+      ]
+    },
+    {
+      "jp": "政府が国民のネット活動を<b>監視する</b>ことへの懸念が高まっている。",
+      "id": "Kekhawatiran meningkat terhadap pemantauan aktivitas internet warga oleh pemerintah.",
+      "level": "n2",
+      "tags": [
+        "politik-masyarakat",
+        "teknologi"
+      ]
+    }
   ],
-  "synonyms": ["見張る", "モニタリングする"],
+  "synonyms": [
+    "見張る",
+    "モニタリングする"
+  ],
   "antonyms": [],
-  "see_also": ["管理する", "規制する"],
+  "see_also": [
+    "管理する",
+    "規制する"
+  ],
   "provenance": "jlpt-corpus",
   "added_v": "v15"
 },
@@ -8554,19 +9460,57 @@ window.vocabN2_Verbs = [
   "common": true,
   "related_grammar": [],
   "formalitas": 4,
-  "domain": ["hukum-aturan", "politik-masyarakat"],
+  "domain": [
+    "hukum-aturan",
+    "politik-masyarakat"
+  ],
   "register": "formal",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "Berbeda dari 制限する (seigen suru) yang bisa dipakai siapa saja — 規制する merujuk pada penerapan aturan atau batasan oleh otoritas resmi (pemerintah, lembaga) terhadap suatu kegiatan atau industri. Ada unsur kekuatan hukum. 規制緩和 = 'deregulasi/pelonggaran aturan'.",
   "conj_type": "suru",
   "examples": [
-    {"jp": "政府はSNSの利用を<b>規制する</b>法律を検討している。", "id": "Pemerintah sedang mengkaji undang-undang yang mengatur penggunaan media sosial.", "level": "n2", "tags": ["politik-masyarakat", "teknologi"]},
-    {"jp": "排気ガスの排出量を<b>規制する</b>ことで大気汚染が改善された。", "id": "Dengan mengatur emisi gas buang, polusi udara berhasil membaik.", "level": "n2", "tags": ["alam-lingkungan", "hukum-aturan"]},
-    {"jp": "金融市場を適切に<b>規制する</b>のは政府の役割だ。", "id": "Mengatur pasar keuangan secara tepat adalah peran pemerintah.", "level": "n2", "tags": ["ekonomi-keuangan", "hukum-aturan"]}
+    {
+      "jp": "政府はSNSの利用を<b>規制する</b>法律を検討している。",
+      "id": "Pemerintah sedang mengkaji undang-undang yang mengatur penggunaan media sosial.",
+      "level": "n2",
+      "tags": [
+        "politik-masyarakat",
+        "teknologi"
+      ]
+    },
+    {
+      "jp": "排気ガスの排出量を<b>規制する</b>ことで大気汚染が改善された。",
+      "id": "Dengan mengatur emisi gas buang, polusi udara berhasil membaik.",
+      "level": "n2",
+      "tags": [
+        "alam-lingkungan",
+        "hukum-aturan"
+      ]
+    },
+    {
+      "jp": "金融市場を適切に<b>規制する</b>のは政府の役割だ。",
+      "id": "Mengatur pasar keuangan secara tepat adalah peran pemerintah.",
+      "level": "n2",
+      "tags": [
+        "ekonomi-keuangan",
+        "hukum-aturan"
+      ]
+    }
   ],
-  "synonyms": ["統制する"],
-  "antonyms": ["規制緩和する", "自由化する"],
-  "see_also": ["制限する", "禁止する", "監視する"],
+  "synonyms": [
+    "統制する"
+  ],
+  "antonyms": [
+    "規制緩和する",
+    "自由化する"
+  ],
+  "see_also": [
+    "制限する",
+    "禁止する",
+    "監視する"
+  ],
   "provenance": "jlpt-corpus",
   "added_v": "v15"
 },
@@ -8583,19 +9527,58 @@ window.vocabN2_Verbs = [
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
-  "domain": ["hukum-aturan", "kehidupan-sehari", "bisnis"],
+  "domain": [
+    "hukum-aturan",
+    "kehidupan-sehari",
+    "bisnis"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["umum", "rekan"],
+  "lawan_bicara": [
+    "umum",
+    "rekan"
+  ],
   "nuance": "Lebih luas dan fleksibel dari 規制する — 制限する bisa digunakan oleh siapa saja (bukan hanya otoritas), seperti orang tua yang membatasi jam layar anak, atau penyedia layanan yang membatasi kecepatan internet. 規制する lebih spesifik untuk regulasi resmi pemerintah atau lembaga.",
   "conj_type": "suru",
   "examples": [
-    {"jp": "子供のゲーム時間を一日一時間に<b>制限している</b>。", "id": "Kami membatasi waktu bermain game anak menjadi satu jam per hari.", "level": "n2", "tags": ["keluarga", "kehidupan-sehari"]},
-    {"jp": "通信速度を<b>制限する</b>ことで通信コストを抑えられる。", "id": "Dengan membatasi kecepatan internet, biaya komunikasi bisa ditekan.", "level": "n2", "tags": ["teknologi"]},
-    {"jp": "大雨のため橋の通行が<b>制限された</b>。", "id": "Akses jembatan dibatasi akibat hujan deras.", "level": "n2", "tags": ["perjalanan", "kehidupan-sehari"]}
+    {
+      "jp": "子供のゲーム時間を一日一時間に<b>制限している</b>。",
+      "id": "Kami membatasi waktu bermain game anak menjadi satu jam per hari.",
+      "level": "n2",
+      "tags": [
+        "keluarga",
+        "kehidupan-sehari"
+      ]
+    },
+    {
+      "jp": "通信速度を<b>制限する</b>ことで通信コストを抑えられる。",
+      "id": "Dengan membatasi kecepatan internet, biaya komunikasi bisa ditekan.",
+      "level": "n2",
+      "tags": [
+        "teknologi"
+      ]
+    },
+    {
+      "jp": "大雨のため橋の通行が<b>制限された</b>。",
+      "id": "Akses jembatan dibatasi akibat hujan deras.",
+      "level": "n2",
+      "tags": [
+        "perjalanan",
+        "kehidupan-sehari"
+      ]
+    }
   ],
-  "synonyms": ["制約する", "縛る"],
-  "antonyms": ["解放する", "解除する"],
-  "see_also": ["規制する", "禁止する"],
+  "synonyms": [
+    "制約する",
+    "縛る"
+  ],
+  "antonyms": [
+    "解放する",
+    "解除する"
+  ],
+  "see_also": [
+    "規制する",
+    "禁止する"
+  ],
   "provenance": "jlpt-corpus",
   "added_v": "v15"
 },
@@ -8612,19 +9595,56 @@ window.vocabN2_Verbs = [
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
-  "domain": ["hukum-aturan", "kehidupan-sehari"],
+  "domain": [
+    "hukum-aturan",
+    "kehidupan-sehari"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["umum", "rekan"],
+  "lawan_bicara": [
+    "umum",
+    "rekan"
+  ],
   "nuance": "Lebih tegas dan mutlak dari 制限する — 禁止する berarti melarang sepenuhnya, bukan sekadar membatasi. Bisa digunakan oleh individu maupun otoritas. 禁止 sering muncul di papan peringatan: 立入禁止 = 'dilarang masuk', 撮影禁止 = 'dilarang memotret'.",
   "conj_type": "suru",
   "examples": [
-    {"jp": "この公園ではペットの立ち入りが<b>禁止されて</b>いる。", "id": "Hewan peliharaan dilarang masuk ke taman ini.", "level": "n2", "tags": ["kehidupan-sehari"]},
-    {"jp": "法律により未成年者への飲酒は<b>禁止されて</b>いる。", "id": "Konsumsi alkohol bagi remaja di bawah umur dilarang oleh undang-undang.", "level": "n2", "tags": ["hukum-aturan"]},
-    {"jp": "会議中の私語は<b>禁止</b>だと注意された。", "id": "Kami diperingatkan bahwa ngobrol sendiri selama rapat dilarang.", "level": "n2", "tags": ["pekerjaan", "bisnis"]}
+    {
+      "jp": "この公園ではペットの立ち入りが<b>禁止されて</b>いる。",
+      "id": "Hewan peliharaan dilarang masuk ke taman ini.",
+      "level": "n2",
+      "tags": [
+        "kehidupan-sehari"
+      ]
+    },
+    {
+      "jp": "法律により未成年者への飲酒は<b>禁止されて</b>いる。",
+      "id": "Konsumsi alkohol bagi remaja di bawah umur dilarang oleh undang-undang.",
+      "level": "n2",
+      "tags": [
+        "hukum-aturan"
+      ]
+    },
+    {
+      "jp": "会議中の私語は<b>禁止</b>だと注意された。",
+      "id": "Kami diperingatkan bahwa ngobrol sendiri selama rapat dilarang.",
+      "level": "n2",
+      "tags": [
+        "pekerjaan",
+        "bisnis"
+      ]
+    }
   ],
-  "synonyms": ["不許可にする", "禁じる"],
-  "antonyms": ["許可する", "認める"],
-  "see_also": ["規制する", "制限する"],
+  "synonyms": [
+    "不許可にする",
+    "禁じる"
+  ],
+  "antonyms": [
+    "許可する",
+    "認める"
+  ],
+  "see_also": [
+    "規制する",
+    "制限する"
+  ],
   "provenance": "jlpt-corpus",
   "added_v": "v15"
 },
@@ -8660,8 +9680,9 @@ window.vocabN2_Verbs = [
       "tags": [
         "hukum-aturan",
         "bisnis"
-      ]
-    },
+      ],
+  "pitch": {"pattern":4,"category":"nakadaka","mora_count":5,"downstep_mora":4,"contour":"ギムヅケ＼ル"}
+},
     {
       "jp": "新しい規則では、従業員に定期健康診断を受けることが<b>義務付けられた</b>。",
       "id": "Aturan baru mewajibkan karyawan untuk menjalani pemeriksaan kesehatan berkala.",
@@ -8734,19 +9755,59 @@ window.vocabN2_Verbs = [
   "common": true,
   "related_grammar": [],
   "formalitas": 4,
-  "domain": ["bisnis", "politik-masyarakat", "pekerjaan"],
+  "domain": [
+    "bisnis",
+    "politik-masyarakat",
+    "pekerjaan"
+  ],
   "register": "formal",
-  "lawan_bicara": ["rekan", "umum"],
+  "lawan_bicara": [
+    "rekan",
+    "umum"
+  ],
   "nuance": "Berbeda dari 速める (hayameru = mempercepat secara fisik) — 促進する berarti mendorong atau memfasilitasi kemajuan suatu proses, kebijakan, atau program secara aktif. Digunakan dalam konteks promosi kebijakan, pengembangan, atau advokasi. 経済促進 = 'promosi ekonomi'.",
   "conj_type": "suru",
   "examples": [
-    {"jp": "政府は再生可能エネルギーの普及を<b>促進する</b>ために補助金を出した。", "id": "Pemerintah memberikan subsidi untuk mendorong penyebaran energi terbarukan.", "level": "n2", "tags": ["politik-masyarakat", "alam-lingkungan"]},
-    {"jp": "この施策は地域経済の活性化を<b>促進する</b>ことが期待されている。", "id": "Kebijakan ini diharapkan dapat mendorong kebangkitan ekonomi daerah.", "level": "n2", "tags": ["bisnis", "ekonomi-keuangan"]},
-    {"jp": "国際交流を<b>促進する</b>ために奨学金制度が設けられた。", "id": "Program beasiswa dibentuk untuk memfasilitasi pertukaran internasional.", "level": "n2", "tags": ["pendidikan", "politik-masyarakat"]}
+    {
+      "jp": "政府は再生可能エネルギーの普及を<b>促進する</b>ために補助金を出した。",
+      "id": "Pemerintah memberikan subsidi untuk mendorong penyebaran energi terbarukan.",
+      "level": "n2",
+      "tags": [
+        "politik-masyarakat",
+        "alam-lingkungan"
+      ],
+  "pitch": {"pattern":4,"category":"nakadaka","mora_count":5,"downstep_mora":4,"contour":"ギムヅケ＼ル"}
+},
+    {
+      "jp": "この施策は地域経済の活性化を<b>促進する</b>ことが期待されている。",
+      "id": "Kebijakan ini diharapkan dapat mendorong kebangkitan ekonomi daerah.",
+      "level": "n2",
+      "tags": [
+        "bisnis",
+        "ekonomi-keuangan"
+      ]
+    },
+    {
+      "jp": "国際交流を<b>促進する</b>ために奨学金制度が設けられた。",
+      "id": "Program beasiswa dibentuk untuk memfasilitasi pertukaran internasional.",
+      "level": "n2",
+      "tags": [
+        "pendidikan",
+        "politik-masyarakat"
+      ]
+    }
   ],
-  "synonyms": ["推進する", "奨励する"],
-  "antonyms": ["阻止する", "妨げる"],
-  "see_also": ["阻止する"],
+  "synonyms": [
+    "推進する",
+    "奨励する"
+  ],
+  "antonyms": [
+    "阻止する",
+    "妨げる"
+  ],
+  "see_also": [
+    "阻止する"
+  ],
   "provenance": "jlpt-corpus",
   "added_v": "v15"
 },
@@ -8763,19 +9824,55 @@ window.vocabN2_Verbs = [
   "common": true,
   "related_grammar": [],
   "formalitas": 4,
-  "domain": ["hukum-aturan", "politik-masyarakat"],
+  "domain": [
+    "hukum-aturan",
+    "politik-masyarakat"
+  ],
   "register": "formal",
-  "lawan_bicara": ["umum"],
+  "lawan_bicara": [
+    "umum"
+  ],
   "nuance": "Lebih kuat dan aktif dari 防ぐ (fusegu = mencegah secara umum) — 阻止する menekankan tindakan aktif dan sengaja untuk menghentikan atau menghalangi sesuatu yang sedang atau akan dilakukan. Sering digunakan dalam konteks politik, aksi protes, hukum, atau militer.",
   "conj_type": "suru",
   "examples": [
-    {"jp": "市民団体が有害施設の建設を<b>阻止する</b>ために集会を開いた。", "id": "Kelompok warga mengadakan pertemuan untuk mencegah pembangunan fasilitas berbahaya.", "level": "n2", "tags": ["politik-masyarakat"]},
-    {"jp": "警察は暴動の拡大を<b>阻止した</b>。", "id": "Polisi berhasil menghentikan meluasnya kerusuhan.", "level": "n2", "tags": ["hukum-aturan"]},
-    {"jp": "その法案の成立を<b>阻止する</b>ため、野党が強硬に抵抗した。", "id": "Partai oposisi melawan dengan keras untuk menghalangi pengesahan rancangan undang-undang tersebut.", "level": "n2", "tags": ["politik-masyarakat", "hukum-aturan"]}
+    {
+      "jp": "市民団体が有害施設の建設を<b>阻止する</b>ために集会を開いた。",
+      "id": "Kelompok warga mengadakan pertemuan untuk mencegah pembangunan fasilitas berbahaya.",
+      "level": "n2",
+      "tags": [
+        "politik-masyarakat"
+      ]
+    },
+    {
+      "jp": "警察は暴動の拡大を<b>阻止した</b>。",
+      "id": "Polisi berhasil menghentikan meluasnya kerusuhan.",
+      "level": "n2",
+      "tags": [
+        "hukum-aturan"
+      ]
+    },
+    {
+      "jp": "その法案の成立を<b>阻止する</b>ため、野党が強硬に抵抗した。",
+      "id": "Partai oposisi melawan dengan keras untuk menghalangi pengesahan rancangan undang-undang tersebut.",
+      "level": "n2",
+      "tags": [
+        "politik-masyarakat",
+        "hukum-aturan"
+      ]
+    }
   ],
-  "synonyms": ["妨げる", "食い止める"],
-  "antonyms": ["促進する", "推進する"],
-  "see_also": ["促進する", "規制する"],
+  "synonyms": [
+    "妨げる",
+    "食い止める"
+  ],
+  "antonyms": [
+    "促進する",
+    "推進する"
+  ],
+  "see_also": [
+    "促進する",
+    "規制する"
+  ],
   "provenance": "jlpt-corpus",
   "added_v": "v15"
 },
@@ -8811,8 +9908,9 @@ window.vocabN2_Verbs = [
       "tags": [
         "keluarga",
         "pekerjaan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"カ＼イゴ"}
+},
     {
       "jp": "<b>介護</b>保険制度は高齢者を支えるための重要な仕組みだ。",
       "id": "Sistem asuransi perawatan lansia adalah mekanisme penting untuk mendukung para manula.",
@@ -8862,8 +9960,9 @@ window.vocabN2_Verbs = [
       "tags": [
         "keluarga",
         "pekerjaan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"イ＼クジ"}
+},
     {
       "jp": "<b>育児</b>休業を取得する男性が少しずつ増えている。",
       "id": "Jumlah laki-laki yang mengambil cuti pengasuhan anak perlahan-lahan meningkat.",
@@ -8913,8 +10012,9 @@ window.vocabN2_Verbs = [
       "tags": [
         "politik-masyarakat",
         "pendidikan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ホイク￣"}
+},
     {
       "jp": "<b>保育</b>の質を高めるために、保育士の待遇改善が求められている。",
       "id": "Untuk meningkatkan kualitas layanan penitipan anak, perbaikan kondisi kerja pengasuh anak sangat dibutuhkan.",
@@ -8973,8 +10073,9 @@ window.vocabN2_Verbs = [
       "tags": [
         "kesehatan",
         "politik-masyarakat"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ホイク￣"}
+},
     {
       "jp": "<b>自殺</b>の背景には、孤立や経済的困窮など複合的な要因がある。",
       "id": "Di balik bunuh diri terdapat berbagai faktor kompleks seperti isolasi dan tekanan ekonomi.",
@@ -9024,8 +10125,9 @@ window.vocabN2_Verbs = [
       "tags": [
         "kesehatan",
         "politik-masyarakat"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"コリツ￣"}
+},
     {
       "jp": "近所との関係が薄れ、<b>孤立</b>した高齢者が増えている。",
       "id": "Semakin banyak lansia yang terisolasi akibat melemahnya hubungan dengan tetangga.",
@@ -9074,8 +10176,9 @@ window.vocabN2_Verbs = [
       "tags": [
         "politik-masyarakat",
         "kehidupan-sehari"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":6,"downstep_mora":3,"contour":"サイカ＼イハツ"}
+},
     {
       "jp": "<b>再開発</b>計画をめぐって、住民と行政の間で議論が続いている。",
       "id": "Perdebatan antara warga dan pemerintah seputar rencana redevelopment terus berlanjut.",
@@ -9125,8 +10228,9 @@ window.vocabN2_Verbs = [
       "tags": [
         "teknologi",
         "hukum-aturan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":5,"downstep_mora":0,"contour":"デジタルカ￣"}
+},
     {
       "jp": "<b>デジタル化</b>によって、紙の書類が大幅に減った。",
       "id": "Berkat digitalisasi, dokumen kertas berkurang drastis.",
@@ -9188,8 +10292,9 @@ window.vocabN2_Verbs = [
       "tags": [
         "teknologi",
         "pekerjaan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ジドウカ￣"}
+},
     {
       "jp": "定型的な作業を<b>自動化</b>することで、社員はより創造的な仕事に集中できる。",
       "id": "Dengan mengotomatisasi pekerjaan rutin, karyawan bisa berkonsentrasi pada pekerjaan yang lebih kreatif.",
@@ -9250,8 +10355,9 @@ window.vocabN2_Verbs = [
       "tags": [
         "teknologi",
         "hukum-aturan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ジドウカ￣"}
+},
     {
       "jp": "<b>アップデート</b>後に新機能が追加され、使い勝手が向上した。",
       "id": "Setelah pembaruan, fitur baru ditambahkan dan kemudahan penggunaan meningkat.",
@@ -9298,8 +10404,9 @@ window.vocabN2_Verbs = [
       "level": "n2",
       "tags": [
         "teknologi"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ツウシン￣"}
+},
     {
       "jp": "衛星<b>通信</b>を利用することで、遠隔地でもインターネットが使えるようになった。",
       "id": "Dengan memanfaatkan komunikasi satelit, internet kini bisa digunakan di daerah terpencil.",
@@ -9662,8 +10769,9 @@ window.vocabN2_Verbs = [
       "tags": [
         "alam-lingkungan",
         "hukum-aturan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ハイシュツ￣"}
+},
     {
       "jp": "政府は温室効果ガスの<b>排出</b>量を2030年までに46%削減する目標を掲げた。",
       "id": "Pemerintah menetapkan target pengurangan emisi gas rumah kaca sebesar 46% pada tahun 2030.",
@@ -9714,8 +10822,9 @@ window.vocabN2_Verbs = [
       "tags": [
         "kehidupan-sehari",
         "alam-lingkungan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":0,"downstep_mora":0,"contour":"￣"}
+},
     {
       "jp": "この自治体では、プラスチックを分別して<b>リサイクル</b>に出すことが義務付けられている。",
       "id": "Di pemerintah daerah ini, pemisahan plastik untuk didaur ulang diwajibkan.",
@@ -9766,8 +10875,9 @@ window.vocabN2_Verbs = [
       "tags": [
         "hukum-aturan",
         "alam-lingkungan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"キセイ￣"}
+},
     {
       "jp": "農薬の使用に関する<b>規制</b>を守ることは、食の安全と環境保護の両面で重要だ。",
       "id": "Mematuhi regulasi penggunaan pestisida penting baik untuk keamanan pangan maupun perlindungan lingkungan.",
@@ -9818,8 +10928,9 @@ window.vocabN2_Verbs = [
       "tags": [
         "hukum-aturan",
         "alam-lingkungan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":4,"category":"nakadaka","mora_count":5,"downstep_mora":4,"contour":"ギムヅケ＼ル"}
+},
     {
       "jp": "自治体は家庭ごみのリサイクル分別を住民に<b>義務付けた</b>。",
       "id": "Pemerintah daerah mewajibkan warga untuk memisahkan sampah rumah tangga untuk didaur ulang.",
@@ -9903,8 +11014,9 @@ window.vocabN2_Verbs = [
       "tags": [
         "politik-masyarakat",
         "alam-lingkungan"
-      ]
-    },
+      ],
+  "pitch": {"pattern":4,"category":"nakadaka","mora_count":5,"downstep_mora":4,"contour":"ギムヅケ＼ル"}
+},
     {
       "jp": "その企業は廃棄物削減に真剣に<b>取り組む</b>ことを宣言した。",
       "id": "Perusahaan tersebut menyatakan komitmennya untuk serius menangani pengurangan limbah.",
@@ -9980,14 +11092,38 @@ window.vocabN2_Verbs = [
   "common": true,
   "related_grammar": [],
   "formalitas": 4,
-  "domain": ["alam-lingkungan", "bisnis", "ekonomi-keuangan"],
+  "domain": [
+    "alam-lingkungan",
+    "bisnis",
+    "ekonomi-keuangan"
+  ],
   "register": "formal",
-  "lawan_bicara": ["rekan", "umum"],
+  "lawan_bicara": [
+    "rekan",
+    "umum"
+  ],
   "nuance": "Lebih formal dan terukur dari 減らす (herasu = mengurangi secara umum, informal) — 削減する menyiratkan pengurangan yang disengaja, sistematis, dan seringkali berdasarkan target kuantitatif. Sangat sering muncul dalam konteks kebijakan: 排出量削減 = pengurangan emisi, コスト削減 = pemangkasan biaya, 人員削減 = pengurangan tenaga kerja.",
   "conj_type": "suru",
   "examples": [
-    {"jp": "2030年までにCO₂排出量を50%<b>削減する</b>という目標が設定された。", "id": "Target pengurangan emisi CO₂ sebesar 50% pada tahun 2030 telah ditetapkan.", "level": "n2", "tags": ["alam-lingkungan", "politik-masyarakat"]},
-    {"jp": "省エネ設備の導入により、工場のエネルギーコストを大幅に<b>削減した</b>。", "id": "Dengan memasang peralatan hemat energi, biaya energi pabrik berhasil dikurangi secara signifikan.", "level": "n2", "tags": ["bisnis", "ekonomi-keuangan"]}
+    {
+      "jp": "2030年までにCO₂排出量を50%<b>削減する</b>という目標が設定された。",
+      "id": "Target pengurangan emisi CO₂ sebesar 50% pada tahun 2030 telah ditetapkan.",
+      "level": "n2",
+      "tags": [
+        "alam-lingkungan",
+        "politik-masyarakat"
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"トリク＼ム"}
+},
+    {
+      "jp": "省エネ設備の導入により、工場のエネルギーコストを大幅に<b>削減した</b>。",
+      "id": "Dengan memasang peralatan hemat energi, biaya energi pabrik berhasil dikurangi secara signifikan.",
+      "level": "n2",
+      "tags": [
+        "bisnis",
+        "ekonomi-keuangan"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
@@ -10008,14 +11144,37 @@ window.vocabN2_Verbs = [
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
-  "domain": ["pekerjaan", "bisnis", "alam-lingkungan"],
+  "domain": [
+    "pekerjaan",
+    "bisnis",
+    "alam-lingkungan"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["umum", "rekan"],
+  "lawan_bicara": [
+    "umum",
+    "rekan"
+  ],
   "nuance": "Berbeda dari 実現する (jitsugen suru = mewujudkan sesuatu yang masih bersifat impian atau visi) — 達成する lebih fokus pada pencapaian target atau tujuan yang sudah ditetapkan secara konkret dan terukur. 目標を達成する = mencapai target. Dalam konteks lingkungan, sering digunakan dengan angka spesifik seperti 削減目標を達成する.",
   "conj_type": "suru",
   "examples": [
-    {"jp": "日本はパリ協定で定めた排出削減目標を<b>達成する</b>ために様々な対策を講じている。", "id": "Jepang menerapkan berbagai langkah untuk mencapai target pengurangan emisi yang ditetapkan dalam Perjanjian Paris.", "level": "n2", "tags": ["politik-masyarakat", "alam-lingkungan"]},
-    {"jp": "SDGsの目標を期限内に<b>達成する</b>ことは容易ではない。", "id": "Mencapai tujuan SDGs dalam tenggat waktu yang ditentukan bukanlah hal yang mudah.", "level": "n2", "tags": ["politik-masyarakat", "alam-lingkungan"]}
+    {
+      "jp": "日本はパリ協定で定めた排出削減目標を<b>達成する</b>ために様々な対策を講じている。",
+      "id": "Jepang menerapkan berbagai langkah untuk mencapai target pengurangan emisi yang ditetapkan dalam Perjanjian Paris.",
+      "level": "n2",
+      "tags": [
+        "politik-masyarakat",
+        "alam-lingkungan"
+      ]
+    },
+    {
+      "jp": "SDGsの目標を期限内に<b>達成する</b>ことは容易ではない。",
+      "id": "Mencapai tujuan SDGs dalam tenggat waktu yang ditentukan bukanlah hal yang mudah.",
+      "level": "n2",
+      "tags": [
+        "politik-masyarakat",
+        "alam-lingkungan"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
@@ -10036,14 +11195,38 @@ window.vocabN2_Verbs = [
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
-  "domain": ["pekerjaan", "bisnis", "alam-lingkungan", "politik-masyarakat"],
+  "domain": [
+    "pekerjaan",
+    "bisnis",
+    "alam-lingkungan",
+    "politik-masyarakat"
+  ],
   "register": "neutral",
-  "lawan_bicara": ["umum", "rekan"],
+  "lawan_bicara": [
+    "umum",
+    "rekan"
+  ],
   "nuance": "Berbeda dari 役立つ (yakudatsu = berguna, bermanfaat — lebih pasif dan tidak selalu disengaja) — 貢献する menekankan tindakan aktif dan disengaja memberikan kontribusi positif yang bermakna bagi suatu tujuan, organisasi, atau masyarakat. Ada nuansa altruistik dan komitmen serius. Sering muncul dalam laporan CSR dan pernyataan visi perusahaan.",
   "conj_type": "suru",
   "examples": [
-    {"jp": "再生可能エネルギーの普及が気候変動対策に大きく<b>貢献して</b>いる。", "id": "Penyebaran energi terbarukan berkontribusi besar dalam penanganan perubahan iklim.", "level": "n2", "tags": ["alam-lingkungan", "bisnis"]},
-    {"jp": "個人の省エネ行動も地球環境の保全に<b>貢献する</b>ことができる。", "id": "Tindakan hemat energi dari individu pun bisa berkontribusi pada pelestarian lingkungan bumi.", "level": "n2", "tags": ["kehidupan-sehari", "alam-lingkungan"]}
+    {
+      "jp": "再生可能エネルギーの普及が気候変動対策に大きく<b>貢献して</b>いる。",
+      "id": "Penyebaran energi terbarukan berkontribusi besar dalam penanganan perubahan iklim.",
+      "level": "n2",
+      "tags": [
+        "alam-lingkungan",
+        "bisnis"
+      ]
+    },
+    {
+      "jp": "個人の省エネ行動も地球環境の保全に<b>貢献する</b>ことができる。",
+      "id": "Tindakan hemat energi dari individu pun bisa berkontribusi pada pelestarian lingkungan bumi.",
+      "level": "n2",
+      "tags": [
+        "kehidupan-sehari",
+        "alam-lingkungan"
+      ]
+    }
   ],
   "synonyms": [],
   "antonyms": [],
@@ -10064,72 +11247,43 @@ window.vocabN2_Verbs = [
   "common": true,
   "related_grammar": [],
   "formalitas": 4,
-  "domain": ["pendidikan", "politik-masyarakat", "alam-lingkungan"],
-  "register": "formal",
-  "lawan_bicara": ["umum", "rekan"],
-  "nuance": "Berbeda dari 教育する (kyouiku suru = mendidik secara formal dan sistematis dalam institusi) — 啓発する lebih fokus pada penyadaran dan pembukaan pikiran seseorang terhadap isu yang belum mereka sadari atau pahami sebelumnya. Ada konotasi 'membuka mata' dan mendorong kesadaran kritis. Sering digunakan dalam kampanye sosial, kesehatan, dan lingkungan: 環境啓発活動 = kegiatan penyadaran lingkungan.",
-  "conj_type": "suru",
-  "examples": [
-    {"jp": "環境省は市民を<b>啓発する</b>ためのポスターや動画を全国に配布した。", "id": "Kementerian Lingkungan Hidup mendistribusikan poster dan video ke seluruh negeri untuk menyadarkan masyarakat.", "level": "n2", "tags": ["alam-lingkungan", "politik-masyarakat"]},
-    {"jp": "学校での環境教育は、次世代を<b>啓発する</b>上で欠かせない役割を果たしている。", "id": "Pendidikan lingkungan di sekolah memainkan peran yang tidak tergantikan dalam menyadarkan generasi berikutnya.", "level": "n2", "tags": ["pendidikan", "alam-lingkungan"]}
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "provenance": "jlpt-corpus",
-  "added_v": "v15"
-},
-
-// ── Staged Expansion (720) ──
-
-{
-  "id": "vg-n2-00458",
-  "word": "あいかわらず",
-  "reading": "あいかわらず",
-  "romaji": "aikawarazu",
-  "meaning_id": "seperti biasa",
-  "meaning_en": "as ever; as usual; the same",
-  "jlpt": "n2",
-  "pos": "adverb",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
   "domain": [
-    "umum",
-    "kehidupan-sehari-hari"
+    "pendidikan",
+    "politik-masyarakat",
+    "alam-lingkungan"
   ],
   "register": "formal",
   "lawan_bicara": [
-    "rekan-kerja",
-    "umum"
+    "umum",
+    "rekan"
   ],
-  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
-  "conj_type": null,
+  "nuance": "Berbeda dari 教育する (kyouiku suru = mendidik secara formal dan sistematis dalam institusi) — 啓発する lebih fokus pada penyadaran dan pembukaan pikiran seseorang terhadap isu yang belum mereka sadari atau pahami sebelumnya. Ada konotasi 'membuka mata' dan mendorong kesadaran kritis. Sering digunakan dalam kampanye sosial, kesehatan, dan lingkungan: 環境啓発活動 = kegiatan penyadaran lingkungan.",
+  "conj_type": "suru",
   "examples": [
     {
-      "jp": "君は相変わらず健康そうに見える。",
-      "id": "Kamu terlihat sehat seperti biasanya.",
+      "jp": "環境省は市民を<b>啓発する</b>ためのポスターや動画を全国に配布した。",
+      "id": "Kementerian Lingkungan Hidup mendistribusikan poster dan video ke seluruh negeri untuk menyadarkan masyarakat.",
       "level": "n2",
       "tags": [
-        "umum"
+        "alam-lingkungan",
+        "politik-masyarakat"
       ]
     },
     {
-      "jp": "彼は相変わらず忙しいようである。",
-      "id": "Dia tampak sibuk seperti biasanya.",
+      "jp": "学校での環境教育は、次世代を<b>啓発する</b>上で欠かせない役割を果たしている。",
+      "id": "Pendidikan lingkungan di sekolah memainkan peran yang tidak tergantikan dalam menyadarkan generasi berikutnya.",
       "level": "n2",
       "tags": [
-        "umum"
+        "pendidikan",
+        "alam-lingkungan"
       ]
     }
   ],
   "synonyms": [],
   "antonyms": [],
   "see_also": [],
-  "added_v": "v19.3.1-staged-merge",
-  "provenance": "expansion-staged",
-  "jmdict_seq": "",
-  "frequency": 1000
+  "provenance": "jlpt-corpus",
+  "added_v": "v15"
 },
 
 {
@@ -10140,7 +11294,7 @@ window.vocabN2_Verbs = [
   "meaning_id": "bertemu",
   "meaning_en": "to meet; to encounter (undesirable nuance)",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -10158,12 +11312,13 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "駅へ行く途中でにわか雨に遭った。",
-      "id": "I was caught in a shower on my way to the station.",
+      "id": "Saya ketahuan sedang mandi dalam perjalanan ke stasiun.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":2,"downstep_mora":1,"contour":"ア＼ウ"}
+},
     {
       "jp": "前に彼にあったのを覚えている。",
       "id": "I remember seeing him before.",
@@ -10187,10 +11342,10 @@ window.vocabN2_Verbs = [
   "word": "扇ぐ",
   "reading": "あおぐ",
   "romaji": "aogu",
-  "meaning_id": "me-fan",
+  "meaning_id": "kipas angin",
   "meaning_en": "to fan; to flap",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -10208,15 +11363,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "彼はあおいで火をおこした。",
-      "id": "He fanned the fire into flame.",
+      "id": "Dia mengipasi api menjadi nyala api.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"アオ＼グ"}
+},
     {
       "jp": "少年は帽子で自分を煽いだ。",
-      "id": "The boy fanned himself with his hat.",
+      "id": "Anak laki-laki itu mengipasi dirinya dengan topinya.",
       "level": "n2",
       "tags": [
         "umum"
@@ -10237,10 +11393,10 @@ window.vocabN2_Verbs = [
   "word": "あきれる",
   "reading": "あきれる",
   "romaji": "akireru",
-  "meaning_id": "me-be amazed",
+  "meaning_id": "kagum",
   "meaning_en": "to be amazed; to be shocked",
   "jlpt": "n2",
-  "pos": "verb-ichidan",
+  "pos": "verb-ru",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -10258,15 +11414,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "あの人にはあきれてしまった。",
-      "id": "I am sick and tired of him.",
+      "id": "Aku muak dan bosan padanya.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"アキレル￣"}
+},
     {
       "jp": "君の厚かましいのには呆れたよ。",
-      "id": "I am amazed at your audacity.",
+      "id": "Saya kagum dengan keberanian Anda.",
       "level": "n2",
       "tags": [
         "umum"
@@ -10287,7 +11444,7 @@ window.vocabN2_Verbs = [
   "word": "あくび",
   "reading": "あくび",
   "romaji": "akubi",
-  "meaning_id": "yawn",
+  "meaning_id": "menguap",
   "meaning_en": "yawn",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -10308,115 +11465,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "あの先生の講義はあくびが出る。",
-      "id": "His lectures are terribly boring.",
+      "id": "Ceramahnya sangat membosankan.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"ア＼クビ"}
+},
     {
       "jp": "彼を見るたびに彼はあくびをしていた。",
-      "id": "Every time I looked at him, he was yawning.",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    }
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "added_v": "v19.3.1-staged-merge",
-  "provenance": "expansion-staged",
-  "jmdict_seq": "",
-  "frequency": 1000
-},
-
-{
-  "id": "vg-n2-00468",
-  "word": "あくまで",
-  "reading": "あくまで",
-  "romaji": "akumade",
-  "meaning_id": "me-the end",
-  "meaning_en": "to the end; to the last; stubbornly",
-  "jlpt": "n2",
-  "pos": "adverb",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": [
-    "umum",
-    "kehidupan-sehari-hari"
-  ],
-  "register": "formal",
-  "lawan_bicara": [
-    "rekan-kerja",
-    "umum"
-  ],
-  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
-  "conj_type": null,
-  "examples": [
-    {
-      "jp": "彼はその計画にあくまで反対した。",
-      "id": "He opposed the plan to the last.",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    },
-    {
-      "jp": "席があくまでしばらく待つしかない。",
-      "id": "We can do nothing but wait for a while until the seats are available.",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    }
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "added_v": "v19.3.1-staged-merge",
-  "provenance": "expansion-staged",
-  "jmdict_seq": "",
-  "frequency": 1000
-},
-
-{
-  "id": "vg-n2-00469",
-  "word": "明け方",
-  "reading": "あけがた",
-  "romaji": "akegata",
-  "meaning_id": "dawn",
-  "meaning_en": "dawn",
-  "jlpt": "n2",
-  "pos": "adverb",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": [
-    "umum",
-    "kehidupan-sehari-hari"
-  ],
-  "register": "formal",
-  "lawan_bicara": [
-    "rekan-kerja",
-    "umum"
-  ],
-  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
-  "conj_type": null,
-  "examples": [
-    {
-      "jp": "その事故は明け方に起こった。",
-      "id": "The accident occurred at dawn.",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    },
-    {
-      "jp": "僕らは明け方に起きるために早く寝た。",
-      "id": "We hit the hay early in order to get up at dawn.",
+      "id": "Setiap kali saya melihatnya, dia menguap.",
       "level": "n2",
       "tags": [
         "umum"
@@ -10437,10 +11495,10 @@ window.vocabN2_Verbs = [
   "word": "挙げる",
   "reading": "あげる",
   "romaji": "ageru",
-  "meaning_id": "me-raise",
+  "meaning_id": "menaikkan",
   "meaning_en": "to raise; to fly",
   "jlpt": "n2",
-  "pos": "verb-ichidan",
+  "pos": "verb-ru",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -10458,15 +11516,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "質問があれば右手を挙げて下さい。",
-      "id": "If you have a question, please raise your right hand.",
+      "id": "Jika Anda memiliki pertanyaan, silakan angkat tangan kanan Anda.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"アゲル￣"}
+},
     {
       "jp": "彼女は歌手として名を挙げた。",
-      "id": "She made a name for herself as a singer.",
+      "id": "Dia membuat nama untuk dirinya sendiri sebagai penyanyi.",
       "level": "n2",
       "tags": [
         "umum"
@@ -10487,10 +11546,10 @@ window.vocabN2_Verbs = [
   "word": "揚げる",
   "reading": "あげる",
   "romaji": "ageru",
-  "meaning_id": "me-lift",
+  "meaning_id": "angkat",
   "meaning_en": "to lift; to fry",
   "jlpt": "n2",
-  "pos": "verb-ichidan",
+  "pos": "verb-ru",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -10508,15 +11567,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "彼はたこを揚げた。",
-      "id": "He flew a kite.",
+      "id": "Dia menerbangkan layang-layang.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"アゲル￣"}
+},
     {
       "jp": "この鶏肉はよく揚げられている。",
-      "id": "This chicken is fried well.",
+      "id": "Ayam ini digoreng dengan baik.",
       "level": "n2",
       "tags": [
         "umum"
@@ -10537,10 +11597,10 @@ window.vocabN2_Verbs = [
   "word": "憧れる",
   "reading": "あこがれる",
   "romaji": "akogareru",
-  "meaning_id": "me-long for",
+  "meaning_id": "rindu untuk",
   "meaning_en": "to long for; to yearn after; to admire",
   "jlpt": "n2",
-  "pos": "verb-ichidan",
+  "pos": "verb-ru",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -10562,11 +11622,12 @@ window.vocabN2_Verbs = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":5,"downstep_mora":0,"contour":"アコガレル￣"}
+},
     {
       "jp": "彼は彼らが名声に憧れていると思った。",
-      "id": "He thought of them yearning for fame.",
+      "id": "Dia memikirkan mereka mendambakan ketenaran.",
       "level": "n2",
       "tags": [
         "umum"
@@ -10587,10 +11648,10 @@ window.vocabN2_Verbs = [
   "word": "味わう",
   "reading": "あじわう",
   "romaji": "ajiwau",
-  "meaning_id": "me-taste",
+  "meaning_id": "rasa",
   "meaning_en": "to taste; to savor; to relish",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -10608,15 +11669,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "あのテーマパークでスリルを味わった。",
-      "id": "We had a thrilling time at the theme park.",
+      "id": "Kami bersenang-senang di taman hiburan.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"アジワ＼ウ"}
+},
     {
       "jp": "私は口で味わい、食べ、そして飲む。",
-      "id": "I taste, eat and drink with my mouth.",
+      "id": "Saya mengecap, makan dan minum dengan mulut saya.",
       "level": "n2",
       "tags": [
         "umum"
@@ -10637,10 +11699,10 @@ window.vocabN2_Verbs = [
   "word": "預かる",
   "reading": "あずかる",
   "romaji": "azukaru",
-  "meaning_id": "me-keep in custody",
+  "meaning_id": "tetap dalam tahanan",
   "meaning_en": "to keep in custody; to receive on deposit; to take charge of",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -10658,15 +11720,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "４時まで荷物を預かっていただけませんか。",
-      "id": "Could you keep my bags here until four?",
+      "id": "Bisakah Anda menyimpan tas saya di sini sampai jam empat?",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"アズカ＼ル"}
+},
     {
       "jp": "荷物を預かって欲しいのですが。",
-      "id": "Would you keep this baggage, please?",
+      "id": "Tolong simpan bagasi ini?",
       "level": "n2",
       "tags": [
         "umum"
@@ -10687,10 +11750,10 @@ window.vocabN2_Verbs = [
   "word": "暖まる",
   "reading": "あたたまる",
   "romaji": "atatamaru",
-  "meaning_id": "me-warm up",
+  "meaning_id": "pemanasan",
   "meaning_en": "to warm up; to get warm",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -10708,15 +11771,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "ここにお掛けになって暖まってください。",
-      "id": "Sit down here and warm yourself.",
+      "id": "Duduklah di sini dan hangatkan dirimu.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":4,"category":"nakadaka","mora_count":5,"downstep_mora":4,"contour":"アタタマ＼ル"}
+},
     {
       "jp": "暖まるまでエンジンをかけておきなさい。",
-      "id": "Run the engine till it gets warm.",
+      "id": "Jalankan mesin sampai menjadi hangat.",
       "level": "n2",
       "tags": [
         "umum"
@@ -10740,7 +11804,7 @@ window.vocabN2_Verbs = [
   "meaning_id": "hangat",
   "meaning_en": "to warm; to heat",
   "jlpt": "n2",
-  "pos": "verb-ichidan",
+  "pos": "verb-ru",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -10758,15 +11822,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "ミルクを温めてくれませんか。",
-      "id": "Will you warm the milk, please?",
+      "id": "Tolong hangatkan susunya?",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":4,"category":"nakadaka","mora_count":5,"downstep_mora":4,"contour":"アタタメ＼ル"}
+},
     {
       "jp": "彼女は冷えたスープを夕食に暖めた。",
-      "id": "She heated up the cold soup for supper.",
+      "id": "Dia memanaskan sup dingin untuk makan malam.",
       "level": "n2",
       "tags": [
         "umum"
@@ -10787,7 +11852,7 @@ window.vocabN2_Verbs = [
   "word": "あちらこちら",
   "reading": "あちらこちら",
   "romaji": "achirakochira",
-  "meaning_id": "here and there",
+  "meaning_id": "di sana-sini",
   "meaning_en": "here and there",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -10812,11 +11877,12 @@ window.vocabN2_Verbs = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":4,"category":"nakadaka","mora_count":6,"downstep_mora":4,"contour":"アチラコ＼チラ"}
+},
     {
       "jp": "その犬はあちらこちらに頭を向けた。",
-      "id": "The dog turned its head this way and that.",
+      "id": "Anjing itu menoleh ke sana kemari.",
       "level": "n2",
       "tags": [
         "umum"
@@ -10858,15 +11924,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "その気体は圧縮されてボンベに詰め込まれた。",
-      "id": "The gas was compressed into a gas cylinder.",
+      "id": "Gas tersebut dikompres ke dalam tabung gas.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"アッシュク￣"}
+},
     {
       "jp": "圧縮したファイルを添付で送ってください。",
-      "id": "Send it to me as a compressed file.",
+      "id": "Kirimkan kepada saya sebagai file terkompresi.",
       "level": "n2",
       "tags": [
         "umum"
@@ -10887,10 +11954,10 @@ window.vocabN2_Verbs = [
   "word": "あてはまる",
   "reading": "あてはまる",
   "romaji": "atehamaru",
-  "meaning_id": "me-be applicable",
+  "meaning_id": "dapat diterapkan",
   "meaning_en": "to be applicable; to come under (a category); to fulfill",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -10908,15 +11975,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "この規則は１年生には当てはまらない。",
-      "id": "This rule doesn't apply to first-year students.",
+      "id": "Aturan ini tidak berlaku untuk siswa tahun pertama.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":4,"category":"nakadaka","mora_count":5,"downstep_mora":4,"contour":"アテハマ＼ル"}
+},
     {
       "jp": "その規則はこの場合に当てはまる。",
-      "id": "The rule holds good in this case.",
+      "id": "Aturannya berlaku dalam kasus ini.",
       "level": "n2",
       "tags": [
         "umum"
@@ -10937,10 +12005,10 @@ window.vocabN2_Verbs = [
   "word": "あてはめる",
   "reading": "あてはめる",
   "romaji": "atehameru",
-  "meaning_id": "me-apply",
+  "meaning_id": "terapkan",
   "meaning_en": "to apply; to adapt",
   "jlpt": "n2",
-  "pos": "verb-ichidan",
+  "pos": "verb-ru",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -10958,15 +12026,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "この規則は貴方には当てはめることはできない。",
-      "id": "This rule cannot be applied to you.",
+      "id": "Aturan ini tidak dapat diterapkan pada Anda.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":4,"category":"nakadaka","mora_count":5,"downstep_mora":4,"contour":"アテハメ＼ル"}
+},
     {
       "jp": "彼はこの理論をこの場合にあてはめた。",
-      "id": "He applied this theory to his case.",
+      "id": "Dia menerapkan teori ini pada kasusnya.",
       "level": "n2",
       "tags": [
         "umum"
@@ -10987,10 +12056,10 @@ window.vocabN2_Verbs = [
   "word": "暴れる",
   "reading": "あばれる",
   "romaji": "abareru",
-  "meaning_id": "me-act violently",
+  "meaning_id": "bertindak kasar",
   "meaning_en": "to act violently; to rage; to struggle; to be riotous",
   "jlpt": "n2",
-  "pos": "verb-ichidan",
+  "pos": "verb-ru",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -11008,15 +12077,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "少年たちは２階でどたばた暴れていた。",
-      "id": "The boys were banging about upstairs.",
+      "id": "Anak-anak itu sedang menggedor-gedor di lantai atas.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"アバレル￣"}
+},
     {
       "jp": "部屋の中で暴れまわってはいけない。",
-      "id": "Don't run about wildly in the room.",
+      "id": "Jangan berlarian liar di dalam ruangan.",
       "level": "n2",
       "tags": [
         "umum"
@@ -11037,10 +12107,10 @@ window.vocabN2_Verbs = [
   "word": "あぶる",
   "reading": "あぶる",
   "romaji": "aburu",
-  "meaning_id": "me-scorch",
+  "meaning_id": "hangus",
   "meaning_en": "to scorch",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -11058,15 +12128,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "それは油であぶられた。",
-      "id": "That was cooked in oil.",
+      "id": "Itu dimasak dengan minyak.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"アブ＼ル"}
+},
     {
       "jp": "彼は濡れた服を火にあぶってかわかした。",
-      "id": "He dried his wet clothes by the fire.",
+      "id": "Dia mengeringkan pakaian basahnya di dekat api.",
       "level": "n2",
       "tags": [
         "umum"
@@ -11087,10 +12158,10 @@ window.vocabN2_Verbs = [
   "word": "あふれる",
   "reading": "あふれる",
   "romaji": "afureru",
-  "meaning_id": "me-flood",
+  "meaning_id": "banjir",
   "meaning_en": "to flood; to overflow; to brim over",
   "jlpt": "n2",
-  "pos": "verb-ichidan",
+  "pos": "verb-ru",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -11108,15 +12179,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "その街は活気にあふれていた。",
-      "id": "The town was full of activity.",
+      "id": "Kota itu penuh dengan aktivitas.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"アフレ＼ル"}
+},
     {
       "jp": "市場は安い輸入品であふれている。",
-      "id": "The market is glutted with cheap imports.",
+      "id": "Pasar dipenuhi dengan barang-barang impor yang murah.",
       "level": "n2",
       "tags": [
         "umum"
@@ -11137,10 +12209,10 @@ window.vocabN2_Verbs = [
   "word": "甘やかす",
   "reading": "あまやかす",
   "romaji": "amayakasu",
-  "meaning_id": "me-pamper",
+  "meaning_id": "memanjakan",
   "meaning_en": "to pamper; to spoil",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -11162,11 +12234,12 @@ window.vocabN2_Verbs = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":4,"category":"nakadaka","mora_count":5,"downstep_mora":4,"contour":"アマヤカ＼ス"}
+},
     {
       "jp": "子供たちを甘やかしてはいけない。",
-      "id": "Don't spoil the children.",
+      "id": "Jangan memanjakan anak-anak.",
       "level": "n2",
       "tags": [
         "umum"
@@ -11187,10 +12260,10 @@ window.vocabN2_Verbs = [
   "word": "余る",
   "reading": "あまる",
   "romaji": "amaru",
-  "meaning_id": "me-remain",
+  "meaning_id": "tetap",
   "meaning_en": "to remain; to be left over; to be in excess; to be too many",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -11208,15 +12281,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "日本では米が、ヨーロッパではワインが余っている。",
-      "id": "Japan has a surplus of rice, Europe of wine.",
+      "id": "Jepang surplus beras, Eropa surplus anggur.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"アマ＼ル"}
+},
     {
       "jp": "かわいさ余って憎さ百倍。",
-      "id": "The greatest hate springs from the greatest love.",
+      "id": "Kebencian terbesar muncul dari cinta terbesar.",
       "level": "n2",
       "tags": [
         "umum"
@@ -11237,10 +12311,10 @@ window.vocabN2_Verbs = [
   "word": "編む",
   "reading": "あむ",
   "romaji": "amu",
-  "meaning_id": "me-knit",
+  "meaning_id": "merajut",
   "meaning_en": "to knit",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -11258,12 +12332,13 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "彼女は自分で編んだセーターを着ていた。",
-      "id": "She wore a sweater that she'd knitted herself.",
+      "id": "Dia mengenakan sweter yang dia rajut sendiri.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":2,"downstep_mora":1,"contour":"ア＼ム"}
+},
     {
       "jp": "彼女は毛糸でセーターを編んでいる。",
       "id": "Dia knitting a sweater.",
@@ -11287,10 +12362,10 @@ window.vocabN2_Verbs = [
   "word": "争う",
   "reading": "あらそう",
   "romaji": "arasou",
-  "meaning_id": "me-dispute",
+  "meaning_id": "perselisihan",
   "meaning_en": "to dispute; to argue; to be at variance; to compete",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -11308,65 +12383,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "１０チームが賞を得ようと争った。",
-      "id": "Ten teams competed for the prize.",
+      "id": "Sepuluh tim bersaing memperebutkan hadiah.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"アラソ＼ウ"}
+},
     {
       "jp": "私は一等賞をめざして彼と争った。",
-      "id": "I competed with him for the first prize.",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    }
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "added_v": "v19.3.1-staged-merge",
-  "provenance": "expansion-staged",
-  "jmdict_seq": "",
-  "frequency": 1000
-},
-
-{
-  "id": "vg-n2-00500",
-  "word": "改めて",
-  "reading": "あらためて",
-  "romaji": "aratamete",
-  "meaning_id": "another time; again",
-  "meaning_en": "another time; again; over again; anew; formally",
-  "jlpt": "n2",
-  "pos": "adverb",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": [
-    "umum",
-    "kehidupan-sehari-hari"
-  ],
-  "register": "formal",
-  "lawan_bicara": [
-    "rekan-kerja",
-    "umum"
-  ],
-  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
-  "conj_type": null,
-  "examples": [
-    {
-      "jp": "改めて言う事はない。",
-      "id": "I have nothing particular to say.",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    },
-    {
-      "jp": "いずれ改めてお伺いいたします。",
-      "id": "I will call on you again.",
+      "id": "Saya bersaing dengannya untuk hadiah pertama.",
       "level": "n2",
       "tags": [
         "umum"
@@ -11387,10 +12413,10 @@ window.vocabN2_Verbs = [
   "word": "改める",
   "reading": "あらためる",
   "romaji": "aratameru",
-  "meaning_id": "me-change",
+  "meaning_id": "mengubah",
   "meaning_en": "to change; to alter; to reform; to revise",
   "jlpt": "n2",
-  "pos": "verb-ichidan",
+  "pos": "verb-ru",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -11408,15 +12434,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "どうして考えを改めたのですか。",
-      "id": "What made you change your mind?",
+      "id": "Apa yang membuatmu berubah pikiran?",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":4,"category":"nakadaka","mora_count":5,"downstep_mora":4,"contour":"アラタメ＼ル"}
+},
     {
       "jp": "改めるのに遅すぎるということはない。",
-      "id": "It is never too late to mend.",
+      "id": "Tidak ada kata terlambat untuk memperbaikinya.",
       "level": "n2",
       "tags": [
         "umum"
@@ -11440,7 +12467,7 @@ window.vocabN2_Verbs = [
   "meaning_id": "menulis",
   "meaning_en": "to write; to publish",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -11458,65 +12485,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "有名作家はまたベストセラー書を著した。",
-      "id": "The famous author created another best-selling book.",
+      "id": "Penulis terkenal menciptakan buku terlaris lainnya.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"アラワ＼ス"}
+},
     {
       "jp": "彼は２冊の本を著している。",
-      "id": "He has written two books.",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    }
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "added_v": "v19.3.1-staged-merge",
-  "provenance": "expansion-staged",
-  "jmdict_seq": "",
-  "frequency": 1000
-},
-
-{
-  "id": "vg-n2-00504",
-  "word": "あれこれ",
-  "reading": "あれこれ",
-  "romaji": "arekore",
-  "meaning_id": "one thing or another; this and that",
-  "meaning_en": "one thing or another; this and that; this or that",
-  "jlpt": "n2",
-  "pos": "adverb",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": [
-    "umum",
-    "kehidupan-sehari-hari"
-  ],
-  "register": "formal",
-  "lawan_bicara": [
-    "rekan-kerja",
-    "umum"
-  ],
-  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
-  "conj_type": null,
-  "examples": [
-    {
-      "jp": "もうかれこれ１０時です。",
-      "id": "It is almost ten o'clock.",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    },
-    {
-      "jp": "彼らはあれこれと話をしています。",
-      "id": "Mereka talking about this and that.",
+      "id": "Dia telah menulis dua buku.",
       "level": "n2",
       "tags": [
         "umum"
@@ -11537,10 +12515,10 @@ window.vocabN2_Verbs = [
   "word": "あわてる",
   "reading": "あわてる",
   "romaji": "awateru",
-  "meaning_id": "me-become confused",
+  "meaning_id": "menjadi bingung",
   "meaning_en": "to become confused",
   "jlpt": "n2",
-  "pos": "verb-ichidan",
+  "pos": "verb-ru",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -11558,65 +12536,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "その質問で彼はすっかりあわてた。",
-      "id": "The question threw him off his balance.",
+      "id": "Pertanyaan itu membuatnya kehilangan keseimbangan.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"アワテル￣"}
+},
     {
       "jp": "物事をあわててすると、間違いをします。",
-      "id": "You make mistakes if you do things in a hurry.",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    }
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "added_v": "v19.3.1-staged-merge",
-  "provenance": "expansion-staged",
-  "jmdict_seq": "",
-  "frequency": 1000
-},
-
-{
-  "id": "vg-n2-00508",
-  "word": "案外",
-  "reading": "あんがい",
-  "romaji": "angai",
-  "meaning_id": "unexpectedly",
-  "meaning_en": "unexpectedly",
-  "jlpt": "n2",
-  "pos": "adverb",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": [
-    "umum",
-    "kehidupan-sehari-hari"
-  ],
-  "register": "formal",
-  "lawan_bicara": [
-    "rekan-kerja",
-    "umum"
-  ],
-  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
-  "conj_type": null,
-  "examples": [
-    {
-      "jp": "ピクニックは案外つまらなかった。",
-      "id": "The picnic was a disappointment.",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    },
-    {
-      "jp": "あの人は案外いい人かもしれない。",
-      "id": "He may be a good man for all I know.",
+      "id": "Anda membuat kesalahan jika Anda melakukan sesuatu dengan tergesa-gesa.",
       "level": "n2",
       "tags": [
         "umum"
@@ -11637,10 +12566,10 @@ window.vocabN2_Verbs = [
   "word": "言い出す",
   "reading": "いいだす",
   "romaji": "iidasu",
-  "meaning_id": "me-start talking",
+  "meaning_id": "mulai berbicara",
   "meaning_en": "to start talking; to speak; to tell; to propose; to suggest; to break the ice",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -11658,15 +12587,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "これはだれかの言い出したことかい。",
-      "id": "Was this somebody else's idea?",
+      "id": "Apakah ini ide orang lain?",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"イイダ＼ス"}
+},
     {
       "jp": "そんな事言い出すとは思わなかったよ。",
-      "id": "I didn't expect that to come from you.",
+      "id": "Aku tidak menyangka hal itu akan datang darimu.",
       "level": "n2",
       "tags": [
         "umum"
@@ -11687,10 +12617,10 @@ window.vocabN2_Verbs = [
   "word": "言い付ける",
   "reading": "いいつける",
   "romaji": "iitsukeru",
-  "meaning_id": "me-tell",
+  "meaning_id": "katakan",
   "meaning_en": "to tell; to tell on (someone); to order",
   "jlpt": "n2",
-  "pos": "verb-ichidan",
+  "pos": "verb-ru",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -11708,15 +12638,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "彼はちゃんと私が言いつけておいたとおりにやった。",
-      "id": "He did exactly as I had told him.",
+      "id": "Dia melakukan persis seperti yang saya katakan padanya.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":4,"category":"nakadaka","mora_count":5,"downstep_mora":4,"contour":"イイツケ＼ル"}
+},
     {
       "jp": "あなたが彼に言いつけたって私はちっともかまわない。",
-      "id": "You can tell him for all I care.",
+      "id": "Anda bisa memberitahunya tentang semua yang saya pedulikan.",
       "level": "n2",
       "tags": [
         "umum"
@@ -11737,7 +12668,7 @@ window.vocabN2_Verbs = [
   "word": "生き生き",
   "reading": "いきいき",
   "romaji": "ikiiki",
-  "meaning_id": "vividly; lively",
+  "meaning_id": "dengan jelas; hidup",
   "meaning_en": "vividly; lively",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -11758,507 +12689,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "彼は生き生きとした想像力を持っている。",
-      "id": "He has a very vivid imagination.",
+      "id": "Dia memiliki imajinasi yang sangat jelas.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"イキイ＼キ"}
+},
     {
       "jp": "雨で木の葉が生き生きして見える。",
-      "id": "The leaves look fresh in the rain.",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    }
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "added_v": "v19.3.1-staged-merge",
-  "provenance": "expansion-staged",
-  "jmdict_seq": "",
-  "frequency": 1000
-},
-
-{
-  "id": "vg-n2-00514",
-  "word": "いきなり",
-  "reading": "いきなり",
-  "romaji": "ikinari",
-  "meaning_id": "abruptly; suddenly",
-  "meaning_en": "abruptly; suddenly; all of a sudden; without warning",
-  "jlpt": "n2",
-  "pos": "adverb",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": [
-    "umum",
-    "kehidupan-sehari-hari"
-  ],
-  "register": "formal",
-  "lawan_bicara": [
-    "rekan-kerja",
-    "umum"
-  ],
-  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
-  "conj_type": null,
-  "examples": [
-    {
-      "jp": "そのタクシーはいきなり左に曲がった。",
-      "id": "The taxi abruptly turned left.",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    },
-    {
-      "jp": "いきなり解雇を言い渡された。",
-      "id": "I was discharged without notice.",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    }
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "added_v": "v19.3.1-staged-merge",
-  "provenance": "expansion-staged",
-  "jmdict_seq": "",
-  "frequency": 1000
-},
-
-{
-  "id": "vg-n2-00515",
-  "word": "幾分",
-  "reading": "いくぶん",
-  "romaji": "ikubun",
-  "meaning_id": "somewhat",
-  "meaning_en": "somewhat",
-  "jlpt": "n2",
-  "pos": "adverb",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": [
-    "umum",
-    "kehidupan-sehari-hari"
-  ],
-  "register": "formal",
-  "lawan_bicara": [
-    "rekan-kerja",
-    "umum"
-  ],
-  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
-  "conj_type": null,
-  "examples": [
-    {
-      "jp": "この問題は私にとっては幾分難しい。",
-      "id": "This problem is difficult for me to some degree.",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    },
-    {
-      "jp": "そのケーキは幾分レモンの味がした。",
-      "id": "There was some taste of lemon in the cake.",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    }
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "added_v": "v19.3.1-staged-merge",
-  "provenance": "expansion-staged",
-  "jmdict_seq": "",
-  "frequency": 1000
-},
-
-{
-  "id": "vg-n2-00517",
-  "word": "以後",
-  "reading": "いご",
-  "romaji": "igo",
-  "meaning_id": "after this; from now on",
-  "meaning_en": "after this; from now on; hereafter; thereafter",
-  "jlpt": "n2",
-  "pos": "adverb",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": [
-    "umum",
-    "kehidupan-sehari-hari"
-  ],
-  "register": "formal",
-  "lawan_bicara": [
-    "rekan-kerja",
-    "umum"
-  ],
-  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
-  "conj_type": null,
-  "examples": [
-    {
-      "jp": "以後こんなことはいたしません。",
-      "id": "I'll never do this again.",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    },
-    {
-      "jp": "それ以後彼女に会っていません。",
-      "id": "I haven't seen her since then.",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    }
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "added_v": "v19.3.1-staged-merge",
-  "provenance": "expansion-staged",
-  "jmdict_seq": "",
-  "frequency": 1000
-},
-
-{
-  "id": "vg-n2-00518",
-  "word": "以降",
-  "reading": "いこう",
-  "romaji": "ikou",
-  "meaning_id": "on and after; hereafter",
-  "meaning_en": "on and after; hereafter; thereafter",
-  "jlpt": "n2",
-  "pos": "adverb",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": [
-    "umum",
-    "kehidupan-sehari-hari"
-  ],
-  "register": "formal",
-  "lawan_bicara": [
-    "rekan-kerja",
-    "umum"
-  ],
-  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
-  "conj_type": null,
-  "examples": [
-    {
-      "jp": "それ以降彼は辛い一生を送った。",
-      "id": "He led a hard life after that.",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    },
-    {
-      "jp": "９時以降に電話した方が安いですか。",
-      "id": "Is it cheaper to call after 9:00?",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    }
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "added_v": "v19.3.1-staged-merge",
-  "provenance": "expansion-staged",
-  "jmdict_seq": "",
-  "frequency": 1000
-},
-
-{
-  "id": "vg-n2-00523",
-  "word": "いちいち",
-  "reading": "いちいち",
-  "romaji": "ichiichi",
-  "meaning_id": "one by one; separately",
-  "meaning_en": "one by one; separately",
-  "jlpt": "n2",
-  "pos": "adverb",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": [
-    "umum",
-    "kehidupan-sehari-hari"
-  ],
-  "register": "formal",
-  "lawan_bicara": [
-    "rekan-kerja",
-    "umum"
-  ],
-  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
-  "conj_type": null,
-  "examples": [
-    {
-      "jp": "ジョンが品物をいちいち手に取って見た。",
-      "id": "John picked up the articles one by one and examined them.",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    },
-    {
-      "jp": "彼は私のしたことにいちいち文句を言う。",
-      "id": "He finds faults with everything I do.",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    }
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "added_v": "v19.3.1-staged-merge",
-  "provenance": "expansion-staged",
-  "jmdict_seq": "",
-  "frequency": 1000
-},
-
-{
-  "id": "vg-n2-00524",
-  "word": "一応",
-  "reading": "いちおう",
-  "romaji": "ichiou",
-  "meaning_id": "once; tentatively",
-  "meaning_en": "once; tentatively; in outline; for the time being",
-  "jlpt": "n2",
-  "pos": "adverb",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": [
-    "umum",
-    "kehidupan-sehari-hari"
-  ],
-  "register": "formal",
-  "lawan_bicara": [
-    "rekan-kerja",
-    "umum"
-  ],
-  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
-  "conj_type": null,
-  "examples": [
-    {
-      "jp": "ええ、先方から一応返事はありました。",
-      "id": "Yeah, there was some sort of reply from them.",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    },
-    {
-      "jp": "過去問がもしあるならば一応目を通すほうがいいと思います。",
-      "id": "If there are past exam questions then I think it would be best to give them a quick look over.",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    }
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "added_v": "v19.3.1-staged-merge",
-  "provenance": "expansion-staged",
-  "jmdict_seq": "",
-  "frequency": 1000
-},
-
-{
-  "id": "vg-n2-00528",
-  "word": "一昨年",
-  "reading": "いっさくねん",
-  "romaji": "issakunen",
-  "meaning_id": "year before last",
-  "meaning_en": "year before last",
-  "jlpt": "n2",
-  "pos": "adverb",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": [
-    "umum",
-    "kehidupan-sehari-hari"
-  ],
-  "register": "formal",
-  "lawan_bicara": [
-    "rekan-kerja",
-    "umum"
-  ],
-  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
-  "conj_type": null,
-  "examples": [
-    {
-      "jp": "彼女は、一昨年よりもはるかに暮らし向きがよい。",
-      "id": "She's far better off than she was the year before last.",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    }
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "added_v": "v19.3.1-staged-merge",
-  "provenance": "expansion-staged",
-  "jmdict_seq": "",
-  "frequency": 1000
-},
-
-{
-  "id": "vg-n2-00529",
-  "word": "一斉",
-  "reading": "いっせい",
-  "romaji": "issei",
-  "meaning_id": "simultaneous; all at once",
-  "meaning_en": "simultaneous; all at once",
-  "jlpt": "n2",
-  "pos": "adverb",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": [
-    "umum",
-    "kehidupan-sehari-hari"
-  ],
-  "register": "formal",
-  "lawan_bicara": [
-    "rekan-kerja",
-    "umum"
-  ],
-  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
-  "conj_type": null,
-  "examples": [
-    {
-      "jp": "彼らは一斉に立ち上がった。",
-      "id": "They stood up simultaneously.",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    },
-    {
-      "jp": "彼らは一斉にスタートした。",
-      "id": "They started all at once.",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    }
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "added_v": "v19.3.1-staged-merge",
-  "provenance": "expansion-staged",
-  "jmdict_seq": "",
-  "frequency": 1000
-},
-
-{
-  "id": "vg-n2-00530",
-  "word": "一旦",
-  "reading": "いったん",
-  "romaji": "ittan",
-  "meaning_id": "once; for a moment",
-  "meaning_en": "once; for a moment; one morning; temporarily",
-  "jlpt": "n2",
-  "pos": "adverb",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": [
-    "umum",
-    "kehidupan-sehari-hari"
-  ],
-  "register": "formal",
-  "lawan_bicara": [
-    "rekan-kerja",
-    "umum"
-  ],
-  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
-  "conj_type": null,
-  "examples": [
-    {
-      "jp": "いったんしたことは元どおりにならない。",
-      "id": "What is done cannot be undone.",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    },
-    {
-      "jp": "いったん始めたら、やり続けてください。",
-      "id": "Once you start, carry it on.",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    }
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "added_v": "v19.3.1-staged-merge",
-  "provenance": "expansion-staged",
-  "jmdict_seq": "",
-  "frequency": 1000
-},
-
-{
-  "id": "vg-n2-00535",
-  "word": "いつのまにか",
-  "reading": "いつのまにか",
-  "romaji": "itsunomanika",
-  "meaning_id": "before one knows; unnoticed",
-  "meaning_en": "before one knows; unnoticed; unawares",
-  "jlpt": "n2",
-  "pos": "adverb",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": [
-    "umum",
-    "kehidupan-sehari-hari"
-  ],
-  "register": "formal",
-  "lawan_bicara": [
-    "rekan-kerja",
-    "umum"
-  ],
-  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
-  "conj_type": null,
-  "examples": [
-    {
-      "jp": "いつの間にかボブは外へ出ていた。",
-      "id": "Bob went out before I knew it.",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    },
-    {
-      "jp": "いつのまにか夏も過ぎてしまった。",
-      "id": "Summer has gone all too soon.",
+      "id": "Daunnya terlihat segar di tengah hujan.",
       "level": "n2",
       "tags": [
         "umum"
@@ -12300,15 +12740,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "ご移転の際はお知らせ下さい。",
-      "id": "If you change your address, please let me know.",
+      "id": "Jika Anda mengubah alamat Anda, harap beri tahu saya.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"イテン￣"}
+},
     {
       "jp": "新しいビルへの移転にわくわくしてます。",
-      "id": "Kami excited about the move to the new building.",
+      "id": "Kami bersemangat untuk pindah ke gedung baru.",
       "level": "n2",
       "tags": [
         "umum"
@@ -12329,10 +12770,10 @@ window.vocabN2_Verbs = [
   "word": "威張る",
   "reading": "いばる",
   "romaji": "ibaru",
-  "meaning_id": "me-be proud",
+  "meaning_id": "bangga",
   "meaning_en": "to be proud; to swagger",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -12350,15 +12791,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "あの人はあまり威張るから好きになれない。",
-      "id": "That man is too boastful for my liking.",
+      "id": "Pria itu terlalu sombong untuk seleraku.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"イバ＼ル"}
+},
     {
       "jp": "彼女には威張った様子がある。",
-      "id": "She has an important air about her.",
+      "id": "Dia memiliki kesan penting tentang dirinya.",
       "level": "n2",
       "tags": [
         "umum"
@@ -12379,10 +12821,10 @@ window.vocabN2_Verbs = [
   "word": "嫌がる",
   "reading": "いやがる",
   "romaji": "iyagaru",
-  "meaning_id": "me-hate",
+  "meaning_id": "benci",
   "meaning_en": "to hate; to dislike",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -12400,65 +12842,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "彼は誤りを認めるのを嫌がらない。",
-      "id": "He feels no reluctance in acknowledging errors.",
+      "id": "Dia tidak merasa segan untuk mengakui kesalahan.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"イヤガ＼ル"}
+},
     {
       "jp": "彼は飛行機で旅行をするのを嫌がった。",
-      "id": "He objected to traveling by plane.",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    }
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "added_v": "v19.3.1-staged-merge",
-  "provenance": "expansion-staged",
-  "jmdict_seq": "",
-  "frequency": 1000
-},
-
-{
-  "id": "vg-n2-00542",
-  "word": "いよいよ",
-  "reading": "いよいよ",
-  "romaji": "iyoiyo",
-  "meaning_id": "more and more; all the more",
-  "meaning_en": "more and more; all the more; increasingly; at last; beyond doubt",
-  "jlpt": "n2",
-  "pos": "adverb",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": [
-    "umum",
-    "kehidupan-sehari-hari"
-  ],
-  "register": "formal",
-  "lawan_bicara": [
-    "rekan-kerja",
-    "umum"
-  ],
-  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
-  "conj_type": null,
-  "examples": [
-    {
-      "jp": "いよいよ千載一遇のチャンスがめぐってきた。",
-      "id": "At last, a chance in a million arrived.",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    },
-    {
-      "jp": "雨はやむどころかいよいよひどくなった。",
-      "id": "Instead of stopping, the rain increased.",
+      "id": "Dia keberatan bepergian dengan pesawat.",
       "level": "n2",
       "tags": [
         "umum"
@@ -12479,10 +12872,10 @@ window.vocabN2_Verbs = [
   "word": "煎る",
   "reading": "いる",
   "romaji": "iru",
-  "meaning_id": "me-parch",
+  "meaning_id": "kering",
   "meaning_en": "to parch; to fry",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -12504,8 +12897,9 @@ window.vocabN2_Verbs = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":2,"downstep_mora":1,"contour":"イ＼ル"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -12521,10 +12915,10 @@ window.vocabN2_Verbs = [
   "word": "炒る",
   "reading": "いる",
   "romaji": "iru",
-  "meaning_id": "me-roast",
+  "meaning_id": "panggang",
   "meaning_en": "to roast; to parch; to toast; to boil down",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -12546,8 +12940,9 @@ window.vocabN2_Verbs = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":2,"downstep_mora":1,"contour":"イ＼ル"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -12563,7 +12958,7 @@ window.vocabN2_Verbs = [
   "word": "インタビュー",
   "reading": "インタビュー",
   "romaji": "intabyuu",
-  "meaning_id": "interview",
+  "meaning_id": "wawancara",
   "meaning_en": "interview",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -12584,15 +12979,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "彼がインタビューで言ったことは理にかなっている。",
-      "id": "What he said in his interview makes sense.",
+      "id": "Apa yang dia katakan dalam wawancaranya masuk akal.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":0,"downstep_mora":1,"contour":"＼"}
+},
     {
       "jp": "彼は首相にインタビューした。",
-      "id": "He had an interview with the Prime Minister.",
+      "id": "Dia melakukan wawancara dengan Perdana Menteri.",
       "level": "n2",
       "tags": [
         "umum"
@@ -12613,10 +13009,10 @@ window.vocabN2_Verbs = [
   "word": "飢える",
   "reading": "うえる",
   "romaji": "ueru",
-  "meaning_id": "me-starve",
+  "meaning_id": "kelaparan",
   "meaning_en": "to starve",
   "jlpt": "n2",
-  "pos": "verb-ichidan",
+  "pos": "verb-ru",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -12634,15 +13030,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "彼は飢えた者に食を与えた。",
-      "id": "He furnished food to the hungry.",
+      "id": "Dia menyediakan makanan kepada mereka yang lapar.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"ウエ＼ル"}
+},
     {
       "jp": "世界では多くの人が飢えている。",
-      "id": "A lot of people are starving in the world.",
+      "id": "Banyak orang kelaparan di dunia.",
       "level": "n2",
       "tags": [
         "umum"
@@ -12663,10 +13060,10 @@ window.vocabN2_Verbs = [
   "word": "浮かぶ",
   "reading": "うかぶ",
   "romaji": "ukabu",
-  "meaning_id": "me-float",
+  "meaning_id": "mengapung",
   "meaning_en": "to float; to rise to surface; to come to mind",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -12688,11 +13085,12 @@ window.vocabN2_Verbs = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ウカブ￣"}
+},
     {
       "jp": "１枚の落ち葉が水面に浮かんでいた。",
-      "id": "A fallen leaf floated on the surface of the water.",
+      "id": "Sehelai daun yang jatuh mengapung di permukaan air.",
       "level": "n2",
       "tags": [
         "umum"
@@ -12713,10 +13111,10 @@ window.vocabN2_Verbs = [
   "word": "浮かべる",
   "reading": "うかべる",
   "romaji": "ukaberu",
-  "meaning_id": "me-float",
+  "meaning_id": "mengapung",
   "meaning_en": "to float; to express; to look (sad, glad)",
   "jlpt": "n2",
-  "pos": "verb-ichidan",
+  "pos": "verb-ru",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -12738,11 +13136,12 @@ window.vocabN2_Verbs = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ウカベル￣"}
+},
     {
       "jp": "彼女はむっつりとした表情を浮かべていた。",
-      "id": "She had a sullen look on her face.",
+      "id": "Dia memiliki ekspresi cemberut di wajahnya.",
       "level": "n2",
       "tags": [
         "umum"
@@ -12763,10 +13162,10 @@ window.vocabN2_Verbs = [
   "word": "浮く",
   "reading": "うく",
   "romaji": "uku",
-  "meaning_id": "me-float",
+  "meaning_id": "mengapung",
   "meaning_en": "to float; to become merry; to become loose",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -12784,15 +13183,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "それから彼女はあおむけに浮いていた。",
-      "id": "Then she was floating on her back.",
+      "id": "Lalu dia melayang telentang.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":2,"downstep_mora":0,"contour":"ウク￣"}
+},
     {
       "jp": "白い雲が夏の青空に浮いている。",
-      "id": "A white cloud is floating in the blue summer sky.",
+      "id": "Awan putih mengambang di langit biru musim panas.",
       "level": "n2",
       "tags": [
         "umum"
@@ -12816,7 +13216,7 @@ window.vocabN2_Verbs = [
   "meaning_id": "mendengar",
   "meaning_en": "(humble) to hear; to be told; to know",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -12834,15 +13234,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "ご用は承っておりますか。",
-      "id": "Is anybody waiting on you?",
+      "id": "Apakah ada yang menunggumu?",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":5,"category":"nakadaka","mora_count":6,"downstep_mora":5,"contour":"ウケタマワ＼ル"}
+},
     {
       "jp": "展示会へのご招待、本日ありがたく承りました。",
-      "id": "Today, we received your invitation to the exhibition with pleasure.",
+      "id": "Hari ini, kami dengan senang hati menerima undangan Anda ke pameran.",
       "level": "n2",
       "tags": [
         "umum"
@@ -12863,10 +13264,10 @@ window.vocabN2_Verbs = [
   "word": "受け持つ",
   "reading": "うけもつ",
   "romaji": "ukemotsu",
-  "meaning_id": "me-take  charge of",
+  "meaning_id": "mengambil alih",
   "meaning_en": "to take (be in) charge of",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -12884,15 +13285,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "費用を受け持つ者に決定権がある。",
-      "id": "He who pays the piper calls the tune.",
+      "id": "Siapa pun yang membayar si peniup seruling akan menentukan nadanya.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"ウケモ＼ツ"}
+},
     {
       "jp": "私は３年生を受け持っている。",
-      "id": "I am in charge of the third-year class.",
+      "id": "Saya bertanggung jawab atas kelas tahun ketiga.",
       "level": "n2",
       "tags": [
         "umum"
@@ -12913,10 +13315,10 @@ window.vocabN2_Verbs = [
   "word": "薄める",
   "reading": "うすめる",
   "romaji": "usumeru",
-  "meaning_id": "me-dilute",
+  "meaning_id": "mengencerkan",
   "meaning_en": "to dilute; to water down",
   "jlpt": "n2",
-  "pos": "verb-ichidan",
+  "pos": "verb-ru",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -12934,12 +13336,13 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "薄めるを使います。",
-      "id": "Menggunakan me-dilute.",
+      "id": "Menggunakan mengencerkan.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ウスメル￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -12976,15 +13379,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "打ち合わせは来週に延期になった。",
-      "id": "The meeting was put off until next week.",
+      "id": "Pertemuan itu ditunda hingga minggu depan.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":5,"downstep_mora":0,"contour":"ウチアワセ￣"}
+},
     {
       "jp": "彼らは会合の打ち合わせをした。",
-      "id": "They arranged a meeting.",
+      "id": "Mereka mengatur pertemuan.",
       "level": "n2",
       "tags": [
         "umum"
@@ -13005,10 +13409,10 @@ window.vocabN2_Verbs = [
   "word": "打ち消す",
   "reading": "うちけす",
   "romaji": "uchikesu",
-  "meaning_id": "me-deny",
+  "meaning_id": "menyangkal",
   "meaning_en": "to deny; to negate; to contradict",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -13026,12 +13430,13 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "打ち消すを使います。",
-      "id": "Menggunakan me-deny.",
+      "id": "Menggunakan menyangkal.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ウチケス￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -13047,10 +13452,10 @@ window.vocabN2_Verbs = [
   "word": "討つ",
   "reading": "うつ",
   "romaji": "utsu",
-  "meaning_id": "me-attack",
+  "meaning_id": "menyerang",
   "meaning_en": "to attack; to avenge",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -13068,12 +13473,13 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "討つを使います。",
-      "id": "Menggunakan me-attack.",
+      "id": "Menggunakan menyerang.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":2,"downstep_mora":1,"contour":"ウ＼ツ"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -13110,15 +13516,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "うっかりそれを忘れるところだったわ。",
-      "id": "I almost forgot all about that.",
+      "id": "Aku hampir melupakan semua hal itu.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":0,"downstep_mora":0,"contour":"￣"}
+},
     {
       "jp": "私はちょっとうっかりしていた。",
-      "id": "I was absent-minded momentarily.",
+      "id": "Saya linglung sejenak.",
       "level": "n2",
       "tags": [
         "umum"
@@ -13139,10 +13546,10 @@ window.vocabN2_Verbs = [
   "word": "映す",
   "reading": "うつす",
   "romaji": "utsusu",
-  "meaning_id": "me-project",
+  "meaning_id": "proyek",
   "meaning_en": "to project; to reflect; to cast (shadow)",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -13160,15 +13567,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "一本の高い木が水面に長い影を映している。",
-      "id": "A tall tree projects its long shadow on the water.",
+      "id": "Sebatang pohon tinggi memproyeksikan bayangan panjangnya di atas air.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"ウツ＼ス"}
+},
     {
       "jp": "山が湖に影を映している。",
-      "id": "The mountains are reflected in the lake.",
+      "id": "Pegunungan tercermin di danau.",
       "level": "n2",
       "tags": [
         "umum"
@@ -13189,10 +13597,10 @@ window.vocabN2_Verbs = [
   "word": "映る",
   "reading": "うつる",
   "romaji": "utsuru",
-  "meaning_id": "me-be reflected",
+  "meaning_id": "tercermin",
   "meaning_en": "to be reflected; to harmonize with; to come out (photo)",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -13210,15 +13618,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "カーテンに女の子の影が映った。",
-      "id": "A silhouette of a girl appeared on the curtain.",
+      "id": "Siluet seorang gadis muncul di tirai.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"ウツ＼ル"}
+},
     {
       "jp": "僕の目には君しか映ってないよ。本当さ。",
-      "id": "I only have eyes for you - honestly.",
+      "id": "Aku hanya memperhatikanmu - sejujurnya.",
       "level": "n2",
       "tags": [
         "umum"
@@ -13239,10 +13648,10 @@ window.vocabN2_Verbs = [
   "word": "写る",
   "reading": "うつる",
   "romaji": "utsuru",
-  "meaning_id": "me-be photographed",
+  "meaning_id": "difoto",
   "meaning_en": "to be photographed; to be projected",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -13264,11 +13673,12 @@ window.vocabN2_Verbs = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"ウツ＼ル"}
+},
     {
       "jp": "私は鏡に写っている自分を見つめているのです。",
-      "id": "I'm staring at myself in a mirror.",
+      "id": "Aku menatap diriku sendiri di cermin.",
       "level": "n2",
       "tags": [
         "umum"
@@ -13289,10 +13699,10 @@ window.vocabN2_Verbs = [
   "word": "埋める",
   "reading": "うめる",
   "romaji": "umeru",
-  "meaning_id": "me-bury",
+  "meaning_id": "mengubur",
   "meaning_en": "to bury; to fill up; to fill (a seat, a vacant position)",
   "jlpt": "n2",
-  "pos": "verb-ichidan",
+  "pos": "verb-ru",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -13314,11 +13724,12 @@ window.vocabN2_Verbs = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ウメル￣"}
+},
     {
       "jp": "あいつの損を埋めてやらなくちゃならないんだ。",
-      "id": "I have to cover his loss.",
+      "id": "Saya harus menutupi kehilangannya.",
       "level": "n2",
       "tags": [
         "umum"
@@ -13339,10 +13750,10 @@ window.vocabN2_Verbs = [
   "word": "敬う",
   "reading": "うやまう",
   "romaji": "uyamau",
-  "meaning_id": "me-show respect",
+  "meaning_id": "menunjukkan rasa hormat",
   "meaning_en": "to show respect; to honour",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -13360,15 +13771,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "私は、年上の人を敬うように教えられた。",
-      "id": "I was taught to respect my elders.",
+      "id": "Saya diajari untuk menghormati orang yang lebih tua.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"ウヤマ＼ウ"}
+},
     {
       "jp": "私たちは祖先をうやまうべきだ。",
-      "id": "We should worship our ancestors.",
+      "id": "Kita harus menyembah nenek moyang kita.",
       "level": "n2",
       "tags": [
         "umum"
@@ -13389,10 +13801,10 @@ window.vocabN2_Verbs = [
   "word": "裏返す",
   "reading": "うらがえす",
   "romaji": "uragaesu",
-  "meaning_id": "me-turn inside out",
+  "meaning_id": "balikkan bagian dalam ke luar",
   "meaning_en": "to turn inside out; to turn (something) over",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -13410,15 +13822,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "彼はシャツを裏返しに着ていた。",
-      "id": "He had his shirt on inside out.",
+      "id": "Dia mengenakan kemejanya luar dalam.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":5,"downstep_mora":3,"contour":"ウラガ＼エス"}
+},
     {
       "jp": "彼は靴下の片方を裏返しにはいていた。",
-      "id": "He had one of his socks on inside out.",
+      "id": "Dia memakai salah satu kaus kakinya dari dalam ke luar.",
       "level": "n2",
       "tags": [
         "umum"
@@ -13439,10 +13852,10 @@ window.vocabN2_Verbs = [
   "word": "占う",
   "reading": "うらなう",
   "romaji": "uranau",
-  "meaning_id": "me-forecast",
+  "meaning_id": "perkiraan",
   "meaning_en": "to forecast; to predict",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -13460,12 +13873,13 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "私は運勢を占ってもらった。",
-      "id": "I had my fortune told.",
+      "id": "Aku sudah diramal.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"ウラナ＼ウ"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -13481,10 +13895,10 @@ window.vocabN2_Verbs = [
   "word": "恨む",
   "reading": "うらむ",
   "romaji": "uramu",
-  "meaning_id": "me-curse",
+  "meaning_id": "mengutuk",
   "meaning_en": "to curse; to feel bitter",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -13502,12 +13916,13 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "恨むを使います。",
-      "id": "Menggunakan me-curse.",
+      "id": "Menggunakan mengutuk.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"ウラ＼ム"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -13523,10 +13938,10 @@ window.vocabN2_Verbs = [
   "word": "羨む",
   "reading": "うらやむ",
   "romaji": "urayamu",
-  "meaning_id": "me-envy",
+  "meaning_id": "iri",
   "meaning_en": "to envy",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -13548,11 +13963,12 @@ window.vocabN2_Verbs = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"ウラヤ＼ム"}
+},
     {
       "jp": "他人の幸運をうらやんではいけない。",
-      "id": "Don't envy others for their good luck.",
+      "id": "Jangan iri pada orang lain atas keberuntungannya.",
       "level": "n2",
       "tags": [
         "umum"
@@ -13573,10 +13989,10 @@ window.vocabN2_Verbs = [
   "word": "売り切れる",
   "reading": "うりきれる",
   "romaji": "urikireru",
-  "meaning_id": "me-be sold out",
+  "meaning_id": "terjual habis",
   "meaning_en": "to be sold out",
   "jlpt": "n2",
-  "pos": "verb-ichidan",
+  "pos": "verb-ru",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -13594,115 +14010,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "そのケーキはすぐに売り切れるでしょう。",
-      "id": "The cakes may be sold out soon.",
+      "id": "Kuenya mungkin akan segera terjual habis.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":4,"category":"nakadaka","mora_count":5,"downstep_mora":4,"contour":"ウリキレ＼ル"}
+},
     {
       "jp": "ジーパンはみんな売り切れました。",
       "id": "Kami sold out of jeans.",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    }
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "added_v": "v19.3.1-staged-merge",
-  "provenance": "expansion-staged",
-  "jmdict_seq": "",
-  "frequency": 1000
-},
-
-{
-  "id": "vg-n2-00584",
-  "word": "うろうろ",
-  "reading": "うろうろ",
-  "romaji": "urouro",
-  "meaning_id": "loiteringly; aimless wandering",
-  "meaning_en": "loiteringly; aimless wandering",
-  "jlpt": "n2",
-  "pos": "adverb",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": [
-    "umum",
-    "kehidupan-sehari-hari"
-  ],
-  "register": "formal",
-  "lawan_bicara": [
-    "rekan-kerja",
-    "umum"
-  ],
-  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
-  "conj_type": null,
-  "examples": [
-    {
-      "jp": "今日一日当ても無くうろうろした。",
-      "id": "I wandered about aimlessly all day.",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    },
-    {
-      "jp": "繁華街を当てもなくウロウロした。",
-      "id": "We wandered aimlessly around the shopping district.",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    }
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "added_v": "v19.3.1-staged-merge",
-  "provenance": "expansion-staged",
-  "jmdict_seq": "",
-  "frequency": 1000
-},
-
-{
-  "id": "vg-n2-00586",
-  "word": "うんと",
-  "reading": "うんと",
-  "romaji": "unto",
-  "meaning_id": "a great deal; very much",
-  "meaning_en": "a great deal; very much",
-  "jlpt": "n2",
-  "pos": "adverb",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": [
-    "umum",
-    "kehidupan-sehari-hari"
-  ],
-  "register": "formal",
-  "lawan_bicara": [
-    "rekan-kerja",
-    "umum"
-  ],
-  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
-  "conj_type": null,
-  "examples": [
-    {
-      "jp": "彼は金がうんとあって使えない。",
-      "id": "He has more money than he can use.",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    },
-    {
-      "jp": "うんとお金があればいいのに。",
-      "id": "I wish I had much money.",
       "level": "n2",
       "tags": [
         "umum"
@@ -13744,15 +14061,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "全体として、遠足は楽しかった。",
-      "id": "All in all, the excursion was pleasant.",
+      "id": "Secara keseluruhan, tamasya itu menyenangkan.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"エンソク￣"}
+},
     {
       "jp": "学校の遠足で奈良に行った。",
-      "id": "We went on a school trip to Nara.",
+      "id": "Kami melakukan piknik sekolah ke Nara.",
       "level": "n2",
       "tags": [
         "umum"
@@ -13794,15 +14112,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "宿泊をもう一晩延長できますか。",
-      "id": "Can I extend my stay one more night?",
+      "id": "Bolehkah saya memperpanjang masa menginap saya satu malam lagi?",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"エンチョウ￣"}
+},
     {
       "jp": "市はバス路線を１０Ｋｍ延長した。",
-      "id": "The city expanded the bus route 10Km further.",
+      "id": "Kota memperluas rute bus 10 km lebih jauh.",
       "level": "n2",
       "tags": [
         "umum"
@@ -13823,10 +14142,10 @@ window.vocabN2_Verbs = [
   "word": "追い掛ける",
   "reading": "おいかける",
   "romaji": "oikakeru",
-  "meaning_id": "me-chase or run after someone",
+  "meaning_id": "mengejar atau mengejar seseorang",
   "meaning_en": "to chase or run after someone; to run down; to pursue",
   "jlpt": "n2",
-  "pos": "verb-ichidan",
+  "pos": "verb-ru",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -13844,15 +14163,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "犬が猫を追いかけていた。",
-      "id": "A dog was running after a cat.",
+      "id": "Seekor anjing sedang mengejar kucing.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":4,"category":"nakadaka","mora_count":5,"downstep_mora":4,"contour":"オイカケ＼ル"}
+},
     {
       "jp": "警官はその男を追いかけている。",
-      "id": "The policeman is going after the man.",
+      "id": "Polisi mengejar pria itu.",
       "level": "n2",
       "tags": [
         "umum"
@@ -13873,10 +14193,10 @@ window.vocabN2_Verbs = [
   "word": "追い越す",
   "reading": "おいこす",
   "romaji": "oikosu",
-  "meaning_id": "me-pass",
+  "meaning_id": "lulus",
   "meaning_en": "to pass (e.g. car); to outdistance; to outstrip",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -13894,15 +14214,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "うさぎはかめに追い越された。",
-      "id": "The hare was outdistanced by the tortoise.",
+      "id": "Kelinci dikalahkan oleh kura-kura.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"オイコ＼ス"}
+},
     {
       "jp": "彼女は先輩を追い越して昇進した。",
-      "id": "She was promoted over the heads of her seniors.",
+      "id": "Dia dipromosikan melebihi seniornya.",
       "level": "n2",
       "tags": [
         "umum"
@@ -13944,15 +14265,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "何事が起ころうとも、君を応援するよ。",
-      "id": "I will stand by you whatever happens.",
+      "id": "Aku akan mendampingimu apapun yang terjadi.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"オウエン￣"}
+},
     {
       "jp": "彼女は自分のひいきの馬を応援した。",
-      "id": "She cheered for her favorite horse.",
+      "id": "Dia bersorak untuk kuda kesayangannya.",
       "level": "n2",
       "tags": [
         "umum"
@@ -13973,7 +14295,7 @@ window.vocabN2_Verbs = [
   "word": "応接",
   "reading": "おうせつ",
   "romaji": "ousetsu",
-  "meaning_id": "reception",
+  "meaning_id": "penerimaan",
   "meaning_en": "reception",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -13998,8 +14320,9 @@ window.vocabN2_Verbs = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"オウセツ￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -14015,7 +14338,7 @@ window.vocabN2_Verbs = [
   "word": "応対",
   "reading": "おうたい",
   "romaji": "outai",
-  "meaning_id": "receiving; dealing with",
+  "meaning_id": "menerima; berurusan dengan",
   "meaning_en": "receiving; dealing with",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -14036,15 +14359,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "その女店員が私に応対してくれた。",
-      "id": "The sales girl waited on me.",
+      "id": "Gadis penjual itu menungguku.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"オウタイ￣"}
+},
     {
       "jp": "その客の応対は私がします。",
-      "id": "I'm going to attend to the customer.",
+      "id": "Saya akan melayani pelanggan.",
       "level": "n2",
       "tags": [
         "umum"
@@ -14090,11 +14414,12 @@ window.vocabN2_Verbs = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"オウフク￣"}
+},
     {
       "jp": "彼は往復ともタクシーに乗った。",
-      "id": "He took a taxi both ways.",
+      "id": "Dia naik taksi ke dua arah.",
       "level": "n2",
       "tags": [
         "umum"
@@ -14115,7 +14440,7 @@ window.vocabN2_Verbs = [
   "word": "応用",
   "reading": "おうよう",
   "romaji": "ouyou",
-  "meaning_id": "application; put to practical use",
+  "meaning_id": "aplikasi; dimanfaatkan secara praktis",
   "meaning_en": "application; put to practical use",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -14136,65 +14461,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "その発見はいろいろな用途に応用できる。",
-      "id": "We can apply the discovery to various uses.",
+      "id": "Kita dapat menerapkan penemuan ini untuk berbagai kegunaan.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"オウヨウ￣"}
+},
     {
       "jp": "この論文では生物学におけるエメット理論の応用については扱わない。",
       "id": "Kami not concerned in this paper with the application of Emmet's theory in biology.",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    }
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "added_v": "v19.3.1-staged-merge",
-  "provenance": "expansion-staged",
-  "jmdict_seq": "",
-  "frequency": 1000
-},
-
-{
-  "id": "vg-n2-00618",
-  "word": "おおよそ",
-  "reading": "おおよそ",
-  "romaji": "ooyoso",
-  "meaning_id": "about; roughly",
-  "meaning_en": "about; roughly; as a rule; approximately",
-  "jlpt": "n2",
-  "pos": "adverb",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": [
-    "umum",
-    "kehidupan-sehari-hari"
-  ],
-  "register": "formal",
-  "lawan_bicara": [
-    "rekan-kerja",
-    "umum"
-  ],
-  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
-  "conj_type": null,
-  "examples": [
-    {
-      "jp": "彼女のおおよその年齢しか知らない。",
-      "id": "We can only know her approximate age.",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    },
-    {
-      "jp": "それは、おおよそ５００年前に建てられました。",
-      "id": "It was built about 500 years ago.",
       "level": "n2",
       "tags": [
         "umum"
@@ -14215,10 +14491,10 @@ window.vocabN2_Verbs = [
   "word": "拝む",
   "reading": "おがむ",
   "romaji": "ogamu",
-  "meaning_id": "me-worship",
+  "meaning_id": "ibadah",
   "meaning_en": "to worship; to beg; to make a supplication",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -14236,12 +14512,13 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "その不届きな野郎の顔を、拝ませてもらうか。",
-      "id": "Let's have a gander at this insolent man.",
+      "id": "Mari kita lihat pria kurang ajar ini.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"オガ＼ム"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -14257,7 +14534,7 @@ window.vocabN2_Verbs = [
   "word": "お代わり",
   "reading": "おかわり",
   "romaji": "okawari",
-  "meaning_id": "second helping; another cup",
+  "meaning_id": "bantuan kedua; secangkir lagi",
   "meaning_en": "second helping; another cup",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -14278,15 +14555,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "ライスとキャベツをお代わりお願いします。",
-      "id": "Can I have seconds on rice and cabbage?",
+      "id": "Bisakah saya punya waktu sebentar untuk makan nasi dan kubis?",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":4,"downstep_mora":2,"contour":"オカ＼ワリ"}
+},
     {
       "jp": "水のお代わりを下さい。",
-      "id": "I would like some more water.",
+      "id": "Saya ingin air lagi.",
       "level": "n2",
       "tags": [
         "umum"
@@ -14307,10 +14585,10 @@ window.vocabN2_Verbs = [
   "word": "補う",
   "reading": "おぎなう",
   "romaji": "oginau",
-  "meaning_id": "me-compensate for",
+  "meaning_id": "mengkompensasi",
   "meaning_en": "to compensate for",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -14328,15 +14606,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "あなたの食事にはビタミンを補うほうがよい。",
-      "id": "You had better supplement your diet with vitamins.",
+      "id": "Anda sebaiknya melengkapi diet Anda dengan vitamin.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"オギナ＼ウ"}
+},
     {
       "jp": "彼女が損失を補うようわれわれは要求した。",
-      "id": "We demanded that she should make up for the loss.",
+      "id": "Kami menuntut agar dia mengganti kerugiannya.",
       "level": "n2",
       "tags": [
         "umum"
@@ -14357,10 +14636,10 @@ window.vocabN2_Verbs = [
   "word": "怠る",
   "reading": "おこたる",
   "romaji": "okotaru",
-  "meaning_id": "me-neglect",
+  "meaning_id": "mengabaikan",
   "meaning_en": "to neglect; to be off guard; to be feeling better",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -14378,15 +14657,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "あなたは「ありがとう」と言うことを怠った。",
-      "id": "You neglected to say \"Thank you.\"",
+      "id": "Anda lalai mengatakan \"Terima kasih.\"",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"オコタル￣"}
+},
     {
       "jp": "彼女は職務を怠ったため解雇された。",
-      "id": "She was dismissed for loafing on the job.",
+      "id": "Dia dipecat karena bermalas-malasan dalam pekerjaannya.",
       "level": "n2",
       "tags": [
         "umum"
@@ -14407,10 +14687,10 @@ window.vocabN2_Verbs = [
   "word": "押える",
   "reading": "おさえる",
   "romaji": "osaeru",
-  "meaning_id": "me-stop",
+  "meaning_id": "berhenti",
   "meaning_en": "to stop; to restrain; to seize; to repress; to suppress; to press down",
   "jlpt": "n2",
-  "pos": "verb-ichidan",
+  "pos": "verb-ru",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -14432,53 +14712,12 @@ window.vocabN2_Verbs = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"オサエ＼ル"}
+},
     {
       "jp": "安全に乗れるようボートを押さえてくれ。",
-      "id": "Steady the boat so we can get on safely.",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    }
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "added_v": "v19.3.1-staged-merge",
-  "provenance": "expansion-staged",
-  "jmdict_seq": "",
-  "frequency": 1000
-},
-
-{
-  "id": "vg-n2-00632",
-  "word": "おさきに",
-  "reading": "おさきに",
-  "romaji": "osakini",
-  "meaning_id": "before; ahead",
-  "meaning_en": "before; ahead; previously",
-  "jlpt": "n2",
-  "pos": "adverb",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": [
-    "umum",
-    "kehidupan-sehari-hari"
-  ],
-  "register": "formal",
-  "lawan_bicara": [
-    "rekan-kerja",
-    "umum"
-  ],
-  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
-  "conj_type": null,
-  "examples": [
-    {
-      "jp": "どうぞ、お先に！",
-      "id": "Go ahead!",
+      "id": "Siapkan perahu agar kita bisa naik dengan aman.",
       "level": "n2",
       "tags": [
         "umum"
@@ -14499,10 +14738,10 @@ window.vocabN2_Verbs = [
   "word": "治める",
   "reading": "おさめる",
   "romaji": "osameru",
-  "meaning_id": "me-govern",
+  "meaning_id": "memerintah",
   "meaning_en": "to govern; to manage; to subdue",
   "jlpt": "n2",
-  "pos": "verb-ichidan",
+  "pos": "verb-ru",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -14520,15 +14759,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "その王がその国を治めていた。",
-      "id": "The king governed the country.",
+      "id": "Raja memerintah negara.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"オサメ＼ル"}
+},
     {
       "jp": "王は自分の王国を公正に治めた。",
-      "id": "The king ruled his kingdom justly.",
+      "id": "Raja memerintah kerajaannya dengan adil.",
       "level": "n2",
       "tags": [
         "umum"
@@ -14549,10 +14789,10 @@ window.vocabN2_Verbs = [
   "word": "納める",
   "reading": "おさめる",
   "romaji": "osameru",
-  "meaning_id": "me-obtain",
+  "meaning_id": "memperoleh",
   "meaning_en": "to obtain; to reap; to pay; to supply; to accept",
   "jlpt": "n2",
-  "pos": "verb-ichidan",
+  "pos": "verb-ru",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -14570,15 +14810,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "資産家は高額の所得税を納めなければならない。",
-      "id": "A man of wealth has to pay a lot of income tax.",
+      "id": "Orang kaya harus membayar pajak penghasilan yang besar.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"オサメ＼ル"}
+},
     {
       "jp": "彼が仲裁してその場は丸く収めた。",
-      "id": "He intervened and settled the matter peacefully for the time being.",
+      "id": "Dia turun tangan dan menyelesaikan masalah ini dengan damai untuk saat ini.",
       "level": "n2",
       "tags": [
         "umum"
@@ -14599,7 +14840,7 @@ window.vocabN2_Verbs = [
   "word": "御辞儀",
   "reading": "おじぎ",
   "romaji": "ojigi",
-  "meaning_id": "bow",
+  "meaning_id": "busur",
   "meaning_en": "bow",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -14620,15 +14861,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "どの子も先生にお辞儀した。",
-      "id": "Every child bowed to the teacher.",
+      "id": "Setiap anak membungkuk kepada gurunya.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"オジギ￣"}
+},
     {
       "jp": "彼は通りすがりにお辞儀をした。",
-      "id": "He bowed to me as he passed by.",
+      "id": "Dia membungkuk padaku saat dia lewat.",
       "level": "n2",
       "tags": [
         "umum"
@@ -14649,10 +14891,10 @@ window.vocabN2_Verbs = [
   "word": "教わる",
   "reading": "おそわる",
   "romaji": "osowaru",
-  "meaning_id": "me-be taught",
+  "meaning_id": "diajarkan",
   "meaning_en": "to be taught",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -14670,12 +14912,13 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "あなたが教わった事は間違っている。",
-      "id": "What you were taught is wrong.",
+      "id": "Apa yang diajarkan kepada Anda salah.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"オソワル￣"}
+},
     {
       "jp": "私は外国語を二つ教わっている。",
       "id": "I am learning two foreign languages.",
@@ -14699,10 +14942,10 @@ window.vocabN2_Verbs = [
   "word": "落着く",
   "reading": "おちつく",
   "romaji": "ochitsuku",
-  "meaning_id": "me-calm down",
+  "meaning_id": "tenang",
   "meaning_en": "to calm down; to settle down",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -14720,15 +14963,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "彼は当惑して落ち着きませんでした。",
-      "id": "He felt lost and uncomfortable.",
+      "id": "Dia merasa tersesat dan tidak nyaman.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"オチツク￣"}
+},
     {
       "jp": "彼女は地震の時落ち着いています。",
-      "id": "She stays calm through earthquakes.",
+      "id": "Dia tetap tenang melalui gempa bumi.",
       "level": "n2",
       "tags": [
         "umum"
@@ -14749,10 +14993,10 @@ window.vocabN2_Verbs = [
   "word": "おどかす",
   "reading": "おどかす",
   "romaji": "odokasu",
-  "meaning_id": "me-threaten",
+  "meaning_id": "mengancam",
   "meaning_en": "to threaten; to coerce",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -14770,15 +15014,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "彼女は猫を脅かして追い払った。",
-      "id": "She scared the cat away.",
+      "id": "Dia menakuti kucing itu.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"オドカス￣"}
+},
     {
       "jp": "脅かさないでよ。",
-      "id": "Don't scare me like that!",
+      "id": "Jangan menakutiku seperti itu!",
       "level": "n2",
       "tags": [
         "umum"
@@ -14799,10 +15044,10 @@ window.vocabN2_Verbs = [
   "word": "驚かす",
   "reading": "おどろかす",
   "romaji": "odorokasu",
-  "meaning_id": "me-surprise",
+  "meaning_id": "kejutan",
   "meaning_en": "to surprise; to frighten; to create a stir",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -14820,65 +15065,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "その靴の値段の高さには驚かされた。",
-      "id": "I was surprised at how expensive the shoes were.",
+      "id": "Saya terkejut melihat betapa mahalnya sepatu itu.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":4,"category":"nakadaka","mora_count":5,"downstep_mora":4,"contour":"オドロカ＼ス"}
+},
     {
       "jp": "彼の死は私たちみんなを驚かせた。",
       "id": "His death surprised us all.",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    }
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "added_v": "v19.3.1-staged-merge",
-  "provenance": "expansion-staged",
-  "jmdict_seq": "",
-  "frequency": 1000
-},
-
-{
-  "id": "vg-n2-00651",
-  "word": "各々",
-  "reading": "おのおの",
-  "romaji": "onoono",
-  "meaning_id": "each; every",
-  "meaning_en": "each; every; either; respectively; severally",
-  "jlpt": "n2",
-  "pos": "adverb",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": [
-    "umum",
-    "kehidupan-sehari-hari"
-  ],
-  "register": "formal",
-  "lawan_bicara": [
-    "rekan-kerja",
-    "umum"
-  ],
-  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
-  "conj_type": null,
-  "examples": [
-    {
-      "jp": "学生たちは各々その会合に出席しなければならない。",
-      "id": "Each of the students has to attend the meeting.",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    },
-    {
-      "jp": "学生は各々順番に卒業証書を受け取った。",
-      "id": "Each student received his diploma in turn.",
       "level": "n2",
       "tags": [
         "umum"
@@ -14899,7 +15095,7 @@ window.vocabN2_Verbs = [
   "word": "お参り",
   "reading": "おまいり",
   "romaji": "omairi",
-  "meaning_id": "worship; shrine visit",
+  "meaning_id": "ibadah; kunjungan kuil",
   "meaning_en": "worship; shrine visit",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -14920,15 +15116,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "元旦には近所の神社にお参りする人が多い。",
-      "id": "On New Year's Day, many people visit neighborhood shrines.",
+      "id": "Pada Hari Tahun Baru, banyak orang mengunjungi kuil di lingkungan sekitar.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"オマイリ￣"}
+},
     {
       "jp": "１月１日は多くの日本人が神社にお参りする日です。",
-      "id": "January 1st is the day when many Japanese go to shrines.",
+      "id": "Tanggal 1 Januari adalah hari dimana banyak orang Jepang pergi ke kuil.",
       "level": "n2",
       "tags": [
         "umum"
@@ -14949,10 +15146,10 @@ window.vocabN2_Verbs = [
   "word": "思い込む",
   "reading": "おもいこむ",
   "romaji": "omoikomu",
-  "meaning_id": "me-be under impression that",
+  "meaning_id": "mendapat kesan itu",
   "meaning_en": "to be under impression that; to be convinced that",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -14970,65 +15167,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "彼が僕にそう思い込ませたのです。",
-      "id": "He put the idea into my head.",
+      "id": "Dia memasukkan ide itu ke dalam kepalaku.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":4,"category":"nakadaka","mora_count":5,"downstep_mora":4,"contour":"オモイコ＼ム"}
+},
     {
       "jp": "私は彼女が病気だと思い込まされた。",
-      "id": "I was given to understand that she was ill.",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    }
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "added_v": "v19.3.1-staged-merge",
-  "provenance": "expansion-staged",
-  "jmdict_seq": "",
-  "frequency": 1000
-},
-
-{
-  "id": "vg-n2-00660",
-  "word": "思いっきり",
-  "reading": "おもいっきり",
-  "romaji": "omoikkiri",
-  "meaning_id": "me-one's heart's content",
-  "meaning_en": "to one's heart's content; as much as one wants; as hard as one can; with all one's strength",
-  "jlpt": "n2",
-  "pos": "adverb",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": [
-    "umum",
-    "kehidupan-sehari-hari"
-  ],
-  "register": "formal",
-  "lawan_bicara": [
-    "rekan-kerja",
-    "umum"
-  ],
-  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
-  "conj_type": null,
-  "examples": [
-    {
-      "jp": "早く外に出て思いっきり遊びたい。",
-      "id": "Saya ingin hurry and go out, so I can let loose and have fun.",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    },
-    {
-      "jp": "彼は思いっきり落ち込んだ。",
-      "id": "His heart sank to his boots.",
+      "id": "Saya diberi pemahaman bahwa dia sakit.",
       "level": "n2",
       "tags": [
         "umum"
@@ -15049,10 +15197,10 @@ window.vocabN2_Verbs = [
   "word": "思い付く",
   "reading": "おもいつく",
   "romaji": "omoitsuku",
-  "meaning_id": "me-think of",
+  "meaning_id": "memikirkan",
   "meaning_en": "to think of; to hit upon",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -15070,15 +15218,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "いい考えを思いついた。",
-      "id": "A good idea came into my mind.",
+      "id": "Sebuah ide bagus muncul di benak saya.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":4,"category":"nakadaka","mora_count":5,"downstep_mora":4,"contour":"オモイツ＼ク"}
+},
     {
       "jp": "私はよいアイディアを思いついた。",
-      "id": "I hit on a good idea.",
+      "id": "Aku mendapat ide bagus.",
       "level": "n2",
       "tags": [
         "umum"
@@ -15099,10 +15248,10 @@ window.vocabN2_Verbs = [
   "word": "卸す",
   "reading": "おろす",
   "romaji": "orosu",
-  "meaning_id": "me-sell wholesale",
+  "meaning_id": "menjual grosir",
   "meaning_en": "to sell wholesale; grated (vegetables)",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -15120,12 +15269,13 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "そうは問屋がおろさないぞ。",
-      "id": "You won't get it so easily.",
+      "id": "Anda tidak akan mendapatkannya dengan mudah.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"オロ＼ス"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -15141,7 +15291,7 @@ window.vocabN2_Verbs = [
   "word": "カーブ",
   "reading": "カーブ",
   "romaji": "kaabu",
-  "meaning_id": "curve; curve ball (baseball)",
+  "meaning_id": "kurva; bola melengkung (bisbol)",
   "meaning_en": "curve; curve ball (baseball)",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -15166,8 +15316,9 @@ window.vocabN2_Verbs = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":0,"downstep_mora":1,"contour":"＼"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -15183,7 +15334,7 @@ window.vocabN2_Verbs = [
   "word": "開会",
   "reading": "かいかい",
   "romaji": "kaikai",
-  "meaning_id": "opening of a meeting",
+  "meaning_id": "pembukaan pertemuan",
   "meaning_en": "opening of a meeting",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -15204,15 +15355,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "国会は午後二時に開会されました。",
-      "id": "The Diet session convened at 2pm.",
+      "id": "Sesi Diet diadakan pada jam 2 siang.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"カイカイ￣"}
+},
     {
       "jp": "国会は開会中だ。",
-      "id": "The Diet is now in session.",
+      "id": "Diet sekarang sedang berlangsung.",
       "level": "n2",
       "tags": [
         "umum"
@@ -15233,7 +15385,7 @@ window.vocabN2_Verbs = [
   "word": "改札",
   "reading": "かいさつ",
   "romaji": "kaisatsu",
-  "meaning_id": "examination of tickets",
+  "meaning_id": "pemeriksaan tiket",
   "meaning_en": "examination of tickets",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -15254,12 +15406,13 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "最近駅の改札あたりで、平気でイチャイチャしてる若い奴等多くなったよなあ。",
-      "id": "Lately you see more young couples making out at the train station ticket gates acting as though nobody in the world existed.",
+      "id": "Akhir-akhir ini Anda melihat lebih banyak pasangan muda bermesraan di gerbang tiket stasiun kereta api yang bertingkah seolah-olah tidak ada orang di dunia ini.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"カイサツ￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -15275,7 +15428,7 @@ window.vocabN2_Verbs = [
   "word": "解散",
   "reading": "かいさん",
   "romaji": "kaisan",
-  "meaning_id": "breakup; dissolution",
+  "meaning_id": "perpisahan; pembubaran",
   "meaning_en": "breakup; dissolution",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -15296,15 +15449,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "首相は国会を解散した。",
-      "id": "The prime minister dissolved the Diet.",
+      "id": "Perdana Menteri membubarkan Diet.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"カイサン￣"}
+},
     {
       "jp": "警察は、群衆を解散させた。",
-      "id": "The police broke up the crowd.",
+      "id": "Polisi membubarkan massa.",
       "level": "n2",
       "tags": [
         "umum"
@@ -15346,12 +15500,13 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "時刻表が改正された。",
-      "id": "The timetable has been revised.",
+      "id": "Jadwalnya telah direvisi.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"カイセイ￣"}
+},
     {
       "jp": "彼らは税法の改正を支持している。",
       "id": "Mereka in favor of the reform of the tax laws.",
@@ -15375,7 +15530,7 @@ window.vocabN2_Verbs = [
   "word": "解説",
   "reading": "かいせつ",
   "romaji": "kaisetsu",
-  "meaning_id": "explanation; commentary",
+  "meaning_id": "penjelasan; komentar",
   "meaning_en": "explanation; commentary",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -15400,8 +15555,9 @@ window.vocabN2_Verbs = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"カイセツ￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -15417,7 +15573,7 @@ window.vocabN2_Verbs = [
   "word": "改造",
   "reading": "かいぞう",
   "romaji": "kaizou",
-  "meaning_id": "remodeling; modding (comp)",
+  "meaning_id": "renovasi; modding (komp)",
   "meaning_en": "remodeling; modding (comp)",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -15438,15 +15594,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "地下室を仕事場に改造した。",
-      "id": "The basement has been made over into a workshop.",
+      "id": "Ruang bawah tanah telah diubah menjadi bengkel.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"カイゾウ￣"}
+},
     {
       "jp": "車庫を仕事場として使えるように改造した。",
-      "id": "I adapted the garage for use as a workshop.",
+      "id": "Saya mengadaptasi garasi untuk digunakan sebagai bengkel.",
       "level": "n2",
       "tags": [
         "umum"
@@ -15467,7 +15624,7 @@ window.vocabN2_Verbs = [
   "word": "開通",
   "reading": "かいつう",
   "romaji": "kaitsuu",
-  "meaning_id": "opening; open",
+  "meaning_id": "pembukaan; terbuka",
   "meaning_en": "opening; open",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -15488,15 +15645,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "橋は開通している。",
-      "id": "The bridge is open to traffic.",
+      "id": "Jembatan ini terbuka untuk lalu lintas.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"カイツウ￣"}
+},
     {
       "jp": "不通区間の開通の見込みはまだない。",
-      "id": "There's no hope at this moment that the closed section will be reopened.",
+      "id": "Saat ini tidak ada harapan bahwa bagian yang ditutup akan dibuka kembali.",
       "level": "n2",
       "tags": [
         "umum"
@@ -15538,15 +15696,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "こまはぐるぐる回転した。",
-      "id": "The top went around and around.",
+      "id": "Bagian atas berputar-putar.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"カイテン￣"}
+},
     {
       "jp": "針は中心を一時間に１０回転の割合で回る。",
-      "id": "The hand on its axis turns at 10 revolutions per hour.",
+      "id": "Jarum pada porosnya berputar dengan kecepatan 10 putaran per jam.",
       "level": "n2",
       "tags": [
         "umum"
@@ -15567,7 +15726,7 @@ window.vocabN2_Verbs = [
   "word": "解答",
   "reading": "かいとう",
   "romaji": "kaitou",
-  "meaning_id": "answer; solution",
+  "meaning_id": "jawaban; solusi",
   "meaning_en": "answer; solution",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -15588,15 +15747,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "あなたの解答には私たちとしてはまったく不満だ。",
-      "id": "Your answer is anything but satisfactory to us.",
+      "id": "Jawaban Anda sama sekali tidak memuaskan kami.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"カイトウ￣"}
+},
     {
       "jp": "たいがいの場合、彼の解答は正確だ。",
-      "id": "In most cases, his answers are right.",
+      "id": "Dalam kebanyakan kasus, jawabannya benar.",
       "level": "n2",
       "tags": [
         "umum"
@@ -15617,7 +15777,7 @@ window.vocabN2_Verbs = [
   "word": "回答",
   "reading": "かいとう",
   "romaji": "kaitou",
-  "meaning_id": "reply; answer",
+  "meaning_id": "membalas; jawaban",
   "meaning_en": "reply; answer",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -15638,15 +15798,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "金曜日までに回答が必要です。",
-      "id": "I need to know your answer by Friday.",
+      "id": "Saya perlu tahu jawaban Anda paling lambat hari Jumat.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"カイトウ￣"}
+},
     {
       "jp": "これらの回答は、原因と結果をはき違えている。",
-      "id": "These answers confuse cause with consequence.",
+      "id": "Jawaban-jawaban ini mengacaukan sebab dan akibat.",
       "level": "n2",
       "tags": [
         "umum"
@@ -15688,15 +15849,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "人質は解放されるだろう。",
-      "id": "The hostages will be released.",
+      "id": "Para sandera akan dibebaskan.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"カイホウ￣"}
+},
     {
       "jp": "犯人は人質を解放しなかった。",
-      "id": "The criminal didn't let the hostages go.",
+      "id": "Penjahat tidak membiarkan para sandera pergi.",
       "level": "n2",
       "tags": [
         "umum"
@@ -15738,15 +15900,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "この庭園は一般に開放されています。",
-      "id": "This garden is open to the public.",
+      "id": "Taman ini terbuka untuk umum.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"カイホウ￣"}
+},
     {
       "jp": "婦人に開放されている職業は多い。",
-      "id": "Ada many careers open to women.",
+      "id": "Ada banyak karir yang terbuka untuk wanita.",
       "level": "n2",
       "tags": [
         "umum"
@@ -15792,8 +15955,9 @@ window.vocabN2_Verbs = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ガイロン￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -15809,10 +15973,10 @@ window.vocabN2_Verbs = [
   "word": "帰す",
   "reading": "かえす",
   "romaji": "kaesu",
-  "meaning_id": "me-send back",
+  "meaning_id": "kirim kembali",
   "meaning_en": "to send back",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -15830,62 +15994,13 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "けがを治療してもらったトラは、村人たちの手で無事、保護区に帰された。",
-      "id": "The tiger, having had its wounds treated, was returned by the villagers to the animal sanctuary without incident.",
+      "id": "Harimau tersebut, setelah luka-lukanya diobati, dikembalikan oleh penduduk desa ke tempat perlindungan hewan tanpa insiden apa pun.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "added_v": "v19.3.1-staged-merge",
-  "provenance": "expansion-staged",
-  "jmdict_seq": "",
-  "frequency": 1000
-},
-
-{
-  "id": "vg-n2-00698",
-  "word": "却って",
-  "reading": "かえって",
-  "romaji": "kaette",
-  "meaning_id": "on the contrary; rather",
-  "meaning_en": "on the contrary; rather; all the more; instead",
-  "jlpt": "n2",
-  "pos": "adverb",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": [
-    "umum",
-    "kehidupan-sehari-hari"
-  ],
-  "register": "formal",
-  "lawan_bicara": [
-    "rekan-kerja",
-    "umum"
-  ],
-  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
-  "conj_type": null,
-  "examples": [
-    {
-      "jp": "高望みをするとかえって損をする。",
-      "id": "You may go farther and fare worse.",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    },
-    {
-      "jp": "彼はいないのでかえって目立った。",
-      "id": "He was conspicuous by his absence.",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"カ＼エス"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -15901,10 +16016,10 @@ window.vocabN2_Verbs = [
   "word": "代える",
   "reading": "かえる",
   "romaji": "kaeru",
-  "meaning_id": "me-exchange",
+  "meaning_id": "pertukaran",
   "meaning_en": "to exchange; to interchange; to substitute; to replace",
   "jlpt": "n2",
-  "pos": "verb-ichidan",
+  "pos": "verb-ru",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -15922,15 +16037,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "お花の水を替えましょう。",
-      "id": "Shall I change the water for the flowers?",
+      "id": "Haruskah saya mengganti air untuk bunganya?",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"カエル￣"}
+},
     {
       "jp": "真の友情は千金にも代え難い。",
-      "id": "True friendship is priceless.",
+      "id": "Persahabatan sejati tak ternilai harganya.",
       "level": "n2",
       "tags": [
         "umum"
@@ -15951,10 +16067,10 @@ window.vocabN2_Verbs = [
   "word": "掻く",
   "reading": "かく",
   "romaji": "kaku",
-  "meaning_id": "me-scratch",
+  "meaning_id": "awal",
   "meaning_en": "to scratch; to perspire",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -15972,15 +16088,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "先生の言葉でメアリーは冷や汗をかいた。",
-      "id": "The teacher's words put Mary in a cold sweat.",
+      "id": "Perkataan guru itu membuat Mary berkeringat dingin.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":2,"downstep_mora":1,"contour":"カ＼ク"}
+},
     {
       "jp": "その社会学者は背中を掻く癖がある。",
-      "id": "The sociologist has a habit of scratching his back.",
+      "id": "Sosiolog punya kebiasaan menggaruk punggung.",
       "level": "n2",
       "tags": [
         "umum"
@@ -16001,10 +16118,10 @@ window.vocabN2_Verbs = [
   "word": "嗅ぐ",
   "reading": "かぐ",
   "romaji": "kagu",
-  "meaning_id": "me-sniff",
+  "meaning_id": "mengendus",
   "meaning_en": "to sniff; to smell",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -16022,65 +16139,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "その犬は地面をくんくん嗅いだ。",
-      "id": "The dog sniffed the ground.",
+      "id": "Anjing itu mengendus-endus tanah.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":2,"downstep_mora":0,"contour":"カグ￣"}
+},
     {
       "jp": "犬は見知らぬ人の匂いをかいだ。",
-      "id": "The dog sniffed at the stranger.",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    }
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "added_v": "v19.3.1-staged-merge",
-  "provenance": "expansion-staged",
-  "jmdict_seq": "",
-  "frequency": 1000
-},
-
-{
-  "id": "vg-n2-00707",
-  "word": "各自",
-  "reading": "かくじ",
-  "romaji": "kakuji",
-  "meaning_id": "individual; each",
-  "meaning_en": "individual; each",
-  "jlpt": "n2",
-  "pos": "adverb",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": [
-    "umum",
-    "kehidupan-sehari-hari"
-  ],
-  "register": "formal",
-  "lawan_bicara": [
-    "rekan-kerja",
-    "umum"
-  ],
-  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
-  "conj_type": null,
-  "examples": [
-    {
-      "jp": "そのチームの選手は各自めいめいのバットを持っている。",
-      "id": "Each player on the team has his own bat.",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    },
-    {
-      "jp": "各自運転するときは気をつけなければいけない。",
-      "id": "Each of us has to be careful when driving.",
+      "id": "Anjing itu mengendus orang asing itu.",
       "level": "n2",
       "tags": [
         "umum"
@@ -16101,7 +16169,7 @@ window.vocabN2_Verbs = [
   "word": "拡充",
   "reading": "かくじゅう",
   "romaji": "kakujuu",
-  "meaning_id": "expansion",
+  "meaning_id": "ekspansi",
   "meaning_en": "expansion",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -16122,12 +16190,13 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "教育施設を拡充する金をもっと多くと望んでいる。",
-      "id": "People want more money to expand educational institutions.",
+      "id": "Masyarakat menginginkan lebih banyak uang untuk memperluas institusi pendidikan.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"カクジュウ￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -16164,15 +16233,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "学校の体育館が拡張された。",
-      "id": "The school gymnasium was enlarged.",
+      "id": "Gimnasium sekolah diperbesar.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"カクチョウ￣"}
+},
     {
       "jp": "その会社では拡張の計画があります。",
-      "id": "Ada a scheme to expand the company.",
+      "id": "Ada skema untuk memperluas perusahaan.",
       "level": "n2",
       "tags": [
         "umum"
@@ -16214,15 +16284,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "委員会はその議案を可決した。",
-      "id": "The committee passed the bill.",
+      "id": "Panitia mengesahkan RUU tersebut.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"カケツ￣"}
+},
     {
       "jp": "新しく道路を作るという決議が可決されました。",
-      "id": "The resolution that a new road be built was passed.",
+      "id": "Resolusi untuk membangun jalan baru telah disahkan.",
       "level": "n2",
       "tags": [
         "umum"
@@ -16268,8 +16339,9 @@ window.vocabN2_Verbs = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"カコウ￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -16285,10 +16357,10 @@ window.vocabN2_Verbs = [
   "word": "重なる",
   "reading": "かさなる",
   "romaji": "kasanaru",
-  "meaning_id": "me-be piled up",
+  "meaning_id": "ditumpuk",
   "meaning_en": "to be piled up; lie on top of one another; overlap each other",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -16306,15 +16378,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "今度の祭日は日曜日と重なります。",
-      "id": "The next holiday falls on a Sunday.",
+      "id": "Liburan berikutnya jatuh pada hari Minggu.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"カサナル￣"}
+},
     {
       "jp": "物事は重なって起こる。",
-      "id": "It never rains but it pours.",
+      "id": "Tidak pernah turun hujan tetapi mengalir deras.",
       "level": "n2",
       "tags": [
         "umum"
@@ -16335,10 +16408,10 @@ window.vocabN2_Verbs = [
   "word": "重ねる",
   "reading": "かさねる",
   "romaji": "kasaneru",
-  "meaning_id": "me-pile up",
+  "meaning_id": "menumpuk",
   "meaning_en": "to pile up; to put something on another; to heap up; to add; to repeat",
   "jlpt": "n2",
-  "pos": "verb-ichidan",
+  "pos": "verb-ru",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -16356,15 +16429,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "机の上には漫画本が重ねてあった。",
-      "id": "The comic books were piled on the desk.",
+      "id": "Buku-buku komik bertumpuk di atas meja.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"カサネル￣"}
+},
     {
       "jp": "彼は悪事を重ねた。",
-      "id": "He committed one crime after another.",
+      "id": "Dia melakukan kejahatan demi kejahatan.",
       "level": "n2",
       "tags": [
         "umum"
@@ -16385,7 +16459,7 @@ window.vocabN2_Verbs = [
   "word": "貸し出し",
   "reading": "かしだし",
   "romaji": "kashidashi",
-  "meaning_id": "lending; loaning",
+  "meaning_id": "pinjaman",
   "meaning_en": "lending; loaning",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -16406,15 +16480,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "銀行は産業向け貸出を減らしている。",
-      "id": "Banks are cutting lending to industrial borrowers.",
+      "id": "Bank mengurangi pinjaman kepada peminjam industri.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"カシダシ￣"}
+},
     {
       "jp": "本の貸出しは１度に５冊までですよ。",
-      "id": "You are allowed to check out not more than five books at a time.",
+      "id": "Anda diperbolehkan membaca tidak lebih dari lima buku sekaligus.",
       "level": "n2",
       "tags": [
         "umum"
@@ -16435,10 +16510,10 @@ window.vocabN2_Verbs = [
   "word": "かじる",
   "reading": "かじる",
   "romaji": "kajiru",
-  "meaning_id": "me-chew",
+  "meaning_id": "mengunyah",
   "meaning_en": "to chew; to bite (at); to gnaw; to nibble",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -16456,15 +16531,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "犬は肉を骨からかじりとった。",
-      "id": "The dog bit meat off the bone.",
+      "id": "Anjing itu menggigit daging dari tulangnya.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"カジ＼ル"}
+},
     {
       "jp": "彼女はまだ親のすねをかじっている。",
-      "id": "She's still dependent on her parents.",
+      "id": "Dia masih bergantung pada orang tuanya.",
       "level": "n2",
       "tags": [
         "umum"
@@ -16485,7 +16561,7 @@ window.vocabN2_Verbs = [
   "word": "課税",
   "reading": "かぜい",
   "romaji": "kazei",
-  "meaning_id": "taxation",
+  "meaning_id": "perpajakan",
   "meaning_en": "taxation",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -16506,15 +16582,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "課税品をお持ちですか。",
-      "id": "Do you have anything to declare?",
+      "id": "Apakah Anda punya sesuatu untuk diumumkan?",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"カゼイ￣"}
+},
     {
       "jp": "輸入品は高い課税対象だ。",
-      "id": "Import goods are subject to high taxes.",
+      "id": "Barang impor dikenakan pajak yang tinggi.",
       "level": "n2",
       "tags": [
         "umum"
@@ -16535,7 +16612,7 @@ window.vocabN2_Verbs = [
   "word": "加速",
   "reading": "かそく",
   "romaji": "kasoku",
-  "meaning_id": "acceleration",
+  "meaning_id": "percepatan",
   "meaning_en": "acceleration",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -16556,15 +16633,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "その政策は、インフレを加速させるだけだ。",
-      "id": "The policy will only accelerate inflation.",
+      "id": "Kebijakan tersebut hanya akan mempercepat inflasi.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"カソク￣"}
+},
     {
       "jp": "彼は車を加速し、私に追いついた。",
-      "id": "He accelerated his car and overtook me.",
+      "id": "Dia mempercepat mobilnya dan menyusulku.",
       "level": "n2",
       "tags": [
         "umum"
@@ -16585,10 +16663,10 @@ window.vocabN2_Verbs = [
   "word": "片付く",
   "reading": "かたづく",
   "romaji": "katazuku",
-  "meaning_id": "me-put in order",
+  "meaning_id": "mengaturnya",
   "meaning_en": "to put in order; to dispose of; to solve",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -16606,15 +16684,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "ごたごたが片付いてさばさばした。",
-      "id": "I felt relieved when all the troubles were taken care of.",
+      "id": "Saya merasa lega ketika semua masalah teratasi.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"カタヅ＼ク"}
+},
     {
       "jp": "私の仕事は大概片付いた。",
-      "id": "My work is almost finished.",
+      "id": "Pekerjaanku hampir selesai.",
       "level": "n2",
       "tags": [
         "umum"
@@ -16635,10 +16714,10 @@ window.vocabN2_Verbs = [
   "word": "固まる",
   "reading": "かたまる",
   "romaji": "katamaru",
-  "meaning_id": "me-harden",
+  "meaning_id": "mengeras",
   "meaning_en": "to harden; to solidify; to become firm; to become certain",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -16656,15 +16735,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "セメントは２、３時間で固まる。",
-      "id": "The cement will set in a couple of hours.",
+      "id": "Semen akan mengeras dalam beberapa jam.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"カタマル￣"}
+},
     {
       "jp": "我々の計画はまだ固まってない。",
-      "id": "Our plans are not yet concrete.",
+      "id": "Rencana kami belum konkrit.",
       "level": "n2",
       "tags": [
         "umum"
@@ -16685,10 +16765,10 @@ window.vocabN2_Verbs = [
   "word": "傾く",
   "reading": "かたむく",
   "romaji": "katamuku",
-  "meaning_id": "me-incline toward",
+  "meaning_id": "condong ke arah",
   "meaning_en": "to incline toward; to slant; to lurch",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -16706,15 +16786,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "そのポールは左に傾いた。",
-      "id": "The pole inclined to the left.",
+      "id": "Tiangnya condong ke kiri.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"カタム＼ク"}
+},
     {
       "jp": "太陽が西に傾いた。",
-      "id": "The sun declined westward.",
+      "id": "Matahari terbenam ke arah barat.",
       "level": "n2",
       "tags": [
         "umum"
@@ -16735,10 +16816,10 @@ window.vocabN2_Verbs = [
   "word": "片寄る",
   "reading": "かたよる",
   "romaji": "katayoru",
-  "meaning_id": "me-be one-sided",
+  "meaning_id": "menjadi sepihak",
   "meaning_en": "to be one-sided; to incline; to be partial",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -16756,15 +16837,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "ハンバーガーばかり食べていると、栄養が偏るよ。",
-      "id": "Your diet is going to be really unbalanced if all you eat is hamburgers.",
+      "id": "Pola makan Anda akan menjadi sangat tidak seimbang jika yang Anda makan hanyalah hamburger.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"カタヨ＼ル"}
+},
     {
       "jp": "２桁のＩＱがある人間なら誰でも、この選択が政治的に偏ったものだって分かってるよ。",
-      "id": "Anybody with at least a two-digit IQ knows this was a politically biased choice.",
+      "id": "Siapa pun yang memiliki IQ setidaknya dua digit tahu bahwa ini adalah pilihan yang bias secara politik.",
       "level": "n2",
       "tags": [
         "umum"
@@ -16785,10 +16867,10 @@ window.vocabN2_Verbs = [
   "word": "担ぐ",
   "reading": "かつぐ",
   "romaji": "katsugu",
-  "meaning_id": "me-shoulder",
+  "meaning_id": "bahu",
   "meaning_en": "to shoulder; to carry on shoulder",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -16806,15 +16888,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "男は袋を肩に担いだ。",
-      "id": "The man threw a bag across his shoulder.",
+      "id": "Pria itu melemparkan tas ke bahunya.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"カツ＼グ"}
+},
     {
       "jp": "私は箱を肩に担いだ。",
-      "id": "I carried the box on my shoulder.",
+      "id": "Aku membawa kotak itu di bahuku.",
       "level": "n2",
       "tags": [
         "umum"
@@ -16835,7 +16918,7 @@ window.vocabN2_Verbs = [
   "word": "括弧",
   "reading": "かっこ",
   "romaji": "kakko",
-  "meaning_id": "parenthesis; brackets",
+  "meaning_id": "tanda kurung",
   "meaning_en": "parenthesis; brackets",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -16856,15 +16939,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "カッコ内の言葉を短縮形にしなさい。",
-      "id": "Put the words in parentheses into abbreviated form.",
+      "id": "Masukkan kata-kata dalam tanda kurung ke dalam bentuk yang disingkat.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"カ＼ッコ"}
+},
     {
       "jp": "１語をかっこに入れなさい。",
-      "id": "Put a word in parentheses.",
+      "id": "Masukkan sebuah kata dalam tanda kurung.",
       "level": "n2",
       "tags": [
         "umum"
@@ -16885,7 +16969,7 @@ window.vocabN2_Verbs = [
   "word": "活躍",
   "reading": "かつやく",
   "romaji": "katsuyaku",
-  "meaning_id": "activity",
+  "meaning_id": "aktivitas",
   "meaning_en": "activity",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -16906,15 +16990,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "元気で活躍していることと思います。",
-      "id": "I hope things have been going well for you.",
+      "id": "Saya harap semuanya berjalan baik untuk Anda.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"カツヤク￣"}
+},
     {
       "jp": "仕事でご活躍ですね。",
-      "id": "I see you're doing very well in your business.",
+      "id": "Saya melihat Anda melakukannya dengan sangat baik dalam bisnis Anda.",
       "level": "n2",
       "tags": [
         "umum"
@@ -16956,15 +17041,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "彼女がここにいると仮定してみよう。",
-      "id": "Let's suppose that she is here.",
+      "id": "Anggap saja dia ada di sini.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"カテイ￣"}
+},
     {
       "jp": "奥さんがいると仮定してごらん。",
-      "id": "Imagine that you have a wife.",
+      "id": "Bayangkan Anda mempunyai seorang istri.",
       "level": "n2",
       "tags": [
         "umum"
@@ -16985,7 +17071,7 @@ window.vocabN2_Verbs = [
   "word": "加熱",
   "reading": "かねつ",
   "romaji": "kanetsu",
-  "meaning_id": "heating",
+  "meaning_id": "pemanasan",
   "meaning_en": "heating",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -17006,12 +17092,13 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "水は充分に加熱すると沸騰する。",
-      "id": "Water will boil if heated enough.",
+      "id": "Air akan mendidih jika dipanaskan secukupnya.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"カネツ￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -17027,10 +17114,10 @@ window.vocabN2_Verbs = [
   "word": "兼ねる",
   "reading": "かねる",
   "romaji": "kaneru",
-  "meaning_id": "me-hold",
+  "meaning_id": "memegang",
   "meaning_en": "to hold (position); to serve; to be unable",
   "jlpt": "n2",
-  "pos": "verb-ichidan",
+  "pos": "verb-ru",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -17052,11 +17139,12 @@ window.vocabN2_Verbs = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"カネ＼ル"}
+},
     {
       "jp": "今日は、ばーさんのお使いを兼ねて街で買い物。",
-      "id": "Today I'm shopping in town as well as running an errand for my grandmother.",
+      "id": "Hari ini aku berbelanja di kota dan juga menjalankan tugas untuk nenekku.",
       "level": "n2",
       "tags": [
         "umum"
@@ -17077,10 +17165,10 @@ window.vocabN2_Verbs = [
   "word": "被せる",
   "reading": "かぶせる",
   "romaji": "kabuseru",
-  "meaning_id": "me-cover",
+  "meaning_id": "penutup",
   "meaning_en": "to cover (with something)",
   "jlpt": "n2",
-  "pos": "verb-ichidan",
+  "pos": "verb-ru",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -17098,15 +17186,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "彼は車にカバーを被せた。",
-      "id": "He put a cover over his car.",
+      "id": "Dia menutupi mobilnya.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"カブセ＼ル"}
+},
     {
       "jp": "新しいクラウンをかぶせる必要があります。",
-      "id": "You have to have a new crown.",
+      "id": "Anda harus memiliki mahkota baru.",
       "level": "n2",
       "tags": [
         "umum"
@@ -17127,10 +17216,10 @@ window.vocabN2_Verbs = [
   "word": "からかう",
   "reading": "からかう",
   "romaji": "karakau",
-  "meaning_id": "me-ridicule",
+  "meaning_id": "ejekan",
   "meaning_en": "to ridicule; to tease; to banter with; to make fun of",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -17148,7 +17237,7 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "新入生をからかってはいけません。",
-      "id": "Don't make fun of the new student!",
+      "id": "Jangan mengolok-olok siswa baru!",
       "level": "n2",
       "tags": [
         "umum"
@@ -17156,7 +17245,7 @@ window.vocabN2_Verbs = [
     },
     {
       "jp": "彼をからかわずにはいられない。",
-      "id": "I can't help making fun of him.",
+      "id": "Aku tidak bisa menahan diri untuk mengolok-oloknya.",
       "level": "n2",
       "tags": [
         "umum"
@@ -17177,10 +17266,10 @@ window.vocabN2_Verbs = [
   "word": "枯れる",
   "reading": "かれる",
   "romaji": "kareru",
-  "meaning_id": "me-wither",
+  "meaning_id": "layu",
   "meaning_en": "to wither; to die (plant); to be blasted (plant)",
   "jlpt": "n2",
-  "pos": "verb-ichidan",
+  "pos": "verb-ru",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -17198,15 +17287,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "その花は水がないために枯れた。",
-      "id": "The flower died for lack of water.",
+      "id": "Bunga itu mati karena kekurangan air.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"カレル￣"}
+},
     {
       "jp": "植物は水をやらないと枯れてしまう。",
-      "id": "Failure to water plants will cause them to die.",
+      "id": "Kegagalan menyiram tanaman akan menyebabkan kematian.",
       "level": "n2",
       "tags": [
         "umum"
@@ -17227,10 +17317,10 @@ window.vocabN2_Verbs = [
   "word": "かわいがる",
   "reading": "かわいがる",
   "romaji": "kawaigaru",
-  "meaning_id": "me-love",
+  "meaning_id": "cinta",
   "meaning_en": "to love; to be affectionate",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -17248,12 +17338,13 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "彼女はこの村のみんなからかわいがられていました。",
-      "id": "She was loved by everybody in the village.",
+      "id": "Dia dicintai oleh semua orang di desa.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":4,"category":"nakadaka","mora_count":5,"downstep_mora":4,"contour":"カワイガ＼ル"}
+},
     {
       "jp": "父も母に劣らず私をかわいがってくれた。",
       "id": "My father loved me no less deeply than my mother.",
@@ -17277,10 +17368,10 @@ window.vocabN2_Verbs = [
   "word": "乾かす",
   "reading": "かわかす",
   "romaji": "kawakasu",
-  "meaning_id": "me-dry",
+  "meaning_id": "kering",
   "meaning_en": "to dry (clothes, etc.); to desiccate",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -17298,12 +17389,13 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "彼女は皿を洗い、それから乾かした。",
-      "id": "She washed the dishes and she dried them.",
+      "id": "Dia mencuci piring dan mengeringkannya.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"カワカ＼ス"}
+},
     {
       "jp": "のどを乾かしておいてください。",
       "id": "Tolong come thirsty.",
@@ -17327,10 +17419,10 @@ window.vocabN2_Verbs = [
   "word": "渇く",
   "reading": "かわく",
   "romaji": "kawaku",
-  "meaning_id": "me-be thirsty",
+  "meaning_id": "menjadi haus",
   "meaning_en": "to be thirsty",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -17348,12 +17440,13 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "お腹が空いたし、のども渇いた。",
-      "id": "I'm hungry and thirsty.",
+      "id": "Saya lapar dan haus.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"カワ＼ク"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -17369,10 +17462,10 @@ window.vocabN2_Verbs = [
   "word": "代る",
   "reading": "かわる",
   "romaji": "kawaru",
-  "meaning_id": "me-take the place of",
+  "meaning_id": "menggantikan",
   "meaning_en": "to take the place of; to relieve; to be substituted for",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -17390,15 +17483,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "ジムは、ベティーにかわって手紙を書いた。",
-      "id": "Jim wrote the letter for Betty.",
+      "id": "Jim menulis surat untuk Betty.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"カワル￣"}
+},
     {
       "jp": "彼女に代ってその会に出席した。",
-      "id": "I attended the meeting on her behalf.",
+      "id": "Saya menghadiri pertemuan atas namanya.",
       "level": "n2",
       "tags": [
         "umum"
@@ -17419,7 +17513,7 @@ window.vocabN2_Verbs = [
   "word": "換気",
   "reading": "かんき",
   "romaji": "kanki",
-  "meaning_id": "ventilation",
+  "meaning_id": "ventilasi",
   "meaning_en": "ventilation",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -17440,15 +17534,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "窓を開けて換気をしましょう。",
-      "id": "Let's open a window to get some fresh air.",
+      "id": "Mari kita buka jendela untuk mencari udara segar.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"カンキ￣"}
+},
     {
       "jp": "換気しろよ。",
-      "id": "Let some fresh air in.",
+      "id": "Biarkan udara segar masuk.",
       "level": "n2",
       "tags": [
         "umum"
@@ -17490,15 +17585,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "我がチームにお迎えでき、感激します。",
-      "id": "Kami excited about having you on our team.",
+      "id": "Kami senang memiliki Anda di tim kami.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"カンゲキ￣"}
+},
     {
       "jp": "彼の言葉で彼女は感激のあまり涙ぐんだ。",
-      "id": "His words moved her to tears.",
+      "id": "Kata-katanya membuatnya menangis.",
       "level": "n2",
       "tags": [
         "umum"
@@ -17519,7 +17615,7 @@ window.vocabN2_Verbs = [
   "word": "鑑賞",
   "reading": "かんしょう",
   "romaji": "kanshou",
-  "meaning_id": "appreciation",
+  "meaning_id": "apresiasi",
   "meaning_en": "appreciation",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -17540,15 +17636,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "よい音楽を鑑賞することはそれほど難しいことではない。",
-      "id": "It is not so difficult to appreciate good music.",
+      "id": "Tidak sulit untuk mengapresiasi musik yang bagus.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"カンショウ￣"}
+},
     {
       "jp": "彼は、芸術に対する鑑賞力がある。",
-      "id": "He has an eye for art.",
+      "id": "Dia memiliki minat terhadap seni.",
       "level": "n2",
       "tags": [
         "umum"
@@ -17590,15 +17687,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "果実は天日で乾燥させます。",
-      "id": "The fruits are dried in the sun.",
+      "id": "Buahnya dijemur di bawah sinar matahari.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"カンソウ￣"}
+},
     {
       "jp": "肌が乾燥しています。",
-      "id": "I have dry skin.",
+      "id": "Saya memiliki kulit kering.",
       "level": "n2",
       "tags": [
         "umum"
@@ -17619,7 +17717,7 @@ window.vocabN2_Verbs = [
   "word": "観測",
   "reading": "かんそく",
   "romaji": "kansoku",
-  "meaning_id": "observation",
+  "meaning_id": "pengamatan",
   "meaning_en": "observation",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -17640,15 +17738,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "来年６月２２日に観測される皆既日食。",
-      "id": "The total solar eclipse can be observed next year on June 22nd.",
+      "id": "Gerhana matahari total bisa disaksikan tahun depan pada 22 Juni.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"カンソク￣"}
+},
     {
       "jp": "ジャンスキーが観測したのは銀河系の中心核からの波長14.6mの電波であった。",
-      "id": "What Jansky had observed was the 14.6m wavelength radio wave from the Milky Way's core.",
+      "id": "Apa yang diamati Jansky adalah gelombang radio dengan panjang gelombang 14,6 m dari inti Bima Sakti.",
       "level": "n2",
       "tags": [
         "umum"
@@ -17669,7 +17768,7 @@ window.vocabN2_Verbs = [
   "word": "勘違い",
   "reading": "かんちがい",
   "romaji": "kanchigai",
-  "meaning_id": "misunderstanding; wrong guess",
+  "meaning_id": "kesalahpahaman; tebakan yang salah",
   "meaning_en": "misunderstanding; wrong guess",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -17690,15 +17789,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "彼はクラスで一番頭がいいと勘違いしている。",
-      "id": "He has the illusion that he is the smartest in his class.",
+      "id": "Dia memiliki ilusi bahwa dia adalah yang terpintar di kelasnya.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":5,"downstep_mora":3,"contour":"カンチ＼ガイ"}
+},
     {
       "jp": "彼女が会いにくるだろうと思ったのは彼の勘違いだった。",
-      "id": "He was in error in assuming that she would come to see him.",
+      "id": "Dia salah dalam berasumsi bahwa dia akan datang menemuinya.",
       "level": "n2",
       "tags": [
         "umum"
@@ -17719,7 +17819,7 @@ window.vocabN2_Verbs = [
   "word": "乾杯",
   "reading": "かんぱい",
   "romaji": "kanpai",
-  "meaning_id": "toast (drink)",
+  "meaning_id": "roti panggang (minuman)",
   "meaning_en": "toast (drink)",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -17740,15 +17840,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "今夜の主賓に乾杯しよう。",
-      "id": "Let's toast the guest of honor!",
+      "id": "Mari bersulang untuk tamu kehormatan!",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"カンパイ￣"}
+},
     {
       "jp": "この機会に乾杯すべきだ。",
-      "id": "On this occasion, we should drink a toast.",
+      "id": "Pada kesempatan ini, kita harus bersulang.",
       "level": "n2",
       "tags": [
         "umum"
@@ -17769,7 +17870,7 @@ window.vocabN2_Verbs = [
   "word": "看病",
   "reading": "かんびょう",
   "romaji": "kanbyou",
-  "meaning_id": "nursing (a patient)",
+  "meaning_id": "keperawatan (pasien)",
   "meaning_en": "nursing (a patient)",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -17790,15 +17891,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "医者は病気の老人を看病して夜を明かした。",
-      "id": "The doctor sat up all night with the sick old man.",
+      "id": "Dokter duduk sepanjang malam bersama lelaki tua yang sakit itu.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":4,"downstep_mora":1,"contour":"カ＼ンビョウ"}
+},
     {
       "jp": "彼は病人を寝ずに看病した。",
-      "id": "He watched with the patient.",
+      "id": "Dia mengawasi dengan pasien.",
       "level": "n2",
       "tags": [
         "umum"
@@ -17819,7 +17921,7 @@ window.vocabN2_Verbs = [
   "word": "着替え",
   "reading": "きがえ",
   "romaji": "kigae",
-  "meaning_id": "changing clothes; change of clothes",
+  "meaning_id": "berganti pakaian; pakaian ganti",
   "meaning_en": "changing clothes; change of clothes",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -17840,15 +17942,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "着替えをするために家に帰った。",
-      "id": "I went home to change my clothes.",
+      "id": "Aku pulang ke rumah untuk mengganti pakaianku.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"キガエ￣"}
+},
     {
       "jp": "彼女は今夜のパーティーの前に着替えをしなければならない。",
-      "id": "She has to change clothes before tonight's party.",
+      "id": "Dia harus berganti pakaian sebelum pesta malam ini.",
       "level": "n2",
       "tags": [
         "umum"
@@ -17869,10 +17972,10 @@ window.vocabN2_Verbs = [
   "word": "刻む",
   "reading": "きざむ",
   "romaji": "kizamu",
-  "meaning_id": "me-mince",
+  "meaning_id": "cincang",
   "meaning_en": "to mince; to carve; to engrave",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -17890,15 +17993,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "彼は大理石を刻んで像を作った。",
-      "id": "He carved marble into a statue.",
+      "id": "Dia mengukir marmer menjadi patung.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"キザム￣"}
+},
     {
       "jp": "その像は石を刻んで作ったものだ。",
-      "id": "The statue is carved out of stone.",
+      "id": "Patung itu diukir dari batu.",
       "level": "n2",
       "tags": [
         "umum"
@@ -17919,7 +18023,7 @@ window.vocabN2_Verbs = [
   "word": "起床",
   "reading": "きしょう",
   "romaji": "kishou",
-  "meaning_id": "rising; getting out of bed",
+  "meaning_id": "meningkat; bangun dari tempat tidur",
   "meaning_en": "rising; getting out of bed",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -17940,15 +18044,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "６時起床、７時家を出る。",
-      "id": "Got up at six, and left home at seven.",
+      "id": "Bangun jam enam, dan meninggalkan rumah jam tujuh.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"キショウ￣"}
+},
     {
       "jp": "私は６時に起床することにしている。",
-      "id": "I make a practice of getting up at six.",
+      "id": "Saya berlatih bangun jam enam.",
       "level": "n2",
       "tags": [
         "umum"
@@ -17969,10 +18074,10 @@ window.vocabN2_Verbs = [
   "word": "着せる",
   "reading": "きせる",
   "romaji": "kiseru",
-  "meaning_id": "me-put on clothes",
+  "meaning_id": "mengenakan pakaian",
   "meaning_en": "to put on clothes",
   "jlpt": "n2",
-  "pos": "verb-ichidan",
+  "pos": "verb-ru",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -17990,65 +18095,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "ケイトは人形に服を着せている。",
-      "id": "Kate is dressing her doll.",
+      "id": "Kate sedang mendandani bonekanya.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"キセル￣"}
+},
     {
       "jp": "この子にこの服を着せて。",
-      "id": "Put the kid into these clothes.",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    }
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "added_v": "v19.3.1-staged-merge",
-  "provenance": "expansion-staged",
-  "jmdict_seq": "",
-  "frequency": 1000
-},
-
-{
-  "id": "vg-n2-00826",
-  "word": "ぎっしり",
-  "reading": "ぎっしり",
-  "romaji": "gisshiri",
-  "meaning_id": "tightly; fully",
-  "meaning_en": "tightly; fully",
-  "jlpt": "n2",
-  "pos": "adverb",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": [
-    "umum",
-    "kehidupan-sehari-hari"
-  ],
-  "register": "formal",
-  "lawan_bicara": [
-    "rekan-kerja",
-    "umum"
-  ],
-  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
-  "conj_type": null,
-  "examples": [
-    {
-      "jp": "エレベーターにぎっしりいっぱいに乗った。",
-      "id": "We jammed into the elevator.",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    },
-    {
-      "jp": "引き出しはがらくたでぎっしり詰まっている。",
-      "id": "The drawer is stuffed full of odds and ends.",
+      "id": "Masukkan anak itu ke dalam pakaian ini.",
       "level": "n2",
       "tags": [
         "umum"
@@ -18090,15 +18146,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "移転にともない５月３０日、３１日は休業いたします。",
-      "id": "Due to our office moving, we will be closed from May 30 to 31.",
+      "id": "Karena kantor kami pindah, kami akan tutup dari tanggal 30 hingga 31 Mei.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"キュウギョウ￣"}
+},
     {
       "jp": "その店は月曜日には休業です。",
-      "id": "The store is closed Mondays.",
+      "id": "Toko tutup pada hari Senin.",
       "level": "n2",
       "tags": [
         "umum"
@@ -18119,7 +18176,7 @@ window.vocabN2_Verbs = [
   "word": "休講",
   "reading": "きゅうこう",
   "romaji": "kyuukou",
-  "meaning_id": "lecture cancelled",
+  "meaning_id": "kuliah dibatalkan",
   "meaning_en": "lecture cancelled",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -18140,15 +18197,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "この授業は明日休講です。",
-      "id": "This lesson is cancelled tomorrow.",
+      "id": "Pelajaran ini dibatalkan besok.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"キュウコウ￣"}
+},
     {
       "jp": "「・・・おい・・・おい、先生！」「え？・・・あ、ああ」「マジだいじょうぶ？休講にしたら？」",
-      "id": "\"...Hey...Hey, teacher!\" \"Eh? Oh.\" \"Are you really OK? Shouldn't you cancel the lesson?\"",
+      "id": "\"...Hei...Hei, guru!\" \"Eh? Oh.\" “Apakah kamu benar-benar baik-baik saja? Bukankah kamu harus membatalkan pelajarannya?”",
       "level": "n2",
       "tags": [
         "umum"
@@ -18190,15 +18248,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "私たちは昼は働き、夜は休息する。",
-      "id": "We work by day and rest by night.",
+      "id": "Kami bekerja di siang hari dan beristirahat di malam hari.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"キュウソク￣"}
+},
     {
       "jp": "彼は短い休息の後、仕事を再開した。",
-      "id": "He resumed his work after a short break.",
+      "id": "Dia melanjutkan pekerjaannya setelah istirahat sejenak.",
       "level": "n2",
       "tags": [
         "umum"
@@ -18240,15 +18299,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "私は給与の５分の１を税金で取られてしまう。",
-      "id": "One-fifth of my wages go to taxes.",
+      "id": "Seperlima dari gaji saya digunakan untuk pajak.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"キュ＼ウヨ"}
+},
     {
       "jp": "アメリカへの旅は彼女にとって２年間の給与に相当した。",
-      "id": "A trip to America was equivalent to a two-year salary for her.",
+      "id": "Perjalanan ke Amerika setara dengan gaji dua tahun baginya.",
       "level": "n2",
       "tags": [
         "umum"
@@ -18290,15 +18350,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "医者は彼に休養するように命令した。",
-      "id": "His doctor ordered him to rest.",
+      "id": "Dokternya memerintahkan dia untuk istirahat.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"キュウヨウ￣"}
+},
     {
       "jp": "休養が必要なんですよ。",
-      "id": "You just need a good rest.",
+      "id": "Anda hanya perlu istirahat yang cukup.",
       "level": "n2",
       "tags": [
         "umum"
@@ -18340,12 +18401,13 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "コーポレートガバナンスや説明責任を強化している。",
-      "id": "Corporate governance and accountability are being strengthened.",
+      "id": "Tata kelola dan akuntabilitas perusahaan sedang diperkuat.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"キョ＼ウカ"}
+},
     {
       "jp": "我々は組織を強化しなくてはならん。",
       "id": "We must beef up our organization.",
@@ -18390,15 +18452,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "恐縮ですがお手伝い願えませんか。",
-      "id": "May I make so bold as to request your assistance?",
+      "id": "Bolehkah saya berani meminta bantuan Anda?",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"キョウシュク￣"}
+},
     {
       "jp": "恐縮だが、残業してもらわないと。",
-      "id": "I'm afraid you have to work overtime.",
+      "id": "Saya khawatir Anda harus bekerja lembur.",
       "level": "n2",
       "tags": [
         "umum"
@@ -18440,15 +18503,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "子どもたちがサーカスの行列を追いかけた。",
-      "id": "The children chased after the circus parade.",
+      "id": "Anak-anak mengejar parade sirkus.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ギョウレツ￣"}
+},
     {
       "jp": "彼は行列を見ようと首を伸ばした。",
-      "id": "He craned his neck to see the procession.",
+      "id": "Dia menjulurkan lehernya untuk melihat prosesi tersebut.",
       "level": "n2",
       "tags": [
         "umum"
@@ -18469,10 +18533,10 @@ window.vocabN2_Verbs = [
   "word": "斬る",
   "reading": "きる",
   "romaji": "kiru",
-  "meaning_id": "me-behead",
+  "meaning_id": "menebas",
   "meaning_en": "to behead; to murder",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -18490,12 +18554,13 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "斬るを使います。",
-      "id": "Menggunakan me-behead.",
+      "id": "Menggunakan menebas.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":2,"downstep_mora":1,"contour":"キ＼ル"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -18511,10 +18576,10 @@ window.vocabN2_Verbs = [
   "word": "気を付ける",
   "reading": "きをつける",
   "romaji": "kiotsukeru",
-  "meaning_id": "me-be careful",
+  "meaning_id": "hati-hati",
   "meaning_en": "to be careful; to pay attention; to take care",
   "jlpt": "n2",
-  "pos": "verb-ichidan",
+  "pos": "verb-ru",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -18532,7 +18597,7 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "静かにするように気をつけなさい。",
-      "id": "See to it that you keep quiet.",
+      "id": "Pastikan Anda tetap diam.",
       "level": "n2",
       "tags": [
         "umum"
@@ -18540,7 +18605,7 @@ window.vocabN2_Verbs = [
     },
     {
       "jp": "太らないように気をつけているの？",
-      "id": "Are you watching your weight?",
+      "id": "Apakah Anda memperhatikan berat badan Anda?",
       "level": "n2",
       "tags": [
         "umum"
@@ -18582,12 +18647,13 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "彼は空想の世界に生きている。",
-      "id": "He lives in a world of fantasy.",
+      "id": "Dia hidup di dunia fantasi.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"クウソウ￣"}
+},
     {
       "jp": "彼はいつも空想にふけっている。",
       "id": "Dia always day-dreaming.",
@@ -18611,10 +18677,10 @@ window.vocabN2_Verbs = [
   "word": "区切る",
   "reading": "くぎる",
   "romaji": "kugiru",
-  "meaning_id": "me-punctuate",
+  "meaning_id": "tanda baca",
   "meaning_en": "to punctuate; to cut off; to mark off; to stop; to put an end to",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -18632,12 +18698,13 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "グラウンドは白線で３つに区切られている。",
-      "id": "The playground is divided into three areas by white lines.",
+      "id": "Taman bermain ini dibagi menjadi tiga area dengan garis putih.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"クギ＼ル"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -18653,7 +18720,7 @@ window.vocabN2_Verbs = [
   "word": "くしゃみ",
   "reading": "くしゃみ",
   "romaji": "kushami",
-  "meaning_id": "sneeze",
+  "meaning_id": "bersin",
   "meaning_en": "sneeze",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -18674,15 +18741,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "くしゃみが止まりません。",
-      "id": "I can't stop sneezing.",
+      "id": "Saya tidak bisa berhenti bersin.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"クシャ＼ミ"}
+},
     {
       "jp": "よくくしゃみが出ます。",
-      "id": "I sneeze a lot.",
+      "id": "Saya sering bersin.",
       "level": "n2",
       "tags": [
         "umum"
@@ -18703,7 +18771,7 @@ window.vocabN2_Verbs = [
   "word": "苦心",
   "reading": "くしん",
   "romaji": "kushin",
-  "meaning_id": "pain; trouble",
+  "meaning_id": "rasa sakit; masalah",
   "meaning_en": "pain; trouble",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -18724,15 +18792,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "苦心の甲斐があった。",
-      "id": "That was well worth the trouble.",
+      "id": "Itu sepadan dengan masalahnya.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"クシ＼ン"}
+},
     {
       "jp": "その歌手はファンの群がる中を苦心して進んだ。",
-      "id": "The singer fought his way through the crowd of fans.",
+      "id": "Penyanyi itu berjuang melewati kerumunan penggemar.",
       "level": "n2",
       "tags": [
         "umum"
@@ -18753,10 +18822,10 @@ window.vocabN2_Verbs = [
   "word": "崩す",
   "reading": "くずす",
   "romaji": "kuzusu",
-  "meaning_id": "me-destroy",
+  "meaning_id": "menghancurkan",
   "meaning_en": "to destroy; to pull down; to make change (money)",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -18774,15 +18843,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "キャベツは生産過剰で値をくずした。",
-      "id": "The price of cabbage fell because of overproduction.",
+      "id": "Harga kubis anjlok karena kelebihan produksi.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"クズ＼ス"}
+},
     {
       "jp": "一万円札、崩してくれますか。",
-      "id": "Can you break a 10,000 yen bill?",
+      "id": "Bisakah Anda memecahkan uang 10.000 yen?",
       "level": "n2",
       "tags": [
         "umum"
@@ -18803,10 +18873,10 @@ window.vocabN2_Verbs = [
   "word": "崩れる",
   "reading": "くずれる",
   "romaji": "kuzureru",
-  "meaning_id": "me-collapse",
+  "meaning_id": "runtuh",
   "meaning_en": "to collapse; to crumble",
   "jlpt": "n2",
-  "pos": "verb-ichidan",
+  "pos": "verb-ru",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -18824,15 +18894,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "本の山は今にも崩れそうに見える。",
-      "id": "Those books look as if they're going to topple over any minute.",
+      "id": "Buku-buku itu sepertinya akan roboh kapan saja.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"クズレ＼ル"}
+},
     {
       "jp": "彼女は床に崩れるようにして倒れた。",
-      "id": "She fell in a heap to the floor.",
+      "id": "Dia terjatuh ke lantai.",
       "level": "n2",
       "tags": [
         "umum"
@@ -18853,10 +18924,10 @@ window.vocabN2_Verbs = [
   "word": "砕く",
   "reading": "くだく",
   "romaji": "kudaku",
-  "meaning_id": "me-break",
+  "meaning_id": "istirahat",
   "meaning_en": "to break; to smash",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -18874,15 +18945,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "ピックは硬い地表を砕くために用いられる長い取っ手の道具だ。",
-      "id": "A pick is a long handled tool used for breaking up hard ground surfaces.",
+      "id": "Pick adalah alat bergagang panjang yang digunakan untuk menghancurkan permukaan tanah yang keras.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"クダ＼ク"}
+},
     {
       "jp": "愛は人の心を砕くこともできるのさ。",
-      "id": "But love can break your heart.",
+      "id": "Tapi cinta bisa menghancurkan hatimu.",
       "level": "n2",
       "tags": [
         "umum"
@@ -18903,10 +18975,10 @@ window.vocabN2_Verbs = [
   "word": "砕ける",
   "reading": "くだける",
   "romaji": "kudakeru",
-  "meaning_id": "me-break",
+  "meaning_id": "istirahat",
   "meaning_en": "to break; to be broken",
   "jlpt": "n2",
-  "pos": "verb-ichidan",
+  "pos": "verb-ru",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -18924,15 +18996,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "コップが地面に落ちて砕けた。",
-      "id": "The glass crashed to the ground.",
+      "id": "Kaca itu jatuh ke tanah.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"クダケ＼ル"}
+},
     {
       "jp": "重みで氷が砕けた。",
-      "id": "The ice cracked under the weight.",
+      "id": "Esnya retak karena beban.",
       "level": "n2",
       "tags": [
         "umum"
@@ -18953,10 +19026,10 @@ window.vocabN2_Verbs = [
   "word": "くたびれる",
   "reading": "くたびれる",
   "romaji": "kutabireru",
-  "meaning_id": "me-get tired",
+  "meaning_id": "menjadi lelah",
   "meaning_en": "to get tired; to wear out",
   "jlpt": "n2",
-  "pos": "verb-ichidan",
+  "pos": "verb-ru",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -18974,15 +19047,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "私は仕事でひどくくたびれている。",
-      "id": "I'm very tired from work.",
+      "id": "Saya sangat lelah dari pekerjaan.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":4,"category":"nakadaka","mora_count":5,"downstep_mora":4,"contour":"クタビレ＼ル"}
+},
     {
       "jp": "ジャックは５０マイル歩いてくたびれた。",
-      "id": "Jack was tired from having walked fifty miles.",
+      "id": "Jack lelah karena berjalan lima puluh mil.",
       "level": "n2",
       "tags": [
         "umum"
@@ -19003,10 +19077,10 @@ window.vocabN2_Verbs = [
   "word": "下る",
   "reading": "くだる",
   "romaji": "kudaru",
-  "meaning_id": "me-get down",
+  "meaning_id": "turun",
   "meaning_en": "to get down; to descend",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -19024,15 +19098,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "山を下ったところに学校がある。",
-      "id": "Ada a school down the mountain.",
+      "id": "Ada sekolah di bawah gunung.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"クダル￣"}
+},
     {
       "jp": "白いボートが流れを下っていった。",
-      "id": "The white boat went down the stream.",
+      "id": "Perahu putih itu menyusuri sungai.",
       "level": "n2",
       "tags": [
         "umum"
@@ -19053,10 +19128,10 @@ window.vocabN2_Verbs = [
   "word": "くっつく",
   "reading": "くっつく",
   "romaji": "kuttsuku",
-  "meaning_id": "me-adhere to",
+  "meaning_id": "mematuhi",
   "meaning_en": "to adhere to; to keep close to",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -19074,7 +19149,7 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "ぬれた衣装が彼女の体にくっついていた。",
-      "id": "Wet clothes clung to her body.",
+      "id": "Pakaian basah menempel di tubuhnya.",
       "level": "n2",
       "tags": [
         "umum"
@@ -19082,7 +19157,7 @@ window.vocabN2_Verbs = [
     },
     {
       "jp": "骨がくっつけば、ギプスは取られます。",
-      "id": "After the bone has set, the cast will be removed.",
+      "id": "Setelah tulang mengeras, gips akan dilepas.",
       "level": "n2",
       "tags": [
         "umum"
@@ -19103,10 +19178,10 @@ window.vocabN2_Verbs = [
   "word": "くっつける",
   "reading": "くっつける",
   "romaji": "kuttsukeru",
-  "meaning_id": "me-attach",
+  "meaning_id": "lampirkan",
   "meaning_en": "to attach",
   "jlpt": "n2",
-  "pos": "verb-ichidan",
+  "pos": "verb-ru",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -19124,7 +19199,7 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "彼はその破片をくっつけ合わした。",
-      "id": "He stuck the broken pieces together.",
+      "id": "Dia menyatukan pecahan-pecahan itu.",
       "level": "n2",
       "tags": [
         "umum"
@@ -19132,7 +19207,7 @@ window.vocabN2_Verbs = [
     },
     {
       "jp": "彼は壊れた花瓶の破片をくっつけようとした。",
-      "id": "He tried to put the fragments of a broken vase together.",
+      "id": "Dia mencoba menyatukan pecahan vas yang pecah.",
       "level": "n2",
       "tags": [
         "umum"
@@ -19153,10 +19228,10 @@ window.vocabN2_Verbs = [
   "word": "配る",
   "reading": "くばる",
   "romaji": "kubaru",
-  "meaning_id": "me-distribute",
+  "meaning_id": "mendistribusikan",
   "meaning_en": "to distribute; to deliver",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -19174,15 +19249,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "サーカスで、商品としておもちゃを配っている。",
-      "id": "Circuses offer toys for prizes.",
+      "id": "Sirkus menawarkan mainan untuk hadiah.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"クバ＼ル"}
+},
     {
       "jp": "男の子が雨の中を新聞を配っていた。",
-      "id": "A boy was giving out newspapers in the rain.",
+      "id": "Seorang anak laki-laki sedang membagikan koran di tengah hujan.",
       "level": "n2",
       "tags": [
         "umum"
@@ -19224,15 +19300,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "土地は８つに区分された。",
-      "id": "The land was divided into 8 lots.",
+      "id": "Tanah itu dibagi menjadi 8 bidang.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"クブン￣"}
+},
     {
       "jp": "我が家の大きな土地を子供たちのために公平に区分する。",
-      "id": "We will divide the large area of family land equally between our children.",
+      "id": "Kami akan membagi tanah keluarga yang luas secara merata kepada anak-anak kami.",
       "level": "n2",
       "tags": [
         "umum"
@@ -19253,10 +19330,10 @@ window.vocabN2_Verbs = [
   "word": "組み立てる",
   "reading": "くみたてる",
   "romaji": "kumitateru",
-  "meaning_id": "me-assemble",
+  "meaning_id": "berkumpul",
   "meaning_en": "to assemble; to set up; to construct",
   "jlpt": "n2",
-  "pos": "verb-ichidan",
+  "pos": "verb-ru",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -19274,15 +19351,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "昨日、アンプを組み立てた。",
-      "id": "I built an amplifier yesterday.",
+      "id": "Saya membuat amplifier kemarin.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":4,"category":"nakadaka","mora_count":5,"downstep_mora":4,"contour":"クミタテ＼ル"}
+},
     {
       "jp": "時計を組み立てるのはちょっと難しい。",
-      "id": "It is rather difficult to assemble a watch.",
+      "id": "Agak sulit untuk merakit jam tangan.",
       "level": "n2",
       "tags": [
         "umum"
@@ -19303,10 +19381,10 @@ window.vocabN2_Verbs = [
   "word": "汲む",
   "reading": "くむ",
   "romaji": "kumu",
-  "meaning_id": "me-draw",
+  "meaning_id": "menggambar",
   "meaning_en": "to draw (water); to dip; to scoop; to pump",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -19324,15 +19402,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "バケツに水を汲んでくるよ。",
-      "id": "I'll get a bucket of water.",
+      "id": "Aku akan mengambil seember air.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":2,"downstep_mora":0,"contour":"クム￣"}
+},
     {
       "jp": "彼は井戸へ行って水をくんできた。",
-      "id": "He fetched some water from the well.",
+      "id": "Dia mengambil air dari sumur.",
       "level": "n2",
       "tags": [
         "umum"
@@ -19353,10 +19432,10 @@ window.vocabN2_Verbs = [
   "word": "酌む",
   "reading": "くむ",
   "romaji": "kumu",
-  "meaning_id": "me-serve sake",
+  "meaning_id": "menuangkan sake",
   "meaning_en": "to serve sake",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -19374,12 +19453,13 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "酌むを使います。",
-      "id": "Menggunakan me-serve sake.",
+      "id": "Menggunakan menuangkan sake.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":2,"downstep_mora":0,"contour":"クム￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -19395,10 +19475,10 @@ window.vocabN2_Verbs = [
   "word": "悔やむ",
   "reading": "くやむ",
   "romaji": "kuyamu",
-  "meaning_id": "me-mourn",
+  "meaning_id": "berduka",
   "meaning_en": "to mourn",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -19416,15 +19496,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "よーし！覚えてろ。後で悔やむなよ。",
-      "id": "All right! You will be sorry for this.",
+      "id": "Baiklah! Anda akan menyesali hal ini.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"クヤ＼ム"}
+},
     {
       "jp": "あの方があんなに若くして亡くなったことは悔やまれます。",
-      "id": "It is regrettable that she should have died so young.",
+      "id": "Sangat disayangkan dia meninggal dalam usia muda.",
       "level": "n2",
       "tags": [
         "umum"
@@ -19470,11 +19551,12 @@ window.vocabN2_Verbs = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":4,"category":"nakadaka","mora_count":0,"downstep_mora":0,"contour":"￣"}
+},
     {
       "jp": "クリーニングをお願いできますか。",
-      "id": "Do you have laundry service?",
+      "id": "Apakah Anda memiliki layanan binatu?",
       "level": "n2",
       "tags": [
         "umum"
@@ -19495,10 +19577,10 @@ window.vocabN2_Verbs = [
   "word": "くるむ",
   "reading": "くるむ",
   "romaji": "kurumu",
-  "meaning_id": "me-be engulfed in",
+  "meaning_id": "terbungkus",
   "meaning_en": "to be engulfed in; to be enveloped by; to wrap up",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -19516,62 +19598,13 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "くるむを使います。",
-      "id": "Menggunakan me-be engulfed in.",
+      "id": "Menggunakan terbungkus.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "added_v": "v19.3.1-staged-merge",
-  "provenance": "expansion-staged",
-  "jmdict_seq": "",
-  "frequency": 1000
-},
-
-{
-  "id": "vg-n2-00886",
-  "word": "くれぐれも",
-  "reading": "くれぐれも",
-  "romaji": "kureguremo",
-  "meaning_id": "repeatedly; sincerely",
-  "meaning_en": "repeatedly; sincerely; earnestly",
-  "jlpt": "n2",
-  "pos": "adverb",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": [
-    "umum",
-    "kehidupan-sehari-hari"
-  ],
-  "register": "formal",
-  "lawan_bicara": [
-    "rekan-kerja",
-    "umum"
-  ],
-  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
-  "conj_type": null,
-  "examples": [
-    {
-      "jp": "くれぐれもお体をお大事に。",
-      "id": "Tolong take good care of yourself.",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    },
-    {
-      "jp": "あの方にくれぐれもよろしく。",
-      "id": "Give him my best regards.",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"クル＼ム"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -19587,10 +19620,10 @@ window.vocabN2_Verbs = [
   "word": "咥える",
   "reading": "くわえる",
   "romaji": "kuwaeru",
-  "meaning_id": "me-hold in one's mouth",
+  "meaning_id": "tahan di mulut seseorang",
   "meaning_en": "to hold in one's mouth",
   "jlpt": "n2",
-  "pos": "verb-ichidan",
+  "pos": "verb-ru",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -19608,15 +19641,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "彼はパイプをくわえて話した。",
-      "id": "He spoke with a pipe in his mouth.",
+      "id": "Dia berbicara dengan pipa di mulutnya.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"クワエル￣"}
+},
     {
       "jp": "その犬は肉を一切れくわえていた。",
-      "id": "The dog had a piece of meat in its mouth.",
+      "id": "Anjing itu memiliki sepotong daging di mulutnya.",
       "level": "n2",
       "tags": [
         "umum"
@@ -19658,15 +19692,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "彼女は六歳でピアノのけいこを始めた。",
-      "id": "She began lessons in piano at age 6.",
+      "id": "Dia mulai belajar piano pada usia 6 tahun.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"ケ＼イコ"}
+},
     {
       "jp": "彼女は稽古を休んだ。",
-      "id": "She absented herself from the lesson.",
+      "id": "Dia absen dari pelajaran.",
       "level": "n2",
       "tags": [
         "umum"
@@ -19687,7 +19722,7 @@ window.vocabN2_Verbs = [
   "word": "継続",
   "reading": "けいぞく",
   "romaji": "keizoku",
-  "meaning_id": "continuation",
+  "meaning_id": "kelanjutan",
   "meaning_en": "continuation",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -19708,15 +19743,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "交渉を継続することで合意しました。",
-      "id": "We have agreed to continue the negotiations.",
+      "id": "Kami sepakat untuk melanjutkan perundingan.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ケイゾク￣"}
+},
     {
       "jp": "討論を継続することを動議します。",
-      "id": "I move that we continue the discussion.",
+      "id": "Saya menyarankan agar kita melanjutkan diskusi.",
       "level": "n2",
       "tags": [
         "umum"
@@ -19758,15 +19794,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "たくさんの警官がホールを警備した。",
-      "id": "A lot of policemen guarded the hall.",
+      "id": "Banyak polisi menjaga aula.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"ケ＼イビ"}
+},
     {
       "jp": "パトロールカーはその地区の全体を警備する。",
-      "id": "The patrol cars cover the whole of the area.",
+      "id": "Mobil patroli menutupi seluruh area.",
       "level": "n2",
       "tags": [
         "umum"
@@ -19787,7 +19824,7 @@ window.vocabN2_Verbs = [
   "word": "激増",
   "reading": "げきぞう",
   "romaji": "gekizou",
-  "meaning_id": "sudden increase",
+  "meaning_id": "peningkatan mendadak",
   "meaning_en": "sudden increase",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -19812,8 +19849,9 @@ window.vocabN2_Verbs = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ゲキゾウ￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -19829,7 +19867,7 @@ window.vocabN2_Verbs = [
   "word": "下車",
   "reading": "げしゃ",
   "romaji": "gesha",
-  "meaning_id": "alighting; getting off",
+  "meaning_id": "hinggap; turun",
   "meaning_en": "alighting; getting off",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -19850,15 +19888,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "私は駅を間違えて下車しました。",
-      "id": "I got off at the wrong station.",
+      "id": "Saya turun di stasiun yang salah.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":2,"downstep_mora":1,"contour":"ゲ＼シャ"}
+},
     {
       "jp": "次の駅で下車します。",
-      "id": "I'm getting off at the next station.",
+      "id": "Aku turun di stasiun berikutnya.",
       "level": "n2",
       "tags": [
         "umum"
@@ -19879,10 +19918,10 @@ window.vocabN2_Verbs = [
   "word": "削る",
   "reading": "けずる",
   "romaji": "kezuru",
-  "meaning_id": "me-cut down little by little",
+  "meaning_id": "ditebang sedikit demi sedikit",
   "meaning_en": "to cut down little by little; to take a percentage",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -19900,65 +19939,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "彼の名前はリストから削られた。",
-      "id": "He was struck off the list.",
+      "id": "Dia dikeluarkan dari daftar.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ケズル￣"}
+},
     {
       "jp": "私はナイフで鉛筆を削った。",
-      "id": "I sharpened a pencil with a knife.",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    }
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "added_v": "v19.3.1-staged-merge",
-  "provenance": "expansion-staged",
-  "jmdict_seq": "",
-  "frequency": 1000
-},
-
-{
-  "id": "vg-n2-00915",
-  "word": "月末",
-  "reading": "げつまつ",
-  "romaji": "getsumatsu",
-  "meaning_id": "end of the month",
-  "meaning_en": "end of the month",
-  "jlpt": "n2",
-  "pos": "adverb",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": [
-    "umum",
-    "kehidupan-sehari-hari"
-  ],
-  "register": "formal",
-  "lawan_bicara": [
-    "rekan-kerja",
-    "umum"
-  ],
-  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
-  "conj_type": null,
-  "examples": [
-    {
-      "jp": "月末に近づいている。",
-      "id": "The month is drawing to an end.",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    },
-    {
-      "jp": "サムは月末に金を払うと約束した。",
-      "id": "Sam has promised to pay the money at the end of the month.",
+      "id": "Saya mengasah pensil dengan pisau.",
       "level": "n2",
       "tags": [
         "umum"
@@ -19979,10 +19969,10 @@ window.vocabN2_Verbs = [
   "word": "蹴る",
   "reading": "ける",
   "romaji": "keru",
-  "meaning_id": "me-kick",
+  "meaning_id": "tendangan",
   "meaning_en": "to kick",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -20000,15 +19990,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "彼は私たちの要求をきっぱりとけった。",
-      "id": "He rejected our demand flatly.",
+      "id": "Dia menolak permintaan kami dengan tegas.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":2,"downstep_mora":1,"contour":"ケ＼ル"}
+},
     {
       "jp": "けってドアを開けるな。",
-      "id": "Don't kick the door open.",
+      "id": "Jangan menendang pintu hingga terbuka.",
       "level": "n2",
       "tags": [
         "umum"
@@ -20050,15 +20041,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "その実施見学は非常にためになった。",
-      "id": "I found the field trip very educational.",
+      "id": "Menurut saya karyawisata ini sangat mendidik.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ケンガク￣"}
+},
     {
       "jp": "どういう所を見学したいですか。",
-      "id": "What kind of places would you like to see?",
+      "id": "Tempat seperti apa yang ingin Anda lihat?",
       "level": "n2",
       "tags": [
         "umum"
@@ -20079,7 +20071,7 @@ window.vocabN2_Verbs = [
   "word": "研修",
   "reading": "けんしゅう",
   "romaji": "kenshuu",
-  "meaning_id": "training",
+  "meaning_id": "pelatihan",
   "meaning_en": "training",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -20100,57 +20092,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "研修会は午後4時開始予定です。",
-      "id": "The training session is scheduled to begin at 4 p.m.",
+      "id": "Sesi pelatihan dijadwalkan akan dimulai pada pukul 4 sore.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ケンシュウ￣"}
+},
     {
       "jp": "従業員に対する新コンピューター・システム研修があなたの仕事になります。",
-      "id": "Your task will be to train the employees on the new computer system.",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    }
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "added_v": "v19.3.1-staged-merge",
-  "provenance": "expansion-staged",
-  "jmdict_seq": "",
-  "frequency": 1000
-},
-
-{
-  "id": "vg-n2-00930",
-  "word": "現に",
-  "reading": "げんに",
-  "romaji": "genni",
-  "meaning_id": "actually; really",
-  "meaning_en": "actually; really",
-  "jlpt": "n2",
-  "pos": "adverb",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": [
-    "umum",
-    "kehidupan-sehari-hari"
-  ],
-  "register": "formal",
-  "lawan_bicara": [
-    "rekan-kerja",
-    "umum"
-  ],
-  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
-  "conj_type": null,
-  "examples": [
-    {
-      "jp": "現にを使います。",
-      "id": "Menggunakan actually; really.",
+      "id": "Tugas Anda adalah melatih karyawan tentang sistem komputer baru.",
       "level": "n2",
       "tags": [
         "umum"
@@ -20171,10 +20122,10 @@ window.vocabN2_Verbs = [
   "word": "請う",
   "reading": "こう",
   "romaji": "kou",
-  "meaning_id": "me-ask",
+  "meaning_id": "bertanya",
   "meaning_en": "to ask; to request",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -20192,15 +20143,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "犯人は裁判官に慈悲を請うた。",
-      "id": "The criminal begged the judge for mercy.",
+      "id": "Penjahat itu memohon belas kasihan kepada hakim.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":2,"downstep_mora":1,"contour":"コ＼ウ"}
+},
     {
       "jp": "彼女は涙を頬に伝わせながら情けを請うた。",
-      "id": "She implored mercy with tears running down her cheeks.",
+      "id": "Dia memohon belas kasihan dengan air mata mengalir di pipinya.",
       "level": "n2",
       "tags": [
         "umum"
@@ -20221,7 +20173,7 @@ window.vocabN2_Verbs = [
   "word": "孝行",
   "reading": "こうこう",
   "romaji": "koukou",
-  "meaning_id": "filial piety",
+  "meaning_id": "bakti",
   "meaning_en": "filial piety",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -20242,12 +20194,13 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "孝行したいときに親はなし。",
-      "id": "When one would be filial, one's parents are gone.",
+      "id": "Ketika seseorang berbakti, orang tuanya telah tiada.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":4,"downstep_mora":1,"contour":"コ＼ウコウ"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -20263,7 +20216,7 @@ window.vocabN2_Verbs = [
   "word": "交差",
   "reading": "こうさ",
   "romaji": "kousa",
-  "meaning_id": "cross",
+  "meaning_id": "menyeberang",
   "meaning_en": "cross",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -20284,15 +20237,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "２本の道が十文字に交差している。",
-      "id": "The two roads cut across the street from us.",
+      "id": "Kedua jalan itu melintasi jalan dari kami.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"コ＼ウサ"}
+},
     {
       "jp": "その棒は交差しておかれた。",
-      "id": "The sticks were laid across each other.",
+      "id": "Tongkat-tongkat itu diletakkan saling berhadapan.",
       "level": "n2",
       "tags": [
         "umum"
@@ -20313,7 +20267,7 @@ window.vocabN2_Verbs = [
   "word": "工事",
   "reading": "こうじ",
   "romaji": "kouji",
-  "meaning_id": "construction work",
+  "meaning_id": "pekerjaan konstruksi",
   "meaning_en": "construction work",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -20334,15 +20288,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "その工事は住民からの強い反対にもかかわらず、続けられた。",
-      "id": "They carried on with the construction in the face of strong opposition from the residents.",
+      "id": "Mereka tetap melanjutkan pembangunan meski mendapat tentangan keras dari warga.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"コ＼ウジ"}
+},
     {
       "jp": "作業員は新しい家に配線工事をしている。",
-      "id": "The workers are wiring the new house.",
+      "id": "Para pekerja sedang memasang kabel di rumah baru.",
       "level": "n2",
       "tags": [
         "umum"
@@ -20384,15 +20339,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "交代に走りましょう。",
-      "id": "Let's take turns at running.",
+      "id": "Mari kita bergantian berlari.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"コウタイ￣"}
+},
     {
       "jp": "私達は交替で部屋を掃除した。",
-      "id": "We cleaned the room in turn.",
+      "id": "Kami membersihkan ruangan secara bergantian.",
       "level": "n2",
       "tags": [
         "umum"
@@ -20413,7 +20369,7 @@ window.vocabN2_Verbs = [
   "word": "肯定",
   "reading": "こうてい",
   "romaji": "koutei",
-  "meaning_id": "positive; affirmation",
+  "meaning_id": "positif; penegasan",
   "meaning_en": "positive; affirmation",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -20434,15 +20390,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "ディベートとは肯定側と否定側で交わされる知的ゲームである。",
-      "id": "Debate is an academic game between the affirmative and the negative.",
+      "id": "Debat adalah permainan akademis antara positif dan negatif.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"コウテイ￣"}
+},
     {
       "jp": "このような形を二重否定といいますが、結果として肯定を表すこととなります。",
-      "id": "This sort of structure is called a double negative, but in effect it shows affirmation.",
+      "id": "Struktur semacam ini disebut negatif ganda, namun pada dasarnya menunjukkan afirmasi.",
       "level": "n2",
       "tags": [
         "umum"
@@ -20488,8 +20445,9 @@ window.vocabN2_Verbs = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ゴウドウ￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -20505,7 +20463,7 @@ window.vocabN2_Verbs = [
   "word": "公表",
   "reading": "こうひょう",
   "romaji": "kouhyou",
-  "meaning_id": "official announcement; proclamation",
+  "meaning_id": "pengumuman resmi; proklamasi",
   "meaning_en": "official announcement; proclamation",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -20526,15 +20484,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "彼はそれを公表すると脅した。",
-      "id": "He threatened to make it public.",
+      "id": "Dia mengancam akan mempublikasikannya.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"コウヒョウ￣"}
+},
     {
       "jp": "彼は彼女との婚約を公表した。",
-      "id": "He announced his engagement to her.",
+      "id": "Dia mengumumkan pertunangannya dengannya.",
       "level": "n2",
       "tags": [
         "umum"
@@ -20576,12 +20535,13 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "紅葉を使います。",
-      "id": "Menggunakan leaves turning red (in autumn); red leaves.",
+      "id": "Menggunakan daun yang memerah (di musim gugur); daun merah.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"コウヨウ￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -20618,15 +20578,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "ときに君の喜びと君の真剣な職業とを交流せしめよ。",
-      "id": "Mingle your joys sometimes with your earnest occupation.",
+      "id": "Gabungkan kegembiraan Anda terkadang dengan pekerjaan Anda yang sungguh-sungguh.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"コウリュウ￣"}
+},
     {
       "jp": "彼らは社会的交流の象徴を少し失った。",
-      "id": "They lost some symbols of social intercourse.",
+      "id": "Mereka kehilangan beberapa simbol pergaulan sosial.",
       "level": "n2",
       "tags": [
         "umum"
@@ -20668,15 +20629,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "この道はそこでハイウエイに合流する。",
-      "id": "This road joins the highway there.",
+      "id": "Jalan ini bergabung dengan jalan raya di sana.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ゴウリュウ￣"}
+},
     {
       "jp": "私は後で君たちに合流する。",
-      "id": "I'll join you later.",
+      "id": "Aku akan bergabung denganmu nanti.",
       "level": "n2",
       "tags": [
         "umum"
@@ -20697,10 +20659,10 @@ window.vocabN2_Verbs = [
   "word": "超える",
   "reading": "こえる",
   "romaji": "koeru",
-  "meaning_id": "me-exceed",
+  "meaning_id": "melebihi",
   "meaning_en": "to exceed; to cross over; to cross",
   "jlpt": "n2",
-  "pos": "verb-ichidan",
+  "pos": "verb-ru",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -20718,15 +20680,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "６５歳を超えるアメリカ人は全人口の１２．５％を構成している。",
-      "id": "Americans who are over sixty-five make up 12.5% of the total population.",
+      "id": "Orang Amerika yang berusia di atas enam puluh lima tahun merupakan 12,5% dari total populasi.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"コエル￣"}
+},
     {
       "jp": "この本は私の理解力を超えている。",
-      "id": "This book is above my understanding.",
+      "id": "Buku ini di luar pemahaman saya.",
       "level": "n2",
       "tags": [
         "umum"
@@ -20747,10 +20710,10 @@ window.vocabN2_Verbs = [
   "word": "焦がす",
   "reading": "こがす",
   "romaji": "kogasu",
-  "meaning_id": "me-burn",
+  "meaning_id": "terbakar",
   "meaning_en": "to burn; to scorch; to singe; to char",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -20768,15 +20731,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "その亡命者は故国への思いに胸を焦がした。",
-      "id": "The exile yearned for his home.",
+      "id": "Orang buangan itu merindukan rumahnya.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"コガ＼ス"}
+},
     {
       "jp": "トーストを焦がしてしまった。",
-      "id": "I've burnt the toast.",
+      "id": "Aku sudah membakar roti panggangnya.",
       "level": "n2",
       "tags": [
         "umum"
@@ -20797,10 +20761,10 @@ window.vocabN2_Verbs = [
   "word": "焦げる",
   "reading": "こげる",
   "romaji": "kogeru",
-  "meaning_id": "me-burn",
+  "meaning_id": "terbakar",
   "meaning_en": "to burn; to be burned",
   "jlpt": "n2",
-  "pos": "verb-ichidan",
+  "pos": "verb-ru",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -20818,15 +20782,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "あーあ、トーストが真っ黒に焦げてしまっているよ。",
-      "id": "Oh, the toast is burned black.",
+      "id": "Oh, roti panggangnya gosong hitam.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"コゲ＼ル"}
+},
     {
       "jp": "お菓子が焦げないように気をつけていなさい。",
-      "id": "You must see that the cakes do not burn.",
+      "id": "Anda harus memastikan bahwa kuenya tidak gosong.",
       "level": "n2",
       "tags": [
         "umum"
@@ -20847,10 +20812,10 @@ window.vocabN2_Verbs = [
   "word": "凍える",
   "reading": "こごえる",
   "romaji": "kogoeru",
-  "meaning_id": "me-freeze",
+  "meaning_id": "membekukan",
   "meaning_en": "to freeze; to be chilled; to be frozen",
   "jlpt": "n2",
-  "pos": "verb-ichidan",
+  "pos": "verb-ru",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -20868,12 +20833,13 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "この部屋は凍えるよ、シンディー。この寒さはたえられないよ。",
-      "id": "It's freezing in this room, Cindy. I can't put up with this cold.",
+      "id": "Dingin sekali di ruangan ini, Cindy. Aku tidak tahan dengan suhu dingin ini.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"コゴエル￣"}
+},
     {
       "jp": "寒くて凍えそうだ。",
       "id": "I'm freezing.",
@@ -20897,10 +20863,10 @@ window.vocabN2_Verbs = [
   "word": "心得る",
   "reading": "こころえる",
   "romaji": "kokoroeru",
-  "meaning_id": "me-be informed",
+  "meaning_id": "diberitahu",
   "meaning_en": "to be informed; to have thorough knowledge",
   "jlpt": "n2",
-  "pos": "verb-ichidan",
+  "pos": "verb-ru",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -20918,15 +20884,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "彼女は夫の心理を心得ている。",
-      "id": "She knows her husband's psychology.",
+      "id": "Dia tahu psikologi suaminya.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":4,"category":"nakadaka","mora_count":5,"downstep_mora":4,"contour":"ココロエ＼ル"}
+},
     {
       "jp": "彼は時間のじょうずな利用法を心得ている。",
-      "id": "He knows how to make good use of his time.",
+      "id": "Dia tahu bagaimana memanfaatkan waktunya dengan baik.",
       "level": "n2",
       "tags": [
         "umum"
@@ -20950,7 +20917,7 @@ window.vocabN2_Verbs = [
   "meaning_id": "duduk",
   "meaning_en": "to sit (down)",
   "jlpt": "n2",
-  "pos": "verb-ichidan",
+  "pos": "verb-ru",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -20968,15 +20935,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "彼女は腰掛けて足を組んだ。",
-      "id": "She sat down and crossed her legs.",
+      "id": "Dia duduk dan menyilangkan kaki.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":4,"category":"nakadaka","mora_count":5,"downstep_mora":4,"contour":"コシカケ＼ル"}
+},
     {
       "jp": "アニー、あそこに腰掛けましょう。",
-      "id": "Let's have a seat over there, Annie.",
+      "id": "Mari kita duduk di sana, Annie.",
       "level": "n2",
       "tags": [
         "umum"
@@ -21000,7 +20968,7 @@ window.vocabN2_Verbs = [
   "meaning_id": "membuat",
   "meaning_en": "to make; to manufacture",
   "jlpt": "n2",
-  "pos": "verb-ichidan",
+  "pos": "verb-ru",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -21018,15 +20986,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "彼は遅刻の口実をこしらえた。",
-      "id": "He invented an excuse for being late.",
+      "id": "Dia menemukan alasan untuk terlambat.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":5,"downstep_mora":0,"contour":"コシラエル￣"}
+},
     {
       "jp": "彼は借金をこしらえた。",
-      "id": "He ran into debt.",
+      "id": "Dia terlilit hutang.",
       "level": "n2",
       "tags": [
         "umum"
@@ -21047,10 +21016,10 @@ window.vocabN2_Verbs = [
   "word": "超す",
   "reading": "こす",
   "romaji": "kosu",
-  "meaning_id": "me-cross",
+  "meaning_id": "menyeberang",
   "meaning_en": "to cross; to pass; to tide over",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -21072,11 +21041,12 @@ window.vocabN2_Verbs = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":2,"downstep_mora":0,"contour":"コス￣"}
+},
     {
       "jp": "それに超したことはない。",
-      "id": "Nothing can be better than that.",
+      "id": "Tidak ada yang lebih baik dari itu.",
       "level": "n2",
       "tags": [
         "umum"
@@ -21097,10 +21067,10 @@ window.vocabN2_Verbs = [
   "word": "擦る",
   "reading": "こする",
   "romaji": "kosuru",
-  "meaning_id": "me-rub",
+  "meaning_id": "gosok",
   "meaning_en": "to rub; to chafe; to file; to frost (glass); to strike (match)",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -21118,65 +21088,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "石けんを付けてごしごしこすれば汚れが落ちます。",
-      "id": "Rub briskly with soap, and the stain will soon wash off.",
+      "id": "Gosok cepat dengan sabun, dan noda akan segera hilang.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"コス＼ル"}
+},
     {
       "jp": "いすで床をこすらないでちょうだい。",
-      "id": "Don't scrape your chair on the floor.",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    }
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "added_v": "v19.3.1-staged-merge",
-  "provenance": "expansion-staged",
-  "jmdict_seq": "",
-  "frequency": 1000
-},
-
-{
-  "id": "vg-n2-01000",
-  "word": "こっそり",
-  "reading": "こっそり",
-  "romaji": "kossori",
-  "meaning_id": "stealthily; secretly",
-  "meaning_en": "stealthily; secretly",
-  "jlpt": "n2",
-  "pos": "adverb",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": [
-    "umum",
-    "kehidupan-sehari-hari"
-  ],
-  "register": "formal",
-  "lawan_bicara": [
-    "rekan-kerja",
-    "umum"
-  ],
-  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
-  "conj_type": null,
-  "examples": [
-    {
-      "jp": "彼はそのことを私にこっそり話してくれた。",
-      "id": "He told me about it in private.",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    },
-    {
-      "jp": "私は彼にこっそり手紙をわたした。",
-      "id": "I slipped the letter to him.",
+      "id": "Jangan menggores kursi Anda di lantai.",
       "level": "n2",
       "tags": [
         "umum"
@@ -21197,10 +21118,10 @@ window.vocabN2_Verbs = [
   "word": "言付ける",
   "reading": "ことづける",
   "romaji": "kotozukeru",
-  "meaning_id": "me-send word",
+  "meaning_id": "menyampaikan pesan",
   "meaning_en": "to send word; to send a message",
   "jlpt": "n2",
-  "pos": "verb-ichidan",
+  "pos": "verb-ru",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -21218,54 +21139,13 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "言付けるを使います。",
-      "id": "Menggunakan me-send word.",
+      "id": "Menggunakan menyampaikan pesan.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "added_v": "v19.3.1-staged-merge",
-  "provenance": "expansion-staged",
-  "jmdict_seq": "",
-  "frequency": 1000
-},
-
-{
-  "id": "vg-n2-01005",
-  "word": "こないだ",
-  "reading": "こないだ",
-  "romaji": "konaida",
-  "meaning_id": "the other day; lately",
-  "meaning_en": "the other day; lately; recently",
-  "jlpt": "n2",
-  "pos": "adverb",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": [
-    "umum",
-    "kehidupan-sehari-hari"
-  ],
-  "register": "formal",
-  "lawan_bicara": [
-    "rekan-kerja",
-    "umum"
-  ],
-  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
-  "conj_type": null,
-  "examples": [
-    {
-      "jp": "こないだ、カメラをなくしてしまった。",
-      "id": "I lost my camera the other day.",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":4,"category":"nakadaka","mora_count":5,"downstep_mora":4,"contour":"コトヅケ＼ル"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -21281,7 +21161,7 @@ window.vocabN2_Verbs = [
   "word": "御無沙汰",
   "reading": "ごぶさた",
   "romaji": "gobusata",
-  "meaning_id": "not writing or contacting for a while",
+  "meaning_id": "tidak menulis atau menghubungi untuk sementara waktu",
   "meaning_en": "not writing or contacting for a while",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -21302,15 +21182,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "２年間のご無沙汰でした。",
-      "id": "Two years have passed since I last met you.",
+      "id": "Dua tahun telah berlalu sejak terakhir kali aku bertemu denganmu.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ゴブサタ￣"}
+},
     {
       "jp": "長いことごぶさたしました。",
-      "id": "I have been silent for a long time.",
+      "id": "Saya sudah lama terdiam.",
       "level": "n2",
       "tags": [
         "umum"
@@ -21331,10 +21212,10 @@ window.vocabN2_Verbs = [
   "word": "こぼす",
   "reading": "こぼす",
   "romaji": "kobosu",
-  "meaning_id": "me-spill",
+  "meaning_id": "tumpah",
   "meaning_en": "to spill",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -21352,15 +21233,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "私はコーヒーをじゅうたんにこぼしてしまった。",
-      "id": "I spilled my coffee on the carpet.",
+      "id": "Aku menumpahkan kopiku ke karpet.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"コボ＼ス"}
+},
     {
       "jp": "父は交通騒音について不平をこぼした。",
-      "id": "My father complained about the traffic noise.",
+      "id": "Ayah saya mengeluh tentang kebisingan lalu lintas.",
       "level": "n2",
       "tags": [
         "umum"
@@ -21381,10 +21263,10 @@ window.vocabN2_Verbs = [
   "word": "こぼれる",
   "reading": "こぼれる",
   "romaji": "koboreru",
-  "meaning_id": "me-overflow",
+  "meaning_id": "meluap",
   "meaning_en": "to overflow; to spill",
   "jlpt": "n2",
-  "pos": "verb-ichidan",
+  "pos": "verb-ru",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -21402,12 +21284,13 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "コーヒーがこぼれましたよ。",
-      "id": "You've spilt your coffee.",
+      "id": "Anda telah menumpahkan kopi Anda.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"コボレ＼ル"}
+},
     {
       "jp": "急に涙がこぼれてきた。",
       "id": "I burst into tears.",
@@ -21431,10 +21314,10 @@ window.vocabN2_Verbs = [
   "word": "こらえる",
   "reading": "こらえる",
   "romaji": "koraeru",
-  "meaning_id": "me-bear",
+  "meaning_id": "beruang",
   "meaning_en": "to bear; to stand; to endure; to put up with",
   "jlpt": "n2",
-  "pos": "verb-ichidan",
+  "pos": "verb-ru",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -21452,15 +21335,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "彼女は笑いをこらえられなかった。",
-      "id": "She couldn't help bursting into laughter.",
+      "id": "Dia tidak bisa menahan tawa.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"コラエ＼ル"}
+},
     {
       "jp": "彼女はこらえきれず笑ってしまった。",
-      "id": "She smiled, not being able to help it.",
+      "id": "Dia tersenyum, tidak bisa menahannya.",
       "level": "n2",
       "tags": [
         "umum"
@@ -21481,7 +21365,7 @@ window.vocabN2_Verbs = [
   "word": "娯楽",
   "reading": "ごらく",
   "romaji": "goraku",
-  "meaning_id": "pleasure; amusement",
+  "meaning_id": "kesenangan; hiburan",
   "meaning_en": "pleasure; amusement",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -21502,15 +21386,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "あなたのお好きな娯楽は何ですか。",
-      "id": "What's your favourite pastime?",
+      "id": "Apa hobi favoritmu?",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ゴラク￣"}
+},
     {
       "jp": "大都市には多くの娯楽があります。",
-      "id": "Big cities have lots of amusements.",
+      "id": "Kota-kota besar mempunyai banyak hiburan.",
       "level": "n2",
       "tags": [
         "umum"
@@ -21531,7 +21416,7 @@ window.vocabN2_Verbs = [
   "word": "コレクション",
   "reading": "コレクション",
   "romaji": "korekushon",
-  "meaning_id": "collection; correction",
+  "meaning_id": "koleksi; koreksi",
   "meaning_en": "collection; correction",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -21552,15 +21437,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "世界中の銀のティースプーンのコレクションがある。",
-      "id": "I have a collection of silver tea spoons from all over the world.",
+      "id": "Saya memiliki koleksi sendok teh perak dari seluruh dunia.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":0,"downstep_mora":0,"contour":"￣"}
+},
     {
       "jp": "彼は私に切手のコレクションを見せてくれた。",
-      "id": "He showed me his stamp collection.",
+      "id": "Dia menunjukkan padaku koleksi prangkonya.",
       "level": "n2",
       "tags": [
         "umum"
@@ -21581,10 +21467,10 @@ window.vocabN2_Verbs = [
   "word": "転がす",
   "reading": "ころがす",
   "romaji": "korogasu",
-  "meaning_id": "me-roll",
+  "meaning_id": "gulungan",
   "meaning_en": "to roll",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -21602,15 +21488,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "子供たちが大きな雪の玉を転がしていた。",
-      "id": "The children were rolling a big snowball.",
+      "id": "Anak-anak sedang menggelindingkan bola salju besar.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"コロガス￣"}
+},
     {
       "jp": "そのボールを僕の方に転がしてください。",
-      "id": "Roll the ball to me.",
+      "id": "Gulingkan bolanya padaku.",
       "level": "n2",
       "tags": [
         "umum"
@@ -21631,10 +21518,10 @@ window.vocabN2_Verbs = [
   "word": "転がる",
   "reading": "ころがる",
   "romaji": "korogaru",
-  "meaning_id": "me-roll",
+  "meaning_id": "gulungan",
   "meaning_en": "to roll; to tumble",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -21652,15 +21539,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "車輪はゆっくり転がり始めた。",
-      "id": "The wheel began to roll slowly.",
+      "id": "Roda mulai berputar perlahan.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"コロガル￣"}
+},
     {
       "jp": "ボールは道の向こう側に転がった。",
-      "id": "The ball rolled across the road.",
+      "id": "Bola menggelinding ke seberang jalan.",
       "level": "n2",
       "tags": [
         "umum"
@@ -21681,7 +21569,7 @@ window.vocabN2_Verbs = [
   "word": "混合",
   "reading": "こんごう",
   "romaji": "kongou",
-  "meaning_id": "mixing; mixture",
+  "meaning_id": "pencampuran; campuran",
   "meaning_en": "mixing; mixture",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -21702,15 +21590,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "三原色を混合すると黒色ができる。",
-      "id": "Mixture of the three primary colors creates black.",
+      "id": "Campuran ketiga warna primer menghasilkan warna hitam.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"コンゴウ￣"}
+},
     {
       "jp": "水と油を混合させることはできない。",
-      "id": "You can't mix oil with water.",
+      "id": "Anda tidak bisa mencampurkan minyak dengan air.",
       "level": "n2",
       "tags": [
         "umum"
@@ -21731,7 +21620,7 @@ window.vocabN2_Verbs = [
   "word": "在学",
   "reading": "ざいがく",
   "romaji": "zaigaku",
-  "meaning_id": "(enrolled) in school",
+  "meaning_id": "(mendaftar) di sekolah",
   "meaning_en": "(enrolled) in school",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -21752,65 +21641,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "その学校には二千人の学生が在学している。",
-      "id": "Ada 2,000 students in the school.",
+      "id": "Ada 2.000 siswa di sekolah.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ザイガク￣"}
+},
     {
       "jp": "彼はその大学に在学している。",
       "id": "Dia at university.",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    }
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "added_v": "v19.3.1-staged-merge",
-  "provenance": "expansion-staged",
-  "jmdict_seq": "",
-  "frequency": 1000
-},
-
-{
-  "id": "vg-n2-01027",
-  "word": "再三",
-  "reading": "さいさん",
-  "romaji": "saisan",
-  "meaning_id": "again and again; repeatedly",
-  "meaning_en": "again and again; repeatedly",
-  "jlpt": "n2",
-  "pos": "adverb",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": [
-    "umum",
-    "kehidupan-sehari-hari"
-  ],
-  "register": "formal",
-  "lawan_bicara": [
-    "rekan-kerja",
-    "umum"
-  ],
-  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
-  "conj_type": null,
-  "examples": [
-    {
-      "jp": "彼は私に、再三電話をかけてきた。",
-      "id": "He telephoned me again and again.",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    },
-    {
-      "jp": "再三彼らを招待したが決してこなかった。",
-      "id": "Time after time I've invited them to come over and visit us but time and time again they've never come.",
       "level": "n2",
       "tags": [
         "umum"
@@ -21852,15 +21692,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "まさかリアルに借金の催促だったの？",
-      "id": "No way, is this really a debt collection call?",
+      "id": "Tidak mungkin, apakah ini benar-benar panggilan penagihan utang?",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":4,"downstep_mora":1,"contour":"サ＼イソク"}
+},
     {
       "jp": "しびれを切らして借金の催促をした。",
-      "id": "He impatiently asked for repayment.",
+      "id": "Dia dengan tidak sabar meminta pembayaran kembali.",
       "level": "n2",
       "tags": [
         "umum"
@@ -21902,15 +21743,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "私達の先生は試験の採点をしている。",
-      "id": "Our teacher is marking exam papers.",
+      "id": "Guru kami sedang menilai kertas ujian.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"サイテン￣"}
+},
     {
       "jp": "先生はすぐにその日の試験の採点をしていた。",
-      "id": "The teacher was immediately at work correcting that day's test.",
+      "id": "Guru segera bekerja mengoreksi ulangan hari itu.",
       "level": "n2",
       "tags": [
         "umum"
@@ -21931,7 +21773,7 @@ window.vocabN2_Verbs = [
   "word": "裁縫",
   "reading": "さいほう",
   "romaji": "saihou",
-  "meaning_id": "sewing",
+  "meaning_id": "menjahit",
   "meaning_en": "sewing",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -21952,15 +21794,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "本当に裁縫が上手ですね。",
-      "id": "You're a magician with a needle and thread.",
+      "id": "Anda seorang pesulap dengan jarum dan benang.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"サイホウ￣"}
+},
     {
       "jp": "彼女は裁縫が上手です。",
-      "id": "She can sew very well.",
+      "id": "Dia bisa menjahit dengan sangat baik.",
       "level": "n2",
       "tags": [
         "umum"
@@ -21981,10 +21824,10 @@ window.vocabN2_Verbs = [
   "word": "捜す",
   "reading": "さがす",
   "romaji": "sagasu",
-  "meaning_id": "me-search",
+  "meaning_id": "pencarian",
   "meaning_en": "to search; to seek; to look for",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -22002,15 +21845,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "警察は行方不明の少年を捜した。",
-      "id": "The police searched for the lost boy.",
+      "id": "Polisi mencari anak yang hilang itu.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"サガス￣"}
+},
     {
       "jp": "鍵を求めて机の中を捜した。",
-      "id": "I searched the drawer for the key.",
+      "id": "Aku mencari kuncinya di laci.",
       "level": "n2",
       "tags": [
         "umum"
@@ -22031,10 +21875,10 @@ window.vocabN2_Verbs = [
   "word": "遡る",
   "reading": "さかのぼる",
   "romaji": "sakanoboru",
-  "meaning_id": "me-go back",
+  "meaning_id": "kembali",
   "meaning_en": "to go back; to go upstream; to make retroactive",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -22052,107 +21896,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "その教会は１１７３年までさかのぼる。",
-      "id": "The church dates back to 1173.",
+      "id": "Gereja ini dibangun pada tahun 1173.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":4,"category":"nakadaka","mora_count":5,"downstep_mora":4,"contour":"サカノボ＼ル"}
+},
     {
       "jp": "鮭は川をさかのぼって砂に産卵する。",
-      "id": "Salmon go up the river and lay their eggs in the sand.",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    }
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "added_v": "v19.3.1-staged-merge",
-  "provenance": "expansion-staged",
-  "jmdict_seq": "",
-  "frequency": 1000
-},
-
-{
-  "id": "vg-n2-01040",
-  "word": "さきおととい",
-  "reading": "さきおととい",
-  "romaji": "sakiototoi",
-  "meaning_id": "two days before yesterday",
-  "meaning_en": "two days before yesterday",
-  "jlpt": "n2",
-  "pos": "adverb",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": [
-    "umum",
-    "kehidupan-sehari-hari"
-  ],
-  "register": "formal",
-  "lawan_bicara": [
-    "rekan-kerja",
-    "umum"
-  ],
-  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
-  "conj_type": null,
-  "examples": [
-    {
-      "jp": "さきおとといを使います。",
-      "id": "Menggunakan two days before yesterday.",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    }
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "added_v": "v19.3.1-staged-merge",
-  "provenance": "expansion-staged",
-  "jmdict_seq": "",
-  "frequency": 1000
-},
-
-{
-  "id": "vg-n2-01041",
-  "word": "先程",
-  "reading": "さきほど",
-  "romaji": "sakihodo",
-  "meaning_id": "some time ago",
-  "meaning_en": "some time ago",
-  "jlpt": "n2",
-  "pos": "adverb",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": [
-    "umum",
-    "kehidupan-sehari-hari"
-  ],
-  "register": "formal",
-  "lawan_bicara": [
-    "rekan-kerja",
-    "umum"
-  ],
-  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
-  "conj_type": null,
-  "examples": [
-    {
-      "jp": "つい先ほど君のお父さんに会いました。",
-      "id": "I met your father just now.",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    },
-    {
-      "jp": "先程、どういうわけかマイクが入りませんでした。",
-      "id": "For some reason the microphone didn't work earlier.",
+      "id": "Salmon pergi ke sungai dan bertelur di pasir.",
       "level": "n2",
       "tags": [
         "umum"
@@ -22173,10 +21926,10 @@ window.vocabN2_Verbs = [
   "word": "裂く",
   "reading": "さく",
   "romaji": "saku",
-  "meaning_id": "me-tear",
+  "meaning_id": "sobek",
   "meaning_en": "to tear; to split",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -22194,15 +21947,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "その少女はその布を裂いた。",
-      "id": "The girl tore the cloth.",
+      "id": "Gadis itu merobek kainnya.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":2,"downstep_mora":1,"contour":"サ＼ク"}
+},
     {
       "jp": "彼女はその手紙をずたずたに裂いた。",
-      "id": "She tore the letter to pieces.",
+      "id": "Dia merobek surat itu hingga berkeping-keping.",
       "level": "n2",
       "tags": [
         "umum"
@@ -22244,12 +21998,13 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "このファイルは削除して下さい。",
-      "id": "Tolong delete this file.",
+      "id": "Tolong hapus file ini.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"サ＼クジョ"}
+},
     {
       "jp": "君の論文から不必要な語を削除した方がよろしい。",
       "id": "Omit needless words!",
@@ -22294,15 +22049,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "その老人は遺言を作成した。",
-      "id": "The old man made out his will.",
+      "id": "Orang tua itu menyatakan keinginannya.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"サクセイ￣"}
+},
     {
       "jp": "報告書は委員会によって作成されている。",
-      "id": "The report is being prepared by the committee.",
+      "id": "Laporan sedang disiapkan oleh panitia.",
       "level": "n2",
       "tags": [
         "umum"
@@ -22323,7 +22079,7 @@ window.vocabN2_Verbs = [
   "word": "作製",
   "reading": "さくせい",
   "romaji": "sakusei",
-  "meaning_id": "manufacture",
+  "meaning_id": "manufaktur",
   "meaning_en": "manufacture",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -22344,12 +22100,13 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "合鍵の作製には2日ほどかかります。",
-      "id": "It takes about two days to make a duplicate key.",
+      "id": "Diperlukan waktu sekitar dua hari untuk membuat kunci duplikat.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"サクセイ￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -22365,10 +22122,10 @@ window.vocabN2_Verbs = [
   "word": "探る",
   "reading": "さぐる",
   "romaji": "saguru",
-  "meaning_id": "me-search",
+  "meaning_id": "pencarian",
   "meaning_en": "to search; to look for; to sound out",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -22390,11 +22147,12 @@ window.vocabN2_Verbs = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"サグル￣"}
+},
     {
       "jp": "真相は井戸の底にあり探りにくい。",
-      "id": "Truth is difficult to find at the bottom of a well.",
+      "id": "Kebenaran sulit ditemukan di dasar sumur.",
       "level": "n2",
       "tags": [
         "umum"
@@ -22415,10 +22173,10 @@ window.vocabN2_Verbs = [
   "word": "囁く",
   "reading": "ささやく",
   "romaji": "sasayaku",
-  "meaning_id": "me-whisper",
+  "meaning_id": "berbisik",
   "meaning_en": "to whisper; to murmur",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -22440,11 +22198,12 @@ window.vocabN2_Verbs = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"ササヤ＼ク"}
+},
     {
       "jp": "彼女はあなたに何てささやいたの。",
-      "id": "What did she whisper to you?",
+      "id": "Apa yang dia bisikkan padamu?",
       "level": "n2",
       "tags": [
         "umum"
@@ -22465,10 +22224,10 @@ window.vocabN2_Verbs = [
   "word": "刺さる",
   "reading": "ささる",
   "romaji": "sasaru",
-  "meaning_id": "me-stick",
+  "meaning_id": "menempel",
   "meaning_en": "to stick; to be stuck",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -22486,15 +22245,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "釘が車のタイヤに刺さった。",
-      "id": "A nail punctured the tire.",
+      "id": "Sebuah paku menusuk ban.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"ササ＼ル"}
+},
     {
       "jp": "この指に刺がささって取れません。",
-      "id": "I can't get this splinter out of my finger.",
+      "id": "Aku tidak bisa mengeluarkan serpihan ini dari jariku.",
       "level": "n2",
       "tags": [
         "umum"
@@ -22540,8 +22300,9 @@ window.vocabN2_Verbs = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":4,"downstep_mora":2,"contour":"サシ＼ヒキ"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -22557,10 +22318,10 @@ window.vocabN2_Verbs = [
   "word": "刺す",
   "reading": "さす",
   "romaji": "sasu",
-  "meaning_id": "me-pierce",
+  "meaning_id": "menembus",
   "meaning_en": "to pierce; to stab; to prick; to thrust",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -22578,15 +22339,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "蚊にたくさん刺されました。",
-      "id": "I got a lot of mosquito bites.",
+      "id": "Saya mendapat banyak gigitan nyamuk.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":2,"downstep_mora":1,"contour":"サ＼ス"}
+},
     {
       "jp": "スズメバチにこっぴどく刺された。",
-      "id": "I got a nasty sting from a wasp.",
+      "id": "Saya mendapat sengatan buruk dari tawon.",
       "level": "n2",
       "tags": [
         "umum"
@@ -22607,10 +22369,10 @@ window.vocabN2_Verbs = [
   "word": "射す",
   "reading": "さす",
   "romaji": "sasu",
-  "meaning_id": "me-shine",
+  "meaning_id": "bersinar",
   "meaning_en": "to shine; to strike",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -22628,15 +22390,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "雲間が開け光が射した。",
-      "id": "The clouds opened and the sun shone through.",
+      "id": "Awan terbuka dan matahari bersinar.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":2,"downstep_mora":1,"contour":"サ＼ス"}
+},
     {
       "jp": "木が多すぎると家に光が射さない。",
-      "id": "Too many trees deprive a house of light.",
+      "id": "Terlalu banyak pohon membuat rumah kehilangan cahaya.",
       "level": "n2",
       "tags": [
         "umum"
@@ -22657,10 +22420,10 @@ window.vocabN2_Verbs = [
   "word": "挿す",
   "reading": "さす",
   "romaji": "sasu",
-  "meaning_id": "me-insert",
+  "meaning_id": "masukkan",
   "meaning_en": "to insert; to put in; to graft; to wear in belt",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -22678,12 +22441,13 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "彼はボタンの穴に花を挿した。",
-      "id": "He stuck a flower in his buttonhole.",
+      "id": "Dia memasukkan bunga ke dalam lubang kancingnya.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":2,"downstep_mora":1,"contour":"サ＼ス"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -22699,10 +22463,10 @@ window.vocabN2_Verbs = [
   "word": "注す",
   "reading": "さす",
   "romaji": "sasu",
-  "meaning_id": "me-pour",
+  "meaning_id": "tuangkan",
   "meaning_en": "to pour (drink); to serve (drinks)",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -22720,12 +22484,13 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "車輪には油を注したばかりだ。",
-      "id": "I've just oiled the wheels.",
+      "id": "Saya baru saja meminyaki rodanya.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":2,"downstep_mora":1,"contour":"サ＼ス"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -22741,7 +22506,7 @@ window.vocabN2_Verbs = [
   "word": "撮影",
   "reading": "さつえい",
   "romaji": "satsuei",
-  "meaning_id": "photographing",
+  "meaning_id": "memotret",
   "meaning_en": "photographing",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -22762,115 +22527,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "私は写真撮影に興味を持っている。",
-      "id": "I have an interest in photography.",
+      "id": "Saya memiliki minat dalam fotografi.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"サツエイ￣"}
+},
     {
       "jp": "この写真は彼によって撮影された。",
-      "id": "This picture was taken by him.",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    }
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "added_v": "v19.3.1-staged-merge",
-  "provenance": "expansion-staged",
-  "jmdict_seq": "",
-  "frequency": 1000
-},
-
-{
-  "id": "vg-n2-01063",
-  "word": "さっさと",
-  "reading": "さっさと",
-  "romaji": "sassato",
-  "meaning_id": "quickly",
-  "meaning_en": "quickly",
-  "jlpt": "n2",
-  "pos": "adverb",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": [
-    "umum",
-    "kehidupan-sehari-hari"
-  ],
-  "register": "formal",
-  "lawan_bicara": [
-    "rekan-kerja",
-    "umum"
-  ],
-  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
-  "conj_type": null,
-  "examples": [
-    {
-      "jp": "さっさと宿題をしなさい。",
-      "id": "Do your homework without delay.",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    },
-    {
-      "jp": "さっさとこの絵を仕上げよう。",
-      "id": "Let's complete this picture quickly.",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    }
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "added_v": "v19.3.1-staged-merge",
-  "provenance": "expansion-staged",
-  "jmdict_seq": "",
-  "frequency": 1000
-},
-
-{
-  "id": "vg-n2-01064",
-  "word": "早速",
-  "reading": "さっそく",
-  "romaji": "sassoku",
-  "meaning_id": "at once; immediately",
-  "meaning_en": "at once; immediately; without delay; promptly",
-  "jlpt": "n2",
-  "pos": "adverb",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": [
-    "umum",
-    "kehidupan-sehari-hari"
-  ],
-  "register": "formal",
-  "lawan_bicara": [
-    "rekan-kerja",
-    "umum"
-  ],
-  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
-  "conj_type": null,
-  "examples": [
-    {
-      "jp": "彼女はベストセラーの小説を早速読んだ。",
-      "id": "She lost no time in reading a best-selling novel.",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    },
-    {
-      "jp": "さっそく仕事にとりかかりましょう。",
-      "id": "I will set about my task at once.",
+      "id": "Foto ini diambil olehnya.",
       "level": "n2",
       "tags": [
         "umum"
@@ -22891,10 +22557,10 @@ window.vocabN2_Verbs = [
   "word": "錆びる",
   "reading": "さびる",
   "romaji": "sabiru",
-  "meaning_id": "me-rust",
+  "meaning_id": "karat",
   "meaning_en": "to rust; to become rusty",
   "jlpt": "n2",
-  "pos": "verb-ichidan",
+  "pos": "verb-ru",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -22912,15 +22578,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "雨の中に放置しておくと自転車はさびるでしょう。",
-      "id": "A bicycle will rust if you leave it in the rain.",
+      "id": "Sepeda akan berkarat jika dibiarkan di tengah hujan.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"サビ＼ル"}
+},
     {
       "jp": "ガレージは錆びている。",
-      "id": "The garage has rusted.",
+      "id": "Garasinya sudah berkarat.",
       "level": "n2",
       "tags": [
         "umum"
@@ -22944,7 +22611,7 @@ window.vocabN2_Verbs = [
   "meaning_id": "sejuk",
   "meaning_en": "to cool; to dampen; to let cool",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -22962,15 +22629,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "ちょっと冷まして、熱いうちは食べないように。",
-      "id": "Let your food cool off a bit; don't eat it while it's hot.",
+      "id": "Biarkan makanan Anda agak dingin; jangan dimakan selagi masih panas.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"サマ＼ス"}
+},
     {
       "jp": "スープをさまさないように。",
-      "id": "Don't let the soup get cold.",
+      "id": "Jangan biarkan supnya menjadi dingin.",
       "level": "n2",
       "tags": [
         "umum"
@@ -22991,10 +22659,10 @@ window.vocabN2_Verbs = [
   "word": "冷める",
   "reading": "さめる",
   "romaji": "sameru",
-  "meaning_id": "me-become cool",
+  "meaning_id": "menjadi keren",
   "meaning_en": "to become cool; to wear off; to abate; to subside",
   "jlpt": "n2",
-  "pos": "verb-ichidan",
+  "pos": "verb-ru",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -23012,15 +22680,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "スープは冷めていない。",
-      "id": "The soup is not cool.",
+      "id": "Supnya tidak dingin.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"サメ＼ル"}
+},
     {
       "jp": "彼への愛はもう冷めてしまった。",
-      "id": "My love for him has already cooled.",
+      "id": "Cintaku padanya sudah mendingin.",
       "level": "n2",
       "tags": [
         "umum"
@@ -23041,10 +22710,10 @@ window.vocabN2_Verbs = [
   "word": "仕上がる",
   "reading": "しあがる",
   "romaji": "shiagaru",
-  "meaning_id": "me-be finished",
+  "meaning_id": "selesai",
   "meaning_en": "to be finished",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -23062,65 +22731,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "仕事はどうにかこうにか仕上がった。",
-      "id": "The work got finished somehow.",
+      "id": "Pekerjaan itu selesai entah bagaimana.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"シアガ＼ル"}
+},
     {
       "jp": "洗濯物は仕上がっていますか。",
-      "id": "Is my laundry ready?",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    }
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "added_v": "v19.3.1-staged-merge",
-  "provenance": "expansion-staged",
-  "jmdict_seq": "",
-  "frequency": 1000
-},
-
-{
-  "id": "vg-n2-01080",
-  "word": "しあさって",
-  "reading": "しあさって",
-  "romaji": "shiasatte",
-  "meaning_id": "two days after tomorrow",
-  "meaning_en": "two days after tomorrow",
-  "jlpt": "n2",
-  "pos": "adverb",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": [
-    "umum",
-    "kehidupan-sehari-hari"
-  ],
-  "register": "formal",
-  "lawan_bicara": [
-    "rekan-kerja",
-    "umum"
-  ],
-  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
-  "conj_type": null,
-  "examples": [
-    {
-      "jp": "明明後日にまた上げる。",
-      "id": "And I will raise it again in three days.",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    },
-    {
-      "jp": "会議は明々後日に延期された。",
-      "id": "The meeting was postponed to three days from today.",
+      "id": "Apakah cucian saya sudah siap?",
       "level": "n2",
       "tags": [
         "umum"
@@ -23141,7 +22761,7 @@ window.vocabN2_Verbs = [
   "word": "自衛",
   "reading": "じえい",
   "romaji": "jiei",
-  "meaning_id": "self-defense",
+  "meaning_id": "pertahanan diri",
   "meaning_en": "self-defense",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -23166,8 +22786,9 @@ window.vocabN2_Verbs = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ジエイ￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -23183,7 +22804,7 @@ window.vocabN2_Verbs = [
   "word": "司会",
   "reading": "しかい",
   "romaji": "shikai",
-  "meaning_id": "chairmanship",
+  "meaning_id": "kepemimpinan",
   "meaning_en": "chairmanship",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -23204,15 +22825,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "その会議は森首相が司会をした。",
-      "id": "The conference was presided over by Mr Mori.",
+      "id": "Konferensi ini dipimpin oleh Bapak Mori.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"シカイ￣"}
+},
     {
       "jp": "盛田教授は化学学会で司会を務めた。",
-      "id": "Professor Morita presided at a meeting of the Chemical Society.",
+      "id": "Profesor Morita memimpin pertemuan Masyarakat Kimia.",
       "level": "n2",
       "tags": [
         "umum"
@@ -23233,10 +22855,10 @@ window.vocabN2_Verbs = [
   "word": "敷く",
   "reading": "しく",
   "romaji": "shiku",
-  "meaning_id": "me-spread out",
+  "meaning_id": "menyebar",
   "meaning_en": "to spread out; to lay out",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -23254,15 +22876,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "机のしたにカーペットを敷いた。",
-      "id": "I put down a rug under my desk.",
+      "id": "Aku meletakkan permadani di bawah mejaku.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":2,"downstep_mora":0,"contour":"シク￣"}
+},
     {
       "jp": "彼女はベッドにきれいなシーツを敷いた。",
-      "id": "She put clean sheets on the bed.",
+      "id": "Dia meletakkan seprai bersih di tempat tidur.",
       "level": "n2",
       "tags": [
         "umum"
@@ -23283,10 +22906,10 @@ window.vocabN2_Verbs = [
   "word": "茂る",
   "reading": "しげる",
   "romaji": "shigeru",
-  "meaning_id": "me-grow thick",
+  "meaning_id": "tumbuh tebal",
   "meaning_en": "to grow thick; to luxuriate; to be luxurious",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -23304,15 +22927,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "丘には低い木がたくさん茂っている。",
-      "id": "Lots of low trees grow on the hill.",
+      "id": "Banyak pohon rendah tumbuh di atas bukit.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"シゲ＼ル"}
+},
     {
       "jp": "雑草は茂りやすい。",
-      "id": "Ill weeds are sure to thrive.",
+      "id": "Gulma yang sakit pasti akan tumbuh subur.",
       "level": "n2",
       "tags": [
         "umum"
@@ -23354,15 +22978,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "ほとんどの観光客がカメラを持参している。",
-      "id": "Almost every tourist carries a camera with him.",
+      "id": "Hampir setiap turis membawa kamera.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ジサン￣"}
+},
     {
       "jp": "いっぱい入ったコップ持参しなければならない。",
-      "id": "You must bring the full glass with you.",
+      "id": "Anda harus membawa segelas penuh.",
       "level": "n2",
       "tags": [
         "umum"
@@ -23383,7 +23008,7 @@ window.vocabN2_Verbs = [
   "word": "四捨五入",
   "reading": "ししゃごにゅう",
   "romaji": "shishagonyuu",
-  "meaning_id": "rounding up (fractions)",
+  "meaning_id": "pembulatan (pecahan)",
   "meaning_en": "rounding up (fractions)",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -23404,65 +23029,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "５８１４を千の位に四捨五入すれば何になりますか。",
-      "id": "What is 5814 rounded to the nearest thousand?",
+      "id": "Berapakah 5814 yang dibulatkan ke ribuan terdekat?",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":5,"downstep_mora":1,"contour":"シ＼シャゴニュウ"}
+},
     {
       "jp": "一円以下は四捨五入してよろしい。",
-      "id": "Count as one fractions of half a yen and over, but ignore those of less.",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    }
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "added_v": "v19.3.1-staged-merge",
-  "provenance": "expansion-staged",
-  "jmdict_seq": "",
-  "frequency": 1000
-},
-
-{
-  "id": "vg-n2-01099",
-  "word": "始終",
-  "reading": "しじゅう",
-  "romaji": "shijuu",
-  "meaning_id": "continuously; from beginning to end",
-  "meaning_en": "continuously; from beginning to end",
-  "jlpt": "n2",
-  "pos": "adverb",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": [
-    "umum",
-    "kehidupan-sehari-hari"
-  ],
-  "register": "formal",
-  "lawan_bicara": [
-    "rekan-kerja",
-    "umum"
-  ],
-  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
-  "conj_type": null,
-  "examples": [
-    {
-      "jp": "私は始終あなたのことを考えています。",
-      "id": "You are in my thoughts at all times.",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    },
-    {
-      "jp": "植物の種子は始終呼吸している。",
-      "id": "The seeds of plants breathe all the time.",
+      "id": "Hitunglah sebagai satu pecahan dari setengah yen atau lebih, tetapi abaikan pecahan yang lebih kecil.",
       "level": "n2",
       "tags": [
         "umum"
@@ -23483,7 +23059,7 @@ window.vocabN2_Verbs = [
   "word": "自習",
   "reading": "じしゅう",
   "romaji": "jishuu",
-  "meaning_id": "self-study",
+  "meaning_id": "belajar mandiri",
   "meaning_en": "self-study",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -23504,12 +23080,13 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "「今日はリチャード先生がお休みなので、英語の授業は自習です」「キター！」",
-      "id": "\"Since Richard is away today, English class will be self study.\" \"Nice!\"",
+      "id": "\"Karena Richard tidak ada hari ini, kelas bahasa Inggris akan belajar mandiri.\" \"Bagus!\"",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ジシュウ￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -23525,10 +23102,10 @@ window.vocabN2_Verbs = [
   "word": "静まる",
   "reading": "しずまる",
   "romaji": "shizumaru",
-  "meaning_id": "me-quieten down",
+  "meaning_id": "tenang",
   "meaning_en": "to quieten down; to calm down; to subside",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -23546,15 +23123,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "海をじっと眺めていると私は気が静まる感じがする。",
-      "id": "When I contemplate the sea, I feel calm.",
+      "id": "Saat saya merenungkan laut, saya merasa tenang.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"シズマ＼ル"}
+},
     {
       "jp": "風が静まった。",
-      "id": "The wind has died down.",
+      "id": "Angin sudah mereda.",
       "level": "n2",
       "tags": [
         "umum"
@@ -23575,7 +23153,7 @@ window.vocabN2_Verbs = [
   "word": "下書き",
   "reading": "したがき",
   "romaji": "shitagaki",
-  "meaning_id": "rough copy; draft",
+  "meaning_id": "salinan kasar; konsep",
   "meaning_en": "rough copy; draft",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -23596,15 +23174,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "私はスピーチの下書きを書いています。",
-      "id": "I am writing a draft of the speech.",
+      "id": "Saya sedang menulis draf pidato.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"シタガキ￣"}
+},
     {
       "jp": "私は論文の１回目の下書きをした。",
-      "id": "I've made a first draft of my thesis.",
+      "id": "Aku sudah membuat draf pertama tesisku.",
       "level": "n2",
       "tags": [
         "umum"
@@ -23625,7 +23204,7 @@ window.vocabN2_Verbs = [
   "word": "実習",
   "reading": "じっしゅう",
   "romaji": "jisshuu",
-  "meaning_id": "practice; training",
+  "meaning_id": "berlatih; pelatihan",
   "meaning_en": "practice; training",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -23646,12 +23225,13 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "マンツーマンで指導して頂けたという点でも、非常に充実した実習になった。",
-      "id": "Just getting one-to-one guidance was enough to make it an extremely fulfilling practise session.",
+      "id": "Mendapatkan panduan tatap muka saja sudah cukup untuk menjadikannya sesi latihan yang sangat memuaskan.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ジッシュウ￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -23667,7 +23247,7 @@ window.vocabN2_Verbs = [
   "word": "執筆",
   "reading": "しっぴつ",
   "romaji": "shippitsu",
-  "meaning_id": "writing",
+  "meaning_id": "menulis",
   "meaning_en": "writing",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -23688,12 +23268,13 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "ホーキングは、その本の執筆を始めたとき、手で書くことがまったくできなかった。",
-      "id": "When he started the book, Hawking was unable to write by hand at all.",
+      "id": "Saat memulai bukunya, Hawking sama sekali tidak bisa menulis dengan tangan.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"シッピツ￣"}
+},
     {
       "jp": "彼は小説の姉妹編を執筆中だ。",
       "id": "Dia now writing a sister volume to his novel.",
@@ -23738,15 +23319,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "ジョージは失恋した。",
-      "id": "George was broken-hearted.",
+      "id": "George patah hati.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"シツレン￣"}
+},
     {
       "jp": "青年は失恋した。",
-      "id": "The young man was disappointed in love.",
+      "id": "Pemuda itu kecewa dengan cinta.",
       "level": "n2",
       "tags": [
         "umum"
@@ -23788,15 +23370,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "切符を申し込まれる際は代替日もご指定ください。",
-      "id": "When applying for tickets, please give alternative dates.",
+      "id": "Saat mengajukan tiket, harap berikan tanggal alternatif.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"シテイ￣"}
+},
     {
       "jp": "日時は指定されたが、場所は指定されていない。",
-      "id": "The date has been appointed but the place has not.",
+      "id": "Tanggalnya sudah ditentukan tetapi tempatnya belum.",
       "level": "n2",
       "tags": [
         "umum"
@@ -23817,10 +23400,10 @@ window.vocabN2_Verbs = [
   "word": "縛る",
   "reading": "しばる",
   "romaji": "shibaru",
-  "meaning_id": "me-tie",
+  "meaning_id": "mengikat",
   "meaning_en": "to tie; to bind",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -23838,15 +23421,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "どろぼうは手足を縛られた。",
-      "id": "The thief was bound hand and foot.",
+      "id": "Pencuri itu diikat tangan dan kakinya.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"シバ＼ル"}
+},
     {
       "jp": "かれらは彼の両足を縛りあわせた。",
-      "id": "They bound his legs together.",
+      "id": "Mereka mengikat kedua kakinya.",
       "level": "n2",
       "tags": [
         "umum"
@@ -23867,10 +23451,10 @@ window.vocabN2_Verbs = [
   "word": "しびれる",
   "reading": "しびれる",
   "romaji": "shibireru",
-  "meaning_id": "me-become numb",
+  "meaning_id": "menjadi mati rasa",
   "meaning_en": "to become numb; to go to sleep (i.e., a limb)",
   "jlpt": "n2",
-  "pos": "verb-ichidan",
+  "pos": "verb-ru",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -23888,15 +23472,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "右手がしびれます。",
-      "id": "My right hand is numb.",
+      "id": "Tangan kananku mati rasa.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"シビレ＼ル"}
+},
     {
       "jp": "その電線に触るとしびれるよ。",
-      "id": "If you touch that wire, you will receive a shock.",
+      "id": "Jika Anda menyentuh kawat itu, Anda akan menerima kejutan.",
       "level": "n2",
       "tags": [
         "umum"
@@ -23917,10 +23502,10 @@ window.vocabN2_Verbs = [
   "word": "しぼむ",
   "reading": "しぼむ",
   "romaji": "shibomu",
-  "meaning_id": "me-wither",
+  "meaning_id": "layu",
   "meaning_en": "to wither; to fade (away); to shrivel; to wilt",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -23938,15 +23523,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "花は切られるとすぐにしぼむ。",
-      "id": "Flowers soon fade when they have been cut.",
+      "id": "Bunga segera layu setelah dipotong.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"シボム￣"}
+},
     {
       "jp": "暑さ続きでその植物はしぼんでしまった。",
-      "id": "The long spell of hot weather withered up the plants.",
+      "id": "Cuaca panas yang berkepanjangan membuat tanaman layu.",
       "level": "n2",
       "tags": [
         "umum"
@@ -23967,10 +23553,10 @@ window.vocabN2_Verbs = [
   "word": "絞る",
   "reading": "しぼる",
   "romaji": "shiboru",
-  "meaning_id": "me-press",
+  "meaning_id": "tekan",
   "meaning_en": "to press; to wring; to squeeze",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -23988,65 +23574,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "要点を絞って、決定を下しましょう。",
-      "id": "Let's get down to brass tacks and make a decision.",
+      "id": "Mari kita mulai mengambil keputusan dan mengambil keputusan.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"シボ＼ル"}
+},
     {
       "jp": "私はオレンジジュースを絞った。",
-      "id": "I squeezed the juice out of the oranges.",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    }
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "added_v": "v19.3.1-staged-merge",
-  "provenance": "expansion-staged",
-  "jmdict_seq": "",
-  "frequency": 1000
-},
-
-{
-  "id": "vg-n2-01133",
-  "word": "しみじみ",
-  "reading": "しみじみ",
-  "romaji": "shimijimi",
-  "meaning_id": "keenly; deeply",
-  "meaning_en": "keenly; deeply; heartily",
-  "jlpt": "n2",
-  "pos": "adverb",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": [
-    "umum",
-    "kehidupan-sehari-hari"
-  ],
-  "register": "formal",
-  "lawan_bicara": [
-    "rekan-kerja",
-    "umum"
-  ],
-  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
-  "conj_type": null,
-  "examples": [
-    {
-      "jp": "彼女にはその話がしみじみ感じられた。",
-      "id": "The story came home to her.",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    },
-    {
-      "jp": "その悲しい話は彼女にしみじみと感じられた。",
-      "id": "The sad story came home to her.",
+      "id": "Saya memeras jus dari jeruk.",
       "level": "n2",
       "tags": [
         "umum"
@@ -24067,10 +23604,10 @@ window.vocabN2_Verbs = [
   "word": "締め切る",
   "reading": "しめきる",
   "romaji": "shimekiru",
-  "meaning_id": "me-shut up",
+  "meaning_id": "tutup mulut",
   "meaning_en": "to shut up",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -24092,8 +23629,9 @@ window.vocabN2_Verbs = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"シメキ＼ル"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -24109,10 +23647,10 @@ window.vocabN2_Verbs = [
   "word": "湿る",
   "reading": "しめる",
   "romaji": "shimeru",
-  "meaning_id": "me-be wet",
+  "meaning_id": "menjadi basah",
   "meaning_en": "to be wet; to become wet; to be damp",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -24130,15 +23668,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "洗濯物はまだ湿っている。",
-      "id": "The washing is still damp.",
+      "id": "Cuciannya masih lembab.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"シメル￣"}
+},
     {
       "jp": "ここに両手を置いて手を湿らせる。",
-      "id": "Put your hands up here and get' em wet.",
+      "id": "Letakkan tanganmu di sini dan basahi.",
       "level": "n2",
       "tags": [
         "umum"
@@ -24159,10 +23698,10 @@ window.vocabN2_Verbs = [
   "word": "しゃがむ",
   "reading": "しゃがむ",
   "romaji": "shagamu",
-  "meaning_id": "me-squat",
+  "meaning_id": "jongkok",
   "meaning_en": "to squat",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -24180,12 +23719,13 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "少し離れて見ると、その岩は人がしゃがんだ姿に見える。",
-      "id": "Seen at a distance, the rock looks like a squatting human figure.",
+      "id": "Dilihat dari kejauhan, batu tersebut tampak seperti sosok manusia yang sedang berjongkok.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":0,"downstep_mora":0,"contour":"￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -24201,7 +23741,7 @@ window.vocabN2_Verbs = [
   "word": "写生",
   "reading": "しゃせい",
   "romaji": "shasei",
-  "meaning_id": "sketching; drawing from nature",
+  "meaning_id": "membuat sketsa; menggambar dari alam",
   "meaning_en": "sketching; drawing from nature",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -24222,15 +23762,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "彼はりんごを写生した。",
-      "id": "He sketched an apple.",
+      "id": "Dia membuat sketsa sebuah apel.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"シャセイ￣"}
+},
     {
       "jp": "彼は林檎を写生しています。",
-      "id": "He's drawing a sketch of an apple.",
+      "id": "Dia sedang menggambar sketsa sebuah apel.",
       "level": "n2",
       "tags": [
         "umum"
@@ -24251,7 +23792,7 @@ window.vocabN2_Verbs = [
   "word": "しゃっくり",
   "reading": "しゃっくり",
   "romaji": "shakkuri",
-  "meaning_id": "hiccough; hiccup",
+  "meaning_id": "cegukan",
   "meaning_en": "hiccough; hiccup",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -24272,12 +23813,13 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "しゃっくりがよく出ます。",
-      "id": "I hiccup a lot.",
+      "id": "Saya sering cegukan.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":4,"downstep_mora":1,"contour":"シャ＼ックリ"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -24293,10 +23835,10 @@ window.vocabN2_Verbs = [
   "word": "しゃぶる",
   "reading": "しゃぶる",
   "romaji": "shaburu",
-  "meaning_id": "me-suck",
+  "meaning_id": "menyebalkan",
   "meaning_en": "to suck; to chew",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -24314,12 +23856,13 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "あんなやつを信用したら骨までしゃぶられちゃうぞ。",
-      "id": "If you trust such a fellow, you'll lose everything you have.",
+      "id": "Jika Anda memercayai orang seperti itu, Anda akan kehilangan semua yang Anda miliki.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":0,"downstep_mora":0,"contour":"￣"}
+},
     {
       "jp": "私は夏は凍った棒アイスクリームをしゃぶるのが好きです。",
       "id": "Saya suka to suck on frozen ice cream bars in the summer.",
@@ -24343,7 +23886,7 @@ window.vocabN2_Verbs = [
   "word": "じゃんけん",
   "reading": "じゃんけん",
   "romaji": "janken",
-  "meaning_id": "rock-scissors-paper game",
+  "meaning_id": "permainan batu-gunting-kertas",
   "meaning_en": "rock-scissors-paper game",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -24364,12 +23907,13 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "「じゃんけんね」「ぐー」「ちょ・・パー」「後出しかよ！」",
-      "id": "\"Rock-paper-scissors, OK?\" \"Rock.\" \"Sciss... paper.\" \"You cheated!\"",
+      "id": "\"Gunting batu-kertas, oke?\" \"Batu.\" \"Sial...kertas.\" \"Kamu curang!\"",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"ジャンケ＼ン"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -24385,7 +23929,7 @@ window.vocabN2_Verbs = [
   "word": "集会",
   "reading": "しゅうかい",
   "romaji": "shuukai",
-  "meaning_id": "meeting; assembly",
+  "meaning_id": "pertemuan; perakitan",
   "meaning_en": "meeting; assembly",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -24406,15 +23950,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "集会は７時に解散した。",
-      "id": "The meeting broke up at seven.",
+      "id": "Pertemuan itu bubar pada pukul tujuh.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"シュウカイ￣"}
+},
     {
       "jp": "彼は兄の代理として集会に参加した。",
-      "id": "He took part in the meeting in place of his brother.",
+      "id": "Dia mengambil bagian dalam pertemuan itu menggantikan saudaranya.",
       "level": "n2",
       "tags": [
         "umum"
@@ -24456,12 +24001,13 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "彼はジャマイカに住居を構えた。",
-      "id": "He took up residence in Jamaica.",
+      "id": "Dia tinggal di Jamaika.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"ジュ＼ウキョ"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -24477,7 +24023,7 @@ window.vocabN2_Verbs = [
   "word": "集金",
   "reading": "しゅうきん",
   "romaji": "shuukin",
-  "meaning_id": "money collection",
+  "meaning_id": "pengumpulan uang",
   "meaning_en": "money collection",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -24502,8 +24048,9 @@ window.vocabN2_Verbs = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"シュウキン￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -24540,15 +24087,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "隊長は部下に直ちに集合するように命令した。",
-      "id": "The captain ordered his men to gather at once.",
+      "id": "Kapten memerintahkan anak buahnya untuk segera berkumpul.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"シュウゴウ￣"}
+},
     {
       "jp": "日曜日に集合しよう。",
-      "id": "Let's get together on Sunday.",
+      "id": "Mari kita berkumpul di hari Minggu.",
       "level": "n2",
       "tags": [
         "umum"
@@ -24569,7 +24117,7 @@ window.vocabN2_Verbs = [
   "word": "修繕",
   "reading": "しゅうぜん",
   "romaji": "shuuzen",
-  "meaning_id": "repair; mending",
+  "meaning_id": "perbaikan; memperbaiki",
   "meaning_en": "repair; mending",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -24590,15 +24138,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "この椅子は修繕する必要がある。",
-      "id": "This chair is in want of repair.",
+      "id": "Kursi ini perlu diperbaiki.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"シュウゼン￣"}
+},
     {
       "jp": "私は彼に靴を修繕するように頼んだ。",
-      "id": "I asked him to mend my shoes.",
+      "id": "Saya memintanya untuk memperbaiki sepatu saya.",
       "level": "n2",
       "tags": [
         "umum"
@@ -24619,7 +24168,7 @@ window.vocabN2_Verbs = [
   "word": "就任",
   "reading": "しゅうにん",
   "romaji": "shuunin",
-  "meaning_id": "inauguration; assumption of office",
+  "meaning_id": "peresmian; asumsi jabatan",
   "meaning_en": "inauguration; assumption of office",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -24640,15 +24189,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "彼は大統領に就任した。",
-      "id": "He was inaugurated as President.",
+      "id": "Ia dilantik sebagai Presiden.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"シュウニン￣"}
+},
     {
       "jp": "彼らは彼を委員会の議長に就任させた。",
-      "id": "They installed him as chairman of the committee.",
+      "id": "Mereka mengangkatnya sebagai ketua komite.",
       "level": "n2",
       "tags": [
         "umum"
@@ -24690,15 +24240,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "会議はもう終了いたしました。",
-      "id": "The conference is already over, sir.",
+      "id": "Konferensi sudah selesai, Pak.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"シュウリョウ￣"}
+},
     {
       "jp": "番組は国歌で終了する。",
-      "id": "The program will finish with the national anthem.",
+      "id": "Acara akan diakhiri dengan lagu kebangsaan.",
       "level": "n2",
       "tags": [
         "umum"
@@ -24719,7 +24270,7 @@ window.vocabN2_Verbs = [
   "word": "縮小",
   "reading": "しゅくしょう",
   "romaji": "shukushou",
-  "meaning_id": "reduction; curtailment",
+  "meaning_id": "pengurangan; pembatasan",
   "meaning_en": "reduction; curtailment",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -24740,15 +24291,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "縮小コピーを撮ってくるよ。",
-      "id": "I'm going to make reduced copies.",
+      "id": "Saya akan membuat salinan yang lebih kecil.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"シュクショウ￣"}
+},
     {
       "jp": "多くの会社が人員を最低限にまで縮小した。",
-      "id": "A lot of companies have pared their staff down to a minimum.",
+      "id": "Banyak perusahaan telah mengurangi stafnya seminimal mungkin.",
       "level": "n2",
       "tags": [
         "umum"
@@ -24769,7 +24321,7 @@ window.vocabN2_Verbs = [
   "word": "受験",
   "reading": "じゅけん",
   "romaji": "juken",
-  "meaning_id": "taking an examination",
+  "meaning_id": "mengikuti ujian",
   "meaning_en": "taking an examination",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -24790,15 +24342,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "受験したが失敗するだけだった。",
-      "id": "I sat the exam only to fail it.",
+      "id": "Saya mengikuti ujian hanya untuk gagal.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ジュケン￣"}
+},
     {
       "jp": "私は受験勉強に専念するつもりです。",
-      "id": "I will devote myself to studying for the entrance exams.",
+      "id": "Saya akan mengabdikan diri untuk belajar untuk ujian masuk.",
       "level": "n2",
       "tags": [
         "umum"
@@ -24819,7 +24372,7 @@ window.vocabN2_Verbs = [
   "word": "出勤",
   "reading": "しゅっきん",
   "romaji": "shukkin",
-  "meaning_id": "going to work; at work",
+  "meaning_id": "akan bekerja; di tempat kerja",
   "meaning_en": "going to work; at work",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -24840,15 +24393,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "朝食前に出勤するなんていかにも彼らしい。",
-      "id": "It is characteristic of him to go to work before breakfast.",
+      "id": "Sudah menjadi ciri khasnya untuk berangkat kerja sebelum sarapan.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"シュッキン￣"}
+},
     {
       "jp": "彼は雨の日以外は毎日徒歩で出勤します。",
-      "id": "He goes to work on foot every day except on rainy days.",
+      "id": "Dia pergi bekerja dengan berjalan kaki setiap hari kecuali pada hari hujan.",
       "level": "n2",
       "tags": [
         "umum"
@@ -24869,7 +24423,7 @@ window.vocabN2_Verbs = [
   "word": "出張",
   "reading": "しゅっちょう",
   "romaji": "shutchou",
-  "meaning_id": "official tour; business trip",
+  "meaning_id": "tur resmi; perjalanan bisnis",
   "meaning_en": "official tour; business trip",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -24890,15 +24444,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "ロス出張をキャンセルしようかな。",
-      "id": "I should cancel my L.A. trip.",
+      "id": "Saya harus membatalkan perjalanan saya ke L.A.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"シュッチョウ￣"}
+},
     {
       "jp": "彼は来週ロンドンへ出張する予定だ。",
-      "id": "He will make a business trip to London next week.",
+      "id": "Dia akan melakukan perjalanan bisnis ke London minggu depan.",
       "level": "n2",
       "tags": [
         "umum"
@@ -24940,65 +24495,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "血液は体内を循環する。",
-      "id": "Blood circulates through the body.",
+      "id": "Darah beredar ke seluruh tubuh.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ジュンカン￣"}
+},
     {
       "jp": "適度の運動は血液の循環を活発にする。",
-      "id": "Moderate exercise invigorates the blood circulation.",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    }
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "added_v": "v19.3.1-staged-merge",
-  "provenance": "expansion-staged",
-  "jmdict_seq": "",
-  "frequency": 1000
-},
-
-{
-  "id": "vg-n2-01182",
-  "word": "順々",
-  "reading": "じゅんじゅん",
-  "romaji": "junjun",
-  "meaning_id": "in order; in turn",
-  "meaning_en": "in order; in turn",
-  "jlpt": "n2",
-  "pos": "adverb",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": [
-    "umum",
-    "kehidupan-sehari-hari"
-  ],
-  "register": "formal",
-  "lawan_bicara": [
-    "rekan-kerja",
-    "umum"
-  ],
-  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
-  "conj_type": null,
-  "examples": [
-    {
-      "jp": "少年たちは順々にしゃべった。",
-      "id": "All the boys spoke each in turn.",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    },
-    {
-      "jp": "少年たちは皆順々に話した。",
-      "id": "All the boys spoke in turn.",
+      "id": "Olahraga ringan memperkuat sirkulasi darah.",
       "level": "n2",
       "tags": [
         "umum"
@@ -25019,7 +24525,7 @@ window.vocabN2_Verbs = [
   "word": "消化",
   "reading": "しょうか",
   "romaji": "shouka",
-  "meaning_id": "digestion",
+  "meaning_id": "pencernaan",
   "meaning_en": "digestion",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -25040,15 +24546,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "食物は胃の中で消化される。",
-      "id": "Food is digested in the stomach.",
+      "id": "Makanan dicerna di perut.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ショウカ￣"}
+},
     {
       "jp": "自然食は人間の消化に合っている。",
-      "id": "A natural diet is suitable for human digestion.",
+      "id": "Pola makan alami cocok untuk pencernaan manusia.",
       "level": "n2",
       "tags": [
         "umum"
@@ -25069,7 +24576,7 @@ window.vocabN2_Verbs = [
   "word": "乗車",
   "reading": "じょうしゃ",
   "romaji": "jousha",
-  "meaning_id": "taking a train; entraining",
+  "meaning_id": "naik kereta api; menarik",
   "meaning_en": "taking a train; entraining",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -25094,11 +24601,12 @@ window.vocabN2_Verbs = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ジョウシャ￣"}
+},
     {
       "jp": "列車に乗車した後で、私は財布を家に置き忘れてきたことに気が付いた。",
-      "id": "After I got on board a train, I found I had left my wallet behind at home.",
+      "id": "Setelah saya naik kereta, saya menemukan dompet saya tertinggal di rumah.",
       "level": "n2",
       "tags": [
         "umum"
@@ -25119,7 +24627,7 @@ window.vocabN2_Verbs = [
   "word": "消毒",
   "reading": "しょうどく",
   "romaji": "shoudoku",
-  "meaning_id": "disinfection; sterilization",
+  "meaning_id": "desinfeksi; sterilisasi",
   "meaning_en": "disinfection; sterilization",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -25144,8 +24652,9 @@ window.vocabN2_Verbs = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ショウドク￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -25161,7 +24670,7 @@ window.vocabN2_Verbs = [
   "word": "蒸発",
   "reading": "じょうはつ",
   "romaji": "jouhatsu",
-  "meaning_id": "evaporation; unexplained disappearance",
+  "meaning_id": "penguapan; hilangnya yang tidak dapat dijelaskan",
   "meaning_en": "evaporation; unexplained disappearance",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -25182,15 +24691,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "聞きましたわよ。ご両親が借金を残して蒸発したそうですわね。",
-      "id": "I've heard about it. Your parents disappeared, running out on their debt didn't they?",
+      "id": "Saya pernah mendengarnya. Orang tuamu menghilang, hutangnya habis bukan?",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ジョウハツ￣"}
+},
     {
       "jp": "露は太陽が昇ると蒸発した。",
-      "id": "The dew evaporated when the sun rose.",
+      "id": "Embunnya menguap saat matahari terbit.",
       "level": "n2",
       "tags": [
         "umum"
@@ -25232,15 +24742,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "ボブはスケートではきみといい勝負だ。",
-      "id": "Bob is a good match for you in skating.",
+      "id": "Bob adalah pasangan yang cocok untukmu dalam skating.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"ショ＼ウブ"}
+},
     {
       "jp": "ゆっくりでも着実にやってゆけば勝負には勝つ。",
-      "id": "Slow and steady wins the race.",
+      "id": "Lambat dan mantap memenangkan perlombaan.",
       "level": "n2",
       "tags": [
         "umum"
@@ -25261,7 +24772,7 @@ window.vocabN2_Verbs = [
   "word": "小便",
   "reading": "しょうべん",
   "romaji": "shouben",
-  "meaning_id": "(colloquial) urine; piss",
+  "meaning_id": "(sehari-hari) urin; kencing",
   "meaning_en": "(colloquial) urine; piss",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -25282,12 +24793,13 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "「小便が琥珀色だと言われたら、脱水症状だ」",
-      "id": "\"When they say your pee is amber-colored, that means you're dehydrated.\"",
+      "id": "\"Jika mereka mengatakan kencing Anda berwarna kuning, itu berarti Anda mengalami dehidrasi.\"",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"ショウベ＼ン"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -25303,7 +24815,7 @@ window.vocabN2_Verbs = [
   "word": "消耗",
   "reading": "しょうもう",
   "romaji": "shoumou",
-  "meaning_id": "exhaustion; consumption",
+  "meaning_id": "kelelahan; konsumsi",
   "meaning_en": "exhaustion; consumption",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -25324,12 +24836,13 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "その男の子の世話で彼女は非常に精力を消耗する。",
-      "id": "Taking care of the boy is a great drain on her energies.",
+      "id": "Merawat anak laki-laki itu sangat menguras energinya.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ショウモウ￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -25366,57 +24879,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "この句では前置詞を省略できる。",
-      "id": "You can omit the preposition in this phrase.",
+      "id": "Anda dapat menghilangkan preposisi dalam frasa ini.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ショウリャク￣"}
+},
     {
       "jp": "その本の最終章は省略してよい。",
-      "id": "You can omit the last chapter of the book.",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    }
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "added_v": "v19.3.1-staged-merge",
-  "provenance": "expansion-staged",
-  "jmdict_seq": "",
-  "frequency": 1000
-},
-
-{
-  "id": "vg-n2-01220",
-  "word": "初旬",
-  "reading": "しょじゅん",
-  "romaji": "shojun",
-  "meaning_id": "first 10 days of the month",
-  "meaning_en": "first 10 days of the month",
-  "jlpt": "n2",
-  "pos": "adverb",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": [
-    "umum",
-    "kehidupan-sehari-hari"
-  ],
-  "register": "formal",
-  "lawan_bicara": [
-    "rekan-kerja",
-    "umum"
-  ],
-  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
-  "conj_type": null,
-  "examples": [
-    {
-      "jp": "初旬を使います。",
-      "id": "Menggunakan first 10 days of the month.",
+      "id": "Anda dapat menghilangkan bab terakhir buku ini.",
       "level": "n2",
       "tags": [
         "umum"
@@ -25458,15 +24930,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "もうパスポートを申請しましたか。",
-      "id": "Have you applied for a passport yet?",
+      "id": "Apakah Anda sudah mengajukan paspor?",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"シンセイ￣"}
+},
     {
       "jp": "彼女はビザを申請した。",
-      "id": "She applied for a visa.",
+      "id": "Dia mengajukan permohonan visa.",
       "level": "n2",
       "tags": [
         "umum"
@@ -25487,7 +24960,7 @@ window.vocabN2_Verbs = [
   "word": "診断",
   "reading": "しんだん",
   "romaji": "shindan",
-  "meaning_id": "diagnosis",
+  "meaning_id": "diagnosis (pemeriksaan medis)",
   "meaning_en": "diagnosis",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -25508,15 +24981,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "その女性は一人一人を注意深く診断している。",
-      "id": "She'll diagnose each person carefully.",
+      "id": "Dia akan mendiagnosis setiap orang dengan cermat.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"シンダン￣"}
+},
     {
       "jp": "診断は医者に任せなければなりません。",
-      "id": "You must leave diagnosis to your doctor.",
+      "id": "Anda harus menyerahkan diagnosis kepada dokter Anda.",
       "level": "n2",
       "tags": [
         "umum"
@@ -25558,65 +25032,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "泥棒はその家に窓から侵入した。",
-      "id": "The burglar gained access to the house through a window.",
+      "id": "Pencuri mendapatkan akses ke rumah melalui jendela.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"シンニュウ￣"}
+},
     {
       "jp": "どろぼうはこわれた窓から侵入した。",
-      "id": "The thief entered through a broken window.",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    }
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "added_v": "v19.3.1-staged-merge",
-  "provenance": "expansion-staged",
-  "jmdict_seq": "",
-  "frequency": 1000
-},
-
-{
-  "id": "vg-n2-01245",
-  "word": "深夜",
-  "reading": "しんや",
-  "romaji": "shin'ya",
-  "meaning_id": "late at night",
-  "meaning_en": "late at night",
-  "jlpt": "n2",
-  "pos": "adverb",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": [
-    "umum",
-    "kehidupan-sehari-hari"
-  ],
-  "register": "formal",
-  "lawan_bicara": [
-    "rekan-kerja",
-    "umum"
-  ],
-  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
-  "conj_type": null,
-  "examples": [
-    {
-      "jp": "深夜テレビでカウボーイの映画を見ましたか。",
-      "id": "Did you see the cowboy film on TV last night?",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    },
-    {
-      "jp": "私はよく深夜にラジオを聞いたものだ。",
-      "id": "I used to listen to the radio very late at night.",
+      "id": "Pencuri itu masuk melalui jendela yang pecah.",
       "level": "n2",
       "tags": [
         "umum"
@@ -25637,7 +25062,7 @@ window.vocabN2_Verbs = [
   "word": "炊事",
   "reading": "すいじ",
   "romaji": "suiji",
-  "meaning_id": "cooking; culinary arts",
+  "meaning_id": "memasak; seni kuliner",
   "meaning_en": "cooking; culinary arts",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -25658,12 +25083,13 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "私は炊事が全然できない。",
-      "id": "I'm all thumbs in the kitchen.",
+      "id": "Saya semua jempol di dapur.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"スイジ￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -25700,57 +25126,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "彼の死は事故だとする君の推定は間違っているようだ。",
-      "id": "Your assumption that his death was an accident seems to be wrong.",
+      "id": "Anggapan Anda bahwa kematiannya karena kecelakaan sepertinya salah.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"スイテイ￣"}
+},
     {
       "jp": "彼女は３０歳過ぎだと推定する。",
-      "id": "I guess that she is over thirty.",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    }
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "added_v": "v19.3.1-staged-merge",
-  "provenance": "expansion-staged",
-  "jmdict_seq": "",
-  "frequency": 1000
-},
-
-{
-  "id": "vg-n2-01265",
-  "word": "ずうっと",
-  "reading": "ずうっと",
-  "romaji": "zuutto",
-  "meaning_id": "continuously; the whole time",
-  "meaning_en": "continuously; the whole time; all the way; throughout",
-  "jlpt": "n2",
-  "pos": "adverb",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": [
-    "umum",
-    "kehidupan-sehari-hari"
-  ],
-  "register": "formal",
-  "lawan_bicara": [
-    "rekan-kerja",
-    "umum"
-  ],
-  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
-  "conj_type": null,
-  "examples": [
-    {
-      "jp": "ずうっとを使います。",
-      "id": "Menggunakan continuously; the whole time.",
+      "id": "Saya kira dia berusia lebih dari tiga puluh tahun.",
       "level": "n2",
       "tags": [
         "umum"
@@ -25771,10 +25156,10 @@ window.vocabN2_Verbs = [
   "word": "透き通る",
   "reading": "すきとおる",
   "romaji": "sukitooru",
-  "meaning_id": "me-be transparent",
+  "meaning_id": "tembus pandang",
   "meaning_en": "to be(come) transparent",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -25792,62 +25177,13 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "透き通るを使います。",
-      "id": "Menggunakan me-be transparent.",
+      "id": "Menggunakan tembus pandang.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "added_v": "v19.3.1-staged-merge",
-  "provenance": "expansion-staged",
-  "jmdict_seq": "",
-  "frequency": 1000
-},
-
-{
-  "id": "vg-n2-01275",
-  "word": "すくなくとも",
-  "reading": "すくなくとも",
-  "romaji": "sukunakutomo",
-  "meaning_id": "at least",
-  "meaning_en": "at least",
-  "jlpt": "n2",
-  "pos": "adverb",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": [
-    "umum",
-    "kehidupan-sehari-hari"
-  ],
-  "register": "formal",
-  "lawan_bicara": [
-    "rekan-kerja",
-    "umum"
-  ],
-  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
-  "conj_type": null,
-  "examples": [
-    {
-      "jp": "私は、少なくとも１０冊の本を持っている。",
-      "id": "I have at least ten books.",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    },
-    {
-      "jp": "少なくとも地図ぐらいはあるだろう。",
-      "id": "At least they should have a map.",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":5,"downstep_mora":3,"contour":"スキト＼オル"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -25863,10 +25199,10 @@ window.vocabN2_Verbs = [
   "word": "涼む",
   "reading": "すずむ",
   "romaji": "suzumu",
-  "meaning_id": "me-cool oneself",
+  "meaning_id": "mendinginkan diri",
   "meaning_en": "to cool oneself; to cool off; to enjoy evening cool",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -25884,12 +25220,13 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "ここは風通しが良くて、涼むにはもってこいの場所なんだ。",
-      "id": "It's well-ventilated and an ideal place to cool down.",
+      "id": "Ventilasinya baik dan merupakan tempat yang ideal untuk menenangkan diri.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"スズ＼ム"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -25905,7 +25242,7 @@ window.vocabN2_Verbs = [
   "word": "スタート",
   "reading": "スタート",
   "romaji": "sutaato",
-  "meaning_id": "start",
+  "meaning_id": "mulai",
   "meaning_en": "start",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -25926,15 +25263,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "子供らは二人一組になったスタートした。",
-      "id": "The children started in pairs.",
+      "id": "Anak-anak mulai berpasangan.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":0,"downstep_mora":0,"contour":"￣"}
+},
     {
       "jp": "その走者はうまいスタートをした。",
-      "id": "The runner got a good start.",
+      "id": "Pelari mendapat awal yang baik.",
       "level": "n2",
       "tags": [
         "umum"
@@ -25980,11 +25318,12 @@ window.vocabN2_Verbs = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":0,"downstep_mora":0,"contour":"￣"}
+},
     {
       "jp": "一杯のコーヒーを飲んだら頭がすっきりした。",
-      "id": "A cup of coffee cleared my head.",
+      "id": "Secangkir kopi menjernihkan pikiranku.",
       "level": "n2",
       "tags": [
         "umum"
@@ -26005,7 +25344,7 @@ window.vocabN2_Verbs = [
   "word": "ストップ",
   "reading": "ストップ",
   "romaji": "sutoppu",
-  "meaning_id": "stop",
+  "meaning_id": "berhenti",
   "meaning_en": "stop",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -26026,15 +25365,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "厳しい資金不足で計画はストップしている。",
-      "id": "An acute lack of funds is holding up the plan.",
+      "id": "Kurangnya dana menghambat rencana tersebut.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":0,"downstep_mora":0,"contour":"￣"}
+},
     {
       "jp": "戦争で彼らの研究はストップした。",
-      "id": "The war brought their research to an end.",
+      "id": "Perang mengakhiri penelitian mereka.",
       "level": "n2",
       "tags": [
         "umum"
@@ -26055,10 +25395,10 @@ window.vocabN2_Verbs = [
   "word": "澄む",
   "reading": "すむ",
   "romaji": "sumu",
-  "meaning_id": "me-clear",
+  "meaning_id": "jelas",
   "meaning_en": "to clear (e.g. weather); to become transparent",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -26076,15 +25416,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "水が底まで澄んでいる。",
-      "id": "The water is clear to the bottom.",
+      "id": "Airnya jernih sampai ke dasar.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":2,"downstep_mora":1,"contour":"ス＼ム"}
+},
     {
       "jp": "彼女は澄んだ声をしている。",
-      "id": "She has a soft and clear voice.",
+      "id": "Dia memiliki suara yang lembut dan jernih.",
       "level": "n2",
       "tags": [
         "umum"
@@ -26105,10 +25446,10 @@ window.vocabN2_Verbs = [
   "word": "清む",
   "reading": "すむ",
   "romaji": "sumu",
-  "meaning_id": "me-become clear",
+  "meaning_id": "menjadi jelas",
   "meaning_en": "to become clear (water, air, etc.); to become transparent",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -26126,15 +25467,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "水が底まで澄んでいる。",
-      "id": "The water is clear to the bottom.",
+      "id": "Airnya jernih sampai ke dasar.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":2,"downstep_mora":1,"contour":"ス＼ム"}
+},
     {
       "jp": "彼女は澄んだ声をしている。",
-      "id": "She has a soft and clear voice.",
+      "id": "Dia memiliki suara yang lembut dan jernih.",
       "level": "n2",
       "tags": [
         "umum"
@@ -26155,10 +25497,10 @@ window.vocabN2_Verbs = [
   "word": "ずらす",
   "reading": "ずらす",
   "romaji": "zurasu",
-  "meaning_id": "me-put off",
+  "meaning_id": "menunda",
   "meaning_en": "to put off; to delay",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -26176,7 +25518,7 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "ちょっと椅子をずらしてくれない？",
-      "id": "Could you move the chair a bit?",
+      "id": "Bisakah Anda memindahkan kursinya sedikit?",
       "level": "n2",
       "tags": [
         "umum"
@@ -26184,49 +25526,7 @@ window.vocabN2_Verbs = [
     },
     {
       "jp": "ローマのホテルの予約を、３日ずらさなければならなくなった。",
-      "id": "I had to put back the hotel reservations for Rome by three days.",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    }
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "added_v": "v19.3.1-staged-merge",
-  "provenance": "expansion-staged",
-  "jmdict_seq": "",
-  "frequency": 1000
-},
-
-{
-  "id": "vg-n2-01300",
-  "word": "ずらり",
-  "reading": "ずらり",
-  "romaji": "zurari",
-  "meaning_id": "in a row; in a line",
-  "meaning_en": "in a row; in a line",
-  "jlpt": "n2",
-  "pos": "adverb",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": [
-    "umum",
-    "kehidupan-sehari-hari"
-  ],
-  "register": "formal",
-  "lawan_bicara": [
-    "rekan-kerja",
-    "umum"
-  ],
-  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
-  "conj_type": null,
-  "examples": [
-    {
-      "jp": "玄関に靴がずらりと並んでいたな。",
-      "id": "Shoes were lined up in the doorway.",
+      "id": "Saya harus mengembalikan reservasi hotel ke Roma dalam tiga hari.",
       "level": "n2",
       "tags": [
         "umum"
@@ -26247,10 +25547,10 @@ window.vocabN2_Verbs = [
   "word": "刷る",
   "reading": "する",
   "romaji": "suru",
-  "meaning_id": "me-print",
+  "meaning_id": "mencetak",
   "meaning_en": "to print",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -26268,12 +25568,13 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "私達は招待状を５０通刷りました。",
-      "id": "We ran off 50 copies of the invitation.",
+      "id": "Kami kehabisan 50 salinan undangan.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":2,"downstep_mora":1,"contour":"ス＼ル"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -26289,10 +25590,10 @@ window.vocabN2_Verbs = [
   "word": "すれちがう",
   "reading": "すれちがう",
   "romaji": "surechigau",
-  "meaning_id": "me-pass by one another",
+  "meaning_id": "melewati satu sama lain",
   "meaning_en": "to pass by one another; to disagree",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -26310,15 +25611,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "きのう銀座でロバートとすれ違ったよ。",
-      "id": "Yesterday I nearly ran into Robert in Ginza.",
+      "id": "Kemarin saya hampir bertemu Robert di Ginza.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":4,"category":"nakadaka","mora_count":5,"downstep_mora":4,"contour":"スレチガ＼ウ"}
+},
     {
       "jp": "通りで少年とすれ違った。",
-      "id": "I passed a boy in the street.",
+      "id": "Saya berpapasan dengan seorang anak laki-laki di jalan.",
       "level": "n2",
       "tags": [
         "umum"
@@ -26339,10 +25641,10 @@ window.vocabN2_Verbs = [
   "word": "ずれる",
   "reading": "ずれる",
   "romaji": "zureru",
-  "meaning_id": "me-slide",
+  "meaning_id": "meluncur",
   "meaning_en": "to slide; to slip off; to deviate; to be out of alignment",
   "jlpt": "n2",
-  "pos": "verb-ichidan",
+  "pos": "verb-ru",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -26360,15 +25662,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "ピントがズレている。",
-      "id": "That's a little out of focus.",
+      "id": "Itu sedikit tidak fokus.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":0,"downstep_mora":0,"contour":"￣"}
+},
     {
       "jp": "コンタクトレンズがずれちゃって目が痛いの。",
-      "id": "I hurt my eye when my contact slipped out of place.",
+      "id": "Mataku sakit ketika lensa kontakku terlepas dari tempatnya.",
       "level": "n2",
       "tags": [
         "umum"
@@ -26389,7 +25692,7 @@ window.vocabN2_Verbs = [
   "word": "制作",
   "reading": "せいさく",
   "romaji": "seisaku",
-  "meaning_id": "work (film, book)",
+  "meaning_id": "karya (film, buku)",
   "meaning_en": "work (film, book)",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -26410,15 +25713,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "彼の次の制作は非常に意欲的なミュージカルだった。",
-      "id": "His next production was a very ambitious musical.",
+      "id": "Produksi berikutnya adalah musikal yang sangat ambisius.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"セイサク￣"}
+},
     {
       "jp": "私はあなたが最近、制作部長になった、ということを知り、嬉しく思っています。",
-      "id": "I had the pleasure of learning that you recently became the manager of the production division.",
+      "id": "Saya senang mengetahui bahwa Anda baru saja menjadi manajer divisi produksi.",
       "level": "n2",
       "tags": [
         "umum"
@@ -26439,7 +25743,7 @@ window.vocabN2_Verbs = [
   "word": "製作",
   "reading": "せいさく",
   "romaji": "seisaku",
-  "meaning_id": "manufacture; production",
+  "meaning_id": "manufaktur; produksi",
   "meaning_en": "manufacture; production",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -26460,12 +25764,13 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "この工場では自動車の部品を製作している。",
-      "id": "This factory manufactures automobile parts.",
+      "id": "Pabrik ini memproduksi suku cadang mobil.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"セイサク￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -26481,7 +25786,7 @@ window.vocabN2_Verbs = [
   "word": "清書",
   "reading": "せいしょ",
   "romaji": "seisho",
-  "meaning_id": "clean copy",
+  "meaning_id": "salinan bersih",
   "meaning_en": "clean copy",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -26502,15 +25807,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "作文を清書する必要はありません。",
-      "id": "You don't have to write out a clean copy of your composition.",
+      "id": "Anda tidak perlu menulis salinan lengkap komposisi Anda.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"セイショ￣"}
+},
     {
       "jp": "その原稿は手で清書されていた。",
-      "id": "The manuscript had been written out by hand.",
+      "id": "Naskahnya ditulis dengan tangan.",
       "level": "n2",
       "tags": [
         "umum"
@@ -26531,7 +25837,7 @@ window.vocabN2_Verbs = [
   "word": "清掃",
   "reading": "せいそう",
   "romaji": "seisou",
-  "meaning_id": "cleaning",
+  "meaning_id": "pembersihan",
   "meaning_en": "cleaning",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -26552,12 +25858,13 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "美術館の東の陳列棟は清掃のため閉鎖されていた。",
-      "id": "The museum's eastern gallery was closed for cleaning.",
+      "id": "Galeri timur museum ditutup untuk pembersihan.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"セイソウ￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -26594,15 +25901,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "いかなる動物も、植物なしでは生存できない。",
-      "id": "No animal can exist without plants.",
+      "id": "Tidak ada hewan yang bisa hidup tanpa tumbuhan.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"セイゾン￣"}
+},
     {
       "jp": "その子の生存に対する希望は急速に消えつつある。",
-      "id": "Hope of finding the child alive is fading rapidly.",
+      "id": "Harapan untuk menemukan anak itu hidup memudar dengan cepat.",
       "level": "n2",
       "tags": [
         "umum"
@@ -26623,7 +25931,7 @@ window.vocabN2_Verbs = [
   "word": "生長",
   "reading": "せいちょう",
   "romaji": "seichou",
-  "meaning_id": "growth; increment",
+  "meaning_id": "pertumbuhan; kenaikan",
   "meaning_en": "growth; increment",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -26644,12 +25952,13 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "植物の生長と生産性は、気温と湿度が作り出す入り組んだ関係に敏感に反応する。",
-      "id": "Plant growth and productivity react sharply to a complex combination of temperature and moisture.",
+      "id": "Pertumbuhan dan produktivitas tanaman bereaksi tajam terhadap kombinasi kompleks antara suhu dan kelembapan.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"セイチョウ￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -26686,15 +25995,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "彼は自分の車をよく整備している。",
-      "id": "He maintains his car well.",
+      "id": "Dia merawat mobilnya dengan baik.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":3,"downstep_mora":1,"contour":"セ＼イビ"}
+},
     {
       "jp": "車はいつも整備しておきなさい。",
-      "id": "You should always keep your car in good order.",
+      "id": "Anda harus selalu menjaga mobil Anda dalam keadaan baik.",
       "level": "n2",
       "tags": [
         "umum"
@@ -26736,15 +26046,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "新しい法が成立した。",
-      "id": "A new law has come into existence.",
+      "id": "Sebuah undang-undang baru telah muncul.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"セイリツ￣"}
+},
     {
       "jp": "どうやってあの契約を成立させたんですか。",
-      "id": "How did you pull off that agreement?",
+      "id": "Bagaimana Anda mewujudkan perjanjian itu?",
       "level": "n2",
       "tags": [
         "umum"
@@ -26765,10 +26076,10 @@ window.vocabN2_Verbs = [
   "word": "背負う",
   "reading": "せおう",
   "romaji": "seou",
-  "meaning_id": "me-be burdened with",
+  "meaning_id": "terbebani dengan",
   "meaning_en": "to be burdened with; to carry on back or shoulder",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -26790,61 +26101,12 @@ window.vocabN2_Verbs = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"セオ＼ウ"}
+},
     {
       "jp": "私はその重たい袋を背負って運んだ。",
-      "id": "I carried the heavy bag on my back.",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    }
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "added_v": "v19.3.1-staged-merge",
-  "provenance": "expansion-staged",
-  "jmdict_seq": "",
-  "frequency": 1000
-},
-
-{
-  "id": "vg-n2-01329",
-  "word": "折角",
-  "reading": "せっかく",
-  "romaji": "sekkaku",
-  "meaning_id": "with trouble; at great pains",
-  "meaning_en": "with trouble; at great pains; long-awaited",
-  "jlpt": "n2",
-  "pos": "adverb",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": [
-    "umum",
-    "kehidupan-sehari-hari"
-  ],
-  "register": "formal",
-  "lawan_bicara": [
-    "rekan-kerja",
-    "umum"
-  ],
-  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
-  "conj_type": null,
-  "examples": [
-    {
-      "jp": "せっかく骨を折ったのに、彼は失敗した。",
-      "id": "He has failed after all his labors.",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    },
-    {
-      "jp": "せっかくの苦労もあだになった。",
-      "id": "All my pains went for nothing.",
+      "id": "Aku membawa tas berat di punggungku.",
       "level": "n2",
       "tags": [
         "umum"
@@ -26886,15 +26148,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "飛行機はニューヨークに接近している。",
-      "id": "The plane is approaching New York.",
+      "id": "Pesawat mendekati New York.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"セッキン￣"}
+},
     {
       "jp": "台風９号は四国に接近している。",
-      "id": "Typhoon No.9 is approaching Shikoku.",
+      "id": "Topan No.9 mendekati Shikoku.",
       "level": "n2",
       "tags": [
         "umum"
@@ -26915,7 +26178,7 @@ window.vocabN2_Verbs = [
   "word": "接する",
   "reading": "せっする",
   "romaji": "sessuru",
-  "meaning_id": "me-come in contact with",
+  "meaning_id": "datang dalam kontak dengan",
   "meaning_en": "to come in contact with; to connect; to attend; to receive",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -26936,65 +26199,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "もっと思いやりをもって接してやらないといけませんよ。",
-      "id": "You must treat them with more consideration.",
+      "id": "Anda harus memperlakukan mereka dengan lebih hati-hati.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"セッス＼ル"}
+},
     {
       "jp": "ドイツはフランスと境を接している。",
-      "id": "Germany borders on France.",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    }
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "added_v": "v19.3.1-staged-merge",
-  "provenance": "expansion-staged",
-  "jmdict_seq": "",
-  "frequency": 1000
-},
-
-{
-  "id": "vg-n2-01333",
-  "word": "せっせと",
-  "reading": "せっせと",
-  "romaji": "sesseto",
-  "meaning_id": "diligently; assiduously",
-  "meaning_en": "diligently; assiduously; industriously; beavering away",
-  "jlpt": "n2",
-  "pos": "adverb",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": [
-    "umum",
-    "kehidupan-sehari-hari"
-  ],
-  "register": "formal",
-  "lawan_bicara": [
-    "rekan-kerja",
-    "umum"
-  ],
-  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
-  "conj_type": null,
-  "examples": [
-    {
-      "jp": "彼女はせっせと編み物に精を出していた。",
-      "id": "She was busy with her knitting.",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    },
-    {
-      "jp": "彼はせっせと試験準備をしている。",
-      "id": "Dia busy preparing for the examination.",
+      "id": "Jerman berbatasan dengan Perancis.",
       "level": "n2",
       "tags": [
         "umum"
@@ -27036,62 +26250,13 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "インターネットの接続が遮断された。",
-      "id": "My internet connection was cut off.",
+      "id": "Koneksi internet saya terputus.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "added_v": "v19.3.1-staged-merge",
-  "provenance": "expansion-staged",
-  "jmdict_seq": "",
-  "frequency": 1000
-},
-
-{
-  "id": "vg-n2-01336",
-  "word": "ぜひとも",
-  "reading": "ぜひとも",
-  "romaji": "zehitomo",
-  "meaning_id": "by all means (with sense of not taking no for an answer)",
-  "meaning_en": "by all means (with sense of not taking no for an answer)",
-  "jlpt": "n2",
-  "pos": "adverb",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": [
-    "umum",
-    "kehidupan-sehari-hari"
-  ],
-  "register": "formal",
-  "lawan_bicara": [
-    "rekan-kerja",
-    "umum"
-  ],
-  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
-  "conj_type": null,
-  "examples": [
-    {
-      "jp": "私は是非ともその計画を実行したい。",
-      "id": "Saya ingin execute the plan by all means.",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    },
-    {
-      "jp": "君は、是非ともその本を読むべきだ。",
-      "id": "You should by all means read the book.",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"セツゾク￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -27107,10 +26272,10 @@ window.vocabN2_Verbs = [
   "word": "迫る",
   "reading": "せまる",
   "romaji": "semaru",
-  "meaning_id": "me-draw near",
+  "meaning_id": "mendekat",
   "meaning_en": "to draw near; to press",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -27128,15 +26293,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "彼はしつこく退職を迫られました。",
-      "id": "He was hounded into quitting.",
+      "id": "Dia diburu untuk berhenti.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"セマ＼ル"}
+},
     {
       "jp": "時間が刻々と迫っている。",
-      "id": "Time is pressing every moment.",
+      "id": "Waktu semakin mendesak setiap saat.",
       "level": "n2",
       "tags": [
         "umum"
@@ -27157,10 +26323,10 @@ window.vocabN2_Verbs = [
   "word": "攻める",
   "reading": "せめる",
   "romaji": "semeru",
-  "meaning_id": "me-attack",
+  "meaning_id": "menyerang",
   "meaning_en": "to attack; to assault",
   "jlpt": "n2",
-  "pos": "verb-ichidan",
+  "pos": "verb-ru",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -27178,12 +26344,13 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "彼は私にその問題をいかに攻めるべきかについて教えてくれた。",
-      "id": "He enlightened me on how I should attack the subject.",
+      "id": "Dia mencerahkan saya tentang bagaimana saya harus menyerang subjek tersebut.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"セメ＼ル"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -27199,7 +26366,7 @@ window.vocabN2_Verbs = [
   "word": "専制",
   "reading": "せんせい",
   "romaji": "sensei",
-  "meaning_id": "despotism; autocracy",
+  "meaning_id": "despotisme; otokrasi",
   "meaning_en": "despotism; autocracy",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -27224,92 +26391,9 @@ window.vocabN2_Verbs = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "added_v": "v19.3.1-staged-merge",
-  "provenance": "expansion-staged",
-  "jmdict_seq": "",
-  "frequency": 1000
-},
-
-{
-  "id": "vg-n2-01349",
-  "word": "先々月",
-  "reading": "せんせんげつ",
-  "romaji": "sensengetsu",
-  "meaning_id": "month before last",
-  "meaning_en": "month before last",
-  "jlpt": "n2",
-  "pos": "adverb",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": [
-    "umum",
-    "kehidupan-sehari-hari"
-  ],
-  "register": "formal",
-  "lawan_bicara": [
-    "rekan-kerja",
-    "umum"
-  ],
-  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
-  "conj_type": null,
-  "examples": [
-    {
-      "jp": "先々月を使います。",
-      "id": "Menggunakan month before last.",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    }
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "added_v": "v19.3.1-staged-merge",
-  "provenance": "expansion-staged",
-  "jmdict_seq": "",
-  "frequency": 1000
-},
-
-{
-  "id": "vg-n2-01350",
-  "word": "先々週",
-  "reading": "せんせんしゅう",
-  "romaji": "sensenshuu",
-  "meaning_id": "week before last",
-  "meaning_en": "week before last",
-  "jlpt": "n2",
-  "pos": "adverb",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": [
-    "umum",
-    "kehidupan-sehari-hari"
-  ],
-  "register": "formal",
-  "lawan_bicara": [
-    "rekan-kerja",
-    "umum"
-  ],
-  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
-  "conj_type": null,
-  "examples": [
-    {
-      "jp": "先々週を使います。",
-      "id": "Menggunakan week before last.",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"センセイ￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -27325,7 +26409,7 @@ window.vocabN2_Verbs = [
   "word": "宣伝",
   "reading": "せんでん",
   "romaji": "senden",
-  "meaning_id": "propaganda; publicity",
+  "meaning_id": "propaganda; publisitas",
   "meaning_en": "propaganda; publicity",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -27346,15 +26430,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "その商品はテレビで宣伝されている。",
-      "id": "The goods are advertised on TV.",
+      "id": "Barangnya diiklankan di TV.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"センデン￣"}
+},
     {
       "jp": "この事件は会社のいい宣伝になった。",
-      "id": "This event was good publicity for the company.",
+      "id": "Acara ini merupakan publisitas yang baik bagi perusahaan.",
       "level": "n2",
       "tags": [
         "umum"
@@ -27396,15 +26481,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "両者の間には、あったとしても、相違はごくわずかである。",
-      "id": "Ada little, if any, difference between the two.",
+      "id": "Ada sedikit, jika ada, perbedaan antara keduanya.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ソウイ￣"}
+},
     {
       "jp": "その相違は私にはそれほど重要でない。",
-      "id": "The difference is not so great for me.",
+      "id": "Perbedaannya bagi saya tidak terlalu besar.",
       "level": "n2",
       "tags": [
         "umum"
@@ -27425,7 +26511,7 @@ window.vocabN2_Verbs = [
   "word": "増減",
   "reading": "ぞうげん",
   "romaji": "zougen",
-  "meaning_id": "increase and decrease; fluctuation",
+  "meaning_id": "menambah dan mengurangi; fluktuasi",
   "meaning_en": "increase and decrease; fluctuation",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -27446,12 +26532,13 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "この数年、体重は増減していません。",
-      "id": "My weight has not increased or decreased for several years.",
+      "id": "Berat badan saya tidak bertambah atau berkurang selama beberapa tahun.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ゾウゲン￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -27488,15 +26575,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "この画家は美しい絵画を創作する。",
-      "id": "This artist creates beautiful paintings.",
+      "id": "Seniman ini menciptakan lukisan yang indah.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ソウサク￣"}
+},
     {
       "jp": "それは彼女の創作だろう。",
-      "id": "I think she made up that story.",
+      "id": "Saya pikir dia mengarang cerita itu.",
       "level": "n2",
       "tags": [
         "umum"
@@ -27517,7 +26605,7 @@ window.vocabN2_Verbs = [
   "word": "造船",
   "reading": "ぞうせん",
   "romaji": "zousen",
-  "meaning_id": "shipbuilding",
+  "meaning_id": "pembuatan kapal",
   "meaning_en": "shipbuilding",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -27542,8 +26630,9 @@ window.vocabN2_Verbs = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ゾウセン￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -27559,7 +26648,7 @@ window.vocabN2_Verbs = [
   "word": "増大",
   "reading": "ぞうだい",
   "romaji": "zoudai",
-  "meaning_id": "enlargement",
+  "meaning_id": "pembesaran",
   "meaning_en": "enlargement",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -27580,65 +26669,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "貿易が国富を増大させた。",
-      "id": "Trade increased the country's wealth.",
+      "id": "Perdagangan meningkatkan kekayaan negara.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ゾウダイ￣"}
+},
     {
       "jp": "彼らは軍事予算を増大させようとした。",
-      "id": "They intended to increase the military budget.",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    }
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "added_v": "v19.3.1-staged-merge",
-  "provenance": "expansion-staged",
-  "jmdict_seq": "",
-  "frequency": 1000
-},
-
-{
-  "id": "vg-n2-01370",
-  "word": "そうっと",
-  "reading": "そうっと",
-  "romaji": "soutto",
-  "meaning_id": "softly; gently",
-  "meaning_en": "softly; gently; quietly; lightly",
-  "jlpt": "n2",
-  "pos": "adverb",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": [
-    "umum",
-    "kehidupan-sehari-hari"
-  ],
-  "register": "formal",
-  "lawan_bicara": [
-    "rekan-kerja",
-    "umum"
-  ],
-  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
-  "conj_type": null,
-  "examples": [
-    {
-      "jp": "赤ちゃんの目を覚まさないように、そうっと歩いた。",
-      "id": "I walked softly for fear of waking the baby.",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    },
-    {
-      "jp": "僕はそうっと自分の寝室に行った。",
-      "id": "I went up to my bedroom on tiptoe.",
+      "id": "Mereka bermaksud meningkatkan anggaran militer.",
       "level": "n2",
       "tags": [
         "umum"
@@ -27659,7 +26699,7 @@ window.vocabN2_Verbs = [
   "word": "送別",
   "reading": "そうべつ",
   "romaji": "soubetsu",
-  "meaning_id": "farewell; send-off",
+  "meaning_id": "perpisahan; pengiriman",
   "meaning_en": "farewell; send-off",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -27680,12 +26720,13 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "雪のため、鈴木氏の送別パーティーに出席できなかった。",
-      "id": "The storm prevented me from attending the farewell party in honor of Mr Suzuki.",
+      "id": "Badai menghalangi saya menghadiri pesta perpisahan untuk menghormati Tuan Suzuki.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ソウベツ￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -27701,7 +26742,7 @@ window.vocabN2_Verbs = [
   "word": "属する",
   "reading": "ぞくする",
   "romaji": "zokusuru",
-  "meaning_id": "me-belong to",
+  "meaning_id": "milik",
   "meaning_en": "to belong to; to come under; to be affiliated with; to be subject to",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -27722,65 +26763,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "彼女はテニス部に属している。",
-      "id": "She belongs to the tennis club.",
+      "id": "Dia anggota klub tenis.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"ゾクス＼ル"}
+},
     {
       "jp": "オニユリはユリ科に属する１つの種である。",
-      "id": "Tiger lilies are one species of the lily family.",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    }
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "added_v": "v19.3.1-staged-merge",
-  "provenance": "expansion-staged",
-  "jmdict_seq": "",
-  "frequency": 1000
-},
-
-{
-  "id": "vg-n2-01376",
-  "word": "続々",
-  "reading": "ぞくぞく",
-  "romaji": "zokuzoku",
-  "meaning_id": "successively; one after another",
-  "meaning_en": "successively; one after another",
-  "jlpt": "n2",
-  "pos": "adverb",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": [
-    "umum",
-    "kehidupan-sehari-hari"
-  ],
-  "register": "formal",
-  "lawan_bicara": [
-    "rekan-kerja",
-    "umum"
-  ],
-  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
-  "conj_type": null,
-  "examples": [
-    {
-      "jp": "劇場から続々と人が出てきた。",
-      "id": "A stream of people came out of the theater.",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    },
-    {
-      "jp": "今私の家の付近に住宅が続々建っている。",
-      "id": "In my neighborhood, houses are now being built one after another.",
+      "id": "Bunga lili harimau adalah salah satu spesies dari keluarga lily.",
       "level": "n2",
       "tags": [
         "umum"
@@ -27801,7 +26793,7 @@ window.vocabN2_Verbs = [
   "word": "速達",
   "reading": "そくたつ",
   "romaji": "sokutatsu",
-  "meaning_id": "express; special delivery",
+  "meaning_id": "mengungkapkan; pengiriman khusus",
   "meaning_en": "express; special delivery",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -27822,15 +26814,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "これを速達で出してください。",
-      "id": "Send this by special delivery.",
+      "id": "Kirim ini dengan pengiriman khusus.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ソクタツ￣"}
+},
     {
       "jp": "手紙を速達で送ってください。",
-      "id": "Tolong send the letter by express.",
+      "id": "Tolong kirimkan surat itu melalui pos kilat.",
       "level": "n2",
       "tags": [
         "umum"
@@ -27851,7 +26844,7 @@ window.vocabN2_Verbs = [
   "word": "測定",
   "reading": "そくてい",
   "romaji": "sokutei",
-  "meaning_id": "measurement",
+  "meaning_id": "pengukuran",
   "meaning_en": "measurement",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -27872,15 +26865,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "測定においては正確さは欠かせないものである。",
-      "id": "Precision in measurement is a necessity.",
+      "id": "Ketepatan dalam pengukuran adalah sebuah keniscayaan.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ソクテイ￣"}
+},
     {
       "jp": "速度を測定する方法はいくつかある。",
-      "id": "Ada several ways to measure speed.",
+      "id": "Ada beberapa cara untuk mengukur kecepatan.",
       "level": "n2",
       "tags": [
         "umum"
@@ -27901,7 +26895,7 @@ window.vocabN2_Verbs = [
   "word": "測量",
   "reading": "そくりょう",
   "romaji": "sokuryou",
-  "meaning_id": "measurement; surveying",
+  "meaning_id": "pengukuran; survei",
   "meaning_en": "measurement; surveying",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -27922,62 +26916,13 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "英国の測量法では４クオートは１ガロンだ。",
-      "id": "In the imperial measurement system, four quarts equals one gallon.",
+      "id": "Dalam sistem pengukuran imperial, empat liter sama dengan satu galon.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "added_v": "v19.3.1-staged-merge",
-  "provenance": "expansion-staged",
-  "jmdict_seq": "",
-  "frequency": 1000
-},
-
-{
-  "id": "vg-n2-01385",
-  "word": "そのうえ",
-  "reading": "そのうえ",
-  "romaji": "sonoue",
-  "meaning_id": "in addition; furthermore",
-  "meaning_en": "in addition; furthermore",
-  "jlpt": "n2",
-  "pos": "adverb",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": [
-    "umum",
-    "kehidupan-sehari-hari"
-  ],
-  "register": "formal",
-  "lawan_bicara": [
-    "rekan-kerja",
-    "umum"
-  ],
-  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
-  "conj_type": null,
-  "examples": [
-    {
-      "jp": "この本はおもしろい、その上、非常にためになる。",
-      "id": "This book is interesting and, what is more, very instructive.",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    },
-    {
-      "jp": "その上さらに５ドル払った。",
-      "id": "I paid five dollars in addition.",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ソクリョウ￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -27993,10 +26938,10 @@ window.vocabN2_Verbs = [
   "word": "剃る",
   "reading": "そる",
   "romaji": "soru",
-  "meaning_id": "me-shave",
+  "meaning_id": "mencukur",
   "meaning_en": "to shave",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -28014,15 +26959,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "お父さんがバスルームでひげを剃っている。",
-      "id": "Dad is shaving in the bathroom.",
+      "id": "Ayah sedang bercukur di kamar mandi.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":2,"downstep_mora":1,"contour":"ソ＼ル"}
+},
     {
       "jp": "出かける前にヒゲを剃らなくては。",
-      "id": "I've got to shave before leaving.",
+      "id": "Aku harus bercukur sebelum berangkat.",
       "level": "n2",
       "tags": [
         "umum"
@@ -28043,10 +26989,10 @@ window.vocabN2_Verbs = [
   "word": "反る",
   "reading": "そる",
   "romaji": "soru",
-  "meaning_id": "me-warp",
+  "meaning_id": "melengkung",
   "meaning_en": "to warp; to be warped; to curve",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -28064,12 +27010,13 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "反るを使います。",
-      "id": "Menggunakan me-warp.",
+      "id": "Menggunakan melengkung.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":2,"downstep_mora":1,"contour":"ソ＼ル"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -28085,10 +27032,10 @@ window.vocabN2_Verbs = [
   "word": "逸れる",
   "reading": "それる",
   "romaji": "soreru",
-  "meaning_id": "me-stray  from subject",
+  "meaning_id": "menyimpang dari subjek",
   "meaning_en": "to stray (turn) from subject; to get lost; to go astray",
   "jlpt": "n2",
-  "pos": "verb-ichidan",
+  "pos": "verb-ru",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -28106,15 +27053,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "本題からそれないようにしましょう。",
-      "id": "Let's not deviate from the subject.",
+      "id": "Jangan menyimpang dari topik pembicaraan.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"ソレ＼ル"}
+},
     {
       "jp": "そのために彼の注意がその光景からそれた。",
-      "id": "And thus his attention was distracted from the sight.",
+      "id": "Dan dengan demikian perhatiannya teralihkan dari pemandangan itu.",
       "level": "n2",
       "tags": [
         "umum"
@@ -28135,10 +27083,10 @@ window.vocabN2_Verbs = [
   "word": "揃う",
   "reading": "そろう",
   "romaji": "sorou",
-  "meaning_id": "me-become complete",
+  "meaning_id": "menjadi lengkap",
   "meaning_en": "to become complete; to be equal; to be all present; to gather",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -28156,15 +27104,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "この手袋は両方がそろっていない。",
-      "id": "Their gloves are not in pairs.",
+      "id": "Sarung tangan mereka tidak berpasangan.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"ソロ＼ウ"}
+},
     {
       "jp": "この図書館には中国語の本がかなりそろっている。",
-      "id": "This library has a large collection of Chinese books.",
+      "id": "Perpustakaan ini memiliki banyak koleksi buku berbahasa Mandarin.",
       "level": "n2",
       "tags": [
         "umum"
@@ -28185,10 +27134,10 @@ window.vocabN2_Verbs = [
   "word": "揃える",
   "reading": "そろえる",
   "romaji": "soroeru",
-  "meaning_id": "me-put things in order",
+  "meaning_id": "mengatur segala sesuatunya",
   "meaning_en": "to put things in order; to arrange; to make uniform; to get something ready",
   "jlpt": "n2",
-  "pos": "verb-ichidan",
+  "pos": "verb-ru",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -28206,15 +27155,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "パーティーには食べ物や飲物が豊富に揃えて有った。",
-      "id": "There was food and drink in abundance at the party.",
+      "id": "Makanan dan minuman berlimpah di pesta itu.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"ソロエ＼ル"}
+},
     {
       "jp": "そのアパートはビクトリア朝風の家具を揃えてあった。",
-      "id": "The apartment was furnished in the Victorian style.",
+      "id": "Apartemen itu dilengkapi dengan gaya Victoria.",
       "level": "n2",
       "tags": [
         "umum"
@@ -28238,7 +27188,7 @@ window.vocabN2_Verbs = [
   "meaning_id": "mengetahui / kenal",
   "meaning_en": "(humble) to know",
   "jlpt": "n2",
-  "pos": "verb-ichidan",
+  "pos": "verb-ru",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -28260,61 +27210,12 @@ window.vocabN2_Verbs = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"ゾンジ＼ル"}
+},
     {
       "jp": "ご援助できないのが残念に存じます。",
-      "id": "I regret that I can't help you.",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    }
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "added_v": "v19.3.1-staged-merge",
-  "provenance": "expansion-staged",
-  "jmdict_seq": "",
-  "frequency": 1000
-},
-
-{
-  "id": "vg-n2-01406",
-  "word": "大して",
-  "reading": "たいして",
-  "romaji": "taishite",
-  "meaning_id": "(not so) much; (not) very",
-  "meaning_en": "(not so) much; (not) very",
-  "jlpt": "n2",
-  "pos": "adverb",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": [
-    "umum",
-    "kehidupan-sehari-hari"
-  ],
-  "register": "formal",
-  "lawan_bicara": [
-    "rekan-kerja",
-    "umum"
-  ],
-  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
-  "conj_type": null,
-  "examples": [
-    {
-      "jp": "彼は大して妻の話し相手にはならない。",
-      "id": "Dia not much of a companion for his wife.",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    },
-    {
-      "jp": "彼が来るかどうかは大して重要ではない。",
-      "id": "It makes no difference whether he will come or not.",
+      "id": "Saya menyesal tidak dapat membantu Anda.",
       "level": "n2",
       "tags": [
         "umum"
@@ -28356,15 +27257,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "赤は青と美しい対照をなす。",
-      "id": "Red contrasts well with blue.",
+      "id": "Merah sangat kontras dengan biru.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"タイショウ￣"}
+},
     {
       "jp": "その二つの考えの対照は非常に際立っている。",
-      "id": "The contrast between the two ideas is very marked.",
+      "id": "Kontras antara kedua gagasan ini sangat mencolok.",
       "level": "n2",
       "tags": [
         "umum"
@@ -28410,111 +27312,12 @@ window.vocabN2_Verbs = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"タイソウ￣"}
+},
     {
       "jp": "彼は体操が得意だ。",
       "id": "Dia good at gymnastics.",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    }
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "added_v": "v19.3.1-staged-merge",
-  "provenance": "expansion-staged",
-  "jmdict_seq": "",
-  "frequency": 1000
-},
-
-{
-  "id": "vg-n2-01412",
-  "word": "大層",
-  "reading": "たいそう",
-  "romaji": "taisou",
-  "meaning_id": "very much; exaggerated",
-  "meaning_en": "very much; exaggerated; very fine",
-  "jlpt": "n2",
-  "pos": "adverb",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": [
-    "umum",
-    "kehidupan-sehari-hari"
-  ],
-  "register": "formal",
-  "lawan_bicara": [
-    "rekan-kerja",
-    "umum"
-  ],
-  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
-  "conj_type": null,
-  "examples": [
-    {
-      "jp": "ロシア語は大層学びにくい。",
-      "id": "Russian is very difficult to learn.",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    },
-    {
-      "jp": "彼女はおばあちゃんをたいそう大事にする。",
-      "id": "Dia very attentive to her grandmother.",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    }
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "added_v": "v19.3.1-staged-merge",
-  "provenance": "expansion-staged",
-  "jmdict_seq": "",
-  "frequency": 1000
-},
-
-{
-  "id": "vg-n2-01413",
-  "word": "大分",
-  "reading": "だいぶん",
-  "romaji": "daibun",
-  "meaning_id": "considerably; greatly",
-  "meaning_en": "considerably; greatly; a lot",
-  "jlpt": "n2",
-  "pos": "adverb",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": [
-    "umum",
-    "kehidupan-sehari-hari"
-  ],
-  "register": "formal",
-  "lawan_bicara": [
-    "rekan-kerja",
-    "umum"
-  ],
-  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
-  "conj_type": null,
-  "examples": [
-    {
-      "jp": "これで手間がだいぶ省けるだろう。",
-      "id": "This will save you a lot of trouble.",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    },
-    {
-      "jp": "よく眠ったらだいぶ気分がよくなった。",
-      "id": "After sleeping well, I felt much better.",
       "level": "n2",
       "tags": [
         "umum"
@@ -28535,7 +27338,7 @@ window.vocabN2_Verbs = [
   "word": "ダイヤル",
   "reading": "ダイヤル",
   "romaji": "daiyaru",
-  "meaning_id": "dial",
+  "meaning_id": "panggil",
   "meaning_en": "dial",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -28556,65 +27359,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "彼は自転車のロックのダイヤルを回した。",
-      "id": "He turned the dial on the bicycle lock.",
+      "id": "Dia memutar tombol kunci sepeda.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":0,"downstep_mora":0,"contour":"￣"}
+},
     {
       "jp": "直接ダイヤルできますか。",
-      "id": "Can I dial direct?",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    }
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "added_v": "v19.3.1-staged-merge",
-  "provenance": "expansion-staged",
-  "jmdict_seq": "",
-  "frequency": 1000
-},
-
-{
-  "id": "vg-n2-01421",
-  "word": "絶えず",
-  "reading": "たえず",
-  "romaji": "taezu",
-  "meaning_id": "constantly",
-  "meaning_en": "constantly",
-  "jlpt": "n2",
-  "pos": "adverb",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": [
-    "umum",
-    "kehidupan-sehari-hari"
-  ],
-  "register": "formal",
-  "lawan_bicara": [
-    "rekan-kerja",
-    "umum"
-  ],
-  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
-  "conj_type": null,
-  "examples": [
-    {
-      "jp": "彼らは絶えずけんかばかりしていた。",
-      "id": "They were constantly quarreling.",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    },
-    {
-      "jp": "私は絶えず人の名前を忘れて困る。",
-      "id": "I am constantly forgetting people's names.",
+      "id": "Bisakah saya menelepon langsung?",
       "level": "n2",
       "tags": [
         "umum"
@@ -28635,10 +27389,10 @@ window.vocabN2_Verbs = [
   "word": "高める",
   "reading": "たかめる",
   "romaji": "takameru",
-  "meaning_id": "me-raise",
+  "meaning_id": "menaikkan",
   "meaning_en": "to raise; to lift; to boost",
   "jlpt": "n2",
-  "pos": "verb-ichidan",
+  "pos": "verb-ru",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -28656,15 +27410,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "その小説は彼の名声を更に高めた。",
-      "id": "The novel added to his reputation.",
+      "id": "Novel itu menambah reputasinya.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"タカメ＼ル"}
+},
     {
       "jp": "社長は従業員に生産性を高めるように命じた。",
-      "id": "The president instructed the employees to improve their productivity.",
+      "id": "Presiden menginstruksikan para pegawai untuk meningkatkan produktivitasnya.",
       "level": "n2",
       "tags": [
         "umum"
@@ -28685,10 +27440,10 @@ window.vocabN2_Verbs = [
   "word": "耕す",
   "reading": "たがやす",
   "romaji": "tagayasu",
-  "meaning_id": "me-till",
+  "meaning_id": "sampai",
   "meaning_en": "to till; to plow; to cultivate",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -28706,15 +27461,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "農家の人達は鋤で土を耕す。",
-      "id": "Farmers turn up the soil with plows.",
+      "id": "Para petani mengolah tanah dengan bajak.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"タガヤ＼ス"}
+},
     {
       "jp": "その農民は２００エーカーの農園を耕した。",
-      "id": "That farmer cultivated a 200 acre plantation.",
+      "id": "Petani itu mengolah perkebunan seluas 200 hektar.",
       "level": "n2",
       "tags": [
         "umum"
@@ -28735,10 +27491,10 @@ window.vocabN2_Verbs = [
   "word": "炊く",
   "reading": "たく",
   "romaji": "taku",
-  "meaning_id": "me-boil",
+  "meaning_id": "mendidih",
   "meaning_en": "to boil; to cook",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -28760,11 +27516,12 @@ window.vocabN2_Verbs = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":2,"downstep_mora":0,"contour":"タク￣"}
+},
     {
       "jp": "ご飯の上手なたき方を知っていますか。",
-      "id": "Do you know how to cook rice well?",
+      "id": "Tahukah Anda cara memasak nasi dengan baik?",
       "level": "n2",
       "tags": [
         "umum"
@@ -28785,10 +27542,10 @@ window.vocabN2_Verbs = [
   "word": "焚く",
   "reading": "たく",
   "romaji": "taku",
-  "meaning_id": "me-burn",
+  "meaning_id": "terbakar",
   "meaning_en": "to burn; to kindle; to build a fire",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -28806,15 +27563,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "とても寒かったので火をたいた。",
-      "id": "It was so cold that we made a fire.",
+      "id": "Cuacanya sangat dingin sehingga kami membuat api.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":2,"downstep_mora":0,"contour":"タク￣"}
+},
     {
       "jp": "私たちは火をずっとたいておいた。",
-      "id": "We kept the fire burning.",
+      "id": "Kami membiarkan api tetap menyala.",
       "level": "n2",
       "tags": [
         "umum"
@@ -28835,10 +27593,10 @@ window.vocabN2_Verbs = [
   "word": "蓄える",
   "reading": "たくわえる",
   "romaji": "takuwaeru",
-  "meaning_id": "me-store",
+  "meaning_id": "toko",
   "meaning_en": "to store; to lay in stock",
   "jlpt": "n2",
-  "pos": "verb-ichidan",
+  "pos": "verb-ru",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -28856,15 +27614,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "農夫たちは冬に備えて野菜を蓄える。",
-      "id": "Farmers store vegetables for the winter.",
+      "id": "Petani menyimpan sayuran untuk musim dingin.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":4,"category":"nakadaka","mora_count":5,"downstep_mora":4,"contour":"タクワエ＼ル"}
+},
     {
       "jp": "まさかの時のために蓄えなさい。",
-      "id": "Save for a rainy day.",
+      "id": "Simpan untuk hari hujan.",
       "level": "n2",
       "tags": [
         "umum"
@@ -28885,10 +27644,10 @@ window.vocabN2_Verbs = [
   "word": "助かる",
   "reading": "たすかる",
   "romaji": "tasukaru",
-  "meaning_id": "me-be saved",
+  "meaning_id": "diselamatkan",
   "meaning_en": "to be saved; to be rescued; to survive; to be helpful",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -28910,11 +27669,12 @@ window.vocabN2_Verbs = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"タスカ＼ル"}
+},
     {
       "jp": "私は危ないところを助かりました。",
-      "id": "I had a narrow escape.",
+      "id": "Aku punya jalan keluar yang sempit.",
       "level": "n2",
       "tags": [
         "umum"
@@ -28935,10 +27695,10 @@ window.vocabN2_Verbs = [
   "word": "畳む",
   "reading": "たたむ",
   "romaji": "tatamu",
-  "meaning_id": "me-fold",
+  "meaning_id": "lipat",
   "meaning_en": "to fold (clothes)",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -28956,15 +27716,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "彼女はハンカチをきちんと畳んだ。",
-      "id": "She folded her handkerchief neatly.",
+      "id": "Dia melipat saputangannya dengan rapi.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"タタム￣"}
+},
     {
       "jp": "ケンは毛布を二つに畳んだ。",
-      "id": "Ken folded the blanket in half.",
+      "id": "Ken melipat selimut menjadi dua.",
       "level": "n2",
       "tags": [
         "umum"
@@ -28985,10 +27746,10 @@ window.vocabN2_Verbs = [
   "word": "立ち止まる",
   "reading": "たちどまる",
   "romaji": "tachidomaru",
-  "meaning_id": "me-stop",
+  "meaning_id": "berhenti",
   "meaning_en": "to stop; to halt; to stand still",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -29006,65 +27767,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "彼は立ち止まってポスターをのぞき込んだ。",
-      "id": "He paused to look at the poster.",
+      "id": "Dia berhenti sejenak untuk melihat poster itu.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":5,"downstep_mora":0,"contour":"タチドマル￣"}
+},
     {
       "jp": "旅人は立ち止まって私に道を聞いた。",
-      "id": "The traveler stopped to ask me the way.",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    }
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "added_v": "v19.3.1-staged-merge",
-  "provenance": "expansion-staged",
-  "jmdict_seq": "",
-  "frequency": 1000
-},
-
-{
-  "id": "vg-n2-01434",
-  "word": "たちまち",
-  "reading": "たちまち",
-  "romaji": "tachimachi",
-  "meaning_id": "at once; in a moment",
-  "meaning_en": "at once; in a moment; suddenly; all at once",
-  "jlpt": "n2",
-  "pos": "adverb",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": [
-    "umum",
-    "kehidupan-sehari-hari"
-  ],
-  "register": "formal",
-  "lawan_bicara": [
-    "rekan-kerja",
-    "umum"
-  ],
-  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
-  "conj_type": null,
-  "examples": [
-    {
-      "jp": "切符はたちまち売り切れた。",
-      "id": "The tickets were sold out in a moment.",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    },
-    {
-      "jp": "私たちはたちまち仲良くなった。",
-      "id": "We immediately became friends.",
+      "id": "Pelancong itu berhenti untuk menanyakan jalannya.",
       "level": "n2",
       "tags": [
         "umum"
@@ -29085,10 +27797,10 @@ window.vocabN2_Verbs = [
   "word": "建つ",
   "reading": "たつ",
   "romaji": "tatsu",
-  "meaning_id": "me-erect",
+  "meaning_id": "tegak",
   "meaning_en": "to erect; to be erected; to be built",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -29106,15 +27818,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "その建物は川のそばに建っていた。",
-      "id": "The building stood beside the river.",
+      "id": "Bangunan itu berdiri di samping sungai.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":2,"downstep_mora":1,"contour":"タ＼ツ"}
+},
     {
       "jp": "私たちの学校はこの村に建っている。",
-      "id": "Our school stands in the village.",
+      "id": "Sekolah kami berdiri di desa.",
       "level": "n2",
       "tags": [
         "umum"
@@ -29135,10 +27848,10 @@ window.vocabN2_Verbs = [
   "word": "発つ",
   "reading": "たつ",
   "romaji": "tatsu",
-  "meaning_id": "me-depart",
+  "meaning_id": "berangkat",
   "meaning_en": "to depart (on a plane, train, etc.)",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -29156,15 +27869,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "来週ヨーロッパに発つ予定です。",
-      "id": "I'm planning to leave for Europe next week.",
+      "id": "Saya berencana berangkat ke Eropa minggu depan.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":2,"downstep_mora":1,"contour":"タ＼ツ"}
+},
     {
       "jp": "彼女がパリに発った日は雨だった。",
-      "id": "The day she started for Paris was rainy.",
+      "id": "Hari dia berangkat ke Paris sedang hujan.",
       "level": "n2",
       "tags": [
         "umum"
@@ -29185,7 +27899,7 @@ window.vocabN2_Verbs = [
   "word": "脱線",
   "reading": "だっせん",
   "romaji": "dassen",
-  "meaning_id": "derailment; digression",
+  "meaning_id": "penggelinciran; penyimpangan",
   "meaning_en": "derailment; digression",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -29206,15 +27920,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "脱線がどんどんエスカレートしていく。",
-      "id": "The digression is escalating more and more.",
+      "id": "Penyimpangan ini semakin meningkat.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ダッセン￣"}
+},
     {
       "jp": "講師は本題から脱線してしまった。",
-      "id": "The speaker wandered away from the subject.",
+      "id": "Pembicara menjauh dari pokok bahasan.",
       "level": "n2",
       "tags": [
         "umum"
@@ -29235,10 +27950,10 @@ window.vocabN2_Verbs = [
   "word": "例える",
   "reading": "たとえる",
   "romaji": "tatoeru",
-  "meaning_id": "me-compare",
+  "meaning_id": "bandingkan",
   "meaning_en": "to compare; to liken; to speak figuratively; to illustrate; to use a simile",
   "jlpt": "n2",
-  "pos": "verb-ichidan",
+  "pos": "verb-ru",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -29256,15 +27971,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "人生はしばしば航海に例えられる。",
-      "id": "Life is often compared to a voyage.",
+      "id": "Hidup sering disamakan dengan perjalanan.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"タトエ＼ル"}
+},
     {
       "jp": "読書は旅に例えることができる。",
-      "id": "Reading a book can be compared to making a journey.",
+      "id": "Membaca buku bisa diibaratkan seperti melakukan sebuah perjalanan.",
       "level": "n2",
       "tags": [
         "umum"
@@ -29285,10 +28001,10 @@ window.vocabN2_Verbs = [
   "word": "だます",
   "reading": "だます",
   "romaji": "damasu",
-  "meaning_id": "me-trick",
+  "meaning_id": "trik",
   "meaning_en": "to trick; to cheat; to deceive",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -29306,15 +28022,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "私は彼女の約束にだまされた。",
-      "id": "I was taken in by her promise.",
+      "id": "Aku termakan oleh janjinya.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"ダマ＼ス"}
+},
     {
       "jp": "彼女はセールスマンにだまされた。",
-      "id": "She was taken in by the salesman.",
+      "id": "Dia dibawa oleh penjual itu.",
       "level": "n2",
       "tags": [
         "umum"
@@ -29335,10 +28052,10 @@ window.vocabN2_Verbs = [
   "word": "溜まる",
   "reading": "たまる",
   "romaji": "tamaru",
-  "meaning_id": "me-collect",
+  "meaning_id": "mengumpulkan",
   "meaning_en": "to collect; to gather; to save",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -29356,15 +28073,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "彼女の目に涙がたまった。",
-      "id": "Tears gathered in her eyes.",
+      "id": "Air mata berkumpul di matanya.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"タマル￣"}
+},
     {
       "jp": "机の上にはほこりがたまっていた。",
-      "id": "Dust had accumulated on the desk.",
+      "id": "Debu menumpuk di meja.",
       "level": "n2",
       "tags": [
         "umum"
@@ -29385,10 +28103,10 @@ window.vocabN2_Verbs = [
   "word": "ためらう",
   "reading": "ためらう",
   "romaji": "tamerau",
-  "meaning_id": "me-hesitate",
+  "meaning_id": "ragu-ragu",
   "meaning_en": "to hesitate",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -29406,15 +28124,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "質問するのをためらわないでください。",
-      "id": "Don't hesitate to ask questions.",
+      "id": "Jangan ragu untuk bertanya.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"タメラ＼ウ"}
+},
     {
       "jp": "彼はしばらくの間ためらいました。",
-      "id": "He hesitated for a while.",
+      "id": "Dia ragu-ragu untuk beberapa saat.",
       "level": "n2",
       "tags": [
         "umum"
@@ -29435,10 +28154,10 @@ window.vocabN2_Verbs = [
   "word": "溜める",
   "reading": "ためる",
   "romaji": "tameru",
-  "meaning_id": "me-amass",
+  "meaning_id": "mengumpulkan",
   "meaning_en": "to amass; to accumulate",
   "jlpt": "n2",
-  "pos": "verb-ichidan",
+  "pos": "verb-ru",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -29460,11 +28179,12 @@ window.vocabN2_Verbs = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"タメル￣"}
+},
     {
       "jp": "彼女は目に涙を溜めていた。",
-      "id": "Her eyes were filled with tears.",
+      "id": "Matanya dipenuhi air mata.",
       "level": "n2",
       "tags": [
         "umum"
@@ -29485,10 +28205,10 @@ window.vocabN2_Verbs = [
   "word": "足る",
   "reading": "たる",
   "romaji": "taru",
-  "meaning_id": "me-be sufficient",
+  "meaning_id": "cukup",
   "meaning_en": "to be sufficient; to be enough",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -29506,12 +28226,13 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "その計画には大いに飽き足らぬところがある。",
-      "id": "The plan is far from satisfactory.",
+      "id": "Rencana tersebut jauh dari memuaskan.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":2,"downstep_mora":0,"contour":"タル￣"}
+},
     {
       "jp": "私たちはお金が足らない。",
       "id": "Kami short of money.",
@@ -29535,7 +28256,7 @@ window.vocabN2_Verbs = [
   "word": "断水",
   "reading": "だんすい",
   "romaji": "dansui",
-  "meaning_id": "water outage",
+  "meaning_id": "pemadaman air",
   "meaning_en": "water outage",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -29556,15 +28277,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "断水しました。",
-      "id": "The water has been cut off.",
+      "id": "Airnya telah terputus.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ダンスイ￣"}
+},
     {
       "jp": "断水になった。",
-      "id": "The water supply has failed.",
+      "id": "Pasokan air telah gagal.",
       "level": "n2",
       "tags": [
         "umum"
@@ -29585,7 +28307,7 @@ window.vocabN2_Verbs = [
   "word": "断定",
   "reading": "だんてい",
   "romaji": "dantei",
-  "meaning_id": "conclusion; decision",
+  "meaning_id": "kesimpulan; keputusan",
   "meaning_en": "conclusion; decision",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -29606,15 +28328,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "今見ることからあわてて断定してはいけない。",
-      "id": "Don't draw a hasty conclusion from what you see now.",
+      "id": "Jangan terburu-buru mengambil kesimpulan dari apa yang Anda lihat sekarang.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ダンテイ￣"}
+},
     {
       "jp": "昨晩の火事は放火と断定された。",
-      "id": "The fire that broke out last night was judged to be caused by arson.",
+      "id": "Kebakaran yang terjadi tadi malam diduga akibat pembakaran.",
       "level": "n2",
       "tags": [
         "umum"
@@ -29635,10 +28358,10 @@ window.vocabN2_Verbs = [
   "word": "誓う",
   "reading": "ちかう",
   "romaji": "chikau",
-  "meaning_id": "me-swear",
+  "meaning_id": "bersumpah",
   "meaning_en": "to swear; to vow; to take an oath; to pledge",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -29656,65 +28379,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "君は聖書に手をのせて誓うべきだ。",
-      "id": "You should swear on the Bible.",
+      "id": "Anda harus bersumpah berdasarkan Alkitab.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"チカウ￣"}
+},
     {
       "jp": "トムは二度と遅刻しないと誓った。",
-      "id": "Tom promised he'd never be late again.",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    }
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "added_v": "v19.3.1-staged-merge",
-  "provenance": "expansion-staged",
-  "jmdict_seq": "",
-  "frequency": 1000
-},
-
-{
-  "id": "vg-n2-01463",
-  "word": "近々",
-  "reading": "ちかぢか",
-  "romaji": "chikajika",
-  "meaning_id": "nearness; before long",
-  "meaning_en": "nearness; before long",
-  "jlpt": "n2",
-  "pos": "adverb",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": [
-    "umum",
-    "kehidupan-sehari-hari"
-  ],
-  "register": "formal",
-  "lawan_bicara": [
-    "rekan-kerja",
-    "umum"
-  ],
-  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
-  "conj_type": null,
-  "examples": [
-    {
-      "jp": "彼の秘密は近々あばかれるだろう。",
-      "id": "His secret will be disclosed soon.",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    },
-    {
-      "jp": "政府は近々、消費税を引き上げるつもりなのかしら。",
-      "id": "Will the government raise the consumption tax soon?",
+      "id": "Tom berjanji dia tidak akan terlambat lagi.",
       "level": "n2",
       "tags": [
         "umum"
@@ -29735,10 +28409,10 @@ window.vocabN2_Verbs = [
   "word": "近付ける",
   "reading": "ちかづける",
   "romaji": "chikazukeru",
-  "meaning_id": "me-bring near",
+  "meaning_id": "mendekat",
   "meaning_en": "to bring near; to put close; to let come near; to associate with",
   "jlpt": "n2",
-  "pos": "verb-ichidan",
+  "pos": "verb-ru",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -29756,15 +28430,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "いすをもっと机に近づけなさい。",
-      "id": "Move the chair nearer to the desk.",
+      "id": "Pindahkan kursi lebih dekat ke meja.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":4,"category":"nakadaka","mora_count":5,"downstep_mora":4,"contour":"チカヅケ＼ル"}
+},
     {
       "jp": "子供を池に近づけないで下さい。",
-      "id": "Keep children away from the pond.",
+      "id": "Jauhkan anak-anak dari kolam.",
       "level": "n2",
       "tags": [
         "umum"
@@ -29785,10 +28460,10 @@ window.vocabN2_Verbs = [
   "word": "近寄る",
   "reading": "ちかよる",
   "romaji": "chikayoru",
-  "meaning_id": "me-approach",
+  "meaning_id": "pendekatan",
   "meaning_en": "to approach; to draw near",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -29806,15 +28481,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "彼は彼女に近寄って握手をした。",
-      "id": "He went up to her and they shook hands.",
+      "id": "Dia menghampirinya dan mereka berjabat tangan.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"チカヨ＼ル"}
+},
     {
       "jp": "その犬に近寄ってはいけない。",
-      "id": "Don't approach the dog.",
+      "id": "Jangan dekati anjing itu.",
       "level": "n2",
       "tags": [
         "umum"
@@ -29835,10 +28511,10 @@ window.vocabN2_Verbs = [
   "word": "ちぎる",
   "reading": "ちぎる",
   "romaji": "chigiru",
-  "meaning_id": "me-cut up fine",
+  "meaning_id": "dipotong dengan baik",
   "meaning_en": "to cut up fine; to pick (fruit)",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -29856,12 +28532,13 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "ちぎるを使います。",
-      "id": "Menggunakan me-cut up fine.",
+      "id": "Menggunakan dipotong dengan baik.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"チギ＼ル"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -29877,10 +28554,10 @@ window.vocabN2_Verbs = [
   "word": "縮む",
   "reading": "ちぢむ",
   "romaji": "chijimu",
-  "meaning_id": "me-shrink",
+  "meaning_id": "menyusut",
   "meaning_en": "to shrink; to be contracted",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -29898,15 +28575,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "セーターが洗濯で縮んだ。",
-      "id": "My sweater shrank in the wash.",
+      "id": "Sweterku menyusut saat dicuci.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"チヂム￣"}
+},
     {
       "jp": "セーターは洗ったら縮んだんだ。",
-      "id": "The sweater shrank in the wash.",
+      "id": "Sweternya menyusut saat dicuci.",
       "level": "n2",
       "tags": [
         "umum"
@@ -29927,10 +28605,10 @@ window.vocabN2_Verbs = [
   "word": "縮める",
   "reading": "ちぢめる",
   "romaji": "chijimeru",
-  "meaning_id": "me-shorten",
+  "meaning_id": "memperpendek",
   "meaning_en": "to shorten; to reduce; to boil down; to shrink",
   "jlpt": "n2",
-  "pos": "verb-ichidan",
+  "pos": "verb-ru",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -29948,12 +28626,13 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "すさんだ生活を送るのは、命を縮めるようなものだ。",
-      "id": "Living life in the fast lane is like burning the candle at both ends.",
+      "id": "Menjalani kehidupan di jalur cepat ibarat menyalakan lilin di kedua ujungnya.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"チヂメル￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -29969,10 +28648,10 @@ window.vocabN2_Verbs = [
   "word": "縮れる",
   "reading": "ちぢれる",
   "romaji": "chijireru",
-  "meaning_id": "me-be wavy",
+  "meaning_id": "bergelombang",
   "meaning_en": "to be wavy; to be curled",
   "jlpt": "n2",
-  "pos": "verb-ichidan",
+  "pos": "verb-ru",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -29990,62 +28669,13 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "パーマをかけたので、髪の毛が縮れています。",
-      "id": "Now I have curly hair, because I had a perm.",
+      "id": "Sekarang saya memiliki rambut keriting karena saya telah dikeriting.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "added_v": "v19.3.1-staged-merge",
-  "provenance": "expansion-staged",
-  "jmdict_seq": "",
-  "frequency": 1000
-},
-
-{
-  "id": "vg-n2-01478",
-  "word": "着々",
-  "reading": "ちゃくちゃく",
-  "romaji": "chakuchaku",
-  "meaning_id": "steadily",
-  "meaning_en": "steadily",
-  "jlpt": "n2",
-  "pos": "adverb",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": [
-    "umum",
-    "kehidupan-sehari-hari"
-  ],
-  "register": "formal",
-  "lawan_bicara": [
-    "rekan-kerja",
-    "umum"
-  ],
-  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
-  "conj_type": null,
-  "examples": [
-    {
-      "jp": "仕事は着々と進んでいる。",
-      "id": "The work is progressing steadily.",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    },
-    {
-      "jp": "工事は着々と完成に近づいている。",
-      "id": "The construction work is steadily nearing completion.",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"チヂレル￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -30061,7 +28691,7 @@ window.vocabN2_Verbs = [
   "word": "抽象",
   "reading": "ちゅうしょう",
   "romaji": "chuushou",
-  "meaning_id": "abstract",
+  "meaning_id": "abstrak",
   "meaning_en": "abstract",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -30086,8 +28716,9 @@ window.vocabN2_Verbs = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"チュウショウ￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -30103,7 +28734,7 @@ window.vocabN2_Verbs = [
   "word": "超過",
   "reading": "ちょうか",
   "romaji": "chouka",
-  "meaning_id": "excess; being more than",
+  "meaning_id": "kelebihan; menjadi lebih dari",
   "meaning_en": "excess; being more than",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -30124,15 +28755,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "その車は制限速度を超過している。",
-      "id": "The car is exceeding the speed limit.",
+      "id": "Mobil melebihi batas kecepatan.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"チョウカ￣"}
+},
     {
       "jp": "収入を超過して支出をするな。",
-      "id": "Never spend in excess of your income.",
+      "id": "Jangan pernah membelanjakan uang melebihi penghasilan Anda.",
       "level": "n2",
       "tags": [
         "umum"
@@ -30174,15 +28806,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "その彫刻は非常に貴重である。",
-      "id": "The sculptures are of great value.",
+      "id": "Patung-patung itu sangat berharga.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"チョウコク￣"}
+},
     {
       "jp": "それらは彫刻の形を取ってきた。",
-      "id": "They have taken the form of sculptures.",
+      "id": "Mereka mengambil bentuk patung.",
       "level": "n2",
       "tags": [
         "umum"
@@ -30224,15 +28857,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "シートを自分に合うように調整してください。",
-      "id": "Tolong adjust the seat to fit you.",
+      "id": "Tolong sesuaikan kursi agar sesuai dengan Anda.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"チョウセイ￣"}
+},
     {
       "jp": "彼はクラリネットを調整してもらった。",
-      "id": "He had his clarinet tuned.",
+      "id": "Dia menyetel klarinetnya.",
       "level": "n2",
       "tags": [
         "umum"
@@ -30274,115 +28908,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "このつまみを回すことでテレビの色を調節できます。",
-      "id": "You can adjust the color on the TV by turning this knob.",
+      "id": "Anda dapat mengatur warna pada TV dengan memutar kenop ini.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"チョウセツ￣"}
+},
     {
       "jp": "彼女はテレビの調節を彼に頼んだ。",
-      "id": "She asked him to adjust the TV set.",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    }
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "added_v": "v19.3.1-staged-merge",
-  "provenance": "expansion-staged",
-  "jmdict_seq": "",
-  "frequency": 1000
-},
-
-{
-  "id": "vg-n2-01498",
-  "word": "直後",
-  "reading": "ちょくご",
-  "romaji": "chokugo",
-  "meaning_id": "immediately following",
-  "meaning_en": "immediately following",
-  "jlpt": "n2",
-  "pos": "adverb",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": [
-    "umum",
-    "kehidupan-sehari-hari"
-  ],
-  "register": "formal",
-  "lawan_bicara": [
-    "rekan-kerja",
-    "umum"
-  ],
-  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
-  "conj_type": null,
-  "examples": [
-    {
-      "jp": "きみが出かけた直後に彼が訪ねてきた。",
-      "id": "He came to see you right after you left.",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    },
-    {
-      "jp": "夏休みの直後に試験です。",
-      "id": "I'll have exams right after the summer holidays.",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    }
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "added_v": "v19.3.1-staged-merge",
-  "provenance": "expansion-staged",
-  "jmdict_seq": "",
-  "frequency": 1000
-},
-
-{
-  "id": "vg-n2-01500",
-  "word": "直前",
-  "reading": "ちょくぜん",
-  "romaji": "chokuzen",
-  "meaning_id": "just before",
-  "meaning_en": "just before",
-  "jlpt": "n2",
-  "pos": "adverb",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": [
-    "umum",
-    "kehidupan-sehari-hari"
-  ],
-  "register": "formal",
-  "lawan_bicara": [
-    "rekan-kerja",
-    "umum"
-  ],
-  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
-  "conj_type": null,
-  "examples": [
-    {
-      "jp": "試合の直前にはいつもあがっています。",
-      "id": "I always get nervous just before a match.",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    },
-    {
-      "jp": "私が電話したとき、ボブは出かける直前だった。",
-      "id": "Bob was on the point of leaving when I rang him up.",
+      "id": "Dia memintanya untuk menyesuaikan TV.",
       "level": "n2",
       "tags": [
         "umum"
@@ -30403,7 +28938,7 @@ window.vocabN2_Verbs = [
   "word": "直通",
   "reading": "ちょくつう",
   "romaji": "chokutsuu",
-  "meaning_id": "direct communication",
+  "meaning_id": "komunikasi langsung",
   "meaning_en": "direct communication",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -30424,15 +28959,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "私達は大阪からロサンゼルスまで直通で飛んでいった。",
-      "id": "We flew nonstop from Osaka to Los Angeles.",
+      "id": "Kami terbang nonstop dari Osaka ke Los Angeles.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"チョクツウ￣"}
+},
     {
       "jp": "ダイヤル直通ですか。",
-      "id": "Can I dial directly?",
+      "id": "Bisakah saya menelepon langsung?",
       "level": "n2",
       "tags": [
         "umum"
@@ -30453,7 +28989,7 @@ window.vocabN2_Verbs = [
   "word": "貯蔵",
   "reading": "ちょぞう",
   "romaji": "chozou",
-  "meaning_id": "storage; preservation",
+  "meaning_id": "penyimpanan; kelestarian",
   "meaning_en": "storage; preservation",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -30478,8 +29014,9 @@ window.vocabN2_Verbs = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"チョゾウ￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -30495,10 +29032,10 @@ window.vocabN2_Verbs = [
   "word": "散らかす",
   "reading": "ちらかす",
   "romaji": "chirakasu",
-  "meaning_id": "me-scatter around",
+  "meaning_id": "tersebar di sekitar",
   "meaning_en": "to scatter around; to leave untidy",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -30516,15 +29053,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "お前の物をその辺りに散らかすな。",
-      "id": "Don't scatter your things about.",
+      "id": "Jangan menyebarkan barang-barang Anda.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"チラカス￣"}
+},
     {
       "jp": "浴室を散らかしっぱなしにしないで。",
-      "id": "Don't leave the bathroom in such a mess.",
+      "id": "Jangan tinggalkan kamar mandi dalam keadaan berantakan.",
       "level": "n2",
       "tags": [
         "umum"
@@ -30545,10 +29083,10 @@ window.vocabN2_Verbs = [
   "word": "散らかる",
   "reading": "ちらかる",
   "romaji": "chirakaru",
-  "meaning_id": "me-be in disorder",
+  "meaning_id": "berada dalam kekacauan",
   "meaning_en": "to be in disorder; to lie scattered around",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -30566,15 +29104,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "部屋は散らかり放題だった。",
-      "id": "The room was in total disorder.",
+      "id": "Ruangan itu berantakan total.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"チラカル￣"}
+},
     {
       "jp": "メイの衣服が部屋に散らかっていた。",
-      "id": "May's clothes were lying around the room.",
+      "id": "Pakaian May tergeletak di sekitar ruangan.",
       "level": "n2",
       "tags": [
         "umum"
@@ -30595,10 +29134,10 @@ window.vocabN2_Verbs = [
   "word": "散らす",
   "reading": "ちらす",
   "romaji": "chirasu",
-  "meaning_id": "me-scatter",
+  "meaning_id": "tersebar",
   "meaning_en": "to scatter; to disperse; to distribute",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -30616,12 +29155,13 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "両替人の金を散らし、その台を倒した。",
-      "id": "He scattered the coins of the money-changers and overturned their table.",
+      "id": "Dia menyebarkan uang logam para penukar uang dan membalikkan meja mereka.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"チラス￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -30640,7 +29180,7 @@ window.vocabN2_Verbs = [
   "meaning_id": "musim gugur / jatuh",
   "meaning_en": "to fall; to scatter (e.g. blossoms)",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -30658,15 +29198,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "ほとんどの葉が散ってしまった。",
-      "id": "Almost all the leaves have fallen.",
+      "id": "Hampir semua daunnya berguguran.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":2,"downstep_mora":0,"contour":"チル￣"}
+},
     {
       "jp": "秋には葉が散る。",
-      "id": "The leaves fall in autumn.",
+      "id": "Daun-daun berguguran di musim gugur.",
       "level": "n2",
       "tags": [
         "umum"
@@ -30708,15 +29249,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "名簿に私の名前も追加してください。",
-      "id": "Tolong add my name to the list.",
+      "id": "Tolong tambahkan nama saya ke daftar.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ツイカ￣"}
+},
     {
       "jp": "エントリーはすべて、追加後にチェックします。",
-      "id": "All entries are subject to review once added.",
+      "id": "Semua entri harus ditinjau setelah ditambahkan.",
       "level": "n2",
       "tags": [
         "umum"
@@ -30737,7 +29279,7 @@ window.vocabN2_Verbs = [
   "word": "通勤",
   "reading": "つうきん",
   "romaji": "tsuukin",
-  "meaning_id": "commuting to work",
+  "meaning_id": "berangkat kerja",
   "meaning_en": "commuting to work",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -30758,15 +29300,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "私は１時間通勤する。",
-      "id": "I commute to work for an hour.",
+      "id": "Saya bepergian ke tempat kerja selama satu jam.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ツウキン￣"}
+},
     {
       "jp": "彼はバスで通勤していますか。",
-      "id": "Does he go to work by bus?",
+      "id": "Apakah dia pergi bekerja dengan bus?",
       "level": "n2",
       "tags": [
         "umum"
@@ -30787,7 +29330,7 @@ window.vocabN2_Verbs = [
   "word": "通知",
   "reading": "つうち",
   "romaji": "tsuuchi",
-  "meaning_id": "notice; notification",
+  "meaning_id": "pemberitahuan",
   "meaning_en": "notice; notification",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -30812,11 +29355,12 @@ window.vocabN2_Verbs = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ツウチ￣"}
+},
     {
       "jp": "採用と決定したらご通知いたします。",
-      "id": "If we decide to hire you, you will hear from us.",
+      "id": "Jika kami memutuskan untuk mempekerjakan Anda, Anda akan mendengar kabar dari kami.",
       "level": "n2",
       "tags": [
         "umum"
@@ -30837,7 +29381,7 @@ window.vocabN2_Verbs = [
   "word": "通訳",
   "reading": "つうやく",
   "romaji": "tsuuyaku",
-  "meaning_id": "interpretation",
+  "meaning_id": "interpretasi",
   "meaning_en": "interpretation",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -30858,15 +29402,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "彼は彼女を通訳として雇った。",
-      "id": "He engaged her as an interpreter.",
+      "id": "Dia mempekerjakannya sebagai penerjemah.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":4,"downstep_mora":1,"contour":"ツ＼ウヤク"}
+},
     {
       "jp": "私たちは通訳の助けなしで話した。",
-      "id": "We talked without the aid of an interpreter.",
+      "id": "Kami berbicara tanpa bantuan penerjemah.",
       "level": "n2",
       "tags": [
         "umum"
@@ -30887,7 +29432,7 @@ window.vocabN2_Verbs = [
   "word": "通用",
   "reading": "つうよう",
   "romaji": "tsuuyou",
-  "meaning_id": "popular use; circulation",
+  "meaning_id": "penggunaan populer; sirkulasi",
   "meaning_en": "popular use; circulation",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -30908,15 +29453,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "彼は年の割に若く見えるので、大学生として通用します。",
-      "id": "He looks so young for his age that he passes for a college student.",
+      "id": "Dia terlihat sangat muda untuk usianya sehingga dia dianggap seorang mahasiswa.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ツウヨウ￣"}
+},
     {
       "jp": "今や彼は大学生として通用する。",
-      "id": "He still passes as a college student now.",
+      "id": "Dia masih lulus sebagai mahasiswa sekarang.",
       "level": "n2",
       "tags": [
         "umum"
@@ -30937,10 +29483,10 @@ window.vocabN2_Verbs = [
   "word": "付き合う",
   "reading": "つきあう",
   "romaji": "tsukiau",
-  "meaning_id": "me-associate with",
+  "meaning_id": "bergaul dengan",
   "meaning_en": "to associate with; to keep company with; to get on with",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -30958,15 +29504,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "一杯付き合いませんか。",
-      "id": "Would you join me in a drink?",
+      "id": "Maukah kamu bergabung denganku untuk minum?",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"ツキア＼ウ"}
+},
     {
       "jp": "佐知子さんと付き合っているの？",
-      "id": "Are you going out with Sachiko?",
+      "id": "Apakah kamu pacaran dengan Sachiko?",
       "level": "n2",
       "tags": [
         "umum"
@@ -30987,10 +29534,10 @@ window.vocabN2_Verbs = [
   "word": "突き当たる",
   "reading": "つきあたる",
   "romaji": "tsukiataru",
-  "meaning_id": "me-run into",
+  "meaning_id": "mengalami",
   "meaning_en": "to run into; to collide with",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -31008,15 +29555,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "急いだあまり私はだれか人に突き当たった。",
-      "id": "In my hurry I bumped into someone.",
+      "id": "Karena terburu-buru, aku menabrak seseorang.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":4,"category":"nakadaka","mora_count":5,"downstep_mora":4,"contour":"ツキアタ＼ル"}
+},
     {
       "jp": "突き当たりに郵便局があります。",
-      "id": "Ada a post office at the end of the street.",
+      "id": "Ada kantor pos di ujung jalan.",
       "level": "n2",
       "tags": [
         "umum"
@@ -31037,10 +29585,10 @@ window.vocabN2_Verbs = [
   "word": "点く",
   "reading": "つく",
   "romaji": "tsuku",
-  "meaning_id": "me-catch fire",
+  "meaning_id": "terbakar",
   "meaning_en": "to catch fire; (electricity) comes on",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -31062,11 +29610,12 @@ window.vocabN2_Verbs = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":2,"downstep_mora":1,"contour":"ツ＼ク"}
+},
     {
       "jp": "危険な時には赤ランプが点きます。",
-      "id": "The red lamp lights up in case of danger.",
+      "id": "Lampu merah menyala jika ada bahaya.",
       "level": "n2",
       "tags": [
         "umum"
@@ -31087,10 +29636,10 @@ window.vocabN2_Verbs = [
   "word": "突く",
   "reading": "つく",
   "romaji": "tsuku",
-  "meaning_id": "me-thrust",
+  "meaning_id": "dorongan",
   "meaning_en": "to thrust; to strike; to poke",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -31108,15 +29657,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "テーブルにひじを突くのはやめなさい。",
-      "id": "Stop resting your elbows on the table.",
+      "id": "Berhentilah mengistirahatkan siku Anda di atas meja.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":2,"downstep_mora":0,"contour":"ツク￣"}
+},
     {
       "jp": "針で親指を突いてしまった。",
-      "id": "I pricked my thumb with a needle.",
+      "id": "Aku menusuk ibu jariku dengan jarum.",
       "level": "n2",
       "tags": [
         "umum"
@@ -31137,10 +29687,10 @@ window.vocabN2_Verbs = [
   "word": "次ぐ",
   "reading": "つぐ",
   "romaji": "tsugu",
-  "meaning_id": "me-rank next to",
+  "meaning_id": "peringkat di sebelah",
   "meaning_en": "to rank next to; to come after",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -31158,15 +29708,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "きれい好きは敬神に次ぐ美徳。",
-      "id": "Cleanliness is next to godliness.",
+      "id": "Kebersihan bersebelahan dengan kesalehan.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":2,"downstep_mora":0,"contour":"ツグ￣"}
+},
     {
       "jp": "チューリッヒはロンドンに次ぐ世界第二位の金市場である。",
-      "id": "Zurich is the second largest gold market in the world after London.",
+      "id": "Zurich merupakan pasar emas terbesar kedua di dunia setelah London.",
       "level": "n2",
       "tags": [
         "umum"
@@ -31187,10 +29738,10 @@ window.vocabN2_Verbs = [
   "word": "浸ける",
   "reading": "つける",
   "romaji": "tsukeru",
-  "meaning_id": "me-dip in",
+  "meaning_id": "mencelupkan ke dalam",
   "meaning_en": "to dip in; to soak",
   "jlpt": "n2",
-  "pos": "verb-ichidan",
+  "pos": "verb-ru",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -31208,15 +29759,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "彼はスプーンをスープの中につけた。",
-      "id": "He dipped his spoon into the soup.",
+      "id": "Dia mencelupkan sendoknya ke dalam sup.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ツケル￣"}
+},
     {
       "jp": "彼女は汚れた皿を流しに浸けた。",
-      "id": "She put the dirty dishes in the sink.",
+      "id": "Dia meletakkan piring kotor di wastafel.",
       "level": "n2",
       "tags": [
         "umum"
@@ -31237,10 +29789,10 @@ window.vocabN2_Verbs = [
   "word": "着ける",
   "reading": "つける",
   "romaji": "tsukeru",
-  "meaning_id": "me-attach",
+  "meaning_id": "lampirkan",
   "meaning_en": "to attach; to join; to add; to append",
   "jlpt": "n2",
-  "pos": "verb-ichidan",
+  "pos": "verb-ru",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -31258,15 +29810,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "おまえの上着は私の勘定につけておきなさい。",
-      "id": "Put your coat on my account.",
+      "id": "Letakkan mantelmu di akunku.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"ツケ＼ル"}
+},
     {
       "jp": "警官はその男をつけた。",
-      "id": "The policeman followed him.",
+      "id": "Polisi itu mengikutinya.",
       "level": "n2",
       "tags": [
         "umum"
@@ -31287,10 +29840,10 @@ window.vocabN2_Verbs = [
   "word": "伝わる",
   "reading": "つたわる",
   "romaji": "tsutawaru",
-  "meaning_id": "me-be handed down",
+  "meaning_id": "diturunkan",
   "meaning_en": "to be handed down; to be introduced; to be transmitted",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -31312,11 +29865,12 @@ window.vocabN2_Verbs = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ツタワル￣"}
+},
     {
       "jp": "あなたの議論は良く相手に伝わった。",
-      "id": "Your argument came across well.",
+      "id": "Argumen Anda diterima dengan baik.",
       "level": "n2",
       "tags": [
         "umum"
@@ -31337,10 +29891,10 @@ window.vocabN2_Verbs = [
   "word": "突っ込む",
   "reading": "つっこむ",
   "romaji": "tsukkomu",
-  "meaning_id": "me-plunge into",
+  "meaning_id": "terjun ke dalam",
   "meaning_en": "to plunge into; to go into deeply",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -31358,15 +29912,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "人の問題に鼻を突っ込むのはよしてくれよ。",
-      "id": "Stop sticking your nose into other people's business.",
+      "id": "Berhenti mencampuri urusan orang lain.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"ツッコ＼ム"}
+},
     {
       "jp": "彼はポケットに手を突っ込んだ。",
-      "id": "He put his hands in his pockets.",
+      "id": "Dia memasukkan tangannya ke dalam saku.",
       "level": "n2",
       "tags": [
         "umum"
@@ -31387,10 +29942,10 @@ window.vocabN2_Verbs = [
   "word": "努める",
   "reading": "つとめる",
   "romaji": "tsutomeru",
-  "meaning_id": "me-serve",
+  "meaning_id": "melayani",
   "meaning_en": "to serve; to fill a post; to serve under; to work (for)",
   "jlpt": "n2",
-  "pos": "verb-ichidan",
+  "pos": "verb-ru",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -31408,15 +29963,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "お手伝いさんたちは主人の命令を実行しようと努めた。",
-      "id": "The servants tried to carry out their master's order.",
+      "id": "Para pelayan berusaha melaksanakan perintah tuannya.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"ツトメ＼ル"}
+},
     {
       "jp": "彼は駅に早く着くように努めた。",
-      "id": "He made an effort to get to the station early.",
+      "id": "Dia berusaha untuk sampai ke stasiun lebih awal.",
       "level": "n2",
       "tags": [
         "umum"
@@ -31437,10 +29993,10 @@ window.vocabN2_Verbs = [
   "word": "務める",
   "reading": "つとめる",
   "romaji": "tsutomeru",
-  "meaning_id": "me-serve",
+  "meaning_id": "melayani",
   "meaning_en": "to serve; to fill a post; to serve under; to work (for)",
   "jlpt": "n2",
-  "pos": "verb-ichidan",
+  "pos": "verb-ru",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -31462,11 +30018,12 @@ window.vocabN2_Verbs = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"ツトメ＼ル"}
+},
     {
       "jp": "オリビアがハムレットの役を務めた。",
-      "id": "Olivier acted the part of Hamlet.",
+      "id": "Olivier berperan sebagai Hamlet.",
       "level": "n2",
       "tags": [
         "umum"
@@ -31487,10 +30044,10 @@ window.vocabN2_Verbs = [
   "word": "繋がる",
   "reading": "つながる",
   "romaji": "tsunagaru",
-  "meaning_id": "me-be tied together",
+  "meaning_id": "diikat menjadi satu",
   "meaning_en": "to be tied together; to be connected to; to be related to",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -31512,11 +30069,12 @@ window.vocabN2_Verbs = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ツナガル￣"}
+},
     {
       "jp": "電話がつながったよ。",
-      "id": "The call has come through.",
+      "id": "Panggilan telah tersambung.",
       "level": "n2",
       "tags": [
         "umum"
@@ -31537,10 +30095,10 @@ window.vocabN2_Verbs = [
   "word": "繋げる",
   "reading": "つなげる",
   "romaji": "tsunageru",
-  "meaning_id": "me-connect",
+  "meaning_id": "menghubungkan",
   "meaning_en": "to connect",
   "jlpt": "n2",
-  "pos": "verb-ichidan",
+  "pos": "verb-ru",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -31558,12 +30116,13 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "私のテープレコーダーは君のアンプにもつなげられる。",
-      "id": "My tape recorder is compatible with your amplifier.",
+      "id": "Tape recorder saya kompatibel dengan amplifier Anda.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ツナゲル￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -31579,10 +30138,10 @@ window.vocabN2_Verbs = [
   "word": "潰す",
   "reading": "つぶす",
   "romaji": "tsubusu",
-  "meaning_id": "me-smash",
+  "meaning_id": "menghancurkan",
   "meaning_en": "to smash; to waste",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -31600,15 +30159,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "彼は平然と取引をつぶしました。",
-      "id": "He sank the deal without batting an eyelash.",
+      "id": "Dia membatalkan kesepakatan itu tanpa mengedipkan mata.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ツブス￣"}
+},
     {
       "jp": "彼は私の帽子をぺちゃんこにつぶした。",
-      "id": "He squashed my hat flat.",
+      "id": "Dia meremukkan topiku hingga rata.",
       "level": "n2",
       "tags": [
         "umum"
@@ -31629,10 +30189,10 @@ window.vocabN2_Verbs = [
   "word": "潰れる",
   "reading": "つぶれる",
   "romaji": "tsubureru",
-  "meaning_id": "me-be smashed",
+  "meaning_id": "dihancurkan",
   "meaning_en": "to be smashed; to go bankrupt",
   "jlpt": "n2",
-  "pos": "verb-ichidan",
+  "pos": "verb-ru",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -31650,15 +30210,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "雪の重さで家がつぶれた。",
-      "id": "The house collapsed under the weight of snow.",
+      "id": "Rumah itu runtuh karena beban salju.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ツブレル￣"}
+},
     {
       "jp": "父が亡くなって私の留学計画は完全につぶれた。",
-      "id": "My plan to study abroad went by the board when my father died.",
+      "id": "Rencana saya untuk belajar di luar negeri terlaksana ketika ayah saya meninggal.",
       "level": "n2",
       "tags": [
         "umum"
@@ -31679,10 +30240,10 @@ window.vocabN2_Verbs = [
   "word": "つまずく",
   "reading": "つまずく",
   "romaji": "tsumazuku",
-  "meaning_id": "me-stumble",
+  "meaning_id": "tersandung",
   "meaning_en": "to stumble; to trip",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -31700,15 +30261,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "私は石につまずいて、足首をひねってしまった。",
-      "id": "I tripped on a stone, twisting my ankle.",
+      "id": "Aku tersandung batu, pergelangan kakiku terkilir.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ツマズク￣"}
+},
     {
       "jp": "私は石につまずいて転んだ。",
-      "id": "I tripped over a stone and fell to the ground.",
+      "id": "Saya tersandung batu dan jatuh ke tanah.",
       "level": "n2",
       "tags": [
         "umum"
@@ -31729,10 +30291,10 @@ window.vocabN2_Verbs = [
   "word": "詰まる",
   "reading": "つまる",
   "romaji": "tsumaru",
-  "meaning_id": "me-be blocked",
+  "meaning_id": "diblokir",
   "meaning_en": "to be blocked; to be packed",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -31754,11 +30316,12 @@ window.vocabN2_Verbs = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"ツマ＼ル"}
+},
     {
       "jp": "引き出しはがらくたでぎっしり詰まっている。",
-      "id": "The drawer is stuffed full of odds and ends.",
+      "id": "Laci itu penuh dengan barang sisa.",
       "level": "n2",
       "tags": [
         "umum"
@@ -31779,10 +30342,10 @@ window.vocabN2_Verbs = [
   "word": "積む",
   "reading": "つむ",
   "romaji": "tsumu",
-  "meaning_id": "me-pile up",
+  "meaning_id": "menumpuk",
   "meaning_en": "to pile up; to stack",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -31804,11 +30367,12 @@ window.vocabN2_Verbs = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":2,"downstep_mora":0,"contour":"ツム￣"}
+},
     {
       "jp": "その船は武器をいっぱいに積んでいた。",
-      "id": "The ship was stowed with arms.",
+      "id": "Kapal itu berisi senjata.",
       "level": "n2",
       "tags": [
         "umum"
@@ -31829,10 +30393,10 @@ window.vocabN2_Verbs = [
   "word": "釣り合う",
   "reading": "つりあう",
   "romaji": "tsuriau",
-  "meaning_id": "me-balance",
+  "meaning_id": "keseimbangan",
   "meaning_en": "to balance; to be in harmony; to suit",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -31850,15 +30414,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "仕事の量と賃金が釣り合っていない。",
-      "id": "The amount of work and the pay are not balanced.",
+      "id": "Jumlah pekerjaan dan gaji tidak seimbang.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"ツリア＼ウ"}
+},
     {
       "jp": "彼女の服の色と靴の色はよく釣り合っている。",
-      "id": "The color of her dress and that of her shoes go well together.",
+      "id": "Warna gaunnya dan warna sepatunya serasi.",
       "level": "n2",
       "tags": [
         "umum"
@@ -31879,10 +30444,10 @@ window.vocabN2_Verbs = [
   "word": "吊る",
   "reading": "つる",
   "romaji": "tsuru",
-  "meaning_id": "me-hang",
+  "meaning_id": "menggantung",
   "meaning_en": "to hang",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -31904,11 +30469,12 @@ window.vocabN2_Verbs = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":2,"downstep_mora":0,"contour":"ツル￣"}
+},
     {
       "jp": "てるてる坊主、逆さまに吊るしてたら、あした雨になるかな？",
-      "id": "If you hang a teru teru bozu upside down, do you think it will bring rain tomorrow?",
+      "id": "Jika Anda menggantung teru teru bozu secara terbalik, menurut Anda apakah besok akan turun hujan?",
       "level": "n2",
       "tags": [
         "umum"
@@ -31929,10 +30495,10 @@ window.vocabN2_Verbs = [
   "word": "吊す",
   "reading": "つるす",
   "romaji": "tsurusu",
-  "meaning_id": "me-hang",
+  "meaning_id": "menggantung",
   "meaning_en": "to hang",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -31950,15 +30516,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "彼は天井からランプをつるした。",
-      "id": "He hung a lamp from the ceiling.",
+      "id": "Dia menggantungkan lampu di langit-langit.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ツルス￣"}
+},
     {
       "jp": "彼女は鳥かごを軒からつるした。",
-      "id": "She hung the cage from the eaves.",
+      "id": "Dia menggantung sangkar itu di atap.",
       "level": "n2",
       "tags": [
         "umum"
@@ -32000,15 +30567,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "金利が低下したことが自動車の市場を刺激した。",
-      "id": "Falling interest rates have stimulated the automobile market.",
+      "id": "Penurunan suku bunga telah merangsang pasar mobil.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"テイカ￣"}
+},
     {
       "jp": "その会社は売上が１５パーセント低下した。",
-      "id": "The company suffered a 15% drop in sales.",
+      "id": "Perusahaan mengalami penurunan penjualan sebesar 15%.",
       "level": "n2",
       "tags": [
         "umum"
@@ -32050,15 +30618,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "列車は滑らかに停止した。",
-      "id": "The train came to a smooth stop.",
+      "id": "Kereta berhenti dengan mulus.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"テイシ￣"}
+},
     {
       "jp": "戦争は停止されるべきだと全員合意した。",
-      "id": "They were unanimous that the war should be brought to a halt.",
+      "id": "Mereka sepakat bahwa perang harus dihentikan.",
       "level": "n2",
       "tags": [
         "umum"
@@ -32079,7 +30648,7 @@ window.vocabN2_Verbs = [
   "word": "停車",
   "reading": "ていしゃ",
   "romaji": "teisha",
-  "meaning_id": "stopping (e.g. train)",
+  "meaning_id": "berhenti (misalnya kereta api)",
   "meaning_en": "stopping (e.g. train)",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -32100,15 +30669,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "この列車は各駅に停車する。",
-      "id": "This train stops at every station.",
+      "id": "Kereta ini berhenti di setiap stasiun.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"テイシャ￣"}
+},
     {
       "jp": "バスはどの村にも停車しました。",
-      "id": "The bus stopped in every village.",
+      "id": "Bus berhenti di setiap desa.",
       "level": "n2",
       "tags": [
         "umum"
@@ -32129,7 +30699,7 @@ window.vocabN2_Verbs = [
   "word": "停電",
   "reading": "ていでん",
   "romaji": "teiden",
-  "meaning_id": "failure of electricity",
+  "meaning_id": "kegagalan listrik",
   "meaning_en": "failure of electricity",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -32150,15 +30720,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "台風の余波で２日間停電した。",
-      "id": "There was no electricity for two days in the aftermath of the typhoon.",
+      "id": "Listrik padam selama dua hari setelah terjadinya topan.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"テイデン￣"}
+},
     {
       "jp": "停電が場内の混乱の一因となった。",
-      "id": "A power failure contributed to the confusion in the hall.",
+      "id": "Listrik padam menyebabkan kebingungan di aula.",
       "level": "n2",
       "tags": [
         "umum"
@@ -32200,15 +30771,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "そのドアから台所へ出入りできる。",
-      "id": "The door gives access to the kitchen.",
+      "id": "Pintu memberi akses ke dapur.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"デイリ￣"}
+},
     {
       "jp": "彼はその家に出入りする者を見張った。",
-      "id": "He watched those who went in and out of the house.",
+      "id": "Dia mengawasi mereka yang keluar masuk rumah.",
       "level": "n2",
       "tags": [
         "umum"
@@ -32229,7 +30801,7 @@ window.vocabN2_Verbs = [
   "word": "手入れ",
   "reading": "ていれ",
   "romaji": "teire",
-  "meaning_id": "repairs; maintenance",
+  "meaning_id": "perbaikan; pemeliharaan",
   "meaning_en": "repairs; maintenance",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -32250,15 +30822,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "本店は警察の手入れを受けた。",
-      "id": "The main office was raided by the police.",
+      "id": "Kantor utama digerebek oleh polisi.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"odaka","mora_count":3,"downstep_mora":3,"contour":"テイレ＼"}
+},
     {
       "jp": "あなたに庭の手入れを手伝って頂きたいのですが。",
-      "id": "I would like you to assist me with my gardening.",
+      "id": "Saya ingin Anda membantu saya berkebun.",
       "level": "n2",
       "tags": [
         "umum"
@@ -32279,10 +30852,10 @@ window.vocabN2_Verbs = [
   "word": "出来上がる",
   "reading": "できあがる",
   "romaji": "dekiagaru",
-  "meaning_id": "me-be finished",
+  "meaning_id": "selesai",
   "meaning_en": "to be finished; to be ready; by definition; to be very drunk",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -32300,15 +30873,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "出発の準備はできあがっています。",
-      "id": "I'm all set to start.",
+      "id": "Saya siap untuk memulai.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":5,"downstep_mora":0,"contour":"デキアガル￣"}
+},
     {
       "jp": "どのくらいでこの洗濯物は出来上がりますか。",
-      "id": "How soon will this laundry be ready?",
+      "id": "Seberapa cepat cucian ini akan siap?",
       "level": "n2",
       "tags": [
         "umum"
@@ -32350,15 +30924,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "バスはでこぼこ道を走りながらガタガタと音を立てた。",
-      "id": "The bus rattled as it drove along the bumpy road.",
+      "id": "Bus itu bergetar saat melaju di jalan bergelombang.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"デコボコ￣"}
+},
     {
       "jp": "道はとてもでこぼこだった。",
-      "id": "The road was very rough.",
+      "id": "Jalannya sangat kasar.",
       "level": "n2",
       "tags": [
         "umum"
@@ -32382,7 +30957,7 @@ window.vocabN2_Verbs = [
   "meaning_id": "bertemu",
   "meaning_en": "to meet; to greet",
   "jlpt": "n2",
-  "pos": "verb-ichidan",
+  "pos": "verb-ru",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -32400,15 +30975,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "ジェーンを出迎える事はわくわくします。",
-      "id": "It is exciting to welcome Jane.",
+      "id": "Sangat menyenangkan menyambut Jane.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":5,"downstep_mora":0,"contour":"デムカエル￣"}
+},
     {
       "jp": "私は彼女を東京駅で出迎えた。",
-      "id": "I met her at Tokyo Station.",
+      "id": "Saya bertemu dengannya di Stasiun Tokyo.",
       "level": "n2",
       "tags": [
         "umum"
@@ -32429,10 +31005,10 @@ window.vocabN2_Verbs = [
   "word": "照らす",
   "reading": "てらす",
   "romaji": "terasu",
-  "meaning_id": "me-shine on",
+  "meaning_id": "bersinar",
   "meaning_en": "to shine on; to illuminate",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -32450,15 +31026,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "君の答えを彼のと照らし合わせなさい。",
-      "id": "Check your answer with his.",
+      "id": "Periksa jawaban Anda dengan jawabannya.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"テラス￣"}
+},
     {
       "jp": "舞台の両側からライトが照らされた。",
-      "id": "The stage was lit from both sides.",
+      "id": "Panggung diterangi dari kedua sisi.",
       "level": "n2",
       "tags": [
         "umum"
@@ -32479,10 +31056,10 @@ window.vocabN2_Verbs = [
   "word": "照る",
   "reading": "てる",
   "romaji": "teru",
-  "meaning_id": "me-shine",
+  "meaning_id": "bersinar",
   "meaning_en": "to shine",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -32500,15 +31077,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "降っても照っても明日は出発します。",
-      "id": "Rain or shine, I will start tomorrow.",
+      "id": "Hujan atau cerah, saya akan mulai besok.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":2,"downstep_mora":1,"contour":"テ＼ル"}
+},
     {
       "jp": "あたり一面に日が照っていた。",
-      "id": "The sun was shining all around.",
+      "id": "Matahari bersinar di sekelilingnya.",
       "level": "n2",
       "tags": [
         "umum"
@@ -32529,7 +31107,7 @@ window.vocabN2_Verbs = [
   "word": "展開",
   "reading": "てんかい",
   "romaji": "tenkai",
-  "meaning_id": "develop; expansion (opposite of compression)",
+  "meaning_id": "mengembangkan; ekspansi (kebalikan dari kompresi)",
   "meaning_en": "develop; expansion (opposite of compression)",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -32550,15 +31128,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "その事件の展開について引き続きお知らせ下さい。",
-      "id": "Tolong keep me informed of the development of the case.",
+      "id": "Tolong beri tahu saya perkembangan kasus ini.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"テンカイ￣"}
+},
     {
       "jp": "与党は野党非難のキャンペーンを展開しています。",
-      "id": "The ruling party is running a smear campaign against the opposition.",
+      "id": "Partai yang berkuasa menjalankan kampanye kotor terhadap oposisi.",
       "level": "n2",
       "tags": [
         "umum"
@@ -32579,7 +31158,7 @@ window.vocabN2_Verbs = [
   "word": "伝染",
   "reading": "でんせん",
   "romaji": "densen",
-  "meaning_id": "contagion",
+  "meaning_id": "penularan",
   "meaning_en": "contagion",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -32600,15 +31179,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "風邪は伝染する。",
-      "id": "Colds are contagious.",
+      "id": "Pilek itu menular.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"デンセン￣"}
+},
     {
       "jp": "我々は病気の伝染をくいとめなければならない。",
-      "id": "We should check the spread of the disease.",
+      "id": "Kita harus memeriksa penyebaran penyakit ini.",
       "level": "n2",
       "tags": [
         "umum"
@@ -32629,7 +31209,7 @@ window.vocabN2_Verbs = [
   "word": "転々",
   "reading": "てんてん",
   "romaji": "tenten",
-  "meaning_id": "moving from place to place; being passed around repeatedly",
+  "meaning_id": "berpindah dari satu tempat ke tempat lain; diedarkan berulang kali",
   "meaning_en": "moving from place to place; being passed around repeatedly",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -32650,65 +31230,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "彼らは会社を転々とした。",
-      "id": "They were transferred from one office to another.",
+      "id": "Mereka dipindahkan dari satu kantor ke kantor lain.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"テンテン￣"}
+},
     {
       "jp": "彼は各地を転々と移動した。",
-      "id": "He moved from place to place.",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    }
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "added_v": "v19.3.1-staged-merge",
-  "provenance": "expansion-staged",
-  "jmdict_seq": "",
-  "frequency": 1000
-},
-
-{
-  "id": "vg-n2-01591",
-  "word": "点々",
-  "reading": "てんてん",
-  "romaji": "tenten",
-  "meaning_id": "here and there; little by little",
-  "meaning_en": "here and there; little by little",
-  "jlpt": "n2",
-  "pos": "adverb",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": [
-    "umum",
-    "kehidupan-sehari-hari"
-  ],
-  "register": "formal",
-  "lawan_bicara": [
-    "rekan-kerja",
-    "umum"
-  ],
-  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
-  "conj_type": null,
-  "examples": [
-    {
-      "jp": "池に落ち葉が点々と浮かんでいた。",
-      "id": "The pond was dotted with fallen leaves.",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    },
-    {
-      "jp": "地図上のこの点々は何を表しているのですか。",
-      "id": "What do these dots represent on the map?",
+      "id": "Dia berpindah dari satu tempat ke tempat lain.",
       "level": "n2",
       "tags": [
         "umum"
@@ -32750,65 +31281,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "スコットランドとイングランドの統一は１７０６年に行われた。",
-      "id": "The union of Scotland and England took place in 1706.",
+      "id": "Penyatuan Skotlandia dan Inggris terjadi pada tahun 1706.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"トウイツ￣"}
+},
     {
       "jp": "多民族国家で言語を統一することは難しい。",
-      "id": "It's difficult to standardize language for a multi-ethnic nation.",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    }
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "added_v": "v19.3.1-staged-merge",
-  "provenance": "expansion-staged",
-  "jmdict_seq": "",
-  "frequency": 1000
-},
-
-{
-  "id": "vg-n2-01604",
-  "word": "当日",
-  "reading": "とうじつ",
-  "romaji": "toujitsu",
-  "meaning_id": "appointed day; very day",
-  "meaning_en": "appointed day; very day",
-  "jlpt": "n2",
-  "pos": "adverb",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": [
-    "umum",
-    "kehidupan-sehari-hari"
-  ],
-  "register": "formal",
-  "lawan_bicara": [
-    "rekan-kerja",
-    "umum"
-  ],
-  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
-  "conj_type": null,
-  "examples": [
-    {
-      "jp": "彼は当日借り着をした。",
-      "id": "He rented the garment for the day.",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    },
-    {
-      "jp": "当日雨天の場合は順延となります。",
-      "id": "If it rains on that day, the game will be postponed until the next fine day.",
+      "id": "Sulit untuk membakukan bahasa di negara multietnis.",
       "level": "n2",
       "tags": [
         "umum"
@@ -32850,12 +31332,13 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "投書は視聴者からの唯一の声です。",
-      "id": "Letters are the only voice from the audience.",
+      "id": "Surat adalah satu-satunya suara dari penonton.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"トウショ￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -32871,7 +31354,7 @@ window.vocabN2_Verbs = [
   "word": "登場",
   "reading": "とうじょう",
   "romaji": "toujou",
-  "meaning_id": "entry (on stage)",
+  "meaning_id": "masuk (di atas panggung)",
   "meaning_en": "entry (on stage)",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -32892,65 +31375,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "その女優は舞台に３度登場した。",
-      "id": "That actress made three entrances onto the stage.",
+      "id": "Aktris itu membuat tiga kali masuk ke atas panggung.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"トウジョウ￣"}
+},
     {
       "jp": "彼は日が暮れてからそこに登場した。",
-      "id": "He arrived there after dark.",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    }
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "added_v": "v19.3.1-staged-merge",
-  "provenance": "expansion-staged",
-  "jmdict_seq": "",
-  "frequency": 1000
-},
-
-{
-  "id": "vg-n2-01607",
-  "word": "どうせ",
-  "reading": "どうせ",
-  "romaji": "douse",
-  "meaning_id": "anyhow; in any case",
-  "meaning_en": "anyhow; in any case; at any rate",
-  "jlpt": "n2",
-  "pos": "adverb",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": [
-    "umum",
-    "kehidupan-sehari-hari"
-  ],
-  "register": "formal",
-  "lawan_bicara": [
-    "rekan-kerja",
-    "umum"
-  ],
-  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
-  "conj_type": null,
-  "examples": [
-    {
-      "jp": "どうせやるなら上手にやれ。",
-      "id": "If you do it at all, do it well.",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    },
-    {
-      "jp": "どうせお前は。",
-      "id": "You're only foolin' round.",
+      "id": "Dia tiba di sana setelah gelap.",
       "level": "n2",
       "tags": [
         "umum"
@@ -32971,7 +31405,7 @@ window.vocabN2_Verbs = [
   "word": "等分",
   "reading": "とうぶん",
   "romaji": "toubun",
-  "meaning_id": "division into equal parts",
+  "meaning_id": "pembagian menjadi bagian yang sama",
   "meaning_en": "division into equal parts",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -32992,15 +31426,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "この線を２０等分せよ。",
-      "id": "Divide this line into twenty equal parts.",
+      "id": "Bagilah garis ini menjadi dua puluh bagian yang sama.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"トウブン￣"}
+},
     {
       "jp": "そのメロンをきって６等分しなさい。",
-      "id": "Cut the melon into six equal pieces.",
+      "id": "Potong melon menjadi enam bagian yang sama.",
       "level": "n2",
       "tags": [
         "umum"
@@ -33021,10 +31456,10 @@ window.vocabN2_Verbs = [
   "word": "通り掛かる",
   "reading": "とおりかかる",
   "romaji": "toorikakaru",
-  "meaning_id": "me-happen to pass by",
+  "meaning_id": "kebetulan lewat",
   "meaning_en": "to happen to pass by",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -33042,15 +31477,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "すると、たまたま少女のおばあちゃんが通りかかる。",
-      "id": "Along comes the grandmother and sees her granddaughter.",
+      "id": "Nenek datang dan melihat cucunya.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":5,"category":"nakadaka","mora_count":6,"downstep_mora":5,"contour":"トオリカカ＼ル"}
+},
     {
       "jp": "彼は通りかかった船に助けられた。",
-      "id": "He was picked up by a passing ship.",
+      "id": "Dia dijemput oleh kapal yang lewat.",
       "level": "n2",
       "tags": [
         "umum"
@@ -33071,10 +31507,10 @@ window.vocabN2_Verbs = [
   "word": "溶かす",
   "reading": "とかす",
   "romaji": "tokasu",
-  "meaning_id": "me-melt",
+  "meaning_id": "meleleh",
   "meaning_en": "to melt; to dissolve",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -33092,15 +31528,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "彼はコーヒーに砂糖を溶かした。",
-      "id": "He dissolved some sugar in his coffee.",
+      "id": "Dia melarutkan sedikit gula ke dalam kopinya.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"トカ＼ス"}
+},
     {
       "jp": "砂糖をお湯で溶かしなさい。",
-      "id": "Dissolve sugar in hot water.",
+      "id": "Larutkan gula dalam air panas.",
       "level": "n2",
       "tags": [
         "umum"
@@ -33121,10 +31558,10 @@ window.vocabN2_Verbs = [
   "word": "尖る",
   "reading": "とがる",
   "romaji": "togaru",
-  "meaning_id": "me-taper to a point",
+  "meaning_id": "meruncing ke suatu titik",
   "meaning_en": "to taper to a point; to become sharp; to be sour; to look displeased",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -33142,15 +31579,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "この棒は先がとがっている。",
-      "id": "This pole is sharp at the end.",
+      "id": "Tiang ini tajam pada ujungnya.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"トガ＼ル"}
+},
     {
       "jp": "彼はとがった声を出した。",
-      "id": "He cried in an angry voice.",
+      "id": "Dia menangis dengan suara marah.",
       "level": "n2",
       "tags": [
         "umum"
@@ -33171,7 +31609,7 @@ window.vocabN2_Verbs = [
   "word": "どきどき",
   "reading": "どきどき",
   "romaji": "dokidoki",
-  "meaning_id": "throb; beat (fast)",
+  "meaning_id": "berdenyut; mengalahkan (cepat)",
   "meaning_en": "throb; beat (fast)",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -33192,15 +31630,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "名前を呼ばれて胸がどきどきした。",
-      "id": "My heart beat when I heard my name called.",
+      "id": "Jantungku berdetak kencang saat mendengar namaku dipanggil.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":0,"downstep_mora":1,"contour":"＼"}
+},
     {
       "jp": "胸をどきどきさせて開演を待った。",
-      "id": "I waited for the curtain to rise with my heart beating in excitement.",
+      "id": "Aku menunggu tirai dibuka dengan jantung berdebar kencang.",
       "level": "n2",
       "tags": [
         "umum"
@@ -33221,10 +31660,10 @@ window.vocabN2_Verbs = [
   "word": "溶く",
   "reading": "とく",
   "romaji": "toku",
-  "meaning_id": "me-dissolve",
+  "meaning_id": "larut",
   "meaning_en": "to dissolve (paint)",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -33242,12 +31681,13 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "溶くを使います。",
-      "id": "Menggunakan me-dissolve.",
+      "id": "Menggunakan larut.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":2,"downstep_mora":1,"contour":"ト＼ク"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -33263,10 +31703,10 @@ window.vocabN2_Verbs = [
   "word": "退く",
   "reading": "どく",
   "romaji": "doku",
-  "meaning_id": "me-step aside",
+  "meaning_id": "minggir",
   "meaning_en": "to step aside; to move (out of the way); to make way",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -33284,15 +31724,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "彼女が通れるように彼は横へ退いてあげた。",
-      "id": "He stepped aside for her to pass.",
+      "id": "Dia menyingkir agar dia bisa lewat.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":2,"downstep_mora":0,"contour":"ドク￣"}
+},
     {
       "jp": "彼女が通れるように私は脇に退いた。",
-      "id": "I stepped aside for her to pass by.",
+      "id": "Aku menyingkir agar dia lewat.",
       "level": "n2",
       "tags": [
         "umum"
@@ -33313,7 +31754,7 @@ window.vocabN2_Verbs = [
   "word": "特売",
   "reading": "とくばい",
   "romaji": "tokubai",
-  "meaning_id": "special sale",
+  "meaning_id": "penjualan khusus",
   "meaning_en": "special sale",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -33334,15 +31775,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "きのうは和牛が特売だった。",
-      "id": "Japanese beef was on sale yesterday.",
+      "id": "Daging sapi Jepang sedang dijual kemarin.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"トクバイ￣"}
+},
     {
       "jp": "あの店では今夏物の特売中です。",
-      "id": "The store is having a sale on summer goods.",
+      "id": "Toko sedang mengadakan obral barang-barang musim panas.",
       "level": "n2",
       "tags": [
         "umum"
@@ -33363,10 +31805,10 @@ window.vocabN2_Verbs = [
   "word": "溶け込む",
   "reading": "とけこむ",
   "romaji": "tokekomu",
-  "meaning_id": "me-melt into",
+  "meaning_id": "melebur ke dalam",
   "meaning_en": "to melt into",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -33384,15 +31826,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "空が海と一つに溶け込むように見えた。",
-      "id": "The sky seemed to blend with the sea.",
+      "id": "Langit seakan menyatu dengan laut.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"トケコム￣"}
+},
     {
       "jp": "海は水平線で空に溶け込んでいた。",
-      "id": "The ocean melted into the sky on the horizon.",
+      "id": "Lautan melebur ke langit di cakrawala.",
       "level": "n2",
       "tags": [
         "umum"
@@ -33413,10 +31856,10 @@ window.vocabN2_Verbs = [
   "word": "溶ける",
   "reading": "とける",
   "romaji": "tokeru",
-  "meaning_id": "me-melt",
+  "meaning_id": "meleleh",
   "meaning_en": "to melt; to thaw; to fuse; to dissolve",
   "jlpt": "n2",
-  "pos": "verb-ichidan",
+  "pos": "verb-ru",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -33434,15 +31877,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "氷が溶けると液体になる。",
-      "id": "When ice melts, it becomes liquid.",
+      "id": "Ketika es mencair, ia menjadi cair.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"トケ＼ル"}
+},
     {
       "jp": "砂糖は水に溶ける。",
-      "id": "Sugar dissolves in water.",
+      "id": "Gula larut dalam air.",
       "level": "n2",
       "tags": [
         "umum"
@@ -33463,10 +31907,10 @@ window.vocabN2_Verbs = [
   "word": "退ける",
   "reading": "どける",
   "romaji": "dokeru",
-  "meaning_id": "me-remove",
+  "meaning_id": "hapus",
   "meaning_en": "to remove; to take away; to dislodge; to put something out of the way",
   "jlpt": "n2",
-  "pos": "verb-ichidan",
+  "pos": "verb-ru",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -33484,165 +31928,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "その自転車をどけて下さい。",
-      "id": "Get the bicycle out of the way.",
+      "id": "Singkirkan sepeda itu.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ドケル￣"}
+},
     {
       "jp": "このテーブルをどけなさい。",
-      "id": "Take this table away.",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    }
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "added_v": "v19.3.1-staged-merge",
-  "provenance": "expansion-staged",
-  "jmdict_seq": "",
-  "frequency": 1000
-},
-
-{
-  "id": "vg-n2-01631",
-  "word": "所々",
-  "reading": "ところどころ",
-  "romaji": "tokorodokoro",
-  "meaning_id": "here and there; some parts (of something)",
-  "meaning_en": "here and there; some parts (of something)",
-  "jlpt": "n2",
-  "pos": "adverb",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": [
-    "umum",
-    "kehidupan-sehari-hari"
-  ],
-  "register": "formal",
-  "lawan_bicara": [
-    "rekan-kerja",
-    "umum"
-  ],
-  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
-  "conj_type": null,
-  "examples": [
-    {
-      "jp": "その本は所々非常にすばらしい。",
-      "id": "Parts of the book are quite good.",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    },
-    {
-      "jp": "その習慣は今なお日本の所々で行われている。",
-      "id": "The practice still prevails locally in parts of Japan.",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    }
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "added_v": "v19.3.1-staged-merge",
-  "provenance": "expansion-staged",
-  "jmdict_seq": "",
-  "frequency": 1000
-},
-
-{
-  "id": "vg-n2-01634",
-  "word": "とっくに",
-  "reading": "とっくに",
-  "romaji": "tokkuni",
-  "meaning_id": "long ago; already",
-  "meaning_en": "long ago; already; a long time ago",
-  "jlpt": "n2",
-  "pos": "adverb",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": [
-    "umum",
-    "kehidupan-sehari-hari"
-  ],
-  "register": "formal",
-  "lawan_bicara": [
-    "rekan-kerja",
-    "umum"
-  ],
-  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
-  "conj_type": null,
-  "examples": [
-    {
-      "jp": "もうとっくに寝る時間だ。",
-      "id": "It is high time we went to bed.",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    },
-    {
-      "jp": "君はとっくにここにいなきゃいけないはずだ。",
-      "id": "It's about time you got here!",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    }
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "added_v": "v19.3.1-staged-merge",
-  "provenance": "expansion-staged",
-  "jmdict_seq": "",
-  "frequency": 1000
-},
-
-{
-  "id": "vg-n2-01635",
-  "word": "どっと",
-  "reading": "どっと",
-  "romaji": "dotto",
-  "meaning_id": "suddenly",
-  "meaning_en": "suddenly",
-  "jlpt": "n2",
-  "pos": "adverb",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": [
-    "umum",
-    "kehidupan-sehari-hari"
-  ],
-  "register": "formal",
-  "lawan_bicara": [
-    "rekan-kerja",
-    "umum"
-  ],
-  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
-  "conj_type": null,
-  "examples": [
-    {
-      "jp": "学童たちはどっと笑った。",
-      "id": "The pupils burst out laughing.",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    },
-    {
-      "jp": "群集は公会堂からどっと出てきた。",
-      "id": "The crowd poured out of the auditorium.",
+      "id": "Singkirkan meja ini.",
       "level": "n2",
       "tags": [
         "umum"
@@ -33663,10 +31958,10 @@ window.vocabN2_Verbs = [
   "word": "整う",
   "reading": "ととのう",
   "romaji": "totonou",
-  "meaning_id": "me-be prepared",
+  "meaning_id": "bersiaplah",
   "meaning_en": "to be prepared; to be in order; to be put in order; to be arranged",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -33684,15 +31979,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "あなたの出発の準備がすべて整うよう取り計らいます。",
-      "id": "I will see to it that everything is ready for your departure.",
+      "id": "Saya akan memastikan semuanya siap untuk keberangkatan Anda.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"トトノ＼ウ"}
+},
     {
       "jp": "部屋はきちんと整っている。",
-      "id": "The room is in immaculate order.",
+      "id": "Kamarnya tertata rapi.",
       "level": "n2",
       "tags": [
         "umum"
@@ -33713,10 +32009,10 @@ window.vocabN2_Verbs = [
   "word": "留まる",
   "reading": "とどまる",
   "romaji": "todomaru",
-  "meaning_id": "me-be fixed",
+  "meaning_id": "diperbaiki",
   "meaning_en": "to be fixed; to abide; to stay (in the one place)",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -33734,15 +32030,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "ここにとどまっていても何の得もない。",
-      "id": "Ada no advantage in staying here.",
+      "id": "Tidak ada keuntungan tinggal di sini.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"トドマ＼ル"}
+},
     {
       "jp": "行くも留まるもあなたの自由です。",
-      "id": "You may go or stay at will.",
+      "id": "Anda boleh pergi atau tinggal sesuka hati.",
       "level": "n2",
       "tags": [
         "umum"
@@ -33763,10 +32060,10 @@ window.vocabN2_Verbs = [
   "word": "どなる",
   "reading": "どなる",
   "romaji": "donaru",
-  "meaning_id": "me-shout",
+  "meaning_id": "berteriak",
   "meaning_en": "to shout; to yell",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -33784,15 +32081,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "泣いている子を怒鳴るな。火に油だから。",
-      "id": "Don't shout at the crying child. It only adds fuel to the fire.",
+      "id": "Jangan berteriak pada anak yang menangis. Itu hanya menambah bahan bakar ke dalam api.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"ドナ＼ル"}
+},
     {
       "jp": "彼女は腹を立てて、私を怒鳴った。",
-      "id": "She lost her temper and shouted at me.",
+      "id": "Dia kehilangan kesabaran dan meneriaki saya.",
       "level": "n2",
       "tags": [
         "umum"
@@ -33813,10 +32111,10 @@ window.vocabN2_Verbs = [
   "word": "飛び込む",
   "reading": "とびこむ",
   "romaji": "tobikomu",
-  "meaning_id": "me-jump in",
+  "meaning_id": "melompat masuk",
   "meaning_en": "to jump in; to leap in; to plunge into; to dive",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -33834,15 +32132,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "少年は水の中に飛び込んだ。",
-      "id": "The boy jumped into the water.",
+      "id": "Anak laki-laki itu melompat ke dalam air.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"トビコ＼ム"}
+},
     {
       "jp": "メアリーは台所へ飛び込んできた。",
-      "id": "Mary burst into the kitchen.",
+      "id": "Mary menyerbu ke dapur.",
       "level": "n2",
       "tags": [
         "umum"
@@ -33863,10 +32162,10 @@ window.vocabN2_Verbs = [
   "word": "跳ぶ",
   "reading": "とぶ",
   "romaji": "tobu",
-  "meaning_id": "me-jump",
+  "meaning_id": "melompat",
   "meaning_en": "to jump; to fly; to leap",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -33884,15 +32183,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "君はどのくらい高く跳べますか。",
-      "id": "How high can you jump?",
+      "id": "Seberapa tinggi Anda bisa melompat?",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":2,"downstep_mora":0,"contour":"トブ￣"}
+},
     {
       "jp": "彼の話はいろいろなところへ飛ぶ。",
-      "id": "He frequently jumps from one topic to another while he is talking.",
+      "id": "Dia sering berpindah dari satu topik ke topik lain saat dia berbicara.",
       "level": "n2",
       "tags": [
         "umum"
@@ -33913,10 +32213,10 @@ window.vocabN2_Verbs = [
   "word": "泊める",
   "reading": "とめる",
   "romaji": "tomeru",
-  "meaning_id": "me-give shelter to",
+  "meaning_id": "memberikan perlindungan kepada",
   "meaning_en": "to give shelter to; to lodge",
   "jlpt": "n2",
-  "pos": "verb-ichidan",
+  "pos": "verb-ru",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -33934,65 +32234,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "一晩泊めてあげよう。",
-      "id": "I'll put you up for the night.",
+      "id": "Aku akan mengantarmu malam ini.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"トメル￣"}
+},
     {
       "jp": "今夜お宅に泊めてもらえませんか。",
-      "id": "Can you put me up tonight?",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    }
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "added_v": "v19.3.1-staged-merge",
-  "provenance": "expansion-staged",
-  "jmdict_seq": "",
-  "frequency": 1000
-},
-
-{
-  "id": "vg-n2-01642",
-  "word": "ともかく",
-  "reading": "ともかく",
-  "romaji": "tomokaku",
-  "meaning_id": "anyhow; anyway",
-  "meaning_en": "anyhow; anyway; somehow or other; generally speaking; in any case",
-  "jlpt": "n2",
-  "pos": "adverb",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": [
-    "umum",
-    "kehidupan-sehari-hari"
-  ],
-  "register": "formal",
-  "lawan_bicara": [
-    "rekan-kerja",
-    "umum"
-  ],
-  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
-  "conj_type": null,
-  "examples": [
-    {
-      "jp": "ともかく合格してうれしい。",
-      "id": "I'm glad to have passed at all.",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    },
-    {
-      "jp": "顔はともかく、気立てはとてもいい子だよ。",
-      "id": "Looks aside, she is very good-natured.",
+      "id": "Bisakah kamu menjemputku malam ini?",
       "level": "n2",
       "tags": [
         "umum"
@@ -34013,10 +32264,10 @@ window.vocabN2_Verbs = [
   "word": "捕える",
   "reading": "とらえる",
   "romaji": "toraeru",
-  "meaning_id": "me-seize",
+  "meaning_id": "merebut",
   "meaning_en": "to seize; to grasp; to capture; to arrest",
   "jlpt": "n2",
-  "pos": "verb-ichidan",
+  "pos": "verb-ru",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -34034,15 +32285,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "今日の午後やっと彼を捕らえた。",
-      "id": "I managed to get a hold of him this afternoon.",
+      "id": "Saya berhasil menghubunginya sore ini.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"トラエ＼ル"}
+},
     {
       "jp": "機会を捕らえてそれを有利に利用する。",
-      "id": "I seize the moment and turn it to my advantage.",
+      "id": "Saya memanfaatkan momen ini dan memanfaatkannya untuk keuntungan saya.",
       "level": "n2",
       "tags": [
         "umum"
@@ -34063,10 +32315,10 @@ window.vocabN2_Verbs = [
   "word": "取り入れる",
   "reading": "とりいれる",
   "romaji": "toriireru",
-  "meaning_id": "me-harvest",
+  "meaning_id": "panen",
   "meaning_en": "to harvest; to take in; to adopt",
   "jlpt": "n2",
-  "pos": "verb-ichidan",
+  "pos": "verb-ru",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -34084,15 +32336,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "洗濯物を中へ取り入れて下さい。",
-      "id": "Tolong bring in the washing.",
+      "id": "Tolong bawakan cucian.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":4,"category":"nakadaka","mora_count":5,"downstep_mora":4,"contour":"トリイレ＼ル"}
+},
     {
       "jp": "日本人は新しい思想を非常に良く取り入れる。",
-      "id": "The Japanese are highly receptive to new ideas.",
+      "id": "Orang Jepang sangat mudah menerima ide-ide baru.",
       "level": "n2",
       "tags": [
         "umum"
@@ -34113,10 +32366,10 @@ window.vocabN2_Verbs = [
   "word": "取り消す",
   "reading": "とりけす",
   "romaji": "torikesu",
-  "meaning_id": "me-cancel",
+  "meaning_id": "batalkan",
   "meaning_en": "to cancel",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -34138,11 +32391,12 @@ window.vocabN2_Verbs = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"トリケス￣"}
+},
     {
       "jp": "私は彼女との約束を取り消した。",
-      "id": "I canceled an appointment with her.",
+      "id": "Aku membatalkan janji dengannya.",
       "level": "n2",
       "tags": [
         "umum"
@@ -34163,10 +32417,10 @@ window.vocabN2_Verbs = [
   "word": "取り出す",
   "reading": "とりだす",
   "romaji": "toridasu",
-  "meaning_id": "me-take out",
+  "meaning_id": "mengambil",
   "meaning_en": "to take out; to produce; to pick out",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -34184,15 +32438,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "彼は千円札を財布から取り出した。",
-      "id": "He took out a 1,000-yen note from his wallet.",
+      "id": "Dia mengeluarkan uang kertas 1.000 yen dari dompetnya.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"トリダ＼ス"}
+},
     {
       "jp": "彼は財布から１ドルを取り出した。",
-      "id": "He took out a dollar from his wallet.",
+      "id": "Dia mengeluarkan satu dolar dari dompetnya.",
       "level": "n2",
       "tags": [
         "umum"
@@ -34213,10 +32468,10 @@ window.vocabN2_Verbs = [
   "word": "採る",
   "reading": "とる",
   "romaji": "toru",
-  "meaning_id": "me-adopt",
+  "meaning_id": "mengadopsi",
   "meaning_en": "to adopt (measure, proposal); to pick (fruit)",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -34234,12 +32489,13 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "このカップに尿をとってください。",
-      "id": "Tolong leave a urine sample in this cup.",
+      "id": "Tolong tinggalkan sampel urin di cangkir ini.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":2,"downstep_mora":1,"contour":"ト＼ル"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -34258,7 +32514,7 @@ window.vocabN2_Verbs = [
   "meaning_id": "mengambil",
   "meaning_en": "to take; to catch (fish); to capture",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -34280,11 +32536,12 @@ window.vocabN2_Verbs = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":2,"downstep_mora":1,"contour":"ト＼ル"}
+},
     {
       "jp": "彼らは捕り立ての魚を朝市で売ってくれる。",
-      "id": "They sell us freshly caught fish in the early morning market.",
+      "id": "Mereka menjual ikan segar yang baru ditangkap kepada kami di pasar pagi.",
       "level": "n2",
       "tags": [
         "umum"
@@ -34305,7 +32562,7 @@ window.vocabN2_Verbs = [
   "word": "トレーニング",
   "reading": "トレーニング",
   "romaji": "toreeningu",
-  "meaning_id": "training",
+  "meaning_id": "pelatihan",
   "meaning_en": "training",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -34326,15 +32583,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "彼は筋肉をつけるためにトレーニングしている。",
-      "id": "He has been working out to develop his muscles.",
+      "id": "Dia telah berlatih untuk mengembangkan ototnya.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":0,"downstep_mora":0,"contour":"￣"}
+},
     {
       "jp": "私は懸命にトレーニングして試合に備えた。",
-      "id": "I prepared for the game by training hard.",
+      "id": "Saya mempersiapkan pertandingan dengan berlatih keras.",
       "level": "n2",
       "tags": [
         "umum"
@@ -34355,10 +32613,10 @@ window.vocabN2_Verbs = [
   "word": "治す",
   "reading": "なおす",
   "romaji": "naosu",
-  "meaning_id": "me-cure",
+  "meaning_id": "menyembuhkan",
   "meaning_en": "to cure; to heal; to fix; to correct; to repair",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -34376,15 +32634,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "あの医者は彼のがんを治してくれるかもしれない。",
-      "id": "That doctor may cure him of his cancer.",
+      "id": "Dokter itu mungkin menyembuhkan kankernya.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"ナオ＼ス"}
+},
     {
       "jp": "病気を治すのは医者の仕事である。",
-      "id": "It is the business of doctors cure disease.",
+      "id": "Ini adalah urusan dokter menyembuhkan penyakit.",
       "level": "n2",
       "tags": [
         "umum"
@@ -34405,7 +32664,7 @@ window.vocabN2_Verbs = [
   "word": "仲直り",
   "reading": "なかなおり",
   "romaji": "nakanaori",
-  "meaning_id": "reconciliation; make peace with",
+  "meaning_id": "rekonsiliasi; berdamai dengan",
   "meaning_en": "reconciliation; make peace with",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -34426,15 +32685,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "彼と仲直りしたい。",
-      "id": "Saya ingin come to terms with him.",
+      "id": "Saya ingin berdamai dengannya.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":5,"downstep_mora":3,"contour":"ナカナ＼オリ"}
+},
     {
       "jp": "彼らは仲直りしてまた友達になった。",
-      "id": "They made up and became friends again.",
+      "id": "Mereka berbaikan dan menjadi teman lagi.",
       "level": "n2",
       "tags": [
         "umum"
@@ -34455,10 +32715,10 @@ window.vocabN2_Verbs = [
   "word": "長引く",
   "reading": "ながびく",
   "romaji": "nagabiku",
-  "meaning_id": "me-be prolonged",
+  "meaning_id": "diperpanjang",
   "meaning_en": "to be prolonged; to drag on",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -34476,15 +32736,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "その経済学者は長引く不況を予期していた。",
-      "id": "The economist anticipated a prolonged depression.",
+      "id": "Ekonom mengantisipasi depresi berkepanjangan.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"ナガビ＼ク"}
+},
     {
       "jp": "長引く不況のために、多くの労働者が失業している。",
-      "id": "Because of the protracted depression, many workers are unemployed.",
+      "id": "Karena depresi yang berkepanjangan, banyak pekerja yang menganggur.",
       "level": "n2",
       "tags": [
         "umum"
@@ -34505,10 +32766,10 @@ window.vocabN2_Verbs = [
   "word": "慰める",
   "reading": "なぐさめる",
   "romaji": "nagusameru",
-  "meaning_id": "me-comfort",
+  "meaning_id": "kenyamanan",
   "meaning_en": "to comfort; to console",
   "jlpt": "n2",
-  "pos": "verb-ichidan",
+  "pos": "verb-ru",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -34526,15 +32787,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "夜の静けさが私たちを慰めてくれる。",
-      "id": "The silence of the night comforts us.",
+      "id": "Keheningan malam menghibur kami.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":4,"category":"nakadaka","mora_count":5,"downstep_mora":4,"contour":"ナグサメ＼ル"}
+},
     {
       "jp": "私は彼女を慰めることができる。",
-      "id": "I can comfort her.",
+      "id": "Saya bisa menghiburnya.",
       "level": "n2",
       "tags": [
         "umum"
@@ -34555,10 +32817,10 @@ window.vocabN2_Verbs = [
   "word": "亡くす",
   "reading": "なくす",
   "romaji": "nakusu",
-  "meaning_id": "me-lose",
+  "meaning_id": "kalah",
   "meaning_en": "to lose (a family member, e.g. a wife or child); to be bereaved of",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -34576,15 +32838,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "息子を亡くした夫婦に誰もが同情した。",
-      "id": "Everyone sympathized with the parents about their son's death.",
+      "id": "Semua orang bersimpati kepada orang tua atas kematian putra mereka.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ナクス￣"}
+},
     {
       "jp": "夫を亡くした婦人は、未亡人です。",
-      "id": "A woman whose husband has died is a widow.",
+      "id": "Seorang wanita yang suaminya telah meninggal adalah seorang janda.",
       "level": "n2",
       "tags": [
         "umum"
@@ -34605,10 +32868,10 @@ window.vocabN2_Verbs = [
   "word": "なぐる",
   "reading": "なぐる",
   "romaji": "naguru",
-  "meaning_id": "me-strike",
+  "meaning_id": "menyerang",
   "meaning_en": "to strike; to hit",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -34626,15 +32889,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "ジョージは彼の腹を殴った。",
-      "id": "George hit him in the stomach.",
+      "id": "George memukul perutnya.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"ナグ＼ル"}
+},
     {
       "jp": "彼をなぐったことで君を責めはしない。",
-      "id": "I don't blame you for hitting him.",
+      "id": "Saya tidak menyalahkan Anda karena memukulnya.",
       "level": "n2",
       "tags": [
         "umum"
@@ -34655,10 +32919,10 @@ window.vocabN2_Verbs = [
   "word": "為す",
   "reading": "なす",
   "romaji": "nasu",
-  "meaning_id": "me-accomplish",
+  "meaning_id": "mencapai",
   "meaning_en": "to accomplish; to do",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -34676,15 +32940,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "なした約束は払ってない借りである。",
-      "id": "A promise made is a debt unpaid.",
+      "id": "Janji yang dibuat adalah hutang yang belum dibayar.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":2,"downstep_mora":1,"contour":"ナ＼ス"}
+},
     {
       "jp": "なされたことは元通りにはならない。",
-      "id": "What is done cannot be undone.",
+      "id": "Apa yang sudah dilakukan tidak dapat dibatalkan.",
       "level": "n2",
       "tags": [
         "umum"
@@ -34705,10 +32970,10 @@ window.vocabN2_Verbs = [
   "word": "撫でる",
   "reading": "なでる",
   "romaji": "naderu",
-  "meaning_id": "me-brush gently",
+  "meaning_id": "sikat dengan lembut",
   "meaning_en": "to brush gently; to stroke",
   "jlpt": "n2",
-  "pos": "verb-ichidan",
+  "pos": "verb-ru",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -34726,65 +32991,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "母はため息をつきながら、高校一年生にもなった息子の頭をがしがしと撫でた。",
-      "id": "Mom sighed, and tousled the hair of her first-year high school son's head.",
+      "id": "Ibu menghela nafas, dan mengacak-acak rambut kepala putranya yang duduk di bangku kelas satu SMA.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"ナデ＼ル"}
+},
     {
       "jp": "そよ風が彼女の顔をなでた。",
-      "id": "The breeze kissed her face.",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    }
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "added_v": "v19.3.1-staged-merge",
-  "provenance": "expansion-staged",
-  "jmdict_seq": "",
-  "frequency": 1000
-},
-
-{
-  "id": "vg-n2-01670",
-  "word": "なにしろ",
-  "reading": "なにしろ",
-  "romaji": "nanishiro",
-  "meaning_id": "at any rate; anyhow",
-  "meaning_en": "at any rate; anyhow; anyway; in any case",
-  "jlpt": "n2",
-  "pos": "adverb",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": [
-    "umum",
-    "kehidupan-sehari-hari"
-  ],
-  "register": "formal",
-  "lawan_bicara": [
-    "rekan-kerja",
-    "umum"
-  ],
-  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
-  "conj_type": null,
-  "examples": [
-    {
-      "jp": "彼女はうまくゆかなかったが、なにしろ初めてのことだったからね。",
-      "id": "She did not succeed, but after all that was her first attempt.",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    },
-    {
-      "jp": "なにしろ、独り者で。",
-      "id": "I'm still single.",
+      "id": "Angin sepoi-sepoi mencium wajahnya.",
       "level": "n2",
       "tags": [
         "umum"
@@ -34805,10 +33021,10 @@ window.vocabN2_Verbs = [
   "word": "倣う",
   "reading": "ならう",
   "romaji": "narau",
-  "meaning_id": "me-imitate",
+  "meaning_id": "meniru",
   "meaning_en": "to imitate; to follow; to emulate",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -34826,12 +33042,13 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "彼は父親の例にならっていった。",
-      "id": "He followed in his father's footsteps.",
+      "id": "Dia mengikuti jejak ayahnya.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"ナラ＼ウ"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -34847,10 +33064,10 @@ window.vocabN2_Verbs = [
   "word": "鳴らす",
   "reading": "ならす",
   "romaji": "narasu",
-  "meaning_id": "me-ring",
+  "meaning_id": "cincin",
   "meaning_en": "to ring; to sound; to chime; to beat; to snort (nose)",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -34868,15 +33085,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "火事の時はベルを鳴らせよ。",
-      "id": "In case of fire, ring the bell.",
+      "id": "Jika terjadi kebakaran, bunyikan bel.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ナラス￣"}
+},
     {
       "jp": "馬はじれったそうに鼻を鳴らした。",
-      "id": "The horse snorted impatiently.",
+      "id": "Kuda itu mendengus tidak sabar.",
       "level": "n2",
       "tags": [
         "umum"
@@ -34897,10 +33115,10 @@ window.vocabN2_Verbs = [
   "word": "生る",
   "reading": "なる",
   "romaji": "naru",
-  "meaning_id": "me-bear fruit",
+  "meaning_id": "berbuah",
   "meaning_en": "to bear fruit",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -34918,15 +33136,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "この木には実がならないんだ。",
-      "id": "This tree does not bear fruit.",
+      "id": "Pohon ini tidak berbuah.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":2,"downstep_mora":1,"contour":"ナ＼ル"}
+},
     {
       "jp": "ちまたではインターネットなるものがはやっています。",
-      "id": "People are talking about this Internet phenomenon.",
+      "id": "Orang-orang membicarakan fenomena Internet ini.",
       "level": "n2",
       "tags": [
         "umum"
@@ -34947,10 +33166,10 @@ window.vocabN2_Verbs = [
   "word": "馴れる",
   "reading": "なれる",
   "romaji": "nareru",
-  "meaning_id": "me-become domesticated",
+  "meaning_id": "menjadi dijinakkan",
   "meaning_en": "to become domesticated; to become tame",
   "jlpt": "n2",
-  "pos": "verb-ichidan",
+  "pos": "verb-ru",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -34968,115 +33187,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "学生の時は勉強することになれていた。",
-      "id": "I was used to studying when I was a student.",
+      "id": "Saya sudah terbiasa belajar ketika saya masih mahasiswa.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"ナレ＼ル"}
+},
     {
       "jp": "彼女は料理をするのに慣れている。",
       "id": "Dia used to cooking.",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    }
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "added_v": "v19.3.1-staged-merge",
-  "provenance": "expansion-staged",
-  "jmdict_seq": "",
-  "frequency": 1000
-},
-
-{
-  "id": "vg-n2-01680",
-  "word": "なんとなく",
-  "reading": "なんとなく",
-  "romaji": "nantonaku",
-  "meaning_id": "somehow or other; for some reason or another",
-  "meaning_en": "somehow or other; for some reason or another",
-  "jlpt": "n2",
-  "pos": "adverb",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": [
-    "umum",
-    "kehidupan-sehari-hari"
-  ],
-  "register": "formal",
-  "lawan_bicara": [
-    "rekan-kerja",
-    "umum"
-  ],
-  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
-  "conj_type": null,
-  "examples": [
-    {
-      "jp": "私はなんとなく彼の家を見つけた。",
-      "id": "Somehow or other I found his house.",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    },
-    {
-      "jp": "何となくはわかりました。",
-      "id": "I sort of understand.",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    }
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "added_v": "v19.3.1-staged-merge",
-  "provenance": "expansion-staged",
-  "jmdict_seq": "",
-  "frequency": 1000
-},
-
-{
-  "id": "vg-n2-01681",
-  "word": "なんとも",
-  "reading": "なんとも",
-  "romaji": "nantomo",
-  "meaning_id": "nothing (with neg. verb); quite",
-  "meaning_en": "nothing (with neg. verb); quite; not a bit",
-  "jlpt": "n2",
-  "pos": "adverb",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": [
-    "umum",
-    "kehidupan-sehari-hari"
-  ],
-  "register": "formal",
-  "lawan_bicara": [
-    "rekan-kerja",
-    "umum"
-  ],
-  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
-  "conj_type": null,
-  "examples": [
-    {
-      "jp": "何とも言いようがないなあ。",
-      "id": "I just don't know what to say.",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    },
-    {
-      "jp": "彼は苦難をナントも思わなかった。",
-      "id": "He made nothing of hardship.",
       "level": "n2",
       "tags": [
         "umum"
@@ -35097,10 +33217,10 @@ window.vocabN2_Verbs = [
   "word": "煮える",
   "reading": "にえる",
   "romaji": "nieru",
-  "meaning_id": "me-boil",
+  "meaning_id": "mendidih",
   "meaning_en": "to boil; to cook; to be cooked",
   "jlpt": "n2",
-  "pos": "verb-ichidan",
+  "pos": "verb-ru",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -35118,12 +33238,13 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "スープがなべでぐつぐつ煮えている。",
-      "id": "The soup is bubbling in the pot.",
+      "id": "Supnya menggelembung di dalam panci.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ニエル￣"}
+},
     {
       "jp": "この野菜はなかなか煮えない。",
       "id": "These vegetables cook slowly.",
@@ -35147,10 +33268,10 @@ window.vocabN2_Verbs = [
   "word": "匂う",
   "reading": "におう",
   "romaji": "niou",
-  "meaning_id": "me-be fragrant",
+  "meaning_id": "menjadi harum",
   "meaning_en": "to be fragrant; to smell; to stink",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -35168,12 +33289,13 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "この辺臭うんだけど。",
-      "id": "Something stinks here.",
+      "id": "Ada yang bau di sini.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"ニオ＼ウ"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -35189,10 +33311,10 @@ window.vocabN2_Verbs = [
   "word": "逃がす",
   "reading": "にがす",
   "romaji": "nigasu",
-  "meaning_id": "me-let loose",
+  "meaning_id": "lepaskan",
   "meaning_en": "to let loose; to set free; to let escape",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -35214,11 +33336,12 @@ window.vocabN2_Verbs = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"ニガ＼ス"}
+},
     {
       "jp": "今度こそは彼女を逃がさないぞ。",
-      "id": "I will not let her escape this time.",
+      "id": "Aku tidak akan membiarkan dia lolos kali ini.",
       "level": "n2",
       "tags": [
         "umum"
@@ -35239,10 +33362,10 @@ window.vocabN2_Verbs = [
   "word": "憎む",
   "reading": "にくむ",
   "romaji": "nikumu",
-  "meaning_id": "me-hate",
+  "meaning_id": "benci",
   "meaning_en": "to hate; to detest",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -35260,15 +33383,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "自分を憎む者にも親切にしなさい。",
-      "id": "Do good to those who hate you.",
+      "id": "Berbuat baiklah kepada mereka yang membencimu.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"ニク＼ム"}
+},
     {
       "jp": "彼が私を憎む理由がわかりはじめた。",
-      "id": "I began to understand the reason why he hated me.",
+      "id": "Aku mulai memahami alasan mengapa dia membenciku.",
       "level": "n2",
       "tags": [
         "umum"
@@ -35289,7 +33413,7 @@ window.vocabN2_Verbs = [
   "word": "にこにこ",
   "reading": "にこにこ",
   "romaji": "nikoniko",
-  "meaning_id": "with a friendly grin; smilingly",
+  "meaning_id": "dengan senyum ramah; sambil tersenyum",
   "meaning_en": "with a friendly grin; smilingly",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -35314,11 +33438,12 @@ window.vocabN2_Verbs = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":0,"downstep_mora":1,"contour":"＼"}
+},
     {
       "jp": "彼女はにこにこしてうれしそうだった。",
-      "id": "She was all smiles.",
+      "id": "Dia tersenyum.",
       "level": "n2",
       "tags": [
         "umum"
@@ -35339,10 +33464,10 @@ window.vocabN2_Verbs = [
   "word": "濁る",
   "reading": "にごる",
   "romaji": "nigoru",
-  "meaning_id": "me-become muddy",
+  "meaning_id": "menjadi berlumpur",
   "meaning_en": "to become muddy; to get impure",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -35364,11 +33489,12 @@ window.vocabN2_Verbs = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"ニゴ＼ル"}
+},
     {
       "jp": "尿の色が濁っています。",
-      "id": "My urine is cloudy.",
+      "id": "Urine saya keruh.",
       "level": "n2",
       "tags": [
         "umum"
@@ -35389,7 +33515,7 @@ window.vocabN2_Verbs = [
   "word": "入社",
   "reading": "にゅうしゃ",
   "romaji": "nyuusha",
-  "meaning_id": "entry to a company",
+  "meaning_id": "masuk ke suatu perusahaan",
   "meaning_en": "entry to a company",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -35410,15 +33536,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "彼は高校卒業直後に入社した。",
-      "id": "He joined the company right after he got through high school.",
+      "id": "Dia bergabung dengan perusahaan segera setelah dia lulus SMA.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ニュウシャ￣"}
+},
     {
       "jp": "あの男鳴り物入りで入社したけど、実力のほど看板に偽りなしだったね。",
-      "id": "He came on board this company with a lot of fanfare and he turns out to have the skill and talent to live up to it.",
+      "id": "Dia bergabung dengan perusahaan ini dengan banyak kemeriahan dan ternyata dia memiliki keterampilan dan bakat untuk mewujudkannya.",
       "level": "n2",
       "tags": [
         "umum"
@@ -35439,10 +33566,10 @@ window.vocabN2_Verbs = [
   "word": "睨む",
   "reading": "にらむ",
   "romaji": "niramu",
-  "meaning_id": "me-glare at",
+  "meaning_id": "memelototi",
   "meaning_en": "to glare at; to scowl at; to keep an eye on",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -35460,15 +33587,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "彼はにくらしげに彼女をにらんだ。",
-      "id": "He stared at her with hatred.",
+      "id": "Dia menatapnya dengan kebencian.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"ニラ＼ム"}
+},
     {
       "jp": "彼女は冷たくじろりとこちらをにらんだ。",
-      "id": "She gave me the fish eye.",
+      "id": "Dia memberiku mata ikan.",
       "level": "n2",
       "tags": [
         "umum"
@@ -35489,10 +33617,10 @@ window.vocabN2_Verbs = [
   "word": "煮る",
   "reading": "にる",
   "romaji": "niru",
-  "meaning_id": "me-boil",
+  "meaning_id": "mendidih",
   "meaning_en": "to boil; to cook",
   "jlpt": "n2",
-  "pos": "verb-ichidan",
+  "pos": "verb-ru",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -35510,15 +33638,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "くたくたに煮る。",
-      "id": "Reduce to pulp by boiling.",
+      "id": "Kurangi menjadi bubur dengan cara direbus.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":2,"downstep_mora":0,"contour":"ニル￣"}
+},
     {
       "jp": "必ず弱火で煮立たないように煮ること。",
-      "id": "Be sure to simmer on a low heat so it doesn't boil.",
+      "id": "Pastikan untuk merebusnya dengan api kecil agar tidak mendidih.",
       "level": "n2",
       "tags": [
         "umum"
@@ -35539,10 +33668,10 @@ window.vocabN2_Verbs = [
   "word": "縫う",
   "reading": "ぬう",
   "romaji": "nuu",
-  "meaning_id": "me-sew",
+  "meaning_id": "menjahit",
   "meaning_en": "to sew",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -35564,11 +33693,12 @@ window.vocabN2_Verbs = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":2,"downstep_mora":1,"contour":"ヌ＼ウ"}
+},
     {
       "jp": "その小道は山中を縫って続いている。",
-      "id": "The path twists through the mountains.",
+      "id": "Jalannya berkelok-kelok melewati pegunungan.",
       "level": "n2",
       "tags": [
         "umum"
@@ -35589,10 +33719,10 @@ window.vocabN2_Verbs = [
   "word": "濡らす",
   "reading": "ぬらす",
   "romaji": "nurasu",
-  "meaning_id": "me-wet",
+  "meaning_id": "basah",
   "meaning_en": "to wet; to soak; to dip",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -35614,8 +33744,9 @@ window.vocabN2_Verbs = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ヌラス￣"}
+},
     {
       "jp": "彼は手を濡らさずに大金をつかんだ。",
       "id": "He made a lot of easy money.",
@@ -35639,10 +33770,10 @@ window.vocabN2_Verbs = [
   "word": "捩る",
   "reading": "ねじる",
   "romaji": "nejiru",
-  "meaning_id": "me-twist",
+  "meaning_id": "memutar",
   "meaning_en": "to twist",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -35660,15 +33791,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "その取っ手を右にねじると箱は開きます。",
-      "id": "Twist that knob to the right and the box will open.",
+      "id": "Putar kenop itu ke kanan dan kotak akan terbuka.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"ネジ＼ル"}
+},
     {
       "jp": "背後に声がしたので彼女は体をねじって振り返った。",
-      "id": "She twists around at a voice behind.",
+      "id": "Dia berbalik mendengar suara di belakang.",
       "level": "n2",
       "tags": [
         "umum"
@@ -35689,7 +33821,7 @@ window.vocabN2_Verbs = [
   "word": "熱する",
   "reading": "ねっする",
   "romaji": "nessuru",
-  "meaning_id": "me-heat",
+  "meaning_id": "panas",
   "meaning_en": "to heat",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -35710,12 +33842,13 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "水は熱せられると蒸気になる。",
-      "id": "Water changes into vapor when it is heated.",
+      "id": "Air berubah menjadi uap ketika dipanaskan.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ネッスル￣"}
+},
     {
       "jp": "電気アイロンは電気で熱せられる。",
       "id": "Electric irons are heated by electricity.",
@@ -35739,10 +33872,10 @@ window.vocabN2_Verbs = [
   "word": "狙う",
   "reading": "ねらう",
   "romaji": "nerau",
-  "meaning_id": "me-aim at",
+  "meaning_id": "membidik",
   "meaning_en": "to aim at",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -35764,61 +33897,12 @@ window.vocabN2_Verbs = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ネラウ￣"}
+},
     {
       "jp": "彼はその兵士をねらって矢を放った。",
-      "id": "He shot an arrow at the soldier.",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    }
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "added_v": "v19.3.1-staged-merge",
-  "provenance": "expansion-staged",
-  "jmdict_seq": "",
-  "frequency": 1000
-},
-
-{
-  "id": "vg-n2-01721",
-  "word": "残らず",
-  "reading": "のこらず",
-  "romaji": "nokorazu",
-  "meaning_id": "all; entirely",
-  "meaning_en": "all; entirely; completely; without exception",
-  "jlpt": "n2",
-  "pos": "adverb",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": [
-    "umum",
-    "kehidupan-sehari-hari"
-  ],
-  "register": "formal",
-  "lawan_bicara": [
-    "rekan-kerja",
-    "umum"
-  ],
-  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
-  "conj_type": null,
-  "examples": [
-    {
-      "jp": "彼は有り金を残らず奪われた。",
-      "id": "He was robbed of all his money.",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    },
-    {
-      "jp": "私はその本を全編残らず読んだ。",
-      "id": "I read the book from cover to cover.",
+      "id": "Dia menembakkan panah ke arah prajurit itu.",
       "level": "n2",
       "tags": [
         "umum"
@@ -35839,10 +33923,10 @@ window.vocabN2_Verbs = [
   "word": "載せる",
   "reading": "のせる",
   "romaji": "noseru",
-  "meaning_id": "me-place on",
+  "meaning_id": "tempatkan",
   "meaning_en": "to place on (something); to take on board; to give a ride",
   "jlpt": "n2",
-  "pos": "verb-ichidan",
+  "pos": "verb-ru",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -35864,11 +33948,12 @@ window.vocabN2_Verbs = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ノセル￣"}
+},
     {
       "jp": "彼の演説の要約が新聞に載せられた。",
-      "id": "A summary of his speech was printed in the newspaper.",
+      "id": "Ringkasan pidatonya dicetak di surat kabar.",
       "level": "n2",
       "tags": [
         "umum"
@@ -35889,10 +33974,10 @@ window.vocabN2_Verbs = [
   "word": "覗く",
   "reading": "のぞく",
   "romaji": "nozoku",
-  "meaning_id": "me-peep in",
+  "meaning_id": "mengintip ke dalam",
   "meaning_en": "to peep in; to look in; to peek in; to stick out",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -35910,15 +33995,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "その箱をのぞいてはいけない。",
-      "id": "Don't look into the box.",
+      "id": "Jangan melihat ke dalam kotak.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ノゾク￣"}
+},
     {
       "jp": "私は壁の裂け目から外を覗いた。",
-      "id": "I peeped out through a crack in the wall.",
+      "id": "Aku mengintip melalui celah di dinding.",
       "level": "n2",
       "tags": [
         "umum"
@@ -35939,10 +34025,10 @@ window.vocabN2_Verbs = [
   "word": "延ばす",
   "reading": "のばす",
   "romaji": "nobasu",
-  "meaning_id": "me-lengthen",
+  "meaning_id": "memanjangkan",
   "meaning_en": "to lengthen; to stretch; to reach out; to grow (beard)",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -35960,15 +34046,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "その仕事を明日まで延ばすな。",
-      "id": "Don't put off the work till tomorrow.",
+      "id": "Jangan menunda pekerjaan sampai besok.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"ノバ＼ス"}
+},
     {
       "jp": "もう１日滞在を延ばしたいのですが、泊まれますか。",
-      "id": "I'd like to stay one more night. Is that possible?",
+      "id": "Saya ingin menginap satu malam lagi. Apakah itu mungkin?",
       "level": "n2",
       "tags": [
         "umum"
@@ -35989,10 +34076,10 @@ window.vocabN2_Verbs = [
   "word": "延びる",
   "reading": "のびる",
   "romaji": "nobiru",
-  "meaning_id": "me-be prolonged",
+  "meaning_id": "diperpanjang",
   "meaning_en": "to be prolonged",
   "jlpt": "n2",
-  "pos": "verb-ichidan",
+  "pos": "verb-ru",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -36010,15 +34097,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "道路はここから北へ延びている。",
-      "id": "The road goes north from here.",
+      "id": "Jalan menuju ke utara dari sini.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"ノビ＼ル"}
+},
     {
       "jp": "会議は来週までのびた。",
-      "id": "The meeting has been put off until next week.",
+      "id": "Pertemuan itu ditunda hingga minggu depan.",
       "level": "n2",
       "tags": [
         "umum"
@@ -36039,10 +34127,10 @@ window.vocabN2_Verbs = [
   "word": "上る",
   "reading": "のぼる",
   "romaji": "noboru",
-  "meaning_id": "me-ascend",
+  "meaning_id": "naik",
   "meaning_en": "to ascend; to go up; to climb",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -36060,15 +34148,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "損失は１００万ドル以上にのぼる。",
-      "id": "The loss adds up to more than one million dollars.",
+      "id": "Kerugiannya mencapai lebih dari satu juta dolar.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ノボル￣"}
+},
     {
       "jp": "彼らは川を舟をこいで上った。",
-      "id": "They rowed up the river.",
+      "id": "Mereka mendayung menyusuri sungai.",
       "level": "n2",
       "tags": [
         "umum"
@@ -36089,7 +34178,7 @@ window.vocabN2_Verbs = [
   "word": "乗換",
   "reading": "のりかえ",
   "romaji": "norikae",
-  "meaning_id": "transfer (trains, buses, etc.)",
+  "meaning_id": "transfer (kereta api, bus, dll.)",
   "meaning_en": "transfer (trains, buses, etc.)",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -36110,15 +34199,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "途中で乗り換えが必要ですか。",
-      "id": "Is it necessary to change trains along the way?",
+      "id": "Apakah perlu berganti kereta di sepanjang perjalanan?",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ノリカエ￣"}
+},
     {
       "jp": "この電車が遅れたら、神戸での乗り換えにまにあわない。",
-      "id": "If this train is delayed, we shall miss our connection at Kobe.",
+      "id": "Jika kereta ini tertunda, kami akan ketinggalan sambungan di Kobe.",
       "level": "n2",
       "tags": [
         "umum"
@@ -36139,10 +34229,10 @@ window.vocabN2_Verbs = [
   "word": "載る",
   "reading": "のる",
   "romaji": "noru",
-  "meaning_id": "me-appear",
+  "meaning_id": "muncul",
   "meaning_en": "to appear (in print); to be recorded",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -36160,15 +34250,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "どの新聞にも彼の詳しい人相書きが載った。",
-      "id": "A full description of him has been circulated in every newspaper.",
+      "id": "Penjelasan lengkap tentang dirinya telah beredar di setiap surat kabar.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":2,"downstep_mora":0,"contour":"ノル￣"}
+},
     {
       "jp": "朝日新聞にはそのニュースは載っていない。",
-      "id": "The Asahi Shimbun did not carry that news.",
+      "id": "Asahi Shimbun tidak memuat berita itu.",
       "level": "n2",
       "tags": [
         "umum"
@@ -36189,7 +34280,7 @@ window.vocabN2_Verbs = [
   "word": "のろのろ",
   "reading": "のろのろ",
   "romaji": "noronoro",
-  "meaning_id": "slowly; sluggishly",
+  "meaning_id": "perlahan; dengan lamban",
   "meaning_en": "slowly; sluggishly",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -36210,15 +34301,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "タクシーはカタツムリと同じくらいのろのろ進んでいるように思えた。",
-      "id": "The taxi seemed to go as slowly as a snail.",
+      "id": "Taksi itu sepertinya berjalan lambat seperti siput.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":0,"downstep_mora":1,"contour":"＼"}
+},
     {
       "jp": "休日で車は街道をのろのろと動いた。",
-      "id": "The holiday traffic crawled along the highway.",
+      "id": "Lalu lintas liburan merangkak di sepanjang jalan raya.",
       "level": "n2",
       "tags": [
         "umum"
@@ -36239,7 +34331,7 @@ window.vocabN2_Verbs = [
   "word": "売買",
   "reading": "ばいばい",
   "romaji": "baibai",
-  "meaning_id": "trade; buying and selling",
+  "meaning_id": "perdagangan; membeli dan menjual",
   "meaning_en": "trade; buying and selling",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -36260,15 +34352,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "彼は革製品の売買をしている。",
-      "id": "He buys and sells leather goods.",
+      "id": "Dia membeli dan menjual barang-barang kulit.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":4,"downstep_mora":1,"contour":"バ＼イバイ"}
+},
     {
       "jp": "ディール市内と近辺の家屋の売買を仲介しています。",
-      "id": "She arranges the buying and selling of houses in and around Deal.",
+      "id": "Dia mengatur pembelian dan penjualan rumah di dalam dan sekitar Deal.",
       "level": "n2",
       "tags": [
         "umum"
@@ -36289,10 +34382,10 @@ window.vocabN2_Verbs = [
   "word": "這う",
   "reading": "はう",
   "romaji": "hau",
-  "meaning_id": "me-creep",
+  "meaning_id": "merayap",
   "meaning_en": "to creep; to crawl",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -36310,15 +34403,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "赤ちゃんは部屋に這ってきた。",
-      "id": "The baby crept into the room.",
+      "id": "Bayi itu merangkak masuk ke dalam kamar.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":2,"downstep_mora":1,"contour":"ハ＼ウ"}
+},
     {
       "jp": "彼らは前方へはって進んでいった。",
-      "id": "They crept forward.",
+      "id": "Mereka merayap maju.",
       "level": "n2",
       "tags": [
         "umum"
@@ -36339,10 +34433,10 @@ window.vocabN2_Verbs = [
   "word": "生える",
   "reading": "はえる",
   "romaji": "haeru",
-  "meaning_id": "me-grow",
+  "meaning_id": "tumbuh",
   "meaning_en": "to grow; to spring up; to cut (teeth)",
   "jlpt": "n2",
-  "pos": "verb-ichidan",
+  "pos": "verb-ru",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -36360,15 +34454,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "この子は今歯が生えかけているところです。",
-      "id": "This child is teething now.",
+      "id": "Anak ini sedang tumbuh gigi sekarang.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"ハエ＼ル"}
+},
     {
       "jp": "花の間に多くの雑草が生えていた。",
-      "id": "Many weeds were growing among the flowers.",
+      "id": "Banyak rumput liar tumbuh di antara bunga-bunga itu.",
       "level": "n2",
       "tags": [
         "umum"
@@ -36389,10 +34484,10 @@ window.vocabN2_Verbs = [
   "word": "はがす",
   "reading": "はがす",
   "romaji": "hagasu",
-  "meaning_id": "me-tear off",
+  "meaning_id": "merobek",
   "meaning_en": "to tear off; to peel off; to rip off",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -36410,15 +34505,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "彼女は窓からステッカーを引き剥がした。",
-      "id": "She tore away the stickers from the window.",
+      "id": "Dia merobek stiker dari jendela.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"ハガ＼ス"}
+},
     {
       "jp": "その警官は家から看板をはがした。",
-      "id": "The policeman tore the signboard from the house.",
+      "id": "Polisi itu merobek papan nama dari rumah.",
       "level": "n2",
       "tags": [
         "umum"
@@ -36439,10 +34535,10 @@ window.vocabN2_Verbs = [
   "word": "測る",
   "reading": "はかる",
   "romaji": "hakaru",
-  "meaning_id": "me-measure",
+  "meaning_id": "mengukur",
   "meaning_en": "to measure; to weigh; to survey",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -36460,15 +34556,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "われわれはその川の深さを測った。",
-      "id": "We measured the depth of the river.",
+      "id": "Kami mengukur kedalaman sungai.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"ハカ＼ル"}
+},
     {
       "jp": "ものさしでその棒の長さを測りなさい。",
-      "id": "Measure the length of the stick with a ruler.",
+      "id": "Ukur panjang tongkat dengan penggaris.",
       "level": "n2",
       "tags": [
         "umum"
@@ -36489,10 +34586,10 @@ window.vocabN2_Verbs = [
   "word": "量る",
   "reading": "はかる",
   "romaji": "hakaru",
-  "meaning_id": "me-measure",
+  "meaning_id": "mengukur",
   "meaning_en": "to measure; to weigh; to survey",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -36510,15 +34607,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "彼は肉を切り刻んで重さを量った。",
-      "id": "He cut up the meat and weighed it.",
+      "id": "Dia memotong daging dan menimbangnya.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"ハカ＼ル"}
+},
     {
       "jp": "メアリーはその重さを手で量った。",
-      "id": "Mary weighed it in her hand.",
+      "id": "Mary menimbangnya di tangannya.",
       "level": "n2",
       "tags": [
         "umum"
@@ -36539,7 +34637,7 @@ window.vocabN2_Verbs = [
   "word": "はきはき",
   "reading": "はきはき",
   "romaji": "hakihaki",
-  "meaning_id": "lucidly",
+  "meaning_id": "dengan jelas",
   "meaning_en": "lucidly",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -36560,12 +34658,13 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "はきはきと意見を言ってください。",
-      "id": "Tolong state your opinion crisply and clearly.",
+      "id": "Tolong nyatakan pendapat anda dengan tegas dan jelas.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":0,"downstep_mora":1,"contour":"＼"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -36581,10 +34680,10 @@ window.vocabN2_Verbs = [
   "word": "掃く",
   "reading": "はく",
   "romaji": "haku",
-  "meaning_id": "me-sweep",
+  "meaning_id": "menyapu",
   "meaning_en": "to sweep; to brush; to gather up",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -36602,15 +34701,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "お前は床を掃きさえすればよい。",
-      "id": "You have only to sweep the floor.",
+      "id": "Anda hanya perlu menyapu lantai.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":2,"downstep_mora":1,"contour":"ハ＼ク"}
+},
     {
       "jp": "台所をきれいに掃くのを忘れないように。",
-      "id": "Don't forget to sweep the kitchen clean.",
+      "id": "Jangan lupa menyapu dapur hingga bersih.",
       "level": "n2",
       "tags": [
         "umum"
@@ -36631,10 +34731,10 @@ window.vocabN2_Verbs = [
   "word": "挟まる",
   "reading": "はさまる",
   "romaji": "hasamaru",
-  "meaning_id": "me-get between",
+  "meaning_id": "mendapatkan di antara keduanya",
   "meaning_en": "to get between; to be caught in",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -36652,15 +34752,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "女の子の指がドアにはさまった。",
-      "id": "A little girl caught her fingers in the door.",
+      "id": "Seorang gadis kecil menangkap jarinya di pintu.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"ハサマ＼ル"}
+},
     {
       "jp": "ハッキリ言ってくれよ。そんな奥歯に物のはさまったような言い方しないで。",
-      "id": "Quit talking like you've got something stuck in your mouth and say what you mean.",
+      "id": "Berhentilah berbicara seolah-olah ada sesuatu yang tersangkut di mulut Anda dan katakan apa yang Anda maksud.",
       "level": "n2",
       "tags": [
         "umum"
@@ -36681,10 +34782,10 @@ window.vocabN2_Verbs = [
   "word": "挟む",
   "reading": "はさむ",
   "romaji": "hasamu",
-  "meaning_id": "me-interpose",
+  "meaning_id": "menyela",
   "meaning_en": "to interpose; to hold between; to insert",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -36702,15 +34803,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "彼は耳に鉛筆を挟んだ。",
-      "id": "He stuck his pencil behind his ear.",
+      "id": "Dia menancapkan pensilnya ke belakang telinga.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"ハサ＼ム"}
+},
     {
       "jp": "彼女はドアに指を挟んでしまった。",
-      "id": "She shut the door on her finger.",
+      "id": "Dia menutup pintu dengan jarinya.",
       "level": "n2",
       "tags": [
         "umum"
@@ -36731,10 +34833,10 @@ window.vocabN2_Verbs = [
   "word": "外れる",
   "reading": "はずれる",
   "romaji": "hazureru",
-  "meaning_id": "me-be disconnected",
+  "meaning_id": "terputus",
   "meaning_en": "to be disconnected; to get out of place; to be off; to be out (e.g. of gear)",
   "jlpt": "n2",
-  "pos": "verb-ichidan",
+  "pos": "verb-ru",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -36752,65 +34854,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "彼はけがでチームから外れた。",
-      "id": "He was dropped from the team because of an injury.",
+      "id": "Dia dikeluarkan dari tim karena cedera.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ハズレル￣"}
+},
     {
       "jp": "彼の説明は要点を外れています。",
-      "id": "His explanation is beside the point.",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    }
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "added_v": "v19.3.1-staged-merge",
-  "provenance": "expansion-staged",
-  "jmdict_seq": "",
-  "frequency": 1000
-},
-
-{
-  "id": "vg-n2-01759",
-  "word": "果して",
-  "reading": "はたして",
-  "romaji": "hatashite",
-  "meaning_id": "as was expected; really",
-  "meaning_en": "as was expected; really",
-  "jlpt": "n2",
-  "pos": "adverb",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": [
-    "umum",
-    "kehidupan-sehari-hari"
-  ],
-  "register": "formal",
-  "lawan_bicara": [
-    "rekan-kerja",
-    "umum"
-  ],
-  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
-  "conj_type": null,
-  "examples": [
-    {
-      "jp": "あなたの言う事が果たして事実なのか調べてみよう。",
-      "id": "We will check to see if what you have said is really the truth.",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    },
-    {
-      "jp": "はたして彼の話は本当だろうか。",
-      "id": "Can his story be true?",
+      "id": "Penjelasannya tidak penting.",
       "level": "n2",
       "tags": [
         "umum"
@@ -36852,12 +34905,13 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "この作家が本領を発揮しているのは短編小説だ。",
-      "id": "This writer is at his best in his short stories.",
+      "id": "Penulis ini sedang dalam kondisi terbaiknya dalam cerita pendeknya.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ハッキ￣"}
+},
     {
       "jp": "彼は経済学の話をすると本領を発揮する。",
       "id": "Dia in his element when talking economics.",
@@ -36902,15 +34956,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "大砲が偶然発射してしまった。",
-      "id": "The cannon went off by accident.",
+      "id": "Meriam itu meledak secara tidak sengaja.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ハッシャ￣"}
+},
     {
       "jp": "暴漢のピストルが発射された。",
-      "id": "A ruffian's pistol went off.",
+      "id": "Pistol seorang bajingan meledak.",
       "level": "n2",
       "tags": [
         "umum"
@@ -36931,7 +34986,7 @@ window.vocabN2_Verbs = [
   "word": "発電",
   "reading": "はつでん",
   "romaji": "hatsuden",
-  "meaning_id": "generation (e.g. power)",
+  "meaning_id": "pembangkitan (misalnya listrik)",
   "meaning_en": "generation (e.g. power)",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -36952,15 +35007,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "原子力が発電に使われている。",
-      "id": "Nuclear power is used to generate electricity.",
+      "id": "Tenaga nuklir digunakan untuk menghasilkan listrik.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ハツデン￣"}
+},
     {
       "jp": "太陽熱は日本では発電より太陽熱温水器として利用されています。",
-      "id": "In Japan solar heat is used more for solar water heaters than for electricity generation.",
+      "id": "Di Jepang, panas matahari lebih banyak digunakan untuk pemanas air tenaga surya dibandingkan untuk pembangkit listrik.",
       "level": "n2",
       "tags": [
         "umum"
@@ -36981,7 +35037,7 @@ window.vocabN2_Verbs = [
   "word": "発売",
   "reading": "はつばい",
   "romaji": "hatsubai",
-  "meaning_id": "sale",
+  "meaning_id": "penjualan",
   "meaning_en": "sale",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -37002,15 +35058,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "あなたの本はいつ発売されるのですか。",
-      "id": "When is your book coming out?",
+      "id": "Kapan bukumu terbit?",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ハツバイ￣"}
+},
     {
       "jp": "ジョンテル社はチップ・セットの発売を８月まで延期する見込みだ。",
-      "id": "John Tel is expected to delay the release of its chip set until August.",
+      "id": "John Tel diperkirakan akan menunda peluncuran set chipnya hingga Agustus.",
       "level": "n2",
       "tags": [
         "umum"
@@ -37031,7 +35088,7 @@ window.vocabN2_Verbs = [
   "word": "話合い",
   "reading": "はなしあい",
   "romaji": "hanashiai",
-  "meaning_id": "discussion; conference",
+  "meaning_id": "diskusi; konferensi",
   "meaning_en": "discussion; conference",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -37052,15 +35109,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "話し合いはちょっと中断した。",
-      "id": "There was a brief break in the discussion.",
+      "id": "Terjadi jeda singkat dalam diskusi.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":5,"downstep_mora":0,"contour":"ハナシアイ￣"}
+},
     {
       "jp": "彼は話し合いでは中立の立場をとった。",
-      "id": "He was a neutral participant at the discussion.",
+      "id": "Dia adalah peserta netral dalam diskusi tersebut.",
       "level": "n2",
       "tags": [
         "umum"
@@ -37081,10 +35139,10 @@ window.vocabN2_Verbs = [
   "word": "話し掛ける",
   "reading": "はなしかける",
   "romaji": "hanashikakeru",
-  "meaning_id": "me-accost a person",
+  "meaning_id": "menghampiri seseorang",
   "meaning_en": "to accost a person; to talk (to someone)",
   "jlpt": "n2",
-  "pos": "verb-ichidan",
+  "pos": "verb-ru",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -37102,15 +35160,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "男が近づいて私に話しかけた。",
-      "id": "A man came up and spoke to me.",
+      "id": "Seorang pria datang dan berbicara kepada saya.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":5,"category":"nakadaka","mora_count":6,"downstep_mora":5,"contour":"ハナシカケ＼ル"}
+},
     {
       "jp": "私はそんな失礼な話しかけられ方に慣れていない。",
-      "id": "I'm not used to being talked to in such a rude manner.",
+      "id": "Aku tidak terbiasa diajak bicara kasar seperti itu.",
       "level": "n2",
       "tags": [
         "umum"
@@ -37131,10 +35190,10 @@ window.vocabN2_Verbs = [
   "word": "放れる",
   "reading": "はなれる",
   "romaji": "hanareru",
-  "meaning_id": "me-leave",
+  "meaning_id": "pergi",
   "meaning_en": "to leave; to get free; to cut oneself off",
   "jlpt": "n2",
-  "pos": "verb-ichidan",
+  "pos": "verb-ru",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -37152,12 +35211,13 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "放れるを使います。",
-      "id": "Menggunakan me-leave.",
+      "id": "Menggunakan pergi.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"ハナレ＼ル"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -37173,10 +35233,10 @@ window.vocabN2_Verbs = [
   "word": "跳ねる",
   "reading": "はねる",
   "romaji": "haneru",
-  "meaning_id": "me-jump",
+  "meaning_id": "melompat",
   "meaning_en": "to jump; to leap",
   "jlpt": "n2",
-  "pos": "verb-ichidan",
+  "pos": "verb-ru",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -37194,15 +35254,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "犬が跳ねるのをごらん。",
-      "id": "Look at the dog jump.",
+      "id": "Lihatlah anjing itu melompat.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"ハネ＼ル"}
+},
     {
       "jp": "そのイナゴは大きく跳ねた。",
-      "id": "The locust made a big jump.",
+      "id": "Belalang itu melakukan lompatan besar.",
       "level": "n2",
       "tags": [
         "umum"
@@ -37226,7 +35287,7 @@ window.vocabN2_Verbs = [
   "meaning_id": "(colloquial) to get in; to insert",
   "meaning_en": "(colloquial) to get in; to insert; to put on; to make love",
   "jlpt": "n2",
-  "pos": "verb-ichidan",
+  "pos": "verb-ru",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -37244,15 +35305,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "オレ、うまくハメられた。",
-      "id": "I was nicely framed.",
+      "id": "Saya dijebak dengan baik.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ハメル￣"}
+},
     {
       "jp": "彼女は左手の薬指にダイヤの指輪をはめていた。",
-      "id": "She wore a diamond ring on her left third finger.",
+      "id": "Dia mengenakan cincin berlian di jari ketiga kirinya.",
       "level": "n2",
       "tags": [
         "umum"
@@ -37273,10 +35335,10 @@ window.vocabN2_Verbs = [
   "word": "流行る",
   "reading": "はやる",
   "romaji": "hayaru",
-  "meaning_id": "me-flourish",
+  "meaning_id": "berkembang",
   "meaning_en": "to flourish; to thrive; to be popular; to come into fashion",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -37294,15 +35356,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "今インフルエンザが流行ってます。",
-      "id": "There's a lot of flu going around now.",
+      "id": "Ada banyak flu yang terjadi sekarang.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"ハヤ＼ル"}
+},
     {
       "jp": "ロングスカートは流行ってないよ。",
-      "id": "Long skirts are out of fashion now.",
+      "id": "Rok panjang sudah ketinggalan zaman sekarang.",
       "level": "n2",
       "tags": [
         "umum"
@@ -37323,10 +35386,10 @@ window.vocabN2_Verbs = [
   "word": "払い込む",
   "reading": "はらいこむ",
   "romaji": "haraikomu",
-  "meaning_id": "me-deposit",
+  "meaning_id": "setoran",
   "meaning_en": "to deposit; to pay in",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -37344,15 +35407,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "月に１万円づつ銀行に払い込んだ。",
-      "id": "I put ten thousand yen into the bank every month.",
+      "id": "Saya menaruh sepuluh ribu yen ke bank setiap bulan.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":4,"category":"nakadaka","mora_count":5,"downstep_mora":4,"contour":"ハライコ＼ム"}
+},
     {
       "jp": "彼はそのお金を口座に払い込んだ。",
-      "id": "He paid the money into his account.",
+      "id": "Dia membayar uang itu ke rekeningnya.",
       "level": "n2",
       "tags": [
         "umum"
@@ -37373,10 +35437,10 @@ window.vocabN2_Verbs = [
   "word": "払い戻す",
   "reading": "はらいもどす",
   "romaji": "haraimodosu",
-  "meaning_id": "me-repay",
+  "meaning_id": "membayar kembali",
   "meaning_en": "to repay; to pay back",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -37394,15 +35458,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "サラは払い戻してもらう事を要求した。",
-      "id": "Sarah demanded that she be given a refund.",
+      "id": "Sarah menuntut agar dia diberikan pengembalian uang.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":5,"category":"nakadaka","mora_count":6,"downstep_mora":5,"contour":"ハライモド＼ス"}
+},
     {
       "jp": "払い戻してください。",
-      "id": "I'd like to get a refund.",
+      "id": "Saya ingin mendapatkan pengembalian dana.",
       "level": "n2",
       "tags": [
         "umum"
@@ -37423,7 +35488,7 @@ window.vocabN2_Verbs = [
   "word": "バランス",
   "reading": "バランス",
   "romaji": "baransu",
-  "meaning_id": "balance",
+  "meaning_id": "keseimbangan",
   "meaning_en": "balance",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -37444,15 +35509,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "彼はバランスを失って自転車から落ちた。",
-      "id": "He lost his balance and fell off his bicycle.",
+      "id": "Dia kehilangan keseimbangan dan terjatuh dari sepedanya.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":0,"downstep_mora":0,"contour":"￣"}
+},
     {
       "jp": "自然界のバランスはとてもこわれやすい。",
-      "id": "The balance of nature is very fragile.",
+      "id": "Keseimbangan alam sangatlah rapuh.",
       "level": "n2",
       "tags": [
         "umum"
@@ -37473,10 +35539,10 @@ window.vocabN2_Verbs = [
   "word": "張り切る",
   "reading": "はりきる",
   "romaji": "harikiru",
-  "meaning_id": "me-be in high spirits",
+  "meaning_id": "berada dalam semangat yang tinggi",
   "meaning_en": "to be in high spirits; to be full of vigor",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -37494,12 +35560,13 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "張り切るを使います。",
-      "id": "Menggunakan me-be in high spirits.",
+      "id": "Menggunakan berada dalam semangat yang tinggi.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"ハリキ＼ル"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -37515,7 +35582,7 @@ window.vocabN2_Verbs = [
   "word": "反映",
   "reading": "はんえい",
   "romaji": "han'ei",
-  "meaning_id": "reflection; influence",
+  "meaning_id": "refleksi; pengaruh",
   "meaning_en": "reflection; influence",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -37536,15 +35603,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "価格は需要を反映する。",
-      "id": "The price reflects the demand.",
+      "id": "Harga mencerminkan permintaan.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ハンエイ￣"}
+},
     {
       "jp": "この数字は原油輸入減を反映している。",
-      "id": "This figure is a mirror of the decrease in imports of crude oil.",
+      "id": "Angka ini mencerminkan penurunan impor minyak mentah.",
       "level": "n2",
       "tags": [
         "umum"
@@ -37565,7 +35633,7 @@ window.vocabN2_Verbs = [
   "word": "万歳",
   "reading": "ばんざい",
   "romaji": "banzai",
-  "meaning_id": "hurrah; cheers",
+  "meaning_id": "hore; bersorak",
   "meaning_en": "hurrah; cheers",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -37586,15 +35654,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "女王万歳。",
-      "id": "Long live the Queen!",
+      "id": "Hidup Ratu!",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"バンザ＼イ"}
+},
     {
       "jp": "彼が金メダルをとったという知らせをきき、私たちは万歳と叫んだ。",
-      "id": "We cried banzai at the news that he won the gold medal.",
+      "id": "Kami menangis banzai mendengar berita bahwa dia memenangkan medali emas.",
       "level": "n2",
       "tags": [
         "umum"
@@ -37636,15 +35705,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "彼女は重大な過ちを後悔した、反省した。",
-      "id": "She showed her regret over the serious mistake.",
+      "id": "Dia menunjukkan penyesalannya atas kesalahan serius tersebut.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ハンセイ￣"}
+},
     {
       "jp": "彼は自分自身の考えを反省した。",
-      "id": "He reflected on his own thoughts.",
+      "id": "Dia merenungkan pikirannya sendiri.",
       "level": "n2",
       "tags": [
         "umum"
@@ -37665,7 +35735,7 @@ window.vocabN2_Verbs = [
   "word": "日帰り",
   "reading": "ひがえり",
   "romaji": "higaeri",
-  "meaning_id": "day trip",
+  "meaning_id": "perjalanan sehari",
   "meaning_en": "day trip",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -37686,65 +35756,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "彼は日帰り旅行に行った。",
-      "id": "He went on a one-day trip.",
+      "id": "Dia melakukan perjalanan satu hari.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ヒガエリ￣"}
+},
     {
       "jp": "これはスキーとバーベキューとパーティーを日帰りで楽しむいいとこ取りの計画だ。",
-      "id": "Skiing, barbecues, parties: with this plan you get the best of everything and can enjoy it all on a one-day visit.",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    }
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "added_v": "v19.3.1-staged-merge",
-  "provenance": "expansion-staged",
-  "jmdict_seq": "",
-  "frequency": 1000
-},
-
-{
-  "id": "vg-n2-01800",
-  "word": "比較的",
-  "reading": "ひかくてき",
-  "romaji": "hikakuteki",
-  "meaning_id": "comparatively; relatively",
-  "meaning_en": "comparatively; relatively",
-  "jlpt": "n2",
-  "pos": "adverb",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": [
-    "umum",
-    "kehidupan-sehari-hari"
-  ],
-  "register": "formal",
-  "lawan_bicara": [
-    "rekan-kerja",
-    "umum"
-  ],
-  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
-  "conj_type": null,
-  "examples": [
-    {
-      "jp": "比較的難しいジグソーだと感じました。",
-      "id": "I felt it was a relatively difficult jigsaw puzzle.",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    },
-    {
-      "jp": "モールの中に、比較的大きなシネコンがある。",
-      "id": "There's a comparatively large cinema complex inside the mall.",
+      "id": "Bermain ski, barbekyu, pesta: dengan paket ini Anda mendapatkan yang terbaik dari semuanya dan dapat menikmati semuanya dalam kunjungan satu hari.",
       "level": "n2",
       "tags": [
         "umum"
@@ -37765,7 +35786,7 @@ window.vocabN2_Verbs = [
   "word": "ぴかぴか",
   "reading": "ぴかぴか",
   "romaji": "pikapika",
-  "meaning_id": "glitter; sparkle",
+  "meaning_id": "berkilau",
   "meaning_en": "glitter; sparkle",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -37786,12 +35807,13 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "その車はワックスがかけられてピカピカしている。",
-      "id": "The car is waxed and shining.",
+      "id": "Mobil sudah di wax dan mengkilat.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":0,"downstep_mora":0,"contour":"￣"}
+},
     {
       "jp": "ピカピカの新製品です。",
       "id": "It's brand new.",
@@ -37815,10 +35837,10 @@ window.vocabN2_Verbs = [
   "word": "引き返す",
   "reading": "ひきかえす",
   "romaji": "hikikaesu",
-  "meaning_id": "me-repeat",
+  "meaning_id": "ulangi",
   "meaning_en": "to repeat; to send back; to bring back",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -37836,15 +35858,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "今は引き返すには遅すぎる。",
-      "id": "It's too late to turn back now.",
+      "id": "Sudah terlambat untuk kembali sekarang.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":5,"downstep_mora":3,"contour":"ヒキカ＼エス"}
+},
     {
       "jp": "人生という道を引き返すことはできない。",
-      "id": "Ada no returning on the road of life.",
+      "id": "Ada tidak kembali di jalan kehidupan.",
       "level": "n2",
       "tags": [
         "umum"
@@ -37865,7 +35888,7 @@ window.vocabN2_Verbs = [
   "word": "引算",
   "reading": "ひきざん",
   "romaji": "hikizan",
-  "meaning_id": "subtraction",
+  "meaning_id": "pengurangan",
   "meaning_en": "subtraction",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -37890,11 +35913,12 @@ window.vocabN2_Verbs = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":4,"downstep_mora":2,"contour":"ヒキ＼ザン"}
+},
     {
       "jp": "子供達は、足し算と引き算を習っている。",
-      "id": "The children are learning to add and subtract.",
+      "id": "Anak-anak sedang belajar menambah dan mengurangi.",
       "level": "n2",
       "tags": [
         "umum"
@@ -37915,10 +35939,10 @@ window.vocabN2_Verbs = [
   "word": "引き止める",
   "reading": "ひきとめる",
   "romaji": "hikitomeru",
-  "meaning_id": "me-detain",
+  "meaning_id": "menahan",
   "meaning_en": "to detain; to check; to restrain",
   "jlpt": "n2",
-  "pos": "verb-ichidan",
+  "pos": "verb-ru",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -37936,12 +35960,13 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "警察は怒った群衆を引き止めた。",
-      "id": "The police held the angry crowd back.",
+      "id": "Polisi menahan massa yang marah.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":4,"category":"nakadaka","mora_count":5,"downstep_mora":4,"contour":"ヒキトメ＼ル"}
+},
     {
       "jp": "引き止めても無駄だ。",
       "id": "It's no use holding me back.",
@@ -37965,7 +35990,7 @@ window.vocabN2_Verbs = [
   "word": "ぴたり",
   "reading": "ぴたり",
   "romaji": "pitari",
-  "meaning_id": "tightly; closely",
+  "meaning_id": "erat",
   "meaning_en": "tightly; closely",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -37990,11 +36015,12 @@ window.vocabN2_Verbs = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":0,"downstep_mora":0,"contour":"￣"}
+},
     {
       "jp": "男はぴたりと止まった。",
-      "id": "The man came to a dead stop.",
+      "id": "Pria itu terhenti.",
       "level": "n2",
       "tags": [
         "umum"
@@ -38015,10 +36041,10 @@ window.vocabN2_Verbs = [
   "word": "引っ掛かる",
   "reading": "ひっかかる",
   "romaji": "hikkakaru",
-  "meaning_id": "me-be caught in",
+  "meaning_id": "terjebak",
   "meaning_en": "to be caught in; to be stuck in; to be cheated",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -38036,15 +36062,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "留め金がうまく引っかからない。",
-      "id": "The hook doesn't catch.",
+      "id": "Kailnya tidak menangkap.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":4,"category":"nakadaka","mora_count":5,"downstep_mora":4,"contour":"ヒッカカ＼ル"}
+},
     {
       "jp": "凧が木に引っかかった。",
-      "id": "The kite got caught in the tree.",
+      "id": "Layang-layang itu tersangkut di pohon.",
       "level": "n2",
       "tags": [
         "umum"
@@ -38065,7 +36092,7 @@ window.vocabN2_Verbs = [
   "word": "筆記",
   "reading": "ひっき",
   "romaji": "hikki",
-  "meaning_id": "(taking) notes; copying",
+  "meaning_id": "(mencatat); menyalin",
   "meaning_en": "(taking) notes; copying",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -38086,12 +36113,13 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "この前の娘は口述内容を筆記するのも無理だった。速記なんて論外さ。",
-      "id": "That girl couldn't take things down in longhand, let alone shorthand.",
+      "id": "Gadis itu tidak bisa menuliskan semuanya dengan tulisan tangan, apalagi tulisan cepat.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ヒッキ￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -38107,10 +36135,10 @@ window.vocabN2_Verbs = [
   "word": "ひっくり返す",
   "reading": "ひっくりかえす",
   "romaji": "hikkurikaesu",
-  "meaning_id": "me-turn over",
+  "meaning_id": "balikkan",
   "meaning_en": "to turn over; to overturn; to knock over; to upset; to turn inside out",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -38128,12 +36156,13 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "彼はテーブルをひっくり返した。",
-      "id": "He turned the table upside down.",
+      "id": "Dia membalikkan meja.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":5,"category":"nakadaka","mora_count":7,"downstep_mora":5,"contour":"ヒックリカ＼エス"}
+},
     {
       "jp": "外はバケツをひっくり返したような雨です。",
       "id": "It's raining buckets outside.",
@@ -38157,10 +36186,10 @@ window.vocabN2_Verbs = [
   "word": "引っ繰り返る",
   "reading": "ひっくりかえる",
   "romaji": "hikkurikaeru",
-  "meaning_id": "me-be overturned",
+  "meaning_id": "dibatalkan",
   "meaning_en": "to be overturned; to be upset; to topple over; to be reversed",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -38178,15 +36207,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "彼は体の平衡を失って、ひっくり返った。",
-      "id": "He lost his balance and fell down.",
+      "id": "Dia kehilangan keseimbangan dan terjatuh.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":5,"category":"nakadaka","mora_count":7,"downstep_mora":5,"contour":"ヒックリカ＼エル"}
+},
     {
       "jp": "車がフェンスにぶつかってひっくり返った。",
-      "id": "The car hit the fence and turned over.",
+      "id": "Mobil menabrak pagar dan terbalik.",
       "level": "n2",
       "tags": [
         "umum"
@@ -38207,7 +36237,7 @@ window.vocabN2_Verbs = [
   "word": "引越し",
   "reading": "ひっこし",
   "romaji": "hikkoshi",
-  "meaning_id": "moving (dwelling etc.); changing residence",
+  "meaning_id": "bergerak (tempat tinggal dll); berpindah tempat tinggal",
   "meaning_en": "moving (dwelling etc.); changing residence",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -38228,15 +36258,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "引っ越しのとき手伝っていただけますか。",
-      "id": "Could you help me when I move?",
+      "id": "Bisakah Anda membantu saya ketika saya pindah?",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ヒッコシ￣"}
+},
     {
       "jp": "トムは引っ越しを手伝ってくれた。",
-      "id": "Tom helped me to move.",
+      "id": "Tom membantuku bergerak.",
       "level": "n2",
       "tags": [
         "umum"
@@ -38257,10 +36288,10 @@ window.vocabN2_Verbs = [
   "word": "引っ込む",
   "reading": "ひっこむ",
   "romaji": "hikkomu",
-  "meaning_id": "me-draw back",
+  "meaning_id": "mundur",
   "meaning_en": "to draw back; to sink; to cave in",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -38278,57 +36309,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "今までどこに引っこんでいたのですか。",
-      "id": "Where've you been keeping yourself?",
+      "id": "Di mana selama ini kamu menyimpan dirimu?",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"ヒッコ＼ム"}
+},
     {
       "jp": "彼女の家は本通りから引っ込んだ所にある。",
-      "id": "Her house stands back from the road.",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    }
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "added_v": "v19.3.1-staged-merge",
-  "provenance": "expansion-staged",
-  "jmdict_seq": "",
-  "frequency": 1000
-},
-
-{
-  "id": "vg-n2-01824",
-  "word": "ひとまず",
-  "reading": "ひとまず",
-  "romaji": "hitomazu",
-  "meaning_id": "for the present; once",
-  "meaning_en": "for the present; once; in outline",
-  "jlpt": "n2",
-  "pos": "adverb",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": [
-    "umum",
-    "kehidupan-sehari-hari"
-  ],
-  "register": "formal",
-  "lawan_bicara": [
-    "rekan-kerja",
-    "umum"
-  ],
-  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
-  "conj_type": null,
-  "examples": [
-    {
-      "jp": "彼は打ち切って、ひとまず休息しようという動議を出した。",
-      "id": "He made a motion that we stop and rest awhile.",
+      "id": "Rumahnya berdiri jauh dari jalan raya.",
       "level": "n2",
       "tags": [
         "umum"
@@ -38349,7 +36339,7 @@ window.vocabN2_Verbs = [
   "word": "一休み",
   "reading": "ひとやすみ",
   "romaji": "hitoyasumi",
-  "meaning_id": "a rest",
+  "meaning_id": "istirahat",
   "meaning_en": "a rest",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -38370,65 +36360,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "日陰で一休みしよう。",
-      "id": "Let's take a rest in the shade.",
+      "id": "Mari kita beristirahat di tempat teduh.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":5,"downstep_mora":2,"contour":"ヒト＼ヤスミ"}
+},
     {
       "jp": "ちょっととまって一休みしよう。",
-      "id": "Let's stop and take a rest.",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    }
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "added_v": "v19.3.1-staged-merge",
-  "provenance": "expansion-staged",
-  "jmdict_seq": "",
-  "frequency": 1000
-},
-
-{
-  "id": "vg-n2-01828",
-  "word": "ひとりでに",
-  "reading": "ひとりでに",
-  "romaji": "hitorideni",
-  "meaning_id": "by itself; automatically",
-  "meaning_en": "by itself; automatically; naturally",
-  "jlpt": "n2",
-  "pos": "adverb",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": [
-    "umum",
-    "kehidupan-sehari-hari"
-  ],
-  "register": "formal",
-  "lawan_bicara": [
-    "rekan-kerja",
-    "umum"
-  ],
-  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
-  "conj_type": null,
-  "examples": [
-    {
-      "jp": "ろうそくはひとりでに消えた。",
-      "id": "The candle went out of itself.",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    },
-    {
-      "jp": "虫歯はひとりでにぬけてしまった。",
-      "id": "The decayed tooth came out on its own.",
+      "id": "Mari kita berhenti dan beristirahat.",
       "level": "n2",
       "tags": [
         "umum"
@@ -38449,10 +36390,10 @@ window.vocabN2_Verbs = [
   "word": "捻る",
   "reading": "ひねる",
   "romaji": "hineru",
-  "meaning_id": "me-turn  on or off",
+  "meaning_id": "menghidupkan atau mematikan",
   "meaning_en": "to turn (a switch) on or off; to twist; to puzzle over",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -38470,12 +36411,13 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "私は石につまずいて、足首をひねってしまった。",
-      "id": "I tripped on a stone, twisting my ankle.",
+      "id": "Aku tersandung batu, pergelangan kakiku terkilir.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"ヒネ＼ル"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -38491,10 +36433,10 @@ window.vocabN2_Verbs = [
   "word": "響く",
   "reading": "ひびく",
   "romaji": "hibiku",
-  "meaning_id": "me-resound",
+  "meaning_id": "bergema",
   "meaning_en": "to resound",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -38512,12 +36454,13 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "出席状況が最終の成績に響きます。",
-      "id": "Your attendance will affect your final grade.",
+      "id": "Kehadiran Anda akan mempengaruhi nilai akhir Anda.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"ヒビ＼ク"}
+},
     {
       "jp": "気苦労が彼の体に響いた。",
       "id": "Worry affected his health.",
@@ -38544,7 +36487,7 @@ window.vocabN2_Verbs = [
   "meaning_id": "sejuk",
   "meaning_en": "to cool; to refrigerate",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -38566,11 +36509,12 @@ window.vocabN2_Verbs = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"ヒヤ＼ス"}
+},
     {
       "jp": "白ワインは出す前に冷やす方がいいよ。",
-      "id": "It's better to chill white wine before you serve it.",
+      "id": "Lebih baik mendinginkan anggur putih sebelum disajikan.",
       "level": "n2",
       "tags": [
         "umum"
@@ -38591,7 +36535,7 @@ window.vocabN2_Verbs = [
   "word": "評論",
   "reading": "ひょうろん",
   "romaji": "hyouron",
-  "meaning_id": "criticism; critique",
+  "meaning_id": "kritik",
   "meaning_en": "criticism; critique",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -38612,12 +36556,13 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "芸術家は時には評論を軽蔑することがある。",
-      "id": "Some artists are contemptuous of criticism.",
+      "id": "Beberapa seniman meremehkan kritik.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ヒョウロン￣"}
+},
     {
       "jp": "彼は文学評論の本を読んでいる。",
       "id": "Dia reading a book of literary criticism.",
@@ -38641,7 +36586,7 @@ window.vocabN2_Verbs = [
   "word": "昼寝",
   "reading": "ひるね",
   "romaji": "hirune",
-  "meaning_id": "nap (at home); siesta",
+  "meaning_id": "tidur siang (di rumah); tidur siang",
   "meaning_en": "nap (at home); siesta",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -38662,15 +36607,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "私はよく日曜日に昼寝をしたものだった。",
-      "id": "I would often take naps on Sundays.",
+      "id": "Saya sering tidur siang di hari Minggu.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ヒルネ￣"}
+},
     {
       "jp": "読書に飽きて彼女は昼寝をした。",
-      "id": "Tired of reading, she took a nap.",
+      "id": "Bosan membaca, dia tidur siang.",
       "level": "n2",
       "tags": [
         "umum"
@@ -38691,10 +36637,10 @@ window.vocabN2_Verbs = [
   "word": "広げる",
   "reading": "ひろげる",
   "romaji": "hirogeru",
-  "meaning_id": "me-spread",
+  "meaning_id": "menyebar",
   "meaning_en": "to spread; to extend; to expand; to enlarge",
   "jlpt": "n2",
-  "pos": "verb-ichidan",
+  "pos": "verb-ru",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -38712,15 +36658,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "私は机の上に地図を広げた。",
-      "id": "I unfolded the map on the desk.",
+      "id": "Saya membuka peta di atas meja.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ヒロゲル￣"}
+},
     {
       "jp": "彼女は新聞をテーブルの上に広げた。",
-      "id": "She laid the paper out on the table.",
+      "id": "Dia meletakkan kertas itu di atas meja.",
       "level": "n2",
       "tags": [
         "umum"
@@ -38741,7 +36688,7 @@ window.vocabN2_Verbs = [
   "word": "広々",
   "reading": "ひろびろ",
   "romaji": "hirobiro",
-  "meaning_id": "extensive; spacious",
+  "meaning_id": "luas",
   "meaning_en": "extensive; spacious",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -38762,12 +36709,13 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "彼らの家の食堂はとても広々としている。",
-      "id": "Their dining room is very spacious.",
+      "id": "Ruang makan mereka sangat luas.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"ヒロビ＼ロ"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -38783,10 +36731,10 @@ window.vocabN2_Verbs = [
   "word": "広める",
   "reading": "ひろめる",
   "romaji": "hiromeru",
-  "meaning_id": "me-broaden",
+  "meaning_id": "memperluas",
   "meaning_en": "to broaden; to propagate",
   "jlpt": "n2",
-  "pos": "verb-ichidan",
+  "pos": "verb-ru",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -38804,12 +36752,13 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "彼らはキリストの福音を全世界に広めた。",
-      "id": "They spread the Gospel all over the world.",
+      "id": "Mereka menyebarkan Injil ke seluruh dunia.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"ヒロメ＼ル"}
+},
     {
       "jp": "旅行は人の視野を広める。",
       "id": "Travel broadens one's horizons.",
@@ -38833,7 +36782,7 @@ window.vocabN2_Verbs = [
   "word": "瓶詰",
   "reading": "びんづめ",
   "romaji": "binzume",
-  "meaning_id": "bottling; bottled",
+  "meaning_id": "pembotolan; botolan",
   "meaning_en": "bottling; bottled",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -38858,8 +36807,9 @@ window.vocabN2_Verbs = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ビンヅメ￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -38875,10 +36825,10 @@ window.vocabN2_Verbs = [
   "word": "殖える",
   "reading": "ふえる",
   "romaji": "fueru",
-  "meaning_id": "me-increase",
+  "meaning_id": "meningkat",
   "meaning_en": "to increase; to multiply",
   "jlpt": "n2",
-  "pos": "verb-ichidan",
+  "pos": "verb-ru",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -38896,15 +36846,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "ここの交通量は増えた。",
-      "id": "The traffic has built up here.",
+      "id": "Lalu lintas telah meningkat di sini.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"フエ＼ル"}
+},
     {
       "jp": "市内を走る自動車の数が増えた。",
-      "id": "The number of cars driven in the city has increased.",
+      "id": "Jumlah mobil yang dikendarai di kota meningkat.",
       "level": "n2",
       "tags": [
         "umum"
@@ -38925,10 +36876,10 @@ window.vocabN2_Verbs = [
   "word": "深まる",
   "reading": "ふかまる",
   "romaji": "fukamaru",
-  "meaning_id": "me-deepen",
+  "meaning_id": "memperdalam",
   "meaning_en": "to deepen; to heighten; to intensify",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -38946,15 +36897,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "夕闇が次第に深まっていった。",
-      "id": "The twilight merged into darkness.",
+      "id": "Senja menyatu menjadi kegelapan.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"フカマ＼ル"}
+},
     {
       "jp": "心の傷は深まるばかり。",
-      "id": "The pain in my heart just gets worse.",
+      "id": "Rasa sakit di hatiku semakin parah.",
       "level": "n2",
       "tags": [
         "umum"
@@ -38975,7 +36927,7 @@ window.vocabN2_Verbs = [
   "word": "普及",
   "reading": "ふきゅう",
   "romaji": "fukyuu",
-  "meaning_id": "diffusion; spread",
+  "meaning_id": "difusi; menyebar",
   "meaning_en": "diffusion; spread",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -38996,15 +36948,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "昔この習慣は日本中で普及していた。",
-      "id": "These customs used to prevail all over Japan.",
+      "id": "Kebiasaan ini dulunya berlaku di seluruh Jepang.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"フキュウ￣"}
+},
     {
       "jp": "英語は全国に普及した。",
-      "id": "English has spread all over the country.",
+      "id": "Bahasa Inggris telah menyebar ke seluruh negeri.",
       "level": "n2",
       "tags": [
         "umum"
@@ -39025,10 +36978,10 @@ window.vocabN2_Verbs = [
   "word": "拭く",
   "reading": "ふく",
   "romaji": "fuku",
-  "meaning_id": "me-wipe",
+  "meaning_id": "menghapus",
   "meaning_en": "to wipe; to dry",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -39046,15 +36999,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "額の汗をふきなさい。",
-      "id": "Wipe the sweat from your brow.",
+      "id": "Usap keringat dari alis Anda.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":2,"downstep_mora":0,"contour":"フク￣"}
+},
     {
       "jp": "彼女は髪をタオルでよく拭いた。",
-      "id": "She rubbed her hair with a towel.",
+      "id": "Dia menggosok rambutnya dengan handuk.",
       "level": "n2",
       "tags": [
         "umum"
@@ -39075,7 +37029,7 @@ window.vocabN2_Verbs = [
   "word": "複写",
   "reading": "ふくしゃ",
   "romaji": "fukusha",
-  "meaning_id": "copy; duplicate",
+  "meaning_id": "salin; duplikat",
   "meaning_en": "copy; duplicate",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -39096,12 +37050,13 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "エジソンは複写の装置を発明した。",
-      "id": "Edison invented a device for duplication.",
+      "id": "Edison menemukan alat untuk duplikasi.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"フクシャ￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -39117,10 +37072,10 @@ window.vocabN2_Verbs = [
   "word": "含める",
   "reading": "ふくめる",
   "romaji": "fukumeru",
-  "meaning_id": "me-include",
+  "meaning_id": "termasuk",
   "meaning_en": "to include; to instruct; to make one understand",
   "jlpt": "n2",
-  "pos": "verb-ichidan",
+  "pos": "verb-ru",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -39138,15 +37093,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "私も含めて全員、バスに乗った。",
-      "id": "All of us, including me, rode the bus.",
+      "id": "Kami semua, termasuk saya, naik bus.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"フクメ＼ル"}
+},
     {
       "jp": "私たちの家は食堂も含めて７部屋あります。",
-      "id": "Our house has seven rooms including the dining room.",
+      "id": "Rumah kami memiliki tujuh kamar termasuk ruang makan.",
       "level": "n2",
       "tags": [
         "umum"
@@ -39167,10 +37123,10 @@ window.vocabN2_Verbs = [
   "word": "膨らます",
   "reading": "ふくらます",
   "romaji": "fukuramasu",
-  "meaning_id": "me-swell",
+  "meaning_id": "membengkak",
   "meaning_en": "to swell; to expand; to inflate; to bulge",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -39192,11 +37148,12 @@ window.vocabN2_Verbs = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":5,"downstep_mora":0,"contour":"フクラマス￣"}
+},
     {
       "jp": "私たちは期待に胸をふくらませて旅立った。",
-      "id": "We set out on our journey full of hope.",
+      "id": "Kami memulai perjalanan kami dengan penuh harapan.",
       "level": "n2",
       "tags": [
         "umum"
@@ -39217,10 +37174,10 @@ window.vocabN2_Verbs = [
   "word": "膨らむ",
   "reading": "ふくらむ",
   "romaji": "fukuramu",
-  "meaning_id": "me-expand",
+  "meaning_id": "memperluas",
   "meaning_en": "to expand; to swell (out); to get big; to become inflated",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -39238,15 +37195,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "タイヤに空気を入れれば膨らむ。",
-      "id": "If you pump air into a tire, it expands.",
+      "id": "Jika Anda memompa udara ke dalam ban, ban akan mengembang.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"フクラム￣"}
+},
     {
       "jp": "一陣の風をうけて帆がふくらんだ。",
-      "id": "A gust of wind swelled the sails.",
+      "id": "Hembusan angin membuat layar membengkak.",
       "level": "n2",
       "tags": [
         "umum"
@@ -39267,10 +37225,10 @@ window.vocabN2_Verbs = [
   "word": "更ける",
   "reading": "ふける",
   "romaji": "fukeru",
-  "meaning_id": "me-get late",
+  "meaning_id": "terlambat",
   "meaning_en": "to get late; to advance; to wear on",
   "jlpt": "n2",
-  "pos": "verb-ichidan",
+  "pos": "verb-ru",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -39288,15 +37246,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "夜が更けるにつれて寒くなった。",
-      "id": "It became colder as the night wore on.",
+      "id": "Cuaca menjadi lebih dingin seiring berlalunya malam.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"フケ＼ル"}
+},
     {
       "jp": "夜が更けて疲れていたので私は宿屋に泊まった。",
-      "id": "As it was late at night and I was very tired, I put up at an inn.",
+      "id": "Karena hari sudah larut malam dan saya sangat lelah, saya menginap di sebuah penginapan.",
       "level": "n2",
       "tags": [
         "umum"
@@ -39317,10 +37276,10 @@ window.vocabN2_Verbs = [
   "word": "塞がる",
   "reading": "ふさがる",
   "romaji": "fusagaru",
-  "meaning_id": "me-be plugged up",
+  "meaning_id": "dicolokkan",
   "meaning_en": "to be plugged up; to be shut up",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -39338,15 +37297,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "道路は倒れた木で塞がっていた。",
-      "id": "The road is blocked by fallen trees.",
+      "id": "Jalan tersebut terhalang pohon tumbang.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"フサガル￣"}
+},
     {
       "jp": "この椅子ふさがっていますか。",
-      "id": "Is this seat taken?",
+      "id": "Apakah kursi ini sudah terisi?",
       "level": "n2",
       "tags": [
         "umum"
@@ -39367,10 +37327,10 @@ window.vocabN2_Verbs = [
   "word": "塞ぐ",
   "reading": "ふさぐ",
   "romaji": "fusagu",
-  "meaning_id": "me-stop up",
+  "meaning_id": "berhenti",
   "meaning_en": "to stop up; to close up; to block (up)",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -39388,15 +37348,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "彼女はなぜかふさいでいる。",
-      "id": "She looks blue for some reason.",
+      "id": "Dia tampak biru karena suatu alasan.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"フサグ￣"}
+},
     {
       "jp": "嵐の後、道路は倒れた木で塞がれた。",
-      "id": "After the storm, the road was blocked with fallen trees.",
+      "id": "Pasca badai, jalan ditutup dengan pohon tumbang.",
       "level": "n2",
       "tags": [
         "umum"
@@ -39417,10 +37378,10 @@ window.vocabN2_Verbs = [
   "word": "ふざける",
   "reading": "ふざける",
   "romaji": "fuzakeru",
-  "meaning_id": "me-romp",
+  "meaning_id": "bermain-main",
   "meaning_en": "to romp; to gambol; to frolic; to joke",
   "jlpt": "n2",
-  "pos": "verb-ichidan",
+  "pos": "verb-ru",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -39438,7 +37399,7 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "ふざけるにもほどがある！",
-      "id": "Even jokes have a limit!",
+      "id": "Bahkan lelucon pun ada batasnya!",
       "level": "n2",
       "tags": [
         "umum"
@@ -39467,7 +37428,7 @@ window.vocabN2_Verbs = [
   "word": "無沙汰",
   "reading": "ぶさた",
   "romaji": "busata",
-  "meaning_id": "neglecting to stay in contact",
+  "meaning_id": "mengabaikan untuk tetap berhubungan",
   "meaning_en": "neglecting to stay in contact",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -39488,15 +37449,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "ご無沙汰をして、ごめんなさい。",
-      "id": "I am sorry I did not write to you for such a long time.",
+      "id": "Saya minta maaf karena saya sudah lama tidak menulis surat kepada Anda.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ブサタ￣"}
+},
     {
       "jp": "ご無沙汰はお互いさまです。",
-      "id": "I am as much in the wrong as you are about not writing before this.",
+      "id": "Saya sama salahnya dengan Anda karena tidak menulis sebelum ini.",
       "level": "n2",
       "tags": [
         "umum"
@@ -39538,12 +37500,13 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "そのカレッジは大学に付属している。",
-      "id": "The college is affiliated with the university.",
+      "id": "Perguruan tinggi ini berafiliasi dengan universitas.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"フゾク￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -39559,10 +37522,10 @@ window.vocabN2_Verbs = [
   "word": "ぶつかる",
   "reading": "ぶつかる",
   "romaji": "butsukaru",
-  "meaning_id": "me-strike",
+  "meaning_id": "menyerang",
   "meaning_en": "to strike; to collide with",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -39580,15 +37543,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "波は岩にぶつかってくだけている。",
-      "id": "Waves are breaking against the rocks.",
+      "id": "Ombak memecah karang.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ブツカル￣"}
+},
     {
       "jp": "ちょうど日曜日にぶつかりますね。",
-      "id": "It falls on Sunday.",
+      "id": "Itu jatuh pada hari Minggu.",
       "level": "n2",
       "tags": [
         "umum"
@@ -39609,10 +37573,10 @@ window.vocabN2_Verbs = [
   "word": "ぶつける",
   "reading": "ぶつける",
   "romaji": "butsukeru",
-  "meaning_id": "me-knock",
+  "meaning_id": "ketuk",
   "meaning_en": "to knock; to run into; to nail on; to strike hard; to hit and attack",
   "jlpt": "n2",
-  "pos": "verb-ichidan",
+  "pos": "verb-ru",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -39630,7 +37594,7 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "私に泥をぶつけて、泥だらけになった。",
-      "id": "He threw mud at me and made me dirty.",
+      "id": "Dia melemparkan lumpur ke arahku dan membuatku kotor.",
       "level": "n2",
       "tags": [
         "umum"
@@ -39638,57 +37602,7 @@ window.vocabN2_Verbs = [
     },
     {
       "jp": "彼は頭を棚に強くぶつけて大きなこぶを作った。",
-      "id": "He banged his head against a shelf and got a big lump.",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    }
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "added_v": "v19.3.1-staged-merge",
-  "provenance": "expansion-staged",
-  "jmdict_seq": "",
-  "frequency": 1000
-},
-
-{
-  "id": "vg-n2-01889",
-  "word": "ぶつぶつ",
-  "reading": "ぶつぶつ",
-  "romaji": "butsubutsu",
-  "meaning_id": "grumbling; complaining in a small voice",
-  "meaning_en": "grumbling; complaining in a small voice",
-  "jlpt": "n2",
-  "pos": "adverb",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": [
-    "umum",
-    "kehidupan-sehari-hari"
-  ],
-  "register": "formal",
-  "lawan_bicara": [
-    "rekan-kerja",
-    "umum"
-  ],
-  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
-  "conj_type": null,
-  "examples": [
-    {
-      "jp": "顔にぶつぶつができてる。最近、寝不足だからなぁ。",
-      "id": "I'm getting little pimples on my face. I wonder if I've been getting enough sleep lately.",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    },
-    {
-      "jp": "祖父はいつも何やかやぶつぶつ不平を言っていた。",
-      "id": "My grandfather was always grumbling about something or other.",
+      "id": "Dia membenturkan kepalanya ke rak dan mendapat benjolan besar.",
       "level": "n2",
       "tags": [
         "umum"
@@ -39709,10 +37623,10 @@ window.vocabN2_Verbs = [
   "word": "増やす",
   "reading": "ふやす",
   "romaji": "fuyasu",
-  "meaning_id": "me-increase",
+  "meaning_id": "meningkat",
   "meaning_en": "to increase; to add to; to augment",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -39730,15 +37644,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "体力を増やすように努めなさい。",
-      "id": "Try to build up your strength.",
+      "id": "Cobalah untuk membangun kekuatan Anda.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"フヤ＼ス"}
+},
     {
       "jp": "書物は人生の楽しみを増やす。",
-      "id": "Books add to the pleasures of life.",
+      "id": "Buku menambah kesenangan hidup.",
       "level": "n2",
       "tags": [
         "umum"
@@ -39759,10 +37674,10 @@ window.vocabN2_Verbs = [
   "word": "ぶらさげる",
   "reading": "ぶらさげる",
   "romaji": "burasageru",
-  "meaning_id": "me-hang",
+  "meaning_id": "menggantung",
   "meaning_en": "to hang; to suspend; to dangle; to swing",
   "jlpt": "n2",
-  "pos": "verb-ichidan",
+  "pos": "verb-ru",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -39780,12 +37695,13 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "ぶらさげるを使います。",
-      "id": "Menggunakan me-hang.",
+      "id": "Menggunakan menggantung.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":5,"downstep_mora":0,"contour":"ブラサゲル￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -39801,7 +37717,7 @@ window.vocabN2_Verbs = [
   "word": "プリント",
   "reading": "プリント",
   "romaji": "purinto",
-  "meaning_id": "print; handout",
+  "meaning_id": "mencetak; selebaran",
   "meaning_en": "print; handout",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -39822,15 +37738,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "先生は生徒たちにプリントを配布した。",
-      "id": "The teacher distributed the handouts to the students.",
+      "id": "Guru membagikan handout kepada siswa.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":0,"downstep_mora":0,"contour":"￣"}
+},
     {
       "jp": "生徒会で使うらしくて、プリント綴じるのを少し手伝っていました。",
-      "id": "I helped a little by binding printouts that the student council could use.",
+      "id": "Saya membantu sedikit dengan menjilid print out yang bisa digunakan oleh OSIS.",
       "level": "n2",
       "tags": [
         "umum"
@@ -39851,10 +37768,10 @@ window.vocabN2_Verbs = [
   "word": "振舞う",
   "reading": "ふるまう",
   "romaji": "furumau",
-  "meaning_id": "me-behave",
+  "meaning_id": "berperilaku",
   "meaning_en": "to behave; to conduct oneself; to entertain (vt)",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -39872,15 +37789,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "学生であるならそのように振舞いなさい。",
-      "id": "If you are a student, behave as such.",
+      "id": "Jika Anda seorang pelajar, bersikaplah seperti itu.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"フルマ＼ウ"}
+},
     {
       "jp": "彼女は小娘のように振る舞った。",
-      "id": "She behaved as if she were a little girl to his sons.",
+      "id": "Dia berperilaku seolah-olah dia adalah gadis kecil bagi putra-putranya.",
       "level": "n2",
       "tags": [
         "umum"
@@ -39901,7 +37819,7 @@ window.vocabN2_Verbs = [
   "word": "ふわふわ",
   "reading": "ふわふわ",
   "romaji": "fuwafuwa",
-  "meaning_id": "light; soft",
+  "meaning_id": "ringan; lembut",
   "meaning_en": "light; soft",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -39922,15 +37840,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "寝不足で足元がふわふわしています。",
-      "id": "My gait is unsteady from lack of sleep.",
+      "id": "Jalanku tidak stabil karena kurang tidur.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":0,"downstep_mora":1,"contour":"＼"}
+},
     {
       "jp": "雪は柔らかくてふわふわしてた。",
-      "id": "The snow was soft and fluffy.",
+      "id": "Saljunya lembut dan halus.",
       "level": "n2",
       "tags": [
         "umum"
@@ -39951,7 +37870,7 @@ window.vocabN2_Verbs = [
   "word": "噴火",
   "reading": "ふんか",
   "romaji": "funka",
-  "meaning_id": "eruption",
+  "meaning_id": "letusan",
   "meaning_en": "eruption",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -39972,15 +37891,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "その火山は今年２度噴火した。",
-      "id": "The volcano has erupted twice this year.",
+      "id": "Gunung berapi tersebut telah meletus dua kali tahun ini.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"フンカ￣"}
+},
     {
       "jp": "その種は火山の噴火後、衰えた。",
-      "id": "The species faded away.",
+      "id": "Spesies tersebut memudar.",
       "level": "n2",
       "tags": [
         "umum"
@@ -40001,7 +37921,7 @@ window.vocabN2_Verbs = [
   "word": "分解",
   "reading": "ぶんかい",
   "romaji": "bunkai",
-  "meaning_id": "analysis; disassembly",
+  "meaning_id": "analisis; pembongkaran",
   "meaning_en": "analysis; disassembly",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -40022,15 +37942,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "時計を分解するのは組み立てるより簡単だ。",
-      "id": "Taking a watch apart is easier than putting it together.",
+      "id": "Membongkar jam tangan lebih mudah daripada merakitnya.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ブンカイ￣"}
+},
     {
       "jp": "その男の子はラジオを分解した。",
-      "id": "The boy took the radio apart.",
+      "id": "Anak laki-laki itu membongkar radionya.",
       "level": "n2",
       "tags": [
         "umum"
@@ -40051,7 +37972,7 @@ window.vocabN2_Verbs = [
   "word": "分布",
   "reading": "ぶんぷ",
   "romaji": "bunpu",
-  "meaning_id": "distribution",
+  "meaning_id": "distribusi",
   "meaning_en": "distribution",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -40072,15 +37993,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "この種の昆虫は日本に広く分布している。",
-      "id": "These insects are widely distributed throughout Japan.",
+      "id": "Serangga ini tersebar luas di seluruh Jepang.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ブンプ￣"}
+},
     {
       "jp": "その植物はヨーロッパの北から南まで分布している。",
-      "id": "The plant ranges from the north of Europe to the south.",
+      "id": "Tanaman ini tersebar dari utara Eropa hingga selatan.",
       "level": "n2",
       "tags": [
         "umum"
@@ -40101,7 +38023,7 @@ window.vocabN2_Verbs = [
   "word": "分類",
   "reading": "ぶんるい",
   "romaji": "bunrui",
-  "meaning_id": "classification",
+  "meaning_id": "klasifikasi",
   "meaning_en": "classification",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -40122,15 +38044,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "彼は書類の分類を終えた。",
-      "id": "He finished sorting the papers.",
+      "id": "Dia selesai memilah kertas.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ブンルイ￣"}
+},
     {
       "jp": "本は良い物と悪い物とに分類できる。",
-      "id": "One can classify books into good ones and bad ones.",
+      "id": "Seseorang dapat mengklasifikasikan buku menjadi buku yang baik dan buku yang buruk.",
       "level": "n2",
       "tags": [
         "umum"
@@ -40151,7 +38074,7 @@ window.vocabN2_Verbs = [
   "word": "閉会",
   "reading": "へいかい",
   "romaji": "heikai",
-  "meaning_id": "closure",
+  "meaning_id": "penutupan",
   "meaning_en": "closure",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -40172,15 +38095,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "国会は閉会して夏休みに入った。",
-      "id": "The Diet rose for summer recess.",
+      "id": "Diet meningkat untuk istirahat musim panas.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ヘイカイ￣"}
+},
     {
       "jp": "閉会した。",
-      "id": "The meeting was closed.",
+      "id": "Rapat ditutup.",
       "level": "n2",
       "tags": [
         "umum"
@@ -40222,65 +38146,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "その道路は川と並行している。",
-      "id": "The road is parallel to the river.",
+      "id": "Jalannya sejajar dengan sungai.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ヘイコウ￣"}
+},
     {
       "jp": "船は岸と並行に進んだ。",
-      "id": "The ship was abreast of the shore.",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    }
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "added_v": "v19.3.1-staged-merge",
-  "provenance": "expansion-staged",
-  "jmdict_seq": "",
-  "frequency": 1000
-},
-
-{
-  "id": "vg-n2-01926",
-  "word": "平日",
-  "reading": "へいじつ",
-  "romaji": "heijitsu",
-  "meaning_id": "weekday; ordinary days",
-  "meaning_en": "weekday; ordinary days",
-  "jlpt": "n2",
-  "pos": "adverb",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": [
-    "umum",
-    "kehidupan-sehari-hari"
-  ],
-  "register": "formal",
-  "lawan_bicara": [
-    "rekan-kerja",
-    "umum"
-  ],
-  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
-  "conj_type": null,
-  "examples": [
-    {
-      "jp": "平日料金と休日料金で、１万円も違うんだ。",
-      "id": "You have to pay 10,000 yen extra on holidays.",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    },
-    {
-      "jp": "私は平日は白いシャツを着ている。",
-      "id": "I wear white shirts on weekdays.",
+      "id": "Kapal itu berada di dekat pantai.",
       "level": "n2",
       "tags": [
         "umum"
@@ -40301,10 +38176,10 @@ window.vocabN2_Verbs = [
   "word": "凹む",
   "reading": "へこむ",
   "romaji": "hekomu",
-  "meaning_id": "me-be dented",
+  "meaning_id": "menjadi penyok",
   "meaning_en": "to be dented; to be indented; to yield to; to give; to sink; to collapse; to cave in; to be snubbed",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -40322,12 +38197,13 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "トムは彼女にフラれてへこんでいる。",
-      "id": "Tom is depressed because his girlfriend left him.",
+      "id": "Tom depresi karena pacarnya meninggalkannya.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ヘコム￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -40343,10 +38219,10 @@ window.vocabN2_Verbs = [
   "word": "隔てる",
   "reading": "へだてる",
   "romaji": "hedateru",
-  "meaning_id": "me-be shut out",
+  "meaning_id": "ditutup",
   "meaning_en": "to be shut out",
   "jlpt": "n2",
-  "pos": "verb-ichidan",
+  "pos": "verb-ru",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -40364,15 +38240,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "アイルランドとイギリスは海によって隔てられている。",
-      "id": "Ireland and England are separated by the sea.",
+      "id": "Irlandia dan Inggris dipisahkan oleh laut.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"ヘダテ＼ル"}
+},
     {
       "jp": "二つの町は川で隔てられている。",
-      "id": "The two towns are separated by a river.",
+      "id": "Kedua kota tersebut dipisahkan oleh sebuah sungai.",
       "level": "n2",
       "tags": [
         "umum"
@@ -40414,12 +38291,13 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "ビルは編集部員です。",
-      "id": "Bill is on the editorial staff.",
+      "id": "Bill ada di staf editorial.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ヘンシュウ￣"}
+},
     {
       "jp": "彼女は編集の仕事にむいている。",
       "id": "Dia made to be an editor.",
@@ -40443,7 +38321,7 @@ window.vocabN2_Verbs = [
   "word": "防止",
   "reading": "ぼうし",
   "romaji": "boushi",
-  "meaning_id": "prevention; check",
+  "meaning_id": "pencegahan; periksa",
   "meaning_en": "prevention; check",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -40464,15 +38342,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "チョコレートにはＬＤＬの酸化を防止する力がある。",
-      "id": "Chocolate acts to prevent LDL oxidisation.",
+      "id": "Cokelat berperan mencegah oksidasi LDL.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ボウシ￣"}
+},
     {
       "jp": "彼は、動物虐待防止会に入っています。",
-      "id": "He belongs to the Society for the Prevention of Cruelty to Animals.",
+      "id": "Dia tergabung dalam Masyarakat untuk Pencegahan Kekejaman terhadap Hewan.",
       "level": "n2",
       "tags": [
         "umum"
@@ -40493,7 +38372,7 @@ window.vocabN2_Verbs = [
   "word": "包装",
   "reading": "ほうそう",
   "romaji": "housou",
-  "meaning_id": "packing; wrapping",
+  "meaning_id": "pengepakan; pembungkus",
   "meaning_en": "packing; wrapping",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -40518,11 +38397,12 @@ window.vocabN2_Verbs = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ホウソウ￣"}
+},
     {
       "jp": "発送用に包装してください。",
-      "id": "Could you wrap it for mailing?",
+      "id": "Bisakah Anda membungkusnya untuk dikirim?",
       "level": "n2",
       "tags": [
         "umum"
@@ -40543,7 +38423,7 @@ window.vocabN2_Verbs = [
   "word": "包帯",
   "reading": "ほうたい",
   "romaji": "houtai",
-  "meaning_id": "bandage; dressing",
+  "meaning_id": "perban; berpakaian",
   "meaning_en": "bandage; dressing",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -40564,15 +38444,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "私は片足に包帯を巻いた犬を見た。",
-      "id": "I saw a dog with one paw bandaged.",
+      "id": "Saya melihat seekor anjing dengan salah satu kakinya dibalut.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ホウタイ￣"}
+},
     {
       "jp": "バンドエードか包帯、ありますか。",
-      "id": "Can I have a Band-Aid?",
+      "id": "Bisakah saya mendapatkan plester?",
       "level": "n2",
       "tags": [
         "umum"
@@ -40593,10 +38474,10 @@ window.vocabN2_Verbs = [
   "word": "放る",
   "reading": "ほうる",
   "romaji": "houru",
-  "meaning_id": "me-let go",
+  "meaning_id": "lepaskan",
   "meaning_en": "to let go",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -40614,15 +38495,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "その車は何週間も放ってある。",
-      "id": "The car has been kicking around the roadside for weeks.",
+      "id": "Mobil itu telah berkeliaran di pinggir jalan selama berminggu-minggu.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ホウル￣"}
+},
     {
       "jp": "いい球を放るようになったな、恵一君。",
-      "id": "You throw a good ball nowadays, Keiichi.",
+      "id": "Kamu melempar bola dengan bagus akhir-akhir ini, Keiichi.",
       "level": "n2",
       "tags": [
         "umum"
@@ -40643,7 +38525,7 @@ window.vocabN2_Verbs = [
   "word": "募集",
   "reading": "ぼしゅう",
   "romaji": "boshuu",
-  "meaning_id": "recruiting; taking applications",
+  "meaning_id": "merekrut; mengambil lamaran",
   "meaning_en": "recruiting; taking applications",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -40664,15 +38546,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "うちのバスケット部は背の高い男子を募集している。",
-      "id": "Our basketball team is recruiting tall boys.",
+      "id": "Tim bola basket kami merekrut anak laki-laki yang tinggi.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ボシュウ￣"}
+},
     {
       "jp": "公団は建設計画の入札を募集した。",
-      "id": "The corporation invited bids for the construction project.",
+      "id": "Korporasi mengundang tawaran untuk proyek konstruksi.",
       "level": "n2",
       "tags": [
         "umum"
@@ -40693,10 +38576,10 @@ window.vocabN2_Verbs = [
   "word": "干す",
   "reading": "ほす",
   "romaji": "hosu",
-  "meaning_id": "me-air",
+  "meaning_id": "udara",
   "meaning_en": "to air; to dry; to desiccate; to drain (off); to drink up",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -40714,15 +38597,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "この座布団を干して下さい。",
-      "id": "Tolong air the zabuton.",
+      "id": "Tolong tayangkan zabutonnya.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":2,"downstep_mora":1,"contour":"ホ＼ス"}
+},
     {
       "jp": "天気がよいときには寝具を干しなさい。",
-      "id": "Air the bedclothes when the weather is good.",
+      "id": "Beri ventilasi pada seprai saat cuaca bagus.",
       "level": "n2",
       "tags": [
         "umum"
@@ -40743,10 +38627,10 @@ window.vocabN2_Verbs = [
   "word": "ほどく",
   "reading": "ほどく",
   "romaji": "hodoku",
-  "meaning_id": "me-unfasten",
+  "meaning_id": "membuka kancing",
   "meaning_en": "to unfasten",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -40764,15 +38648,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "これらの包みをほどくのを手伝って下さい。",
-      "id": "Lend a hand with these parcels, please.",
+      "id": "Tolong bantu saya dengan parsel ini.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"ホド＼ク"}
+},
     {
       "jp": "その男は腕を組んだりほどいたりしていた。",
-      "id": "The man was folding and unfolding his arms.",
+      "id": "Pria itu melipat dan membuka lengannya.",
       "level": "n2",
       "tags": [
         "umum"
@@ -40793,10 +38678,10 @@ window.vocabN2_Verbs = [
   "word": "掘る",
   "reading": "ほる",
   "romaji": "horu",
-  "meaning_id": "me-dig",
+  "meaning_id": "menggali",
   "meaning_en": "to dig; to excavate",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -40814,15 +38699,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "ジャガイモを掘ったことがありますか。",
-      "id": "Have you dug up potatoes?",
+      "id": "Sudahkah Anda menggali kentang?",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":2,"downstep_mora":1,"contour":"ホ＼ル"}
+},
     {
       "jp": "彼らは穴をあけて石油を掘り当てようとした。",
-      "id": "They intended to drill for oil.",
+      "id": "Mereka bermaksud mengebor minyak.",
       "level": "n2",
       "tags": [
         "umum"
@@ -40843,10 +38729,10 @@ window.vocabN2_Verbs = [
   "word": "彫る",
   "reading": "ほる",
   "romaji": "horu",
-  "meaning_id": "me-carve",
+  "meaning_id": "mengukir",
   "meaning_en": "to carve; to engrave; to sculpture; to chisel",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -40864,115 +38750,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "彼は私に木の人形を彫ってくれた。",
-      "id": "He carved me a wooden doll.",
+      "id": "Dia mengukirku boneka kayu.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":2,"downstep_mora":1,"contour":"ホ＼ル"}
+},
     {
       "jp": "彼らは大理石で像を彫っている。",
       "id": "Mereka chiseling a statue out of marble.",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    }
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "added_v": "v19.3.1-staged-merge",
-  "provenance": "expansion-staged",
-  "jmdict_seq": "",
-  "frequency": 1000
-},
-
-{
-  "id": "vg-n2-01974",
-  "word": "本来",
-  "reading": "ほんらい",
-  "romaji": "honrai",
-  "meaning_id": "essentially; naturally",
-  "meaning_en": "essentially; naturally; by nature",
-  "jlpt": "n2",
-  "pos": "adverb",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": [
-    "umum",
-    "kehidupan-sehari-hari"
-  ],
-  "register": "formal",
-  "lawan_bicara": [
-    "rekan-kerja",
-    "umum"
-  ],
-  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
-  "conj_type": null,
-  "examples": [
-    {
-      "jp": "競争は本来悪いものではない。",
-      "id": "Competition is not by nature evil.",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    },
-    {
-      "jp": "この詩は本来フランス語で書かれていた。",
-      "id": "This poem was originally written in French.",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    }
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "added_v": "v19.3.1-staged-merge",
-  "provenance": "expansion-staged",
-  "jmdict_seq": "",
-  "frequency": 1000
-},
-
-{
-  "id": "vg-n2-01977",
-  "word": "毎度",
-  "reading": "まいど",
-  "romaji": "maido",
-  "meaning_id": "each time; common service-sector greeting",
-  "meaning_en": "each time; common service-sector greeting",
-  "jlpt": "n2",
-  "pos": "adverb",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": [
-    "umum",
-    "kehidupan-sehari-hari"
-  ],
-  "register": "formal",
-  "lawan_bicara": [
-    "rekan-kerja",
-    "umum"
-  ],
-  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
-  "conj_type": null,
-  "examples": [
-    {
-      "jp": "毎度ごひいきにありがとうございます。",
-      "id": "Thank you for your patronage.",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    },
-    {
-      "jp": "毎度、またいらっしゃい。",
-      "id": "Thanks, please come again.",
       "level": "n2",
       "tags": [
         "umum"
@@ -40993,7 +38780,7 @@ window.vocabN2_Verbs = [
   "word": "マイナス",
   "reading": "マイナス",
   "romaji": "mainasu",
-  "meaning_id": "minus",
+  "meaning_id": "dikurangi",
   "meaning_en": "minus",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -41014,15 +38801,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "昨夜、温度計はマイナス１０度を示した。",
-      "id": "The thermometer registered minus ten last night.",
+      "id": "Termometer menunjukkan minus sepuluh tadi malam.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":0,"downstep_mora":0,"contour":"￣"}
+},
     {
       "jp": "彼のまじめさがかえってマイナスになった。",
-      "id": "His diligence turned out a disadvantage after all.",
+      "id": "Ketekunannya ternyata merugikan.",
       "level": "n2",
       "tags": [
         "umum"
@@ -41043,10 +38831,10 @@ window.vocabN2_Verbs = [
   "word": "巻く",
   "reading": "まく",
   "romaji": "maku",
-  "meaning_id": "me-wind",
+  "meaning_id": "angin",
   "meaning_en": "to wind; to coil; to roll",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -41064,15 +38852,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "長い物には巻かれろ。",
-      "id": "If you can't lick 'em, join 'em.",
+      "id": "Jika Anda tidak bisa menjilatnya, bergabunglah dengan mereka.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":2,"downstep_mora":0,"contour":"マク￣"}
+},
     {
       "jp": "時計は以前は毎日巻かれたものだ。",
-      "id": "Clocks used to be wound every day.",
+      "id": "Jam dulu diputar setiap hari.",
       "level": "n2",
       "tags": [
         "umum"
@@ -41093,10 +38882,10 @@ window.vocabN2_Verbs = [
   "word": "撒く",
   "reading": "まく",
   "romaji": "maku",
-  "meaning_id": "me-scatter",
+  "meaning_id": "tersebar",
   "meaning_en": "to scatter; to sprinkle; to sow",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -41114,15 +38903,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "まいた種は刈らねばならない。",
-      "id": "As you sow, so shall you reap.",
+      "id": "Apa yang kamu tabur, itulah yang akan kamu tuai.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":2,"downstep_mora":1,"contour":"マ＼ク"}
+},
     {
       "jp": "ジムは庭に水を撒いている。",
-      "id": "Jim is watering the garden.",
+      "id": "Jim sedang menyiram taman.",
       "level": "n2",
       "tags": [
         "umum"
@@ -41143,10 +38933,10 @@ window.vocabN2_Verbs = [
   "word": "蒔く",
   "reading": "まく",
   "romaji": "maku",
-  "meaning_id": "me-sow",
+  "meaning_id": "menabur",
   "meaning_en": "to sow (seeds)",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -41164,12 +38954,13 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "春が来ると、彼らは畑を耕し種を蒔く。",
-      "id": "When spring comes, they plow the fields and plant seeds.",
+      "id": "Saat musim semi tiba, mereka membajak ladang dan menanam benih.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":2,"downstep_mora":1,"contour":"マ＼ク"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -41185,10 +38976,10 @@ window.vocabN2_Verbs = [
   "word": "曲げる",
   "reading": "まげる",
   "romaji": "mageru",
-  "meaning_id": "me-bend",
+  "meaning_id": "membungkuk",
   "meaning_en": "to bend; to crook; to lean",
   "jlpt": "n2",
-  "pos": "verb-ichidan",
+  "pos": "verb-ru",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -41206,15 +38997,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "少年は考えを曲げなかった。",
-      "id": "The boy persisted in his opinion.",
+      "id": "Anak laki-laki itu tetap pada pendapatnya.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"マゲル￣"}
+},
     {
       "jp": "右腕を曲げられません。",
-      "id": "I can't bend my right arm.",
+      "id": "Saya tidak bisa menekuk lengan kanan saya.",
       "level": "n2",
       "tags": [
         "umum"
@@ -41235,7 +39027,7 @@ window.vocabN2_Verbs = [
   "word": "まごまご",
   "reading": "まごまご",
   "romaji": "magomago",
-  "meaning_id": "confused",
+  "meaning_id": "bingung",
   "meaning_en": "confused",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -41260,8 +39052,9 @@ window.vocabN2_Verbs = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":0,"downstep_mora":1,"contour":"＼"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -41277,10 +39070,10 @@ window.vocabN2_Verbs = [
   "word": "交ざる",
   "reading": "まざる",
   "romaji": "mazaru",
-  "meaning_id": "me-be mixed",
+  "meaning_id": "dicampur",
   "meaning_en": "to be mixed; to be blended with; to associate with; to mingle with; to join",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -41298,15 +39091,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "油と水は混ざらないんだ。",
-      "id": "Oil and water don't mix.",
+      "id": "Minyak dan air tidak bisa bercampur.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"マザ＼ル"}
+},
     {
       "jp": "この物質は水と混ざる。",
-      "id": "This substance will mix with water.",
+      "id": "Zat ini akan bercampur dengan air.",
       "level": "n2",
       "tags": [
         "umum"
@@ -41327,10 +39121,10 @@ window.vocabN2_Verbs = [
   "word": "混ざる",
   "reading": "まざる",
   "romaji": "mazaru",
-  "meaning_id": "me-be mixed",
+  "meaning_id": "dicampur",
   "meaning_en": "to be mixed; to be blended with; to associate with; to mingle with; to join",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -41348,15 +39142,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "油と水は混ざらないんだ。",
-      "id": "Oil and water don't mix.",
+      "id": "Minyak dan air tidak bisa bercampur.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"マザ＼ル"}
+},
     {
       "jp": "この物質は水と混ざる。",
-      "id": "This substance will mix with water.",
+      "id": "Zat ini akan bercampur dengan air.",
       "level": "n2",
       "tags": [
         "umum"
@@ -41377,10 +39172,10 @@ window.vocabN2_Verbs = [
   "word": "交じる",
   "reading": "まじる",
   "romaji": "majiru",
-  "meaning_id": "me-be mixed",
+  "meaning_id": "dicampur",
   "meaning_en": "to be mixed; to be blended with; to associate with",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -41398,15 +39193,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "トムは知らない人に混じって居心地が悪かった。",
-      "id": "Tom is ill at ease among strangers.",
+      "id": "Tom merasa tidak nyaman berada di antara orang asing.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"マジ＼ル"}
+},
     {
       "jp": "喜びは悲しみと混じり合った。",
-      "id": "Joy was mingled with sorrow.",
+      "id": "Sukacita bercampur dengan kesedihan.",
       "level": "n2",
       "tags": [
         "umum"
@@ -41427,10 +39223,10 @@ window.vocabN2_Verbs = [
   "word": "混じる",
   "reading": "まじる",
   "romaji": "majiru",
-  "meaning_id": "me-be mixed",
+  "meaning_id": "dicampur",
   "meaning_en": "to be mixed; to be blended with; to associate with",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -41448,15 +39244,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "トムは知らない人に混じって居心地が悪かった。",
-      "id": "Tom is ill at ease among strangers.",
+      "id": "Tom merasa tidak nyaman berada di antara orang asing.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"マジ＼ル"}
+},
     {
       "jp": "喜びは悲しみと混じり合った。",
-      "id": "Joy was mingled with sorrow.",
+      "id": "Sukacita bercampur dengan kesedihan.",
       "level": "n2",
       "tags": [
         "umum"
@@ -41477,10 +39274,10 @@ window.vocabN2_Verbs = [
   "word": "交ぜる",
   "reading": "まぜる",
   "romaji": "mazeru",
-  "meaning_id": "me-be mixed",
+  "meaning_id": "dicampur",
   "meaning_en": "to be mixed; to be blended with",
   "jlpt": "n2",
-  "pos": "verb-ichidan",
+  "pos": "verb-ru",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -41498,15 +39295,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "水を加え、練り粉がどろどろしない程度に混ぜなさい。",
-      "id": "Add water and mix to a firm dough.",
+      "id": "Tambahkan air dan aduk hingga adonan keras.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"マゼ＼ル"}
+},
     {
       "jp": "ぶどう酒に水を混ぜてはいけません。",
-      "id": "You should not adulterate wine with water.",
+      "id": "Anda tidak boleh memalsukan anggur dengan air.",
       "level": "n2",
       "tags": [
         "umum"
@@ -41527,10 +39325,10 @@ window.vocabN2_Verbs = [
   "word": "混ぜる",
   "reading": "まぜる",
   "romaji": "mazeru",
-  "meaning_id": "me-mix",
+  "meaning_id": "campur",
   "meaning_en": "to mix; to stir",
   "jlpt": "n2",
-  "pos": "verb-ichidan",
+  "pos": "verb-ru",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -41548,15 +39346,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "水を加え、練り粉がどろどろしない程度に混ぜなさい。",
-      "id": "Add water and mix to a firm dough.",
+      "id": "Tambahkan air dan aduk hingga adonan keras.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"マゼ＼ル"}
+},
     {
       "jp": "ぶどう酒に水を混ぜてはいけません。",
-      "id": "You should not adulterate wine with water.",
+      "id": "Anda tidak boleh memalsukan anggur dengan air.",
       "level": "n2",
       "tags": [
         "umum"
@@ -41577,10 +39376,10 @@ window.vocabN2_Verbs = [
   "word": "またぐ",
   "reading": "またぐ",
   "romaji": "matagu",
-  "meaning_id": "me-straddle",
+  "meaning_id": "mengangkang",
   "meaning_en": "to straddle",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -41598,15 +39397,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "もう二度とこの家の敷居はまたがない。",
-      "id": "I'll never set foot in this house again.",
+      "id": "Aku tidak akan pernah menginjakkan kaki di rumah ini lagi.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"マタ＼グ"}
+},
     {
       "jp": "彼女は小川をひょいとまたいだ。",
-      "id": "She strode over the brook.",
+      "id": "Dia berjalan melewati sungai.",
       "level": "n2",
       "tags": [
         "umum"
@@ -41627,10 +39427,10 @@ window.vocabN2_Verbs = [
   "word": "待ち合わせる",
   "reading": "まちあわせる",
   "romaji": "machiawaseru",
-  "meaning_id": "me-rendezvous",
+  "meaning_id": "pertemuan",
   "meaning_en": "to rendezvous; to meet at a prearranged place and time",
   "jlpt": "n2",
-  "pos": "verb-ichidan",
+  "pos": "verb-ru",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -41648,15 +39448,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "私たちはいつも学校へ行く途中で待ち合わせた。",
-      "id": "We used to meet on our way to school.",
+      "id": "Kami biasa bertemu dalam perjalanan ke sekolah.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":5,"category":"nakadaka","mora_count":6,"downstep_mora":5,"contour":"マチアワセ＼ル"}
+},
     {
       "jp": "どこで待ち合わせしましょうか。",
-      "id": "Where should we meet?",
+      "id": "Dimana kita harus bertemu?",
       "level": "n2",
       "tags": [
         "umum"
@@ -41677,10 +39478,10 @@ window.vocabN2_Verbs = [
   "word": "祭る",
   "reading": "まつる",
   "romaji": "matsuru",
-  "meaning_id": "me-deify",
+  "meaning_id": "mendewakan",
   "meaning_en": "to deify; to enshrine",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -41698,12 +39499,13 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "この記念碑は祖国に命を捧げた兵士を祭っている。",
-      "id": "This monument is dedicated to the soldiers who gave their lives to their country.",
+      "id": "Monumen ini didedikasikan untuk para prajurit yang memberikan nyawanya untuk negaranya.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"マツル￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -41719,10 +39521,10 @@ window.vocabN2_Verbs = [
   "word": "纏まる",
   "reading": "まとまる",
   "romaji": "matomaru",
-  "meaning_id": "me-be collected",
+  "meaning_id": "dikumpulkan",
   "meaning_en": "to be collected; to be settled; to be in order",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -41740,15 +39542,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "よし、これで取引はまとまった。",
-      "id": "All right. It's a deal.",
+      "id": "Baiklah. Itu kesepakatan.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"マトマル￣"}
+},
     {
       "jp": "考えがまとまったようですね。",
-      "id": "I see your mind's made up.",
+      "id": "Saya melihat pikiran Anda sudah bulat.",
       "level": "n2",
       "tags": [
         "umum"
@@ -41769,10 +39572,10 @@ window.vocabN2_Verbs = [
   "word": "まとめる",
   "reading": "まとめる",
   "romaji": "matomeru",
-  "meaning_id": "me-put in order",
+  "meaning_id": "mengaturnya",
   "meaning_en": "to put in order; to collect; to bring to a conclusion",
   "jlpt": "n2",
-  "pos": "verb-ichidan",
+  "pos": "verb-ru",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -41790,15 +39593,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "データはまだまとめていません。",
-      "id": "The data hasn't been compiled yet.",
+      "id": "Datanya belum dikumpulkan.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"マトメル￣"}
+},
     {
       "jp": "今こそ一気に取引をまとめるときだ。",
-      "id": "Now is the time to clinch the deal.",
+      "id": "Sekaranglah waktunya untuk mencapai kesepakatan.",
       "level": "n2",
       "tags": [
         "umum"
@@ -41819,10 +39623,10 @@ window.vocabN2_Verbs = [
   "word": "真似る",
   "reading": "まねる",
   "romaji": "maneru",
-  "meaning_id": "me-mimic",
+  "meaning_id": "meniru",
   "meaning_en": "to mimic; to imitate",
   "jlpt": "n2",
-  "pos": "verb-ichidan",
+  "pos": "verb-ru",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -41840,65 +39644,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "オウムは人の声を真似ることができる。",
-      "id": "A parrot can mimic a person's voice.",
+      "id": "Burung beo bisa menirukan suara seseorang.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"マネル￣"}
+},
     {
       "jp": "オウムはしばしば人の言葉をまねる。",
       "id": "Parrots often imitate human speech.",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    }
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "added_v": "v19.3.1-staged-merge",
-  "provenance": "expansion-staged",
-  "jmdict_seq": "",
-  "frequency": 1000
-},
-
-{
-  "id": "vg-n2-02010",
-  "word": "間も無く",
-  "reading": "まもなく",
-  "romaji": "mamonaku",
-  "meaning_id": "soon; before long",
-  "meaning_en": "soon; before long; in a short time",
-  "jlpt": "n2",
-  "pos": "adverb",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": [
-    "umum",
-    "kehidupan-sehari-hari"
-  ],
-  "register": "formal",
-  "lawan_bicara": [
-    "rekan-kerja",
-    "umum"
-  ],
-  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
-  "conj_type": null,
-  "examples": [
-    {
-      "jp": "彼は間もなく家族に受け入れられた。",
-      "id": "He was soon accepted into the family.",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    },
-    {
-      "jp": "真相は間もなく明らかになるだろう。",
-      "id": "The truth will clear soon.",
       "level": "n2",
       "tags": [
         "umum"
@@ -41919,7 +39674,7 @@ window.vocabN2_Verbs = [
   "word": "回り道",
   "reading": "まわりみち",
   "romaji": "mawarimichi",
-  "meaning_id": "detour",
+  "meaning_id": "jalan memutar",
   "meaning_en": "detour",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -41940,15 +39695,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "彼らはぐるっと回り道をしてやってきた。",
-      "id": "They came round about.",
+      "id": "Mereka datang berkeliling.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":5,"downstep_mora":3,"contour":"マワリ＼ミチ"}
+},
     {
       "jp": "私はまっすぐに家に帰らないで回り道をして郵便局に寄ってきた。",
-      "id": "Instead of coming directly home, I took the long way and stopped by the post office.",
+      "id": "Daripada langsung pulang, saya menempuh perjalanan jauh dan mampir ke kantor pos.",
       "level": "n2",
       "tags": [
         "umum"
@@ -41969,10 +39725,10 @@ window.vocabN2_Verbs = [
   "word": "見送る",
   "reading": "みおくる",
   "romaji": "miokuru",
-  "meaning_id": "me-see off",
+  "meaning_id": "melihat pergi",
   "meaning_en": "to see off; to farewell; to escort; to let pass",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -41990,15 +39746,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "両親は空港まで私を見送ってくれた。",
-      "id": "My parents came to the airport to see me off.",
+      "id": "Orang tuaku datang ke bandara untuk mengantarku pergi.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ミオクル￣"}
+},
     {
       "jp": "私たちは彼が見えなくなるまで見送った。",
-      "id": "We watched him until he was out of sight.",
+      "id": "Kami mengawasinya sampai dia hilang dari pandangan.",
       "level": "n2",
       "tags": [
         "umum"
@@ -42019,10 +39776,10 @@ window.vocabN2_Verbs = [
   "word": "見下ろす",
   "reading": "みおろす",
   "romaji": "miorosu",
-  "meaning_id": "me-overlook",
+  "meaning_id": "mengabaikan",
   "meaning_en": "to overlook; to command a view of; to look down on something",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -42040,15 +39797,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "その建物から町全体が見下ろせる。",
-      "id": "The building looks down on the whole town.",
+      "id": "Bangunan itu memandang rendah seluruh kota.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ミオロス￣"}
+},
     {
       "jp": "男の子は妹を見下ろしがちである。",
-      "id": "Boys tend to look down on their younger sisters.",
+      "id": "Anak laki-laki cenderung memandang rendah adik perempuannya.",
       "level": "n2",
       "tags": [
         "umum"
@@ -42069,10 +39827,10 @@ window.vocabN2_Verbs = [
   "word": "見慣れる",
   "reading": "みなれる",
   "romaji": "minareru",
-  "meaning_id": "me-become used to seeing",
+  "meaning_id": "menjadi terbiasa melihat",
   "meaning_en": "to become used to seeing; to be familiar with",
   "jlpt": "n2",
-  "pos": "verb-ichidan",
+  "pos": "verb-ru",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -42090,15 +39848,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "目覚めると、見慣れない部屋にいた。",
-      "id": "I awoke to find myself in a strange room.",
+      "id": "Aku terbangun dan mendapati diriku berada di ruangan yang asing.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ミナレル￣"}
+},
     {
       "jp": "見慣れない青い鳥が屋根の上にみえる。",
-      "id": "I can see a strange blue bird on the roof.",
+      "id": "Saya bisa melihat burung biru aneh di atap.",
       "level": "n2",
       "tags": [
         "umum"
@@ -42119,10 +39878,10 @@ window.vocabN2_Verbs = [
   "word": "実る",
   "reading": "みのる",
   "romaji": "minoru",
-  "meaning_id": "me-bear fruit",
+  "meaning_id": "berbuah",
   "meaning_en": "to bear fruit; to ripen",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -42140,15 +39899,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "君の努力はもうじき実るだろう。",
-      "id": "Your efforts will soon pay off.",
+      "id": "Upaya Anda akan segera membuahkan hasil.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"ミノ＼ル"}
+},
     {
       "jp": "この木には毎年おいしい桃が実る。",
-      "id": "This tree bears good peaches every year.",
+      "id": "Pohon ini menghasilkan buah persik yang bagus setiap tahun.",
       "level": "n2",
       "tags": [
         "umum"
@@ -42169,10 +39929,10 @@ window.vocabN2_Verbs = [
   "word": "見舞う",
   "reading": "みまう",
   "romaji": "mimau",
-  "meaning_id": "me-ask after",
+  "meaning_id": "tanyakan setelahnya",
   "meaning_en": "to ask after (health); to visit",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -42190,65 +39950,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "マグニチュード５の地震が東京を見舞った。",
-      "id": "An earthquake of magnitude 5 shook Tokyo.",
+      "id": "Gempa bumi berkekuatan 5 skala Richter mengguncang Tokyo.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"ミマ＼ウ"}
+},
     {
       "jp": "彼は入院中の病気の友人を見舞った。",
-      "id": "He visited a sick friend who was in the hospital.",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    }
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "added_v": "v19.3.1-staged-merge",
-  "provenance": "expansion-staged",
-  "jmdict_seq": "",
-  "frequency": 1000
-},
-
-{
-  "id": "vg-n2-02035",
-  "word": "未満",
-  "reading": "みまん",
-  "romaji": "miman",
-  "meaning_id": "less than; insufficient",
-  "meaning_en": "less than; insufficient",
-  "jlpt": "n2",
-  "pos": "adverb",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": [
-    "umum",
-    "kehidupan-sehari-hari"
-  ],
-  "register": "formal",
-  "lawan_bicara": [
-    "rekan-kerja",
-    "umum"
-  ],
-  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
-  "conj_type": null,
-  "examples": [
-    {
-      "jp": "５歳未満の小人は、入場料は要りません。",
-      "id": "Ada no admission fee for children under five.",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    },
-    {
-      "jp": "１８歳未満の方は入場できません。",
-      "id": "Children under 18 are not admitted.",
+      "id": "Dia mengunjungi seorang teman yang sakit yang berada di rumah sakit.",
       "level": "n2",
       "tags": [
         "umum"
@@ -42269,10 +39980,10 @@ window.vocabN2_Verbs = [
   "word": "診る",
   "reading": "みる",
   "romaji": "miru",
-  "meaning_id": "me-examine",
+  "meaning_id": "memeriksa",
   "meaning_en": "to examine (medical)",
   "jlpt": "n2",
-  "pos": "verb-ichidan",
+  "pos": "verb-ru",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -42290,12 +40001,13 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "歯医者に診てもらうべきだ。",
-      "id": "You ought to see a dentist.",
+      "id": "Anda sebaiknya menemui dokter gigi.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":2,"downstep_mora":1,"contour":"ミ＼ル"}
+},
     {
       "jp": "急患で診ていただきたいのですが。",
       "id": "I need medical help.",
@@ -42319,10 +40031,10 @@ window.vocabN2_Verbs = [
   "word": "剥く",
   "reading": "むく",
   "romaji": "muku",
-  "meaning_id": "me-peel",
+  "meaning_id": "kupas",
   "meaning_en": "to peel; to skin; to pare; to hull",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -42340,15 +40052,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "このなしの皮をむくナイフを貸して下さい。",
-      "id": "Lend me a knife with which to peel this pear.",
+      "id": "Pinjamkan saya pisau untuk mengupas buah pir ini.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":2,"downstep_mora":0,"contour":"ムク￣"}
+},
     {
       "jp": "リンゴを食べる前に皮をむきなさい。",
-      "id": "Take the skin off before you eat the apple.",
+      "id": "Buang kulitnya sebelum Anda memakan apel.",
       "level": "n2",
       "tags": [
         "umum"
@@ -42369,7 +40082,7 @@ window.vocabN2_Verbs = [
   "word": "矛盾",
   "reading": "むじゅん",
   "romaji": "mujun",
-  "meaning_id": "contradiction; inconsistency",
+  "meaning_id": "kontradiksi; ketidakkonsistenan",
   "meaning_en": "contradiction; inconsistency",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -42390,15 +40103,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "それは矛盾だらけだ。",
-      "id": "It's a bundle of contradictions.",
+      "id": "Ini adalah kumpulan kontradiksi.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ムジュン￣"}
+},
     {
       "jp": "彼は矛盾している。",
-      "id": "He isn't consistent with himself.",
+      "id": "Dia tidak konsisten dengan dirinya sendiri.",
       "level": "n2",
       "tags": [
         "umum"
@@ -42419,10 +40133,10 @@ window.vocabN2_Verbs = [
   "word": "蒸す",
   "reading": "むす",
   "romaji": "musu",
-  "meaning_id": "me-steam",
+  "meaning_id": "uap",
   "meaning_en": "to steam; to poultice; to be sultry",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -42440,62 +40154,13 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "蒸すを使います。",
-      "id": "Menggunakan me-steam.",
+      "id": "Menggunakan uap.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "added_v": "v19.3.1-staged-merge",
-  "provenance": "expansion-staged",
-  "jmdict_seq": "",
-  "frequency": 1000
-},
-
-{
-  "id": "vg-n2-02058",
-  "word": "銘々",
-  "reading": "めいめい",
-  "romaji": "meimei",
-  "meaning_id": "each; individual",
-  "meaning_en": "each; individual",
-  "jlpt": "n2",
-  "pos": "adverb",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": [
-    "umum",
-    "kehidupan-sehari-hari"
-  ],
-  "register": "formal",
-  "lawan_bicara": [
-    "rekan-kerja",
-    "umum"
-  ],
-  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
-  "conj_type": null,
-  "examples": [
-    {
-      "jp": "生徒はめいめい自分の机を持っている。",
-      "id": "Each student has his own desk.",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    },
-    {
-      "jp": "彼女はめいめい２個ずつやった。",
-      "id": "She gave the children two apples each.",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":1,"category":"atamadaka","mora_count":2,"downstep_mora":1,"contour":"ム＼ス"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -42511,10 +40176,10 @@ window.vocabN2_Verbs = [
   "word": "恵まれる",
   "reading": "めぐまれる",
   "romaji": "megumareru",
-  "meaning_id": "me-be blessed with",
+  "meaning_id": "diberkati dengan",
   "meaning_en": "to be blessed with; to be rich in",
   "jlpt": "n2",
-  "pos": "verb-ichidan",
+  "pos": "verb-ru",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -42532,12 +40197,13 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "この地方は海産物に恵まれている。",
-      "id": "This area is rich in marine products.",
+      "id": "Daerah ini kaya akan hasil laut.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":5,"downstep_mora":0,"contour":"メグマレル￣"}
+},
     {
       "jp": "彼女はよい息子たちに恵まれている。",
       "id": "Dia blessed with good sons.",
@@ -42561,10 +40227,10 @@ window.vocabN2_Verbs = [
   "word": "巡る",
   "reading": "めぐる",
   "romaji": "meguru",
-  "meaning_id": "me-go around",
+  "meaning_id": "berkeliling",
   "meaning_en": "to go around",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -42582,15 +40248,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "思想は世界中をアッという間に巡る。",
-      "id": "Around the world thoughts shall fly in the twinkling of an eye.",
+      "id": "Di seluruh dunia, pikiran akan terbang dalam sekejap mata.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"メグル￣"}
+},
     {
       "jp": "春がまためぐってきた。",
-      "id": "Spring has come around.",
+      "id": "Musim semi telah tiba.",
       "level": "n2",
       "tags": [
         "umum"
@@ -42611,10 +40278,10 @@ window.vocabN2_Verbs = [
   "word": "目立つ",
   "reading": "めだつ",
   "romaji": "medatsu",
-  "meaning_id": "me-be conspicuous",
+  "meaning_id": "menjadi mencolok",
   "meaning_en": "to be conspicuous; to stand out",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -42632,65 +40299,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "スーツを着て彼は目立っていた。",
-      "id": "He was conspicuous in his suit.",
+      "id": "Dia terlihat mencolok dengan jasnya.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"メダ＼ツ"}
+},
     {
       "jp": "彼はいないのでかえって目立った。",
-      "id": "He was conspicuous by his absence.",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    }
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "added_v": "v19.3.1-staged-merge",
-  "provenance": "expansion-staged",
-  "jmdict_seq": "",
-  "frequency": 1000
-},
-
-{
-  "id": "vg-n2-02068",
-  "word": "めっきり",
-  "reading": "めっきり",
-  "romaji": "mekkiri",
-  "meaning_id": "remarkably",
-  "meaning_en": "remarkably",
-  "jlpt": "n2",
-  "pos": "adverb",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": [
-    "umum",
-    "kehidupan-sehari-hari"
-  ],
-  "register": "formal",
-  "lawan_bicara": [
-    "rekan-kerja",
-    "umum"
-  ],
-  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
-  "conj_type": null,
-  "examples": [
-    {
-      "jp": "めっきり寒くなった。",
-      "id": "It has become noticeably colder.",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    },
-    {
-      "jp": "めっきり春らしくなったね。",
-      "id": "It's getting quite springlike.",
+      "id": "Dia sangat mencolok dengan ketidakhadirannya.",
       "level": "n2",
       "tags": [
         "umum"
@@ -42711,7 +40329,7 @@ window.vocabN2_Verbs = [
   "word": "免税",
   "reading": "めんぜい",
   "romaji": "menzei",
-  "meaning_id": "tax exemption; duty exemption",
+  "meaning_id": "pembebasan pajak; pembebasan bea",
   "meaning_en": "tax exemption; duty exemption",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -42732,15 +40350,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "この品物は全部免税です。",
-      "id": "These articles are all exempt from duty.",
+      "id": "Semua artikel ini dibebaskan dari bea.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"メンゼイ￣"}
+},
     {
       "jp": "外国人旅行者には免税の特権がある。",
-      "id": "We give foreign tourists the privilege of tax exemption.",
+      "id": "Kami memberi turis asing keistimewaan pembebasan pajak.",
       "level": "n2",
       "tags": [
         "umum"
@@ -42761,7 +40380,7 @@ window.vocabN2_Verbs = [
   "word": "面接",
   "reading": "めんせつ",
   "romaji": "mensetsu",
-  "meaning_id": "interview",
+  "meaning_id": "wawancara",
   "meaning_en": "interview",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -42782,15 +40401,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "ホームステイをするにはスポンサーの面接を受けなくてはならない。",
-      "id": "In order to qualify for the homestay you must have an interview with the sponsors.",
+      "id": "Agar memenuhi syarat untuk homestay Anda harus melakukan wawancara dengan sponsor.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"メンセツ￣"}
+},
     {
       "jp": "来週面接においでいただけますか。",
-      "id": "Would you like to come in for an interview next week?",
+      "id": "Apakah Anda ingin datang untuk wawancara minggu depan?",
       "level": "n2",
       "tags": [
         "umum"
@@ -42811,10 +40431,10 @@ window.vocabN2_Verbs = [
   "word": "儲かる",
   "reading": "もうかる",
   "romaji": "moukaru",
-  "meaning_id": "me-be profitable",
+  "meaning_id": "menjadi menguntungkan",
   "meaning_en": "to be profitable; to yield a profit",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -42832,15 +40452,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "その仕事で少しはお金が儲かったかい。",
-      "id": "Did you make any money out of that business?",
+      "id": "Apakah Anda menghasilkan uang dari bisnis itu?",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"モウカ＼ル"}
+},
     {
       "jp": "この国では、貸金業は儲かるビジネスだ。",
-      "id": "Money lending is a profitable business in this country.",
+      "id": "Pinjaman uang adalah bisnis yang menguntungkan di negara ini.",
       "level": "n2",
       "tags": [
         "umum"
@@ -42861,10 +40482,10 @@ window.vocabN2_Verbs = [
   "word": "儲ける",
   "reading": "もうける",
   "romaji": "moukeru",
-  "meaning_id": "me-get",
+  "meaning_id": "dapatkan",
   "meaning_en": "to get; to earn; to gain; to have (bear, beget) a child",
   "jlpt": "n2",
-  "pos": "verb-ichidan",
+  "pos": "verb-ru",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -42882,15 +40503,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "ここに先物取引で儲けた方いらっしゃいますか？",
-      "id": "Has anybody here made a profit in futures trading?",
+      "id": "Adakah orang di sini yang mendapat untung dari perdagangan berjangka?",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"モウケ＼ル"}
+},
     {
       "jp": "彼らは金を儲けるために何でもやった。",
-      "id": "They did everything in order to make money.",
+      "id": "Mereka melakukan segalanya untuk menghasilkan uang.",
       "level": "n2",
       "tags": [
         "umum"
@@ -42911,10 +40533,10 @@ window.vocabN2_Verbs = [
   "word": "潜る",
   "reading": "もぐる",
   "romaji": "moguru",
-  "meaning_id": "me-dive",
+  "meaning_id": "menyelam",
   "meaning_en": "to dive (into or under water); to go underground; to hide oneself; to get under (e.g. a desk)",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -42932,107 +40554,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "海に潜ったら耳抜きしてください。",
-      "id": "If you go underwater, hold your nose and blow to clear your ears.",
+      "id": "Jika Anda masuk ke dalam air, tutup hidung Anda dan tiuplah untuk menjernihkan telinga Anda.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"モグ＼ル"}
+},
     {
       "jp": "深く潜れば潜るほど、水は冷たくなる。",
-      "id": "As we dive deeper, the water becomes colder.",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    }
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "added_v": "v19.3.1-staged-merge",
-  "provenance": "expansion-staged",
-  "jmdict_seq": "",
-  "frequency": 1000
-},
-
-{
-  "id": "vg-n2-02084",
-  "word": "もしかしたら",
-  "reading": "もしかしたら",
-  "romaji": "moshikashitara",
-  "meaning_id": "perhaps; maybe",
-  "meaning_en": "perhaps; maybe; by some chance",
-  "jlpt": "n2",
-  "pos": "adverb",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": [
-    "umum",
-    "kehidupan-sehari-hari"
-  ],
-  "register": "formal",
-  "lawan_bicara": [
-    "rekan-kerja",
-    "umum"
-  ],
-  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
-  "conj_type": null,
-  "examples": [
-    {
-      "jp": "もしかしたら彼は気が変わるかもしれない。",
-      "id": "He might change his mind.",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    },
-    {
-      "jp": "もしかしたら夕方にならないうちに雨かもしれないよ。",
-      "id": "It might rain before evening.",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    }
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "added_v": "v19.3.1-staged-merge",
-  "provenance": "expansion-staged",
-  "jmdict_seq": "",
-  "frequency": 1000
-},
-
-{
-  "id": "vg-n2-02085",
-  "word": "もしかすると",
-  "reading": "もしかすると",
-  "romaji": "moshikasuruto",
-  "meaning_id": "perhaps; maybe",
-  "meaning_en": "perhaps; maybe; by some chance",
-  "jlpt": "n2",
-  "pos": "adverb",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": [
-    "umum",
-    "kehidupan-sehari-hari"
-  ],
-  "register": "formal",
-  "lawan_bicara": [
-    "rekan-kerja",
-    "umum"
-  ],
-  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
-  "conj_type": null,
-  "examples": [
-    {
-      "jp": "もしかすると彼は明日来るかもしれない。",
-      "id": "He might come tomorrow.",
+      "id": "Saat kita menyelam lebih dalam, air menjadi lebih dingin.",
       "level": "n2",
       "tags": [
         "umum"
@@ -43053,10 +40584,10 @@ window.vocabN2_Verbs = [
   "word": "もたれる",
   "reading": "もたれる",
   "romaji": "motareru",
-  "meaning_id": "me-lean against",
+  "meaning_id": "bersandar",
   "meaning_en": "to lean against; to lean on; to recline on; to lie heavy (on the stomach)",
   "jlpt": "n2",
-  "pos": "verb-ichidan",
+  "pos": "verb-ru",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -43074,65 +40605,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "彼は壁にもたれていた。",
-      "id": "He was leaning against the wall.",
+      "id": "Dia bersandar di dinding.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"モタレ＼ル"}
+},
     {
       "jp": "彼はいすの背にもたれている。",
       "id": "Dia leaning on the back of the chair.",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    }
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "added_v": "v19.3.1-staged-merge",
-  "provenance": "expansion-staged",
-  "jmdict_seq": "",
-  "frequency": 1000
-},
-
-{
-  "id": "vg-n2-02091",
-  "word": "元々",
-  "reading": "もともと",
-  "romaji": "motomoto",
-  "meaning_id": "originally; by nature",
-  "meaning_en": "originally; by nature; from the start",
-  "jlpt": "n2",
-  "pos": "adverb",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": [
-    "umum",
-    "kehidupan-sehari-hari"
-  ],
-  "register": "formal",
-  "lawan_bicara": [
-    "rekan-kerja",
-    "umum"
-  ],
-  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
-  "conj_type": null,
-  "examples": [
-    {
-      "jp": "彼らは元々あった文明を破壊した。",
-      "id": "They destroyed the native civilization.",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    },
-    {
-      "jp": "彼らはもともと農業をやっていました。",
-      "id": "Originally they were farmers.",
       "level": "n2",
       "tags": [
         "umum"
@@ -43153,10 +40635,10 @@ window.vocabN2_Verbs = [
   "word": "物語る",
   "reading": "ものがたる",
   "romaji": "monogataru",
-  "meaning_id": "me-tell",
+  "meaning_id": "katakan",
   "meaning_en": "to tell; to indicate",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -43174,15 +40656,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "この話はアメリカに起こっていることについて多くを物語っている。",
-      "id": "This story says a lot about what has happened to America.",
+      "id": "Kisah ini mengungkapkan banyak hal tentang apa yang terjadi di Amerika.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":4,"category":"nakadaka","mora_count":5,"downstep_mora":4,"contour":"モノガタ＼ル"}
+},
     {
       "jp": "統計はすべてを物語るとは限らない。",
-      "id": "Statistics don't always tell the whole story.",
+      "id": "Statistik tidak selalu menceritakan keseluruhan cerita.",
       "level": "n2",
       "tags": [
         "umum"
@@ -43203,10 +40686,10 @@ window.vocabN2_Verbs = [
   "word": "揉む",
   "reading": "もむ",
   "romaji": "momu",
-  "meaning_id": "me-rub",
+  "meaning_id": "gosok",
   "meaning_en": "to rub; to crumple (up); to wrinkle",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -43224,12 +40707,13 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "その結果の報道に満足して彼は手をもんでうれしがっていた。",
-      "id": "He was rubbing his hands over the report of the result.",
+      "id": "Dia menggosok-gosok laporan hasilnya.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":2,"downstep_mora":0,"contour":"モム￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -43245,10 +40729,10 @@ window.vocabN2_Verbs = [
   "word": "燃やす",
   "reading": "もやす",
   "romaji": "moyasu",
-  "meaning_id": "me-burn",
+  "meaning_id": "terbakar",
   "meaning_en": "to burn",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -43266,15 +40750,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "このガラクタは火に燃やしなさい。",
-      "id": "Burn this rubbish on the fire.",
+      "id": "Bakar sampah ini di atas api.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"モヤス￣"}
+},
     {
       "jp": "彼らはすべての書類を燃やした。",
-      "id": "They burned all the documents.",
+      "id": "Mereka membakar semua dokumen.",
       "level": "n2",
       "tags": [
         "umum"
@@ -43295,10 +40780,10 @@ window.vocabN2_Verbs = [
   "word": "盛る",
   "reading": "もる",
   "romaji": "moru",
-  "meaning_id": "me-serve",
+  "meaning_id": "melayani",
   "meaning_en": "to serve (food, etc.); to fill up; to prescribe",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -43320,8 +40805,9 @@ window.vocabN2_Verbs = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":2,"downstep_mora":0,"contour":"モル￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -43337,7 +40823,7 @@ window.vocabN2_Verbs = [
   "word": "問答",
   "reading": "もんどう",
   "romaji": "mondou",
-  "meaning_id": "questions and answers; dialogue",
+  "meaning_id": "pertanyaan dan jawaban; dialog",
   "meaning_en": "questions and answers; dialogue",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -43362,61 +40848,12 @@ window.vocabN2_Verbs = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"モンド＼ウ"}
+},
     {
       "jp": "ここで意味のない押し問答を続けては・・・昨日の繰り返しですわね。",
-      "id": "If you continue with the pointless arguments here...it'll end up as a repeat of yesterday.",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    }
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "added_v": "v19.3.1-staged-merge",
-  "provenance": "expansion-staged",
-  "jmdict_seq": "",
-  "frequency": 1000
-},
-
-{
-  "id": "vg-n2-02103",
-  "word": "夜間",
-  "reading": "やかん",
-  "romaji": "yakan",
-  "meaning_id": "at night; nighttime",
-  "meaning_en": "at night; nighttime",
-  "jlpt": "n2",
-  "pos": "adverb",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": [
-    "umum",
-    "kehidupan-sehari-hari"
-  ],
-  "register": "formal",
-  "lawan_bicara": [
-    "rekan-kerja",
-    "umum"
-  ],
-  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
-  "conj_type": null,
-  "examples": [
-    {
-      "jp": "フクロウは昼間寝ていて夜間狩りをします。",
-      "id": "An owl sleeps by day and hunts by night.",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    },
-    {
-      "jp": "夜間の割引はありますか。",
-      "id": "Are there special evening rates?",
+      "id": "Jika Anda melanjutkan argumen yang tidak ada gunanya di sini...itu akan berakhir seperti pengulangan kemarin.",
       "level": "n2",
       "tags": [
         "umum"
@@ -43437,10 +40874,10 @@ window.vocabN2_Verbs = [
   "word": "訳す",
   "reading": "やくす",
   "romaji": "yakusu",
-  "meaning_id": "me-translate",
+  "meaning_id": "menerjemahkan",
   "meaning_en": "to translate",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -43462,11 +40899,12 @@ window.vocabN2_Verbs = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"ヤク＼ス"}
+},
     {
       "jp": "彼はフランス語を日本語に訳した。",
-      "id": "He translated French into Japanese.",
+      "id": "Dia menerjemahkan bahasa Prancis ke bahasa Jepang.",
       "level": "n2",
       "tags": [
         "umum"
@@ -43487,7 +40925,7 @@ window.vocabN2_Verbs = [
   "word": "火傷",
   "reading": "やけど",
   "romaji": "yakedo",
-  "meaning_id": "burn; scald",
+  "meaning_id": "membakar; melepuh",
   "meaning_en": "burn; scald",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -43512,11 +40950,12 @@ window.vocabN2_Verbs = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ヤケド￣"}
+},
     {
       "jp": "アイロンで手をやけどしました。",
-      "id": "I burned my hand with an iron.",
+      "id": "Saya membakar tangan saya dengan besi.",
       "level": "n2",
       "tags": [
         "umum"
@@ -43558,65 +40997,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "夜行ったことは昼現れる。",
-      "id": "What is done by night appears by day.",
+      "id": "Apa yang dilakukan pada malam hari, muncul pada siang hari.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ヤコウ￣"}
+},
     {
       "jp": "彼女の誕生パーティーは明日の夜行われます。",
       "id": "Her birthday party will be given next evening.",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    }
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "added_v": "v19.3.1-staged-merge",
-  "provenance": "expansion-staged",
-  "jmdict_seq": "",
-  "frequency": 1000
-},
-
-{
-  "id": "vg-n2-02114",
-  "word": "やたらに",
-  "reading": "やたらに",
-  "romaji": "yatarani",
-  "meaning_id": "randomly; recklessly",
-  "meaning_en": "randomly; recklessly; blindly",
-  "jlpt": "n2",
-  "pos": "adverb",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": [
-    "umum",
-    "kehidupan-sehari-hari"
-  ],
-  "register": "formal",
-  "lawan_bicara": [
-    "rekan-kerja",
-    "umum"
-  ],
-  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
-  "conj_type": null,
-  "examples": [
-    {
-      "jp": "上役にやたらにぺこぺこするな。",
-      "id": "Don't be subservient to your boss.",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    },
-    {
-      "jp": "美味しいからって、むやみやたらに食べちゃダメよ。",
-      "id": "Even if it's delicious, make sure you don't overeat.",
       "level": "n2",
       "tags": [
         "umum"
@@ -43637,10 +41027,10 @@ window.vocabN2_Verbs = [
   "word": "やっつける",
   "reading": "やっつける",
   "romaji": "yattsukeru",
-  "meaning_id": "me-attack",
+  "meaning_id": "menyerang",
   "meaning_en": "to attack (an enemy); to beat; to do away with; to finish off",
   "jlpt": "n2",
-  "pos": "verb-ichidan",
+  "pos": "verb-ru",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -43658,65 +41048,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "ジャイアンツをやっつけろ。",
-      "id": "Beat the Giants!",
+      "id": "Kalahkan Raksasa!",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":4,"category":"nakadaka","mora_count":5,"downstep_mora":4,"contour":"ヤッツケ＼ル"}
+},
     {
       "jp": "相手チームをやっつけるのは朝飯前だった。",
       "id": "Beating the other team was no sweat at all.",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    }
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "added_v": "v19.3.1-staged-merge",
-  "provenance": "expansion-staged",
-  "jmdict_seq": "",
-  "frequency": 1000
-},
-
-{
-  "id": "vg-n2-02117",
-  "word": "やっぱり",
-  "reading": "やっぱり",
-  "romaji": "yappari",
-  "meaning_id": "also; as I thought",
-  "meaning_en": "also; as I thought; still; in spite of; absolutely; of course",
-  "jlpt": "n2",
-  "pos": "adverb",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": [
-    "umum",
-    "kehidupan-sehari-hari"
-  ],
-  "register": "formal",
-  "lawan_bicara": [
-    "rekan-kerja",
-    "umum"
-  ],
-  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
-  "conj_type": null,
-  "examples": [
-    {
-      "jp": "やっぱり何とかやってのけたね。",
-      "id": "You managed it after all.",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    },
-    {
-      "jp": "疲れているが、やっぱり行くつもりだ。",
-      "id": "I'm tired, but I'm going anyway.",
       "level": "n2",
       "tags": [
         "umum"
@@ -43737,10 +41078,10 @@ window.vocabN2_Verbs = [
   "word": "破く",
   "reading": "やぶく",
   "romaji": "yabuku",
-  "meaning_id": "me-tear",
+  "meaning_id": "sobek",
   "meaning_en": "to tear; to rip",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -43758,12 +41099,13 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "彼は写真を散り散りに破いた。",
-      "id": "He tore the photographs into pieces.",
+      "id": "Dia merobek foto-foto itu menjadi beberapa bagian.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"ヤブ＼ク"}
+},
     {
       "jp": "ベスはスカーフを破いたと言って妹のサリーを責めました。",
       "id": "Beth accused her sister, Sally, of tearing her scarf.",
@@ -43787,10 +41129,10 @@ window.vocabN2_Verbs = [
   "word": "破れる",
   "reading": "やぶれる",
   "romaji": "yabureru",
-  "meaning_id": "me-get torn",
+  "meaning_id": "robek",
   "meaning_en": "to get torn; to wear out",
   "jlpt": "n2",
-  "pos": "verb-ichidan",
+  "pos": "verb-ru",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -43808,12 +41150,13 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "バスに遅れて、会社に遅れて、ストッキングも破れた。",
-      "id": "I was late for the bus, late for work, and got a run in my stocking.",
+      "id": "Saya terlambat ke bus, terlambat ke kantor, dan kehabisan stocking.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"ヤブレ＼ル"}
+},
     {
       "jp": "彼女は恋に破れた。",
       "id": "She was disappointed in love.",
@@ -43837,7 +41180,7 @@ window.vocabN2_Verbs = [
   "word": "郵送",
   "reading": "ゆうそう",
   "romaji": "yuusou",
-  "meaning_id": "mailing",
+  "meaning_id": "pengiriman surat",
   "meaning_en": "mailing",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -43862,53 +41205,12 @@ window.vocabN2_Verbs = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ユウソウ￣"}
+},
     {
       "jp": "折り返し商品を郵送するべし。",
       "id": "Tolong send the merchandise by return.",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    }
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "added_v": "v19.3.1-staged-merge",
-  "provenance": "expansion-staged",
-  "jmdict_seq": "",
-  "frequency": 1000
-},
-
-{
-  "id": "vg-n2-02129",
-  "word": "悠々",
-  "reading": "ゆうゆう",
-  "romaji": "yuuyuu",
-  "meaning_id": "tenang / sunyi",
-  "meaning_en": "quiet; calm; leisurely",
-  "jlpt": "n2",
-  "pos": "adverb",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": [
-    "umum",
-    "kehidupan-sehari-hari"
-  ],
-  "register": "formal",
-  "lawan_bicara": [
-    "rekan-kerja",
-    "umum"
-  ],
-  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
-  "conj_type": null,
-  "examples": [
-    {
-      "jp": "飛行機は頭上をゆうゆうと飛んで行った。",
-      "id": "The airplane sailed over our heads.",
       "level": "n2",
       "tags": [
         "umum"
@@ -43929,7 +41231,7 @@ window.vocabN2_Verbs = [
   "word": "輸血",
   "reading": "ゆけつ",
   "romaji": "yuketsu",
-  "meaning_id": "blood transfusion",
+  "meaning_id": "transfusi darah",
   "meaning_en": "blood transfusion",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -43950,12 +41252,13 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "輸血が必要です。",
-      "id": "A blood transfusion is necessary.",
+      "id": "Transfusi darah diperlukan.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ユケツ￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -43971,7 +41274,7 @@ window.vocabN2_Verbs = [
   "word": "輸送",
   "reading": "ゆそう",
   "romaji": "yusou",
-  "meaning_id": "transport; transportation",
+  "meaning_id": "transportasi",
   "meaning_en": "transport; transportation",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -43996,11 +41299,12 @@ window.vocabN2_Verbs = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ユソウ￣"}
+},
     {
       "jp": "商品は船で輸送された。",
-      "id": "The goods were transported by ship.",
+      "id": "Barang-barang tersebut diangkut dengan kapal laut.",
       "level": "n2",
       "tags": [
         "umum"
@@ -44021,7 +41325,7 @@ window.vocabN2_Verbs = [
   "word": "油断",
   "reading": "ゆだん",
   "romaji": "yudan",
-  "meaning_id": "negligence; unpreparedness",
+  "meaning_id": "kelalaian; ketidaksiapan",
   "meaning_en": "negligence; unpreparedness",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -44046,8 +41350,9 @@ window.vocabN2_Verbs = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ユダン￣"}
+},
     {
       "jp": "車の多い通りの横断には油断するな！",
       "id": "Be alert when you cross a busy street!",
@@ -44071,10 +41376,10 @@ window.vocabN2_Verbs = [
   "word": "ゆでる",
   "reading": "ゆでる",
   "romaji": "yuderu",
-  "meaning_id": "me-boil",
+  "meaning_id": "mendidih",
   "meaning_en": "to boil",
   "jlpt": "n2",
-  "pos": "verb-ichidan",
+  "pos": "verb-ru",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -44092,65 +41397,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "卵は硬くゆでてください。",
-      "id": "Boil the eggs hard.",
+      "id": "Rebus telur hingga matang.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"ユデ＼ル"}
+},
     {
       "jp": "ジャガイモをゆでてあげよう。",
-      "id": "I'll boil the potatoes for you.",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    }
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "added_v": "v19.3.1-staged-merge",
-  "provenance": "expansion-staged",
-  "jmdict_seq": "",
-  "frequency": 1000
-},
-
-{
-  "id": "vg-n2-02151",
-  "word": "ようやく",
-  "reading": "ようやく",
-  "romaji": "youyaku",
-  "meaning_id": "gradually; finally",
-  "meaning_en": "gradually; finally; hardly",
-  "jlpt": "n2",
-  "pos": "adverb",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": [
-    "umum",
-    "kehidupan-sehari-hari"
-  ],
-  "register": "formal",
-  "lawan_bicara": [
-    "rekan-kerja",
-    "umum"
-  ],
-  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
-  "conj_type": null,
-  "examples": [
-    {
-      "jp": "「そっか」ウィリーはようやく納得した。",
-      "id": "\"Well, OK,\" Willie finally agreed.",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    },
-    {
-      "jp": "ようやくすっかり終わった。",
-      "id": "It is finally all over.",
+      "id": "Aku akan merebus kentang untukmu.",
       "level": "n2",
       "tags": [
         "umum"
@@ -44174,7 +41430,7 @@ window.vocabN2_Verbs = [
   "meaning_id": "mengirim",
   "meaning_en": "to send; to forward; to hand over (e.g. money)",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -44192,12 +41448,13 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "彼はりんごをぽいとなげてよこした。",
-      "id": "He chucked me the apple.",
+      "id": "Dia memberiku apel itu.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"ヨコ＼ス"}
+},
     {
       "jp": "私が事務所にいる間は電話をかけてよこさないでくれ。",
       "id": "Don't phone me while I'm at the office.",
@@ -44221,10 +41478,10 @@ window.vocabN2_Verbs = [
   "word": "汚す",
   "reading": "よごす",
   "romaji": "yogosu",
-  "meaning_id": "me-disgrace",
+  "meaning_id": "aib",
   "meaning_en": "to disgrace; to dishonour; to pollute; to contaminate; to soil; to make dirty; to stain",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -44242,15 +41499,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "あんな行動は彼の体面を汚すものだ。",
-      "id": "Such behavior is beneath his dignity.",
+      "id": "Perilaku seperti itu merendahkan martabatnya.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ヨゴス￣"}
+},
     {
       "jp": "彼はシャツをインクのしみで汚した。",
-      "id": "He blotted his shirt with ink spots.",
+      "id": "Dia mengotori kemejanya dengan noda tinta.",
       "level": "n2",
       "tags": [
         "umum"
@@ -44271,10 +41529,10 @@ window.vocabN2_Verbs = [
   "word": "寄せる",
   "reading": "よせる",
   "romaji": "yoseru",
-  "meaning_id": "me-collect",
+  "meaning_id": "mengumpulkan",
   "meaning_en": "to collect; to gather; to add; to put aside",
   "jlpt": "n2",
-  "pos": "verb-ichidan",
+  "pos": "verb-ru",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -44292,15 +41550,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "いすをもっと火の近くに寄せなさい。",
-      "id": "Draw your chair closer to the fire.",
+      "id": "Dekatkan kursi Anda ke api.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ヨセル￣"}
+},
     {
       "jp": "道の脇に寄せてください。",
-      "id": "Pull over to the side, please.",
+      "id": "Tolong menepi ke samping.",
       "level": "n2",
       "tags": [
         "umum"
@@ -44321,10 +41580,10 @@ window.vocabN2_Verbs = [
   "word": "呼び掛ける",
   "reading": "よびかける",
   "romaji": "yobikakeru",
-  "meaning_id": "me-call out to",
+  "meaning_id": "memanggil ke",
   "meaning_en": "to call out to; to accost; to address (crowd); to appeal",
   "jlpt": "n2",
-  "pos": "verb-ichidan",
+  "pos": "verb-ru",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -44342,15 +41601,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "警官はすりに対する注意を呼びかけた。",
-      "id": "The policeman called attention to the problem of pickpockets.",
+      "id": "Polisi tersebut meminta perhatian terhadap masalah pencopet.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":4,"category":"nakadaka","mora_count":5,"downstep_mora":4,"contour":"ヨビカケ＼ル"}
+},
     {
       "jp": "トムは通り越しに彼女に向かって呼びかけた。",
-      "id": "Tom called to her across the street.",
+      "id": "Tom memanggilnya di seberang jalan.",
       "level": "n2",
       "tags": [
         "umum"
@@ -44371,10 +41631,10 @@ window.vocabN2_Verbs = [
   "word": "呼び出す",
   "reading": "よびだす",
   "romaji": "yobidasu",
-  "meaning_id": "me-summon",
+  "meaning_id": "memanggil",
   "meaning_en": "to summon; to call (e.g. phone)",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -44392,15 +41652,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "どうぞ彼を電話口に呼び出してください。",
-      "id": "Tolong call him to the telephone.",
+      "id": "Tolong panggil dia ke telepon.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"ヨビダ＼ス"}
+},
     {
       "jp": "4つのレジスタは、呼び出された関数側が保存する。",
-      "id": "The contents of the four registers are preserved by the called subroutine.",
+      "id": "Isi keempat register disimpan oleh subrutin yang disebut.",
       "level": "n2",
       "tags": [
         "umum"
@@ -44421,10 +41682,10 @@ window.vocabN2_Verbs = [
   "word": "蘇る",
   "reading": "よみがえる",
   "romaji": "yomigaeru",
-  "meaning_id": "me-be resurrected",
+  "meaning_id": "dibangkitkan",
   "meaning_en": "to be resurrected; to be revived; to be resuscitated; to be rehabilitated",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -44442,15 +41703,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "春の雨が花に生気をよみがえらせた。",
-      "id": "A spring rain revived the flower.",
+      "id": "Hujan musim semi menghidupkan kembali bunga itu.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":5,"downstep_mora":3,"contour":"ヨミガ＼エル"}
+},
     {
       "jp": "彼女の顔が記憶にまざまざとよみがえった。",
-      "id": "Her face came back vividly to my memory.",
+      "id": "Wajahnya kembali jelas dalam ingatanku.",
       "level": "n2",
       "tags": [
         "umum"
@@ -44471,10 +41733,10 @@ window.vocabN2_Verbs = [
   "word": "よる",
   "reading": "よる",
   "romaji": "yoru",
-  "meaning_id": "me-come from",
+  "meaning_id": "berasal dari",
   "meaning_en": "to come from",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -44492,15 +41754,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "造られたもので、この方によらずできたものは一つもない。",
-      "id": "Without him nothing was made that has been made.",
+      "id": "Tanpa Dia, tidak ada sesuatu pun yang telah tercipta.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":2,"downstep_mora":0,"contour":"ヨル￣"}
+},
     {
       "jp": "この理由により、著者に関する信憑性は、資料の信憑性に拠っているのである。",
-      "id": "For this reason, the credibility of the book's authors rests on the credibility of their sources.",
+      "id": "Oleh karena itu, kredibilitas penulis buku bergantung pada kredibilitas sumbernya.",
       "level": "n2",
       "tags": [
         "umum"
@@ -44542,15 +41805,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "ボブがいつ来日したか分からない。",
-      "id": "I don't know when Bob came to Japan.",
+      "id": "Saya tidak tahu kapan Bob datang ke Jepang.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ライニチ￣"}
+},
     {
       "jp": "４年前に１年の予定で来日しました。",
-      "id": "I came to Japan four years ago intending to stay for one year.",
+      "id": "Saya datang ke Jepang empat tahun lalu dengan niat untuk tinggal selama satu tahun.",
       "level": "n2",
       "tags": [
         "umum"
@@ -44571,7 +41835,7 @@ window.vocabN2_Verbs = [
   "word": "落第",
   "reading": "らくだい",
   "romaji": "rakudai",
-  "meaning_id": "failure; dropping out of a class",
+  "meaning_id": "kegagalan; keluar dari kelas",
   "meaning_en": "failure; dropping out of a class",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -44592,15 +41856,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "彼はいつも遊んでいたため落第した。",
-      "id": "He failed by playing all the time.",
+      "id": "Dia gagal dengan bermain sepanjang waktu.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ラクダイ￣"}
+},
     {
       "jp": "もっと勉強しない限り落第しますよ。",
-      "id": "You will fail unless you work harder.",
+      "id": "Anda akan gagal kecuali Anda bekerja lebih keras.",
       "level": "n2",
       "tags": [
         "umum"
@@ -44621,7 +41886,7 @@ window.vocabN2_Verbs = [
   "word": "リポート",
   "reading": "リポート",
   "romaji": "ripooto",
-  "meaning_id": "report; paper",
+  "meaning_id": "laporan; kertas",
   "meaning_en": "report; paper",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -44642,12 +41907,13 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "彼のリポートはたった今提出された。",
-      "id": "His report has just been handed in.",
+      "id": "Laporannya baru saja diserahkan.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":0,"downstep_mora":0,"contour":"￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -44663,10 +41929,10 @@ window.vocabN2_Verbs = [
   "word": "略す",
   "reading": "りゃくす",
   "romaji": "ryakusu",
-  "meaning_id": "me-abbreviate",
+  "meaning_id": "menyingkat",
   "meaning_en": "to abbreviate",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -44684,15 +41950,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "私の名前はロバートなので、皆は略してボブと呼びます。",
-      "id": "My name is Robert, so they call me Bob for short.",
+      "id": "Nama saya Robert, jadi mereka memanggil saya Bob.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":3,"downstep_mora":2,"contour":"リャク＼ス"}
+},
     {
       "jp": "名前を略さずに書きなさい。",
-      "id": "Write your name in full.",
+      "id": "Tuliskan nama Anda secara lengkap.",
       "level": "n2",
       "tags": [
         "umum"
@@ -44713,7 +41980,7 @@ window.vocabN2_Verbs = [
   "word": "領収",
   "reading": "りょうしゅう",
   "romaji": "ryoushuu",
-  "meaning_id": "receipt; voucher",
+  "meaning_id": "tanda terima; voucher",
   "meaning_en": "receipt; voucher",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -44738,8 +42005,9 @@ window.vocabN2_Verbs = [
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"リョウシュウ￣"}
+}
   ],
   "synonyms": [],
   "antonyms": [],
@@ -44776,15 +42044,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "その子は留守番をしなければならないと言って怒っていた。",
-      "id": "The boy was cross at having to stay at home.",
+      "id": "Bocah itu kesal karena harus tinggal di rumah.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ルスバン￣"}
+},
     {
       "jp": "留守番しててね。",
-      "id": "Would you look after the place while I'm out?",
+      "id": "Maukah kamu menjaga tempat itu saat aku keluar?",
       "level": "n2",
       "tags": [
         "umum"
@@ -44826,15 +42095,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "その魚と肉を冷凍してください。",
-      "id": "Tolong freeze the fish and meat.",
+      "id": "Tolong bekukan ikan dan dagingnya.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"レイトウ￣"}
+},
     {
       "jp": "とにかく冷凍エビを与えよう。",
-      "id": "Have some frozen lobster at any rate.",
+      "id": "Makanlah lobster beku.",
       "level": "n2",
       "tags": [
         "umum"
@@ -44855,7 +42125,7 @@ window.vocabN2_Verbs = [
   "word": "連合",
   "reading": "れんごう",
   "romaji": "rengou",
-  "meaning_id": "union; alliance",
+  "meaning_id": "serikat pekerja; aliansi",
   "meaning_en": "union; alliance",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -44876,15 +42146,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "戦争は連合軍の勝利に終わった。",
-      "id": "The war ended in victory for the Allied Powers.",
+      "id": "Perang tersebut berakhir dengan kemenangan bagi Sekutu.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"レンゴウ￣"}
+},
     {
       "jp": "党が連合して、新しい政府となった。",
-      "id": "A combination of parties formed the new government.",
+      "id": "Kombinasi partai membentuk pemerintahan baru.",
       "level": "n2",
       "tags": [
         "umum"
@@ -44905,7 +42176,7 @@ window.vocabN2_Verbs = [
   "word": "録音",
   "reading": "ろくおん",
   "romaji": "rokuon",
-  "meaning_id": "(audio) recording",
+  "meaning_id": "(audio) rekaman",
   "meaning_en": "(audio) recording",
   "jlpt": "n2",
   "pos": "verb-suru",
@@ -44926,15 +42197,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "そのテープレコーダーは彼の声を録音した。",
-      "id": "The tape recorder has recorded his voice.",
+      "id": "Tape recorder telah merekam suaranya.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":4,"downstep_mora":0,"contour":"ロクオン￣"}
+},
     {
       "jp": "その放送をテープに録音してくれ。",
-      "id": "Record the broadcast on tape.",
+      "id": "Rekam siarannya dalam kaset.",
       "level": "n2",
       "tags": [
         "umum"
@@ -44955,10 +42227,10 @@ window.vocabN2_Verbs = [
   "word": "分かれる",
   "reading": "わかれる",
   "romaji": "wakareru",
-  "meaning_id": "me-branch off",
+  "meaning_id": "bercabang",
   "meaning_en": "to branch off; to diverge from; to fork; to split; to dispense; to scatter; to divide into",
   "jlpt": "n2",
-  "pos": "verb-ichidan",
+  "pos": "verb-ru",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -44976,15 +42248,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "その問題で上院議員の意見が分かれた。",
-      "id": "The issue divided the senators.",
+      "id": "Masalah ini memecah belah para senator.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":3,"category":"nakadaka","mora_count":4,"downstep_mora":3,"contour":"ワカレ＼ル"}
+},
     {
       "jp": "道はここで二つに分かれている。",
-      "id": "The road divides here into two.",
+      "id": "Jalan di sini terbagi menjadi dua.",
       "level": "n2",
       "tags": [
         "umum"
@@ -45005,10 +42278,10 @@ window.vocabN2_Verbs = [
   "word": "湧く",
   "reading": "わく",
   "romaji": "waku",
-  "meaning_id": "me-boil",
+  "meaning_id": "mendidih",
   "meaning_en": "to boil; to grow hot; to get excited; to gush forth",
   "jlpt": "n2",
-  "pos": "verb-godan",
+  "pos": "verb-u",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -45026,15 +42299,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "いざとなれば勇気が湧いてくる。",
-      "id": "Your courage will come out in a crisis.",
+      "id": "Keberanian Anda akan muncul dalam suatu krisis.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":2,"downstep_mora":0,"contour":"ワク￣"}
+},
     {
       "jp": "彼女の目には涙が湧きあふれていた。",
-      "id": "Her eyes gushed with tears.",
+      "id": "Matanya berkaca-kaca.",
       "level": "n2",
       "tags": [
         "umum"
@@ -45055,10 +42329,10 @@ window.vocabN2_Verbs = [
   "word": "詫びる",
   "reading": "わびる",
   "romaji": "wabiru",
-  "meaning_id": "me-apologize",
+  "meaning_id": "meminta maaf",
   "meaning_en": "to apologize",
   "jlpt": "n2",
-  "pos": "verb-ichidan",
+  "pos": "verb-ru",
   "common": true,
   "related_grammar": [],
   "formalitas": 3,
@@ -45076,57 +42350,16 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "彼は彼女を怒らせたことを詫びた。",
-      "id": "He apologized for having offended her.",
+      "id": "Dia meminta maaf karena telah menyinggung perasaannya.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    },
+      ],
+  "pitch": {"pattern":0,"category":"heiban","mora_count":3,"downstep_mora":0,"contour":"ワビル￣"}
+},
     {
       "jp": "きみは失礼を詫びるべきだ。",
-      "id": "You should apologize for your rudeness.",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    }
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "added_v": "v19.3.1-staged-merge",
-  "provenance": "expansion-staged",
-  "jmdict_seq": "",
-  "frequency": 1000
-},
-
-{
-  "id": "vg-n2-02211",
-  "word": "わりあいに",
-  "reading": "わりあいに",
-  "romaji": "wariaini",
-  "meaning_id": "comparatively",
-  "meaning_en": "comparatively",
-  "jlpt": "n2",
-  "pos": "adverb",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": [
-    "umum",
-    "kehidupan-sehari-hari"
-  ],
-  "register": "formal",
-  "lawan_bicara": [
-    "rekan-kerja",
-    "umum"
-  ],
-  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
-  "conj_type": null,
-  "examples": [
-    {
-      "jp": "今から２５年後には、就業者２人につき退職者１人の割合になるだろう。",
-      "id": "Twenty-five years from now there will be one retired person for each two working.",
+      "id": "Anda harus meminta maaf atas kekasaran Anda.",
       "level": "n2",
       "tags": [
         "umum"
@@ -45168,54 +42401,13 @@ window.vocabN2_Verbs = [
   "examples": [
     {
       "jp": "何らかの数字をゼロで割り算すると未定義の解になる。",
-      "id": "The result of dividing any number by zero is undefined.",
+      "id": "Hasil pembagian bilangan apa pun dengan nol tidak terdefinisi.",
       "level": "n2",
       "tags": [
         "umum"
-      ]
-    }
-  ],
-  "synonyms": [],
-  "antonyms": [],
-  "see_also": [],
-  "added_v": "v19.3.1-staged-merge",
-  "provenance": "expansion-staged",
-  "jmdict_seq": "",
-  "frequency": 1000
-},
-
-{
-  "id": "vg-n2-02213",
-  "word": "割と",
-  "reading": "わりと",
-  "romaji": "warito",
-  "meaning_id": "relatif; lumayan",
-  "meaning_en": "relatively; comparitively",
-  "jlpt": "n2",
-  "pos": "adverb",
-  "common": true,
-  "related_grammar": [],
-  "formalitas": 3,
-  "domain": [
-    "umum",
-    "kehidupan-sehari-hari"
-  ],
-  "register": "formal",
-  "lawan_bicara": [
-    "rekan-kerja",
-    "umum"
-  ],
-  "nuance": "Kosakata level N2: perbendaharaan kata penting untuk pemahaman standar JLPT.",
-  "conj_type": null,
-  "examples": [
-    {
-      "jp": "割とありうる。",
-      "id": "It's quite possible.",
-      "level": "n2",
-      "tags": [
-        "umum"
-      ]
-    }
+      ],
+  "pitch": {"pattern":2,"category":"nakadaka","mora_count":4,"downstep_mora":2,"contour":"ワリ＼ザン"}
+}
   ],
   "synonyms": [],
   "antonyms": [],

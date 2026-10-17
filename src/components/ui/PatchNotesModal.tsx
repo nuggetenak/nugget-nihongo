@@ -20,6 +20,7 @@ import {
 } from 'lucide-react';
 import { PATCH_NOTES_HISTORY, PatchNote } from '../../lib/data/patchNotes';
 import { APP_VERSION } from '../../config/version';
+import { useFocusTrap } from '../../hooks/useFocusTrap';
 
 interface PatchNotesModalProps {
   isOpen: boolean;
@@ -27,6 +28,7 @@ interface PatchNotesModalProps {
 }
 
 export const PatchNotesModal: React.FC<PatchNotesModalProps> = ({ isOpen, onClose }) => {
+  const containerRef = useFocusTrap<HTMLDivElement>(isOpen, onClose);
   const [selectedFilter, setSelectedFilter] = useState<'all' | 'major'>('all');
   const [showTechnical, setShowTechnical] = useState(false);
   const [expandedVersions, setExpandedVersions] = useState<Record<string, boolean>>({
@@ -66,6 +68,7 @@ export const PatchNotesModal: React.FC<PatchNotesModalProps> = ({ isOpen, onClos
       aria-label="Catatan Rilis dan Pembaruan"
     >
       <div
+        ref={containerRef}
         className="relative w-full max-w-2xl bg-surface border-t-2 sm:border border-accent/25 rounded-t-3xl sm:rounded-3xl p-4 sm:p-7 shadow-2xl space-y-4 sm:space-y-5 animate-in slide-in-from-bottom-6 sm:zoom-in-95 duration-200 max-h-[90dvh] sm:max-h-[88vh] flex flex-col overflow-hidden"
         onClick={(e) => e.stopPropagation()}
       >
@@ -97,11 +100,12 @@ export const PatchNotesModal: React.FC<PatchNotesModalProps> = ({ isOpen, onClos
           </div>
 
           <button
+            type="button"
             onClick={onClose}
-            className="w-8 h-8 rounded-full bg-surface-2 hover:bg-surface-3 flex items-center justify-center text-appText-muted hover:text-appText-bright transition-all shrink-0 active:scale-95"
-            aria-label="Tutup"
+            className="w-11 h-11 min-w-[44px] min-h-[44px] rounded-full bg-surface-2 hover:bg-surface-3 flex items-center justify-center text-appText-muted hover:text-appText-bright transition-all shrink-0 active:scale-95"
+            aria-label="Tutup catatan rilis"
           >
-            <X className="w-4 h-4" />
+            <X className="w-5 h-5" />
           </button>
         </div>
 

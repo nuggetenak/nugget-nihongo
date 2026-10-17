@@ -8,32 +8,58 @@ import { Toast } from './components/ui/Toast';
 import { SearchPalette } from './components/ui/SearchPalette';
 import { DetailModal } from './components/ui/DetailModal';
 import { InstallModal } from './components/ui/InstallModal';
+import { UpdatePromptToast } from './components/ui/UpdatePromptToast';
+import { OfflineBanner } from './components/ui/OfflineBanner';
 import { StreakBrokenModal } from './components/gamification/StreakBrokenModal';
 import { AuthModal } from './components/auth/AuthModal';
 import { KeyboardShortcutsModal } from './components/ui/KeyboardShortcutsModal';
 import { OnboardingModal } from './components/onboarding/OnboardingModal';
 import { FeatureGuideModal } from './components/ui/FeatureGuideModal';
-import { KanaChartModal } from './components/kana/KanaChartModal';
-import { ConjugationModal } from './components/grammar/ConjugationModal';
-import { NuanceCompareModal } from './components/grammar/NuanceCompareModal';
-import { PatchNotesModal } from './components/ui/PatchNotesModal';
-import { KotowazaModal } from './components/kotowaza/KotowazaModal';
-import { StudyToolboxModal } from './components/tools/StudyToolboxModal';
-import { CatPlacementModal } from './components/cat/CatPlacementModal';
+
+// Lazy-loaded heavy modal views with isolated chunk splitting (Ticket T-232)
+const KanaChartModal = React.lazy(() => import('./components/kana/KanaChartModal').then(m => ({ default: m.KanaChartModal })));
+const ConjugationModal = React.lazy(() => import('./components/grammar/ConjugationModal').then(m => ({ default: m.ConjugationModal })));
+const NuanceCompareModal = React.lazy(() => import('./components/grammar/NuanceCompareModal').then(m => ({ default: m.NuanceCompareModal })));
+const PatchNotesModal = React.lazy(() => import('./components/ui/PatchNotesModal').then(m => ({ default: m.PatchNotesModal })));
+const KotowazaModal = React.lazy(() => import('./components/kotowaza/KotowazaModal').then(m => ({ default: m.KotowazaModal })));
+const StudyToolboxModal = React.lazy(() => import('./components/tools/StudyToolboxModal').then(m => ({ default: m.StudyToolboxModal })));
+const CatPlacementModal = React.lazy(() => import('./components/cat/CatPlacementModal').then(m => ({ default: m.CatPlacementModal })));
 import { ContextualSenseiSheet } from './components/sensei/ContextualSenseiSheet';
 import { usePwaStore } from './lib/pwa/pwaStore';
 import { useAuthStore } from './lib/supabase/authStore';
 import { NormalizedVocab, NormalizedGrammar } from './lib/data/dataManager';
+import { GlobalModalManager } from './components/modals/GlobalModalManager';
+import { useModalStore } from './store/useModalStore';
+import { SkeletonGrid } from './components/ui/SkeletonCard';
+import { A11yAnnouncer } from './components/ui/A11yAnnouncer';
+import { RouteErrorBoundary } from './components/ui/RouteErrorBoundary';
+import { ModalErrorBoundary } from './components/ui/ModalErrorBoundary';
+import { transitionTabChange } from './lib/ui/navigation';
 
-// Views
+// Eagerly loaded default view for zero-latency initial paint
 import { HomePage } from './pages/HomePage';
-import { MateriHubPage } from './pages/MateriHubPage';
-import { QuizPage } from './pages/QuizPage';
-import { KebunPage } from './pages/KebunPage';
-import { SenseiPage } from './pages/SenseiPage';
-import { SettingsPage } from './pages/SettingsPage';
-import { AboutPage } from './pages/AboutPage';
-import { LessonStudyPage } from './pages/LessonStudyPage';
+
+// Lazy-loaded secondary route views with isolated vendor chunks (Ticket T-92)
+const MateriHubPage = React.lazy(() => import('./pages/MateriHubPage').then(m => ({ default: m.MateriHubPage })));
+const QuizPage = React.lazy(() => import('./pages/QuizPage').then(m => ({ default: m.QuizPage })));
+const KebunPage = React.lazy(() => import('./pages/KebunPage').then(m => ({ default: m.KebunPage })));
+const SenseiPage = React.lazy(() => import('./pages/SenseiPage').then(m => ({ default: m.SenseiPage })));
+const SettingsPage = React.lazy(() => import('./pages/SettingsPage').then(m => ({ default: m.SettingsPage })));
+const AboutPage = React.lazy(() => import('./pages/AboutPage').then(m => ({ default: m.AboutPage })));
+const LessonStudyPage = React.lazy(() => import('./pages/LessonStudyPage').then(m => ({ default: m.LessonStudyPage })));
+const MethodologyPage = React.lazy(() => import('./pages/MethodologyPage').then(m => ({ default: m.MethodologyPage })));
+const ChoukaiSimulatorPage = React.lazy(() => import('./pages/ChoukaiSimulatorPage').then(m => ({ default: m.ChoukaiSimulatorPage })));
+
+import { PageSkeleton } from './components/ui/PageSkeleton';
+
+const RouteSuspenseFallback: React.FC = () => (
+  <div className="w-full">
+    <PageSkeleton />
+    <div className="sr-only" aria-hidden="true">
+      <SkeletonGrid count={6} type="card" />
+    </div>
+  </div>
+);
 
 export const App: React.FC = () => {
   const {
@@ -52,14 +78,23 @@ export const App: React.FC = () => {
     openKotowaza,
     openFeatureGuide,
     theme,
+    isKanaOpen,
+    openKana,
+    closeKana,
+    isConjugationOpen,
+    openConjugation,
+    closeConjugation,
+    isNuanceOpen,
+    openNuance,
+    closeNuance,
+    detailModalItem,
+    detailModalType,
+    closeDetailModal,
   } = useAppStore();
   const { initPwa } = usePwaStore();
   const { initAuth } = useAuthStore();
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   const [isShortcutsOpen, setIsShortcutsOpen] = useState(false);
-  const [isKanaOpen, setIsKanaOpen] = useState(false);
-  const [isConjugationOpen, setIsConjugationOpen] = useState(false);
-  const [isNuanceOpen, setIsNuanceOpen] = useState(false);
   const [isMobileDrawerOpen, setIsMobileDrawerOpen] = useState(false);
   const [selectedModalItem, setSelectedModalItem] = useState<(NormalizedVocab | NormalizedGrammar) | null>(null);
   const [modalItemType, setModalItemType] = useState<'vocab' | 'grammar'>('vocab');
@@ -84,9 +119,15 @@ export const App: React.FC = () => {
     checkStreakStatus();
   }, [initPwa, initAuth, checkStreakStatus]);
 
-  // Listen to browser forward/back hash changes
+  // Listen to browser forward/back hash & popstate changes
   useEffect(() => {
-    const handleHashChange = () => {
+    const handlePopState = () => {
+      // Dismiss top modal if a modal is open in the global stack
+      if (useModalStore.getState().modalStack.length > 0) {
+        useModalStore.getState().closeModal();
+        return;
+      }
+
       const fullHash = (window.location.hash || '').replace('#', '');
       const baseTab = fullHash.split('?')[0].toLowerCase();
       const mapped = baseTab === 'browse' ? 'materi' : (baseTab === 'stats' || baseTab === 'retensi') ? 'kebun' : baseTab;
@@ -108,13 +149,18 @@ export const App: React.FC = () => {
         return;
       }
 
-      const validTabs = ['home', 'materi', 'quiz', 'kebun', 'sensei', 'settings', 'about', 'study'] as const;
+      const validTabs = ['home', 'materi', 'quiz', 'kebun', 'sensei', 'settings', 'about', 'study', 'methodology', 'choukai'] as const;
       if (validTabs.includes(mapped as any)) {
-        setActiveTab(mapped as any);
+        transitionTabChange(mapped as any, setActiveTab);
       }
     };
-    window.addEventListener('hashchange', handleHashChange);
-    return () => window.removeEventListener('hashchange', handleHashChange);
+
+    window.addEventListener('popstate', handlePopState);
+    window.addEventListener('hashchange', handlePopState);
+    return () => {
+      window.removeEventListener('popstate', handlePopState);
+      window.removeEventListener('hashchange', handlePopState);
+    };
   }, [setActiveTab]);
 
   // Smooth scroll to top when activeTab changes
@@ -181,6 +227,10 @@ export const App: React.FC = () => {
         return <AboutPage />;
       case 'study':
         return <LessonStudyPage />;
+      case 'methodology':
+        return <MethodologyPage />;
+      case 'choukai':
+        return <ChoukaiSimulatorPage />;
       default:
         return <HomePage />;
     }
@@ -188,6 +238,20 @@ export const App: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-bg text-appText flex flex-col antialiased selection:bg-amber-500/30 selection:text-white w-full max-w-full overflow-x-hidden">
+      {/* Skip to Content Accessible Link (WCAG 2.1 Bypass Blocks) */}
+      <a
+        href="#main-content"
+        className="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-[9999] focus:px-4 focus:py-2.5 focus:bg-accent focus:text-bg font-bold focus:rounded-xl focus:shadow-xl focus:ring-2 focus:ring-accent focus:outline-none transition-transform"
+      >
+        Lewati ke konten utama
+      </a>
+
+      {/* Screen Reader Live Region Announcer (WCAG 2.1 Status Messages) */}
+      <A11yAnnouncer />
+
+      {/* Floating Offline Status Banner */}
+      <OfflineBanner />
+
       {/* Desktop Sidebar (Fixed left 260px) */}
       <Sidebar />
 
@@ -198,8 +262,20 @@ export const App: React.FC = () => {
           onOpenShortcuts={() => setIsShortcutsOpen(true)}
           onOpenMobileDrawer={() => setIsMobileDrawerOpen(true)}
         />
-        <main className="flex-1 px-3 sm:px-6 lg:px-8 max-w-7xl w-full mx-auto min-w-0 overflow-x-hidden">
-          {renderActiveView()}
+        <main
+          id="main-content"
+          role="main"
+          tabIndex={-1}
+          className="flex-1 px-3 sm:px-6 lg:px-8 max-w-7xl w-full mx-auto min-w-0 overflow-x-hidden focus:outline-none"
+        >
+          <RouteErrorBoundary
+            currentTab={activeTab}
+            onResetToHome={() => setActiveTab('home')}
+          >
+            <React.Suspense fallback={<RouteSuspenseFallback />}>
+              {renderActiveView()}
+            </React.Suspense>
+          </RouteErrorBoundary>
         </main>
       </div>
 
@@ -207,9 +283,9 @@ export const App: React.FC = () => {
       <MobileDrawer
         isOpen={isMobileDrawerOpen}
         onClose={() => setIsMobileDrawerOpen(false)}
-        onOpenKana={() => setIsKanaOpen(true)}
-        onOpenConjugation={() => setIsConjugationOpen(true)}
-        onOpenNuance={() => setIsNuanceOpen(true)}
+        onOpenKana={openKana}
+        onOpenConjugation={openConjugation}
+        onOpenNuance={openNuance}
       />
 
       {/* Mobile Bottom Navigation (Includes direct 1-tap Tentang tab) */}
@@ -227,9 +303,12 @@ export const App: React.FC = () => {
 
       {/* Global Detail Modal */}
       <DetailModal
-        item={selectedModalItem}
-        type={modalItemType}
-        onClose={() => setSelectedModalItem(null)}
+        item={detailModalItem || selectedModalItem}
+        type={detailModalItem ? detailModalType : modalItemType}
+        onClose={() => {
+          setSelectedModalItem(null);
+          closeDetailModal();
+        }}
       />
 
       {/* Keyboard Shortcuts Helper Modal (?) */}
@@ -237,6 +316,9 @@ export const App: React.FC = () => {
         isOpen={isShortcutsOpen}
         onClose={() => setIsShortcutsOpen(false)}
       />
+
+      {/* PWA Update Prompt Toast (Prompt-based Service Worker Update Flow) */}
+      <UpdatePromptToast />
 
       {/* PWA Add to Home Screen Modal */}
       <InstallModal />
@@ -252,63 +334,84 @@ export const App: React.FC = () => {
 
       {/* Feature Guide & Directory Modal */}
       <FeatureGuideModal
-        onOpenKana={() => setIsKanaOpen(true)}
-        onOpenConjugation={() => setIsConjugationOpen(true)}
-        onOpenNuance={() => setIsNuanceOpen(true)}
+        onOpenKana={openKana}
+        onOpenConjugation={openConjugation}
+        onOpenNuance={openNuance}
         onOpenShortcuts={() => setIsShortcutsOpen(true)}
       />
 
       {/* Interactive Kana Chart Modal */}
-      <KanaChartModal
-        isOpen={isKanaOpen}
-        onClose={() => setIsKanaOpen(false)}
-      />
+      <ModalErrorBoundary modalName="Tabel Kana" isOpen={isKanaOpen} onClose={closeKana}>
+        <KanaChartModal
+          isOpen={isKanaOpen}
+          onClose={closeKana}
+        />
+      </ModalErrorBoundary>
 
       {/* Verb Conjugation Matrix Modal */}
-      <ConjugationModal
-        isOpen={isConjugationOpen}
-        onClose={() => setIsConjugationOpen(false)}
-      />
+      <ModalErrorBoundary modalName="Konjugasi Kata Kerja" isOpen={isConjugationOpen} onClose={closeConjugation}>
+        <ConjugationModal
+          isOpen={isConjugationOpen}
+          onClose={closeConjugation}
+        />
+      </ModalErrorBoundary>
 
       {/* Grammar Nuance Compare Modal */}
-      <NuanceCompareModal
-        isOpen={isNuanceOpen}
-        onClose={() => setIsNuanceOpen(false)}
-      />
+      <ModalErrorBoundary modalName="Perbandingan Nuansa Tata Bahasa" isOpen={isNuanceOpen} onClose={closeNuance}>
+        <NuanceCompareModal
+          isOpen={isNuanceOpen}
+          onClose={closeNuance}
+        />
+      </ModalErrorBoundary>
 
       {/* Historical Patch Notes & Changelog Modal */}
-      <PatchNotesModal
-        isOpen={isPatchNotesOpen}
-        onClose={closePatchNotes}
-      />
+      <ModalErrorBoundary modalName="Catatan Pembaruan" isOpen={isPatchNotesOpen} onClose={closePatchNotes}>
+        <PatchNotesModal
+          isOpen={isPatchNotesOpen}
+          onClose={closePatchNotes}
+        />
+      </ModalErrorBoundary>
 
       {/* 52 Traditional Japanese Proverbs & Wisdom Gallery */}
-      <KotowazaModal
-        isOpen={isKotowazaOpen}
-        onClose={closeKotowaza}
-      />
+      <ModalErrorBoundary modalName="Galeri Peribahasa Kotowaza" isOpen={isKotowazaOpen} onClose={closeKotowaza}>
+        <KotowazaModal
+          isOpen={isKotowazaOpen}
+          onClose={closeKotowaza}
+        />
+      </ModalErrorBoundary>
 
       {/* Unified Kotak Peralatan Belajar (Study Toolbox Modal) */}
-      <StudyToolboxModal
-        isOpen={isToolboxOpen}
-        onClose={closeToolbox}
-        onOpenKana={() => setIsKanaOpen(true)}
-        onOpenConjugation={() => setIsConjugationOpen(true)}
-        onOpenNuance={() => setIsNuanceOpen(true)}
-        onOpenKotowaza={openKotowaza}
-        onOpenCatPlacement={openCatPlacement}
-        onOpenFeatureGuide={openFeatureGuide}
-        onOpenShortcuts={() => setIsShortcutsOpen(true)}
-      />
+      <ModalErrorBoundary modalName="Kotak Peralatan Belajar" isOpen={isToolboxOpen} onClose={closeToolbox}>
+        <StudyToolboxModal
+          isOpen={isToolboxOpen}
+          onClose={closeToolbox}
+          onOpenKana={openKana}
+          onOpenConjugation={openConjugation}
+          onOpenNuance={openNuance}
+          onOpenKotowaza={openKotowaza}
+          onOpenCatPlacement={openCatPlacement}
+          onOpenFeatureGuide={openFeatureGuide}
+          onOpenShortcuts={() => setIsShortcutsOpen(true)}
+        />
+      </ModalErrorBoundary>
 
       {/* Adaptive Diagnostic Placement Test (CAT) Modal */}
-      <CatPlacementModal
-        isOpen={isCatPlacementOpen}
-        onClose={closeCatPlacement}
-      />
+      <ModalErrorBoundary modalName="Tes Penempatan Adaptif (CAT)" isOpen={isCatPlacementOpen} onClose={closeCatPlacement}>
+        <CatPlacementModal
+          isOpen={isCatPlacementOpen}
+          onClose={closeCatPlacement}
+        />
+      </ModalErrorBoundary>
+
+      {/* Centralized Global Dynamic Modal Manager */}
+      <ModalErrorBoundary modalName="Modal Dinamis Global">
+        <GlobalModalManager />
+      </ModalErrorBoundary>
 
       {/* Context-Injected Sensei Studio Bottom Sheet */}
-      <ContextualSenseiSheet />
+      <ModalErrorBoundary modalName="Sensei AI Studio">
+        <ContextualSenseiSheet />
+      </ModalErrorBoundary>
     </div>
   );
 };

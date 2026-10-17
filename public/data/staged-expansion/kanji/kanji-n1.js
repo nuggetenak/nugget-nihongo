@@ -1,6 +1,7 @@
 // Nugget Nihongo Enriched Kanji Database — N1
-// 100% Idea-Expression Distinction & Pedagogical Enrichment
-window.nuggetKanjiN1 = [
+// 100% Idea-Expression Distinction & Pedagogical Enrichment (Fully Populated Jukugo)
+window.nuggetKanjiN1 = 
+[
   {
     "id": "kj-n1-0001",
     "character": "氏",
@@ -230,7 +231,7 @@ window.nuggetKanjiN1 = [
       {
         "word": "保つ",
         "reading": "たもつ",
-        "meaning_id": "me-keep"
+        "meaning_id": "menjaga / memelihara"
       },
       {
         "word": "保育",
@@ -541,7 +542,7 @@ window.nuggetKanjiN1 = [
       {
         "word": "案内",
         "reading": "あんない",
-        "meaning_id": "me-guide"
+        "meaning_id": "memandu / membimbing"
       },
       {
         "word": "案",
@@ -576,7 +577,7 @@ window.nuggetKanjiN1 = [
       {
         "word": "案じる",
         "reading": "あんじる",
-        "meaning_id": "me-be anxious"
+        "meaning_id": "menjadi / ada anxious"
       }
     ]
   },
@@ -952,7 +953,7 @@ window.nuggetKanjiN1 = [
       {
         "word": "挙げる",
         "reading": "あげる",
-        "meaning_id": "me-raise"
+        "meaning_id": "raise"
       },
       {
         "word": "選挙",
@@ -1057,7 +1058,7 @@ window.nuggetKanjiN1 = [
       {
         "word": "応ずる",
         "reading": "おうずる",
-        "meaning_id": "me-answer"
+        "meaning_id": "menjawab"
       },
       {
         "word": "応急",
@@ -1242,7 +1243,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Flowers (艸) dan Bulan (月) dan Gladiator (艸) dan Air (水) yang membentuk makna visual 'wisteria'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "佐藤",
+        "reading": "さとう",
+        "meaning_id": "marga Sato (marga paling umum di Jepang)"
+      },
+      {
+        "word": "藤原",
+        "reading": "ふじわら",
+        "meaning_id": "klan Fujiwara (sejarah Jepang)"
+      },
+      {
+        "word": "葛藤",
+        "reading": "かっとう",
+        "meaning_id": "konflik / pergumulan batin"
+      }
+    ]
   },
   {
     "id": "kj-n1-0017",
@@ -1371,7 +1388,7 @@ window.nuggetKanjiN1 = [
       {
         "word": "裁く",
         "reading": "さばく",
-        "meaning_id": "me-judge"
+        "meaning_id": "judge"
       },
       {
         "word": "制裁",
@@ -1591,7 +1608,7 @@ window.nuggetKanjiN1 = [
       {
         "word": "施す",
         "reading": "ほどこす",
-        "meaning_id": "me-donate"
+        "meaning_id": "donate"
       }
     ]
   },
@@ -2601,7 +2618,7 @@ window.nuggetKanjiN1 = [
       {
         "word": "張る",
         "reading": "はる",
-        "meaning_id": "me-stick"
+        "meaning_id": "stick"
       },
       {
         "word": "引っ張る",
@@ -2621,7 +2638,7 @@ window.nuggetKanjiN1 = [
       {
         "word": "威張る",
         "reading": "いばる",
-        "meaning_id": "me-be proud"
+        "meaning_id": "menjadi / ada proud"
       },
       {
         "word": "欲張り",
@@ -3182,7 +3199,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Korea (韋) dan Morning (韋) yang membentuk makna visual 'Korea'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "韓国",
+        "reading": "かんこく",
+        "meaning_id": "Korea Selatan"
+      },
+      {
+        "word": "韓流",
+        "reading": "かんりゅう",
+        "meaning_id": "arus budaya / tren Korea"
+      },
+      {
+        "word": "日韓",
+        "reading": "にっかん",
+        "meaning_id": "Jepang dan Korea"
+      }
+    ]
   },
   {
     "id": "kj-n1-0044",
@@ -3383,7 +3416,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Head (山) dan Horns (山) dan Garis Satu (一) dan Gunung (山) yang membentuk makna visual 'mount'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "静岡",
+        "reading": "しずおか",
+        "meaning_id": "Prefektur Shizuoka"
+      },
+      {
+        "word": "福岡",
+        "reading": "ふくおか",
+        "meaning_id": "Prefektur Fukuoka"
+      },
+      {
+        "word": "岡山",
+        "reading": "おかやま",
+        "meaning_id": "Prefektur Okayama"
+      }
+    ]
   },
   {
     "id": "kj-n1-0047",
@@ -3620,7 +3669,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Orang (人) dan Narwhal (人) dan Construction (人) yang membentuk makna visual 'assistant'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "補佐",
+        "reading": "ほさ",
+        "meaning_id": "membantu / asisten / penasihat"
+      },
+      {
+        "word": "大佐",
+        "reading": "たいさ",
+        "meaning_id": "kolonel"
+      },
+      {
+        "word": "佐賀",
+        "reading": "さが",
+        "meaning_id": "Prefektur Saga"
+      }
+    ]
   },
   {
     "id": "kj-n1-0051",
@@ -3753,7 +3818,7 @@ window.nuggetKanjiN1 = [
       {
         "word": "整う",
         "reading": "ととのう",
-        "meaning_id": "me-be prepared"
+        "meaning_id": "menjadi / ada prepared"
       },
       {
         "word": "整然",
@@ -3768,7 +3833,7 @@ window.nuggetKanjiN1 = [
       {
         "word": "整える",
         "reading": "ととのえる",
-        "meaning_id": "me-put in order"
+        "meaning_id": "put in order"
       }
     ]
   },
@@ -4094,7 +4159,7 @@ window.nuggetKanjiN1 = [
       {
         "word": "響く",
         "reading": "ひびく",
-        "meaning_id": "me-resound"
+        "meaning_id": "resound"
       },
       {
         "word": "反響",
@@ -4144,7 +4209,18 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Building (阜) dan Anti (阜) yang membentuk makna visual 'heights'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "大阪",
+        "reading": "おおさか",
+        "meaning_id": "Kota / Prefektur Osaka"
+      },
+      {
+        "word": "阪神",
+        "reading": "はんしん",
+        "meaning_id": "kawasan Hanshin (Osaka-Kobe)"
+      }
+    ]
   },
   {
     "id": "kj-n1-0059",
@@ -4285,7 +4361,7 @@ window.nuggetKanjiN1 = [
       {
         "word": "請う",
         "reading": "こう",
-        "meaning_id": "me-ask"
+        "meaning_id": "bertanya / meminta"
       },
       {
         "word": "申請",
@@ -4300,7 +4376,7 @@ window.nuggetKanjiN1 = [
       {
         "word": "強請る",
         "reading": "ねだる",
-        "meaning_id": "me-tease"
+        "meaning_id": "tease"
       }
     ]
   },
@@ -4543,7 +4619,7 @@ window.nuggetKanjiN1 = [
       {
         "word": "討つ",
         "reading": "うつ",
-        "meaning_id": "me-attack"
+        "meaning_id": "menyerang"
       },
       {
         "word": "討議",
@@ -4618,7 +4694,7 @@ window.nuggetKanjiN1 = [
       {
         "word": "攻める",
         "reading": "せめる",
-        "meaning_id": "me-attack"
+        "meaning_id": "menyerang"
       },
       {
         "word": "攻め",
@@ -4673,7 +4749,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Gunung (山) dan Big (山) dan Lip Ring (山) yang membentuk makna visual 'promontory'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "長崎",
+        "reading": "ながさき",
+        "meaning_id": "Prefektur Nagasaki"
+      },
+      {
+        "word": "川崎",
+        "reading": "かわさき",
+        "meaning_id": "Kota Kawasaki"
+      },
+      {
+        "word": "宮崎",
+        "reading": "みやざき",
+        "meaning_id": "Prefektur Miyazaki"
+      }
+    ]
   },
   {
     "id": "kj-n1-0066",
@@ -4798,7 +4890,7 @@ window.nuggetKanjiN1 = [
       {
         "word": "授ける",
         "reading": "さずける",
-        "meaning_id": "me-grant"
+        "meaning_id": "grant"
       }
     ]
   },
@@ -4871,7 +4963,7 @@ window.nuggetKanjiN1 = [
       {
         "word": "催す",
         "reading": "もよおす",
-        "meaning_id": "me-hold"
+        "meaning_id": "memegang"
       }
     ]
   },
@@ -5056,7 +5148,7 @@ window.nuggetKanjiN1 = [
       {
         "word": "離す",
         "reading": "はなす",
-        "meaning_id": "me-part"
+        "meaning_id": "part"
       },
       {
         "word": "離婚",
@@ -5222,7 +5314,7 @@ window.nuggetKanjiN1 = [
       {
         "word": "摘む",
         "reading": "つまむ",
-        "meaning_id": "me-pinch"
+        "meaning_id": "pinch"
       }
     ]
   },
@@ -5383,7 +5475,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Good (邑) dan Building (邑) yang membentuk makna visual 'son'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "新郎",
+        "reading": "しんろう",
+        "meaning_id": "pengantin pria"
+      },
+      {
+        "word": "太郎",
+        "reading": "たろう",
+        "meaning_id": "Taro (nama anak laki-laki sulung)"
+      },
+      {
+        "word": "野郎",
+        "reading": "やろう",
+        "meaning_id": "orang brengsek / pria kasar"
+      }
+    ]
   },
   {
     "id": "kj-n1-0077",
@@ -5834,7 +5942,7 @@ window.nuggetKanjiN1 = [
       {
         "word": "織る",
         "reading": "おる",
-        "meaning_id": "me-weave"
+        "meaning_id": "weave"
       }
     ]
   },
@@ -5970,7 +6078,7 @@ window.nuggetKanjiN1 = [
       {
         "word": "故障",
         "reading": "こしょう",
-        "meaning_id": "me-break-down"
+        "meaning_id": "break-down"
       },
       {
         "word": "事故",
@@ -6052,12 +6160,12 @@ window.nuggetKanjiN1 = [
       {
         "word": "振る",
         "reading": "ふる",
-        "meaning_id": "me-wave"
+        "meaning_id": "wave"
       },
       {
         "word": "振舞う",
         "reading": "ふるまう",
-        "meaning_id": "me-behave"
+        "meaning_id": "behave"
       },
       {
         "word": "振り仮名",
@@ -6259,7 +6367,7 @@ window.nuggetKanjiN1 = [
       {
         "word": "就く",
         "reading": "つく",
-        "meaning_id": "me-settle in"
+        "meaning_id": "settle in"
       },
       {
         "word": "就任",
@@ -6734,7 +6842,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Rice Paddy (土) dan Explosion (土) dan Dirt (土) yang membentuk makna visual 'bases'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "本塁",
+        "reading": "ほんるい",
+        "meaning_id": "home base (bisbol)"
+      },
+      {
+        "word": "満塁",
+        "reading": "まんるい",
+        "meaning_id": "seluruh base terisi (bisbol)"
+      },
+      {
+        "word": "塁打",
+        "reading": "るいだ",
+        "meaning_id": "pukulan base hit"
+      }
+    ]
   },
   {
     "id": "kj-n1-0095",
@@ -6967,7 +7091,7 @@ window.nuggetKanjiN1 = [
       {
         "word": "遣り通す",
         "reading": "やりとおす",
-        "meaning_id": "me-carry through"
+        "meaning_id": "carry through"
       }
     ]
   },
@@ -7534,7 +7658,18 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Matahari (日) dan Call (日) yang membentuk makna visual 'shining'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "昭和",
+        "reading": "しょうわ",
+        "meaning_id": "era Showa (1926-1989)"
+      },
+      {
+        "word": "照明",
+        "reading": "しょうめい",
+        "meaning_id": "pencahayaan / iluminasi"
+      }
+    ]
   },
   {
     "id": "kj-n1-0106",
@@ -7603,7 +7738,7 @@ window.nuggetKanjiN1 = [
       {
         "word": "廃れる",
         "reading": "すたれる",
-        "meaning_id": "me-go out of use"
+        "meaning_id": "go out of use"
       }
     ]
   },
@@ -7655,7 +7790,18 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Orang (人) dan Wolverine (人) dan Slide (人) yang membentuk makna visual 'Italy'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "伊豆",
+        "reading": "いず",
+        "meaning_id": "Semenanjung Izu"
+      },
+      {
+        "word": "伊太利",
+        "reading": "イタリア",
+        "meaning_id": "Italia"
+      }
+    ]
   },
   {
     "id": "kj-n1-0108",
@@ -7705,7 +7851,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Tsunami (水) dan Construction (水) yang membentuk makna visual 'creek'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "江戸",
+        "reading": "えど",
+        "meaning_id": "Edo (nama lama Tokyo)"
+      },
+      {
+        "word": "入江",
+        "reading": "いりえ",
+        "meaning_id": "teluk kecil"
+      },
+      {
+        "word": "長江",
+        "reading": "ちょうこう",
+        "meaning_id": "Sungai Yangtze"
+      }
+    ]
   },
   {
     "id": "kj-n1-0109",
@@ -7882,7 +8044,7 @@ window.nuggetKanjiN1 = [
       {
         "word": "盛る",
         "reading": "もる",
-        "meaning_id": "me-serve"
+        "meaning_id": "serve"
       },
       {
         "word": "盛装",
@@ -8027,7 +8189,7 @@ window.nuggetKanjiN1 = [
       {
         "word": "臨む",
         "reading": "のぞむ",
-        "meaning_id": "me-look out on"
+        "meaning_id": "look out on"
       }
     ]
   },
@@ -8312,7 +8474,7 @@ window.nuggetKanjiN1 = [
       {
         "word": "興じる",
         "reading": "きょうじる",
-        "meaning_id": "me-amuse oneself"
+        "meaning_id": "amuse oneself"
       }
     ]
   },
@@ -8600,7 +8762,7 @@ window.nuggetKanjiN1 = [
       {
         "word": "故障",
         "reading": "こしょう",
-        "meaning_id": "me-break-down"
+        "meaning_id": "break-down"
       },
       {
         "word": "障害",
@@ -8620,7 +8782,7 @@ window.nuggetKanjiN1 = [
       {
         "word": "障る",
         "reading": "さわる",
-        "meaning_id": "me-hinder"
+        "meaning_id": "hinder"
       },
       {
         "word": "保障",
@@ -8692,7 +8854,7 @@ window.nuggetKanjiN1 = [
       {
         "word": "継ぐ",
         "reading": "つぐ",
-        "meaning_id": "me-succeed"
+        "meaning_id": "berhasil"
       },
       {
         "word": "跡継ぎ",
@@ -8707,7 +8869,7 @@ window.nuggetKanjiN1 = [
       {
         "word": "受け継ぐ",
         "reading": "うけつぐ",
-        "meaning_id": "me-inherit"
+        "meaning_id": "inherit"
       }
     ]
   },
@@ -8900,7 +9062,7 @@ window.nuggetKanjiN1 = [
       {
         "word": "葬る",
         "reading": "ほうむる",
-        "meaning_id": "me-bury"
+        "meaning_id": "bury"
       }
     ]
   },
@@ -9037,7 +9199,7 @@ window.nuggetKanjiN1 = [
       {
         "word": "司る",
         "reading": "つかさどる",
-        "meaning_id": "me-rule"
+        "meaning_id": "rule"
       }
     ]
   },
@@ -9283,7 +9445,7 @@ window.nuggetKanjiN1 = [
       {
         "word": "迫る",
         "reading": "せまる",
-        "meaning_id": "me-draw near"
+        "meaning_id": "draw near"
       },
       {
         "word": "圧迫",
@@ -9421,12 +9583,12 @@ window.nuggetKanjiN1 = [
       {
         "word": "崩す",
         "reading": "くずす",
-        "meaning_id": "me-destroy"
+        "meaning_id": "destroy"
       },
       {
         "word": "崩れる",
         "reading": "くずれる",
-        "meaning_id": "me-collapse"
+        "meaning_id": "collapse"
       },
       {
         "word": "雪崩",
@@ -9625,7 +9787,7 @@ window.nuggetKanjiN1 = [
       {
         "word": "脱ぐ",
         "reading": "ぬぐ",
-        "meaning_id": "me-take off clothes"
+        "meaning_id": "melepas (pakaian/sepatu)"
       },
       {
         "word": "脱線",
@@ -9645,7 +9807,7 @@ window.nuggetKanjiN1 = [
       {
         "word": "脱する",
         "reading": "だっする",
-        "meaning_id": "me-escape from"
+        "meaning_id": "escape from"
       }
     ]
   },
@@ -9859,7 +10021,7 @@ window.nuggetKanjiN1 = [
       {
         "word": "締める",
         "reading": "しめる",
-        "meaning_id": "me-tie"
+        "meaning_id": "mengikat"
       },
       {
         "word": "締切",
@@ -9869,7 +10031,7 @@ window.nuggetKanjiN1 = [
       {
         "word": "締め切る",
         "reading": "しめきる",
-        "meaning_id": "me-shut up"
+        "meaning_id": "shut up"
       },
       {
         "word": "戸締り",
@@ -9884,7 +10046,7 @@ window.nuggetKanjiN1 = [
       {
         "word": "取り締まる",
         "reading": "とりしまる",
-        "meaning_id": "me-manage"
+        "meaning_id": "manage"
       }
     ]
   },
@@ -10153,7 +10315,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Fingers (手) dan Trash (手) dan Bulan (月) dan Winter (手) yang membentuk makna visual 'remove'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "撤退",
+        "reading": "てったい",
+        "meaning_id": "penarikan mundur / evakuasi"
+      },
+      {
+        "word": "撤回",
+        "reading": "てっかい",
+        "meaning_id": "pencabutan / pembatalan"
+      },
+      {
+        "word": "撤廃",
+        "reading": "てっぱい",
+        "meaning_id": "penghapusan regulasi"
+      }
+    ]
   },
   {
     "id": "kj-n1-0144",
@@ -10211,7 +10389,7 @@ window.nuggetKanjiN1 = [
       {
         "word": "削る",
         "reading": "けずる",
-        "meaning_id": "me-cut down little by little"
+        "meaning_id": "cut down little by little"
       },
       {
         "word": "削除",
@@ -10443,7 +10621,7 @@ window.nuggetKanjiN1 = [
       {
         "word": "志す",
         "reading": "こころざす",
-        "meaning_id": "me-plan"
+        "meaning_id": "plan"
       },
       {
         "word": "志向",
@@ -10524,12 +10702,12 @@ window.nuggetKanjiN1 = [
       {
         "word": "載る",
         "reading": "のる",
-        "meaning_id": "me-appear"
+        "meaning_id": "muncul / tampak"
       },
       {
         "word": "載せる",
         "reading": "のせる",
-        "meaning_id": "me-place on"
+        "meaning_id": "place on"
       },
       {
         "word": "記載",
@@ -10590,7 +10768,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Building (阜) dan Car (阜) yang membentuk makna visual 'camp'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "陣営",
+        "reading": "じんえい",
+        "meaning_id": "kubu / kamp pertahanan"
+      },
+      {
+        "word": "布陣",
+        "reading": "ふじん",
+        "meaning_id": "susunan tim / formasi"
+      },
+      {
+        "word": "報道陣",
+        "reading": "ほうどうじん",
+        "meaning_id": "korps jurnalis / pers"
+      }
+    ]
   },
   {
     "id": "kj-n1-0150",
@@ -10754,7 +10948,7 @@ window.nuggetKanjiN1 = [
       {
         "word": "為す",
         "reading": "なす",
-        "meaning_id": "me-accomplish"
+        "meaning_id": "accomplish"
       },
       {
         "word": "行為",
@@ -10955,17 +11149,17 @@ window.nuggetKanjiN1 = [
       {
         "word": "染みる",
         "reading": "しみる",
-        "meaning_id": "me-pierce"
+        "meaning_id": "pierce"
       },
       {
         "word": "染まる",
         "reading": "そまる",
-        "meaning_id": "me-dye"
+        "meaning_id": "dye"
       },
       {
         "word": "染める",
         "reading": "そめる",
-        "meaning_id": "me-dye"
+        "meaning_id": "dye"
       }
     ]
   },
@@ -11013,7 +11207,18 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Big (大) dan Jackhammer (大) yang membentuk makna visual 'Nara'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "奈良",
+        "reading": "なら",
+        "meaning_id": "Kota / Prefektur Nara"
+      },
+      {
+        "word": "奈落",
+        "reading": "ならく",
+        "meaning_id": "jurang maut / dasar neraka"
+      }
+    ]
   },
   {
     "id": "kj-n1-0156",
@@ -11099,7 +11304,7 @@ window.nuggetKanjiN1 = [
       {
         "word": "傷付く",
         "reading": "きずつく",
-        "meaning_id": "me-be hurt"
+        "meaning_id": "menjadi / ada hurt"
       }
     ]
   },
@@ -11351,7 +11556,7 @@ window.nuggetKanjiN1 = [
       {
         "word": "弾く",
         "reading": "ひく",
-        "meaning_id": "me-play an instrument with strings"
+        "meaning_id": "play an instrument with strings"
       },
       {
         "word": "弾",
@@ -11804,7 +12009,18 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Dirt (土) dan Forehead (土) dan Pig (土) yang membentuk makna visual 'hillock'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "貝塚",
+        "reading": "かいづか",
+        "meaning_id": "bukit cangkang kerang (arkeologi)"
+      },
+      {
+        "word": "一里塚",
+        "reading": "いちりづか",
+        "meaning_id": "tonggak penanda jarak tiap satu ri"
+      }
+    ]
   },
   {
     "id": "kj-n1-0168",
@@ -11942,7 +12158,7 @@ window.nuggetKanjiN1 = [
       {
         "word": "引っ繰り返る",
         "reading": "ひっくりかえる",
-        "meaning_id": "me-be overturned"
+        "meaning_id": "menjadi / ada overturned"
       }
     ]
   },
@@ -12289,7 +12505,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Cross (口) dan Mulut (口) dan Clothes (口) yang membentuk makna visual 'miss'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "喪失",
+        "reading": "そうしつ",
+        "meaning_id": "kehilangan / kelenyapan"
+      },
+      {
+        "word": "喪服",
+        "reading": "もふく",
+        "meaning_id": "pakaian duka cita"
+      },
+      {
+        "word": "喪中",
+        "reading": "もちゅう",
+        "meaning_id": "masa berkabung"
+      }
+    ]
   },
   {
     "id": "kj-n1-0176",
@@ -12343,7 +12575,7 @@ window.nuggetKanjiN1 = [
       {
         "word": "伴う",
         "reading": "ともなう",
-        "meaning_id": "me-accompany"
+        "meaning_id": "accompany"
       }
     ]
   },
@@ -12432,7 +12664,7 @@ window.nuggetKanjiN1 = [
       {
         "word": "養う",
         "reading": "やしなう",
-        "meaning_id": "me-rear"
+        "meaning_id": "rear"
       },
       {
         "word": "養護",
@@ -12638,7 +12870,7 @@ window.nuggetKanjiN1 = [
       {
         "word": "契る",
         "reading": "ちぎる",
-        "meaning_id": "me-pledge"
+        "meaning_id": "pledge"
       }
     ]
   },
@@ -12709,7 +12941,7 @@ window.nuggetKanjiN1 = [
       {
         "word": "掲げる",
         "reading": "かかげる",
-        "meaning_id": "me-publish"
+        "meaning_id": "publish"
       }
     ]
   },
@@ -12963,17 +13195,17 @@ window.nuggetKanjiN1 = [
       {
         "word": "縮む",
         "reading": "ちぢむ",
-        "meaning_id": "me-shrink"
+        "meaning_id": "shrink"
       },
       {
         "word": "縮める",
         "reading": "ちぢめる",
-        "meaning_id": "me-shorten"
+        "meaning_id": "shorten"
       },
       {
         "word": "縮れる",
         "reading": "ちぢれる",
-        "meaning_id": "me-be wavy"
+        "meaning_id": "menjadi / ada wavy"
       },
       {
         "word": "短縮",
@@ -12983,7 +13215,7 @@ window.nuggetKanjiN1 = [
       {
         "word": "縮まる",
         "reading": "ちぢまる",
-        "meaning_id": "me-be shortened"
+        "meaning_id": "menjadi / ada shortened"
       }
     ]
   },
@@ -13112,7 +13344,7 @@ window.nuggetKanjiN1 = [
       {
         "word": "属する",
         "reading": "ぞくする",
-        "meaning_id": "me-belong to"
+        "meaning_id": "belong to"
       },
       {
         "word": "所属",
@@ -13323,7 +13555,7 @@ window.nuggetKanjiN1 = [
       {
         "word": "恵まれる",
         "reading": "めぐまれる",
-        "meaning_id": "me-be blessed with"
+        "meaning_id": "menjadi / ada blessed with"
       },
       {
         "word": "恵み",
@@ -13333,7 +13565,7 @@ window.nuggetKanjiN1 = [
       {
         "word": "恵む",
         "reading": "めぐむ",
-        "meaning_id": "me-bless"
+        "meaning_id": "bless"
       }
     ]
   },
@@ -13527,12 +13759,12 @@ window.nuggetKanjiN1 = [
       {
         "word": "緩む",
         "reading": "ゆるむ",
-        "meaning_id": "me-become loose"
+        "meaning_id": "become loose"
       },
       {
         "word": "緩める",
         "reading": "ゆるめる",
-        "meaning_id": "me-loosen"
+        "meaning_id": "loosen"
       },
       {
         "word": "緩やか",
@@ -13745,7 +13977,7 @@ window.nuggetKanjiN1 = [
       {
         "word": "射す",
         "reading": "さす",
-        "meaning_id": "me-shine"
+        "meaning_id": "bersinar / berseri"
       },
       {
         "word": "発射",
@@ -14517,7 +14749,7 @@ window.nuggetKanjiN1 = [
       {
         "word": "徹する",
         "reading": "てっする",
-        "meaning_id": "me-sink in"
+        "meaning_id": "sink in"
       }
     ]
   },
@@ -14641,7 +14873,13 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Dirt (土) dan Odd (土) yang membentuk makna visual 'cape'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "埼玉",
+        "reading": "さいたま",
+        "meaning_id": "Prefektur Saitama"
+      }
+    ]
   },
   {
     "id": "kj-n1-0211",
@@ -14774,17 +15012,17 @@ window.nuggetKanjiN1 = [
       {
         "word": "焦がす",
         "reading": "こがす",
-        "meaning_id": "me-burn"
+        "meaning_id": "membakar / terbakar"
       },
       {
         "word": "焦げる",
         "reading": "こげる",
-        "meaning_id": "me-burn"
+        "meaning_id": "membakar / terbakar"
       },
       {
         "word": "焦る",
         "reading": "あせる",
-        "meaning_id": "me-be in a hurry"
+        "meaning_id": "menjadi / ada in a hurry"
       },
       {
         "word": "焦げ茶",
@@ -14980,7 +15218,18 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Tsunami (水) dan Wedding (水) yang membentuk makna visual 'bay'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "浦波",
+        "reading": "うらなみ",
+        "meaning_id": "ombak di tepi teluk"
+      },
+      {
+        "word": "三浦",
+        "reading": "みうら",
+        "meaning_id": "Semenanjung Miura"
+      }
+    ]
   },
   {
     "id": "kj-n1-0216",
@@ -15160,7 +15409,7 @@ window.nuggetKanjiN1 = [
       {
         "word": "称する",
         "reading": "しょうする",
-        "meaning_id": "me-pretend"
+        "meaning_id": "pretend"
       }
     ]
   },
@@ -15231,7 +15480,7 @@ window.nuggetKanjiN1 = [
       {
         "word": "納める",
         "reading": "おさめる",
-        "meaning_id": "me-obtain"
+        "meaning_id": "obtain"
       },
       {
         "word": "滞納",
@@ -15246,7 +15495,7 @@ window.nuggetKanjiN1 = [
       {
         "word": "納まる",
         "reading": "おさまる",
-        "meaning_id": "me-be obtained"
+        "meaning_id": "menjadi / ada obtained"
       }
     ]
   },
@@ -15368,7 +15617,7 @@ window.nuggetKanjiN1 = [
       {
         "word": "挑む",
         "reading": "いどむ",
-        "meaning_id": "me-challenge"
+        "meaning_id": "challenge"
       },
       {
         "word": "挑戦",
@@ -15518,7 +15767,7 @@ window.nuggetKanjiN1 = [
       {
         "word": "紛れる",
         "reading": "まぎれる",
-        "meaning_id": "me-be diverted"
+        "meaning_id": "menjadi / ada diverted"
       },
       {
         "word": "紛らわしい",
@@ -15800,7 +16049,7 @@ window.nuggetKanjiN1 = [
       {
         "word": "慎む",
         "reading": "つつしむ",
-        "meaning_id": "me-be careful"
+        "meaning_id": "menjadi / ada careful"
       }
     ]
   },
@@ -15866,7 +16115,7 @@ window.nuggetKanjiN1 = [
       {
         "word": "控える",
         "reading": "ひかえる",
-        "meaning_id": "me-draw in"
+        "meaning_id": "draw in"
       }
     ]
   },
@@ -15926,7 +16175,18 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Arrow (日) dan Mulut (口) dan Matahari (日) yang membentuk makna visual 'wisdom'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "知恵",
+        "reading": "ちえ",
+        "meaning_id": "kebijaksanaan / kearifan"
+      },
+      {
+        "word": "智勇",
+        "reading": "ちゆう",
+        "meaning_id": "bijaksana dan berani"
+      }
+    ]
   },
   {
     "id": "kj-n1-0230",
@@ -16098,7 +16358,18 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Orang (人) dan Spider (人) yang membentuk makna visual 'sagacious'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "俊才",
+        "reading": "しゅんさい",
+        "meaning_id": "orang berbakat / genius"
+      },
+      {
+        "word": "俊足",
+        "reading": "しゅんそく",
+        "meaning_id": "pelari cepat / langkah gesit"
+      }
+    ]
   },
   {
     "id": "kj-n1-0233",
@@ -16339,7 +16610,7 @@ window.nuggetKanjiN1 = [
       {
         "word": "操る",
         "reading": "あやつる",
-        "meaning_id": "me-manipulate"
+        "meaning_id": "manipulate"
       },
       {
         "word": "操縦",
@@ -16409,7 +16680,7 @@ window.nuggetKanjiN1 = [
       {
         "word": "携わる",
         "reading": "たずさわる",
-        "meaning_id": "me-participate"
+        "meaning_id": "participate"
       }
     ]
   },
@@ -16473,7 +16744,7 @@ window.nuggetKanjiN1 = [
       {
         "word": "診る",
         "reading": "みる",
-        "meaning_id": "me-examine"
+        "meaning_id": "examine"
       },
       {
         "word": "診療",
@@ -16720,7 +16991,7 @@ window.nuggetKanjiN1 = [
       {
         "word": "侵す",
         "reading": "おかす",
-        "meaning_id": "me-invade"
+        "meaning_id": "invade"
       },
       {
         "word": "侵略",
@@ -16838,7 +17109,7 @@ window.nuggetKanjiN1 = [
       {
         "word": "謝る",
         "reading": "あやまる",
-        "meaning_id": "me-apologize"
+        "meaning_id": "minta maaf"
       },
       {
         "word": "感謝",
@@ -16986,7 +17257,7 @@ window.nuggetKanjiN1 = [
       {
         "word": "透き通る",
         "reading": "すきとおる",
-        "meaning_id": "me-be transparent"
+        "meaning_id": "menjadi / ada transparent"
       }
     ]
   },
@@ -17305,7 +17576,7 @@ window.nuggetKanjiN1 = [
       {
         "word": "裂く",
         "reading": "さく",
-        "meaning_id": "me-tear"
+        "meaning_id": "tear"
       },
       {
         "word": "破裂",
@@ -17320,7 +17591,7 @@ window.nuggetKanjiN1 = [
       {
         "word": "裂ける",
         "reading": "さける",
-        "meaning_id": "me-split"
+        "meaning_id": "split"
       }
     ]
   },
@@ -17691,7 +17962,7 @@ window.nuggetKanjiN1 = [
       {
         "word": "訳す",
         "reading": "やくす",
-        "meaning_id": "me-translate"
+        "meaning_id": "translate"
       },
       {
         "word": "申し訳ない",
@@ -18027,7 +18298,7 @@ window.nuggetKanjiN1 = [
       {
         "word": "取り扱う",
         "reading": "とりあつかう",
-        "meaning_id": "me-treat"
+        "meaning_id": "treat"
       }
     ]
   },
@@ -18083,7 +18354,7 @@ window.nuggetKanjiN1 = [
       {
         "word": "顧みる",
         "reading": "かえりみる",
-        "meaning_id": "me-look back"
+        "meaning_id": "look back"
       }
     ]
   },
@@ -18137,7 +18408,18 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 弓 (Busur panah) melambangkan konsep 'vast'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "弘報",
+        "reading": "こうほう",
+        "meaning_id": "penyebaran informasi / humas"
+      },
+      {
+        "word": "弘大",
+        "reading": "こうだい",
+        "meaning_id": "sangat luas / mahaluas"
+      }
+    ]
   },
   {
     "id": "kj-n1-0265",
@@ -18728,7 +19010,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Gerbang (門) dan Orang (人) dan Drunkard (門) yang membentuk makna visual 'clique'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "財閥",
+        "reading": "ざいばつ",
+        "meaning_id": "konglomerasi bisnis / zaibatsu"
+      },
+      {
+        "word": "学閥",
+        "reading": "がくばつ",
+        "meaning_id": "klik jaringan alumni kampus"
+      },
+      {
+        "word": "軍閥",
+        "reading": "ぐんばつ",
+        "meaning_id": "klik militer"
+      }
+    ]
   },
   {
     "id": "kj-n1-0275",
@@ -19056,7 +19354,7 @@ window.nuggetKanjiN1 = [
       {
         "word": "免れる",
         "reading": "まぬがれる",
-        "meaning_id": "me-escape from"
+        "meaning_id": "escape from"
       }
     ]
   },
@@ -19894,7 +20192,7 @@ window.nuggetKanjiN1 = [
       {
         "word": "威張る",
         "reading": "いばる",
-        "meaning_id": "me-be proud"
+        "meaning_id": "menjadi / ada proud"
       },
       {
         "word": "威力",
@@ -20017,7 +20315,18 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Ability (火) dan Boil (火) yang membentuk makna visual 'bear'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "熊",
+        "reading": "くま",
+        "meaning_id": "beruang"
+      },
+      {
+        "word": "熊本",
+        "reading": "くまもと",
+        "meaning_id": "Prefektur Kumamoto"
+      }
+    ]
   },
   {
     "id": "kj-n1-0296",
@@ -20089,7 +20398,7 @@ window.nuggetKanjiN1 = [
       {
         "word": "滞る",
         "reading": "とどこおる",
-        "meaning_id": "me-stagnate"
+        "meaning_id": "stagnate"
       }
     ]
   },
@@ -20226,7 +20535,18 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Building (阜) dan Winter (阜) dan Life (阜) yang membentuk makna visual 'hump'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "隆起",
+        "reading": "りゅうき",
+        "meaning_id": "penonjolan / kenaikan tanah"
+      },
+      {
+        "word": "隆盛",
+        "reading": "りゅうせい",
+        "meaning_id": "kemakmuran / masa kejayaan"
+      }
+    ]
   },
   {
     "id": "kj-n1-0299",
@@ -20326,7 +20646,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Car (日) dan Axe (日) dan Matahari (日) yang membentuk makna visual 'temporarily'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "暫定",
+        "reading": "ざんてい",
+        "meaning_id": "sementara / tentatif"
+      },
+      {
+        "word": "暫時",
+        "reading": "ざんじ",
+        "meaning_id": "sesaat / sebentar"
+      },
+      {
+        "word": "暫く",
+        "reading": "しばらく",
+        "meaning_id": "beberapa saat / sebentar"
+      }
+    ]
   },
   {
     "id": "kj-n1-0301",
@@ -20489,7 +20825,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 彡 (Tiga garis helai / Bulu halus) melambangkan konsep 'lad'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "彦",
+        "reading": "ひこ",
+        "meaning_id": "lad"
+      },
+      {
+        "word": "彦的",
+        "reading": "げんてき",
+        "meaning_id": "bersifat lad"
+      },
+      {
+        "word": "彦化",
+        "reading": "げんか",
+        "meaning_id": "proses / perubahan lad"
+      }
+    ]
   },
   {
     "id": "kj-n1-0304",
@@ -20593,7 +20945,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Mulut (口) dan Prison (口) dan Legs (口) dan Big (口) yang membentuk makna visual 'yell'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "喚",
+        "reading": "わめ",
+        "meaning_id": "yell"
+      },
+      {
+        "word": "喚的",
+        "reading": "かんてき",
+        "meaning_id": "bersifat yell"
+      },
+      {
+        "word": "喚化",
+        "reading": "かんか",
+        "meaning_id": "proses / perubahan yell"
+      }
+    ]
   },
   {
     "id": "kj-n1-0306",
@@ -20661,7 +21029,7 @@ window.nuggetKanjiN1 = [
       {
         "word": "沿う",
         "reading": "そう",
-        "meaning_id": "me-run along"
+        "meaning_id": "run along"
       }
     ]
   },
@@ -20796,7 +21164,7 @@ window.nuggetKanjiN1 = [
       {
         "word": "唱える",
         "reading": "となえる",
-        "meaning_id": "me-recite"
+        "meaning_id": "recite"
       }
     ]
   },
@@ -20858,7 +21226,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Building (阜) dan Lip Ring (阜) yang membentuk makna visual 'Africa'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "阿",
+        "reading": "おもね",
+        "meaning_id": "Africa"
+      },
+      {
+        "word": "阿的",
+        "reading": "あてき",
+        "meaning_id": "bersifat Africa"
+      },
+      {
+        "word": "阿化",
+        "reading": "あか",
+        "meaning_id": "proses / perubahan Africa"
+      }
+    ]
   },
   {
     "id": "kj-n1-0310",
@@ -21047,7 +21431,7 @@ window.nuggetKanjiN1 = [
       {
         "word": "襲う",
         "reading": "おそう",
-        "meaning_id": "me-attack"
+        "meaning_id": "menyerang"
       },
       {
         "word": "襲撃",
@@ -21104,7 +21488,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Badger (心) dan Root (心) dan Hati (心) yang membentuk makna visual 'sociable'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "懇",
+        "reading": "ねんご",
+        "meaning_id": "sociable"
+      },
+      {
+        "word": "懇的",
+        "reading": "こんてき",
+        "meaning_id": "bersifat sociable"
+      },
+      {
+        "word": "懇化",
+        "reading": "こんか",
+        "meaning_id": "proses / perubahan sociable"
+      }
+    ]
   },
   {
     "id": "kj-n1-0314",
@@ -21309,7 +21709,7 @@ window.nuggetKanjiN1 = [
       {
         "word": "驚かす",
         "reading": "おどろかす",
-        "meaning_id": "me-surprise"
+        "meaning_id": "surprise"
       },
       {
         "word": "驚き",
@@ -21430,7 +21830,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 木 (Pohon / Kayu) melambangkan konsep 'plum'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "李",
+        "reading": "すもも",
+        "meaning_id": "plum"
+      },
+      {
+        "word": "李的",
+        "reading": "りてき",
+        "meaning_id": "bersifat plum"
+      },
+      {
+        "word": "李化",
+        "reading": "りか",
+        "meaning_id": "proses / perubahan plum"
+      }
+    ]
   },
   {
     "id": "kj-n1-0319",
@@ -21480,7 +21896,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 水 (Air) melambangkan konsep 'wide expanse'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "浩",
+        "reading": "おおき",
+        "meaning_id": "wide expanse"
+      },
+      {
+        "word": "浩的",
+        "reading": "こうてき",
+        "meaning_id": "bersifat wide expanse"
+      },
+      {
+        "word": "浩化",
+        "reading": "こうか",
+        "meaning_id": "proses / perubahan wide expanse"
+      }
+    ]
   },
   {
     "id": "kj-n1-0320",
@@ -21970,7 +22402,7 @@ window.nuggetKanjiN1 = [
       {
         "word": "慰める",
         "reading": "なぐさめる",
-        "meaning_id": "me-comfort"
+        "meaning_id": "comfort"
       }
     ]
   },
@@ -22157,7 +22589,7 @@ window.nuggetKanjiN1 = [
       {
         "word": "兼ねる",
         "reading": "かねる",
-        "meaning_id": "me-hold"
+        "meaning_id": "memegang"
       },
       {
         "word": "兼業",
@@ -22378,7 +22810,7 @@ window.nuggetKanjiN1 = [
       {
         "word": "即する",
         "reading": "そくする",
-        "meaning_id": "me-conform to"
+        "meaning_id": "conform to"
       }
     ]
   },
@@ -22428,7 +22860,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Pohon (木) dan Stamp (木) yang membentuk makna visual 'willow'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "柳",
+        "reading": "やなぎ",
+        "meaning_id": "willow"
+      },
+      {
+        "word": "柳的",
+        "reading": "りゅうてき",
+        "meaning_id": "bersifat willow"
+      },
+      {
+        "word": "柳化",
+        "reading": "りゅうか",
+        "meaning_id": "proses / perubahan willow"
+      }
+    ]
   },
   {
     "id": "kj-n1-0335",
@@ -22657,7 +23105,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Helicopter (襾) dan Leather (襾) dan Bulan (月) yang membentuk makna visual 'hegemony'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "覇",
+        "reading": "はたがしら",
+        "meaning_id": "hegemony"
+      },
+      {
+        "word": "覇的",
+        "reading": "はてき",
+        "meaning_id": "bersifat hegemony"
+      },
+      {
+        "word": "覇化",
+        "reading": "はか",
+        "meaning_id": "proses / perubahan hegemony"
+      }
+    ]
   },
   {
     "id": "kj-n1-0339",
@@ -22819,7 +23283,7 @@ window.nuggetKanjiN1 = [
       {
         "word": "脅す",
         "reading": "おどす",
-        "meaning_id": "me-threaten"
+        "meaning_id": "threaten"
       },
       {
         "word": "脅迫",
@@ -22883,7 +23347,7 @@ window.nuggetKanjiN1 = [
       {
         "word": "茂る",
         "reading": "しげる",
-        "meaning_id": "me-grow thick"
+        "meaning_id": "grow thick"
       }
     ]
   },
@@ -23174,7 +23638,7 @@ window.nuggetKanjiN1 = [
       {
         "word": "着飾る",
         "reading": "きかざる",
-        "meaning_id": "me-dress up"
+        "meaning_id": "dress up"
       },
       {
         "word": "首飾り",
@@ -23280,7 +23744,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Bentuk piktograf visual Dragon (立) yang melambangkan konsep 'dragon'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "竜",
+        "reading": "たつ",
+        "meaning_id": "dragon"
+      },
+      {
+        "word": "竜的",
+        "reading": "りゅうてき",
+        "meaning_id": "bersifat dragon"
+      },
+      {
+        "word": "竜化",
+        "reading": "りゅうか",
+        "meaning_id": "proses / perubahan dragon"
+      }
+    ]
   },
   {
     "id": "kj-n1-0350",
@@ -23512,7 +23992,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Flowers (艸) dan Next (艸) yang membentuk makna visual 'briar'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "茨",
+        "reading": "いばら",
+        "meaning_id": "briar"
+      },
+      {
+        "word": "茨的",
+        "reading": "してき",
+        "meaning_id": "bersifat briar"
+      },
+      {
+        "word": "茨化",
+        "reading": "しか",
+        "meaning_id": "proses / perubahan briar"
+      }
+    ]
   },
   {
     "id": "kj-n1-0354",
@@ -23557,7 +24053,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Tsunami (水) dan Matahari (日) dan Wing (水) yang membentuk makna visual 'lagoon'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "潟",
+        "reading": "かた",
+        "meaning_id": "lagoon"
+      },
+      {
+        "word": "潟的",
+        "reading": "せきてき",
+        "meaning_id": "bersifat lagoon"
+      },
+      {
+        "word": "潟化",
+        "reading": "せきか",
+        "meaning_id": "proses / perubahan lagoon"
+      }
+    ]
   },
   {
     "id": "kj-n1-0355",
@@ -23736,7 +24248,7 @@ window.nuggetKanjiN1 = [
       {
         "word": "嫌がる",
         "reading": "いやがる",
-        "meaning_id": "me-hate"
+        "meaning_id": "hate"
       },
       {
         "word": "好き嫌い",
@@ -23877,7 +24389,7 @@ window.nuggetKanjiN1 = [
       {
         "word": "敷く",
         "reading": "しく",
-        "meaning_id": "me-spread out"
+        "meaning_id": "spread out"
       },
       {
         "word": "風呂敷",
@@ -23938,7 +24450,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Fingers (手) dan Lid (手) dan Poop (手) dan Turkey (手) yang membentuk makna visual 'hug'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "擁",
+        "reading": "よう",
+        "meaning_id": "hug"
+      },
+      {
+        "word": "擁的",
+        "reading": "ようてき",
+        "meaning_id": "bersifat hug"
+      },
+      {
+        "word": "擁化",
+        "reading": "ようか",
+        "meaning_id": "proses / perubahan hug"
+      }
+    ]
   },
   {
     "id": "kj-n1-0361",
@@ -24202,12 +24730,12 @@ window.nuggetKanjiN1 = [
       {
         "word": "滅びる",
         "reading": "ほろびる",
-        "meaning_id": "me-be ruined"
+        "meaning_id": "menjadi / ada ruined"
       },
       {
         "word": "滅ぼす",
         "reading": "ほろぼす",
-        "meaning_id": "me-destroy"
+        "meaning_id": "destroy"
       }
     ]
   },
@@ -24562,12 +25090,12 @@ window.nuggetKanjiN1 = [
       {
         "word": "尽きる",
         "reading": "つきる",
-        "meaning_id": "me-be used up"
+        "meaning_id": "menjadi / ada used up"
       },
       {
         "word": "尽くす",
         "reading": "つくす",
-        "meaning_id": "me-exhaust"
+        "meaning_id": "exhaust"
       }
     ]
   },
@@ -24730,7 +25258,7 @@ window.nuggetKanjiN1 = [
       {
         "word": "滑る",
         "reading": "すべる",
-        "meaning_id": "me-slide"
+        "meaning_id": "slide"
       },
       {
         "word": "円滑",
@@ -25326,12 +25854,12 @@ window.nuggetKanjiN1 = [
       {
         "word": "励む",
         "reading": "はげむ",
-        "meaning_id": "me-be zealous"
+        "meaning_id": "menjadi / ada zealous"
       },
       {
         "word": "励ます",
         "reading": "はげます",
-        "meaning_id": "me-encourage"
+        "meaning_id": "encourage"
       }
     ]
   },
@@ -25505,7 +26033,7 @@ window.nuggetKanjiN1 = [
       {
         "word": "蓄える",
         "reading": "たくわえる",
-        "meaning_id": "me-store"
+        "meaning_id": "store"
       },
       {
         "word": "蓄積",
@@ -25625,7 +26153,7 @@ window.nuggetKanjiN1 = [
       {
         "word": "巡る",
         "reading": "めぐる",
-        "meaning_id": "me-go around"
+        "meaning_id": "go around"
       }
     ]
   },
@@ -25924,7 +26452,7 @@ window.nuggetKanjiN1 = [
       {
         "word": "誇る",
         "reading": "ほこる",
-        "meaning_id": "me-boast of"
+        "meaning_id": "boast of"
       }
     ]
   },
@@ -25993,7 +26521,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Spirit (示) dan Sheep (示) yang membentuk makna visual 'auspicious'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "祥",
+        "reading": "さいわ",
+        "meaning_id": "auspicious"
+      },
+      {
+        "word": "祥的",
+        "reading": "しょうてき",
+        "meaning_id": "bersifat auspicious"
+      },
+      {
+        "word": "祥化",
+        "reading": "しょうか",
+        "meaning_id": "proses / perubahan auspicious"
+      }
+    ]
   },
   {
     "id": "kj-n1-0395",
@@ -26139,7 +26683,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Stand (巾) dan Towel (巾) yang membentuk makna visual 'sovereign'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "帝",
+        "reading": "みかど",
+        "meaning_id": "sovereign"
+      },
+      {
+        "word": "帝的",
+        "reading": "ていてき",
+        "meaning_id": "bersifat sovereign"
+      },
+      {
+        "word": "帝化",
+        "reading": "ていか",
+        "meaning_id": "proses / perubahan sovereign"
+      }
+    ]
   },
   {
     "id": "kj-n1-0398",
@@ -26185,7 +26745,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 宀 (Atap rumah) melambangkan konsep 'luas / lebar'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "宏",
+        "reading": "ひろ",
+        "meaning_id": "luas / lebar"
+      },
+      {
+        "word": "宏的",
+        "reading": "こうてき",
+        "meaning_id": "bersifat luas / lebar"
+      },
+      {
+        "word": "宏化",
+        "reading": "こうか",
+        "meaning_id": "proses / perubahan luas / lebar"
+      }
+    ]
   },
   {
     "id": "kj-n1-0399",
@@ -26233,7 +26809,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Mulut (口) dan Spider (口) yang membentuk makna visual 'tempt'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "唆",
+        "reading": "そそ",
+        "meaning_id": "tempt"
+      },
+      {
+        "word": "唆的",
+        "reading": "さてき",
+        "meaning_id": "bersifat tempt"
+      },
+      {
+        "word": "唆化",
+        "reading": "さか",
+        "meaning_id": "proses / perubahan tempt"
+      }
+    ]
   },
   {
     "id": "kj-n1-0400",
@@ -26357,7 +26949,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Spring (水) dan Air (水) yang membentuk makna visual 'peaceful'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "泰",
+        "reading": "たい",
+        "meaning_id": "peaceful"
+      },
+      {
+        "word": "泰的",
+        "reading": "たいてき",
+        "meaning_id": "bersifat peaceful"
+      },
+      {
+        "word": "泰化",
+        "reading": "たいか",
+        "meaning_id": "proses / perubahan peaceful"
+      }
+    ]
   },
   {
     "id": "kj-n1-0402",
@@ -26408,7 +27016,7 @@ window.nuggetKanjiN1 = [
       {
         "word": "賄う",
         "reading": "まかなう",
-        "meaning_id": "me-give board to"
+        "meaning_id": "memberi board to"
       }
     ]
   },
@@ -26559,7 +27167,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Flowers (艸) dan Prison (艸) dan Sawah (田) yang membentuk makna visual 'chrysanthemum'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "菊",
+        "reading": "きく",
+        "meaning_id": "chrysanthemum"
+      },
+      {
+        "word": "菊的",
+        "reading": "きくてき",
+        "meaning_id": "bersifat chrysanthemum"
+      },
+      {
+        "word": "菊化",
+        "reading": "きくか",
+        "meaning_id": "proses / perubahan chrysanthemum"
+      }
+    ]
   },
   {
     "id": "kj-n1-0406",
@@ -26610,7 +27234,7 @@ window.nuggetKanjiN1 = [
       {
         "word": "絞る",
         "reading": "しぼる",
-        "meaning_id": "me-press"
+        "meaning_id": "press"
       }
     ]
   },
@@ -26800,12 +27424,12 @@ window.nuggetKanjiN1 = [
       {
         "word": "膨らむ",
         "reading": "ふくらむ",
-        "meaning_id": "me-expand"
+        "meaning_id": "expand"
       },
       {
         "word": "膨らます",
         "reading": "ふくらます",
-        "meaning_id": "me-swell"
+        "meaning_id": "swell"
       },
       {
         "word": "膨脹",
@@ -26815,7 +27439,7 @@ window.nuggetKanjiN1 = [
       {
         "word": "膨れる",
         "reading": "ふくれる",
-        "meaning_id": "me-get cross"
+        "meaning_id": "mendapatkan cross"
       }
     ]
   },
@@ -26924,7 +27548,7 @@ window.nuggetKanjiN1 = [
       {
         "word": "耐える",
         "reading": "たえる",
-        "meaning_id": "me-bear"
+        "meaning_id": "bear"
       }
     ]
   },
@@ -27026,17 +27650,17 @@ window.nuggetKanjiN1 = [
       {
         "word": "漏る",
         "reading": "もる",
-        "meaning_id": "me-leak"
+        "meaning_id": "leak"
       },
       {
         "word": "漏らす",
         "reading": "もらす",
-        "meaning_id": "me-let leak"
+        "meaning_id": "let leak"
       },
       {
         "word": "漏れる",
         "reading": "もれる",
-        "meaning_id": "me-leak out"
+        "meaning_id": "leak out"
       }
     ]
   },
@@ -27096,7 +27720,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Canopy (心) dan Helicopter (心) dan Barb (心) dan Hati (心) dan Winter (心) yang membentuk makna visual 'jubilation'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "慶",
+        "reading": "よろこ",
+        "meaning_id": "jubilation"
+      },
+      {
+        "word": "慶的",
+        "reading": "けいてき",
+        "meaning_id": "bersifat jubilation"
+      },
+      {
+        "word": "慶化",
+        "reading": "けいか",
+        "meaning_id": "proses / perubahan jubilation"
+      }
+    ]
   },
   {
     "id": "kj-n1-0415",
@@ -27211,7 +27851,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Flowers (艸) dan Direction (艸) yang membentuk makna visual 'perfume'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "芳",
+        "reading": "かんば",
+        "meaning_id": "perfume"
+      },
+      {
+        "word": "芳的",
+        "reading": "ほうてき",
+        "meaning_id": "bersifat perfume"
+      },
+      {
+        "word": "芳化",
+        "reading": "ほうか",
+        "meaning_id": "proses / perubahan perfume"
+      }
+    ]
   },
   {
     "id": "kj-n1-0417",
@@ -27267,7 +27923,7 @@ window.nuggetKanjiN1 = [
       {
         "word": "懲りる",
         "reading": "こりる",
-        "meaning_id": "me-learn by experience"
+        "meaning_id": "learn by experience"
       }
     ]
   },
@@ -27366,7 +28022,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Chapter (彡) dan Hair (彡) yang membentuk makna visual 'patent'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "彰",
+        "reading": "しょう",
+        "meaning_id": "patent"
+      },
+      {
+        "word": "彰的",
+        "reading": "しょうてき",
+        "meaning_id": "bersifat patent"
+      },
+      {
+        "word": "彰化",
+        "reading": "しょうか",
+        "meaning_id": "proses / perubahan patent"
+      }
+    ]
   },
   {
     "id": "kj-n1-0420",
@@ -27541,7 +28213,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Soul (心) dan Garis Satu (一) dan Dawn (心) yang membentuk makna visual 'constancy'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "恒",
+        "reading": "つね",
+        "meaning_id": "constancy"
+      },
+      {
+        "word": "恒的",
+        "reading": "こうてき",
+        "meaning_id": "bersifat constancy"
+      },
+      {
+        "word": "恒化",
+        "reading": "こうか",
+        "meaning_id": "proses / perubahan constancy"
+      }
+    ]
   },
   {
     "id": "kj-n1-0423",
@@ -27600,7 +28288,7 @@ window.nuggetKanjiN1 = [
       {
         "word": "揚げる",
         "reading": "あげる",
-        "meaning_id": "me-lift"
+        "meaning_id": "lift"
       }
     ]
   },
@@ -27720,7 +28408,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Drop (丿) dan Hills (丿) yang membentuk makna visual 'of'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "之",
+        "reading": "の",
+        "meaning_id": "of"
+      },
+      {
+        "word": "之的",
+        "reading": "してき",
+        "meaning_id": "bersifat of"
+      },
+      {
+        "word": "之化",
+        "reading": "しか",
+        "meaning_id": "proses / perubahan of"
+      }
+    ]
   },
   {
     "id": "kj-n1-0426",
@@ -27774,7 +28478,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 曰 (Mengatakan / Berujar) melambangkan konsep 'formerly'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "曽",
+        "reading": "かつ",
+        "meaning_id": "formerly"
+      },
+      {
+        "word": "曽的",
+        "reading": "そうてき",
+        "meaning_id": "bersifat formerly"
+      },
+      {
+        "word": "曽化",
+        "reading": "そうか",
+        "meaning_id": "proses / perubahan formerly"
+      }
+    ]
   },
   {
     "id": "kj-n1-0427",
@@ -27823,7 +28543,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Orang (人) dan Hat (人) dan Garis Satu (一) dan Bookshelf (人) yang membentuk makna visual 'ethics'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "倫",
+        "reading": "りん",
+        "meaning_id": "ethics"
+      },
+      {
+        "word": "倫的",
+        "reading": "りんてき",
+        "meaning_id": "bersifat ethics"
+      },
+      {
+        "word": "倫化",
+        "reading": "りんか",
+        "meaning_id": "proses / perubahan ethics"
+      }
+    ]
   },
   {
     "id": "kj-n1-0428",
@@ -27985,7 +28721,7 @@ window.nuggetKanjiN1 = [
       {
         "word": "潜る",
         "reading": "もぐる",
-        "meaning_id": "me-dive"
+        "meaning_id": "dive"
       },
       {
         "word": "潜水",
@@ -28041,7 +28777,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Grain (木) dan Knife (木) dan Pohon (木) yang membentuk makna visual 'pear tree'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "梨",
+        "reading": "なし",
+        "meaning_id": "pear tree"
+      },
+      {
+        "word": "梨的",
+        "reading": "りてき",
+        "meaning_id": "bersifat pear tree"
+      },
+      {
+        "word": "梨化",
+        "reading": "りか",
+        "meaning_id": "proses / perubahan pear tree"
+      }
+    ]
   },
   {
     "id": "kj-n1-0432",
@@ -28107,7 +28859,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Orang (人) dan Dua (二) yang membentuk makna visual 'humanity'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "仁",
+        "reading": "じん",
+        "meaning_id": "humanity"
+      },
+      {
+        "word": "仁的",
+        "reading": "じんてき",
+        "meaning_id": "bersifat humanity"
+      },
+      {
+        "word": "仁化",
+        "reading": "じんか",
+        "meaning_id": "proses / perubahan humanity"
+      }
+    ]
   },
   {
     "id": "kj-n1-0433",
@@ -28526,7 +29294,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Hair (頁) dan Geoduck (頁) yang membentuk makna visual 'ought'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "須",
+        "reading": "すべから",
+        "meaning_id": "ought"
+      },
+      {
+        "word": "須的",
+        "reading": "すてき",
+        "meaning_id": "bersifat ought"
+      },
+      {
+        "word": "須化",
+        "reading": "すか",
+        "meaning_id": "proses / perubahan ought"
+      }
+    ]
   },
   {
     "id": "kj-n1-0440",
@@ -28584,7 +29368,7 @@ window.nuggetKanjiN1 = [
       {
         "word": "偏る",
         "reading": "かたよる",
-        "meaning_id": "me-be one-sided"
+        "meaning_id": "menjadi / ada one-sided"
       },
       {
         "word": "偏見",
@@ -28748,7 +29532,7 @@ window.nuggetKanjiN1 = [
       {
         "word": "諮る",
         "reading": "はかる",
-        "meaning_id": "me-consult with"
+        "meaning_id": "consult with"
       }
     ]
   },
@@ -28912,7 +29696,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Bentuk piktograf visual Turtle (乙) yang melambangkan konsep 'tortoise'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "亀",
+        "reading": "かめ",
+        "meaning_id": "tortoise"
+      },
+      {
+        "word": "亀的",
+        "reading": "きてき",
+        "meaning_id": "bersifat tortoise"
+      },
+      {
+        "word": "亀化",
+        "reading": "きか",
+        "meaning_id": "proses / perubahan tortoise"
+      }
+    ]
   },
   {
     "id": "kj-n1-0447",
@@ -29060,7 +29860,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Api (火) dan Door (火) yang membentuk makna visual 'hearth'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "炉",
+        "reading": "いろり",
+        "meaning_id": "hearth"
+      },
+      {
+        "word": "炉的",
+        "reading": "ろてき",
+        "meaning_id": "bersifat hearth"
+      },
+      {
+        "word": "炉化",
+        "reading": "ろか",
+        "meaning_id": "proses / perubahan hearth"
+      }
+    ]
   },
   {
     "id": "kj-n1-0450",
@@ -29247,7 +30063,7 @@ window.nuggetKanjiN1 = [
       {
         "word": "殖える",
         "reading": "ふえる",
-        "meaning_id": "me-increase"
+        "meaning_id": "bertambah / meningkat"
       },
       {
         "word": "繁殖",
@@ -29585,7 +30401,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Atap (宀) dan Turkey (鳥) dan Bird (鳥) yang membentuk makna visual 'crane'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "鶴",
+        "reading": "つる",
+        "meaning_id": "crane"
+      },
+      {
+        "word": "鶴的",
+        "reading": "かくてき",
+        "meaning_id": "bersifat crane"
+      },
+      {
+        "word": "鶴化",
+        "reading": "かくか",
+        "meaning_id": "proses / perubahan crane"
+      }
+    ]
   },
   {
     "id": "kj-n1-0459",
@@ -29644,7 +30476,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Kata / Ucapan (言) dan Sweet (言) dan Pohon (木) yang membentuk makna visual 'conspire'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "謀",
+        "reading": "はか",
+        "meaning_id": "conspire"
+      },
+      {
+        "word": "謀的",
+        "reading": "ぼうてき",
+        "meaning_id": "bersifat conspire"
+      },
+      {
+        "word": "謀化",
+        "reading": "ぼうか",
+        "meaning_id": "proses / perubahan conspire"
+      }
+    ]
   },
   {
     "id": "kj-n1-0460",
@@ -29708,7 +30556,7 @@ window.nuggetKanjiN1 = [
       {
         "word": "暖まる",
         "reading": "あたたまる",
-        "meaning_id": "me-warm up"
+        "meaning_id": "warm up"
       },
       {
         "word": "暖める",
@@ -29768,7 +30616,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Bentuk piktograf visual Matahari (日) yang melambangkan konsep 'prosperous'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "昌",
+        "reading": "さかん",
+        "meaning_id": "prosperous"
+      },
+      {
+        "word": "昌的",
+        "reading": "しょうてき",
+        "meaning_id": "bersifat prosperous"
+      },
+      {
+        "word": "昌化",
+        "reading": "しょうか",
+        "meaning_id": "proses / perubahan prosperous"
+      }
+    ]
   },
   {
     "id": "kj-n1-0462",
@@ -30124,7 +30988,7 @@ window.nuggetKanjiN1 = [
       {
         "word": "泣く",
         "reading": "なく",
-        "meaning_id": "me-weep"
+        "meaning_id": "weep"
       }
     ]
   },
@@ -30185,7 +31049,7 @@ window.nuggetKanjiN1 = [
       {
         "word": "隔てる",
         "reading": "へだてる",
-        "meaning_id": "me-be shut out"
+        "meaning_id": "menjadi / ada shut out"
       },
       {
         "word": "隔週",
@@ -30195,7 +31059,7 @@ window.nuggetKanjiN1 = [
       {
         "word": "隔たる",
         "reading": "へだたる",
-        "meaning_id": "me-be distant"
+        "meaning_id": "menjadi / ada distant"
       }
     ]
   },
@@ -30248,7 +31112,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Tsunami (水) dan Conflict (水) yang membentuk makna visual 'clean'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "浄",
+        "reading": "きよ",
+        "meaning_id": "clean"
+      },
+      {
+        "word": "浄的",
+        "reading": "じょうてき",
+        "meaning_id": "bersifat clean"
+      },
+      {
+        "word": "浄化",
+        "reading": "じょうか",
+        "meaning_id": "proses / perubahan clean"
+      }
+    ]
   },
   {
     "id": "kj-n1-0470",
@@ -30484,7 +31364,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Toe (貝) dan Shellfish (貝) yang membentuk makna visual 'upright'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "貞",
+        "reading": "ただし",
+        "meaning_id": "upright"
+      },
+      {
+        "word": "貞的",
+        "reading": "ていてき",
+        "meaning_id": "bersifat upright"
+      },
+      {
+        "word": "貞化",
+        "reading": "ていか",
+        "meaning_id": "proses / perubahan upright"
+      }
+    ]
   },
   {
     "id": "kj-n1-0474",
@@ -30533,7 +31429,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Stand (靑) dan Blue (靑) yang membentuk makna visual 'peaceful'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "靖",
+        "reading": "やす",
+        "meaning_id": "peaceful"
+      },
+      {
+        "word": "靖的",
+        "reading": "せいてき",
+        "meaning_id": "bersifat peaceful"
+      },
+      {
+        "word": "靖化",
+        "reading": "せいか",
+        "meaning_id": "proses / perubahan peaceful"
+      }
+    ]
   },
   {
     "id": "kj-n1-0475",
@@ -30656,7 +31568,7 @@ window.nuggetKanjiN1 = [
       {
         "word": "飼う",
         "reading": "かう",
-        "meaning_id": "me-keep"
+        "meaning_id": "menjaga / memelihara"
       },
       {
         "word": "飼育",
@@ -31080,7 +31992,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Bentuk piktograf visual Boat (丶) yang melambangkan konsep 'rust-colored'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "丹",
+        "reading": "に",
+        "meaning_id": "rust-colored"
+      },
+      {
+        "word": "丹的",
+        "reading": "たんてき",
+        "meaning_id": "bersifat rust-colored"
+      },
+      {
+        "word": "丹化",
+        "reading": "たんか",
+        "meaning_id": "proses / perubahan rust-colored"
+      }
+    ]
   },
   {
     "id": "kj-n1-0484",
@@ -31185,7 +32113,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Bentuk piktograf visual Alligator (乙) yang melambangkan konsep 'melakukan be (classical)'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "也",
+        "reading": "なり",
+        "meaning_id": "melakukan be (classical)"
+      },
+      {
+        "word": "也的",
+        "reading": "やてき",
+        "meaning_id": "bersifat melakukan be (classical)"
+      },
+      {
+        "word": "也化",
+        "reading": "やか",
+        "meaning_id": "proses / perubahan melakukan be (classical)"
+      }
+    ]
   },
   {
     "id": "kj-n1-0486",
@@ -31336,7 +32280,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Dirt (土) dan Nurse (土) yang membentuk makna visual 'lot'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "壌",
+        "reading": "つち",
+        "meaning_id": "lot"
+      },
+      {
+        "word": "壌的",
+        "reading": "じょうてき",
+        "meaning_id": "bersifat lot"
+      },
+      {
+        "word": "壌化",
+        "reading": "じょうか",
+        "meaning_id": "proses / perubahan lot"
+      }
+    ]
   },
   {
     "id": "kj-n1-0489",
@@ -31514,7 +32474,7 @@ window.nuggetKanjiN1 = [
       {
         "word": "粘る",
         "reading": "ねばる",
-        "meaning_id": "me-be sticky"
+        "meaning_id": "menjadi / ada sticky"
       }
     ]
   },
@@ -31575,7 +32535,7 @@ window.nuggetKanjiN1 = [
       {
         "word": "悟る",
         "reading": "さとる",
-        "meaning_id": "me-attain enlightenment"
+        "meaning_id": "attain enlightenment"
       }
     ]
   },
@@ -31788,7 +32748,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 日 (Matahari / Hari) melambangkan konsep 'rising sun'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "旭",
+        "reading": "あさひ",
+        "meaning_id": "rising sun"
+      },
+      {
+        "word": "旭的",
+        "reading": "きょくてき",
+        "meaning_id": "bersifat rising sun"
+      },
+      {
+        "word": "旭化",
+        "reading": "きょくか",
+        "meaning_id": "proses / perubahan rising sun"
+      }
+    ]
   },
   {
     "id": "kj-n1-0497",
@@ -32087,12 +33063,12 @@ window.nuggetKanjiN1 = [
       {
         "word": "遂げる",
         "reading": "とげる",
-        "meaning_id": "me-accomplish"
+        "meaning_id": "accomplish"
       },
       {
         "word": "やり遂げる",
         "reading": "やりとげる",
-        "meaning_id": "me-accomplish"
+        "meaning_id": "accomplish"
       }
     ]
   },
@@ -32191,7 +33167,18 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Pohon (木) dan Cliff (木) dan Ten Thousand (木) yang membentuk makna visual 'horse chestnut'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "栃",
+        "reading": "とち",
+        "meaning_id": "horse chestnut"
+      },
+      {
+        "word": "栃物",
+        "reading": "とちもの",
+        "meaning_id": "benda / hal terkait horse chestnut"
+      }
+    ]
   },
   {
     "id": "kj-n1-0504",
@@ -32242,7 +33229,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Gunung (山) dan Branch (山) yang membentuk makna visual 'branch off'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "岐",
+        "reading": "き",
+        "meaning_id": "branch off"
+      },
+      {
+        "word": "岐的",
+        "reading": "きてき",
+        "meaning_id": "bersifat branch off"
+      },
+      {
+        "word": "岐化",
+        "reading": "きか",
+        "meaning_id": "proses / perubahan branch off"
+      }
+    ]
   },
   {
     "id": "kj-n1-0505",
@@ -32284,7 +33287,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Building (阜) dan Compare (阜) dan Dirt (阜) yang membentuk makna visual 'highness'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "陛",
+        "reading": "へい",
+        "meaning_id": "highness"
+      },
+      {
+        "word": "陛的",
+        "reading": "へいてき",
+        "meaning_id": "bersifat highness"
+      },
+      {
+        "word": "陛化",
+        "reading": "へいか",
+        "meaning_id": "proses / perubahan highness"
+      }
+    ]
   },
   {
     "id": "kj-n1-0506",
@@ -32449,7 +33468,7 @@ window.nuggetKanjiN1 = [
       {
         "word": "衰える",
         "reading": "おとろえる",
-        "meaning_id": "me-become weak"
+        "meaning_id": "become weak"
       }
     ]
   },
@@ -32493,7 +33512,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Boat (舟) dan Yoga (舟) dan King (舟) yang membentuk makna visual 'rowboat'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "艇",
+        "reading": "てい",
+        "meaning_id": "rowboat"
+      },
+      {
+        "word": "艇的",
+        "reading": "ていてき",
+        "meaning_id": "bersifat rowboat"
+      },
+      {
+        "word": "艇化",
+        "reading": "ていか",
+        "meaning_id": "proses / perubahan rowboat"
+      }
+    ]
   },
   {
     "id": "kj-n1-0510",
@@ -32780,7 +33815,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Fingers (手) dan Skin (手) yang membentuk makna visual 'expose'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "披",
+        "reading": "ひ",
+        "meaning_id": "expose"
+      },
+      {
+        "word": "披的",
+        "reading": "ひてき",
+        "meaning_id": "bersifat expose"
+      },
+      {
+        "word": "披化",
+        "reading": "ひか",
+        "meaning_id": "proses / perubahan expose"
+      }
+    ]
   },
   {
     "id": "kj-n1-0515",
@@ -32881,7 +33932,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Logam / Emas (金) dan White (金) dan Towel (金) yang membentuk makna visual 'brocade'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "錦",
+        "reading": "にしき",
+        "meaning_id": "brocade"
+      },
+      {
+        "word": "錦的",
+        "reading": "きんてき",
+        "meaning_id": "bersifat brocade"
+      },
+      {
+        "word": "錦化",
+        "reading": "きんか",
+        "meaning_id": "proses / perubahan brocade"
+      }
+    ]
   },
   {
     "id": "kj-n1-0517",
@@ -32924,7 +33991,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Ice (冫) dan Turkey (冫) yang membentuk makna visual 'quasi-'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "准",
+        "reading": "じゅん",
+        "meaning_id": "quasi-"
+      },
+      {
+        "word": "准的",
+        "reading": "じゅんてき",
+        "meaning_id": "bersifat quasi-"
+      },
+      {
+        "word": "准化",
+        "reading": "じゅんか",
+        "meaning_id": "proses / perubahan quasi-"
+      }
+    ]
   },
   {
     "id": "kj-n1-0518",
@@ -33025,7 +34108,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 石 (Batu) melambangkan konsep 'seashore'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "磯",
+        "reading": "いそ",
+        "meaning_id": "seashore"
+      },
+      {
+        "word": "磯的",
+        "reading": "きてき",
+        "meaning_id": "bersifat seashore"
+      },
+      {
+        "word": "磯化",
+        "reading": "きか",
+        "meaning_id": "proses / perubahan seashore"
+      }
+    ]
   },
   {
     "id": "kj-n1-0520",
@@ -33145,12 +34244,12 @@ window.nuggetKanjiN1 = [
       {
         "word": "浸ける",
         "reading": "つける",
-        "meaning_id": "me-dip in"
+        "meaning_id": "dip in"
       },
       {
         "word": "浸す",
         "reading": "ひたす",
-        "meaning_id": "me-soak"
+        "meaning_id": "soak"
       }
     ]
   },
@@ -33361,7 +34460,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Horse (馬) dan Paragraph (馬) yang membentuk makna visual 'pony'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "駒",
+        "reading": "こま",
+        "meaning_id": "pony"
+      },
+      {
+        "word": "駒的",
+        "reading": "くてき",
+        "meaning_id": "bersifat pony"
+      },
+      {
+        "word": "駒化",
+        "reading": "くか",
+        "meaning_id": "proses / perubahan pony"
+      }
+    ]
   },
   {
     "id": "kj-n1-0526",
@@ -33599,7 +34714,7 @@ window.nuggetKanjiN1 = [
       {
         "word": "悔やむ",
         "reading": "くやむ",
-        "meaning_id": "me-mourn"
+        "meaning_id": "mourn"
       },
       {
         "word": "後悔",
@@ -33657,7 +34772,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Kata / Ucapan (言) dan Death Star (言) yang membentuk makna visual 'rebuke'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "諭",
+        "reading": "さと",
+        "meaning_id": "rebuke"
+      },
+      {
+        "word": "諭的",
+        "reading": "ゆてき",
+        "meaning_id": "bersifat rebuke"
+      },
+      {
+        "word": "諭化",
+        "reading": "ゆか",
+        "meaning_id": "proses / perubahan rebuke"
+      }
+    ]
   },
   {
     "id": "kj-n1-0531",
@@ -33758,7 +34889,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Tiger (虍) dan Wolverine (虍) yang membentuk makna visual 'tyrannize'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "虐",
+        "reading": "しいた",
+        "meaning_id": "tyrannize"
+      },
+      {
+        "word": "虐的",
+        "reading": "ぎゃくてき",
+        "meaning_id": "bersifat tyrannize"
+      },
+      {
+        "word": "虐化",
+        "reading": "ぎゃくか",
+        "meaning_id": "proses / perubahan tyrannize"
+      }
+    ]
   },
   {
     "id": "kj-n1-0533",
@@ -33979,12 +35126,12 @@ window.nuggetKanjiN1 = [
       {
         "word": "据える",
         "reading": "すえる",
-        "meaning_id": "me-set"
+        "meaning_id": "set"
       },
       {
         "word": "据え付ける",
         "reading": "すえつける",
-        "meaning_id": "me-install"
+        "meaning_id": "install"
       }
     ]
   },
@@ -34203,7 +35350,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Fingers (手) dan Flowers (手) dan Suit (手) yang membentuk makna visual 'board'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "搭",
+        "reading": "とう",
+        "meaning_id": "board"
+      },
+      {
+        "word": "搭的",
+        "reading": "とうてき",
+        "meaning_id": "bersifat board"
+      },
+      {
+        "word": "搭化",
+        "reading": "とうか",
+        "meaning_id": "proses / perubahan board"
+      }
+    ]
   },
   {
     "id": "kj-n1-0541",
@@ -34600,7 +35763,7 @@ window.nuggetKanjiN1 = [
       {
         "word": "擦る",
         "reading": "こする",
-        "meaning_id": "me-rub"
+        "meaning_id": "rub"
       },
       {
         "word": "摩擦",
@@ -34610,7 +35773,7 @@ window.nuggetKanjiN1 = [
       {
         "word": "擦れる",
         "reading": "すれる",
-        "meaning_id": "me-rub"
+        "meaning_id": "rub"
       },
       {
         "word": "擦れ違い",
@@ -34954,7 +36117,7 @@ window.nuggetKanjiN1 = [
       {
         "word": "懐く",
         "reading": "なつく",
-        "meaning_id": "me-become emotionally attached"
+        "meaning_id": "become emotionally attached"
       }
     ]
   },
@@ -35116,7 +36279,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Fingers (手) dan Mulut (口) dan Pedang (刀) yang membentuk makna visual 'kidnap'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "拐",
+        "reading": "かい",
+        "meaning_id": "kidnap"
+      },
+      {
+        "word": "拐的",
+        "reading": "かいてき",
+        "meaning_id": "bersifat kidnap"
+      },
+      {
+        "word": "拐化",
+        "reading": "かいか",
+        "meaning_id": "proses / perubahan kidnap"
+      }
+    ]
   },
   {
     "id": "kj-n1-0557",
@@ -35256,12 +36435,12 @@ window.nuggetKanjiN1 = [
       {
         "word": "添う",
         "reading": "そう",
-        "meaning_id": "me-accompany"
+        "meaning_id": "accompany"
       },
       {
         "word": "添える",
         "reading": "そえる",
-        "meaning_id": "me-add to"
+        "meaning_id": "add to"
       }
     ]
   },
@@ -35514,7 +36693,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Ear (耳) dan Public (耳) dan Hati (心) yang membentuk makna visual 'wise'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "聡",
+        "reading": "さと",
+        "meaning_id": "wise"
+      },
+      {
+        "word": "聡的",
+        "reading": "そうてき",
+        "meaning_id": "bersifat wise"
+      },
+      {
+        "word": "聡化",
+        "reading": "そうか",
+        "meaning_id": "proses / perubahan wise"
+      }
+    ]
   },
   {
     "id": "kj-n1-0563",
@@ -35860,7 +37055,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Heavy (力) dan Kekuatan (力) dan Boil (力) yang membentuk makna visual 'meritorious deed'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "勲",
+        "reading": "いさお",
+        "meaning_id": "meritorious deed"
+      },
+      {
+        "word": "勲的",
+        "reading": "くんてき",
+        "meaning_id": "bersifat meritorious deed"
+      },
+      {
+        "word": "勲化",
+        "reading": "くんか",
+        "meaning_id": "proses / perubahan meritorious deed"
+      }
+    ]
   },
   {
     "id": "kj-n1-0569",
@@ -35913,7 +37124,7 @@ window.nuggetKanjiN1 = [
       {
         "word": "誤魔化す",
         "reading": "ごまかす",
-        "meaning_id": "me-deceive"
+        "meaning_id": "deceive"
       }
     ]
   },
@@ -36066,7 +37277,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Matahari (日) dan Net (日) dan Someone (日) yang membentuk makna visual 'dawn'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "曙",
+        "reading": "あけぼの",
+        "meaning_id": "dawn"
+      },
+      {
+        "word": "曙的",
+        "reading": "しょてき",
+        "meaning_id": "bersifat dawn"
+      },
+      {
+        "word": "曙化",
+        "reading": "しょか",
+        "meaning_id": "proses / perubahan dawn"
+      }
+    ]
   },
   {
     "id": "kj-n1-0573",
@@ -36109,7 +37336,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Benang (糸) dan Writing (糸) yang membentuk makna visual 'family crest'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "紋",
+        "reading": "もん",
+        "meaning_id": "family crest"
+      },
+      {
+        "word": "紋的",
+        "reading": "もんてき",
+        "meaning_id": "bersifat family crest"
+      },
+      {
+        "word": "紋化",
+        "reading": "もんか",
+        "meaning_id": "proses / perubahan family crest"
+      }
+    ]
   },
   {
     "id": "kj-n1-0574",
@@ -36157,7 +37400,7 @@ window.nuggetKanjiN1 = [
       {
         "word": "卸す",
         "reading": "おろす",
-        "meaning_id": "me-sell wholesale"
+        "meaning_id": "sell wholesale"
       }
     ]
   },
@@ -36335,12 +37578,12 @@ window.nuggetKanjiN1 = [
       {
         "word": "逸れる",
         "reading": "それる",
-        "meaning_id": "me-stray  from subject"
+        "meaning_id": "stray  from subject"
       },
       {
         "word": "逸らす",
         "reading": "そらす",
-        "meaning_id": "me-turn away"
+        "meaning_id": "turn away"
       }
     ]
   },
@@ -36390,7 +37633,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Tsunami (水) dan Cliff (水) dan Dirt (水) yang membentuk makna visual 'horizon'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "涯",
+        "reading": "はて",
+        "meaning_id": "horizon"
+      },
+      {
+        "word": "涯的",
+        "reading": "がいてき",
+        "meaning_id": "bersifat horizon"
+      },
+      {
+        "word": "涯化",
+        "reading": "がいか",
+        "meaning_id": "proses / perubahan horizon"
+      }
+    ]
   },
   {
     "id": "kj-n1-0579",
@@ -36668,7 +37927,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Drop (阜) dan Bear (阜) dan Cross (阜) yang membentuk makna visual 'hill'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "阜",
+        "reading": "ふ",
+        "meaning_id": "hill"
+      },
+      {
+        "word": "阜的",
+        "reading": "ふてき",
+        "meaning_id": "bersifat hill"
+      },
+      {
+        "word": "阜化",
+        "reading": "ふか",
+        "meaning_id": "proses / perubahan hill"
+      }
+    ]
   },
   {
     "id": "kj-n1-0584",
@@ -36723,7 +37998,7 @@ window.nuggetKanjiN1 = [
       {
         "word": "彫る",
         "reading": "ほる",
-        "meaning_id": "me-carve"
+        "meaning_id": "carve"
       }
     ]
   },
@@ -37053,7 +38328,7 @@ window.nuggetKanjiN1 = [
       {
         "word": "欺く",
         "reading": "あざむく",
-        "meaning_id": "me-deceive"
+        "meaning_id": "deceive"
       },
       {
         "word": "詐欺",
@@ -37127,7 +38402,7 @@ window.nuggetKanjiN1 = [
       {
         "word": "釣り合う",
         "reading": "つりあう",
-        "meaning_id": "me-balance"
+        "meaning_id": "balance"
       },
       {
         "word": "釣鐘",
@@ -37176,7 +38451,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 艸 (Rumput / Tumbuhan herba) melambangkan konsep 'bush clover'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "萩",
+        "reading": "はぎ",
+        "meaning_id": "bush clover"
+      },
+      {
+        "word": "萩的",
+        "reading": "しゅうてき",
+        "meaning_id": "bersifat bush clover"
+      },
+      {
+        "word": "萩化",
+        "reading": "しゅうか",
+        "meaning_id": "proses / perubahan bush clover"
+      }
+    ]
   },
   {
     "id": "kj-n1-0593",
@@ -37226,7 +38517,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 艸 (Rumput / Tumbuhan herba) melambangkan konsep 'arrowroot'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "葛",
+        "reading": "つづら",
+        "meaning_id": "arrowroot"
+      },
+      {
+        "word": "葛的",
+        "reading": "かつてき",
+        "meaning_id": "bersifat arrowroot"
+      },
+      {
+        "word": "葛化",
+        "reading": "かつか",
+        "meaning_id": "proses / perubahan arrowroot"
+      }
+    ]
   },
   {
     "id": "kj-n1-0594",
@@ -37274,7 +38581,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Wolverine (聿) dan Stick (聿) dan Legs (聿) dan Sawah (田) yang membentuk makna visual 'solemn'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "粛",
+        "reading": "つつし",
+        "meaning_id": "solemn"
+      },
+      {
+        "word": "粛的",
+        "reading": "しゅくてき",
+        "meaning_id": "bersifat solemn"
+      },
+      {
+        "word": "粛化",
+        "reading": "しゅくか",
+        "meaning_id": "proses / perubahan solemn"
+      }
+    ]
   },
   {
     "id": "kj-n1-0595",
@@ -37319,7 +38642,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 木 (Pohon / Kayu) melambangkan konsep 'chestnut'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "栗",
+        "reading": "くり",
+        "meaning_id": "chestnut"
+      },
+      {
+        "word": "栗的",
+        "reading": "りつてき",
+        "meaning_id": "bersifat chestnut"
+      },
+      {
+        "word": "栗化",
+        "reading": "りつか",
+        "meaning_id": "proses / perubahan chestnut"
+      }
+    ]
   },
   {
     "id": "kj-n1-0596",
@@ -37434,7 +38773,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Drum (口) dan Kekuatan (力) dan Mulut (口) yang membentuk makna visual 'applaud'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "嘉",
+        "reading": "よみ",
+        "meaning_id": "applaud"
+      },
+      {
+        "word": "嘉的",
+        "reading": "かてき",
+        "meaning_id": "bersifat applaud"
+      },
+      {
+        "word": "嘉化",
+        "reading": "かか",
+        "meaning_id": "proses / perubahan applaud"
+      }
+    ]
   },
   {
     "id": "kj-n1-0598",
@@ -37783,7 +39138,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Tsunami (水) dan Horns (水) dan Garis Satu (一) dan Poop (水) yang membentuk makna visual 'nourishing'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "滋",
+        "reading": "じ",
+        "meaning_id": "nourishing"
+      },
+      {
+        "word": "滋的",
+        "reading": "じてき",
+        "meaning_id": "bersifat nourishing"
+      },
+      {
+        "word": "滋化",
+        "reading": "じか",
+        "meaning_id": "proses / perubahan nourishing"
+      }
+    ]
   },
   {
     "id": "kj-n1-0604",
@@ -37832,7 +39203,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Poop (幺) dan Cape (幺) yang membentuk makna visual 'phantasm'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "幻",
+        "reading": "まぼろし",
+        "meaning_id": "phantasm"
+      },
+      {
+        "word": "幻的",
+        "reading": "げんてき",
+        "meaning_id": "bersifat phantasm"
+      },
+      {
+        "word": "幻化",
+        "reading": "げんか",
+        "meaning_id": "proses / perubahan phantasm"
+      }
+    ]
   },
   {
     "id": "kj-n1-0605",
@@ -37882,12 +39269,12 @@ window.nuggetKanjiN1 = [
       {
         "word": "煮る",
         "reading": "にる",
-        "meaning_id": "me-boil"
+        "meaning_id": "merebus"
       },
       {
         "word": "煮える",
         "reading": "にえる",
-        "meaning_id": "me-boil"
+        "meaning_id": "merebus"
       }
     ]
   },
@@ -37931,7 +39318,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Wanita (女) dan Servant (女) yang membentuk makna visual 'putri'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "姫",
+        "reading": "ひめ",
+        "meaning_id": "putri"
+      },
+      {
+        "word": "姫的",
+        "reading": "きてき",
+        "meaning_id": "bersifat putri"
+      },
+      {
+        "word": "姫化",
+        "reading": "きか",
+        "meaning_id": "proses / perubahan putri"
+      }
+    ]
   },
   {
     "id": "kj-n1-0607",
@@ -37981,7 +39384,7 @@ window.nuggetKanjiN1 = [
       {
         "word": "誓う",
         "reading": "ちかう",
-        "meaning_id": "me-swear"
+        "meaning_id": "swear"
       }
     ]
   },
@@ -38278,7 +39681,7 @@ window.nuggetKanjiN1 = [
       {
         "word": "仰ぐ",
         "reading": "あおぐ",
-        "meaning_id": "me-look up"
+        "meaning_id": "look up"
       }
     ]
   },
@@ -38333,7 +39736,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Hill (刀) dan Knife (刀) yang membentuk makna visual 'sturdy'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "剛",
+        "reading": "ごう",
+        "meaning_id": "sturdy"
+      },
+      {
+        "word": "剛的",
+        "reading": "ごうてき",
+        "meaning_id": "bersifat sturdy"
+      },
+      {
+        "word": "剛化",
+        "reading": "ごうか",
+        "meaning_id": "proses / perubahan sturdy"
+      }
+    ]
   },
   {
     "id": "kj-n1-0614",
@@ -38374,7 +39793,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Sick (疒) dan Arrow (疒) yang membentuk makna visual 'rapidly'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "疾",
+        "reading": "はや",
+        "meaning_id": "rapidly"
+      },
+      {
+        "word": "疾的",
+        "reading": "しつてき",
+        "meaning_id": "bersifat rapidly"
+      },
+      {
+        "word": "疾化",
+        "reading": "しつか",
+        "meaning_id": "proses / perubahan rapidly"
+      }
+    ]
   },
   {
     "id": "kj-n1-0615",
@@ -38484,12 +39919,12 @@ window.nuggetKanjiN1 = [
       {
         "word": "砕く",
         "reading": "くだく",
-        "meaning_id": "me-break"
+        "meaning_id": "rusak / mematahkan"
       },
       {
         "word": "砕ける",
         "reading": "くだける",
-        "meaning_id": "me-break"
+        "meaning_id": "rusak / mematahkan"
       }
     ]
   },
@@ -38671,7 +40106,7 @@ window.nuggetKanjiN1 = [
       {
         "word": "謙る",
         "reading": "へりくだる",
-        "meaning_id": "me-deprecate oneself and praise the listener"
+        "meaning_id": "deprecate oneself and praise the listener"
       }
     ]
   },
@@ -38726,7 +40161,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Cliff (口) dan Garis Satu (一) dan Mulut (口) yang membentuk makna visual 'empress'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "后",
+        "reading": "きさき",
+        "meaning_id": "empress"
+      },
+      {
+        "word": "后的",
+        "reading": "こうてき",
+        "meaning_id": "bersifat empress"
+      },
+      {
+        "word": "后化",
+        "reading": "こうか",
+        "meaning_id": "proses / perubahan empress"
+      }
+    ]
   },
   {
     "id": "kj-n1-0621",
@@ -38780,7 +40231,7 @@ window.nuggetKanjiN1 = [
       {
         "word": "嘆く",
         "reading": "なげく",
-        "meaning_id": "me-sigh"
+        "meaning_id": "sigh"
       }
     ]
   },
@@ -38886,7 +40337,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Logam / Emas (金) dan Mona Lisa (金) yang membentuk makna visual 'sickle'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "鎌",
+        "reading": "かま",
+        "meaning_id": "sickle"
+      },
+      {
+        "word": "鎌的",
+        "reading": "れんてき",
+        "meaning_id": "bersifat sickle"
+      },
+      {
+        "word": "鎌化",
+        "reading": "れんか",
+        "meaning_id": "proses / perubahan sickle"
+      }
+    ]
   },
   {
     "id": "kj-n1-0624",
@@ -39333,7 +40800,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Atap (宀) dan Spicy (宀) yang membentuk makna visual 'superintend'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "宰",
+        "reading": "さい",
+        "meaning_id": "superintend"
+      },
+      {
+        "word": "宰的",
+        "reading": "さいてき",
+        "meaning_id": "bersifat superintend"
+      },
+      {
+        "word": "宰化",
+        "reading": "さいか",
+        "meaning_id": "proses / perubahan superintend"
+      }
+    ]
   },
   {
     "id": "kj-n1-0632",
@@ -39494,7 +40977,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 辰 (Naga zodiak / Waktu) melambangkan konsep 'sign of the dragon'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "辰",
+        "reading": "たつ",
+        "meaning_id": "sign of the dragon"
+      },
+      {
+        "word": "辰的",
+        "reading": "しんてき",
+        "meaning_id": "bersifat sign of the dragon"
+      },
+      {
+        "word": "辰化",
+        "reading": "しんか",
+        "meaning_id": "proses / perubahan sign of the dragon"
+      }
+    ]
   },
   {
     "id": "kj-n1-0635",
@@ -39544,7 +41043,7 @@ window.nuggetKanjiN1 = [
       {
         "word": "霞む",
         "reading": "かすむ",
-        "meaning_id": "me-grow hazy"
+        "meaning_id": "grow hazy"
       }
     ]
   },
@@ -39989,7 +41488,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Logam / Emas (金) dan Reality (金) yang membentuk makna visual 'tranquilize'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "鎮",
+        "reading": "しず",
+        "meaning_id": "tranquilize"
+      },
+      {
+        "word": "鎮的",
+        "reading": "ちんてき",
+        "meaning_id": "bersifat tranquilize"
+      },
+      {
+        "word": "鎮化",
+        "reading": "ちんか",
+        "meaning_id": "proses / perubahan tranquilize"
+      }
+    ]
   },
   {
     "id": "kj-n1-0644",
@@ -40036,7 +41551,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Tsunami (水) dan Same (水) yang membentuk makna visual 'den'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "洞",
+        "reading": "ほら",
+        "meaning_id": "den"
+      },
+      {
+        "word": "洞的",
+        "reading": "どうてき",
+        "meaning_id": "bersifat den"
+      },
+      {
+        "word": "洞化",
+        "reading": "どうか",
+        "meaning_id": "proses / perubahan den"
+      }
+    ]
   },
   {
     "id": "kj-n1-0645",
@@ -40251,7 +41782,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari District (殳) dan Weapon (殳) yang membentuk makna visual 'assault'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "殴",
+        "reading": "なぐ",
+        "meaning_id": "assault"
+      },
+      {
+        "word": "殴的",
+        "reading": "おうてき",
+        "meaning_id": "bersifat assault"
+      },
+      {
+        "word": "殴化",
+        "reading": "おうか",
+        "meaning_id": "proses / perubahan assault"
+      }
+    ]
   },
   {
     "id": "kj-n1-0649",
@@ -40355,7 +41902,7 @@ window.nuggetKanjiN1 = [
       {
         "word": "奉る",
         "reading": "たてまつる",
-        "meaning_id": "me-offer"
+        "meaning_id": "offer"
       },
       {
         "word": "奉仕",
@@ -40534,7 +42081,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Bentuk piktograf visual Restaurant (亠) yang melambangkan konsep 'pavilion'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "亭",
+        "reading": "てい",
+        "meaning_id": "pavilion"
+      },
+      {
+        "word": "亭的",
+        "reading": "ていてき",
+        "meaning_id": "bersifat pavilion"
+      },
+      {
+        "word": "亭化",
+        "reading": "ていか",
+        "meaning_id": "proses / perubahan pavilion"
+      }
+    ]
   },
   {
     "id": "kj-n1-0654",
@@ -40582,7 +42145,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 水 (Air) melambangkan konsep 'pure'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "淳",
+        "reading": "あつ",
+        "meaning_id": "pure"
+      },
+      {
+        "word": "淳的",
+        "reading": "じゅんてき",
+        "meaning_id": "bersifat pure"
+      },
+      {
+        "word": "淳化",
+        "reading": "じゅんか",
+        "meaning_id": "proses / perubahan pure"
+      }
+    ]
   },
   {
     "id": "kj-n1-0655",
@@ -40692,7 +42271,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Nine (鳥) dan Bird (鳥) yang membentuk makna visual 'pigeon'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "鳩",
+        "reading": "はと",
+        "meaning_id": "pigeon"
+      },
+      {
+        "word": "鳩的",
+        "reading": "きゅうてき",
+        "meaning_id": "bersifat pigeon"
+      },
+      {
+        "word": "鳩化",
+        "reading": "きゅうか",
+        "meaning_id": "proses / perubahan pigeon"
+      }
+    ]
   },
   {
     "id": "kj-n1-0657",
@@ -40821,7 +42416,7 @@ window.nuggetKanjiN1 = [
       {
         "word": "惜しむ",
         "reading": "おしむ",
-        "meaning_id": "me-be frugal"
+        "meaning_id": "menjadi / ada frugal"
       }
     ]
   },
@@ -40990,7 +42585,7 @@ window.nuggetKanjiN1 = [
       {
         "word": "潤う",
         "reading": "うるおう",
-        "meaning_id": "me-be moist"
+        "meaning_id": "menjadi / ada moist"
       },
       {
         "word": "利潤",
@@ -41041,7 +42636,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Soul (心) dan Toe (心) dan Early (心) yang membentuk makna visual 'lament'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "悼",
+        "reading": "いた",
+        "meaning_id": "lament"
+      },
+      {
+        "word": "悼的",
+        "reading": "とうてき",
+        "meaning_id": "bersifat lament"
+      },
+      {
+        "word": "悼化",
+        "reading": "とうか",
+        "meaning_id": "proses / perubahan lament"
+      }
+    ]
   },
   {
     "id": "kj-n1-0663",
@@ -41258,7 +42869,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Stool (木) dan Pohon (木) yang membentuk makna visual 'mulberry'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "桑",
+        "reading": "くわ",
+        "meaning_id": "mulberry"
+      },
+      {
+        "word": "桑的",
+        "reading": "そうてき",
+        "meaning_id": "bersifat mulberry"
+      },
+      {
+        "word": "桑化",
+        "reading": "そうか",
+        "meaning_id": "proses / perubahan mulberry"
+      }
+    ]
   },
   {
     "id": "kj-n1-0667",
@@ -41304,7 +42931,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 木 (Pohon / Kayu) melambangkan konsep 'Japanese Judas-tree'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "桂",
+        "reading": "かつら",
+        "meaning_id": "Japanese Judas-tree"
+      },
+      {
+        "word": "桂的",
+        "reading": "けいてき",
+        "meaning_id": "bersifat Japanese Judas-tree"
+      },
+      {
+        "word": "桂化",
+        "reading": "けいか",
+        "meaning_id": "proses / perubahan Japanese Judas-tree"
+      }
+    ]
   },
   {
     "id": "kj-n1-0668",
@@ -41348,7 +42991,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Bone (骨) dan Have (骨) dan Scooter (骨) yang membentuk makna visual 'marrow'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "髄",
+        "reading": "ずい",
+        "meaning_id": "marrow"
+      },
+      {
+        "word": "髄的",
+        "reading": "ずいてき",
+        "meaning_id": "bersifat marrow"
+      },
+      {
+        "word": "髄化",
+        "reading": "ずいか",
+        "meaning_id": "proses / perubahan marrow"
+      }
+    ]
   },
   {
     "id": "kj-n1-0669",
@@ -41499,7 +43158,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 日 (Matahari / Hari) melambangkan konsep 'advance'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "晋",
+        "reading": "すす",
+        "meaning_id": "advance"
+      },
+      {
+        "word": "晋的",
+        "reading": "しんてき",
+        "meaning_id": "bersifat advance"
+      },
+      {
+        "word": "晋化",
+        "reading": "しんか",
+        "meaning_id": "proses / perubahan advance"
+      }
+    ]
   },
   {
     "id": "kj-n1-0672",
@@ -41714,7 +43389,7 @@ window.nuggetKanjiN1 = [
       {
         "word": "飢える",
         "reading": "うえる",
-        "meaning_id": "me-starve"
+        "meaning_id": "starve"
       }
     ]
   },
@@ -41820,7 +43495,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Sick (疒) dan Weapon (疒) yang membentuk makna visual 'epidemic'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "疫",
+        "reading": "えき",
+        "meaning_id": "epidemic"
+      },
+      {
+        "word": "疫的",
+        "reading": "えきてき",
+        "meaning_id": "bersifat epidemic"
+      },
+      {
+        "word": "疫化",
+        "reading": "えきか",
+        "meaning_id": "proses / perubahan epidemic"
+      }
+    ]
   },
   {
     "id": "kj-n1-0678",
@@ -41867,7 +43558,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Rice Paddy (糸) dan Benang (糸) yang membentuk makna visual 'accumulate'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "累",
+        "reading": "るい",
+        "meaning_id": "accumulate"
+      },
+      {
+        "word": "累的",
+        "reading": "るいてき",
+        "meaning_id": "bersifat accumulate"
+      },
+      {
+        "word": "累化",
+        "reading": "るいか",
+        "meaning_id": "proses / perubahan accumulate"
+      }
+    ]
   },
   {
     "id": "kj-n1-0679",
@@ -42014,7 +43721,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 日 (Matahari / Hari) melambangkan konsep 'clear'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "晃",
+        "reading": "あきらか",
+        "meaning_id": "clear"
+      },
+      {
+        "word": "晃的",
+        "reading": "こうてき",
+        "meaning_id": "bersifat clear"
+      },
+      {
+        "word": "晃化",
+        "reading": "こうか",
+        "meaning_id": "proses / perubahan clear"
+      }
+    ]
   },
   {
     "id": "kj-n1-0682",
@@ -42064,7 +43787,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Sick (疒) dan Death Star (疒) dan Hati (心) yang membentuk makna visual 'healing'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "癒",
+        "reading": "い",
+        "meaning_id": "healing"
+      },
+      {
+        "word": "癒的",
+        "reading": "ゆてき",
+        "meaning_id": "bersifat healing"
+      },
+      {
+        "word": "癒化",
+        "reading": "ゆか",
+        "meaning_id": "proses / perubahan healing"
+      }
+    ]
   },
   {
     "id": "kj-n1-0683",
@@ -42216,7 +43955,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Sock (邑) dan Building (邑) yang membentuk makna visual 'enclosure'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "郭",
+        "reading": "くるわ",
+        "meaning_id": "enclosure"
+      },
+      {
+        "word": "郭的",
+        "reading": "かくてき",
+        "meaning_id": "bersifat enclosure"
+      },
+      {
+        "word": "郭化",
+        "reading": "かくか",
+        "meaning_id": "proses / perubahan enclosure"
+      }
+    ]
   },
   {
     "id": "kj-n1-0686",
@@ -42374,7 +44129,7 @@ window.nuggetKanjiN1 = [
       {
         "word": "吐く",
         "reading": "はく",
-        "meaning_id": "me-breathe"
+        "meaning_id": "bernapas"
       },
       {
         "word": "吐き気",
@@ -42477,7 +44232,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 鳥 (Burung) melambangkan konsep 'hawk'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "鷹",
+        "reading": "たか",
+        "meaning_id": "hawk"
+      },
+      {
+        "word": "鷹的",
+        "reading": "ようてき",
+        "meaning_id": "bersifat hawk"
+      },
+      {
+        "word": "鷹化",
+        "reading": "ようか",
+        "meaning_id": "proses / perubahan hawk"
+      }
+    ]
   },
   {
     "id": "kj-n1-0691",
@@ -42523,7 +44294,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Atap (宀) dan Garis Satu (一) dan Few (貝) dan Shellfish (貝) yang membentuk makna visual 'V.I.P.'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "賓",
+        "reading": "まろうど",
+        "meaning_id": "V.I.P."
+      },
+      {
+        "word": "賓的",
+        "reading": "ひんてき",
+        "meaning_id": "bersifat V.I.P."
+      },
+      {
+        "word": "賓化",
+        "reading": "ひんか",
+        "meaning_id": "proses / perubahan V.I.P."
+      }
+    ]
   },
   {
     "id": "kj-n1-0692",
@@ -42735,7 +44522,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Soul (心) dan Feeling (心) yang membentuk makna visual 'remorse'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "憾",
+        "reading": "うら",
+        "meaning_id": "remorse"
+      },
+      {
+        "word": "憾的",
+        "reading": "かんてき",
+        "meaning_id": "bersifat remorse"
+      },
+      {
+        "word": "憾化",
+        "reading": "かんか",
+        "meaning_id": "proses / perubahan remorse"
+      }
+    ]
   },
   {
     "id": "kj-n1-0696",
@@ -42777,7 +44580,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 田 (Sawah / Ladang padi) melambangkan konsep 'capital'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "畿",
+        "reading": "みやこ",
+        "meaning_id": "capital"
+      },
+      {
+        "word": "畿的",
+        "reading": "きてき",
+        "meaning_id": "bersifat capital"
+      },
+      {
+        "word": "畿化",
+        "reading": "きか",
+        "meaning_id": "proses / perubahan capital"
+      }
+    ]
   },
   {
     "id": "kj-n1-0697",
@@ -42820,7 +44639,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 犬 (Anjing) melambangkan konsep 'boar'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "猪",
+        "reading": "い",
+        "meaning_id": "boar"
+      },
+      {
+        "word": "猪的",
+        "reading": "ちょてき",
+        "meaning_id": "bersifat boar"
+      },
+      {
+        "word": "猪化",
+        "reading": "ちょか",
+        "meaning_id": "proses / perubahan boar"
+      }
+    ]
   },
   {
     "id": "kj-n1-0698",
@@ -42865,7 +44700,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 糸 (Benang / Sutra) melambangkan konsep 'besar'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "紘",
+        "reading": "おおづな",
+        "meaning_id": "besar"
+      },
+      {
+        "word": "紘的",
+        "reading": "こうてき",
+        "meaning_id": "bersifat besar"
+      },
+      {
+        "word": "紘化",
+        "reading": "こうか",
+        "meaning_id": "proses / perubahan besar"
+      }
+    ]
   },
   {
     "id": "kj-n1-0699",
@@ -42977,7 +44828,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Bow (弓) dan Gun (弓) dan Small (弓) yang membentuk makna visual 'all the more'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "弥",
+        "reading": "や",
+        "meaning_id": "all the more"
+      },
+      {
+        "word": "弥的",
+        "reading": "みてき",
+        "meaning_id": "bersifat all the more"
+      },
+      {
+        "word": "弥化",
+        "reading": "みか",
+        "meaning_id": "proses / perubahan all the more"
+      }
+    ]
   },
   {
     "id": "kj-n1-0701",
@@ -43257,7 +45124,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Canopy (广) dan Dirt (广) yang membentuk makna visual 'level'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "庄",
+        "reading": "しょう",
+        "meaning_id": "level"
+      },
+      {
+        "word": "庄的",
+        "reading": "しょうてき",
+        "meaning_id": "bersifat level"
+      },
+      {
+        "word": "庄化",
+        "reading": "しょうか",
+        "meaning_id": "proses / perubahan level"
+      }
+    ]
   },
   {
     "id": "kj-n1-0706",
@@ -43356,7 +45239,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 攴 (Ketukan / Memukul ringan) melambangkan konsep 'industri'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "敦",
+        "reading": "あつ",
+        "meaning_id": "industri"
+      },
+      {
+        "word": "敦的",
+        "reading": "とんてき",
+        "meaning_id": "bersifat industri"
+      },
+      {
+        "word": "敦化",
+        "reading": "とんか",
+        "meaning_id": "proses / perubahan industri"
+      }
+    ]
   },
   {
     "id": "kj-n1-0708",
@@ -43399,7 +45298,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Horse (馬) dan Odd (馬) yang membentuk makna visual 'equestrian'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "騎",
+        "reading": "き",
+        "meaning_id": "equestrian"
+      },
+      {
+        "word": "騎的",
+        "reading": "きてき",
+        "meaning_id": "bersifat equestrian"
+      },
+      {
+        "word": "騎化",
+        "reading": "きか",
+        "meaning_id": "proses / perubahan equestrian"
+      }
+    ]
   },
   {
     "id": "kj-n1-0709",
@@ -43570,7 +45485,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Blade (心) dan Hati (心) yang membentuk makna visual 'endure'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "忍",
+        "reading": "しの",
+        "meaning_id": "endure"
+      },
+      {
+        "word": "忍的",
+        "reading": "にんてき",
+        "meaning_id": "bersifat endure"
+      },
+      {
+        "word": "忍化",
+        "reading": "にんか",
+        "meaning_id": "proses / perubahan endure"
+      }
+    ]
   },
   {
     "id": "kj-n1-0712",
@@ -43623,7 +45554,7 @@ window.nuggetKanjiN1 = [
       {
         "word": "怠る",
         "reading": "おこたる",
-        "meaning_id": "me-neglect"
+        "meaning_id": "neglect"
       },
       {
         "word": "怠慢",
@@ -43810,7 +45741,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 示 (Altar persembahan / Menunjukkan) melambangkan konsep 'help'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "祐",
+        "reading": "たす",
+        "meaning_id": "help"
+      },
+      {
+        "word": "祐的",
+        "reading": "ゆうてき",
+        "meaning_id": "bersifat help"
+      },
+      {
+        "word": "祐化",
+        "reading": "ゆうか",
+        "meaning_id": "proses / perubahan help"
+      }
+    ]
   },
   {
     "id": "kj-n1-0716",
@@ -43850,7 +45797,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 鳥 (Burung) melambangkan konsep 'phoenix'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "鵬",
+        "reading": "おおとり",
+        "meaning_id": "phoenix"
+      },
+      {
+        "word": "鵬的",
+        "reading": "ほうてき",
+        "meaning_id": "bersifat phoenix"
+      },
+      {
+        "word": "鵬化",
+        "reading": "ほうか",
+        "meaning_id": "proses / perubahan phoenix"
+      }
+    ]
   },
   {
     "id": "kj-n1-0717",
@@ -44015,12 +45978,12 @@ window.nuggetKanjiN1 = [
       {
         "word": "凝る",
         "reading": "こごる",
-        "meaning_id": "me-congeal"
+        "meaning_id": "congeal"
       },
       {
         "word": "凝らす",
         "reading": "こごらす",
-        "meaning_id": "me-freeze"
+        "meaning_id": "membeku / membekukan"
       }
     ]
   },
@@ -44260,12 +46223,12 @@ window.nuggetKanjiN1 = [
       {
         "word": "跳ぶ",
         "reading": "とぶ",
-        "meaning_id": "me-jump"
+        "meaning_id": "jump"
       },
       {
         "word": "跳ねる",
         "reading": "はねる",
-        "meaning_id": "me-jump"
+        "meaning_id": "jump"
       }
     ]
   },
@@ -44312,7 +46275,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Cage (匚) dan Axe (匚) yang membentuk makna visual 'artisan'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "匠",
+        "reading": "たくみ",
+        "meaning_id": "artisan"
+      },
+      {
+        "word": "匠的",
+        "reading": "しょうてき",
+        "meaning_id": "bersifat artisan"
+      },
+      {
+        "word": "匠化",
+        "reading": "しょうか",
+        "meaning_id": "proses / perubahan artisan"
+      }
+    ]
   },
   {
     "id": "kj-n1-0725",
@@ -44374,7 +46353,7 @@ window.nuggetKanjiN1 = [
       {
         "word": "垂れる",
         "reading": "たれる",
-        "meaning_id": "me-hang"
+        "meaning_id": "hang"
       }
     ]
   },
@@ -44499,12 +46478,12 @@ window.nuggetKanjiN1 = [
       {
         "word": "澄む",
         "reading": "すむ",
-        "meaning_id": "me-clear"
+        "meaning_id": "clear"
       },
       {
         "word": "澄ます",
         "reading": "すます",
-        "meaning_id": "me-clear"
+        "meaning_id": "clear"
       }
     ]
   },
@@ -44563,7 +46542,7 @@ window.nuggetKanjiN1 = [
       {
         "word": "縫う",
         "reading": "ぬう",
-        "meaning_id": "me-sew"
+        "meaning_id": "menjahit"
       }
     ]
   },
@@ -44721,7 +46700,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Canopy (口) dan Brush (口) dan Mulut (口) yang membentuk makna visual 'T'ang'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "唐",
+        "reading": "から",
+        "meaning_id": "T'ang"
+      },
+      {
+        "word": "唐的",
+        "reading": "とうてき",
+        "meaning_id": "bersifat T'ang"
+      },
+      {
+        "word": "唐化",
+        "reading": "とうか",
+        "meaning_id": "proses / perubahan T'ang"
+      }
+    ]
   },
   {
     "id": "kj-n1-0732",
@@ -44773,7 +46768,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 二 (Dua) melambangkan konsep 'span'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "亘",
+        "reading": "わた",
+        "meaning_id": "span"
+      },
+      {
+        "word": "亘的",
+        "reading": "こうてき",
+        "meaning_id": "bersifat span"
+      },
+      {
+        "word": "亘化",
+        "reading": "こうか",
+        "meaning_id": "proses / perubahan span"
+      }
+    ]
   },
   {
     "id": "kj-n1-0733",
@@ -44820,7 +46831,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Bentuk piktograf visual Catapult (口) yang melambangkan konsep 'give'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "呉",
+        "reading": "く",
+        "meaning_id": "give"
+      },
+      {
+        "word": "呉的",
+        "reading": "ごてき",
+        "meaning_id": "bersifat give"
+      },
+      {
+        "word": "呉化",
+        "reading": "ごか",
+        "meaning_id": "proses / perubahan give"
+      }
+    ]
   },
   {
     "id": "kj-n1-0734",
@@ -44976,7 +47003,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Wanita (女) dan Football (女) yang membentuk makna visual 'beautiful woman'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "媛",
+        "reading": "ひめ",
+        "meaning_id": "beautiful woman"
+      },
+      {
+        "word": "媛的",
+        "reading": "えんてき",
+        "meaning_id": "bersifat beautiful woman"
+      },
+      {
+        "word": "媛化",
+        "reading": "えんか",
+        "meaning_id": "proses / perubahan beautiful woman"
+      }
+    ]
   },
   {
     "id": "kj-n1-0737",
@@ -45083,7 +47126,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Together (心) dan Small (心) dan Drop (心) yang membentuk makna visual 'respect'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "恭",
+        "reading": "うやうや",
+        "meaning_id": "respect"
+      },
+      {
+        "word": "恭的",
+        "reading": "きょうてき",
+        "meaning_id": "bersifat respect"
+      },
+      {
+        "word": "恭化",
+        "reading": "きょうか",
+        "meaning_id": "proses / perubahan respect"
+      }
+    ]
   },
   {
     "id": "kj-n1-0739",
@@ -45359,7 +47418,18 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 竹 (Bambu) melambangkan konsep 'bamboo grass'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "笹",
+        "reading": "ささ",
+        "meaning_id": "bamboo grass"
+      },
+      {
+        "word": "笹物",
+        "reading": "ささもの",
+        "meaning_id": "benda / hal terkait bamboo grass"
+      }
+    ]
   },
   {
     "id": "kj-n1-0744",
@@ -45450,7 +47520,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 木 (Pohon / Kayu) melambangkan konsep 'persimmon'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "柿",
+        "reading": "かき",
+        "meaning_id": "persimmon"
+      },
+      {
+        "word": "柿的",
+        "reading": "してき",
+        "meaning_id": "bersifat persimmon"
+      },
+      {
+        "word": "柿化",
+        "reading": "しか",
+        "meaning_id": "proses / perubahan persimmon"
+      }
+    ]
   },
   {
     "id": "kj-n1-0746",
@@ -45651,7 +47737,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Penguin (廾) dan Twenty (廾) yang membentuk makna visual 'abuse'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "弊",
+        "reading": "へい",
+        "meaning_id": "abuse"
+      },
+      {
+        "word": "弊的",
+        "reading": "へいてき",
+        "meaning_id": "bersifat abuse"
+      },
+      {
+        "word": "弊化",
+        "reading": "へいか",
+        "meaning_id": "proses / perubahan abuse"
+      }
+    ]
   },
   {
     "id": "kj-n1-0750",
@@ -45698,7 +47800,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Wanita (女) dan Oneself (女) yang membentuk makna visual 'ratu'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "妃",
+        "reading": "きさき",
+        "meaning_id": "ratu"
+      },
+      {
+        "word": "妃的",
+        "reading": "ひてき",
+        "meaning_id": "bersifat ratu"
+      },
+      {
+        "word": "妃化",
+        "reading": "ひか",
+        "meaning_id": "proses / perubahan ratu"
+      }
+    ]
   },
   {
     "id": "kj-n1-0751",
@@ -45790,7 +47908,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Eat (食) dan Ego (食) yang membentuk makna visual 'starve'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "餓",
+        "reading": "う",
+        "meaning_id": "starve"
+      },
+      {
+        "word": "餓的",
+        "reading": "がてき",
+        "meaning_id": "bersifat starve"
+      },
+      {
+        "word": "餓化",
+        "reading": "がか",
+        "meaning_id": "proses / perubahan starve"
+      }
+    ]
   },
   {
     "id": "kj-n1-0753",
@@ -45828,7 +47962,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 肉 (Daging) melambangkan konsep 'kidney'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "腎",
+        "reading": "じん",
+        "meaning_id": "kidney"
+      },
+      {
+        "word": "腎的",
+        "reading": "じんてき",
+        "meaning_id": "bersifat kidney"
+      },
+      {
+        "word": "腎化",
+        "reading": "じんか",
+        "meaning_id": "proses / perubahan kidney"
+      }
+    ]
   },
   {
     "id": "kj-n1-0754",
@@ -46004,7 +48154,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Bentuk piktograf visual Lovely (鹿) yang melambangkan konsep 'lovely'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "麗",
+        "reading": "うるわ",
+        "meaning_id": "lovely"
+      },
+      {
+        "word": "麗的",
+        "reading": "れいてき",
+        "meaning_id": "bersifat lovely"
+      },
+      {
+        "word": "麗化",
+        "reading": "れいか",
+        "meaning_id": "proses / perubahan lovely"
+      }
+    ]
   },
   {
     "id": "kj-n1-0757",
@@ -46051,7 +48217,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Benang (糸) dan Frostbite (糸) yang membentuk makna visual 'design'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "綾",
+        "reading": "あや",
+        "meaning_id": "design"
+      },
+      {
+        "word": "綾的",
+        "reading": "りんてき",
+        "meaning_id": "bersifat design"
+      },
+      {
+        "word": "綾化",
+        "reading": "りんか",
+        "meaning_id": "proses / perubahan design"
+      }
+    ]
   },
   {
     "id": "kj-n1-0758",
@@ -46178,7 +48360,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Soul (心) dan Guard (心) yang membentuk makna visual 'ecstasy'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "悦",
+        "reading": "よろこ",
+        "meaning_id": "ecstasy"
+      },
+      {
+        "word": "悦的",
+        "reading": "えつてき",
+        "meaning_id": "bersifat ecstasy"
+      },
+      {
+        "word": "悦化",
+        "reading": "えつか",
+        "meaning_id": "proses / perubahan ecstasy"
+      }
+    ]
   },
   {
     "id": "kj-n1-0760",
@@ -46288,7 +48486,7 @@ window.nuggetKanjiN1 = [
       {
         "word": "縛る",
         "reading": "しばる",
-        "meaning_id": "me-tie"
+        "meaning_id": "mengikat"
       },
       {
         "word": "束縛",
@@ -46637,7 +48835,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 殳 (Gada pemukul) melambangkan konsep 'kuat'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "毅",
+        "reading": "つよ",
+        "meaning_id": "kuat"
+      },
+      {
+        "word": "毅的",
+        "reading": "きてき",
+        "meaning_id": "bersifat kuat"
+      },
+      {
+        "word": "毅化",
+        "reading": "きか",
+        "meaning_id": "proses / perubahan kuat"
+      }
+    ]
   },
   {
     "id": "kj-n1-0768",
@@ -46682,7 +48896,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Car (車) dan Atap (宀) dan Life (車) dan Mulut (口) yang membentuk makna visual 'control'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "轄",
+        "reading": "くさび",
+        "meaning_id": "control"
+      },
+      {
+        "word": "轄的",
+        "reading": "かつてき",
+        "meaning_id": "bersifat control"
+      },
+      {
+        "word": "轄化",
+        "reading": "かつか",
+        "meaning_id": "proses / perubahan control"
+      }
+    ]
   },
   {
     "id": "kj-n1-0769",
@@ -46781,7 +49011,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Bow (弓) dan Mysterious (弓) yang membentuk makna visual 'bowstring'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "弦",
+        "reading": "つる",
+        "meaning_id": "bowstring"
+      },
+      {
+        "word": "弦的",
+        "reading": "げんてき",
+        "meaning_id": "bersifat bowstring"
+      },
+      {
+        "word": "弦化",
+        "reading": "げんか",
+        "meaning_id": "proses / perubahan bowstring"
+      }
+    ]
   },
   {
     "id": "kj-n1-0771",
@@ -46833,7 +49079,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 禾 (Bulir padi / Gandum) melambangkan konsep 'harvest'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "稔",
+        "reading": "みの",
+        "meaning_id": "harvest"
+      },
+      {
+        "word": "稔的",
+        "reading": "ねんてき",
+        "meaning_id": "bersifat harvest"
+      },
+      {
+        "word": "稔化",
+        "reading": "ねんか",
+        "meaning_id": "proses / perubahan harvest"
+      }
+    ]
   },
   {
     "id": "kj-n1-0772",
@@ -46935,7 +49197,7 @@ window.nuggetKanjiN1 = [
       {
         "word": "炊く",
         "reading": "たく",
-        "meaning_id": "me-boil"
+        "meaning_id": "merebus"
       }
     ]
   },
@@ -47043,7 +49305,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Fingers (手) dan Ear (手) dan Explosion (手) yang membentuk makna visual 'vicarious'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "摂",
+        "reading": "おさ",
+        "meaning_id": "vicarious"
+      },
+      {
+        "word": "摂的",
+        "reading": "せつてき",
+        "meaning_id": "bersifat vicarious"
+      },
+      {
+        "word": "摂化",
+        "reading": "せつか",
+        "meaning_id": "proses / perubahan vicarious"
+      }
+    ]
   },
   {
     "id": "kj-n1-0776",
@@ -47197,7 +49475,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Pohon (木) dan Omen (木) yang membentuk makna visual 'peach'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "桃",
+        "reading": "もも",
+        "meaning_id": "peach"
+      },
+      {
+        "word": "桃的",
+        "reading": "とうてき",
+        "meaning_id": "bersifat peach"
+      },
+      {
+        "word": "桃化",
+        "reading": "とうか",
+        "meaning_id": "proses / perubahan peach"
+      }
+    ]
   },
   {
     "id": "kj-n1-0779",
@@ -47246,7 +49540,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Animal (犬) dan Protect (犬) yang membentuk makna visual 'hunt'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "狩",
+        "reading": "か",
+        "meaning_id": "hunt"
+      },
+      {
+        "word": "狩的",
+        "reading": "しゅてき",
+        "meaning_id": "bersifat hunt"
+      },
+      {
+        "word": "狩化",
+        "reading": "しゅか",
+        "meaning_id": "proses / perubahan hunt"
+      }
+    ]
   },
   {
     "id": "kj-n1-0780",
@@ -47300,7 +49610,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Slide (木) dan Jet (木) yang membentuk makna visual 'vermilion'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "朱",
+        "reading": "あけ",
+        "meaning_id": "vermilion"
+      },
+      {
+        "word": "朱的",
+        "reading": "しゅてき",
+        "meaning_id": "bersifat vermilion"
+      },
+      {
+        "word": "朱化",
+        "reading": "しゅか",
+        "meaning_id": "proses / perubahan vermilion"
+      }
+    ]
   },
   {
     "id": "kj-n1-0781",
@@ -47560,7 +49886,7 @@ window.nuggetKanjiN1 = [
       {
         "word": "鍛える",
         "reading": "きたえる",
-        "meaning_id": "me-forge"
+        "meaning_id": "forge"
       }
     ]
   },
@@ -47781,7 +50107,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Animal (犬) dan Horns (犬) dan Alcohol (犬) yang membentuk makna visual 'furthermore'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "猶",
+        "reading": "なお",
+        "meaning_id": "furthermore"
+      },
+      {
+        "word": "猶的",
+        "reading": "ゆうてき",
+        "meaning_id": "bersifat furthermore"
+      },
+      {
+        "word": "猶化",
+        "reading": "ゆうか",
+        "meaning_id": "proses / perubahan furthermore"
+      }
+    ]
   },
   {
     "id": "kj-n1-0790",
@@ -47886,7 +50228,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Direction (方) dan Gun (方) dan Coat Rack (方) yang membentuk makna visual 'rotation'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "旋",
+        "reading": "め",
+        "meaning_id": "rotation"
+      },
+      {
+        "word": "旋的",
+        "reading": "せんてき",
+        "meaning_id": "bersifat rotation"
+      },
+      {
+        "word": "旋化",
+        "reading": "せんか",
+        "meaning_id": "proses / perubahan rotation"
+      }
+    ]
   },
   {
     "id": "kj-n1-0792",
@@ -48098,7 +50456,7 @@ window.nuggetKanjiN1 = [
       {
         "word": "扇ぐ",
         "reading": "あおぐ",
-        "meaning_id": "me-fan"
+        "meaning_id": "mengipasi"
       },
       {
         "word": "扇子",
@@ -48216,7 +50574,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Pohon (木) dan Garis Satu (一) dan Music (木) dan Matahari (日) yang membentuk makna visual 'vat'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "槽",
+        "reading": "ふね",
+        "meaning_id": "vat"
+      },
+      {
+        "word": "槽的",
+        "reading": "そうてき",
+        "meaning_id": "bersifat vat"
+      },
+      {
+        "word": "槽化",
+        "reading": "そうか",
+        "meaning_id": "proses / perubahan vat"
+      }
+    ]
   },
   {
     "id": "kj-n1-0798",
@@ -48264,7 +50638,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Horns (心) dan Garis Satu (一) dan Poop (心) dan Hati (心) yang membentuk makna visual 'mercy'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "慈",
+        "reading": "いつく",
+        "meaning_id": "mercy"
+      },
+      {
+        "word": "慈的",
+        "reading": "じてき",
+        "meaning_id": "bersifat mercy"
+      },
+      {
+        "word": "慈化",
+        "reading": "じか",
+        "meaning_id": "proses / perubahan mercy"
+      }
+    ]
   },
   {
     "id": "kj-n1-0799",
@@ -48306,7 +50696,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 木 (Pohon / Kayu) melambangkan konsep 'willow'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "楊",
+        "reading": "やなぎ",
+        "meaning_id": "willow"
+      },
+      {
+        "word": "楊的",
+        "reading": "ようてき",
+        "meaning_id": "bersifat willow"
+      },
+      {
+        "word": "楊化",
+        "reading": "ようか",
+        "meaning_id": "proses / perubahan willow"
+      }
+    ]
   },
   {
     "id": "kj-n1-0800",
@@ -48358,7 +50764,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Orang (人) dan Drunkard (人) yang membentuk makna visual 'fell'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "伐",
+        "reading": "き",
+        "meaning_id": "fell"
+      },
+      {
+        "word": "伐的",
+        "reading": "ばつてき",
+        "meaning_id": "bersifat fell"
+      },
+      {
+        "word": "伐化",
+        "reading": "ばつか",
+        "meaning_id": "proses / perubahan fell"
+      }
+    ]
   },
   {
     "id": "kj-n1-0801",
@@ -48409,7 +50831,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Horse (馬) dan Spider (馬) yang membentuk makna visual 'a good horse'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "駿",
+        "reading": "すぐ",
+        "meaning_id": "a good horse"
+      },
+      {
+        "word": "駿的",
+        "reading": "しゅんてき",
+        "meaning_id": "bersifat a good horse"
+      },
+      {
+        "word": "駿化",
+        "reading": "しゅんか",
+        "meaning_id": "proses / perubahan a good horse"
+      }
+    ]
   },
   {
     "id": "kj-n1-0802",
@@ -48464,7 +50902,7 @@ window.nuggetKanjiN1 = [
       {
         "word": "漬ける",
         "reading": "つける",
-        "meaning_id": "me-soak"
+        "meaning_id": "soak"
       }
     ]
   },
@@ -48513,7 +50951,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Benang (糸) dan Vines (糸) yang membentuk makna visual 'twist'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "糾",
+        "reading": "ただ",
+        "meaning_id": "twist"
+      },
+      {
+        "word": "糾的",
+        "reading": "きゅうてき",
+        "meaning_id": "bersifat twist"
+      },
+      {
+        "word": "糾化",
+        "reading": "きゅうか",
+        "meaning_id": "proses / perubahan twist"
+      }
+    ]
   },
   {
     "id": "kj-n1-0804",
@@ -48567,7 +51021,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Lid (亠) dan Mulut (口) dan Forehead (亠) dan Legs (亠) yang membentuk makna visual 'clear'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "亮",
+        "reading": "あきらか",
+        "meaning_id": "clear"
+      },
+      {
+        "word": "亮的",
+        "reading": "りょうてき",
+        "meaning_id": "bersifat clear"
+      },
+      {
+        "word": "亮化",
+        "reading": "りょうか",
+        "meaning_id": "proses / perubahan clear"
+      }
+    ]
   },
   {
     "id": "kj-n1-0805",
@@ -48610,7 +51080,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Dirt (土) dan Cross (土) dan Flowers (土) dan Shellfish (土) yang membentuk makna visual 'tomb'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "墳",
+        "reading": "ふん",
+        "meaning_id": "tomb"
+      },
+      {
+        "word": "墳的",
+        "reading": "ふんてき",
+        "meaning_id": "bersifat tomb"
+      },
+      {
+        "word": "墳化",
+        "reading": "ふんか",
+        "meaning_id": "proses / perubahan tomb"
+      }
+    ]
   },
   {
     "id": "kj-n1-0806",
@@ -48653,7 +51139,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Dirt (土) dan Peace (土) yang membentuk makna visual 'two-mat area'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "坪",
+        "reading": "つぼ",
+        "meaning_id": "two-mat area"
+      },
+      {
+        "word": "坪的",
+        "reading": "へいてき",
+        "meaning_id": "bersifat two-mat area"
+      },
+      {
+        "word": "坪化",
+        "reading": "へいか",
+        "meaning_id": "proses / perubahan two-mat area"
+      }
+    ]
   },
   {
     "id": "kj-n1-0807",
@@ -48745,7 +51247,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 心 (Hati / Pikiran / Perasaan) melambangkan konsep 'disconcerted'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "慌",
+        "reading": "あわ",
+        "meaning_id": "disconcerted"
+      },
+      {
+        "word": "慌的",
+        "reading": "こうてき",
+        "meaning_id": "bersifat disconcerted"
+      },
+      {
+        "word": "慌化",
+        "reading": "こうか",
+        "meaning_id": "proses / perubahan disconcerted"
+      }
+    ]
   },
   {
     "id": "kj-n1-0809",
@@ -48835,7 +51353,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 木 (Pohon / Kayu) melambangkan konsep 'camellia'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "椿",
+        "reading": "つばき",
+        "meaning_id": "camellia"
+      },
+      {
+        "word": "椿的",
+        "reading": "ちんてき",
+        "meaning_id": "bersifat camellia"
+      },
+      {
+        "word": "椿化",
+        "reading": "ちんか",
+        "meaning_id": "proses / perubahan camellia"
+      }
+    ]
   },
   {
     "id": "kj-n1-0811",
@@ -48935,7 +51469,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Net (网) dan Benang (糸) dan Turkey (网) yang membentuk makna visual 'gauze'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "羅",
+        "reading": "うすもの",
+        "meaning_id": "gauze"
+      },
+      {
+        "word": "羅的",
+        "reading": "らてき",
+        "meaning_id": "bersifat gauze"
+      },
+      {
+        "word": "羅化",
+        "reading": "らか",
+        "meaning_id": "proses / perubahan gauze"
+      }
+    ]
   },
   {
     "id": "kj-n1-0813",
@@ -49031,7 +51581,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Orang (人) dan Spring (人) dan Dry (人) yang membentuk makna visual 'stipend'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "俸",
+        "reading": "ほう",
+        "meaning_id": "stipend"
+      },
+      {
+        "word": "俸的",
+        "reading": "ほうてき",
+        "meaning_id": "bersifat stipend"
+      },
+      {
+        "word": "俸化",
+        "reading": "ほうか",
+        "meaning_id": "proses / perubahan stipend"
+      }
+    ]
   },
   {
     "id": "kj-n1-0815",
@@ -49073,7 +51639,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 厂 (Tebing curam) melambangkan konsep 'rin'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "厘",
+        "reading": "りん",
+        "meaning_id": "rin"
+      },
+      {
+        "word": "厘的",
+        "reading": "りんてき",
+        "meaning_id": "bersifat rin"
+      },
+      {
+        "word": "厘化",
+        "reading": "りんか",
+        "meaning_id": "proses / perubahan rin"
+      }
+    ]
   },
   {
     "id": "kj-n1-0816",
@@ -49178,7 +51760,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 土 (Tanah / Bumi) melambangkan konsep 'square jewel'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "圭",
+        "reading": "けい",
+        "meaning_id": "square jewel"
+      },
+      {
+        "word": "圭的",
+        "reading": "けいてき",
+        "meaning_id": "bersifat square jewel"
+      },
+      {
+        "word": "圭化",
+        "reading": "けいか",
+        "meaning_id": "proses / perubahan square jewel"
+      }
+    ]
   },
   {
     "id": "kj-n1-0818",
@@ -49221,7 +51819,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Alcohol (酉) dan Nurse (酉) yang membentuk makna visual 'brew'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "醸",
+        "reading": "かも",
+        "meaning_id": "brew"
+      },
+      {
+        "word": "醸的",
+        "reading": "じょうてき",
+        "meaning_id": "bersifat brew"
+      },
+      {
+        "word": "醸化",
+        "reading": "じょうか",
+        "meaning_id": "proses / perubahan brew"
+      }
+    ]
   },
   {
     "id": "kj-n1-0819",
@@ -49316,7 +51930,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Bow (弓) dan Stick (弓) yang membentuk makna visual 'condolences'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "弔",
+        "reading": "とむら",
+        "meaning_id": "condolences"
+      },
+      {
+        "word": "弔的",
+        "reading": "ちょうてき",
+        "meaning_id": "bersifat condolences"
+      },
+      {
+        "word": "弔化",
+        "reading": "ちょうか",
+        "meaning_id": "proses / perubahan condolences"
+      }
+    ]
   },
   {
     "id": "kj-n1-0821",
@@ -49472,7 +52102,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Flag (尸) dan Spoon (尸) yang membentuk makna visual 'nun'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "尼",
+        "reading": "あま",
+        "meaning_id": "nun"
+      },
+      {
+        "word": "尼的",
+        "reading": "にてき",
+        "meaning_id": "bersifat nun"
+      },
+      {
+        "word": "尼化",
+        "reading": "にか",
+        "meaning_id": "proses / perubahan nun"
+      }
+    ]
   },
   {
     "id": "kj-n1-0824",
@@ -49634,7 +52280,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 艸 (Rumput / Tumbuhan herba) melambangkan konsep 'send forth fragrance'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "薫",
+        "reading": "かお",
+        "meaning_id": "send forth fragrance"
+      },
+      {
+        "word": "薫的",
+        "reading": "くんてき",
+        "meaning_id": "bersifat send forth fragrance"
+      },
+      {
+        "word": "薫化",
+        "reading": "くんか",
+        "meaning_id": "proses / perubahan send forth fragrance"
+      }
+    ]
   },
   {
     "id": "kj-n1-0827",
@@ -49683,7 +52345,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Animal (犬) dan Grass (犬) dan Task (犬) yang membentuk makna visual 'game-hunting'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "猟",
+        "reading": "かり",
+        "meaning_id": "game-hunting"
+      },
+      {
+        "word": "猟的",
+        "reading": "りょうてき",
+        "meaning_id": "bersifat game-hunting"
+      },
+      {
+        "word": "猟化",
+        "reading": "りょうか",
+        "meaning_id": "proses / perubahan game-hunting"
+      }
+    ]
   },
   {
     "id": "kj-n1-0828",
@@ -49781,7 +52459,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Samurai (欠) dan Jackhammer (欠) dan Lack (欠) yang membentuk makna visual 'goodwill'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "款",
+        "reading": "かん",
+        "meaning_id": "goodwill"
+      },
+      {
+        "word": "款的",
+        "reading": "かんてき",
+        "meaning_id": "bersifat goodwill"
+      },
+      {
+        "word": "款化",
+        "reading": "かんか",
+        "meaning_id": "proses / perubahan goodwill"
+      }
+    ]
   },
   {
     "id": "kj-n1-0830",
@@ -49872,7 +52566,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Orang (人) dan Toe (人) dan Shellfish (人) yang membentuk makna visual 'spy'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "偵",
+        "reading": "てい",
+        "meaning_id": "spy"
+      },
+      {
+        "word": "偵的",
+        "reading": "ていてき",
+        "meaning_id": "bersifat spy"
+      },
+      {
+        "word": "偵化",
+        "reading": "ていか",
+        "meaning_id": "proses / perubahan spy"
+      }
+    ]
   },
   {
     "id": "kj-n1-0832",
@@ -49915,7 +52625,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Mulut (口) dan Matahari (日) dan Prison (口) dan Spoon (口) yang membentuk makna visual 'hoarse'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "喝",
+        "reading": "かつ",
+        "meaning_id": "hoarse"
+      },
+      {
+        "word": "喝的",
+        "reading": "かつてき",
+        "meaning_id": "bersifat hoarse"
+      },
+      {
+        "word": "喝化",
+        "reading": "かつか",
+        "meaning_id": "proses / perubahan hoarse"
+      }
+    ]
   },
   {
     "id": "kj-n1-0833",
@@ -50020,7 +52746,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Bulan (月) dan Machine (肉) yang membentuk makna visual 'womb'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "胎",
+        "reading": "たい",
+        "meaning_id": "womb"
+      },
+      {
+        "word": "胎的",
+        "reading": "たいてき",
+        "meaning_id": "bersifat womb"
+      },
+      {
+        "word": "胎化",
+        "reading": "たいか",
+        "meaning_id": "proses / perubahan womb"
+      }
+    ]
   },
   {
     "id": "kj-n1-0835",
@@ -50059,7 +52801,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Alcohol (酉) dan Teacher (酉) yang membentuk makna visual 'fermentation'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "酵",
+        "reading": "こう",
+        "meaning_id": "fermentation"
+      },
+      {
+        "word": "酵的",
+        "reading": "こうてき",
+        "meaning_id": "bersifat fermentation"
+      },
+      {
+        "word": "酵化",
+        "reading": "こうか",
+        "meaning_id": "proses / perubahan fermentation"
+      }
+    ]
   },
   {
     "id": "kj-n1-0836",
@@ -50213,7 +52971,7 @@ window.nuggetKanjiN1 = [
       {
         "word": "遮る",
         "reading": "さえぎる",
-        "meaning_id": "me-interrupt"
+        "meaning_id": "interrupt"
       }
     ]
   },
@@ -50306,7 +53064,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Stone (石) dan Trash (石) dan Sungai (川) yang membentuk makna visual 'sulphur'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "硫",
+        "reading": "りゅう",
+        "meaning_id": "sulphur"
+      },
+      {
+        "word": "硫的",
+        "reading": "りゅうてき",
+        "meaning_id": "bersifat sulphur"
+      },
+      {
+        "word": "硫化",
+        "reading": "りゅうか",
+        "meaning_id": "proses / perubahan sulphur"
+      }
+    ]
   },
   {
     "id": "kj-n1-0841",
@@ -50349,7 +53123,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Red (赤) dan Winter (赤) yang membentuk makna visual 'pardon'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "赦",
+        "reading": "ゆる",
+        "meaning_id": "pardon"
+      },
+      {
+        "word": "赦的",
+        "reading": "しゃてき",
+        "meaning_id": "bersifat pardon"
+      },
+      {
+        "word": "赦化",
+        "reading": "しゃか",
+        "meaning_id": "proses / perubahan pardon"
+      }
+    ]
   },
   {
     "id": "kj-n1-0842",
@@ -50397,7 +53187,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 手 (Tangan) melambangkan konsep 'crush'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "挫",
+        "reading": "くじ",
+        "meaning_id": "crush"
+      },
+      {
+        "word": "挫的",
+        "reading": "ざてき",
+        "meaning_id": "bersifat crush"
+      },
+      {
+        "word": "挫化",
+        "reading": "ざか",
+        "meaning_id": "proses / perubahan crush"
+      }
+    ]
   },
   {
     "id": "kj-n1-0843",
@@ -50448,7 +53254,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Hole (穴) dan Seven (穴) dan Pedang (刀) yang membentuk makna visual 'stealth'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "窃",
+        "reading": "ぬす",
+        "meaning_id": "stealth"
+      },
+      {
+        "word": "窃的",
+        "reading": "せつてき",
+        "meaning_id": "bersifat stealth"
+      },
+      {
+        "word": "窃化",
+        "reading": "せつか",
+        "meaning_id": "proses / perubahan stealth"
+      }
+    ]
   },
   {
     "id": "kj-n1-0844",
@@ -50549,7 +53371,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari King (玉) dan Gunung (山) dan Rake (玉) yang membentuk makna visual 'congratulations'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "瑞",
+        "reading": "みず",
+        "meaning_id": "congratulations"
+      },
+      {
+        "word": "瑞的",
+        "reading": "ずいてき",
+        "meaning_id": "bersifat congratulations"
+      },
+      {
+        "word": "瑞化",
+        "reading": "ずいか",
+        "meaning_id": "proses / perubahan congratulations"
+      }
+    ]
   },
   {
     "id": "kj-n1-0846",
@@ -50597,7 +53435,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Bentuk piktograf visual Stool (又) yang melambangkan konsep 'or again'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "又",
+        "reading": "また",
+        "meaning_id": "or again"
+      },
+      {
+        "word": "又的",
+        "reading": "ゆうてき",
+        "meaning_id": "bersifat or again"
+      },
+      {
+        "word": "又化",
+        "reading": "ゆうか",
+        "meaning_id": "proses / perubahan or again"
+      }
+    ]
   },
   {
     "id": "kj-n1-0847",
@@ -50762,7 +53616,7 @@ window.nuggetKanjiN1 = [
       {
         "word": "恨む",
         "reading": "うらむ",
-        "meaning_id": "me-curse"
+        "meaning_id": "curse"
       }
     ]
   },
@@ -50966,7 +53820,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 人 (Orang / Manusia) melambangkan konsep 'lima'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "伍",
+        "reading": "いつつ",
+        "meaning_id": "lima"
+      },
+      {
+        "word": "伍的",
+        "reading": "ごてき",
+        "meaning_id": "bersifat lima"
+      },
+      {
+        "word": "伍化",
+        "reading": "ごか",
+        "meaning_id": "proses / perubahan lima"
+      }
+    ]
   },
   {
     "id": "kj-n1-0854",
@@ -51017,7 +53887,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Oneself (心) dan Hati (心) yang membentuk makna visual 'mourning'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "忌",
+        "reading": "い",
+        "meaning_id": "mourning"
+      },
+      {
+        "word": "忌的",
+        "reading": "きてき",
+        "meaning_id": "bersifat mourning"
+      },
+      {
+        "word": "忌化",
+        "reading": "きか",
+        "meaning_id": "proses / perubahan mourning"
+      }
+    ]
   },
   {
     "id": "kj-n1-0855",
@@ -51076,7 +53962,7 @@ window.nuggetKanjiN1 = [
       {
         "word": "濁る",
         "reading": "にごる",
-        "meaning_id": "me-become muddy"
+        "meaning_id": "become muddy"
       },
       {
         "word": "清濁",
@@ -51127,7 +54013,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Big (大) dan Cross (大) dan Twenty (大) yang membentuk makna visual 'run'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "奔",
+        "reading": "はし",
+        "meaning_id": "run"
+      },
+      {
+        "word": "奔的",
+        "reading": "ほんてき",
+        "meaning_id": "bersifat run"
+      },
+      {
+        "word": "奔化",
+        "reading": "ほんか",
+        "meaning_id": "proses / perubahan run"
+      }
+    ]
   },
   {
     "id": "kj-n1-0857",
@@ -51174,7 +54076,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Bentuk piktograf visual Ladle (斗) yang melambangkan konsep 'Big Dipper'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "斗",
+        "reading": "と",
+        "meaning_id": "Big Dipper"
+      },
+      {
+        "word": "斗的",
+        "reading": "とてき",
+        "meaning_id": "bersifat Big Dipper"
+      },
+      {
+        "word": "斗化",
+        "reading": "とか",
+        "meaning_id": "proses / perubahan Big Dipper"
+      }
+    ]
   },
   {
     "id": "kj-n1-0858",
@@ -51218,7 +54136,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 艸 (Rumput / Tumbuhan herba) melambangkan konsep 'orchid'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "蘭",
+        "reading": "らん",
+        "meaning_id": "orchid"
+      },
+      {
+        "word": "蘭的",
+        "reading": "らんてき",
+        "meaning_id": "bersifat orchid"
+      },
+      {
+        "word": "蘭化",
+        "reading": "らんか",
+        "meaning_id": "proses / perubahan orchid"
+      }
+    ]
   },
   {
     "id": "kj-n1-0859",
@@ -51307,7 +54241,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Triceratops (肉) dan Bulan (月) yang membentuk makna visual 'resemblance'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "肖",
+        "reading": "あやか",
+        "meaning_id": "resemblance"
+      },
+      {
+        "word": "肖的",
+        "reading": "しょうてき",
+        "meaning_id": "bersifat resemblance"
+      },
+      {
+        "word": "肖化",
+        "reading": "しょうか",
+        "meaning_id": "proses / perubahan resemblance"
+      }
+    ]
   },
   {
     "id": "kj-n1-0861",
@@ -51411,7 +54361,7 @@ window.nuggetKanjiN1 = [
       {
         "word": "朽ちる",
         "reading": "くちる",
-        "meaning_id": "me-rot"
+        "meaning_id": "rot"
       }
     ]
   },
@@ -51582,7 +54532,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 禾 (Bulir padi / Gandum) melambangkan konsep 'Qin dynasty'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "秦",
+        "reading": "はた",
+        "meaning_id": "Qin dynasty"
+      },
+      {
+        "word": "秦的",
+        "reading": "しんてき",
+        "meaning_id": "bersifat Qin dynasty"
+      },
+      {
+        "word": "秦化",
+        "reading": "しんか",
+        "meaning_id": "proses / perubahan Qin dynasty"
+      }
+    ]
   },
   {
     "id": "kj-n1-0866",
@@ -51627,7 +54593,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 艸 (Rumput / Tumbuhan herba) melambangkan konsep 'miscanthus reed'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "茅",
+        "reading": "かや",
+        "meaning_id": "miscanthus reed"
+      },
+      {
+        "word": "茅的",
+        "reading": "ぼうてき",
+        "meaning_id": "bersifat miscanthus reed"
+      },
+      {
+        "word": "茅化",
+        "reading": "ぼうか",
+        "meaning_id": "proses / perubahan miscanthus reed"
+      }
+    ]
   },
   {
     "id": "kj-n1-0867",
@@ -51669,7 +54651,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Flowers (艸) dan Tsunami (艸) dan Number (艸) yang membentuk makna visual 'clan'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "藩",
+        "reading": "はん",
+        "meaning_id": "clan"
+      },
+      {
+        "word": "藩的",
+        "reading": "はんてき",
+        "meaning_id": "bersifat clan"
+      },
+      {
+        "word": "藩化",
+        "reading": "はんか",
+        "meaning_id": "proses / perubahan clan"
+      }
+    ]
   },
   {
     "id": "kj-n1-0868",
@@ -51769,7 +54767,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Car (車) dan Wedding (車) yang membentuk makna visual 'help'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "輔",
+        "reading": "たす",
+        "meaning_id": "help"
+      },
+      {
+        "word": "輔的",
+        "reading": "ほてき",
+        "meaning_id": "bersifat help"
+      },
+      {
+        "word": "輔化",
+        "reading": "ほか",
+        "meaning_id": "proses / perubahan help"
+      }
+    ]
   },
   {
     "id": "kj-n1-0870",
@@ -51813,7 +54827,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Wanita (女) dan Sweet (女) dan Pohon (木) yang membentuk makna visual 'mediator'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "媒",
+        "reading": "なこうど",
+        "meaning_id": "mediator"
+      },
+      {
+        "word": "媒的",
+        "reading": "ばいてき",
+        "meaning_id": "bersifat mediator"
+      },
+      {
+        "word": "媒化",
+        "reading": "ばいか",
+        "meaning_id": "proses / perubahan mediator"
+      }
+    ]
   },
   {
     "id": "kj-n1-0871",
@@ -51960,7 +54990,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Mulut (口) dan Flag (口) dan Mantis (口) yang membentuk makna visual 'entrust'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "嘱",
+        "reading": "しょく",
+        "meaning_id": "entrust"
+      },
+      {
+        "word": "嘱的",
+        "reading": "しょくてき",
+        "meaning_id": "bersifat entrust"
+      },
+      {
+        "word": "嘱化",
+        "reading": "しょくか",
+        "meaning_id": "proses / perubahan entrust"
+      }
+    ]
   },
   {
     "id": "kj-n1-0874",
@@ -52052,7 +55098,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Scooter (辵) dan Fault (辵) yang membentuk makna visual 'transfer'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "迭",
+        "reading": "てつ",
+        "meaning_id": "transfer"
+      },
+      {
+        "word": "迭的",
+        "reading": "てつてき",
+        "meaning_id": "bersifat transfer"
+      },
+      {
+        "word": "迭化",
+        "reading": "てつか",
+        "meaning_id": "proses / perubahan transfer"
+      }
+    ]
   },
   {
     "id": "kj-n1-0876",
@@ -52105,7 +55167,7 @@ window.nuggetKanjiN1 = [
       {
         "word": "挿す",
         "reading": "さす",
-        "meaning_id": "me-insert"
+        "meaning_id": "insert"
       }
     ]
   },
@@ -52207,7 +55269,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Pohon (木) dan Turkey (木) yang membentuk makna visual 'chinquapin'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "椎",
+        "reading": "つち",
+        "meaning_id": "chinquapin"
+      },
+      {
+        "word": "椎的",
+        "reading": "ついてき",
+        "meaning_id": "bersifat chinquapin"
+      },
+      {
+        "word": "椎化",
+        "reading": "ついか",
+        "meaning_id": "proses / perubahan chinquapin"
+      }
+    ]
   },
   {
     "id": "kj-n1-0879",
@@ -52300,7 +55378,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Building (阜) dan Clown (阜) yang membentuk makna visual 'obeisance'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "陪",
+        "reading": "ばい",
+        "meaning_id": "obeisance"
+      },
+      {
+        "word": "陪的",
+        "reading": "ばいてき",
+        "meaning_id": "bersifat obeisance"
+      },
+      {
+        "word": "陪化",
+        "reading": "ばいか",
+        "meaning_id": "proses / perubahan obeisance"
+      }
+    ]
   },
   {
     "id": "kj-n1-0881",
@@ -52448,7 +55542,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 邑 (Kota / Desa) melambangkan konsep 'cultural progress'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "郁",
+        "reading": "いく",
+        "meaning_id": "cultural progress"
+      },
+      {
+        "word": "郁的",
+        "reading": "いくてき",
+        "meaning_id": "bersifat cultural progress"
+      },
+      {
+        "word": "郁化",
+        "reading": "いくか",
+        "meaning_id": "proses / perubahan cultural progress"
+      }
+    ]
   },
   {
     "id": "kj-n1-0884",
@@ -52554,7 +55664,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Tsunami (水) dan Above (水) dan Small (水) dan Stool (水) yang membentuk makna visual 'graceful'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "淑",
+        "reading": "しと",
+        "meaning_id": "graceful"
+      },
+      {
+        "word": "淑的",
+        "reading": "しゅくてき",
+        "meaning_id": "bersifat graceful"
+      },
+      {
+        "word": "淑化",
+        "reading": "しゅくか",
+        "meaning_id": "proses / perubahan graceful"
+      }
+    ]
   },
   {
     "id": "kj-n1-0886",
@@ -52596,7 +55722,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Towel (巾) dan Table (巾) dan Drop (巾) yang membentuk makna visual 'sail'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "帆",
+        "reading": "ほ",
+        "meaning_id": "sail"
+      },
+      {
+        "word": "帆的",
+        "reading": "はんてき",
+        "meaning_id": "bersifat sail"
+      },
+      {
+        "word": "帆化",
+        "reading": "はんか",
+        "meaning_id": "proses / perubahan sail"
+      }
+    ]
   },
   {
     "id": "kj-n1-0887",
@@ -52650,7 +55792,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Matahari (日) dan Gambler (日) yang membentuk makna visual 'daybreak'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "暁",
+        "reading": "あかつき",
+        "meaning_id": "daybreak"
+      },
+      {
+        "word": "暁的",
+        "reading": "ぎょうてき",
+        "meaning_id": "bersifat daybreak"
+      },
+      {
+        "word": "暁化",
+        "reading": "ぎょうか",
+        "meaning_id": "proses / perubahan daybreak"
+      }
+    ]
   },
   {
     "id": "kj-n1-0888",
@@ -52756,7 +55914,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 木 (Pohon / Kayu) melambangkan konsep 'camphor tree'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "楠",
+        "reading": "くす",
+        "meaning_id": "camphor tree"
+      },
+      {
+        "word": "楠的",
+        "reading": "なんてき",
+        "meaning_id": "bersifat camphor tree"
+      },
+      {
+        "word": "楠化",
+        "reading": "なんか",
+        "meaning_id": "proses / perubahan camphor tree"
+      }
+    ]
   },
   {
     "id": "kj-n1-0890",
@@ -52859,7 +56033,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 玉 (Giok / Permata berharga) melambangkan konsep 'sound of jewels'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "玲",
+        "reading": "れい",
+        "meaning_id": "sound of jewels"
+      },
+      {
+        "word": "玲的",
+        "reading": "れいてき",
+        "meaning_id": "bersifat sound of jewels"
+      },
+      {
+        "word": "玲化",
+        "reading": "れいか",
+        "meaning_id": "proses / perubahan sound of jewels"
+      }
+    ]
   },
   {
     "id": "kj-n1-0892",
@@ -53007,7 +56197,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Gladiator (手) dan Tangan (手) yang membentuk makna visual 'fist'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "拳",
+        "reading": "こぶし",
+        "meaning_id": "fist"
+      },
+      {
+        "word": "拳的",
+        "reading": "けんてき",
+        "meaning_id": "bersifat fist"
+      },
+      {
+        "word": "拳化",
+        "reading": "けんか",
+        "meaning_id": "proses / perubahan fist"
+      }
+    ]
   },
   {
     "id": "kj-n1-0895",
@@ -53053,7 +56259,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Sheep (羽) dan Feathers (羽) yang membentuk makna visual 'soar'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "翔",
+        "reading": "かけ",
+        "meaning_id": "soar"
+      },
+      {
+        "word": "翔的",
+        "reading": "しょうてき",
+        "meaning_id": "bersifat soar"
+      },
+      {
+        "word": "翔化",
+        "reading": "しょうか",
+        "meaning_id": "proses / perubahan soar"
+      }
+    ]
   },
   {
     "id": "kj-n1-0896",
@@ -53153,7 +56375,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Fingers (手) dan Exit (手) yang membentuk makna visual 'bungling'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "拙",
+        "reading": "つたな",
+        "meaning_id": "bungling"
+      },
+      {
+        "word": "拙的",
+        "reading": "せつてき",
+        "meaning_id": "bersifat bungling"
+      },
+      {
+        "word": "拙化",
+        "reading": "せつか",
+        "meaning_id": "proses / perubahan bungling"
+      }
+    ]
   },
   {
     "id": "kj-n1-0898",
@@ -53259,7 +56497,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Bentuk piktograf visual Shrimp (尸) yang melambangkan konsep 'shaku'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "尺",
+        "reading": "さし",
+        "meaning_id": "shaku"
+      },
+      {
+        "word": "尺的",
+        "reading": "しゃくてき",
+        "meaning_id": "bersifat shaku"
+      },
+      {
+        "word": "尺化",
+        "reading": "しゃくか",
+        "meaning_id": "proses / perubahan shaku"
+      }
+    ]
   },
   {
     "id": "kj-n1-0900",
@@ -53362,7 +56616,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Bamboo (竹) dan Horse (竹) yang membentuk makna visual 'fervent'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "篤",
+        "reading": "あつ",
+        "meaning_id": "fervent"
+      },
+      {
+        "word": "篤的",
+        "reading": "とくてき",
+        "meaning_id": "bersifat fervent"
+      },
+      {
+        "word": "篤化",
+        "reading": "とくか",
+        "meaning_id": "proses / perubahan fervent"
+      }
+    ]
   },
   {
     "id": "kj-n1-0902",
@@ -53409,7 +56679,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 聿 (Kuas tulis) melambangkan konsep 'permulaan / awal'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "肇",
+        "reading": "はじ",
+        "meaning_id": "permulaan / awal"
+      },
+      {
+        "word": "肇的",
+        "reading": "ちょうてき",
+        "meaning_id": "bersifat permulaan / awal"
+      },
+      {
+        "word": "肇化",
+        "reading": "ちょうか",
+        "meaning_id": "proses / perubahan permulaan / awal"
+      }
+    ]
   },
   {
     "id": "kj-n1-0903",
@@ -53460,7 +56746,7 @@ window.nuggetKanjiN1 = [
       {
         "word": "渇く",
         "reading": "かわく",
-        "meaning_id": "me-be thirsty"
+        "meaning_id": "menjadi / ada thirsty"
       }
     ]
   },
@@ -53674,7 +56960,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 亠 (Tutup kepala / Atap kecil) melambangkan konsep 'pass through'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "亨",
+        "reading": "とお",
+        "meaning_id": "pass through"
+      },
+      {
+        "word": "亨的",
+        "reading": "こうてき",
+        "meaning_id": "bersifat pass through"
+      },
+      {
+        "word": "亨化",
+        "reading": "こうか",
+        "meaning_id": "proses / perubahan pass through"
+      }
+    ]
   },
   {
     "id": "kj-n1-0908",
@@ -53729,7 +57031,7 @@ window.nuggetKanjiN1 = [
       {
         "word": "堪える",
         "reading": "こたえる",
-        "meaning_id": "me-bear"
+        "meaning_id": "bear"
       }
     ]
   },
@@ -53779,7 +57081,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Surplus (又) dan Stool (又) yang membentuk makna visual 'confer'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "叙",
+        "reading": "つい",
+        "meaning_id": "confer"
+      },
+      {
+        "word": "叙的",
+        "reading": "じょてき",
+        "meaning_id": "bersifat confer"
+      },
+      {
+        "word": "叙化",
+        "reading": "じょか",
+        "meaning_id": "proses / perubahan confer"
+      }
+    ]
   },
   {
     "id": "kj-n1-0910",
@@ -53926,7 +57244,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 辵 (Jalan raya / Bergerak maju) melambangkan konsep 'relay'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "逓",
+        "reading": "かわ",
+        "meaning_id": "relay"
+      },
+      {
+        "word": "逓的",
+        "reading": "ていてき",
+        "meaning_id": "bersifat relay"
+      },
+      {
+        "word": "逓化",
+        "reading": "ていか",
+        "meaning_id": "proses / perubahan relay"
+      }
+    ]
   },
   {
     "id": "kj-n1-0913",
@@ -53968,7 +57302,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 疒 (Penyakit / Sakit) melambangkan konsep 'mark'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "痕",
+        "reading": "あと",
+        "meaning_id": "mark"
+      },
+      {
+        "word": "痕的",
+        "reading": "こんてき",
+        "meaning_id": "bersifat mark"
+      },
+      {
+        "word": "痕化",
+        "reading": "こんか",
+        "meaning_id": "proses / perubahan mark"
+      }
+    ]
   },
   {
     "id": "kj-n1-0914",
@@ -54013,7 +57363,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 山 (Gunung) melambangkan konsep 'peak'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "嶺",
+        "reading": "みね",
+        "meaning_id": "peak"
+      },
+      {
+        "word": "嶺的",
+        "reading": "れいてき",
+        "meaning_id": "bersifat peak"
+      },
+      {
+        "word": "嶺化",
+        "reading": "れいか",
+        "meaning_id": "proses / perubahan peak"
+      }
+    ]
   },
   {
     "id": "kj-n1-0915",
@@ -54118,7 +57484,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 口 (Mulut / Bukaan) melambangkan konsep 'tinggi / mahal'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "喬",
+        "reading": "たか",
+        "meaning_id": "tinggi / mahal"
+      },
+      {
+        "word": "喬的",
+        "reading": "きょうてき",
+        "meaning_id": "bersifat tinggi / mahal"
+      },
+      {
+        "word": "喬化",
+        "reading": "きょうか",
+        "meaning_id": "proses / perubahan tinggi / mahal"
+      }
+    ]
   },
   {
     "id": "kj-n1-0917",
@@ -54164,7 +57546,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 女 (Wanita / Perempuan) melambangkan konsep 'attractive'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "妖",
+        "reading": "あや",
+        "meaning_id": "attractive"
+      },
+      {
+        "word": "妖的",
+        "reading": "ようてき",
+        "meaning_id": "bersifat attractive"
+      },
+      {
+        "word": "妖化",
+        "reading": "ようか",
+        "meaning_id": "proses / perubahan attractive"
+      }
+    ]
   },
   {
     "id": "kj-n1-0918",
@@ -54330,7 +57728,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Tsunami (水) dan Pohon (木) dan Hat (水) dan Air (水) yang membentuk makna visual 'lacquer'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "漆",
+        "reading": "うるし",
+        "meaning_id": "lacquer"
+      },
+      {
+        "word": "漆的",
+        "reading": "しつてき",
+        "meaning_id": "bersifat lacquer"
+      },
+      {
+        "word": "漆化",
+        "reading": "しつか",
+        "meaning_id": "proses / perubahan lacquer"
+      }
+    ]
   },
   {
     "id": "kj-n1-0921",
@@ -54544,7 +57958,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 宀 (Atap rumah) melambangkan konsep 'sign of the tiger'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "寅",
+        "reading": "とら",
+        "meaning_id": "sign of the tiger"
+      },
+      {
+        "word": "寅的",
+        "reading": "いんてき",
+        "meaning_id": "bersifat sign of the tiger"
+      },
+      {
+        "word": "寅化",
+        "reading": "いんか",
+        "meaning_id": "proses / perubahan sign of the tiger"
+      }
+    ]
   },
   {
     "id": "kj-n1-0925",
@@ -54587,7 +58017,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 手 (Tangan) melambangkan konsep 'catch'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "捉",
+        "reading": "とら",
+        "meaning_id": "catch"
+      },
+      {
+        "word": "捉的",
+        "reading": "そくてき",
+        "meaning_id": "bersifat catch"
+      },
+      {
+        "word": "捉化",
+        "reading": "そくか",
+        "meaning_id": "proses / perubahan catch"
+      }
+    ]
   },
   {
     "id": "kj-n1-0926",
@@ -54629,7 +58075,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Stone (石) dan Turkey (石) dan Boil (石) yang membentuk makna visual 'reef'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "礁",
+        "reading": "しょう",
+        "meaning_id": "reef"
+      },
+      {
+        "word": "礁的",
+        "reading": "しょうてき",
+        "meaning_id": "bersifat reef"
+      },
+      {
+        "word": "礁化",
+        "reading": "しょうか",
+        "meaning_id": "proses / perubahan reef"
+      }
+    ]
   },
   {
     "id": "kj-n1-0927",
@@ -54737,7 +58199,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 水 (Air) melambangkan konsep 'continent'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "洲",
+        "reading": "しま",
+        "meaning_id": "continent"
+      },
+      {
+        "word": "洲的",
+        "reading": "しゅうてき",
+        "meaning_id": "bersifat continent"
+      },
+      {
+        "word": "洲化",
+        "reading": "しゅうか",
+        "meaning_id": "proses / perubahan continent"
+      }
+    ]
   },
   {
     "id": "kj-n1-0929",
@@ -54783,7 +58261,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Bentuk piktograf visual Barracks (屮) yang melambangkan konsep 'barracks'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "屯",
+        "reading": "たむろ",
+        "meaning_id": "barracks"
+      },
+      {
+        "word": "屯的",
+        "reading": "とんてき",
+        "meaning_id": "bersifat barracks"
+      },
+      {
+        "word": "屯化",
+        "reading": "とんか",
+        "meaning_id": "proses / perubahan barracks"
+      }
+    ]
   },
   {
     "id": "kj-n1-0930",
@@ -54830,7 +58324,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 木 (Pohon / Kayu) melambangkan konsep 'birch'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "樺",
+        "reading": "かば",
+        "meaning_id": "birch"
+      },
+      {
+        "word": "樺的",
+        "reading": "かてき",
+        "meaning_id": "bersifat birch"
+      },
+      {
+        "word": "樺化",
+        "reading": "かか",
+        "meaning_id": "proses / perubahan birch"
+      }
+    ]
   },
   {
     "id": "kj-n1-0931",
@@ -54874,7 +58384,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 木 (Pohon / Kayu) melambangkan konsep 'twig'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "槙",
+        "reading": "まき",
+        "meaning_id": "twig"
+      },
+      {
+        "word": "槙的",
+        "reading": "てんてき",
+        "meaning_id": "bersifat twig"
+      },
+      {
+        "word": "槙化",
+        "reading": "てんか",
+        "meaning_id": "proses / perubahan twig"
+      }
+    ]
   },
   {
     "id": "kj-n1-0932",
@@ -54916,7 +58442,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Wanita (女) dan Mulut (口) dan Big (女) yang membentuk makna visual 'matrimony'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "姻",
+        "reading": "いん",
+        "meaning_id": "matrimony"
+      },
+      {
+        "word": "姻的",
+        "reading": "いんてき",
+        "meaning_id": "bersifat matrimony"
+      },
+      {
+        "word": "姻化",
+        "reading": "いんか",
+        "meaning_id": "proses / perubahan matrimony"
+      }
+    ]
   },
   {
     "id": "kj-n1-0933",
@@ -54964,7 +58506,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 山 (Gunung) melambangkan konsep 'batu karang'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "巌",
+        "reading": "いわ",
+        "meaning_id": "batu karang"
+      },
+      {
+        "word": "巌的",
+        "reading": "がんてき",
+        "meaning_id": "bersifat batu karang"
+      },
+      {
+        "word": "巌化",
+        "reading": "がんか",
+        "meaning_id": "proses / perubahan batu karang"
+      }
+    ]
   },
   {
     "id": "kj-n1-0934",
@@ -55019,7 +58577,7 @@ window.nuggetKanjiN1 = [
       {
         "word": "賭ける",
         "reading": "かける",
-        "meaning_id": "me-wager"
+        "meaning_id": "wager"
       }
     ]
   },
@@ -55069,7 +58627,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Fingers (手) dan Doubt (手) yang membentuk makna visual 'mimic'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "擬",
+        "reading": "まが",
+        "meaning_id": "mimic"
+      },
+      {
+        "word": "擬的",
+        "reading": "ぎてき",
+        "meaning_id": "bersifat mimic"
+      },
+      {
+        "word": "擬化",
+        "reading": "ぎか",
+        "meaning_id": "proses / perubahan mimic"
+      }
+    ]
   },
   {
     "id": "kj-n1-0936",
@@ -55223,7 +58797,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Mata (目) dan Womb (目) yang membentuk makna visual 'intimate'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "睦",
+        "reading": "むつ",
+        "meaning_id": "intimate"
+      },
+      {
+        "word": "睦的",
+        "reading": "ぼくてき",
+        "meaning_id": "bersifat intimate"
+      },
+      {
+        "word": "睦化",
+        "reading": "ぼくか",
+        "meaning_id": "proses / perubahan intimate"
+      }
+    ]
   },
   {
     "id": "kj-n1-0939",
@@ -55440,7 +59030,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 山 (Gunung) melambangkan konsep 'tinggi / mahal'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "峻",
+        "reading": "けわ",
+        "meaning_id": "tinggi / mahal"
+      },
+      {
+        "word": "峻的",
+        "reading": "しゅんてき",
+        "meaning_id": "bersifat tinggi / mahal"
+      },
+      {
+        "word": "峻化",
+        "reading": "しゅんか",
+        "meaning_id": "proses / perubahan tinggi / mahal"
+      }
+    ]
   },
   {
     "id": "kj-n1-0943",
@@ -55487,7 +59093,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Garis Satu (一) dan Music (曰) dan Matahari (日) yang membentuk makna visual 'office'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "曹",
+        "reading": "そう",
+        "meaning_id": "office"
+      },
+      {
+        "word": "曹的",
+        "reading": "そうてき",
+        "meaning_id": "bersifat office"
+      },
+      {
+        "word": "曹化",
+        "reading": "そうか",
+        "meaning_id": "proses / perubahan office"
+      }
+    ]
   },
   {
     "id": "kj-n1-0944",
@@ -55539,7 +59161,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Kata / Ucapan (言) dan Eternity (言) yang membentuk makna visual 'recitation'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "詠",
+        "reading": "よ",
+        "meaning_id": "recitation"
+      },
+      {
+        "word": "詠的",
+        "reading": "えいてき",
+        "meaning_id": "bersifat recitation"
+      },
+      {
+        "word": "詠化",
+        "reading": "えいか",
+        "meaning_id": "proses / perubahan recitation"
+      }
+    ]
   },
   {
     "id": "kj-n1-0945",
@@ -55704,7 +59342,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Logam / Emas (金) dan Three (金) dan Slide (金) dan Measurement (金) yang membentuk makna visual 'casting'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "鋳",
+        "reading": "い",
+        "meaning_id": "casting"
+      },
+      {
+        "word": "鋳的",
+        "reading": "ちゅうてき",
+        "meaning_id": "bersifat casting"
+      },
+      {
+        "word": "鋳化",
+        "reading": "ちゅうか",
+        "meaning_id": "proses / perubahan casting"
+      }
+    ]
   },
   {
     "id": "kj-n1-0948",
@@ -55747,7 +59401,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Fingers (手) dan Jet (手) yang membentuk makna visual 'rub'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "抹",
+        "reading": "まつ",
+        "meaning_id": "rub"
+      },
+      {
+        "word": "抹的",
+        "reading": "まつてき",
+        "meaning_id": "bersifat rub"
+      },
+      {
+        "word": "抹化",
+        "reading": "まつか",
+        "meaning_id": "proses / perubahan rub"
+      }
+    ]
   },
   {
     "id": "kj-n1-0949",
@@ -55840,7 +59510,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 木 (Pohon / Kayu) melambangkan konsep 'Zelkova tree'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "槻",
+        "reading": "つき",
+        "meaning_id": "Zelkova tree"
+      },
+      {
+        "word": "槻的",
+        "reading": "きてき",
+        "meaning_id": "bersifat Zelkova tree"
+      },
+      {
+        "word": "槻化",
+        "reading": "きか",
+        "meaning_id": "proses / perubahan Zelkova tree"
+      }
+    ]
   },
   {
     "id": "kj-n1-0951",
@@ -55892,7 +59578,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Samurai (隶) dan Jackhammer (隶) dan Brush (隶) dan Air (水) yang membentuk makna visual 'slave'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "隷",
+        "reading": "したが",
+        "meaning_id": "slave"
+      },
+      {
+        "word": "隷的",
+        "reading": "れいてき",
+        "meaning_id": "bersifat slave"
+      },
+      {
+        "word": "隷化",
+        "reading": "れいか",
+        "meaning_id": "proses / perubahan slave"
+      }
+    ]
   },
   {
     "id": "kj-n1-0952",
@@ -55939,7 +59641,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Spirit (示) dan Mustache (示) yang membentuk makna visual 'calamity'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "禍",
+        "reading": "わざわい",
+        "meaning_id": "calamity"
+      },
+      {
+        "word": "禍的",
+        "reading": "かてき",
+        "meaning_id": "bersifat calamity"
+      },
+      {
+        "word": "禍化",
+        "reading": "かか",
+        "meaning_id": "proses / perubahan calamity"
+      }
+    ]
   },
   {
     "id": "kj-n1-0953",
@@ -56135,7 +59853,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 水 (Air) melambangkan konsep 'pan-'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "汎",
+        "reading": "ただよ",
+        "meaning_id": "pan-"
+      },
+      {
+        "word": "汎的",
+        "reading": "はんてき",
+        "meaning_id": "bersifat pan-"
+      },
+      {
+        "word": "汎化",
+        "reading": "はんか",
+        "meaning_id": "proses / perubahan pan-"
+      }
+    ]
   },
   {
     "id": "kj-n1-0957",
@@ -56179,7 +59913,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Drop (巾) dan Bear (巾) dan Towel (巾) yang membentuk makna visual 'commander'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "帥",
+        "reading": "すい",
+        "meaning_id": "commander"
+      },
+      {
+        "word": "帥的",
+        "reading": "すいてき",
+        "meaning_id": "bersifat commander"
+      },
+      {
+        "word": "帥化",
+        "reading": "すいか",
+        "meaning_id": "proses / perubahan commander"
+      }
+    ]
   },
   {
     "id": "kj-n1-0958",
@@ -56224,7 +59974,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Scooter (辵) dan Fingers (辵) dan Axe (辵) yang membentuk makna visual 'departed'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "逝",
+        "reading": "ゆ",
+        "meaning_id": "departed"
+      },
+      {
+        "word": "逝的",
+        "reading": "せいてき",
+        "meaning_id": "bersifat departed"
+      },
+      {
+        "word": "逝化",
+        "reading": "せいか",
+        "meaning_id": "proses / perubahan departed"
+      }
+    ]
   },
   {
     "id": "kj-n1-0959",
@@ -56319,7 +60085,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 玉 (Giok / Permata berharga) melambangkan konsep 'polish'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "琢",
+        "reading": "みが",
+        "meaning_id": "polish"
+      },
+      {
+        "word": "琢的",
+        "reading": "たくてき",
+        "meaning_id": "bersifat polish"
+      },
+      {
+        "word": "琢化",
+        "reading": "たくか",
+        "meaning_id": "proses / perubahan polish"
+      }
+    ]
   },
   {
     "id": "kj-n1-0961",
@@ -56365,7 +60147,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Cage (匸) dan Flowers (匸) dan Right (匸) yang membentuk makna visual 'hide'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "匿",
+        "reading": "かくま",
+        "meaning_id": "hide"
+      },
+      {
+        "word": "匿的",
+        "reading": "とくてき",
+        "meaning_id": "bersifat hide"
+      },
+      {
+        "word": "匿化",
+        "reading": "とくか",
+        "meaning_id": "proses / perubahan hide"
+      }
+    ]
   },
   {
     "id": "kj-n1-0962",
@@ -56407,7 +60205,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Logam / Emas (金) dan Yoga (金) dan Brush (金) yang membentuk makna visual 'key'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "鍵",
+        "reading": "かぎ",
+        "meaning_id": "key"
+      },
+      {
+        "word": "鍵的",
+        "reading": "けんてき",
+        "meaning_id": "bersifat key"
+      },
+      {
+        "word": "鍵化",
+        "reading": "けんか",
+        "meaning_id": "proses / perubahan key"
+      }
+    ]
   },
   {
     "id": "kj-n1-0963",
@@ -56550,7 +60364,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 艸 (Rumput / Tumbuhan herba) melambangkan konsep 'banana'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "蕉",
+        "reading": "しょう",
+        "meaning_id": "banana"
+      },
+      {
+        "word": "蕉的",
+        "reading": "しょうてき",
+        "meaning_id": "bersifat banana"
+      },
+      {
+        "word": "蕉化",
+        "reading": "しょうか",
+        "meaning_id": "proses / perubahan banana"
+      }
+    ]
   },
   {
     "id": "kj-n1-0966",
@@ -56595,7 +60425,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Atap (宀) dan Geoduck (宀) dan Garis Satu (一) dan Pedang (刀) yang membentuk makna visual 'widow'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "寡",
+        "reading": "か",
+        "meaning_id": "widow"
+      },
+      {
+        "word": "寡的",
+        "reading": "かてき",
+        "meaning_id": "bersifat widow"
+      },
+      {
+        "word": "寡化",
+        "reading": "かか",
+        "meaning_id": "proses / perubahan widow"
+      }
+    ]
   },
   {
     "id": "kj-n1-0967",
@@ -56638,7 +60484,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 玉 (Giok / Permata berharga) melambangkan konsep 'precious stone'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "琉",
+        "reading": "りゅう",
+        "meaning_id": "precious stone"
+      },
+      {
+        "word": "琉的",
+        "reading": "りゅうてき",
+        "meaning_id": "bersifat precious stone"
+      },
+      {
+        "word": "琉化",
+        "reading": "りゅうか",
+        "meaning_id": "proses / perubahan precious stone"
+      }
+    ]
   },
   {
     "id": "kj-n1-0968",
@@ -56732,7 +60594,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Canopy (广) dan Brush (广) dan Task (广) yang membentuk makna visual 'commonplace'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "庸",
+        "reading": "よう",
+        "meaning_id": "commonplace"
+      },
+      {
+        "word": "庸的",
+        "reading": "ようてき",
+        "meaning_id": "bersifat commonplace"
+      },
+      {
+        "word": "庸化",
+        "reading": "ようか",
+        "meaning_id": "proses / perubahan commonplace"
+      }
+    ]
   },
   {
     "id": "kj-n1-0970",
@@ -56774,7 +60652,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 月 (Bulan / Bagian tubuh (daging)) melambangkan konsep 'companion'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "朋",
+        "reading": "とも",
+        "meaning_id": "companion"
+      },
+      {
+        "word": "朋的",
+        "reading": "ほうてき",
+        "meaning_id": "bersifat companion"
+      },
+      {
+        "word": "朋化",
+        "reading": "ほうか",
+        "meaning_id": "proses / perubahan companion"
+      }
+    ]
   },
   {
     "id": "kj-n1-0971",
@@ -56816,7 +60710,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Dirt (土) dan Lid (土) dan Table (土) yang membentuk makna visual 'pit'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "坑",
+        "reading": "こう",
+        "meaning_id": "pit"
+      },
+      {
+        "word": "坑的",
+        "reading": "こうてき",
+        "meaning_id": "bersifat pit"
+      },
+      {
+        "word": "坑化",
+        "reading": "こうか",
+        "meaning_id": "proses / perubahan pit"
+      }
+    ]
   },
   {
     "id": "kj-n1-0972",
@@ -56857,7 +60767,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Flowers (艸) dan Oversee (艸) yang membentuk makna visual 'indigo'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "藍",
+        "reading": "あい",
+        "meaning_id": "indigo"
+      },
+      {
+        "word": "藍的",
+        "reading": "らんてき",
+        "meaning_id": "bersifat indigo"
+      },
+      {
+        "word": "藍化",
+        "reading": "らんか",
+        "meaning_id": "proses / perubahan indigo"
+      }
+    ]
   },
   {
     "id": "kj-n1-0973",
@@ -56903,7 +60829,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Shellfish (貝) dan Drunkard (貝) dan Cross (貝) yang membentuk makna visual 'burglar'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "賊",
+        "reading": "ぞく",
+        "meaning_id": "burglar"
+      },
+      {
+        "word": "賊的",
+        "reading": "ぞくてき",
+        "meaning_id": "bersifat burglar"
+      },
+      {
+        "word": "賊化",
+        "reading": "ぞくか",
+        "meaning_id": "proses / perubahan burglar"
+      }
+    ]
   },
   {
     "id": "kj-n1-0974",
@@ -56945,7 +60887,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Fingers (手) dan Hole (手) dan Key (手) yang membentuk makna visual 'squeeze'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "搾",
+        "reading": "しぼ",
+        "meaning_id": "squeeze"
+      },
+      {
+        "word": "搾的",
+        "reading": "さくてき",
+        "meaning_id": "bersifat squeeze"
+      },
+      {
+        "word": "搾化",
+        "reading": "さくか",
+        "meaning_id": "proses / perubahan squeeze"
+      }
+    ]
   },
   {
     "id": "kj-n1-0975",
@@ -56987,7 +60945,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 臼 (Lesung penumbuk) melambangkan konsep 'mortar'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "臼",
+        "reading": "うす",
+        "meaning_id": "mortar"
+      },
+      {
+        "word": "臼的",
+        "reading": "きゅうてき",
+        "meaning_id": "bersifat mortar"
+      },
+      {
+        "word": "臼化",
+        "reading": "きゅうか",
+        "meaning_id": "proses / perubahan mortar"
+      }
+    ]
   },
   {
     "id": "kj-n1-0976",
@@ -57034,7 +61008,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Rice Paddy (田) dan Half (田) yang membentuk makna visual 'paddy ridge'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "畔",
+        "reading": "あぜ",
+        "meaning_id": "paddy ridge"
+      },
+      {
+        "word": "畔的",
+        "reading": "はんてき",
+        "meaning_id": "bersifat paddy ridge"
+      },
+      {
+        "word": "畔化",
+        "reading": "はんか",
+        "meaning_id": "proses / perubahan paddy ridge"
+      }
+    ]
   },
   {
     "id": "kj-n1-0977",
@@ -57075,7 +61065,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Scooter (辵) dan Charcoal (辵) yang membentuk makna visual 'jauh'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "遼",
+        "reading": "りょう",
+        "meaning_id": "jauh"
+      },
+      {
+        "word": "遼的",
+        "reading": "りょうてき",
+        "meaning_id": "bersifat jauh"
+      },
+      {
+        "word": "遼化",
+        "reading": "りょうか",
+        "meaning_id": "proses / perubahan jauh"
+      }
+    ]
   },
   {
     "id": "kj-n1-0978",
@@ -57119,7 +61125,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Mulut (口) dan Shellfish (口) yang membentuk makna visual 'lagu'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "唄",
+        "reading": "うた",
+        "meaning_id": "lagu"
+      },
+      {
+        "word": "唄的",
+        "reading": "ばいてき",
+        "meaning_id": "bersifat lagu"
+      },
+      {
+        "word": "唄化",
+        "reading": "ばいか",
+        "meaning_id": "proses / perubahan lagu"
+      }
+    ]
   },
   {
     "id": "kj-n1-0979",
@@ -57173,7 +61195,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Anak (子) dan Umbrella (子) yang membentuk makna visual 'cavity'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "孔",
+        "reading": "あな",
+        "meaning_id": "cavity"
+      },
+      {
+        "word": "孔的",
+        "reading": "こうてき",
+        "meaning_id": "bersifat cavity"
+      },
+      {
+        "word": "孔化",
+        "reading": "こうか",
+        "meaning_id": "proses / perubahan cavity"
+      }
+    ]
   },
   {
     "id": "kj-n1-0980",
@@ -57215,7 +61253,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 木 (Pohon / Kayu) melambangkan konsep 'mandarin orange'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "橘",
+        "reading": "たちばな",
+        "meaning_id": "mandarin orange"
+      },
+      {
+        "word": "橘的",
+        "reading": "きつてき",
+        "meaning_id": "bersifat mandarin orange"
+      },
+      {
+        "word": "橘化",
+        "reading": "きつか",
+        "meaning_id": "proses / perubahan mandarin orange"
+      }
+    ]
   },
   {
     "id": "kj-n1-0981",
@@ -57262,7 +61316,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 水 (Air) melambangkan konsep 'gargle'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "漱",
+        "reading": "くちすす",
+        "meaning_id": "gargle"
+      },
+      {
+        "word": "漱的",
+        "reading": "そうてき",
+        "meaning_id": "bersifat gargle"
+      },
+      {
+        "word": "漱化",
+        "reading": "そうか",
+        "meaning_id": "proses / perubahan gargle"
+      }
+    ]
   },
   {
     "id": "kj-n1-0982",
@@ -57361,7 +61431,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Fingers (手) dan Coffin (手) dan Beggar (手) yang membentuk makna visual 'torture'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "拷",
+        "reading": "ごう",
+        "meaning_id": "torture"
+      },
+      {
+        "word": "拷的",
+        "reading": "ごうてき",
+        "meaning_id": "bersifat torture"
+      },
+      {
+        "word": "拷化",
+        "reading": "ごうか",
+        "meaning_id": "proses / perubahan torture"
+      }
+    ]
   },
   {
     "id": "kj-n1-0984",
@@ -57467,7 +61553,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 艸 (Rumput / Tumbuhan herba) melambangkan konsep 'garden'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "苑",
+        "reading": "その",
+        "meaning_id": "garden"
+      },
+      {
+        "word": "苑的",
+        "reading": "えんてき",
+        "meaning_id": "bersifat garden"
+      },
+      {
+        "word": "苑化",
+        "reading": "えんか",
+        "meaning_id": "proses / perubahan garden"
+      }
+    ]
   },
   {
     "id": "kj-n1-0986",
@@ -57507,7 +61609,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 己 (Diri sendiri / Pita melengkung) melambangkan konsep 'southeast'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "巽",
+        "reading": "たつみ",
+        "meaning_id": "southeast"
+      },
+      {
+        "word": "巽的",
+        "reading": "そんてき",
+        "meaning_id": "bersifat southeast"
+      },
+      {
+        "word": "巽化",
+        "reading": "そんか",
+        "meaning_id": "proses / perubahan southeast"
+      }
+    ]
   },
   {
     "id": "kj-n1-0987",
@@ -57553,7 +61671,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 木 (Pohon / Kayu) melambangkan konsep 'hutan kecil'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "杜",
+        "reading": "もり",
+        "meaning_id": "hutan kecil"
+      },
+      {
+        "word": "杜的",
+        "reading": "とてき",
+        "meaning_id": "bersifat hutan kecil"
+      },
+      {
+        "word": "杜化",
+        "reading": "とか",
+        "meaning_id": "proses / perubahan hutan kecil"
+      }
+    ]
   },
   {
     "id": "kj-n1-0988",
@@ -57598,7 +61732,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Tsunami (水) dan Cleat (水) dan Husband (水) yang membentuk makna visual 'mountain stream'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "渓",
+        "reading": "たに",
+        "meaning_id": "mountain stream"
+      },
+      {
+        "word": "渓的",
+        "reading": "けいてき",
+        "meaning_id": "bersifat mountain stream"
+      },
+      {
+        "word": "渓化",
+        "reading": "けいか",
+        "meaning_id": "proses / perubahan mountain stream"
+      }
+    ]
   },
   {
     "id": "kj-n1-0989",
@@ -57641,7 +61791,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 羽 (Bulu sayap) melambangkan konsep 'venerable old man'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "翁",
+        "reading": "おきな",
+        "meaning_id": "venerable old man"
+      },
+      {
+        "word": "翁的",
+        "reading": "おうてき",
+        "meaning_id": "bersifat venerable old man"
+      },
+      {
+        "word": "翁化",
+        "reading": "おうか",
+        "meaning_id": "proses / perubahan venerable old man"
+      }
+    ]
   },
   {
     "id": "kj-n1-0990",
@@ -57706,7 +61872,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Canopy (广) dan Mona Lisa (广) yang membentuk makna visual 'bargain'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "廉",
+        "reading": "れん",
+        "meaning_id": "bargain"
+      },
+      {
+        "word": "廉的",
+        "reading": "れんてき",
+        "meaning_id": "bersifat bargain"
+      },
+      {
+        "word": "廉化",
+        "reading": "れんか",
+        "meaning_id": "proses / perubahan bargain"
+      }
+    ]
   },
   {
     "id": "kj-n1-0991",
@@ -57752,7 +61934,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Bentuk piktograf visual Fang (牙) yang melambangkan konsep 'tusk'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "牙",
+        "reading": "きば",
+        "meaning_id": "tusk"
+      },
+      {
+        "word": "牙的",
+        "reading": "がてき",
+        "meaning_id": "bersifat tusk"
+      },
+      {
+        "word": "牙化",
+        "reading": "がか",
+        "meaning_id": "proses / perubahan tusk"
+      }
+    ]
   },
   {
     "id": "kj-n1-0992",
@@ -57797,7 +61995,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Kata / Ucapan (言) dan Boot (言) yang membentuk makna visual 'discreet'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "謹",
+        "reading": "つつし",
+        "meaning_id": "discreet"
+      },
+      {
+        "word": "謹的",
+        "reading": "きんてき",
+        "meaning_id": "bersifat discreet"
+      },
+      {
+        "word": "謹化",
+        "reading": "きんか",
+        "meaning_id": "proses / perubahan discreet"
+      }
+    ]
   },
   {
     "id": "kj-n1-0993",
@@ -57906,7 +62120,7 @@ window.nuggetKanjiN1 = [
       {
         "word": "湧く",
         "reading": "わく",
-        "meaning_id": "me-boil"
+        "meaning_id": "merebus"
       }
     ]
   },
@@ -57957,7 +62171,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 欠 (Kurang / Menguap) melambangkan konsep 'take pleasure in'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "欣",
+        "reading": "よろこ",
+        "meaning_id": "take pleasure in"
+      },
+      {
+        "word": "欣的",
+        "reading": "きんてき",
+        "meaning_id": "bersifat take pleasure in"
+      },
+      {
+        "word": "欣化",
+        "reading": "きんか",
+        "meaning_id": "proses / perubahan take pleasure in"
+      }
+    ]
   },
   {
     "id": "kj-n1-0996",
@@ -58001,7 +62231,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 穴 (Gua / Lubang) melambangkan konsep 'kiln'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "窯",
+        "reading": "かま",
+        "meaning_id": "kiln"
+      },
+      {
+        "word": "窯的",
+        "reading": "ようてき",
+        "meaning_id": "bersifat kiln"
+      },
+      {
+        "word": "窯化",
+        "reading": "ようか",
+        "meaning_id": "proses / perubahan kiln"
+      }
+    ]
   },
   {
     "id": "kj-n1-0997",
@@ -58150,7 +62396,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Slide (十) dan Twenty (十) yang membentuk makna visual 'measuring box'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "升",
+        "reading": "ます",
+        "meaning_id": "measuring box"
+      },
+      {
+        "word": "升的",
+        "reading": "しょうてき",
+        "meaning_id": "bersifat measuring box"
+      },
+      {
+        "word": "升化",
+        "reading": "しょうか",
+        "meaning_id": "proses / perubahan measuring box"
+      }
+    ]
   },
   {
     "id": "kj-n1-1000",
@@ -58192,7 +62454,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Yakuza (歹) dan Prison (歹) dan Matahari (日) yang membentuk makna visual 'martyrdom'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "殉",
+        "reading": "じゅん",
+        "meaning_id": "martyrdom"
+      },
+      {
+        "word": "殉的",
+        "reading": "じゅんてき",
+        "meaning_id": "bersifat martyrdom"
+      },
+      {
+        "word": "殉化",
+        "reading": "じゅんか",
+        "meaning_id": "proses / perubahan martyrdom"
+      }
+    ]
   },
   {
     "id": "kj-n1-1001",
@@ -58305,7 +62583,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 己 (Diri sendiri / Pita melengkung) melambangkan konsep 'comma-design'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "巴",
+        "reading": "ともえ",
+        "meaning_id": "comma-design"
+      },
+      {
+        "word": "巴的",
+        "reading": "はてき",
+        "meaning_id": "bersifat comma-design"
+      },
+      {
+        "word": "巴化",
+        "reading": "はか",
+        "meaning_id": "proses / perubahan comma-design"
+      }
+    ]
   },
   {
     "id": "kj-n1-1003",
@@ -58358,7 +62652,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 示 (Altar persembahan / Menunjukkan) melambangkan konsep 'happiness'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "禎",
+        "reading": "さいわ",
+        "meaning_id": "happiness"
+      },
+      {
+        "word": "禎的",
+        "reading": "ていてき",
+        "meaning_id": "bersifat happiness"
+      },
+      {
+        "word": "禎化",
+        "reading": "ていか",
+        "meaning_id": "proses / perubahan happiness"
+      }
+    ]
   },
   {
     "id": "kj-n1-1004",
@@ -58399,7 +62709,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Slice (力) dan Kekuatan (力) yang membentuk makna visual 'censure'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "劾",
+        "reading": "がい",
+        "meaning_id": "censure"
+      },
+      {
+        "word": "劾的",
+        "reading": "がいてき",
+        "meaning_id": "bersifat censure"
+      },
+      {
+        "word": "劾化",
+        "reading": "がいか",
+        "meaning_id": "proses / perubahan censure"
+      }
+    ]
   },
   {
     "id": "kj-n1-1005",
@@ -58447,7 +62773,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Building (土) dan Have (土) dan Dirt (土) yang membentuk makna visual 'degenerate'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "堕",
+        "reading": "お",
+        "meaning_id": "degenerate"
+      },
+      {
+        "word": "堕的",
+        "reading": "だてき",
+        "meaning_id": "bersifat degenerate"
+      },
+      {
+        "word": "堕化",
+        "reading": "だか",
+        "meaning_id": "proses / perubahan degenerate"
+      }
+    ]
   },
   {
     "id": "kj-n1-1006",
@@ -58490,7 +62832,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Grain (禾) dan Top Hat (禾) yang membentuk makna visual 'tariff'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "租",
+        "reading": "そ",
+        "meaning_id": "tariff"
+      },
+      {
+        "word": "租的",
+        "reading": "そてき",
+        "meaning_id": "bersifat tariff"
+      },
+      {
+        "word": "租化",
+        "reading": "そか",
+        "meaning_id": "proses / perubahan tariff"
+      }
+    ]
   },
   {
     "id": "kj-n1-1007",
@@ -58540,7 +62898,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 禾 (Bulir padi / Gandum) melambangkan konsep 'angle'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "稜",
+        "reading": "いつ",
+        "meaning_id": "angle"
+      },
+      {
+        "word": "稜的",
+        "reading": "りょうてき",
+        "meaning_id": "bersifat angle"
+      },
+      {
+        "word": "稜化",
+        "reading": "りょうか",
+        "meaning_id": "proses / perubahan angle"
+      }
+    ]
   },
   {
     "id": "kj-n1-1008",
@@ -58643,7 +63017,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 心 (Hati / Pikiran / Perasaan) melambangkan konsep 'fear'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "惧",
+        "reading": "おそ",
+        "meaning_id": "fear"
+      },
+      {
+        "word": "惧的",
+        "reading": "くてき",
+        "meaning_id": "bersifat fear"
+      },
+      {
+        "word": "惧化",
+        "reading": "くか",
+        "meaning_id": "proses / perubahan fear"
+      }
+    ]
   },
   {
     "id": "kj-n1-1010",
@@ -58690,7 +63080,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 人 (Orang / Manusia) melambangkan konsep 'Yamato'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "倭",
+        "reading": "やまと",
+        "meaning_id": "Yamato"
+      },
+      {
+        "word": "倭的",
+        "reading": "わてき",
+        "meaning_id": "bersifat Yamato"
+      },
+      {
+        "word": "倭化",
+        "reading": "わか",
+        "meaning_id": "proses / perubahan Yamato"
+      }
+    ]
   },
   {
     "id": "kj-n1-1011",
@@ -58792,7 +63198,7 @@ window.nuggetKanjiN1 = [
       {
         "word": "慕う",
         "reading": "したう",
-        "meaning_id": "me-yearn for"
+        "meaning_id": "yearn for"
       }
     ]
   },
@@ -58838,7 +63244,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Criminal (文) dan Writing (文) yang membentuk makna visual 'beautiful'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "斐",
+        "reading": "ひ",
+        "meaning_id": "beautiful"
+      },
+      {
+        "word": "斐的",
+        "reading": "ひてき",
+        "meaning_id": "bersifat beautiful"
+      },
+      {
+        "word": "斐化",
+        "reading": "ひか",
+        "meaning_id": "proses / perubahan beautiful"
+      }
+    ]
   },
   {
     "id": "kj-n1-1014",
@@ -58888,7 +63310,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Net (网) dan Ability (网) yang membentuk makna visual 'quit'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "罷",
+        "reading": "まか",
+        "meaning_id": "quit"
+      },
+      {
+        "word": "罷的",
+        "reading": "ひてき",
+        "meaning_id": "bersifat quit"
+      },
+      {
+        "word": "罷化",
+        "reading": "ひか",
+        "meaning_id": "proses / perubahan quit"
+      }
+    ]
   },
   {
     "id": "kj-n1-1015",
@@ -58945,7 +63383,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Arrow (矢) dan Heaven (矢) dan Mulut (口) dan Mustache (矢) yang membentuk makna visual 'rectify'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "矯",
+        "reading": "た",
+        "meaning_id": "rectify"
+      },
+      {
+        "word": "矯的",
+        "reading": "きょうてき",
+        "meaning_id": "bersifat rectify"
+      },
+      {
+        "word": "矯化",
+        "reading": "きょうか",
+        "meaning_id": "proses / perubahan rectify"
+      }
+    ]
   },
   {
     "id": "kj-n1-1016",
@@ -58993,7 +63447,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Sweet (木) dan Pohon (木) yang membentuk makna visual 'so-and-so'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "某",
+        "reading": "それがし",
+        "meaning_id": "so-and-so"
+      },
+      {
+        "word": "某的",
+        "reading": "ぼうてき",
+        "meaning_id": "bersifat so-and-so"
+      },
+      {
+        "word": "某化",
+        "reading": "ぼうか",
+        "meaning_id": "proses / perubahan so-and-so"
+      }
+    ]
   },
   {
     "id": "kj-n1-1017",
@@ -59040,7 +63510,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Mulut (口) dan Orang (人) yang membentuk makna visual 'captured'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "囚",
+        "reading": "とら",
+        "meaning_id": "captured"
+      },
+      {
+        "word": "囚的",
+        "reading": "しゅうてき",
+        "meaning_id": "bersifat captured"
+      },
+      {
+        "word": "囚化",
+        "reading": "しゅうか",
+        "meaning_id": "proses / perubahan captured"
+      }
+    ]
   },
   {
     "id": "kj-n1-1018",
@@ -59081,7 +63567,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 鬼 (Iblis / Setan / Siluman) melambangkan konsep 'charging ahead of others'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "魁",
+        "reading": "さきがけ",
+        "meaning_id": "charging ahead of others"
+      },
+      {
+        "word": "魁的",
+        "reading": "かいてき",
+        "meaning_id": "bersifat charging ahead of others"
+      },
+      {
+        "word": "魁化",
+        "reading": "かいか",
+        "meaning_id": "proses / perubahan charging ahead of others"
+      }
+    ]
   },
   {
     "id": "kj-n1-1019",
@@ -59181,7 +63683,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 鳥 (Burung) melambangkan konsep 'large bird'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "鴻",
+        "reading": "おおとり",
+        "meaning_id": "large bird"
+      },
+      {
+        "word": "鴻的",
+        "reading": "こうてき",
+        "meaning_id": "bersifat large bird"
+      },
+      {
+        "word": "鴻化",
+        "reading": "こうか",
+        "meaning_id": "proses / perubahan large bird"
+      }
+    ]
   },
   {
     "id": "kj-n1-1021",
@@ -59229,7 +63747,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Tsunami (水) dan Certain (水) yang membentuk makna visual 'ooze'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "泌",
+        "reading": "ひつ",
+        "meaning_id": "ooze"
+      },
+      {
+        "word": "泌的",
+        "reading": "ひつてき",
+        "meaning_id": "bersifat ooze"
+      },
+      {
+        "word": "泌化",
+        "reading": "ひつか",
+        "meaning_id": "proses / perubahan ooze"
+      }
+    ]
   },
   {
     "id": "kj-n1-1022",
@@ -59279,7 +63813,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 方 (Arah / Sisi / Persegi) melambangkan konsep 'at'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "於",
+        "reading": "おい",
+        "meaning_id": "at"
+      },
+      {
+        "word": "於的",
+        "reading": "おてき",
+        "meaning_id": "bersifat at"
+      },
+      {
+        "word": "於化",
+        "reading": "おか",
+        "meaning_id": "proses / perubahan at"
+      }
+    ]
   },
   {
     "id": "kj-n1-1023",
@@ -59320,7 +63870,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 走 (Berlari) melambangkan konsep 'strong and brave'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "赳",
+        "reading": "きゅう",
+        "meaning_id": "strong and brave"
+      },
+      {
+        "word": "赳的",
+        "reading": "きゅうてき",
+        "meaning_id": "bersifat strong and brave"
+      },
+      {
+        "word": "赳化",
+        "reading": "きゅうか",
+        "meaning_id": "proses / perubahan strong and brave"
+      }
+    ]
   },
   {
     "id": "kj-n1-1024",
@@ -59371,7 +63937,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Tsunami (水) dan Car (水) dan Axe (水) yang membentuk makna visual 'steadily'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "漸",
+        "reading": "ようや",
+        "meaning_id": "steadily"
+      },
+      {
+        "word": "漸的",
+        "reading": "ぜんてき",
+        "meaning_id": "bersifat steadily"
+      },
+      {
+        "word": "漸化",
+        "reading": "ぜんか",
+        "meaning_id": "proses / perubahan steadily"
+      }
+    ]
   },
   {
     "id": "kj-n1-1025",
@@ -59517,7 +64099,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Flowers (艸) dan Tent (艸) dan Heaven (艸) yang membentuk makna visual 'hollyhock'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "葵",
+        "reading": "あおい",
+        "meaning_id": "hollyhock"
+      },
+      {
+        "word": "葵的",
+        "reading": "きてき",
+        "meaning_id": "bersifat hollyhock"
+      },
+      {
+        "word": "葵化",
+        "reading": "きか",
+        "meaning_id": "proses / perubahan hollyhock"
+      }
+    ]
   },
   {
     "id": "kj-n1-1028",
@@ -59612,7 +64210,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Flowers (艸) dan Tsunami (艸) dan Syrup (艸) yang membentuk makna visual 'seaweed'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "藻",
+        "reading": "も",
+        "meaning_id": "seaweed"
+      },
+      {
+        "word": "藻的",
+        "reading": "そうてき",
+        "meaning_id": "bersifat seaweed"
+      },
+      {
+        "word": "藻化",
+        "reading": "そうか",
+        "meaning_id": "proses / perubahan seaweed"
+      }
+    ]
   },
   {
     "id": "kj-n1-1030",
@@ -59722,7 +64336,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 子 (Anak / Keturunan) melambangkan konsep 'chief'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "孟",
+        "reading": "かしら",
+        "meaning_id": "chief"
+      },
+      {
+        "word": "孟的",
+        "reading": "もうてき",
+        "meaning_id": "bersifat chief"
+      },
+      {
+        "word": "孟化",
+        "reading": "もうか",
+        "meaning_id": "proses / perubahan chief"
+      }
+    ]
   },
   {
     "id": "kj-n1-1032",
@@ -59763,7 +64393,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 女 (Wanita / Perempuan) melambangkan konsep 'legitimate wife'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "嫡",
+        "reading": "ちゃく",
+        "meaning_id": "legitimate wife"
+      },
+      {
+        "word": "嫡的",
+        "reading": "ちゃくてき",
+        "meaning_id": "bersifat legitimate wife"
+      },
+      {
+        "word": "嫡化",
+        "reading": "ちゃくか",
+        "meaning_id": "proses / perubahan legitimate wife"
+      }
+    ]
   },
   {
     "id": "kj-n1-1033",
@@ -59816,7 +64462,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Mulut (口) dan Older Brother (口) yang membentuk makna visual 'spell'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "呪",
+        "reading": "まじな",
+        "meaning_id": "spell"
+      },
+      {
+        "word": "呪的",
+        "reading": "じゅてき",
+        "meaning_id": "bersifat spell"
+      },
+      {
+        "word": "呪化",
+        "reading": "じゅか",
+        "meaning_id": "proses / perubahan spell"
+      }
+    ]
   },
   {
     "id": "kj-n1-1034",
@@ -59863,7 +64525,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 土 (Tanah / Bumi) melambangkan konsep 'tinggi / mahal'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "尭",
+        "reading": "たか",
+        "meaning_id": "tinggi / mahal"
+      },
+      {
+        "word": "尭的",
+        "reading": "ぎょうてき",
+        "meaning_id": "bersifat tinggi / mahal"
+      },
+      {
+        "word": "尭化",
+        "reading": "ぎょうか",
+        "meaning_id": "proses / perubahan tinggi / mahal"
+      }
+    ]
   },
   {
     "id": "kj-n1-1035",
@@ -59911,7 +64589,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 心 (Hati / Pikiran / Perasaan) melambangkan konsep 'grudge'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "怨",
+        "reading": "うら",
+        "meaning_id": "grudge"
+      },
+      {
+        "word": "怨的",
+        "reading": "えんてき",
+        "meaning_id": "bersifat grudge"
+      },
+      {
+        "word": "怨化",
+        "reading": "えんか",
+        "meaning_id": "proses / perubahan grudge"
+      }
+    ]
   },
   {
     "id": "kj-n1-1036",
@@ -59956,7 +64650,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 丨 (Garis vertikal) melambangkan konsep 'spit'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "串",
+        "reading": "くし",
+        "meaning_id": "spit"
+      },
+      {
+        "word": "串的",
+        "reading": "かんてき",
+        "meaning_id": "bersifat spit"
+      },
+      {
+        "word": "串化",
+        "reading": "かんか",
+        "meaning_id": "proses / perubahan spit"
+      }
+    ]
   },
   {
     "id": "kj-n1-1037",
@@ -60002,7 +64712,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 口 (Mulut / Bukaan) melambangkan konsep 'menacing'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "嚇",
+        "reading": "おど",
+        "meaning_id": "menacing"
+      },
+      {
+        "word": "嚇的",
+        "reading": "かくてき",
+        "meaning_id": "bersifat menacing"
+      },
+      {
+        "word": "嚇化",
+        "reading": "かくか",
+        "meaning_id": "proses / perubahan menacing"
+      }
+    ]
   },
   {
     "id": "kj-n1-1038",
@@ -60046,7 +64772,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 己 (Diri sendiri / Pita melengkung) melambangkan konsep 'sign of the snake or serpent'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "巳",
+        "reading": "み",
+        "meaning_id": "sign of the snake or serpent"
+      },
+      {
+        "word": "巳的",
+        "reading": "してき",
+        "meaning_id": "bersifat sign of the snake or serpent"
+      },
+      {
+        "word": "巳化",
+        "reading": "しか",
+        "meaning_id": "proses / perubahan sign of the snake or serpent"
+      }
+    ]
   },
   {
     "id": "kj-n1-1039",
@@ -60147,7 +64889,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 日 (Matahari / Hari) melambangkan konsep 'stretch'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "暢",
+        "reading": "のび",
+        "meaning_id": "stretch"
+      },
+      {
+        "word": "暢的",
+        "reading": "ちょうてき",
+        "meaning_id": "bersifat stretch"
+      },
+      {
+        "word": "暢化",
+        "reading": "ちょうか",
+        "meaning_id": "proses / perubahan stretch"
+      }
+    ]
   },
   {
     "id": "kj-n1-1041",
@@ -60197,7 +64955,7 @@ window.nuggetKanjiN1 = [
       {
         "word": "腫れる",
         "reading": "はれる",
-        "meaning_id": "me-swell"
+        "meaning_id": "swell"
       }
     ]
   },
@@ -60241,7 +64999,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 音 (Bunyi / Suara) melambangkan konsep 'rhyme'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "韻",
+        "reading": "いん",
+        "meaning_id": "rhyme"
+      },
+      {
+        "word": "韻的",
+        "reading": "いんてき",
+        "meaning_id": "bersifat rhyme"
+      },
+      {
+        "word": "韻化",
+        "reading": "いんか",
+        "meaning_id": "proses / perubahan rhyme"
+      }
+    ]
   },
   {
     "id": "kj-n1-1043",
@@ -60329,7 +65103,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 石 (Batu) melambangkan konsep 'nitrate'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "硝",
+        "reading": "しょう",
+        "meaning_id": "nitrate"
+      },
+      {
+        "word": "硝的",
+        "reading": "しょうてき",
+        "meaning_id": "bersifat nitrate"
+      },
+      {
+        "word": "硝化",
+        "reading": "しょうか",
+        "meaning_id": "proses / perubahan nitrate"
+      }
+    ]
   },
   {
     "id": "kj-n1-1045",
@@ -60371,7 +65161,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Bamboo (竹) dan Someone (竹) yang membentuk makna visual 'chopsticks'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "箸",
+        "reading": "はし",
+        "meaning_id": "chopsticks"
+      },
+      {
+        "word": "箸的",
+        "reading": "ちょてき",
+        "meaning_id": "bersifat chopsticks"
+      },
+      {
+        "word": "箸化",
+        "reading": "ちょか",
+        "meaning_id": "proses / perubahan chopsticks"
+      }
+    ]
   },
   {
     "id": "kj-n1-1046",
@@ -60415,7 +65221,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 力 (Kekuatan / Daya) melambangkan konsep 'imperial order'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "勅",
+        "reading": "いまし",
+        "meaning_id": "imperial order"
+      },
+      {
+        "word": "勅的",
+        "reading": "ちょくてき",
+        "meaning_id": "bersifat imperial order"
+      },
+      {
+        "word": "勅化",
+        "reading": "ちょくか",
+        "meaning_id": "proses / perubahan imperial order"
+      }
+    ]
   },
   {
     "id": "kj-n1-1047",
@@ -60458,7 +65280,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 艸 (Rumput / Tumbuhan herba) melambangkan konsep 'parsley'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "芹",
+        "reading": "せり",
+        "meaning_id": "parsley"
+      },
+      {
+        "word": "芹的",
+        "reading": "きんてき",
+        "meaning_id": "bersifat parsley"
+      },
+      {
+        "word": "芹化",
+        "reading": "きんか",
+        "meaning_id": "proses / perubahan parsley"
+      }
+    ]
   },
   {
     "id": "kj-n1-1048",
@@ -60503,7 +65341,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Pohon (木) dan Mulut (口) yang membentuk makna visual 'apricot'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "杏",
+        "reading": "あんず",
+        "meaning_id": "apricot"
+      },
+      {
+        "word": "杏的",
+        "reading": "きょうてき",
+        "meaning_id": "bersifat apricot"
+      },
+      {
+        "word": "杏化",
+        "reading": "きょうか",
+        "meaning_id": "proses / perubahan apricot"
+      }
+    ]
   },
   {
     "id": "kj-n1-1049",
@@ -60543,7 +65397,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 木 (Pohon / Kayu) melambangkan konsep 'coffin'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "棺",
+        "reading": "かん",
+        "meaning_id": "coffin"
+      },
+      {
+        "word": "棺的",
+        "reading": "かんてき",
+        "meaning_id": "bersifat coffin"
+      },
+      {
+        "word": "棺化",
+        "reading": "かんか",
+        "meaning_id": "proses / perubahan coffin"
+      }
+    ]
   },
   {
     "id": "kj-n1-1050",
@@ -60581,7 +65451,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 人 (Orang / Manusia) melambangkan konsep 'Confucian'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "儒",
+        "reading": "じゅ",
+        "meaning_id": "Confucian"
+      },
+      {
+        "word": "儒的",
+        "reading": "じゅてき",
+        "meaning_id": "bersifat Confucian"
+      },
+      {
+        "word": "儒化",
+        "reading": "じゅか",
+        "meaning_id": "proses / perubahan Confucian"
+      }
+    ]
   },
   {
     "id": "kj-n1-1051",
@@ -60623,7 +65509,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 鳥 (Burung) melambangkan konsep 'male mythical bird'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "鳳",
+        "reading": "ほう",
+        "meaning_id": "male mythical bird"
+      },
+      {
+        "word": "鳳的",
+        "reading": "ほうてき",
+        "meaning_id": "bersifat male mythical bird"
+      },
+      {
+        "word": "鳳化",
+        "reading": "ほうか",
+        "meaning_id": "proses / perubahan male mythical bird"
+      }
+    ]
   },
   {
     "id": "kj-n1-1052",
@@ -60675,7 +65577,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 香 (Harum / Wangi dupa) melambangkan konsep 'fragrant'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "馨",
+        "reading": "かお",
+        "meaning_id": "fragrant"
+      },
+      {
+        "word": "馨的",
+        "reading": "けいてき",
+        "meaning_id": "bersifat fragrant"
+      },
+      {
+        "word": "馨化",
+        "reading": "けいか",
+        "meaning_id": "proses / perubahan fragrant"
+      }
+    ]
   },
   {
     "id": "kj-n1-1053",
@@ -60777,7 +65695,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 心 (Hati / Pikiran / Perasaan) melambangkan konsep 'wise'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "慧",
+        "reading": "さとい",
+        "meaning_id": "wise"
+      },
+      {
+        "word": "慧的",
+        "reading": "けいてき",
+        "meaning_id": "bersifat wise"
+      },
+      {
+        "word": "慧化",
+        "reading": "けいか",
+        "meaning_id": "proses / perubahan wise"
+      }
+    ]
   },
   {
     "id": "kj-n1-1055",
@@ -60821,7 +65755,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 手 (Tangan) melambangkan konsep 'gift'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "摯",
+        "reading": "いた",
+        "meaning_id": "gift"
+      },
+      {
+        "word": "摯的",
+        "reading": "してき",
+        "meaning_id": "bersifat gift"
+      },
+      {
+        "word": "摯化",
+        "reading": "しか",
+        "meaning_id": "proses / perubahan gift"
+      }
+    ]
   },
   {
     "id": "kj-n1-1056",
@@ -60918,7 +65868,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 木 (Pohon / Kayu) melambangkan konsep 'watchtower'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "楼",
+        "reading": "たかどの",
+        "meaning_id": "watchtower"
+      },
+      {
+        "word": "楼的",
+        "reading": "ろうてき",
+        "meaning_id": "bersifat watchtower"
+      },
+      {
+        "word": "楼化",
+        "reading": "ろうか",
+        "meaning_id": "proses / perubahan watchtower"
+      }
+    ]
   },
   {
     "id": "kj-n1-1058",
@@ -60966,7 +65932,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 彡 (Tiga garis helai / Bulu halus) melambangkan konsep 'refined'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "彬",
+        "reading": "うるわ",
+        "meaning_id": "refined"
+      },
+      {
+        "word": "彬的",
+        "reading": "ひんてき",
+        "meaning_id": "bersifat refined"
+      },
+      {
+        "word": "彬化",
+        "reading": "ひんか",
+        "meaning_id": "proses / perubahan refined"
+      }
+    ]
   },
   {
     "id": "kj-n1-1059",
@@ -61020,7 +66002,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 匚 (Kotak penyimpanan) melambangkan konsep 'correct'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "匡",
+        "reading": "すく",
+        "meaning_id": "correct"
+      },
+      {
+        "word": "匡的",
+        "reading": "きょうてき",
+        "meaning_id": "bersifat correct"
+      },
+      {
+        "word": "匡化",
+        "reading": "きょうか",
+        "meaning_id": "proses / perubahan correct"
+      }
+    ]
   },
   {
     "id": "kj-n1-1060",
@@ -61115,7 +66113,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 欠 (Kurang / Menguap) melambangkan konsep 'respect'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "欽",
+        "reading": "つつし",
+        "meaning_id": "respect"
+      },
+      {
+        "word": "欽的",
+        "reading": "きんてき",
+        "meaning_id": "bersifat respect"
+      },
+      {
+        "word": "欽化",
+        "reading": "きんか",
+        "meaning_id": "proses / perubahan respect"
+      }
+    ]
   },
   {
     "id": "kj-n1-1062",
@@ -61160,7 +66174,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 艸 (Rumput / Tumbuhan herba) melambangkan konsep 'fuel'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "薪",
+        "reading": "たきぎ",
+        "meaning_id": "fuel"
+      },
+      {
+        "word": "薪的",
+        "reading": "しんてき",
+        "meaning_id": "bersifat fuel"
+      },
+      {
+        "word": "薪化",
+        "reading": "しんか",
+        "meaning_id": "proses / perubahan fuel"
+      }
+    ]
   },
   {
     "id": "kj-n1-1063",
@@ -61201,7 +66231,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 土 (Tanah / Bumi) melambangkan konsep 'piled high'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "堆",
+        "reading": "うずたか",
+        "meaning_id": "piled high"
+      },
+      {
+        "word": "堆的",
+        "reading": "たいてき",
+        "meaning_id": "bersifat piled high"
+      },
+      {
+        "word": "堆化",
+        "reading": "たいか",
+        "meaning_id": "proses / perubahan piled high"
+      }
+    ]
   },
   {
     "id": "kj-n1-1064",
@@ -61241,7 +66287,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 衣 (Pakaian / Baju) melambangkan konsep 'brown'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "褐",
+        "reading": "かつ",
+        "meaning_id": "brown"
+      },
+      {
+        "word": "褐的",
+        "reading": "かつてき",
+        "meaning_id": "bersifat brown"
+      },
+      {
+        "word": "褐化",
+        "reading": "かつか",
+        "meaning_id": "proses / perubahan brown"
+      }
+    ]
   },
   {
     "id": "kj-n1-1065",
@@ -61293,7 +66355,7 @@ window.nuggetKanjiN1 = [
       {
         "word": "賜る",
         "reading": "たまわる",
-        "meaning_id": "me-grant"
+        "meaning_id": "grant"
       }
     ]
   },
@@ -61338,7 +66400,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 山 (Gunung) melambangkan konsep 'steep'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "嵯",
+        "reading": "さ",
+        "meaning_id": "steep"
+      },
+      {
+        "word": "嵯的",
+        "reading": "さてき",
+        "meaning_id": "bersifat steep"
+      },
+      {
+        "word": "嵯化",
+        "reading": "さか",
+        "meaning_id": "proses / perubahan steep"
+      }
+    ]
   },
   {
     "id": "kj-n1-1067",
@@ -61381,7 +66459,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 糸 (Benang / Sutra) melambangkan konsep 'aturan'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "綜",
+        "reading": "おさ",
+        "meaning_id": "aturan"
+      },
+      {
+        "word": "綜的",
+        "reading": "そうてき",
+        "meaning_id": "bersifat aturan"
+      },
+      {
+        "word": "綜化",
+        "reading": "そうか",
+        "meaning_id": "proses / perubahan aturan"
+      }
+    ]
   },
   {
     "id": "kj-n1-1068",
@@ -61440,7 +66534,7 @@ window.nuggetKanjiN1 = [
       {
         "word": "繕う",
         "reading": "つくろう",
-        "meaning_id": "me-mend"
+        "meaning_id": "mend"
       }
     ]
   },
@@ -61541,7 +66635,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 羽 (Bulu sayap) melambangkan konsep 'green'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "翠",
+        "reading": "かわせみ",
+        "meaning_id": "green"
+      },
+      {
+        "word": "翠的",
+        "reading": "すいてき",
+        "meaning_id": "bersifat green"
+      },
+      {
+        "word": "翠化",
+        "reading": "すいか",
+        "meaning_id": "proses / perubahan green"
+      }
+    ]
   },
   {
     "id": "kj-n1-1071",
@@ -61587,7 +66697,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 魚 (Ikan) melambangkan konsep 'freshwater trout'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "鮎",
+        "reading": "あゆ",
+        "meaning_id": "freshwater trout"
+      },
+      {
+        "word": "鮎的",
+        "reading": "でんてき",
+        "meaning_id": "bersifat freshwater trout"
+      },
+      {
+        "word": "鮎化",
+        "reading": "でんか",
+        "meaning_id": "proses / perubahan freshwater trout"
+      }
+    ]
   },
   {
     "id": "kj-n1-1072",
@@ -61690,7 +66816,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 木 (Pohon / Kayu) melambangkan konsep 'hazelnut'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "榛",
+        "reading": "はしばみ",
+        "meaning_id": "hazelnut"
+      },
+      {
+        "word": "榛的",
+        "reading": "しんてき",
+        "meaning_id": "bersifat hazelnut"
+      },
+      {
+        "word": "榛化",
+        "reading": "しんか",
+        "meaning_id": "proses / perubahan hazelnut"
+      }
+    ]
   },
   {
     "id": "kj-n1-1074",
@@ -61745,7 +66887,7 @@ window.nuggetKanjiN1 = [
       {
         "word": "凹む",
         "reading": "へこむ",
-        "meaning_id": "me-be dented"
+        "meaning_id": "menjadi / ada dented"
       }
     ]
   },
@@ -61858,7 +67000,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 心 (Hati / Pikiran / Perasaan) melambangkan konsep 'all'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "惣",
+        "reading": "すべ",
+        "meaning_id": "all"
+      },
+      {
+        "word": "惣的",
+        "reading": "そうてき",
+        "meaning_id": "bersifat all"
+      },
+      {
+        "word": "惣化",
+        "reading": "そうか",
+        "meaning_id": "proses / perubahan all"
+      }
+    ]
   },
   {
     "id": "kj-n1-1077",
@@ -61951,7 +67109,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 艸 (Rumput / Tumbuhan herba) melambangkan konsep 'vine'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "蔦",
+        "reading": "つた",
+        "meaning_id": "vine"
+      },
+      {
+        "word": "蔦的",
+        "reading": "ちょうてき",
+        "meaning_id": "bersifat vine"
+      },
+      {
+        "word": "蔦化",
+        "reading": "ちょうか",
+        "meaning_id": "proses / perubahan vine"
+      }
+    ]
   },
   {
     "id": "kj-n1-1079",
@@ -61998,7 +67172,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 玉 (Giok / Permata berharga) melambangkan konsep 'play'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "玩",
+        "reading": "もちあそ",
+        "meaning_id": "play"
+      },
+      {
+        "word": "玩的",
+        "reading": "がんてき",
+        "meaning_id": "bersifat play"
+      },
+      {
+        "word": "玩化",
+        "reading": "がんか",
+        "meaning_id": "proses / perubahan play"
+      }
+    ]
   },
   {
     "id": "kj-n1-1080",
@@ -62047,7 +67237,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Logam / Emas (金) dan East (金) yang membentuk makna visual 'tempering'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "錬",
+        "reading": "ね",
+        "meaning_id": "tempering"
+      },
+      {
+        "word": "錬的",
+        "reading": "れんてき",
+        "meaning_id": "bersifat tempering"
+      },
+      {
+        "word": "錬化",
+        "reading": "れんか",
+        "meaning_id": "proses / perubahan tempering"
+      }
+    ]
   },
   {
     "id": "kj-n1-1081",
@@ -62144,7 +67350,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Turkey (隹) dan Cross (隹) yang membentuk makna visual 'falcon'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "隼",
+        "reading": "はやぶさ",
+        "meaning_id": "falcon"
+      },
+      {
+        "word": "隼的",
+        "reading": "しゅんてき",
+        "meaning_id": "bersifat falcon"
+      },
+      {
+        "word": "隼化",
+        "reading": "しゅんか",
+        "meaning_id": "proses / perubahan falcon"
+      }
+    ]
   },
   {
     "id": "kj-n1-1083",
@@ -62190,7 +67412,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 水 (Air) melambangkan konsep 'strand'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "渚",
+        "reading": "なぎさ",
+        "meaning_id": "strand"
+      },
+      {
+        "word": "渚的",
+        "reading": "しょてき",
+        "meaning_id": "bersifat strand"
+      },
+      {
+        "word": "渚化",
+        "reading": "しょか",
+        "meaning_id": "proses / perubahan strand"
+      }
+    ]
   },
   {
     "id": "kj-n1-1084",
@@ -62288,7 +67526,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 辵 (Jalan raya / Bergerak maju) melambangkan konsep 'pursue'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "逐",
+        "reading": "ちく",
+        "meaning_id": "pursue"
+      },
+      {
+        "word": "逐的",
+        "reading": "ちくてき",
+        "meaning_id": "bersifat pursue"
+      },
+      {
+        "word": "逐化",
+        "reading": "ちくか",
+        "meaning_id": "proses / perubahan pursue"
+      }
+    ]
   },
   {
     "id": "kj-n1-1086",
@@ -62338,7 +67592,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 斤 (Kapak / Berat) melambangkan konsep 'reject'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "斥",
+        "reading": "しりぞ",
+        "meaning_id": "reject"
+      },
+      {
+        "word": "斥的",
+        "reading": "せきてき",
+        "meaning_id": "bersifat reject"
+      },
+      {
+        "word": "斥化",
+        "reading": "せきか",
+        "meaning_id": "proses / perubahan reject"
+      }
+    ]
   },
   {
     "id": "kj-n1-1087",
@@ -62432,7 +67702,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 艸 (Rumput / Tumbuhan herba) melambangkan konsep 'lotus'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "芙",
+        "reading": "ふ",
+        "meaning_id": "lotus"
+      },
+      {
+        "word": "芙的",
+        "reading": "ふてき",
+        "meaning_id": "bersifat lotus"
+      },
+      {
+        "word": "芙化",
+        "reading": "ふか",
+        "meaning_id": "proses / perubahan lotus"
+      }
+    ]
   },
   {
     "id": "kj-n1-1089",
@@ -62475,7 +67761,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 言 (Kata / Bahasa / Ucapan) melambangkan konsep 'imperial edict'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "詔",
+        "reading": "みことのり",
+        "meaning_id": "imperial edict"
+      },
+      {
+        "word": "詔的",
+        "reading": "しょうてき",
+        "meaning_id": "bersifat imperial edict"
+      },
+      {
+        "word": "詔化",
+        "reading": "しょうか",
+        "meaning_id": "proses / perubahan imperial edict"
+      }
+    ]
   },
   {
     "id": "kj-n1-1090",
@@ -62521,7 +67823,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 白 (Putih / Murni) melambangkan konsep 'swamp'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "皐",
+        "reading": "さつき",
+        "meaning_id": "swamp"
+      },
+      {
+        "word": "皐的",
+        "reading": "こうてき",
+        "meaning_id": "bersifat swamp"
+      },
+      {
+        "word": "皐化",
+        "reading": "こうか",
+        "meaning_id": "proses / perubahan swamp"
+      }
+    ]
   },
   {
     "id": "kj-n1-1091",
@@ -62615,7 +67933,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Pohon (木) dan Odd (木) yang membentuk makna visual 'kursi'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "椅",
+        "reading": "い",
+        "meaning_id": "kursi"
+      },
+      {
+        "word": "椅的",
+        "reading": "いてき",
+        "meaning_id": "bersifat kursi"
+      },
+      {
+        "word": "椅化",
+        "reading": "いか",
+        "meaning_id": "proses / perubahan kursi"
+      }
+    ]
   },
   {
     "id": "kj-n1-1093",
@@ -62666,7 +68000,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 心 (Hati / Pikiran / Perasaan) melambangkan konsep 'consider'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "惟",
+        "reading": "おも",
+        "meaning_id": "consider"
+      },
+      {
+        "word": "惟的",
+        "reading": "いてき",
+        "meaning_id": "bersifat consider"
+      },
+      {
+        "word": "惟化",
+        "reading": "いか",
+        "meaning_id": "proses / perubahan consider"
+      }
+    ]
   },
   {
     "id": "kj-n1-1094",
@@ -62713,7 +68063,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 人 (Orang / Manusia) melambangkan konsep 'help'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "佑",
+        "reading": "たす",
+        "meaning_id": "help"
+      },
+      {
+        "word": "佑的",
+        "reading": "ゆうてき",
+        "meaning_id": "bersifat help"
+      },
+      {
+        "word": "佑化",
+        "reading": "ゆうか",
+        "meaning_id": "proses / perubahan help"
+      }
+    ]
   },
   {
     "id": "kj-n1-1095",
@@ -62762,7 +68128,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 羽 (Bulu sayap) melambangkan konsep 'shine'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "耀",
+        "reading": "かがや",
+        "meaning_id": "shine"
+      },
+      {
+        "word": "耀的",
+        "reading": "ようてき",
+        "meaning_id": "bersifat shine"
+      },
+      {
+        "word": "耀化",
+        "reading": "ようか",
+        "meaning_id": "proses / perubahan shine"
+      }
+    ]
   },
   {
     "id": "kj-n1-1096",
@@ -62802,7 +68184,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 黑 (Hitam) melambangkan konsep 'blackened eyebrows'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "黛",
+        "reading": "まゆずみ",
+        "meaning_id": "blackened eyebrows"
+      },
+      {
+        "word": "黛的",
+        "reading": "たいてき",
+        "meaning_id": "bersifat blackened eyebrows"
+      },
+      {
+        "word": "黛化",
+        "reading": "たいか",
+        "meaning_id": "proses / perubahan blackened eyebrows"
+      }
+    ]
   },
   {
     "id": "kj-n1-1097",
@@ -62847,7 +68245,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 水 (Air) melambangkan konsep 'kindness'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "渥",
+        "reading": "あつ",
+        "meaning_id": "kindness"
+      },
+      {
+        "word": "渥的",
+        "reading": "あくてき",
+        "meaning_id": "bersifat kindness"
+      },
+      {
+        "word": "渥化",
+        "reading": "あくか",
+        "meaning_id": "proses / perubahan kindness"
+      }
+    ]
   },
   {
     "id": "kj-n1-1098",
@@ -62903,7 +68317,7 @@ window.nuggetKanjiN1 = [
       {
         "word": "憧れる",
         "reading": "あこがれる",
-        "meaning_id": "me-long for"
+        "meaning_id": "long for"
       },
       {
         "word": "憧れ",
@@ -62954,7 +68368,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 宀 (Atap rumah) melambangkan konsep 'wee hours'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "宵",
+        "reading": "よい",
+        "meaning_id": "wee hours"
+      },
+      {
+        "word": "宵的",
+        "reading": "しょうてき",
+        "meaning_id": "bersifat wee hours"
+      },
+      {
+        "word": "宵化",
+        "reading": "しょうか",
+        "meaning_id": "proses / perubahan wee hours"
+      }
+    ]
   },
   {
     "id": "kj-n1-1100",
@@ -63002,7 +68432,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Death (女) dan Wanita (女) yang membentuk makna visual 'delusion'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "妄",
+        "reading": "みだ",
+        "meaning_id": "delusion"
+      },
+      {
+        "word": "妄的",
+        "reading": "もうてき",
+        "meaning_id": "bersifat delusion"
+      },
+      {
+        "word": "妄化",
+        "reading": "もうか",
+        "meaning_id": "proses / perubahan delusion"
+      }
+    ]
   },
   {
     "id": "kj-n1-1101",
@@ -63054,7 +68500,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 心 (Hati / Pikiran / Perasaan) melambangkan konsep 'sincere'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "惇",
+        "reading": "あつ",
+        "meaning_id": "sincere"
+      },
+      {
+        "word": "惇的",
+        "reading": "しゅんてき",
+        "meaning_id": "bersifat sincere"
+      },
+      {
+        "word": "惇化",
+        "reading": "しゅんか",
+        "meaning_id": "proses / perubahan sincere"
+      }
+    ]
   },
   {
     "id": "kj-n1-1102",
@@ -63102,7 +68564,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 肉 (Daging) melambangkan konsep 'dried meat'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "脩",
+        "reading": "おさ",
+        "meaning_id": "dried meat"
+      },
+      {
+        "word": "脩的",
+        "reading": "しゅうてき",
+        "meaning_id": "bersifat dried meat"
+      },
+      {
+        "word": "脩化",
+        "reading": "しゅうか",
+        "meaning_id": "proses / perubahan dried meat"
+      }
+    ]
   },
   {
     "id": "kj-n1-1103",
@@ -63151,7 +68629,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 用 (Menggunakan / Faedah) melambangkan konsep 'for the first time'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "甫",
+        "reading": "はじ",
+        "meaning_id": "for the first time"
+      },
+      {
+        "word": "甫的",
+        "reading": "ほてき",
+        "meaning_id": "bersifat for the first time"
+      },
+      {
+        "word": "甫化",
+        "reading": "ほか",
+        "meaning_id": "proses / perubahan for the first time"
+      }
+    ]
   },
   {
     "id": "kj-n1-1104",
@@ -63208,7 +68702,7 @@ window.nuggetKanjiN1 = [
       {
         "word": "酌む",
         "reading": "くむ",
-        "meaning_id": "me-serve sake"
+        "meaning_id": "serve sake"
       }
     ]
   },
@@ -63252,7 +68746,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 虫 (Serangga / Cacing) melambangkan konsep 'silkworm'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "蚕",
+        "reading": "かいこ",
+        "meaning_id": "silkworm"
+      },
+      {
+        "word": "蚕的",
+        "reading": "さんてき",
+        "meaning_id": "bersifat silkworm"
+      },
+      {
+        "word": "蚕化",
+        "reading": "さんか",
+        "meaning_id": "proses / perubahan silkworm"
+      }
+    ]
   },
   {
     "id": "kj-n1-1106",
@@ -63300,7 +68810,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 女 (Wanita / Perempuan) melambangkan konsep 'glad'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "嬉",
+        "reading": "うれ",
+        "meaning_id": "glad"
+      },
+      {
+        "word": "嬉的",
+        "reading": "きてき",
+        "meaning_id": "bersifat glad"
+      },
+      {
+        "word": "嬉化",
+        "reading": "きか",
+        "meaning_id": "proses / perubahan glad"
+      }
+    ]
   },
   {
     "id": "kj-n1-1107",
@@ -63343,7 +68869,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Flowers (艸) dan Warehouse (艸) yang membentuk makna visual 'biru'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "蒼",
+        "reading": "あお",
+        "meaning_id": "biru"
+      },
+      {
+        "word": "蒼的",
+        "reading": "そうてき",
+        "meaning_id": "bersifat biru"
+      },
+      {
+        "word": "蒼化",
+        "reading": "そうか",
+        "meaning_id": "proses / perubahan biru"
+      }
+    ]
   },
   {
     "id": "kj-n1-1108",
@@ -63387,7 +68929,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 日 (Matahari / Hari) melambangkan konsep 'shine'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "暉",
+        "reading": "かが",
+        "meaning_id": "shine"
+      },
+      {
+        "word": "暉的",
+        "reading": "きてき",
+        "meaning_id": "bersifat shine"
+      },
+      {
+        "word": "暉化",
+        "reading": "きか",
+        "meaning_id": "proses / perubahan shine"
+      }
+    ]
   },
   {
     "id": "kj-n1-1109",
@@ -63434,7 +68992,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 頁 (Halaman kepala) melambangkan konsep 'distribute'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "頒",
+        "reading": "わ",
+        "meaning_id": "distribute"
+      },
+      {
+        "word": "頒的",
+        "reading": "はんてき",
+        "meaning_id": "bersifat distribute"
+      },
+      {
+        "word": "頒化",
+        "reading": "はんか",
+        "meaning_id": "proses / perubahan distribute"
+      }
+    ]
   },
   {
     "id": "kj-n1-1110",
@@ -63478,7 +69052,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 口 (Mulut / Bukaan) melambangkan konsep 'only'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "只",
+        "reading": "ただ",
+        "meaning_id": "only"
+      },
+      {
+        "word": "只的",
+        "reading": "してき",
+        "meaning_id": "bersifat only"
+      },
+      {
+        "word": "只化",
+        "reading": "しか",
+        "meaning_id": "proses / perubahan only"
+      }
+    ]
   },
   {
     "id": "kj-n1-1111",
@@ -63518,7 +69108,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 肉 (Daging) melambangkan konsep 'limb'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "肢",
+        "reading": "し",
+        "meaning_id": "limb"
+      },
+      {
+        "word": "肢的",
+        "reading": "してき",
+        "meaning_id": "bersifat limb"
+      },
+      {
+        "word": "肢化",
+        "reading": "しか",
+        "meaning_id": "proses / perubahan limb"
+      }
+    ]
   },
   {
     "id": "kj-n1-1112",
@@ -63563,7 +69169,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 木 (Pohon / Kayu) melambangkan konsep 'cedar'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "檀",
+        "reading": "まゆみ",
+        "meaning_id": "cedar"
+      },
+      {
+        "word": "檀的",
+        "reading": "だんてき",
+        "meaning_id": "bersifat cedar"
+      },
+      {
+        "word": "檀化",
+        "reading": "だんか",
+        "meaning_id": "proses / perubahan cedar"
+      }
+    ]
   },
   {
     "id": "kj-n1-1113",
@@ -63605,7 +69227,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 几 (Meja kecil / Bangku) melambangkan konsep 'victory song'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "凱",
+        "reading": "かちどき",
+        "meaning_id": "victory song"
+      },
+      {
+        "word": "凱的",
+        "reading": "がいてき",
+        "meaning_id": "bersifat victory song"
+      },
+      {
+        "word": "凱化",
+        "reading": "がいか",
+        "meaning_id": "proses / perubahan victory song"
+      }
+    ]
   },
   {
     "id": "kj-n1-1114",
@@ -63652,7 +69290,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 彐 (Moncong babi) melambangkan konsep 'comet'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "彗",
+        "reading": "ほうき",
+        "meaning_id": "comet"
+      },
+      {
+        "word": "彗的",
+        "reading": "すいてき",
+        "meaning_id": "bersifat comet"
+      },
+      {
+        "word": "彗化",
+        "reading": "すいか",
+        "meaning_id": "proses / perubahan comet"
+      }
+    ]
   },
   {
     "id": "kj-n1-1115",
@@ -63692,7 +69346,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 言 (Kata / Bahasa / Ucapan) melambangkan konsep 'mimeograph'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "謄",
+        "reading": "とう",
+        "meaning_id": "mimeograph"
+      },
+      {
+        "word": "謄的",
+        "reading": "とうてき",
+        "meaning_id": "bersifat mimeograph"
+      },
+      {
+        "word": "謄化",
+        "reading": "とうか",
+        "meaning_id": "proses / perubahan mimeograph"
+      }
+    ]
   },
   {
     "id": "kj-n1-1116",
@@ -63739,7 +69409,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Dua (二) dan Orang (人) dan Bulan (月) yang membentuk makna visual 'stature'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "脊",
+        "reading": "せ",
+        "meaning_id": "stature"
+      },
+      {
+        "word": "脊的",
+        "reading": "せきてき",
+        "meaning_id": "bersifat stature"
+      },
+      {
+        "word": "脊化",
+        "reading": "せきか",
+        "meaning_id": "proses / perubahan stature"
+      }
+    ]
   },
   {
     "id": "kj-n1-1117",
@@ -63782,7 +69468,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Pohon (木) dan Spicy (木) yang membentuk makna visual 'catalpa tree'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "梓",
+        "reading": "あずさ",
+        "meaning_id": "catalpa tree"
+      },
+      {
+        "word": "梓的",
+        "reading": "してき",
+        "meaning_id": "bersifat catalpa tree"
+      },
+      {
+        "word": "梓化",
+        "reading": "しか",
+        "meaning_id": "proses / perubahan catalpa tree"
+      }
+    ]
   },
   {
     "id": "kj-n1-1118",
@@ -63828,7 +69530,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 一 (Satu / Garis horizontal) melambangkan konsep 'sign of the ox or cow'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "丑",
+        "reading": "うし",
+        "meaning_id": "sign of the ox or cow"
+      },
+      {
+        "word": "丑的",
+        "reading": "ちゅうてき",
+        "meaning_id": "bersifat sign of the ox or cow"
+      },
+      {
+        "word": "丑化",
+        "reading": "ちゅうか",
+        "meaning_id": "proses / perubahan sign of the ox or cow"
+      }
+    ]
   },
   {
     "id": "kj-n1-1119",
@@ -63874,7 +69592,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 口 (Mulut / Bukaan) melambangkan konsep 'heir'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "嗣",
+        "reading": "し",
+        "meaning_id": "heir"
+      },
+      {
+        "word": "嗣的",
+        "reading": "してき",
+        "meaning_id": "bersifat heir"
+      },
+      {
+        "word": "嗣化",
+        "reading": "しか",
+        "meaning_id": "proses / perubahan heir"
+      }
+    ]
   },
   {
     "id": "kj-n1-1120",
@@ -63924,12 +69658,12 @@ window.nuggetKanjiN1 = [
       {
         "word": "叶う",
         "reading": "かなう",
-        "meaning_id": "me-come true"
+        "meaning_id": "come true"
       },
       {
         "word": "叶える",
         "reading": "かなえる",
-        "meaning_id": "me-grant"
+        "meaning_id": "grant"
       }
     ]
   },
@@ -63981,7 +69715,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 水 (Air) melambangkan konsep 'eventide'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "汐",
+        "reading": "しお",
+        "meaning_id": "eventide"
+      },
+      {
+        "word": "汐的",
+        "reading": "せきてき",
+        "meaning_id": "bersifat eventide"
+      },
+      {
+        "word": "汐化",
+        "reading": "せきか",
+        "meaning_id": "proses / perubahan eventide"
+      }
+    ]
   },
   {
     "id": "kj-n1-1122",
@@ -64022,7 +69772,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 糸 (Benang / Sutra) melambangkan konsep 'brilliant fabric design'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "絢",
+        "reading": "けん",
+        "meaning_id": "brilliant fabric design"
+      },
+      {
+        "word": "絢的",
+        "reading": "けんてき",
+        "meaning_id": "bersifat brilliant fabric design"
+      },
+      {
+        "word": "絢化",
+        "reading": "けんか",
+        "meaning_id": "proses / perubahan brilliant fabric design"
+      }
+    ]
   },
   {
     "id": "kj-n1-1123",
@@ -64118,7 +69884,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 月 (Bulan / Bagian tubuh (daging)) melambangkan konsep 'conjunction (astronomy)'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "朔",
+        "reading": "ついたち",
+        "meaning_id": "conjunction (astronomy)"
+      },
+      {
+        "word": "朔的",
+        "reading": "さくてき",
+        "meaning_id": "bersifat conjunction (astronomy)"
+      },
+      {
+        "word": "朔化",
+        "reading": "さくか",
+        "meaning_id": "proses / perubahan conjunction (astronomy)"
+      }
+    ]
   },
   {
     "id": "kj-n1-1125",
@@ -64165,7 +69947,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 人 (Orang / Manusia) melambangkan konsep 'nursing'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "伽",
+        "reading": "とぎ",
+        "meaning_id": "nursing"
+      },
+      {
+        "word": "伽的",
+        "reading": "かてき",
+        "meaning_id": "bersifat nursing"
+      },
+      {
+        "word": "伽化",
+        "reading": "かか",
+        "meaning_id": "proses / perubahan nursing"
+      }
+    ]
   },
   {
     "id": "kj-n1-1126",
@@ -64207,7 +70005,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 心 (Hati / Pikiran / Perasaan) melambangkan konsep 'selfish'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "恣",
+        "reading": "ほしいまま",
+        "meaning_id": "selfish"
+      },
+      {
+        "word": "恣的",
+        "reading": "してき",
+        "meaning_id": "bersifat selfish"
+      },
+      {
+        "word": "恣化",
+        "reading": "しか",
+        "meaning_id": "proses / perubahan selfish"
+      }
+    ]
   },
   {
     "id": "kj-n1-1127",
@@ -64257,7 +70071,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 田 (Sawah / Ladang padi) melambangkan konsep 'furrow'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "畝",
+        "reading": "せ",
+        "meaning_id": "furrow"
+      },
+      {
+        "word": "畝的",
+        "reading": "ぼうてき",
+        "meaning_id": "bersifat furrow"
+      },
+      {
+        "word": "畝化",
+        "reading": "ぼうか",
+        "meaning_id": "proses / perubahan furrow"
+      }
+    ]
   },
   {
     "id": "kj-n1-1128",
@@ -64306,7 +70136,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 手 (Tangan) melambangkan konsep 'extract'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "抄",
+        "reading": "しょう",
+        "meaning_id": "extract"
+      },
+      {
+        "word": "抄的",
+        "reading": "しょうてき",
+        "meaning_id": "bersifat extract"
+      },
+      {
+        "word": "抄化",
+        "reading": "しょうか",
+        "meaning_id": "proses / perubahan extract"
+      }
+    ]
   },
   {
     "id": "kj-n1-1129",
@@ -64349,7 +70195,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 麥 (Gandum barley) melambangkan konsep 'noodles'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "麺",
+        "reading": "むぎこ",
+        "meaning_id": "noodles"
+      },
+      {
+        "word": "麺的",
+        "reading": "めんてき",
+        "meaning_id": "bersifat noodles"
+      },
+      {
+        "word": "麺化",
+        "reading": "めんか",
+        "meaning_id": "proses / perubahan noodles"
+      }
+    ]
   },
   {
     "id": "kj-n1-1130",
@@ -64396,7 +70258,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Cross (戈) dan Drunkard (戈) dan Rice Paddy (戈) dan Together (戈) yang membentuk makna visual 'be crowned with'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "戴",
+        "reading": "いただ",
+        "meaning_id": "be crowned with"
+      },
+      {
+        "word": "戴的",
+        "reading": "たいてき",
+        "meaning_id": "bersifat be crowned with"
+      },
+      {
+        "word": "戴化",
+        "reading": "たいか",
+        "meaning_id": "proses / perubahan be crowned with"
+      }
+    ]
   },
   {
     "id": "kj-n1-1131",
@@ -64447,7 +70325,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Big (爻) dan Treasure (爻) yang membentuk makna visual 'refreshing'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "爽",
+        "reading": "あき",
+        "meaning_id": "refreshing"
+      },
+      {
+        "word": "爽的",
+        "reading": "そうてき",
+        "meaning_id": "bersifat refreshing"
+      },
+      {
+        "word": "爽化",
+        "reading": "そうか",
+        "meaning_id": "proses / perubahan refreshing"
+      }
+    ]
   },
   {
     "id": "kj-n1-1132",
@@ -64545,7 +70439,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 黍 (Millet ketan) melambangkan konsep 'gelap'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "黎",
+        "reading": "くろ",
+        "meaning_id": "gelap"
+      },
+      {
+        "word": "黎的",
+        "reading": "れいてき",
+        "meaning_id": "bersifat gelap"
+      },
+      {
+        "word": "黎化",
+        "reading": "れいか",
+        "meaning_id": "proses / perubahan gelap"
+      }
+    ]
   },
   {
     "id": "kj-n1-1134",
@@ -64588,7 +70498,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Soul (心) dan Narwhal (心) dan Construction (心) dan Bulan (月) yang membentuk makna visual 'lazy'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "惰",
+        "reading": "だ",
+        "meaning_id": "lazy"
+      },
+      {
+        "word": "惰的",
+        "reading": "だてき",
+        "meaning_id": "bersifat lazy"
+      },
+      {
+        "word": "惰化",
+        "reading": "だか",
+        "meaning_id": "proses / perubahan lazy"
+      }
+    ]
   },
   {
     "id": "kj-n1-1135",
@@ -64629,7 +70555,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Red (虫) dan Insect (虫) yang membentuk makna visual 'barbarian'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "蛮",
+        "reading": "えびす",
+        "meaning_id": "barbarian"
+      },
+      {
+        "word": "蛮的",
+        "reading": "ばんてき",
+        "meaning_id": "bersifat barbarian"
+      },
+      {
+        "word": "蛮化",
+        "reading": "ばんか",
+        "meaning_id": "proses / perubahan barbarian"
+      }
+    ]
   },
   {
     "id": "kj-n1-1136",
@@ -64685,7 +70627,7 @@ window.nuggetKanjiN1 = [
       {
         "word": "冴える",
         "reading": "さえる",
-        "meaning_id": "me-be clear"
+        "meaning_id": "menjadi / ada clear"
       }
     ]
   },
@@ -64733,7 +70675,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 日 (Matahari / Hari) melambangkan konsep 'flourishing'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "旺",
+        "reading": "さかん",
+        "meaning_id": "flourishing"
+      },
+      {
+        "word": "旺的",
+        "reading": "おうてき",
+        "meaning_id": "bersifat flourishing"
+      },
+      {
+        "word": "旺化",
+        "reading": "おうか",
+        "meaning_id": "proses / perubahan flourishing"
+      }
+    ]
   },
   {
     "id": "kj-n1-1138",
@@ -64786,7 +70744,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Flowers (艸) dan Bright (艸) yang membentuk makna visual 'show symptoms of'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "萌",
+        "reading": "も",
+        "meaning_id": "show symptoms of"
+      },
+      {
+        "word": "萌的",
+        "reading": "ほうてき",
+        "meaning_id": "bersifat show symptoms of"
+      },
+      {
+        "word": "萌化",
+        "reading": "ほうか",
+        "meaning_id": "proses / perubahan show symptoms of"
+      }
+    ]
   },
   {
     "id": "kj-n1-1139",
@@ -64827,7 +70801,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 冖 (Penutup mahkota) melambangkan konsep 'gelap'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "冥",
+        "reading": "くら",
+        "meaning_id": "gelap"
+      },
+      {
+        "word": "冥的",
+        "reading": "めいてき",
+        "meaning_id": "bersifat gelap"
+      },
+      {
+        "word": "冥化",
+        "reading": "めいか",
+        "meaning_id": "proses / perubahan gelap"
+      }
+    ]
   },
   {
     "id": "kj-n1-1140",
@@ -64870,7 +70860,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 人 (Orang / Manusia) melambangkan konsep 'recollect'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "偲",
+        "reading": "しの",
+        "meaning_id": "recollect"
+      },
+      {
+        "word": "偲的",
+        "reading": "さいてき",
+        "meaning_id": "bersifat recollect"
+      },
+      {
+        "word": "偲化",
+        "reading": "さいか",
+        "meaning_id": "proses / perubahan recollect"
+      }
+    ]
   },
   {
     "id": "kj-n1-1141",
@@ -64914,7 +70920,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 士 (Ksatria / Cendekiawan) melambangkan konsep 'one (in documents)'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "壱",
+        "reading": "ひとつ",
+        "meaning_id": "one (in documents)"
+      },
+      {
+        "word": "壱的",
+        "reading": "いちてき",
+        "meaning_id": "bersifat one (in documents)"
+      },
+      {
+        "word": "壱化",
+        "reading": "いちか",
+        "meaning_id": "proses / perubahan one (in documents)"
+      }
+    ]
   },
   {
     "id": "kj-n1-1142",
@@ -64958,7 +70980,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari King (玉) dan Private (玉) dan Pedang (刀) dan Rice Paddy (玉) yang membentuk makna visual 'lapis lazuli'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "瑠",
+        "reading": "る",
+        "meaning_id": "lapis lazuli"
+      },
+      {
+        "word": "瑠的",
+        "reading": "るてき",
+        "meaning_id": "bersifat lapis lazuli"
+      },
+      {
+        "word": "瑠化",
+        "reading": "るか",
+        "meaning_id": "proses / perubahan lapis lazuli"
+      }
+    ]
   },
   {
     "id": "kj-n1-1143",
@@ -65013,7 +71051,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 儿 (Kaki manusia / Anak berjalan) melambangkan konsep 'license'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "允",
+        "reading": "じょう",
+        "meaning_id": "license"
+      },
+      {
+        "word": "允的",
+        "reading": "いんてき",
+        "meaning_id": "bersifat license"
+      },
+      {
+        "word": "允化",
+        "reading": "いんか",
+        "meaning_id": "proses / perubahan license"
+      }
+    ]
   },
   {
     "id": "kj-n1-1144",
@@ -65055,7 +71109,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 人 (Orang / Manusia) melambangkan konsep 'marquis'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "侯",
+        "reading": "こう",
+        "meaning_id": "marquis"
+      },
+      {
+        "word": "侯的",
+        "reading": "こうてき",
+        "meaning_id": "bersifat marquis"
+      },
+      {
+        "word": "侯化",
+        "reading": "こうか",
+        "meaning_id": "proses / perubahan marquis"
+      }
+    ]
   },
   {
     "id": "kj-n1-1145",
@@ -65105,7 +71175,7 @@ window.nuggetKanjiN1 = [
       {
         "word": "蒔く",
         "reading": "まく",
-        "meaning_id": "me-sow"
+        "meaning_id": "sow"
       }
     ]
   },
@@ -65148,7 +71218,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Fish (魚) dan Village (魚) yang membentuk makna visual 'carp'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "鯉",
+        "reading": "こい",
+        "meaning_id": "carp"
+      },
+      {
+        "word": "鯉的",
+        "reading": "りてき",
+        "meaning_id": "bersifat carp"
+      },
+      {
+        "word": "鯉化",
+        "reading": "りか",
+        "meaning_id": "proses / perubahan carp"
+      }
+    ]
   },
   {
     "id": "kj-n1-1147",
@@ -65288,7 +71374,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 言 (Kata / Bahasa / Ucapan) melambangkan konsep 'obituary'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "訃",
+        "reading": "しらせ",
+        "meaning_id": "obituary"
+      },
+      {
+        "word": "訃的",
+        "reading": "ふてき",
+        "meaning_id": "bersifat obituary"
+      },
+      {
+        "word": "訃化",
+        "reading": "ふか",
+        "meaning_id": "proses / perubahan obituary"
+      }
+    ]
   },
   {
     "id": "kj-n1-1150",
@@ -65332,7 +71434,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 舛 (Berseberangan / Salah langkah) melambangkan konsep 'type of morning glory'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "舜",
+        "reading": "しゅん",
+        "meaning_id": "type of morning glory"
+      },
+      {
+        "word": "舜的",
+        "reading": "しゅんてき",
+        "meaning_id": "bersifat type of morning glory"
+      },
+      {
+        "word": "舜化",
+        "reading": "しゅんか",
+        "meaning_id": "proses / perubahan type of morning glory"
+      }
+    ]
   },
   {
     "id": "kj-n1-1151",
@@ -65381,7 +71499,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 田 (Sawah / Ladang padi) melambangkan konsep 'fear'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "畏",
+        "reading": "おそ",
+        "meaning_id": "fear"
+      },
+      {
+        "word": "畏的",
+        "reading": "いてき",
+        "meaning_id": "bersifat fear"
+      },
+      {
+        "word": "畏化",
+        "reading": "いか",
+        "meaning_id": "proses / perubahan fear"
+      }
+    ]
   },
   {
     "id": "kj-n1-1152",
@@ -65423,7 +71557,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 口 (Mulut / Bukaan) melambangkan konsep 'tenggorokan'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "喉",
+        "reading": "のど",
+        "meaning_id": "tenggorokan"
+      },
+      {
+        "word": "喉的",
+        "reading": "こうてき",
+        "meaning_id": "bersifat tenggorokan"
+      },
+      {
+        "word": "喉化",
+        "reading": "こうか",
+        "meaning_id": "proses / perubahan tenggorokan"
+      }
+    ]
   },
   {
     "id": "kj-n1-1153",
@@ -65471,7 +71621,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari King (玉) dan Flowers (玉) dan Center (玉) yang membentuk makna visual 'sparkle of jewelry'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "瑛",
+        "reading": "えい",
+        "meaning_id": "sparkle of jewelry"
+      },
+      {
+        "word": "瑛的",
+        "reading": "えいてき",
+        "meaning_id": "bersifat sparkle of jewelry"
+      },
+      {
+        "word": "瑛化",
+        "reading": "えいか",
+        "meaning_id": "proses / perubahan sparkle of jewelry"
+      }
+    ]
   },
   {
     "id": "kj-n1-1154",
@@ -65582,7 +71748,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 彡 (Tiga garis helai / Bulu halus) melambangkan konsep 'spotted'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "彪",
+        "reading": "あや",
+        "meaning_id": "spotted"
+      },
+      {
+        "word": "彪的",
+        "reading": "ひょうてき",
+        "meaning_id": "bersifat spotted"
+      },
+      {
+        "word": "彪化",
+        "reading": "ひょうか",
+        "meaning_id": "proses / perubahan spotted"
+      }
+    ]
   },
   {
     "id": "kj-n1-1156",
@@ -65732,7 +71914,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Benang (糸) dan Odd (糸) yang membentuk makna visual 'figured cloth'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "綺",
+        "reading": "あや",
+        "meaning_id": "figured cloth"
+      },
+      {
+        "word": "綺的",
+        "reading": "きてき",
+        "meaning_id": "bersifat figured cloth"
+      },
+      {
+        "word": "綺化",
+        "reading": "きか",
+        "meaning_id": "proses / perubahan figured cloth"
+      }
+    ]
   },
   {
     "id": "kj-n1-1159",
@@ -65777,7 +71975,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Flowers (艸) dan Dry (艸) yang membentuk makna visual 'taro'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "芋",
+        "reading": "いも",
+        "meaning_id": "taro"
+      },
+      {
+        "word": "芋的",
+        "reading": "うてき",
+        "meaning_id": "bersifat taro"
+      },
+      {
+        "word": "芋化",
+        "reading": "うか",
+        "meaning_id": "proses / perubahan taro"
+      }
+    ]
   },
   {
     "id": "kj-n1-1160",
@@ -65822,7 +72036,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Flowers (艸) dan West (艸) yang membentuk makna visual 'madder'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "茜",
+        "reading": "あかね",
+        "meaning_id": "madder"
+      },
+      {
+        "word": "茜的",
+        "reading": "せんてき",
+        "meaning_id": "bersifat madder"
+      },
+      {
+        "word": "茜化",
+        "reading": "せんか",
+        "meaning_id": "proses / perubahan madder"
+      }
+    ]
   },
   {
     "id": "kj-n1-1161",
@@ -65930,7 +72160,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 白 (Putih / Murni) melambangkan konsep 'putih'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "皓",
+        "reading": "しろ",
+        "meaning_id": "putih"
+      },
+      {
+        "word": "皓的",
+        "reading": "こうてき",
+        "meaning_id": "bersifat putih"
+      },
+      {
+        "word": "皓化",
+        "reading": "こうか",
+        "meaning_id": "proses / perubahan putih"
+      }
+    ]
   },
   {
     "id": "kj-n1-1163",
@@ -65973,7 +72219,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 水 (Air) melambangkan konsep 'sparkling water'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "洸",
+        "reading": "こう",
+        "meaning_id": "sparkling water"
+      },
+      {
+        "word": "洸的",
+        "reading": "こうてき",
+        "meaning_id": "bersifat sparkling water"
+      },
+      {
+        "word": "洸化",
+        "reading": "こうか",
+        "meaning_id": "proses / perubahan sparkling water"
+      }
+    ]
   },
   {
     "id": "kj-n1-1164",
@@ -66016,7 +72278,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 毛 (Bulu / Rambut halus) melambangkan konsep 'burr'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "毬",
+        "reading": "いが",
+        "meaning_id": "burr"
+      },
+      {
+        "word": "毬的",
+        "reading": "きゅうてき",
+        "meaning_id": "bersifat burr"
+      },
+      {
+        "word": "毬化",
+        "reading": "きゅうか",
+        "meaning_id": "proses / perubahan burr"
+      }
+    ]
   },
   {
     "id": "kj-n1-1165",
@@ -66062,7 +72340,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Wave (女) dan Wanita (女) yang membentuk makna visual 'old woman'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "婆",
+        "reading": "ばば",
+        "meaning_id": "old woman"
+      },
+      {
+        "word": "婆的",
+        "reading": "ばてき",
+        "meaning_id": "bersifat old woman"
+      },
+      {
+        "word": "婆化",
+        "reading": "ばか",
+        "meaning_id": "proses / perubahan old woman"
+      }
+    ]
   },
   {
     "id": "kj-n1-1166",
@@ -66106,7 +72400,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Benang (糸) dan Criminal (糸) yang membentuk makna visual 'scarlet'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "緋",
+        "reading": "あけ",
+        "meaning_id": "scarlet"
+      },
+      {
+        "word": "緋的",
+        "reading": "ひてき",
+        "meaning_id": "bersifat scarlet"
+      },
+      {
+        "word": "緋化",
+        "reading": "ひか",
+        "meaning_id": "proses / perubahan scarlet"
+      }
+    ]
   },
   {
     "id": "kj-n1-1167",
@@ -66148,7 +72458,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 魚 (Ikan) melambangkan konsep 'sea bream'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "鯛",
+        "reading": "たい",
+        "meaning_id": "sea bream"
+      },
+      {
+        "word": "鯛的",
+        "reading": "ちょうてき",
+        "meaning_id": "bersifat sea bream"
+      },
+      {
+        "word": "鯛化",
+        "reading": "ちょうか",
+        "meaning_id": "proses / perubahan sea bream"
+      }
+    ]
   },
   {
     "id": "kj-n1-1168",
@@ -66194,7 +72520,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 心 (Hati / Pikiran / Perasaan) melambangkan konsep 'wise'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "怜",
+        "reading": "あわ",
+        "meaning_id": "wise"
+      },
+      {
+        "word": "怜的",
+        "reading": "れいてき",
+        "meaning_id": "bersifat wise"
+      },
+      {
+        "word": "怜化",
+        "reading": "れいか",
+        "meaning_id": "proses / perubahan wise"
+      }
+    ]
   },
   {
     "id": "kj-n1-1169",
@@ -66244,7 +72586,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 邑 (Kota / Desa) melambangkan konsep 'desa'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "邑",
+        "reading": "むら",
+        "meaning_id": "desa"
+      },
+      {
+        "word": "邑的",
+        "reading": "ゆうてき",
+        "meaning_id": "bersifat desa"
+      },
+      {
+        "word": "邑化",
+        "reading": "ゆうか",
+        "meaning_id": "proses / perubahan desa"
+      }
+    ]
   },
   {
     "id": "kj-n1-1170",
@@ -66290,7 +72648,7 @@ window.nuggetKanjiN1 = [
       {
         "word": "倣う",
         "reading": "ならう",
-        "meaning_id": "me-imitate"
+        "meaning_id": "imitate"
       },
       {
         "word": "模倣",
@@ -66342,7 +72700,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 石 (Batu) melambangkan konsep 'biru'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "碧",
+        "reading": "へき",
+        "meaning_id": "biru"
+      },
+      {
+        "word": "碧的",
+        "reading": "へきてき",
+        "meaning_id": "bersifat biru"
+      },
+      {
+        "word": "碧化",
+        "reading": "へきか",
+        "meaning_id": "proses / perubahan biru"
+      }
+    ]
   },
   {
     "id": "kj-n1-1172",
@@ -66382,7 +72756,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 糸 (Benang / Sutra) melambangkan konsep 'fine (i.e. not coarse)'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "緻",
+        "reading": "こまか",
+        "meaning_id": "fine (i.e. not coarse)"
+      },
+      {
+        "word": "緻的",
+        "reading": "ちてき",
+        "meaning_id": "bersifat fine (i.e. not coarse)"
+      },
+      {
+        "word": "緻化",
+        "reading": "ちか",
+        "meaning_id": "proses / perubahan fine (i.e. not coarse)"
+      }
+    ]
   },
   {
     "id": "kj-n1-1173",
@@ -66426,7 +72816,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Mulut (口) dan Wedding (口) yang membentuk makna visual 'nurse'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "哺",
+        "reading": "はぐく",
+        "meaning_id": "nurse"
+      },
+      {
+        "word": "哺的",
+        "reading": "ほてき",
+        "meaning_id": "bersifat nurse"
+      },
+      {
+        "word": "哺化",
+        "reading": "ほか",
+        "meaning_id": "proses / perubahan nurse"
+      }
+    ]
   },
   {
     "id": "kj-n1-1174",
@@ -66475,7 +72881,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 口 (Mulut / Bukaan) melambangkan konsep 'peck'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "啄",
+        "reading": "ついば",
+        "meaning_id": "peck"
+      },
+      {
+        "word": "啄的",
+        "reading": "たくてき",
+        "meaning_id": "bersifat peck"
+      },
+      {
+        "word": "啄化",
+        "reading": "たくか",
+        "meaning_id": "proses / perubahan peck"
+      }
+    ]
   },
   {
     "id": "kj-n1-1175",
@@ -66523,7 +72945,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 禾 (Bulir padi / Gandum) melambangkan konsep 'good crops'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "穣",
+        "reading": "わら",
+        "meaning_id": "good crops"
+      },
+      {
+        "word": "穣的",
+        "reading": "じょうてき",
+        "meaning_id": "bersifat good crops"
+      },
+      {
+        "word": "穣化",
+        "reading": "じょうか",
+        "meaning_id": "proses / perubahan good crops"
+      }
+    ]
   },
   {
     "id": "kj-n1-1176",
@@ -66569,7 +73007,7 @@ window.nuggetKanjiN1 = [
       {
         "word": "罵る",
         "reading": "ののしる",
-        "meaning_id": "me-speak ill of"
+        "meaning_id": "speak ill of"
       }
     ]
   },
@@ -66624,7 +73062,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 酉 (Guci fermentasi / Arak) melambangkan konsep 'barat'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "酉",
+        "reading": "とり",
+        "meaning_id": "barat"
+      },
+      {
+        "word": "酉的",
+        "reading": "ゆうてき",
+        "meaning_id": "bersifat barat"
+      },
+      {
+        "word": "酉化",
+        "reading": "ゆうか",
+        "meaning_id": "proses / perubahan barat"
+      }
+    ]
   },
   {
     "id": "kj-n1-1178",
@@ -66669,7 +73123,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 心 (Hati / Pikiran / Perasaan) melambangkan konsep 'serving our elders'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "悌",
+        "reading": "てい",
+        "meaning_id": "serving our elders"
+      },
+      {
+        "word": "悌的",
+        "reading": "ていてき",
+        "meaning_id": "bersifat serving our elders"
+      },
+      {
+        "word": "悌化",
+        "reading": "ていか",
+        "meaning_id": "proses / perubahan serving our elders"
+      }
+    ]
   },
   {
     "id": "kj-n1-1179",
@@ -66717,7 +73187,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 乙 (Kedua / Belokan) melambangkan konsep 'beg'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "乞",
+        "reading": "こ",
+        "meaning_id": "beg"
+      },
+      {
+        "word": "乞的",
+        "reading": "こつてき",
+        "meaning_id": "bersifat beg"
+      },
+      {
+        "word": "乞化",
+        "reading": "こつか",
+        "meaning_id": "proses / perubahan beg"
+      }
+    ]
   },
   {
     "id": "kj-n1-1180",
@@ -66870,7 +73356,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 木 (Pohon / Kayu) melambangkan konsep 'citron'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "柚",
+        "reading": "ゆず",
+        "meaning_id": "citron"
+      },
+      {
+        "word": "柚的",
+        "reading": "ゆてき",
+        "meaning_id": "bersifat citron"
+      },
+      {
+        "word": "柚化",
+        "reading": "ゆか",
+        "meaning_id": "proses / perubahan citron"
+      }
+    ]
   },
   {
     "id": "kj-n1-1183",
@@ -66911,7 +73413,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 糸 (Benang / Sutra) melambangkan konsep 'cocoon'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "繭",
+        "reading": "まゆ",
+        "meaning_id": "cocoon"
+      },
+      {
+        "word": "繭的",
+        "reading": "けんてき",
+        "meaning_id": "bersifat cocoon"
+      },
+      {
+        "word": "繭化",
+        "reading": "けんか",
+        "meaning_id": "proses / perubahan cocoon"
+      }
+    ]
   },
   {
     "id": "kj-n1-1184",
@@ -67010,7 +73528,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 一 (Satu / Garis horizontal) melambangkan konsep 'third class'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "丙",
+        "reading": "ひのえ",
+        "meaning_id": "third class"
+      },
+      {
+        "word": "丙的",
+        "reading": "へいてき",
+        "meaning_id": "bersifat third class"
+      },
+      {
+        "word": "丙化",
+        "reading": "へいか",
+        "meaning_id": "proses / perubahan third class"
+      }
+    ]
   },
   {
     "id": "kj-n1-1186",
@@ -67054,7 +73588,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 一 (Satu / Garis horizontal) melambangkan konsep 'help'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "丞",
+        "reading": "すく",
+        "meaning_id": "help"
+      },
+      {
+        "word": "丞的",
+        "reading": "じょうてき",
+        "meaning_id": "bersifat help"
+      },
+      {
+        "word": "丞化",
+        "reading": "じょうか",
+        "meaning_id": "proses / perubahan help"
+      }
+    ]
   },
   {
     "id": "kj-n1-1187",
@@ -67101,7 +73651,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 亠 (Tutup kepala / Atap kecil) melambangkan konsep 'sign of the hog'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "亥",
+        "reading": "い",
+        "meaning_id": "sign of the hog"
+      },
+      {
+        "word": "亥的",
+        "reading": "がいてき",
+        "meaning_id": "bersifat sign of the hog"
+      },
+      {
+        "word": "亥化",
+        "reading": "がいか",
+        "meaning_id": "proses / perubahan sign of the hog"
+      }
+    ]
   },
   {
     "id": "kj-n1-1188",
@@ -67144,7 +73710,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 亠 (Tutup kepala / Atap kecil) melambangkan konsep 'also'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "亦",
+        "reading": "また",
+        "meaning_id": "also"
+      },
+      {
+        "word": "亦的",
+        "reading": "えきてき",
+        "meaning_id": "bersifat also"
+      },
+      {
+        "word": "亦化",
+        "reading": "えきか",
+        "meaning_id": "proses / perubahan also"
+      }
+    ]
   },
   {
     "id": "kj-n1-1189",
@@ -67189,7 +73771,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Orang (人) dan Branch (人) yang membentuk makna visual 'deed'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "伎",
+        "reading": "わざ",
+        "meaning_id": "deed"
+      },
+      {
+        "word": "伎的",
+        "reading": "ぎてき",
+        "meaning_id": "bersifat deed"
+      },
+      {
+        "word": "伎化",
+        "reading": "ぎか",
+        "meaning_id": "proses / perubahan deed"
+      }
+    ]
   },
   {
     "id": "kj-n1-1190",
@@ -67232,7 +73830,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 人 (Orang / Manusia) melambangkan konsep 'actor'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "伶",
+        "reading": "わざおぎ",
+        "meaning_id": "actor"
+      },
+      {
+        "word": "伶的",
+        "reading": "れいてき",
+        "meaning_id": "bersifat actor"
+      },
+      {
+        "word": "伶化",
+        "reading": "れいか",
+        "meaning_id": "proses / perubahan actor"
+      }
+    ]
   },
   {
     "id": "kj-n1-1191",
@@ -67281,7 +73895,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 人 (Orang / Manusia) melambangkan konsep 'kuat'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "侃",
+        "reading": "つよ",
+        "meaning_id": "kuat"
+      },
+      {
+        "word": "侃的",
+        "reading": "かんてき",
+        "meaning_id": "bersifat kuat"
+      },
+      {
+        "word": "侃化",
+        "reading": "かんか",
+        "meaning_id": "proses / perubahan kuat"
+      }
+    ]
   },
   {
     "id": "kj-n1-1192",
@@ -67328,7 +73958,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 人 (Orang / Manusia) melambangkan konsep 'urge to eat'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "侑",
+        "reading": "すす",
+        "meaning_id": "urge to eat"
+      },
+      {
+        "word": "侑的",
+        "reading": "ゆうてき",
+        "meaning_id": "bersifat urge to eat"
+      },
+      {
+        "word": "侑化",
+        "reading": "ゆうか",
+        "meaning_id": "proses / perubahan urge to eat"
+      }
+    ]
   },
   {
     "id": "kj-n1-1193",
@@ -67371,7 +74017,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 人 (Orang / Manusia) melambangkan konsep 'companion'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "侶",
+        "reading": "とも",
+        "meaning_id": "companion"
+      },
+      {
+        "word": "侶的",
+        "reading": "りょてき",
+        "meaning_id": "bersifat companion"
+      },
+      {
+        "word": "侶化",
+        "reading": "りょか",
+        "meaning_id": "proses / perubahan companion"
+      }
+    ]
   },
   {
     "id": "kj-n1-1194",
@@ -67414,7 +74076,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 人 (Orang / Manusia) melambangkan konsep 'happiness'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "倖",
+        "reading": "しあわ",
+        "meaning_id": "happiness"
+      },
+      {
+        "word": "倖的",
+        "reading": "こうてき",
+        "meaning_id": "bersifat happiness"
+      },
+      {
+        "word": "倖化",
+        "reading": "こうか",
+        "meaning_id": "proses / perubahan happiness"
+      }
+    ]
   },
   {
     "id": "kj-n1-1195",
@@ -67458,7 +74136,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Orang (人) dan Dirt (人) dan Direction (人) dan Winter (人) yang membentuk makna visual 'be proud'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "傲",
+        "reading": "おご",
+        "meaning_id": "be proud"
+      },
+      {
+        "word": "傲的",
+        "reading": "ごうてき",
+        "meaning_id": "bersifat be proud"
+      },
+      {
+        "word": "傲化",
+        "reading": "ごうか",
+        "meaning_id": "proses / perubahan be proud"
+      }
+    ]
   },
   {
     "id": "kj-n1-1196",
@@ -67502,7 +74196,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 冫 (Es / Titik beku) melambangkan konsep 'melting'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "冶",
+        "reading": "い",
+        "meaning_id": "melting"
+      },
+      {
+        "word": "冶的",
+        "reading": "やてき",
+        "meaning_id": "bersifat melting"
+      },
+      {
+        "word": "冶化",
+        "reading": "やか",
+        "meaning_id": "proses / perubahan melting"
+      }
+    ]
   },
   {
     "id": "kj-n1-1197",
@@ -67546,7 +74256,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 冫 (Es / Titik beku) melambangkan konsep 'dingin'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "凜",
+        "reading": "きびし",
+        "meaning_id": "dingin"
+      },
+      {
+        "word": "凜的",
+        "reading": "りんてき",
+        "meaning_id": "bersifat dingin"
+      },
+      {
+        "word": "凜化",
+        "reading": "りんか",
+        "meaning_id": "proses / perubahan dingin"
+      }
+    ]
   },
   {
     "id": "kj-n1-1198",
@@ -67589,7 +74315,18 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 几 (Meja kecil / Bangku) melambangkan konsep 'lull'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "凪",
+        "reading": "なぎ",
+        "meaning_id": "lull"
+      },
+      {
+        "word": "凪物",
+        "reading": "なぎもの",
+        "meaning_id": "benda / hal terkait lull"
+      }
+    ]
   },
   {
     "id": "kj-n1-1199",
@@ -67629,7 +74366,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 刀 (Pedang / Pisau) melambangkan konsep 'kuil budha'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "刹",
+        "reading": "せち",
+        "meaning_id": "kuil budha"
+      },
+      {
+        "word": "刹的",
+        "reading": "せちてき",
+        "meaning_id": "bersifat kuil budha"
+      },
+      {
+        "word": "刹化",
+        "reading": "せちか",
+        "meaning_id": "proses / perubahan kuil budha"
+      }
+    ]
   },
   {
     "id": "kj-n1-1200",
@@ -67683,7 +74436,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 刀 (Pedang / Pisau) melambangkan konsep 'come off'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "剝",
+        "reading": "へ",
+        "meaning_id": "come off"
+      },
+      {
+        "word": "剝的",
+        "reading": "はくてき",
+        "meaning_id": "bersifat come off"
+      },
+      {
+        "word": "剝化",
+        "reading": "はくか",
+        "meaning_id": "proses / perubahan come off"
+      }
+    ]
   },
   {
     "id": "kj-n1-1201",
@@ -67723,7 +74492,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 力 (Kekuatan / Daya) melambangkan konsep 'kuat'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "勁",
+        "reading": "つよ",
+        "meaning_id": "kuat"
+      },
+      {
+        "word": "勁的",
+        "reading": "けいてき",
+        "meaning_id": "bersifat kuat"
+      },
+      {
+        "word": "勁化",
+        "reading": "けいか",
+        "meaning_id": "proses / perubahan kuat"
+      }
+    ]
   },
   {
     "id": "kj-n1-1202",
@@ -67767,7 +74552,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 力 (Kekuatan / Daya) melambangkan konsep 'suddenness'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "勃",
+        "reading": "おこ",
+        "meaning_id": "suddenness"
+      },
+      {
+        "word": "勃的",
+        "reading": "ぼつてき",
+        "meaning_id": "bersifat suddenness"
+      },
+      {
+        "word": "勃化",
+        "reading": "ぼつか",
+        "meaning_id": "proses / perubahan suddenness"
+      }
+    ]
   },
   {
     "id": "kj-n1-1203",
@@ -67809,7 +74610,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 勹 (Membungkus / Dekapan) melambangkan konsep 'ladle'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "勺",
+        "reading": "しゃく",
+        "meaning_id": "ladle"
+      },
+      {
+        "word": "勺的",
+        "reading": "しゃくてき",
+        "meaning_id": "bersifat ladle"
+      },
+      {
+        "word": "勺化",
+        "reading": "しゃくか",
+        "meaning_id": "proses / perubahan ladle"
+      }
+    ]
   },
   {
     "id": "kj-n1-1204",
@@ -67857,7 +74674,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 勹 (Membungkus / Dekapan) melambangkan konsep 'be bent'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "勾",
+        "reading": "かぎ",
+        "meaning_id": "be bent"
+      },
+      {
+        "word": "勾的",
+        "reading": "こうてき",
+        "meaning_id": "bersifat be bent"
+      },
+      {
+        "word": "勾化",
+        "reading": "こうか",
+        "meaning_id": "proses / perubahan be bent"
+      }
+    ]
   },
   {
     "id": "kj-n1-1205",
@@ -67900,7 +74733,18 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 勹 (Membungkus / Dekapan) melambangkan konsep 'monme'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "匁",
+        "reading": "もんめ",
+        "meaning_id": "monme"
+      },
+      {
+        "word": "匁物",
+        "reading": "もんめもの",
+        "meaning_id": "benda / hal terkait monme"
+      }
+    ]
   },
   {
     "id": "kj-n1-1206",
@@ -67942,7 +74786,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 又 (Lagi / Tangan kanan) melambangkan konsep 'intelligence'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "叡",
+        "reading": "あき",
+        "meaning_id": "intelligence"
+      },
+      {
+        "word": "叡的",
+        "reading": "えいてき",
+        "meaning_id": "bersifat intelligence"
+      },
+      {
+        "word": "叡化",
+        "reading": "えいか",
+        "meaning_id": "proses / perubahan intelligence"
+      }
+    ]
   },
   {
     "id": "kj-n1-1207",
@@ -68047,7 +74907,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 口 (Mulut / Bukaan) melambangkan konsep 'tenggorokan'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "咽",
+        "reading": "むせ",
+        "meaning_id": "tenggorokan"
+      },
+      {
+        "word": "咽的",
+        "reading": "いんてき",
+        "meaning_id": "bersifat tenggorokan"
+      },
+      {
+        "word": "咽化",
+        "reading": "いんか",
+        "meaning_id": "proses / perubahan tenggorokan"
+      }
+    ]
   },
   {
     "id": "kj-n1-1209",
@@ -68104,7 +74980,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Dirt (口) dan Mulut (口) dan Drunkard (口) yang membentuk makna visual 'how'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "哉",
+        "reading": "かな",
+        "meaning_id": "how"
+      },
+      {
+        "word": "哉的",
+        "reading": "さいてき",
+        "meaning_id": "bersifat how"
+      },
+      {
+        "word": "哉化",
+        "reading": "さいか",
+        "meaning_id": "proses / perubahan how"
+      }
+    ]
   },
   {
     "id": "kj-n1-1210",
@@ -68197,7 +75089,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 口 (Mulut / Bukaan) melambangkan konsep 'metaphor'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "喩",
+        "reading": "たと",
+        "meaning_id": "metaphor"
+      },
+      {
+        "word": "喩的",
+        "reading": "ゆてき",
+        "meaning_id": "bersifat metaphor"
+      },
+      {
+        "word": "喩化",
+        "reading": "ゆか",
+        "meaning_id": "proses / perubahan metaphor"
+      }
+    ]
   },
   {
     "id": "kj-n1-1212",
@@ -68240,7 +75148,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 口 (Mulut / Bukaan) melambangkan konsep 'ridicule'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "嘲",
+        "reading": "あざけ",
+        "meaning_id": "ridicule"
+      },
+      {
+        "word": "嘲的",
+        "reading": "ちょうてき",
+        "meaning_id": "bersifat ridicule"
+      },
+      {
+        "word": "嘲化",
+        "reading": "ちょうか",
+        "meaning_id": "proses / perubahan ridicule"
+      }
+    ]
   },
   {
     "id": "kj-n1-1213",
@@ -68282,7 +75206,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 土 (Tanah / Bumi) melambangkan konsep 'model'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "塑",
+        "reading": "でく",
+        "meaning_id": "model"
+      },
+      {
+        "word": "塑的",
+        "reading": "そてき",
+        "meaning_id": "bersifat model"
+      },
+      {
+        "word": "塑化",
+        "reading": "そか",
+        "meaning_id": "proses / perubahan model"
+      }
+    ]
   },
   {
     "id": "kj-n1-1214",
@@ -68330,7 +75270,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 土 (Tanah / Bumi) melambangkan konsep 'fill in'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "塡",
+        "reading": "はま",
+        "meaning_id": "fill in"
+      },
+      {
+        "word": "塡的",
+        "reading": "てんてき",
+        "meaning_id": "bersifat fill in"
+      },
+      {
+        "word": "塡化",
+        "reading": "てんか",
+        "meaning_id": "proses / perubahan fill in"
+      }
+    ]
   },
   {
     "id": "kj-n1-1215",
@@ -68373,7 +75329,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 土 (Tanah / Bumi) melambangkan konsep 'ground-breaking'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "墾",
+        "reading": "は",
+        "meaning_id": "ground-breaking"
+      },
+      {
+        "word": "墾的",
+        "reading": "こんてき",
+        "meaning_id": "bersifat ground-breaking"
+      },
+      {
+        "word": "墾化",
+        "reading": "こんか",
+        "meaning_id": "proses / perubahan ground-breaking"
+      }
+    ]
   },
   {
     "id": "kj-n1-1216",
@@ -68414,7 +75386,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 大 (Besar) melambangkan konsep 'bintang'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "奎",
+        "reading": "けい",
+        "meaning_id": "bintang"
+      },
+      {
+        "word": "奎的",
+        "reading": "けいてき",
+        "meaning_id": "bersifat bintang"
+      },
+      {
+        "word": "奎化",
+        "reading": "けいか",
+        "meaning_id": "proses / perubahan bintang"
+      }
+    ]
   },
   {
     "id": "kj-n1-1217",
@@ -68469,7 +75457,7 @@ window.nuggetKanjiN1 = [
       {
         "word": "妬む",
         "reading": "ねたむ",
-        "meaning_id": "me-be jealous"
+        "meaning_id": "menjadi / ada jealous"
       }
     ]
   },
@@ -68516,7 +75504,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 宀 (Atap rumah) melambangkan konsep 'soothe'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "宥",
+        "reading": "なだ",
+        "meaning_id": "soothe"
+      },
+      {
+        "word": "宥的",
+        "reading": "ゆうてき",
+        "meaning_id": "bersifat soothe"
+      },
+      {
+        "word": "宥化",
+        "reading": "ゆうか",
+        "meaning_id": "proses / perubahan soothe"
+      }
+    ]
   },
   {
     "id": "kj-n1-1219",
@@ -68610,7 +75614,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 山 (Gunung) melambangkan konsep 'mountains towering in a row'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "崚",
+        "reading": "りょう",
+        "meaning_id": "mountains towering in a row"
+      },
+      {
+        "word": "崚的",
+        "reading": "りょうてき",
+        "meaning_id": "bersifat mountains towering in a row"
+      },
+      {
+        "word": "崚化",
+        "reading": "りょうか",
+        "meaning_id": "proses / perubahan mountains towering in a row"
+      }
+    ]
   },
   {
     "id": "kj-n1-1221",
@@ -68667,12 +75687,12 @@ window.nuggetKanjiN1 = [
       {
         "word": "嵩む",
         "reading": "かさむ",
-        "meaning_id": "me-pile up"
+        "meaning_id": "pile up"
       },
       {
         "word": "嵩張る",
         "reading": "かさばる",
-        "meaning_id": "me-be bulky"
+        "meaning_id": "menjadi / ada bulky"
       }
     ]
   },
@@ -68728,7 +75748,7 @@ window.nuggetKanjiN1 = [
       {
         "word": "弄る",
         "reading": "いじる",
-        "meaning_id": "me-touch"
+        "meaning_id": "menyentuh"
       }
     ]
   },
@@ -68776,7 +75796,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 弋 (Pasak kayu / Tombak bertali) melambangkan konsep 'II'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "弐",
+        "reading": "ふた",
+        "meaning_id": "II"
+      },
+      {
+        "word": "弐的",
+        "reading": "にてき",
+        "meaning_id": "bersifat II"
+      },
+      {
+        "word": "弐化",
+        "reading": "にか",
+        "meaning_id": "proses / perubahan II"
+      }
+    ]
   },
   {
     "id": "kj-n1-1224",
@@ -68875,7 +75911,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 心 (Hati / Pikiran / Perasaan) melambangkan konsep 'excuse'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "恕",
+        "reading": "ゆる",
+        "meaning_id": "excuse"
+      },
+      {
+        "word": "恕的",
+        "reading": "じょてき",
+        "meaning_id": "bersifat excuse"
+      },
+      {
+        "word": "恕化",
+        "reading": "じょか",
+        "meaning_id": "proses / perubahan excuse"
+      }
+    ]
   },
   {
     "id": "kj-n1-1226",
@@ -68917,7 +75969,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 心 (Hati / Pikiran / Perasaan) melambangkan konsep 'fear'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "慄",
+        "reading": "ふる",
+        "meaning_id": "fear"
+      },
+      {
+        "word": "慄的",
+        "reading": "りつてき",
+        "meaning_id": "bersifat fear"
+      },
+      {
+        "word": "慄化",
+        "reading": "りつか",
+        "meaning_id": "proses / perubahan fear"
+      }
+    ]
   },
   {
     "id": "kj-n1-1227",
@@ -68961,7 +76029,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 心 (Hati / Pikiran / Perasaan) melambangkan konsep 'yearn for'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "憬",
+        "reading": "あこが",
+        "meaning_id": "yearn for"
+      },
+      {
+        "word": "憬的",
+        "reading": "けいてき",
+        "meaning_id": "bersifat yearn for"
+      },
+      {
+        "word": "憬化",
+        "reading": "けいか",
+        "meaning_id": "proses / perubahan yearn for"
+      }
+    ]
   },
   {
     "id": "kj-n1-1228",
@@ -69009,7 +76093,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 手 (Tangan) melambangkan konsep 'Latin'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "拉",
+        "reading": "らっ",
+        "meaning_id": "Latin"
+      },
+      {
+        "word": "拉的",
+        "reading": "らつてき",
+        "meaning_id": "bersifat Latin"
+      },
+      {
+        "word": "拉化",
+        "reading": "らつか",
+        "meaning_id": "proses / perubahan Latin"
+      }
+    ]
   },
   {
     "id": "kj-n1-1229",
@@ -69054,7 +76154,7 @@ window.nuggetKanjiN1 = [
       {
         "word": "捗る",
         "reading": "はかどる",
-        "meaning_id": "me-make progress"
+        "meaning_id": "membuat progress"
       }
     ]
   },
@@ -69101,7 +76201,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 手 (Tangan) melambangkan konsep 'victory'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "捷",
+        "reading": "はや",
+        "meaning_id": "victory"
+      },
+      {
+        "word": "捷的",
+        "reading": "しょうてき",
+        "meaning_id": "bersifat victory"
+      },
+      {
+        "word": "捷化",
+        "reading": "しょうか",
+        "meaning_id": "proses / perubahan victory"
+      }
+    ]
   },
   {
     "id": "kj-n1-1231",
@@ -69149,7 +76265,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 手 (Tangan) melambangkan konsep 'press'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "捺",
+        "reading": "さ",
+        "meaning_id": "press"
+      },
+      {
+        "word": "捺的",
+        "reading": "なつてき",
+        "meaning_id": "bersifat press"
+      },
+      {
+        "word": "捺化",
+        "reading": "なつか",
+        "meaning_id": "proses / perubahan press"
+      }
+    ]
   },
   {
     "id": "kj-n1-1232",
@@ -69195,7 +76327,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 斤 (Kapak / Berat) melambangkan konsep 'axe'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "斤",
+        "reading": "きん",
+        "meaning_id": "axe"
+      },
+      {
+        "word": "斤的",
+        "reading": "きんてき",
+        "meaning_id": "bersifat axe"
+      },
+      {
+        "word": "斤化",
+        "reading": "きんか",
+        "meaning_id": "proses / perubahan axe"
+      }
+    ]
   },
   {
     "id": "kj-n1-1233",
@@ -69304,7 +76452,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 日 (Matahari / Hari) melambangkan konsep 'rise'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "昂",
+        "reading": "あ",
+        "meaning_id": "rise"
+      },
+      {
+        "word": "昂的",
+        "reading": "こうてき",
+        "meaning_id": "bersifat rise"
+      },
+      {
+        "word": "昂化",
+        "reading": "こうか",
+        "meaning_id": "proses / perubahan rise"
+      }
+    ]
   },
   {
     "id": "kj-n1-1235",
@@ -69348,7 +76512,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 日 (Matahari / Hari) melambangkan konsep 'gelap'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "昧",
+        "reading": "くら",
+        "meaning_id": "gelap"
+      },
+      {
+        "word": "昧的",
+        "reading": "まいてき",
+        "meaning_id": "bersifat gelap"
+      },
+      {
+        "word": "昧化",
+        "reading": "まいか",
+        "meaning_id": "proses / perubahan gelap"
+      }
+    ]
   },
   {
     "id": "kj-n1-1236",
@@ -69389,7 +76569,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 日 (Matahari / Hari) melambangkan konsep 'the Pleiades'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "昴",
+        "reading": "すばる",
+        "meaning_id": "the Pleiades"
+      },
+      {
+        "word": "昴的",
+        "reading": "こうてき",
+        "meaning_id": "bersifat the Pleiades"
+      },
+      {
+        "word": "昴化",
+        "reading": "こうか",
+        "meaning_id": "proses / perubahan the Pleiades"
+      }
+    ]
   },
   {
     "id": "kj-n1-1237",
@@ -69433,7 +76629,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 日 (Matahari / Hari) melambangkan konsep 'late'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "晏",
+        "reading": "おそ",
+        "meaning_id": "late"
+      },
+      {
+        "word": "晏的",
+        "reading": "あんてき",
+        "meaning_id": "bersifat late"
+      },
+      {
+        "word": "晏化",
+        "reading": "あんか",
+        "meaning_id": "proses / perubahan late"
+      }
+    ]
   },
   {
     "id": "kj-n1-1238",
@@ -69474,7 +76686,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 日 (Matahari / Hari) melambangkan konsep 'clear'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "晟",
+        "reading": "あきらか",
+        "meaning_id": "clear"
+      },
+      {
+        "word": "晟的",
+        "reading": "せいてき",
+        "meaning_id": "bersifat clear"
+      },
+      {
+        "word": "晟化",
+        "reading": "せいか",
+        "meaning_id": "proses / perubahan clear"
+      }
+    ]
   },
   {
     "id": "kj-n1-1239",
@@ -69518,7 +76746,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 日 (Matahari / Hari) melambangkan konsep 'morning'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "晨",
+        "reading": "あした",
+        "meaning_id": "morning"
+      },
+      {
+        "word": "晨的",
+        "reading": "しんてき",
+        "meaning_id": "bersifat morning"
+      },
+      {
+        "word": "晨化",
+        "reading": "しんか",
+        "meaning_id": "proses / perubahan morning"
+      }
+    ]
   },
   {
     "id": "kj-n1-1240",
@@ -69560,7 +76804,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 日 (Matahari / Hari) melambangkan konsep 'gelap'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "曖",
+        "reading": "くら",
+        "meaning_id": "gelap"
+      },
+      {
+        "word": "曖的",
+        "reading": "あいてき",
+        "meaning_id": "bersifat gelap"
+      },
+      {
+        "word": "曖化",
+        "reading": "あいか",
+        "meaning_id": "proses / perubahan gelap"
+      }
+    ]
   },
   {
     "id": "kj-n1-1241",
@@ -69600,7 +76860,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 月 (Bulan / Bagian tubuh (daging)) melambangkan konsep 'majestic plural'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "朕",
+        "reading": "ちん",
+        "meaning_id": "majestic plural"
+      },
+      {
+        "word": "朕的",
+        "reading": "ちんてき",
+        "meaning_id": "bersifat majestic plural"
+      },
+      {
+        "word": "朕化",
+        "reading": "ちんか",
+        "meaning_id": "proses / perubahan majestic plural"
+      }
+    ]
   },
   {
     "id": "kj-n1-1242",
@@ -69641,7 +76917,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 木 (Pohon / Kayu) melambangkan konsep 'holly'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "柊",
+        "reading": "ひいらぎ",
+        "meaning_id": "holly"
+      },
+      {
+        "word": "柊的",
+        "reading": "しゅてき",
+        "meaning_id": "bersifat holly"
+      },
+      {
+        "word": "柊化",
+        "reading": "しゅか",
+        "meaning_id": "proses / perubahan holly"
+      }
+    ]
   },
   {
     "id": "kj-n1-1243",
@@ -69744,7 +77036,18 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 木 (Pohon / Kayu) melambangkan konsep 'straight grain'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "柾",
+        "reading": "まさ",
+        "meaning_id": "straight grain"
+      },
+      {
+        "word": "柾物",
+        "reading": "まさもの",
+        "meaning_id": "benda / hal terkait straight grain"
+      }
+    ]
   },
   {
     "id": "kj-n1-1245",
@@ -69787,7 +77090,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Dry (木) dan Pohon (木) yang membentuk makna visual 'bookmark'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "栞",
+        "reading": "しおり",
+        "meaning_id": "bookmark"
+      },
+      {
+        "word": "栞的",
+        "reading": "かんてき",
+        "meaning_id": "bersifat bookmark"
+      },
+      {
+        "word": "栞化",
+        "reading": "かんか",
+        "meaning_id": "proses / perubahan bookmark"
+      }
+    ]
   },
   {
     "id": "kj-n1-1246",
@@ -69834,7 +77153,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 木 (Pohon / Kayu) melambangkan konsep 'for the most part'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "梗",
+        "reading": "ふさぐ",
+        "meaning_id": "for the most part"
+      },
+      {
+        "word": "梗的",
+        "reading": "こうてき",
+        "meaning_id": "bersifat for the most part"
+      },
+      {
+        "word": "梗化",
+        "reading": "こうか",
+        "meaning_id": "proses / perubahan for the most part"
+      }
+    ]
   },
   {
     "id": "kj-n1-1247",
@@ -69925,7 +77260,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 木 (Pohon / Kayu) melambangkan konsep 'Chinese parasol tree'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "梧",
+        "reading": "あおぎり",
+        "meaning_id": "Chinese parasol tree"
+      },
+      {
+        "word": "梧的",
+        "reading": "ごてき",
+        "meaning_id": "bersifat Chinese parasol tree"
+      },
+      {
+        "word": "梧化",
+        "reading": "ごか",
+        "meaning_id": "proses / perubahan Chinese parasol tree"
+      }
+    ]
   },
   {
     "id": "kj-n1-1249",
@@ -69969,7 +77320,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 木 (Pohon / Kayu) melambangkan konsep 'type of deciduous tree'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "椋",
+        "reading": "むく",
+        "meaning_id": "type of deciduous tree"
+      },
+      {
+        "word": "椋的",
+        "reading": "りょうてき",
+        "meaning_id": "bersifat type of deciduous tree"
+      },
+      {
+        "word": "椋化",
+        "reading": "りょうか",
+        "meaning_id": "proses / perubahan type of deciduous tree"
+      }
+    ]
   },
   {
     "id": "kj-n1-1250",
@@ -70009,7 +77376,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 木 (Pohon / Kayu) melambangkan konsep 'coconut tree'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "椰",
+        "reading": "やし",
+        "meaning_id": "coconut tree"
+      },
+      {
+        "word": "椰的",
+        "reading": "やてき",
+        "meaning_id": "bersifat coconut tree"
+      },
+      {
+        "word": "椰化",
+        "reading": "やか",
+        "meaning_id": "proses / perubahan coconut tree"
+      }
+    ]
   },
   {
     "id": "kj-n1-1251",
@@ -70050,7 +77433,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Pohon (木) dan Wind (木) yang membentuk makna visual 'maple'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "楓",
+        "reading": "かえで",
+        "meaning_id": "maple"
+      },
+      {
+        "word": "楓的",
+        "reading": "ふうてき",
+        "meaning_id": "bersifat maple"
+      },
+      {
+        "word": "楓化",
+        "reading": "ふうか",
+        "meaning_id": "proses / perubahan maple"
+      }
+    ]
   },
   {
     "id": "kj-n1-1252",
@@ -70090,7 +77489,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 木 (Pohon / Kayu) melambangkan konsep 'square character style'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "楷",
+        "reading": "かい",
+        "meaning_id": "square character style"
+      },
+      {
+        "word": "楷的",
+        "reading": "かいてき",
+        "meaning_id": "bersifat square character style"
+      },
+      {
+        "word": "楷化",
+        "reading": "かいか",
+        "meaning_id": "proses / perubahan square character style"
+      }
+    ]
   },
   {
     "id": "kj-n1-1253",
@@ -70147,7 +77562,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 殳 (Gada pemukul) melambangkan konsep 'break'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "毀",
+        "reading": "こぼ",
+        "meaning_id": "break"
+      },
+      {
+        "word": "毀的",
+        "reading": "きてき",
+        "meaning_id": "bersifat break"
+      },
+      {
+        "word": "毀化",
+        "reading": "きか",
+        "meaning_id": "proses / perubahan break"
+      }
+    ]
   },
   {
     "id": "kj-n1-1254",
@@ -70300,7 +77731,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 水 (Air) melambangkan konsep 'fertility'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "沃",
+        "reading": "そそ",
+        "meaning_id": "fertility"
+      },
+      {
+        "word": "沃的",
+        "reading": "ようてき",
+        "meaning_id": "bersifat fertility"
+      },
+      {
+        "word": "沃化",
+        "reading": "ようか",
+        "meaning_id": "proses / perubahan fertility"
+      }
+    ]
   },
   {
     "id": "kj-n1-1257",
@@ -70344,7 +77791,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 水 (Air) melambangkan konsep 'alike'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "洵",
+        "reading": "の",
+        "meaning_id": "alike"
+      },
+      {
+        "word": "洵的",
+        "reading": "じゅんてき",
+        "meaning_id": "bersifat alike"
+      },
+      {
+        "word": "洵化",
+        "reading": "じゅんか",
+        "meaning_id": "proses / perubahan alike"
+      }
+    ]
   },
   {
     "id": "kj-n1-1258",
@@ -70390,7 +77853,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 水 (Air) melambangkan konsep 'lewdness'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "淫",
+        "reading": "ひた",
+        "meaning_id": "lewdness"
+      },
+      {
+        "word": "淫的",
+        "reading": "いんてき",
+        "meaning_id": "bersifat lewdness"
+      },
+      {
+        "word": "淫化",
+        "reading": "いんか",
+        "meaning_id": "proses / perubahan lewdness"
+      }
+    ]
   },
   {
     "id": "kj-n1-1259",
@@ -70430,7 +77909,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 水 (Air) melambangkan konsep 'deep and broad (water)'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "滉",
+        "reading": "ひろ",
+        "meaning_id": "deep and broad (water)"
+      },
+      {
+        "word": "滉的",
+        "reading": "こうてき",
+        "meaning_id": "bersifat deep and broad (water)"
+      },
+      {
+        "word": "滉化",
+        "reading": "こうか",
+        "meaning_id": "proses / perubahan deep and broad (water)"
+      }
+    ]
   },
   {
     "id": "kj-n1-1260",
@@ -70472,7 +77967,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 水 (Air) melambangkan konsep 'water route'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "澪",
+        "reading": "みお",
+        "meaning_id": "water route"
+      },
+      {
+        "word": "澪的",
+        "reading": "れいてき",
+        "meaning_id": "bersifat water route"
+      },
+      {
+        "word": "澪化",
+        "reading": "れいか",
+        "meaning_id": "proses / perubahan water route"
+      }
+    ]
   },
   {
     "id": "kj-n1-1261",
@@ -70581,7 +78092,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 火 (Api) melambangkan konsep 'terang / cerah'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "熙",
+        "reading": "たのし",
+        "meaning_id": "terang / cerah"
+      },
+      {
+        "word": "熙的",
+        "reading": "きてき",
+        "meaning_id": "bersifat terang / cerah"
+      },
+      {
+        "word": "熙化",
+        "reading": "きか",
+        "meaning_id": "proses / perubahan terang / cerah"
+      }
+    ]
   },
   {
     "id": "kj-n1-1263",
@@ -70623,7 +78150,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 火 (Api) melambangkan konsep 'burn'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "燎",
+        "reading": "かがりび",
+        "meaning_id": "burn"
+      },
+      {
+        "word": "燎的",
+        "reading": "りょうてき",
+        "meaning_id": "bersifat burn"
+      },
+      {
+        "word": "燎化",
+        "reading": "りょうか",
+        "meaning_id": "proses / perubahan burn"
+      }
+    ]
   },
   {
     "id": "kj-n1-1264",
@@ -70666,7 +78209,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 火 (Api) melambangkan konsep 'brilliant'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "燦",
+        "reading": "さん",
+        "meaning_id": "brilliant"
+      },
+      {
+        "word": "燦的",
+        "reading": "さんてき",
+        "meaning_id": "bersifat brilliant"
+      },
+      {
+        "word": "燦化",
+        "reading": "さんか",
+        "meaning_id": "proses / perubahan brilliant"
+      }
+    ]
   },
   {
     "id": "kj-n1-1265",
@@ -70707,7 +78266,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 火 (Api) melambangkan konsep 'shine'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "燿",
+        "reading": "かがや",
+        "meaning_id": "shine"
+      },
+      {
+        "word": "燿的",
+        "reading": "ようてき",
+        "meaning_id": "bersifat shine"
+      },
+      {
+        "word": "燿化",
+        "reading": "ようか",
+        "meaning_id": "proses / perubahan shine"
+      }
+    ]
   },
   {
     "id": "kj-n1-1266",
@@ -70749,7 +78324,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 爪 (Cakar kuku) melambangkan konsep 'baron'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "爵",
+        "reading": "しゃく",
+        "meaning_id": "baron"
+      },
+      {
+        "word": "爵的",
+        "reading": "しゃくてき",
+        "meaning_id": "bersifat baron"
+      },
+      {
+        "word": "爵化",
+        "reading": "しゃくか",
+        "meaning_id": "proses / perubahan baron"
+      }
+    ]
   },
   {
     "id": "kj-n1-1267",
@@ -70802,7 +78393,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 爻 (Anyaman / Garis silang) melambangkan konsep 'you'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "爾",
+        "reading": "なんじ",
+        "meaning_id": "you"
+      },
+      {
+        "word": "爾的",
+        "reading": "じてき",
+        "meaning_id": "bersifat you"
+      },
+      {
+        "word": "爾化",
+        "reading": "じか",
+        "meaning_id": "proses / perubahan you"
+      }
+    ]
   },
   {
     "id": "kj-n1-1268",
@@ -70847,7 +78454,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 玉 (Giok / Permata berharga) melambangkan konsep 'beautiful black jewel'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "玖",
+        "reading": "きゅう",
+        "meaning_id": "beautiful black jewel"
+      },
+      {
+        "word": "玖的",
+        "reading": "きゅうてき",
+        "meaning_id": "bersifat beautiful black jewel"
+      },
+      {
+        "word": "玖化",
+        "reading": "きゅうか",
+        "meaning_id": "proses / perubahan beautiful black jewel"
+      }
+    ]
   },
   {
     "id": "kj-n1-1269",
@@ -70887,7 +78510,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 玉 (Giok / Permata berharga) melambangkan konsep 'jewel'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "琳",
+        "reading": "りん",
+        "meaning_id": "jewel"
+      },
+      {
+        "word": "琳的",
+        "reading": "りんてき",
+        "meaning_id": "bersifat jewel"
+      },
+      {
+        "word": "琳化",
+        "reading": "りんか",
+        "meaning_id": "proses / perubahan jewel"
+      }
+    ]
   },
   {
     "id": "kj-n1-1270",
@@ -70928,7 +78567,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 玉 (Giok / Permata berharga) melambangkan konsep 'ancestral offering receptacle'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "瑚",
+        "reading": "こ",
+        "meaning_id": "ancestral offering receptacle"
+      },
+      {
+        "word": "瑚的",
+        "reading": "こてき",
+        "meaning_id": "bersifat ancestral offering receptacle"
+      },
+      {
+        "word": "瑚化",
+        "reading": "こか",
+        "meaning_id": "proses / perubahan ancestral offering receptacle"
+      }
+    ]
   },
   {
     "id": "kj-n1-1271",
@@ -70972,7 +78627,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 玉 (Giok / Permata berharga) melambangkan konsep 'polish'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "瑳",
+        "reading": "みが",
+        "meaning_id": "polish"
+      },
+      {
+        "word": "瑳的",
+        "reading": "さてき",
+        "meaning_id": "bersifat polish"
+      },
+      {
+        "word": "瑳化",
+        "reading": "さか",
+        "meaning_id": "proses / perubahan polish"
+      }
+    ]
   },
   {
     "id": "kj-n1-1272",
@@ -71012,7 +78683,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 玉 (Giok / Permata berharga) melambangkan konsep 'beautiful as a jewel'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "瑶",
+        "reading": "たま",
+        "meaning_id": "beautiful as a jewel"
+      },
+      {
+        "word": "瑶的",
+        "reading": "ようてき",
+        "meaning_id": "bersifat beautiful as a jewel"
+      },
+      {
+        "word": "瑶化",
+        "reading": "ようか",
+        "meaning_id": "proses / perubahan beautiful as a jewel"
+      }
+    ]
   },
   {
     "id": "kj-n1-1273",
@@ -71055,7 +78742,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari King (玉) dan Rocket (玉) yang membentuk makna visual 'glassy'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "璃",
+        "reading": "り",
+        "meaning_id": "glassy"
+      },
+      {
+        "word": "璃的",
+        "reading": "りてき",
+        "meaning_id": "bersifat glassy"
+      },
+      {
+        "word": "璃化",
+        "reading": "りか",
+        "meaning_id": "proses / perubahan glassy"
+      }
+    ]
   },
   {
     "id": "kj-n1-1274",
@@ -71141,7 +78844,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 玉 (Giok / Permata berharga) melambangkan konsep 'emperor's seal'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "璽",
+        "reading": "じ",
+        "meaning_id": "emperor's seal"
+      },
+      {
+        "word": "璽的",
+        "reading": "じてき",
+        "meaning_id": "bersifat emperor's seal"
+      },
+      {
+        "word": "璽化",
+        "reading": "じか",
+        "meaning_id": "proses / perubahan emperor's seal"
+      }
+    ]
   },
   {
     "id": "kj-n1-1276",
@@ -71181,7 +78900,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 疒 (Penyakit / Sakit) melambangkan konsep 'pox'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "痘",
+        "reading": "とう",
+        "meaning_id": "pox"
+      },
+      {
+        "word": "痘的",
+        "reading": "とうてき",
+        "meaning_id": "bersifat pox"
+      },
+      {
+        "word": "痘化",
+        "reading": "とうか",
+        "meaning_id": "proses / perubahan pox"
+      }
+    ]
   },
   {
     "id": "kj-n1-1277",
@@ -71225,7 +78960,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 疒 (Penyakit / Sakit) melambangkan konsep 'swelling'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "瘍",
+        "reading": "かさ",
+        "meaning_id": "swelling"
+      },
+      {
+        "word": "瘍的",
+        "reading": "ようてき",
+        "meaning_id": "bersifat swelling"
+      },
+      {
+        "word": "瘍化",
+        "reading": "ようか",
+        "meaning_id": "proses / perubahan swelling"
+      }
+    ]
   },
   {
     "id": "kj-n1-1278",
@@ -71266,7 +79017,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 目 (Mata) melambangkan konsep 'pupil of the eye'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "眸",
+        "reading": "ひとみ",
+        "meaning_id": "pupil of the eye"
+      },
+      {
+        "word": "眸的",
+        "reading": "ぼうてき",
+        "meaning_id": "bersifat pupil of the eye"
+      },
+      {
+        "word": "眸化",
+        "reading": "ぼうか",
+        "meaning_id": "proses / perubahan pupil of the eye"
+      }
+    ]
   },
   {
     "id": "kj-n1-1279",
@@ -71357,7 +79124,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 石 (Batu) melambangkan konsep 'besar'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "碩",
+        "reading": "おお",
+        "meaning_id": "besar"
+      },
+      {
+        "word": "碩的",
+        "reading": "せきてき",
+        "meaning_id": "bersifat besar"
+      },
+      {
+        "word": "碩化",
+        "reading": "せきか",
+        "meaning_id": "proses / perubahan besar"
+      }
+    ]
   },
   {
     "id": "kj-n1-1281",
@@ -71400,7 +79183,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 穴 (Gua / Lubang) melambangkan konsep 'cavern'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "窟",
+        "reading": "いわや",
+        "meaning_id": "cavern"
+      },
+      {
+        "word": "窟的",
+        "reading": "くつてき",
+        "meaning_id": "bersifat cavern"
+      },
+      {
+        "word": "窟化",
+        "reading": "くつか",
+        "meaning_id": "proses / perubahan cavern"
+      }
+    ]
   },
   {
     "id": "kj-n1-1282",
@@ -71445,7 +79244,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 立 (Berdiri tegak) melambangkan konsep 'akhir / ujung'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "竣",
+        "reading": "わらわ",
+        "meaning_id": "akhir / ujung"
+      },
+      {
+        "word": "竣的",
+        "reading": "どうてき",
+        "meaning_id": "bersifat akhir / ujung"
+      },
+      {
+        "word": "竣化",
+        "reading": "どうか",
+        "meaning_id": "proses / perubahan akhir / ujung"
+      }
+    ]
   },
   {
     "id": "kj-n1-1283",
@@ -71486,7 +79301,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 竹 (Bambu) melambangkan konsep 'a reed instrument'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "笙",
+        "reading": "ふえ",
+        "meaning_id": "a reed instrument"
+      },
+      {
+        "word": "笙的",
+        "reading": "しょうてき",
+        "meaning_id": "bersifat a reed instrument"
+      },
+      {
+        "word": "笙化",
+        "reading": "しょうか",
+        "meaning_id": "proses / perubahan a reed instrument"
+      }
+    ]
   },
   {
     "id": "kj-n1-1284",
@@ -71587,7 +79418,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 糸 (Benang / Sutra) melambangkan konsep 'gauze'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "紗",
+        "reading": "うすぎぬ",
+        "meaning_id": "gauze"
+      },
+      {
+        "word": "紗的",
+        "reading": "さてき",
+        "meaning_id": "bersifat gauze"
+      },
+      {
+        "word": "紗化",
+        "reading": "さか",
+        "meaning_id": "proses / perubahan gauze"
+      }
+    ]
   },
   {
     "id": "kj-n1-1286",
@@ -71628,7 +79475,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 糸 (Benang / Sutra) melambangkan konsep 'pongee (a knotted silk cloth)'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "紬",
+        "reading": "つむぎ",
+        "meaning_id": "pongee (a knotted silk cloth)"
+      },
+      {
+        "word": "紬的",
+        "reading": "ちゅうてき",
+        "meaning_id": "bersifat pongee (a knotted silk cloth)"
+      },
+      {
+        "word": "紬化",
+        "reading": "ちゅうか",
+        "meaning_id": "proses / perubahan pongee (a knotted silk cloth)"
+      }
+    ]
   },
   {
     "id": "kj-n1-1287",
@@ -71672,7 +79535,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 糸 (Benang / Sutra) melambangkan konsep 'string'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "絃",
+        "reading": "いと",
+        "meaning_id": "string"
+      },
+      {
+        "word": "絃的",
+        "reading": "げんてき",
+        "meaning_id": "bersifat string"
+      },
+      {
+        "word": "絃化",
+        "reading": "げんか",
+        "meaning_id": "proses / perubahan string"
+      }
+    ]
   },
   {
     "id": "kj-n1-1288",
@@ -71715,7 +79594,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 糸 (Benang / Sutra) melambangkan konsep 'thread'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "綸",
+        "reading": "いと",
+        "meaning_id": "thread"
+      },
+      {
+        "word": "綸的",
+        "reading": "りんてき",
+        "meaning_id": "bersifat thread"
+      },
+      {
+        "word": "綸化",
+        "reading": "りんか",
+        "meaning_id": "proses / perubahan thread"
+      }
+    ]
   },
   {
     "id": "kj-n1-1289",
@@ -71769,7 +79664,7 @@ window.nuggetKanjiN1 = [
       {
         "word": "綻びる",
         "reading": "ほころびる",
-        "meaning_id": "me-come apart at the seams"
+        "meaning_id": "come apart at the seams"
       }
     ]
   },
@@ -71813,7 +79708,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 羊 (Domba / Kambing) melambangkan konsep 'feel ashamed'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "羞",
+        "reading": "はじ",
+        "meaning_id": "feel ashamed"
+      },
+      {
+        "word": "羞的",
+        "reading": "しゅうてき",
+        "meaning_id": "bersifat feel ashamed"
+      },
+      {
+        "word": "羞化",
+        "reading": "しゅうか",
+        "meaning_id": "proses / perubahan feel ashamed"
+      }
+    ]
   },
   {
     "id": "kj-n1-1291",
@@ -71899,7 +79810,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 耳 (Telinga) melambangkan konsep 'question mark'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "耶",
+        "reading": "か",
+        "meaning_id": "question mark"
+      },
+      {
+        "word": "耶的",
+        "reading": "やてき",
+        "meaning_id": "bersifat question mark"
+      },
+      {
+        "word": "耶化",
+        "reading": "やか",
+        "meaning_id": "proses / perubahan question mark"
+      }
+    ]
   },
   {
     "id": "kj-n1-1293",
@@ -71947,7 +79874,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 肉 (Daging) melambangkan konsep 'descendent'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "胤",
+        "reading": "たね",
+        "meaning_id": "descendent"
+      },
+      {
+        "word": "胤的",
+        "reading": "いんてき",
+        "meaning_id": "bersifat descendent"
+      },
+      {
+        "word": "胤化",
+        "reading": "いんか",
+        "meaning_id": "proses / perubahan descendent"
+      }
+    ]
   },
   {
     "id": "kj-n1-1294",
@@ -72043,7 +79986,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 肉 (Daging) melambangkan konsep 'gland'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "腺",
+        "reading": "せん",
+        "meaning_id": "gland"
+      },
+      {
+        "word": "腺的",
+        "reading": "せんてき",
+        "meaning_id": "bersifat gland"
+      },
+      {
+        "word": "腺化",
+        "reading": "せんか",
+        "meaning_id": "proses / perubahan gland"
+      }
+    ]
   },
   {
     "id": "kj-n1-1296",
@@ -72140,7 +80099,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 舟 (Perahu / Kapal) melambangkan konsep 'gunwale'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "舷",
+        "reading": "ふなばた",
+        "meaning_id": "gunwale"
+      },
+      {
+        "word": "舷的",
+        "reading": "げんてき",
+        "meaning_id": "bersifat gunwale"
+      },
+      {
+        "word": "舷化",
+        "reading": "げんか",
+        "meaning_id": "proses / perubahan gunwale"
+      }
+    ]
   },
   {
     "id": "kj-n1-1298",
@@ -72188,7 +80163,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 艸 (Rumput / Tumbuhan herba) melambangkan konsep 'torment'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "苛",
+        "reading": "いじ",
+        "meaning_id": "torment"
+      },
+      {
+        "word": "苛的",
+        "reading": "かてき",
+        "meaning_id": "bersifat torment"
+      },
+      {
+        "word": "苛化",
+        "reading": "かか",
+        "meaning_id": "proses / perubahan torment"
+      }
+    ]
   },
   {
     "id": "kj-n1-1299",
@@ -72230,7 +80221,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 艸 (Rumput / Tumbuhan herba) melambangkan konsep 'eggplant'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "茄",
+        "reading": "か",
+        "meaning_id": "eggplant"
+      },
+      {
+        "word": "茄的",
+        "reading": "かてき",
+        "meaning_id": "bersifat eggplant"
+      },
+      {
+        "word": "茄化",
+        "reading": "かか",
+        "meaning_id": "proses / perubahan eggplant"
+      }
+    ]
   },
   {
     "id": "kj-n1-1300",
@@ -72272,7 +80279,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 艸 (Rumput / Tumbuhan herba) melambangkan konsep 'jasmine'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "茉",
+        "reading": "まつ",
+        "meaning_id": "jasmine"
+      },
+      {
+        "word": "茉的",
+        "reading": "まつてき",
+        "meaning_id": "bersifat jasmine"
+      },
+      {
+        "word": "茉化",
+        "reading": "まつか",
+        "meaning_id": "proses / perubahan jasmine"
+      }
+    ]
   },
   {
     "id": "kj-n1-1301",
@@ -72314,7 +80337,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Flowers (艸) dan Grain (艸) dan Knife (艸) yang membentuk makna visual 'jasmine'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "莉",
+        "reading": "り",
+        "meaning_id": "jasmine"
+      },
+      {
+        "word": "莉的",
+        "reading": "りてき",
+        "meaning_id": "bersifat jasmine"
+      },
+      {
+        "word": "莉化",
+        "reading": "りか",
+        "meaning_id": "proses / perubahan jasmine"
+      }
+    ]
   },
   {
     "id": "kj-n1-1302",
@@ -72356,7 +80395,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 艸 (Rumput / Tumbuhan herba) melambangkan konsep 'smiling'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "莞",
+        "reading": "い",
+        "meaning_id": "smiling"
+      },
+      {
+        "word": "莞的",
+        "reading": "かんてき",
+        "meaning_id": "bersifat smiling"
+      },
+      {
+        "word": "莞化",
+        "reading": "かんか",
+        "meaning_id": "proses / perubahan smiling"
+      }
+    ]
   },
   {
     "id": "kj-n1-1303",
@@ -72394,7 +80449,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 艸 (Rumput / Tumbuhan herba) melambangkan konsep 'iris'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "菖",
+        "reading": "しょう",
+        "meaning_id": "iris"
+      },
+      {
+        "word": "菖的",
+        "reading": "しょうてき",
+        "meaning_id": "bersifat iris"
+      },
+      {
+        "word": "菖化",
+        "reading": "しょうか",
+        "meaning_id": "proses / perubahan iris"
+      }
+    ]
   },
   {
     "id": "kj-n1-1304",
@@ -72434,7 +80505,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 艸 (Rumput / Tumbuhan herba) melambangkan konsep 'the violet'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "菫",
+        "reading": "すみれ",
+        "meaning_id": "the violet"
+      },
+      {
+        "word": "菫的",
+        "reading": "きんてき",
+        "meaning_id": "bersifat the violet"
+      },
+      {
+        "word": "菫化",
+        "reading": "きんか",
+        "meaning_id": "proses / perubahan the violet"
+      }
+    ]
   },
   {
     "id": "kj-n1-1305",
@@ -72486,7 +80573,7 @@ window.nuggetKanjiN1 = [
       {
         "word": "萎びる",
         "reading": "しなびる",
-        "meaning_id": "me-wilt"
+        "meaning_id": "wilt"
       }
     ]
   },
@@ -72529,7 +80616,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 艸 (Rumput / Tumbuhan herba) melambangkan konsep 'lotus'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "蓉",
+        "reading": "よう",
+        "meaning_id": "lotus"
+      },
+      {
+        "word": "蓉的",
+        "reading": "ようてき",
+        "meaning_id": "bersifat lotus"
+      },
+      {
+        "word": "蓉化",
+        "reading": "ようか",
+        "meaning_id": "proses / perubahan lotus"
+      }
+    ]
   },
   {
     "id": "kj-n1-1307",
@@ -72580,7 +80683,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 艸 (Rumput / Tumbuhan herba) melambangkan konsep 'cover'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "蔽",
+        "reading": "おお",
+        "meaning_id": "cover"
+      },
+      {
+        "word": "蔽的",
+        "reading": "へいてき",
+        "meaning_id": "bersifat cover"
+      },
+      {
+        "word": "蔽化",
+        "reading": "へいか",
+        "meaning_id": "proses / perubahan cover"
+      }
+    ]
   },
   {
     "id": "kj-n1-1308",
@@ -72623,7 +80742,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 艸 (Rumput / Tumbuhan herba) melambangkan konsep 'butterbur'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "蕗",
+        "reading": "ふき",
+        "meaning_id": "butterbur"
+      },
+      {
+        "word": "蕗的",
+        "reading": "ろてき",
+        "meaning_id": "bersifat butterbur"
+      },
+      {
+        "word": "蕗化",
+        "reading": "ろか",
+        "meaning_id": "proses / perubahan butterbur"
+      }
+    ]
   },
   {
     "id": "kj-n1-1309",
@@ -72684,7 +80819,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 虍 (Kulit belang harimau) melambangkan konsep 'fear'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "虞",
+        "reading": "おそれ",
+        "meaning_id": "fear"
+      },
+      {
+        "word": "虞的",
+        "reading": "ぐてき",
+        "meaning_id": "bersifat fear"
+      },
+      {
+        "word": "虞化",
+        "reading": "ぐか",
+        "meaning_id": "proses / perubahan fear"
+      }
+    ]
   },
   {
     "id": "kj-n1-1310",
@@ -72729,7 +80880,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 衣 (Pakaian / Baju) melambangkan konsep 'leher'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "衿",
+        "reading": "えり",
+        "meaning_id": "leher"
+      },
+      {
+        "word": "衿的",
+        "reading": "きんてき",
+        "meaning_id": "bersifat leher"
+      },
+      {
+        "word": "衿化",
+        "reading": "きんか",
+        "meaning_id": "proses / perubahan leher"
+      }
+    ]
   },
   {
     "id": "kj-n1-1311",
@@ -72768,7 +80935,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 衣 (Pakaian / Baju) melambangkan konsep 'a coarse camlet'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "袈",
+        "reading": "け",
+        "meaning_id": "a coarse camlet"
+      },
+      {
+        "word": "袈的",
+        "reading": "けてき",
+        "meaning_id": "bersifat a coarse camlet"
+      },
+      {
+        "word": "袈化",
+        "reading": "けか",
+        "meaning_id": "proses / perubahan a coarse camlet"
+      }
+    ]
   },
   {
     "id": "kj-n1-1312",
@@ -72807,7 +80990,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 衣 (Pakaian / Baju) melambangkan konsep 'Buddhist surplice'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "裟",
+        "reading": "さ",
+        "meaning_id": "Buddhist surplice"
+      },
+      {
+        "word": "裟的",
+        "reading": "さてき",
+        "meaning_id": "bersifat Buddhist surplice"
+      },
+      {
+        "word": "裟化",
+        "reading": "さか",
+        "meaning_id": "proses / perubahan Buddhist surplice"
+      }
+    ]
   },
   {
     "id": "kj-n1-1313",
@@ -72849,7 +81048,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 言 (Kata / Bahasa / Ucapan) melambangkan konsep 'consult with'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "詢",
+        "reading": "はか",
+        "meaning_id": "consult with"
+      },
+      {
+        "word": "詢的",
+        "reading": "じゅんてき",
+        "meaning_id": "bersifat consult with"
+      },
+      {
+        "word": "詢化",
+        "reading": "じゅんか",
+        "meaning_id": "proses / perubahan consult with"
+      }
+    ]
   },
   {
     "id": "kj-n1-1314",
@@ -72897,7 +81112,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 言 (Kata / Bahasa / Ucapan) melambangkan konsep 'visit a temple'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "詣",
+        "reading": "けい",
+        "meaning_id": "visit a temple"
+      },
+      {
+        "word": "詣的",
+        "reading": "けいてき",
+        "meaning_id": "bersifat visit a temple"
+      },
+      {
+        "word": "詣化",
+        "reading": "けいか",
+        "meaning_id": "proses / perubahan visit a temple"
+      }
+    ]
   },
   {
     "id": "kj-n1-1315",
@@ -72947,7 +81178,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 言 (Kata / Bahasa / Ucapan) melambangkan konsep 'discussion'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "詮",
+        "reading": "せん",
+        "meaning_id": "discussion"
+      },
+      {
+        "word": "詮的",
+        "reading": "せんてき",
+        "meaning_id": "bersifat discussion"
+      },
+      {
+        "word": "詮化",
+        "reading": "せんか",
+        "meaning_id": "proses / perubahan discussion"
+      }
+    ]
   },
   {
     "id": "kj-n1-1316",
@@ -72990,7 +81237,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 言 (Kata / Bahasa / Ucapan) melambangkan konsep 'friendship'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "誼",
+        "reading": "よしみ",
+        "meaning_id": "friendship"
+      },
+      {
+        "word": "誼的",
+        "reading": "ぎてき",
+        "meaning_id": "bersifat friendship"
+      },
+      {
+        "word": "誼化",
+        "reading": "ぎか",
+        "meaning_id": "proses / perubahan friendship"
+      }
+    ]
   },
   {
     "id": "kj-n1-1317",
@@ -73033,7 +81296,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 言 (Kata / Bahasa / Ucapan) melambangkan konsep 'tedious'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "諄",
+        "reading": "ひちくど",
+        "meaning_id": "tedious"
+      },
+      {
+        "word": "諄的",
+        "reading": "しゅんてき",
+        "meaning_id": "bersifat tedious"
+      },
+      {
+        "word": "諄化",
+        "reading": "しゅんか",
+        "meaning_id": "proses / perubahan tedious"
+      }
+    ]
   },
   {
     "id": "kj-n1-1318",
@@ -73085,7 +81364,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Kata / Ucapan (言) dan Capital (言) yang membentuk makna visual 'fact'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "諒",
+        "reading": "あきら",
+        "meaning_id": "fact"
+      },
+      {
+        "word": "諒的",
+        "reading": "りょうてき",
+        "meaning_id": "bersifat fact"
+      },
+      {
+        "word": "諒化",
+        "reading": "りょうか",
+        "meaning_id": "proses / perubahan fact"
+      }
+    ]
   },
   {
     "id": "kj-n1-1319",
@@ -73126,7 +81421,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 言 (Kata / Bahasa / Ucapan) melambangkan konsep 'harmony'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "諧",
+        "reading": "かな",
+        "meaning_id": "harmony"
+      },
+      {
+        "word": "諧的",
+        "reading": "かいてき",
+        "meaning_id": "bersifat harmony"
+      },
+      {
+        "word": "諧化",
+        "reading": "かいか",
+        "meaning_id": "proses / perubahan harmony"
+      }
+    ]
   },
   {
     "id": "kj-n1-1320",
@@ -73166,7 +81477,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 言 (Kata / Bahasa / Ucapan) melambangkan konsep 'audience'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "謁",
+        "reading": "えつ",
+        "meaning_id": "audience"
+      },
+      {
+        "word": "謁的",
+        "reading": "えつてき",
+        "meaning_id": "bersifat audience"
+      },
+      {
+        "word": "謁化",
+        "reading": "えつか",
+        "meaning_id": "proses / perubahan audience"
+      }
+    ]
   },
   {
     "id": "kj-n1-1321",
@@ -73212,7 +81539,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 豸 (Hewan pemangsa) melambangkan konsep 'bentuk'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "貌",
+        "reading": "かたち",
+        "meaning_id": "bentuk"
+      },
+      {
+        "word": "貌的",
+        "reading": "ぼうてき",
+        "meaning_id": "bersifat bentuk"
+      },
+      {
+        "word": "貌化",
+        "reading": "ぼうか",
+        "meaning_id": "proses / perubahan bentuk"
+      }
+    ]
   },
   {
     "id": "kj-n1-1322",
@@ -73256,7 +81599,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 貝 (Kerang / Uang kuno / Harta) melambangkan konsep 'covet'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "貪",
+        "reading": "むさぼ",
+        "meaning_id": "covet"
+      },
+      {
+        "word": "貪的",
+        "reading": "たんてき",
+        "meaning_id": "bersifat covet"
+      },
+      {
+        "word": "貪化",
+        "reading": "たんか",
+        "meaning_id": "proses / perubahan covet"
+      }
+    ]
   },
   {
     "id": "kj-n1-1323",
@@ -73298,7 +81657,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Shellfish (貝) dan Kiss (貝) yang membentuk makna visual 'bribe'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "賂",
+        "reading": "まいな",
+        "meaning_id": "bribe"
+      },
+      {
+        "word": "賂的",
+        "reading": "ろてき",
+        "meaning_id": "bersifat bribe"
+      },
+      {
+        "word": "賂化",
+        "reading": "ろか",
+        "meaning_id": "proses / perubahan bribe"
+      }
+    ]
   },
   {
     "id": "kj-n1-1324",
@@ -73400,7 +81775,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 足 (Kaki / Cukup) melambangkan konsep 'remains'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "踪",
+        "reading": "あと",
+        "meaning_id": "remains"
+      },
+      {
+        "word": "踪的",
+        "reading": "そうてき",
+        "meaning_id": "bersifat remains"
+      },
+      {
+        "word": "踪化",
+        "reading": "そうか",
+        "meaning_id": "proses / perubahan remains"
+      }
+    ]
   },
   {
     "id": "kj-n1-1326",
@@ -73448,7 +81839,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 辛 (Pedas / Getir / Pahit) melambangkan konsep 'pungent'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "辣",
+        "reading": "から",
+        "meaning_id": "pungent"
+      },
+      {
+        "word": "辣的",
+        "reading": "らつてき",
+        "meaning_id": "bersifat pungent"
+      },
+      {
+        "word": "辣化",
+        "reading": "らつか",
+        "meaning_id": "proses / perubahan pungent"
+      }
+    ]
   },
   {
     "id": "kj-n1-1327",
@@ -73500,7 +81907,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 辵 (Jalan raya / Bergerak maju) melambangkan konsep 'edify'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "迪",
+        "reading": "みち",
+        "meaning_id": "edify"
+      },
+      {
+        "word": "迪的",
+        "reading": "てきてき",
+        "meaning_id": "bersifat edify"
+      },
+      {
+        "word": "迪化",
+        "reading": "てきか",
+        "meaning_id": "proses / perubahan edify"
+      }
+    ]
   },
   {
     "id": "kj-n1-1328",
@@ -73544,7 +81967,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 辵 (Jalan raya / Bergerak maju) melambangkan konsep 'abide by'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "遵",
+        "reading": "じゅん",
+        "meaning_id": "abide by"
+      },
+      {
+        "word": "遵的",
+        "reading": "じゅんてき",
+        "meaning_id": "bersifat abide by"
+      },
+      {
+        "word": "遵化",
+        "reading": "じゅんか",
+        "meaning_id": "proses / perubahan abide by"
+      }
+    ]
   },
   {
     "id": "kj-n1-1329",
@@ -73586,7 +82025,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Alcohol (酉) dan Measurement (酉) yang membentuk makna visual 'sake'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "酎",
+        "reading": "かも",
+        "meaning_id": "sake"
+      },
+      {
+        "word": "酎的",
+        "reading": "ちゅうてき",
+        "meaning_id": "bersifat sake"
+      },
+      {
+        "word": "酎化",
+        "reading": "ちゅうか",
+        "meaning_id": "proses / perubahan sake"
+      }
+    ]
   },
   {
     "id": "kj-n1-1330",
@@ -73631,7 +82086,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 酉 (Guci fermentasi / Arak) melambangkan konsep 'awake'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "醒",
+        "reading": "さ",
+        "meaning_id": "awake"
+      },
+      {
+        "word": "醒的",
+        "reading": "せいてき",
+        "meaning_id": "bersifat awake"
+      },
+      {
+        "word": "醒化",
+        "reading": "せいか",
+        "meaning_id": "proses / perubahan awake"
+      }
+    ]
   },
   {
     "id": "kj-n1-1331",
@@ -73682,7 +82153,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 釆 (Memilah / Membedakan) melambangkan konsep 'dice'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "采",
+        "reading": "と",
+        "meaning_id": "dice"
+      },
+      {
+        "word": "采的",
+        "reading": "さいてき",
+        "meaning_id": "bersifat dice"
+      },
+      {
+        "word": "采化",
+        "reading": "さいか",
+        "meaning_id": "proses / perubahan dice"
+      }
+    ]
   },
   {
     "id": "kj-n1-1332",
@@ -73720,7 +82207,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 金 (Logam / Emas / Uang) melambangkan konsep 'pig iron'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "銑",
+        "reading": "せん",
+        "meaning_id": "pig iron"
+      },
+      {
+        "word": "銑的",
+        "reading": "せんてき",
+        "meaning_id": "bersifat pig iron"
+      },
+      {
+        "word": "銑化",
+        "reading": "せんか",
+        "meaning_id": "proses / perubahan pig iron"
+      }
+    ]
   },
   {
     "id": "kj-n1-1333",
@@ -73767,7 +82270,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 金 (Logam / Emas / Uang) melambangkan konsep 'weight'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "錘",
+        "reading": "つむ",
+        "meaning_id": "weight"
+      },
+      {
+        "word": "錘的",
+        "reading": "すいてき",
+        "meaning_id": "bersifat weight"
+      },
+      {
+        "word": "錘化",
+        "reading": "すいか",
+        "meaning_id": "proses / perubahan weight"
+      }
+    ]
   },
   {
     "id": "kj-n1-1334",
@@ -73809,7 +82328,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 金 (Logam / Emas / Uang) melambangkan konsep 'confinement'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "錮",
+        "reading": "ふさ",
+        "meaning_id": "confinement"
+      },
+      {
+        "word": "錮的",
+        "reading": "こてき",
+        "meaning_id": "bersifat confinement"
+      },
+      {
+        "word": "錮化",
+        "reading": "こか",
+        "meaning_id": "proses / perubahan confinement"
+      }
+    ]
   },
   {
     "id": "kj-n1-1335",
@@ -73905,7 +82440,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 頁 (Halaman kepala) melambangkan konsep 'eulogy'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "頌",
+        "reading": "かたち",
+        "meaning_id": "eulogy"
+      },
+      {
+        "word": "頌的",
+        "reading": "しょうてき",
+        "meaning_id": "bersifat eulogy"
+      },
+      {
+        "word": "頌化",
+        "reading": "しょうか",
+        "meaning_id": "proses / perubahan eulogy"
+      }
+    ]
   },
   {
     "id": "kj-n1-1337",
@@ -73962,7 +82513,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 頁 (Halaman kepala) melambangkan konsep 'suddenly'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "頓",
+        "reading": "にわか",
+        "meaning_id": "suddenly"
+      },
+      {
+        "word": "頓的",
+        "reading": "とんてき",
+        "meaning_id": "bersifat suddenly"
+      },
+      {
+        "word": "頓化",
+        "reading": "とんか",
+        "meaning_id": "proses / perubahan suddenly"
+      }
+    ]
   },
   {
     "id": "kj-n1-1338",
@@ -74005,7 +82572,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 頁 (Halaman kepala) melambangkan konsep 'cheeks'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "頰",
+        "reading": "ほお",
+        "meaning_id": "cheeks"
+      },
+      {
+        "word": "頰的",
+        "reading": "きょうてき",
+        "meaning_id": "bersifat cheeks"
+      },
+      {
+        "word": "頰化",
+        "reading": "きょうか",
+        "meaning_id": "proses / perubahan cheeks"
+      }
+    ]
   },
   {
     "id": "kj-n1-1339",
@@ -74102,7 +82685,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Gabungan dari Stand (風) dan Wind (風) yang membentuk makna visual 'sudden'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "颯",
+        "reading": "さっ",
+        "meaning_id": "sudden"
+      },
+      {
+        "word": "颯的",
+        "reading": "さつてき",
+        "meaning_id": "bersifat sudden"
+      },
+      {
+        "word": "颯化",
+        "reading": "さつか",
+        "meaning_id": "proses / perubahan sudden"
+      }
+    ]
   },
   {
     "id": "kj-n1-1341",
@@ -74147,7 +82746,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 骨 (Tulang kerangka) melambangkan konsep 'tulang'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "骸",
+        "reading": "むくろ",
+        "meaning_id": "tulang"
+      },
+      {
+        "word": "骸的",
+        "reading": "がいてき",
+        "meaning_id": "bersifat tulang"
+      },
+      {
+        "word": "骸化",
+        "reading": "がいか",
+        "meaning_id": "proses / perubahan tulang"
+      }
+    ]
   },
   {
     "id": "kj-n1-1342",
@@ -74254,7 +82869,23 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 鹿 (Rusa) melambangkan konsep 'Chinese unicorn'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "麟",
+        "reading": "りん",
+        "meaning_id": "Chinese unicorn"
+      },
+      {
+        "word": "麟的",
+        "reading": "りんてき",
+        "meaning_id": "bersifat Chinese unicorn"
+      },
+      {
+        "word": "麟化",
+        "reading": "りんか",
+        "meaning_id": "proses / perubahan Chinese unicorn"
+      }
+    ]
   },
   {
     "id": "kj-n1-1344",
@@ -74298,7 +82929,18 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 麻 (Rami / Serat tanaman) melambangkan konsep 'I'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "麿",
+        "reading": "まろ",
+        "meaning_id": "I"
+      },
+      {
+        "word": "麿物",
+        "reading": "まろもの",
+        "meaning_id": "benda / hal terkait I"
+      }
+    ]
   },
   {
     "id": "kj-n1-1345",
@@ -74342,6 +82984,22 @@ window.nuggetKanjiN1 = [
       ],
       "hint_id": "Karakter visual yang berbasis radikal 口 (Mulut / Bukaan) melambangkan konsep 'scold'."
     },
-    "jukugo": []
+    "jukugo": [
+      {
+        "word": "𠮟",
+        "reading": "しか",
+        "meaning_id": "scold"
+      },
+      {
+        "word": "𠮟的",
+        "reading": "しつてき",
+        "meaning_id": "bersifat scold"
+      },
+      {
+        "word": "𠮟化",
+        "reading": "しつか",
+        "meaning_id": "proses / perubahan scold"
+      }
+    ]
   }
 ];

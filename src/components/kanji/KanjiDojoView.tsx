@@ -18,6 +18,7 @@ import {
 } from '../../lib/data/kanjiManager';
 import { KanjiStrokeModal } from './KanjiStrokeModal';
 import { voiceManager } from '../../lib/audio/voiceManager';
+import { RubyText } from '../ui/RubyText';
 
 interface KanjiDojoViewProps {
   onAskSensei?: (context: string) => void;
@@ -290,17 +291,17 @@ export const KanjiDojoView: React.FC<KanjiDojoViewProps> = ({ onAskSensei }) => 
                     <button
                       onClick={(e) => handleAudioPlay(e, item.character)}
                       aria-label={`Dengarkan ${item.character}`}
-                      className="p-1 text-appText-muted hover:text-accent rounded transition-colors active:scale-90"
+                      className="w-10 h-10 min-w-[40px] min-h-[40px] flex items-center justify-center text-appText-muted hover:text-accent rounded-xl hover:bg-amber-500/10 transition-colors active:scale-95 shrink-0"
                     >
-                      <Volume2 size={13} />
+                      <Volume2 size={16} />
                     </button>
                   </div>
                 </div>
 
                 {/* Center Character */}
                 <div className="my-2 text-center">
-                  <span className="text-4xl sm:text-5xl font-black font-japanese text-appText-bright group-hover:text-accent transition-colors">
-                    {item.character}
+                  <span className="text-4xl sm:text-5xl font-black font-japanese text-appText-bright group-hover:text-accent transition-colors inline-block">
+                    <RubyText text={item.character} furigana={onyomiPreview || kunyomiPreview || ''} />
                   </span>
                 </div>
 

@@ -3,8 +3,9 @@
 //  Triggered by '?' key or Help button
 // ══════════════════════════════════════════════════════════════════
 
-import React, { useEffect } from 'react';
+import React from 'react';
 import { X, Command, Keyboard, Zap, Sparkles } from 'lucide-react';
+import { useFocusTrap } from '../../hooks/useFocusTrap';
 
 interface KeyboardShortcutsModalProps {
   isOpen: boolean;
@@ -12,13 +13,7 @@ interface KeyboardShortcutsModalProps {
 }
 
 export const KeyboardShortcutsModal: React.FC<KeyboardShortcutsModalProps> = ({ isOpen, onClose }) => {
-  useEffect(() => {
-    const handleKeyDown = (e: KeyboardEvent) => {
-      if (e.key === 'Escape' && isOpen) onClose();
-    };
-    window.addEventListener('keydown', handleKeyDown);
-    return () => window.removeEventListener('keydown', handleKeyDown);
-  }, [isOpen, onClose]);
+  const containerRef = useFocusTrap<HTMLDivElement>(isOpen, onClose);
 
   if (!isOpen) return null;
 
@@ -56,9 +51,11 @@ export const KeyboardShortcutsModal: React.FC<KeyboardShortcutsModalProps> = ({ 
       onClick={onClose}
       className="fixed inset-0 z-50 bg-black/80 backdrop-blur-md flex items-center justify-center p-4 animate-in fade-in duration-200"
       role="dialog"
+      aria-modal="true"
       aria-label="Pintasan Keyboard Desktop"
     >
       <div
+        ref={containerRef}
         onClick={(e) => e.stopPropagation()}
         className="w-full max-w-lg bg-surface border-2 border-accent/30 rounded-3xl p-6 sm:p-8 space-y-6 shadow-2xl relative animate-in zoom-in-95 duration-200"
       >
@@ -74,12 +71,13 @@ export const KeyboardShortcutsModal: React.FC<KeyboardShortcutsModalProps> = ({ 
           </div>
 
           <button
+            type="button"
             onClick={onClose}
-            className="w-8 h-8 rounded-full bg-surface-2 hover:bg-surface-3 flex items-center justify-center text-appText-muted hover:text-appText-bright transition-all"
+            className="w-11 h-11 min-w-[44px] min-h-[44px] rounded-full bg-surface-2 hover:bg-surface-3 flex items-center justify-center text-appText-muted hover:text-appText-bright transition-all active:scale-95"
             title="Tutup"
-            aria-label="Tutup modal"
+            aria-label="Tutup pintasan keyboard"
           >
-            <X className="w-4 h-4" />
+            <X className="w-5 h-5" />
           </button>
         </div>
 

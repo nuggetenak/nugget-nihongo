@@ -6,7 +6,7 @@
     "level": "n5",
     "publisher": "The Japan Foundation",
     "version": "1.2.0",
-    "total_units": 12,
+    "total_units": 36,
     "authoritative": true
   },
   "units": [
@@ -15,39 +15,69 @@
       "id": "unit-curriculum-book-irodori-01",
       "level": "n5",
       "pt_stage": 2,
-      "title_id": "Irodori A1: Irodori A1 Bab 1",
-      "title_jp": "Irodori A1 第1課",
+      "title_id": "Irodori A1: 1",
+      "title_jp": "はじめまして — Perkenalan (かつどう)",
       "theme": "Irodori A1",
       "icon": "🌈",
-      "can_do_summary": "Memahami silabus Irodori A1 Bab 1 secara komprehensif.",
-      "grammar_ids": [],
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 1.",
+      "grammar_ids": [
+        "gn5-00001",
+        "gn5-00002",
+        "gn5-00085",
+        "gn5-00005",
+        "gn5-00003",
+        "gn5-00004"
+      ],
       "vocab_ids": [
-        "vg-n5-00990"
+        "vg-n5-00093",
+        "vg-n5-00414",
+        "vg-n5-00417",
+        "vg-n5-00418"
       ],
       "lessons": [
         {
           "id": "les-curriculum-book-irodori-u01-01",
           "lesson_number": 1,
-          "title_id": "Irodori A1 Bab 1 (Eksplorasi Materi & Pola)",
-          "title_jp": "Irodori A1 第1課（解説）",
+          "title_id": "1 (Eksplorasi Materi & Pola)",
+          "title_jp": "はじめまして — Perkenalan (かつどう)（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku Irodori: Japanese for Life in Japan pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa Irodori: Japanese for Life in Japan bab ini dalam konteks nyata.",
-          "grammar_ids": [],
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 1.",
+          "grammar_ids": [
+            "gn5-00001",
+            "gn5-00002",
+            "gn5-00085",
+            "gn5-00005",
+            "gn5-00003",
+            "gn5-00004"
+          ],
           "vocab_ids": [
-            "vg-n5-00990"
+            "vg-n5-00093",
+            "vg-n5-00414",
+            "vg-n5-00417",
+            "vg-n5-00418"
           ],
           "pedagogical_framework": {
             "what": {
               "summary": "Silabus resmi Irodori: Japanese for Life in Japan bab 1.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
-              "targetPatterns": [],
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 1.",
+              "targetPatterns": [
+                "gn5-00001",
+                "gn5-00002",
+                "gn5-00085",
+                "gn5-00005",
+                "gn5-00003",
+                "gn5-00004"
+              ],
               "coreVocabSample": [
-                "vg-n5-00990"
+                "vg-n5-00093",
+                "vg-n5-00414",
+                "vg-n5-00417",
+                "vg-n5-00418"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku Irodori: Japanese for Life in Japan. Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 1 Irodori: Japanese for Life in Japan.",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 1.",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -61,17 +91,17 @@
               "id": "d1",
               "speaker": "Sensei",
               "speakerRole": "Tutor Belajar",
-              "jp": "Irodori A1 第1課の勉強を始めましょう！",
+              "jp": "はじめまして — Perkenalan (かつどう)の勉強を始めましょう！",
               "furigana": "べんきょうをはじめましょう！",
               "romaji": "Benkyou wo hajimemashou!",
-              "idText": "Mari kita mulai belajar Irodori A1 Bab 1!"
+              "idText": "Mari kita mulai belajar 1!"
             }
           ],
           "drills": [
             {
               "id": "dr1",
               "type": "multiple-choice",
-              "prompt": "Apa fokus utama pada materi Irodori A1 Bab 1 di buku Irodori: Japanese for Life in Japan?",
+              "prompt": "Apa fokus utama pada materi 1 di buku Irodori: Japanese for Life in Japan?",
               "options": [
                 "Menguasai pola kalimat bab ini dengan pemahaman alami",
                 "Menghafal tanpa memahami konteks",
@@ -90,39 +120,63 @@
       "id": "unit-curriculum-book-irodori-02",
       "level": "n5",
       "pt_stage": 3,
-      "title_id": "Irodori A1: Irodori A1 Bab 2",
-      "title_jp": "Irodori A1 第2課",
+      "title_id": "Irodori A1: 1",
+      "title_jp": "はじめまして — Identitas dan Negasi (りかい)",
       "theme": "Irodori A1",
       "icon": "🌈",
-      "can_do_summary": "Memahami silabus Irodori A1 Bab 2 secara komprehensif.",
-      "grammar_ids": [],
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 1.",
+      "grammar_ids": [
+        "gn5-00006",
+        "gn5-00007",
+        "gn5-00008",
+        "gn5-00009"
+      ],
       "vocab_ids": [
-        "vg-n5-00990"
+        "vg-n5-00424",
+        "vg-n5-00423",
+        "vg-n5-00441",
+        "vg-n5-00439"
       ],
       "lessons": [
         {
           "id": "les-curriculum-book-irodori-u02-01",
           "lesson_number": 1,
-          "title_id": "Irodori A1 Bab 2 (Eksplorasi Materi & Pola)",
-          "title_jp": "Irodori A1 第2課（解説）",
+          "title_id": "1 (Eksplorasi Materi & Pola)",
+          "title_jp": "はじめまして — Identitas dan Negasi (りかい)（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku Irodori: Japanese for Life in Japan pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa Irodori: Japanese for Life in Japan bab ini dalam konteks nyata.",
-          "grammar_ids": [],
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 1.",
+          "grammar_ids": [
+            "gn5-00006",
+            "gn5-00007",
+            "gn5-00008",
+            "gn5-00009"
+          ],
           "vocab_ids": [
-            "vg-n5-00990"
+            "vg-n5-00424",
+            "vg-n5-00423",
+            "vg-n5-00441",
+            "vg-n5-00439"
           ],
           "pedagogical_framework": {
             "what": {
               "summary": "Silabus resmi Irodori: Japanese for Life in Japan bab 2.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
-              "targetPatterns": [],
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 1.",
+              "targetPatterns": [
+                "gn5-00006",
+                "gn5-00007",
+                "gn5-00008",
+                "gn5-00009"
+              ],
               "coreVocabSample": [
-                "vg-n5-00990"
+                "vg-n5-00424",
+                "vg-n5-00423",
+                "vg-n5-00441",
+                "vg-n5-00439"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku Irodori: Japanese for Life in Japan. Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 2 Irodori: Japanese for Life in Japan.",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 1.",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -136,17 +190,17 @@
               "id": "d1",
               "speaker": "Sensei",
               "speakerRole": "Tutor Belajar",
-              "jp": "Irodori A1 第2課の勉強を始めましょう！",
+              "jp": "はじめまして — Identitas dan Negasi (りかい)の勉強を始めましょう！",
               "furigana": "べんきょうをはじめましょう！",
               "romaji": "Benkyou wo hajimemashou!",
-              "idText": "Mari kita mulai belajar Irodori A1 Bab 2!"
+              "idText": "Mari kita mulai belajar 1!"
             }
           ],
           "drills": [
             {
               "id": "dr1",
               "type": "multiple-choice",
-              "prompt": "Apa fokus utama pada materi Irodori A1 Bab 2 di buku Irodori: Japanese for Life in Japan?",
+              "prompt": "Apa fokus utama pada materi 1 di buku Irodori: Japanese for Life in Japan?",
               "options": [
                 "Menguasai pola kalimat bab ini dengan pemahaman alami",
                 "Menghafal tanpa memahami konteks",
@@ -165,39 +219,69 @@
       "id": "unit-curriculum-book-irodori-03",
       "level": "n5",
       "pt_stage": 4,
-      "title_id": "Irodori A1: Irodori A1 Bab 3",
-      "title_jp": "Irodori A1 第3課",
+      "title_id": "Irodori A1: 2",
+      "title_jp": "これ、ください — Meminta Benda (かつどう)",
       "theme": "Irodori A1",
       "icon": "🌈",
-      "can_do_summary": "Memahami silabus Irodori A1 Bab 3 secara komprehensif.",
-      "grammar_ids": [],
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 2.",
+      "grammar_ids": [
+        "gn5-00010",
+        "gn5-00086",
+        "gn5-00011",
+        "gn5-00012",
+        "gn5-00013",
+        "gn5-00087"
+      ],
       "vocab_ids": [
-        "vg-n5-00990"
+        "vg-n5-00108",
+        "vg-n5-00526",
+        "vg-n5-00406",
+        "vg-n5-00394"
       ],
       "lessons": [
         {
           "id": "les-curriculum-book-irodori-u03-01",
           "lesson_number": 1,
-          "title_id": "Irodori A1 Bab 3 (Eksplorasi Materi & Pola)",
-          "title_jp": "Irodori A1 第3課（解説）",
+          "title_id": "2 (Eksplorasi Materi & Pola)",
+          "title_jp": "これ、ください — Meminta Benda (かつどう)（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku Irodori: Japanese for Life in Japan pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa Irodori: Japanese for Life in Japan bab ini dalam konteks nyata.",
-          "grammar_ids": [],
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 2.",
+          "grammar_ids": [
+            "gn5-00010",
+            "gn5-00086",
+            "gn5-00011",
+            "gn5-00012",
+            "gn5-00013",
+            "gn5-00087"
+          ],
           "vocab_ids": [
-            "vg-n5-00990"
+            "vg-n5-00108",
+            "vg-n5-00526",
+            "vg-n5-00406",
+            "vg-n5-00394"
           ],
           "pedagogical_framework": {
             "what": {
               "summary": "Silabus resmi Irodori: Japanese for Life in Japan bab 3.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
-              "targetPatterns": [],
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 2.",
+              "targetPatterns": [
+                "gn5-00010",
+                "gn5-00086",
+                "gn5-00011",
+                "gn5-00012",
+                "gn5-00013",
+                "gn5-00087"
+              ],
               "coreVocabSample": [
-                "vg-n5-00990"
+                "vg-n5-00108",
+                "vg-n5-00526",
+                "vg-n5-00406",
+                "vg-n5-00394"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku Irodori: Japanese for Life in Japan. Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 3 Irodori: Japanese for Life in Japan.",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 2.",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -211,17 +295,17 @@
               "id": "d1",
               "speaker": "Sensei",
               "speakerRole": "Tutor Belajar",
-              "jp": "Irodori A1 第3課の勉強を始めましょう！",
+              "jp": "これ、ください — Meminta Benda (かつどう)の勉強を始めましょう！",
               "furigana": "べんきょうをはじめましょう！",
               "romaji": "Benkyou wo hajimemashou!",
-              "idText": "Mari kita mulai belajar Irodori A1 Bab 3!"
+              "idText": "Mari kita mulai belajar 2!"
             }
           ],
           "drills": [
             {
               "id": "dr1",
               "type": "multiple-choice",
-              "prompt": "Apa fokus utama pada materi Irodori A1 Bab 3 di buku Irodori: Japanese for Life in Japan?",
+              "prompt": "Apa fokus utama pada materi 2 di buku Irodori: Japanese for Life in Japan?",
               "options": [
                 "Menguasai pola kalimat bab ini dengan pemahaman alami",
                 "Menghafal tanpa memahami konteks",
@@ -240,39 +324,63 @@
       "id": "unit-curriculum-book-irodori-04",
       "level": "n5",
       "pt_stage": 5,
-      "title_id": "Irodori A1: Irodori A1 Bab 4",
-      "title_jp": "Irodori A1 第4課",
+      "title_id": "Irodori A1: 2",
+      "title_jp": "これ、ください — Harga dan Warna (りかい)",
       "theme": "Irodori A1",
       "icon": "🌈",
-      "can_do_summary": "Memahami silabus Irodori A1 Bab 4 secara komprehensif.",
-      "grammar_ids": [],
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 2.",
+      "grammar_ids": [
+        "gn5-00014",
+        "gn5-00064",
+        "gn5-00088",
+        "gn5-00015"
+      ],
       "vocab_ids": [
-        "vg-n5-00990"
+        "vg-n5-00061",
+        "vg-n5-00062",
+        "vg-n5-00057",
+        "vg-n5-00058"
       ],
       "lessons": [
         {
           "id": "les-curriculum-book-irodori-u04-01",
           "lesson_number": 1,
-          "title_id": "Irodori A1 Bab 4 (Eksplorasi Materi & Pola)",
-          "title_jp": "Irodori A1 第4課（解説）",
+          "title_id": "2 (Eksplorasi Materi & Pola)",
+          "title_jp": "これ、ください — Harga dan Warna (りかい)（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku Irodori: Japanese for Life in Japan pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa Irodori: Japanese for Life in Japan bab ini dalam konteks nyata.",
-          "grammar_ids": [],
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 2.",
+          "grammar_ids": [
+            "gn5-00014",
+            "gn5-00064",
+            "gn5-00088",
+            "gn5-00015"
+          ],
           "vocab_ids": [
-            "vg-n5-00990"
+            "vg-n5-00061",
+            "vg-n5-00062",
+            "vg-n5-00057",
+            "vg-n5-00058"
           ],
           "pedagogical_framework": {
             "what": {
               "summary": "Silabus resmi Irodori: Japanese for Life in Japan bab 4.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
-              "targetPatterns": [],
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 2.",
+              "targetPatterns": [
+                "gn5-00014",
+                "gn5-00064",
+                "gn5-00088",
+                "gn5-00015"
+              ],
               "coreVocabSample": [
-                "vg-n5-00990"
+                "vg-n5-00061",
+                "vg-n5-00062",
+                "vg-n5-00057",
+                "vg-n5-00058"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku Irodori: Japanese for Life in Japan. Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 4 Irodori: Japanese for Life in Japan.",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 2.",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -286,17 +394,17 @@
               "id": "d1",
               "speaker": "Sensei",
               "speakerRole": "Tutor Belajar",
-              "jp": "Irodori A1 第4課の勉強を始めましょう！",
+              "jp": "これ、ください — Harga dan Warna (りかい)の勉強を始めましょう！",
               "furigana": "べんきょうをはじめましょう！",
               "romaji": "Benkyou wo hajimemashou!",
-              "idText": "Mari kita mulai belajar Irodori A1 Bab 4!"
+              "idText": "Mari kita mulai belajar 2!"
             }
           ],
           "drills": [
             {
               "id": "dr1",
               "type": "multiple-choice",
-              "prompt": "Apa fokus utama pada materi Irodori A1 Bab 4 di buku Irodori: Japanese for Life in Japan?",
+              "prompt": "Apa fokus utama pada materi 2 di buku Irodori: Japanese for Life in Japan?",
               "options": [
                 "Menguasai pola kalimat bab ini dengan pemahaman alami",
                 "Menghafal tanpa memahami konteks",
@@ -315,39 +423,63 @@
       "id": "unit-curriculum-book-irodori-05",
       "level": "n5",
       "pt_stage": 6,
-      "title_id": "Irodori A2-1: Irodori A2-1 Bab 1",
-      "title_jp": "Irodori A2-1 第1課",
-      "theme": "Irodori A2-1",
+      "title_id": "Irodori A1: 3",
+      "title_jp": "ここはどこですか — Menanyakan Lokasi (かつどう)",
+      "theme": "Irodori A1",
       "icon": "🌈",
-      "can_do_summary": "Memahami silabus Irodori A2-1 Bab 1 secara komprehensif.",
-      "grammar_ids": [],
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 3.",
+      "grammar_ids": [
+        "gn5-00001",
+        "gn5-00016",
+        "gn5-00017",
+        "gn5-00018"
+      ],
       "vocab_ids": [
-        "vg-n5-00990"
+        "vg-n5-00088",
+        "vg-n5-00089",
+        "vg-n5-00524",
+        "vg-n5-00545"
       ],
       "lessons": [
         {
           "id": "les-curriculum-book-irodori-u05-01",
           "lesson_number": 1,
-          "title_id": "Irodori A2-1 Bab 1 (Eksplorasi Materi & Pola)",
-          "title_jp": "Irodori A2-1 第1課（解説）",
+          "title_id": "3 (Eksplorasi Materi & Pola)",
+          "title_jp": "ここはどこですか — Menanyakan Lokasi (かつどう)（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku Irodori: Japanese for Life in Japan pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa Irodori: Japanese for Life in Japan bab ini dalam konteks nyata.",
-          "grammar_ids": [],
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 3.",
+          "grammar_ids": [
+            "gn5-00001",
+            "gn5-00016",
+            "gn5-00017",
+            "gn5-00018"
+          ],
           "vocab_ids": [
-            "vg-n5-00990"
+            "vg-n5-00088",
+            "vg-n5-00089",
+            "vg-n5-00524",
+            "vg-n5-00545"
           ],
           "pedagogical_framework": {
             "what": {
-              "summary": "Silabus resmi Irodori: Japanese for Life in Japan bab 1.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
-              "targetPatterns": [],
+              "summary": "Silabus resmi Irodori: Japanese for Life in Japan bab 5.",
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 3.",
+              "targetPatterns": [
+                "gn5-00001",
+                "gn5-00016",
+                "gn5-00017",
+                "gn5-00018"
+              ],
               "coreVocabSample": [
-                "vg-n5-00990"
+                "vg-n5-00088",
+                "vg-n5-00089",
+                "vg-n5-00524",
+                "vg-n5-00545"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku Irodori: Japanese for Life in Japan. Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 1 Irodori: Japanese for Life in Japan.",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 3.",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -361,17 +493,17 @@
               "id": "d1",
               "speaker": "Sensei",
               "speakerRole": "Tutor Belajar",
-              "jp": "Irodori A2-1 第1課の勉強を始めましょう！",
+              "jp": "ここはどこですか — Menanyakan Lokasi (かつどう)の勉強を始めましょう！",
               "furigana": "べんきょうをはじめましょう！",
               "romaji": "Benkyou wo hajimemashou!",
-              "idText": "Mari kita mulai belajar Irodori A2-1 Bab 1!"
+              "idText": "Mari kita mulai belajar 3!"
             }
           ],
           "drills": [
             {
               "id": "dr1",
               "type": "multiple-choice",
-              "prompt": "Apa fokus utama pada materi Irodori A2-1 Bab 1 di buku Irodori: Japanese for Life in Japan?",
+              "prompt": "Apa fokus utama pada materi 3 di buku Irodori: Japanese for Life in Japan?",
               "options": [
                 "Menguasai pola kalimat bab ini dengan pemahaman alami",
                 "Menghafal tanpa memahami konteks",
@@ -390,39 +522,60 @@
       "id": "unit-curriculum-book-irodori-06",
       "level": "n5",
       "pt_stage": 1,
-      "title_id": "Irodori A2-1: Irodori A2-1 Bab 2",
-      "title_jp": "Irodori A2-1 第2課",
-      "theme": "Irodori A2-1",
+      "title_id": "Irodori A1: 3",
+      "title_jp": "ここはどこですか — Pergi ke Suatu Tempat (りかい)",
+      "theme": "Irodori A1",
       "icon": "🌈",
-      "can_do_summary": "Memahami silabus Irodori A2-1 Bab 2 secara komprehensif.",
-      "grammar_ids": [],
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 3.",
+      "grammar_ids": [
+        "gn5-00019",
+        "gn5-00020",
+        "gn5-00089"
+      ],
       "vocab_ids": [
-        "vg-n5-00990"
+        "vg-n5-00009",
+        "vg-n5-00010",
+        "vg-n5-00011",
+        "vg-n5-00027"
       ],
       "lessons": [
         {
           "id": "les-curriculum-book-irodori-u06-01",
           "lesson_number": 1,
-          "title_id": "Irodori A2-1 Bab 2 (Eksplorasi Materi & Pola)",
-          "title_jp": "Irodori A2-1 第2課（解説）",
+          "title_id": "3 (Eksplorasi Materi & Pola)",
+          "title_jp": "ここはどこですか — Pergi ke Suatu Tempat (りかい)（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku Irodori: Japanese for Life in Japan pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa Irodori: Japanese for Life in Japan bab ini dalam konteks nyata.",
-          "grammar_ids": [],
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 3.",
+          "grammar_ids": [
+            "gn5-00019",
+            "gn5-00020",
+            "gn5-00089"
+          ],
           "vocab_ids": [
-            "vg-n5-00990"
+            "vg-n5-00009",
+            "vg-n5-00010",
+            "vg-n5-00011",
+            "vg-n5-00027"
           ],
           "pedagogical_framework": {
             "what": {
-              "summary": "Silabus resmi Irodori: Japanese for Life in Japan bab 2.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
-              "targetPatterns": [],
+              "summary": "Silabus resmi Irodori: Japanese for Life in Japan bab 6.",
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 3.",
+              "targetPatterns": [
+                "gn5-00019",
+                "gn5-00020",
+                "gn5-00089"
+              ],
               "coreVocabSample": [
-                "vg-n5-00990"
+                "vg-n5-00009",
+                "vg-n5-00010",
+                "vg-n5-00011",
+                "vg-n5-00027"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku Irodori: Japanese for Life in Japan. Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 2 Irodori: Japanese for Life in Japan.",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 3.",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -436,17 +589,17 @@
               "id": "d1",
               "speaker": "Sensei",
               "speakerRole": "Tutor Belajar",
-              "jp": "Irodori A2-1 第2課の勉強を始めましょう！",
+              "jp": "ここはどこですか — Pergi ke Suatu Tempat (りかい)の勉強を始めましょう！",
               "furigana": "べんきょうをはじめましょう！",
               "romaji": "Benkyou wo hajimemashou!",
-              "idText": "Mari kita mulai belajar Irodori A2-1 Bab 2!"
+              "idText": "Mari kita mulai belajar 3!"
             }
           ],
           "drills": [
             {
               "id": "dr1",
               "type": "multiple-choice",
-              "prompt": "Apa fokus utama pada materi Irodori A2-1 Bab 2 di buku Irodori: Japanese for Life in Japan?",
+              "prompt": "Apa fokus utama pada materi 3 di buku Irodori: Japanese for Life in Japan?",
               "options": [
                 "Menguasai pola kalimat bab ini dengan pemahaman alami",
                 "Menghafal tanpa memahami konteks",
@@ -465,39 +618,63 @@
       "id": "unit-curriculum-book-irodori-07",
       "level": "n5",
       "pt_stage": 2,
-      "title_id": "Irodori A2-1: Irodori A2-1 Bab 3",
-      "title_jp": "Irodori A2-1 第3課",
-      "theme": "Irodori A2-1",
+      "title_id": "Irodori A1: 4",
+      "title_jp": "いつですか — Jam dan Waktu (かつどう)",
+      "theme": "Irodori A1",
       "icon": "🌈",
-      "can_do_summary": "Memahami silabus Irodori A2-1 Bab 3 secara komprehensif.",
-      "grammar_ids": [],
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 4.",
+      "grammar_ids": [
+        "gn5-00020",
+        "gn5-00021",
+        "gn5-00001",
+        "gn5-00090"
+      ],
       "vocab_ids": [
-        "vg-n5-00990"
+        "vg-n5-00094",
+        "vg-n5-00095",
+        "vg-n5-00096",
+        "vg-n5-00097"
       ],
       "lessons": [
         {
           "id": "les-curriculum-book-irodori-u07-01",
           "lesson_number": 1,
-          "title_id": "Irodori A2-1 Bab 3 (Eksplorasi Materi & Pola)",
-          "title_jp": "Irodori A2-1 第3課（解説）",
+          "title_id": "4 (Eksplorasi Materi & Pola)",
+          "title_jp": "いつですか — Jam dan Waktu (かつどう)（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku Irodori: Japanese for Life in Japan pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa Irodori: Japanese for Life in Japan bab ini dalam konteks nyata.",
-          "grammar_ids": [],
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 4.",
+          "grammar_ids": [
+            "gn5-00020",
+            "gn5-00021",
+            "gn5-00001",
+            "gn5-00090"
+          ],
           "vocab_ids": [
-            "vg-n5-00990"
+            "vg-n5-00094",
+            "vg-n5-00095",
+            "vg-n5-00096",
+            "vg-n5-00097"
           ],
           "pedagogical_framework": {
             "what": {
-              "summary": "Silabus resmi Irodori: Japanese for Life in Japan bab 3.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
-              "targetPatterns": [],
+              "summary": "Silabus resmi Irodori: Japanese for Life in Japan bab 7.",
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 4.",
+              "targetPatterns": [
+                "gn5-00020",
+                "gn5-00021",
+                "gn5-00001",
+                "gn5-00090"
+              ],
               "coreVocabSample": [
-                "vg-n5-00990"
+                "vg-n5-00094",
+                "vg-n5-00095",
+                "vg-n5-00096",
+                "vg-n5-00097"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku Irodori: Japanese for Life in Japan. Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 3 Irodori: Japanese for Life in Japan.",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 4.",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -511,17 +688,17 @@
               "id": "d1",
               "speaker": "Sensei",
               "speakerRole": "Tutor Belajar",
-              "jp": "Irodori A2-1 第3課の勉強を始めましょう！",
+              "jp": "いつですか — Jam dan Waktu (かつどう)の勉強を始めましょう！",
               "furigana": "べんきょうをはじめましょう！",
               "romaji": "Benkyou wo hajimemashou!",
-              "idText": "Mari kita mulai belajar Irodori A2-1 Bab 3!"
+              "idText": "Mari kita mulai belajar 4!"
             }
           ],
           "drills": [
             {
               "id": "dr1",
               "type": "multiple-choice",
-              "prompt": "Apa fokus utama pada materi Irodori A2-1 Bab 3 di buku Irodori: Japanese for Life in Japan?",
+              "prompt": "Apa fokus utama pada materi 4 di buku Irodori: Japanese for Life in Japan?",
               "options": [
                 "Menguasai pola kalimat bab ini dengan pemahaman alami",
                 "Menghafal tanpa memahami konteks",
@@ -540,39 +717,60 @@
       "id": "unit-curriculum-book-irodori-08",
       "level": "n5",
       "pt_stage": 3,
-      "title_id": "Irodori A2-1: Irodori A2-1 Bab 4",
-      "title_jp": "Irodori A2-1 第4課",
-      "theme": "Irodori A2-1",
+      "title_id": "Irodori A1: 4",
+      "title_jp": "いつですか — Hari, Bulan, dan Tanggal (りかい)",
+      "theme": "Irodori A1",
       "icon": "🌈",
-      "can_do_summary": "Memahami silabus Irodori A2-1 Bab 4 secara komprehensif.",
-      "grammar_ids": [],
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 4.",
+      "grammar_ids": [
+        "gn5-00022",
+        "gn5-00023",
+        "gn5-00030"
+      ],
       "vocab_ids": [
-        "vg-n5-00990"
+        "vg-n5-00587",
+        "vg-n5-00588",
+        "vg-n5-00589",
+        "vg-n5-00590"
       ],
       "lessons": [
         {
           "id": "les-curriculum-book-irodori-u08-01",
           "lesson_number": 1,
-          "title_id": "Irodori A2-1 Bab 4 (Eksplorasi Materi & Pola)",
-          "title_jp": "Irodori A2-1 第4課（解説）",
+          "title_id": "4 (Eksplorasi Materi & Pola)",
+          "title_jp": "いつですか — Hari, Bulan, dan Tanggal (りかい)（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku Irodori: Japanese for Life in Japan pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa Irodori: Japanese for Life in Japan bab ini dalam konteks nyata.",
-          "grammar_ids": [],
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 4.",
+          "grammar_ids": [
+            "gn5-00022",
+            "gn5-00023",
+            "gn5-00030"
+          ],
           "vocab_ids": [
-            "vg-n5-00990"
+            "vg-n5-00587",
+            "vg-n5-00588",
+            "vg-n5-00589",
+            "vg-n5-00590"
           ],
           "pedagogical_framework": {
             "what": {
-              "summary": "Silabus resmi Irodori: Japanese for Life in Japan bab 4.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
-              "targetPatterns": [],
+              "summary": "Silabus resmi Irodori: Japanese for Life in Japan bab 8.",
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 4.",
+              "targetPatterns": [
+                "gn5-00022",
+                "gn5-00023",
+                "gn5-00030"
+              ],
               "coreVocabSample": [
-                "vg-n5-00990"
+                "vg-n5-00587",
+                "vg-n5-00588",
+                "vg-n5-00589",
+                "vg-n5-00590"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku Irodori: Japanese for Life in Japan. Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 4 Irodori: Japanese for Life in Japan.",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 4.",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -586,17 +784,17 @@
               "id": "d1",
               "speaker": "Sensei",
               "speakerRole": "Tutor Belajar",
-              "jp": "Irodori A2-1 第4課の勉強を始めましょう！",
+              "jp": "いつですか — Hari, Bulan, dan Tanggal (りかい)の勉強を始めましょう！",
               "furigana": "べんきょうをはじめましょう！",
               "romaji": "Benkyou wo hajimemashou!",
-              "idText": "Mari kita mulai belajar Irodori A2-1 Bab 4!"
+              "idText": "Mari kita mulai belajar 4!"
             }
           ],
           "drills": [
             {
               "id": "dr1",
               "type": "multiple-choice",
-              "prompt": "Apa fokus utama pada materi Irodori A2-1 Bab 4 di buku Irodori: Japanese for Life in Japan?",
+              "prompt": "Apa fokus utama pada materi 4 di buku Irodori: Japanese for Life in Japan?",
               "options": [
                 "Menguasai pola kalimat bab ini dengan pemahaman alami",
                 "Menghafal tanpa memahami konteks",
@@ -615,39 +813,63 @@
       "id": "unit-curriculum-book-irodori-09",
       "level": "n5",
       "pt_stage": 4,
-      "title_id": "Irodori A2-2: Irodori A2-2 Bab 1",
-      "title_jp": "Irodori A2-2 第1課",
-      "theme": "Irodori A2-2",
+      "title_id": "Irodori A1: 5",
+      "title_jp": "どうやって行きますか — Transportasi (かつどう)",
+      "theme": "Irodori A1",
       "icon": "🌈",
-      "can_do_summary": "Memahami silabus Irodori A2-2 Bab 1 secara komprehensif.",
-      "grammar_ids": [],
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 5.",
+      "grammar_ids": [
+        "gn5-00024",
+        "gn5-00025",
+        "gn5-00026",
+        "gn5-00027"
+      ],
       "vocab_ids": [
-        "vg-n5-00990"
+        "vg-n5-00045",
+        "vg-n5-00044",
+        "vg-n5-00514",
+        "vg-n5-00538"
       ],
       "lessons": [
         {
           "id": "les-curriculum-book-irodori-u09-01",
           "lesson_number": 1,
-          "title_id": "Irodori A2-2 Bab 1 (Eksplorasi Materi & Pola)",
-          "title_jp": "Irodori A2-2 第1課（解説）",
+          "title_id": "5 (Eksplorasi Materi & Pola)",
+          "title_jp": "どうやって行きますか — Transportasi (かつどう)（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku Irodori: Japanese for Life in Japan pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa Irodori: Japanese for Life in Japan bab ini dalam konteks nyata.",
-          "grammar_ids": [],
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 5.",
+          "grammar_ids": [
+            "gn5-00024",
+            "gn5-00025",
+            "gn5-00026",
+            "gn5-00027"
+          ],
           "vocab_ids": [
-            "vg-n5-00990"
+            "vg-n5-00045",
+            "vg-n5-00044",
+            "vg-n5-00514",
+            "vg-n5-00538"
           ],
           "pedagogical_framework": {
             "what": {
-              "summary": "Silabus resmi Irodori: Japanese for Life in Japan bab 1.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
-              "targetPatterns": [],
+              "summary": "Silabus resmi Irodori: Japanese for Life in Japan bab 9.",
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 5.",
+              "targetPatterns": [
+                "gn5-00024",
+                "gn5-00025",
+                "gn5-00026",
+                "gn5-00027"
+              ],
               "coreVocabSample": [
-                "vg-n5-00990"
+                "vg-n5-00045",
+                "vg-n5-00044",
+                "vg-n5-00514",
+                "vg-n5-00538"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku Irodori: Japanese for Life in Japan. Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 1 Irodori: Japanese for Life in Japan.",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 5.",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -661,17 +883,17 @@
               "id": "d1",
               "speaker": "Sensei",
               "speakerRole": "Tutor Belajar",
-              "jp": "Irodori A2-2 第1課の勉強を始めましょう！",
+              "jp": "どうやって行きますか — Transportasi (かつどう)の勉強を始めましょう！",
               "furigana": "べんきょうをはじめましょう！",
               "romaji": "Benkyou wo hajimemashou!",
-              "idText": "Mari kita mulai belajar Irodori A2-2 Bab 1!"
+              "idText": "Mari kita mulai belajar 5!"
             }
           ],
           "drills": [
             {
               "id": "dr1",
               "type": "multiple-choice",
-              "prompt": "Apa fokus utama pada materi Irodori A2-2 Bab 1 di buku Irodori: Japanese for Life in Japan?",
+              "prompt": "Apa fokus utama pada materi 5 di buku Irodori: Japanese for Life in Japan?",
               "options": [
                 "Menguasai pola kalimat bab ini dengan pemahaman alami",
                 "Menghafal tanpa memahami konteks",
@@ -690,39 +912,60 @@
       "id": "unit-curriculum-book-irodori-10",
       "level": "n5",
       "pt_stage": 5,
-      "title_id": "Irodori A2-2: Irodori A2-2 Bab 2",
-      "title_jp": "Irodori A2-2 第2課",
-      "theme": "Irodori A2-2",
+      "title_id": "Irodori A1: 5",
+      "title_jp": "どうやって行きますか — Durasi Perjalanan (りかい)",
+      "theme": "Irodori A1",
       "icon": "🌈",
-      "can_do_summary": "Memahami silabus Irodori A2-2 Bab 2 secara komprehensif.",
-      "grammar_ids": [],
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 5.",
+      "grammar_ids": [
+        "gn5-00028",
+        "gn5-00091",
+        "gn5-00031"
+      ],
       "vocab_ids": [
-        "vg-n5-00990"
+        "vg-n5-00180",
+        "vg-n5-00094",
+        "vg-n5-00453",
+        "vg-n5-00046"
       ],
       "lessons": [
         {
           "id": "les-curriculum-book-irodori-u10-01",
           "lesson_number": 1,
-          "title_id": "Irodori A2-2 Bab 2 (Eksplorasi Materi & Pola)",
-          "title_jp": "Irodori A2-2 第2課（解説）",
+          "title_id": "5 (Eksplorasi Materi & Pola)",
+          "title_jp": "どうやって行きますか — Durasi Perjalanan (りかい)（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku Irodori: Japanese for Life in Japan pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa Irodori: Japanese for Life in Japan bab ini dalam konteks nyata.",
-          "grammar_ids": [],
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 5.",
+          "grammar_ids": [
+            "gn5-00028",
+            "gn5-00091",
+            "gn5-00031"
+          ],
           "vocab_ids": [
-            "vg-n5-00990"
+            "vg-n5-00180",
+            "vg-n5-00094",
+            "vg-n5-00453",
+            "vg-n5-00046"
           ],
           "pedagogical_framework": {
             "what": {
-              "summary": "Silabus resmi Irodori: Japanese for Life in Japan bab 2.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
-              "targetPatterns": [],
+              "summary": "Silabus resmi Irodori: Japanese for Life in Japan bab 10.",
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 5.",
+              "targetPatterns": [
+                "gn5-00028",
+                "gn5-00091",
+                "gn5-00031"
+              ],
               "coreVocabSample": [
-                "vg-n5-00990"
+                "vg-n5-00180",
+                "vg-n5-00094",
+                "vg-n5-00453",
+                "vg-n5-00046"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku Irodori: Japanese for Life in Japan. Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 2 Irodori: Japanese for Life in Japan.",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 5.",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -736,17 +979,17 @@
               "id": "d1",
               "speaker": "Sensei",
               "speakerRole": "Tutor Belajar",
-              "jp": "Irodori A2-2 第2課の勉強を始めましょう！",
+              "jp": "どうやって行きますか — Durasi Perjalanan (りかい)の勉強を始めましょう！",
               "furigana": "べんきょうをはじめましょう！",
               "romaji": "Benkyou wo hajimemashou!",
-              "idText": "Mari kita mulai belajar Irodori A2-2 Bab 2!"
+              "idText": "Mari kita mulai belajar 5!"
             }
           ],
           "drills": [
             {
               "id": "dr1",
               "type": "multiple-choice",
-              "prompt": "Apa fokus utama pada materi Irodori A2-2 Bab 2 di buku Irodori: Japanese for Life in Japan?",
+              "prompt": "Apa fokus utama pada materi 5 di buku Irodori: Japanese for Life in Japan?",
               "options": [
                 "Menguasai pola kalimat bab ini dengan pemahaman alami",
                 "Menghafal tanpa memahami konteks",
@@ -765,39 +1008,60 @@
       "id": "unit-curriculum-book-irodori-11",
       "level": "n5",
       "pt_stage": 6,
-      "title_id": "Irodori A2-2: Irodori A2-2 Bab 3",
-      "title_jp": "Irodori A2-2 第3課",
-      "theme": "Irodori A2-2",
+      "title_id": "Irodori A1: 6",
+      "title_jp": "いただきます — Makanan dan Minuman (かつどう)",
+      "theme": "Irodori A1",
       "icon": "🌈",
-      "can_do_summary": "Memahami silabus Irodori A2-2 Bab 3 secara komprehensif.",
-      "grammar_ids": [],
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 6.",
+      "grammar_ids": [
+        "gn5-00029",
+        "gn5-00030",
+        "gn5-00031"
+      ],
       "vocab_ids": [
-        "vg-n5-00990"
+        "vg-n5-00023",
+        "vg-n5-00024",
+        "vg-n5-00136",
+        "vg-n5-00138"
       ],
       "lessons": [
         {
           "id": "les-curriculum-book-irodori-u11-01",
           "lesson_number": 1,
-          "title_id": "Irodori A2-2 Bab 3 (Eksplorasi Materi & Pola)",
-          "title_jp": "Irodori A2-2 第3課（解説）",
+          "title_id": "6 (Eksplorasi Materi & Pola)",
+          "title_jp": "いただきます — Makanan dan Minuman (かつどう)（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku Irodori: Japanese for Life in Japan pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa Irodori: Japanese for Life in Japan bab ini dalam konteks nyata.",
-          "grammar_ids": [],
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 6.",
+          "grammar_ids": [
+            "gn5-00029",
+            "gn5-00030",
+            "gn5-00031"
+          ],
           "vocab_ids": [
-            "vg-n5-00990"
+            "vg-n5-00023",
+            "vg-n5-00024",
+            "vg-n5-00136",
+            "vg-n5-00138"
           ],
           "pedagogical_framework": {
             "what": {
-              "summary": "Silabus resmi Irodori: Japanese for Life in Japan bab 3.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
-              "targetPatterns": [],
+              "summary": "Silabus resmi Irodori: Japanese for Life in Japan bab 11.",
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 6.",
+              "targetPatterns": [
+                "gn5-00029",
+                "gn5-00030",
+                "gn5-00031"
+              ],
               "coreVocabSample": [
-                "vg-n5-00990"
+                "vg-n5-00023",
+                "vg-n5-00024",
+                "vg-n5-00136",
+                "vg-n5-00138"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku Irodori: Japanese for Life in Japan. Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 3 Irodori: Japanese for Life in Japan.",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 6.",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -811,17 +1075,17 @@
               "id": "d1",
               "speaker": "Sensei",
               "speakerRole": "Tutor Belajar",
-              "jp": "Irodori A2-2 第3課の勉強を始めましょう！",
+              "jp": "いただきます — Makanan dan Minuman (かつどう)の勉強を始めましょう！",
               "furigana": "べんきょうをはじめましょう！",
               "romaji": "Benkyou wo hajimemashou!",
-              "idText": "Mari kita mulai belajar Irodori A2-2 Bab 3!"
+              "idText": "Mari kita mulai belajar 6!"
             }
           ],
           "drills": [
             {
               "id": "dr1",
               "type": "multiple-choice",
-              "prompt": "Apa fokus utama pada materi Irodori A2-2 Bab 3 di buku Irodori: Japanese for Life in Japan?",
+              "prompt": "Apa fokus utama pada materi 6 di buku Irodori: Japanese for Life in Japan?",
               "options": [
                 "Menguasai pola kalimat bab ini dengan pemahaman alami",
                 "Menghafal tanpa memahami konteks",
@@ -840,39 +1104,60 @@
       "id": "unit-curriculum-book-irodori-12",
       "level": "n5",
       "pt_stage": 1,
-      "title_id": "Irodori A2-2: Irodori A2-2 Bab 4",
-      "title_jp": "Irodori A2-2 第4課",
-      "theme": "Irodori A2-2",
+      "title_id": "Irodori A1: 6",
+      "title_jp": "いただきます — Di Restoran (りかい)",
+      "theme": "Irodori A1",
       "icon": "🌈",
-      "can_do_summary": "Memahami silabus Irodori A2-2 Bab 4 secara komprehensif.",
-      "grammar_ids": [],
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 6.",
+      "grammar_ids": [
+        "gn5-00032",
+        "gn5-00092",
+        "gn5-00024"
+      ],
       "vocab_ids": [
-        "vg-n5-00990"
+        "vg-n5-00529",
+        "vg-n5-00530",
+        "vg-n5-00069",
+        "vg-n5-00076"
       ],
       "lessons": [
         {
           "id": "les-curriculum-book-irodori-u12-01",
           "lesson_number": 1,
-          "title_id": "Irodori A2-2 Bab 4 (Eksplorasi Materi & Pola)",
-          "title_jp": "Irodori A2-2 第4課（解説）",
+          "title_id": "6 (Eksplorasi Materi & Pola)",
+          "title_jp": "いただきます — Di Restoran (りかい)（解説）",
           "desc_id": "Mempelajari urutan materi pedagogis buku Irodori: Japanese for Life in Japan pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
-          "can_do_statement": "Mampu memahami dan menerapkan tata bahasa Irodori: Japanese for Life in Japan bab ini dalam konteks nyata.",
-          "grammar_ids": [],
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 6.",
+          "grammar_ids": [
+            "gn5-00032",
+            "gn5-00092",
+            "gn5-00024"
+          ],
           "vocab_ids": [
-            "vg-n5-00990"
+            "vg-n5-00529",
+            "vg-n5-00530",
+            "vg-n5-00069",
+            "vg-n5-00076"
           ],
           "pedagogical_framework": {
             "what": {
-              "summary": "Silabus resmi Irodori: Japanese for Life in Japan bab 4.",
-              "canDo": "Menguasai pola kalimat dan perbendaharaan kata bab ini.",
-              "targetPatterns": [],
+              "summary": "Silabus resmi Irodori: Japanese for Life in Japan bab 12.",
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 6.",
+              "targetPatterns": [
+                "gn5-00032",
+                "gn5-00092",
+                "gn5-00024"
+              ],
               "coreVocabSample": [
-                "vg-n5-00990"
+                "vg-n5-00529",
+                "vg-n5-00530",
+                "vg-n5-00069",
+                "vg-n5-00076"
               ]
             },
             "sensei_context": {
               "sceneIntro": "Kamu sedang mempelajari buku Irodori: Japanese for Life in Japan. Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
-              "dailyMission": "Menyelesaikan target pemahaman bab 4 Irodori: Japanese for Life in Japan.",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 6.",
               "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
             },
             "cultural_notes": {
@@ -886,17 +1171,2345 @@
               "id": "d1",
               "speaker": "Sensei",
               "speakerRole": "Tutor Belajar",
-              "jp": "Irodori A2-2 第4課の勉強を始めましょう！",
+              "jp": "いただきます — Di Restoran (りかい)の勉強を始めましょう！",
               "furigana": "べんきょうをはじめましょう！",
               "romaji": "Benkyou wo hajimemashou!",
-              "idText": "Mari kita mulai belajar Irodori A2-2 Bab 4!"
+              "idText": "Mari kita mulai belajar 6!"
             }
           ],
           "drills": [
             {
               "id": "dr1",
               "type": "multiple-choice",
-              "prompt": "Apa fokus utama pada materi Irodori A2-2 Bab 4 di buku Irodori: Japanese for Life in Japan?",
+              "prompt": "Apa fokus utama pada materi 6 di buku Irodori: Japanese for Life in Japan?",
+              "options": [
+                "Menguasai pola kalimat bab ini dengan pemahaman alami",
+                "Menghafal tanpa memahami konteks",
+                "Mengabaikan intonasi pengucapan",
+                "Hanya membaca terjemahan bahasa Inggris"
+              ],
+              "correctAnswer": "Menguasai pola kalimat bab ini dengan pemahaman alami",
+              "explanation": "Setiap bab dirancang untuk memperkuat kemampuan komunikasi fungsional pembelajar."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 13,
+      "id": "unit-curriculum-book-irodori-13",
+      "level": "n4",
+      "pt_stage": 2,
+      "title_id": "Irodori A2-1: 1",
+      "title_jp": "一緒に行きませんか — Mengajak (かつどう)",
+      "theme": "Irodori A2-1",
+      "icon": "🌈",
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 1.",
+      "grammar_ids": [
+        "gn5-00001",
+        "gn5-00063",
+        "gn5-00010",
+        "gn5-00029"
+      ],
+      "vocab_ids": [
+        "vg-n5-00001",
+        "vg-n5-00009",
+        "vg-n5-00092",
+        "vg-n5-00095"
+      ],
+      "lessons": [
+        {
+          "id": "les-curriculum-book-irodori-u13-01",
+          "lesson_number": 1,
+          "title_id": "1 (Eksplorasi Materi & Pola)",
+          "title_jp": "一緒に行きませんか — Mengajak (かつどう)（解説）",
+          "desc_id": "Mempelajari urutan materi pedagogis buku Irodori: Japanese for Life in Japan pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 1.",
+          "grammar_ids": [
+            "gn5-00001",
+            "gn5-00063",
+            "gn5-00010",
+            "gn5-00029"
+          ],
+          "vocab_ids": [
+            "vg-n5-00001",
+            "vg-n5-00009",
+            "vg-n5-00092",
+            "vg-n5-00095"
+          ],
+          "pedagogical_framework": {
+            "what": {
+              "summary": "Silabus resmi Irodori: Japanese for Life in Japan bab 1.",
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 1.",
+              "targetPatterns": [
+                "gn5-00001",
+                "gn5-00063",
+                "gn5-00010",
+                "gn5-00029"
+              ],
+              "coreVocabSample": [
+                "vg-n5-00001",
+                "vg-n5-00009",
+                "vg-n5-00092",
+                "vg-n5-00095"
+              ]
+            },
+            "sensei_context": {
+              "sceneIntro": "Kamu sedang mempelajari buku Irodori: Japanese for Life in Japan. Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 1.",
+              "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
+            },
+            "cultural_notes": {
+              "title": "Catatan Budaya & Konteks Pemakaian (Irodori: Japanese for Life in Japan)",
+              "etiquette": "Perhatikan konteks formalitas saat menggunakan pola kalimat ini kepada guru, teman, atau atasan.",
+              "taboos": "Hindari penggunaan pola kasual kepada orang yang baru pertama kali ditemui."
+            }
+          },
+          "dialogue": [
+            {
+              "id": "d1",
+              "speaker": "Sensei",
+              "speakerRole": "Tutor Belajar",
+              "jp": "一緒に行きませんか — Mengajak (かつどう)の勉強を始めましょう！",
+              "furigana": "べんきょうをはじめましょう！",
+              "romaji": "Benkyou wo hajimemashou!",
+              "idText": "Mari kita mulai belajar 1!"
+            }
+          ],
+          "drills": [
+            {
+              "id": "dr1",
+              "type": "multiple-choice",
+              "prompt": "Apa fokus utama pada materi 1 di buku Irodori: Japanese for Life in Japan?",
+              "options": [
+                "Menguasai pola kalimat bab ini dengan pemahaman alami",
+                "Menghafal tanpa memahami konteks",
+                "Mengabaikan intonasi pengucapan",
+                "Hanya membaca terjemahan bahasa Inggris"
+              ],
+              "correctAnswer": "Menguasai pola kalimat bab ini dengan pemahaman alami",
+              "explanation": "Setiap bab dirancang untuk memperkuat kemampuan komunikasi fungsional pembelajar."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 14,
+      "id": "unit-curriculum-book-irodori-14",
+      "level": "n4",
+      "pt_stage": 3,
+      "title_id": "Irodori A2-1: 1",
+      "title_jp": "一緒に行きませんか — Menyetujui & Menolak (りかい)",
+      "theme": "Irodori A2-1",
+      "icon": "🌈",
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 1.",
+      "grammar_ids": [
+        "gn4-00052",
+        "gn4-00051",
+        "gn5-00029"
+      ],
+      "vocab_ids": [
+        "vg-n4-00029",
+        "vg-n4-00176",
+        "vg-n4-00179",
+        "vg-n4-00367"
+      ],
+      "lessons": [
+        {
+          "id": "les-curriculum-book-irodori-u14-01",
+          "lesson_number": 1,
+          "title_id": "1 (Eksplorasi Materi & Pola)",
+          "title_jp": "一緒に行きませんか — Menyetujui & Menolak (りかい)（解説）",
+          "desc_id": "Mempelajari urutan materi pedagogis buku Irodori: Japanese for Life in Japan pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 1.",
+          "grammar_ids": [
+            "gn4-00052",
+            "gn4-00051",
+            "gn5-00029"
+          ],
+          "vocab_ids": [
+            "vg-n4-00029",
+            "vg-n4-00176",
+            "vg-n4-00179",
+            "vg-n4-00367"
+          ],
+          "pedagogical_framework": {
+            "what": {
+              "summary": "Silabus resmi Irodori: Japanese for Life in Japan bab 2.",
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 1.",
+              "targetPatterns": [
+                "gn4-00052",
+                "gn4-00051",
+                "gn5-00029"
+              ],
+              "coreVocabSample": [
+                "vg-n4-00029",
+                "vg-n4-00176",
+                "vg-n4-00179",
+                "vg-n4-00367"
+              ]
+            },
+            "sensei_context": {
+              "sceneIntro": "Kamu sedang mempelajari buku Irodori: Japanese for Life in Japan. Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 1.",
+              "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
+            },
+            "cultural_notes": {
+              "title": "Catatan Budaya & Konteks Pemakaian (Irodori: Japanese for Life in Japan)",
+              "etiquette": "Perhatikan konteks formalitas saat menggunakan pola kalimat ini kepada guru, teman, atau atasan.",
+              "taboos": "Hindari penggunaan pola kasual kepada orang yang baru pertama kali ditemui."
+            }
+          },
+          "dialogue": [
+            {
+              "id": "d1",
+              "speaker": "Sensei",
+              "speakerRole": "Tutor Belajar",
+              "jp": "一緒に行きませんか — Menyetujui & Menolak (りかい)の勉強を始めましょう！",
+              "furigana": "べんきょうをはじめましょう！",
+              "romaji": "Benkyou wo hajimemashou!",
+              "idText": "Mari kita mulai belajar 1!"
+            }
+          ],
+          "drills": [
+            {
+              "id": "dr1",
+              "type": "multiple-choice",
+              "prompt": "Apa fokus utama pada materi 1 di buku Irodori: Japanese for Life in Japan?",
+              "options": [
+                "Menguasai pola kalimat bab ini dengan pemahaman alami",
+                "Menghafal tanpa memahami konteks",
+                "Mengabaikan intonasi pengucapan",
+                "Hanya membaca terjemahan bahasa Inggris"
+              ],
+              "correctAnswer": "Menguasai pola kalimat bab ini dengan pemahaman alami",
+              "explanation": "Setiap bab dirancang untuk memperkuat kemampuan komunikasi fungsional pembelajar."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 15,
+      "id": "unit-curriculum-book-irodori-15",
+      "level": "n4",
+      "pt_stage": 4,
+      "title_id": "Irodori A2-1: 2",
+      "title_jp": "どうやって行きますか — Transportasi Lanjutan (かつどう)",
+      "theme": "Irodori A2-1",
+      "icon": "🌈",
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 2.",
+      "grammar_ids": [
+        "gn5-00065",
+        "gn4-00004"
+      ],
+      "vocab_ids": [
+        "vg-n5-00087",
+        "vg-n5-00514",
+        "vg-n5-00538",
+        "vg-n5-00537"
+      ],
+      "lessons": [
+        {
+          "id": "les-curriculum-book-irodori-u15-01",
+          "lesson_number": 1,
+          "title_id": "2 (Eksplorasi Materi & Pola)",
+          "title_jp": "どうやって行きますか — Transportasi Lanjutan (かつどう)（解説）",
+          "desc_id": "Mempelajari urutan materi pedagogis buku Irodori: Japanese for Life in Japan pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 2.",
+          "grammar_ids": [
+            "gn5-00065",
+            "gn4-00004"
+          ],
+          "vocab_ids": [
+            "vg-n5-00087",
+            "vg-n5-00514",
+            "vg-n5-00538",
+            "vg-n5-00537"
+          ],
+          "pedagogical_framework": {
+            "what": {
+              "summary": "Silabus resmi Irodori: Japanese for Life in Japan bab 3.",
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 2.",
+              "targetPatterns": [
+                "gn5-00065",
+                "gn4-00004"
+              ],
+              "coreVocabSample": [
+                "vg-n5-00087",
+                "vg-n5-00514",
+                "vg-n5-00538",
+                "vg-n5-00537"
+              ]
+            },
+            "sensei_context": {
+              "sceneIntro": "Kamu sedang mempelajari buku Irodori: Japanese for Life in Japan. Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 2.",
+              "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
+            },
+            "cultural_notes": {
+              "title": "Catatan Budaya & Konteks Pemakaian (Irodori: Japanese for Life in Japan)",
+              "etiquette": "Perhatikan konteks formalitas saat menggunakan pola kalimat ini kepada guru, teman, atau atasan.",
+              "taboos": "Hindari penggunaan pola kasual kepada orang yang baru pertama kali ditemui."
+            }
+          },
+          "dialogue": [
+            {
+              "id": "d1",
+              "speaker": "Sensei",
+              "speakerRole": "Tutor Belajar",
+              "jp": "どうやって行きますか — Transportasi Lanjutan (かつどう)の勉強を始めましょう！",
+              "furigana": "べんきょうをはじめましょう！",
+              "romaji": "Benkyou wo hajimemashou!",
+              "idText": "Mari kita mulai belajar 2!"
+            }
+          ],
+          "drills": [
+            {
+              "id": "dr1",
+              "type": "multiple-choice",
+              "prompt": "Apa fokus utama pada materi 2 di buku Irodori: Japanese for Life in Japan?",
+              "options": [
+                "Menguasai pola kalimat bab ini dengan pemahaman alami",
+                "Menghafal tanpa memahami konteks",
+                "Mengabaikan intonasi pengucapan",
+                "Hanya membaca terjemahan bahasa Inggris"
+              ],
+              "correctAnswer": "Menguasai pola kalimat bab ini dengan pemahaman alami",
+              "explanation": "Setiap bab dirancang untuk memperkuat kemampuan komunikasi fungsional pembelajar."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 16,
+      "id": "unit-curriculum-book-irodori-16",
+      "level": "n4",
+      "pt_stage": 5,
+      "title_id": "Irodori A2-1: 2",
+      "title_jp": "どうやって行きますか — Menjelaskan Rute (りかい)",
+      "theme": "Irodori A2-1",
+      "icon": "🌈",
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 2.",
+      "grammar_ids": [
+        "gn5-00028",
+        "gn5-00029",
+        "gn5-00047"
+      ],
+      "vocab_ids": [
+        "vg-n5-00007",
+        "vg-n5-00149",
+        "vg-n5-00150",
+        "vg-n5-00512"
+      ],
+      "lessons": [
+        {
+          "id": "les-curriculum-book-irodori-u16-01",
+          "lesson_number": 1,
+          "title_id": "2 (Eksplorasi Materi & Pola)",
+          "title_jp": "どうやって行きますか — Menjelaskan Rute (りかい)（解説）",
+          "desc_id": "Mempelajari urutan materi pedagogis buku Irodori: Japanese for Life in Japan pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 2.",
+          "grammar_ids": [
+            "gn5-00028",
+            "gn5-00029",
+            "gn5-00047"
+          ],
+          "vocab_ids": [
+            "vg-n5-00007",
+            "vg-n5-00149",
+            "vg-n5-00150",
+            "vg-n5-00512"
+          ],
+          "pedagogical_framework": {
+            "what": {
+              "summary": "Silabus resmi Irodori: Japanese for Life in Japan bab 4.",
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 2.",
+              "targetPatterns": [
+                "gn5-00028",
+                "gn5-00029",
+                "gn5-00047"
+              ],
+              "coreVocabSample": [
+                "vg-n5-00007",
+                "vg-n5-00149",
+                "vg-n5-00150",
+                "vg-n5-00512"
+              ]
+            },
+            "sensei_context": {
+              "sceneIntro": "Kamu sedang mempelajari buku Irodori: Japanese for Life in Japan. Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 2.",
+              "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
+            },
+            "cultural_notes": {
+              "title": "Catatan Budaya & Konteks Pemakaian (Irodori: Japanese for Life in Japan)",
+              "etiquette": "Perhatikan konteks formalitas saat menggunakan pola kalimat ini kepada guru, teman, atau atasan.",
+              "taboos": "Hindari penggunaan pola kasual kepada orang yang baru pertama kali ditemui."
+            }
+          },
+          "dialogue": [
+            {
+              "id": "d1",
+              "speaker": "Sensei",
+              "speakerRole": "Tutor Belajar",
+              "jp": "どうやって行きますか — Menjelaskan Rute (りかい)の勉強を始めましょう！",
+              "furigana": "べんきょうをはじめましょう！",
+              "romaji": "Benkyou wo hajimemashou!",
+              "idText": "Mari kita mulai belajar 2!"
+            }
+          ],
+          "drills": [
+            {
+              "id": "dr1",
+              "type": "multiple-choice",
+              "prompt": "Apa fokus utama pada materi 2 di buku Irodori: Japanese for Life in Japan?",
+              "options": [
+                "Menguasai pola kalimat bab ini dengan pemahaman alami",
+                "Menghafal tanpa memahami konteks",
+                "Mengabaikan intonasi pengucapan",
+                "Hanya membaca terjemahan bahasa Inggris"
+              ],
+              "correctAnswer": "Menguasai pola kalimat bab ini dengan pemahaman alami",
+              "explanation": "Setiap bab dirancang untuk memperkuat kemampuan komunikasi fungsional pembelajar."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 17,
+      "id": "unit-curriculum-book-irodori-17",
+      "level": "n4",
+      "pt_stage": 6,
+      "title_id": "Irodori A2-1: 3",
+      "title_jp": "何ができますか — Kemampuan dan Izin (かつどう)",
+      "theme": "Irodori A2-1",
+      "icon": "🌈",
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 3.",
+      "grammar_ids": [
+        "gn5-00050"
+      ],
+      "vocab_ids": [
+        "vg-n5-00078",
+        "vg-n5-00079",
+        "vg-n4-00100",
+        "vg-n4-00064"
+      ],
+      "lessons": [
+        {
+          "id": "les-curriculum-book-irodori-u17-01",
+          "lesson_number": 1,
+          "title_id": "3 (Eksplorasi Materi & Pola)",
+          "title_jp": "何ができますか — Kemampuan dan Izin (かつどう)（解説）",
+          "desc_id": "Mempelajari urutan materi pedagogis buku Irodori: Japanese for Life in Japan pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 3.",
+          "grammar_ids": [
+            "gn5-00050"
+          ],
+          "vocab_ids": [
+            "vg-n5-00078",
+            "vg-n5-00079",
+            "vg-n4-00100",
+            "vg-n4-00064"
+          ],
+          "pedagogical_framework": {
+            "what": {
+              "summary": "Silabus resmi Irodori: Japanese for Life in Japan bab 5.",
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 3.",
+              "targetPatterns": [
+                "gn5-00050"
+              ],
+              "coreVocabSample": [
+                "vg-n5-00078",
+                "vg-n5-00079",
+                "vg-n4-00100",
+                "vg-n4-00064"
+              ]
+            },
+            "sensei_context": {
+              "sceneIntro": "Kamu sedang mempelajari buku Irodori: Japanese for Life in Japan. Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 3.",
+              "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
+            },
+            "cultural_notes": {
+              "title": "Catatan Budaya & Konteks Pemakaian (Irodori: Japanese for Life in Japan)",
+              "etiquette": "Perhatikan konteks formalitas saat menggunakan pola kalimat ini kepada guru, teman, atau atasan.",
+              "taboos": "Hindari penggunaan pola kasual kepada orang yang baru pertama kali ditemui."
+            }
+          },
+          "dialogue": [
+            {
+              "id": "d1",
+              "speaker": "Sensei",
+              "speakerRole": "Tutor Belajar",
+              "jp": "何ができますか — Kemampuan dan Izin (かつどう)の勉強を始めましょう！",
+              "furigana": "べんきょうをはじめましょう！",
+              "romaji": "Benkyou wo hajimemashou!",
+              "idText": "Mari kita mulai belajar 3!"
+            }
+          ],
+          "drills": [
+            {
+              "id": "dr1",
+              "type": "multiple-choice",
+              "prompt": "Apa fokus utama pada materi 3 di buku Irodori: Japanese for Life in Japan?",
+              "options": [
+                "Menguasai pola kalimat bab ini dengan pemahaman alami",
+                "Menghafal tanpa memahami konteks",
+                "Mengabaikan intonasi pengucapan",
+                "Hanya membaca terjemahan bahasa Inggris"
+              ],
+              "correctAnswer": "Menguasai pola kalimat bab ini dengan pemahaman alami",
+              "explanation": "Setiap bab dirancang untuk memperkuat kemampuan komunikasi fungsional pembelajar."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 18,
+      "id": "unit-curriculum-book-irodori-18",
+      "level": "n4",
+      "pt_stage": 1,
+      "title_id": "Irodori A2-1: 3",
+      "title_jp": "何ができますか — Aturan dan Larangan (りかい)",
+      "theme": "Irodori A2-1",
+      "icon": "🌈",
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 3.",
+      "grammar_ids": [
+        "gn5-00040",
+        "gn5-00030",
+        "gn5-00002"
+      ],
+      "vocab_ids": [
+        "vg-n4-00447",
+        "vg-n4-00502",
+        "vg-n4-00503",
+        "vg-n4-00359"
+      ],
+      "lessons": [
+        {
+          "id": "les-curriculum-book-irodori-u18-01",
+          "lesson_number": 1,
+          "title_id": "3 (Eksplorasi Materi & Pola)",
+          "title_jp": "何ができますか — Aturan dan Larangan (りかい)（解説）",
+          "desc_id": "Mempelajari urutan materi pedagogis buku Irodori: Japanese for Life in Japan pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 3.",
+          "grammar_ids": [
+            "gn5-00040",
+            "gn5-00030",
+            "gn5-00002"
+          ],
+          "vocab_ids": [
+            "vg-n4-00447",
+            "vg-n4-00502",
+            "vg-n4-00503",
+            "vg-n4-00359"
+          ],
+          "pedagogical_framework": {
+            "what": {
+              "summary": "Silabus resmi Irodori: Japanese for Life in Japan bab 6.",
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 3.",
+              "targetPatterns": [
+                "gn5-00040",
+                "gn5-00030",
+                "gn5-00002"
+              ],
+              "coreVocabSample": [
+                "vg-n4-00447",
+                "vg-n4-00502",
+                "vg-n4-00503",
+                "vg-n4-00359"
+              ]
+            },
+            "sensei_context": {
+              "sceneIntro": "Kamu sedang mempelajari buku Irodori: Japanese for Life in Japan. Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 3.",
+              "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
+            },
+            "cultural_notes": {
+              "title": "Catatan Budaya & Konteks Pemakaian (Irodori: Japanese for Life in Japan)",
+              "etiquette": "Perhatikan konteks formalitas saat menggunakan pola kalimat ini kepada guru, teman, atau atasan.",
+              "taboos": "Hindari penggunaan pola kasual kepada orang yang baru pertama kali ditemui."
+            }
+          },
+          "dialogue": [
+            {
+              "id": "d1",
+              "speaker": "Sensei",
+              "speakerRole": "Tutor Belajar",
+              "jp": "何ができますか — Aturan dan Larangan (りかい)の勉強を始めましょう！",
+              "furigana": "べんきょうをはじめましょう！",
+              "romaji": "Benkyou wo hajimemashou!",
+              "idText": "Mari kita mulai belajar 3!"
+            }
+          ],
+          "drills": [
+            {
+              "id": "dr1",
+              "type": "multiple-choice",
+              "prompt": "Apa fokus utama pada materi 3 di buku Irodori: Japanese for Life in Japan?",
+              "options": [
+                "Menguasai pola kalimat bab ini dengan pemahaman alami",
+                "Menghafal tanpa memahami konteks",
+                "Mengabaikan intonasi pengucapan",
+                "Hanya membaca terjemahan bahasa Inggris"
+              ],
+              "correctAnswer": "Menguasai pola kalimat bab ini dengan pemahaman alami",
+              "explanation": "Setiap bab dirancang untuk memperkuat kemampuan komunikasi fungsional pembelajar."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 19,
+      "id": "unit-curriculum-book-irodori-19",
+      "level": "n4",
+      "pt_stage": 2,
+      "title_id": "Irodori A2-1: 4",
+      "title_jp": "どうしてですか — Menyatakan Alasan (かつどう)",
+      "theme": "Irodori A2-1",
+      "icon": "🌈",
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 4.",
+      "grammar_ids": [
+        "gn5-00044",
+        "gn4-00025",
+        "gn5-00012"
+      ],
+      "vocab_ids": [
+        "vg-n4-00367",
+        "vg-n4-00368",
+        "vg-n4-00032",
+        "vg-n4-00336"
+      ],
+      "lessons": [
+        {
+          "id": "les-curriculum-book-irodori-u19-01",
+          "lesson_number": 1,
+          "title_id": "4 (Eksplorasi Materi & Pola)",
+          "title_jp": "どうしてですか — Menyatakan Alasan (かつどう)（解説）",
+          "desc_id": "Mempelajari urutan materi pedagogis buku Irodori: Japanese for Life in Japan pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 4.",
+          "grammar_ids": [
+            "gn5-00044",
+            "gn4-00025",
+            "gn5-00012"
+          ],
+          "vocab_ids": [
+            "vg-n4-00367",
+            "vg-n4-00368",
+            "vg-n4-00032",
+            "vg-n4-00336"
+          ],
+          "pedagogical_framework": {
+            "what": {
+              "summary": "Silabus resmi Irodori: Japanese for Life in Japan bab 7.",
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 4.",
+              "targetPatterns": [
+                "gn5-00044",
+                "gn4-00025",
+                "gn5-00012"
+              ],
+              "coreVocabSample": [
+                "vg-n4-00367",
+                "vg-n4-00368",
+                "vg-n4-00032",
+                "vg-n4-00336"
+              ]
+            },
+            "sensei_context": {
+              "sceneIntro": "Kamu sedang mempelajari buku Irodori: Japanese for Life in Japan. Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 4.",
+              "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
+            },
+            "cultural_notes": {
+              "title": "Catatan Budaya & Konteks Pemakaian (Irodori: Japanese for Life in Japan)",
+              "etiquette": "Perhatikan konteks formalitas saat menggunakan pola kalimat ini kepada guru, teman, atau atasan.",
+              "taboos": "Hindari penggunaan pola kasual kepada orang yang baru pertama kali ditemui."
+            }
+          },
+          "dialogue": [
+            {
+              "id": "d1",
+              "speaker": "Sensei",
+              "speakerRole": "Tutor Belajar",
+              "jp": "どうしてですか — Menyatakan Alasan (かつどう)の勉強を始めましょう！",
+              "furigana": "べんきょうをはじめましょう！",
+              "romaji": "Benkyou wo hajimemashou!",
+              "idText": "Mari kita mulai belajar 4!"
+            }
+          ],
+          "drills": [
+            {
+              "id": "dr1",
+              "type": "multiple-choice",
+              "prompt": "Apa fokus utama pada materi 4 di buku Irodori: Japanese for Life in Japan?",
+              "options": [
+                "Menguasai pola kalimat bab ini dengan pemahaman alami",
+                "Menghafal tanpa memahami konteks",
+                "Mengabaikan intonasi pengucapan",
+                "Hanya membaca terjemahan bahasa Inggris"
+              ],
+              "correctAnswer": "Menguasai pola kalimat bab ini dengan pemahaman alami",
+              "explanation": "Setiap bab dirancang untuk memperkuat kemampuan komunikasi fungsional pembelajar."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 20,
+      "id": "unit-curriculum-book-irodori-20",
+      "level": "n4",
+      "pt_stage": 3,
+      "title_id": "Irodori A2-1: 4",
+      "title_jp": "どうしてですか — Menyatakan Sebab-Akibat (りかい)",
+      "theme": "Irodori A2-1",
+      "icon": "🌈",
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 4.",
+      "grammar_ids": [
+        "gn5-00051",
+        "gn5-00043",
+        "gn5-00054",
+        "gn5-00040"
+      ],
+      "vocab_ids": [
+        "vg-n4-00136",
+        "vg-n4-00234",
+        "vg-n4-00236",
+        "vg-n4-00110"
+      ],
+      "lessons": [
+        {
+          "id": "les-curriculum-book-irodori-u20-01",
+          "lesson_number": 1,
+          "title_id": "4 (Eksplorasi Materi & Pola)",
+          "title_jp": "どうしてですか — Menyatakan Sebab-Akibat (りかい)（解説）",
+          "desc_id": "Mempelajari urutan materi pedagogis buku Irodori: Japanese for Life in Japan pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 4.",
+          "grammar_ids": [
+            "gn5-00051",
+            "gn5-00043",
+            "gn5-00054",
+            "gn5-00040"
+          ],
+          "vocab_ids": [
+            "vg-n4-00136",
+            "vg-n4-00234",
+            "vg-n4-00236",
+            "vg-n4-00110"
+          ],
+          "pedagogical_framework": {
+            "what": {
+              "summary": "Silabus resmi Irodori: Japanese for Life in Japan bab 8.",
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 4.",
+              "targetPatterns": [
+                "gn5-00051",
+                "gn5-00043",
+                "gn5-00054",
+                "gn5-00040"
+              ],
+              "coreVocabSample": [
+                "vg-n4-00136",
+                "vg-n4-00234",
+                "vg-n4-00236",
+                "vg-n4-00110"
+              ]
+            },
+            "sensei_context": {
+              "sceneIntro": "Kamu sedang mempelajari buku Irodori: Japanese for Life in Japan. Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 4.",
+              "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
+            },
+            "cultural_notes": {
+              "title": "Catatan Budaya & Konteks Pemakaian (Irodori: Japanese for Life in Japan)",
+              "etiquette": "Perhatikan konteks formalitas saat menggunakan pola kalimat ini kepada guru, teman, atau atasan.",
+              "taboos": "Hindari penggunaan pola kasual kepada orang yang baru pertama kali ditemui."
+            }
+          },
+          "dialogue": [
+            {
+              "id": "d1",
+              "speaker": "Sensei",
+              "speakerRole": "Tutor Belajar",
+              "jp": "どうしてですか — Menyatakan Sebab-Akibat (りかい)の勉強を始めましょう！",
+              "furigana": "べんきょうをはじめましょう！",
+              "romaji": "Benkyou wo hajimemashou!",
+              "idText": "Mari kita mulai belajar 4!"
+            }
+          ],
+          "drills": [
+            {
+              "id": "dr1",
+              "type": "multiple-choice",
+              "prompt": "Apa fokus utama pada materi 4 di buku Irodori: Japanese for Life in Japan?",
+              "options": [
+                "Menguasai pola kalimat bab ini dengan pemahaman alami",
+                "Menghafal tanpa memahami konteks",
+                "Mengabaikan intonasi pengucapan",
+                "Hanya membaca terjemahan bahasa Inggris"
+              ],
+              "correctAnswer": "Menguasai pola kalimat bab ini dengan pemahaman alami",
+              "explanation": "Setiap bab dirancang untuk memperkuat kemampuan komunikasi fungsional pembelajar."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 21,
+      "id": "unit-curriculum-book-irodori-21",
+      "level": "n4",
+      "pt_stage": 4,
+      "title_id": "Irodori A2-1: 5",
+      "title_jp": "どんなところですか — Mendeskripsikan Tempat (かつどう)",
+      "theme": "Irodori A2-1",
+      "icon": "🌈",
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 5.",
+      "grammar_ids": [
+        "gn5-00012",
+        "gn5-00005",
+        "gn4-00034",
+        "gn5-00081"
+      ],
+      "vocab_ids": [
+        "vg-n5-00081",
+        "vg-n5-00082",
+        "vg-n5-00716",
+        "vg-n5-00717"
+      ],
+      "lessons": [
+        {
+          "id": "les-curriculum-book-irodori-u21-01",
+          "lesson_number": 1,
+          "title_id": "5 (Eksplorasi Materi & Pola)",
+          "title_jp": "どんなところですか — Mendeskripsikan Tempat (かつどう)（解説）",
+          "desc_id": "Mempelajari urutan materi pedagogis buku Irodori: Japanese for Life in Japan pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 5.",
+          "grammar_ids": [
+            "gn5-00012",
+            "gn5-00005",
+            "gn4-00034",
+            "gn5-00081"
+          ],
+          "vocab_ids": [
+            "vg-n5-00081",
+            "vg-n5-00082",
+            "vg-n5-00716",
+            "vg-n5-00717"
+          ],
+          "pedagogical_framework": {
+            "what": {
+              "summary": "Silabus resmi Irodori: Japanese for Life in Japan bab 9.",
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 5.",
+              "targetPatterns": [
+                "gn5-00012",
+                "gn5-00005",
+                "gn4-00034",
+                "gn5-00081"
+              ],
+              "coreVocabSample": [
+                "vg-n5-00081",
+                "vg-n5-00082",
+                "vg-n5-00716",
+                "vg-n5-00717"
+              ]
+            },
+            "sensei_context": {
+              "sceneIntro": "Kamu sedang mempelajari buku Irodori: Japanese for Life in Japan. Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 5.",
+              "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
+            },
+            "cultural_notes": {
+              "title": "Catatan Budaya & Konteks Pemakaian (Irodori: Japanese for Life in Japan)",
+              "etiquette": "Perhatikan konteks formalitas saat menggunakan pola kalimat ini kepada guru, teman, atau atasan.",
+              "taboos": "Hindari penggunaan pola kasual kepada orang yang baru pertama kali ditemui."
+            }
+          },
+          "dialogue": [
+            {
+              "id": "d1",
+              "speaker": "Sensei",
+              "speakerRole": "Tutor Belajar",
+              "jp": "どんなところですか — Mendeskripsikan Tempat (かつどう)の勉強を始めましょう！",
+              "furigana": "べんきょうをはじめましょう！",
+              "romaji": "Benkyou wo hajimemashou!",
+              "idText": "Mari kita mulai belajar 5!"
+            }
+          ],
+          "drills": [
+            {
+              "id": "dr1",
+              "type": "multiple-choice",
+              "prompt": "Apa fokus utama pada materi 5 di buku Irodori: Japanese for Life in Japan?",
+              "options": [
+                "Menguasai pola kalimat bab ini dengan pemahaman alami",
+                "Menghafal tanpa memahami konteks",
+                "Mengabaikan intonasi pengucapan",
+                "Hanya membaca terjemahan bahasa Inggris"
+              ],
+              "correctAnswer": "Menguasai pola kalimat bab ini dengan pemahaman alami",
+              "explanation": "Setiap bab dirancang untuk memperkuat kemampuan komunikasi fungsional pembelajar."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 22,
+      "id": "unit-curriculum-book-irodori-22",
+      "level": "n4",
+      "pt_stage": 5,
+      "title_id": "Irodori A2-1: 5",
+      "title_jp": "どんなところですか — Tempat Wisata dan Alam (りかい)",
+      "theme": "Irodori A2-1",
+      "icon": "🌈",
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 5.",
+      "grammar_ids": [
+        "gn5-00036",
+        "gn5-00044",
+        "gn5-00056"
+      ],
+      "vocab_ids": [
+        "vg-n5-00131",
+        "vg-n4-00042",
+        "vg-n5-00132",
+        "vg-n5-00133"
+      ],
+      "lessons": [
+        {
+          "id": "les-curriculum-book-irodori-u22-01",
+          "lesson_number": 1,
+          "title_id": "5 (Eksplorasi Materi & Pola)",
+          "title_jp": "どんなところですか — Tempat Wisata dan Alam (りかい)（解説）",
+          "desc_id": "Mempelajari urutan materi pedagogis buku Irodori: Japanese for Life in Japan pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 5.",
+          "grammar_ids": [
+            "gn5-00036",
+            "gn5-00044",
+            "gn5-00056"
+          ],
+          "vocab_ids": [
+            "vg-n5-00131",
+            "vg-n4-00042",
+            "vg-n5-00132",
+            "vg-n5-00133"
+          ],
+          "pedagogical_framework": {
+            "what": {
+              "summary": "Silabus resmi Irodori: Japanese for Life in Japan bab 10.",
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 5.",
+              "targetPatterns": [
+                "gn5-00036",
+                "gn5-00044",
+                "gn5-00056"
+              ],
+              "coreVocabSample": [
+                "vg-n5-00131",
+                "vg-n4-00042",
+                "vg-n5-00132",
+                "vg-n5-00133"
+              ]
+            },
+            "sensei_context": {
+              "sceneIntro": "Kamu sedang mempelajari buku Irodori: Japanese for Life in Japan. Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 5.",
+              "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
+            },
+            "cultural_notes": {
+              "title": "Catatan Budaya & Konteks Pemakaian (Irodori: Japanese for Life in Japan)",
+              "etiquette": "Perhatikan konteks formalitas saat menggunakan pola kalimat ini kepada guru, teman, atau atasan.",
+              "taboos": "Hindari penggunaan pola kasual kepada orang yang baru pertama kali ditemui."
+            }
+          },
+          "dialogue": [
+            {
+              "id": "d1",
+              "speaker": "Sensei",
+              "speakerRole": "Tutor Belajar",
+              "jp": "どんなところですか — Tempat Wisata dan Alam (りかい)の勉強を始めましょう！",
+              "furigana": "べんきょうをはじめましょう！",
+              "romaji": "Benkyou wo hajimemashou!",
+              "idText": "Mari kita mulai belajar 5!"
+            }
+          ],
+          "drills": [
+            {
+              "id": "dr1",
+              "type": "multiple-choice",
+              "prompt": "Apa fokus utama pada materi 5 di buku Irodori: Japanese for Life in Japan?",
+              "options": [
+                "Menguasai pola kalimat bab ini dengan pemahaman alami",
+                "Menghafal tanpa memahami konteks",
+                "Mengabaikan intonasi pengucapan",
+                "Hanya membaca terjemahan bahasa Inggris"
+              ],
+              "correctAnswer": "Menguasai pola kalimat bab ini dengan pemahaman alami",
+              "explanation": "Setiap bab dirancang untuk memperkuat kemampuan komunikasi fungsional pembelajar."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 23,
+      "id": "unit-curriculum-book-irodori-23",
+      "level": "n4",
+      "pt_stage": 6,
+      "title_id": "Irodori A2-1: 6",
+      "title_jp": "どのくらいかかりますか — Waktu dan Biaya (かつどう)",
+      "theme": "Irodori A2-1",
+      "icon": "🌈",
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 6.",
+      "grammar_ids": [
+        "gn5-00008",
+        "gn5-00058",
+        "gn5-00078",
+        "gn4-00003"
+      ],
+      "vocab_ids": [
+        "vg-n5-00094",
+        "vg-n5-00099",
+        "vg-n5-00180",
+        "vg-n5-00489"
+      ],
+      "lessons": [
+        {
+          "id": "les-curriculum-book-irodori-u23-01",
+          "lesson_number": 1,
+          "title_id": "6 (Eksplorasi Materi & Pola)",
+          "title_jp": "どのくらいかかりますか — Waktu dan Biaya (かつどう)（解説）",
+          "desc_id": "Mempelajari urutan materi pedagogis buku Irodori: Japanese for Life in Japan pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 6.",
+          "grammar_ids": [
+            "gn5-00008",
+            "gn5-00058",
+            "gn5-00078",
+            "gn4-00003"
+          ],
+          "vocab_ids": [
+            "vg-n5-00094",
+            "vg-n5-00099",
+            "vg-n5-00180",
+            "vg-n5-00489"
+          ],
+          "pedagogical_framework": {
+            "what": {
+              "summary": "Silabus resmi Irodori: Japanese for Life in Japan bab 11.",
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 6.",
+              "targetPatterns": [
+                "gn5-00008",
+                "gn5-00058",
+                "gn5-00078",
+                "gn4-00003"
+              ],
+              "coreVocabSample": [
+                "vg-n5-00094",
+                "vg-n5-00099",
+                "vg-n5-00180",
+                "vg-n5-00489"
+              ]
+            },
+            "sensei_context": {
+              "sceneIntro": "Kamu sedang mempelajari buku Irodori: Japanese for Life in Japan. Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 6.",
+              "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
+            },
+            "cultural_notes": {
+              "title": "Catatan Budaya & Konteks Pemakaian (Irodori: Japanese for Life in Japan)",
+              "etiquette": "Perhatikan konteks formalitas saat menggunakan pola kalimat ini kepada guru, teman, atau atasan.",
+              "taboos": "Hindari penggunaan pola kasual kepada orang yang baru pertama kali ditemui."
+            }
+          },
+          "dialogue": [
+            {
+              "id": "d1",
+              "speaker": "Sensei",
+              "speakerRole": "Tutor Belajar",
+              "jp": "どのくらいかかりますか — Waktu dan Biaya (かつどう)の勉強を始めましょう！",
+              "furigana": "べんきょうをはじめましょう！",
+              "romaji": "Benkyou wo hajimemashou!",
+              "idText": "Mari kita mulai belajar 6!"
+            }
+          ],
+          "drills": [
+            {
+              "id": "dr1",
+              "type": "multiple-choice",
+              "prompt": "Apa fokus utama pada materi 6 di buku Irodori: Japanese for Life in Japan?",
+              "options": [
+                "Menguasai pola kalimat bab ini dengan pemahaman alami",
+                "Menghafal tanpa memahami konteks",
+                "Mengabaikan intonasi pengucapan",
+                "Hanya membaca terjemahan bahasa Inggris"
+              ],
+              "correctAnswer": "Menguasai pola kalimat bab ini dengan pemahaman alami",
+              "explanation": "Setiap bab dirancang untuk memperkuat kemampuan komunikasi fungsional pembelajar."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 24,
+      "id": "unit-curriculum-book-irodori-24",
+      "level": "n4",
+      "pt_stage": 1,
+      "title_id": "Irodori A2-1: 6",
+      "title_jp": "どのくらいかかりますか — Perbandingan Harga & Waktu (りかい)",
+      "theme": "Irodori A2-1",
+      "icon": "🌈",
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 6.",
+      "grammar_ids": [
+        "gn5-00026",
+        "gn5-00024",
+        "gn5-00036",
+        "gn4-00073"
+      ],
+      "vocab_ids": [
+        "vg-n5-00113",
+        "vg-n5-00114",
+        "vg-n5-00628",
+        "vg-n5-00478"
+      ],
+      "lessons": [
+        {
+          "id": "les-curriculum-book-irodori-u24-01",
+          "lesson_number": 1,
+          "title_id": "6 (Eksplorasi Materi & Pola)",
+          "title_jp": "どのくらいかかりますか — Perbandingan Harga & Waktu (りかい)（解説）",
+          "desc_id": "Mempelajari urutan materi pedagogis buku Irodori: Japanese for Life in Japan pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 6.",
+          "grammar_ids": [
+            "gn5-00026",
+            "gn5-00024",
+            "gn5-00036",
+            "gn4-00073"
+          ],
+          "vocab_ids": [
+            "vg-n5-00113",
+            "vg-n5-00114",
+            "vg-n5-00628",
+            "vg-n5-00478"
+          ],
+          "pedagogical_framework": {
+            "what": {
+              "summary": "Silabus resmi Irodori: Japanese for Life in Japan bab 12.",
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 6.",
+              "targetPatterns": [
+                "gn5-00026",
+                "gn5-00024",
+                "gn5-00036",
+                "gn4-00073"
+              ],
+              "coreVocabSample": [
+                "vg-n5-00113",
+                "vg-n5-00114",
+                "vg-n5-00628",
+                "vg-n5-00478"
+              ]
+            },
+            "sensei_context": {
+              "sceneIntro": "Kamu sedang mempelajari buku Irodori: Japanese for Life in Japan. Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 6.",
+              "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
+            },
+            "cultural_notes": {
+              "title": "Catatan Budaya & Konteks Pemakaian (Irodori: Japanese for Life in Japan)",
+              "etiquette": "Perhatikan konteks formalitas saat menggunakan pola kalimat ini kepada guru, teman, atau atasan.",
+              "taboos": "Hindari penggunaan pola kasual kepada orang yang baru pertama kali ditemui."
+            }
+          },
+          "dialogue": [
+            {
+              "id": "d1",
+              "speaker": "Sensei",
+              "speakerRole": "Tutor Belajar",
+              "jp": "どのくらいかかりますか — Perbandingan Harga & Waktu (りかい)の勉強を始めましょう！",
+              "furigana": "べんきょうをはじめましょう！",
+              "romaji": "Benkyou wo hajimemashou!",
+              "idText": "Mari kita mulai belajar 6!"
+            }
+          ],
+          "drills": [
+            {
+              "id": "dr1",
+              "type": "multiple-choice",
+              "prompt": "Apa fokus utama pada materi 6 di buku Irodori: Japanese for Life in Japan?",
+              "options": [
+                "Menguasai pola kalimat bab ini dengan pemahaman alami",
+                "Menghafal tanpa memahami konteks",
+                "Mengabaikan intonasi pengucapan",
+                "Hanya membaca terjemahan bahasa Inggris"
+              ],
+              "correctAnswer": "Menguasai pola kalimat bab ini dengan pemahaman alami",
+              "explanation": "Setiap bab dirancang untuk memperkuat kemampuan komunikasi fungsional pembelajar."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 25,
+      "id": "unit-curriculum-book-irodori-25",
+      "level": "n4",
+      "pt_stage": 2,
+      "title_id": "Irodori A2-2: 1",
+      "title_jp": "どんな仕事ですか — Pekerjaan dan Profesi (かつどう)",
+      "theme": "Irodori A2-2",
+      "icon": "🌈",
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 1.",
+      "grammar_ids": [
+        "gn5-00071",
+        "gn4-00091",
+        "gn5-00029"
+      ],
+      "vocab_ids": [
+        "vg-n5-00030",
+        "vg-n5-00086",
+        "vg-n5-00488",
+        "vg-n5-00491"
+      ],
+      "lessons": [
+        {
+          "id": "les-curriculum-book-irodori-u25-01",
+          "lesson_number": 1,
+          "title_id": "1 (Eksplorasi Materi & Pola)",
+          "title_jp": "どんな仕事ですか — Pekerjaan dan Profesi (かつどう)（解説）",
+          "desc_id": "Mempelajari urutan materi pedagogis buku Irodori: Japanese for Life in Japan pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 1.",
+          "grammar_ids": [
+            "gn5-00071",
+            "gn4-00091",
+            "gn5-00029"
+          ],
+          "vocab_ids": [
+            "vg-n5-00030",
+            "vg-n5-00086",
+            "vg-n5-00488",
+            "vg-n5-00491"
+          ],
+          "pedagogical_framework": {
+            "what": {
+              "summary": "Silabus resmi Irodori: Japanese for Life in Japan bab 1.",
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 1.",
+              "targetPatterns": [
+                "gn5-00071",
+                "gn4-00091",
+                "gn5-00029"
+              ],
+              "coreVocabSample": [
+                "vg-n5-00030",
+                "vg-n5-00086",
+                "vg-n5-00488",
+                "vg-n5-00491"
+              ]
+            },
+            "sensei_context": {
+              "sceneIntro": "Kamu sedang mempelajari buku Irodori: Japanese for Life in Japan. Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 1.",
+              "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
+            },
+            "cultural_notes": {
+              "title": "Catatan Budaya & Konteks Pemakaian (Irodori: Japanese for Life in Japan)",
+              "etiquette": "Perhatikan konteks formalitas saat menggunakan pola kalimat ini kepada guru, teman, atau atasan.",
+              "taboos": "Hindari penggunaan pola kasual kepada orang yang baru pertama kali ditemui."
+            }
+          },
+          "dialogue": [
+            {
+              "id": "d1",
+              "speaker": "Sensei",
+              "speakerRole": "Tutor Belajar",
+              "jp": "どんな仕事ですか — Pekerjaan dan Profesi (かつどう)の勉強を始めましょう！",
+              "furigana": "べんきょうをはじめましょう！",
+              "romaji": "Benkyou wo hajimemashou!",
+              "idText": "Mari kita mulai belajar 1!"
+            }
+          ],
+          "drills": [
+            {
+              "id": "dr1",
+              "type": "multiple-choice",
+              "prompt": "Apa fokus utama pada materi 1 di buku Irodori: Japanese for Life in Japan?",
+              "options": [
+                "Menguasai pola kalimat bab ini dengan pemahaman alami",
+                "Menghafal tanpa memahami konteks",
+                "Mengabaikan intonasi pengucapan",
+                "Hanya membaca terjemahan bahasa Inggris"
+              ],
+              "correctAnswer": "Menguasai pola kalimat bab ini dengan pemahaman alami",
+              "explanation": "Setiap bab dirancang untuk memperkuat kemampuan komunikasi fungsional pembelajar."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 26,
+      "id": "unit-curriculum-book-irodori-26",
+      "level": "n4",
+      "pt_stage": 3,
+      "title_id": "Irodori A2-2: 1",
+      "title_jp": "どんな仕事ですか — Mendeskripsikan Pekerjaan (りかい)",
+      "theme": "Irodori A2-2",
+      "icon": "🌈",
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 1.",
+      "grammar_ids": [
+        "gn5-00026",
+        "gn5-00029",
+        "gn5-00076"
+      ],
+      "vocab_ids": [
+        "vg-n4-00492",
+        "vg-n4-00501",
+        "vg-n4-00502",
+        "vg-n4-00506"
+      ],
+      "lessons": [
+        {
+          "id": "les-curriculum-book-irodori-u26-01",
+          "lesson_number": 1,
+          "title_id": "1 (Eksplorasi Materi & Pola)",
+          "title_jp": "どんな仕事ですか — Mendeskripsikan Pekerjaan (りかい)（解説）",
+          "desc_id": "Mempelajari urutan materi pedagogis buku Irodori: Japanese for Life in Japan pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 1.",
+          "grammar_ids": [
+            "gn5-00026",
+            "gn5-00029",
+            "gn5-00076"
+          ],
+          "vocab_ids": [
+            "vg-n4-00492",
+            "vg-n4-00501",
+            "vg-n4-00502",
+            "vg-n4-00506"
+          ],
+          "pedagogical_framework": {
+            "what": {
+              "summary": "Silabus resmi Irodori: Japanese for Life in Japan bab 2.",
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 1.",
+              "targetPatterns": [
+                "gn5-00026",
+                "gn5-00029",
+                "gn5-00076"
+              ],
+              "coreVocabSample": [
+                "vg-n4-00492",
+                "vg-n4-00501",
+                "vg-n4-00502",
+                "vg-n4-00506"
+              ]
+            },
+            "sensei_context": {
+              "sceneIntro": "Kamu sedang mempelajari buku Irodori: Japanese for Life in Japan. Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 1.",
+              "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
+            },
+            "cultural_notes": {
+              "title": "Catatan Budaya & Konteks Pemakaian (Irodori: Japanese for Life in Japan)",
+              "etiquette": "Perhatikan konteks formalitas saat menggunakan pola kalimat ini kepada guru, teman, atau atasan.",
+              "taboos": "Hindari penggunaan pola kasual kepada orang yang baru pertama kali ditemui."
+            }
+          },
+          "dialogue": [
+            {
+              "id": "d1",
+              "speaker": "Sensei",
+              "speakerRole": "Tutor Belajar",
+              "jp": "どんな仕事ですか — Mendeskripsikan Pekerjaan (りかい)の勉強を始めましょう！",
+              "furigana": "べんきょうをはじめましょう！",
+              "romaji": "Benkyou wo hajimemashou!",
+              "idText": "Mari kita mulai belajar 1!"
+            }
+          ],
+          "drills": [
+            {
+              "id": "dr1",
+              "type": "multiple-choice",
+              "prompt": "Apa fokus utama pada materi 1 di buku Irodori: Japanese for Life in Japan?",
+              "options": [
+                "Menguasai pola kalimat bab ini dengan pemahaman alami",
+                "Menghafal tanpa memahami konteks",
+                "Mengabaikan intonasi pengucapan",
+                "Hanya membaca terjemahan bahasa Inggris"
+              ],
+              "correctAnswer": "Menguasai pola kalimat bab ini dengan pemahaman alami",
+              "explanation": "Setiap bab dirancang untuk memperkuat kemampuan komunikasi fungsional pembelajar."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 27,
+      "id": "unit-curriculum-book-irodori-27",
+      "level": "n4",
+      "pt_stage": 4,
+      "title_id": "Irodori A2-2: 2",
+      "title_jp": "一緒にやりませんか — Mengajak Kegiatan (かつどう)",
+      "theme": "Irodori A2-2",
+      "icon": "🌈",
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 2.",
+      "grammar_ids": [
+        "gn5-00066",
+        "gn5-00019",
+        "gn5-00011"
+      ],
+      "vocab_ids": [
+        "vg-n4-00658",
+        "vg-n5-00397",
+        "vg-n5-00398",
+        "vg-n5-00399"
+      ],
+      "lessons": [
+        {
+          "id": "les-curriculum-book-irodori-u27-01",
+          "lesson_number": 1,
+          "title_id": "2 (Eksplorasi Materi & Pola)",
+          "title_jp": "一緒にやりませんか — Mengajak Kegiatan (かつどう)（解説）",
+          "desc_id": "Mempelajari urutan materi pedagogis buku Irodori: Japanese for Life in Japan pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 2.",
+          "grammar_ids": [
+            "gn5-00066",
+            "gn5-00019",
+            "gn5-00011"
+          ],
+          "vocab_ids": [
+            "vg-n4-00658",
+            "vg-n5-00397",
+            "vg-n5-00398",
+            "vg-n5-00399"
+          ],
+          "pedagogical_framework": {
+            "what": {
+              "summary": "Silabus resmi Irodori: Japanese for Life in Japan bab 3.",
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 2.",
+              "targetPatterns": [
+                "gn5-00066",
+                "gn5-00019",
+                "gn5-00011"
+              ],
+              "coreVocabSample": [
+                "vg-n4-00658",
+                "vg-n5-00397",
+                "vg-n5-00398",
+                "vg-n5-00399"
+              ]
+            },
+            "sensei_context": {
+              "sceneIntro": "Kamu sedang mempelajari buku Irodori: Japanese for Life in Japan. Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 2.",
+              "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
+            },
+            "cultural_notes": {
+              "title": "Catatan Budaya & Konteks Pemakaian (Irodori: Japanese for Life in Japan)",
+              "etiquette": "Perhatikan konteks formalitas saat menggunakan pola kalimat ini kepada guru, teman, atau atasan.",
+              "taboos": "Hindari penggunaan pola kasual kepada orang yang baru pertama kali ditemui."
+            }
+          },
+          "dialogue": [
+            {
+              "id": "d1",
+              "speaker": "Sensei",
+              "speakerRole": "Tutor Belajar",
+              "jp": "一緒にやりませんか — Mengajak Kegiatan (かつどう)の勉強を始めましょう！",
+              "furigana": "べんきょうをはじめましょう！",
+              "romaji": "Benkyou wo hajimemashou!",
+              "idText": "Mari kita mulai belajar 2!"
+            }
+          ],
+          "drills": [
+            {
+              "id": "dr1",
+              "type": "multiple-choice",
+              "prompt": "Apa fokus utama pada materi 2 di buku Irodori: Japanese for Life in Japan?",
+              "options": [
+                "Menguasai pola kalimat bab ini dengan pemahaman alami",
+                "Menghafal tanpa memahami konteks",
+                "Mengabaikan intonasi pengucapan",
+                "Hanya membaca terjemahan bahasa Inggris"
+              ],
+              "correctAnswer": "Menguasai pola kalimat bab ini dengan pemahaman alami",
+              "explanation": "Setiap bab dirancang untuk memperkuat kemampuan komunikasi fungsional pembelajar."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 28,
+      "id": "unit-curriculum-book-irodori-28",
+      "level": "n4",
+      "pt_stage": 5,
+      "title_id": "Irodori A2-2: 2",
+      "title_jp": "一緒にやりませんか — Merespons Ajakan (りかい)",
+      "theme": "Irodori A2-2",
+      "icon": "🌈",
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 2.",
+      "grammar_ids": [
+        "gn4-00035",
+        "gn4-00027",
+        "gn5-00033",
+        "gn5-00067"
+      ],
+      "vocab_ids": [
+        "vg-n4-00176",
+        "vg-n4-00179",
+        "vg-n4-00029",
+        "vg-n4-00367"
+      ],
+      "lessons": [
+        {
+          "id": "les-curriculum-book-irodori-u28-01",
+          "lesson_number": 1,
+          "title_id": "2 (Eksplorasi Materi & Pola)",
+          "title_jp": "一緒にやりませんか — Merespons Ajakan (りかい)（解説）",
+          "desc_id": "Mempelajari urutan materi pedagogis buku Irodori: Japanese for Life in Japan pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 2.",
+          "grammar_ids": [
+            "gn4-00035",
+            "gn4-00027",
+            "gn5-00033",
+            "gn5-00067"
+          ],
+          "vocab_ids": [
+            "vg-n4-00176",
+            "vg-n4-00179",
+            "vg-n4-00029",
+            "vg-n4-00367"
+          ],
+          "pedagogical_framework": {
+            "what": {
+              "summary": "Silabus resmi Irodori: Japanese for Life in Japan bab 4.",
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 2.",
+              "targetPatterns": [
+                "gn4-00035",
+                "gn4-00027",
+                "gn5-00033",
+                "gn5-00067"
+              ],
+              "coreVocabSample": [
+                "vg-n4-00176",
+                "vg-n4-00179",
+                "vg-n4-00029",
+                "vg-n4-00367"
+              ]
+            },
+            "sensei_context": {
+              "sceneIntro": "Kamu sedang mempelajari buku Irodori: Japanese for Life in Japan. Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 2.",
+              "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
+            },
+            "cultural_notes": {
+              "title": "Catatan Budaya & Konteks Pemakaian (Irodori: Japanese for Life in Japan)",
+              "etiquette": "Perhatikan konteks formalitas saat menggunakan pola kalimat ini kepada guru, teman, atau atasan.",
+              "taboos": "Hindari penggunaan pola kasual kepada orang yang baru pertama kali ditemui."
+            }
+          },
+          "dialogue": [
+            {
+              "id": "d1",
+              "speaker": "Sensei",
+              "speakerRole": "Tutor Belajar",
+              "jp": "一緒にやりませんか — Merespons Ajakan (りかい)の勉強を始めましょう！",
+              "furigana": "べんきょうをはじめましょう！",
+              "romaji": "Benkyou wo hajimemashou!",
+              "idText": "Mari kita mulai belajar 2!"
+            }
+          ],
+          "drills": [
+            {
+              "id": "dr1",
+              "type": "multiple-choice",
+              "prompt": "Apa fokus utama pada materi 2 di buku Irodori: Japanese for Life in Japan?",
+              "options": [
+                "Menguasai pola kalimat bab ini dengan pemahaman alami",
+                "Menghafal tanpa memahami konteks",
+                "Mengabaikan intonasi pengucapan",
+                "Hanya membaca terjemahan bahasa Inggris"
+              ],
+              "correctAnswer": "Menguasai pola kalimat bab ini dengan pemahaman alami",
+              "explanation": "Setiap bab dirancang untuk memperkuat kemampuan komunikasi fungsional pembelajar."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 29,
+      "id": "unit-curriculum-book-irodori-29",
+      "level": "n4",
+      "pt_stage": 6,
+      "title_id": "Irodori A2-2: 3",
+      "title_jp": "どんな意見ですか — Menyatakan Pendapat (かつどう)",
+      "theme": "Irodori A2-2",
+      "icon": "🌈",
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 3.",
+      "grammar_ids": [
+        "gn4-00031",
+        "gn4-00013",
+        "gn4-00038",
+        "gn5-00028"
+      ],
+      "vocab_ids": [
+        "vg-n4-00368",
+        "vg-n4-00367",
+        "vg-n4-00359",
+        "vg-n4-00362"
+      ],
+      "lessons": [
+        {
+          "id": "les-curriculum-book-irodori-u29-01",
+          "lesson_number": 1,
+          "title_id": "3 (Eksplorasi Materi & Pola)",
+          "title_jp": "どんな意見ですか — Menyatakan Pendapat (かつどう)（解説）",
+          "desc_id": "Mempelajari urutan materi pedagogis buku Irodori: Japanese for Life in Japan pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 3.",
+          "grammar_ids": [
+            "gn4-00031",
+            "gn4-00013",
+            "gn4-00038",
+            "gn5-00028"
+          ],
+          "vocab_ids": [
+            "vg-n4-00368",
+            "vg-n4-00367",
+            "vg-n4-00359",
+            "vg-n4-00362"
+          ],
+          "pedagogical_framework": {
+            "what": {
+              "summary": "Silabus resmi Irodori: Japanese for Life in Japan bab 5.",
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 3.",
+              "targetPatterns": [
+                "gn4-00031",
+                "gn4-00013",
+                "gn4-00038",
+                "gn5-00028"
+              ],
+              "coreVocabSample": [
+                "vg-n4-00368",
+                "vg-n4-00367",
+                "vg-n4-00359",
+                "vg-n4-00362"
+              ]
+            },
+            "sensei_context": {
+              "sceneIntro": "Kamu sedang mempelajari buku Irodori: Japanese for Life in Japan. Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 3.",
+              "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
+            },
+            "cultural_notes": {
+              "title": "Catatan Budaya & Konteks Pemakaian (Irodori: Japanese for Life in Japan)",
+              "etiquette": "Perhatikan konteks formalitas saat menggunakan pola kalimat ini kepada guru, teman, atau atasan.",
+              "taboos": "Hindari penggunaan pola kasual kepada orang yang baru pertama kali ditemui."
+            }
+          },
+          "dialogue": [
+            {
+              "id": "d1",
+              "speaker": "Sensei",
+              "speakerRole": "Tutor Belajar",
+              "jp": "どんな意見ですか — Menyatakan Pendapat (かつどう)の勉強を始めましょう！",
+              "furigana": "べんきょうをはじめましょう！",
+              "romaji": "Benkyou wo hajimemashou!",
+              "idText": "Mari kita mulai belajar 3!"
+            }
+          ],
+          "drills": [
+            {
+              "id": "dr1",
+              "type": "multiple-choice",
+              "prompt": "Apa fokus utama pada materi 3 di buku Irodori: Japanese for Life in Japan?",
+              "options": [
+                "Menguasai pola kalimat bab ini dengan pemahaman alami",
+                "Menghafal tanpa memahami konteks",
+                "Mengabaikan intonasi pengucapan",
+                "Hanya membaca terjemahan bahasa Inggris"
+              ],
+              "correctAnswer": "Menguasai pola kalimat bab ini dengan pemahaman alami",
+              "explanation": "Setiap bab dirancang untuk memperkuat kemampuan komunikasi fungsional pembelajar."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 30,
+      "id": "unit-curriculum-book-irodori-30",
+      "level": "n4",
+      "pt_stage": 1,
+      "title_id": "Irodori A2-2: 3",
+      "title_jp": "どんな意見ですか — Berdebat dan Setuju (りかい)",
+      "theme": "Irodori A2-2",
+      "icon": "🌈",
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 3.",
+      "grammar_ids": [
+        "gn4-00074",
+        "gn5-00076",
+        "gn5-00015"
+      ],
+      "vocab_ids": [
+        "vg-n4-00136",
+        "vg-n4-00234",
+        "vg-n4-00236",
+        "vg-n4-00130"
+      ],
+      "lessons": [
+        {
+          "id": "les-curriculum-book-irodori-u30-01",
+          "lesson_number": 1,
+          "title_id": "3 (Eksplorasi Materi & Pola)",
+          "title_jp": "どんな意見ですか — Berdebat dan Setuju (りかい)（解説）",
+          "desc_id": "Mempelajari urutan materi pedagogis buku Irodori: Japanese for Life in Japan pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 3.",
+          "grammar_ids": [
+            "gn4-00074",
+            "gn5-00076",
+            "gn5-00015"
+          ],
+          "vocab_ids": [
+            "vg-n4-00136",
+            "vg-n4-00234",
+            "vg-n4-00236",
+            "vg-n4-00130"
+          ],
+          "pedagogical_framework": {
+            "what": {
+              "summary": "Silabus resmi Irodori: Japanese for Life in Japan bab 6.",
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 3.",
+              "targetPatterns": [
+                "gn4-00074",
+                "gn5-00076",
+                "gn5-00015"
+              ],
+              "coreVocabSample": [
+                "vg-n4-00136",
+                "vg-n4-00234",
+                "vg-n4-00236",
+                "vg-n4-00130"
+              ]
+            },
+            "sensei_context": {
+              "sceneIntro": "Kamu sedang mempelajari buku Irodori: Japanese for Life in Japan. Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 3.",
+              "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
+            },
+            "cultural_notes": {
+              "title": "Catatan Budaya & Konteks Pemakaian (Irodori: Japanese for Life in Japan)",
+              "etiquette": "Perhatikan konteks formalitas saat menggunakan pola kalimat ini kepada guru, teman, atau atasan.",
+              "taboos": "Hindari penggunaan pola kasual kepada orang yang baru pertama kali ditemui."
+            }
+          },
+          "dialogue": [
+            {
+              "id": "d1",
+              "speaker": "Sensei",
+              "speakerRole": "Tutor Belajar",
+              "jp": "どんな意見ですか — Berdebat dan Setuju (りかい)の勉強を始めましょう！",
+              "furigana": "べんきょうをはじめましょう！",
+              "romaji": "Benkyou wo hajimemashou!",
+              "idText": "Mari kita mulai belajar 3!"
+            }
+          ],
+          "drills": [
+            {
+              "id": "dr1",
+              "type": "multiple-choice",
+              "prompt": "Apa fokus utama pada materi 3 di buku Irodori: Japanese for Life in Japan?",
+              "options": [
+                "Menguasai pola kalimat bab ini dengan pemahaman alami",
+                "Menghafal tanpa memahami konteks",
+                "Mengabaikan intonasi pengucapan",
+                "Hanya membaca terjemahan bahasa Inggris"
+              ],
+              "correctAnswer": "Menguasai pola kalimat bab ini dengan pemahaman alami",
+              "explanation": "Setiap bab dirancang untuk memperkuat kemampuan komunikasi fungsional pembelajar."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 31,
+      "id": "unit-curriculum-book-irodori-31",
+      "level": "n4",
+      "pt_stage": 2,
+      "title_id": "Irodori A2-2: 4",
+      "title_jp": "お願いできますか — Meminta Tolong (かつどう)",
+      "theme": "Irodori A2-2",
+      "icon": "🌈",
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 4.",
+      "grammar_ids": [
+        "gn5-00047",
+        "gn4-00028",
+        "gn4-00031"
+      ],
+      "vocab_ids": [
+        "vg-n4-00116",
+        "vg-n4-00660",
+        "vg-n5-00049",
+        "vg-n4-00062"
+      ],
+      "lessons": [
+        {
+          "id": "les-curriculum-book-irodori-u31-01",
+          "lesson_number": 1,
+          "title_id": "4 (Eksplorasi Materi & Pola)",
+          "title_jp": "お願いできますか — Meminta Tolong (かつどう)（解説）",
+          "desc_id": "Mempelajari urutan materi pedagogis buku Irodori: Japanese for Life in Japan pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 4.",
+          "grammar_ids": [
+            "gn5-00047",
+            "gn4-00028",
+            "gn4-00031"
+          ],
+          "vocab_ids": [
+            "vg-n4-00116",
+            "vg-n4-00660",
+            "vg-n5-00049",
+            "vg-n4-00062"
+          ],
+          "pedagogical_framework": {
+            "what": {
+              "summary": "Silabus resmi Irodori: Japanese for Life in Japan bab 7.",
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 4.",
+              "targetPatterns": [
+                "gn5-00047",
+                "gn4-00028",
+                "gn4-00031"
+              ],
+              "coreVocabSample": [
+                "vg-n4-00116",
+                "vg-n4-00660",
+                "vg-n5-00049",
+                "vg-n4-00062"
+              ]
+            },
+            "sensei_context": {
+              "sceneIntro": "Kamu sedang mempelajari buku Irodori: Japanese for Life in Japan. Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 4.",
+              "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
+            },
+            "cultural_notes": {
+              "title": "Catatan Budaya & Konteks Pemakaian (Irodori: Japanese for Life in Japan)",
+              "etiquette": "Perhatikan konteks formalitas saat menggunakan pola kalimat ini kepada guru, teman, atau atasan.",
+              "taboos": "Hindari penggunaan pola kasual kepada orang yang baru pertama kali ditemui."
+            }
+          },
+          "dialogue": [
+            {
+              "id": "d1",
+              "speaker": "Sensei",
+              "speakerRole": "Tutor Belajar",
+              "jp": "お願いできますか — Meminta Tolong (かつどう)の勉強を始めましょう！",
+              "furigana": "べんきょうをはじめましょう！",
+              "romaji": "Benkyou wo hajimemashou!",
+              "idText": "Mari kita mulai belajar 4!"
+            }
+          ],
+          "drills": [
+            {
+              "id": "dr1",
+              "type": "multiple-choice",
+              "prompt": "Apa fokus utama pada materi 4 di buku Irodori: Japanese for Life in Japan?",
+              "options": [
+                "Menguasai pola kalimat bab ini dengan pemahaman alami",
+                "Menghafal tanpa memahami konteks",
+                "Mengabaikan intonasi pengucapan",
+                "Hanya membaca terjemahan bahasa Inggris"
+              ],
+              "correctAnswer": "Menguasai pola kalimat bab ini dengan pemahaman alami",
+              "explanation": "Setiap bab dirancang untuk memperkuat kemampuan komunikasi fungsional pembelajar."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 32,
+      "id": "unit-curriculum-book-irodori-32",
+      "level": "n4",
+      "pt_stage": 3,
+      "title_id": "Irodori A2-2: 4",
+      "title_jp": "お願いできますか — Formalitas Permintaan (りかい)",
+      "theme": "Irodori A2-2",
+      "icon": "🌈",
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 4.",
+      "grammar_ids": [
+        "gn5-00082",
+        "gn5-00083",
+        "gn4-00050"
+      ],
+      "vocab_ids": [
+        "vg-n4-00492",
+        "vg-n4-00501",
+        "vg-n4-00419",
+        "vg-n4-00537"
+      ],
+      "lessons": [
+        {
+          "id": "les-curriculum-book-irodori-u32-01",
+          "lesson_number": 1,
+          "title_id": "4 (Eksplorasi Materi & Pola)",
+          "title_jp": "お願いできますか — Formalitas Permintaan (りかい)（解説）",
+          "desc_id": "Mempelajari urutan materi pedagogis buku Irodori: Japanese for Life in Japan pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 4.",
+          "grammar_ids": [
+            "gn5-00082",
+            "gn5-00083",
+            "gn4-00050"
+          ],
+          "vocab_ids": [
+            "vg-n4-00492",
+            "vg-n4-00501",
+            "vg-n4-00419",
+            "vg-n4-00537"
+          ],
+          "pedagogical_framework": {
+            "what": {
+              "summary": "Silabus resmi Irodori: Japanese for Life in Japan bab 8.",
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 4.",
+              "targetPatterns": [
+                "gn5-00082",
+                "gn5-00083",
+                "gn4-00050"
+              ],
+              "coreVocabSample": [
+                "vg-n4-00492",
+                "vg-n4-00501",
+                "vg-n4-00419",
+                "vg-n4-00537"
+              ]
+            },
+            "sensei_context": {
+              "sceneIntro": "Kamu sedang mempelajari buku Irodori: Japanese for Life in Japan. Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 4.",
+              "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
+            },
+            "cultural_notes": {
+              "title": "Catatan Budaya & Konteks Pemakaian (Irodori: Japanese for Life in Japan)",
+              "etiquette": "Perhatikan konteks formalitas saat menggunakan pola kalimat ini kepada guru, teman, atau atasan.",
+              "taboos": "Hindari penggunaan pola kasual kepada orang yang baru pertama kali ditemui."
+            }
+          },
+          "dialogue": [
+            {
+              "id": "d1",
+              "speaker": "Sensei",
+              "speakerRole": "Tutor Belajar",
+              "jp": "お願いできますか — Formalitas Permintaan (りかい)の勉強を始めましょう！",
+              "furigana": "べんきょうをはじめましょう！",
+              "romaji": "Benkyou wo hajimemashou!",
+              "idText": "Mari kita mulai belajar 4!"
+            }
+          ],
+          "drills": [
+            {
+              "id": "dr1",
+              "type": "multiple-choice",
+              "prompt": "Apa fokus utama pada materi 4 di buku Irodori: Japanese for Life in Japan?",
+              "options": [
+                "Menguasai pola kalimat bab ini dengan pemahaman alami",
+                "Menghafal tanpa memahami konteks",
+                "Mengabaikan intonasi pengucapan",
+                "Hanya membaca terjemahan bahasa Inggris"
+              ],
+              "correctAnswer": "Menguasai pola kalimat bab ini dengan pemahaman alami",
+              "explanation": "Setiap bab dirancang untuk memperkuat kemampuan komunikasi fungsional pembelajar."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 33,
+      "id": "unit-curriculum-book-irodori-33",
+      "level": "n4",
+      "pt_stage": 4,
+      "title_id": "Irodori A2-2: 5",
+      "title_jp": "もし〜だったら — Kondisi dan Hipotesis (かつどう)",
+      "theme": "Irodori A2-2",
+      "icon": "🌈",
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 5.",
+      "grammar_ids": [
+        "gn4-00048",
+        "gn5-00023",
+        "gn5-00022",
+        "gn4-00046",
+        "gn4-00024"
+      ],
+      "vocab_ids": [
+        "vg-n4-00032",
+        "vg-n4-00336",
+        "vg-n4-00338",
+        "vg-n4-00359"
+      ],
+      "lessons": [
+        {
+          "id": "les-curriculum-book-irodori-u33-01",
+          "lesson_number": 1,
+          "title_id": "5 (Eksplorasi Materi & Pola)",
+          "title_jp": "もし〜だったら — Kondisi dan Hipotesis (かつどう)（解説）",
+          "desc_id": "Mempelajari urutan materi pedagogis buku Irodori: Japanese for Life in Japan pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 5.",
+          "grammar_ids": [
+            "gn4-00048",
+            "gn5-00023",
+            "gn5-00022",
+            "gn4-00046",
+            "gn4-00024"
+          ],
+          "vocab_ids": [
+            "vg-n4-00032",
+            "vg-n4-00336",
+            "vg-n4-00338",
+            "vg-n4-00359"
+          ],
+          "pedagogical_framework": {
+            "what": {
+              "summary": "Silabus resmi Irodori: Japanese for Life in Japan bab 9.",
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 5.",
+              "targetPatterns": [
+                "gn4-00048",
+                "gn5-00023",
+                "gn5-00022",
+                "gn4-00046",
+                "gn4-00024"
+              ],
+              "coreVocabSample": [
+                "vg-n4-00032",
+                "vg-n4-00336",
+                "vg-n4-00338",
+                "vg-n4-00359"
+              ]
+            },
+            "sensei_context": {
+              "sceneIntro": "Kamu sedang mempelajari buku Irodori: Japanese for Life in Japan. Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 5.",
+              "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
+            },
+            "cultural_notes": {
+              "title": "Catatan Budaya & Konteks Pemakaian (Irodori: Japanese for Life in Japan)",
+              "etiquette": "Perhatikan konteks formalitas saat menggunakan pola kalimat ini kepada guru, teman, atau atasan.",
+              "taboos": "Hindari penggunaan pola kasual kepada orang yang baru pertama kali ditemui."
+            }
+          },
+          "dialogue": [
+            {
+              "id": "d1",
+              "speaker": "Sensei",
+              "speakerRole": "Tutor Belajar",
+              "jp": "もし〜だったら — Kondisi dan Hipotesis (かつどう)の勉強を始めましょう！",
+              "furigana": "べんきょうをはじめましょう！",
+              "romaji": "Benkyou wo hajimemashou!",
+              "idText": "Mari kita mulai belajar 5!"
+            }
+          ],
+          "drills": [
+            {
+              "id": "dr1",
+              "type": "multiple-choice",
+              "prompt": "Apa fokus utama pada materi 5 di buku Irodori: Japanese for Life in Japan?",
+              "options": [
+                "Menguasai pola kalimat bab ini dengan pemahaman alami",
+                "Menghafal tanpa memahami konteks",
+                "Mengabaikan intonasi pengucapan",
+                "Hanya membaca terjemahan bahasa Inggris"
+              ],
+              "correctAnswer": "Menguasai pola kalimat bab ini dengan pemahaman alami",
+              "explanation": "Setiap bab dirancang untuk memperkuat kemampuan komunikasi fungsional pembelajar."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 34,
+      "id": "unit-curriculum-book-irodori-34",
+      "level": "n4",
+      "pt_stage": 5,
+      "title_id": "Irodori A2-2: 5",
+      "title_jp": "もし〜だったら — Skenario dan Rencana Darurat (りかい)",
+      "theme": "Irodori A2-2",
+      "icon": "🌈",
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 5.",
+      "grammar_ids": [
+        "gn4-00038",
+        "gn4-00027",
+        "gn4-00024",
+        "gn4-00028"
+      ],
+      "vocab_ids": [
+        "vg-n4-00525",
+        "vg-n4-00038",
+        "vg-n4-00529",
+        "vg-n4-00037"
+      ],
+      "lessons": [
+        {
+          "id": "les-curriculum-book-irodori-u34-01",
+          "lesson_number": 1,
+          "title_id": "5 (Eksplorasi Materi & Pola)",
+          "title_jp": "もし〜だったら — Skenario dan Rencana Darurat (りかい)（解説）",
+          "desc_id": "Mempelajari urutan materi pedagogis buku Irodori: Japanese for Life in Japan pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 5.",
+          "grammar_ids": [
+            "gn4-00038",
+            "gn4-00027",
+            "gn4-00024",
+            "gn4-00028"
+          ],
+          "vocab_ids": [
+            "vg-n4-00525",
+            "vg-n4-00038",
+            "vg-n4-00529",
+            "vg-n4-00037"
+          ],
+          "pedagogical_framework": {
+            "what": {
+              "summary": "Silabus resmi Irodori: Japanese for Life in Japan bab 10.",
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 5.",
+              "targetPatterns": [
+                "gn4-00038",
+                "gn4-00027",
+                "gn4-00024",
+                "gn4-00028"
+              ],
+              "coreVocabSample": [
+                "vg-n4-00525",
+                "vg-n4-00038",
+                "vg-n4-00529",
+                "vg-n4-00037"
+              ]
+            },
+            "sensei_context": {
+              "sceneIntro": "Kamu sedang mempelajari buku Irodori: Japanese for Life in Japan. Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 5.",
+              "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
+            },
+            "cultural_notes": {
+              "title": "Catatan Budaya & Konteks Pemakaian (Irodori: Japanese for Life in Japan)",
+              "etiquette": "Perhatikan konteks formalitas saat menggunakan pola kalimat ini kepada guru, teman, atau atasan.",
+              "taboos": "Hindari penggunaan pola kasual kepada orang yang baru pertama kali ditemui."
+            }
+          },
+          "dialogue": [
+            {
+              "id": "d1",
+              "speaker": "Sensei",
+              "speakerRole": "Tutor Belajar",
+              "jp": "もし〜だったら — Skenario dan Rencana Darurat (りかい)の勉強を始めましょう！",
+              "furigana": "べんきょうをはじめましょう！",
+              "romaji": "Benkyou wo hajimemashou!",
+              "idText": "Mari kita mulai belajar 5!"
+            }
+          ],
+          "drills": [
+            {
+              "id": "dr1",
+              "type": "multiple-choice",
+              "prompt": "Apa fokus utama pada materi 5 di buku Irodori: Japanese for Life in Japan?",
+              "options": [
+                "Menguasai pola kalimat bab ini dengan pemahaman alami",
+                "Menghafal tanpa memahami konteks",
+                "Mengabaikan intonasi pengucapan",
+                "Hanya membaca terjemahan bahasa Inggris"
+              ],
+              "correctAnswer": "Menguasai pola kalimat bab ini dengan pemahaman alami",
+              "explanation": "Setiap bab dirancang untuk memperkuat kemampuan komunikasi fungsional pembelajar."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 35,
+      "id": "unit-curriculum-book-irodori-35",
+      "level": "n4",
+      "pt_stage": 6,
+      "title_id": "Irodori A2-2: 6",
+      "title_jp": "経験がありますか — Pengalaman (かつどう)",
+      "theme": "Irodori A2-2",
+      "icon": "🌈",
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 6.",
+      "grammar_ids": [
+        "gn4-00025",
+        "gn5-00026",
+        "gn4-00028",
+        "gn5-00079"
+      ],
+      "vocab_ids": [
+        "vg-n4-00365",
+        "vg-n4-00357",
+        "vg-n4-00434",
+        "vg-n4-00353"
+      ],
+      "lessons": [
+        {
+          "id": "les-curriculum-book-irodori-u35-01",
+          "lesson_number": 1,
+          "title_id": "6 (Eksplorasi Materi & Pola)",
+          "title_jp": "経験がありますか — Pengalaman (かつどう)（解説）",
+          "desc_id": "Mempelajari urutan materi pedagogis buku Irodori: Japanese for Life in Japan pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 6.",
+          "grammar_ids": [
+            "gn4-00025",
+            "gn5-00026",
+            "gn4-00028",
+            "gn5-00079"
+          ],
+          "vocab_ids": [
+            "vg-n4-00365",
+            "vg-n4-00357",
+            "vg-n4-00434",
+            "vg-n4-00353"
+          ],
+          "pedagogical_framework": {
+            "what": {
+              "summary": "Silabus resmi Irodori: Japanese for Life in Japan bab 11.",
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 6.",
+              "targetPatterns": [
+                "gn4-00025",
+                "gn5-00026",
+                "gn4-00028",
+                "gn5-00079"
+              ],
+              "coreVocabSample": [
+                "vg-n4-00365",
+                "vg-n4-00357",
+                "vg-n4-00434",
+                "vg-n4-00353"
+              ]
+            },
+            "sensei_context": {
+              "sceneIntro": "Kamu sedang mempelajari buku Irodori: Japanese for Life in Japan. Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 6.",
+              "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
+            },
+            "cultural_notes": {
+              "title": "Catatan Budaya & Konteks Pemakaian (Irodori: Japanese for Life in Japan)",
+              "etiquette": "Perhatikan konteks formalitas saat menggunakan pola kalimat ini kepada guru, teman, atau atasan.",
+              "taboos": "Hindari penggunaan pola kasual kepada orang yang baru pertama kali ditemui."
+            }
+          },
+          "dialogue": [
+            {
+              "id": "d1",
+              "speaker": "Sensei",
+              "speakerRole": "Tutor Belajar",
+              "jp": "経験がありますか — Pengalaman (かつどう)の勉強を始めましょう！",
+              "furigana": "べんきょうをはじめましょう！",
+              "romaji": "Benkyou wo hajimemashou!",
+              "idText": "Mari kita mulai belajar 6!"
+            }
+          ],
+          "drills": [
+            {
+              "id": "dr1",
+              "type": "multiple-choice",
+              "prompt": "Apa fokus utama pada materi 6 di buku Irodori: Japanese for Life in Japan?",
+              "options": [
+                "Menguasai pola kalimat bab ini dengan pemahaman alami",
+                "Menghafal tanpa memahami konteks",
+                "Mengabaikan intonasi pengucapan",
+                "Hanya membaca terjemahan bahasa Inggris"
+              ],
+              "correctAnswer": "Menguasai pola kalimat bab ini dengan pemahaman alami",
+              "explanation": "Setiap bab dirancang untuk memperkuat kemampuan komunikasi fungsional pembelajar."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 36,
+      "id": "unit-curriculum-book-irodori-36",
+      "level": "n4",
+      "pt_stage": 1,
+      "title_id": "Irodori A2-2: 6",
+      "title_jp": "経験がありますか — Cerita Pengalaman Lebih Detail (りかい)",
+      "theme": "Irodori A2-2",
+      "icon": "🌈",
+      "can_do_summary": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 6.",
+      "grammar_ids": [
+        "gn4-00092",
+        "gn4-00044",
+        "gn5-00058"
+      ],
+      "vocab_ids": [
+        "vg-n4-00335",
+        "vg-n4-00142",
+        "vg-n4-00144",
+        "vg-n4-00486"
+      ],
+      "lessons": [
+        {
+          "id": "les-curriculum-book-irodori-u36-01",
+          "lesson_number": 1,
+          "title_id": "6 (Eksplorasi Materi & Pola)",
+          "title_jp": "経験がありますか — Cerita Pengalaman Lebih Detail (りかい)（解説）",
+          "desc_id": "Mempelajari urutan materi pedagogis buku Irodori: Japanese for Life in Japan pada bab ini dengan penjelasan bahasa Indonesia orisinal.",
+          "can_do_statement": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 6.",
+          "grammar_ids": [
+            "gn4-00092",
+            "gn4-00044",
+            "gn5-00058"
+          ],
+          "vocab_ids": [
+            "vg-n4-00335",
+            "vg-n4-00142",
+            "vg-n4-00144",
+            "vg-n4-00486"
+          ],
+          "pedagogical_framework": {
+            "what": {
+              "summary": "Silabus resmi Irodori: Japanese for Life in Japan bab 12.",
+              "canDo": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 6.",
+              "targetPatterns": [
+                "gn4-00092",
+                "gn4-00044",
+                "gn5-00058"
+              ],
+              "coreVocabSample": [
+                "vg-n4-00335",
+                "vg-n4-00142",
+                "vg-n4-00144",
+                "vg-n4-00486"
+              ]
+            },
+            "sensei_context": {
+              "sceneIntro": "Kamu sedang mempelajari buku Irodori: Japanese for Life in Japan. Di bab ini kita akan membedah logika penggunaannya agar mudah dipahami penutur bahasa Indonesia.",
+              "dailyMission": "Mampu menguasai pola kalimat dan berkomunikasi aktif mengenai 6.",
+              "whyOrder": "Urutan materi disusun mengikuti alur pedagogis buku referensi asli dengan sentuhan penjelasan kontekstual Nugget Nihongo."
+            },
+            "cultural_notes": {
+              "title": "Catatan Budaya & Konteks Pemakaian (Irodori: Japanese for Life in Japan)",
+              "etiquette": "Perhatikan konteks formalitas saat menggunakan pola kalimat ini kepada guru, teman, atau atasan.",
+              "taboos": "Hindari penggunaan pola kasual kepada orang yang baru pertama kali ditemui."
+            }
+          },
+          "dialogue": [
+            {
+              "id": "d1",
+              "speaker": "Sensei",
+              "speakerRole": "Tutor Belajar",
+              "jp": "経験がありますか — Cerita Pengalaman Lebih Detail (りかい)の勉強を始めましょう！",
+              "furigana": "べんきょうをはじめましょう！",
+              "romaji": "Benkyou wo hajimemashou!",
+              "idText": "Mari kita mulai belajar 6!"
+            }
+          ],
+          "drills": [
+            {
+              "id": "dr1",
+              "type": "multiple-choice",
+              "prompt": "Apa fokus utama pada materi 6 di buku Irodori: Japanese for Life in Japan?",
               "options": [
                 "Menguasai pola kalimat bab ini dengan pemahaman alami",
                 "Menghafal tanpa memahami konteks",

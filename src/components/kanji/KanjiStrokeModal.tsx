@@ -25,49 +25,67 @@ import { MasterKanjiItem, KanjiStrokePaths, getKanjiStrokeData } from '../../lib
 import { voiceManager } from '../../lib/audio/voiceManager';
 import { playBrushSfx, playSuccessSfx, playErrorSfx, playFanfareSfx } from '../../lib/audio/sfx';
 import { findVocabWithExamplesForKanji, NormalizedVocab } from '../../lib/data/dataManager';
+import { useAppStore } from '../../store/useAppStore';
+import { useGardenStore } from '../../lib/garden/gardenStore';
+import { useGamificationStore } from '../../lib/gamification/gamificationStore';
+import { kanjiMasteryStore } from '../../lib/kanji/kanjiMasteryStore';
+import { audioService } from '../../lib/audio/audioService';
 
-// Measure physical stroke length to eliminate dash repetition & glitch on short strokes
+// Ticket T-12: Offscreen SVG measurement singleton & LRU memoization to eliminate DOM layout thrashing
+const pathLengthCache = new Map<string, number>();
+const pathPointsCache = new Map<string, Array<{ x: number; y: number }>>();
+
+let measureSvgSingleton: SVGSVGElement | null = null;
+let offscreenPath: SVGPathElement | null = null;
+
+function getOffscreenMeasureElements(): { svg: SVGSVGElement; path: SVGPathElement } | null {
+  if (typeof document === 'undefined') return null;
+  if (!measureSvgSingleton || !offscreenPath) {
+    measureSvgSingleton = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+    measureSvgSingleton.setAttribute('viewBox', '0 0 109 109');
+    measureSvgSingleton.setAttribute('width', '109');
+    measureSvgSingleton.setAttribute('height', '109');
+    offscreenPath = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+    measureSvgSingleton.appendChild(offscreenPath);
+  }
+  return { svg: measureSvgSingleton, path: offscreenPath };
+}
+
+// Measure physical stroke length with 0 DOM layout thrashing
 function getPathLength(d: string): number {
-  if (typeof document === 'undefined' || !d) return 100;
+  if (!d) return 100;
+  if (pathLengthCache.has(d)) return pathLengthCache.get(d)!;
   try {
-    const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
-    const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
-    path.setAttribute('d', d);
-    svg.appendChild(path);
-    document.body.appendChild(svg);
-    const len = path.getTotalLength();
-    document.body.removeChild(svg);
-    return Math.max(8, Math.ceil(len));
+    const measurer = getOffscreenMeasureElements();
+    if (!measurer) return 100;
+    measurer.path.setAttribute('d', d);
+    const len = measurer.path.getTotalLength();
+    const result = Math.max(8, Math.ceil(len));
+    pathLengthCache.set(d, result);
+    return result;
   } catch {
     return 100;
   }
 }
 
-// Robust, cross-browser path geometry sampling without DOM layout dependency
+// Robust, cross-browser path geometry sampling without per-stroke layout thrashing
 function samplePointsFromPath(d: string, samples = 28): Array<{ x: number; y: number }> {
-  if (typeof document === 'undefined' || !d) return [];
+  if (!d) return [];
+  const cacheKey = `${d}__${samples}`;
+  if (pathPointsCache.has(cacheKey)) return pathPointsCache.get(cacheKey)!;
   try {
-    const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
-    svg.setAttribute('viewBox', '0 0 109 109');
-    svg.setAttribute('width', '109');
-    svg.setAttribute('height', '109');
-    svg.style.position = 'absolute';
-    svg.style.left = '-9999px';
-    svg.style.top = '-9999px';
-    svg.style.visibility = 'hidden';
-    const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
-    path.setAttribute('d', d);
-    svg.appendChild(path);
-    document.body.appendChild(svg);
-    const totalLen = path.getTotalLength();
+    const measurer = getOffscreenMeasureElements();
+    if (!measurer) return [];
+    measurer.path.setAttribute('d', d);
+    const totalLen = measurer.path.getTotalLength();
     const points: Array<{ x: number; y: number }> = [];
     if (totalLen > 0) {
       for (let i = 0; i <= samples; i++) {
-        const pt = path.getPointAtLength((i / samples) * totalLen);
+        const pt = measurer.path.getPointAtLength((i / samples) * totalLen);
         points.push({ x: pt.x, y: pt.y });
       }
     }
-    document.body.removeChild(svg);
+    pathPointsCache.set(cacheKey, points);
     return points;
   } catch (err) {
     console.warn('Path sampling fallback:', err);
@@ -589,6 +607,43 @@ export const KanjiStrokeModal: React.FC<KanjiStrokeModalProps> = ({
         playSuccessSfx();
         playFanfareSfx();
         setPracticeHint('Sempurna! Kamu berhasil menguasai seluruh urutan goresan! 🌸');
+
+        // Pronunciation & Mastery tracking (Ticket T-136, T-137)
+        if (kanji) {
+          audioService.speak(kanji.character);
+          kanjiMasteryStore.recordPractice(kanji.character, 100, true);
+        }
+
+        // Gamification & Garden integration (Ticket T-64)
+        useAppStore.getState().incrementXp(15);
+        useGamificationStore.getState().recordActivity(1, 15);
+        if (kanji) {
+          const char = kanji.character;
+          const reading = kanji.readings?.kunyomi?.[0] || kanji.readings?.onyomi?.[0] || '';
+          const meaning = kanji.meanings?.id?.[0] || kanji.meanings?.en?.[0] || '';
+          const lvl = (kanji.level?.toLowerCase() || 'n5') as any;
+          useGardenStore.getState().seedPlant(char, reading, meaning, lvl);
+          useGardenStore.getState().addWaterDrop(1);
+
+          const cardId = `k-${char}`;
+          if (!useAppStore.getState().cards[cardId]) {
+            useAppStore.getState().setCard(cardId, {
+              card: {
+                due: new Date().toISOString(),
+                stability: 1.0,
+                difficulty: 5.0,
+                elapsed_days: 0,
+                scheduled_days: 1,
+                reps: 1,
+                lapses: 0,
+                state: 1,
+                last_review: new Date().toISOString(),
+              },
+              source: 'kanji_dojo',
+            });
+          }
+        }
+
         if (typeof navigator !== 'undefined' && navigator.vibrate) {
           navigator.vibrate([60, 80, 120]);
         }
@@ -1076,10 +1131,10 @@ export const KanjiStrokeModal: React.FC<KanjiStrokeModalProps> = ({
                     <button
                       onClick={() => voiceManager.speakText(grp.cleanKana)}
                       aria-label={`Dengarkan bacaan ${grp.displayReading}`}
-                      className="p-1.5 rounded-lg text-appText-muted hover:text-accent hover:bg-surface transition-colors active:scale-95"
+                      className="w-10 h-10 min-w-[40px] min-h-[40px] flex items-center justify-center rounded-xl text-appText-muted hover:text-accent hover:bg-surface transition-colors active:scale-95 shrink-0"
                       title="Dengarkan Cara Baca"
                     >
-                      <Volume2 size={15} />
+                      <Volume2 size={16} />
                     </button>
                   </div>
 
@@ -1103,10 +1158,10 @@ export const KanjiStrokeModal: React.FC<KanjiStrokeModalProps> = ({
                             <button
                               onClick={() => voiceManager.speakText(v.word)}
                               aria-label={`Dengarkan kata ${v.word}`}
-                              className="p-1 text-appText-muted hover:text-accent transition-colors active:scale-95 shrink-0"
+                              className="w-10 h-10 min-w-[40px] min-h-[40px] flex items-center justify-center text-appText-muted hover:text-accent rounded-xl hover:bg-amber-500/10 transition-colors active:scale-95 shrink-0"
                               title="Dengarkan Kata"
                             >
-                              <Volume2 size={13} />
+                              <Volume2 size={14} />
                             </button>
                           </div>
 
@@ -1128,10 +1183,10 @@ export const KanjiStrokeModal: React.FC<KanjiStrokeModalProps> = ({
                                     }
                                   }}
                                   aria-label="Dengarkan kalimat"
-                                  className="p-0.5 text-appText-muted hover:text-accent shrink-0 transition-colors active:scale-95 mt-0.5"
+                                  className="w-10 h-10 min-w-[40px] min-h-[40px] flex items-center justify-center text-appText-muted hover:text-accent rounded-xl hover:bg-amber-500/10 shrink-0 transition-colors active:scale-95"
                                   title="Dengarkan Kalimat"
                                 >
-                                  <Volume2 size={12} />
+                                  <Volume2 size={14} />
                                 </button>
                               </div>
                               <p className="text-appText-muted/80 text-[10.5px]">
@@ -1193,9 +1248,9 @@ export const KanjiStrokeModal: React.FC<KanjiStrokeModalProps> = ({
                         <button
                           onClick={() => voiceManager.speakText(v.word)}
                           aria-label={`Dengarkan ${v.word}`}
-                          className="p-1 text-appText-muted hover:text-accent transition-colors active:scale-95 shrink-0"
+                          className="w-10 h-10 min-w-[40px] min-h-[40px] flex items-center justify-center text-appText-muted hover:text-accent rounded-xl hover:bg-amber-500/10 transition-colors active:scale-95 shrink-0"
                         >
-                          <Volume2 size={13} />
+                          <Volume2 size={14} />
                         </button>
                       </div>
                       <p className="text-[11px] text-appText-muted line-clamp-1">
@@ -1209,9 +1264,9 @@ export const KanjiStrokeModal: React.FC<KanjiStrokeModalProps> = ({
                             </span>
                             <button
                               onClick={() => voiceManager.speakText(v.examples[0].jp)}
-                              className="p-0.5 text-appText-muted hover:text-accent shrink-0 transition-colors active:scale-95"
+                              className="w-10 h-10 min-w-[40px] min-h-[40px] flex items-center justify-center text-appText-muted hover:text-accent rounded-xl hover:bg-amber-500/10 shrink-0 transition-colors active:scale-95"
                             >
-                              <Volume2 size={12} />
+                              <Volume2 size={14} />
                             </button>
                           </div>
                           <p className="text-appText-muted/80 text-[10px]">
@@ -1278,7 +1333,7 @@ export const KanjiStrokeModal: React.FC<KanjiStrokeModalProps> = ({
                     <button
                       onClick={() => voiceManager.speakText(cmp.word)}
                       aria-label={`Dengarkan ${cmp.word}`}
-                      className="p-2 text-muted hover:text-theme-primary transition-colors active:scale-95"
+                      className="w-10 h-10 min-w-[40px] min-h-[40px] flex items-center justify-center text-muted hover:text-theme-primary rounded-xl hover:bg-amber-500/10 transition-colors active:scale-95 shrink-0"
                     >
                       <Volume2 size={16} />
                     </button>
