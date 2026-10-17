@@ -1,6 +1,6 @@
-# Master Research Plan v4.0: SSW Vocational Pedagogy & Universal Living Orientation
+# Master Research Plan v4.1: SSW Vocational Pedagogy & Universal Living Orientation (100% Bias-Free)
 
-> **Document Version:** 4.0.0-MODULAR-DOMAIN-ARCHITECTURE  
+> **Document Version:** 4.1.0-BIAS-FREE-AUTHORITATIVE  
 > **Target Branch:** `research/curriculum-sla-matrix` (`nugget-nihongo-research`)  
 > **Repository Domain:** Pure Educational Research, Learning Sciences, Sociolinguistics & Curriculum Synthesis  
 > **Benchmark Reference:** [`Nugget-Nihongo-SSW-Konstruksi`](https://github.com/nuggetenak/Nugget-Nihongo-SSW-Konstruksi) (Forensic Analysis of Strengths, Failures & Gaps)  
@@ -12,19 +12,17 @@
 
 ## Goal Description
 
-The objective of this research plan is to establish the definitive, evidence-based **Landasan Teori, Pedagogi, dan Metodologi Pembelajaran** across Nugget Nihongo.
-
-Following rigorous multi-round red-teaming, the curriculum architecture is cleanly decoupled into **two distinct, non-overlapping domains** perfectly mirroring the statutory framework of the Japanese Government:
+The definitive mission of this research is to establish the theoretical, empirical, and pedagogical foundation for a **Dual-Domain Curriculum Architecture** that is **100% free of sector-bias and construction-centric assumptions**:
 
 ```
 ┌────────────────────────────────────────────────────────────────────────┐
 │                   ARSITEKTUR KURIKULUM NUGGET NIHONGO                  │
 ├────────────────────────────────────────────────────────────────────────┤
-│ 1. RANAH VOKASIONAL SSW (100% SPESIFIK SEKTOR)                         │
+│ 1. RANAH VOKASIONAL SSW (100% SPESIFIK KEJURUAN SEKTOR)                │
 │    Location: corpus/pedagogy/ssw/                                      │
 │    Regulated by: MHLW, MLIT, MAFF, METI, Agency for Cultural Affairs   │
 │    ├── FASE 1: Memaksimalkan Peluang Lulus Ujian CBT Prometric/Pearson │
-│    └── FASE 2: Kesiapan Kerja Genba Vokasional Spesifik Sektor         │
+│    └── FASE 2: Kesiapan Kerja Operasional Spesifik Tempat Kerja Sektor │
 ├────────────────────────────────────────────────────────────────────────┤
 │ 2. RANAH KEHIDUPAN UMUM & ORIENTASI JEPANG (100% UNIVERSAL)            │
 │    Location: corpus/pedagogy/seikatsu/                                 │
@@ -34,43 +32,47 @@ Following rigorous multi-round red-teaming, the curriculum architecture is clean
 └────────────────────────────────────────────────────────────────────────┘
 ```
 
-This clean boundary prevents **scope drift** and eliminates repetitive clutter: the 19 SSW blueprints remain 100% focused on technical vocational competencies, while universal life in Japan is centralized into a single authoritative survival orientation whitepaper.
-
 ---
 
 ## User Review Required
 
 > [!IMPORTANT]
-> **Strict Domain Boundary Enforcement**:
-> 1. **Ranah Vokasional SSW (`corpus/pedagogy/ssw/`)**:
->    - Contains `SSW-MASTER-PEDAGOGICAL-FRAMEWORK.md` and 19 dedicated sector blueprints (`SSW-01` to `SSW-19`).
->    - Every document is strictly confined to:
->      - **Fase 1**: Memaksimalkan peluang kelulusan ujian CBT (dekonstruksi soal Prometric/Pearson, angka kunci, jebakan distraktor, pacing waktu, tanpa klaim palsu 100% lulus).
->      - **Fase 2**: Kesiapan kerja genba teknis (alat kerja nyata, K3 nol-toleransi, hierarki kerja, dialek industri, sertifikasi statuter pasca-kedatangan).
-> 2. **Ranah Kehidupan Umum Seikatsu (`corpus/pedagogy/seikatsu/`)**:
->    - Centralizes all horizontal survival knowledge common to all foreign workers in Japan into [`SEIKATSU-JAPAN-SURVIVAL-FRAMEWORK.md`](file:///c:/Users/Timedoor/Downloads/nugget%20nihonggo%20project/nugget-nihongo-research/corpus/pedagogy/seikatsu/SEIKATSU-JAPAN-SURVIVAL-FRAMEWORK.md):
->      - Slip gaji & potongan pajak/asuransi (*Tedori vs Gakumen*).
->      - Klaim pengembalian dana pensiun Rp 80–150 Juta (*Dattai Ichijikin*).
->      - Panggilan darurat medis & pemadam kebakaran 119.
->      - Navigasi klinik spesialis & apotek (*Monshinhyō*).
->      - Aturan pemilahan sampah kota (*Gomi Bunbetsu*).
->      - Rekening bank Yūcho & remitansi legal (anti-bank gelap).
->      - K3 musim dingin ekstrem (pencegahan gas CO & *akagire*).
->      - Literasi membaca label komposisi makanan halal (*Genzairyō-mei*).
-> 3. **Koreksi Kualifikasi Statuter Pasca-Kedatangan (Bukan Hanya Konstruksi)**:
->    - Setiap sektor memiliki kualifikasi pasca-mendarat yang wajib dipetakan:
->      - *Kaigo*: Pelatihan Asuhan Awal (*Kaigo Shokuin Shoninsha Kenshū*) & sertifikasi hisap lendir (*Kakutan Kyūin*).
->      - *Restoran*: Sertifikasi Pengawas Sanitasi Makanan (*Shokuhin Eisei Sekininsha* / 食品衛生責任者).
->      - *Otomotif*: Sertifikasi K3 Penanganan Listrik Tegangan Rendah EV/Hybrid (*Teiatsu Denki*).
->      - *Transport*: Lisensi Komersial Kelas 2 (*Dai-ni-shu Menkyo*) & Uji Kelayakan *NASVA*.
->      - *Pembersihan*: Sertifikasi pembersih kaca gantung / gondola (*Buranko kōji*).
->      - *Konstruksi/Pabrik*: *Forklift*, *Tamagake*, las, *Kōsho Sagyōsha*.
+> **Pembersihan Menyeluruh dari Asumsi Bias Konstruksi (Anti-Construction Bias Audit)**:
+> 1. **Pembersihan Istilah "Genba" (現場)**:
+>    - Istilah netral universal yang digunakan adalah **Shokuba (職場 - Tempat Kerja)**.
+>    - Di setiap sektor, tempat kerja disebut dengan nama otentiknya:
+>      - *Kaigo*: **Shisetsu (施設 - Fasilitas/Panti)** atau *Kaigo no Ba* (介護の場).
+>      - *Restoran*: **Tenpo (店舗)**, **Chōriba (調理場 - Dapur)**, atau **Hōru (ホール - Area Tamu)**.
+>      - *Hotel*: **Kan-nai (館内)**, **Furonto (フロント)**, atau **Kyakushitsu (客室)**.
+>      - *Pertanian*: **Nōjō (農場 - Ladang/Kebun)** atau **Hatake (畑)**.
+>      - *Manufaktur*: **Kōjō (工場 - Pabrik)**.
+>      - *Konstruksi*: **Genba (現場 - Proyek Lapangan)**.
+> 2. **Metrik & Satuan Pengukuran Spesifik Sektor (Bukan mm vs cm Saja)**:
+>    - *Kaigo*: Suhu tubuh (°C, 1 desimal, batas 37.5°C), tekanan darah (mmHg), volume cairan/urine (mL/cc), sudut elevasi tempat tidur (derajat ° semi-fowler).
+>    - *Pangan*: Suhu pemanasan inti (°C: 75°C/1m, 85°C/90s), berat (g/kg), volume (mL/L), konsentrasi klorin (ppm).
+>    - *Pembersihan Gedung*: Skala pH (asam <6, netral 6–8, alkali >8), rasio pengenceran kimia (1:10, 1:50).
+>    - *Teknik/Konstruksi/Mesin*: Konvensi milimeter (mm), torsi (N·m), tekanan fluida (kPa).
+> 3. **Dua Poros Keselamatan (Bukan Hanya K3 Fisik Pekerja)**:
+>    - **Poros 1 (Keselamatan Diri Pekerja / Rōdō Anzen)**: Pencegahan cedera, kelelahan, dan paparan bahaya.
+>    - **Poros 2 (Keselamatan & Perlindungan Pihak yang Dilayani / Consumer & Patient Safety)**:
+>      - *Kaigo*: Pencegahan tersedak (*goen*), luka tekan (*jokusō*), pencegahan kekerasan lansia (*kōreisha gyakutai bōshi*).
+>      - *Pangan*: Standar HACCP, pencegahan keracunan makanan (*shokuchūdoku*), pencegahan syok alergen.
+>      - *Hotel*: Keselamatan evakuasi tamu & perlindungan privasi data tamu (*kojin jōhō hogo*).
+> 4. **Protokol Intervensi Krisis Seketika (Bukan Hanya Stop Mesin / Sagyō Teishi Ken)**:
+>    - *Kaigo*: Pertolongan pertama tersedak (*Heimlich / Haibu Kōda-hō*), alarm darurat perawat.
+>    - *Restoran*: Intersepsi hidangan ber-alergen di pintu dapur (*Halt Order at the Pass*).
+>    - *Pabrik/Konstruksi*: Hak menghentikan operasi bahaya (*Sagyō Teishi Ken*).
+> 5. **Restrukturisasi Batch Riset yang Murni Ilmiah Berbasis Rumpun Kementerian**:
+>    - **Batch 1 (Layanan Fasilitas & Kesehatan MHLW)**: `SSW-01 Kaigo` & `SSW-02 Building Cleaning` (Murni fasilitas indoor, sanitasi, etika manusia, bebas bias proyek outdoor!).
+>    - **Batch 2 (Rekayasa Teknik & Industri Berat MLIT / METI)**: `SSW-09 Construction` bergabung dengan rumpun aslinya: `SSW-03 Sokeizai`, `SSW-04 Mesin`, `SSW-05 Elektronik`, `SSW-06 Otomotif`, `SSW-07 Perkapalan`.
+>    - **Batch 3 (Pangan & Hospitality MAFF / Kankocho)**: `SSW-15 Restoran`, `SSW-16 Manufaktur Makanan`, `SSW-17 Hotel`.
+>    - **Batch 4 (Bio-Resources, Mobilitas Luar Ruang & Logistik)**: `SSW-10 Pertanian Tanaman`, `SSW-11 Peternakan`, `SSW-12 Perikanan`, `SSW-13 Kehutanan`, `SSW-14 Kayu`, `SSW-18 Transportasi Truk/Bus`, `SSW-19 Kereta Api`, `SSW-08 Penerbangan`.
 
 ---
 
 ## Open Questions
 
-None remaining. All pedagogical priorities, domain boundaries, and sector-specific calibrations have been completely aligned.
+None remaining. All pedagogical priorities, domain boundaries, and anti-bias calibrations have been completely aligned.
 
 ---
 
@@ -90,7 +92,7 @@ flowchart TD
             S_Master["SSW-MASTER-PEDAGOGICAL-FRAMEWORK.md"]
             S_19["19 Sector Blueprints (SSW-01 to SSW-19)"]
             S_Phase1["Fase 1: Maksimalkan Lulus Ujian CBT (Prometric/Pearson)"]
-            S_Phase2["Fase 2: Kesiapan Kerja Genba Vokasional Spesifik Sektor"]
+            S_Phase2["Fase 2: Kesiapan Kerja Operasional Spesifik Sektor"]
             S_Master --> S_19
             S_19 --> S_Phase1
             S_19 --> S_Phase2
@@ -170,9 +172,9 @@ nugget-nihongo-research/
 
 #### Mandatory 6-Chapter Structure per Sector Blueprint:
 
-- **Bab 1: Ekosistem Lapangan & Hierarki Komunikasi Otentik**
-  - Struktur peran industri, figur otoritas (care manager vs chef/tencho vs supervisor pabrik vs nōka petani).
-  - Register bahasa otentik (keigo empati vs calling pesanan dapur vs instruksi presisi tim).
+- **Bab 1: Ekosistem Tempat Kerja & Hierarki Komunikasi Otentik**
+  - Struktur peran industri, figur otoritas (*care manager vs chef/tencho vs supervisor pabrik vs nōka petani*).
+  - Register bahasa otentik (*keigo empati vs calling pesanan dapur vs instruksi presisi tim*).
   - Protokol interaksi wajib: *Hōrensō*, *Fukushō*, penolakan halus *Kotowarikata*, dan mitigasi rasa sungkan (*Anti-Inpei*).
 - **Bab 2: Analisis Kritis Kons & Kegagalan Hafalan Buta**
   - Forensic breakdown kelemahan metode hafalan buta flashcard pada sektor terkait.
@@ -181,7 +183,7 @@ nugget-nihongo-research/
   - Analisis kebutuhan belajar berdasarkan 3 Persona (Ex-Magang vs Fresh LPK vs Jurusan Terkait).
   - Interferensi tata bahasa (Head-Final SOV vs SVO Indonesia, dekoding negasi di ujung kalimat).
   - Jebakan distorsi Katakana & Wasei-Eigo teknis.
-  - Standar ukuran genba (konvensi milimeter mm vs cm, rasio pelarutan mental tanpa kalkulator).
+  - Matriks besaran & satuan pengukuran kritis sektor (suhu/tekanan/derajat di Kaigo, volume/gram/ppm di Pangan, mm/torsi di Teknik).
 - **Bab 4: Arsitektur Kurikulum Fase 1 — Maksimalkan Peluang Lulus Ujian CBT**
   - Jembatan tata bahasa N4/JFT-Basic ke teks teknis.
   - Dekonstruksi pola kalimat soal resmi Prometric/Pearson.
@@ -191,12 +193,12 @@ nugget-nihongo-research/
   - SOP Hari-H Ujian Prometric Anti-Diskualifikasi Check-in.
   - Pemecahan morfem kanji majemuk (*morpheme-first chunking* anti-leech FSRS).
   - Metode pelepasan terjemahan bertahap (*desirable difficulties* anti-ilusi paham).
-- **Bab 5: Arsitektur Kurikulum Fase 2 — Kesiapan Kerja Genba Vokasional**
+- **Bab 5: Arsitektur Kurikulum Fase 2 — Kesiapan Kerja Operasional Spesifik Sektor**
   - Pelatihan adaptasi auditori progresif (*Progressive SNR Audio*: kebisingan pabrik, dapur, suara lemah lansia).
-  - Matriks penyelamat dialek daerah genba (Kansai-ben, Kyushu-ben, Tohoku-ben).
+  - Matriks penyelamat dialek daerah sektor kerja (Kansai-ben, Kyushu-ben, Tohoku-ben).
   - Kinesika & etika non-verbal (kontak mata saat ditegur, derajat membungkuk *ojigi*).
-  - Penjangkaran sensori-kinestetik & onomatopoeia taktil (kunci torsi, uji getar martil *dashin*, kekakuan sendi).
-  - Izin psikologis & hak K3 menghentikan pekerjaan bahaya (*Sagyō Teishi Ken*).
+  - Penjangkaran sensori-kinestetik & onomatopoeia taktil spesifik sektor.
+  - Protokol Intervensi Krisis & Pencegahan Insiden Seketika (*Immediate Crisis Intervention Protocol*).
   - Peta Kualifikasi Statuter Pasca-Kedatangan Spesifik Sektor (*Shokuhin Eisei Sekininsha, Kakutan Kyuin, Teiatsu Denki, Dai-ni-shu, Forklift/Tamagake*).
   - Jembatan promosi karir jangka panjang menuju visa permanen SSW-2 (*Eijūken*).
 - **Bab 6: 4 Modalitas Latihan Otentik, Scaffolding & Taksonomi Remedial**
@@ -212,10 +214,10 @@ nugget-nihongo-research/
 ```mermaid
 flowchart LR
     M["Langkah Awal: Master Framework & Seikatsu Whitepaper<br>• SSW-MASTER-PEDAGOGICAL-FRAMEWORK.md<br>• SEIKATSU-JAPAN-SURVIVAL-FRAMEWORK.md"]
-    B1["Batch 1: Social Infrastructure<br>• SSW-09 Construction<br>• SSW-01 Kaigo<br>• SSW-02 Cleaning"]
-    B2["Batch 2: Manufacturing & Auto<br>• SSW-03 Foundry<br>• SSW-04 Machinery<br>• SSW-05 Electronics<br>• SSW-06 Auto Repair<br>• SSW-07 Shipbuilding"]
-    B3["Batch 3: Food & Hospitality<br>• SSW-15 Food Service<br>• SSW-16 Food Mfg<br>• SSW-17 Hospitality/Hotel"]
-    B4["Batch 4: Primary & Transport<br>• SSW-10 Crop Ag<br>• SSW-11 Livestock<br>• SSW-12 Fisheries<br>• SSW-13 Forestry<br>• SSW-14 Wood<br>• SSW-18 Transport<br>• SSW-19 Railway<br>• SSW-08 Aviation"]
+    B1["Batch 1: MHLW Health & Facility Services<br>• SSW-01 Kaigo<br>• SSW-02 Cleaning"]
+    B2["Batch 2: Engineering & Heavy Industry (MLIT/METI)<br>• SSW-09 Construction<br>• SSW-03 Foundry<br>• SSW-04 Machinery<br>• SSW-05 Electronics<br>• SSW-06 Auto<br>• SSW-07 Shipbuilding"]
+    B3["Batch 3: Food & Hospitality (MAFF/Kankocho)<br>• SSW-15 Food Service<br>• SSW-16 Food Mfg<br>• SSW-17 Hospitality/Hotel"]
+    B4["Batch 4: Bio-Resources & Mobility (MAFF/MLIT)<br>• SSW-10 Crop Ag<br>• SSW-11 Livestock<br>• SSW-12 Fisheries<br>• SSW-13 Forestry<br>• SSW-14 Wood<br>• SSW-18 Transport<br>• SSW-19 Railway<br>• SSW-08 Aviation"]
 
     M --> B1 --> B2 --> B3 --> B4
 ```
@@ -239,3 +241,5 @@ flowchart LR
    - Ensure `SEIKATSU-JAPAN-SURVIVAL-FRAMEWORK.md` contains comprehensive universal life survival instructions.
 2. **Post-Arrival Credential Verification**:
    - Ensure each sector's Bab 5 cites authentic statutory certifications under the respective ministry act (e.g. Food Sanitation Act for Gaishoku, Caregiver Act for Kaigo, Road Transport Vehicle Act for Auto).
+3. **Anti-Bias Verification**:
+   - Ensure Kaigo, Food Service, and Agriculture blueprints use their authentic workplace terms (*Shisetsu, Tenpo, Nōjō*) and do not import construction terminology, roles, or measurement metrics.
