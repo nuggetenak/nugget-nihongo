@@ -300,6 +300,105 @@ if (!masterHas7Clusters) {
   totalErrors++;
 }
 
+// ========================================
+// Pedagogy Deliverables Audit
+// ========================================
+console.log("\n--- Auditing Pedagogy Deliverables (Master Framework, Seikatsu & Batch 1) ---");
+const pedagogyDir = path.join(__dirname, "../corpus/pedagogy");
+const seikatsuFile = path.join(pedagogyDir, "seikatsu/SEIKATSU-JAPAN-SURVIVAL-FRAMEWORK.md");
+const masterFrameworkFile = path.join(pedagogyDir, "SSW-MASTER-PEDAGOGICAL-FRAMEWORK.md");
+const kaigoPedagogyFile = path.join(pedagogyDir, "ssw/SSW-01-KAIGO-PEDAGOGICAL-FOUNDATION.md");
+const cleaningPedagogyFile = path.join(pedagogyDir, "ssw/SSW-02-CLEANING-PEDAGOGICAL-FOUNDATION.md");
+
+const pedFiles = [
+  { name: "SSW-MASTER-PEDAGOGICAL-FRAMEWORK.md", file: masterFrameworkFile },
+  { name: "SEIKATSU-JAPAN-SURVIVAL-FRAMEWORK.md", file: seikatsuFile },
+  { name: "SSW-01-KAIGO-PEDAGOGICAL-FOUNDATION.md", file: kaigoPedagogyFile },
+  { name: "SSW-02-CLEANING-PEDAGOGICAL-FOUNDATION.md", file: cleaningPedagogyFile }
+];
+
+pedFiles.forEach(pf => {
+  if (!fs.existsSync(pf.file)) {
+    console.log(`  ERROR: Missing pedagogy deliverable: ${pf.name}`);
+    totalErrors++;
+    return;
+  }
+  const content = fs.readFileSync(pf.file, "utf8");
+  // Check citation keys validity against master bibliography
+  const citMatches = content.match(/\[(VS|EA|CA|SR|TE|BC|PR|CM|ER|OD|KS|MV|SC)-[0-9]+\]/g) || [];
+  const invalidCits = [];
+  citMatches.forEach(c => {
+    const key = c.replace(/[\[\]]/g, "");
+    if (!validCitations.has(key)) {
+      invalidCits.push(key);
+      totalErrors++;
+    }
+  });
+  if (invalidCits.length > 0) {
+    console.log(`  [${pf.name}] INVALID CITATIONS: ${invalidCits.join(", ")}`);
+  } else {
+    console.log(`  [${pf.name}] Citations verified (${citMatches.length} references, 100% valid)`);
+  }
+});
+
+// Kaigo Pedagogy Checks
+if (fs.existsSync(kaigoPedagogyFile)) {
+  const content = fs.readFileSync(kaigoPedagogyFile, "utf8");
+  const painCount = (content.match(/\d+\.\s+[^\n]+->/g) || []).length;
+  if (painCount < 42) {
+    console.log(`  ERROR: Kaigo Pedagogy has ${painCount} onomatopoeia items (Needs 42)`);
+    totalErrors++;
+  }
+  const has7Clusters = [1,2,3,4,5,6,7].every(k => content.includes(`Klaster ${k}:`));
+  if (!has7Clusters) {
+    console.log("  ERROR: Kaigo Pedagogy missing one or more of the 7 physiological trauma clusters!");
+    totalErrors++;
+  }
+  if (!content.includes("SBAR") || !content.includes("JNIOSH 2020 [VS-39]")) {
+    console.log("  ERROR: Kaigo Pedagogy missing SBAR or JNIOSH 2020 [VS-39]!");
+    totalErrors++;
+  }
+  if (content.includes("Pronovost")) {
+    console.log("  ERROR: Kaigo Pedagogy contains forbidden Pronovost!");
+    totalErrors++;
+  }
+  if (!content.includes("Nurjaleka 2022 [VS-35]")) {
+    console.log("  ERROR: Kaigo Pedagogy missing Nurjaleka 2022 [VS-35]!");
+    totalErrors++;
+  }
+}
+
+// Cleaning Pedagogy Checks
+if (fs.existsSync(cleaningPedagogyFile)) {
+  const content = fs.readFileSync(cleaningPedagogyFile, "utf8");
+  const requiredKeys = ["VS-01", "VS-02", "VS-09", "VS-10", "VS-31", "VS-33", "VS-39", "EA-25"];
+  requiredKeys.forEach(k => {
+    if (!content.includes(k)) {
+      console.log(`  ERROR: Cleaning Pedagogy missing required key [${k}]!`);
+      totalErrors++;
+    }
+  });
+  if (!content.includes("Pearson VUE") || !content.includes("10 Maret 2025")) {
+    console.log("  ERROR: Cleaning Pedagogy missing Pearson VUE 2025 CBT specification!");
+    totalErrors++;
+  }
+}
+
+// Seikatsu Checks
+if (fs.existsSync(seikatsuFile)) {
+  const content = fs.readFileSync(seikatsuFile, "utf8");
+  const areas = [
+    "Slip Gaji", "Dattai Ichijikin", "119", "Monshinhyō", "Gomi Bunbetsu",
+    "Yūcho", "Tōyu Sutōbu", "Halal", "Hotline"
+  ];
+  areas.forEach(a => {
+    if (!content.includes(a)) {
+      console.log(`  ERROR: Seikatsu Framework missing area: ${a}`);
+      totalErrors++;
+    }
+  });
+}
+
 console.log(`\n========================================`);
 console.log(`Audit completed. Total errors detected: ${totalErrors}`);
 console.log(`========================================`);
