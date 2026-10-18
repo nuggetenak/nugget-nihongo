@@ -317,6 +317,17 @@ const pedFiles = [
   { name: "SSW-02-CLEANING-PEDAGOGICAL-FOUNDATION.md", file: cleaningPedagogyFile }
 ];
 
+// Add any other foundation files present in sswDir
+const pedSswDir = path.join(pedagogyDir, "ssw");
+if (fs.existsSync(pedSswDir)) {
+  fs.readdirSync(pedSswDir).filter(f => f.endsWith(".md")).forEach(f => {
+    const fullPath = path.join(pedSswDir, f);
+    if (!pedFiles.some(p => p.file === fullPath)) {
+      pedFiles.push({ name: f, file: fullPath });
+    }
+  });
+}
+
 pedFiles.forEach(pf => {
   if (!fs.existsSync(pf.file)) {
     console.log(`  ERROR: Missing pedagogy deliverable: ${pf.name}`);
