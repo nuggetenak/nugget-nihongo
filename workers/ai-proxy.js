@@ -27,10 +27,10 @@ const DAILY_LIMIT = 20; // bumped from 15 → 20 with caching reducing actual AP
 
 // ── Model config ────────────────────────────────────────────────
 const GROQ_URL   = 'https://api.groq.com/openai/v1/chat/completions';
-const GEMINI_URL = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent';
+const GEMINI_URL = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent';
 const OR_URL     = 'https://openrouter.ai/api/v1/chat/completions';
 
-const GROQ_MODEL_FAST = 'llama-3.1-8b-instant';
+const GROQ_MODEL_FAST = 'llama-3.3-70b-versatile';
 const GROQ_MODEL_DEEP = 'llama-3.3-70b-versatile';
 
 // OpenRouter free models — tried in order
@@ -326,8 +326,11 @@ async function rawGroq(apiKey, systemPrompt, userPrompt, opts = {}) {
   return { text, provider: 'groq', model, tokens_used: data?.usage?.total_tokens || 0 };
 }
 
-async function rawGemini(apiKey, systemPrompt, userPrompt, opts = {}) {
-  const res = await fetch(`${GEMINI_URL}?key=${apiKey}`, {
+async function rawGemini(apiKey, systemPrompt, userPrompt, opts = {}, modelIndex = 0) {
+  const models = ['gemini-2.0-flash', 'gemini-1.5-flash'];
+  const model = models[modelIndex] || 'gemini-2.0-flash';
+  const url = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${apiKey}`;
+  const res = await fetch(url, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({
@@ -345,11 +348,16 @@ async function rawGemini(apiKey, systemPrompt, userPrompt, opts = {}) {
       ],
     }),
   });
-  if (!res.ok) throw new Error(`Gemini ${res.status}: ${await res.text()}`);
+  if (!res.ok) {
+    if (modelIndex + 1 < models.length) {
+      return rawGemini(apiKey, systemPrompt, userPrompt, opts, modelIndex + 1);
+    }
+    throw new Error(`Gemini ${res.status}: ${await res.text()}`);
+  }
   const data = await res.json();
   const text = data?.candidates?.[0]?.content?.parts?.[0]?.text;
   if (!text) throw new Error('Gemini empty');
-  return { text, provider: 'gemini', model: 'gemini-3.8-flash', tokens_used: data?.usageMetadata?.totalTokenCount || 0 };
+  return { text, provider: 'gemini', model: `gemini/${model}`, tokens_used: data?.usageMetadata?.totalTokenCount || 0 };
 }
 
 async function rawOpenRouter(apiKey, systemPrompt, userPrompt, opts = {}, modelIndex = 0) {
@@ -447,13 +455,16 @@ async function callGroq(apiKey, messages, systemCtx, model, mode) {
 }
 
 // ── Provider: Gemini ──────────────────────────────────────────────
-async function callGemini(apiKey, messages, systemCtx, mode) {
+async function callGemini(apiKey, messages, systemCtx, mode, modelIndex = 0) {
+  const models = ['gemini-2.0-flash', 'gemini-1.5-flash'];
+  const model = models[modelIndex] || 'gemini-2.0-flash';
   const systemPrompt = buildSystemPrompt(mode);
   const contents = messages.map(m => ({
     role: m.role === 'assistant' ? 'model' : 'user',
     parts: [{ text: m.content }],
   }));
-  const res = await fetch(`${GEMINI_URL}?key=${apiKey}`, {
+  const url = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${apiKey}`;
+  const res = await fetch(url, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({
@@ -466,11 +477,16 @@ async function callGemini(apiKey, messages, systemCtx, mode) {
       ],
     }),
   });
-  if (!res.ok) throw new Error(`Gemini ${res.status}: ${await res.text()}`);
+  if (!res.ok) {
+    if (modelIndex + 1 < models.length) {
+      return callGemini(apiKey, messages, systemCtx, mode, modelIndex + 1);
+    }
+    throw new Error(`Gemini ${res.status}: ${await res.text()}`);
+  }
   const data = await res.json();
   const text = data?.candidates?.[0]?.content?.parts?.[0]?.text;
   if (!text) throw new Error('Gemini empty');
-  return { reply: text, model_used: 'gemini-3.8-flash', tokens_used: data?.usageMetadata?.totalTokenCount || 0 };
+  return { reply: text, model_used: `gemini/${model}`, tokens_used: data?.usageMetadata?.totalTokenCount || 0 };
 }
 
 // ── Provider: OpenRouter ──────────────────────────────────────────

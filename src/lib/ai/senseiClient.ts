@@ -200,13 +200,26 @@ export async function sendSenseiMessage(
       }
     }
 
-    const proxyRes = await fetch('/api/chat', {
+    let proxyRes = await fetch('/api/chat', {
       method: 'POST',
       headers: proxyHeaders,
       body: JSON.stringify(proxyPayload),
-    });
+    }).catch(() => null);
 
-    if (proxyRes.ok) {
+    // Fallback to direct worker endpoint if /api/chat is not available or rejected
+    if (!proxyRes || proxyRes.status === 404 || proxyRes.status === 405 || !proxyRes.ok) {
+      const directWorkerUrl = 'https://nugget-nihongo-ai.nugrohopangestu85.workers.dev/chat';
+      const fallbackRes = await fetch(directWorkerUrl, {
+        method: 'POST',
+        headers: proxyHeaders,
+        body: JSON.stringify(proxyPayload),
+      }).catch(() => null);
+      if (fallbackRes && fallbackRes.ok) {
+        proxyRes = fallbackRes;
+      }
+    }
+
+    if (proxyRes && proxyRes.ok) {
       const data = await proxyRes.json();
       if (data && data.reply) {
         return {
@@ -224,11 +237,11 @@ export async function sendSenseiMessage(
 
     // If proxy failed and no BYOK, extract server error message
     if (!byokKey) {
-      const errData = await proxyRes.json().catch(() => ({}));
+      const errData = proxyRes ? await proxyRes.json().catch(() => ({})) : {};
       if (errData?.message) {
         throw new Error(errData.message);
       }
-      throw new Error(`Sensei AI proxy status ${proxyRes.status}`);
+      throw new Error(`Sensei AI proxy status ${proxyRes?.status || 'network_error'}`);
     }
   } catch (proxyErr: any) {
     if (!byokKey) {
