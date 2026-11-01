@@ -1,0 +1,318 @@
+/* Gemini Design Studio Client Styles */
+:root {
+  --gs-bg: #0F1117;
+  --gs-surface: #161922;
+  --gs-surface-2: #1E222D;
+  --gs-surface-3: #282D3C;
+  --gs-border: rgba(255, 255, 255, 0.12);
+  --gs-accent: #F59E0B;
+  --gs-accent-hot: #FBBF24;
+  --gs-text: #F8FAFC;
+  --gs-muted: rgba(241, 245, 249, 0.65);
+}
+
+/* Floating Launcher Pill */
+#gemini-studio-launcher {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 999999;
+  background: linear-gradient(135deg, #1E222D 0%, #161922 100%);
+  color: var(--gs-text);
+  border: 1px solid var(--gs-accent);
+  border-radius: 9999px;
+  padding: 10px 18px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5), 0 0 15px rgba(245, 158, 11, 0.25);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  user-select: none;
+}
+
+#gemini-studio-launcher:hover {
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.6), 0 0 25px rgba(245, 158, 11, 0.4);
+}
+
+#gemini-studio-launcher .pulse-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--gs-accent);
+  box-shadow: 0 0 8px var(--gs-accent);
+  animation: gs-pulse 2s infinite;
+}
+
+@keyframes gs-pulse {
+  0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(245, 158, 11, 0.7); }
+  70% { transform: scale(1.1); box-shadow: 0 0 0 8px rgba(245, 158, 11, 0); }
+  100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(245, 158, 11, 0); }
+}
+
+/* Master Studio Bar (Top) */
+#gemini-studio-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 48px;
+  background: rgba(15, 17, 23, 0.94);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--gs-border);
+  z-index: 999990;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  color: var(--gs-text);
+  font-size: 12px;
+  user-select: none;
+}
+
+.gs-cluster {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.gs-brand {
+  font-weight: 700;
+  font-size: 13px;
+  color: var(--gs-accent);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-right: 8px;
+}
+
+.gs-btn {
+  background: var(--gs-surface-2);
+  color: var(--gs-text);
+  border: 1px solid var(--gs-border);
+  border-radius: 6px;
+  padding: 5px 10px;
+  font-size: 11px;
+  font-weight: 500;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  transition: all 0.15s ease;
+}
+
+.gs-btn:hover {
+  background: var(--gs-surface-3);
+  border-color: rgba(255, 255, 255, 0.25);
+}
+
+.gs-btn.active {
+  background: rgba(245, 158, 11, 0.15);
+  border-color: var(--gs-accent);
+  color: var(--gs-accent);
+}
+
+/* Device Frame Wrapper */
+.gs-device-mode-active body {
+  background-color: #080A0E !important;
+  margin: 0 !important;
+  padding: 58px 0 20px 0 !important;
+  overflow-y: auto !important;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+}
+
+.gs-bezel-wrapper {
+  margin: 20px auto;
+  background: #0F1117;
+  border-radius: 44px;
+  border: 10px solid #282D3C;
+  box-shadow: 0 25px 70px rgba(0, 0, 0, 0.8), 0 0 0 1px rgba(255, 255, 255, 0.05);
+  position: relative;
+  overflow: hidden;
+  transition: width 0.3s cubic-bezier(0.16, 1, 0.3, 1), height 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Simulated Hardware Notch */
+.gs-notch {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 140px;
+  height: 26px;
+  background: #282D3C;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.gs-camera-lens {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #0F1117;
+  margin-left: 20px;
+}
+
+/* iOS Bottom Home Indicator Bar */
+.gs-home-bar {
+  position: absolute;
+  bottom: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120px;
+  height: 4px;
+  border-radius: 2px;
+  background: rgba(255, 255, 255, 0.5);
+  z-index: 9999;
+  pointer-events: none;
+}
+
+/* Alt+Click Highlight */
+[data-ag-selected="true"] {
+  outline: 2px solid var(--gs-accent) !important;
+  outline-offset: 2px !important;
+  box-shadow: 0 0 15px rgba(245, 158, 11, 0.45) !important;
+}
+
+/* Touch Target Failure Indicator */
+[data-ag-touch-fail="true"] {
+  outline: 2px dashed #EF4444 !important;
+  outline-offset: 1px !important;
+}
+
+/* Floating Inspector Drawer */
+#gemini-studio-inspector {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  width: 420px;
+  max-width: calc(100vw - 48px);
+  max-height: 540px;
+  background: var(--gs-surface);
+  border: 1px solid var(--gs-border);
+  border-radius: 14px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.7);
+  z-index: 999995;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  color: var(--gs-text);
+  animation: gs-slide-up 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes gs-slide-up {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.gs-drawer-header {
+  padding: 12px 16px;
+  background: var(--gs-surface-2);
+  border-bottom: 1px solid var(--gs-border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.gs-loc-tag {
+  font-family: monospace;
+  font-size: 11px;
+  color: var(--gs-accent);
+  background: rgba(245, 158, 11, 0.1);
+  padding: 2px 6px;
+  border-radius: 4px;
+  border: 1px solid rgba(245, 158, 11, 0.3);
+}
+
+.gs-drawer-body {
+  padding: 16px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.gs-input-label {
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--gs-muted);
+}
+
+.gs-textarea, .gs-input {
+  width: 100%;
+  background: var(--gs-bg);
+  border: 1px solid var(--gs-border);
+  border-radius: 6px;
+  padding: 8px 10px;
+  color: var(--gs-text);
+  font-family: monospace;
+  font-size: 12px;
+  box-sizing: border-box;
+}
+
+.gs-textarea:focus, .gs-input:focus {
+  outline: none;
+  border-color: var(--gs-accent);
+}
+
+/* Preset Scenarios Drawer */
+#gemini-studio-scenarios {
+  position: fixed;
+  top: 58px;
+  left: 16px;
+  width: 320px;
+  background: var(--gs-surface);
+  border: 1px solid var(--gs-border);
+  border-radius: 12px;
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.6);
+  z-index: 999995;
+  padding: 14px;
+  color: var(--gs-text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 12px;
+}
+
+.gs-scenario-card {
+  background: var(--gs-surface-2);
+  border: 1px solid var(--gs-border);
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.gs-scenario-card:hover {
+  background: var(--gs-surface-3);
+  border-color: var(--gs-accent);
+}
+
+.gs-scenario-card h4 {
+  margin: 0 0 4px 0;
+  font-size: 12px;
+  color: var(--gs-text);
+}
+
+.gs-scenario-card p {
+  margin: 0;
+  font-size: 11px;
+  color: var(--gs-muted);
+}

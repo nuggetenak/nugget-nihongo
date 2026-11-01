@@ -2,7 +2,12 @@ import React from 'react';
 import { usePwaStore } from '../../lib/pwa/pwaStore';
 import { Download, Share, PlusSquare, CheckCircle2, X, Smartphone, Zap, WifiOff } from 'lucide-react';
 
-export const InstallModal: React.FC = () => {
+interface InstallModalProps {
+  isOpen?: boolean;
+  onClose?: () => void;
+}
+
+export const InstallModal: React.FC<InstallModalProps> = ({ isOpen, onClose }) => {
   const {
     showInstallModal,
     setShowInstallModal,
@@ -12,12 +17,21 @@ export const InstallModal: React.FC = () => {
     promptInstall
   } = usePwaStore();
 
-  if (!showInstallModal) return null;
+  const modalOpen = isOpen !== undefined ? isOpen : showInstallModal;
+  const handleClose = () => {
+    if (onClose) {
+      onClose();
+    } else {
+      setShowInstallModal(false);
+    }
+  };
+
+  if (!modalOpen) return null;
 
   const handleInstallClick = async () => {
     const success = await promptInstall();
     if (success) {
-      setShowInstallModal(false);
+      handleClose();
     }
   };
 
@@ -32,7 +46,7 @@ export const InstallModal: React.FC = () => {
 
         {/* Close Button */}
         <button
-          onClick={() => setShowInstallModal(false)}
+          onClick={handleClose}
           className="absolute top-4 right-4 p-2 text-appText-muted hover:text-appText-bright rounded-full hover:bg-surface-2 transition-colors min-h-[44px] min-w-[44px] flex items-center justify-center active:scale-95"
           title="Tutup"
           aria-label="Tutup modal"

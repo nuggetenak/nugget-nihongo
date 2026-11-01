@@ -14,7 +14,12 @@ import { useAuthStore } from '../../lib/supabase/authStore';
 import { useAppStore } from '../../store/useAppStore';
 import { isSupabaseConfigured } from '../../lib/supabase/client';
 
-export const AuthModal: React.FC = () => {
+interface AuthModalProps {
+  isOpen?: boolean;
+  onClose?: () => void;
+}
+
+export const AuthModal: React.FC<AuthModalProps> = ({ isOpen, onClose }) => {
   const {
     isAuthModalOpen,
     closeAuthModal,
@@ -25,17 +30,26 @@ export const AuthModal: React.FC = () => {
   const [loading, setLoading] = useState(false);
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
 
+  const modalOpen = isOpen !== undefined ? isOpen : isAuthModalOpen;
+  const handleClose = () => {
+    if (onClose) {
+      onClose();
+    } else {
+      closeAuthModal();
+    }
+  };
+
   // Lock body scroll when modal is open
   useEffect(() => {
-    if (isAuthModalOpen) {
+    if (modalOpen) {
       document.body.style.overflow = 'hidden';
       return () => {
         document.body.style.overflow = '';
       };
     }
-  }, [isAuthModalOpen]);
+  }, [modalOpen]);
 
-  if (!isAuthModalOpen) return null;
+  if (!modalOpen) return null;
 
   const handleGoogleSignIn = async () => {
     setLoading(true);
@@ -78,7 +92,7 @@ export const AuthModal: React.FC = () => {
 
         {/* Close Button */}
         <button
-          onClick={closeAuthModal}
+          onClick={handleClose}
           className="absolute top-4 right-4 p-2 text-appText-muted hover:text-appText-bright rounded-full hover:bg-surface-2 transition-colors z-10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
           title="Tutup"
           aria-label="Tutup modal login"

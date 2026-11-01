@@ -12,6 +12,8 @@ import { AuthModal } from '../auth/AuthModal';
 import { InstallModal } from '../ui/InstallModal';
 import { StreakBrokenModal } from '../gamification/StreakBrokenModal';
 import { OnboardingModal } from '../onboarding/OnboardingModal';
+import { ModalErrorBoundary } from '../ui/ModalErrorBoundary';
+import { useBodyScrollLock } from '../../hooks/useBodyScrollLock';
 
 // Lazy-loaded heavy modals with chunk splitting (Ticket T-232)
 const KanaChartModal = React.lazy(() => import('../kana/KanaChartModal').then(m => ({ default: m.KanaChartModal })));
@@ -29,6 +31,8 @@ const ReportIssueModal = React.lazy(() => import('../ui/ReportIssueModal').then(
 export const GlobalModalManager: React.FC = () => {
   const { modalStack, closeModal, openModal } = useModalStore();
 
+  useBodyScrollLock(modalStack.length > 0);
+
   if (modalStack.length === 0) return null;
 
   return (
@@ -40,138 +44,171 @@ export const GlobalModalManager: React.FC = () => {
         switch (entry.type) {
           case 'detail':
             return (
-              <DetailModal
-                key={key}
-                item={entry.props?.item || null}
-                type={entry.props?.type || 'vocab'}
-                onClose={closeModal}
-              />
+              <ModalErrorBoundary modalName="Detail Kosakata & Pola" key={key} isOpen={isTop} onClose={closeModal}>
+                <DetailModal
+                  item={entry.props?.item || null}
+                  type={entry.props?.type || 'vocab'}
+                  onClose={closeModal}
+                />
+              </ModalErrorBoundary>
             );
           case 'kana':
             return (
-              <KanaChartModal
-                key={key}
-                isOpen={isTop}
-                onClose={closeModal}
-              />
+              <ModalErrorBoundary modalName="Tabel Kana" key={key} isOpen={isTop} onClose={closeModal}>
+                <KanaChartModal
+                  isOpen={isTop}
+                  onClose={closeModal}
+                />
+              </ModalErrorBoundary>
             );
           case 'conjugation':
             return (
-              <ConjugationModal
-                key={key}
-                isOpen={isTop}
-                onClose={closeModal}
-                initialVerb={entry.props?.initialVerb}
-              />
+              <ModalErrorBoundary modalName="Konjugasi Kata Kerja" key={key} isOpen={isTop} onClose={closeModal}>
+                <ConjugationModal
+                  isOpen={isTop}
+                  onClose={closeModal}
+                  initialVerb={entry.props?.initialVerb}
+                />
+              </ModalErrorBoundary>
             );
           case 'nuance':
             return (
-              <NuanceCompareModal
-                key={key}
-                isOpen={isTop}
-                onClose={closeModal}
-              />
+              <ModalErrorBoundary modalName="Perbandingan Nuansa Tata Bahasa" key={key} isOpen={isTop} onClose={closeModal}>
+                <NuanceCompareModal
+                  isOpen={isTop}
+                  onClose={closeModal}
+                />
+              </ModalErrorBoundary>
             );
           case 'shortcuts':
             return (
-              <KeyboardShortcutsModal
-                key={key}
-                isOpen={isTop}
-                onClose={closeModal}
-              />
+              <ModalErrorBoundary modalName="Pintasan Keyboard" key={key} isOpen={isTop} onClose={closeModal}>
+                <KeyboardShortcutsModal
+                  isOpen={isTop}
+                  onClose={closeModal}
+                />
+              </ModalErrorBoundary>
             );
           case 'patchNotes':
             return (
-              <PatchNotesModal
-                key={key}
-                isOpen={isTop}
-                onClose={closeModal}
-              />
+              <ModalErrorBoundary modalName="Catatan Pembaruan" key={key} isOpen={isTop} onClose={closeModal}>
+                <PatchNotesModal
+                  isOpen={isTop}
+                  onClose={closeModal}
+                />
+              </ModalErrorBoundary>
             );
           case 'kotowaza':
             return (
-              <KotowazaModal
-                key={key}
-                isOpen={isTop}
-                onClose={closeModal}
-              />
+              <ModalErrorBoundary modalName="Galeri Peribahasa Kotowaza" key={key} isOpen={isTop} onClose={closeModal}>
+                <KotowazaModal
+                  isOpen={isTop}
+                  onClose={closeModal}
+                />
+              </ModalErrorBoundary>
             );
           case 'toolbox':
             return (
-              <StudyToolboxModal
-                key={key}
-                isOpen={isTop}
-                onClose={closeModal}
-                onOpenKana={() => openModal('kana')}
-                onOpenConjugation={() => openModal('conjugation')}
-                onOpenNuance={() => openModal('nuance')}
-                onOpenKotowaza={() => openModal('kotowaza')}
-                onOpenCatPlacement={() => openModal('catPlacement')}
-                onOpenKeigo={() => openModal('keigo')}
-                onOpenCounters={() => openModal('counters')}
-                onOpenFeatureGuide={() => openModal('featureGuide')}
-                onOpenShortcuts={() => openModal('shortcuts')}
-              />
+              <ModalErrorBoundary modalName="Kotak Peralatan Belajar" key={key} isOpen={isTop} onClose={closeModal}>
+                <StudyToolboxModal
+                  isOpen={isTop}
+                  onClose={closeModal}
+                  onOpenKana={() => openModal('kana')}
+                  onOpenConjugation={() => openModal('conjugation')}
+                  onOpenNuance={() => openModal('nuance')}
+                  onOpenKotowaza={() => openModal('kotowaza')}
+                  onOpenCatPlacement={() => openModal('catPlacement')}
+                  onOpenKeigo={() => openModal('keigo')}
+                  onOpenCounters={() => openModal('counters')}
+                  onOpenPitch={() => openModal('pitch')}
+                  onOpenFeatureGuide={() => openModal('featureGuide')}
+                  onOpenShortcuts={() => openModal('shortcuts')}
+                />
+              </ModalErrorBoundary>
             );
           case 'catPlacement':
             return (
-              <CatPlacementModal
-                key={key}
-                isOpen={isTop}
-                onClose={closeModal}
-              />
+              <ModalErrorBoundary modalName="Tes Penempatan Adaptif (CAT)" key={key} isOpen={isTop} onClose={closeModal}>
+                <CatPlacementModal
+                  isOpen={isTop}
+                  onClose={closeModal}
+                />
+              </ModalErrorBoundary>
             );
           case 'keigo':
             return (
-              <KeigoTrainerModal
-                key={key}
-                isOpen={isTop}
-                onClose={closeModal}
-              />
+              <ModalErrorBoundary modalName="Pelatih Keigo" key={key} isOpen={isTop} onClose={closeModal}>
+                <KeigoTrainerModal
+                  isOpen={isTop}
+                  onClose={closeModal}
+                />
+              </ModalErrorBoundary>
             );
           case 'counters':
             return (
-              <CounterTrainerModal
-                key={key}
-                isOpen={isTop}
-                onClose={closeModal}
-              />
+              <ModalErrorBoundary modalName="Pelatih Kata Bantu Bilangan" key={key} isOpen={isTop} onClose={closeModal}>
+                <CounterTrainerModal
+                  isOpen={isTop}
+                  onClose={closeModal}
+                />
+              </ModalErrorBoundary>
             );
           case 'pitch':
             return (
-              <PitchAccentModal
-                key={key}
-                isOpen={isTop}
-                onClose={closeModal}
-              />
+              <ModalErrorBoundary modalName="Aksen Nada (Pitch Accent)" key={key} isOpen={isTop} onClose={closeModal}>
+                <PitchAccentModal
+                  isOpen={isTop}
+                  onClose={closeModal}
+                />
+              </ModalErrorBoundary>
             );
           case 'featureGuide':
             return (
-              <FeatureGuideModal
-                key={key}
-                onOpenKana={() => openModal('kana')}
-                onOpenConjugation={() => openModal('conjugation')}
-                onOpenNuance={() => openModal('nuance')}
-                onOpenShortcuts={() => openModal('shortcuts')}
-              />
+              <ModalErrorBoundary modalName="Panduan Fitur" key={key} isOpen={isTop} onClose={closeModal}>
+                <FeatureGuideModal
+                  isOpen={isTop}
+                  onClose={closeModal}
+                  onOpenKana={() => openModal('kana')}
+                  onOpenConjugation={() => openModal('conjugation')}
+                  onOpenNuance={() => openModal('nuance')}
+                  onOpenShortcuts={() => openModal('shortcuts')}
+                />
+              </ModalErrorBoundary>
             );
           case 'reportIssue':
             return (
-              <ReportIssueModal
-                key={key}
-                isOpen={isTop}
-                onClose={closeModal}
-                context={entry.props}
-              />
+              <ModalErrorBoundary modalName="Lapor Kesalahan" key={key} isOpen={isTop} onClose={closeModal}>
+                <ReportIssueModal
+                  isOpen={isTop}
+                  onClose={closeModal}
+                  context={entry.props}
+                />
+              </ModalErrorBoundary>
             );
           case 'auth':
-            return <AuthModal key={key} />;
+            return (
+              <ModalErrorBoundary modalName="Autentikasi Akun" key={key} isOpen={isTop} onClose={closeModal}>
+                <AuthModal isOpen={isTop} onClose={closeModal} />
+              </ModalErrorBoundary>
+            );
           case 'install':
-            return <InstallModal key={key} />;
+            return (
+              <ModalErrorBoundary modalName="Instalasi Aplikasi" key={key} isOpen={isTop} onClose={closeModal}>
+                <InstallModal isOpen={isTop} onClose={closeModal} />
+              </ModalErrorBoundary>
+            );
           case 'streakBroken':
-            return <StreakBrokenModal key={key} />;
+            return (
+              <ModalErrorBoundary modalName="Peringatan Streak" key={key} isOpen={isTop} onClose={closeModal}>
+                <StreakBrokenModal isOpen={isTop} onClose={closeModal} />
+              </ModalErrorBoundary>
+            );
           case 'onboarding':
-            return <OnboardingModal key={key} />;
+            return (
+              <ModalErrorBoundary modalName="Tur Pengenalan" key={key} isOpen={isTop} onClose={closeModal}>
+                <OnboardingModal isOpen={isTop} onClose={closeModal} />
+              </ModalErrorBoundary>
+            );
           default:
             return null;
         }

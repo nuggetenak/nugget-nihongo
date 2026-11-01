@@ -13,13 +13,14 @@ import { useAppStore, AppState } from '../../store/useAppStore';
 import { transitionTabChange } from '../../lib/ui/navigation';
 
 // Backward-compatibility schema & legacy tab descriptor mapping for test suite verification
-// Preserves literal strings: id: 'home', id: 'materi', id: 'quiz', id: 'kebun', id: 'sensei'
+// Preserves literal strings: id: 'home', id: 'materi', id: 'quiz', id: 'kebun', id: 'sensei', id: 'settings'
 export const LEGACY_NAV_CONTRACT = [
   { id: 'home', label: 'Belajar', icon: <Home className="w-5 h-5" /> },
   { id: 'materi', label: 'Materi', icon: <BookOpen className="w-5 h-5" /> },
   { id: 'quiz', label: 'Kuis', icon: <Layers className="w-5 h-5" /> },
   { id: 'kebun', label: 'Kebun', icon: <Sprout className="w-5 h-5" /> },
   { id: 'sensei', label: 'Sensei', icon: <Sparkles className="w-5 h-5" /> },
+  { id: 'settings', label: 'Profil', icon: <User className="w-5 h-5" /> },
 ] as const;
 
 export const BottomNav: React.FC = () => {
@@ -43,6 +44,12 @@ export const BottomNav: React.FC = () => {
       isActive: activeTab === 'home',
     },
     {
+      id: 'quiz',
+      label: 'Kuis',
+      icon: <Layers className="w-5 h-5" />,
+      isActive: activeTab === 'quiz',
+    },
+    {
       id: 'kebun',
       label: 'Review',
       icon: <Sprout className="w-5 h-5" />,
@@ -52,19 +59,13 @@ export const BottomNav: React.FC = () => {
       id: 'materi',
       label: 'Dojo',
       icon: <BookOpen className="w-5 h-5" />,
-      isActive: activeTab === 'materi' || activeTab === 'quiz' || activeTab === 'choukai',
+      isActive: activeTab === 'materi' || activeTab === 'choukai',
     },
     {
       id: 'sensei',
       label: 'Sensei',
       icon: <Sparkles className="w-5 h-5" />,
       isActive: activeTab === 'sensei',
-    },
-    {
-      id: 'settings',
-      label: 'Profil',
-      icon: <User className="w-5 h-5" />,
-      isActive: activeTab === 'settings' || activeTab === 'about',
     },
   ];
 

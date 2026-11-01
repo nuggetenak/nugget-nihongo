@@ -5,6 +5,7 @@
 // ══════════════════════════════════════════════════════════════════
 
 import React, { useState, useEffect, useRef } from 'react';
+import { createPortal } from 'react-dom';
 import {
   Search,
   Flame,
@@ -169,10 +170,10 @@ export const Header: React.FC<HeaderProps> = ({
   return (
     <header
       role="banner"
-      className="sticky top-0 z-30 bg-surface/90 backdrop-blur-md border-b border-accent/15 px-2.5 sm:px-6 lg:px-8 py-2.5 sm:py-3 flex items-center justify-between gap-2 sm:gap-4 max-w-full overflow-hidden"
+      className="sticky top-0 z-30 bg-surface/95 backdrop-blur-md border-b border-accent/15 px-2.5 sm:px-5 lg:px-8 py-2 sm:py-2.5 flex items-center justify-between gap-2 sm:gap-3 max-w-full overflow-hidden"
     >
       {/* Left: Mobile brand & Menu Drawer Toggle */}
-      <div className="flex lg:hidden items-center gap-1.5 shrink-0">
+      <div className="flex lg:hidden items-center gap-1 shrink-0">
         <button
           type="button"
           onClick={onOpenMobileDrawer}
@@ -181,18 +182,6 @@ export const Header: React.FC<HeaderProps> = ({
           aria-label="Buka Menu Navigasi Lengkap"
         >
           <Menu className="w-5 h-5" />
-        </button>
-        <button
-          type="button"
-          onClick={onOpenMobileDrawer}
-          aria-label="Buka Menu Navigasi Samping"
-          className="rounded-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent active:scale-95 transition-transform"
-        >
-          <img
-            src="/icons/icon-192.png"
-            alt="Nugget Nihongo"
-            className="w-7 h-7 rounded-lg object-cover shadow-sm ring-1 ring-amber-500/30"
-          />
         </button>
       </div>
 
@@ -209,29 +198,39 @@ export const Header: React.FC<HeaderProps> = ({
           {currentTrack.full}
         </span>
         <span className="sm:hidden font-mono text-[11px] font-extrabold">{currentTrack.short}</span>
-        <ChevronDown className="w-3.5 h-3.5 opacity-70 shrink-0" />
+        <ChevronDown className="w-3.5 h-3.5 opacity-70 shrink-0 text-accent" />
       </button>
 
-      {/* Search Input Bar with Shortcut Indicator */}
-      <button
-        type="button"
-        onClick={onOpenSearch}
-        aria-label="Buka Pencarian Global (Tekan ⌘K)"
-        className="flex-1 min-w-0 max-w-xs sm:max-w-md relative cursor-pointer text-left block rounded-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
-      >
-        <Search className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-appText-muted absolute left-2.5 sm:left-3 top-1/2 -translate-y-1/2 pointer-events-none" />
-        <input
-          type="text"
-          readOnly
-          tabIndex={-1}
-          placeholder="Cari materi..."
-          aria-hidden="true"
-          className="w-full bg-surface-2 border border-accent/20 rounded-xl pl-7 sm:pl-9 pr-3 sm:pr-12 py-1.5 sm:py-2 text-xs sm:text-sm text-appText-bright placeholder-appText-muted/60 pointer-events-none cursor-pointer transition-all truncate"
-        />
-        <kbd className="hidden sm:inline-block absolute right-2.5 top-1/2 -translate-y-1/2 text-[10px] font-mono bg-surface-3/80 text-appText-muted px-1.5 py-0.5 rounded border border-accent/15">
-          ⌘K
-        </kbd>
-      </button>
+      {/* Search Trigger: Compact Icon on Mobile, Full Bar on sm+ */}
+      <div className="flex-1 min-w-0 flex items-center justify-center sm:justify-start">
+        <button
+          type="button"
+          onClick={onOpenSearch}
+          aria-label="Buka Pencarian Global (Tekan ⌘K)"
+          className="sm:hidden w-9 h-9 rounded-xl bg-surface-2 hover:bg-surface-3 border border-accent/20 text-appText-muted hover:text-accent flex items-center justify-center active:scale-95 transition-all"
+        >
+          <Search className="w-4 h-4" />
+        </button>
+        <button
+          type="button"
+          onClick={onOpenSearch}
+          aria-label="Buka Pencarian Global (Tekan ⌘K)"
+          className="hidden sm:block flex-1 min-w-0 max-w-xs sm:max-w-sm relative cursor-pointer text-left rounded-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+        >
+          <Search className="w-4 h-4 text-appText-muted absolute left-3 top-1/2 -translate-y-1/2 pointer-events-none" />
+          <input
+            type="text"
+            readOnly
+            tabIndex={-1}
+            placeholder="Cari materi... (⌘K)"
+            aria-hidden="true"
+            className="w-full bg-surface-2 border border-accent/20 rounded-xl pl-9 pr-12 py-1.5 sm:py-2 text-xs sm:text-sm text-appText-bright placeholder-appText-muted/60 pointer-events-none cursor-pointer transition-all truncate"
+          />
+          <kbd className="absolute right-2.5 top-1/2 -translate-y-1/2 text-[10px] font-mono bg-surface-3/80 text-appText-muted px-1.5 py-0.5 rounded border border-accent/15">
+            ⌘K
+          </kbd>
+        </button>
+      </div>
 
       {/* Quick Furigana & Romaji Toggles (Desktop only) */}
       <div
@@ -280,12 +279,12 @@ export const Header: React.FC<HeaderProps> = ({
         {/* Offline Status Pill */}
         <OfflineStatusPill />
 
-        {/* Study Toolbox Button (Peralatan Belajar) */}
+        {/* Study Toolbox Button (Desktop/Tablet) */}
         <button
           onClick={onOpenToolbox || openToolbox}
           title="Kotak Peralatan Belajar (Bagan Kana, Konjugasi, Nuansa, CAT Placement)"
           aria-label="Kotak Peralatan Belajar"
-          className="flex items-center gap-1.5 px-2 sm:px-2.5 py-1.5 rounded-full bg-surface-2 hover:bg-surface-3 text-appText-bright border border-accent/20 hover:border-accent text-xs font-bold transition-all shadow-sm active:scale-95 shrink-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent min-h-[36px]"
+          className="hidden md:flex items-center gap-1.5 px-2 sm:px-2.5 py-1.5 rounded-full bg-surface-2 hover:bg-surface-3 text-appText-bright border border-accent/20 hover:border-accent text-xs font-bold transition-all shadow-sm active:scale-95 shrink-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent min-h-[36px]"
         >
           <Wrench className="w-3.5 h-3.5 text-accent" />
           <span className="hidden md:inline">Peralatan</span>
@@ -335,7 +334,7 @@ export const Header: React.FC<HeaderProps> = ({
           </button>
         )}
 
-        {/* Supabase Cloud Sync Status Indicator (Ticket T-106) */}
+        {/* Supabase Cloud Sync Status Indicator */}
         <SyncStatusIndicator />
 
         {/* User Account / Sign In Pill */}
@@ -344,12 +343,12 @@ export const Header: React.FC<HeaderProps> = ({
             onClick={() => setActiveTab('settings')}
             title={`Akun: ${user.email} (Buka Pengaturan Akun)`}
             aria-label={`Akun terhubung: ${user.email}`}
-            className="flex items-center gap-1.5 p-1 sm:px-2.5 sm:py-1.5 rounded-full bg-surface-2 border border-accent/25 text-appText-bright text-xs font-semibold hover:border-accent transition-all max-w-[120px] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent min-h-[36px]"
+            className="flex items-center gap-1 p-1 sm:px-2 sm:py-1 rounded-full bg-surface-2 hover:bg-surface-3 border border-accent/25 text-appText-bright text-xs font-semibold transition-all shrink-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
           >
             <div className="w-6 h-6 rounded-full bg-amber-500/20 text-accent font-bold flex items-center justify-center text-[10px] shrink-0">
               {user.email?.charAt(0).toUpperCase()}
             </div>
-            <span className="truncate hidden sm:inline">
+            <span className="truncate hidden md:inline max-w-[80px]">
               {user.user_metadata?.display_name || user.email?.split('@')[0]}
             </span>
           </button>
@@ -358,7 +357,7 @@ export const Header: React.FC<HeaderProps> = ({
             onClick={() => useAuthStore.getState().openAuthModal('signin')}
             title="Masuk untuk sinkronisasi cloud"
             aria-label="Masuk ke Akun Cloud"
-            className="flex items-center gap-1 px-2 py-1 sm:px-2.5 sm:py-1.5 rounded-full bg-surface-2 hover:bg-surface-3 border border-accent/20 hover:border-accent text-appText-bright text-xs font-semibold transition-all shrink-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent min-h-[36px]"
+            className="flex items-center gap-1 px-2 py-1 sm:px-2.5 sm:py-1.5 rounded-full bg-surface-2 hover:bg-surface-3 border border-accent/20 text-appText-bright text-xs font-semibold transition-all shrink-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
           >
             <UserIcon className="w-3.5 h-3.5 text-accent" />
             <span className="hidden sm:inline">Masuk</span>
@@ -366,13 +365,13 @@ export const Header: React.FC<HeaderProps> = ({
         )}
       </div>
 
-      {/* Feature F2: Active Track Switcher Sheet / Modal (Non-Destructive) */}
-      {isTrackPickerOpen && (
+      {/* Feature F2: Active Track Switcher Sheet / Modal (Mounted cleanly via Portal to document.body) */}
+      {isTrackPickerOpen && typeof document !== 'undefined' && createPortal(
         <div
           role="dialog"
           aria-modal="true"
           aria-label="Pilih Jalur Kurikulum Aktif"
-          className="fixed inset-0 z-50 bg-stone-950/80 backdrop-blur-sm flex items-end sm:items-center justify-center p-0 sm:p-4 animate-in fade-in duration-200"
+          className="fixed inset-0 z-[99999] bg-stone-950/80 backdrop-blur-sm flex items-end sm:items-center justify-center p-0 sm:p-4 animate-in fade-in duration-200"
           onClick={() => setIsTrackPickerOpen(false)}
         >
           <div
@@ -621,7 +620,8 @@ export const Header: React.FC<HeaderProps> = ({
                 })}
             </div>
           </div>
-        </div>
+        </div>,
+        document.body
       )}
     </header>
   );

@@ -144,17 +144,33 @@ const ONBOARDING_SLIDES: OnboardingSlide[] = [
   },
 ];
 
-export const OnboardingModal: React.FC = () => {
+interface OnboardingModalProps {
+  isOpen?: boolean;
+  onClose?: () => void;
+}
+
+export const OnboardingModal: React.FC<OnboardingModalProps> = ({ isOpen, onClose }) => {
   const { isOnboardingOpen, closeOnboarding, setActiveTab } = useAppStore();
   const [currentSlide, setCurrentSlide] = useState(0);
 
+  const modalOpen = isOpen !== undefined ? isOpen : isOnboardingOpen;
+  const handleClose = () => {
+    try { localStorage.setItem('nn_onboarding_completed', 'true'); } catch {}
+    if (onClose) {
+      onClose();
+    } else {
+      closeOnboarding();
+    }
+  };
+
   // Keyboard navigation inside modal (Escape, ArrowLeft, ArrowRight)
   useEffect(() => {
-    if (!isOnboardingOpen) return;
+    if (!modalOpen) return;
 
     const handleKeyDown = (e: KeyboardEvent) => {
       if (e.key === 'Escape') {
-        closeOnboarding();
+        e.preventDefault();
+        handleClose();
       } else if (e.key === 'ArrowRight') {
         setCurrentSlide((prev) => Math.min(ONBOARDING_SLIDES.length - 1, prev + 1));
       } else if (e.key === 'ArrowLeft') {
@@ -164,16 +180,16 @@ export const OnboardingModal: React.FC = () => {
 
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
-  }, [isOnboardingOpen, closeOnboarding]);
+  }, [modalOpen, handleClose]);
 
-  if (!isOnboardingOpen) return null;
+  if (!modalOpen) return null;
 
   const slide = ONBOARDING_SLIDES[currentSlide];
   const isLast = currentSlide === ONBOARDING_SLIDES.length - 1;
 
   const handleNext = () => {
     if (isLast) {
-      closeOnboarding();
+      handleClose();
       setActiveTab('quiz');
     } else {
       setCurrentSlide((prev) => prev + 1);
@@ -205,7 +221,7 @@ export const OnboardingModal: React.FC = () => {
           </div>
 
           <button
-            onClick={closeOnboarding}
+            onClick={handleClose}
             className="p-1.5 rounded-xl text-appText-muted hover:text-appText-bright hover:bg-surface-2 transition-colors"
             aria-label="Tutup tur"
           >

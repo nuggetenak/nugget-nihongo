@@ -3,15 +3,16 @@
 //  Single source of truth across React SPA, Service Worker, and PWA
 // ══════════════════════════════════════════════════════════════════
 
-export const APP_VERSION = 'v20.0.0';
-export const APP_VERSION_NUMBER = '20.0.0';
-export const APP_RELEASE_NAME = 'Grand Clean-Slate Enterprise Production Release: 44 Sprints, 36 Curricula & 200 Indonesian Personas Verification';
-export const APP_BUILD_DATE = '2026-10-17';
+export const APP_VERSION = 'v21.0.0';
+export const APP_VERSION_NUMBER = '21.0.0';
+export const APP_RELEASE_NAME = '5-Pass Enterprise Architecture Overhaul: Design Tokens, Modal Lifecycle, Sensei AI W3C Ruby, BYOK Security & Performance Budget';
+export const APP_BUILD_DATE = '2026-11-01';
 
 export const APP_CHANGELOG_HIGHLIGHTS = [
-  'Grand Clean-Slate Architecture (v20.0.0): Tuntas mengeksekusi 44 Sprint audit forensik dengan zero-regression (100% test passing) dan eliminasi penuh utang teknis.',
-  'Verifikasi 200 Persona Pembelajar Indonesia: Validasi otomatis seluruh perjalanan edukasi 4 pilar (JLPT N5–N1, JFT-Basic A1/A2, 19 Sektor SSW Vokasional, dan Seikatsu Nihongo) dengan kelulusan sempurna 100%.',
-  'Penguatan Mesin Algoritmik (FSRS & CAT): Kalibrasi kurva retensi FSRS dengan pengali Matsunaga 2.3x untuk pembelajar L1 Indonesia, pembatasan kelelahan sirkadian, serta Item Response Theory 3PL konvergen dalam 10-12 soal.',
-  'Pemisahan Chunk & Anggaran Kinerja 500 kB: Pemisahan Rollup manualChunks cermat, pemuatan malas React.lazy() dengan kerangka Suspense bebas layout shift (CLS = 0.00), dan kepatuhan penuh batas 500 kB per berkas JS.',
-  'Kepatuhan Universal Multi-Device (320px–1920px): Desain adaptif bebas bocor horizontal di seluruh ponsel cerdas, tablet, dan desktop dengan bantalan area aman navigasi penuh.',
+  '5-Pass Enterprise Architecture Overhaul (v21.0.0): Tuntas mengeksekusi 5 tahap audit forensik arsitektural (Token Desain, Navigasi & Kuis, Siklus Hidup Modal, Sensei W3C Ruby & Keamanan Proxy, serta Anggaran Kinerja 500 kB).',
+  'Pembersihan Token Desain & Kontras WCAG 2.1 AA: Eliminasi seluruh kode warna hex manual tak standar digantikan semantic design tokens (bg-surface, text-appText, border-accent) dengan mode kontras tinggi sempurna.',
+  'Konsolidasi Modal Global (Single Source of Truth): Sentralisasi 18 modal ke GlobalModalManager dan useModalStore, membasmi duplikasi mount pada App.tsx dan mencegah scroll bleed.',
+  'Sensei AI W3C Semantic Ruby & Proksi Aman: Standardisasi tag <ruby><rt><rp> furigana bebas pergeseran tata letak, perutean AI via Cloudflare Worker serverless /api/chat, dan dukungan Bring-Your-Own-Key (BYOK).',
+  'Modularisasi Pengaturan & Skala Rem Non-Destruktif: Dekonstruksi SettingsPage 1.788 baris menjadi 4 modul domain independen dengan penyesuaian font rem murni ramah aksesibilitas.',
+  'Anggaran Kinerja 500 kB & Streaming iOS Safari: Pemisahan manualChunks Rollup (app-infra), lolos 100% verifikasi batas 500 kB (52 dari 52 berkas), dan penanganan byte-range RFC 7233 di Service Worker.',
 ];

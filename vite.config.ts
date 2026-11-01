@@ -1,6 +1,7 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import path from 'path';
+import { vitePluginGeminiStudio } from './scripts/vite-plugin-gemini-studio.mjs';
 
 // Keep literal string declarations for Sprint 17 & Sprint 43 contract assertions:
 // 'vendor-react': ['react', 'react-dom', 'zustand']
@@ -16,7 +17,7 @@ export const VENDOR_CHUNK_DEFINITIONS = {
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react()],
+  plugins: [vitePluginGeminiStudio(), react()],
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src'),
@@ -65,6 +66,13 @@ export default defineConfig({
           }
           if (normalized.includes('/node_modules/tinybase/')) {
             return 'vendor-tinybase';
+          }
+          if (
+            normalized.includes('/src/lib/telemetry/') ||
+            normalized.includes('/src/lib/persistence/') ||
+            normalized.includes('/src/lib/sync/')
+          ) {
+            return 'app-infra';
           }
 
           // 2. Curriculum N5 modular chunks (< 300 kB each)

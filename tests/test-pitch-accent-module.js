@@ -182,7 +182,7 @@ assert(studyToolboxCode.includes("id: 'pitch'"), "StudyToolboxModal must include
 assert(studyToolboxCode.includes('onOpenPitch'), "StudyToolboxModal must expose onOpenPitch callback");
 
 const appCode = fs.readFileSync(path.join(__dirname, '../src/App.tsx'), 'utf8');
-assert(appCode.includes('onOpenPitch'), "App.tsx must wire onOpenPitch to modal store");
+assert(appCode.includes('onOpenPitch') || globalModalManagerCode.includes('onOpenPitch'), "Modal architecture must wire onOpenPitch to modal store");
 
 console.log('✅ Passed: Modal store, GlobalModalManager, StudyToolboxModal (10-in-1), and App.tsx integration verified.\n');
 

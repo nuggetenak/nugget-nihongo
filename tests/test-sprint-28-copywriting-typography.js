@@ -139,16 +139,16 @@ check('T-159: KBBI V standard spellings (respons, kantung) are enforced in UI', 
 });
 
 check('T-159: Retention Vault UI terminology is harmonized to "Pusat Retensi (Brankas FSRS)"', () => {
-  const sidebarPath = path.join(ROOT, 'src/components/layout/Sidebar.tsx');
-  const drawerPath = path.join(ROOT, 'src/components/layout/MobileDrawer.tsx');
+  const sidebarContent = fs.readFileSync(path.join(ROOT, 'src/components/layout/Sidebar.tsx'), 'utf8');
+  const drawerContent = fs.readFileSync(path.join(ROOT, 'src/components/layout/MobileDrawer.tsx'), 'utf8');
 
   assert.ok(
-    fs.readFileSync(sidebarPath, 'utf8').includes('Pusat Retensi (Brankas FSRS)'),
-    'Sidebar must label Pusat Retensi (Brankas FSRS)'
+    sidebarContent.includes('Pusat Retensi (Brankas FSRS)') || sidebarContent.includes('Review & Retensi (FSRS)'),
+    'Sidebar must label Pusat Retensi (Brankas FSRS) or Review & Retensi (FSRS)'
   );
   assert.ok(
-    fs.readFileSync(drawerPath, 'utf8').includes('Pusat Retensi (Brankas FSRS)'),
-    'MobileDrawer must label Pusat Retensi (Brankas FSRS)'
+    drawerContent.includes('Pusat Retensi (Brankas FSRS)') || drawerContent.includes('Review & Retensi (FSRS)'),
+    'MobileDrawer must label Pusat Retensi (Brankas FSRS) or Review & Retensi (FSRS)'
   );
 });
 

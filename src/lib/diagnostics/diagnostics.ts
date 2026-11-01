@@ -102,7 +102,7 @@ class DiagnosticsManager {
       : 'No diagnostic events recorded.';
 
     return `=== NUGGET NIHONGO DIAGNOSTIC REPORT ===
-Version: v${APP_VERSION}
+Version: ${APP_VERSION}
 Generated: ${now}
 URL: ${currentUrl}
 Viewport: ${viewport} (Screen: ${screenRes})
@@ -155,7 +155,7 @@ ${logEntriesFormatted}
     (window as any).__getNuggetDiagnosticReport = () => this.getReportString();
 
     this.isInitialized = true;
-    this.addLog('info', `Diagnostics engine initialized (v${APP_VERSION})`);
+    this.addLog('info', `Diagnostics engine initialized (${APP_VERSION})`);
   }
 }
 

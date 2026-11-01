@@ -6,15 +6,8 @@ import { BottomNav } from './components/layout/BottomNav';
 import { MobileDrawer } from './components/layout/MobileDrawer';
 import { Toast } from './components/ui/Toast';
 import { SearchPalette } from './components/ui/SearchPalette';
-import { DetailModal } from './components/ui/DetailModal';
-import { InstallModal } from './components/ui/InstallModal';
 import { UpdatePromptToast } from './components/ui/UpdatePromptToast';
 import { OfflineBanner } from './components/ui/OfflineBanner';
-import { StreakBrokenModal } from './components/gamification/StreakBrokenModal';
-import { AuthModal } from './components/auth/AuthModal';
-import { KeyboardShortcutsModal } from './components/ui/KeyboardShortcutsModal';
-import { OnboardingModal } from './components/onboarding/OnboardingModal';
-import { FeatureGuideModal } from './components/ui/FeatureGuideModal';
 
 // Lazy-loaded heavy modal views with isolated chunk splitting (Ticket T-232)
 const KanaChartModal = React.lazy(() => import('./components/kana/KanaChartModal').then(m => ({ default: m.KanaChartModal })));
@@ -66,38 +59,16 @@ export const App: React.FC = () => {
     activeTab,
     setActiveTab,
     checkStreakStatus,
-    isPatchNotesOpen,
-    closePatchNotes,
-    isKotowazaOpen,
-    closeKotowaza,
-    isToolboxOpen,
-    closeToolbox,
-    isCatPlacementOpen,
-    closeCatPlacement,
-    openCatPlacement,
-    openKotowaza,
     openFeatureGuide,
     theme,
-    isKanaOpen,
     openKana,
-    closeKana,
-    isConjugationOpen,
     openConjugation,
-    closeConjugation,
-    isNuanceOpen,
     openNuance,
-    closeNuance,
-    detailModalItem,
-    detailModalType,
-    closeDetailModal,
   } = useAppStore();
   const { initPwa } = usePwaStore();
   const { initAuth } = useAuthStore();
   const [isSearchOpen, setIsSearchOpen] = useState(false);
-  const [isShortcutsOpen, setIsShortcutsOpen] = useState(false);
   const [isMobileDrawerOpen, setIsMobileDrawerOpen] = useState(false);
-  const [selectedModalItem, setSelectedModalItem] = useState<(NormalizedVocab | NormalizedGrammar) | null>(null);
-  const [modalItemType, setModalItemType] = useState<'vocab' | 'grammar'>('vocab');
 
   // Sync dark/light theme to document root
   useEffect(() => {
@@ -117,20 +88,30 @@ export const App: React.FC = () => {
     initPwa();
     initAuth();
     checkStreakStatus();
+    // Initialize persisted non-destructive font scaling (rem percentage scale)
+    if (typeof window !== 'undefined') {
+      const savedTextSize = localStorage.getItem('nn_text_size');
+      if (savedTextSize === 'small') {
+        document.documentElement.style.fontSize = '93.75%';
+        document.documentElement.setAttribute('data-text-size', 'small');
+      } else if (savedTextSize === 'large') {
+        document.documentElement.style.fontSize = '109.375%';
+        document.documentElement.setAttribute('data-text-size', 'large');
+      }
+    }
+    if (typeof window !== 'undefined' && !localStorage.getItem('nn_onboarding_completed')) {
+      useModalStore.getState().openModal('onboarding');
+    }
   }, [initPwa, initAuth, checkStreakStatus]);
 
   // Listen to browser forward/back hash & popstate changes
   useEffect(() => {
-    const handlePopState = () => {
-      // Dismiss top modal if a modal is open in the global stack
-      if (useModalStore.getState().modalStack.length > 0) {
-        useModalStore.getState().closeModal();
-        return;
-      }
+    const syncRouteFromHash = () => {
 
       const fullHash = (window.location.hash || '').replace('#', '');
       const baseTab = fullHash.split('?')[0].toLowerCase();
-      const mapped = baseTab === 'browse' ? 'materi' : (baseTab === 'stats' || baseTab === 'retensi') ? 'kebun' : baseTab;
+      const rootSegment = baseTab.split('/')[0];
+      const mapped = rootSegment === 'browse' ? 'materi' : (rootSegment === 'stats' || rootSegment === 'retensi') ? 'kebun' : (rootSegment === 'arena' || rootSegment === 'kuis') ? 'quiz' : (rootSegment === 'metodologi' || rootSegment === 'method') ? 'methodology' : (rootSegment === 'belajar') ? 'home' : (rootSegment === 'profil' || rootSegment === 'pengaturan' || rootSegment === 'settings') ? 'settings' : (rootSegment === 'tentang') ? 'about' : rootSegment;
 
       if (mapped === 'study') {
         const qIndex = fullHash.indexOf('?');
@@ -155,11 +136,26 @@ export const App: React.FC = () => {
       }
     };
 
+    const handlePopState = () => {
+      // Dismiss top modal if a modal is open in the global stack
+      if (useModalStore.getState().modalStack.length > 0) {
+        useModalStore.getState().closeModal();
+        return;
+      }
+      syncRouteFromHash();
+    };
+
+    const handleHashChange = () => {
+      syncRouteFromHash();
+    };
+
+    // Initial mount sync (does not pop active modals)
+    syncRouteFromHash();
     window.addEventListener('popstate', handlePopState);
-    window.addEventListener('hashchange', handlePopState);
+    window.addEventListener('hashchange', handleHashChange);
     return () => {
       window.removeEventListener('popstate', handlePopState);
-      window.removeEventListener('hashchange', handlePopState);
+      window.removeEventListener('hashchange', handleHashChange);
     };
   }, [setActiveTab]);
 
@@ -187,9 +183,15 @@ export const App: React.FC = () => {
       );
       if (isInput) return;
 
-      if (e.key === '?') {
+      if (e.key === 'Escape' && !e.defaultPrevented) {
+        if (useModalStore.getState().modalStack.length > 0) {
+          e.preventDefault();
+          useModalStore.getState().closeModal();
+          return;
+        }
+      } else if (e.key === '?') {
         e.preventDefault();
-        setIsShortcutsOpen((prev) => !prev);
+        useModalStore.getState().openModal('shortcuts');
       } else if (e.key.toLowerCase() === 'f') {
         const { showFurigana, setShowFurigana, showToast } = useAppStore.getState();
         setShowFurigana(!showFurigana);
@@ -205,8 +207,7 @@ export const App: React.FC = () => {
   }, []);
 
   const handleSelectItemFromSearch = (item: NormalizedVocab | NormalizedGrammar, type: 'vocab' | 'grammar') => {
-    setSelectedModalItem(item);
-    setModalItemType(type);
+    useModalStore.getState().openModal('detail', { item, type });
   };
 
   const renderActiveView = () => {
@@ -259,7 +260,7 @@ export const App: React.FC = () => {
       <div className="flex-1 lg:pl-[260px] flex flex-col min-h-screen pb-[calc(5.5rem+env(safe-area-inset-bottom))] lg:pb-12 w-full max-w-full min-w-0 overflow-x-hidden">
         <Header
           onOpenSearch={() => setIsSearchOpen(true)}
-          onOpenShortcuts={() => setIsShortcutsOpen(true)}
+          onOpenShortcuts={() => useModalStore.getState().openModal('shortcuts')}
           onOpenMobileDrawer={() => setIsMobileDrawerOpen(true)}
         />
         <main
@@ -301,112 +302,16 @@ export const App: React.FC = () => {
         onSelectItem={handleSelectItemFromSearch}
       />
 
-      {/* Global Detail Modal */}
-      <DetailModal
-        item={detailModalItem || selectedModalItem}
-        type={detailModalItem ? detailModalType : modalItemType}
-        onClose={() => {
-          setSelectedModalItem(null);
-          closeDetailModal();
-        }}
-      />
-
-      {/* Keyboard Shortcuts Helper Modal (?) */}
-      <KeyboardShortcutsModal
-        isOpen={isShortcutsOpen}
-        onClose={() => setIsShortcutsOpen(false)}
-      />
-
       {/* PWA Update Prompt Toast (Prompt-based Service Worker Update Flow) */}
       <UpdatePromptToast />
 
-      {/* PWA Add to Home Screen Modal */}
-      <InstallModal />
-
-      {/* Streak Broken Motivational Modal */}
-      <StreakBrokenModal />
-
-      {/* Supabase User Authentication Modal */}
-      <AuthModal />
-
-      {/* Interactive Onboarding Tour Modal */}
-      <OnboardingModal />
-
-      {/* Feature Guide & Directory Modal */}
-      <FeatureGuideModal
-        onOpenKana={openKana}
-        onOpenConjugation={openConjugation}
-        onOpenNuance={openNuance}
-        onOpenShortcuts={() => setIsShortcutsOpen(true)}
-      />
-
-      {/* Interactive Kana Chart Modal */}
-      <ModalErrorBoundary modalName="Tabel Kana" isOpen={isKanaOpen} onClose={closeKana}>
-        <KanaChartModal
-          isOpen={isKanaOpen}
-          onClose={closeKana}
-        />
-      </ModalErrorBoundary>
-
-      {/* Verb Conjugation Matrix Modal */}
-      <ModalErrorBoundary modalName="Konjugasi Kata Kerja" isOpen={isConjugationOpen} onClose={closeConjugation}>
-        <ConjugationModal
-          isOpen={isConjugationOpen}
-          onClose={closeConjugation}
-        />
-      </ModalErrorBoundary>
-
-      {/* Grammar Nuance Compare Modal */}
-      <ModalErrorBoundary modalName="Perbandingan Nuansa Tata Bahasa" isOpen={isNuanceOpen} onClose={closeNuance}>
-        <NuanceCompareModal
-          isOpen={isNuanceOpen}
-          onClose={closeNuance}
-        />
-      </ModalErrorBoundary>
-
-      {/* Historical Patch Notes & Changelog Modal */}
-      <ModalErrorBoundary modalName="Catatan Pembaruan" isOpen={isPatchNotesOpen} onClose={closePatchNotes}>
-        <PatchNotesModal
-          isOpen={isPatchNotesOpen}
-          onClose={closePatchNotes}
-        />
-      </ModalErrorBoundary>
-
-      {/* 52 Traditional Japanese Proverbs & Wisdom Gallery */}
-      <ModalErrorBoundary modalName="Galeri Peribahasa Kotowaza" isOpen={isKotowazaOpen} onClose={closeKotowaza}>
-        <KotowazaModal
-          isOpen={isKotowazaOpen}
-          onClose={closeKotowaza}
-        />
-      </ModalErrorBoundary>
-
-      {/* Unified Kotak Peralatan Belajar (Study Toolbox Modal) */}
-      <ModalErrorBoundary modalName="Kotak Peralatan Belajar" isOpen={isToolboxOpen} onClose={closeToolbox}>
-        <StudyToolboxModal
-          isOpen={isToolboxOpen}
-          onClose={closeToolbox}
-          onOpenKana={openKana}
-          onOpenConjugation={openConjugation}
-          onOpenNuance={openNuance}
-          onOpenKotowaza={openKotowaza}
-          onOpenCatPlacement={openCatPlacement}
-          onOpenKeigo={() => useModalStore.getState().openModal('keigo')}
-          onOpenCounters={() => useModalStore.getState().openModal('counters')}
-          onOpenPitch={() => useModalStore.getState().openModal('pitch')}
-          onOpenFeatureGuide={openFeatureGuide}
-          onOpenShortcuts={() => setIsShortcutsOpen(true)}
-        />
-      </ModalErrorBoundary>
-
-      {/* Adaptive Diagnostic Placement Test (CAT) Modal */}
-      <ModalErrorBoundary modalName="Tes Penempatan Adaptif (CAT)" isOpen={isCatPlacementOpen} onClose={closeCatPlacement}>
-        <CatPlacementModal
-          isOpen={isCatPlacementOpen}
-          onClose={closeCatPlacement}
-        />
-      </ModalErrorBoundary>
-
-      {/* Centralized Global Dynamic Modal Manager */}
+      {/* 
+        Centralized Global Dynamic Modal Manager (ADR-014 / Ticket T-42 / Ticket T-13)
+        Single source of truth for all modal rendering via unified modalStack:
+        DetailModal, KanaChartModal, ConjugationModal, NuanceCompareModal,
+        PatchNotesModal, KotowazaModal, StudyToolboxModal, CatPlacementModal
+        Wired with onOpenPitch for complete pitch accent integration.
+      */}
       <ModalErrorBoundary modalName="Modal Dinamis Global">
         <GlobalModalManager />
       </ModalErrorBoundary>

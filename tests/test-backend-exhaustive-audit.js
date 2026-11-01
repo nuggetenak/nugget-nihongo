@@ -1,6 +1,6 @@
 // ══════════════════════════════════════════════════════════════════
 //  tests/test-backend-exhaustive-audit.js
-//  EXHAUSTIVE BACKEND AUDIT SUITE FOR NUGGET NIHONGO (v20.0.0)
+//  EXHAUSTIVE BACKEND AUDIT SUITE FOR NUGGET NIHONGO (v21.0.0)
 //  Verifies 100% data integrity, referential validity, compiler pipelines,
 //  FSRS math, diagnostic inventories, and state management.
 // ══════════════════════════════════════════════════════════════════

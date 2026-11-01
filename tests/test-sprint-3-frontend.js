@@ -69,11 +69,14 @@ const homeCode = fs.readFileSync(homePagePath, 'utf8');
 const materiCode = fs.readFileSync(materiHubPath, 'utf8');
 const adapterCode = fs.readFileSync(lessonAdapterPath, 'utf8');
 
-it('T-13.1: App.tsx is the sole root mount for portal modals', () => {
-  assert(appCode.includes('<DetailModal'), 'App.tsx must mount DetailModal');
-  assert(appCode.includes('<KanaChartModal'), 'App.tsx must mount KanaChartModal');
-  assert(appCode.includes('<ConjugationModal'), 'App.tsx must mount ConjugationModal');
-  assert(appCode.includes('<NuanceCompareModal'), 'App.tsx must mount NuanceCompareModal');
+it('T-13.1: App.tsx or GlobalModalManager is the sole root mount for portal modals', () => {
+  const gmmPath = path.resolve(__dirname, '../src/components/modals/GlobalModalManager.tsx');
+  const gmmCode = fs.existsSync(gmmPath) ? fs.readFileSync(gmmPath, 'utf8') : '';
+  const rootModalCode = appCode + gmmCode;
+  assert(rootModalCode.includes('<DetailModal'), 'App/GlobalModalManager must mount DetailModal');
+  assert(rootModalCode.includes('<KanaChartModal'), 'App/GlobalModalManager must mount KanaChartModal');
+  assert(rootModalCode.includes('<ConjugationModal'), 'App/GlobalModalManager must mount ConjugationModal');
+  assert(rootModalCode.includes('<NuanceCompareModal'), 'App/GlobalModalManager must mount NuanceCompareModal');
 });
 
 it('T-13.2: HomePage.tsx and MateriHubPage.tsx do NOT duplicate modal mounts', () => {

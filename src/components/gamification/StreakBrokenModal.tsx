@@ -2,15 +2,31 @@ import React from 'react';
 import { ArrowRight, X } from 'lucide-react';
 import { useGamificationStore } from '../../lib/gamification/gamificationStore';
 import { useAppStore } from '../../store/useAppStore';
+import { useModalStore } from '../../store/useModalStore';
 
-export const StreakBrokenModal: React.FC = () => {
+interface StreakBrokenModalProps {
+  isOpen?: boolean;
+  onClose?: () => void;
+}
+
+export const StreakBrokenModal: React.FC<StreakBrokenModalProps> = ({ isOpen, onClose }) => {
   const { isStreakBrokenModalOpen, closeStreakBrokenModal, streakBrokenTip } = useGamificationStore();
   const { setActiveTab } = useAppStore();
 
-  if (!isStreakBrokenModalOpen) return null;
+  const modalOpen = isOpen !== undefined ? isOpen : isStreakBrokenModalOpen;
+  const handleClose = () => {
+    closeStreakBrokenModal();
+    if (onClose) {
+      onClose();
+    } else {
+      useModalStore.getState().closeModal('streakBroken');
+    }
+  };
+
+  if (!modalOpen) return null;
 
   const handleStartStudy = () => {
-    closeStreakBrokenModal();
+    handleClose();
     setActiveTab('quiz');
   };
 
@@ -21,7 +37,7 @@ export const StreakBrokenModal: React.FC = () => {
         onClick={(e) => e.stopPropagation()}
       >
         <button
-          onClick={closeStreakBrokenModal}
+          onClick={handleClose}
           className="absolute top-4 right-4 p-2 text-appText-muted hover:text-appText-bright rounded-full hover:bg-surface-2 transition-colors min-h-[44px] min-w-[44px] flex items-center justify-center active:scale-95"
           title="Tutup"
           aria-label="Tutup modal"

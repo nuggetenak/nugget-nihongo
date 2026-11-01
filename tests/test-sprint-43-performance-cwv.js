@@ -45,15 +45,17 @@ check('vite.config.ts configures vendor-react, vendor-supabase, vendor-icons, an
 // ── T-232: Route & Modal React.lazy() Architecture ─────────────────
 console.log('\n📦 T-232: Route & Modal React.lazy() Architecture with Suspense');
 
-check('App.tsx dynamically imports all heavy modals with React.lazy', () => {
+check('App.tsx and GlobalModalManager dynamically import all heavy modals with React.lazy', () => {
   const app = fs.readFileSync(path.join(ROOT, 'src/App.tsx'), 'utf8');
-  assert(app.includes("const KanaChartModal = React.lazy("), 'KanaChartModal must be lazy loaded');
-  assert(app.includes("const CatPlacementModal = React.lazy("), 'CatPlacementModal must be lazy loaded');
-  assert(app.includes("const KotowazaModal = React.lazy("), 'KotowazaModal must be lazy loaded');
-  assert(app.includes("const ConjugationModal = React.lazy("), 'ConjugationModal must be lazy loaded');
-  assert(app.includes("const NuanceCompareModal = React.lazy("), 'NuanceCompareModal must be lazy loaded');
-  assert(app.includes("const StudyToolboxModal = React.lazy("), 'StudyToolboxModal must be lazy loaded');
-  assert(app.includes("const PatchNotesModal = React.lazy("), 'PatchNotesModal must be lazy loaded');
+  const gmm = fs.readFileSync(path.join(ROOT, 'src/components/modals/GlobalModalManager.tsx'), 'utf8');
+  const modalCode = app + gmm;
+  assert(modalCode.includes("const KanaChartModal = React.lazy("), 'KanaChartModal must be lazy loaded');
+  assert(modalCode.includes("const CatPlacementModal = React.lazy("), 'CatPlacementModal must be lazy loaded');
+  assert(modalCode.includes("const KotowazaModal = React.lazy("), 'KotowazaModal must be lazy loaded');
+  assert(modalCode.includes("const ConjugationModal = React.lazy("), 'ConjugationModal must be lazy loaded');
+  assert(modalCode.includes("const NuanceCompareModal = React.lazy("), 'NuanceCompareModal must be lazy loaded');
+  assert(modalCode.includes("const StudyToolboxModal = React.lazy("), 'StudyToolboxModal must be lazy loaded');
+  assert(modalCode.includes("const PatchNotesModal = React.lazy("), 'PatchNotesModal must be lazy loaded');
 });
 
 check('GlobalModalManager.tsx dynamically imports heavy modals with React.lazy', () => {

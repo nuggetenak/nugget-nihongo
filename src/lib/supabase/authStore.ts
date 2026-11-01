@@ -2,6 +2,7 @@ import { create } from 'zustand';
 import { User, Session } from '@supabase/supabase-js';
 import { supabase } from './client';
 import { syncEngine } from './syncEngine';
+import { useModalStore } from '../../store/useModalStore';
 
 export type SyncStatus = 'idle' | 'syncing' | 'synced' | 'error';
 
@@ -38,8 +39,14 @@ export const useAuthStore = create<AuthState>((set, get) => ({
   lastSyncedAt: null,
   syncErrorMessage: null,
 
-  openAuthModal: (mode = 'signin') => set({ isAuthModalOpen: true, authMode: mode }),
-  closeAuthModal: () => set({ isAuthModalOpen: false }),
+  openAuthModal: (mode = 'signin') => {
+    set({ isAuthModalOpen: true, authMode: mode });
+    useModalStore.getState().openModal('auth');
+  },
+  closeAuthModal: () => {
+    set({ isAuthModalOpen: false });
+    useModalStore.getState().closeModal('auth');
+  },
   setAuthMode: (authMode) => set({ authMode }),
 
   initAuth: async () => {

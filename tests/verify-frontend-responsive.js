@@ -182,15 +182,29 @@ async function runVerification() {
       }
       await page.waitForTimeout(600);
 
+      // 7. Expand Full Curriculum Syllabus Browser
+      const allUnitsBtn = page.locator('button:has-text("Semua Unit")').first();
+      await allUnitsBtn.waitFor({ state: 'visible', timeout: 8000 });
+      await allUnitsBtn.click();
+      await page.waitForTimeout(600);
+
       // 8. Test SSW Vocational Track Switcher
       if (vp.isMobile) {
         // On mobile: Open the mobile track picker bottom sheet
-        const mobileTrackBtn = page.locator('div.block.sm\\:hidden button').first();
+        const mobileTrackBtn = page.locator('button[aria-label="Pilih Jalur Kurikulum"], div.block.sm\\:hidden button').first();
+        await mobileTrackBtn.waitFor({ state: 'visible', timeout: 8000 });
+        await mobileTrackBtn.scrollIntoViewIfNeeded().catch(() => {});
         await mobileTrackBtn.click();
         await page.waitForTimeout(400);
 
         // Click SSW Vokasional tab in bottom sheet
         const sswTab = page.locator('div[role="dialog"] button:has-text("SSW Vokasional")');
+        try {
+          await sswTab.waitFor({ state: 'visible', timeout: 4000 });
+        } catch {
+          await mobileTrackBtn.click().catch(() => {});
+          await sswTab.waitFor({ state: 'visible', timeout: 8000 });
+        }
         await sswTab.click();
         await page.waitForTimeout(400);
 
@@ -236,7 +250,9 @@ async function runVerification() {
 
       // 9. Test Substratum Dialect Switcher
       if (vp.isMobile) {
-        const switchSubBtn = page.locator('div.block.sm\\:hidden button:has-text("🗣️")');
+        const switchSubBtn = page.locator('button[aria-label="Pilih Penyesuaian Bahasa Daerah"], div.block.sm\\:hidden button:has-text("🗣️")').first();
+        await switchSubBtn.waitFor({ state: 'visible', timeout: 5000 });
+        await switchSubBtn.scrollIntoViewIfNeeded().catch(() => {});
         await switchSubBtn.click();
         await page.waitForTimeout(300);
 
@@ -278,12 +294,12 @@ async function runVerification() {
       const settingsHeading = page.locator('h1:has-text("Pengaturan")');
       await settingsHeading.waitFor({ state: 'visible', timeout: 5000 });
 
-      const l1SettingsSection = page.locator('h2:has-text("Penyesuaian Logat"), h2:has-text("Dialek")').first();
+      const l1SettingsSection = page.locator('h2:has-text("Substratum"), h2:has-text("Dialek")').first();
       await l1SettingsSection.waitFor({ state: 'visible', timeout: 5000 });
       pass(`L1 Substratum Dialect settings section verified in SettingsPage`);
 
       // Check that Jawa option is marked active in Settings
-      const jawaActiveBadge = page.locator('button:has-text("Logat Jawa") :text("✓ Aktif")');
+      const jawaActiveBadge = page.locator('button:has-text("Jawa") :text("✓ Aktif")');
       await jawaActiveBadge.waitFor({ state: 'visible', timeout: 3000 });
       pass(`Settings reflects synchronized active L1 Substratum (Jawa)`);
 

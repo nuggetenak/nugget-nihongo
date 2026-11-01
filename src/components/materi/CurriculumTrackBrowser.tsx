@@ -162,6 +162,8 @@ export const CurriculumTrackBrowser: React.FC<CurriculumTrackBrowserProps> = ({
 
   // Seikatsu Living Guide modal state
   const [isSeikatsuModalOpen, setIsSeikatsuModalOpen] = useState(false);
+  // Active Stage Filter for 6-stage roadmap (null = show all)
+  const [activeStageFilter, setActiveStageFilter] = useState<number | null>(null);
 
   // Track definitions metadata
   const jlptTracks: Array<{
@@ -261,6 +263,7 @@ export const CurriculumTrackBrowser: React.FC<CurriculumTrackBrowserProps> = ({
     let isCancelled = false;
     setIsLoading(true);
 
+    setActiveStageFilter(null);
     loadCurriculumTrack(activeTrackId)
       .then((data) => {
         if (!isCancelled) {
@@ -336,7 +339,7 @@ export const CurriculumTrackBrowser: React.FC<CurriculumTrackBrowserProps> = ({
       showToast('Status pelajaran diperbarui', 'ℹ️');
     } else {
       completeLesson(activeTrackId, unitId, lessonId, 100, 25);
-      incrementXp(25);
+      // xp handled by completeLesson
       playSuccessSfx();
       showToast('Pelajaran selesai! +25 XP didapatkan ⭐', '🎉');
     }
@@ -787,37 +790,27 @@ export const CurriculumTrackBrowser: React.FC<CurriculumTrackBrowserProps> = ({
         {/* ─────────────────────────────────────────────────────────────
             3. LOGAT DAERAH SELECTOR BANNER (Sleek Compact Bar)
            ───────────────────────────────────────────────────────────── */}
-        <div className="bg-surface/90 border border-amber-500/30 rounded-xl sm:rounded-2xl p-2.5 sm:p-4 flex items-center justify-between gap-2.5 text-xs">
-          <div className="flex items-center gap-2 sm:gap-3 min-w-0">
-            <span className="text-base sm:text-xl p-1.5 sm:p-2 rounded-lg sm:rounded-xl bg-amber-500/15 text-accent-hot shrink-0">
-              🗣️
-            </span>
-            <div className="min-w-0">
-              <div className="flex items-center gap-1.5">
-                <span className="font-extrabold text-appText-bright truncate text-xs sm:text-sm">
-                  Logat Daerah: {activeSubstratumMeta.label}
-                </span>
-                <span className="px-1.5 py-0.2 rounded-full bg-amber-500/20 text-accent font-bold text-[9px] sm:text-[10px] shrink-0">
-                  Aktif
-                </span>
-              </div>
-              <p className="text-[10px] sm:text-[11px] text-appText-muted mt-0.5 leading-normal truncate hidden sm:block">
-                {activeSubstratumMeta.desc}
-              </p>
+        <div className="flex items-center justify-between px-3.5 py-2 rounded-xl bg-surface-2/60 border border-accent/15 text-xs">
+          <div className="flex items-center gap-2 min-w-0">
+            <span className="text-sm shrink-0">🗣️</span>
+            <div className="flex items-center gap-1.5 truncate text-[11px] sm:text-xs">
+              <span className="text-appText-muted">Logat:</span>
+              <span className="font-extrabold text-appText-bright">{activeSubstratumMeta.label}</span>
+              <span className="px-1.5 py-0.5 rounded text-[9px] font-bold bg-amber-500/15 text-accent shrink-0">
+                Aktif
+              </span>
             </div>
           </div>
 
-          <div className="shrink-0">
-            <button
-              type="button"
-              onClick={() => setIsSubstratumDropdownOpen(true)}
-              className="min-h-[40px] sm:min-h-[44px] px-3 sm:px-3.5 py-1.5 sm:py-2 rounded-xl bg-surface-2 hover:bg-surface-3 border border-accent/25 text-appText-bright font-bold text-xs flex items-center gap-1.5 transition-colors active:scale-95 focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:outline-none"
-              aria-label="Ganti Dialek"
-            >
-              <span>Ganti Dialek</span>
-              <ChevronDown className="w-3.5 h-3.5 text-appText-muted" />
-            </button>
-          </div>
+          <button
+            type="button"
+            onClick={() => setIsSubstratumDropdownOpen(true)}
+            className="min-h-[36px] px-3 py-1 rounded-lg bg-surface hover:bg-surface-3 border border-accent/20 text-[11px] font-bold text-accent hover:text-accent-hot flex items-center gap-1.5 transition-colors active:scale-95 shrink-0"
+            aria-label="Ganti Dialek"
+          >
+            <span>Ganti Dialek</span>
+            <ChevronDown className="w-3 h-3 text-appText-muted" />
+          </button>
         </div>
       </div>
 
@@ -840,26 +833,67 @@ export const CurriculumTrackBrowser: React.FC<CurriculumTrackBrowserProps> = ({
             {[1, 2, 3, 4, 5, 6].map((stageNum) => {
               const info = STAGE_NAMES[stageNum];
               const hasUnitsInTrack = trackData?.units?.some((u) => u.pt_stage === stageNum);
+              const isSelected = activeStageFilter === stageNum;
 
               return (
-                <div
+                <button
+                  type="button"
                   key={stageNum}
-                  className={`p-2.5 rounded-xl border text-left transition-colors min-w-0 ${
-                    hasUnitsInTrack
-                      ? 'bg-surface-2 border-amber-500/40 text-appText-bright shadow-sm'
-                      : 'bg-surface/50 border-accent/10 text-appText-muted/50 opacity-60'
+                  onClick={() => {
+                    const next = isSelected ? null : stageNum;
+                    setActiveStageFilter(next);
+                    if (next && trackData?.units) {
+                      const matched = trackData.units.filter((u) => u.pt_stage === next);
+                      if (matched.length > 0) {
+                        setExpandedUnitIds((prev) => {
+                          const updated = { ...prev };
+                          matched.forEach((u) => { updated[u.id] = true; });
+                          return updated;
+                        });
+                      }
+                    }
+                  }}
+                  className={`p-2.5 rounded-xl border text-left transition-all min-w-0 cursor-pointer active:scale-95 ${
+                    isSelected
+                      ? 'bg-amber-500/20 border-amber-500 text-appText-bright ring-2 ring-amber-500/50 shadow-md'
+                      : hasUnitsInTrack
+                      ? 'bg-surface-2 hover:bg-surface-3 border-amber-500/30 text-appText-bright shadow-xs'
+                      : 'bg-surface/50 hover:bg-surface-2 border-accent/10 text-appText-muted/70'
                   }`}
+                  aria-pressed={isSelected}
+                  title={`Klik untuk fokus ke Tahap ${stageNum}`}
                 >
-                  <div className="flex items-center gap-1 text-[10px] font-mono font-extrabold text-accent">
+                  <div className="flex items-center justify-between gap-1 text-[10px] font-mono font-extrabold text-accent">
                     <span>Tahap {stageNum}</span>
-                    {hasUnitsInTrack && <span className="w-1.5 h-1.5 rounded-full bg-amber-400" />}
+                    {isSelected ? (
+                      <span className="text-[9px] px-1 rounded bg-amber-500 text-stone-950 font-bold">Aktif</span>
+                    ) : hasUnitsInTrack ? (
+                      <span className="w-1.5 h-1.5 rounded-full bg-amber-400" />
+                    ) : null}
                   </div>
-                  <div className="font-bold text-xs truncate mt-0.5 text-appText-bright">{info.title}</div>
+                  <div className="font-bold text-xs truncate mt-0.5 text-appText-bright">
+                    {info.title.replace(/^Tahap \d+:\s*/, '')}
+                  </div>
                   <div className="text-[10px] text-appText-muted line-clamp-1 mt-0.5">{info.desc}</div>
-                </div>
+                </button>
               );
             })}
           </div>
+
+          {activeStageFilter !== null && (
+            <div className="flex items-center justify-between px-3 py-1.5 rounded-xl bg-amber-500/10 border border-amber-500/25 text-xs animate-in fade-in">
+              <span className="text-appText-muted text-[11px]">
+                Menampilkan hanya <strong>Tahap {activeStageFilter}</strong>
+              </span>
+              <button
+                type="button"
+                onClick={() => setActiveStageFilter(null)}
+                className="text-[11px] font-bold text-accent hover:underline cursor-pointer"
+              >
+                Tampilkan Semua Tahap (1–6) ✕
+              </button>
+            </div>
+          )}
         </div>
       )}
 
@@ -1056,13 +1090,16 @@ export const CurriculumTrackBrowser: React.FC<CurriculumTrackBrowserProps> = ({
 
                     {/* L1 Contrastive & Focus Note (if present) */}
                     {unit.l2d_focus_notes && (
-                      <div className="bg-amber-950/20 border border-amber-500/35 rounded-2xl p-4 space-y-1 text-xs">
+                      <div className="bg-amber-950/20 border border-amber-500/35 rounded-2xl p-3 sm:p-4 space-y-1 text-xs">
                         <div className="flex items-center gap-1.5 font-bold text-accent-hot">
                           <AlertTriangle className="w-3.5 h-3.5 shrink-0" />
-                          <span>Tips Penyesuaian Bahasa Indonesia:</span>
+                          <span>Tips Logika Bahasa Indonesia 🇮🇩</span>
+                          <span className="sr-only">Fokus Analisis Kontrasif L1</span>
                         </div>
                         <p className="text-[11px] text-appText leading-relaxed break-words">
-                          {unit.l2d_focus_notes}
+                          {unit.l2d_focus_notes
+                            .replace(/Waspadai\s+contrastive-([a-zA-Z0-9_-]+):/gi, 'Perhatikan perbedaan pola:')
+                            .replace(/contrastive-([a-zA-Z0-9_-]+)/gi, 'perbedaan struktur')}
                         </p>
                       </div>
                     )}
@@ -1134,7 +1171,7 @@ export const CurriculumTrackBrowser: React.FC<CurriculumTrackBrowserProps> = ({
                                   {lesson.title_jp}
                                 </div>
 
-                                <p className="text-xs text-appText leading-relaxed mt-1 break-words">
+                                <p className="text-xs text-appText leading-relaxed mt-1 break-words line-clamp-2">
                                   {lesson.desc_id}
                                 </p>
 
@@ -1184,7 +1221,7 @@ export const CurriculumTrackBrowser: React.FC<CurriculumTrackBrowserProps> = ({
                                       onClick={() => onSelectItem(g, 'grammar')}
                                       className="min-h-[36px] px-2.5 py-1 rounded-lg bg-surface hover:bg-surface-3 border border-accent/20 hover:border-accent text-left text-xs transition-colors flex items-center gap-1.5 group active:scale-95 focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:outline-none"
                                     >
-                                      <span className="font-jp font-bold text-accent group-hover:text-amber-300">
+                                      <span className="font-jp font-extrabold text-amber-400 group-hover:text-amber-200">
                                         {g.pattern}
                                       </span>
                                       <span className="text-[10px] text-appText-muted truncate max-w-[140px]">

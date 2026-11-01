@@ -60,6 +60,7 @@ export const KanaChartModal: React.FC<KanaChartModalProps> = ({ isOpen, onClose 
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
       if (e.key === 'Escape' && isOpen) {
+        e.preventDefault();
         onClose();
         return;
       }

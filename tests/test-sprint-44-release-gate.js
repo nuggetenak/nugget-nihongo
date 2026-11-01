@@ -118,31 +118,35 @@ check('tests/verify-frontend-responsive.js exists and tests 4 viewports', () => 
   assert(code.includes('1440'), 'Must test 1440px Desktop Wide');
 });
 
-// ── T-240: Production Release Certification for v20.0.0 ────────────
-console.log('\n🏆 T-240: Production Release Certification (Clean-Slate v20.0.0)');
+// ── T-240: Production Release Certification for Enterprise Versions ────────────
+console.log('\n🏆 T-240: Production Release Certification (Enterprise Release Gate)');
 
-check('Application version synchronized to v20.0.0 across all 4 system entrypoints', () => {
+check('Application version synchronized across all 4 system entrypoints', () => {
   const pkg = JSON.parse(fs.readFileSync(path.join(ROOT, 'package.json'), 'utf8'));
-  assert.strictEqual(pkg.version, '20.0.0', 'package.json version must be 20.0.0');
+  const curVer = pkg.version;
+  assert(/^\d+\.\d+\.\d+$/.test(curVer), `package.json version (${curVer}) must be valid semver`);
 
   const cfg = fs.readFileSync(path.join(ROOT, 'src/config/version.ts'), 'utf8');
-  assert(cfg.includes("APP_VERSION = 'v20.0.0'"), 'version.ts APP_VERSION must be v20.0.0');
-  assert(cfg.includes("APP_VERSION_NUMBER = '20.0.0'"), 'version.ts APP_VERSION_NUMBER must be 20.0.0');
+  assert(cfg.includes(`APP_VERSION = 'v${curVer}'`), `version.ts APP_VERSION must be v${curVer}`);
+  assert(cfg.includes(`APP_VERSION_NUMBER = '${curVer}'`), `version.ts APP_VERSION_NUMBER must be ${curVer}`);
 
   const vJs = fs.readFileSync(path.join(ROOT, 'public/js/core/version.js'), 'utf8');
-  assert(vJs.includes("window.APP_VERSION = 'v20.0.0'"), 'version.js must declare v20.0.0');
+  assert(vJs.includes(`window.APP_VERSION = 'v${curVer}'`), `version.js must declare v${curVer}`);
 
   const sw = fs.readFileSync(path.join(ROOT, 'public/sw.js'), 'utf8');
-  assert(sw.includes("CACHE = 'nihongo-v20.0.0'"), 'sw.js CACHE must be nihongo-v20.0.0');
+  assert(sw.includes(`CACHE = 'nihongo-v${curVer}'`), `sw.js CACHE must be nihongo-v${curVer}`);
 });
 
-check('patchNotes.ts and CHANGELOG.md document the historic v20.0.0 milestone', () => {
+check('patchNotes.ts and CHANGELOG.md document the historic milestones', () => {
   const pn = fs.readFileSync(path.join(ROOT, 'src/lib/data/patchNotes.ts'), 'utf8');
   assert(pn.includes("version: 'v20.0.0'"), 'patchNotes.ts must contain v20.0.0 entry');
-  assert(pn.includes('Grand Clean-Slate Enterprise Production Release'), 'patchNotes.ts must document release name');
+  assert(pn.includes("version: 'v21.0.0'"), 'patchNotes.ts must contain v21.0.0 entry');
+  assert(pn.includes('Grand Clean-Slate Enterprise Production Release'), 'patchNotes.ts must document v20 release name');
+  assert(pn.includes('5-Pass Enterprise Architecture Overhaul'), 'patchNotes.ts must document v21 release name');
 
   const cl = fs.readFileSync(path.join(ROOT, 'CHANGELOG.md'), 'utf8');
   assert(cl.includes('v20.0.0'), 'CHANGELOG.md must contain v20.0.0 entry');
+  assert(cl.includes('v21.0.0'), 'CHANGELOG.md must contain v21.0.0 entry');
 });
 
 check('vite.config.ts maintains strict 500 kB chunk warning limit and budget auditor script', () => {

@@ -153,20 +153,13 @@ export async function sendSenseiMessage(
   config: SenseiSessionConfig,
   contextCard?: ContextCardPayload
 ): Promise<ChatMessage> {
-  const localKey = typeof window !== 'undefined' ? localStorage.getItem('nn_gemini_api_key') : '';
-  // OpenRouter default key (base64 protected) with Gemini fallback
-  const defaultOpenRouterKey = typeof atob === 'function' ? atob('c2stb3ItdjEtNTBhYjZjODkxZTYyNzhjOGNiZmNiMzQzOGUxZDY2ZGE4ZWZiYTg2NmQ2Y2M5NDJjOGI2OWJiOWNlMzZmNjAwMA==') : '';
-  const apiKey =
+  const localGeminiKey = typeof window !== 'undefined' ? localStorage.getItem('nn_gemini_api_key') : '';
+  const localOpenRouterKey = typeof window !== 'undefined' ? localStorage.getItem('nn_openrouter_api_key') : '';
+  const byokKey =
     config.customApiKey?.trim() ||
-    localKey?.trim() ||
-    defaultOpenRouterKey ||
+    localOpenRouterKey?.trim() ||
+    localGeminiKey?.trim() ||
     '';
-
-  if (!apiKey) {
-    throw new Error(
-      'Kunci API belum disetel. Masukkan OpenRouter API Key atau Gemini API Key di Pengaturan.'
-    );
-  }
 
   const systemInstruction = buildSenseiSystemPrompt(config, contextCard);
 
@@ -179,6 +172,76 @@ export async function sendSenseiMessage(
       level: contextCard.level,
     };
   }
+
+  // ── Route 0 (Default): Secure Worker Proxy (/api/chat) ────────────
+  try {
+    const proxyPayload = {
+      messages: messages.map((m) => ({
+        role: m.role === 'user' ? 'user' : 'assistant',
+        content: m.content,
+      })),
+      context: {
+        level: config.userLevel,
+        mode: config.mode,
+        currentCard: contextCard ? `${contextCard.target} (${contextCard.type})` : undefined,
+        goals: ['jlpt'],
+      },
+      userId: typeof window !== 'undefined' ? localStorage.getItem('nn_user_id') || 'anon' : 'anon',
+    };
+
+    const proxyHeaders: Record<string, string> = {
+      'Content-Type': 'application/json',
+    };
+    if (byokKey) {
+      if (byokKey.startsWith('sk-or-')) {
+        proxyHeaders['Authorization'] = `Bearer ${byokKey}`;
+      } else {
+        proxyHeaders['x-goog-api-key'] = byokKey;
+      }
+    }
+
+    const proxyRes = await fetch('/api/chat', {
+      method: 'POST',
+      headers: proxyHeaders,
+      body: JSON.stringify(proxyPayload),
+    });
+
+    if (proxyRes.ok) {
+      const data = await proxyRes.json();
+      if (data && data.reply) {
+        return {
+          id: `msg-${Date.now()}-${Math.random().toString(36).slice(2, 7)}`,
+          role: 'model',
+          content: data.reply.trim(),
+          timestamp: Date.now(),
+          modelUsed: data.model_used || 'ai-proxy',
+          tokensUsed: data.tokens_used || 0,
+          contextCard,
+          suggestedAction,
+        };
+      }
+    }
+
+    // If proxy failed and no BYOK, extract server error message
+    if (!byokKey) {
+      const errData = await proxyRes.json().catch(() => ({}));
+      if (errData?.message) {
+        throw new Error(errData.message);
+      }
+      throw new Error(`Sensei AI proxy status ${proxyRes.status}`);
+    }
+  } catch (proxyErr: any) {
+    if (!byokKey) {
+      throw new Error(
+        proxyErr?.message && !proxyErr.message.includes('fetch')
+          ? proxyErr.message
+          : 'Layanan Sensei AI sedang tidak dapat dijangkau. Masukkan API Key pribadi (BYOK) di Pengaturan untuk akses mandiri.'
+      );
+    }
+    console.warn('[SenseiClient] Worker proxy fallback to direct client BYOK call:', proxyErr);
+  }
+
+  const apiKey = byokKey;
 
   // ── Route 1: OpenRouter API (sk-or-...) ───────────────────────────
   if (apiKey.startsWith('sk-or-')) {
@@ -321,16 +384,19 @@ export async function streamSenseiResponse(
   onChunk: (chunk: string) => void,
   contextCard?: ContextCardPayload
 ): Promise<string> {
-  const localKey = typeof window !== 'undefined' ? localStorage.getItem('nn_gemini_api_key') : '';
-  const defaultOpenRouterKey = typeof atob === 'function' ? atob('c2stb3ItdjEtNTBhYjZjODkxZTYyNzhjOGNiZmNiMzQzOGUxZDY2ZGE4ZWZiYTg2NmQ2Y2M5NDJjOGI2OWJiOWNlMzZmNjAwMA==') : '';
+  const localGeminiKey = typeof window !== 'undefined' ? localStorage.getItem('nn_gemini_api_key') : '';
+  const localOpenRouterKey = typeof window !== 'undefined' ? localStorage.getItem('nn_openrouter_api_key') : '';
   const apiKey =
     config.customApiKey?.trim() ||
-    localKey?.trim() ||
-    defaultOpenRouterKey ||
+    localOpenRouterKey?.trim() ||
+    localGeminiKey?.trim() ||
     '';
 
   if (!apiKey) {
-    throw new Error('API key belum disetel. Buka Pengaturan untuk menyetel API key.');
+    // Graceful Route 0 fallback: Route request via serverless proxy /api/chat
+    const reply = await sendSenseiMessage(messages, config, contextCard);
+    onChunk(reply.content);
+    return reply.content;
   }
 
   const systemInstruction = buildSenseiSystemPrompt(config, contextCard);

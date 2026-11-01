@@ -18,6 +18,13 @@ module.exports = {
           3: 'var(--surface-3, #322D28)',
           4: 'var(--surface-4, #423B34)',
         },
+        card: {
+          DEFAULT: 'var(--surface)',
+          foreground: 'var(--text)',
+        },
+        border: {
+          DEFAULT: 'var(--border-theme)',
+        },
         accent: {
           DEFAULT: 'var(--accent)',
           hot: 'var(--accent-hot)',
@@ -44,12 +51,14 @@ module.exports = {
         muted: 'var(--text-muted)',
       },
       borderColor: {
+        border: 'var(--border-theme)',
         theme: 'var(--border-theme)',
         'theme-primary': 'var(--theme-primary)',
       },
       fontFamily: {
         ui: ['"DM Sans"', 'sans-serif'],
         jp: ['"BIZ UDGothic"', 'sans-serif'],
+        japanese: ['"BIZ UDGothic"', 'sans-serif'],
         display: ['"Shippori Mincho"', 'serif'],
         mono: ['"JetBrains Mono"', 'monospace'],
       },

@@ -1,4 +1,5 @@
 import { create } from 'zustand';
+import { useModalStore } from '../../store/useModalStore';
 
 interface BeforeInstallPromptEvent extends Event {
   prompt: () => Promise<void>;
@@ -28,7 +29,14 @@ export const usePwaStore = create<PwaState>((set, get) => ({
   waitingWorker: null,
   deferredPrompt: null,
 
-  setShowInstallModal: (show: boolean) => set({ showInstallModal: show }),
+  setShowInstallModal: (show: boolean) => {
+    set({ showInstallModal: show });
+    if (show) {
+      useModalStore.getState().openModal('install');
+    } else {
+      useModalStore.getState().closeModal('install');
+    }
+  },
 
   promptInstall: async () => {
     const { deferredPrompt } = get();

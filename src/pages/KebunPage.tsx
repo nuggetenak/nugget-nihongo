@@ -41,7 +41,8 @@ export const KebunPage: React.FC = () => {
     openCatPlacement,
   } = useAppStore();
 
-  const [selectedLevelFilter, setSelectedLevelFilter] = useState<'all' | 'n5' | 'n4' | 'n3' | 'n2'>('all');
+  const [activeView, setActiveView] = useState<'garden' | 'metrics'>('garden');
+  const [selectedLevelFilter, setSelectedLevelFilter] = useState<'all' | 'n5' | 'n4' | 'n3' | 'n2' | 'n1'>('all');
   const [wateringId, setWateringId] = useState<string | null>(null);
 
   // Ticket T-199: Check and grant daily morning water refill (+3 drops)
@@ -53,7 +54,7 @@ export const KebunPage: React.FC = () => {
   const fsrsStats = useMemo(() => {
     const cardList = Object.entries(cards)
       .map(([id, entry]) => ({ id, ...entry.card }))
-      .filter((c) => c && c.due);
+      .filter((c) => c && (c.due || c.state !== undefined));
 
     const now = Date.now();
     // Due cards count calculated via getFSRSDueCount(cards) from src/lib/quiz/quizEngine.ts
@@ -154,9 +155,10 @@ export const KebunPage: React.FC = () => {
       {/* ── HEADER ────────────────────────────────────────────────── */}
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
         <div>
-          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-500/15 border border-amber-500/30 text-accent font-bold text-xs mb-1.5">
-            <Brain className="w-3.5 h-3.5" />
-            <span>Pusat Retensi & Brankas Memori · 記憶保持センター</span>
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-500/20 border border-amber-500/40 text-amber-300 font-extrabold text-xs mb-2 tracking-wide shadow-xs">
+            <Brain className="w-4 h-4 text-amber-400 shrink-0" />
+            <span>Pusat Retensi & Brankas Memori</span>
+            <span className="text-[11px] font-normal text-appText-muted/80">· 記憶保持センター</span>
           </div>
           <h1 className="text-xl sm:text-3xl font-extrabold text-appText-bright tracking-tight">
             Pusat Retensi & Kebun Memori
@@ -167,205 +169,39 @@ export const KebunPage: React.FC = () => {
         </div>
 
         {/* Quick Summary Badges */}
-        <div className="flex items-center gap-2 overflow-x-auto pb-1 scrollbar-none shrink-0">
+        <div className="flex items-center gap-2 overflow-x-auto pb-1 scrollbar-none shrink-0 max-w-full">
           <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-surface-2 border border-theme text-xs font-bold text-appText-bright whitespace-nowrap">
             <Droplets className="w-3.5 h-3.5 text-cyan-400 fill-cyan-400" />
-            <span>{waterDrops} Tetes</span>
+            <span className="font-mono tabular-nums">{waterDrops} Tetes</span>
           </div>
           <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-surface-2 border border-theme text-xs font-bold text-appText-bright whitespace-nowrap">
             <Sprout className="w-3.5 h-3.5 text-emerald-400" />
-            <span>{bloomingCount}/{plants.length} Mekar</span>
+            <span className="font-mono tabular-nums">{bloomingCount}/{plants.length} Mekar</span>
           </div>
           <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-surface-2 border border-theme text-xs font-bold text-appText-bright whitespace-nowrap">
             <Clock className="w-3.5 h-3.5 text-amber-400" />
-            <span>{fsrsStats.dueCount} Due</span>
+            <span className="font-mono tabular-nums">{fsrsStats.dueCount} Due</span>
           </div>
         </div>
       </div>
 
       {/* ══════════════════════════════════════════════════════════════
-          CARD 1 (TOP): KEBUN KATA & 1-TAP WATER STOCK (F5, F7)
+          CARD 1 (TOP): FSRS DUE REVIEW COCKPIT (PROMINENT TRIGGER)
+          Positioned at top for instant 1-tap review action without scroll
       ══════════════════════════════════════════════════════════════ */}
-      <section className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-emerald-950/20 via-surface to-surface border border-emerald-500/30 p-5 sm:p-7 shadow-sm space-y-6">
-        <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
-          <div className="space-y-1.5">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/15 border border-emerald-500/30 text-emerald-400 text-xs font-bold">
-              <Sprout className="w-4 h-4 text-emerald-400" />
-              <span>{bloomingCount} dari {plants.length} Kanji Telah Mekar</span>
-            </div>
-            <h2 className="text-lg sm:text-2xl font-bold text-appText-bright tracking-tight">
-              Kebun Kata & Stok Air · 漢字の庭
-            </h2>
-            <p className="text-xs text-appText-muted max-w-xl leading-relaxed">
-              Siram tanaman kanji setiap hari menggunakan tetesan air dari review FSRS. Tanaman yang disiram teratur akan mekar sempurna dan terpatri permanen di memori.
-            </p>
-          </div>
-
-          {/* Water Stock Badge & Instant 1-Tap Water All Button */}
-          <div className="flex flex-wrap sm:flex-nowrap items-center gap-3 shrink-0">
-            <div className="flex items-center gap-2.5 px-4 py-2.5 rounded-2xl bg-surface-2 border border-theme shadow-sm">
-              <div className="w-9 h-9 rounded-xl bg-cyan-500/20 text-cyan-400 flex items-center justify-center shrink-0">
-                <Droplets className="w-5 h-5 fill-cyan-400 text-cyan-400" />
-              </div>
-              <div>
-                <div className="text-[9px] font-bold uppercase tracking-wider text-appText-muted">Stok Air</div>
-                <div className="text-sm sm:text-base font-bold font-mono text-cyan-500 dark:text-cyan-400 whitespace-nowrap">
-                  💧 {waterDrops} Tetes Air Tersedia
-                </div>
-              </div>
-            </div>
-
-            <button
-              onClick={handleWaterAll}
-              disabled={waterDrops <= 0}
-              className="flex-1 sm:flex-initial px-5 py-3 rounded-2xl bg-emerald-600 hover:bg-emerald-500 disabled:opacity-40 disabled:pointer-events-none text-white font-bold text-xs sm:text-sm flex items-center justify-center gap-2 shadow-md transition-all active:scale-95 min-h-[44px]"
-            >
-              <Droplets className="w-4 h-4 fill-white" />
-              <span>Siram Semua Tanaman</span>
-            </button>
-          </div>
-        </div>
-
-        {/* Empty Water Drops Guide Banner */}
-        {waterDrops === 0 && (
-          <div className="bg-surface-2 border border-amber-500/30 rounded-2xl p-4 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 animate-in fade-in duration-200">
-            <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-xl bg-amber-500/20 text-accent border border-amber-500/30 flex items-center justify-center text-lg shrink-0">
-                💧
-              </div>
-              <div>
-                <div className="text-xs font-bold text-appText-bright">Persediaan Air Habis</div>
-                <div className="text-[11px] text-appText-muted">Selesaikan review kartu FSRS di bawah ini atau latihan kuis untuk mendapatkan 2–5 tetes air segar.</div>
-              </div>
-            </div>
-            <button
-              onClick={startFSRSDueSession}
-              className="w-full sm:w-auto px-4 py-2.5 rounded-xl bg-amber-500 hover:bg-amber-600 text-stone-950 font-black text-xs flex items-center justify-center gap-1.5 transition-all shadow-sm shrink-0 active:scale-95 min-h-[40px]"
-            >
-              <span>Ulas Kartu Sekarang →</span>
-            </button>
-          </div>
-        )}
-
-        {/* Level Filter Tabs */}
-        <div className="flex items-center gap-1.5 sm:gap-2 overflow-x-auto pb-1 scrollbar-none">
-          {(['all', 'n5', 'n4', 'n3', 'n2'] as const).map((lvl) => {
-            const isSelected = selectedLevelFilter === lvl;
-            return (
-              <button
-                key={lvl}
-                onClick={() => setSelectedLevelFilter(lvl)}
-                className={`px-3.5 py-1.5 rounded-xl text-xs font-bold transition-all border uppercase whitespace-nowrap shrink-0 active:scale-95 min-h-[40px] flex items-center justify-center ${
-                  isSelected
-                    ? 'bg-amber-500 text-stone-950 border-amber-500 shadow-sm font-black'
-                    : 'bg-surface border-theme text-appText-muted hover:text-appText-bright'
-                }`}
-              >
-                {lvl === 'all' ? 'Semua Kanji' : `JLPT ${lvl}`}
-              </button>
-            );
-          })}
-        </div>
-
-        {/* Responsive Plants Grid */}
-        {plants.length === 0 ? (
-          <SkeletonGrid count={8} type="plant" />
-        ) : (
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4">
-            {filteredPlants.map((plant) => {
-              const stageInfo = STAGE_LABELS[plant.stage];
-              const isMaxBloom = plant.stage >= 4;
-
-              return (
-                <div
-                  key={plant.id}
-                  className={`rounded-2xl sm:rounded-3xl border p-3.5 sm:p-5 flex flex-col justify-between transition-all duration-200 hover:-translate-y-1 shadow-sm ${
-                    wateringId === plant.id ? 'animate-water-pulse' : ''
-                  } ${
-                    isMaxBloom
-                      ? 'bg-amber-500/5 border-amber-500/35'
-                      : 'bg-surface border-theme hover:border-amber-500/40'
-                  }`}
-                >
-                  {/* Plant Card Header */}
-                  <div className="flex items-center justify-between text-xs mb-2">
-                    <span className="font-bold uppercase text-[9px] sm:text-[10px] px-2 py-0.5 rounded-full bg-surface-2 border border-theme text-accent">
-                      {plant.level.toUpperCase()}
-                    </span>
-                    <span className="text-base" title={stageInfo.label}>
-                      {stageInfo.icon}
-                    </span>
-                  </div>
-
-                  {/* Kanji Display & Audio */}
-                  <div className="text-center py-1 sm:py-2 space-y-1">
-                    <div className="flex items-center justify-center gap-2">
-                      <div className="text-3xl sm:text-5xl font-jp font-bold text-appText-bright">
-                        {plant.kanji}
-                      </div>
-                      <button
-                        onClick={() => speakJapanese(plant.kanji)}
-                        className="p-1.5 rounded-xl bg-surface-2 hover:bg-surface-3 text-appText-muted hover:text-accent transition-all active:scale-95 min-h-[40px] min-w-[40px] flex items-center justify-center"
-                        title="Dengarkan pelafalan"
-                      >
-                        <Volume2 className="w-3.5 h-3.5" />
-                      </button>
-                    </div>
-
-                    <div className="text-xs font-jp text-amber-500 dark:text-amber-300 font-semibold truncate">
-                      【{plant.reading}】
-                    </div>
-                    <div className="text-xs font-medium text-appText-bright truncate">
-                      {plant.meaning}
-                    </div>
-                  </div>
-
-                  {/* Growth Progress Bar */}
-                  <div className="mt-3 pt-3 border-t border-theme space-y-1.5">
-                    <div className="flex items-center justify-between text-[11px] text-appText-muted font-medium">
-                      <span className="truncate">{stageInfo.label}</span>
-                      <span className="font-mono tabular-nums shrink-0">{plant.waterCount}/{plant.maxWater}</span>
-                    </div>
-
-                    <div className="w-full bg-surface-2 rounded-full h-1.5 sm:h-2 overflow-hidden border border-theme">
-                      <div
-                        className="bg-gradient-to-r from-emerald-500 to-amber-400 h-full rounded-full transition-all duration-300"
-                        style={{ width: `${(plant.waterCount / plant.maxWater) * 100}%` }}
-                      />
-                    </div>
-
-                    {/* Single Water Button */}
-                    <button
-                      onClick={() => handleWaterSingle(plant)}
-                      disabled={isMaxBloom || waterDrops <= 0}
-                      className={`w-full py-2 rounded-xl text-xs font-bold flex items-center justify-center gap-1.5 transition-all mt-2 min-h-[40px] active:scale-95 ${
-                        isMaxBloom
-                          ? 'bg-surface-2 text-amber-500 dark:text-amber-300 border border-theme cursor-default'
-                          : 'bg-emerald-600 hover:bg-emerald-500 disabled:opacity-40 disabled:pointer-events-none text-white shadow-sm'
-                      }`}
-                    >
-                      <Droplets className="w-3.5 h-3.5" />
-                      <span>{isMaxBloom ? 'Mekar Sempurna' : 'Siram (+1)'}</span>
-                    </button>
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-        )}
-      </section>
-
-      {/* ══════════════════════════════════════════════════════════════
-          CARD 2 (MIDDLE): FSRS SPACED REPETITION DUE REVIEW TRIGGER (F6)
-      ══════════════════════════════════════════════════════════════ */}
-      <section className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-amber-500/10 via-surface to-surface border border-amber-500/35 p-5 sm:p-7 shadow-sm space-y-6">
+      <section className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-amber-500/10 via-surface to-surface border border-amber-500/35 p-5 sm:p-7 shadow-sm space-y-5">
         <div className="flex flex-col md:flex-row md:items-center justify-between gap-6">
           <div className="space-y-2 max-w-xl">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/20 text-accent font-extrabold text-xs">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/20 border border-amber-500/40 text-accent font-extrabold text-xs">
+              <Zap className="w-3.5 h-3.5 text-amber-400 fill-amber-400 shrink-0" />
               <span>🔬 Algoritma Free Spaced Repetition (FSRS v4)</span>
             </div>
-            <h2 className="text-xl sm:text-2xl font-bold text-appText-bright">
-              Retensi Aktif: {fsrsStats.estimatedRetrievability}% Daya Ingat
+            <h2 className="text-xl sm:text-3xl font-extrabold text-appText-bright tracking-tight">
+              Retensi Aktif:{' '}
+              <span className="font-mono tabular-nums text-amber-500 dark:text-amber-400">
+                {fsrsStats.estimatedRetrievability}%
+              </span>{' '}
+              Daya Ingat
             </h2>
             <p className="text-xs sm:text-sm text-appText-muted leading-relaxed">
               {fsrsStats.totalCards === 0
@@ -380,7 +216,7 @@ export const KebunPage: React.FC = () => {
             {fsrsStats.totalCards === 0 ? (
               <button
                 onClick={() => setActiveTab('materi')}
-                className="px-5 py-3 rounded-2xl bg-amber-500 hover:bg-amber-400 text-stone-950 font-black text-xs sm:text-sm flex items-center justify-center gap-2 shadow-md transition-all active:scale-95 min-h-[44px]"
+                className="px-5 py-3.5 rounded-2xl bg-amber-500 hover:bg-amber-400 text-stone-950 font-black text-xs sm:text-sm flex items-center justify-center gap-2 shadow-md transition-all active:scale-95 min-h-[44px]"
               >
                 <BookOpen className="w-4 h-4" />
                 <span>Mulai Pelajaran Pertama di Materi Hub</span>
@@ -389,7 +225,7 @@ export const KebunPage: React.FC = () => {
             ) : fsrsStats.dueCount === 0 ? (
               <button
                 onClick={startFSRSDueSession}
-                className="px-5 py-3 rounded-2xl bg-stone-800 hover:bg-stone-750 text-stone-200 border border-stone-700/60 font-bold text-xs sm:text-sm flex items-center justify-center gap-2 transition-all active:scale-95 min-h-[44px]"
+                className="px-5 py-3.5 rounded-2xl bg-stone-800 hover:bg-stone-750 text-stone-200 border border-stone-700/60 font-bold text-xs sm:text-sm flex items-center justify-center gap-2 transition-all active:scale-95 min-h-[44px]"
               >
                 <Sparkles className="w-4 h-4 text-amber-400" />
                 <span>Semua Kartu Segar! Ulas Bebas · Latihan Bebas (Semua Kartu Segar)</span>
@@ -398,7 +234,7 @@ export const KebunPage: React.FC = () => {
             ) : (
               <button
                 onClick={startFSRSDueSession}
-                className="px-5 py-3 rounded-2xl bg-amber-500 hover:bg-amber-400 text-stone-950 font-black text-xs sm:text-sm flex items-center justify-center gap-2 shadow-md transition-all active:scale-95 min-h-[44px]"
+                className="px-5 py-3.5 rounded-2xl bg-amber-500 hover:bg-amber-400 text-stone-950 font-black text-xs sm:text-sm flex items-center justify-center gap-2 shadow-md transition-all active:scale-95 min-h-[44px]"
               >
                 <Zap className="w-4 h-4 fill-stone-950" />
                 <span>Mulai Ulas {fsrsStats.dueCount} Kartu Due →</span>
@@ -415,126 +251,400 @@ export const KebunPage: React.FC = () => {
           </div>
         </div>
 
-        {/* 4 Core Scientific Retention Metrics */}
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
-          <div className="p-4 sm:p-5 rounded-2xl bg-surface border border-theme space-y-1">
-            <div className="text-[11px] font-bold text-appText-muted uppercase tracking-wider flex items-center gap-1.5">
-              <Brain className="w-3.5 h-3.5 text-accent" />
-              <span>Kartu Terdaftar</span>
-            </div>
-            <div className="text-2xl sm:text-3xl font-black text-appText-bright font-mono">
-              {fsrsStats.totalCards}
-            </div>
-            <div className="text-[11px] text-appText-muted">
-              Kosakata & grammar di memori
+        {/* Quick KPI Bar across the bottom of the cockpit */}
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5 pt-3 border-t border-amber-500/20">
+          <div className="flex items-center gap-2 px-3 py-2 rounded-xl bg-surface/70 border border-theme text-xs">
+            <Clock className="w-4 h-4 text-amber-500 shrink-0" />
+            <div className="min-w-0">
+              <span className="text-[10px] text-appText-muted block truncate">Jatuh Tempo</span>
+              <span className="font-mono tabular-nums font-extrabold text-amber-500">{fsrsStats.dueCount} kartu</span>
             </div>
           </div>
-
-          <div className="p-4 sm:p-5 rounded-2xl bg-surface border border-theme space-y-1">
-            <div className="text-[11px] font-bold text-appText-muted uppercase tracking-wider flex items-center gap-1.5">
-              <Clock className="w-3.5 h-3.5 text-amber-500" />
-              <span>Jatuh Tempo Hari Ini</span>
-            </div>
-            <div className="text-2xl sm:text-3xl font-black text-amber-500 font-mono">
-              {fsrsStats.dueCount}
-            </div>
-            <div className="text-[11px] text-appText-muted">
-              Perlu diulas sebelum lupa
+          <div className="flex items-center gap-2 px-3 py-2 rounded-xl bg-surface/70 border border-theme text-xs">
+            <Brain className="w-4 h-4 text-accent shrink-0" />
+            <div className="min-w-0">
+              <span className="text-[10px] text-appText-muted block truncate">Terdaftar</span>
+              <span className="font-mono tabular-nums font-extrabold text-appText-bright">{fsrsStats.totalCards} kartu</span>
             </div>
           </div>
-
-          <div className="p-4 sm:p-5 rounded-2xl bg-surface border border-theme space-y-1">
-            <div className="text-[11px] font-bold text-appText-muted uppercase tracking-wider flex items-center gap-1.5">
-              <TrendingUp className="w-3.5 h-3.5 text-emerald-500" />
-              <span>Rata-rata Stabilitas</span>
-            </div>
-            <div className="text-2xl sm:text-3xl font-black text-emerald-500 font-mono">
-              {fsrsStats.avgStability} <span className="text-xs font-normal text-appText-muted">hari</span>
-            </div>
-            <div className="text-[11px] text-appText-muted">
-              Daya tahan ingatan rata-rata
+          <div className="flex items-center gap-2 px-3 py-2 rounded-xl bg-surface/70 border border-theme text-xs">
+            <TrendingUp className="w-4 h-4 text-emerald-500 shrink-0" />
+            <div className="min-w-0">
+              <span className="text-[10px] text-appText-muted block truncate">Stabilitas Rata-rata</span>
+              <span className="font-mono tabular-nums font-extrabold text-emerald-500">{fsrsStats.avgStability} hari</span>
             </div>
           </div>
-
-          <div className="p-4 sm:p-5 rounded-2xl bg-surface border border-theme space-y-1">
-            <div className="text-[11px] font-bold text-appText-muted uppercase tracking-wider flex items-center gap-1.5">
-              <Target className="w-3.5 h-3.5 text-sky-500" />
-              <span>Indeks Kesulitan (D)</span>
-            </div>
-            <div className="text-2xl sm:text-3xl font-black text-sky-500 font-mono">
-              {fsrsStats.avgDifficulty} <span className="text-xs font-normal text-appText-muted">/ 10</span>
-            </div>
-            <div className="text-[11px] text-appText-muted">
-              Tingkat kesulitan relatif materi
-            </div>
-          </div>
-        </div>
-
-        {/* Retention Distribution Spectrum */}
-        <div className="bg-surface-2/60 border border-theme rounded-2xl p-4 sm:p-6 space-y-4">
-          <h3 className="text-xs sm:text-sm font-extrabold text-appText-bright flex items-center gap-2 border-b border-theme pb-2.5">
-            <Layers className="w-4 h-4 text-accent" />
-            <span>Distribusi Status Kartu Memori</span>
-          </h3>
-
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 text-xs">
-            <div className="p-3 rounded-xl bg-surface border border-theme space-y-1">
-              <div className="flex items-center justify-between">
-                <span className="font-bold text-blue-500 dark:text-blue-300">Baru (New)</span>
-                <span className="w-2 h-2 rounded-full bg-blue-500" />
-              </div>
-              <div className="text-lg sm:text-xl font-black font-mono text-appText-bright">
-                {fsrsStats.stateCounts.new}
-              </div>
-              <div className="text-[10px] text-appText-muted">Belum pernah diulas</div>
-            </div>
-
-            <div className="p-3 rounded-xl bg-surface border border-theme space-y-1">
-              <div className="flex items-center justify-between">
-                <span className="font-bold text-amber-500 dark:text-amber-300">Belajar (Learning)</span>
-                <span className="w-2 h-2 rounded-full bg-amber-500" />
-              </div>
-              <div className="text-lg sm:text-xl font-black font-mono text-appText-bright">
-                {fsrsStats.stateCounts.learning}
-              </div>
-              <div className="text-[10px] text-appText-muted">Fase awal pembentukan</div>
-            </div>
-
-            <div className="p-3 rounded-xl bg-surface border border-theme space-y-1">
-              <div className="flex items-center justify-between">
-                <span className="font-bold text-emerald-500 dark:text-emerald-300">Pengulangan (Review)</span>
-                <span className="w-2 h-2 rounded-full bg-emerald-500" />
-              </div>
-              <div className="text-lg sm:text-xl font-black font-mono text-appText-bright">
-                {fsrsStats.stateCounts.review}
-              </div>
-              <div className="text-[10px] text-appText-muted">Interval memori stabil</div>
-            </div>
-
-            <div className="p-3 rounded-xl bg-surface border border-theme space-y-1">
-              <div className="flex items-center justify-between">
-                <span className="font-bold text-rose-500 dark:text-rose-300">Evaluasi Ulang</span>
-                <span className="w-2 h-2 rounded-full bg-rose-500" />
-              </div>
-              <div className="text-lg sm:text-xl font-black font-mono text-appText-bright">
-                {fsrsStats.stateCounts.relearning}
-              </div>
-              <div className="text-[10px] text-appText-muted">Pernah lupa & dipulihkan</div>
-            </div>
-          </div>
-
-          {/* Scientific Explanation Footer */}
-          <div className="p-3.5 rounded-xl bg-amber-500/10 border border-amber-500/20 text-xs text-appText-muted leading-relaxed flex items-start gap-2.5">
-            <Info className="w-4 h-4 text-accent shrink-0 mt-0.5" />
-            <div>
-              <b className="text-appText-bright font-semibold">Mengapa FSRS v4 lebih efisien?</b> Algoritma FSRS memodelkan kurva peluruhan memori secara matematis. Saat kamu menjawab kartu dengan mudah (Easy), interval review berikutnya akan dilipatgandakan secara aman sehingga kamu tidak membuang waktu mengulang materi yang sudah dihafal di luar kepala.
+          <div className="flex items-center gap-2 px-3 py-2 rounded-xl bg-surface/70 border border-theme text-xs">
+            <Droplets className="w-4 h-4 text-cyan-400 shrink-0 fill-cyan-400" />
+            <div className="min-w-0">
+              <span className="text-[10px] text-appText-muted block truncate">Stok Air</span>
+              <span className="font-mono tabular-nums font-extrabold text-cyan-400">{waterDrops} tetes</span>
             </div>
           </div>
         </div>
       </section>
 
       {/* ══════════════════════════════════════════════════════════════
-          SECTION 3 (BOTTOM): SECONDARY PRACTICE DRILLS SHELF (F8)
+          CARD 2: BALANCED SUB-VIEW CONTROLLER
+          [ 💧 Kebun Kanji & Siram ] vs [ 📊 Metrik Ilmiah FSRS ]
+      ══════════════════════════════════════════════════════════════ */}
+      <div className="space-y-4">
+        {/* Segmented Controller Tab Bar */}
+        <div className="p-1.5 rounded-2xl bg-surface-2 border border-theme inline-flex w-full sm:w-auto gap-1.5 shadow-xs">
+          <button
+            onClick={() => setActiveView('garden')}
+            className={`flex-1 sm:flex-initial px-4 py-2.5 rounded-xl font-bold text-xs sm:text-sm flex items-center justify-center gap-2 transition-all active:scale-95 min-h-[40px] ${
+              activeView === 'garden'
+                ? 'bg-emerald-600 text-white shadow-sm'
+                : 'text-appText-muted hover:text-appText-bright hover:bg-surface-3/50'
+            }`}
+          >
+            <Droplets className="w-4 h-4 shrink-0 fill-current" />
+            <span>Kebun Kanji & Siram</span>
+            <span
+              className={`px-2 py-0.5 rounded-full text-[10px] font-mono tabular-nums font-extrabold ${
+                activeView === 'garden'
+                  ? 'bg-emerald-700/80 text-emerald-100'
+                  : 'bg-surface border border-theme text-appText-muted'
+              }`}
+            >
+              {bloomingCount}/{plants.length} Mekar
+            </span>
+          </button>
+
+          <button
+            onClick={() => setActiveView('metrics')}
+            className={`flex-1 sm:flex-initial px-4 py-2.5 rounded-xl font-bold text-xs sm:text-sm flex items-center justify-center gap-2 transition-all active:scale-95 min-h-[40px] ${
+              activeView === 'metrics'
+                ? 'bg-amber-500 text-stone-950 shadow-sm font-extrabold'
+                : 'text-appText-muted hover:text-appText-bright hover:bg-surface-3/50'
+            }`}
+          >
+            <TrendingUp className="w-4 h-4 shrink-0" />
+            <span>Metrik Ilmiah FSRS</span>
+            <span
+              className={`px-2 py-0.5 rounded-full text-[10px] font-mono tabular-nums font-extrabold ${
+                activeView === 'metrics'
+                  ? 'bg-stone-900/40 text-stone-950 dark:text-stone-900'
+                  : 'bg-surface border border-theme text-appText-muted'
+              }`}
+            >
+              {fsrsStats.estimatedRetrievability}%
+            </span>
+          </button>
+        </div>
+
+        {/* ── VIEW 1: KANJI GARDEN & WATERING ────────────────────────── */}
+        {activeView === 'garden' && (
+          <section className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-emerald-950/20 via-surface to-surface border border-emerald-500/30 p-5 sm:p-7 shadow-sm space-y-6 animate-in fade-in duration-200">
+            <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
+              <div className="space-y-1.5">
+                <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-emerald-950/70 border border-emerald-500/40 text-emerald-300 text-xs font-extrabold shadow-xs">
+                  <Sprout className="w-4 h-4 text-emerald-400 shrink-0" />
+                  <span>{bloomingCount} dari {plants.length} Kanji Telah Mekar</span>
+                </div>
+                <h2 className="text-lg sm:text-2xl font-bold text-appText-bright tracking-tight">
+                  Kebun Kata & Stok Air · 漢字の庭
+                </h2>
+                <p className="text-xs text-appText-muted max-w-xl leading-relaxed">
+                  Siram tanaman kanji setiap hari menggunakan tetesan air dari review FSRS. Tanaman yang disiram teratur akan mekar sempurna dan terpatri permanen di memori.
+                </p>
+              </div>
+
+              {/* Water Stock Badge & Instant 1-Tap Water All Button */}
+              <div className="flex flex-wrap sm:flex-nowrap items-center gap-3 shrink-0">
+                <div className="flex items-center gap-2.5 px-4 py-2.5 rounded-2xl bg-surface-2 border border-theme shadow-sm">
+                  <div className="w-9 h-9 rounded-xl bg-cyan-500/20 text-cyan-400 flex items-center justify-center shrink-0">
+                    <Droplets className="w-5 h-5 fill-cyan-400 text-cyan-400" />
+                  </div>
+                  <div>
+                    <div className="text-[9px] font-bold uppercase tracking-wider text-appText-muted">Stok Air</div>
+                    <div className="text-sm sm:text-base font-bold font-mono tabular-nums text-cyan-500 dark:text-cyan-400 whitespace-nowrap">
+                      💧 {waterDrops} Tetes Air Tersedia
+                    </div>
+                  </div>
+                </div>
+
+                <button
+                  onClick={handleWaterAll}
+                  disabled={waterDrops <= 0}
+                  className="flex-1 sm:flex-initial px-5 py-3 rounded-2xl bg-emerald-600 hover:bg-emerald-500 disabled:opacity-40 disabled:pointer-events-none text-white font-bold text-xs sm:text-sm flex items-center justify-center gap-2 shadow-md transition-all active:scale-95 min-h-[44px]"
+                >
+                  <Droplets className="w-4 h-4 fill-white" />
+                  <span>Siram Semua Tanaman</span>
+                </button>
+              </div>
+            </div>
+
+            {/* Empty Water Drops Guide Banner */}
+            {waterDrops === 0 && (
+              <div className="bg-surface-2 border border-amber-500/30 rounded-2xl p-4 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 animate-in fade-in duration-200">
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 rounded-xl bg-amber-500/20 text-accent border border-amber-500/30 flex items-center justify-center text-lg shrink-0">
+                    💧
+                  </div>
+                  <div>
+                    <div className="text-xs font-bold text-appText-bright">Persediaan Air Habis</div>
+                    <div className="text-[11px] text-appText-muted">Selesaikan review kartu FSRS di atas atau latihan kuis untuk mendapatkan 2–5 tetes air segar.</div>
+                  </div>
+                </div>
+                <button
+                  onClick={startFSRSDueSession}
+                  className="w-full sm:w-auto px-4 py-2.5 rounded-xl bg-amber-500 hover:bg-amber-600 text-stone-950 font-black text-xs flex items-center justify-center gap-1.5 transition-all shadow-sm shrink-0 active:scale-95 min-h-[40px]"
+                >
+                  <span>Ulas Kartu Sekarang →</span>
+                </button>
+              </div>
+            )}
+
+            {/* Level Filter Tabs */}
+            <div className="flex items-center gap-1.5 sm:gap-2 overflow-x-auto pb-1 scrollbar-none max-w-full">
+              {(['all', 'n5', 'n4', 'n3', 'n2', 'n1'] as const).map((lvl) => {
+                const isSelected = selectedLevelFilter === lvl;
+                return (
+                  <button
+                    key={lvl}
+                    onClick={() => setSelectedLevelFilter(lvl)}
+                    className={`px-3.5 py-1.5 rounded-xl text-xs font-bold transition-all border uppercase whitespace-nowrap shrink-0 active:scale-95 min-h-[40px] flex items-center justify-center ${
+                      isSelected
+                        ? 'bg-amber-500 text-stone-950 border-amber-500 shadow-sm font-black'
+                        : 'bg-surface border-theme text-appText-muted hover:text-appText-bright'
+                    }`}
+                  >
+                    {lvl === 'all' ? 'Semua Kanji' : `JLPT ${lvl}`}
+                  </button>
+                );
+              })}
+            </div>
+
+            {/* Responsive Plants Grid */}
+            {plants.length === 0 ? (
+              <SkeletonGrid count={8} type="plant" />
+            ) : (
+              <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4">
+                {filteredPlants.map((plant) => {
+                  const stageInfo = STAGE_LABELS[plant.stage];
+                  const isMaxBloom = plant.stage >= 4;
+
+                  return (
+                    <div
+                      key={plant.id}
+                      className={`rounded-2xl sm:rounded-3xl border p-3.5 sm:p-5 flex flex-col justify-between transition-all duration-200 hover:-translate-y-1 shadow-sm ${
+                        wateringId === plant.id ? 'animate-water-pulse' : ''
+                      } ${
+                        isMaxBloom
+                          ? 'bg-amber-500/5 border-amber-500/35'
+                          : 'bg-surface border-theme hover:border-amber-500/40'
+                      }`}
+                    >
+                      {/* Plant Card Header */}
+                      <div className="flex items-center justify-between text-xs mb-2">
+                        <span className="font-bold uppercase text-[9px] sm:text-[10px] px-2 py-0.5 rounded-full bg-surface-2 border border-theme text-accent">
+                          {plant.level.toUpperCase()}
+                        </span>
+                        <span className="text-base" title={stageInfo.label}>
+                          {stageInfo.icon}
+                        </span>
+                      </div>
+
+                      {/* Kanji Display & Audio */}
+                      <div className="text-center py-1 sm:py-2 space-y-1">
+                        <div className="flex items-center justify-center gap-2">
+                          <div className="text-3xl sm:text-5xl font-jp font-bold text-appText-bright">
+                            {plant.kanji}
+                          </div>
+                          <button
+                            onClick={() => speakJapanese(plant.kanji)}
+                            className="p-1.5 rounded-xl bg-surface-2 hover:bg-surface-3 text-appText-muted hover:text-accent transition-all active:scale-95 min-h-[40px] min-w-[40px] flex items-center justify-center"
+                            title="Dengarkan pelafalan"
+                            aria-label={`Dengarkan pelafalan ${plant.kanji}`}
+                          >
+                            <Volume2 className="w-4 h-4" />
+                          </button>
+                        </div>
+
+                        <div className="text-xs font-jp text-amber-500 dark:text-amber-300 font-semibold truncate">
+                          【{plant.reading}】
+                        </div>
+                        <div className="text-xs font-medium text-appText-bright truncate">
+                          {plant.meaning}
+                        </div>
+                      </div>
+
+                      {/* Growth Progress Bar */}
+                      <div className="mt-3 pt-3 border-t border-theme space-y-1.5">
+                        <div className="flex items-center justify-between text-[11px] text-appText-muted font-medium">
+                          <span className="truncate">{stageInfo.label}</span>
+                          <span className="font-mono tabular-nums shrink-0">{plant.waterCount}/{plant.maxWater}</span>
+                        </div>
+
+                        <div className="w-full bg-surface-2 rounded-full h-1.5 sm:h-2 overflow-hidden border border-theme">
+                          <div
+                            className="bg-gradient-to-r from-emerald-500 to-amber-400 h-full rounded-full transition-all duration-300"
+                            style={{ width: `${(plant.waterCount / plant.maxWater) * 100}%` }}
+                          />
+                        </div>
+
+                        {/* Single Water Button */}
+                        <button
+                          onClick={() => handleWaterSingle(plant)}
+                          disabled={isMaxBloom || waterDrops <= 0}
+                          className={`w-full py-2.5 rounded-xl text-xs font-bold flex items-center justify-center gap-1.5 transition-all mt-2 min-h-[40px] active:scale-95 ${
+                            isMaxBloom
+                              ? 'bg-surface-2 text-amber-500 dark:text-amber-300 border border-theme cursor-default'
+                              : 'bg-emerald-600 hover:bg-emerald-500 disabled:opacity-40 disabled:pointer-events-none text-white shadow-sm'
+                          }`}
+                        >
+                          <Droplets className="w-3.5 h-3.5" />
+                          <span>{isMaxBloom ? 'Mekar Sempurna' : 'Siram (+1)'}</span>
+                        </button>
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+            )}
+          </section>
+        )}
+
+        {/* ── VIEW 2: SCIENTIFIC FSRS METRICS & RETENTION MODEL ────────── */}
+        {activeView === 'metrics' && (
+          <section className="relative overflow-hidden rounded-3xl bg-surface border border-theme p-5 sm:p-7 shadow-sm space-y-6 animate-in fade-in duration-200">
+            <div className="space-y-1.5">
+              <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-amber-500/20 border border-amber-500/40 text-accent font-extrabold text-xs">
+                <Brain className="w-4 h-4 text-amber-400 shrink-0" />
+                <span>Analitik Retensi Memori Jangka Panjang · FSRS v4</span>
+              </div>
+              <h2 className="text-lg sm:text-2xl font-bold text-appText-bright tracking-tight">
+                Metrik Ilmiah FSRS & Model Peluruhan Memori
+              </h2>
+              <p className="text-xs sm:text-sm text-appText-muted max-w-2xl leading-relaxed">
+                Algoritma FSRS v4 memodelkan retrievability $R(t, S) = (1 + 19/81 \cdot t/S)^{-0.5}$ dan kestabilan ingatan berdasarkan riwayat review individu (Ye et al., 2022).
+              </p>
+            </div>
+
+            {/* 4 Core Scientific Retention Metrics Cards */}
+            <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
+              <div className="p-4 sm:p-5 rounded-2xl bg-surface-2 border border-theme space-y-1">
+                <div className="text-[11px] font-bold text-appText-muted uppercase tracking-wider flex items-center gap-1.5">
+                  <Brain className="w-3.5 h-3.5 text-accent" />
+                  <span>Kartu Terdaftar</span>
+                </div>
+                <div className="text-2xl sm:text-3xl font-black text-appText-bright font-mono tabular-nums">
+                  {fsrsStats.totalCards}
+                </div>
+                <div className="text-[11px] text-appText-muted">
+                  Kosakata & grammar di memori
+                </div>
+              </div>
+
+              <div className="p-4 sm:p-5 rounded-2xl bg-surface-2 border border-theme space-y-1">
+                <div className="text-[11px] font-bold text-appText-muted uppercase tracking-wider flex items-center gap-1.5">
+                  <Clock className="w-3.5 h-3.5 text-amber-500" />
+                  <span>Jatuh Tempo Hari Ini</span>
+                </div>
+                <div className="text-2xl sm:text-3xl font-black text-amber-500 font-mono tabular-nums">
+                  {fsrsStats.dueCount}
+                </div>
+                <div className="text-[11px] text-appText-muted">
+                  Perlu diulas sebelum lupa
+                </div>
+              </div>
+
+              <div className="p-4 sm:p-5 rounded-2xl bg-surface-2 border border-theme space-y-1">
+                <div className="text-[11px] font-bold text-appText-muted uppercase tracking-wider flex items-center gap-1.5">
+                  <TrendingUp className="w-3.5 h-3.5 text-emerald-500" />
+                  <span>Rata-rata Stabilitas</span>
+                </div>
+                <div className="text-2xl sm:text-3xl font-black text-emerald-500 font-mono tabular-nums">
+                  {fsrsStats.avgStability} <span className="text-xs font-normal text-appText-muted">hari</span>
+                </div>
+                <div className="text-[11px] text-appText-muted">
+                  Daya tahan ingatan rata-rata
+                </div>
+              </div>
+
+              <div className="p-4 sm:p-5 rounded-2xl bg-surface-2 border border-theme space-y-1">
+                <div className="text-[11px] font-bold text-appText-muted uppercase tracking-wider flex items-center gap-1.5">
+                  <Target className="w-3.5 h-3.5 text-sky-500" />
+                  <span>Indeks Kesulitan (D)</span>
+                </div>
+                <div className="text-2xl sm:text-3xl font-black text-sky-500 font-mono tabular-nums">
+                  {fsrsStats.avgDifficulty} <span className="text-xs font-normal text-appText-muted">/ 10</span>
+                </div>
+                <div className="text-[11px] text-appText-muted">
+                  Tingkat kesulitan relatif materi
+                </div>
+              </div>
+            </div>
+
+            {/* Retention Distribution Spectrum */}
+            <div className="bg-surface-2/60 border border-theme rounded-2xl p-4 sm:p-6 space-y-4">
+              <h3 className="text-xs sm:text-sm font-extrabold text-appText-bright flex items-center gap-2 border-b border-theme pb-2.5">
+                <Layers className="w-4 h-4 text-accent" />
+                <span>Distribusi Status Kartu Memori</span>
+              </h3>
+
+              <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 text-xs">
+                <div className="p-3 rounded-xl bg-surface border border-theme space-y-1">
+                  <div className="flex items-center justify-between">
+                    <span className="font-bold text-blue-500 dark:text-blue-300">Baru (New)</span>
+                    <span className="w-2 h-2 rounded-full bg-blue-500" />
+                  </div>
+                  <div className="text-lg sm:text-xl font-black font-mono tabular-nums text-appText-bright">
+                    {fsrsStats.stateCounts.new}
+                  </div>
+                  <div className="text-[10px] text-appText-muted">Belum pernah diulas</div>
+                </div>
+
+                <div className="p-3 rounded-xl bg-surface border border-theme space-y-1">
+                  <div className="flex items-center justify-between">
+                    <span className="font-bold text-amber-500 dark:text-amber-300">Belajar (Learning)</span>
+                    <span className="w-2 h-2 rounded-full bg-amber-500" />
+                  </div>
+                  <div className="text-lg sm:text-xl font-black font-mono tabular-nums text-appText-bright">
+                    {fsrsStats.stateCounts.learning}
+                  </div>
+                  <div className="text-[10px] text-appText-muted">Fase awal pembentukan</div>
+                </div>
+
+                <div className="p-3 rounded-xl bg-surface border border-theme space-y-1">
+                  <div className="flex items-center justify-between">
+                    <span className="font-bold text-emerald-500 dark:text-emerald-300">Pengulangan (Review)</span>
+                    <span className="w-2 h-2 rounded-full bg-emerald-500" />
+                  </div>
+                  <div className="text-lg sm:text-xl font-black font-mono tabular-nums text-appText-bright">
+                    {fsrsStats.stateCounts.review}
+                  </div>
+                  <div className="text-[10px] text-appText-muted">Interval memori stabil</div>
+                </div>
+
+                <div className="p-3 rounded-xl bg-surface border border-theme space-y-1">
+                  <div className="flex items-center justify-between">
+                    <span className="font-bold text-rose-500 dark:text-rose-300">Evaluasi Ulang</span>
+                    <span className="w-2 h-2 rounded-full bg-rose-500" />
+                  </div>
+                  <div className="text-lg sm:text-xl font-black font-mono tabular-nums text-appText-bright">
+                    {fsrsStats.stateCounts.relearning}
+                  </div>
+                  <div className="text-[10px] text-appText-muted">Pernah lupa & dipulihkan</div>
+                </div>
+              </div>
+
+              {/* Scientific Explanation Footer */}
+              <div className="p-3.5 rounded-xl bg-amber-500/10 border border-amber-500/20 text-xs text-appText-muted leading-relaxed flex items-start gap-2.5">
+                <Info className="w-4 h-4 text-accent shrink-0 mt-0.5" />
+                <div>
+                  <b className="text-appText-bright font-semibold">Mengapa FSRS v4 lebih efisien?</b> Algoritma FSRS memodelkan kurva peluruhan memori secara matematis. Saat kamu menjawab kartu dengan mudah (Easy), interval review berikutnya akan dilipatgandakan secara aman sehingga kamu tidak membuang waktu mengulang materi yang sudah dihafal di luar kepala.
+                </div>
+              </div>
+            </div>
+          </section>
+        )}
+      </div>
+
+      {/* ══════════════════════════════════════════════════════════════
+          SECTION 3 (BOTTOM): SECONDARY PRACTICE DRILLS SHELF (OPSIONAL)
       ══════════════════════════════════════════════════════════════ */}
       <section className="bg-surface border border-theme rounded-3xl p-5 sm:p-7 space-y-5 shadow-sm">
         <div className="space-y-1">

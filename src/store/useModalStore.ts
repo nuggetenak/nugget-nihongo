@@ -55,7 +55,7 @@ export interface ModalPropsMap {
 interface ModalState {
   modalStack: Array<{ type: ModalType; props?: any }>;
   openModal: <T extends ModalType>(type: T, props?: ModalPropsMap[T]) => void;
-  closeModal: () => void;
+  closeModal: (type?: ModalType) => void;
   closeAllModals: () => void;
   getActiveModal: () => { type: ModalType; props?: any } | null;
 }
@@ -64,15 +64,30 @@ export const useModalStore = create<ModalState>((set, get) => ({
   modalStack: [],
 
   openModal: (type, props) => {
-    set((state) => ({
-      modalStack: [...state.modalStack, { type, props }],
-    }));
+    set((state) => {
+      const top = state.modalStack[state.modalStack.length - 1];
+      if (top && top.type === type) {
+        return {
+          modalStack: [...state.modalStack.slice(0, -1), { type, props }],
+        };
+      }
+      return {
+        modalStack: [...state.modalStack, { type, props }],
+      };
+    });
   },
 
-  closeModal: () => {
-    set((state) => ({
-      modalStack: state.modalStack.slice(0, -1),
-    }));
+  closeModal: (type?: ModalType) => {
+    set((state) => {
+      if (!type) {
+        return { modalStack: state.modalStack.slice(0, -1) };
+      }
+      const lastIndex = state.modalStack.map((m) => m.type).lastIndexOf(type);
+      if (lastIndex === -1) return state;
+      return {
+        modalStack: state.modalStack.filter((_, idx) => idx !== lastIndex),
+      };
+    });
   },
 
   closeAllModals: () => {

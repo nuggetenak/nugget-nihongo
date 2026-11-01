@@ -14,6 +14,7 @@ import {
   sanitizeCompletedLessonIds,
   sanitizePlacementHistory,
 } from '../lib/storage/storageSanitizer';
+import { useModalStore } from './useModalStore';
 
 export interface ToastMessage {
   id: string;
@@ -263,7 +264,12 @@ function getInitialTab(): AppState['activeTab'] {
   const rawHash = (window.location.hash || '').replace('#', '').toLowerCase();
   const baseTab = rawHash.split('?')[0];
   if (baseTab === 'browse') return 'materi';
-  if (baseTab === 'stats') return 'kebun';
+  if (baseTab === 'stats' || baseTab === 'retensi') return 'kebun';
+  if (baseTab === 'arena' || baseTab === 'kuis') return 'quiz';
+  if (baseTab === 'metodologi' || baseTab === 'method') return 'methodology';
+  if (baseTab === 'belajar') return 'home';
+  if (baseTab === 'profil' || baseTab === 'pengaturan') return 'settings';
+  if (baseTab === 'tentang') return 'about';
   const validTabs: AppState['activeTab'][] = ['home', 'materi', 'quiz', 'kebun', 'sensei', 'settings', 'about', 'study', 'methodology', 'choukai'];
   return validTabs.includes(baseTab as AppState['activeTab']) ? (baseTab as AppState['activeTab']) : 'home';
 }
@@ -500,6 +506,7 @@ export const useAppStore = create<AppState>((set, get) => ({
           localStorage.setItem('nn_streak', JSON.stringify({ count: 1, lastDate: '', lastTimestamp: 0 }));
         } catch {}
         useGamificationStore.getState().openStreakBrokenModal();
+        useModalStore.getState().openModal('streakBroken');
       }
     } catch {}
   },
@@ -641,52 +648,93 @@ export const useAppStore = create<AppState>((set, get) => ({
     }
   },
 
-  isOnboardingOpen: typeof window !== 'undefined' ? !localStorage.getItem('nn_onboarding_completed') : false,
-  openOnboarding: () => set({ isOnboardingOpen: true }),
+  // Onboarding & Feature Guide Modals (Unified Dynamic Modal Stack via useModalStore)
+  isOnboardingOpen: false,
+  openOnboarding: () => {
+    useModalStore.getState().openModal('onboarding');
+  },
   closeOnboarding: () => {
-    set({ isOnboardingOpen: false });
     if (typeof window !== 'undefined') {
       try { localStorage.setItem('nn_onboarding_completed', 'true'); } catch {}
     }
+    useModalStore.getState().closeModal('onboarding');
   },
 
   isFeatureGuideOpen: false,
-  openFeatureGuide: () => set({ isFeatureGuideOpen: true }),
-  closeFeatureGuide: () => set({ isFeatureGuideOpen: false }),
+  openFeatureGuide: () => {
+    useModalStore.getState().openModal('featureGuide');
+  },
+  closeFeatureGuide: () => {
+    useModalStore.getState().closeModal('featureGuide');
+  },
 
   isPatchNotesOpen: false,
-  openPatchNotes: () => set({ isPatchNotesOpen: true }),
-  closePatchNotes: () => set({ isPatchNotesOpen: false }),
+  openPatchNotes: () => {
+    useModalStore.getState().openModal('patchNotes');
+  },
+  closePatchNotes: () => {
+    useModalStore.getState().closeModal('patchNotes');
+  },
 
   isKotowazaOpen: false,
-  openKotowaza: () => set({ isKotowazaOpen: true }),
-  closeKotowaza: () => set({ isKotowazaOpen: false }),
+  openKotowaza: () => {
+    useModalStore.getState().openModal('kotowaza');
+  },
+  closeKotowaza: () => {
+    useModalStore.getState().closeModal('kotowaza');
+  },
 
   isToolboxOpen: false,
-  openToolbox: () => set({ isToolboxOpen: true }),
-  closeToolbox: () => set({ isToolboxOpen: false }),
+  openToolbox: () => {
+    useModalStore.getState().openModal('toolbox');
+  },
+  closeToolbox: () => {
+    useModalStore.getState().closeModal('toolbox');
+  },
 
   isCatPlacementOpen: false,
-  openCatPlacement: () => set({ isCatPlacementOpen: true }),
-  closeCatPlacement: () => set({ isCatPlacementOpen: false }),
+  openCatPlacement: () => {
+    useModalStore.getState().openModal('catPlacement');
+  },
+  closeCatPlacement: () => {
+    useModalStore.getState().closeModal('catPlacement');
+  },
 
-  // Global Shared Modals
+  // Global Shared Modals (Kana, Conjugation, Nuance, Detail)
   isKanaOpen: false,
-  openKana: () => set({ isKanaOpen: true }),
-  closeKana: () => set({ isKanaOpen: false }),
+  openKana: () => {
+    useModalStore.getState().openModal('kana');
+  },
+  closeKana: () => {
+    useModalStore.getState().closeModal('kana');
+  },
 
   isConjugationOpen: false,
-  openConjugation: () => set({ isConjugationOpen: true }),
-  closeConjugation: () => set({ isConjugationOpen: false }),
+  openConjugation: () => {
+    useModalStore.getState().openModal('conjugation');
+  },
+  closeConjugation: () => {
+    useModalStore.getState().closeModal('conjugation');
+  },
 
   isNuanceOpen: false,
-  openNuance: () => set({ isNuanceOpen: true }),
-  closeNuance: () => set({ isNuanceOpen: false }),
+  openNuance: () => {
+    useModalStore.getState().openModal('nuance');
+  },
+  closeNuance: () => {
+    useModalStore.getState().closeModal('nuance');
+  },
 
   detailModalItem: null,
   detailModalType: 'vocab',
-  openDetailModal: (item, type = 'vocab') => set({ detailModalItem: item, detailModalType: type }),
-  closeDetailModal: () => set({ detailModalItem: null }),
+  openDetailModal: (item, type = 'vocab') => {
+    set({ detailModalItem: item, detailModalType: type });
+    useModalStore.getState().openModal('detail', { item, type });
+  },
+  closeDetailModal: () => {
+    set({ detailModalItem: null });
+    useModalStore.getState().closeModal('detail');
+  },
 
   isSenseiSheetOpen: false,
   senseiSheetContext: null,

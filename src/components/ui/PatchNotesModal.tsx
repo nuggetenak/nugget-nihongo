@@ -90,7 +90,7 @@ export const PatchNotesModal: React.FC<PatchNotesModalProps> = ({ isOpen, onClos
                   Catatan Rilis
                 </h2>
                 <span className="text-[10px] font-mono font-bold px-2 py-0.5 rounded-full bg-accent text-bg">
-                  v{APP_VERSION}
+                  {APP_VERSION}
                 </span>
               </div>
               <p className="text-[11px] sm:text-xs text-appText-muted mt-0.5 truncate">
@@ -261,7 +261,7 @@ export const PatchNotesModal: React.FC<PatchNotesModalProps> = ({ isOpen, onClos
         {/* Modal Footer */}
         <div className="pt-2 pb-[max(0.25rem,env(safe-area-inset-bottom))] border-t border-accent/15 flex items-center justify-between text-xs text-appText-muted shrink-0">
           <span className="hidden sm:inline">Nugget Nihongo PWA Offline Engine</span>
-          <span className="text-[11px] sm:hidden font-mono text-accent">v{APP_VERSION}</span>
+          <span className="text-[11px] sm:hidden font-mono text-accent">{APP_VERSION}</span>
           <button
             onClick={onClose}
             className="px-4 py-2 rounded-xl bg-accent text-bg font-bold text-xs hover:bg-accent-hot transition-all shadow-sm active:scale-95 ml-auto"

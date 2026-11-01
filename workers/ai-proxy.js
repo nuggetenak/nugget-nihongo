@@ -561,15 +561,36 @@ async function handleChat(request, env, cors) {
     return new Response(JSON.stringify({ error: 'messages required' }), { status: 400, headers: { ...cors, 'Content-Type': 'application/json' } });
   }
 
-  // Rate limiting (uses IP anchor to prevent rotation bypass)
-  const uid = getRateLimitId(request, userId);
-  const { allowed, remaining } = await checkRateLimit(env, uid, 1);
-  if (!allowed) {
-    return new Response(JSON.stringify({
-      error: 'daily_limit_reached',
-      message: `Kamu sudah mencapai batas ${DAILY_LIMIT} pertanyaan gratis hari ini. Coba lagi besok ya! 💪`,
-      remaining: 0,
-    }), { status: 429, headers: { ...cors, 'Content-Type': 'application/json', 'X-RateLimit-Remaining': '0' } });
+  // BYOK (Bring Your Own Key) detection from headers or body
+  const userAuth = request.headers.get('Authorization') || request.headers.get('x-user-api-key') || '';
+  const userGoogKey = request.headers.get('x-goog-api-key') || (body.apiKey && !body.apiKey.startsWith('sk-or-') ? body.apiKey : '');
+  const hasByok = Boolean(userAuth || userGoogKey);
+
+  // Rate limiting (uses IP anchor to prevent rotation bypass; BYOK requests are unmetered)
+  let remaining = DAILY_LIMIT;
+  if (!hasByok) {
+    const uid = getRateLimitId(request, userId);
+    const { allowed, remaining: rem } = await checkRateLimit(env, uid, 1);
+    if (!allowed) {
+      return new Response(JSON.stringify({
+        error: 'daily_limit_reached',
+        message: `Kamu sudah mencapai batas ${DAILY_LIMIT} pertanyaan gratis hari ini. Masukkan kunci API sendiri (BYOK) di Pengaturan atau coba lagi besok ya! 💪`,
+        remaining: 0,
+      }), { status: 429, headers: { ...cors, 'Content-Type': 'application/json', 'X-RateLimit-Remaining': '0' } });
+    }
+    remaining = rem;
+  }
+
+  const effectiveEnv = { ...env };
+  if (userAuth && userAuth.startsWith('Bearer sk-or-')) {
+    effectiveEnv.OPENROUTER_API_KEY = userAuth.replace(/^Bearer\s+/, '').trim();
+  } else if (userAuth && userAuth.startsWith('sk-or-')) {
+    effectiveEnv.OPENROUTER_API_KEY = userAuth.trim();
+  } else if (body.apiKey && typeof body.apiKey === 'string' && body.apiKey.startsWith('sk-or-')) {
+    effectiveEnv.OPENROUTER_API_KEY = body.apiKey.trim();
+  }
+  if (userGoogKey && typeof userGoogKey === 'string' && userGoogKey.trim()) {
+    effectiveEnv.GEMINI_API_KEY = userGoogKey.trim();
   }
 
   const systemCtx = buildContext(context);
@@ -577,7 +598,7 @@ async function handleChat(request, env, cors) {
   const mode = (context?.mode && ['explain', 'quiz', 'chat'].includes(context.mode)) ? context.mode : 'explain';
 
   try {
-    const result = await getAIResponse(env, messages, systemCtx, queryType, mode);
+    const result = await getAIResponse(effectiveEnv, messages, systemCtx, queryType, mode);
     return new Response(JSON.stringify({ ...result, query_type: queryType, mode, remaining }), {
       status: 200,
       headers: { ...cors, 'Content-Type': 'application/json', 'X-RateLimit-Remaining': String(remaining) },
@@ -746,9 +767,12 @@ export default {
 
     const url = new URL(request.url);
     switch (url.pathname) {
-      case '/chat':          return handleChat(request, env, cors);
-      case '/generate-quiz': return handleGenerateQuiz(request, env, cors);
-      case '/critique':      return handleCritique(request, env, cors);
+      case '/chat':
+      case '/api/chat':          return handleChat(request, env, cors);
+      case '/generate-quiz':
+      case '/api/generate-quiz': return handleGenerateQuiz(request, env, cors);
+      case '/critique':
+      case '/api/critique':      return handleCritique(request, env, cors);
       default:               return new Response('Not found', { status: 404, headers: cors });
     }
   },

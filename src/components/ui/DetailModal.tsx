@@ -25,7 +25,10 @@ export const DetailModal: React.FC<DetailModalProps> = ({ item, type, onClose })
 
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
-      if (e.key === 'Escape') onClose();
+      if (e.key === 'Escape') {
+        e.preventDefault();
+        onClose();
+      }
     };
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
@@ -257,7 +260,7 @@ export const DetailModal: React.FC<DetailModalProps> = ({ item, type, onClose })
                 originalTranslation: isVocab ? vocab?.meaning : grammar?.meaning,
               })
             }
-            className="w-full py-2 px-3 rounded-xl bg-surface-2/60 hover:bg-surface-2 border border-accent/15 text-appText-muted hover:text-amber-400 text-xs font-medium transition-all flex items-center justify-center gap-1.5 active:scale-95"
+            className="w-full py-2 px-3 rounded-xl bg-surface-2/60 hover:bg-surface-2 border border-accent/15 text-appText-muted hover:text-appText-bright hover:bg-surface-3 hover:border-accent/40 text-xs font-semibold transition-all flex items-center justify-center gap-1.5 active:scale-95"
           >
             <Flag className="w-3.5 h-3.5 text-accent" />
             <span>Laporkan Kesalahan / Kalimat Rancu 🚩</span>

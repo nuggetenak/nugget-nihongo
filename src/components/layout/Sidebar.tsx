@@ -8,7 +8,7 @@
 // ══════════════════════════════════════════════════════════════════
 
 import React from 'react';
-import { Compass, BookOpen, Brain, Sparkles, Settings, HelpCircle, History, Quote, Wrench } from 'lucide-react';
+import { Compass, BookOpen, Brain, Sparkles, Settings, HelpCircle, History, Quote, Wrench, Layers, GraduationCap } from 'lucide-react';
 import { useAppStore, AppState } from '../../store/useAppStore';
 import { transitionTabChange } from '../../lib/ui/navigation';
 import { APP_VERSION } from '../../config/version';
@@ -27,7 +27,8 @@ export const Sidebar: React.FC = () => {
 
   const navItems: NavItem[] = [
     { id: 'home', label: 'Belajar (Jalur)', jp: '学習', icon: <Compass className="w-5 h-5" /> },
-    { id: 'kebun', label: 'Pusat Retensi (Brankas FSRS)', jp: '保持', icon: <Brain className="w-5 h-5" /> },
+    { id: 'quiz', label: 'Arena Kuis', jp: '練習', icon: <Layers className="w-5 h-5" />, badge: '9 Mode' },
+    { id: 'kebun', label: 'Pusat Retensi (Brankas FSRS)', jp: '復習', icon: <Brain className="w-5 h-5" /> },
     { id: 'materi', label: 'Dojo & Pustaka', jp: '道場', icon: <BookOpen className="w-5 h-5" /> },
     { 
       id: 'sensei', 
@@ -36,13 +37,14 @@ export const Sidebar: React.FC = () => {
       icon: <Sparkles className="w-5 h-5 text-accent-hot" />,
       isSpecial: true
     },
+    { id: 'methodology', label: 'Metodologi & Riset', jp: '方法', icon: <GraduationCap className="w-5 h-5" /> },
     { id: 'settings', label: 'Profil & Pengaturan', jp: '設定', icon: <Settings className="w-5 h-5" /> },
     { id: 'about', label: 'Tentang Aplikasi', jp: '情報', icon: <HelpCircle className="w-5 h-5" /> },
   ];
 
   const isItemActive = (id: AppState['activeTab']) => {
     if (id === activeTab) return true;
-    if (id === 'materi' && (activeTab === 'quiz' || activeTab === 'choukai')) return true;
+    if (id === 'materi' && activeTab === 'choukai') return true;
     return false;
   };
 

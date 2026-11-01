@@ -17,7 +17,7 @@ interface DialogueStageProps {
   onCompleteStage?: () => void;
 }
 
-export const DialogueStage: React.FC<DialogueStageProps> = ({ dialogue = [], sceneIntro }) => {
+export const DialogueStage: React.FC<DialogueStageProps> = ({ dialogue = [], sceneIntro, onCompleteStage }) => {
   const globalShowFurigana = useAppStore((state) => state.showFurigana);
   const [showFurigana, setShowFurigana] = useState(globalShowFurigana ?? true);
   const [showTranslation, setShowTranslation] = useState(true);
@@ -249,6 +249,19 @@ export const DialogueStage: React.FC<DialogueStageProps> = ({ dialogue = [], sce
           );
         })}
       </div>
+
+      {onCompleteStage && (
+        <div className="pt-3 flex justify-end">
+          <button
+            type="button"
+            onClick={onCompleteStage}
+            className="min-h-[44px] px-5 py-2.5 rounded-xl bg-accent hover:bg-accent-hot text-bg font-extrabold text-xs uppercase tracking-wider shadow-md flex items-center gap-2 transition-all active:scale-95 cursor-pointer"
+          >
+            <span>Pahami Penjelasan Materi</span>
+            <span aria-hidden="true">→</span>
+          </button>
+        </div>
+      )}
     </div>
   );
 };

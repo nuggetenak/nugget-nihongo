@@ -150,14 +150,17 @@ test('T-213: ModalErrorBoundary isolates heavy portals, SVG stroke animators, an
   assert(modalBoundaryCode.includes('Gagal Memuat Modul'), 'Must inform user of specific failed modal');
   assert(modalBoundaryCode.includes('Tutup Modul'), 'Must offer close module button');
 
-  // Integration in App.tsx: verify wrapping of key modals
-  assert(appCode.includes('import { ModalErrorBoundary }'), 'App.tsx must import ModalErrorBoundary');
-  assert(appCode.includes('<ModalErrorBoundary modalName="Tabel Kana"'), 'Must wrap KanaChartModal');
-  assert(appCode.includes('<ModalErrorBoundary modalName="Konjugasi Kata Kerja"'), 'Must wrap ConjugationModal');
-  assert(appCode.includes('<ModalErrorBoundary modalName="Perbandingan Nuansa Tata Bahasa"'), 'Must wrap NuanceCompareModal');
-  assert(appCode.includes('<ModalErrorBoundary modalName="Galeri Peribahasa Kotowaza"'), 'Must wrap KotowazaModal');
-  assert(appCode.includes('<ModalErrorBoundary modalName="Kotak Peralatan Belajar"'), 'Must wrap StudyToolboxModal');
-  assert(appCode.includes('<ModalErrorBoundary modalName="Tes Penempatan Adaptif (CAT)"'), 'Must wrap CatPlacementModal');
+  // Integration in App.tsx & GlobalModalManager: verify wrapping of key modals
+  const gmmPath = path.join(ROOT_DIR, 'src/components/modals/GlobalModalManager.tsx');
+  const gmmCode = fs.existsSync(gmmPath) ? fs.readFileSync(gmmPath, 'utf8') : '';
+  const modalCode = appCode + gmmCode;
+  assert(modalCode.includes('import { ModalErrorBoundary }'), 'Must import ModalErrorBoundary');
+  assert(modalCode.includes('<ModalErrorBoundary modalName="Tabel Kana"'), 'Must wrap KanaChartModal');
+  assert(modalCode.includes('<ModalErrorBoundary modalName="Konjugasi Kata Kerja"'), 'Must wrap ConjugationModal');
+  assert(modalCode.includes('<ModalErrorBoundary modalName="Perbandingan Nuansa Tata Bahasa"'), 'Must wrap NuanceCompareModal');
+  assert(modalCode.includes('<ModalErrorBoundary modalName="Galeri Peribahasa Kotowaza"'), 'Must wrap KotowazaModal');
+  assert(modalCode.includes('<ModalErrorBoundary modalName="Kotak Peralatan Belajar"'), 'Must wrap StudyToolboxModal');
+  assert(modalCode.includes('<ModalErrorBoundary modalName="Tes Penempatan Adaptif (CAT)"'), 'Must wrap CatPlacementModal');
   assert(appCode.includes('<ModalErrorBoundary modalName="Modal Dinamis Global"'), 'Must wrap GlobalModalManager');
   assert(appCode.includes('<ModalErrorBoundary modalName="Sensei AI Studio"'), 'Must wrap ContextualSenseiSheet');
 });

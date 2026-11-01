@@ -153,9 +153,9 @@ export const LessonStudyPage: React.FC = () => {
     icon: React.ReactNode;
   }> = [
     { id: 'dialogue', label: '1. Dialog Otentik', shortLabel: '1. Dialog', icon: <MessageSquare className="w-4 h-4 shrink-0" /> },
-    { id: 'explanation', label: '2. Bedah Materi & Pola', shortLabel: '2. Bedah', icon: <BookOpen className="w-4 h-4 shrink-0" /> },
-    { id: 'drills', label: '3. Cek Pemahaman', shortLabel: '3. Kuis', icon: <HelpCircle className="w-4 h-4 shrink-0" /> },
-    { id: 'cando', label: '4. Tantangan Nyata', shortLabel: '4. Can-Do', icon: <Trophy className="w-4 h-4 shrink-0" /> },
+    { id: 'explanation', label: '2. Bedah Materi & Pola', shortLabel: '2. Bedah Materi', icon: <BookOpen className="w-4 h-4 shrink-0" /> },
+    { id: 'drills', label: '3. Cek Pemahaman', shortLabel: '3. Cek Pemahaman', icon: <HelpCircle className="w-4 h-4 shrink-0" /> },
+    { id: 'cando', label: '4. Tantangan Nyata', shortLabel: '4. Tantangan Nyata', icon: <Trophy className="w-4 h-4 shrink-0" /> },
   ];
 
   // Handler saat latihan selesai
@@ -163,7 +163,7 @@ export const LessonStudyPage: React.FC = () => {
     setDrillScore(score);
     if (currentLesson && currentUnit) {
       if (score >= 80) {
-        completeLesson(trackId, currentUnit.id, currentLesson.id, score, 50);
+        completeLesson(trackId, currentUnit.id, currentLesson.id, score, 0);
       }
     }
     // Otomatis arahkan ke tahap Can-Do
@@ -265,92 +265,94 @@ export const LessonStudyPage: React.FC = () => {
 
   return (
     <div className="w-full max-w-full sm:max-w-4xl mx-auto space-y-5 pb-[calc(5.5rem+env(safe-area-inset-bottom))] lg:pb-12 animate-fade-in min-w-0 overflow-x-hidden">
-      {/* ── 1. HEADER STUDIO BELAJAR FOKUS ───────────────────────── */}
-      <div className="p-4 sm:p-5 rounded-3xl bg-surface border border-accent/20 flex flex-col sm:flex-row sm:items-center justify-between gap-3 shadow-sm">
-        <div className="flex items-center gap-3 min-w-0">
-          <button
-            type="button"
-            onClick={closeLessonStudy}
-            className="min-h-[44px] min-w-[44px] p-2.5 rounded-2xl bg-surface-2 hover:bg-surface-3 border border-accent/20 text-appText-muted hover:text-appText-bright transition-colors flex items-center justify-center shrink-0 active:scale-95"
-            title="Kembali ke Katalog Materi Hub"
-          >
-            <ArrowLeft className="w-5 h-5" />
-          </button>
+      {/* ── 1. HEADER STUDIO BELAJAR FOKUS (TARGET 2) ───────────── */}
+      <div className="p-3 sm:p-4 rounded-2xl sm:rounded-3xl bg-surface border border-accent/20 flex flex-col sm:flex-row sm:items-center justify-between gap-2.5 sm:gap-3 shadow-sm">
+          <div className="flex items-center gap-2.5 sm:gap-3 min-w-0">
+            <button
+              type="button"
+              onClick={closeLessonStudy}
+              className="min-h-[44px] min-w-[44px] p-2 sm:p-2.5 rounded-xl sm:rounded-2xl bg-surface-2 hover:bg-surface-3 border border-accent/20 text-appText-muted hover:text-appText-bright transition-colors flex items-center justify-center shrink-0 active:scale-95"
+              title="Kembali ke Katalog Materi Hub"
+            >
+              <ArrowLeft className="w-4 h-4 sm:w-5 sm:h-5" />
+            </button>
 
-          <div className="min-w-0 space-y-0.5">
-            <div className="flex flex-wrap items-center gap-1.5 text-[11px] font-bold">
-              <span className="px-2 py-0.5 rounded-md bg-amber-500/15 text-accent border border-amber-500/25 uppercase">
-                {trackId.toUpperCase()} · Unit {currentUnit?.unit_number}
-              </span>
-              <span className="text-appText-muted">Pelajaran #{currentLesson.lesson_number}</span>
-              {isLessonDone && (
-                <span className="px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 flex items-center gap-1 text-[10px] font-extrabold">
-                  <CheckCircle2 className="w-3 h-3" />
-                  Tuntas ({drillScore}%)
+            <div className="min-w-0 space-y-0.5">
+              <div className="flex flex-wrap items-center gap-1.5 text-[10px] sm:text-[11px] font-bold">
+                <span className="px-2 py-0.5 rounded-md bg-amber-500/15 text-accent border border-amber-500/25 uppercase font-mono">
+                  {trackId.toUpperCase()} · Unit {currentUnit?.unit_number}
                 </span>
-              )}
-            </div>
+                <span className="text-appText-muted">Pelajaran #{currentLesson.lesson_number}</span>
+                {isLessonDone && (
+                  <span className="px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 flex items-center gap-1 text-[10px] font-extrabold">
+                    <CheckCircle2 className="w-3 h-3" />
+                    Tuntas ({drillScore}%)
+                  </span>
+                )}
+              </div>
 
-            <h1 className="text-base sm:text-xl font-extrabold text-appText-bright tracking-tight break-words">
-              {currentLesson.title_id}
-            </h1>
-            <div className="text-xs text-appText-muted font-jp font-medium">
-              {currentLesson.title_jp}
+              <h1 className="text-sm sm:text-lg font-extrabold text-appText-bright tracking-tight break-words">
+                {currentLesson.title_id}
+              </h1>
+              <div className="text-[11px] sm:text-xs text-appText-muted font-jp font-medium truncate hidden sm:block">
+                {currentLesson.title_jp}
+              </div>
             </div>
+          </div>
+
+          <div className="flex items-center gap-2 shrink-0">
+            <button
+              type="button"
+              onClick={handleOpenSensei}
+              className="min-h-[40px] px-3.5 py-1.5 rounded-xl bg-amber-500/15 hover:bg-amber-500/25 border border-amber-500/30 text-accent text-xs font-bold transition-all flex items-center gap-1.5 shadow-xs active:scale-95"
+              title="Tanya Sensei seputar materi ini"
+              aria-label="Tanya Sensei"
+            >
+              <span>💡</span>
+              <span className="font-semibold">Tanya Sensei</span>
+            </button>
+
+            <button
+              type="button"
+              onClick={closeLessonStudy}
+              className="text-xs font-bold text-accent hover:underline hidden sm:block shrink-0 px-2 py-1 min-h-[40px] flex items-center active:scale-95"
+            >
+              Tutup & Kembali
+            </button>
           </div>
         </div>
 
-        <div className="flex items-center gap-2 shrink-0">
-          <button
-            type="button"
-            onClick={handleOpenSensei}
-            className="min-h-[40px] px-3.5 py-1.5 rounded-xl bg-amber-500/15 hover:bg-amber-500/25 border border-amber-500/30 text-accent text-xs font-bold transition-all flex items-center gap-1.5 shadow-xs active:scale-95"
-            title="Tanya Sensei seputar materi ini"
-            aria-label="Tanya Sensei"
-          >
-            <span>💡</span>
-            <span className="font-semibold">Tanya Sensei</span>
-          </button>
-
-          <button
-            type="button"
-            onClick={closeLessonStudy}
-            className="text-xs font-bold text-accent hover:underline hidden sm:block shrink-0 px-2 py-1 min-h-[40px] flex items-center active:scale-95"
-          >
-            Tutup & Kembali
-          </button>
+      {/* ── 2. BILAH STEPPER 4-TAHAP INTERAKTIF (TARGET 1) ──────── */}
+      <div className="sticky top-[52px] sm:top-[60px] z-20 bg-bg/95 backdrop-blur-md py-2 border-b border-accent/15 -mx-3 sm:-mx-6 px-3 sm:px-6 shadow-xs">
+        <div className="grid grid-cols-4 gap-1 sm:gap-2 p-1 sm:p-1.5 bg-surface rounded-2xl border border-accent/20 shadow-sm w-full max-w-full overflow-hidden">
+          {stages.map((st) => {
+            const isActive = activeStage === st.id;
+            return (
+              <button
+                key={st.id}
+                type="button"
+                onClick={() => setActiveStage(st.id)}
+                className={`min-w-0 flex-1 min-h-[44px] px-1 sm:px-3 py-1.5 sm:py-2 rounded-xl text-xs font-bold transition-all flex flex-col sm:flex-row items-center justify-center gap-1 sm:gap-1.5 overflow-hidden active:scale-95 ${
+                  isActive
+                    ? 'bg-accent text-bg shadow-sm font-extrabold'
+                    : 'text-appText-muted hover:text-appText-bright hover:bg-surface-2'
+                }`}
+              >
+                <span className="shrink-0">{st.icon}</span>
+                <span className="min-w-0 truncate text-[10px] sm:text-xs">
+                  <span className="sm:hidden">{st.shortLabel}</span>
+                  <span className="hidden sm:inline">{st.label}</span>
+                </span>
+              </button>
+            );
+          })}
         </div>
-      </div>
-
-      {/* ── 2. BILAH STEPPER 4-TAHAP INTERAKTIF (RESPONSIF & ANTI-TABRAKAN) ───── */}
-      <div className="grid grid-cols-4 gap-1 sm:gap-2 p-1 sm:p-1.5 bg-surface rounded-2xl border border-accent/20 shadow-sm w-full max-w-full overflow-hidden">
-        {stages.map((st) => {
-          const isActive = activeStage === st.id;
-          return (
-            <button
-              key={st.id}
-              type="button"
-              onClick={() => setActiveStage(st.id)}
-              className={`min-w-0 flex-1 min-h-[44px] px-1 sm:px-3 py-1.5 sm:py-2 rounded-xl text-xs font-bold transition-all flex flex-col sm:flex-row items-center justify-center gap-1 sm:gap-1.5 overflow-hidden active:scale-95 ${
-                isActive
-                  ? 'bg-accent text-bg shadow-sm font-extrabold'
-                  : 'text-appText-muted hover:text-appText-bright hover:bg-surface-2'
-              }`}
-            >
-              <span className="shrink-0">{st.icon}</span>
-              <span className="min-w-0 truncate text-[11px] sm:text-xs">
-                <span className="sm:hidden">{st.shortLabel}</span>
-                <span className="hidden sm:inline">{st.label}</span>
-              </span>
-            </button>
-          );
-        })}
       </div>
 
       {/* ── 3. PANEL TAHAP KONTEN DINAMIS ────────────────────────── */}
       <div 
         id="lesson-studio-top"
-        className="p-4 sm:p-7 rounded-3xl bg-surface border border-accent/20 shadow-sm transition-[min-height] duration-300 ease-out min-h-[380px] sm:min-h-[420px] overflow-hidden animate-in fade-in slide-in-from-right-4 duration-300"
+        className="scroll-mt-44 sm:scroll-mt-48 p-4 sm:p-7 rounded-3xl bg-surface border border-accent/20 shadow-sm transition-[min-height] duration-300 ease-out min-h-[380px] sm:min-h-[420px] overflow-hidden animate-in fade-in slide-in-from-right-4 duration-300"
       >
         <div key={activeStage} className="animate-in fade-in duration-200">
           {activeStage === 'dialogue' && (
@@ -368,6 +370,7 @@ export const LessonStudyPage: React.FC = () => {
               commonPitfalls={currentLesson.common_pitfalls || currentLesson.pedagogical_framework?.common_pitfalls}
               trackId={trackId}
               unitNumber={currentUnit?.unit_number}
+              onCompleteStage={() => withViewTransition(() => setActiveStage('drills'))}
             />
           )}
 

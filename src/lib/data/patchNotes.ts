@@ -18,6 +18,66 @@ export interface PatchNote {
 
 export const PATCH_NOTES_HISTORY: PatchNote[] = [
   {
+    version: 'v21.0.0',
+    releaseName: '5-Pass Enterprise Architecture Overhaul: Design Tokens, Modal Lifecycle, Sensei AI W3C Ruby, BYOK Security & Performance Budget',
+    date: '1 November 2026',
+    type: 'major',
+    friendlySummary: 'Pembaruan akbar Nugget Nihongo v21.0.0 menghadirkan perombakan arsitektur sistem komprehensif melalui 5 Pass Audit Forensik: standarisasi token desain semantic WCAG 2.1 AA, sentralisasi 18 modal ke GlobalModalManager, render furigana W3C Ruby semantik pada Sensei AI, proksi keamanan serverless /api/chat dengan opsi BYOK, dekonstruksi modular halaman Pengaturan, penegakan anggaran bundel 500 kB per berkas, serta dukungan audio range streaming RFC 7233 pada iOS Safari.',
+    highlights: [
+      'Token Desain & Kontras Semantik (Pass 1): Menstandarkan token CSS Tailwind (bg-surface, text-appText, border-accent) dan membersihkan seluruh hex warna manual demi kepatuhan kontras WCAG 2.1 AA.',
+      'Elevasi Navigasi & Arena Kuis (Pass 2): Pengalaman navigasi materi dan simulasi kuis adaptif responsif bebas kedip di seluruh ukuran layar (320px–1920px).',
+      'Sentralisasi Modal & State Global (Pass 3): Konsolidasi 18 jenis modal ke dalam GlobalModalManager dan useModalStore, mengeliminasi duplikasi deklarasi di App.tsx dan mencegah kebocoran scroll.',
+      'Sensei AI W3C Ruby & Keamanan Serverless (Pass 4): Parsing furigana berbasis standar W3C (<ruby><rt><rp>), perlindungan kunci API via endpoint serverless /api/chat, dukungan BYOK untuk OpenRouter & Gemini, serta refaktor modular SettingsPage.',
+      'Anggaran Kinerja & Caching PWA RFC 7233 (Pass 5): Pemisahan manualChunks Rollup dengan modul app-infra, 100% dari 52 berkas JS patuh batas 500 kB, isolasi cache API dinamis, dan slicing byte-range audio iOS Safari.',
+    ],
+    details: [
+      {
+        category: 'Pass 1 — Pembersihan Token Desain & Sistem Warna',
+        items: [
+          'Penggantian kelas warna hex statis dengan semantic tokens (bg-bg, bg-surface, bg-surface-2, bg-surface-3, text-appText-bright, text-appText-muted).',
+          'Penyelarasan kontras teks dan ikon untuk memenuhi rasio kontras tinggi WCAG 2.1 AA pada mode terang dan gelap.',
+          'Pembersihan artefak border dan shadow pada seluruh komponen antarmuka kartu kurikulum.',
+        ],
+      },
+      {
+        category: 'Pass 2 — Elevasi Navigasi & Arena Kuis',
+        items: [
+          'Penguatan antarmuka peramban kurikulum MateriHubPage dengan filter segmen responsif (JLPT, JFT, SSW, Seikatsu).',
+          'Peningkatan ergonomi layar sentuh Arena Kuis dengan feedback audio instan dan penanganan gesture anti-lag.',
+          'Penyesuaian tata letak adaptif bebas overflow horizontal pada ponsel cerdas 320px–390px.',
+        ],
+      },
+      {
+        category: 'Pass 3 — Konsolidasi Siklus Hidup Modal & Global Store',
+        items: [
+          'Pembersihan deklarasi statis ganda pada App.tsx; seluruh dialog dialihkan ke GlobalModalManager.',
+          'Sinkronisasi useModalStore dengan useAppStore, useAuthStore, dan usePwaStore untuk mencegah tumpang-tindih status.',
+          'Penguncian scroll latar belakang (document.body.style.overflow) saat modal terbuka dan pencegahan double-pop tombol Escape.',
+        ],
+      },
+      {
+        category: 'Pass 4 — Sensei AI W3C Ruby, Keamanan Serverless & Modularisasi Pengaturan',
+        items: [
+          'Implementasi struktur semantik <ruby lang="ja"><rp>(</rp><rt>reading</rt><rp>)</rp></ruby> pada SenseiPage, mengeliminasi tag span pembungkus yang merusak render kanji.',
+          'Penghapusan kunci API hardcoded dari kode klien; rute AI dialihkan ke Cloudflare Worker /api/chat.',
+          'Dukungan Bring-Your-Own-Key (BYOK) untuk OpenRouter dan Gemini AI dengan penyimpanan lokal terenkripsi.',
+          'Dekonstruksi SettingsPage (1.788 baris) menjadi 4 komponen domain: ProfileSettingsTab, AudioSettingsTab, SyncSettingsTab, dan AdvancedSettingsTab.',
+          'Penerapan penskalaan teks non-destruktif berbasis rem tanpa merusak preferensi ukuran font bawaan browser.',
+        ],
+      },
+      {
+        category: 'Pass 5 — Arsitektur Kinerja, Anggaran Bundel & Caching PWA',
+        items: [
+          'Pemisahan manualChunks Rollup dengan chunk app-infra untuk telemetri, persistensi, dan sinkronisasi.',
+          'Verifikasi otomatis anggaran bundel memastikan seluruh 52 berkas JS berukuran <= 500 kB (lolos 100%).',
+          'Implementasi penanganan byte-range RFC 7233 (HTTP 206) pada Service Worker untuk mendukung pemutaran audio di iOS Safari.',
+          'Isolasi rute API dinamis (supabase.co, workers.dev, googleapis.com) agar tidak mencemari cache statis offline.',
+          'Penyatuan gerbang kualitas pengujian CI: 44 sprint master regression, 200 persona simulation, dan verifikasi Pass 3-5.',
+        ],
+      },
+    ],
+  },
+  {
     version: 'v20.0.0',
     releaseName: 'Grand Clean-Slate Enterprise Production Release: 44 Sprints, 36 Curricula & 200 Indonesian Personas Verification',
     date: '17 Oktober 2026',

@@ -3,6 +3,47 @@
 > Catatan pembaruan ini disinkronkan secara otomatis dari `src/lib/data/patchNotes.ts`
 > Single Source of Truth: Jalankan `npm run changelog` atau `npm run build` untuk memutakhirkan.
 
+## v21.0.0 (1 November 2026) — 5-Pass Enterprise Architecture Overhaul: Design Tokens, Modal Lifecycle, Sensei AI W3C Ruby, BYOK Security & Performance Budget
+
+### Sorotan Pembaruan (Highlights)
+- Token Desain & Kontras Semantik (Pass 1): Menstandarkan token CSS Tailwind (bg-surface, text-appText, border-accent) dan membersihkan seluruh hex warna manual demi kepatuhan kontras WCAG 2.1 AA.
+- Elevasi Navigasi & Arena Kuis (Pass 2): Pengalaman navigasi materi dan simulasi kuis adaptif responsif bebas kedip di seluruh ukuran layar (320px–1920px).
+- Sentralisasi Modal & State Global (Pass 3): Konsolidasi 18 jenis modal ke dalam GlobalModalManager dan useModalStore, mengeliminasi duplikasi deklarasi di App.tsx dan mencegah kebocoran scroll.
+- Sensei AI W3C Ruby & Keamanan Serverless (Pass 4): Parsing furigana berbasis standar W3C (<ruby><rt><rp>), perlindungan kunci API via endpoint serverless /api/chat, dukungan BYOK untuk OpenRouter & Gemini, serta refaktor modular SettingsPage.
+- Anggaran Kinerja & Caching PWA RFC 7233 (Pass 5): Pemisahan manualChunks Rollup dengan modul app-infra, 100% dari 52 berkas JS patuh batas 500 kB, isolasi cache API dinamis, dan slicing byte-range audio iOS Safari.
+
+### Rincian Perubahan (Details)
+#### Pass 1 — Pembersihan Token Desain & Sistem Warna
+- Penggantian kelas warna hex statis dengan semantic tokens (bg-bg, bg-surface, bg-surface-2, bg-surface-3, text-appText-bright, text-appText-muted).
+- Penyelarasan kontras teks dan ikon untuk memenuhi rasio kontras tinggi WCAG 2.1 AA pada mode terang dan gelap.
+- Pembersihan artefak border dan shadow pada seluruh komponen antarmuka kartu kurikulum.
+
+#### Pass 2 — Elevasi Navigasi & Arena Kuis
+- Penguatan antarmuka peramban kurikulum MateriHubPage dengan filter segmen responsif (JLPT, JFT, SSW, Seikatsu).
+- Peningkatan ergonomi layar sentuh Arena Kuis dengan feedback audio instan dan penanganan gesture anti-lag.
+- Penyesuaian tata letak adaptif bebas overflow horizontal pada ponsel cerdas 320px–390px.
+
+#### Pass 3 — Konsolidasi Siklus Hidup Modal & Global Store
+- Pembersihan deklarasi statis ganda pada App.tsx; seluruh dialog dialihkan ke GlobalModalManager.
+- Sinkronisasi useModalStore dengan useAppStore, useAuthStore, dan usePwaStore untuk mencegah tumpang-tindih status.
+- Penguncian scroll latar belakang (document.body.style.overflow) saat modal terbuka dan pencegahan double-pop tombol Escape.
+
+#### Pass 4 — Sensei AI W3C Ruby, Keamanan Serverless & Modularisasi Pengaturan
+- Implementasi struktur semantik <ruby lang="ja"><rp>(</rp><rt>reading</rt><rp>)</rp></ruby> pada SenseiPage, mengeliminasi tag span pembungkus yang merusak render kanji.
+- Penghapusan kunci API hardcoded dari kode klien; rute AI dialihkan ke Cloudflare Worker /api/chat.
+- Dukungan Bring-Your-Own-Key (BYOK) untuk OpenRouter dan Gemini AI dengan penyimpanan lokal terenkripsi.
+- Dekonstruksi SettingsPage (1.788 baris) menjadi 4 komponen domain: ProfileSettingsTab, AudioSettingsTab, SyncSettingsTab, dan AdvancedSettingsTab.
+- Penerapan penskalaan teks non-destruktif berbasis rem tanpa merusak preferensi ukuran font bawaan browser.
+
+#### Pass 5 — Arsitektur Kinerja, Anggaran Bundel & Caching PWA
+- Pemisahan manualChunks Rollup dengan chunk app-infra untuk telemetri, persistensi, dan sinkronisasi.
+- Verifikasi otomatis anggaran bundel memastikan seluruh 52 berkas JS berukuran <= 500 kB (lolos 100%).
+- Implementasi penanganan byte-range RFC 7233 (HTTP 206) pada Service Worker untuk mendukung pemutaran audio di iOS Safari.
+- Isolasi rute API dinamis (supabase.co, workers.dev, googleapis.com) agar tidak mencemari cache statis offline.
+- Penyatuan gerbang kualitas pengujian CI: 44 sprint master regression, 200 persona simulation, dan verifikasi Pass 3-5.
+
+---
+
 ## v20.0.0 (17 Oktober 2026) — Grand Clean-Slate Enterprise Production Release: 44 Sprints, 36 Curricula & 200 Indonesian Personas Verification
 
 ### Sorotan Pembaruan (Highlights)

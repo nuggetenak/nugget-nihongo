@@ -1,31 +1,13 @@
 import React, { useState, useEffect, useMemo, Suspense } from 'react';
 import {
-  BookOpen,
-  Award,
-  BookMarked,
   Search,
   Volume2,
   Sparkles,
   Filter,
   ChevronRight,
-  Layers,
   LayoutGrid,
   List,
-  Compass,
-  Headphones,
   ArrowLeft,
-  CheckCircle2,
-  Library,
-  Dumbbell,
-  Languages,
-  Mic2,
-  Scale,
-  FileText,
-  Binary,
-  GraduationCap,
-  Sparkle,
-  Sliders,
-  ExternalLink,
 } from 'lucide-react';
 import { useAppStore } from '../store/useAppStore';
 import { useModalStore } from '../store/useModalStore';
@@ -84,7 +66,7 @@ export const DOJO_TOOLS: DojoToolMeta[] = [
     jpTitle: '漢字道場・筆順',
     desc: '2.136 Kanji Jouyou & Jinmeiyou lengkap dengan animasi goresan SVG, deteksi stroke order, dan latihan kanji interaktif.',
     badge: '2.136 Kanji · SVG Animasi',
-    badgeColor: 'bg-amber-500/15 text-amber-300 border-amber-500/30',
+    badgeColor: 'bg-amber-950/70 text-amber-300 border-amber-500/40 font-extrabold',
     icon: '漢',
     actionType: 'subview',
     canDo: 'Mengenali dan menulis Kanji sesuai urutan goresan standar.',
@@ -98,7 +80,7 @@ export const DOJO_TOOLS: DojoToolMeta[] = [
     jpTitle: '聴解CBTシミュレーター',
     desc: '38 audio pelafalan otentik dan 163 soal simulasi ujian Choukai berstandar JFT-Basic dan Prometric CBT.',
     badge: '38 Audio · 163 Soal',
-    badgeColor: 'bg-blue-500/15 text-blue-300 border-blue-500/30',
+    badgeColor: 'bg-blue-950/70 text-blue-300 border-blue-500/40 font-extrabold',
     icon: '🎧',
     actionType: 'subview',
     canDo: 'Memahami percakapan cepat dan instruksi audio simulasi ujian.',
@@ -112,7 +94,7 @@ export const DOJO_TOOLS: DojoToolMeta[] = [
     jpTitle: 'アクセントスタジオ',
     desc: 'Visualisasi kontur nada Tokyo (Heiban, Atamadaka, Nakadaka, Odaka) dan pelatih minimal pairs kata bermakna ganda.',
     badge: 'Kontur Nada Tokyo',
-    badgeColor: 'bg-purple-500/15 text-purple-300 border-purple-500/30',
+    badgeColor: 'bg-purple-950/70 text-purple-300 border-purple-500/40 font-extrabold',
     icon: '🎵',
     actionType: 'modal',
     canDo: 'Melafalkan kata Jepang dengan kontur nada yang tepat.',
@@ -126,7 +108,7 @@ export const DOJO_TOOLS: DojoToolMeta[] = [
     jpTitle: '適応型プレースメントテスト',
     desc: 'Diagnosa kemampuan bahasa Jepang (JLPT N5–N1) secara presisi dalam 10–12 soal adaptif berbasis Item Response Theory (IRT).',
     badge: '10–12 Soal IRT Presisi',
-    badgeColor: 'bg-emerald-500/15 text-emerald-300 border-emerald-500/30',
+    badgeColor: 'bg-emerald-950/70 text-emerald-300 border-emerald-500/40 font-extrabold',
     icon: '🎯',
     actionType: 'modal',
     canDo: 'Mendiagnosa level kemampuan bahasa Jepang secara instan.',
@@ -142,7 +124,7 @@ export const DOJO_TOOLS: DojoToolMeta[] = [
     jpTitle: '敬語ビジネストレーナー',
     desc: 'Kuasai tata krama komunikasi bisnis Jepang: Sonkeigo (hormat), Kenjougo (merendah), Teineigo (sopan), dan etiket kerja.',
     badge: 'Etiket Bisnis Jepang',
-    badgeColor: 'bg-indigo-500/15 text-indigo-300 border-indigo-500/30',
+    badgeColor: 'bg-indigo-950/70 text-indigo-300 border-indigo-500/40 font-extrabold',
     icon: '💼',
     actionType: 'modal',
     canDo: 'Berkomunikasi formal dan sopan di lingkungan kerja Jepang.',
@@ -156,7 +138,7 @@ export const DOJO_TOOLS: DojoToolMeta[] = [
     jpTitle: '助数詞シミュレーター',
     desc: 'Simulator kata bantu bilangan: pelajari pergeseran bunyi Onbin (本, 匹, dll.) dan 16 penggolong benda paling penting.',
     badge: '16 Penggolong Kata',
-    badgeColor: 'bg-cyan-500/15 text-cyan-300 border-cyan-500/30',
+    badgeColor: 'bg-cyan-950/70 text-cyan-300 border-cyan-500/40 font-extrabold',
     icon: '🔢',
     actionType: 'modal',
     canDo: 'Menghitung berbagai objek dengan penggolong kata yang benar.',
@@ -170,7 +152,7 @@ export const DOJO_TOOLS: DojoToolMeta[] = [
     jpTitle: '動詞活用エンジン',
     desc: 'Eksplor 9 bentuk perubahan kata kerja Jepang (Te, Masu, Nai, Ba, Tara, Perintah, Pasif, Kausatif, dll.) dan deinflector.',
     badge: '9 Bentuk Konjugasi',
-    badgeColor: 'bg-rose-500/15 text-rose-300 border-rose-500/30',
+    badgeColor: 'bg-rose-950/70 text-rose-300 border-rose-500/40 font-extrabold',
     icon: '🔄',
     actionType: 'modal',
     canDo: 'Menguasai pola perubahan bentuk kata kerja secara sistematis.',
@@ -184,7 +166,7 @@ export const DOJO_TOOLS: DojoToolMeta[] = [
     jpTitle: 'ニュアンス比較',
     desc: 'Komparator perbedaan makna pola tata bahasa yang mirip (〜ように vs 〜ために, dll.) agar tidak tertukar dalam konteks nyata.',
     badge: 'Analisis Perbedaan Makna',
-    badgeColor: 'bg-teal-500/15 text-teal-300 border-teal-500/30',
+    badgeColor: 'bg-teal-950/70 text-teal-300 border-teal-500/40 font-extrabold',
     icon: '⚖️',
     actionType: 'modal',
     canDo: 'Membedakan nuansa halus antar pola tata bahasa serupa.',
@@ -198,7 +180,7 @@ export const DOJO_TOOLS: DojoToolMeta[] = [
     jpTitle: 'ことわざギャラリー',
     desc: 'Koleksi 376+ peribahasa tradisional Jepang lengkap dengan filosofi hidup, hikmah budaya, dan padanan bahasa Indonesia.',
     badge: '376+ Peribahasa Tradisional',
-    badgeColor: 'bg-amber-500/15 text-amber-300 border-amber-500/30',
+    badgeColor: 'bg-amber-950/70 text-amber-300 border-amber-500/40 font-extrabold',
     icon: '📜',
     actionType: 'modal',
     canDo: 'Memahami peribahasa dan kebijaksanaan budaya Jepang.',
@@ -214,7 +196,7 @@ export const DOJO_TOOLS: DojoToolMeta[] = [
     jpTitle: '五十音表・かなチャート',
     desc: 'Bagan interaktif 46 Hiragana dan 46 Katakana dengan audio pelafalan asli, tabel dakuten, handakuten, dan yoon.',
     badge: '46 Hiragana & Katakana',
-    badgeColor: 'bg-pink-500/15 text-pink-300 border-pink-500/30',
+    badgeColor: 'bg-pink-950/70 text-pink-300 border-pink-500/40 font-extrabold',
     icon: '🔤',
     actionType: 'modal',
     canDo: 'Membaca dan melafalkan seluruh alfabet fonetik Kana.',
@@ -228,7 +210,7 @@ export const DOJO_TOOLS: DojoToolMeta[] = [
     jpTitle: '標準教科書ライブラリ',
     desc: 'Pustaka kurikulum 9 buku teks standar: Minna no Nihongo I & II, Genki I & II, Irodori (Pemula, A1, A2), Marugoto dengan latihan otentik.',
     badge: '9 Seri Buku Populer',
-    badgeColor: 'bg-emerald-500/15 text-emerald-300 border-emerald-500/30',
+    badgeColor: 'bg-emerald-950/70 text-emerald-300 border-emerald-500/40 font-extrabold',
     icon: '📖',
     actionType: 'subview',
     canDo: 'Menyelaraskan studi mandiri dengan buku teks standar kursus/LPK.',
@@ -239,21 +221,18 @@ export const MateriHubPage: React.FC = () => {
   const {
     selectedLevel, setSelectedLevel,
     searchQuery, setSearchQuery,
-    showFurigana, showRomaji,
+    showFurigana, setShowFurigana,
+    showRomaji, setShowRomaji,
     cards,
     openDetailModal,
-    openKana,
-    openConjugation,
-    openNuance,
-    openKotowaza,
-    openCatPlacement,
     materiStudio: activeStudio,
     setMateriStudio: setActiveStudio,
   } = useAppStore();
 
-  // Active Tool Sub-View state (PROJECT.md § 4 contract)
+  // Active Tool Sub-View state
   const [activeTool, setActiveTool] = useState<ActiveDojoTool>(null);
-  const [selectedClusterFilter, setSelectedClusterFilter] = useState<'all' | 'cluster1' | 'cluster2' | 'cluster3' | 'kamus'>('all');
+  const [selectedClusterFilter, setSelectedClusterFilter] = useState<'all' | 'cluster1' | 'cluster2' | 'cluster3'>('all');
+  const [hubSectionMode, setHubSectionMode] = useState<'dojo' | 'kamus'>('dojo');
 
   // JLPT Reference Dictionary state
   const [kurikulumSub, setKurikulumSub] = useState<'jlpt' | 'freeway'>('jlpt');
@@ -271,7 +250,7 @@ export const MateriHubPage: React.FC = () => {
   // Max items to render in list for instantaneous rendering
   const [renderLimit, setRenderLimit] = useState(60);
 
-  // Synchronize activeStudio (e.g. from openBookStudio or external triggers) with activeTool
+  // Synchronize activeStudio with activeTool
   useEffect(() => {
     if (activeStudio === 'kanji' && activeTool !== 'kanji') {
       setActiveTool('kanji');
@@ -310,7 +289,7 @@ export const MateriHubPage: React.FC = () => {
     };
   }, [selectedLevel]);
 
-  // Handle Clean Back to Catalog (PROJECT.md § 4 contract)
+  // Handle Clean Back to Catalog
   const handleBackToCatalog = () => {
     setActiveTool(null);
     setActiveStudio('kurikulum');
@@ -350,23 +329,18 @@ export const MateriHubPage: React.FC = () => {
     } else if (toolId === 'pitch') {
       useModalStore.getState().openModal('pitch');
     } else if (toolId === 'cat') {
-      openCatPlacement();
       useModalStore.getState().openModal('catPlacement');
     } else if (toolId === 'keigo') {
       useModalStore.getState().openModal('keigo');
     } else if (toolId === 'counters') {
       useModalStore.getState().openModal('counters');
     } else if (toolId === 'conjugation') {
-      openConjugation();
       useModalStore.getState().openModal('conjugation');
     } else if (toolId === 'nuance') {
-      openNuance();
       useModalStore.getState().openModal('nuance');
     } else if (toolId === 'kotowaza') {
-      openKotowaza();
       useModalStore.getState().openModal('kotowaza');
     } else if (toolId === 'kana') {
-      openKana();
       useModalStore.getState().openModal('kana');
     }
   };
@@ -393,7 +367,7 @@ export const MateriHubPage: React.FC = () => {
     { id: 'expression', label: 'Ungkapan (表現)' },
   ];
 
-  // Canonical predicate matching rules verified by tests/test-sprint-12-features.js
+  // Canonical predicate matching rules
   const filteredVocab = useMemo(() => {
     let list = vocabList;
     if (selectedPos !== 'all') {
@@ -445,11 +419,60 @@ export const MateriHubPage: React.FC = () => {
   // Active Tool metadata
   const activeToolMeta = DOJO_TOOLS.find((t) => t.id === activeTool);
 
+  // Helper to render consistent, accessible Dojo Tool Cards
+  const renderDojoToolCard = (tool: DojoToolMeta) => (
+    <div
+      key={tool.id}
+      role="button"
+      tabIndex={0}
+      onClick={() => handleOpenTool(tool.id)}
+      onKeyDown={(e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          handleOpenTool(tool.id);
+        }
+      }}
+      aria-label={`${tool.title}: ${tool.desc}`}
+      className="bg-surface-2 hover:bg-surface-3 border border-accent/20 hover:border-accent/40 rounded-2xl p-4 sm:p-5 flex flex-col justify-between cursor-pointer transition-all hover:-translate-y-0.5 shadow-sm group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent active:scale-95"
+    >
+      <div className="space-y-2.5">
+        <div className="flex items-start justify-between gap-2">
+          <div className="w-10 h-10 sm:w-11 sm:h-11 rounded-xl bg-surface/80 border border-accent/20 flex items-center justify-center text-lg sm:text-xl shadow-xs group-hover:scale-105 transition-transform shrink-0 font-japanese font-black">
+            {tool.icon}
+          </div>
+          <span className={`text-[10px] font-bold px-2 py-0.5 rounded-full border ${tool.badgeColor} shrink-0`}>
+            {tool.badge}
+          </span>
+        </div>
+        <div>
+          <h3 className="text-sm sm:text-base font-bold text-appText-bright group-hover:text-amber-400 transition-colors">
+            {tool.title}
+          </h3>
+          <p className="text-[11px] font-mono text-appText-muted mt-0.5" lang="ja">
+            {tool.jpTitle}
+          </p>
+        </div>
+        <p className="text-xs text-stone-300 line-clamp-2 leading-relaxed">
+          {tool.desc}
+        </p>
+      </div>
+
+      <div className="mt-3 pt-2.5 border-t border-accent/15 flex items-center justify-between text-[11px]">
+        <span className="text-[10px] text-amber-200/90 font-bold line-clamp-1">
+          {tool.canDo}
+        </span>
+        <span className="text-amber-400 font-extrabold group-hover:translate-x-1 transition-transform shrink-0 ml-1">
+          Buka →
+        </span>
+      </div>
+    </div>
+  );
+
   // ── Render Focused Sub-View with Sticky Back Header Bar ──
   if (activeTool !== null) {
     return (
       <div className="w-full min-h-screen pb-[calc(5.5rem+env(safe-area-inset-bottom))] lg:pb-12 animate-in fade-in duration-200">
-        {/* Sticky Top Bar for Focused Sub-View (PROJECT.md § 4) */}
+        {/* Sticky Top Bar for Focused Sub-View */}
         <div className="sticky top-0 z-30 bg-surface/95 backdrop-blur-md border-b border-accent/20 px-3 sm:px-6 py-2.5 sm:py-3.5 flex items-center justify-between shadow-sm">
           <button
             type="button"
@@ -557,361 +580,181 @@ export const MateriHubPage: React.FC = () => {
     );
   }
 
-  // ── Render Consolidated 3-Cluster Dojo & Pustaka Catalog ──
+  // ── Render Consolidated Dojo & Pustaka Catalog ──
   return (
     <div className="max-w-5xl mx-auto py-3 sm:py-6 pb-[calc(5.5rem+env(safe-area-inset-bottom))] lg:pb-12 space-y-6 sm:space-y-8 animate-in fade-in duration-300 min-w-0 max-w-full overflow-x-hidden px-3 sm:px-4">
-      {/* ── Main Catalog Header ── */}
-      <div className="flex flex-wrap items-center justify-between gap-3 sm:gap-4">
-        <div className="flex-1 min-w-[200px]">
+      {/* ── Main Catalog Header with Dual Segmented Mode Switcher ── */}
+      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 sm:gap-4 border-b border-accent/15 pb-4">
+        <div className="flex-1 min-w-0">
           <div className="flex items-center gap-2 sm:gap-3 flex-wrap">
-            <h1 className="text-lg sm:text-2xl lg:text-3xl font-extrabold text-appText-bright tracking-tight">
-              Materi Hub & Dojo <span className="text-xs sm:text-base font-normal text-appText-muted">· 学習ハブ・道場</span>
+            <h1 className="text-lg sm:text-2xl font-extrabold text-appText-bright tracking-tight">
+              Materi Hub & Dojo <span className="text-xs sm:text-sm font-normal text-appText-muted">· 学習ハブ・道場</span>
             </h1>
             <SyncStatusPill />
           </div>
-          <p className="text-xs sm:text-sm text-appText-muted mt-0.5 hidden sm:block">
-            Katalog 11 alat interaktif, laboratorium tata bahasa & budaya, serta pustaka referensi standar.
+          <p className="text-xs text-appText-muted mt-0.5">
+            {hubSectionMode === 'dojo'
+              ? '11 Alat interaktif, laboratorium tata bahasa, audio choukai & simulator CBT.'
+              : 'Eksplorasi 10.500+ kosakata dan 850+ pola kalimat JLPT N5–N1 & Jalur Freeway.'}
           </p>
         </div>
 
-        {/* Quick Tools Ribbon (Desktop/Tablet) */}
-        <div className="hidden sm:flex flex-wrap items-center gap-2 shrink-0">
+        {/* High-Level Segmented Mode: [ 🥋 Dojo (11 Alat) ] vs [ 📖 Kamus & Indeks ] */}
+        <div className="flex items-center p-1 bg-surface-2 border border-accent/20 rounded-2xl shrink-0 self-start sm:self-auto">
           <button
             type="button"
-            onClick={() => handleOpenTool('choukai')}
-            className="min-h-[40px] px-3.5 py-2 rounded-xl bg-amber-500/20 hover:bg-amber-500/30 border border-amber-500/40 text-amber-300 text-xs font-bold transition-all flex items-center gap-1.5 shadow-sm active:scale-95"
+            onClick={() => setHubSectionMode('dojo')}
+            className={`px-3.5 py-2 rounded-xl text-xs font-bold transition-all flex items-center gap-1.5 active:scale-95 ${
+              hubSectionMode === 'dojo'
+                ? 'bg-amber-500 text-stone-950 font-black shadow-sm'
+                : 'text-appText-muted hover:text-appText-bright'
+            }`}
           >
-            <Headphones className="w-3.5 h-3.5 text-amber-400" />
-            <span>Simulasi Choukai (JFT)</span>
-            <span>🎧</span>
+            <span>🥋</span>
+            <span>Dojo (11 Alat)</span>
           </button>
           <button
             type="button"
-            onClick={() => handleOpenTool('kana')}
-            className="min-h-[40px] px-3.5 py-2 rounded-xl bg-amber-500/15 hover:bg-amber-500/25 border border-amber-500/35 text-accent-hot text-xs font-bold transition-all flex items-center gap-1.5 shadow-sm active:scale-95"
+            onClick={() => setHubSectionMode('kamus')}
+            className={`px-3.5 py-2 rounded-xl text-xs font-bold transition-all flex items-center gap-1.5 active:scale-95 ${
+              hubSectionMode === 'kamus'
+                ? 'bg-amber-500 text-stone-950 font-black shadow-sm'
+                : 'text-appText-muted hover:text-appText-bright'
+            }`}
           >
-            <span>Tabel Kana</span>
-            <span className="font-mono text-xs">あ/ア</span>
-          </button>
-          <button
-            type="button"
-            onClick={() => handleOpenTool('conjugation')}
-            className="min-h-[40px] px-3.5 py-2 rounded-xl bg-surface-2 hover:bg-surface-3 border border-accent/25 text-appText-bright text-xs font-bold transition-all flex items-center gap-1.5 shadow-sm active:scale-95"
-          >
-            <span>Konjugasi</span>
-            <span>🔄</span>
-          </button>
-          <button
-            type="button"
-            onClick={() => handleOpenTool('nuance')}
-            className="min-h-[40px] px-3.5 py-2 rounded-xl bg-surface-2 hover:bg-surface-3 border border-accent/25 text-appText-bright text-xs font-bold transition-all flex items-center gap-1.5 shadow-sm active:scale-95"
-          >
-            <span>Inspektor Nuansa</span>
-            <span>⚖️</span>
-          </button>
-        </div>
-
-        {/* Quick Tools Compact Icons (Mobile: compliant >= 40px touch targets) */}
-        <div className="flex sm:hidden items-center gap-1.5 shrink-0">
-          <button
-            type="button"
-            onClick={() => handleOpenTool('choukai')}
-            title="Simulasi Choukai CBT"
-            aria-label="Simulasi Choukai CBT"
-            className="min-h-[40px] min-w-[40px] rounded-xl bg-amber-500/20 border border-amber-500/40 text-amber-300 text-sm flex items-center justify-center active:scale-95"
-          >
-            🎧
-          </button>
-          <button
-            type="button"
-            onClick={() => handleOpenTool('kana')}
-            title="Tabel Kana"
-            aria-label="Tabel Kana"
-            className="min-h-[40px] min-w-[40px] px-2.5 rounded-xl bg-amber-500/15 border border-amber-500/30 text-accent-hot text-xs font-extrabold flex items-center justify-center gap-1 active:scale-95"
-          >
-            <span>あ</span>
-          </button>
-          <button
-            type="button"
-            onClick={() => handleOpenTool('conjugation')}
-            title="Konjugasi Verba"
-            aria-label="Konjugasi Verba"
-            className="min-h-[40px] min-w-[40px] rounded-xl bg-surface-2 border border-accent/20 text-appText-bright text-sm flex items-center justify-center active:scale-95"
-          >
-            🔄
-          </button>
-          <button
-            type="button"
-            onClick={() => handleOpenTool('nuance')}
-            title="Inspektor Nuansa"
-            aria-label="Inspektor Nuansa"
-            className="min-h-[40px] min-w-[40px] rounded-xl bg-surface-2 border border-accent/20 text-appText-bright text-sm flex items-center justify-center active:scale-95"
-          >
-            ⚖️
+            <span>📖</span>
+            <span>Kamus & Indeks</span>
           </button>
         </div>
       </div>
 
-      {/* ── Catalog Filter & Quick Jump Ribbon ── */}
-      <div className="flex items-center gap-2 overflow-x-auto scrollbar-none pb-1 max-w-full">
-        {[
-          { id: 'all', label: 'Semua Alat (11)', icon: '🥋' },
-          { id: 'cluster1', label: 'Keterampilan Inti (4)', icon: '🥋' },
-          { id: 'cluster2', label: 'Lab Bahasa & Budaya (5)', icon: '🔬' },
-          { id: 'cluster3', label: 'Pustaka & Buku (2)', icon: '📚' },
-          { id: 'kamus', label: 'Kamus JLPT & Freeway', icon: '📖' },
-        ].map((tab) => {
-          const isSelected = selectedClusterFilter === tab.id;
-          return (
-            <button
-              key={tab.id}
-              type="button"
-              onClick={() => setSelectedClusterFilter(tab.id as any)}
-              className={`px-3.5 py-2 rounded-xl text-xs font-bold whitespace-nowrap shrink-0 transition-all active:scale-95 flex items-center gap-1.5 min-h-[40px] border ${
-                isSelected
-                  ? 'bg-accent text-bg border-accent shadow-sm font-black'
-                  : 'bg-surface-2 border-accent/20 text-appText-muted hover:text-appText-bright hover:border-accent/40'
-              }`}
-            >
-              <span>{tab.icon}</span>
-              <span>{tab.label}</span>
-            </button>
-          );
-        })}
-      </div>
-
-      {/* ── CLUSTER 1: LATIHAN KETERAMPILAN INTI (CORE SKILLS) ── */}
-      {(selectedClusterFilter === 'all' || selectedClusterFilter === 'cluster1') && (
-        <section className="space-y-3.5 animate-in fade-in duration-200">
-          <div className="flex items-center justify-between border-b border-accent/15 pb-2">
-            <div className="flex items-center gap-2">
-              <span className="text-base sm:text-lg">🥋</span>
-              <h2 className="text-sm sm:text-base font-extrabold text-appText-bright tracking-tight">
-                Cluster 1: Latihan Keterampilan Inti
-              </h2>
-              <span className="text-xs text-appText-muted font-normal hidden sm:inline">
-                · Core Japanese Skills (4 Alat)
-              </span>
-            </div>
-            <span className="text-[11px] font-mono font-bold text-accent">
-              4 Alat Interaktif
-            </span>
+      {/* ── DOJO MODE: 11 Interactive Tools across 3 Pedagogical Clusters ── */}
+      {hubSectionMode === 'dojo' && (
+        <div className="space-y-6 sm:space-y-8 animate-in fade-in duration-200">
+          {/* Cluster Jump Tabs */}
+          <div className="flex items-center gap-2 overflow-x-auto scrollbar-none pb-1 max-w-full">
+            {[
+              { id: 'all', label: 'Semua Alat (11)', icon: '🥋' },
+              { id: 'cluster1', label: 'Keterampilan Inti (4)', icon: '🥋' },
+              { id: 'cluster2', label: 'Lab Bahasa & Budaya (5)', icon: '🔬' },
+              { id: 'cluster3', label: 'Pustaka & Buku (2)', icon: '📚' },
+            ].map((tab) => {
+              const isSelected = selectedClusterFilter === tab.id;
+              return (
+                <button
+                  key={tab.id}
+                  type="button"
+                  onClick={() => setSelectedClusterFilter(tab.id as any)}
+                  className={`px-3.5 py-2 rounded-xl text-xs font-bold whitespace-nowrap shrink-0 transition-all active:scale-95 flex items-center gap-1.5 min-h-[40px] border ${
+                    isSelected
+                      ? 'bg-amber-500 text-stone-950 border-amber-500 shadow-sm font-black'
+                      : 'bg-surface-2 border-accent/20 text-appText-muted hover:text-appText-bright hover:border-accent/40'
+                  }`}
+                >
+                  <span>{tab.icon}</span>
+                  <span>{tab.label}</span>
+                </button>
+              );
+            })}
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
-            {DOJO_TOOLS.filter((t) => t.clusterId === 1).map((tool) => (
-              <div
-                key={tool.id}
-                role="button"
-                tabIndex={0}
-                onClick={() => handleOpenTool(tool.id)}
-                onKeyDown={(e) => {
-                  if (e.key === 'Enter' || e.key === ' ') {
-                    e.preventDefault();
-                    handleOpenTool(tool.id);
-                  }
-                }}
-                aria-label={`${tool.title}: ${tool.desc}`}
-                className="bg-surface-2 hover:bg-surface-3 border border-accent/20 hover:border-accent/40 rounded-2xl p-4 sm:p-5 flex flex-col justify-between cursor-pointer transition-all hover:-translate-y-0.5 shadow-sm group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent active:scale-95"
-              >
-                <div className="space-y-2.5">
-                  <div className="flex items-start justify-between gap-2">
-                    <div className="w-10 h-10 sm:w-11 sm:h-11 rounded-xl bg-surface/80 border border-accent/20 flex items-center justify-center text-lg sm:text-xl shadow-xs group-hover:scale-105 transition-transform shrink-0 font-japanese font-black">
-                      {tool.icon}
-                    </div>
-                    <span className={`text-[10px] font-bold px-2 py-0.5 rounded-full border ${tool.badgeColor} shrink-0`}>
-                      {tool.badge}
-                    </span>
-                  </div>
-                  <div>
-                    <h3 className="text-sm sm:text-base font-bold text-appText-bright group-hover:text-accent transition-colors">
-                      {tool.title}
-                    </h3>
-                    <p className="text-[11px] font-mono text-appText-muted mt-0.5" lang="ja">
-                      {tool.jpTitle}
-                    </p>
-                  </div>
-                  <p className="text-xs text-appText-muted line-clamp-2 leading-relaxed">
-                    {tool.desc}
-                  </p>
-                </div>
-
-                <div className="mt-3 pt-2.5 border-t border-accent/10 flex items-center justify-between text-[11px]">
-                  <span className="text-[10px] text-accent/80 font-medium line-clamp-1">
-                    {tool.canDo}
-                  </span>
-                  <span className="text-accent font-bold group-hover:translate-x-0.5 transition-transform shrink-0 ml-1">
-                    Buka →
+          {/* ── CLUSTER 1: LATIHAN KETERAMPILAN INTI (CORE SKILLS) ── */}
+          {(selectedClusterFilter === 'all' || selectedClusterFilter === 'cluster1') && (
+            <section className="space-y-3.5 animate-in fade-in duration-200">
+              <div className="flex items-center justify-between border-b border-accent/15 pb-2">
+                <div className="flex items-center gap-2">
+                  <span className="text-base sm:text-lg">🥋</span>
+                  <h2 className="text-sm sm:text-base font-extrabold text-appText-bright tracking-tight">
+                    Cluster 1: Latihan Keterampilan Inti
+                  </h2>
+                  <span className="text-xs text-appText-muted font-normal hidden sm:inline">
+                    · Core Japanese Skills (4 Alat)
                   </span>
                 </div>
+                <span className="text-[11px] font-mono font-bold text-accent">
+                  4 Alat Interaktif
+                </span>
               </div>
-            ))}
-          </div>
-        </section>
+
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
+                {DOJO_TOOLS.filter((t) => t.clusterId === 1).map(renderDojoToolCard)}
+              </div>
+            </section>
+          )}
+
+          {/* ── CLUSTER 2: LABORATORIUM TATA BAHASA & BUDAYA (GRAMMAR & CULTURE LAB) ── */}
+          {(selectedClusterFilter === 'all' || selectedClusterFilter === 'cluster2') && (
+            <section className="space-y-3.5 animate-in fade-in duration-200">
+              <div className="flex items-center justify-between border-b border-accent/15 pb-2">
+                <div className="flex items-center gap-2">
+                  <span className="text-base sm:text-lg">🔬</span>
+                  <h2 className="text-sm sm:text-base font-extrabold text-appText-bright tracking-tight">
+                    Cluster 2: Laboratorium Tata Bahasa & Budaya
+                  </h2>
+                  <span className="text-xs text-appText-muted font-normal hidden sm:inline">
+                    · Grammar, Nuance, & Cultural Lab (5 Alat)
+                  </span>
+                </div>
+                <span className="text-[11px] font-mono font-bold text-accent">
+                  5 Lab Interaktif
+                </span>
+              </div>
+
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4">
+                {DOJO_TOOLS.filter((t) => t.clusterId === 2).map(renderDojoToolCard)}
+              </div>
+            </section>
+          )}
+
+          {/* ── CLUSTER 3: PERPUSTAKAAN & REFERENSI (REFERENCE LIBRARY) ── */}
+          {(selectedClusterFilter === 'all' || selectedClusterFilter === 'cluster3') && (
+            <section className="space-y-3.5 animate-in fade-in duration-200">
+              <div className="flex items-center justify-between border-b border-accent/15 pb-2">
+                <div className="flex items-center gap-2">
+                  <span className="text-base sm:text-lg">📚</span>
+                  <h2 className="text-sm sm:text-base font-extrabold text-appText-bright tracking-tight">
+                    Cluster 3: Perpustakaan & Referensi Standar
+                  </h2>
+                  <span className="text-xs text-appText-muted font-normal hidden sm:inline">
+                    · Reference Library & Textbooks (2 Koleksi)
+                  </span>
+                </div>
+                <span className="text-[11px] font-mono font-bold text-accent">
+                  2 Referensi Standar
+                </span>
+              </div>
+
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
+                {DOJO_TOOLS.filter((t) => t.clusterId === 3).map(renderDojoToolCard)}
+              </div>
+            </section>
+          )}
+        </div>
       )}
 
-      {/* ── CLUSTER 2: LABORATORIUM TATA BAHASA & BUDAYA (GRAMMAR & CULTURE LAB) ── */}
-      {(selectedClusterFilter === 'all' || selectedClusterFilter === 'cluster2') && (
-        <section className="space-y-3.5 animate-in fade-in duration-200">
-          <div className="flex items-center justify-between border-b border-accent/15 pb-2">
-            <div className="flex items-center gap-2">
-              <span className="text-base sm:text-lg">🔬</span>
-              <h2 className="text-sm sm:text-base font-extrabold text-appText-bright tracking-tight">
-                Cluster 2: Laboratorium Tata Bahasa & Budaya
-              </h2>
-              <span className="text-xs text-appText-muted font-normal hidden sm:inline">
-                · Grammar, Nuance, & Cultural Lab (5 Alat)
-              </span>
-            </div>
-            <span className="text-[11px] font-mono font-bold text-accent">
-              5 Lab Interaktif
-            </span>
-          </div>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4">
-            {DOJO_TOOLS.filter((t) => t.clusterId === 2).map((tool) => (
-              <div
-                key={tool.id}
-                role="button"
-                tabIndex={0}
-                onClick={() => handleOpenTool(tool.id)}
-                onKeyDown={(e) => {
-                  if (e.key === 'Enter' || e.key === ' ') {
-                    e.preventDefault();
-                    handleOpenTool(tool.id);
-                  }
-                }}
-                aria-label={`${tool.title}: ${tool.desc}`}
-                className="bg-surface-2 hover:bg-surface-3 border border-accent/20 hover:border-accent/40 rounded-2xl p-4 sm:p-5 flex flex-col justify-between cursor-pointer transition-all hover:-translate-y-0.5 shadow-sm group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent active:scale-95"
-              >
-                <div className="space-y-2.5">
-                  <div className="flex items-start justify-between gap-2">
-                    <div className="w-10 h-10 sm:w-11 sm:h-11 rounded-xl bg-surface/80 border border-accent/20 flex items-center justify-center text-lg sm:text-xl shadow-xs group-hover:scale-105 transition-transform shrink-0 font-japanese font-black">
-                      {tool.icon}
-                    </div>
-                    <span className={`text-[10px] font-bold px-2 py-0.5 rounded-full border ${tool.badgeColor} shrink-0`}>
-                      {tool.badge}
-                    </span>
-                  </div>
-                  <div>
-                    <h3 className="text-sm sm:text-base font-bold text-appText-bright group-hover:text-accent transition-colors">
-                      {tool.title}
-                    </h3>
-                    <p className="text-[11px] font-mono text-appText-muted mt-0.5" lang="ja">
-                      {tool.jpTitle}
-                    </p>
-                  </div>
-                  <p className="text-xs text-appText-muted line-clamp-2 leading-relaxed">
-                    {tool.desc}
-                  </p>
-                </div>
-
-                <div className="mt-3 pt-2.5 border-t border-accent/10 flex items-center justify-between text-[11px]">
-                  <span className="text-[10px] text-accent/80 font-medium line-clamp-1">
-                    {tool.canDo}
-                  </span>
-                  <span className="text-accent font-bold group-hover:translate-x-0.5 transition-transform shrink-0 ml-1">
-                    Buka →
-                  </span>
-                </div>
-              </div>
-            ))}
-          </div>
-        </section>
-      )}
-
-      {/* ── CLUSTER 3: PERPUSTAKAAN & REFERENSI (REFERENCE LIBRARY) ── */}
-      {(selectedClusterFilter === 'all' || selectedClusterFilter === 'cluster3') && (
-        <section className="space-y-3.5 animate-in fade-in duration-200">
-          <div className="flex items-center justify-between border-b border-accent/15 pb-2">
-            <div className="flex items-center gap-2">
-              <span className="text-base sm:text-lg">📚</span>
-              <h2 className="text-sm sm:text-base font-extrabold text-appText-bright tracking-tight">
-                Cluster 3: Perpustakaan & Referensi Standar
-              </h2>
-              <span className="text-xs text-appText-muted font-normal hidden sm:inline">
-                · Reference Library & Textbooks (2 Koleksi)
-              </span>
-            </div>
-            <span className="text-[11px] font-mono font-bold text-accent">
-              2 Referensi Standar
-            </span>
-          </div>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
-            {DOJO_TOOLS.filter((t) => t.clusterId === 3).map((tool) => (
-              <div
-                key={tool.id}
-                role="button"
-                tabIndex={0}
-                onClick={() => handleOpenTool(tool.id)}
-                onKeyDown={(e) => {
-                  if (e.key === 'Enter' || e.key === ' ') {
-                    e.preventDefault();
-                    handleOpenTool(tool.id);
-                  }
-                }}
-                aria-label={`${tool.title}: ${tool.desc}`}
-                className="bg-surface-2 hover:bg-surface-3 border border-accent/20 hover:border-accent/40 rounded-2xl p-4 sm:p-5 flex flex-col justify-between cursor-pointer transition-all hover:-translate-y-0.5 shadow-sm group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent active:scale-95"
-              >
-                <div className="space-y-2.5">
-                  <div className="flex items-start justify-between gap-2">
-                    <div className="w-10 h-10 sm:w-11 sm:h-11 rounded-xl bg-surface/80 border border-accent/20 flex items-center justify-center text-lg sm:text-xl shadow-xs group-hover:scale-105 transition-transform shrink-0 font-japanese font-black">
-                      {tool.icon}
-                    </div>
-                    <span className={`text-[10px] font-bold px-2 py-0.5 rounded-full border ${tool.badgeColor} shrink-0`}>
-                      {tool.badge}
-                    </span>
-                  </div>
-                  <div>
-                    <h3 className="text-sm sm:text-base font-bold text-appText-bright group-hover:text-accent transition-colors">
-                      {tool.title}
-                    </h3>
-                    <p className="text-[11px] font-mono text-appText-muted mt-0.5" lang="ja">
-                      {tool.jpTitle}
-                    </p>
-                  </div>
-                  <p className="text-xs text-appText-muted line-clamp-2 leading-relaxed">
-                    {tool.desc}
-                  </p>
-                </div>
-
-                <div className="mt-3 pt-2.5 border-t border-accent/10 flex items-center justify-between text-[11px]">
-                  <span className="text-[10px] text-accent/80 font-medium line-clamp-1">
-                    {tool.canDo}
-                  </span>
-                  <span className="text-accent font-bold group-hover:translate-x-0.5 transition-transform shrink-0 ml-1">
-                    Buka →
-                  </span>
-                </div>
-              </div>
-            ))}
-          </div>
-        </section>
-      )}
-
-      {/* ── REFERENSI & KAMUS INDEKS: JLPT N5–N1 & JALUR FREEWAY ── */}
-      {(selectedClusterFilter === 'all' || selectedClusterFilter === 'kamus') && (
-        <section className="space-y-4 pt-4 border-t border-accent/20">
-          <div className="flex items-center justify-between gap-2">
+      {/* ── KAMUS & INDEKS MODE: JLPT N5–N1 & JALUR FREEWAY ── */}
+      {hubSectionMode === 'kamus' && (
+        <section className="space-y-5 animate-in fade-in duration-200">
+          {/* Sub-Track Switcher Header (JLPT Kamus vs Freeway) */}
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 bg-surface-2/60 border border-accent/15 rounded-2xl p-3.5 sm:p-4">
             <div>
-              <h2 className="text-base sm:text-xl font-bold text-appText-bright flex items-center gap-2">
+              <h2 className="text-base sm:text-lg font-bold text-appText-bright flex items-center gap-2">
                 <span>📖</span>
-                <span>Kamus & Indeks Pola Kalimat JLPT</span>
+                <span>Kamus & Indeks Referensi</span>
               </h2>
               <p className="text-xs text-appText-muted mt-0.5">
                 Eksplorasi 10.500+ kosakata dan 850+ pola tata bahasa lengkap dengan audio pelafalan asli.
               </p>
             </div>
 
-            {/* Toggle between JLPT Index vs Freeway Track */}
-            <div className="flex items-center gap-1 bg-surface-2 p-1 rounded-xl border border-accent/15 shrink-0">
+            {/* Segmented Switcher: Kamus JLPT vs Jalur Freeway */}
+            <div className="flex items-center p-1 bg-surface-3/80 rounded-xl border border-accent/20 shrink-0 self-start sm:self-auto">
               <button
                 type="button"
                 onClick={() => setKurikulumSub('jlpt')}
-                className={`px-3 py-1.5 rounded-lg text-xs font-bold transition-colors min-h-[36px] ${
+                className={`px-3 py-1.5 rounded-lg text-xs font-bold transition-all min-h-[36px] active:scale-95 ${
                   kurikulumSub === 'jlpt'
-                    ? 'bg-accent text-bg shadow-sm'
+                    ? 'bg-amber-500 text-stone-950 font-black shadow-sm'
                     : 'text-appText-muted hover:text-appText-bright'
                 }`}
               >
@@ -920,9 +763,9 @@ export const MateriHubPage: React.FC = () => {
               <button
                 type="button"
                 onClick={() => setKurikulumSub('freeway')}
-                className={`px-3 py-1.5 rounded-lg text-xs font-bold transition-colors min-h-[36px] ${
+                className={`px-3 py-1.5 rounded-lg text-xs font-bold transition-all min-h-[36px] active:scale-95 ${
                   kurikulumSub === 'freeway'
-                    ? 'bg-accent text-bg shadow-sm'
+                    ? 'bg-amber-500 text-stone-950 font-black shadow-sm'
                     : 'text-appText-muted hover:text-appText-bright'
                 }`}
               >
@@ -934,32 +777,67 @@ export const MateriHubPage: React.FC = () => {
           {/* ── View A: Kamus JLPT N5–N1 ── */}
           {kurikulumSub === 'jlpt' && (
             <div className="space-y-4">
-              {/* Level Selector Pills */}
-              <div className="flex items-center gap-1.5 sm:gap-2 overflow-x-auto pb-1 scrollbar-none">
-                {jlptLevels.map((lvl) => {
-                  const isSelected = (selectedLevel === 'all' ? 'n5' : selectedLevel) === lvl.id;
-                  return (
-                    <button
-                      key={lvl.id}
-                      type="button"
-                      onClick={() => {
-                        setSelectedLevel(lvl.id);
-                        setRenderLimit(60);
-                      }}
-                      className={`px-3 sm:px-3.5 py-1.5 sm:py-2 rounded-xl text-xs font-bold whitespace-nowrap transition-all border min-h-[40px] active:scale-95 ${
-                        isSelected
-                          ? 'bg-amber-500 text-bg border-amber-500 shadow-sm'
-                          : 'bg-surface-2 border-accent/20 text-appText-muted hover:text-appText-bright hover:border-accent/40'
-                      }`}
-                    >
-                      <span>{lvl.label}</span>
-                      <span className="opacity-75 text-[11px] ml-1.5 font-normal hidden sm:inline">({lvl.desc})</span>
-                    </button>
-                  );
-                })}
+              {/* Row 1: Level Selector Pills & Content Type Segmented Toggle */}
+              <div className="flex flex-col md:flex-row md:items-center justify-between gap-3">
+                {/* Level Selector Pills */}
+                <div className="flex items-center gap-1.5 sm:gap-2 overflow-x-auto pb-1 scrollbar-none">
+                  {jlptLevels.map((lvl) => {
+                    const isSelected = (selectedLevel === 'all' ? 'n5' : selectedLevel) === lvl.id;
+                    return (
+                      <button
+                        key={lvl.id}
+                        type="button"
+                        onClick={() => {
+                          setSelectedLevel(lvl.id);
+                          setRenderLimit(60);
+                        }}
+                        className={`px-3 sm:px-3.5 py-1.5 sm:py-2 rounded-xl text-xs font-bold whitespace-nowrap transition-all border min-h-[40px] active:scale-95 ${
+                          isSelected
+                            ? 'bg-amber-500 text-stone-950 border-amber-500 font-black shadow-sm'
+                            : 'bg-surface-2 border-accent/20 text-appText-muted hover:text-appText-bright hover:border-accent/40'
+                        }`}
+                      >
+                        <span>{lvl.label}</span>
+                        <span className="opacity-80 text-[11px] ml-1.5 font-normal hidden sm:inline">({lvl.desc})</span>
+                      </button>
+                    );
+                  })}
+                </div>
+
+                {/* Sub-Tabs: Kosakata vs Tata Bahasa */}
+                <div className="flex items-center p-1 bg-surface-2 border border-accent/20 rounded-xl shrink-0 self-start md:self-auto">
+                  <button
+                    type="button"
+                    onClick={() => {
+                      setActiveTab('vocab');
+                      setRenderLimit(60);
+                    }}
+                    className={`px-3 py-1.5 rounded-lg text-xs font-bold transition-all min-h-[36px] active:scale-95 ${
+                      activeTab === 'vocab'
+                        ? 'bg-accent text-bg font-black shadow-sm'
+                        : 'text-appText-muted hover:text-appText-bright'
+                    }`}
+                  >
+                    Kosakata ({filteredVocab.length})
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => {
+                      setActiveTab('grammar');
+                      setRenderLimit(60);
+                    }}
+                    className={`px-3 py-1.5 rounded-lg text-xs font-bold transition-all min-h-[36px] active:scale-95 ${
+                      activeTab === 'grammar'
+                        ? 'bg-accent text-bg font-black shadow-sm'
+                        : 'text-appText-muted hover:text-appText-bright'
+                    }`}
+                  >
+                    Tata Bahasa ({filteredGrammar.length})
+                  </button>
+                </div>
               </div>
 
-              {/* Unified Search & View Controls Bar */}
+              {/* Row 2: Unified Search Input + Display Toggles (Furigana, Romaji, View Mode) */}
               <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-2.5">
                 <div className="relative flex-1">
                   <Search className="w-4 h-4 text-appText-muted absolute left-3.5 top-1/2 -translate-y-1/2" />
@@ -981,80 +859,77 @@ export const MateriHubPage: React.FC = () => {
                   )}
                 </div>
 
-                {/* View Mode Switcher (Grid vs Compact List) */}
-                <div className="flex items-center gap-1 bg-surface-2 p-1 rounded-xl border border-accent/15 self-end sm:self-auto shrink-0">
+                <div className="flex items-center gap-1.5 self-end sm:self-auto shrink-0 min-h-[40px] min-w-[40px] rounded-xl">
+                  {/* Furigana Toggle Chip */}
                   <button
                     type="button"
-                    onClick={() => setViewMode('grid')}
-                    className={`p-2 rounded-lg transition-colors min-h-[40px] min-w-[40px] flex items-center justify-center active:scale-95 ${
-                      viewMode === 'grid'
-                        ? 'bg-accent text-bg shadow-sm'
-                        : 'text-appText-muted hover:text-appText-bright'
+                    onClick={() => setShowFurigana(!showFurigana)}
+                    className={`px-2.5 py-1.5 rounded-xl text-xs font-bold transition-all border min-h-[40px] flex items-center gap-1 active:scale-95 ${
+                      showFurigana
+                        ? 'bg-amber-500/20 text-amber-300 border-amber-500/40 shadow-xs'
+                        : 'bg-surface-2 border-accent/20 text-appText-muted hover:text-appText-bright'
                     }`}
-                    title="Tampilan Kartu Grid"
-                    aria-label="Tampilan Kartu Grid"
+                    title="Tampilkan / Sembunyikan Furigana"
+                    aria-pressed={showFurigana}
                   >
-                    <LayoutGrid className="w-4 h-4" />
+                    <span className="font-japanese text-xs">振</span>
+                    <span className="hidden sm:inline">Furigana</span>
                   </button>
+
+                  {/* Romaji Toggle Chip */}
                   <button
                     type="button"
-                    onClick={() => setViewMode('compact')}
-                    className={`p-2 rounded-lg transition-colors min-h-[40px] min-w-[40px] flex items-center justify-center active:scale-95 ${
-                      viewMode === 'compact'
-                        ? 'bg-accent text-bg shadow-sm'
-                        : 'text-appText-muted hover:text-appText-bright'
+                    onClick={() => setShowRomaji(!showRomaji)}
+                    className={`px-2.5 py-1.5 rounded-xl text-xs font-bold transition-all border min-h-[40px] flex items-center gap-1 active:scale-95 ${
+                      showRomaji
+                        ? 'bg-amber-500/20 text-amber-300 border-amber-500/40 shadow-xs'
+                        : 'bg-surface-2 border-accent/20 text-appText-muted hover:text-appText-bright'
                     }`}
-                    title="Tampilan Daftar Ringkas"
-                    aria-label="Tampilan Daftar Ringkas"
+                    title="Tampilkan / Sembunyikan Romaji"
+                    aria-pressed={showRomaji}
                   >
-                    <List className="w-4 h-4" />
+                    <span className="font-mono text-xs">Aa</span>
+                    <span className="hidden sm:inline">Romaji</span>
                   </button>
+
+                  {/* View Mode Switcher (Grid vs Compact List) */}
+                  <div className="flex items-center gap-1 bg-surface-2 p-1 rounded-xl border border-accent/20 shrink-0">
+                    <button
+                      type="button"
+                      onClick={() => setViewMode('grid')}
+                      className={`p-2 rounded-lg transition-colors min-h-[36px] min-w-[36px] flex items-center justify-center active:scale-95 ${
+                        viewMode === 'grid'
+                          ? 'bg-accent text-bg shadow-sm'
+                          : 'text-appText-muted hover:text-appText-bright'
+                      }`}
+                      title="Tampilan Kartu Grid"
+                      aria-label="Tampilan Kartu Grid"
+                    >
+                      <LayoutGrid className="w-4 h-4" />
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() => setViewMode('compact')}
+                      className={`p-2 rounded-lg transition-colors min-h-[36px] min-w-[36px] flex items-center justify-center active:scale-95 ${
+                        viewMode === 'compact'
+                          ? 'bg-accent text-bg shadow-sm'
+                          : 'text-appText-muted hover:text-appText-bright'
+                      }`}
+                      title="Tampilan Daftar Ringkas"
+                      aria-label="Tampilan Daftar Ringkas"
+                    >
+                      <List className="w-4 h-4" />
+                    </button>
+                  </div>
                 </div>
               </div>
 
-              {/* Sub-Tabs: Kosakata vs Tata Bahasa */}
-              <div className="flex items-center justify-between border-b border-accent/15 pb-2.5 pt-1">
-                <div className="flex items-center gap-2">
-                  <button
-                    type="button"
-                    onClick={() => {
-                      setActiveTab('vocab');
-                      setRenderLimit(60);
-                    }}
-                    className={`px-3 py-1.5 rounded-xl text-xs font-bold transition-all min-h-[36px] active:scale-95 ${
-                      activeTab === 'vocab'
-                        ? 'bg-amber-500/20 text-accent-hot border border-amber-500/35'
-                        : 'text-appText-muted hover:text-appText-bright'
-                    }`}
-                  >
-                    Kosakata ({filteredVocab.length})
-                  </button>
-                  <button
-                    type="button"
-                    onClick={() => {
-                      setActiveTab('grammar');
-                      setRenderLimit(60);
-                    }}
-                    className={`px-3 py-1.5 rounded-xl text-xs font-bold transition-all min-h-[36px] active:scale-95 ${
-                      activeTab === 'grammar'
-                        ? 'bg-amber-500/20 text-accent-hot border border-amber-500/35'
-                        : 'text-appText-muted hover:text-appText-bright'
-                    }`}
-                  >
-                    Tata Bahasa ({filteredGrammar.length})
-                  </button>
-                </div>
-
-                <span className="text-[11px] text-appText-muted font-mono font-bold">
-                  Level {(selectedLevel === 'all' ? 'n5' : selectedLevel).toUpperCase()}
-                </span>
-              </div>
-
-              {/* Secondary Filter Pills */}
+              {/* Row 3: Secondary Filter Pills */}
               {activeTab === 'vocab' ? (
-                <div className="flex items-center gap-1.5 overflow-x-auto pb-1 scrollbar-none">
-                  <span className="text-[10px] font-bold uppercase tracking-wider text-accent shrink-0 mr-1">
-                    Kategori:
+                <div className="flex items-center gap-1.5 overflow-x-auto pb-1 scrollbar-none max-w-full">
+                  <span className="text-[10px] font-bold uppercase tracking-wider text-accent shrink-0 mr-1 flex items-center gap-1">
+                    <Filter className="w-3 h-3" />
+                    <span>Kategori:</span>
                   </span>
                   {vocabPosFilters.map((pos) => {
                     const isSelected = selectedPos === pos.id;
@@ -1068,7 +943,7 @@ export const MateriHubPage: React.FC = () => {
                         }}
                         className={`px-2.5 py-1.5 rounded-lg text-xs font-semibold whitespace-nowrap transition-all border min-h-[36px] active:scale-95 ${
                           isSelected
-                            ? 'bg-accent text-bg border-accent font-bold shadow-sm'
+                            ? 'bg-amber-500 text-stone-950 border-amber-500 font-bold shadow-sm'
                             : 'bg-surface-2 border-accent/15 text-appText-muted hover:text-appText-bright'
                         }`}
                       >
@@ -1078,9 +953,10 @@ export const MateriHubPage: React.FC = () => {
                   })}
                 </div>
               ) : (
-                <div className="flex items-center gap-1.5 overflow-x-auto pb-1 scrollbar-none">
-                  <span className="text-[10px] font-bold uppercase tracking-wider text-accent shrink-0 mr-1">
-                    Partikel:
+                <div className="flex items-center gap-1.5 overflow-x-auto pb-1 scrollbar-none max-w-full">
+                  <span className="text-[10px] font-bold uppercase tracking-wider text-accent shrink-0 mr-1 flex items-center gap-1">
+                    <Filter className="w-3 h-3" />
+                    <span>Partikel:</span>
                   </span>
                   {particles.map((p) => {
                     const isSelected = selectedParticle === p;
@@ -1094,7 +970,7 @@ export const MateriHubPage: React.FC = () => {
                         }}
                         className={`px-2.5 py-1.5 rounded-lg text-xs font-semibold whitespace-nowrap transition-all border min-h-[36px] active:scale-95 ${
                           isSelected
-                            ? 'bg-accent text-bg border-accent font-bold shadow-sm'
+                            ? 'bg-amber-500 text-stone-950 border-amber-500 font-bold shadow-sm'
                             : 'bg-surface-2 border-accent/15 text-appText-muted hover:text-appText-bright'
                         }`}
                       >
@@ -1137,7 +1013,7 @@ export const MateriHubPage: React.FC = () => {
                         >
                           <div className="flex items-start justify-between gap-2">
                             <div>
-                              <div className="text-xl font-jp font-bold text-appText-bright group-hover:text-amber-300 transition-colors" lang="ja">
+                              <div className="text-xl font-jp font-bold text-appText-bright group-hover:text-amber-400 font-extrabold transition-colors" lang="ja">
                                 {v.word}
                               </div>
                               {showFurigana && v.reading && v.reading !== v.word && (
@@ -1166,7 +1042,7 @@ export const MateriHubPage: React.FC = () => {
                             </button>
                           </div>
 
-                          <div className="text-xs text-appText font-medium mt-2 line-clamp-1">
+                          <div className="text-xs text-stone-200 font-medium mt-2 line-clamp-1">
                             {v.meaning}
                           </div>
 
@@ -1222,10 +1098,19 @@ export const MateriHubPage: React.FC = () => {
                             <div className="min-w-0">
                               <div className="flex items-baseline gap-2">
                                 <span className="text-base font-jp font-bold text-appText-bright group-hover:text-accent transition-colors" lang="ja">
-                                  <RubyText text={v.word} furigana={v.reading} />
+                                  {showFurigana ? (
+                                    <RubyText text={v.word} furigana={v.reading} />
+                                  ) : (
+                                    v.word
+                                  )}
                                 </span>
+                                {showRomaji && v.romaji && (
+                                  <span className="text-[11px] font-mono text-appText-muted hidden sm:inline">
+                                    {v.romaji}
+                                  </span>
+                                )}
                               </div>
-                              <div className="text-xs text-appText-muted truncate">
+                              <div className="text-xs text-stone-300 truncate">
                                 {v.meaning}
                               </div>
                             </div>
@@ -1291,7 +1176,7 @@ export const MateriHubPage: React.FC = () => {
                         >
                           <div className="flex items-start justify-between gap-2">
                             <div>
-                              <div className="text-lg font-jp font-bold text-appText-bright group-hover:text-amber-300 transition-colors" lang="ja">
+                              <div className="text-lg font-jp font-bold text-appText-bright group-hover:text-amber-400 font-extrabold transition-colors" lang="ja">
                                 {g.pattern}
                               </div>
                               {g.reading && (
@@ -1315,7 +1200,7 @@ export const MateriHubPage: React.FC = () => {
                             </button>
                           </div>
 
-                          <div className="text-xs text-appText font-medium mt-2 line-clamp-2">
+                          <div className="text-xs text-stone-200 font-medium mt-2 line-clamp-2">
                             {g.meaning}
                           </div>
 
@@ -1373,13 +1258,13 @@ export const MateriHubPage: React.FC = () => {
                                 <span className="text-base font-jp font-bold text-appText-bright group-hover:text-accent transition-colors" lang="ja">
                                   {g.pattern}
                                 </span>
-                                {g.reading && (
-                                  <span className="text-xs font-mono text-appText-muted" lang="ja">
+                                {showFurigana && g.reading && (
+                                  <span className="text-xs font-mono text-amber-400/80" lang="ja">
                                     {g.reading}
                                   </span>
                                 )}
                               </div>
-                              <div className="text-xs text-appText-muted truncate">
+                              <div className="text-xs text-stone-300 truncate">
                                 {g.meaning}
                               </div>
                             </div>
@@ -1458,7 +1343,7 @@ export const MateriHubPage: React.FC = () => {
                             Langkah #{index + 1}
                           </span>
                         </div>
-                        <div className="text-xl font-jp font-bold text-appText-bright group-hover:text-amber-300 transition-colors" lang="ja">
+                        <div className="text-xl font-jp font-bold text-appText-bright group-hover:text-amber-400 font-extrabold transition-colors" lang="ja">
                           {item.pattern}
                         </div>
                         {item.reading && (
@@ -1482,7 +1367,7 @@ export const MateriHubPage: React.FC = () => {
                       </button>
                     </div>
 
-                    <div className="text-xs text-appText font-medium mt-3">
+                    <div className="text-xs text-stone-200 font-medium mt-3">
                       {item.meaning}
                     </div>
 

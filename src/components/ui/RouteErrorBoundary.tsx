@@ -99,29 +99,29 @@ export class RouteErrorBoundary extends Component<RouteErrorBoundaryProps, Route
           className="w-full my-8 px-4 sm:px-6 py-8 bg-surface border border-red-500/30 rounded-3xl shadow-xl text-center space-y-6 max-w-2xl mx-auto animate-in fade-in zoom-in-95 duration-200"
         >
           {/* Badge Icon */}
-          <div className="w-14 h-14 rounded-2xl bg-red-500/10 border border-red-500/20 text-red-400 flex items-center justify-center mx-auto shadow-inner">
+          <div className="w-14 h-14 rounded-2xl bg-red-950/60 border border-red-500/40 text-red-300 flex items-center justify-center mx-auto shadow-inner">
             <AlertCircle className="w-7 h-7 stroke-[2.2]" />
           </div>
 
           {/* Heading & Context */}
           <div className="space-y-2">
-            <div className="text-[11px] font-mono font-bold tracking-wider uppercase text-amber-500 dark:text-amber-400">
+            <div className="text-[11px] font-mono font-bold tracking-wider uppercase text-amber-400">
               Modul Tampilan Terisolasi ({tabName})
             </div>
-            <h2 className="text-xl sm:text-2xl font-black text-text">
+            <h2 className="text-xl sm:text-2xl font-black text-appText-bright">
               Gagal Memuat Tampilan Ini 🍵
             </h2>
-            <p className="text-xs sm:text-sm text-text-dim max-w-md mx-auto leading-relaxed">
+            <p className="text-xs sm:text-sm text-appText-muted max-w-md mx-auto leading-relaxed">
               Terjadi kendala saat memproses tampilan atau materi ini. Navigasi utama tetap aktif dan data belajarmu aman.
             </p>
           </div>
 
           {/* Collapsible Error Trace */}
-          <div className="border border-border rounded-2xl overflow-hidden bg-bg/80 text-left">
+          <div className="border border-theme rounded-2xl overflow-hidden bg-surface-2 text-left">
             <button
               type="button"
               onClick={() => this.setState({ isDetailsOpen: !isDetailsOpen })}
-              className="w-full min-h-[44px] px-4 py-2.5 flex items-center justify-between text-xs text-text-dim hover:text-text hover:bg-surface-2/40 transition-colors"
+              className="w-full min-h-[44px] px-4 py-2.5 flex items-center justify-between text-xs text-appText-muted hover:text-appText-bright hover:bg-surface-3 transition-colors"
               aria-expanded={isDetailsOpen}
             >
               <span className="font-mono font-semibold">Rincian Galat Teknis</span>
@@ -129,17 +129,17 @@ export class RouteErrorBoundary extends Component<RouteErrorBoundaryProps, Route
             </button>
 
             {isDetailsOpen && (
-              <div className="p-3 border-t border-border text-[11px] font-mono text-red-400 max-h-40 overflow-y-auto space-y-1 scrollbar-none select-text">
+              <div className="p-3 border-t border-theme text-[11px] font-mono text-red-300 max-h-40 overflow-y-auto space-y-1 scrollbar-none select-text">
                 <div className="font-bold">
                   {error?.name || 'Error'}: {error?.message || 'Unknown runtime error'}
                 </div>
                 {error?.stack && (
-                  <pre className="text-[10px] text-text-dim whitespace-pre-wrap leading-tight mt-1">
+                  <pre className="text-[10px] text-appText-muted whitespace-pre-wrap leading-tight mt-1">
                     {error.stack.split('\n').slice(0, 4).join('\n')}
                   </pre>
                 )}
                 {errorInfo?.componentStack && (
-                  <pre className="text-[9px] text-stone-500 whitespace-pre-wrap mt-1">
+                  <pre className="text-[9px] text-stone-400 whitespace-pre-wrap mt-1">
                     {errorInfo.componentStack.split('\n').slice(0, 4).join('\n')}
                   </pre>
                 )}
@@ -152,7 +152,7 @@ export class RouteErrorBoundary extends Component<RouteErrorBoundaryProps, Route
             <button
               type="button"
               onClick={this.handleRetry}
-              className="w-full sm:w-auto min-h-[44px] px-5 py-2.5 rounded-2xl bg-accent hover:bg-accent/90 text-bg font-bold text-xs flex items-center justify-center gap-2 transition-all shadow-md active:scale-95"
+              className="w-full sm:w-auto min-h-[44px] px-5 py-2.5 rounded-2xl bg-amber-500 hover:bg-amber-400 text-stone-950 font-black text-xs flex items-center justify-center gap-2 transition-all shadow-md active:scale-95"
             >
               <RefreshCw className="w-4 h-4 stroke-[2.2]" />
               <span>Coba Muat Ulang Tampilan</span>
@@ -161,7 +161,7 @@ export class RouteErrorBoundary extends Component<RouteErrorBoundaryProps, Route
             <button
               type="button"
               onClick={this.handleGoHome}
-              className="w-full sm:w-auto min-h-[44px] px-5 py-2.5 rounded-2xl bg-surface-2 hover:bg-surface-3 text-text font-bold text-xs flex items-center justify-center gap-2 transition-all border border-border active:scale-95"
+              className="w-full sm:w-auto min-h-[44px] px-5 py-2.5 rounded-2xl bg-surface-2 hover:bg-surface-3 text-appText-bright font-bold text-xs flex items-center justify-center gap-2 transition-all border border-theme active:scale-95"
             >
               <Home className="w-4 h-4" />
               <span>Kembali ke Beranda</span>

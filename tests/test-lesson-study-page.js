@@ -15,7 +15,7 @@ const http = require('http');
 const path = require('path');
 const { spawn } = require('child_process');
 
-const BASE_URL = process.env.TEST_URL || 'http://localhost:5173';
+const BASE_URL = process.env.TEST_URL || 'http://127.0.0.1:5173';
 
 function isServerRunning(url) {
   return new Promise((resolve) => {
@@ -34,7 +34,8 @@ async function run() {
   const running = await isServerRunning(BASE_URL);
   if (!running) {
     console.log(`⚡ Preview server not detected. Starting on ${BASE_URL}...`);
-    serverProcess = spawn('npx', ['vite', 'preview', '--port', '5173'], {
+    const cmd = process.platform === 'win32' ? 'npx.cmd' : 'npx';
+    serverProcess = spawn(cmd, ['vite', 'preview', '--port', '5173', '--host', '127.0.0.1'], {
       shell: true,
       cwd: path.join(__dirname, '..'),
       stdio: 'ignore',
@@ -73,16 +74,23 @@ async function run() {
       });
 
       // 1. Load Lesson Study directly via hash URL
-      await page.goto(`${BASE_URL}/#study?track=n5&lesson=les-n5-u01-01`, {
+      await page.goto(`${BASE_URL}/#study?track=n5&unit=unit-n5-01&lesson=les-n5-u01-01&type=curriculum`, {
         waitUntil: 'networkidle',
         timeout: 10000,
       });
 
       assert.strictEqual(pageErrors.length, 0, `Page errors: ${pageErrors.map(e => e.message).join('; ')}`);
+      await page.waitForTimeout(1000);
       console.log(`  ✓ LessonStudyPage loaded cleanly on ${vp.name}`);
 
       // 2. Check overflow
-      const overflow = await page.evaluate(() => document.documentElement.scrollWidth - window.innerWidth);
+      let overflow = 0;
+      try {
+        overflow = await page.evaluate(() => document.documentElement.scrollWidth - window.innerWidth);
+      } catch {
+        await page.waitForTimeout(500);
+        overflow = await page.evaluate(() => document.documentElement.scrollWidth - window.innerWidth);
+      }
       assert(overflow <= 1, `Horizontal overflow detected: ${overflow}px`);
       console.log(`  ✓ 0px horizontal overflow on ${vp.name}`);
 
@@ -93,31 +101,37 @@ async function run() {
 
       // 4. Verify 4-Stage Stepper Buttons
       const stepperButtons = page.locator('button:has-text("Dialog"), button:has-text("Bedah Materi"), button:has-text("Cek Pemahaman"), button:has-text("Tantangan Nyata")');
-      const stepperCount = await stepperButtons.count();
+      const stepperCount = await (async () => {
+        await stepperButtons.first().waitFor({ state: 'visible', timeout: 5000 });
+        return stepperButtons.count();
+      })();
       assert(stepperCount >= 4, `Expected at least 4 stepper buttons, found ${stepperCount}`);
       console.log(`  ✓ Stepper 4-Tahap buttons visible`);
 
       // 5. Test Stepper Navigation to Explanation Stage
       const expBtn = page.locator('button:has-text("Bedah Materi")').first();
       await expBtn.click();
-      await page.waitForTimeout(300);
+      await page.waitForTimeout(600);
       const whyBox = page.locator('text=Kenapa Pola Ini Dipelajari Duluan?');
+      await whyBox.waitFor({ state: 'visible', timeout: 5000 });
       assert(await whyBox.isVisible(), 'Pedagogical framework why order box must be visible');
       console.log(`  ✓ Explanation Stage & Pedagogical Framework verified`);
 
       // 6. Test Stepper Navigation to Micro-Drills Stage (Zero Menu-Jumping)
       const drillBtn = page.locator('button:has-text("Cek Pemahaman")').first();
       await drillBtn.click();
-      await page.waitForTimeout(300);
+      await page.waitForTimeout(600);
       const drillContainer = page.locator('text=Cek Pemahaman #1');
+      await drillContainer.waitFor({ state: 'visible', timeout: 5000 });
       assert(await drillContainer.isVisible(), 'In-place micro-drills container must be visible');
       console.log(`  ✓ MicroDrillStage rendered in-place (No Menu Jumping!)`);
 
       // 7. Test Stepper Navigation to Can-Do Stage
       const candoBtn = page.locator('button:has-text("Tantangan Nyata")').first();
       await candoBtn.click();
-      await page.waitForTimeout(300);
+      await page.waitForTimeout(600);
       const candoText = page.locator('text=Target Kemampuan Nyata');
+      await candoText.waitFor({ state: 'visible', timeout: 5000 });
       assert(await candoText.isVisible(), 'Can-Do challenge stage must be visible');
       console.log(`  ✓ Can-Do Stage & model answer prompt verified`);
 
