@@ -27,7 +27,7 @@
     "changelog": "node scripts/sync-changelog.js",
     "build:curriculum": "node scripts/build-curriculum-all.js",
     "compile:diagnostics": "node scripts/compile_diagnostics.js",
-    "test": "node tests/fsrs-engine.test.js && node tests/cat-engine.test.js && node tests/stores.test.js && node tests/test-curriculum-adapter.js && node scripts/run-persona-simulations.js && node tests/run.js && node tests/test-backend-consolidation.js && node tests/test-backend-exhaustive-audit.js && node tests/test-fallback-integrity.js && node tests/test-curriculum-semantics.js",
+    "test": "node tests/fsrs-engine.test.js && node tests/cat-engine.test.js && node tests/stores.test.js && node tests/test-curriculum-adapter.js && node scripts/run-persona-simulations.js && node tests/run.js && node tests/test-backend-consolidation.js && node tests/test-backend-exhaustive-audit.js && node tests/test-fallback-integrity.js && node tests/test-curriculum-semantics.js && node tests/test-keigo-module.js && node tests/test-counter-module.js && node tests/test-kotowaza-expansion.js && node tests/test-pitch-accent-module.js && node tests/test-sprint-8-n3-pedagogy.js && node tests/test-curriculum.js",
     "test:engines": "node tests/fsrs-engine.test.js && node tests/cat-engine.test.js && node tests/stores.test.js && node tests/test-curriculum-adapter.js",
     "test:personas": "node scripts/run-persona-simulations.js",
     "test:quality": "node tests/quality.js",

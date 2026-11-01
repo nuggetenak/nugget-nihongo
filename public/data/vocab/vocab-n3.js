@@ -2,7 +2,7 @@
 //  vocab-n3.js — Nugget Nihongo · JLPT N3
 //  AUTO-GENERATED — DO NOT EDIT DIRECTLY
 //  Edit: public/data/vocab/n3/*.js  then run: node scripts/merge-vocab.js
-//  Entries: 2580 | Generated: 2026-10-17
+//  Entries: 2580 | Generated: 2026-11-01
 // ══════════════════════════════════════════════════════════════
 
 window.vocabN3 = [

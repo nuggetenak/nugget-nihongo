@@ -7,6 +7,7 @@ import React, { useState } from 'react';
 import { CheckCircle2, XCircle, ArrowRight, RotateCcw, Sparkles } from 'lucide-react';
 import { LessonDrillItem } from '../../../types/curriculum';
 import { cleanOptionText } from '../../../lib/curriculum/lessonContentAdapter';
+import { RubyText } from '../../ui/RubyText';
 
 interface MicroDrillStageProps {
   drills?: LessonDrillItem[];
@@ -189,13 +190,13 @@ export const MicroDrillStage: React.FC<MicroDrillStageProps> = ({ drills = [], o
           </h3>
           {currentItem.sentencePrompt && (
             <div className="p-3.5 rounded-2xl bg-surface-2 border border-accent/15 text-sm sm:text-base font-jp font-semibold text-appText-bright mt-2">
-              {currentItem.sentencePrompt}
+              <RubyText text={currentItem.sentencePrompt} />
             </div>
           )}
         </div>
 
         {/* ── Area Interaksi Tipe Reorder ─────────────────────────── */}
-        {currentItem.type === 'reorder' && currentItem.tokens && (
+        {currentItem.type === 'reorder' && currentItem.tokens && currentItem.tokens.length > 0 && (
           <div className="space-y-4">
             {/* Slot Kalimat yang Tersusun */}
             <div className="min-h-[56px] p-3 rounded-2xl bg-surface-2/80 border-2 border-dashed border-accent/30 flex flex-wrap items-center gap-2">
@@ -209,9 +210,9 @@ export const MicroDrillStage: React.FC<MicroDrillStageProps> = ({ drills = [], o
                     key={tIdx}
                     type="button"
                     onClick={() => handleToggleToken(token, true)}
-                    className="min-h-[40px] px-3.5 py-1.5 rounded-xl bg-accent text-bg font-jp font-bold text-sm shadow-sm active:scale-95"
+                    className="min-h-[40px] px-3.5 py-1.5 rounded-xl bg-accent text-bg font-jp font-bold text-sm shadow-sm active:scale-95 inline-flex items-center gap-1.5"
                   >
-                    {token} ✕
+                    <RubyText text={token} /> ✕
                   </button>
                 ))
               )}
@@ -226,9 +227,9 @@ export const MicroDrillStage: React.FC<MicroDrillStageProps> = ({ drills = [], o
                     key={tIdx}
                     type="button"
                     onClick={() => handleToggleToken(token, false)}
-                    className="min-h-[44px] px-4 py-2 rounded-xl bg-surface-3 hover:bg-surface border border-accent/20 text-appText-bright font-jp font-bold text-sm transition-all active:scale-95"
+                    className="min-h-[44px] px-4 py-2 rounded-xl bg-surface-3 hover:bg-surface border border-accent/20 text-appText-bright font-jp font-bold text-sm transition-all active:scale-95 inline-flex items-center justify-center"
                   >
-                    {token}
+                    <RubyText text={token} />
                   </button>
                 ))}
             </div>
@@ -246,8 +247,8 @@ export const MicroDrillStage: React.FC<MicroDrillStageProps> = ({ drills = [], o
           </div>
         )}
 
-        {/* ── Area Interaksi Pilihan Ganda (Cloze, Trap Detect, Vocab Context, Response) ─ */}
-        {currentItem.options && currentItem.type !== 'reorder' && (
+        {/* ── Area Interaksi Pilihan Ganda (Cloze, Trap Detect, Vocab Context, Response, atau Fallback Reorder) ─ */}
+        {currentItem.options && (currentItem.type !== 'reorder' || !currentItem.tokens || currentItem.tokens.length === 0) && (
           <div className="space-y-2 pt-1">
             {currentItem.options.map((opt, oIdx) => {
               const isSelected = selectedAnswer === opt;

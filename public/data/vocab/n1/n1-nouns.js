@@ -13297,7 +13297,7 @@ window.vocabN1_Nouns = [
   "word": "海峡",
   "reading": "かいきょう",
   "romaji": "kaikyou",
-  "meaning_id": "saluran",
+  "meaning_id": "selat, terusan, perairan sempit",
   "meaning_en": "channel",
   "jlpt": "n1",
   "pos": "noun",
@@ -13318,7 +13318,7 @@ window.vocabN1_Nouns = [
   "examples": [
     {
       "jp": "その海峡に長い橋を建設中です。",
-      "id": "Mereka building a long bridge across the channel.",
+      "id": "Sedang dibangun sebuah jembatan panjang yang melintasi selat itu.",
       "level": "n1",
       "tags": [
         "umum"

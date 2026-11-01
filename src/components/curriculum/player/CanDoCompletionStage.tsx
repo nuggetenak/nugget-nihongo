@@ -18,6 +18,7 @@ import {
 import { CurriculumLesson } from '../../../types/curriculum';
 import { useAppStore } from '../../../store/useAppStore';
 import { speakJapanese } from '../../../lib/audio/speechEngine';
+import { RubyText } from '../../ui/RubyText';
 
 interface CanDoCompletionStageProps {
   lesson: CurriculumLesson;
@@ -235,9 +236,9 @@ export const CanDoCompletionStage: React.FC<CanDoCompletionStageProps> = ({
                     {pocketSummary.coreWords.map((cw, cIdx) => (
                       <span
                         key={cIdx}
-                        className="px-2.5 py-1 rounded-lg bg-surface-2 border border-accent/15 text-appText-bright font-jp font-semibold text-xs"
+                        className="px-2.5 py-1 rounded-lg bg-surface-2 border border-accent/15 text-appText-bright font-jp font-semibold text-xs inline-flex items-center"
                       >
-                        {cw}
+                        <RubyText text={cw} />
                       </span>
                     ))}
                   </div>

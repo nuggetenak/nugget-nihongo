@@ -7,7 +7,7 @@
 // ══════════════════════════════════════════════════════════════════
 
 import React, { useState } from 'react';
-import { Volume2, BookOpen, AlertCircle, ArrowRight, Layers, Sparkles, Check, X, MessageCircle, PenTool } from 'lucide-react';
+import { Volume2, BookOpen, AlertCircle, ArrowRight, Layers, Sparkles, Check, X, MessageCircle, PenTool, Music } from 'lucide-react';
 import {
   LessonExplanationSection,
   LessonPedagogicalFramework,
@@ -19,13 +19,18 @@ import { speakJapanese } from '../../../lib/audio/speechEngine';
 import { PitchAccentBadge } from '../interactive/PitchAccentBadge';
 import { KanjiStrokeModal, KanjiDetailInfo } from '../interactive/KanjiStrokeModal';
 import { useAppStore } from '../../../store/useAppStore';
+import { useModalStore } from '../../../store/useModalStore';
 import { lookupPitch } from '../../../lib/data/pitchAccentManager';
+import { calculatePitchContour, playPitchToneMelody } from '../../../lib/pitch/pitchEngine';
+import { RubyText } from '../../ui/RubyText';
 
 interface ExplanationStageProps {
   explanations?: LessonExplanationSection[];
   pedagogicalFramework?: LessonPedagogicalFramework;
   vocabBreakdown?: LessonVocabDetail[];
   commonPitfalls?: CommonPitfallItem[];
+  trackId?: string;
+  unitNumber?: number;
 }
 
 export const ExplanationStage: React.FC<ExplanationStageProps> = ({
@@ -33,8 +38,11 @@ export const ExplanationStage: React.FC<ExplanationStageProps> = ({
   pedagogicalFramework,
   vocabBreakdown = [],
   commonPitfalls = [],
+  trackId,
+  unitNumber,
 }) => {
   const { openSenseiSheet } = useAppStore();
+  const { openModal } = useModalStore();
   const [selectedKanji, setSelectedKanji] = useState<KanjiDetailInfo | null>(null);
   const [isKanjiModalOpen, setIsKanjiModalOpen] = useState(false);
 
@@ -91,7 +99,7 @@ export const ExplanationStage: React.FC<ExplanationStageProps> = ({
                     <div className="min-w-0">
                       <div className="flex items-center gap-2 flex-wrap">
                         <div className="text-lg font-bold font-jp text-appText-bright leading-tight break-words">
-                          {vb.word}
+                          <RubyText text={vb.word} furigana={vb.reading} />
                         </div>
                         {/[一-龯]/.test(vb.word) && (
                           <button
@@ -100,10 +108,10 @@ export const ExplanationStage: React.FC<ExplanationStageProps> = ({
                               const firstKanji = vb.word.match(/[一-龯]/)?.[0] || vb.word[0];
                               handleOpenKanji(firstKanji, vb.meaning, vb.reading);
                             }}
-                            className="px-2 py-0.5 rounded-lg bg-surface-2 hover:bg-surface-3 text-appText-muted hover:text-accent border border-accent/20 text-[10px] font-bold flex items-center gap-1 active:scale-95 transition-colors"
+                            className="min-h-[40px] px-2.5 py-1 rounded-lg bg-surface-2 hover:bg-surface-3 text-appText-muted hover:text-accent border border-accent/20 text-xs font-bold flex items-center gap-1 active:scale-95 transition-colors"
                             title="Latihan goresan kanji"
                           >
-                            <PenTool className="w-3 h-3 text-accent" />
+                            <PenTool className="w-3.5 h-3.5 text-accent" />
                             <span>Goresan</span>
                           </button>
                         )}
@@ -157,6 +165,23 @@ export const ExplanationStage: React.FC<ExplanationStageProps> = ({
                       >
                         <Volume2 className="w-4 h-4" />
                       </button>
+
+                      {(() => {
+                        const pitch = vb.pitch || lookupPitch(vb.word, vb.reading);
+                        if (!pitch) return null;
+                        const contour = calculatePitchContour(vb.reading || vb.word, pitch.pattern);
+                        return (
+                          <button
+                            type="button"
+                            onClick={() => playPitchToneMelody(contour.moras, contour.particlePitch)}
+                            className="min-h-[40px] min-w-[40px] p-2 rounded-xl bg-purple-500/15 hover:bg-purple-500/25 border border-purple-500/30 text-purple-700 dark:text-purple-300 transition-colors flex items-center justify-center active:scale-95"
+                            title={`Dengarkan nada melodi pitch (${contour.categoryLabel})`}
+                            aria-label={`Dengarkan nada melodi pitch`}
+                          >
+                            <Music className="w-4 h-4 text-purple-600 dark:text-purple-400" />
+                          </button>
+                        );
+                      })()}
                     </div>
                   </div>
 
@@ -193,7 +218,7 @@ export const ExplanationStage: React.FC<ExplanationStageProps> = ({
                       <button
                         type="button"
                         onClick={() => handlePlayAudio(vb.exampleSentence!.jp)}
-                        className="text-accent hover:text-accent-hot text-[11px] flex items-center gap-1 min-h-[28px] px-1.5 py-0.5 rounded active:scale-95"
+                        className="text-accent hover:text-accent-hot text-xs flex items-center gap-1.5 min-h-[40px] px-2.5 py-1 rounded-xl bg-surface-2 hover:bg-surface-3 border border-accent/15 active:scale-95 transition-all"
                         title="Dengarkan contoh kalimat"
                       >
                         <Volume2 className="w-3.5 h-3.5" />
@@ -201,7 +226,7 @@ export const ExplanationStage: React.FC<ExplanationStageProps> = ({
                       </button>
                     </div>
                     <div className="text-xs font-jp font-semibold text-appText-bright break-words">
-                      {vb.exampleSentence.jp}
+                      <RubyText text={vb.exampleSentence.jp} furigana={vb.exampleSentence.furigana} />
                     </div>
                     {vb.exampleSentence.romaji && (
                       <div className="text-[10px] font-mono text-appText-muted">
@@ -330,7 +355,7 @@ export const ExplanationStage: React.FC<ExplanationStageProps> = ({
                           {fv.label}
                         </span>
                         <div className="text-xs font-jp font-bold text-appText-bright break-words">
-                          {fv.jp}
+                          <RubyText text={fv.jp} />
                         </div>
                         <div className="text-[11px] text-appText-muted">
                           {fv.idText}
@@ -355,7 +380,7 @@ export const ExplanationStage: React.FC<ExplanationStageProps> = ({
                       >
                         <div className="space-y-0.5 min-w-0">
                           <div className="text-sm font-jp font-semibold text-appText-bright break-words">
-                            {ex.jp}
+                            <RubyText text={ex.jp} furigana={ex.furigana} />
                           </div>
                           {ex.romaji && (
                             <div className="text-[11px] font-mono text-appText-muted">
@@ -402,7 +427,7 @@ export const ExplanationStage: React.FC<ExplanationStageProps> = ({
                               {pair.speakerA}:
                             </span>
                             <div className="text-xs font-jp font-semibold text-appText-bright break-words">
-                              {pair.jpA}
+                              <RubyText text={pair.jpA} />
                             </div>
                             <div className="text-[11px] text-appText-muted">
                               {pair.idA}
@@ -425,7 +450,7 @@ export const ExplanationStage: React.FC<ExplanationStageProps> = ({
                               {pair.speakerB}:
                             </span>
                             <div className="text-xs font-jp font-semibold text-appText-bright break-words">
-                              {pair.jpB}
+                              <RubyText text={pair.jpB} />
                             </div>
                             <div className="text-[11px] text-appText-muted">
                               {pair.idB}
@@ -522,6 +547,78 @@ export const ExplanationStage: React.FC<ExplanationStageProps> = ({
           </div>
         </div>
       )}
+
+      {/* ── PILAR 5: Peralatan Belajar Terkait (Contextual Tools) ── */}
+      {(() => {
+        const isCountersRelevant =
+          (trackId?.toLowerCase().includes('n5') && unitNumber === 4) ||
+          pedagogicalFramework?.what?.summary?.toLowerCase().includes('hitung') ||
+          pedagogicalFramework?.what?.summary?.toLowerCase().includes('bilangan');
+
+        const isKeigoRelevant =
+          (trackId?.toLowerCase().includes('n4') && (unitNumber === 14 || unitNumber === 15)) ||
+          trackId?.toLowerCase().includes('n3') ||
+          trackId?.toLowerCase().includes('ssw') ||
+          pedagogicalFramework?.what?.summary?.toLowerCase().includes('keigo') ||
+          pedagogicalFramework?.what?.summary?.toLowerCase().includes('hormat');
+
+        return (
+          <div className="p-4 sm:p-5 rounded-2xl bg-surface border border-accent/20 space-y-3 shadow-sm">
+            <div className="flex items-center justify-between gap-2">
+              <div className="flex items-center gap-2">
+                <span className="text-base">🧰</span>
+                <h4 className="text-xs font-bold uppercase tracking-wider text-accent">
+                  Peralatan Belajar Terkait
+                </h4>
+              </div>
+              <button
+                type="button"
+                onClick={() => openModal('toolbox')}
+                className="text-[11px] font-bold text-accent hover:underline flex items-center gap-1 active:scale-95"
+              >
+                <span>Kotak Peralatan</span>
+                <ArrowRight className="w-3 h-3" />
+              </button>
+            </div>
+
+            <div className="flex flex-wrap items-center gap-2.5">
+              {isCountersRelevant && (
+                <button
+                  type="button"
+                  onClick={() => openModal('counters')}
+                  className="min-h-[40px] px-3.5 py-2 rounded-xl bg-amber-500/15 hover:bg-amber-500/25 border border-amber-500/30 text-amber-800 dark:text-amber-300 text-xs font-bold flex items-center gap-2 transition-all active:scale-95 shadow-sm"
+                  title="Buka Pelatih Kata Bantu Bilangan"
+                >
+                  <span className="text-sm">🔢</span>
+                  <span>Pelatih Hitungan (Counters)</span>
+                </button>
+              )}
+
+              {isKeigoRelevant && (
+                <button
+                  type="button"
+                  onClick={() => openModal('keigo')}
+                  className="min-h-[40px] px-3.5 py-2 rounded-xl bg-indigo-500/15 hover:bg-indigo-500/25 border border-indigo-500/30 text-indigo-700 dark:text-indigo-300 text-xs font-bold flex items-center gap-2 transition-all active:scale-95 shadow-sm"
+                  title="Buka Pelatih Keigo & Etiket Kerja"
+                >
+                  <span className="text-sm">💼</span>
+                  <span>Pelatih Keigo & Etiket Kerja</span>
+                </button>
+              )}
+
+              <button
+                type="button"
+                onClick={() => openModal('pitch')}
+                className="min-h-[40px] px-3.5 py-2 rounded-xl bg-purple-500/15 hover:bg-purple-500/25 border border-purple-500/30 text-purple-700 dark:text-purple-300 text-xs font-bold flex items-center gap-2 transition-all active:scale-95 shadow-sm"
+                title="Buka Studio Pitch Accent"
+              >
+                <span className="text-sm">🗣️</span>
+                <span>Studio Pitch Accent</span>
+              </button>
+            </div>
+          </div>
+        );
+      })()}
 
       {/* Kanji Stroke Animator & Practice Modal */}
       <KanjiStrokeModal

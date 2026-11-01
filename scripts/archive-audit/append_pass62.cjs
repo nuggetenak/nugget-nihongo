@@ -1,0 +1,20 @@
+const fs = require('fs');
+
+const ledgerPath = 'C:\\Users\\Timedoor\\.gemini\\antigravity\\brain\\315bcf6d-badf-4ef8-9b03-5fab71855574\\FINDINGS_LEDGER.csv';
+
+const pass62Records = [
+  'Pass 62,Cluster 10,Computer Adaptive Placement,src/lib/cat/catEngine.ts#L196-L214,CRITICAL,"Mathematically Unreachable Stopping Criterion (SEM <= 0.35) Causing Dead Code: With maximum 3PL Fisher Information of 0.234 per item and prior I_0 = 1.0, reaching SEM <= 0.35 requires 31 questions (I >= 8.16). Within the 12-question limit, maximum possible information is 3.813 (SEM = 0.512). The dynamic stopping rule sem <= CAT_TARGET_SEM can never trigger, forcing all sessions to the 12-question ceiling","Recalibrate CAT_TARGET_SEM to 0.52-0.55 for 10-12 question diagnostic tests or implement informative level-bracket priors to enable authentic early stopping",DOCUMENTED_PHASE_1',
+  'Pass 62,Cluster 10,Computer Adaptive Placement,src/lib/cat/catEngine.ts#L242-L269,CRITICAL,"Pseudoscientific Heuristic Theta Update Misrepresented as Bayesian MAP: updateThetaEstimate claims to perform Bayesian MAP estimation but actually uses an arbitrary step-size delta formula (baseStep * (1 - probCorrect)). This lacks true log-posterior likelihood maximization via Newton-Raphson or Gauss-Hermite EAP, causing early responses to exert irreversible distortion on final placement","Implement true Bayesian EAP (Expected A Posteriori) or Newton-Raphson MAP ability estimation to ensure psychometrically robust theta convergence",DOCUMENTED_PHASE_1',
+  'Pass 62,Cluster 10,Computer Adaptive Placement,src/lib/cat/catEngine.ts#L115-L124,CRITICAL,"Degenerate Distractor Generation & Dummy Option Leaks (選択肢 2, 選択肢 3): In buildCATQuestionPool, distractor collision occurs (distractor1 and distractor2 both pull shuffledOthers[0]). If fewer than 4 unique options exist, the generator pushes literal placeholder strings (選択肢 2, 選択肢 3), exposing amateurish dummy choices to learners in diagnostic tests","Refactor distractor synthesis with dedicated morphological foil generators, strictly preventing distractor collisions and removing placeholder options",DOCUMENTED_PHASE_1',
+  'Pass 62,Cluster 10,Computer Adaptive Placement,src/lib/cat/catEngine.ts#L136-L137,HIGH,"Uniform Hardcoded Discrimination Parameter (a = 1.25) Across All Items: All items in buildCATQuestionPool are assigned an identical discrimination parameter a = 1.25, collapsing the 3PL model into a 1PL Rasch approximation with guessing and ignoring empirical item differentiation capabilities","Incorporate empirical discrimination parameters a_i per item calibrated from diagnostic learner response distributions",DOCUMENTED_PHASE_1',
+  'Pass 62,Cluster 10,Computer Adaptive Placement,src/lib/cat/catEngine.ts#L256,HIGH,"Hardcoded Discrimination Slope in updateThetaEstimate Bypassing Item Parameters: In updateThetaEstimate, the logistic logit calculation hardcodes 1.25 * (currentTheta - questionDifficulty), ignoring the item\'s discrimination parameter entirely","Pass question.discrimination into updateThetaEstimate and incorporate it into the item characteristic probability function",DOCUMENTED_PHASE_1',
+  'Pass 62,Cluster 10,Computer Adaptive Placement,src/lib/cat/catEngine.ts#L274-L345,HIGH,"Total Absence of JFT-Basic & SSW Vocational Diagnostic Modes: The CAT engine solely maps ability theta to JLPT N5-N1 levels. Candidates preparing for JFT-Basic A1/A2 or the 19 SSW Tokutei Ginou sectors have zero adaptive placement capability to evaluate CEFR Can-Do readiness","Expand CAT engine with multi-target diagnostic modes: Mode A: JLPT (N5-N1), Mode B: JFT-Basic (A1/A2), and Mode C: SSW Sector Gemba Readiness",DOCUMENTED_PHASE_1'
+];
+
+fs.appendFileSync(ledgerPath, '\n' + pass62Records.join('\n'), 'utf8');
+console.log('Appended 6 records for Pass 62 to FINDINGS_LEDGER.csv');
+
+// Clean up any empty lines
+let lines = fs.readFileSync(ledgerPath, 'utf8').split(/\r?\n/).map(l => l.trim()).filter(l => l.length > 0);
+fs.writeFileSync(ledgerPath, lines.join('\n') + '\n', 'utf8');
+console.log(`Cleaned ledger lines: ${lines.length} (Expected: 382 lines, 381 defect records + 1 header)`);

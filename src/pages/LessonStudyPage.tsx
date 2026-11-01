@@ -18,7 +18,10 @@ import {
 import { useAppStore } from '../store/useAppStore';
 import { useCurriculumStore, TrackId } from '../lib/curriculum/curriculumStore';
 import { loadCurriculumTrack, loadGrammar, loadVocab } from '../lib/data/dataManager';
-import { getAdaptiveLessonContent } from '../lib/curriculum/lessonContentAdapter';
+import {
+  getAdaptiveLessonContent,
+  loadCuratedLessonsForTrack,
+} from '../lib/curriculum/lessonContentAdapter';
 import { CurriculumLesson } from '../types/curriculum';
 import { DialogueStage } from '../components/curriculum/player/DialogueStage';
 import { ExplanationStage } from '../components/curriculum/player/ExplanationStage';
@@ -26,12 +29,19 @@ import { MicroDrillStage } from '../components/curriculum/player/MicroDrillStage
 import { CanDoCompletionStage } from '../components/curriculum/player/CanDoCompletionStage';
 import { withViewTransition } from '../lib/ui/viewTransition';
 
+export interface LessonWithContext extends CurriculumLesson {
+  title?: string;
+  grammarSummary?: string;
+  exampleSentenceJa?: string;
+  exampleSentenceId?: string;
+}
+
 export const LessonStudyPage: React.FC = () => {
-  const { activeLessonContext, closeLessonStudy, openLessonStudy } = useAppStore();
+  const { activeLessonContext, closeLessonStudy, openLessonStudy, openSenseiSheet } = useAppStore();
   const { trackProgress, completeLesson } = useCurriculumStore();
 
   const [activeStage, setActiveStage] = useState<'dialogue' | 'explanation' | 'drills' | 'cando'>('dialogue');
-  const [currentLesson, setCurrentLesson] = useState<CurriculumLesson | null>(null);
+  const [currentLesson, setCurrentLesson] = useState<LessonWithContext | null>(null);
   const [currentUnit, setCurrentUnit] = useState<any>(null);
   const [trackData, setTrackData] = useState<any>(null);
   const [drillScore, setDrillScore] = useState<number>(100);
@@ -80,22 +90,29 @@ export const LessonStudyPage: React.FC = () => {
         if (foundLesson) {
           const isSsw = trackId?.includes('ssw');
           const jlptLevel = (['n5', 'n4', 'n3', 'n2', 'n1'].includes(trackId) ? trackId : (isSsw ? 'n4' : 'n5')) as any;
-          const [grammarList, vocabList] = await Promise.all([
+          const [grammarList, vocabList, curatedMap] = await Promise.all([
             loadGrammar(jlptLevel).catch(() => []),
             isSsw
               ? Promise.all([loadVocab(trackId).catch(() => []), loadVocab('n4').catch(() => [])]).then(([vSsw, vN4]) => [...vSsw, ...vN4])
               : loadVocab(jlptLevel).catch(() => []),
+            loadCuratedLessonsForTrack(trackId).catch(() => ({})),
           ]);
 
           if (!isMounted) return;
 
-          const adaptedLesson = getAdaptiveLessonContent(
+          const adaptedLesson: LessonWithContext = getAdaptiveLessonContent(
             trackId,
             foundUnit,
             foundLesson,
             grammarList,
-            vocabList
+            vocabList,
+            curatedMap
           );
+          // Enrich with contextual Sensei helper properties
+          adaptedLesson.title = adaptedLesson.title_id || adaptedLesson.title_jp;
+          adaptedLesson.grammarSummary = adaptedLesson.explanations?.[0]?.formula || adaptedLesson.explanations?.[0]?.meaning || '';
+          adaptedLesson.exampleSentenceJa = adaptedLesson.explanations?.[0]?.examples?.[0]?.jp || adaptedLesson.dialogue?.[0]?.jp || '';
+          adaptedLesson.exampleSentenceId = adaptedLesson.explanations?.[0]?.examples?.[0]?.idText || adaptedLesson.dialogue?.[0]?.idText || '';
           setCurrentLesson(adaptedLesson);
 
           // Cek skor sebelumnya jika pernah selesai
@@ -113,7 +130,7 @@ export const LessonStudyPage: React.FC = () => {
     return () => {
       isMounted = false;
     };
-  }, [trackId, unitId, lessonId, trackProgress]);
+  }, [trackId, unitId, lessonId]);
 
   // Viewport scroll stabilization upon stage change (Ticket T-227)
   useEffect(() => {
@@ -195,6 +212,18 @@ export const LessonStudyPage: React.FC = () => {
     }
   };
 
+  const handleOpenSensei = () => {
+    openSenseiSheet({
+      id: currentLesson?.id || 'lesson',
+      type: 'grammar',
+      level: trackId,
+      target: currentLesson?.title || 'Pelajaran',
+      structure: currentLesson?.grammarSummary || '',
+      exampleJa: currentLesson?.exampleSentenceJa || '',
+      exampleId: currentLesson?.exampleSentenceId || '',
+    });
+  };
+
   if (isLoading) {
     return (
       <div className="py-24 text-center space-y-4">
@@ -235,7 +264,7 @@ export const LessonStudyPage: React.FC = () => {
   }
 
   return (
-    <div className="w-full max-w-4xl mx-auto space-y-5 pb-[calc(5.5rem+env(safe-area-inset-bottom))] lg:pb-12 animate-fade-in min-w-0 overflow-x-hidden">
+    <div className="w-full max-w-full sm:max-w-4xl mx-auto space-y-5 pb-[calc(5.5rem+env(safe-area-inset-bottom))] lg:pb-12 animate-fade-in min-w-0 overflow-x-hidden">
       {/* ── 1. HEADER STUDIO BELAJAR FOKUS ───────────────────────── */}
       <div className="p-4 sm:p-5 rounded-3xl bg-surface border border-accent/20 flex flex-col sm:flex-row sm:items-center justify-between gap-3 shadow-sm">
         <div className="flex items-center gap-3 min-w-0">
@@ -271,13 +300,26 @@ export const LessonStudyPage: React.FC = () => {
           </div>
         </div>
 
-        <button
-          type="button"
-          onClick={closeLessonStudy}
-          className="text-xs font-bold text-accent hover:underline hidden sm:block shrink-0 px-2 py-1"
-        >
-          Tutup & Kembali
-        </button>
+        <div className="flex items-center gap-2 shrink-0">
+          <button
+            type="button"
+            onClick={handleOpenSensei}
+            className="min-h-[40px] px-3.5 py-1.5 rounded-xl bg-amber-500/15 hover:bg-amber-500/25 border border-amber-500/30 text-accent text-xs font-bold transition-all flex items-center gap-1.5 shadow-xs active:scale-95"
+            title="Tanya Sensei seputar materi ini"
+            aria-label="Tanya Sensei"
+          >
+            <span>💡</span>
+            <span className="font-semibold">Tanya Sensei</span>
+          </button>
+
+          <button
+            type="button"
+            onClick={closeLessonStudy}
+            className="text-xs font-bold text-accent hover:underline hidden sm:block shrink-0 px-2 py-1 min-h-[40px] flex items-center active:scale-95"
+          >
+            Tutup & Kembali
+          </button>
+        </div>
       </div>
 
       {/* ── 2. BILAH STEPPER 4-TAHAP INTERAKTIF (RESPONSIF & ANTI-TABRAKAN) ───── */}
@@ -324,6 +366,8 @@ export const LessonStudyPage: React.FC = () => {
               pedagogicalFramework={currentLesson.pedagogical_framework}
               vocabBreakdown={currentLesson.vocab_breakdown}
               commonPitfalls={currentLesson.common_pitfalls || currentLesson.pedagogical_framework?.common_pitfalls}
+              trackId={trackId}
+              unitNumber={currentUnit?.unit_number}
             />
           )}
 

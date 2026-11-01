@@ -41,9 +41,10 @@ export function splitIntoMora(text: string): string[] {
 }
 
 /**
- * Alias for splitIntoMora for compatibility with PitchAccentBadge
+ * Alias for splitIntoMora for compatibility with PitchAccentBadge and pitchEngine
  */
 export const extractMoras = splitIntoMora;
+export const splitIntoMoras = splitIntoMora;
 
 /**
  * Converts hiragana reading to katakana reading for phonological and pitch display.

@@ -21,6 +21,9 @@ const PatchNotesModal = React.lazy(() => import('../ui/PatchNotesModal').then(m 
 const KotowazaModal = React.lazy(() => import('../kotowaza/KotowazaModal').then(m => ({ default: m.KotowazaModal })));
 const StudyToolboxModal = React.lazy(() => import('../tools/StudyToolboxModal').then(m => ({ default: m.StudyToolboxModal })));
 const CatPlacementModal = React.lazy(() => import('../cat/CatPlacementModal').then(m => ({ default: m.CatPlacementModal })));
+const KeigoTrainerModal = React.lazy(() => import('../keigo/KeigoTrainerModal').then(m => ({ default: m.KeigoTrainerModal })));
+const CounterTrainerModal = React.lazy(() => import('../counters/CounterTrainerModal').then(m => ({ default: m.CounterTrainerModal })));
+const PitchAccentModal = React.lazy(() => import('../pitch/PitchAccentModal').then(m => ({ default: m.PitchAccentModal })));
 const ReportIssueModal = React.lazy(() => import('../ui/ReportIssueModal').then(m => ({ default: m.ReportIssueModal })));
 
 export const GlobalModalManager: React.FC = () => {
@@ -104,6 +107,8 @@ export const GlobalModalManager: React.FC = () => {
                 onOpenNuance={() => openModal('nuance')}
                 onOpenKotowaza={() => openModal('kotowaza')}
                 onOpenCatPlacement={() => openModal('catPlacement')}
+                onOpenKeigo={() => openModal('keigo')}
+                onOpenCounters={() => openModal('counters')}
                 onOpenFeatureGuide={() => openModal('featureGuide')}
                 onOpenShortcuts={() => openModal('shortcuts')}
               />
@@ -111,6 +116,30 @@ export const GlobalModalManager: React.FC = () => {
           case 'catPlacement':
             return (
               <CatPlacementModal
+                key={key}
+                isOpen={isTop}
+                onClose={closeModal}
+              />
+            );
+          case 'keigo':
+            return (
+              <KeigoTrainerModal
+                key={key}
+                isOpen={isTop}
+                onClose={closeModal}
+              />
+            );
+          case 'counters':
+            return (
+              <CounterTrainerModal
+                key={key}
+                isOpen={isTop}
+                onClose={closeModal}
+              />
+            );
+          case 'pitch':
+            return (
+              <PitchAccentModal
                 key={key}
                 isOpen={isTop}
                 onClose={closeModal}

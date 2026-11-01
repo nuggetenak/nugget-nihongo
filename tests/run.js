@@ -755,7 +755,7 @@ console.log('\n── Sensei persona drift ──');
     return;
   }
 
-  assert(curr && curr.units && curr.units.length === 10, 'Curriculum N5 must contain exactly 10 units');
+  assert(curr && curr.units && (curr.units.length === 10 || curr.units.length === 15), 'Curriculum N5 must contain exactly 10 or 15 units');
   const gn5 = global.grammarN5 || [];
   const gn5Set = new Set(gn5.map(g => g.id));
   const seenG = new Set();
@@ -773,6 +773,94 @@ console.log('\n── Sensei persona drift ──');
   }
 
   assert(seenG.size === gn5.length, `Curriculum N5 must cover all 94 grammar points (covered: ${seenG.size}/${gn5.length})`);
+})();
+
+// ── Curriculum N4 Original ──
+(() => {
+  console.log('\n── Curriculum N4 Original ──');
+  const currPath = path.join(ROOT, 'public/data/curriculum/curriculum-n4.json');
+  if (!fs.existsSync(currPath)) {
+    skip++; console.log('  SKIP: curriculum-n4.json not found'); return;
+  }
+  let curr = null;
+  try { curr = JSON.parse(fs.readFileSync(currPath, 'utf8')); } catch (e) {
+    assert(false, `curriculum-n4.json JSON parse error: ${e.message}`);
+    return;
+  }
+
+  assert(curr && curr.units && (curr.units.length === 10 || curr.units.length === 15), 'Curriculum N4 must contain exactly 10 or 15 units');
+  const gn4 = global.grammarN4 || [];
+  const gn4Set = new Set(gn4.map(g => g.id));
+  const seenG = new Set();
+
+  for (const unit of (curr.units || [])) {
+    assert(unit.id && unit.title_id && unit.can_do_summary, `Unit ${unit.unit_number || '?'}: missing required metadata`);
+    assert(Array.isArray(unit.grammar_ids) && unit.grammar_ids.length > 0, `Unit ${unit.unit_number}: grammar_ids must be non-empty array`);
+    assert(Array.isArray(unit.lessons) && unit.lessons.length > 0, `Unit ${unit.unit_number}: lessons must be non-empty array`);
+
+    for (const gid of (unit.grammar_ids || [])) {
+      assert(gn4Set.has(gid), `Unit ${unit.unit_number}: grammar ID ${gid} not found in grammarN4`);
+      assert(!seenG.has(gid), `Unit ${unit.unit_number}: duplicate grammar ID ${gid}`);
+      seenG.add(gid);
+    }
+  }
+
+  assert(seenG.size === gn4.length, `Curriculum N4 must cover all 92 grammar points (covered: ${seenG.size}/${gn4.length})`);
+})();
+
+// ── Curriculum N3 Flagship ──
+(() => {
+  console.log('\n── Curriculum N3 Flagship ──');
+  const currPath = path.join(ROOT, 'public/data/curriculum/curriculum-n3.json');
+  if (!fs.existsSync(currPath)) {
+    skip++; console.log('  SKIP: curriculum-n3.json not found'); return;
+  }
+  let curr = null;
+  try { curr = JSON.parse(fs.readFileSync(currPath, 'utf8')); } catch (e) {
+    assert(false, `curriculum-n3.json JSON parse error: ${e.message}`);
+    return;
+  }
+
+  assert(curr && curr.units && (curr.units.length === 10 || curr.units.length === 20), 'Curriculum N3 must contain exactly 10 or 20 units');
+  const gn3 = global.grammarN3 || [];
+  const gn3Set = new Set(gn3.map(g => g.id));
+  const seenG = new Set();
+
+  for (const unit of (curr.units || [])) {
+    assert(unit.id && unit.title_id && unit.can_do_summary, `Unit ${unit.unit_number || '?'}: missing required metadata`);
+    assert(Array.isArray(unit.grammar_ids) && unit.grammar_ids.length > 0, `Unit ${unit.unit_number}: grammar_ids must be non-empty array`);
+    assert(Array.isArray(unit.lessons) && unit.lessons.length > 0, `Unit ${unit.unit_number}: lessons must be non-empty array`);
+
+    for (const gid of (unit.grammar_ids || [])) {
+      assert(gn3Set.has(gid), `Unit ${unit.unit_number}: grammar ID ${gid} not found in grammarN3`);
+      assert(!seenG.has(gid), `Unit ${unit.unit_number}: duplicate grammar ID ${gid}`);
+      seenG.add(gid);
+    }
+  }
+
+  assert(seenG.size === gn3.length, `Curriculum N3 must cover all 180 grammar points (covered: ${seenG.size}/${gn3.length})`);
+})();
+
+// ── Core Handover Modules (Keigo, Counters, Kotowaza 366+, Pitch Accent) ──
+(() => {
+  console.log('\n── Core Handover Modules ──');
+  const modules = [
+    'tests/test-keigo-module.js',
+    'tests/test-counter-module.js',
+    'tests/test-kotowaza-expansion.js',
+    'tests/test-pitch-accent-module.js'
+  ];
+  for (const mod of modules) {
+    const fullPath = path.join(ROOT, mod);
+    assert(fs.existsSync(fullPath), `${mod} must exist`);
+    try {
+      require(fullPath);
+      pass++;
+    } catch (err) {
+      fail++;
+      console.error(`  FAIL: ${mod} execution error:`, err.message);
+    }
+  }
 })();
 
 

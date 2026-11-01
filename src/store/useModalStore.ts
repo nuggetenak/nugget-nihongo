@@ -16,6 +16,9 @@ export type ModalType =
   | 'kotowaza'
   | 'toolbox'
   | 'catPlacement'
+  | 'keigo'
+  | 'counters'
+  | 'pitch'
   | 'featureGuide'
   | 'reportIssue'
   | 'auth'
@@ -33,6 +36,9 @@ export interface ModalPropsMap {
   kotowaza: Record<string, never>;
   toolbox: Record<string, never>;
   catPlacement: Record<string, never>;
+  keigo: Record<string, never>;
+  counters: Record<string, never>;
+  pitch: Record<string, never>;
   featureGuide: Record<string, never>;
   reportIssue: {
     itemId?: string;

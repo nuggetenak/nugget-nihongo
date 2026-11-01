@@ -1,5 +1,14 @@
+// ══════════════════════════════════════════════════════════════════
+//  Sidebar.tsx — Desktop 5-Tab Navigation Rail
+//  Tab 1: Belajar ('home')
+//  Tab 2: Pusat Retensi ('kebun')
+//  Tab 3: Dojo & Pustaka ('materi')
+//  Tab 4: Sensei AI ('sensei')
+//  Tab 5: Profil & Pengaturan ('settings')
+// ══════════════════════════════════════════════════════════════════
+
 import React from 'react';
-import { Home, BookOpen, Layers, Sprout, Brain, Sparkles, Settings, HelpCircle, History, Quote, Wrench } from 'lucide-react';
+import { Compass, BookOpen, Brain, Sparkles, Settings, HelpCircle, History, Quote, Wrench } from 'lucide-react';
 import { useAppStore, AppState } from '../../store/useAppStore';
 import { transitionTabChange } from '../../lib/ui/navigation';
 import { APP_VERSION } from '../../config/version';
@@ -17,10 +26,9 @@ export const Sidebar: React.FC = () => {
   const { activeTab, setActiveTab, openPatchNotes, openKotowaza, openToolbox } = useAppStore();
 
   const navItems: NavItem[] = [
-    { id: 'home', label: 'Beranda', jp: 'ホーム', icon: <Home className="w-5 h-5" /> },
-    { id: 'materi', label: 'Materi Hub', jp: '学習', icon: <BookOpen className="w-5 h-5" /> },
-    { id: 'quiz', label: 'Arena Kuis', jp: '練習', icon: <Layers className="w-5 h-5" /> },
+    { id: 'home', label: 'Belajar (Jalur)', jp: '学習', icon: <Compass className="w-5 h-5" /> },
     { id: 'kebun', label: 'Pusat Retensi (Brankas FSRS)', jp: '保持', icon: <Brain className="w-5 h-5" /> },
+    { id: 'materi', label: 'Dojo & Pustaka', jp: '道場', icon: <BookOpen className="w-5 h-5" /> },
     { 
       id: 'sensei', 
       label: 'Sensei AI', 
@@ -28,9 +36,15 @@ export const Sidebar: React.FC = () => {
       icon: <Sparkles className="w-5 h-5 text-accent-hot" />,
       isSpecial: true
     },
-    { id: 'settings', label: 'Pengaturan', jp: '設定', icon: <Settings className="w-5 h-5" /> },
+    { id: 'settings', label: 'Profil & Pengaturan', jp: '設定', icon: <Settings className="w-5 h-5" /> },
     { id: 'about', label: 'Tentang Aplikasi', jp: '情報', icon: <HelpCircle className="w-5 h-5" /> },
   ];
+
+  const isItemActive = (id: AppState['activeTab']) => {
+    if (id === activeTab) return true;
+    if (id === 'materi' && (activeTab === 'quiz' || activeTab === 'choukai')) return true;
+    return false;
+  };
 
   return (
     <aside 
@@ -64,7 +78,7 @@ export const Sidebar: React.FC = () => {
         className="flex-1 px-3 py-4 space-y-1.5 overflow-y-auto"
       >
         {navItems.map((item) => {
-          const isActive = activeTab === item.id;
+          const isActive = isItemActive(item.id);
           return (
             <button
               key={item.id}

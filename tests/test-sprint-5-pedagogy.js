@@ -137,12 +137,12 @@ check('Kaigo Lesson 2 covers SBAR terms: 転倒 (tentou), 意識 (ishiki), 呼�
 // ── TEST 3: T-23 & T-24 Dynamic Fallback Generator & Diagnostic Feedback ──
 console.log('\n── TEST 3: T-23 & T-24 Dynamic Fallback Generator & Diagnostic Feedback ──');
 
-// Test dynamic fallback on N3 lesson
-const n3Json = JSON.parse(fs.readFileSync(path.join(DATA_DIR, 'curriculum/curriculum-n3.json'), 'utf8'));
-const n3U1 = n3Json.units[0];
-const n3L1 = n3U1.lessons[0];
+// Test dynamic fallback on uncurated lesson (N2)
+const uncuratedJson = JSON.parse(fs.readFileSync(path.join(DATA_DIR, 'curriculum/curriculum-n2.json'), 'utf8'));
+const uncuratedU1 = uncuratedJson.units[0];
+const uncuratedL1 = { ...uncuratedU1.lessons[0], id: 'les-uncurated-fallback-test' };
 
-const adaptedN3 = getAdaptiveLessonContent('n3', n3U1, n3L1);
+const adaptedN3 = getAdaptiveLessonContent('curriculum-n2', uncuratedU1, uncuratedL1);
 
 check('Dynamic fallback framework generates multi-trap common_pitfalls (>= 3 items)', () => {
   const pf = adaptedN3.pedagogical_framework;

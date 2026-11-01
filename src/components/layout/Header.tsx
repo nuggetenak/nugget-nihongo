@@ -1,11 +1,31 @@
-import React from 'react';
-import { Search, Flame, Zap, Download, RefreshCw, User as UserIcon, Cloud, HelpCircle, Compass, Menu, Wrench } from 'lucide-react';
+// ══════════════════════════════════════════════════════════════════
+//  Header.tsx — Top Navigation Header & Active Track Switcher
+//  Includes 1-tap active track switcher ([🇯🇵 N5: Fondasi Dasar ▼]),
+//  universal search (⌘K), offline indicators, and sync status.
+// ══════════════════════════════════════════════════════════════════
+
+import React, { useState, useEffect, useRef } from 'react';
+import {
+  Search,
+  Flame,
+  Zap,
+  Download,
+  User as UserIcon,
+  Compass,
+  Menu,
+  Wrench,
+  ChevronDown,
+  X,
+  Check,
+  Briefcase,
+  BookOpen,
+} from 'lucide-react';
 import { useAppStore } from '../../store/useAppStore';
 import { usePwaStore } from '../../lib/pwa/pwaStore';
 import { useAuthStore } from '../../lib/supabase/authStore';
+import { useCurriculumStore, TrackId } from '../../lib/curriculum/curriculumStore';
 import { OfflineStatusPill } from '../ui/OfflineStatusPill';
 import { SyncStatusIndicator } from '../sync/SyncStatusIndicator';
-import { JLPTLevel } from '../../types/vocab';
 
 interface HeaderProps {
   onOpenSearch?: () => void;
@@ -14,19 +34,144 @@ interface HeaderProps {
   onOpenToolbox?: () => void;
 }
 
-export const Header: React.FC<HeaderProps> = ({ onOpenSearch, onOpenShortcuts, onOpenMobileDrawer, onOpenToolbox }) => {
+export const Header: React.FC<HeaderProps> = ({
+  onOpenSearch,
+  onOpenShortcuts,
+  onOpenMobileDrawer,
+  onOpenToolbox,
+}) => {
   const {
-    streak, xp,
-    showFurigana, setShowFurigana,
-    showRomaji, setShowRomaji, showToast,
-    openFeatureGuide, setActiveTab, openToolbox
+    streak,
+    xp,
+    showFurigana,
+    setShowFurigana,
+    showRomaji,
+    setShowRomaji,
+    showToast,
+    openFeatureGuide,
+    setActiveTab,
+    openToolbox,
   } = useAppStore();
   const { isInstalled, setShowInstallModal } = usePwaStore();
-  const { user, syncStatus, openAuthModal, syncNow } = useAuthStore();
+  const { user } = useAuthStore();
+  const { activeTrackId, setActiveTrack, trackProgress } = useCurriculumStore();
+
+  const [isTrackPickerOpen, setIsTrackPickerOpen] = useState(false);
+  const [pickerCategory, setPickerCategory] = useState<'jlpt' | 'ssw' | 'jft' | 'books'>('jlpt');
+  const modalRef = useRef<HTMLDivElement>(null);
+
+  // Close modal on Escape key
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Escape' && isTrackPickerOpen) {
+        setIsTrackPickerOpen(false);
+      }
+    };
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [isTrackPickerOpen]);
+
+  // Track Display Information
+  const getTrackDisplay = (trackId?: TrackId | string | null) => {
+    if (!trackId || typeof trackId !== 'string') {
+      return { flag: '🇯🇵', full: 'N5: Fondasi Dasar', short: 'N5', icon: '🌱' };
+    }
+    switch (trackId) {
+      case 'n5':
+        return { flag: '🇯🇵', full: 'N5: Fondasi Dasar', short: 'N5', icon: '🌱' };
+      case 'n4':
+        return { flag: '🇯🇵', full: 'N4: Percakapan Harian', short: 'N4', icon: '🌿' };
+      case 'n3':
+        return { flag: '🇯🇵', full: 'N3: Menengah', short: 'N3', icon: '🌊' };
+      case 'n2':
+        return { flag: '🇯🇵', full: 'N2: Pra-Lanjutan', short: 'N2', icon: '⛰️' };
+      case 'n1':
+        return { flag: '🇯🇵', full: 'N1: Mahir', short: 'N1', icon: '⛩️' };
+      case 'ssw-kaigo':
+        return { flag: '👵', full: 'SSW: Kaigo (Lansia)', short: 'Kaigo', icon: '👵' };
+      case 'ssw-food':
+        return { flag: '🍱', full: 'SSW: Pabrik Makanan', short: 'Food', icon: '🍱' };
+      case 'ssw-construction':
+        return { flag: '👷', full: 'SSW: Konstruksi K3', short: 'Kensetsu', icon: '👷' };
+      case 'ssw-agriculture':
+        return { flag: '🌱', full: 'SSW: Pertanian', short: 'Nogyo', icon: '🌱' };
+      case 'ssw-accommodation':
+        return { flag: '🏨', full: 'SSW: Perhotelan', short: 'Hotel', icon: '🏨' };
+      case 'ssw-building-cleaning':
+        return { flag: '🧹', full: 'SSW: Pembersihan', short: 'Cleaning', icon: '🧹' };
+      case 'jft-a1':
+        return { flag: '🎌', full: 'JFT: Basic A1', short: 'JFT-A1', icon: '🎌' };
+      case 'jft-a2':
+        return { flag: '🎌', full: 'JFT: Basic A2', short: 'JFT-A2', icon: '🎌' };
+      case 'seikatsu':
+        return { flag: '🏮', full: 'Hidup di Jepang', short: 'Seikatsu', icon: '🏮' };
+      case 'book-genki':
+        return { flag: '📘', full: 'Buku: GENKI', short: 'Genki', icon: '📘' };
+      case 'book-minna':
+        return { flag: '📙', full: 'Buku: Minna', short: 'Minna', icon: '📙' };
+      default:
+        if (trackId.startsWith('ssw-')) {
+          const sector = trackId.replace('ssw-', '');
+          return { flag: '⚙️', full: `SSW: ${sector}`, short: 'SSW', icon: '⚙️' };
+        }
+        if (trackId.startsWith('book-')) {
+          const title = trackId.replace('book-', '');
+          return { flag: '📚', full: `Buku: ${title}`, short: 'Buku', icon: '📚' };
+        }
+        return { flag: '🇯🇵', full: 'N5: Fondasi Dasar', short: 'N5', icon: '🌱' };
+    }
+  };
+
+  const currentTrack = getTrackDisplay(activeTrackId);
+
+  // Curriculum definition groups for switcher modal
+  const jlptList: Array<{ id: TrackId; title: string; subtitle: string; icon: string }> = [
+    { id: 'n5', title: 'JLPT N5', subtitle: 'Pemula · Fondasi Tata Bahasa & Kosakata Dasar', icon: '🌱' },
+    { id: 'n4', title: 'JLPT N4', subtitle: 'Dasar Harian · Pola Percakapan Praktis & Konjugasi', icon: '🌿' },
+    { id: 'n3', title: 'JLPT N3', subtitle: 'Tingkat Menengah · Jembatan Percakapan Otentik', icon: '🌊' },
+    { id: 'n2', title: 'JLPT N2', subtitle: 'Pra-Lanjutan · Bahasa Berita, Bisnis & Artikel Opini', icon: '⛰️' },
+    { id: 'n1', title: 'JLPT N1', subtitle: 'Tingkat Mahir · Ekspresi Nuansa Sastra & Formal Tinggi', icon: '⛩️' },
+  ];
+
+  const sswList: Array<{ id: TrackId; title: string; subtitle: string; icon: string; status: 'active' | 'soon' }> = [
+    { id: 'ssw-kaigo', title: 'SSW Keperawatan Lansia (Kaigo)', subtitle: 'Komunikasi empatik, Koe-kake, & SOP medis', icon: '👵', status: 'active' },
+    { id: 'ssw-food', title: 'SSW Pabrik Makanan (Food Mfg)', subtitle: 'Sanitasi HACCP, pencegahan kontaminasi pangan', icon: '🍱', status: 'active' },
+    { id: 'ssw-construction', title: 'SSW Konstruksi (Kensetsu)', subtitle: 'SOP K3 Gemba, komando akustik KYT & alat berat', icon: '👷', status: 'active' },
+    { id: 'ssw-agriculture', title: 'SSW Pertanian (Nogyo)', subtitle: 'Budidaya tanaman rumah kaca & peternakan', icon: '🌱', status: 'active' },
+    { id: 'ssw-accommodation', title: 'SSW Perhotelan (Shukuhaku)', subtitle: 'Resepsionis omotenashi, check-in & etika tamu', icon: '🏨', status: 'active' },
+    { id: 'ssw-building-cleaning', title: 'SSW Pembersihan Gedung', subtitle: 'Sanitasi polisher & pemilahan limbah fasilitas', icon: '🧹', status: 'active' },
+    { id: 'ssw-manufacturing', title: 'SSW Manufaktur & Pengolahan', subtitle: 'Mesin press, perakitan presisi, kontrol QC', icon: '⚙️', status: 'soon' },
+    { id: 'ssw-automobile', title: 'SSW Perawatan Otomotif', subtitle: 'Servis rem, diagnostik OBD-II & ganti oli', icon: '🚗', status: 'soon' },
+    { id: 'ssw-food-service', title: 'SSW Restoran (Gaishoku)', subtitle: 'Penyambutan tamu, handy order & sanitasi dapur', icon: '🍽️', status: 'soon' },
+  ];
+
+  const jftList: Array<{ id: TrackId; title: string; subtitle: string; icon: string }> = [
+    { id: 'jft-a1', title: 'JFT-Basic A1', subtitle: 'Komunikasi dasar kehidupan harian di Jepang', icon: '🎌' },
+    { id: 'jft-a2', title: 'JFT-Basic A2', subtitle: 'Standar minimum kelulusan visa kerja SSW', icon: '🎌' },
+    { id: 'seikatsu', title: 'Panduan Hidup di Jepang', subtitle: 'SOP darurat gempa, pemilahan sampah, tata krama', icon: '🏮' },
+  ];
+
+  const bookList: Array<{ id: TrackId; title: string; subtitle: string; icon: string }> = [
+    { id: 'book-genki', title: 'GENKI I & II', subtitle: 'The Japan Times · Standar percakapan global', icon: '📘' },
+    { id: 'book-minna', title: 'Minna no Nihongo I & II', subtitle: '3A Corporation · Silabus LPK kanonikal', icon: '📙' },
+    { id: 'book-soumatome', title: 'Nihongo Sou Matome', subtitle: 'ASK Publishing · Persiapan maraton JLPT', icon: '📗' },
+    { id: 'book-tobira', title: 'Tobira: Advanced Gateway', subtitle: 'Kuroshio · Jembatan tingkat menengah otentik', icon: '🚪' },
+    { id: 'book-quartet', title: 'QUARTET I & II', subtitle: 'The Japan Times · 4 Kemahiran Menengah', icon: '🎻' },
+    { id: 'book-try', title: 'TRY! Communicative', subtitle: 'ASK Publishing · Tata bahasa berbasis dialog', icon: '🎯' },
+  ];
+
+  const handleSelectTrack = (trackId: TrackId, title: string) => {
+    setActiveTrack(trackId);
+    setIsTrackPickerOpen(false);
+    showToast(`Jalur aktif beralih ke ${title}`, '🇯🇵');
+  };
 
   return (
-    <header role="banner" className="sticky top-0 z-30 bg-surface/90 backdrop-blur-md border-b border-accent/15 px-2.5 sm:px-6 lg:px-8 py-2.5 sm:py-3 flex items-center justify-between gap-2 sm:gap-4 max-w-full overflow-hidden">
-      {/* Mobile brand & Menu Drawer Toggle (hidden on desktop) */}
+    <header
+      role="banner"
+      className="sticky top-0 z-30 bg-surface/90 backdrop-blur-md border-b border-accent/15 px-2.5 sm:px-6 lg:px-8 py-2.5 sm:py-3 flex items-center justify-between gap-2 sm:gap-4 max-w-full overflow-hidden"
+    >
+      {/* Left: Mobile brand & Menu Drawer Toggle */}
       <div className="flex lg:hidden items-center gap-1.5 shrink-0">
         <button
           type="button"
@@ -51,12 +196,28 @@ export const Header: React.FC<HeaderProps> = ({ onOpenSearch, onOpenShortcuts, o
         </button>
       </div>
 
+      {/* Feature F2: Top Header Active Track Switcher Button */}
+      <button
+        type="button"
+        onClick={() => setIsTrackPickerOpen(true)}
+        aria-label={`Jalur aktif: ${currentTrack.full}. Klik untuk mengganti jalur belajar.`}
+        className="flex items-center gap-1 sm:gap-1.5 px-2.5 sm:px-3 py-1.5 rounded-xl bg-amber-500/15 hover:bg-amber-500/25 border border-amber-500/30 text-accent font-bold text-xs transition-all shrink-0 active:scale-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent min-h-[40px] sm:min-h-[44px]"
+        title="Klik untuk memilih Jalur Belajar (JLPT N5-N1, SSW Tokutei Ginou, Buku Teks)"
+      >
+        <span className="text-sm shrink-0">{currentTrack.flag}</span>
+        <span className="hidden sm:inline font-mono truncate max-w-[170px] lg:max-w-none">
+          {currentTrack.full}
+        </span>
+        <span className="sm:hidden font-mono text-[11px] font-extrabold">{currentTrack.short}</span>
+        <ChevronDown className="w-3.5 h-3.5 opacity-70 shrink-0" />
+      </button>
+
       {/* Search Input Bar with Shortcut Indicator */}
-      <button 
+      <button
         type="button"
         onClick={onOpenSearch}
         aria-label="Buka Pencarian Global (Tekan ⌘K)"
-        className="flex-1 min-w-0 max-w-md relative cursor-pointer text-left block rounded-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+        className="flex-1 min-w-0 max-w-xs sm:max-w-md relative cursor-pointer text-left block rounded-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
       >
         <Search className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-appText-muted absolute left-2.5 sm:left-3 top-1/2 -translate-y-1/2 pointer-events-none" />
         <input
@@ -73,7 +234,11 @@ export const Header: React.FC<HeaderProps> = ({ onOpenSearch, onOpenShortcuts, o
       </button>
 
       {/* Quick Furigana & Romaji Toggles (Desktop only) */}
-      <div className="hidden xl:flex items-center gap-1 bg-surface-2 p-1 rounded-xl border border-accent/15 text-[11px]" role="group" aria-label="Pengaturan Tampilan Bacaan">
+      <div
+        className="hidden xl:flex items-center gap-1 bg-surface-2 p-1 rounded-xl border border-accent/15 text-[11px]"
+        role="group"
+        aria-label="Pengaturan Tampilan Bacaan"
+      >
         <button
           onClick={() => {
             setShowFurigana(!showFurigana);
@@ -83,7 +248,9 @@ export const Header: React.FC<HeaderProps> = ({ onOpenSearch, onOpenShortcuts, o
           aria-checked={showFurigana}
           aria-label="Aktifkan furigana kana di atas kanji"
           className={`px-2 py-0.5 rounded-lg font-bold transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent ${
-            showFurigana ? 'bg-amber-500/20 text-accent-hot border border-amber-500/30' : 'text-appText-muted hover:text-appText-bright'
+            showFurigana
+              ? 'bg-amber-500/20 text-accent-hot border border-amber-500/30'
+              : 'text-appText-muted hover:text-appText-bright'
           }`}
           title="Toggle Furigana (Shortcut: F)"
         >
@@ -98,7 +265,9 @@ export const Header: React.FC<HeaderProps> = ({ onOpenSearch, onOpenShortcuts, o
           aria-checked={showRomaji}
           aria-label="Aktifkan huruf latin romaji"
           className={`px-2 py-0.5 rounded-lg font-bold transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent ${
-            showRomaji ? 'bg-amber-500/20 text-accent-hot border border-amber-500/30' : 'text-appText-muted hover:text-appText-bright'
+            showRomaji
+              ? 'bg-amber-500/20 text-accent-hot border border-amber-500/30'
+              : 'text-appText-muted hover:text-appText-bright'
           }`}
           title="Toggle Romaji (Shortcut: R)"
         >
@@ -116,10 +285,10 @@ export const Header: React.FC<HeaderProps> = ({ onOpenSearch, onOpenShortcuts, o
           onClick={onOpenToolbox || openToolbox}
           title="Kotak Peralatan Belajar (Bagan Kana, Konjugasi, Nuansa, CAT Placement)"
           aria-label="Kotak Peralatan Belajar"
-          className="flex items-center gap-1.5 px-2.5 py-1.5 rounded-full bg-surface-2 hover:bg-surface-3 text-appText-bright border border-accent/20 hover:border-accent text-xs font-bold transition-all shadow-sm active:scale-95 shrink-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+          className="flex items-center gap-1.5 px-2 sm:px-2.5 py-1.5 rounded-full bg-surface-2 hover:bg-surface-3 text-appText-bright border border-accent/20 hover:border-accent text-xs font-bold transition-all shadow-sm active:scale-95 shrink-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent min-h-[36px]"
         >
           <Wrench className="w-3.5 h-3.5 text-accent" />
-          <span className="hidden sm:inline">Peralatan</span>
+          <span className="hidden md:inline">Peralatan</span>
         </button>
 
         {/* Navigation & Feature Guide Button (Desktop/Tablet) */}
@@ -127,26 +296,14 @@ export const Header: React.FC<HeaderProps> = ({ onOpenSearch, onOpenShortcuts, o
           onClick={openFeatureGuide}
           title="Panduan Fitur & Bantuan (Tekan untuk melihat seluruh modul & tips)"
           aria-label="Panduan Fitur & Bantuan"
-          className="hidden md:flex items-center gap-1.5 px-2.5 py-1.5 rounded-full bg-amber-500/10 hover:bg-amber-500/20 text-accent border border-accent/25 text-xs font-bold transition-all shadow-sm active:scale-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+          className="hidden md:flex items-center gap-1.5 px-2.5 py-1.5 rounded-full bg-amber-500/10 hover:bg-amber-500/20 text-accent border border-accent/25 text-xs font-bold transition-all shadow-sm active:scale-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent min-h-[36px]"
         >
           <Compass className="w-3.5 h-3.5" />
           <span>Panduan</span>
         </button>
 
-        {/* Desktop Shortcuts Help Button */}
-        {onOpenShortcuts && (
-          <button
-            onClick={onOpenShortcuts}
-            title="Pintasan Keyboard (Tekan ?)"
-            aria-label="Pintasan Keyboard"
-            className="hidden md:flex items-center justify-center w-8 h-8 rounded-full bg-surface-2 hover:bg-surface-3 border border-accent/20 text-appText-muted hover:text-accent transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
-          >
-            <HelpCircle className="w-4 h-4" />
-          </button>
-        )}
-
         {/* Streak Flame */}
-        <div 
+        <div
           role="status"
           aria-label={`Streak harian: ${streak} hari aktif berturut-turut`}
           className="flex items-center gap-1 sm:gap-1.5 px-2 sm:px-3 py-1 sm:py-1.5 rounded-full bg-amber-500/15 border border-amber-500/30 text-accent-hot shadow-sm shrink-0"
@@ -156,7 +313,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenSearch, onOpenShortcuts, o
         </div>
 
         {/* XP Pill (Desktop/Tablet) */}
-        <div 
+        <div
           role="status"
           aria-label={`Total pengalaman: ${xp} XP`}
           className="hidden sm:flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface-2 border border-accent/20 text-appText-bright shadow-sm shrink-0"
@@ -171,7 +328,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenSearch, onOpenShortcuts, o
             onClick={() => setShowInstallModal(true)}
             title="Pasang Aplikasi (PWA)"
             aria-label="Pasang Aplikasi Progressive Web App"
-            className="hidden md:flex items-center gap-1 px-2.5 py-1.5 rounded-full bg-amber-500/10 hover:bg-amber-500/20 text-amber-300 border border-amber-500/30 text-xs font-semibold transition-all active:scale-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+            className="hidden md:flex items-center gap-1 px-2.5 py-1.5 rounded-full bg-amber-500/10 hover:bg-amber-500/20 text-amber-300 border border-amber-500/30 text-xs font-semibold transition-all active:scale-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent min-h-[36px]"
           >
             <Download className="w-3.5 h-3.5" />
             <span>Pasang</span>
@@ -187,7 +344,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenSearch, onOpenShortcuts, o
             onClick={() => setActiveTab('settings')}
             title={`Akun: ${user.email} (Buka Pengaturan Akun)`}
             aria-label={`Akun terhubung: ${user.email}`}
-            className="flex items-center gap-1.5 p-1 sm:px-2.5 sm:py-1.5 rounded-full bg-surface-2 border border-accent/25 text-appText-bright text-xs font-semibold hover:border-accent transition-all max-w-[120px] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+            className="flex items-center gap-1.5 p-1 sm:px-2.5 sm:py-1.5 rounded-full bg-surface-2 border border-accent/25 text-appText-bright text-xs font-semibold hover:border-accent transition-all max-w-[120px] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent min-h-[36px]"
           >
             <div className="w-6 h-6 rounded-full bg-amber-500/20 text-accent font-bold flex items-center justify-center text-[10px] shrink-0">
               {user.email?.charAt(0).toUpperCase()}
@@ -198,16 +355,274 @@ export const Header: React.FC<HeaderProps> = ({ onOpenSearch, onOpenShortcuts, o
           </button>
         ) : (
           <button
-            onClick={() => openAuthModal('signin')}
+            onClick={() => useAuthStore.getState().openAuthModal('signin')}
             title="Masuk untuk sinkronisasi cloud"
             aria-label="Masuk ke Akun Cloud"
-            className="flex items-center gap-1 px-2 py-1 sm:px-2.5 sm:py-1.5 rounded-full bg-surface-2 hover:bg-surface-3 border border-accent/20 hover:border-accent text-appText-bright text-xs font-semibold transition-all shrink-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+            className="flex items-center gap-1 px-2 py-1 sm:px-2.5 sm:py-1.5 rounded-full bg-surface-2 hover:bg-surface-3 border border-accent/20 hover:border-accent text-appText-bright text-xs font-semibold transition-all shrink-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent min-h-[36px]"
           >
             <UserIcon className="w-3.5 h-3.5 text-accent" />
             <span className="hidden sm:inline">Masuk</span>
           </button>
         )}
       </div>
+
+      {/* Feature F2: Active Track Switcher Sheet / Modal (Non-Destructive) */}
+      {isTrackPickerOpen && (
+        <div
+          role="dialog"
+          aria-modal="true"
+          aria-label="Pilih Jalur Kurikulum Aktif"
+          className="fixed inset-0 z-50 bg-stone-950/80 backdrop-blur-sm flex items-end sm:items-center justify-center p-0 sm:p-4 animate-in fade-in duration-200"
+          onClick={() => setIsTrackPickerOpen(false)}
+        >
+          <div
+            ref={modalRef}
+            onClick={(e) => e.stopPropagation()}
+            className="w-full max-w-xl bg-surface border border-accent/25 rounded-t-3xl sm:rounded-3xl shadow-2xl flex flex-col max-h-[85dvh] sm:max-h-[80vh] overflow-hidden"
+          >
+            {/* Modal Header */}
+            <div className="p-4 sm:p-5 border-b border-accent/15 flex items-center justify-between">
+              <div>
+                <div className="text-base sm:text-lg font-bold text-appText-bright flex items-center gap-2">
+                  <span>Pilih Jalur Belajar Aktif</span>
+                  <span className="text-xs font-normal text-appText-muted">(Kurikulum Utama)</span>
+                </div>
+                <p className="text-xs text-appText-muted mt-0.5">
+                  Ganti target JLPT, bidang kerja SSW, atau buku teks tanpa kehilangan progres
+                </p>
+              </div>
+              <button
+                type="button"
+                onClick={() => setIsTrackPickerOpen(false)}
+                aria-label="Tutup pemilihan jalur"
+                className="w-11 h-11 min-w-[44px] min-h-[44px] rounded-xl bg-surface-2 hover:bg-surface-3 text-appText-muted hover:text-appText-bright flex items-center justify-center transition-all active:scale-95"
+              >
+                <X className="w-5 h-5" />
+              </button>
+            </div>
+
+            {/* Category Selector Tabs */}
+            <div className="flex items-center gap-1 p-2 bg-surface-2 border-b border-accent/15 overflow-x-auto scrollbar-none shrink-0">
+              <button
+                type="button"
+                onClick={() => setPickerCategory('jlpt')}
+                className={`flex-1 min-w-[90px] py-1.5 px-2.5 rounded-lg text-xs font-bold transition-all text-center whitespace-nowrap active:scale-95 ${
+                  pickerCategory === 'jlpt'
+                    ? 'bg-amber-500 text-stone-950 shadow-sm font-extrabold'
+                    : 'text-appText-muted hover:text-appText-bright'
+                }`}
+              >
+                🇯🇵 Jalur JLPT
+              </button>
+              <button
+                type="button"
+                onClick={() => setPickerCategory('ssw')}
+                className={`flex-1 min-w-[90px] py-1.5 px-2.5 rounded-lg text-xs font-bold transition-all text-center whitespace-nowrap active:scale-95 ${
+                  pickerCategory === 'ssw'
+                    ? 'bg-amber-500 text-stone-950 shadow-sm font-extrabold'
+                    : 'text-appText-muted hover:text-appText-bright'
+                }`}
+              >
+                💼 Jalur Kerja SSW
+              </button>
+              <button
+                type="button"
+                onClick={() => setPickerCategory('jft')}
+                className={`flex-1 min-w-[90px] py-1.5 px-2.5 rounded-lg text-xs font-bold transition-all text-center whitespace-nowrap active:scale-95 ${
+                  pickerCategory === 'jft'
+                    ? 'bg-amber-500 text-stone-950 shadow-sm font-extrabold'
+                    : 'text-appText-muted hover:text-appText-bright'
+                }`}
+              >
+                🎌 JFT & Hidup
+              </button>
+              <button
+                type="button"
+                onClick={() => setPickerCategory('books')}
+                className={`flex-1 min-w-[90px] py-1.5 px-2.5 rounded-lg text-xs font-bold transition-all text-center whitespace-nowrap active:scale-95 ${
+                  pickerCategory === 'books'
+                    ? 'bg-amber-500 text-stone-950 shadow-sm font-extrabold'
+                    : 'text-appText-muted hover:text-appText-bright'
+                }`}
+              >
+                📚 Buku Teks
+              </button>
+            </div>
+
+            {/* Track Options List */}
+            <div className="p-3 sm:p-4 overflow-y-auto space-y-2 flex-1">
+              {pickerCategory === 'jlpt' &&
+                jlptList.map((trk) => {
+                  const isSelected = activeTrackId === trk.id;
+                  const stats = trackProgress[trk.id];
+                  const completedCount = stats?.completedLessons?.length || 0;
+                  return (
+                    <button
+                      key={trk.id}
+                      type="button"
+                      onClick={() => handleSelectTrack(trk.id, trk.title)}
+                      className={`w-full p-3 rounded-2xl border text-left flex items-center justify-between gap-3 transition-all min-h-[56px] active:scale-98 ${
+                        isSelected
+                          ? 'bg-amber-500/15 border-amber-500 text-appText-bright font-bold ring-1 ring-amber-500'
+                          : 'bg-surface-2 hover:bg-surface-3 border-accent/15 text-appText'
+                      }`}
+                    >
+                      <div className="flex items-center gap-3 min-w-0">
+                        <span className="text-2xl shrink-0">{trk.icon}</span>
+                        <div className="min-w-0">
+                          <div className="font-bold text-sm text-appText-bright flex items-center gap-2">
+                            <span>{trk.title}</span>
+                            {isSelected && (
+                              <span className="text-[10px] font-bold px-1.5 py-0.2 rounded-full bg-accent text-bg">
+                                Aktif
+                              </span>
+                            )}
+                          </div>
+                          <div className="text-xs text-appText-muted truncate">{trk.subtitle}</div>
+                        </div>
+                      </div>
+                      <div className="text-right shrink-0">
+                        {completedCount > 0 ? (
+                          <span className="text-xs text-emerald-400 font-bold">
+                            {completedCount} Tuntas
+                          </span>
+                        ) : (
+                          <span className="text-xs text-appText-muted">Belum Dimulai</span>
+                        )}
+                      </div>
+                    </button>
+                  );
+                })}
+
+              {pickerCategory === 'ssw' &&
+                sswList.map((trk) => {
+                  const isSelected = activeTrackId === trk.id;
+                  const stats = trackProgress[trk.id];
+                  const completedCount = stats?.completedLessons?.length || 0;
+                  return (
+                    <button
+                      key={trk.id}
+                      type="button"
+                      onClick={() => handleSelectTrack(trk.id, trk.title)}
+                      className={`w-full p-3 rounded-2xl border text-left flex items-center justify-between gap-3 transition-all min-h-[56px] active:scale-98 ${
+                        isSelected
+                          ? 'bg-amber-500/15 border-amber-500 text-appText-bright font-bold ring-1 ring-amber-500'
+                          : 'bg-surface-2 hover:bg-surface-3 border-accent/15 text-appText'
+                      }`}
+                    >
+                      <div className="flex items-center gap-3 min-w-0">
+                        <span className="text-2xl shrink-0">{trk.icon}</span>
+                        <div className="min-w-0">
+                          <div className="font-bold text-sm text-appText-bright flex items-center gap-2">
+                            <span className="truncate">{trk.title}</span>
+                            {isSelected && (
+                              <span className="text-[10px] font-bold px-1.5 py-0.2 rounded-full bg-accent text-bg shrink-0">
+                                Aktif
+                              </span>
+                            )}
+                            {trk.status === 'soon' && (
+                              <span className="text-[10px] font-bold px-1.5 py-0.2 rounded-full bg-surface-3 text-amber-400 border border-amber-400/20 shrink-0">
+                                Segera
+                              </span>
+                            )}
+                          </div>
+                          <div className="text-xs text-appText-muted truncate">{trk.subtitle}</div>
+                        </div>
+                      </div>
+                      <div className="text-right shrink-0">
+                        {completedCount > 0 ? (
+                          <span className="text-xs text-emerald-400 font-bold">
+                            {completedCount} Tuntas
+                          </span>
+                        ) : (
+                          <span className="text-xs text-appText-muted">8 Pelajaran</span>
+                        )}
+                      </div>
+                    </button>
+                  );
+                })}
+
+              {pickerCategory === 'jft' &&
+                jftList.map((trk) => {
+                  const isSelected = activeTrackId === trk.id;
+                  const stats = trackProgress[trk.id];
+                  const completedCount = stats?.completedLessons?.length || 0;
+                  return (
+                    <button
+                      key={trk.id}
+                      type="button"
+                      onClick={() => handleSelectTrack(trk.id, trk.title)}
+                      className={`w-full p-3 rounded-2xl border text-left flex items-center justify-between gap-3 transition-all min-h-[56px] active:scale-98 ${
+                        isSelected
+                          ? 'bg-amber-500/15 border-amber-500 text-appText-bright font-bold ring-1 ring-amber-500'
+                          : 'bg-surface-2 hover:bg-surface-3 border-accent/15 text-appText'
+                      }`}
+                    >
+                      <div className="flex items-center gap-3 min-w-0">
+                        <span className="text-2xl shrink-0">{trk.icon}</span>
+                        <div className="min-w-0">
+                          <div className="font-bold text-sm text-appText-bright flex items-center gap-2">
+                            <span>{trk.title}</span>
+                            {isSelected && (
+                              <span className="text-[10px] font-bold px-1.5 py-0.2 rounded-full bg-accent text-bg">
+                                Aktif
+                              </span>
+                            )}
+                          </div>
+                          <div className="text-xs text-appText-muted truncate">{trk.subtitle}</div>
+                        </div>
+                      </div>
+                      <div className="text-right shrink-0">
+                        {completedCount > 0 ? (
+                          <span className="text-xs text-emerald-400 font-bold">
+                            {completedCount} Tuntas
+                          </span>
+                        ) : (
+                          <span className="text-xs text-appText-muted">Tersedia</span>
+                        )}
+                      </div>
+                    </button>
+                  );
+                })}
+
+              {pickerCategory === 'books' &&
+                bookList.map((trk) => {
+                  const isSelected = activeTrackId === trk.id;
+                  return (
+                    <button
+                      key={trk.id}
+                      type="button"
+                      onClick={() => handleSelectTrack(trk.id, trk.title)}
+                      className={`w-full p-3 rounded-2xl border text-left flex items-center justify-between gap-3 transition-all min-h-[56px] active:scale-98 ${
+                        isSelected
+                          ? 'bg-amber-500/15 border-amber-500 text-appText-bright font-bold ring-1 ring-amber-500'
+                          : 'bg-surface-2 hover:bg-surface-3 border-accent/15 text-appText'
+                      }`}
+                    >
+                      <div className="flex items-center gap-3 min-w-0">
+                        <span className="text-2xl shrink-0">{trk.icon}</span>
+                        <div className="min-w-0">
+                          <div className="font-bold text-sm text-appText-bright flex items-center gap-2">
+                            <span>{trk.title}</span>
+                            {isSelected && (
+                              <span className="text-[10px] font-bold px-1.5 py-0.2 rounded-full bg-accent text-bg">
+                                Aktif
+                              </span>
+                            )}
+                          </div>
+                          <div className="text-xs text-appText-muted truncate">{trk.subtitle}</div>
+                        </div>
+                      </div>
+                      <div className="text-right shrink-0">
+                        <span className="text-xs text-accent font-semibold">Buku Teks</span>
+                      </div>
+                    </button>
+                  );
+                })}
+            </div>
+          </div>
+        </div>
+      )}
     </header>
   );
 };

@@ -35804,7 +35804,7 @@ window.vocabN2_Nouns = [
   "word": "通ずる",
   "reading": "つうずる",
   "romaji": "tsuuzuru",
-  "meaning_id": "bersikap terbuka",
+  "meaning_id": "menghubungkan, berlaku umum, menembus",
   "meaning_en": "to be open (to traffic); to lead (to); to connect (to); to run (from, between; e.g. bus service)",
   "jlpt": "n2",
   "pos": "noun",
@@ -35825,7 +35825,7 @@ window.vocabN2_Nouns = [
   "examples": [
     {
       "jp": "これは古今東西に通ずる真理である。",
-      "id": "Ini adalah a universal truth that transcends time.",
+      "id": "Ini adalah kebenaran universal yang berlaku di segala zaman dan tempat.",
       "level": "n2",
       "tags": [
         "umum"

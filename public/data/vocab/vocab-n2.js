@@ -2,7 +2,7 @@
 //  vocab-n2.js — Nugget Nihongo · JLPT N2
 //  AUTO-GENERATED — DO NOT EDIT DIRECTLY
 //  Edit: public/data/vocab/n2/*.js  then run: node scripts/merge-vocab.js
-//  Entries: 2119 | Generated: 2026-10-17
+//  Entries: 2119 | Generated: 2026-11-01
 // ══════════════════════════════════════════════════════════════
 
 window.vocabN2 = [
@@ -51393,7 +51393,7 @@ window.vocabN2 = [
   "word": "あれこれ",
   "reading": "あれこれ",
   "romaji": "arekore",
-  "meaning_id": "one thing or another; this and that",
+  "meaning_id": "berbagai hal, ini dan itu",
   "meaning_en": "one thing or another; this and that; this or that",
   "jlpt": "n2",
   "pos": "adverb",
@@ -51423,7 +51423,7 @@ window.vocabN2 = [
 },
     {
       "jp": "彼らはあれこれと話をしています。",
-      "id": "Mereka talking about this and that.",
+      "id": "Mereka membicarakan berbagai hal ini dan itu.",
       "level": "n2",
       "tags": [
         "umum"
@@ -51596,7 +51596,7 @@ window.vocabN2 = [
   "word": "以後",
   "reading": "いご",
   "romaji": "igo",
-  "meaning_id": "after this; from now on",
+  "meaning_id": "mulai sekarang, setelah ini, selanjutnya",
   "meaning_en": "after this; from now on; hereafter; thereafter",
   "jlpt": "n2",
   "pos": "adverb",
@@ -51626,7 +51626,7 @@ window.vocabN2 = [
 },
     {
       "jp": "それ以後彼女に会っていません。",
-      "id": "I haven't seen her since then.",
+      "id": "Sejak saat itu, saya belum pernah bertemu lagi dengannya.",
       "level": "n2",
       "tags": [
         "umum"
@@ -92229,7 +92229,7 @@ window.vocabN2 = [
   "word": "通ずる",
   "reading": "つうずる",
   "romaji": "tsuuzuru",
-  "meaning_id": "bersikap terbuka",
+  "meaning_id": "menghubungkan, berlaku umum, menembus",
   "meaning_en": "to be open (to traffic); to lead (to); to connect (to); to run (from, between; e.g. bus service)",
   "jlpt": "n2",
   "pos": "noun",
@@ -92250,7 +92250,7 @@ window.vocabN2 = [
   "examples": [
     {
       "jp": "これは古今東西に通ずる真理である。",
-      "id": "Ini adalah a universal truth that transcends time.",
+      "id": "Ini adalah kebenaran universal yang berlaku di segala zaman dan tempat.",
       "level": "n2",
       "tags": [
         "umum"

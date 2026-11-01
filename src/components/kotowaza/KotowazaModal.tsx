@@ -107,7 +107,7 @@ export const KotowazaModal: React.FC<KotowazaModalProps> = ({ isOpen, onClose })
               <div className="flex items-center gap-2">
                 <span className="px-2.5 py-0.5 rounded-full bg-amber-500/20 text-accent border border-amber-500/30 text-[10px] font-bold uppercase tracking-wider flex items-center gap-1">
                   <Sparkles className="w-3 h-3" />
-                  <span>52 Mutiara Kebijaksanaan</span>
+                  <span>{KOTOWAZA_LIST.length} Mutiara Harian (366+)</span>
                 </span>
                 <span className="text-xs text-appText-muted font-jp hidden sm:inline" lang="ja">
                   日本のことわざ

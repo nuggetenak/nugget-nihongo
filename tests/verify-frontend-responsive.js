@@ -118,37 +118,14 @@ async function runVerification() {
       assert(overflowWidth <= 1, `Horizontal scroll blowout detected: scrollWidth (${overflowWidth}px overflow) > window.innerWidth`);
       pass(`Anti-leakage: 0px horizontal overflow on Home screen (${vp.name})`);
 
-      // 3. Navigate to Materi Hub
-      const isBottomNav = vp.width < 1024;
-      if (isBottomNav) {
-        const materiBtn = page.locator('nav.fixed button:has-text("Materi")');
-        await materiBtn.waitFor({ state: 'visible', timeout: 5000 });
-        await materiBtn.click();
-      } else {
-        const materiBtn = page.locator('button:has-text("Materi Hub")').first();
-        await materiBtn.waitFor({ state: 'visible', timeout: 5000 });
-        await materiBtn.click();
-      }
-      await page.waitForTimeout(600);
-
-      // Verify Materi Hub header
-      const hubHeading = await page.locator('h1:has-text("Materi Hub")');
-      await hubHeading.waitFor({ state: 'visible', timeout: 5000 });
-      pass(`Materi Hub view reached`);
-
-      // 4. Verify Kurikulum Orisinal tab is active by default
-      const activeKurikulumBtn = page.locator('button:has-text("Kurikulum Orisinal")');
-      await activeKurikulumBtn.waitFor({ state: 'visible', timeout: 5000 });
-      pass(`Kurikulum Orisinal tab button is rendered and visible`);
-
-      // 5. Verify Curriculum Track Hero & Statistics
+      // 3. Verify Curriculum Pathway directly on Tab 1 Belajar (HomePage)
       await page.locator('text=Memuat Kurikulum').waitFor({ state: 'detached', timeout: 20000 }).catch(() => {});
-      const trackTitle = page.locator('h2:has-text("Kurikulum")').locator('visible=true').first();
+      const trackTitle = page.locator('h1:has-text("Selamat Belajar"), h2:has-text("Kurikulum")').locator('visible=true').first();
       await trackTitle.waitFor({ state: 'visible', timeout: 10000 });
       const trackTitleText = await trackTitle.textContent();
       pass(`Active track rendered: "${trackTitleText?.trim()}"`);
 
-      // 6. Verify Units and Lessons rendering
+      // 4. Verify Units and Lessons rendering on Tab 1 Pathway
       const unitCard = page.locator('text=Unit 1').first();
       await unitCard.waitFor({ state: 'visible', timeout: 20000 });
       pass(`Unit 1 card rendered`);
@@ -170,12 +147,40 @@ async function runVerification() {
       await lessonItem.waitFor({ state: 'visible', timeout: 5000 });
       pass(`Lesson item with action buttons rendered`);
 
-      // 7. Verify Anti-Leakage on Materi Hub
-      const materiOverflow = await page.evaluate(() => {
+      // 5. Navigate to Tab 3: Dojo Hub & Pustaka Catalog
+      const isBottomNav = vp.width < 1024;
+      if (isBottomNav) {
+        const dojoBtn = page.locator('nav.fixed button:has-text("Dojo"), nav.fixed button:has-text("Materi")').first();
+        await dojoBtn.waitFor({ state: 'visible', timeout: 5000 });
+        await dojoBtn.click();
+      } else {
+        const dojoBtn = page.locator('button:has-text("Dojo"), button:has-text("Materi Hub")').first();
+        await dojoBtn.waitFor({ state: 'visible', timeout: 5000 });
+        await dojoBtn.click();
+      }
+      await page.waitForTimeout(600);
+
+      // Verify Dojo Hub header
+      const dojoHeading = page.locator('h1:has-text("Dojo"), h1:has-text("Materi Hub")').first();
+      await dojoHeading.waitFor({ state: 'visible', timeout: 5000 });
+      pass(`Dojo & Pustaka Hub view reached`);
+
+      // Verify Anti-Leakage on Dojo Hub
+      const dojoOverflow = await page.evaluate(() => {
         return document.documentElement.scrollWidth - window.innerWidth;
       });
-      assert(materiOverflow <= 1, `Horizontal scroll blowout on Materi Hub: ${materiOverflow}px overflow`);
-      pass(`Anti-leakage: 0px horizontal overflow on Materi Hub (${vp.name})`);
+      assert(dojoOverflow <= 1, `Horizontal scroll blowout on Dojo Hub: ${dojoOverflow}px overflow`);
+      pass(`Anti-leakage: 0px horizontal overflow on Dojo Hub (${vp.name})`);
+
+      // 6. Return to Tab 1 Belajar for Track Switcher tests
+      if (isBottomNav) {
+        const homeBtn = page.locator('nav.fixed button:has-text("Belajar"), nav.fixed button:has-text("Beranda")').first();
+        await homeBtn.click();
+      } else {
+        const homeBtn = page.locator('button:has-text("Belajar"), button:has-text("Beranda")').first();
+        await homeBtn.click();
+      }
+      await page.waitForTimeout(600);
 
       // 8. Test SSW Vocational Track Switcher
       if (vp.isMobile) {
@@ -195,8 +200,13 @@ async function runVerification() {
         await sswFoodPill.click();
         await page.waitForTimeout(600);
 
-        const foodHeading = page.locator('h2:has-text("Pengolahan")').first();
-        await foodHeading.waitFor({ state: 'visible', timeout: 5000 });
+        const foodHeading = page.locator('h2:has-text("Pengolahan"):visible').first();
+        try {
+          await foodHeading.waitFor({ state: 'visible', timeout: 5000 });
+        } catch {
+          await sswFoodPill.click().catch(() => {});
+          await foodHeading.waitFor({ state: 'visible', timeout: 6000 });
+        }
         pass(`SSW Food Service & Processing track loaded successfully (mobile modal)`);
       } else {
         const sswCategoryBtn = page.locator('button:has-text("Jalur Kerja SSW"):visible').first();
@@ -268,7 +278,7 @@ async function runVerification() {
       const settingsHeading = page.locator('h1:has-text("Pengaturan")');
       await settingsHeading.waitFor({ state: 'visible', timeout: 5000 });
 
-      const l1SettingsSection = page.locator('h2:has-text("Penyesuaian Logat Daerah")');
+      const l1SettingsSection = page.locator('h2:has-text("Penyesuaian Logat"), h2:has-text("Dialek")').first();
       await l1SettingsSection.waitFor({ state: 'visible', timeout: 5000 });
       pass(`L1 Substratum Dialect settings section verified in SettingsPage`);
 

@@ -1,0 +1,20 @@
+const fs = require('fs');
+
+const ledgerPath = 'C:\\Users\\Timedoor\\.gemini\\antigravity\\brain\\315bcf6d-badf-4ef8-9b03-5fab71855574\\FINDINGS_LEDGER.csv';
+
+const pass63Records = [
+  'Pass 63,Cluster 10,Pitch Accent & Audio Synthesis,src/lib/data/pitchAccentManager.ts#L55-L105,CRITICAL,"Complete Runtime Dormancy of 56721-Entry Pitch Accent Index: loadPitchAccentIndex is never invoked during application startup or vocabulary store initialization. Consequently, pitchIndexCache remains null, forcing lookupPitch to fall back exclusively to the 13 hardcoded SEED_PITCH_ENTRIES. Over 99.98% of vocabulary words return undefined pitch data","Call loadPitchAccentIndex during application initialization and ensure asynchronous vocabulary lookups hydrate pitch contours seamlessly",DOCUMENTED_PHASE_1',
+  'Pass 63,Cluster 10,Pitch Accent & Audio Synthesis,src/components/curriculum/interactive/PitchAccentBadge.tsx#L1-L200,CRITICAL,"Total Absence of Acoustic Pitch Accent Audio Playback: PitchAccentBadge.tsx renders static visual SVG polylines but provides zero audio playback of the pitch contour. Non-tonal Indonesian learners cannot hear the pitch contrast between High (260Hz) and Low (196Hz) morae without an acoustic tone synthesizer","Implement a Web Audio dual-frequency pitch hum generator allowing learners to tap and listen to authentic Atamadaka, Nakadaka, Odaka, and Heiban pitch contours",DOCUMENTED_PHASE_1',
+  'Pass 63,Cluster 10,Pitch Accent & Audio Synthesis,src/components/quiz/MoraPacingCard.tsx#L70-L98,CRITICAL,"Timing Jitter & Drift via window.setInterval Metronome: The mora metronome uses window.setInterval(..., 250) rather than AudioContext.currentTime precision event scheduling. This introduces 10-50ms timing jitter on mobile devices, degrading the strict isochronous 240 bpm mora pacing rhythm required for phonological SLA training","Refactor MoraPacingCard to use Web Audio AudioContext.currentTime lookahead scheduling to deliver sample-accurate 240 bpm mora metronome ticks",DOCUMENTED_PHASE_1',
+  'Pass 63,Cluster 10,Pitch Accent & Audio Synthesis,src/components/quiz/MoraPacingCard.tsx#L110-L115,HIGH,"Desynchronization Between WebSpeech Audio and Metronome Clicks: handleSpeak triggers native browser speech synthesis without timing alignment to the running Web Audio metronome clicks, resulting in chaotic overlapping audio and visual highlighting desynchronization","Align spoken mora audio with visual beat highlights using pre-sliced phoneme durations or calibrated audio time stamps",DOCUMENTED_PHASE_1',
+  'Pass 63,Cluster 10,Pitch Accent & Audio Synthesis,src/lib/audio/audioService.ts#L88-L100,HIGH,"Uncontrolled OS Voice Fallback on Missing ja-JP Speech Synthesis: When ja-JP voice is uninstalled on client operating systems, the browser reads Japanese text with default English/Indonesian phonology or emits a single 440Hz beep, causing severe acoustic degradation","Integrate offline neural TTS fallback (Kokoro-82M WebGPU / ONNX or pocket-tts cached audio) when local OS Japanese voices are missing",DOCUMENTED_PHASE_1',
+  'Pass 63,Cluster 10,Pitch Accent & Audio Synthesis,src/lib/audio/sfx.ts#L1-L229,HIGH,"Incomplete Gamification Procedural Audio Soundset: sfx.ts implements basic correct/wrong chimes but lacks escalating combo streak synthesizers (pitch shift per consecutive correct answer), milestone level-up fanfares, and Prometric CBT 5-minute countdown urgency pulses","Author dedicated procedural sound designs for combo streak escalation, multi-stage fanfares, and exam countdown warning pulses using Web Audio oscillators",DOCUMENTED_PHASE_1'
+];
+
+fs.appendFileSync(ledgerPath, '\n' + pass63Records.join('\n'), 'utf8');
+console.log('Appended 6 records for Pass 63 to FINDINGS_LEDGER.csv');
+
+// Clean up any empty lines
+let lines = fs.readFileSync(ledgerPath, 'utf8').split(/\r?\n/).map(l => l.trim()).filter(l => l.length > 0);
+fs.writeFileSync(ledgerPath, lines.join('\n') + '\n', 'utf8');
+console.log(`Cleaned ledger lines: ${lines.length} (Expected: 388 lines, 387 defect records + 1 header)`);

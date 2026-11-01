@@ -32,6 +32,7 @@ import {
   ExternalLink,
   Info,
   Building2,
+  X,
 } from 'lucide-react';
 import {
   useCurriculumStore,
@@ -153,6 +154,8 @@ export const CurriculumTrackBrowser: React.FC<CurriculumTrackBrowserProps> = ({
 
   // Prometric CBT Exam simulator modal state
   const [isPrometricModalOpen, setIsPrometricModalOpen] = useState(false);
+  const [comingSoonModalData, setComingSoonModalData] = useState<(typeof sswTracks)[0] | null>(null);
+  const [constructionSubTrack, setConstructionSubTrack] = useState<'all' | 'doboku' | 'kenchiku' | 'setsubi'>('all');
 
   // JFT-Basic CBT simulator modal state
   const [isJftModalOpen, setIsJftModalOpen] = useState(false);
@@ -209,33 +212,34 @@ export const CurriculumTrackBrowser: React.FC<CurriculumTrackBrowserProps> = ({
     cluster: 'care' | 'mfg' | 'infra' | 'service';
     ministry: 'MHLW' | 'METI' | 'MLIT' | 'MAFF';
     ministryKanji: string;
+    status: 'active' | 'coming_soon';
   }> = [
     // ── CLUSTER 1: CARE & SANITASI ──
-    { id: 'ssw-kaigo', title: 'SSW Keperawatan Lansia', sector: 'Kaigo (介護)', units: '8 Unit · 24 Pelajaran', desc: 'Prosedur Koe-kake, komunikasi empatik lansia, & laporan SBAR darurat.', icon: '👵', iconSvg: '/icons/ssw/kaigo.svg', themeColor: 'rose', cluster: 'care', ministry: 'MHLW', ministryKanji: '厚生労働省' },
-    { id: 'ssw-building-cleaning', title: 'SSW Pembersihan Gedung', sector: 'Cleaning (ビルクリーニング)', units: '4 Unit · 8 Pelajaran', desc: 'Perawatan lantai, disinfeksi sanitasi, polisher, & pemilahan limbah.', icon: '🧹', iconSvg: '/icons/ssw/building-cleaning.svg', themeColor: 'teal', cluster: 'care', ministry: 'MLIT', ministryKanji: '国土交通省' },
+    { id: 'ssw-kaigo', title: 'SSW Keperawatan Lansia', sector: 'Kaigo (介護)', units: '8 Unit · 24 Pelajaran', desc: 'Prosedur Koe-kake, komunikasi empatik lansia, & laporan SBAR darurat.', icon: '👵', iconSvg: '/icons/ssw/kaigo.svg', themeColor: 'rose', cluster: 'care', ministry: 'MHLW', ministryKanji: '厚生労働省', status: 'active' },
+    { id: 'ssw-building-cleaning', title: 'SSW Pembersihan Gedung', sector: 'Cleaning (ビルクリーニング)', units: '4 Unit · 8 Pelajaran', desc: 'Perawatan lantai, disinfeksi sanitasi, polisher, & pemilahan limbah.', icon: '🧹', iconSvg: '/icons/ssw/building-cleaning.svg', themeColor: 'teal', cluster: 'care', ministry: 'MLIT', ministryKanji: '国土交通省', status: 'active' },
 
     // ── CLUSTER 2: MANUFAKTUR & REKAYASA ──
-    { id: 'ssw-manufacturing', title: 'SSW Manufaktur & Pengolahan', sector: 'Manufacturing (製造)', units: '4 Unit · 8 Pelajaran', desc: 'Mesin press, pengecoran logam, perakitan presisi, & kontrol QC.', icon: '⚙️', iconSvg: '/icons/ssw/manufacturing.svg', themeColor: 'indigo', cluster: 'mfg', ministry: 'METI', ministryKanji: '経済産業省' },
-    { id: 'ssw-industrial-machinery', title: 'SSW Permesinan Industri', sector: 'Machinery (産業機械)', units: '4 Unit · 8 Pelajaran', desc: 'Mesin bubut, pengelasan busur, pengecatan, & commissioning mesin.', icon: '🏭', iconSvg: '/icons/ssw/industrial-machinery.svg', themeColor: 'slate', cluster: 'mfg', ministry: 'METI', ministryKanji: '経済産業省' },
-    { id: 'ssw-electric-electronic', title: 'SSW Elektrik & Elektronik', sector: 'Electronics (電気電子)', units: '4 Unit · 8 Pelajaran', desc: 'Solder PCB, kabel wire harness, uji multimeter, & barcode QA.', icon: '⚡', iconSvg: '/icons/ssw/electric-electronics.svg', themeColor: 'yellow', cluster: 'mfg', ministry: 'METI', ministryKanji: '経済産業省' },
-    { id: 'ssw-shipbuilding', title: 'SSW Perkapalan & Maritim', sector: 'Shipbuilding (造船)', units: '4 Unit · 8 Pelajaran', desc: 'Blok lambung kapal, las pelat tebal, pipa mesin, & blasting cat.', icon: '🚢', iconSvg: '/icons/ssw/shipbuilding.svg', themeColor: 'indigo', cluster: 'mfg', ministry: 'MLIT', ministryKanji: '国土交通省' },
-    { id: 'ssw-automobile', title: 'SSW Perawatan Otomotif', sector: 'Automobile (自動車整備)', units: '4 Unit · 8 Pelajaran', desc: 'Ganti oli, servis rem, diagnostik scanner OBD-II, & edukasi servis.', icon: '🚗', iconSvg: '/icons/ssw/automobile.svg', themeColor: 'blue', cluster: 'mfg', ministry: 'MLIT', ministryKanji: '国土交通省' },
-    { id: 'ssw-textile', title: 'SSW Tekstil & Garmen', sector: 'Textile (繊維・縫製)', units: '4 Unit · 8 Pelajaran', desc: 'Pemotongan pola CAM, mesin jahit high-speed, press, & detektor jarum.', icon: '🧵', iconSvg: '/icons/ssw/textile.svg', themeColor: 'pink', cluster: 'mfg', ministry: 'METI', ministryKanji: '経済産業省' },
+    { id: 'ssw-manufacturing', title: 'SSW Manufaktur & Pengolahan', sector: 'Manufacturing (製造)', units: '4 Unit · 8 Pelajaran', desc: 'Mesin press, pengecoran logam, perakitan presisi, & kontrol QC.', icon: '⚙️', iconSvg: '/icons/ssw/manufacturing.svg', themeColor: 'indigo', cluster: 'mfg', ministry: 'METI', ministryKanji: '経済産業省', status: 'coming_soon' },
+    { id: 'ssw-industrial-machinery', title: 'SSW Permesinan Industri', sector: 'Machinery (産業機械)', units: '4 Unit · 8 Pelajaran', desc: 'Mesin bubut, pengelasan busur, pengecatan, & commissioning mesin.', icon: '🏭', iconSvg: '/icons/ssw/industrial-machinery.svg', themeColor: 'slate', cluster: 'mfg', ministry: 'METI', ministryKanji: '経済産業省', status: 'coming_soon' },
+    { id: 'ssw-electric-electronic', title: 'SSW Elektrik & Elektronik', sector: 'Electronics (電気電子)', units: '4 Unit · 8 Pelajaran', desc: 'Solder PCB, kabel wire harness, uji multimeter, & barcode QA.', icon: '⚡', iconSvg: '/icons/ssw/electric-electronics.svg', themeColor: 'yellow', cluster: 'mfg', ministry: 'METI', ministryKanji: '経済産業省', status: 'coming_soon' },
+    { id: 'ssw-shipbuilding', title: 'SSW Perkapalan & Maritim', sector: 'Shipbuilding (造船)', units: '4 Unit · 8 Pelajaran', desc: 'Blok lambung kapal, las pelat tebal, pipa mesin, & blasting cat.', icon: '🚢', iconSvg: '/icons/ssw/shipbuilding.svg', themeColor: 'indigo', cluster: 'mfg', ministry: 'MLIT', ministryKanji: '国土交通省', status: 'coming_soon' },
+    { id: 'ssw-automobile', title: 'SSW Perawatan Otomotif', sector: 'Automobile (自動車整備)', units: '4 Unit · 8 Pelajaran', desc: 'Ganti oli, servis rem, diagnostik scanner OBD-II, & edukasi servis.', icon: '🚗', iconSvg: '/icons/ssw/automobile.svg', themeColor: 'blue', cluster: 'mfg', ministry: 'MLIT', ministryKanji: '国土交通省', status: 'coming_soon' },
+    { id: 'ssw-textile', title: 'SSW Tekstil & Garmen', sector: 'Textile (繊維・縫製)', units: '4 Unit · 8 Pelajaran', desc: 'Pemotongan pola CAM, mesin jahit high-speed, press, & detektor jarum.', icon: '🧵', iconSvg: '/icons/ssw/textile.svg', themeColor: 'pink', cluster: 'mfg', ministry: 'METI', ministryKanji: '経済産業省', status: 'coming_soon' },
 
     // ── CLUSTER 3: INFRASTRUKTUR & ALAM ──
-    { id: 'ssw-construction', title: 'SSW Konstruksi & Gemba', sector: 'Construction (建設業)', units: '8 Unit · 24 Pelajaran', desc: 'Pencegahan celaka K3 Gemba, komando akustik KYT, & alat berat.', icon: '👷', iconSvg: '/icons/ssw/construction.svg', themeColor: 'orange', cluster: 'infra', ministry: 'MLIT', ministryKanji: '国土交通省' },
-    { id: 'ssw-agriculture', title: 'SSW Pertanian & Peternakan', sector: 'Agriculture (農業)', units: '4 Unit · 8 Pelajaran', desc: 'Budidaya tanaman rumah kaca, pemberian pakan ternak, & traktor.', icon: '🌱', iconSvg: '/icons/ssw/agriculture.svg', themeColor: 'emerald', cluster: 'infra', ministry: 'MAFF', ministryKanji: '農林水産省' },
-    { id: 'ssw-fishery', title: 'SSW Perikanan & Budidaya', sector: 'Fishery (漁業)', units: '4 Unit · 8 Pelajaran', desc: 'Operasi jaring kapal, pembekuan palka, & keramba apung laut.', icon: '🐟', iconSvg: '/icons/ssw/fishery.svg', themeColor: 'blue', cluster: 'infra', ministry: 'MAFF', ministryKanji: '農林水産省' },
-    { id: 'ssw-forestry', title: 'SSW Kehutanan & Hutan', sector: 'Forestry (林業)', units: '4 Unit · 8 Pelajaran', desc: 'Penanaman lereng, operasi chainsaw terarah, & kabel winch kayu.', icon: '🌲', iconSvg: '/icons/ssw/forestry.svg', themeColor: 'emerald', cluster: 'infra', ministry: 'MAFF', ministryKanji: '農林水産省' },
-    { id: 'ssw-timber', title: 'SSW Pengolahan Kayu', sector: 'Timber (木材産業)', units: '4 Unit · 8 Pelajaran', desc: 'Gergaji band-saw, kiln pengering, serut precut, & JAS grading.', icon: '🪵', iconSvg: '/icons/ssw/timber.svg', themeColor: 'amber', cluster: 'infra', ministry: 'MAFF', ministryKanji: '農林水産省' },
+    { id: 'ssw-construction', title: 'SSW Konstruksi & Gemba', sector: 'Construction (建設業)', units: '8 Unit · 24 Pelajaran', desc: 'Pencegahan celaka K3 Gemba, komando akustik KYT, & alat berat.', icon: '👷', iconSvg: '/icons/ssw/construction.svg', themeColor: 'orange', cluster: 'infra', ministry: 'MLIT', ministryKanji: '国土交通省', status: 'active' },
+    { id: 'ssw-agriculture', title: 'SSW Pertanian & Peternakan', sector: 'Agriculture (農業)', units: '4 Unit · 8 Pelajaran', desc: 'Budidaya tanaman rumah kaca, pemberian pakan ternak, & traktor.', icon: '🌱', iconSvg: '/icons/ssw/agriculture.svg', themeColor: 'emerald', cluster: 'infra', ministry: 'MAFF', ministryKanji: '農林水産省', status: 'active' },
+    { id: 'ssw-fishery', title: 'SSW Perikanan & Budidaya', sector: 'Fishery (漁業)', units: '4 Unit · 8 Pelajaran', desc: 'Operasi jaring kapal, pembekuan palka, & keramba apung laut.', icon: '🐟', iconSvg: '/icons/ssw/fishery.svg', themeColor: 'blue', cluster: 'infra', ministry: 'MAFF', ministryKanji: '農林水産省', status: 'coming_soon' },
+    { id: 'ssw-forestry', title: 'SSW Kehutanan & Hutan', sector: 'Forestry (林業)', units: '4 Unit · 8 Pelajaran', desc: 'Penanaman lereng, operasi chainsaw terarah, & kabel winch kayu.', icon: '🌲', iconSvg: '/icons/ssw/forestry.svg', themeColor: 'emerald', cluster: 'infra', ministry: 'MAFF', ministryKanji: '農林水産省', status: 'coming_soon' },
+    { id: 'ssw-timber', title: 'SSW Pengolahan Kayu', sector: 'Timber (木材産業)', units: '4 Unit · 8 Pelajaran', desc: 'Gergaji band-saw, kiln pengering, serut precut, & JAS grading.', icon: '🪵', iconSvg: '/icons/ssw/timber.svg', themeColor: 'amber', cluster: 'infra', ministry: 'MAFF', ministryKanji: '農林水産省', status: 'coming_soon' },
 
     // ── CLUSTER 4: LAYANAN & MOBILITAS ──
-    { id: 'ssw-food', title: 'SSW Pengolahan & Pabrik Makanan', sector: 'Food Mfg (飲食料品製造)', units: '8 Unit · 24 Pelajaran', desc: 'Sanitasi 5S/HACCP, lini produksi pangan, & pencegahan alergen.', icon: '🍱', iconSvg: '/icons/ssw/food-manufacturing.svg', themeColor: 'amber', cluster: 'service', ministry: 'MAFF', ministryKanji: '農林水産省' },
-    { id: 'ssw-food-service', title: 'SSW Kuliner & Restoran', sector: 'Food Service (外食業)', units: '4 Unit · 8 Pelajaran', desc: 'Penyambutan tamu, handy order, sanitasi dapur, & kasir.', icon: '🍽️', iconSvg: '/icons/ssw/food-service.svg', themeColor: 'amber', cluster: 'service', ministry: 'MAFF', ministryKanji: '農林水産省' },
-    { id: 'ssw-accommodation', title: 'SSW Perhotelan & Hospitality', sector: 'Accommodation (宿泊)', units: '4 Unit · 8 Pelajaran', desc: 'Layanan resepsionis, check-in tamu, housekeeping, & omotenashi.', icon: '🏨', iconSvg: '/icons/ssw/hospitality.svg', themeColor: 'sky', cluster: 'service', ministry: 'MLIT', ministryKanji: '国土交通省' },
-    { id: 'ssw-aviation', title: 'SSW Layanan Darat Bandara', sector: 'Aviation (航空)', units: '4 Unit · 8 Pelajaran', desc: 'Marshalling pesawat, kargo bagasi apron, & armada kendaraan GSE.', icon: '✈️', iconSvg: '/icons/ssw/aviation.svg', themeColor: 'cyan', cluster: 'service', ministry: 'MLIT', ministryKanji: '国土交通省' },
-    { id: 'ssw-logistics', title: 'SSW Logistik & Gudang', sector: 'Logistics (物流)', units: '4 Unit · 8 Pelajaran', desc: 'Inbound scanning, manuver forklift gudang, picking, & stok audit.', icon: '📦', iconSvg: '/icons/ssw/logistics.svg', themeColor: 'orange', cluster: 'service', ministry: 'MLIT', ministryKanji: '国土交通省' },
-    { id: 'ssw-railway', title: 'SSW Operasional Kereta Api', sector: 'Railway (鉄道)', units: '4 Unit · 8 Pelajaran', desc: 'Pemanduan peron, pembersihan cepat shinkansen, & inspeksi rel.', icon: '🚆', iconSvg: '/icons/ssw/railway.svg', themeColor: 'red', cluster: 'service', ministry: 'MLIT', ministryKanji: '国土交通省' },
+    { id: 'ssw-food', title: 'SSW Pengolahan & Pabrik Makanan', sector: 'Food Mfg (飲食料品製造)', units: '8 Unit · 24 Pelajaran', desc: 'Sanitasi 5S/HACCP, lini produksi pangan, & pencegahan alergen.', icon: '🍱', iconSvg: '/icons/ssw/food-manufacturing.svg', themeColor: 'amber', cluster: 'service', ministry: 'MAFF', ministryKanji: '農林水産省', status: 'active' },
+    { id: 'ssw-food-service', title: 'SSW Kuliner & Restoran', sector: 'Food Service (外食業)', units: '4 Unit · 8 Pelajaran', desc: 'Penyambutan tamu, handy order, sanitasi dapur, & kasir.', icon: '🍽️', iconSvg: '/icons/ssw/food-service.svg', themeColor: 'amber', cluster: 'service', ministry: 'MAFF', ministryKanji: '農林水産省', status: 'coming_soon' },
+    { id: 'ssw-accommodation', title: 'SSW Perhotelan & Hospitality', sector: 'Accommodation (宿泊)', units: '4 Unit · 8 Pelajaran', desc: 'Layanan resepsionis, check-in tamu, housekeeping, & omotenashi.', icon: '🏨', iconSvg: '/icons/ssw/hospitality.svg', themeColor: 'sky', cluster: 'service', ministry: 'MLIT', ministryKanji: '国土交通省', status: 'active' },
+    { id: 'ssw-aviation', title: 'SSW Layanan Darat Bandara', sector: 'Aviation (航空)', units: '4 Unit · 8 Pelajaran', desc: 'Marshalling pesawat, kargo bagasi apron, & armada kendaraan GSE.', icon: '✈️', iconSvg: '/icons/ssw/aviation.svg', themeColor: 'cyan', cluster: 'service', ministry: 'MLIT', ministryKanji: '国土交通省', status: 'coming_soon' },
+    { id: 'ssw-logistics', title: 'SSW Logistik & Gudang', sector: 'Logistics (物流)', units: '4 Unit · 8 Pelajaran', desc: 'Inbound scanning, manuver forklift gudang, picking, & stok audit.', icon: '📦', iconSvg: '/icons/ssw/logistics.svg', themeColor: 'orange', cluster: 'service', ministry: 'MLIT', ministryKanji: '国土交通省', status: 'coming_soon' },
+    { id: 'ssw-railway', title: 'SSW Operasional Kereta Api', sector: 'Railway (鉄道)', units: '4 Unit · 8 Pelajaran', desc: 'Pemanduan peron, pembersihan cepat shinkansen, & inspeksi rel.', icon: '🚆', iconSvg: '/icons/ssw/railway.svg', themeColor: 'red', cluster: 'service', ministry: 'MLIT', ministryKanji: '国土交通省', status: 'coming_soon' },
   ];
 
   const jftLifeTracks: Array<{
@@ -355,6 +359,22 @@ export const CurriculumTrackBrowser: React.FC<CurriculumTrackBrowserProps> = ({
   const activeSswMeta = useMemo(() => {
     return sswTracks.find((t) => t.id === activeTrackId);
   }, [activeTrackId, sswTracks]);
+
+  const displayUnits = useMemo(() => {
+    if (!trackData?.units) return [];
+    if (activeTrackId === 'ssw-construction') {
+      if (constructionSubTrack === 'doboku') {
+        return trackData.units.filter((_, idx) => [0, 1, 3, 4, 7].includes(idx));
+      }
+      if (constructionSubTrack === 'kenchiku') {
+        return trackData.units.filter((_, idx) => [0, 1, 2, 6, 7].includes(idx));
+      }
+      if (constructionSubTrack === 'setsubi') {
+        return trackData.units.filter((_, idx) => [0, 1, 5, 6, 7].includes(idx));
+      }
+    }
+    return trackData.units;
+  }, [trackData, activeTrackId, constructionSubTrack]);
 
   const filteredSswTracks = useMemo(() => {
     if (sswCluster === 'all') return sswTracks;
@@ -591,7 +611,7 @@ export const CurriculumTrackBrowser: React.FC<CurriculumTrackBrowserProps> = ({
                           </span>
                         </div>
                         <div className="text-[10px] opacity-80 font-normal tabular-nums hidden sm:block">
-                          {trk.units} {completedCount > 0 ? `· ${completedCount} selesai` : ''}
+                          {trk.status === 'coming_soon' ? '🔒 Segera Hadir' : trk.units} {completedCount > 0 ? `· ${completedCount} selesai` : ''}
                         </div>
                       </div>
                     </button>
@@ -874,7 +894,70 @@ export const CurriculumTrackBrowser: React.FC<CurriculumTrackBrowserProps> = ({
         </div>
       ) : (
         <div className="space-y-4">
-          {trackData.units.map((unit) => {
+          {/* JAC Prometric 3 Sub-Tracks Segmented Switcher for Construction */}
+          {activeTrackId === 'ssw-construction' && (
+            <div className="bg-surface-2 border border-accent/25 rounded-2xl p-3.5 sm:p-4 space-y-2.5 shadow-sm">
+              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-1 text-xs">
+                <div className="flex items-center gap-2">
+                  <HardHat className="w-4 h-4 text-orange-400 shrink-0" />
+                  <span className="font-extrabold text-appText-bright">Spesialisasi Ujian Prometric JAC (建設業):</span>
+                </div>
+                <span className="text-[10px] text-appText-muted font-mono">Standar JAC · MLIT Japan</span>
+              </div>
+              <div className="grid grid-cols-2 sm:grid-cols-4 gap-1.5">
+                <button
+                  type="button"
+                  onClick={() => setConstructionSubTrack('all')}
+                  className={`px-3 py-2 rounded-xl text-xs font-bold transition-all min-h-[44px] text-left sm:text-center active:scale-95 ${
+                    constructionSubTrack === 'all'
+                      ? 'bg-amber-500 text-stone-950 font-black shadow-sm'
+                      : 'bg-surface-3 text-appText-muted hover:text-appText-bright'
+                  }`}
+                >
+                  <span>Semua Modul</span>
+                  <span className="block text-[10px] opacity-80 font-normal">8 Unit Lengkap</span>
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setConstructionSubTrack('doboku')}
+                  className={`px-3 py-2 rounded-xl text-xs font-bold transition-all min-h-[44px] text-left sm:text-center active:scale-95 ${
+                    constructionSubTrack === 'doboku'
+                      ? 'bg-orange-500 text-stone-950 font-black shadow-sm'
+                      : 'bg-surface-3 text-appText-muted hover:text-appText-bright'
+                  }`}
+                >
+                  <span>1. Teknik Sipil</span>
+                  <span className="block text-[10px] opacity-80 font-normal">土木 · Galian & Parit</span>
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setConstructionSubTrack('kenchiku')}
+                  className={`px-3 py-2 rounded-xl text-xs font-bold transition-all min-h-[44px] text-left sm:text-center active:scale-95 ${
+                    constructionSubTrack === 'kenchiku'
+                      ? 'bg-orange-500 text-stone-950 font-black shadow-sm'
+                      : 'bg-surface-3 text-appText-muted hover:text-appText-bright'
+                  }`}
+                >
+                  <span>2. Gedung</span>
+                  <span className="block text-[10px] opacity-80 font-normal">建築 · Rangka & Ketinggian</span>
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setConstructionSubTrack('setsubi')}
+                  className={`px-3 py-2 rounded-xl text-xs font-bold transition-all min-h-[44px] text-left sm:text-center active:scale-95 ${
+                    constructionSubTrack === 'setsubi'
+                      ? 'bg-orange-500 text-stone-950 font-black shadow-sm'
+                      : 'bg-surface-3 text-appText-muted hover:text-appText-bright'
+                  }`}
+                >
+                  <span>3. Fasilitas</span>
+                  <span className="block text-[10px] opacity-80 font-normal">設備 · Listrik & Utilitas</span>
+                </button>
+              </div>
+            </div>
+          )}
+
+          {displayUnits.map((unit) => {
             const isExpanded = !!expandedUnitIds[unit.id];
             const unitLessons = unit.lessons || [];
             const completedInUnit = unitLessons.filter((l) =>
@@ -1328,7 +1411,7 @@ export const CurriculumTrackBrowser: React.FC<CurriculumTrackBrowserProps> = ({
                           {completedCount > 0 ? (
                             <span className="text-[10px] text-emerald-400 font-bold">{completedCount} tuntas</span>
                           ) : (
-                            <span className="text-[10px] text-appText-muted">{trk.units}</span>
+                            <span className="text-[10px] ${trk.status === 'coming_soon' ? 'text-amber-400 font-bold' : 'text-appText-muted'}">${trk.status === 'coming_soon' ? '🔒 Segera Hadir' : trk.units}</span>
                           )}
                         </div>
                       </button>
@@ -1478,6 +1561,81 @@ export const CurriculumTrackBrowser: React.FC<CurriculumTrackBrowserProps> = ({
         isOpen={isSeikatsuModalOpen}
         onClose={() => setIsSeikatsuModalOpen(false)}
       />
+      {/* SSW Coming Soon Modal Dialog */}
+      {comingSoonModalData && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-stone-950/80 backdrop-blur-sm animate-in fade-in duration-200">
+          <div className="bg-surface-2 border border-accent/30 rounded-2xl max-w-md w-full p-6 shadow-2xl space-y-4">
+            <div className="flex items-start justify-between">
+              <div className="flex items-center gap-3">
+                <span className="text-3xl p-2 rounded-xl bg-surface-3 border border-accent/20">
+                  {comingSoonModalData.icon}
+                </span>
+                <div>
+                  <div className="text-[10px] uppercase font-bold tracking-wider text-amber-400">
+                    {comingSoonModalData.ministry} ({comingSoonModalData.ministryKanji})
+                  </div>
+                  <h3 className="text-base font-extrabold text-appText-bright">
+                    {comingSoonModalData.title}
+                  </h3>
+                  <span className="text-xs text-appText-muted">
+                    {comingSoonModalData.sector}
+                  </span>
+                </div>
+              </div>
+              <button
+                type="button"
+                onClick={() => setComingSoonModalData(null)}
+                className="p-1 rounded-lg hover:bg-surface-3 text-appText-muted hover:text-appText-bright transition-colors"
+                title="Tutup dialog"
+              >
+                <X className="w-5 h-5" />
+              </button>
+            </div>
+
+            <div className="p-3.5 rounded-xl bg-amber-500/10 border border-amber-500/25 text-xs text-appText-bright space-y-2">
+              <div className="flex items-center gap-2 font-bold text-amber-400">
+                <Lock className="w-4 h-4" />
+                <span>Dalam Proses Kurasi Standar Prometric CBT</span>
+              </div>
+              <p className="text-appText-muted leading-relaxed">
+                Materi kurikulum, audio percakapan lapangan, dan bank soal simulasi untuk sektor ini sedang diselaraskan dengan silabus ujian keahlian resmi oleh Dewan SSW Nugget Nihongo.
+              </p>
+            </div>
+
+            <div className="text-xs text-appText-muted space-y-1">
+              <div className="font-bold text-appText-bright">6 Sektor Prioritas yang Saat Ini Telah Aktif:</div>
+              <ul className="grid grid-cols-2 gap-1 text-[11px] pt-1">
+                <li className="flex items-center gap-1.5">👵 <span>Keperawatan (Kaigo)</span></li>
+                <li className="flex items-center gap-1.5">🍱 <span>Pengolahan Makanan</span></li>
+                <li className="flex items-center gap-1.5">👷 <span>Konstruksi (3 Sub-Track)</span></li>
+                <li className="flex items-center gap-1.5">🌱 <span>Pertanian & Ternak</span></li>
+                <li className="flex items-center gap-1.5">🧹 <span>Pembersihan Gedung</span></li>
+                <li className="flex items-center gap-1.5">🏨 <span>Perhotelan (Akomodasi)</span></li>
+              </ul>
+            </div>
+
+            <div className="pt-2 flex gap-2">
+              <button
+                type="button"
+                onClick={() => {
+                  setActiveTrack('ssw-kaigo');
+                  setComingSoonModalData(null);
+                }}
+                className="flex-1 py-2.5 px-4 rounded-xl bg-accent hover:bg-accent-hot text-bg font-bold text-xs transition-all active:scale-95"
+              >
+                Buka SSW Kaigo Flagship
+              </button>
+              <button
+                type="button"
+                onClick={() => setComingSoonModalData(null)}
+                className="py-2.5 px-4 rounded-xl bg-surface-3 hover:bg-surface border border-accent/20 text-appText-bright font-bold text-xs transition-all active:scale-95"
+              >
+                Tutup
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 };

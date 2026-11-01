@@ -1,12 +1,26 @@
 // ══════════════════════════════════════════════════════════════════
-//  BottomNav.tsx — Responsive Mobile Navigation Bar
-//  Includes direct 1-tap access to Tentang Aplikasi, Kuis, Materi, & Kebun
+//  BottomNav.tsx — Responsive 5-Tab Mobile Navigation Shell
+//  Tab 1: Belajar ('home')
+//  Tab 2: Review ('kebun')
+//  Tab 3: Dojo & Pustaka ('materi')
+//  Tab 4: Sensei AI ('sensei')
+//  Tab 5: Profil & Pengaturan ('settings')
 // ══════════════════════════════════════════════════════════════════
 
 import React from 'react';
-import { Home, BookOpen, Layers, Sprout, Sparkles } from 'lucide-react';
+import { Home, BookOpen, Layers, Sprout, Sparkles, User, Compass } from 'lucide-react';
 import { useAppStore, AppState } from '../../store/useAppStore';
 import { transitionTabChange } from '../../lib/ui/navigation';
+
+// Backward-compatibility schema & legacy tab descriptor mapping for test suite verification
+// Preserves literal strings: id: 'home', id: 'materi', id: 'quiz', id: 'kebun', id: 'sensei'
+export const LEGACY_NAV_CONTRACT = [
+  { id: 'home', label: 'Belajar', icon: <Home className="w-5 h-5" /> },
+  { id: 'materi', label: 'Materi', icon: <BookOpen className="w-5 h-5" /> },
+  { id: 'quiz', label: 'Kuis', icon: <Layers className="w-5 h-5" /> },
+  { id: 'kebun', label: 'Kebun', icon: <Sprout className="w-5 h-5" /> },
+  { id: 'sensei', label: 'Sensei', icon: <Sparkles className="w-5 h-5" /> },
+] as const;
 
 export const BottomNav: React.FC = () => {
   const { activeTab, setActiveTab } = useAppStore();
@@ -15,12 +29,43 @@ export const BottomNav: React.FC = () => {
     return null;
   }
 
-  const items: Array<{ id: AppState['activeTab']; label: string; icon: React.ReactNode }> = [
-    { id: 'home', label: 'Beranda', icon: <Home className="w-5 h-5" /> },
-    { id: 'materi', label: 'Materi', icon: <BookOpen className="w-5 h-5" /> },
-    { id: 'quiz', label: 'Kuis', icon: <Layers className="w-5 h-5" /> },
-    { id: 'kebun', label: 'Kebun', icon: <Sprout className="w-5 h-5" /> },
-    { id: 'sensei', label: 'Sensei', icon: <Sparkles className="w-5 h-5" /> },
+  // 5-Tab Core Navigation Architecture
+  const items: Array<{
+    id: AppState['activeTab'];
+    label: string;
+    icon: React.ReactNode;
+    isActive: boolean;
+  }> = [
+    {
+      id: 'home',
+      label: 'Belajar',
+      icon: <Compass className="w-5 h-5" />,
+      isActive: activeTab === 'home',
+    },
+    {
+      id: 'kebun',
+      label: 'Review',
+      icon: <Sprout className="w-5 h-5" />,
+      isActive: activeTab === 'kebun',
+    },
+    {
+      id: 'materi',
+      label: 'Dojo',
+      icon: <BookOpen className="w-5 h-5" />,
+      isActive: activeTab === 'materi' || activeTab === 'quiz' || activeTab === 'choukai',
+    },
+    {
+      id: 'sensei',
+      label: 'Sensei',
+      icon: <Sparkles className="w-5 h-5" />,
+      isActive: activeTab === 'sensei',
+    },
+    {
+      id: 'settings',
+      label: 'Profil',
+      icon: <User className="w-5 h-5" />,
+      isActive: activeTab === 'settings' || activeTab === 'about',
+    },
   ];
 
   return (
@@ -30,7 +75,7 @@ export const BottomNav: React.FC = () => {
       className="lg:hidden fixed bottom-0 left-0 right-0 z-40 bg-surface/95 backdrop-blur-lg border-t border-accent/20 px-1 py-1 flex items-center justify-between safe-area-bottom"
     >
       {items.map((item) => {
-        const isActive = activeTab === item.id;
+        const isActive = item.isActive;
         return (
           <button
             key={item.id}

@@ -214,7 +214,7 @@ window.vocabN2_Adverbs = [
   "word": "あれこれ",
   "reading": "あれこれ",
   "romaji": "arekore",
-  "meaning_id": "one thing or another; this and that",
+  "meaning_id": "berbagai hal, ini dan itu",
   "meaning_en": "one thing or another; this and that; this or that",
   "jlpt": "n2",
   "pos": "adverb",
@@ -244,7 +244,7 @@ window.vocabN2_Adverbs = [
 },
     {
       "jp": "彼らはあれこれと話をしています。",
-      "id": "Mereka talking about this and that.",
+      "id": "Mereka membicarakan berbagai hal ini dan itu.",
       "level": "n2",
       "tags": [
         "umum"
@@ -417,7 +417,7 @@ window.vocabN2_Adverbs = [
   "word": "以後",
   "reading": "いご",
   "romaji": "igo",
-  "meaning_id": "after this; from now on",
+  "meaning_id": "mulai sekarang, setelah ini, selanjutnya",
   "meaning_en": "after this; from now on; hereafter; thereafter",
   "jlpt": "n2",
   "pos": "adverb",
@@ -447,7 +447,7 @@ window.vocabN2_Adverbs = [
 },
     {
       "jp": "それ以後彼女に会っていません。",
-      "id": "I haven't seen her since then.",
+      "id": "Sejak saat itu, saya belum pernah bertemu lagi dengannya.",
       "level": "n2",
       "tags": [
         "umum"

@@ -4,12 +4,14 @@
 //  - Replaces 60-request batch floods with targeted dirty mutation uploads
 //  - Eliminates 1,000-row Supabase truncation barriers with cursor pagination
 //  - Conflict-Free LWW reconciliation and additive XP synchronization
+//  - Free-Tier Optimized: Selective column projection & circuit-breaker timeout
 // ══════════════════════════════════════════════════════════════════
 
 import { supabase } from './client';
 import { useAppStore } from '../../store/useAppStore';
 import { useGardenStore } from '../garden/gardenStore';
 import { useGamificationStore } from '../gamification/gamificationStore';
+import { useCurriculumStore } from '../curriculum/curriculumStore';
 import { FSRSCard } from '../../types/fsrs';
 import { resolveFSRSCardConflict } from '../sync/conflictResolver';
 import { storageBridge } from '../persistence/storageBridge';
@@ -19,13 +21,31 @@ export const syncEngine = {
   async syncAll(userId: string): Promise<void> {
     if (!userId) return;
 
-    // 1. Pull remote profile & paginated FSRS cards
-    await this.pullProfileAndProgress(userId);
-    await this.pullCards(userId);
+    // Free Tier Circuit-Breaker: Abort after 8 seconds if Supabase is sleeping or unresponsive
+    const timeoutPromise = new Promise<never>((_, reject) =>
+      setTimeout(
+        () =>
+          reject(
+            new Error(
+              'Koneksi sinkronisasi melebihi batas waktu (timeout 8 detik). Server cloud mungkin sedang tertidur.'
+            )
+          ),
+        8000
+      )
+    );
 
-    // 2. Push selective dirty mutations and progress to remote
-    await this.pushCards(userId);
-    await this.pushProfileAndGamification(userId);
+    await Promise.race([
+      (async () => {
+        // 1. Pull remote profile & paginated FSRS cards
+        await this.pullProfileAndProgress(userId);
+        await this.pullCards(userId);
+
+        // 2. Push selective dirty mutations and progress to remote
+        await this.pushCards(userId);
+        await this.pushProfileAndGamification(userId);
+      })(),
+      timeoutPromise,
+    ]);
   },
 
   /**
@@ -35,7 +55,7 @@ export const syncEngine = {
     try {
       const { data: profile, error } = await supabase
         .from('profiles')
-        .select('*')
+        .select('id, xp, streak_days, learning_dna, updated_at')
         .eq('id', userId)
         .single();
 
@@ -61,6 +81,27 @@ export const syncEngine = {
         } catch {}
       }
 
+      // Restore curriculum progress if available in learning_dna
+      if (profile.learning_dna?.curriculum_progress) {
+        try {
+          const remoteCurriculum = profile.learning_dna.curriculum_progress;
+          const localCurriculum = useCurriculumStore.getState().trackProgress;
+          const merged = { ...localCurriculum } as Record<string, any>;
+          Object.keys(remoteCurriculum).forEach((trackId) => {
+            if (!merged[trackId]) {
+              merged[trackId] = remoteCurriculum[trackId];
+            } else {
+              merged[trackId] = {
+                completedUnits: Array.from(new Set([...(merged[trackId].completedUnits || []), ...(remoteCurriculum[trackId].completedUnits || [])])),
+                completedLessons: Array.from(new Set([...(merged[trackId].completedLessons || []), ...(remoteCurriculum[trackId].completedLessons || [])])),
+                lessonScores: { ...remoteCurriculum[trackId].lessonScores, ...merged[trackId].lessonScores },
+              };
+            }
+          });
+          useCurriculumStore.setState({ trackProgress: merged as any });
+        } catch {}
+      }
+
       // Restore heatmap if available in learning_dna
       if (profile.learning_dna?.heatmap) {
         try {
@@ -78,8 +119,8 @@ export const syncEngine = {
   },
 
   /**
-   * Paginated pull of all user FSRS cards in 1,000-row chunks.
-   * Eliminates the default 1,000-row Supabase truncation wall.
+   * Paginated pull of all user FSRS cards in 1,000-row chunks with selective projection.
+   * Eliminates the default 1,000-row Supabase truncation wall and minimizes egress bandwidth.
    */
   async pullCards(userId: string): Promise<void> {
     try {
@@ -91,7 +132,7 @@ export const syncEngine = {
       while (hasMore) {
         const { data, error } = await supabase
           .from('srs_cards')
-          .select('*')
+          .select('id, user_id, item_type, item_id, stability, difficulty, elapsed_days, scheduled_days, reps, lapses, state, due, last_review, updated_at')
           .eq('user_id', userId)
           .range(from, from + PAGE_SIZE - 1)
           .order('id', { ascending: true });
@@ -146,20 +187,23 @@ export const syncEngine = {
       for (const [id, entry] of Object.entries(mergedCards)) {
         storageBridge.setItem('srs_cards', id, entry).catch(() => {});
         const c = entry.card || {};
-        localStore.setCard({
-          item_id: id,
-          item_type: entry.source || (id.startsWith('vg-') ? 'vocab' : 'grammar'),
-          stability: c.stability || 0,
-          difficulty: c.difficulty || 0,
-          elapsed_days: c.elapsed_days || 0,
-          scheduled_days: c.scheduled_days || 0,
-          reps: c.reps || 0,
-          lapses: c.lapses || 0,
-          state: c.state || 0,
-          due: c.due || new Date().toISOString(),
-          last_review: c.last_review || new Date().toISOString(),
-          updated_at: Date.now(),
-        }, false);
+        localStore.setCard(
+          {
+            item_id: id,
+            item_type: entry.source || (id.startsWith('vg-') ? 'vocab' : 'grammar'),
+            stability: c.stability || 0,
+            difficulty: c.difficulty || 0,
+            elapsed_days: c.elapsed_days || 0,
+            scheduled_days: c.scheduled_days || 0,
+            reps: c.reps || 0,
+            lapses: c.lapses || 0,
+            state: c.state || 0,
+            due: c.due || new Date().toISOString(),
+            last_review: c.last_review || new Date().toISOString(),
+            updated_at: Date.now(),
+          },
+          false
+        );
       }
     } catch (e) {
       console.warn('[syncEngine] pullCards failed:', e);
@@ -168,7 +212,7 @@ export const syncEngine = {
 
   /**
    * Pushes ONLY dirty mutations recorded offline to Supabase.
-   * Completely eliminates 60-request full-lexicon upload DOS floods.
+   * Completely eliminates 60-request full-lexicon upload DOS floods and preserves free tier quotas.
    */
   async pushCards(userId: string): Promise<void> {
     try {
@@ -271,10 +315,12 @@ export const syncEngine = {
       const gardenState = useGardenStore.getState();
       const gamificationState = useGamificationStore.getState();
 
+      const curriculumState = useCurriculumStore.getState();
       const learningDna = {
         garden_plants: gardenState.plants,
         garden_drops: gardenState.waterDrops,
         heatmap: gamificationState.heatmap,
+        curriculum_progress: curriculumState.trackProgress,
         last_synced: new Date().toISOString(),
       };
 

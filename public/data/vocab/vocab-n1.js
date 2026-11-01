@@ -2,7 +2,7 @@
 //  vocab-n1.js — Nugget Nihongo · JLPT N1
 //  AUTO-GENERATED — DO NOT EDIT DIRECTLY
 //  Edit: public/data/vocab/n1/*.js  then run: node scripts/merge-vocab.js
-//  Entries: 3217 | Generated: 2026-10-17
+//  Entries: 3217 | Generated: 2026-11-01
 // ══════════════════════════════════════════════════════════════
 
 window.vocabN1 = [
@@ -43843,7 +43843,7 @@ window.vocabN1 = [
   "word": "仮令",
   "reading": "たとえ",
   "romaji": "tatoe",
-  "meaning_id": "even if; if",
+  "meaning_id": "sekalipun, andai kata, seumpama",
   "meaning_en": "even if; if; though; although",
   "jlpt": "n1",
   "pos": "adverb",
@@ -43864,7 +43864,7 @@ window.vocabN1 = [
   "examples": [
     {
       "jp": "たとえ両親が反対しても私は留学したい。",
-      "id": "Saya ingin study abroad, even if my parents are against it.",
+      "id": "Saya ingin belajar ke luar negeri sekalipun orang tua menentang.",
       "level": "n1",
       "tags": [
         "umum"
@@ -63603,7 +63603,7 @@ window.vocabN1 = [
   "word": "呆然",
   "reading": "ぼうぜん",
   "romaji": "bouzen",
-  "meaning_id": "dumbfounded; overcome with surprise",
+  "meaning_id": "tercengang, terpana, terperangah",
   "meaning_en": "dumbfounded; overcome with surprise; in blank amazement",
   "jlpt": "n1",
   "pos": "adverb",
@@ -63624,7 +63624,7 @@ window.vocabN1 = [
   "examples": [
     {
       "jp": "彼は悲嘆に暮れてぼう然としていた。",
-      "id": "Dia buta karena kesedihan.",
+      "id": "Ia tenggelam dalam duka dan berdiri terpana.",
       "level": "n1",
       "tags": [
         "umum"
@@ -63633,7 +63633,7 @@ window.vocabN1 = [
 },
     {
       "jp": "子供は幽霊を見ているかのように私をぼう然と見つめた。",
-      "id": "Anak itu menganga ke arahku seolah-olah dia sedang melihat hantu.",
+      "id": "Anak itu menatapku dengan terpana seolah sedang melihat hantu.",
       "level": "n1",
       "tags": [
         "umum"
@@ -99726,7 +99726,7 @@ window.vocabN1 = [
   "word": "海峡",
   "reading": "かいきょう",
   "romaji": "kaikyou",
-  "meaning_id": "saluran",
+  "meaning_id": "selat, terusan, perairan sempit",
   "meaning_en": "channel",
   "jlpt": "n1",
   "pos": "noun",
@@ -99747,7 +99747,7 @@ window.vocabN1 = [
   "examples": [
     {
       "jp": "その海峡に長い橋を建設中です。",
-      "id": "Mereka building a long bridge across the channel.",
+      "id": "Sedang dibangun sebuah jembatan panjang yang melintasi selat itu.",
       "level": "n1",
       "tags": [
         "umum"

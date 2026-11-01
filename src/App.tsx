@@ -390,6 +390,9 @@ export const App: React.FC = () => {
           onOpenNuance={openNuance}
           onOpenKotowaza={openKotowaza}
           onOpenCatPlacement={openCatPlacement}
+          onOpenKeigo={() => useModalStore.getState().openModal('keigo')}
+          onOpenCounters={() => useModalStore.getState().openModal('counters')}
+          onOpenPitch={() => useModalStore.getState().openModal('pitch')}
           onOpenFeatureGuide={openFeatureGuide}
           onOpenShortcuts={() => setIsShortcutsOpen(true)}
         />

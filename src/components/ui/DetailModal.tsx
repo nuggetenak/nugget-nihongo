@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { createPortal } from 'react-dom';
-import { Volume2, X, Sparkles, BookOpen, RotateCcw, Flag, Eye, EyeOff, Zap } from 'lucide-react';
+import { Volume2, X, Sparkles, BookOpen, RotateCcw, Flag, Eye, EyeOff, Zap, Music } from 'lucide-react';
 import { NormalizedVocab, NormalizedGrammar } from '../../lib/data/dataManager';
 import { speakJapanese } from '../../lib/audio/tts';
 import { useAppStore } from '../../store/useAppStore';
@@ -8,6 +8,7 @@ import { useModalStore } from '../../store/useModalStore';
 import { PitchAccentBadge } from '../curriculum/interactive/PitchAccentBadge';
 import { RubyText } from './RubyText';
 import { lookupPitch } from '../../lib/data/pitchAccentManager';
+import { calculatePitchContour, playPitchToneMelody } from '../../lib/pitch/pitchEngine';
 import { useFocusTrap } from '../../hooks/useFocusTrap';
 
 interface DetailModalProps {
@@ -93,8 +94,21 @@ export const DetailModal: React.FC<DetailModalProps> = ({ item, type, onClose })
               const pitch = (vocab as any)?.pitch || (title ? lookupPitch(title, reading) : undefined);
               if (!pitch) return null;
               return (
-                <div className="pt-1.5">
+                <div className="pt-2 flex items-center gap-2 flex-wrap">
                   <PitchAccentBadge reading={reading || title || ''} pattern={pitch.pattern} />
+                  <button
+                    type="button"
+                    onClick={() => {
+                      const contour = calculatePitchContour(reading || title || '', pitch.pattern);
+                      playPitchToneMelody(contour.moras, contour.particlePitch);
+                    }}
+                    className="min-h-[40px] px-3 py-1.5 rounded-xl bg-purple-500/15 hover:bg-purple-500/25 border border-purple-500/30 text-purple-700 dark:text-purple-300 text-xs font-bold flex items-center gap-1.5 transition-all active:scale-95"
+                    title="Dengarkan melodi nada tinggi-rendah"
+                    aria-label="Dengarkan melodi nada tinggi-rendah"
+                  >
+                    <Music className="w-4 h-4 text-purple-600 dark:text-purple-400" />
+                    <span>Melodi Nada</span>
+                  </button>
                 </div>
               );
             })()}
@@ -118,7 +132,19 @@ export const DetailModal: React.FC<DetailModalProps> = ({ item, type, onClose })
         </div>
 
         {/* Nuance / Explanation (if present) */}
-        {(vocab?.nuance || grammar?.desc) && (
+        {grammar?.connection && (
+          <div className="space-y-1.5 text-xs text-appText-muted leading-relaxed">
+            <div className="font-bold text-appText-bright flex items-center gap-1.5">
+              <BookOpen className="w-3.5 h-3.5 text-amber-400" />
+              <span>Pola Pembentukan (Rumus Sambungan):</span>
+            </div>
+            <div className="bg-surface-2/60 p-3 rounded-xl border border-accent/10 font-mono text-xs text-accent-hot font-bold tracking-wide">
+              {grammar.connection}
+            </div>
+          </div>
+        )}
+
+        {(vocab?.nuance || grammar?.desc || grammar?.nuance) && (
           <div className="space-y-1.5 text-xs text-appText-muted leading-relaxed">
             <div className="font-bold text-appText-bright flex items-center gap-1.5">
               <Sparkles className="w-3.5 h-3.5 text-amber-400" />
@@ -126,7 +152,7 @@ export const DetailModal: React.FC<DetailModalProps> = ({ item, type, onClose })
             </div>
             <div
               className="bg-surface-2/60 p-3 rounded-xl border border-accent/10"
-              dangerouslySetInnerHTML={{ __html: vocab?.nuance || grammar?.desc || '' }}
+              dangerouslySetInnerHTML={{ __html: vocab?.nuance || grammar?.nuance || grammar?.desc || '' }}
             />
           </div>
         )}
@@ -174,8 +200,9 @@ export const DetailModal: React.FC<DetailModalProps> = ({ item, type, onClose })
                   <div className="space-y-1 flex-1">
                     <div
                       className="font-jp text-appText-bright text-sm"
-                      dangerouslySetInnerHTML={{ __html: ex.jp }}
-                    />
+                      >
+                      <RubyText text={ex.jp.replace(/<\/?[a-z0-9]+>/gi, '')} furigana={(ex as any).furigana} />
+                    </div>
                     {blurTranslations && !revealedSentences[idx] ? (
                       <button
                         type="button"

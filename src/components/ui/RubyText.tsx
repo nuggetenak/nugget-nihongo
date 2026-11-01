@@ -5,7 +5,7 @@
 // ══════════════════════════════════════════════════════════════════
 
 import React from 'react';
-import { parseRubySegments, stripFurigana, isPureKana } from '../../lib/data/rubyGenerator';
+import { parseRubySegments, stripFurigana, isPureKana, containsKanji } from '../../lib/data/rubyGenerator';
 
 export interface RubyTextProps {
   text: string;
@@ -39,16 +39,25 @@ export const RubyText: React.FC<RubyTextProps> = ({
 }) => {
   if (!text) return null;
 
+  let targetText = text;
+  let targetHint = furigana;
+
+  // Auto-recovery for inverted fields: if text is purely kana but furigana holds Kanji
+  if (furigana && containsKanji(furigana) && !containsKanji(text)) {
+    targetText = furigana;
+    targetHint = text;
+  }
+
   if (!showFurigana) {
-    return <span lang="ja" className={className}>{stripFurigana(text)}</span>;
+    return <span lang="ja" className={className}>{stripFurigana(targetText)}</span>;
   }
 
   // Pure kana sentences or identical furigana reading require no ruby tags
-  if (isPureKana(text) || (furigana && furigana === text)) {
-    return <span lang="ja" className={className}>{text}</span>;
+  if (isPureKana(targetText) || (targetHint && targetHint === targetText)) {
+    return <span lang="ja" className={className}>{targetText}</span>;
   }
 
-  const segments = parseRubySegments(text, furigana);
+  const segments = parseRubySegments(targetText, targetHint);
 
   return (
     <span lang="ja" className={`inline-flex flex-wrap items-baseline ${className}`}>

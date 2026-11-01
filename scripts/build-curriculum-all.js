@@ -5,6 +5,7 @@
 
 const fs = require('fs');
 const path = require('path');
+const { execSync } = require('child_process');
 
 const ROOT = path.resolve(__dirname, '..');
 const outDir = path.join(ROOT, 'public/data/curriculum');
@@ -287,21 +288,51 @@ function writeCurriculumFiles(filenameBase, varName, data) {
 function main() {
   console.log('Compiling all curriculum tracks...');
 
-  // Build N4
-  const n4Data = buildLevelCurriculum('n4', grammarN4, vocabN4, n4UnitsDef);
-  writeCurriculumFiles('curriculum-n4', 'curriculumN4', n4Data);
+  // Build N5 (Using authoritative N5 golden benchmark compiler)
+  try {
+    require('./build-curriculum-n5.js');
+  } catch (err) {
+    console.warn('[build-curriculum-all] Error executing build-curriculum-n5.js:', err.message);
+  }
 
-  // Build N3
-  const n3Data = buildLevelCurriculum('n3', grammarN3, vocabN3, n3UnitsDef);
-  writeCurriculumFiles('curriculum-n3', 'curriculumN3', n3Data);
+  // Build N4 (Using authoritative N4 golden benchmark compiler)
+  try {
+    require('./build-curriculum-n4.js');
+  } catch (err) {
+    console.warn('[build-curriculum-all] Error executing build-curriculum-n4.js, using fallback:', err.message);
+    const n4Data = buildLevelCurriculum('n4', grammarN4, vocabN4, n4UnitsDef);
+    writeCurriculumFiles('curriculum-n4', 'curriculumN4', n4Data);
+  }
+
+  // Build N3 (Using authoritative N3 golden benchmark compiler)
+  try {
+    require('./build-curriculum-n3.js');
+  } catch (err) {
+    console.warn('[build-curriculum-all] Error executing build-curriculum-n3.js, using fallback:', err.message);
+    const n3Data = buildLevelCurriculum('n3', grammarN3, vocabN3, n3UnitsDef);
+    writeCurriculumFiles('curriculum-n3', 'curriculumN3', n3Data);
+  }
+
+
+
 
   // Build N2
-  const n2Data = buildLevelCurriculum('n2', grammarN2, vocabN2, n2UnitsDef);
-  writeCurriculumFiles('curriculum-n2', 'curriculumN2', n2Data);
+  try {
+    execSync('node scripts/build-curriculum-n2.js', { stdio: 'inherit', cwd: ROOT });
+  } catch (err) {
+    console.warn('[build-curriculum-all] Error executing build-curriculum-n2.js, using fallback:', err.message);
+    const n2Data = buildLevelCurriculum('n2', grammarN2, vocabN2, n2UnitsDef);
+    writeCurriculumFiles('curriculum-n2', 'curriculumN2', n2Data);
+  }
 
   // Build N1
-  const n1Data = buildLevelCurriculum('n1', grammarN1, vocabN1, n1UnitsDef);
-  writeCurriculumFiles('curriculum-n1', 'curriculumN1', n1Data);
+  try {
+    execSync('node scripts/build-curriculum-n1.js', { stdio: 'inherit', cwd: ROOT });
+  } catch (err) {
+    console.warn('[build-curriculum-all] Error executing build-curriculum-n1.js, using fallback:', err.message);
+    const n1Data = buildLevelCurriculum('n1', grammarN1, vocabN1, n1UnitsDef);
+    writeCurriculumFiles('curriculum-n1', 'curriculumN1', n1Data);
+  }
 
   // Workplace / Safety N4 Grammar subset for SSW tracks
   const sswGrammar = grammarN4.filter(g =>

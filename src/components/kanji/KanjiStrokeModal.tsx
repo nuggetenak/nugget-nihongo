@@ -779,7 +779,7 @@ export const KanjiStrokeModal: React.FC<KanjiStrokeModalProps> = ({
               strokeData && strokeData.paths.length > 0 ? (
                 <div className="relative w-full h-full">
                   <svg
-                    className="w-full h-full p-4"
+                    className="w-full h-full"
                     viewBox="0 0 109 109"
                     style={{ strokeLinecap: 'round', strokeLinejoin: 'round' }}
                   >
@@ -864,7 +864,7 @@ export const KanjiStrokeModal: React.FC<KanjiStrokeModalProps> = ({
               <div className="relative w-full h-full">
                 {/* Visual guide vector layer */}
                 <svg
-                  className="absolute inset-0 w-full h-full p-4 pointer-events-none"
+                  className="absolute inset-0 w-full h-full pointer-events-none"
                   viewBox="0 0 109 109"
                   style={{ strokeLinecap: 'round', strokeLinejoin: 'round' }}
                 >

@@ -1,0 +1,28 @@
+name: Supabase Project Keep-Alive Heartbeat
+
+on:
+  schedule:
+    # Runs every 3 days at 04:00 UTC (well within the 7-day inactivity pause ceiling)
+    - cron: '0 4 */3 * *'
+  workflow_dispatch: # Allows manual trigger anytime from GitHub Actions tab
+
+jobs:
+  ping-supabase:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ping Supabase Database
+        run: |
+          if [ -z "${{ secrets.VITE_SUPABASE_URL }}" ] || [ -z "${{ secrets.VITE_SUPABASE_ANON_KEY }}" ]; then
+            echo "Supabase secrets not configured. Skipping keep-alive ping."
+            exit 0
+          fi
+          
+          curl -X POST "${{ secrets.VITE_SUPABASE_URL }}/rest/v1/health_heartbeats" \
+            -H "apikey: ${{ secrets.VITE_SUPABASE_ANON_KEY }}" \
+            -H "Authorization: Bearer ${{ secrets.VITE_SUPABASE_ANON_KEY }}" \
+            -H "Content-Type: application/json" \
+            -H "Prefer: return=minimal" \
+            -d '{"ping_source": "github_actions", "metadata": {"trigger": "scheduled_keepalive"}}' \
+            --fail --silent --show-error
+            
+          echo "Supabase keep-alive heartbeat successful!"

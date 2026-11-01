@@ -165,6 +165,7 @@ export interface CurriculumLesson {
   can_do_statement: string;
   grammar_ids: string[];
   vocab_ids?: string[];
+  kanji_ids?: string[];
   l2d_contrastive_tags?: string[];
   estimated_minutes?: number;
 
@@ -191,6 +192,7 @@ export interface CurriculumUnit {
   can_do_summary: string;
   l2d_focus_notes?: string;
   grammar_ids: string[]; // All grammar in this unit
+  kanji_ids?: string[]; // Thematic kanji taught or featured in this unit
   vocab_count_approx: number;
   lessons: CurriculumLesson[];
 }

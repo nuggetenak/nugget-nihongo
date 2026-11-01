@@ -4,7 +4,7 @@
 //  into a single, elegant, and responsive modal bottom-sheet
 // ══════════════════════════════════════════════════════════════════
 
-import React from 'react';
+import React, { useState } from 'react';
 import { createPortal } from 'react-dom';
 import {
   X,
@@ -18,6 +18,9 @@ import {
   HelpCircle,
   ChevronRight,
   Sparkles,
+  Briefcase,
+  Hash,
+  Music,
 } from 'lucide-react';
 import { useFocusTrap } from '../../hooks/useFocusTrap';
 
@@ -29,12 +32,32 @@ interface StudyToolboxModalProps {
   onOpenNuance: () => void;
   onOpenKotowaza: () => void;
   onOpenCatPlacement: () => void;
+  onOpenKeigo?: () => void;
+  onOpenCounters?: () => void;
+  onOpenPitch?: () => void;
   onOpenFeatureGuide: () => void;
   onOpenShortcuts: () => void;
 }
 
+export type ToolboxCategory = 'all' | 'phonology' | 'grammar' | 'vocab' | 'tools';
+
+export interface CategoryTab {
+  id: ToolboxCategory;
+  label: string;
+  icon: string;
+}
+
+export const CATEGORY_TABS: CategoryTab[] = [
+  { id: 'all', label: 'Semua', icon: '✨' },
+  { id: 'phonology', label: 'Fonologi & Nada', icon: '🗣️' },
+  { id: 'grammar', label: 'Tata Bahasa & Keigo', icon: '📖' },
+  { id: 'vocab', label: 'Kosakata & Hitungan', icon: '🔢' },
+  { id: 'tools', label: 'Alat & Panduan', icon: '⚙️' },
+];
+
 interface ToolItem {
   id: string;
+  category: ToolboxCategory;
   name: string;
   nameJp: string;
   desc: string;
@@ -51,15 +74,20 @@ export const StudyToolboxModal: React.FC<StudyToolboxModalProps> = ({
   onOpenNuance,
   onOpenKotowaza,
   onOpenCatPlacement,
+  onOpenKeigo,
+  onOpenCounters,
+  onOpenPitch,
   onOpenFeatureGuide,
   onOpenShortcuts,
 }) => {
   const containerRef = useFocusTrap<HTMLDivElement>(isOpen, onClose);
+  const [selectedCategory, setSelectedCategory] = useState<ToolboxCategory>('all');
   if (!isOpen) return null;
 
   const tools: ToolItem[] = [
     {
       id: 'cat',
+      category: 'tools',
       name: 'Tes Penempatan Mandiri',
       nameJp: '適応型レベル判定',
       desc: 'Tes kilat 10 soal untuk menentukan rekomendasi level JLPT belajarmu (N5–N1) secara akurat.',
@@ -72,6 +100,7 @@ export const StudyToolboxModal: React.FC<StudyToolboxModalProps> = ({
     },
     {
       id: 'kana',
+      category: 'phonology',
       name: 'Bagan Kana Interaktif',
       nameJp: '五十音図・仮名表',
       desc: 'Tabel lengkap Hiragana & Katakana dengan audio pelafalan asli, dakuten, dan youon.',
@@ -84,6 +113,7 @@ export const StudyToolboxModal: React.FC<StudyToolboxModalProps> = ({
     },
     {
       id: 'conjugation',
+      category: 'grammar',
       name: 'Simulator Konjugasi Verba',
       nameJp: '動詞活用シミュレーター',
       desc: 'Latih dan periksa perubahan bentuk kata kerja: Te, Nai, Ta, Masu, Potensial, Pasif, dan Kausatif.',
@@ -96,6 +126,7 @@ export const StudyToolboxModal: React.FC<StudyToolboxModalProps> = ({
     },
     {
       id: 'nuance',
+      category: 'grammar',
       name: 'Komparator Nuansa Tata Bahasa',
       nameJp: '文法ニュアンス比較',
       desc: 'Bedah perbedaan halus antara pola mirip yang sering membingungkan (contoh: に vs で, は vs が).',
@@ -107,12 +138,52 @@ export const StudyToolboxModal: React.FC<StudyToolboxModalProps> = ({
       },
     },
     {
+      id: 'keigo',
+      category: 'grammar',
+      name: 'Pelatih Keigo & Etiket Kerja',
+      nameJp: '敬語・ビジネスマナー',
+      desc: 'Kuasai Sonkeigo, Kenjougo, Teineigo, logika Uchi-Soto, dan etiket percakapan kerja Jepang / SSW.',
+      icon: <Briefcase className="w-5 h-5 text-indigo-400" />,
+      badge: 'Uchi-Soto & SSW',
+      action: () => {
+        onClose();
+        if (onOpenKeigo) onOpenKeigo();
+      },
+    },
+    {
+      id: 'counters',
+      category: 'vocab',
+      name: 'Pelatih Kata Bantu Bilangan',
+      nameJp: '助数詞・数え方シミュレーター',
+      desc: 'Kuasai 本, 枚, 匹, 冊, 台, つ, aturan perubahan bunyi Onbin, dan kalkulator hitung 1-100.',
+      icon: <Hash className="w-5 h-5 text-amber-400" />,
+      badge: 'Onbin & Kuis',
+      action: () => {
+        onClose();
+        if (onOpenCounters) onOpenCounters();
+      },
+    },
+    {
+      id: 'pitch',
+      category: 'phonology',
+      name: 'Pelatih Pitch Accent (高低アクセント)',
+      nameJp: 'アクセント・音調スタジオ',
+      desc: 'Visualisasi kontur nada tinggi-rendah, 4 pola Tokyo, dan komparasi homofon (雨 vs 飴, 箸 vs 橋).',
+      icon: <Music className="w-5 h-5 text-amber-400" />,
+      badge: 'Studio Nada',
+      action: () => {
+        onClose();
+        if (onOpenPitch) onOpenPitch();
+      },
+    },
+    {
       id: 'kotowaza',
-      name: 'Galeri 52 Peribahasa (ことわざ)',
+      category: 'vocab',
+      name: 'Galeri 366+ Peribahasa (ことわざ)',
       nameJp: '伝統のことわざ集',
       desc: 'Koleksi hikmah dan ungkapan tradisional Jepang lengkap dengan bacaan, arti, dan audio.',
       icon: <Quote className="w-5 h-5 text-amber-300" />,
-      badge: '52 Mutiara',
+      badge: '366+ Harian',
       action: () => {
         onClose();
         onOpenKotowaza();
@@ -120,6 +191,7 @@ export const StudyToolboxModal: React.FC<StudyToolboxModalProps> = ({
     },
     {
       id: 'guide',
+      category: 'tools',
       name: 'Direktori Panduan Fitur',
       nameJp: '機能ガイド・使い方',
       desc: 'Penjelasan menyeluruh mengenai fitur aplikasi, kurikulum 8 jalur, dan kiat belajar efektif.',
@@ -131,6 +203,7 @@ export const StudyToolboxModal: React.FC<StudyToolboxModalProps> = ({
     },
     {
       id: 'shortcuts',
+      category: 'tools',
       name: 'Pintasan Keyboard (Desktop)',
       nameJp: 'キーボードショートカット',
       desc: 'Daftar hotkey cepat (⌘K, ?, F, R, Spasi, 1-4) untuk navigasi kilat di komputer desktop.',
@@ -142,6 +215,10 @@ export const StudyToolboxModal: React.FC<StudyToolboxModalProps> = ({
       },
     },
   ];
+
+  const filteredTools = selectedCategory === 'all'
+    ? tools
+    : tools.filter((t) => t.category === selectedCategory);
 
   const modalContent = (
     <div
@@ -189,9 +266,33 @@ export const StudyToolboxModal: React.FC<StudyToolboxModalProps> = ({
           </button>
         </div>
 
+        {/* Category Segmented Tabs */}
+        <div className="px-3 sm:px-5 py-2.5 border-b border-accent/15 bg-surface-2/30 flex items-center gap-1.5 overflow-x-auto scrollbar-none whitespace-nowrap shrink-0">
+          {CATEGORY_TABS.map((tab) => {
+            const isActive = selectedCategory === tab.id;
+            const count = tab.id === 'all' ? tools.length : tools.filter((t) => t.category === tab.id).length;
+            return (
+              <button
+                key={tab.id}
+                type="button"
+                onClick={() => setSelectedCategory(tab.id)}
+                className={`min-h-[40px] px-3.5 py-1.5 rounded-xl text-xs font-bold flex items-center gap-1.5 transition-all shrink-0 active:scale-95 ${
+                  isActive
+                    ? 'bg-amber-500/20 text-accent-hot border border-amber-500/40 shadow-sm'
+                    : 'bg-surface hover:bg-surface-3 text-appText-muted hover:text-appText-bright border border-accent/10'
+                }`}
+              >
+                <span>{tab.icon}</span>
+                <span>{tab.label}</span>
+                <span className="text-[10px] opacity-75 ml-0.5">({count})</span>
+              </button>
+            );
+          })}
+        </div>
+
         {/* Tools Grid / List */}
         <div className="p-4 sm:p-5 overflow-y-auto space-y-2.5 flex-1 min-w-0 scrollbar-thin">
-          {tools.map((tool) => (
+          {filteredTools.map((tool) => (
             <button
               key={tool.id}
               onClick={tool.action}

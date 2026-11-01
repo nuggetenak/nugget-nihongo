@@ -6,6 +6,7 @@
 import React, { useState, useRef } from 'react';
 import { Volume2, Eye, EyeOff, Gauge, Play, Square, Compass, Sparkles } from 'lucide-react';
 import { LessonDialogueLine } from '../../../types/curriculum';
+import { useAppStore } from '../../../store/useAppStore';
 import { speakJapanese } from '../../../lib/audio/speechEngine';
 import { resolveSpeakerPersona } from '../../../lib/audio/personaVoices';
 import { RubyText } from '../../ui/RubyText';
@@ -17,7 +18,8 @@ interface DialogueStageProps {
 }
 
 export const DialogueStage: React.FC<DialogueStageProps> = ({ dialogue = [], sceneIntro }) => {
-  const [showFurigana, setShowFurigana] = useState(true);
+  const globalShowFurigana = useAppStore((state) => state.showFurigana);
+  const [showFurigana, setShowFurigana] = useState(globalShowFurigana ?? true);
   const [showTranslation, setShowTranslation] = useState(true);
   const [speechRate, setSpeechRate] = useState<number>(1.0);
   const [playingLineId, setPlayingLineId] = useState<string | null>(null);
@@ -118,7 +120,7 @@ export const DialogueStage: React.FC<DialogueStageProps> = ({ dialogue = [], sce
           <button
             type="button"
             onClick={handlePlayAll}
-            className={`min-h-[38px] px-3.5 py-1.5 rounded-xl font-bold flex items-center gap-1.5 transition-all active:scale-95 shadow-sm ${
+            className={`min-h-[40px] px-3.5 py-1.5 rounded-xl font-bold flex items-center gap-1.5 transition-all active:scale-95 shadow-sm ${
               isPlayingAll
                 ? 'bg-rose-500 text-white animate-pulse'
                 : 'bg-accent text-bg hover:brightness-110'
@@ -133,7 +135,7 @@ export const DialogueStage: React.FC<DialogueStageProps> = ({ dialogue = [], sce
           <button
             type="button"
             onClick={toggleRate}
-            className={`min-h-[38px] px-3 py-1.5 rounded-xl font-bold flex items-center gap-1.5 border transition-all active:scale-95 ${
+            className={`min-h-[40px] px-3 py-1.5 rounded-xl font-bold flex items-center gap-1.5 border transition-all active:scale-95 ${
               speechRate === 0.8
                 ? 'bg-amber-500 text-bg border-amber-500 shadow-sm'
                 : 'bg-surface border-accent/20 text-appText-muted hover:text-appText-bright'
@@ -150,7 +152,7 @@ export const DialogueStage: React.FC<DialogueStageProps> = ({ dialogue = [], sce
           <button
             type="button"
             onClick={() => setShowFurigana(!showFurigana)}
-            className="min-h-[38px] px-2.5 py-1.5 rounded-xl bg-surface border border-accent/20 text-appText-muted hover:text-appText-bright flex items-center gap-1.5 active:scale-95"
+            className="min-h-[40px] px-2.5 py-1.5 rounded-xl bg-surface border border-accent/20 text-appText-muted hover:text-appText-bright flex items-center gap-1.5 active:scale-95"
             title="Sembunyikan atau tampilkan furigana"
           >
             {showFurigana ? <Eye className="w-3.5 h-3.5 text-accent" /> : <EyeOff className="w-3.5 h-3.5" />}
@@ -160,7 +162,7 @@ export const DialogueStage: React.FC<DialogueStageProps> = ({ dialogue = [], sce
           <button
             type="button"
             onClick={() => setShowTranslation(!showTranslation)}
-            className="min-h-[38px] px-2.5 py-1.5 rounded-xl bg-surface border border-accent/20 text-appText-muted hover:text-appText-bright flex items-center gap-1.5 active:scale-95"
+            className="min-h-[40px] px-2.5 py-1.5 rounded-xl bg-surface border border-accent/20 text-appText-muted hover:text-appText-bright flex items-center gap-1.5 active:scale-95"
             title="Sembunyikan atau tampilkan arti bahasa Indonesia"
           >
             {showTranslation ? <Eye className="w-3.5 h-3.5 text-accent" /> : <EyeOff className="w-3.5 h-3.5" />}
@@ -212,7 +214,7 @@ export const DialogueStage: React.FC<DialogueStageProps> = ({ dialogue = [], sce
                   <button
                     type="button"
                     onClick={() => handlePlayAudio(line)}
-                    className={`min-h-[38px] min-w-[38px] p-2 rounded-xl border flex items-center justify-center transition-all active:scale-95 shrink-0 ${
+                    className={`min-h-[40px] min-w-[40px] p-2 rounded-xl border flex items-center justify-center transition-all active:scale-95 shrink-0 ${
                       isPlaying
                         ? 'bg-accent text-bg border-accent shadow-md animate-pulse'
                         : 'bg-surface-2 border-accent/20 text-accent hover:bg-surface-3'

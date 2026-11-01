@@ -7,6 +7,9 @@ export interface SupabaseConfig {
   isCustom: boolean;
 }
 
+export const OFFICIAL_PROJECT_REF = 'xipvhxorvwpvfokauboy';
+export const OFFICIAL_SUPABASE_URL = 'https://xipvhxorvwpvfokauboy.supabase.co';
+
 const DEFAULT_DEAD_URL = 'https://unconfigured.supabase.co';
 const DEFAULT_ANON_KEY = 'placeholder-anon-key';
 
@@ -43,7 +46,12 @@ export function getStoredSupabaseConfig(): SupabaseConfig {
     anonKey = import.meta.env.VITE_SUPABASE_ANON_KEY;
   }
 
-  const isConfigured = !!url && !url.includes('unconfigured') && !url.includes('oxeuwkpgrtojjzhcboqz') && !url.includes('your-project-id') && anonKey !== 'placeholder-anon-key';
+  // Fallback to official project URL if none configured
+  if (!url) {
+    url = OFFICIAL_SUPABASE_URL;
+  }
+
+  const isConfigured = !!url && !url.includes('unconfigured') && !url.includes('oxeuwkpgrtojjzhcboqz') && !url.includes('your-project-id') && anonKey !== 'placeholder-anon-key' && !!anonKey;
   const isCustom = isConfigured;
 
   return {
@@ -96,17 +104,25 @@ export function updateSupabaseConfig(newUrl: string, newAnonKey: string): Supaba
   return supabase;
 }
 
-export async function testSupabaseConnection(targetUrl?: string, targetKey?: string): Promise<{ ok: boolean; message: string }> {
+export async function testSupabaseConnection(
+  targetUrl?: string,
+  targetKey?: string,
+  timeoutMs = 6000
+): Promise<{ ok: boolean; message: string; latencyMs?: number }> {
   const cfg = getStoredSupabaseConfig();
   const url = (targetUrl || cfg.url).trim().replace(/\/$/, '');
   const key = (targetKey || cfg.anonKey).trim();
 
-  if (!url || url.includes('oxeuwkpgrtojjzhcboqz') || url.includes('your-project-id')) {
+  if (!url || url.includes('oxeuwkpgrtojjzhcboqz') || url.includes('your-project-id') || url.includes('unconfigured')) {
     return {
       ok: false,
       message: 'Server cloud Supabase belum dikonfigurasi.',
     };
   }
+
+  const controller = typeof AbortController !== 'undefined' ? new AbortController() : null;
+  const timer = controller ? setTimeout(() => controller.abort(), timeoutMs) : null;
+  const startTime = performance.now();
 
   try {
     const res = await fetch(`${url}/auth/v1/health`, {
@@ -115,18 +131,38 @@ export async function testSupabaseConnection(targetUrl?: string, targetKey?: str
         apikey: key,
         Authorization: `Bearer ${key}`,
       },
+      signal: controller?.signal,
     });
 
+    const latencyMs = Math.round(performance.now() - startTime);
+
     if (res.ok) {
-      return { ok: true, message: 'Koneksi ke Supabase aktif dan terhubung!' };
+      return {
+        ok: true,
+        message: `Koneksi aktif! Database Supabase merespons normal (${latencyMs}ms).`,
+        latencyMs,
+      };
     }
-    return { ok: false, message: `Server Supabase merespons dengan kode HTTP ${res.status}.` };
+    return {
+      ok: false,
+      message: `Server merespons dengan HTTP ${res.status}. Periksa Anon Key proyek.`,
+      latencyMs,
+    };
   } catch (err: unknown) {
+    const isTimeout = err instanceof Error && (err.name === 'AbortError' || err.message.includes('abort'));
+    if (isTimeout) {
+      return {
+        ok: false,
+        message: `Koneksi timeout setelah ${timeoutMs / 1000} detik. Database mungkin sedang dalam status 'Paused' atau tertidur.`,
+      };
+    }
     const errStr = err instanceof Error ? err.message : String(err);
     return {
       ok: false,
-      message: `Tidak dapat terhubung ke server cloud: ${errStr}`,
+      message: `Tidak dapat terhubung ke server: ${errStr}`,
     };
+  } finally {
+    if (timer) clearTimeout(timer);
   }
 }
 

@@ -43839,7 +43839,7 @@ window.vocabN1_Verbs = [
   "word": "仮令",
   "reading": "たとえ",
   "romaji": "tatoe",
-  "meaning_id": "even if; if",
+  "meaning_id": "sekalipun, andai kata, seumpama",
   "meaning_en": "even if; if; though; although",
   "jlpt": "n1",
   "pos": "adverb",
@@ -43860,7 +43860,7 @@ window.vocabN1_Verbs = [
   "examples": [
     {
       "jp": "たとえ両親が反対しても私は留学したい。",
-      "id": "Saya ingin study abroad, even if my parents are against it.",
+      "id": "Saya ingin belajar ke luar negeri sekalipun orang tua menentang.",
       "level": "n1",
       "tags": [
         "umum"
@@ -63599,7 +63599,7 @@ window.vocabN1_Verbs = [
   "word": "呆然",
   "reading": "ぼうぜん",
   "romaji": "bouzen",
-  "meaning_id": "dumbfounded; overcome with surprise",
+  "meaning_id": "tercengang, terpana, terperangah",
   "meaning_en": "dumbfounded; overcome with surprise; in blank amazement",
   "jlpt": "n1",
   "pos": "adverb",
@@ -63620,7 +63620,7 @@ window.vocabN1_Verbs = [
   "examples": [
     {
       "jp": "彼は悲嘆に暮れてぼう然としていた。",
-      "id": "Dia buta karena kesedihan.",
+      "id": "Ia tenggelam dalam duka dan berdiri terpana.",
       "level": "n1",
       "tags": [
         "umum"
@@ -63629,7 +63629,7 @@ window.vocabN1_Verbs = [
 },
     {
       "jp": "子供は幽霊を見ているかのように私をぼう然と見つめた。",
-      "id": "Anak itu menganga ke arahku seolah-olah dia sedang melihat hantu.",
+      "id": "Anak itu menatapku dengan terpana seolah sedang melihat hantu.",
       "level": "n1",
       "tags": [
         "umum"
