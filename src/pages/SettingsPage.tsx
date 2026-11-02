@@ -46,7 +46,7 @@ export const SettingsPage: React.FC = () => {
     openPatchNotes,
     userSubstratum, setUserSubstratum,
     uiLanguage, setUiLanguage,
-    streak, xp, dailyGoalXP,
+    streak, xp, dailyGoalXP, setDailyGoalXP,
   } = useAppStore();
 
   const {
@@ -61,7 +61,7 @@ export const SettingsPage: React.FC = () => {
       if (hash.includes('audio') || hash.includes('suara')) return 'audio';
       if (hash.includes('sync') || hash.includes('cloud')) return 'sync';
       if (hash.includes('lanjutan') || hash.includes('data') || hash.includes('backup') || hash.includes('advanced')) return 'lanjutan';
-      if (hash.includes('profil') || hash.includes('account')) return 'profil';
+      if (hash.includes('profil') || hash.includes('account') || hash.includes('dialek') || hash.includes('substratum')) return 'profil';
     }
     return 'profil';
   });
@@ -73,7 +73,7 @@ export const SettingsPage: React.FC = () => {
       if (hash.includes('audio')) setActiveTab('audio');
       else if (hash.includes('sync')) setActiveTab('sync');
       else if (hash.includes('lanjutan') || hash.includes('advanced')) setActiveTab('lanjutan');
-      else if (hash.includes('profil') || hash === '#settings' || hash === '#pengaturan') setActiveTab('profil');
+      else if (hash.includes('profil') || hash.includes('dialek') || hash.includes('substratum') || hash === '#settings' || hash === '#pengaturan') setActiveTab('profil');
     };
     window.addEventListener('hashchange', handleHash);
     return () => window.removeEventListener('hashchange', handleHash);
@@ -371,28 +371,28 @@ export const SettingsPage: React.FC = () => {
     {
       id: 'profil',
       hash: '#settings/profil',
-      label: 'Profil & Identitas',
+      label: 'Rapor & Profil',
       icon: <User className="w-4 h-4 shrink-0" />,
       badge: user ? 'Cloud' : 'Lokal',
     },
     {
       id: 'audio',
       hash: '#settings/audio',
-      label: 'Audio & Tipografi',
+      label: 'Audio & Fonetik',
       icon: <Volume2 className="w-4 h-4 shrink-0" />,
       badge: 'TTS',
     },
     {
       id: 'sync',
       hash: '#settings/sync',
-      label: 'Sinkronisasi Cloud',
+      label: 'Akun & Cloud',
       icon: <Cloud className="w-4 h-4 shrink-0" />,
       badge: syncStatus === 'success' ? 'Aktif' : undefined,
     },
     {
       id: 'lanjutan',
       hash: '#settings/lanjutan',
-      label: 'Lanjutan & Cadangan',
+      label: 'Lanjutan',
       icon: <Sliders className="w-4 h-4 shrink-0" />,
       badge: 'AES-256',
     },
@@ -439,7 +439,7 @@ export const SettingsPage: React.FC = () => {
               <span className="truncate">{tab.label}</span>
               {tab.badge && (
                 <span
-                  className={`hidden md:inline-block text-[10px] font-mono px-1.5 py-0.5 rounded-md ${
+                  className={`hidden md:inline-block text-xs font-mono px-1.5 py-0.5 rounded-md ${
                     isActive ? 'bg-bg/25 text-bg font-extrabold' : 'bg-surface-3 text-appText-muted'
                   }`}
                 >
@@ -472,6 +472,7 @@ export const SettingsPage: React.FC = () => {
           openOnboarding={openOnboarding}
           openPatchNotes={openPatchNotes}
           showToast={showToast}
+          setDailyGoalXP={setDailyGoalXP}
         />
       )}
 
@@ -536,44 +537,24 @@ export const SettingsPage: React.FC = () => {
       {/* Accessible Accessibility Contracts Bridge (Sprint 3, 16, 21, 37 Support) */}
       <div className="sr-only" aria-hidden="true">
         {/* T-15.2 Synchronous Voice Trigger */}
-        <button
-          onClick={() => speakJapanese('日本語の勉強を始めましょう！', speechRate)}
-          aria-label="Tes Suara Bahasa Jepang"
-        >
+        <button onClick={() => speakJapanese('日本語の勉強を始めましょう！', speechRate)} aria-label="Tes Suara Bahasa Jepang">
           Tes Suara
         </button>
         {/* T-16 Language Controls */}
         <div aria-label="Bahasa Antarmuka (Language)">
-          {([
-            { id: 'id' as const, label: 'Bahasa Indonesia' },
-            { id: 'en' as const, label: 'English' },
-          ]).map((item) => (
-            <button
-              key={item.id}
-              onClick={() => setUiLanguage(item.id)}
-              className="active:scale-95"
-            >
+          {([{ id: 'id' as const, label: 'Bahasa Indonesia' }, { id: 'en' as const, label: 'English' }]).map((item) => (
+            <button key={item.id} onClick={() => setUiLanguage(item.id)} className="active:scale-95">
               {item.label}
             </button>
           ))}
         </div>
         {/* T-21 A11y Attributes */}
         <label htmlFor="custom-api-key">Kunci API Mandiri</label>
-        <input
-          id="custom-api-key"
-          aria-describedby="api-key-desc"
-          value={apiKeyInput}
-          onChange={(e) => setApiKeyInput(e.target.value)}
-        />
+        <input id="custom-api-key" aria-describedby="api-key-desc" value={apiKeyInput} onChange={(e) => setApiKeyInput(e.target.value)} />
         <span id="api-key-desc">Kunci API pribadi untuk Sensei AI</span>
-        <button
-          role="switch"
-          aria-checked={showFurigana}
-          onClick={() => setShowFurigana(!showFurigana)}
-        >
+        <button role="switch" aria-checked={showFurigana} onClick={() => setShowFurigana(!showFurigana)}>
           Furigana Switch
         </button>
-        {/* Substratum check */}
         <span>{userSubstratum === 'none' ? 'Aktif' : ''}</span>
       </div>
 

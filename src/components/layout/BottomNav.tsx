@@ -92,7 +92,7 @@ export const BottomNav: React.FC = () => {
             <span className={`transition-transform duration-200 ${isActive ? 'scale-110 text-accent' : 'scale-100'}`}>
               {item.icon}
             </span>
-            <span className="text-[10px] sm:text-xs mt-1 font-bold tracking-tight truncate max-w-full text-center">
+            <span className="text-xs mt-1 font-bold tracking-tight truncate max-w-full text-center">
               {item.label}
             </span>
             {isActive && (

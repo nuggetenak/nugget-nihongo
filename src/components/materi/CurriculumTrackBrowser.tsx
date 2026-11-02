@@ -5,6 +5,7 @@
 // ══════════════════════════════════════════════════════════════════
 
 import React, { useState, useEffect, useMemo } from 'react';
+import { createPortal } from 'react-dom';
 import {
   Award,
   BookOpen,
@@ -1274,9 +1275,9 @@ export const CurriculumTrackBrowser: React.FC<CurriculumTrackBrowserProps> = ({
       {/* ─────────────────────────────────────────────────────────────
           MOBILE TRACK PICKER BOTTOM SHEET MODAL
          ───────────────────────────────────────────────────────────── */}
-      {isMobileTrackPickerOpen && (
+      {isMobileTrackPickerOpen && typeof document !== 'undefined' && createPortal(
         <div
-          className="fixed inset-0 z-50 bg-black/75 backdrop-blur-sm flex items-end sm:items-center justify-center p-0 sm:p-4 animate-in fade-in duration-200"
+          className="fixed inset-0 z-[99999] bg-black/75 backdrop-blur-sm flex items-end sm:items-center justify-center p-0 sm:p-4 animate-in fade-in duration-200"
           onClick={() => setIsMobileTrackPickerOpen(false)}
         >
           <div
@@ -1510,12 +1511,13 @@ export const CurriculumTrackBrowser: React.FC<CurriculumTrackBrowserProps> = ({
               </button>
             </div>
           </div>
-        </div>
+        </div>,
+        document.body
       )}
 
       {/* ── UNIFIED DIALECT SELECTOR BOTTOM SHEET MODAL ── */}
-      {isSubstratumDropdownOpen && (
-        <div className="fixed inset-0 z-50 flex items-end sm:items-center justify-center p-0 sm:p-4 bg-black/60 backdrop-blur-sm animate-fade-in">
+      {isSubstratumDropdownOpen && typeof document !== 'undefined' && createPortal(
+        <div className="fixed inset-0 z-[99999] flex items-end sm:items-center justify-center p-0 sm:p-4 bg-black/60 backdrop-blur-sm animate-fade-in">
           <div
             className="fixed inset-0"
             onClick={() => setIsSubstratumDropdownOpen(false)}
@@ -1571,7 +1573,8 @@ export const CurriculumTrackBrowser: React.FC<CurriculumTrackBrowserProps> = ({
               ))}
             </div>
           </div>
-        </div>
+        </div>,
+        document.body
       )}
 
       {/* Academic SLA & Methodology Modal */}

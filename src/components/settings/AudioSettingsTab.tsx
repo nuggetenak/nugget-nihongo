@@ -56,7 +56,7 @@ export const AudioSettingsTab: React.FC<AudioSettingsTabProps> = ({
               <span className="text-xs font-semibold text-appText-bright block">
                 Efek Suara Gamifikasi (SFX)
               </span>
-              <span className="text-[11px] text-appText-muted block">
+              <span className="text-xs text-appText-muted block">
                 Suara umpan balik kuis, naik level, dan kombo.
               </span>
             </div>
@@ -154,7 +154,7 @@ export const AudioSettingsTab: React.FC<AudioSettingsTabProps> = ({
               <span className="text-xs font-semibold text-appText-bright block">
                 Tampilkan Furigana (ふりがな)
               </span>
-              <span className="text-[11px] text-appText-muted block">
+              <span className="text-xs text-appText-muted block">
                 Anotasi kana di atas karakter kanji.
               </span>
             </div>
@@ -180,7 +180,7 @@ export const AudioSettingsTab: React.FC<AudioSettingsTabProps> = ({
               <span className="text-xs font-semibold text-appText-bright block">
                 Tampilkan Romaji (Rōmaji)
               </span>
-              <span className="text-[11px] text-appText-muted block">
+              <span className="text-xs text-appText-muted block">
                 Transliterasi alfabet latin untuk pemula.
               </span>
             </div>
@@ -206,7 +206,7 @@ export const AudioSettingsTab: React.FC<AudioSettingsTabProps> = ({
               <span className="text-xs font-semibold text-appText-bright block">
                 Skala Ukuran Teks (rem)
               </span>
-              <span className="text-[11px] text-appText-muted block">
+              <span className="text-xs text-appText-muted block">
                 Skala relatif tanpa merusak aksesibilitas sistem.
               </span>
             </div>
@@ -235,11 +235,11 @@ export const AudioSettingsTab: React.FC<AudioSettingsTabProps> = ({
         {/* Live Japanese Typography Preview Card */}
         <div className="p-4 sm:p-5 rounded-2xl bg-surface-2/40 border border-accent/15 space-y-2">
           <div className="flex items-center justify-between border-b border-accent/10 pb-2">
-            <span className="text-[11px] font-semibold text-appText-muted uppercase tracking-wider flex items-center gap-1.5">
+            <span className="text-xs font-semibold text-appText-muted uppercase tracking-wider flex items-center gap-1.5">
               <Sparkles className="w-3.5 h-3.5 text-accent" />
               Pratinjau Tipografi Autentik
             </span>
-            <span className="text-[10px] font-mono text-accent">
+            <span className="text-xs font-mono text-accent">
               {textSize.toUpperCase()} · {showFurigana ? 'FURIGANA' : 'NO-FURIGANA'}
             </span>
           </div>

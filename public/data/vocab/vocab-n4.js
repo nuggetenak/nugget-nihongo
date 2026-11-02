@@ -2,7 +2,7 @@
 //  vocab-n4.js — Nugget Nihongo · JLPT N4
 //  AUTO-GENERATED — DO NOT EDIT DIRECTLY
 //  Edit: public/data/vocab/n4/*.js  then run: node scripts/merge-vocab.js
-//  Entries: 1286 | Generated: 2026-11-01
+//  Entries: 1286 | Generated: 2026-11-02
 // ══════════════════════════════════════════════════════════════
 
 window.vocabN4 = [

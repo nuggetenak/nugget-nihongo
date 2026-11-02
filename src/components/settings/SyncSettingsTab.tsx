@@ -247,7 +247,7 @@ export const SyncSettingsTab: React.FC<SyncSettingsTabProps> = ({
             </p>
           </div>
         </div>
-        <span className="hidden sm:inline-block px-2.5 py-1 rounded-full bg-emerald-500/15 text-emerald-600 dark:text-emerald-400 font-mono text-[11px] font-bold shrink-0">
+        <span className="hidden sm:inline-block px-2.5 py-1 rounded-full bg-emerald-500/15 text-emerald-600 dark:text-emerald-400 font-mono text-xs font-bold shrink-0">
           Tersedia Offline
         </span>
       </div>

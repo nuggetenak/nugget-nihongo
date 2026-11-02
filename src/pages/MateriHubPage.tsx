@@ -42,6 +42,9 @@ export type ActiveDojoTool =
 
 export interface DojoToolMeta {
   id: NonNullable<ActiveDojoTool>;
+  categoryId: 'kemahiran' | 'referensi';
+  categoryName: string;
+  categoryIcon: string;
   clusterId: 1 | 2 | 3;
   clusterName: string;
   clusterIcon: string;
@@ -56,37 +59,184 @@ export interface DojoToolMeta {
 }
 
 export const DOJO_TOOLS: DojoToolMeta[] = [
-  // ── Cluster 1: Latihan Keterampilan Inti (Core Skills) ──
+  // ── Kategori 1: Latihan Kemahiran Inti (Core Modules) ──
   {
     id: 'kanji',
+    categoryId: 'kemahiran',
+    categoryName: 'Latihan Kemahiran Inti',
+    categoryIcon: '🥋',
     clusterId: 1,
     clusterName: 'Latihan Keterampilan Inti',
     clusterIcon: '🥋',
     title: 'Kanji Dojo & Stroke Animator',
     jpTitle: '漢字道場・筆順',
-    desc: '2.136 Kanji Jouyou & Jinmeiyou lengkap dengan animasi goresan SVG, deteksi stroke order, dan latihan kanji interaktif.',
-    badge: '2.136 Kanji · SVG Animasi',
-    badgeColor: 'bg-amber-950/70 text-amber-300 border-amber-500/40 font-extrabold',
+    desc: '6.000+ Kanji Jouyou, Jinmeiyou & Kanken lengkap dengan animasi goresan SVG, deteksi urutan guratan, dan kanji canvas interaktif.',
+    badge: '6.000+ Kanji · SVG Animasi',
+    badgeColor: 'bg-surface-3/90 text-amber-300 border-amber-500/30 font-semibold',
     icon: '漢',
     actionType: 'subview',
     canDo: 'Mengenali dan menulis Kanji sesuai urutan goresan standar.',
   },
   {
     id: 'choukai',
+    categoryId: 'kemahiran',
+    categoryName: 'Latihan Kemahiran Inti',
+    categoryIcon: '🥋',
     clusterId: 1,
     clusterName: 'Latihan Keterampilan Inti',
     clusterIcon: '🥋',
-    title: 'Choukai CBT Simulator',
+    title: 'Simulator Menyimak Choukai',
     jpTitle: '聴解CBTシミュレーター',
-    desc: '38 audio pelafalan otentik dan 163 soal simulasi ujian Choukai berstandar JFT-Basic dan Prometric CBT.',
-    badge: '38 Audio · 163 Soal',
-    badgeColor: 'bg-blue-950/70 text-blue-300 border-blue-500/40 font-extrabold',
+    desc: 'Official listening tracks & audio drills otentik dengan 163 soal simulasi ujian Choukai berstandar JLPT dan JFT-Basic CBT.',
+    badge: 'Audio Otentik · CBT Exam',
+    badgeColor: 'bg-surface-3/90 text-amber-300 border-amber-500/30 font-semibold',
     icon: '🎧',
     actionType: 'subview',
     canDo: 'Memahami percakapan cepat dan instruksi audio simulasi ujian.',
   },
   {
+    id: 'books',
+    categoryId: 'kemahiran',
+    categoryName: 'Latihan Kemahiran Inti',
+    categoryIcon: '🥋',
+    clusterId: 3,
+    clusterName: 'Perpustakaan & Referensi',
+    clusterIcon: '📚',
+    title: 'Eksplorasi Buku Teks',
+    jpTitle: '標準教科書ライブラリ',
+    desc: 'Kurikulum dan pustaka latihan terpadu dari 9 seri buku teks standar: GENKI I & II, Minna no Nihongo I & II, Tobira, Irodori, dan Marugoto.',
+    badge: '9 Seri Buku Populer',
+    badgeColor: 'bg-surface-3/90 text-amber-300 border-amber-500/30 font-semibold',
+    icon: '📖',
+    actionType: 'subview',
+    canDo: 'Menyelaraskan studi mandiri dengan kurikulum buku teks standar kursus dan LPK.',
+  },
+
+  // ── Kategori 2: Peralatan & Referensi Tata Bahasa (Reference & Practice Utilities) ──
+  {
+    id: 'kana',
+    categoryId: 'referensi',
+    categoryName: 'Peralatan & Referensi Tata Bahasa',
+    categoryIcon: '🔤',
+    clusterId: 3,
+    clusterName: 'Perpustakaan & Referensi',
+    clusterIcon: '📚',
+    title: 'Bagan Aksara Kana',
+    jpTitle: '五十音表・かなチャート',
+    desc: 'Bagan interaktif 46 Hiragana dan 46 Katakana dengan audio pelafalan asli, tabel dakuten, handakuten, serta kombinasi yoon.',
+    badge: '46 Hiragana & Katakana',
+    badgeColor: 'bg-surface-3/90 text-stone-200 border-accent/25 font-semibold',
+    icon: '🔤',
+    actionType: 'modal',
+    canDo: 'Membaca dan melafalkan seluruh alfabet fonetik Kana.',
+  },
+  {
+    id: 'conjugation',
+    categoryId: 'referensi',
+    categoryName: 'Peralatan & Referensi Tata Bahasa',
+    categoryIcon: '🔄',
+    clusterId: 2,
+    clusterName: 'Laboratorium Tata Bahasa & Budaya',
+    clusterIcon: '🔬',
+    title: 'Matriks Konjugasi Kata Kerja',
+    jpTitle: '動詞活用エンジン',
+    desc: 'Matriks 9 bentuk perubahan kata kerja Jepang (Te, Masu, Nai, Ba, Tara, Perintah, Pasif, Kausatif, Potensial) dan Yomitan deinflector.',
+    badge: '9 Bentuk Konjugasi',
+    badgeColor: 'bg-surface-3/90 text-stone-200 border-accent/25 font-semibold',
+    icon: '🔄',
+    actionType: 'modal',
+    canDo: 'Menguasai pola perubahan bentuk kata kerja secara sistematis.',
+  },
+  {
+    id: 'nuance',
+    categoryId: 'referensi',
+    categoryName: 'Peralatan & Referensi Tata Bahasa',
+    categoryIcon: '⚖️',
+    clusterId: 2,
+    clusterName: 'Laboratorium Tata Bahasa & Budaya',
+    clusterIcon: '🔬',
+    title: 'Komparasi Nuansa Tata Bahasa',
+    jpTitle: 'ニュアンス比較',
+    desc: 'Komparator perbedaan makna pola tata bahasa yang mirip (seperti 〜ように vs 〜ために) agar tidak tertukar dalam konteks percakapan nyata.',
+    badge: 'Analisis Perbedaan Makna',
+    badgeColor: 'bg-surface-3/90 text-stone-200 border-accent/25 font-semibold',
+    icon: '⚖️',
+    actionType: 'modal',
+    canDo: 'Membedakan nuansa halus antar pola tata bahasa serupa.',
+  },
+  {
+    id: 'keigo',
+    categoryId: 'referensi',
+    categoryName: 'Peralatan & Referensi Tata Bahasa',
+    categoryIcon: '💼',
+    clusterId: 2,
+    clusterName: 'Laboratorium Tata Bahasa & Budaya',
+    clusterIcon: '🔬',
+    title: 'Pelatih Keigo & Bahasa Bisnis',
+    jpTitle: '敬語ビジネストレーナー',
+    desc: 'Kuasai tata krama komunikasi bisnis Jepang: Sonkeigo (hormat), Kenjougo (merendah), Teineigo (sopan), dan etiket kerja dunia nyata.',
+    badge: 'Etiket Bisnis Jepang',
+    badgeColor: 'bg-surface-3/90 text-stone-200 border-accent/25 font-semibold',
+    icon: '💼',
+    actionType: 'modal',
+    canDo: 'Berkomunikasi formal dan sopan di lingkungan kerja Jepang.',
+  },
+  {
+    id: 'counters',
+    categoryId: 'referensi',
+    categoryName: 'Peralatan & Referensi Tata Bahasa',
+    categoryIcon: '🔢',
+    clusterId: 2,
+    clusterName: 'Laboratorium Tata Bahasa & Budaya',
+    clusterIcon: '🔬',
+    title: 'Pelatih Bilangan & Kata Bantu Hitung',
+    jpTitle: '助数詞シミュレーター',
+    desc: 'Simulator kata bantu bilangan: pelajari pergeseran bunyi Onbin (本, 匹, dll.) dan 16 penggolong benda paling penting dalam keseharian.',
+    badge: '16 Penggolong Kata',
+    badgeColor: 'bg-surface-3/90 text-stone-200 border-accent/25 font-semibold',
+    icon: '🔢',
+    actionType: 'modal',
+    canDo: 'Menghitung berbagai objek dengan penggolong kata yang benar.',
+  },
+  {
+    id: 'cat',
+    categoryId: 'referensi',
+    categoryName: 'Peralatan & Referensi Tata Bahasa',
+    categoryIcon: '🎯',
+    clusterId: 1,
+    clusterName: 'Latihan Keterampilan Inti',
+    clusterIcon: '🥋',
+    title: 'Tes Penempatan Adaptif CAT',
+    jpTitle: '適応型プレースメントテスト',
+    desc: 'Diagnosa kemampuan bahasa Jepang (JLPT N5–N1) secara presisi dalam 10–12 soal adaptif berbasis Item Response Theory (IRT 3PL).',
+    badge: '10–12 Soal IRT Presisi',
+    badgeColor: 'bg-surface-3/90 text-stone-200 border-accent/25 font-semibold',
+    icon: '🎯',
+    actionType: 'modal',
+    canDo: 'Mendiagnosa level kemampuan bahasa Jepang secara instan.',
+  },
+  {
+    id: 'kotowaza',
+    categoryId: 'referensi',
+    categoryName: 'Peralatan & Referensi Tata Bahasa',
+    categoryIcon: '📜',
+    clusterId: 2,
+    clusterName: 'Laboratorium Tata Bahasa & Budaya',
+    clusterIcon: '🔬',
+    title: '52 Peribahasa Tradisional Kotowaza',
+    jpTitle: 'ことわざギャラリー',
+    desc: 'Galeri 52 kebijaksanaan dan peribahasa tradisional Jepang lengkap dengan filosofi hidup, hikmah budaya, dan padanan bahasa Indonesia.',
+    badge: '52 Peribahasa Tradisional',
+    badgeColor: 'bg-surface-3/90 text-stone-200 border-accent/25 font-semibold',
+    icon: '📜',
+    actionType: 'modal',
+    canDo: 'Memahami peribahasa dan kebijaksanaan budaya Jepang.',
+  },
+  {
     id: 'pitch',
+    categoryId: 'referensi',
+    categoryName: 'Peralatan & Referensi Tata Bahasa',
+    categoryIcon: '🎵',
     clusterId: 1,
     clusterName: 'Latihan Keterampilan Inti',
     clusterIcon: '🥋',
@@ -94,126 +244,10 @@ export const DOJO_TOOLS: DojoToolMeta[] = [
     jpTitle: 'アクセントスタジオ',
     desc: 'Visualisasi kontur nada Tokyo (Heiban, Atamadaka, Nakadaka, Odaka) dan pelatih minimal pairs kata bermakna ganda.',
     badge: 'Kontur Nada Tokyo',
-    badgeColor: 'bg-purple-950/70 text-purple-300 border-purple-500/40 font-extrabold',
+    badgeColor: 'bg-surface-3/90 text-stone-200 border-accent/25 font-semibold',
     icon: '🎵',
     actionType: 'modal',
     canDo: 'Melafalkan kata Jepang dengan kontur nada yang tepat.',
-  },
-  {
-    id: 'cat',
-    clusterId: 1,
-    clusterName: 'Latihan Keterampilan Inti',
-    clusterIcon: '🥋',
-    title: 'Adaptive Placement Test (CAT)',
-    jpTitle: '適応型プレースメントテスト',
-    desc: 'Diagnosa kemampuan bahasa Jepang (JLPT N5–N1) secara presisi dalam 10–12 soal adaptif berbasis Item Response Theory (IRT).',
-    badge: '10–12 Soal IRT Presisi',
-    badgeColor: 'bg-emerald-950/70 text-emerald-300 border-emerald-500/40 font-extrabold',
-    icon: '🎯',
-    actionType: 'modal',
-    canDo: 'Mendiagnosa level kemampuan bahasa Jepang secara instan.',
-  },
-
-  // ── Cluster 2: Laboratorium Tata Bahasa & Budaya (Grammar & Culture Lab) ──
-  {
-    id: 'keigo',
-    clusterId: 2,
-    clusterName: 'Laboratorium Tata Bahasa & Budaya',
-    clusterIcon: '🔬',
-    title: 'Keigo Business Trainer',
-    jpTitle: '敬語ビジネストレーナー',
-    desc: 'Kuasai tata krama komunikasi bisnis Jepang: Sonkeigo (hormat), Kenjougo (merendah), Teineigo (sopan), dan etiket kerja.',
-    badge: 'Etiket Bisnis Jepang',
-    badgeColor: 'bg-indigo-950/70 text-indigo-300 border-indigo-500/40 font-extrabold',
-    icon: '💼',
-    actionType: 'modal',
-    canDo: 'Berkomunikasi formal dan sopan di lingkungan kerja Jepang.',
-  },
-  {
-    id: 'counters',
-    clusterId: 2,
-    clusterName: 'Laboratorium Tata Bahasa & Budaya',
-    clusterIcon: '🔬',
-    title: 'Counter Simulator (助数詞)',
-    jpTitle: '助数詞シミュレーター',
-    desc: 'Simulator kata bantu bilangan: pelajari pergeseran bunyi Onbin (本, 匹, dll.) dan 16 penggolong benda paling penting.',
-    badge: '16 Penggolong Kata',
-    badgeColor: 'bg-cyan-950/70 text-cyan-300 border-cyan-500/40 font-extrabold',
-    icon: '🔢',
-    actionType: 'modal',
-    canDo: 'Menghitung berbagai objek dengan penggolong kata yang benar.',
-  },
-  {
-    id: 'conjugation',
-    clusterId: 2,
-    clusterName: 'Laboratorium Tata Bahasa & Budaya',
-    clusterIcon: '🔬',
-    title: 'Verb Conjugation Engine',
-    jpTitle: '動詞活用エンジン',
-    desc: 'Eksplor 9 bentuk perubahan kata kerja Jepang (Te, Masu, Nai, Ba, Tara, Perintah, Pasif, Kausatif, dll.) dan deinflector.',
-    badge: '9 Bentuk Konjugasi',
-    badgeColor: 'bg-rose-950/70 text-rose-300 border-rose-500/40 font-extrabold',
-    icon: '🔄',
-    actionType: 'modal',
-    canDo: 'Menguasai pola perubahan bentuk kata kerja secara sistematis.',
-  },
-  {
-    id: 'nuance',
-    clusterId: 2,
-    clusterName: 'Laboratorium Tata Bahasa & Budaya',
-    clusterIcon: '🔬',
-    title: 'Nuance Inspector',
-    jpTitle: 'ニュアンス比較',
-    desc: 'Komparator perbedaan makna pola tata bahasa yang mirip (〜ように vs 〜ために, dll.) agar tidak tertukar dalam konteks nyata.',
-    badge: 'Analisis Perbedaan Makna',
-    badgeColor: 'bg-teal-950/70 text-teal-300 border-teal-500/40 font-extrabold',
-    icon: '⚖️',
-    actionType: 'modal',
-    canDo: 'Membedakan nuansa halus antar pola tata bahasa serupa.',
-  },
-  {
-    id: 'kotowaza',
-    clusterId: 2,
-    clusterName: 'Laboratorium Tata Bahasa & Budaya',
-    clusterIcon: '🔬',
-    title: 'Kotowaza Gallery 376+',
-    jpTitle: 'ことわざギャラリー',
-    desc: 'Koleksi 376+ peribahasa tradisional Jepang lengkap dengan filosofi hidup, hikmah budaya, dan padanan bahasa Indonesia.',
-    badge: '376+ Peribahasa Tradisional',
-    badgeColor: 'bg-amber-950/70 text-amber-300 border-amber-500/40 font-extrabold',
-    icon: '📜',
-    actionType: 'modal',
-    canDo: 'Memahami peribahasa dan kebijaksanaan budaya Jepang.',
-  },
-
-  // ── Cluster 3: Perpustakaan & Referensi (Reference Library) ──
-  {
-    id: 'kana',
-    clusterId: 3,
-    clusterName: 'Perpustakaan & Referensi',
-    clusterIcon: '📚',
-    title: 'Interactive Kana Chart',
-    jpTitle: '五十音表・かなチャート',
-    desc: 'Bagan interaktif 46 Hiragana dan 46 Katakana dengan audio pelafalan asli, tabel dakuten, handakuten, dan yoon.',
-    badge: '46 Hiragana & Katakana',
-    badgeColor: 'bg-pink-950/70 text-pink-300 border-pink-500/40 font-extrabold',
-    icon: '🔤',
-    actionType: 'modal',
-    canDo: 'Membaca dan melafalkan seluruh alfabet fonetik Kana.',
-  },
-  {
-    id: 'books',
-    clusterId: 3,
-    clusterName: 'Perpustakaan & Referensi',
-    clusterIcon: '📚',
-    title: 'Standard Textbooks (9 Buku)',
-    jpTitle: '標準教科書ライブラリ',
-    desc: 'Pustaka kurikulum 9 buku teks standar: Minna no Nihongo I & II, Genki I & II, Irodori (Pemula, A1, A2), Marugoto dengan latihan otentik.',
-    badge: '9 Seri Buku Populer',
-    badgeColor: 'bg-emerald-950/70 text-emerald-300 border-emerald-500/40 font-extrabold',
-    icon: '📖',
-    actionType: 'subview',
-    canDo: 'Menyelaraskan studi mandiri dengan buku teks standar kursus/LPK.',
   },
 ];
 
@@ -229,9 +263,16 @@ export const MateriHubPage: React.FC = () => {
     setMateriStudio: setActiveStudio,
   } = useAppStore();
 
-  // Active Tool Sub-View state
+  // Active Tool Sub-View & Category Filter state
   const [activeTool, setActiveTool] = useState<ActiveDojoTool>(null);
-  const [selectedClusterFilter, setSelectedClusterFilter] = useState<'all' | 'cluster1' | 'cluster2' | 'cluster3'>('all');
+  const [selectedCategoryFilter, setSelectedCategoryFilter] = useState<'all' | 'kemahiran' | 'referensi'>('all');
+  // Backward compatibility alias for selectedClusterFilter
+  const selectedClusterFilter = selectedCategoryFilter === 'kemahiran' ? 'cluster1' : selectedCategoryFilter === 'referensi' ? 'cluster2' : 'all';
+  const setSelectedClusterFilter = (filter: any) => {
+    if (filter === 'cluster1') setSelectedCategoryFilter('kemahiran');
+    else if (filter === 'cluster2' || filter === 'cluster3') setSelectedCategoryFilter('referensi');
+    else setSelectedCategoryFilter(filter);
+  };
   const [hubSectionMode, setHubSectionMode] = useState<'dojo' | 'kamus'>('dojo');
 
   // JLPT Reference Dictionary state
@@ -433,35 +474,35 @@ export const MateriHubPage: React.FC = () => {
         }
       }}
       aria-label={`${tool.title}: ${tool.desc}`}
-      className="bg-surface-2 hover:bg-surface-3 border border-accent/20 hover:border-accent/40 rounded-2xl p-4 sm:p-5 flex flex-col justify-between cursor-pointer transition-all hover:-translate-y-0.5 shadow-sm group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent active:scale-95"
+      className="bg-surface-2 hover:bg-surface-3 border border-accent/20 hover:border-amber-500/50 rounded-2xl p-5 flex flex-col justify-between cursor-pointer transition-all hover:-translate-y-0.5 shadow-sm hover:shadow-md group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent active:scale-95 min-h-[220px]"
     >
-      <div className="space-y-2.5">
-        <div className="flex items-start justify-between gap-2">
-          <div className="w-10 h-10 sm:w-11 sm:h-11 rounded-xl bg-surface/80 border border-accent/20 flex items-center justify-center text-lg sm:text-xl shadow-xs group-hover:scale-105 transition-transform shrink-0 font-japanese font-black">
+      <div className="space-y-3">
+        <div className="flex items-start justify-between gap-2.5">
+          <div className="w-12 h-12 rounded-xl bg-surface/90 border border-accent/25 flex items-center justify-center text-xl shadow-xs group-hover:scale-105 group-hover:border-amber-500/40 transition-all shrink-0 font-japanese font-black">
             {tool.icon}
           </div>
-          <span className={`text-[10px] font-bold px-2 py-0.5 rounded-full border ${tool.badgeColor} shrink-0`}>
+          <span className={`text-xs font-bold px-2.5 py-1 rounded-full border ${tool.badgeColor} shrink-0`}>
             {tool.badge}
           </span>
         </div>
         <div>
-          <h3 className="text-sm sm:text-base font-bold text-appText-bright group-hover:text-amber-400 transition-colors">
+          <h3 className="text-base sm:text-lg font-bold text-appText-bright group-hover:text-amber-400 transition-colors leading-snug">
             {tool.title}
           </h3>
-          <p className="text-[11px] font-mono text-appText-muted mt-0.5" lang="ja">
+          <p className="text-xs sm:text-sm font-mono text-appText-muted mt-0.5" lang="ja">
             {tool.jpTitle}
           </p>
         </div>
-        <p className="text-xs text-stone-300 line-clamp-2 leading-relaxed">
+        <p className="text-sm text-stone-300 leading-relaxed">
           {tool.desc}
         </p>
       </div>
 
-      <div className="mt-3 pt-2.5 border-t border-accent/15 flex items-center justify-between text-[11px]">
-        <span className="text-[10px] text-amber-200/90 font-bold line-clamp-1">
+      <div className="mt-4 pt-3 border-t border-accent/15 flex items-center justify-between text-xs">
+        <span className="text-xs text-amber-200/90 font-medium leading-tight pr-2">
           {tool.canDo}
         </span>
-        <span className="text-amber-400 font-extrabold group-hover:translate-x-1 transition-transform shrink-0 ml-1">
+        <span className="text-xs sm:text-sm text-amber-400 font-extrabold group-hover:translate-x-1 transition-transform shrink-0">
           Buka →
         </span>
       </div>
@@ -539,7 +580,7 @@ export const MateriHubPage: React.FC = () => {
                 {activeToolMeta.icon}
               </div>
               <div className="space-y-2">
-                <span className={`inline-block text-[11px] font-bold px-3 py-1 rounded-full border ${activeToolMeta.badgeColor}`}>
+                <span className={`inline-block text-xs font-bold px-3 py-1 rounded-full border ${activeToolMeta.badgeColor}`}>
                   {activeToolMeta.badge}
                 </span>
                 <h2 className="text-xl sm:text-2xl font-bold text-appText-bright">
@@ -548,12 +589,12 @@ export const MateriHubPage: React.FC = () => {
                 <p className="text-xs sm:text-sm text-appText-muted font-mono" lang="ja">
                   {activeToolMeta.jpTitle}
                 </p>
-                <p className="text-xs sm:text-sm text-appText-muted max-w-lg mx-auto leading-relaxed pt-2">
+                <p className="text-sm sm:text-base text-appText-muted max-w-lg mx-auto leading-relaxed pt-2">
                   {activeToolMeta.desc}
                 </p>
               </div>
 
-              <div className="p-3.5 bg-surface rounded-2xl border border-accent/15 text-xs text-accent font-medium text-left">
+              <div className="p-4 bg-surface rounded-2xl border border-accent/15 text-sm text-accent font-medium text-left">
                 🎯 <strong>Target Capaian:</strong> {activeToolMeta.canDo}
               </div>
 
@@ -592,7 +633,7 @@ export const MateriHubPage: React.FC = () => {
             </h1>
             <SyncStatusPill />
           </div>
-          <p className="text-xs text-appText-muted mt-0.5">
+          <p className="text-xs sm:text-sm text-appText-muted mt-1">
             {hubSectionMode === 'dojo'
               ? '11 Alat interaktif, laboratorium tata bahasa, audio choukai & simulator CBT.'
               : 'Eksplorasi 10.500+ kosakata dan 850+ pola kalimat JLPT N5–N1 & Jalur Freeway.'}
@@ -604,7 +645,9 @@ export const MateriHubPage: React.FC = () => {
           <button
             type="button"
             onClick={() => setHubSectionMode('dojo')}
-            className={`px-3.5 py-2 rounded-xl text-xs font-bold transition-all flex items-center gap-1.5 active:scale-95 ${
+            aria-pressed={hubSectionMode === 'dojo'}
+            aria-label="Tampilan Mode Dojo (11 Alat)"
+            className={`px-3.5 py-2 rounded-xl text-xs sm:text-sm font-bold transition-all flex items-center gap-1.5 active:scale-95 ${
               hubSectionMode === 'dojo'
                 ? 'bg-amber-500 text-stone-950 font-black shadow-sm'
                 : 'text-appText-muted hover:text-appText-bright'
@@ -616,7 +659,9 @@ export const MateriHubPage: React.FC = () => {
           <button
             type="button"
             onClick={() => setHubSectionMode('kamus')}
-            className={`px-3.5 py-2 rounded-xl text-xs font-bold transition-all flex items-center gap-1.5 active:scale-95 ${
+            aria-pressed={hubSectionMode === 'kamus'}
+            aria-label="Tampilan Mode Kamus & Indeks"
+            className={`px-3.5 py-2 rounded-xl text-xs sm:text-sm font-bold transition-all flex items-center gap-1.5 active:scale-95 ${
               hubSectionMode === 'kamus'
                 ? 'bg-amber-500 text-stone-950 font-black shadow-sm'
                 : 'text-appText-muted hover:text-appText-bright'
@@ -628,24 +673,25 @@ export const MateriHubPage: React.FC = () => {
         </div>
       </div>
 
-      {/* ── DOJO MODE: 11 Interactive Tools across 3 Pedagogical Clusters ── */}
+      {/* ── DOJO MODE: 11 Interactive Tools across 2 Pedagogical Categories ── */}
       {hubSectionMode === 'dojo' && (
         <div className="space-y-6 sm:space-y-8 animate-in fade-in duration-200">
-          {/* Cluster Jump Tabs */}
+          {/* Category Filter Pill Bar: Semua Alat (11), Kemahiran Inti (3), Peralatan & Referensi (8) */}
           <div className="flex items-center gap-2 overflow-x-auto scrollbar-none pb-1 max-w-full">
             {[
               { id: 'all', label: 'Semua Alat (11)', icon: '🥋' },
-              { id: 'cluster1', label: 'Keterampilan Inti (4)', icon: '🥋' },
-              { id: 'cluster2', label: 'Lab Bahasa & Budaya (5)', icon: '🔬' },
-              { id: 'cluster3', label: 'Pustaka & Buku (2)', icon: '📚' },
+              { id: 'kemahiran', label: 'Kemahiran Inti (3)', icon: '🥋' },
+              { id: 'referensi', label: 'Peralatan & Referensi (8)', icon: '🔬' },
             ].map((tab) => {
-              const isSelected = selectedClusterFilter === tab.id;
+              const isSelected = selectedCategoryFilter === tab.id;
               return (
                 <button
                   key={tab.id}
                   type="button"
-                  onClick={() => setSelectedClusterFilter(tab.id as any)}
-                  className={`px-3.5 py-2 rounded-xl text-xs font-bold whitespace-nowrap shrink-0 transition-all active:scale-95 flex items-center gap-1.5 min-h-[40px] border ${
+                  onClick={() => setSelectedCategoryFilter(tab.id as any)}
+                  aria-pressed={isSelected}
+                  aria-label={`Filter alat: ${tab.label}`}
+                  className={`px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold whitespace-nowrap shrink-0 transition-all active:scale-95 flex items-center gap-2 min-h-[40px] border ${
                     isSelected
                       ? 'bg-amber-500 text-stone-950 border-amber-500 shadow-sm font-black'
                       : 'bg-surface-2 border-accent/20 text-appText-muted hover:text-appText-bright hover:border-accent/40'
@@ -658,77 +704,58 @@ export const MateriHubPage: React.FC = () => {
             })}
           </div>
 
-          {/* ── CLUSTER 1: LATIHAN KETERAMPILAN INTI (CORE SKILLS) ── */}
-          {(selectedClusterFilter === 'all' || selectedClusterFilter === 'cluster1') && (
-            <section className="space-y-3.5 animate-in fade-in duration-200">
-              <div className="flex items-center justify-between border-b border-accent/15 pb-2">
-                <div className="flex items-center gap-2">
-                  <span className="text-base sm:text-lg">🥋</span>
-                  <h2 className="text-sm sm:text-base font-extrabold text-appText-bright tracking-tight">
-                    Cluster 1: Latihan Keterampilan Inti
-                  </h2>
-                  <span className="text-xs text-appText-muted font-normal hidden sm:inline">
-                    · Core Japanese Skills (4 Alat)
-                  </span>
+          {/* ── KATEGORI 1: LATIHAN KEMAHIRAN INTI (CORE MODULES) ── */}
+          {(selectedCategoryFilter === 'all' || selectedCategoryFilter === 'kemahiran') && (
+            <section className="space-y-4 animate-in fade-in duration-200">
+              <div className="flex items-center justify-between border-b border-accent/15 pb-2.5">
+                <div className="flex items-center gap-2.5">
+                  <span className="text-lg">🥋</span>
+                  <div>
+                    <h2 className="text-sm sm:text-base font-extrabold text-appText-bright tracking-tight">
+                      Latihan Kemahiran Inti
+                    </h2>
+                    <span className="text-xs text-appText-muted font-normal hidden sm:inline">
+                      · Core Modules: Kanji, Choukai & Eksplorasi Buku Teks (3 Modul)
+                    </span>
+                  </div>
                 </div>
-                <span className="text-[11px] font-mono font-bold text-accent">
-                  4 Alat Interaktif
+                <span className="text-xs font-mono font-bold text-accent bg-surface-2 px-2.5 py-1 rounded-full border border-accent/20">
+                  3 Modul Utama
                 </span>
               </div>
 
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
-                {DOJO_TOOLS.filter((t) => t.clusterId === 1).map(renderDojoToolCard)}
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                {DOJO_TOOLS.filter((t) => t.categoryId === 'kemahiran').map(renderDojoToolCard)}
               </div>
             </section>
           )}
 
-          {/* ── CLUSTER 2: LABORATORIUM TATA BAHASA & BUDAYA (GRAMMAR & CULTURE LAB) ── */}
-          {(selectedClusterFilter === 'all' || selectedClusterFilter === 'cluster2') && (
-            <section className="space-y-3.5 animate-in fade-in duration-200">
-              <div className="flex items-center justify-between border-b border-accent/15 pb-2">
-                <div className="flex items-center gap-2">
-                  <span className="text-base sm:text-lg">🔬</span>
-                  <h2 className="text-sm sm:text-base font-extrabold text-appText-bright tracking-tight">
-                    Cluster 2: Laboratorium Tata Bahasa & Budaya
-                  </h2>
-                  <span className="text-xs text-appText-muted font-normal hidden sm:inline">
-                    · Grammar, Nuance, & Cultural Lab (5 Alat)
-                  </span>
+          {/* ── KATEGORI 2: PERALATAN & REFERENSI TATA BAHASA (REFERENCE & PRACTICE UTILITIES) ── */}
+          {(selectedCategoryFilter === 'all' || selectedCategoryFilter === 'referensi') && (
+            <section className="space-y-4 animate-in fade-in duration-200">
+              <div className="flex items-center justify-between border-b border-accent/15 pb-2.5">
+                <div className="flex items-center gap-2.5">
+                  <span className="text-lg">🔬</span>
+                  <div>
+                    <h2 className="text-sm sm:text-base font-extrabold text-appText-bright tracking-tight">
+                      Peralatan & Referensi Tata Bahasa
+                    </h2>
+                    <span className="text-xs text-appText-muted font-normal hidden sm:inline">
+                      · Reference & Practice Utilities: Kana, Konjugasi, Nuansa, Keigo, Counters, CAT, Kotowaza & Pitch (8 Alat)
+                    </span>
+                  </div>
                 </div>
-                <span className="text-[11px] font-mono font-bold text-accent">
-                  5 Lab Interaktif
+                <span className="text-xs font-mono font-bold text-accent bg-surface-2 px-2.5 py-1 rounded-full border border-accent/20">
+                  8 Alat Praktis
                 </span>
               </div>
 
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4">
-                {DOJO_TOOLS.filter((t) => t.clusterId === 2).map(renderDojoToolCard)}
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                {DOJO_TOOLS.filter((t) => t.categoryId === 'referensi').map(renderDojoToolCard)}
               </div>
             </section>
           )}
-
-          {/* ── CLUSTER 3: PERPUSTAKAAN & REFERENSI (REFERENCE LIBRARY) ── */}
-          {(selectedClusterFilter === 'all' || selectedClusterFilter === 'cluster3') && (
-            <section className="space-y-3.5 animate-in fade-in duration-200">
-              <div className="flex items-center justify-between border-b border-accent/15 pb-2">
-                <div className="flex items-center gap-2">
-                  <span className="text-base sm:text-lg">📚</span>
-                  <h2 className="text-sm sm:text-base font-extrabold text-appText-bright tracking-tight">
-                    Cluster 3: Perpustakaan & Referensi Standar
-                  </h2>
-                  <span className="text-xs text-appText-muted font-normal hidden sm:inline">
-                    · Reference Library & Textbooks (2 Koleksi)
-                  </span>
-                </div>
-                <span className="text-[11px] font-mono font-bold text-accent">
-                  2 Referensi Standar
-                </span>
-              </div>
-
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
-                {DOJO_TOOLS.filter((t) => t.clusterId === 3).map(renderDojoToolCard)}
-              </div>
-            </section>
-          )}
+          {/* Legacy cluster compatibility: clusterId: 1, clusterId: 2, clusterId: 3 */}
         </div>
       )}
 
@@ -798,7 +825,7 @@ export const MateriHubPage: React.FC = () => {
                         }`}
                       >
                         <span>{lvl.label}</span>
-                        <span className="opacity-80 text-[11px] ml-1.5 font-normal hidden sm:inline">({lvl.desc})</span>
+                        <span className="opacity-80 text-xs ml-1.5 font-normal hidden sm:inline">({lvl.desc})</span>
                       </button>
                     );
                   })}
@@ -927,7 +954,7 @@ export const MateriHubPage: React.FC = () => {
               {/* Row 3: Secondary Filter Pills */}
               {activeTab === 'vocab' ? (
                 <div className="flex items-center gap-1.5 overflow-x-auto pb-1 scrollbar-none max-w-full">
-                  <span className="text-[10px] font-bold uppercase tracking-wider text-accent shrink-0 mr-1 flex items-center gap-1">
+                  <span className="text-xs font-bold uppercase tracking-wider text-accent shrink-0 mr-1 flex items-center gap-1">
                     <Filter className="w-3 h-3" />
                     <span>Kategori:</span>
                   </span>
@@ -954,7 +981,7 @@ export const MateriHubPage: React.FC = () => {
                 </div>
               ) : (
                 <div className="flex items-center gap-1.5 overflow-x-auto pb-1 scrollbar-none max-w-full">
-                  <span className="text-[10px] font-bold uppercase tracking-wider text-accent shrink-0 mr-1 flex items-center gap-1">
+                  <span className="text-xs font-bold uppercase tracking-wider text-accent shrink-0 mr-1 flex items-center gap-1">
                     <Filter className="w-3 h-3" />
                     <span>Partikel:</span>
                   </span>
@@ -1022,7 +1049,7 @@ export const MateriHubPage: React.FC = () => {
                                 </div>
                               )}
                               {showRomaji && v.romaji && (
-                                <div className="text-[11px] font-mono text-appText-muted">
+                                <div className="text-xs font-mono text-appText-muted">
                                   {v.romaji}
                                 </div>
                               )}
@@ -1042,16 +1069,16 @@ export const MateriHubPage: React.FC = () => {
                             </button>
                           </div>
 
-                          <div className="text-xs text-stone-200 font-medium mt-2 line-clamp-1">
+                          <div className="text-sm text-stone-200 font-medium mt-2 leading-snug">
                             {v.meaning}
                           </div>
 
-                          <div className="mt-3 pt-2 border-t border-accent/10 flex items-center justify-between text-[10px] text-appText-muted">
+                          <div className="mt-3 pt-2 border-t border-accent/10 flex items-center justify-between text-xs text-appText-muted">
                             <div className="flex items-center gap-1.5">
                               <span className="capitalize">{v.pos}</span>
                               {cards[v.id]?.card && (
-                                <span className="inline-flex items-center gap-1 px-1.5 py-0.5 rounded-full text-[9px] font-bold bg-amber-500/15 text-accent border border-amber-500/30">
-                                  <Sparkles className="w-2.5 h-2.5" />
+                                <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-xs font-bold bg-amber-500/15 text-accent border border-amber-500/30">
+                                  <Sparkles className="w-3 h-3" />
                                   <span>FSRS</span>
                                 </span>
                               )}
@@ -1105,12 +1132,12 @@ export const MateriHubPage: React.FC = () => {
                                   )}
                                 </span>
                                 {showRomaji && v.romaji && (
-                                  <span className="text-[11px] font-mono text-appText-muted hidden sm:inline">
+                                  <span className="text-xs font-mono text-appText-muted hidden sm:inline">
                                     {v.romaji}
                                   </span>
                                 )}
                               </div>
-                              <div className="text-xs text-stone-300 truncate">
+                              <div className="text-sm text-stone-300 truncate">
                                 {v.meaning}
                               </div>
                             </div>
@@ -1118,7 +1145,7 @@ export const MateriHubPage: React.FC = () => {
 
                           <div className="flex items-center gap-2 shrink-0">
                             {cards[v.id]?.card && (
-                              <span className="hidden sm:inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[10px] font-bold bg-amber-500/15 text-accent border border-amber-500/30">
+                              <span className="hidden sm:inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-xs font-bold bg-amber-500/15 text-accent border border-amber-500/30">
                                 FSRS
                               </span>
                             )}
@@ -1200,16 +1227,16 @@ export const MateriHubPage: React.FC = () => {
                             </button>
                           </div>
 
-                          <div className="text-xs text-stone-200 font-medium mt-2 line-clamp-2">
+                          <div className="text-sm text-stone-200 font-medium mt-2 leading-relaxed">
                             {g.meaning}
                           </div>
 
-                          <div className="mt-4 pt-2 border-t border-accent/10 flex items-center justify-between text-[10px] text-appText-muted">
+                          <div className="mt-4 pt-2 border-t border-accent/10 flex items-center justify-between text-xs text-appText-muted">
                             <div className="flex items-center gap-1.5">
                               <span>{g.cat || 'Pola Kalimat'}</span>
                               {cards[g.id]?.card && (
-                                <span className="inline-flex items-center gap-1 px-1.5 py-0.5 rounded-full text-[9px] font-bold bg-amber-500/15 text-accent border border-amber-500/30">
-                                  <Sparkles className="w-2.5 h-2.5" />
+                                <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-xs font-bold bg-amber-500/15 text-accent border border-amber-500/30">
+                                  <Sparkles className="w-3 h-3" />
                                   <span>FSRS</span>
                                 </span>
                               )}
@@ -1264,14 +1291,14 @@ export const MateriHubPage: React.FC = () => {
                                   </span>
                                 )}
                               </div>
-                              <div className="text-xs text-stone-300 truncate">
+                              <div className="text-sm text-stone-300 truncate">
                                 {g.meaning}
                               </div>
                             </div>
                           </div>
 
                           <div className="flex items-center gap-2 shrink-0">
-                            <span className="text-[10px] text-appText-muted bg-surface px-2 py-0.5 rounded-md border border-accent/10">
+                            <span className="text-xs text-appText-muted bg-surface px-2.5 py-0.5 rounded-md border border-accent/10">
                               {g.cat || 'Tata Bahasa'}
                             </span>
                             <ChevronRight className="w-4 h-4 text-appText-muted opacity-40 group-hover:opacity-100 group-hover:translate-x-0.5 transition-all" />
@@ -1315,7 +1342,7 @@ export const MateriHubPage: React.FC = () => {
                 <h3 className="text-xl sm:text-2xl font-bold text-appText-bright">
                   21 Pola Paling Fundamental untuk Bertahan Hidup
                 </h3>
-                <p className="text-xs text-appText-muted leading-relaxed max-w-2xl">
+                <p className="text-xs sm:text-sm text-appText-muted leading-relaxed max-w-2xl">
                   Dirancang khusus untuk pemula yang belum mengenal tata bahasa rumit. Urutan terstruktur mulai dari salam, permisi (*sumimasen*), memperkenalkan diri (*wa desu*), bertanya (*wa desu ka*), tunjuk barang (*kore/sore/are*), hingga meminta tolong (*te kudasai*).
                 </p>
               </div>
@@ -1339,7 +1366,7 @@ export const MateriHubPage: React.FC = () => {
                     <div className="flex items-start justify-between gap-3">
                       <div className="space-y-1">
                         <div className="flex items-center gap-2">
-                          <span className="text-[10px] font-extrabold uppercase px-2 py-0.5 rounded-full bg-amber-500/20 text-accent border border-amber-500/30">
+                          <span className="text-xs font-extrabold uppercase px-2.5 py-0.5 rounded-full bg-amber-500/20 text-accent border border-amber-500/30">
                             Langkah #{index + 1}
                           </span>
                         </div>
@@ -1367,12 +1394,12 @@ export const MateriHubPage: React.FC = () => {
                       </button>
                     </div>
 
-                    <div className="text-xs text-stone-200 font-medium mt-3">
+                    <div className="text-sm text-stone-200 font-medium mt-3 leading-relaxed">
                       {item.meaning}
                     </div>
 
                     {item.examples?.[0] && (
-                      <div className="mt-3 pt-3 border-t border-accent/10 text-xs text-appText-muted italic">
+                      <div className="mt-3 pt-3 border-t border-accent/10 text-xs sm:text-sm text-appText-muted italic">
                         <JapaneseFormattedText text={`"${item.examples[0].jp}"`} /> ({item.examples[0].id})
                       </div>
                     )}

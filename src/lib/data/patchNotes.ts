@@ -18,6 +18,67 @@ export interface PatchNote {
 
 export const PATCH_NOTES_HISTORY: PatchNote[] = [
   {
+    version: 'v21.1.0',
+    releaseName: '5-Pass UI/UX Overhaul: Calm Executive Shell, Learner Identity Rapor, Home & Dojo Progressive Disclosure, and Streamlined Arena Kuis',
+    date: '2 November 2026',
+    type: 'minor',
+    friendlySummary: 'Pembaruan Nugget Nihongo v21.1.0 menghadirkan de-cluttering menyeluruh antarmuka aplikasi melalui 5 Pass Overhaul Halaman per Halaman: penyederhanaan navigasi global menjadi 4 jangkar tenang dan sheet aksi cepat, evolusi halaman Profil menjadi Pusat Rapor Pembelajar dengan avatar budaya & target harian, perombakan beranda ramah visual tanpa micro-font, kurasi 11 perkakas MateriHub ke dalam 2 klaster Dojo tenang, serta penataan Arena Kuis menjadi 9 mode terarah dalam 3 tab tematik dan kartu Rekomendasi Hari Ini.',
+    highlights: [
+      'Pass 1 — Calm Executive Shell & Quick Action Sheet: Reduksi navigasi global menjadi 4 jangkar inti (Beranda, Materi Hub, Arena Kuis, Sensei AI) dan sheet tindakan cepat ramah jempul.',
+      'Pass 2 — Pusat Rapor Pembelajar & Profil: Transformasi halaman Profil menjadi pusat identitas pembelajar Jepang dengan 8 avatar budaya, target XP harian fleksibel, dan visualisasi rapor penguasaan kurikulum.',
+      'Pass 3 — Beranda De-Cluttering & Purge Micro-Font: Restrukturisasi cockpit beranda bebas kedip, tombol utama berergonomi 48px, dan pembersihan total micro-font di bawah 12px demi kenyamanan visual.',
+      'Pass 4 — MateriHub Dojo & Pustaka Progressive Disclosure: Pengelompokan 11 alat ke dalam 2 klaster tenang (Latihan Kemahiran Inti vs Peralatan & Referensi) dengan estetika pernis Urushi hangat.',
+      'Pass 5 — Arena Kuis Streamlining & Enterprise Quality Gate: Kurasi 9 mode kuis ke dalam kartu hero Rekomendasi Hari Ini dan 3 tab tematik (Tantangan Cepat, Kosakata & Huruf, Tata Bahasa & Audio) serta anti-blowout pada layar 320px.',
+    ],
+    details: [
+      {
+        category: 'Pass 1 — Navigasi Global Tenang & Aksi Cepat',
+        items: [
+          'Penyederhanaan Header desktop menjadi 4 jangkar utama (Beranda, Materi, Kuis, Sensei) dengan indikator rute halus.',
+          'Pemberdayaan QuickAction Sheet bawah untuk akses kilat ke Kebun Kanji, Pencarian Kosakata, dan Rapor Profil.',
+          'Eliminasi kekacauan visual pada drawer seluler dan BottomNav dengan safe area cushion kalkulasi CSS.',
+        ],
+      },
+      {
+        category: 'Pass 2 — Pusat Rapor Pembelajar & Identitas Budaya',
+        items: [
+          'Pengenalan LearnerIdentityCard dengan pilihan 8 avatar budaya Jepang (Samurai, Ninja, Miko, Geisha, Sensei, Tanuki, Kitsune, Daruma).',
+          'Selector target XP harian adaptif (Santai 30 XP, Standar 60 XP, Intensif 100 XP, Ambisius 150 XP) dengan feedback visual langsung.',
+          'Visualisasi LearnerMasteryReport yang menyajikan progress riil kosakata, tata bahasa, kanji, dan akurasi kuis per level JLPT.',
+          'Showcase lencana pencapaian dengan filter kategori (Streak, Belajar, Kuis, Kebun).',
+        ],
+      },
+      {
+        category: 'Pass 3 — Beranda Top-to-Bottom De-Cluttering & Anti-Microfont',
+        items: [
+          'Cockpit beranda terstruktur dengan primary CTA minimum 48px berbalut shadow-glow dan feedback taktil active:scale-95.',
+          'Pembersihan menyeluruh seluruh micro-font (text-[8px] hingga text-[11px]) digantikan minimum text-xs (12px).',
+          'Eliminasi pemotongan teks agresif (line-clamp-2) pada kearifan peribahasa Kotowaza harian dan kartu Kotoba.',
+          'Optimalisasi kalender aktivitas heatmap 49 hari tanpa duplikasi kartu berlebih.',
+        ],
+      },
+      {
+        category: 'Pass 4 — MateriHub Dojo & Pustaka Progressive Disclosure',
+        items: [
+          'Kurasi 11 perkakas studi ke dalam 2 klaster logis: Latihan Kemahiran Inti (3 modul) dan Peralatan & Referensi (8 modul).',
+          'Filter segmen pill responsif dengan penghitung modul otomatis.',
+          'Estetika pernis Urushi tradisional Jepang dengan aksen hover border amber lembut tanpa noise warna pelangi.',
+          'Pembersihan micro-font pada seluruh kartu alat dan standarisasi can-do objective.',
+        ],
+      },
+      {
+        category: 'Pass 5 — Arena Kuis Streamlining & Quality Gate',
+        items: [
+          'Penataan 9 mode kuis unggulan ke dalam kartu hero Rekomendasi Hari Ini dan 3 tab tematik (Tantangan Cepat, Kosakata & Huruf, Tata Bahasa & Audio).',
+          'Progressive disclosure untuk 7 mode spesialis gemba & tata bahasa lanjutan.',
+          'Pembersihan total micro-font di seluruh subsystem kuis (QuizPage, QuizArenaHub, QuizResultView, ExitGuard, PanicRecall, MoraPacing).',
+          'Pencegahan blowout layout kartu susun kata acak (Rearrange) pada layar ultra-kompak 320px–375px.',
+          'Penyempurnaan QuizExitGuardModal dengan auto-focus tombol aman dan penanganan tombol Escape.',
+        ],
+      },
+    ],
+  },
+  {
     version: 'v21.0.0',
     releaseName: '5-Pass Enterprise Architecture Overhaul: Design Tokens, Modal Lifecycle, Sensei AI W3C Ruby, BYOK Security & Performance Budget',
     date: '1 November 2026',

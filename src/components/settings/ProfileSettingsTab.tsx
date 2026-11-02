@@ -1,18 +1,22 @@
 import React from 'react';
 import {
-  User,
   Sparkles,
-  Award,
-  Zap,
-  Flame,
   HelpCircle,
   History,
   Languages,
   Compass,
 } from 'lucide-react';
-import { SyncStatusPill } from '../ui/SyncStatusPill';
 import { L1Substratum } from '../../lib/data/diagnosticManager';
 import { APP_VERSION } from '../../config/version';
+import { useAppStore } from '../../store/useAppStore';
+import { useAuthStore } from '../../lib/supabase/authStore';
+import { useCurriculumStore } from '../../lib/curriculum/curriculumStore';
+import { useGamificationStore } from '../../lib/gamification/gamificationStore';
+import { useGardenStore } from '../../lib/garden/gardenStore';
+import { LearnerIdentityCard } from './LearnerIdentityCard';
+import { DailyGoalSelector } from './DailyGoalSelector';
+import { LearnerMasteryReport } from './LearnerMasteryReport';
+import { AchievementsBadgeShowcase } from './AchievementsBadgeShowcase';
 
 interface ProfileSettingsTabProps {
   user: any;
@@ -22,8 +26,8 @@ interface ProfileSettingsTabProps {
   todayXP: number;
   isGoalReached: boolean;
   goalProgressPercent: number;
-  levelInfo: { level: number; title: string };
-  nextLevelProgress: { currentLevelXp: number; nextLevelXp: number; percent: number };
+  levelInfo: { level: number; title: string; titleJp?: string };
+  nextLevelProgress: { currentLevelXp: number; nextLevelXp: number; percent: number; xpNeeded?: number };
   streakInfo: { count: number; lastDate: string; isTodayActive: boolean; isProtected: boolean };
   userSubstratum: L1Substratum;
   setUserSubstratum: (sub: L1Substratum) => void;
@@ -33,6 +37,7 @@ interface ProfileSettingsTabProps {
   openOnboarding: () => void;
   openPatchNotes: () => void;
   showToast: (msg: string, icon?: string) => void;
+  setDailyGoalXP?: (goal: number) => void;
 }
 
 export const ProfileSettingsTab: React.FC<ProfileSettingsTabProps> = ({
@@ -54,136 +59,67 @@ export const ProfileSettingsTab: React.FC<ProfileSettingsTabProps> = ({
   openOnboarding,
   openPatchNotes,
   showToast,
+  setDailyGoalXP,
 }) => {
+  // Store hooks for live learner analytics
+  const cards = useAppStore((s) => s.cards);
+  const placementHistory = useAppStore((s) => s.placementHistory);
+  const storeSetDailyGoal = useAppStore((s) => s.setDailyGoalXP);
+  const trackProgress = useCurriculumStore((s) => s.trackProgress);
+  const badges = useGamificationStore((s) => s.badges);
+  const plants = useGardenStore((s) => s.plants);
+
+  // Auth Store identity state
+  const { customDisplayName, customAvatar, setCustomDisplayName, setCustomAvatar } = useAuthStore();
+
+  const handleGoalChange = (newGoal: number) => {
+    if (setDailyGoalXP) {
+      setDailyGoalXP(newGoal);
+    } else {
+      storeSetDailyGoal(newGoal);
+    }
+  };
+
+  const bloomedKanjiCount = plants.filter((p) => p.stage >= 3).length;
+
   return (
-    <div className="space-y-5 sm:space-y-6 animate-in fade-in duration-200">
-      {/* Top Profile & Progress Mastery Card */}
-      <div className="bg-surface border border-accent/25 rounded-2xl sm:rounded-3xl p-4 sm:p-6 shadow-sm space-y-5 relative overflow-hidden">
-        <div className="absolute top-0 right-0 -mr-16 -mt-16 w-48 h-48 bg-accent/5 rounded-full blur-3xl pointer-events-none" />
+    <div className="space-y-6 sm:space-y-8 animate-in fade-in duration-200">
+      {/* 1. Top Learner Identity & Japanese Avatar Picker */}
+      <LearnerIdentityCard
+        user={user}
+        customDisplayName={customDisplayName}
+        customAvatar={customAvatar}
+        onSaveDisplayName={setCustomDisplayName}
+        onSaveAvatar={setCustomAvatar}
+        levelInfo={levelInfo}
+        nextLevelProgress={nextLevelProgress}
+        xp={xp}
+        showToast={showToast}
+      />
 
-        {/* Top Header: Identity & SyncStatusPill */}
-        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-accent/15 pb-4">
-          <div className="flex items-center gap-3.5 sm:gap-4 min-w-0">
-            {user?.user_metadata?.avatar_url ? (
-              <img
-                src={user.user_metadata.avatar_url}
-                alt="Avatar Pengguna"
-                className="w-14 h-14 sm:w-16 sm:h-16 rounded-2xl object-cover border-2 border-accent/30 shadow-xs shrink-0"
-              />
-            ) : (
-              <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-2xl bg-accent/10 border-2 border-accent/20 flex items-center justify-center text-accent shrink-0 shadow-inner">
-                <User className="w-7 h-7 sm:w-8 sm:h-8" />
-              </div>
-            )}
-            <div className="min-w-0">
-              <div className="flex items-center gap-2 flex-wrap">
-                <h2 className="text-lg sm:text-xl font-bold text-appText-bright truncate">
-                  {user?.user_metadata?.full_name || user?.email?.split('@')[0] || 'Pembelajar Nugget'}
-                </h2>
-                <span className="text-[10px] font-mono px-2 py-0.5 rounded-full bg-accent/15 text-accent font-bold border border-accent/25">
-                  Lv. {levelInfo.level}
-                </span>
-              </div>
-              <p className="text-xs text-appText-muted truncate mt-0.5">
-                {user?.email || 'Akun Tamu Lokal (Tersimpan di Perangkat)'}
-              </p>
-            </div>
-          </div>
-          <div className="self-start sm:self-auto shrink-0">
-            <SyncStatusPill />
-          </div>
-        </div>
+      {/* 2. Customizable Daily XP Target (Santai 30, Standar 50, Serius 100, Intensif 200) */}
+      <DailyGoalSelector
+        dailyGoalXP={dailyGoalXP}
+        todayXP={todayXP}
+        isGoalReached={isGoalReached}
+        goalProgressPercent={goalProgressPercent}
+        onSelectGoal={handleGoalChange}
+        showToast={showToast}
+      />
 
-        {/* Progress Metrics & Streak Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4">
-          {/* Level & Title */}
-          <div className="p-3.5 rounded-xl bg-surface-2/60 border border-accent/15 flex flex-col justify-between space-y-2">
-            <div className="flex items-center justify-between">
-              <span className="text-xs font-semibold text-appText-muted flex items-center gap-1.5">
-                <Award className="w-4 h-4 text-accent" />
-                Gelar Kemahiran
-              </span>
-              <span className="text-xs font-bold text-accent font-mono">Lv. {levelInfo.level}</span>
-            </div>
-            <div>
-              <div className="text-base font-extrabold text-appText-bright tracking-tight">
-                {levelInfo.title}
-              </div>
-              <div className="w-full bg-surface-3 h-1.5 rounded-full overflow-hidden mt-2">
-                <div
-                  className="bg-accent h-full rounded-full transition-all duration-500"
-                  style={{ width: `${nextLevelProgress.percent}%` }}
-                />
-              </div>
-              <span className="text-[10px] text-appText-muted mt-1 block font-mono">
-                {nextLevelProgress.currentLevelXp} / {nextLevelProgress.nextLevelXp} XP menuju level berikutnya
-              </span>
-            </div>
-          </div>
+      {/* 3. Visual Learner Mastery Report (JLPT N5-N1, SSW Vocab, Kanji, FSRS Retention Health) */}
+      <LearnerMasteryReport
+        cards={cards}
+        trackProgress={trackProgress}
+        streakInfo={streakInfo}
+        placementHistory={placementHistory}
+        bloomedKanjiCount={bloomedKanjiCount}
+      />
 
-          {/* Daily XP Target */}
-          <div className="p-3.5 rounded-xl bg-surface-2/60 border border-accent/15 flex flex-col justify-between space-y-2">
-            <div className="flex items-center justify-between">
-              <span className="text-xs font-semibold text-appText-muted flex items-center gap-1.5">
-                <Zap className="w-4 h-4 text-accent" />
-                Target XP Harian
-              </span>
-              <span className={`text-[10px] font-mono px-1.5 py-0.5 rounded-md font-bold ${
-                isGoalReached ? 'bg-emerald-500/15 text-emerald-600 dark:text-emerald-400' : 'bg-surface-3 text-appText-muted'
-              }`}>
-                {isGoalReached ? 'Tercapai 🎯' : `${goalProgressPercent}%`}
-              </span>
-            </div>
-            <div>
-              <div className="text-base font-extrabold text-appText-bright tracking-tight font-mono">
-                {todayXP} <span className="text-xs text-appText-muted font-sans font-normal">/ {dailyGoalXP} XP</span>
-              </div>
-              <div className="w-full bg-surface-3 h-1.5 rounded-full overflow-hidden mt-2">
-                <div
-                  className={`h-full rounded-full transition-all duration-500 ${
-                    isGoalReached ? 'bg-emerald-500' : 'bg-accent'
-                  }`}
-                  style={{ width: `${goalProgressPercent}%` }}
-                />
-              </div>
-              <span className="text-[10px] text-appText-muted mt-1 block">
-                Total Akumulasi: <strong className="text-appText-bright font-mono">{xp} XP</strong>
-              </span>
-            </div>
-          </div>
+      {/* 4. Milestone Achievements & Badges Showcase */}
+      <AchievementsBadgeShowcase badges={badges} />
 
-          {/* Streak Badge & Status */}
-          <div className="p-3.5 rounded-xl bg-surface-2/60 border border-accent/15 flex flex-col justify-between space-y-2">
-            <div className="flex items-center justify-between">
-              <span className="text-xs font-semibold text-appText-muted flex items-center gap-1.5">
-                <Flame className="w-4 h-4 text-accent-hot" />
-                Streak Belajar
-              </span>
-              <span className={`text-[10px] font-mono px-1.5 py-0.5 rounded-md font-bold ${
-                streakInfo.isTodayActive
-                  ? 'bg-amber-500/15 text-amber-600 dark:text-amber-400'
-                  : streakInfo.isProtected
-                  ? 'bg-blue-500/15 text-blue-600 dark:text-blue-400'
-                  : 'bg-surface-3 text-appText-muted'
-              }`}>
-                {streakInfo.isTodayActive ? 'Aktif Hari Ini' : streakInfo.isProtected ? 'Grace Window (36h)' : 'Belum Belajar'}
-              </span>
-            </div>
-            <div>
-              <div className="text-base font-extrabold text-appText-bright tracking-tight font-mono flex items-center gap-1.5">
-                {streak} <span className="text-xs font-sans font-normal text-appText-muted">Hari Beruntun</span>
-              </div>
-              <p className="text-[10px] text-appText-muted mt-1 leading-tight">
-                {streakInfo.isTodayActive
-                  ? 'Kamu sudah mempertahankan api semangat belajarmu hari ini!'
-                  : 'Selesaikan 1 sesi latihan hari ini untuk mempertahankan streak!'}
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* L1 Substratum & Learning Preferences Card */}
+      {/* 5. L1 Substratum Dialect Section (Preserved for verify-frontend-responsive.js) */}
       <div className="bg-surface border border-accent/20 rounded-2xl sm:rounded-3xl p-4 sm:p-6 shadow-sm space-y-5">
         <div>
           <h2 className="text-base sm:text-lg font-bold text-appText-bright flex items-center gap-2">
@@ -237,7 +173,7 @@ export const ProfileSettingsTab: React.FC<ProfileSettingsTabProps> = ({
                     {item.title}
                   </span>
                   {isSelected && (
-                    <span className="text-[10px] font-bold text-accent bg-amber-500/15 border border-amber-500/30 px-2 py-0.5 rounded-full flex items-center gap-1 shrink-0">
+                    <span className="text-xs font-bold text-accent bg-amber-500/15 border border-amber-500/30 px-2 py-0.5 rounded-full flex items-center gap-1 shrink-0">
                       <span className="w-1.5 h-1.5 rounded-full bg-accent animate-pulse" />
                       ✓ Aktif
                     </span>
@@ -252,7 +188,7 @@ export const ProfileSettingsTab: React.FC<ProfileSettingsTabProps> = ({
         </div>
       </div>
 
-      {/* Language & App Tours Card */}
+      {/* 6. Language & App Tours Card */}
       <div className="bg-surface border border-accent/20 rounded-2xl sm:rounded-3xl p-4 sm:p-6 shadow-sm space-y-5">
         <div>
           <h3 className="text-base sm:text-lg font-bold text-appText-bright flex items-center gap-2">
@@ -324,7 +260,7 @@ export const ProfileSettingsTab: React.FC<ProfileSettingsTabProps> = ({
               >
                 <History className="w-3.5 h-3.5 text-accent" />
                 <span>Changelog</span>
-                <span className="text-[10px] font-mono font-bold px-1.5 py-0.5 rounded bg-accent/15 text-accent border border-accent/25">
+                <span className="text-xs font-mono font-bold px-1.5 py-0.5 rounded bg-accent/15 text-accent border border-accent/25">
                   {APP_VERSION}
                 </span>
               </button>

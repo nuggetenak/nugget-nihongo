@@ -216,7 +216,7 @@ export const ProductionCardArchetypes: React.FC<ProductionCardArchetypeProps> = 
             {card.archetype.replace(/_/g, ' ')}
           </span>
           {card.isL1Trap && (
-            <span className="flex items-center gap-1 text-[11px] font-medium text-rose-400 bg-rose-500/10 px-2 py-0.5 rounded-full border border-rose-500/20">
+            <span className="flex items-center gap-1 text-xs font-medium text-rose-400 bg-rose-500/10 px-2 py-0.5 rounded-full border border-rose-500/20">
               <ShieldAlert className="w-3 h-3 shrink-0" />
               L1 Contrast Trap
             </span>

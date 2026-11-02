@@ -1,7 +1,8 @@
 // ══════════════════════════════════════════════════════════════════
 //  Header.tsx — Top Navigation Header & Active Track Switcher
 //  Includes 1-tap active track switcher ([🇯🇵 N5: Fondasi Dasar ▼]),
-//  universal search (⌘K), offline indicators, and sync status.
+//  universal search (⌘K), unified streak/XP, 1-tap profile avatar,
+//  and consolidated Quick Action Sheet for secondary utilities.
 // ══════════════════════════════════════════════════════════════════
 
 import React, { useState, useEffect, useRef } from 'react';
@@ -10,23 +11,18 @@ import {
   Search,
   Flame,
   Zap,
-  Download,
   User as UserIcon,
-  Compass,
   Menu,
-  Wrench,
   ChevronDown,
   X,
-  Check,
-  Briefcase,
-  BookOpen,
+  SlidersHorizontal,
 } from 'lucide-react';
 import { useAppStore } from '../../store/useAppStore';
-import { usePwaStore } from '../../lib/pwa/pwaStore';
 import { useAuthStore } from '../../lib/supabase/authStore';
 import { useCurriculumStore, TrackId } from '../../lib/curriculum/curriculumStore';
-import { OfflineStatusPill } from '../ui/OfflineStatusPill';
 import { SyncStatusIndicator } from '../sync/SyncStatusIndicator';
+import { QuickActionSheet } from './QuickActionSheet';
+import { useBodyScrollLock } from '../../hooks/useBodyScrollLock';
 
 interface HeaderProps {
   onOpenSearch?: () => void;
@@ -37,29 +33,25 @@ interface HeaderProps {
 
 export const Header: React.FC<HeaderProps> = ({
   onOpenSearch,
-  onOpenShortcuts,
   onOpenMobileDrawer,
   onOpenToolbox,
 }) => {
   const {
     streak,
     xp,
-    showFurigana,
-    setShowFurigana,
-    showRomaji,
-    setShowRomaji,
     showToast,
     openFeatureGuide,
     setActiveTab,
     openToolbox,
   } = useAppStore();
-  const { isInstalled, setShowInstallModal } = usePwaStore();
   const { user } = useAuthStore();
   const { activeTrackId, setActiveTrack, trackProgress } = useCurriculumStore();
 
   const [isTrackPickerOpen, setIsTrackPickerOpen] = useState(false);
+  const [isQuickActionsOpen, setIsQuickActionsOpen] = useState(false);
   const [pickerCategory, setPickerCategory] = useState<'jlpt' | 'ssw' | 'jft' | 'books'>('jlpt');
   const modalRef = useRef<HTMLDivElement>(null);
+  useBodyScrollLock(isTrackPickerOpen);
 
   // Close modal on Escape key
   useEffect(() => {
@@ -170,44 +162,46 @@ export const Header: React.FC<HeaderProps> = ({
   return (
     <header
       role="banner"
-      className="sticky top-0 z-30 bg-surface/95 backdrop-blur-md border-b border-accent/15 px-2.5 sm:px-5 lg:px-8 py-2 sm:py-2.5 flex items-center justify-between gap-2 sm:gap-3 max-w-full overflow-hidden"
+      className="sticky top-0 z-30 bg-surface/95 backdrop-blur-md border-b border-accent/15 px-2 sm:px-5 lg:px-8 py-2 sm:py-2.5 flex items-center justify-between gap-1 sm:gap-3 max-w-full overflow-hidden"
     >
-      {/* Left: Mobile brand & Menu Drawer Toggle */}
-      <div className="flex lg:hidden items-center gap-1 shrink-0">
+      {/* ── Anchor 1: Brand & Active Track Switcher (+ Mobile Drawer Trigger) ── */}
+      <div className="flex items-center gap-1 sm:gap-2 shrink-0">
         <button
           type="button"
           onClick={onOpenMobileDrawer}
-          className="min-w-[44px] min-h-[44px] p-2.5 rounded-xl bg-surface-2 hover:bg-surface-3 border border-accent/20 text-accent transition-all active:scale-95 flex items-center justify-center focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+          className="lg:hidden min-w-[44px] min-h-[44px] p-2.5 rounded-xl bg-surface-2 hover:bg-surface-3 border border-accent/20 text-accent transition-all active:scale-95 flex items-center justify-center focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
           title="Buka Menu Navigasi Lengkap"
           aria-label="Buka Menu Navigasi Lengkap"
         >
           <Menu className="w-5 h-5" />
         </button>
+
+        {/* Top Header Active Track Switcher Button */}
+        <button
+          type="button"
+          onClick={() => setIsTrackPickerOpen(true)}
+          aria-label={`Jalur aktif: ${currentTrack.full}. Klik untuk mengganti jalur belajar.`}
+          className="flex items-center gap-1 sm:gap-2 px-2 sm:px-3.5 py-1.5 rounded-xl bg-amber-500/15 hover:bg-amber-500/25 border border-amber-500/35 text-accent font-bold text-xs sm:text-sm transition-all shrink-0 active:scale-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent min-h-[40px] sm:min-h-[44px] shadow-sm"
+          title="Klik untuk memilih Jalur Belajar (JLPT N5-N1, SSW Tokutei Ginou, Buku Teks)"
+        >
+          <span className="text-base shrink-0">{currentTrack.flag}</span>
+          <span className="hidden sm:inline font-mono truncate max-w-[170px] lg:max-w-none text-xs sm:text-sm text-appText-bright">
+            {currentTrack.full}
+          </span>
+          <span className="sm:hidden font-mono text-xs font-extrabold text-appText-bright">
+            {currentTrack.short}
+          </span>
+          <ChevronDown className="w-3.5 h-3.5 sm:w-4 sm:h-4 opacity-75 shrink-0 text-accent" />
+        </button>
       </div>
 
-      {/* Feature F2: Top Header Active Track Switcher Button */}
-      <button
-        type="button"
-        onClick={() => setIsTrackPickerOpen(true)}
-        aria-label={`Jalur aktif: ${currentTrack.full}. Klik untuk mengganti jalur belajar.`}
-        className="flex items-center gap-1 sm:gap-1.5 px-2.5 sm:px-3 py-1.5 rounded-xl bg-amber-500/15 hover:bg-amber-500/25 border border-amber-500/30 text-accent font-bold text-xs transition-all shrink-0 active:scale-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent min-h-[40px] sm:min-h-[44px]"
-        title="Klik untuk memilih Jalur Belajar (JLPT N5-N1, SSW Tokutei Ginou, Buku Teks)"
-      >
-        <span className="text-sm shrink-0">{currentTrack.flag}</span>
-        <span className="hidden sm:inline font-mono truncate max-w-[170px] lg:max-w-none">
-          {currentTrack.full}
-        </span>
-        <span className="sm:hidden font-mono text-[11px] font-extrabold">{currentTrack.short}</span>
-        <ChevronDown className="w-3.5 h-3.5 opacity-70 shrink-0 text-accent" />
-      </button>
-
-      {/* Search Trigger: Compact Icon on Mobile, Full Bar on sm+ */}
-      <div className="flex-1 min-w-0 flex items-center justify-center sm:justify-start">
+      {/* ── Anchor 2: Universal Search Trigger ── */}
+      <div className="shrink-0 sm:flex-1 min-w-0 flex items-center justify-center sm:justify-start max-w-xs sm:max-w-sm">
         <button
           type="button"
           onClick={onOpenSearch}
           aria-label="Buka Pencarian Global (Tekan ⌘K)"
-          className="sm:hidden w-9 h-9 rounded-xl bg-surface-2 hover:bg-surface-3 border border-accent/20 text-appText-muted hover:text-accent flex items-center justify-center active:scale-95 transition-all"
+          className="sm:hidden min-w-[40px] min-h-[40px] p-2 rounded-xl bg-surface-2 hover:bg-surface-3 border border-accent/20 text-appText-muted hover:text-accent flex items-center justify-center active:scale-95 transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent shrink-0"
         >
           <Search className="w-4 h-4" />
         </button>
@@ -215,7 +209,7 @@ export const Header: React.FC<HeaderProps> = ({
           type="button"
           onClick={onOpenSearch}
           aria-label="Buka Pencarian Global (Tekan ⌘K)"
-          className="hidden sm:block flex-1 min-w-0 max-w-xs sm:max-w-sm relative cursor-pointer text-left rounded-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+          className="hidden sm:block w-full relative cursor-pointer text-left rounded-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent active:scale-98 transition-all"
         >
           <Search className="w-4 h-4 text-appText-muted absolute left-3 top-1/2 -translate-y-1/2 pointer-events-none" />
           <input
@@ -224,145 +218,86 @@ export const Header: React.FC<HeaderProps> = ({
             tabIndex={-1}
             placeholder="Cari materi... (⌘K)"
             aria-hidden="true"
-            className="w-full bg-surface-2 border border-accent/20 rounded-xl pl-9 pr-12 py-1.5 sm:py-2 text-xs sm:text-sm text-appText-bright placeholder-appText-muted/60 pointer-events-none cursor-pointer transition-all truncate"
+            className="w-full bg-surface-2 border border-accent/20 rounded-xl pl-9 pr-12 py-2 text-xs sm:text-sm text-appText-bright placeholder-appText-muted/60 pointer-events-none cursor-pointer transition-all truncate"
           />
-          <kbd className="absolute right-2.5 top-1/2 -translate-y-1/2 text-[10px] font-mono bg-surface-3/80 text-appText-muted px-1.5 py-0.5 rounded border border-accent/15">
+          <kbd className="absolute right-2.5 top-1/2 -translate-y-1/2 text-xs font-mono bg-surface-3/80 text-appText-muted px-2 py-0.5 rounded border border-accent/15">
             ⌘K
           </kbd>
         </button>
       </div>
 
-      {/* Quick Furigana & Romaji Toggles (Desktop only) */}
-      <div
-        className="hidden xl:flex items-center gap-1 bg-surface-2 p-1 rounded-xl border border-accent/15 text-[11px]"
-        role="group"
-        aria-label="Pengaturan Tampilan Bacaan"
-      >
-        <button
-          onClick={() => {
-            setShowFurigana(!showFurigana);
-            showToast(showFurigana ? 'Furigana dinonaktifkan' : 'Furigana diaktifkan', '文');
-          }}
-          role="switch"
-          aria-checked={showFurigana}
-          aria-label="Aktifkan furigana kana di atas kanji"
-          className={`px-2 py-0.5 rounded-lg font-bold transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent ${
-            showFurigana
-              ? 'bg-amber-500/20 text-accent-hot border border-amber-500/30'
-              : 'text-appText-muted hover:text-appText-bright'
-          }`}
-          title="Toggle Furigana (Shortcut: F)"
-        >
-          文 {showFurigana ? 'ON' : 'OFF'}
-        </button>
-        <button
-          onClick={() => {
-            setShowRomaji(!showRomaji);
-            showToast(showRomaji ? 'Romaji dinonaktifkan' : 'Romaji diaktifkan', '🔤');
-          }}
-          role="switch"
-          aria-checked={showRomaji}
-          aria-label="Aktifkan huruf latin romaji"
-          className={`px-2 py-0.5 rounded-lg font-bold transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent ${
-            showRomaji
-              ? 'bg-amber-500/20 text-accent-hot border border-amber-500/30'
-              : 'text-appText-muted hover:text-appText-bright'
-          }`}
-          title="Toggle Romaji (Shortcut: R)"
-        >
-          🔤 {showRomaji ? 'ON' : 'OFF'}
-        </button>
-      </div>
-
-      {/* Gamification Badges: Streak, XP & Offline Indicator */}
-      <div className="flex items-center gap-1.5 sm:gap-2 shrink-0">
-        {/* Offline Status Pill */}
-        <OfflineStatusPill />
-
-        {/* Study Toolbox Button (Desktop/Tablet) */}
-        <button
-          onClick={onOpenToolbox || openToolbox}
-          title="Kotak Peralatan Belajar (Bagan Kana, Konjugasi, Nuansa, CAT Placement)"
-          aria-label="Kotak Peralatan Belajar"
-          className="hidden md:flex items-center gap-1.5 px-2 sm:px-2.5 py-1.5 rounded-full bg-surface-2 hover:bg-surface-3 text-appText-bright border border-accent/20 hover:border-accent text-xs font-bold transition-all shadow-sm active:scale-95 shrink-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent min-h-[36px]"
-        >
-          <Wrench className="w-3.5 h-3.5 text-accent" />
-          <span className="hidden md:inline">Peralatan</span>
-        </button>
-
-        {/* Navigation & Feature Guide Button (Desktop/Tablet) */}
-        <button
-          onClick={openFeatureGuide}
-          title="Panduan Fitur & Bantuan (Tekan untuk melihat seluruh modul & tips)"
-          aria-label="Panduan Fitur & Bantuan"
-          className="hidden md:flex items-center gap-1.5 px-2.5 py-1.5 rounded-full bg-amber-500/10 hover:bg-amber-500/20 text-accent border border-accent/25 text-xs font-bold transition-all shadow-sm active:scale-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent min-h-[36px]"
-        >
-          <Compass className="w-3.5 h-3.5" />
-          <span>Panduan</span>
-        </button>
-
-        {/* Streak Flame */}
+      {/* ── Anchor 3 & 4: Unified Status, Quick Action Sheet Trigger & Profile Avatar ── */}
+      <div className="flex items-center gap-1 sm:gap-2.5 shrink-0">
+        {/* Anchor 3: Unified Streak & XP Pill */}
         <div
           role="status"
-          aria-label={`Streak harian: ${streak} hari aktif berturut-turut`}
-          className="flex items-center gap-1 sm:gap-1.5 px-2 sm:px-3 py-1 sm:py-1.5 rounded-full bg-amber-500/15 border border-amber-500/30 text-accent-hot shadow-sm shrink-0"
+          aria-label={`Streak: ${streak} hari, ${xp} XP`}
+          className="flex items-center gap-1 sm:gap-2 px-2 sm:px-3 py-1.5 min-h-[40px] rounded-full bg-amber-500/10 hover:bg-amber-500/15 border border-amber-500/25 text-appText-bright shadow-sm shrink-0 select-none transition-all"
+          title={`Streak: ${streak} Hari · Total: ${xp} XP`}
         >
-          <Flame className="w-3.5 sm:w-4 h-3.5 sm:h-4 fill-amber-500 text-amber-500 animate-pulse" />
-          <span className="text-xs font-bold font-mono">{streak}</span>
+          <div className="flex items-center gap-1">
+            <Flame className="w-4 h-4 fill-amber-500 text-amber-500 animate-pulse shrink-0" />
+            <span className="text-xs font-bold font-mono text-amber-400">{streak}</span>
+          </div>
+          <div className="hidden sm:flex items-center gap-1">
+            <span className="text-accent/30 text-xs">·</span>
+            <Zap className="w-3.5 h-3.5 fill-amber-400 text-amber-400 shrink-0" />
+            <span className="text-xs font-bold font-mono text-appText-bright">
+              {xp} <span className="text-appText-muted text-xs font-normal">XP</span>
+            </span>
+          </div>
         </div>
 
-        {/* XP Pill (Desktop/Tablet) */}
-        <div
-          role="status"
-          aria-label={`Total pengalaman: ${xp} XP`}
-          className="hidden sm:flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface-2 border border-accent/20 text-appText-bright shadow-sm shrink-0"
+        {/* Quick Action Sheet Trigger (Secondary Utilities: Furigana, Romaji, Toolbox, Guide, Sync) */}
+        <button
+          type="button"
+          onClick={() => setIsQuickActionsOpen(true)}
+          aria-label="Buka Aksi Cepat & Peralatan Belajar"
+          title="Aksi Cepat: Furigana, Romaji, Kotak Peralatan, Panduan, & Sinkronisasi"
+          className="min-w-[40px] min-h-[40px] p-2 rounded-full bg-surface-2 hover:bg-surface-3 border border-accent/20 hover:border-accent text-accent transition-all active:scale-95 flex items-center justify-center shrink-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
         >
-          <Zap className="w-3.5 h-3.5 fill-amber-400 text-amber-400" />
-          <span className="text-xs font-bold font-mono">{xp} XP</span>
-        </div>
+          <SlidersHorizontal className="w-4 h-4" />
+        </button>
 
-        {/* PWA Install Button (Desktop/Tablet) */}
-        {!isInstalled && (
-          <button
-            onClick={() => setShowInstallModal(true)}
-            title="Pasang Aplikasi (PWA)"
-            aria-label="Pasang Aplikasi Progressive Web App"
-            className="hidden md:flex items-center gap-1 px-2.5 py-1.5 rounded-full bg-amber-500/10 hover:bg-amber-500/20 text-amber-300 border border-amber-500/30 text-xs font-semibold transition-all active:scale-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent min-h-[36px]"
-          >
-            <Download className="w-3.5 h-3.5" />
-            <span>Pasang</span>
-          </button>
-        )}
-
-        {/* Supabase Cloud Sync Status Indicator */}
-        <SyncStatusIndicator />
-
-        {/* User Account / Sign In Pill */}
+        {/* Anchor 4: User Profile Avatar (1-Tap Direct Access to Profile) */}
         {user ? (
           <button
             onClick={() => setActiveTab('settings')}
-            title={`Akun: ${user.email} (Buka Pengaturan Akun)`}
-            aria-label={`Akun terhubung: ${user.email}`}
-            className="flex items-center gap-1 p-1 sm:px-2 sm:py-1 rounded-full bg-surface-2 hover:bg-surface-3 border border-accent/25 text-appText-bright text-xs font-semibold transition-all shrink-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+            title={`Profil: ${user.user_metadata?.display_name || user.email} (Klik untuk membuka profil & pengaturan)`}
+            aria-label={`Akun terhubung: ${user.email}. Buka profil.`}
+            className="flex items-center justify-center gap-1.5 p-1 sm:pr-2.5 rounded-full bg-surface-2 hover:bg-surface-3 border border-accent/25 text-appText-bright text-xs font-semibold transition-all shrink-0 active:scale-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent min-h-[40px] min-w-[40px]"
           >
-            <div className="w-6 h-6 rounded-full bg-amber-500/20 text-accent font-bold flex items-center justify-center text-[10px] shrink-0">
+            <div className="w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-gradient-to-br from-amber-400 to-amber-600 text-stone-950 font-black flex items-center justify-center text-xs shadow-sm ring-1 ring-white/20 shrink-0">
               {user.email?.charAt(0).toUpperCase()}
             </div>
-            <span className="truncate hidden md:inline max-w-[80px]">
+            <span className="truncate hidden md:inline max-w-[90px] text-xs font-bold text-appText-bright">
               {user.user_metadata?.display_name || user.email?.split('@')[0]}
             </span>
           </button>
         ) : (
           <button
             onClick={() => useAuthStore.getState().openAuthModal('signin')}
-            title="Masuk untuk sinkronisasi cloud"
+            title="Masuk untuk sinkronisasi cloud & profil"
             aria-label="Masuk ke Akun Cloud"
-            className="flex items-center gap-1 px-2 py-1 sm:px-2.5 sm:py-1.5 rounded-full bg-surface-2 hover:bg-surface-3 border border-accent/20 text-appText-bright text-xs font-semibold transition-all shrink-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+            className="flex items-center justify-center gap-1.5 px-2.5 sm:px-3 py-1.5 min-h-[40px] min-w-[40px] rounded-full bg-surface-2 hover:bg-surface-3 border border-accent/20 text-appText-bright text-xs font-bold transition-all shrink-0 active:scale-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
           >
-            <UserIcon className="w-3.5 h-3.5 text-accent" />
+            <UserIcon className="w-4 h-4 text-accent" />
             <span className="hidden sm:inline">Masuk</span>
           </button>
         )}
+      </div>
+
+      {/* Secondary Utilities consolidated inside QuickActionSheet */}
+      <QuickActionSheet
+        isOpen={isQuickActionsOpen}
+        onClose={() => setIsQuickActionsOpen(false)}
+        onOpenToolbox={onOpenToolbox || openToolbox}
+        onOpenFeatureGuide={openFeatureGuide}
+      />
+
+      {/* SyncStatusIndicator mounted for background telemetry & synchronization contract */}
+      <div className="hidden" aria-hidden="true">
+        <SyncStatusIndicator />
       </div>
 
       {/* Feature F2: Active Track Switcher Sheet / Modal (Mounted cleanly via Portal to document.body) */}
@@ -394,7 +329,7 @@ export const Header: React.FC<HeaderProps> = ({
                 type="button"
                 onClick={() => setIsTrackPickerOpen(false)}
                 aria-label="Tutup pemilihan jalur"
-                className="w-11 h-11 min-w-[44px] min-h-[44px] rounded-xl bg-surface-2 hover:bg-surface-3 text-appText-muted hover:text-appText-bright flex items-center justify-center transition-all active:scale-95"
+                className="w-11 h-11 min-w-[44px] min-h-[44px] rounded-xl bg-surface-2 hover:bg-surface-3 text-appText-muted hover:text-appText-bright flex items-center justify-center transition-all active:scale-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
               >
                 <X className="w-5 h-5" />
               </button>
@@ -405,7 +340,7 @@ export const Header: React.FC<HeaderProps> = ({
               <button
                 type="button"
                 onClick={() => setPickerCategory('jlpt')}
-                className={`flex-1 min-w-[90px] py-1.5 px-2.5 rounded-lg text-xs font-bold transition-all text-center whitespace-nowrap active:scale-95 ${
+                className={`flex-1 min-w-[90px] py-1.5 px-2.5 rounded-lg text-xs font-bold transition-all text-center whitespace-nowrap active:scale-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent ${
                   pickerCategory === 'jlpt'
                     ? 'bg-amber-500 text-stone-950 shadow-sm font-extrabold'
                     : 'text-appText-muted hover:text-appText-bright'
@@ -416,7 +351,7 @@ export const Header: React.FC<HeaderProps> = ({
               <button
                 type="button"
                 onClick={() => setPickerCategory('ssw')}
-                className={`flex-1 min-w-[90px] py-1.5 px-2.5 rounded-lg text-xs font-bold transition-all text-center whitespace-nowrap active:scale-95 ${
+                className={`flex-1 min-w-[90px] py-1.5 px-2.5 rounded-lg text-xs font-bold transition-all text-center whitespace-nowrap active:scale-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent ${
                   pickerCategory === 'ssw'
                     ? 'bg-amber-500 text-stone-950 shadow-sm font-extrabold'
                     : 'text-appText-muted hover:text-appText-bright'
@@ -427,7 +362,7 @@ export const Header: React.FC<HeaderProps> = ({
               <button
                 type="button"
                 onClick={() => setPickerCategory('jft')}
-                className={`flex-1 min-w-[90px] py-1.5 px-2.5 rounded-lg text-xs font-bold transition-all text-center whitespace-nowrap active:scale-95 ${
+                className={`flex-1 min-w-[90px] py-1.5 px-2.5 rounded-lg text-xs font-bold transition-all text-center whitespace-nowrap active:scale-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent ${
                   pickerCategory === 'jft'
                     ? 'bg-amber-500 text-stone-950 shadow-sm font-extrabold'
                     : 'text-appText-muted hover:text-appText-bright'
@@ -438,7 +373,7 @@ export const Header: React.FC<HeaderProps> = ({
               <button
                 type="button"
                 onClick={() => setPickerCategory('books')}
-                className={`flex-1 min-w-[90px] py-1.5 px-2.5 rounded-lg text-xs font-bold transition-all text-center whitespace-nowrap active:scale-95 ${
+                className={`flex-1 min-w-[90px] py-1.5 px-2.5 rounded-lg text-xs font-bold transition-all text-center whitespace-nowrap active:scale-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent ${
                   pickerCategory === 'books'
                     ? 'bg-amber-500 text-stone-950 shadow-sm font-extrabold'
                     : 'text-appText-muted hover:text-appText-bright'
@@ -460,7 +395,7 @@ export const Header: React.FC<HeaderProps> = ({
                       key={trk.id}
                       type="button"
                       onClick={() => handleSelectTrack(trk.id, trk.title)}
-                      className={`w-full p-3 rounded-2xl border text-left flex items-center justify-between gap-3 transition-all min-h-[56px] active:scale-98 ${
+                      className={`w-full p-3 rounded-2xl border text-left flex items-center justify-between gap-3 transition-all min-h-[56px] active:scale-98 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent ${
                         isSelected
                           ? 'bg-amber-500/15 border-amber-500 text-appText-bright font-bold ring-1 ring-amber-500'
                           : 'bg-surface-2 hover:bg-surface-3 border-accent/15 text-appText'
@@ -472,7 +407,7 @@ export const Header: React.FC<HeaderProps> = ({
                           <div className="font-bold text-sm text-appText-bright flex items-center gap-2">
                             <span>{trk.title}</span>
                             {isSelected && (
-                              <span className="text-[10px] font-bold px-1.5 py-0.2 rounded-full bg-accent text-bg">
+                              <span className="text-xs font-bold px-2 py-0.5 rounded-full bg-accent text-bg">
                                 Aktif
                               </span>
                             )}
@@ -503,7 +438,7 @@ export const Header: React.FC<HeaderProps> = ({
                       key={trk.id}
                       type="button"
                       onClick={() => handleSelectTrack(trk.id, trk.title)}
-                      className={`w-full p-3 rounded-2xl border text-left flex items-center justify-between gap-3 transition-all min-h-[56px] active:scale-98 ${
+                      className={`w-full p-3 rounded-2xl border text-left flex items-center justify-between gap-3 transition-all min-h-[56px] active:scale-98 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent ${
                         isSelected
                           ? 'bg-amber-500/15 border-amber-500 text-appText-bright font-bold ring-1 ring-amber-500'
                           : 'bg-surface-2 hover:bg-surface-3 border-accent/15 text-appText'
@@ -515,12 +450,12 @@ export const Header: React.FC<HeaderProps> = ({
                           <div className="font-bold text-sm text-appText-bright flex items-center gap-2">
                             <span className="truncate">{trk.title}</span>
                             {isSelected && (
-                              <span className="text-[10px] font-bold px-1.5 py-0.2 rounded-full bg-accent text-bg shrink-0">
+                              <span className="text-xs font-bold px-2 py-0.5 rounded-full bg-accent text-bg shrink-0">
                                 Aktif
                               </span>
                             )}
                             {trk.status === 'soon' && (
-                              <span className="text-[10px] font-bold px-1.5 py-0.2 rounded-full bg-surface-3 text-amber-400 border border-amber-400/20 shrink-0">
+                              <span className="text-xs font-bold px-2 py-0.5 rounded-full bg-surface-3 text-amber-400 border border-amber-400/20 shrink-0">
                                 Segera
                               </span>
                             )}
@@ -551,7 +486,7 @@ export const Header: React.FC<HeaderProps> = ({
                       key={trk.id}
                       type="button"
                       onClick={() => handleSelectTrack(trk.id, trk.title)}
-                      className={`w-full p-3 rounded-2xl border text-left flex items-center justify-between gap-3 transition-all min-h-[56px] active:scale-98 ${
+                      className={`w-full p-3 rounded-2xl border text-left flex items-center justify-between gap-3 transition-all min-h-[56px] active:scale-98 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent ${
                         isSelected
                           ? 'bg-amber-500/15 border-amber-500 text-appText-bright font-bold ring-1 ring-amber-500'
                           : 'bg-surface-2 hover:bg-surface-3 border-accent/15 text-appText'
@@ -563,7 +498,7 @@ export const Header: React.FC<HeaderProps> = ({
                           <div className="font-bold text-sm text-appText-bright flex items-center gap-2">
                             <span>{trk.title}</span>
                             {isSelected && (
-                              <span className="text-[10px] font-bold px-1.5 py-0.2 rounded-full bg-accent text-bg">
+                              <span className="text-xs font-bold px-2 py-0.5 rounded-full bg-accent text-bg">
                                 Aktif
                               </span>
                             )}
@@ -592,7 +527,7 @@ export const Header: React.FC<HeaderProps> = ({
                       key={trk.id}
                       type="button"
                       onClick={() => handleSelectTrack(trk.id, trk.title)}
-                      className={`w-full p-3 rounded-2xl border text-left flex items-center justify-between gap-3 transition-all min-h-[56px] active:scale-98 ${
+                      className={`w-full p-3 rounded-2xl border text-left flex items-center justify-between gap-3 transition-all min-h-[56px] active:scale-98 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent ${
                         isSelected
                           ? 'bg-amber-500/15 border-amber-500 text-appText-bright font-bold ring-1 ring-amber-500'
                           : 'bg-surface-2 hover:bg-surface-3 border-accent/15 text-appText'
@@ -604,7 +539,7 @@ export const Header: React.FC<HeaderProps> = ({
                           <div className="font-bold text-sm text-appText-bright flex items-center gap-2">
                             <span>{trk.title}</span>
                             {isSelected && (
-                              <span className="text-[10px] font-bold px-1.5 py-0.2 rounded-full bg-accent text-bg">
+                              <span className="text-xs font-bold px-2 py-0.5 rounded-full bg-accent text-bg">
                                 Aktif
                               </span>
                             )}

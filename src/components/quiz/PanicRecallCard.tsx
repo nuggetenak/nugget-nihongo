@@ -83,10 +83,10 @@ export const PanicRecallCard: React.FC<PanicRecallCardProps> = ({
               <ShieldAlert className="w-4 h-4 sm:w-5 sm:h-5" />
             </span>
             <div className="min-w-0">
-              <div className="text-[11px] font-bold text-red-400 uppercase tracking-wider truncate">
+              <div className="text-xs font-bold text-red-400 uppercase tracking-wider truncate">
                 Simulasi Darurat Gemba K3
               </div>
-              <div className="text-[10px] text-appText-muted truncate">
+              <div className="text-xs text-appText-muted truncate">
                 {question.subText || 'Tanggap Darurat < 5 Detik'}
               </div>
             </div>
@@ -131,7 +131,7 @@ export const PanicRecallCard: React.FC<PanicRecallCardProps> = ({
             <div className="text-xs font-bold text-accent animate-pulse">
               🗣️ SEBUTKAN KOMANDO / UJARAN BAHASA JEPANG SECARA LISAN!
             </div>
-            <p className="text-[11px] text-appText-muted">
+            <p className="text-xs text-appText-muted">
               Latih reflek bicara tanpa melihat contekan pilihan ganda. Waktu terus berjalan!
             </p>
             <button
@@ -144,7 +144,7 @@ export const PanicRecallCard: React.FC<PanicRecallCardProps> = ({
         ) : (
           <div className="mt-5 p-4 sm:p-5 rounded-2xl bg-surface/90 border-2 border-emerald-500/40 space-y-4 animate-in fade-in zoom-in-95 duration-200">
             <div className="flex items-center justify-between">
-              <span className="text-[11px] font-bold text-emerald-400 uppercase tracking-wider">
+              <span className="text-xs font-bold text-emerald-400 uppercase tracking-wider">
                 🎯 Komando Wajib SBAR:
               </span>
               <button
@@ -163,7 +163,7 @@ export const PanicRecallCard: React.FC<PanicRecallCardProps> = ({
 
             {question.actionChecklist && question.actionChecklist.length > 0 && (
               <div className="space-y-1.5 pt-2 border-t border-accent/15">
-                <div className="text-[11px] font-bold text-appText-muted">Langkah Tindakan Wajib:</div>
+                <div className="text-xs font-bold text-appText-muted">Langkah Tindakan Wajib:</div>
                 <div className="space-y-1">
                   {question.actionChecklist.map((step, idx) => (
                     <div key={idx} className="flex items-start gap-2 text-xs text-appText-bright/90">
@@ -194,7 +194,7 @@ export const PanicRecallCard: React.FC<PanicRecallCardProps> = ({
             >
               <XCircle className="w-4 h-4 text-red-500" />
               <span>Gagal / Terbata</span>
-              <span className="text-[9px] opacity-60">Tidak hafal komando</span>
+              <span className="text-xs opacity-75 font-mono">Tidak hafal</span>
             </button>
 
             <button
@@ -206,7 +206,7 @@ export const PanicRecallCard: React.FC<PanicRecallCardProps> = ({
             >
               <AlertTriangle className="w-4 h-4 text-amber-500" />
               <span>Ragu / Lambat</span>
-              <span className="text-[9px] opacity-60">Hafal tapi &gt; 5 detik</span>
+              <span className="text-xs opacity-75 font-mono">&gt; 5 detik</span>
             </button>
 
             <button
@@ -218,7 +218,7 @@ export const PanicRecallCard: React.FC<PanicRecallCardProps> = ({
             >
               <CheckCircle2 className="w-4 h-4 text-emerald-500" />
               <span>Lancar &amp; Sigap</span>
-              <span className="text-[9px] opacity-60">Reflek vokal &lt; 5 detik</span>
+              <span className="text-xs opacity-75 font-mono">&lt; 5 detik</span>
             </button>
           </div>
         </div>

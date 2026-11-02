@@ -112,7 +112,7 @@ export const QuizConfigModal: React.FC<QuizConfigModalProps> = ({
                 }`}
               >
                 <div className="text-sm font-bold text-appText-bright">{opt.label}</div>
-                <div className="text-[10px] text-appText-muted mt-0.5">{opt.desc}</div>
+                <div className="text-xs text-appText-muted mt-0.5">{opt.desc}</div>
               </button>
             ))}
           </div>

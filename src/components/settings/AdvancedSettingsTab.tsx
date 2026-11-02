@@ -198,7 +198,7 @@ export const AdvancedSettingsTab: React.FC<AdvancedSettingsTabProps> = ({
               Uji Tes AI
             </button>
           </div>
-          <p className="text-[11px] text-appText-muted">
+          <p className="text-xs text-appText-muted">
             Kunci API kamu disimpan secara lokal di browser dan tidak pernah dikirim ke pihak ketiga tanpa izinmu.
           </p>
         </div>
@@ -224,7 +224,7 @@ export const AdvancedSettingsTab: React.FC<AdvancedSettingsTabProps> = ({
           >
             <div className="flex items-center justify-between">
               <Download className="w-4 h-4 text-accent" />
-              <span className="text-[10px] font-mono px-1.5 py-0.5 rounded bg-surface-3 text-appText-muted">
+              <span className="text-xs font-mono px-1.5 py-0.5 rounded bg-surface-3 text-appText-muted">
                 JSON
               </span>
             </div>
@@ -232,7 +232,7 @@ export const AdvancedSettingsTab: React.FC<AdvancedSettingsTabProps> = ({
               <span className="text-xs font-bold text-appText-bright block">
                 Cadangan Standar (JSON)
               </span>
-              <p className="text-[11px] text-appText-muted mt-0.5">
+              <p className="text-xs text-appText-muted mt-0.5">
                 Format berkas terbuka tanpa enkripsi sandi.
               </p>
             </div>
@@ -245,7 +245,7 @@ export const AdvancedSettingsTab: React.FC<AdvancedSettingsTabProps> = ({
           >
             <div className="flex items-center justify-between">
               <Lock className="w-4 h-4 text-accent" />
-              <span className="text-[10px] font-mono px-1.5 py-0.5 rounded bg-emerald-500/15 text-emerald-600 dark:text-emerald-400 font-bold">
+              <span className="text-xs font-mono px-1.5 py-0.5 rounded bg-emerald-500/15 text-emerald-600 dark:text-emerald-400 font-bold">
                 AES-256
               </span>
             </div>
@@ -253,7 +253,7 @@ export const AdvancedSettingsTab: React.FC<AdvancedSettingsTabProps> = ({
               <span className="text-xs font-bold text-appText-bright block">
                 Cadangan Terenkripsi
               </span>
-              <p className="text-[11px] text-appText-muted mt-0.5">
+              <p className="text-xs text-appText-muted mt-0.5">
                 Dilindungi dengan kata sandi PBKDF2 SHA-256.
               </p>
             </div>
@@ -263,7 +263,7 @@ export const AdvancedSettingsTab: React.FC<AdvancedSettingsTabProps> = ({
           <label className="p-3.5 sm:p-4 rounded-xl bg-surface-2/60 border border-accent/15 hover:border-accent/30 hover:bg-surface-2 text-left transition-all active:scale-95 flex flex-col justify-between space-y-2 cursor-pointer">
             <div className="flex items-center justify-between">
               <Upload className="w-4 h-4 text-accent" />
-              <span className="text-[10px] font-mono px-1.5 py-0.5 rounded bg-surface-3 text-appText-muted">
+              <span className="text-xs font-mono px-1.5 py-0.5 rounded bg-surface-3 text-appText-muted">
                 PULIHKAN
               </span>
             </div>
@@ -271,7 +271,7 @@ export const AdvancedSettingsTab: React.FC<AdvancedSettingsTabProps> = ({
               <span className="text-xs font-bold text-appText-bright block">
                 Pulihkan Cadangan
               </span>
-              <p className="text-[11px] text-appText-muted mt-0.5">
+              <p className="text-xs text-appText-muted mt-0.5">
                 Unggah berkas cadangan JSON atau .nuggetbackup.
               </p>
             </div>
@@ -306,7 +306,7 @@ export const AdvancedSettingsTab: React.FC<AdvancedSettingsTabProps> = ({
               <span className="text-xs font-bold text-appText-bright block">
                 Bersihkan Cache Offline Browser
               </span>
-              <p className="text-[11px] text-appText-muted mt-0.5">
+              <p className="text-xs text-appText-muted mt-0.5">
                 Menghapus cache Service Worker & aset statis tanpa menghapus riwayat belajar.
               </p>
             </div>
@@ -321,7 +321,7 @@ export const AdvancedSettingsTab: React.FC<AdvancedSettingsTabProps> = ({
               <span className="text-xs font-bold text-rose-600 dark:text-rose-400 block">
                 Reset Semua Data Belajar
               </span>
-              <p className="text-[11px] text-appText-muted mt-0.5">
+              <p className="text-xs text-appText-muted mt-0.5">
                 Menghapus seluruh kartu memori FSRS, streak, dan progres ke kondisi awal.
               </p>
             </div>

@@ -1,0 +1,649 @@
+/**
+ * JLPT N4 Golden Set 01 (Foundational Units 1-5)
+ * 15 Authentic Items with 5-Layer Explanations & Strict Permutation Proof
+ */
+
+function getJLPTN4Set() {
+  return {
+    setId: 'jlpt-n4-set01',
+    trackType: 'jlpt',
+    level: 'n4',
+    title: 'Set Latihan JLPT N4 - 01',
+    description: 'Simulasi modular 15 menit menguji penguasaan Unit 1 s/d 5 Kurikulum N4 (Bentuk Kehendak, Rekomendasi, Bentuk Kemungkinan, Kemudahan Sifat, & Aspek Waktu).',
+    targetUnits: 'Unit 1 s/d 5: Tekad Hidup, Saran, Potensial Diri, Derajat Sifat & Aspek Batas Waktu',
+    totalItems: 15,
+    timeLimitMinutes: 15,
+    passingScore: 10,
+    items: [
+      {
+        id: 'JLPT-N4-S01-Q01',
+        trackType: 'jlpt',
+        level: 'n4',
+        mondaiNumber: 1,
+        mondaiType: 'kanji_reading',
+        instructionJp: '____の言葉の読み方として最もよいものを、1・2・3・4から一つ選びなさい。',
+        instructionId: 'Pilihlah cara baca kanji yang bergaris bawah dari pilihan 1, 2, 3, 4.',
+        prompt: '将来の **計画** を ノートに 書きました。',
+        targetWord: '計画',
+        options: ['けいかく', 'けいがく', 'かいかく', 'けんかく'],
+        correctOptionIndex: 0,
+        explanation: {
+          justification: 'Kanji 「計画」 dibaca 「けいかく」 yang bermakna rencana/perencanaan.',
+          distractorAutopsy: {
+            '1': 'けいかく adalah KUNCI BENAR (計画 = rencana).',
+            '2': 'けいがく salah karena kanji 画 di sini tidak dibaca dengan rendaku gaku.',
+            '3': 'かいかく adalah bacaan untuk 「改革」 (reformasi/perubahan).',
+            '4': 'けんかく adalah bacaan non-standar.'
+          },
+          mnemonicSensei: 'Kei (計 = menghitung/mengukur) + Kaku (画 = gambar/rencana) = Keikaku (Rencana matang)!',
+          l1InterferenceAlert: 'Dalam bahasa Indonesia kita sering menyamakan \"rencana\" (keikaku) dan \"janji temu\" (yakusoku). Jika merencanakan masa depan atau proyek kerja, kata yang baku adalah keikaku.',
+          remedialPrescription: {
+            unitId: 'unit-n4-01',
+            unitNumber: 1,
+            unitTitleId: 'Niat, Tekad & Rencana Kehidupan',
+            lessonId: 'les-n4-u01-01',
+            vocabId: 'vg-n4-00001',
+            advice: 'Pelajari kanji perencanaan dan masa depan di Unit 1 Kurikulum N4.'
+          }
+        },
+        curriculumRef: {
+          trackId: 'curriculum-n4',
+          unitId: 'unit-n4-01',
+          unitNumber: 1,
+          unitTitleId: 'Niat, Tekad & Rencana Kehidupan',
+          lessonId: 'les-n4-u01-01',
+          vocabId: 'vg-n4-00001'
+        }
+      },
+      {
+        id: 'JLPT-N4-S01-Q02',
+        trackType: 'jlpt',
+        level: 'n4',
+        mondaiNumber: 2,
+        mondaiType: 'orthography',
+        instructionJp: '____の言葉を漢字で書くとき、最もよいものを、1・2・3・4から一つ選びなさい。',
+        instructionId: 'Pilihlah penulisan kanji yang paling tepat untuk kata bergaris bawah.',
+        prompt: '工場の中を **あんない** してもらいました。',
+        targetWord: 'あんない',
+        options: ['案内', '案內', '安内', '案肉'],
+        correctOptionIndex: 0,
+        explanation: {
+          justification: 'Kata 「あんない (memandu/mengantar jalan)」 ditulis dengan kanji 「案内」.',
+          distractorAutopsy: {
+            '1': '案内 adalah KUNCI BENAR (radikal kian/proposal 案 + di dalam 内).',
+            '2': '案內 menggunakan karakter bentuk kuno (kyuujitai) yang bukan ortografi standar zaman sekarang.',
+            '3': '安内 salah pada kanji pertama (安 = murah/aman, bukan ide/rencana 案).',
+            '4': '案肉 salah total pada kanji kedua (肉 = daging).'
+          },
+          mnemonicSensei: 'An (案 = rancangan denah) + Nai (内 = bagian dalam). Annai = memandu menjelajahi bagian dalam ruangan/pabrik!',
+          l1InterferenceAlert: 'Jangan tertukar antara kanji 案 (an - rancangan/ide) dengan 安 (an - murah/tenang). Kanji 案内 memiliki radikal pohon 木 di bawahnya.',
+          remedialPrescription: {
+            unitId: 'unit-n4-04',
+            unitNumber: 4,
+            unitTitleId: 'Kemudahan Operasional & Ukuran Sifat',
+            lessonId: 'les-n4-u04-01',
+            vocabId: 'vg-n4-00030',
+            advice: 'Buka materi ortografi kanji petunjuk kerja di Unit 4 MateriHub.'
+          }
+        },
+        curriculumRef: {
+          trackId: 'curriculum-n4',
+          unitId: 'unit-n4-04',
+          unitNumber: 4,
+          unitTitleId: 'Kemudahan Operasional & Ukuran Sifat',
+          lessonId: 'les-n4-u04-01',
+          vocabId: 'vg-n4-00030'
+        }
+      },
+      {
+        id: 'JLPT-N4-S01-Q03',
+        trackType: 'jlpt',
+        level: 'n4',
+        mondaiNumber: 3,
+        mondaiType: 'usage',
+        instructionJp: '次の言葉の使い方として最もよいものを、1・2・3・4から一つ選びなさい。',
+        instructionId: 'Pilihlah kalimat yang menggunakan kata berikut secara paling tepat dan alami.',
+        prompt: '【遠慮】（えんりょ）',
+        targetWord: '遠慮',
+        options: [
+          'どうぞ 遠慮しないで 食べてください。',
+          '時間が ありませんから、遠慮して 走りましょう。',
+          'この 部屋は 遠慮ですから、静かに してください。',
+          '雨が 降っていますから、傘を 遠慮しました。'
+        ],
+        correctOptionIndex: 0,
+        explanation: {
+          justification: '「遠慮 (えんりょ)」 bermakna menahan diri, sungkan, atau ragu-ragu karena menjaga kesopanan. Ungkapan umum menyuguhkan makanan/minuman kepada tamu adalah 「どうぞ遠慮しないで食べてください (Silakan makan, jangan sungkan-sungkan)」.',
+          distractorAutopsy: {
+            '1': 'どうぞ 遠慮しないで 食べてください adalah KUNCI BENAR (kolokasi standar kesopanan bertamu).',
+            '2': '遠慮して 走りましょう salah konteks; tidak ada hubungan sungkan dengan berlari cepat.',
+            '3': '部屋は 遠慮ですから salah kelas kata; sifat ruangan sempit/tenang tidak menggunakan kata enryo.',
+            '4': '傘を 遠慮しました rancu; jika memakai payung kata yang tepat adalah 傘をさしました.'
+          },
+          mnemonicSensei: 'Enryo shinaide = Jangan sungkan! Kalimat khas keramahtamahan tuan rumah Jepang kepada tamunya.',
+          l1InterferenceAlert: 'Orang Indonesia sering mengartikan enryo hanya sebagai \"malu\". Enryo bukan rasa malu psikologis (hazukashii), melainkan tindakan aktif menahan diri demi menghormati orang lain (sungkan).',
+          remedialPrescription: {
+            unitId: 'unit-n4-02',
+            unitNumber: 2,
+            unitTitleId: 'Rekomendasi, Saran & Derajat Berlebih',
+            lessonId: 'les-n4-u02-01',
+            vocabId: 'vg-n4-00010',
+            advice: 'Pelajari penggunaan kosakata kesopanan dan budaya enryo di Unit 2 MateriHub.'
+          }
+        },
+        curriculumRef: {
+          trackId: 'curriculum-n4',
+          unitId: 'unit-n4-02',
+          unitNumber: 2,
+          unitTitleId: 'Rekomendasi, Saran & Derajat Berlebih',
+          lessonId: 'les-n4-u02-01',
+          vocabId: 'vg-n4-00010'
+        }
+      },
+      {
+        id: 'JLPT-N4-S01-Q04',
+        trackType: 'jlpt',
+        level: 'n4',
+        mondaiNumber: 4,
+        mondaiType: 'contextual_vocab',
+        instructionJp: '（　）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。',
+        instructionId: 'Pilihlah kata yang paling tepat untuk mengisi tanda kurung.',
+        prompt: '昨日は お酒を （　　）ので、今朝 頭が 痛いです。',
+        options: ['飲みすぎた', '飲みにくかった', '飲みやすかった', '飲もうとした'],
+        correctOptionIndex: 0,
+        explanation: {
+          justification: 'Pola V-stem + すぎる menyatakan melakukan sesuatu secara berlebihan hingga menimbulkan akibat buruk. Karena minum alkohol terlalu banyak (飲みすぎた), pagi harinya kepala terasa sakit (sakit kepala/hangover).',
+          distractorAutopsy: {
+            '1': '飲みすぎた (terlalu banyak minum) adalah KUNCI BENAR.',
+            '2': '飲みにくかった (sulit diminum) tidak menjelaskan alasan sakit kepala pagi ini.',
+            '3': '飲みやすかった (mudah/enak diminum) tidak secara langsung menjadi penyebab fisik sakit kepala.',
+            '4': '飲もうとした (bermaksud/mencoba minum) tidak menyatakan tindakan minum dalam jumlah berlebih.'
+          },
+          mnemonicSensei: 'V-stem + SUGIRU = Terlalu berlebihan lewat batas (kebanyakan)! Minum kebanyakan = Nomisugita.',
+          l1InterferenceAlert: 'Dalam bahasa Indonesia kita meletakkan kata \"terlalu\" di depan kata kerja (\"terlalu banyak minum\"). Dalam bahasa Jepang, akhiran すぎる menempel di belakang kata kerja stem (nomi + sugita).',
+          remedialPrescription: {
+            unitId: 'unit-n4-02',
+            unitNumber: 2,
+            unitTitleId: 'Rekomendasi, Saran & Derajat Berlebih',
+            lessonId: 'les-n4-u02-02',
+            grammarId: 'gn4-00021',
+            advice: 'Buka kembali materi pola V-stem + sugiru di Unit 2 MateriHub.'
+          }
+        },
+        curriculumRef: {
+          trackId: 'curriculum-n4',
+          unitId: 'unit-n4-02',
+          unitNumber: 2,
+          unitTitleId: 'Rekomendasi, Saran & Derajat Berlebih',
+          lessonId: 'les-n4-u02-02',
+          grammarId: 'gn4-00021'
+        }
+      },
+      {
+        id: 'JLPT-N4-S01-Q05',
+        trackType: 'jlpt',
+        level: 'n4',
+        mondaiNumber: 4,
+        mondaiType: 'contextual_vocab',
+        instructionJp: '（　）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。',
+        instructionId: 'Pilihlah kata yang paling tepat untuk mengisi tanda kurung.',
+        prompt: '日本へ 来てから、刺身が （　　）ように なりました。',
+        options: ['食べられる', '食べて', '食べない', '食べた'],
+        correctOptionIndex: 0,
+        explanation: {
+          justification: 'Pola 「〜ようになる」 menyatakan perubahan kemampuan atau status (dari tidak bisa/tidak terbiasa menjadi bisa). Kata kerja yang berpasangan adalah bentuk potensial (可能形): 食べられる (dapat memakan sashimi).',
+          distractorAutopsy: {
+            '1': '食べられる adalah KUNCI BENAR (bentuk potensial: menjadi bisa makan).',
+            '2': '食べて tidak bisa berpasangan dengan pola you ni narimashita.',
+            '3': '食べないように なりました berarti menjadi tidak makan (kebiasaan berhenti makan), namun sashimi adalah makanan khas Jepang yang biasanya dipelajari orang asing hingga akhirnya bisa memakannya.',
+            '4': '食べた bentuk lampau ta-form tidak gramatikal di depan you ni narimashita.'
+          },
+          mnemonicSensei: 'Potensial + YOU NI NARU = Perubahan kemampuan dari NOL menjadi BISA!',
+          l1InterferenceAlert: 'Jangan gunakan bentuk kamus biasa jika menyatakan perubahan kapasitas kemampuan. Gunakan bentuk potensial (taberareru) di depan you ni narimashita!',
+          remedialPrescription: {
+            unitId: 'unit-n4-03',
+            unitNumber: 3,
+            unitTitleId: 'Potensial, Kapasitas & Perubahan Diri',
+            lessonId: 'les-n4-u03-02',
+            grammarId: 'gn4-00035',
+            advice: 'Pelajari rumus perubahan kapasitas diri (You ni naru) di Unit 3 MateriHub.'
+          }
+        },
+        curriculumRef: {
+          trackId: 'curriculum-n4',
+          unitId: 'unit-n4-03',
+          unitNumber: 3,
+          unitTitleId: 'Potensial, Kapasitas & Perubahan Diri',
+          lessonId: 'les-n4-u03-02',
+          grammarId: 'gn4-00035'
+        }
+      },
+      {
+        id: 'JLPT-N4-S01-Q06',
+        trackType: 'jlpt',
+        level: 'n4',
+        mondaiNumber: 5,
+        mondaiType: 'paraphrase_synonym',
+        instructionJp: '____の文とだいたい同じ意味の文を、1・2・3・4から一つ選びなさい。',
+        instructionId: 'Pilihlah kalimat yang memiliki makna paling mendekati kalimat bergaris bawah.',
+        prompt: '来週の 旅行の **日程を 決めました**。',
+        targetWord: '日程を 決めました',
+        options: [
+          '旅行の スケジュールを 作りました。',
+          '旅行の 切符を 買いました。',
+          '旅行の 部屋を 予約しました。',
+          '旅行を やめることに しました。'
+        ],
+        correctOptionIndex: 0,
+        explanation: {
+          justification: '「日程 (にってい)」 bermakna jadwal harian / agenda perjalanan, dan 「決める」 berarti memutuskan. Maka 「日程を決めました」 setara artinya dengan membuat jadwal perjalanan (スケジュールを作りました).',
+          distractorAutopsy: {
+            '1': 'スケジュールを 作りました adalah KUNCI BENAR.',
+            '2': '切符を 買いました berarti membeli tiket, bukan menyusun jadwal.',
+            '3': '部屋を 予約しました berarti memesan kamar penginapan.',
+            '4': '旅行を やめることに しました berarti memutuskan membatalkan perjalanan.'
+          },
+          mnemonicSensei: 'Nittei = Hari (日) + Acara/Jadwal (程) = Schedule perjalanan!',
+          l1InterferenceAlert: 'Kata \"nittei\" sering diserap dari bahasa Inggris menjadi sukejuuru dalam percakapan kasual. Di ujian JLPT N4, keduanya sering menjadi pasangan parafrasa.',
+          remedialPrescription: {
+            unitId: 'unit-n4-01',
+            unitNumber: 1,
+            unitTitleId: 'Niat, Tekad & Rencana Kehidupan',
+            lessonId: 'les-n4-u01-02',
+            vocabId: 'vg-n4-00086',
+            advice: 'Buka kembali materi sinonim dan kosakata perencanaan di Unit 1.'
+          }
+        },
+        curriculumRef: {
+          trackId: 'curriculum-n4',
+          unitId: 'unit-n4-01',
+          unitNumber: 1,
+          unitTitleId: 'Niat, Tekad & Rencana Kehidupan',
+          lessonId: 'les-n4-u01-02',
+          vocabId: 'vg-n4-00086'
+        }
+      },
+      {
+        id: 'JLPT-N4-S01-Q07',
+        trackType: 'jlpt',
+        level: 'n4',
+        mondaiNumber: 6,
+        mondaiType: 'grammar_form',
+        instructionJp: '（　）に入る最もよいものを、1・2・3・4から一つ選びなさい。',
+        instructionId: 'Pilihlah konjugasi/tata bahasa yang paling tepat untuk mengisi tanda kurung.',
+        prompt: '来年、国へ （　　）と 思っています。',
+        options: ['帰ろう', '帰る', '帰った', '帰れば'],
+        correctOptionIndex: 0,
+        explanation: {
+          justification: 'Pola 「〜と思っています」 untuk menyatakan niat/kehendak pribadi yang sudah dipikirkan sejak beberapa waktu lalu berpasangan dengan kata kerja bentuk kehendak (意向形 / Volitional Form): 帰ろう (kaerou).',
+          distractorAutopsy: {
+            '1': '帰ろう (bentuk kehendak volitional) adalah KUNCI BENAR.',
+            '2': '帰る jika dipasangkan dengan to omotte imasu kurang alami dibanding bentuk volitional (pola kamus biasanya berpasangan dengan tsumori desu).',
+            '3': '帰った bentuk lampau ta-form tidak logis karena rencana terjadi tahun depan (来年).',
+            '4': '帰れば adalah bentuk pengandaian kondisional ba-form, tidak cocok berpasangan dengan to omotte imasu.'
+          },
+          mnemonicSensei: 'Niat dalam hati yang ingin diwujudkan? Gunakan Volitional + to omotte imasu! Kaeru -> Kaerou!',
+          l1InterferenceAlert: 'Dalam bahasa Indonesia kita cukup berkata \"berencana mau pulang\". Di bahasa Jepang, rumus bakunya adalah Bentuk Maksud (〜おう/〜よう) + と思っています.',
+          remedialPrescription: {
+            unitId: 'unit-n4-01',
+            unitNumber: 1,
+            unitTitleId: 'Niat, Tekad & Rencana Kehidupan',
+            lessonId: 'les-n4-u01-01',
+            grammarId: 'gn4-00001',
+            advice: 'Latih perubahan kata kerja Volitional Form (Ikoukei) di Unit 1 MateriHub.'
+          }
+        },
+        curriculumRef: {
+          trackId: 'curriculum-n4',
+          unitId: 'unit-n4-01',
+          unitNumber: 1,
+          unitTitleId: 'Niat, Tekad & Rencana Kehidupan',
+          lessonId: 'les-n4-u01-01',
+          grammarId: 'gn4-00001'
+        }
+      },
+      {
+        id: 'JLPT-N4-S01-Q08',
+        trackType: 'jlpt',
+        level: 'n4',
+        mondaiNumber: 6,
+        mondaiType: 'grammar_form',
+        instructionJp: '（　）に入る最もよいものを、1・2・3・4から一つ選びなさい。',
+        instructionId: 'Pilihlah konjugasi/tata bahasa yang paling tepat untuk mengisi tanda kurung.',
+        prompt: '熱が あるときは、無理を （　　）ほうが いいですよ。',
+        options: ['しない', 'する', 'した', 'して'],
+        correctOptionIndex: 0,
+        explanation: {
+          justification: 'Untuk memberikan saran agar TIDAK melakukan sesuatu yang berbahaya/berisiko bagi kesehatan, gunakan pola 「V-nai + ほうがいい (sebaiknya jangan...)」: 無理をしないほうがいい (sebaiknya jangan memaksakan diri).',
+          distractorAutopsy: {
+            '1': 'しない (bentuk negatif lampau-kini) adalah KUNCI BENAR (sebaiknya jangan memaksakan diri).',
+            '2': 'する bentuk kamus positif tidak tepat secara medis saat sedang demam.',
+            '3': 'したほうがいい berarti sebaiknya memaksakan diri, fatal secara medis!',
+            '4': 'して bentuk te-form tidak bisa langsung menempel pada hou ga ii.'
+          },
+          mnemonicSensei: 'Saran positif = V-ta hou ga ii. Saran larangan = V-nai hou ga ii! Jangan paksakan diri = Shinai hou ga ii!',
+          l1InterferenceAlert: 'Hati-hati: untuk saran positif kita memakai bentuk lampau (tabeta hou ga ii), tetapi untuk saran negatif kita memakai bentuk BUKAN lampau (shinai hou ga ii, bukan shinakatta hou ga ii). Ini adalah jebakan klasik N4!',
+          remedialPrescription: {
+            unitId: 'unit-n4-02',
+            unitNumber: 2,
+            unitTitleId: 'Rekomendasi, Saran & Derajat Berlebih',
+            lessonId: 'les-n4-u02-01',
+            grammarId: 'gn4-00018',
+            advice: 'Pelajari formula perbandingan V-ta hou ga ii vs V-nai hou ga ii di Unit 2.'
+          }
+        },
+        curriculumRef: {
+          trackId: 'curriculum-n4',
+          unitId: 'unit-n4-02',
+          unitNumber: 2,
+          unitTitleId: 'Rekomendasi, Saran & Derajat Berlebih',
+          lessonId: 'les-n4-u02-01',
+          grammarId: 'gn4-00018'
+        }
+      },
+      {
+        id: 'JLPT-N4-S01-Q09',
+        trackType: 'jlpt',
+        level: 'n4',
+        mondaiNumber: 6,
+        mondaiType: 'grammar_form',
+        instructionJp: '（　）に入る最もよいものを、1・2・3・4から一つ選びなさい。',
+        instructionId: 'Pilihlah partikel/tata bahasa yang paling tepat untuk mengisi tanda kurung.',
+        prompt: 'スミスさんは 日本語の 新聞（　　）読めますか。',
+        options: ['が', 'を', 'に', 'で'],
+        correctOptionIndex: 0,
+        explanation: {
+          justification: 'Objek yang dikenai kata kerja bentuk potensial (可能動詞: 読めます) umumnya ditandai dengan partikel 「が」, bukan 「を」.',
+          distractorAutopsy: {
+            '1': 'が adalah KUNCI BENAR (penanda objek kemampuan pada kata kerja potensial).',
+            '2': 'を adalah jebakan paling sering! Dalam tata bahasa baku N4, verba potensial menuntut partikel GA untuk objek sasarannya.',
+            '3': 'に adalah penanda arah/titik waktu.',
+            '4': 'で adalah penanda sarana/alat.'
+          },
+          mnemonicSensei: 'Kata kerja BISA (potensial)? Partikel WO langsung berubah jadi GA! 新聞が読めます (Shinbun GA yomemasu).',
+          l1InterferenceAlert: 'Dalam bahasa Indonesia kita berkata \"bisa membaca koran\" di mana koran adalah objek langsung. Di bahasa Jepang N4, bentuk potensial mengubah partikel penanda objek dari を menjadi が!',
+          remedialPrescription: {
+            unitId: 'unit-n4-03',
+            unitNumber: 3,
+            unitTitleId: 'Potensial, Kapasitas & Perubahan Diri',
+            lessonId: 'les-n4-u03-01',
+            grammarId: 'gn4-00028',
+            advice: 'Kuasai kaidah partikel GA pada verba potensial di Unit 3 MateriHub.'
+          }
+        },
+        curriculumRef: {
+          trackId: 'curriculum-n4',
+          unitId: 'unit-n4-03',
+          unitNumber: 3,
+          unitTitleId: 'Potensial, Kapasitas & Perubahan Diri',
+          lessonId: 'les-n4-u03-01',
+          grammarId: 'gn4-00028'
+        }
+      },
+      {
+        id: 'JLPT-N4-S01-Q10',
+        trackType: 'jlpt',
+        level: 'n4',
+        mondaiNumber: 6,
+        mondaiType: 'grammar_form',
+        instructionJp: '（　）に入る最もよいものを、1・2・3・4から一つ選びなさい。',
+        instructionId: 'Pilihlah konjugasi/tata bahasa yang paling tepat untuk mengisi tanda kurung.',
+        prompt: 'この ペンは とても （　　）やすいですね。',
+        options: ['書き', '書く', '書いて', '書いた'],
+        correctOptionIndex: 0,
+        explanation: {
+          justification: 'Pola penunjuk kemudahan operasional 「〜やすい (mudah untuk...)」 langsung melekat pada akar kata kerja (Masu-stem tanpa masu): 書き + やすい = 書きやすい (enak/mudah dipakai menulis).',
+          distractorAutopsy: {
+            '1': '書き (Masu-stem) adalah KUNCI BENAR.',
+            '2': '書く (bentuk kamus) tidak dapat digabung dengan akhiran yasui.',
+            '3': '書いて (bentuk te-form) tidak sesuai formula.',
+            '4': '書いた (bentuk ta-form) tidak sesuai formula.'
+          },
+          mnemonicSensei: 'Potong MASU-nya, sambung YASUI! Kakimasu -> Kaki-yasui (mudah ditulis).',
+          l1InterferenceAlert: 'Ingat bahwa akhiran 〜やすい mengubah seluruh kata kerja menjadi berkarakter Kata Sifat-i (i-adjective). Bentuk negatifnya adalah kakiyasukunai.',
+          remedialPrescription: {
+            unitId: 'unit-n4-04',
+            unitNumber: 4,
+            unitTitleId: 'Kemudahan Operasional & Ukuran Sifat',
+            lessonId: 'les-n4-u04-01',
+            grammarId: 'gn4-00041',
+            advice: 'Pelajari formula penggabungan verba stem + yasui / nikui di Unit 4 MateriHub.'
+          }
+        },
+        curriculumRef: {
+          trackId: 'curriculum-n4',
+          unitId: 'unit-n4-04',
+          unitNumber: 4,
+          unitTitleId: 'Kemudahan Operasional & Ukuran Sifat',
+          lessonId: 'les-n4-u04-01',
+          grammarId: 'gn4-00041'
+        }
+      },
+      {
+        id: 'JLPT-N4-S01-Q11',
+        trackType: 'jlpt',
+        level: 'n4',
+        mondaiNumber: 6,
+        mondaiType: 'grammar_form',
+        instructionJp: '（　）に入る最もよいものを、1・2・3・4から一つ選びなさい。',
+        instructionId: 'Pilihlah partikel/tata bahasa yang paling tepat untuk mengisi tanda kurung.',
+        prompt: 'レポートは 金曜日の 5時（　　）提出して ください。',
+        options: ['までに', 'まで', 'から', 'あいだ'],
+        correctOptionIndex: 0,
+        explanation: {
+          justification: 'Untuk menyatakan batas akhir tenggat waktu penyerahan tugas (deadline), wajib menggunakan partikel gabungan 「までに (paling lambat sebelum)」. Partikel 「まで」 hanya digunakan untuk aksi berkelanjutan tanpa henti.',
+          distractorAutopsy: {
+            '1': 'までに adalah KUNCI BENAR (deadline / batas waktu terakhir penyerahan tindakan instan: kumpulkan sebelum jam 5).',
+            '2': 'まで adalah jebakan paling fatal! Made berarti terus-menerus sampai jam 5 (contoh: 5時まで勉強します = belajar non-stop sampai jam 5), tidak bisa untuk aksi instan mengumpulkan laporan.',
+            '3': 'から berarti mulai dari jam 5.',
+            '4': 'あいだ berarti selama kurun waktu, memerlukan nomina penjelas rentang.'
+          },
+          mnemonicSensei: 'Ada DEADLINE tugas atau setoran? Wajib pakai MADE NI! Ada aksi terus-menerus menginap/belajar? Pakai MADE!',
+          l1InterferenceAlert: 'Dalam bahasa Indonesia kita sering berkata \"Kumpulkan sampai jam 5\". Mengartikannya dengan kata MADE adalah salah besar di ujian Jepang, karena mengumpulkan tugas adalah aksi satu kali klik (instan), bukan aksi berkelanjutan. Wajib pakai MADE NI!',
+          remedialPrescription: {
+            unitId: 'unit-n4-05',
+            unitNumber: 5,
+            unitTitleId: 'Aspek Waktu, Batas Momen & Fase Aksi',
+            lessonId: 'les-n4-u05-01',
+            grammarId: 'gn4-00052',
+            advice: 'Kuasai perbedaan kontras Made vs Made Ni di Unit 5 MateriHub.'
+          }
+        },
+        curriculumRef: {
+          trackId: 'curriculum-n4',
+          unitId: 'unit-n4-05',
+          unitNumber: 5,
+          unitTitleId: 'Aspek Waktu, Batas Momen & Fase Aksi',
+          lessonId: 'les-n4-u05-01',
+          grammarId: 'gn4-00052'
+        }
+      },
+      {
+        id: 'JLPT-N4-S01-Q12',
+        trackType: 'jlpt',
+        level: 'n4',
+        mondaiNumber: 7,
+        mondaiType: 'sentence_star',
+        instructionJp: '★に入るものはどれですか。最もよいものを、1・2・3・4から一つ選びなさい。',
+        instructionId: 'Tentukan kata yang jatuh pada posisi bintang (★).',
+        prompt: '将来 日本で ______ ______ __★__ ______ 勉強しています。',
+        options: ['働く', 'ために', '日本語を', '一生懸命'],
+        correctOptionIndex: 2,
+        starScramble: {
+          leadText: '将来 日本で',
+          tailText: '勉強しています。',
+          tokens: ['働く', 'ために', '一生懸命', '日本語を'],
+          correctOrder: [0, 1, 3, 2],
+          starPosition: 3,
+          fullSentence: '将来 日本で 働く ために 一生懸命 日本語を 勉強しています。'
+        },
+        explanation: {
+          justification: 'Susunan gramatikal yang tepat: 働く (1) [kata kerja kamus] + ために (2) [tujuan niat] + 一生懸命 (3) [adverbia usaha] + 日本語を (4) [objek belajar] + 勉強しています。Kata yang jatuh tepat di posisi bintang ke-3 adalah 「日本語を」 (opsi 3 pada daftar pilihan).',
+          distractorAutopsy: {
+            '1': '働く menempati urutan ke-1 di depan tameni.',
+            '2': 'ために menempati urutan ke-2 (tujuan aksi).',
+            '3': '日本語を adalah KUNCI BENAR (menempati slot bintang ke-3).',
+            '4': '一生懸命 menempati urutan ke-3/4 sebelum kata kerja benkyou shite imasu.'
+          },
+          mnemonicSensei: 'Tujuan (Hataraku tameni) -> Cara usaha (Isshoukenmei) -> Objek (Nihongo o) -> Predikat (Benkyou shite imasu)!',
+          l1InterferenceAlert: 'Klausa tujuan 〜ために selalu diawali kata kerja bentuk kamus biasa (jisho-kei), bukan bentuk masu!',
+          remedialPrescription: {
+            unitId: 'unit-n4-01',
+            unitNumber: 1,
+            unitTitleId: 'Niat, Tekad & Rencana Kehidupan',
+            lessonId: 'les-n4-u01-02',
+            grammarId: 'gn4-00008',
+            advice: 'Pelajari pola tujuan V-jisho + tameni di Unit 1 MateriHub.'
+          }
+        },
+        curriculumRef: {
+          trackId: 'curriculum-n4',
+          unitId: 'unit-n4-01',
+          unitNumber: 1,
+          unitTitleId: 'Niat, Tekad & Rencana Kehidupan',
+          lessonId: 'les-n4-u01-02',
+          grammarId: 'gn4-00008'
+        }
+      },
+      {
+        id: 'JLPT-N4-S01-Q13',
+        trackType: 'jlpt',
+        level: 'n4',
+        mondaiNumber: 7,
+        mondaiType: 'sentence_star',
+        instructionJp: '★に入るものはどれですか。最もよいものを、1・2・3・4から一つ選びなさい。',
+        instructionId: 'Tentukan kata yang jatuh pada posisi bintang (★).',
+        prompt: '毎日 練習して やっと ______ ______ __★__ ______ なりました。',
+        options: ['泳げる', '50メートル', 'ように', 'ぐらい'],
+        correctOptionIndex: 0,
+        explanation: {
+          justification: 'Susunan gramatikal yang tepat: 50メートル (1) + ぐらい (2) + 泳げる (3) [potensial] + ように (4) + なりました。Kata yang menempati posisi bintang ke-3 adalah kata kerja potensial 「泳げる」 (opsi 1 pada pilihan).',
+          distractorAutopsy: {
+            '1': '泳げる adalah KUNCI BENAR (menempati posisi bintang ke-3).',
+            '2': '50メートル berada di posisi ke-1.',
+            '3': 'ように berada di posisi ke-4 menempel pada narimashita.',
+            '4': 'ぐらい berada di posisi ke-2 menempel pada besaran 50 meter.'
+          },
+          mnemonicSensei: 'Jumlah besaran (50-meetoru gurai) + Kemampuan (Oyogeru) + You ni narimashita! Bintang ada di Oyogeru!',
+          l1InterferenceAlert: 'Ingat posisi taksiran gurai diletakkan tepat di belakang angka meterannya (50メートルぐらい).',
+          remedialPrescription: {
+            unitId: 'unit-n4-03',
+            unitNumber: 3,
+            unitTitleId: 'Potensial, Kapasitas & Perubahan Diri',
+            lessonId: 'les-n4-u03-02',
+            grammarId: 'gn4-00035',
+            advice: 'Latih susun kalimat pola perubahan kemampuan You ni naru di Unit 3.'
+          }
+        },
+        curriculumRef: {
+          trackId: 'curriculum-n4',
+          unitId: 'unit-n4-03',
+          unitNumber: 3,
+          unitTitleId: 'Potensial, Kapasitas & Perubahan Diri',
+          lessonId: 'les-n4-u03-02',
+          grammarId: 'gn4-00035'
+        }
+      },
+      {
+        id: 'JLPT-N4-S01-Q14',
+        trackType: 'jlpt',
+        level: 'n4',
+        mondaiNumber: 8,
+        mondaiType: 'short_reading',
+        instructionJp: '次の文章を読んで、質問に答えなさい。答えは、1・2・3・4から最もよいものを一つ選びなさい。',
+        instructionId: 'Bacalah teks memo berikut, lalu tentukan jawaban yang paling tepat dari 1, 2, 3, 4.',
+        prompt: '工場の 作業員は いつ ヘルメットを かぶらなければ なりませんか。',
+        readingPassage: {
+          genre: 'work_memo',
+          passageTitle: '【工場内での 安全管理について】',
+          passageText: '【工場内での 安全管理について】\n\n作業員のみなさんへ\n来週から 新しい 機械の 工事が 始まります。\n事故を 防ぐために、以下の ルールを 守ってください。\n\n1. 工場の中に 入るときは、作業をしていないときでも、必ず ヘルメットを かぶってください。\n2. 走らないで、決められた 通路を 歩いてください。\n3. 気分が 悪くなったときは、すぐに 班長（リーダー）に 連絡してください。\n\n安全第一で 作業を 行いましょう。'
+        },
+        options: [
+          '工場の中に 入るときは、作業をしていないときでも いつも かぶる。',
+          '重い 機械を 動かして 作業をしている ときだけ かぶる。',
+          '工事が 終わって 新しい機械を 使うときだけ かぶる。',
+          '気分が 悪くなった ときだけ かぶる。'
+        ],
+        correctOptionIndex: 0,
+        explanation: {
+          justification: 'Pada aturan nomor 1 tertulis jelas: 「工場の中に 入るときは、作業をしていないときでも、必ず ヘルメットを かぶってください (Saat masuk ke dalam pabrik, meskipun sedang tidak bekerja, wajib mengenakan helm)」.',
+          distractorAutopsy: {
+            '1': '工場の中に 入るときは、作業をしていないときでも いつも かぶる adalah KUNCI BENAR.',
+            '2': 'Hanya saat mengoperasikan mesin berat adalah salah; aturan menegaskan saat tidak kerja pun wajib pakai.',
+            '3': 'Hanya saat proyek selesai adalah salah; aturan berlaku mulai minggu depan saat proyek konstruksi dimulai.',
+            '4': 'Hanya saat merasa tidak enak badan salah konteks (itu instruksi pelaporan ke ketua regu).'
+          },
+          mnemonicSensei: 'Perhatikan frasa kunci: 「作業をしていないときでも、必ず (meski sedang tidak bekerja, wajib...)」! Keselamatan kerja berlaku menyeluruh.',
+          l1InterferenceAlert: 'Banyak peserta terkecoh mengira APD helm hanya dipakai saat mengangkat beban. Teliti kata sambung \"〜ても (meskipun)\" di dalam teks instruksi Jepang!',
+          remedialPrescription: {
+            unitId: 'unit-n4-04',
+            unitNumber: 4,
+            unitTitleId: 'Kemudahan Operasional & Ukuran Sifat',
+            lessonId: 'les-n4-u04-02',
+            vocabId: 'vg-n4-00030',
+            advice: 'Pelajari wacana keselamatan kerja K3 dan instruksi keharusan di Unit 4 MateriHub.'
+          }
+        },
+        curriculumRef: {
+          trackId: 'curriculum-n4',
+          unitId: 'unit-n4-04',
+          unitNumber: 4,
+          unitTitleId: 'Kemudahan Operasional & Ukuran Sifat',
+          lessonId: 'les-n4-u04-02',
+          vocabId: 'vg-n4-00030'
+        }
+      },
+      {
+        id: 'JLPT-N4-S01-Q15',
+        trackType: 'jlpt',
+        level: 'n4',
+        mondaiNumber: 8,
+        mondaiType: 'info_retrieval',
+        instructionJp: '右の案内を見て、質問に答えなさい。答えは、1・2・3・4から最もよいものを一つ選びなさい。',
+        instructionId: 'Perhatikan panduan pembuangan sampah berikut, lalu tentukan jawaban yang tepat.',
+        prompt: 'ガラスの コップを 捨てたいです。いつ、どのように 出しますか。',
+        readingPassage: {
+          genre: 'realia_table',
+          passageTitle: '【家庭ごみの 出し方（中央地区）】',
+          passageText: '【家庭ごみの 出し方（中央地区）】\n\n◆ 燃えるごみ（生ごみ・紙くず・プラスチック袋）：\n・毎週 火曜日・金曜日（指定の黄色い袋に入れて出す）\n\n◆ 燃えないごみ（金属・ガラス製品・小型家電）：\n・毎月 第2・第4水曜日（透明な袋に入れる。割れたものは「キケン」と書く）\n\n◆ 資源ごみ（ペットボトル・缶・ビン）：\n・毎週 木曜日（中を水で洗って、キャップを外して出す）'
+        },
+        options: [
+          '第2・第4水曜日に、透明な袋に入れて「キケン」と書いて出す。',
+          '毎週火曜日に、指定の黄色い袋に入れて出す。',
+          '毎週木曜日に、キャップを外して 水で洗って出す。',
+          'いつでも 好きな曜日に ごみ集積所へ 持って行く。'
+        ],
+        correctOptionIndex: 0,
+        explanation: {
+          justification: 'Gelas kaca (ガラスのコップ) masuk kategori sampah tidak dapat terbakar (燃えないごみ: 金属・ガラス製品). Jadwalnya adalah setiap hari Rabu ke-2 dan ke-4 (毎月第2・第4水曜日), dimasukkan ke kantong transparan, dan jika pecah diberi tulisan \"KIKEN\" (bahaya).',
+          distractorAutopsy: {
+            '1': '第2・第4水曜日に、透明な袋に入れて「キケン」と書いて出す adalah KUNCI BENAR.',
+            '2': 'Selasa dan Jumat adalah jadwal sampah terbakar (燃えるごみ: sisa makanan, kertas).',
+            '3': 'Kamis adalah jadwal sampah daur ulang (資源ごみ: botol pet, kaleng).',
+            '4': 'Di Jepang dilarang membuang sampah sembarang waktu tanpa mengikuti jadwal.'
+          },
+          mnemonicSensei: 'Kaca & Logam = Moenai gomi! Cek tabel: Rabu ke-2 & ke-4. Ingat tulis KIKEN jika tajam/pecah!',
+          l1InterferenceAlert: 'Di Indonesia pemilahan sampah sering tidak ketat. Di Jepang, salah jadwal membuang kaca botol/pecahan bisa menyebabkan sampah dikembalikan dengan stiker pelanggaran merah. Soal ini sangat sering keluar di JLPT N4 dan JFT-Basic!',
+          remedialPrescription: {
+            unitId: 'unit-n4-05',
+            unitNumber: 5,
+            unitTitleId: 'Aspek Waktu, Batas Momen & Fase Aksi',
+            lessonId: 'les-n4-u05-02',
+            vocabId: 'vg-n4-00086',
+            advice: 'Latih membaca formulir dan aturan hidup bermasyarakat Jepang di Unit 5 MateriHub.'
+          }
+        },
+        curriculumRef: {
+          trackId: 'curriculum-n4',
+          unitId: 'unit-n4-05',
+          unitNumber: 5,
+          unitTitleId: 'Aspek Waktu, Batas Momen & Fase Aksi',
+          lessonId: 'les-n4-u05-02',
+          vocabId: 'vg-n4-00086'
+        }
+      }
+    ]
+  };
+}
+
+module.exports = { getJLPTN4Set };

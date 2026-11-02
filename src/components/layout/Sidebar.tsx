@@ -66,7 +66,7 @@ export const Sidebar: React.FC = () => {
             <div className="font-bold text-base text-appText-bright leading-tight tracking-tight">
               Nugget 日本語
             </div>
-            <div className="text-[11px] text-accent font-semibold tracking-wider uppercase">
+            <div className="text-xs text-accent font-semibold tracking-wider uppercase">
               Teman Belajar
             </div>
           </div>
@@ -89,7 +89,7 @@ export const Sidebar: React.FC = () => {
               aria-current={isActive ? 'page' : undefined}
               className={`w-full flex items-center justify-between px-3.5 py-3 rounded-xl text-sm font-medium transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent ${
                 isActive
-                  ? 'bg-amber-500/15 text-accent-hot font-bold border border-amber-500/30 shadow-sm'
+                  ? 'bg-amber-500/15 text-accent-hot font-bold border border-amber-500/35 shadow-sm ring-1 ring-amber-500/20'
                   : 'text-appText/80 hover:bg-surface-2 hover:text-appText-bright'
               }`}
             >
@@ -102,11 +102,11 @@ export const Sidebar: React.FC = () => {
 
               <div className="flex items-center gap-2">
                 {item.badge ? (
-                  <span className="text-[10px] font-bold uppercase tracking-wider px-1.5 py-0.5 rounded-full bg-amber-500/20 text-amber-300 border border-amber-500/30">
+                  <span className="text-xs font-bold uppercase tracking-wider px-2 py-0.5 rounded-full bg-amber-500/20 text-amber-300 border border-amber-500/30">
                     {item.badge}
                   </span>
                 ) : (
-                  <span lang="ja" className="text-[11px] font-jp opacity-40">{item.jp}</span>
+                  <span lang="ja" className="text-xs font-jp opacity-50">{item.jp}</span>
                 )}
               </div>
             </button>
@@ -125,7 +125,7 @@ export const Sidebar: React.FC = () => {
               <Wrench className="w-4 h-4 text-accent group-hover:rotate-12 transition-transform" />
               <span>Kotak Peralatan</span>
             </div>
-            <span className="text-[10px] font-bold px-1.5 py-0.5 rounded bg-amber-500/15 text-accent-hot border border-amber-500/25">
+            <span className="text-xs font-bold px-2 py-0.5 rounded bg-amber-500/15 text-accent-hot border border-amber-500/25">
               7 Alat
             </span>
           </button>
@@ -143,7 +143,7 @@ export const Sidebar: React.FC = () => {
             <Quote className="w-3.5 h-3.5 text-amber-400 group-hover:scale-110 transition-transform" />
             <span>Peribahasa (ことわざ)</span>
           </span>
-          <span className="text-[10px] font-bold px-1.5 py-0.2 rounded bg-amber-500/20 text-accent border border-amber-500/30">
+          <span className="text-xs font-bold px-2 py-0.5 rounded bg-amber-500/20 text-accent border border-amber-500/30">
             52
           </span>
         </button>
@@ -154,7 +154,7 @@ export const Sidebar: React.FC = () => {
           title="Lihat Catatan Rilis & Riwayat Versi Lengkap"
         >
           <span className="group-hover:underline font-mono">{APP_VERSION} · Catatan Rilis</span>
-          <span className="text-accent font-semibold flex items-center gap-1 text-[11px]">
+          <span className="text-accent font-semibold flex items-center gap-1 text-xs">
             <span>Changelog</span>
             <History className="w-3.5 h-3.5 group-hover:rotate-12 transition-transform" />
           </span>

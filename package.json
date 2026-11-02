@@ -1,6 +1,6 @@
 {
   "name": "nugget-nihongo",
-  "version": "21.0.0",
+  "version": "21.1.0",
   "description": "Hybrid PWA for learning Japanese — JLPT N5 to N1, targeting Indonesian speakers",
   "private": true,
   "license": "MIT",
@@ -26,7 +26,7 @@
     "build": "node scripts/sync-changelog.js && node scripts/compile_diagnostics.js && node scripts/build-curriculum-all.js && node scripts/merge-vocab.js && node scripts/merge-grammar.js && node tests/run.js && vite build && node scripts/verify-bundle-budget.js",
     "changelog": "node scripts/sync-changelog.js",
     "build:curriculum": "node scripts/build-curriculum-all.js",
-    "test": "node tests/fsrs-engine.test.js && node tests/cat-engine.test.js && node tests/stores.test.js && node tests/test-curriculum-adapter.js && node scripts/run-persona-simulations.js && node tests/run.js && node tests/test-backend-consolidation.js && node tests/test-backend-exhaustive-audit.js && node tests/test-fallback-integrity.js && node tests/test-curriculum-semantics.js && node tests/test-keigo-module.js && node tests/test-counter-module.js && node tests/test-kotowaza-expansion.js && node tests/test-pitch-accent-module.js && node tests/test-sprint-8-n3-pedagogy.js && node tests/test-curriculum.js && node tests/run-sprints-1-to-44.js && node tests/test-pass3-modal-lifecycle-verification.js && node tests/test-pass4-modernization-security-verification.js && node tests/test-pass5-performance-verification.js",
+    "test": "node tests/fsrs-engine.test.js && node tests/cat-engine.test.js && node tests/stores.test.js && node tests/test-curriculum-adapter.js && node scripts/run-persona-simulations.js && node tests/run.js && node tests/test-backend-consolidation.js && node tests/test-backend-exhaustive-audit.js && node tests/test-fallback-integrity.js && node tests/test-curriculum-semantics.js && node tests/test-keigo-module.js && node tests/test-counter-module.js && node tests/test-kotowaza-expansion.js && node tests/test-pitch-accent-module.js && node tests/test-sprint-8-n3-pedagogy.js && node tests/test-curriculum.js && node tests/run-sprints-1-to-44.js && node tests/test-pass2-learner-profile-verification.js && node tests/test-pass3-modal-lifecycle-verification.js && node tests/test-pass4-modernization-security-verification.js && node tests/test-pass5-performance-verification.js && node tests/test-pass3-homepage-declutter-verification.js && node tests/test-pass4-materihub-declutter.js && node tests/test-pass5-quizpage-declutter.js",
     "test:engines": "node tests/fsrs-engine.test.js && node tests/cat-engine.test.js && node tests/stores.test.js && node tests/test-curriculum-adapter.js",
     "test:personas": "node scripts/run-persona-simulations.js",
     "test:quality": "node tests/quality.js",

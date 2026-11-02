@@ -148,7 +148,7 @@ export const MoraPacingCard: React.FC<MoraPacingCardProps> = ({
 
         {/* Interactive Mora Rhythm Bar */}
         <div className="bg-surface-2/80 p-4 rounded-2xl border border-indigo-500/20 space-y-3">
-          <div className="flex items-center justify-between text-[11px] font-bold text-appText-muted">
+          <div className="flex items-center justify-between text-xs font-bold text-appText-muted">
             <span>Ketukan Mora Merata (Isokroni Fonetik):</span>
             <span className="font-mono text-indigo-400">{morae.length} Mora</span>
           </div>
@@ -166,7 +166,7 @@ export const MoraPacingCard: React.FC<MoraPacingCardProps> = ({
                   }`}
                 >
                   <span className="text-base sm:text-lg font-jp leading-none">{m}</span>
-                  <span className="text-[9px] font-mono opacity-60 mt-0.5">{idx + 1}</span>
+                  <span className="text-xs font-mono opacity-75 mt-0.5">{idx + 1}</span>
                 </div>
               );
             })}

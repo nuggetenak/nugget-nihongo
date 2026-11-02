@@ -74,6 +74,8 @@ export const IMPORT_WHITELIST = new Set([
   'bunpou-theme',
   'bunpou_theme',
   'nn_onboarding_completed',
+  'nn_display_name',
+  'nn_custom_avatar',
 ]);
 
 /**

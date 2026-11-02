@@ -66,7 +66,7 @@ export const QuizExplanationDetail: React.FC<QuizExplanationDetailProps> = ({
             <button
               type="button"
               onClick={() => speakJapanese(jpSentence)}
-              className="px-2 py-1 rounded-lg bg-surface hover:bg-amber-500/20 text-accent transition-all flex items-center gap-1 font-semibold text-[11px] active:scale-95"
+              className="px-2 py-1 rounded-lg bg-surface hover:bg-amber-500/20 text-accent transition-all flex items-center gap-1 font-semibold text-xs active:scale-95"
               title="Dengarkan pelafalan kalimat Jepang"
             >
               <Volume2 className="w-3.5 h-3.5" />
@@ -85,7 +85,7 @@ export const QuizExplanationDetail: React.FC<QuizExplanationDetailProps> = ({
                 meaning_id: translation || rawExplanation,
               })
             }
-            className="px-2.5 py-1 rounded-lg bg-amber-500/15 hover:bg-amber-500/25 border border-amber-500/30 text-amber-300 font-bold transition-all flex items-center gap-1 text-[11px] active:scale-95 shadow-xs"
+            className="px-2.5 py-1 rounded-lg bg-amber-500/15 hover:bg-amber-500/25 border border-amber-500/30 text-amber-300 font-bold transition-all flex items-center gap-1 text-xs active:scale-95 shadow-xs"
             title="Tanya penjelasan kuis ini ke Sensei AI"
           >
             <span>🍵</span>
@@ -106,7 +106,7 @@ export const QuizExplanationDetail: React.FC<QuizExplanationDetailProps> = ({
           {/* Reading (Hiragana / Furigana) */}
           {reading && (
             <div className="text-xs font-jp text-amber-400/90 font-medium flex items-center gap-1.5">
-              <span className="text-[10px] uppercase font-mono px-1 py-0.2 rounded bg-amber-500/15 border border-amber-500/20 text-accent">
+              <span className="text-xs uppercase font-mono px-1.5 py-0.5 rounded bg-amber-500/15 border border-amber-500/20 text-accent font-bold">
                 Bacaan
               </span>
               <span>【{reading}】</span>
@@ -115,7 +115,7 @@ export const QuizExplanationDetail: React.FC<QuizExplanationDetailProps> = ({
 
           {/* Romaji */}
           {romaji && (
-            <div className="text-[11px] font-mono text-appText-muted/80">
+            <div className="text-xs font-mono text-appText-muted/80">
               /{romaji}/
             </div>
           )}
@@ -133,7 +133,7 @@ export const QuizExplanationDetail: React.FC<QuizExplanationDetailProps> = ({
       {/* Pedagogical Explanation Text */}
       {rawExplanation && (
         <div className="text-appText-bright/90 bg-surface/40 p-2.5 rounded-xl border border-accent/10 space-y-1">
-          <div className="text-[10px] font-bold uppercase tracking-wider text-accent">
+          <div className="text-xs font-bold uppercase tracking-wider text-accent">
             Poin Tata Bahasa & Catatan Belajar:
           </div>
           <p className="leading-relaxed text-xs">{rawExplanation}</p>

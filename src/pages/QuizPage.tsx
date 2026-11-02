@@ -594,7 +594,7 @@ export const QuizPage: React.FC = () => {
                     style={{ width: `${((currentIndex + 1) / questions.length) * 100}%` }}
                   />
                 </div>
-                <span className="text-[11px] font-mono font-black text-theme-primary shrink-0">
+                <span className="text-xs font-mono font-black text-theme-primary shrink-0">
                   {currentIndex + 1}/{questions.length}
                 </span>
               </div>
@@ -606,7 +606,7 @@ export const QuizPage: React.FC = () => {
                 <span>{useAppStore.getState().streak} Hari</span>
               </div>
 
-              <span className="text-[10px] font-black uppercase px-2.5 py-1 rounded-full bg-theme-primary/10 border border-theme-primary/25 text-theme-primary font-mono">
+              <span className="text-xs font-black uppercase px-2.5 py-1 rounded-full bg-theme-primary/10 border border-theme-primary/25 text-theme-primary font-mono">
                 {(currentQ?.level || selectedLevel).toUpperCase()}
               </span>
             </div>
@@ -751,7 +751,7 @@ export const QuizPage: React.FC = () => {
                             </div>
                           )}
                           <div className="text-xs text-appText-muted pt-3">
-                            Tap kartu atau tekan <kbd className="font-mono bg-surface-2 px-1.5 py-0.5 rounded text-[10px]">Spasi</kbd> untuk membalik
+                            Tap kartu atau tekan <kbd className="font-mono bg-surface-2 px-2 py-0.5 rounded text-xs">Spasi</kbd> untuk membalik
                           </div>
                         </>
                       ) : (
@@ -766,7 +766,7 @@ export const QuizPage: React.FC = () => {
                       )}
                     </div>
 
-                    <div className="text-[11px] text-appText-muted/50">
+                    <div className="text-xs text-appText-muted/60">
                       {isFlipped ? 'Pilih tingkat pengingatan di bawah' : 'Nugget Nihongo Flashcard'}
                     </div>
                   </div>
@@ -779,28 +779,28 @@ export const QuizPage: React.FC = () => {
                         className="py-3.5 sm:py-4 rounded-2xl bg-red-500/15 dark:bg-red-950/40 hover:bg-red-500/25 dark:hover:bg-red-900/60 border border-red-500/30 text-red-700 dark:text-red-300 text-xs font-bold transition-all flex flex-col items-center gap-1 active:scale-95"
                       >
                         <span>Lupa</span>
-                        <kbd className="text-[9px] opacity-60">1</kbd>
+                        <kbd className="text-xs opacity-75 font-mono">1</kbd>
                       </button>
                       <button
                         onClick={() => handleFlashcardRate(2)}
                         className="py-3.5 sm:py-4 rounded-2xl bg-amber-500/15 dark:bg-amber-950/40 hover:bg-amber-500/25 dark:hover:bg-amber-900/60 border border-amber-500/30 text-amber-700 dark:text-amber-300 text-xs font-bold transition-all flex flex-col items-center gap-1 active:scale-95"
                       >
                         <span>Ragu</span>
-                        <kbd className="text-[9px] opacity-60">2</kbd>
+                        <kbd className="text-xs opacity-75 font-mono">2</kbd>
                       </button>
                       <button
                         onClick={() => handleFlashcardRate(3)}
                         className="py-3.5 sm:py-4 rounded-2xl bg-emerald-500/15 dark:bg-emerald-950/40 hover:bg-emerald-500/25 dark:hover:bg-emerald-900/60 border border-emerald-500/30 text-emerald-700 dark:text-emerald-300 text-xs font-bold transition-all flex flex-col items-center gap-1 active:scale-95"
                       >
                         <span>Ingat</span>
-                        <kbd className="text-[9px] opacity-60">3</kbd>
+                        <kbd className="text-xs opacity-75 font-mono">3</kbd>
                       </button>
                       <button
                         onClick={() => handleFlashcardRate(4)}
                         className="py-3.5 sm:py-4 rounded-2xl bg-sky-500/15 dark:bg-sky-950/40 hover:bg-sky-500/25 dark:hover:bg-sky-900/60 border border-sky-500/30 text-sky-700 dark:text-sky-300 text-xs font-bold transition-all flex flex-col items-center gap-1 active:scale-95"
                       >
                         <span>Mudah</span>
-                        <kbd className="text-[9px] opacity-60">4</kbd>
+                        <kbd className="text-xs opacity-75 font-mono">4</kbd>
                       </button>
                     </div>
                   ) : (
@@ -901,7 +901,7 @@ export const QuizPage: React.FC = () => {
                             <span className="w-7 h-7 rounded-xl bg-surface border border-theme flex items-center justify-center text-xs font-mono font-bold text-appText-muted shrink-0">
                               {idx + 1}
                             </span>
-                            <span className={`truncate ${isJp ? 'font-japanese text-sm sm:text-base font-bold' : 'font-sans text-xs sm:text-sm font-semibold text-text'}`}>
+                            <span className={`truncate ${isJp ? 'font-japanese text-sm sm:text-base font-bold' : 'font-sans text-sm sm:text-base font-semibold text-text'}`}>
                               {opt}
                             </span>
                           </div>
@@ -946,7 +946,7 @@ export const QuizPage: React.FC = () => {
                   </div>
 
                   {/* Assembled Sentence Box */}
-                  <div className="min-h-[76px] bg-surface-2 border border-accent/30 rounded-2xl p-3 sm:p-4 flex flex-wrap gap-2 sm:gap-2.5 items-center">
+                  <div className="min-h-[76px] w-full max-w-full bg-surface-2 border border-accent/30 rounded-2xl p-3 sm:p-4 flex flex-wrap gap-2 sm:gap-2.5 items-center overflow-hidden">
                     {assembledTokens.length === 0 ? (
                       <span className="text-xs text-appText-muted/60 italic px-2">
                         Ketuk kata di bawah untuk mulai menyusun kalimat...
@@ -956,27 +956,27 @@ export const QuizPage: React.FC = () => {
                         <button
                           key={idx}
                           onClick={() => handleRemoveToken(token, idx)}
-                          className="min-h-[44px] px-3.5 py-2 rounded-xl sm:rounded-2xl bg-amber-500 text-bg font-japanese font-bold text-sm sm:text-base shadow-md hover:bg-amber-400 transition-all active:scale-95 flex items-center gap-1.5 border border-amber-600/30"
+                          className="min-h-[44px] max-w-full px-3.5 py-2 rounded-xl sm:rounded-2xl bg-amber-500 text-stone-950 font-japanese font-bold text-sm sm:text-base shadow-md hover:bg-amber-400 transition-all active:scale-95 flex items-center gap-1.5 border border-amber-600/30 break-words shrink-0 sm:shrink"
                           title={`Posisi ke-${idx + 1}: Ketuk untuk membatalkan`}
                         >
-                          <span className="w-5 h-5 rounded-full bg-black/20 text-[10px] font-mono flex items-center justify-center text-bg font-black">
+                          <span className="w-5 h-5 rounded-full bg-black/25 text-xs font-mono flex items-center justify-center text-stone-950 font-black shrink-0">
                             {idx + 1}
                           </span>
-                          <span>{token}</span>
+                          <span className="break-all sm:break-normal">{token}</span>
                         </button>
                       ))
                     )}
                   </div>
 
                   {/* Available Token Chips */}
-                  <div className="flex flex-wrap gap-2 sm:gap-2.5 p-1 sm:p-2">
+                  <div className="flex flex-wrap gap-2 sm:gap-2.5 p-1 sm:p-2 w-full max-w-full overflow-hidden">
                     {availableTokens.map((token, idx) => (
                       <button
                         key={idx}
                         onClick={() => handleAddToken(token, idx)}
-                        className="min-h-[44px] px-4 py-2.5 rounded-xl sm:rounded-2xl bg-surface border-2 border-accent/30 hover:border-accent text-appText-bright font-japanese font-bold text-sm sm:text-base hover:-translate-y-0.5 hover:shadow-glow transition-all shadow-sm active:scale-95"
+                        className="min-h-[44px] max-w-full px-4 py-2.5 rounded-xl sm:rounded-2xl bg-surface border-2 border-accent/30 hover:border-amber-500 text-appText-bright font-japanese font-bold text-sm sm:text-base hover:-translate-y-0.5 hover:shadow-glow transition-all shadow-sm active:scale-95 break-words shrink-0 sm:shrink"
                       >
-                        {token}
+                        <span className="break-all sm:break-normal">{token}</span>
                       </button>
                     ))}
                   </div>
@@ -1013,7 +1013,7 @@ export const QuizPage: React.FC = () => {
                             <span>Belum Tepat</span>
                           </div>
                         )}
-                        <span className="text-[10px] text-muted font-mono hidden sm:inline">[Tekan Enter atau Spasi]</span>
+                        <span className="text-xs text-appText-muted font-mono hidden sm:inline">[Tekan Enter atau Spasi]</span>
                       </div>
                       <p className="text-xs text-text/80 line-clamp-2 leading-relaxed">
                         {feedback.text}

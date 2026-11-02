@@ -16,6 +16,12 @@ export interface AuthState {
   lastSyncedAt: Date | null;
   syncErrorMessage: string | null;
 
+  // Learner Custom Identity
+  customDisplayName: string;
+  customAvatar: string;
+  setCustomDisplayName: (name: string) => Promise<void>;
+  setCustomAvatar: (avatar: string) => Promise<void>;
+
   // Actions
   openAuthModal: (mode?: 'signin' | 'signup') => void;
   closeAuthModal: () => void;
@@ -29,6 +35,16 @@ export interface AuthState {
   syncNow: () => Promise<void>;
 }
 
+function getStoredCustomName(): string {
+  if (typeof window === 'undefined') return '';
+  return localStorage.getItem('nn_display_name') || '';
+}
+
+function getStoredCustomAvatar(): string {
+  if (typeof window === 'undefined') return '';
+  return localStorage.getItem('nn_custom_avatar') || '';
+}
+
 export const useAuthStore = create<AuthState>((set, get) => ({
   user: null,
   session: null,
@@ -38,6 +54,47 @@ export const useAuthStore = create<AuthState>((set, get) => ({
   syncStatus: 'idle',
   lastSyncedAt: null,
   syncErrorMessage: null,
+
+  customDisplayName: getStoredCustomName(),
+  customAvatar: getStoredCustomAvatar(),
+
+  setCustomDisplayName: async (name: string) => {
+    set({ customDisplayName: name });
+    if (typeof window !== 'undefined') {
+      try {
+        localStorage.setItem('nn_display_name', name);
+      } catch {}
+    }
+    const user = get().user;
+    if (user) {
+      try {
+        await supabase.auth.updateUser({
+          data: { full_name: name, display_name: name },
+        });
+      } catch (err) {
+        console.warn('[authStore] updateUser error:', err);
+      }
+    }
+  },
+
+  setCustomAvatar: async (avatar: string) => {
+    set({ customAvatar: avatar });
+    if (typeof window !== 'undefined') {
+      try {
+        localStorage.setItem('nn_custom_avatar', avatar);
+      } catch {}
+    }
+    const user = get().user;
+    if (user && (avatar.startsWith('http') || avatar.startsWith('data:'))) {
+      try {
+        await supabase.auth.updateUser({
+          data: { avatar_url: avatar },
+        });
+      } catch (err) {
+        console.warn('[authStore] updateUser avatar error:', err);
+      }
+    }
+  },
 
   openAuthModal: (mode = 'signin') => {
     set({ isAuthModalOpen: true, authMode: mode });
@@ -53,7 +110,17 @@ export const useAuthStore = create<AuthState>((set, get) => ({
     try {
       set({ isLoading: true });
       const { data: { session } } = await supabase.auth.getSession();
-      set({ session, user: session?.user || null, isLoading: false });
+      const currentUser = session?.user || null;
+      const savedName = getStoredCustomName();
+      const savedAvatar = getStoredCustomAvatar();
+
+      set({
+        session,
+        user: currentUser,
+        customDisplayName: savedName || currentUser?.user_metadata?.full_name || currentUser?.user_metadata?.display_name || '',
+        customAvatar: savedAvatar || currentUser?.user_metadata?.avatar_url || '',
+        isLoading: false,
+      });
 
       if (session?.user) {
         get().syncNow();
@@ -62,7 +129,14 @@ export const useAuthStore = create<AuthState>((set, get) => ({
       // Listen to auth changes
       supabase.auth.onAuthStateChange(async (event, newSession) => {
         const currentUser = newSession?.user || null;
-        set({ session: newSession, user: currentUser });
+        const savedName = getStoredCustomName();
+        const savedAvatar = getStoredCustomAvatar();
+        set({
+          session: newSession,
+          user: currentUser,
+          customDisplayName: savedName || currentUser?.user_metadata?.full_name || currentUser?.user_metadata?.display_name || '',
+          customAvatar: savedAvatar || currentUser?.user_metadata?.avatar_url || '',
+        });
 
         if (event === 'SIGNED_IN' && currentUser) {
           get().syncNow();

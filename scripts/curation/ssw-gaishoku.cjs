@@ -1,0 +1,692 @@
+/**
+ * SSW Gaishoku (Food Service / 外食業) Golden Set 01
+ * Grounded in OTAFF / MAFF Official Textbooks & Sample Prometric Questions
+ * 15 Items: 7 Specific Allergens, HACCP Core Temp, 2-Step Handwashing, Omotenashi & Complaints
+ */
+
+function getSSWGaishokuSet() {
+  return {
+    setId: 'ssw-food-service-set01',
+    trackType: 'ssw',
+    sswSectorId: 'ssw-food-service',
+    title: 'Set Latihan SSW Gaishoku - 01',
+    description: 'Simulasi modular 15 menit menguji pengetahuan 7 alergen utama, standar sanitasi HACCP, suhu bahaya bakteri, etika pelayanan Omotenashi, dan penanganan komplain.',
+    targetUnits: 'Kurikulum Vokasional Gaishoku: Sanitasi Pangan, 7 Alergen, Standar HACCP & Etika Pelayanan',
+    totalItems: 15,
+    timeLimitMinutes: 15,
+    passingScore: 10,
+    items: [
+      {
+        id: 'SSW-GS-S01-Q01',
+        trackType: 'ssw',
+        sswSectorId: 'ssw-food-service',
+        mondaiNumber: 1,
+        mondaiType: 'ssw_technical_terminology',
+        instructionJp: '食品衛生法で表示が義務付けられている「特定原材料（7品目）」について、正しいものを一つ選びなさい。',
+        instructionId: 'Pilihlah salah satu dari 7 bahan alergen utama yang wajib dicantumkan menurut hukum kebersihan pangan Jepang.',
+        prompt: 'アナフィラキシーショックなどを 引き起こすため、日本の 法律で 表示が 義務付けられている「特定原材料7品目」に 含まれる ものは どれですか。',
+        targetWord: '小麦・そば・卵・乳・落花生・えび・かに',
+        options: [
+          '小麦（こむぎ）、そば、卵（たまご）、乳（にゅう）、落花生（ピーナッツ）、えび、かに',
+          '牛肉、豚肉、鶏肉、羊肉、魚肉、白米、大豆',
+          'リンゴ、バナナ、オレンジ、イチゴ、メロン、スイカ、ブドウ',
+          '砂糖、食塩、醤油、味噌、酢、胡椒、唐辛子'
+        ],
+        correctOptionIndex: 0,
+        explanation: {
+          justification: 'Berdasarkan UU Higienitas Pangan Jepang (食品衛生法), 7 bahan alergen fatal yang wajib dicantumkan adalah: Gandum (小麦), Soba (そば), Telur (卵), Susu sapi (乳), Kacang tanah (落花生), Udang (えび), dan Kepiting (かに).',
+          distractorAutopsy: {
+            '1': 'Pilihan 1 adalah KUNCI BENAR (7 bahan alergen utama wajib hukum).',
+            '2': 'Daging sapi/ayam/babi adalah alergen anjuran (21品目), bukan 7 utama wajib.',
+            '3': 'Buah-buahan adalah alergen anjuran, bukan 7 wajib berlabel.',
+            '4': 'Bumbu dapur penyedap bukan alergen 7品目.'
+          },
+          mnemonicSensei: '7 Alergen Maut: Gandum, Soba, Telur, Susu, Kacang tanah, Udang, Kepiting! Salah saji bisa bikin konsumen pingsan syok anafilaksis.',
+          l1InterferenceAlert: 'Di Indonesia label alergen jarang diperiksa ketat di warung makan. Di restoran Jepang, kelalaian menyajikan alergen adalah kasus pidana berat! Soal ini 100% selalu muncul di ujian SSW Gaishoku.',
+          remedialPrescription: {
+            unitId: 'unit-curriculum-ssw-gaishoku-01',
+            unitNumber: 1,
+            unitTitleId: 'Sanitasi Restoran & Manajemen Alergen',
+            lessonId: 'les-ssw-gs-01',
+            vocabId: 'vg-ssw-gs-001',
+            advice: 'Hafalkan 7 kanji alergen wajib di Modul Gaishoku OTAFF MateriHub.'
+          },
+          safetyTip: 'Jika pelanggan bertanya kandungan alergen, jangan menebak! Selalu konfirmasi ke kartu resep koki kepala.'
+        },
+        curriculumRef: {
+          trackId: 'curriculum-ssw-gaishoku',
+          unitId: 'unit-curriculum-ssw-gaishoku-01',
+          unitNumber: 1,
+          unitTitleId: 'Sanitasi Restoran & Manajemen Alergen',
+          lessonId: 'les-ssw-gs-01',
+          vocabId: 'vg-ssw-gs-001'
+        }
+      },
+      {
+        id: 'SSW-GS-S01-Q02',
+        trackType: 'ssw',
+        sswSectorId: 'ssw-food-service',
+        mondaiNumber: 2,
+        mondaiType: 'ssw_k3_procedure',
+        instructionJp: '食中毒菌の増殖を防ぐ「危険温度帯」について、正しい数値を一つ選びなさい。',
+        instructionId: 'Pilihlah rentang suhu bahaya (Danger Zone) di mana bakteri keracunan makanan berkembang biak paling cepat.',
+        prompt: '食中毒を 引き起こす 細菌が 最も 活発に 増殖する「危険温度帯（きけんおんどたい）」は 何度ですか。',
+        options: [
+          '10℃ 〜 60℃',
+          'マイナス18℃ 以下',
+          '75℃ 〜 100℃',
+          '0℃ 〜 4℃'
+        ],
+        correctOptionIndex: 0,
+        explanation: {
+          justification: 'Standar HACCP internasional dan kementerian Jepang menetapkan rentang suhu 10°C sampai 60°C sebagai \"Zona Bahaya (危険温度帯)\", di mana bakteri patogen membelah diri dengan sangat cepat. Makanan matang dilarang dibiarkan di suhu ruangan dalam rentang ini.',
+          distractorAutopsy: {
+            '1': '10℃ 〜 60℃ adalah KUNCI BENAR (suhu emas pertumbuhan kuman makanan).',
+            '2': 'Minus 18℃ adalah standar suhu pembekuan freezer (bakteri dorman tidur).',
+            '3': '75℃ ke atas adalah suhu pemanasan pembunuh bakteri.',
+            '4': '0℃ 〜 4℃ adalah suhu pendingin kulkas chiller yang memperlambat kuman.'
+          },
+          mnemonicSensei: 'Suhu 10 - 60 Derajat Celsius = Surga Kuman! Dinginkan di bawah 10°C, atau panaskan di atas 60°C.',
+          l1InterferenceAlert: 'Di Indonesia makanan sering ditaruh di meja makan seharian pada suhu 28°C. Di restoran Jepang, membiarkan makanan di suhu 28°C selama lebih dari 2 jam adalah pelanggaran berat HACCP!',
+          remedialPrescription: {
+            unitId: 'unit-curriculum-ssw-gaishoku-01',
+            unitNumber: 1,
+            unitTitleId: 'Sanitasi Restoran & Manajemen Alergen',
+            lessonId: 'les-ssw-gs-01',
+            vocabId: 'vg-ssw-gs-008',
+            advice: 'Pelajari grafik suhu pertumbuhan bakteri di Modul Higienitas Pangan MateriHub.'
+          },
+          safetyTip: 'Gunakan termometer tusuk digital untuk memastikan suhu inti makanan matang.'
+        },
+        curriculumRef: {
+          trackId: 'curriculum-ssw-gaishoku',
+          unitId: 'unit-curriculum-ssw-gaishoku-01',
+          unitNumber: 1,
+          unitTitleId: 'Sanitasi Restoran & Manajemen Alergen',
+          lessonId: 'les-ssw-gs-01',
+          vocabId: 'vg-ssw-gs-008'
+        }
+      },
+      {
+        id: 'SSW-GS-S01-Q03',
+        trackType: 'ssw',
+        sswSectorId: 'ssw-food-service',
+        mondaiNumber: 2,
+        mondaiType: 'ssw_k3_procedure',
+        instructionJp: '加熱調理における中心温度と加熱時間の基準として、正しいものを一つ選びなさい。',
+        instructionId: 'Pilihlah standar pemanasan suhu inti makanan dan durasi waktu memasak yang benar menurut standar HACCP.',
+        prompt: '食中毒菌を 死滅させるための 一般的な 加熱基準として、正しいものは どれですか。',
+        options: [
+          '食品の 中心部を 75℃以上で、1分間以上 加熱する。',
+          '食品の 表面だけを 50℃で、5秒間 加熱する。',
+          '電子レンジで 10秒間 温めるだけでよい。',
+          '中心温度が 30℃に なったら 火を止める。'
+        ],
+        correctOptionIndex: 0,
+        explanation: {
+          justification: 'Prinsip Titik Kontrol Kritis (CCP) HACCP: Pemanasan masakan wajib mencapai suhu bagian inti/tengah (中心温度) minimal 75°C selama 1 menit atau lebih (75℃以上で1分間以上). Khusus makanan berisiko Norovirus (kerang tiram/kaki), standarnya 85–90°C selama 90 detik.',
+          distractorAutopsy: {
+            '1': 'Pilihan 1 adalah KUNCI BENAR (standar baku emas: 75℃ 1 menit).',
+            '2': 'Pemanasan 50℃ hanya memanaskan bagian luar, bakteri di bagian dalam daging tetap hidup.',
+            '3': 'Menghangatkan 10 detik microwave tidak membunuh kuman Salmonella/E.coli.',
+            '4': '30℃ justru masuk zona bahaya pertumbuhan bakteri.'
+          },
+          mnemonicSensei: '75 Derajat 1 Menit! Angka keramat koki restoran Jepang untuk membasmi kuman.',
+          l1InterferenceAlert: 'Jangan mengukur kematangan hanya dari warna luar daging. Daging ayam bisa tampak matang di luar tapi bagian intinya masih berdarah mengandung bakteri Campylobacter.',
+          remedialPrescription: {
+            unitId: 'unit-curriculum-ssw-gaishoku-02',
+            unitNumber: 2,
+            unitTitleId: 'Pengolahan Makanan & Titik Kritis CCP',
+            lessonId: 'les-ssw-gs-02',
+            vocabId: 'vg-ssw-gs-015',
+            advice: 'Kuasai standar pemanasan titik kritis CCP di Modul Gaishoku MateriHub.'
+          },
+          safetyTip: 'Catat suhu inti masakan pada formulir pemantauan suhu harian dapur (HACCP log sheet).'
+        },
+        curriculumRef: {
+          trackId: 'curriculum-ssw-gaishoku',
+          unitId: 'unit-curriculum-ssw-gaishoku-02',
+          unitNumber: 2,
+          unitTitleId: 'Pengolahan Makanan & Titik Kritis CCP',
+          lessonId: 'les-ssw-gs-02',
+          vocabId: 'vg-ssw-gs-015'
+        }
+      },
+      {
+        id: 'SSW-GS-S01-Q04',
+        trackType: 'ssw',
+        sswSectorId: 'ssw-food-service',
+        mondaiNumber: 2,
+        mondaiType: 'ssw_k3_procedure',
+        instructionJp: '調理場での交差汚染（二次汚染）を防ぐ方法として、正しいものを一つ選びなさい。',
+        instructionId: 'Pilihlah cara mencegah kontaminasi silang (Kousa Osen) di dapur restoran.',
+        prompt: '生の 肉や 魚に ついた 細菌が、サラダなどの 生野菜に 移る「交差汚染（こうさおせん）」を 防ぐ 方法は どれですか。',
+        options: [
+          '肉用、魚用、野菜用で まな板と 包丁を 色分けして 使い分ける。',
+          '生の 鶏肉を 切った まな板の 上で、洗わずに そのまま トマトを 切る。',
+          '生肉を 触った 手で、手を 洗わずに そのまま 盛り付け皿を 触る。',
+          '冷蔵庫の 最上段に 生の 魚を 置き、その 下に ラップを かけずに サラダを 置く。'
+        ],
+        correctOptionIndex: 0,
+        explanation: {
+          justification: 'Pencegahan kontaminasi silang (二次汚染 / 交差汚染): Wajib membedakan talenan (まな板) dan pisau (包丁) berdasarkan warna dan peruntukan (merah untuk daging merah, biru untuk ikan, hijau/putih untuk sayuran dan makanan matang).',
+          distractorAutopsy: {
+            '1': 'Pilihan 1 adalah KUNCI BENAR (memisahkan talenan & pisau berdasarkan bahan).',
+            '2': 'Memotong tomat di atas bekas ayam mentah menjamin penularan bakteri Campylobacter ke salad.',
+            '3': 'Menyentuh piring dengan tangan bekas daging mentah adalah pelanggaran higienitas berat.',
+            '4': 'Menaruh ikan mentah di atas salad menyebabkan tetesan darah ikan menetes ke salad.'
+          },
+          mnemonicSensei: 'Pisah talenan, pisah pisau! Merah daging, Biru ikan, Hijau sayur. Jangan pernah campur aduk.',
+          l1InterferenceAlert: 'Di rumah tangga Indonesia biasa memakai satu talenan untuk semua bahan. Di dapur profesional restoran Jepang, mencampur talenan ayam mentah dengan sayuran salad bisa berujung penutupan paksa restoran oleh dinas kesehatan!',
+          remedialPrescription: {
+            unitId: 'unit-curriculum-ssw-gaishoku-02',
+            unitNumber: 2,
+            unitTitleId: 'Pengolahan Makanan & Titik Kritis CCP',
+            lessonId: 'les-ssw-gs-02',
+            vocabId: 'vg-ssw-gs-018',
+            advice: 'Pelajari aturan higienitas zonasi dapur di Unit 2 Gaishoku MateriHub.'
+          },
+          safetyTip: 'Talenan setelah dicuci wajib disemprot alkohol dan dikeringkan di lemari sterilisasi sinar UV.'
+        },
+        curriculumRef: {
+          trackId: 'curriculum-ssw-gaishoku',
+          unitId: 'unit-curriculum-ssw-gaishoku-02',
+          unitNumber: 2,
+          unitTitleId: 'Pengolahan Makanan & Titik Kritis CCP',
+          lessonId: 'les-ssw-gs-02',
+          vocabId: 'vg-ssw-gs-018'
+        }
+      },
+      {
+        id: 'SSW-GS-S01-Q05',
+        trackType: 'ssw',
+        sswSectorId: 'ssw-food-service',
+        mondaiNumber: 3,
+        mondaiType: 'ssw_hou_ren_so_sbar',
+        instructionJp: '接客（おもてなし）における「基本の挨拶用語」として、正しいものを一つ選びなさい。',
+        instructionId: 'Pilihlah salam pelayanan pelanggan (Omotenashi) yang benar saat menyambut tamu yang baru datang masuk restoran.',
+        prompt: 'お客様が レストランの ドアを 開けて 入って 来られました。最初の 挨拶として 正しいものは どれですか。',
+        options: [
+          '「いらっしゃいませ。何名様でいらっしゃいますか。」',
+          '「お疲れ様でした。早く座ってください。」',
+          '「ごちそうさまでした。また来てください。」',
+          '「こんにちは。何か用ですか。」'
+        ],
+        correctOptionIndex: 0,
+        explanation: {
+          justification: 'Frasa standar nomor satu pelayanan restoran Jepang saat tamu masuk: 「いらっしゃいませ。何名様でいらっしゃいますか (Selamat datang. Untuk berapa orang?)」 dengan posisi membungkuk hormat (会釈 15度 atau 敬礼 30度).',
+          distractorAutopsy: {
+            '1': 'Pilihan 1 adalah KUNCI BENAR (salam standar omotenashi).',
+            '2': 'Otsukaresama desu adalah salam untuk rekan kerja, bukan pelanggan.',
+            '3': 'Gochisousama deshita diucapkan saat selesai makan/pulang.',
+            '4': 'Nanika you desu ka (ada perlu apa) sangat kasar dan terkesan mencurigai tamu.'
+          },
+          mnemonicSensei: 'Tamu datang: Irasshaimase! Tanyakan jumlah orang: Nan-mei sama de irasshaimasu ka?',
+          l1InterferenceAlert: 'Jangan menghitung tamu dengan \"nan-nin\"! Gunakan sebutan kehormatan formal untuk tamu: 「何名様 (Nan-mei sama)」.',
+          remedialPrescription: {
+            unitId: 'unit-curriculum-ssw-gaishoku-03',
+            unitNumber: 3,
+            unitTitleId: 'Layanan Pelanggan (Omotenashi) & Etika Restoran',
+            lessonId: 'les-ssw-gs-03',
+            vocabId: 'vg-ssw-gs-024',
+            advice: 'Pelajari 7 salam emas pelayan restoran Jepang di Unit 3 MateriHub.'
+          }
+        },
+        curriculumRef: {
+          trackId: 'curriculum-ssw-gaishoku',
+          unitId: 'unit-curriculum-ssw-gaishoku-03',
+          unitNumber: 3,
+          unitTitleId: 'Layanan Pelanggan (Omotenashi) & Etika Restoran',
+          lessonId: 'les-ssw-gs-03',
+          vocabId: 'vg-ssw-gs-024'
+        }
+      },
+      {
+        id: 'SSW-GS-S01-Q06',
+        trackType: 'ssw',
+        sswSectorId: 'ssw-food-service',
+        mondaiNumber: 3,
+        mondaiType: 'ssw_hou_ren_so_sbar',
+        instructionJp: '料理に異物（髪の毛など）が混入していたというクレームへの対応として、適切なものを一つ選びなさい。',
+        instructionId: 'Pilihlah langkah penanganan komplain (Kureemu Taiou) yang benar saat pelanggan mengadu ada rambut di dalam makanannya.',
+        prompt: 'お客様から「ラーメンの中に 髪の毛が 入っているぞ！」と 怒って 指摘されました。最初の 対応として 最も 適切なものは どれですか。',
+        options: [
+          '「大変申し訳ございません。ご不快な思いをさせてしまいました」と 深く謝罪し、すぐに 料理を 下げて 店長に 報告する。',
+          '「これは 私の 髪の毛ではありませんから、お客様の 髪の毛ですよ」と 言い返す。',
+          '「髪の毛くらい 誰にでも ありますよ」と 笑って 相手にしない。',
+          '無言で その 髪の毛だけを 指で つまんで 捨て、「これで 大丈夫です」と 言う。'
+        ],
+        correctOptionIndex: 0,
+        explanation: {
+          justification: 'Prinsip penanganan komplain (クレーム対応): 1. Meminta maaf dengan tulus atas ketidaknyamanan yang dialami tamu (不快な思いをさせたことへの初期謝罪), 2. Membawa piring masakan bermasalah ke dapur, 3. Segera melapor ke manajer/atasan (店長への即時報告). Dilarang membantah atau menyalahkan tamu.',
+          distractorAutopsy: {
+            '1': 'Pilihan 1 adalah KUNCI BENAR (meminta maaf atas ketidaknyamanan dan segera lapor manajer).',
+            '2': 'Menuduh rambut milik pelanggan memicu kemarahan besar dan viral komplain publik.',
+            '3': 'Meremehkan keluhan adalah pelanggaran berat etika pelayanan.',
+            '4': 'Mengambil rambut dengan jari mempermalukan pelanggan dan sangat jorok.'
+          },
+          mnemonicSensei: 'Minta maaf dulu atas ketidaknyamanannya, bawa piringnya, langsung lapor Tenchou!',
+          l1InterferenceAlert: 'Meminta maaf di tahap awal (初期謝罪) bukan berarti mengakui kesalahan secara legal, melainkan menunjukkan simpati atas rasa tidak nyaman yang dirasakan tamu.',
+          remedialPrescription: {
+            unitId: 'unit-curriculum-ssw-gaishoku-03',
+            unitNumber: 3,
+            unitTitleId: 'Layanan Pelanggan (Omotenashi) & Etika Restoran',
+            lessonId: 'les-ssw-gs-03',
+            vocabId: 'vg-ssw-gs-028',
+            advice: 'Kuasai 4 tahap penanganan komplain restoran di Unit 3 Gaishoku MateriHub.'
+          },
+          safetyTip: 'Simpan sampel makanan yang mengandung benda asing untuk diinspeksi oleh manajer toko.'
+        },
+        curriculumRef: {
+          trackId: 'curriculum-ssw-gaishoku',
+          unitId: 'unit-curriculum-ssw-gaishoku-03',
+          unitNumber: 3,
+          unitTitleId: 'Layanan Pelanggan (Omotenashi) & Etika Restoran',
+          lessonId: 'les-ssw-gs-03',
+          vocabId: 'vg-ssw-gs-028'
+        }
+      },
+      {
+        id: 'SSW-GS-S01-Q07',
+        trackType: 'ssw',
+        sswSectorId: 'ssw-food-service',
+        mondaiNumber: 2,
+        mondaiType: 'ssw_k3_procedure',
+        instructionJp: '調理従事者の健康管理と衛生ルールについて、正しいものを一つ選びなさい。',
+        instructionId: 'Pilihlah aturan higienitas kesehatan staf dapur restoran yang benar.',
+        prompt: '調理スタッフが 朝から 下痢（げり）や 嘔吐（おうと）の 症状が ある場合、どうしなければ なりませんか。',
+        options: [
+          '出勤前に 店長に 連絡し、ノロウイルスの 疑いが あるため 調理業務に 入らず 休む。',
+          '下痢止め薬を 飲んで 我慢しながら、誰にも 言わずに 生野菜サラダを 盛り付ける。',
+          'マスクさえ つければ、嘔吐しながらでも 厨房で 料理を 作ってよい。',
+          '体調が 悪いので、味見（味の確認）だけを 担当する。'
+        ],
+        correctOptionIndex: 0,
+        explanation: {
+          justification: 'Aturan mutlak kebersihan pangan: Staf yang mengalami diare (下痢), mual, atau muntah (嘔吐) dilarang keras menyentuh makanan karena merupakan gejala khas infeksi Norovirus yang sangat menular. Staf wajib melapor ke atasan dan dibebastugaskan dari pengolahan makanan.',
+          distractorAutopsy: {
+            '1': 'Pilihan 1 adalah KUNCI BENAR (lapor atasan dan tidak boleh memegang makanan).',
+            '2': 'Menahan diare dan membuat salad adalah penyebab utama wabah keracunan makanan massal.',
+            '3': 'Masker tidak bisa mencegah penyebaran virus melalui tangan dan feses.',
+            '4': 'Mencicipi makanan justru mencemari makanan dengan air liur.'
+          },
+          mnemonicSensei: 'Muntah atau Diare? DILARANG MASUK DAPUR! Norovirus bisa bikin seisi restoran tutup.',
+          l1InterferenceAlert: 'Di Jepang, kejujuran melapor saat sakit perut adalah kewajiban hukum. Menyembunyikan diare dan tetap bekerja di dapur bisa berujung tuntutan ganti rugi miliaran yen jika terjadi wabah keracunan makanan.',
+          remedialPrescription: {
+            unitId: 'unit-curriculum-ssw-gaishoku-01',
+            unitNumber: 1,
+            unitTitleId: 'Sanitasi Restoran & Manajemen Alergen',
+            lessonId: 'les-ssw-gs-01',
+            vocabId: 'vg-ssw-gs-008',
+            advice: 'Pelajari lembar periksa kesehatan harian staf dapur (Kenkouchou) di Unit 1 MateriHub.'
+          },
+          safetyTip: 'Wajib melakukan pemeriksaan tes feses (Kenkai-ben) secara berkala satu bulan sekali.'
+        },
+        curriculumRef: {
+          trackId: 'curriculum-ssw-gaishoku',
+          unitId: 'unit-curriculum-ssw-gaishoku-01',
+          unitNumber: 1,
+          unitTitleId: 'Sanitasi Restoran & Manajemen Alergen',
+          lessonId: 'les-ssw-gs-01',
+          vocabId: 'vg-ssw-gs-008'
+        }
+      },
+      {
+        id: 'SSW-GS-S01-Q08',
+        trackType: 'ssw',
+        sswSectorId: 'ssw-food-service',
+        mondaiNumber: 1,
+        mondaiType: 'ssw_technical_terminology',
+        instructionJp: '調理機器の安全操作について、正しいものを一つ選びなさい。',
+        instructionId: 'Pilihlah prosedur keselamatan mengoperasikan mesin pemotong bahan makanan (Slicer).',
+        prompt: 'ミートスライサー（肉を切る回転刃の機械）を 清掃・分解する際、最初に 必ず 行うべき 安全動作は どれですか。',
+        options: [
+          '電源プラグを コンセントから 完全に 抜いて、刃が 完全に 停止したのを 確認する。',
+          '機械の スイッチを 入れたまま、濡れた ふきんで 回転刃を 拭く。',
+          '刃が 回っている 最中に、指で 詰まった 肉のカスを 掻き出す。',
+          '電源を切らずに、上から 直接 水を ジャブジャブ かけて 洗う。'
+        ],
+        correctOptionIndex: 0,
+        explanation: {
+          justification: 'Keselamatan mesin berputar dapur (スライサーの清掃): Sebelum membersihkan atau membongkar pisau putar, wajib mematikan saklar utama dan mencabut steker dari stopkontak (電源プラグを抜く), serta memastikan putaran pisau benar-benar berhenti total untuk mencegah putus jari tangan.',
+          distractorAutopsy: {
+            '1': 'Pilihan 1 adalah KUNCI BENAR (cabut steker listrik dan pastikan pisau berhenti total).',
+            '2': 'Mengelap pisau yang sedang berputar menyebabkan kain terlilit dan jari terpotong.',
+            '3': 'Memasukkan jari ke mesin berputar adalah kecelakaan amputasi paling sering di dapur.',
+            '4': 'Menyiram air pada mesin berlistrik memicu sengatan listrik (kanden) dan korsleting.'
+          },
+          mnemonicSensei: 'Cabut colokan listrik dulu baru bersihkan pisau! Jangan pernah menyentuh mesin yang masih tersambung daya.',
+          l1InterferenceAlert: 'Hanya menekan tombol OFF belum aman, karena tombol bisa tertekan tidak sengaja oleh siku. Cabut steker fisiknya!',
+          remedialPrescription: {
+            unitId: 'unit-curriculum-ssw-gaishoku-02',
+            unitNumber: 2,
+            unitTitleId: 'Pengolahan Makanan & Titik Kritis CCP',
+            lessonId: 'les-ssw-gs-02',
+            vocabId: 'vg-ssw-gs-015',
+            advice: 'Pelajari SOP pengoperasian mesin pemotong daging di Unit 2 Gaishoku MateriHub.'
+          },
+          safetyTip: 'Gunakan sarung tangan anti-potong (taiseisetsu tebukuro) berbahan kawat baja saat memegang mata pisau.'
+        },
+        curriculumRef: {
+          trackId: 'curriculum-ssw-gaishoku',
+          unitId: 'unit-curriculum-ssw-gaishoku-02',
+          unitNumber: 2,
+          unitTitleId: 'Pengolahan Makanan & Titik Kritis CCP',
+          lessonId: 'les-ssw-gs-02',
+          vocabId: 'vg-ssw-gs-015'
+        }
+      },
+      {
+        id: 'SSW-GS-S01-Q09',
+        trackType: 'ssw',
+        sswSectorId: 'ssw-food-service',
+        mondaiNumber: 2,
+        mondaiType: 'ssw_k3_procedure',
+        instructionJp: '正しい「2度洗い手洗い手順」について、適切なものを一つ選びなさい。',
+        instructionId: 'Pilihlah prosedur cuci tangan dua tahap (Nido-arai) yang benar sebelum mulai memasak di dapur.',
+        prompt: '調理場に 入る前の「2度洗い（にどあらい）」の 理由として、正しいものは どれですか。',
+        options: [
+          '1回目の 手洗いで 脂汚れを 落とし、2回目で 細菌や ウイルスを 確実に 除去するため。',
+          '水道代が 余っているから、時間を つぶすため。',
+          '石鹸の 匂いを 手に 強く 残して 香水代わりに するため。',
+          '1回目を 洗った 後、手を 拭かずに 厨房の ドアノブを 触るため。'
+        ],
+        correctOptionIndex: 0,
+        explanation: {
+          justification: 'Konsep cuci tangan dua kali (二度洗い / nido-arai): Cuci pertama mengangkat kotoran lemak dan protein yang menutupi kulit tangan, dan cuci kedua membasmi bakteri patogen dan virus yang tersembunyi di pori-pori kulit sehingga tangan benar-benar steril higienis.',
+          distractorAutopsy: {
+            '1': 'Pilihan 1 adalah KUNCI BENAR (cuci 1 angkat lemak, cuci 2 basmi kuman virus).',
+            '2': 'Bukan untuk membuang air.',
+            '3': 'Sabun dapur restoran tidak boleh berpewangi karena baunya mencemari aroma masakan.',
+            '4': 'Menyentuh knop pintu setelah cuci tangan tangan mengkontaminasi ulang tangan.'
+          },
+          mnemonicSensei: 'Cuci pertama lunturkan minyak, cuci kedua basmi kuman! Dua kali cuci, tangan steril sempurna.',
+          l1InterferenceAlert: 'Di restoran Jepang sabun wajib jenis tanpa pewangi (無香料). Sabun cuci tangan wangi bunga dilarang keras di dapur karena mengkontaminasi rasa masakan sushi dan kaldu sup!',
+          remedialPrescription: {
+            unitId: 'unit-curriculum-ssw-gaishoku-01',
+            unitNumber: 1,
+            unitTitleId: 'Sanitasi Restoran & Manajemen Alergen',
+            lessonId: 'les-ssw-gs-01',
+            vocabId: 'vg-ssw-gs-008',
+            advice: 'Pelajari standar 2-step handwashing OTAFF di Unit 1 Gaishoku MateriHub.'
+          }
+        },
+        curriculumRef: {
+          trackId: 'curriculum-ssw-gaishoku',
+          unitId: 'unit-curriculum-ssw-gaishoku-01',
+          unitNumber: 1,
+          unitTitleId: 'Sanitasi Restoran & Manajemen Alergen',
+          lessonId: 'les-ssw-gs-01',
+          vocabId: 'vg-ssw-gs-008'
+        }
+      },
+      {
+        id: 'SSW-GS-S01-Q10',
+        trackType: 'ssw',
+        sswSectorId: 'ssw-food-service',
+        mondaiNumber: 1,
+        mondaiType: 'ssw_technical_terminology',
+        instructionJp: '会計（お会計）時の接客用語として、正しいものを一つ選びなさい。',
+        instructionId: 'Pilihlah ungkapan kasir yang benar saat menerima uang pembayaran dari tamu.',
+        prompt: 'レジで 1,000円の 会計に対し、お客様から 5,000円札を 預かりました。お札を 受け取るときの 正しい 言葉遣いは どれですか。',
+        options: [
+          '「5,000円 お預かりいたします。」',
+          '「5,000円からで よろしかったでしょうか。」',
+          '「5,000円 いただきます。」',
+          '「5,000円 もらいます。」'
+        ],
+        correctOptionIndex: 0,
+        explanation: {
+          justification: 'Saat menerima uang lembaran yang masih memerlukan kembalian, kata yang baku adalah 「〜円お預かりいたします (Saya terima uang sebesar ... rupiah/yen)」. Frasa 「5,000円から」 adalah bahasa Jepang toko yang keliru (Baito Keigo). Kata 「いただきます」 hanya dipakai jika uangnya pas tanpa kembalian.',
+          distractorAutopsy: {
+            '1': '「5,000円 お預かりいたします」 adalah KUNCI BENAR (karena ada uang kembalian 4.000 yen).',
+            '2': '「5,000円からで...」 adalah bahasa Jepang salah kaprah (Baito-keigo) yang dihindari dalam standar resmi restoran.',
+            '3': '「いただきます」 hanya jika uangnya pas tepat 1.000 yen.',
+            '4': '「もらいます」 sangat tidak sopan kepada pelanggan.'
+          },
+          mnemonicSensei: 'Ada kembalian? Pakai O-AZUKARI ITASHIMASU! Uang pas tanpa kembalian? Pakai ITADAKIMASU!',
+          l1InterferenceAlert: 'Dalam bahasa Indonesia kita cukup bilang \"Uangnya 5 ribu ya\". Di kasir restoran Jepang, perbedaan antara \"o-azukari\" (uang dititipkan untuk dikembalikan sisanya) dan \"itadakimasu\" (uang pas diterima) sangat diuji!',
+          remedialPrescription: {
+            unitId: 'unit-curriculum-ssw-gaishoku-03',
+            unitNumber: 3,
+            unitTitleId: 'Layanan Pelanggan (Omotenashi) & Etika Restoran',
+            lessonId: 'les-ssw-gs-03',
+            vocabId: 'vg-ssw-gs-024',
+            advice: 'Pelajari etika transaksi kasir dan larangan Baito-keigo di Unit 3 MateriHub.'
+          }
+        },
+        curriculumRef: {
+          trackId: 'curriculum-ssw-gaishoku',
+          unitId: 'unit-curriculum-ssw-gaishoku-03',
+          unitNumber: 3,
+          unitTitleId: 'Layanan Pelanggan (Omotenashi) & Etika Restoran',
+          lessonId: 'les-ssw-gs-03',
+          vocabId: 'vg-ssw-gs-024'
+        }
+      },
+      {
+        id: 'SSW-GS-S01-Q11',
+        trackType: 'ssw',
+        sswSectorId: 'ssw-food-service',
+        mondaiNumber: 2,
+        mondaiType: 'ssw_k3_procedure',
+        instructionJp: '油の過熱による火災防止について、適切なものを一つ選びなさい。',
+        instructionId: 'Pilihlah prosedur pencegahan kebakaran minyak goreng (Kyuutou/Furaiyaa) yang benar di dapur.',
+        prompt: 'フライヤー（揚げ物器）の 油を 加熱している最中に、その場を 離れるときの 正しい 行動は どれですか。',
+        options: [
+          '絶対に 加熱したまま その場を 離れず、離れる必要が あるときは 必ず 火（電源）を 消す。',
+          '強火にしたまま、外へ タバコを 吸いに 行く。',
+          '油から 煙が 出ていても、「まだ大丈夫」と 思って 放置する。',
+          '油に 水を コップ一杯 注ぎ入れてから 立ち去る。'
+        ],
+        correctOptionIndex: 0,
+        explanation: {
+          justification: 'Pencegahan kebakaran minyak goreng: Minyak goreng yang dipanaskan tanpa pengawasan bisa mencapai titik nyala (370°C) dan meledak terbakar sendiri dalam belasan menit. Petugas dilarang meninggalkan penggorengan saat api menyala. Jika harus meninggalkan dapur, wajib mematikan sumber panas (必ず火を消す).',
+          distractorAutopsy: {
+            '1': 'Pilihan 1 adalah KUNCI BENAR (matikan api jika meninggalkan fryer).',
+            '2': 'Meninggalkan api besar untuk merokok adalah penyebab utama kebakaran restoran hangus.',
+            '3': 'Minyak berasap adalah tanda sudah mendekati titik nyala kebakaran hebat.',
+            '4': 'Menyiram air ke dalam minyak panas memicu ledakan uap uap bola api (bleve/fireball).'
+          },
+          mnemonicSensei: 'Minyak panas JANGAN PERNAH ditinggal! Mau pergi sedetik pun, MATIKAN APINYA DULU.',
+          l1InterferenceAlert: 'Jangan pernah menyiram air pada wajan minyak yang terbakar! Padamkan dengan menutup tutup panci atau menggunakan alat pemadam api busa kimia khusus dapur (K-class).',
+          remedialPrescription: {
+            unitId: 'unit-curriculum-ssw-gaishoku-02',
+            unitNumber: 2,
+            unitTitleId: 'Pengolahan Makanan & Titik Kritis CCP',
+            lessonId: 'les-ssw-gs-02',
+            vocabId: 'vg-ssw-gs-015',
+            advice: 'Pelajari SOP pencegahan kebakaran minyak dapur di Unit 2 Gaishoku MateriHub.'
+          },
+          safetyTip: 'Ketahui letak tombol pemutus gas darurat (gasu kinkyuu-teishi) di dapur restoran Anda.'
+        },
+        curriculumRef: {
+          trackId: 'curriculum-ssw-gaishoku',
+          unitId: 'unit-curriculum-ssw-gaishoku-02',
+          unitNumber: 2,
+          unitTitleId: 'Pengolahan Makanan & Titik Kritis CCP',
+          lessonId: 'les-ssw-gs-02',
+          vocabId: 'vg-ssw-gs-015'
+        }
+      },
+      {
+        id: 'SSW-GS-S01-Q12',
+        trackType: 'ssw',
+        sswSectorId: 'ssw-food-service',
+        mondaiNumber: 1,
+        mondaiType: 'ssw_technical_terminology',
+        instructionJp: '食品の保管場所（先入れ先出し）のルールとして、正しいものを一つ選びなさい。',
+        instructionId: 'Pilihlah prinsip First-In First-Out (Saki-ire Saki-dashi) dalam penyimpanan bahan baku makanan.',
+        prompt: '食材を 保管・使用する際の「先入れ先出し（さきいれ・さきだし）」の ルールとして、正しいものは どれですか。',
+        options: [
+          '賞味期限が 古い（先に入荷した）食材から 順番に 手前に並べて 先に 使い切る。',
+          '新しく 届いた 食材ばかりを 先に 使って、古い 食材は 奥に 放置する。',
+          '賞味期限の 日付を 見ずに、適当に 手前にある ものだけを 使う。',
+          '腐りかけた 食材を 冷凍庫に 隠して、何ヶ月も 保管する。'
+        ],
+        correctOptionIndex: 0,
+        explanation: {
+          justification: 'Prinsip First-In First-Out (先入れ先出し / Saki-ire Saki-dashi): Bahan baku yang datang lebih dulu atau mendekati masa kadaluwarsa diletakkan di bagian depan untuk digunakan terlebih dahulu, agar bahan makanan tidak basi membusuk di gudang belakang.',
+          distractorAutopsy: {
+            '1': 'Pilihan 1 adalah KUNCI BENAR (masuk duluan dipakai duluan).',
+            '2': 'Memakai yang baru dan menimbun yang lama menyebabkan pembusukan bahan makanan.',
+            '3': 'Tidak mengecek tanggal kadaluwarsa melanggar audit inventaris HACCP.',
+            '4': 'Menyimpan makanan basi di freezer adalah pelanggaran hukum sanitasi.'
+          },
+          mnemonicSensei: 'Saki-ire Saki-dashi = Yang masuk duluan, itu yang keluar dimasak duluan! Jangan timbun barang lama di pojokan.',
+          l1InterferenceAlert: 'Dalam bahasa Indonesia dikenal sebagai sistem FIFO. Di restoran Jepang, istilah bakunya adalah 先入れ先出し (Saki-ire Saki-dashi). Selalu beri stiker label tanggal penerimaan!',
+          remedialPrescription: {
+            unitId: 'unit-curriculum-ssw-gaishoku-01',
+            unitNumber: 1,
+            unitTitleId: 'Sanitasi Restoran & Manajemen Alergen',
+            lessonId: 'les-ssw-gs-01',
+            vocabId: 'vg-ssw-gs-008',
+            advice: 'Pelajari manajemen penyimpanan inventaris FIFO di Unit 1 MateriHub.'
+          }
+        },
+        curriculumRef: {
+          trackId: 'curriculum-ssw-gaishoku',
+          unitId: 'unit-curriculum-ssw-gaishoku-01',
+          unitNumber: 1,
+          unitTitleId: 'Sanitasi Restoran & Manajemen Alergen',
+          lessonId: 'les-ssw-gs-01',
+          vocabId: 'vg-ssw-gs-008'
+        }
+      },
+      {
+        id: 'SSW-GS-S01-Q13',
+        trackType: 'ssw',
+        sswSectorId: 'ssw-food-service',
+        mondaiNumber: 2,
+        mondaiType: 'ssw_k3_procedure',
+        instructionJp: '厨房内の清掃・衛生管理「5S」について、正しい組み合わせを一つ選びなさい。',
+        instructionId: 'Pilihlah urutan dan pengertian budaya kerja 5S yang benar di lingkungan dapur restoran.',
+        prompt: '日本の 飲食店で 徹底されている「5S活動」の 内容として、正しいものは どれですか。',
+        options: [
+          '整理（要るものと要らないものを分ける）、整頓（決められた場所に置く）、清掃、清潔、躾（習慣化）',
+          '睡眠、食事、散歩、水泳、掃除',
+          '親切、素直、誠実、即答、責任',
+          'スピード、スマイル、サービス、サプライズ、セールス'
+        ],
+        correctOptionIndex: 0,
+        explanation: {
+          justification: 'Prinsip 5S di industri Jepang: 1. 整理 (Seiri = pilah buang barang tidak perlu), 2. 整頓 (Seiton = tata rapi di tempat yang ditentukan), 3. 清掃 (Seisou = bersihkan kotoran), 4. 清潔 (Seiketsu = jaga keadaan bersih terus menerus), 5. 躾 (Shitsuke = disiplin membiasakan aturan).',
+          distractorAutopsy: {
+            '1': 'Pilihan 1 adalah KUNCI BENAR (Seiri, Seiton, Seisou, Seiketsu, Shitsuke).',
+            '2': 'Tidur dan makan adalah aktivitas pribadi, bukan pilar 5S tempat kerja.',
+            '3': 'Sifat moral bukan pilar 5S sanitasi operasional.',
+            '4': 'Slogan marketing bukan 5S operasional dapur.'
+          },
+          mnemonicSensei: '5S: Seiri (Pilah buang), Seiton (Tata rapi), Seisou (Sapu pel bersih), Seiketsu (Jaga higienis), Shitsuke (Disiplin diri)!',
+          l1InterferenceAlert: 'Dalam bahasa Indonesia sering diterjemahkan sebagai 5R (Ringkas, Rapi, Resik, Rawat, Rajin). Di Jepang ujian Prometric memakai istilah asli huruf kanji Jepangnya.',
+          remedialPrescription: {
+            unitId: 'unit-curriculum-ssw-gaishoku-01',
+            unitNumber: 1,
+            unitTitleId: 'Sanitasi Restoran & Manajemen Alergen',
+            lessonId: 'les-ssw-gs-01',
+            vocabId: 'vg-ssw-gs-001',
+            advice: 'Pelajari budaya 5S standar restoran Jepang di Unit 1 Gaishoku MateriHub.'
+          }
+        },
+        curriculumRef: {
+          trackId: 'curriculum-ssw-gaishoku',
+          unitId: 'unit-curriculum-ssw-gaishoku-01',
+          unitNumber: 1,
+          unitTitleId: 'Sanitasi Restoran & Manajemen Alergen',
+          lessonId: 'les-ssw-gs-01',
+          vocabId: 'vg-ssw-gs-001'
+        }
+      },
+      {
+        id: 'SSW-GS-S01-Q14',
+        trackType: 'ssw',
+        sswSectorId: 'ssw-food-service',
+        mondaiNumber: 3,
+        mondaiType: 'ssw_hou_ren_so_sbar',
+        instructionJp: '料理の配膳（テーブルへの提供）の基本ルールとして、正しいものを一つ選びなさい。',
+        instructionId: 'Pilihlah tata krama menyajikan hidangan ke meja tamu yang benar.',
+        prompt: '出来上がった 料理を お客様の テーブルに 運ぶときの 動作として、最も 適切なものは どれですか。',
+        options: [
+          '「お待たせいたしました」と 声をかけ、器の 内側や 飲み口に 指を 触れずに 提供する。',
+          '無言で ドンと 音を 立てて テーブルに 皿を 叩きつける。',
+          'グラスの 飲み口の フチを 指で つまんで 運ぶ。',
+          '他の 客席を 見つめながら、片手で 投げやりに 置く。'
+        ],
+        correctOptionIndex: 0,
+        explanation: {
+          justification: 'Etika penyajian hidangan meja (配膳 / Haizen): Menyapa ramah 「お待たせいたしました (Terima kasih telah menunggu)」, meletakkan dengan lembut kedua tangan, dan tidak menyentuh bagian dalam mangkuk atau bibir gelas minum tempat mulut tamu menempel.',
+          distractorAutopsy: {
+            '1': 'Pilihan 1 adalah KUNCI BENAR (sapa ramah dan menjaga kebersihan bibir gelas/piring).',
+            '2': 'Menghempas piring dengan kasar melanggar etika pelayanan restoran.',
+            '3': 'Memegang bibir gelas dengan jari mentransfer bakteri kuman langsung ke mulut tamu.',
+            '4': 'Meletakkan makanan dengan satu tangan tanpa melihat tamu sangat tidak sopan.'
+          },
+          mnemonicSensei: 'Pegang mangkuk dari bawah, pegang gelas dari batangnya! Jangan sentuh bibir gelas tempat mulut tamu minum.',
+          l1InterferenceAlert: 'Di Indonesia pelayan kadang memegang gelas dari atas dengan mencengkeram bibir gelas. Di Jepang ini dianggap sangat jorok dan pelanggan berhak menolak minuman tersebut!',
+          remedialPrescription: {
+            unitId: 'unit-curriculum-ssw-gaishoku-03',
+            unitNumber: 3,
+            unitTitleId: 'Layanan Pelanggan (Omotenashi) & Etika Restoran',
+            lessonId: 'les-ssw-gs-03',
+            vocabId: 'vg-ssw-gs-024',
+            advice: 'Pelajari etika penyajian piring hidangan Haizen di Unit 3 MateriHub.'
+          }
+        },
+        curriculumRef: {
+          trackId: 'curriculum-ssw-gaishoku',
+          unitId: 'unit-curriculum-ssw-gaishoku-03',
+          unitNumber: 3,
+          unitTitleId: 'Layanan Pelanggan (Omotenashi) & Etika Restoran',
+          lessonId: 'les-ssw-gs-03',
+          vocabId: 'vg-ssw-gs-024'
+        }
+      },
+      {
+        id: 'SSW-GS-S01-Q15',
+        trackType: 'ssw',
+        sswSectorId: 'ssw-food-service',
+        mondaiNumber: 2,
+        mondaiType: 'ssw_k3_procedure',
+        instructionJp: 'アルコール消毒液の正しい使用方法について、適切なものを一つ選びなさい。',
+        instructionId: 'Pilihlah cara penggunaan alkohol disinfektan pembersih tangan yang benar.',
+        prompt: '手洗い後に 手指を アルコール消毒する際の 正しい やり方は どれですか。',
+        options: [
+          'ペーパータオルで 手の 水分を 完全に 拭き取ってから、乾いた 手に アルコールを 噴霧して 擦り込む。',
+          '手が 水で ビショビショに 濡れたままの 状態で、アルコールを 1滴だけ つける。',
+          'アルコールを つけた 後、すぐに 水で 洗い流してしまう。',
+          'アルコールは 手荒れするから、一度も 使わずに ズボンで 手を 拭くだけにする。'
+        ],
+        correctOptionIndex: 0,
+        explanation: {
+          justification: 'Prinsip efektivitas alkohol: Alkohol disinfektan (konsentrasi 70-80%) akan kehilangan daya bunuh kumannya jika tercampur air karena konsentrasinya mencair (encer). Maka sebelum menyemprot alkohol, tangan wajib dikeringkan sempurna dengan tisu kertas (完全に水分を拭き取ってから噴霧する).',
+          distractorAutopsy: {
+            '1': 'Pilihan 1 adalah KUNCI BENAR (keringkan air dulu, semprot di tangan kering, gosok hingga menguap).',
+            '2': 'Menyemprot di tangan basah membuat alkohol encer dan kehilangan daya sterilisasi.',
+            '3': 'Membilas alkohol dengan air membatalkan proses pembunuhan bakteri.',
+            '4': 'Mengusap tangan ke celana kerja mengotori kembali tangan dengan debu dan kotoran celana.'
+          },
+          mnemonicSensei: 'Tangan basah = Alkohol mandul! Keringkan tangan pakai tisu dulu, baru semprot alkohol sampai menguap kering sendiri.',
+          l1InterferenceAlert: 'Banyak orang menyemprot hand sanitizer saat tangan masih basah kuyup air kran. Dalam ujian higienitas makanan Jepang, alkohol hanya efektif jika disemprotkan pada permukaan yang kering!',
+          remedialPrescription: {
+            unitId: 'unit-curriculum-ssw-gaishoku-01',
+            unitNumber: 1,
+            unitTitleId: 'Sanitasi Restoran & Manajemen Alergen',
+            lessonId: 'les-ssw-gs-01',
+            vocabId: 'vg-ssw-gs-008',
+            advice: 'Kuasai ilmu efektivitas disinfektan kimia di Unit 1 Gaishoku MateriHub.'
+          }
+        },
+        curriculumRef: {
+          trackId: 'curriculum-ssw-gaishoku',
+          unitId: 'unit-curriculum-ssw-gaishoku-01',
+          unitNumber: 1,
+          unitTitleId: 'Sanitasi Restoran & Manajemen Alergen',
+          lessonId: 'les-ssw-gs-01',
+          vocabId: 'vg-ssw-gs-008'
+        }
+      }
+    ]
+  };
+}
+
+module.exports = { getSSWGaishokuSet };

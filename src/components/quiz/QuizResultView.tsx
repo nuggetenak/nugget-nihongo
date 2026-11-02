@@ -63,19 +63,19 @@ export const QuizResultView: React.FC<QuizResultViewProps> = ({
         {/* Score Ring / Stats Box (4-column metric grid) */}
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5 sm:gap-3 pt-3 border-t border-accent/15">
           <div className="bg-surface-2 p-3 rounded-2xl border border-accent/10">
-            <div className="text-[10px] font-bold uppercase tracking-wider text-appText-muted">Skor Akurasi</div>
+            <div className="text-xs font-bold uppercase tracking-wider text-appText-muted">Skor Akurasi</div>
             <div className="text-xl font-bold font-mono text-accent-hot mt-0.5">{percentage}%</div>
           </div>
           <div className="bg-surface-2 p-3 rounded-2xl border border-accent/10">
-            <div className="text-[10px] font-bold uppercase tracking-wider text-appText-muted">Benar / Total</div>
+            <div className="text-xs font-bold uppercase tracking-wider text-appText-muted">Benar / Total</div>
             <div className="text-xl font-bold font-mono text-appText-bright mt-0.5">{score} / {total}</div>
           </div>
           <div className="bg-surface-2 p-3 rounded-2xl border border-accent/10">
-            <div className="text-[10px] font-bold uppercase tracking-wider text-appText-muted">XP Diraih</div>
+            <div className="text-xs font-bold uppercase tracking-wider text-appText-muted">XP Diraih</div>
             <div className="text-xl font-bold font-mono text-emerald-400 mt-0.5">+{xpEarned} XP</div>
           </div>
           <div className="bg-surface-2 p-3 rounded-2xl border border-accent/10">
-            <div className="text-[10px] font-bold uppercase tracking-wider text-appText-muted">Tetes Air</div>
+            <div className="text-xs font-bold uppercase tracking-wider text-appText-muted">Tetes Air</div>
             <div className="text-xl font-bold font-mono text-cyan-400 mt-0.5">+{waterEarned} 💧</div>
           </div>
         </div>
@@ -168,7 +168,7 @@ export const QuizResultView: React.FC<QuizResultViewProps> = ({
                     </button>
                   )}
                   {ans.question.subText && (
-                    <span className="text-[11px] text-appText-muted">{ans.question.subText}</span>
+                    <span className="text-xs text-appText-muted">{ans.question.subText}</span>
                   )}
                 </div>
                 <div className="text-appText-muted leading-relaxed">{ans.question.explanation}</div>

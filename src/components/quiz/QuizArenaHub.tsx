@@ -1,6 +1,7 @@
 // ══════════════════════════════════════════════════════════════════
 //  QuizArenaHub.tsx — Nugget Nihongo Quiz Arena Mission Launchpad
-//  Architected for Clarity, High Contrast (WCAG AAA), and Intuitive Flow
+//  Streamlined 9-Mode Architecture, Urushi Lacquerware Aesthetics,
+//  and Zero-Microfont Readability (WCAG AAA Compliant)
 // ══════════════════════════════════════════════════════════════════
 
 import React, { useState } from 'react';
@@ -15,15 +16,16 @@ import {
   Zap,
   ChevronRight,
   Layers,
-  Brain,
-  Droplets,
   Award,
+  ChevronDown,
+  Flame,
 } from 'lucide-react';
 import { QuizMode } from '../../types/quiz';
 import { JLPTLevel } from '../../types/vocab';
 import { useGamificationStore } from '../../lib/gamification/gamificationStore';
 import { useGardenStore } from '../../lib/garden/gardenStore';
 import { useAppStore } from '../../store/useAppStore';
+import { useModalStore } from '../../store/useModalStore';
 import { PrometricCbtModal } from './PrometricCbtModal';
 import { JftBasicCbtModal } from './JftBasicCbtModal';
 
@@ -40,9 +42,12 @@ interface QuizArenaHubProps {
   onSelectSessionCount?: (count: number) => void;
 }
 
-interface ModeCard {
-  id: QuizMode;
-  category: 'core' | 'specialty';
+export type QuizTabCategory = 'all' | 'tantangan' | 'kosakata' | 'tata-bahasa';
+
+export interface QuizCardMeta {
+  id: QuizMode | 'cat' | 'kana';
+  modeType: QuizMode;
+  category: 'tantangan' | 'kosakata' | 'tata-bahasa' | 'specialty';
   name: string;
   nameJp: string;
   icon: string;
@@ -50,69 +55,140 @@ interface ModeCard {
   tag: string;
   estTime: string;
   badgeColor: string;
+  actionType: 'standard' | 'modal_cat' | 'modal_kana';
 }
 
-const ARENA_MODES: ModeCard[] = [
-  // Core Drills (Fondasi & FSRS)
-  {
-    id: 'flashcard',
-    category: 'core',
-    name: 'Flashcard 3D FSRS',
-    nameJp: '暗記カード',
-    icon: '🃏',
-    desc: 'Metode pengulangan berjarak ilmiah. Nilai daya ingatmu: Lupa, Ragu, Ingat, atau Mudah.',
-    tag: 'Rekomendasi Utama',
-    estTime: '~3 mnt',
-    badgeColor: 'border-amber-500/40 text-accent-hot bg-amber-500/10 font-bold',
-  },
+// ── The 9 Curated Core Quiz Modes Grouped Into 3 Defined Tabs ──
+export const CURATED_QUIZ_MODES: QuizCardMeta[] = [
+  // ── Tab 1: Tantangan Cepat ──
   {
     id: 'multiple-choice',
-    category: 'core',
-    name: 'Pilihan Ganda Cepat',
-    nameJp: '四択クイズ',
-    icon: '🔘',
-    desc: 'Latih reflek ingatan cepat arti kosakata dan kanji dengan 4 opsi distraktor pintar.',
-    tag: 'Reflek',
+    modeType: 'multiple-choice',
+    category: 'tantangan',
+    name: 'Kilat 60 Detik',
+    nameJp: '60秒スピードクイズ',
+    icon: '⚡',
+    desc: 'Latih reflek ingatan cepat arti kosakata dan kanji dengan 4 opsi distraktor pintar berkecepatan tinggi.',
+    tag: 'Reflek Cepat',
+    estTime: '~1 mnt',
+    badgeColor: 'border-amber-500/30 text-amber-300 bg-amber-500/10 font-bold',
+    actionType: 'standard',
+  },
+  {
+    id: 'cat',
+    modeType: 'multiple-choice',
+    category: 'tantangan',
+    name: 'Ujian Adaptif CAT',
+    nameJp: '適応型プレースメントテスト',
+    icon: '🎯',
+    desc: 'Diagnosa kemampuan bahasa Jepang (JLPT N5–N1) secara presisi dalam 10–12 soal adaptif berbasis IRT 3PL.',
+    tag: 'IRT 3PL Presisi',
+    estTime: '~5 mnt',
+    badgeColor: 'border-cyan-500/30 text-cyan-300 bg-cyan-500/10 font-bold',
+    actionType: 'modal_cat',
+  },
+  {
+    id: 'panic-recall',
+    modeType: 'panic-recall',
+    category: 'tantangan',
+    name: 'Kuis Bertarung XP',
+    nameJp: 'XPバトルアリーナ',
+    icon: '⚔️',
+    desc: 'Tantangan intensif dengan batas waktu cepat untuk memacu pemanggilan memori di bawah tekanan kerja dan ujian.',
+    tag: 'Poin XP Tinggi',
+    estTime: '~3 mnt',
+    badgeColor: 'border-rose-500/30 text-rose-300 bg-rose-500/10 font-bold',
+    actionType: 'standard',
+  },
+
+  // ── Tab 2: Kosakata & Huruf ──
+  {
+    id: 'flashcard',
+    modeType: 'flashcard',
+    category: 'kosakata',
+    name: 'Tebak Kanji',
+    nameJp: '漢字フラッシュカード',
+    icon: '🃏',
+    desc: 'Metode pengulangan berjarak ilmiah FSRS untuk menguasai bacaan On/Kun dan makna Kanji Jouyou.',
+    tag: 'FSRS Ilmiah',
+    estTime: '~3 mnt',
+    badgeColor: 'border-amber-500/30 text-amber-300 bg-amber-500/10 font-bold',
+    actionType: 'standard',
+  },
+  {
+    id: 'kana',
+    modeType: 'flashcard',
+    category: 'kosakata',
+    name: 'Bagan & Kuis Kana',
+    nameJp: '五十音・かなドリル',
+    icon: '🔤',
+    desc: 'Bagan interaktif 46 Hiragana & Katakana lengkap dengan audio penutur asli dan latihan pembacaan huruf.',
+    tag: 'Fondasi Aksara',
     estTime: '~2 mnt',
-    badgeColor: 'border-blue-500/40 text-blue-500 dark:text-blue-300 bg-blue-500/10 font-bold',
+    badgeColor: 'border-emerald-500/30 text-emerald-300 bg-emerald-500/10 font-bold',
+    actionType: 'modal_kana',
+  },
+  {
+    id: 'collocation-matrix',
+    modeType: 'collocation-matrix',
+    category: 'kosakata',
+    name: 'Pasangan Kata',
+    nameJp: '語彙共起コロケーション',
+    icon: '📊',
+    desc: 'Pahami pasangan kata (kolokasi) dan perbedaan nuansa halus antar kata kerja dan partikel yang lazim.',
+    tag: 'Nuansa Alami',
+    estTime: '~3 mnt',
+    badgeColor: 'border-purple-500/30 text-purple-300 bg-purple-500/10 font-bold',
+    actionType: 'standard',
+  },
+
+  // ── Tab 3: Tata Bahasa & Audio ──
+  {
+    id: 'rearrange',
+    modeType: 'rearrange',
+    category: 'tata-bahasa',
+    name: 'Susun Kalimat Bunsetsu',
+    nameJp: '文節語順並べ替え',
+    icon: '🧩',
+    desc: 'Susun potongan frasa bunsetsu acak menjadi kalimat bahasa Jepang yang alami, gramatikal, dan tepat.',
+    tag: 'Tata Kalimat',
+    estTime: '~4 mnt',
+    badgeColor: 'border-amber-500/30 text-amber-300 bg-amber-500/10 font-bold',
+    actionType: 'standard',
+  },
+  {
+    id: 'listening',
+    modeType: 'listening',
+    category: 'tata-bahasa',
+    name: 'Audio Menyimak Choukai',
+    nameJp: '聴解リスニング特訓',
+    icon: '🎧',
+    desc: 'Dengarkan percakapan penutur asli tanpa melihat teks terlebih dahulu lalu tentukan maknanya.',
+    tag: 'Audio Asli',
+    estTime: '~3 mnt',
+    badgeColor: 'border-emerald-500/30 text-emerald-300 bg-emerald-500/10 font-bold',
+    actionType: 'standard',
   },
   {
     id: 'fill-in',
-    category: 'core',
-    name: 'Isian Partikel & Pola',
-    nameJp: '助詞穴埋め',
+    modeType: 'fill-in',
+    category: 'tata-bahasa',
+    name: 'Pemilih Partikel',
+    nameJp: '助詞穴埋めドリル',
     icon: '✍️',
-    desc: 'Lengkapi partikel penghubung (は, が, を, に, で) yang hilang dalam kalimat rumpang.',
-    tag: 'Grammar',
+    desc: 'Lengkapi partikel penghubung (は, が, を, に, で) yang hilang dalam kalimat rumpang sesuai konteks.',
+    tag: 'Partikel & Pola',
     estTime: '~3 mnt',
-    badgeColor: 'border-cyan-500/40 text-cyan-600 dark:text-cyan-300 bg-cyan-500/10 font-bold',
+    badgeColor: 'border-cyan-500/30 text-cyan-300 bg-cyan-500/10 font-bold',
+    actionType: 'standard',
   },
-  {
-    id: 'rearrange',
-    category: 'core',
-    name: 'Susun Kalimat (Builder)',
-    nameJp: '語順並べ替え',
-    icon: '🧩',
-    desc: 'Susun potongan kata acak menjadi kalimat bahasa Jepang yang alami.',
-    tag: 'Tata Kalimat',
-    estTime: '~4 mnt',
-    badgeColor: 'border-rose-500/40 text-rose-600 dark:text-rose-300 bg-rose-500/10 font-bold',
-  },
+];
 
-  // Specialty & Skill Mastery
-  {
-    id: 'listening',
-    category: 'specialty',
-    name: 'Latihan Mendengar (Audio)',
-    nameJp: 'リスニング特訓',
-    icon: '🎧',
-    desc: 'Dengarkan suara penutur asli tanpa melihat teks terlebih dahulu lalu tentukan maknanya.',
-    tag: 'Audio Asli',
-    estTime: '~3 mnt',
-    badgeColor: 'border-emerald-500/40 text-emerald-600 dark:text-emerald-300 bg-emerald-500/10 font-bold',
-  },
+// ── Specialty Modes for Progressive Disclosure & Historical Contract Compatibility ──
+export const SPECIALTY_MODES: QuizCardMeta[] = [
   {
     id: 'conjugation',
+    modeType: 'conjugation',
     category: 'specialty',
     name: 'Latihan Konjugasi Kata Kerja',
     nameJp: '動詞活用ドリル',
@@ -120,10 +196,12 @@ const ARENA_MODES: ModeCard[] = [
     desc: 'Kuasai perubahan bentuk kata kerja Te, Nai, Ta, Masu, Potensial, dan Pengandaian.',
     tag: 'Penting',
     estTime: '~4 mnt',
-    badgeColor: 'border-purple-500/40 text-purple-600 dark:text-purple-300 bg-purple-500/10 font-bold',
+    badgeColor: 'border-purple-500/30 text-purple-300 bg-purple-500/10 font-bold',
+    actionType: 'standard',
   },
   {
     id: 'translation',
+    modeType: 'translation',
     category: 'specialty',
     name: 'Latihan Terjemahan Kalimat',
     nameJp: '文脈翻訳',
@@ -131,10 +209,12 @@ const ARENA_MODES: ModeCard[] = [
     desc: 'Pahami makna kalimat dari bahasa Jepang ke bahasa Indonesia yang wajar dan tepat.',
     tag: 'Nuansa',
     estTime: '~3 mnt',
-    badgeColor: 'border-teal-500/40 text-teal-600 dark:text-teal-300 bg-teal-500/10 font-bold',
+    badgeColor: 'border-teal-500/30 text-teal-300 bg-teal-500/10 font-bold',
+    actionType: 'standard',
   },
   {
     id: 'error-find',
+    modeType: 'error-find',
     category: 'specialty',
     name: 'Cari Kesalahan Makna',
     nameJp: '誤答検出',
@@ -142,65 +222,51 @@ const ARENA_MODES: ModeCard[] = [
     desc: 'Uji ketelitianmu membedakan jebakan arti dan pola yang sering tertukar dalam ujian.',
     tag: 'Ujian JLPT',
     estTime: '~3 mnt',
-    badgeColor: 'border-orange-500/40 text-orange-600 dark:text-orange-300 bg-orange-500/10 font-bold',
-  },
-  {
-    id: 'panic-recall',
-    category: 'specialty',
-    name: 'Simulasi Tanggap Darurat & K3',
-    nameJp: '緊急事態・SBAR訓練',
-    icon: '🚨',
-    desc: 'Latih respons cepat situasi darurat kerja & perawat lansia. Ucapkan kalimat penting dalam 5 detik.',
-    tag: 'Gemba K3',
-    estTime: '~3 mnt',
-    badgeColor: 'border-red-500/40 text-red-600 dark:text-red-300 bg-red-500/10 font-bold',
+    badgeColor: 'border-orange-500/30 text-orange-300 bg-orange-500/10 font-bold',
+    actionType: 'standard',
   },
   {
     id: 'mora-pacing',
+    modeType: 'mora-pacing',
     category: 'specialty',
     name: 'Latihan Ketukan & Irama Bicara',
     nameJp: '拍・モーラ拍子器',
     icon: '⏱️',
-    desc: 'Pemandu ketukan visual untuk melatih panjang-pendek vokal, bunyi konsonan ganda (っ), dan pengucapan alami.',
+    desc: 'Pemandu ketukan visual untuk melatih panjang-pendek vokal dan konsonan ganda (っ).',
     tag: 'Ritme Bicara',
     estTime: '~2 mnt',
-    badgeColor: 'border-indigo-500/40 text-indigo-600 dark:text-indigo-300 bg-indigo-500/10 font-bold',
+    badgeColor: 'border-indigo-500/30 text-indigo-300 bg-indigo-500/10 font-bold',
+    actionType: 'standard',
   },
   {
     id: 'pitch-accent',
+    modeType: 'pitch-accent',
     category: 'specialty',
     name: 'Aksen Nada Tokyo',
     nameJp: '東京アクセント',
     icon: '📈',
-    desc: 'Kenali pola nada tinggi-rendah kata bahasa Jepang (Heiban, Atamadaka, Nakadaka, Odaka) agar intonasimu alami.',
+    desc: 'Kenali pola nada tinggi-rendah kata bahasa Jepang (Heiban, Atamadaka, Nakadaka, Odaka).',
     tag: 'Intonasi Asli',
     estTime: '~3 mnt',
-    badgeColor: 'border-pink-500/40 text-pink-600 dark:text-pink-300 bg-pink-500/10 font-bold',
+    badgeColor: 'border-pink-500/30 text-pink-300 bg-pink-500/10 font-bold',
+    actionType: 'standard',
   },
   {
     id: 'discourse-deconstruct',
+    modeType: 'discourse-deconstruct',
     category: 'specialty',
     name: 'Bedah Paragraf & Teks Panjang',
     nameJp: '長文言説解剖',
     icon: '📰',
-    desc: 'Pahami alur bacaan panjang N2/N1: ide utama, alasan pendukung, sudut pandang penulis, hingga kesimpulan.',
+    desc: 'Pahami alur bacaan panjang N2/N1: ide utama, alasan pendukung, dan kesimpulan.',
     tag: 'N2–N1 Dokumen',
     estTime: '~5 mnt',
-    badgeColor: 'border-violet-500/40 text-violet-600 dark:text-violet-300 bg-violet-500/10 font-bold',
-  },
-  {
-    id: 'collocation-matrix',
-    category: 'specialty',
-    name: 'Pasangan Kata & Perbedaan Nuansa',
-    nameJp: '語彙共起コロケーション',
-    icon: '📊',
-    desc: 'Pahami tata bahasa yang mirip artinya dan pelajari pasangan kata yang paling lazim digunakan.',
-    tag: 'Nuansa Halus',
-    estTime: '~3 mnt',
-    badgeColor: 'border-amber-500/40 text-amber-600 dark:text-amber-300 bg-amber-500/10 font-bold',
+    badgeColor: 'border-violet-500/30 text-violet-300 bg-violet-500/10 font-bold',
+    actionType: 'standard',
   },
   {
     id: 'onomatopoeia',
+    modeType: 'onomatopoeia',
     category: 'specialty',
     name: 'Onomatopoeia Nyeri Lansia (Kaigo)',
     nameJp: '痛みのオノマトペ臨床演習',
@@ -208,9 +274,13 @@ const ARENA_MODES: ModeCard[] = [
     desc: 'Latih kepekaan mendengar keluhan fisik lansia (ズキズキ, チクチク) dan tentukan tindakan klinis darurat yang tepat.',
     tag: 'SSW Kaigo',
     estTime: '~4 mnt',
-    badgeColor: 'border-rose-500/40 text-rose-600 dark:text-rose-300 bg-rose-500/10 font-bold',
+    badgeColor: 'border-rose-500/30 text-rose-300 bg-rose-500/10 font-bold',
+    actionType: 'standard',
   },
 ];
+
+// Unified list retaining all mode IDs for full historical regression tests
+export const ARENA_MODES = [...CURATED_QUIZ_MODES, ...SPECIALTY_MODES];
 
 export const QuizArenaHub: React.FC<QuizArenaHubProps> = ({
   onStartMode,
@@ -226,20 +296,33 @@ export const QuizArenaHub: React.FC<QuizArenaHubProps> = ({
 }) => {
   const { getModeStat, getOverallQuizStats } = useGamificationStore();
   const { waterDrops } = useGardenStore();
-  const { cards } = useAppStore();
+  const { cards, streak } = useAppStore();
+  const { openModal } = useModalStore();
   const overall = getOverallQuizStats();
 
-  const [activeCategory, setActiveCategory] = useState<'all' | 'core' | 'specialty'>('all');
+  const [activeTab, setActiveTab] = useState<QuizTabCategory>('all');
+  const [isSpecialtyExpanded, setIsSpecialtyExpanded] = useState<boolean>(false);
   const [isPrometricModalOpen, setIsPrometricModalOpen] = useState(false);
   const [isJftModalOpen, setIsJftModalOpen] = useState(false);
 
-  const filteredModes = ARENA_MODES.filter((m) => {
-    if (activeCategory === 'all') return true;
-    return m.category === activeCategory;
-  });
-
   const jlptLevels: JLPTLevel[] = ['n5', 'n4', 'n3', 'n2', 'n1'];
   const sessionOptions = [10, 15, 20, 30];
+
+  // Filter the 9 core curated modes based on selected tab
+  const displayedCuratedModes = CURATED_QUIZ_MODES.filter((m) => {
+    if (activeTab === 'all') return true;
+    return m.category === activeTab;
+  });
+
+  const handleLaunchCard = (card: QuizCardMeta) => {
+    if (card.actionType === 'modal_cat') {
+      openModal('catPlacement');
+    } else if (card.actionType === 'modal_kana') {
+      openModal('kana');
+    } else {
+      onStartMode(card.modeType);
+    }
+  };
 
   return (
     <div className="space-y-6 sm:space-y-7 animate-in fade-in duration-300">
@@ -248,20 +331,20 @@ export const QuizArenaHub: React.FC<QuizArenaHubProps> = ({
         <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-theme pb-4">
           <div>
             <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-500/15 border border-amber-500/30 text-accent font-bold text-xs mb-2">
-              <Sparkles className="w-3.5 h-3.5" />
+              <Sparkles className="w-3.5 h-3.5 text-amber-400" />
               <span>Pusat Latihan · 練習アリーナ</span>
             </div>
             <h1 className="text-xl sm:text-3xl font-extrabold text-appText-bright tracking-tight">
               Arena Kuis & Spaced Repetition
             </h1>
             <p className="text-xs sm:text-sm text-appText-muted mt-1 leading-relaxed">
-              Atur target level dan jumlah soal, lalu pilih latihan terarah berbasis memori ilmiah FSRS.
+              Atur target level dan panjang sesi, lalu pilih latihan terarah berbasis memori ilmiah FSRS.
             </p>
           </div>
 
           <button
             onClick={onOpenConfig}
-            className="self-start md:self-auto flex items-center gap-2 px-3.5 py-2 rounded-xl bg-surface-2 hover:bg-surface-3 border border-theme text-appText-bright text-xs font-bold transition-all shadow-sm active:scale-95"
+            className="self-start md:self-auto min-h-[40px] flex items-center gap-2 px-4 py-2 rounded-xl bg-surface-2 hover:bg-surface-3 border border-theme text-appText-bright text-xs font-bold transition-all shadow-sm active:scale-95"
             title="Pengaturan Kuis Lanjutan"
           >
             <SlidersHorizontal className="w-4 h-4 text-accent" />
@@ -274,8 +357,8 @@ export const QuizArenaHub: React.FC<QuizArenaHubProps> = ({
           {/* Level Selector Segment */}
           {onSelectLevel && (
             <div className="space-y-1.5">
-              <div className="text-[11px] font-bold text-appText-muted uppercase tracking-wider flex items-center gap-1.5">
-                <Layers className="w-3 h-3 text-accent" />
+              <div className="text-xs font-bold text-appText-muted uppercase tracking-wider flex items-center gap-1.5">
+                <Layers className="w-3.5 h-3.5 text-accent" />
                 <span>Pilih Level JLPT:</span>
               </div>
               <div className="flex items-center gap-1 bg-surface-2 p-1 rounded-xl border border-theme overflow-x-auto scrollbar-none max-w-full">
@@ -285,7 +368,7 @@ export const QuizArenaHub: React.FC<QuizArenaHubProps> = ({
                     <button
                       key={lvl}
                       onClick={() => onSelectLevel(lvl)}
-                      className={`px-3 py-1.5 text-xs font-extrabold rounded-lg uppercase transition-all min-h-[36px] active:scale-95 shrink-0 ${
+                      className={`px-3 py-1.5 text-xs font-extrabold rounded-lg uppercase transition-all min-h-[38px] active:scale-95 shrink-0 ${
                         isSelected
                           ? 'bg-amber-500 text-stone-950 shadow-sm'
                           : 'text-appText-muted hover:text-appText-bright'
@@ -302,8 +385,8 @@ export const QuizArenaHub: React.FC<QuizArenaHubProps> = ({
           {/* Session Length Segment */}
           {onSelectSessionCount && (
             <div className="space-y-1.5">
-              <div className="text-[11px] font-bold text-appText-muted uppercase tracking-wider flex items-center gap-1.5">
-                <Target className="w-3 h-3 text-accent" />
+              <div className="text-xs font-bold text-appText-muted uppercase tracking-wider flex items-center gap-1.5">
+                <Target className="w-3.5 h-3.5 text-accent" />
                 <span>Panjang Sesi Soal:</span>
               </div>
               <div className="flex items-center gap-1 bg-surface-2 p-1 rounded-xl border border-theme overflow-x-auto scrollbar-none max-w-full">
@@ -313,7 +396,7 @@ export const QuizArenaHub: React.FC<QuizArenaHubProps> = ({
                     <button
                       key={cnt}
                       onClick={() => onSelectSessionCount(cnt)}
-                      className={`px-3 py-1.5 text-xs font-extrabold rounded-lg transition-all min-h-[36px] active:scale-95 shrink-0 ${
+                      className={`px-3 py-1.5 text-xs font-extrabold rounded-lg transition-all min-h-[38px] active:scale-95 shrink-0 ${
                         isSelected
                           ? 'bg-amber-500 text-stone-950 shadow-sm'
                           : 'text-appText-muted hover:text-appText-bright'
@@ -329,240 +412,236 @@ export const QuizArenaHub: React.FC<QuizArenaHubProps> = ({
         </div>
       </div>
 
-      {/* ── REAL-TIME STATS TICKER (4-COL RESPONSIVE) ─────────────── */}
-      <div className="grid grid-cols-4 gap-2 sm:gap-3">
-        <div className="p-2.5 sm:p-3.5 rounded-2xl bg-surface border border-theme flex flex-col sm:flex-row items-center text-center sm:text-left gap-1.5 sm:gap-3 shadow-sm min-w-0 overflow-hidden">
-          <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-xl bg-amber-500/15 border border-amber-500/25 flex items-center justify-center text-accent text-sm sm:text-lg shrink-0">
+      {/* ── REAL-TIME STATS TICKER (4-COL RESPONSIVE, ANTI-MICROFONT) ── */}
+      <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5 sm:gap-3">
+        <div className="p-3 sm:p-4 rounded-2xl bg-surface border border-theme flex items-center gap-3 shadow-sm min-w-0 overflow-hidden">
+          <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-amber-500/15 border border-amber-500/25 flex items-center justify-center text-accent text-base sm:text-lg shrink-0">
             🎯
           </div>
           <div className="min-w-0 flex-1">
-            <div className="text-[9px] sm:text-[10px] font-bold text-appText-muted uppercase tracking-wider truncate">Total Soal</div>
-            <div className="text-sm sm:text-base font-extrabold text-appText-bright font-mono truncate">
+            <div className="text-xs font-bold text-appText-muted uppercase tracking-wider truncate">Total Soal</div>
+            <div className="text-base sm:text-lg font-extrabold text-appText-bright font-mono truncate">
               {overall.totalAnswered}
             </div>
           </div>
         </div>
 
-        <div className="p-2.5 sm:p-3.5 rounded-2xl bg-surface border border-theme flex flex-col sm:flex-row items-center text-center sm:text-left gap-1.5 sm:gap-3 shadow-sm min-w-0 overflow-hidden">
-          <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-xl bg-emerald-500/15 border border-emerald-500/25 flex items-center justify-center text-emerald-500 dark:text-emerald-400 text-sm sm:text-lg shrink-0">
+        <div className="p-3 sm:p-4 rounded-2xl bg-surface border border-theme flex items-center gap-3 shadow-sm min-w-0 overflow-hidden">
+          <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-emerald-500/15 border border-emerald-500/25 flex items-center justify-center text-emerald-500 dark:text-emerald-400 text-base sm:text-lg shrink-0">
             📊
           </div>
           <div className="min-w-0 flex-1">
-            <div className="text-[9px] sm:text-[10px] font-bold text-appText-muted uppercase tracking-wider truncate">Akurasi</div>
-            <div className="text-sm sm:text-base font-extrabold text-emerald-600 dark:text-emerald-400 font-mono truncate">
+            <div className="text-xs font-bold text-appText-muted uppercase tracking-wider truncate">Akurasi</div>
+            <div className="text-base sm:text-lg font-extrabold text-emerald-600 dark:text-emerald-400 font-mono truncate">
               {overall.overallAccuracy}%
             </div>
           </div>
         </div>
 
-        <div className="p-2.5 sm:p-3.5 rounded-2xl bg-surface border border-theme flex flex-col sm:flex-row items-center text-center sm:text-left gap-1.5 sm:gap-3 shadow-sm min-w-0 overflow-hidden">
-          <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-xl bg-purple-500/15 border border-purple-500/25 flex items-center justify-center text-purple-500 dark:text-purple-400 text-sm sm:text-lg shrink-0">
+        <div className="p-3 sm:p-4 rounded-2xl bg-surface border border-theme flex items-center gap-3 shadow-sm min-w-0 overflow-hidden">
+          <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-purple-500/15 border border-purple-500/25 flex items-center justify-center text-purple-500 dark:text-purple-400 text-base sm:text-lg shrink-0">
             🧠
           </div>
           <div className="min-w-0 flex-1">
-            <div className="text-[9px] sm:text-[10px] font-bold text-appText-muted uppercase tracking-wider truncate">Kartu FSRS</div>
-            <div className="text-sm sm:text-base font-extrabold text-appText-bright font-mono truncate">
+            <div className="text-xs font-bold text-appText-muted uppercase tracking-wider truncate">Kartu FSRS</div>
+            <div className="text-base sm:text-lg font-extrabold text-appText-bright font-mono truncate">
               {Object.keys(cards).length}
             </div>
           </div>
         </div>
 
-        <div className="p-2.5 sm:p-3.5 rounded-2xl bg-surface border border-theme flex flex-col sm:flex-row items-center text-center sm:text-left gap-1.5 sm:gap-3 shadow-sm min-w-0 overflow-hidden">
-          <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-xl bg-cyan-500/15 border border-cyan-500/25 flex items-center justify-center text-cyan-500 dark:text-cyan-400 text-sm sm:text-lg shrink-0">
+        <div className="p-3 sm:p-4 rounded-2xl bg-surface border border-theme flex items-center gap-3 shadow-sm min-w-0 overflow-hidden">
+          <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-cyan-500/15 border border-cyan-500/25 flex items-center justify-center text-cyan-500 dark:text-cyan-400 text-base sm:text-lg shrink-0">
             💧
           </div>
           <div className="min-w-0 flex-1">
-            <div className="text-[9px] sm:text-[10px] font-bold text-appText-muted uppercase tracking-wider truncate">Tetes Air</div>
-            <div className="text-sm sm:text-base font-extrabold text-cyan-600 dark:text-cyan-400 font-mono truncate">
+            <div className="text-xs font-bold text-appText-muted uppercase tracking-wider truncate">Tetes Air</div>
+            <div className="text-base sm:text-lg font-extrabold text-cyan-600 dark:text-cyan-400 font-mono truncate">
               {waterDrops}
             </div>
           </div>
         </div>
       </div>
 
-      {/* ── PRIORITY REVIEW CARDS ─────────────────────────────────── */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-        {/* Banner 1: FSRS Due Today Review */}
-        <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-amber-500/10 via-surface to-surface border border-amber-500/35 p-5 sm:p-6 shadow-md flex flex-col justify-between space-y-4">
-          <div className="flex items-start gap-3.5">
-            <div className="w-12 h-12 rounded-2xl bg-amber-500/20 border border-amber-500/40 flex items-center justify-center text-2xl shrink-0">
-              📬
+      {/* ── PROMINENT HERO CARD: REKOMENDASI HARI INI ──────────────── */}
+      <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-amber-500/15 via-surface to-surface-2 border-2 border-amber-500/40 p-5 sm:p-7 shadow-lg space-y-5">
+        <div className="flex flex-col md:flex-row md:items-start justify-between gap-4">
+          <div className="space-y-2 min-w-0 flex-1">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/20 border border-amber-500/40 text-amber-300 font-bold text-xs">
+              <Sparkles className="w-4 h-4 text-amber-400" />
+              <span>Rekomendasi Hari Ini · 今日のおすすめ</span>
             </div>
-            <div className="space-y-1 min-w-0">
-              <div className="flex items-center gap-2">
-                <h3 className="text-sm sm:text-base font-extrabold text-appText-bright">
-                  Review Harian FSRS
-                </h3>
-                <span className="text-[9px] font-extrabold uppercase px-2 py-0.5 rounded-full bg-amber-500 text-stone-950">
-                  Prioritas
-                </span>
-              </div>
-              <p className="text-xs text-appText-muted leading-relaxed">
-                {dueCount > 0
-                  ? `Ada ${dueCount} kartu yang mencapai interval kritis kelupaan hari ini. Ulas sekarang untuk menjaga retensi jangka panjang.`
-                  : 'Seluruh kartu hafalan harianmu telah direview! Kamu bisa berlatih bebas untuk mengasah kecepatan reflek.'}
-              </p>
-            </div>
-          </div>
 
-          <button
-            onClick={onStartFSRSDue}
-            className="w-full py-3 px-5 rounded-2xl bg-amber-500 hover:bg-amber-600 text-stone-950 font-black text-xs sm:text-sm flex items-center justify-center gap-2 shadow-md transition-all active:scale-95"
-          >
-            <Zap className="w-4 h-4 fill-stone-950" />
-            <span>Mulai Review Cerdas ({dueCount} Kartu)</span>
-            <ChevronRight className="w-4 h-4 stroke-[3]" />
-          </button>
-        </div>
+            <h2 className="text-lg sm:text-2xl font-black text-appText-bright tracking-tight">
+              {dueCount > 0
+                ? `Review Harian FSRS (${dueCount} Kartu Menanti)`
+                : 'Sesi Latihan Harian · Tebak Kanji & Flashcard 3D'}
+            </h2>
 
-        {/* Banner 2: Mistake Notebook (Catatan Evaluasi) */}
-        <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-red-500/10 via-surface to-surface border border-red-500/30 p-5 sm:p-6 shadow-md flex flex-col justify-between space-y-4">
-          <div className="flex items-start gap-3.5">
-            <div className="w-12 h-12 rounded-2xl bg-red-500/20 border border-red-500/40 text-red-500 dark:text-red-400 flex items-center justify-center shrink-0">
-              <AlertTriangle className="w-6 h-6" />
-            </div>
-            <div className="space-y-1 min-w-0">
-              <div className="flex items-center gap-2">
-                <h3 className="text-sm sm:text-base font-extrabold text-appText-bright">
-                  Catatan Evaluasi
-                </h3>
-                <span className="text-[9px] font-extrabold uppercase px-2 py-0.5 rounded-full bg-red-500/20 border border-red-500/40 text-red-600 dark:text-red-300">
-                  {mistakesCount} Soal Keliru
-                </span>
-              </div>
-              <p className="text-xs text-appText-muted leading-relaxed">
-                {mistakesCount > 0
-                  ? `Latih ulang ${mistakesCount} soal yang pernah salah dijawab agar kesalahan tidak terpatri di memori jangka panjang.`
-                  : 'Bagus sekali! Tidak ada soal keliru yang tersimpan di catatan evaluasimu saat ini.'}
-              </p>
-            </div>
-          </div>
-
-          <button
-            onClick={onStartMistakeReview}
-            disabled={mistakesCount === 0}
-            className="w-full py-3 px-5 rounded-2xl bg-surface-2 hover:bg-surface-3 disabled:opacity-40 disabled:pointer-events-none border border-red-500/40 text-red-600 dark:text-red-300 font-extrabold text-xs sm:text-sm flex items-center justify-center gap-2 transition-all active:scale-95 shadow-sm"
-          >
-            <RotateCcw className="w-4 h-4" />
-            <span>Latih Ulang ({mistakesCount} Soal)</span>
-            <ChevronRight className="w-4 h-4" />
-          </button>
-        </div>
-      </div>
-
-      {/* ── OFFICIAL JAPANESE PROMETRIC CBT SIMULATOR ─────────────── */}
-      <div className="relative overflow-hidden rounded-3xl bg-gradient-to-r from-stone-900 via-surface to-stone-900 border-2 border-amber-500/35 p-5 sm:p-6 shadow-md flex flex-col md:flex-row md:items-center justify-between gap-4">
-        <div className="flex items-start gap-3.5 min-w-0">
-          <div className="w-12 h-12 rounded-2xl bg-amber-500/20 border border-amber-500/40 flex items-center justify-center text-2xl shrink-0">
-            🏛️
-          </div>
-          <div className="space-y-1 min-w-0">
-            <div className="flex flex-wrap items-center gap-2">
-              <h3 className="text-sm sm:text-base font-extrabold text-appText-bright">
-                Simulasi Ujian Prometric CBT (Tokutei Ginou SSW)
-              </h3>
-              <span className="px-2 py-0.5 rounded-full bg-amber-500 text-stone-950 font-black text-[9px] uppercase tracking-wider">
-                19 Sektor Resmi
-              </span>
-            </div>
-            <p className="text-xs text-appText-muted leading-relaxed">
-              Simulasi ujian komputer resmi berstandar Prometric Jepang dengan penilaian ganda (Dual-Pass Statutory Scoring) standar kementerian MHLW, METI, MLIT, dan MAFF.
+            <p className="text-sm text-appText-muted leading-relaxed max-w-2xl">
+              {dueCount > 0
+                ? `Ada ${dueCount} kartu yang mencapai interval kritis kelupaan hari ini. Selesaikan pengulangan terjadwal untuk mengunci hafalan ke memori jangka panjang.`
+                : 'Seluruh kartu hafalan harianmu telah aman! Asah reflek dan pemahamanmu dengan latihan kilat terarah berbasis memori ilmiah FSRS.'}
             </p>
+
+            <div className="flex flex-wrap items-center gap-2 pt-1">
+              <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg bg-surface-2 border border-theme text-xs font-mono font-bold text-appText-bright">
+                <Clock className="w-3.5 h-3.5 text-accent" />
+                <span>~3 Menit</span>
+              </span>
+              <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg bg-surface-2 border border-theme text-xs font-mono font-bold text-amber-400">
+                <Zap className="w-3.5 h-3.5" />
+                <span>+10-15 XP / Soal</span>
+              </span>
+              <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg bg-surface-2 border border-theme text-xs font-mono font-bold text-appText-bright uppercase">
+                <Target className="w-3.5 h-3.5 text-accent" />
+                <span>Target: {(selectedLevel === 'all' ? 'n5' : selectedLevel).toUpperCase()}</span>
+              </span>
+              {streak > 0 && (
+                <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg bg-amber-500/10 border border-amber-500/30 text-xs font-mono font-bold text-amber-400">
+                  <Flame className="w-3.5 h-3.5" />
+                  <span>Streak {streak} Hari</span>
+                </span>
+              )}
+            </div>
+          </div>
+
+          {/* Primary Action Button */}
+          <div className="flex flex-col sm:flex-row md:flex-col items-stretch gap-2.5 shrink-0 sm:self-start">
+            <button
+              onClick={dueCount > 0 ? onStartFSRSDue : () => onStartMode('flashcard')}
+              className="min-h-[48px] px-6 py-3.5 rounded-2xl bg-gradient-to-r from-amber-500 to-amber-400 hover:from-amber-400 hover:to-amber-300 text-stone-950 font-black text-sm sm:text-base flex items-center justify-center gap-2.5 shadow-glow transition-all active:scale-95"
+            >
+              <Zap className="w-5 h-5 fill-stone-950 text-stone-950" />
+              <span>{dueCount > 0 ? `Mulai Review (${dueCount} Kartu)` : 'Mulai Latihan Hari Ini'}</span>
+              <ChevronRight className="w-4 h-4 stroke-[3]" />
+            </button>
+
+            {mistakesCount > 0 && (
+              <button
+                onClick={onStartMistakeReview}
+                className="min-h-[44px] px-4 py-2 rounded-2xl bg-surface-2 hover:bg-surface-3 border border-red-500/40 text-red-400 font-bold text-xs flex items-center justify-center gap-2 transition-all active:scale-95 shadow-sm"
+              >
+                <RotateCcw className="w-4 h-4" />
+                <span>Catatan Evaluasi ({mistakesCount} Soal)</span>
+              </button>
+            )}
           </div>
         </div>
 
-        <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-2 shrink-0">
-          <button
-            type="button"
-            onClick={() => setIsPrometricModalOpen(true)}
-            className="min-h-[44px] px-4 py-2.5 rounded-2xl bg-gradient-to-r from-amber-500 to-amber-400 text-stone-950 font-black text-xs flex items-center justify-center gap-2 transition-all shadow-md active:scale-95 hover:from-amber-400 hover:to-amber-300"
-          >
-            <Sparkles className="w-4 h-4 text-stone-950" />
-            <span>Prometric SSW CBT</span>
-          </button>
+        {/* Official CBT Quick Triggers Banner */}
+        <div className="pt-3 border-t border-theme/60 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+          <div className="flex items-center gap-2 text-xs text-appText-muted font-bold">
+            <Award className="w-4 h-4 text-amber-400" />
+            <span>Simulasi Ujian Resmi Standar Kementerian Jepang:</span>
+          </div>
 
-          <button
-            type="button"
-            onClick={() => setIsJftModalOpen(true)}
-            className="min-h-[44px] px-4 py-2.5 rounded-2xl bg-gradient-to-r from-emerald-500 to-emerald-400 text-stone-950 font-black text-xs flex items-center justify-center gap-2 transition-all shadow-md active:scale-95 hover:from-emerald-400 hover:to-emerald-300"
-          >
-            <Award className="w-4 h-4 text-stone-950" />
-            <span>JFT-Basic CBT (A2)</span>
-          </button>
+          <div className="flex items-center gap-2">
+            <button
+              type="button"
+              onClick={() => setIsPrometricModalOpen(true)}
+              className="min-h-[38px] px-3.5 py-1.5 rounded-xl bg-surface-2 hover:bg-surface-3 border border-amber-500/40 text-amber-300 font-bold text-xs flex items-center gap-1.5 transition-all active:scale-95 shadow-sm"
+            >
+              <span>Prometric SSW CBT</span>
+              <ChevronRight className="w-3.5 h-3.5" />
+            </button>
+
+            <button
+              type="button"
+              onClick={() => setIsJftModalOpen(true)}
+              className="min-h-[38px] px-3.5 py-1.5 rounded-xl bg-surface-2 hover:bg-surface-3 border border-emerald-500/40 text-emerald-300 font-bold text-xs flex items-center gap-1.5 transition-all active:scale-95 shadow-sm"
+            >
+              <span>JFT-Basic CBT</span>
+              <ChevronRight className="w-3.5 h-3.5" />
+            </button>
+          </div>
         </div>
       </div>
 
-      {/* ── CATEGORIZED DRILL CATALOG ─────────────────────────────── */}
+      {/* ── 3 CATEGORIZED TABS: ARENA KUIS STREAMLINING ───────────── */}
       <div className="space-y-4">
-        {/* Category Tabs */}
-        <div className="flex items-center justify-between border-b border-theme pb-3 gap-2">
-          <div className="flex items-center gap-1.5 overflow-x-auto scrollbar-none max-w-full pb-0.5">
+        {/* Tab Switcher */}
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-theme pb-3">
+          <div className="flex items-center gap-2 overflow-x-auto scrollbar-none max-w-full pb-0.5">
             <button
-              onClick={() => setActiveCategory('all')}
-              className={`px-3.5 py-2 rounded-xl text-xs font-bold transition-all whitespace-nowrap shrink-0 active:scale-95 ${
-                activeCategory === 'all'
-                  ? 'bg-amber-500 text-stone-950 shadow-sm font-black'
+              onClick={() => setActiveTab('all')}
+              className={`min-h-[40px] px-4 py-2 rounded-xl text-xs sm:text-sm font-bold transition-all whitespace-nowrap shrink-0 active:scale-95 ${
+                activeTab === 'all'
+                  ? 'bg-amber-500 text-stone-950 shadow-md font-black'
                   : 'text-appText-muted hover:text-appText-bright bg-surface border border-theme'
               }`}
             >
-              Semua Mode ({ARENA_MODES.length})
+              Semua Mode (9)
             </button>
+
             <button
-              onClick={() => setActiveCategory('core')}
-              className={`px-3.5 py-2 rounded-xl text-xs font-bold transition-all whitespace-nowrap shrink-0 active:scale-95 ${
-                activeCategory === 'core'
-                  ? 'bg-amber-500 text-stone-950 shadow-sm font-black'
+              onClick={() => setActiveTab('tantangan')}
+              className={`min-h-[40px] px-4 py-2 rounded-xl text-xs sm:text-sm font-bold transition-all whitespace-nowrap shrink-0 active:scale-95 ${
+                activeTab === 'tantangan'
+                  ? 'bg-amber-500 text-stone-950 shadow-md font-black'
                   : 'text-appText-muted hover:text-appText-bright bg-surface border border-theme'
               }`}
             >
-              Fondasi & FSRS (4)
+              ⚡ Tantangan Cepat (3)
             </button>
+
             <button
-              onClick={() => setActiveCategory('specialty')}
-              className={`px-3.5 py-2 rounded-xl text-xs font-bold transition-all whitespace-nowrap shrink-0 active:scale-95 ${
-                activeCategory === 'specialty'
-                  ? 'bg-amber-500 text-stone-950 shadow-sm font-black'
+              onClick={() => setActiveTab('kosakata')}
+              className={`min-h-[40px] px-4 py-2 rounded-xl text-xs sm:text-sm font-bold transition-all whitespace-nowrap shrink-0 active:scale-95 ${
+                activeTab === 'kosakata'
+                  ? 'bg-amber-500 text-stone-950 shadow-md font-black'
                   : 'text-appText-muted hover:text-appText-bright bg-surface border border-theme'
               }`}
             >
-              Keahlian & Gemba ({ARENA_MODES.length - 4})
+              🔤 Kosakata & Huruf (3)
+            </button>
+
+            <button
+              onClick={() => setActiveTab('tata-bahasa')}
+              className={`min-h-[40px] px-4 py-2 rounded-xl text-xs sm:text-sm font-bold transition-all whitespace-nowrap shrink-0 active:scale-95 ${
+                activeTab === 'tata-bahasa'
+                  ? 'bg-amber-500 text-stone-950 shadow-md font-black'
+                  : 'text-appText-muted hover:text-appText-bright bg-surface border border-theme'
+              }`}
+            >
+              🧩 Tata Bahasa & Audio (3)
             </button>
           </div>
 
-          <span className="text-[11px] text-appText-muted font-mono font-bold hidden sm:inline-block shrink-0">
+          <span className="text-xs text-appText-muted font-mono font-bold hidden md:inline-block shrink-0">
             Target: {(selectedLevel === 'all' ? 'n5' : selectedLevel).toUpperCase()} · {sessionCount} Soal
           </span>
         </div>
 
-        {/* 13 Modes Responsive Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
-          {filteredModes.map((mode) => {
-            const stat = getModeStat(mode.id);
+        {/* 9 Curated Cards Responsive Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3.5 sm:gap-4">
+          {displayedCuratedModes.map((mode) => {
+            const stat = getModeStat(mode.modeType);
             return (
               <div
                 key={mode.id}
-                onClick={() => onStartMode(mode.id)}
-                className="group cursor-pointer bg-surface hover:bg-surface-2 border border-theme hover:border-amber-500/40 rounded-2xl sm:rounded-3xl p-3.5 sm:p-5 transition-all duration-200 hover:-translate-y-1 shadow-sm active:scale-[0.98] flex flex-col justify-between"
+                onClick={() => handleLaunchCard(mode)}
+                className="group cursor-pointer bg-surface hover:bg-surface-2 border border-theme hover:border-amber-500/50 rounded-2xl sm:rounded-3xl p-4 sm:p-5 transition-all duration-200 hover:-translate-y-1 shadow-sm active:scale-[0.98] flex flex-col justify-between min-h-[140px] sm:min-h-[200px]"
               >
                 {/* Mobile View: Compact Row Layout */}
                 <div className="flex sm:hidden items-center justify-between gap-3">
                   <div className="flex items-center gap-3 min-w-0">
-                    <span className="text-2xl p-2 rounded-xl bg-surface-2 border border-theme shrink-0">
+                    <span className="text-2xl p-2.5 rounded-xl bg-surface-2 border border-theme shrink-0">
                       {mode.icon}
                     </span>
                     <div className="min-w-0">
-                      <div className="flex items-center gap-1.5">
-                        <h3 className="font-extrabold text-xs text-appText-bright group-hover:text-accent transition-colors truncate">
+                      <div className="flex items-center gap-2">
+                        <h3 className="font-extrabold text-sm text-appText-bright group-hover:text-amber-400 transition-colors truncate">
                           {mode.name}
                         </h3>
-                        <span className={`text-[9px] uppercase px-1.5 py-0.2 rounded-full border shrink-0 ${mode.badgeColor}`}>
+                        <span className={`text-xs uppercase px-2 py-0.5 rounded-full border shrink-0 ${mode.badgeColor}`}>
                           {mode.tag}
                         </span>
                       </div>
-                      <p className="text-[11px] text-appText-muted truncate mt-0.5">
+                      <p className="text-xs text-appText-muted truncate mt-0.5">
                         {mode.desc}
                       </p>
-                      <div className="flex items-center gap-2 text-[10px] text-appText-muted mt-1 font-mono">
+                      <div className="flex items-center gap-2 text-xs text-appText-muted mt-1 font-mono">
                         <span>⏱️ {mode.estTime}</span>
                         {stat.answered > 0 && (
                           <span className="text-emerald-500 dark:text-emerald-400 font-bold">· {stat.accuracy}% akurasi</span>
@@ -571,7 +650,7 @@ export const QuizArenaHub: React.FC<QuizArenaHubProps> = ({
                     </div>
                   </div>
 
-                  <div className="p-2 rounded-xl bg-surface-2 text-accent group-hover:translate-x-0.5 transition-transform shrink-0">
+                  <div className="min-w-[40px] min-h-[40px] rounded-xl bg-surface-2 text-accent flex items-center justify-center group-hover:translate-x-0.5 transition-transform shrink-0">
                     <ArrowRight className="w-4 h-4" />
                   </div>
                 </div>
@@ -580,40 +659,38 @@ export const QuizArenaHub: React.FC<QuizArenaHubProps> = ({
                 <div className="hidden sm:flex sm:flex-col sm:justify-between h-full space-y-4">
                   <div className="space-y-3">
                     <div className="flex items-center justify-between gap-2">
-                      <span className="text-2xl p-2.5 rounded-2xl bg-surface-2 border border-theme group-hover:scale-110 transition-transform shrink-0">
+                      <span className="text-3xl p-2.5 rounded-2xl bg-surface-2 border border-theme group-hover:scale-110 transition-transform shrink-0">
                         {mode.icon}
                       </span>
-                      <span
-                        className={`text-[10px] uppercase px-2.5 py-0.5 rounded-full border shrink-0 ${mode.badgeColor}`}
-                      >
+                      <span className={`text-xs uppercase px-2.5 py-1 rounded-full border shrink-0 ${mode.badgeColor}`}>
                         {mode.tag}
                       </span>
                     </div>
 
                     <div>
-                      <h3 className="font-extrabold text-sm sm:text-base text-appText-bright group-hover:text-accent transition-colors">
+                      <h3 className="font-extrabold text-base text-appText-bright group-hover:text-amber-400 transition-colors">
                         {mode.name}
                       </h3>
-                      <div className="text-[11px] font-jp font-semibold text-amber-500 dark:text-amber-400/80 mt-0.5">
+                      <div className="text-xs font-jp font-semibold text-amber-500 dark:text-amber-400/80 mt-0.5">
                         {mode.nameJp}
                       </div>
-                      <p className="text-xs text-appText-muted mt-1.5 leading-relaxed line-clamp-2">
+                      <p className="text-sm text-appText-muted mt-1.5 leading-relaxed line-clamp-2">
                         {mode.desc}
                       </p>
 
-                      <div className="pt-2 flex items-center justify-between text-[11px]">
+                      <div className="pt-2 flex items-center justify-between text-xs">
                         {stat.answered > 0 ? (
                           <span className="inline-flex items-center gap-1 font-semibold text-emerald-500 dark:text-emerald-400">
-                            <Target className="w-3 h-3" />
+                            <Target className="w-3.5 h-3.5" />
                             <span>Akurasi {stat.accuracy}% ({stat.answered} soal)</span>
                           </span>
                         ) : (
-                          <span className="text-appText-muted/60 text-[10px]">
+                          <span className="text-appText-muted/60 text-xs">
                             Belum dicoba
                           </span>
                         )}
                         {stat.sessions > 0 && (
-                          <span className="text-[10px] text-accent font-mono font-bold">
+                          <span className="text-xs text-accent font-mono font-bold">
                             {stat.sessions} sesi
                           </span>
                         )}
@@ -621,7 +698,7 @@ export const QuizArenaHub: React.FC<QuizArenaHubProps> = ({
                     </div>
                   </div>
 
-                  <div className="pt-3 border-t border-theme flex items-center justify-between text-[11px] text-appText-muted">
+                  <div className="pt-3 border-t border-theme flex items-center justify-between text-xs text-appText-muted">
                     <span className="flex items-center gap-1 font-mono text-xs">
                       <Clock className="w-3.5 h-3.5 text-accent" />
                       {mode.estTime}
@@ -636,6 +713,75 @@ export const QuizArenaHub: React.FC<QuizArenaHubProps> = ({
             );
           })}
         </div>
+      </div>
+
+      {/* ── PROGRESSIVE DISCLOSURE: 7 SPECIALTY MODES ─────────────── */}
+      <div className="pt-2">
+        <button
+          onClick={() => setIsSpecialtyExpanded((prev) => !prev)}
+          className="w-full flex items-center justify-between p-4 rounded-2xl bg-surface hover:bg-surface-2 border border-theme transition-all text-left shadow-sm active:scale-[0.99]"
+        >
+          <div className="flex items-center gap-3">
+            <span className="text-xl">🩺</span>
+            <div>
+              <div className="text-sm font-extrabold text-appText-bright">
+                Mode Tambahan & Spesialis Gemba (7 Mode)
+              </div>
+              <div className="text-xs text-appText-muted">
+                Konjugasi kata kerja, komparasi nuansa, ritme bicara mora, aksen Tokyo, dan onomatopoeia Kaigo.
+              </div>
+            </div>
+          </div>
+
+          <ChevronDown
+            className={`w-5 h-5 text-accent transition-transform duration-200 shrink-0 ${
+              isSpecialtyExpanded ? 'rotate-180' : ''
+            }`}
+          />
+        </button>
+
+        {isSpecialtyExpanded && (
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 mt-3 animate-in fade-in slide-in-from-top-2 duration-200">
+            {SPECIALTY_MODES.map((mode) => {
+              const stat = getModeStat(mode.modeType);
+              return (
+                <div
+                  key={mode.id}
+                  onClick={() => handleLaunchCard(mode)}
+                  className="group cursor-pointer bg-surface hover:bg-surface-2 border border-theme hover:border-amber-500/40 rounded-2xl p-4 transition-all duration-200 hover:-translate-y-0.5 shadow-sm active:scale-[0.98] flex flex-col justify-between"
+                >
+                  <div className="space-y-2">
+                    <div className="flex items-center justify-between">
+                      <span className="text-2xl p-2 rounded-xl bg-surface-2 border border-theme">
+                        {mode.icon}
+                      </span>
+                      <span className={`text-xs uppercase px-2 py-0.5 rounded-full border ${mode.badgeColor}`}>
+                        {mode.tag}
+                      </span>
+                    </div>
+
+                    <div>
+                      <h4 className="font-extrabold text-sm text-appText-bright group-hover:text-amber-400 transition-colors">
+                        {mode.name}
+                      </h4>
+                      <p className="text-xs text-appText-muted mt-1 line-clamp-2 leading-relaxed">
+                        {mode.desc}
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="pt-3 border-t border-theme mt-3 flex items-center justify-between text-xs text-appText-muted">
+                    <span className="font-mono text-xs">⏱️ {mode.estTime}</span>
+                    <span className="text-accent font-bold group-hover:translate-x-1 transition-transform flex items-center gap-1 text-xs">
+                      <span>Buka</span>
+                      <ArrowRight className="w-3 h-3" />
+                    </span>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        )}
       </div>
 
       {/* Official Japanese Prometric CBT Simulator Modal */}

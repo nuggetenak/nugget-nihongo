@@ -2,7 +2,7 @@
 //  QuizExitGuardModal.tsx — Guard Against Accidental Navigation Mid-Quiz
 // ══════════════════════════════════════════════════════════════════
 
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import { AlertCircle, ArrowLeft, Check } from 'lucide-react';
 
 interface QuizExitGuardModalProps {
@@ -16,6 +16,30 @@ export const QuizExitGuardModal: React.FC<QuizExitGuardModalProps> = ({
   onStay,
   onConfirmExit,
 }) => {
+  const stayButtonRef = useRef<HTMLButtonElement>(null);
+
+  useEffect(() => {
+    if (isOpen) {
+      // Auto-focus the safe "Lanjutkan" button on modal appearance
+      const timer = setTimeout(() => {
+        stayButtonRef.current?.focus();
+      }, 50);
+
+      const handleKeyDown = (e: KeyboardEvent) => {
+        if (e.key === 'Escape') {
+          e.preventDefault();
+          onStay();
+        }
+      };
+
+      window.addEventListener('keydown', handleKeyDown);
+      return () => {
+        clearTimeout(timer);
+        window.removeEventListener('keydown', handleKeyDown);
+      };
+    }
+  }, [isOpen, onStay]);
+
   if (!isOpen) return null;
 
   return (
@@ -23,7 +47,9 @@ export const QuizExitGuardModal: React.FC<QuizExitGuardModalProps> = ({
       onClick={onStay}
       className="fixed inset-0 z-50 bg-black/80 backdrop-blur-md flex items-end sm:items-center justify-center p-0 sm:p-4 animate-in fade-in duration-200"
       role="dialog"
-      aria-label="Konfirmasi Tinggalkan Kuis"
+      aria-modal="true"
+      aria-labelledby="quiz-exit-title"
+      aria-describedby="quiz-exit-desc"
     >
       <div
         onClick={(e) => e.stopPropagation()}
@@ -35,18 +61,19 @@ export const QuizExitGuardModal: React.FC<QuizExitGuardModalProps> = ({
         </div>
 
         <div className="space-y-1.5">
-          <h3 className="text-base sm:text-lg font-bold text-appText-bright">
+          <h3 id="quiz-exit-title" className="text-base sm:text-lg font-bold text-appText-bright">
             Tinggalkan Sesi Kuis?
           </h3>
-          <p className="text-xs text-appText-muted leading-relaxed">
+          <p id="quiz-exit-desc" className="text-xs text-appText-muted leading-relaxed">
             Progres dan poin XP dari sesi latihan yang sedang berlangsung belum tersimpan jika kamu keluar sekarang.
           </p>
         </div>
 
         <div className="grid grid-cols-2 gap-3 pt-2">
           <button
+            ref={stayButtonRef}
             onClick={onStay}
-            className="min-h-[44px] px-4 py-2.5 rounded-xl bg-accent hover:bg-accent-hot text-bg font-bold text-xs transition-all shadow-glow flex items-center justify-center gap-1.5 active:scale-95"
+            className="min-h-[44px] px-4 py-2.5 rounded-xl bg-accent hover:bg-accent-hot text-bg font-bold text-xs transition-all shadow-glow flex items-center justify-center gap-1.5 active:scale-95 focus:ring-2 focus:ring-amber-400 focus:outline-none"
           >
             <Check className="w-4 h-4" />
             <span>Lanjutkan</span>

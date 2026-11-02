@@ -1,0 +1,656 @@
+/**
+ * JLPT N1 Golden Set 01 (Foundational Units 1-5)
+ * 15 Authentic Items with 5-Layer Explanations & Strict Permutation Proof
+ */
+
+function getJLPTN1Set() {
+  return {
+    setId: 'jlpt-n1-set01',
+    trackType: 'jlpt',
+    level: 'n1',
+    title: 'Set Latihan JLPT N1 - 01',
+    description: 'Simulasi modular 15 menit menguji penguasaan Unit 1 s/d 5 Kurikulum N1 (Inisiasi Sejarah, Suksesi Eksekutif, Ketuntasan Siklus, Keterpaksaan Situasional & Faktor Penentu Kondisional).',
+    targetUnits: 'Unit 1 s/d 5: Titik Tolak Inisiasi, Momentum Eksekutif, Kondisi Ekstrem, Keterpaksaan Situasional & Determinasi Karir',
+    totalItems: 15,
+    timeLimitMinutes: 15,
+    passingScore: 10,
+    items: [
+      {
+        id: 'JLPT-N1-S01-Q01',
+        trackType: 'jlpt',
+        level: 'n1',
+        mondaiNumber: 1,
+        mondaiType: 'kanji_reading',
+        instructionJp: '____の言葉の読み方として最もよいものを、1・2・3・4から一つ選びなさい。',
+        instructionId: 'Pilihlah cara baca kanji yang bergaris bawah dari pilihan 1, 2, 3, 4.',
+        prompt: '新法案の 可決により、業界に **激変** が もたらされた。',
+        targetWord: '激変',
+        options: ['げきへん', 'げきべん', 'けきへん', 'はくへん'],
+        correctOptionIndex: 0,
+        explanation: {
+          justification: 'Kanji 「激変」 dibaca 「げきへん」 yang bermakna perubahan drastis / pergolakan dahsyat secara tiba-tiba.',
+          distractorAutopsy: {
+            '1': 'げきへん adalah KUNCI BENAR (激変 = perubahan drastis).',
+            '2': 'げきべん salah pada rendaku kanji 変.',
+            '3': 'けきへん salah pada vokal tak bersuara keki.',
+            '4': 'はくへん adalah bacaan keliru.'
+          },
+          mnemonicSensei: 'Geki (激 = dahsyat/intensif) + Hen (変 = perubahan). Gehenna perombakan total = Gekihen!',
+          l1InterferenceAlert: 'Dalam bahasa Indonesia kita sering menyebutnya \"perubahan drastis\". Di teks resmi N1, kosa kata presisi untuk goncangan pasar adalah 激変 (gekihen).',
+          remedialPrescription: {
+            unitId: 'unit-n1-02',
+            unitNumber: 2,
+            unitTitleId: 'Momentum Perubahan & Lintasan Karir Eksekutif',
+            lessonId: 'les-n1-u02-01',
+            vocabId: 'vg-n1-00045',
+            advice: 'Pelajari kanji pergolakan ekonomi dan perubahan struktural di Unit 2 N1.'
+          }
+        },
+        curriculumRef: {
+          trackId: 'curriculum-n1',
+          unitId: 'unit-n1-02',
+          unitNumber: 2,
+          unitTitleId: 'Momentum Perubahan & Lintasan Karir Eksekutif',
+          lessonId: 'les-n1-u02-01',
+          vocabId: 'vg-n1-00045'
+        }
+      },
+      {
+        id: 'JLPT-N1-S01-Q02',
+        trackType: 'jlpt',
+        level: 'n1',
+        mondaiNumber: 2,
+        mondaiType: 'contextual_vocab',
+        instructionJp: '（　）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。',
+        instructionId: 'Pilihlah kata yang paling tepat untuk mengisi tanda kurung.',
+        prompt: '大雨による 土砂崩れで、道路の 通行止めを （　　）された。',
+        options: ['余儀なく', '禁じ得なく', '極まりなく', '堪えなく'],
+        correctOptionIndex: 0,
+        explanation: {
+          justification: 'Pola formal N1 「〜を余儀なくされる (〜をよぎなくされる)」 bermakna \"terpaksa harus melakukan tindakan yang tidak diinginkan karena desakan keadaan genting / kekuatan alam yang di luar kendali\". Kalimat: Akibat longsor karena hujan lebat, pengelola terpaksa menutup akses jalan.',
+          distractorAutopsy: {
+            '1': '余儀なく (よぎなく) adalah KUNCI BENAR (terpaksa dilakukan karena tak ada opsi lain).',
+            '2': '禁じ得なく (きんじえなく) berpasangan dengan emosi batin (contoh: 怒りを禁じ得ない = tak mampu membendung amarah).',
+            '3': '極まりなく bermakna luar biasa ekstrem (kata sifat).',
+            '4': '堪えなく (たえなく) berpasangan dengan rasa syukur/simpati (感謝に堪えない).'
+          },
+          mnemonicSensei: 'Yogi naku sareru = Yo (lain) + Gi (muslihat/opsi) + Naku (tanpa)! Tanpa ada pilihan jalan lain, terpaksa harus diambil demi keamanan.',
+          l1InterferenceAlert: 'Dalam bahasa Indonesia kita cukup berkata \"terpaksa\". Di bahasa Jepang tingkat tinggi N1 dan berita koran, kosa kata baku untuk keterpaksaan struktural tak terhindarkan adalah を余儀なくされる (o yogi naku sareru).',
+          remedialPrescription: {
+            unitId: 'unit-n1-04',
+            unitNumber: 4,
+            unitTitleId: 'Protokol Khidmat, Ketahanan Mental & Keterpaksaan Situasional',
+            lessonId: 'les-n1-u04-01',
+            grammarId: 'gn1-00035',
+            advice: 'Kuasai pola keterpaksaan situasi darurat ~o yogi naku sareru di Unit 4 N1.'
+          }
+        },
+        curriculumRef: {
+          trackId: 'curriculum-n1',
+          unitId: 'unit-n1-04',
+          unitNumber: 4,
+          unitTitleId: 'Protokol Khidmat, Ketahanan Mental & Keterpaksaan Situasional',
+          lessonId: 'les-n1-u04-01',
+          grammarId: 'gn1-00035'
+        }
+      },
+      {
+        id: 'JLPT-N1-S01-Q03',
+        trackType: 'jlpt',
+        level: 'n1',
+        mondaiNumber: 3,
+        mondaiType: 'usage',
+        instructionJp: '次の言葉の使い方として最もよいものを、1・2・3・4から一つ選びなさい。',
+        instructionId: 'Pilihlah kalimat yang menggunakan kata berikut secara paling tepat dan alami.',
+        prompt: '【いかん】',
+        targetWord: 'いかん',
+        options: [
+          '今回の 合否は、面接での 評価いかんで 決定される。',
+          '天気が いかんだから、傘を 持って 出かけよう。',
+          '彼は とても いかんな 人物なので、信頼できる。',
+          '宿題が いかんして、先生に 怒られた。'
+        ],
+        correctOptionIndex: 0,
+        explanation: {
+          justification: 'Pola N1 「〜いかんで / 〜いかんによって」 bermakna \"tergantung pada bagaimana kondisi/kualitas hal X (hal X menjadi faktor penentu tunggal kelanjutan hasil)\". Kelulusan kali ini ditentukan oleh bagaimana penilaian pada sesi wawancara (面接での評価いかんで決定される).',
+          distractorAutopsy: {
+            '1': '今回の 合否は、面接での 評価いかんで 決定される adalah KUNCI BENAR (faktor penentu bersyarat).',
+            '2': 'いかんだから salah kelas kata; cuaca buruk memakai 悪い/雨.',
+            '3': 'いかんな 人物 salah total; ikan bukan na-adjective untuk karakter orang.',
+            '4': 'いかんして tidak gramatikal.'
+          },
+          mnemonicSensei: 'Ikan de = Faktor kunci penentu! Mau lolos atau gagal, nasibmu ditentukan oleh IKAN de (bagaimana performamu).',
+          l1InterferenceAlert: 'Di N3 kita belajar shidai de. Di N1, bentuk resminya yang berbobot hukum dan institusional adalah いかん (ikan). Bentuk netralnya: 〜のいかんに関わらず (tanpa memandang faktor X).',
+          remedialPrescription: {
+            unitId: 'unit-n1-05',
+            unitNumber: 5,
+            unitTitleId: 'Determinasi Kondisional, Taruhan Reputasi & Faktor Penentu',
+            lessonId: 'les-n1-u05-01',
+            grammarId: 'gn1-00048',
+            advice: 'Pelajari formula faktor penentu ~ikan de / ~ikan ni kakawarazu di Unit 5 N1.'
+          }
+        },
+        curriculumRef: {
+          trackId: 'curriculum-n1',
+          unitId: 'unit-n1-05',
+          unitNumber: 5,
+          unitTitleId: 'Determinasi Kondisional, Taruhan Reputasi & Faktor Penentu',
+          lessonId: 'les-n1-u05-01',
+          grammarId: 'gn1-00048'
+        }
+      },
+      {
+        id: 'JLPT-N1-S01-Q04',
+        trackType: 'jlpt',
+        level: 'n1',
+        mondaiNumber: 4,
+        mondaiType: 'contextual_vocab',
+        instructionJp: '（　）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。',
+        instructionId: 'Pilihlah kata yang paling tepat untuk mengisi tanda kurung.',
+        prompt: '泥（　　）に なりながら、被災地での 救援活動を 続けた。',
+        options: ['まみれ', 'ずくめ', 'だらけ', 'ぐるみ'],
+        correctOptionIndex: 0,
+        explanation: {
+          justification: 'Pola 「〜まみれ」 digunakan untuk benda-benda partikel kecil cair/padat yang menempel kotor dan menutupi seluruh permukaan fisik tubuh manusia (lumpur, debu, darah, keringat: 泥まみれ, 血まみれ, 汗まみれ).',
+          distractorAutopsy: {
+            '1': 'まみれ adalah KUNCI BENAR (menempel kotor menutupi permukaan tubuh: 泥まみれ).',
+            '2': 'ずくめ bermakna serba/penuh hal abstrak atau pakaian (contoh: 黒ずくめ = serba hitam, いいことずくめ = serba hal menyenangkan).',
+            '3': 'だらけ untuk permukaan ruangan/benda yang dipenuhi hal tak diinginkan (contoh: ゴミだらけ, 間違いだらけ), kurang lazim untuk cairan lumpur yang melumuri sekujur badan relawan.',
+            '4': 'ぐるみ bermakna melibatkan seluruh anggota (contoh: 町ぐるみ = seluruh warga kota).'
+          },
+          mnemonicSensei: 'Mamire = Melumuri sekujur tubuh! Darah (chi-mamire), lumpur (doro-mamire), keringat (ase-mamire).',
+          l1InterferenceAlert: 'Dalam bahasa Indonesia kita hanya memakai kata \"berlumuran\". Di Jepang N1, bedakan secara mutlak antara まみれ (menempel basah melumuri tubuh), ずくめ (serba/penuh hal abstrak), dan だらけ (banyak kesalahan/sampah di permukaan).',
+          remedialPrescription: {
+            unitId: 'unit-n1-03',
+            unitNumber: 3,
+            unitTitleId: 'Ketuntasan Siklus, Penyesalan & Proses Berkelanjutan',
+            lessonId: 'les-n1-u03-01',
+            grammarId: 'gn1-00022',
+            advice: 'Kuasai kontras tiga pola kepenuhan N1 (Mamire vs Zukume vs Darake) di Unit 3.'
+          }
+        },
+        curriculumRef: {
+          trackId: 'curriculum-n1',
+          unitId: 'unit-n1-03',
+          unitNumber: 3,
+          unitTitleId: 'Ketuntasan Siklus, Penyesalan & Proses Berkelanjutan',
+          lessonId: 'les-n1-u03-01',
+          grammarId: 'gn1-00022'
+        }
+      },
+      {
+        id: 'JLPT-N1-S01-Q05',
+        trackType: 'jlpt',
+        level: 'n1',
+        mondaiNumber: 4,
+        mondaiType: 'contextual_vocab',
+        instructionJp: '（　）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。',
+        instructionId: 'Pilihlah kata yang paling tepat untuk mengisi tanda kurung.',
+        prompt: '現代の 複雑な 難問を 解決できる 人材は、彼を（　　）他には いない。',
+        options: ['おいて', 'かわきりに', '契機に', '限りに'],
+        correctOptionIndex: 0,
+        explanation: {
+          justification: 'Pola N1 「〜をおいて（〜ない）」 berarti \"tidak ada orang atau hal lain yang sebanding selain sosok X (menegaskan pujian tertinggi atas keunikan/kompetensi mutlak X)\". Tidak ada sosok lain yang sanggup menyelesaikan masalah ini selain dirinya (彼をおいて他にはいない).',
+          distractorAutopsy: {
+            '1': 'おいて adalah KUNCI BENAR (rumus mutlak: 〜をおいて〜ない).',
+            '2': 'かわきりに bermakna tonggak pembuka rangkaian event.',
+            '3': '契機に bermakna momentum titik balik.',
+            '4': '限りに bermakna batas waktu terakhir.'
+          },
+          mnemonicSensei: 'Oite hoka ni wa inai = Tidak ada lagi sosok lain yang mampu menggantikannya! Pujian mutlak nomor satu.',
+          l1InterferenceAlert: 'Pola ~o oite selalu diakhiri kalimat negatif (hoka ni wa nai, hoka ni wa inai) untuk menegaskan status tak tergantikan.',
+          remedialPrescription: {
+            unitId: 'unit-n1-05',
+            unitNumber: 5,
+            unitTitleId: 'Determinasi Kondisional, Taruhan Reputasi & Faktor Penentu',
+            lessonId: 'les-n1-u05-02',
+            grammarId: 'gn1-00052',
+            advice: 'Pelajari formula pujian eksklusif ~o oite hoka ni nai di Unit 5 N1.'
+          }
+        },
+        curriculumRef: {
+          trackId: 'curriculum-n1',
+          unitId: 'unit-n1-05',
+          unitNumber: 5,
+          unitTitleId: 'Determinasi Kondisional, Taruhan Reputasi & Faktor Penentu',
+          lessonId: 'les-n1-u05-02',
+          grammarId: 'gn1-00052'
+        }
+      },
+      {
+        id: 'JLPT-N1-S01-Q06',
+        trackType: 'jlpt',
+        level: 'n1',
+        mondaiNumber: 5,
+        mondaiType: 'paraphrase_synonym',
+        instructionJp: '____の文とだいたい同じ意味の文を、1・2・3・4から一つ選びなさい。',
+        instructionId: 'Pilihlah kalimat yang memiliki makna paling mendekati kalimat bergaris bawah.',
+        prompt: 'その 会見での 彼の態度は、**無礼極まりない** ものだった。',
+        targetWord: '無礼極まりない',
+        options: [
+          'これ以上ないほど 非常に 失礼だった。',
+          '多少の 礼儀作法は 守られていた。',
+          '誰からも 称賛される 態度だった。',
+          '緊張していて 落ち着きが なかった。'
+        ],
+        correctOptionIndex: 0,
+        explanation: {
+          justification: 'Pola N1 「〜極まりない (〜きわまりない)」 atau 「〜極まる」 bermakna \"berada pada titik derajat ekstrem tertinggi yang tak ada bandingannya lagi\". Maka 「無礼極まりない」 setara dengan sangat luar biasa tidak sopan hingga ke taraf maksimal (これ以上ないほど非常に失礼だった).',
+          distractorAutopsy: {
+            '1': 'これ以上ないほど 非常に 失礼だった adalah KUNCI BENAR.',
+            '2': 'Masih menjaga sedikit tata krama bertolak belakang total.',
+            '3': 'Sikap terpuji bertolak belakang.',
+            '4': 'Gugup tidak fokus bukan makna ekstremitas kesopanan bu-rei.'
+          },
+          mnemonicSensei: 'Kiwamaru / Kiwamarinai = Sudah sampai di ujung kutub ekstrem (Kiwami)! Tidak ada yang lebih keterlaluan dari ini.',
+          l1InterferenceAlert: 'Kata sifat \"kiwamarinai\" menggunakan akhiran negatif nai, namun maknanya adalah penegasan positif superlatif (\"sangat amat luar biasa ekstrem\"). Jangan terkecoh bentuk negatifnya!',
+          remedialPrescription: {
+            unitId: 'unit-n1-03',
+            unitNumber: 3,
+            unitTitleId: 'Ketuntasan Siklus, Penyesalan & Proses Berkelanjutan',
+            lessonId: 'les-n1-u03-02',
+            grammarId: 'gn1-00028',
+            advice: 'Kuasai pola ekspresi ekstremitas ~kiwamaru / ~kiwamarinai di Unit 3 N1.'
+          }
+        },
+        curriculumRef: {
+          trackId: 'curriculum-n1',
+          unitId: 'unit-n1-03',
+          unitNumber: 3,
+          unitTitleId: 'Ketuntasan Siklus, Penyesalan & Proses Berkelanjutan',
+          lessonId: 'les-n1-u03-02',
+          grammarId: 'gn1-00028'
+        }
+      },
+      {
+        id: 'JLPT-N1-S01-Q07',
+        trackType: 'jlpt',
+        level: 'n1',
+        mondaiNumber: 6,
+        mondaiType: 'grammar_form',
+        instructionJp: '（　）に入る最もよいものを、1・2・3・4から一つ選びなさい。',
+        instructionId: 'Pilihlah tata bahasa yang paling tepat untuk mengisi tanda kurung.',
+        prompt: '本堂の 扉が （　　）や否や、参拝客が 堂内へと 押し寄せた。',
+        options: ['開く', '開いて', '開いた', '開かない'],
+        correctOptionIndex: 0,
+        explanation: {
+          justification: 'Pola suksesi cepat N1 「V-jisho + や否や (〜やいなや)」 menuntut kata kerja bentuk kamus biasa (jisho-kei): 開くや否や. Bermakna nyaris pada saat bersamaan ketika pintu gerbang terbuka, pengunjung langsung menyerbu masuk.',
+          distractorAutopsy: {
+            '1': '開く (bentuk kamus jisho-kei) adalah KUNCI BENAR.',
+            '2': '開いて (te-form) tidak gramatikal di depan ya ina ya.',
+            '3': '開いた (ta-form) tidak sesuai formula (ya ina ya menempel pada bentuk kamus).',
+            '4': '開かない (nai-form) kontradiktif.'
+          },
+          mnemonicSensei: 'V-jisho + YA INA YA = Baru saja A terjadi, B langsung menyusul seketika secepat kilat!',
+          l1InterferenceAlert: 'Hati-hati dengan konjugasinya: Pola や否や menuntut Verba Bentuk Kamus (Jisho-kei), berbeda dengan pola 〜たとたんに yang menuntut bentuk lampau Ta-form.',
+          remedialPrescription: {
+            unitId: 'unit-n1-02',
+            unitNumber: 2,
+            unitTitleId: 'Momentum Perubahan & Lintasan Karir Eksekutif',
+            lessonId: 'les-n1-u02-01',
+            grammarId: 'gn1-00012',
+            advice: 'Pelajari formula konjugasi suksesi kilat Ya ina ya vs Ga hayai ka di Unit 2 N1.'
+          }
+        },
+        curriculumRef: {
+          trackId: 'curriculum-n1',
+          unitId: 'unit-n1-02',
+          unitNumber: 2,
+          unitTitleId: 'Momentum Perubahan & Lintasan Karir Eksekutif',
+          lessonId: 'les-n1-u02-01',
+          grammarId: 'gn1-00012'
+        }
+      },
+      {
+        id: 'JLPT-N1-S01-Q08',
+        trackType: 'jlpt',
+        level: 'n1',
+        mondaiNumber: 6,
+        mondaiType: 'grammar_form',
+        instructionJp: '（　）に入る最もよいものを、1・2・3・4から一つ選びなさい。',
+        instructionId: 'Pilihlah tata bahasa yang paling tepat untuk mengisi tanda kurung.',
+        prompt: '長年の 恩師の 訃報に 接し、悲しみに （　　）。',
+        options: ['堪えない', 'やまない', '余儀ない', '極まらない'],
+        correctOptionIndex: 0,
+        explanation: {
+          justification: 'Pola N1 「〜に堪えない (〜にたえない)」 melekat pada nomina perasaan emosional mendalam (悲しみ, 感謝, 同情) untuk menyatakan perasaan duka/syukur yang teramat sangat dalam hingga tak sanggup dibendung di dalam dada. Kalimat: Mendengar kabar duka wafatnya sang guru, saya diliputi kesedihan mendalam yang tak terbendung.',
+          distractorAutopsy: {
+            '1': '堪えない (たえない) adalah KUNCI BENAR (kolokasi resmi: 悲しみに堪えない).',
+            '2': 'やまない berpasangan dengan verba te-form (祈ってやまない), bukan nomina kanashimi ni.',
+            '3': '余儀ない salah konteks (untuk keterpaksaan regulasi).',
+            '4': '極まらない salah bentuk.'
+          },
+          mnemonicSensei: 'Kanashimi ni TAENAI = Air mata tak tertahankan lagi membendung duka cita wafatnya sang guru.',
+          l1InterferenceAlert: 'Perhatikan pasangannya: 感謝に堪えない (sangat bersyukur), 悲しみに堪えない (sangat berduka). Pola ini selalu menempel pada nomina emosi + partikel に.',
+          remedialPrescription: {
+            unitId: 'unit-n1-04',
+            unitNumber: 4,
+            unitTitleId: 'Protokol Khidmat, Ketahanan Mental & Keterpaksaan Situasional',
+            lessonId: 'les-n1-u04-02',
+            grammarId: 'gn1-00038',
+            advice: 'Pelajari kolokasi protokol duka cita dan syukur ~ni taenai di Unit 4 N1.'
+          }
+        },
+        curriculumRef: {
+          trackId: 'curriculum-n1',
+          unitId: 'unit-n1-04',
+          unitNumber: 4,
+          unitTitleId: 'Protokol Khidmat, Ketahanan Mental & Keterpaksaan Situasional',
+          lessonId: 'les-n1-u04-02',
+          grammarId: 'gn1-00038'
+        }
+      },
+      {
+        id: 'JLPT-N1-S01-Q09',
+        trackType: 'jlpt',
+        level: 'n1',
+        mondaiNumber: 6,
+        mondaiType: 'grammar_form',
+        instructionJp: '（　）に入る最もよいものを、1・2・3・4から一つ選びなさい。',
+        instructionId: 'Pilihlah tata bahasa yang paling tepat untuk mengisi tanda kurung.',
+        prompt: '掃除を する（　　）から、子どもたちが 部屋を 散らかしてしまう。',
+        options: ['そば', 'なり', 'や否や', 'が早いか'],
+        correctOptionIndex: 0,
+        explanation: {
+          justification: 'Pola N1 「V-jisho / V-ta + そばから」 bermakna \"segera setelah tindakan A diselesaikan dengan susah payah, peristiwa buruk B langsung terjadi berulang kali merusak hasil A hingga terasa sia-sia\". Kalimat: Baru saja selesai dibereskan, anak-anak langsung mengacak-acak kamar kembali.',
+          distractorAutopsy: {
+            '1': 'そば (そばから) adalah KUNCI BENAR (usaha yang langsung sia-sia berulang).',
+            '2': 'なり berpasangan dengan subjek orang ketiga yang melakukan aksi tak terduga.',
+            '3': 'や否や menyatakan kecepatan waktu satu kali, tidak membawa nuansa kesia-siaan berulang.',
+            '4': 'が早いか menyatakan kesigapan aksi tunggal sekejap.'
+          },
+          mnemonicSensei: 'Soba kara = Baru diberesin dari samping, eh dari samping satu lagi langsung diacak-acak lagi! Perbuatan yang sia-sia berulang.',
+          l1InterferenceAlert: 'Dalam bahasa Indonesia kita mengeluh \"baru juga kelar diberesin, udah berantakan lagi\". Di bahasa Jepang N1, nuansa frustrasi perbuatan yang sia-sia diungkapkan dengan そばから (soba kara).',
+          remedialPrescription: {
+            unitId: 'unit-n1-02',
+            unitNumber: 2,
+            unitTitleId: 'Momentum Perubahan & Lintasan Karir Eksekutif',
+            lessonId: 'les-n1-u02-02',
+            grammarId: 'gn1-00015',
+            advice: 'Pelajari formula frustrasi kesia-siaan V-jisho + soba kara di Unit 2 N1.'
+          }
+        },
+        curriculumRef: {
+          trackId: 'curriculum-n1',
+          unitId: 'unit-n1-02',
+          unitNumber: 2,
+          unitTitleId: 'Momentum Perubahan & Lintasan Karir Eksekutif',
+          lessonId: 'les-n1-u02-02',
+          grammarId: 'gn1-00015'
+        }
+      },
+      {
+        id: 'JLPT-N1-S01-Q10',
+        trackType: 'jlpt',
+        level: 'n1',
+        mondaiNumber: 6,
+        mondaiType: 'grammar_form',
+        instructionJp: '（　）に入る最もよいものを、1・2・3・4から一つ選びなさい。',
+        instructionId: 'Pilihlah tata bahasa yang paling tepat untuk mengisi tanda kurung.',
+        prompt: '一流の 職人（　　）の 見事な 手さばきに、思わず 見とれてしまった。',
+        options: ['ならでは', 'あって', 'おいて', 'まみれ'],
+        correctOptionIndex: 0,
+        explanation: {
+          justification: 'Pola N1 「N + ならでは（の）」 bermakna \"hanya dapat diwujudkan atau dimiliki secara istimewa oleh entitas N tersebut dan mustahil ditiru pihak lain (pujian kekhasan orisinal)\". Kalimat: Keterampilan tangan luar biasa yang hanya bisa dihasilkan oleh seorang pengrajin kelas satu.',
+          distractorAutopsy: {
+            '1': 'ならでは adalah KUNCI BENAR (keunikan kualitas orisinal yang tak tertandingi).',
+            '2': 'あって (あっての) bermakna berkat adanya fondasi dasar (contoh: お客様あっての店).',
+            '3': 'おいて bermakna selain itu tidak ada (pola ~o oite ~nai).',
+            '4': 'まみれ bermakna berlumuran kotoran.'
+          },
+          mnemonicSensei: 'NARA-DEWA = Hanya dia yang punya ciri khas istimewa seperti itu! Kyotoならではの風情 (pesona khas Kyoto).',
+          l1InterferenceAlert: 'Dalam bahasa Indonesia kita sering berkata \"khas pengrajin\". N1 mengangkat keunikan khas orisinal ini dengan pola bergengsi ならでは.',
+          remedialPrescription: {
+            unitId: 'unit-n1-05',
+            unitNumber: 5,
+            unitTitleId: 'Determinasi Kondisional, Taruhan Reputasi & Faktor Penentu',
+            lessonId: 'les-n1-u05-02',
+            grammarId: 'gn1-00055',
+            advice: 'Kuasai pola keunikan orisinal N-naradewa di Unit 5 N1 MateriHub.'
+          }
+        },
+        curriculumRef: {
+          trackId: 'curriculum-n1',
+          unitId: 'unit-n1-05',
+          unitNumber: 5,
+          unitTitleId: 'Determinasi Kondisional, Taruhan Reputasi & Faktor Penentu',
+          lessonId: 'les-n1-u05-02',
+          grammarId: 'gn1-00055'
+        }
+      },
+      {
+        id: 'JLPT-N1-S01-Q11',
+        trackType: 'jlpt',
+        level: 'n1',
+        mondaiNumber: 6,
+        mondaiType: 'grammar_form',
+        instructionJp: '（　）に入る最もよいものを、1・2・3・4から一つ選びなさい。',
+        instructionId: 'Pilihlah tata bahasa yang paling tepat untuk mengisi tanda kurung.',
+        prompt: '電話を （　　）なり、急な 出張へと 旅立って いった。',
+        options: ['切る', '切って', '切った', '切らない'],
+        correctOptionIndex: 0,
+        explanation: {
+          justification: 'Pola N1 「V-jisho + なり」 bermakna \"segera setelah menyelesaikan tindakan A, orang ketiga tersebut langsung mengambil aksi tak biasa berikutnya tanpa jeda\". Menuntut kata kerja bentuk kamus biasa: 切るなり (segera setelah menutup telepon, ia langsung bertolak pergi dinas luar kota).',
+          distractorAutopsy: {
+            '1': '切る (bentuk kamus jisho-kei) adalah KUNCI BENAR.',
+            '2': '切って tidak gramatikal di depan nari.',
+            '3': '切った bentuk lampau tidak sesuai kaidah pola ~nari.',
+            '4': '切らない bentuk negatif tidak sesuai makna aksi cepat.'
+          },
+          mnemonicSensei: 'V-jisho + NARI = Tindakan spontan orang ketiga yang beruntun cepat!',
+          l1InterferenceAlert: 'Hati-hati: Pola 〜なり di sini TIDAK BISA digunakan untuk subjek orang pertama (saya). Hanya untuk mendeskripsikan tindakan beruntun orang lain (orang ketiga).',
+          remedialPrescription: {
+            unitId: 'unit-n1-01',
+            unitNumber: 1,
+            unitTitleId: 'Titik Tolak, Inisiasi & Momen Bersejarah',
+            lessonId: 'les-n1-u01-02',
+            grammarId: 'gn1-00008',
+            advice: 'Pelajari batasan subjek orang ketiga pada pola V-jisho + nari di Unit 1 N1.'
+          }
+        },
+        curriculumRef: {
+          trackId: 'curriculum-n1',
+          unitId: 'unit-n1-01',
+          unitNumber: 1,
+          unitTitleId: 'Titik Tolak, Inisiasi & Momen Bersejarah',
+          lessonId: 'les-n1-u01-02',
+          grammarId: 'gn1-00008'
+        }
+      },
+      {
+        id: 'JLPT-N1-S01-Q12',
+        trackType: 'jlpt',
+        level: 'n1',
+        mondaiNumber: 7,
+        mondaiType: 'sentence_star',
+        instructionJp: '★に入るものはどれですか。最もよいものを、1・2・3・4から一つ選びなさい。',
+        instructionId: 'Tentukan kata yang jatuh pada posisi bintang (★).',
+        prompt: '今期の 業績悪化を ______ ______ __★__ ______ 辞任した。',
+        options: ['責任を', '取締役を', '機に', '明確にするために'],
+        correctOptionIndex: 3,
+        starScramble: {
+          leadText: '今期の 業績悪化を',
+          tailText: '辞任した。',
+          tokens: ['機に', '責任を', '明確にするために', '取締役を'],
+          correctOrder: [0, 1, 2, 3],
+          starPosition: 3,
+          fullSentence: '今期の 業績悪化を 機に 責任を 明確にするために 取締役を 辞任した。'
+        },
+        explanation: {
+          justification: 'Susunan kalimat baku yang benar: 機に (1) [pola ~o ki ni: memanfaatkan momentum penurunan kinerja] + 責任を (2) [tanggung jawab] + 明確にするために (3) [demi memperjelas akuntabilitas] + 取締役を (4) [jabatan dewan direksi] + 辞任した [mengundurkan diri]. Kata yang menempati slot bintang ke-3 adalah 「明確にするために」 (opsi 4 pada daftar).',
+          distractorAutopsy: {
+            '1': '機に berada di posisi 1 menempel pada gyouseki akka o.',
+            '2': '責任を berada di posisi 2.',
+            '3': '取締役を berada di posisi 4 menempel pada jinin shita.',
+            '4': '明確にするために adalah KUNCI BENAR (menempati slot bintang ke-3).'
+          },
+          mnemonicSensei: 'Momentum penurunan kinerja (o ki ni) -> demi memperjelas tanggung jawab (sekinin o meikaku ni suru tameni) -> mundur dari kursi direksi (torishimariyaku o jinin shita)!',
+          l1InterferenceAlert: 'Pola ~o ki ni (menjadikan momentum perubahan karir) adalah tata bahasa formal korporat di Unit 1 N1.',
+          remedialPrescription: {
+            unitId: 'unit-n1-01',
+            unitNumber: 1,
+            unitTitleId: 'Titik Tolak, Inisiasi & Momen Bersejarah',
+            lessonId: 'les-n1-u01-01',
+            grammarId: 'gn1-00004',
+            advice: 'Pelajari susun kalimat momentum eksekutif ~o ki ni di Unit 1 N1.'
+          }
+        },
+        curriculumRef: {
+          trackId: 'curriculum-n1',
+          unitId: 'unit-n1-01',
+          unitNumber: 1,
+          unitTitleId: 'Titik Tolak, Inisiasi & Momen Bersejarah',
+          lessonId: 'les-n1-u01-01',
+          grammarId: 'gn1-00004'
+        }
+      },
+      {
+        id: 'JLPT-N1-S01-Q13',
+        trackType: 'jlpt',
+        level: 'n1',
+        mondaiNumber: 7,
+        mondaiType: 'sentence_star',
+        instructionJp: '★に入るものはどれですか。最もよいものを、1・2・3・4から一つ選びなさい。',
+        instructionId: 'Tentukan kata yang jatuh pada posisi bintang (★).',
+        prompt: '理由の ______ ______ __★__ ______ 認められない。',
+        options: ['いかんを', '問わず', '規則違反は', '一切'],
+        correctOptionIndex: 1,
+        starScramble: {
+          leadText: '理由の',
+          tailText: '認められない。',
+          tokens: ['いかんを', '問わず', '一切', '規則違反は'],
+          correctOrder: [0, 1, 3, 2],
+          starPosition: 3,
+          fullSentence: '理由の いかんを 問わず 一切 規則違反は 認められない。'
+        },
+        explanation: {
+          justification: 'Susunan gramatikal mutlak: いかんを (1) + 問わず (2) [pola N1: tanpa memandang alasan apa pun / tanpa terkecuali] + 規則違反は (3) [pelanggaran regulasi] + 一切 (4) [sama sekali] + 認められない [tidak dapat ditoleransi]. Kata yang jatuh pada slot bintang ke-3 adalah 「規則違反は」 (opsi 3 pada daftar).',
+          distractorAutopsy: {
+            '1': 'いかんを berada di urutan 1 menempel pada riyuu no.',
+            '2': '問わず berada di urutan 2 (rumus: ~ikan o towazu).',
+            '3': '規則違反は adalah KUNCI BENAR (menempati slot bintang ke-3).',
+            '4': '一切 berada di urutan 4 sebelum verba negatif mitomerarenai.'
+          },
+          mnemonicSensei: 'Riyuu no ikan o towazu = Apapun alasannya, tanpa kompromi! Aturan ketat hukum dan etika N1.',
+          l1InterferenceAlert: 'Formula baku N1 adalah: [Nomina] + no ikan o towazu (tanpa memandang faktor X). Jangan menukar posisi towazu di depan ikan!',
+          remedialPrescription: {
+            unitId: 'unit-n1-05',
+            unitNumber: 5,
+            unitTitleId: 'Determinasi Kondisional, Taruhan Reputasi & Faktor Penentu',
+            lessonId: 'les-n1-u05-01',
+            grammarId: 'gn1-00048',
+            advice: 'Kuasai susun kalimat formula ~ikan o towazu di Unit 5 N1.'
+          }
+        },
+        curriculumRef: {
+          trackId: 'curriculum-n1',
+          unitId: 'unit-n1-05',
+          unitNumber: 5,
+          unitTitleId: 'Determinasi Kondisional, Taruhan Reputasi & Faktor Penentu',
+          lessonId: 'les-n1-u05-01',
+          grammarId: 'gn1-00048'
+        }
+      },
+      {
+        id: 'JLPT-N1-S01-Q14',
+        trackType: 'jlpt',
+        level: 'n1',
+        mondaiNumber: 8,
+        mondaiType: 'medium_reading',
+        instructionJp: '次の文章を読んで、後の問いに対する答えとして最もよいものを、1・2・3・4から一つ選びなさい。',
+        instructionId: 'Bacalah teks esai filosofis berikut, lalu tentukan jawaban yang paling tepat dari 1, 2, 3, 4.',
+        prompt: '筆者が述べる「真のプロフェッショナリズム」の本質は 何か。',
+        readingPassage: {
+          genre: 'essay',
+          passageTitle: '【専門性と倫理の相克】',
+          passageText: '【専門性と倫理の相克】\n\n高度な専門知識や技術を持つこと自体は、プロフェッショナルとしての必要条件にすぎず、決して十分条件ではない。自己のスキルを単なる利己的な利益獲得の道具として行使する者は、技術者であっても真の専門家とは呼べない。\n\n自らの専門性が社会や後世に及ぼす影響を洞察し、時に自己の短期的利益を犠牲にしてでも公共の福祉と倫理的規範を守り抜く覚悟を持つことこそが、プロフェッショナリズムの根幹をなすのである。技術は倫理という羅針盤を失った瞬間、破壊的な凶器へと変貌するのだから。'
+        },
+        options: [
+          '単なる技術の行使にとどまらず、社会への影響を自覚し 倫理的責任を果たし抜く覚悟を持つこと。',
+          '自らの専門性を最大限に活用して、最短期間で 最大の金銭的利益を 追求すること。',
+          '倫理的な配慮は 法律家に委ね、専門技術者は 利益と効率のみに 専念すべきである。',
+          '技術の進歩のためには、時として 倫理規範や 社会的規範を 無視することも 辞さない姿勢。'
+        ],
+        correctOptionIndex: 0,
+        explanation: {
+          justification: 'Penulis menegaskan pada paragraf kedua: 「自らの専門性が社会や後世に及ぼす影響を洞察し、公共の福祉と倫理的規範を守り抜く覚悟を持つことこそが、プロフェッショナリズムの根幹をなす (Mampu menginsafi dampak keahliannya bagi masyarakat dan memiliki keteguhan tekad menjaga norma etika kesejahteraan publik; itulah fondasi sejati profesionalisme)」. Pilihan 1 merangkum tesis filosofis ini dengan presisi sempurna.',
+          distractorAutopsy: {
+            '1': 'Pilihan 1 adalah KUNCI BENAR.',
+            '2': 'Mengejar keuntungan materi secepatnya secara tegas dikritik sebagai sikap egois teknisi picik.',
+            '3': 'Menyerahkan etika ke ahli hukum dan hanya fokus efisiensi adalah paham teknokrat berbahaya yang ditolak penulis.',
+            '4': 'Mengabaikan norma demi kemajuan teknologi adalah penyimpangan yang diperingatkan di akhir teks (bisa menjadi senjata destruktif).'
+          },
+          mnemonicSensei: 'Dekonstruksi tesis N1: 「技術は必要条件にすぎない。〜倫理を守り抜く覚悟こそが根幹である」!',
+          l1InterferenceAlert: 'Dalam wacana N1, penulis sering mempertentangkan \"keahlian teknis (必要条件)\" dengan \"integritas etika (十分条件)\". Jawaban yang benar selalu berada pada tataran integritas moral yang melampaui kepentingan materi jangka pendek.',
+          remedialPrescription: {
+            unitId: 'unit-n1-04',
+            unitNumber: 4,
+            unitTitleId: 'Protokol Khidmat, Ketahanan Mental & Keterpaksaan Situasional',
+            lessonId: 'les-n1-u04-02',
+            vocabId: 'vg-n1-00045',
+            advice: 'Latih membaca teks filsafat profesionalisme dan dekonstruksi argumen N1 di Unit 4.'
+          }
+        },
+        curriculumRef: {
+          trackId: 'curriculum-n1',
+          unitId: 'unit-n1-04',
+          unitNumber: 4,
+          unitTitleId: 'Protokol Khidmat, Ketahanan Mental & Keterpaksaan Situasional',
+          lessonId: 'les-n1-u04-02',
+          vocabId: 'vg-n1-00045'
+        }
+      },
+      {
+        id: 'JLPT-N1-S01-Q15',
+        trackType: 'jlpt',
+        level: 'n1',
+        mondaiNumber: 8,
+        mondaiType: 'info_retrieval',
+        instructionJp: '右の案内を見て、質問に答えなさい。答えは、1・2・3・4から最もよいものを一つ選びなさい。',
+        instructionId: 'Perhatikan dokumen klausul sengketa hukum berikut, lalu tentukan interpretasi yang tepat.',
+        prompt: '海外企業との 共同研究開発契約において、知的財産権の 帰属および 紛争解決について 正しいものは どれか。',
+        readingPassage: {
+          genre: 'realia_table',
+          passageTitle: '【国際共同研究開発契約書（抜粋）】',
+          passageText: '【国際共同研究開発契約書（抜粋）】\n\n第18条（知的財産権の帰属）\n1. 本プロジェクト開始前に 各当事者が 単独で保有していた 背景知財は、従前の権利者に 留保される。\n2. 本共同研究の 成果として 新たに生じた 発明（共同知財）は、両者の 貢献度に関わらず「均等に共有」とする。\n\n第24条（準拠法および管轄裁判所）\n1. 本契約の 解釈および 効力は、日本法に 準拠する。\n2. 本契約に 起因する 一切の紛争は、東京地方裁判所を「第一審の専属的合意管轄裁判所」とする。\n※ 仲裁条項は 適用されず、裁判手続きによる 解決のみを 認める。'
+        },
+        options: [
+          '共同研究で新たに生まれた発明は両者均等共有とし、紛争が生じた際は日本法に基づき東京地裁で専属解決する。',
+          'プロジェクト開始前から保有していた特許も、すべて共同研究の成果として均等共有に移管される。',
+          '紛争解決には国際仲裁裁判所が優先され、東京地方裁判所の管轄は適用除外となる。',
+          '貢献度が高い側の企業が、単独で共同知財の権利を独占できる。'
+        ],
+        correctOptionIndex: 0,
+        explanation: {
+          justification: 'Berdasarkan Pasal 18 ayat 2: temuan baru hasil riset bersama dibagi kepemilikannya secara setara (均等に共有). Dan berdasarkan Pasal 24: hukum yang berlaku adalah hukum Jepang (日本法に準拠), dengan Pengadilan Negeri Tokyo sebagai pengadilan eksklusif tingkat pertama (東京地方裁判所を専属的合意管轄裁判所とする). Klausul arbitrase tegas ditiadakan. Pilihan 1 merangkum seluruh poin hukum ini secara akurat.',
+          distractorAutopsy: {
+            '1': 'Pilihan 1 adalah KUNCI BENAR.',
+            '2': 'Paten yang sudah ada sebelum proyek dimulai tetap menjadi milik pemegang hak lama (Pasal 18 ayat 1), tidak dipindahtangankan.',
+            '3': 'Arbitrase secara tegas dikecualikan pada klausul ※ (仲裁条項は適用されず).',
+            '4': 'Kepemilikan dibagi rata tanpa memandang besaran kontribusi (貢献度に関わらず均等に共有).'
+          },
+          mnemonicSensei: 'Baca 2 klausul kunci: 1. Chizai kizou (kepemilikan HKI bersama), 2. Junkyohou & Kankatsu (Hukum Jepang & PN Tokyo)!',
+          l1InterferenceAlert: 'Dalam Dokkai Information Retrieval N1, format teks sering berupa draft kontrak legal (Keiyakusho). Perhatikan istilah hukum: 留保される (tetap di tangan pemilik lama) dan 均等に共有 (dibagi sama rata).',
+          remedialPrescription: {
+            unitId: 'unit-n1-05',
+            unitNumber: 5,
+            unitTitleId: 'Determinasi Kondisional, Taruhan Reputasi & Faktor Penentu',
+            lessonId: 'les-n1-u05-02',
+            vocabId: 'vg-n1-00045',
+            advice: 'Latih membaca dokumen kontrak legal bilateral korporasi di Unit 5 N1.'
+          }
+        },
+        curriculumRef: {
+          trackId: 'curriculum-n1',
+          unitId: 'unit-n1-05',
+          unitNumber: 5,
+          unitTitleId: 'Determinasi Kondisional, Taruhan Reputasi & Faktor Penentu',
+          lessonId: 'les-n1-u05-02',
+          vocabId: 'vg-n1-00045'
+        }
+      }
+    ]
+  };
+}
+
+module.exports = { getJLPTN1Set };
