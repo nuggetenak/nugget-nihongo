@@ -24,7 +24,7 @@ export const PATCH_NOTES_HISTORY: PatchNote[] = [
     type: 'minor',
     friendlySummary: 'Pembaruan Nugget Nihongo v21.1.0 menghadirkan de-cluttering menyeluruh antarmuka aplikasi melalui 5 Pass Overhaul Halaman per Halaman: penyederhanaan navigasi global menjadi 4 jangkar tenang dan sheet aksi cepat, evolusi halaman Profil menjadi Pusat Rapor Pembelajar dengan avatar budaya & target harian, perombakan beranda ramah visual tanpa micro-font, kurasi 11 perkakas MateriHub ke dalam 2 klaster Dojo tenang, serta penataan Arena Kuis menjadi 9 mode terarah dalam 3 tab tematik dan kartu Rekomendasi Hari Ini.',
     highlights: [
-      'Pass 1 — Calm Executive Shell & Quick Action Sheet: Reduksi navigasi global menjadi 4 jangkar inti (Beranda, Materi Hub, Arena Kuis, Sensei AI) dan sheet tindakan cepat ramah jempul.',
+      'Pass 1 — Calm Executive Shell & Quick Action Sheet: Reduksi navigasi global menjadi 4 jangkar inti (Beranda, Materi Hub, Arena Kuis, Sensei AI) dan sheet tindakan cepat ramah jempol.',
       'Pass 2 — Pusat Rapor Pembelajar & Profil: Transformasi halaman Profil menjadi pusat identitas pembelajar Jepang dengan 8 avatar budaya, target XP harian fleksibel, dan visualisasi rapor penguasaan kurikulum.',
       'Pass 3 — Beranda De-Cluttering & Purge Micro-Font: Restrukturisasi cockpit beranda bebas kedip, tombol utama berergonomi 48px, dan pembersihan total micro-font di bawah 12px demi kenyamanan visual.',
       'Pass 4 — MateriHub Dojo & Pustaka Progressive Disclosure: Pengelompokan 11 alat ke dalam 2 klaster tenang (Latihan Kemahiran Inti vs Peralatan & Referensi) dengan estetika pernis Urushi hangat.',

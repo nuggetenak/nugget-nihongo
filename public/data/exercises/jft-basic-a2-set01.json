@@ -1,0 +1,714 @@
+{
+  "setId": "jft-basic-a2-set01",
+  "trackType": "jft",
+  "title": "Set Latihan JFT-Basic A2 - 01",
+  "description": "Simulasi modular 15 menit berakar dari silabus Irodori: Japanese for Life in Japan (Huruf & Kosakata, Percakapan & Ungkapan, Audio Choukai, dan Wacana Realia Hidup di Jepang).",
+  "targetUnits": "Seksi 1 s/d 4: Moji-Goi, Kaiwa-Hyogen, Choukai (Maks 2x Putar), & Dokkai Realia",
+  "totalItems": 15,
+  "timeLimitMinutes": 15,
+  "passingScore": 10,
+  "items": [
+    {
+      "id": "JFT-A2-S01-Q01",
+      "trackType": "jft",
+      "mondaiNumber": 1,
+      "mondaiType": "jft_kanji_life",
+      "instructionJp": "写真の言葉の読み方として最もよいものを、1・2・3・4から一つ選びなさい。",
+      "instructionId": "Pilihlah cara baca kanji rambu darurat berikut yang paling tepat.",
+      "prompt": "アパートの 廊下に 【非常口】 と 書いてあります。この 漢字は どう 読みますか。",
+      "targetWord": "非常口",
+      "options": [
+        "ひじょうぐち",
+        "ひじょうこう",
+        "ひじょうもん",
+        "いじょうぐち"
+      ],
+      "correctOptionIndex": 0,
+      "explanation": {
+        "justification": "Rambu penunjuk pintu darurat evakuasi kebakaran/gempa 「非常口」 dibaca 「ひじょうぐち」. Terdiri dari 非常 (keadaan darurat / tidak biasa) + 口 (kuchi/guchi = pintu keluar).",
+        "distractorAutopsy": {
+          "1": "ひじょうぐち adalah KUNCI BENAR (pintu darurat).",
+          "2": "ひじょうこう salah pada kanji 口 (tidak dibaca kou pada pintu rambu darurat).",
+          "3": "ひじょうもん salah kanji (mon = gerbang besar 門).",
+          "4": "いじょうぐち salah pada vokal pertama (異常 = tidak normal)."
+        },
+        "mnemonicSensei": "Hi (非 = tidak) + Jou (常 = biasa) + Guchi (口 = pintu). Pintu saat kondisi tidak biasa (darurat) = Hijouguchi!",
+        "l1InterferenceAlert": "Di Indonesia rambu darurat biasanya bertuliskan \"Pintu Darurat\" atau \"Exit\". Di Jepang, kanji hijau menyala ini wajib dihapal oleh semua pekerja asing untuk evakuasi keselamatan.",
+        "remedialPrescription": {
+          "unitId": "unit-curriculum-jft-a2-01",
+          "unitNumber": 1,
+          "unitTitleId": "Seksi 1: Moji to Goi (Kanji Kehidupan & Kosakata Kerja)",
+          "lessonId": "les-curriculum-jft-a2-u01-01",
+          "vocabId": "vg-n4-00086",
+          "advice": "Pelajari kanji rambu keselamatan darurat di Seksi 1 Kurikulum JFT-Basic A2."
+        }
+      },
+      "curriculumRef": {
+        "trackId": "curriculum-jft-a2",
+        "unitId": "unit-curriculum-jft-a2-01",
+        "unitNumber": 1,
+        "unitTitleId": "Seksi 1: Moji to Goi (Kanji Kehidupan & Kosakata Kerja)",
+        "lessonId": "les-curriculum-jft-a2-u01-01",
+        "vocabId": "vg-n4-00086"
+      }
+    },
+    {
+      "id": "JFT-A2-S01-Q02",
+      "trackType": "jft",
+      "mondaiNumber": 1,
+      "mondaiType": "jft_kanji_life",
+      "instructionJp": "____の言葉の意味として最もよいものを、1・2・3・4から一つ選びなさい。",
+      "instructionId": "Pilihlah arti petunjuk obat klinik berikut yang paling tepat.",
+      "prompt": "薬の 袋に 【食後（しょくご）に 飲んでください】 と 書いてあります。いつ 飲みますか。",
+      "targetWord": "食後",
+      "options": [
+        "ごはんを 食べた 後",
+        "ごはんを 食べる 前",
+        "寝る すぐ 前",
+        "朝起きて ごはんを 食べる 前"
+      ],
+      "correctOptionIndex": 0,
+      "explanation": {
+        "justification": "「食後 (しょくご)」 bermakna setelah makan (makan 食 + sesudah 後 = ごはんを食べた後). Biasanya obat diminum sekitar 30 menit setelah makan agar lambung tidak teriritasi.",
+        "distractorAutopsy": {
+          "1": "ごはんを 食べた 後 adalah KUNCI BENAR (setelah makan).",
+          "2": "Sebelum makan disebut 食前 (しょくぜん / shokuzen).",
+          "3": "Sebelum tidur disebut 就寝前 (しゅうしんまえ / shuushinmae).",
+          "4": "Pagi sebelum sarapan adalah shokuzen pagi hari."
+        },
+        "mnemonicSensei": "Shoku (makan) + Go (sesudah/after). Ingat: Shokugo = sesudah makan! Kalau Shokuzen = sebelum makan.",
+        "l1InterferenceAlert": "Di bungkus obat klinik Jepang, petunjuk tidak ditulis panjang melainkan hanya 2 huruf kanji: 食前 (sebelum makan) atau 食後 (sesudah makan). Pasien harus teliti membacanya!",
+        "remedialPrescription": {
+          "unitId": "unit-curriculum-jft-a2-01",
+          "unitNumber": 1,
+          "unitTitleId": "Seksi 1: Moji to Goi (Kanji Kehidupan & Kosakata Kerja)",
+          "lessonId": "les-curriculum-jft-a2-u01-01",
+          "vocabId": "vg-n4-00010",
+          "advice": "Buka kembali kosakata petunjuk kesehatan dan obat di Unit 1 JFT A2."
+        }
+      },
+      "curriculumRef": {
+        "trackId": "curriculum-jft-a2",
+        "unitId": "unit-curriculum-jft-a2-01",
+        "unitNumber": 1,
+        "unitTitleId": "Seksi 1: Moji to Goi (Kanji Kehidupan & Kosakata Kerja)",
+        "lessonId": "les-curriculum-jft-a2-u01-01",
+        "vocabId": "vg-n4-00010"
+      }
+    },
+    {
+      "id": "JFT-A2-S01-Q03",
+      "trackType": "jft",
+      "mondaiNumber": 1,
+      "mondaiType": "jft_vocab_context",
+      "instructionJp": "（　）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
+      "instructionId": "Pilihlah kosakata yang paling tepat sesuai konteks minimarket.",
+      "prompt": "コンビニの レジで 「（　　）は ご利用ですか」と 聞かれました。プラスチックの袋のことです。",
+      "options": [
+        "レジ袋",
+        "領収書",
+        "ポイントカード",
+        "お箸"
+      ],
+      "correctOptionIndex": 0,
+      "explanation": {
+        "justification": "Di kasir minimarket/supermarket Jepang, kasir selalu menanyakan kantong plastik belanja berbayar dengan istilah 「レジ袋（レジぶくろ / reji-bukuro）」: レジ袋はご利用ですか (Apakah membutuhkan kantong plastik?).",
+        "distractorAutopsy": {
+          "1": "レジ袋 (kantong plastik belanja kasir) adalah KUNCI BENAR.",
+          "2": "領収書 (りょうしゅうしょ) adalah kuitansi resmi.",
+          "3": "ポイントカード adalah kartu member poin belanja.",
+          "4": "お箸 (おはし) adalah sumpit untuk makanan siap saji bento."
+        },
+        "mnemonicSensei": "Reji (kasir) + Fukuro/Bukuro (kantong plastik). Sekarang di Jepang kantong plastik berbayar (有料), jadi kasir selalu tanya reji-bukuro!",
+        "l1InterferenceAlert": "Dalam bahasa Indonesia kita biasa bilang \"kantong kresek\". Di Jepang, jangan sebut \"purasuchikku bukuro\" ke kasir, istilah umumnya di kasir adalah reji-bukuro.",
+        "remedialPrescription": {
+          "unitId": "unit-curriculum-jft-a2-01",
+          "unitNumber": 1,
+          "unitTitleId": "Seksi 1: Moji to Goi (Kanji Kehidupan & Kosakata Kerja)",
+          "lessonId": "les-curriculum-jft-a2-u01-01",
+          "vocabId": "vg-n4-00001",
+          "advice": "Pelajari kosakata belanja praktis sehari-hari di Seksi 1 JFT A2."
+        }
+      },
+      "curriculumRef": {
+        "trackId": "curriculum-jft-a2",
+        "unitId": "unit-curriculum-jft-a2-01",
+        "unitNumber": 1,
+        "unitTitleId": "Seksi 1: Moji to Goi (Kanji Kehidupan & Kosakata Kerja)",
+        "lessonId": "les-curriculum-jft-a2-u01-01",
+        "vocabId": "vg-n4-00001"
+      }
+    },
+    {
+      "id": "JFT-A2-S01-Q04",
+      "trackType": "jft",
+      "mondaiNumber": 1,
+      "mondaiType": "jft_vocab_context",
+      "instructionJp": "（　）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
+      "instructionId": "Pilihlah ungkapan yang tepat untuk keluhan sakit di apotek.",
+      "prompt": "薬局で： 「昨日から 熱が あって、喉も （　　）んです。」",
+      "options": [
+        "痛い",
+        "重い",
+        "暗い",
+        "早い"
+      ],
+      "correctOptionIndex": 0,
+      "explanation": {
+        "justification": "Untuk menyatakan rasa sakit pada tenggorokan (喉/nodo), kata sifat yang digunakan adalah 「痛い (いたい - sakit)」: 喉が痛い (tenggorokan sakit).",
+        "distractorAutopsy": {
+          "1": "痛い adalah KUNCI BENAR (sakit nyeri pada organ tubuh).",
+          "2": "重い (berat) biasanya untuk kepala (頭が重い = kepala terasa berat/penat).",
+          "3": "暗い (gelap) tidak relevan dengan kondisi fisik organ.",
+          "4": "早い (cepat) tidak relevan dengan rasa sakit."
+        },
+        "mnemonicSensei": "Itai = Sakit! Nodo ga itai (sakit tenggorokan), Atama ga itai (sakit kepala), Onaka ga itai (sakit perut).",
+        "l1InterferenceAlert": "Dalam bahasa Indonesia kita berkata \"tenggorokan saya radang/sakit\". Di bahasa Jepang, keluhan gejala penyakit selalu memakai kata sifat 痛い (itai) berpartikel GA.",
+        "remedialPrescription": {
+          "unitId": "unit-curriculum-jft-a2-01",
+          "unitNumber": 1,
+          "unitTitleId": "Seksi 1: Moji to Goi (Kanji Kehidupan & Kosakata Kerja)",
+          "lessonId": "les-curriculum-jft-a2-u01-01",
+          "vocabId": "vg-n4-00030",
+          "advice": "Kuasai kosakata keluhan medis dan nama organ tubuh di Unit 1 JFT A2."
+        }
+      },
+      "curriculumRef": {
+        "trackId": "curriculum-jft-a2",
+        "unitId": "unit-curriculum-jft-a2-01",
+        "unitNumber": 1,
+        "unitTitleId": "Seksi 1: Moji to Goi (Kanji Kehidupan & Kosakata Kerja)",
+        "lessonId": "les-curriculum-jft-a2-u01-01",
+        "vocabId": "vg-n4-00030"
+      }
+    },
+    {
+      "id": "JFT-A2-S01-Q05",
+      "trackType": "jft",
+      "mondaiNumber": 2,
+      "mondaiType": "jft_expression",
+      "instructionJp": "（　）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
+      "instructionId": "Pilihlah ungkapan permohonan izin kerja yang paling tepat.",
+      "prompt": "職場で： 「体調が 悪いので、今日は 少し 早く （　　）いただけませんか。」",
+      "options": [
+        "帰らせて",
+        "帰って",
+        "帰らなくて",
+        "帰れば"
+      ],
+      "correctOptionIndex": 0,
+      "explanation": {
+        "justification": "Pola permohonan izin sangat santun kepada atasan untuk diperbolehkan pulang cepat adalah bentuk kausatif te-form 「〜（さ）せていただけませんか」: 帰らせていただけませんか (Bolehkah saya diizinkan pulang lebih cepat?).",
+        "distractorAutopsy": {
+          "1": "帰らせて (kausatif te-form: izinkan saya pulang) adalah KUNCI BENAR.",
+          "2": "帰っていただけませんか berarti meminta lawan bicara/atasan yang pulang (salah arah izin).",
+          "3": "帰らなくて berarti tidak pulang.",
+          "4": "帰れば adalah bentuk pengandaian kondisional."
+        },
+        "mnemonicSensei": "Minta izin agar SAYA boleh melakukan sesuatu? Wajib KAUSATIF: V-(sa)sete itadakemasen ka! Kaerasete itadakemasen ka.",
+        "l1InterferenceAlert": "Ini adalah kesalahan paling umum orang asing di tempat kerja Jepang! Jika bilang \"Kaette itadakemasen ka\", artinya Anda mengusir atasan Anda pulang! Selalu pakai KAUSATIF (Kaerasete) saat meminta izin untuk diri sendiri.",
+        "remedialPrescription": {
+          "unitId": "unit-curriculum-jft-a2-02",
+          "unitNumber": 2,
+          "unitTitleId": "Seksi 2: Kaiwa to Hyogen (Percakapan & Tata Bahasa Komunikasi)",
+          "lessonId": "les-curriculum-jft-a2-u02-01",
+          "grammarId": "gn4-00021",
+          "advice": "Pelajari formula permohonan izin kausatif sopan di Seksi 2 Kurikulum JFT A2."
+        }
+      },
+      "curriculumRef": {
+        "trackId": "curriculum-jft-a2",
+        "unitId": "unit-curriculum-jft-a2-02",
+        "unitNumber": 2,
+        "unitTitleId": "Seksi 2: Kaiwa to Hyogen (Percakapan & Tata Bahasa Komunikasi)",
+        "lessonId": "les-curriculum-jft-a2-u02-01",
+        "grammarId": "gn4-00021"
+      }
+    },
+    {
+      "id": "JFT-A2-S01-Q06",
+      "trackType": "jft",
+      "mondaiNumber": 2,
+      "mondaiType": "jft_expression",
+      "instructionJp": "（　）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
+      "instructionId": "Pilihlah cara menolak ajakan secara halus dan sopan khas Jepang.",
+      "prompt": "同僚： 「今晩、いっしょに 飲みに行きませんか。」\nあなた： 「すみません、今晩は （　　）。」",
+      "options": [
+        "ちょっと 用事が あって...",
+        "絶対に 行きません。",
+        "嫌いです。",
+        "行きましょう。"
+      ],
+      "correctOptionIndex": 0,
+      "explanation": {
+        "justification": "Dalam budaya komunikasi Jepang, menolak ajakan tidak boleh menggunakan kata \"tidak/menolak\" secara frontal. Cara baku yang sangat santun adalah menggunakan frasa menggantung 「ちょっと用事があって... (maaf, malam ini agak ada urusan/keperluan...)」.",
+        "distractorAutopsy": {
+          "1": "ちょっと 用事が あって... adalah KUNCI BENAR (penolakan halus dengan alasan sopan menggantung).",
+          "2": "絶対に 行きません (sama sekali saya tidak sudi pergi) sangat kasar dan merusak hubungan relasi kerja.",
+          "3": "嫌いです (saya benci) sangat tidak sopan.",
+          "4": "行きましょう (ayo pergi) adalah menerima ajakan, padahal kalimat diawali kata maaf (すみません)."
+        },
+        "mnemonicSensei": "Tolak halus gaya Jepang: Pakai CHOTTO... lalu gantungkan kalimatnya! Orang Jepang langsung paham artinya menolak santun.",
+        "l1InterferenceAlert": "Di Jepang, menolak dengan kata \"Iie\" secara langsung terdengar agresif. Selalu gunakan \"Chotto...\" atau \"Komban wa youji ga atte...\" untuk menjaga keharmonisan (Wa).",
+        "remedialPrescription": {
+          "unitId": "unit-curriculum-jft-a2-02",
+          "unitNumber": 2,
+          "unitTitleId": "Seksi 2: Kaiwa to Hyogen (Percakapan & Tata Bahasa Komunikasi)",
+          "lessonId": "les-curriculum-jft-a2-u02-01",
+          "grammarId": "gn4-00021",
+          "advice": "Pelajari etika penolakan santun (Kuuki o yomu) di Seksi 2 JFT A2."
+        }
+      },
+      "curriculumRef": {
+        "trackId": "curriculum-jft-a2",
+        "unitId": "unit-curriculum-jft-a2-02",
+        "unitNumber": 2,
+        "unitTitleId": "Seksi 2: Kaiwa to Hyogen (Percakapan & Tata Bahasa Komunikasi)",
+        "lessonId": "les-curriculum-jft-a2-u02-01",
+        "grammarId": "gn4-00021"
+      }
+    },
+    {
+      "id": "JFT-A2-S01-Q07",
+      "trackType": "jft",
+      "mondaiNumber": 2,
+      "mondaiType": "jft_expression",
+      "instructionJp": "（　）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
+      "instructionId": "Pilihlah bentuk tata bahasa permohonan bantuan kepada orang lain.",
+      "prompt": "市役所で： 「この 書類の 書き方を （　　）もらえませんか。」",
+      "options": [
+        "教えて",
+        "教えないで",
+        "教える",
+        "教えたら"
+      ],
+      "correctOptionIndex": 0,
+      "explanation": {
+        "justification": "Pola 「V-te + もらえませんか」 digunakan untuk meminta tolong secara santun kepada orang lain agar melakukan suatu tindakan: 教えてもらえませんか (Bisa tolong ajarkan/beritahu saya?).",
+        "distractorAutopsy": {
+          "1": "教えて (bentuk te-form) adalah KUNCI BENAR.",
+          "2": "教えないで berarti meminta agar jangan diberitahu.",
+          "3": "教える bentuk kamus tidak bisa menempel pada moraemasen ka.",
+          "4": "教えたら adalah bentuk pengandaian kondisional."
+        },
+        "mnemonicSensei": "Minta tolong orang lain? V-te moraemasen ka! Tolong ajari = Oshiete moraemasen ka.",
+        "l1InterferenceAlert": "Dalam bahasa Indonesia kita cukup bilang \"Bisa ajarin?\". Di bahasa Jepang, rumusnya wajib bentuk Te + moraemasen ka (atau kudasaimasen ka untuk yang lebih formal).",
+        "remedialPrescription": {
+          "unitId": "unit-curriculum-jft-a2-02",
+          "unitNumber": 2,
+          "unitTitleId": "Seksi 2: Kaiwa to Hyogen (Percakapan & Tata Bahasa Komunikasi)",
+          "lessonId": "les-curriculum-jft-a2-u02-01",
+          "grammarId": "gn4-00021",
+          "advice": "Kuasai pola permohonan bantuan V-te morau di Seksi 2 MateriHub."
+        }
+      },
+      "curriculumRef": {
+        "trackId": "curriculum-jft-a2",
+        "unitId": "unit-curriculum-jft-a2-02",
+        "unitNumber": 2,
+        "unitTitleId": "Seksi 2: Kaiwa to Hyogen (Percakapan & Tata Bahasa Komunikasi)",
+        "lessonId": "les-curriculum-jft-a2-u02-01",
+        "grammarId": "gn4-00021"
+      }
+    },
+    {
+      "id": "JFT-A2-S01-Q08",
+      "trackType": "jft",
+      "mondaiNumber": 2,
+      "mondaiType": "jft_expression",
+      "instructionJp": "（　）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
+      "instructionId": "Pilihlah ungkapan sopan menawarkan bantuan kepada orang lain.",
+      "prompt": "重そうな 荷物を 持っている お年寄りに： 「その 荷物、お持ち（　　）か。」",
+      "options": [
+        "しましょう",
+        "になりましょう",
+        "なさいます",
+        "ください"
+      ],
+      "correctOptionIndex": 0,
+      "explanation": {
+        "justification": "Pola kenjougo (merendahkan diri sendiri) untuk menawarkan bantuan kepada orang tua/tamu adalah 「お + V-stem + しましょうか」: お持ちしましょうか (Boleh saya bantu bawakan barang bawaan Anda?).",
+        "distractorAutopsy": {
+          "1": "しましょう adalah KUNCI BENAR (rumus sopan menawarkan bantuan diri sendiri: お持ちしましょうか).",
+          "2": "になりましょう salah konstruksi; お〜になる adalah bentuk sonkeigo untuk aksi orang lain, tidak bisa untuk diri sendiri.",
+          "3": "なさいます adalah bentuk hormat sonkeigo aksi lawan bicara.",
+          "4": "ください berarti menyuruh lansia tersebut membawa sendiri."
+        },
+        "mnemonicSensei": "Mau bantu orang lain? O + V-stem + Shimashou ka! O-mochi shimashou ka (Biar saya bawakan).",
+        "l1InterferenceAlert": "Hati-hati: Jangan pakai \"o-mochi ni narimashou ka\" karena ni naru adalah penghormatan untuk aksi orang lain, bukan aksi kita sendiri yang mau membantu!",
+        "remedialPrescription": {
+          "unitId": "unit-curriculum-jft-a2-02",
+          "unitNumber": 2,
+          "unitTitleId": "Seksi 2: Kaiwa to Hyogen (Percakapan & Tata Bahasa Komunikasi)",
+          "lessonId": "les-curriculum-jft-a2-u02-01",
+          "grammarId": "gn4-00021",
+          "advice": "Pelajari formula menawarkan bantuan sopan Kenjougo di Seksi 2 JFT A2."
+        }
+      },
+      "curriculumRef": {
+        "trackId": "curriculum-jft-a2",
+        "unitId": "unit-curriculum-jft-a2-02",
+        "unitNumber": 2,
+        "unitTitleId": "Seksi 2: Kaiwa to Hyogen (Percakapan & Tata Bahasa Komunikasi)",
+        "lessonId": "les-curriculum-jft-a2-u02-01",
+        "grammarId": "gn4-00021"
+      }
+    },
+    {
+      "id": "JFT-A2-S01-Q09",
+      "trackType": "jft",
+      "mondaiNumber": 3,
+      "mondaiType": "jft_choukai_cbt",
+      "instructionJp": "音声を聞いて、質問に答えなさい。話の内容と合っているものを、1・2・3・4から一つ選びなさい。（※音声は2回まで聞けます）",
+      "instructionId": "Dengarkan audio percakapan, lalu tentukan jawaban yang tepat. (Audio dapat diputar maksimal 2 kali)",
+      "prompt": "男性は この後、まず 何を しますか。",
+      "choukai": {
+        "situationId": "Di stasiun kereta Tokyo: Pengumuman keterlambatan jadwal",
+        "situationJp": "駅のホームで、駅員と乗客の男性が話しています。",
+        "speakerRoles": [
+          "駅員 (Petugas Stasiun)",
+          "乗客 (Penumpang Pria)"
+        ],
+        "transcriptText": "駅員：「お客様、申し訳ございません。ただいま中央線は人身事故のため、運転を見合わせております。」\n乗客：「えっ、そうなんですか。新宿まで行きたいんですが、どうすればいいですか。」\n駅員：「地下鉄の丸ノ内線への振替輸送を行っております。あちらの改札口で振替乗車票をお受け取りになってから、地下鉄の乗り場へお向かいください。」\n乗客：「わかりました。まず改札で切符をもらえばいいんですね。ありがとうございます。」",
+        "maxReplays": 2
+      },
+      "options": [
+        "改札口へ 行って、振替乗車票を 受け取る。",
+        "中央線の ホームで 電車が 動くまで 待つ。",
+        "すぐに 地下鉄の ホームへ 直接 走って行く。",
+        "タクシー乗り場へ 行って タクシーに 乗る。"
+      ],
+      "correctOptionIndex": 0,
+      "explanation": {
+        "justification": "Petugas stasiun menjelaskan bahwa kereta Chuo Line terhenti, dan menyarankan naik kereta bawah tanah (subway) dengan tiket transfer pengganti. Petugas berkata: \"あちらの改札口で振替乗車票をお受け取りになってから、地下鉄へ...\" dan pria tersebut mengonfirmasi: \"まず改札で切符をもらえばいいんですね (Pertama-tama saya ambil tiket di loket tiket kan)\". Maka tindakan pertama pria itu adalah pergi ke loket gerbang tiket untuk mengambil tiket transfer.",
+        "distractorAutopsy": {
+          "1": "改札口へ 行って、振替乗車票を 受け取る adalah KUNCI BENAR (tindakan pertama yang wajib diambil).",
+          "2": "Menunggu kereta beroperasi kembali bertentangan dengan keputusan pria yang memilih transfer subway.",
+          "3": "Langsung lari ke peron subway tanpa mengambil tiket transfer di gerbang tiket stasiun adalah salah prosedur.",
+          "4": "Tidak ada penyebutan naik taksi dalam percakapan."
+        },
+        "mnemonicSensei": "Perhatikan kata kunci: 「まず〜 (pertama-tama)」! Apa yang diucapkan setelah kata \"Mazu\" adalah aksi nomor satu yang ditanyakan soal.",
+        "l1InterferenceAlert": "Dalam soal Choukai JFT-Basic, sering ada urutan 2 aksi: A dulu baru B. Pertanyaan selalu menanyakan \"まず (pertama-tama)\", jadi jangan terkecoh memilih aksi kedua (B)!",
+        "remedialPrescription": {
+          "unitId": "unit-curriculum-jft-a2-01",
+          "unitNumber": 3,
+          "unitTitleId": "Seksi 3: Choukai (Mendengarkan Instruksi & Pengumuman Kerja)",
+          "lessonId": "les-curriculum-jft-a2-u01-01",
+          "vocabId": "vg-n4-00001",
+          "advice": "Latih mendengarkan pengumuman transit transportasi umum di Seksi 3 JFT A2."
+        }
+      },
+      "curriculumRef": {
+        "trackId": "curriculum-jft-a2",
+        "unitId": "unit-curriculum-jft-a2-01",
+        "unitNumber": 3,
+        "unitTitleId": "Seksi 3: Choukai (Mendengarkan Instruksi & Pengumuman Kerja)",
+        "lessonId": "les-curriculum-jft-a2-u01-01",
+        "vocabId": "vg-n4-00001"
+      }
+    },
+    {
+      "id": "JFT-A2-S01-Q10",
+      "trackType": "jft",
+      "mondaiNumber": 3,
+      "mondaiType": "jft_choukai_cbt",
+      "instructionJp": "音声を聞いて、質問に答えなさい。話の内容と合っているものを、1・2・3・4から一つ選びなさい。（※音声は2回まで聞けます）",
+      "instructionId": "Dengarkan instruksi kerja di restoran, lalu pilih tindakan yang benar. (Audio maks 2x)",
+      "prompt": "新人スタッフは テーブルの お皿を 片付けた後、何を しますか。",
+      "choukai": {
+        "situationId": "Di restoran keluarga: Instruksi penutupan shift kerja oleh manajer",
+        "situationJp": "ファミリーレストランで、店長が新人のアルバイトに指示を出しています。",
+        "speakerRoles": [
+          "店長 (Manajer Toko)",
+          "新人アルバイト (Staf Baru)"
+        ],
+        "transcriptText": "店長：「アリさん、ラストオーダーが終わったから、フロアの片付けをお願いね。」\nアリ：「はい、店長。まず空いているテーブルのお皿を下げますね。」\n店長：「うん、お皿を全部厨房に運んだら、その次はテーブルをアルコール消毒液で綺麗に拭いて。床のモップ掛けは僕がやるから、拭き掃除が終わったらゴミ出しをお願いできるかな。」\nアリ：「かしこまりました。お皿洗いの後はテーブルの消毒ですね。」",
+        "maxReplays": 2
+      },
+      "options": [
+        "テーブルを アルコール消毒液で 拭く。",
+        "フロア全体の 床の モップ掛けを する。",
+        "すぐに 外へ ごみを 捨てに 行く。",
+        "厨房で 料理を 作り始める。"
+      ],
+      "correctOptionIndex": 0,
+      "explanation": {
+        "justification": "Manajer menginstruksikan urutan kerja: 1. Bawa piring kotor ke dapur, 2. Tepat setelah piring beres, lap meja dengan semprotan cairan disinfektan alkohol (その次はテーブルをアルコール消毒液で綺麗に拭いて). Pengepelan lantai dikerjakan manajer sendiri, dan buang sampah dilakukan setelah meja bersih.",
+        "distractorAutopsy": {
+          "1": "テーブルを アルコール消毒液で 拭く adalah KUNCI BENAR (aksi tepat setelah membereskan piring).",
+          "2": "Mengepel lantai dikerjakan oleh manajer (僕がやる).",
+          "3": "Membuang sampah dilakukan paling akhir setelah mengelap meja selesai.",
+          "4": "Restoran sudah lewat last order, tidak ada memasak masakan baru."
+        },
+        "mnemonicSensei": "Perhatikan kata sambung urutan: 「その次は〜 (berikutnya adalah...)」! Meja disemprot alkohol dulu agar steril.",
+        "l1InterferenceAlert": "Di restoran Jepang, protokol higienitas HACCP mewajibkan penyemprotan alkohol disinfektan pada meja makan. Dengarkan kata kunci sono tsugi wa!",
+        "remedialPrescription": {
+          "unitId": "unit-curriculum-jft-a2-01",
+          "unitNumber": 3,
+          "unitTitleId": "Seksi 3: Choukai (Mendengarkan Instruksi & Pengumuman Kerja)",
+          "lessonId": "les-curriculum-jft-a2-u01-01",
+          "vocabId": "vg-n4-00010",
+          "advice": "Latih menyimak instruksi pembagian tugas shift kerja di Seksi 3 JFT A2."
+        }
+      },
+      "curriculumRef": {
+        "trackId": "curriculum-jft-a2",
+        "unitId": "unit-curriculum-jft-a2-01",
+        "unitNumber": 3,
+        "unitTitleId": "Seksi 3: Choukai (Mendengarkan Instruksi & Pengumuman Kerja)",
+        "lessonId": "les-curriculum-jft-a2-u01-01",
+        "vocabId": "vg-n4-00010"
+      }
+    },
+    {
+      "id": "JFT-A2-S01-Q11",
+      "trackType": "jft",
+      "mondaiNumber": 3,
+      "mondaiType": "jft_choukai_cbt",
+      "instructionJp": "音声を聞いて、質問に答えなさい。話の内容と合っているものを、1・2・3・4から一つ選びなさい。（※音声は2回まで聞けます）",
+      "instructionId": "Dengarkan percakapan di apartemen, lalu tentukan jawaban yang tepat. (Audio maks 2x)",
+      "prompt": "女性は なぜ 管理人に 相談して いますか。",
+      "choukai": {
+        "situationId": "Di kantor pengelola apartemen: Keluhan fasilitas kamar",
+        "situationJp": "アパートの管理室で、住人の女性が管理人に困っていることを話しています。",
+        "speakerRoles": [
+          "住人の女性 (Penyewa Wanita)",
+          "管理人 (Pengelola Gedung)"
+        ],
+        "transcriptText": "女性：「すみません、203号室のヌルですが、今ちょっとよろしいですか。」\n管理人：「はい、ヌルさん、どうしましたか。」\n女性：「実は、昨日の夜からお風呂のお湯が出なくなってしまって...。水は出るんですが、何度給湯器のスイッチを押しても冷たいままなんです。」\n管理人：「えっ、それは大変だ。給湯器の故障かもしれないね。今日の午後、業者に見に来てもらうよう手配するよ。」",
+        "maxReplays": 2
+      },
+      "options": [
+        "お風呂の お湯が 出なくなってしまったから。",
+        "部屋の 鍵を 無くして 入れないから。",
+        "隣の 部屋の 物音が うるさいから。",
+        "水道代の 支払い方法が 分からないから。"
+      ],
+      "correctOptionIndex": 0,
+      "explanation": {
+        "justification": "Wanita penyewa mengeluhkan: 「昨日の夜からお風呂のお湯が出なくなってしまって... (Sejak kemarin malam air panas di kamar mandi tidak keluar, hanya air dingin saja)」. Maka alasan melapor ke pengelola adalah karena air panas kamar mandi rusak.",
+        "distractorAutopsy": {
+          "1": "お風呂の お湯が 出なくなってしまったから adalah KUNCI BENAR.",
+          "2": "Kehilangan kunci kamar tidak disebutkan sama sekali.",
+          "3": "Suara tetangga berisik tidak dibahas.",
+          "4": "Cara bayar tagihan air tidak dibahas."
+        },
+        "mnemonicSensei": "O-yu ga denai = Air panas gak keluar! O-yu = air panas, Mizu = air dingin biasa.",
+        "l1InterferenceAlert": "Dalam bahasa Indonesia kita hanya memakai kata \"air\". Di Jepang, air dingin biasa adalah 水 (mizu) dan air hangat/panas adalah お湯 (o-yu). Jika air panas mati, sebutkan o-yu ga denai!",
+        "remedialPrescription": {
+          "unitId": "unit-curriculum-jft-a2-01",
+          "unitNumber": 3,
+          "unitTitleId": "Seksi 3: Choukai (Mendengarkan Instruksi & Pengumuman Kerja)",
+          "lessonId": "les-curriculum-jft-a2-u01-01",
+          "vocabId": "vg-n4-00030",
+          "advice": "Pelajari kosakata fasilitas tempat tinggal dan keluhan apartemen di Seksi 3 JFT A2."
+        }
+      },
+      "curriculumRef": {
+        "trackId": "curriculum-jft-a2",
+        "unitId": "unit-curriculum-jft-a2-01",
+        "unitNumber": 3,
+        "unitTitleId": "Seksi 3: Choukai (Mendengarkan Instruksi & Pengumuman Kerja)",
+        "lessonId": "les-curriculum-jft-a2-u01-01",
+        "vocabId": "vg-n4-00030"
+      }
+    },
+    {
+      "id": "JFT-A2-S01-Q12",
+      "trackType": "jft",
+      "mondaiNumber": 3,
+      "mondaiType": "jft_choukai_cbt",
+      "instructionJp": "音声を聞いて、質問に答えなさい。話の内容と合っているものを、1・2・3・4から一つ選びなさい。（※音声は2回まで聞けます）",
+      "instructionId": "Dengarkan dialog di tempat kerja pabrik, tentukan jawaban yang tepat. (Audio maks 2x)",
+      "prompt": "先輩は 後輩に 機械の 操作について 何と 注意しましたか。",
+      "choukai": {
+        "situationId": "Di bengkel pabrik: Instruksi keselamatan kerja mesin berputar",
+        "situationJp": "工場の現場で、先輩が新人の作業員に機械の使い方を指導しています。",
+        "speakerRoles": [
+          "先輩作業員 (Senior)",
+          "後輩作業員 (Junior)"
+        ],
+        "transcriptText": "先輩：「ドンさん、このボール盤（穴あけ機）を使うときは、絶対に軍手（ぐんて）をしちゃダメだよ。」\n後輩：「えっ、手を保護するために手袋をしたほうが安全じゃないんですか。」\n先輩：「普通の作業ならそうだけど、回転する機械に軍手を使うと、布の繊維が巻き込まれて大怪我をする危険があるんだ。だから素手で作業するのが鉄則だよ。」\n後輩：「なるほど、巻き込まれの危険があるんですね。気をつけます！」",
+        "maxReplays": 2
+      },
+      "options": [
+        "巻き込まれ事故を 防ぐため、軍手を しないで 素手で 作業する。",
+        "手を 保護するために、必ず 厚い 軍手を 2重に はめる。",
+        "機械が 動いている 途中で、素手で 刃に 触って 確認する。",
+        "作業中は 音が うるさいので、耳栓を 外して 会話する。"
+      ],
+      "correctOptionIndex": 0,
+      "explanation": {
+        "justification": "Senior menegaskan aturan mutlak: 「回転する機械に軍手を使うと、巻き込まれて大怪我をする危険がある。だから素手で作業するのが鉄則 (Jika memakai sarung tangan kain pada mesin berputar, serat kain bisa terlilit dan memicu kecelakaan parah. Wajib bekerja dengan tangan telanjang)」. Pilihan 1 merangkum instruksi keselamatan K3 ini.",
+        "distractorAutopsy": {
+          "1": "巻き込まれ事故を 防ぐため、軍手を しないで 素手で 作業する adalah KUNCI BENAR.",
+          "2": "Memakai sarung tangan tebal 2 lapis dilarang keras pada mesin berputar karena memicu lilitan fatal.",
+          "3": "Menyentuh mata pisau yang berputar adalah tindakan bunuh diri kerja.",
+          "4": "Melepas penutup telinga bukan instruksi yang dibahas."
+        },
+        "mnemonicSensei": "Mesin berputar (Kaiten kikai) = DILARANG PAKAI GUNTE! Bahaya terlilit (Makikomare).",
+        "l1InterferenceAlert": "Banyak orang awam mengira sarung tangan selalu aman. Di pabrik Jepang, aturan melarang sarung tangan rajut pada mesin berputar adalah materi K3 nomor satu yang sering keluar di ujian!",
+        "remedialPrescription": {
+          "unitId": "unit-curriculum-jft-a2-01",
+          "unitNumber": 3,
+          "unitTitleId": "Seksi 3: Choukai (Mendengarkan Instruksi & Pengumuman Kerja)",
+          "lessonId": "les-curriculum-jft-a2-u01-01",
+          "vocabId": "vg-n4-00086",
+          "advice": "Pelajari instruksi keselamatan kerja pabrik K3 di Seksi 3 JFT A2."
+        }
+      },
+      "curriculumRef": {
+        "trackId": "curriculum-jft-a2",
+        "unitId": "unit-curriculum-jft-a2-01",
+        "unitNumber": 3,
+        "unitTitleId": "Seksi 3: Choukai (Mendengarkan Instruksi & Pengumuman Kerja)",
+        "lessonId": "les-curriculum-jft-a2-u01-01",
+        "vocabId": "vg-n4-00086"
+      }
+    },
+    {
+      "id": "JFT-A2-S01-Q13",
+      "trackType": "jft",
+      "mondaiNumber": 4,
+      "mondaiType": "jft_dokkai_realia",
+      "instructionJp": "右のチラシを読んで、質問に答えなさい。答えは、1・2・3・4から最もよいものを一つ選びなさい。",
+      "instructionId": "Bacalah brosur kegiatan warga berikut, lalu pilihlah jawaban yang tepat.",
+      "prompt": "外国人の スルヤさんは 日本語スピーチコンテストに 参加したいです。参加費は いくらですか。",
+      "readingPassage": {
+        "genre": "realia_table",
+        "passageTitle": "【国際交流フェスタ 2026 参加者募集】",
+        "passageText": "【国際交流フェスタ 2026 参加者募集】\n\n地域の外国人と住民の交流イベントです。お気軽にご参加ください！\n\n◆ 日時： 2026年11月15日（日） 10:00 〜 16:00\n◆ 場所： 市民ふれあいプラザ（中央駅西口 徒歩3分）\n\n◆ イベント内容：\n1. 世界の屋台（やたい）フードコーナー： 各国料理の販売（1品 300円〜500円）\n2. 日本語スピーチコンテスト： 13:00 〜 15:00（参加費無料・要事前申込）\n3. 浴衣（ゆかた）着付け体験： 1回 500円（先着30名）\n\n※ スピーチコンテストの申込締切は 10月31日です。"
+      },
+      "options": [
+        "無料（0円）",
+        "300円",
+        "500円",
+        "1,000円"
+      ],
+      "correctOptionIndex": 0,
+      "explanation": {
+        "justification": "Pada brosur poin nomor 2 tercantum jelas: 「日本語スピーチコンテスト： 13:00 〜 15:00（参加費無料・要事前申込）」. Kata 「参加費無料 (sankahi muryou)」 berarti biaya keikutsertaan gratis (0 yen).",
+        "distractorAutopsy": {
+          "1": "無料（0円） adalah KUNCI BENAR (gratis).",
+          "2": "300円 adalah harga minimum makanan stan kuliner.",
+          "3": "500円 adalah biaya pengalaman memakai baju yukata.",
+          "4": "1,000円 tidak ada dalam daftar tarif."
+        },
+        "mnemonicSensei": "Muryou (無料) = Mu (ketiadaan) + Ryou (biaya) = Gratis tanpa bayar sepeser pun!",
+        "l1InterferenceAlert": "Perhatikan pemetaan baris: jangan membaca angka 500 yen milik stan yukata untuk lomba pidato bahasa Jepang!",
+        "remedialPrescription": {
+          "unitId": "unit-curriculum-jft-a2-01",
+          "unitNumber": 4,
+          "unitTitleId": "Seksi 4: Dokkai (Membaca Informasi, Formulir & Brosur)",
+          "lessonId": "les-curriculum-jft-a2-u01-01",
+          "vocabId": "vg-n4-00001",
+          "advice": "Latih membaca brosur festival komunitas warga di Seksi 4 JFT A2."
+        }
+      },
+      "curriculumRef": {
+        "trackId": "curriculum-jft-a2",
+        "unitId": "unit-curriculum-jft-a2-01",
+        "unitNumber": 4,
+        "unitTitleId": "Seksi 4: Dokkai (Membaca Informasi, Formulir & Brosur)",
+        "lessonId": "les-curriculum-jft-a2-u01-01",
+        "vocabId": "vg-n4-00001"
+      }
+    },
+    {
+      "id": "JFT-A2-S01-Q14",
+      "trackType": "jft",
+      "mondaiNumber": 4,
+      "mondaiType": "jft_dokkai_realia",
+      "instructionJp": "右の案内を読んで、質問に答えなさい。答えは、1・2・3・4から最もよいものを一つ選びなさい。",
+      "instructionId": "Bacalah pengumuman pemeriksaan kesehatan berikut, lalu tentukan jawaban yang tepat.",
+      "prompt": "健康診断を 受ける人は、当日の 朝 何時に どこへ 行かなければ なりませんか。",
+      "readingPassage": {
+        "genre": "instruction",
+        "passageTitle": "【外国人労働者向け 定期健康診断の お知らせ】",
+        "passageText": "【外国人労働者向け 定期健康診断の お知らせ】\n\n会社の健康診断を 以下のとおり 実施します。\n\n◆ 日程： 10月20日（火）\n◆ 受付時間： 午前8時30分 〜 午前9時00分（時間厳守）\n◆ 場所： 第一健康クリニック 2階 健診センター\n\n◆ 注意事項：\n・前日の夜9時以降は、水とお茶以外は飲食しないでください。\n・当日の朝は、朝食を食べずに来てください。\n・保険証と問診票を必ず持参してください。"
+      },
+      "options": [
+        "午前8時30分から9時00分までに、第一健康クリニックの2階へ行く。",
+        "午前9時00分以降に、会社の本社会議室へ行く。",
+        "当日の朝7時に、朝食をしっかり食べてから行く。",
+        "前日の夜9時に、クリニックの1階受付へ行く。"
+      ],
+      "correctOptionIndex": 0,
+      "explanation": {
+        "justification": "Pada pengumuman tercantum: 受付時間 (Waktu pendaftaran): 午前8時30分〜午前9時00分 (wajib tepat waktu/jikan genshu), dan 場所 (tempat): 第一健康クリニック 2階 健診センター. Pilihan 1 memenuhi kedua informasi penting tersebut.",
+        "distractorAutopsy": {
+          "1": "午前8時30分から9時00分までに、第一健康クリニックの2階へ行く adalah KUNCI BENAR.",
+          "2": "Tempatnya adalah klinik di lantai 2, bukan kantor pusat perusahaan.",
+          "3": "Aturan tegas melarang sarapan pada pagi hari pemeriksaan (朝食を食べずに来てください).",
+          "4": "Pemeriksaan diadakan pada hari H pagi, bukan malam sebelumnya."
+        },
+        "mnemonicSensei": "Perhatikan kata kunci: 「時間厳守 (Jikan genshu = Wajib tepat waktu)」 dan 「朝食を食べずに (tanpa sarapan)」!",
+        "l1InterferenceAlert": "Dalam bahasa Indonesia kita sering menyepelekan puasa sebelum cek darah. Di Jepang, aturan puasa (zenshitsu inshoku kinshi) sangat ketat dan menjadi materi soal membaca fungsional.",
+        "remedialPrescription": {
+          "unitId": "unit-curriculum-jft-a2-01",
+          "unitNumber": 4,
+          "unitTitleId": "Seksi 4: Dokkai (Membaca Informasi, Formulir & Brosur)",
+          "lessonId": "les-curriculum-jft-a2-u01-01",
+          "vocabId": "vg-n4-00030",
+          "advice": "Pelajari teks pengumuman prosedur medis dan regulasi waktu di Seksi 4 JFT A2."
+        }
+      },
+      "curriculumRef": {
+        "trackId": "curriculum-jft-a2",
+        "unitId": "unit-curriculum-jft-a2-01",
+        "unitNumber": 4,
+        "unitTitleId": "Seksi 4: Dokkai (Membaca Informasi, Formulir & Brosur)",
+        "lessonId": "les-curriculum-jft-a2-u01-01",
+        "vocabId": "vg-n4-00030"
+      }
+    },
+    {
+      "id": "JFT-A2-S01-Q15",
+      "trackType": "jft",
+      "mondaiNumber": 4,
+      "mondaiType": "jft_dokkai_realia",
+      "instructionJp": "右のメールを読んで、質問に答えなさい。答えは、1・2・3・4から最もよいものを一つ選びなさい。",
+      "instructionId": "Bacalah email pengumuman shift kerja berikut, lalu tentukan jawaban yang tepat.",
+      "prompt": "バヤルさんは 土曜日に 出勤できますか。どのように 返信しなければ なりませんか。",
+      "readingPassage": {
+        "genre": "email",
+        "passageTitle": "【店長からの シフト変更のお願いメール】",
+        "passageText": "件名： 今週土曜日の シフト交代のお願い\n\nバヤルさん、お疲れ様です。店長の高橋です。\n実は、今週土曜日（24日）の夜シフトに入っていた山田さんが、急な体調不良で出勤できなくなってしまいました。\nもし都合がよければ、土曜日の17時から22時まで、代わりにシフトに入ってもらえませんか。\n\n可能かどうか、明日（木曜日）の正午（12時）までに このメールに返信してください。\n急なお願いで申し訳ありませんが、よろしくお願いします。\n\n高橋より"
+      },
+      "options": [
+        "出勤できるかどうか、明日（木曜日）の昼12時までに メールで返信する。",
+        "返事をしないで、土曜日の17時に 直接店へ 行く。",
+        "土曜日の朝になってから、店長に 電話をかけて 伝える。",
+        "体調不良の 山田さんの 自宅へ お見舞いに 行く。"
+      ],
+      "correctOptionIndex": 0,
+      "explanation": {
+        "justification": "Manajer meminta dalam email: 「可能かどうか、明日（木曜日）の正午（12時）までに このメールに返信してください (Tolong balas email ini paling lambat besok hari Kamis siang pukul 12 apakah memungkinkan atau tidak)」. Pilihan 1 merangkum instruksi batas waktu dan cara merespons.",
+        "distractorAutopsy": {
+          "1": "Pilihan 1 adalah KUNCI BENAR (balas email sebelum Kamis siang jam 12).",
+          "2": "Datang tanpa membalas membuat manajer tidak bisa memastikan jadwal shift darurat.",
+          "3": "Menghubungi pada hari Sabtu sudah terlambat dan melanggar batas waktu konfirmasi.",
+          "4": "Menjenguk Yamada-san bukan instruksi yang diminta manajer."
+        },
+        "mnemonicSensei": "Perhatikan tenggat respons: 「正午 (Shougo = jam 12 siang tepat)」! Balas email sebelum jam 12 siang hari Kamis.",
+        "l1InterferenceAlert": "Dalam etika kerja Jepang (Hou-Ren-So), saat manajer meminta konfirmasi darurat lewat email, respons cepat sebelum batas waktu (正午までに) adalah ukuran profesionalisme pekerja.",
+        "remedialPrescription": {
+          "unitId": "unit-curriculum-jft-a2-01",
+          "unitNumber": 4,
+          "unitTitleId": "Seksi 4: Dokkai (Membaca Informasi, Formulir & Brosur)",
+          "lessonId": "les-curriculum-jft-a2-u01-01",
+          "vocabId": "vg-n4-00086",
+          "advice": "Latih membaca email korespondensi bisnis tempat kerja di Seksi 4 JFT A2."
+        }
+      },
+      "curriculumRef": {
+        "trackId": "curriculum-jft-a2",
+        "unitId": "unit-curriculum-jft-a2-01",
+        "unitNumber": 4,
+        "unitTitleId": "Seksi 4: Dokkai (Membaca Informasi, Formulir & Brosur)",
+        "lessonId": "les-curriculum-jft-a2-u01-01",
+        "vocabId": "vg-n4-00086"
+      }
+    }
+  ]
+}

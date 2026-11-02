@@ -1,18 +1,19 @@
 // Golden Exercise Sets Orchestrator & JSON Emitter
 // Nugget Nihongo - Curation Pipeline
+// Generates 14 authentic Golden Sets across JLPT, JFT-Basic, and 8 SSW tracks
 
 const fs = require('fs');
 const path = require('path');
 
-// Target directory
+// Target directory for production static assets
 const outputDir = path.join(__dirname, '../../public/data/exercises');
 
 if (!fs.existsSync(outputDir)) {
   fs.mkdirSync(outputDir, { recursive: true });
 }
 
-// Load all 14 track sets
-const modules = [
+// 14 canonical tracks
+const moduleConfigs = [
   { file: 'jlpt-n5.cjs', target: 'jlpt-n5-set01.json' },
   { file: 'jlpt-n4.cjs', target: 'jlpt-n4-set01.json' },
   { file: 'jlpt-n3.cjs', target: 'jlpt-n3-set01.json' },
@@ -29,41 +30,75 @@ const modules = [
   { file: 'ssw-manufacturing.cjs', target: 'ssw-manufacturing-set01.json' }
 ];
 
-console.log('--- EMITTING 14 GOLDEN EXERCISE SETS ---');
+console.log('==========================================================');
+console.log('🚀 NUGGET NIHONGO: EMITTING 14 GOLDEN EXERCISE SETS');
+console.log('==========================================================');
 
 const manifestEntries = [];
 let grandTotalQuestions = 0;
 
-modules.forEach(({ file, target }) => {
+moduleConfigs.forEach(({ file, target }, idx) => {
   const modPath = path.join(__dirname, file);
-  const data = require(modPath);
+  const exported = require(modPath);
 
-  // Validate question count
-  if (!Array.isArray(data.questions) || data.questions.length !== 15) {
-    throw new Error(`Integrity error in ${file}: expected 15 questions, found ${data.questions?.length}`);
+  // Extract dataset from getter function
+  let data;
+  if (typeof exported === 'function') {
+    data = exported();
+  } else if (typeof Object.values(exported)[0] === 'function') {
+    data = Object.values(exported)[0]();
+  } else {
+    data = exported;
   }
+
+  // Strict schema validation
+  if (!data.setId) {
+    throw new Error(`[SCHEMA ERROR] ${file} is missing 'setId'`);
+  }
+  if (!Array.isArray(data.items) || data.items.length !== 15) {
+    throw new Error(`[INTEGRITY ERROR] ${file}: expected exactly 15 items, found ${data.items?.length}`);
+  }
+
+  // Validate each item has required properties
+  data.items.forEach((item, itemIdx) => {
+    if (!item.id || typeof item.id !== 'string') {
+      throw new Error(`[ITEM ERROR] ${file} Item #${itemIdx + 1} is missing valid 'id'`);
+    }
+    if (!Array.isArray(item.options) || item.options.length < 3) {
+      throw new Error(`[ITEM ERROR] ${file} ${item.id} has invalid options array (length: ${item.options?.length})`);
+    }
+    if (typeof item.correctOptionIndex !== 'number' || item.correctOptionIndex < 0 || item.correctOptionIndex >= item.options.length) {
+      throw new Error(`[ITEM ERROR] ${file} ${item.id} has invalid correctOptionIndex: ${item.correctOptionIndex}`);
+    }
+    if (!item.explanation || !item.explanation.justification || !item.explanation.distractorAutopsy || !item.explanation.mnemonicSensei || !item.explanation.l1InterferenceAlert || !item.explanation.remedialPrescription) {
+      throw new Error(`[EXPLANATION ERROR] ${file} ${item.id} does not have all 5 explanation layers`);
+    }
+    if (!item.curriculumRef || !item.curriculumRef.trackId || !item.curriculumRef.unitId) {
+      throw new Error(`[CURRICULUM ERROR] ${file} ${item.id} is missing valid curriculumRef`);
+    }
+  });
 
   const outFilePath = path.join(outputDir, target);
   fs.writeFileSync(outFilePath, JSON.stringify(data, null, 2), 'utf-8');
-  console.log(`[OK] Emitted ${target} (Questions: ${data.questions.length})`);
+  console.log(`[PASS ${(idx + 1).toString().padStart(2, '0')}/14] ✅ Emitted ${target} (15 authentic items)`);
 
-  grandTotalQuestions += data.questions.length;
+  grandTotalQuestions += data.items.length;
   manifestEntries.push({
-    id: data.id,
+    setId: data.setId,
     title: data.title,
-    track: data.track,
-    level: data.level,
-    tier: data.tier,
-    totalQuestions: data.questions.length,
-    durationMinutes: data.durationMinutes,
-    passingScorePercent: data.passingScorePercent,
-    focusAreas: data.focusAreas,
+    trackType: data.trackType,
+    level: data.level || null,
+    sswSectorId: data.sswSectorId || null,
+    targetUnits: data.targetUnits,
+    totalItems: data.items.length,
+    timeLimitMinutes: data.timeLimitMinutes,
+    passingScore: data.passingScore,
     fileName: target,
     publicPath: `/data/exercises/${target}`
   });
 });
 
-// Emit manifest
+// Emit production manifest
 const manifest = {
   version: "1.0.0",
   generatedAt: new Date().toISOString(),
@@ -74,5 +109,9 @@ const manifest = {
 
 const manifestPath = path.join(outputDir, 'manifest.json');
 fs.writeFileSync(manifestPath, JSON.stringify(manifest, null, 2), 'utf-8');
-console.log(`[OK] Emitted manifest.json (${manifestEntries.length} sets, ${grandTotalQuestions} total authentic questions)`);
-console.log('--- ALL 14 SETS EMITTED SUCCESSFULLY ---');
+
+console.log('----------------------------------------------------------');
+console.log(`🎉 ALL 14 SETS VERIFIED & WRITTEN TO public/data/exercises/`);
+console.log(`📊 Total Sets: ${manifestEntries.length} | Total Authentic Questions: ${grandTotalQuestions}`);
+console.log(`📄 Manifest emitted at: ${manifestPath}`);
+console.log('==========================================================');

@@ -6,7 +6,7 @@
 ## v21.1.0 (2 November 2026) — 5-Pass UI/UX Overhaul: Calm Executive Shell, Learner Identity Rapor, Home & Dojo Progressive Disclosure, and Streamlined Arena Kuis
 
 ### Sorotan Pembaruan (Highlights)
-- Pass 1 — Calm Executive Shell & Quick Action Sheet: Reduksi navigasi global menjadi 4 jangkar inti (Beranda, Materi Hub, Arena Kuis, Sensei AI) dan sheet tindakan cepat ramah jempul.
+- Pass 1 — Calm Executive Shell & Quick Action Sheet: Reduksi navigasi global menjadi 4 jangkar inti (Beranda, Materi Hub, Arena Kuis, Sensei AI) dan sheet tindakan cepat ramah jempol.
 - Pass 2 — Pusat Rapor Pembelajar & Profil: Transformasi halaman Profil menjadi pusat identitas pembelajar Jepang dengan 8 avatar budaya, target XP harian fleksibel, dan visualisasi rapor penguasaan kurikulum.
 - Pass 3 — Beranda De-Cluttering & Purge Micro-Font: Restrukturisasi cockpit beranda bebas kedip, tombol utama berergonomi 48px, dan pembersihan total micro-font di bawah 12px demi kenyamanan visual.
 - Pass 4 — MateriHub Dojo & Pustaka Progressive Disclosure: Pengelompokan 11 alat ke dalam 2 klaster tenang (Latihan Kemahiran Inti vs Peralatan & Referensi) dengan estetika pernis Urushi hangat.

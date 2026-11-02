@@ -17,6 +17,7 @@ export const QuizExitGuardModal: React.FC<QuizExitGuardModalProps> = ({
   onConfirmExit,
 }) => {
   const stayButtonRef = useRef<HTMLButtonElement>(null);
+  const exitButtonRef = useRef<HTMLButtonElement>(null);
 
   useEffect(() => {
     if (isOpen) {
@@ -29,6 +30,19 @@ export const QuizExitGuardModal: React.FC<QuizExitGuardModalProps> = ({
         if (e.key === 'Escape') {
           e.preventDefault();
           onStay();
+        } else if (e.key === 'Tab') {
+          // Trap focus strictly within modal actions
+          if (e.shiftKey) {
+            if (document.activeElement === stayButtonRef.current) {
+              e.preventDefault();
+              exitButtonRef.current?.focus();
+            }
+          } else {
+            if (document.activeElement === exitButtonRef.current) {
+              e.preventDefault();
+              stayButtonRef.current?.focus();
+            }
+          }
         }
       };
 
@@ -79,8 +93,9 @@ export const QuizExitGuardModal: React.FC<QuizExitGuardModalProps> = ({
             <span>Lanjutkan</span>
           </button>
           <button
+            ref={exitButtonRef}
             onClick={onConfirmExit}
-            className="min-h-[44px] px-4 py-2.5 rounded-xl bg-surface-2 hover:bg-red-950/40 border border-red-500/30 text-red-300 font-bold text-xs transition-all flex items-center justify-center gap-1.5 active:scale-95"
+            className="min-h-[44px] px-4 py-2.5 rounded-xl bg-surface-2 hover:bg-red-950/40 border border-red-500/30 text-red-300 font-bold text-xs transition-all flex items-center justify-center gap-1.5 active:scale-95 focus:ring-2 focus:ring-red-400 focus:outline-none"
           >
             <ArrowLeft className="w-4 h-4" />
             <span>Keluar Sesi</span>

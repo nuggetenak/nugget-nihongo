@@ -504,11 +504,11 @@ export const PrometricCbtModal: React.FC<PrometricCbtModalProps> = ({
             <div className="min-w-0">
               <div className="flex items-center gap-2 text-xs font-bold text-appText-bright truncate">
                 <span>{activeSectorRule.sectorName}</span>
-                <span className="px-1.5 py-0.5 rounded bg-surface text-[10px] text-accent font-mono">
+                <span className="px-1.5 py-0.5 rounded bg-surface text-xs text-accent font-mono">
                   {activeSectorRule.ministry} ({activeSectorRule.ministryKanji})
                 </span>
               </div>
-              <div className="text-[10px] text-appText-muted font-mono truncate">
+              <div className="text-xs text-appText-muted font-mono truncate">
                 ID: IDN-SSW-2026-NUGGET · Kursi No. 04
               </div>
             </div>
@@ -574,7 +574,7 @@ export const PrometricCbtModal: React.FC<PrometricCbtModalProps> = ({
                       }`}
                     >
                       <div className="text-xs font-extrabold truncate">{rule.sectorName}</div>
-                      <div className="text-[10px] text-accent mt-0.5">{rule.ministry}</div>
+                      <div className="text-xs text-accent mt-0.5">{rule.ministry}</div>
                     </button>
                   );
                 })}
@@ -590,7 +590,7 @@ export const PrometricCbtModal: React.FC<PrometricCbtModalProps> = ({
 
               <div className="grid sm:grid-cols-2 gap-3 text-xs">
                 <div className="p-3 rounded-xl bg-surface-2 border border-accent/15 space-y-1">
-                  <div className="text-appText-muted text-[11px] font-medium">Seksi A: {activeSectorRule.sectionA.name}</div>
+                  <div className="text-appText-muted text-xs font-medium">Seksi A: {activeSectorRule.sectionA.name}</div>
                   <div className="text-base font-black text-amber-400">
                     Ambang Batas: ≥ {activeSectorRule.sectionA.passPercent}%
                   </div>
@@ -598,14 +598,14 @@ export const PrometricCbtModal: React.FC<PrometricCbtModalProps> = ({
 
                 {activeSectorRule.sectionB ? (
                   <div className="p-3 rounded-xl bg-surface-2 border border-accent/15 space-y-1">
-                    <div className="text-appText-muted text-[11px] font-medium">Seksi B: {activeSectorRule.sectionB.name}</div>
+                    <div className="text-appText-muted text-xs font-medium">Seksi B: {activeSectorRule.sectionB.name}</div>
                     <div className="text-base font-black text-amber-400">
                       Ambang Batas: ≥ {activeSectorRule.sectionB.passPercent}%
                     </div>
                   </div>
                 ) : (
                   <div className="p-3 rounded-xl bg-surface-2 border border-accent/15 space-y-1">
-                    <div className="text-appText-muted text-[11px] font-medium">Format Penilaian</div>
+                    <div className="text-appText-muted text-xs font-medium">Format Penilaian</div>
                     <div className="text-base font-black text-emerald-400">
                       Single Statutory Score (Skor Tunggal)
                     </div>
@@ -613,7 +613,7 @@ export const PrometricCbtModal: React.FC<PrometricCbtModalProps> = ({
                 )}
               </div>
 
-              <p className="text-[11px] text-appText-muted leading-relaxed">
+              <p className="text-xs text-appText-muted leading-relaxed">
                 {activeSectorRule.hasDualPass
                   ? '⚠️ Perhatian: Ujian ini mensyaratkan DUAL-PASS. Kedua seksi WAJIB lulus ambang batas secara independen. Jika salah satu seksi bernilai di bawah ambang batas, hasil akhir tetap Tidak Lulus (不合格).'
                   : 'ℹ️ Ujian ini menggunakan batas kelulusan standar 60%–65% dari total seluruh soal.'}
@@ -643,7 +643,7 @@ export const PrometricCbtModal: React.FC<PrometricCbtModalProps> = ({
                 <span className="text-xs font-black text-accent font-mono">
                   Soal {currentQuestionIndex + 1} dari {examQuestions.length}
                 </span>
-                <span className="px-2 py-0.5 rounded-full bg-surface-2 text-[10px] text-appText-muted font-bold uppercase">
+                <span className="px-2 py-0.5 rounded-full bg-surface-2 text-xs text-appText-muted font-bold uppercase">
                   Seksi: {currentQuestion.section}
                 </span>
               </div>
@@ -678,9 +678,9 @@ export const PrometricCbtModal: React.FC<PrometricCbtModalProps> = ({
             {/* Question Palette Drawer (Collapsible) */}
             {showPaletteDrawer && (
               <div className="bg-surface-3 border border-accent/25 rounded-2xl p-3.5 space-y-2 animate-fade-in">
-                <div className="text-[11px] font-bold text-appText-muted uppercase tracking-wider flex items-center justify-between">
+                <div className="text-xs font-bold text-appText-muted uppercase tracking-wider flex items-center justify-between">
                   <span>Palet Navigasi Soal (見直し一覧)</span>
-                  <div className="flex items-center gap-3 text-[10px] font-normal normal-case">
+                  <div className="flex items-center gap-3 text-xs font-normal normal-case">
                     <span className="flex items-center gap-1">
                       <span className="w-2.5 h-2.5 rounded-full bg-amber-500 inline-block" /> Dijawab
                     </span>
@@ -893,7 +893,7 @@ export const PrometricCbtModal: React.FC<PrometricCbtModalProps> = ({
 
               <div className="border-b border-amber-500/20 pb-4 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
                 <div>
-                  <div className="text-[10px] text-amber-500/80 font-mono tracking-wider uppercase">
+                  <div className="text-xs text-amber-500/80 font-mono tracking-wider uppercase">
                     Kementerian Penerbit Sertifikat:
                   </div>
                   <div className="text-sm sm:text-base font-extrabold text-appText-bright">
@@ -903,9 +903,9 @@ export const PrometricCbtModal: React.FC<PrometricCbtModalProps> = ({
                 </div>
 
                 <div className="text-left sm:text-right font-mono text-xs">
-                  <div className="text-appText-muted text-[10px]">KODE UJIAN:</div>
+                  <div className="text-appText-muted text-xs">KODE UJIAN:</div>
                   <div className="font-bold text-accent">{activeSectorRule.testCode}</div>
-                  <div className="text-[10px] text-appText-muted mt-0.5">
+                  <div className="text-xs text-appText-muted mt-0.5">
                     Tanggal: {new Date().toLocaleDateString('id-ID', { year: 'numeric', month: 'long', day: 'numeric' })}
                   </div>
                 </div>
@@ -928,7 +928,7 @@ export const PrometricCbtModal: React.FC<PrometricCbtModalProps> = ({
                       style={{ width: `${examResult.totalScore}%` }}
                     />
                   </div>
-                  <div className="text-[10px] text-appText-muted flex justify-between">
+                  <div className="text-xs text-appText-muted flex justify-between">
                     <span>Ambang Batas: ≥ {activeSectorRule.sectionA.passPercent}%</span>
                     <span className={examResult.totalScore >= activeSectorRule.sectionA.passPercent ? 'text-emerald-400 font-bold' : 'text-rose-400 font-bold'}>
                       {examResult.totalScore >= activeSectorRule.sectionA.passPercent ? 'LULUS ✓' : 'TIDAK LULUS ✗'}
@@ -952,7 +952,7 @@ export const PrometricCbtModal: React.FC<PrometricCbtModalProps> = ({
                         style={{ width: `${examResult.totalScore}%` }}
                       />
                     </div>
-                    <div className="text-[10px] text-appText-muted flex justify-between">
+                    <div className="text-xs text-appText-muted flex justify-between">
                       <span>Ambang Batas: ≥ {activeSectorRule.sectionB?.passPercent || 60}%</span>
                       <span className={examResult.totalScore >= (activeSectorRule.sectionB?.passPercent || 60) ? 'text-emerald-400 font-bold' : 'text-rose-400 font-bold'}>
                         {examResult.totalScore >= (activeSectorRule.sectionB?.passPercent || 60) ? 'LULUS ✓' : 'TIDAK LULUS ✗'}
@@ -963,7 +963,7 @@ export const PrometricCbtModal: React.FC<PrometricCbtModalProps> = ({
               </div>
 
               {/* Security Verification Hash */}
-              <div className="pt-2 border-t border-accent/10 flex flex-col sm:flex-row sm:items-center justify-between gap-2 text-[10px] text-appText-muted font-mono">
+              <div className="pt-2 border-t border-accent/10 flex flex-col sm:flex-row sm:items-center justify-between gap-2 text-xs text-appText-muted font-mono">
                 <div>VERIFICATION HASH: SHA256:7B8F9A4E2C1D0F8394E7A1</div>
                 <div>LOKASI PUSAT UJIAN: TOKYO PROMETRIC CENTER #04</div>
               </div>
@@ -1043,7 +1043,7 @@ export const PrometricCbtModal: React.FC<PrometricCbtModalProps> = ({
                         Soal {idx + 1} ({q.section.toUpperCase()})
                       </span>
                       <span
-                        className={`px-2 py-0.5 rounded-full text-[10px] font-black ${
+                        className={`px-2 py-0.5 rounded-full text-xs font-black ${
                           isCorrect
                             ? 'bg-emerald-500/15 text-emerald-400 border border-emerald-500/30'
                             : 'bg-rose-500/15 text-rose-400 border border-rose-500/30'
@@ -1082,7 +1082,7 @@ export const PrometricCbtModal: React.FC<PrometricCbtModalProps> = ({
                               <span className="truncate">{opt.textJp} ({opt.textId})</span>
                             </div>
                             {isThisCorrect && (
-                              <span className="text-[10px] bg-emerald-500/20 px-1.5 py-0.5 rounded text-emerald-400 shrink-0">
+                              <span className="text-xs bg-emerald-500/20 px-1.5 py-0.5 rounded text-emerald-400 shrink-0">
                                 Kunci Resmi
                               </span>
                             )}
@@ -1101,7 +1101,7 @@ export const PrometricCbtModal: React.FC<PrometricCbtModalProps> = ({
                         {q.explanationId}
                       </p>
                       {q.officialRef && (
-                        <div className="text-[10px] text-accent/80 font-mono pt-1">
+                        <div className="text-xs text-accent/80 font-mono pt-1">
                           Ref: {q.officialRef}
                         </div>
                       )}

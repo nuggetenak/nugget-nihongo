@@ -956,7 +956,7 @@ export const QuizPage: React.FC = () => {
                         <button
                           key={idx}
                           onClick={() => handleRemoveToken(token, idx)}
-                          className="min-h-[44px] max-w-full px-3.5 py-2 rounded-xl sm:rounded-2xl bg-amber-500 text-stone-950 font-japanese font-bold text-sm sm:text-base shadow-md hover:bg-amber-400 transition-all active:scale-95 flex items-center gap-1.5 border border-amber-600/30 break-words shrink-0 sm:shrink"
+                          className="min-h-[44px] max-w-full min-w-0 px-3.5 py-2 rounded-xl sm:rounded-2xl bg-amber-500 text-stone-950 font-japanese font-bold text-sm sm:text-base shadow-md hover:bg-amber-400 transition-all active:scale-95 flex items-center gap-1.5 border border-amber-600/30 break-words shrink-0 sm:shrink"
                           title={`Posisi ke-${idx + 1}: Ketuk untuk membatalkan`}
                         >
                           <span className="w-5 h-5 rounded-full bg-black/25 text-xs font-mono flex items-center justify-center text-stone-950 font-black shrink-0">
@@ -974,7 +974,7 @@ export const QuizPage: React.FC = () => {
                       <button
                         key={idx}
                         onClick={() => handleAddToken(token, idx)}
-                        className="min-h-[44px] max-w-full px-4 py-2.5 rounded-xl sm:rounded-2xl bg-surface border-2 border-accent/30 hover:border-amber-500 text-appText-bright font-japanese font-bold text-sm sm:text-base hover:-translate-y-0.5 hover:shadow-glow transition-all shadow-sm active:scale-95 break-words shrink-0 sm:shrink"
+                        className="min-h-[44px] max-w-full min-w-0 px-4 py-2.5 rounded-xl sm:rounded-2xl bg-surface border-2 border-accent/30 hover:border-amber-500 text-appText-bright font-japanese font-bold text-sm sm:text-base hover:-translate-y-0.5 hover:shadow-glow transition-all shadow-sm active:scale-95 break-words shrink-0 sm:shrink"
                       >
                         <span className="break-all sm:break-normal">{token}</span>
                       </button>

@@ -407,11 +407,11 @@ export const JftBasicCbtModal: React.FC<JftBasicCbtModalProps> = ({
             <div className="min-w-0">
               <div className="flex items-center gap-2 text-xs font-bold text-appText-bright truncate">
                 <span>Japan Foundation Test for Basic Japanese</span>
-                <span className="px-1.5 py-0.5 rounded bg-surface text-[10px] text-accent font-mono">
+                <span className="px-1.5 py-0.5 rounded bg-surface text-xs text-accent font-mono">
                   Standar A2 · SSW
                 </span>
               </div>
-              <div className="text-[10px] text-appText-muted font-mono truncate">
+              <div className="text-xs text-appText-muted font-mono truncate">
                 Peserta: SISWA NUGGET NIHONGO · No. Kursi: CBT-07
               </div>
             </div>
@@ -490,22 +490,22 @@ export const JftBasicCbtModal: React.FC<JftBasicCbtModalProps> = ({
 
               <div className="grid sm:grid-cols-3 gap-3 text-xs">
                 <div className="p-3 rounded-xl bg-surface-2 border border-accent/15 space-y-1">
-                  <div className="text-appText-muted text-[11px]">Total Skor Maksimal</div>
+                  <div className="text-appText-muted text-xs">Total Skor Maksimal</div>
                   <div className="text-lg font-black text-appText-bright">250 Poin</div>
                 </div>
 
                 <div className="p-3 rounded-xl bg-surface-2 border border-accent/15 space-y-1">
-                  <div className="text-appText-muted text-[11px]">Ambang Batas Kelulusan</div>
+                  <div className="text-appText-muted text-xs">Ambang Batas Kelulusan</div>
                   <div className="text-lg font-black text-emerald-400">≥ 200 Poin (80%)</div>
                 </div>
 
                 <div className="p-3 rounded-xl bg-surface-2 border border-accent/15 space-y-1">
-                  <div className="text-appText-muted text-[11px]">Durasi Ujian Komputer</div>
+                  <div className="text-appText-muted text-xs">Durasi Ujian Komputer</div>
                   <div className="text-lg font-black text-amber-400">60 Menit</div>
                 </div>
               </div>
 
-              <p className="text-[11px] text-appText-muted leading-relaxed">
+              <p className="text-xs text-appText-muted leading-relaxed">
                 ℹ️ Peserta dapat berpindah antar soal di seluruh 4 seksi ujian. Pada seksi 3 (Choukai), audio dialog dapat diputar maksimal sebanyak 2 kali sesuai aturan resmi Japan Foundation.
               </p>
             </div>
@@ -586,9 +586,9 @@ export const JftBasicCbtModal: React.FC<JftBasicCbtModalProps> = ({
             {/* Question Palette Drawer (Collapsible) */}
             {showPaletteDrawer && (
               <div className="bg-surface-3 border border-accent/25 rounded-2xl p-3.5 space-y-2 animate-fade-in">
-                <div className="text-[11px] font-bold text-appText-muted uppercase tracking-wider flex items-center justify-between">
+                <div className="text-xs font-bold text-appText-muted uppercase tracking-wider flex items-center justify-between">
                   <span>Daftar Navigasi Seluruh Soal (1..{CANONICAL_JFT_QUESTIONS.length})</span>
-                  <span className="text-[10px] text-accent font-normal">
+                  <span className="text-xs text-accent font-normal">
                     Klik nomor untuk lompat langsung ke soal
                   </span>
                 </div>
@@ -635,7 +635,7 @@ export const JftBasicCbtModal: React.FC<JftBasicCbtModalProps> = ({
                     <Headphones className="w-4 h-4" />
                     <span>Audio Pemahaman Percakapan (聴解音声)</span>
                   </span>
-                  <span className="px-2 py-0.5 rounded bg-surface-2 text-[10px] text-appText-muted font-mono">
+                  <span className="px-2 py-0.5 rounded bg-surface-2 text-xs text-appText-muted font-mono">
                     Pemutaran: {audioPlayCount[currentQuestion.id] || 0} / 2 Kali
                   </span>
                 </div>
@@ -823,7 +823,7 @@ export const JftBasicCbtModal: React.FC<JftBasicCbtModalProps> = ({
 
               <div className="border-b border-emerald-500/20 pb-4 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
                 <div>
-                  <div className="text-[10px] text-emerald-400 font-mono tracking-wider uppercase">
+                  <div className="text-xs text-emerald-400 font-mono tracking-wider uppercase">
                     Lembaga Penyelenggara Resmi:
                   </div>
                   <div className="text-base font-extrabold text-appText-bright">
@@ -835,11 +835,11 @@ export const JftBasicCbtModal: React.FC<JftBasicCbtModalProps> = ({
                 </div>
 
                 <div className="text-left sm:text-right font-mono text-xs">
-                  <div className="text-appText-muted text-[10px]">TOTAL SKOR RESMI:</div>
+                  <div className="text-appText-muted text-xs">TOTAL SKOR RESMI:</div>
                   <div className="text-2xl font-black text-emerald-400">
                     {examResult.totalScorePoints} <span className="text-sm font-normal text-appText-muted">/ 250</span>
                   </div>
-                  <div className="text-[10px] text-appText-muted mt-0.5">
+                  <div className="text-xs text-appText-muted mt-0.5">
                     Ambang Batas Lulus: ≥ 200 Poin
                   </div>
                 </div>
@@ -868,7 +868,7 @@ export const JftBasicCbtModal: React.FC<JftBasicCbtModalProps> = ({
                           style={{ width: `${Math.round((stats.points / secMeta.maxPoints) * 100)}%` }}
                         />
                       </div>
-                      <div className="text-[10px] text-appText-muted flex justify-between">
+                      <div className="text-xs text-appText-muted flex justify-between">
                         <span>Akurasi Soal</span>
                         <span>{stats.correct} / {stats.total} Soal Benar</span>
                       </div>
@@ -878,7 +878,7 @@ export const JftBasicCbtModal: React.FC<JftBasicCbtModalProps> = ({
               </div>
 
               {/* Certificate Verification Footer */}
-              <div className="pt-2 border-t border-accent/10 flex flex-col sm:flex-row sm:items-center justify-between gap-2 text-[10px] text-appText-muted font-mono">
+              <div className="pt-2 border-t border-accent/10 flex flex-col sm:flex-row sm:items-center justify-between gap-2 text-xs text-appText-muted font-mono">
                 <div>HASH VALIDASI: JF-JFT-2026-NUGGET-CBT-A28F9E</div>
                 <div>LOKASI UJIAN: JAKARTA CBT CENTER #02</div>
               </div>
@@ -958,7 +958,7 @@ export const JftBasicCbtModal: React.FC<JftBasicCbtModalProps> = ({
                         Soal {idx + 1} · {JFT_SECTION_METAS[q.sectionId].nameJp}
                       </span>
                       <span
-                        className={`px-2 py-0.5 rounded-full text-[10px] font-black ${
+                        className={`px-2 py-0.5 rounded-full text-xs font-black ${
                           isCorrect
                             ? 'bg-emerald-500/15 text-emerald-400 border border-emerald-500/30'
                             : 'bg-rose-500/15 text-rose-400 border border-rose-500/30'
@@ -997,7 +997,7 @@ export const JftBasicCbtModal: React.FC<JftBasicCbtModalProps> = ({
                               <span className="truncate">{opt.textJp} ({opt.textId})</span>
                             </div>
                             {isThisCorrect && (
-                              <span className="text-[10px] bg-emerald-500/20 px-1.5 py-0.5 rounded text-emerald-400 shrink-0">
+                              <span className="text-xs bg-emerald-500/20 px-1.5 py-0.5 rounded text-emerald-400 shrink-0">
                                 Kunci Resmi
                               </span>
                             )}
@@ -1015,7 +1015,7 @@ export const JftBasicCbtModal: React.FC<JftBasicCbtModalProps> = ({
                       <p className="text-appText-muted leading-relaxed">
                         {q.explanationId}
                       </p>
-                      <div className="text-[10px] text-emerald-400 font-bold pt-1">
+                      <div className="text-xs text-emerald-400 font-bold pt-1">
                         🎯 Can-Do: {q.canDoStatement}
                       </div>
                     </div>

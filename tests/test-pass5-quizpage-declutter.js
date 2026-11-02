@@ -80,8 +80,8 @@ function main() {
     assert(hubCode.includes('Catatan Evaluasi'), 'Must provide access to mistake evaluation review');
   });
 
-  // ── 3. Anti-Microfont Purge Across QuizPage & QuizArenaHub ──
-  test('P5.3: Purges all micro-fonts (text-[8px], text-[9px], text-[10px], text-[11px]) across QuizPage & QuizArenaHub', () => {
+  // ── 3. Anti-Microfont Purge Across QuizPage, QuizArenaHub & All Quiz Modals ──
+  test('P5.3: Purges all micro-fonts (text-[8px], text-[9px], text-[10px], text-[11px]) across QuizPage, QuizArenaHub & all quiz modals', () => {
     const microfontRegex = /text-\[(8|9|10|11|10\.5|11\.5)px\]/;
 
     const quizMatch = quizCode.match(microfontRegex);
@@ -89,6 +89,15 @@ function main() {
 
     const hubMatch = hubCode.match(microfontRegex);
     assert(!hubMatch, `QuizArenaHub.tsx must NOT contain any micro-fonts below text-xs (12px), found: ${hubMatch?.[0]}`);
+
+    // Scan all components in src/components/quiz/ (including CBT simulators & specialized cards)
+    const quizCompDir = path.join(ROOT_DIR, 'src/components/quiz');
+    const compFiles = fs.readdirSync(quizCompDir).filter((f) => f.endsWith('.tsx') || f.endsWith('.ts'));
+    for (const file of compFiles) {
+      const compContent = fs.readFileSync(path.join(quizCompDir, file), 'utf8');
+      const compMatch = compContent.match(microfontRegex);
+      assert(!compMatch, `${file} must NOT contain any micro-fonts below text-xs (12px), found: ${compMatch?.[0]}`);
+    }
 
     // Verify minimum text-xs on chips and controls
     assert(quizCode.includes('text-xs font-mono font-black text-theme-primary shrink-0'), 'Question counter must be text-xs');
@@ -100,7 +109,7 @@ function main() {
   test('P5.4: Eliminates word-scramble chip layout blowouts on 320px–375px viewports', () => {
     assert(quizCode.includes('w-full max-w-full bg-surface-2 border border-accent/30 rounded-2xl p-3 sm:p-4 flex flex-wrap gap-2 sm:gap-2.5 items-center overflow-hidden'), 'Assembled sentence container must enforce max-w-full overflow-hidden');
     assert(quizCode.includes('flex flex-wrap gap-2 sm:gap-2.5 p-1 sm:p-2 w-full max-w-full overflow-hidden'), 'Available token container must enforce max-w-full overflow-hidden');
-    assert(quizCode.includes('min-h-[44px] max-w-full px-3.5 py-2 rounded-xl sm:rounded-2xl bg-amber-500 text-stone-950 font-japanese font-bold text-sm sm:text-base'), 'Assembled chips must declare min-h-[44px] with break-words');
+    assert(quizCode.includes('min-h-[44px]') && quizCode.includes('max-w-full min-w-0'), 'Assembled chips must declare min-h-[44px] and min-w-0 anti-blowout constraint');
     assert(quizCode.includes('break-all sm:break-normal'), 'Long tokens must break-all on small viewports to prevent layout blowouts');
   });
 
@@ -112,6 +121,7 @@ function main() {
     assert(guardCode.includes('aria-describedby="quiz-exit-desc"'), 'Must declare aria-describedby');
     assert(guardCode.includes('stayButtonRef.current?.focus()'), 'Must auto-focus the safe Lanjutkan button');
     assert(guardCode.includes("e.key === 'Escape'"), 'Must handle Escape key dismissal');
+    assert(guardCode.includes("e.key === 'Tab'"), 'Must trap focus on Tab navigation');
     assert(guardCode.includes('min-h-[44px]'), 'Buttons must enforce min-h-[44px] touch target');
   });
 

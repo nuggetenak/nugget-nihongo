@@ -1,474 +1,655 @@
-// SSW Construction (Building Construction / 建築 - Kenchiku) Set 01
-// Curriculum Reference: JAC (Japan Association for Construction Human Resources) & MLIT Official Textbooks
+/**
+ * SSW Construction - Building Construction (Kensetsu Kenchiku / 建設建築) Golden Set 01
+ * Grounded in JAC (Japan Association for Construction Human Resources) & MLIT Official Textbooks
+ * 15 Items: Scaffolding, Fall Arrest Harness, Kyatatsu 75° Rule, Rebar/Formwork, Hot Works & 5S
+ */
 
-const sswKenchikuSet01 = {
-  id: "ssw-kensetsu-kenchiku-set01",
-  title: "SSW Tokutei Ginou: Kensetsu Kenchiku (Building Construction) Set 01",
-  track: "ssw-kensetsu-kenchiku",
-  level: "A2-B1",
-  tier: "standard",
-  durationMinutes: 15,
-  passingScorePercent: 70,
-  recommendedRetakeIntervalDays: 7,
-  focusAreas: [
-    "Scaffolding & Work Platform Safety (Ashiba / Habaki)",
-    "Fall Arrest Systems (Full-body Harness & Nichougake)",
-    "Stepladder (Kyatatsu) & Extension Ladder Rules",
-    "Rebar (Tekkin) & Formwork (Katawaku) Assembly Practices",
-    "Hot Works, Organic Solvents & Interior Finishing Precautions"
-  ],
-  questions: [
-    {
-      id: "kenchiku-q01",
-      section: "safety-procedures",
-      format: "single-choice",
-      promptJa: "高さ2メートル以上の高所（こうしょ）で作業床がない場所で作業するとき、必ず着用しなければならない保護具は何ですか。",
-      promptEn: "When working at heights of 2 meters or more where no work platform can be set up, what personal protective equipment must be worn?",
-      optionsJa: [
-        "フルハーネス型墜落制止用器具（命綱）",
-        "胴ベルト型安全帯（1本つり）",
-        "防塵マスクと保護メガネのみ",
-        "皮手袋と安全靴のみ"
-      ],
-      correctOptionIndex: 0,
-      curriculumRef: {
-        textbook: "JAC Kensetsu Kenchiku Text",
-        chapter: "Chapter 2: Fall Prevention & Working at Heights",
-        pageOrUnit: "Unit 2.1 - Full-Body Harness Standard"
-      },
-      explanation: {
-        justification: "Under revised Japanese industrial safety law, at heights of 2 meters or more without a standard work platform, workers must wear a full-body harness fall arrest system (フルハーネス型墜落制止用器具). Single torso belts (胴ベルト型) are prohibited for general high-elevation work due to severe abdominal crush and suspension trauma risks.",
-        distractorAutopsy: {
-          "1": "Single torso belts (胴ベルト型) can cause lethal internal organ rupture or slip out upon head-first falls.",
-          "2": "Dust masks and goggles protect the face from debris, not from vertical gravitational falls.",
-          "3": "Leather gloves and safety shoes are standard PPE but do not arrest falls."
+function getSSWKenchikuSet() {
+  return {
+    setId: 'ssw-kensetsu-kenchiku-set01',
+    trackType: 'ssw',
+    sswSectorId: 'ssw-kensetsu-kenchiku',
+    title: 'Set Latihan SSW Kensetsu Kenchiku (Konstruksi Gedung) - 01',
+    description: 'Simulasi modular 15 menit menguji istilah perancah scaffolding (ashiba), sabuk pengaman full harness, perakitan besi tulangan (tekkin), bekisting (katawaku), tangga lipat, dan K3 gedung.',
+    targetUnits: 'Kurikulum Vokasional Kensetsu Kenchiku: Bekerja di Ketinggian, Perakitan Struktur Beton & K3 Gedung',
+    totalItems: 15,
+    timeLimitMinutes: 15,
+    passingScore: 10,
+    items: [
+      {
+        id: 'SSW-KC-S01-Q01',
+        trackType: 'ssw',
+        sswSectorId: 'ssw-kensetsu-kenchiku',
+        mondaiNumber: 1,
+        mondaiType: 'ssw_k3_procedure',
+        instructionJp: '高所作業の安全保護具について、最も適切なものを1・2・3・4から一つ選びなさい。',
+        instructionId: 'Pilihlah alat pelindung jatuh yang wajib dipakai pada ketinggian 2 meter ke atas tanpa lantai kerja.',
+        prompt: '高さ2メートル以上の 高所（こうしょ）で 作業床がない 場所で作業するとき、必ず着用しなければならない 保護具は 何ですか。',
+        targetWord: 'フルハーネス型',
+        options: [
+          'フルハーネス型墜落制止用器具（命綱）',
+          '胴ベルト型安全帯（1本つり）',
+          '防塵マスクと保護メガネのみ',
+          '皮手袋と安全靴のみ'
+        ],
+        correctOptionIndex: 0,
+        explanation: {
+          justification: 'Berdasarkan revisi UU K3 Jepang, bekerja di ketinggian 2 meter atau lebih tanpa lantai kerja standar wajib mengenakan Full-Body Harness (フルハーネス型墜落制止用器具). Sabuk pinggang tunggal (胴ベルト型) dilarang karena berisiko fatal merusak organ dalam perut atau terlepas saat terjatuh dengan posisi kepala di bawah.',
+          distractorAutopsy: {
+            '1': 'フルハーネス型墜落制止用器具 adalah KUNCI BENAR (sabuk pengaman seluruh tubuh penahan jatuh).',
+            '2': '胴ベルト型 (sabuk pinggang tunggal) berisiko mematikan saat tergantung lama (suspension trauma).',
+            '3': 'Masker debu dan kacamata hanya melindungi muka dari serpihan, bukan menahan gravitasi jatuh.',
+            '4': 'Sarung tangan dan sepatu safety adalah APD standar tapi tidak menahan jatuh.'
+          },
+          mnemonicSensei: 'Ketinggian >= 2 meter = FULL HARNESS Wajib! Mengikat dada, paha, dan punggung agar tidak terpelanting saat jatuh.',
+          l1InterferenceAlert: 'Di Indonesia pekerja kadang hanya memakai sabuk pinggang biasa (single belt). Di Jepang, memakai single belt di atas perancah tanpa pengaman adalah pelanggaran fatal.',
+          remedialPrescription: {
+            unitId: 'unit-curriculum-ssw-kensetsu-05',
+            unitNumber: 5,
+            unitTitleId: 'Pekerjaan di Ketinggian & Pencegahan Jatuh Perancah',
+            lessonId: 'les-ssw-kc-01',
+            vocabId: 'vg-ssw-kc-001',
+            advice: 'Kuasai kosakata: 墜落制止用器具 (alat penahan jatuh), フルハーネス (full harness), ランヤード (tali lanyard), ショックアブソーバ (peredam kejut).'
+          },
+          safetyTip: 'Gantungkan kait lanyard (hook) selalu pada posisi lebih tinggi dari pinggang (腰より高い位置) untuk meminimalkan jarak jatuh bebas.'
         },
-        senseiMnemonic: "Ketinggian $\\ge 2\\text{ m}$ = 'Full Harness Wajib'! Bukan cuma sabuk pinggang, tapi sabuk seluruh paha dan dada.",
-        l1InterferenceAlert: "Di Indonesia sering disebut 'body harness' atau 'tali pengaman', dan pekerja kadang hanya memakai sabuk pinggang sederhana (single belt). Di Jepang, single belt dilarang keras untuk pekerjaan di atas 5m atau 2m tanpa lantai kerja.",
-        remedialPrescription: "Kuasai istilah: 墜落制止用器具 (tsuiraku seishi-you kigu = alat penahan jatuh), フルハーネス (full harness), ランヤード (lanyard), ショックアブソーバ (shock absorber)."
-      }
-    },
-    {
-      id: "kenchiku-q02",
-      section: "safety-procedures",
-      format: "single-choice",
-      promptJa: "脚立（きゃたつ）を使用して作業するときの安全ルールとして、正しいものはどれですか。",
-      promptEn: "What is the correct safety rule when working using a stepladder (Kyatatsu)?",
-      optionsJa: [
-        "脚立の天板（最上段）に乗ったり、天板にまたがって作業してはならない",
-        "高いところに手が届かないときは、天板につま先立ちで作業する",
-        "脚立の脚（あし）の下にブロックを敷いて高さを調整してもよい",
-        "脚立を開き止め金具（開き止めチェーン）をかけずに使ってもよい"
-      ],
-      correctOptionIndex: 0,
-      curriculumRef: {
-        textbook: "JAC Kensetsu Kenchiku Text",
-        chapter: "Chapter 2: Fall Prevention & Working at Heights",
-        pageOrUnit: "Unit 2.2 - Stepladder (Kyatatsu) Regulations"
+        curriculumRef: {
+          trackId: 'curriculum-ssw-kensetsu-kenchiku',
+          unitId: 'unit-curriculum-ssw-kensetsu-05',
+          unitNumber: 5,
+          unitTitleId: 'Pekerjaan di Ketinggian & Pencegahan Jatuh Perancah'
+        }
       },
-      explanation: {
-        justification: "Standing on the uppermost top step (天板 - tenban) or straddling the top plate of a stepladder is strictly forbidden by Japanese safety standards. Workers lose 3-point contact, easily tipping over.",
-        distractorAutopsy: {
-          "1": "Standing on tiptoes on the top plate causes instantaneous balance loss and severe head injuries.",
-          "2": "Placing loose bricks/blocks under ladder legs causes unstable tipping and collapse.",
-          "3": "The spreader stay/locking bar (開き止め金具) must always be locked into place before ascending."
+      {
+        id: 'SSW-KC-S01-Q02',
+        trackType: 'ssw',
+        sswSectorId: 'ssw-kensetsu-kenchiku',
+        mondaiNumber: 2,
+        mondaiType: 'ssw_k3_procedure',
+        instructionJp: '脚立の安全使用ルールとして最も適切なものを1・2・3・4から一つ選びなさい。',
+        instructionId: 'Pilihlah aturan penggunaan tangga lipat (kyatatsu) yang paling benar.',
+        prompt: '脚立（きゃたつ）を 使用して作業するときの 安全ルールとして、正しいものは どれですか。',
+        targetWord: '天板',
+        options: [
+          '脚立の天板（最上段）に乗ったり、天板にまたがって作業してはならない',
+          '高いところに手が届かないときは、天板につま先立ちで作業する',
+          '脚立の脚（あし）の下にブロックを敷いて高さを調整してもよい',
+          '脚立を開き止め金具（開き止めチェーン）をかけずに使ってもよい'
+        ],
+        correctOptionIndex: 0,
+        explanation: {
+          justification: 'Berdiri di anak tangga paling atas / pelat puncak (天板 - tenban) atau menduduki tenban tangga lipat dilarang keras dalam standar K3 Jepang. Posisi tersebut menghilangkan kontak 3 titik dan membuat tangga sangat mudah terjungkal.',
+          distractorAutopsy: {
+            '1': 'Opsi 1 BENAR MUTLAK: Dilarang menginjak pelat puncak tenban atau mengangkanginya.',
+            '2': 'Berjinjit di pelat teratas menyebabkan kehilangan keseimbangan seketika dan cedera kepala fatal.',
+            '3': 'Mengganjal kaki tangga dengan bata/balok kayu membuat tangga labil dan roboh saat dibebani.',
+            '4': 'Pengunci bentangan tangga (開き止め金具) wajib selalu terkunci sebelum dinaiki.'
+          },
+          mnemonicSensei: 'Tenban Kinshi! Jangan injak atap tangga! Berdirilah maksimal di anak tangga kedua dari atas dengan dada menempel stabil.',
+          l1InterferenceAlert: 'Banyak tukang di Indonesia terbiasa jongkok di pelat teratas tangga lipat aluminium. Di proyek Jepang, pengawas akan langsung berteriak menghentikan Anda jika kaki menyentuh tenban.',
+          remedialPrescription: {
+            unitId: 'unit-curriculum-ssw-kensetsu-05',
+            unitNumber: 5,
+            unitTitleId: 'Pekerjaan di Ketinggian & Pencegahan Jatuh Perancah',
+            advice: '3 Aturan tangga lipat: 1. Jangan injak 天板 (tenban), 2. Pasang pengunci 開き止め, 3. Jangan gunakan sebagai jembatan horisontal.'
+          },
+          safetyTip: 'Posisikan badan menghadap ke tangga saat naik dan turun (menghadap ke depan tangga, bukan membelakangi).'
         },
-        senseiMnemonic: "'Tenban kinshi' (Dilarang injak atap tangga)! Berdirilah maksimal di anak tangga kedua dari atas dengan badan menempel stabil.",
-        l1InterferenceAlert: "Banyak tukang di Indonesia terbiasa jongkok atau menduduki puncak tangga lipat aluminium. Di Jepang, supervisor akan langsung menghentikan pekerjaan dan memberikan teguran keras jika kaki menginjak pelat teratas.",
-        remedialPrescription: "Ingat 3 aturan tangga lipat: 1. Jangan injak 天板 (tenban), 2. Kunci 開き止め (hirakidome), 3. Jangan gunakan sebagai jembatan horizontal."
-      }
-    },
-    {
-      id: "kenchiku-q03",
-      section: "technical-vocabulary",
-      format: "single-choice",
-      promptJa: "足場（あしば）の作業床から工具や資材が下の階へ落ちないように、床の端（はし）に取り付ける板は何ですか。",
-      promptEn: "What board is attached to the edge of a scaffold platform to prevent tools and materials from falling to lower floors?",
-      optionsJa: [
-        "幅木（はばき / こぼれ止め）",
-        "敷板（しきいた）",
-        "筋交い（すじかい）",
-        "ジャッキベース"
-      ],
-      correctOptionIndex: 0,
-      curriculumRef: {
-        textbook: "JAC Kensetsu Kenchiku Text",
-        chapter: "Chapter 3: Scaffolding Assembly & Maintenance",
-        pageOrUnit: "Unit 3.1 - Toe Board (Habaki) Standard"
+        curriculumRef: {
+          trackId: 'curriculum-ssw-kensetsu-kenchiku',
+          unitId: 'unit-curriculum-ssw-kensetsu-05',
+          unitNumber: 5,
+          unitTitleId: 'Pekerjaan di Ketinggian & Pencegahan Jatuh Perancah'
+        }
       },
-      explanation: {
-        justification: "A toe board or kickboard (幅木 - habaki / こぼれ止め) is installed vertically along the edges of scaffolding walkways (height $\\ge 15\\text{ cm}$) to prevent dropped objects, kicked bolts, or dislodged tools from falling onto workers below.",
-        distractorAutopsy: {
-          "1": "Base sills / timber sole plates (敷板 - shikiita) are laid on the ground under vertical jack bases to distribute foundation weight.",
-          "2": "Diagonal braces (筋交い - sujikai) provide lateral rigidity to the scaffold framework.",
-          "3": "Jack bases (ジャッキベース) are screw jacks supporting the vertical standards."
+      {
+        id: 'SSW-KC-S01-Q03',
+        trackType: 'ssw',
+        sswSectorId: 'ssw-kensetsu-kenchiku',
+        mondaiNumber: 3,
+        mondaiType: 'ssw_technical_terminology',
+        instructionJp: '足場の安全部材として最も適切なものを1・2・3・4から一つ選びなさい。',
+        instructionId: 'Pilihlah papan penahan di tepi lantai perancah agar barang tidak jatuh ke bawah.',
+        prompt: '足場（あしば）の 作業床から 工具や資材が 下の階へ落ちないように、床の端（はし）に 取り付ける板は 何ですか。',
+        targetWord: '幅木',
+        options: [
+          '幅木（はばき / こぼれ止め）',
+          '敷板（しきいた）',
+          '筋交い（すじかい）',
+          'ジャッキベース'
+        ],
+        correctOptionIndex: 0,
+        explanation: {
+          justification: 'Papan penahan jatuh / toe board (幅木 - habaki / こぼれ止め) dipasang vertikal di sepanjang tepi lantai perancah (tinggi minimal 15 cm) untuk mencegah perkakas yang tersenggol atau baut jatuh meluncur mengenai orang di lantai bawah.',
+          distractorAutopsy: {
+            '1': '幅木（はばき） adalah KUNCI BENAR (papan pembatas tepi kaki perancah).',
+            '2': '敷板 (papan alas dasar) diletakkan di tanah di bawah jack base untuk meratakan beban tiang perancah.',
+            '3': '筋交い (batang silang/bracing) memberi kekakuan diagonal pada rangka perancah.',
+            '4': 'ジャッキベース (jack base) adalah ulir pengatur ketinggian kaki perancah di tanah.'
+          },
+          mnemonicSensei: 'Habaki = Pembatas Kaki! Menahan palu dan baut agar tidak tergelincir jatuh bocok menimpa kepala rekan di bawah.',
+          l1InterferenceAlert: 'Jangan samakan Habaki interior lantai (skirting kayu dinding bawah) dengan Habaki perancah (toe board pengaman jatuh alat di bibir scaffolding).',
+          remedialPrescription: {
+            unitId: 'unit-curriculum-ssw-kensetsu-05',
+            unitNumber: 5,
+            unitTitleId: 'Pekerjaan di Ketinggian & Pencegahan Jatuh Perancah',
+            advice: '3 Lapisan tepi perancah: 手すり (railing atas >= 85 cm), 中桟 (railing tengah), 幅木 (toe board >= 15 cm).'
+          },
+          safetyTip: 'Jangan menumpuk material melebihi tinggi papan habaki di tepi perancah.'
         },
-        senseiMnemonic: "'Habaki' = Pembatas kaki! Menahan baut dan martil agar tidak meluncur 'bocok' ke kepala kawan di bawah.",
-        l1InterferenceAlert: "Jangan samakan Habaki di interior lantai kayu (skirting board) dengan Habaki di perancah konstruksi (toe board penahan jatuhnya alat).",
-        remedialPrescription: "Komponen perancah: 手すり (tesuri = railing tengah & atas $\\ge 85\\text{cm}$), 幅木 (habaki = toe board $\\ge 15\\text{cm}$), メッシュシート (jaring pengaman)."
-      }
-    },
-    {
-      id: "kenchiku-q04",
-      section: "on-site-dialogue",
-      format: "single-choice",
-      promptJa: "先輩「足場の上を移動するときは、フックを交互に掛け替える（　　）を徹底しろ！」",
-      promptEn: "Senior: 'When moving along the scaffolding, ensure thorough practice of (    ) by alternating hook attachments!'",
-      optionsJa: [
-        "二丁掛け（にちょうがけ）",
-        "片手掛け（かたてがけ）",
-        "腕組み（うでぐみ）",
-        "早歩き（はやあるき）"
-      ],
-      correctOptionIndex: 0,
-      curriculumRef: {
-        textbook: "JAC Kensetsu Kenchiku Text",
-        chapter: "Chapter 2: Fall Prevention & Working at Heights",
-        pageOrUnit: "Unit 2.3 - 100% Tie-Off (Nichougake)"
+        curriculumRef: {
+          trackId: 'curriculum-ssw-kensetsu-kenchiku',
+          unitId: 'unit-curriculum-ssw-kensetsu-05',
+          unitNumber: 5,
+          unitTitleId: 'Pekerjaan di Ketinggian & Pencegahan Jatuh Perancah'
+        }
       },
-      explanation: {
-        justification: "Dual lanyard 100% tie-off (二丁掛け - nichougake) requires workers equipped with twin lanyards to ensure at least one hook is securely anchored to a scaffold lifeline or rail at all times before unclipping the other.",
-        distractorAutopsy: {
-          "1": "Using only one hook leaves moments of complete zero-fall-protection when unclipping to transition past vertical stanchions.",
-          "2": "Crossing arms (腕組み) is idle posture, offering zero mechanical anchorage.",
-          "3": "Walking fast (早歩き) increases tripping hazards on scaffolding."
+      {
+        id: 'SSW-KC-S01-Q04',
+        trackType: 'ssw',
+        sswSectorId: 'ssw-kensetsu-kenchiku',
+        mondaiNumber: 4,
+        mondaiType: 'ssw_hou_ren_so_sbar',
+        instructionJp: '安全指示会話として、（　　）に入る最も適切な言葉を一つ選びなさい。',
+        instructionId: 'Pilihlah istilah teknik memasang 2 kait lanyard secara bergantian.',
+        prompt: '先輩「足場の上を 移動するときは、フックを 交互に掛け替える（　　）を 徹底しろ！」',
+        targetWord: '二丁掛け',
+        options: [
+          '二丁掛け（にちょうがけ）',
+          '片手掛け（かたてがけ）',
+          '腕組み（うでぐみ）',
+          '早歩き（はやあるき）'
+        ],
+        correctOptionIndex: 0,
+        explanation: {
+          justification: 'Teknik 100% tie-off dengan dua kait lanyard disebut Nichougake (二丁掛け). Pekerja wajib menancapkan kait kedua ke pipa perancah sebelum mencabut kait pertama, sehingga tidak ada momen tanpa pengaman sama sekali saat melangkah melewati tiang.',
+          distractorAutopsy: {
+            '1': '二丁掛け（にちょうがけ） adalah KUNCI BENAR (metode kait ganda bergantian 100% tie-off).',
+            '2': 'Hanya mengandalkan satu kait membuat ada jeda tanpa perlindungan saat berpindah tiang.',
+            '3': 'Bersedekap (腕組み) adalah sikap pasif tanpa pengamanan mekanis.',
+            '4': 'Berjalan cepat (早歩き) meningkatkan risiko tersandung di atas perancah.'
+          },
+          mnemonicSensei: 'Ni = Dua kait! Kait ke-2 SUDAH tertancap kuat sebelum kait ke-1 dicabut. Zero detik tanpa cantolan!',
+          l1InterferenceAlert: 'Di Jepang, prinsip 100% tie-off tidak menoleransi alasan "cuma pindah tiang sebentar". Jika terbukti melepas kedua kait sekaligus, izin kerja bisa dicabut.',
+          remedialPrescription: {
+            unitId: 'unit-curriculum-ssw-kensetsu-05',
+            unitNumber: 5,
+            unitTitleId: 'Pekerjaan di Ketinggian & Pencegahan Jatuh Perancah',
+            advice: 'Prosedur 二丁掛け: Kait 1 terpasang -> Pasang Kait 2 ke tiang berikutnya -> Lepas Kait 1 -> Melangkah.'
+          },
+          safetyTip: 'Gunakan kait dengan mekanisme kunci otomatis (double locking hook) agar tidak terlepas sendiri saat bergesekan.'
         },
-        senseiMnemonic: "'Ni' = 2 kait! Satu kait dilepas, kait satunya lagi HARUS sudah terkait kencang. Tak boleh sedetik pun tanpa cantolan.",
-        l1InterferenceAlert: "Prinsip 100% tie-off di Jepang tidak menoleransi 'nanti saya kaitkan lagi setelah lewat tiang ini'. Selalu kaitkan hook ke-2 sebelum mencabut hook ke-1.",
-        remedialPrescription: "Langkah 二丁掛け: Hook 1 terpasang $\\rightarrow$ Pasang Hook 2 ke rangka berikutnya $\\rightarrow$ Lepas Hook 1 $\\rightarrow$ Pindah."
-      }
-    },
-    {
-      id: "kenchiku-q05",
-      section: "technical-vocabulary",
-      format: "single-choice",
-      promptJa: "鉄筋（てっきん）が交差する部分を固定するために、ハッカーを使って巻き付ける細い針金を何と呼びますか。",
-      promptEn: "What is the thin wire called that is tied around crossing reinforcing bars using a hacker/pincer tool to secure them?",
-      optionsJa: [
-        "結束線（けっそくせん）",
-        "番線（ばんせん）",
-        "ワイヤーロープ",
-        "電線（でんせん）"
-      ],
-      correctOptionIndex: 0,
-      curriculumRef: {
-        textbook: "JAC Kensetsu Kenchiku Text",
-        chapter: "Chapter 4: Reinforcing Bar (Tekkin) Work",
-        pageOrUnit: "Unit 4.1 - Rebar Tying & Hacker Tool"
+        curriculumRef: {
+          trackId: 'curriculum-ssw-kensetsu-kenchiku',
+          unitId: 'unit-curriculum-ssw-kensetsu-05',
+          unitNumber: 5,
+          unitTitleId: 'Pekerjaan di Ketinggian & Pencegahan Jatuh Perancah'
+        }
       },
-      explanation: {
-        justification: "Annealed rebar tie wire is called 'Kessokusen' (結束線). Tekkin workers use a specialized rotating hooking tool called a 'Hacker' (ハッカー) to twist and knot kessokusen tightly around intersecting rebar grids.",
-        distractorAutopsy: {
-          "1": "番線 (bansen) refers to thicker annealing binding wire (e.g., #8, #10 gauge) used for heavy formwork timber bracing or scaffolding tie-backs.",
-          "2": "ワイヤーロープ (wire rope) is heavy steel braided cable used for crane hoisting.",
-          "3": "電線 (densen) refers to insulated electrical copper cables."
+      {
+        id: 'SSW-KC-S01-Q05',
+        trackType: 'ssw',
+        sswSectorId: 'ssw-kensetsu-kenchiku',
+        mondaiNumber: 5,
+        mondaiType: 'ssw_technical_terminology',
+        instructionJp: '鉄筋工事の部材名として最も適切なものを1・2・3・4から一つ選びなさい。',
+        instructionId: 'Pilihlah kawat pengikat persilangan besi beton yang diputar dengan alat hacker.',
+        prompt: '鉄筋（てっきん）が 交差する部分を 固定するために、ハッカーを 使って巻き付ける 細い針金を 何と呼びますか。',
+        targetWord: '結束線',
+        options: [
+          '結束線（けっそくせん）',
+          '番線（ばんせん）',
+          'ワイヤーロープ',
+          '電線（でんせん）'
+        ],
+        correctOptionIndex: 0,
+        explanation: {
+          justification: 'Kawat pengikat besi tulangan beton disebut Kessokusen (結束線 - kawat bendrat lentur). Tukang besi (tekkin-kou) menggunakan alat pemutar kait bernama Hacker (ハッカー) untuk mengikat titik persilangan rebar dengan kencang.',
+          distractorAutopsy: {
+            '1': '結束線（けっそくせん） adalah KUNCI BENAR (kawat bendrat pengikat rebar).',
+            '2': '番線 (bansen) adalah kawat baja bakar tebal (nomor 8-10) untuk mengikat balok bekisting atau perancah.',
+            '3': 'ワイヤーロープ (wire rope) adalah tali sling baja pengangkat crane.',
+            '4': '電線 (densen) adalah kabel berisolasi penghantar listrik.'
+          },
+          mnemonicSensei: 'Kessoku = Mengikat kuat! Kessokusen = kawat bendrat rebar yang dipuntir dengan alat Hacker.',
+          l1InterferenceAlert: 'Di Indonesia alat ini sering disebut "catut" atau "gegep putar". Di Jepang, kawatnya disebut 結束線 (kessokusen) dan alat putarnya disebut ハッカー (hakka-).',
+          remedialPrescription: {
+            unitId: 'unit-curriculum-ssw-kensetsu-06',
+            unitNumber: 6,
+            unitTitleId: 'Pekerjaan Besi Tulangan (Tekkin) & Bekisting (Katawaku)',
+            advice: 'Kosakata rebar: 鉄筋 (tekkin = besi beton), 配筋 (haikin = susunan tulangan), 結束線 (kawat ikat), ハッカー (hacker).'
+          },
+          safetyTip: 'Sisa ujung kawat kessokusen yang mencuat harus ditekuk ke dalam agar tidak menusuk betis atau merobek pakaian rekan kerja.'
         },
-        senseiMnemonic: "'Kessoku' = Mengikat (Ketsugou)! Kessokusen = kawat bendrat pengikat besi beton dengan alat putar Hacker.",
-        l1InterferenceAlert: "Di proyek konstruksi Indonesia, kawat ini lazim disebut 'kawat bendrat' dan alatnya 'catut' atau 'gegep'. Di Jepang, kawatnya adalah 結束線 (kessokusen) dan alat putarnya adalah ハッカー (hakka-).",
-        remedialPrescription: "Kosakata besi beton: 鉄筋 (tekkin), 配筋 (haikin = susunan rebar), 結束線 (kessokusen = kawat ikat), ハッカー (hakka- = alat pemutar kawat)."
-      }
-    },
-    {
-      id: "kenchiku-q06",
-      section: "technical-vocabulary",
-      format: "single-choice",
-      promptJa: "コンクリート型枠（かたわく）の工事で、型枠の対向する壁の間隔（厚み）を一定に保つために使う金具は何ですか。",
-      promptEn: "In formwork construction, what metal hardware is used to maintain a uniform gap (thickness) between opposing formwork panels?",
-      optionsJa: [
-        "セパレーター（セパ）",
-        "フォームタイ",
-        "パイプサポート",
-        "クランプ"
-      ],
-      correctOptionIndex: 0,
-      curriculumRef: {
-        textbook: "JAC Kensetsu Kenchiku Text",
-        chapter: "Chapter 5: Formwork (Katawaku) Assembly",
-        pageOrUnit: "Unit 5.1 - Formwork Hardware & Spacers"
+        curriculumRef: {
+          trackId: 'curriculum-ssw-kensetsu-kenchiku',
+          unitId: 'unit-curriculum-ssw-kensetsu-06',
+          unitNumber: 6,
+          unitTitleId: 'Pekerjaan Besi Tulangan (Tekkin) & Bekisting (Katawaku)'
+        }
       },
-      explanation: {
-        justification: "A separator (セパレーター / セパ) is a threaded steel spacer rod placed between opposing timber/plywood formwork panels to maintain the exact design wall thickness against external concrete lateral hydrostatic pressure.",
-        distractorAutopsy: {
-          "1": "Form ties (フォームタイ) are external brackets fastened to waler pipes to anchor the tie rods on the outside.",
-          "2": "Pipe supports (パイプサポート) are adjustable telescopic props supporting horizontal floor slab formwork from beneath.",
-          "3": "Clamps (クランプ) fasten structural scaffold steel pipes together."
+      {
+        id: 'SSW-KC-S01-Q06',
+        trackType: 'ssw',
+        sswSectorId: 'ssw-kensetsu-kenchiku',
+        mondaiNumber: 6,
+        mondaiType: 'ssw_technical_terminology',
+        instructionJp: '型枠工事の金具名として最も適切なものを1・2・3・4から一つ選びなさい。',
+        instructionId: 'Pilihlah besi penentu ketebalan jarak antar dinding bekisting cor beton.',
+        prompt: 'コンクリート型枠（かたわく）の 工事で、型枠の対向する 壁の間隔（厚み）を 一定に保つために 使う金具は 何ですか。',
+        targetWord: 'セパレーター',
+        options: [
+          'セパレーター（セパ）',
+          'フォームタイ',
+          'パイプサポート',
+          'クランプ'
+        ],
+        correctOptionIndex: 0,
+        explanation: {
+          justification: 'Separator (セパレーター / セパ) adalah batang baja berulir pembatas jarak yang dipasang di antara dua papan bekisting berhadapan untuk mempertahankan ketebalan dinding beton sesuai desain arsitektur saat cor beton mengalir bertekanan hidrostatik.',
+          distractorAutopsy: {
+            '1': 'セパレーター（セパ） adalah KUNCI BENAR (batang pemisah penentu tebal dinding beton).',
+            '2': 'フォームタイ (form-tie) adalah baut penjepit pipa penguat di sisi luar papan bekisting.',
+            '3': 'パイプサポート (pipe support) adalah tiang besi penyangga pelat lantai bawah.',
+            '4': 'クランプ (clamp) adalah klem pengikat antar pipa perancah.'
+          },
+          mnemonicSensei: 'Sepa = Separator Pemisah Ketebalan! Menjaga dinding cor agar tebalnya presisi dari ujung ke ujung.',
+          l1InterferenceAlert: 'Jangan tertukar antara セパレーター (batang penentu tebal di dalam dinding cor) dengan フォームタイ (penjepit pipa di sisi luar bekisting).',
+          remedialPrescription: {
+            unitId: 'unit-curriculum-ssw-kensetsu-06',
+            unitNumber: 6,
+            unitTitleId: 'Pekerjaan Besi Tulangan (Tekkin) & Bekisting (Katawaku)',
+            advice: '3 Serangkai bekisting: セパレーター (separator penentu tebal) + フォームタイ (form-tie penjepit) + パイプサポート (tiang penyangga lantai).'
+          },
+          safetyTip: 'Pastikan ring karet penahan air (watertight ring) terpasang pada separator jika dinding berbatasan dengan tanah bawah tanah.'
         },
-        senseiMnemonic: "'Sepa' = Separator pemisah ketebalan! Menjaga dinding beton agar tebalnya pas sesuai gambar denah.",
-        l1InterferenceAlert: "Jangan tertukar antara セパレーター (batang penentu tebal di dalam dinding) dan フォームタイ (baut penjepit pipa luar).",
-        remedialPrescription: "Trio bekisting: セパレーター (separator penentu jarak) + フォームタイ (form-tie penjepit pipa) + パイプサポート (tiang penyangga plat lantai)."
-      }
-    },
-    {
-      id: "kenchiku-q07",
-      section: "safety-procedures",
-      format: "single-choice",
-      promptJa: "現場ではしご（伸縮はしごなど）を立て掛けて使用するとき、壁や床面に対する最も安全な角度は何度ですか。",
-      promptEn: "When leaning an extension ladder against a wall or floor on a job site, what is the safest leaning angle?",
-      optionsJa: [
-        "約75度",
-        "約90度（垂直）",
-        "約45度",
-        "約30度"
-      ],
-      correctOptionIndex: 0,
-      curriculumRef: {
-        textbook: "JAC Kensetsu Kenchiku Text",
-        chapter: "Chapter 2: Fall Prevention & Working at Heights",
-        pageOrUnit: "Unit 2.4 - Extension Ladder Angles"
+        curriculumRef: {
+          trackId: 'curriculum-ssw-kensetsu-kenchiku',
+          unitId: 'unit-curriculum-ssw-kensetsu-06',
+          unitNumber: 6,
+          unitTitleId: 'Pekerjaan Besi Tulangan (Tekkin) & Bekisting (Katawaku)'
+        }
       },
-      explanation: {
-        justification: "The statutory Japanese safety standard dictates that a leaning ladder must be pitched at an angle of approximately 75 degrees (slope ratio of 4:1) with the top extending at least 60 cm above the landing edge and firmly tied off.",
-        distractorAutopsy: {
-          "1": "90 degrees (vertical) causes backward tilting and zero climbing foot clearance.",
-          "2": "45 degrees creates immense bottom kick-out sliding force and causes ladder rung bowing.",
-          "3": "30 degrees is far too shallow, causing the ladder to slip out from the base under bodyweight."
+      {
+        id: 'SSW-KC-S01-Q07',
+        trackType: 'ssw',
+        sswSectorId: 'ssw-kensetsu-kenchiku',
+        mondaiNumber: 7,
+        mondaiType: 'ssw_k3_procedure',
+        instructionJp: 'はしごの安全基準として最も適切なものを1・2・3・4から一つ選びなさい。',
+        instructionId: 'Pilihlah sudut sandar paling aman saat menegakkan tangga lurus di lapangan.',
+        prompt: '現場ではしご（伸縮はしごなど）を 立て掛けて使用するとき、壁や床面に対する 最も安全な角度は 何度ですか。',
+        targetWord: '75度',
+        options: [
+          '約75度',
+          '約90度（垂直）',
+          '約45度',
+          '約30度'
+        ],
+        correctOptionIndex: 0,
+        explanation: {
+          justification: 'Standar baku keselamatan Jepang menetapkan sudut sandaran tangga tegak adalah sekitar 75 derajat (rasio kemiringan 4:1). Bagian atas tangga wajib menjulur minimal 60 cm di atas lantai pendaratan dan diikat kencang.',
+          distractorAutopsy: {
+            '1': '約75度 adalah KUNCI BENAR (sudut kemiringan baku tangga sandar).',
+            '2': '90 derajat (tegak lurus) membuat pekerja terjengkang ke belakang saat mendaki.',
+            '3': '45 derajat memberi beban lentur berlebih dan memicu kaki tangga meluncur mundur.',
+            '4': '30 derajat terlalu rebah dan tangga akan langsung patah/tergelincir.'
+          },
+          mnemonicSensei: 'Sudut Tangga = 75 Derajat! Jangan terlalu tegak (bisa terjengkang), jangan terlalu rebah (bisa meluncur selip).',
+          l1InterferenceAlert: 'Di Indonesia, tangga sering disandarkan terlalu landai karena dirasa lebih nyaman dipanjat. Di Jepang, sudut selain 75 derajat dianggap membahayakan nyawa.',
+          remedialPrescription: {
+            unitId: 'unit-curriculum-ssw-kensetsu-05',
+            unitNumber: 5,
+            unitTitleId: 'Pekerjaan di Ketinggian & Pencegahan Jatuh Perancah',
+            advice: 'Rumus tangga aman: 1. Sudut 75°, 2. Puncak tangga menonjol >= 60 cm di atas lantai tujuan (突出長), 3. Ikat puncak tangga ke tiang kokoh.'
+          },
+          safetyTip: 'Pastikan karet anti-selip (slip stopper) di kaki tangga bersih dari lumpur atau oli sebelum disandarkan.'
         },
-        senseiMnemonic: "Sudut tangga: '75 derajat!' Jangan terlalu tegak (bisa terjengkang), jangan terlalu rebah (bisa selip meluncur ke belakang).",
-        l1InterferenceAlert: "Di Indonesia tukang sering mengira tangga yang landai lebih nyaman didaki. Di standar Jepang, sudut di luar 75° dinyatakan membahayakan nyawa.",
-        remedialPrescription: "Rumus tangga aman: 1. Sudut 75°, 2. Puncak tangga menonjol $\\ge 60\\text{cm}$ di atas lantai tujuan (突出長), 3. Ikat ujung atas dan beri anti-slip di kaki."
-      }
-    },
-    {
-      id: "kenchiku-q08",
-      section: "safety-procedures",
-      format: "single-choice",
-      promptJa: "ガス溶接やグラインダー切断など「火気使用（かきしよう）」作業を行うとき、火花による火災を防ぐために必要な措置はどれですか。",
-      promptEn: "When performing hot works (gas welding, abrasive grinder cutting) that emit sparks, what precaution is necessary to prevent fires?",
-      optionsJa: [
-        "周囲の可燃物を片付け、スパッターシート（防火シート）を敷き、消火器を近くに配備する",
-        "火花が散っても水滴がかかれば大丈夫なので、濡れタオルだけ置いておく",
-        "作業中は騒音が出るため、周囲に誰にも知らせず一人で急いで終わらせる",
-        "風通しをよくするために、換気扇の真下に向けて火花を勢いよく飛ばす"
-      ],
-      correctOptionIndex: 0,
-      curriculumRef: {
-        textbook: "JAC Kensetsu Kenchiku Text",
-        chapter: "Chapter 6: Hot Works & Fire Prevention",
-        pageOrUnit: "Unit 6.1 - Hot Work Permits & Spark Blankets"
+        curriculumRef: {
+          trackId: 'curriculum-ssw-kensetsu-kenchiku',
+          unitId: 'unit-curriculum-ssw-kensetsu-05',
+          unitNumber: 5,
+          unitTitleId: 'Pekerjaan di Ketinggian & Pencegahan Jatuh Perancah'
+        }
       },
-      explanation: {
-        justification: "Hot works generate white-hot sparks ($>1000^\\circ\\text{C}$). Safety regulations require: 1) Clearing flammable materials within 5-10m, 2) Laying fire-resistant spark blanket sheets (スパッターシート), and 3) Having inspected fire extinguishers immediately at hand, followed by a post-work ember check (火気点検).",
-        distractorAutopsy: {
-          "1": "A wet towel cannot contain flying shower sparks or embers landing on foam insulation.",
-          "2": "Hot works mandate safety permits and fire-watch monitoring; solo hasty execution causes undetected smoldering fires.",
-          "3": "Directing sparks into ventilation ducts can ignite accumulated dust or combustible filters inside ductwork."
+      {
+        id: 'SSW-KC-S01-Q08',
+        trackType: 'ssw',
+        sswSectorId: 'ssw-kensetsu-kenchiku',
+        mondaiNumber: 8,
+        mondaiType: 'ssw_k3_procedure',
+        instructionJp: '火気使用作業の安全対策として最も適切なものを1・2・3・4から一つ選びなさい。',
+        instructionId: 'Pilihlah prosedur pencegahan kebakaran saat pengelasan atau pemotongan gerinda.',
+        prompt: 'ガス溶接や グラインダー切断など「火気使用（かきしよう）」作業を 行うとき、火花による 火災を防ぐために 必要な措置は どれですか。',
+        targetWord: 'スパッターシート',
+        options: [
+          '周囲の可燃物を片付け、スパッターシート（防火シート）を敷き、消火器を近くに配備する',
+          '火花が散っても水滴がかかれば大丈夫なので、濡れタオルだけ置いておく',
+          '作業中は騒音が出るため、周囲に誰にも知らせず一人で急いで終わらせる',
+          '風通しをよくするために、換気扇の真下に向けて火花を勢いよく飛ばす'
+        ],
+        correctOptionIndex: 0,
+        explanation: {
+          justification: 'Pekerjaan panas menghasilkan percikan api bersuhu >1000°C. Regulasi mewajibkan: 1) Membersihkan bahan mudah terbakar dalam radius 5-10m, 2) Menggelar terpal anti-percikan tahan api (スパッターシート), dan 3) Menyediakan tabung APAR di dekat jangkauan tangan serta pengecekan sisa bara api pasca kerja.',
+          distractorAutopsy: {
+            '1': 'Opsi 1 BENAR: Bersihkan bahan bakar, gelar spatter sheet, dan siapkan tabung APAR di dekatnya.',
+            '2': 'Handuk basah tidak mampu membendung guyuran ribuan percikan api gerinda.',
+            '3': 'Kerja panas wajib memiliki izin resmi (火気使用届) dan pengawas api (火気監視人).',
+            '4': 'Mengarahkan percikan api ke saluran exhaust bisa membakar debu mudah terbakar di dalam ducting.'
+          },
+          mnemonicSensei: 'Kaki Shiyou (Kerja Panas) = 3 Serangkai: Bersihkan bahan bakar + Gelar Spatter Sheet + Siapkan APAR!',
+          l1InterferenceAlert: 'Banyak kebakaran gedung di Jepang terjadi 30-60 menit setelah tukang pulang karena percikan gerinda menyelip di balik insulasi styrofoam/uretana. Wajib periksa bara (火種確認) setelah selesai.',
+          remedialPrescription: {
+            unitId: 'unit-curriculum-ssw-kensetsu-07',
+            unitNumber: 7,
+            unitTitleId: 'Pencegahan Kebakaran, Bahan Berbahaya & Finishing Gedung',
+            advice: 'Kosakata api: 火気使用届 (izin kerja panas), スパッターシート (kain tahan api), 消火器 (shoukaki = tabung APAR).'
+          },
+          safetyTip: 'Lakukan pemeriksaan titik kerja 30 menit setelah pekerjaan api selesai untuk memastikan tidak ada asap atau bara tersembunyi.'
         },
-        senseiMnemonic: "Kaki shiyou (Penggunaan Api) = 3 Serangkai: Bersihkan bahan mudah terbakar + Gelar Spatter Sheet + Siapkan Tabung APAR!",
-        l1InterferenceAlert: "Banyak kebakaran gedung di Jepang terjadi akibat percikan gerinda mengenai bahan isolasi styrofoam (urethane) 30 menit setelah pekerja pulang. Wajib cek bara api (火種確認) setelah selesai.",
-        remedialPrescription: "Kosakata api: 火気使用届 (surat izin kerja panas), スパッターシート (kain anti-percikan api), 消火器 (shoukaki = APAR)."
-      }
-    },
-    {
-      id: "kenchiku-q09",
-      section: "on-site-dialogue",
-      format: "single-choice",
-      promptJa: "職長「内装のクロス貼りや塗装で有機溶剤を使うときは、中毒を防ぐために（　　）を回しながら作業しろよ！」",
-      promptEn: "Foreman: 'When using organic solvents for interior wallpapering or painting, work while running the (    ) to prevent intoxication!'",
-      optionsJa: [
-        "送風機（局所排気装置）",
-        "ヒーター（暖房器具）",
-        "加湿器（かしつき）",
-        "扇風機を首振りにして弱で"
-      ],
-      correctOptionIndex: 0,
-      curriculumRef: {
-        textbook: "JAC Kensetsu Kenchiku Text",
-        chapter: "Chapter 7: Interior Finishing & Hazardous Chemicals",
-        pageOrUnit: "Unit 7.2 - Organic Solvent Ventilation"
+        curriculumRef: {
+          trackId: 'curriculum-ssw-kensetsu-kenchiku',
+          unitId: 'unit-curriculum-ssw-kensetsu-07',
+          unitNumber: 7,
+          unitTitleId: 'Pencegahan Kebakaran, Bahan Berbahaya & Finishing Gedung'
+        }
       },
-      explanation: {
-        justification: "Adhesives, paints, and thinners used in interior finishing emit toxic volatile organic compounds (VOCs). Using local exhaust ventilation/blowers (送風機 / 局所排気装置) and organic vapor respirators (防毒マスク) is legally required to avoid acute nervous system poisoning.",
-        distractorAutopsy: {
-          "1": "Heaters vaporize solvents faster and introduce open ignition hazards with flammable vapors.",
-          "2": "Humidifiers only emit water vapor mist, having zero effect on solvent vapor dilution or exhaust.",
-          "3": "A gentle desktop fan simply recirculates toxic vapor within the sealed room without expelling it."
+      {
+        id: 'SSW-KC-S01-Q09',
+        trackType: 'ssw',
+        sswSectorId: 'ssw-kensetsu-kenchiku',
+        mondaiNumber: 9,
+        mondaiType: 'ssw_hou_ren_so_sbar',
+        instructionJp: '内装作業の安全会話として、（　　）に入る最も適切な言葉を一つ選びなさい。',
+        instructionId: 'Pilihlah alat ventilasi pembuang uap pelarut organik interior.',
+        prompt: '職長「内装のクロス貼りや 塗装で 有機溶剤を使うときは、中毒を防ぐために（　　）を 回しながら 作業しろよ！」',
+        targetWord: '送風機',
+        options: [
+          '送風機（局所排気装置）',
+          'ヒーター（暖房器具）',
+          '加湿器（かしつき）',
+          '扇風機を首振りにして弱で'
+        ],
+        correctOptionIndex: 0,
+        explanation: {
+          justification: 'Lem dan tiner pada interior melepaskan uap pelarut organik (VOC) yang meracuni saraf. Wajib menghidupkan blower penghisap/ventilator pembuang udara (送風機 / 局所排気装置) dan memakai masker gas kimia bertabung filter karbon (防毒マスク).',
+          distractorAutopsy: {
+            '1': '送風機（局所排気装置） adalah KUNCI BENAR (blower pembuang uap racun keluar ruangan).',
+            '2': 'Pemanas ruangan mempercepat penguapan tiner dan memicu bahaya ledakan api.',
+            '3': 'Humidifier hanya menyemprotkan uap air, tidak membuang gas kimia berbahaya.',
+            '4': 'Kipas angin biasa hanya memutar uap racun di dalam ruangan tanpa mengeluarkannya.'
+          },
+          mnemonicSensei: 'Yuuki Youzai (Pelarut Organik) = Bau tiner menyengat! Blower pembuang wajib menyala dan pakai masker bertabung gas.',
+          l1InterferenceAlert: 'Jangan pakai masker debu putih biasa (防塵マスク) untuk uap tiner cat! Uap kimia menembus masker debu. Harus memakai masker gas khusus (防毒マスク).',
+          remedialPrescription: {
+            unitId: 'unit-curriculum-ssw-kensetsu-07',
+            unitNumber: 7,
+            unitTitleId: 'Pencegahan Kebakaran, Bahan Berbahaya & Finishing Gedung',
+            advice: 'Bedakan: 防塵マスク (boujin = saring partikel/debu semen) vs 防毒マスク (boudoku = saring gas racun/uap tiner/pelarut organik).'
+          },
+          safetyTip: 'Ganti canister tabung filter masker gas secara berkala bila bau tiner mulai tercium samar menembus masker.'
         },
-        senseiMnemonic: "'Yuuki Youzai' (Pelarut Organik) = Bau tiner penyengat! Selalu nyalakan Blower (送風機) dan pakai masker gas beracun (防毒マスク).",
-        l1InterferenceAlert: "Jangan gunakan masker debu putih (防塵マスク) untuk pelarut cat/tiner! Uap kimia menembus masker debu. Harus memakai masker tabung gas filter karbon (防毒マスク).",
-        remedialPrescription: "Bedakan: 防塵マスク (boujin = saring partikel/debu semen) vs 防毒マスク (boudoku = saring gas racun/uap tiner/pelarut organik)."
-      }
-    },
-    {
-      id: "kenchiku-q010",
-      section: "technical-vocabulary",
-      format: "single-choice",
-      promptJa: "建築現場で、天井や壁の下地として広く使われる石膏（せっこう）を原料とした板を何と呼びますか。",
-      promptEn: "In building construction, what is the plaster-based board widely used as the substrate for ceilings and walls called?",
-      optionsJa: [
-        "プラスターボード（石膏ボード）",
-        "コンクリートパネル（コンパネ）",
-        "波板スレート",
-        "合板（ベニヤ板）"
-      ],
-      correctOptionIndex: 0,
-      curriculumRef: {
-        textbook: "JAC Kensetsu Kenchiku Text",
-        chapter: "Chapter 7: Interior Finishing & Hazardous Chemicals",
-        pageOrUnit: "Unit 7.1 - Drywall & Plaster Board Installation"
+        curriculumRef: {
+          trackId: 'curriculum-ssw-kensetsu-kenchiku',
+          unitId: 'unit-curriculum-ssw-kensetsu-07',
+          unitNumber: 7,
+          unitTitleId: 'Pencegahan Kebakaran, Bahan Berbahaya & Finishing Gedung'
+        }
       },
-      explanation: {
-        justification: "Plasterboard / gypsum drywall (プラスターボード / 石膏ボード - sekkou bo-do) is the standard non-combustible interior wall and ceiling lining board in Japanese construction, screwed into light-gauge steel studs (LGS) or timber studs.",
-        distractorAutopsy: {
-          "1": "Kompane (コンクリートパネル) is structural exterior plywood used for concrete forms.",
-          "2": "Corrugated slate (波板スレート) is used for industrial exterior roofing or cladding.",
-          "3": "Plywood (合板 / ベニヤ板) is wood-veneered sheets used for subfloors or carpentry cabinetry."
+      {
+        id: 'SSW-KC-S01-Q010',
+        trackType: 'ssw',
+        sswSectorId: 'ssw-kensetsu-kenchiku',
+        mondaiNumber: 10,
+        mondaiType: 'ssw_technical_terminology',
+        instructionJp: '建築資材の名称として最も適切なものを1・2・3・4から一つ選びなさい。',
+        instructionId: 'Pilihlah nama papan gipsum bahan dasar plafon dan dinding dalam gedung.',
+        prompt: '建築現場で、天井や 壁の下地として 広く使われる 石膏（せっこう）を 原料とした 板を 何と呼びますか。',
+        targetWord: 'プラスターボード',
+        options: [
+          'プラスターボード（石膏ボード）',
+          'コンクリートパネル（コンパネ）',
+          '波板スレート',
+          '合板（ベニヤ板）'
+        ],
+        correctOptionIndex: 0,
+        explanation: {
+          justification: 'Papan gipsum / plasterboard (プラスターボード / 石膏ボード - sekkou bo-do) adalah material pelapis dinding dan plafon standar tahan api yang disekrupkan pada rangka baja ringan (LGS) atau kayu.',
+          distractorAutopsy: {
+            '1': 'プラスターボード（石膏ボード） adalah KUNCI BENAR (papan gipsum pelapis dinding/plafon).',
+            '2': 'コンパネ (kompane) adalah triplek tebal khusus bekisting cor beton.',
+            '3': '波板スレート (asbes/seng gelombang) untuk atap luar pabrik.',
+            '4': '合板 (triplek veneer kayu) untuk lantai kerja atau mebel.'
+          },
+          mnemonicSensei: 'Plaster Board / Sekkou Board = Papan gipsum dinding dalam. Tahan api dan dipasang dengan sekrup bor.',
+          l1InterferenceAlert: 'Di Indonesia sering disebut merek dagang seperti "Jayaboard" atau "gypsum board". Di Jepang istilah resminya adalah 石膏ボード (sekkou bo-do) atau プラスターボード.',
+          remedialPrescription: {
+            unitId: 'unit-curriculum-ssw-kensetsu-07',
+            unitNumber: 7,
+            unitTitleId: 'Pencegahan Kebakaran, Bahan Berbahaya & Finishing Gedung',
+            advice: 'Istilah interior: 軽量鉄骨 / LGS (rangka baja ringan), ビス留め (pasang sekrup), パテ処理 (dempul sambungan).'
+          },
+          safetyTip: 'Saat memotong papan gipsum dengan cutter, gunakan kacamata debu agar serbuk putih tidak mengiritasi mata.'
         },
-        senseiMnemonic: "'Plaster Board' / 'Sekkou Board' = Papan gipsum dinding dalam. Tahan api, dipasang dengan obeng sekrup elektrik ke rangka LGS.",
-        l1InterferenceAlert: "Di Indonesia sering disebut 'papan gipsum' atau merek dagang seperti 'Jayaboard'. Di Jepang istilah bakunya adalah 石膏ボード (sekkou bo-do) atau プラスターボード.",
-        remedialPrescription: "Istilah interior: 軽量鉄骨 / LGS (keiryou tekkotsu = rangka baja ringan), ビス留め (bisu-dome = pasang sekrup), パテ処理 (pate shori = pendempulan celah sambungan)."
-      }
-    },
-    {
-      id: "kenchiku-q011",
-      section: "safety-procedures",
-      format: "single-choice",
-      promptJa: "クレーンで資材を上の階へ搬入（荷揚げ）する際、作業員が取ってはならない極めて危険な行動はどれですか。",
-      promptEn: "When materials are being hoisted to an upper floor by crane, what is an extremely dangerous action that a worker must NOT take?",
-      optionsJa: [
-        "荷物が完全に床に着地する前に、吊り荷を真下から手で迎えに行く",
-        "介錯ロープを持って荷物の揺れを抑える",
-        "安全帯（ハーネス）のフックを開口部手前の親綱に取り付ける",
-        "クレーンオペレーターに無線または手合図で明確に伝える"
-      ],
-      correctOptionIndex: 0,
-      curriculumRef: {
-        textbook: "JAC Kensetsu Kenchiku Text",
-        chapter: "Chapter 3: Scaffolding Assembly & Maintenance",
-        pageOrUnit: "Unit 3.3 - Rigging & Floor Landing Safety"
+        curriculumRef: {
+          trackId: 'curriculum-ssw-kensetsu-kenchiku',
+          unitId: 'unit-curriculum-ssw-kensetsu-07',
+          unitNumber: 7,
+          unitTitleId: 'Pencegahan Kebakaran, Bahan Berbahaya & Finishing Gedung'
+        }
       },
-      explanation: {
-        justification: "Never stand beneath or reach directly under a suspended hovering load to guide it. If a wire snaps or hydraulic pressure drops, the worker is instantly crushed. Guide ropes (介錯ロープ) must be used from a safe distance.",
-        distractorAutopsy: {
-          "1": "Holding guide ropes (介錯ロープ) from a safe clearance distance is the prescribed safe method to damp swing.",
-          "2": "Clipping fall protection hooks onto horizontal lifelines (親綱) before approaching open floor openings is mandatory.",
-          "3": "Using clear hand signals or two-way radios with crane operators is strictly required."
+      {
+        id: 'SSW-KC-S01-Q011',
+        trackType: 'ssw',
+        sswSectorId: 'ssw-kensetsu-kenchiku',
+        mondaiNumber: 11,
+        mondaiType: 'ssw_k3_procedure',
+        instructionJp: '荷揚げ作業の危険動作として最も不適切なものを1・2・3・4から一つ選びなさい。',
+        instructionId: 'Pilihlah tindakan yang SANGAT BERBAHAYA dan dilarang saat material dinaikkan dengan crane ke lantai atas.',
+        prompt: 'クレーンで 資材を 上の階へ搬入（荷揚げ）する際、作業員が取ってはならない 極めて危険な行動は どれですか。',
+        targetWord: '荷揚げ',
+        options: [
+          '荷物が完全に床に着地する前に、吊り荷を真下から手で迎えに行く',
+          '介錯ロープを持って荷物の揺れを抑える',
+          '安全帯（ハーネス）のフックを開口部手前の親綱に取り付ける',
+          'クレーンオペレーターに無線または手合図で明確に伝える'
+        ],
+        correctOptionIndex: 0,
+        explanation: {
+          justification: 'Jangan pernah berdiri di bawah atau menjemput material yang masih menggantung dengan tangan kosong dari bawah. Bila sling putus atau hidrolik anjlok, pekerja akan langsung tertimpa beban ratusan kilogram. Kendalikan dengan tali pandu (介錯ロープ) dari posisi aman.',
+          distractorAutopsy: {
+            '1': 'Opsi 1 ADALAH LARANGAN FATAL: Berdiri di bawah barang gantung untuk menjemput dengan tangan kosong.',
+            '2': 'Memegang tali pemandu (介錯ロープ) dari jarak aman adalah prosedur yang benar.',
+            '3': 'Mencantolkan hook harness ke tali induk (親綱) di dekat bukaan lantai adalah wajib.',
+            '4': 'Berkomunikasi jelas lewat handy-talky atau sinyal tangan adalah standar baku.'
+          },
+          mnemonicSensei: 'Jangan jemput barang melayang! Tarik pakai tali pandu (介錯ロープ) dari samping, tunggu sampai mendarat stabil di lantai.',
+          l1InterferenceAlert: 'Refleks ingin cepat selesai sering membuat pekerja langsung menyongsong barang gantung. Di Jepang, berada di bawah beban gantung (吊り荷の下) adalah pelanggaran berat.',
+          remedialPrescription: {
+            unitId: 'unit-curriculum-ssw-kensetsu-05',
+            unitNumber: 5,
+            unitTitleId: 'Pekerjaan di Ketinggian & Pencegahan Jatuh Perancah',
+            advice: 'Aturan 荷揚げ (Niage): Pasang barikade di bawah -> Gunakan 介錯ロープ -> Jangan sentuh barang sebelum mendarat stabil di lantai.'
+          },
+          safetyTip: 'Pastikan area pendaratan material bersih dari puing-puing agar balok bantalan (bansen/timber) rata dan tidak miring.'
         },
-        senseiMnemonic: "Jangan pernah 'menjemput kargo melayang' dengan berdiri di bawahnya! Tarik pakai tali kendali (介錯ロープ) dari samping.",
-        l1InterferenceAlert: "Insting manusia sering ingin langsung menyentuh barang yang sedang turun agar tidak bergoyang. Di Jepang, berada di bawah beban gantung (吊り荷の下) adalah pelanggaran berat.",
-        remedialPrescription: "Aturan 荷揚げ (Niage): 1. Pasang barikade di bawah, 2. Gunakan 介錯ロープ, 3. Jangan sentuh beban sebelum mendarat stabil di lantai."
-      }
-    },
-    {
-      id: "kenchiku-q012",
-      section: "technical-vocabulary",
-      format: "single-choice",
-      promptJa: "建築現場で、壁や柱が垂直（まっすぐ立っているか）かどうかを確かめるために使う、糸の先に重りがついた道具は何ですか。",
-      promptEn: "In building construction, what is the tool called that has a weight attached to the end of a string to check if walls or pillars are plumb (vertical)?",
-      optionsJa: [
-        "下げ振り（さげふり）",
-        "巻き尺（スケール）",
-        "指矩（さしがね）",
-        "墨壺（すみつぼ）"
-      ],
-      correctOptionIndex: 0,
-      curriculumRef: {
-        textbook: "JAC Kensetsu Kenchiku Text",
-        chapter: "Chapter 1: Tools & Measurement",
-        pageOrUnit: "Unit 1.3 - Plumb Bob (Sagefuri) & Alignment"
+        curriculumRef: {
+          trackId: 'curriculum-ssw-kensetsu-kenchiku',
+          unitId: 'unit-curriculum-ssw-kensetsu-05',
+          unitNumber: 5,
+          unitTitleId: 'Pekerjaan di Ketinggian & Pencegahan Jatuh Perancah'
+        }
       },
-      explanation: {
-        justification: "A plumb bob (下げ振り - sagefuri) consists of a pointed metallic cone weight suspended by a thread, utilizing gravity to verify true verticality (垂直度 - suichokudo) of columns, pillars, and formwork walls.",
-        distractorAutopsy: {
-          "1": "Tape measure (巻き尺 / スケール) measures linear distances.",
-          "2": "Carpenter's steel square (指矩 - sashigane) checks right angles ($90^\\circ$) and layout cuts.",
-          "3": "Chalk line / ink pot (墨壺 - sumitsubo) snaps straight ink lines on concrete slabs."
+      {
+        id: 'SSW-KC-S01-Q012',
+        trackType: 'ssw',
+        sswSectorId: 'ssw-kensetsu-kenchiku',
+        mondaiNumber: 12,
+        mondaiType: 'ssw_technical_terminology',
+        instructionJp: '測定工具の名称として最も適切なものを1・2・3・4から一つ選びなさい。',
+        instructionId: 'Pilihlah alat bandul benang berbeban untuk memeriksa ketegakan vertikal tiang gedung.',
+        prompt: '建築現場で、壁や柱が 垂直（まっすぐ立っているか）かどうかを 確かめるために使う、糸の先に 重りがついた 道具は 何ですか。',
+        targetWord: '下げ振り',
+        options: [
+          '下げ振り（さげふり）',
+          '巻き尺（スケール）',
+          '指矩（さしがね）',
+          '墨壺（すみつぼ）'
+        ],
+        correctOptionIndex: 0,
+        explanation: {
+          justification: 'Bandul lot ketegakan (下げ振り - sagefuri) terdiri dari kerucut logam berbobot yang digantung benang untuk memanfaatkan gravitasi bumi guna memeriksa ketegakan vertikal (垂直度 - suichokudo) tiang, kolom, atau bekisting.',
+          distractorAutopsy: {
+            '1': '下げ振り（さげふり） adalah KUNCI BENAR (bandul lot penguji ketegakan vertikal).',
+            '2': '巻き尺 / スケール (meteran gulung) untuk mengukur jarak panjang garis.',
+            '3': '指矩 (sashigane) adalah penggaris siku L baja tukang kayu.',
+            '4': '墨壺 (sumitsubo) adalah wadah tinta penarik garis lurus di lantai.'
+          },
+          mnemonicSensei: 'Sage (Turun) + Furi (Berayun) = Bandul lot berayun vertikal lurus ke bumi! Memastikan tiang berdiri tegak lurus.',
+          l1InterferenceAlert: 'Di Indonesia sering disebut "unting-unting" atau "lot gantung". Di Jepang istilahnya adalah 下げ振り (sagefuri).',
+          remedialPrescription: {
+            unitId: 'unit-curriculum-ssw-kensetsu-06',
+            unitNumber: 6,
+            unitTitleId: 'Pekerjaan Besi Tulangan (Tekkin) & Bekisting (Katawaku)',
+            advice: 'Trio alat tukang: 下げ振り (sagefuri = unting-unting lot), 指矩 (sashigane = siku L), 墨壺 (sumitsubo = penarik garis tinta).'
+          },
+          safetyTip: 'Tunggu ayunan bandul benar-benar berhenti (tenang) sebelum membaca jarak milimeter ke acuan mistar.'
         },
-        senseiMnemonic: "'Sage' (turun) + 'Furi' (berayun) = Bandul lot berayun! Digantung dengan benang untuk mengecek ketegakan tiang.",
-        l1InterferenceAlert: "Di Indonesia sering disebut 'unting-unting' atau 'lot gantung'. Di Jepang istilahnya adalah 下げ振り (sagefuri).",
-        remedialPrescription: "Alat ukur tukang bangunan: 下げ振り (sagefuri = bandul lot ketegakan), 指矩 (sashigane = siku L), 墨壺 (sumitsubo = penarik garis tinta)."
-      }
-    },
-    {
-      id: "kenchiku-q013",
-      section: "safety-procedures",
-      format: "single-choice",
-      promptJa: "建築現場の床開口部（吹抜けや階段ホールなど）で、転落事故を防ぐために講じるべき対策として誤っているものはどれですか。",
-      promptEn: "Regarding floor openings (voids, stairwells) on a building site, which measure to prevent falling accidents is INCORRECT?",
-      optionsJa: [
-        "歩きやすいように、開口部に敷いてある合板のフタを断りなく外しておく",
-        "開口部の周囲に高さ85cm以上の堅固な手すりを設置する",
-        "開口部のフタには「開口部・墜落注意・動かすな」と明記して固定する",
-        "手すりの設置が困難な場所には安全ネットを水平に張る"
-      ],
-      correctOptionIndex: 0,
-      curriculumRef: {
-        textbook: "JAC Kensetsu Kenchiku Text",
-        chapter: "Chapter 2: Fall Prevention & Working at Heights",
-        pageOrUnit: "Unit 2.5 - Floor Opening Safeguards"
+        curriculumRef: {
+          trackId: 'curriculum-ssw-kensetsu-kenchiku',
+          unitId: 'unit-curriculum-ssw-kensetsu-06',
+          unitNumber: 6,
+          unitTitleId: 'Pekerjaan Besi Tulangan (Tekkin) & Bekisting (Katawaku)'
+        }
       },
-      explanation: {
-        justification: "Removing a floor opening cover without authorization, warning signs, or replacement barricades is a catastrophic safety violation that leads directly to fatal blind falls into voids.",
-        distractorAutopsy: {
-          "1": "Installing sturdy handrails of $\\ge 85\\text{ cm}$ height around voids is standard legal protection.",
-          "2": "Bolting covers down and labeling them with 'Opening - Fall Warning - Do Not Move' is proper safety compliance.",
-          "3": "Stretching horizontal safety debris nets beneath voids where handrails cannot fit is an approved safeguard."
+      {
+        id: 'SSW-KC-S01-Q013',
+        trackType: 'ssw',
+        sswSectorId: 'ssw-kensetsu-kenchiku',
+        mondaiNumber: 13,
+        mondaiType: 'ssw_k3_procedure',
+        instructionJp: '開口部の安全管理として「誤っているもの」を1・2・3・4から一つ選びなさい。',
+        instructionId: 'Pilihlah tindakan yang SALAH mengenai penanganan lubang bukaan lantai (kaikoubu).',
+        prompt: '建築現場の 床開口部（吹抜けや階段ホールなど）で、転落事故を 防ぐために講じるべき 対策として 誤っているものは どれですか。',
+        targetWord: '開口部',
+        options: [
+          '歩きやすいように、開口部に敷いてある合板のフタを断りなく外しておく',
+          '開口部の周囲に高さ85cm以上の堅固な手すりを設置する',
+          '開口部のフタには「開口部・墜落注意・動かすな」と明記して固定する',
+          '手すりの設置が困難な場所には安全ネットを水平に張る'
+        ],
+        correctOptionIndex: 0,
+        explanation: {
+          justification: 'Membuka penutup lubang lantai tanpa izin, tanpa peringatan, dan tanpa memasang pagar pengganti adalah pelanggaran mematikan yang menyebabkan orang lain terperosok jatuh bebas ke lantai dasar.',
+          distractorAutopsy: {
+            '1': 'Opsi 1 ADALAH TINDAKAN SALAH/BERBAHAYA: Membuka penutup lubang bukaan sesuka hati tanpa izin.',
+            '2': 'Memasang pagar pembatas setinggi >= 85 cm adalah kewajiban standar hukum.',
+            '3': 'Menuliskan "Bukaan Lantai - Awas Jatuh - Jangan Dipindah" pada penutup yang dibaut adalah prosedur benar.',
+            '4': 'Membentangkan jaring pengaman (safety net) di bawah bukaan adalah mitigasi yang disahkan.'
+          },
+          mnemonicSensei: 'Tutup lubang lantai (開口部のフタ) HARAM dibuka seenaknya! Sekali dilepas tanpa pagar, kawan bisa meluncur bebas ke dasar.',
+          l1InterferenceAlert: 'Di proyek darurat di Indonesia lubang sering cuma ditutup kardus lepas. Di Jepang, penutup wajib dari papan tebal dibaut dan dicat tulisan peringatan jelas.',
+          remedialPrescription: {
+            unitId: 'unit-curriculum-ssw-kensetsu-05',
+            unitNumber: 5,
+            unitTitleId: 'Pekerjaan di Ketinggian & Pencegahan Jatuh Perancah',
+            advice: 'Aturan 開口部: Pagar >= 85 cm, papan penutup dibaut dengan tulisan peringatan, pasang jaring net di bawahnya.'
+          },
+          safetyTip: 'Jika terpaksa membuka tutup lubang untuk menurunkan barang, tugaskan satu orang berdiri sebagai penjaga (監視人) selama lubang terbuka.'
         },
-        senseiMnemonic: "Tutup lubang lantai (開口部のフタ) haram dibuka seenaknya! Sekali dilepas tanpa pagar pembatas, orang lain bisa terperosok ke lantai dasar.",
-        l1InterferenceAlert: "Di beberapa proyek darurat di Indonesia, lubang lantai sering hanya ditutup kardus atau papan lepas tanpa tulisan peringatan. Di Jepang, penutup wajib dibaut dan dicat tulisan peringatan tebal.",
-        remedialPrescription: "Aturan 開口部 (kaikoubu = lubang bukaan): 1. Pagar 手すり $\\ge 85\\text{cm}$, 2. Papan penutup paten dengan tulisan '開口部・注意', 3. Jaring net pengaman."
-      }
-    },
-    {
-      id: "kenchiku-q014",
-      section: "on-site-dialogue",
-      format: "single-choice",
-      promptJa: "先輩「よし、この柱のアンカーボルトの位置、墨出し（すみだし）の線に合っているか確認してくれ！」後輩「（　　）！」",
-      promptEn: "Senior: 'Alright, check if this column's anchor bolt position aligns with the snapped layout line!' Junior: '(    )!'",
-      optionsJa: [
-        "はい、墨線のど真ん中にピッタリ合っています。位置ヨシ！",
-        "はい、だいたい近くにあるので問題ないと思います！",
-        "ボルトは隠れて見えませんが、大丈夫です！",
-        "墨線が消えていますが、勘で合わせました！"
-      ],
-      correctOptionIndex: 0,
-      curriculumRef: {
-        textbook: "JAC Kensetsu Kenchiku Text",
-        chapter: "Chapter 1: Tools & Measurement",
-        pageOrUnit: "Unit 1.2 - Layout Snapping (Sumidashi)"
+        curriculumRef: {
+          trackId: 'curriculum-ssw-kensetsu-kenchiku',
+          unitId: 'unit-curriculum-ssw-kensetsu-05',
+          unitNumber: 5,
+          unitTitleId: 'Pekerjaan di Ketinggian & Pencegahan Jatuh Perancah'
+        }
       },
-      explanation: {
-        justification: "In Japanese building construction, accuracy to the millimeter is demanded. Responses must confirm millimeter alignment to the layout line (墨線 - sumisen) reinforced by Pointing-and-Calling (指差し呼称: 『位置ヨシ！』).",
-        distractorAutopsy: {
-          "1": "Saying 'daitai' (roughly nearby) is unacceptable in structural column bolt placement.",
-          "2": "Confirming without visually inspecting hidden bolts violates basic verification duties.",
-          "3": "Guessing by intuition (勘 - kan) when markings are erased causes structural condemnation."
+      {
+        id: 'SSW-KC-S01-Q014',
+        trackType: 'ssw',
+        sswSectorId: 'ssw-kensetsu-kenchiku',
+        mondaiNumber: 14,
+        mondaiType: 'ssw_hou_ren_so_sbar',
+        instructionJp: '墨出し確認の会話として、最も適切な返答を一つ選びなさい。',
+        instructionId: 'Pilihlah jawaban profesional saat mengonfirmasi posisi baut angkur pada garis tanda denah.',
+        prompt: '先輩「よし、この柱のアンカーボルトの位置、墨出し（すみだし）の線に 合っているか 確認してくれ！」後輩「（　　）！」',
+        targetWord: '墨出し',
+        options: [
+          'はい、墨線のど真ん中にピッタリ合っています。位置ヨシ！',
+          'はい、だいたい近くにあるので問題ないと思います！',
+          'ボルトは隠れて見えませんが、大丈夫です！',
+          '墨線が消えていますが、勘で合わせました！'
+        ],
+        correctOptionIndex: 0,
+        explanation: {
+          justification: 'Konstruksi Jepang menuntut akurasi milimeter. Konfirmasi harus memastikan posisi baut tepat di garis acuan tinta (墨線 - sumisen) disertai seruan 指差し呼称: 『位置ヨシ！』 (Posisi OK!).',
+          distractorAutopsy: {
+            '1': 'はい、墨線のど真ん中に合っています。位置ヨシ！ adalah KUNCI BENAR (akurat milimeter & yubisashi koshou).',
+            '2': 'Menjawab "daitai" (kira-kira dekat) tidak dapat diterima dalam pemasangan tiang struktur.',
+            '3': 'Mengonfirmasi tanpa melihat langsung baut melanggar prinsip verifikasi faktual.',
+            '4': 'Menebak berdasarkan intuisi (勘) saat garis hilang berakibat fatal pada pembongkaran struktur.'
+          },
+          mnemonicSensei: 'Sumidashi = Garis Tinta Suci! Jawaban profesional Jepang: Pas di garis tinta, Ichi Yoshi! (Bukan "kira-kira dekat").',
+          l1InterferenceAlert: 'Hindari kata "kira-kira" (だいたい / たぶん) saat melapor ke Shokuchou. Konstruksi Jepang menuntut akurasi toleransi milimeter.',
+          remedialPrescription: {
+            unitId: 'unit-curriculum-ssw-kensetsu-06',
+            unitNumber: 6,
+            unitTitleId: 'Pekerjaan Besi Tulangan (Tekkin) & Bekisting (Katawaku)',
+            advice: 'Istilah marking: 墨出し (sumidashi = membuat garis tanda denah), 墨線 (sumisen = garis tinta), 逃げ墨 (nigesumi = garis offset pembantu).'
+          },
+          safetyTip: 'Bila garis tinta terhapus air hujan, laporkan ke senior untuk ditarik ulang dengan mistar ukur sebelum mengebor.'
         },
-        senseiMnemonic: "Sumidashi = Garis tinta suci! Jawaban profesional Jepang: 'Pas di tengah garis tinta, Ichi Yoshi!' (Bukan 'kira-kira dekat').",
-        l1InterferenceAlert: "Hindari kata 'kira-kira' (だいたい / たぶん) saat melapor ke Shokuchou (mandor). Konstruksi Jepang berbasis toleransi millimeter (ミリ単位).",
-        remedialPrescription: "Istilah marking: 墨出し (sumidashi = membuat garis acuan denah), 墨線 (sumisen = garis tinta), 逃げ墨 (nigesumi = garis offset acuan pembantu)."
-      }
-    },
-    {
-      id: "kenchiku-q015",
-      section: "safety-procedures",
-      format: "single-choice",
-      promptJa: "夏場の建設現場において、熱中症（ねっちゅうしょう）を予防するための正しい行動はどれですか。",
-      promptEn: "During summer on a building site, what is the correct action to prevent heatstroke?",
-      optionsJa: [
-        "喉（のど）が渇く前に、こまめに水分と適度な塩分を補給し、休憩所を利用する",
-        "我慢できる限界まで水を飲まずに作業を続け、終業後にまとめて飲む",
-        "水分だけを大量にガブ飲みして、塩分やミネラルは一切摂らない",
-        "めまいや頭痛がしても、職長に迷惑がかかるので隠して作業を続ける"
-      ],
-      correctOptionIndex: 0,
-      curriculumRef: {
-        textbook: "JAC Kensetsu Kenchiku Text",
-        chapter: "Chapter 6: Hot Works & Fire Prevention",
-        pageOrUnit: "Unit 6.4 - Heatstroke Prevention & WBGT"
+        curriculumRef: {
+          trackId: 'curriculum-ssw-kensetsu-kenchiku',
+          unitId: 'unit-curriculum-ssw-kensetsu-06',
+          unitNumber: 6,
+          unitTitleId: 'Pekerjaan Besi Tulangan (Tekkin) & Bekisting (Katawaku)'
+        }
       },
-      explanation: {
-        justification: "To combat heatstroke in high humidity, workers must replenish both water and balanced electrolytes/salt periodically BEFORE feeling thirst. Concealing dizzy symptoms leads to collapse from scaffolding.",
-        distractorAutopsy: {
-          "1": "Waiting until the end of the shift causes severe hypovolemic heat exhaustion and organ failure.",
-          "2": "Drinking excessive pure water without salt depletes blood sodium, triggering severe heat cramps (hyponatremia).",
-          "3": "Hiding symptoms of dizziness or nausea on high-elevation scaffolds risks fatal falls."
+      {
+        id: 'SSW-KC-S01-Q015',
+        trackType: 'ssw',
+        sswSectorId: 'ssw-kensetsu-kenchiku',
+        mondaiNumber: 15,
+        mondaiType: 'ssw_k3_procedure',
+        instructionJp: '熱中症予防の行動として最も適切なものを1・2・3・4から一つ選びなさい。',
+        instructionId: 'Pilihlah tindakan pencegahan sengatan panas (heatstroke) yang benar saat musim panas di lapangan gedung.',
+        prompt: '夏場の建設現場において、熱中症（ねっちゅうしょう）を 予防するための 正しい行動は どれですか。',
+        targetWord: '熱中症',
+        options: [
+          '喉（のど）が渇く前に、こまめに水分と適度な塩分を補給し、休憩所を利用する',
+          '我慢できる限界まで水を飲まずに作業を続け、終業後にまとめて飲む',
+          '水分だけを大量にガブ飲みして、塩分やミネラルは一切摂らない',
+          'めまいや頭痛がしても、職長に迷惑がかかるので隠して作業を続ける'
+        ],
+        correctOptionIndex: 0,
+        explanation: {
+          justification: 'Di musim panas dengan kelembapan tinggi, pekerja wajib minum air dan asupan garam/elektrolit secara teratur SEBELUM merasa haus. Menyembunyikan rasa pusing di atas perancah bisa berakibat pingsan dan jatuh fatal.',
+          distractorAutopsy: {
+            '1': 'Opsi 1 BENAR: Minum air & garam berkala sebelum haus, serta istirahat di ruang teduh.',
+            '2': 'Menahan haus sampai jam kerja selesai memicu syok dehidrasi parah dan gagal ginjal.',
+            '3': 'Minum air murni berlebihan tanpa garam mengencerkan natrium darah dan memicu kram otot parah (hiponatremia).',
+            '4': 'Menyembunyikan gejala pusing atau mual di atas scaffolding sangat berbahaya.'
+          },
+          mnemonicSensei: 'Aturan Musim Panas: Minum SEBELUM haus + jangan lupa permen garam (塩飴 - shio-ame) / tablet garam!',
+          l1InterferenceAlert: 'Banyak pekerja Indonesia merasa "saya dari negara tropis pasti tahan panas". Musim panas Jepang (37°C dengan kelembapan 85%) sering lebih mematikan karena panas terperangkap di dalam cor beton dan jaring perancah.',
+          remedialPrescription: {
+            unitId: 'unit-curriculum-ssw-kensetsu-01',
+            unitNumber: 1,
+            unitTitleId: 'Dasar Keselamatan Alat Berat & Penggalian Lapangan',
+            advice: '3 Benteng panas: 水分・塩分補給 (minum air + garam), 空調服 (jaket blower kipas), cek indeks WBGT.'
+          },
+          safetyTip: 'Jika merasa keringat mendadak berhenti mengalir disertai kulit memerah dan panas, itu tanda bahaya heatstroke stadium parah: segera minta pertolongan.'
         },
-        senseiMnemonic: "Aturan musim panas Jepang: Minum SEBELUM haus + jangan lupa permen garam (塩飴 - shio-ame) / tablet garam!",
-        l1InterferenceAlert: "Banyak pekerja asal Indonesia mengira 'saya dari negara tropis pasti kuat panas'. Musim panas Jepang (36-38°C dengan kelembapan 85%) sering lebih mematikan karena panas terperangkap di dalam beton/scaffolding tertutup sheet.",
-        remedialPrescription: "Ketahui 3 benteng panas: 1. 水分・塩分補給 (suifen/enbun hokyuu), 2. 空調服 (kuuchoufuku = jaket berkipas blower), 3. Cek WBGT (indeks suhu basah bola)."
+        curriculumRef: {
+          trackId: 'curriculum-ssw-kensetsu-kenchiku',
+          unitId: 'unit-curriculum-ssw-kensetsu-01',
+          unitNumber: 1,
+          unitTitleId: 'Dasar Keselamatan Alat Berat & Penggalian Lapangan'
+        }
       }
-    }
-  ]
-};
+    ]
+  };
+}
 
-module.exports = sswKenchikuSet01;
+module.exports = { getSSWKenchikuSet };
