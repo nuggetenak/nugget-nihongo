@@ -112,7 +112,7 @@ export const ResetConfirmationModal: React.FC<ResetConfirmationModalProps> = ({
               <h2 id="reset-modal-title" className="text-base sm:text-lg font-black text-red-400">
                 Konfirmasi Reset Data
               </h2>
-              <p className="text-[11px] text-appText-muted">Tindakan ini tidak dapat dibatalkan</p>
+              <p className="text-xs text-appText-muted">Tindakan ini tidak dapat dibatalkan</p>
             </div>
           </div>
           <button
@@ -147,13 +147,13 @@ export const ResetConfirmationModal: React.FC<ResetConfirmationModalProps> = ({
               onChange={(e) => setConfirmText(e.target.value)}
               placeholder="Ketik RESET di sini..."
               autoComplete="off"
-              className="w-full px-3.5 py-2.5 rounded-xl bg-surface-2 border border-theme focus:border-red-500 text-appText-bright text-xs placeholder:text-appText-muted/50 focus:outline-none transition-colors font-mono"
+              className="w-full px-3.5 py-2.5 rounded-xl bg-surface-2 border border-theme focus:border-red-500 text-appText-bright text-xs placeholder:text-appText-muted focus:outline-none transition-colors font-mono"
             />
           </div>
 
           <div className="relative flex py-1 items-center">
             <div className="flex-grow border-t border-accent/15" />
-            <span className="flex-shrink mx-3 text-[11px] text-appText-muted">atau tahan tombol 3 detik</span>
+            <span className="flex-shrink mx-3 text-xs text-appText-muted">atau tahan tombol 3 detik</span>
             <div className="flex-grow border-t border-accent/15" />
           </div>
 

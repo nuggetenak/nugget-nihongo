@@ -426,7 +426,7 @@ export const AboutPage: React.FC = () => {
             <p className="text-xs text-appText leading-relaxed">
               Materi disusun bertingkat mengikuti kapasitas memori: mulai dari tingkat kosakata dasar, frasa penanda topik (は), hingga pergeseran urutan kata dan anak kalimat bertingkat tanpa membuatmu bingung.
             </p>
-            <div className="text-[11px] text-appText-muted border-t border-accent/10 pt-2 flex items-center gap-1.5">
+            <div className="text-xs text-appText-muted border-t border-accent/10 pt-2 flex items-center gap-1.5">
               <span>💡</span>
               <span>Fondasi disusun kuat dari kalimat sederhana sebelum beralih ke struktur kompleks.</span>
             </div>
@@ -441,7 +441,7 @@ export const AboutPage: React.FC = () => {
             <p className="text-xs text-appText leading-relaxed">
               Mengakomodasi kebiasaan pembelajar Indonesia: mengatasi jebakan perbedaan susunan kata, posisi kata "adalah", serta modul penyesuaian logat daerah (Jawa, Sunda, Batak/Timur).
             </p>
-            <div className="text-[11px] text-appText-muted border-t border-accent/10 pt-2 flex items-center gap-1.5">
+            <div className="text-xs text-appText-muted border-t border-accent/10 pt-2 flex items-center gap-1.5">
               <span>💡</span>
               <span>Membantu melatih refleks bahasa Jepang alami tanpa terikat kata "adalah".</span>
             </div>
@@ -456,7 +456,7 @@ export const AboutPage: React.FC = () => {
             <p className="text-xs text-appText leading-relaxed">
               Menghindari menghafal daftar kata yang membingungkan secara serentak. Kosakata disajikan dalam situasi nyata sehari-hari (misal: belanja di minimarket, situasi kerja, makan di restoran).
             </p>
-            <div className="text-[11px] text-appText-muted border-t border-accent/10 pt-2 flex items-center gap-1.5">
+            <div className="text-xs text-appText-muted border-t border-accent/10 pt-2 flex items-center gap-1.5">
               <span>💡</span>
               <span>Kosakata dipelajari per situasi nyata, bukan sekadar hafalan kamus acak.</span>
             </div>
@@ -471,7 +471,7 @@ export const AboutPage: React.FC = () => {
             <p className="text-xs text-appText leading-relaxed">
               Menggunakan sistem jadwal pengulangan modern yang menyesuaikan kecepatan belajar pribadi, memastikan materi diingat jangka panjang dan menghemat hingga 40% waktu ulasan harian.
             </p>
-            <div className="text-[11px] text-appText-muted border-t border-accent/10 pt-2 flex items-center gap-1.5">
+            <div className="text-xs text-appText-muted border-t border-accent/10 pt-2 flex items-center gap-1.5">
               <span>💡</span>
               <span>Mengulang materi tepat sebelum kamu lupa, menghemat waktu belajar.</span>
             </div>
@@ -487,7 +487,7 @@ export const AboutPage: React.FC = () => {
           <p className="text-appText leading-relaxed">
             Setiap pelajaran dipandu oleh target capaian Can-Do yang jelas: bukan sekadar menghafal rumus, melainkan kemampuan menyelesaikan misi nyata di Jepang (registrasi balai kota, memesan makanan, komunikasi empatik di tempat kerja).
           </p>
-          <div className="text-[11px] font-mono text-appText-muted pt-1">
+          <div className="text-xs font-mono text-appText-muted pt-1">
             The Japan Foundation (2017). <em>JF Standard for Japanese-Language Education</em> & CEFR-J Framework.
           </div>
         </div>
@@ -514,7 +514,7 @@ export const AboutPage: React.FC = () => {
 
           {isBibliographyOpen && (
             <div className="p-4 sm:p-5 border-t border-accent/15 space-y-3 text-xs text-appText-muted leading-relaxed animate-in fade-in duration-200">
-              <ul className="list-disc list-inside space-y-2 text-[11px] font-mono">
+              <ul className="list-disc list-inside space-y-2 text-xs font-mono">
                 <li>
                   <strong>Pienemann, M. (1998).</strong> <em>Language Processing and Second Language Development: Processability Theory</em>. John Benjamins Publishing Company.
                 </li>
@@ -556,18 +556,18 @@ export const AboutPage: React.FC = () => {
             aria-label="Buka Catatan Rilis Lengkap Versi Aplikasi"
             title="Klik untuk membuka Catatan Rilis Lengkap"
           >
-            <div className="text-appText-muted text-[11px] flex items-center justify-between">
+            <div className="text-appText-muted text-xs flex items-center justify-between">
               <span>Versi Rilis</span>
               <History className="w-3 h-3 text-accent group-hover:rotate-12 transition-transform" />
             </div>
             <div className="font-bold text-accent font-mono mt-0.5 group-hover:underline">{APP_VERSION}</div>
           </button>
           <div className="p-3 rounded-xl bg-surface-2 border border-accent/10">
-            <div className="text-appText-muted text-[11px]">Framework</div>
+            <div className="text-appText-muted text-xs">Framework</div>
             <div className="font-bold text-appText-bright mt-0.5">React + Vite + TS</div>
           </div>
           <div className="p-3 rounded-xl bg-surface-2 border border-accent/10">
-            <div className="text-appText-muted text-[11px]">Gaya Desain</div>
+            <div className="text-appText-muted text-xs">Gaya Desain</div>
             <div className="font-bold text-appText-bright mt-0.5">Tailwind CSS (Warm Amber)</div>
           </div>
           <button
@@ -575,7 +575,7 @@ export const AboutPage: React.FC = () => {
             className="p-3 rounded-xl bg-surface-2 border border-accent/20 hover:border-accent text-left transition-all group"
             title="Buka Lisensi & Hak Cipta Korpus Terbuka"
           >
-            <div className="text-appText-muted text-[11px] flex items-center justify-between">
+            <div className="text-appText-muted text-xs flex items-center justify-between">
               <span>Lisensi & Hak Cipta</span>
               <ExternalLink className="w-3 h-3 text-accent group-hover:translate-x-0.5 transition-transform" />
             </div>

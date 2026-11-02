@@ -77,7 +77,7 @@ export const BadgesModal: React.FC<BadgesModalProps> = ({ isOpen, onClose }) => 
                 <div className="flex items-center justify-between">
                   <div className="font-bold text-sm text-appText-bright">{b.name}</div>
                   {b.earned ? (
-                    <span className="text-[10px] font-bold text-green-400 bg-green-500/10 px-1.5 py-0.5 rounded-full border border-green-500/25">
+                    <span className="text-xs font-bold text-green-400 bg-green-500/10 px-1.5 py-0.5 rounded-full border border-green-500/25">
                       Terbuka ✓
                     </span>
                   ) : (
@@ -88,7 +88,7 @@ export const BadgesModal: React.FC<BadgesModalProps> = ({ isOpen, onClose }) => 
                 <div className="text-xs text-appText-muted leading-tight">{b.desc}</div>
 
                 {b.earned && b.earnedAt && (
-                  <div className="text-[10px] text-accent/80 pt-1 font-mono">
+                  <div className="text-xs text-accent/80 pt-1 font-mono">
                     Didapat: {b.earnedAt.slice(0, 10)}
                   </div>
                 )}

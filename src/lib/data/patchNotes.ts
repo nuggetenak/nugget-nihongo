@@ -18,6 +18,64 @@ export interface PatchNote {
 
 export const PATCH_NOTES_HISTORY: PatchNote[] = [
   {
+    version: 'v21.2.0',
+    releaseName: 'The 3 Clean Doors LMS Consolidation, 14 Golden Sets Modular CBT Engine & Universal Button Contrast Audit',
+    date: '2 November 2026',
+    type: 'minor',
+    friendlySummary: 'Pembaruan monumental Nugget Nihongo v21.2.0 mengonsolidasikan seluruh pengalaman evaluasi dan latihan ke dalam The 3 Clean Doors (Pusat JLPT N5..N1, Pusat Tokutei Ginou SSW/JFT, dan Latihan Cepat & Review Dinamis). Menghidupkan 14 Golden Sets otentik (210 soal terkurasi) ke dalam Interactive CBT Runner dengan dukungan Star Scramble susun kalimat (Mondai 2), Dokkai split reading bebas lelah scroll, Choukai audio limiter 2x putar, serta lembar pembahasan 5 lapis terlengkap dengan 1-Tap save ke FSRS. Dilengkapi audit button contrast menyeluruh yang menuntaskan 420 micro-fonts dan menjamin keterbacaan sempurna di tema terang dan gelap.',
+    highlights: [
+      'The 3 Clean Doors LMS Consolidation: Menghilangkan sindrom arcade 16 mini-games, menggantikannya dengan 3 pintu terarah: Pusat Ujian JLPT (50 Set), Pusat Tokutei Ginou SSW & JFT (39 Set), dan Latihan Cepat/FSRS/CAT.',
+      '14 Golden Sets CBT Interactive Runner: Peluncuran layar CBT layar penuh bebas distraksi dengan 15:00 countdown timer, laci navigasi 15 nomor, dan crash recovery cerdas via IndexedDB.',
+      'Specialized Interaction Widgets: Star Scramble (★ Susun Kalimat) berteknologi tap-to-slot/return, Dokkai Sheet responsif split-screen di desktop & expandable di ponsel, serta Choukai waveform player dengan kuota resmi 2x putar.',
+      'Pembahasan Pedagogis 5 Lapis: Justifikasi aturan gramatikal, bedah distraktor opsi salah, mnemonik Sensei ramah Indonesia, peringatan interferensi L1, dan preskripsi remedial langsung ke modul MateriHub serta 1-ketuk simpan ke FSRS.',
+      'Universal Button Contrast & Anti-Overflow Audit: Pembersihan 420 micro-fonts (text-[9px] s/d [11px]) ke standar text-xs (12px), penertiban kontras warna tombol di mode terang/gelap, dan eliminasi clipping teks tombol.',
+    ],
+    details: [
+      {
+        category: 'Konsolidasi LMS & The 3 Clean Doors',
+        items: [
+          'Eradikasi sindrom arcade: menyatukan seluruh latihan evaluasi ke dalam Pintu 1 (JLPT N5..N1), Pintu 2 (SSW & JFT-Basic), dan Pintu 3 (Latihan Cepat & FSRS).',
+          'Selector jenjang level dan sektor vokasional interaktif dengan indikator skor terbaik, bintang ⭐⭐⭐, dan badge Mastered.',
+          'Pre-Test Scaffolding Modal: fleksibilitas memilih Mode Simulasi Resmi (Strict Exam 15 Menit) atau Mode Latihan Terbimbing (Guided Practice ramah ADHD).',
+        ],
+      },
+      {
+        category: 'Interactive CBT Engine & 14 Golden Sets (210 Soal)',
+        items: [
+          'Engine runner modular CbtRunnerScreen dengan shell layar penuh bebas distraksi (menyembunyikan header dan bottom nav global).',
+          'Countdown timer resmi 15:00 menit dengan indikator visual dinamis (kuning di 3 menit, merah berkedip di 1 menit).',
+          'Laci nomor review 15 soal interaktif dengan penanda status Terjawab (hijau), Ragu-ragu (kuning), dan Belum Terjawab.',
+          'Pacing ADHD: tirai buram cerdas saat dijeda dan auto-recovery dari IndexedDB active_exercise_session jika tab browser tertutup.',
+        ],
+      },
+      {
+        category: 'Spesialisasi Widget Soal Interaktif',
+        items: [
+          'StarScrambleWidget (Mondai 2): interaksi tap-to-slot dan tap-to-return tanpa drag-and-drop rapuh di ponsel, otomatis memetakan opsi A/B/C/D pada slot bintang.',
+          'DokkaiSheet: tata letak split-view pada layar lebar dan kartu collapsible dengan pratinjau ringkas pada layar sempit untuk mencegah kelelahan scrolling.',
+          'ChoukaiPlayer: pembatas pemutaran resmi 2x putar pada mode simulasi ketat, audio visualizer waveform bergelombang, dan penyembunyian transkrip naskah hingga tes selesai.',
+        ],
+      },
+      {
+        category: 'Lembar Pembahasan 5 Lapis & Integrasi FSRS',
+        items: [
+          'Penyajian komprehensif Lapis 1 (Alasan Kunci Benar), Lapis 2 (Bedah Distraktor A, B, C, D), Lapis 3 (Mnemonik Sensei), Lapis 4 (Peringatan Interferensi L1 Indonesia), dan Lapis 5 (Preskripsi Remedial).',
+          'Peringatan keselamatan kerja gemba K3 resmi kementerian Jepang pada set vokasional SSW.',
+          'Tombol 1-ketuk simpan materi ke antrean review harian Spaced Repetition FSRS v4.5.',
+          'Tautan langsung aksi remedial Pelajari Modul Ini yang langsung membuka unit kurikulum terkait di MateriHub.',
+        ],
+      },
+      {
+        category: 'Universal Button Contrast & Anti-Overflow Audit',
+        items: [
+          'Peningkatan 420 micro-fonts (text-[9px], text-[10px], text-[11px]) di seluruh kode sumber menjadi minimum text-xs (12px) demi standar aksesibilitas WCAG AAA.',
+          'Eliminasi teks stone-200/stone-300 yang pudar di mode terang, menggantikannya dengan token semantik text-appText-bright dan text-appText-muted.',
+          'Pembersihan clipping teks tombol pada header track picker dan kebun review.',
+        ],
+      },
+    ],
+  },
+  {
     version: 'v21.1.0',
     releaseName: '5-Pass UI/UX Overhaul: Calm Executive Shell, Learner Identity Rapor, Home & Dojo Progressive Disclosure, and Streamlined Arena Kuis',
     date: '2 November 2026',
@@ -52,7 +110,7 @@ export const PATCH_NOTES_HISTORY: PatchNote[] = [
         category: 'Pass 3 — Beranda Top-to-Bottom De-Cluttering & Anti-Microfont',
         items: [
           'Cockpit beranda terstruktur dengan primary CTA minimum 48px berbalut shadow-glow dan feedback taktil active:scale-95.',
-          'Pembersihan menyeluruh seluruh micro-font (text-[8px] hingga text-[11px]) digantikan minimum text-xs (12px).',
+          'Pembersihan menyeluruh seluruh micro-font (text-[8px] hingga text-xs) digantikan minimum text-xs (12px).',
           'Eliminasi pemotongan teks agresif (line-clamp-2) pada kearifan peribahasa Kotowaza harian dan kartu Kotoba.',
           'Optimalisasi kalender aktivitas heatmap 49 hari tanpa duplikasi kartu berlebih.',
         ],

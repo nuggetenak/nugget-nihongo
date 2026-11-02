@@ -90,7 +90,7 @@ export const HVPTPlayer: React.FC<HVPTPlayerProps> = ({
         {pitchPattern.map((p, idx) => (
           <div key={idx} className="flex flex-col items-center">
             <span
-              className={`w-6 h-6 rounded-md flex items-center justify-center text-[10px] font-mono font-bold transition-all shadow-xs ${
+              className={`w-6 h-6 rounded-md flex items-center justify-center text-xs font-mono font-bold transition-all shadow-xs ${
                 p === 'H'
                   ? 'bg-red-500/20 text-red-400 border border-red-500/35 transform -translate-y-1'
                   : 'bg-blue-500/20 text-blue-400 border border-blue-500/35'
@@ -98,10 +98,10 @@ export const HVPTPlayer: React.FC<HVPTPlayerProps> = ({
             >
               {p}
             </span>
-            <span className="text-[9px] text-appText-muted mt-0.5">M{idx + 1}</span>
+            <span className="text-xs text-appText-muted mt-0.5">M{idx + 1}</span>
           </div>
         ))}
-        <span className="text-[10px] font-semibold text-accent/80 uppercase ml-1 px-1.5 py-0.5 rounded bg-surface-3 border border-accent/10">
+        <span className="text-xs font-semibold text-accent/80 uppercase ml-1 px-1.5 py-0.5 rounded bg-surface-3 border border-accent/10">
           {accentType}
         </span>
       </div>
@@ -120,13 +120,13 @@ export const HVPTPlayer: React.FC<HVPTPlayerProps> = ({
             <h3 className="text-xs sm:text-sm font-extrabold text-appText-bright">
               Latihan Akustik HVPT & Kontur Pitch Accent
             </h3>
-            <p className="text-[10px] text-appText-muted">
+            <p className="text-xs text-appText-muted">
               Variabilitas 4 penutur asli untuk pembentukan kategori fonemik kokoh
             </p>
           </div>
         </div>
 
-        <span className="self-start sm:self-center text-[10px] font-bold px-2.5 py-1 rounded-full bg-surface-2 text-accent border border-accent/20 uppercase tracking-wider">
+        <span className="self-start sm:self-center text-xs font-bold px-2.5 py-1 rounded-full bg-surface-2 text-accent border border-accent/20 uppercase tracking-wider">
           {pair.phonological_contrast_domain.replace(/_/g, ' ')}
         </span>
       </div>
@@ -195,7 +195,7 @@ export const HVPTPlayer: React.FC<HVPTPlayerProps> = ({
           {/* Pitch Accent Step Graph */}
           {isRevealed && (
             <div className="p-2.5 rounded-xl bg-surface-3/60 border border-accent/15 space-y-1 animate-in fade-in duration-200">
-              <span className="text-[10px] font-bold text-appText-muted block">Kontur Pitch Accent:</span>
+              <span className="text-xs font-bold text-appText-muted block">Kontur Pitch Accent:</span>
               {renderPitchContour(pair.word_a.pitch_pattern, pair.word_a.accent_type)}
             </div>
           )}
@@ -245,7 +245,7 @@ export const HVPTPlayer: React.FC<HVPTPlayerProps> = ({
           {/* Pitch Accent Step Graph */}
           {isRevealed && (
             <div className="p-2.5 rounded-xl bg-surface-3/60 border border-accent/15 space-y-1 animate-in fade-in duration-200">
-              <span className="text-[10px] font-bold text-appText-muted block">Kontur Pitch Accent:</span>
+              <span className="text-xs font-bold text-appText-muted block">Kontur Pitch Accent:</span>
               {renderPitchContour(pair.word_b.pitch_pattern, pair.word_b.accent_type)}
             </div>
           )}

@@ -410,7 +410,7 @@ export const CurriculumTrackBrowser: React.FC<CurriculumTrackBrowserProps> = ({
                 </h2>
                 <ChevronDown className="w-3.5 h-3.5 text-accent shrink-0" />
               </div>
-              <div className="text-[10px] text-appText-muted truncate">
+              <div className="text-xs text-appText-muted truncate">
                 {trackData?.units?.length || 0} Unit · {totalLessons} Pelajaran
               </div>
             </div>
@@ -421,7 +421,7 @@ export const CurriculumTrackBrowser: React.FC<CurriculumTrackBrowserProps> = ({
             <button
               type="button"
               onClick={() => setIsSubstratumDropdownOpen(true)}
-              className="px-2.5 py-1.5 rounded-xl bg-surface-3 hover:bg-surface border border-accent/20 text-[11px] font-bold text-appText-bright flex items-center gap-1 active:scale-95"
+              className="px-2.5 py-1.5 rounded-xl bg-surface-3 hover:bg-surface border border-accent/20 text-xs font-bold text-appText-bright flex items-center gap-1 active:scale-95"
               aria-label="Pilih Penyesuaian Bahasa Daerah"
             >
               <span>🗣️ {activeSubstratumMeta.label.split(' ')[0]}</span>
@@ -432,7 +432,7 @@ export const CurriculumTrackBrowser: React.FC<CurriculumTrackBrowserProps> = ({
 
         {/* Progress summary & bar */}
         <div className="space-y-1 pt-0.5">
-          <div className="flex items-center justify-between text-[10px] text-appText-muted font-medium tabular-nums">
+          <div className="flex items-center justify-between text-xs text-appText-muted font-medium tabular-nums">
             <span>Kesiapan Jalur</span>
             <span>
               <strong className="text-accent">{progressPercent}%</strong> ({completedLessonsCount}/{totalLessons} Pelajaran)
@@ -540,7 +540,7 @@ export const CurriculumTrackBrowser: React.FC<CurriculumTrackBrowserProps> = ({
                   <span className="text-sm sm:text-base">{trk.icon}</span>
                   <div className="text-left">
                     <div className="leading-tight text-xs font-bold">{trk.title}</div>
-                    <div className="text-[10px] opacity-80 font-normal tabular-nums hidden sm:block">
+                    <div className="text-xs opacity-80 font-normal tabular-nums hidden sm:block">
                       {trk.units} · {completedCount > 0 ? `${completedCount} selesai` : trk.grammarCount}
                     </div>
                   </div>
@@ -605,7 +605,7 @@ export const CurriculumTrackBrowser: React.FC<CurriculumTrackBrowserProps> = ({
                         <div className="leading-tight text-xs font-bold flex items-center gap-1.5">
                           <span>{trk.title}</span>
                           <span
-                            className={`px-1.5 py-0.2 rounded text-[9px] font-mono border ${
+                            className={`px-1.5 py-0.2 rounded text-xs font-mono border ${
                               isSelected
                                 ? 'bg-stone-950/20 text-stone-950 border-stone-950/30'
                                 : 'bg-surface-3 text-accent border-accent/20'
@@ -614,7 +614,7 @@ export const CurriculumTrackBrowser: React.FC<CurriculumTrackBrowserProps> = ({
                             {trk.ministry}
                           </span>
                         </div>
-                        <div className="text-[10px] opacity-80 font-normal tabular-nums hidden sm:block">
+                        <div className="text-xs opacity-80 font-normal tabular-nums hidden sm:block">
                           {trk.status === 'coming_soon' ? '🔒 Segera Hadir' : trk.units} {completedCount > 0 ? `· ${completedCount} selesai` : ''}
                         </div>
                       </div>
@@ -644,7 +644,7 @@ export const CurriculumTrackBrowser: React.FC<CurriculumTrackBrowserProps> = ({
                   <span className="text-sm sm:text-base">{trk.icon}</span>
                   <div className="text-left">
                     <div className="leading-tight text-xs font-bold">{trk.title}</div>
-                    <div className="text-[10px] opacity-80 font-normal tabular-nums hidden sm:block">
+                    <div className="text-xs opacity-80 font-normal tabular-nums hidden sm:block">
                       {trk.level} · {trk.units} {completedCount > 0 ? `(${completedCount} selesai)` : ''}
                     </div>
                   </div>
@@ -661,16 +661,16 @@ export const CurriculumTrackBrowser: React.FC<CurriculumTrackBrowserProps> = ({
         <div className="flex flex-col md:flex-row md:items-center justify-between gap-3 sm:gap-4">
           <div className="space-y-1 sm:space-y-1.5 max-w-2xl min-w-0">
             <div className="flex flex-wrap items-center gap-1.5 sm:gap-2">
-              <span className="inline-flex items-center gap-1 px-2 sm:px-2.5 py-0.5 rounded-full bg-amber-500/15 border border-amber-500/30 text-accent-hot text-[10px] sm:text-[11px] font-extrabold uppercase tracking-wide">
+              <span className="inline-flex items-center gap-1 px-2 sm:px-2.5 py-0.5 rounded-full bg-amber-500/15 border border-amber-500/30 text-accent-hot text-xs sm:text-xs font-extrabold uppercase tracking-wide">
                 <Sparkles className="w-3 h-3" />
                 {trackCategory === 'jlpt' ? 'Kurikulum Orisinal Nugget Nihongo' : 'Standar Kompetensi Kerja Jepang (SSW)'}
               </span>
               {activeSswMeta && (
-                <span className="px-2 py-0.5 rounded-md bg-surface-3 text-accent text-[10px] font-mono border border-accent/20">
+                <span className="px-2 py-0.5 rounded-md bg-surface-3 text-accent text-xs font-mono border border-accent/20">
                   Standar Resmi: {activeSswMeta.ministry} ({activeSswMeta.ministryKanji})
                 </span>
               )}
-              <span className="px-1.5 sm:px-2 py-0.5 rounded-md bg-surface-3 text-appText-muted text-[10px] font-mono border border-accent/15 tabular-nums">
+              <span className="px-1.5 sm:px-2 py-0.5 rounded-md bg-surface-3 text-appText-muted text-xs font-mono border border-accent/15 tabular-nums">
                 {trackData?.units?.length || 0} Unit · {totalLessons} Pelajaran
               </span>
             </div>
@@ -696,11 +696,11 @@ export const CurriculumTrackBrowser: React.FC<CurriculumTrackBrowserProps> = ({
                 >
                   <Award className="w-4 h-4 text-stone-950 shrink-0" />
                   <span>Simulasi Ujian Prometric CBT</span>
-                  <span className="px-1.5 py-0.2 rounded-full bg-stone-950 text-amber-400 font-extrabold text-[9px] uppercase tracking-wider">
+                  <span className="px-1.5 py-0.2 rounded-full bg-stone-950 text-amber-400 font-extrabold text-xs uppercase tracking-wider">
                     Resmi
                   </span>
                 </button>
-                <span className="text-[11px] text-appText-muted">
+                <span className="text-xs text-appText-muted">
                   Dual-pass scoring berstandar {activeSswMeta.ministry} ({activeSswMeta.ministryKanji})
                 </span>
               </div>
@@ -717,11 +717,11 @@ export const CurriculumTrackBrowser: React.FC<CurriculumTrackBrowserProps> = ({
                 >
                   <Award className="w-4 h-4 text-stone-950 shrink-0" />
                   <span>Simulasi Ujian JFT-Basic CBT (60 Mnt)</span>
-                  <span className="px-1.5 py-0.2 rounded-full bg-stone-950 text-emerald-400 font-extrabold text-[9px] uppercase tracking-wider">
+                  <span className="px-1.5 py-0.2 rounded-full bg-stone-950 text-emerald-400 font-extrabold text-xs uppercase tracking-wider">
                     JF Standar A2
                   </span>
                 </button>
-                <span className="text-[11px] text-appText-muted">
+                <span className="text-xs text-appText-muted">
                   4 Seksi Resmi · Ambang Lulus ≥ 200/250 Poin
                 </span>
               </div>
@@ -738,11 +738,11 @@ export const CurriculumTrackBrowser: React.FC<CurriculumTrackBrowserProps> = ({
                 >
                   <Building2 className="w-4 h-4 text-white shrink-0" />
                   <span>Buka Panduan Hidup di Jepang (Seikatsu)</span>
-                  <span className="px-1.5 py-0.2 rounded-full bg-white/20 text-white font-extrabold text-[9px] uppercase tracking-wider">
+                  <span className="px-1.5 py-0.2 rounded-full bg-white/20 text-white font-extrabold text-xs uppercase tracking-wider">
                     Balai Kota & K3
                   </span>
                 </button>
-                <span className="text-[11px] text-appText-muted">
+                <span className="text-xs text-appText-muted">
                   Prosedur Balai Kota, Pemilahan Sampah & Mitigasi Gempa
                 </span>
               </div>
@@ -752,21 +752,21 @@ export const CurriculumTrackBrowser: React.FC<CurriculumTrackBrowserProps> = ({
           {/* Quick Stats Pill Block (Desktop/Tablet) */}
           <div className="hidden md:flex items-center gap-3 bg-surface-3/90 border border-accent/20 rounded-2xl p-3.5 shrink-0 shadow-inner">
             <div className="text-center px-2">
-              <div className="text-[10px] text-appText-muted font-medium uppercase tracking-wider">Progres</div>
+              <div className="text-xs text-appText-muted font-medium uppercase tracking-wider">Progres</div>
               <div className="text-xl font-black text-accent tabular-nums">
                 {progressPercent}%
               </div>
             </div>
             <div className="w-px h-8 bg-accent/20" />
             <div className="text-center px-2">
-              <div className="text-[10px] text-appText-muted font-medium uppercase tracking-wider">Tuntas</div>
+              <div className="text-xs text-appText-muted font-medium uppercase tracking-wider">Tuntas</div>
               <div className="text-xl font-black text-appText-bright tabular-nums">
                 {completedLessonsCount}/{totalLessons}
               </div>
             </div>
             <div className="w-px h-8 bg-accent/20" />
             <div className="text-center px-2">
-              <div className="text-[10px] text-appText-muted font-medium uppercase tracking-wider">Akurasi</div>
+              <div className="text-xs text-appText-muted font-medium uppercase tracking-wider">Akurasi</div>
               <div className="text-xl font-black text-emerald-400 tabular-nums">
                 {averageScore}%
               </div>
@@ -776,7 +776,7 @@ export const CurriculumTrackBrowser: React.FC<CurriculumTrackBrowserProps> = ({
 
         {/* Visual Progress Bar & Summary */}
         <div className="space-y-1">
-          <div className="flex items-center justify-between text-[11px] text-appText-muted font-medium tabular-nums">
+          <div className="flex items-center justify-between text-xs text-appText-muted font-medium tabular-nums">
             <span>Kesiapan Jalur</span>
             <span>{progressPercent}% Selesai ({completedLessonsCount}/{totalLessons} Pelajaran · Akurasi {averageScore}%)</span>
           </div>
@@ -794,10 +794,10 @@ export const CurriculumTrackBrowser: React.FC<CurriculumTrackBrowserProps> = ({
         <div className="flex items-center justify-between px-3.5 py-2 rounded-xl bg-surface-2/60 border border-accent/15 text-xs">
           <div className="flex items-center gap-2 min-w-0">
             <span className="text-sm shrink-0">🗣️</span>
-            <div className="flex items-center gap-1.5 truncate text-[11px] sm:text-xs">
+            <div className="flex items-center gap-1.5 truncate text-xs sm:text-xs">
               <span className="text-appText-muted">Logat:</span>
               <span className="font-extrabold text-appText-bright">{activeSubstratumMeta.label}</span>
-              <span className="px-1.5 py-0.5 rounded text-[9px] font-bold bg-amber-500/15 text-accent shrink-0">
+              <span className="px-1.5 py-0.5 rounded text-xs font-bold bg-amber-500/15 text-accent shrink-0">
                 Aktif
               </span>
             </div>
@@ -806,7 +806,7 @@ export const CurriculumTrackBrowser: React.FC<CurriculumTrackBrowserProps> = ({
           <button
             type="button"
             onClick={() => setIsSubstratumDropdownOpen(true)}
-            className="min-h-[36px] px-3 py-1 rounded-lg bg-surface hover:bg-surface-3 border border-accent/20 text-[11px] font-bold text-accent hover:text-accent-hot flex items-center gap-1.5 transition-colors active:scale-95 shrink-0"
+            className="min-h-[36px] px-3 py-1 rounded-lg bg-surface hover:bg-surface-3 border border-accent/20 text-xs font-bold text-accent hover:text-accent-hot flex items-center gap-1.5 transition-colors active:scale-95 shrink-0"
             aria-label="Ganti Dialek"
           >
             <span>Ganti Dialek</span>
@@ -823,7 +823,7 @@ export const CurriculumTrackBrowser: React.FC<CurriculumTrackBrowserProps> = ({
           <div className="flex items-center justify-between text-xs">
             <div className="font-bold text-appText-bright flex items-center gap-1.5">
               <span>Alur Belajar Bertahap</span>
-              <span className="text-[10px] px-1.5 py-0.5 rounded bg-surface-3 text-accent font-semibold">
+              <span className="text-xs px-1.5 py-0.5 rounded bg-surface-3 text-accent font-semibold">
                 Tahap 1–6
               </span>
             </div>
@@ -859,15 +859,15 @@ export const CurriculumTrackBrowser: React.FC<CurriculumTrackBrowserProps> = ({
                       ? 'bg-amber-500/20 border-amber-500 text-appText-bright ring-2 ring-amber-500/50 shadow-md'
                       : hasUnitsInTrack
                       ? 'bg-surface-2 hover:bg-surface-3 border-amber-500/30 text-appText-bright shadow-xs'
-                      : 'bg-surface/50 hover:bg-surface-2 border-accent/10 text-appText-muted/70'
+                      : 'bg-surface/50 hover:bg-surface-2 border-accent/10 text-appText-muted'
                   }`}
                   aria-pressed={isSelected}
                   title={`Klik untuk fokus ke Tahap ${stageNum}`}
                 >
-                  <div className="flex items-center justify-between gap-1 text-[10px] font-mono font-extrabold text-accent">
+                  <div className="flex items-center justify-between gap-1 text-xs font-mono font-extrabold text-accent">
                     <span>Tahap {stageNum}</span>
                     {isSelected ? (
-                      <span className="text-[9px] px-1 rounded bg-amber-500 text-stone-950 font-bold">Aktif</span>
+                      <span className="text-xs px-1 rounded bg-amber-500 text-stone-950 font-bold">Aktif</span>
                     ) : hasUnitsInTrack ? (
                       <span className="w-1.5 h-1.5 rounded-full bg-amber-400" />
                     ) : null}
@@ -875,7 +875,7 @@ export const CurriculumTrackBrowser: React.FC<CurriculumTrackBrowserProps> = ({
                   <div className="font-bold text-xs truncate mt-0.5 text-appText-bright">
                     {info.title.replace(/^Tahap \d+:\s*/, '')}
                   </div>
-                  <div className="text-[10px] text-appText-muted line-clamp-1 mt-0.5">{info.desc}</div>
+                  <div className="text-xs text-appText-muted line-clamp-1 mt-0.5">{info.desc}</div>
                 </button>
               );
             })}
@@ -883,13 +883,13 @@ export const CurriculumTrackBrowser: React.FC<CurriculumTrackBrowserProps> = ({
 
           {activeStageFilter !== null && (
             <div className="flex items-center justify-between px-3 py-1.5 rounded-xl bg-amber-500/10 border border-amber-500/25 text-xs animate-in fade-in">
-              <span className="text-appText-muted text-[11px]">
+              <span className="text-appText-muted text-xs">
                 Menampilkan hanya <strong>Tahap {activeStageFilter}</strong>
               </span>
               <button
                 type="button"
                 onClick={() => setActiveStageFilter(null)}
-                className="text-[11px] font-bold text-accent hover:underline cursor-pointer"
+                className="text-xs font-bold text-accent hover:underline cursor-pointer"
               >
                 Tampilkan Semua Tahap (1–6) ✕
               </button>
@@ -937,7 +937,7 @@ export const CurriculumTrackBrowser: React.FC<CurriculumTrackBrowserProps> = ({
                   <HardHat className="w-4 h-4 text-orange-400 shrink-0" />
                   <span className="font-extrabold text-appText-bright">Spesialisasi Ujian Prometric JAC (建設業):</span>
                 </div>
-                <span className="text-[10px] text-appText-muted font-mono">Standar JAC · MLIT Japan</span>
+                <span className="text-xs text-appText-muted font-mono">Standar JAC · MLIT Japan</span>
               </div>
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-1.5">
                 <button
@@ -950,7 +950,7 @@ export const CurriculumTrackBrowser: React.FC<CurriculumTrackBrowserProps> = ({
                   }`}
                 >
                   <span>Semua Modul</span>
-                  <span className="block text-[10px] opacity-80 font-normal">8 Unit Lengkap</span>
+                  <span className="block text-xs opacity-80 font-normal">8 Unit Lengkap</span>
                 </button>
                 <button
                   type="button"
@@ -962,7 +962,7 @@ export const CurriculumTrackBrowser: React.FC<CurriculumTrackBrowserProps> = ({
                   }`}
                 >
                   <span>1. Teknik Sipil</span>
-                  <span className="block text-[10px] opacity-80 font-normal">土木 · Galian & Parit</span>
+                  <span className="block text-xs opacity-80 font-normal">土木 · Galian & Parit</span>
                 </button>
                 <button
                   type="button"
@@ -974,7 +974,7 @@ export const CurriculumTrackBrowser: React.FC<CurriculumTrackBrowserProps> = ({
                   }`}
                 >
                   <span>2. Gedung</span>
-                  <span className="block text-[10px] opacity-80 font-normal">建築 · Rangka & Ketinggian</span>
+                  <span className="block text-xs opacity-80 font-normal">建築 · Rangka & Ketinggian</span>
                 </button>
                 <button
                   type="button"
@@ -986,7 +986,7 @@ export const CurriculumTrackBrowser: React.FC<CurriculumTrackBrowserProps> = ({
                   }`}
                 >
                   <span>3. Fasilitas</span>
-                  <span className="block text-[10px] opacity-80 font-normal">設備 · Listrik & Utilitas</span>
+                  <span className="block text-xs opacity-80 font-normal">設備 · Listrik & Utilitas</span>
                 </button>
               </div>
             </div>
@@ -1028,16 +1028,16 @@ export const CurriculumTrackBrowser: React.FC<CurriculumTrackBrowserProps> = ({
 
                     <div className="min-w-0 space-y-0.5">
                       <div className="flex flex-wrap items-center gap-1.5">
-                        <span className="text-[10px] font-extrabold uppercase px-2 py-0.5 rounded-md bg-amber-500/15 text-accent border border-amber-500/25 tabular-nums">
+                        <span className="text-xs font-extrabold uppercase px-2 py-0.5 rounded-md bg-amber-500/15 text-accent border border-amber-500/25 tabular-nums">
                           Unit {unit.unit_number}
                         </span>
                         {unit.pt_stage && (
-                          <span className="text-[10px] font-semibold px-2 py-0.5 rounded-md bg-surface-2 text-appText-muted border border-accent/15">
+                          <span className="text-xs font-semibold px-2 py-0.5 rounded-md bg-surface-2 text-appText-muted border border-accent/15">
                             Tahap {unit.pt_stage}: {stageInfo.title}
                           </span>
                         )}
                         {isUnitFullyCompleted && (
-                          <span className="text-[10px] font-extrabold px-2 py-0.5 rounded-md bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 flex items-center gap-1">
+                          <span className="text-xs font-extrabold px-2 py-0.5 rounded-md bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 flex items-center gap-1">
                             <CheckCircle2 className="w-3 h-3" />
                             Tuntas
                           </span>
@@ -1060,7 +1060,7 @@ export const CurriculumTrackBrowser: React.FC<CurriculumTrackBrowserProps> = ({
                       <div className="text-xs font-bold text-appText-bright tabular-nums">
                         {completedInUnit} / {unitLessons.length} Pelajaran
                       </div>
-                      <div className="text-[10px] text-appText-muted">
+                      <div className="text-xs text-appText-muted">
                         {Math.round((completedInUnit / (unitLessons.length || 1)) * 100)}% Selesai
                       </div>
                     </div>
@@ -1097,7 +1097,7 @@ export const CurriculumTrackBrowser: React.FC<CurriculumTrackBrowserProps> = ({
                           <span>Tips Logika Bahasa Indonesia 🇮🇩</span>
                           <span className="sr-only">Fokus Analisis Kontrasif L1</span>
                         </div>
-                        <p className="text-[11px] text-appText leading-relaxed break-words">
+                        <p className="text-xs text-appText leading-relaxed break-words">
                           {unit.l2d_focus_notes
                             .replace(/Waspadai\s+contrastive-([a-zA-Z0-9_-]+):/gi, 'Perhatikan perbedaan pola:')
                             .replace(/contrastive-([a-zA-Z0-9_-]+)/gi, 'perbedaan struktur')}
@@ -1108,7 +1108,7 @@ export const CurriculumTrackBrowser: React.FC<CurriculumTrackBrowserProps> = ({
                     {/* Lesson List Header */}
                     <div className="flex items-center justify-between text-xs font-bold text-appText-muted pt-2 border-t border-accent/10">
                       <span>Daftar Pelajaran di Unit Ini:</span>
-                      <span className="text-[11px] font-normal tabular-nums">
+                      <span className="text-xs font-normal tabular-nums">
                         {unitLessons.length} Pelajaran Tersedia
                       </span>
                     </div>
@@ -1141,23 +1141,23 @@ export const CurriculumTrackBrowser: React.FC<CurriculumTrackBrowserProps> = ({
                             <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-3">
                               <div className="space-y-1 min-w-0">
                                 <div className="flex flex-wrap items-center gap-2">
-                                  <span className="text-[10px] font-bold px-2 py-0.5 rounded-md bg-surface-3 text-appText-muted border border-accent/15 tabular-nums">
+                                  <span className="text-xs font-bold px-2 py-0.5 rounded-md bg-surface-3 text-appText-muted border border-accent/15 tabular-nums">
                                     Pelajaran #{lesson.lesson_number}
                                   </span>
 
                                   {isLessonDone ? (
-                                    <span className="text-[10px] font-extrabold px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 flex items-center gap-1">
+                                    <span className="text-xs font-extrabold px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 flex items-center gap-1">
                                       <CheckCircle2 className="w-3 h-3" />
                                       Tuntas ({lessonScore}%)
                                     </span>
                                   ) : (
-                                    <span className="text-[10px] font-medium px-2 py-0.5 rounded-full bg-surface-3 text-appText-muted">
+                                    <span className="text-xs font-medium px-2 py-0.5 rounded-full bg-surface-3 text-appText-muted">
                                       Belum Tuntas
                                     </span>
                                   )}
 
                                   {lesson.estimated_minutes && (
-                                    <span className="text-[10px] text-appText-muted flex items-center gap-1">
+                                    <span className="text-xs text-appText-muted flex items-center gap-1">
                                       <Clock className="w-3 h-3" />
                                       {lesson.estimated_minutes} Menit
                                     </span>
@@ -1177,7 +1177,7 @@ export const CurriculumTrackBrowser: React.FC<CurriculumTrackBrowserProps> = ({
                                 </p>
 
                                 {lesson.can_do_statement && (
-                                  <div className="text-[11px] text-accent-hot font-medium flex items-start gap-1 mt-1">
+                                  <div className="text-xs text-accent-hot font-medium flex items-start gap-1 mt-1">
                                     <span>🎯</span>
                                     <span className="break-words">Can-Do: {lesson.can_do_statement}</span>
                                   </div>
@@ -1212,7 +1212,7 @@ export const CurriculumTrackBrowser: React.FC<CurriculumTrackBrowserProps> = ({
                             {/* Grammar Points Chips */}
                             {matchedGrammars.length > 0 && (
                               <div className="pt-2 border-t border-accent/10 space-y-1.5">
-                                <div className="text-[10px] font-bold uppercase tracking-wider text-appText-muted">
+                                <div className="text-xs font-bold uppercase tracking-wider text-appText-muted">
                                   Pola Tata Bahasa Terkait ({matchedGrammars.length}):
                                 </div>
                                 <div className="flex flex-wrap gap-1.5">
@@ -1225,7 +1225,7 @@ export const CurriculumTrackBrowser: React.FC<CurriculumTrackBrowserProps> = ({
                                       <span className="font-jp font-extrabold text-amber-400 group-hover:text-amber-200">
                                         {g.pattern}
                                       </span>
-                                      <span className="text-[10px] text-appText-muted truncate max-w-[140px]">
+                                      <span className="text-xs text-appText-muted truncate max-w-[140px]">
                                         {g.meaning}
                                       </span>
                                       <ExternalLink className="w-2.5 h-2.5 text-appText-muted group-hover:text-appText-bright shrink-0" />
@@ -1238,7 +1238,7 @@ export const CurriculumTrackBrowser: React.FC<CurriculumTrackBrowserProps> = ({
                             {/* Vocabulary Chips */}
                             {matchedVocabs.length > 0 && (
                               <div className="pt-1.5 space-y-1.5">
-                                <div className="text-[10px] font-bold uppercase tracking-wider text-appText-muted">
+                                <div className="text-xs font-bold uppercase tracking-wider text-appText-muted">
                                   Kosakata Inti ({matchedVocabs.length}):
                                 </div>
                                 <div className="flex flex-wrap gap-1.5">
@@ -1251,7 +1251,7 @@ export const CurriculumTrackBrowser: React.FC<CurriculumTrackBrowserProps> = ({
                                       <span className="font-jp font-bold text-appText-bright group-hover:text-accent">
                                         {v.word}
                                       </span>
-                                      <span className="text-[10px] text-appText-muted truncate max-w-[120px]">
+                                      <span className="text-xs text-appText-muted truncate max-w-[120px]">
                                         {v.meaning}
                                       </span>
                                       <ExternalLink className="w-2.5 h-2.5 text-appText-muted group-hover:text-appText-bright shrink-0" />
@@ -1365,14 +1365,14 @@ export const CurriculumTrackBrowser: React.FC<CurriculumTrackBrowserProps> = ({
                         <span className="text-xl shrink-0">{trk.icon}</span>
                         <div className="min-w-0">
                           <div className="font-bold text-xs text-appText-bright">{trk.title}</div>
-                          <div className="text-[10px] text-appText-muted">{trk.level} · {trk.units}</div>
+                          <div className="text-xs text-appText-muted">{trk.level} · {trk.units}</div>
                         </div>
                       </div>
                       <div className="text-right shrink-0">
                         {completedCount > 0 ? (
-                          <span className="text-[10px] text-emerald-400 font-bold">{completedCount} tuntas</span>
+                          <span className="text-xs text-emerald-400 font-bold">{completedCount} tuntas</span>
                         ) : (
-                          <span className="text-[10px] text-appText-muted">{trk.grammarCount}</span>
+                          <span className="text-xs text-appText-muted">{trk.grammarCount}</span>
                         )}
                       </div>
                     </button>
@@ -1394,7 +1394,7 @@ export const CurriculumTrackBrowser: React.FC<CurriculumTrackBrowserProps> = ({
                         key={c.id}
                         type="button"
                         onClick={() => setSswCluster(c.id as any)}
-                        className={`px-2.5 py-1 rounded-lg text-[11px] font-bold transition-all whitespace-nowrap active:scale-95 ${
+                        className={`px-2.5 py-1 rounded-lg text-xs font-bold transition-all whitespace-nowrap active:scale-95 ${
                           sswCluster === c.id
                             ? 'bg-amber-500 text-stone-950 font-black'
                             : 'bg-surface-3 text-appText-muted'
@@ -1438,18 +1438,18 @@ export const CurriculumTrackBrowser: React.FC<CurriculumTrackBrowserProps> = ({
                           <div className="min-w-0">
                             <div className="font-bold text-xs text-appText-bright flex items-center gap-1.5">
                               <span className="truncate">{trk.title}</span>
-                              <span className="px-1.5 py-0.2 rounded text-[9px] font-mono bg-surface-2 text-accent border border-accent/20">
+                              <span className="px-1.5 py-0.2 rounded text-xs font-mono bg-surface-2 text-accent border border-accent/20">
                                 {trk.ministry}
                               </span>
                             </div>
-                            <div className="text-[10px] text-appText-muted">{trk.sector}</div>
+                            <div className="text-xs text-appText-muted">{trk.sector}</div>
                           </div>
                         </div>
                         <div className="text-right shrink-0">
                           {completedCount > 0 ? (
-                            <span className="text-[10px] text-emerald-400 font-bold">{completedCount} tuntas</span>
+                            <span className="text-xs text-emerald-400 font-bold">{completedCount} tuntas</span>
                           ) : (
-                            <span className="text-[10px] ${trk.status === 'coming_soon' ? 'text-amber-400 font-bold' : 'text-appText-muted'}">${trk.status === 'coming_soon' ? '🔒 Segera Hadir' : trk.units}</span>
+                            <span className="text-xs ${trk.status === 'coming_soon' ? 'text-amber-400 font-bold' : 'text-appText-muted'}">${trk.status === 'coming_soon' ? '🔒 Segera Hadir' : trk.units}</span>
                           )}
                         </div>
                       </button>
@@ -1481,14 +1481,14 @@ export const CurriculumTrackBrowser: React.FC<CurriculumTrackBrowserProps> = ({
                         <span className="text-xl shrink-0">{trk.icon}</span>
                         <div className="min-w-0">
                           <div className="font-bold text-xs text-appText-bright">{trk.title}</div>
-                          <div className="text-[10px] text-appText-muted">{trk.level} · {trk.units}</div>
+                          <div className="text-xs text-appText-muted">{trk.level} · {trk.units}</div>
                         </div>
                       </div>
                       <div className="text-right shrink-0">
                         {completedCount > 0 ? (
-                          <span className="text-[10px] text-emerald-400 font-bold">{completedCount} tuntas</span>
+                          <span className="text-xs text-emerald-400 font-bold">{completedCount} tuntas</span>
                         ) : (
-                          <span className="text-[10px] text-appText-muted">{trk.units}</span>
+                          <span className="text-xs text-appText-muted">{trk.units}</span>
                         )}
                       </div>
                     </button>
@@ -1531,7 +1531,7 @@ export const CurriculumTrackBrowser: React.FC<CurriculumTrackBrowserProps> = ({
                 <h3 className="font-extrabold text-sm sm:text-base text-appText-bright flex items-center gap-2">
                   <span>🗣️</span> Penyesuaian Bahasa Daerah
                 </h3>
-                <p className="text-[11px] text-appText-muted mt-0.5">
+                <p className="text-xs text-appText-muted mt-0.5">
                   Jembatan perbandingan logika tata bahasa dengan bahasa ibumu
                 </p>
               </div>
@@ -1560,7 +1560,7 @@ export const CurriculumTrackBrowser: React.FC<CurriculumTrackBrowserProps> = ({
                   <span className="text-base shrink-0 p-1 rounded-lg bg-surface-2/60">{opt.badge}</span>
                   <div className="min-w-0 flex-1">
                     <div className="font-bold leading-tight">{opt.label}</div>
-                    <div className={`text-[11px] mt-0.5 ${userSubstratum === opt.id ? 'text-bg/85' : 'text-appText-muted'}`}>
+                    <div className={`text-xs mt-0.5 ${userSubstratum === opt.id ? 'text-bg/85' : 'text-appText-muted'}`}>
                       {opt.desc}
                     </div>
                   </div>
@@ -1611,7 +1611,7 @@ export const CurriculumTrackBrowser: React.FC<CurriculumTrackBrowserProps> = ({
                   {comingSoonModalData.icon}
                 </span>
                 <div>
-                  <div className="text-[10px] uppercase font-bold tracking-wider text-amber-400">
+                  <div className="text-xs uppercase font-bold tracking-wider text-amber-400">
                     {comingSoonModalData.ministry} ({comingSoonModalData.ministryKanji})
                   </div>
                   <h3 className="text-base font-extrabold text-appText-bright">
@@ -1644,7 +1644,7 @@ export const CurriculumTrackBrowser: React.FC<CurriculumTrackBrowserProps> = ({
 
             <div className="text-xs text-appText-muted space-y-1">
               <div className="font-bold text-appText-bright">6 Sektor Prioritas yang Saat Ini Telah Aktif:</div>
-              <ul className="grid grid-cols-2 gap-1 text-[11px] pt-1">
+              <ul className="grid grid-cols-2 gap-1 text-xs pt-1">
                 <li className="flex items-center gap-1.5">👵 <span>Keperawatan (Kaigo)</span></li>
                 <li className="flex items-center gap-1.5">🍱 <span>Pengolahan Makanan</span></li>
                 <li className="flex items-center gap-1.5">👷 <span>Konstruksi (3 Sub-Track)</span></li>

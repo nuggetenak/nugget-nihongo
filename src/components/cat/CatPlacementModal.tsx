@@ -212,7 +212,7 @@ export const CatPlacementModal: React.FC<CatPlacementModalProps> = ({ isOpen, on
               <h2 className="text-sm sm:text-base font-extrabold text-appText-bright truncate">
                 Tes Penempatan Mandiri (CAT)
               </h2>
-              <div className="text-[11px] text-accent font-semibold truncate flex items-center gap-1.5">
+              <div className="text-xs text-accent font-semibold truncate flex items-center gap-1.5">
                 <span>Computer Adaptive Testing · Adaptif (6–12 Soal)</span>
               </div>
             </div>
@@ -257,29 +257,29 @@ export const CatPlacementModal: React.FC<CatPlacementModalProps> = ({ isOpen, on
               {/* Score Metric Cards */}
               <div className="grid grid-cols-3 gap-2.5">
                 <div className="p-3 rounded-2xl bg-surface-2 border border-accent/15 text-center">
-                  <div className="text-[10px] text-appText-muted uppercase font-bold">Akurasi</div>
+                  <div className="text-xs text-appText-muted uppercase font-bold">Akurasi</div>
                   <div className="text-base sm:text-lg font-black text-accent-hot font-mono">
                     {result.accuracy}%
                   </div>
-                  <div className="text-[10px] text-appText-muted">
+                  <div className="text-xs text-appText-muted">
                     {result.correctCount}/{result.totalCount} Benar
                   </div>
                 </div>
 
                 <div className="p-3 rounded-2xl bg-surface-2 border border-accent/15 text-center">
-                  <div className="text-[10px] text-appText-muted uppercase font-bold">Poin Kemahiran</div>
+                  <div className="text-xs text-appText-muted uppercase font-bold">Poin Kemahiran</div>
                   <div className="text-base sm:text-lg font-black text-blue-400 font-mono">
                     {Math.min(100, Math.max(10, Math.round(((result.theta + 3) / 6) * 100)))}
                   </div>
-                  <div className="text-[10px] text-appText-muted">Skor Relatif / 100</div>
+                  <div className="text-xs text-appText-muted">Skor Relatif / 100</div>
                 </div>
 
                 <div className="p-3 rounded-2xl bg-surface-2 border border-accent/15 text-center">
-                  <div className="text-[10px] text-appText-muted uppercase font-bold">Rekomendasi</div>
+                  <div className="text-xs text-appText-muted uppercase font-bold">Rekomendasi</div>
                   <div className="text-base sm:text-lg font-black text-emerald-400 font-mono uppercase">
                     {result.estimatedLevel}
                   </div>
-                  <div className="text-[10px] text-appText-muted">Kurikulum</div>
+                  <div className="text-xs text-appText-muted">Kurikulum</div>
                 </div>
               </div>
 
@@ -290,7 +290,7 @@ export const CatPlacementModal: React.FC<CatPlacementModalProps> = ({ isOpen, on
                     <CheckCircle2 className="w-3.5 h-3.5" />
                     <span>Kekuatanmu:</span>
                   </div>
-                  <p className="text-appText-muted text-[11px] leading-relaxed">
+                  <p className="text-appText-muted text-xs leading-relaxed">
                     {result.strengths.join(', ')}
                   </p>
                 </div>
@@ -300,7 +300,7 @@ export const CatPlacementModal: React.FC<CatPlacementModalProps> = ({ isOpen, on
                     <Zap className="w-3.5 h-3.5" />
                     <span>Fokus Pembelajaran:</span>
                   </div>
-                  <p className="text-appText-muted text-[11px] leading-relaxed">
+                  <p className="text-appText-muted text-xs leading-relaxed">
                     {result.weaknesses.join(', ')}
                   </p>
                 </div>
@@ -335,7 +335,7 @@ export const CatPlacementModal: React.FC<CatPlacementModalProps> = ({ isOpen, on
                   <span className="text-accent font-bold">
                     Soal {questionIndex + 1} dari {TOTAL_QUESTIONS}
                   </span>
-                  <span className="text-appText-muted font-mono text-[11px]">
+                  <span className="text-appText-muted font-mono text-xs">
                     Kalibrasi: Level {currentQuestion.level.toUpperCase()}
                   </span>
                 </div>
@@ -349,7 +349,7 @@ export const CatPlacementModal: React.FC<CatPlacementModalProps> = ({ isOpen, on
 
               {/* Prompt / Situation Card */}
               <div className="p-4 sm:p-5 rounded-2xl bg-surface-2 border border-accent/20 space-y-1.5">
-                <div className="text-[10px] font-bold uppercase tracking-wider text-accent/80">
+                <div className="text-xs font-bold uppercase tracking-wider text-accent/80">
                   Terjemahkan atau Pilih Kalimat yang Benar:
                 </div>
                 <div className="text-base sm:text-lg font-bold text-appText-bright leading-relaxed">

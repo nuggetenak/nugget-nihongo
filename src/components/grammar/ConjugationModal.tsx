@@ -156,7 +156,7 @@ export const ConjugationModal: React.FC<ConjugationModalProps> = ({
                   if (e.key === 'Enter') handleApplyVerb(inputVerb);
                 }}
                 placeholder="Ketik kata kerja bentuk kamus (misal: 飲む, 行く, 食べる)..."
-                className="w-full bg-surface-2 border border-accent/20 rounded-xl pl-9 pr-4 py-2 text-xs sm:text-sm text-appText-bright placeholder:text-appText-muted/60 focus:outline-none focus:border-accent font-jp"
+                className="w-full bg-surface-2 border border-accent/20 rounded-xl pl-9 pr-4 py-2 text-xs sm:text-sm text-appText-bright placeholder:text-appText-muted focus:outline-none focus:border-accent font-jp"
               />
             </div>
             <button
@@ -169,7 +169,7 @@ export const ConjugationModal: React.FC<ConjugationModalProps> = ({
 
           {/* Preset Buttons */}
           <div className="flex items-center gap-1.5 overflow-x-auto pb-1 scrollbar-none text-xs">
-            <span className="text-[10px] font-bold uppercase tracking-wider text-accent shrink-0 mr-1">
+            <span className="text-xs font-bold uppercase tracking-wider text-accent shrink-0 mr-1">
               Contoh:
             </span>
             {COMMON_PRESET_VERBS.map((v) => (
@@ -215,7 +215,7 @@ export const ConjugationModal: React.FC<ConjugationModalProps> = ({
               <div className="text-xs font-bold text-appText-bright capitalize">
                 Golongan: {verbType}
               </div>
-              <div className="text-[11px] text-appText-muted">
+              <div className="text-xs text-appText-muted">
                 {detectedDeinflection ? `Akar kata dasar dari: "${inputVerb}"` : 'Kamus / Bentuk Dasar'}
               </div>
             </div>
@@ -246,7 +246,7 @@ export const ConjugationModal: React.FC<ConjugationModalProps> = ({
                   <div className="text-sm sm:text-base font-jp font-bold text-appText-bright">
                     {conjugated || '—'}
                   </div>
-                  <div className="text-[11px] text-appText-muted/80 truncate">
+                  <div className="text-xs text-appText-muted truncate">
                     {row.desc}
                   </div>
                 </div>

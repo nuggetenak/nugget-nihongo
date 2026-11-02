@@ -685,7 +685,7 @@ export const QuizArenaHub: React.FC<QuizArenaHubProps> = ({
                             <span>Akurasi {stat.accuracy}% ({stat.answered} soal)</span>
                           </span>
                         ) : (
-                          <span className="text-appText-muted/60 text-xs">
+                          <span className="text-appText-muted text-xs">
                             Belum dicoba
                           </span>
                         )}

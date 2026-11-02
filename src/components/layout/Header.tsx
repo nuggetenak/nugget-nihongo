@@ -340,40 +340,40 @@ export const Header: React.FC<HeaderProps> = ({
               <button
                 type="button"
                 onClick={() => setPickerCategory('jlpt')}
-                className={`flex-1 min-w-[90px] py-1.5 px-2.5 rounded-lg text-xs font-bold transition-all text-center whitespace-nowrap active:scale-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent ${
+                className={`flex-1 min-w-0 py-1.5 px-2 rounded-lg text-xs font-bold transition-all text-center whitespace-nowrap active:scale-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent ${
                   pickerCategory === 'jlpt'
                     ? 'bg-amber-500 text-stone-950 shadow-sm font-extrabold'
                     : 'text-appText-muted hover:text-appText-bright'
                 }`}
               >
-                🇯🇵 Jalur JLPT
+                🇯🇵 JLPT
               </button>
               <button
                 type="button"
                 onClick={() => setPickerCategory('ssw')}
-                className={`flex-1 min-w-[90px] py-1.5 px-2.5 rounded-lg text-xs font-bold transition-all text-center whitespace-nowrap active:scale-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent ${
+                className={`flex-1 min-w-0 py-1.5 px-2 rounded-lg text-xs font-bold transition-all text-center whitespace-nowrap active:scale-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent ${
                   pickerCategory === 'ssw'
                     ? 'bg-amber-500 text-stone-950 shadow-sm font-extrabold'
                     : 'text-appText-muted hover:text-appText-bright'
                 }`}
               >
-                💼 Jalur Kerja SSW
+                💼 SSW Kerjasama
               </button>
               <button
                 type="button"
                 onClick={() => setPickerCategory('jft')}
-                className={`flex-1 min-w-[90px] py-1.5 px-2.5 rounded-lg text-xs font-bold transition-all text-center whitespace-nowrap active:scale-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent ${
+                className={`flex-1 min-w-0 py-1.5 px-2 rounded-lg text-xs font-bold transition-all text-center whitespace-nowrap active:scale-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent ${
                   pickerCategory === 'jft'
                     ? 'bg-amber-500 text-stone-950 shadow-sm font-extrabold'
                     : 'text-appText-muted hover:text-appText-bright'
                 }`}
               >
-                🎌 JFT & Hidup
+                🎌 JFT Hidup
               </button>
               <button
                 type="button"
                 onClick={() => setPickerCategory('books')}
-                className={`flex-1 min-w-[90px] py-1.5 px-2.5 rounded-lg text-xs font-bold transition-all text-center whitespace-nowrap active:scale-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent ${
+                className={`flex-1 min-w-0 py-1.5 px-2 rounded-lg text-xs font-bold transition-all text-center whitespace-nowrap active:scale-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent ${
                   pickerCategory === 'books'
                     ? 'bg-amber-500 text-stone-950 shadow-sm font-extrabold'
                     : 'text-appText-muted hover:text-appText-bright'

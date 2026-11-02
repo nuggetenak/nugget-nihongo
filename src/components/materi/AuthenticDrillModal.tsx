@@ -127,7 +127,7 @@ export const AuthenticDrillModal: React.FC<AuthenticDrillModalProps> = ({
               <h2 className="text-xs sm:text-sm font-extrabold text-appText-bright truncate">
                 {bookTitle}
               </h2>
-              <div className="text-[11px] text-accent font-semibold truncate">
+              <div className="text-xs text-accent font-semibold truncate">
                 {chapterTitle.replace(/:\s*$/, '').trim()}
               </div>
             </div>
@@ -186,7 +186,7 @@ export const AuthenticDrillModal: React.FC<AuthenticDrillModalProps> = ({
                   <span className="text-accent font-bold">
                     Drill {currentIndex + 1} dari {drills.length}
                   </span>
-                  <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-amber-500/15 text-accent-hot border border-amber-500/25 uppercase">
+                  <span className="text-xs font-bold px-2 py-0.5 rounded-full bg-amber-500/15 text-accent-hot border border-amber-500/25 uppercase">
                     {currentDrill.mechanic.replace(/_/g, ' ')}
                   </span>
                 </div>
@@ -211,7 +211,7 @@ export const AuthenticDrillModal: React.FC<AuthenticDrillModalProps> = ({
               {/* Cue Tokens (e.g. Renshuu B keywords) */}
               {currentDrill.cue_tokens && currentDrill.cue_tokens.length > 0 && (
                 <div className="p-3 rounded-xl bg-surface-2 border border-accent/15 flex flex-wrap items-center gap-2">
-                  <span className="text-[10px] font-bold uppercase text-accent/80">Isyarat Kata:</span>
+                  <span className="text-xs font-bold uppercase text-accent/80">Isyarat Kata:</span>
                   {currentDrill.cue_tokens.map((token, idx) => (
                     <span
                       key={idx}
@@ -226,7 +226,7 @@ export const AuthenticDrillModal: React.FC<AuthenticDrillModalProps> = ({
               {/* Target Pattern (e.g. cue_substitution, pattern_expansion) */}
               {currentDrill.target_pattern && (
                 <div className="p-2.5 rounded-xl bg-surface-2 border border-accent/20 flex items-center gap-2">
-                  <span className="text-[10px] font-bold uppercase text-accent">Pola Target:</span>
+                  <span className="text-xs font-bold uppercase text-accent">Pola Target:</span>
                   <span className="text-xs font-jp font-bold text-accent-hot">{currentDrill.target_pattern}</span>
                 </div>
               )}
@@ -263,7 +263,7 @@ export const AuthenticDrillModal: React.FC<AuthenticDrillModalProps> = ({
               {currentDrill.sign_example && (
                 <div className="p-3.5 rounded-2xl bg-amber-500/10 border border-amber-500/25 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
                   <div>
-                    <span className="text-[10px] font-bold uppercase text-amber-400 block mb-0.5">Tanda / Rambu Seikatsu:</span>
+                    <span className="text-xs font-bold uppercase text-amber-400 block mb-0.5">Tanda / Rambu Seikatsu:</span>
                     <div className="text-base sm:text-lg font-jp font-bold text-appText-bright">
                       {currentDrill.sign_example}
                     </div>
@@ -283,7 +283,7 @@ export const AuthenticDrillModal: React.FC<AuthenticDrillModalProps> = ({
               {(currentDrill.speech_bubble_prompt || currentDrill.illustration_cue) && (
                 <div className="p-3.5 rounded-2xl bg-surface-2 border border-accent/20 space-y-1.5">
                   {currentDrill.illustration_cue && (
-                    <span className="text-[10px] font-bold text-accent uppercase block">
+                    <span className="text-xs font-bold text-accent uppercase block">
                       Ilustrasi: {currentDrill.illustration_cue}
                     </span>
                   )}
@@ -408,7 +408,7 @@ export const AuthenticDrillModal: React.FC<AuthenticDrillModalProps> = ({
                   </div>
 
                   {selectedOption && currentDrill.diagnostic_feedback?.[selectedOption] && (
-                    <div className="text-[11px] text-amber-300 bg-amber-500/10 p-2.5 rounded-xl border border-amber-500/25">
+                    <div className="text-xs text-amber-300 bg-amber-500/10 p-2.5 rounded-xl border border-amber-500/25">
                       ⚠️ {currentDrill.diagnostic_feedback[selectedOption]}
                     </div>
                   )}

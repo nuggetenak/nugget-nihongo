@@ -84,7 +84,7 @@ export const KeyboardShortcutsModal: React.FC<KeyboardShortcutsModalProps> = ({ 
         <div className="space-y-5 max-h-[60vh] overflow-y-auto pr-1">
           {shortcutGroups.map((group, idx) => (
             <div key={idx} className="space-y-2.5">
-              <div className="text-[11px] font-bold uppercase tracking-wider text-accent">
+              <div className="text-xs font-bold uppercase tracking-wider text-accent">
                 {group.title}
               </div>
               <div className="space-y-1.5">
@@ -98,7 +98,7 @@ export const KeyboardShortcutsModal: React.FC<KeyboardShortcutsModalProps> = ({ 
                       {sc.keys.map((k, kIdx) => (
                         <kbd
                           key={kIdx}
-                          className="px-2 py-1 rounded-lg bg-surface-3 border border-accent/25 text-[11px] font-mono font-bold text-accent-hot shadow-sm"
+                          className="px-2 py-1 rounded-lg bg-surface-3 border border-accent/25 text-xs font-mono font-bold text-accent-hot shadow-sm"
                         >
                           {k}
                         </kbd>

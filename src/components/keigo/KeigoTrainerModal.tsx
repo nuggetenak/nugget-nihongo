@@ -179,11 +179,11 @@ export const KeigoTrainerModal: React.FC<KeigoTrainerModalProps> = ({
                 <h2 className="text-base sm:text-lg font-extrabold text-appText-bright truncate">
                   Pelatih Keigo & Etiket Kerja
                 </h2>
-                <span className="text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded-full bg-amber-500/15 text-amber-400 border border-amber-500/30 shrink-0 hidden sm:inline-block">
+                <span className="text-xs uppercase font-bold tracking-wider px-2 py-0.5 rounded-full bg-amber-500/15 text-amber-400 border border-amber-500/30 shrink-0 hidden sm:inline-block">
                   尊敬語・謙譲語
                 </span>
               </div>
-              <p className="text-[11px] sm:text-xs text-appText-muted truncate">
+              <p className="text-xs sm:text-xs text-appText-muted truncate">
                 Kuasai Sonkeigo, Kenjougo, Teineigo, logika Uchi-Soto, & SSW Tokutei Ginou
               </p>
             </div>
@@ -247,7 +247,7 @@ export const KeigoTrainerModal: React.FC<KeigoTrainerModalProps> = ({
               <Sparkles className="w-4 h-4" />
               <span>Latihan Skenario Kerja</span>
               {drillScore.total > 0 && (
-                <span className="text-[10px] px-1.5 py-0.2 rounded-full bg-surface-3/80 text-appText-bright">
+                <span className="text-xs px-1.5 py-0.2 rounded-full bg-surface-3/80 text-appText-bright">
                   {drillScore.correct}/{drillScore.total}
                 </span>
               )}
@@ -339,7 +339,7 @@ export const KeigoTrainerModal: React.FC<KeigoTrainerModalProps> = ({
                 <div className="space-y-3">
                   <h3 className="text-xs font-bold text-appText-muted uppercase tracking-wider flex items-center justify-between">
                     <span>Daftar Kata Kerja Keigo ({filteredVerbs.length})</span>
-                    <span className="text-[11px] font-normal lowercase">Klik untuk melihat contoh kalimat</span>
+                    <span className="text-xs font-normal lowercase">Klik untuk melihat contoh kalimat</span>
                   </h3>
 
                   {filteredVerbs.length === 0 ? (
@@ -380,7 +380,7 @@ export const KeigoTrainerModal: React.FC<KeigoTrainerModalProps> = ({
                                     ({verb.reading})
                                   </span>
                                   <span
-                                    className={`text-[10px] px-2 py-0.5 rounded-full font-bold uppercase ${
+                                    className={`text-xs px-2 py-0.5 rounded-full font-bold uppercase ${
                                       verb.type === 'irregular'
                                         ? 'bg-amber-500/20 text-amber-300 border border-amber-500/30'
                                         : 'bg-emerald-500/20 text-emerald-300 border border-emerald-500/30'
@@ -398,11 +398,11 @@ export const KeigoTrainerModal: React.FC<KeigoTrainerModalProps> = ({
                             {/* Conjugation Badges */}
                             <div className="flex items-center gap-2 shrink-0">
                               <div className="px-3 py-1.5 rounded-xl bg-amber-500/15 border border-amber-500/25 text-left">
-                                <div className="text-[9px] uppercase font-bold text-amber-400">Sonkeigo (Hormat)</div>
+                                <div className="text-xs uppercase font-bold text-amber-400">Sonkeigo (Hormat)</div>
                                 <div className="text-xs font-bold text-appText-bright">{verb.sonkeigo}</div>
                               </div>
                               <div className="px-3 py-1.5 rounded-xl bg-cyan-500/15 border border-cyan-500/25 text-left">
-                                <div className="text-[9px] uppercase font-bold text-cyan-400">Kenjougo (Rendah Hati)</div>
+                                <div className="text-xs uppercase font-bold text-cyan-400">Kenjougo (Rendah Hati)</div>
                                 <div className="text-xs font-bold text-appText-bright">{verb.kenjougo}</div>
                               </div>
                             </div>
@@ -420,7 +420,7 @@ export const KeigoTrainerModal: React.FC<KeigoTrainerModalProps> = ({
                                 {/* Sonkeigo Example */}
                                 <div className="p-3 rounded-xl bg-amber-500/10 border border-amber-500/20 space-y-1">
                                   <div className="flex items-center justify-between">
-                                    <span className="text-[10px] font-bold uppercase text-amber-400">Contoh Sonkeigo</span>
+                                    <span className="text-xs font-bold uppercase text-amber-400">Contoh Sonkeigo</span>
                                     <button
                                       type="button"
                                       onClick={() => handlePlayAudio(verb.exampleSonkeigo.jp)}
@@ -431,13 +431,13 @@ export const KeigoTrainerModal: React.FC<KeigoTrainerModalProps> = ({
                                     </button>
                                   </div>
                                   <div className="text-xs font-bold text-appText-bright">{verb.exampleSonkeigo.jp}</div>
-                                  <div className="text-[11px] text-appText-muted">{verb.exampleSonkeigo.id}</div>
+                                  <div className="text-xs text-appText-muted">{verb.exampleSonkeigo.id}</div>
                                 </div>
 
                                 {/* Kenjougo Example */}
                                 <div className="p-3 rounded-xl bg-cyan-500/10 border border-cyan-500/20 space-y-1">
                                   <div className="flex items-center justify-between">
-                                    <span className="text-[10px] font-bold uppercase text-cyan-400">Contoh Kenjougo</span>
+                                    <span className="text-xs font-bold uppercase text-cyan-400">Contoh Kenjougo</span>
                                     <button
                                       type="button"
                                       onClick={() => handlePlayAudio(verb.exampleKenjougo.jp)}
@@ -448,7 +448,7 @@ export const KeigoTrainerModal: React.FC<KeigoTrainerModalProps> = ({
                                     </button>
                                   </div>
                                   <div className="text-xs font-bold text-appText-bright">{verb.exampleKenjougo.jp}</div>
-                                  <div className="text-[11px] text-appText-muted">{verb.exampleKenjougo.id}</div>
+                                  <div className="text-xs text-appText-muted">{verb.exampleKenjougo.id}</div>
                                 </div>
                               </div>
                             </div>
@@ -478,7 +478,7 @@ export const KeigoTrainerModal: React.FC<KeigoTrainerModalProps> = ({
                             <span className="text-base font-extrabold text-appText-bright">{noun.plain}</span>
                             <span className="text-xs text-appText-muted">({noun.reading})</span>
                           </div>
-                          <span className="text-[10px] px-2 py-0.5 rounded-full bg-accent/15 text-accent font-bold">
+                          <span className="text-xs px-2 py-0.5 rounded-full bg-accent/15 text-accent font-bold">
                             {noun.meaning}
                           </span>
                         </div>
@@ -486,24 +486,24 @@ export const KeigoTrainerModal: React.FC<KeigoTrainerModalProps> = ({
                         <div className="grid grid-cols-2 gap-2 text-xs">
                           {noun.sonkeigo && (
                             <div className="p-2 rounded-xl bg-amber-500/10 border border-amber-500/20">
-                              <div className="text-[9px] font-bold text-amber-400 uppercase">Pihak Luar (Soto)</div>
+                              <div className="text-xs font-bold text-amber-400 uppercase">Pihak Luar (Soto)</div>
                               <div className="font-bold text-appText-bright truncate">{noun.sonkeigo}</div>
                             </div>
                           )}
                           {noun.kenjougo ? (
                             <div className="p-2 rounded-xl bg-cyan-500/10 border border-cyan-500/20">
-                              <div className="text-[9px] font-bold text-cyan-400 uppercase">Kelompok Sendiri (Uchi)</div>
+                              <div className="text-xs font-bold text-cyan-400 uppercase">Kelompok Sendiri (Uchi)</div>
                               <div className="font-bold text-appText-bright truncate">{noun.kenjougo}</div>
                             </div>
                           ) : (
                             <div className="p-2 rounded-xl bg-surface-3/50 border border-accent/10">
-                              <div className="text-[9px] font-bold text-appText-muted uppercase">Bentuk Baku</div>
+                              <div className="text-xs font-bold text-appText-muted uppercase">Bentuk Baku</div>
                               <div className="font-medium text-appText-muted truncate">{noun.plain}</div>
                             </div>
                           )}
                         </div>
 
-                        <p className="text-[11px] text-appText-muted leading-relaxed">{noun.nuanceNote}</p>
+                        <p className="text-xs text-appText-muted leading-relaxed">{noun.nuanceNote}</p>
                       </div>
                     ))}
                   </div>
@@ -536,7 +536,7 @@ export const KeigoTrainerModal: React.FC<KeigoTrainerModalProps> = ({
 
                         <div className="sm:max-w-xs shrink-0 p-2.5 rounded-xl bg-surface border border-accent/15 space-y-1">
                           <div className="flex items-center justify-between">
-                            <span className="text-[9px] font-bold uppercase text-accent">Contoh Penggunaan</span>
+                            <span className="text-xs font-bold uppercase text-accent">Contoh Penggunaan</span>
                             <button
                               type="button"
                               onClick={() => handlePlayAudio(req.example.jp)}
@@ -547,7 +547,7 @@ export const KeigoTrainerModal: React.FC<KeigoTrainerModalProps> = ({
                             </button>
                           </div>
                           <div className="text-xs font-bold text-appText-bright">{req.example.jp}</div>
-                          <div className="text-[10px] text-appText-muted">{req.example.id}</div>
+                          <div className="text-xs text-appText-muted">{req.example.id}</div>
                         </div>
                       </div>
                     ))}
@@ -596,7 +596,7 @@ export const KeigoTrainerModal: React.FC<KeigoTrainerModalProps> = ({
                     }`}
                   >
                     <div className="font-bold text-xs text-appText-bright">Diri Saya Sendiri (私)</div>
-                    <div className="text-[11px] text-appText-muted mt-0.5">
+                    <div className="text-xs text-appText-muted mt-0.5">
                       Tindakan saya sendiri yang ditujukan kepada lawan bicara.
                     </div>
                   </button>
@@ -613,7 +613,7 @@ export const KeigoTrainerModal: React.FC<KeigoTrainerModalProps> = ({
                     }`}
                   >
                     <div className="font-bold text-xs text-appText-bright">Orang Lain (他人・相手)</div>
-                    <div className="text-[11px] text-appText-muted mt-0.5">
+                    <div className="text-xs text-appText-muted mt-0.5">
                       Tindakan lawan bicara, atasan, tamu, atau rekan kerja.
                     </div>
                   </button>
@@ -646,7 +646,7 @@ export const KeigoTrainerModal: React.FC<KeigoTrainerModalProps> = ({
                       }`}
                     >
                       <div className="font-bold text-xs text-appText-bright">Bicara Langsung dengannya</div>
-                      <div className="text-[11px] text-appText-muted mt-0.5">
+                      <div className="text-xs text-appText-muted mt-0.5">
                         Saya sedang bertatap muka / menelepon langsung orang tersebut.
                       </div>
                     </button>
@@ -663,7 +663,7 @@ export const KeigoTrainerModal: React.FC<KeigoTrainerModalProps> = ({
                       }`}
                     >
                       <div className="font-bold text-xs text-appText-bright">Membicarakan Pihak Ketiga</div>
-                      <div className="text-[11px] text-appText-muted mt-0.5">
+                      <div className="text-xs text-appText-muted mt-0.5">
                         Saya sedang menceritakan tindakan orang lain kepada lawan bicara saya.
                       </div>
                     </button>
@@ -697,7 +697,7 @@ export const KeigoTrainerModal: React.FC<KeigoTrainerModalProps> = ({
                       }`}
                     >
                       <div className="font-bold text-xs text-appText-bright">Kelompok Sendiri (Uchi - 内)</div>
-                      <div className="text-[11px] text-appText-muted mt-0.5">
+                      <div className="text-xs text-appText-muted mt-0.5">
                         Misal: Bos/rekan sekantor saya, saat saya berbicara dengan klien pihak luar.
                       </div>
                     </button>
@@ -714,7 +714,7 @@ export const KeigoTrainerModal: React.FC<KeigoTrainerModalProps> = ({
                       }`}
                     >
                       <div className="font-bold text-xs text-appText-bright">Pihak Luar (Soto - 外)</div>
-                      <div className="text-[11px] text-appText-muted mt-0.5">
+                      <div className="text-xs text-appText-muted mt-0.5">
                         Misal: Orang dari perusahaan rekanan atau tamu kehormatan.
                       </div>
                     </button>
@@ -820,11 +820,11 @@ export const KeigoTrainerModal: React.FC<KeigoTrainerModalProps> = ({
               <div className="p-4 sm:p-5 rounded-2xl bg-surface-2 border border-accent/20 space-y-3">
                 <div className="flex items-center justify-between">
                   <div className="flex items-center gap-2">
-                    <span className="text-[10px] uppercase font-bold px-2 py-0.5 rounded-full bg-accent/20 text-accent">
+                    <span className="text-xs uppercase font-bold px-2 py-0.5 rounded-full bg-accent/20 text-accent">
                       {currentScenario.categoryLabel}
                     </span>
                     {currentScenario.flipCase && (
-                      <span className="text-[10px] uppercase font-bold px-2 py-0.5 rounded-full bg-rose-500/20 text-rose-300 border border-rose-500/30 flex items-center gap-1">
+                      <span className="text-xs uppercase font-bold px-2 py-0.5 rounded-full bg-rose-500/20 text-rose-300 border border-rose-500/30 flex items-center gap-1">
                         <AlertTriangle className="w-3 h-3" /> Uchi-Soto Flip
                       </span>
                     )}
@@ -946,7 +946,7 @@ export const KeigoTrainerModal: React.FC<KeigoTrainerModalProps> = ({
                     <div className="flex items-center justify-between gap-2">
                       <h4 className="text-sm font-extrabold text-appText-bright">{note.title}</h4>
                       <span
-                        className={`text-[10px] font-bold px-2.5 py-0.5 rounded-full shrink-0 ${
+                        className={`text-xs font-bold px-2.5 py-0.5 rounded-full shrink-0 ${
                           note.status.includes('Settled')
                             ? 'bg-rose-500/15 text-rose-300 border border-rose-500/25'
                             : 'bg-amber-500/15 text-amber-300 border border-amber-500/25'
@@ -958,14 +958,14 @@ export const KeigoTrainerModal: React.FC<KeigoTrainerModalProps> = ({
 
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 text-xs">
                       <div className="p-3 rounded-xl bg-surface border border-accent/10 space-y-1">
-                        <div className="text-[10px] font-bold uppercase text-appText-muted">
+                        <div className="text-xs font-bold uppercase text-appText-muted">
                           Diajarkan di Buku Pelajaran
                         </div>
                         <p className="text-appText-muted leading-relaxed">{note.textbookTaught}</p>
                       </div>
 
                       <div className="p-3 rounded-xl bg-surface border border-accent/10 space-y-1">
-                        <div className="text-[10px] font-bold uppercase text-amber-400">
+                        <div className="text-xs font-bold uppercase text-amber-400">
                           Realitas Lapangan Kerja Jepang
                         </div>
                         <p className="text-appText-bright leading-relaxed">{note.workplaceReality}</p>

@@ -21,7 +21,6 @@ import {
 import { speakJapanese } from '../lib/audio/tts';
 import { playFlipSfx, playSuccessSfx, playErrorSfx, playFanfareSfx } from '../lib/audio/sfx';
 import { fireConfetti } from '../lib/ui/confetti';
-import { QuizArenaHub } from '../components/quiz/QuizArenaHub';
 import { QuizAudioListeningCard } from '../components/quiz/QuizAudioListeningCard';
 import { QuizExplanationDetail } from '../components/quiz/QuizExplanationDetail';
 import { QuizResultView } from '../components/quiz/QuizResultView';
@@ -34,6 +33,9 @@ import { ReportIssueModal, ReportItemContext } from '../components/ui/ReportIssu
 import { QuizExitGuardModal } from '../components/quiz/QuizExitGuardModal';
 import { PanicRecallCard } from '../components/quiz/PanicRecallCard';
 import { MoraPacingCard } from '../components/quiz/MoraPacingCard';
+import { ExamLmsHub } from '../components/exercise/ExamLmsHub';
+import { CbtRunnerScreen } from '../components/exercise/CbtRunnerScreen';
+import { useExerciseStore } from '../store/useExerciseStore';
 
 export const QuizPage: React.FC = () => {
   const {
@@ -49,9 +51,29 @@ export const QuizPage: React.FC = () => {
     clearFSRSDueReviewTrigger,
   } = useAppStore();
 
-  // Navigation state within Quiz Arena: 'hub' (dashboard) | 'quiz' (active session)
-  const [viewState, setViewState] = useState<'hub' | 'quiz'>('hub');
+  // Navigation state within Quiz Arena: 'hub' (dashboard) | 'quiz' (active session) | 'cbt' (14 Golden Sets CBT)
+  const [viewState, setViewState] = useState<'hub' | 'quiz' | 'cbt'>('hub');
   const [activeMode, setActiveMode] = useState<QuizMode>('flashcard');
+
+  // Handle launch of authentic 14 Golden Sets CBT
+  const handleStartExerciseSet = async (setId: string, mode: 'guided' | 'strict') => {
+    setIsLoading(true);
+    const success = await useExerciseStore.getState().startSet(setId, mode);
+    setIsLoading(false);
+    if (success) {
+      setViewState('cbt');
+    } else {
+      showToast('Gagal memuat set latihan', '⚠️');
+    }
+  };
+
+  useEffect(() => {
+    // Check if an active session was already loaded into memory
+    const active = useExerciseStore.getState().currentSet;
+    if (active && !useExerciseStore.getState().isSubmitted) {
+      setViewState('cbt');
+    }
+  }, []);
 
   // Session configuration state
   const [sessionCount, setSessionCount] = useState<number>(10);
@@ -557,21 +579,25 @@ export const QuizPage: React.FC = () => {
     }
   };
 
+  // State 0: Authentic 14 Golden Sets CBT Screen (Full-Screen Distraction-Free)
+  if (viewState === 'cbt') {
+    return <CbtRunnerScreen onExit={() => setViewState('hub')} />;
+  }
+
   return (
     <div className="max-w-4xl mx-auto py-4 sm:py-6 space-y-6 animate-in fade-in duration-300">
-      {/* State 1: Arena Hub Dashboard */}
+      {/* State 1: Exam LMS Hub (The 3 Clean Doors) */}
       {viewState === 'hub' ? (
-        <QuizArenaHub
-          onStartMode={(m) => startStandardSession(m)}
+        <ExamLmsHub
+          onStartExerciseSet={handleStartExerciseSet}
           onStartFSRSDue={startFSRSDueSession}
           onStartMistakeReview={startMistakeSession}
-          onOpenConfig={() => setIsConfigOpen(true)}
-          sessionCount={sessionCount}
-          selectedLevel={selectedLevel}
+          onStartDynamicDrill={(count) => {
+            setSessionCount(count);
+            startStandardSession('multiple-choice');
+          }}
           dueCount={dueCount}
           mistakesCount={mistakesList.length}
-          onSelectLevel={setSelectedLevel}
-          onSelectSessionCount={setSessionCount}
         />
       ) : (
         /* State 2: Active Focused Quiz Arena */
@@ -766,7 +792,7 @@ export const QuizPage: React.FC = () => {
                       )}
                     </div>
 
-                    <div className="text-xs text-appText-muted/60">
+                    <div className="text-xs text-appText-muted">
                       {isFlipped ? 'Pilih tingkat pengingatan di bawah' : 'Nugget Nihongo Flashcard'}
                     </div>
                   </div>
@@ -851,12 +877,12 @@ export const QuizPage: React.FC = () => {
                     <div className="text-2xl sm:text-4xl font-jp font-bold text-appText-bright">
                       {currentQ.questionText}
                     </div>
-                    {feedback && currentQ.pitchContour && (
+                    {feedback && currentQ.pitchContour ? (
                       <div className="inline-flex items-center gap-2 px-3 py-1 rounded-xl bg-purple-500/15 border border-purple-500/30 text-purple-300 text-xs font-mono animate-in fade-in">
                         <span className="font-semibold text-appText-muted">Aksen Tokyo:</span>
                         <span className="font-extrabold text-accent-hot">{currentQ.pitchContour}</span>
                       </div>
-                    )}
+                    ) : null}
                     {currentQ.subText && (
                       <div className="pt-1">
                         {activeMode === 'fill-in' || currentQ.subText.toLowerCase().includes('arti') ? (
@@ -948,7 +974,7 @@ export const QuizPage: React.FC = () => {
                   {/* Assembled Sentence Box */}
                   <div className="min-h-[76px] w-full max-w-full bg-surface-2 border border-accent/30 rounded-2xl p-3 sm:p-4 flex flex-wrap gap-2 sm:gap-2.5 items-center overflow-hidden">
                     {assembledTokens.length === 0 ? (
-                      <span className="text-xs text-appText-muted/60 italic px-2">
+                      <span className="text-xs text-appText-muted italic px-2">
                         Ketuk kata di bawah untuk mulai menyusun kalimat...
                       </span>
                     ) : (

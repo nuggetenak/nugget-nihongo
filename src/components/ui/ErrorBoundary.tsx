@@ -204,18 +204,18 @@ export class ErrorBoundary extends Component<Props, State> {
               </button>
 
               {isDetailsOpen && (
-                <div className="p-3 border-t border-stone-800 text-[11px] font-mono text-red-400 max-h-48 overflow-y-auto space-y-1 scrollbar-none select-text">
+                <div className="p-3 border-t border-stone-800 text-xs font-mono text-red-400 max-h-48 overflow-y-auto space-y-1 scrollbar-none select-text">
                   <div className="text-stone-500">Waktu: {errorTimestamp || 'N/A'}</div>
                   <div className="font-bold text-red-300">
                     {error?.name || 'Error'}: {error?.message || 'Unknown error occurred'}
                   </div>
                   {error?.stack && (
-                    <pre className="text-[10px] text-stone-400 whitespace-pre-wrap leading-tight mt-1 font-mono">
+                    <pre className="text-xs text-stone-400 whitespace-pre-wrap leading-tight mt-1 font-mono">
                       {error.stack}
                     </pre>
                   )}
                   {errorInfo?.componentStack && (
-                    <div className="mt-2 text-[10px] text-stone-500">
+                    <div className="mt-2 text-xs text-stone-500">
                       <span className="font-bold text-stone-400">Component Hierarchy:</span>
                       <pre className="whitespace-pre-wrap">{errorInfo.componentStack}</pre>
                     </div>
@@ -240,7 +240,7 @@ export class ErrorBoundary extends Component<Props, State> {
               <button
                 type="button"
                 onClick={this.handleGoHome}
-                className="w-full min-h-[44px] py-2.5 px-4 rounded-2xl bg-stone-800 hover:bg-stone-750 text-stone-200 font-bold text-xs flex items-center justify-center gap-2 transition-all border border-stone-700/60 active:scale-95"
+                className="w-full min-h-[44px] py-2.5 px-4 rounded-2xl bg-surface-2 hover:bg-surface-3 text-appText-bright font-bold text-xs flex items-center justify-center gap-2 transition-all border border-theme active:scale-95"
               >
                 <Home className="w-4 h-4" />
                 <span>Kembali ke Beranda Utama</span>
@@ -253,7 +253,7 @@ export class ErrorBoundary extends Component<Props, State> {
                   type="button"
                   onClick={this.handleExportBackup}
                   title="Unduh cadangan data belajar JSON ke perangkatmu"
-                  className="w-full min-h-[44px] py-2.5 px-3 rounded-2xl bg-stone-850 hover:bg-stone-800 text-stone-300 hover:text-amber-300 font-medium text-[11px] flex items-center justify-center gap-1.5 transition-all border border-stone-800 active:scale-95"
+                  className="w-full min-h-[44px] py-2.5 px-3 rounded-2xl bg-surface-2 hover:bg-surface-3 text-appText-muted hover:text-amber-400 font-medium text-xs flex items-center justify-center gap-1.5 transition-all border border-theme active:scale-95"
                 >
                   <Download className="w-3.5 h-3.5" />
                   <span>Cadangan Data</span>
@@ -264,7 +264,7 @@ export class ErrorBoundary extends Component<Props, State> {
                   type="button"
                   onClick={this.handleResetVolatileCache}
                   title="Bersihkan cache tampilan tanpa menghapus kartu belajar"
-                  className="w-full min-h-[44px] py-2.5 px-3 rounded-2xl bg-stone-850 hover:bg-stone-800 text-stone-300 hover:text-amber-300 font-medium text-[11px] flex items-center justify-center gap-1.5 transition-all border border-stone-800 active:scale-95"
+                  className="w-full min-h-[44px] py-2.5 px-3 rounded-2xl bg-surface-2 hover:bg-surface-3 text-appText-muted hover:text-amber-400 font-medium text-xs flex items-center justify-center gap-1.5 transition-all border border-theme active:scale-95"
                 >
                   <Trash2 className="w-3.5 h-3.5" />
                   <span>Bersihkan Cache</span>
@@ -275,7 +275,7 @@ export class ErrorBoundary extends Component<Props, State> {
                   type="button"
                   onClick={this.handleCopyDiagnostics}
                   title="Salin rincian teknis untuk laporan kendala"
-                  className="w-full min-h-[44px] py-2.5 px-3 rounded-2xl bg-stone-850 hover:bg-stone-800 text-stone-300 hover:text-amber-300 font-medium text-[11px] flex items-center justify-center gap-1.5 transition-all border border-stone-800 active:scale-95"
+                  className="w-full min-h-[44px] py-2.5 px-3 rounded-2xl bg-surface-2 hover:bg-surface-3 text-appText-muted hover:text-amber-400 font-medium text-xs flex items-center justify-center gap-1.5 transition-all border border-theme active:scale-95"
                 >
                   {isCopied ? <Check className="w-3.5 h-3.5 text-emerald-400" /> : <Copy className="w-3.5 h-3.5" />}
                   <span>{isCopied ? 'Tersalin!' : 'Salin Log'}</span>

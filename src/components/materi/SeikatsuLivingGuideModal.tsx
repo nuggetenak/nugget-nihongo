@@ -247,7 +247,7 @@ export const SeikatsuLivingGuideModal: React.FC<SeikatsuLivingGuideModalProps> =
                 <h2 className="text-base sm:text-xl font-black text-appText-bright truncate">
                   Panduan Hidup & Bekerja di Jepang (Seikatsu Nihongo)
                 </h2>
-                <span className="px-2 py-0.5 rounded-full bg-emerald-500/15 border border-emerald-500/30 text-emerald-400 font-extrabold text-[10px] uppercase">
+                <span className="px-2 py-0.5 rounded-full bg-emerald-500/15 border border-emerald-500/30 text-emerald-400 font-extrabold text-xs uppercase">
                   Resmi MIC
                 </span>
               </div>
@@ -326,7 +326,7 @@ export const SeikatsuLivingGuideModal: React.FC<SeikatsuLivingGuideModalProps> =
                     <div className="space-y-0.5 min-w-0">
                       <div className="flex items-center gap-2 flex-wrap">
                         <span
-                          className={`px-2 py-0.5 rounded-full text-[10px] font-black uppercase ${
+                          className={`px-2 py-0.5 rounded-full text-xs font-black uppercase ${
                             item.importance === 'DARURAT'
                               ? 'bg-rose-500/20 text-rose-400 border border-rose-500/40 animate-pulse'
                               : item.importance === 'WAJIB'
@@ -349,7 +349,7 @@ export const SeikatsuLivingGuideModal: React.FC<SeikatsuLivingGuideModalProps> =
                         </button>
                       </div>
                       <div className="text-xs text-appText-muted font-bold">
-                        🇮🇩 {item.titleId} <span className="font-normal font-mono text-[10px]">({item.romaji})</span>
+                        🇮🇩 {item.titleId} <span className="font-normal font-mono text-xs">({item.romaji})</span>
                       </div>
                     </div>
 
@@ -384,7 +384,7 @@ export const SeikatsuLivingGuideModal: React.FC<SeikatsuLivingGuideModalProps> =
 
                   {/* Vocabulary Pills */}
                   <div className="space-y-1.5 pt-1">
-                    <div className="text-[10px] font-bold text-appText-muted uppercase tracking-wider">
+                    <div className="text-xs font-bold text-appText-muted uppercase tracking-wider">
                       Kosakata Kunci Penting:
                     </div>
                     <div className="grid grid-cols-1 sm:grid-cols-3 gap-2">
@@ -396,11 +396,11 @@ export const SeikatsuLivingGuideModal: React.FC<SeikatsuLivingGuideModalProps> =
                           <div className="min-w-0">
                             <div className="font-jp text-xs font-bold text-appText-bright flex items-center gap-1">
                               <span>{vocab.kanji}</span>
-                              <span className="text-[10px] text-accent font-normal font-mono">
+                              <span className="text-xs text-accent font-normal font-mono">
                                 ({vocab.kana})
                               </span>
                             </div>
-                            <div className="text-[10px] text-appText-muted truncate">
+                            <div className="text-xs text-appText-muted truncate">
                               {vocab.arti}
                             </div>
                           </div>
@@ -424,7 +424,7 @@ export const SeikatsuLivingGuideModal: React.FC<SeikatsuLivingGuideModalProps> =
 
         {/* ── FOOTER ── */}
         <div className="p-3.5 sm:p-4 bg-surface-3 border-t border-accent/20 flex flex-col sm:flex-row sm:items-center justify-between gap-3 shrink-0 text-xs">
-          <div className="text-appText-muted text-[11px] flex items-center gap-1.5">
+          <div className="text-appText-muted text-xs flex items-center gap-1.5">
             <Info className="w-4 h-4 text-accent shrink-0" />
             <span>Panduan ini disusun berdasarkan pedoman resmi Kementerian Dalam Negeri & Komunikasi Jepang (MIC).</span>
           </div>

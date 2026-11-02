@@ -281,11 +281,11 @@ export const KanjiDojoView: React.FC<KanjiDojoViewProps> = ({ onAskSensei }) => 
               >
                 {/* Top Badge: Level & Strokes */}
                 <div className="flex items-center justify-between mb-2">
-                  <span className="px-2 py-0.5 rounded text-[10px] font-black bg-amber-500/15 text-accent border border-amber-500/25">
+                  <span className="px-2 py-0.5 rounded text-xs font-black bg-amber-500/15 text-accent border border-amber-500/25">
                     {item.level}
                   </span>
                   <div className="flex items-center gap-1">
-                    <span className="text-[10px] text-appText-muted font-medium">
+                    <span className="text-xs text-appText-muted font-medium">
                       {item.strokes} g
                     </span>
                     <button
@@ -310,7 +310,7 @@ export const KanjiDojoView: React.FC<KanjiDojoViewProps> = ({ onAskSensei }) => 
                   <p className="text-xs font-bold text-appText truncate">
                     {meaningsId}
                   </p>
-                  <p className="text-[10px] text-appText-muted font-japanese truncate">
+                  <p className="text-xs text-appText-muted font-japanese truncate">
                     {onyomiPreview || kunyomiPreview || '-'}
                   </p>
                 </div>

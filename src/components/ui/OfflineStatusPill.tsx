@@ -43,7 +43,7 @@ export const OfflineStatusPill: React.FC = () => {
   return (
     <div
       title="Aplikasi berjalan dalam mode offline lokal"
-      className="flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-amber-500/15 border border-amber-500/35 text-amber-300 text-[11px] font-bold animate-pulse shadow-sm"
+      className="flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-amber-500/15 border border-amber-500/35 text-amber-300 text-xs font-bold animate-pulse shadow-sm"
     >
       <WifiOff className="w-3 h-3 text-amber-400" />
       <span>Mode Offline</span>

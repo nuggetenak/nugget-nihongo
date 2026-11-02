@@ -200,14 +200,14 @@ export const LicenseAttributionModal: React.FC<LicenseAttributionModalProps> = (
                   <span>{item.title}</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <span className="px-2 py-0.5 rounded-md bg-accent/15 text-accent font-mono text-[10px] font-bold">
+                  <span className="px-2 py-0.5 rounded-md bg-accent/15 text-accent font-mono text-xs font-bold">
                     {item.licenseType}
                   </span>
                   <a
                     href={item.licenseUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-[11px] text-accent hover:underline flex items-center gap-1 shrink-0"
+                    className="text-xs text-accent hover:underline flex items-center gap-1 shrink-0"
                   >
                     <span>Teks Lisensi</span>
                     <ExternalLink className="w-3 h-3" />
@@ -219,7 +219,7 @@ export const LicenseAttributionModal: React.FC<LicenseAttributionModalProps> = (
                 {item.description}
               </p>
 
-              <div className="pt-1.5 border-t border-accent/10 flex flex-col sm:flex-row sm:items-center justify-between gap-1 text-[11px] text-appText-muted">
+              <div className="pt-1.5 border-t border-accent/10 flex flex-col sm:flex-row sm:items-center justify-between gap-1 text-xs text-appText-muted">
                 <div>
                   <strong>Pemegang Hak Cipta:</strong> {item.copyright}
                 </div>

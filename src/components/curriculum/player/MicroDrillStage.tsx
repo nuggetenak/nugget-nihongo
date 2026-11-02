@@ -172,7 +172,7 @@ export const MicroDrillStage: React.FC<MicroDrillStageProps> = ({ drills = [], o
           Cek Pemahaman #{currentIndex + 1} dari {activeQueue.length}
         </span>
         {retryQueue.length > 0 && (
-          <span className="text-amber-400 flex items-center gap-1 text-[11px]">
+          <span className="text-amber-400 flex items-center gap-1 text-xs">
             <RotateCcw className="w-3 h-3" />
             Putaran Ulas: {retryQueue.length} Soal
           </span>
@@ -268,7 +268,7 @@ export const MicroDrillStage: React.FC<MicroDrillStageProps> = ({ drills = [], o
                   }`}
                 >
                   <span className="break-words">{cleanOptionText(opt)}</span>
-                  <span className="w-5 h-5 rounded-full border border-accent/20 shrink-0 flex items-center justify-center text-[10px]">
+                  <span className="w-5 h-5 rounded-full border border-accent/20 shrink-0 flex items-center justify-center text-xs">
                     {String.fromCharCode(65 + oIdx)}
                   </span>
                 </button>

@@ -105,7 +105,7 @@ export class RouteErrorBoundary extends Component<RouteErrorBoundaryProps, Route
 
           {/* Heading & Context */}
           <div className="space-y-2">
-            <div className="text-[11px] font-mono font-bold tracking-wider uppercase text-amber-400">
+            <div className="text-xs font-mono font-bold tracking-wider uppercase text-amber-400">
               Modul Tampilan Terisolasi ({tabName})
             </div>
             <h2 className="text-xl sm:text-2xl font-black text-appText-bright">
@@ -129,17 +129,17 @@ export class RouteErrorBoundary extends Component<RouteErrorBoundaryProps, Route
             </button>
 
             {isDetailsOpen && (
-              <div className="p-3 border-t border-theme text-[11px] font-mono text-red-300 max-h-40 overflow-y-auto space-y-1 scrollbar-none select-text">
+              <div className="p-3 border-t border-theme text-xs font-mono text-red-300 max-h-40 overflow-y-auto space-y-1 scrollbar-none select-text">
                 <div className="font-bold">
                   {error?.name || 'Error'}: {error?.message || 'Unknown runtime error'}
                 </div>
                 {error?.stack && (
-                  <pre className="text-[10px] text-appText-muted whitespace-pre-wrap leading-tight mt-1">
+                  <pre className="text-xs text-appText-muted whitespace-pre-wrap leading-tight mt-1">
                     {error.stack.split('\n').slice(0, 4).join('\n')}
                   </pre>
                 )}
                 {errorInfo?.componentStack && (
-                  <pre className="text-[9px] text-stone-400 whitespace-pre-wrap mt-1">
+                  <pre className="text-xs text-stone-400 whitespace-pre-wrap mt-1">
                     {errorInfo.componentStack.split('\n').slice(0, 4).join('\n')}
                   </pre>
                 )}

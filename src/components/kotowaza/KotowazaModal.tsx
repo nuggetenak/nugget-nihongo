@@ -105,7 +105,7 @@ export const KotowazaModal: React.FC<KotowazaModalProps> = ({ isOpen, onClose })
           <div className="relative z-10 p-5 sm:p-6 flex items-start justify-between gap-4">
             <div className="space-y-1.5 min-w-0">
               <div className="flex items-center gap-2">
-                <span className="px-2.5 py-0.5 rounded-full bg-amber-500/20 text-accent border border-amber-500/30 text-[10px] font-bold uppercase tracking-wider flex items-center gap-1">
+                <span className="px-2.5 py-0.5 rounded-full bg-amber-500/20 text-accent border border-amber-500/30 text-xs font-bold uppercase tracking-wider flex items-center gap-1">
                   <Sparkles className="w-3 h-3" />
                   <span>{KOTOWAZA_LIST.length} Mutiara Harian (366+)</span>
                 </span>
@@ -143,7 +143,7 @@ export const KotowazaModal: React.FC<KotowazaModalProps> = ({ isOpen, onClose })
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               placeholder="Cari peribahasa, bacaan hiragana, arti, atau kata kunci (contoh: batu, monyet, waktu)..."
-              className="w-full pl-10 pr-10 py-2.5 rounded-2xl bg-surface border border-accent/20 text-xs sm:text-sm text-appText-bright placeholder:text-appText-muted/60 focus:outline-none focus:border-accent transition-all"
+              className="w-full pl-10 pr-10 py-2.5 rounded-2xl bg-surface border border-accent/20 text-xs sm:text-sm text-appText-bright placeholder:text-appText-muted focus:outline-none focus:border-accent transition-all"
             />
             {searchQuery && (
               <button
@@ -157,7 +157,7 @@ export const KotowazaModal: React.FC<KotowazaModalProps> = ({ isOpen, onClose })
 
           {/* Horizontal Scrolling Category Pills */}
           <div className="flex items-center gap-1.5 overflow-x-auto scrollbar-none max-w-full pb-0.5">
-            <span className="text-[11px] font-bold text-accent shrink-0 flex items-center gap-1 mr-1">
+            <span className="text-xs font-bold text-accent shrink-0 flex items-center gap-1 mr-1">
               <Filter className="w-3 h-3" />
               <span className="hidden sm:inline">Kategori:</span>
             </span>
@@ -186,11 +186,11 @@ export const KotowazaModal: React.FC<KotowazaModalProps> = ({ isOpen, onClose })
           {!searchQuery && selectedCategory === 'Semua' && (
             <div className="p-4 sm:p-5 rounded-3xl bg-gradient-to-br from-amber-500/15 via-surface-2 to-surface border-2 border-accent/40 shadow-glow relative overflow-hidden group">
               <div className="flex items-center justify-between mb-2">
-                <span className="text-[11px] font-bold uppercase tracking-wider text-accent-hot flex items-center gap-1.5">
+                <span className="text-xs font-bold uppercase tracking-wider text-accent-hot flex items-center gap-1.5">
                   <Sparkles className="w-3.5 h-3.5" />
                   <span>Mutiara Hari Ini · 今日のことわざ</span>
                 </span>
-                <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-accent/20 text-accent border border-accent/30">
+                <span className="text-xs font-bold px-2 py-0.5 rounded-full bg-accent/20 text-accent border border-accent/30">
                   {dailyItem.category}
                 </span>
               </div>
@@ -200,7 +200,7 @@ export const KotowazaModal: React.FC<KotowazaModalProps> = ({ isOpen, onClose })
                   <div className="text-xl sm:text-2xl font-jp font-bold text-appText-bright">
                     <RubyText text={dailyItem.jp} furigana={dailyItem.reading} />
                   </div>
-                  <div className="text-[11px] font-mono text-appText-muted mt-0.5">
+                  <div className="text-xs font-mono text-appText-muted mt-0.5">
                     /{dailyItem.romaji}/
                   </div>
                 </div>
@@ -228,7 +228,7 @@ export const KotowazaModal: React.FC<KotowazaModalProps> = ({ isOpen, onClose })
                 "{dailyItem.meaning}"
               </div>
               {dailyItem.literal && (
-                <div className="text-[11px] text-appText-muted italic">
+                <div className="text-xs text-appText-muted italic">
                   Harfiah: {dailyItem.literal}
                 </div>
               )}
@@ -286,7 +286,7 @@ export const KotowazaModal: React.FC<KotowazaModalProps> = ({ isOpen, onClose })
                   <div>
                     {/* Top row: Category tag & Actions */}
                     <div className="flex items-center justify-between gap-2 mb-2">
-                      <span className="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-lg bg-surface border border-accent/20 text-accent">
+                      <span className="text-xs font-bold uppercase tracking-wider px-2 py-0.5 rounded-lg bg-surface border border-accent/20 text-accent">
                         {item.category}
                       </span>
                       <div className="flex items-center gap-1.5">
@@ -316,7 +316,7 @@ export const KotowazaModal: React.FC<KotowazaModalProps> = ({ isOpen, onClose })
                       <div className="text-lg sm:text-xl font-jp font-bold text-appText-bright group-hover:text-accent transition-colors">
                         <RubyText text={item.jp} furigana={item.reading} />
                       </div>
-                      <div className="text-[11px] font-mono text-appText-muted">
+                      <div className="text-xs font-mono text-appText-muted">
                         /{item.romaji}/
                       </div>
                     </div>
@@ -327,7 +327,7 @@ export const KotowazaModal: React.FC<KotowazaModalProps> = ({ isOpen, onClose })
                         "{item.meaning}"
                       </div>
                       {item.literal && (
-                        <div className="text-[11px] text-appText-muted italic">
+                        <div className="text-xs text-appText-muted italic">
                           Harfiah: {item.literal}
                         </div>
                       )}
@@ -336,13 +336,13 @@ export const KotowazaModal: React.FC<KotowazaModalProps> = ({ isOpen, onClose })
 
                   {/* Wisdom & Origin footer */}
                   <div className="mt-3 pt-3 border-t border-accent/15 space-y-2">
-                    <div className="text-[11px] text-appText-muted/95 leading-relaxed bg-surface/50 p-2.5 rounded-xl border border-accent/10">
+                    <div className="text-xs text-appText-muted/95 leading-relaxed bg-surface/50 p-2.5 rounded-xl border border-accent/10">
                       <span className="font-bold text-accent">💡 Hikmah: </span>
                       {item.wisdom}
                     </div>
 
                     {item.origin && (
-                      <div className="text-[10px] text-appText-muted/70 flex items-start gap-1">
+                      <div className="text-xs text-appText-muted flex items-start gap-1">
                         <BookOpen className="w-3 h-3 text-accent shrink-0 mt-0.5" />
                         <span className="italic">Asal: {item.origin}</span>
                       </div>
@@ -356,7 +356,7 @@ export const KotowazaModal: React.FC<KotowazaModalProps> = ({ isOpen, onClose })
 
         {/* Modal Bottom Footer */}
         <div className="p-3.5 sm:p-4 border-t border-accent/15 bg-surface-2/70 flex items-center justify-between text-xs text-appText-muted shrink-0">
-          <div className="flex items-center gap-2 text-[11px]">
+          <div className="flex items-center gap-2 text-xs">
             <Compass className="w-3.5 h-3.5 text-accent" />
             <span className="hidden sm:inline">Peribahasa Jepang mencerminkan kearifan lokal berabad-abad</span>
             <span className="sm:hidden">52 Koleksi Peribahasa</span>

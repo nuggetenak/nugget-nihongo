@@ -125,7 +125,7 @@ export const InstallModal: React.FC<InstallModalProps> = ({ isOpen, onClose }) =
             </button>
           </div>
         ) : (
-          <div className="p-4 rounded-xl bg-stone-900/60 border border-amber-900/20 text-xs text-stone-300 mb-4 text-center">
+          <div className="p-4 rounded-xl bg-surface-2 border border-theme text-xs text-appText-muted mb-4 text-center">
             <p>
               Buka menu browser Anda (tiga titik di Chrome/Edge) lalu pilih <strong>"Instal Aplikasi"</strong> atau <strong>"Tambahkan ke Layar Utama"</strong>.
             </p>

@@ -39,7 +39,7 @@ export const ResearchMethodologyModal: React.FC<ResearchMethodologyModalProps> =
               >
                 Landasan Kurikulum & Riset Ilmiah
               </h2>
-              <p className="text-[11px] text-appText-muted truncate">
+              <p className="text-xs text-appText-muted truncate">
                 Metode Belajar Terstruktur yang Disesuaikan untuk Penutur Indonesia
               </p>
             </div>

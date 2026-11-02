@@ -127,7 +127,7 @@ export const AchievementsBadgeShowcase: React.FC<AchievementsBadgeShowcaseProps>
                   </span>
                 )}
                 {!isEarned && (
-                  <span className="text-xs text-appText-muted/80 font-mono block pt-0.5">
+                  <span className="text-xs text-appText-muted font-mono block pt-0.5">
                     🎯 Kriteria: {badge.desc}
                   </span>
                 )}

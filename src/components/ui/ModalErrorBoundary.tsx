@@ -93,7 +93,7 @@ export class ModalErrorBoundary extends Component<ModalErrorBoundaryProps, Modal
 
             {/* Error Message */}
             {this.state.error && (
-              <div className="p-2.5 bg-bg/80 border border-border rounded-xl text-left overflow-x-auto text-[10px] font-mono text-red-400">
+              <div className="p-2.5 bg-bg/80 border border-border rounded-xl text-left overflow-x-auto text-xs font-mono text-red-400">
                 {this.state.error.name}: {this.state.error.message}
               </div>
             )}

@@ -176,7 +176,7 @@ export const InteractiveSentence: React.FC<InteractiveSentenceProps> = ({
                       【{selectedToken.reading}】
                     </div>
                   )}
-                  <span className="inline-block text-[10px] font-semibold px-2 py-0.5 rounded-md bg-amber-500/15 text-accent border border-accent/25 mt-0.5">
+                  <span className="inline-block text-xs font-semibold px-2 py-0.5 rounded-md bg-amber-500/15 text-accent border border-accent/25 mt-0.5">
                     {POS_LABELS[selectedToken.pos || 'other']}
                   </span>
                 </div>
@@ -211,14 +211,14 @@ export const InteractiveSentence: React.FC<InteractiveSentenceProps> = ({
                   <Sparkles className="w-4 h-4 shrink-0" />
                   <span>Dekomposisi Konjugasi (Yomitan)</span>
                 </div>
-                <div className="text-[11px] text-appText leading-relaxed">
+                <div className="text-xs text-appText leading-relaxed">
                   Bentuk dasar (kamus): <strong className="font-jp text-xs text-accent-hot">{deinflection.lemma}</strong>
                 </div>
-                <div className="text-[11px] text-appText-muted leading-relaxed">
+                <div className="text-xs text-appText-muted leading-relaxed">
                   Perubahan: {deinflection.reasons.join(' → ')}
                 </div>
                 {deinflection.steps.length > 0 && (
-                  <div className="text-[10px] text-accent italic bg-surface/50 p-2 rounded-lg border border-accent/15 mt-1">
+                  <div className="text-xs text-accent italic bg-surface/50 p-2 rounded-lg border border-accent/15 mt-1">
                     {deinflection.steps[0].explanationId}
                   </div>
                 )}

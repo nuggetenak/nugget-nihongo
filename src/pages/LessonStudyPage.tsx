@@ -278,13 +278,13 @@ export const LessonStudyPage: React.FC = () => {
             </button>
 
             <div className="min-w-0 space-y-0.5">
-              <div className="flex flex-wrap items-center gap-1.5 text-[10px] sm:text-[11px] font-bold">
+              <div className="flex flex-wrap items-center gap-1.5 text-xs sm:text-xs font-bold">
                 <span className="px-2 py-0.5 rounded-md bg-amber-500/15 text-accent border border-amber-500/25 uppercase font-mono">
                   {trackId.toUpperCase()} · Unit {currentUnit?.unit_number}
                 </span>
                 <span className="text-appText-muted">Pelajaran #{currentLesson.lesson_number}</span>
                 {isLessonDone && (
-                  <span className="px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 flex items-center gap-1 text-[10px] font-extrabold">
+                  <span className="px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 flex items-center gap-1 text-xs font-extrabold">
                     <CheckCircle2 className="w-3 h-3" />
                     Tuntas ({drillScore}%)
                   </span>
@@ -294,7 +294,7 @@ export const LessonStudyPage: React.FC = () => {
               <h1 className="text-sm sm:text-lg font-extrabold text-appText-bright tracking-tight break-words">
                 {currentLesson.title_id}
               </h1>
-              <div className="text-[11px] sm:text-xs text-appText-muted font-jp font-medium truncate hidden sm:block">
+              <div className="text-xs sm:text-xs text-appText-muted font-jp font-medium truncate hidden sm:block">
                 {currentLesson.title_jp}
               </div>
             </div>
@@ -339,7 +339,7 @@ export const LessonStudyPage: React.FC = () => {
                 }`}
               >
                 <span className="shrink-0">{st.icon}</span>
-                <span className="min-w-0 truncate text-[10px] sm:text-xs">
+                <span className="min-w-0 truncate text-xs sm:text-xs">
                   <span className="sm:hidden">{st.shortLabel}</span>
                   <span className="hidden sm:inline">{st.label}</span>
                 </span>

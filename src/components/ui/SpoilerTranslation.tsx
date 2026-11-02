@@ -57,7 +57,7 @@ export const SpoilerTranslation: React.FC<SpoilerTranslationProps> = ({
           <span className="blur-[5px] opacity-40 group-hover:opacity-60 transition-opacity filter">
             {text}
           </span>
-          <span className="text-[10px] uppercase font-bold text-accent/80 bg-amber-500/15 px-1.5 py-0.5 rounded-md ml-1 group-hover:bg-amber-500/25">
+          <span className="text-xs uppercase font-bold text-accent/80 bg-amber-500/15 px-1.5 py-0.5 rounded-md ml-1 group-hover:bg-amber-500/25">
             Intip Petunjuk 👁️
           </span>
         </button>

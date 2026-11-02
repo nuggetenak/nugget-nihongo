@@ -160,11 +160,11 @@ export const ContextualSenseiSheet: React.FC = () => {
                 <h3 className="font-bold text-sm sm:text-base text-appText-bright truncate">
                   Tanya Sensei
                 </h3>
-                <span className="px-2 py-0.5 rounded-full text-[10px] font-bold uppercase bg-amber-500/15 text-amber-300 border border-amber-500/30">
+                <span className="px-2 py-0.5 rounded-full text-xs font-bold uppercase bg-amber-500/15 text-amber-300 border border-amber-500/30">
                   {senseiSheetContext.level.toUpperCase()}
                 </span>
               </div>
-              <p className="text-[11px] text-appText-muted truncate">
+              <p className="text-xs text-appText-muted truncate">
                 Diskusi langsung materi {senseiSheetContext.target}
               </p>
             </div>
@@ -193,7 +193,7 @@ export const ContextualSenseiSheet: React.FC = () => {
             )}
           </div>
           {senseiSheetContext.structure && (
-            <span className="text-[11px] font-mono text-accent bg-accent/10 px-2 py-0.5 rounded-md shrink-0 hidden md:inline">
+            <span className="text-xs font-mono text-accent bg-accent/10 px-2 py-0.5 rounded-md shrink-0 hidden md:inline">
               {senseiSheetContext.structure}
             </span>
           )}
@@ -228,7 +228,7 @@ export const ContextualSenseiSheet: React.FC = () => {
                   <div className="whitespace-pre-wrap break-words">{msg.content}</div>
 
                   {!isUser && (
-                    <div className="pt-1.5 border-t border-accent/10 flex items-center justify-between text-[11px] text-appText-muted">
+                    <div className="pt-1.5 border-t border-accent/10 flex items-center justify-between text-xs text-appText-muted">
                       <button
                         onClick={() => handlePlayVoice(msg.id, msg.content)}
                         className="inline-flex items-center gap-1 hover:text-accent transition-colors"
@@ -247,7 +247,7 @@ export const ContextualSenseiSheet: React.FC = () => {
                       </button>
 
                       {msg.modelUsed && (
-                        <span className="text-[10px] text-appText-muted/60">
+                        <span className="text-xs text-appText-muted">
                           {msg.modelUsed}
                         </span>
                       )}
@@ -283,7 +283,7 @@ export const ContextualSenseiSheet: React.FC = () => {
               }}
               rows={1}
               placeholder="Tanyakan lebih lanjut ke Sensei... (Enter)"
-              className="flex-1 bg-surface-2 border border-accent/20 focus:border-accent rounded-xl px-3 py-2 text-xs sm:text-sm text-appText-bright placeholder:text-appText-muted/60 focus:outline-none resize-none"
+              className="flex-1 bg-surface-2 border border-accent/20 focus:border-accent rounded-xl px-3 py-2 text-xs sm:text-sm text-appText-bright placeholder:text-appText-muted focus:outline-none resize-none"
             />
             <button
               onClick={() => handleSend()}

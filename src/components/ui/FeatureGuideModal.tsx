@@ -78,7 +78,7 @@ export const FeatureGuideModal: React.FC<FeatureGuideModalProps> = ({
               <h2 className="text-base sm:text-lg font-extrabold text-appText-bright">
                 Panduan Fitur & Navigasi
               </h2>
-              <p className="text-[11px] text-appText-muted">
+              <p className="text-xs text-appText-muted">
                 Peta jalan lengkap fitur Nugget Nihongo untuk pemula hingga mahir
               </p>
             </div>
@@ -148,14 +148,14 @@ export const FeatureGuideModal: React.FC<FeatureGuideModalProps> = ({
                     <h3 className="text-xs font-bold text-appText-bright">
                       Beranda (Home Dashboard)
                     </h3>
-                    <p className="text-[11px] text-appText-muted leading-relaxed">
+                    <p className="text-xs text-appText-muted leading-relaxed">
                       Statistik streak harian, total XP, rekomendasi "Kotoba Hari Ini" otomatis, kalender heatmap kebiasaan belajar, dan akses kilat ke materi.
                     </p>
                   </div>
                 </div>
                 <button
                   onClick={() => navigateTo('home')}
-                  className="px-3 py-1.5 rounded-lg bg-surface-3 hover:bg-accent hover:text-bg text-appText-bright text-[11px] font-bold shrink-0 transition-all flex items-center gap-1"
+                  className="px-3 py-1.5 rounded-lg bg-surface-3 hover:bg-accent hover:text-bg text-appText-bright text-xs font-bold shrink-0 transition-all flex items-center gap-1"
                 >
                   <span>Buka</span>
                   <ArrowRight className="w-3 h-3" />
@@ -171,14 +171,14 @@ export const FeatureGuideModal: React.FC<FeatureGuideModalProps> = ({
                     <h3 className="text-xs font-bold text-appText-bright">
                       Materi Hub (Kurikulum Orisinal, Kamus, & SSW)
                     </h3>
-                    <p className="text-[11px] text-appText-muted leading-relaxed">
+                    <p className="text-xs text-appText-muted leading-relaxed">
                       Jelajahi 8 Jalur Kurikulum Orisinal (JLPT N5–N1 & SSW Kaigo, Food Service, Konstruksi) dengan 74 unit, 155 pelajaran Can-Do CEFR-J, 4.800+ kata, 850+ pola kalimat, dan analisis kontrasif L1 bahasa Indonesia.
                     </p>
                   </div>
                 </div>
                 <button
                   onClick={() => navigateTo('materi')}
-                  className="px-3 py-1.5 rounded-lg bg-surface-3 hover:bg-accent hover:text-bg text-appText-bright text-[11px] font-bold shrink-0 transition-all flex items-center gap-1"
+                  className="px-3 py-1.5 rounded-lg bg-surface-3 hover:bg-accent hover:text-bg text-appText-bright text-xs font-bold shrink-0 transition-all flex items-center gap-1"
                 >
                   <span>Buka</span>
                   <ArrowRight className="w-3 h-3" />
@@ -194,14 +194,14 @@ export const FeatureGuideModal: React.FC<FeatureGuideModalProps> = ({
                     <h3 className="text-xs font-bold text-appText-bright">
                       Arena Kuis (13 Mode Fondasi & Spesialisasi)
                     </h3>
-                    <p className="text-[11px] text-appText-muted leading-relaxed">
+                    <p className="text-xs text-appText-muted leading-relaxed">
                       Dasbor latihan interaktif dengan FSRS Due Today. 8 Mode Fondasi (Flashcard 3D, Pilihan Ganda, Isian, Susun Kalimat, Audio, Konjugasi, Terjemahan, Eror Makna) & 5 Mode Spesialisasi (Panic Recall K3 5s, Mora Pacing 240 bpm, Pitch Accent Tokyo, Wacana Makro, Kolokasi).
                     </p>
                   </div>
                 </div>
                 <button
                   onClick={() => navigateTo('quiz')}
-                  className="px-3 py-1.5 rounded-lg bg-surface-3 hover:bg-accent hover:text-bg text-appText-bright text-[11px] font-bold shrink-0 transition-all flex items-center gap-1"
+                  className="px-3 py-1.5 rounded-lg bg-surface-3 hover:bg-accent hover:text-bg text-appText-bright text-xs font-bold shrink-0 transition-all flex items-center gap-1"
                 >
                   <span>Buka</span>
                   <ArrowRight className="w-3 h-3" />
@@ -217,14 +217,14 @@ export const FeatureGuideModal: React.FC<FeatureGuideModalProps> = ({
                     <h3 className="text-xs font-bold text-appText-bright">
                       Kebun Kata (Kanji Growth Garden)
                     </h3>
-                    <p className="text-[11px] text-appText-muted leading-relaxed">
+                    <p className="text-xs text-appText-muted leading-relaxed">
                       Taman visual kanji. Gunakan tetes air yang didapat dari kuis untuk merawat bibit kanjimu dari tunas hingga mekar penuh (Stage 4).
                     </p>
                   </div>
                 </div>
                 <button
                   onClick={() => navigateTo('kebun')}
-                  className="px-3 py-1.5 rounded-lg bg-surface-3 hover:bg-accent hover:text-bg text-appText-bright text-[11px] font-bold shrink-0 transition-all flex items-center gap-1"
+                  className="px-3 py-1.5 rounded-lg bg-surface-3 hover:bg-accent hover:text-bg text-appText-bright text-xs font-bold shrink-0 transition-all flex items-center gap-1"
                 >
                   <span>Buka</span>
                   <ArrowRight className="w-3 h-3" />
@@ -240,14 +240,14 @@ export const FeatureGuideModal: React.FC<FeatureGuideModalProps> = ({
                     <h3 className="text-xs font-bold text-appText-bright">
                       Sensei AI (Tutor Virtual Cerdas)
                     </h3>
-                    <p className="text-[11px] text-appText-muted leading-relaxed">
+                    <p className="text-xs text-appText-muted leading-relaxed">
                       Teman diskusi tata bahasa dan latihan percakapan interaktif (Status: Segera Hadir / Coming Soon 🍵).
                     </p>
                   </div>
                 </div>
                 <button
                   onClick={() => navigateTo('sensei')}
-                  className="px-3 py-1.5 rounded-lg bg-surface-3 hover:bg-accent hover:text-bg text-appText-bright text-[11px] font-bold shrink-0 transition-all flex items-center gap-1"
+                  className="px-3 py-1.5 rounded-lg bg-surface-3 hover:bg-accent hover:text-bg text-appText-bright text-xs font-bold shrink-0 transition-all flex items-center gap-1"
                 >
                   <span>Buka</span>
                   <ArrowRight className="w-3 h-3" />
@@ -263,14 +263,14 @@ export const FeatureGuideModal: React.FC<FeatureGuideModalProps> = ({
                     <h3 className="text-xs font-bold text-appText-bright">
                       Pengaturan & Akun Cloud
                     </h3>
-                    <p className="text-[11px] text-appText-muted leading-relaxed">
+                    <p className="text-xs text-appText-muted leading-relaxed">
                       Atur visibilitas Furigana & Romaji, kecepatan audio penutur asli, ekspor/impor file cadangan JSON, serta konfigurasi cloud Supabase.
                     </p>
                   </div>
                 </div>
                 <button
                   onClick={() => navigateTo('settings')}
-                  className="px-3 py-1.5 rounded-lg bg-surface-3 hover:bg-accent hover:text-bg text-appText-bright text-[11px] font-bold shrink-0 transition-all flex items-center gap-1"
+                  className="px-3 py-1.5 rounded-lg bg-surface-3 hover:bg-accent hover:text-bg text-appText-bright text-xs font-bold shrink-0 transition-all flex items-center gap-1"
                 >
                   <span>Buka</span>
                   <ArrowRight className="w-3 h-3" />
@@ -291,7 +291,7 @@ export const FeatureGuideModal: React.FC<FeatureGuideModalProps> = ({
                     <h3 className="text-xs font-bold text-appText-bright">
                       Bagan Kana Lengkap (Hiragana & Katakana)
                     </h3>
-                    <p className="text-[11px] text-appText-muted leading-relaxed">
+                    <p className="text-xs text-appText-muted leading-relaxed">
                       Tabel interaktif 46 karakter dasar, dakuten, handakuten, dan yoon. Dilengkapi audio pelafalan asli per huruf.
                     </p>
                   </div>
@@ -302,7 +302,7 @@ export const FeatureGuideModal: React.FC<FeatureGuideModalProps> = ({
                       handleClose();
                       onOpenKana();
                     }}
-                    className="px-3.5 py-1.5 rounded-lg bg-accent text-bg text-[11px] font-bold shrink-0 hover:bg-accent-hot transition-all flex items-center gap-1 shadow-sm"
+                    className="px-3.5 py-1.5 rounded-lg bg-accent text-bg text-xs font-bold shrink-0 hover:bg-accent-hot transition-all flex items-center gap-1 shadow-sm"
                   >
                     <span>Buka Bagan</span>
                     <ExternalLink className="w-3 h-3" />
@@ -319,7 +319,7 @@ export const FeatureGuideModal: React.FC<FeatureGuideModalProps> = ({
                     <h3 className="text-xs font-bold text-appText-bright">
                       Matriks Konjugasi Verba & Adjektiva
                     </h3>
-                    <p className="text-[11px] text-appText-muted leading-relaxed">
+                    <p className="text-xs text-appText-muted leading-relaxed">
                       Simulator perubahan bentuk kata kerja bahasa Jepang (Bentuk Kamus, Masu, Te, Nai, Ta, Ba, Potensial, Pasif, Kausatif, dsb).
                     </p>
                   </div>
@@ -330,7 +330,7 @@ export const FeatureGuideModal: React.FC<FeatureGuideModalProps> = ({
                       handleClose();
                       onOpenConjugation();
                     }}
-                    className="px-3.5 py-1.5 rounded-lg bg-accent text-bg text-[11px] font-bold shrink-0 hover:bg-accent-hot transition-all flex items-center gap-1 shadow-sm"
+                    className="px-3.5 py-1.5 rounded-lg bg-accent text-bg text-xs font-bold shrink-0 hover:bg-accent-hot transition-all flex items-center gap-1 shadow-sm"
                   >
                     <span>Buka Matriks</span>
                     <ExternalLink className="w-3 h-3" />
@@ -347,7 +347,7 @@ export const FeatureGuideModal: React.FC<FeatureGuideModalProps> = ({
                     <h3 className="text-xs font-bold text-appText-bright">
                       Komparator Nuansa Tata Bahasa
                     </h3>
-                    <p className="text-[11px] text-appText-muted leading-relaxed">
+                    <p className="text-xs text-appText-muted leading-relaxed">
                       Bandingkan pola kalimat yang membingungkan berdampingan (contoh: ~te kara vs ~ato de, partikel は vs が, ~sou da vs ~you da).
                     </p>
                   </div>
@@ -358,7 +358,7 @@ export const FeatureGuideModal: React.FC<FeatureGuideModalProps> = ({
                       handleClose();
                       onOpenNuance();
                     }}
-                    className="px-3.5 py-1.5 rounded-lg bg-accent text-bg text-[11px] font-bold shrink-0 hover:bg-accent-hot transition-all flex items-center gap-1 shadow-sm"
+                    className="px-3.5 py-1.5 rounded-lg bg-accent text-bg text-xs font-bold shrink-0 hover:bg-accent-hot transition-all flex items-center gap-1 shadow-sm"
                   >
                     <span>Buka Nuansa</span>
                     <ExternalLink className="w-3 h-3" />
@@ -375,7 +375,7 @@ export const FeatureGuideModal: React.FC<FeatureGuideModalProps> = ({
                     <h3 className="text-xs font-bold text-appText-bright">
                       Daftar Pintasan Keyboard
                     </h3>
-                    <p className="text-[11px] text-appText-muted leading-relaxed">
+                    <p className="text-xs text-appText-muted leading-relaxed">
                       Pelajari tombol pintasan untuk membalik kartu (Space), memilih opsi (1-4), toggle furigana (F), dan pencarian instan (⌘K).
                     </p>
                   </div>
@@ -386,7 +386,7 @@ export const FeatureGuideModal: React.FC<FeatureGuideModalProps> = ({
                       handleClose();
                       onOpenShortcuts();
                     }}
-                    className="px-3.5 py-1.5 rounded-lg bg-accent text-bg text-[11px] font-bold shrink-0 hover:bg-accent-hot transition-all flex items-center gap-1 shadow-sm"
+                    className="px-3.5 py-1.5 rounded-lg bg-accent text-bg text-xs font-bold shrink-0 hover:bg-accent-hot transition-all flex items-center gap-1 shadow-sm"
                   >
                     <span>Pintasan</span>
                     <ExternalLink className="w-3 h-3" />
@@ -404,7 +404,7 @@ export const FeatureGuideModal: React.FC<FeatureGuideModalProps> = ({
                   <span>⏱️</span>
                   <span>Prinsip Belajar Mikro: 5-10 Menit Setiap Hari</span>
                 </div>
-                <p className="text-[11px] text-appText-muted leading-relaxed">
+                <p className="text-xs text-appText-muted leading-relaxed">
                   Konsistensi harian jauh lebih efektif membangun jalur sinapsis otak daripada belajar 3 jam maraton sekali seminggu. Jaga streak-mu tetap menyala setiap hari.
                 </p>
               </div>
@@ -414,7 +414,7 @@ export const FeatureGuideModal: React.FC<FeatureGuideModalProps> = ({
                   <span>👂</span>
                   <span>Dengarkan Audio Sebelum Membaca Romaji</span>
                 </div>
-                <p className="text-[11px] text-appText-muted leading-relaxed">
+                <p className="text-xs text-appText-muted leading-relaxed">
                   Aksen intonasi bahasa Jepang (*pitch accent*) terbentuk dari telinga. Tekan tombol audio di kartu kosakata dan ulangi pelafalannya dengan lantang.
                 </p>
               </div>
@@ -424,7 +424,7 @@ export const FeatureGuideModal: React.FC<FeatureGuideModalProps> = ({
                   <span>🔁</span>
                   <span>Gunakan Fitur "Latih Ulang Soal Salah"</span>
                 </div>
-                <p className="text-[11px] text-appText-muted leading-relaxed">
+                <p className="text-xs text-appText-muted leading-relaxed">
                   Saat kuis berakhir, jangan lewatkan tombol review kesalahan. Memperbaiki kekeliruan tepat saat memori masih segar terbukti mengunci ingatan 2x lebih kuat.
                 </p>
               </div>
@@ -434,7 +434,7 @@ export const FeatureGuideModal: React.FC<FeatureGuideModalProps> = ({
                   <span>🌱</span>
                   <span>Jadikan Kebun Kata Motivasi Visualmu</span>
                 </div>
-                <p className="text-[11px] text-appText-muted leading-relaxed">
+                <p className="text-xs text-appText-muted leading-relaxed">
                   Melihat tanaman kanji mekar memberikan kepuasan nyata atas usaha belajarmu. Siram tanaman yang mendekati mekar penuh setiap hari.
                 </p>
               </div>

@@ -128,7 +128,7 @@ export const DetailModal: React.FC<DetailModalProps> = ({ item, type, onClose })
 
         {/* Meaning Box */}
         <div className="bg-surface-2 rounded-2xl p-4 border border-accent/15 space-y-1">
-          <div className="text-[11px] font-bold uppercase tracking-wider text-accent">Arti / Terjemahan:</div>
+          <div className="text-xs font-bold uppercase tracking-wider text-accent">Arti / Terjemahan:</div>
           <div className="text-base font-semibold text-appText-bright leading-relaxed">
             {meaning}
           </div>
@@ -187,7 +187,7 @@ export const DetailModal: React.FC<DetailModalProps> = ({ item, type, onClose })
                   setBlurTranslations(!blurTranslations);
                   setRevealedSentences({});
                 }}
-                className="text-[11px] font-semibold text-accent hover:text-accent-hot flex items-center gap-1 px-2 py-0.5 rounded-lg bg-surface-2 border border-accent/20 transition-colors"
+                className="text-xs font-semibold text-accent hover:text-accent-hot flex items-center gap-1 px-2 py-0.5 rounded-lg bg-surface-2 border border-accent/20 transition-colors"
                 title="Samarkan terjemahan untuk latihan membaca mandiri"
               >
                 {blurTranslations ? <Eye className="w-3 h-3" /> : <EyeOff className="w-3 h-3" />}
@@ -210,11 +210,11 @@ export const DetailModal: React.FC<DetailModalProps> = ({ item, type, onClose })
                       <button
                         type="button"
                         onClick={() => setRevealedSentences((prev) => ({ ...prev, [idx]: true }))}
-                        className="inline-flex items-center gap-1 text-[11px] text-accent/80 hover:text-accent select-none cursor-pointer"
+                        className="inline-flex items-center gap-1 text-xs text-accent/80 hover:text-accent select-none cursor-pointer"
                         title="Klik untuk melihat terjemahan"
                       >
                         <span className="blur-[4px] opacity-40">{ex.id}</span>
-                        <span className="text-[10px] bg-amber-500/15 px-1.5 py-0.2 rounded font-bold">
+                        <span className="text-xs bg-amber-500/15 px-1.5 py-0.2 rounded font-bold">
                           Intip 👁️
                         </span>
                       </button>

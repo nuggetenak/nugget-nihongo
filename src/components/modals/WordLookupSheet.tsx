@@ -99,7 +99,7 @@ export const WordLookupSheet: React.FC<WordLookupSheetProps> = ({ word, isOpen, 
                     <span className="font-bold text-accent-hot font-jp text-sm">
                       Bentuk Dasar: {item.candidate.lemma}
                     </span>
-                    <span className="px-2 py-0.5 rounded-full bg-amber-500/20 text-accent text-[10px] font-semibold">
+                    <span className="px-2 py-0.5 rounded-full bg-amber-500/20 text-accent text-xs font-semibold">
                       {item.candidate.pos}
                     </span>
                   </div>
@@ -107,7 +107,7 @@ export const WordLookupSheet: React.FC<WordLookupSheetProps> = ({ word, isOpen, 
                   {/* Step by step reason chain */}
                   <div className="space-y-1 text-appText-muted">
                     {item.candidate.steps.map((step, sIdx) => (
-                      <div key={sIdx} className="flex items-start gap-1.5 text-[11px] leading-tight">
+                      <div key={sIdx} className="flex items-start gap-1.5 text-xs leading-tight">
                         <span className="text-accent font-bold">↳</span>
                         <div>
                           <strong className="text-appText-bright">{step.ruleName}</strong>: {step.explanationId}

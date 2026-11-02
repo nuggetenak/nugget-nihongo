@@ -38,7 +38,7 @@ export const PedagogicalFrameworkCard: React.FC<PedagogicalFrameworkCardProps> =
             </span>
           </div>
           {scenario?.setting && (
-            <span className="text-[11px] px-2.5 py-0.5 rounded-full bg-surface border border-accent/20 text-appText-muted font-medium truncate max-w-[200px]">
+            <span className="text-xs px-2.5 py-0.5 rounded-full bg-surface border border-accent/20 text-appText-muted font-medium truncate max-w-[200px]">
               📍 {scenario.setting}
             </span>
           )}
@@ -57,7 +57,7 @@ export const PedagogicalFrameworkCard: React.FC<PedagogicalFrameworkCardProps> =
         {/* Misi Percakapan Hari Ini */}
         {missionText && (
           <div className="p-3 rounded-xl bg-surface/80 border border-amber-500/25 space-y-1">
-            <div className="text-[11px] font-extrabold uppercase tracking-wider text-accent flex items-center gap-1.5">
+            <div className="text-xs font-extrabold uppercase tracking-wider text-accent flex items-center gap-1.5">
               <span>🎯</span>
               <span>Target Kemampuan Nyata</span>
             </div>
@@ -83,7 +83,7 @@ export const PedagogicalFrameworkCard: React.FC<PedagogicalFrameworkCardProps> =
               </div>
             )}
             {who_and_when.when_not_to_use && (
-              <div className="sm:col-span-2 text-[11px] text-amber-800 dark:text-amber-200 bg-amber-500/15 dark:bg-amber-500/20 p-2 rounded-lg border border-amber-500/30">
+              <div className="sm:col-span-2 text-xs text-amber-800 dark:text-amber-200 bg-amber-500/15 dark:bg-amber-500/20 p-2 rounded-lg border border-amber-500/30">
                 💡 <strong className="text-amber-900 dark:text-amber-200">Catatan Pemakaian:</strong> {who_and_when.when_not_to_use}
               </div>
             )}
@@ -108,7 +108,7 @@ export const PedagogicalFrameworkCard: React.FC<PedagogicalFrameworkCardProps> =
                 <div className="text-xs sm:text-sm font-bold text-appText-bright">
                   Kenapa Pola Ini Dipelajari Duluan?
                 </div>
-                <div className="text-[10px] text-appText-muted truncate">
+                <div className="text-xs text-appText-muted truncate">
                   Alur berpikir logis untuk mempermudah otak mengingat tanpa pusing
                 </div>
               </div>
@@ -124,7 +124,7 @@ export const PedagogicalFrameworkCard: React.FC<PedagogicalFrameworkCardProps> =
                 {whyOrderText}
               </p>
               {why_research?.prerequisite_link && (
-                <p className="text-appText-muted italic text-[11px]">
+                <p className="text-appText-muted italic text-xs">
                   🔗 Kaitan dengan pelajaran sebelumnya: {why_research.prerequisite_link}
                 </p>
               )}
@@ -150,7 +150,7 @@ export const PedagogicalFrameworkCard: React.FC<PedagogicalFrameworkCardProps> =
                 <div className="text-xs sm:text-sm font-bold text-appText-bright">
                   {cultural_notes.title || 'Etika & Tata Krama Budaya'}
                 </div>
-                <div className="text-[10px] text-appText-muted truncate">
+                <div className="text-xs text-appText-muted truncate">
                   Kebiasaan orang Jepang (ojigi, kesantunan, & komunikasi yang tepat)
                 </div>
               </div>
@@ -198,7 +198,7 @@ export const PedagogicalFrameworkCard: React.FC<PedagogicalFrameworkCardProps> =
                 <div className="text-xs sm:text-sm font-bold text-appText-bright">
                   {pronunciation_tips.title || 'Tips Pelafalan Alami'}
                 </div>
-                <div className="text-[10px] text-appText-muted truncate">
+                <div className="text-xs text-appText-muted truncate">
                   Ketukan waktu (mora) & bunyi terbisukan agar tidak medok
                 </div>
               </div>
@@ -211,13 +211,13 @@ export const PedagogicalFrameworkCard: React.FC<PedagogicalFrameworkCardProps> =
           {isPronunciationOpen && (
             <div className="p-4 sm:p-5 pt-2 border-t border-accent/10 bg-surface-2/60 space-y-2.5 text-xs leading-relaxed animate-fade-in">
               <div className="p-3 rounded-xl bg-surface border border-accent/15 space-y-1">
-                <span className="text-[10px] font-bold uppercase tracking-wider text-accent block">
+                <span className="text-xs font-bold uppercase tracking-wider text-accent block">
                   Ketukan Waktu (Mora):
                 </span>
                 <p className="text-appText">{pronunciation_tips.moraNote}</p>
               </div>
               <div className="p-3 rounded-xl bg-surface border border-accent/15 space-y-1">
-                <span className="text-[10px] font-bold uppercase tracking-wider text-blue-400 block">
+                <span className="text-xs font-bold uppercase tracking-wider text-blue-400 block">
                   Kunci Pengucapan Alami:
                 </span>
                 <p className="text-appText">{pronunciation_tips.soundTip}</p>

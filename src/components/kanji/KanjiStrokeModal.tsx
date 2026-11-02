@@ -704,7 +704,7 @@ export const KanjiStrokeModal: React.FC<KanjiStrokeModalProps> = ({
                   {totalStrokes} Goresan
                 </span>
                 {kanji.grade > 0 && (
-                  <span className="text-xs text-appText-muted/70">
+                  <span className="text-xs text-appText-muted">
                     Kelas {kanji.grade}
                   </span>
                 )}
@@ -1012,12 +1012,12 @@ export const KanjiStrokeModal: React.FC<KanjiStrokeModalProps> = ({
               {/* Secondary Speed & Number Toggles */}
               <div className="flex items-center justify-between w-full max-w-xs text-xs text-appText-muted pt-1">
                 <div className="flex items-center gap-1">
-                  <span className="text-[11px] font-medium mr-1">Kecepatan:</span>
+                  <span className="text-xs font-medium mr-1">Kecepatan:</span>
                   {[0.75, 1, 1.5].map((spd) => (
                     <button
                       key={spd}
                       onClick={() => setPlaybackSpeed(spd)}
-                      className={`px-2 py-0.5 rounded text-[10px] font-bold transition-all ${
+                      className={`px-2 py-0.5 rounded text-xs font-bold transition-all ${
                         playbackSpeed === spd
                           ? 'bg-amber-500/20 text-accent border border-amber-500/30 font-black'
                           : 'bg-surface-2 text-appText-muted hover:text-appText-bright'
@@ -1030,7 +1030,7 @@ export const KanjiStrokeModal: React.FC<KanjiStrokeModalProps> = ({
 
                 <button
                   onClick={() => setShowNumbers(!showNumbers)}
-                  className={`text-[11px] font-semibold underline underline-offset-2 ${
+                  className={`text-xs font-semibold underline underline-offset-2 ${
                     showNumbers ? 'text-accent' : 'text-appText-muted'
                   }`}
                 >
@@ -1094,12 +1094,12 @@ export const KanjiStrokeModal: React.FC<KanjiStrokeModalProps> = ({
           {/* Readings: Structured Breakdown by Individual Onyomi & Kunyomi Reading */}
           <div className="space-y-3 pt-2">
             <div className="flex items-center justify-between text-xs text-appText-muted">
-              <span className="font-bold uppercase tracking-wider text-[11px] text-appText-bright flex items-center gap-1.5">
+              <span className="font-bold uppercase tracking-wider text-xs text-appText-bright flex items-center gap-1.5">
                 <BookOpen size={13} className="text-accent" />
                 <span>Cara Baca & Contoh Kata per Bacaan ({readingGroups.length} Bacaan):</span>
               </span>
               {loadingVocabs && (
-                <span className="text-[11px] text-accent animate-pulse font-medium">
+                <span className="text-xs text-accent animate-pulse font-medium">
                   Memindai contoh kalimat...
                 </span>
               )}
@@ -1115,7 +1115,7 @@ export const KanjiStrokeModal: React.FC<KanjiStrokeModalProps> = ({
                   <div className="flex items-center justify-between gap-2 border-b border-theme/50 pb-2">
                     <div className="flex items-center gap-2">
                       <span
-                        className={`text-[10px] font-extrabold uppercase px-2 py-0.5 rounded-full border ${
+                        className={`text-xs font-extrabold uppercase px-2 py-0.5 rounded-full border ${
                           grp.type === 'onyomi'
                             ? 'bg-amber-500/15 border-amber-500/30 text-accent'
                             : 'bg-emerald-500/15 border-emerald-500/30 text-emerald-400'
@@ -1171,7 +1171,7 @@ export const KanjiStrokeModal: React.FC<KanjiStrokeModalProps> = ({
 
                           {/* Authentic Example Sentence */}
                           {v.examples && v.examples.length > 0 && (
-                            <div className="bg-surface-2/70 rounded-lg p-2 sm:p-2.5 border border-theme/40 text-[11px] space-y-1 mt-1">
+                            <div className="bg-surface-2/70 rounded-lg p-2 sm:p-2.5 border border-theme/40 text-xs space-y-1 mt-1">
                               <div className="flex items-start justify-between gap-1.5">
                                 <span className="font-japanese text-appText-bright leading-relaxed">
                                   {v.examples[0].jp}
@@ -1189,7 +1189,7 @@ export const KanjiStrokeModal: React.FC<KanjiStrokeModalProps> = ({
                                   <Volume2 size={14} />
                                 </button>
                               </div>
-                              <p className="text-appText-muted/80 text-[10.5px]">
+                              <p className="text-appText-muted text-[10.5px]">
                                 {v.examples[0].id}
                               </p>
                             </div>
@@ -1198,7 +1198,7 @@ export const KanjiStrokeModal: React.FC<KanjiStrokeModalProps> = ({
                       ))}
                     </div>
                   ) : (
-                    <p className="text-[11px] text-appText-muted italic py-0.5">
+                    <p className="text-xs text-appText-muted italic py-0.5">
                       Contoh kata khusus untuk bacaan ini belum tercatat dalam kurikulum aktif.
                     </p>
                   )}
@@ -1229,7 +1229,7 @@ export const KanjiStrokeModal: React.FC<KanjiStrokeModalProps> = ({
             {/* Other Contextual Vocabs with Sentences if available */}
             {otherVocabs.length > 0 && (
               <div className="p-3.5 rounded-2xl bg-surface-2/30 border border-theme space-y-2 mt-2">
-                <span className="text-[11px] font-bold text-appText-muted uppercase tracking-wider flex items-center gap-1.5">
+                <span className="text-xs font-bold text-appText-muted uppercase tracking-wider flex items-center gap-1.5">
                   <Sparkles size={13} className="text-amber-500" />
                   <span>Kosakata Terkait Lainnya ({otherVocabs.length})</span>
                 </span>
@@ -1241,7 +1241,7 @@ export const KanjiStrokeModal: React.FC<KanjiStrokeModalProps> = ({
                           <span className="text-sm font-bold font-japanese text-appText-bright">
                             {v.word}
                           </span>
-                          <span className="text-[11px] text-accent font-japanese truncate">
+                          <span className="text-xs text-accent font-japanese truncate">
                             【{v.reading}】
                           </span>
                         </div>
@@ -1253,7 +1253,7 @@ export const KanjiStrokeModal: React.FC<KanjiStrokeModalProps> = ({
                           <Volume2 size={14} />
                         </button>
                       </div>
-                      <p className="text-[11px] text-appText-muted line-clamp-1">
+                      <p className="text-xs text-appText-muted line-clamp-1">
                         {v.meaning}
                       </p>
                       {v.examples && v.examples.length > 0 && (
@@ -1269,7 +1269,7 @@ export const KanjiStrokeModal: React.FC<KanjiStrokeModalProps> = ({
                               <Volume2 size={14} />
                             </button>
                           </div>
-                          <p className="text-appText-muted/80 text-[10px]">
+                          <p className="text-appText-muted text-xs">
                             {v.examples[0].id}
                           </p>
                         </div>

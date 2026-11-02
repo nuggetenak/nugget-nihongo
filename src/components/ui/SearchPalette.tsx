@@ -99,7 +99,7 @@ export const SearchPalette: React.FC<SearchPaletteProps> = ({ isOpen, onClose, o
               <X className="w-4 h-4" />
             </button>
           ) : (
-            <kbd className="hidden sm:inline-block text-[11px] font-mono bg-surface-2 text-appText-muted px-2 py-0.5 rounded border border-accent/20">
+            <kbd className="hidden sm:inline-block text-xs font-mono bg-surface-2 text-appText-muted px-2 py-0.5 rounded border border-accent/20">
               ESC
             </kbd>
           )}
@@ -172,7 +172,7 @@ export const SearchPalette: React.FC<SearchPaletteProps> = ({ isOpen, onClose, o
                         className="p-3 rounded-2xl bg-surface-2 hover:bg-surface-3 border border-accent/15 hover:border-accent/40 flex items-center justify-between cursor-pointer transition-all group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
                       >
                         <div className="flex items-center gap-3">
-                          <span className="text-[10px] font-bold uppercase px-2 py-0.5 rounded-full bg-surface border border-accent/20 text-accent">
+                          <span className="text-xs font-bold uppercase px-2 py-0.5 rounded-full bg-surface border border-accent/20 text-accent">
                             {v.level}
                           </span>
                           <div>
@@ -237,7 +237,7 @@ export const SearchPalette: React.FC<SearchPaletteProps> = ({ isOpen, onClose, o
                         className="p-3 rounded-2xl bg-surface-2 hover:bg-surface-3 border border-accent/15 hover:border-accent/40 flex items-center justify-between cursor-pointer transition-all group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
                       >
                         <div className="flex items-center gap-3">
-                          <span className="text-[10px] font-bold uppercase px-2 py-0.5 rounded-full bg-surface border border-accent/20 text-accent">
+                          <span className="text-xs font-bold uppercase px-2 py-0.5 rounded-full bg-surface border border-accent/20 text-accent">
                             {g.level}
                           </span>
                           <div>
@@ -259,7 +259,7 @@ export const SearchPalette: React.FC<SearchPaletteProps> = ({ isOpen, onClose, o
         </div>
 
         {/* Footer info */}
-        <div className="p-3 border-t border-accent/15 bg-surface-2/40 text-[11px] text-appText-muted flex items-center justify-between px-5">
+        <div className="p-3 border-t border-accent/15 bg-surface-2/40 text-xs text-appText-muted flex items-center justify-between px-5">
           <span>Pilih untuk melihat detail, contoh kalimat & audio</span>
           <span className="font-mono">ESC untuk tutup</span>
         </div>

@@ -70,7 +70,7 @@ export const SyncStatusIndicator: React.FC = () => {
       {icon}
       <span className="hidden sm:inline">{label}</span>
       {relativeTime && syncStatus === 'synced' && (
-        <span className="hidden md:inline text-[10px] opacity-75 font-normal">
+        <span className="hidden md:inline text-xs opacity-75 font-normal">
           · {relativeTime}
         </span>
       )}

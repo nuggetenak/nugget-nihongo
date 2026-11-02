@@ -118,7 +118,7 @@ export const StorageEvictionRecoveryModal: React.FC<StorageEvictionRecoveryModal
                 <Download className="w-4 h-4 text-accent" />
                 <span>1. Unduh Berkas Cadangan (.json)</span>
               </div>
-              <span className="text-[10px] text-accent">Rekomendasi Utama</span>
+              <span className="text-xs text-accent">Rekomendasi Utama</span>
             </button>
 
             <button
@@ -129,7 +129,7 @@ export const StorageEvictionRecoveryModal: React.FC<StorageEvictionRecoveryModal
                 <Cloud className="w-4 h-4 text-emerald-400" />
                 <span>2. {user ? 'Sinkronkan Progres ke Cloud' : 'Masuk Akun & Sinkronkan ke Cloud'}</span>
               </div>
-              <span className="text-[10px] text-emerald-400">Permanen</span>
+              <span className="text-xs text-emerald-400">Permanen</span>
             </button>
 
             <button
@@ -140,7 +140,7 @@ export const StorageEvictionRecoveryModal: React.FC<StorageEvictionRecoveryModal
                 <Trash2 className="w-4 h-4 text-amber-400" />
                 <span>3. Bersihkan Cache Audio Sementara</span>
               </div>
-              <span className="text-[10px] text-amber-400">Kosongkan Ruang</span>
+              <span className="text-xs text-amber-400">Kosongkan Ruang</span>
             </button>
           </div>
         </div>

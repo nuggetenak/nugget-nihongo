@@ -92,7 +92,7 @@ export const MethodologyPage: React.FC = () => {
           <span>Kembali ke Tentang</span>
         </button>
 
-        <span className="text-[11px] font-mono font-medium text-amber-400 bg-amber-500/10 px-2.5 py-1 rounded-full border border-amber-500/30">
+        <span className="text-xs font-mono font-medium text-amber-400 bg-amber-500/10 px-2.5 py-1 rounded-full border border-amber-500/30">
           Corpus v30 Canonical
         </span>
       </div>
@@ -413,14 +413,14 @@ export const MethodologyPage: React.FC = () => {
                 {isExpanded && (
                   <div className="p-4 pt-0 border-t border-border/40 text-xs sm:text-sm space-y-2.5 leading-relaxed">
                     <div className="p-3 bg-neutral-950/60 rounded-xl border border-neutral-800 text-neutral-300">
-                      <div className="text-[11px] font-bold text-rose-400 uppercase tracking-wide mb-1">Dilema / Konflik Teori:</div>
+                      <div className="text-xs font-bold text-rose-400 uppercase tracking-wide mb-1">Dilema / Konflik Teori:</div>
                       {item.conflict}
                     </div>
                     <div className="p-3 bg-emerald-950/20 rounded-xl border border-emerald-500/30 text-emerald-200">
-                      <div className="text-[11px] font-bold text-emerald-400 uppercase tracking-wide mb-1">Resolusi Nugget Nihongo:</div>
+                      <div className="text-xs font-bold text-emerald-400 uppercase tracking-wide mb-1">Resolusi Nugget Nihongo:</div>
                       {item.resolution}
                     </div>
-                    <div className="text-[11px] text-muted font-mono pt-1">
+                    <div className="text-xs text-muted font-mono pt-1">
                       Landasan Pustaka: {item.evidence}
                     </div>
                   </div>

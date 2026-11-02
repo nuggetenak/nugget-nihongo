@@ -249,7 +249,7 @@ export const StudyToolboxModal: React.FC<StudyToolboxModalProps> = ({
               <h2 className="text-sm sm:text-base font-extrabold text-appText-bright truncate">
                 Kotak Peralatan Belajar
               </h2>
-              <div className="text-[11px] text-accent font-semibold truncate flex items-center gap-1.5">
+              <div className="text-xs text-accent font-semibold truncate flex items-center gap-1.5">
                 <span>Alat Referensi, Bagan, & Diagnosis Kilat</span>
               </div>
             </div>
@@ -284,7 +284,7 @@ export const StudyToolboxModal: React.FC<StudyToolboxModalProps> = ({
               >
                 <span>{tab.icon}</span>
                 <span>{tab.label}</span>
-                <span className="text-[10px] opacity-75 ml-0.5">({count})</span>
+                <span className="text-xs opacity-75 ml-0.5">({count})</span>
               </button>
             );
           })}
@@ -308,18 +308,18 @@ export const StudyToolboxModal: React.FC<StudyToolboxModalProps> = ({
                       {tool.name}
                     </span>
                     {tool.badge && (
-                      <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-amber-500/15 text-accent-hot border border-amber-500/25 shrink-0">
+                      <span className="text-xs font-bold px-2 py-0.5 rounded-full bg-amber-500/15 text-accent-hot border border-amber-500/25 shrink-0">
                         {tool.badge}
                       </span>
                     )}
                   </div>
-                  <p className="text-[11px] text-appText-muted line-clamp-1 leading-relaxed mt-0.5">
+                  <p className="text-xs text-appText-muted line-clamp-1 leading-relaxed mt-0.5">
                     {tool.desc}
                   </p>
                 </div>
               </div>
 
-              <ChevronRight className="w-4 h-4 text-appText-muted/50 group-hover:text-accent group-hover:translate-x-0.5 transition-all shrink-0" />
+              <ChevronRight className="w-4 h-4 text-appText-muted group-hover:text-accent group-hover:translate-x-0.5 transition-all shrink-0" />
             </button>
           ))}
         </div>

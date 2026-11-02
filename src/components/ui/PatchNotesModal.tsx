@@ -89,11 +89,11 @@ export const PatchNotesModal: React.FC<PatchNotesModalProps> = ({ isOpen, onClos
                 <h2 className="text-base sm:text-xl font-extrabold text-appText-bright truncate">
                   Catatan Rilis
                 </h2>
-                <span className="text-[10px] font-mono font-bold px-2 py-0.5 rounded-full bg-accent text-bg">
+                <span className="text-xs font-mono font-bold px-2 py-0.5 rounded-full bg-accent text-bg">
                   {APP_VERSION}
                 </span>
               </div>
-              <p className="text-[11px] sm:text-xs text-appText-muted mt-0.5 truncate">
+              <p className="text-xs sm:text-xs text-appText-muted mt-0.5 truncate">
                 Riwayat evolusi dan catatan perubahan Nugget Nihongo.
               </p>
             </div>
@@ -173,12 +173,12 @@ export const PatchNotesModal: React.FC<PatchNotesModalProps> = ({ isOpen, onClos
                         {note.version}
                       </span>
                       {isCurrent && (
-                        <span className="text-[10px] font-extrabold uppercase px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-500/30">
+                        <span className="text-xs font-extrabold uppercase px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-500/30">
                           Versi Kamu
                         </span>
                       )}
                       <span
-                        className={`text-[10px] font-bold uppercase px-2 py-0.5 rounded-full border ${
+                        className={`text-xs font-bold uppercase px-2 py-0.5 rounded-full border ${
                           note.type === 'major'
                             ? 'bg-amber-500/15 border-amber-500/30 text-accent'
                             : 'bg-surface-3 border-accent/20 text-appText-muted'
@@ -192,7 +192,7 @@ export const PatchNotesModal: React.FC<PatchNotesModalProps> = ({ isOpen, onClos
                       {note.releaseName}
                     </div>
 
-                    <div className="flex items-center gap-1.5 text-[11px] text-appText-muted">
+                    <div className="flex items-center gap-1.5 text-xs text-appText-muted">
                       <Calendar className="w-3 h-3 text-appText-muted" />
                       <span>{note.date}</span>
                     </div>
@@ -216,7 +216,7 @@ export const PatchNotesModal: React.FC<PatchNotesModalProps> = ({ isOpen, onClos
 
                 {/* Highlights List */}
                 <div className="px-4 sm:px-5 pb-3">
-                  <div className="text-[11px] font-bold uppercase tracking-wider text-appText-muted mb-2">
+                  <div className="text-xs font-bold uppercase tracking-wider text-appText-muted mb-2">
                     {showTechnical ? 'Sorotan Teknis Arsitektur:' : 'Poin Penting untuk Belajar:'}
                   </div>
                   <ul className="space-y-1.5">
@@ -232,7 +232,7 @@ export const PatchNotesModal: React.FC<PatchNotesModalProps> = ({ isOpen, onClos
                 {/* Detailed Breakdown (Shown when expanded AND showTechnical is active) */}
                 {isExpanded && showTechnical && note.details && note.details.length > 0 && (
                   <div className="px-4 sm:px-5 pb-5 pt-3 border-t border-accent/10 space-y-3.5 animate-in fade-in duration-200">
-                    <div className="text-[11px] font-extrabold uppercase text-amber-500 flex items-center gap-1.5">
+                    <div className="text-xs font-extrabold uppercase text-amber-500 flex items-center gap-1.5">
                       <Tag className="w-3.5 h-3.5" />
                       <span>Spesifikasi & Log Rekayasa (Dev Log)</span>
                     </div>
@@ -244,7 +244,7 @@ export const PatchNotesModal: React.FC<PatchNotesModalProps> = ({ isOpen, onClos
                         </div>
                         <ul className="space-y-1 pl-4">
                           {d.items.map((item, ii) => (
-                            <li key={ii} className="text-[11px] text-appText-muted leading-relaxed list-disc">
+                            <li key={ii} className="text-xs text-appText-muted leading-relaxed list-disc">
                               {item}
                             </li>
                           ))}
@@ -261,7 +261,7 @@ export const PatchNotesModal: React.FC<PatchNotesModalProps> = ({ isOpen, onClos
         {/* Modal Footer */}
         <div className="pt-2 pb-[max(0.25rem,env(safe-area-inset-bottom))] border-t border-accent/15 flex items-center justify-between text-xs text-appText-muted shrink-0">
           <span className="hidden sm:inline">Nugget Nihongo PWA Offline Engine</span>
-          <span className="text-[11px] sm:hidden font-mono text-accent">{APP_VERSION}</span>
+          <span className="text-xs sm:hidden font-mono text-accent">{APP_VERSION}</span>
           <button
             onClick={onClose}
             className="px-4 py-2 rounded-xl bg-accent text-bg font-bold text-xs hover:bg-accent-hot transition-all shadow-sm active:scale-95 ml-auto"

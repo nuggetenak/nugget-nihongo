@@ -206,7 +206,7 @@ export const BookTrackBrowser: React.FC<BookTrackBrowserProps> = ({
               Perpustakaan 9 Buku Teks Jepang Resmi
             </span>
           </div>
-          <span className="text-[11px] text-accent font-semibold">
+          <span className="text-xs text-accent font-semibold">
             {filteredBooks.length} dari {booksCatalog.length} Seri
           </span>
         </div>
@@ -290,12 +290,12 @@ export const BookTrackBrowser: React.FC<BookTrackBrowserProps> = ({
                   <div className="absolute inset-0 bg-gradient-to-t from-stone-950/85 via-stone-950/25 to-transparent pointer-events-none" />
                   
                   {/* JLPT / CEFR Level Pill */}
-                  <span className="absolute top-2 right-2 px-1.5 py-0.5 rounded-md text-[10px] font-black bg-stone-950/90 text-amber-400 border border-amber-500/40 backdrop-blur-xs">
+                  <span className="absolute top-2 right-2 px-1.5 py-0.5 rounded-md text-xs font-black bg-stone-950/90 text-amber-400 border border-amber-500/40 backdrop-blur-xs">
                     {jlptBadges}
                   </span>
 
                   {/* Japanese Kanji / Kana Title Overlay */}
-                  <span className="absolute bottom-1.5 left-2 right-2 font-japanese text-[11px] font-bold text-white drop-shadow truncate">
+                  <span className="absolute bottom-1.5 left-2 right-2 font-japanese text-xs font-bold text-white drop-shadow truncate">
                     {b.title_ja}
                   </span>
                 </div>
@@ -306,7 +306,7 @@ export const BookTrackBrowser: React.FC<BookTrackBrowserProps> = ({
                     <h4 className="text-xs font-black text-appText-bright line-clamp-1 leading-snug">
                       {b.title}
                     </h4>
-                    <p className="text-[10px] text-appText-muted/90 truncate mt-0.5 font-medium">
+                    <p className="text-xs text-appText-muted/90 truncate mt-0.5 font-medium">
                       {b.publisher}
                     </p>
                   </div>
@@ -354,7 +354,7 @@ export const BookTrackBrowser: React.FC<BookTrackBrowserProps> = ({
         <div className="space-y-2">
           <div className="text-xs font-bold text-appText-bright flex items-center justify-between">
             <span>Daftar Bab ({totalChapters}):</span>
-            <span className="text-[10px] font-mono text-accent">
+            <span className="text-xs font-mono text-accent">
               {activeVolume?.label || activeBook?.title}
             </span>
           </div>
@@ -444,7 +444,7 @@ export const BookTrackBrowser: React.FC<BookTrackBrowserProps> = ({
                 </picture>
               </div>
               <div className="space-y-0.5 min-w-0">
-                <span className="text-[10px] font-bold uppercase tracking-wider text-accent">
+                <span className="text-xs font-bold uppercase tracking-wider text-accent">
                   Bab {selectedChapter} · {activeVolume?.label || activeBook?.title}
                 </span>
                 <h3 className="text-sm sm:text-base font-bold text-appText-bright truncate">
@@ -482,11 +482,11 @@ export const BookTrackBrowser: React.FC<BookTrackBrowserProps> = ({
                       <span className="font-bold text-xs sm:text-sm text-appText-bright">
                         Logika Metodologi 5W+1H
                       </span>
-                      <span className="text-[10px] px-2 py-0.5 rounded-full bg-accent/15 text-accent font-bold uppercase tracking-wider hidden sm:inline">
+                      <span className="text-xs px-2 py-0.5 rounded-full bg-accent/15 text-accent font-bold uppercase tracking-wider hidden sm:inline">
                         Pedagogi Buku
                       </span>
                     </div>
-                    <p className="text-[11px] text-appText-muted truncate">
+                    <p className="text-xs text-appText-muted truncate">
                       {activePedagogy.philosophy}
                     </p>
                   </div>
@@ -510,7 +510,7 @@ export const BookTrackBrowser: React.FC<BookTrackBrowserProps> = ({
                       <p className="text-appText leading-relaxed">
                         {chapterRationale.whyNow}
                       </p>
-                      <div className="text-[11px] text-amber-400/90 pt-1 border-t border-amber-500/20">
+                      <div className="text-xs text-amber-400/90 pt-1 border-t border-amber-500/20">
                         <strong>Perbandingan Antar-Buku:</strong> {chapterRationale.contrastInsight}
                       </div>
                     </div>
@@ -519,7 +519,7 @@ export const BookTrackBrowser: React.FC<BookTrackBrowserProps> = ({
                   {/* 5W+1H Grid */}
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                     <div className="p-3 rounded-xl bg-surface-2 border border-accent/10 space-y-1">
-                      <span className="font-bold text-accent uppercase text-[10px] tracking-wider block">
+                      <span className="font-bold text-accent uppercase text-xs tracking-wider block">
                         👤 WHO · Untuk Siapa?
                       </span>
                       <p className="text-appText-muted leading-relaxed">
@@ -528,7 +528,7 @@ export const BookTrackBrowser: React.FC<BookTrackBrowserProps> = ({
                     </div>
 
                     <div className="p-3 rounded-xl bg-surface-2 border border-accent/10 space-y-1">
-                      <span className="font-bold text-accent uppercase text-[10px] tracking-wider block">
+                      <span className="font-bold text-accent uppercase text-xs tracking-wider block">
                         🎯 WHAT · Fokus Materi
                       </span>
                       <p className="text-appText-muted leading-relaxed">
@@ -537,7 +537,7 @@ export const BookTrackBrowser: React.FC<BookTrackBrowserProps> = ({
                     </div>
 
                     <div className="p-3 rounded-xl bg-surface-2 border border-accent/10 space-y-1">
-                      <span className="font-bold text-accent uppercase text-[10px] tracking-wider block">
+                      <span className="font-bold text-accent uppercase text-xs tracking-wider block">
                         ⏱️ WHEN · Urutan Penyajian
                       </span>
                       <p className="text-appText-muted leading-relaxed">
@@ -546,7 +546,7 @@ export const BookTrackBrowser: React.FC<BookTrackBrowserProps> = ({
                     </div>
 
                     <div className="p-3 rounded-xl bg-surface-2 border border-accent/10 space-y-1">
-                      <span className="font-bold text-accent uppercase text-[10px] tracking-wider block">
+                      <span className="font-bold text-accent uppercase text-xs tracking-wider block">
                         📍 WHERE · Konteks Situasi
                       </span>
                       <p className="text-appText-muted leading-relaxed">
@@ -558,7 +558,7 @@ export const BookTrackBrowser: React.FC<BookTrackBrowserProps> = ({
                   {/* WHY & HOW */}
                   <div className="space-y-2 pt-1 border-t border-accent/10">
                     <div className="space-y-1">
-                      <span className="font-bold text-accent uppercase text-[10px] tracking-wider block">
+                      <span className="font-bold text-accent uppercase text-xs tracking-wider block">
                         ❓ WHY · Mengapa Urutannya Berbeda dari Buku Lain?
                       </span>
                       <p className="text-appText-bright leading-relaxed">
@@ -567,7 +567,7 @@ export const BookTrackBrowser: React.FC<BookTrackBrowserProps> = ({
                     </div>
 
                     <div className="space-y-1 pt-1">
-                      <span className="font-bold text-accent uppercase text-[10px] tracking-wider block">
+                      <span className="font-bold text-accent uppercase text-xs tracking-wider block">
                         🛠️ HOW · Bagaimana Latihannya Membangun Reflek?
                       </span>
                       <p className="text-appText-muted leading-relaxed">
@@ -579,12 +579,12 @@ export const BookTrackBrowser: React.FC<BookTrackBrowserProps> = ({
                   {/* Comparative Highlights */}
                   {activePedagogy.comparativeHighlights && activePedagogy.comparativeHighlights.length > 0 && (
                     <div className="space-y-2 pt-2 border-t border-accent/10">
-                      <span className="font-bold text-appText-muted uppercase text-[10px] tracking-wider block">
+                      <span className="font-bold text-appText-muted uppercase text-xs tracking-wider block">
                         Komparasi Langsung dengan Seri Lain:
                       </span>
                       <div className="space-y-1.5">
                         {activePedagogy.comparativeHighlights.map((comp, cIdx) => (
-                          <div key={cIdx} className="p-2.5 rounded-lg bg-surface-3/70 border border-accent/15 text-[11px] leading-relaxed">
+                          <div key={cIdx} className="p-2.5 rounded-lg bg-surface-3/70 border border-accent/15 text-xs leading-relaxed">
                             <strong className="text-accent">vs {comp.versusBookName}: </strong>
                             <span className="text-appText">{comp.distinction}</span>
                           </div>
@@ -606,7 +606,7 @@ export const BookTrackBrowser: React.FC<BookTrackBrowserProps> = ({
                   Bank Latihan Otentik ({currentDrills.length} Drill)
                 </span>
               </div>
-              <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-amber-500/20 text-accent border border-amber-500/30">
+              <span className="text-xs font-bold px-2 py-0.5 rounded-full bg-amber-500/20 text-accent border border-amber-500/30">
                 100% Pedagogis
               </span>
             </div>
@@ -633,7 +633,7 @@ export const BookTrackBrowser: React.FC<BookTrackBrowserProps> = ({
 
           {/* Legal Attribution Notice */}
           {activeBook?.legal_note && (
-            <div className="p-3 rounded-xl bg-surface-2/40 border border-accent/10 text-[11px] text-appText-muted/80 leading-relaxed">
+            <div className="p-3 rounded-xl bg-surface-2/40 border border-accent/10 text-xs text-appText-muted leading-relaxed">
               <span className="font-bold text-accent">Attribution Notice: </span>
               {activeBook.legal_note}
             </div>

@@ -236,7 +236,7 @@ export const NuanceCompareModal: React.FC<NuanceCompareModalProps> = ({ isOpen, 
               }`}
             >
               <span>{p.title}</span>
-              <span className={`text-[10px] px-1.5 py-0.2 rounded-full ${
+              <span className={`text-xs px-1.5 py-0.2 rounded-full ${
                 selectedPairId === p.id ? 'bg-black/20 text-bg' : 'bg-amber-500/15 text-accent'
               }`}>
                 {p.level}
@@ -251,7 +251,7 @@ export const NuanceCompareModal: React.FC<NuanceCompareModalProps> = ({ isOpen, 
           <div className="bg-surface-2 border border-accent/25 rounded-2xl p-5 space-y-3">
             <div className="flex items-start justify-between gap-2 border-b border-accent/15 pb-3">
               <div>
-                <span className="text-[10px] font-extrabold uppercase px-2 py-0.5 rounded-full bg-blue-500/20 text-blue-300 border border-blue-500/30">
+                <span className="text-xs font-extrabold uppercase px-2 py-0.5 rounded-full bg-blue-500/20 text-blue-300 border border-blue-500/30">
                   Pola A
                 </span>
                 <h3 className="text-xl font-jp font-bold text-appText-bright mt-1.5" lang="ja">
@@ -289,7 +289,7 @@ export const NuanceCompareModal: React.FC<NuanceCompareModalProps> = ({ isOpen, 
                   <Volume2 className="w-4 h-4" />
                 </button>
               </div>
-              <div className="text-[11px] text-appText-muted italic">
+              <div className="text-xs text-appText-muted italic">
                 {currentPair.patternA.example.id}
               </div>
             </div>
@@ -299,7 +299,7 @@ export const NuanceCompareModal: React.FC<NuanceCompareModalProps> = ({ isOpen, 
           <div className="bg-surface-2 border border-accent/25 rounded-2xl p-5 space-y-3">
             <div className="flex items-start justify-between gap-2 border-b border-accent/15 pb-3">
               <div>
-                <span className="text-[10px] font-extrabold uppercase px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-500/30">
+                <span className="text-xs font-extrabold uppercase px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-500/30">
                   Pola B
                 </span>
                 <h3 className="text-xl font-jp font-bold text-appText-bright mt-1.5" lang="ja">
@@ -337,7 +337,7 @@ export const NuanceCompareModal: React.FC<NuanceCompareModalProps> = ({ isOpen, 
                   <Volume2 className="w-4 h-4" />
                 </button>
               </div>
-              <div className="text-[11px] text-appText-muted italic">
+              <div className="text-xs text-appText-muted italic">
                 {currentPair.patternB.example.id}
               </div>
             </div>

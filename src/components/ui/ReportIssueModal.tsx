@@ -137,7 +137,7 @@ export const ReportIssueModal: React.FC<ReportIssueModalProps> = ({
 
         {/* Item Context Preview Box */}
         <div className="bg-surface-2/70 border border-accent/20 rounded-2xl p-4 space-y-1.5">
-          <div className="text-[10px] font-bold uppercase tracking-wider text-accent flex items-center gap-1.5">
+          <div className="text-xs font-bold uppercase tracking-wider text-accent flex items-center gap-1.5">
             <span>Bagian yang Dilaporkan</span>
             <span className="font-mono opacity-60">({context.itemType})</span>
           </div>
@@ -175,7 +175,7 @@ export const ReportIssueModal: React.FC<ReportIssueModalProps> = ({
                     <span className="text-lg leading-none shrink-0 mt-0.5">{cat.icon}</span>
                     <div className="space-y-0.5 min-w-0">
                       <div className="text-xs font-bold leading-tight">{cat.label}</div>
-                      <div className="text-[10px] opacity-75 line-clamp-1">{cat.desc}</div>
+                      <div className="text-xs opacity-75 line-clamp-1">{cat.desc}</div>
                     </div>
                   </button>
                 );
@@ -194,7 +194,7 @@ export const ReportIssueModal: React.FC<ReportIssueModalProps> = ({
               placeholder="Contoh: Partikelnya terasa kaku, biasanya penutur asli memakai に daripada で dalam situasi ini..."
               rows={3}
               required
-              className="w-full bg-surface-2 border border-accent/20 rounded-xl p-3 text-xs text-appText-bright placeholder:text-appText-muted/50 focus:outline-none focus:border-accent transition-colors resize-none"
+              className="w-full bg-surface-2 border border-accent/20 rounded-xl p-3 text-xs text-appText-bright placeholder:text-appText-muted focus:outline-none focus:border-accent transition-colors resize-none"
             />
           </div>
 
@@ -208,7 +208,7 @@ export const ReportIssueModal: React.FC<ReportIssueModalProps> = ({
               value={suggestedCorrection}
               onChange={(e) => setSuggestedCorrection(e.target.value)}
               placeholder="Contoh kalimat / arti yang lebih alami..."
-              className="w-full bg-surface-2 border border-accent/20 rounded-xl px-3 py-2 text-xs text-appText-bright placeholder:text-appText-muted/50 focus:outline-none focus:border-accent transition-colors"
+              className="w-full bg-surface-2 border border-accent/20 rounded-xl px-3 py-2 text-xs text-appText-bright placeholder:text-appText-muted focus:outline-none focus:border-accent transition-colors"
             />
           </div>
 

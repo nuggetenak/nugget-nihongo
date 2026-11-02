@@ -71,7 +71,7 @@ export const SyncStatusPill: React.FC<{ className?: string }> = ({ className = '
       <button
         type="button"
         onClick={() => setIsDrawerOpen(true)}
-        className={`inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[11px] font-bold border transition-all active:scale-95 focus-visible:ring-2 focus-visible:ring-accent ${pillColor} ${className}`}
+        className={`inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-bold border transition-all active:scale-95 focus-visible:ring-2 focus-visible:ring-accent ${pillColor} ${className}`}
         title="Klik untuk info status sinkronisasi cloud & offline"
       >
         {pillIcon}
@@ -115,7 +115,7 @@ export const SyncStatusPill: React.FC<{ className?: string }> = ({ className = '
 
               <div className="flex items-center justify-between p-2.5 rounded-xl bg-surface-2 border border-accent/10">
                 <span className="text-appText-muted">Database Supabase:</span>
-                <span className="font-mono text-[11px] text-accent font-bold">
+                <span className="font-mono text-xs text-accent font-bold">
                   {OFFICIAL_PROJECT_REF}
                 </span>
               </div>
@@ -129,13 +129,13 @@ export const SyncStatusPill: React.FC<{ className?: string }> = ({ className = '
 
               <div className="flex items-center justify-between p-2.5 rounded-xl bg-surface-2 border border-accent/10">
                 <span className="text-appText-muted">Sinkron Terakhir:</span>
-                <span className="text-appText-bright font-mono text-[11px]">
+                <span className="text-appText-bright font-mono text-xs">
                   {lastSyncedAt ? new Date(lastSyncedAt).toLocaleTimeString('id-ID') : 'Belum pernah'}
                 </span>
               </div>
 
               {syncErrorMessage && (
-                <div className="p-2.5 rounded-xl bg-rose-500/10 border border-rose-500/25 text-rose-300 text-[11px] leading-relaxed">
+                <div className="p-2.5 rounded-xl bg-rose-500/10 border border-rose-500/25 text-rose-300 text-xs leading-relaxed">
                   {syncErrorMessage}
                 </div>
               )}

@@ -140,7 +140,7 @@ export const PitchAccentBadge: React.FC<PitchAccentProps> = ({
       <button
         type="button"
         onClick={() => setShowModal(true)}
-        className="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-md bg-amber-500/15 dark:bg-amber-500/10 hover:bg-amber-500/25 border border-amber-500/30 text-[10px] text-amber-800 dark:text-amber-300 font-mono transition-colors active:scale-95 shrink-0"
+        className="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-md bg-amber-500/15 dark:bg-amber-500/10 hover:bg-amber-500/25 border border-amber-500/30 text-xs text-amber-800 dark:text-amber-300 font-mono transition-colors active:scale-95 shrink-0"
         title={`Intonasi Tokyo: ${patternMeta.kanji} (${patternMeta.name})`}
       >
         <span className="font-bold">{patternMeta.kanji}</span>
@@ -177,7 +177,7 @@ export const PitchAccentBadge: React.FC<PitchAccentProps> = ({
   return (
     <div className="inline-flex flex-col items-center p-2.5 rounded-2xl bg-surface-2 border border-accent/20 shadow-sm max-w-full">
       <div className="flex items-center justify-between w-full gap-2 mb-1">
-        <span className="text-[10px] font-bold uppercase tracking-wider text-accent flex items-center gap-1">
+        <span className="text-xs font-bold uppercase tracking-wider text-accent flex items-center gap-1">
           <span>Intonasi Nada Tokyo:</span>
           <span className="px-1.5 py-0.5 rounded bg-amber-500/15 text-amber-800 dark:text-amber-300 font-mono">
             {patternMeta.kanji}
@@ -250,7 +250,7 @@ export const PitchAccentBadge: React.FC<PitchAccentProps> = ({
               style={{ width: `${stepWidth}px` }}
               className={`text-center font-jp text-xs leading-tight ${
                 p.isParticle
-                  ? 'text-appText-muted/70 italic text-[11px]'
+                  ? 'text-appText-muted italic text-xs'
                   : p.hasDrop
                   ? 'text-rose-400 font-extrabold'
                   : p.isHigh
@@ -305,12 +305,12 @@ export const PitchAccentBadge: React.FC<PitchAccentProps> = ({
                   <div className="flex items-center justify-between font-bold">
                     <span className="text-accent">{item.kanji} — {item.name}</span>
                     {Number(key) === pattern && (
-                      <span className="text-[10px] px-1.5 py-0.2 rounded-full bg-amber-500/30 text-amber-300">
+                      <span className="text-xs px-1.5 py-0.2 rounded-full bg-amber-500/30 text-amber-300">
                         Kata Ini
                       </span>
                     )}
                   </div>
-                  <p className="text-[11px] text-appText-muted leading-relaxed">
+                  <p className="text-xs text-appText-muted leading-relaxed">
                     {item.desc}
                   </p>
                 </div>

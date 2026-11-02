@@ -169,7 +169,7 @@ export const ChoukaiAudioPlayer: React.FC<ChoukaiAudioPlayerProps> = ({
             onChange={handleSeek}
             className="w-full h-2 bg-neutral-800 rounded-lg appearance-none cursor-pointer accent-amber-500"
           />
-          <div className="flex justify-between items-center text-[11px] font-mono text-neutral-400">
+          <div className="flex justify-between items-center text-xs font-mono text-neutral-400">
             <span>{formatTime(currentTime)}</span>
             <span>{formatTime(duration)}</span>
           </div>

@@ -103,7 +103,7 @@ export const DialogueStage: React.FC<DialogueStageProps> = ({ dialogue = [], sce
             <Compass className="w-4 h-4" />
           </div>
           <div className="space-y-1 min-w-0">
-            <span className="text-[10px] font-bold uppercase tracking-wider text-accent block">
+            <span className="text-xs font-bold uppercase tracking-wider text-accent block">
               Situasi Percakapan Nyata
             </span>
             <p className="text-xs text-appText leading-relaxed">
@@ -156,7 +156,7 @@ export const DialogueStage: React.FC<DialogueStageProps> = ({ dialogue = [], sce
             title="Sembunyikan atau tampilkan furigana"
           >
             {showFurigana ? <Eye className="w-3.5 h-3.5 text-accent" /> : <EyeOff className="w-3.5 h-3.5" />}
-            <span className="text-[11px] font-bold">Furigana</span>
+            <span className="text-xs font-bold">Furigana</span>
           </button>
 
           <button
@@ -166,7 +166,7 @@ export const DialogueStage: React.FC<DialogueStageProps> = ({ dialogue = [], sce
             title="Sembunyikan atau tampilkan arti bahasa Indonesia"
           >
             {showTranslation ? <Eye className="w-3.5 h-3.5 text-accent" /> : <EyeOff className="w-3.5 h-3.5" />}
-            <span className="text-[11px] font-bold">Arti ID</span>
+            <span className="text-xs font-bold">Arti ID</span>
           </button>
         </div>
       </div>
@@ -199,12 +199,12 @@ export const DialogueStage: React.FC<DialogueStageProps> = ({ dialogue = [], sce
                   <div className="flex flex-wrap items-center gap-2">
                     <span className="font-bold text-xs sm:text-sm text-appText-bright">{line.speaker}</span>
                     {line.speakerRole && (
-                      <span className="text-[10px] px-2 py-0.5 rounded-md bg-surface-2 border border-accent/15 text-appText-muted font-medium">
+                      <span className="text-xs px-2 py-0.5 rounded-md bg-surface-2 border border-accent/15 text-appText-muted font-medium">
                         {line.speakerRole}
                       </span>
                     )}
                     {line.note && (
-                      <span className="text-[10px] text-accent italic font-medium">
+                      <span className="text-xs text-accent italic font-medium">
                         · {line.note}
                       </span>
                     )}

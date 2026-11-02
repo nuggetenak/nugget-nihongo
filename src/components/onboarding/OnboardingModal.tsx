@@ -270,7 +270,7 @@ export const OnboardingModal: React.FC<OnboardingModalProps> = ({ isOpen, onClos
                   <div className="text-xs font-bold text-appText-bright">
                     {pt.title}
                   </div>
-                  <div className="text-[11px] sm:text-xs text-appText-muted leading-relaxed">
+                  <div className="text-xs sm:text-xs text-appText-muted leading-relaxed">
                     {pt.desc}
                   </div>
                 </div>

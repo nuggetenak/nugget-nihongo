@@ -158,7 +158,7 @@ export const KebunPage: React.FC = () => {
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-500/20 border border-amber-500/40 text-amber-300 font-extrabold text-xs mb-2 tracking-wide shadow-xs">
             <Brain className="w-4 h-4 text-amber-400 shrink-0" />
             <span>Pusat Retensi & Brankas Memori</span>
-            <span className="text-[11px] font-normal text-appText-muted/80">· 記憶保持センター</span>
+            <span className="text-xs font-normal text-appText-muted">· 記憶保持センター</span>
           </div>
           <h1 className="text-xl sm:text-3xl font-extrabold text-appText-bright tracking-tight">
             Pusat Retensi & Kebun Memori
@@ -225,10 +225,10 @@ export const KebunPage: React.FC = () => {
             ) : fsrsStats.dueCount === 0 ? (
               <button
                 onClick={startFSRSDueSession}
-                className="px-5 py-3.5 rounded-2xl bg-stone-800 hover:bg-stone-750 text-stone-200 border border-stone-700/60 font-bold text-xs sm:text-sm flex items-center justify-center gap-2 transition-all active:scale-95 min-h-[44px]"
+                className="px-5 py-3.5 rounded-2xl bg-surface-2 hover:bg-surface-3 text-appText-bright border border-theme font-bold text-xs sm:text-sm flex items-center justify-center gap-2 transition-all active:scale-95 min-h-[44px]"
               >
                 <Sparkles className="w-4 h-4 text-amber-400" />
-                <span>Semua Kartu Segar! Ulas Bebas · Latihan Bebas (Semua Kartu Segar)</span>
+                <span>Latihan Bebas (Semua Kartu Segar)</span>
                 <ChevronRight className="w-4 h-4 stroke-[2]" />
               </button>
             ) : (
@@ -241,7 +241,7 @@ export const KebunPage: React.FC = () => {
                 <ChevronRight className="w-4 h-4 stroke-[3]" />
               </button>
             )}
-            <div className="text-[11px] text-center text-appText-muted">
+            <div className="text-xs text-center text-appText-muted">
               {fsrsStats.totalCards === 0
                 ? '🌱 Pelajari materi baru untuk menumbuhkan tanaman memori'
                 : fsrsStats.dueCount === 0
@@ -256,28 +256,28 @@ export const KebunPage: React.FC = () => {
           <div className="flex items-center gap-2 px-3 py-2 rounded-xl bg-surface/70 border border-theme text-xs">
             <Clock className="w-4 h-4 text-amber-500 shrink-0" />
             <div className="min-w-0">
-              <span className="text-[10px] text-appText-muted block truncate">Jatuh Tempo</span>
+              <span className="text-xs text-appText-muted block truncate">Jatuh Tempo</span>
               <span className="font-mono tabular-nums font-extrabold text-amber-500">{fsrsStats.dueCount} kartu</span>
             </div>
           </div>
           <div className="flex items-center gap-2 px-3 py-2 rounded-xl bg-surface/70 border border-theme text-xs">
             <Brain className="w-4 h-4 text-accent shrink-0" />
             <div className="min-w-0">
-              <span className="text-[10px] text-appText-muted block truncate">Terdaftar</span>
+              <span className="text-xs text-appText-muted block truncate">Terdaftar</span>
               <span className="font-mono tabular-nums font-extrabold text-appText-bright">{fsrsStats.totalCards} kartu</span>
             </div>
           </div>
           <div className="flex items-center gap-2 px-3 py-2 rounded-xl bg-surface/70 border border-theme text-xs">
             <TrendingUp className="w-4 h-4 text-emerald-500 shrink-0" />
             <div className="min-w-0">
-              <span className="text-[10px] text-appText-muted block truncate">Stabilitas Rata-rata</span>
+              <span className="text-xs text-appText-muted block truncate">Stabilitas Rata-rata</span>
               <span className="font-mono tabular-nums font-extrabold text-emerald-500">{fsrsStats.avgStability} hari</span>
             </div>
           </div>
           <div className="flex items-center gap-2 px-3 py-2 rounded-xl bg-surface/70 border border-theme text-xs">
             <Droplets className="w-4 h-4 text-cyan-400 shrink-0 fill-cyan-400" />
             <div className="min-w-0">
-              <span className="text-[10px] text-appText-muted block truncate">Stok Air</span>
+              <span className="text-xs text-appText-muted block truncate">Stok Air</span>
               <span className="font-mono tabular-nums font-extrabold text-cyan-400">{waterDrops} tetes</span>
             </div>
           </div>
@@ -302,7 +302,7 @@ export const KebunPage: React.FC = () => {
             <Droplets className="w-4 h-4 shrink-0 fill-current" />
             <span>Kebun Kanji & Siram</span>
             <span
-              className={`px-2 py-0.5 rounded-full text-[10px] font-mono tabular-nums font-extrabold ${
+              className={`px-2 py-0.5 rounded-full text-xs font-mono tabular-nums font-extrabold ${
                 activeView === 'garden'
                   ? 'bg-emerald-700/80 text-emerald-100'
                   : 'bg-surface border border-theme text-appText-muted'
@@ -323,7 +323,7 @@ export const KebunPage: React.FC = () => {
             <TrendingUp className="w-4 h-4 shrink-0" />
             <span>Metrik Ilmiah FSRS</span>
             <span
-              className={`px-2 py-0.5 rounded-full text-[10px] font-mono tabular-nums font-extrabold ${
+              className={`px-2 py-0.5 rounded-full text-xs font-mono tabular-nums font-extrabold ${
                 activeView === 'metrics'
                   ? 'bg-stone-900/40 text-stone-950 dark:text-stone-900'
                   : 'bg-surface border border-theme text-appText-muted'
@@ -358,7 +358,7 @@ export const KebunPage: React.FC = () => {
                     <Droplets className="w-5 h-5 fill-cyan-400 text-cyan-400" />
                   </div>
                   <div>
-                    <div className="text-[9px] font-bold uppercase tracking-wider text-appText-muted">Stok Air</div>
+                    <div className="text-xs font-bold uppercase tracking-wider text-appText-muted">Stok Air</div>
                     <div className="text-sm sm:text-base font-bold font-mono tabular-nums text-cyan-500 dark:text-cyan-400 whitespace-nowrap">
                       💧 {waterDrops} Tetes Air Tersedia
                     </div>
@@ -385,7 +385,7 @@ export const KebunPage: React.FC = () => {
                   </div>
                   <div>
                     <div className="text-xs font-bold text-appText-bright">Persediaan Air Habis</div>
-                    <div className="text-[11px] text-appText-muted">Selesaikan review kartu FSRS di atas atau latihan kuis untuk mendapatkan 2–5 tetes air segar.</div>
+                    <div className="text-xs text-appText-muted">Selesaikan review kartu FSRS di atas atau latihan kuis untuk mendapatkan 2–5 tetes air segar.</div>
                   </div>
                 </div>
                 <button
@@ -439,7 +439,7 @@ export const KebunPage: React.FC = () => {
                     >
                       {/* Plant Card Header */}
                       <div className="flex items-center justify-between text-xs mb-2">
-                        <span className="font-bold uppercase text-[9px] sm:text-[10px] px-2 py-0.5 rounded-full bg-surface-2 border border-theme text-accent">
+                        <span className="font-bold uppercase text-xs sm:text-xs px-2 py-0.5 rounded-full bg-surface-2 border border-theme text-accent">
                           {plant.level.toUpperCase()}
                         </span>
                         <span className="text-base" title={stageInfo.label}>
@@ -473,7 +473,7 @@ export const KebunPage: React.FC = () => {
 
                       {/* Growth Progress Bar */}
                       <div className="mt-3 pt-3 border-t border-theme space-y-1.5">
-                        <div className="flex items-center justify-between text-[11px] text-appText-muted font-medium">
+                        <div className="flex items-center justify-between text-xs text-appText-muted font-medium">
                           <span className="truncate">{stageInfo.label}</span>
                           <span className="font-mono tabular-nums shrink-0">{plant.waterCount}/{plant.maxWater}</span>
                         </div>
@@ -526,53 +526,53 @@ export const KebunPage: React.FC = () => {
             {/* 4 Core Scientific Retention Metrics Cards */}
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
               <div className="p-4 sm:p-5 rounded-2xl bg-surface-2 border border-theme space-y-1">
-                <div className="text-[11px] font-bold text-appText-muted uppercase tracking-wider flex items-center gap-1.5">
+                <div className="text-xs font-bold text-appText-muted uppercase tracking-wider flex items-center gap-1.5">
                   <Brain className="w-3.5 h-3.5 text-accent" />
                   <span>Kartu Terdaftar</span>
                 </div>
                 <div className="text-2xl sm:text-3xl font-black text-appText-bright font-mono tabular-nums">
                   {fsrsStats.totalCards}
                 </div>
-                <div className="text-[11px] text-appText-muted">
+                <div className="text-xs text-appText-muted">
                   Kosakata & grammar di memori
                 </div>
               </div>
 
               <div className="p-4 sm:p-5 rounded-2xl bg-surface-2 border border-theme space-y-1">
-                <div className="text-[11px] font-bold text-appText-muted uppercase tracking-wider flex items-center gap-1.5">
+                <div className="text-xs font-bold text-appText-muted uppercase tracking-wider flex items-center gap-1.5">
                   <Clock className="w-3.5 h-3.5 text-amber-500" />
                   <span>Jatuh Tempo Hari Ini</span>
                 </div>
                 <div className="text-2xl sm:text-3xl font-black text-amber-500 font-mono tabular-nums">
                   {fsrsStats.dueCount}
                 </div>
-                <div className="text-[11px] text-appText-muted">
+                <div className="text-xs text-appText-muted">
                   Perlu diulas sebelum lupa
                 </div>
               </div>
 
               <div className="p-4 sm:p-5 rounded-2xl bg-surface-2 border border-theme space-y-1">
-                <div className="text-[11px] font-bold text-appText-muted uppercase tracking-wider flex items-center gap-1.5">
+                <div className="text-xs font-bold text-appText-muted uppercase tracking-wider flex items-center gap-1.5">
                   <TrendingUp className="w-3.5 h-3.5 text-emerald-500" />
                   <span>Rata-rata Stabilitas</span>
                 </div>
                 <div className="text-2xl sm:text-3xl font-black text-emerald-500 font-mono tabular-nums">
                   {fsrsStats.avgStability} <span className="text-xs font-normal text-appText-muted">hari</span>
                 </div>
-                <div className="text-[11px] text-appText-muted">
+                <div className="text-xs text-appText-muted">
                   Daya tahan ingatan rata-rata
                 </div>
               </div>
 
               <div className="p-4 sm:p-5 rounded-2xl bg-surface-2 border border-theme space-y-1">
-                <div className="text-[11px] font-bold text-appText-muted uppercase tracking-wider flex items-center gap-1.5">
+                <div className="text-xs font-bold text-appText-muted uppercase tracking-wider flex items-center gap-1.5">
                   <Target className="w-3.5 h-3.5 text-sky-500" />
                   <span>Indeks Kesulitan (D)</span>
                 </div>
                 <div className="text-2xl sm:text-3xl font-black text-sky-500 font-mono tabular-nums">
                   {fsrsStats.avgDifficulty} <span className="text-xs font-normal text-appText-muted">/ 10</span>
                 </div>
-                <div className="text-[11px] text-appText-muted">
+                <div className="text-xs text-appText-muted">
                   Tingkat kesulitan relatif materi
                 </div>
               </div>
@@ -594,7 +594,7 @@ export const KebunPage: React.FC = () => {
                   <div className="text-lg sm:text-xl font-black font-mono tabular-nums text-appText-bright">
                     {fsrsStats.stateCounts.new}
                   </div>
-                  <div className="text-[10px] text-appText-muted">Belum pernah diulas</div>
+                  <div className="text-xs text-appText-muted">Belum pernah diulas</div>
                 </div>
 
                 <div className="p-3 rounded-xl bg-surface border border-theme space-y-1">
@@ -605,7 +605,7 @@ export const KebunPage: React.FC = () => {
                   <div className="text-lg sm:text-xl font-black font-mono tabular-nums text-appText-bright">
                     {fsrsStats.stateCounts.learning}
                   </div>
-                  <div className="text-[10px] text-appText-muted">Fase awal pembentukan</div>
+                  <div className="text-xs text-appText-muted">Fase awal pembentukan</div>
                 </div>
 
                 <div className="p-3 rounded-xl bg-surface border border-theme space-y-1">
@@ -616,7 +616,7 @@ export const KebunPage: React.FC = () => {
                   <div className="text-lg sm:text-xl font-black font-mono tabular-nums text-appText-bright">
                     {fsrsStats.stateCounts.review}
                   </div>
-                  <div className="text-[10px] text-appText-muted">Interval memori stabil</div>
+                  <div className="text-xs text-appText-muted">Interval memori stabil</div>
                 </div>
 
                 <div className="p-3 rounded-xl bg-surface border border-theme space-y-1">
@@ -627,7 +627,7 @@ export const KebunPage: React.FC = () => {
                   <div className="text-lg sm:text-xl font-black font-mono tabular-nums text-appText-bright">
                     {fsrsStats.stateCounts.relearning}
                   </div>
-                  <div className="text-[10px] text-appText-muted">Pernah lupa & dipulihkan</div>
+                  <div className="text-xs text-appText-muted">Pernah lupa & dipulihkan</div>
                 </div>
               </div>
 
@@ -668,7 +668,7 @@ export const KebunPage: React.FC = () => {
                 <div className="w-9 h-9 rounded-xl bg-amber-500/15 text-accent flex items-center justify-center">
                   <CheckCircle2 className="w-5 h-5" />
                 </div>
-                <span className="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full bg-surface border border-theme text-appText-muted">
+                <span className="text-xs font-bold uppercase tracking-wider px-2 py-0.5 rounded-full bg-surface border border-theme text-appText-muted">
                   Kuis Cepat
                 </span>
               </div>
@@ -693,7 +693,7 @@ export const KebunPage: React.FC = () => {
                 <div className="w-9 h-9 rounded-xl bg-emerald-500/15 text-emerald-400 flex items-center justify-center">
                   <Layers className="w-5 h-5" />
                 </div>
-                <span className="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full bg-surface border border-theme text-appText-muted">
+                <span className="text-xs font-bold uppercase tracking-wider px-2 py-0.5 rounded-full bg-surface border border-theme text-appText-muted">
                   Partikel & Pola
                 </span>
               </div>
@@ -718,7 +718,7 @@ export const KebunPage: React.FC = () => {
                 <div className="w-9 h-9 rounded-xl bg-sky-500/15 text-sky-400 flex items-center justify-center">
                   <Sparkles className="w-5 h-5" />
                 </div>
-                <span className="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full bg-surface border border-theme text-appText-muted">
+                <span className="text-xs font-bold uppercase tracking-wider px-2 py-0.5 rounded-full bg-surface border border-theme text-appText-muted">
                   Sintaksis
                 </span>
               </div>
@@ -743,7 +743,7 @@ export const KebunPage: React.FC = () => {
                 <div className="w-9 h-9 rounded-xl bg-violet-500/15 text-violet-400 flex items-center justify-center">
                   <Volume2 className="w-5 h-5" />
                 </div>
-                <span className="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full bg-surface border border-theme text-appText-muted">
+                <span className="text-xs font-bold uppercase tracking-wider px-2 py-0.5 rounded-full bg-surface border border-theme text-appText-muted">
                   Audio Choukai
                 </span>
               </div>
@@ -768,7 +768,7 @@ export const KebunPage: React.FC = () => {
                 <div className="w-9 h-9 rounded-xl bg-amber-500/15 text-accent flex items-center justify-center">
                   <Zap className="w-5 h-5" />
                 </div>
-                <span className="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full bg-surface border border-theme text-appText-muted">
+                <span className="text-xs font-bold uppercase tracking-wider px-2 py-0.5 rounded-full bg-surface border border-theme text-appText-muted">
                   Perubahan Kata Kerja
                 </span>
               </div>
@@ -793,7 +793,7 @@ export const KebunPage: React.FC = () => {
                 <div className="w-9 h-9 rounded-xl bg-rose-500/15 text-rose-400 flex items-center justify-center">
                   <AlertCircle className="w-5 h-5" />
                 </div>
-                <span className="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full bg-surface border border-theme text-appText-muted">
+                <span className="text-xs font-bold uppercase tracking-wider px-2 py-0.5 rounded-full bg-surface border border-theme text-appText-muted">
                   Diagnostik & Review
                 </span>
               </div>

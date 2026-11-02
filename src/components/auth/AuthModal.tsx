@@ -190,11 +190,11 @@ export const AuthModal: React.FC<AuthModalProps> = ({ isOpen, onClose }) => {
 
           {/* Offline Mode Comfort Notice */}
           <div className="pt-2 text-center">
-            <div className="inline-flex items-center gap-1.5 text-[11px] text-appText-muted/80">
+            <div className="inline-flex items-center gap-1.5 text-xs text-appText-muted">
               <ShieldCheck className="w-3.5 h-3.5 text-accent" />
               <span>Privasi terjamin · 100% Gratis & Bebas Iklan</span>
             </div>
-            <p className="text-[10px] text-appText-muted/60 mt-1">
+            <p className="text-xs text-appText-muted mt-1">
               Tidak ingin login sekarang? Kamu tetap bisa menikmati seluruh materi & kuis dalam Mode Offline.
             </p>
           </div>

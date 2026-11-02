@@ -106,7 +106,7 @@ export const ChoukaiSimulatorPage: React.FC = () => {
           <span>Kembali ke Materi</span>
         </button>
 
-        <span className="text-[11px] font-mono font-medium text-amber-400 bg-amber-500/10 px-2.5 py-1 rounded-full border border-amber-500/30 flex items-center gap-1.5">
+        <span className="text-xs font-mono font-medium text-amber-400 bg-amber-500/10 px-2.5 py-1 rounded-full border border-amber-500/30 flex items-center gap-1.5">
           <Headphones className="w-3.5 h-3.5" />
           <span>JFT-Basic CBT Simulator</span>
         </span>
@@ -143,7 +143,7 @@ export const ChoukaiSimulatorPage: React.FC = () => {
           >
             <span>{sec.icon || '📝'}</span>
             <span>{sec.name}</span>
-            <span className="text-[10px] opacity-75 font-mono">({sec.questions.length})</span>
+            <span className="text-xs opacity-75 font-mono">({sec.questions.length})</span>
           </button>
         ))}
       </div>

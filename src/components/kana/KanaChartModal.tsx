@@ -163,7 +163,7 @@ export const KanaChartModal: React.FC<KanaChartModalProps> = ({ isOpen, onClose 
               <span>Kartu {practiceIndex + 1} dari {currentList.length}</span>
               <div className="flex items-center gap-2">
                 <span className="font-bold text-accent">Skor: {practiceScore}</span>
-                <span className="text-[11px] text-appText-muted/70">({Math.round((practiceScore / Math.max(1, practiceIndex)) * 100)}% akurat)</span>
+                <span className="text-xs text-appText-muted">({Math.round((practiceScore / Math.max(1, practiceIndex)) * 100)}% akurat)</span>
               </div>
             </div>
 
@@ -223,7 +223,7 @@ export const KanaChartModal: React.FC<KanaChartModalProps> = ({ isOpen, onClose 
                       ? currentList[practiceIndex].hiragana
                       : currentList[practiceIndex].katakana}
                   </div>
-                  <div className="text-[11px] font-medium text-accent mt-3 flex items-center gap-1">
+                  <div className="text-xs font-medium text-accent mt-3 flex items-center gap-1">
                     <span>👆 Ketuk untuk melihat cara baca & contoh kata</span>
                   </div>
                 </div>
@@ -274,7 +274,7 @@ export const KanaChartModal: React.FC<KanaChartModalProps> = ({ isOpen, onClose 
                           <Volume2 className="w-3.5 h-3.5" />
                         </button>
                       </div>
-                      <p className="text-[11px] text-appText-muted leading-tight">
+                      <p className="text-xs text-appText-muted leading-tight">
                         Arti: <span className="text-appText-bright font-medium">{currentList[practiceIndex].example?.meaning}</span>
                       </p>
                     </div>
@@ -292,7 +292,7 @@ export const KanaChartModal: React.FC<KanaChartModalProps> = ({ isOpen, onClose 
                 title="Belum Hafal (Panah Kanan →)"
               >
                 <span>Belum Hafal ❌</span>
-                <kbd className="hidden sm:inline-block px-1.5 py-0.5 rounded bg-surface text-[10px] text-appText-muted border border-accent/20">→</kbd>
+                <kbd className="hidden sm:inline-block px-1.5 py-0.5 rounded bg-surface text-xs text-appText-muted border border-accent/20">→</kbd>
               </button>
               <button
                 type="button"
@@ -316,7 +316,7 @@ export const KanaChartModal: React.FC<KanaChartModalProps> = ({ isOpen, onClose 
                 title="Sudah Hafal (Panah Kiri ←)"
               >
                 <span>Sudah Hafal ✅</span>
-                <kbd className="hidden sm:inline-block px-1.5 py-0.5 rounded bg-amber-950/40 text-[10px] text-bg border border-bg/20">←</kbd>
+                <kbd className="hidden sm:inline-block px-1.5 py-0.5 rounded bg-amber-950/40 text-xs text-bg border border-bg/20">←</kbd>
               </button>
             </div>
           </div>
@@ -404,7 +404,7 @@ export const KanaChartModal: React.FC<KanaChartModalProps> = ({ isOpen, onClose 
                       {char}
                     </span>
                     {showRomaji && (
-                      <span className="text-[10px] sm:text-[11px] font-mono text-appText-muted group-hover:text-amber-300 mt-1">
+                      <span className="text-xs sm:text-xs font-mono text-appText-muted group-hover:text-amber-300 mt-1">
                         {item.romaji}
                       </span>
                     )}
@@ -448,7 +448,7 @@ export const KanaChartModal: React.FC<KanaChartModalProps> = ({ isOpen, onClose 
                   </div>
                 </div>
 
-                <div className="text-xs text-appText-muted/80 flex items-center gap-1.5 self-end sm:self-center">
+                <div className="text-xs text-appText-muted flex items-center gap-1.5 self-end sm:self-center">
                   <span>💡 Ketuk huruf apa saja untuk mendengar suara asli</span>
                 </div>
               </div>

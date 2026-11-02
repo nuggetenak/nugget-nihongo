@@ -124,7 +124,7 @@ export const CanDoCompletionStage: React.FC<CanDoCompletionStageProps> = ({
             {/* Model Jawaban Alami */}
             <div className="pt-2 border-t border-accent/10 flex items-start justify-between gap-3">
               <div className="min-w-0 space-y-1">
-                <div className="text-[10px] uppercase font-bold text-appText-muted">
+                <div className="text-xs uppercase font-bold text-appText-muted">
                   Model Jawaban Alami & Sopan:
                 </div>
                 <div className="text-sm sm:text-base font-jp font-bold text-accent break-words">
@@ -199,7 +199,7 @@ export const CanDoCompletionStage: React.FC<CanDoCompletionStageProps> = ({
                 <span className="text-xs font-bold uppercase tracking-wider text-accent block">
                   Rangkuman Saku Pelajaran
                 </span>
-                <span className="text-[10px] text-appText-muted">
+                <span className="text-xs text-appText-muted">
                   Kartu contekan cepat untuk review 30 detik sebelum tidur
                 </span>
               </div>
@@ -218,7 +218,7 @@ export const CanDoCompletionStage: React.FC<CanDoCompletionStageProps> = ({
             <div className="space-y-3 pt-2 text-xs animate-fade-in">
               {/* Rumus Utama */}
               <div className="p-3 rounded-2xl bg-surface border border-accent/20 space-y-1">
-                <span className="text-[10px] font-bold uppercase tracking-wider text-appText-muted block">
+                <span className="text-xs font-bold uppercase tracking-wider text-appText-muted block">
                   Rumus Utama:
                 </span>
                 <div className="font-mono text-xs sm:text-sm font-bold text-accent break-words">
@@ -229,7 +229,7 @@ export const CanDoCompletionStage: React.FC<CanDoCompletionStageProps> = ({
               {/* 3 Kata Kunci */}
               {pocketSummary.coreWords && pocketSummary.coreWords.length > 0 && (
                 <div className="p-3 rounded-2xl bg-surface border border-accent/20 space-y-1.5">
-                  <span className="text-[10px] font-bold uppercase tracking-wider text-appText-muted block">
+                  <span className="text-xs font-bold uppercase tracking-wider text-appText-muted block">
                     Kosakata Kunci:
                   </span>
                   <div className="flex flex-wrap gap-1.5">
@@ -248,7 +248,7 @@ export const CanDoCompletionStage: React.FC<CanDoCompletionStageProps> = ({
               {/* Peringatan Utama */}
               {pocketSummary.coreWarning && (
                 <div className="p-3 rounded-2xl bg-red-500/10 border border-red-500/20 text-red-300 space-y-0.5">
-                  <span className="text-[10px] font-bold uppercase tracking-wider text-red-400 block">
+                  <span className="text-xs font-bold uppercase tracking-wider text-red-400 block">
                     ⚠️ Waspada Utama:
                   </span>
                   <p className="leading-relaxed">{pocketSummary.coreWarning}</p>
@@ -258,7 +258,7 @@ export const CanDoCompletionStage: React.FC<CanDoCompletionStageProps> = ({
               {/* Dialog Singkat */}
               {pocketSummary.quickDialogue && (
                 <div className="p-3 rounded-2xl bg-surface border border-accent/20 space-y-1">
-                  <span className="text-[10px] font-bold uppercase tracking-wider text-appText-muted block">
+                  <span className="text-xs font-bold uppercase tracking-wider text-appText-muted block">
                     Mini Percakapan Kunci:
                   </span>
                   <p className="font-jp text-appText-bright leading-relaxed italic">

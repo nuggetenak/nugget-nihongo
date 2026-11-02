@@ -43,7 +43,7 @@ export const UpdatePromptToast: React.FC = () => {
           <h4 className="text-xs sm:text-sm font-extrabold text-appText-bright truncate">
             Versi Baru Tersedia! 🍙
           </h4>
-          <p className="text-[11px] text-appText-muted line-clamp-1">
+          <p className="text-xs text-appText-muted line-clamp-1">
             Muat ulang untuk menerapkan pembaruan sistem.
           </p>
         </div>

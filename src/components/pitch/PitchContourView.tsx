@@ -70,7 +70,7 @@ export const PitchContourView: React.FC<PitchContourViewProps> = ({
           </span>
         )}
         {categoryLabel && (
-          <span className={`px-2 py-0.5 rounded-full text-[10px] font-bold border uppercase tracking-wider ${badgeColor}`}>
+          <span className={`px-2 py-0.5 rounded-full text-xs font-bold border uppercase tracking-wider ${badgeColor}`}>
             {categoryLabel}
           </span>
         )}
@@ -139,7 +139,7 @@ export const PitchContourView: React.FC<PitchContourViewProps> = ({
               className="text-center font-jp text-xs sm:text-sm font-bold text-appText-bright transition-transform hover:scale-110"
             >
               <div
-                className={`w-6 h-6 sm:w-7 sm:h-7 mx-auto rounded-lg flex items-center justify-center border text-[11px] sm:text-xs font-black ${
+                className={`w-6 h-6 sm:w-7 sm:h-7 mx-auto rounded-lg flex items-center justify-center border text-xs sm:text-xs font-black ${
                   m.isHigh
                     ? 'bg-amber-500/20 text-amber-300 border-amber-500/40 shadow-xs'
                     : 'bg-surface-3 text-appText-muted border-accent/15'
@@ -156,7 +156,7 @@ export const PitchContourView: React.FC<PitchContourViewProps> = ({
             className="text-center font-jp text-xs sm:text-sm font-bold text-sky-400"
             title="Partikel pengiring [ga] menunjukkan letak jatuhnya nada"
           >
-            <div className="w-6 h-6 sm:w-7 sm:h-7 mx-auto rounded-lg flex items-center justify-center border border-sky-500/30 bg-sky-500/15 text-[10px] font-black">
+            <div className="w-6 h-6 sm:w-7 sm:h-7 mx-auto rounded-lg flex items-center justify-center border border-sky-500/30 bg-sky-500/15 text-xs font-black">
               {particleText}
             </div>
           </div>
@@ -168,7 +168,7 @@ export const PitchContourView: React.FC<PitchContourViewProps> = ({
         <button
           type="button"
           onClick={handlePlayVoice}
-          className="px-2.5 py-1 rounded-xl bg-surface hover:bg-surface-3 border border-accent/20 text-appText-muted hover:text-accent text-[11px] font-semibold flex items-center gap-1 transition-all active:scale-95 shadow-xs"
+          className="px-2.5 py-1 rounded-xl bg-surface hover:bg-surface-3 border border-accent/20 text-appText-muted hover:text-accent text-xs font-semibold flex items-center gap-1 transition-all active:scale-95 shadow-xs"
           title="Dengarkan pengucapan suara asli (TTS)"
         >
           <Volume2 className="w-3.5 h-3.5 text-accent" />
@@ -178,7 +178,7 @@ export const PitchContourView: React.FC<PitchContourViewProps> = ({
         <button
           type="button"
           onClick={handlePlayTone}
-          className="px-2.5 py-1 rounded-xl bg-surface hover:bg-surface-3 border border-amber-500/20 text-appText-muted hover:text-amber-400 text-[11px] font-semibold flex items-center gap-1 transition-all active:scale-95 shadow-xs"
+          className="px-2.5 py-1 rounded-xl bg-surface hover:bg-surface-3 border border-amber-500/20 text-appText-muted hover:text-amber-400 text-xs font-semibold flex items-center gap-1 transition-all active:scale-95 shadow-xs"
           title="Dengarkan melodi nada tinggi-rendah (Web Audio Beep)"
         >
           <Music className="w-3.5 h-3.5 text-amber-400" />

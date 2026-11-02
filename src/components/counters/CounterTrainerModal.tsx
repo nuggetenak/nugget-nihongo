@@ -158,11 +158,11 @@ export const CounterTrainerModal: React.FC<CounterTrainerModalProps> = ({
                 <h2 className="text-base sm:text-lg font-extrabold text-appText-bright truncate">
                   Pelatih Kata Bantu Bilangan
                 </h2>
-                <span className="text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded-full bg-amber-500/15 text-amber-400 border border-amber-500/30 shrink-0 hidden sm:inline-block">
+                <span className="text-xs uppercase font-bold tracking-wider px-2 py-0.5 rounded-full bg-amber-500/15 text-amber-400 border border-amber-500/30 shrink-0 hidden sm:inline-block">
                   助数詞・音便
                 </span>
               </div>
-              <p className="text-[11px] sm:text-xs text-appText-muted truncate">
+              <p className="text-xs sm:text-xs text-appText-muted truncate">
                 Kuasai 本, 枚, 匹, 冊, 台, つ, aturan fonetis Onbin, & jebakan ujian JLPT
               </p>
             </div>
@@ -211,7 +211,7 @@ export const CounterTrainerModal: React.FC<CounterTrainerModalProps> = ({
               <Sparkles className="w-4 h-4" />
               <span>Kuis Tebak Penghitung</span>
               {quizScore.total > 0 && (
-                <span className="text-[10px] px-1.5 py-0.2 rounded-full bg-surface-3/80 text-appText-bright">
+                <span className="text-xs px-1.5 py-0.2 rounded-full bg-surface-3/80 text-appText-bright">
                   {quizScore.correct}/{quizScore.total}
                 </span>
               )}
@@ -351,14 +351,14 @@ export const CounterTrainerModal: React.FC<CounterTrainerModalProps> = ({
                                   ({counter.kana})
                                 </span>
                               </div>
-                              <div className="text-[11px] text-appText-muted truncate mt-0.5">
+                              <div className="text-xs text-appText-muted truncate mt-0.5">
                                 Untuk: {counter.targetObjectsId.slice(0, 4).join(', ')}...
                               </div>
                             </div>
                           </div>
 
                           <div className="flex items-center gap-2 shrink-0 self-end sm:self-auto">
-                            <span className="text-[10px] px-2.5 py-1 rounded-full bg-surface-3 text-appText-muted font-bold">
+                            <span className="text-xs px-2.5 py-1 rounded-full bg-surface-3 text-appText-muted font-bold">
                               {counter.categoryLabel}
                             </span>
                             <span className="text-xs text-accent font-bold px-2 py-1 rounded-xl bg-accent/10 border border-accent/20">
@@ -384,9 +384,9 @@ export const CounterTrainerModal: React.FC<CounterTrainerModalProps> = ({
 
                             {/* 1 to 10 Audio Chips Grid */}
                             <div className="space-y-1.5">
-                              <div className="text-[11px] font-bold text-appText-muted uppercase tracking-wider flex items-center justify-between">
+                              <div className="text-xs font-bold text-appText-muted uppercase tracking-wider flex items-center justify-between">
                                 <span>Tabel Pelafalan Angka 1 s.d. 10</span>
-                                <span className="text-[10px] lowercase text-accent">Klik nomor untuk audio native</span>
+                                <span className="text-xs lowercase text-accent">Klik nomor untuk audio native</span>
                               </div>
 
                               <div className="grid grid-cols-2 sm:grid-cols-5 gap-2">
@@ -414,7 +414,7 @@ export const CounterTrainerModal: React.FC<CounterTrainerModalProps> = ({
                                     <div className="text-xs font-bold text-accent font-mono mt-1 truncate">
                                       {item.kana}
                                     </div>
-                                    <div className="text-[10px] text-appText-muted truncate">
+                                    <div className="text-xs text-appText-muted truncate">
                                       {item.romaji}
                                     </div>
                                   </button>
@@ -425,9 +425,9 @@ export const CounterTrainerModal: React.FC<CounterTrainerModalProps> = ({
                             {/* Example Sentence with Audio */}
                             <div className="p-3 rounded-xl bg-accent/10 border border-accent/20 flex items-center justify-between gap-3">
                               <div className="space-y-0.5 min-w-0">
-                                <div className="text-[10px] uppercase font-bold text-accent">Contoh Kalimat Alami</div>
+                                <div className="text-xs uppercase font-bold text-accent">Contoh Kalimat Alami</div>
                                 <div className="text-xs font-bold text-appText-bright">{counter.exampleSentence.jp}</div>
-                                <div className="text-[11px] text-appText-muted">{counter.exampleSentence.id}</div>
+                                <div className="text-xs text-appText-muted">{counter.exampleSentence.id}</div>
                               </div>
                               <button
                                 type="button"
@@ -466,7 +466,7 @@ export const CounterTrainerModal: React.FC<CounterTrainerModalProps> = ({
               <div className="p-4 sm:p-5 rounded-2xl bg-surface-2 border border-accent/20 space-y-3">
                 <div className="flex items-center justify-between">
                   <div className="flex items-center gap-2">
-                    <span className="text-[10px] uppercase font-bold px-2 py-0.5 rounded-full bg-accent/20 text-accent">
+                    <span className="text-xs uppercase font-bold px-2 py-0.5 rounded-full bg-accent/20 text-accent">
                       {currentQuizQuestion.objectName}
                     </span>
                     <span className="text-xs font-bold text-appText-muted font-mono">
@@ -616,7 +616,7 @@ export const CounterTrainerModal: React.FC<CounterTrainerModalProps> = ({
                       <button
                         key={num}
                         onClick={() => setCalcNumber(num)}
-                        className={`px-2.5 py-1 rounded-lg text-[11px] font-bold ${
+                        className={`px-2.5 py-1 rounded-lg text-xs font-bold ${
                           calcNumber === num
                             ? 'bg-accent text-surface'
                             : 'bg-surface hover:bg-surface-3 text-appText-muted'
@@ -704,14 +704,14 @@ export const CounterTrainerModal: React.FC<CounterTrainerModalProps> = ({
 
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 text-xs">
                       <div className="p-3 rounded-xl bg-rose-500/10 border border-rose-500/20 space-y-1">
-                        <div className="text-[10px] font-bold uppercase text-rose-400">
+                        <div className="text-xs font-bold uppercase text-rose-400">
                           Jebakan / Anggapan Keliru
                         </div>
                         <p className="text-rose-200 leading-relaxed">{guide.trap}</p>
                       </div>
 
                       <div className="p-3 rounded-xl bg-emerald-500/10 border border-emerald-500/20 space-y-1">
-                        <div className="text-[10px] font-bold uppercase text-emerald-400">
+                        <div className="text-xs font-bold uppercase text-emerald-400">
                           Standar yang Benar
                         </div>
                         <p className="text-emerald-200 leading-relaxed">{guide.correction}</p>

@@ -125,7 +125,7 @@ export const DOJO_TOOLS: DojoToolMeta[] = [
     jpTitle: '五十音表・かなチャート',
     desc: 'Bagan interaktif 46 Hiragana dan 46 Katakana dengan audio pelafalan asli, tabel dakuten, handakuten, serta kombinasi yoon.',
     badge: '46 Hiragana & Katakana',
-    badgeColor: 'bg-surface-3/90 text-stone-200 border-accent/25 font-semibold',
+    badgeColor: 'bg-surface-3/90 text-appText-bright border-accent/25 font-semibold',
     icon: '🔤',
     actionType: 'modal',
     canDo: 'Membaca dan melafalkan seluruh alfabet fonetik Kana.',
@@ -142,7 +142,7 @@ export const DOJO_TOOLS: DojoToolMeta[] = [
     jpTitle: '動詞活用エンジン',
     desc: 'Matriks 9 bentuk perubahan kata kerja Jepang (Te, Masu, Nai, Ba, Tara, Perintah, Pasif, Kausatif, Potensial) dan Yomitan deinflector.',
     badge: '9 Bentuk Konjugasi',
-    badgeColor: 'bg-surface-3/90 text-stone-200 border-accent/25 font-semibold',
+    badgeColor: 'bg-surface-3/90 text-appText-bright border-accent/25 font-semibold',
     icon: '🔄',
     actionType: 'modal',
     canDo: 'Menguasai pola perubahan bentuk kata kerja secara sistematis.',
@@ -159,7 +159,7 @@ export const DOJO_TOOLS: DojoToolMeta[] = [
     jpTitle: 'ニュアンス比較',
     desc: 'Komparator perbedaan makna pola tata bahasa yang mirip (seperti 〜ように vs 〜ために) agar tidak tertukar dalam konteks percakapan nyata.',
     badge: 'Analisis Perbedaan Makna',
-    badgeColor: 'bg-surface-3/90 text-stone-200 border-accent/25 font-semibold',
+    badgeColor: 'bg-surface-3/90 text-appText-bright border-accent/25 font-semibold',
     icon: '⚖️',
     actionType: 'modal',
     canDo: 'Membedakan nuansa halus antar pola tata bahasa serupa.',
@@ -176,7 +176,7 @@ export const DOJO_TOOLS: DojoToolMeta[] = [
     jpTitle: '敬語ビジネストレーナー',
     desc: 'Kuasai tata krama komunikasi bisnis Jepang: Sonkeigo (hormat), Kenjougo (merendah), Teineigo (sopan), dan etiket kerja dunia nyata.',
     badge: 'Etiket Bisnis Jepang',
-    badgeColor: 'bg-surface-3/90 text-stone-200 border-accent/25 font-semibold',
+    badgeColor: 'bg-surface-3/90 text-appText-bright border-accent/25 font-semibold',
     icon: '💼',
     actionType: 'modal',
     canDo: 'Berkomunikasi formal dan sopan di lingkungan kerja Jepang.',
@@ -193,7 +193,7 @@ export const DOJO_TOOLS: DojoToolMeta[] = [
     jpTitle: '助数詞シミュレーター',
     desc: 'Simulator kata bantu bilangan: pelajari pergeseran bunyi Onbin (本, 匹, dll.) dan 16 penggolong benda paling penting dalam keseharian.',
     badge: '16 Penggolong Kata',
-    badgeColor: 'bg-surface-3/90 text-stone-200 border-accent/25 font-semibold',
+    badgeColor: 'bg-surface-3/90 text-appText-bright border-accent/25 font-semibold',
     icon: '🔢',
     actionType: 'modal',
     canDo: 'Menghitung berbagai objek dengan penggolong kata yang benar.',
@@ -210,7 +210,7 @@ export const DOJO_TOOLS: DojoToolMeta[] = [
     jpTitle: '適応型プレースメントテスト',
     desc: 'Diagnosa kemampuan bahasa Jepang (JLPT N5–N1) secara presisi dalam 10–12 soal adaptif berbasis Item Response Theory (IRT 3PL).',
     badge: '10–12 Soal IRT Presisi',
-    badgeColor: 'bg-surface-3/90 text-stone-200 border-accent/25 font-semibold',
+    badgeColor: 'bg-surface-3/90 text-appText-bright border-accent/25 font-semibold',
     icon: '🎯',
     actionType: 'modal',
     canDo: 'Mendiagnosa level kemampuan bahasa Jepang secara instan.',
@@ -227,7 +227,7 @@ export const DOJO_TOOLS: DojoToolMeta[] = [
     jpTitle: 'ことわざギャラリー',
     desc: 'Galeri 52 kebijaksanaan dan peribahasa tradisional Jepang lengkap dengan filosofi hidup, hikmah budaya, dan padanan bahasa Indonesia.',
     badge: '52 Peribahasa Tradisional',
-    badgeColor: 'bg-surface-3/90 text-stone-200 border-accent/25 font-semibold',
+    badgeColor: 'bg-surface-3/90 text-appText-bright border-accent/25 font-semibold',
     icon: '📜',
     actionType: 'modal',
     canDo: 'Memahami peribahasa dan kebijaksanaan budaya Jepang.',
@@ -244,7 +244,7 @@ export const DOJO_TOOLS: DojoToolMeta[] = [
     jpTitle: 'アクセントスタジオ',
     desc: 'Visualisasi kontur nada Tokyo (Heiban, Atamadaka, Nakadaka, Odaka) dan pelatih minimal pairs kata bermakna ganda.',
     badge: 'Kontur Nada Tokyo',
-    badgeColor: 'bg-surface-3/90 text-stone-200 border-accent/25 font-semibold',
+    badgeColor: 'bg-surface-3/90 text-appText-bright border-accent/25 font-semibold',
     icon: '🎵',
     actionType: 'modal',
     canDo: 'Melafalkan kata Jepang dengan kontur nada yang tepat.',
@@ -493,13 +493,13 @@ export const MateriHubPage: React.FC = () => {
             {tool.jpTitle}
           </p>
         </div>
-        <p className="text-sm text-stone-300 leading-relaxed">
+        <p className="text-sm text-appText-muted leading-relaxed">
           {tool.desc}
         </p>
       </div>
 
       <div className="mt-4 pt-3 border-t border-accent/15 flex items-center justify-between text-xs">
-        <span className="text-xs text-amber-200/90 font-medium leading-tight pr-2">
+        <span className="text-xs text-appText-muted font-medium leading-tight pr-2">
           {tool.canDo}
         </span>
         <span className="text-xs sm:text-sm text-amber-400 font-extrabold group-hover:translate-x-1 transition-transform shrink-0">
@@ -873,7 +873,7 @@ export const MateriHubPage: React.FC = () => {
                     value={searchQuery}
                     onChange={(e) => setSearchQuery(e.target.value)}
                     placeholder={`Cari kosakata / tata bahasa ${(selectedLevel === 'all' ? 'n5' : selectedLevel).toUpperCase()}...`}
-                    className="w-full bg-surface-2 border border-accent/20 rounded-xl pl-9 pr-9 py-2 sm:py-2.5 text-xs text-appText-bright placeholder:text-appText-muted/60 focus:outline-none focus:border-accent transition-colors min-h-[40px]"
+                    className="w-full bg-surface-2 border border-accent/20 rounded-xl pl-9 pr-9 py-2 sm:py-2.5 text-xs text-appText-bright placeholder:text-appText-muted focus:outline-none focus:border-accent transition-colors min-h-[40px]"
                   />
                   {searchQuery && (
                     <button
@@ -1069,7 +1069,7 @@ export const MateriHubPage: React.FC = () => {
                             </button>
                           </div>
 
-                          <div className="text-sm text-stone-200 font-medium mt-2 leading-snug">
+                          <div className="text-sm text-appText-bright font-medium mt-2 leading-snug">
                             {v.meaning}
                           </div>
 
@@ -1137,7 +1137,7 @@ export const MateriHubPage: React.FC = () => {
                                   </span>
                                 )}
                               </div>
-                              <div className="text-sm text-stone-300 truncate">
+                              <div className="text-sm text-appText-bright truncate">
                                 {v.meaning}
                               </div>
                             </div>
@@ -1227,7 +1227,7 @@ export const MateriHubPage: React.FC = () => {
                             </button>
                           </div>
 
-                          <div className="text-sm text-stone-200 font-medium mt-2 leading-relaxed">
+                          <div className="text-sm text-appText-bright font-medium mt-2 leading-relaxed">
                             {g.meaning}
                           </div>
 
@@ -1291,7 +1291,7 @@ export const MateriHubPage: React.FC = () => {
                                   </span>
                                 )}
                               </div>
-                              <div className="text-sm text-stone-300 truncate">
+                              <div className="text-sm text-appText-bright truncate">
                                 {g.meaning}
                               </div>
                             </div>
@@ -1394,7 +1394,7 @@ export const MateriHubPage: React.FC = () => {
                       </button>
                     </div>
 
-                    <div className="text-sm text-stone-200 font-medium mt-3 leading-relaxed">
+                    <div className="text-sm text-appText-bright font-medium mt-3 leading-relaxed">
                       {item.meaning}
                     </div>
 

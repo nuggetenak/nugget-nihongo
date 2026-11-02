@@ -21,6 +21,7 @@ This handover blueprint provides the complete architectural contract, data dicti
 - **Data Location**: Static JSON files hosted in [public/data/exercises/](file:///c:/Users/Timedoor/Downloads/nugget%20nihonggo%20project/nugget-nihongo/public/data/exercises/)
 - **Catalog Manifest**: [`manifest.json`](file:///c:/Users/Timedoor/Downloads/nugget%20nihonggo%20project/nugget-nihongo/public/data/exercises/manifest.json)
 - **Typings Contract**: [`src/types/exercise.ts`](file:///c:/Users/Timedoor/Downloads/nugget%20nihonggo%20project/nugget-nihongo/src/types/exercise.ts)
+- **LMS Design & Roadmap Draft**: [`docs/DRAFT_LMS_CONSOLIDATION_AND_ROADMAP.md`](file:///c:/Users/Timedoor/Downloads/nugget%20nihonggo%20project/nugget-nihongo/docs/DRAFT_LMS_CONSOLIDATION_AND_ROADMAP.md) (The 3 Clean Doors & 7 Locked Systems)
 - **Automated Verification**: [`tests/test-exercise-datasets-integrity.js`](file:///c:/Users/Timedoor/Downloads/nugget%20nihonggo%20project/nugget-nihongo/tests/test-exercise-datasets-integrity.js) (Continuous Green: 210/210 validated)
 
 ---
@@ -69,8 +70,9 @@ nugget-nihongo/
 │       └── exercise.ts                              <-- TypeScript data contracts & schemas
 ├── tests/
 │   └── test-exercise-datasets-integrity.js          <-- Automated regression & integrity test suite
-└── docs/
-    └── EXERCISE_SETS_HANDOVER_BLUEPRINT.md          <-- This document
+├── docs/
+│   ├── DRAFT_LMS_CONSOLIDATION_AND_ROADMAP.md      <-- Dokumen Desain & Roadmap LMS (Decluttering & 7 Pilar)
+│   └── EXERCISE_SETS_HANDOVER_BLUEPRINT.md         <-- Dokumen Serah Terima Teknis & Data Contracts (This file)
 ```
 
 ---
@@ -302,14 +304,15 @@ Halo! Di sesi sebelumnya, kita sudah menyelesaikan seluruh kurasi data 14 Golden
 - 100% soal memiliki penjelasan 5 lapis (Justifikasi, Bedah Opsi, Mnemonik Sensei, Interferensi L1 Indonesia, dan Preskripsi Remedial).
 - Seluruh JSON sudah ter-generate di `nugget-nihongo/public/data/exercises/*.json` dan `manifest.json`.
 - Typings TypeScript sudah verified di `nugget-nihongo/src/types/exercise.ts`.
-- Blueprint handover lengkap ada di `nugget-nihongo/docs/EXERCISE_SETS_HANDOVER_BLUEPRINT.md`.
+- Dokumen desain & roadmap decluttering LMS ada di `nugget-nihongo/docs/DRAFT_LMS_CONSOLIDATION_AND_ROADMAP.md`.
+- Blueprint handover teknis & data contracts ada di `nugget-nihongo/docs/EXERCISE_SETS_HANDOVER_BLUEPRINT.md`.
 
 Tugas kita di sesi ini adalah:
-1. Mengimplementasikan UI & UX CBT modular untuk set latihan ini di front-end.
-2. Membangun halaman katalog/pilihan set latihan berdasarkan track (JLPT, JFT, SSW).
+1. Mengimplementasikan konsolidasi UI (The 3 Clean Doors) sesuai `DRAFT_LMS_CONSOLIDATION_AND_ROADMAP.md`.
+2. Membangun halaman katalog/portal set latihan berdasarkan track (JLPT, JFT, SSW).
 3. Membangun layar interaktif kuis (mendukung Guided Practice & Strict Exam 15 menit, Star Scramble susun kalimat, Dokkai split reading, dan Choukai audio limiter 2x).
 4. Membangun lembar pembahasan akordeon 5 lapis dengan micro-interactions yang menarik.
-5. Menghubungkan state ke Zustand & IndexedDB offline-first.
+5. Menghubungkan state pengerjaan ke Zustand & IndexedDB offline-first (7 pilar engine).
 
 Mari kita mulai dari pembuatan komponen dan routing halaman latihannya!
 ```

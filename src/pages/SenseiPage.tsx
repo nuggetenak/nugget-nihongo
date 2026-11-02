@@ -355,7 +355,7 @@ export const SenseiPage: React.FC = () => {
               <h1 className="text-base sm:text-lg font-bold text-appText-bright truncate">
                 {persona === 'sensei_nugget' ? 'Sensei Nugget' : 'Senpai Aoi'}
               </h1>
-              <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[10px] font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 shrink-0">
+              <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-xs font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 shrink-0">
                 <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
                 <span>AI Tutor Siap</span>
               </span>
@@ -454,7 +454,7 @@ export const SenseiPage: React.FC = () => {
 
       {/* ── Quick Starter Pills Ribbons ── */}
       <div className="flex items-center gap-2 overflow-x-auto scrollbar-none py-1 max-w-full">
-        <span className="text-[11px] font-semibold text-appText-muted shrink-0 pl-1">
+        <span className="text-xs font-semibold text-appText-muted shrink-0 pl-1">
           {mode === 'explain' ? '💡 Tanya Cepat:' : mode === 'roleplay' ? '🎭 Skenario:' : '✍️ Contoh Kalimat:'}
         </span>
         {mode === 'roleplay' &&
@@ -582,7 +582,7 @@ export const SenseiPage: React.FC = () => {
                       </button>
 
                       {/* AI Engine Badge (Friendly, no raw jargon) */}
-                      <span className="text-[10px] text-appText-muted/70 font-mono inline-flex items-center gap-1 px-1">
+                      <span className="text-xs text-appText-muted font-mono inline-flex items-center gap-1 px-1">
                         <Sparkles className="w-3 h-3 text-accent inline" />
                         <span>Sensei AI</span>
                         {msg.tokensUsed ? <span className="opacity-60">· {msg.tokensUsed} tokens</span> : null}
@@ -644,7 +644,7 @@ export const SenseiPage: React.FC = () => {
                 : 'Tulis kalimat bahasa Jepangmu di sini untuk diperiksa... (Tekan Enter)'
             }
             rows={2}
-            className="flex-1 bg-surface-2 border border-accent/15 focus:border-accent rounded-xl px-3.5 py-2.5 text-base sm:text-sm text-appText-bright placeholder:text-appText-muted/60 focus:outline-none resize-none transition-colors max-h-[120px] min-h-[48px]"
+            className="flex-1 bg-surface-2 border border-accent/15 focus:border-accent rounded-xl px-3.5 py-2.5 text-base sm:text-sm text-appText-bright placeholder:text-appText-muted focus:outline-none resize-none transition-colors max-h-[120px] min-h-[48px]"
           />
 
           <button
@@ -663,7 +663,7 @@ export const SenseiPage: React.FC = () => {
         </div>
 
         {/* Bottom Utility Bar */}
-        <div className="flex items-center justify-between px-1 text-[11px] text-appText-muted gap-2 flex-wrap">
+        <div className="flex items-center justify-between px-1 text-xs text-appText-muted gap-2 flex-wrap">
           <div className="flex items-center gap-2">
             <span className="w-2 h-2 rounded-full bg-emerald-500" />
             <span className="font-medium">
@@ -675,7 +675,7 @@ export const SenseiPage: React.FC = () => {
           </div>
 
           <div className="flex items-center gap-2">
-            <span className="text-[10px] text-appText-muted/60 hidden sm:inline">
+            <span className="text-xs text-appText-muted hidden sm:inline">
               Enter ↵ untuk kirim · Shift+Enter baris baru
             </span>
             <button
@@ -710,7 +710,7 @@ export const SenseiPage: React.FC = () => {
               </div>
               <div>
                 <h3 className="font-bold text-sm text-appText-bright">Hapus Riwayat Chat</h3>
-                <p className="text-[11px] text-appText-muted">Tindakan ini tidak dapat dibatalkan.</p>
+                <p className="text-xs text-appText-muted">Tindakan ini tidak dapat dibatalkan.</p>
               </div>
             </div>
             <p className="text-xs text-appText-muted leading-relaxed">

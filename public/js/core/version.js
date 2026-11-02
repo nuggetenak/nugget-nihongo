@@ -1,1 +1,1 @@
-window.APP_VERSION = 'v21.1.0';
+window.APP_VERSION = 'v21.2.0';

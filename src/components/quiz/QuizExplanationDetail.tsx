@@ -115,7 +115,7 @@ export const QuizExplanationDetail: React.FC<QuizExplanationDetailProps> = ({
 
           {/* Romaji */}
           {romaji && (
-            <div className="text-xs font-mono text-appText-muted/80">
+            <div className="text-xs font-mono text-appText-muted">
               /{romaji}/
             </div>
           )}
