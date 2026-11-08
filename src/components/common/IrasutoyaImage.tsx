@@ -47,23 +47,25 @@ export const IrasutoyaImage: React.FC<IrasutoyaImageProps> = ({
 
   const computedAlt = alt || `${asset.titleId} (${asset.titleJp}) · いらすとや`;
 
+  const imageUrl = asset.localUrl || asset.cdnUrl;
+
   return (
     <div
       className={`${containerClassName} ${animationClass}`}
       title={showAttributionTooltip ? `${asset.titleJp} (イラスト：いらすとや)` : undefined}
     >
-      {!hasError && asset.cdnUrl ? (
+      {!hasError && imageUrl ? (
         <>
           {/* Skeleton shimmer before loaded */}
           {!isLoaded && (
             <div className="absolute inset-0 bg-surface-2/80 animate-shimmer-flow rounded-xl" />
           )}
           <img
-            src={asset.cdnUrl}
+            src={imageUrl}
             alt={computedAlt}
             loading="lazy"
             decoding="async"
-            crossOrigin="anonymous"
+            crossOrigin={imageUrl.startsWith('http') ? 'anonymous' : undefined}
             onLoad={() => setIsLoaded(true)}
             onError={() => setHasError(true)}
             className={`${className} transition-opacity duration-300 ${

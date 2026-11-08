@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" fill="none" role="img" aria-label="Sensei Mengajar Bahasa Jepang">
+  <defs>
+    <linearGradient id="bgGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef3c7" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#fed7aa" stop-opacity="0.4"/>
+    </linearGradient>
+    <linearGradient id="chalkboardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#064e3b"/>
+      <stop offset="100%" stop-color="#022c22"/>
+    </linearGradient>
+    <linearGradient id="skinGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffedd5"/>
+      <stop offset="100%" stop-color="#fed7aa"/>
+    </linearGradient>
+    <linearGradient id="coatGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <filter id="softShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#000000" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <!-- Ambient Backdrop Circle -->
+  <circle cx="120" cy="120" r="108" fill="url(#bgGlow)"/>
+
+  <!-- Chalkboard in Background -->
+  <g filter="url(#softShadow)">
+    <rect x="24" y="28" width="136" height="96" rx="8" fill="#78350f"/>
+    <rect x="28" y="32" width="128" height="88" rx="6" fill="url(#chalkboardGrad)"/>
+    <!-- Chalk writing -->
+    <text x="42" y="60" fill="#fef08a" font-family="'Noto Sans JP', sans-serif" font-weight="900" font-size="22">日本語</text>
+    <text x="42" y="86" fill="#a7f3d0" font-family="'Noto Sans JP', sans-serif" font-weight="700" font-size="14">あ い う え お</text>
+    <path d="M42 98 Q80 94 118 99" stroke="#fed7aa" stroke-width="2" stroke-linecap="round" stroke-dasharray="4 3" opacity="0.6"/>
+  </g>
+
+  <!-- Sensei Character -->
+  <g filter="url(#softShadow)">
+    <!-- Body / Jacket -->
+    <path d="M120 186 C120 160 142 146 166 146 C190 146 212 160 212 186 L216 226 C216 230 212 234 208 234 L124 234 C120 234 116 230 116 226 Z" fill="url(#coatGrad)"/>
+    <!-- White Inner Shirt & Yellow Tie -->
+    <path d="M154 146 L166 178 L178 146 Z" fill="#ffffff"/>
+    <path d="M164 154 L168 154 L171 184 L166 190 L161 184 Z" fill="#f59e0b"/>
+
+    <!-- Pointer Stick (Held in Hand pointing to board) -->
+    <line x1="86" y1="78" x2="142" y2="152" stroke="#b45309" stroke-width="4.5" stroke-linecap="round"/>
+    <circle cx="86" cy="78" r="4.5" fill="#ef4444"/>
+
+    <!-- Right Hand holding pointer -->
+    <ellipse cx="142" cy="152" rx="9" ry="8" fill="url(#skinGrad)"/>
+
+    <!-- Neck -->
+    <rect x="157" y="130" width="18" height="20" rx="4" fill="url(#skinGrad)"/>
+
+    <!-- Head -->
+    <ellipse cx="166" cy="100" rx="32" ry="34" fill="url(#skinGrad)"/>
+
+    <!-- Hair (Neat Japanese Sensei cut) -->
+    <path d="M134 94 C134 68 148 54 166 54 C184 54 198 68 198 94 C198 76 186 64 166 64 C146 64 136 78 134 94 Z" fill="#1c1917"/>
+    <!-- Hair fringe / bangs -->
+    <path d="M142 74 Q156 66 170 76 Q184 70 192 82 Q182 76 172 82 Q158 74 142 74 Z" fill="#1c1917"/>
+
+    <!-- Eyebrows (Warm, gentle angle) -->
+    <path d="M148 88 Q155 84 161 87" stroke="#292524" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M172 87 Q178 84 185 88" stroke="#292524" stroke-width="2.5" stroke-linecap="round"/>
+
+    <!-- Eyes (Gentle, friendly smile arc) -->
+    <path d="M148 97 Q155 103 161 97" stroke="#1c1917" stroke-width="3" stroke-linecap="round" fill="none"/>
+    <path d="M172 97 Q179 103 185 97" stroke="#1c1917" stroke-width="3" stroke-linecap="round" fill="none"/>
+
+    <!-- Glasses Frame -->
+    <rect x="144" y="90" width="20" height="15" rx="4" stroke="#d97706" stroke-width="2.5" fill="none" opacity="0.9"/>
+    <rect x="169" y="90" width="20" height="15" rx="4" stroke="#d97706" stroke-width="2.5" fill="none" opacity="0.9"/>
+    <line x1="164" y1="97" x2="169" y2="97" stroke="#d97706" stroke-width="2.5"/>
+
+    <!-- Nose -->
+    <path d="M166 102 Q168 107 165 109" stroke="#ea580c" stroke-width="2" stroke-linecap="round" fill="none"/>
+
+    <!-- Cheeks (Blushing pink) -->
+    <ellipse cx="146" cy="107" rx="5" ry="3.5" fill="#f43f5e" opacity="0.4"/>
+    <ellipse cx="186" cy="107" rx="5" ry="3.5" fill="#f43f5e" opacity="0.4"/>
+
+    <!-- Warm Smile -->
+    <path d="M159 116 Q166 124 173 116" stroke="#b91c1c" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+  </g>
+
+  <!-- Golden Stars & Sparkles -->
+  <g fill="#f59e0b">
+    <path d="M198 38 L201 46 L209 49 L201 52 L198 60 L195 52 L187 49 L195 46 Z"/>
+    <path d="M28 142 L30 148 L36 150 L30 152 L28 158 L26 152 L20 150 L26 148 Z" opacity="0.8"/>
+  </g>
+</svg>

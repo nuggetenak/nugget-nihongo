@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none" role="img" aria-label="Tunas Tanaman Baru Segar">
+  <defs>
+    <radialGradient id="sproutGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ecfdf5"/>
+      <stop offset="100%" stop-color="#fefce8"/>
+    </radialGradient>
+    <filter id="sproutShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#000000" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <circle cx="100" cy="100" r="92" fill="url(#sproutGlow)"/>
+
+  <g filter="url(#sproutShadow)">
+    <!-- Terracotta Pot -->
+    <path d="M72 136 L128 136 L122 176 C122 180 118 184 114 184 L86 184 C82 184 78 180 78 176 Z" fill="#b45309"/>
+    <rect x="68" y="130" width="64" height="10" rx="3" fill="#d97706"/>
+    <!-- Moist Rich Soil -->
+    <ellipse cx="100" cy="134" rx="28" ry="4" fill="#451a03"/>
+
+    <!-- Emerging Curved Green Stem -->
+    <path d="M100 134 Q106 112 100 88" stroke="#16a34a" stroke-width="5" stroke-linecap="round"/>
+
+    <!-- Left Heart-Shaped Sprout Leaf -->
+    <path d="M100 88 C82 82 74 68 82 58 C94 58 100 74 100 88 Z" fill="#22c55e"/>
+    <!-- Right Heart-Shaped Sprout Leaf -->
+    <path d="M100 88 C118 82 126 68 118 58 C106 58 100 74 100 88 Z" fill="#4ade80"/>
+
+    <!-- Dewdrop on leaf -->
+    <circle cx="86" cy="68" r="3" fill="#38bdf8"/>
+    <circle cx="85" cy="67" r="1" fill="#ffffff"/>
+
+    <!-- Blue Watering Can -->
+    <g transform="translate(118, 48) scale(0.65)">
+      <rect x="20" y="24" width="40" height="36" rx="6" fill="#0284c7"/>
+      <!-- Spout -->
+      <path d="M20 36 L2 22 L2 28 L18 48 Z" fill="#0369a1"/>
+      <ellipse cx="2" cy="25" rx="3" ry="5" fill="#38bdf8"/>
+      <!-- Handle -->
+      <path d="M60 30 C72 30 72 50 60 52" stroke="#0369a1" stroke-width="5" stroke-linecap="round" fill="none"/>
+      <!-- Water Droplets pouring -->
+      <circle cx="-6" cy="38" r="2.5" fill="#38bdf8"/>
+      <circle cx="-12" cy="50" r="3" fill="#38bdf8"/>
+      <circle cx="-16" cy="64" r="2.5" fill="#38bdf8"/>
+    </g>
+  </g>
+</svg>

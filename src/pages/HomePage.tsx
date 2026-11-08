@@ -269,7 +269,8 @@ export const HomePage: React.FC = () => {
 
               {dueCount > 0 && (
                 <span className="text-xs font-bold px-3 py-1 rounded-full bg-amber-500/20 border border-amber-500/35 text-accent font-mono">
-                  📬 {dueCount} FSRS Due
+                  <span className="sr-only">📬 {dueCount} FSRS Due</span>
+                  <span>🌱 {dueCount} Kata Perlu Diulas</span>
                 </span>
               )}
 
@@ -392,11 +393,11 @@ export const HomePage: React.FC = () => {
             </div>
           </div>
 
-          <div className="hidden sm:flex shrink-0 items-center justify-center">
+          <div className="flex shrink-0 items-center justify-center self-end sm:self-center -mt-6 sm:mt-0">
             <IrasutoyaImage
               assetId="sensei_teaching"
               animateFloat
-              className="w-20 h-20 sm:w-24 sm:h-24 object-contain filter drop-shadow-md"
+              className="w-16 h-16 sm:w-24 sm:h-24 object-contain filter drop-shadow-md"
               alt="Sensei Nugget Nihongo (いらすとや)"
               showAttributionTooltip
             />
@@ -461,10 +462,10 @@ export const HomePage: React.FC = () => {
             </button>
             <button
               type="button"
-              onClick={openCatPlacement}
+              onClick={() => setActiveTab('materi')}
               className="flex-1 min-h-[40px] px-3 py-2 rounded-xl bg-amber-500/15 hover:bg-amber-500/25 border border-amber-500/30 text-accent-hot font-bold text-xs flex items-center justify-center gap-1.5 transition-colors active:scale-95 cursor-pointer"
             >
-              <span>Uji CAT</span>
+              <span>Latihan Dojo</span>
               <ArrowRight className="w-4 h-4 shrink-0" />
             </button>
           </div>
@@ -736,7 +737,8 @@ export const HomePage: React.FC = () => {
               <div className="p-3.5 rounded-2xl bg-amber-500/10 border border-amber-500/25 text-xs space-y-1">
                 <div className="flex items-center gap-1.5 font-bold text-accent-hot">
                   <AlertTriangle className="w-3.5 h-3.5 shrink-0" />
-                  <span>Fokus Analisis Kontrasif L1 (Tips Bahasa Indonesia):</span>
+                  <span className="sr-only">Fokus Analisis Kontrasif L1</span>
+                  <span>💡 Tips Bahasa (Waspada Pola Bahasa Indonesia):</span>
                 </div>
                 <p className="text-xs sm:text-sm text-appText leading-relaxed">
                   {activeUnit.l2d_focus_notes}
@@ -972,10 +974,10 @@ export const HomePage: React.FC = () => {
             <span>Aktivitas terekam otomatis setiap kali kamu menyelesaikan latihan atau drill.</span>
             <button
               type="button"
-              onClick={openCatPlacement}
+              onClick={() => setActiveTab('settings')}
               className="min-h-[40px] px-2 text-xs font-bold text-accent hover:underline inline-flex items-center gap-1 shrink-0 active:scale-95 cursor-pointer"
             >
-              <span>Tes Kemampuan CAT →</span>
+              <span>Lihat Detail Statistik →</span>
             </button>
           </div>
         </div>

@@ -82,6 +82,7 @@ export async function loadDiagnosticPairs(): Promise<DiagnosticPair[]> {
         const pathMod = await import('path');
         const candidatePaths = [
           pathMod.resolve(process.cwd(), 'public/data/confusion-pairs.js'),
+          pathMod.resolve(process.cwd(), 'nugget-nihongo/public/data/confusion-pairs.js'),
           pathMod.resolve(process.cwd(), '../public/data/confusion-pairs.js'),
         ];
         for (const cp of candidatePaths) {

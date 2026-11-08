@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none" role="img" aria-label="Kusudama Perayaan Sukses">
+  <defs>
+    <radialGradient id="kusudamaGold" cx="40%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#fef08a"/>
+      <stop offset="60%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#b45309"/>
+    </radialGradient>
+    <filter id="kusudamaShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#000000" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <!-- Ambient Backdrop -->
+  <circle cx="100" cy="100" r="92" fill="#fffbeb" opacity="0.6"/>
+
+  <g filter="url(#kusudamaShadow)">
+    <!-- Hanging String -->
+    <line x1="100" y1="8" x2="100" y2="40" stroke="#dc2626" stroke-width="3" stroke-linecap="round"/>
+
+    <!-- Left Kusudama Hemispheric Shell (Open) -->
+    <path d="M96 44 C66 44 54 68 54 86 C54 98 64 110 84 112 L96 92 Z" fill="url(#kusudamaGold)"/>
+    <path d="M54 86 C58 92 68 84 74 96 C80 102 88 106 96 112" stroke="#b45309" stroke-width="2" fill="none"/>
+
+    <!-- Right Kusudama Hemispheric Shell (Open) -->
+    <path d="M104 44 C134 44 146 68 146 86 C146 98 136 110 116 112 L104 92 Z" fill="url(#kusudamaGold)"/>
+    <path d="M146 86 C142 92 132 84 126 96 C120 102 112 106 104 112" stroke="#b45309" stroke-width="2" fill="none"/>
+
+    <!-- Center Dropping Celebration Banner (垂れ幕) -->
+    <rect x="85" y="80" width="30" height="96" rx="4" fill="#ffffff" stroke="#dc2626" stroke-width="2"/>
+    <rect x="88" y="83" width="24" height="90" rx="2" fill="#fef2f2"/>
+    <!-- Gold / Red Kanji: 祝 合格 (Congratulations Success) -->
+    <text x="100" y="104" fill="#dc2626" font-family="'Noto Sans JP', sans-serif" font-weight="900" font-size="14" text-anchor="middle">祝</text>
+    <text x="100" y="126" fill="#b45309" font-family="'Noto Sans JP', sans-serif" font-weight="900" font-size="13" text-anchor="middle">合</text>
+    <text x="100" y="146" fill="#b45309" font-family="'Noto Sans JP', sans-serif" font-weight="900" font-size="13" text-anchor="middle">格</text>
+    <text x="100" y="164" fill="#15803d" font-family="'Noto Sans JP', sans-serif" font-weight="700" font-size="9" text-anchor="middle">おめでとう</text>
+
+    <!-- Colorful Streamers Flowing Down -->
+    <path d="M84 100 Q70 120 76 150 Q80 170 72 186" stroke="#3b82f6" stroke-width="3" stroke-linecap="round" fill="none"/>
+    <path d="M78 96 Q60 110 64 140 Q68 160 58 180" stroke="#ec4899" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+    <path d="M116 100 Q130 120 124 150 Q120 170 128 186" stroke="#10b981" stroke-width="3" stroke-linecap="round" fill="none"/>
+    <path d="M122 96 Q140 110 136 140 Q132 160 142 180" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+
+    <!-- Falling Confetti -->
+    <rect x="42" y="60" width="6" height="6" rx="1.5" fill="#ec4899" transform="rotate(30 42 60)"/>
+    <rect x="150" y="58" width="6" height="6" rx="1.5" fill="#3b82f6" transform="rotate(-20 150 58)"/>
+    <circle cx="50" cy="116" r="3" fill="#f59e0b"/>
+    <circle cx="152" cy="118" r="3" fill="#10b981"/>
+    <circle cx="68" cy="162" r="2.5" fill="#8b5cf6"/>
+    <circle cx="134" cy="164" r="2.5" fill="#ef4444"/>
+  </g>
+</svg>

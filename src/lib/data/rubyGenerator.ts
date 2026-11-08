@@ -43,6 +43,8 @@ export function stripFurigana(text: string): string {
     .replace(/([\u4E00-\u9FAF\u3005]+[\u3040-\u309F]*)\{([^\}]+)\}/g, '$1')
     // Parentheses: (わたし) only if preceded by Kanji
     .replace(/([\u4E00-\u9FAF\u3005]+[\u3040-\u309F]*)\(([\u3040-\u309F]+)\)/g, '$1')
+    // Raw bold tags: <b> and </b>
+    .replace(/<\/?b>/gi, '')
     .trim();
 }
 
@@ -71,7 +73,7 @@ export function extractFuriganaOnly(text: string): string {
  */
 export function parseRubySegments(text: string, readingHint?: string): RubySegment[] {
   if (!text || typeof text !== 'string') return [];
-  const clean = text.trim();
+  const clean = text.replace(/<\/?b>/gi, '').trim();
   if (clean.length === 0) return [];
 
   // Pattern 1: Text contains explicit bracketed annotations

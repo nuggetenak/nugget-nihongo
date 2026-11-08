@@ -1188,7 +1188,7 @@ export const KanjiStrokeModal: React.FC<KanjiStrokeModalProps> = ({
                             <div className="bg-surface-2/70 rounded-lg p-2 sm:p-2.5 border border-theme/40 text-xs space-y-1 mt-1">
                               <div className="flex items-start justify-between gap-1.5">
                                 <span className="font-japanese text-appText-bright leading-relaxed">
-                                  {v.examples[0].jp}
+                                  {v.examples[0].jp.replace(/<\/?b>/gi, '')}
                                 </span>
                                 <button
                                   onClick={() => {
@@ -1274,7 +1274,7 @@ export const KanjiStrokeModal: React.FC<KanjiStrokeModalProps> = ({
                         <div className="bg-surface-2/60 rounded-lg p-2 border border-theme/40 text-[10.5px] space-y-0.5">
                           <div className="flex items-start justify-between gap-1.5">
                             <span className="font-japanese text-appText-bright leading-relaxed">
-                              {v.examples[0].jp}
+                              {v.examples[0].jp.replace(/<\/?b>/gi, '')}
                             </span>
                             <button
                               onClick={() => voiceManager.speakText(v.examples[0].jp)}

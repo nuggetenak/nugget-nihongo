@@ -58,8 +58,8 @@ export const ExplanationStage: React.FC<ExplanationStageProps> = ({
   const { openSenseiSheet } = useAppStore();
   const { openModal } = useModalStore();
 
-  // 3-Pillar Segmented View State for Clean, Non-Overwhelming Cognitive Flow
-  const [activeSubTab, setActiveSubTab] = useState<'grammar' | 'vocab' | 'pitfalls'>('grammar');
+  // Single-Flow Feed (default: 'all') or Segmented View State for Clean Cognitive Flow
+  const [activeSubTab, setActiveSubTab] = useState<'all' | 'grammar' | 'vocab' | 'pitfalls'>('all');
 
   const [selectedKanji, setSelectedKanji] = useState<KanjiDetailInfo | null>(null);
   const [isKanjiModalOpen, setIsKanjiModalOpen] = useState(false);
@@ -107,9 +107,24 @@ export const ExplanationStage: React.FC<ExplanationStageProps> = ({
         <button
           type="button"
           role="tab"
+          aria-selected={activeSubTab === 'all'}
+          onClick={() => setActiveSubTab('all')}
+          className={`flex-1 min-w-[110px] min-h-[42px] px-3 py-2 rounded-xl text-xs font-bold transition-all flex items-center justify-center gap-1.5 whitespace-nowrap active:scale-95 ${
+            activeSubTab === 'all'
+              ? 'bg-accent text-bg shadow-sm font-extrabold'
+              : 'text-appText-muted hover:text-appText-bright hover:bg-surface-3'
+          }`}
+        >
+          <Sparkles className="w-4 h-4 shrink-0" />
+          <span>Semua Materi</span>
+        </button>
+
+        <button
+          type="button"
+          role="tab"
           aria-selected={activeSubTab === 'grammar'}
           onClick={() => setActiveSubTab('grammar')}
-          className={`flex-1 min-w-[120px] min-h-[42px] px-3 py-2 rounded-xl text-xs font-bold transition-all flex items-center justify-center gap-2 whitespace-nowrap active:scale-95 ${
+          className={`flex-1 min-w-[110px] min-h-[42px] px-3 py-2 rounded-xl text-xs font-bold transition-all flex items-center justify-center gap-1.5 whitespace-nowrap active:scale-95 ${
             activeSubTab === 'grammar'
               ? 'bg-accent text-bg shadow-sm font-extrabold'
               : 'text-appText-muted hover:text-appText-bright hover:bg-surface-3'
@@ -124,14 +139,14 @@ export const ExplanationStage: React.FC<ExplanationStageProps> = ({
           role="tab"
           aria-selected={activeSubTab === 'vocab'}
           onClick={() => setActiveSubTab('vocab')}
-          className={`flex-1 min-w-[120px] min-h-[42px] px-3 py-2 rounded-xl text-xs font-bold transition-all flex items-center justify-center gap-2 whitespace-nowrap active:scale-95 ${
+          className={`flex-1 min-w-[110px] min-h-[42px] px-3 py-2 rounded-xl text-xs font-bold transition-all flex items-center justify-center gap-1.5 whitespace-nowrap active:scale-95 ${
             activeSubTab === 'vocab'
               ? 'bg-accent text-bg shadow-sm font-extrabold'
               : 'text-appText-muted hover:text-appText-bright hover:bg-surface-3'
           }`}
         >
           <Layers className="w-4 h-4 shrink-0" />
-          <span>Kosakata Inti ({vocabBreakdown.length})</span>
+          <span>Kosakata ({vocabBreakdown.length})</span>
         </button>
 
         <button
@@ -139,23 +154,23 @@ export const ExplanationStage: React.FC<ExplanationStageProps> = ({
           role="tab"
           aria-selected={activeSubTab === 'pitfalls'}
           onClick={() => setActiveSubTab('pitfalls')}
-          className={`flex-1 min-w-[120px] min-h-[42px] px-3 py-2 rounded-xl text-xs font-bold transition-all flex items-center justify-center gap-2 whitespace-nowrap active:scale-95 ${
+          className={`flex-1 min-w-[110px] min-h-[42px] px-3 py-2 rounded-xl text-xs font-bold transition-all flex items-center justify-center gap-1.5 whitespace-nowrap active:scale-95 ${
             activeSubTab === 'pitfalls'
               ? 'bg-accent text-bg shadow-sm font-extrabold'
               : 'text-appText-muted hover:text-appText-bright hover:bg-surface-3'
           }`}
         >
           <AlertCircle className="w-4 h-4 shrink-0" />
-          <span>Jebakan & Tips ({activePitfalls.length})</span>
+          <span>Jebakan ({activePitfalls.length})</span>
         </button>
       </div>
 
-      {/* ── 2. KONTEN PILAR SESUAI TAB AKTIF ───────────────────────── */}
+      {/* ── 2. KONTEN PILAR SESUAI TAB AKTIF (SINGLE-FLOW FEED ATAU FILTER) ── */}
       <div className="animate-in fade-in duration-200 space-y-6">
         {/* ══════════════════════════════════════════════════════════ */}
         {/* PILAR 1: POLA TATA BAHASA & LOGIKA ALUR BERPIKIR           */}
         {/* ══════════════════════════════════════════════════════════ */}
-        {activeSubTab === 'grammar' && (
+        {(activeSubTab === 'all' || activeSubTab === 'grammar') && (
           <div className="space-y-6">
             {/* Konteks Situasi Nyata & Logika Sensei (Pedagogical Framework) */}
             {pedagogicalFramework && (
@@ -418,28 +433,41 @@ export const ExplanationStage: React.FC<ExplanationStageProps> = ({
               )}
             </div>
 
-            {/* Guided Transition to Pillar 2 (Vocab) */}
-            <div className="pt-4 flex justify-end">
-              <button
-                type="button"
-                onClick={() => {
-                  setActiveSubTab('vocab');
-                  const studioContainer = document.getElementById('lesson-studio-top');
-                  if (studioContainer) studioContainer.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-                }}
-                className="min-h-[46px] px-5 py-2.5 rounded-2xl bg-surface-2 hover:bg-surface-3 border border-accent/25 text-accent font-bold text-xs flex items-center gap-2 transition-all active:scale-95 shadow-sm"
-              >
-                <span>Lanjut: Kosakata Inti ({vocabBreakdown.length} Kata)</span>
-                <ArrowRight className="w-4 h-4 text-accent" />
-              </button>
-            </div>
+            {/* Guided Transition to Pillar 2 (Vocab) — Hanya muncul saat filter 'grammar' aktif */}
+            {activeSubTab === 'grammar' && (
+              <div className="pt-4 flex justify-end">
+                <button
+                  type="button"
+                  onClick={() => {
+                    setActiveSubTab('vocab');
+                    const studioContainer = document.getElementById('lesson-studio-top');
+                    if (studioContainer) studioContainer.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                  }}
+                  className="min-h-[46px] px-5 py-2.5 rounded-2xl bg-surface-2 hover:bg-surface-3 border border-accent/25 text-accent font-bold text-xs flex items-center gap-2 transition-all active:scale-95 shadow-sm"
+                >
+                  <span>Lanjut: Kosakata Inti ({vocabBreakdown.length} Kata)</span>
+                  <ArrowRight className="w-4 h-4 text-accent" />
+                </button>
+              </div>
+            )}
+
+            {/* Pemisah visual pilar dalam mode Single-Flow Feed ('all') */}
+            {activeSubTab === 'all' && (
+              <div className="pt-6 pb-2 flex items-center gap-3">
+                <div className="h-px bg-accent/20 flex-1" />
+                <span className="text-[11px] font-bold text-accent uppercase tracking-wider px-3 py-1 rounded-full bg-surface-2 border border-accent/25 shadow-xs">
+                  Pilar 2: Kosakata Inti ({vocabBreakdown.length} Kata)
+                </span>
+                <div className="h-px bg-accent/20 flex-1" />
+              </div>
+            )}
           </div>
         )}
 
         {/* ══════════════════════════════════════════════════════════ */}
         {/* PILAR 2: BEDAH KOSAKATA INTI & PITCH ACCENT                */}
         {/* ══════════════════════════════════════════════════════════ */}
-        {activeSubTab === 'vocab' && (
+        {(activeSubTab === 'all' || activeSubTab === 'vocab') && (
           <div className="space-y-6">
             <div className="flex items-center justify-between gap-2">
               <div>
@@ -669,41 +697,54 @@ export const ExplanationStage: React.FC<ExplanationStageProps> = ({
               </div>
             </div>
 
-            {/* Guided Navigation Footer */}
-            <div className="pt-4 flex flex-col sm:flex-row items-center justify-between gap-3">
-              <button
-                type="button"
-                onClick={() => {
-                  setActiveSubTab('grammar');
-                  const studioContainer = document.getElementById('lesson-studio-top');
-                  if (studioContainer) studioContainer.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-                }}
-                className="w-full sm:w-auto min-h-[44px] px-4 py-2 text-xs font-bold text-appText-muted hover:text-accent flex items-center justify-center gap-1.5 active:scale-95"
-              >
-                <ArrowLeft className="w-4 h-4" />
-                <span>Kembali ke Pola Tata Bahasa</span>
-              </button>
+            {/* Guided Navigation Footer — Hanya muncul saat filter 'vocab' aktif */}
+            {activeSubTab === 'vocab' && (
+              <div className="pt-4 flex flex-col sm:flex-row items-center justify-between gap-3">
+                <button
+                  type="button"
+                  onClick={() => {
+                    setActiveSubTab('grammar');
+                    const studioContainer = document.getElementById('lesson-studio-top');
+                    if (studioContainer) studioContainer.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                  }}
+                  className="w-full sm:w-auto min-h-[44px] px-4 py-2 text-xs font-bold text-appText-muted hover:text-accent flex items-center justify-center gap-1.5 active:scale-95"
+                >
+                  <ArrowLeft className="w-4 h-4" />
+                  <span>Kembali ke Pola Tata Bahasa</span>
+                </button>
 
-              <button
-                type="button"
-                onClick={() => {
-                  setActiveSubTab('pitfalls');
-                  const studioContainer = document.getElementById('lesson-studio-top');
-                  if (studioContainer) studioContainer.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-                }}
-                className="w-full sm:w-auto min-h-[46px] px-5 py-2.5 rounded-2xl bg-surface-2 hover:bg-surface-3 border border-accent/25 text-accent font-bold text-xs flex items-center justify-center gap-2 transition-all active:scale-95 shadow-sm"
-              >
-                <span>Lanjut: Jebakan & Tips ({activePitfalls.length})</span>
-                <ArrowRight className="w-4 h-4 text-accent" />
-              </button>
-            </div>
+                <button
+                  type="button"
+                  onClick={() => {
+                    setActiveSubTab('pitfalls');
+                    const studioContainer = document.getElementById('lesson-studio-top');
+                    if (studioContainer) studioContainer.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                  }}
+                  className="w-full sm:w-auto min-h-[46px] px-5 py-2.5 rounded-2xl bg-surface-2 hover:bg-surface-3 border border-accent/25 text-accent font-bold text-xs flex items-center justify-center gap-2 transition-all active:scale-95 shadow-sm"
+                >
+                  <span>Lanjut: Jebakan & Tips ({activePitfalls.length})</span>
+                  <ArrowRight className="w-4 h-4 text-accent" />
+                </button>
+              </div>
+            )}
+
+            {/* Pemisah visual pilar dalam mode Single-Flow Feed ('all') */}
+            {activeSubTab === 'all' && (
+              <div className="pt-6 pb-2 flex items-center gap-3">
+                <div className="h-px bg-red-500/20 flex-1" />
+                <span className="text-[11px] font-bold text-red-700 dark:text-red-400 uppercase tracking-wider px-3 py-1 rounded-full bg-red-500/10 border border-red-500/20 shadow-xs">
+                  Pilar 3: Waspada Kesalahan Umum ({activePitfalls.length} Tips)
+                </span>
+                <div className="h-px bg-red-500/20 flex-1" />
+              </div>
+            )}
           </div>
         )}
 
         {/* ══════════════════════════════════════════════════════════ */}
         {/* PILAR 3: WASPADA KESALAHAN UMUM & EVALUASI                 */}
         {/* ══════════════════════════════════════════════════════════ */}
-        {activeSubTab === 'pitfalls' && (
+        {(activeSubTab === 'all' || activeSubTab === 'pitfalls') && (
           <div className="space-y-6">
             <div>
               <h4 className="text-xs font-bold uppercase tracking-wider text-red-700 dark:text-red-400 flex items-center gap-2">

@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" fill="none" role="img" aria-label="Siswa Belajar Mandiri Tekun">
+  <defs>
+    <linearGradient id="bgGlowS" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#eff6ff" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#fef3c7" stop-opacity="0.5"/>
+    </linearGradient>
+    <linearGradient id="skinS" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffedd5"/>
+      <stop offset="100%" stop-color="#fed7aa"/>
+    </linearGradient>
+    <linearGradient id="deskS" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#92400e"/>
+      <stop offset="100%" stop-color="#78350f"/>
+    </linearGradient>
+    <filter id="softShadowS" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#000000" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <!-- Ambient Backdrop Circle -->
+  <circle cx="120" cy="120" r="108" fill="url(#bgGlowS)"/>
+
+  <!-- Study Desk in Foreground -->
+  <g filter="url(#softShadowS)">
+    <!-- Desk Wooden Surface -->
+    <rect x="20" y="180" width="200" height="54" rx="6" fill="url(#deskS)"/>
+    <rect x="24" y="184" width="192" height="6" rx="2" fill="#b45309" opacity="0.6"/>
+
+    <!-- Desk Lamp with Glow -->
+    <path d="M44 180 L44 140 C44 126 56 120 70 120 L76 120" stroke="#475569" stroke-width="4" stroke-linecap="round" fill="none"/>
+    <path d="M72 112 L88 126 L76 132 Z" fill="#f59e0b"/>
+    <!-- Lamp Warm Light Cone -->
+    <path d="M80 128 L140 180 L80 180 Z" fill="#fef08a" opacity="0.25"/>
+
+    <!-- Open Textbook on Desk -->
+    <path d="M96 182 L136 178 L144 182 L104 186 Z" fill="#e2e8f0"/>
+    <path d="M144 182 L184 178 L176 186 L136 190 Z" fill="#f8fafc"/>
+    <!-- Kanji & Kana text marks in book -->
+    <line x1="106" y1="182" x2="134" y2="180" stroke="#64748b" stroke-width="1.5"/>
+    <line x1="108" y1="184" x2="132" y2="182" stroke="#64748b" stroke-width="1.5"/>
+    <line x1="146" y1="181" x2="174" y2="179" stroke="#64748b" stroke-width="1.5"/>
+    <line x1="148" y1="183" x2="172" y2="181" stroke="#64748b" stroke-width="1.5"/>
+  </g>
+
+  <!-- Student Character -->
+  <g filter="url(#softShadowS)">
+    <!-- Body / Navy Hoodie -->
+    <path d="M78 180 C78 142 98 132 120 132 C142 132 162 142 162 180 Z" fill="#1e3a8a"/>
+
+    <!-- Left Arm leaning on desk writing -->
+    <path d="M84 160 C78 174 88 184 104 184 L114 180 Z" fill="#1e3a8a"/>
+    <ellipse cx="114" cy="180" rx="6" ry="6" fill="url(#skinS)"/>
+
+    <!-- Right Arm holding pencil -->
+    <path d="M156 160 C162 174 152 184 136 184 L126 180 Z" fill="#1e3a8a"/>
+    <ellipse cx="126" cy="180" rx="6" ry="6" fill="url(#skinS)"/>
+    <!-- Pencil -->
+    <line x1="124" y1="172" x2="132" y2="186" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
+
+    <!-- Neck -->
+    <rect x="113" y="116" width="14" height="18" rx="3" fill="url(#skinS)"/>
+
+    <!-- Head -->
+    <ellipse cx="120" cy="88" rx="30" ry="32" fill="url(#skinS)"/>
+
+    <!-- Hair (Youthful modern Japanese cut) -->
+    <path d="M90 84 C90 56 102 44 120 44 C138 44 150 56 150 84 C150 64 138 52 120 52 C102 52 90 64 90 84 Z" fill="#18181b"/>
+    <!-- Spiky bangs -->
+    <path d="M96 66 L104 76 L112 66 L120 78 L128 66 L136 78 L144 68 Q132 60 120 60 Q106 60 96 66 Z" fill="#18181b"/>
+
+    <!-- White Determination Headband (Hachimaki / 必勝) -->
+    <rect x="91" y="66" width="58" height="8" rx="2" fill="#ffffff" transform="rotate(-2 120 70)"/>
+    <!-- Red Sun Dot in center of headband (Hinomaru) -->
+    <circle cx="120" cy="70" r="3.5" fill="#dc2626"/>
+
+    <!-- Eyebrows (Focused & Determined) -->
+    <path d="M102 78 L114 82" stroke="#27272a" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M138 78 L126 82" stroke="#27272a" stroke-width="2.5" stroke-linecap="round"/>
+
+    <!-- Focused Eyes looking down at book -->
+    <circle cx="109" cy="89" r="3" fill="#18181b"/>
+    <circle cx="131" cy="89" r="3" fill="#18181b"/>
+
+    <!-- Cheeks (Effort blush) -->
+    <ellipse cx="102" cy="94" rx="4" ry="3" fill="#f43f5e" opacity="0.35"/>
+    <ellipse cx="138" cy="94" rx="4" ry="3" fill="#f43f5e" opacity="0.35"/>
+
+    <!-- Focused small smile -->
+    <path d="M115 102 Q120 106 125 102" stroke="#991b1b" stroke-width="2" stroke-linecap="round" fill="none"/>
+  </g>
+</svg>

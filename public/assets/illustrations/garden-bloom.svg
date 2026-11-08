@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none" role="img" aria-label="Kebun Bunga Mekar Segar">
+  <defs>
+    <radialGradient id="bloomGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#fdf4ff"/>
+      <stop offset="100%" stop-color="#f0fdf4"/>
+    </radialGradient>
+    <linearGradient id="sakuraGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fb7185"/>
+      <stop offset="100%" stop-color="#f43f5e"/>
+    </linearGradient>
+    <filter id="bloomShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#000000" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <circle cx="100" cy="100" r="92" fill="url(#bloomGlow)"/>
+
+  <!-- Plant Stem & Pot -->
+  <g filter="url(#bloomShadow)">
+    <!-- Terracotta Japanese Ceramic Pot -->
+    <path d="M72 142 L128 142 L122 178 C122 182 118 186 114 186 L86 186 C82 186 78 182 78 178 Z" fill="#b45309"/>
+    <rect x="68" y="136" width="64" height="10" rx="3" fill="#d97706"/>
+    <!-- Pot Soil -->
+    <ellipse cx="100" cy="140" rx="28" ry="4" fill="#451a03"/>
+
+    <!-- Green Stem -->
+    <path d="M100 140 Q104 116 100 94" stroke="#16a34a" stroke-width="5" stroke-linecap="round"/>
+
+    <!-- Leaves -->
+    <path d="M100 120 C88 114 84 102 88 96 C98 96 100 110 100 120 Z" fill="#22c55e"/>
+    <path d="M100 112 C112 106 116 94 112 88 C102 88 100 102 100 112 Z" fill="#4ade80"/>
+
+    <!-- Blooming Sakura Blossom (5 Petals) -->
+    <!-- Petal Top -->
+    <path d="M100 94 C92 78 86 62 100 52 C114 62 108 78 100 94 Z" fill="url(#sakuraGrad)"/>
+    <!-- Petal Top-Right -->
+    <path d="M100 94 C116 88 132 84 138 98 C128 110 112 102 100 94 Z" fill="url(#sakuraGrad)"/>
+    <!-- Petal Bottom-Right -->
+    <path d="M100 94 C112 108 120 124 108 132 C96 128 98 110 100 94 Z" fill="url(#sakuraGrad)"/>
+    <!-- Petal Bottom-Left -->
+    <path d="M100 94 C88 110 90 128 78 124 C72 112 86 102 100 94 Z" fill="url(#sakuraGrad)"/>
+    <!-- Petal Top-Left -->
+    <path d="M100 94 C88 102 72 110 62 98 C68 84 84 88 100 94 Z" fill="url(#sakuraGrad)"/>
+
+    <!-- Flower Center & Golden Pistils -->
+    <circle cx="100" cy="94" r="8" fill="#fef08a"/>
+    <circle cx="100" cy="94" r="4" fill="#f59e0b"/>
+  </g>
+
+  <!-- Sparkles -->
+  <path d="M148 48 L150 54 L156 56 L150 58 L148 64 L146 58 L140 56 L146 54 Z" fill="#f59e0b"/>
+  <path d="M46 72 L48 76 L52 78 L48 80 L46 84 L44 80 L40 78 L44 76 Z" fill="#ec4899" opacity="0.8"/>
+</svg>

@@ -108,12 +108,27 @@ if (typeof process !== 'undefined' && process.versions?.node) {
   } catch {}
 }
 
-// Clean distractor self-leaks from multiple choice options
+// Clean distractor self-leaks from multiple choice options (removes bracketed meta-explanations and ambiguous slash alternatives)
 export function cleanOptionText(text: string): string {
   if (!text || typeof text !== 'string') return '';
-  return text
-    .replace(/\s*\((?:Urutan terbalik[^\)]*|Partikel tidak pas|Bukan partikel[^\)]*|Pola kalimat salah[^\)]*|Salah susun[^\)]*|Bukan kata benda[^\)]*|Jebakan[^\)]*)\)/gi, '')
-    .trim();
+  let cleaned = text;
+
+  // 1. Strip parentheses containing explanatory text, romaji, or grammatical hints (Urutan terbalik, Partikel tidak pas)
+  // e.g. "買えません (hanya bisa / negatif)" -> "買えません"
+  // e.g. "りようしゃさま (Riyousha-sama)" -> "りようしゃさま"
+  // e.g. "てんとう (転倒)" -> "てんとう"
+  cleaned = cleaned.replace(/\s*\((?:Urutan terbalik[^\)]*|Partikel tidak pas[^\)]*|[^)]*)\)/gi, '').trim();
+
+  // 2. Strip ambiguous slash alternatives e.g. "melihat / menonton" -> "melihat"
+  if (cleaned.includes('/') && !/^\d+\/\d+$/.test(cleaned)) {
+    const parts = cleaned.split('/');
+    if (parts[0] && parts[0].trim().length > 0) {
+      cleaned = parts[0].trim();
+    }
+  }
+
+  // Fallback to original text if stripping emptied the content
+  return cleaned.trim() || text.trim();
 }
 
 // Fisher-Yates shuffle helper to ensure non-deterministic option ordering across drills
@@ -164,9 +179,22 @@ export function getAdaptiveLessonContent(
       vocab_breakdown: curated.vocab_breakdown || lesson.vocab_breakdown,
       explanations: curated.explanations || lesson.explanations,
       common_pitfalls: curated.common_pitfalls || lesson.common_pitfalls,
-      drills: (curated.drills || lesson.drills || []).map((d) =>
-        d.options ? { ...d, options: shuffleOptions(d.options.map(cleanOptionText)), correctAnswer: cleanOptionText(d.correctAnswer || '') } : d
-      ),
+      drills: (curated.drills || lesson.drills || []).map((d) => {
+        if (!d.options) return d;
+        const cleanedFeedback: Record<string, string> = {};
+        if (d.diagnosticFeedback) {
+          for (const [k, v] of Object.entries(d.diagnosticFeedback)) {
+            cleanedFeedback[k] = v;
+            cleanedFeedback[cleanOptionText(k)] = v;
+          }
+        }
+        return {
+          ...d,
+          options: shuffleOptions(d.options.map(cleanOptionText)),
+          correctAnswer: cleanOptionText(d.correctAnswer || ''),
+          diagnosticFeedback: cleanedFeedback,
+        };
+      }),
       // Curated drill option randomization invariant: d.options ? { ...d, options: shuffleOptions(d.options) } : d
       can_do_challenge: curated.can_do_challenge || lesson.can_do_challenge,
       pocket_summary: curated.pocket_summary || lesson.pocket_summary,

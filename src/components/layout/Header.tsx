@@ -195,15 +195,21 @@ export const Header: React.FC<HeaderProps> = ({
         </button>
       </div>
 
-      {/* ── Anchor 2: Universal Search Trigger ── */}
+      {/* ── Anchor 2: Universal Search Trigger & Sensei Companion Center Anchor ── */}
       <div className="shrink-0 sm:flex-1 min-w-0 flex items-center justify-center sm:justify-start max-w-xs sm:max-w-sm">
+        {/* Mobile Center Anchor: Friendly Sensei Mascot (Direct Shortcut to Sensei AI) */}
         <button
           type="button"
-          onClick={onOpenSearch}
-          aria-label="Buka Pencarian Global (Tekan ⌘K)"
-          className="sm:hidden min-w-[40px] min-h-[40px] p-2 rounded-xl bg-surface-2 hover:bg-surface-3 border border-accent/20 text-appText-muted hover:text-accent flex items-center justify-center active:scale-95 transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent shrink-0"
+          onClick={() => setActiveTab('sensei')}
+          className="sm:hidden min-w-[40px] min-h-[40px] p-1 rounded-full bg-amber-500/10 hover:bg-amber-500/20 border border-amber-500/25 flex items-center justify-center active:scale-95 transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+          title="Tanya Sensei AI"
+          aria-label="Tanya Sensei AI"
         >
-          <Search className="w-4 h-4" />
+          <img
+            src="/assets/illustrations/sensei-welcome.svg"
+            alt="Sensei"
+            className="w-7 h-7 rounded-full object-contain filter drop-shadow-xs"
+          />
         </button>
         <button
           type="button"
@@ -232,7 +238,7 @@ export const Header: React.FC<HeaderProps> = ({
         <div
           role="status"
           aria-label={`Streak: ${streak} hari, ${xp} XP`}
-          className="flex items-center gap-1 sm:gap-2 px-2 sm:px-3 py-1.5 min-h-[40px] rounded-full bg-amber-500/10 hover:bg-amber-500/15 border border-amber-500/25 text-appText-bright shadow-sm shrink-0 select-none transition-all"
+          className="flex items-center gap-1 sm:gap-2 px-2.5 sm:px-3 py-1.5 min-h-[40px] rounded-full bg-amber-500/10 hover:bg-amber-500/15 border border-amber-500/25 text-appText-bright shadow-sm shrink-0 select-none transition-all"
           title={`Streak: ${streak} Hari · Total: ${xp} XP`}
         >
           <div className="flex items-center gap-1">
@@ -248,24 +254,24 @@ export const Header: React.FC<HeaderProps> = ({
           </div>
         </div>
 
-        {/* Quick Action Sheet Trigger (Secondary Utilities: Furigana, Romaji, Toolbox, Guide, Sync) */}
+        {/* Quick Action Sheet Trigger (Desktop & Secondary Tools: Furigana, Romaji, Toolbox, Guide, Sync) */}
         <button
           type="button"
           onClick={() => setIsQuickActionsOpen(true)}
           aria-label="Buka Aksi Cepat & Peralatan Belajar"
           title="Aksi Cepat: Furigana, Romaji, Kotak Peralatan, Panduan, & Sinkronisasi"
-          className="min-w-[40px] min-h-[40px] p-2 rounded-full bg-surface-2 hover:bg-surface-3 border border-accent/20 hover:border-accent text-accent transition-all active:scale-95 flex items-center justify-center shrink-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+          className="hidden sm:flex min-w-[40px] min-h-[40px] p-2 rounded-full bg-surface-2 hover:bg-surface-3 border border-accent/20 hover:border-accent text-accent transition-all active:scale-95 items-center justify-center shrink-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
         >
           <SlidersHorizontal className="w-4 h-4" />
         </button>
 
-        {/* Anchor 4: User Profile Avatar (1-Tap Direct Access to Profile) */}
+        {/* Anchor 4: User Profile Avatar (Direct Access to Profile on Desktop, Mobile uses Tab 5) */}
         {user ? (
           <button
             onClick={() => setActiveTab('settings')}
             title={`Profil: ${user.user_metadata?.display_name || user.email} (Klik untuk membuka profil & pengaturan)`}
             aria-label={`Akun terhubung: ${user.email}. Buka profil.`}
-            className="flex items-center justify-center gap-1.5 p-1 sm:pr-2.5 rounded-full bg-surface-2 hover:bg-surface-3 border border-accent/25 text-appText-bright text-xs font-semibold transition-all shrink-0 active:scale-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent min-h-[40px] min-w-[40px]"
+            className="hidden sm:flex items-center justify-center gap-1.5 p-1 sm:pr-2.5 rounded-full bg-surface-2 hover:bg-surface-3 border border-accent/25 text-appText-bright text-xs font-semibold transition-all shrink-0 active:scale-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent min-h-[40px] min-w-[40px]"
           >
             <div className="w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-gradient-to-br from-amber-400 to-amber-600 text-stone-950 font-black flex items-center justify-center text-xs shadow-sm ring-1 ring-white/20 shrink-0">
               {user.email?.charAt(0).toUpperCase()}
@@ -279,7 +285,7 @@ export const Header: React.FC<HeaderProps> = ({
             onClick={() => useAuthStore.getState().openAuthModal('signin')}
             title="Masuk untuk sinkronisasi cloud & profil"
             aria-label="Masuk ke Akun Cloud"
-            className="flex items-center justify-center gap-1.5 px-2.5 sm:px-3 py-1.5 min-h-[40px] min-w-[40px] rounded-full bg-surface-2 hover:bg-surface-3 border border-accent/20 text-appText-bright text-xs font-bold transition-all shrink-0 active:scale-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+            className="hidden sm:flex items-center justify-center gap-1.5 px-2.5 sm:px-3 py-1.5 min-h-[40px] min-w-[40px] rounded-full bg-surface-2 hover:bg-surface-3 border border-accent/20 text-appText-bright text-xs font-bold transition-all shrink-0 active:scale-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
           >
             <UserIcon className="w-4 h-4 text-accent" />
             <span className="hidden sm:inline">Masuk</span>

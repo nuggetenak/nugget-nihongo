@@ -429,7 +429,7 @@ export const CounterTrainerModal: React.FC<CounterTrainerModalProps> = ({
                             <div className="p-3 rounded-xl bg-accent/10 border border-accent/20 flex items-center justify-between gap-3">
                               <div className="space-y-0.5 min-w-0">
                                 <div className="text-xs uppercase font-bold text-accent">Contoh Kalimat Alami</div>
-                                <div className="text-xs font-bold text-appText-bright">{counter.exampleSentence.jp}</div>
+                                <div className="text-xs font-bold text-appText-bright">{counter.exampleSentence.jp.replace(/<\/?b>/gi, '')}</div>
                                 <div className="text-xs text-appText-muted">{counter.exampleSentence.id}</div>
                               </div>
                               <button

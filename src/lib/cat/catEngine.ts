@@ -87,6 +87,61 @@ function shuffleArray<T>(arr: T[]): T[] {
   return copy;
 }
 
+/**
+ * Universal option text sanitizer for CAT diagnostic testing.
+ * Eliminates LaTeX, parenthetical pedagogical comments, alternative slashes,
+ * and foreign language leakage to produce 100% clean Japanese answer choices.
+ */
+export function cleanCATOptionText(text: string): string {
+  if (!text) return '';
+  let cleaned = text;
+
+  // 1. Remove LaTeX math like $\rightarrow$ or unclosed $...
+  cleaned = cleaned.replace(/\$[^$]*\$/g, '');
+  cleaned = cleaned.replace(/[\$\\].*$/g, '');
+
+  // 2. Remove parenthetical notes first so slashes inside parentheses don't interfere
+  // Handles: (atau: ...), (Bibi / Tante), (dari ...), [2], （...）, etc.
+  cleaned = cleaned.replace(/\s*[\(\（][^\)\）]*[\)\）]/g, '');
+  cleaned = cleaned.replace(/\s*\[[^\]]*\]/g, '');
+
+  // 3. If there are still slashes separating alternatives (e.g. "電車を乗る / 電車で乗る"),
+  // take the first alternative before the slash
+  if (cleaned.includes('/') && !/^\d+\/\d+$/.test(cleaned.trim())) {
+    cleaned = cleaned.split('/')[0].trim();
+  }
+
+  // 4. Remove leftover Latin annotations (e.g. "prioritas:", "redundant")
+  cleaned = cleaned.replace(/\s+[A-Za-z].*$/g, '');
+
+  // 5. Remove trailing punctuation
+  cleaned = cleaned.replace(/[、,:\s\-\.]+$/, '').trim();
+
+  return cleaned;
+}
+
+function isValidJapaneseOption(opt: string, targetLen: number): boolean {
+  if (!opt) return false;
+  // Must contain Japanese characters (hiragana, katakana, or kanji)
+  if (!/[\u3040-\u30ff\u3400-\u4dbf\u4e00-\u9fff]/.test(opt)) return false;
+  // Must NOT contain any Latin letters or HTML tags
+  if (/[A-Za-z<>]/.test(opt)) return false;
+  // Must not have forbidden leaked symbols
+  if (/[\(\)\[\]\/\\\$]/.test(opt)) return false;
+  // Length homogeneity
+  if (targetLen <= 2) {
+    if (opt.length > 4) return false;
+  } else if (targetLen <= 5) {
+    if (opt.length < 2 || opt.length > 7) return false;
+  } else {
+    const ratio = opt.length / targetLen;
+    if (ratio < 0.4 || ratio > 2.5) return false;
+  }
+  return true;
+}
+
+const COMMON_PARTICLES = ['に', 'で', 'を', 'へ', 'が', 'は', 'と', 'から', 'まで', 'より'];
+
 // Prepare question bank from loaded diagnostic pairs
 export async function buildCATQuestionPool(): Promise<CATQuestion[]> {
   const pairs = await loadDiagnosticPairs();
@@ -94,9 +149,15 @@ export async function buildCATQuestionPool(): Promise<CATQuestion[]> {
     return [];
   }
 
-  // Group by level to extract realistic distractors
+  // Group pairs by category and level
+  const pairsByCategory: Record<string, DiagnosticPair[]> = {};
   const pairsByLevel: Record<string, DiagnosticPair[]> = {};
+
   pairs.forEach((p) => {
+    const cat = p.category || p.domain || 'general';
+    if (!pairsByCategory[cat]) pairsByCategory[cat] = [];
+    pairsByCategory[cat].push(p);
+
     if (!pairsByLevel[p.level]) pairsByLevel[p.level] = [];
     pairsByLevel[p.level].push(p);
   });
@@ -104,86 +165,133 @@ export async function buildCATQuestionPool(): Promise<CATQuestion[]> {
   const pool: CATQuestion[] = [];
 
   pairs.forEach((pair) => {
-    // Robust 4-option distractor generation:
-    // 1. Target form (correct answer)
-    // 2. Pedagogical distractor (designated L1 trap form)
-    // 3. Same-level candidate target forms
-    // 4. Fallback same-level trap forms or global candidates (zero synthetic placeholders)
-    const sameLevel = pairsByLevel[pair.level] || [];
-    const otherCandidates = sameLevel
-      .filter((other) => other.id !== pair.id && other.target_form !== pair.target_form)
-      .map((other) => other.target_form);
+    const rawTarget = pair.target_form;
+    const cleanTarget = cleanCATOptionText(rawTarget);
+    if (!cleanTarget || !isValidJapaneseOption(cleanTarget, cleanTarget.length)) return;
 
-    const shuffledOthers = shuffleArray(otherCandidates);
+    const cleanTrap = cleanCATOptionText(pair.l1_trap_form || '');
+
     const chosenOptions = new Set<string>();
-    chosenOptions.add(pair.target_form);
+    chosenOptions.add(cleanTarget);
 
-    // Pedagogical distractor: designated L1 trap form if distinct from target
-    if (pair.l1_trap_form && pair.l1_trap_form.trim() !== '' && pair.l1_trap_form !== pair.target_form) {
-      chosenOptions.add(pair.l1_trap_form);
+    if (cleanTrap && cleanTrap !== cleanTarget && isValidJapaneseOption(cleanTrap, cleanTarget.length)) {
+      chosenOptions.add(cleanTrap);
     }
 
-    // Secondary candidates: other target forms from same level
-    for (const other of shuffledOthers) {
-      if (chosenOptions.size >= 4) break;
-      if (other && !chosenOptions.has(other)) {
-        chosenOptions.add(other);
-      }
-    }
-
-    // Tertiary candidates: other trap forms from same level
-    if (chosenOptions.size < 4) {
-      const otherTraps = shuffleArray(
-        sameLevel
-          .filter((other) => other.id !== pair.id && other.l1_trap_form)
-          .map((other) => other.l1_trap_form as string)
-      );
-      for (const trap of otherTraps) {
-        if (chosenOptions.size >= 4) break;
-        if (trap && !chosenOptions.has(trap)) {
-          chosenOptions.add(trap);
+    // ── Strategy 1: Symmetric Case Particle Foils (Domain I Asymmetry) ───
+    if (pair.patterns && pair.patterns.length >= 2) {
+      const p1 = cleanCATOptionText(pair.patterns[0]);
+      if (COMMON_PARTICLES.includes(p1) && cleanTarget.includes(p1)) {
+        for (const part of COMMON_PARTICLES) {
+          if (chosenOptions.size >= 4) break;
+          if (part !== p1) {
+            const variant = cleanTarget.replace(p1, part);
+            if (!chosenOptions.has(variant) && isValidJapaneseOption(variant, cleanTarget.length)) {
+              chosenOptions.add(variant);
+            }
+          }
         }
       }
     }
 
-    // Global pool fallback: candidates from other levels
-    if (chosenOptions.size < 4) {
-      const allOtherCandidates = shuffleArray(
-        pairs
-          .filter((other) => other.id !== pair.id)
-          .map((other) => other.target_form)
-      );
-      for (const cand of allOtherCandidates) {
+    // ── Strategy 2: Same-Category Homogeneous Harvesting ────────────────
+    const cat = pair.category || pair.domain || 'general';
+    const sameCatPairs = pairsByCategory[cat] || [];
+    if (chosenOptions.size < 4 && sameCatPairs.length > 0) {
+      const shuffledCat = shuffleArray(sameCatPairs.filter((o) => o.id !== pair.id));
+      for (const other of shuffledCat) {
         if (chosenOptions.size >= 4) break;
-        if (cand && !chosenOptions.has(cand)) {
-          chosenOptions.add(cand);
+        const ot = cleanCATOptionText(other.target_form);
+        if (ot && !chosenOptions.has(ot) && isValidJapaneseOption(ot, cleanTarget.length)) {
+          chosenOptions.add(ot);
+        }
+        if (chosenOptions.size < 4) {
+          const ol = cleanCATOptionText(other.l1_trap_form);
+          if (ol && !chosenOptions.has(ol) && isValidJapaneseOption(ol, cleanTarget.length)) {
+            chosenOptions.add(ol);
+          }
         }
       }
     }
 
-    // Final grammatical fallback
-    const fallbackDistractors = ['該当なし', 'わかりません', '使えません', '文法的に不適切'];
-    for (const fb of fallbackDistractors) {
-      if (chosenOptions.size >= 4) break;
-      if (!chosenOptions.has(fb)) {
-        chosenOptions.add(fb);
+    // ── Strategy 3: Grammatical Morphological Variations (Zero Dummy Options) ───
+    if (chosenOptions.size < 4 && cleanTarget.length > 5) {
+      const morphRules: Array<[RegExp, string]> = [
+        [/です$/, 'でした'],
+        [/です$/, 'ではありません'],
+        [/だ$/, 'だった'],
+        [/だ$/, 'ではない'],
+        [/ます。?$/, 'ました。'],
+        [/ます。?$/, 'ません。'],
+        [/ました。?$/, 'ませんでした。'],
+        [/ている。?$/, 'てある。'],
+        [/たことがある。?$/, 'たところだ。'],
+        [/てはいけない。?$/, 'なくてもいい。'],
+        [/なければならない。?$/, 'なくてもかまわない。'],
+        [/ほうがいい。?$/, 'ほうがよかった。'],
+      ];
+      for (const [rx, repl] of morphRules) {
+        if (chosenOptions.size >= 4) break;
+        if (rx.test(cleanTarget)) {
+          const foil = cleanTarget.replace(rx, repl);
+          if (!chosenOptions.has(foil) && isValidJapaneseOption(foil, cleanTarget.length)) {
+            chosenOptions.add(foil);
+          }
+        }
       }
     }
 
-    const uniqueOptions = Array.from(chosenOptions);
-    const shuffled = shuffleArray(uniqueOptions.slice(0, 4));
-    const correctIndex = shuffled.indexOf(pair.target_form);
+    // ── Strategy 4: Same-Level Proximity Harvesting ─────────────────────
+    const sameLevelPairs = pairsByLevel[pair.level] || [];
+    if (chosenOptions.size < 4 && sameLevelPairs.length > 0) {
+      const shuffledLvl = shuffleArray(sameLevelPairs.filter((o) => o.id !== pair.id));
+      for (const other of shuffledLvl) {
+        if (chosenOptions.size >= 4) break;
+        const ot = cleanCATOptionText(other.target_form);
+        if (ot && !chosenOptions.has(ot) && isValidJapaneseOption(ot, cleanTarget.length)) {
+          chosenOptions.add(ot);
+        }
+        if (chosenOptions.size < 4) {
+          const ol = cleanCATOptionText(other.l1_trap_form);
+          if (ol && !chosenOptions.has(ol) && isValidJapaneseOption(ol, cleanTarget.length)) {
+            chosenOptions.add(ol);
+          }
+        }
+      }
+    }
+
+    // ── Strategy 5: Curated Homogeneous Linguistic Vocabulary Backstop ──
+    if (chosenOptions.size < 4) {
+      const shortFoils = ['これ', 'それ', 'あれ', 'どれ', 'ここ', 'そこ', 'あそこ', 'どこ'];
+      const sentFoils = ['わかりました。', 'そうですね。', '大丈夫です。', 'お願いします。'];
+      const fallback = cleanTarget.length <= 4 ? shortFoils : sentFoils;
+      for (const sf of fallback) {
+        if (chosenOptions.size >= 4) break;
+        if (!chosenOptions.has(sf) && isValidJapaneseOption(sf, cleanTarget.length)) {
+          chosenOptions.add(sf);
+        }
+      }
+    }
+
+    const uniqueOptions = Array.from(chosenOptions).slice(0, 4);
+    if (uniqueOptions.length < 4) {
+      // Under-full options, skip item to maintain strict 4-distractor homogeneity invariant
+      return;
+    }
+
+    const shuffled = shuffleArray(uniqueOptions);
+    const correctIndex = shuffled.indexOf(cleanTarget);
 
     pool.push({
       id: pair.id,
       stimulus: pair.stimulus_l1 || pair.title,
-      targetJapanese: pair.target_form,
+      targetJapanese: cleanTarget,
       options: shuffled,
       correctIndex: correctIndex !== -1 ? correctIndex : 0,
       level: pair.level,
       difficulty: calculateDifficultyB(pair.level, pair.fsrs_difficulty),
       discrimination: 1.25,
-      explanation: `${pair.root_cause} ${pair.prescription || ''}`,
+      explanation: `${pair.root_cause || ''} ${pair.prescription || ''}`.trim(),
       patterns: pair.patterns || [],
       rootCause: pair.root_cause || '',
     });

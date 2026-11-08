@@ -44,24 +44,24 @@ const INITIAL_MNEMONICS: MnemonicItem[] = [
     kanji: '休',
     meaning: 'Istirahat (やすむ)',
     mnemonic: 'Ada Orang (亻) sedang bersandar di Pohon (木) untuk beristirahat.',
-    author: 'Sensei Budi (N2)',
-    upvotes: 42,
+    author: 'Tim Pedagogi Nugget',
+    upvotes: 0,
   },
   {
     id: 'mn_002',
     kanji: '森',
     meaning: 'Hutan lebat (もり)',
     mnemonic: 'Tiga pohon (木 + 木 + 木) berkumpul menjadi hutan yang sangat lebat.',
-    author: 'Rina (Tokutei Ginou)',
-    upvotes: 38,
+    author: 'Spesialis Visual SSW',
+    upvotes: 0,
   },
   {
     id: 'mn_003',
     kanji: '明',
     meaning: 'Terang / Jelas (あかるい)',
     mnemonic: 'Matahari (日) dan Bulan (月) bersanding menciptakan cahaya yang sangat terang.',
-    author: 'Agus (Surabaya)',
-    upvotes: 29,
+    author: 'Kurasi Memori N5',
+    upvotes: 0,
   },
 ];
 
@@ -431,12 +431,12 @@ export const CommunityHubModal: React.FC<CommunityHubModalProps> = ({ isOpen, on
                           ? 'bg-rose-500/15 text-rose-600 dark:text-rose-400 border border-rose-500/30'
                           : 'bg-surface hover:bg-surface-3 text-appText-muted hover:text-rose-500 border border-accent/15'
                       }`}
-                      title={isUpvoted ? 'Batalkan suka' : 'Bermanfaat'}
+                      title={isUpvoted ? 'Hapus dari daftar simpan' : 'Simpan mnemonik ini'}
                     >
                       <Heart
                         className={`w-3.5 h-3.5 ${isUpvoted ? 'fill-current text-rose-500' : ''}`}
                       />
-                      <span className="text-[10px] mt-0.5">{item.upvotes}</span>
+                      <span className="text-[10px] mt-0.5">{isUpvoted ? 'Tersimpan' : 'Simpan'}</span>
                     </button>
                   </div>
                 );

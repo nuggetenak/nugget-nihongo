@@ -28,6 +28,8 @@ import {
   GitPullRequest,
   Database,
   Mail,
+  Clock,
+  Heart,
 } from 'lucide-react';
 import { useAppStore } from '../store/useAppStore';
 import { IrasutoyaImage } from '../components/common/IrasutoyaImage';
@@ -203,20 +205,65 @@ export const MethodologyPage: React.FC = () => {
           </div>
           <div>
             <h1 className="text-2xl sm:text-3xl font-black tracking-tight text-white">
-              Metodologi Pedagogis & Batas Epistemik
+              Mengapa Cara Belajar di Nugget Nihongo Berbeda?
             </h1>
-            <p className="text-xs sm:text-sm text-muted font-medium">
-              Transparansi Ilmiah Nugget Nihongo untuk Pembelajar Dewasa Indonesia
+            <p className="text-xs sm:text-sm text-amber-400 font-semibold">
+              Filosofi Belajar Tanpa Beban & Transparansi Ilmiah untuk Orang Indonesia
             </p>
           </div>
         </div>
 
         <p className="text-sm sm:text-base text-appText/90 leading-relaxed mt-4 max-w-3xl">
-          Dokumen ini bukan materi pemasaran, melainkan pertanggungjawaban pedagogis terbuka (pedagogical accounting). 
-          Kami membedah fondasi ilmiah, adaptasi fonologis L1 Bahasa Indonesia, algoritma FSRS v4.5, serta batas-batas kejujuran epistemik atas apa yang telah terbukti dan apa yang belum kami klaim.
+          Pernah merasa sudah belajar bahasa Jepang berbulan-bulan, tetapi begitu diajak bicara atau mendengar percakapan langsung, kata-katanya menguap begitu saja? Atau merasa tertekan oleh papan peringkat di aplikasi lain?
+          <br className="hidden sm:inline" />
+          Di Nugget Nihongo, kami tidak meminta Anda menghafal membabi buta. Kami merancang alur belajar yang ramah kerja memori otak manusia, menghargai waktu istirahat Anda, dan membongkar tuntas titik-titik jebakan yang paling sering membingungkan penutur bahasa Indonesia.
         </p>
 
-        <div className="flex flex-wrap items-center gap-4 sm:gap-6 mt-6 pt-6 border-t border-border/60 text-xs sm:text-sm text-muted">
+        {/* 4 Human Learning Pillars */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 mt-6 pt-6 border-t border-border/60">
+          <div className="p-3.5 rounded-2xl bg-surface-2/60 border border-border/60 space-y-1.5">
+            <div className="flex items-center gap-2 text-amber-400 font-bold text-xs">
+              <Clock className="w-4 h-4 shrink-0" />
+              <span>Cukup 5–10 Menit</span>
+            </div>
+            <p className="text-xs text-muted leading-relaxed">
+              Belajar dalam sesi mikro sebelum tidur jauh lebih membekas daripada memaksakan 3 jam sekaligus di akhir pekan.
+            </p>
+          </div>
+
+          <div className="p-3.5 rounded-2xl bg-surface-2/60 border border-border/60 space-y-1.5">
+            <div className="flex items-center gap-2 text-emerald-400 font-bold text-xs">
+              <Heart className="w-4 h-4 shrink-0" />
+              <span>Bebas Rasa Malu</span>
+            </div>
+            <p className="text-xs text-muted leading-relaxed">
+              Tanpa papan peringkat publik kompetitif yang memicu kecemasan. Setiap orang berhak belajar dengan tempo amannya sendiri.
+            </p>
+          </div>
+
+          <div className="p-3.5 rounded-2xl bg-surface-2/60 border border-border/60 space-y-1.5">
+            <div className="flex items-center gap-2 text-blue-400 font-bold text-xs">
+              <Sparkles className="w-4 h-4 shrink-0" />
+              <span>Khas Orang Indonesia</span>
+            </div>
+            <p className="text-xs text-muted leading-relaxed">
+              Membedah tuntas kerancuan partikel (に vs で) dan nada intonasi yang tidak ada padanannya dalam bahasa ibu kita.
+            </p>
+          </div>
+
+          <div className="p-3.5 rounded-2xl bg-surface-2/60 border border-border/60 space-y-1.5">
+            <div className="flex items-center gap-2 text-purple-400 font-bold text-xs">
+              <Brain className="w-4 h-4 shrink-0" />
+              <span>Pengingat Tepat Waktu</span>
+            </div>
+            <p className="text-xs text-muted leading-relaxed">
+              Algoritma FSRS v4.5 memunculkan kembali materi tepat di saat memori mulai memudar, mengunci hafalan jangka panjang.
+            </p>
+          </div>
+        </div>
+
+        {/* Research Rigor Metric Anchors */}
+        <div className="flex flex-wrap items-center gap-4 sm:gap-6 mt-6 pt-5 border-t border-border/40 text-xs sm:text-sm text-muted">
           <div className="flex items-center gap-2">
             <ShieldCheck className="w-4 h-4 text-emerald-400 shrink-0" />
             <span>807+ Sitasi Ilmiah Terverifikasi</span>

@@ -12,6 +12,7 @@ export interface IrasutoyaAsset {
   titleJp: string;
   irasutoyaUrl: string;
   cdnUrl: string;
+  localUrl?: string;
   fallbackEmoji: string;
   aspectRatio?: '1:1' | '4:3' | '16:9';
 }
@@ -24,7 +25,8 @@ export const IRASUTOYA_CATALOG: Record<string, IrasutoyaAsset> = {
     titleId: 'Sensei Mengajar di Papan Tulis',
     titleJp: '先生・黒板・授業のイラスト',
     irasutoyaUrl: 'https://www.irasutoya.com/2013/03/blog-post_25.html',
-    cdnUrl: 'https://1.bp.blogspot.com/-8u5aK6_V4j0/UVJ1l50U5JI/AAAAAAAAPW4/R8nN4N3l9mQ/s400/sensei_kokuban.png',
+    cdnUrl: '/assets/illustrations/sensei-teaching.svg',
+    localUrl: '/assets/illustrations/sensei-teaching.svg',
     fallbackEmoji: '🧑‍🏫',
     aspectRatio: '1:1',
   },
@@ -34,7 +36,8 @@ export const IRASUTOYA_CATALOG: Record<string, IrasutoyaAsset> = {
     titleId: 'Sensei Memuji / Bahagia',
     titleJp: '褒める先生のイラスト',
     irasutoyaUrl: 'https://www.irasutoya.com/2016/11/blog-post_62.html',
-    cdnUrl: 'https://3.bp.blogspot.com/-F8E9pGz5Y1A/WCkX3a_v3jI/AAAAAAAA_Z0/fQvX5Fq9_5I5_W_y8_v9Y-h4XkQ3Y2J7QCLcB/s400/homeru_sensei.png',
+    cdnUrl: '/assets/illustrations/sensei-cheer.svg',
+    localUrl: '/assets/illustrations/sensei-cheer.svg',
     fallbackEmoji: '🙌',
     aspectRatio: '1:1',
   },
@@ -44,7 +47,8 @@ export const IRASUTOYA_CATALOG: Record<string, IrasutoyaAsset> = {
     titleId: 'Sensei Sedang Memikirkan Solusi',
     titleJp: '考える先生のイラスト',
     irasutoyaUrl: 'https://www.irasutoya.com/2014/08/blog-post_46.html',
-    cdnUrl: 'https://2.bp.blogspot.com/-9vU4b6J7Y_0/U-9j4F5yF0I/AAAAAAAAk7Y/uG3vX8y7W_Y/s400/kangaeru_sensei.png',
+    cdnUrl: '/assets/illustrations/sensei-welcome.svg',
+    localUrl: '/assets/illustrations/sensei-welcome.svg',
     fallbackEmoji: '🤔',
     aspectRatio: '1:1',
   },
@@ -54,7 +58,8 @@ export const IRASUTOYA_CATALOG: Record<string, IrasutoyaAsset> = {
     titleId: 'Pelajar Mandiri Sedang Tekun',
     titleJp: '勉強する学生のイラスト',
     irasutoyaUrl: 'https://www.irasutoya.com/2013/02/blog-post_22.html',
-    cdnUrl: 'https://3.bp.blogspot.com/-V9V_X3Y_7oQ/UR9J7X5F4YI/AAAAAAAAM6s/u7X5Y8_v4_Y/s400/benkyou_boy.png',
+    cdnUrl: '/assets/illustrations/senpai-study.svg',
+    localUrl: '/assets/illustrations/senpai-study.svg',
     fallbackEmoji: '📖',
     aspectRatio: '1:1',
   },
@@ -64,7 +69,8 @@ export const IRASUTOYA_CATALOG: Record<string, IrasutoyaAsset> = {
     titleId: 'Sensei Membungkuk Sopan (Ojigi)',
     titleJp: 'お辞儀・挨拶のイラスト',
     irasutoyaUrl: 'https://www.irasutoya.com/2013/01/blog-post_15.html',
-    cdnUrl: 'https://4.bp.blogspot.com/-m8Y9X_7_v4I/UPZ7X_5F4YI/AAAAAAAAM3s/uG7X5Y8_v4_Y/s400/ojigi_business.png',
+    cdnUrl: '/assets/illustrations/sensei-welcome.svg',
+    localUrl: '/assets/illustrations/sensei-welcome.svg',
     fallbackEmoji: '🙇',
     aspectRatio: '1:1',
   },
@@ -250,7 +256,8 @@ export const IRASUTOYA_CATALOG: Record<string, IrasutoyaAsset> = {
     titleId: 'Tunas Baru Kanji (Benih Pertama)',
     titleJp: '植物の双葉・芽のイラスト',
     irasutoyaUrl: 'https://www.irasutoya.com/2013/04/blog-post_2.html',
-    cdnUrl: 'https://2.bp.blogspot.com/-t8Y9X_7_v4I/UWZ7X_5F4YI/AAAAAAAAP3s/uG7X5Y8_v4_Y/s400/futaba_plant.png',
+    cdnUrl: '/assets/illustrations/garden-sprout.svg',
+    localUrl: '/assets/illustrations/garden-sprout.svg',
     fallbackEmoji: '🌱',
     aspectRatio: '1:1',
   },
@@ -260,7 +267,8 @@ export const IRASUTOYA_CATALOG: Record<string, IrasutoyaAsset> = {
     titleId: 'Bunga Sakura Mekar Sempurna (Kanji Melekat)',
     titleJp: '満開の桜の花のイラスト',
     irasutoyaUrl: 'https://www.irasutoya.com/2013/03/blog-post_89.html',
-    cdnUrl: 'https://3.bp.blogspot.com/-u8Y9X_7_v4I/UVZ7X_5F4YI/AAAAAAAAPxs/uG7X5Y8_v4_Y/s400/sakura_mankai.png',
+    cdnUrl: '/assets/illustrations/garden-bloom.svg',
+    localUrl: '/assets/illustrations/garden-bloom.svg',
     fallbackEmoji: '🌸',
     aspectRatio: '1:1',
   },
@@ -270,7 +278,8 @@ export const IRASUTOYA_CATALOG: Record<string, IrasutoyaAsset> = {
     titleId: 'Menyiram Tanaman Memori FSRS',
     titleJp: 'ジョウロで水をあげるイラスト',
     irasutoyaUrl: 'https://www.irasutoya.com/2014/06/blog-post_67.html',
-    cdnUrl: 'https://4.bp.blogspot.com/-a8Y9X_7_v4I/U5z7X_5F4YI/AAAAAAAAh3s/uG7X5Y8_v4_Y/s400/mizuyari_jouro.png',
+    cdnUrl: '/assets/illustrations/garden-sprout.svg',
+    localUrl: '/assets/illustrations/garden-sprout.svg',
     fallbackEmoji: '💧',
     aspectRatio: '1:1',
   },
@@ -290,7 +299,8 @@ export const IRASUTOYA_CATALOG: Record<string, IrasutoyaAsset> = {
     titleId: 'Daruma: Bangkit Kembali (七転び八起き)',
     titleJp: '七転び八起き・だるまのイラスト',
     irasutoyaUrl: 'https://www.irasutoya.com/2013/01/blog-post_3.html',
-    cdnUrl: 'https://2.bp.blogspot.com/-d8Y9X_7_v4I/UPZ7X_5F4YI/AAAAAAAAMXs/uG7X5Y8_v4_Y/s400/daruma_red.png',
+    cdnUrl: '/assets/illustrations/daruma-recovery.svg',
+    localUrl: '/assets/illustrations/daruma-recovery.svg',
     fallbackEmoji: '🔴',
     aspectRatio: '1:1',
   },
@@ -300,7 +310,8 @@ export const IRASUTOYA_CATALOG: Record<string, IrasutoyaAsset> = {
     titleId: 'Stempel Hanko Taihen Yoku Dekimashita',
     titleJp: 'たいへんよくできましたのスタンプのイラスト',
     irasutoyaUrl: 'https://www.irasutoya.com/2013/02/blog-post_78.html',
-    cdnUrl: 'https://3.bp.blogspot.com/-g8Y9X_7_v4I/URZ7X_5F4YI/AAAAAAAAMts/uG7X5Y8_v4_Y/s400/stamp_taihen_yoku_dekimashita.png',
+    cdnUrl: '/assets/illustrations/hanko-excellent.svg',
+    localUrl: '/assets/illustrations/hanko-excellent.svg',
     fallbackEmoji: '💮',
     aspectRatio: '1:1',
   },
@@ -310,7 +321,8 @@ export const IRASUTOYA_CATALOG: Record<string, IrasutoyaAsset> = {
     titleId: 'Kusudama Perayaan Lulus / Sukses',
     titleJp: '割れるくす玉・祝のイラスト',
     irasutoyaUrl: 'https://www.irasutoya.com/2013/03/blog-post_11.html',
-    cdnUrl: 'https://4.bp.blogspot.com/-i8Y9X_7_v4I/UVZ7X_5F4YI/AAAAAAAAPWs/uG7X5Y8_v4_Y/s400/kusudama_iwai.png',
+    cdnUrl: '/assets/illustrations/kusudama.svg',
+    localUrl: '/assets/illustrations/kusudama.svg',
     fallbackEmoji: '🎊',
     aspectRatio: '1:1',
   },
@@ -322,7 +334,8 @@ export const IRASUTOYA_CATALOG: Record<string, IrasutoyaAsset> = {
     titleId: 'Ruang Tatami Tradisional Tenang & Bersih',
     titleJp: '和室・畳の部屋のイラスト',
     irasutoyaUrl: 'https://www.irasutoya.com/2013/10/blog-post_15.html',
-    cdnUrl: 'https://1.bp.blogspot.com/-z8Y9X_7_v4I/UmZ7X_5F4YI/AAAAAAAAdts/uG7X5Y8_v4_Y/s400/washitsu_tatami.png',
+    cdnUrl: '/assets/illustrations/sensei-tea.svg',
+    localUrl: '/assets/illustrations/sensei-tea.svg',
     fallbackEmoji: '🍵',
     aspectRatio: '16:9',
   },
@@ -332,16 +345,22 @@ export const IRASUTOYA_CATALOG: Record<string, IrasutoyaAsset> = {
  * Helper to fetch asset by ID or safe fallback
  */
 export function getIrasutoyaAsset(id: string): IrasutoyaAsset {
-  return (
-    IRASUTOYA_CATALOG[id] || {
-      id,
-      category: 'mascot',
-      titleId: 'Ilustrasi Jepang',
-      titleJp: '日本のイラスト',
-      irasutoyaUrl: 'https://www.irasutoya.com/',
-      cdnUrl: '',
-      fallbackEmoji: '🍙',
-      aspectRatio: '1:1',
-    }
-  );
+  const asset = IRASUTOYA_CATALOG[id];
+  if (asset) {
+    return {
+      ...asset,
+      cdnUrl: asset.localUrl || asset.cdnUrl,
+    };
+  }
+  return {
+    id,
+    category: 'mascot',
+    titleId: 'Ilustrasi Jepang',
+    titleJp: '日本のイラスト',
+    irasutoyaUrl: 'https://www.irasutoya.com/',
+    cdnUrl: '/assets/illustrations/sensei-welcome.svg',
+    localUrl: '/assets/illustrations/sensei-welcome.svg',
+    fallbackEmoji: '🍙',
+    aspectRatio: '1:1',
+  };
 }

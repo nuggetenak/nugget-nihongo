@@ -30,7 +30,7 @@ export const BottomNav: React.FC = () => {
     return null;
   }
 
-  // 5-Tab Core Navigation Architecture
+  // 5-Tab Core Navigation Architecture (Sovereign Mobile-First Model)
   const items: Array<{
     id: AppState['activeTab'];
     label: string;
@@ -44,14 +44,8 @@ export const BottomNav: React.FC = () => {
       isActive: activeTab === 'home',
     },
     {
-      id: 'quiz',
-      label: 'Kuis',
-      icon: <Layers className="w-5 h-5" />,
-      isActive: activeTab === 'quiz',
-    },
-    {
       id: 'kebun',
-      label: 'Review',
+      label: 'Ulas',
       icon: <Sprout className="w-5 h-5" />,
       isActive: activeTab === 'kebun',
     },
@@ -59,13 +53,19 @@ export const BottomNav: React.FC = () => {
       id: 'materi',
       label: 'Dojo',
       icon: <BookOpen className="w-5 h-5" />,
-      isActive: activeTab === 'materi' || activeTab === 'choukai',
+      isActive: activeTab === 'materi' || activeTab === 'choukai' || activeTab === 'quiz',
     },
     {
       id: 'sensei',
       label: 'Sensei',
       icon: <Sparkles className="w-5 h-5" />,
       isActive: activeTab === 'sensei',
+    },
+    {
+      id: 'settings',
+      label: 'Akun',
+      icon: <User className="w-5 h-5" />,
+      isActive: activeTab === 'settings' || activeTab === 'about' || activeTab === 'methodology',
     },
   ];
 

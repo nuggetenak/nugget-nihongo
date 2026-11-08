@@ -37,6 +37,7 @@ import { ExamLmsHub } from '../components/exercise/ExamLmsHub';
 import { CbtRunnerScreen } from '../components/exercise/CbtRunnerScreen';
 import { useExerciseStore } from '../store/useExerciseStore';
 import { IrasutoyaImage } from '../components/common/IrasutoyaImage';
+import { cleanOptionText } from '../lib/curriculum/lessonContentAdapter';
 
 export const QuizPage: React.FC = () => {
   const {
@@ -958,7 +959,7 @@ export const QuizPage: React.FC = () => {
                               {idx + 1}
                             </span>
                             <span className={`whitespace-normal break-words leading-snug ${isJp ? 'font-japanese text-sm sm:text-base font-bold' : 'font-sans text-sm sm:text-base font-semibold text-text'}`}>
-                              {opt}
+                              {cleanOptionText(opt)}
                             </span>
                           </div>
                           {feedback && isCorrect && <Check className="w-4 h-4 text-emerald-400 shrink-0" />}

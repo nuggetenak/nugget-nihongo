@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" fill="none" role="img" aria-label="Sensei Menikmati Teh Hijau dan Istirahat">
+  <defs>
+    <linearGradient id="bgGlowT" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f0fdf4" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#ecfeff" stop-opacity="0.6"/>
+    </linearGradient>
+    <linearGradient id="skinT" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffedd5"/>
+      <stop offset="100%" stop-color="#fed7aa"/>
+    </linearGradient>
+    <linearGradient id="robeT" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#15803d"/>
+      <stop offset="100%" stop-color="#166534"/>
+    </linearGradient>
+    <filter id="softShadowT" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#000000" flood-opacity="0.1"/>
+    </filter>
+  </defs>
+
+  <!-- Ambient Backdrop Circle -->
+  <circle cx="120" cy="120" r="108" fill="url(#bgGlowT)"/>
+
+  <!-- Steam & Zen Swirls -->
+  <path d="M166 128 Q170 120 166 114 Q162 108 168 102" stroke="#86efac" stroke-width="2.5" stroke-linecap="round" fill="none" opacity="0.7"/>
+  <path d="M174 126 Q178 118 174 112 Q170 106 176 100" stroke="#86efac" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.6"/>
+
+  <!-- Character Group -->
+  <g filter="url(#softShadowT)">
+    <!-- Body / Green Kimono Yukata -->
+    <path d="M74 182 C74 150 94 140 120 140 C146 140 166 150 166 182 L172 234 L68 234 Z" fill="url(#robeT)"/>
+    <!-- Kimono Collar Cross -->
+    <path d="M104 140 L120 174 L136 140" stroke="#bbf7d0" stroke-width="5" stroke-linecap="round" fill="none"/>
+    <path d="M120 174 L114 186" stroke="#bbf7d0" stroke-width="4" stroke-linecap="round"/>
+
+    <!-- Left Hand Holding Green Tea Yunomi Cup -->
+    <rect x="156" y="142" width="22" height="26" rx="4" fill="#fef08a" stroke="#ca8a04" stroke-width="1.5"/>
+    <ellipse cx="167" cy="142" rx="11" ry="3" fill="#15803d"/>
+    <!-- Fingers wrapping cup -->
+    <ellipse cx="156" cy="154" rx="6" ry="7" fill="url(#skinT)"/>
+    <ellipse cx="178" cy="154" rx="5" ry="6" fill="url(#skinT)"/>
+
+    <!-- Right Hand Holding Dango Skewer (🍡) -->
+    <!-- Bamboo stick -->
+    <line x1="60" y1="126" x2="88" y2="168" stroke="#a16207" stroke-width="2.5" stroke-linecap="round"/>
+    <!-- 3 Dango Balls: Pink, White, Green -->
+    <circle cx="64" cy="132" r="6" fill="#f472b6"/>
+    <circle cx="72" cy="144" r="6" fill="#ffffff" stroke="#fed7aa" stroke-width="1"/>
+    <circle cx="80" cy="156" r="6" fill="#4ade80"/>
+    <!-- Hand holding skewer -->
+    <ellipse cx="88" cy="168" rx="7" ry="7" fill="url(#skinT)"/>
+
+    <!-- Neck -->
+    <rect x="111" y="122" width="18" height="22" rx="4" fill="url(#skinT)"/>
+
+    <!-- Head -->
+    <ellipse cx="120" cy="90" rx="33" ry="35" fill="url(#skinT)"/>
+
+    <!-- Hair -->
+    <path d="M88 84 C88 56 102 42 120 42 C138 42 152 56 152 84 C152 64 140 52 120 52 C100 52 88 66 88 84 Z" fill="#1c1917"/>
+    <path d="M96 64 Q110 54 124 64 Q138 58 146 72 Q136 66 124 72 Q112 62 96 64 Z" fill="#1c1917"/>
+
+    <!-- Eyebrows (Content, gentle) -->
+    <path d="M102 76 Q108 72 115 76" stroke="#292524" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M125 76 Q132 72 138 76" stroke="#292524" stroke-width="2.5" stroke-linecap="round"/>
+
+    <!-- Eyes (Content, relaxing eyes ˘‿˘) -->
+    <path d="M101 86 Q108 92 115 86" stroke="#1c1917" stroke-width="3" stroke-linecap="round" fill="none"/>
+    <path d="M125 86 Q132 92 139 86" stroke="#1c1917" stroke-width="3" stroke-linecap="round" fill="none"/>
+
+    <!-- Glasses -->
+    <rect x="96" y="80" width="20" height="15" rx="4" stroke="#d97706" stroke-width="2.5" fill="none" opacity="0.9"/>
+    <rect x="124" y="80" width="20" height="15" rx="4" stroke="#d97706" stroke-width="2.5" fill="none" opacity="0.9"/>
+    <line x1="116" y1="87" x2="124" y2="87" stroke="#d97706" stroke-width="2.5"/>
+
+    <!-- Cheeks (Peaceful pink) -->
+    <ellipse cx="98" cy="96" rx="6" ry="4" fill="#f43f5e" opacity="0.4"/>
+    <ellipse cx="142" cy="96" rx="6" ry="4" fill="#f43f5e" opacity="0.4"/>
+
+    <!-- Nose -->
+    <path d="M120 91 Q122 96 119 98" stroke="#ea580c" stroke-width="2" stroke-linecap="round" fill="none"/>
+
+    <!-- Peaceful Smile -->
+    <path d="M112 104 Q120 112 128 104" stroke="#b91c1c" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+  </g>
+</svg>

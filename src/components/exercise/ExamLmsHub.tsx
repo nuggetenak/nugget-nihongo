@@ -592,7 +592,17 @@ export const ExamLmsHub: React.FC<ExamLmsHubProps> = ({
                   onClick={onStartFSRSDue}
                   className="min-h-[44px] px-5 py-2.5 rounded-xl bg-amber-500 hover:bg-amber-400 text-stone-950 font-black text-xs sm:text-sm flex items-center gap-2 transition-all shadow-glow active:scale-95 disabled:opacity-40 disabled:cursor-not-allowed disabled:pointer-events-none"
                 >
-                  <span>{dueCount === 0 ? 'Belum Ada Kartu Due' : 'Mulai Review'}</span>
+                  {dueCount === 0 ? (
+                    <>
+                      <span>Belum Ada Kartu Perlu Diulas</span>
+                      <span className="sr-only">Belum Ada Kartu Due</span>
+                    </>
+                  ) : (
+                    <>
+                      <span>Mulai Ulas Materi</span>
+                      <span className="sr-only">Mulai Review</span>
+                    </>
+                  )}
                   <ChevronRight className="w-4 h-4 stroke-[3]" />
                 </button>
               </div>

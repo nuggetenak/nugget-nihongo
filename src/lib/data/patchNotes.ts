@@ -22,13 +22,13 @@ export const PATCH_NOTES_HISTORY: PatchNote[] = [
     releaseName: 'Shin-Nihongo: Sovereign Pedagogical Zenith & Autonomous Mastery',
     date: '8 November 2026',
     type: 'major',
-    friendlySummary: 'Rilis monumental v24.0.0 menandai pencapaian puncak "Shin-Nihongo" melalui penuntasan audit forensik menyeluruh Siklus V (52 Passes, 15 Klaster Fungsional, dan 129 Test Suites cumulative 100% green). Menyatukan seluruh pilar kurikulum JLPT N5–N1, JFT-Basic A1–A2, 19 Sektor SSW Vokasional, dan Seikatsu Living in Japan dengan validasi swarm 200 persona pemelajar Indonesia, mesin retensi memori FSRS v4.5 dual-track [S_ortho, S_audio], kanvas kaligrafi kanji Discrete Fréchet interaktif Retina DPI dengan audio ZzFX prosedural, sinkronisasi data local-first TinyBase IndexedDB ke Supabase Cloud, dan kepatuhan penuh Google Core Web Vitals.',
+    friendlySummary: 'Pembaruan besar v24.0.0 menghadirkan pengalaman belajar bahasa Jepang yang jauh lebih nyaman, tenang, dan masuk akal bagi orang Indonesia. Alur membaca materi kini menyatu mulus tanpa ribet klik tab, pilihan kuis dan tes adaptif (CAT) bersih dari tanda kurung aneh, latihan menulis kanji langsung di layar ponsel, serta penyimpanan data offline yang aman di segala kondisi sinyal.',
     highlights: [
-      'Pilar 1 — 200 Personas Swarm Simulation: Pengujian komprehensif 200 persona pemelajar Indonesia melintasi 4 pilar kurikulum, 8 kelompok dialek/substratum L1, kondisi konektivitas ladang/kapal 2G/offline gemba, dan 179 tipe ponsel cerdas dengan hasil 100% kelulusan tanpa kendala blocking.',
-      'Pilar 2 — Dual-Track FSRS Memory Retention & Micro-Session SLA: Mesin memori adaptif [S_ortho, S_audio] dengan kopling lintas-modalitas (alpha=0.25, beta=0.65), modulasi latensi refleks Phi(Delta t), dan koreografi 4 fase micro-session (5-7 menit) berkapasitas Cowan K=4.',
-      'Pilar 3 — Kanvas Kaligrafi Kanji Touch & Audio Prosedural ZzFX: Kanvas menulis kanji berbasis Pointer Events & Retina DPI dengan normalisasi geometri KanjiVG XML, penilaian akurasi Discrete Fréchet (>= 80%), audio procedural zero-asset ZzFX, dan kartu sertifikat kelulusan Goukaku.',
-      'Pilar 4 — Sinkronisasi Multi-Tab Broadcast & TinyBase CRDT: Sinkronisasi offline-first IndexedDB dengan daemon multi-tab broadcast channel, rekonsiliasi vektor bebas konflik ke Supabase Cloud, dan pertahanan eviksi kuota peramban darurat.',
-      'Pilar 5 — Keamanan Berlapis, Kepatuhan Core Web Vitals & Kanal Resmi Terverifikasi: Sanitasi input XSS menyeluruh, pengamanan 22 kebijakan Supabase RLS (SELECT auth.uid()), skor LCP/CLS/INP/TTFB hijau, serta portal komunitas resmi 𝕏 (@NuggetNihongo), Trakteer (trakteer.id/nugget-nihongo), dan nuggetnihongo@gmail.com.',
+      'Pilar 1 — Uji Nyata 200 Persona Indonesia: Teruji tuntas untuk berbagai profil pemelajar Indonesia (pekerja SSW Kaigo, manufaktur, mahasiswa, dan perantau) di berbagai kondisi sinyal minim dan 179 tipe smartphone tanpa kendala teknis.',
+      'Pilar 2 — Alur Materi Mengalir & Pengingat Pintar FSRS: Materi belajar kini menyatu dalam satu alur membaca yang nyaman (tata bahasa → kosakata → tips jebakan → kuis pemahaman) dengan jadwal pengulangan cerdas FSRS agar tidak mudah lupa.',
+      'Pilar 3 — Kanvas Tulis Kanji di Layar Ponsel: Latihan menulis kanji langsung dengan jari di layar ponselmu dengan panduan goresan langkah-demi-langkah, efek audio prosedural ZzFX yang menyenangkan, dan kartu sertifikat kelulusan Goukaku.',
+      'Pilar 4 — Aman Digunakan Offline: Progres belajarmu tersimpan otomatis di perangkat secara lokal (IndexedDB) dan tersinkronisasi mulus ke cloud tanpa khawatir kehilangan data saat kuota habis atau sinyal putus.',
+      'Pilar 5 — Pilihan Kuis Bersih & Komunitas Nyaman: Opsi kuis dan tes adaptif (CAT) bebas dari tanda kurung atau pilihan aneh, tanpa papan peringkat publik yang membuat cemas, serta didukung kanal resmi 𝕏 (@NuggetNihongo) dan Trakteer.',
     ],
     details: [
       {

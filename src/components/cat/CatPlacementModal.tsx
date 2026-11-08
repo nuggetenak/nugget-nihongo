@@ -26,6 +26,7 @@ import {
   calculateCATSEM,
   shouldStopCAT,
   bridgeCATResultToCurriculum,
+  cleanCATOptionText,
   CAT_MAX_QUESTIONS,
   CAT_MIN_QUESTIONS,
   CATQuestion,
@@ -397,13 +398,15 @@ export const CatPlacementModal: React.FC<CatPlacementModalProps> = ({ isOpen, on
                       key={idx}
                       disabled={isAnswered}
                       onClick={() => handleSelectOption(idx)}
-                      className={`w-full p-3.5 rounded-2xl border text-left text-xs sm:text-sm transition-all flex items-center justify-between gap-3 active:scale-98 ${btnStyle}`}
+                      className={`w-full p-3.5 rounded-2xl border text-left text-xs sm:text-sm transition-all flex items-center justify-between gap-3 min-h-[48px] active:scale-98 ${btnStyle}`}
                     >
                       <div className="flex items-center gap-3 min-w-0">
                         <span className="w-6 h-6 rounded-lg bg-surface-3/80 font-mono text-xs flex items-center justify-center shrink-0 border border-accent/10">
                           {String.fromCharCode(65 + idx)}
                         </span>
-                        <span className="font-jp break-words whitespace-normal leading-snug" lang="ja">{option}</span>
+                        <span className="font-jp break-words whitespace-normal leading-snug" lang="ja">
+                          {cleanCATOptionText(option)}
+                        </span>
                       </div>
 
                       {isAnswered && isCorrect && (

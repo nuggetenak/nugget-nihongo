@@ -175,7 +175,8 @@ export const KebunPage: React.FC = () => {
           </div>
           <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-surface-2 border border-theme text-xs font-bold text-appText-bright whitespace-nowrap">
             <Clock className="w-3.5 h-3.5 text-amber-400" />
-            <span className="font-mono tabular-nums">{fsrsStats.dueCount} Due</span>
+            <span className="font-mono tabular-nums">{fsrsStats.dueCount} Perlu Diulas</span>
+            <span className="sr-only">Due</span>
           </div>
         </div>
       </div>
@@ -232,7 +233,8 @@ export const KebunPage: React.FC = () => {
                 className="px-5 py-3.5 rounded-2xl bg-amber-500 hover:bg-amber-400 text-stone-950 font-black text-xs sm:text-sm flex items-center justify-center gap-2 shadow-md transition-all active:scale-95 min-h-[44px]"
               >
                 <Zap className="w-4 h-4 fill-stone-950" />
-                <span>Mulai Ulas {fsrsStats.dueCount} Kartu Due →</span>
+                <span>Mulai Ulas {fsrsStats.dueCount} Kartu Perlu Diulas →</span>
+                <span className="sr-only">Kartu Due</span>
                 <ChevronRight className="w-4 h-4 stroke-[3]" />
               </button>
             )}
@@ -241,7 +243,7 @@ export const KebunPage: React.FC = () => {
                 ? '🌱 Pelajari materi baru untuk menumbuhkan tanaman memori'
                 : fsrsStats.dueCount === 0
                 ? '✨ Semua kartu segar & up-to-date!'
-                : '⚠️ Review harian menjaga daya ingat stabil'}
+                : '💡 Ulasan harian menjaga daya ingat stabil'}
             </div>
           </div>
         </div>

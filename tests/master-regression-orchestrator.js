@@ -138,7 +138,15 @@ const SUITES = [
   { name: 'Siklus V Pass 49: Telemetry, Error Reporter & Core Web Vitals', file: 'tests/test-s5-pass49-telemetry-webvitals.js' },
   { name: 'Siklus V Pass 50: Security Hardening & Supabase RLS Audit', file: 'tests/test-s5-pass50-security-rls-hardening.js' },
   { name: 'Siklus V Pass 51: Production Vite Bundle Optimization & PWA Service Worker Cache', file: 'tests/test-s5-pass51-bundle-pwa-cache.js' },
-  { name: 'Siklus V Pass 52: Grand Master Synthesis & Release v24.0.0 (Zenith & Shin-Nihongo)', file: 'tests/test-s5-pass52-zenith-synthesis.js' }
+  { name: 'Siklus V Pass 52: Grand Master Synthesis & Release v24.0.0 (Zenith & Shin-Nihongo)', file: 'tests/test-s5-pass52-zenith-synthesis.js' },
+  { name: 'Siklus VI Pass 1: Local Irasutoya Vector Visual Architecture & Mobile Presence', file: 'tests/test-s6-pass1-irasutoya-local-mobile.js' },
+  { name: 'Siklus VI Pass 2: Nav Shell Declutter & Single-Action Sovereign Home', file: 'tests/test-s6-pass2-nav-shell-single-action-home.js' },
+  { name: 'Siklus VI Pass 3: Lapisan 2 Single-Flow Feed & Study Studio QA', file: 'tests/test-s6-pass3-lapisan2-single-flow-lesson.js' },
+  { name: 'Siklus VI Pass 4: Clean Quiz Distractors (Anti-Kurung & Anti-Slash)', file: 'tests/test-s6-pass4-quiz-distractors-clean.js' },
+  { name: 'Siklus VI Pass 5: Official Community Portals & Anti-Fake Upvotes', file: 'tests/test-s6-pass5-community-official-portals.js' },
+  { name: 'Siklus VI Pass 6: Eradication of Leaked <b> Tags & Foreign Copy', file: 'tests/test-s6-pass6-b-tag-foreign-copy-purged.js' },
+  { name: 'Siklus VI Pass 7: CAT Diagnostic Homogeneous 4-Distractor Revitalization', file: 'tests/test-s6-pass7-cat-slot-distractors.js' },
+  { name: 'Siklus VI Pass 8: Humanized Methodology & Release Notes Redesign', file: 'tests/test-s6-pass8-methodology-changelog-humanized.js' }
 ];
 
 console.log('╔══════════════════════════════════════════════════════════════════╗');

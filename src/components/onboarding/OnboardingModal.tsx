@@ -31,6 +31,7 @@ import {
   finalizeCATResult,
   calculateCATSEM,
   shouldStopCAT,
+  cleanCATOptionText,
   CAT_MAX_QUESTIONS,
   CAT_MIN_QUESTIONS,
   CATQuestion,
@@ -542,14 +543,14 @@ export const OnboardingModal: React.FC<OnboardingModalProps> = ({ isOpen, onClos
                               type="button"
                               disabled={catIsAnswered}
                               onClick={() => handleCatSelectOption(idx)}
-                              className={`w-full p-3 rounded-xl border text-left text-xs sm:text-sm transition-all flex items-center justify-between gap-3 min-h-[44px] active:scale-98 ${style}`}
+                              className={`w-full p-3 rounded-xl border text-left text-xs sm:text-sm transition-all flex items-center justify-between gap-3 min-h-[48px] active:scale-98 ${style}`}
                             >
                               <div className="flex items-center gap-2.5 min-w-0">
                                 <span className="w-5 h-5 rounded-md bg-surface-3 font-mono text-xs flex items-center justify-center shrink-0">
                                   {String.fromCharCode(65 + idx)}
                                 </span>
                                 <span className="font-jp break-words whitespace-normal leading-snug" lang="ja">
-                                  {opt}
+                                  {cleanCATOptionText(opt)}
                                 </span>
                               </div>
                               {catIsAnswered && isCorrect && <CheckCircle2 className="w-4 h-4 text-emerald-700 dark:text-emerald-400 shrink-0" />}

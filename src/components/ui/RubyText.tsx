@@ -45,8 +45,9 @@ export const RubyText: React.FC<RubyTextProps> = ({
 }) => {
   if (!text) return null;
 
-  let targetText = text;
-  let targetHint = furigana;
+  // Clean raw HTML bold tags so they never leak as unrendered text in Ruby annotations
+  let targetText = typeof text === 'string' ? text.replace(/<\/?b>/gi, '') : text;
+  let targetHint = typeof furigana === 'string' ? furigana.replace(/<\/?b>/gi, '') : furigana;
 
   // Auto-recovery for inverted fields: if text is purely kana but furigana holds Kanji
   if (furigana && containsKanji(furigana) && !containsKanji(text)) {
