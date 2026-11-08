@@ -148,7 +148,8 @@ const SUITES = [
   { name: 'Siklus VI Pass 7: CAT Diagnostic Homogeneous 4-Distractor Revitalization', file: 'tests/test-s6-pass7-cat-slot-distractors.js' },
   { name: 'Siklus VI Pass 8: Humanized Methodology & Release Notes Redesign', file: 'tests/test-s6-pass8-methodology-changelog-humanized.js' },
   { name: 'Siklus VI Pass 9: Navigation Ergonomics, Single-Accordion & Scroll Restoration', file: 'tests/test-s6-pass9-ux-refinements-scroll-nav.js' },
-  { name: 'Siklus VI Pass 10: Pure Practice Dojo, Unlocked Flashcard Access & Sticky Sub-Tabs', file: 'tests/test-s6-pass10-dojo-ulas-flashcard-sticky.js' }
+  { name: 'Siklus VI Pass 10: Pure Practice Dojo, Unlocked Flashcard Access & Sticky Sub-Tabs', file: 'tests/test-s6-pass10-dojo-ulas-flashcard-sticky.js' },
+  { name: 'Siklus VI Pass 11: Belajar <-> Ulas <-> Dojo Tri-Connection Verification', file: 'tests/test-s6-pass11-belajar-ulas-dojo-tri-connection.js' }
 ];
 
 console.log('╔══════════════════════════════════════════════════════════════════╗');

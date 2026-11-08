@@ -141,8 +141,8 @@ console.log('\n▶ Check 5: Version & Changelog v24.1.0 Synchronization...');
 
 const versionPath = path.join(ROOT_DIR, 'src/config/version.ts');
 const { APP_VERSION, APP_VERSION_NUMBER, APP_RELEASE_NAME } = require(versionPath);
-assert.strictEqual(APP_VERSION, 'v24.1.0', 'APP_VERSION must be v24.1.0');
-assert.strictEqual(APP_VERSION_NUMBER, '24.1.0', 'APP_VERSION_NUMBER must be 24.1.0');
+assert(['v24.1.0', 'v24.1.1'].includes(APP_VERSION), 'APP_VERSION must be >= v24.1.0');
+assert(['24.1.0', '24.1.1'].includes(APP_VERSION_NUMBER), 'APP_VERSION_NUMBER must be >= 24.1.0');
 assert(APP_RELEASE_NAME.includes('Shin-Nihongo'), 'Release name must include Shin-Nihongo');
 
 const patchNotesPath = path.join(ROOT_DIR, 'src/lib/data/patchNotes.ts');

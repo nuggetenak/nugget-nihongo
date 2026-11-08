@@ -43,6 +43,7 @@ export const Header: React.FC<HeaderProps> = ({
     openFeatureGuide,
     setActiveTab,
     openToolbox,
+    setSelectedLevel,
   } = useAppStore();
   const { user } = useAuthStore();
   const { activeTrackId, setActiveTrack, trackProgress } = useCurriculumStore();
@@ -155,6 +156,9 @@ export const Header: React.FC<HeaderProps> = ({
 
   const handleSelectTrack = (trackId: TrackId, title: string) => {
     setActiveTrack(trackId);
+    if (['n5', 'n4', 'n3', 'n2', 'n1'].includes(trackId)) {
+      setSelectedLevel(trackId as any);
+    }
     setIsTrackPickerOpen(false);
     showToast(`Jalur aktif beralih ke ${title}`, '🇯🇵');
   };

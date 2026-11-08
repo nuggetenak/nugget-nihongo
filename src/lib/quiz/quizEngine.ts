@@ -28,6 +28,8 @@ export interface GenerateQuizOptions {
   panicScenarios?: PanicScenarioItem[];
   substratum?: L1Substratum;
   pitchType?: PitchAccentType;
+  cardsMap?: Record<string, { card: FSRSCard; source?: string; itemData?: any }>;
+  prioritizeLearned?: boolean;
 }
 
 // Utility to shuffle array
@@ -78,6 +80,17 @@ export function generateQuizQuestions(
   count = 10,
   options?: GenerateQuizOptions
 ): QuizQuestionItem[] {
+  // Prioritize words and grammar studied in Belajar if cardsMap is provided
+  const learnedIds = new Set(Object.keys(options?.cardsMap || {}));
+  const prioritize = <T extends { id: string }>(pool: T[]): T[] => {
+    if (!options?.prioritizeLearned || learnedIds.size === 0) return pool;
+    const learned = pool.filter((item) => learnedIds.has(item.id));
+    const others = pool.filter((item) => !learnedIds.has(item.id));
+    return [...shuffle(learned), ...shuffle(others)];
+  };
+
+  const prioritizedVocabs = prioritize(vocabPool);
+  const prioritizedGrammars = prioritize(grammarPool);
   if (mode === 'panic-recall') {
     const scenarios = options?.panicScenarios && options.panicScenarios.length > 0
       ? options.panicScenarios
@@ -106,6 +119,76 @@ export function generateQuizQuestions(
 
   if (mode === 'onomatopoeia') {
     return generatePainOnomatopoeiaQuestions(count);
+  }
+
+  if (mode === 'listening') {
+    // Generate authentic audio listening drill items (Menyimak Kilat)
+    const candidates: Array<{
+      jp: string;
+      id: string;
+      reading?: string;
+      target: NormalizedVocab | NormalizedGrammar;
+    }> = [];
+
+    for (const v of prioritizedVocabs) {
+      if (v.examples && v.examples.length > 0) {
+        for (const ex of v.examples) {
+          if (ex.jp && ex.id && ex.jp.length >= 6 && ex.jp.length <= 40) {
+            candidates.push({
+              jp: ex.jp.replace(/<[^>]*>/g, ''),
+              id: ex.id,
+              reading: v.reading,
+              target: v,
+            });
+          }
+        }
+      } else if (v.word && v.meaning) {
+        candidates.push({
+          jp: v.word,
+          id: v.meaning,
+          reading: v.reading,
+          target: v,
+        });
+      }
+    }
+
+    for (const g of prioritizedGrammars) {
+      if (g.examples && g.examples.length > 0) {
+        for (const ex of g.examples) {
+          if (ex.jp && ex.id && ex.jp.length >= 6 && ex.jp.length <= 45) {
+            candidates.push({
+              jp: ex.jp.replace(/<[^>]*>/g, ''),
+              id: ex.id,
+              target: g,
+            });
+          }
+        }
+      }
+    }
+
+    const shuffledCandidates = candidates.slice(0, count * 2);
+    const selected = shuffledCandidates.slice(0, count);
+
+    for (const item of selected) {
+      const otherCandidates = candidates.filter((c) => c.id !== item.id && c.jp !== item.jp);
+      const distractors = shuffle(otherCandidates).slice(0, 3).map((c) => c.id);
+      const optionsList = shuffle([item.id, ...distractors]);
+
+      questions.push({
+        id: `listen-${Date.now()}-${Math.random().toString(36).slice(2, 6)}`,
+        mode: 'listening',
+        prompt: '🎧 Dengarkan audio percakapan dan tentukan artinya:',
+        targetItem: item.target,
+        questionText: item.jp,
+        subText: 'Ketuk tombol audio untuk memutar ulang suara penutur asli',
+        correctAnswer: item.id,
+        options: optionsList,
+        explanation: `Audio kalimat yang diputar: "${item.jp}" (${item.id}).`,
+        level,
+      });
+    }
+
+    if (questions.length > 0) return questions;
   }
 
   const questions: QuizQuestionItem[] = [];
@@ -560,57 +643,120 @@ export function getFSRSDueCount(cardsMap: Record<string, { card: FSRSCard; sourc
  * Generate a smart FSRS Daily Review session (due cards prioritized first, then new items)
  */
 export function generateFSRSDueQuestions(
-  cardsMap: Record<string, { card: FSRSCard; source?: string }>,
+  cardsMap: Record<string, { card: FSRSCard; source?: string; itemData?: any }>,
   vocabPool: NormalizedVocab[],
   grammarPool: NormalizedGrammar[],
   level: JLPTLevel,
   count = 10
 ): QuizQuestionItem[] {
   const now = new Date();
-  const dueVocab: NormalizedVocab[] = [];
-  const otherVocab: NormalizedVocab[] = [];
+  const dueItems: Array<{ type: 'vocab' | 'grammar'; item: NormalizedVocab | NormalizedGrammar; record: any }> = [];
 
   const vocabMap = new Map<string, NormalizedVocab>();
-  for (const v of vocabPool) {
-    vocabMap.set(v.id, v);
+  for (const v of vocabPool || []) {
+    if (v?.id) vocabMap.set(v.id, v);
+    if (v?.word) vocabMap.set(v.word, v);
   }
 
-  // Find due vocabs
-  for (const [id, record] of Object.entries(cardsMap)) {
+  const grammarMap = new Map<string, NormalizedGrammar>();
+  for (const g of grammarPool || []) {
+    if (g?.id) grammarMap.set(g.id, g);
+    if (g?.pattern) grammarMap.set(g.pattern, g);
+  }
+
+  // Find due vocabs and grammar
+  for (const [id, record] of Object.entries(cardsMap || {})) {
+    if (!record?.card) continue;
+    const isDue = !record.card.due || new Date(record.card.due) <= now;
+    if (!isDue) continue;
+
+    // 1. Try vocabMap
     const v = vocabMap.get(id);
-    if (v && record?.card) {
-      if (!record.card.due || new Date(record.card.due) <= now) {
-        dueVocab.push(v);
-      }
+    if (v) {
+      dueItems.push({ type: 'vocab', item: v, record });
+      continue;
+    }
+
+    // 2. Try grammarMap
+    const g = grammarMap.get(id);
+    if (g) {
+      dueItems.push({ type: 'grammar', item: g, record });
+      continue;
+    }
+
+    // 3. Fallback based on record.source or record.itemData
+    if (record.source === 'grammar' || record.itemData?.formula || record.itemData?.patternLogic) {
+      const syntheticG: NormalizedGrammar = {
+        id,
+        pattern: record.itemData?.title || record.itemData?.pattern || id,
+        reading: '',
+        meaning: record.itemData?.meaning || record.itemData?.nuanceNotes || 'Pola tata bahasa penting',
+        level,
+        examples: record.itemData?.examples || [],
+      };
+      dueItems.push({ type: 'grammar', item: syntheticG, record });
+    } else {
+      const syntheticV: NormalizedVocab = {
+        id,
+        word: record.itemData?.word || id,
+        reading: record.itemData?.reading || id,
+        meaning: record.itemData?.meaning || 'Kosakata penting',
+        level,
+        examples: record.itemData?.exampleSentence ? [{ jp: record.itemData.exampleSentence.jp, id: record.itemData.exampleSentence.idText }] : [],
+      };
+      dueItems.push({ type: 'vocab', item: syntheticV, record });
     }
   }
 
-  for (const v of vocabPool) {
-    if (!dueVocab.some(dv => dv.id === v.id)) {
-      otherVocab.push(v);
-    }
-  }
-
-  // Combine due items first, fill remaining with others
+  const dueVocab = dueItems;
   if (dueVocab.length === 0) return [];
-  const targetPool = shuffle(dueVocab).slice(0, count);
+  const targetPool = shuffle(dueItems).slice(0, count);
   const questions: QuizQuestionItem[] = [];
 
-  for (const v of targetPool) {
-    const distractors = getVocabDistractors(v, vocabPool, 3);
-    const options = shuffle([v.meaning, ...distractors]);
-    questions.push({
-      id: `fsrs-${v.id}-${Date.now()}`,
-      mode: 'flashcard',
-      prompt: 'Review FSRS Harian (Ingat arti kata ini?):',
-      targetItem: v,
-      questionText: v.word,
-      subText: v.reading !== v.word ? v.reading : undefined,
-      correctAnswer: v.meaning,
-      options,
-      explanation: `Kata "${v.word}" (${v.reading}) berarti "${v.meaning}". ${v.examples[0] ? `Contoh: ${v.examples[0].jp}` : ''}`,
-      level,
-    });
+  for (const entry of targetPool) {
+    if (entry.type === 'vocab') {
+      const v = entry.item as NormalizedVocab;
+      const distractors = getVocabDistractors(v, vocabPool, 3);
+      const options = shuffle([v.meaning, ...distractors]);
+      questions.push({
+        id: `fsrs-v-${v.id}-${Date.now()}-${Math.random().toString(36).slice(2, 6)}`,
+        mode: 'flashcard',
+        prompt: 'Review FSRS Harian (Ingat arti kata ini?):',
+        targetItem: v,
+        questionText: v.word,
+        subText: v.reading !== v.word ? v.reading : undefined,
+        correctAnswer: v.meaning,
+        options,
+        explanation: `Kata "${v.word}" (${v.reading}) berarti "${v.meaning}". ${v.examples?.[0] ? `Contoh: ${v.examples[0].jp}` : ''}`,
+        level,
+      });
+    } else {
+      const g = entry.item as NormalizedGrammar;
+      const otherGrammars = (grammarPool || []).filter((x) => x.id !== g.id && x.meaning !== g.meaning);
+      const distractors = shuffle(otherGrammars).slice(0, 3).map((x) => x.meaning);
+      const fallbacks = [
+        'Menyatakan alasan atau sebab',
+        'Menunjukkan pergerakan atau arah',
+        'Mengungkapkan keinginan atau harapan',
+        'Menyatakan keharusan atau kewajiban',
+      ].filter((f) => f !== g.meaning);
+      while (distractors.length < 3 && fallbacks.length > 0) {
+        distractors.push(fallbacks.pop()!);
+      }
+      const options = shuffle([g.meaning, ...distractors]);
+      questions.push({
+        id: `fsrs-g-${g.id}-${Date.now()}-${Math.random().toString(36).slice(2, 6)}`,
+        mode: 'flashcard',
+        prompt: 'Review FSRS Pola Kalimat (Ingat fungsi pola ini?):',
+        targetItem: g,
+        questionText: g.pattern,
+        subText: 'Pola Tata Bahasa',
+        correctAnswer: g.meaning,
+        options,
+        explanation: `Pola "${g.pattern}" berarti "${g.meaning}". ${g.examples?.[0] ? `Contoh: ${g.examples[0].jp}` : ''}`,
+        level,
+      });
+    }
   }
 
   return questions;

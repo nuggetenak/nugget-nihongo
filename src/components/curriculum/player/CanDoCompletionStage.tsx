@@ -43,9 +43,35 @@ export const CanDoCompletionStage: React.FC<CanDoCompletionStageProps> = ({
 
   // Ticket T-48 & Ticket T-196: Eradicate Infinite XP Exploit & Implement Deduplicated Lesson Completion
   // Uses persistent completed lessons registry ('nn_completed_lesson_xp_ids') to ensure incrementXp(50) only fires once
+    // Ticket T-48 & Ticket T-196: Eradicate Infinite XP Exploit & Implement Deduplicated Lesson Completion
+  // Uses persistent completed lessons registry ('nn_completed_lesson_xp_ids') to ensure incrementXp(50) only fires once
   useEffect(() => {
     if (isPassed && lesson?.id && !awardedSet.has(lesson.id)) {
+      const effectiveVocab = (lesson.vocab_breakdown && lesson.vocab_breakdown.length > 0)
+        ? lesson.vocab_breakdown
+        : (lesson.vocab_ids || []);
+
+      const effectiveGrammar = (lesson.explanations && lesson.explanations.length > 0)
+        ? lesson.explanations
+        : (lesson.grammar_ids || []);
+
       completeLesson(lesson.id, lesson.grammar_ids || [], lesson.vocab_ids || []);
+      useAppStore.getState().injectLessonItemsToFSRS(effectiveGrammar, effectiveVocab);
+
+      try {
+        import('../../../lib/garden/gardenStore').then((m) => {
+          const garden = m.useGardenStore.getState();
+          const targetLevel = (lesson.unit_id?.includes('n4') ? 'n4' : lesson.unit_id?.includes('n3') ? 'n3' : 'n5') as any;
+          (lesson.vocab_breakdown || []).forEach((v: any) => {
+            if (v.word && /[\u4e00-\u9faf]/.test(v.word)) {
+              const match = v.word.match(/[\u4e00-\u9faf]/);
+              if (match) {
+                garden.seedPlant(match[0], v.reading || v.word, v.meaning || '', targetLevel);
+              }
+            }
+          });
+        }).catch(() => {});
+      } catch {}
     }
   }, [isPassed, lesson?.id, completedLessonIds, completeLesson]);
 

@@ -336,7 +336,21 @@ export const MateriHubPage: React.FC = () => {
   const handleBackToCatalog = () => {
     setActiveTool(null);
     setActiveStudio('kurikulum');
+    if (typeof window !== 'undefined') {
+      window.scrollTo({ top: 0, behavior: 'instant' });
+      document.documentElement.scrollTop = 0;
+      document.body.scrollTop = 0;
+    }
   };
+
+  // Instant scroll to top on activeTool transition
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      window.scrollTo({ top: 0, behavior: 'instant' });
+      document.documentElement.scrollTop = 0;
+      document.body.scrollTop = 0;
+    }
+  }, [activeTool]);
 
   // Keyboard 'Escape' and browser popstate event listener for clean back navigation
   useEffect(() => {
@@ -571,7 +585,8 @@ export const MateriHubPage: React.FC = () => {
                 </div>
               }
             >
-              <ChoukaiSimulatorPage />
+              {/* <ChoukaiSimulatorPage /> */}
+              <ChoukaiSimulatorPage onBack={handleBackToCatalog} />
             </Suspense>
           )}
 

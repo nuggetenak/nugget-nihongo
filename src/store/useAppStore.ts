@@ -366,9 +366,10 @@ export const useAppStore = create<AppState>((set, get) => ({
     const nowIso = new Date().toISOString();
     let updated = false;
 
-    vocabIds.forEach((vid) => {
-      if (!currentCards[vid]) {
-        currentCards[vid] = {
+    (vocabIds || []).forEach((vid) => {
+      const id = typeof vid === 'string' ? vid : vid?.id || vid?.word;
+      if (id && !currentCards[id]) {
+        currentCards[id] = {
           card: {
             due: nowIso,
             stability: 1.0,
@@ -380,14 +381,16 @@ export const useAppStore = create<AppState>((set, get) => ({
             state: 1,
           },
           source: 'vocab',
+          ...(typeof vid === 'object' ? { itemData: vid } : {}),
         };
         updated = true;
       }
     });
 
-    grammarIds.forEach((gid) => {
-      if (!currentCards[gid]) {
-        currentCards[gid] = {
+    (grammarIds || []).forEach((gid) => {
+      const id = typeof gid === 'string' ? gid : gid?.grammarId || gid?.id || gid?.pattern;
+      if (id && !currentCards[id]) {
+        currentCards[id] = {
           card: {
             due: nowIso,
             stability: 1.2,
@@ -399,6 +402,7 @@ export const useAppStore = create<AppState>((set, get) => ({
             state: 1,
           },
           source: 'grammar',
+          ...(typeof gid === 'object' ? { itemData: gid } : {}),
         };
         updated = true;
       }
@@ -424,6 +428,18 @@ export const useAppStore = create<AppState>((set, get) => ({
     set({ selectedLevel });
     if (typeof window !== 'undefined') {
       try { localStorage.setItem('nn_selected_level', selectedLevel); } catch {}
+      if (['n5', 'n4', 'n3', 'n2', 'n1'].includes(selectedLevel)) {
+        try {
+          localStorage.setItem('nn_active_curriculum_track', selectedLevel);
+          import('../lib/curriculum/curriculumStore')
+            .then((m) => {
+              if (m.useCurriculumStore.getState().activeTrackId !== selectedLevel) {
+                m.useCurriculumStore.getState().setActiveTrack(selectedLevel);
+              }
+            })
+            .catch(() => {});
+        } catch {}
+      }
     }
   },
   searchQuery: '',
@@ -432,6 +448,9 @@ export const useAppStore = create<AppState>((set, get) => ({
   // Deduplicated Lesson Completion (Ticket T-196)
   completedLessonIds: loadCompletedLessonIds(),
   completeLesson: (lessonId, grammarIds, vocabIds) => {
+    // Atomically inject FSRS cards (idempotent across repeated visits)
+    get().injectLessonItemsToFSRS(grammarIds, vocabIds);
+
     const { completedLessonIds } = get();
     if (completedLessonIds.includes(lessonId)) {
       return { awardedXp: 0, awardedWater: 0 };
@@ -446,9 +465,6 @@ export const useAppStore = create<AppState>((set, get) => ({
         localStorage.setItem('nn_completed_lesson_xp_ids', JSON.stringify(nextCompleted));
       } catch {}
     }
-
-    // Atomically inject FSRS cards
-    get().injectLessonItemsToFSRS(grammarIds, vocabIds);
 
     // Atomically increment XP (+50 XP)
     get().incrementXp(50);

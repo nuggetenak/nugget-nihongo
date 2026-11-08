@@ -18,6 +18,61 @@ export interface PatchNote {
 
 export const PATCH_NOTES_HISTORY: PatchNote[] = [
   {
+    version: 'v24.1.1',
+    releaseName: 'Shin-Nihongo: Belajar-Ulas-Dojo Tri-Connection',
+    date: '9 November 2026',
+    type: 'patch',
+    friendlySummary: 'Pembaruan v24.1.1 menuntaskan koneksi organik antara menu utama Belajar, Ulas (Kebun Review FSRS), dan Dojo (Sasana Latihan). Pelajaran yang dituntaskan di Belajar kini langsung menyuntikkan kosakata dan tata bahasa ke dalam kartu retensi FSRS dan menanam benih kanji di Kebun Kata. Level yang dipilih di Header kini otomatis sinkron secara dua arah ke Dojo dan Ulas. Review FSRS kini mengulas kartu kosakata maupun pola tata bahasa secara proporsional, dan sasana latihan mandiri di Dojo memprioritaskan kata yang telah kamu pelajari di Belajar.',
+    highlights: [
+      'Pilar 1 — Jembatan Organik Belajar ke Ulas FSRS: Menuntaskan pelajaran atau latihan di Belajar kini otomatis menyimpan kosakata & pola kalimat ke antrean memori FSRS serta menabur benih kanji di Kebun Kata.',
+      'Pilar 2 — Sinkronisasi Level Dua Arah: Pemilihan level JLPT N5–N1 di Header, Belajar, dan Dojo kini selalu berada dalam sinkronisasi sempurna tanpa desinkronisasi.',
+      'Pilar 3 — Sesi Review FSRS Mendukung Tata Bahasa: Mesin FSRS kini menguji pemahaman pola tata bahasa bersama kosakata harian, mencegah hilangnya kartu tata bahasa saat sesi review.',
+      'Pilar 4 — Latihan Dojo Berbasis Materi yang Dipelajari: Sasana latihan mandiri 6 mode di Dojo kini memprioritaskan kata dan kalimat dari pelajaran yang sudah kamu selesaikan.',
+      'Pilar 5 — Peningkatan Audio Menyimak & Navigasi Kembali: Menyimak Kilat kini memutar klip percakapan otentik, dan tombol Kembali pada Simulator Choukai mengembalikanmu ke katalog Dojo dengan mulus.',
+    ],
+    details: [
+      {
+        category: 'Pilar 1 — Jembatan Organik Belajar ke Ulas FSRS & Kebun Kata',
+        items: [
+          'Injeksi otomatis item kosakata (vocab_breakdown) dan tata bahasa (explanations) ke dalam FSRS cards saat pemelajar mencapai skor minimal 80% atau menyelesaikan tahap Tantangan Nyata.',
+          'Penaburan benih kanji otomatis ke Kebun Kata saat kosakata baru dipelajari di studio Belajar.',
+          'Pemberian +2 tetes air kebun dan +50 XP secara terproteksi dari eksploitasi ganda.',
+        ],
+      },
+      {
+        category: 'Pilar 2 — Sinkronisasi Level & Track Dua Arah (Header, Belajar, Dojo, Ulas)',
+        items: [
+          'Sinkronisasi aktif antara track kurikulum (useCurriculumStore) dan level aplikasi (useAppStore.selectedLevel).',
+          'Mengganti level di pemilih header langsung memperbarui materi latihan di Dojo dan filter di Kebun FSRS seketika.',
+          'Pencegahan terjadinya kondisi data level terisolasi pada perangkat mobile.',
+        ],
+      },
+      {
+        category: 'Pilar 3 — Integrasi Penuh Kartu Tata Bahasa pada Sesi Review FSRS',
+        items: [
+          'Pembaruan generateFSRSDueQuestions untuk memindai kartu kosakata dan pola tata bahasa secara simultan.',
+          'Pembuatan flashcard interaktif khusus pola kalimat lengkap dengan formula pembentukan dan contoh kalimat.',
+          'Pemuatan bank data lintas level (N5 & N4) sehingga kartu due dari level mana pun tetap dapat diulas.',
+        ],
+      },
+      {
+        category: 'Pilar 4 — Sasana Latihan Dojo Memprioritaskan Materi Belajar',
+        items: [
+          'Pengenalan opsi prioritizeLearned pada mesin pembuat soal kuis Dojo.',
+          'Kosakata dan pola yang telah dipelajari di Belajar kini otomatis tampil di urutan terdepan saat berlatih Pilihan Ganda, Susun Kalimat, Isian Rumpang, dan Flashcard.',
+        ],
+      },
+      {
+        category: 'Pilar 5 — Pembaruan Generator Menyimak Kilat & Navigasi Choukai',
+        items: [
+          'Mesin kuis kini memiliki generator khusus untuk mode listening yang menghasilkan soal audio kalimat percakapan otentik.',
+          'Perbaikan tombol Kembali pada Simulator Choukai agar kembali ke katalog Dojo alih-alih melempar pemelajar ke Beranda.',
+          'Penambahan scroll instan ke paling atas saat beralih sub-tampilan alat di Dojo.',
+        ],
+      },
+    ],
+  },
+  {
     version: 'v24.1.0',
     releaseName: 'Shin-Nihongo: Dojo & Retensi Memori Terpadu',
     date: '9 November 2026',

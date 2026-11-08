@@ -201,6 +201,13 @@ export const useCurriculumStore = create<CurriculumStoreState>((set, get) => ({
       localStorage.setItem(ACTIVE_TRACK_KEY, trackId);
     }
     set({ activeTrackId: trackId });
+    if (['n5', 'n4', 'n3', 'n2', 'n1'].includes(trackId)) {
+      try {
+        if (useAppStore.getState().selectedLevel !== trackId) {
+          useAppStore.getState().setSelectedLevel(trackId as any);
+        }
+      } catch {}
+    }
   },
 
   setUserSubstratum: (substratum: L1Substratum) => {

@@ -151,6 +151,8 @@ export const QuizPage: React.FC = () => {
       const items = generateQuizQuestions(mode, vocabs, grammars, targetLevel, sessionCount, {
         diagnosticPairs: diagPairs,
         substratum: userSubstratum,
+        cardsMap: cards,
+        prioritizeLearned: true,
       });
 
       if (items.length === 0) {
@@ -191,10 +193,13 @@ export const QuizPage: React.FC = () => {
 
     try {
       const targetLevel: JLPTLevel = selectedLevel === 'all' ? 'n5' : selectedLevel;
-      const [vocabs, grammars] = await Promise.all([
-        loadVocab(targetLevel),
-        loadGrammar(targetLevel),
+      const levelsToLoad = Array.from(new Set<JLPTLevel>([targetLevel, 'n5', 'n4']));
+      const [vocabsArr, grammarsArr] = await Promise.all([
+        Promise.all(levelsToLoad.map((lvl) => loadVocab(lvl).catch(() => []))),
+        Promise.all(levelsToLoad.map((lvl) => loadGrammar(lvl).catch(() => []))),
       ]);
+      const vocabs = vocabsArr.flat();
+      const grammars = grammarsArr.flat();
 
       const items = generateFSRSDueQuestions(cards, vocabs, grammars, targetLevel, sessionCount);
       if (items.length === 0) {

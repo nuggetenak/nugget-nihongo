@@ -27,7 +27,7 @@ import {
 import { ChoukaiAudioPlayer } from '../components/audio/ChoukaiAudioPlayer';
 import { IrasutoyaImage } from '../components/common/IrasutoyaImage';
 
-export const ChoukaiSimulatorPage: React.FC = () => {
+export const ChoukaiSimulatorPage: React.FC<{ onBack?: () => void }> = ({ onBack }) => {
   const { setActiveTab } = useAppStore();
 
   const [activeSetId, setActiveSetId] = useState<number>(1);
@@ -100,7 +100,7 @@ export const ChoukaiSimulatorPage: React.FC = () => {
       {/* Top Navigation */}
       <div className="flex items-center justify-between gap-3 mb-6">
         <button
-          onClick={() => setActiveTab('home')}
+          onClick={() => { if (onBack) onBack(); else setActiveTab('materi'); }}
           className="min-h-[40px] px-3.5 py-2 rounded-xl bg-surface border border-theme text-xs sm:text-sm font-semibold hover:border-amber-500/50 active:scale-95 transition-all flex items-center gap-2 text-appText-bright shadow-sm"
         >
           <ArrowLeft className="w-4 h-4" />

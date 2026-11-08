@@ -3,9 +3,9 @@
 //  Single source of truth across React SPA, Service Worker, and PWA
 // ══════════════════════════════════════════════════════════════════
 
-export const APP_VERSION = 'v24.1.0';
-export const APP_VERSION_NUMBER = '24.1.0';
-export const APP_RELEASE_NAME = 'Shin-Nihongo: Dojo & Retensi Memori Terpadu';
+export const APP_VERSION = 'v24.1.1';
+export const APP_VERSION_NUMBER = '24.1.1';
+export const APP_RELEASE_NAME = 'Shin-Nihongo: Belajar-Ulas-Dojo Tri-Connection';
 export const APP_BUILD_DATE = '2026-11-09';
 
 export const APP_CHANGELOG_HIGHLIGHTS = [

@@ -17,6 +17,7 @@ import {
   Lock,
 } from 'lucide-react';
 import { useAppStore } from '../store/useAppStore';
+import { useGardenStore } from '../lib/garden/gardenStore';
 import { useCurriculumStore, TrackId } from '../lib/curriculum/curriculumStore';
 import { loadCurriculumTrack, loadGrammar, loadVocab } from '../lib/data/dataManager';
 import {
@@ -179,7 +180,35 @@ export const LessonStudyPage: React.FC = () => {
     setDrillScore(score);
     if (score >= 80) {
       if (currentLesson && currentUnit) {
-        completeLesson(trackId, currentUnit.id, currentLesson.id, score, 0);
+        completeLesson(trackId, currentUnit.id, currentLesson.id, score, 20);
+
+        // Extract effective vocab & grammar items with metadata
+        const effectiveVocab = (currentLesson.vocab_breakdown && currentLesson.vocab_breakdown.length > 0)
+          ? currentLesson.vocab_breakdown
+          : (currentLesson.vocab_ids || []);
+
+        const effectiveGrammar = (currentLesson.explanations && currentLesson.explanations.length > 0)
+          ? currentLesson.explanations
+          : (currentLesson.grammar_ids || []);
+
+        // Atomically inject cards into FSRS & award water drops
+        useAppStore.getState().completeLesson(currentLesson.id, effectiveGrammar, effectiveVocab);
+        useAppStore.getState().injectLessonItemsToFSRS(effectiveGrammar, effectiveVocab);
+
+        // Seed kanji from vocab into Kanji Garden
+        try {
+          const garden = useGardenStore.getState();
+          const targetLevel = (currentUnit.level || (trackId.startsWith('n') ? trackId : 'n5')) as any;
+          (currentLesson.vocab_breakdown || []).forEach((v: any) => {
+            if (v.word && /[\u4e00-\u9faf]/.test(v.word)) {
+              const m = v.word.match(/[\u4e00-\u9faf]/);
+              if (m) {
+                garden.seedPlant(m[0], v.reading || v.word, v.meaning || '', targetLevel);
+              }
+            }
+          });
+        } catch {}
+
         showToast('🎉 Pelajaran Tuntas! Kosakata & tata bahasa telah tersimpan di Kebun Review FSRS.', '✨', 3500);
       }
       setActiveStage('cando');
@@ -396,7 +425,7 @@ export const LessonStudyPage: React.FC = () => {
       {/* ── 3. PANEL TAHAP KONTEN DINAMIS ────────────────────────── */}
       <div 
         id="lesson-studio-top"
-        className="scroll-mt-44 sm:scroll-mt-48 p-4 sm:p-7 rounded-3xl bg-surface border border-accent/20 shadow-sm transition-[min-height] duration-300 ease-out min-h-[380px] sm:min-h-[420px] overflow-visible animate-in fade-in slide-in-from-right-4 duration-300 card-interactive-lift"
+        className="scroll-mt-44 sm:scroll-mt-48 p-4 sm:p-7 rounded-3xl bg-surface border border-accent/20 shadow-sm transition-[min-height] duration-300 ease-out min-h-[380px] sm:min-h-[420px] overflow-visible animate-in fade-in slide-in-from-right-4 duration-300"
       >
         <div key={activeStage} className="animate-in fade-in duration-200">
           {activeStage === 'dialogue' && (
