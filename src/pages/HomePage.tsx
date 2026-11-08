@@ -137,7 +137,7 @@ export const HomePage: React.FC = () => {
   const goalProgressPercent = Math.min(100, Math.round((todayXP / dailyGoalXP) * 100));
 
   const [dailyKotowaza, setDailyKotowaza] = useState<Kotowaza>(DEFAULT_DAILY_KOTOWAZA);
-  const [roadmapViewMode, setRoadmapViewMode] = useState<'focus' | 'all'>('all');
+  const [roadmapViewMode, setRoadmapViewMode] = useState<'focus' | 'all'>('focus');
   const [selectedUnitId, setSelectedUnitId] = useState<string | null>(null);
   const [showUnitExpectation, setShowUnitExpectation] = useState(false);
 
@@ -536,7 +536,7 @@ export const HomePage: React.FC = () => {
         </div>
       </div>
 
-      {/* ── TIER 3: QUICK UTILITIES STRIP ── */}
+      {/* ── TIER 3: QUICK UTILITIES STRIP (3 Direct Tools + 1 Organized Drawer) ── */}
       <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5">
         <button
           type="button"
@@ -572,22 +572,6 @@ export const HomePage: React.FC = () => {
 
         <button
           type="button"
-          onClick={openNuance}
-          className="min-h-[44px] p-2.5 rounded-2xl bg-surface border border-accent/20 hover:border-accent/40 text-left transition-all hover:bg-surface-2 group flex items-center gap-2.5 active:scale-98 shadow-sm cursor-pointer"
-        >
-          <div className="w-8 h-8 rounded-xl bg-blue-500/15 text-blue-400 font-bold flex items-center justify-center text-xs shrink-0 group-hover:scale-105 transition-transform">
-            ⚖️
-          </div>
-          <div className="min-w-0">
-            <div className="text-xs font-bold text-appText-bright truncate group-hover:text-blue-300 transition-colors">
-              Inspektor Nuansa
-            </div>
-            <div className="text-xs text-appText-muted truncate">Komparasi Pola Mirip</div>
-          </div>
-        </button>
-
-        <button
-          type="button"
           onClick={openBookStudio}
           className="min-h-[44px] p-2.5 rounded-2xl bg-surface border border-accent/20 hover:border-accent/40 text-left transition-all hover:bg-surface-2 group flex items-center gap-2.5 active:scale-98 shadow-sm cursor-pointer"
         >
@@ -599,6 +583,23 @@ export const HomePage: React.FC = () => {
               Buku Teks Resmi
             </div>
             <div className="text-xs text-appText-muted truncate">9 Seri Buku Populer</div>
+          </div>
+        </button>
+
+        <button
+          type="button"
+          onClick={openToolbox}
+          className="min-h-[44px] p-2.5 rounded-2xl bg-gradient-to-r from-amber-500/10 via-surface to-surface border border-accent/35 hover:border-accent/60 text-left transition-all hover:bg-surface-2 group flex items-center gap-2.5 active:scale-98 shadow-sm cursor-pointer ring-1 ring-amber-500/20"
+        >
+          <div className="w-8 h-8 rounded-xl bg-amber-500/20 text-accent font-bold flex items-center justify-center text-xs shrink-0 group-hover:scale-105 transition-transform shadow-xs">
+            <Wrench className="w-4 h-4 text-accent" />
+          </div>
+          <div className="min-w-0">
+            <div className="text-xs font-bold text-appText-bright truncate group-hover:text-accent transition-colors flex items-center gap-1">
+              <span>Semua Alat</span>
+              <ChevronRight className="w-3 h-3 text-accent shrink-0 group-hover:translate-x-0.5 transition-transform" />
+            </div>
+            <div className="text-xs text-appText-muted truncate">Drawer Alat Lengkap</div>
           </div>
         </button>
       </div>
@@ -620,7 +621,10 @@ export const HomePage: React.FC = () => {
           <div className="flex items-center gap-1 p-1 rounded-xl bg-surface-2 border border-accent/20 self-start sm:self-auto">
             <button
               type="button"
-              onClick={() => setRoadmapViewMode('focus')}
+              onClick={() => {
+                setRoadmapViewMode('focus');
+                window.scrollTo({ top: 0, behavior: 'instant' });
+              }}
               className={`min-h-[40px] px-3 py-1.5 rounded-lg text-xs font-bold transition-all flex items-center gap-1.5 active:scale-95 cursor-pointer ${
                 roadmapViewMode === 'focus'
                   ? 'bg-accent text-bg shadow-sm font-extrabold'
@@ -631,7 +635,10 @@ export const HomePage: React.FC = () => {
             </button>
             <button
               type="button"
-              onClick={() => setRoadmapViewMode('all')}
+              onClick={() => {
+                setRoadmapViewMode('all');
+                window.scrollTo({ top: 0, behavior: 'instant' });
+              }}
               className={`min-h-[40px] px-3 py-1.5 rounded-lg text-xs font-bold transition-all flex items-center gap-1.5 active:scale-95 cursor-pointer ${
                 roadmapViewMode === 'all'
                   ? 'bg-accent text-bg shadow-sm font-extrabold'
@@ -832,7 +839,10 @@ export const HomePage: React.FC = () => {
             <div className="pt-2 text-center">
               <button
                 type="button"
-                onClick={() => setRoadmapViewMode('all')}
+                onClick={() => {
+                  setRoadmapViewMode('all');
+                  window.scrollTo({ top: 0, behavior: 'instant' });
+                }}
                 className="min-h-[44px] text-xs font-semibold text-accent hover:underline inline-flex items-center gap-1.5 py-1 px-3 rounded-lg hover:bg-amber-500/10 transition-colors cursor-pointer"
               >
                 <span>Lihat Seluruh Silabus Kurikulum ({trackData?.units?.length || 0} Unit Lengkap)</span>
@@ -846,7 +856,10 @@ export const HomePage: React.FC = () => {
               <span className="text-xs text-appText-muted">Menampilkan seluruh unit silabus:</span>
               <button
                 type="button"
-                onClick={() => setRoadmapViewMode('focus')}
+                onClick={() => {
+                  setRoadmapViewMode('focus');
+                  window.scrollTo({ top: 0, behavior: 'instant' });
+                }}
                 className="min-h-[40px] text-xs font-bold text-accent hover:underline flex items-center gap-1 cursor-pointer"
               >
                 <span>← Kembali ke Tampilan Unit Aktif</span>

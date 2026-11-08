@@ -83,7 +83,11 @@ check('LessonStudyPage has stable container with transition-[min-height] and aut
   assert(page.includes('transition-[min-height]'), 'Container must have transition-[min-height]');
   assert(page.includes('min-h-[380px] sm:min-h-[420px]'), 'Container must reserve min-h-[380px] sm:min-h-[420px]');
   assert(page.includes("document.getElementById('lesson-studio-top')"), 'Must locate lesson-studio-top on stage change');
-  assert(page.includes("scrollIntoView({ behavior: 'smooth', block: 'nearest' })"), 'Must scroll smoothly to studio top');
+  assert(
+    page.includes("scrollIntoView({ behavior: 'instant', block: 'start' })") ||
+    page.includes("scrollIntoView({ behavior: 'smooth', block: 'nearest' })"),
+    'Must scroll studio container to top on stage change'
+  );
 });
 
 check('LessonStudyPage wraps active stage in keyed cross-fade container', () => {

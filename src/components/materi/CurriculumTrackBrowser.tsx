@@ -272,12 +272,11 @@ export const CurriculumTrackBrowser: React.FC<CurriculumTrackBrowserProps> = ({
         if (!isCancelled) {
           setTrackData(data);
           setIsLoading(false);
-          // Expand first unit by default
+          // Expand only the first unit by default
           if (data && data.units && data.units.length > 0) {
-            setExpandedUnitIds((prev) => ({
-              ...prev,
+            setExpandedUnitIds({
               [data.units[0].id]: true,
-            }));
+            });
           }
         }
       })
@@ -346,12 +345,14 @@ export const CurriculumTrackBrowser: React.FC<CurriculumTrackBrowserProps> = ({
     return Math.round(sum / scores.length);
   }, [currentProgress.lessonScores]);
 
-  // Toggle unit expansion
+  // Strict Single-Unit Accordion: Only 1 unit open at a time; expanding another auto-collapses previous
   const toggleUnit = (unitId: string) => {
-    setExpandedUnitIds((prev) => ({
-      ...prev,
-      [unitId]: !prev[unitId],
-    }));
+    setExpandedUnitIds((prev) => {
+      if (prev[unitId]) {
+        return {};
+      }
+      return { [unitId]: true };
+    });
   };
 
   // Expand all / collapse all

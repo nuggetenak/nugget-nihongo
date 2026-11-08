@@ -102,50 +102,67 @@ export const ExplanationStage: React.FC<ExplanationStageProps> = ({
       <div
         role="tablist"
         aria-label="Pilar Pembelajaran Bedah Materi"
-        className="flex items-center gap-1.5 p-1.5 rounded-2xl bg-surface-2 border border-accent/20 overflow-x-auto scrollbar-none shrink-0"
+        className="flex items-center gap-1 sm:gap-1.5 p-1 sm:p-1.5 rounded-2xl bg-surface-2 border border-accent/20 overflow-x-auto scrollbar-none w-full max-w-full touch-pan-x"
       >
         <button
           type="button"
           role="tab"
           aria-selected={activeSubTab === 'all'}
-          onClick={() => setActiveSubTab('all')}
-          className={`flex-1 min-w-[110px] min-h-[42px] px-3 py-2 rounded-xl text-xs font-bold transition-all flex items-center justify-center gap-1.5 whitespace-nowrap active:scale-95 ${
+          onClick={() => {
+            setActiveSubTab('all');
+            window.scrollTo({ top: 0, behavior: 'instant' });
+            document.documentElement.scrollTop = 0;
+            document.body.scrollTop = 0;
+          }}
+          className={`shrink-0 sm:flex-1 min-h-[40px] px-2.5 sm:px-3 py-1.5 sm:py-2 rounded-xl text-xs font-bold transition-all flex items-center justify-center gap-1 sm:gap-1.5 whitespace-nowrap active:scale-95 cursor-pointer ${
             activeSubTab === 'all'
               ? 'bg-accent text-bg shadow-sm font-extrabold'
               : 'text-appText-muted hover:text-appText-bright hover:bg-surface-3'
           }`}
         >
-          <Sparkles className="w-4 h-4 shrink-0" />
-          <span>Semua Materi</span>
+          <Sparkles className="w-3.5 h-3.5 sm:w-4 sm:h-4 shrink-0" />
+          <span className="sm:hidden">Semua</span>
+          <span className="hidden sm:inline">Semua Materi</span>
         </button>
 
         <button
           type="button"
           role="tab"
           aria-selected={activeSubTab === 'grammar'}
-          onClick={() => setActiveSubTab('grammar')}
-          className={`flex-1 min-w-[110px] min-h-[42px] px-3 py-2 rounded-xl text-xs font-bold transition-all flex items-center justify-center gap-1.5 whitespace-nowrap active:scale-95 ${
+          onClick={() => {
+            setActiveSubTab('grammar');
+            window.scrollTo({ top: 0, behavior: 'instant' });
+            document.documentElement.scrollTop = 0;
+            document.body.scrollTop = 0;
+          }}
+          className={`shrink-0 sm:flex-1 min-h-[40px] px-2.5 sm:px-3 py-1.5 sm:py-2 rounded-xl text-xs font-bold transition-all flex items-center justify-center gap-1 sm:gap-1.5 whitespace-nowrap active:scale-95 cursor-pointer ${
             activeSubTab === 'grammar'
               ? 'bg-accent text-bg shadow-sm font-extrabold'
               : 'text-appText-muted hover:text-appText-bright hover:bg-surface-3'
           }`}
         >
-          <BookOpen className="w-4 h-4 shrink-0" />
-          <span>Pola Tata Bahasa</span>
+          <BookOpen className="w-3.5 h-3.5 sm:w-4 sm:h-4 shrink-0" />
+          <span className="sm:hidden">Tata Bahasa</span>
+          <span className="hidden sm:inline">Pola Tata Bahasa</span>
         </button>
 
         <button
           type="button"
           role="tab"
           aria-selected={activeSubTab === 'vocab'}
-          onClick={() => setActiveSubTab('vocab')}
-          className={`flex-1 min-w-[110px] min-h-[42px] px-3 py-2 rounded-xl text-xs font-bold transition-all flex items-center justify-center gap-1.5 whitespace-nowrap active:scale-95 ${
+          onClick={() => {
+            setActiveSubTab('vocab');
+            window.scrollTo({ top: 0, behavior: 'instant' });
+            document.documentElement.scrollTop = 0;
+            document.body.scrollTop = 0;
+          }}
+          className={`shrink-0 sm:flex-1 min-h-[40px] px-2.5 sm:px-3 py-1.5 sm:py-2 rounded-xl text-xs font-bold transition-all flex items-center justify-center gap-1 sm:gap-1.5 whitespace-nowrap active:scale-95 cursor-pointer ${
             activeSubTab === 'vocab'
               ? 'bg-accent text-bg shadow-sm font-extrabold'
               : 'text-appText-muted hover:text-appText-bright hover:bg-surface-3'
           }`}
         >
-          <Layers className="w-4 h-4 shrink-0" />
+          <Layers className="w-3.5 h-3.5 sm:w-4 sm:h-4 shrink-0" />
           <span>Kosakata ({vocabBreakdown.length})</span>
         </button>
 
@@ -153,14 +170,19 @@ export const ExplanationStage: React.FC<ExplanationStageProps> = ({
           type="button"
           role="tab"
           aria-selected={activeSubTab === 'pitfalls'}
-          onClick={() => setActiveSubTab('pitfalls')}
-          className={`flex-1 min-w-[110px] min-h-[42px] px-3 py-2 rounded-xl text-xs font-bold transition-all flex items-center justify-center gap-1.5 whitespace-nowrap active:scale-95 ${
+          onClick={() => {
+            setActiveSubTab('pitfalls');
+            window.scrollTo({ top: 0, behavior: 'instant' });
+            document.documentElement.scrollTop = 0;
+            document.body.scrollTop = 0;
+          }}
+          className={`shrink-0 sm:flex-1 min-h-[40px] px-2.5 sm:px-3 py-1.5 sm:py-2 rounded-xl text-xs font-bold transition-all flex items-center justify-center gap-1 sm:gap-1.5 whitespace-nowrap active:scale-95 cursor-pointer ${
             activeSubTab === 'pitfalls'
               ? 'bg-accent text-bg shadow-sm font-extrabold'
               : 'text-appText-muted hover:text-appText-bright hover:bg-surface-3'
           }`}
         >
-          <AlertCircle className="w-4 h-4 shrink-0" />
+          <AlertCircle className="w-3.5 h-3.5 sm:w-4 sm:h-4 shrink-0" />
           <span>Jebakan ({activePitfalls.length})</span>
         </button>
       </div>

@@ -140,6 +140,7 @@ export const GlobalModalManager: React.FC = () => {
                   onOpenCounters={() => openModal('counters')}
                   onOpenPitch={() => openModal('pitch')}
                   onOpenHvpt={() => openModal('hvpt')}
+                  onOpenBookStudio={() => useAppStore.getState().openBookStudio()}
                   onOpenFeatureGuide={() => openModal('featureGuide')}
                   onOpenShortcuts={() => openModal('shortcuts')}
                 />

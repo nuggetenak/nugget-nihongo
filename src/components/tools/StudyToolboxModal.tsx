@@ -22,6 +22,7 @@ import {
   Hash,
   Music,
   Headphones,
+  BookOpen,
 } from 'lucide-react';
 import { useFocusTrap } from '../../hooks/useFocusTrap';
 
@@ -37,6 +38,7 @@ interface StudyToolboxModalProps {
   onOpenCounters?: () => void;
   onOpenPitch?: () => void;
   onOpenHvpt?: () => void;
+  onOpenBookStudio?: () => void;
   onOpenFeatureGuide: () => void;
   onOpenShortcuts: () => void;
 }
@@ -80,6 +82,7 @@ export const StudyToolboxModal: React.FC<StudyToolboxModalProps> = ({
   onOpenCounters,
   onOpenPitch,
   onOpenHvpt,
+  onOpenBookStudio,
   onOpenFeatureGuide,
   onOpenShortcuts,
 }) => {
@@ -138,6 +141,19 @@ export const StudyToolboxModal: React.FC<StudyToolboxModalProps> = ({
       action: () => {
         onClose();
         onOpenNuance();
+      },
+    },
+    {
+      id: 'book-studio',
+      category: 'vocab',
+      name: 'Buku Teks Resmi (9 Seri)',
+      nameJp: '公式教科書・副教材スタジオ',
+      desc: 'Kurikulum silabus komprehensif dari 9 buku teks populer (Minna no Nihongo, GENKI, Sou Matome, Tobira, dll).',
+      icon: <BookOpen className="w-5 h-5 text-emerald-400" />,
+      badge: '9 Seri Populer',
+      action: () => {
+        onClose();
+        if (onOpenBookStudio) onOpenBookStudio();
       },
     },
     {

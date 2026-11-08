@@ -145,13 +145,16 @@ export const LessonStudyPage: React.FC = () => {
     };
   }, [trackId, unitId, lessonId]);
 
-  // Viewport scroll stabilization upon stage change (Ticket T-227)
+  // Viewport scroll stabilization upon stage change or lesson load (Ticket T-227)
   useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'instant' });
+    document.documentElement.scrollTop = 0;
+    document.body.scrollTop = 0;
     const studioContainer = document.getElementById('lesson-studio-top');
     if (studioContainer) {
-      studioContainer.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      studioContainer.scrollIntoView({ behavior: 'instant', block: 'start' });
     }
-  }, [activeStage]);
+  }, [activeStage, lessonId]);
 
   // Cek apakah pelajaran ini sudah pernah tuntas
   const isLessonDone =
@@ -165,10 +168,10 @@ export const LessonStudyPage: React.FC = () => {
     shortLabel: string;
     icon: React.ReactNode;
   }> = [
-    { id: 'dialogue', label: '1. Dialog Otentik', shortLabel: '1. Dialog', icon: <MessageSquare className="w-4 h-4 shrink-0" /> },
-    { id: 'explanation', label: '2. Bedah Materi & Pola', shortLabel: '2. Bedah Materi', icon: <BookOpen className="w-4 h-4 shrink-0" /> },
-    { id: 'drills', label: '3. Cek Pemahaman', shortLabel: '3. Cek Pemahaman', icon: <HelpCircle className="w-4 h-4 shrink-0" /> },
-    { id: 'cando', label: '4. Tantangan Nyata', shortLabel: '4. Tantangan Nyata', icon: <Trophy className="w-4 h-4 shrink-0" /> },
+    { id: 'dialogue', label: '1. Dialog Otentik', shortLabel: 'Dialog', icon: <MessageSquare className="w-4 h-4 shrink-0" /> },
+    { id: 'explanation', label: '2. Bedah Materi & Pola', shortLabel: 'Materi', icon: <BookOpen className="w-4 h-4 shrink-0" /> },
+    { id: 'drills', label: '3. Cek Pemahaman', shortLabel: 'Kuis', icon: <HelpCircle className="w-4 h-4 shrink-0" /> },
+    { id: 'cando', label: '4. Tantangan Nyata', shortLabel: 'Praktik', icon: <Trophy className="w-4 h-4 shrink-0" /> },
   ];
 
   // Handler saat latihan selesai
@@ -221,7 +224,9 @@ export const LessonStudyPage: React.FC = () => {
     if (nextLessonInfo) {
       setActiveStage('dialogue');
       openLessonStudy(trackId, nextLessonInfo.unitId, nextLessonInfo.lessonId);
-      window.scrollTo({ top: 0, behavior: 'smooth' });
+      window.scrollTo({ top: 0, behavior: 'instant' });
+      document.documentElement.scrollTop = 0;
+      document.body.scrollTop = 0;
     } else {
       closeLessonStudy();
     }
@@ -360,19 +365,26 @@ export const LessonStudyPage: React.FC = () => {
                     return;
                   }
                   setActiveStage(st.id);
+                  window.scrollTo({ top: 0, behavior: 'instant' });
+                  document.documentElement.scrollTop = 0;
+                  document.body.scrollTop = 0;
+                  const studioContainer = document.getElementById('lesson-studio-top');
+                  if (studioContainer) {
+                    studioContainer.scrollIntoView({ behavior: 'instant', block: 'start' });
+                  }
                 }}
                 title={isCanDoLocked ? 'Terkunci: selesaikan Cek Pemahaman (min 80%)' : undefined}
-                className={`min-w-0 flex-1 min-h-[44px] px-1 sm:px-3 py-1.5 sm:py-2 rounded-xl text-xs font-bold transition-all flex flex-col sm:flex-row items-center justify-center gap-1 sm:gap-1.5 overflow-hidden active:scale-95 ${
+                className={`min-w-0 flex-1 min-h-[44px] px-1 sm:px-3 py-1 sm:py-2 rounded-xl text-xs font-bold transition-all flex flex-col sm:flex-row items-center justify-center gap-0.5 sm:gap-1.5 overflow-hidden active:scale-95 cursor-pointer ${
                   isCanDoLocked
-                    ? 'opacity-50 text-appText-dim bg-surface-2/40 cursor-pointer hover:bg-surface-2/60'
+                    ? 'opacity-50 text-appText-dim bg-surface-2/40 hover:bg-surface-2/60'
                     : isActive
                     ? 'bg-accent text-bg shadow-sm font-extrabold'
                     : 'text-appText-muted hover:text-appText-bright hover:bg-surface-2'
                 }`}
               >
                 <span className="shrink-0">{isCanDoLocked ? <Lock className="w-3.5 h-3.5 text-amber-700 dark:text-amber-400" /> : st.icon}</span>
-                <span className="min-w-0 truncate text-xs sm:text-xs">
-                  <span className="sm:hidden">{st.shortLabel}</span>
+                <span className="min-w-0 text-[11px] sm:text-xs text-center truncate max-w-full">
+                  <span className="sm:hidden block truncate">{st.shortLabel}</span>
                   <span className="hidden sm:inline">{st.label}</span>
                 </span>
               </button>
@@ -435,9 +447,15 @@ export const LessonStudyPage: React.FC = () => {
               if (activeStage === 'drills') setActiveStage('explanation');
               if (activeStage === 'cando') setActiveStage('drills');
             });
-            window.scrollTo({ top: 0, behavior: 'smooth' });
+            window.scrollTo({ top: 0, behavior: 'instant' });
+            document.documentElement.scrollTop = 0;
+            document.body.scrollTop = 0;
+            const studioContainer = document.getElementById('lesson-studio-top');
+            if (studioContainer) {
+              studioContainer.scrollIntoView({ behavior: 'instant', block: 'start' });
+            }
           }}
-          className="min-h-[44px] px-4 py-2 rounded-xl bg-surface hover:bg-surface-2 border border-accent/30 text-xs font-bold text-appText hover:text-appText-bright disabled:opacity-30 disabled:pointer-events-none shadow-sm transition-all active:scale-95 card-interactive-lift"
+          className="min-h-[44px] px-4 py-2 rounded-xl bg-surface hover:bg-surface-2 border border-accent/30 text-xs font-bold text-appText hover:text-appText-bright disabled:opacity-30 disabled:pointer-events-none shadow-sm transition-all active:scale-95 card-interactive-lift cursor-pointer"
         >
           ← Tahap Sebelumnya
         </button>
@@ -456,9 +474,15 @@ export const LessonStudyPage: React.FC = () => {
                   }
                 }
               });
-              window.scrollTo({ top: 0, behavior: 'smooth' });
+              window.scrollTo({ top: 0, behavior: 'instant' });
+              document.documentElement.scrollTop = 0;
+              document.body.scrollTop = 0;
+              const studioContainer = document.getElementById('lesson-studio-top');
+              if (studioContainer) {
+                studioContainer.scrollIntoView({ behavior: 'instant', block: 'start' });
+              }
             }}
-            className="min-h-[44px] px-5 py-2 rounded-xl bg-accent text-bg text-xs font-extrabold uppercase tracking-wider shadow-md hover:brightness-110 flex items-center gap-1.5 transition-all active:scale-95 disabled:opacity-40 disabled:pointer-events-none card-interactive-lift"
+            className="min-h-[44px] px-5 py-2 rounded-xl bg-accent text-bg text-xs font-extrabold uppercase tracking-wider shadow-md hover:brightness-110 flex items-center gap-1.5 transition-all active:scale-95 disabled:opacity-40 disabled:pointer-events-none card-interactive-lift cursor-pointer"
           >
             <span>Lanjut Tahap Berikutnya</span>
             <ChevronRight className="w-4 h-4" />

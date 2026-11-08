@@ -155,9 +155,11 @@ export const App: React.FC = () => {
     };
   }, [setActiveTab]);
 
-  // Smooth scroll to top when activeTab changes
+  // Instant scroll to top when activeTab changes (ensures user always starts at top)
   useEffect(() => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    window.scrollTo({ top: 0, behavior: 'instant' });
+    document.documentElement.scrollTop = 0;
+    document.body.scrollTop = 0;
   }, [activeTab]);
 
   // Desktop global keyboard shortcut listener (⌘K, ?, F, R)
