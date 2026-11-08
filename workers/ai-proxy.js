@@ -27,11 +27,11 @@ const DAILY_LIMIT = 20; // bumped from 15 → 20 with caching reducing actual AP
 
 // ── Model config ────────────────────────────────────────────────
 const GROQ_URL   = 'https://api.groq.com/openai/v1/chat/completions';
-const GEMINI_URL = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent';
+const GEMINI_URL = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent';
 const OR_URL     = 'https://openrouter.ai/api/v1/chat/completions';
 
-const GROQ_MODEL_FAST = 'llama-3.3-70b-versatile';
-const GROQ_MODEL_DEEP = 'llama-3.3-70b-versatile';
+const GROQ_MODEL_FAST = 'llama-3.1-8b-instant';
+const GROQ_MODEL_DEEP = 'llama-3.1-8b-instant';
 
 // OpenRouter free models — tried in order
 const OR_MODELS = [
@@ -303,8 +303,9 @@ async function setCached(env, key, value, ttl) {
 // and /critique which need cross-provider control.
 //
 // Contract: each helper throws on failure. Caller decides fallback.
-async function rawGroq(apiKey, systemPrompt, userPrompt, opts = {}) {
-  const model = opts.model || GROQ_MODEL_DEEP; // use 70B for quiz-gen/critique
+async function rawGroq(apiKey, systemPrompt, userPrompt, opts = {}, fallbackIdx = 0) {
+  const models = [opts.model || GROQ_MODEL_DEEP, 'llama-3.1-8b-instant', 'llama-3.3-70b-versatile'];
+  const model = models[fallbackIdx] || 'llama-3.1-8b-instant';
   const res = await fetch(GROQ_URL, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${apiKey}` },
@@ -319,7 +320,12 @@ async function rawGroq(apiKey, systemPrompt, userPrompt, opts = {}) {
       top_p: 0.9,
     }),
   });
-  if (!res.ok) throw new Error(`Groq ${res.status}: ${await res.text()}`);
+  if (!res.ok) {
+    if (fallbackIdx + 1 < models.length) {
+      return rawGroq(apiKey, systemPrompt, userPrompt, opts, fallbackIdx + 1);
+    }
+    throw new Error(`Groq ${res.status}: ${await res.text()}`);
+  }
   const data = await res.json();
   const text = data?.choices?.[0]?.message?.content;
   if (!text) throw new Error('Groq empty');
@@ -327,8 +333,8 @@ async function rawGroq(apiKey, systemPrompt, userPrompt, opts = {}) {
 }
 
 async function rawGemini(apiKey, systemPrompt, userPrompt, opts = {}, modelIndex = 0) {
-  const models = ['gemini-2.0-flash', 'gemini-1.5-flash'];
-  const model = models[modelIndex] || 'gemini-2.0-flash';
+  const models = ['gemini-2.5-flash', 'gemini-2.0-flash', 'gemini-1.5-flash'];
+  const model = models[modelIndex] || 'gemini-2.5-flash';
   const url = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${apiKey}`;
   const res = await fetch(url, {
     method: 'POST',
@@ -436,28 +442,35 @@ function extractJSONArray(text) {
 }
 
 // ── Provider: Groq ────────────────────────────────────────────────
-async function callGroq(apiKey, messages, systemCtx, model, mode) {
+async function callGroq(apiKey, messages, systemCtx, model, mode, fallbackIdx = 0) {
+  const models = [model || GROQ_MODEL_FAST, 'llama-3.1-8b-instant', 'llama-3.3-70b-versatile'];
+  const targetModel = models[fallbackIdx] || 'llama-3.1-8b-instant';
   const systemPrompt = buildSystemPrompt(mode);
   const res = await fetch(GROQ_URL, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${apiKey}` },
     body: JSON.stringify({
-      model: model || GROQ_MODEL_FAST,
+      model: targetModel,
       messages: [{ role: 'system', content: systemPrompt + (systemCtx ? '\n\n' + systemCtx : '') }, ...messages],
       temperature: 0.7, max_tokens: 1024, top_p: 0.9,
     }),
   });
-  if (!res.ok) throw new Error(`Groq ${res.status}: ${await res.text()}`);
+  if (!res.ok) {
+    if (fallbackIdx + 1 < models.length) {
+      return callGroq(apiKey, messages, systemCtx, model, mode, fallbackIdx + 1);
+    }
+    throw new Error(`Groq ${res.status}: ${await res.text()}`);
+  }
   const data = await res.json();
   const text = data?.choices?.[0]?.message?.content;
   if (!text) throw new Error('Groq empty');
-  return { reply: text, model_used: `groq/${model || GROQ_MODEL_FAST}`, tokens_used: data?.usage?.total_tokens || 0 };
+  return { reply: text, model_used: `groq/${targetModel}`, tokens_used: data?.usage?.total_tokens || 0 };
 }
 
 // ── Provider: Gemini ──────────────────────────────────────────────
 async function callGemini(apiKey, messages, systemCtx, mode, modelIndex = 0) {
-  const models = ['gemini-2.0-flash', 'gemini-1.5-flash'];
-  const model = models[modelIndex] || 'gemini-2.0-flash';
+  const models = ['gemini-2.5-flash', 'gemini-2.0-flash', 'gemini-1.5-flash'];
+  const model = models[modelIndex] || 'gemini-2.5-flash';
   const systemPrompt = buildSystemPrompt(mode);
   const contents = messages.map(m => ({
     role: m.role === 'assistant' ? 'model' : 'user',

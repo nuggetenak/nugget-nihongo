@@ -52,16 +52,38 @@
   window.grammarIdx = { byId, byLevel, byCat };
 
   // ── Query API ────────────────────────────────────────
+  function ensureGrammarDB() {
+    if (!window.grammarDB || window.grammarDB.length === 0) {
+      window.grammarDB = [
+        ...(window.grammarN5 || []),
+        ...(window.grammarN4 || []),
+        ...(window.grammarN3 || []),
+        ...(window.grammarN2 || []),
+        ...(window.grammarN1 || []),
+      ].filter(Boolean);
+      window.grammarData = window.grammarDB;
+      for (var i = 0; i < window.grammarDB.length; i++) {
+        var entry = window.grammarDB[i];
+        if (entry && entry.pattern && !entry.grammar) {
+          entry.grammar = entry.pattern;
+        }
+      }
+    }
+  }
+
   window.getGrammar = function (id) {
-    return byId[id] || null;
+    ensureGrammarDB();
+    return byId[id] || (window.grammarDB ? window.grammarDB.find(function(g) { return g && g.id === id; }) : null) || null;
   };
 
   window.queryGrammar = function (filter) {
-    var results = window.grammarDB.filter(Boolean);  // defensive null guard
-    if (filter.level) results = results.filter(function(g) { return g.level === filter.level; });
-    if (filter.cat)   results = results.filter(function(g) { return g.cat === filter.cat; });
-    if (filter.register) results = results.filter(function(g) { return g.register === filter.register; });
-    if (filter.excludeDummy) results = results.filter(function(g) { return g.cat !== 'dummy'; });
+    ensureGrammarDB();
+    var f = filter || {};
+    var results = (window.grammarDB || []).filter(Boolean);  // defensive null guard
+    if (f.level) results = results.filter(function(g) { return g && g.level === f.level; });
+    if (f.cat)   results = results.filter(function(g) { return g && g.cat === f.cat; });
+    if (f.register) results = results.filter(function(g) { return g && g.register === f.register; });
+    if (f.excludeDummy) results = results.filter(function(g) { return g && g.cat !== 'dummy'; });
     return results;
   };
 

@@ -19,6 +19,7 @@ import { KanjiDojoView } from '../components/kanji/KanjiDojoView';
 import { SkeletonGrid } from '../components/ui/SkeletonCard';
 import { JapaneseFormattedText } from '../components/ui/JapaneseFormattedText';
 import { RubyText } from '../components/ui/RubyText';
+import { BudouxText } from '../components/ui/BudouxText';
 import { SyncStatusPill } from '../components/ui/SyncStatusPill';
 
 // Lazy-load ChoukaiSimulatorPage to maintain modular bundle budget (<= 500 kB)
@@ -72,7 +73,7 @@ export const DOJO_TOOLS: DojoToolMeta[] = [
     jpTitle: '漢字道場・筆順',
     desc: '6.000+ Kanji Jouyou, Jinmeiyou & Kanken lengkap dengan animasi goresan SVG, deteksi urutan guratan, dan kanji canvas interaktif.',
     badge: '6.000+ Kanji · SVG Animasi',
-    badgeColor: 'bg-surface-3/90 text-amber-300 border-amber-500/30 font-semibold',
+    badgeColor: 'bg-surface-3/90 text-accent-hot dark:text-amber-300 border-amber-500/30 font-semibold',
     icon: '漢',
     actionType: 'subview',
     canDo: 'Mengenali dan menulis Kanji sesuai urutan goresan standar.',
@@ -89,7 +90,7 @@ export const DOJO_TOOLS: DojoToolMeta[] = [
     jpTitle: '聴解CBTシミュレーター',
     desc: 'Official listening tracks & audio drills otentik dengan 163 soal simulasi ujian Choukai berstandar JLPT dan JFT-Basic CBT.',
     badge: 'Audio Otentik · CBT Exam',
-    badgeColor: 'bg-surface-3/90 text-amber-300 border-amber-500/30 font-semibold',
+    badgeColor: 'bg-surface-3/90 text-accent-hot dark:text-amber-300 border-amber-500/30 font-semibold',
     icon: '🎧',
     actionType: 'subview',
     canDo: 'Memahami percakapan cepat dan instruksi audio simulasi ujian.',
@@ -106,7 +107,7 @@ export const DOJO_TOOLS: DojoToolMeta[] = [
     jpTitle: '標準教科書ライブラリ',
     desc: 'Kurikulum dan pustaka latihan terpadu dari 9 seri buku teks standar: GENKI I & II, Minna no Nihongo I & II, Tobira, Irodori, dan Marugoto.',
     badge: '9 Seri Buku Populer',
-    badgeColor: 'bg-surface-3/90 text-amber-300 border-amber-500/30 font-semibold',
+    badgeColor: 'bg-surface-3/90 text-accent-hot dark:text-amber-300 border-amber-500/30 font-semibold',
     icon: '📖',
     actionType: 'subview',
     canDo: 'Menyelaraskan studi mandiri dengan kurikulum buku teks standar kursus dan LPK.',
@@ -429,10 +430,10 @@ export const MateriHubPage: React.FC = () => {
     const q = searchQuery.toLowerCase().trim();
     return list.filter(
       (v) =>
-        v.word.includes(q) ||
-        v.reading.includes(q) ||
-        v.romaji.toLowerCase().includes(q) ||
-        v.meaning.toLowerCase().includes(q)
+        (v.word && v.word.includes(q)) ||
+        (v.reading && v.reading.includes(q)) ||
+        (v.romaji && v.romaji.toLowerCase().includes(q)) ||
+        (v.meaning && v.meaning.toLowerCase().includes(q))
     );
   }, [vocabList, searchQuery, selectedPos]);
 
@@ -442,8 +443,8 @@ export const MateriHubPage: React.FC = () => {
     if (selectedParticle !== 'all') {
       list = list.filter(
         (g) =>
-          g.pattern.includes(selectedParticle) ||
-          g.reading.includes(selectedParticle) ||
+          (g.pattern && g.pattern.includes(selectedParticle)) ||
+          (g.reading && g.reading.includes(selectedParticle)) ||
           (g.cat && g.cat.includes(selectedParticle))
       );
     }
@@ -451,9 +452,9 @@ export const MateriHubPage: React.FC = () => {
     const q = searchQuery.toLowerCase().trim();
     return list.filter(
       (g) =>
-        g.pattern.toLowerCase().includes(q) ||
-        g.reading.toLowerCase().includes(q) ||
-        g.meaning.toLowerCase().includes(q)
+        (g.pattern && g.pattern.toLowerCase().includes(q)) ||
+        (g.reading && g.reading.toLowerCase().includes(q)) ||
+        (g.meaning && g.meaning.toLowerCase().includes(q))
     );
   }, [grammarList, searchQuery, selectedParticle]);
 
@@ -873,12 +874,14 @@ export const MateriHubPage: React.FC = () => {
                     value={searchQuery}
                     onChange={(e) => setSearchQuery(e.target.value)}
                     placeholder={`Cari kosakata / tata bahasa ${(selectedLevel === 'all' ? 'n5' : selectedLevel).toUpperCase()}...`}
+                    aria-label={`Cari kosakata atau tata bahasa ${(selectedLevel === 'all' ? 'n5' : selectedLevel).toUpperCase()}`}
                     className="w-full bg-surface-2 border border-accent/20 rounded-xl pl-9 pr-9 py-2 sm:py-2.5 text-xs text-appText-bright placeholder:text-appText-muted focus:outline-none focus:border-accent transition-colors min-h-[40px]"
                   />
                   {searchQuery && (
                     <button
                       type="button"
                       onClick={() => setSearchQuery('')}
+                      aria-label="Hapus kata kunci pencarian"
                       className="absolute right-3 top-1/2 -translate-y-1/2 text-appText-muted hover:text-appText-bright p-1"
                     >
                       ✕
@@ -893,7 +896,7 @@ export const MateriHubPage: React.FC = () => {
                     onClick={() => setShowFurigana(!showFurigana)}
                     className={`px-2.5 py-1.5 rounded-xl text-xs font-bold transition-all border min-h-[40px] flex items-center gap-1 active:scale-95 ${
                       showFurigana
-                        ? 'bg-amber-500/20 text-amber-300 border-amber-500/40 shadow-xs'
+                        ? 'bg-amber-500/20 text-accent-hot dark:text-amber-300 border-amber-500/40 shadow-xs'
                         : 'bg-surface-2 border-accent/20 text-appText-muted hover:text-appText-bright'
                     }`}
                     title="Tampilkan / Sembunyikan Furigana"
@@ -909,7 +912,7 @@ export const MateriHubPage: React.FC = () => {
                     onClick={() => setShowRomaji(!showRomaji)}
                     className={`px-2.5 py-1.5 rounded-xl text-xs font-bold transition-all border min-h-[40px] flex items-center gap-1 active:scale-95 ${
                       showRomaji
-                        ? 'bg-amber-500/20 text-amber-300 border-amber-500/40 shadow-xs'
+                        ? 'bg-amber-500/20 text-accent-hot dark:text-amber-300 border-amber-500/40 shadow-xs'
                         : 'bg-surface-2 border-accent/20 text-appText-muted hover:text-appText-bright'
                     }`}
                     title="Tampilkan / Sembunyikan Romaji"
@@ -1335,7 +1338,7 @@ export const MateriHubPage: React.FC = () => {
           {/* ── View B: Jalur Freeway (Survival Japanese) ── */}
           {kurikulumSub === 'freeway' && (
             <div className="space-y-6 animate-in fade-in duration-300">
-              <div className="bg-gradient-to-r from-amber-950/40 via-surface-2 to-surface-2 border border-accent/25 rounded-3xl p-6 sm:p-8 space-y-2">
+              <div className="bg-gradient-to-r from-amber-500/10 via-surface-2 to-surface-2 border border-accent/25 rounded-3xl p-6 sm:p-8 space-y-2">
                 <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/15 border border-amber-500/30 text-accent-hot text-xs font-bold">
                   <span>🛣️ Jalur Freeway · Survival Japanese</span>
                 </div>
@@ -1370,9 +1373,11 @@ export const MateriHubPage: React.FC = () => {
                             Langkah #{index + 1}
                           </span>
                         </div>
-                        <div className="text-xl font-jp font-bold text-appText-bright group-hover:text-amber-400 font-extrabold transition-colors" lang="ja">
-                          {item.pattern}
-                        </div>
+                        <BudouxText
+                          text={item.pattern}
+                          className="text-xl font-jp font-bold text-appText-bright group-hover:text-accent-hot dark:group-hover:text-amber-400 font-extrabold transition-colors"
+                          as="div"
+                        />
                         {item.reading && (
                           <div className="text-xs text-appText-muted font-mono" lang="ja">
                             {item.reading}

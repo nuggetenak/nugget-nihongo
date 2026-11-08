@@ -56,7 +56,7 @@ export const LearnerMasteryReport: React.FC<LearnerMasteryReportProps> = ({
         subtitle: 'Hiragana, Katakana, Sapaan & Tata Bahasa Dasar',
         totalLessons: 60,
         colorClass: 'text-emerald-500',
-        badgeBg: 'bg-emerald-500/15 text-emerald-600 dark:text-emerald-400 border-emerald-500/30',
+        badgeBg: 'bg-emerald-500/15 text-emerald-800 dark:text-emerald-400 border-emerald-500/30 font-bold',
       },
       {
         level: 'n4',
@@ -64,7 +64,7 @@ export const LearnerMasteryReport: React.FC<LearnerMasteryReportProps> = ({
         subtitle: 'Bentuk Te/Nai, Pengandaian & Komunikasi Harian',
         totalLessons: 60,
         colorClass: 'text-sky-500',
-        badgeBg: 'bg-sky-500/15 text-sky-600 dark:text-sky-400 border-sky-500/30',
+        badgeBg: 'bg-sky-500/15 text-sky-800 dark:text-sky-400 border-sky-500/30 font-bold',
       },
       {
         level: 'n3',
@@ -72,7 +72,7 @@ export const LearnerMasteryReport: React.FC<LearnerMasteryReportProps> = ({
         subtitle: 'Nuansa Kalimat, Wacana & Keigo Awal',
         totalLessons: 60,
         colorClass: 'text-amber-500',
-        badgeBg: 'bg-amber-500/15 text-amber-600 dark:text-amber-400 border-amber-500/30',
+        badgeBg: 'bg-amber-500/15 text-amber-800 dark:text-amber-400 border-amber-500/30 font-bold',
       },
       {
         level: 'n2',
@@ -80,7 +80,7 @@ export const LearnerMasteryReport: React.FC<LearnerMasteryReportProps> = ({
         subtitle: 'Bisnis Gemba, Berita Resmi & Struktur Majemuk',
         totalLessons: 60,
         colorClass: 'text-indigo-500',
-        badgeBg: 'bg-indigo-500/15 text-indigo-600 dark:text-indigo-400 border-indigo-500/30',
+        badgeBg: 'bg-indigo-500/15 text-indigo-800 dark:text-indigo-400 border-indigo-500/30 font-bold',
       },
       {
         level: 'n1',
@@ -88,7 +88,7 @@ export const LearnerMasteryReport: React.FC<LearnerMasteryReportProps> = ({
         subtitle: 'Sastra, Opini Abstrak & Retorika Tingkat Tinggi',
         totalLessons: 60,
         colorClass: 'text-rose-500',
-        badgeBg: 'bg-rose-500/15 text-rose-600 dark:text-rose-400 border-rose-500/30',
+        badgeBg: 'bg-rose-500/15 text-rose-800 dark:text-rose-400 border-rose-500/30 font-bold',
       },
     ];
 
@@ -114,6 +114,7 @@ export const LearnerMasteryReport: React.FC<LearnerMasteryReportProps> = ({
     avgRetentionRate,
     healthStatus,
     retentionBadge,
+    cardCountWithStability,
   } = useMemo(() => {
     const cardValues = Object.values(cards);
     let totalR = 0;
@@ -147,19 +148,22 @@ export const LearnerMasteryReport: React.FC<LearnerMasteryReportProps> = ({
       }
     });
 
-    const retention =
-      cardCountWithStability > 0
-        ? Math.round((totalR / cardCountWithStability) * 100)
-        : 90; // Default target retention
+    const hasData = cardCountWithStability > 0;
+    const retention = hasData
+      ? Math.round((totalR / cardCountWithStability) * 100)
+      : 0;
 
     let status = 'Prima (Sangat Kuat)';
-    let badgeClass = 'bg-emerald-500/15 text-emerald-600 dark:text-emerald-400 border-emerald-500/30';
-    if (retention < 75) {
+    let badgeClass = 'bg-emerald-500/15 text-emerald-700 dark:text-emerald-400 border-emerald-500/30 font-bold';
+    if (!hasData) {
+      status = 'Belum Ada Kartu';
+      badgeClass = 'bg-surface-3 text-appText-muted border-accent/15';
+    } else if (retention < 75) {
       status = 'Kritis (Perlu Review)';
-      badgeClass = 'bg-rose-500/15 text-rose-600 dark:text-rose-400 border-rose-500/30';
+      badgeClass = 'bg-rose-500/15 text-rose-700 dark:text-rose-400 border-rose-500/30 font-bold';
     } else if (retention < 88) {
       status = 'Stabil (Penguatan Rutin)';
-      badgeClass = 'bg-amber-500/15 text-amber-600 dark:text-amber-400 border-amber-500/30';
+      badgeClass = 'bg-amber-500/15 text-amber-800 dark:text-amber-400 border-amber-500/30 font-bold';
     }
 
     return {
@@ -170,6 +174,7 @@ export const LearnerMasteryReport: React.FC<LearnerMasteryReportProps> = ({
       avgRetentionRate: retention,
       healthStatus: status,
       retentionBadge: badgeClass,
+      cardCountWithStability,
     };
   }, [cards, trackProgress, bloomedKanjiCount]);
 
@@ -191,7 +196,7 @@ export const LearnerMasteryReport: React.FC<LearnerMasteryReportProps> = ({
       {/* 4 Core Competency Cards Grid */}
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
         {/* Metric 1: Vocational SSW Vocab */}
-        <div className="p-3.5 sm:p-4 rounded-xl bg-surface-2/60 border border-accent/15 flex flex-col justify-between space-y-1.5">
+        <div className="p-3.5 sm:p-4 card-interactive-lift rounded-xl bg-surface-2/60 border border-accent/15 flex flex-col justify-between space-y-1.5">
           <div className="flex items-center justify-between">
             <span className="text-xs font-semibold text-appText-muted flex items-center gap-1.5">
               <Briefcase className="w-4 h-4 text-accent" />
@@ -212,7 +217,7 @@ export const LearnerMasteryReport: React.FC<LearnerMasteryReportProps> = ({
         </div>
 
         {/* Metric 2: Kanji Memorized */}
-        <div className="p-3.5 sm:p-4 rounded-xl bg-surface-2/60 border border-accent/15 flex flex-col justify-between space-y-1.5">
+        <div className="p-3.5 sm:p-4 card-interactive-lift rounded-xl bg-surface-2/60 border border-accent/15 flex flex-col justify-between space-y-1.5">
           <div className="flex items-center justify-between">
             <span className="text-xs font-semibold text-appText-muted flex items-center gap-1.5">
               <Flower2 className="w-4 h-4 text-accent-hot" />
@@ -233,7 +238,7 @@ export const LearnerMasteryReport: React.FC<LearnerMasteryReportProps> = ({
         </div>
 
         {/* Metric 3: Grammar Patterns */}
-        <div className="p-3.5 sm:p-4 rounded-xl bg-surface-2/60 border border-accent/15 flex flex-col justify-between space-y-1.5">
+        <div className="p-3.5 sm:p-4 card-interactive-lift rounded-xl bg-surface-2/60 border border-accent/15 flex flex-col justify-between space-y-1.5">
           <div className="flex items-center justify-between">
             <span className="text-xs font-semibold text-appText-muted flex items-center gap-1.5">
               <BookOpen className="w-4 h-4 text-sky-500" />
@@ -254,7 +259,7 @@ export const LearnerMasteryReport: React.FC<LearnerMasteryReportProps> = ({
         </div>
 
         {/* Metric 4: FSRS Total Cards */}
-        <div className="p-3.5 sm:p-4 rounded-xl bg-surface-2/60 border border-accent/15 flex flex-col justify-between space-y-1.5">
+        <div className="p-3.5 sm:p-4 card-interactive-lift rounded-xl bg-surface-2/60 border border-accent/15 flex flex-col justify-between space-y-1.5">
           <div className="flex items-center justify-between">
             <span className="text-xs font-semibold text-appText-muted flex items-center gap-1.5">
               <Brain className="w-4 h-4 text-indigo-500" />
@@ -288,7 +293,7 @@ export const LearnerMasteryReport: React.FC<LearnerMasteryReportProps> = ({
                   Kesehatan Retensi Memori Jangka Panjang (FSRS Memory Health)
                 </h3>
                 <span className={`text-xs font-bold px-2 py-0.5 rounded-full border ${retentionBadge}`}>
-                  {avgRetentionRate}% · {healthStatus}
+                  {totalCards > 0 && cardCountWithStability > 0 ? `${avgRetentionRate}% · ${healthStatus}` : healthStatus}
                 </span>
               </div>
               <p className="text-xs text-appText-muted mt-0.5">
@@ -335,9 +340,9 @@ export const LearnerMasteryReport: React.FC<LearnerMasteryReportProps> = ({
                 </h3>
                 <span className={`text-xs font-bold px-2 py-0.5 rounded-full border ${
                   streakInfo.isTodayActive
-                    ? 'bg-amber-500/15 text-amber-600 dark:text-amber-400 border-amber-500/30'
+                    ? 'bg-amber-500/15 text-amber-800 dark:text-amber-400 border-amber-500/30 font-bold'
                     : streakInfo.isProtected
-                    ? 'bg-blue-500/15 text-blue-600 dark:text-blue-400 border-blue-500/30'
+                    ? 'bg-blue-500/15 text-blue-800 dark:text-blue-400 border-blue-500/30 font-bold'
                     : 'bg-surface-3 text-appText-muted border-accent/15'
                 }`}>
                   {streakInfo.isTodayActive ? '✓ Aktif Hari Ini' : streakInfo.isProtected ? '🛡️ Grace Window (36h) Aktif' : 'Belum Belajar'}
@@ -377,7 +382,7 @@ export const LearnerMasteryReport: React.FC<LearnerMasteryReportProps> = ({
           {jlptLevelsData.map((item) => (
             <div
               key={item.level}
-              className={`p-3.5 sm:p-4 rounded-xl border transition-all ${
+              className={`p-3.5 sm:p-4 card-interactive-lift rounded-xl border transition-all ${
                 item.isRecommendedByCat
                   ? 'bg-accent/10 border-accent shadow-xs ring-1 ring-accent/20'
                   : 'bg-surface-2/60 border-accent/15'

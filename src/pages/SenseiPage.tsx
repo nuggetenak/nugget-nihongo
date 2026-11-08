@@ -4,6 +4,7 @@
 // ══════════════════════════════════════════════════════════════════
 
 import React, { useState, useEffect, useRef } from 'react';
+import { useBodyScrollLock } from '../hooks/useBodyScrollLock';
 import {
   Sparkles,
   Send,
@@ -34,6 +35,7 @@ import {
   clearChatHistory,
 } from '../lib/ai/senseiClient';
 import { speakPersona, stopPersonaVoice } from '../lib/audio/voiceManager';
+import { IrasutoyaImage } from '../components/common/IrasutoyaImage';
 
 // ── Pre-configured Scenario Prompts ──────────────────────────────
 const ROLEPLAY_SCENARIOS = [
@@ -80,6 +82,14 @@ function formatModelName(model?: string): string {
   if (model.includes('gemini-3.8')) return 'Sensei Flash 3.8';
   if (model.includes('gemini')) return 'Sensei Flash';
   return 'Sensei AI';
+}
+
+function getSenseiAvatarAsset(persona: SenseiPersona, expression?: string): string {
+  if (persona === 'senpai_aoi') return 'senpai_studying';
+  if (expression === 'praise') return 'sensei_praise';
+  if (expression === 'thinking') return 'sensei_thinking';
+  if (expression === 'ojigi') return 'sensei_ojigi';
+  return 'sensei_teaching';
 }
 
 /**
@@ -192,6 +202,21 @@ export const SenseiPage: React.FC = () => {
 
   const messagesEndRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLTextAreaElement>(null);
+
+  // Lock body scroll while clear confirm dialog is active
+  useBodyScrollLock(isClearConfirmOpen);
+
+  // Close clear confirm modal on Escape key
+  useEffect(() => {
+    if (!isClearConfirmOpen) return;
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') {
+        setIsClearConfirmOpen(false);
+      }
+    };
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [isClearConfirmOpen]);
 
   // Muat riwayat pesan saat mode berubah
   useEffect(() => {
@@ -346,17 +371,21 @@ export const SenseiPage: React.FC = () => {
               persona === 'sensei_nugget'
                 ? 'bg-amber-500/15 border-amber-500/30'
                 : 'bg-rose-500/15 border-rose-500/30'
-            }`}
+            } overflow-hidden`}
           >
-            {persona === 'sensei_nugget' ? '🍵' : '🌸'}
+            {persona === 'sensei_nugget' ? (
+              <IrasutoyaImage assetId="sensei_teaching" className="w-9 h-9" containerClassName="w-9 h-9 shrink-0" animateFloat />
+            ) : (
+              <IrasutoyaImage assetId="senpai_studying" className="w-9 h-9" containerClassName="w-9 h-9 shrink-0" animateFloat />
+            )}
           </div>
           <div className="min-w-0">
             <div className="flex items-center gap-2 flex-wrap">
               <h1 className="text-base sm:text-lg font-bold text-appText-bright truncate">
                 {persona === 'sensei_nugget' ? 'Sensei Nugget' : 'Senpai Aoi'}
               </h1>
-              <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-xs font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 shrink-0">
-                <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
+              <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-xs font-bold bg-emerald-500/10 text-emerald-700 dark:text-emerald-400 border border-emerald-500/20 shrink-0">
+                <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
                 <span>AI Tutor Siap</span>
               </span>
             </div>
@@ -463,7 +492,7 @@ export const SenseiPage: React.FC = () => {
               type="button"
               key={sc.id}
               onClick={() => handleSendMessage(sc.prompt)}
-              className="min-h-[40px] px-3.5 py-2 rounded-full bg-surface-2 hover:bg-surface-3 border border-accent/25 hover:border-accent text-xs font-semibold text-appText-bright whitespace-nowrap shrink-0 transition-all active:scale-95 shadow-xs flex items-center justify-center gap-1.5"
+              className="min-h-[40px] px-3.5 py-2 card-interactive-lift rounded-full bg-surface-2 hover:bg-surface-3 border border-accent/25 hover:border-accent text-xs font-semibold text-appText-bright whitespace-nowrap shrink-0 transition-all active:scale-95 shadow-xs flex items-center justify-center gap-1.5"
             >
               <span>{sc.title}</span>
             </button>
@@ -475,7 +504,7 @@ export const SenseiPage: React.FC = () => {
               type="button"
               key={idx}
               onClick={() => handleSendMessage(p)}
-              className="min-h-[40px] px-3.5 py-2 rounded-full bg-surface-2 hover:bg-surface-3 border border-accent/25 hover:border-accent text-xs font-semibold text-appText-bright whitespace-nowrap shrink-0 transition-all active:scale-95 shadow-xs flex items-center justify-center gap-1.5"
+              className="min-h-[40px] px-3.5 py-2 card-interactive-lift rounded-full bg-surface-2 hover:bg-surface-3 border border-accent/25 hover:border-accent text-xs font-semibold text-appText-bright whitespace-nowrap shrink-0 transition-all active:scale-95 shadow-xs flex items-center justify-center gap-1.5"
             >
               <span className="text-accent">✦</span>
               <span>{p}</span>
@@ -488,7 +517,7 @@ export const SenseiPage: React.FC = () => {
               type="button"
               key={idx}
               onClick={() => handleSendMessage(p)}
-              className="min-h-[40px] px-3.5 py-2 rounded-full bg-surface-2 hover:bg-surface-3 border border-accent/25 hover:border-accent text-xs font-semibold text-appText-bright whitespace-nowrap shrink-0 transition-all active:scale-95 shadow-xs flex items-center justify-center gap-1.5 font-jp"
+              className="min-h-[40px] px-3.5 py-2 card-interactive-lift rounded-full bg-surface-2 hover:bg-surface-3 border border-accent/25 hover:border-accent text-xs font-semibold text-appText-bright whitespace-nowrap shrink-0 transition-all active:scale-95 shadow-xs flex items-center justify-center gap-1.5 font-jp"
             >
               <span className="text-accent font-sans">✍️</span>
               <span>{p}</span>
@@ -509,20 +538,29 @@ export const SenseiPage: React.FC = () => {
             >
               {/* Avatar Icon */}
               <div
-                className={`w-8 h-8 sm:w-9 sm:h-9 rounded-xl flex items-center justify-center text-sm shrink-0 border ${
+                className={`w-8 h-8 sm:w-9 sm:h-9 rounded-xl flex items-center justify-center text-sm shrink-0 border overflow-hidden ${
                   isUser
                     ? 'bg-accent/20 border-accent/40 text-accent'
                     : persona === 'sensei_nugget'
-                    ? 'bg-amber-500/20 border-amber-500/40 text-amber-300'
-                    : 'bg-rose-500/20 border-rose-500/40 text-rose-300'
+                    ? 'bg-amber-500/20 border-amber-500/40 text-amber-800 dark:text-amber-300 font-bold'
+                    : 'bg-rose-500/20 border-rose-500/40 text-rose-700 dark:text-rose-300 font-bold'
                 }`}
               >
-                {isUser ? <User className="w-4 h-4" /> : persona === 'sensei_nugget' ? '🍵' : '🌸'}
+                {isUser ? (
+                  <User className="w-4 h-4" />
+                ) : (
+                  <IrasutoyaImage
+                    assetId={getSenseiAvatarAsset(persona, msg.expression) as any}
+                    className="w-7 h-7"
+                    containerClassName="w-7 h-7 shrink-0"
+                    animateFloat
+                  />
+                )}
               </div>
 
               {/* Message Bubble Card */}
               <div
-                className={`max-w-[88%] sm:max-w-[80%] rounded-2xl px-4 py-3 sm:px-5 sm:py-3.5 leading-relaxed shadow-xs ${
+                className={`max-w-[88%] sm:max-w-[80%] card-interactive-lift rounded-2xl px-4 py-3 sm:px-5 sm:py-3.5 leading-relaxed shadow-xs ${
                   isUser
                     ? 'bg-accent text-bg font-medium rounded-tr-xs'
                     : 'bg-surface-2 border border-accent/15 text-appText-bright rounded-tl-xs space-y-3'
@@ -570,8 +608,8 @@ export const SenseiPage: React.FC = () => {
                       >
                         {copiedId === msg.id ? (
                           <>
-                            <Check className="w-3.5 h-3.5 text-emerald-400" />
-                            <span className="text-emerald-400 font-medium">Tersalin</span>
+                            <Check className="w-3.5 h-3.5 text-emerald-700 dark:text-emerald-400" />
+                            <span className="text-emerald-700 dark:text-emerald-400 font-bold">Tersalin</span>
                           </>
                         ) : (
                           <>
@@ -610,8 +648,12 @@ export const SenseiPage: React.FC = () => {
         {/* Loading Indicator */}
         {isLoading && (
           <div className="flex items-start gap-2.5 sm:gap-3.5 animate-in fade-in duration-200">
-            <div className="w-8 h-8 sm:w-9 sm:h-9 rounded-xl bg-amber-500/20 border border-amber-500/40 text-amber-300 flex items-center justify-center text-sm shrink-0 animate-pulse">
-              {persona === 'sensei_nugget' ? '🍵' : '🌸'}
+            <div className="w-8 h-8 sm:w-9 sm:h-9 rounded-xl bg-amber-500/20 border border-amber-500/40 text-amber-800 dark:text-amber-300 font-bold flex items-center justify-center text-sm shrink-0 overflow-hidden">
+              {persona === 'sensei_nugget' ? (
+                <IrasutoyaImage assetId="sensei_thinking" className="w-7 h-7" containerClassName="w-7 h-7 shrink-0" animateFloat />
+              ) : (
+                <IrasutoyaImage assetId="senpai_studying" className="w-7 h-7" containerClassName="w-7 h-7 shrink-0" animateFloat />
+              )}
             </div>
             <div className="bg-surface-2 border border-accent/15 rounded-2xl rounded-tl-xs px-4 py-3 flex items-center gap-2 text-xs text-appText-muted">
               <RefreshCw className="w-3.5 h-3.5 animate-spin text-accent" />
@@ -695,6 +737,7 @@ export const SenseiPage: React.FC = () => {
       {/* Non-Blocking Chat Clear Confirmation Modal */}
       {isClearConfirmOpen && (
         <div
+          onClick={() => setIsClearConfirmOpen(false)}
           className="fixed inset-0 z-50 bg-black/70 backdrop-blur-sm flex items-end sm:items-center justify-center p-0 sm:p-4 animate-in fade-in duration-150"
           role="dialog"
           aria-modal="true"

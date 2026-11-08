@@ -61,9 +61,12 @@ export const ChoukaiPlayer: React.FC<ChoukaiPlayerProps> = ({
       return;
     }
 
-    // Call onPlay callback to consume quota
-    const allowed = onPlay();
-    if (!allowed && !isSubmitted) return;
+    // Call onPlay callback to consume quota ONLY when starting from beginning (Ticket T-40)
+    const isStartingFresh = !audioRef.current || audioRef.current.currentTime < 0.5 || playbackProgress === 0;
+    if (isStartingFresh) {
+      const allowed = onPlay();
+      if (!allowed && !isSubmitted) return;
+    }
 
     if (choukai.audioUrl) {
       if (!audioRef.current) {
@@ -71,6 +74,7 @@ export const ChoukaiPlayer: React.FC<ChoukaiPlayerProps> = ({
         audioRef.current.onended = () => {
           setIsPlaying(false);
           setPlaybackProgress(0);
+          if (audioRef.current) audioRef.current.currentTime = 0;
           if (intervalRef.current) clearInterval(intervalRef.current);
         };
       }
@@ -113,10 +117,10 @@ export const ChoukaiPlayer: React.FC<ChoukaiPlayerProps> = ({
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-theme/60 pb-3">
         <div className="flex items-center gap-2.5 min-w-0">
           <div className="w-8 h-8 rounded-xl bg-emerald-500/15 border border-emerald-500/30 flex items-center justify-center shrink-0">
-            <Headphones className="w-4 h-4 text-emerald-400" />
+            <Headphones className="w-4 h-4 text-emerald-700 dark:text-emerald-400" />
           </div>
           <div className="min-w-0">
-            <span className="text-xs font-black uppercase tracking-wider text-emerald-400">
+            <span className="text-xs font-black uppercase tracking-wider text-emerald-700 dark:text-emerald-400">
               Audio Menyimak (Choukai)
             </span>
             <p className="text-xs text-appText-muted truncate">
@@ -131,10 +135,10 @@ export const ChoukaiPlayer: React.FC<ChoukaiPlayerProps> = ({
             <span
               className={`text-xs font-bold px-3 py-1 rounded-xl border flex items-center gap-1.5 ${
                 remainingPlays === 2
-                  ? 'bg-emerald-500/15 border-emerald-500/30 text-emerald-300'
+                  ? 'bg-emerald-500/15 border-emerald-500/30 text-emerald-700 dark:text-emerald-300 font-bold'
                   : remainingPlays === 1
-                  ? 'bg-amber-500/15 border-amber-500/30 text-amber-300'
-                  : 'bg-rose-500/15 border-rose-500/30 text-rose-300'
+                  ? 'bg-amber-500/15 border-amber-500/30 text-amber-700 dark:text-amber-300 font-bold'
+                  : 'bg-rose-500/15 border-rose-500/30 text-rose-700 dark:text-rose-300 font-bold'
               }`}
             >
               <Volume2 className="w-3.5 h-3.5" />
@@ -218,7 +222,7 @@ export const ChoukaiPlayer: React.FC<ChoukaiPlayerProps> = ({
       <div className="pt-1">
         {isSubmitted ? (
           <div className="bg-surface-2 border border-theme rounded-2xl p-4 space-y-2.5 animate-in fade-in">
-            <div className="flex items-center gap-1.5 text-xs font-bold text-emerald-400 uppercase tracking-wider">
+            <div className="flex items-center gap-1.5 text-xs font-bold text-emerald-700 dark:text-emerald-400 uppercase tracking-wider">
               <Unlock className="w-3.5 h-3.5" />
               <span>Transkrip Resmi Dialog (Terbuka):</span>
             </div>

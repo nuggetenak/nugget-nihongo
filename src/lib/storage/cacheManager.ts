@@ -77,7 +77,10 @@ class CacheManagerService {
           !url.endsWith('/manifest.json') &&
           !url.endsWith('/manifest.webmanifest') &&
           !url.includes('/icons/') &&
-          !url.includes('/fonts/')
+          !url.includes('/fonts/') &&
+          !url.includes('/data/curriculum/') &&
+          !url.includes('/data/grammar/') &&
+          !url.includes('/data/vocab/')
         );
       });
 

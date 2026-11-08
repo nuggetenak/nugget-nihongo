@@ -48,6 +48,7 @@ import { speakJapanese } from '../lib/audio/tts';
 import { JapaneseFormattedText } from '../components/ui/JapaneseFormattedText';
 import { SkeletonCard } from '../components/ui/SkeletonCard';
 import { SyncStatusPill } from '../components/ui/SyncStatusPill';
+import { IrasutoyaImage } from '../components/common/IrasutoyaImage';
 import { CurriculumTrackBrowser } from '../components/materi/CurriculumTrackBrowser';
 import {
   getNextUncompletedLesson,
@@ -118,6 +119,7 @@ export const HomePage: React.FC = () => {
     openConjugation,
     openNuance,
     openDetailModal,
+    placementHistory,
   } = useAppStore();
 
   const { activeTrackId, trackProgress } = useCurriculumStore();
@@ -181,10 +183,16 @@ export const HomePage: React.FC = () => {
   // Total learned cards count
   const totalLearnedCards = useMemo(() => Object.keys(cards).length, [cards]);
 
-  // Load daily word and lists for track browser
+  // Load daily word and lists for track browser (dynamic per active track)
   useEffect(() => {
     let isMounted = true;
-    Promise.all([loadVocab('n5'), loadGrammar('n5')])
+    const targetLevel = activeTrackId.startsWith('ssw')
+      ? 'n4'
+      : activeTrackId.startsWith('minna')
+      ? 'n5'
+      : (activeTrackId as any);
+
+    Promise.all([loadVocab(targetLevel), loadGrammar(targetLevel)])
       .then(([vList, gList]) => {
         if (!isMounted) return;
         setVocabList(vList || []);
@@ -199,7 +207,7 @@ export const HomePage: React.FC = () => {
     return () => {
       isMounted = false;
     };
-  }, []);
+  }, [activeTrackId]);
 
   // Dynamically compute next uncompleted lesson
   const nextLesson: NextUncompletedLessonResult | null = useMemo(() => {
@@ -231,53 +239,74 @@ export const HomePage: React.FC = () => {
 
   return (
     <div className="w-full max-w-6xl mx-auto px-3 sm:px-6 pt-3 sm:pt-6 pb-[calc(5.5rem+env(safe-area-inset-bottom))] lg:pb-12 space-y-4 sm:space-y-6 min-w-0 overflow-x-hidden">
-      {/* ── TIER 1: GUIDED DAILY MISSION COMMAND HERO ── */}
-      <div className="relative overflow-hidden rounded-2xl sm:rounded-3xl bg-gradient-to-br from-amber-950/60 via-surface to-surface border border-accent/25 p-4 sm:p-7 shadow-lg">
-        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-5 sm:gap-6">
-          <div className="max-w-2xl space-y-3.5 min-w-0">
+      {/* ── TIER 1: GUIDED COMPACT WA-BENTO MISSION COMMAND HERO (~180px) ── */}
+      <div className="relative overflow-hidden rounded-2xl sm:rounded-3xl bg-gradient-to-br from-amber-500/10 via-surface to-surface-2 border border-accent/25 p-4 sm:p-6 shadow-md">
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 sm:gap-6">
+          <div className="max-w-2xl space-y-3 min-w-0">
+            {/* Badges Row */}
             <div className="flex flex-wrap items-center gap-2">
               <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-500/15 border border-amber-500/30 text-accent-hot text-xs font-bold font-mono tabular-nums">
-                <Flame className="w-3.5 h-3.5 fill-amber-500 text-amber-500 shrink-0" />
-                <span>Streak {streak} Hari Aktif</span>
+                <Flame className={`w-3.5 h-3.5 shrink-0 ${streak > 0 ? 'fill-amber-500 text-amber-500' : 'text-appText-muted opacity-60'}`} />
+                <span>{streak > 0 ? `Streak ${streak} Hari Aktif` : 'Streak 0 Hari (Mulai Hari Ini)'}</span>
               </div>
+
+              {/* Status Target XP Riil (Anti-Kontradiksi 0 XP) */}
               <span
-                className={`text-xs font-bold px-3 py-1 rounded-full ${
-                  dueCount > 0
-                    ? 'bg-amber-500/20 text-accent border border-amber-500/30'
-                    : 'bg-emerald-950/80 text-emerald-400 font-extrabold border border-emerald-500/40'
+                className={`text-xs font-bold px-3 py-1 rounded-full border ${
+                  todayXP === 0
+                    ? 'bg-amber-500/15 border-amber-500/30 text-accent-hot'
+                    : isGoalReached
+                    ? 'bg-emerald-500/15 border-emerald-500/30 text-emerald-600 dark:text-emerald-400 font-black'
+                    : 'bg-amber-500/15 border-amber-500/30 text-accent-hot'
                 }`}
               >
-                {dueCount > 0 ? `📬 ${dueCount} FSRS Due` : '✨ Target Hari Ini Selesai'}
+                {todayXP === 0
+                  ? `🌱 Langkah Pertama (${todayXP}/${dailyGoalXP} XP)`
+                  : isGoalReached
+                  ? `✨ Target Selesai (${todayXP}/${dailyGoalXP} XP)`
+                  : `⚡ Momentum (${todayXP}/${dailyGoalXP} XP)`}
               </span>
+
+              {dueCount > 0 && (
+                <span className="text-xs font-bold px-3 py-1 rounded-full bg-amber-500/20 border border-amber-500/35 text-accent font-mono">
+                  📬 {dueCount} FSRS Due
+                </span>
+              )}
+
               <SyncStatusPill />
             </div>
 
-            <div>
-              <h1 className="text-xl sm:text-2xl font-extrabold text-appText-bright tracking-tight">
-                Selamat Belajar · Misi Hari Ini 今日も頑張ろう
+            {/* Hierarchical Title & Clear Kicker */}
+            <div className="space-y-0.5">
+              <div className="text-xs font-semibold font-jp text-accent tracking-wide flex items-center gap-1.5">
+                <span>今日も頑張ろう</span>
+                <span className="text-appText-muted font-ui">· Misi Hari Ini</span>
+              </div>
+              <h1 className="text-xl sm:text-2xl font-black text-appText-bright tracking-tight leading-snug">
+                Selamat Belajar 🍙
               </h1>
-              <p className="text-xs sm:text-sm text-appText-muted mt-1 leading-relaxed">
+              <p className="text-xs sm:text-sm text-appText-muted leading-relaxed line-clamp-2 mt-1">
                 {nextLesson && !nextLesson.isAllCompleted
-                  ? `Fokus aktif: ${nextLesson.unitTitle} · ${nextLesson.title}. Selesaikan tahapan pembelajaran dan latih kemampuan Can-Do nyatamu.`
+                  ? `Unit aktif: ${nextLesson.unitTitle}. Tuntaskan materi dan latih pemahaman nyatamu.`
                   : dueCount > 0
-                  ? `Ada ${dueCount} kartu memori FSRS yang siap diulas. Jaga retensi jangka panjangmu sebelum lanjut ke unit baru.`
-                  : 'Semua target belajar tuntas! Lanjutkan penguasaan materi di jalur aktifmu atau uji kemampuan di Dojo.'}
+                  ? `Ada ${dueCount} kartu memori FSRS yang siap diulas untuk menjaga retensimu.`
+                  : 'Target belajarmu tuntas! Lanjutkan unit materi baru atau latih kemampuan di Dojo.'}
               </p>
             </div>
 
-            {/* Next Lesson Can-Do Tag */}
+            {/* Next Lesson Can-Do Tag (Compact 1-Baris) */}
             {nextLesson?.canDo && (
               <div className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-amber-500/10 border border-amber-500/20 text-accent-hot text-xs font-semibold max-w-full">
                 <span className="shrink-0 font-bold">🎯 Target Can-Do:</span>
-                <span className="font-normal text-appText-bright">
+                <span className="font-normal text-appText-bright truncate">
                   {nextLesson.canDo}
                 </span>
               </div>
             )}
 
-            {/* Focused Single-Action Hero CTA Bar */}
-            <div className="pt-1 flex flex-wrap gap-2.5 items-center">
-              {/* Primary 1-Tap Dynamic Next Uncompleted Lesson CTA */}
+            {/* Focused Dynamic Action Bar */}
+            <div className="pt-0.5 flex flex-wrap gap-2.5 items-center">
+              {/* Primary 1-Tap Dynamic Next Lesson CTA */}
               <button
                 type="button"
                 onClick={() => {
@@ -294,12 +323,16 @@ export const HomePage: React.FC = () => {
                       lastStudiedLesson.lessonId
                     );
                   } else {
-                    openLessonStudy('n5', 'n5-u1', 'n5-l1');
+                    openLessonStudy(
+                      activeTrackId || 'n5',
+                      `${activeTrackId || 'n5'}-u1`,
+                      `${activeTrackId || 'n5'}-l1`
+                    );
                   }
                 }}
                 className="min-h-[48px] px-6 py-3 rounded-xl bg-accent hover:bg-accent-hot text-bg font-extrabold text-sm sm:text-base flex items-center gap-2.5 transition-all shadow-glow hover:shadow-lg active:scale-95 cursor-pointer"
               >
-                <Play className="w-5 h-5 fill-bg shrink-0" />
+                <Play className="w-4 h-4 fill-bg shrink-0" />
                 <span className="font-extrabold tracking-wide">
                   {(() => {
                     if (nextLesson) {
@@ -319,38 +352,53 @@ export const HomePage: React.FC = () => {
                       );
                       return `Lanjut Belajar · ${trackLabel} Unit ${unitNum} (Pelajaran ${lessonNum})`;
                     }
-                    return 'Mulai Belajar · Bab 1 (N5)';
+                    return `Mulai Belajar · Bab 1 (${(activeTrackId || 'n5').toUpperCase()})`;
                   })()}
                 </span>
               </button>
 
+              {/* Dynamic Contextual Secondary Button */}
               {dueCount > 0 ? (
                 <button
                   type="button"
                   onClick={() => setActiveTab('kebun')}
-                  className="min-h-[44px] px-4 py-3 rounded-xl bg-amber-500/20 hover:bg-amber-500/30 text-accent-hot border border-amber-500/40 font-bold text-xs sm:text-sm flex items-center gap-1.5 transition-all active:scale-95 cursor-pointer"
+                  className="min-h-[44px] px-4 py-2.5 rounded-xl bg-amber-500/15 hover:bg-amber-500/25 text-accent-hot border border-amber-500/30 font-bold text-xs sm:text-sm flex items-center gap-1.5 transition-all active:scale-95 cursor-pointer"
                 >
                   <Zap className="w-4 h-4 fill-accent-hot shrink-0" />
-                  <span>Ulas FSRS ({dueCount} kartu)</span>
+                  <span>Ulas FSRS ({dueCount})</span>
                 </button>
+              ) : totalLearnedCards === 0 ? (
+                placementHistory && placementHistory.length > 0 ? null : (
+                  <button
+                    type="button"
+                    onClick={openCatPlacement}
+                    className="min-h-[44px] px-4 py-2.5 rounded-xl bg-surface-2 hover:bg-surface-3 text-accent border border-accent/25 font-bold text-xs sm:text-sm flex items-center gap-1.5 transition-all active:scale-95 cursor-pointer"
+                    title="Uji level adaptif 3 menit"
+                  >
+                    <Compass className="w-4 h-4 text-accent shrink-0" />
+                    <span>Uji Level (CAT)</span>
+                  </button>
+                )
               ) : (
                 <button
                   type="button"
                   onClick={() => setActiveTab('kebun')}
-                  className="min-h-[44px] px-4 py-3 rounded-xl bg-surface-2 hover:bg-surface-3 text-appText-bright border border-accent/20 font-bold text-xs sm:text-sm flex items-center gap-1.5 transition-all active:scale-95 cursor-pointer"
+                  className="min-h-[44px] px-4 py-2.5 rounded-xl bg-surface-2 hover:bg-surface-3 text-appText-muted hover:text-appText-bright border border-accent/20 font-bold text-xs sm:text-sm flex items-center gap-1.5 transition-all active:scale-95 cursor-pointer"
                 >
                   <Sprout className="w-4 h-4 text-emerald-400 shrink-0" />
-                  <span>Kebun Retensi FSRS</span>
+                  <span>Kebun Kata</span>
                 </button>
               )}
             </div>
           </div>
 
           <div className="hidden sm:flex shrink-0 items-center justify-center">
-            <img
-              src="/icons/logo.png"
-              alt="Nugget Nihongo"
-              className="w-20 h-20 sm:w-28 sm:h-28 rounded-2xl object-cover shadow-glow ring-2 ring-amber-500/40"
+            <IrasutoyaImage
+              assetId="sensei_teaching"
+              animateFloat
+              className="w-20 h-20 sm:w-24 sm:h-24 object-contain filter drop-shadow-md"
+              alt="Sensei Nugget Nihongo (いらすとや)"
+              showAttributionTooltip
             />
           </div>
         </div>
@@ -359,7 +407,7 @@ export const HomePage: React.FC = () => {
       {/* ── TIER 2: HARMONIOUS DAILY COMPANION DUO (XP GOAL & KOTOWAZA) ── */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-3.5 sm:gap-4">
         {/* Widget A: Target Harian & Momentum Belajar */}
-        <div className="bg-surface border border-accent/20 rounded-2xl sm:rounded-3xl p-4 sm:p-5 flex flex-col justify-between shadow-sm space-y-3 min-w-0">
+        <div className="bg-surface border border-accent/20 rounded-2xl sm:rounded-3xl p-4 sm:p-5 flex flex-col justify-between shadow-sm space-y-3 min-w-0 card-interactive-lift">
           <div className="space-y-2.5">
             <div className="flex items-center justify-between gap-2">
               <div className="flex items-center gap-2 min-w-0">
@@ -370,7 +418,7 @@ export const HomePage: React.FC = () => {
               </div>
               <span
                 className={`text-xs sm:text-sm font-bold font-mono tabular-nums shrink-0 ${
-                  isGoalReached ? 'text-emerald-400' : 'text-amber-400'
+                  isGoalReached ? 'text-emerald-700 dark:text-emerald-400 font-black' : 'text-accent-hot dark:text-amber-400 font-bold'
                 }`}
               >
                 {todayXP} / {dailyGoalXP} XP {isGoalReached ? '🎯' : ''}
@@ -380,7 +428,7 @@ export const HomePage: React.FC = () => {
             <div className="w-full bg-surface-3 h-2.5 rounded-full overflow-hidden border border-accent/15 my-1">
               <div
                 className={`h-full rounded-full transition-all duration-500 ${
-                  isGoalReached ? 'bg-emerald-400 shadow-glow' : 'bg-amber-400'
+                  isGoalReached ? 'bg-emerald-500 shadow-glow' : 'bg-accent'
                 }`}
                 style={{ width: `${goalProgressPercent}%` }}
               />
@@ -424,7 +472,7 @@ export const HomePage: React.FC = () => {
 
         {/* Kotowaza: Daily Authentic Japanese Proverb */}
         {/* Daily word card container must have min-h-[180px] to prevent layout shift */}
-        <div className="relative overflow-hidden bg-surface-2 border border-accent/20 rounded-2xl sm:rounded-3xl p-4 sm:p-5 flex flex-col justify-between shadow-sm group min-w-0 min-h-[180px]">
+        <div className="relative overflow-hidden bg-surface-2 border border-accent/20 rounded-2xl sm:rounded-3xl p-4 sm:p-5 flex flex-col justify-between shadow-sm group min-w-0 min-h-[180px] card-interactive-lift">
           <div
             className="absolute inset-0 bg-cover bg-center opacity-15 group-hover:opacity-25 transition-opacity pointer-events-none"
             style={{ backgroundImage: `url('/images/kotowaza-zen.jpg')` }}
@@ -447,7 +495,7 @@ export const HomePage: React.FC = () => {
                 <div className="text-base sm:text-lg font-jp font-bold text-appText-bright" lang="ja">
                   {dailyKotowaza.jp}
                 </div>
-                <div className="text-xs sm:text-sm text-amber-400 font-mono mt-0.5">
+                <div className="text-xs sm:text-sm text-accent-hot dark:text-amber-400 font-mono mt-0.5">
                   {dailyKotowaza.reading}
                 </div>
               </div>
@@ -572,7 +620,7 @@ export const HomePage: React.FC = () => {
             <button
               type="button"
               onClick={() => setRoadmapViewMode('focus')}
-              className={`min-h-[38px] px-3 py-1.5 rounded-lg text-xs font-bold transition-all flex items-center gap-1.5 active:scale-95 cursor-pointer ${
+              className={`min-h-[40px] px-3 py-1.5 rounded-lg text-xs font-bold transition-all flex items-center gap-1.5 active:scale-95 cursor-pointer ${
                 roadmapViewMode === 'focus'
                   ? 'bg-accent text-bg shadow-sm font-extrabold'
                   : 'text-appText-muted hover:text-appText-bright'
@@ -583,7 +631,7 @@ export const HomePage: React.FC = () => {
             <button
               type="button"
               onClick={() => setRoadmapViewMode('all')}
-              className={`min-h-[38px] px-3 py-1.5 rounded-lg text-xs font-bold transition-all flex items-center gap-1.5 active:scale-95 cursor-pointer ${
+              className={`min-h-[40px] px-3 py-1.5 rounded-lg text-xs font-bold transition-all flex items-center gap-1.5 active:scale-95 cursor-pointer ${
                 roadmapViewMode === 'all'
                   ? 'bg-accent text-bg shadow-sm font-extrabold'
                   : 'text-appText-muted hover:text-appText-bright'
@@ -669,7 +717,7 @@ export const HomePage: React.FC = () => {
                   <button
                     type="button"
                     onClick={() => setShowUnitExpectation(!showUnitExpectation)}
-                    className="min-h-[36px] px-2 text-xs font-semibold text-accent hover:underline flex items-center gap-1 cursor-pointer"
+                    className="min-h-[40px] px-2.5 text-xs font-semibold text-accent hover:underline flex items-center gap-1 cursor-pointer active:scale-95"
                   >
                     <span>{showUnitExpectation ? 'Ringkas' : 'Baca Harapan Topik'}</span>
                     <ChevronDown

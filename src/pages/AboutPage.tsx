@@ -20,10 +20,15 @@ import {
   Volume2,
   History,
   Scale,
+  Mail,
+  Coffee,
+  MessageSquareHeart,
 } from 'lucide-react';
 import { useAppStore } from '../store/useAppStore';
+import { useModalStore } from '../store/useModalStore';
 import { APP_VERSION, APP_RELEASE_NAME } from '../config/version';
 import { LicenseAttributionModal } from '../components/ui/LicenseAttributionModal';
+import { IrasutoyaImage } from '../components/common/IrasutoyaImage';
 
 interface FAQItem {
   id: string;
@@ -121,6 +126,7 @@ const FAQ_LIST: FAQItem[] = [
 
 export const AboutPage: React.FC = () => {
   const { openOnboarding, openFeatureGuide, openPatchNotes, setActiveTab } = useAppStore();
+  const { openModal } = useModalStore();
   const [faqSearch, setFaqSearch] = useState('');
   const [selectedFaqCategory, setSelectedFaqCategory] = useState<string>('all');
   const [expandedFaqId, setExpandedFaqId] = useState<string | null>('faq-1');
@@ -187,11 +193,16 @@ export const AboutPage: React.FC = () => {
             </div>
           </div>
 
-          <div className="hidden sm:flex shrink-0 items-center justify-center">
+          <div className="flex shrink-0 items-center justify-center gap-3">
+            <IrasutoyaImage
+              assetId="senpai_studying"
+              animateFloat
+              className="w-16 h-16 sm:w-24 sm:h-24 drop-shadow-md"
+            />
             <img
               src="/icons/logo.png"
               alt="Nugget Nihongo Logo"
-              className="w-24 h-24 sm:w-36 sm:h-36 rounded-3xl object-cover shadow-glow ring-2 ring-amber-500/40"
+              className="hidden sm:block w-20 h-20 sm:w-28 sm:h-28 rounded-2xl object-cover shadow-glow ring-2 ring-amber-500/40"
             />
           </div>
         </div>
@@ -199,7 +210,7 @@ export const AboutPage: React.FC = () => {
 
       {/* Core Highlights Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-        <div className="bg-surface border border-accent/20 rounded-2xl p-5 space-y-3 shadow-sm">
+        <div className="bg-surface border border-accent/20 rounded-2xl p-5 space-y-3 shadow-sm card-interactive-lift">
           <div className="w-10 h-10 rounded-xl bg-amber-500/15 border border-amber-500/25 flex items-center justify-center text-xl text-accent">
             ❤️
           </div>
@@ -209,7 +220,7 @@ export const AboutPage: React.FC = () => {
           </p>
         </div>
 
-        <div className="bg-surface border border-accent/20 rounded-2xl p-5 space-y-3 shadow-sm">
+        <div className="bg-surface border border-accent/20 rounded-2xl p-5 space-y-3 shadow-sm card-interactive-lift">
           <div className="w-10 h-10 rounded-xl bg-emerald-500/15 border border-emerald-500/25 flex items-center justify-center text-xl text-emerald-400">
             📴
           </div>
@@ -219,7 +230,7 @@ export const AboutPage: React.FC = () => {
           </p>
         </div>
 
-        <div className="bg-surface border border-accent/20 rounded-2xl p-5 space-y-3 shadow-sm">
+        <div className="bg-surface border border-accent/20 rounded-2xl p-5 space-y-3 shadow-sm card-interactive-lift">
           <div className="w-10 h-10 rounded-xl bg-sky-500/15 border border-sky-500/25 flex items-center justify-center text-xl text-sky-400">
             🧠
           </div>
@@ -539,6 +550,104 @@ export const AboutPage: React.FC = () => {
               </ul>
             </div>
           )}
+        </div>
+      </div>
+
+      {/* Pusat Bantuan & Komunitas Terpadu (Community & Creator Support) */}
+      <div className="bg-surface border border-accent/20 rounded-3xl p-6 sm:p-8 space-y-6 shadow-sm">
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-accent/15 pb-4">
+          <div className="flex items-center gap-2.5">
+            <div className="w-9 h-9 rounded-xl bg-accent/15 text-accent flex items-center justify-center shrink-0">
+              <MessageSquareHeart className="w-5 h-5" />
+            </div>
+            <div>
+              <h2 className="font-bold text-sm sm:text-base text-appText-bright">
+                Pusat Bantuan & Komunitas Pemelajar
+              </h2>
+              <p className="text-xs text-appText-muted">
+                Terhubung langsung dengan tim pengembang Nugget Nihongo & sesama pejuang bahasa Jepang di Indonesia
+              </p>
+            </div>
+          </div>
+          <button
+            type="button"
+            onClick={() => openModal('community')}
+            className="self-start sm:self-auto px-4 py-2.5 min-h-[44px] rounded-xl bg-accent text-bg font-bold text-xs flex items-center gap-2 hover:bg-accent-hot transition-all shadow-glow active:scale-95 shrink-0"
+          >
+            <Sparkles className="w-4 h-4" />
+            <span>Buka Hub Komunitas ↗</span>
+          </button>
+        </div>
+
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+          {/* Email Support */}
+          <a
+            href="mailto:nuggetnihongo@gmail.com?subject=Pertanyaan%20dan%20Dukungan%20Nugget%20Nihongo"
+            className="p-4 rounded-2xl bg-surface-2 border border-accent/15 hover:border-accent/40 transition-all group flex flex-col justify-between gap-2 active:scale-95 min-h-[44px]"
+          >
+            <div className="flex items-center justify-between">
+              <div className="flex items-center gap-2 text-xs font-bold text-accent">
+                <Mail className="w-4 h-4" />
+                <span>Email Resmi</span>
+              </div>
+              <ExternalLink className="w-3.5 h-3.5 text-appText-muted group-hover:text-accent transition-colors" />
+            </div>
+            <div>
+              <div className="text-xs font-semibold text-appText-bright font-mono">nuggetnihongo@gmail.com</div>
+              <div className="text-[11px] text-appText-muted mt-0.5">Dukungan pemelajar, kurasi konten & feedback</div>
+            </div>
+          </a>
+
+          {/* Official 𝕏 */}
+          <a
+            href="https://x.com/NuggetNihongo"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="p-4 rounded-2xl bg-surface-2 border border-accent/15 hover:border-accent/40 transition-all group flex flex-col justify-between gap-2 active:scale-95 min-h-[44px]"
+          >
+            <div className="flex items-center justify-between">
+              <div className="flex items-center gap-2 text-xs font-bold text-accent">
+                <span className="font-mono font-black text-sm">𝕏</span>
+                <span>Akun Resmi 𝕏</span>
+              </div>
+              <ExternalLink className="w-3.5 h-3.5 text-appText-muted group-hover:text-accent transition-colors" />
+            </div>
+            <div>
+              <div className="text-xs font-semibold text-appText-bright font-mono">@NuggetNihongo</div>
+              <div className="text-[11px] text-appText-muted mt-0.5">Update rilis & trivia bahasa Jepang harian</div>
+            </div>
+          </a>
+
+          {/* Trakteer Creator Support */}
+          <a
+            href="https://trakteer.id/nugget-nihongo"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="p-4 rounded-2xl bg-surface-2 border border-amber-500/20 hover:border-amber-500/50 transition-all group flex flex-col justify-between gap-2 active:scale-95 min-h-[44px]"
+          >
+            <div className="flex items-center justify-between">
+              <div className="flex items-center gap-2 text-xs font-bold text-amber-500">
+                <Coffee className="w-4 h-4" />
+                <span>Dukung di Trakteer</span>
+              </div>
+              <ExternalLink className="w-3.5 h-3.5 text-appText-muted group-hover:text-amber-500 transition-colors" />
+            </div>
+            <div>
+              <div className="text-xs font-semibold text-appText-bright font-mono">trakteer.id/nugget-nihongo</div>
+              <div className="text-[11px] text-appText-muted mt-0.5">Apresiasi kopi untuk pengembangan server & fitur</div>
+            </div>
+          </a>
+        </div>
+
+        {/* Future Community Channels Transparency Notice */}
+        <div className="p-3.5 rounded-xl bg-surface-2/70 border border-accent/10 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 text-xs text-appText-muted">
+          <div className="flex items-center gap-2">
+            <span className="text-accent">ℹ️</span>
+            <span>Kanal Instagram & Server Discord Komunitas sedang dalam tahap persiapan.</span>
+          </div>
+          <span className="px-2.5 py-1 rounded-full text-[10px] font-bold bg-surface-3 text-appText-muted border border-accent/10 uppercase tracking-wider">
+            Segera Hadir
+          </span>
         </div>
       </div>
 

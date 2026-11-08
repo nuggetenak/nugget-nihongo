@@ -372,8 +372,13 @@ export const useGamificationStore = create<GamificationState>((set, get) => {
       // Ticket T-199: Award +1 water drop for completing a Choukai listening session
       if (mode === 'listening' || mode === 'choukai') {
         try {
-          const { useGardenStore } = require('../garden/gardenStore');
-          useGardenStore.getState().addWaterDrop(1);
+          if (typeof window !== 'undefined') {
+            import('../garden/gardenStore')
+              .then(({ useGardenStore }) => {
+                useGardenStore.getState().addWaterDrop(1);
+              })
+              .catch(() => {});
+          }
         } catch {}
       }
 

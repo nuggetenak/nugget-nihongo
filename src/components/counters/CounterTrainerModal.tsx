@@ -24,6 +24,8 @@ import {
   Layers,
 } from 'lucide-react';
 import { useFocusTrap } from '../../hooks/useFocusTrap';
+import { useBodyScrollLock } from '../../hooks/useBodyScrollLock';
+import { IrasutoyaImage } from '../common/IrasutoyaImage';
 import { speakJapanese } from '../../lib/audio/tts';
 import { playSuccessSfx, playErrorSfx, playFlipSfx } from '../../lib/audio/sfx';
 import {
@@ -54,6 +56,7 @@ export const CounterTrainerModal: React.FC<CounterTrainerModalProps> = ({
   initialTab = 'matrix',
 }) => {
   const containerRef = useFocusTrap<HTMLDivElement>(isOpen, onClose);
+  useBodyScrollLock(isOpen);
   const [activeTab, setActiveTab] = useState<MainTab>(initialTab);
 
   // Tab 1: Matrix state
@@ -132,7 +135,7 @@ export const CounterTrainerModal: React.FC<CounterTrainerModalProps> = ({
   return (
     <div
       onClick={onClose}
-      className="fixed inset-0 z-[9999] flex items-end sm:items-center justify-center p-0 sm:p-4 bg-black/85 backdrop-blur-sm animate-in fade-in duration-200"
+      className="fixed inset-0 z-50 flex items-end sm:items-center justify-center p-0 sm:p-4 bg-black/85 backdrop-blur-sm animate-in fade-in duration-200"
       role="dialog"
       aria-modal="true"
       aria-label="Pelatih Kata Bantu Bilangan Jepang (助数詞)"
@@ -150,8 +153,8 @@ export const CounterTrainerModal: React.FC<CounterTrainerModalProps> = ({
         {/* Modal Header */}
         <div className="p-4 sm:p-5 border-b border-accent/15 bg-surface-2/70 flex items-center justify-between shrink-0">
           <div className="flex items-center gap-3 min-w-0">
-            <div className="w-10 h-10 rounded-2xl bg-amber-500/20 text-amber-400 flex items-center justify-center shrink-0 border border-amber-500/30">
-              <Hash className="w-5 h-5" />
+            <div className="w-10 h-10 rounded-2xl bg-amber-500/20 text-amber-400 flex items-center justify-center shrink-0 border border-amber-500/30 overflow-hidden">
+              <IrasutoyaImage assetId="senpai_studying" className="w-8 h-8" containerClassName="w-8 h-8 shrink-0" animateFloat />
             </div>
             <div className="min-w-0">
               <div className="flex items-center gap-2">
@@ -211,7 +214,7 @@ export const CounterTrainerModal: React.FC<CounterTrainerModalProps> = ({
               <Sparkles className="w-4 h-4" />
               <span>Kuis Tebak Penghitung</span>
               {quizScore.total > 0 && (
-                <span className="text-xs px-1.5 py-0.2 rounded-full bg-surface-3/80 text-appText-bright">
+                <span className="text-xs px-1.5 py-0.5 rounded-full bg-surface-3/80 text-appText-bright">
                   {quizScore.correct}/{quizScore.total}
                 </span>
               )}
@@ -243,7 +246,7 @@ export const CounterTrainerModal: React.FC<CounterTrainerModalProps> = ({
                   : 'bg-surface hover:bg-surface-3 text-appText-muted hover:text-appText-bright border border-accent/15'
               }`}
             >
-              <AlertTriangle className="w-4 h-4 text-amber-400" />
+              <AlertTriangle className="w-4 h-4 text-accent-hot dark:text-amber-400" />
               <span>6 Jebakan Utama</span>
             </button>
           </div>
@@ -309,12 +312,12 @@ export const CounterTrainerModal: React.FC<CounterTrainerModalProps> = ({
 
               {/* Informative Guidance Banner */}
               <div className="p-3.5 rounded-2xl bg-amber-500/10 border border-amber-500/25 flex items-start gap-3">
-                <Lightbulb className="w-5 h-5 text-amber-400 shrink-0 mt-0.5" />
+                <Lightbulb className="w-5 h-5 text-accent-hot dark:text-amber-400 shrink-0 mt-0.5" />
                 <div className="text-xs text-appText-bright leading-relaxed">
-                  <span className="font-bold text-amber-300">Kunci Rahasia Menghitung: </span>
+                  <span className="font-bold text-amber-700 dark:text-amber-300">Kunci Rahasia Menghitung: </span>
                   Angka 1 (いっ-), 6 (ろっ-), 8 (はっ-), dan 10 (じゅっ-) sering memicu{' '}
-                  <span className="text-amber-300 font-semibold">Sokuon (konsonan kembar)</span>. Sedangkan angka 3 (さん) sering memicu{' '}
-                  <span className="text-cyan-300 font-semibold">Rendaku (h $\rightarrow$ b, k $\rightarrow$ g)</span>. Klik kartu untuk melihat bagan 1–10 dan audio pelafalan!
+                  <span className="text-amber-700 dark:text-amber-300 font-bold">Sokuon (konsonan kembar)</span>. Sedangkan angka 3 (さん) sering memicu{' '}
+                  <span className="text-cyan-700 dark:text-cyan-300 font-bold">Rendaku (h $\rightarrow$ b, k $\rightarrow$ g)</span>. Klik kartu untuk melihat bagan 1–10 dan audio pelafalan!
                 </div>
               </div>
 
@@ -330,7 +333,7 @@ export const CounterTrainerModal: React.FC<CounterTrainerModalProps> = ({
                     return (
                       <div
                         key={counter.id}
-                        className="rounded-2xl bg-surface-2 border border-accent/15 hover:border-accent/35 transition-all overflow-hidden"
+                        className="rounded-2xl card-interactive-lift bg-surface-2 border border-accent/15 hover:border-accent/35 transition-all overflow-hidden"
                       >
                         {/* Header Bar */}
                         <div
@@ -499,9 +502,9 @@ export const CounterTrainerModal: React.FC<CounterTrainerModalProps> = ({
                   let borderClass = 'border-accent/15 hover:border-accent/40 bg-surface-2';
                   if (isAnswered) {
                     if (option.isCorrect) {
-                      borderClass = 'border-emerald-500 bg-emerald-500/15 text-emerald-200';
+                      borderClass = 'border-emerald-500 bg-emerald-500/15 text-emerald-950 dark:text-emerald-200';
                     } else if (isSelected) {
-                      borderClass = 'border-rose-500 bg-rose-500/15 text-rose-200';
+                      borderClass = 'border-rose-500 bg-rose-500/15 text-rose-950 dark:text-rose-200';
                     } else {
                       borderClass = 'border-accent/10 opacity-60 bg-surface-2';
                     }
@@ -519,7 +522,7 @@ export const CounterTrainerModal: React.FC<CounterTrainerModalProps> = ({
                         {isAnswered && (
                           <p
                             className={`text-xs mt-2 font-medium leading-relaxed ${
-                              option.isCorrect ? 'text-emerald-300' : 'text-rose-300'
+                              option.isCorrect ? 'text-emerald-800 dark:text-emerald-300 font-bold' : 'text-rose-800 dark:text-rose-300 font-bold'
                             }`}
                           >
                             {option.feedback}
@@ -530,7 +533,7 @@ export const CounterTrainerModal: React.FC<CounterTrainerModalProps> = ({
                       {isAnswered && (
                         <div className="shrink-0 mt-0.5">
                           {option.isCorrect ? (
-                            <CheckCircle2 className="w-5 h-5 text-emerald-400" />
+                            <IrasutoyaImage assetId="hanko_excellent" className="w-6 h-6" containerClassName="w-6 h-6 shrink-0" animatePop />
                           ) : isSelected ? (
                             <XCircle className="w-5 h-5 text-rose-400" />
                           ) : null}
@@ -704,17 +707,17 @@ export const CounterTrainerModal: React.FC<CounterTrainerModalProps> = ({
 
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 text-xs">
                       <div className="p-3 rounded-xl bg-rose-500/10 border border-rose-500/20 space-y-1">
-                        <div className="text-xs font-bold uppercase text-rose-400">
+                        <div className="text-xs font-bold uppercase text-rose-700 dark:text-rose-400">
                           Jebakan / Anggapan Keliru
                         </div>
-                        <p className="text-rose-200 leading-relaxed">{guide.trap}</p>
+                        <p className="text-rose-900 dark:text-rose-200 leading-relaxed">{guide.trap}</p>
                       </div>
 
                       <div className="p-3 rounded-xl bg-emerald-500/10 border border-emerald-500/20 space-y-1">
-                        <div className="text-xs font-bold uppercase text-emerald-400">
+                        <div className="text-xs font-bold uppercase text-emerald-700 dark:text-emerald-400">
                           Standar yang Benar
                         </div>
-                        <p className="text-emerald-200 leading-relaxed">{guide.correction}</p>
+                        <p className="text-emerald-900 dark:text-emerald-200 leading-relaxed">{guide.correction}</p>
                       </div>
                     </div>
 

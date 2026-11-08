@@ -4,8 +4,9 @@
 // ══════════════════════════════════════════════════════════════════
 
 import React from 'react';
-import { X, Command, Keyboard, Zap, Sparkles } from 'lucide-react';
+import { X, Keyboard } from 'lucide-react';
 import { useFocusTrap } from '../../hooks/useFocusTrap';
+import { IrasutoyaImage } from '../common/IrasutoyaImage';
 
 interface KeyboardShortcutsModalProps {
   isOpen: boolean;
@@ -61,8 +62,13 @@ export const KeyboardShortcutsModal: React.FC<KeyboardShortcutsModalProps> = ({ 
       >
         <div className="flex items-center justify-between border-b border-accent/15 pb-4">
           <div className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-2xl bg-amber-500/20 border border-amber-500/40 flex items-center justify-center text-accent shadow-glow">
-              <Keyboard className="w-5 h-5" />
+            <div className="w-12 h-12 rounded-2xl bg-amber-500/15 border border-amber-500/30 flex items-center justify-center shadow-glow shrink-0 overflow-hidden">
+              <IrasutoyaImage
+                assetId="senpai_studying"
+                className="w-10 h-10 object-contain"
+                alt="Senpai Belajar Keyboard"
+                animateFloat
+              />
             </div>
             <div>
               <h2 className="text-lg font-bold text-appText-bright">Pintasan Keyboard</h2>
@@ -84,14 +90,14 @@ export const KeyboardShortcutsModal: React.FC<KeyboardShortcutsModalProps> = ({ 
         <div className="space-y-5 max-h-[60vh] overflow-y-auto pr-1">
           {shortcutGroups.map((group, idx) => (
             <div key={idx} className="space-y-2.5">
-              <div className="text-xs font-bold uppercase tracking-wider text-accent">
+              <div className="text-xs font-bold uppercase tracking-wider text-amber-800 dark:text-amber-400">
                 {group.title}
               </div>
               <div className="space-y-1.5">
                 {group.shortcuts.map((sc, sIdx) => (
                   <div
                     key={sIdx}
-                    className="flex items-center justify-between p-2.5 rounded-xl bg-surface-2/60 border border-accent/10 hover:border-accent/25 transition-all text-xs"
+                    className="card-interactive-lift flex items-center justify-between p-2.5 rounded-xl bg-surface-2/60 border border-accent/10 hover:border-accent/25 transition-all text-xs"
                   >
                     <span className="text-appText-bright">{sc.label}</span>
                     <div className="flex items-center gap-1 shrink-0 ml-3">
@@ -112,10 +118,10 @@ export const KeyboardShortcutsModal: React.FC<KeyboardShortcutsModalProps> = ({ 
         </div>
 
         <div className="pt-3 border-t border-accent/15 flex items-center justify-between text-xs text-appText-muted">
-          <span>💡 Tekan <kbd className="font-mono text-accent">?</kbd> kapan saja untuk membuka</span>
+          <span>💡 Tekan <kbd className="font-mono text-accent font-bold">?</kbd> kapan saja untuk membuka</span>
           <button
             onClick={onClose}
-            className="px-4 py-2 rounded-xl bg-accent hover:bg-accent-hot text-bg font-bold text-xs transition-all shadow-sm"
+            className="px-5 py-2.5 min-h-[40px] rounded-xl bg-accent hover:bg-accent-hot text-bg font-extrabold text-xs transition-all shadow-sm active:scale-95"
           >
             Mengerti
           </button>

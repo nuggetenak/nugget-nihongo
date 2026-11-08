@@ -25,6 +25,7 @@ import {
   finalizeCATResult,
   calculateCATSEM,
   shouldStopCAT,
+  bridgeCATResultToCurriculum,
   CAT_MAX_QUESTIONS,
   CAT_MIN_QUESTIONS,
   CATQuestion,
@@ -34,6 +35,7 @@ import { useAppStore } from '../../store/useAppStore';
 import { useCurriculumStore, TrackId } from '../../lib/curriculum/curriculumStore';
 import { playSuccessSfx, playErrorSfx, playFanfareSfx } from '../../lib/audio/sfx';
 import { useFocusTrap } from '../../hooks/useFocusTrap';
+import { useBodyScrollLock } from '../../hooks/useBodyScrollLock';
 
 interface CatPlacementModalProps {
   isOpen: boolean;
@@ -44,6 +46,7 @@ const TOTAL_QUESTIONS = CAT_MAX_QUESTIONS;
 
 export const CatPlacementModal: React.FC<CatPlacementModalProps> = ({ isOpen, onClose }) => {
   const containerRef = useFocusTrap<HTMLDivElement>(isOpen, onClose);
+  useBodyScrollLock(isOpen);
   const { setSelectedLevel, setActiveTab, showToast, addPlacementResult } = useAppStore();
   const { setActiveTrack } = useCurriculumStore();
 
@@ -179,14 +182,14 @@ export const CatPlacementModal: React.FC<CatPlacementModalProps> = ({ isOpen, on
       `Level disetel ke ${result.estimatedLevel.toUpperCase()} · Jalur ${result.recommendedTrack.toUpperCase()} aktif!`,
       '🎯'
     );
-    setActiveTab('materi');
+    setActiveTab('home');
     onClose();
   };
 
   const modalContent = (
     <div
       onClick={onClose}
-      className="fixed inset-0 z-[9999] flex items-end sm:items-center justify-center p-0 sm:p-4 bg-black/80 backdrop-blur-sm animate-in fade-in duration-200"
+      className="fixed inset-0 z-50 flex items-end sm:items-center justify-center p-0 sm:p-4 bg-black/80 backdrop-blur-sm animate-in fade-in duration-200"
       role="dialog"
       aria-modal="true"
       aria-label="Tes Penempatan Mandiri (CAT)"
@@ -267,11 +270,11 @@ export const CatPlacementModal: React.FC<CatPlacementModalProps> = ({ isOpen, on
                 </div>
 
                 <div className="p-3 rounded-2xl bg-surface-2 border border-accent/15 text-center">
-                  <div className="text-xs text-appText-muted uppercase font-bold">Poin Kemahiran</div>
-                  <div className="text-base sm:text-lg font-black text-blue-400 font-mono">
-                    {Math.min(100, Math.max(10, Math.round(((result.theta + 3) / 6) * 100)))}
+                  <div className="text-xs text-appText-muted uppercase font-bold">Proyeksi JLPT</div>
+                  <div className="text-base sm:text-lg font-black text-accent-hot font-mono">
+                    {Math.min(180, Math.max(30, Math.round(((result.theta + 3) / 6) * 180)))}
                   </div>
-                  <div className="text-xs text-appText-muted">Skor Relatif / 100</div>
+                  <div className="text-xs text-appText-muted">Skor Skala / 180</div>
                 </div>
 
                 <div className="p-3 rounded-2xl bg-surface-2 border border-accent/15 text-center">
@@ -306,6 +309,21 @@ export const CatPlacementModal: React.FC<CatPlacementModalProps> = ({ isOpen, on
                 </div>
               </div>
 
+              {/* SSW & JFT Readiness Badge */}
+              {(() => {
+                const bridge = bridgeCATResultToCurriculum(result.theta);
+                return (
+                  <div className="p-3 rounded-2xl bg-surface-2/60 border border-accent/20 flex flex-col sm:flex-row sm:items-center justify-between gap-2 text-xs">
+                    <div className="flex items-center gap-2">
+                      <span className="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse shrink-0" />
+                      <span className="font-bold text-appText-bright">Status SSW:</span>
+                      <span className="text-accent font-semibold capitalize">{bridge.sswReadiness.replace(/-/g, ' ')}</span>
+                    </div>
+                    <span className="text-xs font-mono font-bold text-appText-muted">Standar JFT: {bridge.jftLevel.toUpperCase()}</span>
+                  </div>
+                );
+              })()}
+
               {/* Action Buttons */}
               <div className="pt-2 space-y-2">
                 <button
@@ -333,7 +351,7 @@ export const CatPlacementModal: React.FC<CatPlacementModalProps> = ({ isOpen, on
               <div className="space-y-1.5">
                 <div className="flex items-center justify-between text-xs font-semibold">
                   <span className="text-accent font-bold">
-                    Soal {questionIndex + 1} dari {TOTAL_QUESTIONS}
+                    Soal {questionIndex + 1} (Adaptif: 6–12 Soal)
                   </span>
                   <span className="text-appText-muted font-mono text-xs">
                     Kalibrasi: Level {currentQuestion.level.toUpperCase()}
@@ -366,9 +384,9 @@ export const CatPlacementModal: React.FC<CatPlacementModalProps> = ({ isOpen, on
                   let btnStyle = 'bg-surface-2 hover:bg-surface-3 border-accent/15 text-appText-bright';
                   if (isAnswered) {
                     if (isCorrect) {
-                      btnStyle = 'bg-emerald-500/20 border-emerald-500/50 text-emerald-300 font-bold';
+                      btnStyle = 'bg-emerald-500/20 border-emerald-500/50 text-emerald-700 dark:text-emerald-300 font-bold';
                     } else if (isSelected) {
-                      btnStyle = 'bg-red-500/20 border-red-500/50 text-red-300';
+                      btnStyle = 'bg-red-500/20 border-red-500/50 text-red-700 dark:text-red-300';
                     } else {
                       btnStyle = 'bg-surface-2/40 border-accent/10 text-appText-muted opacity-60';
                     }
@@ -385,7 +403,7 @@ export const CatPlacementModal: React.FC<CatPlacementModalProps> = ({ isOpen, on
                         <span className="w-6 h-6 rounded-lg bg-surface-3/80 font-mono text-xs flex items-center justify-center shrink-0 border border-accent/10">
                           {String.fromCharCode(65 + idx)}
                         </span>
-                        <span className="font-jp truncate" lang="ja">{option}</span>
+                        <span className="font-jp break-words whitespace-normal leading-snug" lang="ja">{option}</span>
                       </div>
 
                       {isAnswered && isCorrect && (
@@ -428,7 +446,26 @@ export const CatPlacementModal: React.FC<CatPlacementModalProps> = ({ isOpen, on
                 );
               })()}
             </div>
-          ) : null}
+          ) : (
+            <div className="py-12 text-center space-y-4">
+              <div className="w-12 h-12 rounded-2xl bg-amber-500/20 text-accent flex items-center justify-center mx-auto border border-amber-500/30">
+                <Target className="w-6 h-6" />
+              </div>
+              <div className="space-y-1">
+                <p className="text-sm font-bold text-appText-bright">Bank Soal Sedang Disiapkan</p>
+                <p className="text-xs text-appText-muted max-w-xs mx-auto">
+                  Tidak dapat memuat soal diagnostik saat ini. Silakan ulangi atau pilih level secara manual.
+                </p>
+              </div>
+              <button
+                type="button"
+                onClick={startNewTest}
+                className="px-4 py-2.5 rounded-xl bg-accent text-bg font-bold text-xs"
+              >
+                Coba Muat Ulang
+              </button>
+            </div>
+          )}
         </div>
       </div>
     </div>

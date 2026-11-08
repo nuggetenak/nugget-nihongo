@@ -14,7 +14,7 @@ window.vocabSSW_Textile = [
     "meaning_en": "Mesin pemotong pola kain lembaran otomatis (CAM)",
     "level": "n4",
     "pos": "noun",
-    "nuance": "Safety sensor guard",
+    "nuance": "Wajib memastikan sensor pengaman photoelectric berfungsi sebelum pisau potong laser atau bilah berosilasi beroperasi.",
     "examples": [
       {
         "jp": "自動裁断機の安全確認を行ってください。",
@@ -32,7 +32,7 @@ window.vocabSSW_Textile = [
     "meaning_en": "Mesin jahit industri kecepatan tinggi (Lockstitch/Overlock)",
     "level": "n4",
     "pos": "noun",
-    "nuance": "Finger guard",
+    "nuance": "Wajib memasang pelindung jari (finger guard) di area jarum jahit yang bergerak hingga 5.000 jahitan per menit.",
     "examples": [
       {
         "jp": "工業用ミシンの安全確認を行ってください。",
@@ -50,7 +50,7 @@ window.vocabSSW_Textile = [
     "meaning_en": "Mesin detektor jarum patah pada pakaian jadi",
     "level": "n4",
     "pos": "noun",
-    "nuance": "Needle break isolation",
+    "nuance": "Standar mutu mutlak ekspor garmen Jepang; jika mesin berbunyi bip, pakaian wajib dikarantina dan disisir ulang.",
     "examples": [
       {
         "jp": "検針機の安全確認を行ってください。",
@@ -68,7 +68,7 @@ window.vocabSSW_Textile = [
     "meaning_en": "Setrika uap garmen finishing bersuhu 130°C",
     "level": "n4",
     "pos": "noun",
-    "nuance": "Steam burn hazard",
+    "nuance": "Waspada risiko luka bakar uap bertekanan tinggi; gunakan sarung tangan tahan panas dan pedal pengisap vakum uap.",
     "examples": [
       {
         "jp": "仕上げアイロンの安全確認を行ってください。",
@@ -86,7 +86,7 @@ window.vocabSSW_Textile = [
     "meaning_en": "Penggelaran gulungan kain berlapis-lapis secara rata",
     "level": "n4",
     "pos": "noun",
-    "nuance": "Lifting posture",
+    "nuance": "Gunakan postur angkat ergonomis saat memindahkan gulungan gelondongan kain berat agar pinggang tidak cedera.",
     "examples": [
       {
         "jp": "延反作業の安全確認を行ってください。",
@@ -104,7 +104,7 @@ window.vocabSSW_Textile = [
     "meaning_en": "Jahitan lurus standar keliman baju (Lockstitch)",
     "level": "n4",
     "pos": "noun",
-    "nuance": "Thread tension",
+    "nuance": "Tegangan benang (thread tension) harus diatur seimbang antara benang atas dan sekoci agar jahitan tidak mengkerut.",
     "examples": [
       {
         "jp": "本縫いの安全確認を行ってください。",
@@ -122,7 +122,7 @@ window.vocabSSW_Textile = [
     "meaning_en": "Mesin jahit obras kelim tepi kain",
     "level": "n4",
     "pos": "noun",
-    "nuance": "Blade pinch hazard",
+    "nuance": "Waspada risiko pisau pemotong tepi kain (blade pinch hazard); jaga jari di luar garis batas penutup pelindung pisau.",
     "examples": [
       {
         "jp": "ロックミシンの安全確認を行ってください。",
@@ -140,7 +140,7 @@ window.vocabSSW_Textile = [
     "meaning_en": "Sarung tangan pelindung tusukan jarum jahit",
     "level": "n4",
     "pos": "noun",
-    "nuance": "PPE",
+    "nuance": "Alat Pelindung Diri (APD) khusus dari bahan polietilen berkerapatan tinggi untuk melindungi jari dari tusukan jarum berkecepatan tinggi.",
     "examples": [
       {
         "jp": "防針手袋の安全確認を行ってください。",
@@ -158,7 +158,7 @@ window.vocabSSW_Textile = [
     "meaning_en": "Pencegahan kontaminasi jarum atau serpihan logam",
     "level": "n4",
     "pos": "noun",
-    "nuance": "Export compliance",
+    "nuance": "Kepatuhan ekspor garmen; seluruh produk jadi wajib lolos detektor logam (kenshinki) untuk menjamin nihil serpihan jarum patah.",
     "examples": [
       {
         "jp": "異物混入防止の安全確認を行ってください。",
@@ -176,7 +176,7 @@ window.vocabSSW_Textile = [
     "meaning_en": "Lembar instruksi spesifikasi SOP jahitan produk",
     "level": "n4",
     "pos": "noun",
-    "nuance": "QC specification",
+    "nuance": "Dokumen acuan standar mutu (QC specification) yang memuat ukuran keliman, jenis benang, jumlah tusukan, dan toleransi cacat jahitan.",
     "examples": [
       {
         "jp": "縫製仕様書の安全確認を行ってください。",

@@ -32,6 +32,7 @@ import { ProfileSettingsTab } from '../components/settings/ProfileSettingsTab';
 import { AudioSettingsTab } from '../components/settings/AudioSettingsTab';
 import { SyncSettingsTab } from '../components/settings/SyncSettingsTab';
 import { AdvancedSettingsTab } from '../components/settings/AdvancedSettingsTab';
+import { IrasutoyaImage } from '../components/common/IrasutoyaImage';
 
 export type SettingsTab = 'profil' | 'audio' | 'sync' | 'lanjutan';
 
@@ -130,7 +131,13 @@ export const SettingsPage: React.FC = () => {
   const goalProgressPercent = Math.min(100, Math.round((todayXP / Math.max(1, dailyGoalXP)) * 100));
 
   const levelInfo = getLevelForXp(xp);
-  const nextLevelProgress = getNextLevelProgress(xp);
+  const nextLevelRaw = getNextLevelProgress(xp);
+  const nextLevelProgress = {
+    currentLevelXp: nextLevelRaw.currentLevel.xp,
+    nextLevelXp: nextLevelRaw.nextLevel ? nextLevelRaw.nextLevel.xp : nextLevelRaw.currentLevel.xp,
+    percent: nextLevelRaw.progressPercent,
+    xpNeeded: nextLevelRaw.xpNeeded,
+  };
 
   const streakInfo = useMemo(() => {
     let lastDate = '';
@@ -387,7 +394,7 @@ export const SettingsPage: React.FC = () => {
       hash: '#settings/sync',
       label: 'Akun & Cloud',
       icon: <Cloud className="w-4 h-4 shrink-0" />,
-      badge: syncStatus === 'success' ? 'Aktif' : undefined,
+      badge: syncStatus === 'synced' ? 'Aktif' : undefined,
     },
     {
       id: 'lanjutan',
@@ -401,14 +408,19 @@ export const SettingsPage: React.FC = () => {
   return (
     <div className="w-full max-w-full sm:max-w-4xl mx-auto py-3 sm:py-6 px-2 sm:px-4 pb-[calc(5.5rem+env(safe-area-inset-bottom))] lg:pb-12 min-w-0 overflow-x-hidden space-y-5 sm:space-y-6 animate-in fade-in duration-300">
       {/* Page Header */}
-      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
-        <div>
-          <h1 className="text-2xl sm:text-3xl font-extrabold text-appText-bright mb-1 tracking-tight">
-            Profil & Pengaturan
-          </h1>
-          <p className="text-xs sm:text-sm text-appText-muted">
-            Kelola identitas pembelajar, audio pelafalan, status sinkronisasi cloud, dan preferensi aplikasi.
-          </p>
+      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+        <div className="flex items-center gap-3.5 min-w-0">
+          <div className="w-12 h-12 rounded-2xl bg-amber-500/20 border border-amber-500/30 flex items-center justify-center shrink-0 overflow-hidden hidden sm:flex shadow-sm">
+            <IrasutoyaImage assetId="senpai_studying" className="w-10 h-10" containerClassName="w-10 h-10 shrink-0" animateFloat />
+          </div>
+          <div>
+            <h1 className="text-2xl sm:text-3xl font-extrabold text-appText-bright mb-1 tracking-tight">
+              Profil & Pengaturan
+            </h1>
+            <p className="text-xs sm:text-sm text-appText-muted">
+              Kelola identitas pembelajar, audio pelafalan, status sinkronisasi cloud, dan preferensi aplikasi.
+            </p>
+          </div>
         </div>
         <div className="hidden sm:block shrink-0">
           <SyncStatusPill />
@@ -555,7 +567,7 @@ export const SettingsPage: React.FC = () => {
         <button role="switch" aria-checked={showFurigana} onClick={() => setShowFurigana(!showFurigana)}>
           Furigana Switch
         </button>
-        <span>{userSubstratum === 'none' ? 'Aktif' : ''}</span>
+        <span>{(userSubstratum as any) === 'none' ? 'Aktif' : ''}</span>
       </div>
 
       {/* Modal Reset Confirmation Dialog (Preserves Sprint 37 Contract <ResetConfirmationModal) */}

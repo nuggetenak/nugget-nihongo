@@ -2,7 +2,7 @@
 // Universal global bundle for browser and service worker ingestion
 var diagnosticInventory = {
   "version": "1.0.0",
-  "generated_at": "2026-11-02T11:33:06.253Z",
+  "generated_at": "2026-11-08T09:13:43.505Z",
   "total_count": 300,
   "l1_contrastive_count": 150,
   "phonology_hvpt_count": 150,
@@ -993,7 +993,7 @@ var diagnosticInventory = {
       "id": "cp-l1-045",
       "patterns": [
         "私は日本へ行ったことがある。",
-        "私は日本へ行ったことがある。"
+        "私は日本へ行った。"
       ],
       "note_id": "nuance-cp-l1-045",
       "level": "n4",
@@ -1004,7 +1004,7 @@ var diagnosticInventory = {
       "title": "Pernah Melakukan (ta koto ga aru)",
       "stimulus_l1": "Saya pernah pergi ke Jepang.",
       "target_form": "私は日本へ行ったことがある。",
-      "l1_trap_form": "私は日本へ行ったことがある。",
+      "l1_trap_form": "私は日本へ行った。",
       "root_cause": "Pembelajar sering mentransfer kata keterangan pernah menjadi sekadar bentuk lampau itta (\"kemarin saya pergi ke Jepang\"). Tanpa koto ga aru, nuansa pengalaman hidup seumur hidup hilang.",
       "prescription": "💡 Pengalaman seumur hidup = 〜たことがある! Bentuk lampau biasa (itta) hanya menceritakan kejadian masa lalu; pengalaman seumur hidup wajib V-たことがある.",
       "fsrs_difficulty": 7.2,

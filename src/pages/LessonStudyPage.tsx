@@ -14,6 +14,7 @@ import {
   ArrowRight,
   ChevronRight,
   Sparkles,
+  Lock,
 } from 'lucide-react';
 import { useAppStore } from '../store/useAppStore';
 import { useCurriculumStore, TrackId } from '../lib/curriculum/curriculumStore';
@@ -28,6 +29,14 @@ import { ExplanationStage } from '../components/curriculum/player/ExplanationSta
 import { MicroDrillStage } from '../components/curriculum/player/MicroDrillStage';
 import { CanDoCompletionStage } from '../components/curriculum/player/CanDoCompletionStage';
 import { withViewTransition } from '../lib/ui/viewTransition';
+import { IrasutoyaImage } from '../components/common/IrasutoyaImage';
+import {
+  isStage4Locked as checkStage4Locked,
+  canNavigateToStage,
+  getNextStage,
+  getPreviousStage,
+  LessonStageId,
+} from '../lib/curriculum/lessonStageEngine';
 
 export interface LessonWithContext extends CurriculumLesson {
   title?: string;
@@ -37,14 +46,14 @@ export interface LessonWithContext extends CurriculumLesson {
 }
 
 export const LessonStudyPage: React.FC = () => {
-  const { activeLessonContext, closeLessonStudy, openLessonStudy, openSenseiSheet } = useAppStore();
+  const { activeLessonContext, closeLessonStudy, openLessonStudy, openSenseiSheet, showToast } = useAppStore();
   const { trackProgress, completeLesson } = useCurriculumStore();
 
   const [activeStage, setActiveStage] = useState<'dialogue' | 'explanation' | 'drills' | 'cando'>('dialogue');
   const [currentLesson, setCurrentLesson] = useState<LessonWithContext | null>(null);
   const [currentUnit, setCurrentUnit] = useState<any>(null);
   const [trackData, setTrackData] = useState<any>(null);
-  const [drillScore, setDrillScore] = useState<number>(100);
+  const [drillScore, setDrillScore] = useState<number | null>(null);
   const [isLoading, setIsLoading] = useState(true);
   const [notFound, setNotFound] = useState(false);
 
@@ -89,7 +98,11 @@ export const LessonStudyPage: React.FC = () => {
 
         if (foundLesson) {
           const isSsw = trackId?.includes('ssw');
-          const jlptLevel = (['n5', 'n4', 'n3', 'n2', 'n1'].includes(trackId) ? trackId : (isSsw ? 'n4' : 'n5')) as any;
+          const jlptLevel = (['n5', 'n4', 'n3', 'n2', 'n1'].includes(trackId)
+            ? trackId
+            : isSsw || trackId === 'jft-a2'
+            ? 'n4'
+            : 'n5') as any;
           const [grammarList, vocabList, curatedMap] = await Promise.all([
             loadGrammar(jlptLevel).catch(() => []),
             isSsw
@@ -116,7 +129,7 @@ export const LessonStudyPage: React.FC = () => {
           setCurrentLesson(adaptedLesson);
 
           // Cek skor sebelumnya jika pernah selesai
-          const prevScore = trackProgress[trackId]?.lessonScores?.[foundLesson.id] || 100;
+          const prevScore = trackProgress[trackId]?.lessonScores?.[foundLesson.id] ?? null;
           setDrillScore(prevScore);
         }
       } catch (err) {
@@ -161,13 +174,15 @@ export const LessonStudyPage: React.FC = () => {
   // Handler saat latihan selesai
   const handleDrillComplete = (score: number) => {
     setDrillScore(score);
-    if (currentLesson && currentUnit) {
-      if (score >= 80) {
+    if (score >= 80) {
+      if (currentLesson && currentUnit) {
         completeLesson(trackId, currentUnit.id, currentLesson.id, score, 0);
+        showToast('🎉 Pelajaran Tuntas! Kosakata & tata bahasa telah tersimpan di Kebun Review FSRS.', '✨', 3500);
       }
+      setActiveStage('cando');
+    } else {
+      showToast('Skor latihan belum mencapai 80%. Silakan ulangi soal Cek Pemahaman agar pemahaman semakin kokoh! 🔄', '⚠️', 3500);
     }
-    // Otomatis arahkan ke tahap Can-Do
-    setActiveStage('cando');
   };
 
   // Cari pelajaran berikutnya dalam unit/track yang sama
@@ -253,7 +268,7 @@ export const LessonStudyPage: React.FC = () => {
           <button
             type="button"
             onClick={closeLessonStudy}
-            className="min-h-[44px] px-4 py-2.5 rounded-xl bg-accent hover:bg-accent-hover text-surface-0 text-xs sm:text-sm font-bold transition-all shadow-sm active:scale-95 flex items-center gap-2"
+            className="min-h-[44px] px-4 py-2.5 rounded-xl bg-accent hover:bg-accent-hover text-surface-0 text-xs sm:text-sm font-bold transition-all shadow-sm active:scale-95 flex items-center gap-2 card-interactive-lift"
           >
             <ArrowLeft className="w-4 h-4" />
             Kembali ke Silabus Track
@@ -266,7 +281,7 @@ export const LessonStudyPage: React.FC = () => {
   return (
     <div className="w-full max-w-full sm:max-w-4xl mx-auto space-y-5 pb-[calc(5.5rem+env(safe-area-inset-bottom))] lg:pb-12 animate-fade-in min-w-0 overflow-x-hidden">
       {/* ── 1. HEADER STUDIO BELAJAR FOKUS (TARGET 2) ───────────── */}
-      <div className="p-3 sm:p-4 rounded-2xl sm:rounded-3xl bg-surface border border-accent/20 flex flex-col sm:flex-row sm:items-center justify-between gap-2.5 sm:gap-3 shadow-sm">
+      <div className="p-3 sm:p-4 rounded-2xl sm:rounded-3xl bg-surface border border-accent/20 flex flex-col sm:flex-row sm:items-center justify-between gap-2.5 sm:gap-3 shadow-sm card-interactive-lift">
           <div className="flex items-center gap-2.5 sm:gap-3 min-w-0">
             <button
               type="button"
@@ -277,16 +292,23 @@ export const LessonStudyPage: React.FC = () => {
               <ArrowLeft className="w-4 h-4 sm:w-5 sm:h-5" />
             </button>
 
+            <IrasutoyaImage
+              assetId="senpai_studying"
+              animateFloat
+              className="w-10 h-10 object-contain shrink-0 hidden xs:block sm:block"
+              alt="Senpai Belajar"
+            />
+
             <div className="min-w-0 space-y-0.5">
               <div className="flex flex-wrap items-center gap-1.5 text-xs sm:text-xs font-bold">
-                <span className="px-2 py-0.5 rounded-md bg-amber-500/15 text-accent border border-amber-500/25 uppercase font-mono">
+                <span className="px-2 py-0.5 rounded-md bg-amber-500/15 text-amber-800 dark:text-amber-300 border border-amber-500/25 uppercase font-mono font-bold">
                   {trackId.toUpperCase()} · Unit {currentUnit?.unit_number}
                 </span>
-                <span className="text-appText-muted">Pelajaran #{currentLesson.lesson_number}</span>
+                <span className="text-appText-muted font-medium">Pelajaran #{currentLesson.lesson_number}</span>
                 {isLessonDone && (
-                  <span className="px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 flex items-center gap-1 text-xs font-extrabold">
+                  <span className="px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-800 dark:text-emerald-300 border border-emerald-500/30 flex items-center gap-1 text-xs font-extrabold">
                     <CheckCircle2 className="w-3 h-3" />
-                    Tuntas ({drillScore}%)
+                    Tuntas ({drillScore ?? 100}%)
                   </span>
                 )}
               </div>
@@ -304,7 +326,7 @@ export const LessonStudyPage: React.FC = () => {
             <button
               type="button"
               onClick={handleOpenSensei}
-              className="min-h-[40px] px-3.5 py-1.5 rounded-xl bg-amber-500/15 hover:bg-amber-500/25 border border-amber-500/30 text-accent text-xs font-bold transition-all flex items-center gap-1.5 shadow-xs active:scale-95"
+              className="min-h-[40px] px-3.5 py-1.5 rounded-xl bg-amber-500/15 hover:bg-amber-500/25 border border-amber-500/30 text-amber-800 dark:text-amber-300 text-xs font-bold transition-all flex items-center gap-1.5 shadow-xs active:scale-95 card-interactive-lift"
               title="Tanya Sensei seputar materi ini"
               aria-label="Tanya Sensei"
             >
@@ -315,7 +337,7 @@ export const LessonStudyPage: React.FC = () => {
             <button
               type="button"
               onClick={closeLessonStudy}
-              className="text-xs font-bold text-accent hover:underline hidden sm:block shrink-0 px-2 py-1 min-h-[40px] flex items-center active:scale-95"
+              className="text-xs font-bold text-accent hover:underline hidden sm:flex shrink-0 px-3 py-1.5 min-h-[40px] rounded-xl border border-accent/20 bg-surface-2 hover:bg-surface-3 items-center active:scale-95 card-interactive-lift"
             >
               Tutup & Kembali
             </button>
@@ -327,18 +349,28 @@ export const LessonStudyPage: React.FC = () => {
         <div className="grid grid-cols-4 gap-1 sm:gap-2 p-1 sm:p-1.5 bg-surface rounded-2xl border border-accent/20 shadow-sm w-full max-w-full overflow-hidden">
           {stages.map((st) => {
             const isActive = activeStage === st.id;
+            const isCanDoLocked = st.id === 'cando' && !isLessonDone && (drillScore === null || drillScore < 80);
             return (
               <button
                 key={st.id}
                 type="button"
-                onClick={() => setActiveStage(st.id)}
+                onClick={() => {
+                  if (isCanDoLocked) {
+                    showToast('⚠️ Tahap 4 Terkunci: Selesaikan Cek Pemahaman (Tahap 3) dengan skor minimal 80% untuk membuka Tantangan Nyata!', '🔒', 3500);
+                    return;
+                  }
+                  setActiveStage(st.id);
+                }}
+                title={isCanDoLocked ? 'Terkunci: selesaikan Cek Pemahaman (min 80%)' : undefined}
                 className={`min-w-0 flex-1 min-h-[44px] px-1 sm:px-3 py-1.5 sm:py-2 rounded-xl text-xs font-bold transition-all flex flex-col sm:flex-row items-center justify-center gap-1 sm:gap-1.5 overflow-hidden active:scale-95 ${
-                  isActive
+                  isCanDoLocked
+                    ? 'opacity-50 text-appText-dim bg-surface-2/40 cursor-pointer hover:bg-surface-2/60'
+                    : isActive
                     ? 'bg-accent text-bg shadow-sm font-extrabold'
                     : 'text-appText-muted hover:text-appText-bright hover:bg-surface-2'
                 }`}
               >
-                <span className="shrink-0">{st.icon}</span>
+                <span className="shrink-0">{isCanDoLocked ? <Lock className="w-3.5 h-3.5 text-amber-700 dark:text-amber-400" /> : st.icon}</span>
                 <span className="min-w-0 truncate text-xs sm:text-xs">
                   <span className="sm:hidden">{st.shortLabel}</span>
                   <span className="hidden sm:inline">{st.label}</span>
@@ -352,7 +384,7 @@ export const LessonStudyPage: React.FC = () => {
       {/* ── 3. PANEL TAHAP KONTEN DINAMIS ────────────────────────── */}
       <div 
         id="lesson-studio-top"
-        className="scroll-mt-44 sm:scroll-mt-48 p-4 sm:p-7 rounded-3xl bg-surface border border-accent/20 shadow-sm transition-[min-height] duration-300 ease-out min-h-[380px] sm:min-h-[420px] overflow-hidden animate-in fade-in slide-in-from-right-4 duration-300"
+        className="scroll-mt-44 sm:scroll-mt-48 p-4 sm:p-7 rounded-3xl bg-surface border border-accent/20 shadow-sm transition-[min-height] duration-300 ease-out min-h-[380px] sm:min-h-[420px] overflow-hidden animate-in fade-in slide-in-from-right-4 duration-300 card-interactive-lift"
       >
         <div key={activeStage} className="animate-in fade-in duration-200">
           {activeStage === 'dialogue' && (
@@ -405,7 +437,7 @@ export const LessonStudyPage: React.FC = () => {
             });
             window.scrollTo({ top: 0, behavior: 'smooth' });
           }}
-          className="min-h-[44px] px-4 py-2 rounded-xl bg-surface hover:bg-surface-2 border border-accent/30 text-xs font-bold text-appText hover:text-appText-bright disabled:opacity-30 disabled:pointer-events-none shadow-sm transition-all active:scale-95"
+          className="min-h-[44px] px-4 py-2 rounded-xl bg-surface hover:bg-surface-2 border border-accent/30 text-xs font-bold text-appText hover:text-appText-bright disabled:opacity-30 disabled:pointer-events-none shadow-sm transition-all active:scale-95 card-interactive-lift"
         >
           ← Tahap Sebelumnya
         </button>
@@ -413,16 +445,20 @@ export const LessonStudyPage: React.FC = () => {
         {activeStage !== 'cando' ? (
           <button
             type="button"
-            disabled={activeStage === 'drills' && drillScore < 80 && !isLessonDone}
+            disabled={activeStage === 'drills' && !isLessonDone && (drillScore === null || drillScore < 80)}
             onClick={() => {
               withViewTransition(() => {
                 if (activeStage === 'dialogue') setActiveStage('explanation');
                 else if (activeStage === 'explanation') setActiveStage('drills');
-                else if (activeStage === 'drills') setActiveStage('cando');
+                else if (activeStage === 'drills') {
+                  if (isLessonDone || (drillScore !== null && drillScore >= 80)) {
+                    setActiveStage('cando');
+                  }
+                }
               });
               window.scrollTo({ top: 0, behavior: 'smooth' });
             }}
-            className="min-h-[44px] px-5 py-2 rounded-xl bg-accent text-bg text-xs font-extrabold uppercase tracking-wider shadow-md hover:brightness-110 flex items-center gap-1.5 transition-all active:scale-95 disabled:opacity-40 disabled:pointer-events-none"
+            className="min-h-[44px] px-5 py-2 rounded-xl bg-accent text-bg text-xs font-extrabold uppercase tracking-wider shadow-md hover:brightness-110 flex items-center gap-1.5 transition-all active:scale-95 disabled:opacity-40 disabled:pointer-events-none card-interactive-lift"
           >
             <span>Lanjut Tahap Berikutnya</span>
             <ChevronRight className="w-4 h-4" />
@@ -431,7 +467,7 @@ export const LessonStudyPage: React.FC = () => {
           <button
             type="button"
             onClick={handleNextLesson}
-            className="min-h-[44px] px-6 py-2 rounded-xl bg-accent text-bg text-xs font-extrabold uppercase tracking-wider shadow-md hover:brightness-110 flex items-center gap-1.5 transition-all active:scale-95"
+            className="min-h-[44px] px-6 py-2 rounded-xl bg-accent text-bg text-xs font-extrabold uppercase tracking-wider shadow-md hover:brightness-110 flex items-center gap-1.5 transition-all active:scale-95 card-interactive-lift"
           >
             <span>Pelajaran Berikutnya</span>
             <ArrowRight className="w-4 h-4" />

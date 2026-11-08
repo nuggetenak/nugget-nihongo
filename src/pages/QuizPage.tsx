@@ -36,6 +36,7 @@ import { MoraPacingCard } from '../components/quiz/MoraPacingCard';
 import { ExamLmsHub } from '../components/exercise/ExamLmsHub';
 import { CbtRunnerScreen } from '../components/exercise/CbtRunnerScreen';
 import { useExerciseStore } from '../store/useExerciseStore';
+import { IrasutoyaImage } from '../components/common/IrasutoyaImage';
 
 export const QuizPage: React.FC = () => {
   const {
@@ -98,6 +99,7 @@ export const QuizPage: React.FC = () => {
   // Results & Mistake tracking
   const [userAnswers, setUserAnswers] = useState<Array<{ question: QuizQuestionItem; isCorrect: boolean; selected: string }>>([]);
   const [mistakesList, setMistakesList] = useState<QuizQuestionItem[]>([]);
+  const [relearningQueue, setRelearningQueue] = useState<QuizQuestionItem[]>([]);
   const [isFinished, setIsFinished] = useState(false);
   const [sessionScore, setSessionScore] = useState(0);
   const [sessionXp, setSessionXp] = useState(0);
@@ -127,6 +129,7 @@ export const QuizPage: React.FC = () => {
     setCurrentIndex(0);
     setSessionScore(0);
     setSessionXp(0);
+    setRelearningQueue([]);
     setUserAnswers([]);
     setSelectedOption(null);
     setFeedback(null);
@@ -146,6 +149,13 @@ export const QuizPage: React.FC = () => {
         diagnosticPairs: diagPairs,
         substratum: userSubstratum,
       });
+
+      if (items.length === 0) {
+        showToast('Tidak ada soal yang tersedia untuk filter ini.', '⚠️');
+        setViewState('hub');
+        return;
+      }
+
       setQuestions(items);
 
       if (items.length > 0 && mode === 'rearrange' && items[0].tokens) {
@@ -155,6 +165,7 @@ export const QuizPage: React.FC = () => {
     } catch (e) {
       console.error('[QuizPage] Failed to generate quiz questions', e);
       showToast('Gagal memuat bank soal', '⚠️');
+      setViewState('hub');
     } finally {
       setIsLoading(false);
     }
@@ -167,6 +178,7 @@ export const QuizPage: React.FC = () => {
     setCurrentIndex(0);
     setSessionScore(0);
     setSessionXp(0);
+    setRelearningQueue([]);
     setUserAnswers([]);
     setSelectedOption(null);
     setFeedback(null);
@@ -182,10 +194,16 @@ export const QuizPage: React.FC = () => {
       ]);
 
       const items = generateFSRSDueQuestions(cards, vocabs, grammars, targetLevel, sessionCount);
+      if (items.length === 0) {
+        showToast('Semua kartu telah direview! Memori masih segar bugar ✨', '🎉');
+        setViewState('hub');
+        return;
+      }
       setQuestions(items);
     } catch (e) {
       console.error('[QuizPage] Failed to generate FSRS questions', e);
       showToast('Gagal memuat sesi review FSRS', '⚠️');
+      setViewState('hub');
     } finally {
       setIsLoading(false);
     }
@@ -211,6 +229,7 @@ export const QuizPage: React.FC = () => {
     setCurrentIndex(0);
     setSessionScore(0);
     setSessionXp(0);
+    setRelearningQueue([]);
     setUserAnswers([]);
     setSelectedOption(null);
     setFeedback(null);
@@ -240,10 +259,12 @@ export const QuizPage: React.FC = () => {
   };
 
   // Touch Swipe Gesture for Mobile Flashcards (Ticket T-221 - T-224)
+  // Right swipe = Hafal / Ingat (Rate 3, Emerald)
+  // Left swipe = Lupa / Belum (Rate 1, Rose)
   const { swipeHint, touchHandlers, dragOffset, isDragging, wasRecentlySwiped } = useSwipeGesture({
     enabled: activeMode === 'flashcard' && isFlipped && viewState === 'quiz',
-    onSwipeLeft: () => handleFlashcardRate(3),
-    onSwipeRight: () => handleFlashcardRate(1),
+    onSwipeLeft: () => handleFlashcardRate(1),
+    onSwipeRight: () => handleFlashcardRate(3),
   });
 
   // Set up tokens when moving to next rearrange question
@@ -325,8 +346,12 @@ export const QuizPage: React.FC = () => {
       state: 0,
     };
 
+    const v = target as any;
+    const kanjiMatch = v.word?.match(/[\u4e00-\u9faf]/);
+    const isKanji = Boolean(kanjiMatch);
+
     const rating: FSRSRating = customRating || (isCorrect ? 3 : 1);
-    const updatedCard = calculateFSRSReview(existing, rating);
+    const updatedCard = calculateFSRSReview(existing, rating, { isKanji });
 
     setCard(itemId, {
       card: updatedCard,
@@ -335,8 +360,6 @@ export const QuizPage: React.FC = () => {
 
     // Dynamic Kanji garden seeding on correct answer if item contains kanji
     if (isCorrect && isVocab) {
-      const v = target as any;
-      const kanjiMatch = v.word?.match(/[\u4e00-\u9faf]/);
       if (kanjiMatch) {
         useGardenStore.getState().seedPlant(
           kanjiMatch[0],
@@ -347,8 +370,6 @@ export const QuizPage: React.FC = () => {
       }
     } else if (!isCorrect || rating === 1) {
       // Dynamic Kanji garden wilting on lapse (Ticket T-199)
-      const v = target as any;
-      const kanjiMatch = v.word?.match(/[\u4e00-\u9faf]/);
       useGardenStore.getState().applyLapseWilt(kanjiMatch ? kanjiMatch[0] : undefined);
     }
   };
@@ -383,6 +404,7 @@ export const QuizPage: React.FC = () => {
 
     if (!isCorrect) {
       setMistakesList((prev) => (prev.some((m) => m.id === currentQ.id) ? prev : [...prev, currentQ]));
+      setRelearningQueue((prev) => (prev.some((m) => m.id === currentQ.id) ? prev : [...prev, currentQ]));
     }
 
     handleNextQuestion();
@@ -415,6 +437,7 @@ export const QuizPage: React.FC = () => {
 
     if (!isCorrect) {
       setMistakesList((prev) => (prev.some((m) => m.id === currentQ.id) ? prev : [...prev, currentQ]));
+      setRelearningQueue((prev) => (prev.some((m) => m.id === currentQ.id) ? prev : [...prev, currentQ]));
     }
 
     handleNextQuestion();
@@ -574,6 +597,13 @@ export const QuizPage: React.FC = () => {
 
     if (currentIndex + 1 < questions.length) {
       setCurrentIndex((prev) => prev + 1);
+    } else if (relearningQueue.length > 0) {
+      // Intra-session relearning queue for unlearned cards (FSRS Ticket T-51)
+      const toRelearn = [...relearningQueue];
+      setRelearningQueue([]);
+      setQuestions((prev) => [...prev, ...toRelearn]);
+      setCurrentIndex((prev) => prev + 1);
+      showToast(`🔁 Mengulang ${toRelearn.length} kartu yang perlu pemantapan...`, '🧠', 2500);
     } else {
       finishSession();
     }
@@ -585,7 +615,7 @@ export const QuizPage: React.FC = () => {
   }
 
   return (
-    <div className="max-w-4xl mx-auto py-4 sm:py-6 space-y-6 animate-in fade-in duration-300">
+    <div className="max-w-4xl mx-auto py-4 sm:py-6 pb-[calc(5.5rem+env(safe-area-inset-bottom))] lg:pb-12 space-y-6 animate-in fade-in duration-300 min-w-0 max-w-full overflow-x-hidden px-3 sm:px-4">
       {/* State 1: Exam LMS Hub (The 3 Clean Doors) */}
       {viewState === 'hub' ? (
         <ExamLmsHub
@@ -724,18 +754,18 @@ export const QuizPage: React.FC = () => {
                         : 'bg-surface border-accent/30 hover:border-accent/50'
                     }`}
                   >
-                    {/* Visual Swipe Gesture Hint Badges */}
-                    {isFlipped && swipeHint === 'left' && (
-                      <div className="absolute inset-0 bg-green-500/25 backdrop-blur-[2px] rounded-3xl flex items-center justify-center pointer-events-none z-20 animate-in fade-in duration-150">
-                        <span className="text-xl sm:text-2xl font-bold text-green-300 bg-surface/95 px-5 py-2.5 rounded-2xl border border-green-500/50 shadow-2xl">
-                          ✅ Hafal (Geser Kiri)
+                    {/* Visual Swipe Gesture Hint Badges (Universal: Right = Remember, Left = Forget) */}
+                    {isFlipped && swipeHint === 'right' && (
+                      <div className="absolute inset-0 bg-emerald-500/25 backdrop-blur-[2px] rounded-3xl flex items-center justify-center pointer-events-none z-20 animate-in fade-in duration-150">
+                        <span className="text-xl sm:text-2xl font-bold text-emerald-700 dark:text-emerald-300 bg-surface/95 px-5 py-2.5 rounded-2xl border border-emerald-500/50 shadow-2xl">
+                          ✅ Hafal (Geser Kanan)
                         </span>
                       </div>
                     )}
-                    {isFlipped && swipeHint === 'right' && (
-                      <div className="absolute inset-0 bg-red-500/25 backdrop-blur-[2px] rounded-3xl flex items-center justify-center pointer-events-none z-20 animate-in fade-in duration-150">
-                        <span className="text-xl sm:text-2xl font-bold text-red-300 bg-surface/95 px-5 py-2.5 rounded-2xl border border-red-500/50 shadow-2xl">
-                          ❌ Lupa (Geser Kanan)
+                    {isFlipped && swipeHint === 'left' && (
+                      <div className="absolute inset-0 bg-rose-500/25 backdrop-blur-[2px] rounded-3xl flex items-center justify-center pointer-events-none z-20 animate-in fade-in duration-150">
+                        <span className="text-xl sm:text-2xl font-bold text-rose-700 dark:text-rose-300 bg-surface/95 px-5 py-2.5 rounded-2xl border border-rose-500/50 shadow-2xl">
+                          ❌ Lupa (Geser Kiri)
                         </span>
                       </div>
                     )}
@@ -927,7 +957,7 @@ export const QuizPage: React.FC = () => {
                             <span className="w-7 h-7 rounded-xl bg-surface border border-theme flex items-center justify-center text-xs font-mono font-bold text-appText-muted shrink-0">
                               {idx + 1}
                             </span>
-                            <span className={`truncate ${isJp ? 'font-japanese text-sm sm:text-base font-bold' : 'font-sans text-sm sm:text-base font-semibold text-text'}`}>
+                            <span className={`whitespace-normal break-words leading-snug ${isJp ? 'font-japanese text-sm sm:text-base font-bold' : 'font-sans text-sm sm:text-base font-semibold text-text'}`}>
                               {opt}
                             </span>
                           </div>
@@ -947,8 +977,9 @@ export const QuizPage: React.FC = () => {
                       <div className="text-xs font-bold text-accent">{currentQ.prompt}</div>
                       <button
                         onClick={() => handleOpenReport(currentQ)}
-                        className="p-1.5 rounded-xl bg-surface-2 hover:bg-surface-3 text-appText-muted hover:text-amber-400 transition-all"
+                        className="w-10 h-10 min-h-[40px] min-w-[40px] flex items-center justify-center p-2 rounded-xl bg-surface-2 hover:bg-surface-3 text-appText-muted hover:text-amber-800 dark:hover:text-amber-400 transition-all active:scale-95"
                         title="Laporkan keanehan susunan kalimat 🚩"
+                        aria-label="Laporkan soal"
                       >
                         <Flag className="w-3.5 h-3.5" />
                       </button>
@@ -962,7 +993,7 @@ export const QuizPage: React.FC = () => {
                     {assembledTokens.length > 0 && !feedback && (
                       <button
                         onClick={handleResetRearrange}
-                        className="text-amber-400 hover:text-accent font-semibold flex items-center gap-1 active:scale-95 text-xs transition-colors"
+                        className="text-amber-800 dark:text-amber-400 font-bold hover:text-accent flex items-center gap-1 active:scale-95 text-xs transition-colors"
                         title="Kembalikan semua kata ke susunan awal"
                       >
                         <RotateCcw className="w-3.5 h-3.5" />
@@ -1030,6 +1061,7 @@ export const QuizPage: React.FC = () => {
                       <div className="flex items-center gap-2">
                         {feedback.isCorrect ? (
                           <div className="flex items-center gap-1.5 text-emerald-600 dark:text-emerald-400 font-black text-sm sm:text-base">
+                            <IrasutoyaImage assetId="hanko_excellent" className="w-6 h-6" containerClassName="w-6 h-6 shrink-0" animatePop />
                             <CheckCircle2 className="w-5 h-5 shrink-0 text-emerald-500" />
                             <span>Tepat Sekali! 🎉</span>
                           </div>

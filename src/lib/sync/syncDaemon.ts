@@ -4,11 +4,17 @@
 //  and throttles cloud replication to conserve battery & bandwidth
 // ══════════════════════════════════════════════════════════════════
 
-import { useAuthStore } from '../supabase/authStore';
+export type AuthStoreGetter = () => { user: any; syncNow: () => Promise<void>; syncStatus: string };
 
-class SyncDaemon {
+let customAuthGetter: AuthStoreGetter | null = null;
+
+export function setSyncDaemonAuthGetter(getter: AuthStoreGetter | null): void {
+  customAuthGetter = getter;
+}
+
+export class SyncDaemon {
   private isRunning = false;
-  private intervalId: number | null = null;
+  private intervalId: ReturnType<typeof setInterval> | null = null;
   private lastTriggerTime = 0;
   private minIntervalMs = 15000; // 15 seconds minimum throttle between syncs
   private defaultIntervalMs = 300000; // 5 minutes periodic sync
@@ -20,7 +26,7 @@ class SyncDaemon {
   public start(customIntervalMs?: number): void {
     if (this.isRunning || typeof window === 'undefined') return;
 
-    const interval = customIntervalMs || this.defaultIntervalMs;
+    const interval = Math.max(1000, Number.isFinite(customIntervalMs) ? customIntervalMs! : this.defaultIntervalMs);
 
     // 1. Reconnect listener
     window.addEventListener('online', this.handleOnline);
@@ -29,11 +35,15 @@ class SyncDaemon {
     document.addEventListener('visibilitychange', this.handleVisibilityChange);
 
     // 3. Periodic timer
-    this.intervalId = window.setInterval(() => {
+    this.intervalId = setInterval(() => {
       this.triggerSync('periodic_heartbeat');
     }, interval);
 
     this.isRunning = true;
+  }
+
+  public setMinInterval(ms: number): void {
+    this.minIntervalMs = Math.max(0, Number.isFinite(ms) ? ms : 15000);
   }
 
   /**
@@ -72,8 +82,28 @@ class SyncDaemon {
       return false; // Throttled
     }
 
-    const { user, syncNow, syncStatus } = useAuthStore.getState();
-    if (!user || syncStatus === 'syncing') {
+    let user: any = null;
+    let syncNow: (() => Promise<void>) | null = null;
+    let syncStatus = 'idle';
+
+    if (customAuthGetter) {
+      const state = customAuthGetter();
+      user = state.user;
+      syncNow = state.syncNow;
+      syncStatus = state.syncStatus;
+    } else {
+      try {
+        const mod = await import('../supabase/authStore');
+        const state = mod.useAuthStore.getState();
+        user = state.user;
+        syncNow = state.syncNow;
+        syncStatus = state.syncStatus;
+      } catch {
+        return false;
+      }
+    }
+
+    if (!user || !syncNow || syncStatus === 'syncing' || (typeof navigator !== 'undefined' && !navigator.onLine)) {
       return false;
     }
 

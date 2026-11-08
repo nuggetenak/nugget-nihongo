@@ -8,6 +8,7 @@ import React, { Component, ErrorInfo, ReactNode } from 'react';
 import { AlertTriangle, X } from 'lucide-react';
 import { errorReporter } from '../../lib/telemetry/errorReporter';
 import { diagnostics } from '../../lib/diagnostics/diagnostics';
+import { useModalStore } from '../../store/useModalStore';
 
 export interface ModalErrorBoundaryProps {
   children: ReactNode;
@@ -47,17 +48,55 @@ export class ModalErrorBoundary extends Component<ModalErrorBoundaryProps, Modal
     );
   }
 
-  public componentDidUpdate(prevProps: ModalErrorBoundaryProps) {
+  public componentDidMount() {
+    if (this.state.hasError && typeof document !== 'undefined') {
+      document.body.style.overflow = 'hidden';
+      window.addEventListener('keydown', this.handleKeyDown);
+    }
+  }
+
+  public componentDidUpdate(prevProps: ModalErrorBoundaryProps, prevState: ModalErrorBoundaryState) {
     // When the parent triggers close, auto-reset the internal error state
     if (prevProps.isOpen && !this.props.isOpen && this.state.hasError) {
       this.setState({ hasError: false, error: null });
     }
+    if (!prevState.hasError && this.state.hasError && typeof document !== 'undefined') {
+      document.body.style.overflow = 'hidden';
+      window.addEventListener('keydown', this.handleKeyDown);
+    } else if (prevState.hasError && !this.state.hasError && typeof document !== 'undefined') {
+      document.body.style.overflow = '';
+      window.removeEventListener('keydown', this.handleKeyDown);
+    }
   }
+
+  public componentWillUnmount() {
+    if (typeof window !== 'undefined') {
+      window.removeEventListener('keydown', this.handleKeyDown);
+    }
+    if (typeof document !== 'undefined') {
+      document.body.style.overflow = '';
+    }
+  }
+
+  private handleKeyDown = (e: KeyboardEvent) => {
+    if (e.key === 'Escape') {
+      this.handleClose();
+    }
+  };
 
   private handleClose = () => {
     this.setState({ hasError: false, error: null });
+    if (typeof document !== 'undefined') {
+      document.body.style.overflow = '';
+    }
     if (this.props.onClose) {
       this.props.onClose();
+    } else {
+      try {
+        useModalStore.getState().closeModal();
+      } catch (e) {
+        // ignore
+      }
     }
   };
 
@@ -73,9 +112,13 @@ export class ModalErrorBoundary extends Component<ModalErrorBoundaryProps, Modal
           role="dialog"
           aria-modal="true"
           aria-label={`Galat modul ${this.props.modalName}`}
+          onClick={this.handleClose}
           className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm animate-in fade-in"
         >
-          <div className="w-full max-w-sm bg-surface border border-amber-500/30 rounded-3xl p-6 shadow-2xl space-y-4 text-center">
+          <div
+            onClick={(e) => e.stopPropagation()}
+            className="w-full max-w-sm bg-surface border border-amber-500/30 rounded-3xl p-6 shadow-2xl space-y-4 text-center"
+          >
             {/* Visual Icon */}
             <div className="w-12 h-12 rounded-2xl bg-amber-500/10 border border-amber-500/20 text-amber-500 flex items-center justify-center mx-auto">
               <AlertTriangle className="w-6 h-6 stroke-[2.2]" />
@@ -83,17 +126,17 @@ export class ModalErrorBoundary extends Component<ModalErrorBoundaryProps, Modal
 
             {/* Content */}
             <div className="space-y-1.5">
-              <h3 className="text-base font-bold text-text">
+              <h3 className="text-base font-bold text-appText-bright">
                 Gagal Memuat Modul {this.props.modalName}
               </h3>
-              <p className="text-xs text-text-dim leading-relaxed">
+              <p className="text-xs text-appText-muted leading-relaxed">
                 Modul ini mengalami kendala teknis saat memproses data. Sesi belajar utamamu tetap aman dan tidak terpengaruh.
               </p>
             </div>
 
             {/* Error Message */}
             {this.state.error && (
-              <div className="p-2.5 bg-bg/80 border border-border rounded-xl text-left overflow-x-auto text-xs font-mono text-red-400">
+              <div className="p-2.5 bg-surface-2 border border-theme rounded-xl text-left overflow-x-auto text-xs font-mono text-red-500 dark:text-red-400">
                 {this.state.error.name}: {this.state.error.message}
               </div>
             )}

@@ -4,7 +4,7 @@
 //  Strictly caps sessions at T in [300s, 420s], N_new <= 3, N_review in [12, 18]
 // ══════════════════════════════════════════════════════════════════
 
-import { FSRSCardData } from '../../types/fsrs';
+import type { FSRSCardData } from '../../types/fsrs';
 
 export type SessionPhase = 1 | 2 | 3 | 4;
 
@@ -75,6 +75,44 @@ export interface MicroSessionSummary {
 }
 
 /**
+ * Pure pedagogical helper: returns whether a latency indicates native reflex recall (<= 1500ms).
+ */
+export function isReflexLatency(latencyMs: number): boolean {
+  return Number.isFinite(latencyMs) && latencyMs > 0 && latencyMs <= 1500;
+}
+
+/**
+ * Pure pedagogical helper: formats seconds into M:SS or M menit S detik.
+ */
+export function formatSessionDuration(seconds: number, style: 'digital' | 'human' = 'digital'): string {
+  const safeSec = Math.max(0, Number.isFinite(seconds) ? Math.floor(seconds) : 0);
+  const m = Math.floor(safeSec / 60);
+  const s = safeSec % 60;
+  if (style === 'human') {
+    return `${m}m ${s < 10 ? '0' : ''}${s}s`;
+  }
+  return `${m}:${s < 10 ? '0' : ''}${s}`;
+}
+
+/**
+ * Returns human-readable pedagogical title for each session phase.
+ */
+export function getPhaseTitle(phase: SessionPhase): string {
+  switch (phase) {
+    case 1:
+      return 'Retrieval Warm-Up (Refleks Cepat)';
+    case 2:
+      return 'Micro-Chunk Acquisition (Skema Baru)';
+    case 3:
+      return 'Active Production Practice (Konstruksi Aktif)';
+    case 4:
+      return 'Metacognitive Consolidation (Konsolidasi & Evaluasi)';
+    default:
+      return 'Micro-Session Pacing';
+  }
+}
+
+/**
  * Creates and choreographs a standard 5–7 minute 4-phase micro-session.
  */
 export function createMicroSession(
@@ -85,10 +123,14 @@ export function createMicroSession(
   const sessionId = `ms-${Date.now()}-${Math.random().toString(36).substring(2, 7)}`;
   const cards: MicroSessionCardItem[] = [];
 
+  const safeReviews = Array.isArray(reviewCandidates) ? reviewCandidates : [];
+  const safeNews = Array.isArray(newCandidates) ? newCandidates : [];
+  const totalReviewsAvailable = safeReviews.length;
+
   // Phase 1: Retrieval Warm-Up (3-4 mature overdue cards, max 60s total, 15s max per card)
-  const warmUpCount = Math.min(4, Math.max(3, reviewCandidates.length));
-  for (let i = 0; i < warmUpCount && i < reviewCandidates.length; i++) {
-    const c = reviewCandidates[i];
+  const warmUpCount = totalReviewsAvailable > 0 ? Math.min(4, Math.max(3, totalReviewsAvailable)) : 0;
+  for (let i = 0; i < warmUpCount && i < safeReviews.length; i++) {
+    const c = safeReviews[i];
     cards.push({
       id: `phase1-${c.id}`,
       phase: 1,
@@ -102,9 +144,9 @@ export function createMicroSession(
   }
 
   // Phase 2: Micro-Chunk Acquisition (2-3 new target chunks, 120-150s)
-  const newCount = Math.min(SESSION_CAPS.MAX_NEW_CHUNKS, newCandidates.length);
+  const newCount = Math.min(SESSION_CAPS.MAX_NEW_CHUNKS, safeNews.length);
   for (let i = 0; i < newCount; i++) {
-    const c = newCandidates[i];
+    const c = safeNews[i];
     cards.push({
       id: `phase2-${c.id}`,
       phase: 2,
@@ -119,15 +161,15 @@ export function createMicroSession(
   }
 
   // Phase 3: High-Intensity Active Production Practice (8-10 cards, 120-150s)
-  const practiceCount = Math.min(10, Math.max(8, reviewCandidates.length - warmUpCount));
+  const practiceCount = totalReviewsAvailable > 0
+    ? Math.min(10, Math.max(8, Math.max(0, totalReviewsAvailable - warmUpCount)))
+    : 8;
   for (let i = 0; i < practiceCount; i++) {
-    const c = reviewCandidates[(warmUpCount + i) % reviewCandidates.length] || {
-      id: `mock-pr-${i}`,
-      prompt: 'Ketik atau lengkapi partikel yang tepat:',
-      targetJapanese: 'に',
-    };
+    const c = totalReviewsAvailable > 0
+      ? safeReviews[(warmUpCount + i) % totalReviewsAvailable]
+      : { id: `fallback-pr-${i}`, prompt: 'Produksi aktif partikel:', targetJapanese: 'に' };
     cards.push({
-      id: `phase3-${c.id}-${i}`,
+      id: `phase3-${c.id || i}-${i}`,
       phase: 3,
       archetype: i % 2 === 0 ? 'production_type_cloze' : 'collocation_chunk_builder',
       prompt: c.prompt || 'Produksi aktif:',
@@ -170,19 +212,24 @@ export function advanceSessionCard(
   isCorrect: boolean,
   trapEncountered?: string
 ): MicroSessionState {
-  if (state.isCompleted || state.currentIndex >= state.cards.length) {
+  if (!state || state.isCompleted || state.currentIndex >= (state.cards?.length || 0)) {
     return { ...state, isCompleted: true, currentPhase: 4 };
   }
 
+  const safeLatency = Number.isFinite(latencyMs) && latencyMs >= 0 ? Math.round(latencyMs) : 1500;
   const currentCard = state.cards[state.currentIndex];
+  if (!currentCard) {
+    return { ...state, isCompleted: true, currentPhase: 4 };
+  }
+
   const phase = currentCard.phase;
-  const metrics = state.phaseMetrics[phase];
+  const metrics = state.phaseMetrics[phase] || { completed: 0, correct: 0, averageLatencyMs: 0 };
 
   const updatedMetrics: PhaseMetrics = {
     completed: metrics.completed + 1,
     correct: metrics.correct + (isCorrect ? 1 : 0),
     averageLatencyMs: Math.round(
-      (metrics.averageLatencyMs * metrics.completed + latencyMs) / (metrics.completed + 1)
+      (metrics.averageLatencyMs * metrics.completed + safeLatency) / (metrics.completed + 1)
     ),
   };
 
@@ -191,8 +238,8 @@ export function advanceSessionCard(
   const nextCard = !isFinished ? state.cards[nextIndex] : null;
   const nextPhase = isFinished ? 4 : nextCard ? nextCard.phase : 4;
 
-  const reminders = [...state.trapReminders];
-  if (trapEncountered && !reminders.includes(trapEncountered)) {
+  const reminders = Array.isArray(state.trapReminders) ? [...state.trapReminders] : [];
+  if (trapEncountered && typeof trapEncountered === 'string' && !reminders.includes(trapEncountered)) {
     reminders.push(trapEncountered);
   }
 
@@ -201,13 +248,13 @@ export function advanceSessionCard(
     currentIndex: nextIndex,
     currentPhase: nextPhase,
     isCompleted: isFinished,
-    latencies: [...state.latencies, latencyMs],
+    latencies: [...(state.latencies || []), safeLatency],
     phaseMetrics: {
       ...state.phaseMetrics,
       [phase]: updatedMetrics,
     },
     trapReminders: reminders,
-    elapsedSeconds: state.elapsedSeconds + Math.round(latencyMs / 1000),
+    elapsedSeconds: (state.elapsedSeconds || 0) + Math.max(1, Math.round(safeLatency / 1000)),
   };
 }
 
@@ -215,27 +262,34 @@ export function advanceSessionCard(
  * Calculates metacognitive session summary for Phase 4 display.
  */
 export function calculateSessionSummary(state: MicroSessionState): MicroSessionSummary {
-  const total = state.latencies.length;
-  const sumLatency = state.latencies.reduce((a, b) => a + b, 0);
+  const latencies = Array.isArray(state?.latencies) ? state.latencies : [];
+  const total = latencies.length;
+  const sumLatency = latencies.reduce((a, b) => a + (Number.isFinite(b) ? b : 0), 0);
   const avgLatency = total > 0 ? Math.round(sumLatency / total) : 0;
 
-  const reflexCount = state.latencies.filter((l) => l <= 1500).length;
+  const reflexCount = latencies.filter((l) => Number.isFinite(l) && l <= 1500).length;
   const reflexPct = total > 0 ? Math.round((reflexCount / total) * 100) : 0;
 
   let totalCorrect = 0;
-  Object.values(state.phaseMetrics).forEach((m) => {
-    totalCorrect += m.correct;
-  });
+  if (state?.phaseMetrics) {
+    Object.values(state.phaseMetrics).forEach((m) => {
+      totalCorrect += (m && Number.isFinite(m.correct)) ? m.correct : 0;
+    });
+  }
   const overallAccuracy = total > 0 ? Math.round((totalCorrect / total) * 100) : 0;
 
+  const reminders = Array.isArray(state?.trapReminders) ? state.trapReminders.filter(Boolean) : [];
   const trapOfTheDay =
-    state.trapReminders.length > 0
-      ? state.trapReminders[0]
+    reminders.length > 0
+      ? reminders[0]
       : 'Hindari menerjemahkan urutan kata Subjek-Verba-Objek (SVO) secara mentah ke Bahasa Jepang.';
 
+  const rawSeconds = Number.isFinite(state?.elapsedSeconds) ? state.elapsedSeconds : 0;
+  const durationSeconds = Math.min(SESSION_CAPS.MAX_DURATION_SECONDS, Math.max(60, rawSeconds));
+
   return {
-    sessionId: state.sessionId,
-    durationSeconds: Math.min(SESSION_CAPS.MAX_DURATION_SECONDS, Math.max(60, state.elapsedSeconds)),
+    sessionId: state?.sessionId || `ms-${Date.now()}`,
+    durationSeconds,
     totalCards: total,
     overallAccuracy,
     averageLatencyMs: avgLatency,

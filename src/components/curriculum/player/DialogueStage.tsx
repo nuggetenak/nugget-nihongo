@@ -3,7 +3,7 @@
 //  Menyajikan percakapan alami, bimodal audio sync, & kontrol intonasi
 // ══════════════════════════════════════════════════════════════════
 
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { Volume2, Eye, EyeOff, Gauge, Play, Square, Compass, Sparkles } from 'lucide-react';
 import { LessonDialogueLine } from '../../../types/curriculum';
 import { useAppStore } from '../../../store/useAppStore';
@@ -25,6 +25,21 @@ export const DialogueStage: React.FC<DialogueStageProps> = ({ dialogue = [], sce
   const [playingLineId, setPlayingLineId] = useState<string | null>(null);
   const [isPlayingAll, setIsPlayingAll] = useState(false);
   const stopPlayingAllRef = useRef(false);
+  const activeAudioRef = useRef<HTMLAudioElement | null>(null);
+
+  // Unmount audio cleanup to prevent audio overlap across stages or page navigation
+  useEffect(() => {
+    return () => {
+      stopPlayingAllRef.current = true;
+      if (activeAudioRef.current) {
+        activeAudioRef.current.pause();
+        activeAudioRef.current = null;
+      }
+      if (typeof window !== 'undefined' && 'speechSynthesis' in window) {
+        window.speechSynthesis.cancel();
+      }
+    };
+  }, []);
 
   const handlePlayAudio = async (line: LessonDialogueLine) => {
     setPlayingLineId(line.id);
@@ -98,7 +113,7 @@ export const DialogueStage: React.FC<DialogueStageProps> = ({ dialogue = [], sce
     <div className="space-y-4">
       {/* ── Pengantar Situasi Percakapan ─────────────────────────── */}
       {sceneIntro && (
-        <div className="p-4 rounded-2xl bg-surface-2 border border-accent/20 flex items-start gap-3 shadow-sm">
+        <div className="p-4 rounded-2xl bg-surface-2 border border-accent/20 flex items-start gap-3 shadow-sm card-interactive-lift">
           <div className="p-2 rounded-xl bg-amber-500/15 text-accent shrink-0 mt-0.5">
             <Compass className="w-4 h-4" />
           </div>
@@ -183,7 +198,7 @@ export const DialogueStage: React.FC<DialogueStageProps> = ({ dialogue = [], sce
               className={`flex items-start gap-3 p-4 sm:p-5 rounded-2xl border transition-all duration-200 ${
                 isPlaying
                   ? 'bg-amber-500/15 border-amber-500 shadow-md ring-2 ring-amber-500/40 translate-x-1'
-                  : 'bg-surface border-accent/15 hover:border-accent/30'
+                  : 'bg-surface border-accent/15 hover:border-accent/30 card-interactive-lift'
               }`}
             >
               {/* Avatar Penutur */}

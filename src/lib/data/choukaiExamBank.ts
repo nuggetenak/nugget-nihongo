@@ -347,12 +347,14 @@ export const CHOUKAI_QUESTION_SETS: ChoukaiQuestionSet[] = [
           },
           {
             "id": 30,
+            "promptText": "先生、分からない言葉があるんですが、（　　）いいですか。",
             "options": [
               "質問したら",
               "質問するのが",
               "質問しても"
             ],
-            "answer": "c"
+            "answer": "c",
+            "explanation": "「〜てもいいですか」は相手に許可を求めるときの文法です。「質問してもいいですか」で質問する許可を尋ねます。"
           }
         ]
       },

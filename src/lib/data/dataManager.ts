@@ -4,8 +4,8 @@
 //  Caches in memory for instant O(1) retrieval and sub-millisecond search
 // ══════════════════════════════════════════════════════════════════
 
-import { JLPTLevel } from '../../types/vocab';
-import { TrackId } from '../curriculum/curriculumStore';
+import type { JLPTLevel } from '../../types/vocab.ts';
+import type { TrackId } from '../curriculum/curriculumStore.ts';
 
 export interface NormalizedVocab {
   id: string;
@@ -50,6 +50,8 @@ declare global {
     bookMinna1?: any;
     bookMinna2?: any;
     bookIrodoriA1?: any;
+    bookIrodoriA21?: any;
+    bookIrodoriA22?: any;
     bookIrodoriA2_1?: any;
     bookIrodoriA2_2?: any;
     curriculumN5?: any;
@@ -141,33 +143,71 @@ export async function loadVocab(level: string): Promise<NormalizedVocab[]> {
   let src = `/data/vocab/vocab-${level}.js`;
   let varName: keyof Window = `vocab${level.toUpperCase()}` as keyof Window;
 
+  const SSW_SECTOR_ALIAS_MAP: Record<string, string> = {
+    hospitality: 'accommodation',
+    'crop-farming': 'agriculture',
+    livestock: 'agriculture',
+    restaurant: 'food-service',
+    'food-manufacturing': 'food',
+    sokeizai: 'manufacturing',
+    'automobile-transport': 'logistics',
+    'electrical-electronics': 'electric-electronic',
+  };
+
   const isSSW = level.startsWith('ssw-') || level.startsWith('curriculum-ssw-');
   if (isSSW) {
-    const sector = level.replace(/^curriculum-/, '').replace(/^ssw-/, '');
+    const rawSector = level.replace(/^curriculum-/, '').replace(/^ssw-/, '');
+    const sector = SSW_SECTOR_ALIAS_MAP[rawSector] || rawSector;
     src = `/data/vocab/ssw/${sector}.js`;
     const pascalSector = sector.split('-').map(s => s.charAt(0).toUpperCase() + s.slice(1)).join('');
     varName = `vocabSSW_${pascalSector}` as keyof Window;
   }
 
-  if (!window[varName] || (window[varName] as any[]).length === 0) {
-    try {
-      await loadScript(src);
-    } catch (err) {
-      console.warn(`[dataManager] Could not load ${src}, fallback to empty array.`, err);
-    }
-  }
-
-  // Also load staged vocabulary expansion for N5–N1 if available
+  let rawList: any[] = [];
+  let stagedList: any[] = [];
   const isJLPT = ['n5', 'n4', 'n3', 'n2', 'n1'].includes(level.toLowerCase());
   const stagedVarName = `stagedVocab${level.toUpperCase()}` as keyof Window;
-  if (isJLPT && !window[stagedVarName]) {
+
+  if (typeof window !== 'undefined') {
+    if (!window[varName] || (window[varName] as any[]).length === 0) {
+      try {
+        await loadScript(src);
+      } catch (err) {
+        console.warn(`[dataManager] Could not load ${src}, fallback to empty array.`, err);
+      }
+    }
+
+    if (isJLPT && !window[stagedVarName]) {
+      try {
+        await loadScript(`/data/staged-expansion/vocab/${level.toLowerCase()}-staged.js`);
+      } catch {}
+    }
+
+    rawList = (window[varName] as any[]) || [];
+    stagedList = isJLPT ? ((window[stagedVarName] as any[]) || []) : [];
+  } else {
+    // Node.js testing/SSR runtime: direct filesystem read
     try {
-      await loadScript(`/data/staged-expansion/vocab/${level.toLowerCase()}-staged.js`);
+      const fsMod = await import('fs');
+      const pathMod = await import('path');
+      const vmMod = await import('vm');
+      const relSrc = src.replace(/^\//, '');
+      const candidatePaths = [
+        pathMod.resolve(process.cwd(), relSrc),
+        pathMod.resolve(process.cwd(), 'public', relSrc),
+        pathMod.resolve(process.cwd(), '../public', relSrc),
+      ];
+      for (const cp of candidatePaths) {
+        if (fsMod.existsSync(cp)) {
+          const content = fsMod.readFileSync(cp, 'utf8');
+          const sandbox: any = { window: {} };
+          vmMod.runInNewContext(content, sandbox);
+          rawList = sandbox.window[varName] || sandbox[varName] || [];
+          break;
+        }
+      }
     } catch {}
   }
-
-  const rawList: any[] = (window[varName] as any[]) || [];
-  const stagedList: any[] = isJLPT ? ((window[stagedVarName] as any[]) || []) : [];
 
   if (rawList.length === 0 && stagedList.length === 0) {
     // Do not cache transient empty array so future retries can succeed
@@ -222,15 +262,39 @@ export async function loadGrammar(level: JLPTLevel): Promise<NormalizedGrammar[]
   }
 
   const varName = `grammar${level.toUpperCase()}` as keyof Window;
-  if (!window[varName] || (window[varName] as any[]).length === 0) {
-    try {
-      await loadScript(`/data/grammar/grammar-${level}.js`);
-    } catch (err) {
-      console.warn(`[dataManager] Could not load /data/grammar/grammar-${level}.js, fallback to empty array.`, err);
-    }
-  }
+  let rawList: any[] = [];
 
-  const rawList: any[] = (window[varName] as any[]) || [];
+  if (typeof window !== 'undefined') {
+    if (!window[varName] || (window[varName] as any[]).length === 0) {
+      try {
+        await loadScript(`/data/grammar/grammar-${level}.js`);
+      } catch (err) {
+        console.warn(`[dataManager] Could not load /data/grammar/grammar-${level}.js, fallback to empty array.`, err);
+      }
+    }
+    rawList = (window[varName] as any[]) || [];
+  } else {
+    // Node.js testing/SSR runtime: direct filesystem read
+    try {
+      const fsMod = await import('fs');
+      const pathMod = await import('path');
+      const vmMod = await import('vm');
+      const relSrc = `public/data/grammar/grammar-${level}.js`;
+      const candidatePaths = [
+        pathMod.resolve(process.cwd(), relSrc),
+        pathMod.resolve(process.cwd(), `../${relSrc}`),
+      ];
+      for (const cp of candidatePaths) {
+        if (fsMod.existsSync(cp)) {
+          const content = fsMod.readFileSync(cp, 'utf8');
+          const sandbox: any = { window: {} };
+          vmMod.runInNewContext(content, sandbox);
+          rawList = sandbox.window[varName] || sandbox[varName] || [];
+          break;
+        }
+      }
+    } catch {}
+  }
   if (rawList.length === 0) {
     // Do not cache transient empty array
     return [];
@@ -290,23 +354,52 @@ export async function loadBook(bookKey: BookTrackKey): Promise<BookData | null> 
     minna1: { src: '/data/books/book-minna-1.js', varKey: 'bookMinna1' },
     minna2: { src: '/data/books/book-minna-2.js', varKey: 'bookMinna2' },
     'irodori-a1': { src: '/data/books/book-irodori-a1.js', varKey: 'bookIrodoriA1' },
-    'irodori-a2-1': { src: '/data/books/book-irodori-a2-1.js', varKey: 'bookIrodoriA2_1' },
-    'irodori-a2-2': { src: '/data/books/book-irodori-a2-2.js', varKey: 'bookIrodoriA2_2' },
+    'irodori-a2-1': { src: '/data/books/book-irodori-a2-1.js', varKey: 'bookIrodoriA21' },
+    'irodori-a2-2': { src: '/data/books/book-irodori-a2-2.js', varKey: 'bookIrodoriA22' },
   };
 
   const target = fileMap[bookKey];
   if (target) {
-    if (!window[target.varKey as keyof Window]) {
-      try {
-        await loadScript(target.src);
-      } catch (e) {
-        console.warn(`[dataManager] Failed to load book: ${target.src}`, e);
+    if (typeof window !== 'undefined') {
+      if (!window[target.varKey as keyof Window]) {
+        try {
+          await loadScript(target.src);
+        } catch (e) {
+          console.warn(`[dataManager] Failed to load book: ${target.src}`, e);
+        }
       }
-    }
-    const raw = window[target.varKey as keyof Window] as BookData;
-    if (raw) {
-      bookCache[bookKey] = raw;
-      return raw;
+      const raw = window[target.varKey as keyof Window] as BookData;
+      if (raw) {
+        bookCache[bookKey] = raw;
+        return raw;
+      }
+    } else {
+      // Node.js testing/SSR runtime: direct filesystem read
+      try {
+        const fsMod = await import('fs');
+        const pathMod = await import('path');
+        const vmMod = await import('vm');
+        const rel = target.src.replace(/^\//, '');
+        const candidatePaths = [
+          pathMod.resolve(process.cwd(), rel),
+          pathMod.resolve(process.cwd(), 'public', rel),
+          pathMod.resolve(process.cwd(), '../public', rel),
+        ];
+        for (const cp of candidatePaths) {
+          if (fsMod.existsSync(cp)) {
+            const content = fsMod.readFileSync(cp, 'utf8');
+            const sandbox: any = { window: {} };
+            vmMod.runInNewContext(content, sandbox);
+            const raw = (sandbox.window[target.varKey] || sandbox[target.varKey]) as BookData;
+            if (raw) {
+              bookCache[bookKey] = raw;
+              return raw;
+            }
+          }
+        }
+      } catch (e) {
+        // Fall through
+      }
     }
   }
 
@@ -569,9 +662,9 @@ export async function loadCurriculumTrack(
 }
 
 // Re-export diagnostic, vocational panic, and macro-discourse data modules
-export * from './diagnosticManager';
-export * from './panicScenarioManager';
-export * from './discourseManager';
+export * from './diagnosticManager.ts';
+export * from './panicScenarioManager.ts';
+export * from './discourseManager.ts';
 
 /**
  * Find vocabulary entries with authentic example sentences featuring a given Kanji character
@@ -580,26 +673,43 @@ export async function findVocabWithExamplesForKanji(
   kanjiChar: string,
   preferredLevel?: JLPTLevel
 ): Promise<NormalizedVocab[]> {
+  if (!kanjiChar || typeof kanjiChar !== 'string') return [];
+  const target = kanjiChar.trim();
+  if (!target) return [];
+
   const rawLevels: JLPTLevel[] = preferredLevel
     ? [preferredLevel, 'n5', 'n4', 'n3', 'n2', 'n1']
     : ['n5', 'n4', 'n3', 'n2', 'n1'];
   const levelsToTry: JLPTLevel[] = Array.from(new Set(rawLevels));
 
   const results: NormalizedVocab[] = [];
+  const fallbackResults: NormalizedVocab[] = [];
   const seenWords = new Set<string>();
 
   for (const lvl of levelsToTry) {
     try {
       const vocabs = await loadVocab(lvl);
       for (const v of vocabs) {
-        if (v.word.includes(kanjiChar) && !seenWords.has(v.word)) {
+        if (v && v.word && v.word.includes(target) && !seenWords.has(v.word)) {
           seenWords.add(v.word);
-          results.push(v);
-          if (results.length >= 8) break;
+          if (Array.isArray(v.examples) && v.examples.length > 0) {
+            results.push(v);
+            if (results.length >= 8) break;
+          } else {
+            fallbackResults.push(v);
+          }
         }
       }
       if (results.length >= 8) break;
     } catch (_) {}
+  }
+
+  // If fewer than 8 words with examples exist, supplement with valid words without examples
+  if (results.length < 8 && fallbackResults.length > 0) {
+    for (const fb of fallbackResults) {
+      results.push(fb);
+      if (results.length >= 8) break;
+    }
   }
 
   return results;

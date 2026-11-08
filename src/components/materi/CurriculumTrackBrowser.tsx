@@ -43,6 +43,8 @@ import {
   loadCurriculumTrack,
   CurriculumTrackData,
   CurriculumUnit,
+  loadVocab,
+  loadGrammar,
   NormalizedVocab,
   NormalizedGrammar,
   L1Substratum,
@@ -289,6 +291,37 @@ export const CurriculumTrackBrowser: React.FC<CurriculumTrackBrowserProps> = ({
     };
   }, [activeTrackId]);
 
+  // Track-specific vocabulary and grammar (guarantees accurate chips for vocational and higher tracks)
+  const [trackVocabs, setTrackVocabs] = useState<NormalizedVocab[]>([]);
+  const [trackGrammars, setTrackGrammars] = useState<NormalizedGrammar[]>([]);
+
+  useEffect(() => {
+    let isCancelled = false;
+    const targetLevel = activeTrackId.startsWith('ssw')
+      ? 'n4'
+      : activeTrackId === 'jft-a2'
+      ? 'n4'
+      : activeTrackId.match(/^n[1-5]$/)
+      ? (activeTrackId as any)
+      : 'n5';
+
+    Promise.all([loadVocab(targetLevel), loadGrammar(targetLevel)])
+      .then(([vList, gList]) => {
+        if (!isCancelled) {
+          setTrackVocabs(vList || []);
+          setTrackGrammars(gList || []);
+        }
+      })
+      .catch(() => {});
+
+    return () => {
+      isCancelled = true;
+    };
+  }, [activeTrackId]);
+
+  const effectiveGrammarList = trackGrammars.length > 0 ? trackGrammars : grammarList;
+  const effectiveVocabList = trackVocabs.length > 0 ? trackVocabs : vocabList;
+
   // Track progress stats
   const currentProgress = trackProgress[activeTrackId] || {
     completedUnits: [],
@@ -308,7 +341,7 @@ export const CurriculumTrackBrowser: React.FC<CurriculumTrackBrowserProps> = ({
 
   const averageScore = useMemo(() => {
     const scores = Object.values(currentProgress.lessonScores || {});
-    if (scores.length === 0) return 100;
+    if (scores.length === 0) return 0;
     const sum = scores.reduce((a, b) => a + b, 0);
     return Math.round(sum / scores.length);
   }, [currentProgress.lessonScores]);
@@ -332,19 +365,6 @@ export const CurriculumTrackBrowser: React.FC<CurriculumTrackBrowserProps> = ({
     setExpandedUnitIds(nextState);
   };
 
-  // Toggle complete lesson
-  const handleToggleLessonComplete = (unitId: string, lessonId: string) => {
-    const isCompleted = currentProgress.completedLessons.includes(lessonId);
-    if (isCompleted) {
-      // Toggle off requires direct manipulation or score reset
-      showToast('Status pelajaran diperbarui', 'ℹ️');
-    } else {
-      completeLesson(activeTrackId, unitId, lessonId, 100, 25);
-      // xp handled by completeLesson
-      playSuccessSfx();
-      showToast('Pelajaran selesai! +25 XP didapatkan ⭐', '🎉');
-    }
-  };
 
   // Switch Dialect
   const handleSelectDialect = (sub: L1Substratum) => {
@@ -663,7 +683,11 @@ export const CurriculumTrackBrowser: React.FC<CurriculumTrackBrowserProps> = ({
             <div className="flex flex-wrap items-center gap-1.5 sm:gap-2">
               <span className="inline-flex items-center gap-1 px-2 sm:px-2.5 py-0.5 rounded-full bg-amber-500/15 border border-amber-500/30 text-accent-hot text-xs sm:text-xs font-extrabold uppercase tracking-wide">
                 <Sparkles className="w-3 h-3" />
-                {trackCategory === 'jlpt' ? 'Kurikulum Orisinal Nugget Nihongo' : 'Standar Kompetensi Kerja Jepang (SSW)'}
+                {trackCategory === 'jlpt'
+                  ? 'Kurikulum Orisinal Nugget Nihongo'
+                  : trackCategory === 'jft_life'
+                  ? 'Standar Japan Foundation & Panduan Hidup di Jepang (JFT / Seikatsu)'
+                  : 'Standar Kompetensi Kerja Jepang (SSW)'}
               </span>
               {activeSswMeta && (
                 <span className="px-2 py-0.5 rounded-md bg-surface-3 text-accent text-xs font-mono border border-accent/20">
@@ -682,6 +706,8 @@ export const CurriculumTrackBrowser: React.FC<CurriculumTrackBrowserProps> = ({
             <p className="text-xs sm:text-sm text-appText-muted leading-relaxed break-words line-clamp-2 sm:line-clamp-none hidden sm:block">
               {trackCategory === 'jlpt'
                 ? 'Jalur belajar bertahap yang dirancang berdasarkan kurikulum terstruktur dan pemahaman gaya bahasa Indonesia agar kamu bisa berbicara bahasa Jepang alami tanpa salah kaprah.'
+                : trackCategory === 'jft_life'
+                ? 'Kurikulum situasional kehidupan sehari-hari dan standar Japan Foundation: prosedur administrasi balai kota, aturan pemilahan sampah, transaksi perbankan, dan tanggap darurat bencana gempa.'
                 : 'Kurikulum vokasional berbasis skenario kerja nyata: protokol keselamatan K3 Gemba, komunikasi Koe-kake lansia, standar HACCP, dan pelaporan SBAR baku kepada penyelia Jepang.'}
             </p>
 
@@ -717,7 +743,7 @@ export const CurriculumTrackBrowser: React.FC<CurriculumTrackBrowserProps> = ({
                 >
                   <Award className="w-4 h-4 text-stone-950 shrink-0" />
                   <span>Simulasi Ujian JFT-Basic CBT (60 Mnt)</span>
-                  <span className="px-1.5 py-0.2 rounded-full bg-stone-950 text-emerald-400 font-extrabold text-xs uppercase tracking-wider">
+                  <span className="px-1.5 py-0.5 rounded-full bg-stone-950 text-emerald-400 font-extrabold text-xs uppercase tracking-wider">
                     JF Standar A2
                   </span>
                 </button>
@@ -767,8 +793,8 @@ export const CurriculumTrackBrowser: React.FC<CurriculumTrackBrowserProps> = ({
             <div className="w-px h-8 bg-accent/20" />
             <div className="text-center px-2">
               <div className="text-xs text-appText-muted font-medium uppercase tracking-wider">Akurasi</div>
-              <div className="text-xl font-black text-emerald-400 tabular-nums">
-                {averageScore}%
+              <div className="text-xl font-black text-emerald-600 dark:text-emerald-400 tabular-nums">
+                {Object.keys(currentProgress.lessonScores || {}).length > 0 ? `${averageScore}%` : '—'}
               </div>
             </div>
           </div>
@@ -778,7 +804,10 @@ export const CurriculumTrackBrowser: React.FC<CurriculumTrackBrowserProps> = ({
         <div className="space-y-1">
           <div className="flex items-center justify-between text-xs text-appText-muted font-medium tabular-nums">
             <span>Kesiapan Jalur</span>
-            <span>{progressPercent}% Selesai ({completedLessonsCount}/{totalLessons} Pelajaran · Akurasi {averageScore}%)</span>
+            <span>
+              {progressPercent}% Selesai ({completedLessonsCount}/{totalLessons} Pelajaran
+              {Object.keys(currentProgress.lessonScores || {}).length > 0 ? ` · Akurasi ${averageScore}%` : ''})
+            </span>
           </div>
           <div className="w-full h-2 sm:h-2.5 bg-surface-3 rounded-full overflow-hidden p-0.5 border border-accent/15">
             <div
@@ -1037,7 +1066,7 @@ export const CurriculumTrackBrowser: React.FC<CurriculumTrackBrowserProps> = ({
                           </span>
                         )}
                         {isUnitFullyCompleted && (
-                          <span className="text-xs font-extrabold px-2 py-0.5 rounded-md bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 flex items-center gap-1">
+                          <span className="text-xs font-extrabold px-2 py-0.5 rounded-md bg-emerald-500/20 text-emerald-700 dark:text-emerald-400 border border-emerald-500/30 flex items-center gap-1">
                             <CheckCircle2 className="w-3 h-3" />
                             Tuntas
                           </span>
@@ -1091,7 +1120,7 @@ export const CurriculumTrackBrowser: React.FC<CurriculumTrackBrowserProps> = ({
 
                     {/* L1 Contrastive & Focus Note (if present) */}
                     {unit.l2d_focus_notes && (
-                      <div className="bg-amber-950/20 border border-amber-500/35 rounded-2xl p-3 sm:p-4 space-y-1 text-xs">
+                      <div className="bg-amber-500/10 border border-amber-500/25 rounded-2xl p-3 sm:p-4 space-y-1 text-xs">
                         <div className="flex items-center gap-1.5 font-bold text-accent-hot">
                           <AlertTriangle className="w-3.5 h-3.5 shrink-0" />
                           <span>Tips Logika Bahasa Indonesia 🇮🇩</span>
@@ -1119,14 +1148,14 @@ export const CurriculumTrackBrowser: React.FC<CurriculumTrackBrowserProps> = ({
                         const isLessonDone = currentProgress.completedLessons.includes(lesson.id);
                         const lessonScore = currentProgress.lessonScores?.[lesson.id] || 100;
 
-                        // Match grammar items
+                        // Match grammar items using track-specific or fallback catalog
                         const matchedGrammars = (lesson.grammar_ids || [])
-                          .map((gid) => grammarList.find((g) => g.id === gid))
+                          .map((gid) => effectiveGrammarList.find((g) => g.id === gid))
                           .filter(Boolean) as NormalizedGrammar[];
 
-                        // Match vocab items
+                        // Match vocab items using track-specific or fallback catalog
                         const matchedVocabs = (lesson.vocab_ids || [])
-                          .map((vid) => vocabList.find((v) => v.id === vid))
+                          .map((vid) => effectiveVocabList.find((v) => v.id === vid))
                           .filter(Boolean) as NormalizedVocab[];
 
                         return (
@@ -1146,7 +1175,7 @@ export const CurriculumTrackBrowser: React.FC<CurriculumTrackBrowserProps> = ({
                                   </span>
 
                                   {isLessonDone ? (
-                                    <span className="text-xs font-extrabold px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 flex items-center gap-1">
+                                    <span className="text-xs font-extrabold px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-700 dark:text-emerald-400 border border-emerald-500/30 flex items-center gap-1">
                                       <CheckCircle2 className="w-3 h-3" />
                                       Tuntas ({lessonScore}%)
                                     </span>
@@ -1191,21 +1220,24 @@ export const CurriculumTrackBrowser: React.FC<CurriculumTrackBrowserProps> = ({
                                   onClick={() => openLessonStudy(activeTrackId, unit.id, lesson.id, 'curriculum')}
                                   className={`min-h-[44px] px-4 py-2.5 rounded-xl text-xs font-extrabold transition-all flex items-center gap-2 active:scale-95 shadow-sm focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:outline-none ${
                                     isLessonDone
-                                      ? 'bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 hover:bg-emerald-500/30'
+                                      ? 'bg-emerald-500/20 text-emerald-700 dark:text-emerald-300 border border-emerald-500/40 hover:bg-emerald-500/30 font-bold'
                                       : 'bg-accent text-bg hover:brightness-110 shadow-md'
                                   }`}
                                 >
                                   <BookOpen className="w-4 h-4" />
                                   <span>{isLessonDone ? 'Ulas Pelajaran' : 'Mulai Belajar'}</span>
                                 </button>
-                                <button
-                                  type="button"
-                                  onClick={() => handleToggleLessonComplete(unit.id, lesson.id)}
-                                  title={isLessonDone ? 'Telah ditandai selesai' : 'Tandai tuntas'}
-                                  className="w-10 h-10 min-w-[40px] min-h-[40px] rounded-xl bg-surface-3 hover:bg-surface-2 border border-accent/20 flex items-center justify-center text-appText-muted hover:text-accent transition-colors active:scale-95"
+                                <div
+                                  title={isLessonDone ? 'Telah tuntas dipelajari' : 'Belum tuntas'}
+                                  className={`w-10 h-10 min-w-[40px] min-h-[40px] rounded-xl border flex items-center justify-center transition-colors ${
+                                    isLessonDone
+                                      ? 'bg-emerald-500/15 border-emerald-500/30 text-emerald-700 dark:text-emerald-400'
+                                      : 'bg-surface-3 border-accent/20 text-appText-dim'
+                                  }`}
+                                  aria-label={isLessonDone ? 'Status: Tuntas' : 'Status: Belum tuntas'}
                                 >
-                                  <CheckCircle2 className={`w-4 h-4 ${isLessonDone ? 'text-emerald-400' : 'text-appText-dim'}`} />
-                                </button>
+                                  <CheckCircle2 className={`w-4 h-4 ${isLessonDone ? 'text-emerald-600 dark:text-emerald-400' : 'text-appText-dim'}`} />
+                                </div>
                               </div>
                             </div>
 
@@ -1222,7 +1254,7 @@ export const CurriculumTrackBrowser: React.FC<CurriculumTrackBrowserProps> = ({
                                       onClick={() => onSelectItem(g, 'grammar')}
                                       className="min-h-[36px] px-2.5 py-1 rounded-lg bg-surface hover:bg-surface-3 border border-accent/20 hover:border-accent text-left text-xs transition-colors flex items-center gap-1.5 group active:scale-95 focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:outline-none"
                                     >
-                                      <span className="font-jp font-extrabold text-amber-400 group-hover:text-amber-200">
+                                      <span className="font-jp font-extrabold text-accent-hot dark:text-amber-400 group-hover:text-accent">
                                         {g.pattern}
                                       </span>
                                       <span className="text-xs text-appText-muted truncate max-w-[140px]">
@@ -1277,7 +1309,7 @@ export const CurriculumTrackBrowser: React.FC<CurriculumTrackBrowserProps> = ({
          ───────────────────────────────────────────────────────────── */}
       {isMobileTrackPickerOpen && typeof document !== 'undefined' && createPortal(
         <div
-          className="fixed inset-0 z-[99999] bg-black/75 backdrop-blur-sm flex items-end sm:items-center justify-center p-0 sm:p-4 animate-in fade-in duration-200"
+          className="fixed inset-0 z-50 bg-black/75 backdrop-blur-sm flex items-end sm:items-center justify-center p-0 sm:p-4 animate-in fade-in duration-200"
           onClick={() => setIsMobileTrackPickerOpen(false)}
         >
           <div
@@ -1370,7 +1402,7 @@ export const CurriculumTrackBrowser: React.FC<CurriculumTrackBrowserProps> = ({
                       </div>
                       <div className="text-right shrink-0">
                         {completedCount > 0 ? (
-                          <span className="text-xs text-emerald-400 font-bold">{completedCount} tuntas</span>
+                          <span className="text-xs text-emerald-700 dark:text-emerald-400 font-bold">{completedCount} tuntas</span>
                         ) : (
                           <span className="text-xs text-appText-muted">{trk.grammarCount}</span>
                         )}
@@ -1447,7 +1479,7 @@ export const CurriculumTrackBrowser: React.FC<CurriculumTrackBrowserProps> = ({
                         </div>
                         <div className="text-right shrink-0">
                           {completedCount > 0 ? (
-                            <span className="text-xs text-emerald-400 font-bold">{completedCount} tuntas</span>
+                            <span className="text-xs text-emerald-700 dark:text-emerald-400 font-bold">{completedCount} tuntas</span>
                           ) : (
                             <span className="text-xs ${trk.status === 'coming_soon' ? 'text-amber-400 font-bold' : 'text-appText-muted'}">${trk.status === 'coming_soon' ? '🔒 Segera Hadir' : trk.units}</span>
                           )}
@@ -1486,7 +1518,7 @@ export const CurriculumTrackBrowser: React.FC<CurriculumTrackBrowserProps> = ({
                       </div>
                       <div className="text-right shrink-0">
                         {completedCount > 0 ? (
-                          <span className="text-xs text-emerald-400 font-bold">{completedCount} tuntas</span>
+                          <span className="text-xs text-emerald-700 dark:text-emerald-400 font-bold">{completedCount} tuntas</span>
                         ) : (
                           <span className="text-xs text-appText-muted">{trk.units}</span>
                         )}
@@ -1517,7 +1549,7 @@ export const CurriculumTrackBrowser: React.FC<CurriculumTrackBrowserProps> = ({
 
       {/* ── UNIFIED DIALECT SELECTOR BOTTOM SHEET MODAL ── */}
       {isSubstratumDropdownOpen && typeof document !== 'undefined' && createPortal(
-        <div className="fixed inset-0 z-[99999] flex items-end sm:items-center justify-center p-0 sm:p-4 bg-black/60 backdrop-blur-sm animate-fade-in">
+        <div className="fixed inset-0 z-50 flex items-end sm:items-center justify-center p-0 sm:p-4 bg-black/60 backdrop-blur-sm animate-fade-in">
           <div
             className="fixed inset-0"
             onClick={() => setIsSubstratumDropdownOpen(false)}

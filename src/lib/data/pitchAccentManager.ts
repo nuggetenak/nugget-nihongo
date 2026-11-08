@@ -5,7 +5,7 @@
 //  and contour annotations across the Nugget Nihongo ecosystem.
 // ══════════════════════════════════════════════════════════════════
 
-import { splitIntoMora, hiraganaToKatakana } from '../audio/moraTokenizer';
+import { splitIntoMora, hiraganaToKatakana } from '../audio/moraTokenizer.ts';
 
 export interface PitchAccentEntry {
   pattern: number; // 0: Heiban, 1: Atamadaka, 2: Nakadaka, etc.
@@ -51,22 +51,47 @@ const SEED_PITCH_ENTRIES: Record<string, PitchAccentEntry> = {
 
 /**
  * Loads the full compiled pitch accent index from public/data/pitch/pitch-accent-index.json
+ * Supports both browser fetch runtime and Node.js testing/SSR runtime (56,700+ entries)
  */
 export async function loadPitchAccentIndex(): Promise<Record<string, PitchAccentEntry>> {
-  if (pitchIndexCache) return pitchIndexCache;
+  if (pitchIndexCache && Object.keys(pitchIndexCache).length > Object.keys(SEED_PITCH_ENTRIES).length) {
+    return pitchIndexCache;
+  }
   if (loadPromise) return loadPromise;
 
   loadPromise = (async () => {
-    try {
-      if (typeof fetch !== 'undefined') {
+    // 1. Browser runtime check
+    if (typeof window !== 'undefined' && typeof fetch !== 'undefined') {
+      try {
         const res = await fetch('/data/pitch/pitch-accent-index.json');
         if (res.ok) {
           pitchIndexCache = await res.json();
           return pitchIndexCache!;
         }
+      } catch (err) {
+        console.warn('[pitchAccentManager] Could not load remote pitch index:', err);
       }
-    } catch (err) {
-      console.warn('[pitchAccentManager] Could not load remote pitch index:', err);
+    }
+
+    // 2. Node.js testing/SSR environment: direct filesystem read
+    if (typeof window === 'undefined') {
+      try {
+        const fsMod = await import('fs');
+        const pathMod = await import('path');
+        const candidatePaths = [
+          pathMod.resolve(process.cwd(), 'public/data/pitch/pitch-accent-index.json'),
+          pathMod.resolve(process.cwd(), '../public/data/pitch/pitch-accent-index.json'),
+        ];
+        for (const cp of candidatePaths) {
+          if (fsMod.existsSync(cp)) {
+            const content = fsMod.readFileSync(cp, 'utf8');
+            pitchIndexCache = JSON.parse(content);
+            return pitchIndexCache!;
+          }
+        }
+      } catch (err) {
+        console.warn('[pitchAccentManager] Could not load local pitch index via fs:', err);
+      }
     }
 
     pitchIndexCache = SEED_PITCH_ENTRIES;

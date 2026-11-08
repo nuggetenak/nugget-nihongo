@@ -14,6 +14,7 @@ export interface Kotowaza {
   category: string;
   literal?: string;
   origin?: string;
+  indonesianEquivalent?: string;
 }
 
 export type KotowazaItem = Kotowaza;
@@ -3832,10 +3833,48 @@ export const KOTOWAZA_COLLECTION: Kotowaza[] = [
 /**
  * Return daily proverb deterministically based on epoch day
  * Guaranteed distinct entry for every day across full leap year (366+ entries)
+ * Defensively guarded against negative timestamps or non-number inputs
  */
-export function getDailyKotowaza(): Kotowaza {
-  const dayIndex = Math.floor(Date.now() / 86400000);
-  return KOTOWAZA_COLLECTION[dayIndex % KOTOWAZA_COLLECTION.length];
+export function getDailyKotowaza(epochMs?: number): Kotowaza {
+  const ms = typeof epochMs === 'number' && !Number.isNaN(epochMs) ? epochMs : Date.now();
+  const dayIndex = Math.floor(ms / 86400000);
+  const len = KOTOWAZA_COLLECTION.length;
+  const safeIndex = ((dayIndex % len) + len) % len;
+  return KOTOWAZA_COLLECTION[safeIndex];
+}
+
+/**
+ * Find a kotowaza by its unique ID (e.g. 'ktw-001')
+ */
+export function getKotowazaById(id: string): Kotowaza | undefined {
+  if (!id) return undefined;
+  return KOTOWAZA_COLLECTION.find((k) => k.id === id);
+}
+
+/**
+ * Filter and search kotowaza collection with multi-field matching
+ */
+export function searchKotowaza(query: string, category?: string): Kotowaza[] {
+  let list = KOTOWAZA_COLLECTION;
+
+  if (category && category !== 'Semua') {
+    list = list.filter((k) => k.category === category);
+  }
+
+  const q = query.trim().toLowerCase();
+  if (!q) return list;
+
+  return list.filter(
+    (k) =>
+      k.jp.toLowerCase().includes(q) ||
+      k.reading.toLowerCase().includes(q) ||
+      k.romaji.toLowerCase().includes(q) ||
+      k.meaning.toLowerCase().includes(q) ||
+      (k.literal && k.literal.toLowerCase().includes(q)) ||
+      k.wisdom.toLowerCase().includes(q) ||
+      (k.origin && k.origin.toLowerCase().includes(q)) ||
+      (k.indonesianEquivalent && k.indonesianEquivalent.toLowerCase().includes(q))
+  );
 }
 
 /**

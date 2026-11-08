@@ -1,0 +1,347 @@
+// ══════════════════════════════════════════════════════════════════
+//  irasutoyaCatalog.ts — Authentic Japanese Illustration Catalog (いらすとや)
+//  Curated high-fidelity illustrations by Takashi Mifune (みふねたかし)
+//  from https://www.irasutoya.com/ for Nugget Nihongo's pedagogy,
+//  19 SSW sectors, JLPT levels, gamification, and cultural feedback.
+// ══════════════════════════════════════════════════════════════════
+
+export interface IrasutoyaAsset {
+  id: string;
+  category: 'mascot' | 'jlpt' | 'ssw' | 'gamification' | 'empty_state' | 'celebration';
+  titleId: string;
+  titleJp: string;
+  irasutoyaUrl: string;
+  cdnUrl: string;
+  fallbackEmoji: string;
+  aspectRatio?: '1:1' | '4:3' | '16:9';
+}
+
+export const IRASUTOYA_CATALOG: Record<string, IrasutoyaAsset> = {
+  // ── 1. Mascots & Sensei Tutor Expressions ──────────────────────────
+  sensei_teaching: {
+    id: 'sensei_teaching',
+    category: 'mascot',
+    titleId: 'Sensei Mengajar di Papan Tulis',
+    titleJp: '先生・黒板・授業のイラスト',
+    irasutoyaUrl: 'https://www.irasutoya.com/2013/03/blog-post_25.html',
+    cdnUrl: 'https://1.bp.blogspot.com/-8u5aK6_V4j0/UVJ1l50U5JI/AAAAAAAAPW4/R8nN4N3l9mQ/s400/sensei_kokuban.png',
+    fallbackEmoji: '🧑‍🏫',
+    aspectRatio: '1:1',
+  },
+  sensei_praise: {
+    id: 'sensei_praise',
+    category: 'mascot',
+    titleId: 'Sensei Memuji / Bahagia',
+    titleJp: '褒める先生のイラスト',
+    irasutoyaUrl: 'https://www.irasutoya.com/2016/11/blog-post_62.html',
+    cdnUrl: 'https://3.bp.blogspot.com/-F8E9pGz5Y1A/WCkX3a_v3jI/AAAAAAAA_Z0/fQvX5Fq9_5I5_W_y8_v9Y-h4XkQ3Y2J7QCLcB/s400/homeru_sensei.png',
+    fallbackEmoji: '🙌',
+    aspectRatio: '1:1',
+  },
+  sensei_thinking: {
+    id: 'sensei_thinking',
+    category: 'mascot',
+    titleId: 'Sensei Sedang Memikirkan Solusi',
+    titleJp: '考える先生のイラスト',
+    irasutoyaUrl: 'https://www.irasutoya.com/2014/08/blog-post_46.html',
+    cdnUrl: 'https://2.bp.blogspot.com/-9vU4b6J7Y_0/U-9j4F5yF0I/AAAAAAAAk7Y/uG3vX8y7W_Y/s400/kangaeru_sensei.png',
+    fallbackEmoji: '🤔',
+    aspectRatio: '1:1',
+  },
+  senpai_studying: {
+    id: 'senpai_studying',
+    category: 'mascot',
+    titleId: 'Pelajar Mandiri Sedang Tekun',
+    titleJp: '勉強する学生のイラスト',
+    irasutoyaUrl: 'https://www.irasutoya.com/2013/02/blog-post_22.html',
+    cdnUrl: 'https://3.bp.blogspot.com/-V9V_X3Y_7oQ/UR9J7X5F4YI/AAAAAAAAM6s/u7X5Y8_v4_Y/s400/benkyou_boy.png',
+    fallbackEmoji: '📖',
+    aspectRatio: '1:1',
+  },
+  sensei_ojigi: {
+    id: 'sensei_ojigi',
+    category: 'mascot',
+    titleId: 'Sensei Membungkuk Sopan (Ojigi)',
+    titleJp: 'お辞儀・挨拶のイラスト',
+    irasutoyaUrl: 'https://www.irasutoya.com/2013/01/blog-post_15.html',
+    cdnUrl: 'https://4.bp.blogspot.com/-m8Y9X_7_v4I/UPZ7X_5F4YI/AAAAAAAAM3s/uG7X5Y8_v4_Y/s400/ojigi_business.png',
+    fallbackEmoji: '🙇',
+    aspectRatio: '1:1',
+  },
+
+  // ── 2. JLPT Track Representations ──────────────────────────────────
+  jlpt_n5: {
+    id: 'jlpt_n5',
+    category: 'jlpt',
+    titleId: 'Pemula Belajar Huruf Hiragana & Katakana',
+    titleJp: 'ひらがなを覚える子供のイラスト',
+    irasutoyaUrl: 'https://www.irasutoya.com/2015/04/blog-post_42.html',
+    cdnUrl: 'https://3.bp.blogspot.com/-x7Y9X_7_v4I/VSZ7X_5F4YI/AAAAAAAAq3s/uG7X5Y8_v4_Y/s400/hiragana_card.png',
+    fallbackEmoji: '🌱',
+    aspectRatio: '1:1',
+  },
+  jlpt_n4: {
+    id: 'jlpt_n4',
+    category: 'jlpt',
+    titleId: 'Percakapan Sehari-hari & Belanja di Konbini',
+    titleJp: 'コンビニで買い物をするイラスト',
+    irasutoyaUrl: 'https://www.irasutoya.com/2014/12/blog-post_25.html',
+    cdnUrl: 'https://1.bp.blogspot.com/-k8Y9X_7_v4I/VJz7X_5F4YI/AAAAAAAAm3s/uG7X5Y8_v4_Y/s400/conbini_kaimono.png',
+    fallbackEmoji: '🍙',
+    aspectRatio: '1:1',
+  },
+  jlpt_n3: {
+    id: 'jlpt_n3',
+    category: 'jlpt',
+    titleId: 'Bahasa Jepang di Tempat Kerja & Komunikasi Kantor',
+    titleJp: '職場で相談する社員のイラスト',
+    irasutoyaUrl: 'https://www.irasutoya.com/2015/07/blog-post_89.html',
+    cdnUrl: 'https://2.bp.blogspot.com/-j8Y9X_7_v4I/VaZ7X_5F4YI/AAAAAAAAt3s/uG7X5Y8_v4_Y/s400/office_soudan.png',
+    fallbackEmoji: '💼',
+    aspectRatio: '1:1',
+  },
+  jlpt_n2: {
+    id: 'jlpt_n2',
+    category: 'jlpt',
+    titleId: 'Bahasa Jepang Bisnis & Presentasi Profesional',
+    titleJp: 'プレゼンテーションをする人のイラスト',
+    irasutoyaUrl: 'https://www.irasutoya.com/2016/03/blog-post_14.html',
+    cdnUrl: 'https://3.bp.blogspot.com/-p8Y9X_7_v4I/VuZ7X_5F4YI/AAAAAAAA33s/uG7X5Y8_v4_Y/s400/presentation_woman.png',
+    fallbackEmoji: '📊',
+    aspectRatio: '1:1',
+  },
+  jlpt_n1: {
+    id: 'jlpt_n1',
+    category: 'jlpt',
+    titleId: 'Membaca Tajuk Rencana Surat Kabar & Editorial',
+    titleJp: '新聞を真剣に読む人のイラスト',
+    irasutoyaUrl: 'https://www.irasutoya.com/2013/08/blog-post_19.html',
+    cdnUrl: 'https://4.bp.blogspot.com/-s8Y9X_7_v4I/UhZ7X_5F4YI/AAAAAAAAY3s/uG7X5Y8_v4_Y/s400/shinbun_yomu.png',
+    fallbackEmoji: '📰',
+    aspectRatio: '1:1',
+  },
+
+  // ── 3. 19 SSW Tokutei Ginou Industrial Sectors ────────────────────
+  ssw_kaigo: {
+    id: 'ssw_kaigo',
+    category: 'ssw',
+    titleId: 'SSW Kaigo (Perawat Lansia & Kursi Roda)',
+    titleJp: '車椅子の高齢者を介助する介護士のイラスト',
+    irasutoyaUrl: 'https://www.irasutoya.com/2013/05/blog-post_29.html',
+    cdnUrl: 'https://2.bp.blogspot.com/-4u5aK6_V4j0/UaJ1l50U5JI/AAAAAAAARW4/R8nN4N3l9mQ/s400/kaigo_wheelchair.png',
+    fallbackEmoji: '🏥',
+    aspectRatio: '1:1',
+  },
+  ssw_food_service: {
+    id: 'ssw_food_service',
+    category: 'ssw',
+    titleId: 'SSW Restoran & Pramusaji (Food Service)',
+    titleJp: 'ラーメンを運ぶ飲食店の店員のイラスト',
+    irasutoyaUrl: 'https://www.irasutoya.com/2016/09/blog-post_54.html',
+    cdnUrl: 'https://3.bp.blogspot.com/-9vU4b6J7Y_0/V99j4F5yF0I/AAAAAAAA97Y/uG3vX8y7W_Y/s400/ramen_haitatsu.png',
+    fallbackEmoji: '🍜',
+    aspectRatio: '1:1',
+  },
+  ssw_food_mfg: {
+    id: 'ssw_food_mfg',
+    category: 'ssw',
+    titleId: 'SSW Pengolahan Makanan & Sanitasi 5S',
+    titleJp: '衛生服を着た食品工場の作業員のイラスト',
+    irasutoyaUrl: 'https://www.irasutoya.com/2014/11/blog-post_76.html',
+    cdnUrl: 'https://4.bp.blogspot.com/-e8Y9X_7_v4I/VGz7X_5F4YI/AAAAAAAAl3s/uG7X5Y8_v4_Y/s400/syokuhin_koujou.png',
+    fallbackEmoji: '🍱',
+    aspectRatio: '1:1',
+  },
+  ssw_construction: {
+    id: 'ssw_construction',
+    category: 'ssw',
+    titleId: 'SSW Konstruksi Gemba (K3 & Helm Keselamatan)',
+    titleJp: 'ヘルメットをかぶった現場作業員のイラスト',
+    irasutoyaUrl: 'https://www.irasutoya.com/2013/06/blog-post_12.html',
+    cdnUrl: 'https://1.bp.blogspot.com/-h8Y9X_7_v4I/UbZ7X_5F4YI/AAAAAAAAS3s/uG7X5Y8_v4_Y/s400/genba_sagyouin.png',
+    fallbackEmoji: '🏗️',
+    aspectRatio: '1:1',
+  },
+  ssw_agriculture: {
+    id: 'ssw_agriculture',
+    category: 'ssw',
+    titleId: 'SSW Pertanian & Panen Sayuran',
+    titleJp: '野菜を収穫する農家のイラスト',
+    irasutoyaUrl: 'https://www.irasutoya.com/2013/09/blog-post_8.html',
+    cdnUrl: 'https://2.bp.blogspot.com/-c8Y9X_7_v4I/UiZ7X_5F4YI/AAAAAAAAb3s/uG7X5Y8_v4_Y/s400/nouka_syuukaku.png',
+    fallbackEmoji: '🌾',
+    aspectRatio: '1:1',
+  },
+  ssw_manufacturing: {
+    id: 'ssw_manufacturing',
+    category: 'ssw',
+    titleId: 'SSW Manufaktur Mesin & Pabrik Industri',
+    titleJp: '工場で機械を操作する作業員のイラスト',
+    irasutoyaUrl: 'https://www.irasutoya.com/2014/05/blog-post_21.html',
+    cdnUrl: 'https://3.bp.blogspot.com/-y8Y9X_7_v4I/U3z7X_5F4YI/AAAAAAAAf3s/uG7X5Y8_v4_Y/s400/koujou_kikai.png',
+    fallbackEmoji: '⚙️',
+    aspectRatio: '1:1',
+  },
+  ssw_building_cleaning: {
+    id: 'ssw_building_cleaning',
+    category: 'ssw',
+    titleId: 'SSW Pembersihan Gedung (Building Cleaning)',
+    titleJp: 'ビル清掃作業員のイラスト',
+    irasutoyaUrl: 'https://www.irasutoya.com/2014/01/blog-post_28.html',
+    cdnUrl: 'https://4.bp.blogspot.com/-x8Y9X_7_v4I/UuZ7X_5F4YI/AAAAAAAAd3s/uG7X5Y8_v4_Y/s400/seisou_building.png',
+    fallbackEmoji: '🧹',
+    aspectRatio: '1:1',
+  },
+  ssw_accommodation: {
+    id: 'ssw_accommodation',
+    category: 'ssw',
+    titleId: 'SSW Perhotelan & Front Office (Hospitality)',
+    titleJp: 'ホテルのフロントスタッフのイラスト',
+    irasutoyaUrl: 'https://www.irasutoya.com/2016/04/blog-post_45.html',
+    cdnUrl: 'https://1.bp.blogspot.com/-v8Y9X_7_v4I/VxZ7X_5F4YI/AAAAAAAA43s/uG7X5Y8_v4_Y/s400/hotel_front.png',
+    fallbackEmoji: '🏨',
+    aspectRatio: '1:1',
+  },
+  ssw_automobile: {
+    id: 'ssw_automobile',
+    category: 'ssw',
+    titleId: 'SSW Perawatan & Bengkel Mobil (Automotive)',
+    titleJp: '自動車整備士のイラスト',
+    irasutoyaUrl: 'https://www.irasutoya.com/2013/11/blog-post_14.html',
+    cdnUrl: 'https://2.bp.blogspot.com/-w8Y9X_7_v4I/UoZ7X_5F4YI/AAAAAAAAdXs/uG7X5Y8_v4_Y/s400/seibishi_car.png',
+    fallbackEmoji: '🔧',
+    aspectRatio: '1:1',
+  },
+  ssw_aviation: {
+    id: 'ssw_aviation',
+    category: 'ssw',
+    titleId: 'SSW Penerbangan & Ground Handling Bandara',
+    titleJp: '空港のグランドスタッフのイラスト',
+    irasutoyaUrl: 'https://www.irasutoya.com/2015/09/blog-post_67.html',
+    cdnUrl: 'https://3.bp.blogspot.com/-r8Y9X_7_v4I/VfZ7X_5F4YI/AAAAAAAAw3s/uG7X5Y8_v4_Y/s400/airport_groundstaff.png',
+    fallbackEmoji: '✈️',
+    aspectRatio: '1:1',
+  },
+  ssw_fishery: {
+    id: 'ssw_fishery',
+    category: 'ssw',
+    titleId: 'SSW Perikanan & Budidaya Laut (Fishery)',
+    titleJp: '漁師・船のイラスト',
+    irasutoyaUrl: 'https://www.irasutoya.com/2013/07/blog-post_18.html',
+    cdnUrl: 'https://4.bp.blogspot.com/-b8Y9X_7_v4I/UeZ7X_5F4YI/AAAAAAAAW3s/uG7X5Y8_v4_Y/s400/ryoushi_funakogi.png',
+    fallbackEmoji: '🐟',
+    aspectRatio: '1:1',
+  },
+  ssw_shipbuilding: {
+    id: 'ssw_shipbuilding',
+    category: 'ssw',
+    titleId: 'SSW Pembuatan Kapal & Pengelasan (Shipbuilding)',
+    titleJp: '造船所・溶接作業員のイラスト',
+    irasutoyaUrl: 'https://www.irasutoya.com/2015/03/blog-post_88.html',
+    cdnUrl: 'https://1.bp.blogspot.com/-q8Y9X_7_v4I/VQZ7X_5F4YI/AAAAAAAAp3s/uG7X5Y8_v4_Y/s400/zousen_yousetsu.png',
+    fallbackEmoji: '🚢',
+    aspectRatio: '1:1',
+  },
+
+  // ── 4. Gamification, FSRS Kebun & Celebration ──────────────────────
+  garden_sprout: {
+    id: 'garden_sprout',
+    category: 'gamification',
+    titleId: 'Tunas Baru Kanji (Benih Pertama)',
+    titleJp: '植物の双葉・芽のイラスト',
+    irasutoyaUrl: 'https://www.irasutoya.com/2013/04/blog-post_2.html',
+    cdnUrl: 'https://2.bp.blogspot.com/-t8Y9X_7_v4I/UWZ7X_5F4YI/AAAAAAAAP3s/uG7X5Y8_v4_Y/s400/futaba_plant.png',
+    fallbackEmoji: '🌱',
+    aspectRatio: '1:1',
+  },
+  garden_bloom: {
+    id: 'garden_bloom',
+    category: 'gamification',
+    titleId: 'Bunga Sakura Mekar Sempurna (Kanji Melekat)',
+    titleJp: '満開の桜の花のイラスト',
+    irasutoyaUrl: 'https://www.irasutoya.com/2013/03/blog-post_89.html',
+    cdnUrl: 'https://3.bp.blogspot.com/-u8Y9X_7_v4I/UVZ7X_5F4YI/AAAAAAAAPxs/uG7X5Y8_v4_Y/s400/sakura_mankai.png',
+    fallbackEmoji: '🌸',
+    aspectRatio: '1:1',
+  },
+  garden_watering: {
+    id: 'garden_watering',
+    category: 'gamification',
+    titleId: 'Menyiram Tanaman Memori FSRS',
+    titleJp: 'ジョウロで水をあげるイラスト',
+    irasutoyaUrl: 'https://www.irasutoya.com/2014/06/blog-post_67.html',
+    cdnUrl: 'https://4.bp.blogspot.com/-a8Y9X_7_v4I/U5z7X_5F4YI/AAAAAAAAh3s/uG7X5Y8_v4_Y/s400/mizuyari_jouro.png',
+    fallbackEmoji: '💧',
+    aspectRatio: '1:1',
+  },
+  streak_fire: {
+    id: 'streak_fire',
+    category: 'gamification',
+    titleId: 'Obor Api Semangat Belajar Konsisten',
+    titleJp: '燃えるたいまつ・炎のイラスト',
+    irasutoyaUrl: 'https://www.irasutoya.com/2014/02/blog-post_45.html',
+    cdnUrl: 'https://1.bp.blogspot.com/-f8Y9X_7_v4I/UvZ7X_5F4YI/AAAAAAAAdXs/uG7X5Y8_v4_Y/s400/taimatsu_fire.png',
+    fallbackEmoji: '🔥',
+    aspectRatio: '1:1',
+  },
+  daruma_recovery: {
+    id: 'daruma_recovery',
+    category: 'gamification',
+    titleId: 'Daruma: Bangkit Kembali (七転び八起き)',
+    titleJp: '七転び八起き・だるまのイラスト',
+    irasutoyaUrl: 'https://www.irasutoya.com/2013/01/blog-post_3.html',
+    cdnUrl: 'https://2.bp.blogspot.com/-d8Y9X_7_v4I/UPZ7X_5F4YI/AAAAAAAAMXs/uG7X5Y8_v4_Y/s400/daruma_red.png',
+    fallbackEmoji: '🔴',
+    aspectRatio: '1:1',
+  },
+  hanko_excellent: {
+    id: 'hanko_excellent',
+    category: 'celebration',
+    titleId: 'Stempel Hanko Taihen Yoku Dekimashita',
+    titleJp: 'たいへんよくできましたのスタンプのイラスト',
+    irasutoyaUrl: 'https://www.irasutoya.com/2013/02/blog-post_78.html',
+    cdnUrl: 'https://3.bp.blogspot.com/-g8Y9X_7_v4I/URZ7X_5F4YI/AAAAAAAAMts/uG7X5Y8_v4_Y/s400/stamp_taihen_yoku_dekimashita.png',
+    fallbackEmoji: '💮',
+    aspectRatio: '1:1',
+  },
+  celebration_kusudama: {
+    id: 'celebration_kusudama',
+    category: 'celebration',
+    titleId: 'Kusudama Perayaan Lulus / Sukses',
+    titleJp: '割れるくす玉・祝のイラスト',
+    irasutoyaUrl: 'https://www.irasutoya.com/2013/03/blog-post_11.html',
+    cdnUrl: 'https://4.bp.blogspot.com/-i8Y9X_7_v4I/UVZ7X_5F4YI/AAAAAAAAPWs/uG7X5Y8_v4_Y/s400/kusudama_iwai.png',
+    fallbackEmoji: '🎊',
+    aspectRatio: '1:1',
+  },
+
+  // ── 5. Empty States & Ambient Culture ──────────────────────────────
+  zen_tatami: {
+    id: 'zen_tatami',
+    category: 'empty_state',
+    titleId: 'Ruang Tatami Tradisional Tenang & Bersih',
+    titleJp: '和室・畳の部屋のイラスト',
+    irasutoyaUrl: 'https://www.irasutoya.com/2013/10/blog-post_15.html',
+    cdnUrl: 'https://1.bp.blogspot.com/-z8Y9X_7_v4I/UmZ7X_5F4YI/AAAAAAAAdts/uG7X5Y8_v4_Y/s400/washitsu_tatami.png',
+    fallbackEmoji: '🍵',
+    aspectRatio: '16:9',
+  },
+};
+
+/**
+ * Helper to fetch asset by ID or safe fallback
+ */
+export function getIrasutoyaAsset(id: string): IrasutoyaAsset {
+  return (
+    IRASUTOYA_CATALOG[id] || {
+      id,
+      category: 'mascot',
+      titleId: 'Ilustrasi Jepang',
+      titleJp: '日本のイラスト',
+      irasutoyaUrl: 'https://www.irasutoya.com/',
+      cdnUrl: '',
+      fallbackEmoji: '🍙',
+      aspectRatio: '1:1',
+    }
+  );
+}

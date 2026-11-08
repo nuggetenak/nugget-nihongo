@@ -44,7 +44,7 @@ export function shuffle<T>(array: T[]): T[] {
  * Generate 3 smart distractors from a vocab pool
  */
 function getVocabDistractors(correctItem: NormalizedVocab, pool: NormalizedVocab[], count = 3): string[] {
-  const filtered = pool.filter((v) => v.id !== correctItem.id && v.meaning !== correctItem.meaning);
+  const filtered = pool.filter((v) => v.id !== correctItem.id && v.meaning && v.meaning.trim() !== '' && v.meaning !== correctItem.meaning);
   const shuffled = shuffle(filtered);
   const distractors: string[] = [];
   for (const item of shuffled) {
@@ -539,12 +539,17 @@ function splitIntoTokens(sentence: string): string[] {
  * Count how many cards are due for review today according to FSRS
  */
 export function getFSRSDueCount(cardsMap: Record<string, { card: FSRSCard; source?: string }>): number {
-  const now = new Date();
+  const now = Date.now();
   let count = 0;
-  for (const record of Object.values(cardsMap)) {
+  for (const record of Object.values(cardsMap || {})) {
     if (record?.card) {
-      if (!record.card.due || new Date(record.card.due) <= now) {
+      if (!record.card.due) {
         count++;
+      } else {
+        const dueTime = new Date(record.card.due).getTime();
+        if (Number.isNaN(dueTime) || dueTime <= now) {
+          count++;
+        }
       }
     }
   }
@@ -587,7 +592,8 @@ export function generateFSRSDueQuestions(
   }
 
   // Combine due items first, fill remaining with others
-  const targetPool = [...shuffle(dueVocab), ...shuffle(otherVocab)].slice(0, count);
+  if (dueVocab.length === 0) return [];
+  const targetPool = shuffle(dueVocab).slice(0, count);
   const questions: QuizQuestionItem[] = [];
 
   for (const v of targetPool) {
@@ -846,3 +852,12 @@ export function generatePitchAccentQuestions(
 }
 
 
+
+export {
+  calculateRetentionAccuracy,
+  calculateWaterDropsReward,
+  calculateSessionXpReward,
+  evaluateRetentionGrade,
+  getQuizModeMeta,
+  QUIZ_MODE_REGISTRY,
+} from './retentionScoring';

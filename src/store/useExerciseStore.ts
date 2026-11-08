@@ -102,6 +102,7 @@ interface ExerciseStoreState {
   tickTimer: () => void;
   togglePause: () => void;
   submitTest: () => ExerciseSessionSummary | null;
+  retryWrongQuestions: () => void;
   exitSession: () => void;
 
   // ── Persistent Records & Mistake Bank ──
@@ -322,7 +323,12 @@ export const useExerciseStore = create<ExerciseStoreState>((set, get) => ({
     const { userAnswers, currentSet, remainingSeconds, mode, flaggedIndices } = get();
     if (!currentSet || get().isSubmitted) return;
 
-    const newAnswers = { ...userAnswers, [questionIndex]: optionIndex };
+    const newAnswers = { ...userAnswers };
+    if (optionIndex < 0) {
+      delete newAnswers[questionIndex];
+    } else {
+      newAnswers[questionIndex] = optionIndex;
+    }
     set({ userAnswers: newAnswers });
 
     // Sync to local storage for crash protection
@@ -388,10 +394,15 @@ export const useExerciseStore = create<ExerciseStoreState>((set, get) => ({
       if (tokenAtStar !== null) {
         // Find matching index in options
         const item = currentSet.items[questionIndex];
-        const optIdx = item.options.findIndex((opt) => opt.trim() === tokenAtStar.trim());
+        const optIdx = item.options.findIndex(
+          (opt) => opt.trim() === tokenAtStar.trim() || tokenAtStar.includes(opt.trim()) || opt.includes(tokenAtStar.trim())
+        );
         if (optIdx !== -1) {
           get().selectOption(questionIndex, optIdx);
         }
+      } else {
+        // If star slot is emptied, clear selection
+        get().selectOption(questionIndex, -1);
       }
     }
   },
@@ -410,7 +421,7 @@ export const useExerciseStore = create<ExerciseStoreState>((set, get) => ({
       }
     } else {
       // In guided mode, timer counts upwards (elapsed time)
-      set({ remainingSeconds: remainingSeconds + 1 });
+      set({ remainingSeconds: Math.max(0, (remainingSeconds || 0) + 1) });
     }
   },
 
@@ -431,12 +442,12 @@ export const useExerciseStore = create<ExerciseStoreState>((set, get) => ({
       if (userSelected !== undefined && userSelected === item.correctOptionIndex) {
         correctCount++;
       } else {
-        wrongItemIds.push(item.id);
+        wrongItemIds.push(item?.id || `item-${idx}`);
       }
     });
 
     const totalQuestions = currentSet.items.length;
-    const percentage = Math.round((correctCount / totalQuestions) * 100);
+    const percentage = totalQuestions > 0 ? Math.round((correctCount / totalQuestions) * 100) : 0;
     const passingThreshold = currentSet.passingScore || Math.ceil(totalQuestions * 0.7);
     const isPassed = correctCount >= passingThreshold;
 
@@ -502,6 +513,28 @@ export const useExerciseStore = create<ExerciseStoreState>((set, get) => ({
     }
 
     return summary;
+  },
+
+  retryWrongQuestions: () => {
+    const { currentSet, sessionSummary } = get();
+    if (!currentSet || !sessionSummary || sessionSummary.wrongItemIds.length === 0) return;
+    const wrongItems = currentSet.items.filter((it) => sessionSummary.wrongItemIds.includes(it.id));
+    if (wrongItems.length === 0) return;
+
+    set({
+      currentSet: {
+        ...currentSet,
+        title: `${currentSet.title} (Remedial Soal Salah)`,
+        items: wrongItems,
+      },
+      currentIndex: 0,
+      userAnswers: {},
+      flaggedIndices: [],
+      isSubmitted: false,
+      sessionSummary: null,
+      mode: 'guided',
+      remainingSeconds: wrongItems.length * 90,
+    });
   },
 
   exitSession: () => {

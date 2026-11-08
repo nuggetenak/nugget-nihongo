@@ -4,8 +4,8 @@
 //  Powers Panic Simulator (Cover-Recall-Check under 5s/8s pressure)
 // ══════════════════════════════════════════════════════════════════
 
-import { JLPTLevel } from '../../types/vocab';
-import { PanicScenarioItem } from '../../types/quiz';
+import type { JLPTLevel } from '../../types/vocab.ts';
+import type { PanicScenarioItem } from '../../types/quiz.ts';
 
 function shuffle<T>(array: T[]): T[] {
   const arr = [...array];

@@ -7,6 +7,7 @@
 import React, { useState } from 'react';
 import { RefreshCw, X, Sparkles } from 'lucide-react';
 import { usePwaStore } from '../../lib/pwa/pwaStore';
+import { IrasutoyaImage } from '../common/IrasutoyaImage';
 
 export const UpdatePromptToast: React.FC = () => {
   const { hasUpdate, applyUpdate } = usePwaStore();
@@ -26,15 +27,20 @@ export const UpdatePromptToast: React.FC = () => {
     <div
       role="alert"
       aria-live="polite"
-      className="fixed z-50 bottom-[calc(4.5rem+env(safe-area-inset-bottom))] sm:bottom-6 left-3 right-3 sm:left-auto sm:right-6 sm:max-w-md bg-surface border border-accent/40 rounded-2xl p-3.5 shadow-2xl backdrop-blur-md animate-in fade-in slide-in-from-bottom-4 duration-300"
+      className="card-interactive-lift fixed z-50 bottom-[calc(5.5rem+env(safe-area-inset-bottom))] sm:bottom-6 left-3 right-3 sm:left-auto sm:right-6 sm:max-w-md bg-surface border border-accent/40 rounded-2xl p-3.5 shadow-2xl backdrop-blur-md animate-in fade-in slide-in-from-bottom-4 duration-300"
     >
       <div className="flex items-center gap-3">
         {/* Animated Icon Badge */}
-        <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-amber-500 to-amber-700 flex items-center justify-center text-stone-950 shrink-0 shadow-md">
+        <div className="w-12 h-12 rounded-xl bg-amber-500/15 border border-amber-500/30 flex items-center justify-center shrink-0 shadow-md overflow-hidden">
           {isUpdating ? (
-            <RefreshCw className="w-5 h-5 animate-spin" />
+            <RefreshCw className="w-5 h-5 text-accent animate-spin" />
           ) : (
-            <Sparkles className="w-5 h-5 fill-current" />
+            <IrasutoyaImage
+              assetId="senpai_studying"
+              className="w-9 h-9 object-contain"
+              alt="Pembaruan Aplikasi"
+              animateFloat
+            />
           )}
         </div>
 
@@ -53,7 +59,7 @@ export const UpdatePromptToast: React.FC = () => {
           <button
             onClick={handleUpdate}
             disabled={isUpdating}
-            className="min-h-[40px] px-3 py-1.5 rounded-xl bg-accent hover:bg-accent-hot text-bg font-bold text-xs flex items-center justify-center gap-1.5 shadow-sm active:scale-95 transition-all cursor-pointer disabled:opacity-50"
+            className="min-h-[40px] px-3.5 py-1.5 rounded-xl bg-accent hover:bg-accent-hot text-bg font-extrabold text-xs flex items-center justify-center gap-1.5 shadow-sm active:scale-95 transition-all cursor-pointer disabled:opacity-50"
           >
             <RefreshCw className={`w-3.5 h-3.5 ${isUpdating ? 'animate-spin' : ''}`} />
             <span>{isUpdating ? 'Memuat...' : 'Perbarui'}</span>

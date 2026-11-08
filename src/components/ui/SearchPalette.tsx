@@ -5,6 +5,7 @@ import { NormalizedVocab, NormalizedGrammar } from '../../lib/data/dataManager';
 import { speakJapanese } from '../../lib/audio/tts';
 import { initSearchPool, querySearchPool } from '../../lib/search/searchIndex';
 import { useFocusTrap } from '../../hooks/useFocusTrap';
+import { IrasutoyaImage } from '../common/IrasutoyaImage';
 
 interface SearchPaletteProps {
   isOpen: boolean;
@@ -94,7 +95,7 @@ export const SearchPalette: React.FC<SearchPaletteProps> = ({ isOpen, onClose, o
             <button
               onClick={() => setQuery('')}
               aria-label="Hapus kata kunci pencarian"
-              className="p-1 rounded-full hover:bg-surface-2 text-appText-muted focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+              className="w-9 h-9 min-w-[36px] min-h-[36px] rounded-full hover:bg-surface-2 text-appText-muted hover:text-appText-bright flex items-center justify-center focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent active:scale-95"
             >
               <X className="w-4 h-4" />
             </button>
@@ -108,18 +109,34 @@ export const SearchPalette: React.FC<SearchPaletteProps> = ({ isOpen, onClose, o
         {/* Results Body */}
         <div className="p-4 overflow-y-auto space-y-5 flex-1">
           {!query.trim() ? (
-            <div className="py-12 text-center space-y-2">
-              <div className="text-3xl">🍙</div>
-              <p className="text-sm font-semibold text-appText-bright">
-                Pencarian Kilat Nugget Nihongo
-              </p>
-              <p className="text-xs text-appText-muted max-w-xs mx-auto">
-                Ketikkan kata dalam bahasa Indonesia, romaji, kanji, atau hiragana.
-              </p>
+            <div className="py-8 text-center space-y-3">
+              <div className="w-16 h-16 mx-auto flex items-center justify-center">
+                <IrasutoyaImage
+                  assetId="senpai_studying"
+                  className="w-16 h-16 object-contain"
+                  alt="Pencarian Kilat Nugget Nihongo"
+                  animateFloat
+                />
+              </div>
+              <div className="space-y-1">
+                <p className="text-sm font-bold text-appText-bright">
+                  Pencarian Kilat Nugget Nihongo
+                </p>
+                <p className="text-xs text-appText-muted max-w-xs mx-auto">
+                  Ketikkan kata dalam bahasa Indonesia, romaji, kanji, atau hiragana.
+                </p>
+              </div>
             </div>
           ) : vocabResults.length === 0 && grammarResults.length === 0 ? (
-            <div className="py-10 text-center space-y-4">
-              <div className="text-3xl">🔍</div>
+            <div className="py-8 text-center space-y-4">
+              <div className="w-14 h-14 mx-auto flex items-center justify-center">
+                <IrasutoyaImage
+                  assetId="daruma_recovery"
+                  className="w-14 h-14 object-contain"
+                  alt="Tidak Ada Hasil"
+                  animateFloat
+                />
+              </div>
               <div className="space-y-1">
                 <p className="text-sm font-bold text-appText-bright">
                   Tidak ada hasil untuk "{query}"
@@ -135,7 +152,7 @@ export const SearchPalette: React.FC<SearchPaletteProps> = ({ isOpen, onClose, o
                   <button
                     key={suggestion}
                     onClick={() => setQuery(suggestion)}
-                    className="px-3 py-1.5 rounded-xl bg-surface-2 hover:bg-surface-3 border border-accent/20 text-xs font-semibold text-accent transition-all"
+                    className="px-3 py-1.5 min-h-[36px] rounded-xl bg-surface-2 hover:bg-surface-3 border border-accent/20 text-xs font-bold text-accent transition-all active:scale-95"
                   >
                     {suggestion}
                   </button>
@@ -147,7 +164,7 @@ export const SearchPalette: React.FC<SearchPaletteProps> = ({ isOpen, onClose, o
               {/* Vocab Section */}
               {vocabResults.length > 0 && (
                 <div className="space-y-2">
-                  <div className="text-xs font-bold uppercase tracking-wider text-accent flex items-center gap-1.5">
+                  <div className="text-xs font-bold uppercase tracking-wider text-amber-800 dark:text-amber-400 flex items-center gap-1.5">
                     <BookOpen className="w-3.5 h-3.5" />
                     <span>Kosakata ({vocabResults.length})</span>
                   </div>
@@ -169,14 +186,14 @@ export const SearchPalette: React.FC<SearchPaletteProps> = ({ isOpen, onClose, o
                             onClose();
                           }
                         }}
-                        className="p-3 rounded-2xl bg-surface-2 hover:bg-surface-3 border border-accent/15 hover:border-accent/40 flex items-center justify-between cursor-pointer transition-all group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+                        className="card-interactive-lift p-3 rounded-2xl bg-surface-2 hover:bg-surface-3 border border-accent/15 hover:border-accent/40 flex items-center justify-between cursor-pointer transition-all group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
                       >
                         <div className="flex items-center gap-3">
-                          <span className="text-xs font-bold uppercase px-2 py-0.5 rounded-full bg-surface border border-accent/20 text-accent">
+                          <span className="text-xs font-extrabold uppercase px-2 py-0.5 rounded-full bg-surface border border-accent/20 text-amber-800 dark:text-amber-300">
                             {v.level}
                           </span>
                           <div>
-                            <div lang="ja" className="font-jp font-bold text-base text-appText-bright group-hover:text-amber-300">
+                            <div lang="ja" className="font-jp font-bold text-base text-appText-bright group-hover:text-amber-600 dark:group-hover:text-amber-300">
                               {v.word}{' '}
                               {v.reading !== v.word && (
                                 <span lang="ja" className="text-xs font-normal text-amber-400/80 font-jp">
@@ -197,7 +214,7 @@ export const SearchPalette: React.FC<SearchPaletteProps> = ({ isOpen, onClose, o
                               e.stopPropagation();
                               speakJapanese(v.word);
                             }}
-                            className="p-1.5 rounded-lg bg-surface text-appText-muted hover:text-accent transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+                            className="w-10 h-10 min-w-[40px] min-h-[40px] rounded-lg bg-surface hover:bg-surface-3 text-appText-muted hover:text-accent transition-all flex items-center justify-center active:scale-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
                           >
                             <Volume2 className="w-4 h-4" />
                           </button>
@@ -212,7 +229,7 @@ export const SearchPalette: React.FC<SearchPaletteProps> = ({ isOpen, onClose, o
               {/* Grammar Section */}
               {grammarResults.length > 0 && (
                 <div className="space-y-2">
-                  <div className="text-xs font-bold uppercase tracking-wider text-accent flex items-center gap-1.5">
+                  <div className="text-xs font-bold uppercase tracking-wider text-amber-800 dark:text-amber-400 flex items-center gap-1.5">
                     <Layers className="w-3.5 h-3.5" />
                     <span>Tata Bahasa ({grammarResults.length})</span>
                   </div>
@@ -234,14 +251,14 @@ export const SearchPalette: React.FC<SearchPaletteProps> = ({ isOpen, onClose, o
                             onClose();
                           }
                         }}
-                        className="p-3 rounded-2xl bg-surface-2 hover:bg-surface-3 border border-accent/15 hover:border-accent/40 flex items-center justify-between cursor-pointer transition-all group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+                        className="card-interactive-lift p-3 rounded-2xl bg-surface-2 hover:bg-surface-3 border border-accent/15 hover:border-accent/40 flex items-center justify-between cursor-pointer transition-all group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
                       >
                         <div className="flex items-center gap-3">
-                          <span className="text-xs font-bold uppercase px-2 py-0.5 rounded-full bg-surface border border-accent/20 text-accent">
+                          <span className="text-xs font-extrabold uppercase px-2 py-0.5 rounded-full bg-surface border border-accent/20 text-amber-800 dark:text-amber-300">
                             {g.level}
                           </span>
                           <div>
-                            <div lang="ja" className="font-jp font-bold text-sm text-appText-bright group-hover:text-amber-300">
+                            <div lang="ja" className="font-jp font-bold text-sm text-appText-bright group-hover:text-amber-600 dark:group-hover:text-amber-300">
                               {g.pattern}
                             </div>
                             <div className="text-xs text-appText-muted">{g.meaning}</div>

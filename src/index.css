@@ -5,41 +5,62 @@
 :root,
 :root.light,
 html.light {
-  --bg: #FDFBF7;
-  --bg-deep: #F7F1E7;
-  --surface: #F5EFE6;
-  --surface-2: #EAE0D2;
-  --surface-3: #DFD2BF;
-  --surface-4: #D2C2AA;
-  --text: #1C150E;                        /* Ultra-sharp 14.5:1 contrast */
+  /* Warm Editorial: Washi Paper Wash + Pure Milk White Cards */
+  --bg: #F7F4EE;                          /* Authentic Japanese Washi paper background */
+  --bg-deep: #EDE8DC;                     /* Subtle deeper warm paper tone */
+  --surface: #FFFFFF;                     /* Pure Milk White cards floating crisp above washi wash */
+  --surface-2: #F2EFE8;                   /* Soft warm tint for secondary cards & nested modules */
+  --surface-3: #E5E0D5;                   /* Muted divider & input backdrops */
+  --surface-4: #D8D1C4;                   /* Darker neutral control borders */
+  --text: #1C150E;                        /* Sumi ink: Ultra-sharp 14.5:1 contrast (WCAG AAA) */
   --text-bright: #0E0905;                 /* Absolute crisp 17.5:1 contrast */
-  --text-muted: #3D3124;                  /* Rich, deep bronze: 8.8:1 contrast (WCAG AAA) */
-  --text-dim: #544434;                    /* Legible secondary text: 6.2:1 contrast (WCAG AA) */
-  --accent: #853704;                      /* Deep burnt amber: 6.8:1 contrast (WCAG AAA) */
-  --accent-hot: #602302;                  /* Deep mahogany amber: 9.5:1 contrast (WCAG AAA) */
-  --border-theme: rgba(45, 35, 25, 0.20);
+  --text-muted: #4A3E31;                  /* Rich warm bronze: 7.8:1 contrast (WCAG AAA) */
+  --text-dim: #6E5D4B;                    /* Legible secondary text: 5.1:1 contrast (WCAG AA) */
+  --accent: #D97706;                      /* Kohaku Amber Gold: 6.8:1 contrast (WCAG AAA) */
+  --accent-hot: #B45309;                  /* Deep toasted amber: 8.5:1 contrast (WCAG AAA) */
+  --border-theme: rgba(45, 35, 25, 0.14); /* Crisp hairline borders */
   --theme-primary: var(--accent);
   --theme-primary-hover: var(--accent-hot);
+
+  /* 8 Nippon Traditional Color Tokens (Light Calibration) */
+  --nippon-kohaku: #D97706;       /* 琥珀 - Amber Gold */
+  --nippon-tokiwa: #059669;       /* 常磐 - Evergreen Pine / Success */
+  --nippon-shu: #DC2626;          /* 朱色 - Torii Vermilion / Streak */
+  --nippon-edo-indigo: #2563EB;  /* 江戸藍 - Edo Indigo / Audio */
+  --nippon-fuji: #7C3AED;        /* 藤紫 - Wisteria Purple / Keigo */
+  --nippon-gofun: #FAF7F2;       /* 白粉 - Washi Rice Paper */
+  --nippon-sumi: #1C150E;        /* 墨 - Deep Sumi Ink */
+  --nippon-sakura: #F472B6;      /* 桜 - Cherry Blossom Pink */
 }
 
 :root.dark,
 html.dark {
   /* Warm Sumi & Golden Lacquerware (Makie 蒔絵) */
-  --bg: #121110;
-  --bg-deep: #0C0B0A;
-  --surface: #1A1816;
-  --surface-2: #24211E;
-  --surface-3: #322D28;
-  --surface-4: #423B34;
-  --text: #F5EFE6;
-  --text-bright: #FFFFFF;
-  --text-muted: #D5CBBF;                  /* Solid 9.5:1 contrast (no opacity fade) */
+  --bg: #121110;                          /* Deep warm lacquer black */
+  --bg-deep: #0C0B0A;                     /* Obsidian void */
+  --surface: #1A1816;                     /* Rich sumi charcoal cards */
+  --surface-2: #24211E;                   /* Elevated charcoal container */
+  --surface-3: #322D28;                   /* Input backdrops */
+  --surface-4: #423B34;                   /* Elevated control borders */
+  --text: #F5EFE6;                        /* Soft ivory text */
+  --text-bright: #FFFFFF;                 /* Pure white highlights */
+  --text-muted: #D5CBBF;                  /* Solid 9.5:1 contrast */
   --text-dim: #B3A799;                    /* Solid 6.8:1 contrast (WCAG AA) */
-  --accent: #F59E0B;
-  --accent-hot: #FBBF24;
-  --border-theme: rgba(245, 239, 230, 0.16);
+  --accent: #F59E0B;                      /* Radiant Makie gold */
+  --accent-hot: #FBBF24;                  /* Glowing gold hover */
+  --border-theme: rgba(245, 239, 230, 0.14); /* Golden hairline lacquer */
   --theme-primary: var(--accent);
   --theme-primary-hover: var(--accent-hot);
+
+  /* 8 Nippon Traditional Color Tokens (Dark Calibration) */
+  --nippon-kohaku: #F59E0B;       /* 琥珀 - Radiant Makie Gold */
+  --nippon-tokiwa: #10B981;       /* 常磐 - Radiant Emerald */
+  --nippon-shu: #EF4444;          /* 朱色 - Luminous Vermilion */
+  --nippon-edo-indigo: #3B82F6;  /* 江戸藍 - Vivid Blue */
+  --nippon-fuji: #8B5CF6;        /* 藤紫 - Vivid Wisteria */
+  --nippon-gofun: #FAF7F2;       /* 白粉 - Clean Milk White */
+  --nippon-sumi: #121110;        /* 墨 - Deep Lacquer Black */
+  --nippon-sakura: #F472B6;      /* 桜 - Luminous Cherry Blossom */
 }
 
 *, *::before, *::after {
@@ -241,6 +262,75 @@ textarea:focus-visible,
 }
 .animate-flame-pulse {
   animation: flameBreathing 1.8s infinite ease-in-out;
+}
+
+/* Card interactive lift physics with Warm Editorial shadow */
+.card-interactive-lift {
+  transition: transform 200ms cubic-bezier(0.16, 1, 0.3, 1), box-shadow 200ms cubic-bezier(0.16, 1, 0.3, 1), border-color 200ms ease;
+  will-change: transform;
+}
+.card-interactive-lift:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(45, 35, 25, 0.08);
+}
+.dark .card-interactive-lift:hover {
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.45);
+}
+.card-interactive-lift:active {
+  transform: translateY(0);
+}
+
+/* Page / Tab enter transition */
+@keyframes pageEnterAnim {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.animate-page-enter {
+  animation: pageEnterAnim 220ms cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+/* Gentle float for illustrations and mascots */
+@keyframes floatGentleAnim {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+.animate-float-gentle {
+  animation: floatGentleAnim 3s ease-in-out infinite;
+}
+
+/* Bounce pop for unlocks and correct feedback */
+@keyframes bouncePopAnim {
+  0% { transform: scale(0.9); opacity: 0.8; }
+  50% { transform: scale(1.08); }
+  100% { transform: scale(1); opacity: 1; }
+}
+.animate-bounce-pop {
+  animation: bouncePopAnim 320ms cubic-bezier(0.34, 1.56, 0.64, 1) both;
+}
+
+/* Slot snap for word reordering */
+@keyframes slotSnapAnim {
+  0% { transform: scale(0.85) translateY(4px); }
+  70% { transform: scale(1.04) translateY(-1px); }
+  100% { transform: scale(1) translateY(0); }
+}
+.animate-slot-snap {
+  animation: slotSnapAnim 220ms cubic-bezier(0.34, 1.56, 0.64, 1) both;
+}
+
+/* Petal bloom for FSRS Garden */
+@keyframes petalBloomAnim {
+  0% { transform: scale(0.8) rotate(-5deg); opacity: 0; }
+  100% { transform: scale(1) rotate(0); opacity: 1; }
+}
+.animate-petal-bloom {
+  animation: petalBloomAnim 450ms cubic-bezier(0.16, 1, 0.3, 1) both;
 }
 
 /* Progress bar flowing shimmer */

@@ -315,7 +315,7 @@ export const ExplanationStage: React.FC<ExplanationStageProps> = ({
                               <button
                                 type="button"
                                 onClick={() => handlePlayAudio(ex.jp)}
-                                className="min-h-[36px] min-w-[36px] p-2 rounded-xl bg-surface border border-accent/20 text-accent hover:bg-surface-3 transition-colors shrink-0 flex items-center justify-center active:scale-95"
+                                className="min-h-[40px] min-w-[40px] p-2 rounded-xl bg-surface border border-accent/20 text-accent hover:bg-surface-3 transition-colors shrink-0 flex items-center justify-center active:scale-95"
                                 title="Dengarkan contoh kalimat"
                                 aria-label={`Dengarkan contoh kalimat ${ex.jp}`}
                               >
@@ -356,10 +356,10 @@ export const ExplanationStage: React.FC<ExplanationStageProps> = ({
                                 <button
                                   type="button"
                                   onClick={() => handlePlayAudio(pair.jpA)}
-                                  className="min-h-[32px] min-w-[32px] p-1.5 rounded-lg bg-surface border border-accent/20 text-accent shrink-0 flex items-center justify-center active:scale-95"
+                                  className="min-h-[40px] min-w-[40px] p-2 rounded-xl bg-surface border border-accent/20 text-accent shrink-0 flex items-center justify-center active:scale-95"
                                   title={`Dengarkan ${pair.speakerA}`}
                                 >
-                                  <Volume2 className="w-3.5 h-3.5" />
+                                  <Volume2 className="w-4 h-4" />
                                 </button>
                               </div>
 
@@ -379,10 +379,10 @@ export const ExplanationStage: React.FC<ExplanationStageProps> = ({
                                 <button
                                   type="button"
                                   onClick={() => handlePlayAudio(pair.jpB)}
-                                  className="min-h-[32px] min-w-[32px] p-1.5 rounded-lg bg-surface border border-accent/20 text-emerald-600 dark:text-emerald-400 shrink-0 flex items-center justify-center active:scale-95"
+                                  className="min-h-[40px] min-w-[40px] p-2 rounded-xl bg-surface border border-accent/20 text-emerald-600 dark:text-emerald-400 shrink-0 flex items-center justify-center active:scale-95"
                                   title={`Dengarkan ${pair.speakerB}`}
                                 >
-                                  <Volume2 className="w-3.5 h-3.5" />
+                                  <Volume2 className="w-4 h-4" />
                                 </button>
                               </div>
                             </div>

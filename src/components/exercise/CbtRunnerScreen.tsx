@@ -27,12 +27,17 @@ import {
 } from 'lucide-react';
 import { useExerciseStore } from '../../store/useExerciseStore';
 import { useAppStore } from '../../store/useAppStore';
+import { useBodyScrollLock } from '../../hooks/useBodyScrollLock';
 import { StarScrambleWidget } from './StarScrambleWidget';
 import { DokkaiSheet } from './DokkaiSheet';
 import { ChoukaiPlayer } from './ChoukaiPlayer';
 import { FiveLayerExplanationSheet } from './FiveLayerExplanationSheet';
+import { IrasutoyaImage } from '../common/IrasutoyaImage';
 import { playSuccessSfx, playErrorSfx, playFanfareSfx } from '../../lib/audio/sfx';
 import { fireConfetti } from '../../lib/ui/confetti';
+import { formatTimer, isUrgentTime, isCriticalTime } from '../../lib/exercise/cbtTimer';
+
+export { formatTimer };
 
 interface CbtRunnerScreenProps {
   onExit: () => void;
@@ -61,6 +66,7 @@ export const CbtRunnerScreen: React.FC<CbtRunnerScreenProps> = ({ onExit }) => {
     tickTimer,
     togglePause,
     submitTest,
+    retryWrongQuestions,
     exitSession,
   } = useExerciseStore();
 
@@ -69,6 +75,14 @@ export const CbtRunnerScreen: React.FC<CbtRunnerScreenProps> = ({ onExit }) => {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
   const [isExitGuardOpen, setIsExitGuardOpen] = useState(false);
   const [resultFilter, setResultFilter] = useState<'all' | 'wrong' | 'correct'>('all');
+  const [isGuidedExplanationOpen, setIsGuidedExplanationOpen] = useState(false);
+
+  // Lock body scroll during full-screen CBT runner session
+  useBodyScrollLock(true);
+
+  useEffect(() => {
+    setIsGuidedExplanationOpen(false);
+  }, [currentIndex]);
 
   // Timer Interval Effect
   useEffect(() => {
@@ -102,16 +116,9 @@ export const CbtRunnerScreen: React.FC<CbtRunnerScreenProps> = ({ onExit }) => {
   const answeredCount = Object.keys(userAnswers).length;
   const optionLetters = ['A', 'B', 'C', 'D'];
 
-  // Format Timer mm:ss
-  const formatTimer = (totalSec: number) => {
-    const mins = Math.floor(totalSec / 60);
-    const secs = totalSec % 60;
-    return `${String(mins).padStart(2, '0')}:${String(secs).padStart(2, '0')}`;
-  };
-
   const isStrict = mode === 'strict';
-  const isTimeUrgent = isStrict && remainingSeconds <= 180; // <= 3 minutes
-  const isTimeCritical = isStrict && remainingSeconds <= 60; // <= 1 minute
+  const isTimeUrgent = isUrgentTime(remainingSeconds, mode);
+  const isTimeCritical = isCriticalTime(remainingSeconds, mode);
 
   // Option selection handler with instant feedback sound in Guided mode
   const handleOptionClick = (optIdx: number) => {
@@ -145,7 +152,7 @@ export const CbtRunnerScreen: React.FC<CbtRunnerScreenProps> = ({ onExit }) => {
     });
 
     return (
-      <div className="fixed inset-0 z-[9999] bg-bg overflow-y-auto pb-16 animate-in fade-in">
+      <div className="fixed inset-0 z-50 bg-bg overflow-y-auto pb-16 animate-in fade-in">
         {/* Sticky Result Top Bar */}
         <div className="sticky top-0 z-30 bg-surface/95 backdrop-blur-md border-b border-theme px-4 sm:px-6 py-3.5 flex items-center justify-between gap-3">
           <div className="flex items-center gap-2.5 min-w-0">
@@ -162,13 +169,25 @@ export const CbtRunnerScreen: React.FC<CbtRunnerScreenProps> = ({ onExit }) => {
             </div>
           </div>
 
-          <button
-            type="button"
-            onClick={handleConfirmExit}
-            className="min-h-[40px] px-4 py-2 rounded-xl bg-surface-2 hover:bg-surface-3 border border-theme text-xs font-bold text-appText-bright transition-all active:scale-95 shadow-sm"
-          >
-            Kembali ke Portal
-          </button>
+          <div className="flex items-center gap-2">
+            {sessionSummary.wrongItemIds.length > 0 && (
+              <button
+                type="button"
+                onClick={retryWrongQuestions}
+                className="min-h-[40px] px-3.5 py-2 rounded-xl bg-rose-500 hover:bg-rose-400 text-white text-xs font-black flex items-center gap-1.5 transition-all active:scale-95 shadow-sm"
+              >
+                <RotateCcw className="w-3.5 h-3.5" />
+                <span>Latih Ulang Soal Salah ({sessionSummary.wrongItemIds.length})</span>
+              </button>
+            )}
+            <button
+              type="button"
+              onClick={handleConfirmExit}
+              className="min-h-[40px] px-4 py-2 rounded-xl bg-surface-2 hover:bg-surface-3 border border-theme text-xs font-bold text-appText-bright transition-all active:scale-95 shadow-sm"
+            >
+              Kembali ke Portal
+            </button>
+          </div>
         </div>
 
         <div className="max-w-4xl mx-auto p-4 sm:p-6 space-y-6">
@@ -182,14 +201,24 @@ export const CbtRunnerScreen: React.FC<CbtRunnerScreenProps> = ({ onExit }) => {
           >
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-black uppercase tracking-wider border shadow-sm mx-auto">
               {sessionSummary.isPassed ? (
-                <span className="text-emerald-400 flex items-center gap-1.5">
+                <span className="text-emerald-700 dark:text-emerald-400 font-bold flex items-center gap-1.5">
                   <CheckCircle2 className="w-4 h-4" /> LULUS AMBANG BATAS (合格)
                 </span>
               ) : (
-                <span className="text-amber-400 flex items-center gap-1.5">
+                <span className="text-accent-hot dark:text-amber-400 font-bold flex items-center gap-1.5">
                   <AlertTriangle className="w-4 h-4" /> PERLU REMEDIAL (要復習)
                 </span>
               )}
+            </div>
+
+            {/* Cultural Hanko / Daruma Anchor */}
+            <div className="w-20 h-20 mx-auto rounded-3xl bg-surface/80 border border-theme/60 p-2 flex items-center justify-center shadow-glow overflow-hidden">
+              <IrasutoyaImage
+                assetId={sessionSummary.isPassed ? 'hanko_excellent' : 'daruma_recovery'}
+                className="w-16 h-16 object-contain"
+                alt={sessionSummary.isPassed ? 'Lulus Ujian CBT' : 'Pemulihan Remedial'}
+                animatePop
+              />
             </div>
 
             {/* Score Numerical */}
@@ -198,7 +227,7 @@ export const CbtRunnerScreen: React.FC<CbtRunnerScreenProps> = ({ onExit }) => {
                 {sessionSummary.correctCount}{' '}
                 <span className="text-2xl sm:text-3xl text-appText-muted">/ {sessionSummary.totalQuestions}</span>
               </div>
-              <div className="text-lg sm:text-xl font-bold font-mono text-emerald-400">
+              <div className="text-lg sm:text-xl font-bold font-mono text-emerald-700 dark:text-emerald-400">
                 Akurasi: {sessionSummary.percentage}%
               </div>
             </div>
@@ -213,13 +242,13 @@ export const CbtRunnerScreen: React.FC<CbtRunnerScreenProps> = ({ onExit }) => {
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 pt-2 max-w-xl mx-auto text-xs">
               <div className="p-2.5 rounded-xl bg-surface/60 border border-theme">
                 <span className="text-appText-muted">Benar</span>
-                <div className="text-base font-bold text-emerald-400 font-mono">
+                <div className="text-base font-bold text-emerald-700 dark:text-emerald-400 font-mono">
                   {sessionSummary.correctCount} Soal
                 </div>
               </div>
               <div className="p-2.5 rounded-xl bg-surface/60 border border-theme">
                 <span className="text-appText-muted">Salah</span>
-                <div className="text-base font-bold text-rose-400 font-mono">
+                <div className="text-base font-bold text-rose-700 dark:text-rose-400 font-mono">
                   {sessionSummary.wrongItemIds.length} Soal
                 </div>
               </div>
@@ -231,7 +260,7 @@ export const CbtRunnerScreen: React.FC<CbtRunnerScreenProps> = ({ onExit }) => {
               </div>
               <div className="p-2.5 rounded-xl bg-surface/60 border border-theme">
                 <span className="text-appText-muted">Bonus XP</span>
-                <div className="text-base font-bold text-amber-400 font-mono">
+                <div className="text-base font-bold text-accent-hot dark:text-amber-400 font-mono">
                   +{sessionSummary.correctCount * 15} XP
                 </div>
               </div>
@@ -298,7 +327,7 @@ export const CbtRunnerScreen: React.FC<CbtRunnerScreenProps> = ({ onExit }) => {
                 return (
                   <div
                     key={item.id}
-                    className="bg-surface border border-theme rounded-3xl p-5 sm:p-7 space-y-4 shadow-sm"
+                    className="card-interactive-lift bg-surface border border-theme rounded-3xl p-5 sm:p-7 space-y-4 shadow-sm"
                   >
                     {/* Item Header */}
                     <div className="flex items-center justify-between gap-2 border-b border-theme/60 pb-3">
@@ -350,7 +379,7 @@ export const CbtRunnerScreen: React.FC<CbtRunnerScreenProps> = ({ onExit }) => {
   };
 
   return (
-    <div className="fixed inset-0 z-[9999] bg-bg flex flex-col justify-between overflow-hidden">
+    <div className="fixed inset-0 z-50 bg-bg flex flex-col justify-between overflow-hidden">
       {/* ── TOP EXECUTIVE BAR ──────────────────────────────────────── */}
       <div className="bg-surface/95 backdrop-blur-md border-b border-theme px-3.5 sm:px-6 py-2.5 flex items-center justify-between gap-3 shrink-0">
         {/* Left: Exit Trigger */}
@@ -366,7 +395,7 @@ export const CbtRunnerScreen: React.FC<CbtRunnerScreenProps> = ({ onExit }) => {
           </button>
 
           <div className="min-w-0 hidden md:block">
-            <h2 className="text-xs font-black uppercase tracking-wider text-amber-400 truncate">
+            <h2 className="text-xs font-black uppercase tracking-wider text-amber-800 dark:text-amber-400 font-bold truncate">
               {currentSet.title}
             </h2>
             <p className="text-xs text-appText-muted truncate">
@@ -410,9 +439,9 @@ export const CbtRunnerScreen: React.FC<CbtRunnerScreenProps> = ({ onExit }) => {
           <div
             className={`min-h-[40px] px-3 rounded-xl font-mono text-xs sm:text-sm font-black flex items-center gap-1.5 border transition-all ${
               isTimeCritical
-                ? 'bg-rose-500/20 border-rose-500 text-rose-300 animate-pulse'
+                ? 'bg-rose-500/20 border-rose-500 text-rose-700 dark:text-rose-300 animate-pulse'
                 : isTimeUrgent
-                ? 'bg-amber-500/20 border-amber-500 text-amber-300'
+                ? 'bg-amber-500/20 border-amber-500 text-amber-700 dark:text-amber-300'
                 : 'bg-surface-2 border-theme text-appText-bright'
             }`}
           >
@@ -449,8 +478,13 @@ export const CbtRunnerScreen: React.FC<CbtRunnerScreenProps> = ({ onExit }) => {
       {isPaused && (
         <div className="absolute inset-0 z-50 bg-black/85 backdrop-blur-md flex items-center justify-center p-4 animate-in fade-in">
           <div className="max-w-md w-full bg-surface border border-theme rounded-3xl p-6 text-center space-y-4 shadow-2xl">
-            <div className="w-12 h-12 rounded-2xl bg-amber-500/20 border border-amber-500/40 text-amber-400 flex items-center justify-center mx-auto">
-              <Pause className="w-6 h-6" />
+            <div className="w-16 h-16 rounded-3xl bg-amber-500/15 border border-amber-500/30 flex items-center justify-center mx-auto shadow-glow overflow-hidden">
+              <IrasutoyaImage
+                assetId="senpai_studying"
+                className="w-12 h-12 object-contain"
+                alt="Sesi Latihan Dijeda"
+                animateFloat
+              />
             </div>
             <h3 className="text-lg font-black text-appText-bright">Sesi Latihan Dijeda</h3>
             <p className="text-xs text-appText-muted leading-relaxed">
@@ -474,16 +508,16 @@ export const CbtRunnerScreen: React.FC<CbtRunnerScreenProps> = ({ onExit }) => {
         {/* Question Header & Instructions */}
         <div className="space-y-1.5">
           <div className="flex items-center justify-between gap-2">
-            <span className="text-xs font-black uppercase tracking-wider text-amber-400">
+            <span className="text-xs font-black uppercase tracking-wider text-amber-800 dark:text-amber-400 font-bold">
               Soal {currentIndex + 1} dari {totalQuestions} · {currentItem.mondaiType}
             </span>
 
             <button
               type="button"
               onClick={() => toggleFlag(currentIndex)}
-              className={`min-h-[36px] px-3 py-1 rounded-xl border text-xs font-bold flex items-center gap-1.5 transition-all active:scale-95 ${
+              className={`min-h-[40px] px-3.5 py-1.5 rounded-xl border text-xs font-bold flex items-center gap-1.5 transition-all active:scale-95 ${
                 isCurrentFlagged
-                  ? 'bg-amber-500/20 border-amber-500 text-amber-300'
+                  ? 'bg-amber-500/20 border-amber-500 text-amber-700 dark:text-amber-300 font-bold'
                   : 'bg-surface-2 border-theme text-appText-muted hover:text-appText-bright'
               }`}
             >
@@ -557,9 +591,9 @@ export const CbtRunnerScreen: React.FC<CbtRunnerScreenProps> = ({ onExit }) => {
                     key={optIdx}
                     type="button"
                     onClick={() => handleOptionClick(optIdx)}
-                    className={`min-h-[56px] px-4 py-3.5 rounded-2xl border-2 text-left font-bold text-sm sm:text-base transition-all flex items-center justify-between gap-3 active:scale-[0.98] ${
+                    className={`card-interactive-lift min-h-[56px] px-4 py-3.5 rounded-2xl border-2 text-left font-bold text-sm sm:text-base transition-all flex items-center justify-between gap-3 active:scale-[0.98] ${
                       isSelected
-                        ? 'bg-amber-500/15 border-amber-400 text-amber-300 shadow-sm'
+                        ? 'bg-amber-500/15 border-amber-400 text-amber-900 dark:text-amber-300 font-bold shadow-sm'
                         : 'bg-surface-2 hover:bg-surface-3 border-theme text-appText-bright'
                     }`}
                   >
@@ -586,9 +620,28 @@ export const CbtRunnerScreen: React.FC<CbtRunnerScreenProps> = ({ onExit }) => {
           </div>
         )}
 
-        {/* Guided Practice: Immediate 5-Layer Explanation */}
+        {/* Guided Practice: Immediate 5-Layer Explanation in Collapsible Accordion (Ticket T-43) */}
         {mode === 'guided' && userSelectedOption !== undefined && (
-          <FiveLayerExplanationSheet item={currentItem} userAnswerIndex={userSelectedOption} />
+          <div className="card-interactive-lift border border-theme rounded-2xl bg-surface-2/40 overflow-hidden shadow-sm">
+            <button
+              type="button"
+              onClick={() => setIsGuidedExplanationOpen((prev) => !prev)}
+              className="w-full px-4 py-3 bg-surface-2 hover:bg-surface-3 flex items-center justify-between text-xs font-bold text-appText-bright transition-colors"
+            >
+              <span className="flex items-center gap-2">
+                <span>📖</span>
+                <span>Pembahasan 5 Lapis Terbimbing</span>
+              </span>
+              <span className="text-xs text-accent font-bold">
+                {isGuidedExplanationOpen ? 'Tutup ▲' : 'Buka Pembahasan ▼'}
+              </span>
+            </button>
+            {isGuidedExplanationOpen && (
+              <div className="p-2 sm:p-4 border-t border-theme">
+                <FiveLayerExplanationSheet item={currentItem} userAnswerIndex={userSelectedOption} />
+              </div>
+            )}
+          </div>
         )}
       </div>
 
@@ -629,7 +682,7 @@ export const CbtRunnerScreen: React.FC<CbtRunnerScreenProps> = ({ onExit }) => {
 
       {/* ── 15-QUESTION REVIEW DRAWER MODAL ────────────────────────── */}
       {isDrawerOpen && (
-        <div className="fixed inset-0 z-[99999] bg-black/80 backdrop-blur-sm flex items-center justify-center p-4 animate-in fade-in">
+        <div className="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm flex items-center justify-center p-4 animate-in fade-in">
           <div
             className="w-full max-w-lg bg-surface border border-theme rounded-3xl p-5 sm:p-7 space-y-5 shadow-2xl relative"
             role="dialog"
@@ -648,7 +701,9 @@ export const CbtRunnerScreen: React.FC<CbtRunnerScreenProps> = ({ onExit }) => {
               <button
                 type="button"
                 onClick={() => setIsDrawerOpen(false)}
-                className="w-9 h-9 rounded-xl bg-surface-2 hover:bg-surface-3 border border-theme flex items-center justify-center text-appText-muted hover:text-appText-bright"
+                className="w-10 h-10 min-w-[40px] min-h-[40px] rounded-xl bg-surface-2 hover:bg-surface-3 border border-theme flex items-center justify-center text-appText-muted hover:text-appText-bright transition-all active:scale-95"
+                title="Tutup laci"
+                aria-label="Tutup laci"
               >
                 <X className="w-5 h-5" />
               </button>
@@ -671,11 +726,11 @@ export const CbtRunnerScreen: React.FC<CbtRunnerScreenProps> = ({ onExit }) => {
                     }}
                     className={`min-h-[46px] rounded-xl font-mono text-xs font-black transition-all border flex flex-col items-center justify-center relative active:scale-95 ${
                       isCurrent
-                        ? 'border-amber-400 ring-2 ring-amber-400/50 bg-amber-500/20 text-amber-300'
+                        ? 'border-amber-400 ring-2 ring-amber-400/50 bg-amber-500/20 text-amber-700 dark:text-amber-300 font-bold'
                         : isFlagged
-                        ? 'bg-amber-500/15 border-amber-500 text-amber-300'
+                        ? 'bg-amber-500/15 border-amber-500 text-amber-700 dark:text-amber-300 font-bold'
                         : isAnswered
-                        ? 'bg-emerald-500/15 border-emerald-500 text-emerald-300'
+                        ? 'bg-emerald-500/15 border-emerald-500 text-emerald-700 dark:text-emerald-300 font-bold'
                         : 'bg-surface-2 border-theme text-appText-muted hover:text-appText-bright'
                     }`}
                   >
@@ -730,14 +785,19 @@ export const CbtRunnerScreen: React.FC<CbtRunnerScreenProps> = ({ onExit }) => {
 
       {/* ── EXIT GUARD CONFIRMATION MODAL ──────────────────────────── */}
       {isExitGuardOpen && (
-        <div className="fixed inset-0 z-[99999] bg-black/85 backdrop-blur-sm flex items-center justify-center p-4 animate-in fade-in">
+        <div className="fixed inset-0 z-50 bg-black/85 backdrop-blur-sm flex items-center justify-center p-4 animate-in fade-in">
           <div
             className="w-full max-w-md bg-surface border border-theme rounded-3xl p-6 space-y-4 shadow-2xl text-center"
             role="dialog"
             aria-modal="true"
           >
-            <div className="w-12 h-12 rounded-2xl bg-amber-500/20 border border-amber-500/40 text-amber-400 flex items-center justify-center mx-auto">
-              <AlertTriangle className="w-6 h-6" />
+            <div className="w-16 h-16 rounded-3xl bg-amber-500/15 border border-amber-500/30 flex items-center justify-center mx-auto shadow-glow overflow-hidden">
+              <IrasutoyaImage
+                assetId="daruma_recovery"
+                className="w-12 h-12 object-contain"
+                alt="Konfirmasi Keluar"
+                animatePop
+              />
             </div>
 
             <h3 className="text-base sm:text-lg font-black text-appText-bright">

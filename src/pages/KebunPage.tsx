@@ -21,13 +21,14 @@ import {
   Info,
   BookOpen,
 } from 'lucide-react';
-import { useGardenStore, PlantItem } from '../lib/garden/gardenStore';
+import { useGardenStore, PlantItem, STAGE_METADATA } from '../lib/garden/gardenStore';
 import { useAppStore } from '../store/useAppStore';
 import { speakJapanese } from '../lib/audio/tts';
 import { playWaterSfx } from '../lib/audio/sfx';
 import { SkeletonGrid } from '../components/ui/SkeletonCard';
 import { fsrsForgettingCurve } from '../lib/fsrs/math';
 import { getFSRSDueCount } from '../lib/quiz/quizEngine';
+import { IrasutoyaImage } from '../components/common/IrasutoyaImage';
 
 export const KebunPage: React.FC = () => {
   const { waterDrops, plants, waterPlant, waterAll, checkDailyRefill } = useGardenStore();
@@ -88,7 +89,7 @@ export const KebunPage: React.FC = () => {
     // True FSRS Retrievability based on Ye et al. (2022) forgetting curve
     const estimatedRetrievability = totalCards > 0
       ? Math.round((totalRetrievability / totalCards) * 100)
-      : 90;
+      : 0;
 
     return {
       totalCards,
@@ -102,13 +103,7 @@ export const KebunPage: React.FC = () => {
   }, [cards]);
 
   // ── KANJI GARDEN COMPUTATION ────────────────────────────────────
-  const STAGE_LABELS = [
-    { label: 'Benih Ditabur', icon: '🌰', desc: 'Butuh air untuk berkecambah' },
-    { label: 'Mulai Bertunas', icon: '🌱', desc: 'Tunas hijau muda mulai muncul' },
-    { label: 'Tumbuh Batang', icon: '🌿', desc: 'Daun kanji semakin rimbun' },
-    { label: 'Kuncup Bunga', icon: '🪴', desc: 'Hampir mekar sepenuhnya' },
-    { label: 'Mekar Sempurna', icon: '🌸', desc: 'Kanji telah terpatri di memori' },
-  ];
+  const STAGE_LABELS = STAGE_METADATA;
 
   const handleWaterSingle = (plant: PlantItem) => {
     if (plant.stage >= 4) {
@@ -199,7 +194,7 @@ export const KebunPage: React.FC = () => {
             <h2 className="text-xl sm:text-3xl font-extrabold text-appText-bright tracking-tight">
               Retensi Aktif:{' '}
               <span className="font-mono tabular-nums text-amber-500 dark:text-amber-400">
-                {fsrsStats.estimatedRetrievability}%
+                {fsrsStats.totalCards > 0 ? `${fsrsStats.estimatedRetrievability}%` : '— (0 Kartu)'}
               </span>{' '}
               Daya Ingat
             </h2>
@@ -325,30 +320,38 @@ export const KebunPage: React.FC = () => {
             <span
               className={`px-2 py-0.5 rounded-full text-xs font-mono tabular-nums font-extrabold ${
                 activeView === 'metrics'
-                  ? 'bg-stone-900/40 text-stone-950 dark:text-stone-900'
+                  ? 'bg-amber-600/30 text-stone-950 dark:text-stone-900'
                   : 'bg-surface border border-theme text-appText-muted'
               }`}
             >
-              {fsrsStats.estimatedRetrievability}%
+              {fsrsStats.totalCards > 0 ? `${fsrsStats.estimatedRetrievability}%` : '0%'}
             </span>
           </button>
         </div>
 
         {/* ── VIEW 1: KANJI GARDEN & WATERING ────────────────────────── */}
         {activeView === 'garden' && (
-          <section className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-emerald-950/20 via-surface to-surface border border-emerald-500/30 p-5 sm:p-7 shadow-sm space-y-6 animate-in fade-in duration-200">
+          <section className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-emerald-500/10 via-surface to-surface border border-emerald-500/30 p-5 sm:p-7 shadow-sm space-y-6 animate-in fade-in duration-200">
             <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
-              <div className="space-y-1.5">
-                <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-emerald-950/70 border border-emerald-500/40 text-emerald-300 text-xs font-extrabold shadow-xs">
-                  <Sprout className="w-4 h-4 text-emerald-400 shrink-0" />
-                  <span>{bloomingCount} dari {plants.length} Kanji Telah Mekar</span>
+              <div className="flex items-start gap-3.5">
+                <IrasutoyaImage
+                  assetId="garden_watering"
+                  className="w-14 h-14 sm:w-16 sm:h-16"
+                  containerClassName="w-14 h-14 sm:w-16 sm:h-16 shrink-0 hidden sm:inline-flex"
+                  animateFloat
+                />
+                <div className="space-y-1.5">
+                  <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-emerald-500/15 border border-emerald-500/30 text-emerald-700 dark:text-emerald-300 text-xs font-extrabold shadow-xs">
+                    <Sprout className="w-4 h-4 text-emerald-600 dark:text-emerald-400 shrink-0" />
+                    <span>{bloomingCount} dari {plants.length} Kanji Telah Mekar</span>
+                  </div>
+                  <h2 className="text-lg sm:text-2xl font-bold text-appText-bright tracking-tight">
+                    Kebun Kata & Stok Air · 漢字の庭
+                  </h2>
+                  <p className="text-xs text-appText-muted max-w-xl leading-relaxed">
+                    Siram tanaman kanji setiap hari menggunakan tetesan air dari review FSRS. Tanaman yang disiram teratur akan mekar sempurna dan terpatri permanen di memori.
+                  </p>
                 </div>
-                <h2 className="text-lg sm:text-2xl font-bold text-appText-bright tracking-tight">
-                  Kebun Kata & Stok Air · 漢字の庭
-                </h2>
-                <p className="text-xs text-appText-muted max-w-xl leading-relaxed">
-                  Siram tanaman kanji setiap hari menggunakan tetesan air dari review FSRS. Tanaman yang disiram teratur akan mekar sempurna dan terpatri permanen di memori.
-                </p>
               </div>
 
               {/* Water Stock Badge & Instant 1-Tap Water All Button */}
@@ -429,7 +432,7 @@ export const KebunPage: React.FC = () => {
                   return (
                     <div
                       key={plant.id}
-                      className={`rounded-2xl sm:rounded-3xl border p-3.5 sm:p-5 flex flex-col justify-between transition-all duration-200 hover:-translate-y-1 shadow-sm ${
+                      className={`rounded-2xl sm:rounded-3xl border p-3.5 sm:p-5 flex flex-col justify-between transition-all duration-200 card-interactive-lift shadow-sm ${
                         wateringId === plant.id ? 'animate-water-pulse' : ''
                       } ${
                         isMaxBloom
@@ -442,9 +445,15 @@ export const KebunPage: React.FC = () => {
                         <span className="font-bold uppercase text-xs sm:text-xs px-2 py-0.5 rounded-full bg-surface-2 border border-theme text-accent">
                           {plant.level.toUpperCase()}
                         </span>
-                        <span className="text-base" title={stageInfo.label}>
-                          {stageInfo.icon}
-                        </span>
+                        <div className="flex items-center gap-1.5" title={stageInfo.label}>
+                          {isMaxBloom ? (
+                            <IrasutoyaImage assetId="garden_bloom" className="w-5 h-5" containerClassName="w-5 h-5 shrink-0" animatePop />
+                          ) : plant.stage <= 1 ? (
+                            <IrasutoyaImage assetId="garden_sprout" className="w-5 h-5" containerClassName="w-5 h-5 shrink-0" />
+                          ) : (
+                            <span className="text-base">{stageInfo.icon}</span>
+                          )}
+                        </div>
                       </div>
 
                       {/* Kanji Display & Audio */}
@@ -786,7 +795,7 @@ export const KebunPage: React.FC = () => {
             </button>
           </div>
 
-          {/* 6. Catatan Evaluasi / Mistake Notebook */}
+          {/* 6. Tes Diagnostik Adaptif CAT (IRT) */}
           <div className="p-4 sm:p-5 rounded-2xl bg-surface-2 border border-theme hover:border-amber-500/40 transition-all flex flex-col justify-between space-y-4">
             <div className="space-y-2">
               <div className="flex items-center justify-between">
@@ -797,17 +806,17 @@ export const KebunPage: React.FC = () => {
                   Diagnostik & Review
                 </span>
               </div>
-              <h3 className="text-sm font-bold text-appText-bright">Catatan Evaluasi / Mistake Notebook</h3>
+              <h3 className="text-sm font-bold text-appText-bright">Tes Diagnostik CAT (IRT)</h3>
               <p className="text-xs text-appText-muted leading-relaxed">
-                Pantau riwayat tes diagnostik adaptif CAT dan analisis titik kelemahan tata bahasa.
+                Uji estimasi level kecakapan bahasa Jepangmu (N5–N1) secara adaptif dalam 6–12 butir soal.
               </p>
             </div>
             <button
               onClick={openCatPlacement}
               className="w-full py-2.5 px-4 rounded-xl bg-surface hover:bg-surface-3 text-appText-bright border border-theme font-bold text-xs flex items-center justify-between transition-all active:scale-95 min-h-[40px]"
             >
-              <span>Buka Evaluasi CAT</span>
-              <ChevronRight className="w-4 h-4 text-rose-400" />
+              <span>Mulai Tes CAT (6-12 Soal)</span>
+              <ChevronRight className="w-4 h-4 text-accent" />
             </button>
           </div>
         </div>

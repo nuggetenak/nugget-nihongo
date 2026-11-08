@@ -24,6 +24,7 @@ import {
   Lightbulb,
 } from 'lucide-react';
 import { useFocusTrap } from '../../hooks/useFocusTrap';
+import { useBodyScrollLock } from '../../hooks/useBodyScrollLock';
 import { speakJapanese } from '../../lib/audio/tts';
 import { playSuccessSfx, playErrorSfx, playFlipSfx } from '../../lib/audio/sfx';
 import {
@@ -44,6 +45,7 @@ import {
   searchKeigoVerbs,
   searchKeigoNouns,
 } from '../../lib/keigo/keigoEngine';
+import { IrasutoyaImage } from '../common/IrasutoyaImage';
 
 interface KeigoTrainerModalProps {
   isOpen: boolean;
@@ -60,6 +62,7 @@ export const KeigoTrainerModal: React.FC<KeigoTrainerModalProps> = ({
   initialTab = 'matrix',
 }) => {
   const containerRef = useFocusTrap<HTMLDivElement>(isOpen, onClose);
+  useBodyScrollLock(isOpen);
   const [activeTab, setActiveTab] = useState<MainTab>(initialTab);
 
   // Tab 1: Matrix state
@@ -153,7 +156,7 @@ export const KeigoTrainerModal: React.FC<KeigoTrainerModalProps> = ({
   return (
     <div
       onClick={onClose}
-      className="fixed inset-0 z-[9999] flex items-end sm:items-center justify-center p-0 sm:p-4 bg-black/85 backdrop-blur-sm animate-in fade-in duration-200"
+      className="fixed inset-0 z-50 flex items-end sm:items-center justify-center p-0 sm:p-4 bg-black/85 backdrop-blur-sm animate-in fade-in duration-200"
       role="dialog"
       aria-modal="true"
       aria-label="Pelatih Keigo & Etiket Bisnis"
@@ -171,8 +174,8 @@ export const KeigoTrainerModal: React.FC<KeigoTrainerModalProps> = ({
         {/* Modal Header */}
         <div className="p-4 sm:p-5 border-b border-accent/15 bg-surface-2/70 flex items-center justify-between shrink-0">
           <div className="flex items-center gap-3 min-w-0">
-            <div className="w-10 h-10 rounded-2xl bg-indigo-500/20 text-indigo-400 flex items-center justify-center shrink-0 border border-indigo-500/30">
-              <Briefcase className="w-5 h-5" />
+            <div className="w-10 h-10 rounded-2xl bg-indigo-500/20 text-indigo-400 flex items-center justify-center shrink-0 border border-indigo-500/30 overflow-hidden">
+              <IrasutoyaImage assetId="sensei_ojigi" className="w-8 h-8" containerClassName="w-8 h-8 shrink-0" animateFloat />
             </div>
             <div className="min-w-0">
               <div className="flex items-center gap-2">
@@ -247,7 +250,7 @@ export const KeigoTrainerModal: React.FC<KeigoTrainerModalProps> = ({
               <Sparkles className="w-4 h-4" />
               <span>Latihan Skenario Kerja</span>
               {drillScore.total > 0 && (
-                <span className="text-xs px-1.5 py-0.2 rounded-full bg-surface-3/80 text-appText-bright">
+                <span className="text-xs px-1.5 py-0.5 rounded-full bg-surface-3/80 text-appText-bright">
                   {drillScore.correct}/{drillScore.total}
                 </span>
               )}
@@ -264,7 +267,7 @@ export const KeigoTrainerModal: React.FC<KeigoTrainerModalProps> = ({
                   : 'bg-surface hover:bg-surface-3 text-appText-muted hover:text-appText-bright border border-accent/15'
               }`}
             >
-              <AlertTriangle className="w-4 h-4 text-amber-400" />
+              <AlertTriangle className="w-4 h-4 text-accent-hot dark:text-amber-400" />
               <span>Etiket & Jebakan Nyata</span>
             </button>
           </div>
@@ -328,9 +331,9 @@ export const KeigoTrainerModal: React.FC<KeigoTrainerModalProps> = ({
               <div className="p-3.5 rounded-2xl bg-indigo-500/10 border border-indigo-500/25 flex items-start gap-3">
                 <Lightbulb className="w-5 h-5 text-indigo-400 shrink-0 mt-0.5" />
                 <div className="text-xs text-appText-bright leading-relaxed">
-                  <span className="font-bold text-indigo-300">Prinsip Emas Keigo: </span>
-                  <span className="text-amber-300 font-semibold">Sonkeigo (尊敬語)</span> meninggikan tindakan orang yang dihormati (lawan bicara/klien), sedangkan{' '}
-                  <span className="text-cyan-300 font-semibold">Kenjougo (謙譲語)</span> merendahkan tindakan diri sendiri atau anggota kelompok sendiri demi menghormati orang lain.
+                  <span className="font-bold text-indigo-800 dark:text-indigo-300">Prinsip Emas Keigo: </span>
+                  <span className="text-amber-800 dark:text-amber-300 font-bold">Sonkeigo (尊敬語)</span> meninggikan tindakan orang yang dihormati (lawan bicara/klien), sedangkan{' '}
+                  <span className="text-cyan-800 dark:text-cyan-300 font-bold">Kenjougo (謙譲語)</span> merendahkan tindakan diri sendiri atau anggota kelompok sendiri demi menghormati orang lain.
                 </div>
               </div>
 
@@ -352,7 +355,7 @@ export const KeigoTrainerModal: React.FC<KeigoTrainerModalProps> = ({
                       return (
                         <div
                           key={verb.id}
-                          className="rounded-2xl bg-surface-2 border border-accent/15 hover:border-accent/35 transition-all overflow-hidden"
+                          className="rounded-2xl card-interactive-lift bg-surface-2 border border-accent/15 hover:border-accent/35 transition-all overflow-hidden"
                         >
                           <div
                             onClick={() => setExpandedCardId(isExpanded ? null : verb.id)}
@@ -365,7 +368,7 @@ export const KeigoTrainerModal: React.FC<KeigoTrainerModalProps> = ({
                                   e.stopPropagation();
                                   handlePlayAudio(verb.dictionaryForm);
                                 }}
-                                className="w-9 h-9 rounded-xl bg-surface hover:bg-accent hover:text-surface text-appText-muted transition-colors flex items-center justify-center shrink-0 active:scale-95"
+                                className="w-10 h-10 rounded-xl bg-surface hover:bg-accent hover:text-surface text-appText-muted transition-colors flex items-center justify-center shrink-0 active:scale-95"
                                 title="Dengarkan pelafalan"
                               >
                                 <Volume2 className="w-4 h-4" />
@@ -382,8 +385,8 @@ export const KeigoTrainerModal: React.FC<KeigoTrainerModalProps> = ({
                                   <span
                                     className={`text-xs px-2 py-0.5 rounded-full font-bold uppercase ${
                                       verb.type === 'irregular'
-                                        ? 'bg-amber-500/20 text-amber-300 border border-amber-500/30'
-                                        : 'bg-emerald-500/20 text-emerald-300 border border-emerald-500/30'
+                                        ? 'bg-amber-500/20 text-amber-700 dark:text-amber-300 border border-amber-500/30'
+                                        : 'bg-emerald-500/20 text-emerald-700 dark:text-emerald-300 border border-emerald-500/30'
                                     }`}
                                   >
                                     {verb.type === 'irregular' ? 'Khusus' : 'Pola Teratur'}
@@ -398,11 +401,11 @@ export const KeigoTrainerModal: React.FC<KeigoTrainerModalProps> = ({
                             {/* Conjugation Badges */}
                             <div className="flex items-center gap-2 shrink-0">
                               <div className="px-3 py-1.5 rounded-xl bg-amber-500/15 border border-amber-500/25 text-left">
-                                <div className="text-xs uppercase font-bold text-amber-400">Sonkeigo (Hormat)</div>
+                                <div className="text-xs uppercase font-bold text-amber-700 dark:text-amber-400">Sonkeigo (Hormat)</div>
                                 <div className="text-xs font-bold text-appText-bright">{verb.sonkeigo}</div>
                               </div>
                               <div className="px-3 py-1.5 rounded-xl bg-cyan-500/15 border border-cyan-500/25 text-left">
-                                <div className="text-xs uppercase font-bold text-cyan-400">Kenjougo (Rendah Hati)</div>
+                                <div className="text-xs uppercase font-bold text-cyan-700 dark:text-cyan-400">Kenjougo (Rendah Hati)</div>
                                 <div className="text-xs font-bold text-appText-bright">{verb.kenjougo}</div>
                               </div>
                             </div>
@@ -948,8 +951,8 @@ export const KeigoTrainerModal: React.FC<KeigoTrainerModalProps> = ({
                       <span
                         className={`text-xs font-bold px-2.5 py-0.5 rounded-full shrink-0 ${
                           note.status.includes('Settled')
-                            ? 'bg-rose-500/15 text-rose-300 border border-rose-500/25'
-                            : 'bg-amber-500/15 text-amber-300 border border-amber-500/25'
+                            ? 'bg-rose-500/15 text-rose-800 dark:text-rose-300 border border-rose-500/25'
+                            : 'bg-amber-500/15 text-amber-800 dark:text-amber-300 border border-amber-500/25'
                         }`}
                       >
                         {note.status}
@@ -972,7 +975,7 @@ export const KeigoTrainerModal: React.FC<KeigoTrainerModalProps> = ({
                       </div>
                     </div>
 
-                    <div className="p-3 rounded-xl bg-emerald-500/10 border border-emerald-500/20 text-xs text-emerald-300 flex items-start gap-2">
+                    <div className="p-3 rounded-xl bg-emerald-500/10 border border-emerald-500/20 text-xs text-emerald-800 dark:text-emerald-300 flex items-start gap-2">
                       <Lightbulb className="w-4 h-4 shrink-0 mt-0.5" />
                       <div>
                         <span className="font-bold">Tips Praktis SSW & Interview: </span>

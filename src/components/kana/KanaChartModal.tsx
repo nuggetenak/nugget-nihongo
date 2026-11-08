@@ -12,7 +12,9 @@ import { playSuccessSfx, playFlipSfx } from '../../lib/audio/sfx';
 import { useAppStore } from '../../store/useAppStore';
 import { useGamificationStore } from '../../lib/gamification/gamificationStore';
 import { useFocusTrap } from '../../hooks/useFocusTrap';
+import { useBodyScrollLock } from '../../hooks/useBodyScrollLock';
 import { useSwipeGesture } from '../quiz/useSwipeGesture';
+import { IrasutoyaImage } from '../common/IrasutoyaImage';
 
 interface KanaChartModalProps {
   isOpen: boolean;
@@ -21,6 +23,17 @@ interface KanaChartModalProps {
 
 export const KanaChartModal: React.FC<KanaChartModalProps> = ({ isOpen, onClose }) => {
   const containerRef = useFocusTrap<HTMLDivElement>(isOpen, onClose);
+  useBodyScrollLock(isOpen);
+
+  // Unmount speech synthesis cleanup
+  useEffect(() => {
+    return () => {
+      if (typeof window !== 'undefined' && 'speechSynthesis' in window) {
+        window.speechSynthesis.cancel();
+      }
+    };
+  }, []);
+
   const [scriptType, setScriptType] = useState<'hiragana' | 'katakana'>('hiragana');
   const [groupTab, setGroupTab] = useState<'gojuon' | 'dakuon' | 'yoon'>('gojuon');
   const [showRomaji, setShowRomaji] = useState(true);
@@ -53,8 +66,8 @@ export const KanaChartModal: React.FC<KanaChartModalProps> = ({ isOpen, onClose 
 
   const { swipeHint, touchHandlers, dragOffset, isDragging, wasRecentlySwiped } = useSwipeGesture({
     enabled: isPracticeMode && isOpen,
-    onSwipeLeft: () => handleNextPractice(true),   // Sudah Hafal (Green)
-    onSwipeRight: () => handleNextPractice(false), // Belum Hafal (Red)
+    onSwipeLeft: () => handleNextPractice(false), // Belum Hafal (Red, Left)
+    onSwipeRight: () => handleNextPractice(true), // Sudah Hafal (Green, Right)
   });
 
   useEffect(() => {
@@ -71,10 +84,10 @@ export const KanaChartModal: React.FC<KanaChartModalProps> = ({ isOpen, onClose 
           setPracticeFlipped((prev) => !prev);
         } else if (e.key === 'ArrowLeft') {
           e.preventDefault();
-          handleNextPractice(true);
+          handleNextPractice(false);
         } else if (e.key === 'ArrowRight') {
           e.preventDefault();
-          handleNextPractice(false);
+          handleNextPractice(true);
         }
       }
     };
@@ -100,7 +113,7 @@ export const KanaChartModal: React.FC<KanaChartModalProps> = ({ isOpen, onClose 
   const modalContent = (
     <div
       onClick={onClose}
-      className="fixed inset-0 z-[9999] bg-black/80 backdrop-blur-md flex items-end sm:items-center justify-center p-0 sm:p-5 animate-in fade-in duration-200"
+      className="fixed inset-0 z-50 bg-black/80 backdrop-blur-md flex items-end sm:items-center justify-center p-0 sm:p-5 animate-in fade-in duration-200"
     >
       <div
         ref={containerRef}
@@ -115,8 +128,8 @@ export const KanaChartModal: React.FC<KanaChartModalProps> = ({ isOpen, onClose 
         {/* Header Bar */}
         <div className="flex items-center justify-between border-b border-accent/15 pb-4">
           <div className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-2xl bg-amber-500/20 border border-amber-500/40 flex items-center justify-center text-xl shadow-glow">
-              あ
+            <div className="w-10 h-10 rounded-2xl bg-amber-500/20 border border-amber-500/40 flex items-center justify-center text-xl shadow-glow overflow-hidden">
+              <IrasutoyaImage assetId="jlpt_n5" className="w-8 h-8" containerClassName="w-8 h-8 shrink-0" animateFloat />
             </div>
             <div>
               <h2 id="kana-chart-title" className="text-lg sm:text-xl font-bold text-appText-bright flex items-center gap-2">
@@ -193,20 +206,20 @@ export const KanaChartModal: React.FC<KanaChartModalProps> = ({ isOpen, onClose 
                   setPracticeFlipped(!practiceFlipped);
                 }
               }}
-              title="Ketuk atau tekan Spasi untuk membalik kartu (Geser Kiri: Hafal, Geser Kanan: Belum)"
+              title="Ketuk atau tekan Spasi untuk membalik kartu (Geser Kiri: Belum, Geser Kanan: Hafal)"
             >
               {/* Visual Swipe Hint Badges */}
               {swipeHint === 'left' && (
-                <div className="absolute inset-0 bg-green-500/25 backdrop-blur-[2px] rounded-3xl flex items-center justify-center pointer-events-none z-30 animate-in fade-in duration-150">
-                  <span className="text-base sm:text-lg font-bold text-green-300 bg-surface/95 px-4 py-2 rounded-2xl border border-green-500/50 shadow-2xl">
-                    ✅ Sudah Hafal (Kiri)
+                <div className="absolute inset-0 bg-red-500/25 backdrop-blur-[2px] rounded-3xl flex items-center justify-center pointer-events-none z-30 animate-in fade-in duration-150">
+                  <span className="text-base sm:text-lg font-bold text-red-600 dark:text-red-300 bg-surface/95 px-4 py-2 rounded-2xl border border-red-500/50 shadow-2xl">
+                    ❌ Belum Hafal (Kiri)
                   </span>
                 </div>
               )}
               {swipeHint === 'right' && (
-                <div className="absolute inset-0 bg-red-500/25 backdrop-blur-[2px] rounded-3xl flex items-center justify-center pointer-events-none z-30 animate-in fade-in duration-150">
-                  <span className="text-base sm:text-lg font-bold text-red-300 bg-surface/95 px-4 py-2 rounded-2xl border border-red-500/50 shadow-2xl">
-                    ❌ Belum Hafal (Kanan)
+                <div className="absolute inset-0 bg-green-500/25 backdrop-blur-[2px] rounded-3xl flex items-center justify-center pointer-events-none z-30 animate-in fade-in duration-150">
+                  <span className="text-base sm:text-lg font-bold text-green-600 dark:text-green-300 bg-surface/95 px-4 py-2 rounded-2xl border border-green-500/50 shadow-2xl">
+                    ✅ Sudah Hafal (Kanan)
                   </span>
                 </div>
               )}
@@ -243,10 +256,10 @@ export const KanaChartModal: React.FC<KanaChartModalProps> = ({ isOpen, onClose 
                             : currentList[practiceIndex].katakana;
                         speakJapanese(char, 0.8);
                       }}
-                      className="p-1 rounded-lg bg-surface-2 border border-accent/20 text-accent hover:bg-amber-500/20 transition-all active:scale-95"
+                      className="min-w-[40px] min-h-[40px] rounded-xl bg-surface-2 border border-accent/20 text-accent hover:bg-amber-500/20 transition-all active:scale-95 flex items-center justify-center"
                       title="Dengarkan Suara Huruf"
                     >
-                      <Volume2 className="w-3.5 h-3.5" />
+                      <Volume2 className="w-4 h-4" />
                     </button>
                   </div>
 
@@ -268,10 +281,10 @@ export const KanaChartModal: React.FC<KanaChartModalProps> = ({ isOpen, onClose 
                               speakJapanese(currentList[practiceIndex].example!.jp, 0.85);
                             }
                           }}
-                          className="p-1 rounded-md text-appText-muted hover:text-accent transition-colors active:scale-95 shrink-0"
+                          className="min-w-[40px] min-h-[40px] rounded-xl text-appText-muted hover:text-accent transition-colors active:scale-95 shrink-0 flex items-center justify-center"
                           title="Dengarkan Contoh Kata"
                         >
-                          <Volume2 className="w-3.5 h-3.5" />
+                          <Volume2 className="w-4 h-4" />
                         </button>
                       </div>
                       <p className="text-xs text-appText-muted leading-tight">
@@ -289,10 +302,10 @@ export const KanaChartModal: React.FC<KanaChartModalProps> = ({ isOpen, onClose 
                 type="button"
                 onClick={() => handleNextPractice(false)}
                 className="flex-1 sm:flex-initial px-4 sm:px-5 py-2.5 rounded-xl bg-surface-3 hover:bg-red-500/15 text-red-600 dark:text-red-300 border border-red-500/30 text-xs font-bold transition-all active:scale-95 shadow-sm flex items-center justify-center gap-1.5"
-                title="Belum Hafal (Panah Kanan →)"
+                title="Belum Hafal (Panah Kiri ←)"
               >
                 <span>Belum Hafal ❌</span>
-                <kbd className="hidden sm:inline-block px-1.5 py-0.5 rounded bg-surface text-xs text-appText-muted border border-accent/20">→</kbd>
+                <kbd className="hidden sm:inline-block px-1.5 py-0.5 rounded bg-surface text-xs text-appText-muted border border-accent/20">←</kbd>
               </button>
               <button
                 type="button"
@@ -313,10 +326,10 @@ export const KanaChartModal: React.FC<KanaChartModalProps> = ({ isOpen, onClose 
                 type="button"
                 onClick={() => handleNextPractice(true)}
                 className="flex-1 sm:flex-initial px-4 sm:px-5 py-2.5 rounded-xl bg-accent hover:bg-accent-hot text-bg font-bold text-xs transition-all shadow-glow active:scale-95 flex items-center justify-center gap-1.5"
-                title="Sudah Hafal (Panah Kiri ←)"
+                title="Sudah Hafal (Panah Kanan →)"
               >
                 <span>Sudah Hafal ✅</span>
-                <kbd className="hidden sm:inline-block px-1.5 py-0.5 rounded bg-amber-950/40 text-xs text-bg border border-bg/20">←</kbd>
+                <kbd className="hidden sm:inline-block px-1.5 py-0.5 rounded bg-amber-950/40 text-xs text-bg border border-bg/20">→</kbd>
               </button>
             </div>
           </div>
@@ -357,7 +370,7 @@ export const KanaChartModal: React.FC<KanaChartModalProps> = ({ isOpen, onClose 
                 ].map((tab) => (
                   <button
                     key={tab.id}
-                    onClick={() => setGroupTab(tab.id as any)}
+                    onClick={() => setGroupTab(tab.id as 'gojuon' | 'dakuon' | 'yoon')}
                     className={`px-2.5 sm:px-3 py-1.5 rounded-xl text-xs font-semibold whitespace-nowrap shrink-0 transition-all ${
                       groupTab === tab.id
                         ? 'bg-amber-500/20 text-accent-hot border border-amber-500/35 font-bold'
@@ -393,7 +406,7 @@ export const KanaChartModal: React.FC<KanaChartModalProps> = ({ isOpen, onClose 
                     key={item.id}
                     type="button"
                     onClick={() => handleTileClick(item)}
-                    className={`group relative rounded-2xl p-2.5 sm:p-3 min-w-[48px] min-h-[48px] flex flex-col items-center justify-center transition-all duration-150 border active:scale-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent ${
+                    className={`group relative card-interactive-lift rounded-2xl p-2 sm:p-3 min-w-[44px] min-h-[44px] sm:min-w-[48px] sm:min-h-[48px] flex flex-col items-center justify-center transition-all duration-150 border active:scale-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent ${
                       isSelected
                         ? 'bg-amber-500/25 border-accent text-accent-hot shadow-glow'
                         : 'bg-surface-2 hover:bg-surface-3 border-accent/20 hover:border-accent/40 text-appText-bright'
@@ -404,7 +417,7 @@ export const KanaChartModal: React.FC<KanaChartModalProps> = ({ isOpen, onClose 
                       {char}
                     </span>
                     {showRomaji && (
-                      <span className="text-xs sm:text-xs font-mono text-appText-muted group-hover:text-amber-300 mt-1">
+                      <span className="text-xs sm:text-xs font-mono text-appText-muted group-hover:text-amber-800 dark:group-hover:text-amber-300 font-bold mt-1">
                         {item.romaji}
                       </span>
                     )}
@@ -438,7 +451,7 @@ export const KanaChartModal: React.FC<KanaChartModalProps> = ({ isOpen, onClose 
                     </div>
                     {activeKana.example ? (
                       <div className="text-xs text-appText-muted mt-0.5">
-                        Contoh kata: <span className="font-jp text-amber-300 font-semibold">{activeKana.example.jp}</span> ({activeKana.example.reading}) = {activeKana.example.meaning}
+                        Contoh kata: <span className="font-jp text-amber-800 dark:text-amber-300 font-bold">{activeKana.example.jp}</span> ({activeKana.example.reading}) = {activeKana.example.meaning}
                       </div>
                     ) : (
                       <div className="text-xs text-appText-muted mt-0.5">

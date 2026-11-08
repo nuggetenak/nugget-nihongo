@@ -154,7 +154,7 @@ export const LearnerIdentityCard: React.FC<LearnerIdentityCardProps> = ({
               onClick={() => setIsAvatarPickerOpen(!isAvatarPickerOpen)}
               title="Ganti Avatar Khas Jepang"
               aria-label="Pilih Avatar Khas Jepang"
-              className="absolute -bottom-1 -right-1 min-w-[36px] min-h-[36px] sm:min-w-[40px] sm:min-h-[40px] p-2 rounded-xl bg-accent text-bg shadow-md hover:scale-105 active:scale-95 transition-all flex items-center justify-center focus:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+              className="absolute -bottom-1 -right-1 min-w-[40px] min-h-[40px] p-2 rounded-xl bg-accent text-bg shadow-md hover:scale-105 active:scale-95 transition-all flex items-center justify-center focus:outline-none focus-visible:ring-2 focus-visible:ring-accent"
             >
               <Palette className="w-4 h-4" />
             </button>
@@ -206,7 +206,7 @@ export const LearnerIdentityCard: React.FC<LearnerIdentityCardProps> = ({
                   onClick={handleStartEditName}
                   title="Ubah Nama Profil"
                   aria-label="Ubah Nama Profil"
-                  className="min-w-[36px] min-h-[36px] sm:min-w-[40px] sm:min-h-[40px] p-2 rounded-xl text-appText-muted hover:text-accent hover:bg-accent/10 active:scale-95 transition-all flex items-center justify-center focus:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+                  className="min-w-[40px] min-h-[40px] p-2 rounded-xl text-appText-muted hover:text-accent hover:bg-accent/10 active:scale-95 transition-all flex items-center justify-center focus:outline-none focus-visible:ring-2 focus-visible:ring-accent"
                 >
                   <Edit3 className="w-4 h-4" />
                 </button>
@@ -222,7 +222,7 @@ export const LearnerIdentityCard: React.FC<LearnerIdentityCardProps> = ({
               </p>
               <button
                 onClick={() => setIsAvatarPickerOpen(!isAvatarPickerOpen)}
-                className="text-xs font-semibold text-accent hover:underline flex items-center gap-1 min-h-[32px] sm:min-h-[36px] py-1"
+                className="text-xs font-semibold text-accent hover:underline flex items-center gap-1.5 min-h-[40px] py-1"
               >
                 {isAvatarPickerOpen ? 'Tutup Galeri Avatar' : 'Ubah Avatar Budaya Jepang'}
                 {isAvatarPickerOpen ? <ChevronUp className="w-3.5 h-3.5" /> : <ChevronDown className="w-3.5 h-3.5" />}
@@ -266,7 +266,7 @@ export const LearnerIdentityCard: React.FC<LearnerIdentityCardProps> = ({
                 <button
                   key={item.id}
                   onClick={() => handleSelectPresetAvatar(item)}
-                  className={`p-3 rounded-xl border text-left transition-all active:scale-95 flex items-start gap-2.5 min-h-[52px] ${
+                  className={`p-3 card-interactive-lift rounded-xl border text-left transition-all active:scale-95 flex items-start gap-2.5 min-h-[52px] ${
                     isSelected
                       ? 'bg-accent/15 border-accent shadow-xs'
                       : 'bg-surface/70 border-accent/15 hover:border-accent/40 hover:bg-surface'

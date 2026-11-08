@@ -9,14 +9,6 @@ import { SearchPalette } from './components/ui/SearchPalette';
 import { UpdatePromptToast } from './components/ui/UpdatePromptToast';
 import { OfflineBanner } from './components/ui/OfflineBanner';
 
-// Lazy-loaded heavy modal views with isolated chunk splitting (Ticket T-232)
-const KanaChartModal = React.lazy(() => import('./components/kana/KanaChartModal').then(m => ({ default: m.KanaChartModal })));
-const ConjugationModal = React.lazy(() => import('./components/grammar/ConjugationModal').then(m => ({ default: m.ConjugationModal })));
-const NuanceCompareModal = React.lazy(() => import('./components/grammar/NuanceCompareModal').then(m => ({ default: m.NuanceCompareModal })));
-const PatchNotesModal = React.lazy(() => import('./components/ui/PatchNotesModal').then(m => ({ default: m.PatchNotesModal })));
-const KotowazaModal = React.lazy(() => import('./components/kotowaza/KotowazaModal').then(m => ({ default: m.KotowazaModal })));
-const StudyToolboxModal = React.lazy(() => import('./components/tools/StudyToolboxModal').then(m => ({ default: m.StudyToolboxModal })));
-const CatPlacementModal = React.lazy(() => import('./components/cat/CatPlacementModal').then(m => ({ default: m.CatPlacementModal })));
 import { ContextualSenseiSheet } from './components/sensei/ContextualSenseiSheet';
 import { usePwaStore } from './lib/pwa/pwaStore';
 import { useAuthStore } from './lib/supabase/authStore';
@@ -100,7 +92,11 @@ export const App: React.FC = () => {
       }
     }
     if (typeof window !== 'undefined' && !localStorage.getItem('nn_onboarding_completed')) {
-      useModalStore.getState().openModal('onboarding');
+      const hash = window.location.hash || '';
+      const isRootOrHome = !hash || hash === '#' || hash === '#home' || hash === '#belajar';
+      if (isRootOrHome) {
+        useModalStore.getState().openModal('onboarding');
+      }
     }
   }, [initPwa, initAuth, checkStreakStatus]);
 
@@ -242,7 +238,7 @@ export const App: React.FC = () => {
       {/* Skip to Content Accessible Link (WCAG 2.1 Bypass Blocks) */}
       <a
         href="#main-content"
-        className="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-[9999] focus:px-4 focus:py-2.5 focus:bg-accent focus:text-bg font-bold focus:rounded-xl focus:shadow-xl focus:ring-2 focus:ring-accent focus:outline-none transition-transform"
+        className="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-50 focus:px-4 focus:py-2.5 focus:bg-accent focus:text-bg font-bold focus:rounded-xl focus:shadow-xl focus:ring-2 focus:ring-accent focus:outline-none transition-transform"
       >
         Lewati ke konten utama
       </a>
@@ -274,7 +270,9 @@ export const App: React.FC = () => {
             onResetToHome={() => setActiveTab('home')}
           >
             <React.Suspense fallback={<RouteSuspenseFallback />}>
-              {renderActiveView()}
+              <div key={activeTab} className="animate-page-enter">
+                {renderActiveView()}
+              </div>
             </React.Suspense>
           </RouteErrorBoundary>
         </main>

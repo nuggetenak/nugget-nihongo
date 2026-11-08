@@ -109,14 +109,24 @@ class ReviewTelemetryService {
     const targetLatency = params.targetLatencyMs || (params.modality === 'audio' ? 2500 : 2000);
     const phi = calculateLatencyFactor(params.latencyMs, targetLatency);
 
+    const safeOrtho = Number.isFinite(params.currentStabilityOrtho) && params.currentStabilityOrtho > 0
+      ? params.currentStabilityOrtho
+      : 1.0;
+    const safeAudio = Number.isFinite(params.currentStabilityAudio) && params.currentStabilityAudio > 0
+      ? params.currentStabilityAudio
+      : 1.0;
+    const safeDiff = Number.isFinite(params.currentDifficulty) && params.currentDifficulty >= 1
+      ? params.currentDifficulty
+      : 5.0;
+
     // Calculate updated stabilities using dual-track cross-coupling
     const primaryModality = params.modality === 'audio' ? 'audio' : 'ortho';
-    const primaryStability = primaryModality === 'audio' ? params.currentStabilityAudio : params.currentStabilityOrtho;
+    const primaryStability = primaryModality === 'audio' ? safeAudio : safeOrtho;
 
     const mockCard = {
       due: new Date().toISOString(),
       stability: primaryStability,
-      difficulty: params.currentDifficulty,
+      difficulty: safeDiff,
       elapsed_days: 1,
       scheduled_days: 1,
       reps: 1,
@@ -124,9 +134,9 @@ class ReviewTelemetryService {
       state: 2 as const,
     };
 
-    let finalOrtho = params.currentStabilityOrtho;
-    let finalAudio = params.currentStabilityAudio;
-    let finalDifficulty = params.currentDifficulty;
+    let finalOrtho = safeOrtho;
+    let finalAudio = safeAudio;
+    let finalDifficulty = safeDiff;
 
     if (isTrap && params.rating === 1) {
       const penalized = applyInterferencePenalty(mockCard, false);
@@ -146,8 +156,8 @@ class ReviewTelemetryService {
       );
 
       const dual = calculateDualTrackStability(
-        params.currentStabilityOrtho,
-        params.currentStabilityAudio,
+        safeOrtho,
+        safeAudio,
         primaryModality,
         newPrimaryStability,
         CROSS_MODAL_COEFFICIENTS.ALPHA_CROSS,
@@ -156,7 +166,7 @@ class ReviewTelemetryService {
 
       finalOrtho = dual.stabilityOrtho;
       finalAudio = dual.stabilityAudio;
-      finalDifficulty = Math.min(10, Math.max(1, params.currentDifficulty - (params.rating - 3) * 0.4));
+      finalDifficulty = Math.min(10, Math.max(1, safeDiff - (params.rating - 3) * 0.4));
     }
 
     const event: SRSReviewEvent = {

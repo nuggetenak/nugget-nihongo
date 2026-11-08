@@ -3,6 +3,84 @@
 > Catatan pembaruan ini disinkronkan secara otomatis dari `src/lib/data/patchNotes.ts`
 > Single Source of Truth: Jalankan `npm run changelog` atau `npm run build` untuk memutakhirkan.
 
+## v24.0.0 (8 November 2026) — Shin-Nihongo: Sovereign Pedagogical Zenith & Autonomous Mastery
+
+### Sorotan Pembaruan (Highlights)
+- Pilar 1 — 200 Personas Swarm Simulation: Pengujian komprehensif 200 persona pemelajar Indonesia melintasi 4 pilar kurikulum, 8 kelompok dialek/substratum L1, kondisi konektivitas ladang/kapal 2G/offline gemba, dan 179 tipe ponsel cerdas dengan hasil 100% kelulusan tanpa kendala blocking.
+- Pilar 2 — Dual-Track FSRS Memory Retention & Micro-Session SLA: Mesin memori adaptif [S_ortho, S_audio] dengan kopling lintas-modalitas (alpha=0.25, beta=0.65), modulasi latensi refleks Phi(Delta t), dan koreografi 4 fase micro-session (5-7 menit) berkapasitas Cowan K=4.
+- Pilar 3 — Kanvas Kaligrafi Kanji Touch & Audio Prosedural ZzFX: Kanvas menulis kanji berbasis Pointer Events & Retina DPI dengan normalisasi geometri KanjiVG XML, penilaian akurasi Discrete Fréchet (>= 80%), audio procedural zero-asset ZzFX, dan kartu sertifikat kelulusan Goukaku.
+- Pilar 4 — Sinkronisasi Multi-Tab Broadcast & TinyBase CRDT: Sinkronisasi offline-first IndexedDB dengan daemon multi-tab broadcast channel, rekonsiliasi vektor bebas konflik ke Supabase Cloud, dan pertahanan eviksi kuota peramban darurat.
+- Pilar 5 — Keamanan Berlapis, Kepatuhan Core Web Vitals & Kanal Resmi Terverifikasi: Sanitasi input XSS menyeluruh, pengamanan 22 kebijakan Supabase RLS (SELECT auth.uid()), skor LCP/CLS/INP/TTFB hijau, serta portal komunitas resmi 𝕏 (@NuggetNihongo), Trakteer (trakteer.id/nugget-nihongo), dan nuggetnihongo@gmail.com.
+
+### Rincian Perubahan (Details)
+#### Pilar 1 — 200 Indonesian Learner Personas Full-Swarm Simulation
+- Pengujian swarm otomatis 200 persona pemelajar Indonesia (75 JLPT, 35 JFT, 50 SSW, 40 Living) melintasi 8 dialek daerah dan 179 tipe smartphone.
+- Ketahanan gemba offline 100% teruji pada lingkungan kerja minim sinyal (pertanian, perikanan lepas pantai, konstruksi).
+- Penyelarasan kontrak skema persona (location, primary_goal, connectivity_context) dengan zero test failures.
+
+#### Pilar 2 — Mesin Memori FSRS v4.5 Dual-Track & Micro-Session SLA
+- Dual-track memory matrix memisahkan kestabilan membaca visual (S_ortho) dan mendengar akustik (S_audio).
+- Modulasi latensi refleks Phi(Delta t) memberi bonus kestabilan hingga 1.2x pada respon cepat dan meredam hingga 0.4x pada keraguan kognitif.
+- Pacing engine 4 fase (Review -> Exploration -> Drill -> Synthesis) mengunci rentang ideal 5-7 menit dengan Cowan K=4 working memory.
+
+#### Pilar 3 — Kanvas Menulis Kanji Retina DPI & Audio Prosedural ZzFX
+- Kanvas kaligrafi interaktif berbasis Pointer Events, Retina DPI 2x buffer, dan pointer capture anti-lepas saat menyeret jari.
+- Sampling kurva Bezier KanjiVG XML dan kalkulasi jarak Discrete Fréchet untuk validasi urutan goresan kanji N5–N1.
+- Sintesis audio prosedural WebAudio zero-asset ZzFX untuk efek suara goresan benar, salah, dan perayaan Goukaku.
+
+#### Pilar 4 — Sinkronisasi Multi-Tab Broadcast & TinyBase CRDT
+- Broadcast Channel API multi-tab daemon untuk sinkronisasi state instan antar tab tanpa reload.
+- Rekonsiliasi vektor CRDT bebas konflik antara TinyBase IndexedDB lokal dan Supabase PostgreSQL cloud.
+- Sistem pertahanan eviksi penyimpanan lokal darurat dan pencadangan JSON instan.
+
+#### Pilar 5 — Keamanan Berlapis, Core Web Vitals & Komunitas Terpadu
+- Sanitasi menyeluruh input XSS (escapeHtml, sanitizeUserInput, sanitizeUrl, sanitizeQueryParams, sanitizeSqlSearch).
+- 22 kebijakan Row Level Security Supabase dioptimasi dengan (SELECT auth.uid()) untuk caching query plan.
+- Kepatuhan metrik Google Core Web Vitals (LCP <= 2.5s, CLS <= 0.1, INP <= 200ms, TTFB <= 800ms) dengan sistem pelaporan errorReporter kebal-siklus.
+- Portal komunitas resmi aktif di 𝕏 (@NuggetNihongo), Trakteer (trakteer.id/nugget-nihongo), dan email nuggetnihongo@gmail.com.
+
+---
+
+## v22.0.0 (7 November 2026) — Grand Forensic Synthesis, Antigravity Enterprise Architecture & The 250 Quality Pillars
+
+### Sorotan Pembaruan (Highlights)
+- Pilar 1 — Computer Adaptive Testing (CAT IRT 3PL) & Onboarding: Penyelarasan wizard 3-langkah dan estimasi kemahiran theta berakurasi tinggi tanpa ketergantungan API eksternal.
+- Pilar 2 — Tipografi Jepang, Furigana & Budaya Irasutoya: Integrasi visual otentik karya Takashi Mifune, perbaikan rasio kontras WCAG AAA pada RubyText furigana, pemenggalan frasa alami Google BudouX (lang="ja"), dan elevasi kinetik .card-interactive-lift.
+- Pilar 3 — CBT Exam Simulation, Star Scramble & Dokkai Sheet: Pengalaman simulasi ujian bebas distraksi dengan 15:00 countdown timer, widget susun kalimat bintang, lembar wacana dokkai anti-kelelahan scroll, dan pembahasan komprehensif 5 lapis.
+- Pilar 4 — Ketahanan Offline PWA, TinyBase CRDT & Proteksi Eviksi: Penyelamatan data lokal mutlak saat storage dibersihkan peramban, sinkronisasi dua arah multi-perangkat Supabase, dan sanitasi LocalStorage otomatis.
+- Pilar 5 — Ergonomi Layar Sentuh Universal Multi-Device: Standarisasi touch target minimum 40px di seluruh 40+ modal portal, bantalan safe-area-bottom untuk BottomNav, dan eliminasi 100% horizontal overflow di layar 320px.
+
+### Rincian Perubahan (Details)
+#### Pilar 1 — CAT Placement & Onboarding Wizard 3-Langkah
+- Integrasi diagnostik adaptif CAT IRT 3PL ke dalam onboarding flow baru untuk penentuan level akurat sejak menit pertama.
+- Pembersihan fresh-user state: eliminasi metrik semu 100% akurasi atau badge palsu pada akun pengguna baru.
+- Penjagaan modal lifecycle: focus trap, backdrop dismissal, dan reset state bersih saat modal ditutup.
+
+#### Pilar 2 — Tipografi Jepang, Furigana & Budaya Irasutoya
+- Integrasi terpadu komponen IrasutoyaImage dengan fallback offline resilien dan animasi kinetik.
+- Peningkatan kontras teks furigana RubyText ke standar WCAG AAA dan penyelarasan garis dasar tipografi kanji-kana.
+- Penerapan Google BudouX dengan atribut semantik lang="ja" untuk pemenggalan frasa alami bunsetsu di perangkat ponsel.
+- Penyematan kelas respons sentuh .card-interactive-lift di seluruh kartu wacana, tombol ujian, dan kartu hasil belajar.
+
+#### Pilar 3 — The 3 Clean Doors LMS, Dokkai Sheet & CBT Runner
+- Restrukturisasi pusat evaluasi ke dalam Pintu 1 (JLPT), Pintu 2 (SSW & JFT), dan Pintu 3 (Latihan Cepat & FSRS).
+- DokkaiSheet modular dengan mode ciutkan/buka wacana panjang untuk mencegah kelelahan scrolling pada ponsel kecil.
+- Mondai 2 StarScrambleWidget berteknologi tap-to-slot/return tanpa drag-and-drop rapuh.
+- Ulasan pembahasan komprehensif 5 lapis dengan integrasi 1-ketuk simpan materi ke FSRS v4.5.
+
+#### Pilar 4 — Ketahanan Offline PWA & Storage Eviction Safeguards
+- Sistem pemulihan darurat StorageEvictionRecoveryModal untuk mendeteksi pembersihan cache oleh OS seluler.
+- Pembersihan dan sanitasi kuota LocalStorage otomatis via localStorageSanitizer.
+- Sinkronisasi profil multi-perangkat bebas tabrakan via TinyBase CRDT dan Supabase cloud.
+
+#### Pilar 5 — Ergonomi Universal Multi-Device & Aksesibilitas WCAG
+- Standarisasi seluruh touch target tombol, pill filter, dan modal trigger ke ambang batas aman >= 40x40px.
+- Bantalan safe area pb-[calc(5.5rem+env(safe-area-inset-bottom))] lg:pb-12 pada semua container halaman.
+- Pencegahan kebocoran viewport horizontal (zero blowout) di layar 320px–375px (iPhone SE & Android kompak).
+- Dukungan penuh preferensi aksesibilitas prefers-reduced-motion: reduce.
+
+---
+
 ## v21.2.0 (2 November 2026) — The 3 Clean Doors LMS Consolidation, 14 Golden Sets Modular CBT Engine & Universal Button Contrast Audit
 
 ### Sorotan Pembaruan (Highlights)

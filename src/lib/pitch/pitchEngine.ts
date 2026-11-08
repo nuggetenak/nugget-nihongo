@@ -20,8 +20,9 @@ export interface PitchContourResult {
   particlePitch: 'high' | 'low';
 }
 
-import { splitIntoMoras } from '../audio/moraTokenizer';
-import { getAudioContext, isSfxEnabled } from '../audio/sfx';
+import { splitIntoMoras } from '../audio/moraTokenizer.ts';
+import { getAudioContext, isSfxEnabled } from '../audio/sfx.ts';
+import { lookupPitch, type PitchAccentEntry } from '../data/pitchAccentManager.ts';
 
 export { splitIntoMoras };
 
@@ -34,18 +35,23 @@ export { splitIntoMoras };
  * - N = Odaka (尾高): L H H... (Drops on the particle) [L]
  */
 export function calculatePitchContour(kana: string, pitchNumber: number): PitchContourResult {
-  const moraStrings = splitIntoMoras(kana);
+  const moraStrings = splitIntoMoras(kana || '');
   const totalMoras = moraStrings.length;
 
   if (totalMoras === 0) {
     return {
       moras: [],
       category: 'heiban',
-      categoryLabel: 'Heiban (平板)',
+      categoryLabel: 'Heiban (平板 - Datar)',
       categoryBadgeColor: 'bg-blue-500/20 text-blue-400 border-blue-500/30',
       particlePitch: 'high',
     };
   }
+
+  // Defensive normalization for pitchNumber: must be non-negative integer <= totalMoras
+  let safePitch = typeof pitchNumber === 'number' && !isNaN(pitchNumber) ? Math.floor(pitchNumber) : 0;
+  if (safePitch < 0) safePitch = 0;
+  if (safePitch > totalMoras) safePitch = totalMoras;
 
   // Determine category
   let category: PitchCategory = 'heiban';
@@ -53,17 +59,17 @@ export function calculatePitchContour(kana: string, pitchNumber: number): PitchC
   let categoryBadgeColor = 'bg-blue-500/20 text-blue-400 border-blue-500/30';
   let particlePitch: 'high' | 'low' = 'high';
 
-  if (pitchNumber === 0) {
+  if (safePitch === 0) {
     category = 'heiban';
     categoryLabel = 'Heiban (平板 - Datar)';
     categoryBadgeColor = 'bg-blue-500/20 text-blue-400 border-blue-500/30';
     particlePitch = 'high';
-  } else if (pitchNumber === 1) {
+  } else if (safePitch === 1) {
     category = 'atamadaka';
     categoryLabel = 'Atamadaka (頭高 - Jatuh Awal)';
     categoryBadgeColor = 'bg-rose-500/20 text-rose-400 border-rose-500/30';
     particlePitch = 'low';
-  } else if (pitchNumber === totalMoras) {
+  } else if (safePitch === totalMoras) {
     category = 'odaka';
     categoryLabel = 'Odaka (尾高 - Jatuh Partikel)';
     categoryBadgeColor = 'bg-purple-500/20 text-purple-400 border-purple-500/30';
@@ -80,15 +86,15 @@ export function calculatePitchContour(kana: string, pitchNumber: number): PitchC
     let hasDrop = false;
 
     if (totalMoras === 1) {
-      // Single mora word: e.g. 歯 (ha - 1, atamadaka) or 葉 (ha - 2, odaka)
-      isHigh = pitchNumber === 1;
-      hasDrop = pitchNumber === 1;
+      // Single mora word: e.g. 歯 (ha - 1, atamadaka)
+      isHigh = safePitch === 1;
+      hasDrop = safePitch === 1;
     } else {
-      if (pitchNumber === 0) {
+      if (safePitch === 0) {
         // Heiban: 1st mora low, 2nd onwards high
         isHigh = idx > 0;
         hasDrop = false;
-      } else if (pitchNumber === 1) {
+      } else if (safePitch === 1) {
         // Atamadaka: 1st mora high, drops immediately
         isHigh = idx === 0;
         hasDrop = idx === 0;
@@ -96,9 +102,9 @@ export function calculatePitchContour(kana: string, pitchNumber: number): PitchC
         // Nakadaka or Odaka: 1st mora low, rises to high, drops after pitchNumber
         if (idx === 0) {
           isHigh = false;
-        } else if (idx < pitchNumber) {
+        } else if (idx < safePitch) {
           isHigh = true;
-          if (idx === pitchNumber - 1) {
+          if (idx === safePitch - 1) {
             hasDrop = true;
           }
         } else {
@@ -121,6 +127,20 @@ export function calculatePitchContour(kana: string, pitchNumber: number): PitchC
     categoryLabel,
     categoryBadgeColor,
     particlePitch,
+  };
+}
+
+/**
+ * Automatically looks up Tokyo pitch accent entry and calculates contour
+ */
+export function getPitchContourForWord(word: string, reading?: string): (PitchContourResult & { entry: PitchAccentEntry }) | null {
+  const entry = lookupPitch(word, reading);
+  if (!entry) return null;
+  const kana = reading || word;
+  const contour = calculatePitchContour(kana, entry.pattern);
+  return {
+    ...contour,
+    entry,
   };
 }
 

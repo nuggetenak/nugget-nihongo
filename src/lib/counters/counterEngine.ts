@@ -5,12 +5,12 @@
 // ══════════════════════════════════════════════════════════════════
 
 import {
-  JapaneseCounter,
-  CounterCategory,
+  type JapaneseCounter,
+  type CounterCategory,
   MASTER_COUNTERS,
   COUNTER_QUIZ_BANK,
-  CounterQuizQuestion,
-} from './counterData';
+  type CounterQuizQuestion,
+} from './counterData.ts';
 
 /**
  * Searches the counter bank by kanji, kana, Indonesian description, or countable object name
@@ -146,14 +146,14 @@ export function calculateCounterReading(
     // For counters with Sokuon at 10 (like 本 = じゅっぽん, 冊 = じゅっさつ, 個 = じゅっこ)
     const base10 = counter.readings1to10.find((r) => r.number === 10);
     if (base10 && base10.changeType === 'sokuon') {
-      const baseSuffixKana = base10.kana.replace(/^じゅっ/, 'じゅっ');
-      const baseSuffixRomaji = base10.romaji.replace(/^ju/, 'ju');
+      const baseSuffixKana = base10.kana.replace(/^じゅっ/, '');
+      const baseSuffixRomaji = base10.romaji.replace(/^ju/, '');
 
       return {
         number: clampedNum,
         kanji: `${clampedNum}${counter.kanji}`,
-        kana: `${tensPrefixKana.slice(0, -3)}じゅっ${baseSuffixKana.slice(4)}`,
-        romaji: `${tensPrefixRomaji.slice(0, -3)}ju${baseSuffixRomaji.slice(3)}`,
+        kana: `${tensPrefixKana.slice(0, -3)}じゅっ${baseSuffixKana}`,
+        romaji: `${tensPrefixRomaji.slice(0, -3)}ju${baseSuffixRomaji}`,
         hasSoundChange: true,
         phoneticExplanation: `Kelipatan sepuluh (${clampedNum}) mempertahankan akhiran sokuon "jupp..." dari angka 10.`,
       };

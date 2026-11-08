@@ -7,13 +7,34 @@ import { create } from 'zustand';
 
 function notifyBloomBadge() {
   try {
-    const mod = typeof require !== 'undefined'
-      ? (require('../gamification/gamificationStore.ts') || require('../gamification/gamificationStore'))
-      : null;
-    if (mod?.useGamificationStore) {
-      mod.useGamificationStore.getState().checkAndAwardBadges({ gardenBloomed: true });
+    if (typeof window !== 'undefined') {
+      import('../gamification/gamificationStore')
+        .then((mod) => {
+          mod.useGamificationStore?.getState()?.checkAndAwardBadges({ gardenBloomed: true });
+        })
+        .catch(() => {});
     }
   } catch {}
+}
+
+export interface StageMetadata {
+  stage: number;
+  label: string;
+  icon: string;
+  desc: string;
+}
+
+export const STAGE_METADATA: StageMetadata[] = [
+  { stage: 0, label: 'Benih Ditabur', icon: '🌰', desc: 'Butuh air untuk berkecambah' },
+  { stage: 1, label: 'Mulai Bertunas', icon: '🌱', desc: 'Tunas hijau muda mulai muncul' },
+  { stage: 2, label: 'Tumbuh Batang', icon: '🌿', desc: 'Daun kanji semakin rimbun' },
+  { stage: 3, label: 'Kuncup Bunga', icon: '🪴', desc: 'Hampir mekar sepenuhnya' },
+  { stage: 4, label: 'Mekar Sempurna', icon: '🌸', desc: 'Kanji telah terpatri di memori' },
+];
+
+export function getPlantStageInfo(stage: number): StageMetadata {
+  const clamped = Math.max(0, Math.min(4, Math.floor(stage || 0)));
+  return STAGE_METADATA[clamped];
 }
 
 export interface PlantItem {
@@ -29,13 +50,13 @@ export interface PlantItem {
 }
 
 const DEFAULT_PLANTS: PlantItem[] = [
-  { id: 'p-hi', kanji: '日', reading: 'ひ / にち', meaning: 'Matahari / Hari', level: 'n5', stage: 4, waterCount: 5, maxWater: 5 },
-  { id: 'p-hon', kanji: '本', reading: 'ほん', meaning: 'Buku / Asal', level: 'n5', stage: 3, waterCount: 3, maxWater: 5 },
-  { id: 'p-go', kanji: '語', reading: 'ご', meaning: 'Bahasa / Kata', level: 'n5', stage: 2, waterCount: 2, maxWater: 5 },
-  { id: 'p-ben', kanji: '勉', reading: 'べん', meaning: 'Berusaha / Giat', level: 'n5', stage: 1, waterCount: 1, maxWater: 5 },
+  { id: 'p-hi', kanji: '日', reading: 'ひ / にち', meaning: 'Matahari / Hari', level: 'n5', stage: 0, waterCount: 0, maxWater: 5 },
+  { id: 'p-hon', kanji: '本', reading: 'ほん', meaning: 'Buku / Asal', level: 'n5', stage: 0, waterCount: 0, maxWater: 5 },
+  { id: 'p-go', kanji: '語', reading: 'ご', meaning: 'Bahasa / Kata', level: 'n5', stage: 0, waterCount: 0, maxWater: 5 },
+  { id: 'p-ben', kanji: '勉', reading: 'べん', meaning: 'Berusaha / Giat', level: 'n5', stage: 0, waterCount: 0, maxWater: 5 },
   { id: 'p-kyou', kanji: '強', reading: 'きょう / つよい', meaning: 'Kuat / Belajar', level: 'n5', stage: 0, waterCount: 0, maxWater: 5 },
-  { id: 'p-tomo', kanji: '友', reading: 'とも', meaning: 'Sahabat / Teman', level: 'n4', stage: 2, waterCount: 2, maxWater: 5 },
-  { id: 'p-kokoro', kanji: '心', reading: 'こころ / しん', meaning: 'Hati / Jiwa', level: 'n3', stage: 1, waterCount: 1, maxWater: 5 },
+  { id: 'p-tomo', kanji: '友', reading: 'とも', meaning: 'Sahabat / Teman', level: 'n4', stage: 0, waterCount: 0, maxWater: 5 },
+  { id: 'p-kokoro', kanji: '心', reading: 'こころ / しん', meaning: 'Hati / Jiwa', level: 'n3', stage: 0, waterCount: 0, maxWater: 5 },
   { id: 'p-ai', kanji: '愛', reading: 'あい', meaning: 'Kasih Sayang / Cinta', level: 'n2', stage: 0, waterCount: 0, maxWater: 5 },
 ];
 
@@ -77,7 +98,8 @@ export const useGardenStore = create<GardenStoreState>((set, get) => ({
   plants: loadSavedPlants(),
 
   addWaterDrop: (count = 1) => {
-    const updated = get().waterDrops + count;
+    const safeCount = typeof count === 'number' && !Number.isNaN(count) ? Math.max(0, Math.floor(count)) : 1;
+    const updated = get().waterDrops + safeCount;
     set({ waterDrops: updated });
     if (typeof window !== 'undefined') {
       try { localStorage.setItem('nn_garden_drops', updated.toString()); } catch {}
@@ -95,7 +117,8 @@ export const useGardenStore = create<GardenStoreState>((set, get) => ({
     if (plant.stage >= 4) return false; // already max bloom
 
     const newWaterCount = plant.waterCount + 1;
-    const newStage = Math.min(4, Math.floor((newWaterCount / plant.maxWater) * 4));
+    const maxW = Math.max(1, plant.maxWater || 5);
+    const newStage = Math.min(4, Math.floor((newWaterCount / maxW) * 4));
 
     const updatedPlants = [...plants];
     updatedPlants[plantIndex] = {
@@ -131,10 +154,11 @@ export const useGardenStore = create<GardenStoreState>((set, get) => ({
       if (p.stage < 4 && dropsUsed < waterDrops) {
         dropsUsed++;
         const newWater = p.waterCount + 1;
+        const maxW = Math.max(1, p.maxWater || 5);
         return {
           ...p,
           waterCount: newWater,
-          stage: Math.min(4, Math.floor((newWater / p.maxWater) * 4)),
+          stage: Math.min(4, Math.floor((newWater / maxW) * 4)),
           lastWatered: new Date().toISOString(),
         };
       }

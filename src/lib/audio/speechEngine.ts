@@ -4,7 +4,7 @@
 //  Provides native Web Speech, Kana pre-rendered WAV, & synthetic fallback
 // ══════════════════════════════════════════════════════════════════
 
-import { syntheticAudio } from './syntheticAudioFallback';
+import { syntheticAudio } from './syntheticAudioFallback.ts';
 
 let japaneseVoice: SpeechSynthesisVoice | null = null;
 let allJaVoices: SpeechSynthesisVoice[] = [];

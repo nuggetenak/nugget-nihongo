@@ -11,6 +11,7 @@ import {
   X,
 } from 'lucide-react';
 import { ResetConfirmationModal } from '../modals/ResetConfirmationModal';
+import { useBodyScrollLock } from '../../hooks/useBodyScrollLock';
 import {
   createBackupPayload,
   validateBackupPayload,
@@ -19,6 +20,7 @@ import {
   decryptBackupPayload,
   isEncryptedBackupContainer,
 } from '../../lib/storage/backupManager';
+import { IrasutoyaImage } from '../common/IrasutoyaImage';
 
 interface AdvancedSettingsTabProps {
   apiKeyInput: string;
@@ -60,6 +62,8 @@ export const AdvancedSettingsTab: React.FC<AdvancedSettingsTabProps> = ({
 
   const [showClearCacheConfirm, setShowClearCacheConfirm] = useState(false);
   const [isClearingCache, setIsClearingCache] = useState(false);
+
+  useBodyScrollLock(showExportModal || decryptModalOpen || showClearCacheConfirm);
 
   const handleExportEncrypted = async () => {
     if (!exportPassphrase || exportPassphrase.length < 4) {
@@ -162,10 +166,14 @@ export const AdvancedSettingsTab: React.FC<AdvancedSettingsTabProps> = ({
       {/* AI Sensei BYOK API Key Card */}
       <div className="bg-surface border border-accent/20 rounded-2xl sm:rounded-3xl p-4 sm:p-6 shadow-sm space-y-4">
         <div>
-          <h3 className="text-base sm:text-lg font-bold text-appText-bright flex items-center gap-2">
-            <Key className="w-5 h-5 text-accent" />
-            Kunci API Sensei AI (BYOK - Bring Your Own Key)
-          </h3>
+          <div className="flex items-center gap-2.5">
+            <div className="w-9 h-9 rounded-xl bg-amber-500/15 border border-amber-500/30 flex items-center justify-center shrink-0 overflow-hidden">
+              <IrasutoyaImage assetId="sensei_teaching" className="w-7 h-7" containerClassName="w-7 h-7 shrink-0" animateFloat />
+            </div>
+            <h3 className="text-base sm:text-lg font-bold text-appText-bright">
+              Kunci API Sensei AI (BYOK - Bring Your Own Key)
+            </h3>
+          </div>
           <p className="text-xs sm:text-sm text-appText-muted mt-1 leading-relaxed">
             Secara bawaan Sensei AI memanggil proxy serverless Nugget Nihongo. Masukkan kunci API mandiri (Google Gemini atau OpenRouter) jika kamu ingin kuota percakapan tanpa batas dan latensi langsung.
           </p>
@@ -220,7 +228,7 @@ export const AdvancedSettingsTab: React.FC<AdvancedSettingsTabProps> = ({
           {/* Plaintext Backup */}
           <button
             onClick={handleExportBackup}
-            className="p-3.5 sm:p-4 rounded-xl bg-surface-2/60 border border-accent/15 hover:border-accent/30 hover:bg-surface-2 text-left transition-all active:scale-95 flex flex-col justify-between space-y-2"
+            className="p-3.5 sm:p-4 card-interactive-lift rounded-xl bg-surface-2/60 border border-accent/15 hover:border-accent/30 hover:bg-surface-2 text-left transition-all active:scale-95 flex flex-col justify-between space-y-2"
           >
             <div className="flex items-center justify-between">
               <Download className="w-4 h-4 text-accent" />
@@ -241,11 +249,11 @@ export const AdvancedSettingsTab: React.FC<AdvancedSettingsTabProps> = ({
           {/* Encrypted AES Backup */}
           <button
             onClick={() => setShowExportModal(true)}
-            className="p-3.5 sm:p-4 rounded-xl bg-surface-2/60 border border-accent/15 hover:border-accent/30 hover:bg-surface-2 text-left transition-all active:scale-95 flex flex-col justify-between space-y-2"
+            className="p-3.5 sm:p-4 card-interactive-lift rounded-xl bg-surface-2/60 border border-accent/15 hover:border-accent/30 hover:bg-surface-2 text-left transition-all active:scale-95 flex flex-col justify-between space-y-2"
           >
             <div className="flex items-center justify-between">
               <Lock className="w-4 h-4 text-accent" />
-              <span className="text-xs font-mono px-1.5 py-0.5 rounded bg-emerald-500/15 text-emerald-600 dark:text-emerald-400 font-bold">
+              <span className="text-xs font-mono px-1.5 py-0.5 rounded bg-emerald-500/15 text-emerald-800 dark:text-emerald-400 font-bold">
                 AES-256
               </span>
             </div>
@@ -260,7 +268,7 @@ export const AdvancedSettingsTab: React.FC<AdvancedSettingsTabProps> = ({
           </button>
 
           {/* Import Backup */}
-          <label className="p-3.5 sm:p-4 rounded-xl bg-surface-2/60 border border-accent/15 hover:border-accent/30 hover:bg-surface-2 text-left transition-all active:scale-95 flex flex-col justify-between space-y-2 cursor-pointer">
+          <label className="p-3.5 sm:p-4 card-interactive-lift rounded-xl bg-surface-2/60 border border-accent/15 hover:border-accent/30 hover:bg-surface-2 text-left transition-all active:scale-95 flex flex-col justify-between space-y-2 cursor-pointer">
             <div className="flex items-center justify-between">
               <Upload className="w-4 h-4 text-accent" />
               <span className="text-xs font-mono px-1.5 py-0.5 rounded bg-surface-3 text-appText-muted">
@@ -345,7 +353,8 @@ export const AdvancedSettingsTab: React.FC<AdvancedSettingsTabProps> = ({
               </h4>
               <button
                 onClick={() => setShowExportModal(false)}
-                className="text-appText-muted hover:text-appText-bright"
+                className="min-h-[40px] min-w-[40px] rounded-xl flex items-center justify-center text-appText-muted hover:text-appText-bright active:scale-95 transition-all"
+                aria-label="Tutup modal enkripsi"
               >
                 <X className="w-4 h-4" />
               </button>
@@ -394,7 +403,8 @@ export const AdvancedSettingsTab: React.FC<AdvancedSettingsTabProps> = ({
               </h4>
               <button
                 onClick={() => setDecryptModalOpen(false)}
-                className="text-appText-muted hover:text-appText-bright"
+                className="min-h-[40px] min-w-[40px] rounded-xl flex items-center justify-center text-appText-muted hover:text-appText-bright active:scale-95 transition-all"
+                aria-label="Tutup modal dekripsi"
               >
                 <X className="w-4 h-4" />
               </button>

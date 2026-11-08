@@ -141,7 +141,7 @@ export const PitchContourView: React.FC<PitchContourViewProps> = ({
               <div
                 className={`w-6 h-6 sm:w-7 sm:h-7 mx-auto rounded-lg flex items-center justify-center border text-xs sm:text-xs font-black ${
                   m.isHigh
-                    ? 'bg-amber-500/20 text-amber-300 border-amber-500/40 shadow-xs'
+                    ? 'bg-amber-500/20 text-amber-800 dark:text-amber-300 border-amber-500/40 shadow-xs'
                     : 'bg-surface-3 text-appText-muted border-accent/15'
                 }`}
               >
@@ -153,10 +153,10 @@ export const PitchContourView: React.FC<PitchContourViewProps> = ({
           {/* Particle Label Tile */}
           <div
             style={{ width: `${stepWidth}px` }}
-            className="text-center font-jp text-xs sm:text-sm font-bold text-sky-400"
+            className="text-center font-jp text-xs sm:text-sm font-bold text-sky-800 dark:text-sky-400"
             title="Partikel pengiring [ga] menunjukkan letak jatuhnya nada"
           >
-            <div className="w-6 h-6 sm:w-7 sm:h-7 mx-auto rounded-lg flex items-center justify-center border border-sky-500/30 bg-sky-500/15 text-xs font-black">
+            <div className="w-6 h-6 sm:w-7 sm:h-7 mx-auto rounded-lg flex items-center justify-center border border-sky-500/30 bg-sky-500/15 text-sky-800 dark:text-sky-300 text-xs font-black">
               {particleText}
             </div>
           </div>
@@ -164,24 +164,24 @@ export const PitchContourView: React.FC<PitchContourViewProps> = ({
       </div>
 
       {/* Audio Controls Toolbar */}
-      <div className="flex items-center gap-1.5 mt-2.5">
+      <div className="flex items-center gap-2 mt-2.5">
         <button
           type="button"
           onClick={handlePlayVoice}
-          className="px-2.5 py-1 rounded-xl bg-surface hover:bg-surface-3 border border-accent/20 text-appText-muted hover:text-accent text-xs font-semibold flex items-center gap-1 transition-all active:scale-95 shadow-xs"
+          className="min-h-[40px] px-3.5 py-1.5 rounded-xl bg-surface hover:bg-surface-3 border border-accent/20 text-appText-muted hover:text-accent text-xs font-bold flex items-center gap-1.5 transition-all active:scale-95 shadow-xs"
           title="Dengarkan pengucapan suara asli (TTS)"
         >
-          <Volume2 className="w-3.5 h-3.5 text-accent" />
+          <Volume2 className="w-4 h-4 text-accent" />
           <span>Suara</span>
         </button>
 
         <button
           type="button"
           onClick={handlePlayTone}
-          className="px-2.5 py-1 rounded-xl bg-surface hover:bg-surface-3 border border-amber-500/20 text-appText-muted hover:text-amber-400 text-xs font-semibold flex items-center gap-1 transition-all active:scale-95 shadow-xs"
+          className="min-h-[40px] px-3.5 py-1.5 rounded-xl bg-surface hover:bg-surface-3 border border-amber-500/20 text-appText-muted hover:text-amber-500 text-xs font-bold flex items-center gap-1.5 transition-all active:scale-95 shadow-xs"
           title="Dengarkan melodi nada tinggi-rendah (Web Audio Beep)"
         >
-          <Music className="w-3.5 h-3.5 text-amber-400" />
+          <Music className="w-4 h-4 text-amber-500" />
           <span>Melodi Nada</span>
         </button>
       </div>

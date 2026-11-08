@@ -30,6 +30,7 @@ import { ScaffoldingMode, ExerciseTrackType, SSWSectorId } from '../../types/exe
 import { useExerciseStore, ExerciseManifestEntry } from '../../store/useExerciseStore';
 import { useAppStore } from '../../store/useAppStore';
 import { useModalStore } from '../../store/useModalStore';
+import { IrasutoyaImage } from '../common/IrasutoyaImage';
 
 export type CleanDoorTab = 'jlpt' | 'ssw' | 'rapid';
 
@@ -185,7 +186,7 @@ export const ExamLmsHub: React.FC<ExamLmsHubProps> = ({
           <button
             type="button"
             onClick={() => setActiveDoor('jlpt')}
-            className={`p-4 sm:p-5 rounded-2xl border-2 text-left transition-all duration-200 active:scale-[0.98] flex flex-col justify-between min-h-[110px] ${
+            className={`card-interactive-lift p-4 sm:p-5 rounded-2xl border-2 text-left transition-all duration-200 active:scale-[0.98] flex flex-col justify-between min-h-[110px] ${
               activeDoor === 'jlpt'
                 ? 'bg-amber-500/15 border-amber-500 text-appText-bright shadow-md ring-2 ring-amber-500/20'
                 : 'bg-surface-2 hover:bg-surface-3 border-theme text-appText-muted hover:text-appText-bright'
@@ -218,7 +219,7 @@ export const ExamLmsHub: React.FC<ExamLmsHubProps> = ({
           <button
             type="button"
             onClick={() => setActiveDoor('ssw')}
-            className={`p-4 sm:p-5 rounded-2xl border-2 text-left transition-all duration-200 active:scale-[0.98] flex flex-col justify-between min-h-[110px] ${
+            className={`card-interactive-lift p-4 sm:p-5 rounded-2xl border-2 text-left transition-all duration-200 active:scale-[0.98] flex flex-col justify-between min-h-[110px] ${
               activeDoor === 'ssw'
                 ? 'bg-emerald-500/15 border-emerald-500 text-appText-bright shadow-md ring-2 ring-emerald-500/20'
                 : 'bg-surface-2 hover:bg-surface-3 border-theme text-appText-muted hover:text-appText-bright'
@@ -251,7 +252,7 @@ export const ExamLmsHub: React.FC<ExamLmsHubProps> = ({
           <button
             type="button"
             onClick={() => setActiveDoor('rapid')}
-            className={`p-4 sm:p-5 rounded-2xl border-2 text-left transition-all duration-200 active:scale-[0.98] flex flex-col justify-between min-h-[110px] ${
+            className={`card-interactive-lift p-4 sm:p-5 rounded-2xl border-2 text-left transition-all duration-200 active:scale-[0.98] flex flex-col justify-between min-h-[110px] ${
               activeDoor === 'rapid'
                 ? 'bg-cyan-500/15 border-cyan-500 text-appText-bright shadow-md ring-2 ring-cyan-500/20'
                 : 'bg-surface-2 hover:bg-surface-3 border-theme text-appText-muted hover:text-appText-bright'
@@ -339,7 +340,7 @@ export const ExamLmsHub: React.FC<ExamLmsHubProps> = ({
                   <div
                     key={setEntry.setId}
                     onClick={() => handleOpenPreTest(setEntry)}
-                    className="group cursor-pointer bg-surface hover:bg-surface-2 border border-theme hover:border-amber-500/50 rounded-2xl sm:rounded-3xl p-4 sm:p-5 transition-all duration-200 hover:-translate-y-1 shadow-sm active:scale-[0.98] flex flex-col justify-between min-h-[170px]"
+                    className="card-interactive-lift group cursor-pointer bg-surface hover:bg-surface-2 border border-theme hover:border-amber-500/50 rounded-2xl sm:rounded-3xl p-4 sm:p-5 transition-all duration-200 shadow-sm active:scale-[0.98] flex flex-col justify-between min-h-[170px]"
                   >
                     <div>
                       <div className="flex items-center justify-between gap-2 mb-2">
@@ -539,7 +540,14 @@ export const ExamLmsHub: React.FC<ExamLmsHubProps> = ({
 
                 <button
                   type="button"
-                  onClick={() => openModal('catPlacement')}
+                  onClick={() => {
+                    const targetSet = jlptSets[0] || manifest?.sets?.[0];
+                    if (targetSet) {
+                      onStartExerciseSet(targetSet.setId, 'strict');
+                    } else {
+                      onStartDynamicDrill(60);
+                    }
+                  }}
                   className="min-h-[46px] px-6 py-3 rounded-2xl bg-gradient-to-r from-emerald-500 to-emerald-400 hover:from-emerald-400 hover:to-emerald-300 text-stone-950 font-black text-xs sm:text-sm flex items-center justify-center gap-2 transition-all active:scale-95 shadow-glow shrink-0"
                 >
                   <Play className="w-4 h-4 fill-stone-950" />
@@ -556,7 +564,7 @@ export const ExamLmsHub: React.FC<ExamLmsHubProps> = ({
         <div className="space-y-5 animate-in fade-in">
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {/* Tool 1: Review Harian FSRS */}
-            <div className="bg-surface hover:bg-surface-2 border border-theme hover:border-amber-500/50 rounded-3xl p-5 sm:p-6 transition-all duration-200 shadow-sm flex flex-col justify-between min-h-[220px]">
+            <div className="card-interactive-lift bg-surface hover:bg-surface-2 border border-theme hover:border-amber-500/50 rounded-3xl p-5 sm:p-6 transition-all duration-200 shadow-sm flex flex-col justify-between min-h-[220px]">
               <div>
                 <div className="flex items-center justify-between gap-2 mb-3">
                   <span className="text-2xl p-2 rounded-xl bg-amber-500/15 border border-amber-500/30">
@@ -580,17 +588,18 @@ export const ExamLmsHub: React.FC<ExamLmsHubProps> = ({
                 <span className="text-xs text-appText-muted font-mono">⏱️ ~3 Menit</span>
                 <button
                   type="button"
+                  disabled={dueCount === 0}
                   onClick={onStartFSRSDue}
-                  className="min-h-[44px] px-5 py-2.5 rounded-xl bg-amber-500 hover:bg-amber-400 text-stone-950 font-black text-xs sm:text-sm flex items-center gap-2 transition-all shadow-glow active:scale-95"
+                  className="min-h-[44px] px-5 py-2.5 rounded-xl bg-amber-500 hover:bg-amber-400 text-stone-950 font-black text-xs sm:text-sm flex items-center gap-2 transition-all shadow-glow active:scale-95 disabled:opacity-40 disabled:cursor-not-allowed disabled:pointer-events-none"
                 >
-                  <span>Mulai Review</span>
+                  <span>{dueCount === 0 ? 'Belum Ada Kartu Due' : 'Mulai Review'}</span>
                   <ChevronRight className="w-4 h-4 stroke-[3]" />
                 </button>
               </div>
             </div>
 
             {/* Tool 2: Buku Catatan Kesalahan (Mistake Bank) */}
-            <div className="bg-surface hover:bg-surface-2 border border-theme hover:border-rose-500/50 rounded-3xl p-5 sm:p-6 transition-all duration-200 shadow-sm flex flex-col justify-between min-h-[220px]">
+            <div className="card-interactive-lift bg-surface hover:bg-surface-2 border border-theme hover:border-rose-500/50 rounded-3xl p-5 sm:p-6 transition-all duration-200 shadow-sm flex flex-col justify-between min-h-[220px]">
               <div>
                 <div className="flex items-center justify-between gap-2 mb-3">
                   <span className="text-2xl p-2 rounded-xl bg-rose-500/15 border border-rose-500/30">
@@ -629,7 +638,7 @@ export const ExamLmsHub: React.FC<ExamLmsHubProps> = ({
             </div>
 
             {/* Tool 3: Latihan Kilat 10 Soal Dinamis */}
-            <div className="bg-surface hover:bg-surface-2 border border-theme hover:border-cyan-500/50 rounded-3xl p-5 sm:p-6 transition-all duration-200 shadow-sm flex flex-col justify-between min-h-[220px]">
+            <div className="card-interactive-lift bg-surface hover:bg-surface-2 border border-theme hover:border-cyan-500/50 rounded-3xl p-5 sm:p-6 transition-all duration-200 shadow-sm flex flex-col justify-between min-h-[220px]">
               <div>
                 <div className="flex items-center justify-between gap-2 mb-3">
                   <span className="text-2xl p-2 rounded-xl bg-cyan-500/15 border border-cyan-500/30">
@@ -663,7 +672,7 @@ export const ExamLmsHub: React.FC<ExamLmsHubProps> = ({
             </div>
 
             {/* Tool 4: Tes Penempatan Cepat CAT IRT 3PL */}
-            <div className="bg-surface hover:bg-surface-2 border border-theme hover:border-purple-500/50 rounded-3xl p-5 sm:p-6 transition-all duration-200 shadow-sm flex flex-col justify-between min-h-[220px]">
+            <div className="card-interactive-lift bg-surface hover:bg-surface-2 border border-theme hover:border-purple-500/50 rounded-3xl p-5 sm:p-6 transition-all duration-200 shadow-sm flex flex-col justify-between min-h-[220px]">
               <div>
                 <div className="flex items-center justify-between gap-2 mb-3">
                   <span className="text-2xl p-2 rounded-xl bg-purple-500/15 border border-purple-500/30">
@@ -701,7 +710,7 @@ export const ExamLmsHub: React.FC<ExamLmsHubProps> = ({
 
       {/* ── PRE-TEST SCAFFOLDING MODAL (GUIDED VS STRICT) ──────────── */}
       {selectedSetForPretest && (
-        <div className="fixed inset-0 z-[99999] bg-black/80 backdrop-blur-sm flex items-center justify-center p-4 animate-in fade-in">
+        <div className="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm flex items-center justify-center p-4 animate-in fade-in">
           <div
             className="w-full max-w-lg bg-surface border border-theme rounded-3xl p-5 sm:p-7 space-y-5 shadow-2xl relative"
             role="dialog"
@@ -712,22 +721,32 @@ export const ExamLmsHub: React.FC<ExamLmsHubProps> = ({
             <button
               type="button"
               onClick={() => setSelectedSetForPretest(null)}
-              className="absolute top-5 right-5 w-9 h-9 rounded-xl bg-surface-2 hover:bg-surface-3 border border-theme flex items-center justify-center text-appText-muted hover:text-appText-bright transition-all"
+              className="absolute top-4 right-4 w-10 h-10 min-w-[40px] min-h-[40px] rounded-xl bg-surface-2 hover:bg-surface-3 border border-theme flex items-center justify-center text-appText-muted hover:text-appText-bright transition-all active:scale-95"
+              aria-label="Tutup konfigurasi ujian"
             >
               <X className="w-5 h-5" />
             </button>
 
-            {/* Modal Title */}
-            <div>
-              <span className="text-xs font-black uppercase tracking-wider text-amber-400">
-                Konfigurasi Mode Pengerjaan · 試験設定
-              </span>
-              <h3 id="pretest-modal-title" className="text-lg sm:text-xl font-black text-appText-bright mt-1">
-                {selectedSetForPretest.title}
-              </h3>
-              <p className="text-xs text-appText-muted mt-0.5">
-                {selectedSetForPretest.targetUnits}
-              </p>
+            {/* Modal Title with Irasutoya Senpai Anchor */}
+            <div className="flex items-center gap-3.5 pr-10">
+              <IrasutoyaImage
+                assetId="senpai_studying"
+                alt="Senpai Konfigurasi Ujian"
+                className="w-12 h-12 object-contain"
+                containerClassName="w-12 h-12 shrink-0"
+                animateFloat
+              />
+              <div className="min-w-0">
+                <span className="text-xs font-black uppercase tracking-wider text-accent-hot dark:text-amber-400 font-bold">
+                  Konfigurasi Mode Pengerjaan · 試験設定
+                </span>
+                <h3 id="pretest-modal-title" className="text-lg sm:text-xl font-black text-appText-bright mt-0.5 truncate">
+                  {selectedSetForPretest.title}
+                </h3>
+                <p className="text-xs text-appText-muted mt-0.5 truncate">
+                  {selectedSetForPretest.targetUnits}
+                </p>
+              </div>
             </div>
 
             {/* Mode Selection Cards */}
@@ -735,7 +754,7 @@ export const ExamLmsHub: React.FC<ExamLmsHubProps> = ({
               {/* Option 1: Strict Exam (Recommended) */}
               <div
                 onClick={() => setPretestMode('strict')}
-                className={`cursor-pointer p-4 rounded-2xl border-2 transition-all ${
+                className={`card-interactive-lift cursor-pointer p-4 rounded-2xl border-2 transition-all ${
                   pretestMode === 'strict'
                     ? 'bg-rose-500/10 border-rose-500 text-appText-bright shadow-sm'
                     : 'bg-surface-2 hover:bg-surface-3 border-theme text-appText-muted'
@@ -748,7 +767,7 @@ export const ExamLmsHub: React.FC<ExamLmsHubProps> = ({
                       🔴 Mode Simulasi Resmi (Strict Exam)
                     </span>
                   </div>
-                  <span className="text-xs font-mono font-bold px-2 py-0.5 rounded-full bg-rose-500/20 text-rose-300 border border-rose-500/40">
+                  <span className="text-xs font-mono font-bold px-2 py-0.5 rounded-full bg-rose-500/20 text-rose-700 dark:text-rose-300 border border-rose-500/40">
                     Rekomendasi Ujian
                   </span>
                 </div>
@@ -763,7 +782,7 @@ export const ExamLmsHub: React.FC<ExamLmsHubProps> = ({
               {/* Option 2: Guided Practice */}
               <div
                 onClick={() => setPretestMode('guided')}
-                className={`cursor-pointer p-4 rounded-2xl border-2 transition-all ${
+                className={`card-interactive-lift cursor-pointer p-4 rounded-2xl border-2 transition-all ${
                   pretestMode === 'guided'
                     ? 'bg-emerald-500/10 border-emerald-500 text-appText-bright shadow-sm'
                     : 'bg-surface-2 hover:bg-surface-3 border-theme text-appText-muted'

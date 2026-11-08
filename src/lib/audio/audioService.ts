@@ -103,6 +103,15 @@ class AudioService {
   }
 
   /**
+   * Stops any ongoing speech synthesis audio playback immediately.
+   */
+  public stop(): void {
+    if (typeof window !== 'undefined' && 'speechSynthesis' in window) {
+      window.speechSynthesis.cancel();
+    }
+  }
+
+  /**
    * Plays a pre-recorded audio clip with pitch preservation and codec negotiation
    */
   public async playAudioClip(rawUrl: string, customRate?: number): Promise<void> {

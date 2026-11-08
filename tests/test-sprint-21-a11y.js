@@ -133,7 +133,7 @@ test('T-118: Prefers-reduced-motion media query and contrast token hygiene are e
 
   // Contrast tokens check: verify dark and light surface/text definitions exist
   assert(
-    cssCode.includes('--bg: #FDFBF7') &&
+    (cssCode.includes('--bg: #F7F4EE') || cssCode.includes('--bg: #FDFBF7')) &&
       (cssCode.includes('--text: #2D2319') || cssCode.includes('--text: #1C150E')),
     'Light mode tokens must be defined'
   );

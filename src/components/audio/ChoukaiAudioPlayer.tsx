@@ -41,6 +41,13 @@ export const ChoukaiAudioPlayer: React.FC<ChoukaiAudioPlayerProps> = ({
           .catch(() => setIsPlaying(false));
       }
     }
+
+    return () => {
+      const el = audioRef.current;
+      if (el) {
+        el.pause();
+      }
+    };
   }, [audio.mp3, audio.m4a, autoPlay]);
 
   const togglePlay = () => {
@@ -87,7 +94,7 @@ export const ChoukaiAudioPlayer: React.FC<ChoukaiAudioPlayerProps> = ({
   };
 
   const formatTime = (secs: number) => {
-    if (isNaN(secs) || secs < 0) return '00:00';
+    if (!isFinite(secs) || isNaN(secs) || secs < 0) return '00:00';
     const m = Math.floor(secs / 60);
     const s = Math.floor(secs % 60);
     return `${m < 10 ? '0' : ''}${m}:${s < 10 ? '0' : ''}${s}`;
@@ -96,7 +103,7 @@ export const ChoukaiAudioPlayer: React.FC<ChoukaiAudioPlayerProps> = ({
   const progressPct = duration > 0 ? (currentTime / duration) * 100 : 0;
 
   return (
-    <div className="w-full bg-neutral-900/90 border border-neutral-800 rounded-2xl p-4 shadow-xl backdrop-blur-sm overflow-x-hidden">
+    <div className="w-full bg-surface border border-theme rounded-2xl p-4 shadow-md backdrop-blur-sm overflow-x-hidden">
       {/* Hidden Audio Element with dual source fallback */}
       <audio
         ref={audioRef}
@@ -121,27 +128,27 @@ export const ChoukaiAudioPlayer: React.FC<ChoukaiAudioPlayerProps> = ({
       </audio>
 
       {/* Top Row: Track Label & Playback Speed Chips */}
-      <div className="flex items-center justify-between gap-2 mb-3 pb-2 border-b border-neutral-800/80">
+      <div className="flex items-center justify-between gap-2 mb-3 pb-2 border-b border-theme/60">
         <div className="flex items-center gap-2 min-w-0">
-          <Volume2 className="w-4 h-4 text-amber-400 shrink-0" />
-          <span className="text-xs sm:text-sm font-bold text-neutral-200 truncate">
+          <Volume2 className="w-4 h-4 text-accent shrink-0" />
+          <span className="text-xs sm:text-sm font-bold text-appText-bright truncate">
             {audio.label || '聴解 音声 (Listening Audio)'}
           </span>
         </div>
 
-        {/* Speed Chips */}
+        {/* Speed Chips (supports 0.75x/0.8x, 1.0x, 1.2x/1.25x playback rates) */}
         <div className="flex items-center gap-1 shrink-0">
-          {[0.8, 1.0, 1.2].map((rate) => (
+          {[0.75, 1.0, 1.25].map((rate) => (
             <button
               key={rate}
               onClick={() => handleSpeedChange(rate)}
-              className={`min-h-[36px] min-w-[36px] px-2.5 py-1 rounded-xl text-xs font-bold transition-all active:scale-95 ${
-                playbackRate === rate
-                  ? 'bg-amber-500 text-neutral-950 shadow-sm'
-                  : 'bg-neutral-800 hover:bg-neutral-750 text-neutral-300 border border-neutral-700/60'
+              className={`min-h-[40px] min-w-[40px] px-2.5 py-1.5 rounded-xl text-xs font-bold transition-all active:scale-95 ${
+                Math.abs(playbackRate - rate) < 0.05
+                  ? 'bg-amber-500 text-stone-950 shadow-sm'
+                  : 'bg-surface-2 hover:bg-surface-3 text-appText-muted hover:text-appText-bright border border-theme'
               }`}
             >
-              {rate.toFixed(1)}x
+              {rate.toFixed(2).replace(/\.00$/, '.0').replace(/50$/, '5')}x
             </button>
           ))}
         </div>
@@ -152,7 +159,7 @@ export const ChoukaiAudioPlayer: React.FC<ChoukaiAudioPlayerProps> = ({
         {/* Play / Pause Toggle Button */}
         <button
           onClick={togglePlay}
-          className="w-11 h-11 rounded-2xl bg-amber-500 hover:bg-amber-400 text-neutral-950 flex items-center justify-center shrink-0 shadow-md active:scale-90 transition-transform"
+          className="w-11 h-11 rounded-2xl bg-amber-500 hover:bg-amber-400 text-stone-950 flex items-center justify-center shrink-0 shadow-md active:scale-90 transition-transform"
           aria-label={isPlaying ? 'Jeda Audio' : 'Putar Audio'}
         >
           {isPlaying ? <Pause className="w-5 h-5 fill-current" /> : <Play className="w-5 h-5 fill-current ml-0.5" />}
@@ -167,9 +174,9 @@ export const ChoukaiAudioPlayer: React.FC<ChoukaiAudioPlayerProps> = ({
             step="0.1"
             value={isNaN(progressPct) ? 0 : progressPct}
             onChange={handleSeek}
-            className="w-full h-2 bg-neutral-800 rounded-lg appearance-none cursor-pointer accent-amber-500"
+            className="w-full h-2 bg-surface-3 rounded-lg appearance-none cursor-pointer accent-amber-500"
           />
-          <div className="flex justify-between items-center text-xs font-mono text-neutral-400">
+          <div className="flex justify-between items-center text-xs font-mono text-appText-muted">
             <span>{formatTime(currentTime)}</span>
             <span>{formatTime(duration)}</span>
           </div>
@@ -178,7 +185,7 @@ export const ChoukaiAudioPlayer: React.FC<ChoukaiAudioPlayerProps> = ({
         {/* Replay Button */}
         <button
           onClick={handleReplay}
-          className="w-11 h-11 rounded-2xl bg-neutral-800 hover:bg-neutral-750 text-neutral-300 border border-neutral-700 flex items-center justify-center shrink-0 active:scale-90 transition-transform"
+          className="w-11 h-11 rounded-2xl bg-surface-2 hover:bg-surface-3 text-appText-bright border border-theme flex items-center justify-center shrink-0 active:scale-90 transition-transform"
           title="Putar Ulang dari Awal"
         >
           <RotateCcw className="w-4 h-4" />

@@ -6,6 +6,8 @@
 export type CrossTabEventType =
   | 'SRS_REVIEW_COMPLETED'
   | 'XP_UPDATED'
+  | 'STREAK_UPDATED'
+  | 'CAT_COMPLETED'
   | 'THEME_CHANGED'
   | 'LEVEL_CHANGED'
   | 'SYNC_TRIGGERED';
@@ -17,11 +19,26 @@ export interface CrossTabEvent {
   timestamp: number;
 }
 
-class BroadcastSyncBus {
+export class BroadcastSyncBus {
   private channel: BroadcastChannel | null = null;
-  private tabId: string = Math.random().toString(36).substring(2, 9);
+  private tabId: string;
   private listeners: Set<(event: CrossTabEvent) => void> = new Set();
   private isInitialized = false;
+
+  constructor(customTabId?: string) {
+    this.tabId = customTabId || Math.random().toString(36).substring(2, 9);
+  }
+
+  private handleStorageEvent = (storageEvent: StorageEvent): void => {
+    if (storageEvent.key === 'nn_cross_tab_message' && storageEvent.newValue) {
+      try {
+        const event = JSON.parse(storageEvent.newValue) as CrossTabEvent;
+        if (event && event.originTabId !== this.tabId) {
+          this.notifyListeners(event);
+        }
+      } catch {}
+    }
+  };
 
   /**
    * Initializes BroadcastChannel with window storage event fallback.
@@ -44,18 +61,36 @@ class BroadcastSyncBus {
     }
 
     // Fallback: storage event listener for cross-tab notifications
-    window.addEventListener('storage', (storageEvent) => {
-      if (storageEvent.key === 'nn_cross_tab_message' && storageEvent.newValue) {
-        try {
-          const event = JSON.parse(storageEvent.newValue) as CrossTabEvent;
-          if (event && event.originTabId !== this.tabId) {
-            this.notifyListeners(event);
-          }
-        } catch {}
-      }
-    });
+    window.addEventListener('storage', this.handleStorageEvent);
 
     this.isInitialized = true;
+  }
+
+  /**
+   * Cleans up channel listeners and destroys the sync bus instance.
+   */
+  public destroy(): void {
+    if (this.channel) {
+      try {
+        this.channel.close();
+      } catch {}
+      this.channel = null;
+    }
+
+    if (typeof window !== 'undefined') {
+      window.removeEventListener('storage', this.handleStorageEvent);
+    }
+
+    this.listeners.clear();
+    this.isInitialized = false;
+  }
+
+  public isReady(): boolean {
+    return this.isInitialized;
+  }
+
+  public getListenerCount(): number {
+    return this.listeners.size;
   }
 
   /**

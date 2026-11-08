@@ -3,12 +3,14 @@
 //  Allows learners to report unnatural sentences, typos, or wrong answers
 // ══════════════════════════════════════════════════════════════════
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { X, Flag, AlertTriangle, Send, CheckCircle2, Sparkles } from 'lucide-react';
 import { useReportStore, ReportCategory, ContentReport } from '../../lib/report/reportStore';
 import { useAppStore } from '../../store/useAppStore';
 import { scrubSensitiveData } from '../../lib/telemetry/errorReporter';
 import { useFocusTrap } from '../../hooks/useFocusTrap';
+import { useBodyScrollLock } from '../../hooks/useBodyScrollLock';
+import { IrasutoyaImage } from '../common/IrasutoyaImage';
 
 export interface ReportItemContext {
   itemId: string;
@@ -68,12 +70,26 @@ export const ReportIssueModal: React.FC<ReportIssueModalProps> = ({
   context,
 }) => {
   const containerRef = useFocusTrap<HTMLDivElement>(isOpen, onClose);
+  useBodyScrollLock(isOpen);
   const { submitReport, isSubmitting } = useReportStore();
   const { showToast } = useAppStore();
 
   const [category, setCategory] = useState<ReportCategory>('unnatural_japanese');
   const [description, setDescription] = useState('');
   const [suggestedCorrection, setSuggestedCorrection] = useState('');
+
+  // Close on Escape key
+  useEffect(() => {
+    if (!isOpen) return;
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') {
+        e.preventDefault();
+        onClose();
+      }
+    };
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [isOpen, onClose]);
 
   if (!isOpen || !context) return null;
 
@@ -103,21 +119,28 @@ export const ReportIssueModal: React.FC<ReportIssueModalProps> = ({
   return (
     <div
       onClick={onClose}
-      className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/75 backdrop-blur-sm animate-in fade-in duration-200"
+      className="fixed inset-0 z-50 flex items-end sm:items-center justify-center p-0 sm:p-4 bg-black/75 backdrop-blur-sm animate-in fade-in duration-200"
       role="dialog"
       aria-modal="true"
       aria-label="Laporkan Masalah Materi"
     >
       <div
         ref={containerRef}
-        className="w-full max-w-lg bg-surface border border-accent/25 rounded-3xl p-6 sm:p-7 shadow-2xl relative space-y-5 max-h-[90vh] overflow-y-auto"
+        className="w-full max-w-lg bg-surface border-t sm:border border-accent/25 rounded-t-3xl sm:rounded-3xl p-5 sm:p-7 shadow-2xl relative space-y-5 max-h-[88dvh] sm:max-h-[90vh] overflow-y-auto pb-[calc(1.5rem+env(safe-area-inset-bottom))] sm:pb-7"
         onClick={(e) => e.stopPropagation()}
       >
+        {/* Mobile Drag Handle */}
+        <div className="w-12 h-1.5 rounded-full bg-accent/25 mx-auto -mt-1 mb-2 sm:hidden shrink-0" />
         {/* Header */}
         <div className="flex items-center justify-between border-b border-accent/15 pb-4">
-          <div className="flex items-center gap-2.5">
-            <div className="w-9 h-9 rounded-xl bg-amber-500/15 border border-amber-500/30 flex items-center justify-center text-accent">
-              <Flag className="w-4 h-4" />
+          <div className="flex items-center gap-3">
+            <div className="w-11 h-11 rounded-2xl bg-amber-500/15 border border-amber-500/30 flex items-center justify-center shrink-0 overflow-hidden shadow-glow">
+              <IrasutoyaImage
+                assetId="daruma_recovery"
+                className="w-9 h-9 object-contain"
+                alt="Laporkan Masalah Materi"
+                animateFloat
+              />
             </div>
             <div>
               <h2 className="text-base font-bold text-appText-bright">Laporkan Masalah Materi</h2>
@@ -136,10 +159,10 @@ export const ReportIssueModal: React.FC<ReportIssueModalProps> = ({
         </div>
 
         {/* Item Context Preview Box */}
-        <div className="bg-surface-2/70 border border-accent/20 rounded-2xl p-4 space-y-1.5">
-          <div className="text-xs font-bold uppercase tracking-wider text-accent flex items-center gap-1.5">
+        <div className="card-interactive-lift bg-surface-2/70 border border-accent/20 rounded-2xl p-4 space-y-1.5">
+          <div className="text-xs font-bold uppercase tracking-wider text-amber-800 dark:text-amber-400 flex items-center gap-1.5">
             <span>Bagian yang Dilaporkan</span>
-            <span className="font-mono opacity-60">({context.itemType})</span>
+            <span className="font-mono opacity-75">({context.itemType})</span>
           </div>
           <div className="text-base sm:text-lg font-jp font-bold text-appText-bright" lang="ja">
             {context.originalJapanese}
@@ -166,9 +189,9 @@ export const ReportIssueModal: React.FC<ReportIssueModalProps> = ({
                     type="button"
                     key={cat.id}
                     onClick={() => setCategory(cat.id)}
-                    className={`p-3 rounded-xl border text-left transition-all flex items-start gap-2.5 ${
+                    className={`card-interactive-lift p-3 rounded-xl border text-left transition-all flex items-start gap-2.5 active:scale-95 ${
                       isSelected
-                        ? 'bg-amber-500/20 border-accent text-accent-hot shadow-sm'
+                        ? 'bg-amber-500/20 border-accent text-amber-900 dark:text-amber-200 font-bold shadow-sm'
                         : 'bg-surface-2 hover:bg-surface-3 border-accent/15 text-appText-muted hover:text-appText-bright'
                     }`}
                   >
@@ -186,7 +209,7 @@ export const ReportIssueModal: React.FC<ReportIssueModalProps> = ({
           {/* Description */}
           <div className="space-y-1.5">
             <label className="text-xs font-bold text-appText-bright block">
-              Penjelasan Kesalahan: <span className="text-red-400">*</span>
+              Penjelasan Kesalahan: <span className="text-rose-600 dark:text-rose-400 font-bold">*</span>
             </label>
             <textarea
               value={description}
@@ -212,20 +235,31 @@ export const ReportIssueModal: React.FC<ReportIssueModalProps> = ({
             />
           </div>
 
+          {/* Direct Email Support Fallback */}
+          <div className="pt-2 border-t border-accent/10 flex items-center justify-between text-[11px] text-appText-muted">
+            <span>Butuh bantuan lebih lanjut?</span>
+            <a
+              href={`mailto:nuggetnihongo@gmail.com?subject=Laporan%20Item%20${encodeURIComponent(context.itemId)}&body=Halo%20Tim%20Nugget%20Nihongo,%0A%0AItem:%20${encodeURIComponent(context.originalJapanese)}%0AJenis:%20${encodeURIComponent(context.itemType)}%0A%0APesan:%20`}
+              className="text-accent font-bold hover:underline flex items-center gap-1"
+            >
+              Email ke nuggetnihongo@gmail.com
+            </a>
+          </div>
+
           {/* Actions */}
           <div className="pt-2 flex items-center justify-end gap-3">
             <button
               type="button"
               onClick={onClose}
               disabled={isSubmitting}
-              className="px-4 py-2.5 rounded-xl bg-surface-2 hover:bg-surface-3 text-appText-muted hover:text-appText-bright text-xs font-bold transition-colors"
+              className="px-4 py-2.5 min-h-[44px] rounded-xl bg-surface-2 hover:bg-surface-3 text-appText-muted hover:text-appText-bright text-xs font-bold transition-colors active:scale-95"
             >
               Batal
             </button>
             <button
               type="submit"
               disabled={isSubmitting}
-              className="px-5 py-2.5 rounded-xl bg-accent text-bg hover:bg-accent-hot text-xs font-extrabold flex items-center gap-2 transition-all shadow-glow active:scale-95 disabled:opacity-50"
+              className="px-5 py-2.5 min-h-[44px] rounded-xl bg-accent text-bg hover:bg-accent-hot text-xs font-extrabold flex items-center gap-2 transition-all shadow-glow active:scale-95 disabled:opacity-50"
             >
               {isSubmitting ? (
                 <span>Mengirim...</span>

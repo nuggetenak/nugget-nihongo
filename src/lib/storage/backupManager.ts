@@ -5,8 +5,8 @@
 //  optional Web Crypto AES-GCM 256-bit passphrase encryption (Tickets T-202, T-203)
 // ══════════════════════════════════════════════════════════════════
 
-import { APP_VERSION } from '../../config/version';
-import { CURRENT_SCHEMA_VERSION } from '../persistence/migrationRunner';
+import { APP_VERSION } from '../../config/version.ts';
+import { CURRENT_SCHEMA_VERSION } from '../persistence/migrationRunner.ts';
 
 export interface BackupMetadata {
   appVersion: string;

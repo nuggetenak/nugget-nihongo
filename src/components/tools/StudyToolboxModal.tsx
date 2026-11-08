@@ -21,6 +21,7 @@ import {
   Briefcase,
   Hash,
   Music,
+  Headphones,
 } from 'lucide-react';
 import { useFocusTrap } from '../../hooks/useFocusTrap';
 
@@ -35,6 +36,7 @@ interface StudyToolboxModalProps {
   onOpenKeigo?: () => void;
   onOpenCounters?: () => void;
   onOpenPitch?: () => void;
+  onOpenHvpt?: () => void;
   onOpenFeatureGuide: () => void;
   onOpenShortcuts: () => void;
 }
@@ -77,6 +79,7 @@ export const StudyToolboxModal: React.FC<StudyToolboxModalProps> = ({
   onOpenKeigo,
   onOpenCounters,
   onOpenPitch,
+  onOpenHvpt,
   onOpenFeatureGuide,
   onOpenShortcuts,
 }) => {
@@ -177,6 +180,19 @@ export const StudyToolboxModal: React.FC<StudyToolboxModalProps> = ({
       },
     },
     {
+      id: 'hvpt',
+      category: 'phonology',
+      name: 'Latihan Akustik HVPT (4 Penutur)',
+      nameJp: '音響弁別トレーニング',
+      desc: 'Latih telinga membedakan Sokuon, Chouon, dan R/L lintas 4 variasi register penutur asli Jepang (Logan 1991).',
+      icon: <Headphones className="w-5 h-5 text-emerald-400" />,
+      badge: '4 Penutur Asli',
+      action: () => {
+        onClose();
+        if (onOpenHvpt) onOpenHvpt();
+      },
+    },
+    {
       id: 'kotowaza',
       category: 'vocab',
       name: 'Galeri 366+ Peribahasa (ことわざ)',
@@ -223,7 +239,7 @@ export const StudyToolboxModal: React.FC<StudyToolboxModalProps> = ({
   const modalContent = (
     <div
       onClick={onClose}
-      className="fixed inset-0 z-[9999] flex items-end sm:items-center justify-center p-0 sm:p-4 bg-black/80 backdrop-blur-sm animate-in fade-in duration-200"
+      className="fixed inset-0 z-50 flex items-end sm:items-center justify-center p-0 sm:p-4 bg-black/80 backdrop-blur-sm animate-in fade-in duration-200"
       role="dialog"
       aria-modal="true"
       aria-label="Kotak Peralatan Belajar"

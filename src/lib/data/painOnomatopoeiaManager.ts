@@ -4,8 +4,8 @@
 //  42 Canonical Items across 7 Physiological Clusters for Eldercare & SSW
 // ══════════════════════════════════════════════════════════════════
 
-import { PainOnomatopoeiaItem, PhysiologicalCluster, ClinicalEmergencyLevel } from '../../types/onomatopoeia';
-import { QuizQuestionItem } from '../../types/quiz';
+import type { PainOnomatopoeiaItem, PhysiologicalCluster, ClinicalEmergencyLevel } from '../../types/onomatopoeia.ts';
+import type { QuizQuestionItem } from '../../types/quiz.ts';
 
 export const CANONICAL_PAIN_ONOMATOPOEIA: PainOnomatopoeiaItem[] = [
   // ── KLASTER 1: HEADACHE, CRANIAL & NEUROLOGICAL (頭部・神経痛) ──

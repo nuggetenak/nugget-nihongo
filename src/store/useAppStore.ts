@@ -15,6 +15,7 @@ import {
   sanitizePlacementHistory,
 } from '../lib/storage/storageSanitizer';
 import { useModalStore } from './useModalStore';
+import { broadcastSync } from '../lib/sync/broadcastSync';
 
 export interface ToastMessage {
   id: string;
@@ -407,8 +408,18 @@ export const useAppStore = create<AppState>((set, get) => ({
     }
   },
 
-  selectedLevel: 'n5',
-  setSelectedLevel: (selectedLevel) => set({ selectedLevel }),
+  selectedLevel: typeof window !== 'undefined'
+    ? ((localStorage.getItem('nn_selected_level') as JLPTLevel) ||
+       (['n5', 'n4', 'n3', 'n2', 'n1'].includes(localStorage.getItem('nn_active_curriculum_track') || '')
+         ? (localStorage.getItem('nn_active_curriculum_track') as JLPTLevel)
+         : 'n5'))
+    : 'n5',
+  setSelectedLevel: (selectedLevel) => {
+    set({ selectedLevel });
+    if (typeof window !== 'undefined') {
+      try { localStorage.setItem('nn_selected_level', selectedLevel); } catch {}
+    }
+  },
   searchQuery: '',
   setSearchQuery: (searchQuery) => set({ searchQuery }),
 
@@ -461,7 +472,10 @@ export const useAppStore = create<AppState>((set, get) => ({
     const newXp = get().xp + safeAmount;
     set({ xp: newXp });
     if (typeof window !== 'undefined') {
-      try { localStorage.setItem('nn_xp', JSON.stringify(newXp)); } catch {}
+      try {
+        localStorage.setItem('nn_xp', JSON.stringify(newXp));
+        broadcastSync.broadcast('XP_UPDATED', { xp: newXp });
+      } catch {}
     }
   },
 
@@ -478,6 +492,7 @@ export const useAppStore = create<AppState>((set, get) => ({
             lastTimestamp: Date.now(),
           })
         );
+        broadcastSync.broadcast('STREAK_UPDATED', { streak: newStreak });
       } catch {}
     }
   },
@@ -549,6 +564,7 @@ export const useAppStore = create<AppState>((set, get) => ({
           'nn_streak',
           JSON.stringify({ count: nextStreak, lastDate: today, lastTimestamp: now })
         );
+        broadcastSync.broadcast('STREAK_UPDATED', { streak: nextStreak });
       } catch {}
     }
 
@@ -593,14 +609,14 @@ export const useAppStore = create<AppState>((set, get) => ({
       } catch {}
     }
   },
-  showFurigana: true,
+  showFurigana: typeof window !== 'undefined' ? localStorage.getItem('nn_furigana') !== '0' : true,
   setShowFurigana: (showFurigana) => {
     set({ showFurigana });
     if (typeof window !== 'undefined') {
       try { localStorage.setItem('nn_furigana', showFurigana ? '1' : '0'); } catch {}
     }
   },
-  showRomaji: false,
+  showRomaji: typeof window !== 'undefined' ? localStorage.getItem('nn_romaji') === '1' : false,
   setShowRomaji: (showRomaji) => {
     set({ showRomaji });
     if (typeof window !== 'undefined') {

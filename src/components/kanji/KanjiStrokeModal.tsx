@@ -20,6 +20,7 @@ import {
   Award,
   Zap,
   BookOpen,
+  Share2,
 } from 'lucide-react';
 import { MasterKanjiItem, KanjiStrokePaths, getKanjiStrokeData } from '../../lib/data/kanjiManager';
 import { voiceManager } from '../../lib/audio/voiceManager';
@@ -30,68 +31,11 @@ import { useGardenStore } from '../../lib/garden/gardenStore';
 import { useGamificationStore } from '../../lib/gamification/gamificationStore';
 import { kanjiMasteryStore } from '../../lib/kanji/kanjiMasteryStore';
 import { audioService } from '../../lib/audio/audioService';
-
-// Ticket T-12: Offscreen SVG measurement singleton & LRU memoization to eliminate DOM layout thrashing
-const pathLengthCache = new Map<string, number>();
-const pathPointsCache = new Map<string, Array<{ x: number; y: number }>>();
-
-let measureSvgSingleton: SVGSVGElement | null = null;
-let offscreenPath: SVGPathElement | null = null;
-
-function getOffscreenMeasureElements(): { svg: SVGSVGElement; path: SVGPathElement } | null {
-  if (typeof document === 'undefined') return null;
-  if (!measureSvgSingleton || !offscreenPath) {
-    measureSvgSingleton = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
-    measureSvgSingleton.setAttribute('viewBox', '0 0 109 109');
-    measureSvgSingleton.setAttribute('width', '109');
-    measureSvgSingleton.setAttribute('height', '109');
-    offscreenPath = document.createElementNS('http://www.w3.org/2000/svg', 'path');
-    measureSvgSingleton.appendChild(offscreenPath);
-  }
-  return { svg: measureSvgSingleton, path: offscreenPath };
-}
-
-// Measure physical stroke length with 0 DOM layout thrashing
-function getPathLength(d: string): number {
-  if (!d) return 100;
-  if (pathLengthCache.has(d)) return pathLengthCache.get(d)!;
-  try {
-    const measurer = getOffscreenMeasureElements();
-    if (!measurer) return 100;
-    measurer.path.setAttribute('d', d);
-    const len = measurer.path.getTotalLength();
-    const result = Math.max(8, Math.ceil(len));
-    pathLengthCache.set(d, result);
-    return result;
-  } catch {
-    return 100;
-  }
-}
-
-// Robust, cross-browser path geometry sampling without per-stroke layout thrashing
-function samplePointsFromPath(d: string, samples = 28): Array<{ x: number; y: number }> {
-  if (!d) return [];
-  const cacheKey = `${d}__${samples}`;
-  if (pathPointsCache.has(cacheKey)) return pathPointsCache.get(cacheKey)!;
-  try {
-    const measurer = getOffscreenMeasureElements();
-    if (!measurer) return [];
-    measurer.path.setAttribute('d', d);
-    const totalLen = measurer.path.getTotalLength();
-    const points: Array<{ x: number; y: number }> = [];
-    if (totalLen > 0) {
-      for (let i = 0; i <= samples; i++) {
-        const pt = measurer.path.getPointAtLength((i / samples) * totalLen);
-        points.push({ x: pt.x, y: pt.y });
-      }
-    }
-    pathPointsCache.set(cacheKey, points);
-    return points;
-  } catch (err) {
-    console.warn('Path sampling fallback:', err);
-    return [];
-  }
-}
+import { IrasutoyaImage } from '../common/IrasutoyaImage';
+import { getPathLength, samplePointsFromPath } from '../../lib/kanji/kanjiVgParser';
+import { zzfxKanjiAudio } from '../../lib/audio/zzfxKanjiAudio';
+import { validateStrokeWithFrechet } from '../../lib/kanji/strokeValidator';
+import { shareKanjiCard } from '../../lib/social/shareCardGenerator.ts';
 
 interface KanjiStrokeModalProps {
   kanji: MasterKanjiItem | null;
@@ -122,6 +66,8 @@ export const KanjiStrokeModal: React.FC<KanjiStrokeModalProps> = ({
   const [isPracticeComplete, setIsPracticeComplete] = useState<boolean>(false);
   const [practiceHint, setPracticeHint] = useState<string>('');
   const [wobble, setWobble] = useState<boolean>(false);
+  const [strokeScores, setStrokeScores] = useState<number[]>([]);
+  const [isSharingCard, setIsSharingCard] = useState<boolean>(false);
 
   // Canvas drawing ref
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
@@ -185,6 +131,14 @@ export const KanjiStrokeModal: React.FC<KanjiStrokeModalProps> = ({
       isMounted = false;
     };
   }, [kanji, isOpen]);
+
+  // Cleanup audio and animation playback on unmount
+  useEffect(() => {
+    return () => {
+      audioService.stop();
+      setIsPlaying(false);
+    };
+  }, []);
 
   const totalStrokes = strokeData ? strokeData.paths.length : (kanji?.strokes || 1);
 
@@ -434,14 +388,36 @@ export const KanjiStrokeModal: React.FC<KanjiStrokeModalProps> = ({
   const handleResetPractice = () => {
     setPracticeStep(0);
     setIsPracticeComplete(false);
+    setStrokeScores([]);
     clearCanvas();
     setPracticeHint('Mulai dari goresan pertama pada titik emas pemandu.');
+  };
+
+  const handleShareCard = async () => {
+    if (!kanji || isSharingCard) return;
+    setIsSharingCard(true);
+    try {
+      const avgScore = Math.round(
+        strokeScores.reduce((a, b) => a + b, 0) / Math.max(1, strokeScores.length)
+      ) || 100;
+      const meaning = kanji.meanings?.id?.[0] || kanji.meanings?.en?.[0] || 'Kanji Mastery';
+      await shareKanjiCard({
+        character: kanji.character,
+        meaning,
+        score: avgScore,
+        jlptLevel: kanji.level?.toUpperCase() || 'N5',
+        strokesCount: strokeData?.paths?.length || kanji.strokes || 4,
+      });
+    } finally {
+      setIsSharingCard(false);
+    }
   };
 
   const handleUndoPracticeStroke = () => {
     if (practiceStep > 0) {
       setPracticeStep((prev) => prev - 1);
       setIsPracticeComplete(false);
+      setStrokeScores((prev) => prev.slice(0, -1));
       clearCanvas();
       setPracticeHint(`Kembali ke goresan ke-${practiceStep}.`);
     }
@@ -494,6 +470,7 @@ export const KanjiStrokeModal: React.FC<KanjiStrokeModalProps> = ({
     isDrawingRef.current = true;
     furthestReachedIdxRef.current = 0;
     currentPathUserPoints.current = [{ x: svgX, y: svgY }];
+    zzfxKanjiAudio.playBrushInk();
 
     // Draw initial ink dab on canvas
     const ctx = canvas.getContext('2d');
@@ -540,7 +517,7 @@ export const KanjiStrokeModal: React.FC<KanjiStrokeModalProps> = ({
       isDrawingRef.current = false;
       currentPathUserPoints.current = [];
       clearCanvas();
-      playErrorSfx();
+      zzfxKanjiAudio.playStrokeError();
       setWobble(true);
       setTimeout(() => setWobble(false), 450);
       setPracticeHint(`Goresan ke-${practiceStep + 1} melenceng dari jalur. Yuk ulangi goresan ini dengan tenang! ✨`);
@@ -588,30 +565,36 @@ export const KanjiStrokeModal: React.FC<KanjiStrokeModalProps> = ({
     const samples = samplePointsRef.current;
     if (samples.length === 0) return;
 
-    const progressRatio = furthestReachedIdxRef.current / (samples.length - 1);
-    const lastUserPt = currentPathUserPoints.current[currentPathUserPoints.current.length - 1];
-    const endPt = samples[samples.length - 1];
-    const distToEnd = lastUserPt ? Math.hypot(lastUserPt.x - endPt.x, lastUserPt.y - endPt.y) : Infinity;
+    const userPts = currentPathUserPoints.current;
+    if (userPts.length < 2) {
+      clearCanvas();
+      currentPathUserPoints.current = [];
+      return;
+    }
 
-    // Stroke successful if >= 75% completed AND ended near endpoint (or completed > 88% overall)
-    const isSuccess = (progressRatio >= 0.75 && distToEnd <= 18) || progressRatio >= 0.88;
+    // Evaluate stroke using Discrete Fréchet Distance & Directional Vector Alignment
+    const validation = validateStrokeWithFrechet(userPts, samples, { minPassScore: 80 });
 
-    if (isSuccess) {
-      playBrushSfx();
+    if (validation.isValid) {
+      zzfxKanjiAudio.playStrokeCorrect(practiceStep, totalStrokes);
       clearCanvas(); // Vector overlay takes over with perfect gold SVG!
 
       const nextStep = practiceStep + 1;
+      const updatedScores = [...strokeScores, validation.score];
+      setStrokeScores(updatedScores);
+
       if (nextStep >= totalStrokes) {
         setIsPracticeComplete(true);
         setPracticeStep(totalStrokes);
-        playSuccessSfx();
-        playFanfareSfx();
-        setPracticeHint('Sempurna! Kamu berhasil menguasai seluruh urutan goresan! 🌸');
+        zzfxKanjiAudio.playKanjiCompleteFanfare();
+
+        const avgScore = Math.round(updatedScores.reduce((a, b) => a + b, 0) / totalStrokes) || 100;
+        setPracticeHint(`Sempurna! Akurasi ${avgScore}% — Kamu berhasil menguasai seluruh urutan goresan! 🌸`);
 
         // Pronunciation & Mastery tracking (Ticket T-136, T-137)
         if (kanji) {
           audioService.speak(kanji.character);
-          kanjiMasteryStore.recordPractice(kanji.character, 100, true);
+          kanjiMasteryStore.recordPractice(kanji.character, avgScore, true);
         }
 
         // Gamification & Garden integration (Ticket T-64)
@@ -649,18 +632,27 @@ export const KanjiStrokeModal: React.FC<KanjiStrokeModalProps> = ({
         }
       } else {
         setPracticeStep(nextStep);
-        playSuccessSfx();
-        setPracticeHint(`Hebat! Lanjut ke goresan ke-${nextStep + 1}.`);
+        setPracticeHint(`Hebat! Akurasi ${validation.score}% — Lanjut ke goresan ke-${nextStep + 1}.`);
         if (typeof navigator !== 'undefined' && navigator.vibrate) {
           navigator.vibrate(40);
         }
       }
     } else {
-      // Incomplete stroke
+      // Incomplete or inaccurate stroke
       clearCanvas();
-      setPracticeHint('Goresan belum tuntas sampai titik akhir. Tarik garis hingga lingkaran target!');
+      zzfxKanjiAudio.playStrokeError();
       setWobble(true);
       setTimeout(() => setWobble(false), 300);
+
+      if (validation.feedback === 'wrong_direction') {
+        setPracticeHint('Arah goresan terbalik! Tarik garis searah kaidah kaligrafi.');
+      } else if (validation.feedback === 'too_far') {
+        setPracticeHint(`Mulai tepat dari lingkaran kuning pemandu goresan ke-${practiceStep + 1}.`);
+      } else if (validation.feedback === 'too_short') {
+        setPracticeHint('Goresan belum tuntas sampai titik akhir. Tarik garis hingga lingkaran target!');
+      } else {
+        setPracticeHint(`Bentuk goresan agak melenceng (Akurasi: ${validation.score}%). Yuk ulangi dengan tenang! ✨`);
+      }
     }
 
     currentPathUserPoints.current = [];
@@ -674,7 +666,7 @@ export const KanjiStrokeModal: React.FC<KanjiStrokeModalProps> = ({
 
   const modalContent = (
     <div
-      className="fixed inset-0 z-[9999] flex items-end sm:items-center justify-center bg-black/80 backdrop-blur-md p-0 sm:p-4 animate-fade-in"
+      className="fixed inset-0 z-50 flex items-end sm:items-center justify-center bg-black/80 backdrop-blur-md p-0 sm:p-4 animate-fade-in"
       role="dialog"
       aria-modal="true"
       aria-label={`Detail Kanji ${kanji.character}`}
@@ -935,16 +927,38 @@ export const KanjiStrokeModal: React.FC<KanjiStrokeModalProps> = ({
                     <span className="text-base font-black text-accent">
                       Latihan Tuntas!
                     </span>
+                    <div className="flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-500/15 border border-amber-500/30 text-accent font-bold text-xs mt-1.5 mb-1">
+                      <Award size={14} />
+                      <span>
+                        Skor Akurasi:{' '}
+                        {Math.round(
+                          strokeScores.reduce((a, b) => a + b, 0) / Math.max(1, strokeScores.length)
+                        ) || 100}
+                        %
+                      </span>
+                    </div>
                     <p className="text-xs text-appText-muted mt-1 max-w-[200px]">
                       Kamu berhasil menulis seluruh goresan kanji 「{kanji.character}」 dengan urutan yang tepat!
                     </p>
-                    <button
-                      onClick={handleResetPractice}
-                      className="mt-3 px-4 py-2 rounded-xl bg-amber-500 hover:bg-amber-600 text-stone-950 font-black text-xs active:scale-95 transition-all flex items-center gap-1.5 shadow-sm"
-                    >
-                      <RotateCcw size={14} />
-                      <span>Ulangi Latihan</span>
-                    </button>
+                    <div className="mt-3 flex items-center gap-2">
+                      <button
+                        onClick={handleResetPractice}
+                        className="px-3.5 py-2 min-h-[40px] rounded-xl bg-surface-2 hover:bg-surface-3 border border-accent/20 text-appText-bright font-bold text-xs active:scale-95 transition-all flex items-center gap-1.5 shadow-sm"
+                      >
+                        <RotateCcw size={14} />
+                        <span>Ulangi</span>
+                      </button>
+
+                      <button
+                        onClick={handleShareCard}
+                        disabled={isSharingCard}
+                        className="px-3.5 py-2 min-h-[40px] rounded-xl bg-amber-500 hover:bg-amber-600 text-stone-950 font-black text-xs active:scale-95 transition-all flex items-center gap-1.5 shadow-sm disabled:opacity-50"
+                        title="Bagikan Kartu Belajar Kanji Resmi ke Media Sosial"
+                      >
+                        <Share2 size={14} />
+                        <span>{isSharingCard ? 'Membuat...' : 'Bagikan Kartu'}</span>
+                      </button>
+                    </div>
                   </div>
                 )}
               </div>
@@ -1118,7 +1132,7 @@ export const KanjiStrokeModal: React.FC<KanjiStrokeModalProps> = ({
                         className={`text-xs font-extrabold uppercase px-2 py-0.5 rounded-full border ${
                           grp.type === 'onyomi'
                             ? 'bg-amber-500/15 border-amber-500/30 text-accent'
-                            : 'bg-emerald-500/15 border-emerald-500/30 text-emerald-400'
+                            : 'bg-emerald-500/15 border-emerald-500/30 text-emerald-800 dark:text-emerald-400 font-bold'
                         }`}
                       >
                         {grp.type === 'onyomi' ? 'Onyomi (音)' : 'Kunyomi (訓)'}
@@ -1294,7 +1308,7 @@ export const KanjiStrokeModal: React.FC<KanjiStrokeModalProps> = ({
 
             {kanji.mnemonic?.hint_id && (
               <div className="pt-2 border-t border-theme/60">
-                <div className="flex items-center gap-1.5 text-xs font-bold text-amber-500 mb-1">
+                <div className="flex items-center gap-1.5 text-xs font-bold text-amber-800 dark:text-amber-400 font-bold mb-1">
                   <Sparkles size={14} />
                   <span>Jembatan Keledai (Mnemonic)</span>
                 </div>
@@ -1353,9 +1367,9 @@ export const KanjiStrokeModal: React.FC<KanjiStrokeModalProps> = ({
               }
               onClose();
             }}
-            className="flex-1 py-2.5 px-4 rounded-xl flex items-center justify-center gap-2 text-xs sm:text-sm font-bold bg-amber-500/15 text-accent border border-amber-500/25 hover:bg-amber-500/25 transition-all active:scale-95"
+            className="flex-1 min-h-[44px] py-2.5 px-4 rounded-xl flex items-center justify-center gap-2 text-xs sm:text-sm font-bold bg-amber-500/15 text-accent border border-amber-500/25 hover:bg-amber-500/25 transition-all active:scale-95"
           >
-            <MessageSquare size={16} />
+            <IrasutoyaImage assetId="sensei_teaching" className="w-5 h-5" containerClassName="w-5 h-5 shrink-0" animateFloat />
             <span>🍵 Tanya Sensei tentang Kanji 「{kanji.character}」</span>
           </button>
         </div>

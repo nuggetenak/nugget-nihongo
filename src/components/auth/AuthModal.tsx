@@ -78,7 +78,10 @@ export const AuthModal: React.FC<AuthModalProps> = ({ isOpen, onClose }) => {
   };
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-4 bg-black/80 backdrop-blur-sm animate-fade-in">
+    <div
+      onClick={handleClose}
+      className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-4 bg-black/80 backdrop-blur-sm animate-fade-in"
+    >
       <div
         role="dialog"
         aria-modal="true"
@@ -148,8 +151,8 @@ export const AuthModal: React.FC<AuthModalProps> = ({ isOpen, onClose }) => {
 
         {/* Error / Notice Banner */}
         {errorMessage && (
-          <div role="alert" aria-live="assertive" className="p-3.5 rounded-xl bg-amber-500/10 border border-amber-500/30 flex items-start gap-2.5 text-xs text-amber-300 animate-in fade-in">
-            <Info className="w-4 h-4 shrink-0 text-amber-400 mt-0.5" />
+          <div role="alert" aria-live="assertive" className="p-3.5 rounded-xl bg-amber-500/10 border border-amber-500/30 flex items-start gap-2.5 text-xs text-amber-800 dark:text-amber-300 animate-in fade-in">
+            <Info className="w-4 h-4 shrink-0 text-amber-500 dark:text-amber-400 mt-0.5" />
             <div className="leading-relaxed">{errorMessage}</div>
           </div>
         )}

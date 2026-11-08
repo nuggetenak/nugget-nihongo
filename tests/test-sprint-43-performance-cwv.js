@@ -90,7 +90,10 @@ check('index.html establishes font preconnects and image preload for icon-192.pn
 
 check('HomePage.tsx hero streak and target render synchronously from cached store state', () => {
   const home = fs.readFileSync(path.join(ROOT, 'src/pages/HomePage.tsx'), 'utf8');
-  assert(home.includes('Streak {streak} Hari Aktif'), 'Hero must render cached streak synchronously');
+  assert(
+    home.includes('Streak ${streak} Hari Aktif') || home.includes('Streak {streak} Hari Aktif'),
+    'Hero must render cached streak synchronously'
+  );
   assert(home.includes('dueCount > 0'), 'Due count evaluated synchronously in useMemo');
 });
 

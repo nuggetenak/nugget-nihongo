@@ -129,7 +129,12 @@ runTest('ChoukaiAudioPlayer component provides multi-speed chips and responsive 
   const playerPath = path.join(__dirname, '../src/components/audio/ChoukaiAudioPlayer.tsx');
   assert(fs.existsSync(playerPath), 'ChoukaiAudioPlayer.tsx must exist');
   const content = fs.readFileSync(playerPath, 'utf8');
-  assert(content.includes('0.8') && content.includes('1.0') && content.includes('1.2'), 'Must support 0.8, 1.0, 1.2 playback speeds');
+  assert(
+    (content.includes('0.8') || content.includes('0.75')) &&
+    content.includes('1.0') &&
+    (content.includes('1.2') || content.includes('1.25')),
+    'Must support multi-speed playback (e.g. 0.75x/0.8x, 1.0x, 1.2x/1.25x)'
+  );
   assert(content.includes('handleSpeedChange'), 'Must implement speed change handler');
   assert(content.includes('handleSeek'), 'Must implement seek scrubber');
 });

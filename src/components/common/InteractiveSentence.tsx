@@ -5,13 +5,15 @@
 // ══════════════════════════════════════════════════════════════════
 
 import React, { useState, useRef, useEffect } from 'react';
-import { Volume2, X, Sparkles, BookOpen, ExternalLink, RotateCcw } from 'lucide-react';
+import { Volume2, X, Sparkles, BookOpen, RotateCcw } from 'lucide-react';
 import { tokenizeJapanese, JapaneseToken } from '../../lib/japanese/tokenizer';
 import { offlineDictionary, WordLookupResult } from '../../lib/japanese/offlineDictionary';
 import { deinflectWord, DeinflectionCandidate } from '../../lib/grammar/deinflector';
 import { speakJapanese } from '../../lib/audio/speechEngine';
 import { RubyText } from '../ui/RubyText';
 import { ConjugationModal } from '../grammar/ConjugationModal';
+import { IrasutoyaImage } from './IrasutoyaImage';
+import { useBodyScrollLock } from '../../hooks/useBodyScrollLock';
 
 export interface InteractiveSentenceProps {
   sentence: string;
@@ -45,22 +47,16 @@ export const InteractiveSentence: React.FC<InteractiveSentenceProps> = ({
   const [lookupResult, setLookupResult] = useState<WordLookupResult | null>(null);
   const [deinflection, setDeinflection] = useState<DeinflectionCandidate | null>(null);
   const [internalModalVerb, setInternalModalVerb] = useState<string | null>(null);
-  const [popoverPos, setPopoverPos] = useState<{ x: number; y: number } | null>(null);
   const containerRef = useRef<HTMLDivElement>(null);
+  useBodyScrollLock(!!selectedToken);
 
   if (!sentence) return null;
 
   const tokens = tokenizeJapanese(sentence);
 
-  const handleTokenClick = (e: React.MouseEvent<HTMLSpanElement>, token: JapaneseToken) => {
+  const handleTokenClick = (_e: React.MouseEvent<HTMLSpanElement>, token: JapaneseToken) => {
     // Ignore pure punctuation tokens
     if (token.pos === 'punctuation') return;
-
-    const rect = e.currentTarget.getBoundingClientRect();
-    setPopoverPos({
-      x: Math.max(16, Math.min(rect.left + rect.width / 2, window.innerWidth - 16)),
-      y: rect.bottom + 8,
-    });
 
     setSelectedToken(token);
 
@@ -81,7 +77,6 @@ export const InteractiveSentence: React.FC<InteractiveSentenceProps> = ({
     setSelectedToken(null);
     setLookupResult(null);
     setDeinflection(null);
-    setPopoverPos(null);
   };
 
   const handleOpenConjugation = (lemma: string) => {
@@ -124,7 +119,7 @@ export const InteractiveSentence: React.FC<InteractiveSentenceProps> = ({
               type="button"
               key={idx}
               onClick={(e) => handleTokenClick(e, token)}
-              className={`inline-flex items-baseline px-1 py-0.5 rounded-lg text-left transition-all active:scale-95 cursor-pointer select-none border ${
+              className={`relative inline-flex items-baseline px-1 py-0.5 rounded-lg text-left transition-all active:scale-95 cursor-pointer select-none border before:absolute before:-inset-1 before:content-[''] focus-visible:ring-2 focus-visible:ring-accent focus-visible:outline-hidden ${
                 isSelected
                   ? 'bg-amber-500/20 border-accent text-accent-hot shadow-sm font-bold'
                   : 'border-transparent hover:border-accent/30 hover:bg-surface-2 text-appText-bright'
@@ -143,7 +138,7 @@ export const InteractiveSentence: React.FC<InteractiveSentenceProps> = ({
 
       {/* Optional Indonesian sentence translation */}
       {translation && (
-        <div className="mt-2 text-xs sm:text-sm text-appText-muted italic leading-normal">
+        <div className="mt-2 text-xs sm:text-sm text-appText-muted dark:text-stone-300 italic leading-normal">
           {translation}
         </div>
       )}
@@ -159,26 +154,36 @@ export const InteractiveSentence: React.FC<InteractiveSentenceProps> = ({
         >
           <div
             onClick={(e) => e.stopPropagation()}
-            className="w-full max-w-md bg-surface border-t-2 sm:border-2 border-accent/30 rounded-t-3xl sm:rounded-2xl p-5 sm:p-6 space-y-4 shadow-2xl relative max-h-[85dvh] overflow-y-auto animate-in slide-in-from-bottom-6 sm:zoom-in-95 duration-200"
+            className="w-full max-w-md bg-surface border-t-2 sm:border-2 border-accent/30 rounded-t-3xl sm:rounded-2xl p-5 sm:p-6 space-y-4 shadow-2xl relative max-h-[85dvh] overflow-y-auto animate-in slide-in-from-bottom-6 sm:zoom-in-95 duration-200 pb-[calc(1.5rem+env(safe-area-inset-bottom))]"
           >
             {/* Mobile Drag Handle */}
             <div className="w-12 h-1.5 rounded-full bg-accent/25 mx-auto -mt-1 mb-2 sm:hidden shrink-0" />
 
             {/* Header: Token Surface & Voice Playback */}
             <div className="flex items-start justify-between gap-3 border-b border-accent/15 pb-3">
-              <div className="flex items-center gap-3">
-                <div className="text-2xl sm:text-3xl font-jp font-bold text-accent-hot">
-                  {selectedToken.surface}
+              <div className="flex items-center gap-3 min-w-0">
+                <div className="w-12 h-12 rounded-2xl bg-amber-500/15 border border-amber-500/30 flex items-center justify-center shrink-0 overflow-hidden shadow-glow">
+                  <IrasutoyaImage
+                    assetId="senpai_studying"
+                    className="w-10 h-10 object-contain"
+                    alt="Rincian Morfologi"
+                    animateFloat
+                  />
                 </div>
-                <div>
-                  {selectedToken.reading && (
-                    <div className="text-xs font-jp text-appText-muted">
-                      【{selectedToken.reading}】
-                    </div>
-                  )}
-                  <span className="inline-block text-xs font-semibold px-2 py-0.5 rounded-md bg-amber-500/15 text-accent border border-accent/25 mt-0.5">
-                    {POS_LABELS[selectedToken.pos || 'other']}
-                  </span>
+                <div className="min-w-0">
+                  <div className="text-2xl sm:text-3xl font-jp font-bold text-accent-hot truncate">
+                    {selectedToken.surface}
+                  </div>
+                  <div className="flex flex-wrap items-center gap-1.5 mt-0.5">
+                    {selectedToken.reading && (
+                      <span className="text-xs font-jp text-appText-muted font-medium">
+                        【{selectedToken.reading}】
+                      </span>
+                    )}
+                    <span className="inline-block text-xs font-extrabold px-2 py-0.5 rounded-md bg-amber-500/15 text-amber-900 dark:text-amber-300 border border-amber-500/30">
+                      {POS_LABELS[selectedToken.pos || 'other']}
+                    </span>
+                  </div>
                 </div>
               </div>
 
@@ -186,7 +191,7 @@ export const InteractiveSentence: React.FC<InteractiveSentenceProps> = ({
                 <button
                   type="button"
                   onClick={() => speakJapanese(selectedToken.surface)}
-                  className="w-9 h-9 rounded-xl bg-surface-2 hover:bg-amber-500/20 text-accent flex items-center justify-center border border-accent/20 transition-all active:scale-95 shadow-sm"
+                  className="w-10 h-10 rounded-xl bg-surface-2 hover:bg-amber-500/20 text-accent flex items-center justify-center border border-accent/20 transition-all active:scale-95 shadow-sm min-w-[40px] min-h-[40px]"
                   title="Dengarkan pelafalan"
                   aria-label={`Dengarkan ${selectedToken.surface}`}
                 >
@@ -195,7 +200,7 @@ export const InteractiveSentence: React.FC<InteractiveSentenceProps> = ({
                 <button
                   type="button"
                   onClick={handleClosePopover}
-                  className="w-9 h-9 rounded-xl bg-surface-2 hover:bg-surface-3 text-appText-muted hover:text-appText-bright flex items-center justify-center transition-all active:scale-95"
+                  className="w-10 h-10 rounded-xl bg-surface-2 hover:bg-surface-3 text-appText-muted hover:text-appText-bright flex items-center justify-center transition-all active:scale-95 min-w-[40px] min-h-[40px]"
                   title="Tutup popover"
                   aria-label="Tutup"
                 >
@@ -206,9 +211,9 @@ export const InteractiveSentence: React.FC<InteractiveSentenceProps> = ({
 
             {/* Yomitan De-inflection Notification */}
             {deinflection && (
-              <div className="p-3 rounded-xl bg-amber-500/15 border border-amber-500/30 space-y-1.5 text-xs text-appText-bright">
-                <div className="flex items-center gap-1.5 font-bold text-accent-hot">
-                  <Sparkles className="w-4 h-4 shrink-0" />
+              <div className="card-interactive-lift p-3 rounded-xl bg-amber-500/15 border border-amber-500/30 space-y-1.5 text-xs text-appText-bright shadow-xs">
+                <div className="flex items-center gap-1.5 font-bold text-amber-900 dark:text-amber-300">
+                  <Sparkles className="w-4 h-4 shrink-0 text-accent-hot" />
                   <span>Dekomposisi Konjugasi (Yomitan)</span>
                 </div>
                 <div className="text-xs text-appText leading-relaxed">
@@ -218,7 +223,7 @@ export const InteractiveSentence: React.FC<InteractiveSentenceProps> = ({
                   Perubahan: {deinflection.reasons.join(' → ')}
                 </div>
                 {deinflection.steps.length > 0 && (
-                  <div className="text-xs text-accent italic bg-surface/50 p-2 rounded-lg border border-accent/15 mt-1">
+                  <div className="text-xs text-amber-900 dark:text-amber-300 font-medium italic bg-surface/50 p-2 rounded-lg border border-accent/15 mt-1">
                     {deinflection.steps[0].explanationId}
                   </div>
                 )}
@@ -227,11 +232,11 @@ export const InteractiveSentence: React.FC<InteractiveSentenceProps> = ({
 
             {/* Dictionary Meaning */}
             <div className="space-y-1.5">
-              <div className="text-xs font-bold uppercase tracking-wider text-accent flex items-center gap-1.5">
+              <div className="text-xs font-bold uppercase tracking-wider text-amber-800 dark:text-amber-400 flex items-center gap-1.5">
                 <BookOpen className="w-3.5 h-3.5" />
                 <span>Arti Bahasa Indonesia</span>
               </div>
-              <div className="p-3 rounded-xl bg-surface-2/70 border border-accent/15 text-sm text-appText-bright font-medium leading-relaxed">
+              <div className="card-interactive-lift p-3 rounded-xl bg-surface-2/70 border border-accent/15 text-sm text-appText-bright font-medium leading-relaxed shadow-xs">
                 {lookupResult?.exactMatch?.arti ||
                   (lookupResult?.deinflections?.[0]?.matchedEntry?.arti
                     ? `${lookupResult.deinflections[0].matchedEntry.arti} (dari ${lookupResult.deinflections[0].candidate.lemma})`
@@ -246,7 +251,7 @@ export const InteractiveSentence: React.FC<InteractiveSentenceProps> = ({
               <button
                 type="button"
                 onClick={() => handleOpenConjugation(deinflection?.lemma || selectedToken.surface)}
-                className="w-full py-2.5 px-4 rounded-xl bg-gradient-to-r from-accent to-accent-hot hover:opacity-95 text-bg font-bold text-xs sm:text-sm flex items-center justify-center gap-2 transition-all shadow-md active:scale-95"
+                className="w-full min-h-[44px] py-2.5 px-4 rounded-xl bg-gradient-to-r from-accent to-accent-hot hover:opacity-95 text-bg font-extrabold text-xs sm:text-sm flex items-center justify-center gap-2 transition-all shadow-md active:scale-95"
               >
                 <RotateCcw className="w-4 h-4" />
                 <span>Lihat di Matriks Konjugasi ({deinflection?.lemma || selectedToken.surface})</span>

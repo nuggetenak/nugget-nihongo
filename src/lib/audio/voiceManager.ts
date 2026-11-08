@@ -3,7 +3,8 @@
 //  Nugget Nihongo · Sensei Nugget & Senpai Aoi Speech Synthesis
 // ══════════════════════════════════════════════════════════════════
 
-import { SenseiPersona } from '../ai/senseiClient';
+import type { SenseiPersona } from '../ai/senseiClient.ts';
+import { syntheticAudio } from './syntheticAudioFallback.ts';
 
 let jaVoices: SpeechSynthesisVoice[] = [];
 let isVoicesReady = false;
@@ -55,22 +56,32 @@ function getPersonaVoice(persona: SenseiPersona): SpeechSynthesisVoice | null {
  * Filter teks agar hanya melafalkan bagian bahasa Jepang atau teks bersih
  */
 export function extractJapaneseSpeechText(raw: string): string {
+  if (!raw || typeof raw !== 'string') return '';
+
   // Hapus markdown formatting seperti bold, italic, code
   let clean = raw
     .replace(/\*\*([^*]+)\*\*/g, '$1')
     .replace(/\*([^*]+)\*/g, '$1')
     .replace(/`([^`]+)`/g, '$1')
     .replace(/\[([^\]]+)\]\([^)]+\)/g, '$1')
+    .replace(/<[^>]*>/g, '')
     .replace(/🍵|🌸|✨|👍|👏/g, '')
     .trim();
 
   // Bersihkan bracket kurung furigana
-  clean = clean
+  const stripped = clean
     .replace(/【[^】]*】/g, '')
     .replace(/〔[^〕]*〕/g, '')
     .replace(/（[^）]*）/g, '')
     .replace(/\([^)]*\)/g, '')
     .trim();
+
+  // If stripping left text empty because whole phrase was parenthesized, unwrap brackets
+  if (stripped) {
+    clean = stripped;
+  } else {
+    clean = clean.replace(/[【】〔〕（）\(\)\[\]\/·・]/g, ' ').trim();
+  }
 
   return clean;
 }
@@ -85,6 +96,9 @@ export function speakPersona(
   customRate?: number
 ): void {
   if (typeof window === 'undefined' || !('speechSynthesis' in window)) {
+    try {
+      syntheticAudio.playComprehensionBeep(true);
+    } catch {}
     if (onEnd) onEnd();
     return;
   }
@@ -140,6 +154,9 @@ export function speakPersona(
     window.speechSynthesis.speak(utterance);
   } catch (e) {
     console.warn('[voiceManager] Error playing persona voice:', e);
+    try {
+      syntheticAudio.playComprehensionBeep(true);
+    } catch {}
     if (onEnd) onEnd();
   }
 }

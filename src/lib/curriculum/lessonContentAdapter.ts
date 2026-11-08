@@ -110,7 +110,7 @@ if (typeof process !== 'undefined' && process.versions?.node) {
 
 // Clean distractor self-leaks from multiple choice options
 export function cleanOptionText(text: string): string {
-  if (!text) return '';
+  if (!text || typeof text !== 'string') return '';
   return text
     .replace(/\s*\((?:Urutan terbalik[^\)]*|Partikel tidak pas|Bukan partikel[^\)]*|Pola kalimat salah[^\)]*|Salah susun[^\)]*|Bukan kata benda[^\)]*|Jebakan[^\)]*)\)/gi, '')
     .trim();
@@ -140,6 +140,19 @@ export function getAdaptiveLessonContent(
   vocabList: NormalizedVocab[] = [],
   curatedOverrideMap?: Record<string, Partial<CurriculumLesson>>
 ): CurriculumLesson {
+  // Defensive guard against null, undefined, or malformed lesson inputs
+  if (!lesson || typeof lesson !== 'object') {
+    return {
+      id: 'fallback-lesson',
+      lesson_number: 1,
+      title_id: 'Pelajaran Fondasi',
+      title_jp: '基本レッスン',
+      desc_id: 'Pelajaran fondasi adaptif bahasa Jepang.',
+      can_do_statement: 'Mampu memahami konsep dasar pada materi ini.',
+      grammar_ids: [],
+    };
+  }
+
   // 1. Cek repositori terkurasi spesifik jika ada
   const curated = curatedOverrideMap?.[lesson.id] || CURATED_LESSONS_MAP[lesson.id];
   if (curated) {
@@ -177,6 +190,78 @@ export function getAdaptiveLessonContent(
   const primaryV3 = matchedVocab[2] || { word: 'かいしゃ', reading: 'かいしゃ', romaji: 'kaisha', meaning: 'Perusahaan' };
 
   // 3. Bangun kerangka kontekstual ramah Sensei (tanpa jargon paper)
+  const isSSW = Boolean((lesson.id && lesson.id.includes('ssw')) || (unit?.level === 'n4_ssw') || (unit?.id && unit.id.includes('ssw')));
+  const isK3 = isSSW && Boolean((lesson.title_id + ' ' + (lesson.desc_id || '') + ' ' + (unit?.theme || '')).toLowerCase().match(/k3|kyk|sbar|darurat|keselamatan|hazard|apd|bahaya|prosedur/i));
+
+  // Pemetaan persona kerja autentik per sektor SSW
+  let seniorName = 'Tanaka';
+  let seniorRole = 'Rekan Bicara';
+  let seniorAvatar = '🧑‍💼';
+  let learnerName = 'Budi';
+  let learnerRole = 'Pembelajar Indonesia';
+  let learnerAvatar = '🙋‍♂️';
+
+  if (isSSW) {
+    const rawId = (lesson.id + ' ' + (unit?.id || '')).toLowerCase();
+    if (rawId.includes('const') || rawId.includes('kensetsu')) {
+      seniorName = 'Satou-shochou';
+      seniorRole = 'Site Manager (現場監督)';
+      seniorAvatar = '👷‍♂️';
+      learnerName = 'Budi';
+      learnerRole = 'Pekerja Konstruksi (作業員)';
+      learnerAvatar = '👷';
+    } else if (rawId.includes('mfg') || rawId.includes('machin') || rawId.includes('seizo') || rawId.includes('metal')) {
+      seniorName = 'Takahashi-shunin';
+      seniorRole = 'Kepala Regu (主任)';
+      seniorAvatar = '🏭';
+      learnerName = 'Eko';
+      learnerRole = 'Operator Mesin (工員)';
+      learnerAvatar = '👷‍♂️';
+    } else if (rawId.includes('food-serv') || rawId.includes('gaishoku') || rawId.includes('restaurant')) {
+      seniorName = 'Yamamoto-tencho';
+      seniorRole = 'Manajer Restoran (店長)';
+      seniorAvatar = '🧑‍🍳';
+      learnerName = 'Dewi';
+      learnerRole = 'Krew Dapur & Layanan';
+      learnerAvatar = '👩‍🍳';
+    } else if (rawId.includes('agri') || rawId.includes('nogyo')) {
+      seniorName = 'Kojima-san';
+      seniorRole = 'Pemilik Kebun (園主)';
+      seniorAvatar = '👨‍🌾';
+      learnerName = 'Agus';
+      learnerRole = 'Pekerja Pertanian Lapangan';
+      learnerAvatar = '👨‍🌾';
+    } else if (rawId.includes('kaigo')) {
+      seniorName = 'Suzuki-san';
+      seniorRole = 'Senior Caregiver (指導員)';
+      seniorAvatar = '👩‍⚕️';
+      learnerName = 'Rizky';
+      learnerRole = 'Caregiver (介護職)';
+      learnerAvatar = '🙋‍♂️';
+    } else if (rawId.includes('logis') || rawId.includes('butsuryu')) {
+      seniorName = 'Watanabe-shunin';
+      seniorRole = 'Koordinator Gudang (主任)';
+      seniorAvatar = '📦';
+      learnerName = 'Fajar';
+      learnerRole = 'Operator Logistik';
+      learnerAvatar = '👷‍♂️';
+    } else if (rawId.includes('accommod') || rawId.includes('hosp') || rawId.includes('shukuhaku')) {
+      seniorName = 'Nakamura-shihainin';
+      seniorRole = 'Manajer Hotel (支配人)';
+      seniorAvatar = '👘';
+      learnerName = 'Maya';
+      learnerRole = 'Front Desk & Pelayanan';
+      learnerAvatar = '👩‍💼';
+    } else {
+      seniorName = 'Suzuki-shidouin';
+      seniorRole = 'Instruktur Lapangan (指導員)';
+      seniorAvatar = '🧑‍💼';
+      learnerName = 'Budi';
+      learnerRole = 'Pekerja Keterampilan Khusus';
+      learnerAvatar = '🙋‍♂️';
+    }
+  }
+
   const framework: LessonPedagogicalFramework = {
     what: {
       summary: `${lesson.title_id} — Fokus memahami pola ${primaryG?.pattern || 'tata bahasa utama'} dan kosakata terkait.`,
@@ -185,19 +270,31 @@ export function getAdaptiveLessonContent(
       coreVocabSample: matchedVocab.slice(0, 6).map((v) => v.word || (v as any).kanji || v.reading),
     },
     sensei_context: {
-      sceneIntro: `Pada pelajaran ini, kita mempelajari bagaimana berinteraksi seputar tema ${unit?.theme || lesson.title_id} dalam suasana kehidupan dan kerja di Jepang.`,
+      sceneIntro: isSSW
+        ? `Pada modul kerja vokasional ini, kita mendalami protokol operasional dan komunikasi di ${seniorRole} seputar ${unit?.theme || lesson.title_id}.`
+        : `Pada pelajaran ini, kita mempelajari bagaimana berinteraksi seputar tema ${unit?.theme || lesson.title_id} dalam suasana kehidupan dan kerja di Jepang.`,
       dailyMission: lesson.can_do_statement || 'Mampu menerapkan pola kalimat ini dalam percakapan sehari-hari secara wajar.',
-      whyOrder: `Mengapa pola ini dipelajari pada tahap ini? Karena menguasai struktur ${primaryG?.pattern || 'dasar'} ini memberi fondasi kuat agar kamu bisa berkomunikasi tanpa takut salah susun kata.`,
+      whyOrder: isSSW
+        ? `Mengapa materi kerja ini krusial? Penguasaan pola ${primaryG?.pattern || 'komunikasi gemba'} menjamin koordinasi kerja aman, memangkas risiko celaka (zero saigai), dan memenuhi standar Prometric SSW.`
+        : `Mengapa pola ini dipelajari pada tahap ini? Karena menguasai struktur ${primaryG?.pattern || 'dasar'} ini memberi fondasi kuat agar kamu bisa berkomunikasi tanpa takut salah susun kata.`,
     },
     cultural_notes: {
-      title: 'Kiat Budaya & Etika Berkomunikasi',
-      etiquette: 'Gunakan bentuk sopan standar (Teineigo) saat berbicara dengan rekan kerja atau orang yang baru dikenal. Anggukkan kepala ringan (Aizuchi) untuk menunjukkan bahwa kamu menyimak.',
-      taboos: 'Hindari berbicara terlalu tergesa-gesa atau menggunakan ragam kasual kepada orang yang lebih senior.',
+      title: isK3 ? 'Disiplin K3 & Standar Keselamatan Kerja Jepang' : isSSW ? 'Etika Gemba & Komunikasi Kerja Jepang' : 'Kiat Budaya & Etika Berkomunikasi',
+      etiquette: isK3
+        ? 'Disiplin K3: Wajib lakukan tunjuk-sebut (指差呼称 - Shisa Kanko) dengan seruan "Yoshi!" untuk setiap pengecekan. Konfirmasi 2 arah dan kepatuhan APD mutlak.'
+        : isSSW
+        ? 'Prinsip kerja Jepang: Terapkan 5S (Seiri, Seiton, Seisou, Seiketsu, Shitsuke) dan tradisi Hou-Ren-Sou (Laporkan, Hubungi, Konsultasikan) kepada atasan secara proaktif.'
+        : 'Gunakan bentuk sopan standar (Teineigo) saat berbicara dengan rekan kerja atau orang yang baru dikenal. Anggukkan kepala ringan (Aizuchi) untuk menunjukkan bahwa kamu menyimak.',
+      taboos: isK3
+        ? 'Pantangan K3: Dilarang mengenakan sarung tangan kain di dekat poros berputar (軍手禁止), dilarang melewati batas pelindung tanpa izin, dan dilarang menyembunyikan insiden nyaris celaka (ヒヤリ・ハット).'
+        : isSSW
+        ? 'Pantangan gemba: Dilarang mengubah urutan SOP kerja tanpa persetujuan supervisor, dan jangan pernah berasumsi (思い込み) saat ragu.'
+        : 'Hindari berbicara terlalu tergesa-gesa atau menggunakan ragam kasual kepada orang yang lebih senior.',
     },
     pronunciation_tips: {
-      title: 'Tips Pelafalan Alami Lidah Indonesia',
-      moraNote: 'Jaga ketukan waktu yang stabil untuk setiap aksara kana.',
-      soundTip: 'Perhatikan vokal panjang dan bunyi konsonan rangkap agar artinya tidak tertukar.',
+      title: isSSW ? 'Pelafalan Lugas & Aba-aba Kerja' : 'Tips Pelafalan Alami Lidah Indonesia',
+      moraNote: isSSW ? 'Ucapkan konfirmasi dengan suara lantang dan tempo tegas agar terdengar di lingkungan kerja bising.' : 'Jaga ketukan waktu yang stabil untuk setiap aksara kana.',
+      soundTip: isSSW ? 'Aksen aba-aba darurat (seperti "よし！", "停止！", "あぶない！") diucapkan dengan intonasi turun cepat dan mantap.' : 'Perhatikan vokal panjang dan bunyi konsonan rangkap agar artinya tidak tertukar.',
     },
     common_pitfalls: [
       {
@@ -223,14 +320,20 @@ export function getAdaptiveLessonContent(
       },
     ],
     who_and_when: {
-      situational_context: `Digunakan saat berinteraksi dalam konteks ${unit?.theme || 'keseharian dan kerja di Jepang'}.`,
-      social_relations: 'Ragam sopan standar (Teineigo) yang aman digunakan kepada siapa pun.',
+      situational_context: isSSW
+        ? `Digunakan saat berinteraksi di lingkungan ${seniorRole} dalam konteks ${unit?.theme || lesson.title_id}.`
+        : `Digunakan saat berinteraksi dalam konteks ${unit?.theme || 'keseharian dan kerja di Jepang'}.`,
+      social_relations: isSSW
+        ? 'Relasi kerja profesional antara staf pembimbing/atasan dan pekerja keterampilan khusus.'
+        : 'Ragam sopan standar (Teineigo) yang aman digunakan kepada siapa pun.',
       when_not_to_use: 'Perhatikan derajat kesantunan dan hindari mencampuradukkan bentuk kasual dengan formal.',
     },
     scenario: {
-      title: `Skenario Praktis: ${unit?.theme || lesson.title_id}`,
-      setting: 'Aktivitas Kerja / Kehidupan di Jepang',
-      narrative: `Percakapan situasional yang menerapkan pola ${lesson.title_id} secara alami antara dua penutur.`,
+      title: isSSW ? `Simulasi Gemba: ${unit?.theme || lesson.title_id}` : `Skenario Praktis: ${unit?.theme || lesson.title_id}`,
+      setting: isSSW ? `Lingkungan Kerja SSW (${seniorRole})` : 'Aktivitas Kerja / Kehidupan di Jepang',
+      narrative: isSSW
+        ? `Koordinasi operasional antara ${seniorName} (${seniorRole}) dan ${learnerName} mengenai ${lesson.title_id}.`
+        : `Percakapan situasional yang menerapkan pola ${lesson.title_id} secara alami antara dua penutur.`,
     },
   };
 
@@ -257,56 +360,147 @@ export function getAdaptiveLessonContent(
 
   // 5. Bangun dialog dinamis (6 baris percakapan situasional yang alami)
   // Ambil contoh kalimat otentik terverifikasi dari data grammar atau vocab
-  const authenticExample1 = primaryG?.examples?.[0] || primaryV1?.examples?.[0] || {
-    jp: `${primaryV1.word}を 勉強【べんきょう】します。`,
-    romaji: 'benkyou shimasu',
-    id: `Belajar ${primaryV1.meaning || 'materi ini'}.`,
-  };
-  const authenticExample2 = secondaryG?.examples?.[0] || primaryV2?.examples?.[0] || {
-    jp: 'はい、よく わかりました。',
-    romaji: 'Hai, yoku wakarimashita.',
-    id: 'Ya, saya mengerti dengan baik.',
+  const rawEx1 = (primaryG?.examples?.[0]?.jp ? primaryG.examples[0] : null) ||
+    (primaryV1?.examples?.[0]?.jp ? primaryV1.examples[0] : null);
+  const authenticExample1 = {
+    jp: (rawEx1?.jp && typeof rawEx1.jp === 'string' && rawEx1.jp.trim())
+      ? rawEx1.jp
+      : `${primaryV1?.word || 'これ'}を 勉強【べんきょう】します。`,
+    romaji: (rawEx1 as any)?.romaji || 'benkyou shimasu',
+    id: rawEx1?.id || `Belajar ${primaryV1?.meaning || 'materi ini'}.`,
   };
 
-  const dialogue: LessonDialogueLine[] = [
-    {
-      id: 'd1',
-      speaker: 'Tanaka',
-      speakerRole: 'Rekan Bicara',
-      avatar: '🧑‍💼',
-      jp: `すみません、${authenticExample1.jp}`,
-      romaji: (authenticExample1 as any).romaji ? `Sumimasen, ${(authenticExample1 as any).romaji}` : 'Sumimasen...',
-      idText: `Permisi, ${authenticExample1.id}`,
-    },
-    {
-      id: 'd2',
-      speaker: 'Budi',
-      speakerRole: 'Pembelajar Indonesia',
-      avatar: '🙋‍♂️',
-      jp: `あ、そうですか。${authenticExample2.jp}`,
-      romaji: (authenticExample2 as any).romaji ? `A, sou desu ka. ${(authenticExample2 as any).romaji}` : 'A, sou desu ka.',
-      idText: `Ah, begitu ya. ${authenticExample2.id}`,
-    },
-    {
-      id: 'd3',
-      speaker: 'Tanaka',
-      speakerRole: 'Rekan Bicara',
-      avatar: '🧑‍💼',
-      jp: `はい。${primaryG?.pattern ? `この「${primaryG.pattern}」の 使い方【つかいかた】は 大切【たいせつ】ですよ。` : 'とても 大切【たいせつ】な 表現【ひょうげん】です。'}`,
-      romaji: 'Hai. Kono hyougen wa taisetsu desu yo.',
-      idText: 'Ya. Pola ungkapan ini sangat lazim dan penting dalam percakapan.',
-      note: 'Mengangguk ramah (Aizuchi)',
-    },
-    {
-      id: 'd4',
-      speaker: 'Budi',
-      speakerRole: 'Pembelajar Indonesia',
-      avatar: '🙋‍♂️',
-      jp: `教えてくれて ありがとうございます！よく わかりました。`,
-      romaji: 'Oshiete kurete arigatou gozaimasu! Yoku wakarimashita.',
-      idText: 'Terima kasih banyak sudah menjelaskan! Saya mengerti dengan jelas.',
-    },
-  ];
+  const rawEx2 = (secondaryG?.examples?.[0]?.jp ? secondaryG.examples[0] : null) ||
+    (primaryV2?.examples?.[0]?.jp ? primaryV2.examples[0] : null);
+  const authenticExample2 = {
+    jp: (rawEx2?.jp && typeof rawEx2.jp === 'string' && rawEx2.jp.trim())
+      ? rawEx2.jp
+      : 'はい、よく わかりました。',
+    romaji: (rawEx2 as any)?.romaji || 'Hai, yoku wakarimashita.',
+    id: rawEx2?.id || 'Ya, saya mengerti dengan baik.',
+  };
+
+  const dialogue: LessonDialogueLine[] = isK3
+    ? [
+        {
+          id: 'd1',
+          speaker: seniorName,
+          speakerRole: seniorRole,
+          avatar: seniorAvatar,
+          jp: `${learnerName}さん、安全第一【あんぜんだいいち】です。${authenticExample1.jp}`,
+          romaji: `${learnerName}-san, anzen dai-ichi desu. ${(authenticExample1 as any).romaji || ''}`,
+          idText: `${learnerName}, utamakan keselamatan kerja. ${authenticExample1.id}`,
+          note: 'Memeriksa perlengkapan APD dan area kerja',
+        },
+        {
+          id: 'd2',
+          speaker: learnerName,
+          speakerRole: learnerRole,
+          avatar: learnerAvatar,
+          jp: `はい！指差呼称【しさこしょう】で 確認【かくにん】します。${authenticExample2.jp} よし！`,
+          romaji: `Hai! Shisa kanko de kakunin shimasu. ${(authenticExample2 as any).romaji || ''} Yoshi!`,
+          idText: `Siap! Saya konfirmasi dengan tunjuk-sebut. ${authenticExample2.id} Aman!`,
+          note: 'Melakukan gerakan Point-and-Call (指差呼称)',
+        },
+        {
+          id: 'd3',
+          speaker: seniorName,
+          speakerRole: seniorRole,
+          avatar: seniorAvatar,
+          jp: `よし！異常【いじょう】が あれば、すぐに 報連相【ほうれんそう】してください。`,
+          romaji: 'Yoshi! Ijou ga areba, sugu ni Hou-Ren-Sou shite kudasai.',
+          idText: 'Bagus! Jika ada hal aneh atau potensi bahaya, segera laporkan (Hou-Ren-Sou).',
+          note: 'Memberi instruksi keselamatan gemba',
+        },
+        {
+          id: 'd4',
+          speaker: learnerName,
+          speakerRole: learnerRole,
+          avatar: learnerAvatar,
+          jp: `承知【しょうち】いたしました！ゼロ災害【さいがい】で 作業【さぎょう】を 進【すす】めます。`,
+          romaji: 'Shouchi itashimashita! Zero saigai de sagyou o susumemasu.',
+          idText: 'Dimengerti! Saya akan bekerja dengan mematuhi prinsip nihil kecelakaan kerja.',
+        },
+      ]
+    : isSSW
+    ? [
+        {
+          id: 'd1',
+          speaker: seniorName,
+          speakerRole: seniorRole,
+          avatar: seniorAvatar,
+          jp: `${learnerName}さん、今日の作業手順【さぎょうてじゅん】について、${authenticExample1.jp}`,
+          romaji: `${learnerName}-san, kyou no sagyou tejun ni tsuite, ${(authenticExample1 as any).romaji || ''}`,
+          idText: `${learnerName}, mengenai SOP kerja hari ini: ${authenticExample1.id}`,
+        },
+        {
+          id: 'd2',
+          speaker: learnerName,
+          speakerRole: learnerRole,
+          avatar: learnerAvatar,
+          jp: `はい、${seniorName}。${authenticExample2.jp}`,
+          romaji: `Hai, ${seniorName}. ${(authenticExample2 as any).romaji || ''}`,
+          idText: `Siap, ${seniorName}. ${authenticExample2.id}`,
+          note: 'Mengangguk hormat dan menyimak instruksi',
+        },
+        {
+          id: 'd3',
+          speaker: seniorName,
+          speakerRole: seniorRole,
+          avatar: seniorAvatar,
+          jp: `はい。現場【げんば】では この「${primaryG?.pattern || '表現'}」の 連絡【れんらく】が とても 大切【たいせつ】ですよ。`,
+          romaji: 'Hai. Gemba de wa kono hyougen no renraku ga totemo taisetsu desu yo.',
+          idText: 'Ya. Di tempat kerja nyata, komunikasi pola ini sangat penting agar tidak terjadi salah paham.',
+        },
+        {
+          id: 'd4',
+          speaker: learnerName,
+          speakerRole: learnerRole,
+          avatar: learnerAvatar,
+          jp: `ご指導【しどう】ありがとうございます！しっかり 確認【かくにん】して 頑張【がんば】ります。`,
+          romaji: 'Goshidou arigatou gozaimasu! Shikkari kakunin shite gambarimasu.',
+          idText: 'Terima kasih atas bimbingannya! Saya akan mengecek dengan cermat dan bekerja sungguh-sungguh.',
+        },
+      ]
+    : [
+        {
+          id: 'd1',
+          speaker: 'Tanaka',
+          speakerRole: 'Rekan Bicara',
+          avatar: '🧑‍💼',
+          jp: `すみません、${authenticExample1.jp}`,
+          romaji: (authenticExample1 as any).romaji ? `Sumimasen, ${(authenticExample1 as any).romaji}` : 'Sumimasen...',
+          idText: `Permisi, ${authenticExample1.id}`,
+        },
+        {
+          id: 'd2',
+          speaker: 'Budi',
+          speakerRole: 'Pembelajar Indonesia',
+          avatar: '🙋‍♂️',
+          jp: `あ、そうですか。${authenticExample2.jp}`,
+          romaji: (authenticExample2 as any).romaji ? `A, sou desu ka. ${(authenticExample2 as any).romaji}` : 'A, sou desu ka.',
+          idText: `Ah, begitu ya. ${authenticExample2.id}`,
+        },
+        {
+          id: 'd3',
+          speaker: 'Tanaka',
+          speakerRole: 'Rekan Bicara',
+          avatar: '🧑‍💼',
+          jp: `はい。${primaryG?.pattern ? `この「${primaryG.pattern}」の 使い方【つかいかた】は 大切【たいせつ】ですよ。` : 'とても 大切【たいせつ】な 表現【ひょうげん】です。'}`,
+          romaji: 'Hai. Kono hyougen wa taisetsu desu yo.',
+          idText: 'Ya. Pola ungkapan ini sangat lazim dan penting dalam percakapan.',
+          note: 'Mengangguk ramah (Aizuchi)',
+        },
+        {
+          id: 'd4',
+          speaker: 'Budi',
+          speakerRole: 'Pembelajar Indonesia',
+          avatar: '🙋‍♂️',
+          jp: `教えてくれて ありがとうございます！よく わかりました。`,
+          romaji: 'Oshiete kurete arigatou gozaimasu! Yoku wakarimashita.',
+          idText: 'Terima kasih banyak sudah menjelaskan! Saya mengerti dengan jelas.',
+        },
+      ];
 
   // 6. Bangun penjelasan tata bahasa dinamis dengan dekonstruksi mendalam
   const explanations: LessonExplanationSection[] = matchedGrammar.map((g, idx) => ({
@@ -334,7 +528,7 @@ export function getAdaptiveLessonContent(
 
   // 7. Bangun tangga latihan bertingkat 5-soal berbasis Sentence-Extraction & Slot-Filling (C-03)
   // Ekstraksi slot target dari kalimat asli, bukan merangkai string sintetis
-  const rawJp = authenticExample1.jp.replace(/[。！!？?]/g, '').trim();
+  const rawJp = (authenticExample1.jp || '').replace(/[。！!？?]/g, '').trim() || `${primaryV1?.word || 'これ'} です`;
 
   // Deteksi partikel atau penanda yang diuji
   const commonParticles = ['は', 'が', 'を', 'に', 'で', 'へ', 'と', 'も', 'から', 'まで', 'より', 'だけ'];

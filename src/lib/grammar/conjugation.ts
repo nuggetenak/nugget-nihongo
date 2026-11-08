@@ -185,6 +185,7 @@ export function resolveVerbReading(word: string): string | undefined {
 export function inferType(w: string, reading?: string): VerbType | null {
   if (!w || typeof w !== 'string') return null;
   const word = w.trim();
+  if (!word) return null;
   if (word === 'する' || word.endsWith('する')) return 'suru';
   if (word === '来る' || word === 'くる') return 'kuru';
   if (word === 'だ' || word === 'です') return 'copula';
@@ -228,8 +229,9 @@ export function normalize(
   hintType?: VerbType,
   reading?: string
 ): { dict: string; type: VerbType | null } | null {
-  if (!word) return null;
+  if (!word || typeof word !== 'string') return null;
   let w = word.trim();
+  if (!w) return null;
   if (/^[a-zA-Z]+$/.test(w)) w = romajiToKana(w);
   return { dict: w, type: hintType || inferType(w, reading) };
 }
@@ -453,6 +455,7 @@ export function applyContractions(str: string, level = 0): string {
 }
 
 export function conjugate(word: string, form: string, opts: ConjugationOptions = {}): string | null {
+  if (!word || typeof word !== 'string' || !form || typeof form !== 'string') return null;
   const n = normalize(word, opts.type);
   if (!n) return null;
   const { dict, type } = n;

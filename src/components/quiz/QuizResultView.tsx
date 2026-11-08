@@ -2,6 +2,7 @@ import React from 'react';
 import { Award, RotateCcw, Home, Sparkles, CheckCircle2, XCircle, Volume2, Droplets, Flag } from 'lucide-react';
 import { QuizQuestionItem } from '../../lib/quiz/quizEngine';
 import { speakJapanese } from '../../lib/audio/tts';
+import { IrasutoyaImage } from '../common/IrasutoyaImage';
 
 interface QuizResultViewProps {
   score: number;
@@ -46,9 +47,30 @@ export const QuizResultView: React.FC<QuizResultViewProps> = ({
   return (
     <div className="max-w-xl mx-auto py-6 space-y-6 animate-in zoom-in-95 duration-300">
       {/* Result Hero Card */}
-      <div className="bg-surface border-2 border-accent/30 rounded-3xl p-8 text-center space-y-4 shadow-xl relative overflow-hidden">
-        <div className="w-16 h-16 mx-auto rounded-3xl bg-amber-500/20 text-accent-hot border border-amber-500/40 flex items-center justify-center text-3xl shadow-glow">
-          🏆
+      <div className="bg-surface border-2 border-accent/30 rounded-3xl p-8 text-center space-y-4 shadow-xl relative overflow-hidden card-interactive-lift">
+        <div className="w-20 h-20 mx-auto flex items-center justify-center">
+          {percentage >= 80 ? (
+            <IrasutoyaImage
+              assetId="celebration_kusudama"
+              className="w-20 h-20"
+              containerClassName="w-20 h-20"
+              animatePop
+            />
+          ) : percentage >= 50 ? (
+            <IrasutoyaImage
+              assetId="sensei_praise"
+              className="w-20 h-20"
+              containerClassName="w-20 h-20"
+              animatePop
+            />
+          ) : (
+            <IrasutoyaImage
+              assetId="daruma_recovery"
+              className="w-20 h-20"
+              containerClassName="w-20 h-20"
+              animateFloat
+            />
+          )}
         </div>
 
         <div>

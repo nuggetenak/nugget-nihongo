@@ -1,6 +1,7 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import path from 'path';
+// @ts-ignore - Local helper plugin
 import { vitePluginGeminiStudio } from './scripts/vite-plugin-gemini-studio.mjs';
 
 // Keep literal string declarations for Sprint 17 & Sprint 43 contract assertions:

@@ -3,12 +3,9 @@
 //  Ticket T-235: Strictly enforces the 500 kB chunk threshold
 // ══════════════════════════════════════════════════════════════════
 
-import fs from 'node:fs';
-import path from 'node:path';
-import { fileURLToPath } from 'node:url';
+const fs = require('node:fs');
+const path = require('node:path');
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
 const ROOT = path.resolve(__dirname, '..');
 const DIST_JS = path.join(ROOT, 'dist/assets/js');
 

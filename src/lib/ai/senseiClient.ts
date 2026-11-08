@@ -4,6 +4,7 @@
 // ══════════════════════════════════════════════════════════════════
 
 import { senseiMemory } from './senseiMemory';
+import { rateLimiter } from './rateLimiter';
 
 export type SenseiPersona = 'sensei_nugget' | 'senpai_aoi';
 export type SenseiMode = 'explain' | 'roleplay' | 'correct';
@@ -15,12 +16,30 @@ export interface ChatMessage {
   timestamp: number;
   tokensUsed?: number;
   modelUsed?: string;
+  expression?: 'teaching' | 'praise' | 'thinking' | 'encourage' | 'ojigi';
   contextCard?: ContextCardPayload;
   suggestedAction?: {
     label: string;
     targetId?: string;
     level?: string;
   };
+}
+
+export function inferSenseiExpression(text: string): 'teaching' | 'praise' | 'thinking' | 'encourage' | 'ojigi' {
+  const lower = text.toLowerCase();
+  if (lower.includes('bagus') || lower.includes('keren') || lower.includes('hebat') || lower.includes('tepat') || lower.includes('yoku dekimashita') || lower.includes('sugoi')) {
+    return 'praise';
+  }
+  if (lower.includes('semangat') || lower.includes('ganbatte') || lower.includes('coba lagi') || lower.includes('jangan ragu')) {
+    return 'encourage';
+  }
+  if (lower.includes('terima kasih') || lower.includes('arigatou') || lower.includes('salam') || lower.includes('ojigi') || lower.includes('yoroshiku')) {
+    return 'ojigi';
+  }
+  if (lower.includes('hmm') || lower.includes('menarik') || lower.includes('perlu diperhatikan') || lower.includes('beda nuansa')) {
+    return 'thinking';
+  }
+  return 'teaching';
 }
 
 export interface ContextCardPayload {
@@ -146,6 +165,17 @@ ${SAFETY_GUARDRAILS}`.trim();
 }
 
 /**
+ * Sanitizes and trims chat history to prevent memory leaks and payload bloat
+ */
+export function sanitizeAndTrimChatHistory(messages: ChatMessage[], maxTurns = 12): ChatMessage[] {
+  if (!Array.isArray(messages)) return [];
+  const valid = messages.filter(
+    (m) => m && typeof m.content === 'string' && m.content.trim() && !m.id.startsWith('err-')
+  );
+  return valid.slice(-maxTurns);
+}
+
+/**
  * Kirim pesan ke Google Gemini API (gemini-3.8-flash dengan fallback gemini-flash-latest)
  */
 export async function sendSenseiMessage(
@@ -153,6 +183,15 @@ export async function sendSenseiMessage(
   config: SenseiSessionConfig,
   contextCard?: ContextCardPayload
 ): Promise<ChatMessage> {
+  const limitCheck = rateLimiter.canExecute('sensei_chat');
+  if (!limitCheck.allowed) {
+    const waitSec = Math.ceil(limitCheck.waitMs / 1000);
+    throw new Error(`Sensei sedang memproses pesan sebelumnya. Mohon tunggu ${waitSec} detik ya! 🍵`);
+  }
+  rateLimiter.recordExecution('sensei_chat');
+
+  const sanitizedMessages = sanitizeAndTrimChatHistory(messages);
+
   const localGeminiKey = typeof window !== 'undefined' ? localStorage.getItem('nn_gemini_api_key') : '';
   const localOpenRouterKey = typeof window !== 'undefined' ? localStorage.getItem('nn_openrouter_api_key') : '';
   const byokKey =
@@ -176,7 +215,7 @@ export async function sendSenseiMessage(
   // ── Route 0 (Default): Secure Worker Proxy (/api/chat) ────────────
   try {
     const proxyPayload = {
-      messages: messages.map((m) => ({
+      messages: sanitizedMessages.map((m) => ({
         role: m.role === 'user' ? 'user' : 'assistant',
         content: m.content,
       })),
@@ -229,6 +268,7 @@ export async function sendSenseiMessage(
           timestamp: Date.now(),
           modelUsed: data.model_used || 'ai-proxy',
           tokensUsed: data.tokens_used || 0,
+          expression: inferSenseiExpression(data.reply.trim()),
           contextCard,
           suggestedAction,
         };
@@ -279,7 +319,7 @@ export async function sendSenseiMessage(
             model,
             messages: [
               { role: 'system', content: systemInstruction },
-              ...messages.map((m) => ({
+              ...sanitizedMessages.map((m) => ({
                 role: m.role === 'user' ? 'user' : 'assistant',
                 content: m.content,
               })),
@@ -305,6 +345,7 @@ export async function sendSenseiMessage(
           timestamp: Date.now(),
           modelUsed: model,
           tokensUsed: data?.usage?.total_tokens || 0,
+          expression: inferSenseiExpression(replyText.trim()),
           contextCard,
           suggestedAction,
         };
@@ -317,7 +358,7 @@ export async function sendSenseiMessage(
   }
 
   // ── Route 2: Google Gemini Native API ─────────────────────────────
-  const contents = messages.map((m) => ({
+  const contents = sanitizedMessages.map((m) => ({
     role: m.role === 'user' ? 'user' : 'model',
     parts: [{ text: m.content }],
   }));
@@ -375,6 +416,7 @@ export async function sendSenseiMessage(
         timestamp: Date.now(),
         modelUsed: model,
         tokensUsed: data?.usageMetadata?.totalTokenCount,
+        expression: inferSenseiExpression(replyText.trim()),
         contextCard,
         suggestedAction,
       };
@@ -412,6 +454,14 @@ export async function streamSenseiResponse(
     return reply.content;
   }
 
+  const limitCheck = rateLimiter.canExecute('sensei_chat');
+  if (!limitCheck.allowed) {
+    const waitSec = Math.ceil(limitCheck.waitMs / 1000);
+    throw new Error(`Sensei sedang memproses pesan sebelumnya. Mohon tunggu ${waitSec} detik ya! 🍵`);
+  }
+  rateLimiter.recordExecution('sensei_chat');
+
+  const sanitizedMessages = sanitizeAndTrimChatHistory(messages);
   const systemInstruction = buildSenseiSystemPrompt(config, contextCard);
 
   const res = await fetch('https://openrouter.ai/api/v1/chat/completions', {
@@ -428,7 +478,7 @@ export async function streamSenseiResponse(
       stream: true,
       messages: [
         { role: 'system', content: systemInstruction },
-        ...messages.map((m) => ({
+        ...sanitizedMessages.map((m) => ({
           role: m.role === 'user' ? 'user' : 'assistant',
           content: m.content,
         })),

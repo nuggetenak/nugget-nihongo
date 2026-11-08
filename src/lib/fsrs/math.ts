@@ -3,7 +3,8 @@
 //  Research basis:
 //    - Ye et al. (2022) — FSRS memory model (KDD)
 //    - Matsunaga (1999) — non-kanji-background learners need 2.3× exposures
-import { FSRSCard, FSRSRating } from '../../types/fsrs';
+// ══════════════════════════════════════════════════════
+import type { FSRSCard, FSRSRating } from '../../types/fsrs.ts';
 
 export const DECAY = 0.5;
 export const FACTOR = 19 / 81; // (1/DECAY - 1)
@@ -14,13 +15,18 @@ export const MATSUNAGA_MULTIPLIER = 2.3;
  * Stability S is defined as the elapsed time in days for R to decay to 0.9.
  * When t = S, R(S, S) = (1 + 19/81)^(-0.5) = (100/81)^(-0.5) = 9/10 = 0.9.
  *
+ * Mathematically hardened against clock skew, negative elapsed days, and non-finite values.
+ *
  * @param elapsedDays Days elapsed since last review
  * @param stability Memory stability S
  * @returns Retrievability R in [0, 1]
  */
 export function fsrsForgettingCurve(elapsedDays: number, stability: number): number {
-  if (stability <= 0) return 0;
-  return Math.pow(1 + FACTOR * (elapsedDays / stability), -DECAY);
+  if (!Number.isFinite(stability) || stability <= 0) return 0;
+  if (!Number.isFinite(elapsedDays) || elapsedDays <= 0) return 1.0;
+  elapsedDays = Math.max(0, elapsedDays);
+  const retrievability = Math.pow(1 + FACTOR * (elapsedDays / stability), -DECAY);
+  return Number.isFinite(retrievability) ? Math.min(1.0, Math.max(0, retrievability)) : 0;
 }
 
 /**
@@ -33,8 +39,46 @@ export function fsrsForgettingCurve(elapsedDays: number, stability: number): num
  * @returns Scheduled interval in days
  */
 export function fsrsNextInterval(stability: number, requestRetention: number): number {
-  if (stability <= 0 || requestRetention <= 0 || requestRetention >= 1) return 0;
-  return (stability / FACTOR) * (Math.pow(requestRetention, -1 / DECAY) - 1);
+  if (!Number.isFinite(stability) || stability <= 0) return 0;
+  if (!Number.isFinite(requestRetention) || requestRetention <= 0 || requestRetention >= 1) return 0;
+  const interval = (stability / FACTOR) * (Math.pow(requestRetention, -1 / DECAY) - 1);
+  return Number.isFinite(interval) ? Math.max(0, interval) : 0;
+}
+
+/**
+ * Retrievability percentage formatted for UI meters, garden health, and analytics.
+ * Returns an integer percentage bounded between 1% and 100%.
+ */
+export function fsrsRetrievabilityPercent(elapsedDays: number, stability: number): number {
+  const r = fsrsForgettingCurve(elapsedDays, stability);
+  return Math.max(1, Math.min(100, Math.round(r * 100)));
+}
+
+/**
+ * Determines whether an FSRS card is due for review based on due timestamp or lapsed state.
+ */
+export function fsrsIsCardDue(card?: Partial<FSRSCard> | null, nowMs = Date.now()): boolean {
+  if (!card) return false;
+  if (!card.due) return true;
+  const dueTime = new Date(card.due).getTime();
+  return Number.isNaN(dueTime) || dueTime <= nowMs;
+}
+
+/**
+ * Counts how many FSRS cards are due for review in a collection.
+ */
+export function fsrsCountDueCards(
+  cardsMap?: Record<string, { card?: Partial<FSRSCard> | null }> | null,
+  nowMs = Date.now()
+): number {
+  if (!cardsMap) return 0;
+  let count = 0;
+  for (const record of Object.values(cardsMap)) {
+    if (record?.card && fsrsIsCardDue(record.card, nowMs)) {
+      count++;
+    }
+  }
+  return count;
 }
 
 export interface IndonesianPrior {
@@ -99,8 +143,9 @@ export const INDONESIAN_CALIBRATED_FSRS_WEIGHTS: number[] = [
  * while prolonged hesitation signals cognitive strain (down to 0.4x stability dampening).
  */
 export function calculateLatencyFactor(latencyMs?: number, targetLatencyMs = 2500): number {
-  if (latencyMs === undefined || latencyMs <= 0) return 1.0;
-  const ratio = latencyMs / targetLatencyMs;
+  if (latencyMs === undefined || !Number.isFinite(latencyMs) || latencyMs <= 0) return 1.0;
+  const safeTarget = Number.isFinite(targetLatencyMs) && targetLatencyMs > 0 ? targetLatencyMs : 2500;
+  const ratio = latencyMs / safeTarget;
   if (ratio <= 0.6) {
     return 1.20; // Native Reflex (< 1500ms on 2500ms target)
   }
@@ -128,8 +173,12 @@ export function applyInterferencePenalty(
   const penaltyFactor = isCatastrophic ? 0.20 : 0.70;
   const difficultySurge = isCatastrophic ? 1.8 : 1.5;
 
-  const nextDifficulty = Math.min(10.0, Math.round((card.difficulty + difficultySurge) * 100) / 100);
-  const nextStability = Math.max(0.2, Math.round(card.stability * penaltyFactor * 100) / 100);
+  const rawDiff = Number.isFinite(card.difficulty) ? card.difficulty : 5.0;
+  const currentDiff = Math.min(10.0, Math.max(1.0, rawDiff));
+  const currentStab = Number.isFinite(card.stability) && card.stability > 0 ? card.stability : 1.0;
+
+  const nextDifficulty = Math.min(10.0, Math.round((currentDiff + difficultySurge) * 100) / 100);
+  const nextStability = Math.max(0.2, Math.round(currentStab * penaltyFactor * 100) / 100);
   const scheduledDays = 1; // Force immediate next-day contrastive variation review
 
   return {
@@ -153,19 +202,80 @@ export function calculateDualTrackStability(
   alphaCross = 0.25,
   betaCross = 0.65
 ): { stabilityOrtho: number; stabilityAudio: number } {
+  const ortho = Number.isFinite(currentOrthoStability) && currentOrthoStability > 0 ? currentOrthoStability : 1.0;
+  const audio = Number.isFinite(currentAudioStability) && currentAudioStability > 0 ? currentAudioStability : 1.0;
+  const target = Number.isFinite(newStability) && newStability > 0 ? newStability : 1.0;
+  const safeAlpha = Number.isFinite(alphaCross) && alphaCross >= 0 ? alphaCross : 0.25;
+  const safeBeta = Number.isFinite(betaCross) && betaCross >= 0 ? betaCross : 0.65;
+
   if (modality === 'ortho') {
-    const delta = Math.max(0, newStability - currentOrthoStability);
+    const delta = Math.max(0, target - ortho);
     return {
-      stabilityOrtho: Math.round(newStability * 100) / 100,
-      stabilityAudio: Math.round((currentAudioStability + delta * alphaCross) * 100) / 100,
+      stabilityOrtho: Math.round(target * 100) / 100,
+      stabilityAudio: Math.round((audio + delta * safeAlpha) * 100) / 100,
     };
   } else {
-    const delta = Math.max(0, newStability - currentAudioStability);
+    const delta = Math.max(0, target - audio);
     return {
-      stabilityOrtho: Math.round((currentOrthoStability + delta * betaCross) * 100) / 100,
-      stabilityAudio: Math.round(newStability * 100) / 100,
+      stabilityOrtho: Math.round((ortho + delta * safeBeta) * 100) / 100,
+      stabilityAudio: Math.round(target * 100) / 100,
     };
   }
+}
+
+/**
+ * Computes next FSRS difficulty D' in [1.0, 10.0] with mean reversion to initial difficulty D_0(Good).
+ * Formula: D' = D - w_6 * (rating - 3)
+ * Mean reversion: D_new = w_7 * w_4 + (1 - w_7) * D'
+ */
+export function fsrsNextDifficulty(
+  currentDifficulty: number,
+  rating: FSRSRating,
+  weights: number[] = DEFAULT_FSRS_WEIGHTS
+): number {
+  const safeD = Math.min(10.0, Math.max(1.0, Number.isFinite(currentDifficulty) ? currentDifficulty : weights[4]));
+  const dPrime = safeD - weights[6] * (rating - 3);
+  const dReverted = weights[7] * weights[4] + (1 - weights[7]) * dPrime;
+  const clamped = Math.min(10.0, Math.max(1.0, dReverted));
+  return Math.round(clamped * 100) / 100;
+}
+
+/**
+ * Calculates post-lapse stability and parameters for cards that failed active recall.
+ * Ye et al. (2022) FSRS v4.5 lapse recovery formula:
+ * S'_forget = w_11 * D^(-w_12) * ((S + 1)^w_13 - 1) * exp(w_14 * (1 - R))
+ *
+ * ADR-009 Fatigue-Aware Dampening:
+ * If fatigued, stability is multiplied by 1.2 to buffer against acute tiredness.
+ */
+export function fsrsPostLapseStability(
+  currentStability: number,
+  nextDifficulty: number,
+  retrievability: number,
+  isFatigued = false,
+  weights: number[] = DEFAULT_FSRS_WEIGHTS
+): number {
+  const safeS = Number.isFinite(currentStability) && currentStability > 0 ? currentStability : 0;
+  const safeD = Math.min(10.0, Math.max(1.0, Number.isFinite(nextDifficulty) ? nextDifficulty : 5.0));
+  const safeR = Number.isFinite(retrievability) ? Math.min(1.0, Math.max(0, retrievability)) : 1.0;
+
+  const sForget =
+    weights[11] *
+    Math.pow(safeD, -weights[12]) *
+    (Math.pow(safeS + 1, weights[13]) - 1) *
+    Math.exp(weights[14] * (1 - safeR));
+
+  const finalS = Math.max(0.1, isFatigued ? sForget * 1.2 : sForget);
+  return Math.round(finalS * 100) / 100;
+}
+
+/**
+ * Identifies whether a card has become a memory "leech" (recurrent lapse threshold >= 4).
+ * Such items benefit from mnemonic hooks, visual stroke breakdowns, or L1 contrastive diagnostics.
+ */
+export function fsrsIsLeech(card?: Partial<FSRSCard> | null, lapseThreshold = 4): boolean {
+  if (!card || !Number.isFinite(card.lapses)) return false;
+  return (card.lapses ?? 0) >= lapseThreshold;
 }
 
 export interface FSRSReviewOptions {
@@ -179,6 +289,8 @@ export interface FSRSReviewOptions {
   useIndonesianWeights?: boolean;
   isL1Trap?: boolean;
   isCatastrophicTrap?: boolean;
+  isKanji?: boolean;
+  matsunagaMultiplier?: number;
 }
 
 /**
@@ -194,6 +306,7 @@ export function isFatigueCondition(options?: { currentHour?: number; sessionMinu
 /**
  * Calculates updated FSRSCard metrics after a user review rating (1: Again, 2: Hard, 3: Good, 4: Easy).
  * Mathematically derived from the Ye et al. (2022) FSRS memory model with ADR-009 fatigue calibration.
+ * Hardened against NaN, clock skew, negative elapsed days, and non-finite boundary inputs.
  */
 export function calculateFSRSReview(
   existingCard: FSRSCard,
@@ -213,12 +326,20 @@ export function calculateFSRSReview(
   const lastReviewTime = existingCard.last_review
     ? new Date(existingCard.last_review).getTime()
     : now.getTime();
-  const elapsedDays = Math.max(0, (now.getTime() - lastReviewTime) / 86400000);
+  const rawElapsed = (now.getTime() - lastReviewTime) / 86400000;
+  const elapsedDays = Math.max(0, Number.isFinite(rawElapsed) ? rawElapsed : 0);
+
+  const safeStability = Number.isFinite(existingCard.stability) && existingCard.stability > 0 ? existingCard.stability : 0;
+  const rawDifficulty = Number.isFinite(existingCard.difficulty) && existingCard.difficulty > 0 ? existingCard.difficulty : 5.0;
+  const safeDifficulty = Math.min(10.0, Math.max(1.0, rawDifficulty));
+
+  const safeReps = Number.isFinite(existingCard.reps) && existingCard.reps >= 0 ? existingCard.reps : 0;
+  const safeLapses = Number.isFinite(existingCard.lapses) && existingCard.lapses >= 0 ? existingCard.lapses : 0;
 
   // Retrievability
   const r =
-    existingCard.stability > 0 && elapsedDays > 0
-      ? fsrsForgettingCurve(elapsedDays, existingCard.stability)
+    safeStability > 0 && elapsedDays > 0
+      ? fsrsForgettingCurve(elapsedDays, safeStability)
       : 1.0;
 
   let nextStability: number;
@@ -227,12 +348,15 @@ export function calculateFSRSReview(
   const weights = options.weights || (options.useIndonesianWeights ? INDONESIAN_CALIBRATED_FSRS_WEIGHTS : DEFAULT_FSRS_WEIGHTS);
 
   // If L1 trap failed on Again rating, apply catastrophic/standard interference penalty spike
-  if (options.isL1Trap && rating === 1 && existingCard.reps > 0) {
-    const penalized = applyInterferencePenalty(existingCard, options.isCatastrophicTrap);
+  if (options.isL1Trap && rating === 1 && safeReps > 0) {
+    const penalized = applyInterferencePenalty(
+      { ...existingCard, stability: safeStability, difficulty: safeDifficulty },
+      options.isCatastrophicTrap
+    );
     nextStability = penalized.stability;
     nextDifficulty = penalized.difficulty;
   } else {
-    const isInitial = existingCard.reps === 0 || existingCard.stability <= 0;
+    const isInitial = safeReps === 0 || safeStability <= 0;
 
     if (isInitial) {
       // Initial stability & difficulty
@@ -243,7 +367,7 @@ export function calculateFSRSReview(
       );
     } else {
       // Update difficulty with mean reversion
-      const dPrime = existingCard.difficulty - weights[6] * (rating - 3);
+      const dPrime = safeDifficulty - weights[6] * (rating - 3);
       const dReverted =
         weights[7] * weights[4] + (1 - weights[7]) * dPrime;
       nextDifficulty = Math.min(10, Math.max(1, dReverted));
@@ -252,24 +376,25 @@ export function calculateFSRSReview(
         // Lapse (Again)
         // ADR-009 Fatigue-Aware Dampening: if fatigued, cap difficulty surge to prevent punishment spiral
         if (isFatigued) {
-          nextDifficulty = Math.min(nextDifficulty, existingCard.difficulty + 0.4);
+          nextDifficulty = Math.min(nextDifficulty, safeDifficulty + 0.4);
         }
         const sForget =
           weights[11] *
           Math.pow(nextDifficulty, -weights[12]) *
-          (Math.pow(existingCard.stability + 1, weights[13]) - 1) *
+          (Math.pow(safeStability + 1, weights[13]) - 1) *
           Math.exp(weights[14] * (1 - r));
         nextStability = Math.max(0.1, isFatigued ? sForget * 1.2 : sForget);
       } else {
         // Successful recall (Hard, Good, Easy)
         const hardPenalty = rating === 2 ? weights[15] : 1.0;
         const easyBonus = rating === 4 ? weights[16] : 1.0;
+        const sBase = Math.max(0.1, safeStability);
         const sRecall =
-          existingCard.stability *
+          sBase *
           (1 +
             Math.exp(weights[8]) *
               (11 - nextDifficulty) *
-              Math.pow(existingCard.stability, -weights[9]) *
+              Math.pow(sBase, -weights[9]) *
               (Math.exp(weights[10] * (1 - r)) - 1) *
               hardPenalty *
               easyBonus);
@@ -281,15 +406,33 @@ export function calculateFSRSReview(
     }
   }
 
+  // Apply Matsunaga 2.3x exposure scaling for non-kanji background learners (Ticket T-54 / Matsunaga 1999)
+  if (options.isKanji) {
+    const mult = options.matsunagaMultiplier || MATSUNAGA_MULTIPLIER;
+    nextStability = Math.max(0.1, nextStability / mult);
+  }
+
+  // Numerical Safety Sanitization against NaN, Infinity, or negative boundaries
+  if (!Number.isFinite(nextStability) || nextStability < 0.1) nextStability = 0.1;
+  if (!Number.isFinite(nextDifficulty) || nextDifficulty < 1.0) nextDifficulty = 1.0;
+  if (nextDifficulty > 10.0) nextDifficulty = 10.0;
+
   // Calculate next interval
-  let nextIntervalDays = Math.max(1, Math.round(fsrsNextInterval(nextStability, requestRetention)));
+  const rawInterval = fsrsNextInterval(nextStability, requestRetention);
+  let nextIntervalDays = Math.max(1, Math.round(Number.isFinite(rawInterval) ? rawInterval : 1));
   if (rating === 1) {
+    nextIntervalDays = 1;
+  } else if (existingCard.state === 3 && elapsedDays < 1) {
+    // Intra-session / same-day relearning graduation invariant:
+    // After a lapse on the same day, successful immediate rehearsal confirms working memory
+    // but long-term memory requires sleep consolidation; schedule for Day 1 (tomorrow).
     nextIntervalDays = 1;
   }
   // Cap at 365 days
-  nextIntervalDays = Math.min(365, nextIntervalDays);
+  nextIntervalDays = Math.min(365, Math.max(1, nextIntervalDays));
 
   const nextDueDate = new Date(now.getTime() + nextIntervalDays * 86400000).toISOString();
+  const nextState = rating === 1 ? (safeReps === 0 ? 1 : 3) : 2;
 
   return {
     due: nextDueDate,
@@ -297,10 +440,9 @@ export function calculateFSRSReview(
     difficulty: Math.round(nextDifficulty * 100) / 100,
     elapsed_days: Math.round(elapsedDays),
     scheduled_days: nextIntervalDays,
-    reps: existingCard.reps + 1,
-    lapses: rating === 1 ? existingCard.lapses + 1 : existingCard.lapses,
-    state: rating === 1 ? 3 : 2,
+    reps: safeReps + 1,
+    lapses: rating === 1 ? safeLapses + 1 : safeLapses,
+    state: nextState,
     last_review: now.toISOString(),
   };
 }
-

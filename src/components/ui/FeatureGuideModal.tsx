@@ -20,6 +20,7 @@ import {
 } from 'lucide-react';
 import { useAppStore } from '../../store/useAppStore';
 import { useFocusTrap } from '../../hooks/useFocusTrap';
+import { IrasutoyaImage } from '../common/IrasutoyaImage';
 
 interface FeatureGuideModalProps {
   isOpen?: boolean;
@@ -71,8 +72,13 @@ export const FeatureGuideModal: React.FC<FeatureGuideModalProps> = ({
         {/* Modal Header */}
         <div className="flex items-center justify-between px-6 pt-5 pb-3 border-b border-accent/10">
           <div className="flex items-center gap-2.5">
-            <div className="w-9 h-9 rounded-xl bg-amber-500/20 border border-amber-500/30 flex items-center justify-center text-accent text-lg">
-              🧭
+            <div className="w-11 h-11 rounded-2xl bg-amber-500/15 border border-amber-500/30 flex items-center justify-center shrink-0 overflow-hidden shadow-glow">
+              <IrasutoyaImage
+                assetId="senpai_studying"
+                className="w-9 h-9 object-contain"
+                alt="Panduan Fitur & Navigasi"
+                animateFloat
+              />
             </div>
             <div>
               <h2 className="text-base sm:text-lg font-extrabold text-appText-bright">
@@ -139,7 +145,7 @@ export const FeatureGuideModal: React.FC<FeatureGuideModalProps> = ({
           {/* Section 1: Modules */}
           {activeSection === 'modules' && (
             <div className="space-y-3">
-              <div className="p-4 rounded-2xl bg-surface-2/70 border border-accent/15 flex items-start justify-between gap-3 hover:border-accent/30 transition-all">
+              <div className="card-interactive-lift p-4 rounded-2xl bg-surface-2/70 border border-accent/15 flex items-start justify-between gap-3 hover:border-accent/30 transition-all">
                 <div className="flex items-start gap-3">
                   <div className="w-10 h-10 rounded-xl bg-amber-500/15 border border-amber-500/25 flex items-center justify-center text-xl shrink-0 mt-0.5">
                     🏠
@@ -155,14 +161,14 @@ export const FeatureGuideModal: React.FC<FeatureGuideModalProps> = ({
                 </div>
                 <button
                   onClick={() => navigateTo('home')}
-                  className="px-3 py-1.5 rounded-lg bg-surface-3 hover:bg-accent hover:text-bg text-appText-bright text-xs font-bold shrink-0 transition-all flex items-center gap-1"
+                  className="px-3 py-1.5 min-h-[36px] rounded-lg bg-surface-3 hover:bg-accent hover:text-bg text-appText-bright text-xs font-bold shrink-0 transition-all flex items-center gap-1 active:scale-95"
                 >
                   <span>Buka</span>
                   <ArrowRight className="w-3 h-3" />
                 </button>
               </div>
 
-              <div className="p-4 rounded-2xl bg-surface-2/70 border border-accent/15 flex items-start justify-between gap-3 hover:border-accent/30 transition-all">
+              <div className="card-interactive-lift p-4 rounded-2xl bg-surface-2/70 border border-accent/15 flex items-start justify-between gap-3 hover:border-accent/30 transition-all">
                 <div className="flex items-start gap-3">
                   <div className="w-10 h-10 rounded-xl bg-orange-500/15 border border-orange-500/25 flex items-center justify-center text-xl shrink-0 mt-0.5">
                     📖
@@ -178,14 +184,14 @@ export const FeatureGuideModal: React.FC<FeatureGuideModalProps> = ({
                 </div>
                 <button
                   onClick={() => navigateTo('materi')}
-                  className="px-3 py-1.5 rounded-lg bg-surface-3 hover:bg-accent hover:text-bg text-appText-bright text-xs font-bold shrink-0 transition-all flex items-center gap-1"
+                  className="px-3 py-1.5 min-h-[36px] rounded-lg bg-surface-3 hover:bg-accent hover:text-bg text-appText-bright text-xs font-bold shrink-0 transition-all flex items-center gap-1 active:scale-95"
                 >
                   <span>Buka</span>
                   <ArrowRight className="w-3 h-3" />
                 </button>
               </div>
 
-              <div className="p-4 rounded-2xl bg-surface-2/70 border border-accent/15 flex items-start justify-between gap-3 hover:border-accent/30 transition-all">
+              <div className="card-interactive-lift p-4 rounded-2xl bg-surface-2/70 border border-accent/15 flex items-start justify-between gap-3 hover:border-accent/30 transition-all">
                 <div className="flex items-start gap-3">
                   <div className="w-10 h-10 rounded-xl bg-yellow-500/15 border border-yellow-500/25 flex items-center justify-center text-xl shrink-0 mt-0.5">
                     ⚔️
@@ -201,14 +207,14 @@ export const FeatureGuideModal: React.FC<FeatureGuideModalProps> = ({
                 </div>
                 <button
                   onClick={() => navigateTo('quiz')}
-                  className="px-3 py-1.5 rounded-lg bg-surface-3 hover:bg-accent hover:text-bg text-appText-bright text-xs font-bold shrink-0 transition-all flex items-center gap-1"
+                  className="px-3 py-1.5 min-h-[36px] rounded-lg bg-surface-3 hover:bg-accent hover:text-bg text-appText-bright text-xs font-bold shrink-0 transition-all flex items-center gap-1 active:scale-95"
                 >
                   <span>Buka</span>
                   <ArrowRight className="w-3 h-3" />
                 </button>
               </div>
 
-              <div className="p-4 rounded-2xl bg-surface-2/70 border border-accent/15 flex items-start justify-between gap-3 hover:border-accent/30 transition-all">
+              <div className="card-interactive-lift p-4 rounded-2xl bg-surface-2/70 border border-accent/15 flex items-start justify-between gap-3 hover:border-accent/30 transition-all">
                 <div className="flex items-start gap-3">
                   <div className="w-10 h-10 rounded-xl bg-emerald-500/15 border border-emerald-500/25 flex items-center justify-center text-xl shrink-0 mt-0.5">
                     🌸
@@ -224,14 +230,14 @@ export const FeatureGuideModal: React.FC<FeatureGuideModalProps> = ({
                 </div>
                 <button
                   onClick={() => navigateTo('kebun')}
-                  className="px-3 py-1.5 rounded-lg bg-surface-3 hover:bg-accent hover:text-bg text-appText-bright text-xs font-bold shrink-0 transition-all flex items-center gap-1"
+                  className="px-3 py-1.5 min-h-[36px] rounded-lg bg-surface-3 hover:bg-accent hover:text-bg text-appText-bright text-xs font-bold shrink-0 transition-all flex items-center gap-1 active:scale-95"
                 >
                   <span>Buka</span>
                   <ArrowRight className="w-3 h-3" />
                 </button>
               </div>
 
-              <div className="p-4 rounded-2xl bg-surface-2/70 border border-accent/15 flex items-start justify-between gap-3 hover:border-accent/30 transition-all">
+              <div className="card-interactive-lift p-4 rounded-2xl bg-surface-2/70 border border-accent/15 flex items-start justify-between gap-3 hover:border-accent/30 transition-all">
                 <div className="flex items-start gap-3">
                   <div className="w-10 h-10 rounded-xl bg-purple-500/15 border border-purple-500/25 flex items-center justify-center text-xl shrink-0 mt-0.5">
                     🍵
@@ -241,20 +247,20 @@ export const FeatureGuideModal: React.FC<FeatureGuideModalProps> = ({
                       Sensei AI (Tutor Virtual Cerdas)
                     </h3>
                     <p className="text-xs text-appText-muted leading-relaxed">
-                      Teman diskusi tata bahasa dan latihan percakapan interaktif (Status: Segera Hadir / Coming Soon 🍵).
+                      Teman diskusi tata bahasa dan latihan percakapan interaktif berbasis tutor cerdas.
                     </p>
                   </div>
                 </div>
                 <button
                   onClick={() => navigateTo('sensei')}
-                  className="px-3 py-1.5 rounded-lg bg-surface-3 hover:bg-accent hover:text-bg text-appText-bright text-xs font-bold shrink-0 transition-all flex items-center gap-1"
+                  className="px-3 py-1.5 min-h-[36px] rounded-lg bg-surface-3 hover:bg-accent hover:text-bg text-appText-bright text-xs font-bold shrink-0 transition-all flex items-center gap-1 active:scale-95"
                 >
                   <span>Buka</span>
                   <ArrowRight className="w-3 h-3" />
                 </button>
               </div>
 
-              <div className="p-4 rounded-2xl bg-surface-2/70 border border-accent/15 flex items-start justify-between gap-3 hover:border-accent/30 transition-all">
+              <div className="card-interactive-lift p-4 rounded-2xl bg-surface-2/70 border border-accent/15 flex items-start justify-between gap-3 hover:border-accent/30 transition-all">
                 <div className="flex items-start gap-3">
                   <div className="w-10 h-10 rounded-xl bg-stone-500/15 border border-stone-500/25 flex items-center justify-center text-xl shrink-0 mt-0.5">
                     ⚙️
@@ -270,7 +276,7 @@ export const FeatureGuideModal: React.FC<FeatureGuideModalProps> = ({
                 </div>
                 <button
                   onClick={() => navigateTo('settings')}
-                  className="px-3 py-1.5 rounded-lg bg-surface-3 hover:bg-accent hover:text-bg text-appText-bright text-xs font-bold shrink-0 transition-all flex items-center gap-1"
+                  className="px-3 py-1.5 min-h-[36px] rounded-lg bg-surface-3 hover:bg-accent hover:text-bg text-appText-bright text-xs font-bold shrink-0 transition-all flex items-center gap-1 active:scale-95"
                 >
                   <span>Buka</span>
                   <ArrowRight className="w-3 h-3" />
@@ -282,7 +288,7 @@ export const FeatureGuideModal: React.FC<FeatureGuideModalProps> = ({
           {/* Section 2: Interactive Tools */}
           {activeSection === 'tools' && (
             <div className="space-y-3">
-              <div className="p-4 rounded-2xl bg-surface-2/70 border border-accent/15 flex items-start justify-between gap-3 hover:border-accent/30 transition-all">
+              <div className="card-interactive-lift p-4 rounded-2xl bg-surface-2/70 border border-accent/15 flex items-start justify-between gap-3 hover:border-accent/30 transition-all">
                 <div className="flex items-start gap-3">
                   <div className="w-10 h-10 rounded-xl bg-amber-500/15 border border-amber-500/25 flex items-center justify-center text-xl shrink-0 mt-0.5">
                     🔤
@@ -310,7 +316,7 @@ export const FeatureGuideModal: React.FC<FeatureGuideModalProps> = ({
                 )}
               </div>
 
-              <div className="p-4 rounded-2xl bg-surface-2/70 border border-accent/15 flex items-start justify-between gap-3 hover:border-accent/30 transition-all">
+              <div className="card-interactive-lift p-4 rounded-2xl bg-surface-2/70 border border-accent/15 flex items-start justify-between gap-3 hover:border-accent/30 transition-all">
                 <div className="flex items-start gap-3">
                   <div className="w-10 h-10 rounded-xl bg-orange-500/15 border border-orange-500/25 flex items-center justify-center text-xl shrink-0 mt-0.5">
                     🔄
@@ -338,7 +344,7 @@ export const FeatureGuideModal: React.FC<FeatureGuideModalProps> = ({
                 )}
               </div>
 
-              <div className="p-4 rounded-2xl bg-surface-2/70 border border-accent/15 flex items-start justify-between gap-3 hover:border-accent/30 transition-all">
+              <div className="card-interactive-lift p-4 rounded-2xl bg-surface-2/70 border border-accent/15 flex items-start justify-between gap-3 hover:border-accent/30 transition-all">
                 <div className="flex items-start gap-3">
                   <div className="w-10 h-10 rounded-xl bg-yellow-500/15 border border-yellow-500/25 flex items-center justify-center text-xl shrink-0 mt-0.5">
                     ⚖️
@@ -366,7 +372,7 @@ export const FeatureGuideModal: React.FC<FeatureGuideModalProps> = ({
                 )}
               </div>
 
-              <div className="p-4 rounded-2xl bg-surface-2/70 border border-accent/15 flex items-start justify-between gap-3 hover:border-accent/30 transition-all">
+              <div className="card-interactive-lift p-4 rounded-2xl bg-surface-2/70 border border-accent/15 flex items-start justify-between gap-3 hover:border-accent/30 transition-all">
                 <div className="flex items-start gap-3">
                   <div className="w-10 h-10 rounded-xl bg-sky-500/15 border border-sky-500/25 flex items-center justify-center text-xl shrink-0 mt-0.5">
                     ⌨️
@@ -399,7 +405,7 @@ export const FeatureGuideModal: React.FC<FeatureGuideModalProps> = ({
           {/* Section 3: Learning Tips */}
           {activeSection === 'tips' && (
             <div className="space-y-3">
-              <div className="p-4 rounded-2xl bg-surface-2/70 border border-accent/15 space-y-2">
+              <div className="card-interactive-lift p-4 rounded-2xl bg-surface-2/70 border border-accent/15 space-y-2">
                 <div className="flex items-center gap-2 text-accent font-bold text-xs">
                   <span>⏱️</span>
                   <span>Prinsip Belajar Mikro: 5-10 Menit Setiap Hari</span>
@@ -409,7 +415,7 @@ export const FeatureGuideModal: React.FC<FeatureGuideModalProps> = ({
                 </p>
               </div>
 
-              <div className="p-4 rounded-2xl bg-surface-2/70 border border-accent/15 space-y-2">
+              <div className="card-interactive-lift p-4 rounded-2xl bg-surface-2/70 border border-accent/15 space-y-2">
                 <div className="flex items-center gap-2 text-accent font-bold text-xs">
                   <span>👂</span>
                   <span>Dengarkan Audio Sebelum Membaca Romaji</span>
@@ -419,7 +425,7 @@ export const FeatureGuideModal: React.FC<FeatureGuideModalProps> = ({
                 </p>
               </div>
 
-              <div className="p-4 rounded-2xl bg-surface-2/70 border border-accent/15 space-y-2">
+              <div className="card-interactive-lift p-4 rounded-2xl bg-surface-2/70 border border-accent/15 space-y-2">
                 <div className="flex items-center gap-2 text-accent font-bold text-xs">
                   <span>🔁</span>
                   <span>Gunakan Fitur "Latih Ulang Soal Salah"</span>
@@ -429,7 +435,7 @@ export const FeatureGuideModal: React.FC<FeatureGuideModalProps> = ({
                 </p>
               </div>
 
-              <div className="p-4 rounded-2xl bg-surface-2/70 border border-accent/15 space-y-2">
+              <div className="card-interactive-lift p-4 rounded-2xl bg-surface-2/70 border border-accent/15 space-y-2">
                 <div className="flex items-center gap-2 text-accent font-bold text-xs">
                   <span>🌱</span>
                   <span>Jadikan Kebun Kata Motivasi Visualmu</span>

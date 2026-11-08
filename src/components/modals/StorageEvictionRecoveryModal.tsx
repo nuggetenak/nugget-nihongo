@@ -3,12 +3,15 @@
 //  Protects user progress against aggressive iOS Safari / Android PWA cache evictions
 // ══════════════════════════════════════════════════════════════════
 
-import React from 'react';
+import React, { useEffect } from 'react';
 import { ShieldAlert, Download, Cloud, Trash2, X } from 'lucide-react';
 import { createBackupPayload } from '../../lib/storage/backupManager';
 import { cacheManager } from '../../lib/storage/cacheManager';
 import { useAuthStore } from '../../lib/supabase/authStore';
 import { useAppStore } from '../../store/useAppStore';
+import { useBodyScrollLock } from '../../hooks/useBodyScrollLock';
+import { useFocusTrap } from '../../hooks/useFocusTrap';
+import { IrasutoyaImage } from '../common/IrasutoyaImage';
 
 interface StorageEvictionRecoveryModalProps {
   isOpen: boolean;
@@ -25,6 +28,22 @@ export const StorageEvictionRecoveryModal: React.FC<StorageEvictionRecoveryModal
 }) => {
   const { showToast } = useAppStore();
   const { user, syncNow, openAuthModal } = useAuthStore();
+
+  const containerRef = useFocusTrap<HTMLDivElement>(isOpen, onClose);
+
+  useBodyScrollLock(isOpen);
+
+  // Close modal on Escape key
+  useEffect(() => {
+    if (!isOpen) return;
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') {
+        onClose();
+      }
+    };
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [isOpen, onClose]);
 
   if (!isOpen) return null;
 
@@ -64,15 +83,26 @@ export const StorageEvictionRecoveryModal: React.FC<StorageEvictionRecoveryModal
   };
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-4 bg-black/75 backdrop-blur-sm animate-in fade-in duration-200">
-      <div className="w-full max-w-lg bg-surface border border-rose-500/30 rounded-3xl p-5 sm:p-7 shadow-2xl space-y-5 animate-in zoom-in-95 duration-200 max-h-[90dvh] overflow-y-auto">
+    <div
+      onClick={onClose}
+      className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-4 bg-black/75 backdrop-blur-sm animate-in fade-in duration-200"
+    >
+      <div
+        ref={containerRef}
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="storage-eviction-modal-title"
+        onClick={(e) => e.stopPropagation()}
+        className="w-full max-w-lg bg-surface border border-rose-500/30 rounded-3xl p-5 sm:p-7 shadow-2xl space-y-5 animate-in zoom-in-95 duration-200 max-h-[90dvh] overflow-y-auto pb-[max(1.25rem,env(safe-area-inset-bottom))]"
+      >
+        <div className="w-12 h-1.5 rounded-full bg-accent/25 mx-auto -mt-1 mb-2 sm:hidden shrink-0" />
         <div className="flex items-start justify-between gap-3">
           <div className="flex items-center gap-3">
-            <div className="w-12 h-12 rounded-2xl bg-rose-500/15 border border-rose-500/30 flex items-center justify-center text-rose-400 shrink-0">
-              <ShieldAlert className="w-6 h-6" />
+            <div className="w-12 h-12 rounded-2xl bg-rose-500/15 border border-rose-500/30 flex items-center justify-center text-rose-700 dark:text-rose-400 font-bold shrink-0 overflow-hidden">
+              <IrasutoyaImage assetId="daruma_recovery" className="w-8 h-8" containerClassName="w-8 h-8 shrink-0" animatePop />
             </div>
             <div>
-              <h3 className="font-extrabold text-base sm:text-lg text-appText-bright">
+              <h3 id="storage-eviction-modal-title" className="font-extrabold text-base sm:text-lg text-appText-bright">
                 Peringatan Kapasitas Penyimpanan
               </h3>
               <p className="text-xs text-appText-muted mt-0.5">
@@ -82,7 +112,8 @@ export const StorageEvictionRecoveryModal: React.FC<StorageEvictionRecoveryModal
           </div>
           <button
             onClick={onClose}
-            className="p-1.5 rounded-xl hover:bg-surface-2 text-appText-muted hover:text-appText-bright transition-all"
+            className="min-h-[40px] min-w-[40px] rounded-xl hover:bg-surface-2 text-appText-muted hover:text-appText-bright transition-all flex items-center justify-center active:scale-95"
+            aria-label="Tutup peringatan penyimpanan"
           >
             <X className="w-5 h-5" />
           </button>
@@ -93,7 +124,7 @@ export const StorageEvictionRecoveryModal: React.FC<StorageEvictionRecoveryModal
           <div className="bg-surface-2 p-3.5 rounded-2xl border border-accent/15 space-y-2">
             <div className="flex justify-between text-xs font-semibold">
               <span className="text-appText-muted">Penggunaan Penyimpanan:</span>
-              <span className="text-rose-400 font-mono">{storageUsageMb} MB / {storageQuotaMb} MB</span>
+              <span className="text-rose-700 dark:text-rose-400 font-mono font-bold">{storageUsageMb} MB / {storageQuotaMb} MB</span>
             </div>
             <div className="w-full h-2 bg-surface-3 rounded-full overflow-hidden">
               <div
@@ -112,7 +143,7 @@ export const StorageEvictionRecoveryModal: React.FC<StorageEvictionRecoveryModal
           <div className="grid grid-cols-1 gap-2.5">
             <button
               onClick={handleDownloadBackup}
-              className="flex items-center justify-between p-3.5 min-h-[48px] rounded-xl bg-surface-2 hover:bg-surface-3 border border-accent/25 text-appText-bright text-xs font-bold transition-all active:scale-95"
+              className="flex items-center justify-between p-3.5 min-h-[48px] card-interactive-lift rounded-xl bg-surface-2 hover:bg-surface-3 border border-accent/25 text-appText-bright text-xs font-bold transition-all active:scale-95"
             >
               <div className="flex items-center gap-2.5">
                 <Download className="w-4 h-4 text-accent" />
@@ -123,24 +154,24 @@ export const StorageEvictionRecoveryModal: React.FC<StorageEvictionRecoveryModal
 
             <button
               onClick={handleCloudSync}
-              className="flex items-center justify-between p-3.5 min-h-[48px] rounded-xl bg-surface-2 hover:bg-surface-3 border border-emerald-500/25 text-appText-bright text-xs font-bold transition-all active:scale-95"
+              className="flex items-center justify-between p-3.5 min-h-[48px] card-interactive-lift rounded-xl bg-surface-2 hover:bg-surface-3 border border-emerald-500/25 text-appText-bright text-xs font-bold transition-all active:scale-95"
             >
               <div className="flex items-center gap-2.5">
-                <Cloud className="w-4 h-4 text-emerald-400" />
+                <Cloud className="w-4 h-4 text-emerald-700 dark:text-emerald-400" />
                 <span>2. {user ? 'Sinkronkan Progres ke Cloud' : 'Masuk Akun & Sinkronkan ke Cloud'}</span>
               </div>
-              <span className="text-xs text-emerald-400">Permanen</span>
+              <span className="text-xs text-emerald-700 dark:text-emerald-400 font-bold">Permanen</span>
             </button>
 
             <button
               onClick={handleClearCache}
-              className="flex items-center justify-between p-3.5 min-h-[48px] rounded-xl bg-surface-2 hover:bg-surface-3 border border-amber-500/25 text-appText-bright text-xs font-bold transition-all active:scale-95"
+              className="flex items-center justify-between p-3.5 min-h-[48px] card-interactive-lift rounded-xl bg-surface-2 hover:bg-surface-3 border border-amber-500/25 text-appText-bright text-xs font-bold transition-all active:scale-95"
             >
               <div className="flex items-center gap-2.5">
-                <Trash2 className="w-4 h-4 text-amber-400" />
+                <Trash2 className="w-4 h-4 text-amber-800 dark:text-amber-400" />
                 <span>3. Bersihkan Cache Audio Sementara</span>
               </div>
-              <span className="text-xs text-amber-400">Kosongkan Ruang</span>
+              <span className="text-xs text-amber-800 dark:text-amber-400 font-bold">Kosongkan Ruang</span>
             </button>
           </div>
         </div>

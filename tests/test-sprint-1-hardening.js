@@ -166,7 +166,11 @@ console.log('\n── 3. Ticket T-03: FSRS Mathematical Exponent Inversion & Acc
 const mathTsCode = fs.readFileSync(path.join(ROOT, 'src/lib/fsrs/math.ts'), 'utf8');
 
 check('math.ts has correct forgetting curve exponent -DECAY and interval exponent -1 / DECAY', () => {
-  assert(mathTsCode.includes('Math.pow(1 + FACTOR * (elapsedDays / stability), -DECAY)'), 'Forgetting curve must use -DECAY');
+  assert(
+    mathTsCode.includes('Math.pow(1 + FACTOR * (elapsedDays / stability), -DECAY)') ||
+    mathTsCode.includes('Math.pow(1 + FACTOR * (safeElapsed / stability), -DECAY)'),
+    'Forgetting curve must use -DECAY'
+  );
   assert(mathTsCode.includes('Math.pow(requestRetention, -1 / DECAY) - 1'), 'Next interval must use -1 / DECAY');
 });
 

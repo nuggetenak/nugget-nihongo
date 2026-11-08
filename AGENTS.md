@@ -1,35 +1,78 @@
-# AGENTS.md — Development Rules & Guidelines for Nugget Nihongo
+# 🍙 Nugget Nihongo — Antigravity Agent Engineering Standards
+> **Authoritative Agent Operating System & Architectural Charter**  
+> **Platform:** Google Antigravity (AGY) · **Status:** PRODUCTION ACTIVE  
+> **Repository:** `nugget-nihongo` · **Version:** v22.0.0
 
-## Universal Multi-Device Responsive Design Rule (Learned)
+---
 
-Every component, page, layout, modal, and interactive widget in Nugget Nihongo MUST be designed and verified to work seamlessly across all screen sizes and form factors:
-- **Ultra-Compact / Small Mobile**: 320px – 375px (iPhone SE, small Androids)
-- **Standard Modern Mobile**: 390px – 430px (iPhone 13/14/15/16, Galaxy S-series)
-- **Tablet / Phablet**: 640px – 1024px (iPad mini, iPad, Surface, foldables)
-- **Desktop & Wide Displays**: 1024px – 1920px+ (MacBook, PC monitors)
+## 1. Executive Summary & Brand Soul
+**Nugget Nihongo (ナゲット日本語)** is an offline-first, scientific, and comfort-driven Japanese language learning ecosystem built specifically for Indonesian native speakers.
+- **Brand Motto:** *"Bite-Sized Japanese for Indonesian Speakers · Teman Belajar Tanpa Rasa Bersalah"*
+- **Core Philosophy:** No punitive hearts/lives penalties, no anxiety-inducing public leaderboards. Steady, guilt-free daily micro-learning (5–10 minutes) powered by the **FSRS v4.5 Spaced Repetition Engine** and **L1 Indonesian Contrastive Linguistics**.
+- **Dual Flagship Tracks:**
+  1. **Academic JLPT Track:** N5 through N1 with 10,508 active vocabulary, 859 grammar patterns, and 2,210 kanji.
+  2. **Vocational SSW Track (Tokutei Ginou):** 19 industrial sectors (Kaigo nursing, Food manufacturing, Restaurant, Construction, Agriculture, etc.) with real-world K3 safety protocol drills and Prometric CBT simulations.
 
-### Anti-Leakage & Viewport Constraints
-1. **No Fixed Pixel Viewport Blowouts**:
-   - Never use rigid fixed widths (`w-[400px]`, `min-w-[140px]`) in horizontal flex/grid parents without `min-w-0` or responsive prefixes (`flex-1 min-w-0 sm:min-w-[140px]`).
-   - Containers must maintain `w-full max-w-full overflow-x-hidden` on page wrappers.
-2. **Horizontal Overflow Wrapping & Scrolling**:
-   - Filter pills, level selectors, and segmented track switchers MUST use `overflow-x-auto scrollbar-none max-w-full` with `whitespace-nowrap shrink-0` and compact labels on mobile.
-3. **Safe Area & Floating Navigation Cushion**:
-   - Mobile content containers MUST maintain adequate bottom padding: `pb-[calc(5.5rem+env(safe-area-inset-bottom))] lg:pb-12` so content and buttons are never obscured by `BottomNav`.
-4. **Touch Target Dimensions**:
-   - All interactive touch targets (buttons, pills, modal triggers, kana cells) must be at least 40px × 40px (or padded comfortably) with active scale feedback (`active:scale-95`).
-5. **Modal Adaptations**:
-   - Modals must render as bottom sheets or centered cards capped at `max-h-[90dvh] sm:max-h-[92vh] overflow-y-auto` with safe drag handles on mobile.
-6. **Japanese Typography Safeguards**:
-   - Long kanji compounds, furigana readings, and example sentences must employ `break-words`, `min-w-0`, or `truncate` to prevent pushing out card widths.
+---
 
-## Web Interface & Anti-Slop Design Guidelines Rule (Learned)
+## 2. Inviolable Engineering Rules (Zero Exception)
 
-In accordance with `.agents/rules/web-interface-guidelines.md`:
-1. **Focus Rings**: All interactive elements must show visible `:focus-visible` rings (`focus-visible:ring-2 focus-visible:ring-amber-500/60`).
-2. **Mobile Input Font Size**: Always use $\ge 16$px (`text-base sm:text-sm`) on inputs/textareas to prevent iOS Safari auto-zoom.
-3. **Touch Targets & Hit Areas**: $\ge 44 \times 44$px touch targets with `touch-action: manipulation` and active tactile press feedback (`active:scale-95`).
-4. **Compositor-Friendly Animations**: Use GPU `transform` and `opacity` only; never use `transition: all`; always honor `prefers-reduced-motion`.
-5. **Anti-Slop Brand Depth**: Adhere to the `DESIGN.md` lacquerware amber theme (`#0D0B08`, `#181410`, `#F59E0B`); never ship generic boilerplate cards.
-6. **Tabular Numerals**: Apply `tabular-nums font-mono` to counters, stats, XP, timers, and ratings.
-7. **Redundant Status Cues**: Pair color indicators with icons and descriptive text.
+### 📌 Rule 1: Cumulative Regression Test Contract
+- Historical test suites (Sprints 1–44, Phase 1–5, Siklus I–III) **must remain 100% GREEN (Exit Code 0)** on every single task and turn.
+- **Never disable, bypass, or comment out** a previous sprint's test to pass a new one.
+- Prefer validating behavioral runtime outputs and AST properties over brittle literal string matching.
+
+### 📌 Rule 2: Universal Multi-Device Responsive Design
+- Every component, modal, sheet, and button must support all screen viewports:
+  - **Ultra-Compact Mobile:** 320px – 375px (iPhone SE, small Androids) — zero horizontal scroll blowout!
+  - **Standard Mobile:** 390px – 430px (iPhone 13/14/15/16, Galaxy S)
+  - **Tablet & Foldable:** 640px – 1024px (iPad mini, iPad Air)
+  - **Desktop:** 1024px – 1920px+
+- **Touch Target Dimensions:** Interactive elements must maintain at least $40\times 40$px bounding box (`min-h-[40px]` or `min-w-[40px]`) with `active:scale-95` tactile scale.
+- **Safe Area Inset:** Mobile views must maintain bottom cushion: `pb-[calc(5.5rem+env(safe-area-inset-bottom))] lg:pb-12`.
+
+### 📌 Rule 3: Windows PowerShell Command Chaining
+- In Windows PowerShell environments, **NEVER use raw `&&`** as a statement separator.
+- Always use `;` for sequential statement separation in PowerShell, or wrap commands in `cmd /c "command1 && command2"`.
+- Maintain package locks with `legacy-peer-deps=true`.
+
+### 📌 Rule 4: Forensic Pace & Rigor
+- In multi-pass audits and refactoring, execute exactly **ONE single pass per turn**.
+- Never bundle or leapfrog multiple passes.
+- Microscopic empirical proof is mandatory: cite exact file paths, line numbers, and verified terminal test executions.
+
+---
+
+## 3. Architecture & Single Source of Truth Navigation
+All engineering and pedagogical documentation is centralized under [`docs/`](file:///c:/Users/Timedoor/Downloads/nugget%20nihonggo%20project/nugget-nihongo/docs):
+
+1. **[`docs/PROJECT_ARCHITECTURE_MAP.md`](file:///c:/Users/Timedoor/Downloads/nugget%20nihonggo%20project/nugget-nihongo/docs/PROJECT_ARCHITECTURE_MAP.md):** Complete hierarchical index of all modules, engines, modals, datasets, and test files.
+2. **[`docs/01-product-and-mission/`](file:///c:/Users/Timedoor/Downloads/nugget%20nihonggo%20project/nugget-nihongo/docs/01-product-and-mission/):** Product charter, 200 Indonesian learner personas, and milestone roadmap.
+3. **[`docs/02-architecture-and-systems/`](file:///c:/Users/Timedoor/Downloads/nugget%20nihonggo%20project/nugget-nihongo/docs/02-architecture-and-systems/):** PWA offline caching, TinyBase CRDT sync, FSRS v4.5 memory engine, and CAT IRT 3PL diagnostic.
+4. **[`docs/03-pedagogy-and-curriculum/`](file:///c:/Users/Timedoor/Downloads/nugget%20nihonggo%20project/nugget-nihongo/docs/03-pedagogy-and-curriculum/):** JLPT/JFT curricula, SSW 19 industrial sectors, and Indonesian L1 contrastive analysis.
+5. **[`docs/04-design-system-and-brand/`](file:///c:/Users/Timedoor/Downloads/nugget%20nihonggo%20project/nugget-nihongo/docs/04-design-system-and-brand/):** Warm Editorial Hybrid design system, 8 Nippon Colors tokens, and Irasutoya assets.
+6. **[`docs/05-data-corpus-and-schemas/`](file:///c:/Users/Timedoor/Downloads/nugget%20nihonggo%20project/nugget-nihongo/docs/05-data-corpus-and-schemas/):** Data schemas for 10.508 vocab, 859 grammar, 2.210 kanji, and Supabase tables.
+7. **[`docs/06-qa-and-verification-contracts/`](file:///c:/Users/Timedoor/Downloads/nugget%20nihonggo%20project/nugget-nihongo/docs/06-qa-and-verification-contracts/):** 44 Sprint cumulative contracts and multi-device verification test suites.
+8. **[`docs/07-architecture-decisions-adr/`](file:///c:/Users/Timedoor/Downloads/nugget%20nihonggo%20project/nugget-nihongo/docs/07-architecture-decisions-adr/):** Architecture Decision Records (ADR-001 through ADR-011).
+
+---
+
+## 4. Key CLI Commands & Workflows
+```powershell
+# Run the master cumulative test suite (100% green required)
+npm test
+
+# Typecheck TypeScript codebase
+npm run typecheck
+
+# Synchronize patch notes to CHANGELOG.md
+npm run changelog
+
+# Build complete production bundle
+npm run build
+
+# Start local dev server
+npm run dev
+```
+
+*Nugget Nihongo Engineering Group · Antigravity Native Operating Charter*

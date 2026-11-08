@@ -29,8 +29,10 @@ import {
   Target,
   Wrench,
   GraduationCap,
+  Users,
 } from 'lucide-react';
 import { useAppStore, AppState } from '../../store/useAppStore';
+import { useModalStore } from '../../store/useModalStore';
 import { transitionTabChange } from '../../lib/ui/navigation';
 import { useAuthStore } from '../../lib/supabase/authStore';
 import { APP_VERSION, APP_RELEASE_NAME } from '../../config/version';
@@ -292,6 +294,23 @@ export const MobileDrawer: React.FC<MobileDrawerProps> = ({
                 <div>
                   <div className="text-xs font-bold text-appText-bright">Panduan Fitur</div>
                   <div className="text-xs text-appText-muted">Direktori Lengkap</div>
+                </div>
+              </button>
+
+              <button
+                onClick={() => {
+                  useModalStore.getState().openModal('community');
+                  onClose();
+                }}
+                className="p-3 rounded-2xl bg-amber-500/10 hover:bg-amber-500/15 border border-amber-500/30 text-left flex flex-col justify-between min-h-[70px] active:scale-95 transition-all col-span-2"
+              >
+                <div className="flex items-center justify-between w-full">
+                  <Users className="w-4 h-4 text-amber-500" />
+                  <span className="text-[10px] font-bold px-1.5 py-0.5 rounded bg-amber-500/20 text-amber-700 dark:text-amber-300">Resmi</span>
+                </div>
+                <div>
+                  <div className="text-xs font-bold text-appText-bright">Study Lounge & Komunitas</div>
+                  <div className="text-xs text-appText-muted">X, IG, Discord, Trakteer & Tantangan Kanji</div>
                 </div>
               </button>
             </div>

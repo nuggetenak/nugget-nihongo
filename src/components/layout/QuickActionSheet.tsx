@@ -73,14 +73,17 @@ export const QuickActionSheet: React.FC<QuickActionSheetProps> = ({
       role="dialog"
       aria-modal="true"
       aria-label="Menu Aksi Cepat & Alat Belajar"
-      className="fixed inset-0 z-[99999] bg-stone-950/80 backdrop-blur-sm flex items-end sm:items-center justify-center p-0 sm:p-4 animate-in fade-in duration-200"
+      className="fixed inset-0 z-50 bg-stone-950/80 backdrop-blur-sm flex items-end sm:items-center justify-center p-0 sm:p-4 animate-in fade-in duration-200"
       onClick={onClose}
     >
       <div
         ref={modalRef}
         onClick={(e) => e.stopPropagation()}
-        className="w-full max-w-lg bg-surface border border-accent/25 rounded-t-3xl sm:rounded-3xl shadow-2xl flex flex-col max-h-[85dvh] sm:max-h-[80vh] overflow-hidden"
+        className="w-full max-w-lg bg-surface border border-accent/25 rounded-t-3xl sm:rounded-3xl shadow-2xl flex flex-col max-h-[85dvh] sm:max-h-[80vh] overflow-hidden pb-[max(0.5rem,env(safe-area-inset-bottom))] sm:pb-0"
       >
+        {/* Mobile Drag Handle */}
+        <div className="w-12 h-1.5 rounded-full bg-accent/25 mx-auto mt-2.5 -mb-1 sm:hidden shrink-0" />
+
         {/* Header */}
         <div className="p-4 sm:p-5 border-b border-accent/15 flex items-center justify-between bg-surface-2/50">
           <div className="flex items-center gap-2.5">
@@ -257,7 +260,7 @@ export const QuickActionSheet: React.FC<QuickActionSheetProps> = ({
               {/* Cloud Sync Status */}
               <div className="p-3 rounded-2xl bg-surface-2 border border-accent/15 flex items-center justify-between gap-3">
                 <div className="flex items-center gap-2.5 min-w-0">
-                  <div className="w-8 h-8 rounded-xl bg-emerald-500/10 border border-emerald-500/25 flex items-center justify-center text-emerald-400 shrink-0">
+                  <div className="w-8 h-8 rounded-xl bg-emerald-500/10 border border-emerald-500/25 flex items-center justify-center text-emerald-700 dark:text-emerald-400 font-bold shrink-0">
                     <Cloud className="w-4 h-4" />
                   </div>
                   <div className="min-w-0">
@@ -283,11 +286,11 @@ export const QuickActionSheet: React.FC<QuickActionSheetProps> = ({
                   className="w-full p-3 rounded-2xl bg-amber-500/10 hover:bg-amber-500/20 border border-amber-500/30 text-left flex items-center justify-between gap-3 transition-all active:scale-98 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
                 >
                   <div className="flex items-center gap-2.5 min-w-0">
-                    <div className="w-8 h-8 rounded-xl bg-amber-500/20 border border-amber-500/35 flex items-center justify-center text-amber-300 shrink-0">
+                    <div className="w-8 h-8 rounded-xl bg-amber-500/20 border border-amber-500/35 flex items-center justify-center text-amber-800 dark:text-amber-300 font-bold shrink-0">
                       <Download className="w-4 h-4" />
                     </div>
                     <div className="min-w-0">
-                      <div className="font-bold text-sm text-amber-300 truncate">Pasang Aplikasi (PWA)</div>
+                      <div className="font-bold text-sm text-amber-800 dark:text-amber-300 truncate">Pasang Aplikasi (PWA)</div>
                       <div className="text-xs text-appText-muted truncate">Akses offline cepat dari homescreen</div>
                     </div>
                   </div>

@@ -3,7 +3,7 @@
 //  Curated 50+ Minimal Pairs, 4 Tokyo Patterns Showcase, & Ear Training Drill
 // ══════════════════════════════════════════════════════════════════
 
-import { MoraUnit, calculatePitchContour, PitchCategory } from './pitchEngine';
+import { calculatePitchContour, type MoraUnit, type PitchCategory } from './pitchEngine.ts';
 
 export interface PitchWord {
   id: string;
@@ -174,13 +174,13 @@ export const MINIMAL_PAIRS: MinimalPair[] = [
     mnemonicId: "mu-SHI (Datar) serangga merayap perlahan. MU-shi (Tinggi awal) sikap dingin berpaling memutus kontak.",
   },
   {
-    id: "mp-kumo",
-    title: "Kumo (雲 vs 蜘蛛)",
-    reading: "くも",
-    blunderContext: "Menatap ke langit melihat \"awan indah\", teman kaget mengira ada laba-laba raksasa!",
-    wordA: createWord("mp-kumo-a", "雲", "くも", "kumo", 1, "Awan di Langit", "青空に白い雲が浮かんでいます。", "Awan putih melayang di langit biru."),
-    wordB: createWord("mp-kumo-b", "蜘蛛", "くも", "kumo", 1, "Laba-laba", "部屋の隅に蜘蛛が巣を張った。", "Laba-laba membuat sarang di sudut kamar."),
-    mnemonicId: "KU-mo (Tinggi) awan melayang tinggi di angkasa.",
+    id: "mp-kisha",
+    title: "Kisha (記者 vs 汽車)",
+    reading: "きしゃ",
+    blunderContext: "Mau cerita \"tadi diwawancarai wartawan berita\", tapi intonasi salah terdengar seperti \"tadi ditabrak kereta uap\"!",
+    wordA: createWord("mp-kisha-a", "記者", "きしゃ", "kisha", 1, "Wartawan / Jurnalis", "新聞の記者が取材に来ました。", "Wartawan surat kabar datang untuk meliput."),
+    wordB: createWord("mp-kisha-b", "汽車", "きしゃ", "kisha", 2, "Kereta Api Uap (Lokomotif)", "昔の汽車が走っています。", "Kereta api uap zaman dulu sedang melaju."),
+    mnemonicId: "KI-sha (Tinggi awal) wartawan sigap mengangkat mikrofon tinggi. ki-SHA (Jatuh di partikel) kereta uap melaju menyusuri rel panjang.",
   },
   {
     id: "mp-asa",
@@ -199,6 +199,15 @@ export const MINIMAL_PAIRS: MinimalPair[] = [
     wordA: createWord("mp-aki-a", "秋", "あき", "aki", 1, "Musim Gugur", "秋の紅葉がとても綺麗です。", "Pemandangan daun merah di musim gugur sangat elok."),
     wordB: createWord("mp-aki-b", "空き", "あき", "aki", 0, "Kekosongan / Tempat Luang", "駐車場に空きがありますか。", "Apakah ada tempat kosong di tempat parkir?"),
     mnemonicId: "A-ki (Tinggi awal) dedaunan musim gugur melayang jatuh. a-KI (Datar) ruang lapang terbuka luas.",
+  },
+  {
+    id: "mp-haru",
+    title: "Haru (春 vs 貼る)",
+    reading: "はる",
+    blunderContext: "Berniat membicarakan indahnya musim semi, tapi terdengar menyuruh menempelkan plester!",
+    wordA: createWord("mp-haru-a", "春", "はる", "haru", 1, "Musim Semi", "春になると桜が咲きます。", "Saat musim semi tiba bunga sakura mekar."),
+    wordB: createWord("mp-haru-b", "貼る", "はる", "haru", 0, "Menempelkan (Stiker/Poster)", "壁にポスターを貼ります。", "Menempelkan poster di dinding."),
+    mnemonicId: "HA-ru (Tinggi awal) musim semi penuh keriangan terbit. ha-RU (Datar) stiker ditempel rata di permukaan.",
   },
 ];
 
@@ -355,5 +364,121 @@ export const PITCH_QUIZ_QUESTIONS: PitchQuizQuestion[] = [
         "explanation": "Salah."
       }
     ]
+  },
+  {
+    "id": "pq-6",
+    "question": "Di restoran sushi kamu ingin memesan ikan salmon segar, bukan arak sake beralkohol. Intonasi mana yang benar?",
+    "options": [
+      {
+        "text": "鮭 (さけ) — Atamadaka [SA-ke, tinggi di suku kata awal]",
+        "isCorrect": true,
+        "explanation": "Tepat! 鮭 (ikan salmon) adalah Atamadaka (1). Kalau datar sa-KE (0), pelayan akan membawakan minuman arak sake!"
+      },
+      {
+        "text": "酒 (さけ) — Heiban [sa-KE, datar]",
+        "isCorrect": false,
+        "explanation": "Salah. Ini adalah 酒 (arak beras beralkohol)."
+      }
+    ]
+  },
+  {
+    "id": "pq-7",
+    "question": "Ingin memuji indahnya bunga di taman tanpa disangka membicarakan hidung rekan kerja. Pola apa yang tepat?",
+    "options": [
+      {
+        "text": "花 (はな) — Odaka [ha-NA, jatuh di partikel pengiring]",
+        "isCorrect": true,
+        "explanation": "Benar! 花 (bunga) adalah Odaka (2): ha-NA ga [rendah]. Sedangkan 鼻 (hidung) adalah Heiban (0): ha-NA ga [tetap tinggi]."
+      },
+      {
+        "text": "鼻 (はな) — Heiban [ha-NA, partikel tetap tinggi]",
+        "isCorrect": false,
+        "explanation": "Salah. Ini adalah 鼻 (hidung)."
+      }
+    ]
+  },
+  {
+    "id": "pq-8",
+    "question": "Ditanya atasan \"Kapan laporan ini selesai?\", kamu ingin menjawab \"Sekarang juga! (Ima)\". Bagaimana nadanya?",
+    "options": [
+      {
+        "text": "今 (いま) — Atamadaka [I-ma, tinggi di awal]",
+        "isCorrect": true,
+        "explanation": "Tepat! 今 (sekarang) adalah Atamadaka (1). Jika diucapkan i-MA (2), terdengar seperti 居間 (ruang keluarga santai)!"
+      },
+      {
+        "text": "居間 (いま) — Odaka [i-MA, jatuh di partikel]",
+        "isCorrect": false,
+        "explanation": "Salah. Ini adalah 居間 (ruang keluarga)."
+      }
+    ]
+  },
+  {
+    "id": "pq-9",
+    "question": "Di stasiun museum kamu ingin menyebut \"kereta api uap zaman dulu\", bukan jurnalis berita. Pola apa yang dipakai?",
+    "options": [
+      {
+        "text": "汽車 (きしゃ) — Odaka [ki-SHA, jatuh di partikel]",
+        "isCorrect": true,
+        "explanation": "Benar! 汽車 (kereta uap) adalah Odaka (2). Sedangkan 記者 (wartawan) adalah Atamadaka (1: KI-sha)."
+      },
+      {
+        "text": "記者 (きしゃ) — Atamadaka [KI-sha, tinggi di awal]",
+        "isCorrect": false,
+        "explanation": "Salah. Ini adalah 記者 (wartawan / jurnalis)."
+      }
+    ]
+  },
+  {
+    "id": "pq-10",
+    "question": "Di dapur restoran saat memberi instruksi memasak \"tolong potong sayur ini\", kata kerja mana yang benar?",
+    "options": [
+      {
+        "text": "切る (きる) — Atamadaka [KI-ru, tinggi di awal lalu jatuh]",
+        "isCorrect": true,
+        "explanation": "Tepat! 切る (memotong) adalah Atamadaka (1). Sedangkan 着る (mengenakan pakaian) adalah Heiban (0: ki-RU)."
+      },
+      {
+        "text": "着る (きる) — Heiban [ki-RU, datar]",
+        "isCorrect": false,
+        "explanation": "Salah. Ini adalah 着る (memakai baju)."
+      }
+    ]
   }
 ];
+
+// ══════════════════════════════════════════════════════════════════
+//  Query & Search Helper Utilities
+// ══════════════════════════════════════════════════════════════════
+
+export function getAllMinimalPairs(): MinimalPair[] {
+  return [...MINIMAL_PAIRS];
+}
+
+export function getMinimalPairById(id: string): MinimalPair | null {
+  return MINIMAL_PAIRS.find((p) => p.id === id) || null;
+}
+
+export function searchMinimalPairs(query: string): MinimalPair[] {
+  if (!query || typeof query !== 'string') return [...MINIMAL_PAIRS];
+  const q = query.toLowerCase().trim();
+  return MINIMAL_PAIRS.filter(
+    (pair) =>
+      pair.title.toLowerCase().includes(q) ||
+      pair.reading.toLowerCase().includes(q) ||
+      pair.wordA.kanji.toLowerCase().includes(q) ||
+      pair.wordA.meaning.toLowerCase().includes(q) ||
+      pair.wordB.kanji.toLowerCase().includes(q) ||
+      pair.wordB.meaning.toLowerCase().includes(q) ||
+      (pair.wordC && (pair.wordC.kanji.toLowerCase().includes(q) || pair.wordC.meaning.toLowerCase().includes(q))) ||
+      pair.blunderContext.toLowerCase().includes(q)
+  );
+}
+
+export function getPatternWords(category: PitchCategory): PitchWord[] {
+  return [...(PATTERN_WORDS[category] || [])];
+}
+
+export function getPitchQuizQuestions(): PitchQuizQuestion[] {
+  return [...PITCH_QUIZ_QUESTIONS];
+}

@@ -72,7 +72,11 @@ function main() {
 
     // Verify standardized badge & annotation sizes
     assert(hubCode.includes('text-xs font-bold px-2.5 py-1 rounded-full border'), 'Tool badges must be text-xs');
-    assert(hubCode.includes('text-sm text-stone-300 leading-relaxed'), 'Tool descriptions must be text-sm');
+    assert(
+      hubCode.includes('text-sm text-stone-300 leading-relaxed') ||
+      hubCode.includes('text-sm text-appText-muted leading-relaxed'),
+      'Tool descriptions must be text-sm'
+    );
   });
 
   // ── 3. Anti-Truncation & Readability on Descriptions and Can-Do Descriptors ──
@@ -92,8 +96,16 @@ function main() {
   test('P4.4: Features refined Urushi lacquerware styling with soft amber hover accents', () => {
     assert(hubCode.includes('hover:border-amber-500/50'), 'Tool cards must feature soft amber hover accent border');
     assert(hubCode.includes('group-hover:text-amber-400'), 'Tool card title must transition to amber-400 on hover');
-    assert(hubCode.includes('bg-surface-3/90 text-amber-300 border-amber-500/30'), 'Core modules must use refined Urushi amber badges');
-    assert(hubCode.includes('bg-surface-3/90 text-stone-200 border-accent/25'), 'Reference tools must use subtle stone lacquer badges');
+    assert(
+      hubCode.includes('bg-surface-3/90 text-accent-hot dark:text-amber-300 border-amber-500/30') ||
+      hubCode.includes('bg-surface-3/90 text-amber-300 border-amber-500/30'),
+      'Core modules must use refined Urushi amber badges'
+    );
+    assert(
+      hubCode.includes('bg-surface-3/90 text-stone-200 border-accent/25') ||
+      hubCode.includes('bg-surface-3/90 text-appText-bright border-accent/25'),
+      'Reference tools must use subtle stone lacquer badges'
+    );
   });
 
   // ── 5. Modal Isolation & Exclusive useModalStore Dispatching ──

@@ -9,6 +9,7 @@ import { conjugateVerb, inferType, VerbType } from '../../lib/grammar/conjugatio
 import { deinflectWord, DeinflectionCandidate } from '../../lib/grammar/deinflector';
 import { speakJapanese } from '../../lib/audio/tts';
 import { useFocusTrap } from '../../hooks/useFocusTrap';
+import { IrasutoyaImage } from '../common/IrasutoyaImage';
 
 interface ConjugationModalProps {
   isOpen: boolean;
@@ -117,8 +118,13 @@ export const ConjugationModal: React.FC<ConjugationModalProps> = ({
         {/* Header */}
         <div className="flex items-center justify-between border-b border-accent/15 pb-4">
           <div className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-2xl bg-amber-500/20 border border-amber-500/40 flex items-center justify-center text-accent shadow-glow">
-              <RotateCcw className="w-5 h-5" />
+            <div className="w-12 h-12 rounded-2xl bg-amber-500/15 border border-amber-500/30 flex items-center justify-center shrink-0 overflow-hidden shadow-glow">
+              <IrasutoyaImage
+                assetId="senpai_studying"
+                className="w-10 h-10 object-contain"
+                alt="Tabel Konjugasi Kata Kerja"
+                animateFloat
+              />
             </div>
             <div>
               <h2 id="conjugation-modal-title" className="text-lg sm:text-xl font-bold text-appText-bright">
@@ -156,12 +162,13 @@ export const ConjugationModal: React.FC<ConjugationModalProps> = ({
                   if (e.key === 'Enter') handleApplyVerb(inputVerb);
                 }}
                 placeholder="Ketik kata kerja bentuk kamus (misal: 飲む, 行く, 食べる)..."
-                className="w-full bg-surface-2 border border-accent/20 rounded-xl pl-9 pr-4 py-2 text-xs sm:text-sm text-appText-bright placeholder:text-appText-muted focus:outline-none focus:border-accent font-jp"
+                aria-label="Ketik kata kerja untuk mengecek konjugasi"
+                className="w-full bg-surface-2 border border-accent/20 rounded-xl pl-9 pr-4 py-2 text-xs sm:text-sm text-appText-bright placeholder:text-appText-muted focus:outline-none focus:border-accent font-jp min-h-[40px]"
               />
             </div>
             <button
               onClick={() => handleApplyVerb(inputVerb)}
-              className="px-4 py-2 rounded-xl bg-accent hover:bg-accent-hot text-bg font-bold text-xs transition-all shadow-sm shrink-0"
+              className="px-4 py-2 min-h-[40px] rounded-xl bg-accent hover:bg-accent-hot text-bg font-extrabold text-xs transition-all shadow-sm shrink-0 active:scale-95"
             >
               Cek Konjugasi
             </button>
@@ -169,16 +176,17 @@ export const ConjugationModal: React.FC<ConjugationModalProps> = ({
 
           {/* Preset Buttons */}
           <div className="flex items-center gap-1.5 overflow-x-auto pb-1 scrollbar-none text-xs">
-            <span className="text-xs font-bold uppercase tracking-wider text-accent shrink-0 mr-1">
+            <span className="text-xs font-bold uppercase tracking-wider text-amber-800 dark:text-amber-400 shrink-0 mr-1">
               Contoh:
             </span>
             {COMMON_PRESET_VERBS.map((v) => (
               <button
                 key={v.dict}
                 onClick={() => handleApplyVerb(v.dict)}
-                className={`px-2.5 py-1 rounded-lg text-xs font-semibold whitespace-nowrap transition-all border ${
+                aria-label={`Pilih kata kerja contoh ${v.dict}`}
+                className={`px-3.5 py-2 min-h-[40px] rounded-lg text-xs font-semibold whitespace-nowrap transition-all border active:scale-95 flex items-center ${
                   selectedVerb === v.dict
-                    ? 'bg-amber-500/25 border-accent text-accent-hot font-bold'
+                    ? 'bg-amber-500/25 border-accent text-amber-900 dark:text-amber-200 font-bold'
                     : 'bg-surface-2 border-accent/15 text-appText-muted hover:text-appText-bright'
                 }`}
               >
@@ -192,12 +200,12 @@ export const ConjugationModal: React.FC<ConjugationModalProps> = ({
             <div className="flex items-start sm:items-center gap-2.5 px-3.5 py-2.5 rounded-xl bg-amber-500/15 border border-amber-500/30 text-accent text-xs animate-in fade-in duration-200">
               <Sparkles className="w-4 h-4 shrink-0 text-accent-hot mt-0.5 sm:mt-0" />
               <div className="flex-1 min-w-0 leading-relaxed">
-                <span className="font-bold text-accent-hot">🔍 Terdeteksi: </span>
+                <span className="font-bold text-amber-900 dark:text-amber-200">🔍 Terdeteksi: </span>
                 <span className="text-appText-bright font-medium">
                   {detectedDeinflection.reasons.join(' → ')}
                 </span>
                 <span className="text-appText-muted"> dari bentuk kamus </span>
-                <strong className="font-jp text-sm text-accent-hot underline decoration-accent/40 font-bold ml-1">
+                <strong className="font-jp text-sm text-amber-900 dark:text-amber-200 underline decoration-accent/40 font-bold ml-1">
                   {selectedVerb}
                 </strong>
               </div>
@@ -206,7 +214,7 @@ export const ConjugationModal: React.FC<ConjugationModalProps> = ({
         </div>
 
         {/* Current Verb Summary Banner */}
-        <div className="bg-gradient-to-r from-amber-950/40 via-surface-2 to-surface-2 border border-accent/20 rounded-2xl p-4 flex items-center justify-between">
+        <div className="card-interactive-lift bg-gradient-to-r from-amber-950/40 via-surface-2 to-surface-2 border border-accent/20 rounded-2xl p-4 flex items-center justify-between">
           <div className="flex items-center gap-3">
             <div className="text-2xl sm:text-3xl font-jp font-bold text-accent-hot">
               {selectedVerb}
@@ -223,8 +231,9 @@ export const ConjugationModal: React.FC<ConjugationModalProps> = ({
 
           <button
             onClick={() => speakJapanese(selectedVerb)}
-            className="w-9 h-9 rounded-xl bg-surface hover:bg-amber-500/20 text-accent border border-accent/20 flex items-center justify-center transition-all shadow-sm"
+            className="w-10 h-10 min-w-[40px] min-h-[40px] rounded-xl bg-surface hover:bg-amber-500/20 text-accent border border-accent/20 flex items-center justify-center transition-all shadow-sm active:scale-95"
             title="Dengarkan pelafalan"
+            aria-label={`Dengarkan pelafalan ${selectedVerb}`}
           >
             <Volume2 className="w-4 h-4" />
           </button>
@@ -237,10 +246,10 @@ export const ConjugationModal: React.FC<ConjugationModalProps> = ({
             return (
               <div
                 key={row.formKey}
-                className="p-3 sm:p-3.5 rounded-xl bg-surface-2/70 border border-accent/10 hover:border-accent/30 flex items-center justify-between gap-3 transition-all"
+                className="card-interactive-lift p-3 sm:p-3.5 rounded-xl bg-surface-2/70 border border-accent/10 hover:border-accent/30 flex items-center justify-between gap-3 transition-all"
               >
                 <div className="space-y-0.5 min-w-0">
-                  <div className="text-xs font-bold text-appText-muted">
+                  <div className="text-xs font-bold text-amber-800 dark:text-amber-400">
                     {row.label}
                   </div>
                   <div className="text-sm sm:text-base font-jp font-bold text-appText-bright">
@@ -254,8 +263,9 @@ export const ConjugationModal: React.FC<ConjugationModalProps> = ({
                 {conjugated && (
                   <button
                     onClick={() => speakJapanese(conjugated)}
-                    className="p-2 rounded-xl bg-surface hover:bg-amber-500/20 text-appText-muted hover:text-accent transition-all shrink-0 border border-accent/10"
+                    className="w-10 h-10 min-w-[40px] min-h-[40px] rounded-xl bg-surface hover:bg-amber-500/20 text-appText-muted hover:text-accent transition-all shrink-0 border border-accent/10 flex items-center justify-center active:scale-95"
                     title={`Dengarkan: ${conjugated}`}
+                    aria-label={`Dengarkan konjugasi ${row.label}: ${conjugated}`}
                   >
                     <Volume2 className="w-4 h-4" />
                   </button>

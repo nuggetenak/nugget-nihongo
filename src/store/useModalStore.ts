@@ -24,7 +24,12 @@ export type ModalType =
   | 'auth'
   | 'install'
   | 'streakBroken'
-  | 'onboarding';
+  | 'onboarding'
+  | 'storageEviction'
+  | 'community'
+  | 'hvpt'
+  | 'badges'
+  | 'wordLookup';
 
 export interface ModalPropsMap {
   detail: { item: NormalizedVocab | NormalizedGrammar; type: 'vocab' | 'grammar' };
@@ -50,6 +55,11 @@ export interface ModalPropsMap {
   install: Record<string, never>;
   streakBroken: Record<string, never>;
   onboarding: Record<string, never>;
+  storageEviction: { storageUsageMb?: number; storageQuotaMb?: number };
+  community: Record<string, never>;
+  hvpt: Record<string, never>;
+  badges: Record<string, never>;
+  wordLookup: { word: string };
 }
 
 interface ModalState {
@@ -58,6 +68,8 @@ interface ModalState {
   closeModal: (type?: ModalType) => void;
   closeAllModals: () => void;
   getActiveModal: () => { type: ModalType; props?: any } | null;
+  isModalOpen: (type: ModalType) => boolean;
+  getStackDepth: () => number;
 }
 
 export const useModalStore = create<ModalState>((set, get) => ({
@@ -71,8 +83,10 @@ export const useModalStore = create<ModalState>((set, get) => ({
           modalStack: [...state.modalStack.slice(0, -1), { type, props }],
         };
       }
+      // Safety cap at 10 to prevent runaway circular stacking
+      const nextStack = [...state.modalStack, { type, props }];
       return {
-        modalStack: [...state.modalStack, { type, props }],
+        modalStack: nextStack.length > 10 ? nextStack.slice(-10) : nextStack,
       };
     });
   },
@@ -97,5 +111,13 @@ export const useModalStore = create<ModalState>((set, get) => ({
   getActiveModal: () => {
     const stack = get().modalStack;
     return stack.length > 0 ? stack[stack.length - 1] : null;
+  },
+
+  isModalOpen: (type: ModalType) => {
+    return get().modalStack.some((m) => m.type === type);
+  },
+
+  getStackDepth: () => {
+    return get().modalStack.length;
   },
 }));

@@ -21,6 +21,7 @@ import {
 import { PATCH_NOTES_HISTORY, PatchNote } from '../../lib/data/patchNotes';
 import { APP_VERSION } from '../../config/version';
 import { useFocusTrap } from '../../hooks/useFocusTrap';
+import { IrasutoyaImage } from '../common/IrasutoyaImage';
 
 interface PatchNotesModalProps {
   isOpen: boolean;
@@ -62,7 +63,7 @@ export const PatchNotesModal: React.FC<PatchNotesModalProps> = ({ isOpen, onClos
   const modalContent = (
     <div
       onClick={onClose}
-      className="fixed inset-0 z-[9999] flex items-end sm:items-center justify-center p-0 sm:p-4 bg-black/80 backdrop-blur-md animate-in fade-in duration-200"
+      className="fixed inset-0 z-50 flex items-end sm:items-center justify-center p-0 sm:p-4 bg-black/80 backdrop-blur-md animate-in fade-in duration-200"
       role="dialog"
       aria-modal="true"
       aria-label="Catatan Rilis dan Pembaruan"
@@ -81,8 +82,13 @@ export const PatchNotesModal: React.FC<PatchNotesModalProps> = ({ isOpen, onClos
         {/* Modal Header */}
         <div className="flex items-start justify-between border-b border-accent/15 pb-3 sm:pb-4 shrink-0 gap-3">
           <div className="flex items-center gap-2.5 sm:gap-3 min-w-0">
-            <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-2xl bg-amber-500/15 border border-amber-500/30 text-accent flex items-center justify-center shrink-0">
-              <History className="w-5 h-5 text-accent-hot" />
+            <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-2xl bg-amber-500/15 border border-amber-500/30 flex items-center justify-center shrink-0 overflow-hidden shadow-glow">
+              <IrasutoyaImage
+                assetId="senpai_studying"
+                className="w-9 h-9 sm:w-10 sm:h-10 object-contain"
+                alt="Catatan Rilis Nugget Nihongo"
+                animateFloat
+              />
             </div>
             <div className="min-w-0">
               <div className="flex flex-wrap items-center gap-1.5 sm:gap-2">
@@ -114,7 +120,7 @@ export const PatchNotesModal: React.FC<PatchNotesModalProps> = ({ isOpen, onClos
           <div className="flex items-center gap-1.5">
             <button
               onClick={() => setSelectedFilter('all')}
-              className={`px-3 py-1.5 rounded-xl text-xs font-bold transition-all active:scale-95 ${
+              className={`px-3 py-1.5 min-h-[36px] rounded-xl text-xs font-bold transition-all active:scale-95 ${
                 selectedFilter === 'all'
                   ? 'bg-amber-500 text-stone-950 shadow-sm font-black'
                   : 'text-appText-muted hover:text-appText-bright bg-surface-2 border border-theme'
@@ -124,7 +130,7 @@ export const PatchNotesModal: React.FC<PatchNotesModalProps> = ({ isOpen, onClos
             </button>
             <button
               onClick={() => setSelectedFilter('major')}
-              className={`px-3 py-1.5 rounded-xl text-xs font-bold transition-all active:scale-95 ${
+              className={`px-3 py-1.5 min-h-[36px] rounded-xl text-xs font-bold transition-all active:scale-95 ${
                 selectedFilter === 'major'
                   ? 'bg-amber-500 text-stone-950 shadow-sm font-black'
                   : 'text-appText-muted hover:text-appText-bright bg-surface-2 border border-theme'
@@ -136,9 +142,9 @@ export const PatchNotesModal: React.FC<PatchNotesModalProps> = ({ isOpen, onClos
 
           <button
             onClick={() => setShowTechnical(!showTechnical)}
-            className={`flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-bold transition-all border active:scale-95 ${
+            className={`flex items-center gap-1.5 px-3 py-1.5 min-h-[36px] rounded-xl text-xs font-bold transition-all border active:scale-95 ${
               showTechnical
-                ? 'bg-amber-500/15 border-amber-500/40 text-accent font-extrabold shadow-sm'
+                ? 'bg-amber-500/15 border-amber-500/40 text-amber-900 dark:text-amber-200 font-extrabold shadow-sm'
                 : 'bg-surface-2 border-theme text-appText-muted hover:text-appText-bright'
             }`}
             title="Alihkan antara bahasa ramah pembelajar dan detail teknis arsitektur"
@@ -156,7 +162,7 @@ export const PatchNotesModal: React.FC<PatchNotesModalProps> = ({ isOpen, onClos
             return (
               <div
                 key={note.version}
-                className={`rounded-2xl border transition-all ${
+                className={`card-interactive-lift rounded-2xl border transition-all ${
                   isCurrent
                     ? 'bg-surface-2/90 border-amber-500/40 shadow-sm'
                     : 'bg-surface-2/50 border-accent/15 hover:border-accent/30'
@@ -173,14 +179,14 @@ export const PatchNotesModal: React.FC<PatchNotesModalProps> = ({ isOpen, onClos
                         {note.version}
                       </span>
                       {isCurrent && (
-                        <span className="text-xs font-extrabold uppercase px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-500/30">
+                        <span className="text-xs font-extrabold uppercase px-2.5 py-0.5 rounded-full bg-emerald-500/20 text-emerald-800 dark:text-emerald-300 border border-emerald-500/30">
                           Versi Kamu
                         </span>
                       )}
                       <span
                         className={`text-xs font-bold uppercase px-2 py-0.5 rounded-full border ${
                           note.type === 'major'
-                            ? 'bg-amber-500/15 border-amber-500/30 text-accent'
+                            ? 'bg-amber-500/15 border-amber-500/30 text-amber-900 dark:text-amber-200 font-bold'
                             : 'bg-surface-3 border-accent/20 text-appText-muted'
                         }`}
                       >
@@ -208,14 +214,14 @@ export const PatchNotesModal: React.FC<PatchNotesModalProps> = ({ isOpen, onClos
                   <div className="mx-4 sm:mx-5 mb-3 p-3.5 rounded-2xl bg-amber-500/10 border border-amber-500/25 text-xs text-appText-bright leading-relaxed flex items-start gap-2.5">
                     <Sparkles className="w-4 h-4 text-accent shrink-0 mt-0.5" />
                     <div>
-                      <span className="font-extrabold text-accent">Pembaruan untuk Kamu: </span>
+                      <span className="font-extrabold text-amber-900 dark:text-amber-200">Pembaruan untuk Kamu: </span>
                       <span>{note.friendlySummary}</span>
                     </div>
                   </div>
                 )}
 
                 {/* Highlights List */}
-                <div className="px-4 sm:px-5 pb-3">
+                <div className="px-4 sm:mx-5 pb-3">
                   <div className="text-xs font-bold uppercase tracking-wider text-appText-muted mb-2">
                     {showTechnical ? 'Sorotan Teknis Arsitektur:' : 'Poin Penting untuk Belajar:'}
                   </div>
@@ -232,13 +238,13 @@ export const PatchNotesModal: React.FC<PatchNotesModalProps> = ({ isOpen, onClos
                 {/* Detailed Breakdown (Shown when expanded AND showTechnical is active) */}
                 {isExpanded && showTechnical && note.details && note.details.length > 0 && (
                   <div className="px-4 sm:px-5 pb-5 pt-3 border-t border-accent/10 space-y-3.5 animate-in fade-in duration-200">
-                    <div className="text-xs font-extrabold uppercase text-amber-500 flex items-center gap-1.5">
+                    <div className="text-xs font-extrabold uppercase text-amber-800 dark:text-amber-400 flex items-center gap-1.5">
                       <Tag className="w-3.5 h-3.5" />
                       <span>Spesifikasi & Log Rekayasa (Dev Log)</span>
                     </div>
                     {note.details.map((d, di) => (
                       <div key={di} className="space-y-1.5">
-                        <div className="text-xs font-bold text-amber-400 flex items-center gap-1.5">
+                        <div className="text-xs font-bold text-amber-800 dark:text-amber-400 flex items-center gap-1.5">
                           <Tag className="w-3 h-3" />
                           <span>{d.category}</span>
                         </div>
@@ -264,7 +270,7 @@ export const PatchNotesModal: React.FC<PatchNotesModalProps> = ({ isOpen, onClos
           <span className="text-xs sm:hidden font-mono text-accent">{APP_VERSION}</span>
           <button
             onClick={onClose}
-            className="px-4 py-2 rounded-xl bg-accent text-bg font-bold text-xs hover:bg-accent-hot transition-all shadow-sm active:scale-95 ml-auto"
+            className="px-5 py-2.5 min-h-[40px] rounded-xl bg-accent text-bg font-extrabold text-xs hover:bg-accent-hot transition-all shadow-sm active:scale-95 ml-auto"
           >
             Tutup Catatan
           </button>

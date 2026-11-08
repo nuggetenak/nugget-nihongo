@@ -7,6 +7,7 @@ import React from 'react';
 import { X, Volume2, BookOpen, GitCommit, Sparkles, Layers } from 'lucide-react';
 import { offlineDictionary, WordLookupResult } from '../../lib/japanese/offlineDictionary';
 import { audioService } from '../../lib/audio/audioService';
+import { IrasutoyaImage } from '../common/IrasutoyaImage';
 
 interface WordLookupSheetProps {
   word: string;
@@ -40,28 +41,38 @@ export const WordLookupSheet: React.FC<WordLookupSheetProps> = ({ word, isOpen, 
 
         {/* Modal Header */}
         <div className="flex items-start justify-between gap-3 border-b border-accent/15 pb-4">
-          <div className="space-y-1 min-w-0">
-            <div className="flex items-center gap-2 flex-wrap">
-              <h2 id="word-lookup-title" className="text-2xl font-black text-appText-bright font-jp tracking-wide">
-                {word}
-              </h2>
-              <button
-                type="button"
-                onClick={handlePlayAudio}
-                aria-label={`Dengarkan pelafalan ${word}`}
-                className="w-9 h-9 rounded-full bg-amber-500/15 hover:bg-amber-500/25 text-accent flex items-center justify-center transition-all active:scale-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
-              >
-                <Volume2 className="w-4 h-4" />
-              </button>
+          <div className="flex items-center gap-3 min-w-0">
+            <div className="w-11 h-11 rounded-2xl bg-amber-500/15 border border-amber-500/30 flex items-center justify-center shrink-0 overflow-hidden shadow-glow">
+              <IrasutoyaImage
+                assetId="senpai_studying"
+                className="w-9 h-9 object-contain"
+                alt="Kamus Cepat Nugget Nihongo"
+                animateFloat
+              />
             </div>
-            <div className="text-xs text-appText-muted">Kamus Cepat & Analisis Morfologi</div>
+            <div className="space-y-0.5 min-w-0">
+              <div className="flex items-center gap-2 flex-wrap">
+                <h2 id="word-lookup-title" className="text-xl sm:text-2xl font-black text-appText-bright font-jp tracking-wide">
+                  {word}
+                </h2>
+                <button
+                  type="button"
+                  onClick={handlePlayAudio}
+                  aria-label={`Dengarkan pelafalan ${word}`}
+                  className="w-10 h-10 min-w-[40px] min-h-[40px] rounded-full bg-amber-500/15 hover:bg-amber-500/25 text-accent flex items-center justify-center transition-all active:scale-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+                >
+                  <Volume2 className="w-4 h-4" />
+                </button>
+              </div>
+              <div className="text-xs text-appText-muted">Kamus Cepat & Analisis Morfologi</div>
+            </div>
           </div>
 
           <button
             type="button"
             onClick={onClose}
             aria-label="Tutup jendela kamus"
-            className="w-10 h-10 rounded-full bg-surface-2 hover:bg-surface-3 text-appText-muted hover:text-appText-bright flex items-center justify-center transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent shrink-0"
+            className="w-11 h-11 min-w-[44px] min-h-[44px] rounded-full bg-surface-2 hover:bg-surface-3 text-appText-muted hover:text-appText-bright flex items-center justify-center transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent shrink-0 active:scale-95"
           >
             <X className="w-5 h-5" />
           </button>
@@ -69,9 +80,9 @@ export const WordLookupSheet: React.FC<WordLookupSheetProps> = ({ word, isOpen, 
 
         {/* 1. Exact Match Result Card */}
         {result.exactMatch && (
-          <div className="bg-surface-2 rounded-2xl p-4 border border-accent/20 space-y-2">
+          <div className="card-interactive-lift bg-surface-2 rounded-2xl p-4 border border-accent/20 space-y-2">
             <div className="flex items-center justify-between">
-              <div className="text-xs font-bold text-accent font-mono uppercase tracking-wider">
+              <div className="text-xs font-bold text-amber-800 dark:text-amber-400 font-mono uppercase tracking-wider">
                 {result.exactMatch.level} · {result.exactMatch.pos || 'Kata'}
               </div>
               <div className="text-xs text-appText-muted font-mono">{result.exactMatch.romaji}</div>
@@ -93,13 +104,13 @@ export const WordLookupSheet: React.FC<WordLookupSheetProps> = ({ word, isOpen, 
               {result.deinflections.map((item, idx) => (
                 <div
                   key={idx}
-                  className="p-3.5 rounded-xl bg-amber-500/10 border border-amber-500/20 space-y-2 text-xs"
+                  className="card-interactive-lift p-3.5 rounded-xl bg-amber-500/10 border border-amber-500/20 space-y-2 text-xs"
                 >
                   <div className="flex items-center justify-between flex-wrap gap-1">
-                    <span className="font-bold text-accent-hot font-jp text-sm">
+                    <span className="font-bold text-amber-900 dark:text-amber-200 font-jp text-sm">
                       Bentuk Dasar: {item.candidate.lemma}
                     </span>
-                    <span className="px-2 py-0.5 rounded-full bg-amber-500/20 text-accent text-xs font-semibold">
+                    <span className="px-2 py-0.5 rounded-full bg-amber-500/20 text-amber-800 dark:text-amber-300 text-xs font-bold">
                       {item.candidate.pos}
                     </span>
                   </div>
@@ -131,12 +142,21 @@ export const WordLookupSheet: React.FC<WordLookupSheetProps> = ({ word, isOpen, 
 
         {/* 3. Fallback when no exact match or deinflection */}
         {!result.exactMatch && result.deinflections.length === 0 && (
-          <div className="p-6 text-center space-y-2 bg-surface-2 rounded-2xl border border-accent/15">
-            <div className="text-2xl">🔍</div>
-            <div className="text-sm font-bold text-appText-bright">Kata Belum Terdaftar di Indeks Cepat</div>
-            <p className="text-xs text-appText-muted">
-              Cobalah mencari kata dasar atau periksa di Kamus Lengkap & Pencarian Global.
-            </p>
+          <div className="p-6 text-center space-y-3 bg-surface-2 rounded-2xl border border-accent/15">
+            <div className="w-12 h-12 mx-auto flex items-center justify-center">
+              <IrasutoyaImage
+                assetId="daruma_recovery"
+                className="w-12 h-12 object-contain"
+                alt="Kata Belum Terdaftar"
+                animateFloat
+              />
+            </div>
+            <div className="space-y-1">
+              <div className="text-sm font-bold text-appText-bright">Kata Belum Terdaftar di Indeks Cepat</div>
+              <p className="text-xs text-appText-muted max-w-xs mx-auto">
+                Cobalah mencari kata dasar atau periksa di Kamus Lengkap & Pencarian Global.
+              </p>
+            </div>
           </div>
         )}
 

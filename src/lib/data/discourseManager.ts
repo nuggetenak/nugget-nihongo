@@ -4,8 +4,8 @@
 //  Addresses Kritik 4: Deconstructing authentic extended discourse & collocations
 // ══════════════════════════════════════════════════════════════════
 
-import { JLPTLevel } from '../../types/vocab';
-import { QuizQuestionItem } from '../../types/quiz';
+import type { JLPTLevel } from '../../types/vocab.ts';
+import type { QuizQuestionItem } from '../../types/quiz.ts';
 
 function shuffle<T>(array: T[]): T[] {
   const arr = [...array];

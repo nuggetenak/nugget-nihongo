@@ -1,7 +1,33 @@
 // ══════════════════════════════════════════════════════════════════
 //  syntheticAudioFallback.ts — Web Audio Oscillator Synthesis Fallback
 //  Generates zero-asset pitch accent contours & feedback tones
+//  Includes automated Web Audio Node Garbage Collection & Disconnect
 // ══════════════════════════════════════════════════════════════════
+
+/**
+ * Schedule disconnect on gain and oscillator nodes after sound finishes to prevent Web Audio memory leaks
+ */
+function scheduleCleanup(gain: GainNode, oscillators: OscillatorNode[], stopTime: number, ctx: AudioContext) {
+  let cleaned = false;
+  const doCleanup = () => {
+    if (cleaned) return;
+    cleaned = true;
+    try {
+      oscillators.forEach((o) => {
+        try { o.disconnect(); } catch {}
+      });
+      gain.disconnect();
+    } catch {}
+  };
+
+  const lastOsc = oscillators[oscillators.length - 1];
+  if (lastOsc) {
+    lastOsc.onended = doCleanup;
+  }
+
+  const delayMs = Math.max(10, Math.ceil((stopTime - ctx.currentTime) * 1000) + 60);
+  setTimeout(doCleanup, delayMs);
+}
 
 class SyntheticAudioService {
   private ctx: AudioContext | null = null;
@@ -40,8 +66,10 @@ class SyntheticAudioService {
       osc.connect(gain);
       gain.connect(ctx.destination);
 
+      const stopTime = ctx.currentTime + durationMs / 1000;
       osc.start();
-      osc.stop(ctx.currentTime + durationMs / 1000);
+      osc.stop(stopTime);
+      scheduleCleanup(gain, [osc], stopTime, ctx);
     } catch (err) {
       console.warn('[syntheticAudio] Mora tone synthesis error:', err);
     }
@@ -82,8 +110,10 @@ class SyntheticAudioService {
         gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 0.35);
         osc.connect(gain);
         gain.connect(ctx.destination);
+        const stopTime = ctx.currentTime + 0.35;
         osc.start();
-        osc.stop(ctx.currentTime + 0.35);
+        osc.stop(stopTime);
+        scheduleCleanup(gain, [osc], stopTime, ctx);
       } else {
         // Low warm reminder beep
         osc.type = 'sine';
@@ -93,8 +123,10 @@ class SyntheticAudioService {
         gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 0.3);
         osc.connect(gain);
         gain.connect(ctx.destination);
+        const stopTime = ctx.currentTime + 0.3;
         osc.start();
-        osc.stop(ctx.currentTime + 0.3);
+        osc.stop(stopTime);
+        scheduleCleanup(gain, [osc], stopTime, ctx);
       }
     } catch (err) {
       console.warn('[syntheticAudio] Comprehension beep error:', err);

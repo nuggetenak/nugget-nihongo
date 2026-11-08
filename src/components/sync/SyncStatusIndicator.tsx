@@ -3,18 +3,32 @@
 //  Displays live Supabase CRDT sync state, offline cues, and manual trigger
 // ══════════════════════════════════════════════════════════════════
 
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Cloud, CloudOff, RefreshCw, CheckCircle2, AlertCircle } from 'lucide-react';
 import { useAuthStore } from '../../lib/supabase/authStore';
+import { localStore } from '../../lib/storage/localStore.ts';
 
 export const SyncStatusIndicator: React.FC = () => {
   const { user, syncStatus, lastSyncedAt, syncNow, openAuthModal } = useAuthStore();
+  const [dirtyCount, setDirtyCount] = useState(0);
+
+  useEffect(() => {
+    const checkDirty = () => {
+      try {
+        setDirtyCount(localStore.getDirtyMutations().length);
+      } catch {}
+    };
+    checkDirty();
+    const timer = setInterval(checkDirty, 3000);
+    return () => clearInterval(timer);
+  }, [syncStatus]);
 
   if (!user) {
     return (
       <button
         onClick={() => openAuthModal('signin')}
         title="Masuk untuk menyinkronkan progres ke cloud"
+        aria-label="Mode Tamu: Masuk untuk menyinkronkan progres ke cloud"
         className="flex items-center gap-1.5 px-3 py-1.5 min-h-[40px] rounded-full text-xs font-semibold bg-surface-2/80 hover:bg-surface-3 border border-accent/15 text-appText-muted hover:text-appText-bright transition-all active:scale-95"
       >
         <CloudOff className="w-3.5 h-3.5 text-slate-400" />
@@ -41,6 +55,10 @@ export const SyncStatusIndicator: React.FC = () => {
     icon = <AlertCircle className="w-3.5 h-3.5 text-rose-400" />;
     label = 'Gagal';
     badgeColor = 'bg-rose-500/10 border-rose-500/30 text-rose-400';
+  } else if (dirtyCount > 0) {
+    icon = <Cloud className="w-3.5 h-3.5 text-amber-500" />;
+    label = `Antrean (${dirtyCount})`;
+    badgeColor = 'bg-amber-500/10 border-amber-500/30 text-amber-500';
   } else if (syncStatus === 'idle') {
     icon = <Cloud className="w-3.5 h-3.5 text-accent" />;
     label = 'Awan';
@@ -65,6 +83,7 @@ export const SyncStatusIndicator: React.FC = () => {
           ? 'Sinkronisasi gagal. Klik untuk mencoba kembali.'
           : `Tersinkron ke cloud${relativeTime ? ` (${relativeTime})` : ''}. Klik untuk menyinkronkan sekarang.`
       }
+      aria-label={`Status sinkronisasi cloud: ${label}${relativeTime ? ` (${relativeTime})` : ''}`}
       className={`flex items-center gap-1.5 px-3 py-1.5 min-h-[40px] rounded-full text-xs font-semibold border transition-all active:scale-95 ${badgeColor}`}
     >
       {icon}

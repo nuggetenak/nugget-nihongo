@@ -4,7 +4,7 @@
 //  SKM Nuance Contrast, Genki Cue Substitution, & Quartet Roleplay
 // ══════════════════════════════════════════════════════════════════
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import {
   X,
   Sparkles,
@@ -21,6 +21,7 @@ import { AuthenticDrillItem } from '../../lib/data/authenticExerciseManager';
 import { speakJapanese } from '../../lib/audio/tts';
 import { playSuccessSfx, playErrorSfx, playFanfareSfx } from '../../lib/audio/sfx';
 import { useAppStore } from '../../store/useAppStore';
+import { useBodyScrollLock } from '../../hooks/useBodyScrollLock';
 
 interface AuthenticDrillModalProps {
   isOpen: boolean;
@@ -60,6 +61,21 @@ export const AuthenticDrillModal: React.FC<AuthenticDrillModalProps> = ({
   const [isAnswered, setIsAnswered] = useState(false);
   const [score, setScore] = useState(0);
   const [isFinished, setIsFinished] = useState(false);
+
+  // Lock background scroll when drill modal is active
+  useBodyScrollLock(isOpen);
+
+  // Close modal on Escape key
+  useEffect(() => {
+    if (!isOpen) return;
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') {
+        onClose();
+      }
+    };
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [isOpen, onClose]);
 
   if (!isOpen || drills.length === 0) return null;
 
@@ -135,7 +151,7 @@ export const AuthenticDrillModal: React.FC<AuthenticDrillModalProps> = ({
 
           <button
             onClick={onClose}
-            className="p-2 rounded-xl bg-surface hover:bg-surface-3 text-appText-muted hover:text-appText-bright transition-colors"
+            className="w-10 h-10 min-h-[40px] min-w-[40px] flex items-center justify-center p-2 rounded-xl bg-surface hover:bg-surface-3 text-appText-muted hover:text-appText-bright transition-all active:scale-95"
             title="Tutup"
             aria-label="Tutup modal"
           >
@@ -245,7 +261,7 @@ export const AuthenticDrillModal: React.FC<AuthenticDrillModalProps> = ({
 
               {/* Situational Context */}
               {(currentDrill.situation_context || currentDrill.situation) && (
-                <div className="p-3 rounded-xl bg-amber-500/10 border border-amber-500/25 text-xs text-amber-300">
+                <div className="p-3 rounded-xl bg-amber-500/10 border border-amber-500/25 text-xs text-amber-800 dark:text-amber-300 font-bold">
                   <span className="font-bold">Konteks Situasi: </span>
                   {currentDrill.situation_context || currentDrill.situation}
                 </div>
@@ -263,7 +279,7 @@ export const AuthenticDrillModal: React.FC<AuthenticDrillModalProps> = ({
               {currentDrill.sign_example && (
                 <div className="p-3.5 rounded-2xl bg-amber-500/10 border border-amber-500/25 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
                   <div>
-                    <span className="text-xs font-bold uppercase text-amber-400 block mb-0.5">Tanda / Rambu Seikatsu:</span>
+                    <span className="text-xs font-bold uppercase text-amber-800 dark:text-amber-400 font-bold block mb-0.5">Tanda / Rambu Seikatsu:</span>
                     <div className="text-base sm:text-lg font-jp font-bold text-appText-bright">
                       {currentDrill.sign_example}
                     </div>
@@ -351,7 +367,7 @@ export const AuthenticDrillModal: React.FC<AuthenticDrillModalProps> = ({
 
               {/* Contrastive Nuance (e.g. SKM nuance comparison) */}
               {currentDrill.contrastive_nuance && (
-                <div className="p-2.5 rounded-xl bg-amber-500/10 border border-amber-500/25 text-xs text-amber-300">
+                <div className="p-2.5 rounded-xl bg-amber-500/10 border border-amber-500/25 text-xs text-amber-800 dark:text-amber-300 font-bold">
                   <span className="font-bold">Distingsi Nuansa: </span>
                   {currentDrill.contrastive_nuance}
                 </div>
@@ -366,9 +382,9 @@ export const AuthenticDrillModal: React.FC<AuthenticDrillModalProps> = ({
                   let btnStyle = 'bg-surface-2 hover:bg-surface-3 border-accent/15 text-appText-bright';
                   if (isAnswered) {
                     if (isCorrect) {
-                      btnStyle = 'bg-emerald-500/20 border-emerald-500/50 text-emerald-300 font-bold';
+                      btnStyle = 'bg-emerald-500/20 border-emerald-500/50 text-emerald-700 dark:text-emerald-300 font-bold';
                     } else if (isSelected) {
-                      btnStyle = 'bg-red-500/20 border-red-500/50 text-red-300';
+                      btnStyle = 'bg-rose-500/20 border-rose-500/50 text-rose-700 dark:text-rose-300 font-bold';
                     } else {
                       btnStyle = 'bg-surface-2/40 border-accent/10 text-appText-muted opacity-60';
                     }
@@ -408,7 +424,7 @@ export const AuthenticDrillModal: React.FC<AuthenticDrillModalProps> = ({
                   </div>
 
                   {selectedOption && currentDrill.diagnostic_feedback?.[selectedOption] && (
-                    <div className="text-xs text-amber-300 bg-amber-500/10 p-2.5 rounded-xl border border-amber-500/25">
+                    <div className="text-xs text-amber-800 dark:text-amber-300 font-bold bg-amber-500/10 p-2.5 rounded-xl border border-amber-500/25">
                       ⚠️ {currentDrill.diagnostic_feedback[selectedOption]}
                     </div>
                   )}

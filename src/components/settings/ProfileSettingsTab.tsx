@@ -80,7 +80,7 @@ export const ProfileSettingsTab: React.FC<ProfileSettingsTabProps> = ({
     }
   };
 
-  const bloomedKanjiCount = plants.filter((p) => p.stage >= 3).length;
+  const bloomedKanjiCount = plants.filter((p) => p.stage >= 4).length;
 
   return (
     <div className="space-y-6 sm:space-y-8 animate-in fade-in duration-200">

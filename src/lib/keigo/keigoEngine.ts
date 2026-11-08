@@ -4,14 +4,14 @@
 // ══════════════════════════════════════════════════════════════════
 
 import {
-  HonorificRegister,
+  type HonorificRegister,
   KEIGO_VERB_BANK,
   KEIGO_NOUN_BANK,
   KEIGO_SCENARIO_BANK,
-  KeigoVerb,
-  KeigoNounWord,
-  KeigoScenario,
-} from './keigoData';
+  type KeigoVerb,
+  type KeigoNounWord,
+  type KeigoScenario,
+} from './keigoData.ts';
 
 export type ActorAnswer = 'self' | 'other';
 export type AddresseeAnswer = 'direct' | 'third-party';
@@ -153,6 +153,23 @@ export function gradeKeigoInput(
       feedback: `Hebat! Bentuk ${target === 'sonkeigo' ? 'Sonkeigo (尊敬語)' : 'Kenjougo (謙譲語)'} dari "${verb.dictionaryForm}" adalah "${expected}".`,
       expectedAnswer: expected,
     };
+  }
+
+  // Detect double keigo (二重敬語) on irregular sonkeigo verbs (e.g. お召し上がりになる, おっしゃられる, ご覧になられる)
+  if (target === 'sonkeigo' && verb.type === 'irregular') {
+    const sonkeigoCore = verb.sonkeigo.replace(/になる$/, '').replace(/る$/, '');
+    const hasCore = input.includes(sonkeigoCore);
+    const hasRedundantPrefix = (input.startsWith('お') || input.startsWith('ご')) && !verb.sonkeigo.startsWith(input.charAt(0));
+    const hasRedundantSuffix = input.includes('られる') || input.includes('れる') || input.includes('なられる') || (verb.sonkeigo.endsWith('る') && input.includes('になる'));
+
+    if (hasCore && (hasRedundantPrefix || hasRedundantSuffix)) {
+      return {
+        isCorrect: false,
+        score: 50,
+        feedback: `Perhatian: Terdeteksi "Double Keigo" (二重敬語)! Kata "${verb.sonkeigo}" sendiri SUDAH merupakan bentuk Sonkeigo murni. Menambahkan awalan "お〜/ご〜" atau akhiran "〜られる/〜になる" dianggap berlebihan dan rancu dalam etiket bisnis modern. Cukup gunakan "${expected}".`,
+        expectedAnswer: expected,
+      };
+    }
   }
 
   // Detect regular mistake pattern on irregular verbs (e.g. お食べになる for 食べる)

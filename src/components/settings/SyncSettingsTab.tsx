@@ -16,8 +16,8 @@ import { SyncStatusPill } from '../ui/SyncStatusPill';
 
 interface SyncSettingsTabProps {
   user: any;
-  syncStatus: 'idle' | 'syncing' | 'error' | 'success';
-  lastSyncedAt: string | null;
+  syncStatus: 'idle' | 'syncing' | 'error' | 'success' | 'synced';
+  lastSyncedAt: string | Date | null;
   openAuthModal: () => void;
   signOut: () => void;
   syncNow: () => Promise<void>;
@@ -84,7 +84,7 @@ export const SyncSettingsTab: React.FC<SyncSettingsTabProps> = ({
         </div>
 
         {user ? (
-          <div className="p-4 rounded-xl bg-surface-2/60 border border-emerald-500/20 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+          <div className="p-4 card-interactive-lift rounded-xl bg-surface-2/60 border border-emerald-500/20 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
             <div className="space-y-1 min-w-0">
               <div className="flex items-center gap-2">
                 <CheckCircle2 className="w-4 h-4 text-emerald-500 shrink-0" />
@@ -118,7 +118,7 @@ export const SyncSettingsTab: React.FC<SyncSettingsTabProps> = ({
             </div>
           </div>
         ) : (
-          <div className="p-4 rounded-xl bg-surface-2/60 border border-accent/15 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+          <div className="p-4 card-interactive-lift rounded-xl bg-surface-2/60 border border-accent/15 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
             <div className="space-y-1">
               <div className="flex items-center gap-2">
                 <CloudOff className="w-4 h-4 text-amber-500 shrink-0" />
@@ -157,7 +157,8 @@ export const SyncSettingsTab: React.FC<SyncSettingsTabProps> = ({
             </p>
           </div>
           <button
-            className="p-2 rounded-lg hover:bg-surface-2 text-appText-muted transition-all"
+            onClick={() => setIsSbCardExpanded(!isSbCardExpanded)}
+            className="p-2 min-h-[40px] min-w-[40px] rounded-xl hover:bg-surface-2 text-appText-muted transition-all flex items-center justify-center active:scale-95"
             aria-label="Buka konfigurasi Supabase mandiri"
           >
             <ChevronDown

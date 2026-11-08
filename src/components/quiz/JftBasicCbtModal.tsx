@@ -433,7 +433,7 @@ export const JftBasicCbtModal: React.FC<JftBasicCbtModalProps> = ({
 
             <button
               onClick={onClose}
-              className="w-8 h-8 rounded-full bg-surface hover:bg-surface-3 text-appText-muted hover:text-appText-bright flex items-center justify-center text-sm transition-colors"
+              className="w-10 h-10 min-w-[40px] min-h-[40px] rounded-full bg-surface hover:bg-surface-3 text-appText-muted hover:text-appText-bright flex items-center justify-center text-sm transition-colors active:scale-95"
               aria-label="Tutup Simulator JFT"
             >
               ✕
@@ -606,7 +606,7 @@ export const JftBasicCbtModal: React.FC<JftBasicCbtModalProps> = ({
                           setCurrentQuestionIndex(idx);
                           setShowPaletteDrawer(false);
                         }}
-                        className={`w-9 h-9 rounded-xl font-mono text-xs font-black transition-all flex items-center justify-center relative ${
+                        className={`w-10 h-10 min-w-[40px] min-h-[40px] rounded-xl font-mono text-xs font-black transition-all flex items-center justify-center relative active:scale-95 ${
                           isCurrent
                             ? 'ring-2 ring-accent text-accent-hot bg-surface'
                             : isFlagged
@@ -751,7 +751,7 @@ export const JftBasicCbtModal: React.FC<JftBasicCbtModalProps> = ({
                 type="button"
                 onClick={() => setCurrentQuestionIndex((prev) => Math.max(0, prev - 1))}
                 disabled={currentQuestionIndex === 0}
-                className="px-4 py-2.5 rounded-xl bg-surface hover:bg-surface-3 disabled:opacity-40 disabled:pointer-events-none text-appText font-bold text-xs flex items-center gap-1.5 transition-colors"
+                className="min-h-[44px] px-4 py-2.5 rounded-xl bg-surface hover:bg-surface-3 disabled:opacity-40 disabled:pointer-events-none text-appText font-bold text-xs flex items-center gap-1.5 transition-colors active:scale-95"
               >
                 <ChevronLeft className="w-4 h-4" />
                 <span>Sebelumnya (前へ)</span>
@@ -761,7 +761,7 @@ export const JftBasicCbtModal: React.FC<JftBasicCbtModalProps> = ({
                 <button
                   type="button"
                   onClick={() => setCurrentQuestionIndex((prev) => prev + 1)}
-                  className="px-5 py-2.5 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-stone-950 font-black text-xs flex items-center gap-1.5 transition-all shadow-sm"
+                  className="min-h-[44px] px-5 py-2.5 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-stone-950 font-black text-xs flex items-center gap-1.5 transition-all shadow-sm active:scale-95"
                 >
                   <span>Selanjutnya (次へ)</span>
                   <ChevronRight className="w-4 h-4" />
@@ -770,7 +770,7 @@ export const JftBasicCbtModal: React.FC<JftBasicCbtModalProps> = ({
                 <button
                   type="button"
                   onClick={handleSubmitExam}
-                  className="px-6 py-2.5 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-stone-950 font-black text-xs flex items-center gap-1.5 transition-all shadow-md animate-pulse"
+                  className="min-h-[44px] px-6 py-2.5 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-stone-950 font-black text-xs flex items-center gap-1.5 transition-all shadow-md animate-pulse active:scale-95"
                 >
                   <span>Selesaikan & Kumpulkan Ujian JFT</span>
                 </button>

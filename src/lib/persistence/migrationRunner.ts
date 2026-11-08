@@ -3,7 +3,7 @@
 //  Safely upgrades local storage and IndexedDB structures across app releases
 // ══════════════════════════════════════════════════════════════════
 
-import { FSRSCard } from '../../types/fsrs';
+import type { FSRSCard } from '../../types/fsrs';
 
 export const CURRENT_SCHEMA_VERSION = 3;
 export const SCHEMA_VERSION_KEY = 'nn_schema_version';

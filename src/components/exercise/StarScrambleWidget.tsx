@@ -7,6 +7,13 @@
 import React from 'react';
 import { Star, RotateCcw, Sparkles } from 'lucide-react';
 import { ExerciseItem, StarScramblePayload } from '../../types/exercise';
+import { IrasutoyaImage } from '../common/IrasutoyaImage';
+import {
+  findMatchingOptionIndex,
+  slotAvailableToken,
+  unslotToken,
+  resetScrambleState,
+} from '../../lib/exercise/starScrambleHelper';
 
 interface StarScrambleWidgetProps {
   item: ExerciseItem;
@@ -31,39 +38,47 @@ export const StarScrambleWidget: React.FC<StarScrambleWidgetProps> = ({
   const scramble = item.starScramble;
   if (!scramble) return null;
 
-  const starPosition = scramble.starPosition; // 1..4
+  const starPosition = Math.max(1, Math.min(4, Math.floor(scramble.starPosition || 1)));
+
+  // Auto-sync Star slot token with matching option index (Ticket T-41)
+  React.useEffect(() => {
+    if (isSubmitted) return;
+    const starToken = slottedTokens[starPosition - 1];
+    if (starToken) {
+      const matchIdx = findMatchingOptionIndex(starToken, item.options);
+      if (matchIdx !== -1 && selectedOptionIndex !== matchIdx) {
+        onSelectOption(matchIdx);
+      }
+    } else if (selectedOptionIndex !== undefined && selectedOptionIndex >= 0) {
+      // Star slot is empty, clear selection if currently selected
+      onSelectOption(-1);
+    }
+  }, [slottedTokens, starPosition, item.options, selectedOptionIndex, isSubmitted, onSelectOption]);
 
   // Tap available token to insert into first empty slot
   const handleTapAvailableToken = (token: string, tokenIdx: number) => {
     if (isSubmitted) return;
-    const firstEmptySlot = slottedTokens.findIndex((s) => s === null);
-    if (firstEmptySlot === -1) return; // all slots full
-
-    const newSlots = [...slottedTokens];
-    newSlots[firstEmptySlot] = token;
-
-    const newAvailable = availableTokens.filter((_, idx) => idx !== tokenIdx);
-    onTokenChange(newAvailable, newSlots);
+    const next = slotAvailableToken(availableTokens, slottedTokens, tokenIdx);
+    if (next.slottedIndex !== -1) {
+      onTokenChange(next.availableTokens, next.slottedTokens);
+    }
   };
 
   // Tap slotted token to return to available bank
   const handleTapSlot = (slotIdx: number) => {
     if (isSubmitted) return;
-    const token = slottedTokens[slotIdx];
-    if (!token) return;
-
-    const newSlots = [...slottedTokens];
-    newSlots[slotIdx] = null;
-
-    const newAvailable = [...availableTokens, token];
-    onTokenChange(newAvailable, newSlots);
+    const next = unslotToken(availableTokens, slottedTokens, slotIdx);
+    if (next.returnedToken !== null) {
+      onTokenChange(next.availableTokens, next.slottedTokens);
+    }
   };
 
   // Reset all tokens back to bank
   const handleReset = () => {
     if (isSubmitted) return;
-    const allTokens = [...item.starScramble!.tokens];
-    onTokenChange(allTokens, [null, null, null, null]);
+    const reset = resetScrambleState(item.starScramble!.tokens);
+    onTokenChange(reset.availableTokens, reset.slottedTokens);
+    onSelectOption(-1);
   };
 
   return (
@@ -71,11 +86,16 @@ export const StarScrambleWidget: React.FC<StarScrambleWidgetProps> = ({
       {/* ── HEADER & INSTRUCTIONS ──────────────────────────────────── */}
       <div className="flex items-center justify-between gap-3 border-b border-theme/60 pb-3">
         <div className="flex items-center gap-2 min-w-0">
-          <div className="w-8 h-8 rounded-xl bg-amber-500/15 border border-amber-500/30 flex items-center justify-center shrink-0">
-            <Star className="w-4 h-4 fill-amber-400 text-amber-400" />
+          <div className="w-10 h-10 rounded-xl bg-amber-500/15 border border-amber-500/30 flex items-center justify-center shrink-0 shadow-sm overflow-hidden">
+            <IrasutoyaImage
+              assetId="senpai_studying"
+              className="w-8 h-8 object-contain"
+              alt="Mondai 2 Susun Kalimat"
+              animateFloat
+            />
           </div>
           <div className="min-w-0">
-            <span className="text-xs font-black uppercase tracking-wider text-amber-400">
+            <span className="text-xs font-black uppercase tracking-wider text-amber-800 dark:text-amber-400 font-bold">
               Mondai 2: Susun Kalimat (★)
             </span>
             <p className="text-xs text-appText-muted truncate">
@@ -88,7 +108,7 @@ export const StarScrambleWidget: React.FC<StarScrambleWidgetProps> = ({
           <button
             type="button"
             onClick={handleReset}
-            className="min-h-[38px] px-3 py-1.5 rounded-xl bg-surface hover:bg-surface-3 border border-theme text-xs font-bold text-appText-bright flex items-center gap-1.5 transition-all active:scale-95 shrink-0 shadow-sm"
+            className="min-h-[40px] px-3.5 py-1.5 rounded-xl bg-surface hover:bg-surface-3 border border-theme text-xs font-bold text-appText-bright flex items-center gap-1.5 transition-all active:scale-95 shrink-0 shadow-sm"
             title="Reset susunan kalimat"
           >
             <RotateCcw className="w-3.5 h-3.5 text-accent" />
@@ -98,7 +118,7 @@ export const StarScrambleWidget: React.FC<StarScrambleWidgetProps> = ({
       </div>
 
       {/* ── SENTENCE TARGET WITH 4 SLOTTED GAPS ─────────────────────── */}
-      <div className="bg-surface border border-theme rounded-2xl p-4 sm:p-5 space-y-3">
+      <div className="card-interactive-lift bg-surface border border-theme rounded-2xl p-4 sm:p-5 space-y-3">
         <div className="text-xs font-bold text-appText-muted uppercase tracking-wider flex items-center gap-1.5">
           <Sparkles className="w-3.5 h-3.5 text-amber-400" />
           <span>Kalimat Rumpang Soal:</span>
@@ -125,10 +145,10 @@ export const StarScrambleWidget: React.FC<StarScrambleWidgetProps> = ({
                   className={`min-h-[44px] min-w-[64px] sm:min-w-[80px] px-2.5 sm:px-3 py-1.5 rounded-xl text-xs sm:text-sm font-black transition-all flex items-center justify-center gap-1 border-2 active:scale-95 ${
                     isStarSlot
                       ? filledToken
-                        ? 'bg-amber-500/20 border-amber-400 text-amber-300 shadow-sm'
-                        : 'bg-amber-500/10 border-dashed border-amber-400/80 text-amber-300/80 animate-pulse'
+                        ? 'animate-slot-snap bg-amber-500/20 border-amber-400 text-amber-700 dark:text-amber-300 font-bold shadow-sm'
+                        : 'bg-amber-500/10 border-dashed border-amber-400/80 text-amber-700 dark:text-amber-300/80 font-bold animate-pulse'
                       : filledToken
-                      ? 'bg-surface-2 border-theme text-appText-bright shadow-sm'
+                      ? 'animate-slot-snap bg-surface-2 border-theme text-appText-bright shadow-sm'
                       : 'bg-surface-2/40 border-dashed border-theme text-appText-muted'
                   }`}
                   title={filledToken ? `Ketuk untuk kembalikan "${filledToken}"` : `Slot ${slotIdx + 1}`}
@@ -166,14 +186,14 @@ export const StarScrambleWidget: React.FC<StarScrambleWidgetProps> = ({
               type="button"
               onClick={() => handleTapAvailableToken(token, tokenIdx)}
               disabled={isSubmitted}
-              className="min-h-[44px] px-4 py-2 rounded-xl bg-surface-2 hover:bg-surface-3 border border-theme text-appText-bright font-bold text-xs sm:text-sm transition-all shadow-sm active:scale-95 hover:border-amber-500/50 flex items-center gap-1.5"
+              className="card-interactive-lift min-h-[44px] px-4 py-2 rounded-xl bg-surface-2 hover:bg-surface-3 border border-theme text-appText-bright font-bold text-xs sm:text-sm transition-all shadow-sm active:scale-95 hover:border-amber-500/50 flex items-center gap-1.5"
             >
               <span>{token}</span>
             </button>
           ))}
 
           {availableTokens.length === 0 && (
-            <div className="text-xs text-emerald-400 font-bold py-2 flex items-center gap-1.5">
+            <div className="text-xs text-emerald-700 dark:text-emerald-400 font-bold py-2 flex items-center gap-1.5">
               <span>✓ Semua kata telah terpasang ke dalam slot kalimat.</span>
             </div>
           )}
@@ -185,7 +205,7 @@ export const StarScrambleWidget: React.FC<StarScrambleWidgetProps> = ({
         <div className="text-xs font-bold text-appText-muted uppercase tracking-wider flex items-center justify-between">
           <span>Kata manakah yang masuk pada slot bintang (★)?</span>
           {slottedTokens[starPosition - 1] && (
-            <span className="text-amber-400 font-mono font-bold">
+            <span className="text-amber-800 dark:text-amber-400 font-mono font-bold">
               Terpilih: {slottedTokens[starPosition - 1]}
             </span>
           )}
@@ -202,9 +222,9 @@ export const StarScrambleWidget: React.FC<StarScrambleWidgetProps> = ({
                 type="button"
                 onClick={() => onSelectOption(optIdx)}
                 disabled={isSubmitted}
-                className={`min-h-[48px] px-4 py-3 rounded-2xl border-2 text-left font-bold text-xs sm:text-sm transition-all flex items-center justify-between gap-3 active:scale-[0.98] ${
+                className={`card-interactive-lift min-h-[48px] px-4 py-3 rounded-2xl border-2 text-left font-bold text-xs sm:text-sm transition-all flex items-center justify-between gap-3 active:scale-[0.98] ${
                   isSelected
-                    ? 'bg-amber-500/15 border-amber-400 text-amber-300 shadow-sm'
+                    ? 'bg-amber-500/15 border-amber-400 text-amber-900 dark:text-amber-300 font-bold shadow-sm'
                     : 'bg-surface hover:bg-surface-2 border-theme text-appText-bright'
                 }`}
               >
@@ -218,7 +238,7 @@ export const StarScrambleWidget: React.FC<StarScrambleWidgetProps> = ({
                   >
                     {optionLetter}
                   </span>
-                  <span className="truncate">{option}</span>
+                  <span className="break-words leading-tight">{option}</span>
                 </div>
 
                 {isSelected && (

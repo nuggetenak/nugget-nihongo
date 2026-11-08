@@ -105,7 +105,10 @@ function main() {
     assert(homeCode.includes('CurriculumTrackBrowser'), 'HomePage must embed CurriculumTrackBrowser');
     assert(homeCode.includes('getNextUncompletedLesson(activeTrackId, trackData, trackProgress)'), 'Dynamic next lesson engine');
     assert(homeCode.includes('openLessonStudy('), 'Lesson study dispatcher');
-    assert(homeCode.includes('Streak {streak} Hari Aktif'), 'Synchronous streak render contract');
+    assert(
+      homeCode.includes('Streak ${streak} Hari Aktif') || homeCode.includes('Streak {streak} Hari Aktif'),
+      'Synchronous streak render contract'
+    );
     assert(homeCode.includes('dueCount > 0'), 'Due count evaluation');
     assert(homeCode.includes('<SyncStatusPill />'), 'SyncStatusPill mount contract');
     assert(homeCode.includes('pb-[calc(5.5rem+env(safe-area-inset-bottom))] lg:pb-12'), 'Safe navigation cushion contract');

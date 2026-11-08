@@ -54,6 +54,15 @@ function invertIndex(arr, key) {
 
 // ── Build O(1) index ──────────────────────────────────
 window.buildVocabIndex = function () {
+  if (!window.vocabDB || window.vocabDB.length === 0) {
+    window.vocabDB = [
+      ...(window.vocabN5 || []),
+      ...(window.vocabN4 || []),
+      ...(window.vocabN3 || []),
+      ...(window.vocabN2 || []),
+      ...(window.vocabN1 || []),
+    ].filter(Boolean);
+  }
   window.vocabIdx = {
     byId      : new Map(window.vocabDB.map(v => [v.id, v])),
     byPos     : groupBy(window.vocabDB, 'pos'),
@@ -97,6 +106,9 @@ function buildBookIndex() {
  * @returns VocabEntry[]
  */
 window.queryVocab = function (filter = {}) {
+  if (!window.vocabIdx && ((window.vocabDB && window.vocabDB.length > 0) || (window.vocabN5 && window.vocabN5.length > 0))) {
+    window.buildVocabIndex();
+  }
   const idx = window.vocabIdx;
   if (!idx) return [];
 
@@ -118,6 +130,9 @@ window.queryVocab = function (filter = {}) {
 
 /** Ambil satu vocab by id */
 window.getVocab = function (id) {
+  if (!window.vocabIdx && ((window.vocabDB && window.vocabDB.length > 0) || (window.vocabN5 && window.vocabN5.length > 0))) {
+    window.buildVocabIndex();
+  }
   return window.vocabIdx?.byId.get(id) || null;
 };
 
@@ -151,5 +166,10 @@ window.sampleVocab = function (filter = {}, n = 10) {
   const pool = window.queryVocab(filter);
   return pool.sort(() => Math.random() - 0.5).slice(0, n);
 };
+
+// Auto-build index on load if data is ready
+if (window.vocabDB && window.vocabDB.length > 0) {
+  window.buildVocabIndex();
+}
 
 })();

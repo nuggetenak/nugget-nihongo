@@ -1,6 +1,8 @@
 import React from 'react';
 import { usePwaStore } from '../../lib/pwa/pwaStore';
 import { Download, Share, PlusSquare, CheckCircle2, X, Smartphone, Zap, WifiOff } from 'lucide-react';
+import { useBodyScrollLock } from '../../hooks/useBodyScrollLock';
+import { IrasutoyaImage } from '../common/IrasutoyaImage';
 
 interface InstallModalProps {
   isOpen?: boolean;
@@ -18,6 +20,8 @@ export const InstallModal: React.FC<InstallModalProps> = ({ isOpen, onClose }) =
   } = usePwaStore();
 
   const modalOpen = isOpen !== undefined ? isOpen : showInstallModal;
+  useBodyScrollLock(modalOpen);
+
   const handleClose = () => {
     if (onClose) {
       onClose();
@@ -38,7 +42,7 @@ export const InstallModal: React.FC<InstallModalProps> = ({ isOpen, onClose }) =
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm animate-fade-in">
       <div
-        className="w-full max-w-md max-h-[90vh] overflow-y-auto bg-surface border border-accent/25 rounded-2xl shadow-2xl p-6 relative text-left scrollbar-none"
+        className="w-full max-w-md max-h-[90vh] overflow-y-auto bg-surface border border-accent/25 rounded-3xl shadow-2xl p-6 relative text-left scrollbar-none"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Glow corner accent */}
@@ -56,61 +60,66 @@ export const InstallModal: React.FC<InstallModalProps> = ({ isOpen, onClose }) =
 
         {/* Header */}
         <div className="flex items-center gap-3.5 mb-5">
-          <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-amber-500 to-amber-700 flex items-center justify-center shadow-lg shadow-amber-950/50 text-2xl">
-            🍙
+          <div className="w-12 h-12 rounded-2xl bg-amber-500/15 border border-amber-500/30 flex items-center justify-center shadow-glow shrink-0 overflow-hidden">
+            <IrasutoyaImage
+              assetId="senpai_studying"
+              className="w-10 h-10 object-contain"
+              alt="Pasang PWA Nugget Nihongo"
+              animateFloat
+            />
           </div>
           <div>
-            <h3 className="text-lg font-bold text-amber-100 flex items-center gap-1.5">
+            <h3 className="text-lg font-bold text-amber-950 dark:text-amber-100 flex items-center gap-1.5">
               Pasang Nugget Nihongo
             </h3>
-            <p className="text-xs text-amber-400/80">Pengalaman Belajar PWA Offline Penuh</p>
+            <p className="text-xs text-amber-800 dark:text-amber-300 font-medium">Pengalaman Belajar PWA Offline Penuh</p>
           </div>
         </div>
 
         {/* Features Benefit Pills */}
-        <div className="grid grid-cols-1 gap-2.5 mb-6 text-xs text-amber-200/90">
-          <div className="flex items-center gap-2.5 p-2.5 rounded-lg bg-amber-950/30 border border-amber-800/30">
-            <WifiOff className="w-4 h-4 text-amber-400 shrink-0" />
+        <div className="grid grid-cols-1 gap-2.5 mb-6 text-xs text-appText-bright">
+          <div className="card-interactive-lift flex items-center gap-2.5 p-3 rounded-xl bg-surface-2 border border-theme">
+            <WifiOff className="w-4 h-4 text-accent shrink-0" />
             <span>Mode Offline Penuh: Belajar tanpa perlu kuota internet</span>
           </div>
-          <div className="flex items-center gap-2.5 p-2.5 rounded-lg bg-amber-950/30 border border-amber-800/30">
-            <Zap className="w-4 h-4 text-amber-400 shrink-0" />
+          <div className="card-interactive-lift flex items-center gap-2.5 p-3 rounded-xl bg-surface-2 border border-theme">
+            <Zap className="w-4 h-4 text-accent shrink-0" />
             <span>Buka instan seperti aplikasi native dari beranda HP</span>
           </div>
-          <div className="flex items-center gap-2.5 p-2.5 rounded-lg bg-amber-950/30 border border-amber-800/30">
-            <Smartphone className="w-4 h-4 text-amber-400 shrink-0" />
+          <div className="card-interactive-lift flex items-center gap-2.5 p-3 rounded-xl bg-surface-2 border border-theme">
+            <Smartphone className="w-4 h-4 text-accent shrink-0" />
             <span>Layar penuh bebas gangguan bilah browser</span>
           </div>
         </div>
 
         {/* Platform-specific instructions */}
         {isInstalled ? (
-          <div className="text-center p-4 rounded-xl bg-emerald-950/30 border border-emerald-800/40 text-emerald-300 mb-4">
-            <CheckCircle2 className="w-8 h-8 text-emerald-400 mx-auto mb-2" />
-            <p className="font-semibold text-sm">Aplikasi Sudah Terpasang!</p>
-            <p className="text-xs text-emerald-400/80 mt-1">
+          <div className="text-center p-4 rounded-xl bg-emerald-500/10 border border-emerald-500/30 text-emerald-800 dark:text-emerald-300 mb-4">
+            <CheckCircle2 className="w-8 h-8 text-emerald-600 dark:text-emerald-400 mx-auto mb-2" />
+            <p className="font-bold text-sm">Aplikasi Sudah Terpasang!</p>
+            <p className="text-xs text-emerald-700 dark:text-emerald-400/90 mt-1">
               Buka aplikasi langsung melalui ikon di layar utama perangkat Anda.
             </p>
           </div>
         ) : isIos ? (
-          <div className="p-4 rounded-xl bg-amber-950/40 border border-amber-800/40 mb-4 space-y-3">
-            <p className="text-xs font-semibold text-amber-200 uppercase tracking-wider">
+          <div className="p-4 rounded-xl bg-surface-2 border border-theme mb-4 space-y-3">
+            <p className="text-xs font-bold text-amber-800 dark:text-amber-400 uppercase tracking-wider">
               Cara Pasang di iPhone / iPad (Safari):
             </p>
-            <ol className="text-xs text-amber-300/90 space-y-2 list-decimal list-inside">
+            <ol className="text-xs text-appText-muted space-y-2 list-decimal list-inside">
               <li className="flex items-center gap-2">
                 <span>1. Ketuk ikon Bagikan</span>
-                <Share className="w-4 h-4 text-amber-400 inline" />
+                <Share className="w-4 h-4 text-accent inline" />
                 <span>di bilah bawah Safari</span>
               </li>
               <li className="flex items-center gap-2">
                 <span>2. Gulir lalu pilih</span>
-                <span className="font-semibold text-amber-200 flex items-center gap-1">
+                <span className="font-bold text-appText-bright flex items-center gap-1">
                   <PlusSquare className="w-4 h-4 inline" /> Tambah ke Layar Utama
                 </span>
               </li>
               <li>
-                <span>3. Ketuk <strong className="text-amber-100">Tambah (Add)</strong> di pojok kanan atas</span>
+                <span>3. Ketuk <strong className="text-appText-bright">Tambah (Add)</strong> di pojok kanan atas</span>
               </li>
             </ol>
           </div>
@@ -118,7 +127,7 @@ export const InstallModal: React.FC<InstallModalProps> = ({ isOpen, onClose }) =
           <div className="mb-4">
             <button
               onClick={handleInstallClick}
-              className="w-full py-3 px-4 rounded-xl bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-stone-950 font-bold text-sm flex items-center justify-center gap-2 shadow-lg shadow-amber-900/40 active:scale-[0.98] transition-all"
+              className="w-full min-h-[44px] py-3 px-4 rounded-xl bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-stone-950 font-extrabold text-sm flex items-center justify-center gap-2 shadow-lg shadow-amber-900/40 active:scale-95 transition-all"
             >
               <Download className="w-4 h-4" />
               Pasang Sekarang ke Layar Utama
@@ -134,8 +143,8 @@ export const InstallModal: React.FC<InstallModalProps> = ({ isOpen, onClose }) =
 
         {/* Footer dismiss */}
         <button
-          onClick={() => setShowInstallModal(false)}
-          className="w-full py-2 text-center text-xs text-amber-400/70 hover:text-amber-300 transition-colors"
+          onClick={handleClose}
+          className="w-full min-h-[40px] py-2 text-center text-xs text-appText-muted hover:text-accent-hot transition-colors flex items-center justify-center active:scale-95 font-semibold"
         >
           Nanti Saja
         </button>

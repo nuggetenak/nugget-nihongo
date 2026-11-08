@@ -1,7 +1,10 @@
 // ══════════════════════════════════════════════════════════════════
 //  kanjiMasteryStore.ts — Persistent Kanji Touch-Writing Mastery Tracker
 //  Maintains practice history, stroke accuracy & mastery milestones
+//  Synchronized with TinyBase IndexedDB localStore & dirty mutation queues
 // ══════════════════════════════════════════════════════════════════
+
+import { localStore } from '../storage/localStore.ts';
 
 export type KanjiMasteryLevel = 'learning' | 'practiced' | 'mastered';
 
@@ -24,6 +27,26 @@ class KanjiMasteryManager {
   }
 
   private loadRecords(): void {
+    // 1. Load from TinyBase IndexedDB localStore
+    try {
+      const dbRecords = localStore.getAllKanjiMastery();
+      if (dbRecords && dbRecords.length > 0) {
+        dbRecords.forEach((r) => {
+          this.records.set(r.character, {
+            character: r.character,
+            totalAttempts: r.total_attempts,
+            successfulWrites: r.successful_writes,
+            averageScore: r.average_score,
+            lastPracticed: r.last_practiced,
+            masteryLevel: r.mastery_level,
+          });
+        });
+      }
+    } catch (err) {
+      // Fallback
+    }
+
+    // 2. Load and merge with localStorage fallback
     if (typeof localStorage === 'undefined') return;
     try {
       const raw = localStorage.getItem(STORAGE_KEY);
@@ -31,12 +54,16 @@ class KanjiMasteryManager {
         const parsed = JSON.parse(raw);
         if (typeof parsed === 'object' && parsed !== null) {
           Object.entries(parsed).forEach(([char, record]) => {
-            this.records.set(char, record as KanjiMasteryRecord);
+            const existing = this.records.get(char);
+            const r = record as KanjiMasteryRecord;
+            if (!existing || r.lastPracticed > existing.lastPracticed) {
+              this.records.set(char, r);
+            }
           });
         }
       }
     } catch {
-      this.records.clear();
+      // Ignore parse errors
     }
   }
 
@@ -95,6 +122,29 @@ class KanjiMasteryManager {
     this.records.set(character, updated);
     this.persistRecords();
 
+    // Replicate to TinyBase IndexedDB localStore & dirty sync queue
+    try {
+      localStore.setKanjiMastery({
+        character,
+        total_attempts: newAttempts,
+        successful_writes: newSuccesses,
+        average_score: newAvgScore,
+        last_practiced: updated.lastPracticed,
+        mastery_level: level,
+        updated_at: Date.now(),
+      });
+
+      localStore.addKanjiPracticeLog({
+        session_id: `klog_${character}_${Date.now()}_${Math.random().toString(36).substring(2, 7)}`,
+        character,
+        score,
+        is_complete: isComplete,
+        practiced_at: Date.now(),
+      });
+    } catch (err) {
+      console.warn('[kanjiMasteryStore] Failed to replicate to TinyBase localStore:', err);
+    }
+
     return updated;
   }
 
@@ -129,6 +179,12 @@ class KanjiMasteryManager {
   public clearRecords(): void {
     this.records.clear();
     this.persistRecords();
+    try {
+      const all = localStore.getAllKanjiMastery();
+      all.forEach((r) => {
+        localStore.getRawStore().delRow('kanji_mastery', r.character);
+      });
+    } catch {}
   }
 }
 

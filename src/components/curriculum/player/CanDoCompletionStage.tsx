@@ -14,15 +14,17 @@ import {
   FileText,
   Sparkles,
   HeartHandshake,
+  Lock,
 } from 'lucide-react';
 import { CurriculumLesson } from '../../../types/curriculum';
 import { useAppStore } from '../../../store/useAppStore';
 import { speakJapanese } from '../../../lib/audio/speechEngine';
 import { RubyText } from '../../ui/RubyText';
+import { IrasutoyaImage } from '../../common/IrasutoyaImage';
 
 interface CanDoCompletionStageProps {
   lesson: CurriculumLesson;
-  drillScore: number;
+  drillScore: number | null;
   onNextLesson?: () => void;
   onBackToCatalog: () => void;
 }
@@ -34,17 +36,46 @@ export const CanDoCompletionStage: React.FC<CanDoCompletionStageProps> = ({
   onBackToCatalog,
 }) => {
   const { completedLessonIds, completeLesson } = useAppStore();
-  const isPassed = drillScore >= 80;
+  const awardedSet = new Set(completedLessonIds);
+  const isLessonPreviouslyCompleted = Boolean(lesson?.id && awardedSet.has(lesson.id));
+  const isPassed = isLessonPreviouslyCompleted || (drillScore !== null && drillScore >= 80);
   const [showPocketSummary, setShowPocketSummary] = useState(true);
 
   // Ticket T-48 & Ticket T-196: Eradicate Infinite XP Exploit & Implement Deduplicated Lesson Completion
   // Uses persistent completed lessons registry ('nn_completed_lesson_xp_ids') to ensure incrementXp(50) only fires once
-  const awardedSet = new Set(completedLessonIds);
   useEffect(() => {
     if (isPassed && lesson?.id && !awardedSet.has(lesson.id)) {
       completeLesson(lesson.id, lesson.grammar_ids || [], lesson.vocab_ids || []);
     }
   }, [isPassed, lesson?.id, completedLessonIds, completeLesson]);
+
+  if (!isPassed) {
+    return (
+      <div className="py-12 px-4 text-center space-y-4 max-w-md mx-auto">
+        <div className="w-16 h-16 rounded-3xl bg-amber-500/15 border border-amber-500/30 text-amber-700 dark:text-amber-400 flex items-center justify-center mx-auto shadow-sm relative">
+          <IrasutoyaImage assetId="senpai_studying" animateFloat className="w-12 h-12 object-contain" alt="Senpai Belajar" />
+          <div className="absolute -bottom-1 -right-1 p-1 rounded-full bg-surface border border-amber-500/30 text-amber-700 dark:text-amber-400">
+            <Lock className="w-3.5 h-3.5" />
+          </div>
+        </div>
+        <div className="space-y-1.5">
+          <h3 className="text-lg font-bold text-appText-bright">Tahap 4 Terkunci</h3>
+          <p className="text-xs text-appText-muted leading-relaxed">
+            Kamu harus menyelesaikan latihan Cek Pemahaman di Tahap 3 dengan skor kelulusan minimal <strong>80%</strong> untuk membuka Tantangan Nyata &amp; menyimpan kosakata ke FSRS.
+          </p>
+        </div>
+        <div className="pt-2">
+          <button
+            type="button"
+            onClick={onBackToCatalog}
+            className="min-h-[44px] px-5 py-2.5 rounded-xl bg-surface-2 hover:bg-surface-3 border border-border-theme text-xs font-bold text-appText-bright active:scale-95 card-interactive-lift"
+          >
+            Kembali ke Kurikulum
+          </button>
+        </div>
+      </div>
+    );
+  }
 
   const challenge = lesson.can_do_challenge;
   const pocketSummary = lesson.pocket_summary || challenge?.pocketSummary;
@@ -64,18 +95,23 @@ export const CanDoCompletionStage: React.FC<CanDoCompletionStageProps> = ({
     <div className="space-y-6 animate-scale-in min-w-0">
       {/* ── 1. Banner Skor & Status Kelulusan ────────────────────── */}
       <div
-        className={`p-6 sm:p-7 rounded-3xl border text-center space-y-3.5 shadow-sm ${
+        className={`p-6 sm:p-7 rounded-3xl border text-center space-y-3.5 shadow-sm card-interactive-lift ${
           isPassed
             ? 'bg-gradient-to-br from-emerald-500/15 via-surface to-surface-2 border-emerald-500/30'
             : 'bg-surface-2 border-amber-500/30'
         }`}
       >
-        <div className="w-16 h-16 rounded-3xl bg-surface border border-accent/20 flex items-center justify-center text-3xl mx-auto shadow-sm">
-          {isPassed ? <Trophy className="w-8 h-8 text-amber-400" /> : <BookOpen className="w-8 h-8 text-accent" />}
+        <div className="w-16 h-16 rounded-3xl bg-surface border border-accent/20 flex items-center justify-center mx-auto shadow-sm">
+          <IrasutoyaImage
+            assetId={isPassed ? 'hanko_excellent' : 'daruma_recovery'}
+            animatePop
+            className="w-12 h-12 object-contain"
+            alt={isPassed ? 'Taihen Yoku Dekimashita' : 'Daruma Pemulihan'}
+          />
         </div>
 
         <div className="space-y-1">
-          <div className="text-xs font-bold uppercase tracking-wider text-accent">
+          <div className="text-xs font-bold uppercase tracking-wider text-amber-800 dark:text-amber-300">
             Hasil Evaluasi Pelajaran #{lesson.lesson_number}
           </div>
           <h2 className="text-xl sm:text-2xl font-extrabold text-appText-bright">
@@ -90,17 +126,17 @@ export const CanDoCompletionStage: React.FC<CanDoCompletionStageProps> = ({
 
         <div className="inline-flex items-center gap-2 px-4 py-2 rounded-2xl bg-surface border border-accent/20">
           <span className="text-xs text-appText-muted font-bold">Akurasi Cek Pemahaman:</span>
-          <span className="text-2xl font-extrabold text-accent font-mono">{drillScore}%</span>
+          <span className="text-2xl font-extrabold text-accent font-mono">{drillScore !== null ? `${drillScore}%` : '—'}</span>
         </div>
       </div>
 
       {/* ── 2. Tantangan Nyata (Real Communicative Challenge) ──────── */}
-      <div className="p-5 sm:p-6 rounded-3xl bg-surface border border-accent/20 space-y-4 shadow-sm">
+      <div className="p-5 sm:p-6 rounded-3xl bg-surface border border-accent/20 space-y-4 shadow-sm card-interactive-lift">
         <div className="flex items-center gap-2">
-          <span className="p-1.5 rounded-lg bg-emerald-500/20 text-emerald-400 text-xs">
+          <span className="p-1.5 rounded-lg bg-emerald-500/20 text-emerald-700 dark:text-emerald-400 text-xs">
             <CheckCircle2 className="w-4 h-4" />
           </span>
-          <span className="text-xs font-bold uppercase tracking-wider text-emerald-400">
+          <span className="text-xs font-bold uppercase tracking-wider text-emerald-800 dark:text-emerald-300">
             Target Kemampuan Nyata
           </span>
         </div>
@@ -110,9 +146,9 @@ export const CanDoCompletionStage: React.FC<CanDoCompletionStageProps> = ({
         </div>
 
         {challenge && (
-          <div className="p-4 sm:p-5 rounded-2xl bg-surface-2 border border-accent/15 space-y-3">
+          <div className="p-4 sm:p-5 rounded-2xl bg-surface-2 border border-accent/15 space-y-3 card-interactive-lift">
             <div className="space-y-1">
-              <div className="text-xs font-bold uppercase tracking-wider text-accent flex items-center gap-1.5">
+              <div className="text-xs font-bold uppercase tracking-wider text-amber-800 dark:text-amber-300 flex items-center gap-1.5">
                 <Sparkles className="w-3.5 h-3.5" />
                 <span>Misi Praktik Mandiri:</span>
               </div>
@@ -140,7 +176,7 @@ export const CanDoCompletionStage: React.FC<CanDoCompletionStageProps> = ({
               <button
                 type="button"
                 onClick={handlePlayModelAnswer}
-                className="min-h-[40px] min-w-[40px] p-2 rounded-xl bg-surface border border-accent/20 text-accent hover:bg-surface-3 transition-colors shrink-0 flex items-center justify-center active:scale-95"
+                className="min-h-[40px] min-w-[40px] p-2 rounded-xl bg-surface border border-accent/20 text-accent hover:bg-surface-3 transition-colors shrink-0 flex items-center justify-center active:scale-95 card-interactive-lift"
                 title="Dengarkan model jawaban alami"
                 aria-label="Dengarkan model jawaban alami"
               >
@@ -150,10 +186,10 @@ export const CanDoCompletionStage: React.FC<CanDoCompletionStageProps> = ({
 
             {/* Catatan Etika Budaya Tambahan */}
             {challenge.culturalEtiquette && (
-              <div className="pt-2 border-t border-accent/10 text-xs text-amber-300/90 bg-amber-500/10 p-3 rounded-xl border border-amber-500/20 flex items-start gap-2">
-                <HeartHandshake className="w-4 h-4 text-amber-400 shrink-0 mt-0.5" />
+              <div className="pt-2 border-t border-accent/10 text-xs text-amber-950 dark:text-amber-200 bg-amber-500/10 p-3 rounded-xl border border-amber-500/20 flex items-start gap-2">
+                <HeartHandshake className="w-4 h-4 text-amber-700 dark:text-amber-400 shrink-0 mt-0.5" />
                 <div>
-                  <strong className="text-amber-200">Etika Komunikasi:</strong> {challenge.culturalEtiquette}
+                  <strong className="text-amber-900 dark:text-amber-300 font-bold">Etika Komunikasi:</strong> {challenge.culturalEtiquette}
                 </div>
               </div>
             )}
@@ -163,12 +199,12 @@ export const CanDoCompletionStage: React.FC<CanDoCompletionStageProps> = ({
 
       {/* ── 3. Lencana Kemampuan Terbuka (Skill Unlocked) ──────────── */}
       {skillUnlocked && skillUnlocked.length > 0 && (
-        <div className="p-5 rounded-3xl bg-surface border border-accent/20 space-y-3 shadow-sm">
+        <div className="p-5 rounded-3xl bg-surface border border-accent/20 space-y-3 shadow-sm card-interactive-lift">
           <div className="flex items-center gap-2">
-            <span className="p-1.5 rounded-lg bg-amber-500/20 text-accent text-xs">
+            <span className="p-1.5 rounded-lg bg-amber-500/20 text-amber-800 dark:text-amber-300 text-xs">
               <Award className="w-4 h-4" />
             </span>
-            <span className="text-xs font-bold uppercase tracking-wider text-accent">
+            <span className="text-xs font-bold uppercase tracking-wider text-amber-800 dark:text-amber-300">
               Kemampuan yang Baru Terbuka (Skill Unlocked)
             </span>
           </div>
@@ -177,9 +213,9 @@ export const CanDoCompletionStage: React.FC<CanDoCompletionStageProps> = ({
             {skillUnlocked.map((skill, sIdx) => (
               <div
                 key={sIdx}
-                className="p-3 rounded-xl bg-surface-2 border border-accent/15 flex items-center gap-2.5 text-xs text-appText-bright font-medium"
+                className="p-3 rounded-xl bg-surface-2 border border-accent/15 flex items-center gap-2.5 text-xs text-appText-bright font-medium card-interactive-lift"
               >
-                <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
+                <CheckCircle2 className="w-4 h-4 text-emerald-700 dark:text-emerald-400 shrink-0" />
                 <span className="break-words">{skill}</span>
               </div>
             ))}
@@ -189,14 +225,14 @@ export const CanDoCompletionStage: React.FC<CanDoCompletionStageProps> = ({
 
       {/* ── 4. Rangkuman Saku Pelajaran (Pocket Cheat Sheet) ───────── */}
       {pocketSummary && (
-        <div className="p-5 sm:p-6 rounded-3xl bg-gradient-to-br from-surface via-surface-2 to-amber-500/10 border border-accent/25 space-y-3.5 shadow-sm">
+        <div className="p-5 sm:p-6 rounded-3xl bg-gradient-to-br from-surface via-surface-2 to-amber-500/10 border border-accent/25 space-y-3.5 shadow-sm card-interactive-lift">
           <div className="flex items-center justify-between gap-2">
             <div className="flex items-center gap-2">
               <span className="p-1.5 rounded-lg bg-accent/20 text-accent text-xs">
                 <FileText className="w-4 h-4" />
               </span>
               <div>
-                <span className="text-xs font-bold uppercase tracking-wider text-accent block">
+                <span className="text-xs font-bold uppercase tracking-wider text-amber-800 dark:text-amber-300 block">
                   Rangkuman Saku Pelajaran
                 </span>
                 <span className="text-xs text-appText-muted">
@@ -208,7 +244,7 @@ export const CanDoCompletionStage: React.FC<CanDoCompletionStageProps> = ({
             <button
               type="button"
               onClick={() => setShowPocketSummary(!showPocketSummary)}
-              className="text-xs text-accent hover:underline font-bold px-2 py-1"
+              className="text-xs text-accent hover:underline font-bold px-3 py-1.5 min-h-[40px] inline-flex items-center active:scale-95"
             >
               {showPocketSummary ? 'Sembunyikan' : 'Buka'}
             </button>
@@ -217,7 +253,7 @@ export const CanDoCompletionStage: React.FC<CanDoCompletionStageProps> = ({
           {showPocketSummary && (
             <div className="space-y-3 pt-2 text-xs animate-fade-in">
               {/* Rumus Utama */}
-              <div className="p-3 rounded-2xl bg-surface border border-accent/20 space-y-1">
+              <div className="p-3 rounded-2xl bg-surface border border-accent/20 space-y-1 card-interactive-lift">
                 <span className="text-xs font-bold uppercase tracking-wider text-appText-muted block">
                   Rumus Utama:
                 </span>
@@ -228,7 +264,7 @@ export const CanDoCompletionStage: React.FC<CanDoCompletionStageProps> = ({
 
               {/* 3 Kata Kunci */}
               {pocketSummary.coreWords && pocketSummary.coreWords.length > 0 && (
-                <div className="p-3 rounded-2xl bg-surface border border-accent/20 space-y-1.5">
+                <div className="p-3 rounded-2xl bg-surface border border-accent/20 space-y-1.5 card-interactive-lift">
                   <span className="text-xs font-bold uppercase tracking-wider text-appText-muted block">
                     Kosakata Kunci:
                   </span>
@@ -247,8 +283,8 @@ export const CanDoCompletionStage: React.FC<CanDoCompletionStageProps> = ({
 
               {/* Peringatan Utama */}
               {pocketSummary.coreWarning && (
-                <div className="p-3 rounded-2xl bg-red-500/10 border border-red-500/20 text-red-300 space-y-0.5">
-                  <span className="text-xs font-bold uppercase tracking-wider text-red-400 block">
+                <div className="p-3 rounded-2xl bg-red-500/10 border border-red-500/20 text-rose-950 dark:text-rose-200 space-y-0.5 card-interactive-lift">
+                  <span className="text-xs font-bold uppercase tracking-wider text-rose-800 dark:text-rose-300 block">
                     ⚠️ Waspada Utama:
                   </span>
                   <p className="leading-relaxed">{pocketSummary.coreWarning}</p>
@@ -257,7 +293,7 @@ export const CanDoCompletionStage: React.FC<CanDoCompletionStageProps> = ({
 
               {/* Dialog Singkat */}
               {pocketSummary.quickDialogue && (
-                <div className="p-3 rounded-2xl bg-surface border border-accent/20 space-y-1">
+                <div className="p-3 rounded-2xl bg-surface border border-accent/20 space-y-1 card-interactive-lift">
                   <span className="text-xs font-bold uppercase tracking-wider text-appText-muted block">
                     Mini Percakapan Kunci:
                   </span>
@@ -276,7 +312,7 @@ export const CanDoCompletionStage: React.FC<CanDoCompletionStageProps> = ({
         <button
           type="button"
           onClick={onBackToCatalog}
-          className="w-full sm:w-auto min-h-[48px] px-6 py-2.5 rounded-2xl bg-surface-2 hover:bg-surface-3 border border-accent/20 text-appText-bright text-xs font-bold transition-all active:scale-95"
+          className="w-full sm:w-auto min-h-[48px] px-6 py-2.5 rounded-2xl bg-surface-2 hover:bg-surface-3 border border-accent/20 text-appText-bright text-xs font-bold transition-all active:scale-95 card-interactive-lift"
         >
           ← Kembali ke Katalog Kurikulum
         </button>
@@ -285,7 +321,7 @@ export const CanDoCompletionStage: React.FC<CanDoCompletionStageProps> = ({
           <button
             type="button"
             onClick={onNextLesson}
-            className="w-full sm:w-auto min-h-[48px] px-7 py-2.5 rounded-2xl bg-accent text-bg font-extrabold text-xs uppercase tracking-wider shadow-lg hover:brightness-110 flex items-center justify-center gap-2 transition-all active:scale-95"
+            className="w-full sm:w-auto min-h-[48px] px-7 py-2.5 rounded-2xl bg-accent text-bg font-extrabold text-xs uppercase tracking-wider shadow-lg hover:brightness-110 flex items-center justify-center gap-2 transition-all active:scale-95 card-interactive-lift"
           >
             <span>Lanjut ke Pelajaran Berikutnya</span>
             <ArrowRight className="w-4 h-4" />

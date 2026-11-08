@@ -43,16 +43,22 @@ const responsiveTestCode = fs.readFileSync(responsiveTestPath, 'utf8');
 // ── Check 1: Unified Enterprise CI Quality Gate in package.json ─────
 test('P5.1: package.json test script binds granular suites and run-sprints-1-to-44 in lockstep', () => {
   assert(pkg.scripts.test, 'package.json must contain "test" script');
+  const orchestratorCode = fs.existsSync(path.join(ROOT_DIR, 'tests/master-regression-orchestrator.js'))
+    ? fs.readFileSync(path.join(ROOT_DIR, 'tests/master-regression-orchestrator.js'), 'utf8')
+    : '';
   assert(
-    pkg.scripts.test.includes('tests/run-sprints-1-to-44.js'),
+    pkg.scripts.test.includes('tests/run-sprints-1-to-44.js') ||
+    (pkg.scripts.test.includes('master-regression-orchestrator.js') && orchestratorCode.includes('tests/run-sprints-1-to-44.js')),
     'test script must include tests/run-sprints-1-to-44.js'
   );
   assert(
-    pkg.scripts.test.includes('tests/fsrs-engine.test.js'),
+    pkg.scripts.test.includes('tests/fsrs-engine.test.js') ||
+    (pkg.scripts.test.includes('master-regression-orchestrator.js') && orchestratorCode.includes('tests/fsrs-engine.test.js')),
     'test script must include tests/fsrs-engine.test.js'
   );
   assert(
-    pkg.scripts.test.includes('tests/cat-engine.test.js'),
+    pkg.scripts.test.includes('tests/cat-engine.test.js') ||
+    (pkg.scripts.test.includes('master-regression-orchestrator.js') && orchestratorCode.includes('tests/cat-engine.test.js')),
     'test script must include tests/cat-engine.test.js'
   );
   assert(

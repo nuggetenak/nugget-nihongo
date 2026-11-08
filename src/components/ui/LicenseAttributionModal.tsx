@@ -2,7 +2,7 @@
 //  LicenseAttributionModal.tsx — Open-Source Legal Attribution Portal
 //  Ticket T-206: Comprehensive statutory attribution for EDRDG JMdict,
 //  KANJIDIC2, Ulrich Apel's KanjiVG, Tatoeba, OJAD/Wadoku, BudouX,
-//  Kuromoji, FSRS-rs, and SIL Open Fonts.
+//  Kuromoji, FSRS-rs, SIL Open Fonts, and Takashi Mifune's Irasutoya.
 // ══════════════════════════════════════════════════════════════════
 
 import React, { useEffect } from 'react';
@@ -10,6 +10,7 @@ import { createPortal } from 'react-dom';
 import { ShieldCheck, ExternalLink, X, BookOpen, Code2, Scale } from 'lucide-react';
 import { useFocusTrap } from '../../hooks/useFocusTrap';
 import { useBodyScrollLock } from '../../hooks/useBodyScrollLock';
+import { IrasutoyaImage } from '../common/IrasutoyaImage';
 
 interface LicenseAttributionModalProps {
   isOpen: boolean;
@@ -20,7 +21,7 @@ interface AttributionEntry {
   title: string;
   project: string;
   license: string;
-  licenseType: 'CC BY-SA 3.0' | 'CC BY 2.0 FR' | 'Apache 2.0' | 'MIT' | 'OFL 1.1';
+  licenseType: 'CC BY-SA 3.0' | 'CC BY 2.0 FR' | 'Apache 2.0' | 'MIT' | 'OFL 1.1' | 'Irasutoya Terms';
   copyright: string;
   description: string;
   url: string;
@@ -28,6 +29,16 @@ interface AttributionEntry {
 }
 
 const ATTRIBUTIONS: AttributionEntry[] = [
+  {
+    title: 'Ilustrasi Budaya Jepang (いらすとや / Irasutoya)',
+    project: 'Irasutoya by Takashi Mifune (みふねたかし)',
+    license: 'Lisensi Penggunaan Gratis Non-Komersial & Edukasi',
+    licenseType: 'Irasutoya Terms',
+    copyright: '(c) Takashi Mifune (みふねたかし)',
+    description: 'Ilustrasi budaya Jepang otentik karya Takashi Mifune untuk maskot pembimbing Sensei & Senpai, tingkatan JLPT, sektor SSW Tokutei Ginou, dan perayaan gamifikasi FSRS.',
+    url: 'https://www.irasutoya.com/',
+    licenseUrl: 'https://www.irasutoya.com/p/terms.html',
+  },
   {
     title: 'Kamus Kosakata & Kanji (JMdict & KANJIDIC2)',
     project: 'EDRDG (Electronic Dictionary Research and Development Group)',
@@ -56,7 +67,7 @@ const ATTRIBUTIONS: AttributionEntry[] = [
     copyright: 'Tatoeba.org and Community Contributors',
     description: 'Koleksi kalimat contoh dan konteks percakapan nyata Jepang-Indonesia yang dikurasi oleh komunitas Tatoeba.',
     url: 'https://tatoeba.org/',
-    licenseUrl: 'https://creativecommons.org/licenses/by/2.0/fr/',
+    licenseUrl: 'https://creativecommons.org/licenses/by-2.0/fr/',
   },
   {
     title: 'Basis Data Nada Tokyo (OJAD & Wadoku)',
@@ -152,11 +163,19 @@ export const LicenseAttributionModal: React.FC<LicenseAttributionModalProps> = (
         aria-labelledby="license-modal-title"
         className="w-full sm:max-w-3xl bg-surface border-t sm:border border-accent/25 rounded-t-3xl sm:rounded-3xl p-5 sm:p-8 space-y-6 shadow-2xl animate-in slide-in-from-bottom sm:zoom-in-95 duration-200 max-h-[88dvh] sm:max-h-[90vh] overflow-y-auto pb-[calc(1.5rem+env(safe-area-inset-bottom))] sm:pb-8"
       >
+        {/* Mobile Drag Handle */}
+        <div className="w-12 h-1.5 rounded-full bg-accent/25 mx-auto -mt-1 mb-2 sm:hidden shrink-0" />
+
         {/* Header */}
         <div className="flex items-start justify-between gap-4 border-b border-accent/15 pb-4">
           <div className="flex items-center gap-3">
-            <div className="p-2.5 rounded-2xl bg-amber-500/15 border border-amber-500/30 text-accent shrink-0">
-              <Scale className="w-6 h-6" />
+            <div className="w-12 h-12 rounded-2xl bg-amber-500/15 border border-amber-500/30 flex items-center justify-center shrink-0 overflow-hidden shadow-glow">
+              <IrasutoyaImage
+                assetId="zen_tatami"
+                className="w-10 h-10 object-contain"
+                alt="Lisensi Terbuka & Hak Cipta Korpus"
+                animateFloat
+              />
             </div>
             <div>
               <h2 id="license-modal-title" className="text-base sm:text-xl font-extrabold text-appText-bright">
@@ -170,7 +189,7 @@ export const LicenseAttributionModal: React.FC<LicenseAttributionModalProps> = (
           <button
             onClick={onClose}
             aria-label="Tutup jendela lisensi"
-            className="p-2 rounded-xl bg-surface-2 hover:bg-surface-3 text-appText-muted hover:text-appText-bright transition-colors active:scale-95 shrink-0"
+            className="w-11 h-11 min-w-[44px] min-h-[44px] rounded-xl bg-surface-2 hover:bg-surface-3 text-appText-muted hover:text-appText-bright transition-colors active:scale-95 shrink-0 flex items-center justify-center"
           >
             <X className="w-5 h-5" />
           </button>
@@ -183,7 +202,7 @@ export const LicenseAttributionModal: React.FC<LicenseAttributionModalProps> = (
             <span>Kepatuhan Hukum Hak Cipta & Integritas Data</span>
           </div>
           <p>
-            Nugget Nihongo menjunjung tinggi etika open-source dan hak cipta karya ilmiah. Seluruh materi kosakata, kamus kanji, diagram goresan, kalimat contoh, dan algoritma memori di dalam aplikasi ini diperoleh dari sumber terbuka yang sah secara hukum, dilisensikan di bawah Creative Commons (CC BY-SA 3.0 / CC BY 2.0 FR), Apache 2.0, SIL Open Font License, dan MIT License.
+            Nugget Nihongo menjunjung tinggi etika open-source dan hak cipta karya ilmiah. Seluruh materi kosakata, kamus kanji, diagram goresan, kalimat contoh, ilustrasi budaya Jepang, dan algoritma memori di dalam aplikasi ini diperoleh dari sumber terbuka yang sah secara hukum, dilisensikan di bawah Creative Commons (CC BY-SA 3.0 / CC BY 2.0 FR), Apache 2.0, SIL Open Font License, MIT License, dan lisensi edukasi resmi Irasutoya (Takashi Mifune).
           </p>
         </div>
 
@@ -192,7 +211,7 @@ export const LicenseAttributionModal: React.FC<LicenseAttributionModalProps> = (
           {ATTRIBUTIONS.map((item, idx) => (
             <div
               key={idx}
-              className="p-4 rounded-2xl bg-surface-2/70 border border-accent/15 space-y-2 hover:border-accent/30 transition-colors"
+              className="card-interactive-lift p-4 rounded-2xl bg-surface-2/70 border border-accent/15 space-y-2 hover:border-accent/30 transition-all"
             >
               <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-1.5">
                 <div className="font-bold text-xs sm:text-sm text-appText-bright flex items-center gap-2">
@@ -207,7 +226,7 @@ export const LicenseAttributionModal: React.FC<LicenseAttributionModalProps> = (
                     href={item.licenseUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-xs text-accent hover:underline flex items-center gap-1 shrink-0"
+                    className="text-xs text-accent hover:underline flex items-center gap-1 shrink-0 font-semibold"
                   >
                     <span>Teks Lisensi</span>
                     <ExternalLink className="w-3 h-3" />
@@ -227,7 +246,7 @@ export const LicenseAttributionModal: React.FC<LicenseAttributionModalProps> = (
                   href={item.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-appText-muted hover:text-accent flex items-center gap-1 transition-colors"
+                  className="text-appText-muted hover:text-accent flex items-center gap-1 transition-colors font-medium"
                 >
                   <span>Situs Resmi Proyek</span>
                   <ExternalLink className="w-3 h-3" />
@@ -241,7 +260,7 @@ export const LicenseAttributionModal: React.FC<LicenseAttributionModalProps> = (
         <div className="pt-2 flex justify-end">
           <button
             onClick={onClose}
-            className="w-full sm:w-auto px-6 py-2.5 rounded-xl bg-accent text-bg font-extrabold text-xs hover:bg-accent-hot transition-all active:scale-95 shadow-md"
+            className="w-full sm:w-auto px-6 py-2.5 min-h-[44px] rounded-xl bg-accent text-bg font-extrabold text-xs hover:bg-accent-hot transition-all active:scale-95 shadow-md flex items-center justify-center"
           >
             Tutup & Mengerti
           </button>

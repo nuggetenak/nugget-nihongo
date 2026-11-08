@@ -170,3 +170,69 @@ export const YOON_KANA: KanaItem[] = [
   { id: 'k-pyu', hiragana: 'ぴゅ', katakana: 'ピュ', romaji: 'pyu', group: 'yoon', example: { jp: 'ピューマ', reading: 'ぴゅーま', meaning: 'Puma' } },
   { id: 'k-pyo', hiragana: 'ぴょ', katakana: 'ピョ', romaji: 'pyo', group: 'yoon', example: { jp: 'ぴょんぴょん', reading: 'ぴょんぴょん', meaning: 'Melompat-lompat' } },
 ];
+
+// ── 4. CANONICAL STROKE COUNTS ────────────────────────────────
+export const HIRAGANA_STROKE_COUNTS: Record<string, number> = {
+  あ: 3, い: 2, う: 2, え: 2, お: 3,
+  か: 3, き: 4, く: 1, け: 3, こ: 2,
+  さ: 3, し: 1, す: 2, せ: 3, そ: 1,
+  た: 4, ち: 2, つ: 1, て: 1, と: 2,
+  な: 4, に: 3, ぬ: 2, ね: 2, の: 1,
+  は: 3, ひ: 1, ふ: 4, へ: 1, ほ: 4,
+  ま: 3, み: 2, む: 3, め: 2, も: 3,
+  や: 3, ゆ: 2, よ: 2,
+  ら: 2, り: 2, る: 1, れ: 2, ろ: 1,
+  わ: 2, を: 3, ん: 1,
+};
+
+export const KATAKANA_STROKE_COUNTS: Record<string, number> = {
+  ア: 2, イ: 2, ウ: 3, エ: 3, オ: 3,
+  カ: 2, キ: 3, ク: 2, ケ: 3, コ: 2,
+  サ: 3, シ: 3, ス: 2, セ: 2, ソ: 2,
+  タ: 3, チ: 3, ツ: 3, テ: 3, ト: 2,
+  ナ: 2, ニ: 2, ヌ: 2, ネ: 4, ノ: 1,
+  ハ: 2, ヒ: 2, フ: 1, ヘ: 1, ホ: 4,
+  マ: 2, ミ: 3, ム: 2, メ: 2, モ: 3,
+  ヤ: 2, ユ: 2, ヨ: 3,
+  ラ: 2, リ: 2, ル: 2, レ: 1, ロ: 3,
+  ワ: 2, ヲ: 3, ン: 2,
+};
+
+// ── 5. ALL KANA CATALOG & LOOKUP UTILITIES ─────────────────────
+export const ALL_KANA: KanaItem[] = [...GOJUON_KANA, ...DAKUON_KANA, ...YOON_KANA];
+
+/**
+ * Fast lookup of KanaItem by ID
+ */
+export function findKanaById(id: string): KanaItem | undefined {
+  if (!id) return undefined;
+  return ALL_KANA.find((k) => k.id === id);
+}
+
+/**
+ * Find KanaItem by either hiragana or katakana character
+ */
+export function findKanaByChar(char: string): KanaItem | undefined {
+  if (!char) return undefined;
+  const c = char.trim();
+  return ALL_KANA.find((k) => k.hiragana === c || k.katakana === c);
+}
+
+/**
+ * Find KanaItem by romaji reading (case-insensitive)
+ */
+export function findKanaByRomaji(romaji: string): KanaItem | undefined {
+  if (!romaji) return undefined;
+  const r = romaji.trim().toLowerCase();
+  return ALL_KANA.find((k) => k.romaji.toLowerCase() === r || k.romaji.toLowerCase().startsWith(r));
+}
+
+/**
+ * Returns the canonical stroke count for a single Kana character
+ */
+export function getKanaStrokeCount(char: string): number {
+  if (!char) return 0;
+  const c = char.trim().charAt(0);
+  return HIRAGANA_STROKE_COUNTS[c] ?? KATAKANA_STROKE_COUNTS[c] ?? 0;
+}
+

@@ -28,6 +28,7 @@ export const SemanticJapaneseText: React.FC<SemanticJapaneseTextProps> = ({
   if (chunks.length <= 1) {
     return (
       <Component
+        lang="ja"
         title={title}
         className={`inline-block [word-break:keep-all] [overflow-wrap:anywhere] font-japanese ${className}`}
       >
@@ -38,6 +39,7 @@ export const SemanticJapaneseText: React.FC<SemanticJapaneseTextProps> = ({
 
   return (
     <Component
+      lang="ja"
       title={title}
       className={`inline-block [word-break:keep-all] [overflow-wrap:anywhere] font-japanese ${className}`}
     >

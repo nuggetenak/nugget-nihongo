@@ -979,7 +979,7 @@ var confusionPairs = [
     "id": "cp-l1-045",
     "patterns": [
       "私は日本へ行ったことがある。",
-      "私は日本へ行ったことがある。"
+      "私は日本へ行った。"
     ],
     "note_id": "nuance-cp-l1-045",
     "level": "n4",
@@ -990,7 +990,7 @@ var confusionPairs = [
     "title": "Pernah Melakukan (ta koto ga aru)",
     "stimulus_l1": "Saya pernah pergi ke Jepang.",
     "target_form": "私は日本へ行ったことがある。",
-    "l1_trap_form": "私は日本へ行ったことがある。",
+    "l1_trap_form": "私は日本へ行った。",
     "root_cause": "Pembelajar sering mentransfer kata keterangan pernah menjadi sekadar bentuk lampau itta (\"kemarin saya pergi ke Jepang\"). Tanpa koto ga aru, nuansa pengalaman hidup seumur hidup hilang.",
     "prescription": "💡 Pengalaman seumur hidup = 〜たことがある! Bentuk lampau biasa (itta) hanya menceritakan kejadian masa lalu; pengalaman seumur hidup wajib V-たことがある.",
     "fsrs_difficulty": 7.2,

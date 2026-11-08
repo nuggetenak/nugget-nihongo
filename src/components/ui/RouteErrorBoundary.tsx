@@ -8,6 +8,7 @@ import React, { Component, ErrorInfo, ReactNode } from 'react';
 import { AlertCircle, RefreshCw, Home, ChevronDown, ChevronUp } from 'lucide-react';
 import { errorReporter } from '../../lib/telemetry/errorReporter';
 import { diagnostics } from '../../lib/diagnostics/diagnostics';
+import { useAppStore } from '../../store/useAppStore';
 
 export interface RouteErrorBoundaryProps {
   children: ReactNode;
@@ -77,6 +78,11 @@ export class RouteErrorBoundary extends Component<RouteErrorBoundaryProps, Route
     if (this.props.onResetToHome) {
       this.props.onResetToHome();
     } else {
+      try {
+        useAppStore.getState().setActiveTab('home');
+      } catch (e) {
+        // ignore
+      }
       window.location.hash = '#home';
     }
     this.setState({
@@ -96,16 +102,16 @@ export class RouteErrorBoundary extends Component<RouteErrorBoundaryProps, Route
         <div
           role="alert"
           aria-live="assertive"
-          className="w-full my-8 px-4 sm:px-6 py-8 bg-surface border border-red-500/30 rounded-3xl shadow-xl text-center space-y-6 max-w-2xl mx-auto animate-in fade-in zoom-in-95 duration-200"
+          className="w-full max-w-2xl mx-auto my-6 sm:my-8 px-4 sm:px-6 py-6 sm:py-8 bg-surface border border-red-500/30 rounded-3xl shadow-xl text-center space-y-5 sm:space-y-6 animate-in fade-in zoom-in-95 duration-200 min-w-0 overflow-hidden pb-[calc(2rem+env(safe-area-inset-bottom))]"
         >
           {/* Badge Icon */}
-          <div className="w-14 h-14 rounded-2xl bg-red-950/60 border border-red-500/40 text-red-300 flex items-center justify-center mx-auto shadow-inner">
+          <div className="w-14 h-14 rounded-2xl bg-red-500/15 border border-red-500/30 text-red-600 dark:text-red-400 flex items-center justify-center mx-auto shadow-inner">
             <AlertCircle className="w-7 h-7 stroke-[2.2]" />
           </div>
 
           {/* Heading & Context */}
           <div className="space-y-2">
-            <div className="text-xs font-mono font-bold tracking-wider uppercase text-amber-400">
+            <div className="text-xs font-mono font-bold tracking-wider uppercase text-accent-hot">
               Modul Tampilan Terisolasi ({tabName})
             </div>
             <h2 className="text-xl sm:text-2xl font-black text-appText-bright">
@@ -129,7 +135,7 @@ export class RouteErrorBoundary extends Component<RouteErrorBoundaryProps, Route
             </button>
 
             {isDetailsOpen && (
-              <div className="p-3 border-t border-theme text-xs font-mono text-red-300 max-h-40 overflow-y-auto space-y-1 scrollbar-none select-text">
+              <div className="p-3 border-t border-theme text-xs font-mono text-red-600 dark:text-red-300 max-h-40 overflow-y-auto overflow-x-auto space-y-1 scrollbar-none select-text">
                 <div className="font-bold">
                   {error?.name || 'Error'}: {error?.message || 'Unknown runtime error'}
                 </div>

@@ -140,8 +140,8 @@ check('T-225: KanaChartModal.tsx integrates useSwipeGesture with dual actions', 
   const code = fs.readFileSync(filePath, 'utf8');
 
   assert.ok(code.includes("import { useSwipeGesture } from '../quiz/useSwipeGesture'"), 'KanaChartModal must import useSwipeGesture');
-  assert.ok(code.includes('onSwipeLeft: () => handleNextPractice(true)'), 'Swipe left must trigger Sudah Hafal');
-  assert.ok(code.includes('onSwipeRight: () => handleNextPractice(false)'), 'Swipe right must trigger Belum Hafal');
+  assert.ok(code.includes('onSwipeRight: () => handleNextPractice(true)'), 'Swipe right must trigger Sudah Hafal');
+  assert.ok(code.includes('onSwipeLeft: () => handleNextPractice(false)'), 'Swipe left must trigger Belum Hafal');
   assert.ok(code.includes('{...touchHandlers}'), 'Kana flip card must attach touchHandlers');
   assert.ok(code.includes('translate3d(${dragOffset.x}px'), 'Kana flip card must apply translate3d drag transform');
 });
@@ -150,20 +150,20 @@ check('T-225: KanaChartModal.tsx displays real-time swipe visual hint badges', (
   const filePath = path.join(ROOT, 'src/components/kana/KanaChartModal.tsx');
   const code = fs.readFileSync(filePath, 'utf8');
 
-  assert.ok(code.includes("swipeHint === 'left'"), 'Must render left swipe badge');
-  assert.ok(code.includes('Sudah Hafal'), 'Left swipe badge must label Sudah Hafal');
   assert.ok(code.includes("swipeHint === 'right'"), 'Must render right swipe badge');
-  assert.ok(code.includes('Belum Hafal'), 'Right swipe badge must label Belum Hafal');
+  assert.ok(code.includes('Sudah Hafal'), 'Right swipe badge must label Sudah Hafal');
+  assert.ok(code.includes("swipeHint === 'left'"), 'Must render left swipe badge');
+  assert.ok(code.includes('Belum Hafal'), 'Left swipe badge must label Belum Hafal');
 });
 
 check('T-225: KanaChartModal.tsx unifies keyboard navigation (ArrowLeft, ArrowRight, Space)', () => {
   const filePath = path.join(ROOT, 'src/components/kana/KanaChartModal.tsx');
   const code = fs.readFileSync(filePath, 'utf8');
 
-  assert.ok(code.includes("e.key === 'ArrowLeft'"), 'Must support ArrowLeft for Sudah Hafal');
-  assert.ok(code.includes('handleNextPractice(true)'), 'ArrowLeft must call handleNextPractice(true)');
-  assert.ok(code.includes("e.key === 'ArrowRight'"), 'Must support ArrowRight for Belum Hafal');
-  assert.ok(code.includes('handleNextPractice(false)'), 'ArrowRight must call handleNextPractice(false)');
+  assert.ok(code.includes("e.key === 'ArrowRight'"), 'Must support ArrowRight for Sudah Hafal');
+  assert.ok(code.includes('handleNextPractice(true)'), 'ArrowRight must call handleNextPractice(true)');
+  assert.ok(code.includes("e.key === 'ArrowLeft'"), 'Must support ArrowLeft for Belum Hafal');
+  assert.ok(code.includes('handleNextPractice(false)'), 'ArrowLeft must call handleNextPractice(false)');
   assert.ok(code.includes("e.key === ' ' || e.key === 'Enter'"), 'Must support Space or Enter for card flip');
 });
 

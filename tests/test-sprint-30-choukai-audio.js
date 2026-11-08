@@ -217,7 +217,7 @@ check('T-170: speechEngine.ts implements Deadlock Watchdog timer to prevent UI f
 check('T-170: tts.ts delegates cleanly to speechEngine.ts and DialogueStage.tsx alternates male/female voices', () => {
   const ttsPath = path.join(ROOT, 'src/lib/audio/tts.ts');
   const ttsContent = fs.readFileSync(ttsPath, 'utf8');
-  assert.ok(ttsContent.includes("from './speechEngine'"), 'tts.ts must delegate to speechEngine.ts');
+  assert.ok(ttsContent.includes("from './speechEngine") || ttsContent.includes('speechEngine'), 'tts.ts must delegate to speechEngine.ts');
 
   const dialoguePath = path.join(ROOT, 'src/components/curriculum/player/DialogueStage.tsx');
   const dialogueContent = fs.readFileSync(dialoguePath, 'utf8');

@@ -8,8 +8,9 @@
 // ══════════════════════════════════════════════════════════════════
 
 import React from 'react';
-import { Compass, BookOpen, Brain, Sparkles, Settings, HelpCircle, History, Quote, Wrench, Layers, GraduationCap } from 'lucide-react';
+import { Compass, BookOpen, Brain, Sparkles, Settings, HelpCircle, History, Quote, Wrench, Layers, GraduationCap, Users } from 'lucide-react';
 import { useAppStore, AppState } from '../../store/useAppStore';
+import { useModalStore } from '../../store/useModalStore';
 import { transitionTabChange } from '../../lib/ui/navigation';
 import { APP_VERSION } from '../../config/version';
 
@@ -114,7 +115,7 @@ export const Sidebar: React.FC = () => {
         })}
 
         {/* Quick Study Toolbox Button */}
-        <div className="pt-2">
+        <div className="pt-2 space-y-1.5">
           <button
             onClick={openToolbox}
             aria-label="Buka Kotak Peralatan Belajar"
@@ -127,6 +128,22 @@ export const Sidebar: React.FC = () => {
             </div>
             <span className="text-xs font-bold px-2 py-0.5 rounded bg-amber-500/15 text-accent-hot border border-amber-500/25">
               7 Alat
+            </span>
+          </button>
+
+          {/* Community & Lounge Button */}
+          <button
+            onClick={() => useModalStore.getState().openModal('community')}
+            aria-label="Buka Study Lounge & Komunitas"
+            className="w-full flex items-center justify-between px-3.5 py-2.5 rounded-xl text-xs font-semibold bg-surface-2 hover:bg-surface-3 border border-accent/20 hover:border-accent text-appText-bright transition-all group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+            title="Buka Study Lounge & Komunitas Resmi Nugget Nihongo"
+          >
+            <div className="flex items-center gap-2.5">
+              <Users className="w-4 h-4 text-amber-500 group-hover:scale-110 transition-transform" />
+              <span>Komunitas & Lounge</span>
+            </div>
+            <span className="text-[10px] font-bold px-1.5 py-0.5 rounded bg-amber-500/20 text-amber-700 dark:text-amber-300 border border-amber-500/30">
+              Baru
             </span>
           </button>
         </div>

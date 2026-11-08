@@ -20,8 +20,17 @@ import {
   Layers,
   Brain,
   Compass,
+  Calculator,
+  Users,
+  Share2,
+  FileText,
+  ExternalLink,
+  GitPullRequest,
+  Database,
+  Mail,
 } from 'lucide-react';
 import { useAppStore } from '../store/useAppStore';
+import { IrasutoyaImage } from '../components/common/IrasutoyaImage';
 
 interface ConflictResolutionItem {
   id: string;
@@ -71,6 +80,95 @@ export const MethodologyPage: React.FC = () => {
   const { setActiveTab } = useAppStore();
   const [expandedSection, setExpandedSection] = useState<string | null>('section-1');
   const [expandedConflict, setExpandedConflict] = useState<string | null>('conf-1');
+
+  // Interactive FSRS Simulator state
+  const [fsrsStabilityDays, setFsrsStabilityDays] = useState<number>(10);
+  const [fsrsElapsedDays, setFsrsElapsedDays] = useState<number>(7);
+  const [personaFilter, setPersonaFilter] = useState<'ALL' | 'JLPT' | 'JFT' | 'SSW' | 'LIVING'>('ALL');
+  const [copiedBibtex, setCopiedBibtex] = useState(false);
+
+  // FSRS v4.5 Forgetting curve calculation:
+  // R(t, S) = (1 + FACTOR * (t / S))^(-DECAY) where FACTOR = 0.19, DECAY = 0.5
+  const fsrsRetrievability = Math.pow(1 + 0.19 * (fsrsElapsedDays / fsrsStabilityDays), -0.5);
+  const retrievabilityPercent = Math.max(1, Math.min(100, Math.round(fsrsRetrievability * 100)));
+
+  const isGoldenRetentionWindow = retrievabilityPercent >= 85 && retrievabilityPercent <= 92;
+  const isOverdue = retrievabilityPercent < 85;
+
+  const SAMPLE_PERSONAS = [
+    {
+      id: 'IDN-JP-001',
+      name: 'Budi Santoso',
+      origin: 'Cilacap, Jawa Tengah (22 th)',
+      target: 'SSW Kaigo (Perawat Lansia)',
+      pillar: 'SSW' as const,
+      challenge: 'Keigo rasa empati lansia & aba-aba darurat choking/fall saat shift malam',
+      quote: '"Belajar sambil kerja serabutan, butuh materi singkat 5-10 menit sebelum tidur."',
+    },
+    {
+      id: 'IDN-JP-015',
+      name: 'Rina Wulandari',
+      origin: 'Surabaya, Jawa Timur (19 th)',
+      target: 'JLPT N2 (Beasiswa Monbukagakusho)',
+      pillar: 'JLPT' as const,
+      challenge: 'Pitch accent kontur nada Tokyo & kanji majemuk abstrak (jukugo)',
+      quote: '"Sering bingung bedain intonasi ame (hujan) vs ame (permen) pas presentasi."',
+    },
+    {
+      id: 'IDN-JP-042',
+      name: 'Ahmad Fauzi',
+      origin: 'Karawang, Jawa Barat (26 th)',
+      target: 'SSW Seizogyo (Manufaktur Mesin)',
+      pillar: 'SSW' as const,
+      challenge: 'Istilah keselamatan K3, mesin bubut CNC, dan format laporan Hou-Ren-Sou',
+      quote: '"Instruksi pabrik di Jepang cepat banget, harus hafal istilah teknis luar kepala."',
+    },
+    {
+      id: 'IDN-JP-088',
+      name: 'Ni Kadek Ayu',
+      origin: 'Denpasar, Bali (24 th)',
+      target: 'SSW Shukuhaku (Perhotelan Ryokan)',
+      pillar: 'SSW' as const,
+      challenge: 'Bahasa hormat Sonkeigo & Kenjougo tingkat tinggi untuk tamu hotel tradisi',
+      quote: '"Beda sedikit penggunaan o-kyaku-sama bisa dianggap kurang sopan."',
+    },
+    {
+      id: 'IDN-JP-112',
+      name: 'Muhammad Fajar',
+      origin: 'Makassar, Sulawesi Selatan (21 th)',
+      target: 'JFT-Basic A2 & Seikatsu',
+      pillar: 'JFT' as const,
+      challenge: 'Percakapan sehari-hari di balai kota (kuyakusho), supermarket, dan rumah sakit',
+      quote: '"Butuh simulasi nyata cara ngurus asuransi dan lapor alamat di Jepang."',
+    },
+    {
+      id: 'IDN-JP-165',
+      name: 'Siti Rahmawati',
+      origin: 'Bandung, Jawa Barat (28 th)',
+      target: 'Living & Working in Japan',
+      pillar: 'LIVING' as const,
+      challenge: 'Nuansa komunikasi konteks tinggi (kuuki wo yomu) dan etika kerja kantoran',
+      quote: '"Bukan cuma tata bahasa, tapi cara merespons tanpa menyinggung rekan kerja."',
+    },
+  ];
+
+  const filteredPersonas = SAMPLE_PERSONAS.filter(
+    (p) => personaFilter === 'ALL' || p.pillar === personaFilter
+  );
+
+  const BIBTEX_CODE = `@misc{nuggetnihongo2026,
+  author = {Nugget Nihongo Research Collective},
+  title = {Nugget Nihongo: Open-Source Japanese Pedagogy Corpus and FSRS Adaptive Platform for Indonesian L1 Learners},
+  year = {2026},
+  url = {https://github.com/nuggetenak/nugget-nihongo},
+  note = {Corpus v30, 807+ citations, 19 SSW Sectors}
+}`;
+
+  const copyBibtex = () => {
+    navigator.clipboard.writeText(BIBTEX_CODE);
+    setCopiedBibtex(true);
+    setTimeout(() => setCopiedBibtex(false), 2000);
+  };
 
   const toggleSection = (id: string) => {
     setExpandedSection((prev) => (prev === id ? null : id));
@@ -428,6 +526,275 @@ export const MethodologyPage: React.FC = () => {
               </div>
             );
           })}
+        </div>
+      </div>
+
+      {/* ── INTERACTIVE FSRS v4.5 FORMULA VISUALIZER ── */}
+      <div className="bg-card border border-border rounded-3xl p-5 sm:p-8 shadow-xl mb-8 card-interactive-lift">
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6 pb-4 border-b border-border/60">
+          <div className="flex items-center gap-3">
+            <div className="w-10 h-10 rounded-2xl bg-amber-500/20 border border-amber-500/30 flex items-center justify-center text-amber-400">
+              <Calculator className="w-5 h-5" />
+            </div>
+            <div>
+              <h2 className="text-lg sm:text-xl font-bold text-white">
+                Simulasi Interaktif Retensi Memori FSRS v4.5
+              </h2>
+              <p className="text-xs text-muted">
+                Kalkulasi Peluruhan Ingatan $R(t, S)$ Berdasarkan Interval Stabilitas dan Hari Berlalu
+              </p>
+            </div>
+          </div>
+          <span className="self-start sm:self-auto text-xs font-mono font-semibold px-3 py-1 rounded-full bg-amber-500/10 text-amber-400 border border-amber-500/30">
+            Ye et al. (2022) · Target 90%
+          </span>
+        </div>
+
+        {/* Live Calculation Display */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+          <div className="p-4 rounded-2xl bg-neutral-900/80 border border-border flex flex-col justify-between">
+            <span className="text-xs text-muted font-medium">Stabilitas Memori ($S$)</span>
+            <div className="flex items-baseline gap-2 mt-2">
+              <span className="text-2xl sm:text-3xl font-black text-amber-400 font-mono">
+                {fsrsStabilityDays}
+              </span>
+              <span className="text-xs text-neutral-400 font-medium">hari</span>
+            </div>
+            <input
+              type="range"
+              min="1"
+              max="60"
+              value={fsrsStabilityDays}
+              onChange={(e) => setFsrsStabilityDays(Number(e.target.value))}
+              className="mt-3 w-full accent-amber-500 cursor-pointer"
+            />
+          </div>
+
+          <div className="p-4 rounded-2xl bg-neutral-900/80 border border-border flex flex-col justify-between">
+            <span className="text-xs text-muted font-medium">Hari Sejak Latihan Terakhir ($t$)</span>
+            <div className="flex items-baseline gap-2 mt-2">
+              <span className="text-2xl sm:text-3xl font-black text-amber-400 font-mono">
+                {fsrsElapsedDays}
+              </span>
+              <span className="text-xs text-neutral-400 font-medium">hari</span>
+            </div>
+            <input
+              type="range"
+              min="0"
+              max="60"
+              value={fsrsElapsedDays}
+              onChange={(e) => setFsrsElapsedDays(Number(e.target.value))}
+              className="mt-3 w-full accent-amber-500 cursor-pointer"
+            />
+          </div>
+
+          <div className={`p-4 rounded-2xl border flex flex-col justify-between transition-colors ${
+            isGoldenRetentionWindow
+              ? 'bg-amber-500/10 border-amber-500/40 text-amber-300'
+              : isOverdue
+              ? 'bg-rose-950/20 border-rose-500/30 text-rose-300'
+              : 'bg-emerald-950/20 border-emerald-500/30 text-emerald-300'
+          }`}>
+            <span className="text-xs font-semibold uppercase tracking-wider">
+              Peluang Ingat ($R$)
+            </span>
+            <div className="flex items-baseline gap-2 mt-2">
+              <span className="text-3xl sm:text-4xl font-black font-mono">
+                {retrievabilityPercent}%
+              </span>
+            </div>
+            <span className="text-xs mt-2 font-medium">
+              {isGoldenRetentionWindow
+                ? '⭐ Zona Emas Review! Otak siap dikuatkan kembali.'
+                : isOverdue
+                ? '⚠️ Memori mulai memudar. Segera lakukan review aktif.'
+                : '✅ Masih sangat segar dalam memori kerja.'}
+            </span>
+          </div>
+        </div>
+
+        {/* Formula Explanation */}
+        <div className="p-4 rounded-2xl bg-neutral-950/60 border border-neutral-800 text-xs sm:text-sm text-neutral-300 space-y-2">
+          <div className="font-mono text-xs text-amber-400 font-semibold">
+            Rumus: R(t, S) = (1 + 0.19 · (t / S))^(-0.5)
+          </div>
+          <p className="text-xs text-muted leading-relaxed">
+            Nugget Nihongo menerapkan <strong>Pengali Matsunaga (2.3×)</strong> untuk karakter kanji bagi pembelajar berlatar belakang Bahasa Indonesia (non-kanji L1). Kartu kosakata kanji baru dijadwalkan dengan repetisi lebih rapat di fase awal sebelum stabilitas ($S$) dilepas bertahap ke interval mingguan dan bulanan.
+          </p>
+        </div>
+      </div>
+
+      {/* ── 200 INDONESIAN LEARNER PERSONAS RESEARCH MATRIX ── */}
+      <div className="bg-card border border-border rounded-3xl p-5 sm:p-8 shadow-xl mb-8 card-interactive-lift">
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6 pb-4 border-b border-border/60">
+          <div className="flex items-center gap-3">
+            <div className="w-10 h-10 rounded-2xl bg-blue-500/20 border border-blue-500/30 flex items-center justify-center text-blue-400">
+              <Users className="w-5 h-5" />
+            </div>
+            <div>
+              <h2 className="text-lg sm:text-xl font-bold text-white">
+                Validasi Lapangan: Matriks 200 Persona Indonesia
+              </h2>
+              <p className="text-xs text-muted">
+                Sampel Demografis Pembelajar dari Sabang sampai Merauke yang Diuji di Simulator
+              </p>
+            </div>
+          </div>
+          <span className="self-start sm:self-auto text-xs font-mono font-semibold px-3 py-1 rounded-full bg-blue-500/10 text-blue-400 border border-blue-500/30">
+            200 Personas Dataset
+          </span>
+        </div>
+
+        {/* Pillar Filter Pills */}
+        <div className="flex items-center gap-2 overflow-x-auto scrollbar-none pb-2 mb-4">
+          {(['ALL', 'JLPT', 'JFT', 'SSW', 'LIVING'] as const).map((pillar) => (
+            <button
+              key={pillar}
+              onClick={() => setPersonaFilter(pillar)}
+              className={`px-3 py-1.5 rounded-xl text-xs font-bold transition-all shrink-0 active:scale-95 ${
+                personaFilter === pillar
+                  ? 'bg-amber-500 text-neutral-950 shadow-sm'
+                  : 'bg-neutral-900 text-neutral-400 hover:text-white border border-border'
+              }`}
+            >
+              {pillar === 'ALL'
+                ? 'Semua Kohort (200)'
+                : pillar === 'JLPT'
+                ? 'JLPT N5–N1'
+                : pillar === 'JFT'
+                ? 'JFT-Basic A2'
+                : pillar === 'SSW'
+                ? 'SSW Vokasional (19 Sektor)'
+                : 'Living in Japan'}
+            </button>
+          ))}
+        </div>
+
+        {/* Persona Cards Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-4">
+          {filteredPersonas.map((persona) => (
+            <div
+              key={persona.id}
+              className="p-4 rounded-2xl bg-neutral-900/60 border border-border hover:border-amber-500/40 transition-all space-y-2 card-interactive-lift"
+            >
+              <div className="flex items-center justify-between">
+                <div>
+                  <span className="font-bold text-sm text-white">{persona.name}</span>
+                  <span className="text-xs text-muted ml-2 font-mono">({persona.origin})</span>
+                </div>
+                <span className="text-[11px] font-mono px-2 py-0.5 rounded bg-neutral-800 text-amber-400 border border-border">
+                  {persona.pillar}
+                </span>
+              </div>
+              <div className="text-xs text-amber-300 font-medium">
+                🎯 Target: {persona.target}
+              </div>
+              <div className="text-xs text-neutral-300 leading-relaxed">
+                <strong className="text-muted">Titik Kritis:</strong> {persona.challenge}
+              </div>
+              <p className="text-xs italic text-neutral-400 bg-neutral-950/60 p-2.5 rounded-xl border border-neutral-800/80">
+                {persona.quote}
+              </p>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* ── OPEN SCIENCE & COMMUNITY COLLABORATION PROTOCOL ── */}
+      <div className="bg-gradient-to-br from-card via-card to-amber-950/20 border border-amber-500/30 rounded-3xl p-5 sm:p-8 shadow-xl mb-8 card-interactive-lift">
+        <div className="flex items-center gap-3 mb-4">
+          <div className="w-10 h-10 rounded-2xl bg-emerald-500/20 border border-emerald-500/30 flex items-center justify-center text-emerald-400">
+            <Share2 className="w-5 h-5" />
+          </div>
+          <div>
+            <h2 className="text-lg sm:text-xl font-bold text-white">
+              Protokol Kolaborasi Riset Terbuka (Open Science)
+            </h2>
+            <p className="text-xs text-muted">
+              Undangan Terbuka bagi Peneliti Bahasa, Pengajar LPK, dan Penutur Asli untuk Berkontribusi
+            </p>
+          </div>
+        </div>
+
+        <p className="text-xs sm:text-sm text-neutral-300 leading-relaxed mb-6">
+          Nugget Nihongo dibangun dengan prinsip ilmu pengetahuan terbuka (*Open Science*). Seluruh data kurikulum, matriks interferensi L1, dan spesifikasi ujian dipublikasikan secara transparan di bawah lisensi Creative Commons (CC BY-SA 4.0). Kami mengundang komunitas akademik dan praktisi lapangan untuk ikut menyempurnakan korpus ini:
+        </p>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
+          <div className="p-4 rounded-2xl bg-neutral-900/70 border border-border space-y-2">
+            <div className="flex items-center gap-2 text-xs font-bold text-amber-400">
+              <GitPullRequest className="w-4 h-4" />
+              <span>1. Koreksi Nuansa & Dialek Lokal</span>
+            </div>
+            <p className="text-xs text-muted leading-relaxed">
+              Kirimkan masukan titik salah kaprah tata bahasa dari bahasa daerahmu (Jawa, Sunda, Minang, Batak, Bugis, Bali) melalui GitHub Issues.
+            </p>
+          </div>
+
+          <div className="p-4 rounded-2xl bg-neutral-900/70 border border-border space-y-2">
+            <div className="flex items-center gap-2 text-xs font-bold text-emerald-400">
+              <Database className="w-4 h-4" />
+              <span>2. Transkrip Percakapan Gemba Autentik</span>
+            </div>
+            <p className="text-xs text-muted leading-relaxed">
+              Bagi alumni Tokutei Ginou atau kenshusei yang memiliki rekaman aba-aba kerja nyata di pabrik, kapal, atau panti jompo, bantu perkaya bank soal skenario kami.
+            </p>
+          </div>
+
+          <div className="p-4 rounded-2xl bg-neutral-900/70 border border-border space-y-2">
+            <div className="flex items-center gap-2 text-xs font-bold text-blue-400">
+              <Calculator className="w-4 h-4" />
+              <span>3. Kalibrasi Bobot FSRS</span>
+            </div>
+            <p className="text-xs text-muted leading-relaxed">
+              Peneliti pemodelan memori dipersilakan menguji ulang dataset repetisi terbuka kami untuk mencari parameter decay optimal bagi non-kanji learners.
+            </p>
+          </div>
+
+          <div className="p-4 rounded-2xl bg-neutral-900/70 border border-border space-y-2">
+            <div className="flex items-center gap-2 text-xs font-bold text-purple-400">
+              <FileText className="w-4 h-4" />
+              <span>4. Sitasi Skripsi & Publikasi Ilmiah</span>
+            </div>
+            <p className="text-xs text-muted leading-relaxed">
+              Seluruh dataset dapat digunakan gratis untuk penelitian skripsi, tesis, dan jurnal dengan menyertakan sitasi resmi APA 7th atau BibTeX di bawah ini.
+            </p>
+          </div>
+        </div>
+
+        {/* BibTeX Code Box */}
+        <div className="space-y-2">
+          <div className="flex items-center justify-between text-xs text-muted">
+            <span className="font-semibold text-neutral-300">Format Sitasi Akademik (BibTeX):</span>
+            <button
+              onClick={copyBibtex}
+              className="px-3 py-1 rounded-lg bg-neutral-800 hover:bg-neutral-700 text-amber-400 text-xs font-mono font-bold transition-all active:scale-95 border border-border"
+            >
+              {copiedBibtex ? '✅ Tersalin!' : 'Salin BibTeX'}
+            </button>
+          </div>
+          <pre className="p-3.5 rounded-2xl bg-neutral-950/90 border border-neutral-800 text-[11px] font-mono text-neutral-300 overflow-x-auto">
+            {BIBTEX_CODE}
+          </pre>
+        </div>
+
+        {/* Research & Corpus Inquiry Contact */}
+        <div className="mt-6 p-4 rounded-2xl bg-neutral-900/80 border border-amber-500/20 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+          <div className="space-y-1">
+            <div className="text-xs font-bold text-amber-300 flex items-center gap-2">
+              <Mail className="w-4 h-4 text-amber-400" />
+              <span>Inquiry Riset & Kolaborasi Korpus Terbuka</span>
+            </div>
+            <p className="text-xs text-neutral-300">
+              Pertanyaan metodologi, permohonan data penelitian, atau telaah kurikulum dapat diajukan langsung ke tim pengembang.
+            </p>
+          </div>
+          <a
+            href="mailto:nuggetnihongo@gmail.com?subject=Inquiry%20Riset%20dan%20Metodologi%20Nugget%20Nihongo"
+            className="px-4 py-2.5 min-h-[44px] rounded-xl bg-amber-500/20 hover:bg-amber-500/30 border border-amber-500/40 text-amber-300 hover:text-amber-200 text-xs font-bold flex items-center gap-2 transition-all shrink-0 active:scale-95"
+          >
+            <span>Hubungi: nuggetnihongo@gmail.com ↗</span>
+          </a>
         </div>
       </div>
     </div>

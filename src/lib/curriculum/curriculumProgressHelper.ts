@@ -4,8 +4,8 @@
 //  the earliest uncompleted lesson node for zero-friction study CTA.
 // ══════════════════════════════════════════════════════════════════
 
-import type { TrackId, TrackProgressState } from './curriculumStore';
-import type { CurriculumTrackData, CurriculumUnit, CurriculumLesson } from '../data/dataManager';
+import type { TrackId, TrackProgressState } from './curriculumStore.ts';
+import type { CurriculumTrackData, CurriculumUnit, CurriculumLesson } from '../data/dataManager.ts';
 
 export interface NextUncompletedLessonResult {
   trackId: TrackId;
@@ -144,5 +144,18 @@ export function getNextUncompletedLesson(
     };
   }
 
-  return null;
+  const safeTrackId = trackId && typeof trackId === 'string' ? trackId : ('n5' as TrackId);
+  return {
+    trackId: safeTrackId,
+    unitId: `${safeTrackId}-u1`,
+    unitNumber: 1,
+    unitTitle: 'Unit 1: Fondasi Awal',
+    lessonId: `${safeTrackId}-l1`,
+    lessonNumber: 1,
+    title: 'Pelajaran 1',
+    canDo: 'Mulai langkah awal penguasaan bahasa Jepang di jalur ini.',
+    isAllCompleted: false,
+    totalLessons: 1,
+    completedLessonsCount: 0,
+  };
 }

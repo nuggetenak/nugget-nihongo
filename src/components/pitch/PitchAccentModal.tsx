@@ -30,7 +30,9 @@ import {
 import { PitchCategory } from '../../lib/pitch/pitchEngine';
 import { PitchContourView } from './PitchContourView';
 import { useFocusTrap } from '../../hooks/useFocusTrap';
+import { useBodyScrollLock } from '../../hooks/useBodyScrollLock';
 import { useAppStore } from '../../store/useAppStore';
+import { IrasutoyaImage } from '../common/IrasutoyaImage';
 
 interface PitchAccentModalProps {
   isOpen: boolean;
@@ -51,6 +53,7 @@ export const PitchAccentModal: React.FC<PitchAccentModalProps> = ({ isOpen, onCl
   const [quizFinished, setQuizFinished] = useState(false);
 
   const containerRef = useFocusTrap<HTMLDivElement>(isOpen, onClose);
+  useBodyScrollLock(isOpen);
   const { showToast } = useAppStore();
 
   // Filtered minimal pairs based on search
@@ -104,25 +107,25 @@ export const PitchAccentModal: React.FC<PitchAccentModalProps> = ({ isOpen, onCl
   const PATTERN_INFO: Record<PitchCategory, { title: string; color: string; desc: string; particleInfo: string }> = {
     heiban: {
       title: 'Pola 0: Heiban (平板 - Datar)',
-      color: 'text-blue-400 bg-blue-500/10 border-blue-500/30',
+      color: 'text-blue-700 dark:text-blue-400 bg-blue-500/10 border-blue-500/30 font-bold',
       desc: 'Mora pertama rendah [L], naik di mora ke-2 [H], lalu DATAR terus sampai partikel pengiring. Tidak pernah ada kejatuhan nada (downstep).',
       particleInfo: 'Partikel pengiring (が, を, に) tetap bernada TINGGI [H].',
     },
     atamadaka: {
       title: 'Pola 1: Atamadaka (頭高 - Jatuh di Awal)',
-      color: 'text-rose-400 bg-rose-500/10 border-rose-500/30',
+      color: 'text-rose-700 dark:text-rose-400 bg-rose-500/10 border-rose-500/30 font-bold',
       desc: 'Mora pertama bernada TINGGI [H], kemudian langsung ANJLOK JATUH [L] di mora ke-2 dan seterusnya.',
       particleInfo: 'Partikel pengiring (が, を, に) bernada RENDAH [L].',
     },
     nakadaka: {
       title: 'Pola 2+: Nakadaka (中高 - Jatuh di Tengah)',
-      color: 'text-amber-400 bg-amber-500/10 border-amber-500/30',
+      color: 'text-amber-700 dark:text-amber-400 bg-amber-500/10 border-amber-500/30 font-bold',
       desc: 'Mora pertama rendah [L], naik ke puncak nada [H], lalu JATUH di tengah kata sebelum mora terakhir.',
       particleInfo: 'Partikel pengiring (が, を, に) bernada RENDAH [L].',
     },
     odaka: {
       title: 'Pola N: Odaka (尾高 - Jatuh di Partikel)',
-      color: 'text-purple-400 bg-purple-500/10 border-purple-500/30',
+      color: 'text-purple-700 dark:text-purple-400 bg-purple-500/10 border-purple-500/30 font-bold',
       desc: 'Mora pertama rendah [L], naik dan tetap tinggi hingga mora terakhir. Kejatuhan nada baru terjadi tepat pada partikel pengiringnya!',
       particleInfo: 'Partikel pengiring (が, を, に) anjlok bernada RENDAH [L].',
     },
@@ -131,7 +134,7 @@ export const PitchAccentModal: React.FC<PitchAccentModalProps> = ({ isOpen, onCl
   return (
     <div
       onClick={onClose}
-      className="fixed inset-0 z-[9999] flex items-end sm:items-center justify-center p-0 sm:p-5 md:p-6 bg-black/85 backdrop-blur-md animate-in fade-in duration-200"
+      className="fixed inset-0 z-50 flex items-end sm:items-center justify-center p-0 sm:p-5 md:p-6 bg-black/85 backdrop-blur-md animate-in fade-in duration-200"
       role="dialog"
       aria-modal="true"
       aria-label="Studio Pitch Accent Bahasa Jepang (高低アクセント)"
@@ -482,9 +485,9 @@ export const PitchAccentModal: React.FC<PitchAccentModalProps> = ({ isOpen, onCl
 
                       if (selectedAnswerIdx !== null) {
                         if (opt.isCorrect) {
-                          btnStyle = 'bg-emerald-500/20 border-emerald-500 text-emerald-300 font-bold';
+                          btnStyle = 'bg-emerald-500/20 border-emerald-500 text-emerald-800 dark:text-emerald-300 font-bold';
                         } else if (isSelected) {
-                          btnStyle = 'bg-rose-500/20 border-rose-500 text-rose-300 font-bold';
+                          btnStyle = 'bg-rose-500/20 border-rose-500 text-rose-800 dark:text-rose-300 font-bold';
                         } else {
                           btnStyle = 'bg-surface/50 border-accent/10 text-appText-muted opacity-60';
                         }
@@ -535,9 +538,30 @@ export const PitchAccentModal: React.FC<PitchAccentModalProps> = ({ isOpen, onCl
                 </div>
               ) : (
                 /* Quiz Finished Card */
-                <div className="p-6 rounded-3xl bg-surface-2 border border-accent/30 text-center space-y-5 shadow-xl animate-in zoom-in-95">
-                  <div className="w-16 h-16 mx-auto rounded-full bg-accent/20 border border-accent/40 flex items-center justify-center text-accent">
-                    <Sparkles className="w-8 h-8" />
+                <div className="p-6 rounded-3xl bg-surface-2 border border-accent/30 text-center space-y-5 shadow-xl animate-in zoom-in-95 card-interactive-lift">
+                  <div className="w-20 h-20 mx-auto flex items-center justify-center">
+                    {quizScore >= 3 ? (
+                      <IrasutoyaImage
+                        assetId="celebration_kusudama"
+                        className="w-20 h-20"
+                        containerClassName="w-20 h-20"
+                        animatePop
+                      />
+                    ) : quizScore >= 2 ? (
+                      <IrasutoyaImage
+                        assetId="sensei_praise"
+                        className="w-20 h-20"
+                        containerClassName="w-20 h-20"
+                        animatePop
+                      />
+                    ) : (
+                      <IrasutoyaImage
+                        assetId="daruma_recovery"
+                        className="w-20 h-20"
+                        containerClassName="w-20 h-20"
+                        animateFloat
+                      />
+                    )}
                   </div>
                   <div className="space-y-1">
                     <h3 className="text-lg font-black text-appText-bright">

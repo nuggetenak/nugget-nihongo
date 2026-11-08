@@ -27,11 +27,29 @@ const KeigoTrainerModal = React.lazy(() => import('../keigo/KeigoTrainerModal').
 const CounterTrainerModal = React.lazy(() => import('../counters/CounterTrainerModal').then(m => ({ default: m.CounterTrainerModal })));
 const PitchAccentModal = React.lazy(() => import('../pitch/PitchAccentModal').then(m => ({ default: m.PitchAccentModal })));
 const ReportIssueModal = React.lazy(() => import('../ui/ReportIssueModal').then(m => ({ default: m.ReportIssueModal })));
+const StorageEvictionRecoveryModal = React.lazy(() => import('./StorageEvictionRecoveryModal').then(m => ({ default: m.StorageEvictionRecoveryModal })));
+const CommunityHubModal = React.lazy(() => import('../community/CommunityHubModal').then(m => ({ default: m.CommunityHubModal })));
+const HVPTModal = React.lazy(() => import('../audio/HVPTModal').then(m => ({ default: m.HVPTModal })));
+const BadgesModal = React.lazy(() => import('../gamification/BadgesModal').then(m => ({ default: m.BadgesModal })));
+const WordLookupSheet = React.lazy(() => import('./WordLookupSheet').then(m => ({ default: m.WordLookupSheet })));
 
 export const GlobalModalManager: React.FC = () => {
   const { modalStack, closeModal, openModal } = useModalStore();
 
   useBodyScrollLock(modalStack.length > 0);
+
+  // Global Escape key listener to dismiss top modal
+  React.useEffect(() => {
+    if (modalStack.length === 0) return;
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') {
+        e.preventDefault();
+        closeModal();
+      }
+    };
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [modalStack.length, closeModal]);
 
   if (modalStack.length === 0) return null;
 
@@ -121,6 +139,7 @@ export const GlobalModalManager: React.FC = () => {
                   onOpenKeigo={() => openModal('keigo')}
                   onOpenCounters={() => openModal('counters')}
                   onOpenPitch={() => openModal('pitch')}
+                  onOpenHvpt={() => openModal('hvpt')}
                   onOpenFeatureGuide={() => openModal('featureGuide')}
                   onOpenShortcuts={() => openModal('shortcuts')}
                 />
@@ -141,6 +160,7 @@ export const GlobalModalManager: React.FC = () => {
                 <KeigoTrainerModal
                   isOpen={isTop}
                   onClose={closeModal}
+                  initialTab={entry.props?.initialTab}
                 />
               </ModalErrorBoundary>
             );
@@ -150,6 +170,7 @@ export const GlobalModalManager: React.FC = () => {
                 <CounterTrainerModal
                   isOpen={isTop}
                   onClose={closeModal}
+                  initialTab={entry.props?.initialTab}
                 />
               </ModalErrorBoundary>
             );
@@ -157,6 +178,15 @@ export const GlobalModalManager: React.FC = () => {
             return (
               <ModalErrorBoundary modalName="Aksen Nada (Pitch Accent)" key={key} isOpen={isTop} onClose={closeModal}>
                 <PitchAccentModal
+                  isOpen={isTop}
+                  onClose={closeModal}
+                />
+              </ModalErrorBoundary>
+            );
+          case 'hvpt':
+            return (
+              <ModalErrorBoundary modalName="Studio Latihan Akustik HVPT" key={key} isOpen={isTop} onClose={closeModal}>
+                <HVPTModal
                   isOpen={isTop}
                   onClose={closeModal}
                 />
@@ -207,6 +237,45 @@ export const GlobalModalManager: React.FC = () => {
             return (
               <ModalErrorBoundary modalName="Tur Pengenalan" key={key} isOpen={isTop} onClose={closeModal}>
                 <OnboardingModal isOpen={isTop} onClose={closeModal} />
+              </ModalErrorBoundary>
+            );
+          case 'storageEviction':
+            return (
+              <ModalErrorBoundary modalName="Pemulihan Penyimpanan" key={key} isOpen={isTop} onClose={closeModal}>
+                <StorageEvictionRecoveryModal
+                  isOpen={isTop}
+                  onClose={closeModal}
+                  storageUsageMb={entry.props?.storageUsageMb}
+                  storageQuotaMb={entry.props?.storageQuotaMb}
+                />
+              </ModalErrorBoundary>
+            );
+          case 'community':
+            return (
+              <ModalErrorBoundary modalName="Study Lounge & Komunitas" key={key} isOpen={isTop} onClose={closeModal}>
+                <CommunityHubModal
+                  isOpen={isTop}
+                  onClose={closeModal}
+                />
+              </ModalErrorBoundary>
+            );
+          case 'badges':
+            return (
+              <ModalErrorBoundary modalName="Lencana Prestasi" key={key} isOpen={isTop} onClose={closeModal}>
+                <BadgesModal
+                  isOpen={isTop}
+                  onClose={closeModal}
+                />
+              </ModalErrorBoundary>
+            );
+          case 'wordLookup':
+            return (
+              <ModalErrorBoundary modalName="Pencarian Kosakata Cepat" key={key} isOpen={isTop} onClose={closeModal}>
+                <WordLookupSheet
+                  isOpen={isTop}
+                  onClose={closeModal}
+                  word={entry.props?.word || ''}
+                />
               </ModalErrorBoundary>
             );
           default:

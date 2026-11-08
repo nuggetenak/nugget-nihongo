@@ -2,46 +2,51 @@
 //  DokkaiSheet.tsx — Responsive Reading Passage Stimulus Viewer
 //  Research Basis: Dokkai Cognitive Load Budget, Anti-Scroll Fatigue
 //  Split View (Desktop) & Sticky Collapsible Preview (Mobile)
+//  Universal Multi-Device Responsive Design & Cultural Anchors
 // ══════════════════════════════════════════════════════════════════
 
 import React, { useState } from 'react';
 import { BookOpen, ChevronDown, ChevronUp, FileText, ExternalLink } from 'lucide-react';
 import { ReadingPassagePayload } from '../../types/exercise';
+import { IrasutoyaImage } from '../common/IrasutoyaImage';
+import { parseDokkaiParagraphs, getDokkaiGenreMeta } from '../../lib/exercise/dokkaiExplainer';
 
 interface DokkaiSheetProps {
   passage: ReadingPassagePayload;
   className?: string;
 }
 
-const GENRE_LABELS: Record<string, { label: string; icon: string; color: string }> = {
-  short_notice: { label: 'Pemberitahuan Singkat', icon: '📢', color: 'border-amber-500/30 text-amber-400 bg-amber-500/10' },
-  email: { label: 'Surat Elektronik (Email)', icon: '✉️', color: 'border-cyan-500/30 text-cyan-400 bg-cyan-500/10' },
-  instruction: { label: 'Petunjuk & Regulasi', icon: '📋', color: 'border-emerald-500/30 text-emerald-400 bg-emerald-500/10' },
-  realia_table: { label: 'Tabel & Dokumen Realia', icon: '📊', color: 'border-purple-500/30 text-purple-400 bg-purple-500/10' },
-  work_memo: { label: 'Memo Lapangan Kerja', icon: '📝', color: 'border-rose-500/30 text-rose-400 bg-rose-500/10' },
-  essay: { label: 'Esai Pemikiran & Opini', icon: '📖', color: 'border-amber-500/30 text-amber-300 bg-amber-500/10' },
+export const GENRE_LABELS: Record<string, { label: string; icon: string; color: string }> = {
+  short_notice: { label: 'Pemberitahuan Singkat', icon: '📢', color: 'border-amber-500/30 text-amber-800 dark:text-amber-300 bg-amber-500/10 font-bold' },
+  email: { label: 'Surat Elektronik (Email)', icon: '✉️', color: 'border-cyan-500/30 text-cyan-800 dark:text-cyan-300 bg-cyan-500/10 font-bold' },
+  instruction: { label: 'Petunjuk & Regulasi', icon: '📋', color: 'border-emerald-500/30 text-emerald-800 dark:text-emerald-300 bg-emerald-500/10 font-bold' },
+  realia_table: { label: 'Tabel & Dokumen Realia', icon: '📊', color: 'border-purple-500/30 text-purple-800 dark:text-purple-300 bg-purple-500/10 font-bold' },
+  work_memo: { label: 'Memo Lapangan Kerja', icon: '📝', color: 'border-rose-500/30 text-rose-800 dark:text-rose-300 bg-rose-500/10 font-bold' },
+  essay: { label: 'Esai Pemikiran & Opini', icon: '📖', color: 'border-amber-500/30 text-amber-800 dark:text-amber-300 bg-amber-500/10 font-bold' },
 };
 
 export const DokkaiSheet: React.FC<DokkaiSheetProps> = ({ passage, className = '' }) => {
   const [isExpanded, setIsExpanded] = useState(true);
 
-  const genreMeta = GENRE_LABELS[passage.genre] || {
-    label: 'Wacana Membaca (Dokkai)',
-    icon: '📄',
-    color: 'border-theme text-appText-muted bg-surface-2',
-  };
+  if (!passage || !passage.passageText) return null;
 
-  const paragraphs = passage.passageText.split('\n').filter((p) => p.trim().length > 0);
+  const genreMeta = getDokkaiGenreMeta(passage.genre);
+  const paragraphs = parseDokkaiParagraphs(passage.passageText);
 
   return (
     <div
-      className={`bg-surface border border-theme rounded-2xl sm:rounded-3xl p-4 sm:p-6 space-y-4 shadow-sm ${className}`}
+      className={`card-interactive-lift bg-surface border border-theme rounded-2xl sm:rounded-3xl p-4 sm:p-6 space-y-4 shadow-sm ${className}`}
     >
       {/* ── HEADER WITH GENRE CHIP & TOGGLE ────────────────────────── */}
       <div className="flex items-center justify-between gap-3 border-b border-theme/60 pb-3">
         <div className="flex items-center gap-2.5 min-w-0">
-          <div className="w-8 h-8 rounded-xl bg-amber-500/15 border border-amber-500/30 flex items-center justify-center shrink-0">
-            <BookOpen className="w-4 h-4 text-amber-400" />
+          <div className="w-10 h-10 rounded-xl bg-amber-500/15 border border-amber-500/30 flex items-center justify-center shrink-0 shadow-sm overflow-hidden">
+            <IrasutoyaImage
+              assetId="senpai_studying"
+              className="w-8 h-8 object-contain"
+              alt="Wacana Membaca Dokkai"
+              animateFloat
+            />
           </div>
           <div className="min-w-0">
             <div className="flex items-center gap-2">
@@ -61,7 +66,7 @@ export const DokkaiSheet: React.FC<DokkaiSheetProps> = ({ passage, className = '
         <button
           type="button"
           onClick={() => setIsExpanded(!isExpanded)}
-          className="min-h-[38px] px-3 py-1.5 rounded-xl bg-surface-2 hover:bg-surface-3 border border-theme text-xs font-bold text-appText-bright flex items-center gap-1.5 transition-all active:scale-95 shrink-0 shadow-sm"
+          className="min-h-[40px] px-3.5 py-2 rounded-xl bg-surface-2 hover:bg-surface-3 border border-theme text-xs font-bold text-appText-bright flex items-center gap-1.5 transition-all active:scale-95 shrink-0 shadow-sm"
           title={isExpanded ? 'Sembunyikan wacana' : 'Buka wacana'}
         >
           <span>{isExpanded ? 'Ciutkan' : 'Buka Teks'}</span>
@@ -93,7 +98,7 @@ export const DokkaiSheet: React.FC<DokkaiSheetProps> = ({ passage, className = '
         /* Collapsed compact preview banner */
         <div
           onClick={() => setIsExpanded(true)}
-          className="cursor-pointer bg-surface-2/40 hover:bg-surface-2/70 border border-dashed border-theme rounded-xl p-3 flex items-center justify-between gap-3 text-xs text-appText-muted transition-all"
+          className="card-interactive-lift cursor-pointer bg-surface-2/40 hover:bg-surface-2/70 border border-dashed border-theme rounded-xl p-3 flex items-center justify-between gap-3 text-xs text-appText-muted transition-all active:scale-95"
         >
           <div className="flex items-center gap-2 truncate">
             <FileText className="w-4 h-4 text-accent shrink-0" />
@@ -101,9 +106,11 @@ export const DokkaiSheet: React.FC<DokkaiSheetProps> = ({ passage, className = '
               "{paragraphs[0]?.slice(0, 60)}..."
             </span>
           </div>
-          <span className="font-bold text-amber-400 shrink-0">Buka Teks Bacaan →</span>
+          <span className="font-bold text-amber-800 dark:text-amber-400 shrink-0">Buka Teks Bacaan →</span>
         </div>
       )}
     </div>
   );
 };
+
+export default DokkaiSheet;

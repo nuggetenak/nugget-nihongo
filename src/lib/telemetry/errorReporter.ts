@@ -30,7 +30,7 @@ export interface TelemetryErrorPayload {
 const SENSITIVE_PATTERNS = [
   // OpenRouter & Gemini API keys
   /sk-or-v1-[a-zA-Z0-9]{32,}/g,
-  /AIzaSy[a-zA-Z0-9_-]{33}/g,
+  /AIzaSy[a-zA-Z0-9_-]{30,}/g,
   // JWT tokens
   /Bearer\s+[A-Za-z0-9-_]+\.[A-Za-z0-9-_]+\.[A-Za-z0-9-_]+/g,
   /eyJ[A-Za-z0-9_-]+\.[A-Za-z0-9_-]+\.[A-Za-z0-9_-]+/g,
@@ -67,6 +67,62 @@ export function scrubSensitiveData(text: string): string {
   }
 
   return cleaned;
+}
+
+/**
+ * Safe serializer that handles circular structures, errors, DOM objects,
+ * depth caps, and scrubs strings using scrubSensitiveData.
+ */
+export function safeSerialize(obj: any, maxDepth = 5): any {
+  if (obj === null || obj === undefined) return obj;
+  if (typeof obj !== 'object') {
+    return typeof obj === 'string' ? scrubSensitiveData(obj) : obj;
+  }
+
+  const seen = new WeakSet();
+
+  function serializeHelper(val: any, depth: number): any {
+    if (depth > maxDepth) return '[Truncated: Max Depth Exceeded]';
+    if (val === null || val === undefined) return val;
+
+    if (typeof val !== 'object') {
+      return typeof val === 'string' ? scrubSensitiveData(val) : val;
+    }
+
+    if (seen.has(val)) {
+      return '[Circular Reference]';
+    }
+    seen.add(val);
+
+    if (val instanceof Error) {
+      return {
+        name: val.name,
+        message: scrubSensitiveData(val.message),
+        stack: scrubSensitiveData(val.stack || ''),
+      };
+    }
+
+    if (Array.isArray(val)) {
+      return val.slice(0, 50).map((item) => serializeHelper(item, depth + 1));
+    }
+
+    const output: Record<string, any> = {};
+    const keys = Object.keys(val).slice(0, 50);
+    for (const key of keys) {
+      try {
+        output[key] = serializeHelper(val[key], depth + 1);
+      } catch {
+        output[key] = '[Unserializable]';
+      }
+    }
+    return output;
+  }
+
+  try {
+    return serializeHelper(obj, 0);
+  } catch {
+    return { notice: '[Serialization Error: Non-serializable payload]' };
+  }
 }
 
 class ErrorReporter {
@@ -118,7 +174,7 @@ class ErrorReporter {
       timestamp: Date.now(),
       category,
       message: scrubSensitiveData(message),
-      data: data ? JSON.parse(scrubSensitiveData(JSON.stringify(data))) : undefined,
+      data: data ? safeSerialize(data) : undefined,
     };
 
     this.breadcrumbs.push(crumb);
@@ -151,7 +207,7 @@ class ErrorReporter {
       url: typeof window !== 'undefined' ? scrubSensitiveData(window.location.href) : '',
       userAgent: typeof navigator !== 'undefined' ? navigator.userAgent : 'Server',
       breadcrumbs: [...this.breadcrumbs],
-      metadata: metadata ? JSON.parse(scrubSensitiveData(JSON.stringify(metadata))) : undefined,
+      metadata: metadata ? safeSerialize(metadata) : undefined,
     };
 
     // Attempt dispatch or queue offline

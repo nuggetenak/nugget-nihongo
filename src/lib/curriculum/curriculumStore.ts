@@ -5,9 +5,9 @@
 // ══════════════════════════════════════════════════════════════════
 
 import { create } from 'zustand';
-import { L1Substratum } from '../data/diagnosticManager';
-import { useGamificationStore } from '../gamification/gamificationStore';
-import { useAppStore } from '../../store/useAppStore';
+import type { L1Substratum } from '../data/diagnosticManager.ts';
+import { useGamificationStore } from '../gamification/gamificationStore.ts';
+import { useAppStore } from '../../store/useAppStore.ts';
 
 export type TrackId =
   | 'n5'
@@ -87,6 +87,7 @@ export interface CurriculumStoreState {
     completedUnitsCount: number;
     averageScore: number;
   };
+  completeUnit: (trackId: TrackId, unitId: string) => void;
   resetTrackProgress: (trackId: TrackId) => void;
   exportProgressJson: () => string;
   importProgressJson: (json: string) => boolean;
@@ -210,6 +211,7 @@ export const useCurriculumStore = create<CurriculumStoreState>((set, get) => ({
   },
 
   completeLesson: (trackId, unitId, lessonId, score, xpReward = 20) => {
+    if (!trackId || !lessonId || typeof lessonId !== 'string') return;
     const state = get();
     const currentTrack = state.trackProgress[trackId] || {
       completedUnits: [],
@@ -217,8 +219,9 @@ export const useCurriculumStore = create<CurriculumStoreState>((set, get) => ({
       lessonScores: {},
     };
 
-    const prevScore = currentTrack.lessonScores[lessonId] || 0;
-    const bestScore = Math.max(prevScore, score);
+    const cleanScore = Number.isFinite(score) ? Math.max(0, Math.min(100, Math.round(score))) : 0;
+    const prevScore = Number.isFinite(currentTrack.lessonScores[lessonId]) ? currentTrack.lessonScores[lessonId] : 0;
+    const bestScore = Math.max(prevScore, cleanScore);
 
     const completedLessons = currentTrack.completedLessons.includes(lessonId)
       ? currentTrack.completedLessons
@@ -255,7 +258,31 @@ export const useCurriculumStore = create<CurriculumStoreState>((set, get) => ({
     set({ trackProgress: updatedProgress });
   },
 
+  completeUnit: (trackId: TrackId, unitId: string) => {
+    if (!trackId || !unitId || typeof unitId !== 'string') return;
+    const state = get();
+    const currentTrack = state.trackProgress[trackId] || {
+      completedUnits: [],
+      completedLessons: [],
+      lessonScores: {},
+    };
+    if (currentTrack.completedUnits.includes(unitId)) return;
+    const updatedTrack: TrackProgressState = {
+      ...currentTrack,
+      completedUnits: [...currentTrack.completedUnits, unitId],
+    };
+    const updatedProgress = {
+      ...state.trackProgress,
+      [trackId]: updatedTrack,
+    };
+    saveProgressToStorage(updatedProgress);
+    set({ trackProgress: updatedProgress });
+  },
+
   isLessonUnlocked: (trackId, unitNumber, lessonNumber) => {
+    if (!Number.isFinite(unitNumber) || !Number.isFinite(lessonNumber) || unitNumber < 1 || lessonNumber < 1) {
+      return false;
+    }
     // Lesson 1 of Unit 1 is always unlocked
     if (unitNumber === 1 && lessonNumber === 1) return true;
 
@@ -270,8 +297,8 @@ export const useCurriculumStore = create<CurriculumStoreState>((set, get) => ({
       return { completedLessonsCount: 0, completedUnitsCount: 0, averageScore: 0 };
     }
 
-    const completedCount = currentTrack.completedLessons.length;
-    const scores = Object.values(currentTrack.lessonScores);
+    const completedCount = Array.isArray(currentTrack.completedLessons) ? currentTrack.completedLessons.length : 0;
+    const scores = Object.values(currentTrack.lessonScores || {}).filter((s) => Number.isFinite(s));
     const avgScore =
       scores.length > 0
         ? Math.round(scores.reduce((a, b) => a + b, 0) / scores.length)
@@ -279,7 +306,7 @@ export const useCurriculumStore = create<CurriculumStoreState>((set, get) => ({
 
     return {
       completedLessonsCount: completedCount,
-      completedUnitsCount: currentTrack.completedUnits.length,
+      completedUnitsCount: Array.isArray(currentTrack.completedUnits) ? currentTrack.completedUnits.length : 0,
       averageScore: avgScore,
     };
   },
@@ -312,12 +339,13 @@ export const useCurriculumStore = create<CurriculumStoreState>((set, get) => ({
   importProgressJson: (json: string) => {
     try {
       const parsed = JSON.parse(json);
-      if (parsed && parsed.trackProgress) {
+      if (parsed && typeof parsed === 'object' && parsed.trackProgress && typeof parsed.trackProgress === 'object') {
         saveProgressToStorage(parsed.trackProgress);
+        const validSubstratums = ['sundanese', 'javanese', 'batak_eastern', 'general_indonesian'];
         set({
           trackProgress: { ...DEFAULT_TRACK_PROGRESS, ...parsed.trackProgress },
-          activeTrackId: parsed.activeTrackId || 'n5',
-          userSubstratum: parsed.userSubstratum || 'general_indonesian',
+          activeTrackId: parsed.activeTrackId && DEFAULT_TRACK_PROGRESS[parsed.activeTrackId as TrackId] ? (parsed.activeTrackId as TrackId) : 'n5',
+          userSubstratum: validSubstratums.includes(parsed.userSubstratum) ? parsed.userSubstratum : 'general_indonesian',
         });
         return true;
       }

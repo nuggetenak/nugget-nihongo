@@ -9,9 +9,11 @@ import {
   hasNativeJapaneseVoice as unifiedHasNativeJapaneseVoice,
   stopJapaneseSpeech as unifiedStopJapaneseSpeech,
   isSpeechSynthesisSupported as unifiedIsSpeechSynthesisSupported,
-} from './speechEngine';
-import { syntheticAudio } from './syntheticAudioFallback';
+  type SpeakJapaneseOptions,
+} from './speechEngine.ts';
+import { syntheticAudio } from './syntheticAudioFallback.ts';
 
+export type { SpeakJapaneseOptions };
 export const getJaVoice = unifiedGetJaVoice;
 export const hasNativeJapaneseVoice = unifiedHasNativeJapaneseVoice;
 export const stopJapaneseSpeech = unifiedStopJapaneseSpeech;
@@ -59,6 +61,11 @@ export const KANA_TO_ROMAJI: Record<string, string> = {
  * Legacy tts facade: delegating directly to unified speechEngine
  * Plays local /audio/kana/ clips or native speech synthesis with syntheticAudio fallback
  */
-export function speakJapanese(text: string, customRate?: number): void {
-  unifiedSpeakJapanese(text, customRate);
+export function speakJapanese(
+  text: string,
+  rateOrOptions?: number | SpeakJapaneseOptions,
+  legacyOnEnd?: () => void,
+  legacyOnError?: (err: any) => void
+): Promise<void> {
+  return unifiedSpeakJapanese(text, rateOrOptions, legacyOnEnd, legacyOnError);
 }

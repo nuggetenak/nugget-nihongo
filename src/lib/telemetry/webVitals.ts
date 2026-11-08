@@ -119,27 +119,61 @@ class WebVitalsMonitor {
 
   // ── Google Core Web Vitals Threshold Rating Helpers ─────────────
   public rateLCP(value: number): MetricRating {
+    if (!Number.isFinite(value) || value < 0) return 'poor';
     if (value <= 2500) return 'good';
     if (value <= 4000) return 'needs-improvement';
     return 'poor';
   }
 
   public rateCLS(value: number): MetricRating {
+    if (!Number.isFinite(value) || value < 0) return 'poor';
     if (value <= 0.1) return 'good';
     if (value <= 0.25) return 'needs-improvement';
     return 'poor';
   }
 
   public rateINP(value: number): MetricRating {
+    if (!Number.isFinite(value) || value < 0) return 'poor';
     if (value <= 200) return 'good';
     if (value <= 500) return 'needs-improvement';
     return 'poor';
   }
 
   public rateTTFB(value: number): MetricRating {
+    if (!Number.isFinite(value) || value < 0) return 'poor';
     if (value <= 800) return 'good';
     if (value <= 1800) return 'needs-improvement';
     return 'poor';
+  }
+
+  /**
+   * Returns overall Core Web Vitals health assessment.
+   */
+  public getHealthSummary(): {
+    isHealthy: boolean;
+    ratings: Record<string, MetricRating>;
+    totalMeasured: number;
+  } {
+    const summary = this.getMetricsSummary();
+    const ratings: Record<string, MetricRating> = {};
+    let totalMeasured = 0;
+    let hasPoor = false;
+
+    for (const [key, metric] of Object.entries(summary)) {
+      if (metric) {
+        ratings[key] = metric.rating;
+        totalMeasured++;
+        if (metric.rating === 'poor') {
+          hasPoor = true;
+        }
+      }
+    }
+
+    return {
+      isHealthy: totalMeasured > 0 && !hasPoor,
+      ratings,
+      totalMeasured,
+    };
   }
 
   /**

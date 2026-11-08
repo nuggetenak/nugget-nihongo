@@ -237,7 +237,7 @@ export const Header: React.FC<HeaderProps> = ({
         >
           <div className="flex items-center gap-1">
             <Flame className="w-4 h-4 fill-amber-500 text-amber-500 animate-pulse shrink-0" />
-            <span className="text-xs font-bold font-mono text-amber-400">{streak}</span>
+            <span className="text-xs font-bold font-mono text-amber-800 dark:text-amber-400">{streak}</span>
           </div>
           <div className="hidden sm:flex items-center gap-1">
             <span className="text-accent/30 text-xs">·</span>
@@ -306,14 +306,17 @@ export const Header: React.FC<HeaderProps> = ({
           role="dialog"
           aria-modal="true"
           aria-label="Pilih Jalur Kurikulum Aktif"
-          className="fixed inset-0 z-[99999] bg-stone-950/80 backdrop-blur-sm flex items-end sm:items-center justify-center p-0 sm:p-4 animate-in fade-in duration-200"
+          className="fixed inset-0 z-50 bg-stone-950/80 backdrop-blur-sm flex items-end sm:items-center justify-center p-0 sm:p-4 animate-in fade-in duration-200"
           onClick={() => setIsTrackPickerOpen(false)}
         >
           <div
             ref={modalRef}
             onClick={(e) => e.stopPropagation()}
-            className="w-full max-w-xl bg-surface border border-accent/25 rounded-t-3xl sm:rounded-3xl shadow-2xl flex flex-col max-h-[85dvh] sm:max-h-[80vh] overflow-hidden"
+            className="w-full max-w-xl bg-surface border border-accent/25 rounded-t-3xl sm:rounded-3xl shadow-2xl flex flex-col max-h-[85dvh] sm:max-h-[80vh] overflow-hidden pb-[max(0.5rem,env(safe-area-inset-bottom))] sm:pb-0"
           >
+            {/* Mobile Drag Handle */}
+            <div className="w-12 h-1.5 rounded-full bg-accent/25 mx-auto mt-2.5 -mb-1 sm:hidden shrink-0" />
+
             {/* Modal Header */}
             <div className="p-4 sm:p-5 border-b border-accent/15 flex items-center justify-between">
               <div>
@@ -336,14 +339,14 @@ export const Header: React.FC<HeaderProps> = ({
             </div>
 
             {/* Category Selector Tabs */}
-            <div className="flex items-center gap-1 p-2 bg-surface-2 border-b border-accent/15 overflow-x-auto scrollbar-none shrink-0">
+            <div className="flex items-center gap-1.5 p-2 bg-surface-2 border-b border-accent/15 overflow-x-auto scrollbar-none shrink-0">
               <button
                 type="button"
                 onClick={() => setPickerCategory('jlpt')}
-                className={`flex-1 min-w-0 py-1.5 px-2 rounded-lg text-xs font-bold transition-all text-center whitespace-nowrap active:scale-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent ${
+                className={`flex-1 min-w-0 min-h-[40px] py-2 px-3 rounded-xl text-xs font-bold transition-all text-center whitespace-nowrap active:scale-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent ${
                   pickerCategory === 'jlpt'
                     ? 'bg-amber-500 text-stone-950 shadow-sm font-extrabold'
-                    : 'text-appText-muted hover:text-appText-bright'
+                    : 'text-appText-muted hover:text-appText-bright hover:bg-surface-3/50'
                 }`}
               >
                 🇯🇵 JLPT
@@ -351,10 +354,10 @@ export const Header: React.FC<HeaderProps> = ({
               <button
                 type="button"
                 onClick={() => setPickerCategory('ssw')}
-                className={`flex-1 min-w-0 py-1.5 px-2 rounded-lg text-xs font-bold transition-all text-center whitespace-nowrap active:scale-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent ${
+                className={`flex-1 min-w-0 min-h-[40px] py-2 px-3 rounded-xl text-xs font-bold transition-all text-center whitespace-nowrap active:scale-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent ${
                   pickerCategory === 'ssw'
                     ? 'bg-amber-500 text-stone-950 shadow-sm font-extrabold'
-                    : 'text-appText-muted hover:text-appText-bright'
+                    : 'text-appText-muted hover:text-appText-bright hover:bg-surface-3/50'
                 }`}
               >
                 💼 SSW Kerjasama
@@ -362,10 +365,10 @@ export const Header: React.FC<HeaderProps> = ({
               <button
                 type="button"
                 onClick={() => setPickerCategory('jft')}
-                className={`flex-1 min-w-0 py-1.5 px-2 rounded-lg text-xs font-bold transition-all text-center whitespace-nowrap active:scale-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent ${
+                className={`flex-1 min-w-0 min-h-[40px] py-2 px-3 rounded-xl text-xs font-bold transition-all text-center whitespace-nowrap active:scale-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent ${
                   pickerCategory === 'jft'
                     ? 'bg-amber-500 text-stone-950 shadow-sm font-extrabold'
-                    : 'text-appText-muted hover:text-appText-bright'
+                    : 'text-appText-muted hover:text-appText-bright hover:bg-surface-3/50'
                 }`}
               >
                 🎌 JFT Hidup
@@ -373,10 +376,10 @@ export const Header: React.FC<HeaderProps> = ({
               <button
                 type="button"
                 onClick={() => setPickerCategory('books')}
-                className={`flex-1 min-w-0 py-1.5 px-2 rounded-lg text-xs font-bold transition-all text-center whitespace-nowrap active:scale-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent ${
+                className={`flex-1 min-w-0 min-h-[40px] py-2 px-3 rounded-xl text-xs font-bold transition-all text-center whitespace-nowrap active:scale-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent ${
                   pickerCategory === 'books'
                     ? 'bg-amber-500 text-stone-950 shadow-sm font-extrabold'
-                    : 'text-appText-muted hover:text-appText-bright'
+                    : 'text-appText-muted hover:text-appText-bright hover:bg-surface-3/50'
                 }`}
               >
                 📚 Buku Teks

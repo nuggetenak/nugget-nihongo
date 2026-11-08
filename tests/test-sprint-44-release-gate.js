@@ -40,7 +40,14 @@ check('scripts/run-persona-simulations.js exists and is wired into package.json'
   assert(fs.existsSync(scriptPath), 'scripts/run-persona-simulations.js must exist');
   const pkg = JSON.parse(fs.readFileSync(path.join(ROOT, 'package.json'), 'utf8'));
   assert(pkg.scripts['test:personas'], 'package.json must contain test:personas script');
-  assert(pkg.scripts.test.includes('scripts/run-persona-simulations.js'), 'npm test must include persona simulations');
+  const orchestratorCode = fs.existsSync(path.join(ROOT, 'tests/master-regression-orchestrator.js'))
+    ? fs.readFileSync(path.join(ROOT, 'tests/master-regression-orchestrator.js'), 'utf8')
+    : '';
+  assert(
+    pkg.scripts.test.includes('scripts/run-persona-simulations.js') ||
+    (pkg.scripts.test.includes('master-regression-orchestrator.js') && orchestratorCode.includes('scripts/run-persona-simulations.js')),
+    'npm test must include persona simulations'
+  );
 });
 
 check('200 Indonesian Learner Personas JSON is accessible and has all 4 pillars', () => {

@@ -6,7 +6,7 @@
 //  - Network-first for dynamic API endpoints (Supabase / Cloudflare Workers)
 // ══════════════════════════════════════
 
-const CACHE = 'nihongo-v21.2.0';
+const CACHE = 'nihongo-v24.0.0';
 
 const CORE_ASSETS = [
   '/',
@@ -110,7 +110,8 @@ const NETWORK_FIRST = [
   'supabase.co',
   'workers.dev',
   'googleapis.com',
-  'groq.com'
+  'groq.com',
+  'openrouter.ai'
 ];
 
 self.addEventListener('install', e => {
@@ -269,7 +270,7 @@ self.addEventListener('fetch', e => {
   if (req.method !== 'GET') return;
 
   // 1. API endpoints -> Network first
-  if (NETWORK_FIRST.some(h => url.hostname.includes(h))) {
+  if (NETWORK_FIRST.some(h => url.hostname.includes(h)) || url.pathname.startsWith('/api/')) {
     e.respondWith(
       fetch(req).catch(() => caches.match(req))
     );
