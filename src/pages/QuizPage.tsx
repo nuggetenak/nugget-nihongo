@@ -51,6 +51,8 @@ export const QuizPage: React.FC = () => {
     userSubstratum,
     fsrsDueReviewTrigger,
     clearFSRSDueReviewTrigger,
+    quizInitialMode,
+    clearQuizInitialMode,
   } = useAppStore();
 
   // Navigation state within Quiz Arena: 'hub' (dashboard) | 'quiz' (active session) | 'cbt' (14 Golden Sets CBT)
@@ -217,6 +219,15 @@ export const QuizPage: React.FC = () => {
       startFSRSDueSession();
     }
   }, [fsrsDueReviewTrigger]);
+
+  // Automatically trigger specific standard quiz mode when dispatched from Dojo or KebunPage
+  useEffect(() => {
+    if (quizInitialMode) {
+      const mode = quizInitialMode;
+      clearQuizInitialMode();
+      startStandardSession(mode);
+    }
+  }, [quizInitialMode]);
 
   // Load Mistake Retry session
   const startMistakeSession = () => {

@@ -18,6 +18,62 @@ export interface PatchNote {
 
 export const PATCH_NOTES_HISTORY: PatchNote[] = [
   {
+    version: 'v24.1.0',
+    releaseName: 'Shin-Nihongo: Dojo & Retensi Memori Terpadu',
+    date: '9 November 2026',
+    type: 'minor',
+    friendlySummary: 'Pembaruan v24.1.0 menyempurnakan kenyamanan ruang latihan mandiri (Dojo) dan retensi memori (Ulas). Sasana Dojo kini berfokus murni pada 6 mode latihan interaktif (Kanji Dojo, Flashcard 3D Refleks, Kuis Pilihan Ganda, Susun Kalimat, Isian Rumpang, dan Menyimak Kilat). Fitur Flashcard 3D kini dapat diakses bebas kapan saja dari tab Ulas & Dojo tanpa terkunci kuota due. Sub-tab Bedah Materi kini selalu melayang (sticky) saat menggulir, dan seluruh tombol tutup (X) modal kini merespons klik dengan sempurna.',
+    highlights: [
+      'Pilar 1 — Sasana Dojo 6-Mode Mandiri: Latihan mandiri kini kembali murni ke tujuannya dengan 6 mode drill refleks (Kanji Dojo, Flashcard 3D, Kuis Pilihan Ganda, Susun Kalimat Bunsetsu, Isian Rumpang, dan Menyimak Kilat).',
+      'Pilar 2 — Akses Flashcard Bebas di Tab Ulas & Dojo: Kartu Flashcard 3D Refleks kini dapat diakses bebas kapan saja untuk semua level (N5–N1), tanpa harus terkunci atau menunggu kuota kartu jatuh tempo di FSRS.',
+      'Pilar 3 — Sub-Tab Bedah Materi Melayang (Sticky): Navigasi sub-tab materi (Semua, Tata Bahasa, Kosakata, Tips Jebakan) kini tetap melayang di bawah tahapan belajar saat kamu scroll panjang ke bawah.',
+      'Pilar 4 — Perbaikan Tombol Tutup (X) Seluruh Modal: Seluruh tombol silang (X) dan tombol Tutup di pop-up Catatan Rilis, Toolbox Belajar, dan modal lainnya kini menutup seketika dengan mulus.',
+      'Pilar 5 — Pustaka & Simulator Ujian CBT Terorganisir: Eksplorasi 9 buku teks populer (Minna, Irodori, Genki) dan Simulator Ujian Resmi Choukai CBT (163 soal) kini tersusun rapi di bagian referensi tambahan.',
+    ],
+    details: [
+      {
+        category: 'Pilar 1 — Sasana Dojo 6-Mode Mandiri & Latihan Refleks Cepat',
+        items: [
+          'Restrukturisasi antarmuka Dojo menjadi gym latihan mandiri terpadu dengan 6 mode latihan aktif.',
+          'Dukungan penuh untuk Kanji Dojo (kanvas goresan), Flashcard 3D Refleks, Kuis Pilihan Ganda, Susun Kalimat (Bunsetsu), Isian Rumpang (Cloze), dan Menyimak Kilat.',
+          'Pemilih level JLPT N5–N1 terintegrasi langsung di kartu latihan untuk transisi belajar instan.',
+        ],
+      },
+      {
+        category: 'Pilar 2 — Pembukaan Akses Bebas Flashcard 3D di Tab Ulas & Dojo',
+        items: [
+          'Membuka gerbang flashcard sehingga pemelajar dapat berlatih kartu 3D kapan saja tanpa dibatasi jumlah kartu due FSRS.',
+          'Tombol latihan bebas langsung di header FSRS Cockpit pada Tab Ulas.',
+          'Navigasi instan antar kartu dengan animasi 3D flip, audio pengucapan alami, dan pemeringkatan FSRS 4 tingkat.',
+        ],
+      },
+      {
+        category: 'Pilar 3 — Navigasi Melayang (Sticky Sub-Tabs) Tahap Bedah Materi',
+        items: [
+          'Penataan sub-tab navigasi (Semua, Tata Bahasa, Kosakata, Tips Jebakan) dengan posisi sticky di bawah 4 tahap belajar.',
+          'Perbaikan batas overflow pada elemen kontainer sehingga sticky bar tidak pernah tenggelam saat scroll panjang.',
+          'Peralihan antar materi kini dapat dilakukan langsung di posisi scroll mana pun di layar ponsel.',
+        ],
+      },
+      {
+        category: 'Pilar 4 — Imunitas Tombol Tutup (X) & Penutupan Modal Global',
+        items: [
+          'Penanganan MouseEvent bawaan React pada fungsi closeModal di useModalStore.',
+          'Perbaikan tombol silang (X) dan tombol Tutup Catatan pada PatchNotesModal dan GlobalModalManager.',
+          'Pengamanan keyboard Escape dan klik backdrop di seluruh jendela pop-up aplikasi.',
+        ],
+      },
+      {
+        category: 'Pilar 5 — Penataan Pustaka Buku Teks & Simulator Ujian Choukai',
+        items: [
+          'Pemisahan tegas antara Menyimak Kilat (audio 5–10 detik santai) dengan Simulator Ujian Resmi Choukai CBT (163 butir soal ujian resmi).',
+          'Penempatan modul perpustakaan 9 seri buku teks populer dan laboratorium tata bahasa ke dalam laci referensi terstruktur.',
+          'Kompilasi otomatis catatan rilis ke CHANGELOG.md melalui sinkronisasi Single Source of Truth.',
+        ],
+      },
+    ],
+  },
+  {
     version: 'v24.0.0',
     releaseName: 'Shin-Nihongo: Sovereign Pedagogical Zenith & Autonomous Mastery',
     date: '8 November 2026',

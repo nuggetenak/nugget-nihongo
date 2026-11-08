@@ -91,13 +91,16 @@ export const useModalStore = create<ModalState>((set, get) => ({
     });
   },
 
-  closeModal: (type?: ModalType) => {
+  closeModal: (type?: ModalType | unknown) => {
     set((state) => {
-      if (!type) {
+      // If no type specified or if a React MouseEvent object was passed from onClick={closeModal}
+      if (!type || typeof type !== 'string') {
         return { modalStack: state.modalStack.slice(0, -1) };
       }
-      const lastIndex = state.modalStack.map((m) => m.type).lastIndexOf(type);
-      if (lastIndex === -1) return state;
+      const lastIndex = state.modalStack.map((m) => m.type).lastIndexOf(type as ModalType);
+      if (lastIndex === -1) {
+        return { modalStack: state.modalStack.slice(0, -1) };
+      }
       return {
         modalStack: state.modalStack.filter((_, idx) => idx !== lastIndex),
       };

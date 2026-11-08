@@ -3,15 +3,15 @@
 //  Single source of truth across React SPA, Service Worker, and PWA
 // ══════════════════════════════════════════════════════════════════
 
-export const APP_VERSION = 'v24.0.0';
-export const APP_VERSION_NUMBER = '24.0.0';
-export const APP_RELEASE_NAME = 'Shin-Nihongo: Sovereign Pedagogical Zenith & Autonomous Mastery';
-export const APP_BUILD_DATE = '2026-11-08';
+export const APP_VERSION = 'v24.1.0';
+export const APP_VERSION_NUMBER = '24.1.0';
+export const APP_RELEASE_NAME = 'Shin-Nihongo: Dojo & Retensi Memori Terpadu';
+export const APP_BUILD_DATE = '2026-11-09';
 
 export const APP_CHANGELOG_HIGHLIGHTS = [
-  'Pilar 1 — Uji Nyata 200 Persona Indonesia: Teruji tuntas untuk berbagai profil pemelajar Indonesia (pekerja SSW Kaigo, manufaktur, mahasiswa, dan perantau) di berbagai kondisi sinyal minim dan 179 tipe smartphone tanpa kendala teknis.',
-  'Pilar 2 — Alur Materi Mengalir & Pengingat Pintar FSRS: Materi belajar kini menyatu dalam satu alur membaca yang nyaman (tata bahasa → kosakata → tips jebakan → kuis pemahaman) dengan jadwal pengulangan cerdas FSRS agar tidak mudah lupa.',
-  'Pilar 3 — Kanvas Tulis Kanji di Layar Ponsel: Latihan menulis kanji langsung dengan jari di layar ponselmu dengan panduan goresan langkah-demi-langkah, efek audio prosedural ZzFX yang menyenangkan, dan kartu sertifikat kelulusan Goukaku.',
-  'Pilar 4 — Aman Digunakan Offline: Progres belajarmu tersimpan otomatis di perangkat secara lokal (IndexedDB) dan tersinkronisasi mulus ke cloud tanpa khawatir kehilangan data saat kuota habis atau sinyal putus.',
-  'Pilar 5 — Pilihan Kuis Bersih & Komunitas Nyaman: Opsi kuis dan tes adaptif (CAT) bebas dari tanda kurung atau pilihan aneh, tanpa papan peringkat publik yang membuat cemas, serta didukung kanal resmi 𝕏 (@NuggetNihongo) dan Trakteer.',
+  'Pilar 1 — Sasana Dojo 6-Mode Mandiri: Latihan mandiri kini kembali murni ke tujuannya dengan 6 mode drill refleks (Kanji Dojo, Flashcard 3D, Kuis Pilihan Ganda, Susun Kalimat Bunsetsu, Isian Rumpang, dan Menyimak Kilat).',
+  'Pilar 2 — Akses Flashcard Bebas di Tab Ulas & Dojo: Kartu Flashcard 3D Refleks kini dapat diakses bebas kapan saja untuk semua level (N5–N1), tanpa harus terkunci atau menunggu kuota kartu jatuh tempo di FSRS.',
+  'Pilar 3 — Sub-Tab Bedah Materi Melayang (Sticky): Navigasi sub-tab materi (Semua, Tata Bahasa, Kosakata, Tips Jebakan) kini tetap melayang di bawah tahapan belajar saat kamu scroll panjang ke bawah.',
+  'Pilar 4 — Perbaikan Tombol Tutup (X) Seluruh Modal: Seluruh tombol silang (X) dan tombol Tutup di pop-up Catatan Rilis, Toolbox Belajar, dan modal lainnya kini menutup seketika dengan mulus.',
+  'Pilar 5 — Pustaka & Simulator Ujian CBT Terorganisir: Eksplorasi 9 buku teks populer (Minna, Irodori, Genki) dan Simulator Ujian Resmi Choukai CBT (163 soal) kini tersusun rapi di bagian referensi tambahan.',
 ];

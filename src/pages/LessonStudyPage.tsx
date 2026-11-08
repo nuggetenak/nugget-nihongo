@@ -396,7 +396,7 @@ export const LessonStudyPage: React.FC = () => {
       {/* ── 3. PANEL TAHAP KONTEN DINAMIS ────────────────────────── */}
       <div 
         id="lesson-studio-top"
-        className="scroll-mt-44 sm:scroll-mt-48 p-4 sm:p-7 rounded-3xl bg-surface border border-accent/20 shadow-sm transition-[min-height] duration-300 ease-out min-h-[380px] sm:min-h-[420px] overflow-hidden animate-in fade-in slide-in-from-right-4 duration-300 card-interactive-lift"
+        className="scroll-mt-44 sm:scroll-mt-48 p-4 sm:p-7 rounded-3xl bg-surface border border-accent/20 shadow-sm transition-[min-height] duration-300 ease-out min-h-[380px] sm:min-h-[420px] overflow-visible animate-in fade-in slide-in-from-right-4 duration-300 card-interactive-lift"
       >
         <div key={activeStage} className="animate-in fade-in duration-200">
           {activeStage === 'dialogue' && (

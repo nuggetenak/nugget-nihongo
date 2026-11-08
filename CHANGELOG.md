@@ -3,6 +3,43 @@
 > Catatan pembaruan ini disinkronkan secara otomatis dari `src/lib/data/patchNotes.ts`
 > Single Source of Truth: Jalankan `npm run changelog` atau `npm run build` untuk memutakhirkan.
 
+## v24.1.0 (9 November 2026) — Shin-Nihongo: Dojo & Retensi Memori Terpadu
+
+### Sorotan Pembaruan (Highlights)
+- Pilar 1 — Sasana Dojo 6-Mode Mandiri: Latihan mandiri kini kembali murni ke tujuannya dengan 6 mode drill refleks (Kanji Dojo, Flashcard 3D, Kuis Pilihan Ganda, Susun Kalimat Bunsetsu, Isian Rumpang, dan Menyimak Kilat).
+- Pilar 2 — Akses Flashcard Bebas di Tab Ulas & Dojo: Kartu Flashcard 3D Refleks kini dapat diakses bebas kapan saja untuk semua level (N5–N1), tanpa harus terkunci atau menunggu kuota kartu jatuh tempo di FSRS.
+- Pilar 3 — Sub-Tab Bedah Materi Melayang (Sticky): Navigasi sub-tab materi (Semua, Tata Bahasa, Kosakata, Tips Jebakan) kini tetap melayang di bawah tahapan belajar saat kamu scroll panjang ke bawah.
+- Pilar 4 — Perbaikan Tombol Tutup (X) Seluruh Modal: Seluruh tombol silang (X) dan tombol Tutup di pop-up Catatan Rilis, Toolbox Belajar, dan modal lainnya kini menutup seketika dengan mulus.
+- Pilar 5 — Pustaka & Simulator Ujian CBT Terorganisir: Eksplorasi 9 buku teks populer (Minna, Irodori, Genki) dan Simulator Ujian Resmi Choukai CBT (163 soal) kini tersusun rapi di bagian referensi tambahan.
+
+### Rincian Perubahan (Details)
+#### Pilar 1 — Sasana Dojo 6-Mode Mandiri & Latihan Refleks Cepat
+- Restrukturisasi antarmuka Dojo menjadi gym latihan mandiri terpadu dengan 6 mode latihan aktif.
+- Dukungan penuh untuk Kanji Dojo (kanvas goresan), Flashcard 3D Refleks, Kuis Pilihan Ganda, Susun Kalimat (Bunsetsu), Isian Rumpang (Cloze), dan Menyimak Kilat.
+- Pemilih level JLPT N5–N1 terintegrasi langsung di kartu latihan untuk transisi belajar instan.
+
+#### Pilar 2 — Pembukaan Akses Bebas Flashcard 3D di Tab Ulas & Dojo
+- Membuka gerbang flashcard sehingga pemelajar dapat berlatih kartu 3D kapan saja tanpa dibatasi jumlah kartu due FSRS.
+- Tombol latihan bebas langsung di header FSRS Cockpit pada Tab Ulas.
+- Navigasi instan antar kartu dengan animasi 3D flip, audio pengucapan alami, dan pemeringkatan FSRS 4 tingkat.
+
+#### Pilar 3 — Navigasi Melayang (Sticky Sub-Tabs) Tahap Bedah Materi
+- Penataan sub-tab navigasi (Semua, Tata Bahasa, Kosakata, Tips Jebakan) dengan posisi sticky di bawah 4 tahap belajar.
+- Perbaikan batas overflow pada elemen kontainer sehingga sticky bar tidak pernah tenggelam saat scroll panjang.
+- Peralihan antar materi kini dapat dilakukan langsung di posisi scroll mana pun di layar ponsel.
+
+#### Pilar 4 — Imunitas Tombol Tutup (X) & Penutupan Modal Global
+- Penanganan MouseEvent bawaan React pada fungsi closeModal di useModalStore.
+- Perbaikan tombol silang (X) dan tombol Tutup Catatan pada PatchNotesModal dan GlobalModalManager.
+- Pengamanan keyboard Escape dan klik backdrop di seluruh jendela pop-up aplikasi.
+
+#### Pilar 5 — Penataan Pustaka Buku Teks & Simulator Ujian Choukai
+- Pemisahan tegas antara Menyimak Kilat (audio 5–10 detik santai) dengan Simulator Ujian Resmi Choukai CBT (163 butir soal ujian resmi).
+- Penempatan modul perpustakaan 9 seri buku teks populer dan laboratorium tata bahasa ke dalam laci referensi terstruktur.
+- Kompilasi otomatis catatan rilis ke CHANGELOG.md melalui sinkronisasi Single Source of Truth.
+
+---
+
 ## v24.0.0 (8 November 2026) — Shin-Nihongo: Sovereign Pedagogical Zenith & Autonomous Mastery
 
 ### Sorotan Pembaruan (Highlights)

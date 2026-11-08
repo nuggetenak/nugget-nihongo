@@ -1,6 +1,7 @@
 import { create } from 'zustand';
 import { JLPTLevel } from '../types/vocab';
 import { FSRSCard } from '../types/fsrs';
+import { QuizMode } from '../types/quiz';
 import { useGamificationStore, checkXpAntiCheat } from '../lib/gamification/gamificationStore';
 import { useGardenStore } from '../lib/garden/gardenStore';
 import { L1Substratum } from '../lib/data/diagnosticManager';
@@ -182,6 +183,11 @@ export interface AppState {
   fsrsDueReviewTrigger: boolean;
   startFSRSDueSession: () => void;
   clearFSRSDueReviewTrigger: () => void;
+
+  // Direct Quiz Session Trigger (Ticket T-250)
+  quizInitialMode: QuizMode | null;
+  startQuizSession: (mode: QuizMode) => void;
+  clearQuizInitialMode: () => void;
 
   // Reset entire store
   resetAllData: () => void;
@@ -799,6 +805,14 @@ export const useAppStore = create<AppState>((set, get) => ({
     get().setActiveTab('quiz');
   },
   clearFSRSDueReviewTrigger: () => set({ fsrsDueReviewTrigger: false }),
+
+  // Direct Quiz Session Trigger (Ticket T-250)
+  quizInitialMode: null,
+  startQuizSession: (mode: QuizMode) => {
+    set({ quizInitialMode: mode, fsrsDueReviewTrigger: false });
+    get().setActiveTab('quiz');
+  },
+  clearQuizInitialMode: () => set({ quizInitialMode: null }),
 
   resetAllData: () => {
     if (typeof window !== 'undefined') {

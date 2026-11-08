@@ -107,8 +107,8 @@ export const PatchNotesModal: React.FC<PatchNotesModalProps> = ({ isOpen, onClos
 
           <button
             type="button"
-            onClick={onClose}
-            className="w-11 h-11 min-w-[44px] min-h-[44px] rounded-full bg-surface-2 hover:bg-surface-3 flex items-center justify-center text-appText-muted hover:text-appText-bright transition-all shrink-0 active:scale-95"
+            onClick={() => onClose()}
+            className="w-11 h-11 min-w-[44px] min-h-[44px] rounded-full bg-surface-2 hover:bg-surface-3 flex items-center justify-center text-appText-muted hover:text-appText-bright transition-all shrink-0 active:scale-95 cursor-pointer"
             aria-label="Tutup catatan rilis"
           >
             <X className="w-5 h-5" />
@@ -269,8 +269,9 @@ export const PatchNotesModal: React.FC<PatchNotesModalProps> = ({ isOpen, onClos
           <span className="hidden sm:inline">Nugget Nihongo PWA Offline Engine</span>
           <span className="text-xs sm:hidden font-mono text-accent">{APP_VERSION}</span>
           <button
-            onClick={onClose}
-            className="px-5 py-2.5 min-h-[40px] rounded-xl bg-accent text-bg font-extrabold text-xs hover:bg-accent-hot transition-all shadow-sm active:scale-95 ml-auto"
+            type="button"
+            onClick={() => onClose()}
+            className="px-5 py-2.5 min-h-[40px] rounded-xl bg-accent text-bg font-extrabold text-xs hover:bg-accent-hot transition-all shadow-sm active:scale-95 ml-auto cursor-pointer"
           >
             Tutup Catatan
           </button>

@@ -86,10 +86,10 @@ export const DOJO_TOOLS: DojoToolMeta[] = [
     clusterId: 1,
     clusterName: 'Latihan Keterampilan Inti',
     clusterIcon: '🥋',
-    title: 'Simulator Menyimak Choukai',
+    title: 'Simulator Menyimak Choukai (CBT Resmi)',
     jpTitle: '聴解CBTシミュレーター',
-    desc: 'Official listening tracks & audio drills otentik dengan 163 soal simulasi ujian Choukai berstandar JLPT dan JFT-Basic CBT.',
-    badge: 'Audio Otentik · CBT Exam',
+    desc: 'Official listening tracks & audio drills otentik dengan 163 soal simulasi ujian Choukai berstandar JLPT dan JFT-Basic CBT lengkap naskah transkrip.',
+    badge: '163 Soal · Ujian Resmi CBT',
     badgeColor: 'bg-surface-3/90 text-accent-hot dark:text-amber-300 border-amber-500/30 font-semibold',
     icon: '🎧',
     actionType: 'subview',
@@ -260,6 +260,7 @@ export const MateriHubPage: React.FC = () => {
     showRomaji, setShowRomaji,
     cards,
     openDetailModal,
+    startQuizSession,
     materiStudio: activeStudio,
     setMateriStudio: setActiveStudio,
   } = useAppStore();
@@ -674,35 +675,351 @@ export const MateriHubPage: React.FC = () => {
         </div>
       </div>
 
-      {/* ── DOJO MODE: 11 Interactive Tools across 2 Pedagogical Categories ── */}
+      {/* ── DOJO MODE: Sasana Latihan Mandiri (6 Mode Praktik) & 11 Alat Referensi ── */}
       {hubSectionMode === 'dojo' && (
-        <div className="space-y-6 sm:space-y-8 animate-in fade-in duration-200">
-          {/* Category Filter Pill Bar: Semua Alat (11), Kemahiran Inti (3), Peralatan & Referensi (8) */}
-          <div className="flex items-center gap-2 overflow-x-auto scrollbar-none pb-1 max-w-full">
-            {[
-              { id: 'all', label: 'Semua Alat (11)', icon: '🥋' },
-              { id: 'kemahiran', label: 'Kemahiran Inti (3)', icon: '🥋' },
-              { id: 'referensi', label: 'Peralatan & Referensi (8)', icon: '🔬' },
-            ].map((tab) => {
-              const isSelected = selectedCategoryFilter === tab.id;
-              return (
-                <button
-                  key={tab.id}
-                  type="button"
-                  onClick={() => setSelectedCategoryFilter(tab.id as any)}
-                  aria-pressed={isSelected}
-                  aria-label={`Filter alat: ${tab.label}`}
-                  className={`px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold whitespace-nowrap shrink-0 transition-all active:scale-95 flex items-center gap-2 min-h-[40px] border ${
-                    isSelected
-                      ? 'bg-amber-500 text-stone-950 border-amber-500 shadow-sm font-black'
-                      : 'bg-surface-2 border-accent/20 text-appText-muted hover:text-appText-bright hover:border-accent/40'
-                  }`}
-                >
-                  <span>{tab.icon}</span>
-                  <span>{tab.label}</span>
-                </button>
-              );
-            })}
+        <div className="space-y-8 animate-in fade-in duration-200">
+          {/* ══════════════════════════════════════════════════════════════
+              BAGIAN 1: SASANA LATIHAN MANDIRI (CORE PRACTICE DRILLS)
+              Kanji, Flashcard 3D, Pilihan Ganda, Susun Kalimat, Isian Rumpang, Menyimak Pendek
+          ══════════════════════════════════════════════════════════════ */}
+          <section className="space-y-4">
+            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-accent/15 pb-3">
+              <div>
+                <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-500/15 border border-amber-500/30 text-accent font-extrabold text-xs mb-1">
+                  <span>🥋 Sasana Praktik Mandiri</span>
+                  <span className="text-appText-muted font-normal">· 自主練習道場</span>
+                </div>
+                <h2 className="text-base sm:text-xl font-extrabold text-appText-bright tracking-tight">
+                  Pusat Latihan & Drill Refleks ({selectedLevel === 'all' ? 'N5' : selectedLevel.toUpperCase()})
+                </h2>
+                <p className="text-xs text-appText-muted mt-0.5">
+                  Latih daya ingat, reflek membaca, dan kepekaan telingamu dengan 6 format latihan interaktif.
+                </p>
+              </div>
+
+              {/* Quick Level Selector for Drills */}
+              <div className="flex items-center gap-1 bg-surface-2 p-1 rounded-xl border border-accent/20 shrink-0 self-start sm:self-auto">
+                {(['n5', 'n4', 'n3', 'n2', 'n1'] as JLPTLevel[]).map((lvl) => {
+                  const isCurrent = (selectedLevel === 'all' ? 'n5' : selectedLevel) === lvl;
+                  return (
+                    <button
+                      key={lvl}
+                      type="button"
+                      onClick={() => setSelectedLevel(lvl)}
+                      className={`px-2.5 py-1.5 rounded-lg text-xs font-bold uppercase transition-all min-h-[34px] active:scale-95 ${
+                        isCurrent
+                          ? 'bg-amber-500 text-stone-950 font-black shadow-xs'
+                          : 'text-appText-muted hover:text-appText-bright'
+                      }`}
+                      aria-label={`Pilih Level ${lvl.toUpperCase()}`}
+                    >
+                      {lvl}
+                    </button>
+                  );
+                })}
+              </div>
+            </div>
+
+            {/* 6 Workout Gym Cards Grid */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3.5 sm:gap-4">
+              {/* Card 1: Kanji Dojo & Goresan */}
+              <div
+                role="button"
+                tabIndex={0}
+                onClick={() => handleOpenTool('kanji')}
+                onKeyDown={(e) => {
+                  if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    handleOpenTool('kanji');
+                  }
+                }}
+                className="bg-surface-2 hover:bg-surface-3 border border-amber-500/30 hover:border-amber-500/60 rounded-2xl p-5 flex flex-col justify-between cursor-pointer transition-all hover:-translate-y-0.5 shadow-sm hover:shadow-md group active:scale-95 min-h-[220px]"
+              >
+                <div className="space-y-3">
+                  <div className="flex items-start justify-between gap-2.5">
+                    <div className="w-12 h-12 rounded-xl bg-amber-500/15 border border-amber-500/35 flex items-center justify-center text-xl shadow-xs group-hover:scale-105 transition-all shrink-0 font-japanese font-black text-amber-400">
+                      漢
+                    </div>
+                    <span className="text-xs font-bold px-2.5 py-1 rounded-full border bg-amber-500/20 text-accent font-semibold border-amber-500/30 shrink-0">
+                      Kanji Canvas & SVG
+                    </span>
+                  </div>
+                  <div>
+                    <h3 className="text-base sm:text-lg font-bold text-appText-bright group-hover:text-amber-400 transition-colors leading-snug">
+                      Kanji Dojo & Goresan
+                    </h3>
+                    <p className="text-xs sm:text-sm font-mono text-appText-muted mt-0.5" lang="ja">
+                      漢字道場・筆順練習
+                    </p>
+                  </div>
+                  <p className="text-sm text-appText-muted leading-relaxed">
+                    Latihan menulis kanji langsung di layar ponsel dengan animasi goresan SVG, deteksi urutan guratan jari, dan radikal.
+                  </p>
+                </div>
+                <div className="mt-4 pt-3 border-t border-accent/15 flex items-center justify-between text-xs">
+                  <span className="text-xs text-appText-muted font-medium">6.000+ Kanji Jouyou & Kanken</span>
+                  <span className="text-xs sm:text-sm text-amber-400 font-extrabold group-hover:translate-x-1 transition-transform shrink-0">
+                    Buka Kanvas →
+                  </span>
+                </div>
+              </div>
+
+              {/* Card 2: Flashcard 3D Refleks */}
+              <div
+                role="button"
+                tabIndex={0}
+                onClick={() => startQuizSession('flashcard')}
+                onKeyDown={(e) => {
+                  if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    startQuizSession('flashcard');
+                  }
+                }}
+                className="bg-surface-2 hover:bg-surface-3 border border-accent/25 hover:border-amber-500/60 rounded-2xl p-5 flex flex-col justify-between cursor-pointer transition-all hover:-translate-y-0.5 shadow-sm hover:shadow-md group active:scale-95 min-h-[220px]"
+              >
+                <div className="space-y-3">
+                  <div className="flex items-start justify-between gap-2.5">
+                    <div className="w-12 h-12 rounded-xl bg-surface/90 border border-accent/25 flex items-center justify-center text-xl shadow-xs group-hover:scale-105 group-hover:border-amber-500/40 transition-all shrink-0">
+                      🃏
+                    </div>
+                    <span className="text-xs font-bold px-2.5 py-1 rounded-full border bg-surface-3/90 text-accent font-semibold border-accent/25 shrink-0">
+                      3D Flip · FSRS
+                    </span>
+                  </div>
+                  <div>
+                    <h3 className="text-base sm:text-lg font-bold text-appText-bright group-hover:text-amber-400 transition-colors leading-snug">
+                      Flashcard 3D Refleks
+                    </h3>
+                    <p className="text-xs sm:text-sm font-mono text-appText-muted mt-0.5" lang="ja">
+                      3D フラッシュカード
+                    </p>
+                  </div>
+                  <p className="text-sm text-appText-muted leading-relaxed">
+                    Kartu balik 3D interaktif dengan gestur usap layar, audio pelafalan asli, dan 4 tombol pemeringkatan memori FSRS.
+                  </p>
+                </div>
+                <div className="mt-4 pt-3 border-t border-accent/15 flex items-center justify-between text-xs">
+                  <span className="text-xs text-appText-muted font-medium">Bebas Akses Kapan Saja</span>
+                  <span className="text-xs sm:text-sm text-amber-400 font-extrabold group-hover:translate-x-1 transition-transform shrink-0">
+                    Mulai Flashcard →
+                  </span>
+                </div>
+              </div>
+
+              {/* Card 3: Kuis Pilihan Ganda */}
+              <div
+                role="button"
+                tabIndex={0}
+                onClick={() => startQuizSession('multiple-choice')}
+                onKeyDown={(e) => {
+                  if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    startQuizSession('multiple-choice');
+                  }
+                }}
+                className="bg-surface-2 hover:bg-surface-3 border border-accent/25 hover:border-amber-500/60 rounded-2xl p-5 flex flex-col justify-between cursor-pointer transition-all hover:-translate-y-0.5 shadow-sm hover:shadow-md group active:scale-95 min-h-[220px]"
+              >
+                <div className="space-y-3">
+                  <div className="flex items-start justify-between gap-2.5">
+                    <div className="w-12 h-12 rounded-xl bg-surface/90 border border-accent/25 flex items-center justify-center text-xl shadow-xs group-hover:scale-105 group-hover:border-amber-500/40 transition-all shrink-0">
+                      📝
+                    </div>
+                    <span className="text-xs font-bold px-2.5 py-1 rounded-full border bg-surface-3/90 text-accent font-semibold border-accent/25 shrink-0">
+                      10 Soal Cepat
+                    </span>
+                  </div>
+                  <div>
+                    <h3 className="text-base sm:text-lg font-bold text-appText-bright group-hover:text-amber-400 transition-colors leading-snug">
+                      Kuis Pilihan Ganda
+                    </h3>
+                    <p className="text-xs sm:text-sm font-mono text-appText-muted mt-0.5" lang="ja">
+                      四択スピードクイズ
+                    </p>
+                  </div>
+                  <p className="text-sm text-appText-muted leading-relaxed">
+                    Latihan kilat 10 soal kosakata dan pola kalimat dengan opsi jawaban bersih dan pembahasan instan.
+                  </p>
+                </div>
+                <div className="mt-4 pt-3 border-t border-accent/15 flex items-center justify-between text-xs">
+                  <span className="text-xs text-appText-muted font-medium">Uji Pemahaman Instan</span>
+                  <span className="text-xs sm:text-sm text-amber-400 font-extrabold group-hover:translate-x-1 transition-transform shrink-0">
+                    Mulai Kuis →
+                  </span>
+                </div>
+              </div>
+
+              {/* Card 4: Susun Kalimat (Bunsetsu) */}
+              <div
+                role="button"
+                tabIndex={0}
+                onClick={() => startQuizSession('rearrange')}
+                onKeyDown={(e) => {
+                  if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    startQuizSession('rearrange');
+                  }
+                }}
+                className="bg-surface-2 hover:bg-surface-3 border border-accent/25 hover:border-amber-500/60 rounded-2xl p-5 flex flex-col justify-between cursor-pointer transition-all hover:-translate-y-0.5 shadow-sm hover:shadow-md group active:scale-95 min-h-[220px]"
+              >
+                <div className="space-y-3">
+                  <div className="flex items-start justify-between gap-2.5">
+                    <div className="w-12 h-12 rounded-xl bg-surface/90 border border-accent/25 flex items-center justify-center text-xl shadow-xs group-hover:scale-105 group-hover:border-amber-500/40 transition-all shrink-0">
+                      🧩
+                    </div>
+                    <span className="text-xs font-bold px-2.5 py-1 rounded-full border bg-surface-3/90 text-accent font-semibold border-accent/25 shrink-0">
+                      Bunsetsu Scramble
+                    </span>
+                  </div>
+                  <div>
+                    <h3 className="text-base sm:text-lg font-bold text-appText-bright group-hover:text-amber-400 transition-colors leading-snug">
+                      Susun Kalimat (Bunsetsu)
+                    </h3>
+                    <p className="text-xs sm:text-sm font-mono text-appText-muted mt-0.5" lang="ja">
+                      文節並べ替えパズル
+                    </p>
+                  </div>
+                  <p className="text-sm text-appText-muted leading-relaxed">
+                    Susun potongan frasa kata Jepang (bunsetsu) menjadi kalimat utuh dengan struktur tata bahasa yang benar.
+                  </p>
+                </div>
+                <div className="mt-4 pt-3 border-t border-accent/15 flex items-center justify-between text-xs">
+                  <span className="text-xs text-appText-muted font-medium">Asah Logika Kalimat</span>
+                  <span className="text-xs sm:text-sm text-amber-400 font-extrabold group-hover:translate-x-1 transition-transform shrink-0">
+                    Susun Frasa →
+                  </span>
+                </div>
+              </div>
+
+              {/* Card 5: Melengkapi Kalimat (Isian Rumpang) */}
+              <div
+                role="button"
+                tabIndex={0}
+                onClick={() => startQuizSession('fill-in')}
+                onKeyDown={(e) => {
+                  if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    startQuizSession('fill-in');
+                  }
+                }}
+                className="bg-surface-2 hover:bg-surface-3 border border-accent/25 hover:border-amber-500/60 rounded-2xl p-5 flex flex-col justify-between cursor-pointer transition-all hover:-translate-y-0.5 shadow-sm hover:shadow-md group active:scale-95 min-h-[220px]"
+              >
+                <div className="space-y-3">
+                  <div className="flex items-start justify-between gap-2.5">
+                    <div className="w-12 h-12 rounded-xl bg-surface/90 border border-accent/25 flex items-center justify-center text-xl shadow-xs group-hover:scale-105 group-hover:border-amber-500/40 transition-all shrink-0">
+                      ✏️
+                    </div>
+                    <span className="text-xs font-bold px-2.5 py-1 rounded-full border bg-surface-3/90 text-accent font-semibold border-accent/25 shrink-0">
+                      Partikel & Konjugasi
+                    </span>
+                  </div>
+                  <div>
+                    <h3 className="text-base sm:text-lg font-bold text-appText-bright group-hover:text-amber-400 transition-colors leading-snug">
+                      Isian Rumpang (Cloze)
+                    </h3>
+                    <p className="text-xs sm:text-sm font-mono text-appText-muted mt-0.5" lang="ja">
+                      空欄補充ドリル
+                    </p>
+                  </div>
+                  <p className="text-sm text-appText-muted leading-relaxed">
+                    Lengkapi bagian kalimat yang kosong dengan memilih partikel tepat atau bentuk konjugasi kata kerja yang pas.
+                  </p>
+                </div>
+                <div className="mt-4 pt-3 border-t border-accent/15 flex items-center justify-between text-xs">
+                  <span className="text-xs text-appText-muted font-medium">Uji Ketepatan Partikel</span>
+                  <span className="text-xs sm:text-sm text-amber-400 font-extrabold group-hover:translate-x-1 transition-transform shrink-0">
+                    Isi Rumpang →
+                  </span>
+                </div>
+              </div>
+
+              {/* Card 6: Menyimak Kilat (Audio Drill) */}
+              <div
+                role="button"
+                tabIndex={0}
+                onClick={() => startQuizSession('listening')}
+                onKeyDown={(e) => {
+                  if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    startQuizSession('listening');
+                  }
+                }}
+                className="bg-surface-2 hover:bg-surface-3 border border-accent/25 hover:border-amber-500/60 rounded-2xl p-5 flex flex-col justify-between cursor-pointer transition-all hover:-translate-y-0.5 shadow-sm hover:shadow-md group active:scale-95 min-h-[220px]"
+              >
+                <div className="space-y-3">
+                  <div className="flex items-start justify-between gap-2.5">
+                    <div className="w-12 h-12 rounded-xl bg-surface/90 border border-accent/25 flex items-center justify-center text-xl shadow-xs group-hover:scale-105 group-hover:border-amber-500/40 transition-all shrink-0">
+                      🎧
+                    </div>
+                    <span className="text-xs font-bold px-2.5 py-1 rounded-full border bg-surface-3/90 text-accent font-semibold border-accent/25 shrink-0">
+                      Audio Pendek 5–10s
+                    </span>
+                  </div>
+                  <div>
+                    <h3 className="text-base sm:text-lg font-bold text-appText-bright group-hover:text-amber-400 transition-colors leading-snug">
+                      Menyimak Kilat (Audio Drill)
+                    </h3>
+                    <p className="text-xs sm:text-sm font-mono text-appText-muted mt-0.5" lang="ja">
+                      クイック聴解ドリル
+                    </p>
+                  </div>
+                  <p className="text-sm text-appText-muted leading-relaxed">
+                    Latihan audio singkat santai: dengarkan klip audio percakapan 5–10 detik dan tebak artinya tanpa set ujian yang panjang.
+                  </p>
+                </div>
+                <div className="mt-4 pt-3 border-t border-accent/15 flex items-center justify-between text-xs">
+                  <span className="text-xs text-appText-muted font-medium">Latihan Telinga Cepat</span>
+                  <span className="text-xs sm:text-sm text-amber-400 font-extrabold group-hover:translate-x-1 transition-transform shrink-0">
+                    Dengar Audio →
+                  </span>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          {/* ══════════════════════════════════════════════════════════════
+              BAGIAN 2: ALAT BANTU & PUSTAKA REFERENSI (11 ALAT INTERAKTIF)
+              Buku Teks, Simulator CBT Resmi, Kana, Konjugasi, Nuansa, Keigo, Counters, CAT, Kotowaza, Pitch
+          ══════════════════════════════════════════════════════════════ */}
+          <div className="space-y-4 pt-4 border-t border-accent/15">
+            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+              <div>
+                <h3 className="text-sm sm:text-base font-extrabold text-appText-bright tracking-tight flex items-center gap-2">
+                  <span>🔬</span>
+                  <span>Alat Bantu, Simulator Ujian & Pustaka Referensi</span>
+                </h3>
+                <p className="text-xs text-appText-muted mt-0.5">
+                  Akses modul referensi tata bahasa, eksplorasi 9 buku teks standar, dan simulator ujian CBT resmi.
+                </p>
+              </div>
+            </div>
+
+            {/* Category Filter Pill Bar: Semua Alat (11), Kemahiran Inti (3), Peralatan & Referensi (8) */}
+            <div className="flex items-center gap-2 overflow-x-auto scrollbar-none pb-1 max-w-full">
+              {[
+                { id: 'all', label: 'Semua Alat (11)', icon: '🥋' },
+                { id: 'kemahiran', label: 'Kemahiran Inti (3)', icon: '🥋' },
+                { id: 'referensi', label: 'Peralatan & Referensi (8)', icon: '🔬' },
+              ].map((tab) => {
+                const isSelected = selectedCategoryFilter === tab.id;
+                return (
+                  <button
+                    key={tab.id}
+                    type="button"
+                    onClick={() => setSelectedCategoryFilter(tab.id as any)}
+                    aria-pressed={isSelected}
+                    aria-label={`Filter alat: ${tab.label}`}
+                    className={`px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold whitespace-nowrap shrink-0 transition-all active:scale-95 flex items-center gap-2 min-h-[40px] border ${
+                      isSelected
+                        ? 'bg-amber-500 text-stone-950 border-amber-500 shadow-sm font-black'
+                        : 'bg-surface-2 border-accent/20 text-appText-muted hover:text-appText-bright hover:border-accent/40'
+                    }`}
+                  >
+                    <span>{tab.icon}</span>
+                    <span>{tab.label}</span>
+                  </button>
+                );
+              })}
+            </div>
           </div>
 
           {/* ── KATEGORI 1: LATIHAN KEMAHIRAN INTI (CORE MODULES) ── */}

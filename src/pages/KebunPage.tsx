@@ -38,6 +38,7 @@ export const KebunPage: React.FC = () => {
     incrementXp,
     setActiveTab,
     startFSRSDueSession,
+    startQuizSession,
     openConjugation,
     openCatPlacement,
   } = useAppStore();
@@ -210,33 +211,49 @@ export const KebunPage: React.FC = () => {
 
           <div className="flex flex-col sm:flex-row md:flex-col gap-2 shrink-0">
             {fsrsStats.totalCards === 0 ? (
-              <button
-                onClick={() => setActiveTab('materi')}
-                className="px-5 py-3.5 rounded-2xl bg-amber-500 hover:bg-amber-400 text-stone-950 font-black text-xs sm:text-sm flex items-center justify-center gap-2 shadow-md transition-all active:scale-95 min-h-[44px]"
-              >
-                <BookOpen className="w-4 h-4" />
-                <span>Mulai Pelajaran Pertama di Materi Hub</span>
-                <ChevronRight className="w-4 h-4 stroke-[3]" />
-              </button>
+              <>
+                <button
+                  onClick={() => startQuizSession('flashcard')}
+                  className="px-5 py-3.5 rounded-2xl bg-amber-500 hover:bg-amber-400 text-stone-950 font-black text-xs sm:text-sm flex items-center justify-center gap-2 shadow-md transition-all active:scale-95 min-h-[44px]"
+                >
+                  <span>🃏 Latihan Flashcard 3D Bebas</span>
+                  <ChevronRight className="w-4 h-4 stroke-[3]" />
+                </button>
+                <button
+                  onClick={() => setActiveTab('materi')}
+                  className="px-4 py-2.5 rounded-xl bg-surface-2 hover:bg-surface-3 text-appText-bright border border-theme font-bold text-xs flex items-center justify-center gap-2 transition-all active:scale-95 min-h-[40px]"
+                >
+                  <BookOpen className="w-3.5 h-3.5" />
+                  <span>Mulai Pelajaran Pertama di Materi Hub</span>
+                </button>
+              </>
             ) : fsrsStats.dueCount === 0 ? (
               <button
-                onClick={startFSRSDueSession}
-                className="px-5 py-3.5 rounded-2xl bg-surface-2 hover:bg-surface-3 text-appText-bright border border-theme font-bold text-xs sm:text-sm flex items-center justify-center gap-2 transition-all active:scale-95 min-h-[44px]"
+                onClick={() => startQuizSession('flashcard')}
+                className="px-5 py-3.5 rounded-2xl bg-amber-500/15 hover:bg-amber-500/25 text-appText-bright border border-amber-500/40 font-bold text-xs sm:text-sm flex items-center justify-center gap-2 transition-all active:scale-95 min-h-[44px]"
               >
                 <Sparkles className="w-4 h-4 text-amber-400" />
-                <span>Latihan Bebas (Semua Kartu Segar)</span>
+                <span>🃏 Latihan Bebas (Semua Kartu Segar)</span>
                 <ChevronRight className="w-4 h-4 stroke-[2]" />
               </button>
             ) : (
-              <button
-                onClick={startFSRSDueSession}
-                className="px-5 py-3.5 rounded-2xl bg-amber-500 hover:bg-amber-400 text-stone-950 font-black text-xs sm:text-sm flex items-center justify-center gap-2 shadow-md transition-all active:scale-95 min-h-[44px]"
-              >
-                <Zap className="w-4 h-4 fill-stone-950" />
-                <span>Mulai Ulas {fsrsStats.dueCount} Kartu Perlu Diulas →</span>
-                <span className="sr-only">Kartu Due</span>
-                <ChevronRight className="w-4 h-4 stroke-[3]" />
-              </button>
+              <>
+                <button
+                  onClick={startFSRSDueSession}
+                  className="px-5 py-3.5 rounded-2xl bg-amber-500 hover:bg-amber-400 text-stone-950 font-black text-xs sm:text-sm flex items-center justify-center gap-2 shadow-md transition-all active:scale-95 min-h-[44px]"
+                >
+                  <Zap className="w-4 h-4 fill-stone-950" />
+                  <span>Mulai Ulas {fsrsStats.dueCount} Kartu Perlu Diulas →</span>
+                  <span className="sr-only">Kartu Due</span>
+                  <ChevronRight className="w-4 h-4 stroke-[3]" />
+                </button>
+                <button
+                  onClick={() => startQuizSession('flashcard')}
+                  className="px-4 py-2 rounded-xl bg-surface-2 hover:bg-surface-3 text-appText-bright border border-theme text-xs font-bold flex items-center justify-center gap-1.5 transition-all active:scale-95 min-h-[38px]"
+                >
+                  <span>🃏 Latihan Flashcard 3D Bebas</span>
+                </button>
+              </>
             )}
             <div className="text-xs text-center text-appText-muted">
               {fsrsStats.totalCards === 0

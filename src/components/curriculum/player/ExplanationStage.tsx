@@ -98,93 +98,95 @@ export const ExplanationStage: React.FC<ExplanationStageProps> = ({
 
   return (
     <div className="space-y-6 min-w-0">
-      {/* ── 1. SUB-VIEW SEGMENTED TAB SWITCHER (MINIMALIS & ERGONOMIS) ── */}
-      <div
-        role="tablist"
-        aria-label="Pilar Pembelajaran Bedah Materi"
-        className="flex items-center gap-1 sm:gap-1.5 p-1 sm:p-1.5 rounded-2xl bg-surface-2 border border-accent/20 overflow-x-auto scrollbar-none w-full max-w-full touch-pan-x"
-      >
-        <button
-          type="button"
-          role="tab"
-          aria-selected={activeSubTab === 'all'}
-          onClick={() => {
-            setActiveSubTab('all');
-            window.scrollTo({ top: 0, behavior: 'instant' });
-            document.documentElement.scrollTop = 0;
-            document.body.scrollTop = 0;
-          }}
-          className={`shrink-0 sm:flex-1 min-h-[40px] px-2.5 sm:px-3 py-1.5 sm:py-2 rounded-xl text-xs font-bold transition-all flex items-center justify-center gap-1 sm:gap-1.5 whitespace-nowrap active:scale-95 cursor-pointer ${
-            activeSubTab === 'all'
-              ? 'bg-accent text-bg shadow-sm font-extrabold'
-              : 'text-appText-muted hover:text-appText-bright hover:bg-surface-3'
-          }`}
+      {/* ── 1. SUB-VIEW SEGMENTED TAB SWITCHER (STACKED STICKY & ERGONOMIS) ── */}
+      <div className="sticky top-[106px] sm:top-[116px] z-10 -mt-2 pt-1 pb-2 bg-surface/95 backdrop-blur-md -mx-3 sm:-mx-6 px-3 sm:px-6 border-b border-accent/15 transition-all">
+        <div
+          role="tablist"
+          aria-label="Pilar Pembelajaran Bedah Materi"
+          className="flex items-center gap-1 sm:gap-1.5 p-1 sm:p-1.5 rounded-2xl bg-surface-2 border border-accent/20 overflow-x-auto scrollbar-none w-full max-w-full touch-pan-x shadow-xs"
         >
-          <Sparkles className="w-3.5 h-3.5 sm:w-4 sm:h-4 shrink-0" />
-          <span className="sm:hidden">Semua</span>
-          <span className="hidden sm:inline">Semua Materi</span>
-        </button>
+          <button
+            type="button"
+            role="tab"
+            aria-selected={activeSubTab === 'all'}
+            onClick={() => {
+              setActiveSubTab('all');
+              window.scrollTo({ top: 0, behavior: 'instant' });
+              document.documentElement.scrollTop = 0;
+              document.body.scrollTop = 0;
+            }}
+            className={`shrink-0 sm:flex-1 min-h-[40px] px-2.5 sm:px-3 py-1.5 sm:py-2 rounded-xl text-xs font-bold transition-all flex items-center justify-center gap-1 sm:gap-1.5 whitespace-nowrap active:scale-95 cursor-pointer ${
+              activeSubTab === 'all'
+                ? 'bg-accent text-bg shadow-sm font-extrabold'
+                : 'text-appText-muted hover:text-appText-bright hover:bg-surface-3'
+            }`}
+          >
+            <Sparkles className="w-3.5 h-3.5 sm:w-4 sm:h-4 shrink-0" />
+            <span className="sm:hidden">Semua</span>
+            <span className="hidden sm:inline">Semua Materi</span>
+          </button>
 
-        <button
-          type="button"
-          role="tab"
-          aria-selected={activeSubTab === 'grammar'}
-          onClick={() => {
-            setActiveSubTab('grammar');
-            window.scrollTo({ top: 0, behavior: 'instant' });
-            document.documentElement.scrollTop = 0;
-            document.body.scrollTop = 0;
-          }}
-          className={`shrink-0 sm:flex-1 min-h-[40px] px-2.5 sm:px-3 py-1.5 sm:py-2 rounded-xl text-xs font-bold transition-all flex items-center justify-center gap-1 sm:gap-1.5 whitespace-nowrap active:scale-95 cursor-pointer ${
-            activeSubTab === 'grammar'
-              ? 'bg-accent text-bg shadow-sm font-extrabold'
-              : 'text-appText-muted hover:text-appText-bright hover:bg-surface-3'
-          }`}
-        >
-          <BookOpen className="w-3.5 h-3.5 sm:w-4 sm:h-4 shrink-0" />
-          <span className="sm:hidden">Tata Bahasa</span>
-          <span className="hidden sm:inline">Pola Tata Bahasa</span>
-        </button>
+          <button
+            type="button"
+            role="tab"
+            aria-selected={activeSubTab === 'grammar'}
+            onClick={() => {
+              setActiveSubTab('grammar');
+              window.scrollTo({ top: 0, behavior: 'instant' });
+              document.documentElement.scrollTop = 0;
+              document.body.scrollTop = 0;
+            }}
+            className={`shrink-0 sm:flex-1 min-h-[40px] px-2.5 sm:px-3 py-1.5 sm:py-2 rounded-xl text-xs font-bold transition-all flex items-center justify-center gap-1 sm:gap-1.5 whitespace-nowrap active:scale-95 cursor-pointer ${
+              activeSubTab === 'grammar'
+                ? 'bg-accent text-bg shadow-sm font-extrabold'
+                : 'text-appText-muted hover:text-appText-bright hover:bg-surface-3'
+            }`}
+          >
+            <BookOpen className="w-3.5 h-3.5 sm:w-4 sm:h-4 shrink-0" />
+            <span className="sm:hidden">Tata Bahasa</span>
+            <span className="hidden sm:inline">Pola Tata Bahasa</span>
+          </button>
 
-        <button
-          type="button"
-          role="tab"
-          aria-selected={activeSubTab === 'vocab'}
-          onClick={() => {
-            setActiveSubTab('vocab');
-            window.scrollTo({ top: 0, behavior: 'instant' });
-            document.documentElement.scrollTop = 0;
-            document.body.scrollTop = 0;
-          }}
-          className={`shrink-0 sm:flex-1 min-h-[40px] px-2.5 sm:px-3 py-1.5 sm:py-2 rounded-xl text-xs font-bold transition-all flex items-center justify-center gap-1 sm:gap-1.5 whitespace-nowrap active:scale-95 cursor-pointer ${
-            activeSubTab === 'vocab'
-              ? 'bg-accent text-bg shadow-sm font-extrabold'
-              : 'text-appText-muted hover:text-appText-bright hover:bg-surface-3'
-          }`}
-        >
-          <Layers className="w-3.5 h-3.5 sm:w-4 sm:h-4 shrink-0" />
-          <span>Kosakata ({vocabBreakdown.length})</span>
-        </button>
+          <button
+            type="button"
+            role="tab"
+            aria-selected={activeSubTab === 'vocab'}
+            onClick={() => {
+              setActiveSubTab('vocab');
+              window.scrollTo({ top: 0, behavior: 'instant' });
+              document.documentElement.scrollTop = 0;
+              document.body.scrollTop = 0;
+            }}
+            className={`shrink-0 sm:flex-1 min-h-[40px] px-2.5 sm:px-3 py-1.5 sm:py-2 rounded-xl text-xs font-bold transition-all flex items-center justify-center gap-1 sm:gap-1.5 whitespace-nowrap active:scale-95 cursor-pointer ${
+              activeSubTab === 'vocab'
+                ? 'bg-accent text-bg shadow-sm font-extrabold'
+                : 'text-appText-muted hover:text-appText-bright hover:bg-surface-3'
+            }`}
+          >
+            <Layers className="w-3.5 h-3.5 sm:w-4 sm:h-4 shrink-0" />
+            <span>Kosakata ({vocabBreakdown.length})</span>
+          </button>
 
-        <button
-          type="button"
-          role="tab"
-          aria-selected={activeSubTab === 'pitfalls'}
-          onClick={() => {
-            setActiveSubTab('pitfalls');
-            window.scrollTo({ top: 0, behavior: 'instant' });
-            document.documentElement.scrollTop = 0;
-            document.body.scrollTop = 0;
-          }}
-          className={`shrink-0 sm:flex-1 min-h-[40px] px-2.5 sm:px-3 py-1.5 sm:py-2 rounded-xl text-xs font-bold transition-all flex items-center justify-center gap-1 sm:gap-1.5 whitespace-nowrap active:scale-95 cursor-pointer ${
-            activeSubTab === 'pitfalls'
-              ? 'bg-accent text-bg shadow-sm font-extrabold'
-              : 'text-appText-muted hover:text-appText-bright hover:bg-surface-3'
-          }`}
-        >
-          <AlertCircle className="w-3.5 h-3.5 sm:w-4 sm:h-4 shrink-0" />
-          <span>Jebakan ({activePitfalls.length})</span>
-        </button>
+          <button
+            type="button"
+            role="tab"
+            aria-selected={activeSubTab === 'pitfalls'}
+            onClick={() => {
+              setActiveSubTab('pitfalls');
+              window.scrollTo({ top: 0, behavior: 'instant' });
+              document.documentElement.scrollTop = 0;
+              document.body.scrollTop = 0;
+            }}
+            className={`shrink-0 sm:flex-1 min-h-[40px] px-2.5 sm:px-3 py-1.5 sm:py-2 rounded-xl text-xs font-bold transition-all flex items-center justify-center gap-1 sm:gap-1.5 whitespace-nowrap active:scale-95 cursor-pointer ${
+              activeSubTab === 'pitfalls'
+                ? 'bg-accent text-bg shadow-sm font-extrabold'
+                : 'text-appText-muted hover:text-appText-bright hover:bg-surface-3'
+            }`}
+          >
+            <AlertCircle className="w-3.5 h-3.5 sm:w-4 sm:h-4 shrink-0" />
+            <span>Jebakan ({activePitfalls.length})</span>
+          </button>
+        </div>
       </div>
 
       {/* ── 2. KONTEN PILAR SESUAI TAB AKTIF (SINGLE-FLOW FEED ATAU FILTER) ── */}
