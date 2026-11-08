@@ -14,14 +14,19 @@ const path = require('path');
 const assert = require('assert');
 
 const ROOT_DIR = path.resolve(__dirname, '..');
-const PERSONAS_PATH = path.resolve(
+const LOCAL_PERSONAS = path.resolve(ROOT_DIR, 'tests/fixtures/personas/200_INDONESIAN_LEARNER_PERSONAS.json');
+const EXTERNAL_PERSONAS = path.resolve(
   ROOT_DIR,
   '../nugget-nihongo-persona-lab/Nugget_Nihongo_Antigravity_Persona_Test_Kit_v6/personas/200_INDONESIAN_LEARNER_PERSONAS.json'
 );
-const RUBRIC_PATH = path.resolve(
+const PERSONAS_PATH = fs.existsSync(LOCAL_PERSONAS) ? LOCAL_PERSONAS : EXTERNAL_PERSONAS;
+
+const LOCAL_RUBRIC = path.resolve(ROOT_DIR, 'tests/fixtures/personas/DATA_QUALITY_AUDIT_RUBRIC.json');
+const EXTERNAL_RUBRIC = path.resolve(
   ROOT_DIR,
   '../nugget-nihongo-persona-lab/Nugget_Nihongo_Antigravity_Persona_Test_Kit_v6/data_quality_assurance/DATA_QUALITY_AUDIT_RUBRIC.json'
 );
+const RUBRIC_PATH = fs.existsSync(LOCAL_RUBRIC) ? LOCAL_RUBRIC : EXTERNAL_RUBRIC;
 const currDir = path.resolve(ROOT_DIR, 'public/data/curriculum');
 
 console.log('🧪 Running Siklus V Pass 48: 200 Indonesian Learner Personas Full-Swarm Simulation...\n');

@@ -51,7 +51,9 @@ check('scripts/run-persona-simulations.js exists and is wired into package.json'
 });
 
 check('200 Indonesian Learner Personas JSON is accessible and has all 4 pillars', () => {
-  const pPath = path.resolve(ROOT, '../nugget-nihongo-persona-lab/Nugget_Nihongo_Antigravity_Persona_Test_Kit_v6/personas/200_INDONESIAN_LEARNER_PERSONAS.json');
+  const localPPath = path.resolve(ROOT, 'tests/fixtures/personas/200_INDONESIAN_LEARNER_PERSONAS.json');
+  const extPPath = path.resolve(ROOT, '../nugget-nihongo-persona-lab/Nugget_Nihongo_Antigravity_Persona_Test_Kit_v6/personas/200_INDONESIAN_LEARNER_PERSONAS.json');
+  const pPath = fs.existsSync(localPPath) ? localPPath : extPPath;
   assert(fs.existsSync(pPath), 'Canonical personas file must exist');
   const data = JSON.parse(fs.readFileSync(pPath, 'utf8'));
   assert.strictEqual(data.personas.length, 200, 'Must contain exactly 200 learner personas');

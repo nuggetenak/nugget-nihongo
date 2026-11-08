@@ -18,8 +18,13 @@ console.log('║   4-Pillar Educational Journey Audit & Data Quality Rubric Gate
 console.log('╚══════════════════════════════════════════════════════════════════╝\n');
 
 // 1. Resolve Canonical Persona & Rubric Datasets
-const PERSONAS_PATH = path.resolve(ROOT, '../nugget-nihongo-persona-lab/Nugget_Nihongo_Antigravity_Persona_Test_Kit_v6/personas/200_INDONESIAN_LEARNER_PERSONAS.json');
-const RUBRIC_PATH = path.resolve(ROOT, '../nugget-nihongo-persona-lab/Nugget_Nihongo_Antigravity_Persona_Test_Kit_v6/data_quality_assurance/DATA_QUALITY_AUDIT_RUBRIC.json');
+const LOCAL_PERSONAS = path.resolve(ROOT, 'tests/fixtures/personas/200_INDONESIAN_LEARNER_PERSONAS.json');
+const EXTERNAL_PERSONAS = path.resolve(ROOT, '../nugget-nihongo-persona-lab/Nugget_Nihongo_Antigravity_Persona_Test_Kit_v6/personas/200_INDONESIAN_LEARNER_PERSONAS.json');
+const PERSONAS_PATH = fs.existsSync(LOCAL_PERSONAS) ? LOCAL_PERSONAS : EXTERNAL_PERSONAS;
+
+const LOCAL_RUBRIC = path.resolve(ROOT, 'tests/fixtures/personas/DATA_QUALITY_AUDIT_RUBRIC.json');
+const EXTERNAL_RUBRIC = path.resolve(ROOT, '../nugget-nihongo-persona-lab/Nugget_Nihongo_Antigravity_Persona_Test_Kit_v6/data_quality_assurance/DATA_QUALITY_AUDIT_RUBRIC.json');
+const RUBRIC_PATH = fs.existsSync(LOCAL_RUBRIC) ? LOCAL_RUBRIC : EXTERNAL_RUBRIC;
 
 if (!fs.existsSync(PERSONAS_PATH)) {
   console.error(`❌ Missing canonical personas dataset at: ${PERSONAS_PATH}`);

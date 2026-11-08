@@ -1,0 +1,209 @@
+{
+  "title": "Nugget Nihongo Data Quality Audit Rubric",
+  "version": "6.0.0",
+  "as_of_date": "2026-10-15",
+  "purpose": "Mandatory Stage 1 gate before any simulated learner executes the UI. The JSON is canonical; Markdown is an interpretation guide.",
+  "scope": {
+    "pillars": [
+      "JLPT_N5_N1",
+      "JFT_BASIC",
+      "SSW_SECTOR",
+      "LIVING_WORKING_JAPAN"
+    ],
+    "item_types": [
+      "stem_or_entry",
+      "meaning_or_explanation",
+      "kanji_components",
+      "word_reading",
+      "furigana_pairs",
+      "part_of_speech",
+      "grammar_pattern",
+      "formality_and_register",
+      "usage_constraints",
+      "examples",
+      "question",
+      "real_life_procedure"
+    ],
+    "audit_unit": "one record, question, passage/audio pair, track unit or factual instruction with a stable content ID/path",
+    "default_status": "NOT_AUDITED"
+  },
+  "severity": [
+    {
+      "id": "CRITICAL",
+      "definition": "Could materially mislead health, legal status, disaster response, workplace safety, exam booking or high-consequence action.",
+      "action": "Block affected content and escalate to human reviewer immediately."
+    },
+    {
+      "id": "HIGH",
+      "definition": "Wrong Japanese/reading/key/translation or incorrect sector/level that teaches an incorrect answer or procedure.",
+      "action": "Block affected item/batch until corrected and independently rechecked."
+    },
+    {
+      "id": "MEDIUM",
+      "definition": "Ambiguous explanation, unnatural example, weak distractor, incomplete provenance or incomplete but not directly dangerous information.",
+      "action": "Record issue, correct and regression-test before release."
+    },
+    {
+      "id": "LOW",
+      "definition": "Non-material style or metadata issue that still impacts clarity, consistency or maintainability.",
+      "action": "Queue with owner and target date."
+    }
+  ],
+  "checks": [
+    {
+      "id": "LING-01",
+      "domain": "Linguistic & furigana accuracy",
+      "question": "Does the reading correspond to the word and sentence in context (including on/kun reading choices, irregular readings, okurigana and compounds)?",
+      "evidence_required": "item ID/path, surface word, expected reading, authoritative lexicon/dictionary source or qualified reviewer note",
+      "fail_if": "Reading follows a character default rather than the whole word, or source evidence contradicts the listed reading."
+    },
+    {
+      "id": "LING-02",
+      "domain": "Linguistic & furigana accuracy",
+      "question": "Does each furigana span align with the exact Kanji/word and intended reading?",
+      "evidence_required": "before/after text span and source/reviewer note",
+      "fail_if": "Furigana scope leaks across kana, omits a reading, or is inconsistent with the word."
+    },
+    {
+      "id": "LING-03",
+      "domain": "Grammar, particles & register",
+      "question": "Are particles, attachment, inflection, tense/aspect, politeness, collocation and pragmatic force correct for the context?",
+      "evidence_required": "full example sentence plus grammar reference or human review",
+      "fail_if": "Literal translation hides an incorrect particle/form or claims register rules as universal without context."
+    },
+    {
+      "id": "LING-04",
+      "domain": "Naturalness / anti-AI hallucination",
+      "question": "Would a competent Japanese speaker use this example in the stated situation? Is it non-calque, coherent and not fabricated?",
+      "evidence_required": "context, alternatives considered, source or qualified review",
+      "fail_if": "Unnatural AI-like sentence, impossible collocation, fabricated quotation, or ungrounded claim."
+    },
+    {
+      "id": "LING-05",
+      "domain": "Indonesian localization",
+      "question": "Is the Indonesian meaning idiomatic and semantically equivalent, including social force and context?",
+      "evidence_required": "Japanese–Indonesian pair and explanation of nuance",
+      "fail_if": "Translation is ambiguous, misleading, too broad, or loses important politeness/intent."
+    },
+    {
+      "id": "PSY-01",
+      "domain": "Psychometric / answer validity",
+      "question": "For single-answer MCQ, is exactly one option correct under the stated context and accepted interpretation?",
+      "evidence_required": "item ID, all options, stem/context, key and independent rationale",
+      "fail_if": "Multiple options are defensible, no option is valid, or the keyed answer contradicts evidence."
+    },
+    {
+      "id": "PSY-02",
+      "domain": "Distractor quality",
+      "question": "Are distractors plausible for the level, mutually exclusive where required, and wrong for a defensible reason?",
+      "evidence_required": "per-option rationale and likely misconception",
+      "fail_if": "Distractor is obviously silly, duplicate, grammatically impossible unrelated to construct, or also correct."
+    },
+    {
+      "id": "PSY-03",
+      "domain": "Explanation and pedagogy",
+      "question": "Does the explanation demonstrate the rule/evidence, explain why the key is right and why the plausible distractors fail?",
+      "evidence_required": "explanation text, source/evidence span, level and construct",
+      "fail_if": "Explanation restates answer without proof, gives a wrong rule, or does not match the keyed option."
+    },
+    {
+      "id": "ALIGN-01",
+      "domain": "JLPT level alignment",
+      "question": "Is the item appropriate to stated N5–N1 target/prerequisites, including Kanji, grammar and reading load?",
+      "evidence_required": "curriculum mapping / level rationale / official or reputable source",
+      "fail_if": "Level label is unsupported or advanced knowledge is assumed without prerequisite/context."
+    },
+    {
+      "id": "ALIGN-02",
+      "domain": "JFT-Basic alignment",
+      "question": "Is content mapped accurately to A1/A2-level Can-do and the correct official section?",
+      "evidence_required": "official JFT/JF Standard reference and one of MOJI_GOI, KAIWA_HYOUGEN, CHOUKAI, DOKKAI",
+      "fail_if": "Treats JLPT levels as direct JFT equivalents, wrong section, or non-daily-life target without rationale."
+    },
+    {
+      "id": "ALIGN-03",
+      "domain": "SSW field alignment",
+      "question": "Does every technical term/procedure match the correct official SSW field and exam/provider source?",
+      "evidence_required": "official field ID, current source date, field-specific official or provider reference",
+      "fail_if": "Uses another sector’s material as if interchangeable or implies content/exam is available without evidence."
+    },
+    {
+      "id": "ALIGN-04",
+      "domain": "Taxonomy and duplicates",
+      "question": "Are IDs unique; tags coherent; duplicates, near-duplicates, answer leakage and stale/conflicting variants identified?",
+      "evidence_required": "IDs, duplicate candidates, canonical record path",
+      "fail_if": "Same ID repeated, conflicting versions, answer exposed in distractor/metadata, or mislabeled type."
+    },
+    {
+      "id": "FACT-01",
+      "domain": "Living in Japan factual validity",
+      "question": "Are administrative, tax, banking, healthcare, housing/waste and community statements supported by current official/municipal sources?",
+      "evidence_required": "source URL, jurisdiction, effective/retrieval date, relevant quoted/paraphrased fact",
+      "fail_if": "No authoritative support, obsolete form/route, or local rule generalized nationally."
+    },
+    {
+      "id": "FACT-02",
+      "domain": "High-consequence safety",
+      "question": "Do medical, emergency/disaster and workplace safety passages stay within scope and reflect current competent authority guidance?",
+      "evidence_required": "official source, scenario, date, human reviewer where material",
+      "fail_if": "Invented procedure, false emergency number, diagnosis/treatment advice, or unverified safety instruction."
+    },
+    {
+      "id": "FACT-03",
+      "domain": "Workplace pragmatics",
+      "question": "Does Hou-Ren-Sou, apology, reporting, and hierarchy guidance explain context without stereotyping all Japanese workplaces?",
+      "evidence_required": "scenario, relationship, register rationale and source/reviewer where cultural claims are material",
+      "fail_if": "Absolute cultural stereotype, misleading etiquette claim, or unsuitable escalation path."
+    },
+    {
+      "id": "DATA-01",
+      "domain": "Schema/provenance/rights",
+      "question": "Are required fields, Unicode, options, answer references, source IDs and reuse rights documented?",
+      "evidence_required": "schema validation output, stable ID, source/license fields",
+      "fail_if": "Broken structure, missing required provenance, unknown rights represented as cleared, or unparseable records."
+    },
+    {
+      "id": "COVER-01",
+      "domain": "Coverage and gaps",
+      "question": "Are missing sections, levels, pillars, sectors, question types, audio assets and prerequisites explicitly listed?",
+      "evidence_required": "coverage inventory with inspected paths, counts, status and boundary of search",
+      "fail_if": "Claims complete based only on file existence/count or leaves uninspected scope marked complete."
+    }
+  ],
+  "audit_protocol": [
+    "Read this JSON rubric and `UNIVERSAL_CONTENT_AND_QUESTION_SCHEMA.json` as the canonical structured QA inputs. Read companion Markdown only as explanatory instructions; do not load both format copies as datasets.",
+    "Inventory actual content paths and IDs before sampling. Count records and question types, then perform full critical checks and representative deep checks; clearly label sample vs full coverage.",
+    "Use independent review for high-risk language/question items; use human-qualified review for consequential medical/legal/emergency/safety content.",
+    "Every finding gets a unique ID and one row in templates/FINDINGS_LEDGER_TEMPLATE.csv, with precise file path/item ID, defect type, evidence, severity, confidence, source URL, recommendation and regression test.",
+    "Do not silently edit source data during audit. Log findings first. Use separate proposed patch/review status.",
+    "Mark only inspected and evidenced items PASS. Missing source, unresolved ambiguity or unreviewed content remains NOT_AUDITED/IN_REVIEW/BLOCKED, never PASS.",
+    "Complete Stage 1 scope report before starting persona B01. If the audit cannot finish, document coverage percentage, limits and blocker; do not claim whole-app data quality is passed."
+  ],
+  "official_reference_seeds": [
+    {
+      "name": "Japan Foundation JFT-Basic overview (English)",
+      "url": "https://www.jpf.go.jp/jft-basic/e/about/index.html",
+      "supports": "four test sections, test purpose, A1/A2.1/A2.2 assessed levels and Can-do-based everyday communication; recheck current version when auditing."
+    },
+    {
+      "name": "Japan Foundation JFT-Basic overview (Indonesian)",
+      "url": "https://www.jpf.go.jp/jft-basic/id/about/",
+      "supports": "Indonesian-language reference for test structure/levels; verify latest official text before applying."
+    },
+    {
+      "name": "Specified Skilled Worker official portal",
+      "url": "https://www.ssw.go.jp/en/about/visa/",
+      "supports": "official SSW(i) and SSW(ii) field scope and field-specific caveats; current page was checked 2026-10-15."
+    },
+    {
+      "name": "Prometric SSW list page 1",
+      "url": "https://www.prometric-jp.com/en/ssw/test_list/",
+      "supports": "currently displayed exam catalogue rows; catalogue display does not prove country-specific booking availability."
+    },
+    {
+      "name": "Prometric SSW list page 2",
+      "url": "https://www.prometric-jp.com/en/ssw/test_list/index/page:2",
+      "supports": "additional currently displayed catalogue rows; recheck before publishing booking/scheduling claims."
+    }
+  ]
+}
