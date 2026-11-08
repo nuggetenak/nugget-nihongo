@@ -27,7 +27,7 @@ const DAILY_LIMIT = 20; // bumped from 15 → 20 with caching reducing actual AP
 
 // ── Model config ────────────────────────────────────────────────
 const GROQ_URL   = 'https://api.groq.com/openai/v1/chat/completions';
-const GEMINI_URL = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent';
+const GEMINI_URL = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent';
 const OR_URL     = 'https://openrouter.ai/api/v1/chat/completions';
 
 const GROQ_MODEL_FAST = 'llama-3.1-8b-instant';
@@ -304,8 +304,8 @@ async function setCached(env, key, value, ttl) {
 //
 // Contract: each helper throws on failure. Caller decides fallback.
 async function rawGroq(apiKey, systemPrompt, userPrompt, opts = {}, fallbackIdx = 0) {
-  const models = Array.from(new Set([opts.model || GROQ_MODEL_DEEP, 'llama-3.1-8b-instant'])).filter(Boolean);
-  const model = models[fallbackIdx] || 'llama-3.1-8b-instant';
+  const models = Array.from(new Set([opts.model || GROQ_MODEL_DEEP, 'llama3-8b-8192', 'llama-3.1-8b-instant', 'llama3-70b-8192'])).filter(Boolean);
+  const model = models[fallbackIdx] || models[0];
   const res = await fetch(GROQ_URL, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${apiKey}` },
@@ -333,7 +333,7 @@ async function rawGroq(apiKey, systemPrompt, userPrompt, opts = {}, fallbackIdx 
 }
 
 async function rawGemini(apiKey, systemPrompt, userPrompt, opts = {}, modelIndex = 0) {
-  const models = ['gemini-2.0-flash', 'gemini-2.5-flash', 'gemini-2.0-flash-lite'];
+  const models = ['gemini-3.5-flash-lite', 'gemini-3.6-flash', 'gemini-2.5-flash'];
   const model = models[modelIndex] || models[0];
   const url = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${apiKey}`;
   const res = await fetch(url, {
@@ -443,8 +443,8 @@ function extractJSONArray(text) {
 
 // ── Provider: Groq ────────────────────────────────────────────────
 async function callGroq(apiKey, messages, systemCtx, model, mode, fallbackIdx = 0) {
-  const models = Array.from(new Set([model || GROQ_MODEL_FAST, 'llama-3.1-8b-instant'])).filter(Boolean);
-  const targetModel = models[fallbackIdx] || 'llama-3.1-8b-instant';
+  const models = Array.from(new Set([model || GROQ_MODEL_FAST, 'llama3-8b-8192', 'llama-3.1-8b-instant', 'llama3-70b-8192'])).filter(Boolean);
+  const targetModel = models[fallbackIdx] || models[0];
   const systemPrompt = buildSystemPrompt(mode);
   const res = await fetch(GROQ_URL, {
     method: 'POST',
@@ -469,7 +469,7 @@ async function callGroq(apiKey, messages, systemCtx, model, mode, fallbackIdx = 
 
 // ── Provider: Gemini ──────────────────────────────────────────────
 async function callGemini(apiKey, messages, systemCtx, mode, modelIndex = 0) {
-  const models = ['gemini-2.0-flash', 'gemini-2.5-flash', 'gemini-2.0-flash-lite'];
+  const models = ['gemini-3.5-flash-lite', 'gemini-3.6-flash', 'gemini-2.5-flash'];
   const model = models[modelIndex] || models[0];
   const systemPrompt = buildSystemPrompt(mode);
   const contents = messages.map(m => ({
