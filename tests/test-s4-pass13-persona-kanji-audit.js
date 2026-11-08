@@ -15,10 +15,12 @@ console.log('║   Interactive Kanji Practice • CRDT Sync • Community Gatewa
 console.log('╚══════════════════════════════════════════════════════════════════╝\n');
 
 const ROOT_DIR = path.resolve(__dirname, '..');
-const PERSONAS_PATH = path.resolve(
+const LOCAL_PERSONAS = path.resolve(ROOT_DIR, 'tests/fixtures/personas/200_INDONESIAN_LEARNER_PERSONAS.json');
+const EXTERNAL_PERSONAS = path.resolve(
   ROOT_DIR,
   '../nugget-nihongo-persona-lab/Nugget_Nihongo_Antigravity_Persona_Test_Kit_v6/personas/200_INDONESIAN_LEARNER_PERSONAS.json'
 );
+const PERSONAS_PATH = fs.existsSync(LOCAL_PERSONAS) ? LOCAL_PERSONAS : EXTERNAL_PERSONAS;
 
 assert(fs.existsSync(PERSONAS_PATH), `Canonical personas file missing at: ${PERSONAS_PATH}`);
 const personaData = JSON.parse(fs.readFileSync(PERSONAS_PATH, 'utf8'));
