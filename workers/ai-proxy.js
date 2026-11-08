@@ -304,7 +304,7 @@ async function setCached(env, key, value, ttl) {
 //
 // Contract: each helper throws on failure. Caller decides fallback.
 async function rawGroq(apiKey, systemPrompt, userPrompt, opts = {}, fallbackIdx = 0) {
-  const models = [opts.model || GROQ_MODEL_DEEP, 'llama-3.1-8b-instant', 'llama-3.3-70b-versatile'];
+  const models = Array.from(new Set([opts.model || GROQ_MODEL_DEEP, 'llama-3.1-8b-instant'])).filter(Boolean);
   const model = models[fallbackIdx] || 'llama-3.1-8b-instant';
   const res = await fetch(GROQ_URL, {
     method: 'POST',
@@ -333,8 +333,8 @@ async function rawGroq(apiKey, systemPrompt, userPrompt, opts = {}, fallbackIdx 
 }
 
 async function rawGemini(apiKey, systemPrompt, userPrompt, opts = {}, modelIndex = 0) {
-  const models = ['gemini-2.5-flash', 'gemini-2.0-flash', 'gemini-1.5-flash'];
-  const model = models[modelIndex] || 'gemini-2.5-flash';
+  const models = ['gemini-2.0-flash', 'gemini-2.5-flash', 'gemini-2.0-flash-lite'];
+  const model = models[modelIndex] || models[0];
   const url = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${apiKey}`;
   const res = await fetch(url, {
     method: 'POST',
@@ -443,7 +443,7 @@ function extractJSONArray(text) {
 
 // ── Provider: Groq ────────────────────────────────────────────────
 async function callGroq(apiKey, messages, systemCtx, model, mode, fallbackIdx = 0) {
-  const models = [model || GROQ_MODEL_FAST, 'llama-3.1-8b-instant', 'llama-3.3-70b-versatile'];
+  const models = Array.from(new Set([model || GROQ_MODEL_FAST, 'llama-3.1-8b-instant'])).filter(Boolean);
   const targetModel = models[fallbackIdx] || 'llama-3.1-8b-instant';
   const systemPrompt = buildSystemPrompt(mode);
   const res = await fetch(GROQ_URL, {
@@ -469,8 +469,8 @@ async function callGroq(apiKey, messages, systemCtx, model, mode, fallbackIdx = 
 
 // ── Provider: Gemini ──────────────────────────────────────────────
 async function callGemini(apiKey, messages, systemCtx, mode, modelIndex = 0) {
-  const models = ['gemini-2.5-flash', 'gemini-2.0-flash', 'gemini-1.5-flash'];
-  const model = models[modelIndex] || 'gemini-2.5-flash';
+  const models = ['gemini-2.0-flash', 'gemini-2.5-flash', 'gemini-2.0-flash-lite'];
+  const model = models[modelIndex] || models[0];
   const systemPrompt = buildSystemPrompt(mode);
   const contents = messages.map(m => ({
     role: m.role === 'assistant' ? 'model' : 'user',
