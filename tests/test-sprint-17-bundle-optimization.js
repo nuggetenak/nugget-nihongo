@@ -84,7 +84,7 @@ test('T-92: src/App.tsx lazy-loads secondary routes with zero-CLS Suspense fallb
 test('T-93: public/_headers declares immutable asset caching and immediate SW revalidation', () => {
   const headersPath = path.join(ROOT_DIR, 'public/_headers');
   assert(fs.existsSync(headersPath), 'public/_headers must exist');
-  const code = fs.readFileSync(headersPath, 'utf8');
+  const code = fs.readFileSync(headersPath, 'utf8').replace(/\r\n/g, '\n');
 
   // Verify immutable assets
   assert(code.includes('/assets/*'), 'Must configure /assets/* cache rule');
