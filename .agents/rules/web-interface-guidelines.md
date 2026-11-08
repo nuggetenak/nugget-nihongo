@@ -39,3 +39,16 @@ Every page, layout, modal, card, and interactive widget in Nugget Nihongo MUST a
    - All numbers subject to comparison, counting, or real-time updates (XP points, streaks, timers, review card counts, water drops) must use tabular numbers (`tabular-nums font-mono`).
 4. **All States Designed**:
    - Always design and implement empty states (empty search results, no cards due, garden without plants), loading states, and error states with clear recovery actions.
+
+## 4. Button Typography, Overflow Guard & The 4R Quality Cycle
+1. **No Clipping or Text Overflows**:
+   - Buttons inside flex headers, action rows, and card footers must never clip text or push siblings offscreen. Enforce `min-w-0`, `truncate`, or responsive flex-wrap.
+2. **Text Readability & Contrast**:
+   - Button text colors must strictly contrast with button background states. High-priority action buttons on amber/yellow backgrounds MUST use dark ink (`text-stone-950 font-black`), never white text. Muted grays (`text-stone-400`, `text-stone-500`) are prohibited on action button labels.
+3. **The 4R Proactive Refinement Protocol**:
+   - When authoring or revising UI components, actively perform:
+     - **Review**: Inspect rendering at 320px–390px mobile viewports.
+     - **Rethink**: Check if button labels, typography, or colors create visual fatigue or cognitive clutter.
+     - **Revise**: Refactor overflowing containers, fix contrast ratios, and consolidate repetitive buttons.
+     - **Refine**: Verify smooth transitions, focus rings, and tactile feedback.
+
