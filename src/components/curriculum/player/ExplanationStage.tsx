@@ -5,7 +5,7 @@
 //  Pilar 3: ⚠️ Waspada Kesalahan Umum Orang Indonesia (❌ vs ✅) & Contextual Tools
 // ══════════════════════════════════════════════════════════════════
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import {
   Volume2,
   BookOpen,
@@ -19,6 +19,7 @@ import {
   MessageCircle,
   PenTool,
   Music,
+  ChevronUp,
 } from 'lucide-react';
 import {
   LessonExplanationSection,
@@ -60,6 +61,15 @@ export const ExplanationStage: React.FC<ExplanationStageProps> = ({
 
   // Single-Flow Feed (default: 'all') or Segmented View State for Clean Cognitive Flow
   const [activeSubTab, setActiveSubTab] = useState<'all' | 'grammar' | 'vocab' | 'pitfalls'>('all');
+  const [showScrollTop, setShowScrollTop] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setShowScrollTop(window.scrollY > 300);
+    };
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   const [selectedKanji, setSelectedKanji] = useState<KanjiDetailInfo | null>(null);
   const [isKanjiModalOpen, setIsKanjiModalOpen] = useState(false);
@@ -98,8 +108,8 @@ export const ExplanationStage: React.FC<ExplanationStageProps> = ({
 
   return (
     <div className="space-y-6 min-w-0">
-      {/* ── 1. SUB-VIEW SEGMENTED TAB SWITCHER (STACKED STICKY & ERGONOMIS) ── */}
-      <div className="sticky top-[106px] sm:top-[116px] z-10 -mt-2 pt-1 pb-2 bg-surface/95 backdrop-blur-md -mx-3 sm:-mx-6 px-3 sm:px-6 border-b border-accent/15 transition-all">
+      {/* ── 1. SUB-VIEW SEGMENTED TAB SWITCHER (IN-FLOW & ERGONOMIS) ── */}
+      <div className="pt-0 pb-1 -mx-1 sm:mx-0">
         <div
           role="tablist"
           aria-label="Pilar Pembelajaran Bedah Materi"
@@ -195,7 +205,7 @@ export const ExplanationStage: React.FC<ExplanationStageProps> = ({
         {/* PILAR 1: POLA TATA BAHASA & LOGIKA ALUR BERPIKIR           */}
         {/* ══════════════════════════════════════════════════════════ */}
         {(activeSubTab === 'all' || activeSubTab === 'grammar') && (
-          <div className="space-y-6">
+          <div id="pilar-tata-bahasa" className="space-y-6 scroll-mt-20">
             {/* Konteks Situasi Nyata & Logika Sensei (Pedagogical Framework) */}
             {pedagogicalFramework && (
               <PedagogicalFrameworkCard framework={pedagogicalFramework} />
@@ -492,7 +502,7 @@ export const ExplanationStage: React.FC<ExplanationStageProps> = ({
         {/* PILAR 2: BEDAH KOSAKATA INTI & PITCH ACCENT                */}
         {/* ══════════════════════════════════════════════════════════ */}
         {(activeSubTab === 'all' || activeSubTab === 'vocab') && (
-          <div className="space-y-6">
+          <div id="pilar-kosakata" className="space-y-6 scroll-mt-20">
             <div className="flex items-center justify-between gap-2">
               <div>
                 <h4 className="text-xs font-bold uppercase tracking-wider text-accent flex items-center gap-2">
@@ -769,7 +779,7 @@ export const ExplanationStage: React.FC<ExplanationStageProps> = ({
         {/* PILAR 3: WASPADA KESALAHAN UMUM & EVALUASI                 */}
         {/* ══════════════════════════════════════════════════════════ */}
         {(activeSubTab === 'all' || activeSubTab === 'pitfalls') && (
-          <div className="space-y-6">
+          <div id="pilar-jebakan" className="space-y-6 scroll-mt-20">
             <div>
               <h4 className="text-xs font-bold uppercase tracking-wider text-red-700 dark:text-red-400 flex items-center gap-2">
                 <AlertCircle className="w-4 h-4 text-red-600 dark:text-red-400" />
@@ -847,6 +857,23 @@ export const ExplanationStage: React.FC<ExplanationStageProps> = ({
         onClose={() => setIsKanjiModalOpen(false)}
         kanjiInfo={selectedKanji}
       />
+
+      {/* Floating Smooth Quick-Jump to Top for Long Explanations */}
+      {showScrollTop && (
+        <button
+          type="button"
+          onClick={() => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+            document.documentElement.scrollTop = 0;
+            document.body.scrollTop = 0;
+          }}
+          className="fixed bottom-20 right-4 z-30 flex items-center gap-1.5 px-3.5 py-2 rounded-full bg-surface-2/95 backdrop-blur-md border border-accent/30 text-xs font-bold text-appText-bright shadow-lg hover:bg-surface-3 transition-all active:scale-95 cursor-pointer animate-in fade-in"
+          aria-label="Kembali ke atas materi"
+        >
+          <ChevronUp className="w-4 h-4 text-accent" />
+          <span>Atas</span>
+        </button>
+      )}
     </div>
   );
 };

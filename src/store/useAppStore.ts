@@ -157,6 +157,9 @@ export interface AppState {
   materiStudio: 'kurikulum' | 'kanji' | 'buku';
   setMateriStudio: (studio: 'kurikulum' | 'kanji' | 'buku') => void;
   openBookStudio: () => void;
+  // Dojo 4-Pillar Unified Navigation ('latihan' | 'kamus' | 'alat' | 'cbt')
+  dojoTab: 'latihan' | 'kamus' | 'alat' | 'cbt';
+  setDojoTab: (tab: 'latihan' | 'kamus' | 'alat' | 'cbt') => void;
 
   // Daily XP Goal & Trajectory (Ticket T-57)
   dailyGoalXP: number;
@@ -786,6 +789,8 @@ export const useAppStore = create<AppState>((set, get) => ({
     set({ materiStudio: 'buku' });
     get().setActiveTab('materi');
   },
+  dojoTab: 'latihan',
+  setDojoTab: (dojoTab) => set({ dojoTab }),
 
   // Daily XP Goal & Trajectory (Ticket T-57)
   dailyGoalXP: loadDailyGoalXP(),

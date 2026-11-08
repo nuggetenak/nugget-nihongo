@@ -43,9 +43,23 @@ export const Sidebar: React.FC = () => {
     { id: 'about', label: 'Tentang Aplikasi', jp: '情報', icon: <HelpCircle className="w-5 h-5" /> },
   ];
 
+  const handleNavClick = (id: AppState['activeTab']) => {
+    if (id === 'quiz') {
+      useAppStore.getState().setDojoTab('latihan');
+      transitionTabChange('materi', setActiveTab);
+    } else if (id === 'materi') {
+      useAppStore.getState().setDojoTab('kamus');
+      transitionTabChange('materi', setActiveTab);
+    } else {
+      transitionTabChange(id, setActiveTab);
+    }
+  };
+
   const isItemActive = (id: AppState['activeTab']) => {
+    const dojoTab = useAppStore.getState().dojoTab;
+    if (id === 'quiz') return (activeTab === 'materi' && dojoTab === 'latihan') || activeTab === 'quiz';
+    if (id === 'materi') return (activeTab === 'materi' && dojoTab !== 'latihan') || activeTab === 'choukai';
     if (id === activeTab) return true;
-    if (id === 'materi' && activeTab === 'choukai') return true;
     return false;
   };
 
@@ -85,7 +99,13 @@ export const Sidebar: React.FC = () => {
           return (
             <button
               key={item.id}
-              onClick={() => transitionTabChange(item.id, setActiveTab)}
+              onClick={() => {
+                if (item.id === 'quiz' || item.id === 'materi') {
+                  handleNavClick(item.id);
+                } else {
+                  transitionTabChange(item.id, setActiveTab);
+                }
+              }}
               aria-label={`${item.label} (${item.jp})`}
               aria-current={isActive ? 'page' : undefined}
               className={`w-full flex items-center justify-between px-3.5 py-3 rounded-xl text-sm font-medium transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent ${

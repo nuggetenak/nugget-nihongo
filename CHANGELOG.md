@@ -3,6 +3,41 @@
 > Catatan pembaruan ini disinkronkan secara otomatis dari `src/lib/data/patchNotes.ts`
 > Single Source of Truth: Jalankan `npm run changelog` atau `npm run build` untuk memutakhirkan.
 
+## v24.2.0 (9 November 2026) — Shin-Nihongo: Dojo 4-Pillars & Clean Studio Ergonomics
+
+### Sorotan Pembaruan (Highlights)
+- Pilar 1 — Restrukturisasi 4 Tombol Pilihan Dojo & Materi Hub: Pemisahan bersih antara Latihan & Kuis, Kamus & Indeks, Alat Bantu & Referensi, dan Simulator Ujian CBT.
+- Pilar 2 — Pusat Simulasi Ujian CBT Resmi Terintegrasi: Tersedia 14 Set Ujian Lengkap JLPT CBT N5–N1, JFT-Basic A1/A2, Prometric Tokutei Ginou SSW (19 Sektor), Simulator Menyimak Choukai (163 soal), dan Tes Adaptif CAT.
+- Pilar 3 — Harmonisasi Navigasi Menu Samping & Arena Kuis: Menekan Arena Kuis di menu samping langsung membuka sasana latihan di Dojo tanpa memuat halaman terpisah yang membingungkan.
+- Pilar 4 — Ergonomi Bersih Studio Belajar (Bebas Sticky Bertumpuk): Sub-tab Bedah Materi tidak lagi menumpuk atau menutupi bacaan di ponsel, dilengkapi tombol melayang "Atas" saat scroll materi panjang.
+- Pilar 5 — Pustaka Alat Bantu & 9 Seri Buku Teks: Bagan Kana, Matriks Konjugasi, Komparasi Nuansa, Pelatih Keigo, Pelatih Bilangan, Kotowaza, Pitch Accent, dan 9 Buku Teks Resmi tersusun rapi di tab Alat Bantu.
+
+### Rincian Perubahan (Details)
+#### Pilar 1 — Restrukturisasi 4 Tombol Pilihan Dojo & Materi Hub
+- Pengenalan 4 tab navigasi utama berlabel jelas: Latihan & Kuis, Kamus & Indeks, Alat & Referensi, dan Simulator Ujian CBT.
+- Sinkronisasi status tab aktif dengan useAppStore.dojoTab dan useAppStore.setDojoTab.
+- Pembersihan tata letak dasbor agar tidak mencampuradukkan latihan mandiri dengan simulator ujian resmi.
+
+#### Pilar 2 — Pusat Simulasi Ujian CBT Resmi Terintegrasi (Tab 4)
+- Penyediaan 5 kartu simulator ujian standar internasional dengan timer resmi dan lembar jawaban.
+- Penyatuan modul 14 Set Latihan JLPT CBT, JFT-Basic, dan 19 Sektor Prometric SSW (ExamLmsHub) langsung di dalam tab Simulator Ujian.
+- Integrasi Simulator Menyimak Choukai (163 Soal) dan Tes Penempatan Adaptif CAT (IRT 3PL).
+
+#### Pilar 3 — Harmonisasi Navigasi Menu Samping (Drawer & Sidebar)
+- Navigasi tombol Arena Kuis di MobileDrawer dan Sidebar kini mengarahkan pemelajar ke Dojo pada tab Latihan & Kuis.
+- Penyelarasan App.tsx agar rute /quiz secara cerdas membuka Latihan & Kuis jika tidak ada sesi kuis aktif.
+
+#### Pilar 4 — Ergonomi Bersih Studio Belajar (ExplanationStage)
+- Penghapusan penumpukan sticky bar sub-tab di bawah stepper tahapan belajar untuk membebaskan ruang vertikal layar ponsel.
+- Penambahan tombol melayang (floating pill) "Atas" dengan transisi scroll halus saat membaca penjelasan materi panjang.
+- Penambahan ID jangkar (pilar-tata-bahasa, pilar-kosakata, pilar-jebakan) untuk navigasi cepat.
+
+#### Pilar 5 — Pustaka Alat Bantu & Laboratorium Bahasa (Tab 3)
+- Pengelompokan 8 instrumen referensi bahasa Jepang: Bagan Kana, Konjugasi 9 Bentuk Verba, Komparasi Nuansa, Pelatih Keigo Bisnis, Pelatih Bilangan (Counters), Pustaka 9 Seri Buku Teks, Kotowaza, dan Pitch Accent Studio.
+- Penyaringan kategori alat dengan tombol pill responsif dan akses instan.
+
+---
+
 ## v24.1.1 (9 November 2026) — Shin-Nihongo: Belajar-Ulas-Dojo Tri-Connection
 
 ### Sorotan Pembaruan (Highlights)

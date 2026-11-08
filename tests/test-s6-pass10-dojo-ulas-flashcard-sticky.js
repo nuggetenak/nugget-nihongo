@@ -62,12 +62,14 @@ assert(
 const explanationStagePath = path.join(ROOT_DIR, 'src/components/curriculum/player/ExplanationStage.tsx');
 const explanationStageCode = fs.readFileSync(explanationStagePath, 'utf8');
 assert(
-  explanationStageCode.includes('sticky top-[106px] sm:top-[116px] z-10'),
-  'ExplanationStage sub-tabs container must be sticky below the stage stepper'
+  explanationStageCode.includes('role="tablist"') &&
+  explanationStageCode.includes('aria-label="Pilar Pembelajaran Bedah Materi"'),
+  'ExplanationStage sub-tabs must provide an accessible segmented tab switcher'
 );
 assert(
-  explanationStageCode.includes('bg-surface/95 backdrop-blur-md'),
-  'ExplanationStage sticky bar must have solid blurred surface to prevent text bleed-through'
+  explanationStageCode.includes('activeSubTab === \'all\'') &&
+  explanationStageCode.includes('activeSubTab === \'grammar\''),
+  'ExplanationStage must support clean sub-tab switching between pillars'
 );
 
 console.log('  ✔ [PASS] Sticky sub-tabs verified: stays floating during long downward scrolling.');
@@ -141,8 +143,8 @@ console.log('\n▶ Check 5: Version & Changelog v24.1.0 Synchronization...');
 
 const versionPath = path.join(ROOT_DIR, 'src/config/version.ts');
 const { APP_VERSION, APP_VERSION_NUMBER, APP_RELEASE_NAME } = require(versionPath);
-assert(['v24.1.0', 'v24.1.1'].includes(APP_VERSION), 'APP_VERSION must be >= v24.1.0');
-assert(['24.1.0', '24.1.1'].includes(APP_VERSION_NUMBER), 'APP_VERSION_NUMBER must be >= 24.1.0');
+assert(['v24.1.0', 'v24.1.1', 'v24.2.0'].includes(APP_VERSION), 'APP_VERSION must be >= v24.1.0');
+assert(['24.1.0', '24.1.1', '24.2.0'].includes(APP_VERSION_NUMBER), 'APP_VERSION_NUMBER must be >= 24.1.0');
 assert(APP_RELEASE_NAME.includes('Shin-Nihongo'), 'Release name must include Shin-Nihongo');
 
 const patchNotesPath = path.join(ROOT_DIR, 'src/lib/data/patchNotes.ts');

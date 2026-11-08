@@ -15,6 +15,7 @@ import { useAuthStore } from './lib/supabase/authStore';
 import { NormalizedVocab, NormalizedGrammar } from './lib/data/dataManager';
 import { GlobalModalManager } from './components/modals/GlobalModalManager';
 import { useModalStore } from './store/useModalStore';
+import { useExerciseStore } from './store/useExerciseStore';
 import { SkeletonGrid } from './components/ui/SkeletonCard';
 import { A11yAnnouncer } from './components/ui/A11yAnnouncer';
 import { RouteErrorBoundary } from './components/ui/RouteErrorBoundary';
@@ -214,8 +215,15 @@ export const App: React.FC = () => {
         return <HomePage />;
       case 'materi':
         return <MateriHubPage />;
-      case 'quiz':
-        return <QuizPage />;
+      case 'quiz': {
+        const { quizInitialMode } = useAppStore.getState();
+        const hasActiveExercise =
+          useExerciseStore.getState().currentSet && !useExerciseStore.getState().isSubmitted;
+        if (quizInitialMode || hasActiveExercise) {
+          return <QuizPage />;
+        }
+        return <MateriHubPage initialTab="latihan" />;
+      }
       case 'kebun':
         return <KebunPage />;
       case 'sensei':

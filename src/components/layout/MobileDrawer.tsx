@@ -84,7 +84,15 @@ export const MobileDrawer: React.FC<MobileDrawerProps> = ({
   ];
 
   const handleNavigate = (tab: AppState['activeTab']) => {
-    transitionTabChange(tab, setActiveTab);
+    if (tab === 'quiz') {
+      useAppStore.getState().setDojoTab('latihan');
+      transitionTabChange('materi', setActiveTab);
+    } else if (tab === 'materi') {
+      useAppStore.getState().setDojoTab('kamus');
+      transitionTabChange('materi', setActiveTab);
+    } else {
+      transitionTabChange(tab, setActiveTab);
+    }
     onClose();
   };
 
@@ -136,7 +144,13 @@ export const MobileDrawer: React.FC<MobileDrawerProps> = ({
             </div>
             <div className="space-y-1">
               {navItems.map((item) => {
-                const isActive = activeTab === item.id;
+                const dojoTab = useAppStore.getState().dojoTab;
+                const isActive =
+                  item.id === 'quiz'
+                    ? (activeTab === 'materi' && dojoTab === 'latihan') || activeTab === 'quiz'
+                    : item.id === 'materi'
+                    ? activeTab === 'materi' && dojoTab !== 'latihan'
+                    : activeTab === item.id;
                 return (
                   <button
                     key={item.id}

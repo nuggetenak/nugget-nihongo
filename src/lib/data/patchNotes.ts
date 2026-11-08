@@ -18,6 +18,60 @@ export interface PatchNote {
 
 export const PATCH_NOTES_HISTORY: PatchNote[] = [
   {
+    version: 'v24.2.0',
+    releaseName: 'Shin-Nihongo: Dojo 4-Pillars & Clean Studio Ergonomics',
+    date: '9 November 2026',
+    type: 'minor',
+    friendlySummary: 'Pembaruan v24.2.0 merestrukturisasi total ruang Dojo menjadi 4 pilar yang intuitif dan terarah: 🥋 Latihan & Kuis (Sasana Drill Refleks 6 Mode), 📖 Kamus & Indeks (10.500+ kosakata dan 850+ pola tata bahasa), 🧰 Alat Bantu & Pustaka Referensi (8 instrumen tata bahasa & eksplorasi 9 buku teks), serta 🎯 Simulator Ujian CBT (Pusat Simulasi Ujian Resmi JLPT N5–N1, JFT-Basic, Prometric Tokutei Ginou SSW 19 Sektor, Menyimak Choukai 163 Soal, dan Tes CAT). Navigasi samping (Drawer) kini tersambung langsung ke tab Latihan & Kuis di Dojo tanpa halaman terisolasi. Selain itu, tampilan Bedah Materi di Studio Belajar disempurnakan dengan menghilangkan tab bertumpuk di layar ponsel dan menghadirkan tombol melayang "Kembali ke Atas" yang halus.',
+    highlights: [
+      'Pilar 1 — Restrukturisasi 4 Tombol Pilihan Dojo & Materi Hub: Pemisahan bersih antara Latihan & Kuis, Kamus & Indeks, Alat Bantu & Referensi, dan Simulator Ujian CBT.',
+      'Pilar 2 — Pusat Simulasi Ujian CBT Resmi Terintegrasi: Tersedia 14 Set Ujian Lengkap JLPT CBT N5–N1, JFT-Basic A1/A2, Prometric Tokutei Ginou SSW (19 Sektor), Simulator Menyimak Choukai (163 soal), dan Tes Adaptif CAT.',
+      'Pilar 3 — Harmonisasi Navigasi Menu Samping & Arena Kuis: Menekan Arena Kuis di menu samping langsung membuka sasana latihan di Dojo tanpa memuat halaman terpisah yang membingungkan.',
+      'Pilar 4 — Ergonomi Bersih Studio Belajar (Bebas Sticky Bertumpuk): Sub-tab Bedah Materi tidak lagi menumpuk atau menutupi bacaan di ponsel, dilengkapi tombol melayang "Atas" saat scroll materi panjang.',
+      'Pilar 5 — Pustaka Alat Bantu & 9 Seri Buku Teks: Bagan Kana, Matriks Konjugasi, Komparasi Nuansa, Pelatih Keigo, Pelatih Bilangan, Kotowaza, Pitch Accent, dan 9 Buku Teks Resmi tersusun rapi di tab Alat Bantu.',
+    ],
+    details: [
+      {
+        category: 'Pilar 1 — Restrukturisasi 4 Tombol Pilihan Dojo & Materi Hub',
+        items: [
+          'Pengenalan 4 tab navigasi utama berlabel jelas: Latihan & Kuis, Kamus & Indeks, Alat & Referensi, dan Simulator Ujian CBT.',
+          'Sinkronisasi status tab aktif dengan useAppStore.dojoTab dan useAppStore.setDojoTab.',
+          'Pembersihan tata letak dasbor agar tidak mencampuradukkan latihan mandiri dengan simulator ujian resmi.',
+        ],
+      },
+      {
+        category: 'Pilar 2 — Pusat Simulasi Ujian CBT Resmi Terintegrasi (Tab 4)',
+        items: [
+          'Penyediaan 5 kartu simulator ujian standar internasional dengan timer resmi dan lembar jawaban.',
+          'Penyatuan modul 14 Set Latihan JLPT CBT, JFT-Basic, dan 19 Sektor Prometric SSW (ExamLmsHub) langsung di dalam tab Simulator Ujian.',
+          'Integrasi Simulator Menyimak Choukai (163 Soal) dan Tes Penempatan Adaptif CAT (IRT 3PL).',
+        ],
+      },
+      {
+        category: 'Pilar 3 — Harmonisasi Navigasi Menu Samping (Drawer & Sidebar)',
+        items: [
+          'Navigasi tombol Arena Kuis di MobileDrawer dan Sidebar kini mengarahkan pemelajar ke Dojo pada tab Latihan & Kuis.',
+          'Penyelarasan App.tsx agar rute /quiz secara cerdas membuka Latihan & Kuis jika tidak ada sesi kuis aktif.',
+        ],
+      },
+      {
+        category: 'Pilar 4 — Ergonomi Bersih Studio Belajar (ExplanationStage)',
+        items: [
+          'Penghapusan penumpukan sticky bar sub-tab di bawah stepper tahapan belajar untuk membebaskan ruang vertikal layar ponsel.',
+          'Penambahan tombol melayang (floating pill) "Atas" dengan transisi scroll halus saat membaca penjelasan materi panjang.',
+          'Penambahan ID jangkar (pilar-tata-bahasa, pilar-kosakata, pilar-jebakan) untuk navigasi cepat.',
+        ],
+      },
+      {
+        category: 'Pilar 5 — Pustaka Alat Bantu & Laboratorium Bahasa (Tab 3)',
+        items: [
+          'Pengelompokan 8 instrumen referensi bahasa Jepang: Bagan Kana, Konjugasi 9 Bentuk Verba, Komparasi Nuansa, Pelatih Keigo Bisnis, Pelatih Bilangan (Counters), Pustaka 9 Seri Buku Teks, Kotowaza, dan Pitch Accent Studio.',
+          'Penyaringan kategori alat dengan tombol pill responsif dan akses instan.',
+        ],
+      },
+    ],
+  },
+  {
     version: 'v24.1.1',
     releaseName: 'Shin-Nihongo: Belajar-Ulas-Dojo Tri-Connection',
     date: '9 November 2026',
