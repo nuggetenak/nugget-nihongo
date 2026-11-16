@@ -50,6 +50,23 @@ export const InteractiveSentence: React.FC<InteractiveSentenceProps> = ({
   const containerRef = useRef<HTMLDivElement>(null);
   useBodyScrollLock(!!selectedToken);
 
+  const handleClosePopover = () => {
+    setSelectedToken(null);
+    setLookupResult(null);
+    setDeinflection(null);
+  };
+
+  // Close popover on Escape key (Hook must precede early returns)
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Escape' && selectedToken) {
+        handleClosePopover();
+      }
+    };
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [selectedToken]);
+
   if (!sentence) return null;
 
   const tokens = tokenizeJapanese(sentence);
@@ -73,12 +90,6 @@ export const InteractiveSentence: React.FC<InteractiveSentenceProps> = ({
     }
   };
 
-  const handleClosePopover = () => {
-    setSelectedToken(null);
-    setLookupResult(null);
-    setDeinflection(null);
-  };
-
   const handleOpenConjugation = (lemma: string) => {
     handleClosePopover();
     if (onOpenConjugationModal) {
@@ -87,17 +98,6 @@ export const InteractiveSentence: React.FC<InteractiveSentenceProps> = ({
       setInternalModalVerb(lemma);
     }
   };
-
-  // Close popover on Escape key
-  useEffect(() => {
-    const handleKeyDown = (e: KeyboardEvent) => {
-      if (e.key === 'Escape' && selectedToken) {
-        handleClosePopover();
-      }
-    };
-    window.addEventListener('keydown', handleKeyDown);
-    return () => window.removeEventListener('keydown', handleKeyDown);
-  }, [selectedToken]);
 
   return (
     <div ref={containerRef} className={`relative inline-block w-full max-w-full ${className}`}>

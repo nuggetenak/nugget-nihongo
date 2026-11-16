@@ -36,13 +36,11 @@ export const StarScrambleWidget: React.FC<StarScrambleWidgetProps> = ({
   isSubmitted = false,
 }) => {
   const scramble = item.starScramble;
-  if (!scramble) return null;
+  const starPosition = Math.max(1, Math.min(4, Math.floor(scramble?.starPosition || 1)));
 
-  const starPosition = Math.max(1, Math.min(4, Math.floor(scramble.starPosition || 1)));
-
-  // Auto-sync Star slot token with matching option index (Ticket T-41)
+  // Auto-sync Star slot token with matching option index (Hook must precede early returns)
   React.useEffect(() => {
-    if (isSubmitted) return;
+    if (!scramble || isSubmitted) return;
     const starToken = slottedTokens[starPosition - 1];
     if (starToken) {
       const matchIdx = findMatchingOptionIndex(starToken, item.options);
@@ -53,7 +51,9 @@ export const StarScrambleWidget: React.FC<StarScrambleWidgetProps> = ({
       // Star slot is empty, clear selection if currently selected
       onSelectOption(-1);
     }
-  }, [slottedTokens, starPosition, item.options, selectedOptionIndex, isSubmitted, onSelectOption]);
+  }, [scramble, slottedTokens, starPosition, item.options, selectedOptionIndex, isSubmitted, onSelectOption]);
+
+  if (!scramble) return null;
 
   // Tap available token to insert into first empty slot
   const handleTapAvailableToken = (token: string, tokenIdx: number) => {

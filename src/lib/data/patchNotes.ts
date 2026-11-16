@@ -18,6 +18,35 @@ export interface PatchNote {
 
 export const PATCH_NOTES_HISTORY: PatchNote[] = [
   {
+    version: 'v24.2.1',
+    releaseName: 'Stabilitas Layar Belajar & Navigasi Mulus Mobile',
+    date: '16 November 2026',
+    type: 'patch',
+    friendlySummary: 'Pembaruan kilat ini hadir untuk memastikan pengalaman belajarmu di ponsel selalu mulus dan bebas hambatan! Kami membenahi sinkronisasi menu navigasi bawah saat kamu berpindah dari beranda ke dalam studio belajar, sehingga layar tidak akan terhenti atau memuat ulang secara mendadak. Kuis cek pemahaman, susun kalimat bintang, dan penjelasan jawaban kini berjalan dengan stabil dan responsif. Selamat melanjutkan belajar bahasa Jepang dengan tenang dan fokus!',
+    highlights: [
+      'Penyempurnaan Navigasi Bawah: Menu BottomNav kini beradaptasi secara mulus saat masuk ke studio belajar dan simulator ujian tanpa memicu gangguan pada layar.',
+      'Kelancaran Studio Belajar & Latihan Soal: Membuka materi pelajaran JLPT kini langsung terbuka secara instan dan stabil di semua ukuran layar ponsel.',
+      'Respon Interaktif & Shortcut: Penyempurnaan kendali tombol keyboard (1-4, Enter) pada kuis latihan dan animasi susun urutan kata.',
+    ],
+    details: [
+      {
+        category: 'Stabilitas Navigasi & Siklus Hidup Komponen Mobile',
+        items: [
+          'Penataan ulang urutan kalkulasi memori FSRS pada BottomNav mendahului perlindungan layar fokus study studio.',
+          'Pencegahan error rendering React 18 saat pengguna berpindah cepat antar-halaman pada koneksi lambat.',
+        ],
+      },
+      {
+        category: 'Penyempurnaan Modul Latihan & Uraian Jawaban',
+        items: [
+          'Pencegahan gangguan siklus komponen pada MicroDrillStage saat menyelesaikan putaran kuis.',
+          'Penyesuaian penanganan shortcut keyboard Escape pada InteractiveSentence dan StarScrambleWidget.',
+          'Peningkatan keandalan penampil bedah partikel tata bahasa pada QuizExplanationDetail.',
+        ],
+      },
+    ],
+  },
+  {
     version: 'v24.2.0',
     releaseName: 'Shin-Nihongo: Dojo 4-Pillars & Clean Studio Ergonomics',
     date: '9 November 2026',

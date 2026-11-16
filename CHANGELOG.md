@@ -3,6 +3,25 @@
 > Catatan pembaruan ini disinkronkan secara otomatis dari `src/lib/data/patchNotes.ts`
 > Single Source of Truth: Jalankan `npm run changelog` atau `npm run build` untuk memutakhirkan.
 
+## v24.2.1 (16 November 2026) — Stabilitas Layar Belajar & Navigasi Mulus Mobile
+
+### Sorotan Pembaruan (Highlights)
+- Penyempurnaan Navigasi Bawah: Menu BottomNav kini beradaptasi secara mulus saat masuk ke studio belajar dan simulator ujian tanpa memicu gangguan pada layar.
+- Kelancaran Studio Belajar & Latihan Soal: Membuka materi pelajaran JLPT kini langsung terbuka secara instan dan stabil di semua ukuran layar ponsel.
+- Respon Interaktif & Shortcut: Penyempurnaan kendali tombol keyboard (1-4, Enter) pada kuis latihan dan animasi susun urutan kata.
+
+### Rincian Perubahan (Details)
+#### Stabilitas Navigasi & Siklus Hidup Komponen Mobile
+- Penataan ulang urutan kalkulasi memori FSRS pada BottomNav mendahului perlindungan layar fokus study studio.
+- Pencegahan error rendering React 18 saat pengguna berpindah cepat antar-halaman pada koneksi lambat.
+
+#### Penyempurnaan Modul Latihan & Uraian Jawaban
+- Pencegahan gangguan siklus komponen pada MicroDrillStage saat menyelesaikan putaran kuis.
+- Penyesuaian penanganan shortcut keyboard Escape pada InteractiveSentence dan StarScrambleWidget.
+- Peningkatan keandalan penampil bedah partikel tata bahasa pada QuizExplanationDetail.
+
+---
+
 ## v24.2.0 (9 November 2026) — Shin-Nihongo: Dojo 4-Pillars & Clean Studio Ergonomics
 
 ### Sorotan Pembaruan (Highlights)

@@ -210,7 +210,8 @@ const SUITES = [
   { name: 'Siklus VIII Pass 11: Community Hub, About, Share Cards & Feedback Gateway', file: 'tests/test-s8-pass11-community-about-share-feedback.js' },
   { name: 'Siklus VIII Pass 12: 200 Indonesian Learner Personas Multi-Device Profiling', file: 'tests/test-s8-pass12-personas-multidevice-profiling.js' },
   { name: 'Siklus VIII Pass 13: Dokkai Reading Immersion, Furigana Line-Breaker & Realia Lightbox', file: 'tests/test-s8-pass13-dokkai-furigana-realia-typography.js' },
-  { name: 'Siklus VIII Pass 14: Final Synthesis, End-to-End Release Gate & Production Certification', file: 'tests/test-s8-pass14-final-synthesis-release-certification.js' }
+  { name: 'Siklus VIII Pass 14: Final Synthesis, End-to-End Release Gate & Production Certification', file: 'tests/test-s8-pass14-final-synthesis-release-certification.js' },
+  { name: 'Siklus VIII Pass 15: React 18 Rules of Hooks AST Verification & BottomNav Guard', file: 'tests/test-s8-pass15-react-rules-of-hooks.js' }
 ];
 
 console.log('╔══════════════════════════════════════════════════════════════════╗');

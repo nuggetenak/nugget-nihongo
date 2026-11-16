@@ -33,15 +33,7 @@ export const BottomNav: React.FC = () => {
   const isSubmitted = useExerciseStore((s) => s.isSubmitted);
   const hasActiveCbt = currentSet !== null && !isSubmitted;
 
-  // Immersion Shield: Automatically hide BottomNav during timed exams and study studio
-  if (activeTab === 'study') {
-    return null;
-  }
-  if (hasActiveCbt) {
-    return null;
-  }
-
-  // Calculate live FSRS due cards count for review badge
+  // Calculate live FSRS due cards count for review badge (Hook must precede early returns)
   const dueCount = useMemo(() => {
     try {
       const safeCards = cards && typeof cards === 'object' ? cards : {};
@@ -50,6 +42,14 @@ export const BottomNav: React.FC = () => {
       return 0;
     }
   }, [cards]);
+
+  // Immersion Shield: Automatically hide BottomNav during timed exams and study studio
+  if (activeTab === 'study') {
+    return null;
+  }
+  if (hasActiveCbt) {
+    return null;
+  }
 
   // 5-Tab Core Navigation Architecture (Sovereign Mobile-First Model)
   const items: Array<{

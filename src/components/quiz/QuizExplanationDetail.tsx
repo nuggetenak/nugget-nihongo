@@ -23,6 +23,8 @@ export const QuizExplanationDetail: React.FC<QuizExplanationDetailProps> = ({
   romaji,
   translation,
 }) => {
+  const { openSenseiSheet } = useAppStore();
+
   if (!rawExplanation && !jpSentence) return null;
 
   // Highlight Japanese particles safely without leaking raw <b> or </b> tags
@@ -50,8 +52,6 @@ export const QuizExplanationDetail: React.FC<QuizExplanationDetailProps> = ({
       </span>
     );
   };
-
-  const { openSenseiSheet } = useAppStore();
 
   return (
     <div className="p-4 sm:p-5 rounded-2xl bg-surface-2/95 border border-accent/25 space-y-3 text-xs leading-relaxed animate-in fade-in duration-200 shadow-sm">

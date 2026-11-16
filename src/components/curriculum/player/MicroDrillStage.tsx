@@ -29,23 +29,6 @@ export const MicroDrillStage: React.FC<MicroDrillStageProps> = ({ drills = [], o
   const [retryQueue, setRetryQueue] = useState<LessonDrillItem[]>([]);
   const [isFinished, setIsFinished] = useState(false);
 
-  if (!drills || drills.length === 0) {
-    return (
-      <div className="py-12 text-center space-y-4">
-        <p className="text-appText-muted text-sm">
-          Tidak ada latihan khusus pada pelajaran ini.
-        </p>
-        <button
-          type="button"
-          onClick={() => onComplete(100)}
-          className="min-h-[44px] px-6 py-2.5 rounded-xl bg-accent text-bg font-bold shadow-md active:scale-95 cursor-pointer"
-        >
-          Lanjut ke Tantangan Nyata
-        </button>
-      </div>
-    );
-  }
-
   const currentItem = activeQueue[currentIndex];
 
   // Handler untuk kepingan kata pada tipe 'reorder' (bebas tabrakan duplikat)
@@ -127,7 +110,7 @@ export const MicroDrillStage: React.FC<MicroDrillStageProps> = ({ drills = [], o
     }
   };
 
-  // Keyboard shortcut support: 1-4 / A-D to select, Enter/Space to advance
+  // Keyboard shortcut support: 1-4 / A-D to select, Enter/Space to advance (Hook must precede early returns)
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
       if (!currentItem) return;
@@ -157,6 +140,23 @@ export const MicroDrillStage: React.FC<MicroDrillStageProps> = ({ drills = [], o
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
   }, [currentItem, feedback, activeQueue, currentIndex, retryQueue]);
+
+  if (!drills || drills.length === 0) {
+    return (
+      <div className="py-12 text-center space-y-4">
+        <p className="text-appText-muted text-sm">
+          Tidak ada latihan khusus pada pelajaran ini.
+        </p>
+        <button
+          type="button"
+          onClick={() => onComplete(100)}
+          className="min-h-[44px] px-6 py-2.5 rounded-xl bg-accent text-bg font-bold shadow-md active:scale-95 cursor-pointer"
+        >
+          Lanjut ke Tantangan Nyata
+        </button>
+      </div>
+    );
+  }
 
   if (isFinished) {
     const totalInitial = drills.length;
