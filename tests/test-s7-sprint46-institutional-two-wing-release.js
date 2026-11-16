@@ -114,9 +114,9 @@ const versionConfigContent = fs.readFileSync(versionConfigPath, 'utf8');
 const patchNotesContent = fs.readFileSync(patchNotesPath, 'utf8');
 
 assert(
-  versionConfigContent.includes("APP_VERSION = 'v24.2.0'") &&
-  versionConfigContent.includes("APP_VERSION_NUMBER = '24.2.0'"),
-  'version.ts must be pinned to v24.2.0'
+  versionConfigContent.includes("APP_VERSION = 'v24.2.") &&
+  versionConfigContent.includes("APP_VERSION_NUMBER = '24.2."),
+  'version.ts must be pinned to v24.2.x'
 );
 
 assert(

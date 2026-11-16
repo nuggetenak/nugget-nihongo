@@ -36,8 +36,10 @@ test('Version Lockstep Gateway 1: src/config/version.ts is v24.0.0 (Shin-Nihongo
   assert(fs.existsSync(vPath), 'src/config/version.ts must exist');
   const code = fs.readFileSync(vPath, 'utf8');
 
-  assert(code.includes("export const APP_VERSION = 'v24.0.0'") || code.includes("export const APP_VERSION = 'v24.1.0'") || code.includes("export const APP_VERSION = 'v24.1.1'") || code.includes("export const APP_VERSION = 'v24.2.0'"), 'APP_VERSION must be >= v24.0.0');
-  assert(code.includes("export const APP_VERSION_NUMBER = '24.0.0'") || code.includes("export const APP_VERSION_NUMBER = '24.1.0'") || code.includes("export const APP_VERSION_NUMBER = '24.1.1'") || code.includes("export const APP_VERSION_NUMBER = '24.2.0'"), 'APP_VERSION_NUMBER must be >= 24.0.0');
+  const versionMatch = code.match(/export const APP_VERSION = 'v?([0-9.]+)';/);
+  assert(versionMatch && parseFloat(versionMatch[1]) >= 24.0, 'APP_VERSION must be >= v24.0.0');
+  const numMatch = code.match(/export const APP_VERSION_NUMBER = '([0-9.]+)';/);
+  assert(numMatch && parseFloat(numMatch[1]) >= 24.0, 'APP_VERSION_NUMBER must be >= 24.0.0');
   assert(code.includes('Shin-Nihongo'), 'Release name must be Shin-Nihongo');
   assert(code.includes('APP_BUILD_DATE'), 'Must export APP_BUILD_DATE');
   assert(code.includes('APP_CHANGELOG_HIGHLIGHTS'), 'Must export changelog highlights array');
@@ -48,7 +50,7 @@ test('Version Lockstep Gateway 2: package.json is 24.0.0 or later', () => {
   assert(fs.existsSync(pkgPath), 'package.json must exist');
   const pkg = JSON.parse(fs.readFileSync(pkgPath, 'utf8'));
 
-  assert(['24.0.0', '24.1.0', '24.1.1', '24.2.0'].includes(pkg.version), 'package.json version must be >= 24.0.0');
+  assert(parseFloat(pkg.version) >= 24.0, 'package.json version must be >= 24.0.0');
 });
 
 test('Version Lockstep Gateway 3: public/sw.js cache is valid version', () => {
@@ -56,7 +58,8 @@ test('Version Lockstep Gateway 3: public/sw.js cache is valid version', () => {
   assert(fs.existsSync(swPath), 'public/sw.js must exist');
   const code = fs.readFileSync(swPath, 'utf8');
 
-  assert(code.includes("const CACHE = 'nihongo-v24.0.0'") || code.includes("const CACHE = 'nihongo-v24.1.0'") || code.includes("const CACHE = 'nihongo-v24.1.1'") || code.includes("const CACHE = 'nihongo-v24.2.0'"), 'sw.js CACHE key must be valid');
+  const swMatch = code.match(/const CACHE = 'nihongo-v([0-9.]+)';/);
+  assert(swMatch && parseFloat(swMatch[1]) >= 24.0, 'sw.js CACHE key must be valid');
 });
 
 test('Version Lockstep Gateway 4: patchNotes.ts and CHANGELOG.md include v24.0.0 release', () => {

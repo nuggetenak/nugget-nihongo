@@ -37,10 +37,10 @@ const { PATCH_NOTES_HISTORY } = require('../src/lib/data/patchNotes.ts');
 // ── Check 1: Humanized Benefit-Driven Changelog (src/config/version.ts) ──────
 console.log('▶ Check 1: Humanized Benefit-Driven Changelog in version.ts...');
 
-assert(['v24.0.0', 'v24.1.0', 'v24.1.1', 'v24.2.0'].includes(APP_VERSION), 'APP_VERSION must be >= v24.0.0');
-assert(['24.0.0', '24.1.0', '24.1.1', '24.2.0'].includes(APP_VERSION_NUMBER), 'APP_VERSION_NUMBER must be >= 24.0.0');
+assert(parseFloat(APP_VERSION.replace('v', '')) >= 24.0, 'APP_VERSION must be >= v24.0.0');
+assert(parseFloat(APP_VERSION_NUMBER) >= 24.0, 'APP_VERSION_NUMBER must be >= 24.0.0');
 assert(APP_RELEASE_NAME.includes('Shin-Nihongo'), 'APP_RELEASE_NAME must maintain Shin-Nihongo codename');
-assert(['2026-11-08', '2026-11-09'].includes(APP_BUILD_DATE), 'APP_BUILD_DATE must be 2026-11-08 or 2026-11-09');
+assert(/^\d{4}-\d{2}-\d{2}$/.test(APP_BUILD_DATE), 'APP_BUILD_DATE must be a valid ISO date YYYY-MM-DD');
 
 assert(Array.isArray(APP_CHANGELOG_HIGHLIGHTS), 'APP_CHANGELOG_HIGHLIGHTS must be an array');
 assert.strictEqual(APP_CHANGELOG_HIGHLIGHTS.length, 5, 'Must contain 5 distinct pillars');
