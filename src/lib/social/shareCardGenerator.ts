@@ -304,9 +304,10 @@ export async function shareKanjiCard(options: KanjiCardOptions): Promise<boolean
     const result = await generateKanjiMasteryCard(options);
 
     if (result.blob && typeof navigator !== 'undefined' && navigator.share) {
+      const safeChar = encodeURIComponent(options.character || 'kanji');
       const file = new File(
         [result.blob],
-        `nugget-kanji-${options.character}.png`,
+        `nugget-kanji-${safeChar}.png`,
         { type: 'image/png' }
       );
 
@@ -324,6 +325,9 @@ export async function shareKanjiCard(options: KanjiCardOptions): Promise<boolean
     downloadKanjiCard(result.dataUrl, `kanji-${options.character}-mastery.png`);
     return true;
   } catch (err) {
+    if (err && typeof err === 'object' && 'name' in err && (err as { name: string }).name === 'AbortError') {
+      return false; // User intentionally cancelled native share sheet
+    }
     console.warn('[shareCardGenerator] Share failed, fallback to download:', err);
     try {
       const result = await generateKanjiMasteryCard(options);

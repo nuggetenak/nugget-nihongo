@@ -8,6 +8,7 @@ import { webVitals } from './lib/telemetry/webVitals';
 import { syncDaemon } from './lib/sync/syncDaemon';
 import { migrationRunner } from './lib/persistence/migrationRunner';
 import { broadcastSync } from './lib/sync/broadcastSync';
+import { initCrossTabSync } from './store/useAppStore';
 import { diagnostics } from './lib/diagnostics/diagnostics';
 import './index.css';
 
@@ -17,6 +18,7 @@ errorReporter.init();
 webVitals.init();
 syncDaemon.start();
 broadcastSync.init();
+initCrossTabSync();
 
 // Disaster Recovery: Schema Migrations (Ticket T-109)
 migrationRunner.runMigrations().catch((e) => {

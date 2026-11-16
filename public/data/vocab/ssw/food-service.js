@@ -132,19 +132,19 @@ window.vocabSSW_FoodService = [
   },
   {
     "id": "v-ssw-food-service-008",
-    "word": "レジ操作（会計）",
-    "reading": "れじそうさ（かいけい）",
-    "romaji": "reji sousa (kaikei)",
+    "word": "レジ操作",
+    "reading": "れじそうさ",
+    "romaji": "reji sousa",
     "meaning": "Pengoperasian mesin kasir pembayaran tunai/e-money",
     "meaning_id": "Pengoperasian mesin kasir pembayaran tunai/e-money",
     "meaning_en": "Pengoperasian mesin kasir pembayaran tunai/e-money",
     "level": "n4",
     "pos": "noun",
-    "nuance": "Cash Discrepancy & Fraud",
+    "nuance": "Pengoperasian mesin kasir restoran. Saat berbicara kepada pelanggan, gunakan kata sopan お会計 (おかいけい).",
     "examples": [
       {
-        "jp": "レジ操作（会計）の安全確認を行ってください。",
-        "id": "Tolong lakukan konfirmasi keselamatan pada Pengoperasian mesin kasir pembayaran tunai/e-money."
+        "jp": "お釣りの渡し間違いを防ぐため、レジ操作時は金額を指差し声出し確認します。",
+        "id": "Ucapkan dan tunjuk nominal uang saat mengoperasikan mesin kasir untuk mencegah salah kembalian."
       }
     ]
   },
@@ -456,19 +456,19 @@ window.vocabSSW_FoodService = [
   },
   {
     "id": "v-ssw-food-service-026",
-    "word": "下膳（下げ膳）",
-    "reading": "げぜん（さげぜん）",
-    "romaji": "gezen (sagezen)",
+    "word": "下膳",
+    "reading": "げぜん",
+    "romaji": "gezen",
     "meaning": "Pembersihan piring kotor dari meja makan tamu",
     "meaning_id": "Pembersihan piring kotor dari meja makan tamu",
     "meaning_en": "Pembersihan piring kotor dari meja makan tamu",
     "level": "n4",
     "pos": "noun",
-    "nuance": "Spilled Hot Soup Scalding",
+    "nuance": "Pembersihan dan pengangkutan piring kotor dari meja tamu ke area cuci (steward). Di restoran sering disebut 下げ膳 (さげぜん).",
     "examples": [
       {
-        "jp": "下膳（下げ膳）の安全確認を行ってください。",
-        "id": "Tolong lakukan konfirmasi keselamatan pada Pembersihan piring kotor dari meja makan tamu."
+        "jp": "お客様がお食事を終えられたら、失礼のないよう速やかに下膳してください。",
+        "id": "Setelah tamu selesai bersantap, bersihkan dan angkat piring kotor dengan sopan dan cekatan."
       }
     ]
   },

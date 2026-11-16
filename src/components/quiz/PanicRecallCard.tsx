@@ -1,5 +1,5 @@
 // ══════════════════════════════════════════════════════════════════
-//  PanicRecallCard.tsx — Cover-Recall-Check Drill for Gemba K3 & SBAR
+//  PanicRecallCard.tsx — Cover-Recall-Check Drill for Vocational K3 & SBAR
 //  Research Basis: ADR-009, Sakamoto et al. (2014), Emergency SLA Washback Mitigation
 //  Forces Spoken Production Under 5s/8s Countdown without Multiple Choice Cues
 // ══════════════════════════════════════════════════════════════════
@@ -84,7 +84,7 @@ export const PanicRecallCard: React.FC<PanicRecallCardProps> = ({
             </span>
             <div className="min-w-0">
               <div className="text-xs font-bold text-red-400 uppercase tracking-wider truncate">
-                Simulasi Darurat Gemba K3
+                Simulasi Darurat Keselamatan K3
               </div>
               <div className="text-xs text-appText-muted truncate">
                 {question.subText || 'Tanggap Darurat < 5 Detik'}
@@ -136,7 +136,7 @@ export const PanicRecallCard: React.FC<PanicRecallCardProps> = ({
             </p>
             <button
               onClick={handleManualReveal}
-              className="w-full py-3 rounded-xl bg-accent text-bg font-extrabold text-xs shadow-glow hover:bg-accent-hot transition-all active:scale-95"
+              className="w-full min-h-[44px] py-3 rounded-xl bg-accent text-bg font-extrabold text-xs sm:text-sm shadow-glow hover:bg-accent-hot transition-all active:scale-95 flex items-center justify-center"
             >
               Buka Kunci Komando & Verifikasi Jawaban
             </button>
@@ -190,7 +190,7 @@ export const PanicRecallCard: React.FC<PanicRecallCardProps> = ({
                 playErrorSfx();
                 onRateSelf('gagal');
               }}
-              className="py-3 sm:py-3.5 rounded-2xl bg-red-500/15 dark:bg-red-950/40 hover:bg-red-500/25 dark:hover:bg-red-900/60 border border-red-500/30 text-red-800 dark:text-red-300 text-xs font-bold transition-all flex flex-col items-center gap-1 active:scale-95"
+              className="min-h-[50px] sm:min-h-[54px] py-3 sm:py-3.5 rounded-2xl bg-red-500/15 dark:bg-red-950/40 hover:bg-red-500/25 dark:hover:bg-red-900/60 border border-red-500/30 text-red-800 dark:text-red-300 text-xs font-bold transition-all flex flex-col items-center justify-center gap-1 active:scale-95"
             >
               <XCircle className="w-4 h-4 text-red-500" />
               <span>Gagal / Terbata</span>
@@ -202,7 +202,7 @@ export const PanicRecallCard: React.FC<PanicRecallCardProps> = ({
                 playSuccessSfx();
                 onRateSelf('ragu');
               }}
-              className="py-3 sm:py-3.5 rounded-2xl bg-amber-500/15 dark:bg-amber-950/40 hover:bg-amber-500/25 dark:hover:bg-amber-900/60 border border-amber-500/30 text-amber-800 dark:text-amber-300 text-xs font-bold transition-all flex flex-col items-center gap-1 active:scale-95"
+              className="min-h-[50px] sm:min-h-[54px] py-3 sm:py-3.5 rounded-2xl bg-amber-500/15 dark:bg-amber-950/40 hover:bg-amber-500/25 dark:hover:bg-amber-900/60 border border-amber-500/30 text-amber-800 dark:text-amber-300 text-xs font-bold transition-all flex flex-col items-center justify-center gap-1 active:scale-95"
             >
               <AlertTriangle className="w-4 h-4 text-amber-500" />
               <span>Ragu / Lambat</span>
@@ -214,7 +214,7 @@ export const PanicRecallCard: React.FC<PanicRecallCardProps> = ({
                 playSuccessSfx();
                 onRateSelf('lancar');
               }}
-              className="py-3 sm:py-3.5 rounded-2xl bg-emerald-500/15 dark:bg-emerald-950/40 hover:bg-emerald-500/25 dark:hover:bg-emerald-900/60 border border-emerald-500/30 text-emerald-800 dark:text-emerald-300 text-xs font-bold transition-all flex flex-col items-center gap-1 active:scale-95 shadow-glow"
+              className="min-h-[50px] sm:min-h-[54px] py-3 sm:py-3.5 rounded-2xl bg-emerald-500/15 dark:bg-emerald-950/40 hover:bg-emerald-500/25 dark:hover:bg-emerald-900/60 border border-emerald-500/30 text-emerald-800 dark:text-emerald-300 text-xs font-bold transition-all flex flex-col items-center justify-center gap-1 active:scale-95 shadow-glow"
             >
               <CheckCircle2 className="w-4 h-4 text-emerald-500" />
               <span>Lancar &amp; Sigap</span>

@@ -88,6 +88,18 @@ class KanjiMasteryManager {
     score: number,
     isComplete: boolean
   ): KanjiMasteryRecord {
+    if (!character || typeof character !== 'string') {
+      return {
+        character: '',
+        totalAttempts: 0,
+        successfulWrites: 0,
+        averageScore: 0,
+        lastPracticed: Date.now(),
+        masteryLevel: 'learning',
+      };
+    }
+
+    const safeScore = Math.max(0, Math.min(100, Number.isFinite(score) ? Math.round(score) : 0));
     const existing = this.records.get(character) || {
       character,
       totalAttempts: 0,
@@ -100,7 +112,7 @@ class KanjiMasteryManager {
     const newAttempts = existing.totalAttempts + 1;
     const newSuccesses = isComplete ? existing.successfulWrites + 1 : existing.successfulWrites;
     const newAvgScore = Math.round(
-      (existing.averageScore * existing.totalAttempts + score) / newAttempts
+      (existing.averageScore * existing.totalAttempts + safeScore) / newAttempts
     );
 
     let level: KanjiMasteryLevel = 'learning';

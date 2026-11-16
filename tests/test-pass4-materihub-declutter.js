@@ -33,8 +33,8 @@ function main() {
 
   const hubPath = path.join(ROOT_DIR, 'src/pages/MateriHubPage.tsx');
   assert(fs.existsSync(hubPath), 'MateriHubPage.tsx must exist');
-
-  const hubCode = fs.readFileSync(hubPath, 'utf8');
+  const refPath = path.join(ROOT_DIR, 'src/features/dojo/pillars/ReferencePillar.tsx');
+  const hubCode = fs.readFileSync(hubPath, 'utf8') + '\n' + (fs.existsSync(refPath) ? fs.readFileSync(refPath, 'utf8') : '');
 
   // ── 1. Categorized Progressive Disclosure & 2 Calm Categories ──
   test('P4.1: Restructures the 11 tools into 2 calm categories (Kemahiran Inti & Referensi Tata Bahasa)', () => {

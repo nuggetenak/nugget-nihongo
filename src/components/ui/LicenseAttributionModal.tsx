@@ -132,7 +132,7 @@ const ATTRIBUTIONS: AttributionEntry[] = [
 ];
 
 export const LicenseAttributionModal: React.FC<LicenseAttributionModalProps> = ({ isOpen, onClose }) => {
-  const trapRef = useFocusTrap<HTMLDivElement>(isOpen);
+  const trapRef = useFocusTrap<HTMLDivElement>(isOpen, onClose);
   useBodyScrollLock(isOpen);
 
   useEffect(() => {

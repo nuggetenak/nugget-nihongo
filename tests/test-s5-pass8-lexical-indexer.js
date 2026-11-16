@@ -254,7 +254,8 @@ test('T-6: vocab-index.js self-healing O(1) index, queryVocab and getVocab contr
 // ── T-7: MateriHubPage Multi-Field Search & Accessibility Hardening ───────────
 test('T-7: MateriHubPage multi-field search predicate, POS filtering & a11y labels', () => {
   const pagePath = path.join(ROOT_DIR, 'src/pages/MateriHubPage.tsx');
-  const pageContent = fs.readFileSync(pagePath, 'utf8');
+  const dictPath = path.join(ROOT_DIR, 'src/features/dojo/pillars/DictionaryPillar.tsx');
+  const pageContent = fs.readFileSync(pagePath, 'utf8') + '\n' + (fs.existsSync(dictPath) ? fs.readFileSync(dictPath, 'utf8') : '');
 
   // Verify defensive null-safe predicates
   assert(pageContent.includes('(v.word && v.word.includes(q))'), 'Vocab search must guard v.word');

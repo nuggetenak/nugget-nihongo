@@ -28,6 +28,7 @@ import {
 import { speakJapanese } from '../../lib/audio/tts';
 import { playSuccessSfx, playErrorSfx } from '../../lib/audio/sfx';
 import { useAppStore } from '../../store/useAppStore';
+import { useBodyScrollLock } from '../../hooks/useBodyScrollLock';
 
 export interface PrometricQuestion {
   id: string;
@@ -107,13 +108,13 @@ export const PROMETRIC_SECTOR_RULES: Record<string, PrometricSectorRule> = {
   },
   'ssw-construction': {
     sectorId: 'ssw-construction',
-    sectorName: 'Konstruksi & Gemba Sipil (建設業)',
+    sectorName: 'Konstruksi & Teknik Sipil (建設業)',
     ministry: 'MLIT',
     ministryKanji: '国土交通省',
     testCode: 'CN-SSW-JAC-2026',
     hasDualPass: true,
     sectionA: { name: 'Keterampilan Konstruksi Lapangan', passPercent: 60, weight: 0.6 },
-    sectionB: { name: 'Komunikasi Keselamatan Gemba (KYT)', passPercent: 70, weight: 0.4 },
+    sectionB: { name: 'Komunikasi Keselamatan Proyek (KYT)', passPercent: 70, weight: 0.4 },
   },
   'ssw-building-cleaning': {
     sectorId: 'ssw-building-cleaning',
@@ -273,7 +274,7 @@ export const CANONICAL_PROMETRIC_QUESTIONS: PrometricQuestion[] = [
       { id: 'opt-d', textJp: '設計・試作・試験・審査・承認', textId: 'Sekkei (Desain), Shisaku (Prototipe), Shiken (Uji), Shinsa (Review), Shounin (Approval)' },
     ],
     correctOptionId: 'opt-a',
-    explanationId: '5S dasar manufaktur Jepang: Seiri (membuang barang tak perlu), Seiton (menata letak barang agar mudah diambil), Seisou (membersihkan gemba), Seiketsu (menjaga standar bersih), Shitsuke (disiplin mematuhi aturan).',
+    explanationId: '5S dasar manufaktur Jepang: Seiri (membuang barang tak perlu), Seiton (menata letak barang agar mudah diambil), Seisou (membersihkan area lantai kerja pabrik), Seiketsu (menjaga standar bersih), Shitsuke (disiplin mematuhi aturan).',
     officialRef: 'JAIM Manufacturing SSW Textbook §1-1',
   },
   {
@@ -343,6 +344,8 @@ export const PrometricCbtModal: React.FC<PrometricCbtModalProps> = ({
 }) => {
   const { showToast, incrementXp } = useAppStore();
 
+  useBodyScrollLock(isOpen);
+
   const [activeSectorId, setActiveSectorId] = useState<string>(initialSectorId);
   const [examState, setExamState] = useState<'briefing' | 'testing' | 'certificate' | 'review'>('briefing');
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState<number>(0);
@@ -351,6 +354,17 @@ export const PrometricCbtModal: React.FC<PrometricCbtModalProps> = ({
   const [timeRemainingSeconds, setTimeRemainingSeconds] = useState<number>(900); // 15 mins default
   const [showPaletteDrawer, setShowPaletteDrawer] = useState<boolean>(false);
   const [showFuriganaGlossary, setShowFuriganaGlossary] = useState<boolean>(true);
+
+  useEffect(() => {
+    if (!isOpen) return;
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Escape' && (examState === 'briefing' || examState === 'certificate')) {
+        onClose();
+      }
+    };
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [isOpen, examState, onClose]);
 
   // Sync sector when opened with prop
   useEffect(() => {
@@ -529,8 +543,9 @@ export const PrometricCbtModal: React.FC<PrometricCbtModalProps> = ({
             )}
 
             <button
+              type="button"
               onClick={onClose}
-              className="w-8 h-8 rounded-full bg-surface hover:bg-surface-3 text-appText-muted hover:text-appText-bright flex items-center justify-center text-sm transition-colors"
+              className="min-w-[40px] min-h-[40px] w-10 h-10 rounded-2xl bg-surface hover:bg-surface-3 border border-accent/20 text-appText-muted hover:text-appText-bright flex items-center justify-center text-sm transition-colors active:scale-95"
               aria-label="Tutup Simulator"
             >
               ✕
@@ -653,7 +668,7 @@ export const PrometricCbtModal: React.FC<PrometricCbtModalProps> = ({
                 <button
                   type="button"
                   onClick={handleToggleFlag}
-                  className={`px-3 py-1.5 rounded-xl border text-xs font-bold flex items-center gap-1.5 transition-colors active:scale-95 ${
+                  className={`min-h-[40px] px-3.5 py-2 rounded-xl border text-xs font-bold flex items-center gap-1.5 transition-colors active:scale-95 ${
                     flaggedQuestions[currentQuestion.id]
                       ? 'bg-amber-500 text-stone-950 border-amber-500 shadow-sm'
                       : 'bg-surface-2 text-appText-muted hover:text-appText-bright border-accent/20'
@@ -667,7 +682,7 @@ export const PrometricCbtModal: React.FC<PrometricCbtModalProps> = ({
                 <button
                   type="button"
                   onClick={() => setShowPaletteDrawer(!showPaletteDrawer)}
-                  className="px-3 py-1.5 rounded-xl bg-surface-2 hover:bg-surface-3 border border-accent/20 text-xs font-bold text-appText-bright flex items-center gap-1.5"
+                  className="min-h-[40px] px-3.5 py-2 rounded-xl bg-surface-2 hover:bg-surface-3 border border-accent/20 text-xs font-bold text-appText-bright flex items-center gap-1.5 active:scale-95"
                 >
                   <Layers className="w-3.5 h-3.5 text-accent" />
                   <span>Daftar Soal</span>
@@ -738,7 +753,7 @@ export const PrometricCbtModal: React.FC<PrometricCbtModalProps> = ({
                   <button
                     type="button"
                     onClick={() => speakJapanese(currentQuestion.scenarioJp || '')}
-                    className="p-1 rounded hover:bg-surface-2 text-accent"
+                    className="min-w-[40px] min-h-[40px] p-2 rounded-xl bg-surface hover:bg-surface-2 text-accent border border-accent/20 flex items-center justify-center active:scale-95"
                     title="Dengarkan Audio Bahasa Jepang"
                   >
                     <Volume2 className="w-4 h-4" />
@@ -762,7 +777,7 @@ export const PrometricCbtModal: React.FC<PrometricCbtModalProps> = ({
                 <button
                   type="button"
                   onClick={() => speakJapanese(currentQuestion.questionJp)}
-                  className="p-1 rounded hover:bg-surface-3 text-accent"
+                  className="min-w-[40px] min-h-[40px] p-2 rounded-xl bg-surface hover:bg-surface-3 text-accent border border-accent/20 flex items-center justify-center active:scale-95"
                   title="Dengarkan Audio Soal"
                 >
                   <Volume2 className="w-4 h-4" />
@@ -787,7 +802,7 @@ export const PrometricCbtModal: React.FC<PrometricCbtModalProps> = ({
                     key={opt.id}
                     type="button"
                     onClick={() => handleSelectOption(opt.id)}
-                    className={`w-full p-3.5 sm:p-4 rounded-2xl border text-left transition-all min-h-[56px] flex items-start gap-3 active:scale-98 ${
+                    className={`w-full p-3.5 sm:p-4 rounded-2xl border text-left transition-all min-h-[56px] flex items-start gap-3 active:scale-95 ${
                       isSelected
                         ? 'bg-amber-500/20 border-amber-500 text-appText-bright ring-2 ring-amber-500 font-bold shadow-md'
                         : 'bg-surface hover:bg-surface-3 border-accent/20 text-appText'
@@ -821,7 +836,7 @@ export const PrometricCbtModal: React.FC<PrometricCbtModalProps> = ({
                 type="button"
                 onClick={() => setCurrentQuestionIndex((prev) => Math.max(0, prev - 1))}
                 disabled={currentQuestionIndex === 0}
-                className="px-4 py-2.5 rounded-xl bg-surface hover:bg-surface-3 disabled:opacity-40 disabled:pointer-events-none text-appText font-bold text-xs flex items-center gap-1.5 transition-colors"
+                className="min-h-[40px] px-4 py-2.5 rounded-xl bg-surface hover:bg-surface-3 disabled:opacity-40 disabled:pointer-events-none text-appText font-bold text-xs flex items-center gap-1.5 transition-colors active:scale-95"
               >
                 <ChevronLeft className="w-4 h-4" />
                 <span>Sebelumnya (前へ)</span>
@@ -831,7 +846,7 @@ export const PrometricCbtModal: React.FC<PrometricCbtModalProps> = ({
                 <button
                   type="button"
                   onClick={() => setCurrentQuestionIndex((prev) => prev + 1)}
-                  className="px-5 py-2.5 rounded-xl bg-amber-500 hover:bg-amber-400 text-stone-950 font-black text-xs flex items-center gap-1.5 transition-all shadow-sm"
+                  className="min-h-[40px] px-5 py-2.5 rounded-xl bg-amber-500 hover:bg-amber-400 text-stone-950 font-black text-xs flex items-center gap-1.5 transition-all shadow-sm active:scale-95"
                 >
                   <span>Selanjutnya (次へ)</span>
                   <ChevronRight className="w-4 h-4" />
@@ -840,7 +855,7 @@ export const PrometricCbtModal: React.FC<PrometricCbtModalProps> = ({
                 <button
                   type="button"
                   onClick={handleSubmitExam}
-                  className="px-6 py-2.5 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-stone-950 font-black text-xs flex items-center gap-1.5 transition-all shadow-md animate-pulse"
+                  className="min-h-[40px] px-6 py-2.5 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-stone-950 font-black text-xs flex items-center gap-1.5 transition-all shadow-md animate-pulse active:scale-95"
                 >
                   <span>Selesaikan & Kumpulkan Ujian (終了)</span>
                 </button>

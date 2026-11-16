@@ -459,7 +459,7 @@ export const OnboardingModal: React.FC<OnboardingModalProps> = ({ isOpen, onClos
                       { id: 'ssw-kaigo', name: 'SSW Kaigo (Perawat Lansia)', icon: '🏥' },
                       { id: 'ssw-food-service', name: 'SSW Food Service (Restoran)', icon: '🍳' },
                       { id: 'ssw-food-mfg', name: 'SSW Pengolahan Makanan', icon: '🍱' },
-                      { id: 'ssw-kensetsu', name: 'SSW Konstruksi Gemba', icon: '🏗️' },
+                      { id: 'ssw-kensetsu', name: 'SSW Konstruksi (Kensetsu)', icon: '🏗️' },
                       { id: 'ssw-agriculture', name: 'SSW Pertanian', icon: '🌾' },
                       { id: 'ssw-manufacturing', name: 'SSW Manufaktur Pabrik', icon: '⚙️' },
                       { id: 'minna-1', name: 'Minna no Nihongo I (Bab 1–25)', icon: '📖' },
@@ -653,14 +653,14 @@ export const OnboardingModal: React.FC<OnboardingModalProps> = ({ isOpen, onClos
                     }`}
                   >
                     {tier.popular && (
-                      <span className="absolute -top-2 left-1/2 -translate-x-1/2 text-[10px] font-black uppercase px-2 py-0.5 rounded-full bg-accent text-bg shadow-sm">
+                      <span className="absolute -top-2 left-1/2 -translate-x-1/2 text-xs font-black uppercase px-2 py-0.5 rounded-full bg-accent text-bg shadow-sm">
                         Rekomendasi
                       </span>
                     )}
                     <span className="text-lg">{tier.icon}</span>
                     <span className="text-xs font-bold leading-tight">{tier.label}</span>
                     <span className="text-xs font-mono font-bold text-accent">{tier.xp} XP</span>
-                    <span className="text-[10px] text-appText-muted">{tier.time}</span>
+                    <span className="text-xs text-appText-muted">{tier.time}</span>
                   </button>
                 ))}
               </div>
@@ -683,7 +683,7 @@ export const OnboardingModal: React.FC<OnboardingModalProps> = ({ isOpen, onClos
                   >
                     <div>
                       <div className="text-xs font-bold">Furigana (Kana)</div>
-                      <div className="text-[10px] text-appText-muted">Bacaan di atas kanji</div>
+                      <div className="text-xs text-appText-muted">Bacaan di atas kanji</div>
                     </div>
                     {chosenFurigana && <Check className="w-4 h-4 text-accent" />}
                   </button>
@@ -699,7 +699,7 @@ export const OnboardingModal: React.FC<OnboardingModalProps> = ({ isOpen, onClos
                   >
                     <div>
                       <div className="text-xs font-bold">Romaji (Alfabet)</div>
-                      <div className="text-[10px] text-appText-muted">Ejaan huruf latin</div>
+                      <div className="text-xs text-appText-muted">Ejaan huruf latin</div>
                     </div>
                     {chosenRomaji && <Check className="w-4 h-4 text-accent" />}
                   </button>

@@ -28,7 +28,8 @@ class SenseiMemoryService {
     try {
       const stored = window.localStorage.getItem(SenseiMemoryService.STORAGE_KEY);
       if (stored) {
-        this.memories = JSON.parse(stored);
+        const parsed = JSON.parse(stored);
+        this.memories = Array.isArray(parsed) ? parsed : [];
       }
     } catch {
       this.memories = [];
@@ -36,6 +37,9 @@ class SenseiMemoryService {
   }
 
   private persist(): void {
+    if (this.memories.length > 50) {
+      this.memories = this.memories.slice(-50);
+    }
     if (typeof window === 'undefined' || !window.localStorage) return;
     try {
       window.localStorage.setItem(SenseiMemoryService.STORAGE_KEY, JSON.stringify(this.memories));
@@ -44,18 +48,23 @@ class SenseiMemoryService {
     }
   }
 
-  public addMemory(category: MemoryCategory, content: string, metadata?: Record<string, any>): SenseiMemoryItem {
+  public addMemory(category: MemoryCategory, content: string, metadata?: Record<string, any>): SenseiMemoryItem | null {
+    if (!content || typeof content !== 'string' || !content.trim()) {
+      return null;
+    }
+
+    const cleanContent = content.trim();
     const item: SenseiMemoryItem = {
       id: `mem-${Date.now()}-${Math.random().toString(36).substring(2, 7)}`,
       category,
-      content: content.trim(),
+      content: cleanContent,
       relevanceScore: 1.0,
       createdAt: Date.now(),
       metadata,
     };
 
     // Prevent duplicate exact memory content
-    const existingIdx = this.memories.findIndex(m => m.content.toLowerCase() === item.content.toLowerCase());
+    const existingIdx = this.memories.findIndex(m => m.content.toLowerCase() === cleanContent.toLowerCase());
     if (existingIdx !== -1) {
       this.memories[existingIdx].relevanceScore = Math.min(1.0, this.memories[existingIdx].relevanceScore + 0.1);
       this.memories[existingIdx].createdAt = Date.now();
@@ -64,18 +73,34 @@ class SenseiMemoryService {
     }
 
     this.memories.push(item);
+    if (this.memories.length > 50) {
+      this.memories = this.memories.slice(-50);
+    }
     this.persist();
     return item;
   }
 
+  public removeMemory(id: string): boolean {
+    const prevLen = this.memories.length;
+    this.memories = this.memories.filter(m => m.id !== id);
+    if (this.memories.length !== prevLen) {
+      this.persist();
+      return true;
+    }
+    return false;
+  }
+
   public getMemories(category?: MemoryCategory): SenseiMemoryItem[] {
+    if (!Array.isArray(this.memories)) this.memories = [];
     if (!category) return [...this.memories];
     return this.memories.filter(m => m.category === category);
   }
 
-  public retrieveRelevantMemories(query: string, limit = 5): SenseiMemoryItem[] {
-    if (!query.trim()) {
-      return this.memories.slice(-limit);
+  public retrieveRelevantMemories(query?: string, limit = 5): SenseiMemoryItem[] {
+    if (!Array.isArray(this.memories)) this.memories = [];
+    const safeLimit = Math.max(1, typeof limit === 'number' && !Number.isNaN(limit) ? limit : 5);
+    if (!query || typeof query !== 'string' || !query.trim()) {
+      return this.memories.slice(-safeLimit);
     }
 
     const qWords = query.toLowerCase().split(/\s+/).filter(Boolean);
@@ -93,14 +118,14 @@ class SenseiMemoryService {
     });
 
     scored.sort((a, b) => b.score - a.score);
-    return scored.slice(0, limit).map(s => s.item);
+    return scored.slice(0, safeLimit).map(s => s.item);
   }
 
   /**
    * Formats retrieved memories into a structured markdown block for Sensei's system prompt.
    */
   public formatMemoriesForPrompt(): string {
-    if (this.memories.length === 0) return '';
+    if (!Array.isArray(this.memories) || this.memories.length === 0) return '';
 
     const lines: string[] = ['### Memori Pembelajar (Personalized Memory Context):'];
     this.memories.slice(-6).forEach(m => {

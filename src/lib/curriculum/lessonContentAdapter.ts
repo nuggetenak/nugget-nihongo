@@ -303,11 +303,11 @@ export function getAdaptiveLessonContent(
         : `Pada pelajaran ini, kita mempelajari bagaimana berinteraksi seputar tema ${unit?.theme || lesson.title_id} dalam suasana kehidupan dan kerja di Jepang.`,
       dailyMission: lesson.can_do_statement || 'Mampu menerapkan pola kalimat ini dalam percakapan sehari-hari secara wajar.',
       whyOrder: isSSW
-        ? `Mengapa materi kerja ini krusial? Penguasaan pola ${primaryG?.pattern || 'komunikasi gemba'} menjamin koordinasi kerja aman, memangkas risiko celaka (zero saigai), dan memenuhi standar Prometric SSW.`
+        ? `Mengapa materi kerja ini krusial? Penguasaan pola ${primaryG?.pattern || 'komunikasi tempat kerja'} menjamin koordinasi kerja aman, memangkas risiko celaka (zero saigai), dan memenuhi standar Prometric SSW.`
         : `Mengapa pola ini dipelajari pada tahap ini? Karena menguasai struktur ${primaryG?.pattern || 'dasar'} ini memberi fondasi kuat agar kamu bisa berkomunikasi tanpa takut salah susun kata.`,
     },
     cultural_notes: {
-      title: isK3 ? 'Disiplin K3 & Standar Keselamatan Kerja Jepang' : isSSW ? 'Etika Gemba & Komunikasi Kerja Jepang' : 'Kiat Budaya & Etika Berkomunikasi',
+      title: isK3 ? 'Disiplin K3 & Standar Keselamatan Kerja Jepang' : isSSW ? 'Etika Tempat Kerja & Komunikasi Profesional' : 'Kiat Budaya & Etika Berkomunikasi',
       etiquette: isK3
         ? 'Disiplin K3: Wajib lakukan tunjuk-sebut (指差呼称 - Shisa Kanko) dengan seruan "Yoshi!" untuk setiap pengecekan. Konfirmasi 2 arah dan kepatuhan APD mutlak.'
         : isSSW
@@ -316,7 +316,7 @@ export function getAdaptiveLessonContent(
       taboos: isK3
         ? 'Pantangan K3: Dilarang mengenakan sarung tangan kain di dekat poros berputar (軍手禁止), dilarang melewati batas pelindung tanpa izin, dan dilarang menyembunyikan insiden nyaris celaka (ヒヤリ・ハット).'
         : isSSW
-        ? 'Pantangan gemba: Dilarang mengubah urutan SOP kerja tanpa persetujuan supervisor, dan jangan pernah berasumsi (思い込み) saat ragu.'
+        ? 'Pantangan di tempat kerja: Dilarang mengubah urutan SOP kerja tanpa persetujuan penyelia, dan jangan pernah berasumsi (思い込み) saat ragu.'
         : 'Hindari berbicara terlalu tergesa-gesa atau menggunakan ragam kasual kepada orang yang lebih senior.',
     },
     pronunciation_tips: {
@@ -357,7 +357,7 @@ export function getAdaptiveLessonContent(
       when_not_to_use: 'Perhatikan derajat kesantunan dan hindari mencampuradukkan bentuk kasual dengan formal.',
     },
     scenario: {
-      title: isSSW ? `Simulasi Gemba: ${unit?.theme || lesson.title_id}` : `Skenario Praktis: ${unit?.theme || lesson.title_id}`,
+      title: isSSW ? `Simulasi Kerja Nyata: ${unit?.theme || lesson.title_id}` : `Skenario Praktis: ${unit?.theme || lesson.title_id}`,
       setting: isSSW ? `Lingkungan Kerja SSW (${seniorRole})` : 'Aktivitas Kerja / Kehidupan di Jepang',
       narrative: isSSW
         ? `Koordinasi operasional antara ${seniorName} (${seniorRole}) dan ${learnerName} mengenai ${lesson.title_id}.`
@@ -438,7 +438,7 @@ export function getAdaptiveLessonContent(
           jp: `よし！異常【いじょう】が あれば、すぐに 報連相【ほうれんそう】してください。`,
           romaji: 'Yoshi! Ijou ga areba, sugu ni Hou-Ren-Sou shite kudasai.',
           idText: 'Bagus! Jika ada hal aneh atau potensi bahaya, segera laporkan (Hou-Ren-Sou).',
-          note: 'Memberi instruksi keselamatan gemba',
+          note: 'Memberi instruksi keselamatan kerja',
         },
         {
           id: 'd4',
@@ -476,9 +476,15 @@ export function getAdaptiveLessonContent(
           speaker: seniorName,
           speakerRole: seniorRole,
           avatar: seniorAvatar,
-          jp: `はい。現場【げんば】では この「${primaryG?.pattern || '表現'}」の 連絡【れんらく】が とても 大切【たいせつ】ですよ。`,
-          romaji: 'Hai. Gemba de wa kono hyougen no renraku ga totemo taisetsu desu yo.',
-          idText: 'Ya. Di tempat kerja nyata, komunikasi pola ini sangat penting agar tidak terjadi salah paham.',
+          jp: isSSW
+            ? `はい。現場【げんば】や職場【しょくば】では この「${primaryG?.pattern || '表現'}」の 連絡【れんらく】が とても 大切【たいせつ】ですよ。`
+            : `はい。職場【しょくば】や日常【にちじょう】の会話【かいわ】では この「${primaryG?.pattern || '表現'}」が とても 大切【たいせつ】ですよ。`,
+          romaji: isSSW
+            ? 'Hai. Gemba ya shokuba de wa kono hyougen no renraku ga totemo taisetsu desu yo.'
+            : 'Hai. Shokuba ya nichijou no kaiwa de wa kono hyougen ga totemo taisetsu desu yo.',
+          idText: isSSW
+            ? 'Ya. Di lingkungan kerja nyata, komunikasi pola ini sangat penting agar operasional aman.'
+            : 'Ya. Di lingkungan kerja maupun percakapan sehari-hari, ungkapan ini sangat penting.',
         },
         {
           id: 'd4',

@@ -7,7 +7,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Headphones, Play, Pause, RotateCcw, Volume2, Lock, Unlock, AlertCircle } from 'lucide-react';
 import { ChoukaiPayload, ScaffoldingMode } from '../../types/exercise';
-import { speakJapanese } from '../../lib/audio/tts';
+import { speakJapanese, stopJapaneseSpeech } from '../../lib/audio/tts';
 
 interface ChoukaiPlayerProps {
   choukai: ChoukaiPayload;
@@ -41,6 +41,7 @@ export const ChoukaiPlayer: React.FC<ChoukaiPlayerProps> = ({
       if (audioRef.current) {
         audioRef.current.pause();
       }
+      stopJapaneseSpeech();
       if (intervalRef.current) {
         clearInterval(intervalRef.current);
       }
@@ -52,6 +53,7 @@ export const ChoukaiPlayer: React.FC<ChoukaiPlayerProps> = ({
       if (audioRef.current) {
         audioRef.current.pause();
       }
+      stopJapaneseSpeech();
       setIsPlaying(false);
       if (intervalRef.current) clearInterval(intervalRef.current);
       return;
@@ -90,9 +92,22 @@ export const ChoukaiPlayer: React.FC<ChoukaiPlayerProps> = ({
 
   const fallbackTts = () => {
     setIsPlaying(true);
-    speakJapanese(choukai.transcriptText);
 
-    // Simulate progress animation for TTS duration estimate (~50ms per character)
+    const finishTts = () => {
+      setIsPlaying(false);
+      setPlaybackProgress(0);
+      if (intervalRef.current) {
+        clearInterval(intervalRef.current);
+        intervalRef.current = null;
+      }
+    };
+
+    speakJapanese(choukai.transcriptText, {
+      onEnd: finishTts,
+      onError: finishTts,
+    });
+
+    // Simulate progress animation for TTS duration estimate (~90ms per character)
     const durationMs = Math.max(3000, choukai.transcriptText.length * 90);
     const stepMs = 100;
     let elapsed = 0;
@@ -104,9 +119,7 @@ export const ChoukaiPlayer: React.FC<ChoukaiPlayerProps> = ({
       setPlaybackProgress(progress);
 
       if (elapsed >= durationMs) {
-        setIsPlaying(false);
-        setPlaybackProgress(0);
-        if (intervalRef.current) clearInterval(intervalRef.current);
+        finishTts();
       }
     }, stepMs);
   };

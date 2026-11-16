@@ -142,7 +142,7 @@ export const CommunityHubModal: React.FC<CommunityHubModalProps> = ({ isOpen, on
 
   const handleShareChallenge = async () => {
     const text = `🎌 Tantangan Kanji Hari Ini di Nugget Nihongo: "${todayChallenge.char}" (${todayChallenge.meaning})! Ayo gabung belajar bahasa Jepang gratis: https://x.com/NuggetNihongo #NuggetNihongo`;
-    if (navigator.share) {
+    if (typeof navigator !== 'undefined' && navigator.share) {
       try {
         await navigator.share({
           title: 'Tantangan Kanji Nugget Nihongo',
@@ -150,13 +150,19 @@ export const CommunityHubModal: React.FC<CommunityHubModalProps> = ({ isOpen, on
           url: 'https://x.com/NuggetNihongo',
         });
         return;
-      } catch {}
+      } catch (err: unknown) {
+        if (err && typeof err === 'object' && 'name' in err && (err as { name: string }).name === 'AbortError') {
+          return;
+        }
+      }
     }
 
     try {
-      await navigator.clipboard.writeText(text);
-      setCopiedShare(true);
-      setTimeout(() => setCopiedShare(false), 2500);
+      if (typeof navigator !== 'undefined' && navigator.clipboard && navigator.clipboard.writeText) {
+        await navigator.clipboard.writeText(text);
+        setCopiedShare(true);
+        setTimeout(() => setCopiedShare(false), 2500);
+      }
     } catch {}
   };
 
@@ -165,10 +171,12 @@ export const CommunityHubModal: React.FC<CommunityHubModalProps> = ({ isOpen, on
       role="dialog"
       aria-modal="true"
       aria-labelledby="community-modal-title"
+      onClick={onClose}
       className="fixed inset-0 z-50 flex items-end sm:items-center justify-center p-0 sm:p-4 bg-stone-950/80 backdrop-blur-sm animate-in fade-in duration-200"
     >
       <div
         ref={containerRef}
+        onClick={(e) => e.stopPropagation()}
         className="card-interactive-lift bg-surface border border-accent/25 rounded-t-3xl sm:rounded-2xl max-w-lg w-full max-h-[90dvh] sm:max-h-[92vh] flex flex-col shadow-2xl overflow-hidden"
       >
         {/* Mobile Drag Indicator */}
@@ -191,7 +199,7 @@ export const CommunityHubModal: React.FC<CommunityHubModalProps> = ({ isOpen, on
                 className="text-base font-extrabold text-appText-bright tracking-tight flex items-center gap-1.5"
               >
                 Study Lounge & Kanal Resmi
-                <span className="px-2 py-0.5 rounded-full text-[10px] font-bold bg-amber-500/20 text-amber-700 dark:text-amber-300 border border-amber-500/30">
+                <span className="px-2 py-0.5 rounded-full text-xs font-bold bg-amber-500/20 text-amber-700 dark:text-amber-300 border border-amber-500/30">
                   Resmi
                 </span>
               </h2>
@@ -215,7 +223,7 @@ export const CommunityHubModal: React.FC<CommunityHubModalProps> = ({ isOpen, on
           {/* Daily Kanji Challenge Card (System-generated daily pick for learners to share) */}
           <div className="relative overflow-hidden p-4 rounded-2xl bg-gradient-to-br from-amber-500/15 via-surface-2 to-amber-500/5 border border-amber-500/30 shadow-xs space-y-3">
             <div className="flex items-center justify-between">
-              <span className="text-[11px] font-extrabold uppercase tracking-wider text-amber-800 dark:text-amber-400 flex items-center gap-1.5">
+              <span className="text-xs font-extrabold uppercase tracking-wider text-amber-800 dark:text-amber-400 flex items-center gap-1.5">
                 <Flame className="w-3.5 h-3.5 text-amber-500" />
                 Tantangan Kanji Harian ({todayChallenge.day})
               </span>
@@ -261,7 +269,7 @@ export const CommunityHubModal: React.FC<CommunityHubModalProps> = ({ isOpen, on
                 <MessageSquare className="w-3.5 h-3.5 text-accent" />
                 Kanal Resmi Media Sosial
               </h3>
-              <span className="text-[10px] text-appText-muted font-medium">
+              <span className="text-xs text-appText-muted font-medium">
                 Terkonfirmasi Aktif & Persiapan
               </span>
             </div>
@@ -283,7 +291,7 @@ export const CommunityHubModal: React.FC<CommunityHubModalProps> = ({ isOpen, on
                       X (Twitter)
                       <span className="w-1.5 h-1.5 rounded-full bg-emerald-500" title="Aktif" />
                     </div>
-                    <div className="text-[11px] text-appText-muted truncate">@NuggetNihongo</div>
+                    <div className="text-xs text-appText-muted truncate">@NuggetNihongo</div>
                   </div>
                 </div>
                 <ExternalLink className="w-3.5 h-3.5 text-appText-muted group-hover:text-accent shrink-0 ml-2" />
@@ -305,7 +313,7 @@ export const CommunityHubModal: React.FC<CommunityHubModalProps> = ({ isOpen, on
                       Trakteer Sensei
                       <span className="w-1.5 h-1.5 rounded-full bg-emerald-500" title="Aktif" />
                     </div>
-                    <div className="text-[11px] text-appText-muted truncate">Traktir Kopi & Dukung Server</div>
+                    <div className="text-xs text-appText-muted truncate">Traktir Kopi & Dukung Server</div>
                   </div>
                 </div>
                 <ExternalLink className="w-3.5 h-3.5 text-appText-muted group-hover:text-red-500 shrink-0 ml-2" />
@@ -322,11 +330,11 @@ export const CommunityHubModal: React.FC<CommunityHubModalProps> = ({ isOpen, on
                   <div className="min-w-0">
                     <div className="text-xs font-bold text-appText-bright truncate flex items-center gap-1.5">
                       Instagram
-                      <span className="text-[9px] font-bold px-1.5 py-0.2 rounded bg-amber-500/15 text-amber-600 dark:text-amber-400 border border-amber-500/25">
+                      <span className="text-xs font-bold px-1.5 py-0.5 rounded bg-amber-500/15 text-amber-600 dark:text-amber-400 border border-amber-500/25">
                         Segera Hadir
                       </span>
                     </div>
-                    <div className="text-[11px] text-appText-muted truncate">@nugget.nihongo (Persiapan)</div>
+                    <div className="text-xs text-appText-muted truncate">@nugget.nihongo (Persiapan)</div>
                   </div>
                 </div>
               </div>
@@ -342,11 +350,11 @@ export const CommunityHubModal: React.FC<CommunityHubModalProps> = ({ isOpen, on
                   <div className="min-w-0">
                     <div className="text-xs font-bold text-appText-bright truncate flex items-center gap-1.5">
                       Threads
-                      <span className="text-[9px] font-bold px-1.5 py-0.2 rounded bg-amber-500/15 text-amber-600 dark:text-amber-400 border border-amber-500/25">
+                      <span className="text-xs font-bold px-1.5 py-0.5 rounded bg-amber-500/15 text-amber-600 dark:text-amber-400 border border-amber-500/25">
                         Segera Hadir
                       </span>
                     </div>
-                    <div className="text-[11px] text-appText-muted truncate">@nugget.nihongo (Persiapan)</div>
+                    <div className="text-xs text-appText-muted truncate">@nugget.nihongo (Persiapan)</div>
                   </div>
                 </div>
               </div>
@@ -362,11 +370,11 @@ export const CommunityHubModal: React.FC<CommunityHubModalProps> = ({ isOpen, on
                   <div className="min-w-0">
                     <div className="text-xs font-bold text-appText-bright truncate flex items-center gap-1.5">
                       Discord Lounge
-                      <span className="text-[9px] font-bold px-1.5 py-0.2 rounded bg-amber-500/15 text-amber-600 dark:text-amber-400 border border-amber-500/25">
+                      <span className="text-xs font-bold px-1.5 py-0.5 rounded bg-amber-500/15 text-amber-600 dark:text-amber-400 border border-amber-500/25">
                         Segera Hadir
                       </span>
                     </div>
-                    <div className="text-[11px] text-appText-muted truncate">Voice & Tanya Soal (Persiapan)</div>
+                    <div className="text-xs text-appText-muted truncate">Voice & Tanya Soal (Persiapan)</div>
                   </div>
                 </div>
               </div>
@@ -385,7 +393,7 @@ export const CommunityHubModal: React.FC<CommunityHubModalProps> = ({ isOpen, on
                       Email Support
                       <span className="w-1.5 h-1.5 rounded-full bg-emerald-500" title="Aktif" />
                     </div>
-                    <div className="text-[11px] text-appText-muted truncate">nuggetnihongo@gmail.com</div>
+                    <div className="text-xs text-appText-muted truncate">nuggetnihongo@gmail.com</div>
                   </div>
                 </div>
                 <ExternalLink className="w-3.5 h-3.5 text-appText-muted group-hover:text-accent shrink-0 ml-2" />
@@ -415,7 +423,7 @@ export const CommunityHubModal: React.FC<CommunityHubModalProps> = ({ isOpen, on
                         <span className="text-xs font-extrabold text-appText-bright truncate">
                           {item.meaning}
                         </span>
-                        <span className="text-[10px] text-appText-muted shrink-0">
+                        <span className="text-xs text-appText-muted shrink-0">
                           oleh {item.author}
                         </span>
                       </div>
@@ -436,7 +444,7 @@ export const CommunityHubModal: React.FC<CommunityHubModalProps> = ({ isOpen, on
                       <Heart
                         className={`w-3.5 h-3.5 ${isUpvoted ? 'fill-current text-rose-500' : ''}`}
                       />
-                      <span className="text-[10px] mt-0.5">{isUpvoted ? 'Tersimpan' : 'Simpan'}</span>
+                      <span className="text-xs mt-0.5">{isUpvoted ? 'Tersimpan' : 'Simpan'}</span>
                     </button>
                   </div>
                 );
@@ -450,7 +458,7 @@ export const CommunityHubModal: React.FC<CommunityHubModalProps> = ({ isOpen, on
               <Mail className="w-4 h-4 text-accent shrink-0" />
               <div className="min-w-0">
                 <div className="text-xs font-bold text-appText-bright">Hubungi Kami via Email</div>
-                <div className="text-[11px] text-appText-muted truncate">nuggetnihongo@gmail.com</div>
+                <div className="text-xs text-appText-muted truncate">nuggetnihongo@gmail.com</div>
               </div>
             </div>
             <a

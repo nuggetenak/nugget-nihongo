@@ -5,6 +5,7 @@
 
 import React, { useState, useEffect, useRef } from 'react';
 import { useBodyScrollLock } from '../../hooks/useBodyScrollLock';
+import { useFocusTrap } from '../../hooks/useFocusTrap';
 import {
   X,
   Send,
@@ -42,6 +43,7 @@ export const ContextualSenseiSheet: React.FC = () => {
 
   const messagesEndRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLTextAreaElement>(null);
+  const sheetTrapRef = useFocusTrap<HTMLDivElement>(isSenseiSheetOpen, closeSenseiSheet);
 
   // Lock body scroll while Sensei sheet is active
   useBodyScrollLock(isSenseiSheetOpen);
@@ -149,11 +151,21 @@ export const ContextualSenseiSheet: React.FC = () => {
 
   const handleGoToQuiz = () => {
     closeSenseiSheet();
+    const currentStudyContext = useAppStore.getState().activeLessonContext;
+    if (currentStudyContext) {
+      // In study mode, keep user in the current lesson and switch to stage 3 Cek Pemahaman
+      const drillTabBtn = document.getElementById('stage-tab-drills');
+      if (drillTabBtn) {
+        drillTabBtn.click();
+        showToast('Beralih ke Cek Pemahaman Pelajaran Aktif 🎯', '📝');
+        return;
+      }
+    }
     if (senseiSheetContext.level) {
       setSelectedLevel(senseiSheetContext.level as any);
     }
     setActiveTab('quiz');
-    showToast(`Membuka kuis latihan level ${senseiSheetContext.level.toUpperCase()}`, '🎯');
+    showToast(`Membuka kuis latihan level ${senseiSheetContext.level ? senseiSheetContext.level.toUpperCase() : ''}`, '🎯');
   };
 
   return (
@@ -163,6 +175,10 @@ export const ContextualSenseiSheet: React.FC = () => {
     >
       {/* Container Bottom Sheet on Mobile, Centered Modal on Tablet/Desktop */}
       <div
+        ref={sheetTrapRef}
+        role="dialog"
+        aria-modal="true"
+        aria-label={`Tanya Sensei: ${senseiSheetContext.target}`}
         className="w-full max-w-xl bg-surface border border-accent/25 rounded-t-3xl sm:rounded-3xl shadow-2xl flex flex-col max-h-[88dvh] sm:max-h-[85vh] overflow-hidden animate-in slide-in-from-bottom duration-300"
         onClick={(e) => e.stopPropagation()}
       >
@@ -293,7 +309,7 @@ export const ContextualSenseiSheet: React.FC = () => {
         </div>
 
         {/* ── Input Box & CTAs ── */}
-        <div className="p-3 sm:p-4 bg-surface border-t border-accent/15 space-y-2.5 shrink-0">
+        <div className="p-3 sm:p-4 pb-[calc(1rem+env(safe-area-inset-bottom))] sm:pb-4 bg-surface border-t border-accent/15 space-y-2.5 shrink-0">
           <div className="flex items-center gap-2">
             <textarea
               ref={inputRef}

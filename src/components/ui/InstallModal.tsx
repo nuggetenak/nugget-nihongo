@@ -2,6 +2,7 @@ import React from 'react';
 import { usePwaStore } from '../../lib/pwa/pwaStore';
 import { Download, Share, PlusSquare, CheckCircle2, X, Smartphone, Zap, WifiOff } from 'lucide-react';
 import { useBodyScrollLock } from '../../hooks/useBodyScrollLock';
+import { useFocusTrap } from '../../hooks/useFocusTrap';
 import { IrasutoyaImage } from '../common/IrasutoyaImage';
 
 interface InstallModalProps {
@@ -20,8 +21,6 @@ export const InstallModal: React.FC<InstallModalProps> = ({ isOpen, onClose }) =
   } = usePwaStore();
 
   const modalOpen = isOpen !== undefined ? isOpen : showInstallModal;
-  useBodyScrollLock(modalOpen);
-
   const handleClose = () => {
     if (onClose) {
       onClose();
@@ -29,6 +28,9 @@ export const InstallModal: React.FC<InstallModalProps> = ({ isOpen, onClose }) =
       setShowInstallModal(false);
     }
   };
+
+  useBodyScrollLock(modalOpen);
+  const trapRef = useFocusTrap<HTMLDivElement>(modalOpen, handleClose);
 
   if (!modalOpen) return null;
 
@@ -40,8 +42,15 @@ export const InstallModal: React.FC<InstallModalProps> = ({ isOpen, onClose }) =
   };
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm animate-fade-in">
+    <div
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="install-modal-title"
+      onClick={handleClose}
+      className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm animate-fade-in"
+    >
       <div
+        ref={trapRef}
         className="w-full max-w-md max-h-[90vh] overflow-y-auto bg-surface border border-accent/25 rounded-3xl shadow-2xl p-6 relative text-left scrollbar-none"
         onClick={(e) => e.stopPropagation()}
       >

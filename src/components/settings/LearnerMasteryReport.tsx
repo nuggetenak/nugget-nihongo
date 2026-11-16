@@ -77,7 +77,7 @@ export const LearnerMasteryReport: React.FC<LearnerMasteryReportProps> = ({
       {
         level: 'n2',
         title: 'N2 Praktisi Mahir',
-        subtitle: 'Bisnis Gemba, Berita Resmi & Struktur Majemuk',
+        subtitle: 'Komunikasi Bisnis, Berita Resmi & Struktur Majemuk',
         totalLessons: 60,
         colorClass: 'text-indigo-500',
         badgeBg: 'bg-indigo-500/15 text-indigo-800 dark:text-indigo-400 border-indigo-500/30 font-bold',
@@ -92,10 +92,11 @@ export const LearnerMasteryReport: React.FC<LearnerMasteryReportProps> = ({
       },
     ];
 
+    const safeTrackProgress = trackProgress && typeof trackProgress === 'object' ? trackProgress : ({} as Record<TrackId, TrackProgressState>);
     return levelsMeta.map((m) => {
-      const progress = trackProgress[m.level as TrackId];
+      const progress = safeTrackProgress[m.level as TrackId];
       const completedCount = progress?.completedLessons?.length || 0;
-      const pct = Math.min(100, Math.round((completedCount / m.totalLessons) * 100));
+      const pct = Math.min(100, Math.max(0, Math.round((completedCount / m.totalLessons) * 100)));
       return {
         ...m,
         completedLessons: completedCount,
@@ -116,21 +117,24 @@ export const LearnerMasteryReport: React.FC<LearnerMasteryReportProps> = ({
     retentionBadge,
     cardCountWithStability,
   } = useMemo(() => {
-    const cardValues = Object.values(cards);
+    const safeCards = cards && typeof cards === 'object' ? cards : {};
+    const cardValues = Object.values(safeCards);
     let totalR = 0;
     let cardCountWithStability = 0;
     let kanjiCount = 0;
     let grammarCount = 0;
     let sswCount = 0;
 
+    const safeTrackProgress = trackProgress && typeof trackProgress === 'object' ? trackProgress : ({} as Record<TrackId, TrackProgressState>);
     // Scan completed lessons across SSW tracks in trackProgress
-    Object.entries(trackProgress).forEach(([trackKey, state]) => {
+    Object.entries(safeTrackProgress).forEach(([trackKey, state]) => {
       if (trackKey.startsWith('ssw-') && state?.completedLessons) {
         sswCount += state.completedLessons.length * 6; // ~6 vocab items per vocational lesson
       }
     });
 
     cardValues.forEach((item) => {
+      if (!item) return;
       const card = item.card;
       if (card && card.stability > 0) {
         const r = fsrsForgettingCurve(card.elapsed_days || 0, card.stability);
@@ -149,9 +153,10 @@ export const LearnerMasteryReport: React.FC<LearnerMasteryReportProps> = ({
     });
 
     const hasData = cardCountWithStability > 0;
-    const retention = hasData
+    const rawRetention = hasData
       ? Math.round((totalR / cardCountWithStability) * 100)
       : 0;
+    const retention = Math.min(100, Math.max(0, Number.isFinite(rawRetention) ? rawRetention : 0));
 
     let status = 'Prima (Sangat Kuat)';
     let badgeClass = 'bg-emerald-500/15 text-emerald-700 dark:text-emerald-400 border-emerald-500/30 font-bold';
@@ -166,9 +171,11 @@ export const LearnerMasteryReport: React.FC<LearnerMasteryReportProps> = ({
       badgeClass = 'bg-amber-500/15 text-amber-800 dark:text-amber-400 border-amber-500/30 font-bold';
     }
 
+    const safeBloomedCount = Math.max(0, typeof bloomedKanjiCount === 'number' && !Number.isNaN(bloomedKanjiCount) ? bloomedKanjiCount : 0);
+
     return {
       totalCards: cardValues.length,
-      kanjiCardsCount: kanjiCount + bloomedKanjiCount,
+      kanjiCardsCount: kanjiCount + safeBloomedCount,
       grammarCardsCount: grammarCount,
       sswVocabCount: sswCount,
       avgRetentionRate: retention,

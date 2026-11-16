@@ -5,10 +5,10 @@
 //  schemas during state rehydration; auto-quarantines damaged keys.
 // ══════════════════════════════════════════════════════════════════
 
-import { FSRSCard } from '../../types/fsrs';
-import { JLPTLevel } from '../../types/vocab';
-import { diagnostics } from '../diagnostics/diagnostics';
-import { APP_VERSION } from '../../config/version';
+import type { FSRSCard } from '../../types/fsrs.ts';
+import type { JLPTLevel } from '../../types/vocab.ts';
+import { diagnostics } from '../diagnostics/diagnostics.ts';
+import { APP_VERSION } from '../../config/version.ts';
 
 export interface CorruptedEntryRecord {
   originalKey: string;
@@ -46,6 +46,9 @@ export const PROTECTED_STORAGE_KEYS = new Set([
   'nn_garden_drops',
   'nn_garden_last_refill',
   'nn_gamification_state',
+  'nn_kanji_mastery',
+  'nn_dirty_mutations',
+  'nugget_sensei_mem0_memory_v1',
   'nn_sound_effects',
   'nn_furigana',
   'nn_theme',

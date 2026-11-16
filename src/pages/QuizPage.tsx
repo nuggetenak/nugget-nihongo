@@ -3,7 +3,7 @@
 //  Lobby Dashboard (Hub) → Focused Interactive Drill Arena
 // ══════════════════════════════════════════════════════════════════
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import { Layers, RotateCcw, Volume2, Sparkles, Check, ArrowRight, CornerDownLeft, ChevronLeft, Flag, CheckCircle2, XCircle, Flame, HelpCircle } from 'lucide-react';
 import { useAppStore } from '../store/useAppStore';
 import { QuizMode } from '../types/quiz';
@@ -36,6 +36,7 @@ import { MoraPacingCard } from '../components/quiz/MoraPacingCard';
 import { ExamLmsHub } from '../components/exercise/ExamLmsHub';
 import { CbtRunnerScreen } from '../components/exercise/CbtRunnerScreen';
 import { useExerciseStore } from '../store/useExerciseStore';
+import { useCurriculumStore, TrackId } from '../lib/curriculum/curriculumStore';
 import { IrasutoyaImage } from '../components/common/IrasutoyaImage';
 import { cleanOptionText } from '../lib/curriculum/lessonContentAdapter';
 
@@ -123,7 +124,14 @@ export const QuizPage: React.FC = () => {
   };
 
   // Calculate count of due cards in FSRS
-  const dueCount = getFSRSDueCount(cards);
+  const dueCount = useMemo(() => {
+    try {
+      const safeCards = cards && typeof cards === 'object' ? cards : {};
+      return getFSRSDueCount(safeCards);
+    } catch {
+      return 0;
+    }
+  }, [cards]);
 
   // Load questions for standard mode
   const startStandardSession = async (mode: QuizMode) => {
@@ -368,7 +376,11 @@ export const QuizPage: React.FC = () => {
     const isKanji = Boolean(kanjiMatch);
 
     const rating: FSRSRating = customRating || (isCorrect ? 3 : 1);
-    const updatedCard = calculateFSRSReview(existing, rating, { isKanji });
+    const updatedCard = calculateFSRSReview(existing, rating, {
+      isKanji,
+      isUnscheduledPractice: activeMode === 'flashcard',
+      sameDayDamping: true,
+    });
 
     setCard(itemId, {
       card: updatedCard,
@@ -384,6 +396,12 @@ export const QuizPage: React.FC = () => {
           v.meaning,
           (v.level || 'n5').toLowerCase() as any
         );
+      }
+      try {
+        const targetTrack = ((v.level || selectedLevel || 'n5') as string).toLowerCase() as TrackId;
+        useCurriculumStore.getState().recordDojoVocabReview(targetTrack, 1);
+      } catch {
+        // Safe fallback if curriculum store not ready
       }
     } else if (!isCorrect || rating === 1) {
       // Dynamic Kanji garden wilting on lapse (Ticket T-199)
@@ -729,7 +747,7 @@ export const QuizPage: React.FC = () => {
                 />
               )}
 
-              {/* Mode: Panic Recall (Gemba K3 Cover-Recall-Check) */}
+              {/* Mode: Panic Recall (K3 Keselamatan Cover-Recall-Check) */}
               {activeMode === 'panic-recall' && (
                 <PanicRecallCard
                   question={currentQ}
@@ -795,17 +813,20 @@ export const QuizPage: React.FC = () => {
                             e.stopPropagation();
                             handleOpenReport(currentQ);
                           }}
-                          className="p-1.5 rounded-xl bg-surface hover:bg-surface-2 text-appText-muted hover:text-amber-400 transition-all"
+                          className="min-h-[40px] min-w-[40px] p-2 rounded-xl bg-surface hover:bg-surface-2 text-appText-muted hover:text-amber-400 transition-all flex items-center justify-center active:scale-95"
                           title="Laporkan keanehan/kesalahan materi kartu 🚩"
+                          aria-label="Laporkan keanehan materi kartu"
                         >
-                          <Flag className="w-3.5 h-3.5" />
+                          <Flag className="w-4 h-4" />
                         </button>
                         <button
                           onClick={(e) => {
                             e.stopPropagation();
                             speakJapanese(currentQ.questionText);
                           }}
-                          className="p-1.5 rounded-xl bg-surface hover:bg-surface-2 text-appText-muted hover:text-accent transition-all"
+                          className="min-h-[40px] min-w-[40px] p-2 rounded-xl bg-surface hover:bg-surface-2 text-appText-muted hover:text-accent transition-all flex items-center justify-center active:scale-95"
+                          title="Dengarkan pelafalan"
+                          aria-label="Dengarkan pelafalan"
                         >
                           <Volume2 className="w-4 h-4" />
                         </button>
@@ -849,31 +870,39 @@ export const QuizPage: React.FC = () => {
                     <div className="grid grid-cols-4 gap-2 sm:gap-2.5 animate-in fade-in slide-in-from-bottom-2 duration-200">
                       <button
                         onClick={() => handleFlashcardRate(1)}
-                        className="py-3.5 sm:py-4 rounded-2xl bg-red-500/15 dark:bg-red-950/40 hover:bg-red-500/25 dark:hover:bg-red-900/60 border border-red-500/30 text-red-700 dark:text-red-300 text-xs font-bold transition-all flex flex-col items-center gap-1 active:scale-95"
+                        className="min-h-[50px] sm:min-h-[54px] py-2.5 sm:py-3 px-1 rounded-2xl bg-red-500/15 dark:bg-red-950/40 hover:bg-red-500/25 dark:hover:bg-red-900/60 border border-red-500/30 text-red-700 dark:text-red-300 text-xs font-bold transition-all flex flex-col items-center justify-center gap-0.5 active:scale-95 shadow-xs"
+                        aria-label="Again: Lupa (Tombol 1)"
                       >
-                        <span>Lupa</span>
-                        <kbd className="text-xs opacity-75 font-mono">1</kbd>
+                        <span className="font-extrabold leading-tight">Again</span>
+                        <span className="text-xs opacity-80 font-normal leading-tight">Lupa</span>
+                        <kbd className="text-xs opacity-60 font-mono">1</kbd>
                       </button>
                       <button
                         onClick={() => handleFlashcardRate(2)}
-                        className="py-3.5 sm:py-4 rounded-2xl bg-amber-500/15 dark:bg-amber-950/40 hover:bg-amber-500/25 dark:hover:bg-amber-900/60 border border-amber-500/30 text-amber-700 dark:text-amber-300 text-xs font-bold transition-all flex flex-col items-center gap-1 active:scale-95"
+                        className="min-h-[50px] sm:min-h-[54px] py-2.5 sm:py-3 px-1 rounded-2xl bg-amber-500/15 dark:bg-amber-950/40 hover:bg-amber-500/25 dark:hover:bg-amber-900/60 border border-amber-500/30 text-amber-700 dark:text-amber-300 text-xs font-bold transition-all flex flex-col items-center justify-center gap-0.5 active:scale-95 shadow-xs"
+                        aria-label="Hard: Ragu (Tombol 2)"
                       >
-                        <span>Ragu</span>
-                        <kbd className="text-xs opacity-75 font-mono">2</kbd>
+                        <span className="font-extrabold leading-tight">Hard</span>
+                        <span className="text-xs opacity-80 font-normal leading-tight">Ragu</span>
+                        <kbd className="text-xs opacity-60 font-mono">2</kbd>
                       </button>
                       <button
                         onClick={() => handleFlashcardRate(3)}
-                        className="py-3.5 sm:py-4 rounded-2xl bg-emerald-500/15 dark:bg-emerald-950/40 hover:bg-emerald-500/25 dark:hover:bg-emerald-900/60 border border-emerald-500/30 text-emerald-700 dark:text-emerald-300 text-xs font-bold transition-all flex flex-col items-center gap-1 active:scale-95"
+                        className="min-h-[50px] sm:min-h-[54px] py-2.5 sm:py-3 px-1 rounded-2xl bg-emerald-500/15 dark:bg-emerald-950/40 hover:bg-emerald-500/25 dark:hover:bg-emerald-900/60 border border-emerald-500/30 text-emerald-700 dark:text-emerald-300 text-xs font-bold transition-all flex flex-col items-center justify-center gap-0.5 active:scale-95 shadow-xs"
+                        aria-label="Good: Ingat (Tombol 3)"
                       >
-                        <span>Ingat</span>
-                        <kbd className="text-xs opacity-75 font-mono">3</kbd>
+                        <span className="font-extrabold leading-tight">Good</span>
+                        <span className="text-xs opacity-80 font-normal leading-tight">Ingat</span>
+                        <kbd className="text-xs opacity-60 font-mono">3</kbd>
                       </button>
                       <button
                         onClick={() => handleFlashcardRate(4)}
-                        className="py-3.5 sm:py-4 rounded-2xl bg-sky-500/15 dark:bg-sky-950/40 hover:bg-sky-500/25 dark:hover:bg-sky-900/60 border border-sky-500/30 text-sky-700 dark:text-sky-300 text-xs font-bold transition-all flex flex-col items-center gap-1 active:scale-95"
+                        className="min-h-[50px] sm:min-h-[54px] py-2.5 sm:py-3 px-1 rounded-2xl bg-sky-500/15 dark:bg-sky-950/40 hover:bg-sky-500/25 dark:hover:bg-sky-900/60 border border-sky-500/30 text-sky-700 dark:text-sky-300 text-xs font-bold transition-all flex flex-col items-center justify-center gap-0.5 active:scale-95 shadow-xs"
+                        aria-label="Easy: Mudah (Tombol 4)"
                       >
-                        <span>Mudah</span>
-                        <kbd className="text-xs opacity-75 font-mono">4</kbd>
+                        <span className="font-extrabold leading-tight">Easy</span>
+                        <span className="text-xs opacity-80 font-normal leading-tight">Mudah</span>
+                        <kbd className="text-xs opacity-60 font-mono">4</kbd>
                       </button>
                     </div>
                   ) : (
@@ -899,10 +928,11 @@ export const QuizPage: React.FC = () => {
                       <div className="flex items-center gap-1.5">
                         <button
                           onClick={() => handleOpenReport(currentQ)}
-                          className="p-1.5 rounded-xl bg-surface-2 hover:bg-surface-3 text-appText-muted hover:text-amber-400 transition-all"
+                          className="min-h-[40px] min-w-[40px] p-2 rounded-xl bg-surface-2 hover:bg-surface-3 text-appText-muted hover:text-amber-400 transition-all flex items-center justify-center active:scale-95"
                           title="Laporkan keanehan/kesalahan soal 🚩"
+                          aria-label="Laporkan keanehan soal"
                         >
-                          <Flag className="w-3.5 h-3.5" />
+                          <Flag className="w-4 h-4" />
                         </button>
                         <button
                           onClick={() => {
@@ -914,8 +944,9 @@ export const QuizPage: React.FC = () => {
                               .trim();
                             speakJapanese(cleanAudioText || currentQ.questionText);
                           }}
-                          className="p-1.5 rounded-xl bg-surface-2 hover:bg-surface-3 text-appText-muted hover:text-accent transition-all"
+                          className="min-h-[40px] min-w-[40px] p-2 rounded-xl bg-surface-2 hover:bg-surface-3 text-appText-muted hover:text-accent transition-all flex items-center justify-center active:scale-95"
                           title="Dengarkan pelafalan"
+                          aria-label="Dengarkan pelafalan"
                         >
                           <Volume2 className="w-4 h-4" />
                         </button>

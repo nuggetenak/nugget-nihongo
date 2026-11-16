@@ -4,7 +4,7 @@
 //  scrubs sensitive user PII / API keys, and buffers offline in IndexedDB
 // ══════════════════════════════════════════════════════════════════
 
-import { APP_VERSION } from '../../config/version';
+import { APP_VERSION } from '../../config/version.ts';
 
 export interface Breadcrumb {
   timestamp: number;
@@ -238,7 +238,8 @@ class ErrorReporter {
     try {
       const raw = localStorage.getItem(this.QUEUE_STORAGE_KEY);
       if (raw) {
-        this.offlineQueue = JSON.parse(raw);
+        const parsed = JSON.parse(raw);
+        this.offlineQueue = Array.isArray(parsed) ? parsed : [];
       }
     } catch {
       this.offlineQueue = [];

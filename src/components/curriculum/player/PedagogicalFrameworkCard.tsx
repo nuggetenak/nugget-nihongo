@@ -38,7 +38,7 @@ export const PedagogicalFrameworkCard: React.FC<PedagogicalFrameworkCardProps> =
             </span>
           </div>
           {scenario?.setting && (
-            <span className="text-xs px-2.5 py-0.5 rounded-full bg-surface border border-accent/20 text-appText-muted font-medium truncate max-w-[200px]">
+            <span className="text-xs px-2.5 py-0.5 rounded-full bg-surface border border-accent/20 text-appText-muted font-medium truncate max-w-[200px] shrink-0">
               📍 {scenario.setting}
             </span>
           )}
@@ -97,7 +97,7 @@ export const PedagogicalFrameworkCard: React.FC<PedagogicalFrameworkCardProps> =
           <button
             type="button"
             onClick={() => setIsWhyOpen(!isWhyOpen)}
-            className="w-full p-3.5 sm:p-4 text-left flex items-center justify-between gap-3 hover:bg-surface-2 transition-colors min-h-[48px] active:scale-98"
+            className="w-full p-3.5 sm:p-4 text-left flex items-center justify-between gap-3 hover:bg-surface-2 transition-colors min-h-[48px] active:scale-98 focus-visible:ring-2 focus-visible:ring-accent focus-visible:outline-none cursor-pointer"
             aria-expanded={isWhyOpen}
           >
             <div className="flex items-center gap-2.5 min-w-0">
@@ -117,7 +117,6 @@ export const PedagogicalFrameworkCard: React.FC<PedagogicalFrameworkCardProps> =
               {isWhyOpen ? <ChevronUp className="w-4 h-4" /> : <ChevronDown className="w-4 h-4" />}
             </div>
           </button>
-
           {isWhyOpen && (
             <div className="p-4 sm:p-5 pt-2 border-t border-accent/10 bg-surface-2/60 space-y-2.5 text-xs leading-relaxed animate-fade-in">
               <p className="text-appText">
@@ -139,7 +138,7 @@ export const PedagogicalFrameworkCard: React.FC<PedagogicalFrameworkCardProps> =
           <button
             type="button"
             onClick={() => setIsCultureOpen(!isCultureOpen)}
-            className="w-full p-3.5 sm:p-4 text-left flex items-center justify-between gap-3 hover:bg-surface-2 transition-colors min-h-[48px] active:scale-98"
+            className="w-full p-3.5 sm:p-4 text-left flex items-center justify-between gap-3 hover:bg-surface-2 transition-colors min-h-[48px] active:scale-98 focus-visible:ring-2 focus-visible:ring-accent focus-visible:outline-none cursor-pointer"
             aria-expanded={isCultureOpen}
           >
             <div className="flex items-center gap-2.5 min-w-0">
@@ -187,7 +186,7 @@ export const PedagogicalFrameworkCard: React.FC<PedagogicalFrameworkCardProps> =
           <button
             type="button"
             onClick={() => setIsPronunciationOpen(!isPronunciationOpen)}
-            className="w-full p-3.5 sm:p-4 text-left flex items-center justify-between gap-3 hover:bg-surface-2 transition-colors min-h-[48px] active:scale-98"
+            className="w-full p-3.5 sm:p-4 text-left flex items-center justify-between gap-3 hover:bg-surface-2 transition-colors min-h-[48px] active:scale-98 focus-visible:ring-2 focus-visible:ring-accent focus-visible:outline-none cursor-pointer"
             aria-expanded={isPronunciationOpen}
           >
             <div className="flex items-center gap-2.5 min-w-0">

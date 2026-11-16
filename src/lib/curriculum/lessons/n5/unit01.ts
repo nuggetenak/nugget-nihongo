@@ -159,10 +159,10 @@ export const unit01Lessons: Record<string, Partial<CurriculumLesson>> = {
       {
         "id": "v2",
         "word": "なまえ",
-        "reading": "なまえ / おなまえ",
-        "romaji": "namae / onamae",
+        "reading": "なまえ",
+        "romaji": "namae",
         "meaning": "Nama",
-        "nuance": "Jika bertanya nama orang lain, tambahkan awalan penghormatan \"o-\" menjadi \"O-namae wa?\". Jangan gunakan \"o-\" untuk nama diri sendiri.",
+        "nuance": "Jika bertanya nama orang lain, tambahkan awalan penghormatan \"o-\" menjadi \"O-namae wa?\" (お名前). Jangan gunakan \"o-\" untuk nama diri sendiri.",
         "particleTip": "おなまえは なんですか。(Siapa nama Anda?)",
         "exampleSentence": {
           "jp": "おなまえは なんですか。",
@@ -249,10 +249,10 @@ export const unit01Lessons: Record<string, Partial<CurriculumLesson>> = {
       {
         "id": "v8",
         "word": "にほん",
-        "reading": "にほん / にっぽん",
-        "romaji": "nihon / nippon",
+        "reading": "にほん",
+        "romaji": "nihon",
         "meaning": "Negara Jepang",
-        "nuance": "Negara Jepang. Orang Jepang = にほんじん (nihonjin). Bahasa Jepang = にほんご (nihongo).",
+        "nuance": "Negara Jepang. Sering juga dilafalkan にっぽん (nippon) dalam konteks formal, acara resmi, atau uang koin. Orang Jepang = にほんじん (nihonjin). Bahasa Jepang = にほんご (nihongo).",
         "particleTip": "にほんへ ようこそ！(Selamat datang di Jepang!)",
         "exampleSentence": {
           "jp": "たなかさんは にほんじんです。",
@@ -589,10 +589,10 @@ export const unit01Lessons: Record<string, Partial<CurriculumLesson>> = {
       {
         "id": "v3",
         "word": "いしゃ",
-        "reading": "いしゃ / おいしゃさん",
-        "romaji": "isha / oishasan",
+        "reading": "いしゃ",
+        "romaji": "isha",
         "meaning": "Dokter",
-        "nuance": "Untuk dokter sendiri = isha. Menyapa dokter yang merawat = sensei.",
+        "nuance": "Profesi dokter = いしゃ (医者). Panggilan sopan dalam keseharian sering menggunakan お医者さん (おいしゃさん). Saat menyapa dokter yang memeriksa Anda secara langsung, gunakan せんせい (先生).",
         "exampleSentence": {
           "jp": "たなかさんは いしゃじゃ ありません。",
           "furigana": "田中さんは 医者じゃ ありません。",

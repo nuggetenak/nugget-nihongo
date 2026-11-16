@@ -25,7 +25,8 @@ export interface ChatMessage {
   };
 }
 
-export function inferSenseiExpression(text: string): 'teaching' | 'praise' | 'thinking' | 'encourage' | 'ojigi' {
+export function inferSenseiExpression(text?: string | null): 'teaching' | 'praise' | 'thinking' | 'encourage' | 'ojigi' {
+  if (!text || typeof text !== 'string') return 'teaching';
   const lower = text.toLowerCase();
   if (lower.includes('bagus') || lower.includes('keren') || lower.includes('hebat') || lower.includes('tepat') || lower.includes('yoku dekimashita') || lower.includes('sugoi')) {
     return 'praise';
@@ -108,26 +109,29 @@ PEDOMAN KEAMANAN & BATASAN TOPIK (STRICT):
  * Bangun system instruction lengkap berdasarkan persona, mode, dan konteks aktif
  */
 export function buildSenseiSystemPrompt(
-  config: SenseiSessionConfig,
+  config?: SenseiSessionConfig,
   contextCard?: ContextCardPayload
 ): string {
-  const base = config.persona === 'senpai_aoi' ? SENPAI_AOI_BASE : SENSEI_NUGGET_BASE;
-  const levelStr = config.userLevel ? config.userLevel.toUpperCase() : 'N5';
+  const safePersona = config?.persona === 'senpai_aoi' ? 'senpai_aoi' : 'sensei_nugget';
+  const base = safePersona === 'senpai_aoi' ? SENPAI_AOI_BASE : SENSEI_NUGGET_BASE;
+  const rawLevel = config?.userLevel && typeof config.userLevel === 'string' ? config.userLevel : 'n5';
+  const levelStr = rawLevel.toLowerCase() === 'all' ? 'N5–N1' : rawLevel.toUpperCase();
+  const safeMode = config?.mode || 'explain';
 
   let modeDirective = '';
-  if (config.mode === 'explain') {
+  if (safeMode === 'explain') {
     modeDirective = `
 MODE AKTIF: [EXPLAIN - PENJELASAN TATA BAHASA & NUANSA]
 - Fokus bedah struktur, perbandingan nuansa kata mirip, dan kesalahan umum penutur Indonesia.
 - Berikan maksimal 2 contoh kalimat autentik yang relevan.
 - Di akhir jawaban, tawarkan latihan singkat atau kartu terkait.`;
-  } else if (config.mode === 'roleplay') {
+  } else if (safeMode === 'roleplay') {
     modeDirective = `
 MODE AKTIF: [ROLEPLAY - PERCAKAPAN SITUASIONAL]
 - Kamu berperan sebagai lawan bicara di Jepang (pegawai toko, teman kampus, rekan kerja di baito, atau kasir konbini).
 - Balas dalam kalimat bahasa Jepang yang natural sesuai level pelajar (${levelStr}), sertakan terjemahan Indonesia satu baris di bawahnya.
 - Tetap berikan 1 tanggapan singkat dalam karakter, lalu beri giliran pelajar untuk menjawab.`;
-  } else if (config.mode === 'correct') {
+  } else if (safeMode === 'correct') {
     modeDirective = `
 MODE AKTIF: [CORRECT - KOREKSI KALIMAT & UMPAN BALIK]
 - Periksa kalimat yang ditulis pelajar dengan cermat (partikel, bentuk kata kerja, kesopanan keigo/teineigo).
@@ -138,13 +142,14 @@ MODE AKTIF: [CORRECT - KOREKSI KALIMAT & UMPAN BALIK]
   }
 
   let cardDirective = '';
-  if (contextCard) {
+  if (contextCard && contextCard.target) {
+    const cardLevel = (contextCard.level || 'n5').toUpperCase();
     cardDirective = `
 [CONTEXT KARTU AKTIF YANG DITANYAKAN PELAJAR]
 Pelajar sedang membuka materi berikut dan menekan [🍵 Tanya Sensei]:
-- Tipe: ${contextCard.type}
+- Tipe: ${contextCard.type || 'grammar'}
 - Target: ${contextCard.target}
-- Level: ${contextCard.level.toUpperCase()}
+- Level: ${cardLevel}
 ${contextCard.meaning_id ? `- Arti Indonesia: ${contextCard.meaning_id}` : ''}
 ${contextCard.structure ? `- Rumus/Struktur: ${contextCard.structure}` : ''}
 ${contextCard.exampleJa ? `- Contoh di Kartu: ${contextCard.exampleJa} (${contextCard.exampleId || ''})` : ''}
@@ -155,7 +160,7 @@ ATURAN KONTEKS KARTU:
 - Di akhir jawaban jika sudah tuntas, sertakan rekomendasi singkat: "Mau coba latihan soal untuk ${contextCard.target}?"`;
   }
 
-  const memoryBlock = senseiMemory.formatMemoriesForPrompt();
+  const memoryBlock = senseiMemory ? senseiMemory.formatMemoriesForPrompt() : '';
 
   return `${base.replace(/{level}/g, levelStr)}
 ${modeDirective}
@@ -170,7 +175,12 @@ ${SAFETY_GUARDRAILS}`.trim();
 export function sanitizeAndTrimChatHistory(messages: ChatMessage[], maxTurns = 12): ChatMessage[] {
   if (!Array.isArray(messages)) return [];
   const valid = messages.filter(
-    (m) => m && typeof m.content === 'string' && m.content.trim() && !m.id.startsWith('err-')
+    (m) =>
+      m &&
+      typeof m === 'object' &&
+      typeof m.content === 'string' &&
+      m.content.trim() &&
+      (!m.id || !m.id.startsWith('err-'))
   );
   return valid.slice(-maxTurns);
 }
@@ -191,6 +201,9 @@ export async function sendSenseiMessage(
   rateLimiter.recordExecution('sensei_chat');
 
   const sanitizedMessages = sanitizeAndTrimChatHistory(messages);
+  if (sanitizedMessages.length === 0) {
+    throw new Error('Pesan tidak boleh kosong.');
+  }
 
   const localGeminiKey = typeof window !== 'undefined' ? localStorage.getItem('nn_gemini_api_key') : '';
   const localOpenRouterKey = typeof window !== 'undefined' ? localStorage.getItem('nn_openrouter_api_key') : '';
@@ -447,8 +460,8 @@ export async function streamSenseiResponse(
     localGeminiKey?.trim() ||
     '';
 
-  if (!apiKey) {
-    // Graceful Route 0 fallback: Route request via serverless proxy /api/chat
+  if (!apiKey || !apiKey.startsWith('sk-or-')) {
+    // Graceful Route 0 fallback or native Gemini fallback via sendSenseiMessage
     const reply = await sendSenseiMessage(messages, config, contextCard);
     onChunk(reply.content);
     return reply.content;
@@ -462,6 +475,9 @@ export async function streamSenseiResponse(
   rateLimiter.recordExecution('sensei_chat');
 
   const sanitizedMessages = sanitizeAndTrimChatHistory(messages);
+  if (sanitizedMessages.length === 0) {
+    throw new Error('Pesan tidak boleh kosong.');
+  }
   const systemInstruction = buildSenseiSystemPrompt(config, contextCard);
 
   const res = await fetch('https://openrouter.ai/api/v1/chat/completions', {
@@ -535,7 +551,18 @@ export function loadChatHistory(mode: SenseiMode): ChatMessage[] {
   if (typeof window === 'undefined') return [];
   try {
     const raw = localStorage.getItem(`${STORAGE_PREFIX}${mode}`);
-    if (raw) return JSON.parse(raw);
+    if (raw) {
+      const parsed = JSON.parse(raw);
+      if (Array.isArray(parsed)) {
+        return parsed.filter(
+          (m) =>
+            m &&
+            typeof m === 'object' &&
+            typeof m.content === 'string' &&
+            (m.role === 'user' || m.role === 'model')
+        );
+      }
+    }
   } catch (e) {
     console.warn('[SenseiClient] Gagal memuat riwayat chat:', e);
   }
@@ -543,10 +570,17 @@ export function loadChatHistory(mode: SenseiMode): ChatMessage[] {
 }
 
 export function saveChatHistory(mode: SenseiMode, messages: ChatMessage[]): void {
-  if (typeof window === 'undefined') return;
+  if (typeof window === 'undefined' || !Array.isArray(messages)) return;
   try {
+    const valid = messages.filter(
+      (m) =>
+        m &&
+        typeof m === 'object' &&
+        typeof m.content === 'string' &&
+        !String(m.id || '').startsWith('err-')
+    );
     // Batasi 40 pesan terakhir agar efisien memori
-    const trimmed = messages.slice(-40);
+    const trimmed = valid.slice(-40);
     localStorage.setItem(`${STORAGE_PREFIX}${mode}`, JSON.stringify(trimmed));
   } catch (e) {
     console.warn('[SenseiClient] Gagal menyimpan riwayat chat:', e);

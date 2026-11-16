@@ -177,8 +177,11 @@ it('T-14.3: Touch targets >= 40px across HomePage, MateriHub, KanjiDojo, KanjiSt
     homeCode.includes('min-w-[40px] min-h-[40px]'),
     'HomePage audio buttons must be at least 40px x 40px'
   );
+  const dictPath = path.resolve(__dirname, '../src/features/dojo/pillars/DictionaryPillar.tsx');
+  const dictCode = fs.existsSync(dictPath) ? fs.readFileSync(dictPath, 'utf8') : '';
+  const combinedMateriCode = materiCode + '\n' + dictCode;
   assert(
-    materiCode.includes('min-w-[40px] min-h-[40px]'),
+    combinedMateriCode.includes('min-w-[40px] min-h-[40px]'),
     'MateriHubPage audio buttons must be at least 40px x 40px'
   );
   assert(

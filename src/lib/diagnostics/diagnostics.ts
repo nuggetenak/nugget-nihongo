@@ -5,8 +5,8 @@
 //  transitions; generates formatted diagnostics reports for support.
 // ══════════════════════════════════════════════════════════════════
 
-import { APP_VERSION } from '../../config/version';
-import { scrubSensitiveData } from '../telemetry/errorReporter';
+import { APP_VERSION } from '../../config/version.ts';
+import { scrubSensitiveData } from '../telemetry/errorReporter.ts';
 
 export type DiagnosticLogType = 'error' | 'unhandledrejection' | 'warn' | 'navigation' | 'info' | 'storage';
 

@@ -492,19 +492,19 @@ window.vocabSSW_Agriculture = [
   },
   {
     "id": "v-ssw-agriculture-028",
-    "word": "刈払機（草刈り機）",
-    "reading": "かりはらいき（くさかりき）",
-    "romaji": "kariharaiki (kusakariki)",
+    "word": "刈払機",
+    "reading": "かりはらいき",
+    "romaji": "kariharaiki",
     "meaning": "Mesin pemotong rumput berputar bilah baja tajam",
     "meaning_id": "Mesin pemotong rumput berputar bilah baja tajam",
     "meaning_en": "Mesin pemotong rumput berputar bilah baja tajam",
     "level": "n4",
     "pos": "noun",
-    "nuance": "Flying Stone Blindness & Maiming",
+    "nuance": "Mesin pemotong rumput berputar bilah baja standar K3 pertanian Jepang. Di kalangan petani sering disebut 草刈り機 (くさかりき).",
     "examples": [
       {
-        "jp": "刈払機（草刈り機）の安全確認を行ってください。",
-        "id": "Tolong lakukan konfirmasi keselamatan pada Mesin pemotong rumput berputar bilah baja tajam."
+        "jp": "刈払機を使用する際は、必ず防護メガネとすね当てを着用してください。",
+        "id": "Saat menggunakan mesin pemotong rumput, wajib kenakan kacamata pelindung dan pelindung tulang kering."
       }
     ]
   },

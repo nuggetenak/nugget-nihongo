@@ -169,7 +169,7 @@ export function speakJapanese(
   const onError = options.onError || legacyOnError;
 
   return new Promise((resolve) => {
-    if (typeof window === 'undefined' || !text || text.trim() === '') {
+    if (typeof window === 'undefined' || !text || typeof text !== 'string' || text.trim() === '') {
       if (onEnd) onEnd();
       resolve();
       return;

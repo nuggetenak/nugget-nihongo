@@ -13,10 +13,12 @@ interface PwaState {
   showInstallModal: boolean;
   hasUpdate: boolean;
   waitingWorker: ServiceWorker | null;
+  registration: ServiceWorkerRegistration | null;
   deferredPrompt: BeforeInstallPromptEvent | null;
   setShowInstallModal: (show: boolean) => void;
   promptInstall: () => Promise<boolean>;
   applyUpdate: () => void;
+  checkForUpdate: () => Promise<void>;
   initPwa: () => void;
 }
 
@@ -27,6 +29,7 @@ export const usePwaStore = create<PwaState>((set, get) => ({
   showInstallModal: false,
   hasUpdate: false,
   waitingWorker: null,
+  registration: null,
   deferredPrompt: null,
 
   setShowInstallModal: (show: boolean) => {
@@ -45,12 +48,16 @@ export const usePwaStore = create<PwaState>((set, get) => ({
     try {
       await deferredPrompt.prompt();
       const choice = await deferredPrompt.userChoice;
+      // The beforeinstallprompt event is consumed upon prompt(); always reset deferredPrompt
       if (choice.outcome === 'accepted') {
         set({ isInstalled: true, isInstallable: false, deferredPrompt: null, showInstallModal: false });
         return true;
+      } else {
+        set({ deferredPrompt: null, isInstallable: false, showInstallModal: false });
       }
     } catch (e) {
       console.warn('PWA prompt failed:', e);
+      set({ deferredPrompt: null, isInstallable: false });
     }
     return false;
   },
@@ -59,8 +66,26 @@ export const usePwaStore = create<PwaState>((set, get) => ({
     const { waitingWorker } = get();
     if (waitingWorker) {
       waitingWorker.postMessage({ type: 'SKIP_WAITING' });
-    } else {
+      // Fallback reload if controllerchange event does not fire within 1500ms
+      if (typeof window !== 'undefined') {
+        setTimeout(() => {
+          window.location.reload();
+        }, 1500);
+      }
+    } else if (typeof window !== 'undefined') {
       window.location.reload();
+    }
+  },
+
+  checkForUpdate: async () => {
+    const { registration } = get();
+    if (registration && typeof registration.update === 'function') {
+      try {
+        console.log('[PWA] Checking for updates via registration.update()...');
+        await registration.update();
+      } catch (e) {
+        console.warn('[PWA] Manual check update failed:', e);
+      }
     }
   },
 
@@ -70,6 +95,8 @@ export const usePwaStore = create<PwaState>((set, get) => ({
     // Check if running as standalone PWA
     const isStandalone =
       window.matchMedia('(display-mode: standalone)').matches ||
+      window.matchMedia('(display-mode: fullscreen)').matches ||
+      window.matchMedia('(display-mode: minimal-ui)').matches ||
       (window.navigator as unknown as { standalone?: boolean }).standalone === true;
 
     const isIos =
@@ -80,11 +107,12 @@ export const usePwaStore = create<PwaState>((set, get) => ({
 
     // Register Service Worker with safe update flow
     if ('serviceWorker' in navigator) {
-      window.addEventListener('load', () => {
+      const registerSW = () => {
         navigator.serviceWorker
           .register('/sw.js')
           .then((reg) => {
             console.log('[PWA] Service Worker registered with scope:', reg.scope);
+            set({ registration: reg });
 
             // If a worker is already waiting, trigger update state
             if (reg.waiting) {
@@ -103,6 +131,26 @@ export const usePwaStore = create<PwaState>((set, get) => ({
                 }
               });
             });
+
+            // Active Sentinel: check for updates on visibility and focus
+            const triggerUpdate = () => {
+              if (reg && typeof reg.update === 'function') {
+                reg.update().catch((err) => console.warn('[PWA] Background update check failed:', err));
+              }
+            };
+
+            document.addEventListener('visibilitychange', () => {
+              if (document.visibilityState === 'visible') {
+                triggerUpdate();
+              }
+            });
+
+            window.addEventListener('focus', () => {
+              triggerUpdate();
+            });
+
+            // Periodic check every 30 minutes
+            setInterval(triggerUpdate, 30 * 60 * 1000);
           })
           .catch((err) => {
             console.warn('[PWA] Service Worker registration failed:', err);
@@ -116,7 +164,13 @@ export const usePwaStore = create<PwaState>((set, get) => ({
             window.location.reload();
           }
         });
-      });
+      };
+
+      if (document.readyState === 'complete') {
+        registerSW();
+      } else {
+        window.addEventListener('load', registerSW);
+      }
     }
 
     // Capture beforeinstallprompt

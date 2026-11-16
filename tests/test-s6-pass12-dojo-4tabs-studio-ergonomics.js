@@ -43,19 +43,23 @@ console.log('✅ Test 1 Passed: 4-Pillar Dojo Mode Switcher verified.');
 
 // ── Test 2: Tab 4 CBT Exam Simulator Suite & Embedded ExamLmsHub ───
 console.log('\nChecking Test 2: Tab 4 CBT Exam Simulators & Embedded ExamLmsHub...');
+const cbtPillarPath = path.join(rootDir, 'src', 'features', 'dojo', 'pillars', 'CbtSimulatorPillar.tsx');
+const cbtCode = fs.existsSync(cbtPillarPath) ? fs.readFileSync(cbtPillarPath, 'utf8') : '';
+const combinedCbtCode = materiHubContent + '\n' + cbtCode;
+
 assert(
-  materiHubContent.includes('Simulator Ujian CBT Resmi & Standar Internasional') &&
-  materiHubContent.includes('Simulasi Lengkap JLPT CBT (N5–N1)') &&
-  materiHubContent.includes('Simulasi JFT-Basic CBT (A1/A2)') &&
-  materiHubContent.includes('Simulasi Prometric Tokutei Ginou (SSW)') &&
-  materiHubContent.includes('Simulator Menyimak Choukai (CBT Resmi)') &&
-  materiHubContent.includes('Tes Penempatan Adaptif CAT'),
+  combinedCbtCode.includes('Simulator Ujian CBT Resmi & Standar Internasional') &&
+  combinedCbtCode.includes('Simulasi Lengkap JLPT CBT (N5–N1)') &&
+  combinedCbtCode.includes('Simulasi JFT-Basic CBT (A1/A2)') &&
+  combinedCbtCode.includes('Simulasi Prometric Tokutei Ginou (SSW)') &&
+  combinedCbtCode.includes('Simulator Menyimak Choukai (CBT Resmi)') &&
+  combinedCbtCode.includes('Tes Penempatan Adaptif CAT'),
   'Tab 4 must house the 5 official exam simulators (JLPT, JFT, Prometric SSW, Choukai, CAT)'
 );
 
 assert(
-  materiHubContent.includes('<ExamLmsHub') &&
-  materiHubContent.includes('onStartExerciseSet={handleStartExerciseSet}'),
+  combinedCbtCode.includes('<ExamLmsHub') &&
+  (combinedCbtCode.includes('onStartExerciseSet={handleStartExerciseSet}') || combinedCbtCode.includes('onStartExerciseSet={onStartExerciseSet}')),
   'Tab 4 must embed ExamLmsHub with direct CBT set launch handler'
 );
 console.log('✅ Test 2 Passed: Tab 4 CBT Exam Suite and ExamLmsHub integration verified.');

@@ -109,7 +109,7 @@ export const SyncStatusPill: React.FC<{ className?: string }> = ({ className = '
       <button
         type="button"
         onClick={() => setIsDrawerOpen(true)}
-        className={`inline-flex items-center gap-1.5 px-3 py-1.5 min-h-[36px] sm:min-h-[40px] rounded-full text-xs font-bold border transition-all active:scale-95 focus-visible:ring-2 focus-visible:ring-accent ${pillColor} ${className}`}
+        className={`inline-flex items-center gap-1.5 px-3 py-1.5 min-h-[40px] rounded-full text-xs font-bold border transition-all active:scale-95 focus-visible:ring-2 focus-visible:ring-accent ${pillColor} ${className}`}
         title="Klik untuk info status sinkronisasi cloud & offline"
         aria-label={`Status sinkronisasi: ${pillText}`}
       >

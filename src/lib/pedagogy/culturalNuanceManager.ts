@@ -109,7 +109,7 @@ export const CULTURAL_NUANCES: Record<string, CulturalNuanceItem> = {
     conceptJa: '声かけと指差し呼称 (ゆびさしこしょう)',
     kanji: '声かけ・指差し呼称',
     romaji: 'Koe-kake to Yubisashi Koushou',
-    titleId: 'Koe-kake & Point-and-Call: Keselamatan K3 Gemba',
+    titleId: 'Koe-kake & Point-and-Call: Disiplin K3 & Keselamatan Kerja',
     domain: 'keselamatan_k3',
     targetAudience: ['SSW', 'EPA_KAIGO'],
     summaryId:

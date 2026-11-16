@@ -167,7 +167,11 @@ export const KanjiDojoView: React.FC<KanjiDojoViewProps> = ({ onAskSensei }) => 
       {/* Filter Toolbar */}
       <div className="space-y-3">
         {/* Level Selector Pills */}
-        <div className="flex items-center gap-2 overflow-x-auto scrollbar-none pb-1 max-w-full">
+        <div
+          role="tablist"
+          aria-label="Pilihan Level Kanji"
+          className="flex items-center gap-2 overflow-x-auto scrollbar-none pb-1 max-w-full"
+        >
           <span className="text-xs font-bold text-appText-muted uppercase tracking-wider shrink-0 mr-1 flex items-center gap-1">
             <Layers size={14} />
             <span>Level:</span>
@@ -182,8 +186,11 @@ export const KanjiDojoView: React.FC<KanjiDojoViewProps> = ({ onAskSensei }) => 
           ].map((lvl) => (
             <button
               key={lvl.id}
+              role="tab"
+              aria-selected={selectedLevel === lvl.id}
+              type="button"
               onClick={() => setSelectedLevel(lvl.id as LevelFilter)}
-              className={`px-3.5 py-2 rounded-xl text-xs font-bold whitespace-nowrap shrink-0 transition-all active:scale-95 ${
+              className={`min-h-[40px] px-3.5 py-2 rounded-xl text-xs font-bold whitespace-nowrap shrink-0 transition-all active:scale-95 ${
                 selectedLevel === lvl.id
                   ? 'bg-amber-500 text-stone-950 font-black shadow-sm'
                   : 'bg-surface border border-theme text-appText-muted hover:text-appText-bright hover:bg-surface-2'
@@ -195,7 +202,11 @@ export const KanjiDojoView: React.FC<KanjiDojoViewProps> = ({ onAskSensei }) => 
         </div>
 
         {/* Book Lens Selector Pills */}
-        <div className="flex items-center gap-2 overflow-x-auto scrollbar-none pb-1 max-w-full">
+        <div
+          role="tablist"
+          aria-label="Pilihan Lensa Buku Teks"
+          className="flex items-center gap-2 overflow-x-auto scrollbar-none pb-1 max-w-full"
+        >
           <span className="text-xs font-bold text-appText-muted uppercase tracking-wider shrink-0 mr-1 flex items-center gap-1">
             <BookOpen size={14} />
             <span>Lensa Buku:</span>
@@ -208,8 +219,11 @@ export const KanjiDojoView: React.FC<KanjiDojoViewProps> = ({ onAskSensei }) => 
           ].map((lens) => (
             <button
               key={lens.id}
+              role="tab"
+              aria-selected={selectedLens === lens.id}
+              type="button"
               onClick={() => setSelectedLens(lens.id as BookLensFilter)}
-              className={`px-3 py-1.5 rounded-lg text-xs font-semibold whitespace-nowrap shrink-0 transition-all active:scale-95 ${
+              className={`min-h-[40px] px-3.5 py-2 rounded-xl text-xs font-bold whitespace-nowrap shrink-0 transition-all active:scale-95 ${
                 selectedLens === lens.id
                   ? 'bg-amber-500 text-stone-950 font-black shadow-sm'
                   : 'bg-surface border border-theme text-appText-muted hover:text-appText-bright hover:bg-surface-2'

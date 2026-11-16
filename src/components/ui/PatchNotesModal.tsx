@@ -21,6 +21,7 @@ import {
 import { PATCH_NOTES_HISTORY, PatchNote } from '../../lib/data/patchNotes';
 import { APP_VERSION } from '../../config/version';
 import { useFocusTrap } from '../../hooks/useFocusTrap';
+import { useBodyScrollLock } from '../../hooks/useBodyScrollLock';
 import { IrasutoyaImage } from '../common/IrasutoyaImage';
 
 interface PatchNotesModalProps {
@@ -30,21 +31,12 @@ interface PatchNotesModalProps {
 
 export const PatchNotesModal: React.FC<PatchNotesModalProps> = ({ isOpen, onClose }) => {
   const containerRef = useFocusTrap<HTMLDivElement>(isOpen, onClose);
+  useBodyScrollLock(isOpen);
   const [selectedFilter, setSelectedFilter] = useState<'all' | 'major'>('all');
   const [showTechnical, setShowTechnical] = useState(false);
   const [expandedVersions, setExpandedVersions] = useState<Record<string, boolean>>({
     [APP_VERSION]: true, // Expanded by default
   });
-
-  // Lock body scroll when modal is open
-  useEffect(() => {
-    if (isOpen) {
-      document.body.style.overflow = 'hidden';
-      return () => {
-        document.body.style.overflow = '';
-      };
-    }
-  }, [isOpen]);
 
   if (!isOpen) return null;
 
@@ -120,7 +112,7 @@ export const PatchNotesModal: React.FC<PatchNotesModalProps> = ({ isOpen, onClos
           <div className="flex items-center gap-1.5">
             <button
               onClick={() => setSelectedFilter('all')}
-              className={`px-3 py-1.5 min-h-[36px] rounded-xl text-xs font-bold transition-all active:scale-95 ${
+              className={`px-3.5 py-2 min-h-[40px] rounded-xl text-xs font-bold transition-all active:scale-95 flex items-center justify-center ${
                 selectedFilter === 'all'
                   ? 'bg-amber-500 text-stone-950 shadow-sm font-black'
                   : 'text-appText-muted hover:text-appText-bright bg-surface-2 border border-theme'
@@ -130,7 +122,7 @@ export const PatchNotesModal: React.FC<PatchNotesModalProps> = ({ isOpen, onClos
             </button>
             <button
               onClick={() => setSelectedFilter('major')}
-              className={`px-3 py-1.5 min-h-[36px] rounded-xl text-xs font-bold transition-all active:scale-95 ${
+              className={`px-3.5 py-2 min-h-[40px] rounded-xl text-xs font-bold transition-all active:scale-95 flex items-center justify-center ${
                 selectedFilter === 'major'
                   ? 'bg-amber-500 text-stone-950 shadow-sm font-black'
                   : 'text-appText-muted hover:text-appText-bright bg-surface-2 border border-theme'
@@ -142,7 +134,7 @@ export const PatchNotesModal: React.FC<PatchNotesModalProps> = ({ isOpen, onClos
 
           <button
             onClick={() => setShowTechnical(!showTechnical)}
-            className={`flex items-center gap-1.5 px-3 py-1.5 min-h-[36px] rounded-xl text-xs font-bold transition-all border active:scale-95 ${
+            className={`flex items-center gap-1.5 px-3.5 py-2 min-h-[40px] rounded-xl text-xs font-bold transition-all border active:scale-95 ${
               showTechnical
                 ? 'bg-amber-500/15 border-amber-500/40 text-amber-900 dark:text-amber-200 font-extrabold shadow-sm'
                 : 'bg-surface-2 border-theme text-appText-muted hover:text-appText-bright'

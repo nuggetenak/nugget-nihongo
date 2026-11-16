@@ -29,7 +29,7 @@ export type DecisionStep = 'actor' | 'addressee' | 'group' | 'result';
  * Determines current step in the 3-question Uchi/Soto decision tree
  */
 export function currentDecisionStep(path: DecisionPath): DecisionStep {
-  if (!path.actor) return 'actor';
+  if (!path || !path.actor) return 'actor';
   if (path.actor === 'self') return 'result';
   if (!path.addressee) return 'addressee';
   if (path.addressee === 'direct') return 'result';
@@ -41,6 +41,7 @@ export function currentDecisionStep(path: DecisionPath): DecisionStep {
  * Derives the resulting honorific register from the path
  */
 export function deriveRegister(path: DecisionPath): HonorificRegister | null {
+  if (!path) return null;
   if (path.actor === 'self') return 'kenjougo';
   if (path.actor === 'other') {
     if (path.addressee === 'direct') return 'sonkeigo';
@@ -56,6 +57,7 @@ export function deriveRegister(path: DecisionPath): HonorificRegister | null {
  * Returns a pedagogically rigorous Indonesian explanation of the decision path
  */
 export function explainDecisionPath(path: DecisionPath): string {
+  if (!path) return '';
   if (path.actor === 'self') {
     return 'Pelaku tindakan adalah diri Anda sendiri (atau pihak internal Anda) yang ditujukan kepada lawan bicara. Dalam etiket Jepang, Anda WAJIB merendahkan tindakan diri sendiri demi memuliakan lawan bicara — gunakan KENJOUGO (謙譲語).';
   }
@@ -75,7 +77,7 @@ export function explainDecisionPath(path: DecisionPath): string {
  * Searches the master verb bank by Japanese kanji, hiragana reading, Indonesian meaning, or English
  */
 export function searchKeigoVerbs(query: string): KeigoVerb[] {
-  const q = query.trim().toLowerCase();
+  const q = (query ?? '').trim().toLowerCase();
   if (!q) return KEIGO_VERB_BANK;
 
   return KEIGO_VERB_BANK.filter((verb) => {
@@ -96,7 +98,7 @@ export function searchKeigoVerbs(query: string): KeigoVerb[] {
  * Searches the noun/bikago bank
  */
 export function searchKeigoNouns(query: string): KeigoNounWord[] {
-  const q = query.trim().toLowerCase();
+  const q = (query ?? '').trim().toLowerCase();
   if (!q) return KEIGO_NOUN_BANK;
 
   return KEIGO_NOUN_BANK.filter((item) => {
@@ -140,13 +142,13 @@ export function gradeKeigoInput(
   target: HonorificRegister,
   rawInput: string
 ): GradeResult {
-  const input = rawInput.trim();
+  const input = (rawInput ?? '').trim();
   const expected = target === 'sonkeigo' ? verb.sonkeigo : verb.kenjougo;
   const alternates = target === 'sonkeigo' ? verb.alternateSonkeigo || [] : verb.alternateKenjougo || [];
 
   const validAnswers = [expected, ...alternates];
 
-  if (validAnswers.some((ans) => ans.replace(/\s+/g, '') === input.replace(/\s+/g, ''))) {
+  if (input && validAnswers.some((ans) => ans.replace(/\s+/g, '') === input.replace(/\s+/g, ''))) {
     return {
       isCorrect: true,
       score: 100,

@@ -3,8 +3,8 @@
 //  Integrates Yomitan de-inflection rules with local vocabulary corpus
 // ══════════════════════════════════════════════════════════════════
 
-import { deinflectWord, DeinflectionCandidate } from '../grammar/deinflector';
-import { NormalizedVocab } from '../data/dataManager';
+import { deinflectWord, type DeinflectionCandidate } from '../grammar/deinflector.ts';
+import type { NormalizedVocab } from '../data/dataManager.ts';
 
 export interface DictionaryEntry {
   kanji: string;
@@ -79,12 +79,13 @@ class OfflineDictionaryService {
   public registerVocabList(list: NormalizedVocab[]): void {
     if (!Array.isArray(list)) return;
     for (const v of list) {
+      if (!v) continue;
       this.registerEntry({
-        kanji: v.word,
-        kana: v.reading,
-        romaji: v.romaji,
-        arti: v.meaning,
-        level: v.level,
+        kanji: v.word || '',
+        kana: v.reading || '',
+        romaji: v.romaji || '',
+        arti: v.meaning || '',
+        level: v.level || '',
         pos: v.pos,
       });
     }
@@ -94,7 +95,7 @@ class OfflineDictionaryService {
    * Performs an offline dictionary lookup with Yomitan de-inflection fallbacks
    */
   public lookup(query: string): WordLookupResult {
-    if (!query || typeof query !== 'string') {
+    if (!query || typeof query !== 'string' || !query.trim()) {
       return { query: '', exactMatch: null, deinflections: [], relatedMatches: [] };
     }
 
@@ -118,7 +119,9 @@ class OfflineDictionaryService {
     if (!exactMatch) {
       for (const [key, entry] of this.customEntries.entries()) {
         if (relatedMatches.length >= 5) break;
-        if (key.includes(clean) || entry.arti.toLowerCase().includes(clean.toLowerCase())) {
+        if (!entry) continue;
+        const arti = (entry.arti || '').toLowerCase();
+        if (key.includes(clean) || arti.includes(clean.toLowerCase())) {
           if (!relatedMatches.includes(entry)) {
             relatedMatches.push(entry);
           }

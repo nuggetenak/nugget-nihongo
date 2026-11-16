@@ -58,13 +58,17 @@ interface DailyGoalSelectorProps {
 }
 
 export const DailyGoalSelector: React.FC<DailyGoalSelectorProps> = ({
-  dailyGoalXP,
-  todayXP,
-  isGoalReached,
-  goalProgressPercent,
+  dailyGoalXP = 50,
+  todayXP = 0,
+  isGoalReached = false,
+  goalProgressPercent = 0,
   onSelectGoal,
   showToast,
 }) => {
+  const safeTodayXP = Math.max(0, Number.isFinite(todayXP) ? todayXP : 0);
+  const safeGoalXP = Math.max(1, Number.isFinite(dailyGoalXP) ? dailyGoalXP : 50);
+  const safePercent = Math.min(100, Math.max(0, Math.round(Number.isFinite(goalProgressPercent) ? goalProgressPercent : 0)));
+
   const handleSelectTier = (tier: DailyGoalTier) => {
     onSelectGoal(tier.xp);
     showToast(`Target harian disetel ke ${tier.xp} XP (${tier.label})!`, tier.icon);
@@ -88,7 +92,7 @@ export const DailyGoalSelector: React.FC<DailyGoalSelectorProps> = ({
         <div className="flex items-center gap-2 self-start sm:self-auto shrink-0 bg-surface-2/80 px-3 py-1.5 rounded-xl border border-accent/20">
           <Zap className="w-4 h-4 text-accent" />
           <div className="text-xs font-mono font-bold text-appText-bright">
-            {todayXP} <span className="text-appText-muted font-normal">/ {dailyGoalXP} XP</span>
+            {safeTodayXP} <span className="text-appText-muted font-normal">/ {safeGoalXP} XP</span>
           </div>
           <span
             className={`text-xs font-bold px-2 py-0.5 rounded-md ${
@@ -97,7 +101,7 @@ export const DailyGoalSelector: React.FC<DailyGoalSelectorProps> = ({
                 : 'bg-accent/15 text-accent border border-accent/25'
             }`}
           >
-            {isGoalReached ? 'Tercapai 🎯' : `${goalProgressPercent}%`}
+            {isGoalReached ? 'Tercapai 🎯' : `${safePercent}%`}
           </span>
         </div>
       </div>

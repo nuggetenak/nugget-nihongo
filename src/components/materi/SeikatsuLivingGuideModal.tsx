@@ -4,7 +4,7 @@
 //  Compliant with Ministry of Internal Affairs & Communications (MIC) Guidelines
 // ══════════════════════════════════════════════════════════════════
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import {
   Building2,
   Trash2,
@@ -24,6 +24,7 @@ import {
 import { speakJapanese } from '../../lib/audio/tts';
 import { playSuccessSfx } from '../../lib/audio/sfx';
 import { useAppStore } from '../../store/useAppStore';
+import { useBodyScrollLock } from '../../hooks/useBodyScrollLock';
 
 export type SeikatsuTab = 'shiyakusho' | 'gomi' | 'housing' | 'disaster';
 
@@ -220,6 +221,17 @@ export const SeikatsuLivingGuideModal: React.FC<SeikatsuLivingGuideModalProps> =
 
   const currentSection = SEIKATSU_GUIDE_DATA[activeTab];
 
+  useBodyScrollLock(isOpen);
+
+  useEffect(() => {
+    if (!isOpen) return;
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') onClose();
+    };
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [isOpen, onClose]);
+
   const handleToggleProcedure = (itemId: string) => {
     setCheckedProcedures((prev) => {
       const next = !prev[itemId];
@@ -234,8 +246,20 @@ export const SeikatsuLivingGuideModal: React.FC<SeikatsuLivingGuideModalProps> =
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-4 bg-stone-950/80 backdrop-blur-md animate-fade-in">
-      <div className="relative w-full max-w-4xl max-h-[92dvh] sm:max-h-[92vh] overflow-y-auto rounded-3xl bg-surface-2 border border-accent/30 shadow-2xl flex flex-col">
+    <div
+      onClick={onClose}
+      className="fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-4 bg-stone-950/80 backdrop-blur-md animate-fade-in"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Panduan Hidup di Jepang"
+    >
+      <div
+        onClick={(e) => e.stopPropagation()}
+        className="relative w-full max-w-4xl max-h-[92dvh] sm:max-h-[92vh] overflow-y-auto rounded-3xl bg-surface-2 border border-accent/30 shadow-2xl flex flex-col"
+      >
+        {/* Mobile Drag Handle */}
+        <div className="w-12 h-1.5 bg-accent/25 rounded-full mx-auto my-2 sm:hidden shrink-0" />
+
         {/* ── TOP HEADER ── */}
         <div className="bg-surface-3 border-b border-accent/20 p-4 sm:p-5 flex items-center justify-between gap-3 shrink-0">
           <div className="flex items-center gap-3 min-w-0">
@@ -258,8 +282,9 @@ export const SeikatsuLivingGuideModal: React.FC<SeikatsuLivingGuideModalProps> =
           </div>
 
           <button
+            type="button"
             onClick={onClose}
-            className="w-8 h-8 rounded-full bg-surface hover:bg-surface-3 text-appText-muted hover:text-appText-bright flex items-center justify-center text-sm transition-colors shrink-0"
+            className="min-w-[40px] min-h-[40px] w-10 h-10 rounded-2xl bg-surface hover:bg-surface-3 border border-accent/20 text-appText-muted hover:text-appText-bright flex items-center justify-center text-sm transition-colors shrink-0 active:scale-95"
             aria-label="Tutup Panduan"
           >
             ✕
@@ -267,7 +292,11 @@ export const SeikatsuLivingGuideModal: React.FC<SeikatsuLivingGuideModalProps> =
         </div>
 
         {/* ── 4 DOMAIN NAVIGATION TABS ── */}
-        <div className="p-3 sm:p-4 bg-surface border-b border-accent/15 flex items-center gap-2 overflow-x-auto scrollbar-none shrink-0">
+        <div
+          role="tablist"
+          aria-label="Kategori Panduan Seikatsu"
+          className="p-3 sm:p-4 bg-surface border-b border-accent/15 flex items-center gap-2 overflow-x-auto scrollbar-none shrink-0"
+        >
           {(['shiyakusho', 'gomi', 'housing', 'disaster'] as SeikatsuTab[]).map((tabKey) => {
             const tabData = SEIKATSU_GUIDE_DATA[tabKey];
             const isSelected = activeTab === tabKey;
@@ -275,6 +304,8 @@ export const SeikatsuLivingGuideModal: React.FC<SeikatsuLivingGuideModalProps> =
             return (
               <button
                 key={tabKey}
+                role="tab"
+                aria-selected={isSelected}
                 type="button"
                 onClick={() => setActiveTab(tabKey)}
                 className={`min-h-[44px] px-3.5 sm:px-4 py-2 rounded-xl text-xs font-bold transition-all flex items-center gap-2 shrink-0 active:scale-95 ${
@@ -342,8 +373,9 @@ export const SeikatsuLivingGuideModal: React.FC<SeikatsuLivingGuideModalProps> =
                         <button
                           type="button"
                           onClick={() => speakJapanese(item.titleJp)}
-                          className="p-1 rounded hover:bg-surface-2 text-accent"
+                          className="min-w-[40px] min-h-[40px] p-2 rounded-xl bg-surface-2 hover:bg-surface-3 border border-accent/20 text-accent flex items-center justify-center active:scale-95 transition-all"
                           title="Dengarkan Audio Jepang"
+                          aria-label="Dengarkan Audio Jepang"
                         >
                           <Volume2 className="w-4 h-4" />
                         </button>
@@ -407,8 +439,9 @@ export const SeikatsuLivingGuideModal: React.FC<SeikatsuLivingGuideModalProps> =
                           <button
                             type="button"
                             onClick={() => speakJapanese(vocab.kanji)}
-                            className="p-1 rounded hover:bg-surface-3 text-accent shrink-0"
+                            className="min-w-[40px] min-h-[40px] p-2 rounded-xl bg-surface hover:bg-surface-3 border border-accent/15 text-accent flex items-center justify-center active:scale-95 transition-all shrink-0"
                             title="Dengarkan Kosakata"
+                            aria-label={`Dengarkan Kosakata ${vocab.kanji}`}
                           >
                             <Volume2 className="w-3.5 h-3.5" />
                           </button>

@@ -528,19 +528,19 @@ window.vocabSSW_Shipbuilding = [
   },
   {
     "id": "v-ssw-shipbuilding-030",
-    "word": "舵（ラダー）",
-    "reading": "かじ（らだー）",
-    "romaji": "kaji (radaa)",
+    "word": "舵",
+    "reading": "かじ",
+    "romaji": "kaji",
     "meaning": "Daun kemudi kendali arah navigasi kapal",
     "meaning_id": "Daun kemudi kendali arah navigasi kapal",
     "meaning_en": "Daun kemudi kendali arah navigasi kapal",
     "level": "n4",
     "pos": "noun",
-    "nuance": "Rudder Pin Dislodgement",
+    "nuance": "Daun kemudi kendali arah haluan kapal di buritan. Istilah maritim internasionalnya adalah ラダー (rudder).",
     "examples": [
       {
-        "jp": "舵（ラダー）の安全確認を行ってください。",
-        "id": "Tolong lakukan konfirmasi keselamatan pada Daun kemudi kendali arah navigasi kapal."
+        "jp": "ドック内で舵の取り付け角度と油圧作動状態を精密に計測します。",
+        "id": "Ukur sudut pemasangan daun kemudi kapal dan uji sistem hidroliknya dengan presisi di dry dock."
       }
     ]
   },

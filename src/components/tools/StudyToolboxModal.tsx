@@ -328,7 +328,7 @@ export const StudyToolboxModal: React.FC<StudyToolboxModalProps> = ({
             <button
               key={tool.id}
               onClick={tool.action}
-              className="w-full p-3.5 rounded-2xl bg-surface-2 hover:bg-surface-3 border border-accent/15 hover:border-accent/40 text-left transition-all group flex items-center justify-between gap-3 active:scale-98 shadow-sm"
+              className="w-full min-h-[48px] p-3.5 rounded-2xl bg-surface-2 hover:bg-surface-3 border border-accent/15 hover:border-accent/40 text-left transition-all group flex items-center justify-between gap-3 active:scale-95 shadow-sm"
             >
               <div className="flex items-center gap-3.5 min-w-0">
                 <div className="w-10 h-10 rounded-xl bg-surface border border-accent/15 flex items-center justify-center shrink-0 group-hover:scale-105 transition-transform shadow-sm">

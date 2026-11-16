@@ -19,11 +19,26 @@ export const SUTEGANA = new Set([
  */
 export function splitIntoMora(text: string): string[] {
   if (!text || typeof text !== 'string') return [];
-  const clean = text.trim();
-  if (clean.length === 0) return [];
+  
+  // Strip parenthetical supplemental notes, e.g. " (する)", "（する）", "(タイム)"
+  let clean = text.replace(/\([^)]*\)|（[^）]*）/g, '').trim();
+
+  // If multiple variants are separated by comma, slash, or semicolon, take the primary headword
+  if (/[,、;/]/.test(clean)) {
+    clean = clean.split(/[,、;/]/)[0].trim();
+  }
+
+  // Strip non-phonetic prefix/suffix symbols: ~, ～, 〜, ・, and whitespace
+  clean = clean.replace(/^[~～〜・\s]+|[~～〜・\s]+$/g, '');
+
+  // Filter down to valid kana characters and sound prolonging marks (Chouonpu ー)
+  const chars = Array.from(clean).filter((ch) =>
+    /^[\u3041-\u3096\u30A1-\u30FAー]$/.test(ch)
+  );
+
+  if (chars.length === 0) return [];
 
   const moras: string[] = [];
-  const chars = Array.from(clean);
 
   for (let i = 0; i < chars.length; i++) {
     const char = chars[i];

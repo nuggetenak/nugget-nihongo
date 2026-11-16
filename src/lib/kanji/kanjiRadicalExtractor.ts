@@ -41,7 +41,7 @@ const COMMON_RADICALS_MAP: Record<string, RadicalMetadata> = {
  * Retrieves semantic Indonesian metadata for a given KanjiVG radical element
  */
 export function getRadicalInfo(element: string): RadicalMetadata {
-  if (!element) {
+  if (!element || typeof element !== 'string') {
     return {
       radical: '？',
       kangxiNumber: 0,

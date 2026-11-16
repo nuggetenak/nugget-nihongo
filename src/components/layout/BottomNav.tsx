@@ -7,9 +7,11 @@
 //  Tab 5: Profil & Pengaturan ('settings')
 // ══════════════════════════════════════════════════════════════════
 
-import React from 'react';
+import React, { useMemo } from 'react';
 import { Home, BookOpen, Layers, Sprout, Sparkles, User, Compass } from 'lucide-react';
 import { useAppStore, AppState } from '../../store/useAppStore';
+import { useExerciseStore } from '../../store/useExerciseStore';
+import { getFSRSDueCount } from '../../lib/fsrs/math';
 import { transitionTabChange } from '../../lib/ui/navigation';
 
 // Backward-compatibility schema & legacy tab descriptor mapping for test suite verification
@@ -24,11 +26,30 @@ export const LEGACY_NAV_CONTRACT = [
 ] as const;
 
 export const BottomNav: React.FC = () => {
-  const { activeTab, setActiveTab } = useAppStore();
+  const activeTab = useAppStore((s) => s.activeTab);
+  const setActiveTab = useAppStore((s) => s.setActiveTab);
+  const cards = useAppStore((s) => s.cards);
+  const currentSet = useExerciseStore((s) => s.currentSet);
+  const isSubmitted = useExerciseStore((s) => s.isSubmitted);
+  const hasActiveCbt = currentSet !== null && !isSubmitted;
 
+  // Immersion Shield: Automatically hide BottomNav during timed exams and study studio
   if (activeTab === 'study') {
     return null;
   }
+  if (hasActiveCbt) {
+    return null;
+  }
+
+  // Calculate live FSRS due cards count for review badge
+  const dueCount = useMemo(() => {
+    try {
+      const safeCards = cards && typeof cards === 'object' ? cards : {};
+      return getFSRSDueCount(safeCards);
+    } catch {
+      return 0;
+    }
+  }, [cards]);
 
   // 5-Tab Core Navigation Architecture (Sovereign Mobile-First Model)
   const items: Array<{
@@ -73,30 +94,51 @@ export const BottomNav: React.FC = () => {
     <nav 
       role="navigation" 
       aria-label="Navigasi Utama Ponsel" 
-      className="lg:hidden fixed bottom-0 left-0 right-0 z-40 bg-surface/95 backdrop-blur-lg border-t border-accent/20 px-1 py-1 flex items-center justify-between safe-area-bottom"
+      className="lg:hidden fixed z-40 bg-surface/95 backdrop-blur-lg border-accent/20 px-1 py-1 flex items-center justify-between safe-area-bottom bottom-0 left-0 right-0 border-t sm:bottom-4 sm:left-1/2 sm:-translate-x-1/2 sm:w-full sm:max-w-md sm:rounded-2xl sm:border sm:shadow-2xl"
     >
       {items.map((item) => {
         const isActive = item.isActive;
         return (
           <button
             key={item.id}
-            onClick={() => transitionTabChange(item.id, setActiveTab)}
+            onClick={() => {
+              if (typeof navigator !== 'undefined' && 'vibrate' in navigator) {
+                try {
+                  navigator.vibrate(10);
+                } catch {}
+              }
+              if (isActive) {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+              } else {
+                transitionTabChange(item.id, setActiveTab);
+              }
+            }}
             aria-label={item.label}
             aria-current={isActive ? 'page' : undefined}
-            className={`flex-1 min-h-[48px] py-1.5 px-1 min-w-0 flex flex-col items-center justify-center rounded-2xl transition-all relative active:scale-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent ${
+            className={`flex-1 min-h-[48px] py-1.5 px-1 min-w-0 flex flex-col landscape:flex-row landscape:min-h-[38px] landscape:py-0.5 items-center justify-center rounded-2xl transition-all relative active:scale-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent ${
               isActive
-                ? 'text-accent font-extrabold'
+                ? 'text-accent font-extrabold bg-amber-500/12'
                 : 'text-appText-muted hover:text-appText-bright'
             }`}
           >
-            <span className={`transition-transform duration-200 ${isActive ? 'scale-110 text-accent' : 'scale-100'}`}>
-              {item.icon}
-            </span>
-            <span className="text-[11px] sm:text-xs mt-1 font-bold tracking-tight truncate max-w-full text-center">
+            <div className="relative flex items-center justify-center">
+              <span className={`transition-transform duration-300 ease-spring ${isActive ? 'scale-110 text-accent' : 'scale-100'}`}>
+                {item.icon}
+              </span>
+              {item.id === 'kebun' && dueCount > 0 && (
+                <span 
+                  aria-label={`${dueCount} kartu perlu diulas`}
+                  className="absolute -top-1.5 -right-2.5 min-w-[18px] h-[18px] px-1 rounded-full bg-red-500 text-white font-black text-[10px] flex items-center justify-center shadow-xs pointer-events-none animate-in zoom-in-75 duration-200"
+                >
+                  {dueCount > 99 ? '99+' : dueCount}
+                </span>
+              )}
+            </div>
+            <span className="text-[11px] sm:text-xs mt-1 landscape:mt-0 landscape:ml-1.5 font-bold tracking-tight truncate max-w-full text-center">
               {item.label}
             </span>
             {isActive && (
-              <span className="w-1.5 h-1.5 rounded-full bg-accent mt-0.5 shadow-glow" />
+              <span className="w-1.5 h-1.5 rounded-full bg-accent mt-0.5 landscape:hidden shadow-glow ring-2 ring-amber-500/25" />
             )}
           </button>
         );

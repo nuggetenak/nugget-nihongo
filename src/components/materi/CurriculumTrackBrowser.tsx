@@ -34,6 +34,7 @@ import {
   Info,
   Building2,
   X,
+  Search,
 } from 'lucide-react';
 import {
   useCurriculumStore,
@@ -129,12 +130,15 @@ export const CurriculumTrackBrowser: React.FC<CurriculumTrackBrowserProps> = ({
     openLessonStudy,
   } = useAppStore();
 
-  // Category filter: JLPT academic, SSW vocational, or JFT & Life
-  const [trackCategory, setTrackCategory] = useState<'jlpt' | 'ssw' | 'jft_life'>(() => {
+  // Category filter: JLPT academic, SSW vocational, JFT & Life, or 9 Buku Teks
+  const [trackCategory, setTrackCategory] = useState<'jlpt' | 'ssw' | 'jft_life' | 'textbook'>(() => {
     if (activeTrackId.startsWith('ssw')) return 'ssw';
     if (activeTrackId.startsWith('jft') || activeTrackId === 'seikatsu') return 'jft_life';
     return 'jlpt';
   });
+
+  // In-page search query for filtering units and lessons
+  const [unitSearchQuery, setUnitSearchQuery] = useState('');
 
   // Loaded curriculum data
   const [trackData, setTrackData] = useState<CurriculumTrackData | null>(null);
@@ -232,7 +236,7 @@ export const CurriculumTrackBrowser: React.FC<CurriculumTrackBrowserProps> = ({
     { id: 'ssw-textile', title: 'SSW Tekstil & Garmen', sector: 'Textile (繊維・縫製)', units: '4 Unit · 8 Pelajaran', desc: 'Pemotongan pola CAM, mesin jahit high-speed, press, & detektor jarum.', icon: '🧵', iconSvg: '/icons/ssw/textile.svg', themeColor: 'pink', cluster: 'mfg', ministry: 'METI', ministryKanji: '経済産業省', status: 'coming_soon' },
 
     // ── CLUSTER 3: INFRASTRUKTUR & ALAM ──
-    { id: 'ssw-construction', title: 'SSW Konstruksi & Gemba', sector: 'Construction (建設業)', units: '8 Unit · 24 Pelajaran', desc: 'Pencegahan celaka K3 Gemba, komando akustik KYT, & alat berat.', icon: '👷', iconSvg: '/icons/ssw/construction.svg', themeColor: 'orange', cluster: 'infra', ministry: 'MLIT', ministryKanji: '国土交通省', status: 'active' },
+    { id: 'ssw-construction', title: 'SSW Konstruksi (Kensetsu)', sector: 'Construction (建設業)', units: '8 Unit · 24 Pelajaran', desc: 'Pencegahan celaka K3 lapangan proyek, komando akustik KYT, & alat berat.', icon: '👷', iconSvg: '/icons/ssw/construction.svg', themeColor: 'orange', cluster: 'infra', ministry: 'MLIT', ministryKanji: '国土交通省', status: 'active' },
     { id: 'ssw-agriculture', title: 'SSW Pertanian & Peternakan', sector: 'Agriculture (農業)', units: '4 Unit · 8 Pelajaran', desc: 'Budidaya tanaman rumah kaca, pemberian pakan ternak, & traktor.', icon: '🌱', iconSvg: '/icons/ssw/agriculture.svg', themeColor: 'emerald', cluster: 'infra', ministry: 'MAFF', ministryKanji: '農林水産省', status: 'active' },
     { id: 'ssw-fishery', title: 'SSW Perikanan & Budidaya', sector: 'Fishery (漁業)', units: '4 Unit · 8 Pelajaran', desc: 'Operasi jaring kapal, pembekuan palka, & keramba apung laut.', icon: '🐟', iconSvg: '/icons/ssw/fishery.svg', themeColor: 'blue', cluster: 'infra', ministry: 'MAFF', ministryKanji: '農林水産省', status: 'coming_soon' },
     { id: 'ssw-forestry', title: 'SSW Kehutanan & Hutan', sector: 'Forestry (林業)', units: '4 Unit · 8 Pelajaran', desc: 'Penanaman lereng, operasi chainsaw terarah, & kabel winch kayu.', icon: '🌲', iconSvg: '/icons/ssw/forestry.svg', themeColor: 'emerald', cluster: 'infra', ministry: 'MAFF', ministryKanji: '農林水産省', status: 'coming_soon' },
@@ -401,6 +405,25 @@ export const CurriculumTrackBrowser: React.FC<CurriculumTrackBrowserProps> = ({
     return trackData.units;
   }, [trackData, activeTrackId, constructionSubTrack]);
 
+  const searchedUnits = useMemo(() => {
+    if (!unitSearchQuery.trim()) return displayUnits;
+    const q = unitSearchQuery.toLowerCase().trim();
+    return displayUnits.filter((u) => {
+      const matchUnit =
+        u.title_id?.toLowerCase().includes(q) ||
+        u.title_jp?.toLowerCase().includes(q) ||
+        u.theme?.toLowerCase().includes(q) ||
+        u.can_do_summary?.toLowerCase().includes(q);
+      const matchLesson = u.lessons?.some(
+        (l) =>
+          l.title_id?.toLowerCase().includes(q) ||
+          l.title_jp?.toLowerCase().includes(q) ||
+          l.can_do_statement?.toLowerCase().includes(q)
+      );
+      return matchUnit || matchLesson;
+    });
+  }, [displayUnits, unitSearchQuery]);
+
   const filteredSswTracks = useMemo(() => {
     if (sswCluster === 'all') return sswTracks;
     return sswTracks.filter((t) => t.cluster === sswCluster);
@@ -474,9 +497,15 @@ export const CurriculumTrackBrowser: React.FC<CurriculumTrackBrowserProps> = ({
       <div className="hidden sm:block space-y-4 sm:space-y-6">
         {/* 1. FOUR CATEGORY TABS & RESEARCH MODAL TRIGGER */}
         <div className="flex flex-col md:flex-row md:items-center justify-between gap-2.5">
-          {/* Category Switcher: JLPT, SSW, JFT/Hidup */}
-          <div className="grid grid-cols-3 gap-1 p-1 bg-surface-2/90 rounded-2xl border border-accent/20 w-full md:w-auto">
+          {/* Category Switcher: JLPT, SSW, JFT/Hidup, 9 Buku Teks */}
+          <div
+            role="tablist"
+            aria-label="Kategori Kurikulum"
+            className="grid grid-cols-2 lg:grid-cols-4 gap-1 p-1 bg-surface-2/90 rounded-2xl border border-accent/20 w-full md:w-auto"
+          >
             <button
+              role="tab"
+              aria-selected={trackCategory === 'jlpt'}
               onClick={() => {
                 setTrackCategory('jlpt');
                 if (!activeTrackId.match(/^n[1-5]$/)) {
@@ -494,6 +523,8 @@ export const CurriculumTrackBrowser: React.FC<CurriculumTrackBrowserProps> = ({
             </button>
 
             <button
+              role="tab"
+              aria-selected={trackCategory === 'ssw'}
               onClick={() => {
                 setTrackCategory('ssw');
                 if (!activeTrackId.startsWith('ssw')) {
@@ -511,6 +542,8 @@ export const CurriculumTrackBrowser: React.FC<CurriculumTrackBrowserProps> = ({
             </button>
 
             <button
+              role="tab"
+              aria-selected={trackCategory === 'jft_life'}
               onClick={() => {
                 setTrackCategory('jft_life');
                 if (!activeTrackId.startsWith('jft') && activeTrackId !== 'seikatsu') {
@@ -524,7 +557,23 @@ export const CurriculumTrackBrowser: React.FC<CurriculumTrackBrowserProps> = ({
               }`}
             >
               <HeartPulse className="w-4 h-4 shrink-0" />
-              <span className="truncate">JFT & Hidup di Jepang</span>
+              <span className="truncate">JFT & Hidup</span>
+            </button>
+
+            <button
+              role="tab"
+              aria-selected={trackCategory === 'textbook'}
+              onClick={() => {
+                setTrackCategory('textbook');
+              }}
+              className={`min-h-[44px] px-3 sm:px-4 py-2 rounded-xl text-xs font-bold transition-all flex items-center justify-center gap-1.5 active:scale-95 focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:outline-none ${
+                trackCategory === 'textbook'
+                  ? 'bg-accent text-bg shadow-sm font-extrabold'
+                  : 'text-appText-muted hover:text-appText-bright hover:bg-surface-3'
+              }`}
+            >
+              <BookOpen className="w-4 h-4 shrink-0" />
+              <span className="truncate">9 Buku Teks</span>
             </button>
           </div>
 
@@ -672,6 +721,30 @@ export const CurriculumTrackBrowser: React.FC<CurriculumTrackBrowserProps> = ({
                 </button>
               );
             })}
+
+          {trackCategory === 'textbook' && (
+            <div className="w-full p-4 sm:p-5 rounded-2xl bg-amber-500/10 border border-amber-500/30 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+              <div className="space-y-1">
+                <div className="text-xs font-bold uppercase tracking-wider text-accent flex items-center gap-1.5">
+                  <BookOpen className="w-4 h-4" />
+                  <span>Jalur 9 Buku Teks Pendamping</span>
+                </div>
+                <p className="text-xs text-appText-muted">
+                  Kurikulum terintegrasi untuk Minna no Nihongo, Irodori, Genki, Marugoto, Sou Matome, Quartet, Dekiru Nihongo, Tobira, dan Shin Nihongo no Kiso.
+                </p>
+              </div>
+              <button
+                type="button"
+                onClick={() => {
+                  useAppStore.getState().setActiveTab('materi');
+                }}
+                className="min-h-[44px] px-5 py-2 rounded-xl bg-accent text-bg font-extrabold text-xs uppercase tracking-wider shadow-sm hover:brightness-110 flex items-center justify-center gap-2 active:scale-95 shrink-0"
+              >
+                <span>Buka Studio Buku Teks</span>
+                <ArrowRight className="w-4 h-4" />
+              </button>
+            </div>
+          )}
         </div>
       </div>
 
@@ -709,7 +782,7 @@ export const CurriculumTrackBrowser: React.FC<CurriculumTrackBrowserProps> = ({
                 ? 'Jalur belajar bertahap yang dirancang berdasarkan kurikulum terstruktur dan pemahaman gaya bahasa Indonesia agar kamu bisa berbicara bahasa Jepang alami tanpa salah kaprah.'
                 : trackCategory === 'jft_life'
                 ? 'Kurikulum situasional kehidupan sehari-hari dan standar Japan Foundation: prosedur administrasi balai kota, aturan pemilahan sampah, transaksi perbankan, dan tanggap darurat bencana gempa.'
-                : 'Kurikulum vokasional berbasis skenario kerja nyata: protokol keselamatan K3 Gemba, komunikasi Koe-kake lansia, standar HACCP, dan pelaporan SBAR baku kepada penyelia Jepang.'}
+                : 'Kurikulum vokasional berbasis skenario kerja nyata: protokol keselamatan K3 tempat kerja, komunikasi ramah lansia (Koe-kake), standar HACCP, dan pelaporan SBAR baku kepada penyelia Jepang.'}
             </p>
 
             {/* Prometric CBT Simulator Trigger Button for SSW Tracks */}
@@ -942,6 +1015,29 @@ export const CurriculumTrackBrowser: React.FC<CurriculumTrackBrowserProps> = ({
           Buka / Tutup Semua
         </button>
       </div>
+
+      {/* In-Page Search Bar for Units & Lessons */}
+      <div className="relative">
+        <input
+          type="text"
+          value={unitSearchQuery}
+          onChange={(e) => setUnitSearchQuery(e.target.value)}
+          placeholder="Cari unit atau materi pelajaran (contoh: partikel, sapaan, restoran)..."
+          aria-label="Cari unit atau materi pelajaran"
+          className="w-full min-h-[44px] pl-10 pr-9 py-2.5 rounded-2xl bg-surface border border-accent/25 text-xs sm:text-sm text-appText-bright placeholder:text-appText-muted focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent transition-all shadow-xs"
+        />
+        <Search className="w-4 h-4 text-appText-muted absolute left-3.5 top-1/2 -translate-y-1/2 pointer-events-none" />
+        {unitSearchQuery && (
+          <button
+            type="button"
+            onClick={() => setUnitSearchQuery('')}
+            aria-label="Hapus pencarian"
+            className="absolute right-3 top-1/2 -translate-y-1/2 p-1 text-appText-muted hover:text-appText-bright rounded-lg active:scale-95"
+          >
+            <X className="w-4 h-4" />
+          </button>
+        )}
+      </div>
       {isLoading ? (
         <div className="py-16 text-center space-y-3">
           <div className="w-10 h-10 border-2 border-accent border-t-transparent rounded-full animate-spin mx-auto" />
@@ -1022,7 +1118,17 @@ export const CurriculumTrackBrowser: React.FC<CurriculumTrackBrowserProps> = ({
             </div>
           )}
 
-          {displayUnits.map((unit) => {
+          {searchedUnits.length === 0 && (
+            <div className="py-12 text-center bg-surface-2 rounded-2xl border border-accent/20 p-6 space-y-2">
+              <div className="text-2xl">🔍</div>
+              <div className="text-sm font-bold text-appText-bright">Tidak ada unit yang cocok</div>
+              <p className="text-xs text-appText-muted">
+                Tidak ditemukan materi yang cocok dengan pencarian "{unitSearchQuery}". Coba kata kunci lain.
+              </p>
+            </div>
+          )}
+
+          {searchedUnits.map((unit) => {
             const isExpanded = !!expandedUnitIds[unit.id];
             const unitLessons = unit.lessons || [];
             const completedInUnit = unitLessons.filter((l) =>
@@ -1337,7 +1443,7 @@ export const CurriculumTrackBrowser: React.FC<CurriculumTrackBrowserProps> = ({
             </div>
 
             {/* Category Switcher in Modal */}
-            <div className="grid grid-cols-3 gap-1 p-1 bg-surface rounded-xl border border-accent/15">
+            <div className="grid grid-cols-2 xs:grid-cols-4 gap-1 p-1 bg-surface rounded-xl border border-accent/15">
               <button
                 type="button"
                 onClick={() => setTrackCategory('jlpt')}
@@ -1358,7 +1464,7 @@ export const CurriculumTrackBrowser: React.FC<CurriculumTrackBrowserProps> = ({
                     : 'text-appText-muted hover:text-appText-bright'
                 }`}
               >
-                SSW Vokasional
+                SSW
               </button>
               <button
                 type="button"
@@ -1369,7 +1475,22 @@ export const CurriculumTrackBrowser: React.FC<CurriculumTrackBrowserProps> = ({
                     : 'text-appText-muted hover:text-appText-bright'
                 }`}
               >
-                JFT & Hidup
+                JFT
+              </button>
+              <button
+                type="button"
+                onClick={() => {
+                  setTrackCategory('textbook');
+                  setIsMobileTrackPickerOpen(false);
+                  useAppStore.getState().setActiveTab('materi');
+                }}
+                className={`py-2 px-2.5 rounded-lg text-xs font-bold transition-all min-h-[40px] truncate ${
+                  trackCategory === 'textbook'
+                    ? 'bg-accent text-bg shadow-sm font-extrabold'
+                    : 'text-appText-muted hover:text-appText-bright'
+                }`}
+              >
+                9 Buku
               </button>
             </div>
 

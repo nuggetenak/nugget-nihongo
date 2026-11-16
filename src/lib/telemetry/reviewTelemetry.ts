@@ -69,7 +69,8 @@ class ReviewTelemetryService {
     try {
       const stored = window.localStorage.getItem(ReviewTelemetryService.STORAGE_KEY);
       if (stored) {
-        this.buffer = JSON.parse(stored);
+        const parsed = JSON.parse(stored);
+        this.buffer = Array.isArray(parsed) ? parsed : [];
       }
     } catch (e) {
       console.warn('[reviewTelemetry] Failed to hydrate events buffer:', e);
@@ -80,6 +81,9 @@ class ReviewTelemetryService {
   private persistBuffer(): void {
     if (typeof window === 'undefined' || !window.localStorage) return;
     try {
+      if (!Array.isArray(this.buffer)) {
+        this.buffer = [];
+      }
       if (this.buffer.length > ReviewTelemetryService.MAX_BUFFER_SIZE) {
         this.buffer = this.buffer.slice(this.buffer.length - ReviewTelemetryService.MAX_BUFFER_SIZE);
       }
@@ -107,7 +111,8 @@ class ReviewTelemetryService {
   }): SRSReviewEvent {
     const isTrap = Boolean(params.isL1TrapEncountered);
     const targetLatency = params.targetLatencyMs || (params.modality === 'audio' ? 2500 : 2000);
-    const phi = calculateLatencyFactor(params.latencyMs, targetLatency);
+    const safeLatency = Number.isFinite(params.latencyMs) && params.latencyMs >= 0 ? params.latencyMs : 2000;
+    const phi = calculateLatencyFactor(safeLatency, targetLatency);
 
     const safeOrtho = Number.isFinite(params.currentStabilityOrtho) && params.currentStabilityOrtho > 0
       ? params.currentStabilityOrtho

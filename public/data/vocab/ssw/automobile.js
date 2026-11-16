@@ -60,19 +60,19 @@ window.vocabSSW_Automobile = [
   },
   {
     "id": "v-ssw-automobile-004",
-    "word": "リジットラック（馬）",
-    "reading": "りじっとらっく（うま）",
-    "romaji": "rijittorakku (uma)",
+    "word": "リジットラック",
+    "reading": "りじっとらっく",
+    "romaji": "rijittorakku",
     "meaning": "Penyangga rigid pengaman kolong mobil",
     "meaning_id": "Penyangga rigid pengaman kolong mobil",
     "meaning_en": "Penyangga rigid pengaman kolong mobil",
     "level": "n4",
     "pos": "noun",
-    "nuance": "Crushed Under Falling Vehicle",
+    "nuance": "Penyangga rigid pengaman kolong kendaraan saat dongkrak hidrolik dilepas. Di bengkel mobil Jepang populer disebut 馬 (うま).",
     "examples": [
       {
-        "jp": "リジットラック（馬）の安全確認を行ってください。",
-        "id": "Tolong lakukan konfirmasi keselamatan pada Penyangga rigid pengaman kolong mobil."
+        "jp": "車体をジャッキアップした後は、必ずリジットラックで安全に保持してください。",
+        "id": "Setelah mobil didongkrak, pastikan disangga kuat dengan rigid rack sebelum kolong diperiksa."
       }
     ]
   },
@@ -132,19 +132,19 @@ window.vocabSSW_Automobile = [
   },
   {
     "id": "v-ssw-automobile-008",
-    "word": "自動車検査（車検）",
-    "reading": "じどうしゃけんさ（しゃけん）",
-    "romaji": "jidousha kensa (shaken)",
+    "word": "自動車検査",
+    "reading": "じどうしゃけんさ",
+    "romaji": "jidousha kensa",
     "meaning": "Uji kelaikan jalan kendaraan berkala resmi",
     "meaning_id": "Uji kelaikan jalan kendaraan berkala resmi",
     "meaning_en": "Uji kelaikan jalan kendaraan berkala resmi",
     "level": "n4",
     "pos": "noun",
-    "nuance": "Statutory Legal Operation",
+    "nuance": "Uji berkala kelaikan kendaraan bermotor resmi di Jepang, hampir selalu disingkat sebagai 車検 (しゃけん).",
     "examples": [
       {
-        "jp": "自動車検査（車検）の安全確認を行ってください。",
-        "id": "Tolong lakukan konfirmasi keselamatan pada Uji kelaikan jalan kendaraan berkala resmi."
+        "jp": "自動車検査の満了日を確認し、法定点検整備を実施します。",
+        "id": "Periksa tanggal kedaluwarsa uji kelaikan mobil dan lakukan perawatan berkala wajib."
       }
     ]
   },
@@ -582,19 +582,19 @@ window.vocabSSW_Automobile = [
   },
   {
     "id": "v-ssw-automobile-033",
-    "word": "差動装置（デフ）",
-    "reading": "さどうそうち（でふ）",
-    "romaji": "sadousouchi (defu)",
+    "word": "差動装置",
+    "reading": "さどうそうち",
+    "romaji": "sadousouchi",
     "meaning": "Gardan diferensial pembagi putaran roda",
     "meaning_id": "Gardan diferensial pembagi putaran roda",
     "meaning_en": "Gardan diferensial pembagi putaran roda",
     "level": "n4",
     "pos": "noun",
-    "nuance": "Drivetrain Lockup",
+    "nuance": "Mekanisme diferensial pembeda kecepatan putaran roda kanan-kiri saat berbelok. Teknisi otomotif biasa menyebutnya デフ (def).",
     "examples": [
       {
-        "jp": "差動装置（デフ）の安全確認を行ってください。",
-        "id": "Tolong lakukan konfirmasi keselamatan pada Gardan diferensial pembagi putaran roda."
+        "jp": "差動装置のギアオイル量を点検し、規定値まで補充してください。",
+        "id": "Periksa volume oli gardan diferensial dan tambahkan hingga batas yang ditentukan."
       }
     ]
   },

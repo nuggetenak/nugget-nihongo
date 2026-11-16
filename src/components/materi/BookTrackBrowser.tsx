@@ -146,6 +146,18 @@ export const BookTrackBrowser: React.FC<BookTrackBrowserProps> = ({
     );
   }, [activeVolume]);
 
+  const targetTrackId = useMemo(() => {
+    if (activeVolume?.jlpt) {
+      const raw = activeVolume.jlpt.toLowerCase();
+      if (raw.includes('n1')) return 'n1';
+      if (raw.includes('n2')) return 'n2';
+      if (raw.includes('n3')) return 'n3';
+      if (raw.includes('n4')) return 'n4';
+      if (raw.includes('n5')) return 'n5';
+    }
+    return selectedChapter > 25 ? 'n4' : 'n5';
+  }, [activeVolume, selectedChapter]);
+
   const chapterList = useMemo(() => {
     const list: number[] = [];
     for (let i = 1; i <= totalChapters; i++) {
@@ -233,7 +245,7 @@ export const BookTrackBrowser: React.FC<BookTrackBrowserProps> = ({
                   }
                 }
               }}
-              className={`px-3 py-1.5 rounded-xl text-xs font-bold whitespace-nowrap shrink-0 transition-all active:scale-95 flex items-center gap-1.5 ${
+              className={`min-h-[40px] px-3 py-1.5 rounded-xl text-xs font-bold whitespace-nowrap shrink-0 transition-all active:scale-95 flex items-center gap-1.5 ${
                 selectedTrackFilter === track.id
                   ? 'bg-accent text-bg shadow-sm font-extrabold'
                   : 'bg-surface-2 border border-accent/20 text-appText-muted hover:text-appText-bright'
@@ -310,7 +322,7 @@ export const BookTrackBrowser: React.FC<BookTrackBrowserProps> = ({
                       {b.publisher}
                     </p>
                   </div>
-                  <div className="flex items-center justify-between mt-2 pt-2 border-t border-accent/10 text-[9.5px]">
+                  <div className="flex items-center justify-between mt-2 pt-2 border-t border-accent/10 text-xs">
                     <span className="text-accent font-semibold">
                       {b.volumes?.length || 1} Jilid Lengkap
                     </span>
@@ -327,15 +339,22 @@ export const BookTrackBrowser: React.FC<BookTrackBrowserProps> = ({
 
       {/* Book Volumes & Editions Pills */}
       {activeBook && activeBook.volumes && activeBook.volumes.length > 1 && (
-        <div className="flex items-center gap-2 overflow-x-auto scrollbar-none pb-1">
+        <div
+          role="tablist"
+          aria-label="Pilihan Jilid Buku"
+          className="flex items-center gap-2 overflow-x-auto scrollbar-none pb-1"
+        >
           <span className="text-xs font-bold text-appText-muted shrink-0 mr-1">Jilid / Level:</span>
           {activeBook.volumes.map((vol, idx) => {
             const isSelected = selectedVolumeIndex === idx;
             return (
               <button
                 key={idx}
+                role="tab"
+                aria-selected={isSelected}
+                type="button"
                 onClick={() => setSelectedVolumeIndex(idx)}
-                className={`px-3 py-1.5 rounded-xl text-xs font-bold shrink-0 transition-all active:scale-95 cursor-pointer ${
+                className={`min-h-[40px] px-3.5 py-1.5 rounded-xl text-xs font-bold shrink-0 transition-all active:scale-95 cursor-pointer ${
                   isSelected
                     ? 'bg-accent text-bg shadow-sm font-extrabold'
                     : 'bg-surface-2 border border-accent/20 text-appText-muted hover:text-appText-bright'
@@ -457,7 +476,7 @@ export const BookTrackBrowser: React.FC<BookTrackBrowserProps> = ({
             </div>
 
             <button
-              onClick={() => openLessonStudy('n5', `unit-n5-${selectedChapter}`, `les-n5-u${selectedChapter}-01`, 'book')}
+              onClick={() => openLessonStudy(targetTrackId, `unit-${targetTrackId}-${selectedChapter}`, `les-${targetTrackId}-u${selectedChapter}-01`, 'book')}
               className="min-h-[44px] px-4 py-2 rounded-xl bg-surface-3 hover:bg-surface border border-accent/25 hover:border-accent text-appText-bright font-bold text-xs flex items-center justify-center gap-1.5 active:scale-95 shrink-0"
             >
               <BookOpen className="w-4 h-4 text-accent" />
@@ -618,7 +637,7 @@ export const BookTrackBrowser: React.FC<BookTrackBrowserProps> = ({
             {currentDrills.length > 0 ? (
               <button
                 onClick={() => setIsDrillModalOpen(true)}
-                className="w-full py-3 px-4 rounded-xl bg-accent hover:bg-accent-hot text-bg font-extrabold text-xs sm:text-sm flex items-center justify-center gap-2 transition-all shadow-glow active:scale-98 cursor-pointer"
+                className="w-full min-h-[44px] py-3 px-4 rounded-xl bg-accent hover:bg-accent-hot text-bg font-extrabold text-xs sm:text-sm flex items-center justify-center gap-2 transition-all shadow-glow active:scale-95 cursor-pointer"
               >
                 <Zap className="w-4 h-4 fill-bg" />
                 <span>Mulai Latihan Otentik ({currentDrills.length} Soal)</span>

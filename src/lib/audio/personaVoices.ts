@@ -49,7 +49,7 @@ export const CANONICAL_PERSONA_VOICES: Record<PersonaId, PersonaVoiceProfile> = 
     role: 'Supervisor Pabrik & Konstruksi',
     gender: 'male',
     ageRange: '45-55',
-    tone: 'Tegas, profesional, kebapakan, intonasi lugas Kansai/Kanto gemba',
+    tone: 'Tegas, profesional, kebapakan, intonasi lugas Kansai/Kanto lapangan proyek & industri',
     avatar: '👷‍♂️',
     acousticSpecs: {
       sampleRateHz: 24000,
@@ -147,8 +147,8 @@ export const CANONICAL_PERSONA_VOICES: Record<PersonaId, PersonaVoiceProfile> = 
 /**
  * Automatically assigns a canonical persona based on speaker label and context
  */
-export function resolveSpeakerPersona(speaker: string, context?: string): PersonaVoiceProfile {
-  const s = speaker.toLowerCase();
+export function resolveSpeakerPersona(speaker?: string | null, context?: string | null): PersonaVoiceProfile {
+  const s = (speaker || '').toLowerCase();
   const c = (context || '').toLowerCase();
 
   if (s.includes('tanaka') || s.includes('mandor') || s.includes('boss') || s.includes('supervisor') || s.includes('tenchou') || s.includes('shachou')) {

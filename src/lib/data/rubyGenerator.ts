@@ -41,8 +41,8 @@ export function stripFurigana(text: string): string {
     .replace(/([\u4E00-\u9FAF\u3005]+[\u3040-\u309F]*)\[([^\]]+)\]/g, '$1')
     // Curly brackets: {わたし}
     .replace(/([\u4E00-\u9FAF\u3005]+[\u3040-\u309F]*)\{([^\}]+)\}/g, '$1')
-    // Parentheses: (わたし) only if preceded by Kanji
-    .replace(/([\u4E00-\u9FAF\u3005]+[\u3040-\u309F]*)\(([\u3040-\u309F]+)\)/g, '$1')
+    // Parentheses: (わたし) or （わたし） only if preceded by Kanji
+    .replace(/([\u4E00-\u9FAF\u3005]+[\u3040-\u309F]*)[（\(]([\u3040-\u309F]+)[）\)]/g, '$1')
     // Raw bold tags: <b> and </b>
     .replace(/<\/?b>/gi, '')
     .trim();
@@ -58,7 +58,7 @@ export function extractFuriganaOnly(text: string): string {
     .replace(/[\u4E00-\u9FAF\u3005]+[\u3040-\u309F]*【([^】]+)】/g, '$1')
     .replace(/[\u4E00-\u9FAF\u3005]+[\u3040-\u309F]*\[([^\]]+)\]/g, '$1')
     .replace(/[\u4E00-\u9FAF\u3005]+[\u3040-\u309F]*\{([^\}]+)\}/g, '$1')
-    .replace(/[\u4E00-\u9FAF\u3005]+[\u3040-\u309F]*\(([\u3040-\u309F]+)\)/g, '$1')
+    .replace(/[\u4E00-\u9FAF\u3005]+[\u3040-\u309F]*[（\(]([\u3040-\u309F]+)[）\)]/g, '$1')
     .trim();
 }
 
@@ -68,7 +68,7 @@ export function extractFuriganaOnly(text: string): string {
  * - 私【わたし】
  * - 私[わたし]
  * - 食{た}べる
- * - 漢字(かんじ)
+ * - 漢字(かんじ) or 漢字（かんじ）
  * - Automatic stem/okurigana alignment when an explicit readingHint is provided
  */
 export function parseRubySegments(text: string, readingHint?: string): RubySegment[] {
@@ -76,8 +76,8 @@ export function parseRubySegments(text: string, readingHint?: string): RubySegme
   const clean = text.replace(/<\/?b>/gi, '').trim();
   if (clean.length === 0) return [];
 
-  // Pattern 1: Text contains explicit bracketed annotations
-  const bracketRegex = /([\u4E00-\u9FAF\u3005]+[\u3040-\u309F]*)(?:【([^】]+)】|\[([^\]]+)\]|\{([^\}]+)\}|\(([\u3040-\u309F]+)\))/g;
+  // Pattern 1: Text contains explicit bracketed annotations (including full-width and half-width parentheses)
+  const bracketRegex = /([\u4E00-\u9FAF\u3005]+[\u3040-\u309F]*)(?:【([^】]+)】|\[([^\]]+)\]|\{([^\}]+)\}|(?:\(([\u3040-\u309F]+)\)|（([\u3040-\u309F]+)）))/g;
 
   if (bracketRegex.test(clean)) {
     const segments: RubySegment[] = [];
@@ -92,7 +92,12 @@ export function parseRubySegments(text: string, readingHint?: string): RubySegme
       }
 
       const rawKanji = match[1];
-      const rt = match[2] || match[3] || match[4] || match[5];
+      const rt = (match[2] || match[3] || match[4] || match[5] || match[6] || '').trim();
+
+      if (!rt) {
+        lastIndex = match.index + match[0].length;
+        continue;
+      }
 
       // Peel off trailing okurigana if both kanji and rt end in the same kana
       let suffixLen = 0;

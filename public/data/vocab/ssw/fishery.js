@@ -24,19 +24,19 @@ window.vocabSSW_Fishery = [
   },
   {
     "id": "v-ssw-fishery-002",
-    "word": "海中転落（落水）",
-    "reading": "かいちゅうてんらく（らくすい）",
-    "romaji": "kaichuu tenraku (rakusui)",
+    "word": "海中転落",
+    "reading": "かいちゅうてんらく",
+    "romaji": "kaichuu tenraku",
     "meaning": "Bahaya maut jatuh terlempar ke laut bebas",
     "meaning_id": "Bahaya maut jatuh terlempar ke laut bebas",
     "meaning_en": "Bahaya maut jatuh terlempar ke laut bebas",
     "level": "n4",
     "pos": "noun",
-    "nuance": "Instant Hypothermia & Loss of Life",
+    "nuance": "Bahaya maut awak kapal terjatuh ke laut lepas. Panggilan darurat kapalnya adalah 落水 (らくすい).",
     "examples": [
       {
-        "jp": "海中転落（落水）の安全確認を行ってください。",
-        "id": "Tolong lakukan konfirmasi keselamatan pada Bahaya maut jatuh terlempar ke laut bebas."
+        "jp": "甲板作業中の海中転落を防止するため、必ず救命胴衣を常時着用してください。",
+        "id": "Selalu kenakan rompi pelampung (life jacket) untuk mencegah bahaya terjatuh ke laut saat bekerja di dek kapal."
       }
     ]
   },
@@ -168,19 +168,19 @@ window.vocabSSW_Fishery = [
   },
   {
     "id": "v-ssw-fishery-010",
-    "word": "浮環（救命浮輪）",
-    "reading": "ふかん（きゅうめいふりん）",
-    "romaji": "fukan (kyuumei furin)",
+    "word": "救命浮環",
+    "reading": "きゅうめいふかん",
+    "romaji": "kyuumei fukan",
     "meaning": "Ban pelampung penolong orang jatuh ke laut",
     "meaning_id": "Ban pelampung penolong orang jatuh ke laut",
     "meaning_en": "Ban pelampung penolong orang jatuh ke laut",
     "level": "n4",
     "pos": "noun",
-    "nuance": "Delayed Deployment Fatality",
+    "nuance": "Pelampung keselamatan berbentuk cincin di kapal. Dalam percakapan sehari-hari disebut 救命浮輪 (きゅうめいうきわ).",
     "examples": [
       {
-        "jp": "浮環（救命浮輪）の安全確認を行ってください。",
-        "id": "Tolong lakukan konfirmasi keselamatan pada Ban pelampung penolong orang jatuh ke laut."
+        "jp": "万一の落水者に備えて、救命浮環を直ちに取り出せる場所に配置します。",
+        "id": "Tempatkan pelampung penolong di lokasi yang langsung dapat dijangkau jika ada awak kapal yang terjatuh ke laut."
       }
     ]
   },
@@ -330,19 +330,19 @@ window.vocabSSW_Fishery = [
   },
   {
     "id": "v-ssw-fishery-019",
-    "word": "網目（目合）",
-    "reading": "あみめ（めあい）",
-    "romaji": "amime (meai)",
+    "word": "網目",
+    "reading": "あみめ",
+    "romaji": "amime",
     "meaning": "Ukuran celah lubang jaring penyeleksi ukuran ikan",
     "meaning_id": "Ukuran celah lubang jaring penyeleksi ukuran ikan",
     "meaning_en": "Ukuran celah lubang jaring penyeleksi ukuran ikan",
     "level": "n4",
     "pos": "noun",
-    "nuance": "Regulatory Fine for Illegal Mesh",
+    "nuance": "Ukuran celah lubang jaring penangkap ikan. Dalam istilah perdagangan jaring kapal sering disebut 目合 (めあい).",
     "examples": [
       {
-        "jp": "網目（目合）の安全確認を行ってください。",
-        "id": "Tolong lakukan konfirmasi keselamatan pada Ukuran celah lubang jaring penyeleksi ukuran ikan."
+        "jp": "稚魚の乱獲を防ぐため、網目のサイズが漁業規則に適合しているか確認します。",
+        "id": "Periksa ukuran celah jaring agar sesuai regulasi perikanan guna mencegah penangkapan bibit ikan kecil."
       }
     ]
   },
@@ -528,19 +528,19 @@ window.vocabSSW_Fishery = [
   },
   {
     "id": "v-ssw-fishery-030",
-    "word": "氷冷（砕氷）",
-    "reading": "ひょうれい（さいひょう）",
-    "romaji": "hyourei (saihyou)",
+    "word": "氷冷",
+    "reading": "ひょうれい",
+    "romaji": "hyourei",
     "meaning": "Penimbunan ikan dalam es serut pendingin palka",
     "meaning_id": "Penimbunan ikan dalam es serut pendingin palka",
     "meaning_en": "Penimbunan ikan dalam es serut pendingin palka",
     "level": "n4",
     "pos": "noun",
-    "nuance": "Bacterial Histamine Formation",
+    "nuance": "Metode pendinginan hasil tangkapan menggunakan es serut (砕氷 = さいひょう) di palka kapal.",
     "examples": [
       {
-        "jp": "氷冷（砕氷）の安全確認を行ってください。",
-        "id": "Tolong lakukan konfirmasi keselamatan pada Penimbunan ikan dalam es serut pendingin palka."
+        "jp": "魚の鮮度を維持するため、魚倉内で均一に氷冷を行ってください。",
+        "id": "Lakukan pendinginan es secara merata di dalam palka kapal untuk menjaga kesegaran ikan tangkapan."
       }
     ]
   },

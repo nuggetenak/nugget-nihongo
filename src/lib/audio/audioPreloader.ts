@@ -3,7 +3,7 @@
 //  Eliminates playback latency in Choukai drills & dialogue stages
 // ══════════════════════════════════════════════════════════════════
 
-import { resolveOptimalAudioUrl, configureAudioElement } from './audioCodecResolver';
+import { resolveOptimalAudioUrl, configureAudioElement } from './audioCodecResolver.ts';
 
 export interface PreloadOptions {
   rate?: number;

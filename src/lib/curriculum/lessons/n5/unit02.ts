@@ -158,10 +158,10 @@ export const unit02Lessons: Record<string, Partial<CurriculumLesson>> = {
       {
         "id": "v4",
         "word": "なん",
-        "reading": "なん / なに",
-        "romaji": "nan / nani",
+        "reading": "なん",
+        "romaji": "nan",
         "meaning": "Apa (kata tanya)",
-        "nuance": "Biasa dipadukan dengan ですか menjadi \"Nan desu ka?\".",
+        "nuance": "Biasa dipadukan dengan ですか menjadi \"Nan desu ka?\" (何ですか). Berubah menjadi なに (nani) jika berdiri sendiri atau diikuti partikel tertentu seperti が atau を (misal 何を/nani o).",
         "exampleSentence": {
           "jp": "これは なんですか。",
           "furigana": "これは 何ですか。",

@@ -221,7 +221,7 @@ function compilePhonItems(content) {
     else if (line.startsWith('## 5. DOMAIN III')) currentDomain = 'Domain III: Geminate Consonants (Sokuon)';
     else if (line.startsWith('## 6. DOMAIN IV')) currentDomain = 'Domain IV: Contracted Sounds (Yōon) & /N/';
     else if (line.startsWith('## 7. DOMAIN V')) currentDomain = 'Domain V: Liquid Flap [ɾ] vs Trill [r]';
-    else if (line.startsWith('## 8. DOMAIN VI')) currentDomain = 'Domain VI: Workplace Gemba K3 Emergency Pairs';
+    else if (line.startsWith('## 8. DOMAIN VI')) currentDomain = 'Domain VI: Workplace Safety & Emergency Pairs (K3)';
 
     if (line.startsWith('|') && !line.includes('---|---')) {
       const parts = line.split('|').map(s => s.trim());

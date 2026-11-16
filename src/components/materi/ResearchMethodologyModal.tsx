@@ -4,8 +4,9 @@
 //  SLA Output Hypothesis (Swain), & L1 Contrastive Substratum Engine
 // ══════════════════════════════════════════════════════════════════
 
-import React from 'react';
+import React, { useEffect } from 'react';
 import { X, BookOpen, GraduationCap, Award, Compass, ShieldCheck, Sparkles } from 'lucide-react';
+import { useBodyScrollLock } from '../../hooks/useBodyScrollLock';
 
 interface ResearchMethodologyModalProps {
   isOpen: boolean;
@@ -16,16 +17,33 @@ export const ResearchMethodologyModal: React.FC<ResearchMethodologyModalProps> =
   isOpen,
   onClose,
 }) => {
+  useBodyScrollLock(isOpen);
+
+  useEffect(() => {
+    if (!isOpen) return;
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') onClose();
+    };
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [isOpen, onClose]);
+
   if (!isOpen) return null;
 
   return (
     <div
+      onClick={onClose}
       className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-5 bg-black/80 backdrop-blur-md animate-fade-in"
       role="dialog"
       aria-modal="true"
       aria-labelledby="research-modal-title"
     >
-      <div className="relative w-full max-w-3xl max-h-[90dvh] sm:max-h-[92vh] bg-surface rounded-3xl border border-accent/30 shadow-2xl overflow-y-auto flex flex-col">
+      <div
+        onClick={(e) => e.stopPropagation()}
+        className="relative w-full max-w-3xl max-h-[90dvh] sm:max-h-[92vh] bg-surface rounded-3xl border border-accent/30 shadow-2xl overflow-y-auto flex flex-col"
+      >
+        {/* Mobile Drag Handle */}
+        <div className="w-12 h-1.5 bg-accent/25 rounded-full mx-auto my-2 sm:hidden shrink-0" />
         {/* Header */}
         <div className="sticky top-0 z-10 flex items-center justify-between p-4 sm:p-6 bg-surface/95 backdrop-blur-sm border-b border-accent/20">
           <div className="flex items-center gap-3 min-w-0">

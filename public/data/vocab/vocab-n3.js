@@ -2,7 +2,7 @@
 //  vocab-n3.js — Nugget Nihongo · JLPT N3
 //  AUTO-GENERATED — DO NOT EDIT DIRECTLY
 //  Edit: public/data/vocab/n3/*.js  then run: node scripts/merge-vocab.js
-//  Entries: 2580 | Generated: 2026-11-08
+//  Entries: 2580 | Generated: 2026-11-16
 // ══════════════════════════════════════════════════════════════
 
 window.vocabN3 = [
@@ -169907,9 +169907,9 @@ window.vocabN3 = [
 
 {
   "id": "vg-n3-00796",
-  "word": "しまった (かん)",
-  "reading": "しまった (かん)",
-  "romaji": "shimatta (kan)",
+  "word": "しまった",
+  "reading": "しまった",
+  "romaji": "shimatta",
   "meaning_id": "aduh!, gawat!, celaka!, ya ampun!",
   "meaning_en": "Damn it!, Oh no!, Oops!",
   "jlpt": "n3",
@@ -169968,9 +169968,9 @@ window.vocabN3 = [
 
 {
   "id": "vg-n3-00921",
-  "word": "すみません (かん)",
-  "reading": "すみません (かん)",
-  "romaji": "sumimasen (kan)",
+  "word": "すみません",
+  "reading": "すみません",
+  "romaji": "sumimasen",
   "meaning_id": "maaf; permisi; terima kasih (ungkapan santun multi-situasi)",
   "meaning_en": "excuse me, I'm sorry, thank you (polite interjection)",
   "jlpt": "n3",
@@ -170709,9 +170709,9 @@ window.vocabN3 = [
 
 {
   "id": "vg-n3-01619",
-  "word": "よろしく (かん)",
-  "reading": "よろしく (かん)",
-  "romaji": "yoroshiku (kan)",
+  "word": "よろしく",
+  "reading": "よろしく",
+  "romaji": "yoroshiku",
   "meaning_id": "salam kenal, mohon bantuannya, tolong sampaikan salam",
   "meaning_en": "best regards, please remember me, pleased to meet you",
   "jlpt": "n3",
@@ -171364,9 +171364,9 @@ window.vocabN3 = [
 
 {
   "id": "vg-n3-02094",
-  "word": "はあ (かん)",
-  "reading": "はあ (かん)",
-  "romaji": "haa (kan)",
+  "word": "はあ",
+  "reading": "はあ",
+  "romaji": "haa",
   "meaning_id": "hela napas (keluhan/kelegaan); ah, ya (jawaban ragu atau setengah hati)",
   "meaning_en": "sigh; ah, yeah (hesitant or reluctant reply)",
   "jlpt": "n3",

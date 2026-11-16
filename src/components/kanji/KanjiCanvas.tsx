@@ -33,6 +33,8 @@ export interface KanjiCanvasHandle {
   syncDpi: () => void;
   /** Direct access to the underlying HTMLCanvasElement */
   getCanvasElement: () => HTMLCanvasElement | null;
+  /** Draws the traditional calligraphy quadrant guidelines directly into the canvas buffer */
+  drawGridGuidelines: () => void;
 }
 
 export interface KanjiCanvasProps {
@@ -232,7 +234,7 @@ export const KanjiCanvas = forwardRef<KanjiCanvasHandle, KanjiCanvasProps>(
     // Draw continuous smooth stroke polyline
     const drawStroke = useCallback(
       (points: CanvasPoint[], color = strokeColor, customWidth?: number) => {
-        if (!points || points.length === 0) return;
+        if (!points || !Array.isArray(points) || points.length === 0) return;
         const canvas = canvasRef.current;
         if (!canvas) return;
         const rect = canvas.getBoundingClientRect();
@@ -290,8 +292,9 @@ export const KanjiCanvas = forwardRef<KanjiCanvasHandle, KanjiCanvasProps>(
         drawStroke,
         syncDpi,
         getCanvasElement: () => canvasRef.current,
+        drawGridGuidelines,
       }),
-      [clear, drawDab, drawLine, drawStroke, syncDpi]
+      [clear, drawDab, drawLine, drawStroke, syncDpi, drawGridGuidelines]
     );
 
     // Pointer Event Handlers

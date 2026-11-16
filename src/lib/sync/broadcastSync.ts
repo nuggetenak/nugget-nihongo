@@ -23,17 +23,19 @@ export class BroadcastSyncBus {
   private channel: BroadcastChannel | null = null;
   private tabId: string;
   private listeners: Set<(event: CrossTabEvent) => void> = new Set();
+  private recentEventKeys: Set<string> = new Set();
+  private maxRecentKeys = 100;
   private isInitialized = false;
 
   constructor(customTabId?: string) {
     this.tabId = customTabId || Math.random().toString(36).substring(2, 9);
   }
 
-  private handleStorageEvent = (storageEvent: StorageEvent): void => {
+  public handleStorageEvent = (storageEvent: StorageEvent): void => {
     if (storageEvent.key === 'nn_cross_tab_message' && storageEvent.newValue) {
       try {
         const event = JSON.parse(storageEvent.newValue) as CrossTabEvent;
-        if (event && event.originTabId !== this.tabId) {
+        if (event && typeof event === 'object' && event.originTabId && event.originTabId !== this.tabId) {
           this.notifyListeners(event);
         }
       } catch {}
@@ -82,6 +84,7 @@ export class BroadcastSyncBus {
     }
 
     this.listeners.clear();
+    this.recentEventKeys.clear();
     this.isInitialized = false;
   }
 
@@ -93,10 +96,17 @@ export class BroadcastSyncBus {
     return this.listeners.size;
   }
 
+  public isDuplicate(event: CrossTabEvent): boolean {
+    if (!event || typeof event !== 'object' || !event.type) return false;
+    const eventKey = `${event.originTabId}:${event.timestamp}:${event.type}`;
+    return this.recentEventKeys.has(eventKey);
+  }
+
   /**
    * Broadcasts an event to all other open tabs.
    */
   public broadcast(type: CrossTabEventType, payload?: any): void {
+    if (!type || typeof type !== 'string') return;
     const event: CrossTabEvent = {
       type,
       payload,
@@ -128,7 +138,21 @@ export class BroadcastSyncBus {
     };
   }
 
-  private notifyListeners(event: CrossTabEvent): void {
+  public notifyListeners(event: CrossTabEvent): void {
+    if (!event || typeof event !== 'object' || !event.type || event.originTabId === this.tabId) return;
+
+    // Deduplicate identical events received via multiple transports (BroadcastChannel + storageEvent fallback)
+    const eventKey = `${event.originTabId}:${event.timestamp}:${event.type}`;
+    if (this.recentEventKeys.has(eventKey)) {
+      return;
+    }
+
+    this.recentEventKeys.add(eventKey);
+    if (this.recentEventKeys.size > this.maxRecentKeys) {
+      const first = this.recentEventKeys.values().next().value;
+      if (first) this.recentEventKeys.delete(first);
+    }
+
     for (const listener of this.listeners) {
       try {
         listener(event);

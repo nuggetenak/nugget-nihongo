@@ -157,7 +157,7 @@ export const NuanceCompareModal: React.FC<NuanceCompareModalProps> = ({ isOpen, 
             <button
               key={p.id}
               onClick={() => setSelectedPairId(p.id)}
-              className={`px-3 py-2 min-h-[36px] rounded-xl text-xs font-bold whitespace-nowrap transition-all border flex items-center gap-1.5 active:scale-95 shrink-0 ${
+              className={`px-3 py-2 min-h-[40px] rounded-xl text-xs font-bold whitespace-nowrap transition-all border flex items-center gap-1.5 active:scale-95 shrink-0 ${
                 currentPair.id === p.id
                   ? 'bg-accent text-bg border-accent shadow-sm'
                   : 'bg-surface-2 border-accent/20 text-appText-muted hover:text-appText-bright'
@@ -165,7 +165,7 @@ export const NuanceCompareModal: React.FC<NuanceCompareModalProps> = ({ isOpen, 
             >
               <span>{p.title}</span>
               <span
-                className={`text-[10px] px-1.5 py-0.5 rounded-full font-bold ${
+                className={`text-xs px-1.5 py-0.5 rounded-full font-bold ${
                   currentPair.id === p.id
                     ? 'bg-black/20 text-bg'
                     : 'bg-amber-500/15 text-amber-800 dark:text-amber-300'
@@ -285,7 +285,7 @@ export const NuanceCompareModal: React.FC<NuanceCompareModalProps> = ({ isOpen, 
             <div className="space-y-1.5 flex-1 min-w-0">
               <div className="font-extrabold text-xs text-purple-800 dark:text-purple-300 uppercase tracking-wider flex items-center gap-2">
                 <span>Bedah Kesalahan Khas Pemelajar Indonesia (L1 Interference)</span>
-                <span className="text-[10px] font-mono px-2 py-0.5 rounded-full bg-purple-500/20">
+                <span className="text-xs font-mono px-2 py-0.5 rounded-full bg-purple-500/20">
                   {currentPair.domain}
                 </span>
               </div>

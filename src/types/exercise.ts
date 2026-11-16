@@ -6,7 +6,7 @@
  * - SSW Tokutei Ginou 6 Core Vocational Sectors (including 3 Construction subdivisions)
  */
 
-import { JLPTLevel } from './vocab';
+import type { JLPTLevel } from './vocab.ts';
 
 export type ExerciseTrackType = 'jlpt' | 'jft' | 'ssw';
 

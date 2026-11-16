@@ -77,13 +77,11 @@ export const AuthenticDrillModal: React.FC<AuthenticDrillModalProps> = ({
     return () => window.removeEventListener('keydown', handleKeyDown);
   }, [isOpen, onClose]);
 
-  if (!isOpen || drills.length === 0) return null;
-
   const currentDrill = drills[currentIndex];
   const activeOptions = currentDrill ? getDrillOptions(currentDrill) : [];
 
   const handleSelectOption = (option: string) => {
-    if (isAnswered) return;
+    if (isAnswered || !currentDrill) return;
     setSelectedOption(option);
     setIsAnswered(true);
 
@@ -110,6 +108,40 @@ export const AuthenticDrillModal: React.FC<AuthenticDrillModalProps> = ({
     setIsAnswered(false);
   };
 
+  // Keyboard navigation: 1-4 / A-D to pick answer, Enter/Space to advance
+  useEffect(() => {
+    if (!isOpen || isFinished || !currentDrill) return;
+
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (isAnswered) {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          handleNext();
+        }
+        return;
+      }
+
+      if (activeOptions.length > 0) {
+        const key = e.key.toUpperCase();
+        let targetIdx = -1;
+        if (key === '1' || key === 'A') targetIdx = 0;
+        else if (key === '2' || key === 'B') targetIdx = 1;
+        else if (key === '3' || key === 'C') targetIdx = 2;
+        else if (key === '4' || key === 'D') targetIdx = 3;
+
+        if (targetIdx >= 0 && targetIdx < activeOptions.length) {
+          e.preventDefault();
+          handleSelectOption(activeOptions[targetIdx]);
+        }
+      }
+    };
+
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [isOpen, isFinished, isAnswered, activeOptions, currentDrill]);
+
+  if (!isOpen || drills.length === 0) return null;
+
   const handleRestart = () => {
     setCurrentIndex(0);
     setSelectedOption(null);
@@ -127,7 +159,10 @@ export const AuthenticDrillModal: React.FC<AuthenticDrillModalProps> = ({
       />
 
       {/* Modal Card / Bottom Sheet on Mobile */}
-      <div className="relative w-full max-w-xl bg-surface border border-accent/25 rounded-3xl shadow-2xl z-10 max-h-[90dvh] sm:max-h-[92vh] flex flex-col overflow-hidden animate-in zoom-in-95 duration-200">
+      <div
+        onClick={(e) => e.stopPropagation()}
+        className="relative w-full max-w-xl bg-surface border border-accent/25 rounded-3xl shadow-2xl z-10 max-h-[90dvh] sm:max-h-[92vh] flex flex-col overflow-hidden animate-in zoom-in-95 duration-200"
+      >
         {/* Mobile Drag Indicator */}
         <div className="flex sm:hidden justify-center pt-2.5 pb-1">
           <div className="w-12 h-1.5 rounded-full bg-accent/30" />
@@ -347,9 +382,11 @@ export const AuthenticDrillModal: React.FC<AuthenticDrillModalProps> = ({
                       {promptText}
                     </div>
                     <button
+                      type="button"
                       onClick={() => speakJapanese(promptText)}
-                      className="w-8 h-8 rounded-full bg-surface-3 hover:bg-surface border border-accent/20 text-accent flex items-center justify-center shrink-0 active:scale-95"
+                      className="min-w-[40px] min-h-[40px] w-10 h-10 rounded-2xl bg-surface-3 hover:bg-surface border border-accent/20 text-accent flex items-center justify-center shrink-0 active:scale-95"
                       title="Dengarkan kalimat"
+                      aria-label="Dengarkan kalimat"
                     >
                       <Volume2 className="w-4 h-4" />
                     </button>

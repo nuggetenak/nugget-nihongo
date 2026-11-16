@@ -8,7 +8,7 @@
 //  - Deep Practice Hub with Kotoba Hari Ini & 49-Day Learning Rhythm Heatmap
 // ══════════════════════════════════════════════════════════════════
 
-import React, { useState, useEffect, useMemo } from 'react';
+import React, { useState, useEffect, useMemo, useRef } from 'react';
 import {
   BookOpen,
   Flame,
@@ -137,9 +137,60 @@ export const HomePage: React.FC = () => {
   const goalProgressPercent = Math.min(100, Math.round((todayXP / dailyGoalXP) * 100));
 
   const [dailyKotowaza, setDailyKotowaza] = useState<Kotowaza>(DEFAULT_DAILY_KOTOWAZA);
-  const [roadmapViewMode, setRoadmapViewMode] = useState<'focus' | 'all'>('focus');
-  const [selectedUnitId, setSelectedUnitId] = useState<string | null>(null);
+  const [roadmapViewMode, setRoadmapViewModeState] = useState<'focus' | 'all'>('focus');
+
+  // Restore saved roadmap mode from localStorage on mount (Pillar 2)
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      try {
+        const saved = localStorage.getItem('nn_roadmap_view_mode');
+        if (saved === 'focus' || saved === 'all') {
+          setRoadmapViewModeState(saved);
+        }
+      } catch {}
+    }
+  }, []);
+
+  const setRoadmapViewMode = (mode: 'focus' | 'all') => {
+    setRoadmapViewModeState(mode);
+    try {
+      localStorage.setItem('nn_roadmap_view_mode', mode);
+    } catch {}
+  };
+
+  const [selectedUnitId, setSelectedUnitIdState] = useState<string | null>(() => {
+    if (typeof window !== 'undefined') {
+      try {
+        return sessionStorage.getItem(`nn_selected_unit_${activeTrackId}`) || null;
+      } catch {}
+    }
+    return null;
+  });
+  const setSelectedUnitId = (unitId: string | null) => {
+    setSelectedUnitIdState(unitId);
+    try {
+      if (unitId) {
+        sessionStorage.setItem(`nn_selected_unit_${activeTrackId}`, unitId);
+      } else {
+        sessionStorage.removeItem(`nn_selected_unit_${activeTrackId}`);
+      }
+    } catch {}
+  };
+
   const [showUnitExpectation, setShowUnitExpectation] = useState(false);
+  const [isSpeakingKotowaza, setIsSpeakingKotowaza] = useState(false);
+  const [isSpeakingDailyWord, setIsSpeakingDailyWord] = useState(false);
+  const unitSwitcherRef = useRef<HTMLDivElement | null>(null);
+
+  // Auto-scroll unit switcher to keep active unit centered
+  useEffect(() => {
+    if (unitSwitcherRef.current && selectedUnitId) {
+      const activeEl = unitSwitcherRef.current.querySelector(`[data-unit-id="${selectedUnitId}"]`);
+      if (activeEl) {
+        activeEl.scrollIntoView({ inline: 'center', behavior: 'smooth', block: 'nearest' });
+      }
+    }
+  }, [selectedUnitId]);
 
   // Load track data for active curriculum track
   useEffect(() => {
@@ -244,15 +295,18 @@ export const HomePage: React.FC = () => {
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 sm:gap-6">
           <div className="max-w-2xl space-y-3 min-w-0">
             {/* Badges Row */}
-            <div className="flex flex-wrap items-center gap-2">
-              <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-500/15 border border-amber-500/30 text-accent-hot text-xs font-bold font-mono tabular-nums">
+            <div className="flex flex-wrap items-center gap-1.5 sm:gap-2">
+              <div className="inline-flex items-center gap-1.5 px-2 py-0.5 sm:px-3 sm:py-1 rounded-full bg-amber-500/15 border border-amber-500/30 text-accent-hot text-xs font-bold font-mono tabular-nums">
                 <Flame className={`w-3.5 h-3.5 shrink-0 ${streak > 0 ? 'fill-amber-500 text-amber-500' : 'text-appText-muted opacity-60'}`} />
-                <span>{streak > 0 ? `Streak ${streak} Hari Aktif` : 'Streak 0 Hari (Mulai Hari Ini)'}</span>
+                <span>
+                  <span className="hidden sm:inline">{streak > 0 ? `Streak ${streak} Hari Aktif` : 'Streak 0 Hari (Mulai Hari Ini)'}</span>
+                  <span className="sm:hidden">{streak > 0 ? `Streak ${streak}h` : 'Streak 0h'}</span>
+                </span>
               </div>
 
               {/* Status Target XP Riil (Anti-Kontradiksi 0 XP) */}
               <span
-                className={`text-xs font-bold px-3 py-1 rounded-full border ${
+                className={`text-xs font-bold px-2 py-0.5 sm:px-3 sm:py-1 rounded-full border ${
                   todayXP === 0
                     ? 'bg-amber-500/15 border-amber-500/30 text-accent-hot'
                     : isGoalReached
@@ -260,17 +314,27 @@ export const HomePage: React.FC = () => {
                     : 'bg-amber-500/15 border-amber-500/30 text-accent-hot'
                 }`}
               >
-                {todayXP === 0
-                  ? `🌱 Langkah Pertama (${todayXP}/${dailyGoalXP} XP)`
-                  : isGoalReached
-                  ? `✨ Target Selesai (${todayXP}/${dailyGoalXP} XP)`
-                  : `⚡ Momentum (${todayXP}/${dailyGoalXP} XP)`}
+                <span className="hidden sm:inline">
+                  {todayXP === 0
+                    ? `🌱 Langkah Pertama (${todayXP}/${dailyGoalXP} XP)`
+                    : isGoalReached
+                    ? `✨ Target Selesai (${todayXP}/${dailyGoalXP} XP)`
+                    : `⚡ Momentum (${todayXP}/${dailyGoalXP} XP)`}
+                </span>
+                <span className="sm:hidden">
+                  {todayXP === 0
+                    ? `🌱 ${todayXP}/${dailyGoalXP} XP`
+                    : isGoalReached
+                    ? `✨ ${todayXP}/${dailyGoalXP} XP`
+                    : `⚡ ${todayXP}/${dailyGoalXP} XP`}
+                </span>
               </span>
 
               {dueCount > 0 && (
-                <span className="text-xs font-bold px-3 py-1 rounded-full bg-amber-500/20 border border-amber-500/35 text-accent font-mono">
+                <span className="text-xs font-bold px-2 py-0.5 sm:px-3 sm:py-1 rounded-full bg-amber-500/20 border border-amber-500/35 text-accent font-mono">
                   <span className="sr-only">📬 {dueCount} FSRS Due</span>
-                  <span>🌱 {dueCount} Kata Perlu Diulas</span>
+                  <span className="hidden sm:inline">🌱 {dueCount} Kata Perlu Diulas</span>
+                  <span className="sm:hidden">🌱 {dueCount} Diulas</span>
                 </span>
               )}
 
@@ -331,10 +395,10 @@ export const HomePage: React.FC = () => {
                     );
                   }
                 }}
-                className="min-h-[48px] px-6 py-3 rounded-xl bg-accent hover:bg-accent-hot text-bg font-extrabold text-sm sm:text-base flex items-center gap-2.5 transition-all shadow-glow hover:shadow-lg active:scale-95 cursor-pointer"
+                className="min-h-[48px] px-5 sm:px-6 py-3 rounded-xl bg-accent hover:bg-accent-hot text-bg font-extrabold text-xs sm:text-base flex items-center gap-2 sm:gap-2.5 transition-all shadow-glow hover:shadow-lg active:scale-95 cursor-pointer max-w-full"
               >
                 <Play className="w-4 h-4 fill-bg shrink-0" />
-                <span className="font-extrabold tracking-wide">
+                <span className="font-extrabold tracking-wide truncate max-w-[200px] xs:max-w-[260px] sm:max-w-md inline-block align-bottom">
                   {(() => {
                     if (nextLesson) {
                       if (nextLesson.isAllCompleted) {
@@ -393,11 +457,11 @@ export const HomePage: React.FC = () => {
             </div>
           </div>
 
-          <div className="flex shrink-0 items-center justify-center self-end sm:self-center -mt-6 sm:mt-0">
+          <div className="flex shrink-0 items-center justify-center self-center mt-0">
             <IrasutoyaImage
               assetId="sensei_teaching"
               animateFloat
-              className="w-16 h-16 sm:w-24 sm:h-24 object-contain filter drop-shadow-md"
+              className="w-14 h-14 sm:w-24 sm:h-24 object-contain filter drop-shadow-md shrink-0"
               alt="Sensei Nugget Nihongo (いらすとや)"
               showAttributionTooltip
             />
@@ -431,21 +495,24 @@ export const HomePage: React.FC = () => {
                 className={`h-full rounded-full transition-all duration-500 ${
                   isGoalReached ? 'bg-emerald-500 shadow-glow' : 'bg-accent'
                 }`}
-                style={{ width: `${goalProgressPercent}%` }}
+                style={{ width: `${todayXP === 0 ? 2 : goalProgressPercent}%` }}
               />
             </div>
 
-            <div className="grid grid-cols-3 gap-2 py-2 px-3 bg-surface-2/70 rounded-xl border border-accent/15 text-center">
+            <div className="grid grid-cols-3 gap-1.5 sm:gap-2 py-2 px-2 sm:px-3 bg-surface-2/70 rounded-xl border border-accent/15 text-center">
               <div>
                 <div className="text-xs font-medium text-appText-muted">Total XP</div>
                 <div className="text-xs sm:text-sm font-bold font-mono tabular-nums text-appText-bright mt-0.5">{xp}</div>
               </div>
               <div>
                 <div className="text-xs font-medium text-appText-muted">Streak</div>
-                <div className="text-xs sm:text-sm font-bold font-mono tabular-nums text-accent-hot mt-0.5">{streak} Hari</div>
+                <div className="text-xs sm:text-sm font-bold font-mono tabular-nums text-accent-hot mt-0.5">{streak}h</div>
               </div>
               <div>
-                <div className="text-xs font-medium text-appText-muted">Kartu FSRS</div>
+                <div className="text-xs font-medium text-appText-muted">
+                  <span className="hidden sm:inline">Kartu FSRS</span>
+                  <span className="sm:hidden">FSRS</span>
+                </div>
                 <div className="text-xs sm:text-sm font-bold font-mono tabular-nums text-appText-bright mt-0.5">{totalLearnedCards}</div>
               </div>
             </div>
@@ -475,7 +542,7 @@ export const HomePage: React.FC = () => {
         {/* Daily word card container must have min-h-[180px] to prevent layout shift */}
         <div className="relative overflow-hidden bg-surface-2 border border-accent/20 rounded-2xl sm:rounded-3xl p-4 sm:p-5 flex flex-col justify-between shadow-sm group min-w-0 min-h-[180px] card-interactive-lift">
           <div
-            className="absolute inset-0 bg-cover bg-center opacity-15 group-hover:opacity-25 transition-opacity pointer-events-none"
+            className="absolute inset-0 bg-cover bg-center bg-radial from-amber-500/10 to-surface-2 opacity-15 group-hover:opacity-25 transition-opacity pointer-events-none"
             style={{ backgroundImage: `url('/images/kotowaza-zen.jpg')` }}
           />
           <div className="relative z-10 space-y-2.5">
@@ -502,8 +569,16 @@ export const HomePage: React.FC = () => {
               </div>
               <button
                 type="button"
-                onClick={() => speakJapanese(dailyKotowaza.jp)}
-                className="w-11 h-11 min-w-[40px] min-h-[40px] sm:min-w-[44px] sm:min-h-[44px] rounded-full bg-amber-500/15 hover:bg-amber-500/25 border border-amber-500/30 text-accent flex items-center justify-center transition-all shrink-0 active:scale-95 cursor-pointer"
+                onClick={() => {
+                  if (isSpeakingKotowaza) return;
+                  setIsSpeakingKotowaza(true);
+                  speakJapanese(dailyKotowaza.jp, 1.0, () => setIsSpeakingKotowaza(false), () => setIsSpeakingKotowaza(false));
+                }}
+                className={`w-11 h-11 min-w-[40px] min-h-[40px] sm:min-w-[44px] sm:min-h-[44px] rounded-full border text-accent flex items-center justify-center transition-all shrink-0 active:scale-95 cursor-pointer ${
+                  isSpeakingKotowaza
+                    ? 'bg-accent text-bg ring-2 ring-accent/50 animate-pulse border-accent'
+                    : 'bg-amber-500/15 hover:bg-amber-500/25 border-amber-500/30'
+                }`}
                 title="Dengarkan peribahasa"
                 aria-label={`Dengarkan peribahasa ${dailyKotowaza.jp}`}
               >
@@ -541,7 +616,7 @@ export const HomePage: React.FC = () => {
         <button
           type="button"
           onClick={openKana}
-          className="min-h-[44px] p-2.5 rounded-2xl bg-surface border border-accent/20 hover:border-accent/40 text-left transition-all hover:bg-surface-2 group flex items-center gap-2.5 active:scale-98 shadow-sm cursor-pointer"
+          className="min-h-[44px] p-2 sm:p-2.5 rounded-2xl bg-surface border border-accent/20 hover:border-accent/40 text-left transition-all hover:bg-surface-2 group flex items-center gap-2 sm:gap-2.5 active:scale-98 shadow-sm cursor-pointer"
         >
           <div className="w-8 h-8 rounded-xl bg-amber-500/15 text-accent-hot font-jp font-bold flex items-center justify-center text-xs shrink-0 group-hover:scale-105 transition-transform">
             あ/ア
@@ -550,14 +625,14 @@ export const HomePage: React.FC = () => {
             <div className="text-xs font-bold text-appText-bright truncate group-hover:text-accent transition-colors">
               Bagan Kana
             </div>
-            <div className="text-xs text-appText-muted truncate">Hiragana & Katakana</div>
+            <div className="text-xs text-appText-muted line-clamp-1">Hiragana & Katakana</div>
           </div>
         </button>
 
         <button
           type="button"
           onClick={openConjugation}
-          className="min-h-[44px] p-2.5 rounded-2xl bg-surface border border-accent/20 hover:border-accent/40 text-left transition-all hover:bg-surface-2 group flex items-center gap-2.5 active:scale-98 shadow-sm cursor-pointer"
+          className="min-h-[44px] p-2 sm:p-2.5 rounded-2xl bg-surface border border-accent/20 hover:border-accent/40 text-left transition-all hover:bg-surface-2 group flex items-center gap-2 sm:gap-2.5 active:scale-98 shadow-sm cursor-pointer"
         >
           <div className="w-8 h-8 rounded-xl bg-purple-500/15 text-purple-400 font-bold flex items-center justify-center text-xs shrink-0 group-hover:scale-105 transition-transform">
             🔄
@@ -566,14 +641,14 @@ export const HomePage: React.FC = () => {
             <div className="text-xs font-bold text-appText-bright truncate group-hover:text-purple-300 transition-colors">
               Konjugasi Verba
             </div>
-            <div className="text-xs text-appText-muted truncate">Te, Nai, Ta, Masu</div>
+            <div className="text-xs text-appText-muted line-clamp-1">Te, Nai, Ta, Masu</div>
           </div>
         </button>
 
         <button
           type="button"
           onClick={openBookStudio}
-          className="min-h-[44px] p-2.5 rounded-2xl bg-surface border border-accent/20 hover:border-accent/40 text-left transition-all hover:bg-surface-2 group flex items-center gap-2.5 active:scale-98 shadow-sm cursor-pointer"
+          className="min-h-[44px] p-2 sm:p-2.5 rounded-2xl bg-surface border border-accent/20 hover:border-accent/40 text-left transition-all hover:bg-surface-2 group flex items-center gap-2 sm:gap-2.5 active:scale-98 shadow-sm cursor-pointer"
         >
           <div className="w-8 h-8 rounded-xl bg-emerald-500/15 text-emerald-400 font-bold flex items-center justify-center text-xs shrink-0 group-hover:scale-105 transition-transform">
             📚
@@ -582,14 +657,14 @@ export const HomePage: React.FC = () => {
             <div className="text-xs font-bold text-appText-bright truncate group-hover:text-emerald-300 transition-colors">
               Buku Teks Resmi
             </div>
-            <div className="text-xs text-appText-muted truncate">9 Seri Buku Populer</div>
+            <div className="text-xs text-appText-muted line-clamp-1">9 Seri Buku Populer</div>
           </div>
         </button>
 
         <button
           type="button"
           onClick={openToolbox}
-          className="min-h-[44px] p-2.5 rounded-2xl bg-gradient-to-r from-amber-500/10 via-surface to-surface border border-accent/35 hover:border-accent/60 text-left transition-all hover:bg-surface-2 group flex items-center gap-2.5 active:scale-98 shadow-sm cursor-pointer ring-1 ring-amber-500/20"
+          className="min-h-[44px] p-2 sm:p-2.5 rounded-2xl bg-gradient-to-r from-amber-500/10 via-surface to-surface border border-accent/35 hover:border-accent/60 text-left transition-all hover:bg-surface-2 group flex items-center gap-2 sm:gap-2.5 active:scale-98 shadow-sm cursor-pointer ring-1 ring-amber-500/20"
         >
           <div className="w-8 h-8 rounded-xl bg-amber-500/20 text-accent font-bold flex items-center justify-center text-xs shrink-0 group-hover:scale-105 transition-transform shadow-xs">
             <Wrench className="w-4 h-4 text-accent" />
@@ -599,7 +674,7 @@ export const HomePage: React.FC = () => {
               <span>Semua Alat</span>
               <ChevronRight className="w-3 h-3 text-accent shrink-0 group-hover:translate-x-0.5 transition-transform" />
             </div>
-            <div className="text-xs text-appText-muted truncate">Drawer Alat Lengkap</div>
+            <div className="text-xs text-appText-muted line-clamp-1">Drawer Alat Lengkap</div>
           </div>
         </button>
       </div>
@@ -689,7 +764,7 @@ export const HomePage: React.FC = () => {
 
             {/* Horizontal Quick Unit Switcher (One-tap jumping without 3000px vertical scrolling) */}
             {trackData?.units && trackData.units.length > 1 && (
-              <div className="flex items-center gap-1.5 overflow-x-auto scrollbar-none pb-1 max-w-full">
+              <div ref={unitSwitcherRef} className="flex items-center gap-1.5 overflow-x-auto scrollbar-none pb-1 max-w-full">
                 {trackData.units.map((u) => {
                   const isCurrent = activeUnit?.id === u.id;
                   const completedInU =
@@ -698,6 +773,7 @@ export const HomePage: React.FC = () => {
                   return (
                     <button
                       key={u.id}
+                      data-unit-id={u.id}
                       type="button"
                       onClick={() => setSelectedUnitId(u.id)}
                       className={`min-h-[40px] px-3 py-1.5 rounded-xl text-xs font-bold whitespace-nowrap transition-all flex items-center gap-1.5 active:scale-95 shrink-0 cursor-pointer ${
@@ -794,12 +870,12 @@ export const HomePage: React.FC = () => {
                           </span>
                         )}
                         {lesson.grammar_ids && lesson.grammar_ids.length > 0 && (
-                          <span className="text-xs font-bold px-2.5 py-0.5 rounded-md bg-purple-950/80 text-purple-200 border border-purple-400/50 shadow-xs">
+                          <span className="text-xs font-bold px-2.5 py-0.5 rounded-md bg-purple-100 text-purple-800 border-purple-200 dark:bg-purple-950/80 dark:text-purple-200 dark:border-purple-400/50 shadow-xs">
                             {lesson.grammar_ids.length} Tata Bahasa
                           </span>
                         )}
                         {lesson.vocab_ids && lesson.vocab_ids.length > 0 && (
-                          <span className="text-xs font-bold px-2.5 py-0.5 rounded-md bg-blue-950/80 text-blue-200 border border-blue-400/50 shadow-xs">
+                          <span className="text-xs font-bold px-2.5 py-0.5 rounded-md bg-blue-100 text-blue-800 border-blue-200 dark:bg-blue-950/80 dark:text-blue-200 dark:border-blue-400/50 shadow-xs">
                             {lesson.vocab_ids.length} Kosakata
                           </span>
                         )}
@@ -917,8 +993,16 @@ export const HomePage: React.FC = () => {
                   </div>
                   <button
                     type="button"
-                    onClick={() => speakJapanese(dailyWord.word)}
-                    className="w-11 h-11 min-w-[40px] min-h-[40px] sm:min-w-[44px] sm:min-h-[44px] rounded-full bg-amber-500/15 hover:bg-amber-500/25 border border-amber-500/30 text-accent flex items-center justify-center transition-all active:scale-95 shrink-0 cursor-pointer"
+                    onClick={() => {
+                      if (isSpeakingDailyWord) return;
+                      setIsSpeakingDailyWord(true);
+                      speakJapanese(dailyWord.word, 1.0, () => setIsSpeakingDailyWord(false), () => setIsSpeakingDailyWord(false));
+                    }}
+                    className={`w-11 h-11 min-w-[40px] min-h-[40px] sm:min-w-[44px] sm:min-h-[44px] rounded-full border text-accent flex items-center justify-center transition-all active:scale-95 shrink-0 cursor-pointer ${
+                      isSpeakingDailyWord
+                        ? 'bg-accent text-bg ring-2 ring-accent/50 animate-pulse border-accent'
+                        : 'bg-amber-500/15 hover:bg-amber-500/25 border-amber-500/30'
+                    }`}
                     title="Dengarkan pelafalan"
                     aria-label={`Dengarkan pelafalan ${dailyWord.word}`}
                   >
@@ -951,7 +1035,17 @@ export const HomePage: React.FC = () => {
             </div>
 
             <div className="text-xs text-appText-muted mt-2.5 pt-2.5 sm:mt-3 sm:pt-3 border-t border-accent/10 flex items-center justify-between">
-              <span className="capitalize font-medium">{dailyWord.pos || 'Kata kerja · Bentuk kamus'}</span>
+              <span className="capitalize font-medium">
+                {(() => {
+                  if (!dailyWord.pos) return 'Kata kerja · Bentuk kamus';
+                  const p = dailyWord.pos.toLowerCase();
+                  if (p.includes('noun')) return 'Nomina (Kata Benda)';
+                  if (p.includes('verb')) return 'Verba (Kata Kerja)';
+                  if (p.includes('adj')) return 'Adjektiva (Kata Sifat)';
+                  if (p.includes('adv')) return 'Adverbia (Kata Keterangan)';
+                  return dailyWord.pos;
+                })()}
+              </span>
               <button
                 type="button"
                 onClick={() => openDetailModal(dailyWord, 'vocab')}
@@ -979,7 +1073,8 @@ export const HomePage: React.FC = () => {
             </span>
           </div>
 
-          <div className="w-full max-w-full overflow-x-auto scrollbar-none py-1">
+          <div className="w-full max-w-full overflow-x-auto scrollbar-none py-1 relative">
+            <div className="pointer-events-none absolute right-0 top-0 bottom-0 w-8 bg-gradient-to-l from-surface to-transparent sm:hidden z-10" />
             <HeatmapCalendar days={49} hideWrapper />
           </div>
 

@@ -14,14 +14,17 @@ export const HeatmapCalendar: React.FC<HeatmapCalendarProps> = ({
   hideWrapper = false,
   className = '',
 }) => {
-  const { getHeatmapDays } = useGamificationStore();
+  const heatmap = useGamificationStore((s) => s.heatmap);
+  const getHeatmapDays = useGamificationStore((s) => s.getHeatmapDays);
   const safeDays = Math.max(7, Math.min(365, Number.isFinite(days) && days > 0 ? Math.floor(days) : 49));
-  const heatmapDays = useMemo(() => getHeatmapDays(safeDays), [getHeatmapDays, safeDays]);
+  const heatmapDays = useMemo(() => getHeatmapDays(safeDays), [getHeatmapDays, heatmap, safeDays]);
 
   const activeDaysCount = heatmapDays.filter((d) => d.active).length;
+  const weeksCount = Math.round(safeDays / 7);
+  const titleText = safeDays % 7 === 0 ? `Aktivitas Belajar ${weeksCount} Pekan Terakhir` : `Aktivitas Belajar ${safeDays} Hari Terakhir`;
 
   const getColorClass = (reviews: number) => {
-    if (reviews === 0) return 'bg-surface-3/80 border border-accent/20 text-appText-muted hover:border-accent/40';
+    if (!reviews || reviews <= 0) return 'bg-surface-3/80 border border-accent/20 text-appText-muted hover:border-accent/40';
     if (reviews <= 3) return 'bg-amber-900/80 dark:bg-amber-950/80 text-amber-100 dark:text-amber-200 border border-amber-600/60 dark:border-amber-700/60 shadow-xs';
     if (reviews <= 10) return 'bg-amber-700 dark:bg-amber-800 text-amber-50 dark:text-amber-100 border border-amber-500 font-bold shadow-xs';
     if (reviews <= 25) return 'bg-amber-500 text-stone-950 border border-amber-300 font-black shadow-sm';
@@ -41,7 +44,7 @@ export const HeatmapCalendar: React.FC<HeatmapCalendarProps> = ({
                 animateFloat
               />
             </div>
-            <h3 className="font-bold text-sm text-appText-bright">Aktivitas Belajar 7 Pekan Terakhir</h3>
+            <h3 className="font-bold text-sm text-appText-bright">{titleText}</h3>
           </div>
           <span className="text-xs font-extrabold font-mono text-amber-800 dark:text-amber-400 tabular-nums">
             {activeDaysCount} Hari Aktif

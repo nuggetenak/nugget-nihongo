@@ -146,6 +146,13 @@ export const LessonStudyPage: React.FC = () => {
     };
   }, [trackId, unitId, lessonId]);
 
+  // Dynamic Document Title per Active Lesson (Pillar 98)
+  useEffect(() => {
+    if (currentLesson && currentUnit) {
+      document.title = `${currentLesson.title_id} · Unit ${currentUnit.unit_number} (${trackId.toUpperCase()}) · Nugget Nihongo`;
+    }
+  }, [currentLesson, currentUnit, trackId]);
+
   // Viewport scroll stabilization upon stage change or lesson load (Ticket T-227)
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: 'instant' });
@@ -158,9 +165,11 @@ export const LessonStudyPage: React.FC = () => {
   }, [activeStage, lessonId]);
 
   // Cek apakah pelajaran ini sudah pernah tuntas
-  const isLessonDone =
+  const isLessonDone = Boolean(
     currentLesson &&
-    trackProgress[trackId]?.completedLessons?.includes(currentLesson.id);
+    Array.isArray(trackProgress[trackId]?.completedLessons) &&
+    trackProgress[trackId]?.completedLessons?.includes(currentLesson.id)
+  );
 
   // Navigasi langkah internal
   const stages: Array<{
@@ -313,14 +322,14 @@ export const LessonStudyPage: React.FC = () => {
   }
 
   return (
-    <div className="w-full max-w-full sm:max-w-4xl mx-auto space-y-5 pb-[calc(5.5rem+env(safe-area-inset-bottom))] lg:pb-12 animate-fade-in min-w-0 overflow-x-hidden">
+    <div className="w-full max-w-full sm:max-w-4xl mx-auto space-y-5 pb-[calc(5.5rem+env(safe-area-inset-bottom))] lg:pb-12 animate-in fade-in slide-in-from-right-4 duration-300 min-w-0 overflow-x-hidden">
       {/* ── 1. HEADER STUDIO BELAJAR FOKUS (TARGET 2) ───────────── */}
       <div className="p-3 sm:p-4 rounded-2xl sm:rounded-3xl bg-surface border border-accent/20 flex flex-col sm:flex-row sm:items-center justify-between gap-2.5 sm:gap-3 shadow-sm card-interactive-lift">
           <div className="flex items-center gap-2.5 sm:gap-3 min-w-0">
             <button
               type="button"
               onClick={closeLessonStudy}
-              className="min-h-[44px] min-w-[44px] p-2 sm:p-2.5 rounded-xl sm:rounded-2xl bg-surface-2 hover:bg-surface-3 border border-accent/20 text-appText-muted hover:text-appText-bright transition-colors flex items-center justify-center shrink-0 active:scale-95"
+              className="min-h-[44px] min-w-[44px] p-2 sm:p-2.5 rounded-xl sm:rounded-2xl bg-surface-2 hover:bg-surface-3 border border-accent/20 text-appText-muted hover:text-appText-bright transition-colors flex items-center justify-center shrink-0 active:scale-95 cursor-pointer"
               title="Kembali ke Katalog Materi Hub"
             >
               <ArrowLeft className="w-4 h-4 sm:w-5 sm:h-5" />
@@ -347,7 +356,7 @@ export const LessonStudyPage: React.FC = () => {
                 )}
               </div>
 
-              <h1 className="text-sm sm:text-lg font-extrabold text-appText-bright tracking-tight break-words">
+              <h1 className="text-sm sm:text-lg font-extrabold text-appText-bright tracking-tight break-words" title={currentLesson.title_id}>
                 {currentLesson.title_id}
               </h1>
               <div className="text-xs sm:text-xs text-appText-muted font-jp font-medium truncate hidden sm:block">
@@ -360,7 +369,7 @@ export const LessonStudyPage: React.FC = () => {
             <button
               type="button"
               onClick={handleOpenSensei}
-              className="min-h-[40px] px-3.5 py-1.5 rounded-xl bg-amber-500/15 hover:bg-amber-500/25 border border-amber-500/30 text-amber-800 dark:text-amber-300 text-xs font-bold transition-all flex items-center gap-1.5 shadow-xs active:scale-95 card-interactive-lift"
+              className="min-h-[40px] px-3.5 py-1.5 rounded-xl bg-amber-500/15 hover:bg-amber-500/25 border border-amber-500/30 text-amber-800 dark:text-amber-300 text-xs font-bold transition-all flex items-center gap-1.5 shadow-xs active:scale-95 card-interactive-lift cursor-pointer"
               title="Tanya Sensei seputar materi ini"
               aria-label="Tanya Sensei"
             >
@@ -371,22 +380,26 @@ export const LessonStudyPage: React.FC = () => {
             <button
               type="button"
               onClick={closeLessonStudy}
-              className="text-xs font-bold text-accent hover:underline hidden sm:flex shrink-0 px-3 py-1.5 min-h-[40px] rounded-xl border border-accent/20 bg-surface-2 hover:bg-surface-3 items-center active:scale-95 card-interactive-lift"
+              className="text-xs font-bold text-accent hover:underline hidden sm:flex shrink-0 px-3 py-1.5 min-h-[40px] rounded-xl border border-accent/20 bg-surface-2 hover:bg-surface-3 items-center active:scale-95 card-interactive-lift cursor-pointer"
             >
               Tutup & Kembali
             </button>
           </div>
         </div>
 
-      {/* ── 2. BILAH STEPPER 4-TAHAP INTERAKTIF (TARGET 1) ──────── */}
-      <div className="sticky top-[52px] sm:top-[60px] z-20 bg-bg/95 backdrop-blur-md py-2 border-b border-accent/15 -mx-3 sm:-mx-6 px-3 sm:px-6 shadow-xs">
-        <div className="grid grid-cols-4 gap-1 sm:gap-2 p-1 sm:p-1.5 bg-surface rounded-2xl border border-accent/20 shadow-sm w-full max-w-full overflow-hidden">
+      {/* ── 2. BILAH STEPPER 4-TAHAP INTERAKTIF (NON-STICKY ERGONOMIS) ── */}
+      <div className="py-1.5 sm:py-2 -mx-1 sm:mx-0 px-1 sm:px-0">
+        <div role="tablist" aria-label="Tahapan Belajar 4-Langkah" className="grid grid-cols-4 gap-1 sm:gap-2 p-1 sm:p-1.5 bg-surface rounded-2xl border border-accent/20 shadow-sm w-full max-w-full overflow-hidden">
           {stages.map((st) => {
             const isActive = activeStage === st.id;
             const isCanDoLocked = st.id === 'cando' && !isLessonDone && (drillScore === null || drillScore < 80);
             return (
               <button
                 key={st.id}
+                role="tab"
+                id={`stage-tab-${st.id}`}
+                aria-selected={isActive}
+                aria-controls={`stage-panel-${st.id}`}
                 type="button"
                 onClick={() => {
                   if (isCanDoLocked) {
@@ -412,7 +425,7 @@ export const LessonStudyPage: React.FC = () => {
                 }`}
               >
                 <span className="shrink-0">{isCanDoLocked ? <Lock className="w-3.5 h-3.5 text-amber-700 dark:text-amber-400" /> : st.icon}</span>
-                <span className="min-w-0 text-[11px] sm:text-xs text-center truncate max-w-full">
+                <span className="min-w-0 text-xs text-center truncate max-w-full">
                   <span className="sm:hidden block truncate">{st.shortLabel}</span>
                   <span className="hidden sm:inline">{st.label}</span>
                 </span>
@@ -425,7 +438,9 @@ export const LessonStudyPage: React.FC = () => {
       {/* ── 3. PANEL TAHAP KONTEN DINAMIS ────────────────────────── */}
       <div 
         id="lesson-studio-top"
-        className="scroll-mt-44 sm:scroll-mt-48 p-4 sm:p-7 rounded-3xl bg-surface border border-accent/20 shadow-sm transition-[min-height] duration-300 ease-out min-h-[380px] sm:min-h-[420px] overflow-visible animate-in fade-in slide-in-from-right-4 duration-300"
+        role="tabpanel"
+        aria-labelledby={`stage-tab-${activeStage}`}
+        className="scroll-mt-44 sm:scroll-mt-48 p-4 sm:p-7 rounded-3xl bg-surface border border-accent/20 shadow-sm transition-[min-height] duration-300 ease-out min-h-[380px] sm:min-h-[420px] overflow-visible animate-in fade-in duration-200"
       >
         <div key={activeStage} className="animate-in fade-in duration-200">
           {activeStage === 'dialogue' && (

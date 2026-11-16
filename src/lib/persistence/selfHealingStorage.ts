@@ -3,7 +3,7 @@
 //  Protects UI from syntax errors caused by corrupted localStorage values
 // ══════════════════════════════════════════════════════════════════
 
-import { errorReporter } from '../telemetry/errorReporter';
+import { errorReporter } from '../telemetry/errorReporter.ts';
 
 export interface StorageAuditResult {
   healthy: boolean;

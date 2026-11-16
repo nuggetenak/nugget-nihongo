@@ -60,19 +60,19 @@ window.vocabSSW_Aviation = [
   },
   {
     "id": "v-ssw-aviation-004",
-    "word": "チョーク（輪止め）",
-    "reading": "ちょーく（わどめ）",
-    "romaji": "chooku (wadome)",
+    "word": "チョーク",
+    "reading": "ちょーく",
+    "romaji": "chooku",
     "meaning": "Balok ganjal roda pendarat pesawat terbang",
     "meaning_id": "Balok ganjal roda pendarat pesawat terbang",
     "meaning_en": "Balok ganjal roda pendarat pesawat terbang",
     "level": "n4",
     "pos": "noun",
-    "nuance": "Uncontrolled Aircraft Rollaway",
+    "nuance": "Balok ganjal roda pesawat di apron bandara (wheel chocks). Istilah bahasa Jepangnya adalah 輪止め (わどめ).",
     "examples": [
       {
-        "jp": "チョーク（輪止め）の安全確認を行ってください。",
-        "id": "Tolong lakukan konfirmasi keselamatan pada Balok ganjal roda pendarat pesawat terbang."
+        "jp": "航空機が停止位置に入ったら、直ちにタイヤの前後にチョークを挟んでください。",
+        "id": "Begitu pesawat mencapai posisi berhenti, segera pasang balok ganjal di depan dan belakang ban."
       }
     ]
   },
@@ -366,19 +366,19 @@ window.vocabSSW_Aviation = [
   },
   {
     "id": "v-ssw-aviation-021",
-    "word": "ステム（着陸装置）",
-    "reading": "すてむ（ちゃくりくそうち）",
-    "romaji": "sutemu (chakuriku souchi)",
+    "word": "着陸装置",
+    "reading": "ちゃくりくそうち",
+    "romaji": "chakuriku souchi",
     "meaning": "Unit kaki roda pendarat pesawat (landing gear)",
     "meaning_id": "Unit kaki roda pendarat pesawat (landing gear)",
     "meaning_en": "Unit kaki roda pendarat pesawat (landing gear)",
     "level": "n4",
     "pos": "noun",
-    "nuance": "Gear Collapse on Ground",
+    "nuance": "Unit roda dan kaki pendarat pesawat terbang (landing gear). Di bandara sering disebut gear stem atau shock strut.",
     "examples": [
       {
-        "jp": "ステム（着陸装置）の安全確認を行ってください。",
-        "id": "Tolong lakukan konfirmasi keselamatan pada Unit kaki roda pendarat pesawat (landing gear)."
+        "jp": "着陸装置のストラット部に油漏れや傷がないか目視点検します。",
+        "id": "Lakukan pemeriksaan visual pada strut roda pendarat pesawat apakah ada kebocoran oli atau goresan."
       }
     ]
   },
@@ -456,19 +456,19 @@ window.vocabSSW_Aviation = [
   },
   {
     "id": "v-ssw-aviation-026",
-    "word": "タグ（手荷物札）",
-    "reading": "たぐ（てにもつふだ）",
-    "romaji": "tagu (tenimotsufuda)",
+    "word": "手荷物タグ",
+    "reading": "てにもつたぐ",
+    "romaji": "tenimotsu tagu",
     "meaning": "Label barcode pengenal rute bagasi penumpang",
     "meaning_id": "Label barcode pengenal rute bagasi penumpang",
     "meaning_en": "Label barcode pengenal rute bagasi penumpang",
     "level": "n4",
     "pos": "noun",
-    "nuance": "Mishandled Passenger Baggage",
+    "nuance": "Label barcode bagasi terdaftar penumpang saat check-in bandara. Disebut juga 手荷物札 (てにもつふだ).",
     "examples": [
       {
-        "jp": "タグ（手荷物札）の安全確認を行ってください。",
-        "id": "Tolong lakukan konfirmasi keselamatan pada Label barcode pengenal rute bagasi penumpang."
+        "jp": "預け手荷物のバーコードが読めるよう、手荷物タグをしっかりと巻き付けてください。",
+        "id": "Lilitkan label barcode bagasi dengan erat agar terbaca sempurna oleh mesin pemindai."
       }
     ]
   },

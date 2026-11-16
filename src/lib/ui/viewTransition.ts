@@ -32,7 +32,18 @@ export function withViewTransition(updateFn: () => void | Promise<void>): Promis
       const transition = docWithTransition.startViewTransition(async () => {
         await updateFn();
       });
-      return transition.finished.catch(() => {});
+      if (transition) {
+        if (transition.ready && typeof transition.ready.catch === 'function') {
+          transition.ready.catch(() => {});
+        }
+        if (transition.updateCallbackDone && typeof transition.updateCallbackDone.catch === 'function') {
+          transition.updateCallbackDone.catch(() => {});
+        }
+        if (transition.finished && typeof transition.finished.catch === 'function') {
+          return transition.finished.catch(() => {});
+        }
+      }
+      return Promise.resolve();
     } catch {
       updateFn();
       return Promise.resolve();

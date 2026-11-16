@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useAppStore } from './store/useAppStore';
+import { useAppStore, AppState } from './store/useAppStore';
 import { Sidebar } from './components/layout/Sidebar';
 import { Header } from './components/layout/Header';
 import { BottomNav } from './components/layout/BottomNav';
@@ -20,7 +20,7 @@ import { SkeletonGrid } from './components/ui/SkeletonCard';
 import { A11yAnnouncer } from './components/ui/A11yAnnouncer';
 import { RouteErrorBoundary } from './components/ui/RouteErrorBoundary';
 import { ModalErrorBoundary } from './components/ui/ModalErrorBoundary';
-import { transitionTabChange } from './lib/ui/navigation';
+import { transitionTabChange, getTabScrollMemory } from './lib/ui/navigation';
 
 // Eagerly loaded default view for zero-latency initial paint
 import { HomePage } from './pages/HomePage';
@@ -104,11 +104,61 @@ export const App: React.FC = () => {
   // Listen to browser forward/back hash & popstate changes
   useEffect(() => {
     const syncRouteFromHash = () => {
-
       const fullHash = (window.location.hash || '').replace('#', '');
       const baseTab = fullHash.split('?')[0].toLowerCase();
-      const rootSegment = baseTab.split('/')[0];
-      const mapped = rootSegment === 'browse' ? 'materi' : (rootSegment === 'stats' || rootSegment === 'retensi') ? 'kebun' : (rootSegment === 'arena' || rootSegment === 'kuis') ? 'quiz' : (rootSegment === 'metodologi' || rootSegment === 'method') ? 'methodology' : (rootSegment === 'belajar') ? 'home' : (rootSegment === 'profil' || rootSegment === 'pengaturan' || rootSegment === 'settings') ? 'settings' : (rootSegment === 'tentang') ? 'about' : rootSegment;
+      const segments = baseTab.split('/');
+      let rootSegment = segments[0];
+      let subSegment = segments[1];
+
+      // Support kebab-case hash sub-routing (#dojo-drills, #dojo-kamus, #dojo-pustaka, #dojo-cbt)
+      if (rootSegment.startsWith('dojo-')) {
+        subSegment = rootSegment.substring(5);
+        rootSegment = 'dojo';
+      }
+
+      const ROUTE_ALIAS_MAP: Record<string, AppState['activeTab']> = {
+        browse: 'materi',
+        dojo: 'materi',
+        stats: 'kebun',
+        retensi: 'kebun',
+        ulas: 'kebun',
+        kebun: 'kebun',
+        arena: 'quiz',
+        kuis: 'quiz',
+        quiz: 'quiz',
+        metodologi: 'methodology',
+        method: 'methodology',
+        methodology: 'methodology',
+        belajar: 'home',
+        home: 'home',
+        profil: 'settings',
+        pengaturan: 'settings',
+        settings: 'settings',
+        akun: 'settings',
+        tentang: 'about',
+        about: 'about',
+        sensei: 'sensei',
+        study: 'study',
+        choukai: 'choukai',
+      };
+
+      // Route Sub-Path Matchers and Legacy Contract Assertions
+      const isSettings = rootSegment === 'profil' || rootSegment === 'pengaturan' || rootSegment === 'settings';
+      const isDojo = rootSegment === 'dojo';
+      const mapped = isSettings ? 'settings' : (isDojo ? 'materi' : (ROUTE_ALIAS_MAP[rootSegment] || (rootSegment as AppState['activeTab'])));
+
+      // Dojo Pillar Sub-Routing (#dojo/drills, #dojo/dictionary, #dojo/reference, #dojo/cbt)
+      if (mapped === 'materi' && subSegment) {
+        if (subSegment === 'drills' || subSegment === 'latihan') {
+          useAppStore.getState().setDojoTab('latihan');
+        } else if (subSegment === 'dictionary' || subSegment === 'kamus') {
+          useAppStore.getState().setDojoTab('kamus');
+        } else if (subSegment === 'reference' || subSegment === 'alat' || subSegment === 'pustaka') {
+          useAppStore.getState().setDojoTab('alat');
+        } else if (subSegment === 'cbt' || subSegment === 'simulasi' || subSegment === 'ujian') {
+          useAppStore.getState().setDojoTab('cbt');
+        }
+      }
 
       if (mapped === 'study') {
         const qIndex = fullHash.indexOf('?');
@@ -129,6 +179,9 @@ export const App: React.FC = () => {
 
       const validTabs = ['home', 'materi', 'quiz', 'kebun', 'sensei', 'settings', 'about', 'study', 'methodology', 'choukai'] as const;
       if (validTabs.includes(mapped as any)) {
+        if (useAppStore.getState().activeLessonContext) {
+          useAppStore.setState({ activeLessonContext: null });
+        }
         transitionTabChange(mapped as any, setActiveTab);
       }
     };
@@ -156,14 +209,42 @@ export const App: React.FC = () => {
     };
   }, [setActiveTab]);
 
-  // Instant scroll to top when activeTab changes (ensures user always starts at top)
+  // Per-tab scroll restoration when activeTab changes (restores last viewport scroll position or resets to top 0)
   useEffect(() => {
-    window.scrollTo({ top: 0, behavior: 'instant' });
-    document.documentElement.scrollTop = 0;
-    document.body.scrollTop = 0;
+    if (typeof window !== 'undefined') {
+      const targetScroll = getTabScrollMemory(activeTab) || 0;
+      if (targetScroll === 0) {
+        window.scrollTo({ top: 0, behavior: 'instant' });
+        document.documentElement.scrollTop = 0;
+        document.body.scrollTop = 0;
+      } else {
+        requestAnimationFrame(() => {
+          window.scrollTo({ top: targetScroll, behavior: 'instant' });
+        });
+      }
+    }
   }, [activeTab]);
 
-  // Desktop global keyboard shortcut listener (⌘K, ?, F, R)
+  // Dynamic document.title synchronization
+  useEffect(() => {
+    if (typeof document === 'undefined') return;
+    const TAB_TITLE_MAP: Record<string, string> = {
+      home: 'Belajar',
+      materi: 'Dojo Latihan',
+      kebun: 'Pusat Retensi',
+      quiz: 'Arena Kuis',
+      sensei: 'Sensei AI',
+      methodology: 'Metodologi & Riset',
+      settings: 'Profil & Pengaturan',
+      about: 'Tentang Aplikasi',
+      study: 'Sesi Belajar',
+      choukai: 'Choukai Listening',
+    };
+    const pageTitle = TAB_TITLE_MAP[activeTab] || 'Belajar Bahasa Jepang';
+    document.title = `${pageTitle} · Nugget Nihongo`;
+  }, [activeTab]);
+
+  // Desktop global keyboard shortcut listener (⌘K, ?, F, R, T)
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
       // Shortcut ⌘K / Ctrl+K (Global search)
@@ -191,6 +272,11 @@ export const App: React.FC = () => {
       } else if (e.key === '?') {
         e.preventDefault();
         useModalStore.getState().openModal('shortcuts');
+      } else if (e.key.toLowerCase() === 't') {
+        const { toggleTheme, theme, showToast } = useAppStore.getState();
+        toggleTheme();
+        const next = theme === 'dark' ? 'Terang' : 'Gelap';
+        showToast(`Tema diganti ke mode ${next}`, theme === 'dark' ? '☀️' : '🌙');
       } else if (e.key.toLowerCase() === 'f') {
         const { showFurigana, setShowFurigana, showToast } = useAppStore.getState();
         setShowFurigana(!showFurigana);
@@ -248,7 +334,7 @@ export const App: React.FC = () => {
       {/* Skip to Content Accessible Link (WCAG 2.1 Bypass Blocks) */}
       <a
         href="#main-content"
-        className="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-50 focus:px-4 focus:py-2.5 focus:bg-accent focus:text-bg font-bold focus:rounded-xl focus:shadow-xl focus:ring-2 focus:ring-accent focus:outline-none transition-transform"
+        className="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-50 focus:px-5 focus:py-3 focus:bg-amber-600 focus:text-white dark:focus:bg-amber-500 dark:focus:text-stone-950 font-black focus:rounded-2xl focus:shadow-2xl focus:ring-4 focus:ring-amber-500/50 focus:outline-none transition-transform"
       >
         Lewati ke konten utama
       </a>
@@ -263,7 +349,11 @@ export const App: React.FC = () => {
       <Sidebar />
 
       {/* Main App Content Container (Offset by 260px on desktop) */}
-      <div className="flex-1 lg:pl-[260px] flex flex-col min-h-screen pb-[calc(5.5rem+env(safe-area-inset-bottom))] lg:pb-12 w-full max-w-full min-w-0 overflow-x-hidden">
+      <div className={`flex-1 lg:pl-[260px] flex flex-col min-h-screen ${
+        activeTab === 'study'
+          ? 'pb-0'
+          : 'pb-[calc(5.5rem+env(safe-area-inset-bottom))] lg:pb-12'
+      } w-full max-w-full min-w-0 overflow-x-hidden`}>
         <Header
           onOpenSearch={() => setIsSearchOpen(true)}
           onOpenShortcuts={() => useModalStore.getState().openModal('shortcuts')}

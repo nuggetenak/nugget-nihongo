@@ -113,8 +113,8 @@ const FAQ_LIST: FAQItem[] = [
   {
     id: 'faq-11',
     category: 'umum',
-    q: 'Kapan fitur Sensei AI (Tutor Virtual) akan dirilis?',
-    a: 'Modul Sensei AI saat ini berstatus "Segera Hadir / Coming Soon 🍵". Kami sedang merancang arsitektur tutor percakapan yang cerdas namun tetap menjaga privasi dan tidak membebani kuota pengguna. Tunggu pembaruan pada rilis mendatang!',
+    q: 'Bagaimana cara menggunakan fitur Sensei AI (Tutor Virtual)?',
+    a: 'Fitur Sensei AI telah aktif dan dapat kamu gunakan langsung di Tab 4 Sensei AI! Kamu bisa berkonsultasi bedah pola tata bahasa (Mode Penjelasan), simulasi percakapan situasi nyata di Jepang (Mode Roleplay), dan periksa tulisan kalimatmu (Mode Koreksi) bersama Sensei Nugget & Senpai Aoi. Dilengkapi memori kontekstual Mem0 dan dukungan BYOK tanpa batas.',
   },
   {
     id: 'faq-12',
@@ -281,9 +281,9 @@ export const AboutPage: React.FC = () => {
               <button
                 key={cat.id}
                 onClick={() => setSelectedFaqCategory(cat.id)}
-                className={`px-3 py-1.5 rounded-xl text-xs font-bold transition-all shrink-0 ${
+                className={`px-3.5 py-2 min-h-[40px] rounded-xl text-xs font-bold transition-all shrink-0 active:scale-95 flex items-center justify-center ${
                   selectedFaqCategory === cat.id
-                    ? 'bg-accent text-bg shadow-sm'
+                    ? 'bg-accent text-bg shadow-sm font-extrabold'
                     : 'bg-surface-2 hover:bg-surface-3 text-appText-muted hover:text-appText-bright'
                 }`}
               >
@@ -594,7 +594,7 @@ export const AboutPage: React.FC = () => {
             </div>
             <div>
               <div className="text-xs font-semibold text-appText-bright font-mono">nuggetnihongo@gmail.com</div>
-              <div className="text-[11px] text-appText-muted mt-0.5">Dukungan pemelajar, kurasi konten & feedback</div>
+              <div className="text-xs text-appText-muted mt-0.5">Dukungan pemelajar, kurasi konten & feedback</div>
             </div>
           </a>
 
@@ -614,7 +614,7 @@ export const AboutPage: React.FC = () => {
             </div>
             <div>
               <div className="text-xs font-semibold text-appText-bright font-mono">@NuggetNihongo</div>
-              <div className="text-[11px] text-appText-muted mt-0.5">Update rilis & trivia bahasa Jepang harian</div>
+              <div className="text-xs text-appText-muted mt-0.5">Update rilis & trivia bahasa Jepang harian</div>
             </div>
           </a>
 
@@ -634,7 +634,7 @@ export const AboutPage: React.FC = () => {
             </div>
             <div>
               <div className="text-xs font-semibold text-appText-bright font-mono">trakteer.id/nugget-nihongo</div>
-              <div className="text-[11px] text-appText-muted mt-0.5">Apresiasi kopi untuk pengembangan server & fitur</div>
+              <div className="text-xs text-appText-muted mt-0.5">Apresiasi kopi untuk pengembangan server & fitur</div>
             </div>
           </a>
         </div>
@@ -645,7 +645,7 @@ export const AboutPage: React.FC = () => {
             <span className="text-accent">ℹ️</span>
             <span>Kanal Instagram & Server Discord Komunitas sedang dalam tahap persiapan.</span>
           </div>
-          <span className="px-2.5 py-1 rounded-full text-[10px] font-bold bg-surface-3 text-appText-muted border border-accent/10 uppercase tracking-wider">
+          <span className="px-2.5 py-1 rounded-full text-xs font-bold bg-surface-3 text-appText-muted border border-accent/10 uppercase tracking-wider">
             Segera Hadir
           </span>
         </div>
@@ -681,7 +681,7 @@ export const AboutPage: React.FC = () => {
           </div>
           <button
             onClick={() => setIsLicenseModalOpen(true)}
-            className="p-3 rounded-xl bg-surface-2 border border-accent/20 hover:border-accent text-left transition-all group"
+            className="p-3 min-h-[44px] rounded-xl bg-surface-2 border border-accent/20 hover:border-accent text-left transition-all active:scale-95 group"
             title="Buka Lisensi & Hak Cipta Korpus Terbuka"
           >
             <div className="text-appText-muted text-xs flex items-center justify-between">

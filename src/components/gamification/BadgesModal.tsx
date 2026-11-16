@@ -14,6 +14,7 @@ interface BadgesModalProps {
 export const BadgesModal: React.FC<BadgesModalProps> = ({ isOpen, onClose }) => {
   const { badges } = useGamificationStore();
   const [selectedCategory, setSelectedCategory] = useState<'all' | 'vocab' | 'grammar' | 'streak' | 'special'>('all');
+  const [failedImages, setFailedImages] = useState<Record<string, boolean>>({});
 
   const containerRef = useFocusTrap<HTMLDivElement>(isOpen, onClose);
 
@@ -126,21 +127,23 @@ export const BadgesModal: React.FC<BadgesModalProps> = ({ isOpen, onClose }) => 
                   : 'bg-surface-2/50 border-accent/10 opacity-60'
               }`}
             >
-              <div className="w-12 h-12 p-1 rounded-xl bg-surface shrink-0 shadow-inner flex items-center justify-center overflow-hidden">
-                <img
-                  src={`/assets/badges/${b.id}.svg`}
-                  alt={b.name}
-                  className={`w-10 h-10 object-contain transition-all ${
-                    b.earned ? 'filter-none scale-100' : 'grayscale opacity-40 scale-90'
-                  }`}
-                  onError={(e) => {
-                    const target = e.target as HTMLElement;
-                    target.style.display = 'none';
-                    if (target.parentElement) {
-                      target.parentElement.innerHTML = '<span class="text-xl">🎖️</span>';
-                    }
-                  }}
-                />
+              <div className="w-12 h-12 p-1 rounded-xl bg-surface shrink-0 shadow-inner flex items-center justify-center overflow-hidden border border-accent/15">
+                {!failedImages[b.id] ? (
+                  <img
+                    src={`/assets/badges/${b.id}.svg`}
+                    alt={b.name}
+                    className={`w-10 h-10 object-contain transition-all ${
+                      b.earned ? 'filter-none scale-100' : 'grayscale opacity-40 scale-90'
+                    }`}
+                    onError={() => {
+                      setFailedImages((prev) => ({ ...prev, [b.id]: true }));
+                    }}
+                  />
+                ) : (
+                  <span className={`text-2xl transition-all select-none ${b.earned ? 'scale-100' : 'grayscale opacity-40 scale-90'}`}>
+                    {b.icon || '🎖️'}
+                  </span>
+                )}
               </div>
 
               <div className="space-y-1 flex-1 min-w-0">

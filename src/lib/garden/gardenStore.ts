@@ -77,7 +77,9 @@ function loadSavedPlants(): PlantItem[] {
   if (typeof window === 'undefined') return DEFAULT_PLANTS;
   try {
     const raw = localStorage.getItem('nn_garden_plants');
-    return raw ? JSON.parse(raw) : DEFAULT_PLANTS;
+    if (!raw) return DEFAULT_PLANTS;
+    const parsed = JSON.parse(raw);
+    return Array.isArray(parsed) && parsed.length > 0 ? parsed : DEFAULT_PLANTS;
   } catch {
     return DEFAULT_PLANTS;
   }
@@ -87,7 +89,11 @@ function loadSavedDrops(): number {
   if (typeof window === 'undefined') return 3;
   try {
     const raw = localStorage.getItem('nn_garden_drops');
-    return raw !== null ? parseInt(raw, 10) : 3;
+    if (raw !== null) {
+      const parsed = parseInt(raw, 10);
+      return !Number.isNaN(parsed) && parsed >= 0 ? parsed : 3;
+    }
+    return 3;
   } catch {
     return 3;
   }
@@ -107,6 +113,7 @@ export const useGardenStore = create<GardenStoreState>((set, get) => ({
   },
 
   waterPlant: (plantId: string) => {
+    if (!plantId || typeof plantId !== 'string') return false;
     const { waterDrops, plants } = get();
     if (waterDrops <= 0) return false;
 
@@ -183,16 +190,22 @@ export const useGardenStore = create<GardenStoreState>((set, get) => ({
   },
 
   seedPlant: (kanji, reading, meaning, level) => {
+    if (!kanji || typeof kanji !== 'string' || !kanji.trim()) return false;
+    const cleanKanji = kanji.trim();
+    const cleanReading = (reading ?? '').trim();
+    const cleanMeaning = (meaning ?? '').trim();
+    const validLevel = ['n5', 'n4', 'n3', 'n2', 'n1'].includes(level) ? level : 'n5';
+
     const { plants } = get();
-    if (plants.some((p) => p.kanji === kanji)) return false;
+    if (plants.some((p) => p.kanji === cleanKanji)) return false;
     if (plants.length >= MAX_GARDEN_CAPACITY) return false;
 
     const newPlant: PlantItem = {
-      id: `p-${Date.now()}-${kanji}`,
-      kanji,
-      reading,
-      meaning,
-      level,
+      id: `p-${Date.now()}-${cleanKanji}`,
+      kanji: cleanKanji,
+      reading: cleanReading,
+      meaning: cleanMeaning,
+      level: validLevel,
       stage: 0,
       waterCount: 0,
       maxWater: 5,
@@ -214,12 +227,19 @@ export const useGardenStore = create<GardenStoreState>((set, get) => ({
     if (plants.length === 0) return false;
     let modified = false;
 
+    const hasSpecifiedTarget = typeof lapsedKanji === 'string';
+    const cleanTarget = hasSpecifiedTarget ? lapsedKanji.trim() : '';
+
     const updated = plants.map((p) => {
-      const isTarget = lapsedKanji ? p.kanji === lapsedKanji : p.stage > 0;
+      const isTarget = hasSpecifiedTarget
+        ? (cleanTarget.length > 0 && p.kanji === cleanTarget)
+        : p.stage > 0;
+
       if (isTarget && p.stage > 0 && !modified) {
         modified = true;
+        const maxW = Math.max(1, p.maxWater || 5);
         const newWater = Math.max(0, p.waterCount - 1);
-        const newStage = Math.max(0, Math.min(4, Math.floor((newWater / p.maxWater) * 4)));
+        const newStage = Math.max(0, Math.min(4, Math.floor((newWater / maxW) * 4)));
         return {
           ...p,
           waterCount: newWater,

@@ -2,7 +2,7 @@
 //  vocab-n4.js — Nugget Nihongo · JLPT N4
 //  AUTO-GENERATED — DO NOT EDIT DIRECTLY
 //  Edit: public/data/vocab/n4/*.js  then run: node scripts/merge-vocab.js
-//  Entries: 1286 | Generated: 2026-11-08
+//  Entries: 1286 | Generated: 2026-11-16
 // ══════════════════════════════════════════════════════════════
 
 window.vocabN4 = [
@@ -18152,9 +18152,9 @@ window.vocabN4 = [
 
 {
   "id": "vg-n4-00768",
-  "word": "～(て) しまう",
-  "reading": "～(て) しまう",
-  "romaji": "~(te) shimau",
+  "word": "〜てしまう",
+  "reading": "〜てしまう",
+  "romaji": "~te shimau",
   "meaning_id": "telanjur ~, tuntas melakukan ~",
   "meaning_en": "to end up doing; to do accidentally; to finish completely",
   "jlpt": "n4",
@@ -50344,8 +50344,8 @@ window.vocabN4 = [
 {
   "id": "vg-n4-00394",
   "word": "〜中",
-  "reading": "〜じゅう/ちゅう",
-  "romaji": "juu/chuu",
+  "reading": "〜じゅう",
+  "romaji": "juu",
   "meaning_id": "seluruh ~, sepanjang ~",
   "meaning_en": "throughout ~, all over ~",
   "jlpt": "n4",
@@ -62934,9 +62934,9 @@ window.vocabN4 = [
 
 {
   "id": "vg-n4-00745",
-  "word": "パート (タイム)",
-  "reading": "パート (タイム)",
-  "romaji": "paato (taimu)",
+  "word": "パート",
+  "reading": "パート",
+  "romaji": "paato",
   "meaning_id": "pekerjaan paruh waktu, kerja part-time",
   "meaning_en": "part-time work; part-time job",
   "jlpt": "n4",
@@ -69038,9 +69038,9 @@ window.vocabN4 = [
 
 {
   "id": "vg-n4-00909",
-  "word": "スーパー (マーケット)",
-  "reading": "スーパー (マーケット)",
-  "romaji": "suupaa (maaketto)",
+  "word": "スーパー",
+  "reading": "スーパー",
+  "romaji": "suupaa",
   "meaning_id": "pasar swalayan, supermarket",
   "meaning_en": "supermarket",
   "jlpt": "n4",
@@ -78527,9 +78527,9 @@ window.vocabN4 = [
 
 {
   "id": "vg-n4-00856",
-  "word": "～(に) よると",
-  "reading": "～(に) よると",
-  "romaji": "~(ni) yoruto",
+  "word": "〜によると",
+  "reading": "〜によると",
+  "romaji": "~ni yoruto",
   "meaning_id": "menurut ~, berdasarkan ~",
   "meaning_en": "according to ~",
   "jlpt": "n4",
@@ -78773,9 +78773,9 @@ window.vocabN4 = [
 
 {
   "id": "vg-n4-00917",
-  "word": "～(に) ついて",
-  "reading": "～(に) ついて",
-  "romaji": "~(ni) tsuite",
+  "word": "〜について",
+  "reading": "〜について",
+  "romaji": "~ni tsuite",
   "meaning_id": "tentang ~, mengenai ~",
   "meaning_en": "about ~, regarding ~, concerning ~",
   "jlpt": "n4",

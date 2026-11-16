@@ -27,6 +27,7 @@ import {
 } from 'lucide-react';
 import { useExerciseStore } from '../../store/useExerciseStore';
 import { useAppStore } from '../../store/useAppStore';
+import { useGamificationStore } from '../../lib/gamification/gamificationStore';
 import { useBodyScrollLock } from '../../hooks/useBodyScrollLock';
 import { StarScrambleWidget } from './StarScrambleWidget';
 import { DokkaiSheet } from './DokkaiSheet';
@@ -84,28 +85,65 @@ export const CbtRunnerScreen: React.FC<CbtRunnerScreenProps> = ({ onExit }) => {
     setIsGuidedExplanationOpen(false);
   }, [currentIndex]);
 
-  // Timer Interval Effect
+  // Timer Interval Effect with visibilitychange background-sleep recovery
   useEffect(() => {
     if (isSubmitted || isPaused) return;
 
+    let lastTick = Date.now();
     const timer = setInterval(() => {
-      tickTimer();
+      const now = Date.now();
+      const elapsed = Math.round((now - lastTick) / 1000);
+      if (elapsed >= 1) {
+        tickTimer(elapsed);
+        lastTick = now;
+      }
     }, 1000);
 
-    return () => clearInterval(timer);
+    const handleVisibilityChange = () => {
+      if (typeof document !== 'undefined' && document.visibilityState === 'visible' && !isSubmitted && !isPaused) {
+        const now = Date.now();
+        const elapsed = Math.round((now - lastTick) / 1000);
+        if (elapsed >= 1) {
+          tickTimer(elapsed);
+          lastTick = now;
+        }
+      } else {
+        lastTick = Date.now();
+      }
+    };
+
+    if (typeof document !== 'undefined') {
+      document.addEventListener('visibilitychange', handleVisibilityChange);
+    }
+
+    return () => {
+      clearInterval(timer);
+      if (typeof document !== 'undefined') {
+        document.removeEventListener('visibilitychange', handleVisibilityChange);
+      }
+    };
   }, [isSubmitted, isPaused, tickTimer]);
 
-  // Audio & Confetti on Submission
+  // Audio, Confetti, Streak & Heatmap on Submission
   useEffect(() => {
     if (isSubmitted && sessionSummary) {
+      const earnedXp = sessionSummary.isPassed
+        ? sessionSummary.correctCount * 15
+        : sessionSummary.correctCount * 5;
+
       if (sessionSummary.isPassed) {
         playFanfareSfx();
         fireConfetti();
-        incrementXp(sessionSummary.correctCount * 15);
       } else {
         playErrorSfx();
-        incrementXp(sessionSummary.correctCount * 5);
       }
+      incrementXp(earnedXp);
+
+      // Record CBT exam activity in user streak & heatmap calendar
+      try {
+        useAppStore.getState().recordStudyActivity();
+        useGamificationStore.getState().recordActivity(sessionSummary.totalQuestions, earnedXp);
+      } catch {}
     }
   }, [isSubmitted]);
 
@@ -284,7 +322,7 @@ export const CbtRunnerScreen: React.FC<CbtRunnerScreenProps> = ({ onExit }) => {
                 <button
                   type="button"
                   onClick={() => setResultFilter('all')}
-                  className={`px-3 py-1 text-xs font-bold rounded-lg transition-all ${
+                  className={`min-h-[40px] px-3.5 py-1.5 text-xs font-bold rounded-lg transition-all active:scale-95 ${
                     resultFilter === 'all'
                       ? 'bg-amber-500 text-stone-950 font-black'
                       : 'text-appText-muted hover:text-appText-bright'
@@ -295,7 +333,7 @@ export const CbtRunnerScreen: React.FC<CbtRunnerScreenProps> = ({ onExit }) => {
                 <button
                   type="button"
                   onClick={() => setResultFilter('wrong')}
-                  className={`px-3 py-1 text-xs font-bold rounded-lg transition-all ${
+                  className={`min-h-[40px] px-3.5 py-1.5 text-xs font-bold rounded-lg transition-all active:scale-95 ${
                     resultFilter === 'wrong'
                       ? 'bg-rose-500 text-white font-black'
                       : 'text-appText-muted hover:text-appText-bright'
@@ -306,7 +344,7 @@ export const CbtRunnerScreen: React.FC<CbtRunnerScreenProps> = ({ onExit }) => {
                 <button
                   type="button"
                   onClick={() => setResultFilter('correct')}
-                  className={`px-3 py-1 text-xs font-bold rounded-lg transition-all ${
+                  className={`min-h-[40px] px-3.5 py-1.5 text-xs font-bold rounded-lg transition-all active:scale-95 ${
                     resultFilter === 'correct'
                       ? 'bg-emerald-500 text-stone-950 font-black'
                       : 'text-appText-muted hover:text-appText-bright'
@@ -591,7 +629,7 @@ export const CbtRunnerScreen: React.FC<CbtRunnerScreenProps> = ({ onExit }) => {
                     key={optIdx}
                     type="button"
                     onClick={() => handleOptionClick(optIdx)}
-                    className={`card-interactive-lift min-h-[56px] px-4 py-3.5 rounded-2xl border-2 text-left font-bold text-sm sm:text-base transition-all flex items-center justify-between gap-3 active:scale-[0.98] ${
+                    className={`card-interactive-lift min-h-[56px] px-4 py-3.5 rounded-2xl border-2 text-left font-bold text-sm sm:text-base transition-all flex items-center justify-between gap-3 active:scale-95 ${
                       isSelected
                         ? 'bg-amber-500/15 border-amber-400 text-amber-900 dark:text-amber-300 font-bold shadow-sm'
                         : 'bg-surface-2 hover:bg-surface-3 border-theme text-appText-bright'

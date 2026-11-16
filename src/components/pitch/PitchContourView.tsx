@@ -5,7 +5,7 @@
 
 import React from 'react';
 import { Volume2, Music } from 'lucide-react';
-import { MoraUnit, playPitchToneMelody } from '../../lib/pitch/pitchEngine';
+import { MoraUnit, playPitchToneMelody, playSingleMoraTone } from '../../lib/pitch/pitchEngine';
 import { speakJapanese } from '../../lib/audio/tts';
 
 interface PitchContourViewProps {
@@ -60,6 +60,18 @@ export const PitchContourView: React.FC<PitchContourViewProps> = ({
     playPitchToneMelody(moras, particlePitch);
   };
 
+  const handleTapMora = (m: MoraUnit, e: React.MouseEvent) => {
+    e.stopPropagation();
+    playSingleMoraTone(m.isHigh);
+    speakJapanese(m.mora);
+  };
+
+  const handleTapParticle = (e: React.MouseEvent) => {
+    e.stopPropagation();
+    playSingleMoraTone(particlePitch === 'high');
+    speakJapanese(particleText);
+  };
+
   return (
     <div className="flex flex-col items-center select-none">
       {/* Category & Kanji Header */}
@@ -109,13 +121,23 @@ export const PitchContourView: React.FC<PitchContourViewProps> = ({
                   className={m.hasDrop ? 'fill-rose-500 stroke-2 stroke-surface' : 'fill-amber-400 stroke-2 stroke-surface'}
                 />
                 {m.hasDrop && (
-                  <circle
-                    cx={cx}
-                    cy={cy}
-                    r={compact ? 7 : 8}
-                    className="stroke-rose-500 fill-none opacity-40 animate-ping"
-                    strokeWidth="1"
-                  />
+                  <g>
+                    <circle
+                      cx={cx}
+                      cy={cy}
+                      r={compact ? 7 : 8}
+                      className="stroke-rose-500/80 fill-rose-500/20"
+                      strokeWidth="1.5"
+                    />
+                    <text
+                      x={cx}
+                      y={cy - (compact ? 6 : 8)}
+                      textAnchor="middle"
+                      className="fill-rose-500 text-[8px] font-black select-none pointer-events-none"
+                    >
+                      ▼
+                    </text>
+                  </g>
                 )}
               </g>
             );
@@ -136,17 +158,21 @@ export const PitchContourView: React.FC<PitchContourViewProps> = ({
             <div
               key={i}
               style={{ width: `${stepWidth}px` }}
-              className="text-center font-jp text-xs sm:text-sm font-bold text-appText-bright transition-transform hover:scale-110"
+              className="text-center font-jp text-xs sm:text-sm font-bold text-appText-bright"
             >
-              <div
-                className={`w-6 h-6 sm:w-7 sm:h-7 mx-auto rounded-lg flex items-center justify-center border text-xs sm:text-xs font-black ${
+              <button
+                type="button"
+                onClick={(e) => handleTapMora(m, e)}
+                title={`${m.mora} (${m.isHigh ? 'Nada Tinggi' : 'Nada Rendah'}) — Ketuk untuk dengar`}
+                aria-label={`Mora ${m.mora}, nada ${m.isHigh ? 'tinggi' : 'rendah'}`}
+                className={`w-6 h-6 sm:w-7 sm:h-7 mx-auto rounded-lg flex items-center justify-center border text-xs sm:text-xs font-black transition-all active:scale-90 hover:scale-110 cursor-pointer shadow-xs ${
                   m.isHigh
-                    ? 'bg-amber-500/20 text-amber-800 dark:text-amber-300 border-amber-500/40 shadow-xs'
-                    : 'bg-surface-3 text-appText-muted border-accent/15'
+                    ? 'bg-amber-500/20 text-amber-800 dark:text-amber-300 border-amber-500/40'
+                    : 'bg-surface-3 text-appText-muted border-accent/15 hover:border-accent/40'
                 }`}
               >
                 {m.mora}
-              </div>
+              </button>
             </div>
           ))}
 
@@ -154,11 +180,16 @@ export const PitchContourView: React.FC<PitchContourViewProps> = ({
           <div
             style={{ width: `${stepWidth}px` }}
             className="text-center font-jp text-xs sm:text-sm font-bold text-sky-800 dark:text-sky-400"
-            title="Partikel pengiring [ga] menunjukkan letak jatuhnya nada"
+            title="Partikel pengiring [ga] menunjukkan letak jatuhnya nada — Ketuk untuk dengar"
           >
-            <div className="w-6 h-6 sm:w-7 sm:h-7 mx-auto rounded-lg flex items-center justify-center border border-sky-500/30 bg-sky-500/15 text-sky-800 dark:text-sky-300 text-xs font-black">
+            <button
+              type="button"
+              onClick={handleTapParticle}
+              aria-label={`Partikel ${particleText}, nada ${particlePitch === 'high' ? 'tinggi' : 'rendah'}`}
+              className="w-6 h-6 sm:w-7 sm:h-7 mx-auto rounded-lg flex items-center justify-center border border-sky-500/30 bg-sky-500/15 text-sky-800 dark:text-sky-300 text-xs font-black transition-all active:scale-90 hover:scale-110 cursor-pointer"
+            >
               {particleText}
-            </div>
+            </button>
           </div>
         </div>
       </div>

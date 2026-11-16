@@ -169,7 +169,7 @@ export const KotowazaModal: React.FC<KotowazaModalProps> = ({ isOpen, onClose })
                 <button
                   key={cat}
                   onClick={() => setSelectedCategory(cat)}
-                  className={`px-3 py-1.5 rounded-xl text-xs font-semibold whitespace-nowrap shrink-0 transition-all active:scale-95 ${
+                  className={`min-h-[40px] px-3.5 py-1.5 rounded-xl text-xs font-semibold whitespace-nowrap shrink-0 transition-all active:scale-95 flex items-center ${
                     isSelected
                       ? 'bg-accent text-bg font-extrabold shadow-sm'
                       : 'bg-surface hover:bg-surface-3 text-appText-muted hover:text-appText-bright border border-accent/15'
@@ -232,6 +232,11 @@ export const KotowazaModal: React.FC<KotowazaModalProps> = ({ isOpen, onClose })
               {dailyItem.literal && (
                 <div className="text-xs text-appText-muted italic">
                   Harfiah: {dailyItem.literal}
+                </div>
+              )}
+              {dailyItem.indonesianEquivalent && (
+                <div className="text-xs text-amber-700 dark:text-amber-300 font-medium">
+                  Padanan ID: "{dailyItem.indonesianEquivalent}"
                 </div>
               )}
 
@@ -331,6 +336,11 @@ export const KotowazaModal: React.FC<KotowazaModalProps> = ({ isOpen, onClose })
                       {item.literal && (
                         <div className="text-xs text-appText-muted italic">
                           Harfiah: {item.literal}
+                        </div>
+                      )}
+                      {item.indonesianEquivalent && (
+                        <div className="text-xs text-amber-700 dark:text-amber-300 font-medium">
+                          Padanan ID: "{item.indonesianEquivalent}"
                         </div>
                       )}
                     </div>

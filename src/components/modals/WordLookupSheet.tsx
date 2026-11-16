@@ -8,6 +8,8 @@ import { X, Volume2, BookOpen, GitCommit, Sparkles, Layers } from 'lucide-react'
 import { offlineDictionary, WordLookupResult } from '../../lib/japanese/offlineDictionary';
 import { audioService } from '../../lib/audio/audioService';
 import { IrasutoyaImage } from '../common/IrasutoyaImage';
+import { useFocusTrap } from '../../hooks/useFocusTrap';
+import { useBodyScrollLock } from '../../hooks/useBodyScrollLock';
 
 interface WordLookupSheetProps {
   word: string;
@@ -16,6 +18,9 @@ interface WordLookupSheetProps {
 }
 
 export const WordLookupSheet: React.FC<WordLookupSheetProps> = ({ word, isOpen, onClose }) => {
+  const containerRef = useFocusTrap<HTMLDivElement>(isOpen, onClose);
+  useBodyScrollLock(isOpen);
+
   if (!isOpen || !word) return null;
 
   const result: WordLookupResult = offlineDictionary.lookup(word);
@@ -30,6 +35,7 @@ export const WordLookupSheet: React.FC<WordLookupSheetProps> = ({ word, isOpen, 
       onClick={onClose}
     >
       <div
+        ref={containerRef}
         role="dialog"
         aria-modal="true"
         aria-labelledby="word-lookup-title"

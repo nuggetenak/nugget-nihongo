@@ -113,7 +113,8 @@ function parsePatternString(patternStr: string): { kanji: string; kana: string; 
     const rest = slashMatch[3] || '';
     const pitchMatch = rest.match(/\[(\d+)\]/);
     if (pitchMatch) {
-      pitchNumber = parseInt(pitchMatch[1], 10);
+      const rawPitch = parseInt(pitchMatch[1], 10);
+      pitchNumber = Number.isFinite(rawPitch) && rawPitch >= 0 ? rawPitch : 0;
       meaning = rest.replace(/\[\d+\]/, '').trim();
     } else {
       meaning = rest.trim();
@@ -126,7 +127,8 @@ function parsePatternString(patternStr: string): { kanji: string; kana: string; 
       const rest = parenMatch[2] || '';
       const pitchMatch = rest.match(/\[(\d+)\]/);
       if (pitchMatch) {
-        pitchNumber = parseInt(pitchMatch[1], 10);
+        const rawPitch = parseInt(pitchMatch[1], 10);
+        pitchNumber = Number.isFinite(rawPitch) && rawPitch >= 0 ? rawPitch : 0;
         meaning = rest.replace(/\[\d+\]/, '').trim();
       } else {
         meaning = rest.trim();
@@ -197,6 +199,7 @@ export async function loadAllHVPTPairs(): Promise<HVPTPairItem[]> {
   if (hvptCache) return [...hvptCache];
 
   const allPairs = await loadDiagnosticPairs();
+  if (!Array.isArray(allPairs)) return [];
   const phonological = allPairs.filter((p) => {
     return (
       (p.id && p.id.startsWith('cp-phon-')) ||
@@ -378,6 +381,7 @@ export function summarizeHVPTSession(results: HVPTQuizResult[]): HVPTSessionSumm
  * Play Japanese audio synthesized according to the chosen speaker's vocal acoustics
  */
 export async function playHVPTSpeaker(text: string, speakerKey: string = 'speaker_m1'): Promise<void> {
+  if (!text || typeof text !== 'string') return;
   const profile = HVPT_SPEAKERS.find((s) => s.key === speakerKey) || HVPT_SPEAKERS[0];
   return speakJapanese(text, {
     gender: profile.gender === 'F' ? 'female' : 'male',

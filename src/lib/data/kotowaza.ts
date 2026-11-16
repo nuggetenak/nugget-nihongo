@@ -29,6 +29,7 @@ export const KOTOWAZA_COLLECTION: Kotowaza[] = [
     wisdom: "Simbol ketabahan sejati (ganbaru). Jangan pernah menyerah meskipun berkali-kali menghadapi kesulitan dalam mengingat kanji atau gagal dalam tes.",
     category: "Ketekunan & Tekad",
     origin: "Filosofi boneka Daruma yang selalu berdiri tegak kembali saat digulingkan.",
+    indonesianEquivalent: "Gagal sekali bukan berarti runtuh; bangkit kembali pantang menyerah",
   },
   {
     id: "ktw-002",
@@ -49,6 +50,7 @@ export const KOTOWAZA_COLLECTION: Kotowaza[] = [
     wisdom: "Sedikit demi sedikit lama-lama menjadi bukit. Menghafal 5 kata baru per hari akan menjadi ribuan kosakata dalam hitungan bulan.",
     category: "Konsistensi",
     origin: "Kitab Buddhis Daizokyo tentang akumulasi amal kecil yang berbuah besar.",
+    indonesianEquivalent: "Sedikit-sedikit lama-lama jadi bukit",
   },
   {
     id: "ktw-004",
@@ -69,6 +71,7 @@ export const KOTOWAZA_COLLECTION: Kotowaza[] = [
     wisdom: "Bahkan penutur asli atau pengajar berpengalaman pun bisa membuat kekeliruan. Jangan takut salah saat berlatih kuis atau berbicara.",
     category: "Kerendahan Hati",
     origin: "Fabel tradisional Jepang tentang kewaspadaan seorang ahli.",
+    indonesianEquivalent: "Sepandai-pandai tupai melompat, sekali waktu jatuh juga",
   },
   {
     id: "ktw-006",
@@ -79,6 +82,7 @@ export const KOTOWAZA_COLLECTION: Kotowaza[] = [
     wisdom: "Kesabaran yang tekun akan membuahkan hasil manis. Menguasai tata bahasa kompleks membutuhkan waktu dan ketenangan hati.",
     category: "Kesabaran",
     origin: "Kisah meditasi Bodhidharma yang duduk bermeditasi menghadap dinding batu bertahun-tahun.",
+    indonesianEquivalent: "Berakit-rakit ke hulu, berenang-renang ke tepian",
   },
   {
     id: "ktw-007",

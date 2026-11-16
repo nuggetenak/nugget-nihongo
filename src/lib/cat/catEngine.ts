@@ -380,7 +380,7 @@ export function bridgeCATResultToCurriculum(
     jftLevel = 'b1-proficient';
     sswReadiness = 'sangat-siap';
     recommendedTrack = primaryGoal === 'ssw' && sswSector ? `ssw-${sswSector}` : 'n3';
-    description = 'Kemampuan setara N3/B1! Sangat siap untuk komunikasi lancar di tempat kerja (Gemba).';
+    description = 'Kemampuan setara N3/B1! Sangat siap untuk komunikasi lancar di lingkungan kerja profesional.';
   } else if (safeTheta < 1.35) {
     jftLevel = 'b1-proficient';
     sswReadiness = 'tingkat-supervisor';
@@ -452,7 +452,7 @@ export function calculateCATSEM(
       }
     }
   }
-  return 1 / Math.sqrt(totalInformation);
+  return 1 / Math.sqrt(Math.max(1.0, totalInformation));
 }
 
 export const CAT_TARGET_SEM = 0.35;
@@ -486,7 +486,9 @@ export function selectNextCATQuestion(
   usedQuestionIds: Set<string>,
   currentTheta: number
 ): CATQuestion | null {
-  const available = pool.filter((q) => !usedQuestionIds.has(q.id));
+  if (!Array.isArray(pool) || pool.length === 0) return null;
+  const safeUsed = usedQuestionIds || new Set<string>();
+  const available = pool.filter((q) => q && q.id && !safeUsed.has(q.id));
   if (available.length === 0) return null;
 
   // Rank available questions by Fisher Information at current theta estimate

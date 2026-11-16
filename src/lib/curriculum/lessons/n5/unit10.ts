@@ -766,8 +766,8 @@ export const unit10Lessons: Record<string, Partial<CurriculumLesson>> = {
       {
         "id": "vg-n5-00843",
         "word": "掃除",
-        "reading": "そうじ (する)",
-        "romaji": "souji (suru)",
+        "reading": "そうじ",
+        "romaji": "souji",
         "meaning": "pembersihan, membersihkan (bersih-bersih)",
         "pos": "verb-suru",
         "nuance": "Bisa berfungsi sebagai nomina (掃除 = pembersihan/kegiatan bersih-bersih) maupun kata kerja suru (掃除する = membersihkan). Merujuk pada membersihkan ruangan atau lingkungan dengan menyapu, mengepel, atau merapikan benda.",

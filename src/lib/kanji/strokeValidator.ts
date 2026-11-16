@@ -251,6 +251,7 @@ export function calculateAngularSimilarity(
   const uMag = Math.sqrt(uGlobal.x * uGlobal.x + uGlobal.y * uGlobal.y);
   const tMag = Math.sqrt(tGlobal.x * tGlobal.x + tGlobal.y * tGlobal.y);
 
+  if (!Number.isFinite(uMag) || !Number.isFinite(tMag)) return 0;
   if (uMag < 4 || tMag < 4) return 1.0; // Point stroke (dot/ten)
 
   const globalDot = Math.max(

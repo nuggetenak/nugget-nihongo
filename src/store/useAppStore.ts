@@ -17,6 +17,7 @@ import {
 } from '../lib/storage/storageSanitizer';
 import { useModalStore } from './useModalStore';
 import { broadcastSync } from '../lib/sync/broadcastSync';
+import { syncDaemon } from '../lib/sync/syncDaemon';
 
 export interface ToastMessage {
   id: string;
@@ -41,9 +42,9 @@ export interface AppState {
   activeLessonContext: ActiveLessonContext | null;
   openLessonStudy: (trackId: string, unitId: string, lessonId: string, trackType?: 'curriculum' | 'book' | 'jlpt') => void;
   closeLessonStudy: () => void;
-  injectLessonItemsToFSRS: (grammarIds: string[], vocabIds: string[]) => void;
+  injectLessonItemsToFSRS: (grammarIds: (string | any)[], vocabIds: (string | any)[]) => void;
   completedLessonIds: string[];
-  completeLesson: (lessonId: string, grammarIds: string[], vocabIds: string[]) => { awardedXp: number; awardedWater: number };
+  completeLesson: (lessonId: string, grammarIds: (string | any)[], vocabIds: (string | any)[]) => { awardedXp: number; awardedWater: number };
 
   // Level & Search Filter
   selectedLevel: JLPTLevel | 'all';
@@ -195,6 +196,8 @@ export interface AppState {
   // Reset entire store
   resetAllData: () => void;
 }
+
+export type TabType = AppState['activeTab'];
 
 /**
  * Returns YYYY-MM-DD in the learner's actual local timezone (WIB/WITA/WIT/JST)
@@ -351,14 +354,17 @@ export const useAppStore = create<AppState>((set, get) => ({
     }
   },
   closeLessonStudy: () => {
+    const currentContext = get().activeLessonContext;
+    const destinationTab: TabType = currentContext?.trackType === 'book' ? 'materi' : 'home';
+    const destinationHash = '#' + destinationTab;
     set({
       activeLessonContext: null,
-      activeTab: 'materi',
+      activeTab: destinationTab,
     });
     if (typeof window !== 'undefined') {
       try {
-        if (window.location.hash !== '#materi') {
-          history.pushState(null, '', '#materi');
+        if (window.location.hash !== destinationHash) {
+          history.pushState(null, '', destinationHash);
         }
       } catch {}
     }
@@ -369,8 +375,9 @@ export const useAppStore = create<AppState>((set, get) => ({
     const nowIso = new Date().toISOString();
     let updated = false;
 
-    (vocabIds || []).forEach((vid) => {
-      const id = typeof vid === 'string' ? vid : vid?.id || vid?.word;
+    (vocabIds || []).forEach((vid: any) => {
+      const rawId = typeof vid === 'string' ? vid : vid?.id || vid?.word;
+      const id = typeof rawId === 'string' ? rawId.trim() : rawId;
       if (id && !currentCards[id]) {
         currentCards[id] = {
           card: {
@@ -390,8 +397,9 @@ export const useAppStore = create<AppState>((set, get) => ({
       }
     });
 
-    (grammarIds || []).forEach((gid) => {
-      const id = typeof gid === 'string' ? gid : gid?.grammarId || gid?.id || gid?.pattern;
+    (grammarIds || []).forEach((gid: any) => {
+      const rawId = typeof gid === 'string' ? gid : gid?.grammarId || gid?.id || gid?.pattern;
+      const id = typeof rawId === 'string' ? rawId.trim() : rawId;
       if (id && !currentCards[id]) {
         currentCards[id] = {
           card: {
@@ -430,13 +438,16 @@ export const useAppStore = create<AppState>((set, get) => ({
   setSelectedLevel: (selectedLevel) => {
     set({ selectedLevel });
     if (typeof window !== 'undefined') {
-      try { localStorage.setItem('nn_selected_level', selectedLevel); } catch {}
+      try {
+        localStorage.setItem('nn_selected_level', selectedLevel);
+        broadcastSync.broadcast('LEVEL_CHANGED', { level: selectedLevel });
+      } catch {}
       if (['n5', 'n4', 'n3', 'n2', 'n1'].includes(selectedLevel)) {
         try {
           localStorage.setItem('nn_active_curriculum_track', selectedLevel);
           import('../lib/curriculum/curriculumStore')
             .then((m) => {
-              if (m.useCurriculumStore.getState().activeTrackId !== selectedLevel) {
+              if (selectedLevel !== 'all' && m.useCurriculumStore.getState().activeTrackId !== selectedLevel) {
                 m.useCurriculumStore.getState().setActiveTrack(selectedLevel);
               }
             })
@@ -454,12 +465,17 @@ export const useAppStore = create<AppState>((set, get) => ({
     // Atomically inject FSRS cards (idempotent across repeated visits)
     get().injectLessonItemsToFSRS(grammarIds, vocabIds);
 
+    if (!lessonId || typeof lessonId !== 'string' || !lessonId.trim()) {
+      return { awardedXp: 0, awardedWater: 0 };
+    }
+    const sanitizedLessonId = lessonId.trim();
+
     const { completedLessonIds } = get();
-    if (completedLessonIds.includes(lessonId)) {
+    if (completedLessonIds.includes(sanitizedLessonId)) {
       return { awardedXp: 0, awardedWater: 0 };
     }
 
-    const nextCompleted = [...completedLessonIds, lessonId];
+    const nextCompleted = [...completedLessonIds, sanitizedLessonId];
     set({ completedLessonIds: nextCompleted });
 
     if (typeof window !== 'undefined') {
@@ -479,6 +495,12 @@ export const useAppStore = create<AppState>((set, get) => ({
 
     // Record study activity
     get().recordStudyActivity();
+
+    // Record activity in daily heatmap calendar
+    try {
+      const itemsCount = Math.max(1, (grammarIds?.length || 0) + (vocabIds?.length || 0));
+      useGamificationStore.getState().recordActivity(itemsCount, 50);
+    } catch {}
 
     return { awardedXp: 50, awardedWater: 2 };
   },
@@ -624,6 +646,7 @@ export const useAppStore = create<AppState>((set, get) => ({
     if (typeof window !== 'undefined') {
       try {
         localStorage.setItem('bunpou-theme', nextTheme);
+        broadcastSync.broadcast('THEME_CHANGED', { theme: nextTheme });
         if (nextTheme === 'light') {
           document.documentElement.classList.add('light');
           document.documentElement.classList.remove('dark');
@@ -685,7 +708,10 @@ export const useAppStore = create<AppState>((set, get) => ({
     const updated = { ...get().cards, [id]: cardData };
     set({ cards: updated });
     if (typeof window !== 'undefined') {
-      try { localStorage.setItem('nn_fsrs_cards', JSON.stringify(updated)); } catch {}
+      try {
+        localStorage.setItem('nn_fsrs_cards', JSON.stringify(updated));
+        broadcastSync.broadcast('SRS_REVIEW_COMPLETED', { cardId: id });
+      } catch {}
     }
   },
 
@@ -856,3 +882,50 @@ export const useAppStore = create<AppState>((set, get) => ({
     });
   },
 }));
+
+export { getStoredCards };
+
+export function initCrossTabSync(): () => void {
+  return broadcastSync.subscribe((event) => {
+    switch (event.type) {
+      case 'XP_UPDATED':
+        if (typeof event.payload?.xp === 'number') {
+          useAppStore.setState({ xp: event.payload.xp });
+        }
+        break;
+      case 'STREAK_UPDATED':
+        if (typeof event.payload?.streak === 'number') {
+          useAppStore.setState({ streak: event.payload.streak });
+        }
+        break;
+      case 'THEME_CHANGED':
+        if (event.payload?.theme === 'light' || event.payload?.theme === 'dark') {
+          const nextTheme = event.payload.theme;
+          useAppStore.setState({ theme: nextTheme });
+          if (typeof document !== 'undefined') {
+            if (nextTheme === 'light') {
+              document.documentElement.classList.add('light');
+              document.documentElement.classList.remove('dark');
+            } else {
+              document.documentElement.classList.remove('light');
+              document.documentElement.classList.add('dark');
+            }
+          }
+        }
+        break;
+      case 'LEVEL_CHANGED':
+        if (event.payload?.level) {
+          useAppStore.setState({ selectedLevel: event.payload.level });
+        }
+        break;
+      case 'SRS_REVIEW_COMPLETED':
+        if (typeof window !== 'undefined') {
+          useAppStore.setState({ cards: getStoredCards() });
+        }
+        break;
+      case 'SYNC_TRIGGERED':
+        syncDaemon.triggerSync('cross_tab_sync');
+        break;
+    }
+  });
+}

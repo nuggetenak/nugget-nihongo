@@ -2,7 +2,7 @@
 //  vocab-n5.js — Nugget Nihongo · JLPT N5
 //  AUTO-GENERATED — DO NOT EDIT DIRECTLY
 //  Edit: public/data/vocab/n5/*.js  then run: node scripts/merge-vocab.js
-//  Entries: 1321 | Generated: 2026-11-08
+//  Entries: 1321 | Generated: 2026-11-16
 // ══════════════════════════════════════════════════════════════
 
 window.vocabN5 = [
@@ -14915,8 +14915,8 @@ window.vocabN5 = [
 {
   "id": "vg-n5-00789",
   "word": "結婚",
-  "reading": "けっこん (する)",
-  "romaji": "kekkon (suru)",
+  "reading": "けっこん",
+  "romaji": "kekkon",
   "meaning_id": "pernikahan; menikah",
   "meaning_en": "marriage; to marry",
   "jlpt": "n5",
@@ -15160,8 +15160,8 @@ window.vocabN5 = [
 {
   "id": "vg-n5-00817",
   "word": "散歩",
-  "reading": "さんぽ (する)",
-  "romaji": "sanpo (suru)",
+  "reading": "さんぽ",
+  "romaji": "sanpo",
   "meaning_id": "jalan-jalan santai, jalan kaki",
   "meaning_en": "walk; stroll; to take a walk",
   "jlpt": "n5",
@@ -15351,8 +15351,8 @@ window.vocabN5 = [
 {
   "id": "vg-n5-00843",
   "word": "掃除",
-  "reading": "そうじ (する)",
-  "romaji": "souji (suru)",
+  "reading": "そうじ",
+  "romaji": "souji",
   "meaning_id": "pembersihan, membersihkan (bersih-bersih)",
   "meaning_en": "cleaning, sweeping, to clean",
   "jlpt": "n5",
@@ -15667,8 +15667,8 @@ window.vocabN5 = [
 {
   "id": "vg-n5-00944",
   "word": "勉強",
-  "reading": "べんきょう (する)",
-  "romaji": "benkyou (suru)",
+  "reading": "べんきょう",
+  "romaji": "benkyou",
   "meaning_id": "belajar; pelajaran",
   "meaning_en": "study, studying; to study",
   "jlpt": "n5",
@@ -49631,8 +49631,8 @@ window.vocabN5 = [
 {
   "id": "vg-n5-00568",
   "word": "四",
-  "reading": "し/よん",
-  "romaji": "shi/yon",
+  "reading": "よん",
+  "romaji": "yon",
   "meaning_id": "empat",
   "meaning_en": "4",
   "jlpt": "n5",
@@ -49755,8 +49755,8 @@ window.vocabN5 = [
 {
   "id": "vg-n5-00571",
   "word": "七",
-  "reading": "しち/なな",
-  "romaji": "shichi/nana",
+  "reading": "なな",
+  "romaji": "nana",
   "meaning_id": "tujuh",
   "meaning_en": "7",
   "jlpt": "n5",
@@ -49839,8 +49839,8 @@ window.vocabN5 = [
 {
   "id": "vg-n5-00573",
   "word": "九",
-  "reading": "きゅう/く",
-  "romaji": "kyuu/ku",
+  "reading": "きゅう",
+  "romaji": "kyuu",
   "meaning_id": "sembilan",
   "meaning_en": "9",
   "jlpt": "n5",
@@ -52253,9 +52253,9 @@ window.vocabN5 = [
 
 {
   "id": "vg-n5-00640",
-  "word": "つま／かない",
-  "reading": "つま/かない",
-  "romaji": "tsuma/kanai",
+  "word": "妻",
+  "reading": "つま",
+  "romaji": "tsuma",
   "meaning_id": "istri",
   "meaning_en": "wife",
   "jlpt": "n5",
@@ -52271,7 +52271,7 @@ window.vocabN5 = [
     "teman",
     "umum"
   ],
-  "nuance": "Bentuk sopan: おくさん",
+  "nuance": "Bentuk sopan untuk menyebut istri orang lain: おくさん (奥さん). Dapat juga disebut かない (家内) untuk istri sendiri dalam situasi tradisional.",
   "conj_type": null,
   "examples": [
     {
@@ -52293,9 +52293,9 @@ window.vocabN5 = [
 
 {
   "id": "vg-n5-00641",
-  "word": "おっと／しゅじん",
-  "reading": "おっと/しゅじん",
-  "romaji": "ottto/shujin",
+  "word": "夫",
+  "reading": "おっと",
+  "romaji": "otto",
   "meaning_id": "suami",
   "meaning_en": "husband",
   "jlpt": "n5",
@@ -52311,7 +52311,7 @@ window.vocabN5 = [
     "teman",
     "umum"
   ],
-  "nuance": "Bentuk sopan: ごしゅじん",
+  "nuance": "Bentuk sopan untuk menyebut suami orang lain: ごしゅじん (ご主人). Dapat juga disebut しゅじん (主人) untuk suami sendiri.",
   "conj_type": null,
   "examples": [
     {

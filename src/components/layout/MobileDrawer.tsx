@@ -16,6 +16,9 @@ import {
   HelpCircle,
   Compass,
   Volume2,
+  VolumeX,
+  Sun,
+  Moon,
   Table,
   RotateCcw,
   Scale,
@@ -35,6 +38,8 @@ import { useAppStore, AppState } from '../../store/useAppStore';
 import { useModalStore } from '../../store/useModalStore';
 import { transitionTabChange } from '../../lib/ui/navigation';
 import { useAuthStore } from '../../lib/supabase/authStore';
+import { useFocusTrap } from '../../hooks/useFocusTrap';
+import { useBodyScrollLock } from '../../hooks/useBodyScrollLock';
 import { APP_VERSION, APP_RELEASE_NAME } from '../../config/version';
 
 interface MobileDrawerProps {
@@ -61,8 +66,31 @@ export const MobileDrawer: React.FC<MobileDrawerProps> = ({
     openKotowaza,
     openToolbox,
     openCatPlacement,
+    theme,
+    toggleTheme,
+    soundEffects,
+    setSoundEffects,
+    showFurigana,
+    setShowFurigana,
   } = useAppStore();
   const { user, openAuthModal } = useAuthStore();
+  const touchStartXRef = React.useRef<number | null>(null);
+  const drawerRef = useFocusTrap<HTMLDivElement>(isOpen, onClose);
+  useBodyScrollLock(isOpen);
+
+  const handleTouchStart = (e: React.TouchEvent) => {
+    touchStartXRef.current = e.touches[0].clientX;
+  };
+
+  const handleTouchEnd = (e: React.TouchEvent) => {
+    if (touchStartXRef.current === null) return;
+    const deltaX = e.changedTouches[0].clientX - touchStartXRef.current;
+    // Swipe left gesture closes mobile drawer
+    if (deltaX < -50) {
+      onClose();
+    }
+    touchStartXRef.current = null;
+  };
 
   if (!isOpen) return null;
 
@@ -73,22 +101,23 @@ export const MobileDrawer: React.FC<MobileDrawerProps> = ({
     icon: React.ReactNode;
     badge?: string;
   }> = [
-    { id: 'home', label: 'Beranda', jp: 'ホーム', icon: <Home className="w-5 h-5 text-amber-400" /> },
-    { id: 'quiz', label: 'Arena Kuis', jp: '練習', icon: <Layers className="w-5 h-5 text-emerald-400" />, badge: '9 Mode' },
+    { id: 'home', label: 'Belajar', jp: '学習', icon: <Home className="w-5 h-5 text-amber-400" /> },
     { id: 'kebun', label: 'Pusat Retensi (Brankas FSRS)', jp: '保持', icon: <Sprout className="w-5 h-5 text-green-400" /> },
-    { id: 'materi', label: 'Materi Hub', jp: '学習', icon: <BookOpen className="w-5 h-5 text-blue-400" />, badge: '10.508+' },
+    { id: 'materi', label: 'Dojo (Sasana Latihan & Ujian)', jp: '道場', icon: <BookOpen className="w-5 h-5 text-amber-400" />, badge: '4 Pilar' },
     { id: 'sensei', label: 'Sensei AI', jp: '先生', icon: <Sparkles className="w-5 h-5 text-purple-400" /> },
     { id: 'methodology', label: 'Metodologi & Riset', jp: '方法', icon: <GraduationCap className="w-5 h-5 text-indigo-400" />, badge: 'SLA' },
     { id: 'about', label: 'Tentang Aplikasi', jp: '情報', icon: <HelpCircle className="w-5 h-5 text-cyan-400" />, badge: 'FAQ' },
-    { id: 'settings', label: 'Pengaturan', jp: '設定', icon: <Settings className="w-5 h-5 text-orange-400" /> },
+    { id: 'settings', label: 'Profil & Pengaturan', jp: '設定', icon: <Settings className="w-5 h-5 text-orange-400" /> },
   ];
 
   const handleNavigate = (tab: AppState['activeTab']) => {
+    if (useAppStore.getState().activeLessonContext) {
+      useAppStore.getState().closeLessonStudy();
+    }
     if (tab === 'quiz') {
       useAppStore.getState().setDojoTab('latihan');
       transitionTabChange('materi', setActiveTab);
     } else if (tab === 'materi') {
-      useAppStore.getState().setDojoTab('kamus');
       transitionTabChange('materi', setActiveTab);
     } else {
       transitionTabChange(tab, setActiveTab);
@@ -105,13 +134,21 @@ export const MobileDrawer: React.FC<MobileDrawerProps> = ({
       />
 
       {/* Drawer Panel */}
-      <div className="relative w-4/5 max-w-xs bg-surface border-r border-accent/25 h-full flex flex-col justify-between shadow-2xl z-10 animate-in slide-in-from-left duration-200 overflow-y-auto">
+      <div 
+        ref={drawerRef}
+        role="dialog"
+        aria-modal="true"
+        aria-label="Menu Navigasi Mobile"
+        onTouchStart={handleTouchStart}
+        onTouchEnd={handleTouchEnd}
+        className="relative w-4/5 max-w-xs bg-surface border-r border-accent/25 h-full flex flex-col justify-between shadow-2xl z-10 animate-in slide-in-from-left duration-200 overflow-y-auto"
+      >
         {/* Top Brand Header */}
-        <div className="p-5 border-b border-accent/15 bg-surface-2/60">
+        <div className="p-5 border-b border-accent/15 bg-gradient-to-b from-amber-500/10 via-surface-2/40 to-surface">
           <div className="flex items-center justify-between mb-3">
             <div className="flex items-center gap-2.5">
               <img
-                src="/icons/logo.png"
+                src="/icons/icon-192.png"
                 alt="Nugget Nihongo"
                 className="w-9 h-9 rounded-xl object-cover shadow-glow ring-1 ring-amber-500/40"
               />
@@ -126,14 +163,56 @@ export const MobileDrawer: React.FC<MobileDrawerProps> = ({
             </div>
             <button
               onClick={onClose}
-              className="p-2 rounded-xl bg-surface hover:bg-surface-3 text-appText-muted hover:text-appText-bright transition-colors"
+              aria-label="Tutup menu navigasi"
+              className="w-11 h-11 min-w-[44px] min-h-[44px] flex items-center justify-center rounded-xl bg-surface hover:bg-surface-3 text-appText-muted hover:text-appText-bright transition-colors active:scale-95"
             >
-              <X className="w-4 h-4" />
+              <X className="w-5 h-5" />
             </button>
           </div>
           <p className="text-xs text-appText-muted leading-relaxed">
             Teman belajar bahasa Jepang hangat dengan spaced repetition FSRS.
           </p>
+
+          {/* Quick Control Center (Theme, Sound SFX, Furigana) */}
+          <div className="grid grid-cols-3 gap-1.5 pt-3">
+            <button
+              type="button"
+              onClick={toggleTheme}
+              aria-label={theme === 'dark' ? 'Ganti ke Tema Terang' : 'Ganti ke Tema Gelap'}
+              className="flex flex-col items-center justify-center p-2 rounded-xl bg-surface/90 hover:bg-surface-2 border border-accent/20 text-xs font-bold text-appText-bright active:scale-95 transition-all shadow-xs"
+            >
+              {theme === 'dark' ? <Moon className="w-4 h-4 text-amber-400 mb-1" /> : <Sun className="w-4 h-4 text-amber-500 mb-1" />}
+              <span className="text-xs">{theme === 'dark' ? 'Gelap' : 'Terang'}</span>
+            </button>
+
+            <button
+              type="button"
+              onClick={() => setSoundEffects(!soundEffects)}
+              aria-label={soundEffects ? 'Nonaktifkan Efek Suara' : 'Aktifkan Efek Suara'}
+              className={`flex flex-col items-center justify-center p-2 rounded-xl border text-xs font-bold active:scale-95 transition-all shadow-xs ${
+                soundEffects
+                  ? 'bg-amber-500/15 border-amber-500/35 text-accent'
+                  : 'bg-surface/90 hover:bg-surface-2 border-accent/20 text-appText-muted'
+              }`}
+            >
+              {soundEffects ? <Volume2 className="w-4 h-4 text-accent mb-1" /> : <VolumeX className="w-4 h-4 text-appText-muted mb-1" />}
+              <span className="text-xs">SFX: {soundEffects ? 'ON' : 'OFF'}</span>
+            </button>
+
+            <button
+              type="button"
+              onClick={() => setShowFurigana(!showFurigana)}
+              aria-label={showFurigana ? 'Sembunyikan Furigana' : 'Tampilkan Furigana'}
+              className={`flex flex-col items-center justify-center p-2 rounded-xl border text-xs font-bold active:scale-95 transition-all shadow-xs ${
+                showFurigana
+                  ? 'bg-amber-500/15 border-amber-500/35 text-accent'
+                  : 'bg-surface/90 hover:bg-surface-2 border-accent/20 text-appText-muted'
+              }`}
+            >
+              <span lang="ja" className="font-jp font-bold text-xs mb-0.5 leading-none">文</span>
+              <span className="text-xs">Furigana</span>
+            </button>
+          </div>
         </div>
 
         {/* Navigation List */}
@@ -144,12 +223,9 @@ export const MobileDrawer: React.FC<MobileDrawerProps> = ({
             </div>
             <div className="space-y-1">
               {navItems.map((item) => {
-                const dojoTab = useAppStore.getState().dojoTab;
                 const isActive =
-                  item.id === 'quiz'
-                    ? (activeTab === 'materi' && dojoTab === 'latihan') || activeTab === 'quiz'
-                    : item.id === 'materi'
-                    ? activeTab === 'materi' && dojoTab !== 'latihan'
+                  item.id === 'materi'
+                    ? activeTab === 'materi' || activeTab === 'quiz' || activeTab === 'choukai'
                     : activeTab === item.id;
                 return (
                   <button
@@ -320,7 +396,7 @@ export const MobileDrawer: React.FC<MobileDrawerProps> = ({
               >
                 <div className="flex items-center justify-between w-full">
                   <Users className="w-4 h-4 text-amber-500" />
-                  <span className="text-[10px] font-bold px-1.5 py-0.5 rounded bg-amber-500/20 text-amber-700 dark:text-amber-300">Resmi</span>
+                  <span className="text-xs font-bold px-1.5 py-0.5 rounded bg-amber-500/20 text-amber-700 dark:text-amber-300">Resmi</span>
                 </div>
                 <div>
                   <div className="text-xs font-bold text-appText-bright">Study Lounge & Komunitas</div>

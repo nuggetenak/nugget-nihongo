@@ -168,19 +168,19 @@ window.vocabSSW_ElectricElectronic = [
   },
   {
     "id": "v-ssw-electric-electronic-010",
-    "word": "短絡（ショート）",
-    "reading": "たんらく（しょーと）",
-    "romaji": "tanraku (shooto)",
+    "word": "短絡",
+    "reading": "たんらく",
+    "romaji": "tanraku",
     "meaning": "Hubungan arus pendek tegangan listrik",
     "meaning_id": "Hubungan arus pendek tegangan listrik",
     "meaning_en": "Hubungan arus pendek tegangan listrik",
     "level": "n4",
     "pos": "noun",
-    "nuance": "Fire & Arc Flash Explosion",
+    "nuance": "Hubungan arus pendek listrik (korsleting). Dalam komunikasi praktis di pabrik sering disebut ショート (shooto).",
     "examples": [
       {
-        "jp": "短絡（ショート）の安全確認を行ってください。",
-        "id": "Tolong lakukan konfirmasi keselamatan pada Hubungan arus pendek tegangan listrik."
+        "jp": "端子同士の接触による短絡事故を防ぐため、絶縁キャップを被せてください。",
+        "id": "Pasang tutup isolator untuk mencegah korsleting akibat terminal kabel saling bersentuhan."
       }
     ]
   },
@@ -420,19 +420,19 @@ window.vocabSSW_ElectricElectronic = [
   },
   {
     "id": "v-ssw-electric-electronic-024",
-    "word": "接地（アース）",
-    "reading": "せっち（あーす）",
-    "romaji": "setchi (aasu)",
+    "word": "接地",
+    "reading": "せっち",
+    "romaji": "setchi",
     "meaning": "Saluran pembumian pengaman arus bocor listrik",
     "meaning_id": "Saluran pembumian pengaman arus bocor listrik",
     "meaning_en": "Saluran pembumian pengaman arus bocor listrik",
     "level": "n4",
     "pos": "noun",
-    "nuance": "Ground Fault Shock Hazard",
+    "nuance": "Pentanahan saluran pembumian instalasi listrik. Dalam percakapan umum bengkel disebut アース (aasu/earth).",
     "examples": [
       {
-        "jp": "接地（アース）の安全確認を行ってください。",
-        "id": "Tolong lakukan konfirmasi keselamatan pada Saluran pembumian pengaman arus bocor listrik."
+        "jp": "漏電時の感電を防ぐため、接地線をアース端子に確実に接続してください。",
+        "id": "Sambungkan kabel pembumian dengan kuat ke terminal grounding untuk mencegah sengatan listrik jika terjadi kebocoran arus."
       }
     ]
   },

@@ -101,11 +101,11 @@ export const sswKaigoLessons: Record<string, Partial<CurriculumLesson>> = {
     vocab_breakdown: [
       {
         id: 'v1',
-        word: 'りようしゃ',
-        reading: 'りようしゃ / 利用者様',
-        romaji: 'riyousha / riyousha-sama',
+        word: '利用者',
+        reading: 'りようしゃ',
+        romaji: 'riyousha',
         meaning: 'Residen / Pengguna Layanan Panti Lansia',
-        nuance: 'Istilah baku SOP keperawatan Jepang untuk menyebut para lansia yang dirawat.',
+        nuance: 'Istilah baku SOP keperawatan Jepang untuk menyebut para lansia yang dirawat. Sering disapa dengan 利用者様 (riyousha-sama).',
         exampleSentence: {
           jp: 'りようしゃさまの へやに いきます。',
           furigana: '利用者様の 部屋に 行きます。',
@@ -115,8 +115,8 @@ export const sswKaigoLessons: Record<string, Partial<CurriculumLesson>> = {
       },
       {
         id: 'v2',
-        word: 'たいちょう',
-        reading: 'たいちょう / 体調',
+        word: '体調',
+        reading: 'たいちょう',
         romaji: 'taichou',
         meaning: 'Kondisi Fisik / Kesehatan Tubuh',
         nuance: 'Sangat sering digunakan dalam pertanyaan rutin: Taichou wa ikaga desu ka? (Bagaimana kondisi tubuh Anda?)',
@@ -263,11 +263,11 @@ export const sswKaigoLessons: Record<string, Partial<CurriculumLesson>> = {
       quickDialogue: 'A: カーテンを あけても よろしいですか？ → B: うん、おねがいするよ。',
     },
   },
-  // ── SSW Kaigo Unit 1 Pelajaran 2: Tanggap Darurat & Laporan SBAR (K3 Gemba) ──
+  // ── SSW Kaigo Unit 1 Pelajaran 2: Tanggap Darurat & Laporan SBAR (K3 Fasilitas Lansia) ──
   'les-ssw-kaigo-u01-02': {
     pedagogical_framework: {
       what: {
-        summary: 'Prosedur tanggap darurat K3 gemba panti wreda: konfirmasi kesadaran lansia terjatuh, proteksi leher/tulang belakang, dan pelaporan verbal ringkas terstruktur (SBAR: Situation, Background, Assessment, Recommendation).',
+        summary: 'Prosedur tanggap darurat keselamatan fasilitas panti lansia (施設): konfirmasi kesadaran lansia terjatuh, proteksi leher/tulang belakang, dan pelaporan verbal ringkas terstruktur (SBAR: Situation, Background, Assessment, Recommendation).',
         canDo: 'Bisa merespons lansia terjatuh di kamar tidur/koridor, tidak memindahkan sembarangan, dan melapor segera ke perawat pimpinan (Riidaa) dengan pola terstandar.',
         targetPatterns: ['〜大変です！', '〜が倒れています', '〜意識があります/ありません', '〜確認をお願いします'],
         coreVocabSample: ['てんとう', 'いしき', 'こきゅう', 'けが', 'しゅっけつ', 'リーダー'],
@@ -396,8 +396,8 @@ export const sswKaigoLessons: Record<string, Partial<CurriculumLesson>> = {
     vocab_breakdown: [
       {
         id: 'v1',
-        word: 'てんとう',
-        reading: 'てんとう (転倒)',
+        word: '転倒',
+        reading: 'てんとう',
         romaji: 'tentou',
         meaning: 'Jatuh / Terpeleset',
         nuance: 'Istilah medis resmi Kaigo untuk insiden terjatuh.',
@@ -410,8 +410,8 @@ export const sswKaigoLessons: Record<string, Partial<CurriculumLesson>> = {
       },
       {
         id: 'v2',
-        word: 'いしき',
-        reading: 'いしき (意識)',
+        word: '意識',
+        reading: 'いしき',
         romaji: 'ishiki',
         meaning: 'Kesadaran',
         nuance: 'Diperiksa pertama kali saat terjadi insiden darurat.',
@@ -424,8 +424,8 @@ export const sswKaigoLessons: Record<string, Partial<CurriculumLesson>> = {
       },
       {
         id: 'v3',
-        word: 'こきゅう',
-        reading: 'こきゅう (呼吸)',
+        word: '呼吸',
+        reading: 'こきゅう',
         romaji: 'kokyuu',
         meaning: 'Pernapasan',
         nuance: 'Tanda vital dasar yang wajib dilaporkan.',
@@ -438,8 +438,8 @@ export const sswKaigoLessons: Record<string, Partial<CurriculumLesson>> = {
       },
       {
         id: 'v4',
-        word: 'しゅっけつ',
-        reading: 'しゅっけつ (出血)',
+        word: '出血',
+        reading: 'しゅっけつ',
         romaji: 'shukketsu',
         meaning: 'Pendarahan',
         nuance: 'Cek terutama di bagian kepala dan siku.',

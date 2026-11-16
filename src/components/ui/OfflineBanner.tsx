@@ -54,7 +54,7 @@ export const OfflineBanner: React.FC = () => {
       <aside
         role="status"
         aria-live="polite"
-        className="fixed top-2 sm:top-4 inset-x-3 sm:inset-x-auto sm:left-1/2 sm:-translate-x-1/2 z-40 max-w-lg mx-auto animate-in fade-in slide-in-from-top-2 duration-200 pointer-events-auto"
+        className="fixed top-[calc(0.75rem+env(safe-area-inset-top))] sm:top-4 inset-x-3 sm:inset-x-auto sm:left-1/2 sm:-translate-x-1/2 z-40 max-w-lg mx-auto animate-in fade-in slide-in-from-top-2 duration-200 pointer-events-auto"
       >
         <div className="card-interactive-lift bg-amber-500/15 dark:bg-amber-950/80 border border-amber-500/40 rounded-2xl p-3 px-4 shadow-xl backdrop-blur-md flex items-center justify-between gap-3 text-xs">
           <div className="flex items-center gap-2.5 min-w-0">
@@ -93,7 +93,7 @@ export const OfflineBanner: React.FC = () => {
       <aside
         role="status"
         aria-live="polite"
-        className="fixed top-2 sm:top-4 inset-x-3 sm:inset-x-auto sm:left-1/2 sm:-translate-x-1/2 z-40 max-w-sm mx-auto animate-in fade-in slide-in-from-top-2 duration-200 pointer-events-auto"
+        className="fixed top-[calc(0.75rem+env(safe-area-inset-top))] sm:top-4 inset-x-3 sm:inset-x-auto sm:left-1/2 sm:-translate-x-1/2 z-40 max-w-sm mx-auto animate-in fade-in slide-in-from-top-2 duration-200 pointer-events-auto"
       >
         <div className="card-interactive-lift bg-emerald-500/15 dark:bg-emerald-950/80 border border-emerald-500/40 rounded-2xl p-2.5 px-4 shadow-xl backdrop-blur-md flex items-center justify-between gap-2.5 text-xs">
           <div className="flex items-center gap-2 min-w-0">
@@ -113,11 +113,11 @@ export const OfflineBanner: React.FC = () => {
           <button
             type="button"
             onClick={() => setShowReconnected(false)}
-            className="w-8 h-8 min-w-[32px] min-h-[32px] rounded-lg hover:bg-emerald-500/20 flex items-center justify-center text-appText-muted hover:text-appText-bright transition-colors shrink-0 active:scale-95"
+            className="w-10 h-10 min-w-[40px] min-h-[40px] rounded-lg hover:bg-emerald-500/20 flex items-center justify-center text-appText-muted hover:text-appText-bright transition-colors shrink-0 active:scale-95"
             title="Tutup"
             aria-label="Tutup"
           >
-            <X className="w-3.5 h-3.5" />
+            <X className="w-4 h-4" />
           </button>
         </div>
       </aside>

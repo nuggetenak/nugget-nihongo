@@ -55,8 +55,8 @@ export const QUIZ_MODE_REGISTRY: readonly QuizModeInfo[] = [
     mode: 'panic-recall',
     category: 'fast_challenge',
     title: 'Simulasi Tanggap Darurat K3',
-    description: 'Latihan reflek Cover-Recall-Check 5 detik untuk keselamatan kerja Gemba',
-    badge: 'K3 Gemba',
+    description: 'Latihan reflek Cover-Recall-Check 5 detik untuk keselamatan kerja nyata',
+    badge: 'K3 & Keselamatan',
   },
 
   // Kategori 2: Kosakata & Huruf

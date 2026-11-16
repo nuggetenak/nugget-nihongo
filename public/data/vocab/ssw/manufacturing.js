@@ -114,19 +114,19 @@ window.vocabSSW_Manufacturing = [
   },
   {
     "id": "v-ssw-manufacturing-007",
-    "word": "巣（鋳巣）",
-    "reading": "す（ちゅうす）",
-    "romaji": "su (chuusu)",
+    "word": "鋳巣",
+    "reading": "ちゅうす",
+    "romaji": "chuusu",
     "meaning": "Rongga cacat udara/gas dalam coran logam",
     "meaning_id": "Rongga cacat udara/gas dalam coran logam",
     "meaning_en": "Rongga cacat udara/gas dalam coran logam",
     "level": "n4",
     "pos": "noun",
-    "nuance": "Structural Rupture Defect",
+    "nuance": "Cacat rongga udara/gas dalam produk cetakan coran logam. Di bengkel coran biasa disingkat 巣 (す).",
     "examples": [
       {
-        "jp": "巣（鋳巣）の安全確認を行ってください。",
-        "id": "Tolong lakukan konfirmasi keselamatan pada Rongga cacat udara/gas dalam coran logam."
+        "jp": "鋳造品の切削面に鋳巣がないか、拡大鏡を用いて検査します。",
+        "id": "Periksa permukaan sayatan logam cor dengan kaca pembesar apakah terdapat cacat rongga udara."
       }
     ]
   },

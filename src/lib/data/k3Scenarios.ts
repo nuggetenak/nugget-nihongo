@@ -55,8 +55,8 @@ export const OFFICIAL_K3_COMMANDS: K3Command[] = [
     id: 'cmd-k3-004',
     jp: '指差呼称でゼロ災害！',
     kana: 'しさこしょうでぜろさいがい！',
-    romaji: 'Shisa kanko de zero saigai!',
-    idTranslation: 'Nol kecelakaan kerja dengan tunjuk-sebut!',
+    romaji: 'Shisa koshou de zero saigai!',
+    idTranslation: 'Nol kecelakaan kerja dengan tunjuk-sebut! (Shisa Koshou / Shisa Kanko)',
     category: 'point_and_call',
     context: 'Yel-yel resmi penutup senam pagi keselamatan (朝礼 - Chourei) di seluruh industri Jepang.',
   },
@@ -140,10 +140,10 @@ export const OFFICIAL_K3_COMMANDS: K3Command[] = [
   // ── 4. KYK & 5S Disciplines (危険予知・5S) ──
   {
     id: 'cmd-k3-013',
-    jp: '危険予知活動 (KYK)',
-    kana: 'きけんよちかつどう (けいわいけい)',
-    romaji: 'Kiken Yochi Katsudou (KYK)',
-    idTranslation: 'Aktivitas Prediksi Bahaya (Briefing 4 babak sebelum mulai kerja)',
+    jp: '危険予知活動',
+    kana: 'きけんよちかつどう',
+    romaji: 'Kiken Yochi Katsudou',
+    idTranslation: 'Aktivitas Prediksi Bahaya (KYK: Kiken Yochi Katsudou - Briefing 4 babak sebelum mulai kerja)',
     category: 'kyk_5s',
     context: 'Metode JNIOSH: Identifikasi bahaya tersembunyi, tetapkan poin kritis, dan sepakati kata kunci aman.',
   },
@@ -158,10 +158,10 @@ export const OFFICIAL_K3_COMMANDS: K3Command[] = [
   },
   {
     id: 'cmd-k3-015',
-    jp: '報連相 (報告・連絡・相談)',
-    kana: 'ほうれんそう (ほうこく・れんらく・そうだん)',
+    jp: '報連相',
+    kana: 'ほうれんそう',
     romaji: 'Hou-Ren-Sou',
-    idTranslation: 'Laporkan, Hubungi, Konsultasikan',
+    idTranslation: 'Laporkan, Hubungi, Konsultasikan (Houkoku, Renraku, Soudan)',
     category: 'kyk_5s',
     context: 'Fondasi komunikasi hierarki kerja Jepang untuk mencegah salah paham operasional.',
   },
@@ -1207,7 +1207,7 @@ export function evaluateSbarResponse(
 
   const ratio = matchedRubrics.length / rubric.length;
   const score = Math.round(ratio * 100);
-  const passed = ratio >= 0.5; // Minimal 50% rubrik terpenuhi untuk lolos evaluasi gemba
+  const passed = ratio >= 0.5; // Minimal 50% rubrik terpenuhi untuk lolos evaluasi keselamatan kerja
 
   let feedback = '';
   if (ratio >= 0.8) {

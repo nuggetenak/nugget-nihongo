@@ -28,6 +28,7 @@ import {
 import { speakJapanese } from '../../lib/audio/tts';
 import { playSuccessSfx, playErrorSfx } from '../../lib/audio/sfx';
 import { useAppStore } from '../../store/useAppStore';
+import { useBodyScrollLock } from '../../hooks/useBodyScrollLock';
 
 export type JftSectionId = 1 | 2 | 3 | 4;
 
@@ -251,6 +252,8 @@ export const JftBasicCbtModal: React.FC<JftBasicCbtModalProps> = ({
 }) => {
   const { showToast, incrementXp } = useAppStore();
 
+  useBodyScrollLock(isOpen);
+
   const [examState, setExamState] = useState<'briefing' | 'testing' | 'certificate' | 'review'>('briefing');
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState<number>(0);
   const [activeSectionFilter, setActiveSectionFilter] = useState<JftSectionId | 'all'>('all');
@@ -259,6 +262,17 @@ export const JftBasicCbtModal: React.FC<JftBasicCbtModalProps> = ({
   const [timeRemainingSeconds, setTimeRemainingSeconds] = useState<number>(3600); // 60 mins standard
   const [audioPlayCount, setAudioPlayCount] = useState<Record<string, number>>({});
   const [isAudioPlaying, setIsAudioPlaying] = useState<boolean>(false);
+
+  useEffect(() => {
+    if (!isOpen) return;
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Escape' && (examState === 'briefing' || examState === 'certificate')) {
+        onClose();
+      }
+    };
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [isOpen, examState, onClose]);
   const [showPaletteDrawer, setShowPaletteDrawer] = useState<boolean>(false);
 
   // Active question
@@ -561,7 +575,7 @@ export const JftBasicCbtModal: React.FC<JftBasicCbtModalProps> = ({
                 <button
                   type="button"
                   onClick={handleToggleFlag}
-                  className={`px-3 py-1.5 rounded-xl border text-xs font-bold flex items-center gap-1.5 transition-colors active:scale-95 ${
+                  className={`min-h-[40px] px-3.5 py-2 rounded-xl border text-xs font-bold flex items-center gap-1.5 transition-colors active:scale-95 ${
                     flaggedQuestions[currentQuestion.id]
                       ? 'bg-amber-500 text-stone-950 border-amber-500 shadow-sm'
                       : 'bg-surface-2 text-appText-muted hover:text-appText-bright border-accent/20'
@@ -575,7 +589,7 @@ export const JftBasicCbtModal: React.FC<JftBasicCbtModalProps> = ({
                 <button
                   type="button"
                   onClick={() => setShowPaletteDrawer(!showPaletteDrawer)}
-                  className="px-3 py-1.5 rounded-xl bg-surface-2 hover:bg-surface-3 border border-accent/20 text-xs font-bold text-appText-bright flex items-center gap-1.5"
+                  className="min-h-[40px] px-3.5 py-2 rounded-xl bg-surface-2 hover:bg-surface-3 border border-accent/20 text-xs font-bold text-appText-bright flex items-center gap-1.5 active:scale-95"
                 >
                   <Layers className="w-3.5 h-3.5 text-accent" />
                   <span>Palet Soal</span>
@@ -672,7 +686,7 @@ export const JftBasicCbtModal: React.FC<JftBasicCbtModalProps> = ({
                   <button
                     type="button"
                     onClick={() => speakJapanese(currentQuestion.stimulusDocJp || '')}
-                    className="p-1 rounded hover:bg-surface-2 text-accent"
+                    className="min-w-[40px] min-h-[40px] p-2 rounded-xl bg-surface hover:bg-surface-2 text-accent border border-accent/20 flex items-center justify-center active:scale-95"
                     title="Dengarkan Teks Dokumen"
                   >
                     <Volume2 className="w-4 h-4" />
@@ -696,7 +710,7 @@ export const JftBasicCbtModal: React.FC<JftBasicCbtModalProps> = ({
                 <button
                   type="button"
                   onClick={() => speakJapanese(currentQuestion.questionJp)}
-                  className="p-1 rounded hover:bg-surface-3 text-accent"
+                  className="min-w-[40px] min-h-[40px] p-2 rounded-xl bg-surface hover:bg-surface-3 text-accent border border-accent/20 flex items-center justify-center active:scale-95"
                   title="Dengarkan Audio Soal"
                 >
                   <Volume2 className="w-4 h-4" />
@@ -719,7 +733,7 @@ export const JftBasicCbtModal: React.FC<JftBasicCbtModalProps> = ({
                     key={opt.id}
                     type="button"
                     onClick={() => handleSelectOption(opt.id)}
-                    className={`w-full p-3.5 sm:p-4 rounded-2xl border text-left transition-all min-h-[56px] flex items-start gap-3 active:scale-98 ${
+                    className={`w-full p-3.5 sm:p-4 rounded-2xl border text-left transition-all min-h-[56px] flex items-start gap-3 active:scale-95 ${
                       isSelected
                         ? 'bg-emerald-500/20 border-emerald-500 text-appText-bright ring-2 ring-emerald-500 font-bold shadow-md'
                         : 'bg-surface hover:bg-surface-3 border-accent/20 text-appText'

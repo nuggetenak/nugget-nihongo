@@ -61,7 +61,8 @@ class ClientRateLimiter {
    * Calculates exponential backoff delay with random jitter for API retries.
    */
   public calculateBackoffDelay(retryCount: number, baseMs = 1000, maxMs = 15000): number {
-    const exponential = baseMs * Math.pow(2, retryCount);
+    const safeCount = Math.max(0, typeof retryCount === 'number' && !Number.isNaN(retryCount) ? Math.floor(retryCount) : 0);
+    const exponential = baseMs * Math.pow(2, safeCount);
     const jitter = Math.random() * (baseMs * 0.5);
     return Math.min(maxMs, Math.round(exponential + jitter));
   }

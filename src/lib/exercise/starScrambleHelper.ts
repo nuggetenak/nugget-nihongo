@@ -16,15 +16,32 @@ export interface StarScrambleState {
 export function findMatchingOptionIndex(starToken: string | null | undefined, options: string[]): number {
   if (!starToken || !Array.isArray(options) || options.length === 0) return -1;
   const cleanStar = starToken.trim();
+  if (!cleanStar) return -1;
 
   // 1. Exact match
   const exactIdx = options.findIndex((opt) => opt && opt.trim() === cleanStar);
   if (exactIdx !== -1) return exactIdx;
 
   // 2. Substring containment match (e.g. furigana or punctuation variance)
-  return options.findIndex(
-    (opt) => opt && (cleanStar.includes(opt.trim()) || opt.trim().includes(cleanStar))
-  );
+  // Hardened against ambiguous prefix/substring collisions by selecting candidate with minimal length difference
+  const candidates: Array<{ idx: number; lengthDiff: number }> = [];
+  options.forEach((opt, idx) => {
+    if (!opt) return;
+    const optTrimmed = opt.trim();
+    if (optTrimmed && (cleanStar.includes(optTrimmed) || optTrimmed.includes(cleanStar))) {
+      candidates.push({
+        idx,
+        lengthDiff: Math.abs(cleanStar.length - optTrimmed.length),
+      });
+    }
+  });
+
+  if (candidates.length > 0) {
+    candidates.sort((a, b) => a.lengthDiff - b.lengthDiff);
+    return candidates[0].idx;
+  }
+
+  return -1;
 }
 
 /**

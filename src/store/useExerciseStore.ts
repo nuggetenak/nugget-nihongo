@@ -5,7 +5,7 @@
 // ══════════════════════════════════════════════════════════════════
 
 import { create } from 'zustand';
-import {
+import type {
   ExerciseSet,
   ExerciseItem,
   ScaffoldingMode,
@@ -13,8 +13,9 @@ import {
   ActiveExerciseSession,
   ExerciseTrackType,
   SSWSectorId,
-} from '../types/exercise';
-import { JLPTLevel } from '../types/vocab';
+} from '../types/exercise.ts';
+import type { JLPTLevel } from '../types/vocab.ts';
+import { findMatchingOptionIndex } from '../lib/exercise/starScrambleHelper.ts';
 
 export interface ExerciseManifestEntry {
   setId: string;
@@ -99,7 +100,7 @@ interface ExerciseStoreState {
   updateStarScramble: (questionIndex: number, available: string[], slots: (string | null)[]) => void;
 
   // ── Actions: Timer & Flow ──
-  tickTimer: () => void;
+  tickTimer: (deltaSeconds?: number) => void;
   togglePause: () => void;
   submitTest: () => ExerciseSessionSummary | null;
   retryWrongQuestions: () => void;
@@ -392,11 +393,9 @@ export const useExerciseStore = create<ExerciseStoreState>((set, get) => ({
       const tokenAtStar = slots[starPosZeroIndexed];
 
       if (tokenAtStar !== null) {
-        // Find matching index in options
+        // Find matching index in options with minimal length difference resolution
         const item = currentSet.items[questionIndex];
-        const optIdx = item.options.findIndex(
-          (opt) => opt.trim() === tokenAtStar.trim() || tokenAtStar.includes(opt.trim()) || opt.includes(tokenAtStar.trim())
-        );
+        const optIdx = findMatchingOptionIndex(tokenAtStar, item.options);
         if (optIdx !== -1) {
           get().selectOption(questionIndex, optIdx);
         }
@@ -408,20 +407,27 @@ export const useExerciseStore = create<ExerciseStoreState>((set, get) => ({
   },
 
   // ── 6. Timer & Pause ───────────────────────────────────────────
-  tickTimer: () => {
+  tickTimer: (deltaSeconds = 1) => {
+    const delta = typeof deltaSeconds === 'number' && !Number.isNaN(deltaSeconds) && deltaSeconds > 0
+      ? Math.floor(deltaSeconds)
+      : 1;
     const { mode, remainingSeconds, isPaused, isSubmitted } = get();
     if (isPaused || isSubmitted) return;
 
+    const currentRemaining = typeof remainingSeconds === 'number' && !Number.isNaN(remainingSeconds)
+      ? remainingSeconds
+      : 900;
+
     if (mode === 'strict') {
-      if (remainingSeconds <= 1) {
+      if (currentRemaining <= delta || remainingSeconds <= 1) {
         set({ remainingSeconds: 0 });
         get().submitTest();
       } else {
-        set({ remainingSeconds: remainingSeconds - 1 });
+        set({ remainingSeconds: currentRemaining - delta });
       }
     } else {
       // In guided mode, timer counts upwards (elapsed time)
-      set({ remainingSeconds: Math.max(0, (remainingSeconds || 0) + 1) });
+      set({ remainingSeconds: Math.max(0, currentRemaining + delta) });
     }
   },
 

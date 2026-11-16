@@ -35,7 +35,8 @@ export { splitIntoMoras };
  * - N = Odaka (尾高): L H H... (Drops on the particle) [L]
  */
 export function calculatePitchContour(kana: string, pitchNumber: number): PitchContourResult {
-  const moraStrings = splitIntoMoras(kana || '');
+  const safeKana = typeof kana === 'string' ? kana : '';
+  const moraStrings = splitIntoMoras(safeKana);
   const totalMoras = moraStrings.length;
 
   if (totalMoras === 0) {
@@ -154,11 +155,24 @@ const LOW_FREQ = 440.00;  // A4
 const MORA_DURATION_SEC = 0.18;
 const GAP_DURATION_SEC = 0.02;
 
+let activeMelodyCleanup: (() => void) | null = null;
+
 /**
- * Play procedural melody tone beeps representing the pitch contour.
- * Guaranteed to work offline on all mobile and desktop browsers.
+ * Stops any active procedural pitch tone playback immediately
  */
-export function playPitchToneMelody(moras: MoraUnit[], particlePitch?: 'high' | 'low'): void {
+export function stopPitchToneMelody(): void {
+  if (activeMelodyCleanup) {
+    try {
+      activeMelodyCleanup();
+    } catch {}
+    activeMelodyCleanup = null;
+  }
+}
+
+/**
+ * Plays a single procedural tone representing a high or low mora pitch
+ */
+export function playSingleMoraTone(isHigh: boolean): void {
   if (!isSfxEnabled()) return;
   const ctx = getAudioContext();
   if (!ctx) return;
@@ -166,6 +180,57 @@ export function playPitchToneMelody(moras: MoraUnit[], particlePitch?: 'high' | 
   if (ctx.state === 'suspended') {
     ctx.resume().catch(() => {});
   }
+
+  stopPitchToneMelody();
+
+  const now = ctx.currentTime;
+  const osc = ctx.createOscillator();
+  const gain = ctx.createGain();
+  const freq = isHigh ? HIGH_FREQ : LOW_FREQ;
+
+  osc.type = 'sine';
+  osc.frequency.setValueAtTime(freq, now);
+
+  gain.gain.setValueAtTime(0, now);
+  gain.gain.linearRampToValueAtTime(0.2, now + 0.02);
+  gain.gain.setValueAtTime(0.2, now + 0.16);
+  gain.gain.linearRampToValueAtTime(0, now + 0.2);
+
+  osc.connect(gain);
+  gain.connect(ctx.destination);
+
+  osc.start(now);
+  osc.stop(now + 0.2);
+
+  activeMelodyCleanup = () => {
+    try { osc.stop(); } catch {}
+    try { osc.disconnect(); } catch {}
+    try { gain.disconnect(); } catch {}
+  };
+
+  setTimeout(() => {
+    if (activeMelodyCleanup) {
+      activeMelodyCleanup = null;
+    }
+  }, 250);
+}
+
+/**
+ * Play procedural melody tone beeps representing the pitch contour.
+ * Guaranteed to work offline on all mobile and desktop browsers.
+ */
+export function playPitchToneMelody(moras: MoraUnit[], particlePitch?: 'high' | 'low'): void {
+  if (!isSfxEnabled()) return;
+  if (!Array.isArray(moras) || moras.length === 0) return;
+  const ctx = getAudioContext();
+  if (!ctx) return;
+
+  if (ctx.state === 'suspended') {
+    ctx.resume().catch(() => {});
+  }
+
+  // Cancel any prior in-flight melody to prevent audio clashing
+  stopPitchToneMelody();
 
   const now = ctx.currentTime;
   const unitsToPlay = [...moras];
@@ -211,14 +276,24 @@ export function playPitchToneMelody(moras: MoraUnit[], particlePitch?: 'high' | 
     gains.push(gain);
   });
 
-  // Scheduled node disconnection to eliminate Web Audio leaks
-  const cleanupDelay = Math.max(50, Math.ceil((maxStopTime - ctx.currentTime) * 1000) + 100);
-  setTimeout(() => {
+  const cleanupNodes = () => {
     oscillators.forEach((o) => {
+      try { o.stop(); } catch {}
       try { o.disconnect(); } catch {}
     });
     gains.forEach((g) => {
       try { g.disconnect(); } catch {}
     });
+  };
+
+  activeMelodyCleanup = cleanupNodes;
+
+  // Scheduled node disconnection to eliminate Web Audio leaks
+  const cleanupDelay = Math.max(50, Math.ceil((maxStopTime - ctx.currentTime) * 1000) + 100);
+  setTimeout(() => {
+    cleanupNodes();
+    if (activeMelodyCleanup === cleanupNodes) {
+      activeMelodyCleanup = null;
+    }
   }, cleanupDelay);
 }

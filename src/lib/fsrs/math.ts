@@ -57,25 +57,31 @@ export function fsrsRetrievabilityPercent(elapsedDays: number, stability: number
 /**
  * Determines whether an FSRS card is due for review based on due timestamp or lapsed state.
  */
-export function fsrsIsCardDue(card?: Partial<FSRSCard> | null, nowMs = Date.now()): boolean {
+export function fsrsIsCardDue(card?: Partial<FSRSCard> | { card?: Partial<FSRSCard> | null } | null, nowMs = Date.now()): boolean {
   if (!card) return false;
-  if (!card.due) return true;
-  const dueTime = new Date(card.due).getTime();
+  const effective = (typeof card === 'object' && 'card' in card) ? (card as any).card : card;
+  if (!effective) return false;
+  if (!effective.due) return true;
+  const dueTime = new Date(effective.due).getTime();
   return Number.isNaN(dueTime) || dueTime <= nowMs;
 }
 
 /**
  * Counts how many FSRS cards are due for review in a collection.
+ * Defensively supports both nested { card: FSRSCard } and flat FSRSCard objects.
  */
 export function fsrsCountDueCards(
-  cardsMap?: Record<string, { card?: Partial<FSRSCard> | null }> | null,
+  cardsMap?: Record<string, any> | null,
   nowMs = Date.now()
 ): number {
   if (!cardsMap) return 0;
   let count = 0;
   for (const record of Object.values(cardsMap)) {
-    if (record?.card && fsrsIsCardDue(record.card, nowMs)) {
-      count++;
+    if (record) {
+      const card = 'card' in record ? record.card : record;
+      if (card && fsrsIsCardDue(card, nowMs)) {
+        count++;
+      }
     }
   }
   return count;
@@ -291,6 +297,8 @@ export interface FSRSReviewOptions {
   isCatastrophicTrap?: boolean;
   isKanji?: boolean;
   matsunagaMultiplier?: number;
+  isUnscheduledPractice?: boolean;
+  sameDayDamping?: boolean;
 }
 
 /**
@@ -345,6 +353,7 @@ export function calculateFSRSReview(
   let nextStability: number;
   let nextDifficulty: number;
 
+  const isInitial = safeReps === 0 || safeStability <= 0;
   const weights = options.weights || (options.useIndonesianWeights ? INDONESIAN_CALIBRATED_FSRS_WEIGHTS : DEFAULT_FSRS_WEIGHTS);
 
   // If L1 trap failed on Again rating, apply catastrophic/standard interference penalty spike
@@ -356,8 +365,6 @@ export function calculateFSRSReview(
     nextStability = penalized.stability;
     nextDifficulty = penalized.difficulty;
   } else {
-    const isInitial = safeReps === 0 || safeStability <= 0;
-
     if (isInitial) {
       // Initial stability & difficulty
       nextStability = weights[rating - 1] || 1.0;
@@ -406,6 +413,15 @@ export function calculateFSRSReview(
     }
   }
 
+  // Same-Day Review Damping (intra-day repeat or unscheduled Dojo free practice):
+  // Immediate rehearsals reinforce working memory but do not substitute for sleep consolidation.
+  // Damps stability growth to Delta S <= 0.05 * S
+  if ((options.isUnscheduledPractice || (options.sameDayDamping && elapsedDays < 0.2)) && !isInitial && rating >= 2) {
+    const deltaS = Math.max(0, nextStability - safeStability);
+    const cappedDelta = Math.min(deltaS, 0.05 * Math.max(1, safeStability));
+    nextStability = safeStability + cappedDelta;
+  }
+
   // Apply Matsunaga 2.3x exposure scaling for non-kanji background learners (Ticket T-54 / Matsunaga 1999)
   if (options.isKanji) {
     const mult = options.matsunagaMultiplier || MATSUNAGA_MULTIPLIER;
@@ -445,4 +461,30 @@ export function calculateFSRSReview(
     state: nextState,
     last_review: now.toISOString(),
   };
+}
+
+/**
+ * Count how many cards are due for review today according to FSRS
+ * Defensively supports both nested { card: FSRSCard } and flat FSRSCard records.
+ */
+export function getFSRSDueCount(cardsMap: Record<string, any>): number {
+  const now = Date.now();
+  let count = 0;
+  const safeMap = cardsMap && typeof cardsMap === 'object' ? cardsMap : {};
+  for (const record of Object.values(safeMap)) {
+    if (record) {
+      const card = 'card' in record ? record.card : record;
+      if (card) {
+        if (!card.due) {
+          count++;
+        } else {
+          const dueTime = new Date(card.due).getTime();
+          if (Number.isNaN(dueTime) || dueTime <= now) {
+            count++;
+          }
+        }
+      }
+    }
+  }
+  return count;
 }

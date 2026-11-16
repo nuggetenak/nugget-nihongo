@@ -238,8 +238,11 @@ export const SenseiPage: React.FC = () => {
           ? 'Punya kalimat bahasa Jepang buatanmu sendiri? Tulis di sini, biar kita cek partikel dan tingkat kealamiannya sama-sama.'
           : 'Tulis kalimat bahasa Jepang yang sudah kamu buat, nanti kita periksa bersama agar terdengar lebih alami dan tepat! ✍️';
 
-      const activeKey = typeof window !== 'undefined' ? localStorage.getItem('nn_gemini_api_key') || '' : '';
-      const isOR = activeKey.startsWith('sk-or-') || !activeKey;
+      const activeKey =
+        typeof window !== 'undefined'
+          ? localStorage.getItem('nn_openrouter_api_key') || localStorage.getItem('nn_gemini_api_key') || ''
+          : '';
+      const isOR = activeKey.startsWith('sk-or-');
 
       const initialGreeting: ChatMessage = {
         id: `welcome-${mode}-${Date.now()}`,

@@ -13746,8 +13746,8 @@ window.vocabN4_Nouns = [
 {
   "id": "vg-n4-00394",
   "word": "〜中",
-  "reading": "〜じゅう/ちゅう",
-  "romaji": "juu/chuu",
+  "reading": "〜じゅう",
+  "romaji": "juu",
   "meaning_id": "seluruh ~, sepanjang ~",
   "meaning_en": "throughout ~, all over ~",
   "jlpt": "n4",
@@ -26336,9 +26336,9 @@ window.vocabN4_Nouns = [
 
 {
   "id": "vg-n4-00745",
-  "word": "パート (タイム)",
-  "reading": "パート (タイム)",
-  "romaji": "paato (taimu)",
+  "word": "パート",
+  "reading": "パート",
+  "romaji": "paato",
   "meaning_id": "pekerjaan paruh waktu, kerja part-time",
   "meaning_en": "part-time work; part-time job",
   "jlpt": "n4",
@@ -32440,9 +32440,9 @@ window.vocabN4_Nouns = [
 
 {
   "id": "vg-n4-00909",
-  "word": "スーパー (マーケット)",
-  "reading": "スーパー (マーケット)",
-  "romaji": "suupaa (maaketto)",
+  "word": "スーパー",
+  "reading": "スーパー",
+  "romaji": "suupaa",
   "meaning_id": "pasar swalayan, supermarket",
   "meaning_en": "supermarket",
   "jlpt": "n4",

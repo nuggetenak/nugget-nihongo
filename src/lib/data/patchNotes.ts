@@ -22,13 +22,13 @@ export const PATCH_NOTES_HISTORY: PatchNote[] = [
     releaseName: 'Shin-Nihongo: Dojo 4-Pillars & Clean Studio Ergonomics',
     date: '9 November 2026',
     type: 'minor',
-    friendlySummary: 'Pembaruan v24.2.0 merestrukturisasi total ruang Dojo menjadi 4 pilar yang intuitif dan terarah: 🥋 Latihan & Kuis (Sasana Drill Refleks 6 Mode), 📖 Kamus & Indeks (10.500+ kosakata dan 850+ pola tata bahasa), 🧰 Alat Bantu & Pustaka Referensi (8 instrumen tata bahasa & eksplorasi 9 buku teks), serta 🎯 Simulator Ujian CBT (Pusat Simulasi Ujian Resmi JLPT N5–N1, JFT-Basic, Prometric Tokutei Ginou SSW 19 Sektor, Menyimak Choukai 163 Soal, dan Tes CAT). Navigasi samping (Drawer) kini tersambung langsung ke tab Latihan & Kuis di Dojo tanpa halaman terisolasi. Selain itu, tampilan Bedah Materi di Studio Belajar disempurnakan dengan menghilangkan tab bertumpuk di layar ponsel dan menghadirkan tombol melayang "Kembali ke Atas" yang halus.',
+    friendlySummary: 'Halo teman belajar! Di pembaruan v24.2.0 ini, kami merapikan seluruh sudut aplikasi agar perjalanan belajarmu terasa jauh lebih ringan, nyaman, dan menyenangkan. Ruang Dojo kini kami tata rapi menjadi 4 bagian yang jelas: kamu bisa langsung latihan soal kilat untuk mengasah refleks (🥋 Latihan & Kuis), cari arti kata & pola kalimat di kamus lengkap (📖 Kamus & Indeks), buka contekan tata bahasa & 9 buku teks panduan (🧰 Alat Bantu), atau menguji kesiapan lewat simulasi ujian resmi dalam suasana yang tenang (🎯 Simulator CBT). Membaca materi panjang di HP juga makin lega tanpa tombol yang bertumpuk atau menghalangi, lengkap dengan tombol melayang untuk kembali ke atas dengan sekali sentuh. Selamat menyelami bahasa Jepang, kami selalu ada menemanimu!',
     highlights: [
-      'Pilar 1 — Restrukturisasi 4 Tombol Pilihan Dojo & Materi Hub: Pemisahan bersih antara Latihan & Kuis, Kamus & Indeks, Alat Bantu & Referensi, dan Simulator Ujian CBT.',
-      'Pilar 2 — Pusat Simulasi Ujian CBT Resmi Terintegrasi: Tersedia 14 Set Ujian Lengkap JLPT CBT N5–N1, JFT-Basic A1/A2, Prometric Tokutei Ginou SSW (19 Sektor), Simulator Menyimak Choukai (163 soal), dan Tes Adaptif CAT.',
-      'Pilar 3 — Harmonisasi Navigasi Menu Samping & Arena Kuis: Menekan Arena Kuis di menu samping langsung membuka sasana latihan di Dojo tanpa memuat halaman terpisah yang membingungkan.',
-      'Pilar 4 — Ergonomi Bersih Studio Belajar (Bebas Sticky Bertumpuk): Sub-tab Bedah Materi tidak lagi menumpuk atau menutupi bacaan di ponsel, dilengkapi tombol melayang "Atas" saat scroll materi panjang.',
-      'Pilar 5 — Pustaka Alat Bantu & 9 Seri Buku Teks: Bagan Kana, Matriks Konjugasi, Komparasi Nuansa, Pelatih Keigo, Pelatih Bilangan, Kotowaza, Pitch Accent, dan 9 Buku Teks Resmi tersusun rapi di tab Alat Bantu.',
+      'Pilar 1 — 4 Tombol Pilihan Dojo & Materi Hub: Ruang latihan harian kini tertata rapi dan terpisah jelas dari kamus maupun ujian resmi, jadi kamu bisa fokus mengasah refleks tanpa terdistraksi.',
+      'Pilar 2 — Simulator Ujian CBT Terintegrasi: Pusat simulasi ujian resmi JLPT (N5–N1), JFT-Basic, dan ujian kerja SSW 19 sektor siap kamu coba kapan saja dengan suasana tenang dan timer realistis.',
+      'Pilar 3 — Navigasi Terpadu Drawer & Arena Kuis: Tombol "Arena Kuis" di menu samping langsung membawamu ke ruang latihan Dojo yang tepat tanpa jeda atau halaman perantara yang membingungkan.',
+      'Pilar 4 — Ergonomi Studio Belajar Bersih (Bebas Sticky Bertumpuk): Layar HP kini terasa lebih lega dan leluasa saat membaca materi panjang, ditambah tombol melayang praktis untuk kembali ke atas.',
+      'Pilar 5 — Pustaka Alat Bantu & 9 Seri Buku Teks: Tabel huruf kana, perubahan kata kerja, etika kesopanan keigo, pelatih angka, hingga materi dari 9 seri buku teks resmi tersusun rapi di tab Alat Bantu.',
     ],
     details: [
       {
@@ -200,7 +200,7 @@ export const PATCH_NOTES_HISTORY: PatchNote[] = [
         category: 'Pilar 1 — 200 Indonesian Learner Personas Full-Swarm Simulation',
         items: [
           'Pengujian swarm otomatis 200 persona pemelajar Indonesia (75 JLPT, 35 JFT, 50 SSW, 40 Living) melintasi 8 dialek daerah dan 179 tipe smartphone.',
-          'Ketahanan gemba offline 100% teruji pada lingkungan kerja minim sinyal (pertanian, perikanan lepas pantai, konstruksi).',
+          'Ketahanan offline 100% teruji pada lingkungan kerja minim sinyal (pertanian, perikanan lepas pantai, konstruksi).',
           'Penyelarasan kontrak skema persona (location, primary_goal, connectivity_context) dengan zero test failures.',
         ],
       },
@@ -341,7 +341,7 @@ export const PATCH_NOTES_HISTORY: PatchNote[] = [
         category: 'Lembar Pembahasan 5 Lapis & Integrasi FSRS',
         items: [
           'Penyajian komprehensif Lapis 1 (Alasan Kunci Benar), Lapis 2 (Bedah Distraktor A, B, C, D), Lapis 3 (Mnemonik Sensei), Lapis 4 (Peringatan Interferensi L1 Indonesia), dan Lapis 5 (Preskripsi Remedial).',
-          'Peringatan keselamatan kerja gemba K3 resmi kementerian Jepang pada set vokasional SSW.',
+          'Peringatan keselamatan kerja K3 resmi kementerian Jepang pada set vokasional SSW.',
           'Tombol 1-ketuk simpan materi ke antrean review harian Spaced Repetition FSRS v4.5.',
           'Tautan langsung aksi remedial Pelajari Modul Ini yang langsung membuka unit kurikulum terkait di MateriHub.',
         ],
@@ -409,7 +409,7 @@ export const PATCH_NOTES_HISTORY: PatchNote[] = [
         category: 'Pass 5 — Arena Kuis Streamlining & Quality Gate',
         items: [
           'Penataan 9 mode kuis unggulan ke dalam kartu hero Rekomendasi Hari Ini dan 3 tab tematik (Tantangan Cepat, Kosakata & Huruf, Tata Bahasa & Audio).',
-          'Progressive disclosure untuk 7 mode spesialis gemba & tata bahasa lanjutan.',
+          'Progressive disclosure untuk 7 mode spesialis kerja nyata & tata bahasa lanjutan.',
           'Pembersihan total micro-font di seluruh subsystem kuis (QuizPage, QuizArenaHub, QuizResultView, ExitGuard, PanicRecall, MoraPacing).',
           'Pencegahan blowout layout kartu susun kata acak (Rearrange) pada layar ultra-kompak 320px–375px.',
           'Penyempurnaan QuizExitGuardModal dengan auto-focus tombol aman dan penanganan tombol Escape.',
@@ -791,7 +791,7 @@ export const PATCH_NOTES_HISTORY: PatchNote[] = [
     highlights: [
       'Master Kurikulum 4 Kategori: Jalur JLPT Akademik (N5–N1), Jalur 9 Seri Buku Teks, Jalur Kerja SSW (19 Sektor), dan Jalur JFT-Basic & Hidup di Jepang (Seikatsu)',
       'Integrasi 9 Seri Buku Teks Kanonikal: GENKI I/II, Minna no Nihongo, Sou Matome, Tobira, QUARTET, TRY!, Shin Kanzen Master, Marugoto, dan Irodori',
-      'Ekspansi Penuh 19 Sektor SSW Tokutei Ginou: Prosedur Keselamatan K3 Gemba, Protokol Komunikasi Koe-kake, Sanitasi HACCP, dan Pelaporan SBAR',
+      'Ekspansi Penuh 19 Sektor SSW Tokutei Ginou: Prosedur Keselamatan K3 Tempat Kerja, Protokol Komunikasi Koe-kake, Sanitasi HACCP, dan Pelaporan SBAR',
       'Kurasi Lengkap & Eliminasi Total String Placeholder: 9.565 Kalimat Contoh Divalidasi 100% Bebas [Terjemahan]',
       'Sanitasi Terminologi UI/UX: Bahasa Indonesia Hangat & Ramah Pembelajar, Memindahkan Teori SLA ke Modal Riset Mandiri',
       'Interactive Learning Studio: Tokyo Pitch Accent Contour Visualizer (SVG Polyline) & Kanji Stroke Order Practice Canvas',
@@ -987,7 +987,7 @@ export const PATCH_NOTES_HISTORY: PatchNote[] = [
       'Peta Tangga Kognitif Berbasis Processability Theory (Stages 1–6 Pienemann)',
       'Mesin Diagnostik Empiris L1 Bahasa Indonesia: 300 Butir Uji (150 Morfosintaksis & 150 Nada Fonologis)',
       'Personalisasi 4 Substratum Dialek Daerah (Umum, Jawa, Sunda, Batak/Timur) di Materi & Pengaturan',
-      '21 Protokol Kedaruratan Gemba K3 & Kaigo SBAR Berstandar Kerja Nyata Jepang',
+      '21 Protokol Kedaruratan K3 & Kaigo SBAR Berstandar Kerja Nyata Jepang',
       'Ekspansi Arena Kuis Menjadi 13 Mode: Panic Recall (5s Fading), Mora Pacing (240 bpm), Pitch Accent, dll.',
       'Kalibrasi FSRS Fatigue-Aware Clamping & Penyesuaian Peluruhan Waktu Malam',
       'Audit Responsif Multi-Device Headless Playwright: 64/64 Cek Lolos Melintasi iPhone SE hingga Desktop',
@@ -999,7 +999,7 @@ export const PATCH_NOTES_HISTORY: PatchNote[] = [
           'Jalur Akademik N5–N1 terstruktur dari Aisatsu dasar hingga dekonstruksi wacana editorial surat kabar tingkat mahir.',
           'Jalur Vokasional SSW Kaigo (Keperawatan Lansia): SOP Koe-kake, komunikasi empatik, & format baku pelaporan darurat SBAR.',
           'Jalur Vokasional SSW Food Service: Protokol sanitasi 5S, standar HACCP, penanganan alergen, & etika pelayanan Omotenashi.',
-          'Jalur Vokasional SSW Konstruksi: Pencegahan celaka K3 Gemba, komando akustik kansei KYT (Kiken Yochi Training), & aba-aba alat berat.',
+          'Jalur Vokasional SSW Konstruksi: Pencegahan celaka K3 lapangan proyek, komando akustik kansei KYT (Kiken Yochi Training), & aba-aba alat berat.',
           'Setiap unit dilengkapi catatan fokus analisis kontrasif L1 untuk membongkar jebakan bahasa ibu.',
         ],
       },

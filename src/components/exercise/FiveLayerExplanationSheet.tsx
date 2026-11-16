@@ -222,7 +222,7 @@ export const FiveLayerExplanationSheet: React.FC<FiveLayerExplanationSheetProps>
         <div className="card-interactive-lift bg-rose-500/10 border border-rose-500/30 rounded-2xl sm:rounded-3xl p-4 sm:p-6 space-y-2.5">
           <div className="flex items-center gap-2 text-xs font-black text-rose-800 dark:text-rose-400 uppercase tracking-wider">
             <IrasutoyaImage assetId="ssw_construction" className="w-5 h-5" containerClassName="w-5 h-5 shrink-0" />
-            <span>Regulasi Keselamatan Kerja Gemba K3 (Kementerian Jepang)</span>
+            <span>Regulasi Keselamatan Kerja & K3 (Kementerian Jepang)</span>
           </div>
           <p className="text-xs sm:text-sm text-appText-bright leading-relaxed font-medium">
             {exp.safetyTip}

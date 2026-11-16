@@ -1,3 +1,4 @@
+export type { JLPTLevel } from './vocab';
 import { JLPTLevel } from './vocab';
 import type { PersonaProfileId } from '../lib/audio/personaVoices';
 import type { PitchAccentEntry } from '../lib/data/pitchAccentManager';

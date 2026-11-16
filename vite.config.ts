@@ -75,6 +75,12 @@ export default defineConfig({
           ) {
             return 'app-infra';
           }
+          if (
+            normalized.includes('/src/components/ui/SearchPalette') ||
+            normalized.includes('/src/lib/search/')
+          ) {
+            return 'search-palette';
+          }
 
           // 2. Curriculum N5 modular chunks (< 300 kB each)
           if (normalized.includes('/curriculum/lessons/n5/')) {

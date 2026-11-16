@@ -298,7 +298,7 @@ export const CounterTrainerModal: React.FC<CounterTrainerModalProps> = ({
                     <button
                       key={cat.id}
                       onClick={() => setSelectedCategory(cat.id)}
-                      className={`px-3 py-1.5 rounded-xl text-xs font-semibold whitespace-nowrap transition-all ${
+                      className={`min-h-[40px] px-3.5 py-1.5 rounded-xl text-xs font-semibold whitespace-nowrap transition-all active:scale-95 flex items-center ${
                         selectedCategory === cat.id
                           ? 'bg-surface-3 text-accent font-bold border border-accent/30'
                           : 'bg-surface-2 hover:bg-surface-3 text-appText-muted'
@@ -515,7 +515,7 @@ export const CounterTrainerModal: React.FC<CounterTrainerModalProps> = ({
                       key={idx}
                       disabled={isAnswered}
                       onClick={() => handleSelectQuizOption(idx)}
-                      className={`w-full p-4 rounded-2xl border text-left transition-all active:scale-98 flex items-start justify-between gap-3 ${borderClass}`}
+                      className={`w-full p-4 rounded-2xl border text-left transition-all active:scale-95 flex items-start justify-between gap-3 ${borderClass}`}
                     >
                       <div className="min-w-0">
                         <div className="text-sm font-extrabold text-appText-bright">{option.text}</div>
@@ -549,7 +549,7 @@ export const CounterTrainerModal: React.FC<CounterTrainerModalProps> = ({
                 <div className="pt-2 flex justify-end">
                   <button
                     onClick={handleNextQuiz}
-                    className="px-5 py-2.5 rounded-xl bg-accent text-surface font-extrabold text-xs flex items-center gap-2 hover:opacity-90 active:scale-95 transition-all shadow-md"
+                    className="min-h-[40px] px-5 py-2.5 rounded-xl bg-accent text-surface font-extrabold text-xs flex items-center gap-2 hover:opacity-90 active:scale-95 transition-all shadow-md"
                   >
                     <span>Lanjut ke Soal Berikutnya</span>
                     <ArrowRight className="w-4 h-4" />
@@ -587,7 +587,7 @@ export const CounterTrainerModal: React.FC<CounterTrainerModalProps> = ({
                           playFlipSfx();
                           setCalcCounterId(c.id);
                         }}
-                        className={`px-3 py-1.5 rounded-xl text-xs font-bold whitespace-nowrap transition-all ${
+                        className={`min-h-[40px] px-3.5 py-1.5 rounded-xl text-xs font-bold whitespace-nowrap transition-all active:scale-95 flex items-center ${
                           calcCounterId === c.id
                             ? 'bg-accent text-surface shadow-sm'
                             : 'bg-surface hover:bg-surface-3 text-appText-muted border border-accent/15'

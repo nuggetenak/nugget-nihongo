@@ -5,6 +5,37 @@
 
 import { create } from 'zustand';
 
+/**
+ * Returns YYYY-MM-DD in the learner's actual local timezone (WIB/WITA/WIT/JST)
+ */
+export function getLocalDateString(
+  date = new Date(),
+  timeZone = (typeof Intl !== 'undefined' ? Intl.DateTimeFormat().resolvedOptions().timeZone : 'Asia/Jakarta')
+): string {
+  try {
+    const formatter = new Intl.DateTimeFormat('en-CA', {
+      timeZone,
+      year: 'numeric',
+      month: '2-digit',
+      day: '2-digit',
+    });
+    return formatter.format(date);
+  } catch {
+    return date.toISOString().slice(0, 10);
+  }
+}
+
+/**
+ * Returns yesterday's YYYY-MM-DD in the learner's local timezone
+ */
+export function getLocalYesterdayString(
+  date = new Date(),
+  timeZone?: string
+): string {
+  const yesterday = new Date(date.getTime() - 86400000);
+  return getLocalDateString(yesterday, timeZone);
+}
+
 export interface XPLevelInfo {
   level: number;
   xp: number;
@@ -56,7 +87,7 @@ export const XP_LEVELS: XPLevelInfo[] = [
   { level: 34, xp: 89000,  title: 'Pembeda Makro Diskurus',   titleJp: 'マクロ言説の分析者' },
   { level: 35, xp: 98000,  title: 'Penyimak Diskusi Cepat',   titleJp: '迅速対話の傍聴者' },
   { level: 36, xp: 107000, title: 'Penganalisis Opini',       titleJp: '評論の解読者' },
-  { level: 37, xp: 117000, title: 'Spesialis Gemba K3',       titleJp: '現場安全の指南役' },
+  { level: 37, xp: 117000, title: 'Spesialis Keselamatan Kerja', titleJp: '現場安全の指南役' },
   { level: 38, xp: 127000, title: 'Penyusun Dokumen Resmi',   titleJp: '公的文書の起草者' },
   { level: 39, xp: 135000, title: 'Pakar Negosiasi',          titleJp: '交渉の調停者' },
   { level: 40, xp: 140000, title: 'Praktisi Mahir N2',        titleJp: 'N2上級実務者' },
@@ -98,15 +129,16 @@ export function getNextLevelProgress(xp: number): {
   progressPercent: number;
   xpNeeded: number;
 } {
-  const current = getLevelForXp(xp);
+  const safeXp = Number.isFinite(xp) ? Math.max(0, Math.floor(xp)) : 0;
+  const current = getLevelForXp(safeXp);
   const next = XP_LEVELS.find((l) => l.level === current.level + 1) || null;
   if (!next) {
     return { currentLevel: current, nextLevel: null, progressPercent: 100, xpNeeded: 0 };
   }
   const range = next.xp - current.xp;
-  const currentProgress = xp - current.xp;
+  const currentProgress = safeXp - current.xp;
   const progressPercent = Math.min(100, Math.max(0, Math.round((currentProgress / range) * 100)));
-  const xpNeeded = Math.max(0, next.xp - xp);
+  const xpNeeded = Math.max(0, next.xp - safeXp);
   return { currentLevel: current, nextLevel: next, progressPercent, xpNeeded };
 }
 
@@ -121,7 +153,7 @@ let xpBurstHistory: Array<{ timestamp: number; amount: number }> = [];
  * Validates XP increment against daily ceiling (2,500 XP) and burst rate limits (150 XP / 10s).
  */
 export function checkXpAntiCheat(amount: number): { allowed: boolean; effectiveAmount: number; reason?: string } {
-  if (amount <= 0) return { allowed: false, effectiveAmount: 0, reason: 'Invalid non-positive XP amount' };
+  if (!Number.isFinite(amount) || amount <= 0) return { allowed: false, effectiveAmount: 0, reason: 'Invalid non-positive XP amount' };
 
   const now = Date.now();
   xpBurstHistory = xpBurstHistory.filter((item) => now - item.timestamp < BURST_WINDOW_MS);
@@ -136,17 +168,7 @@ export function checkXpAntiCheat(amount: number): { allowed: boolean; effectiveA
     effective = remainingBurst;
   }
 
-  let todayStr = '';
-  try {
-    todayStr = new Intl.DateTimeFormat('en-CA', {
-      timeZone: typeof Intl !== 'undefined' ? Intl.DateTimeFormat().resolvedOptions().timeZone : 'Asia/Jakarta',
-      year: 'numeric',
-      month: '2-digit',
-      day: '2-digit',
-    }).format(new Date());
-  } catch {
-    todayStr = new Date().toISOString().slice(0, 10);
-  }
+  const todayStr = getLocalDateString();
 
   let dailyEarned = 0;
   if (typeof window !== 'undefined') {
@@ -264,8 +286,13 @@ function loadEarnedBadges(): Record<string, string> {
     const raw = localStorage.getItem('nn_achievements');
     if (!raw) return {};
     const parsed: Array<{ id: string; earned_at?: string }> = JSON.parse(raw);
+    if (!Array.isArray(parsed)) return {};
     const map: Record<string, string> = {};
-    parsed.forEach((b) => { map[b.id] = b.earned_at || new Date().toISOString(); });
+    parsed.forEach((b) => {
+      if (b && typeof b.id === 'string') {
+        map[b.id] = b.earned_at || new Date().toISOString();
+      }
+    });
     return map;
   } catch {
     return {};
@@ -276,7 +303,8 @@ function loadHeatmap(): Record<string, { reviews: number; xp: number }> {
   if (typeof window === 'undefined') return {};
   try {
     const raw = localStorage.getItem('nn_heatmap');
-    return raw ? JSON.parse(raw) : {};
+    const parsed = raw ? JSON.parse(raw) : {};
+    return parsed && typeof parsed === 'object' && !Array.isArray(parsed) ? parsed : {};
   } catch {
     return {};
   }
@@ -286,7 +314,8 @@ function loadQuizModeStats(): Record<string, QuizModeStat> {
   if (typeof window === 'undefined') return {};
   try {
     const raw = localStorage.getItem('nn_quiz_mode_stats');
-    return raw ? JSON.parse(raw) : {};
+    const parsed = raw ? JSON.parse(raw) : {};
+    return parsed && typeof parsed === 'object' && !Array.isArray(parsed) ? parsed : {};
   } catch {
     return {};
   }
@@ -316,13 +345,13 @@ export const useGamificationStore = create<GamificationState>((set, get) => {
     closeStreakBrokenModal: () => set({ isStreakBrokenModalOpen: false }),
 
     recordActivity: (reviewsCount = 1, xpEarned = 10) => {
-      const today = new Date().toISOString().slice(0, 10);
+      const today = getLocalDateString();
       const currentHeatmap = { ...get().heatmap };
       const dayData = currentHeatmap[today] || { reviews: 0, xp: 0 };
 
       currentHeatmap[today] = {
-        reviews: dayData.reviews + reviewsCount,
-        xp: dayData.xp + xpEarned,
+        reviews: (dayData.reviews || 0) + Math.max(0, Number.isFinite(reviewsCount) ? reviewsCount : 1),
+        xp: (dayData.xp || 0) + Math.max(0, Number.isFinite(xpEarned) ? xpEarned : 10),
       };
 
       set({ heatmap: currentHeatmap });
@@ -331,10 +360,10 @@ export const useGamificationStore = create<GamificationState>((set, get) => {
         try { localStorage.setItem('nn_heatmap', JSON.stringify(currentHeatmap)); } catch {}
       }
 
-      // Check time-based badges (Night Owl & Early Bird)
+      // Check time-based badges (Night Owl: 00:00 - 04:00 & Early Bird: 04:00 - 06:00)
       const hour = new Date().getHours();
-      if (hour >= 0 && hour < 4) {
-        get().checkAndAwardBadges({});
+      if ((hour >= 0 && hour < 4) || (hour >= 4 && hour < 6)) {
+        get().checkAndAwardBadges({ clientTimestamp: Date.now() });
       }
     },
 
@@ -416,12 +445,14 @@ export const useGamificationStore = create<GamificationState>((set, get) => {
     },
 
     getHeatmapDays: (daysCount = 60): HeatmapDay[] => {
+      const safeCount = Math.max(7, Math.min(365, Number.isFinite(daysCount) && daysCount > 0 ? Math.floor(daysCount) : 60));
       const heatmap = get().heatmap;
       const result: HeatmapDay[] = [];
-      const d = new Date();
+      const now = new Date();
 
-      for (let i = 0; i < daysCount; i++) {
-        const ds = d.toISOString().slice(0, 10);
+      for (let i = 0; i < safeCount; i++) {
+        const d = new Date(now.getFullYear(), now.getMonth(), now.getDate() - i, 12, 0, 0);
+        const ds = getLocalDateString(d);
         const data = heatmap[ds];
         result.unshift({
           date: ds,
@@ -429,7 +460,6 @@ export const useGamificationStore = create<GamificationState>((set, get) => {
           xp: data?.xp || 0,
           active: !!data && data.reviews > 0,
         });
-        d.setDate(d.getDate() - 1);
       }
 
       return result;

@@ -75,25 +75,43 @@ assert(
 console.log('  ✔ [PASS] Sticky sub-tabs verified: stays floating during long downward scrolling.');
 
 // ── Check 3: Pure Practice Dojo with 6 Core Workout Modes ───────────────────
-console.log('\n▶ Check 3: Pure Practice Dojo with 6 Core Workout Modes (MateriHubPage)...');
+console.log('\n▶ Check 3: Pure Practice Dojo with 6 Core Workout Modes (MateriHubPage & ReflexDrillsPillar)...');
 
 const materiHubPath = path.join(ROOT_DIR, 'src/pages/MateriHubPage.tsx');
 const materiHubCode = fs.readFileSync(materiHubPath, 'utf8');
+const reflexPillarPath = path.join(ROOT_DIR, 'src/features/dojo/pillars/ReflexDrillsPillar.tsx');
+const reflexCode = fs.existsSync(reflexPillarPath) ? fs.readFileSync(reflexPillarPath, 'utf8') : '';
+const dojoVerificationCode = materiHubCode + '\n' + reflexCode;
 
 // Verify the 6 Practice Modes exist in Dojo
-assert(materiHubCode.includes('Kanji Dojo & Goresan'), 'Must feature Kanji Dojo & Goresan card');
-assert(materiHubCode.includes('Flashcard 3D Refleks'), 'Must feature Flashcard 3D Refleks card');
-assert(materiHubCode.includes('Kuis Pilihan Ganda'), 'Must feature Kuis Pilihan Ganda card');
-assert(materiHubCode.includes('Susun Kalimat (Bunsetsu)'), 'Must feature Susun Kalimat (Bunsetsu) card');
-assert(materiHubCode.includes('Isian Rumpang (Cloze)'), 'Must feature Isian Rumpang (Cloze) card');
-assert(materiHubCode.includes('Menyimak Kilat (Audio Drill)'), 'Must feature Menyimak Kilat card');
+assert(dojoVerificationCode.includes('Kanji Dojo & Goresan'), 'Must feature Kanji Dojo & Goresan card');
+assert(dojoVerificationCode.includes('Flashcard 3D Refleks'), 'Must feature Flashcard 3D Refleks card');
+assert(dojoVerificationCode.includes('Kuis Pilihan Ganda'), 'Must feature Kuis Pilihan Ganda card');
+assert(dojoVerificationCode.includes('Susun Kalimat (Bunsetsu)'), 'Must feature Susun Kalimat (Bunsetsu) card');
+assert(dojoVerificationCode.includes('Isian Rumpang (Cloze)'), 'Must feature Isian Rumpang (Cloze) card');
+assert(dojoVerificationCode.includes('Menyimak Kilat (Audio Drill)'), 'Must feature Menyimak Kilat card');
 
-// Verify actions wired correctly
-assert(materiHubCode.includes("startQuizSession('flashcard')"), 'Flashcard 3D must launch via startQuizSession');
-assert(materiHubCode.includes("startQuizSession('multiple-choice')"), 'Multiple-choice must launch via startQuizSession');
-assert(materiHubCode.includes("startQuizSession('rearrange')"), 'Rearrange must launch via startQuizSession');
-assert(materiHubCode.includes("startQuizSession('fill-in')"), 'Cloze fill-in must launch via startQuizSession');
-assert(materiHubCode.includes("startQuizSession('listening')"), 'Menyimak Kilat must launch via startQuizSession');
+// Verify actions wired correctly (either inline or delegated to ReflexDrillsPillar)
+assert(
+  dojoVerificationCode.includes("startQuizSession('flashcard')") || dojoVerificationCode.includes("onStartQuizSession('flashcard')"),
+  'Flashcard 3D must launch via startQuizSession'
+);
+assert(
+  dojoVerificationCode.includes("startQuizSession('multiple-choice')") || dojoVerificationCode.includes("onStartQuizSession('multiple-choice')"),
+  'Multiple-choice must launch via startQuizSession'
+);
+assert(
+  dojoVerificationCode.includes("startQuizSession('rearrange')") || dojoVerificationCode.includes("onStartQuizSession('rearrange')"),
+  'Rearrange must launch via startQuizSession'
+);
+assert(
+  dojoVerificationCode.includes("startQuizSession('fill-in')") || dojoVerificationCode.includes("onStartQuizSession('fill-in')"),
+  'Cloze fill-in must launch via startQuizSession'
+);
+assert(
+  dojoVerificationCode.includes("startQuizSession('listening')") || dojoVerificationCode.includes("onStartQuizSession('listening')"),
+  'Menyimak Kilat must launch via startQuizSession'
+);
 
 // Verify Menyimak Kilat does NOT confuse with formal 163-question CBT exam
 assert(

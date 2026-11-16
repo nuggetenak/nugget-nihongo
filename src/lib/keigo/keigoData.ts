@@ -767,7 +767,7 @@ export const KEIGO_NOUN_BANK: KeigoNounWord[] = [
     nuanceNote: 'Menyebut suami lawan bicara: "ご主人" (ごしゅじん). Menyebut suami diri sendiri ke orang lain: "夫" (おっと).',
     example: {
       jp: 'ご主人は今日もお忙しいですか。',
-      reading: 'ごしゅじんはきょうもお忙しいですか。',
+      reading: 'ごしゅじんはきょうもおいそがしいですか。',
       id: 'Apakah suami Anda hari ini juga sibuk?',
     },
   },

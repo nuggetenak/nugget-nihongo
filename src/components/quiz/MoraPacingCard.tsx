@@ -129,8 +129,9 @@ export const MoraPacingCard: React.FC<MoraPacingCardProps> = ({
 
           <button
             onClick={handleSpeak}
-            className="p-1.5 rounded-xl bg-surface-2 hover:bg-surface-3 text-appText-muted hover:text-accent transition-all active:scale-95"
+            className="min-h-[40px] min-w-[40px] p-2 flex items-center justify-center rounded-xl bg-surface-2 hover:bg-surface-3 text-appText-muted hover:text-accent transition-all active:scale-95"
             title="Dengarkan pelafalan"
+            aria-label="Dengarkan pelafalan audio mora"
           >
             <Volume2 className="w-4 h-4" />
           </button>
@@ -175,7 +176,7 @@ export const MoraPacingCard: React.FC<MoraPacingCardProps> = ({
           <div className="flex justify-center pt-1">
             <button
               onClick={toggleMetronome}
-              className={`flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-bold transition-all active:scale-95 ${
+              className={`min-h-[40px] flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-bold transition-all active:scale-95 ${
                 isPlayingMetronome
                   ? 'bg-indigo-600 text-white shadow-glow'
                   : 'bg-indigo-500/15 hover:bg-indigo-500/25 text-indigo-300 border border-indigo-500/30'

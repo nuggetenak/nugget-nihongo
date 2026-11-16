@@ -416,7 +416,7 @@ export const CANONICAL_PAIN_ONOMATOPOEIA: PainOnomatopoeiaItem[] = [
     action_guideline_id: 'Pindahkan ke tempat ber-AC sejuk, longgarkan pakaian leher, dan kompres es di leher.',
   },
 
-  // ── KLASTER 7: INDUSTRIAL TRAUMA & GEMBA ACCIDENTS (工場・機械外傷) ──
+  // ── KLASTER 7: INDUSTRIAL TRAUMA & FACTORY ACCIDENTS (工場・機械外傷) ──
   {
     id: 37,
     onomatopoeia: 'グシャッと',

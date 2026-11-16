@@ -14912,8 +14912,8 @@ window.vocabN5_Verbs = [
 {
   "id": "vg-n5-00789",
   "word": "結婚",
-  "reading": "けっこん (する)",
-  "romaji": "kekkon (suru)",
+  "reading": "けっこん",
+  "romaji": "kekkon",
   "meaning_id": "pernikahan; menikah",
   "meaning_en": "marriage; to marry",
   "jlpt": "n5",
@@ -15157,8 +15157,8 @@ window.vocabN5_Verbs = [
 {
   "id": "vg-n5-00817",
   "word": "散歩",
-  "reading": "さんぽ (する)",
-  "romaji": "sanpo (suru)",
+  "reading": "さんぽ",
+  "romaji": "sanpo",
   "meaning_id": "jalan-jalan santai, jalan kaki",
   "meaning_en": "walk; stroll; to take a walk",
   "jlpt": "n5",
@@ -15348,8 +15348,8 @@ window.vocabN5_Verbs = [
 {
   "id": "vg-n5-00843",
   "word": "掃除",
-  "reading": "そうじ (する)",
-  "romaji": "souji (suru)",
+  "reading": "そうじ",
+  "romaji": "souji",
   "meaning_id": "pembersihan, membersihkan (bersih-bersih)",
   "meaning_en": "cleaning, sweeping, to clean",
   "jlpt": "n5",
@@ -15664,8 +15664,8 @@ window.vocabN5_Verbs = [
 {
   "id": "vg-n5-00944",
   "word": "勉強",
-  "reading": "べんきょう (する)",
-  "romaji": "benkyou (suru)",
+  "reading": "べんきょう",
+  "romaji": "benkyou",
   "meaning_id": "belajar; pelajaran",
   "meaning_en": "study, studying; to study",
   "jlpt": "n5",

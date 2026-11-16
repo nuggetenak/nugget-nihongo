@@ -47,6 +47,7 @@ const STORAGE_KEY = 'nn_content_reports';
 
 function loadReportsFromStorage(): ContentReport[] {
   try {
+    if (typeof localStorage === 'undefined') return [];
     const raw = localStorage.getItem(STORAGE_KEY);
     return raw ? JSON.parse(raw) : [];
   } catch (err) {
@@ -57,6 +58,7 @@ function loadReportsFromStorage(): ContentReport[] {
 
 function saveReportsToStorage(reports: ContentReport[]) {
   try {
+    if (typeof localStorage === 'undefined') return;
     localStorage.setItem(STORAGE_KEY, JSON.stringify(reports));
   } catch (err) {
     console.warn('[reportStore] Failed to save local reports:', err);
@@ -167,7 +169,9 @@ export const useReportStore = create<ReportState>((set, get) => ({
   },
 
   clearLocalReports: () => {
-    localStorage.removeItem(STORAGE_KEY);
+    if (typeof localStorage !== 'undefined') {
+      localStorage.removeItem(STORAGE_KEY);
+    }
     set({ reports: [] });
   },
 }));

@@ -17,13 +17,14 @@ export const AchievementsBadgeShowcase: React.FC<AchievementsBadgeShowcaseProps>
     { id: 'special', label: 'Spesial', icon: '✨' },
   ];
 
-  const earnedCount = useMemo(() => badges.filter((b) => b.earned).length, [badges]);
-  const progressPercent = Math.round((earnedCount / Math.max(1, badges.length)) * 100);
+  const safeBadges = Array.isArray(badges) ? badges : [];
+  const earnedCount = useMemo(() => safeBadges.filter((b) => b && b.earned).length, [safeBadges]);
+  const progressPercent = Math.round((earnedCount / Math.max(1, safeBadges.length)) * 100);
 
   const filteredBadges = useMemo(() => {
-    if (selectedCategory === 'all') return badges;
-    return badges.filter((b) => b.category === selectedCategory);
-  }, [badges, selectedCategory]);
+    if (selectedCategory === 'all') return safeBadges;
+    return safeBadges.filter((b) => b && b.category === selectedCategory);
+  }, [safeBadges, selectedCategory]);
 
   return (
     <div className="bg-surface border border-accent/20 rounded-2xl sm:rounded-3xl p-4 sm:p-6 shadow-sm space-y-5">
@@ -43,7 +44,7 @@ export const AchievementsBadgeShowcase: React.FC<AchievementsBadgeShowcaseProps>
         <div className="flex items-center gap-2 self-start sm:self-auto shrink-0 bg-surface-2/80 px-3 py-1.5 rounded-xl border border-accent/20">
           <Sparkles className="w-4 h-4 text-amber-500" />
           <div className="text-xs font-mono font-bold text-appText-bright">
-            {earnedCount} <span className="text-appText-muted font-normal">/ {badges.length} Terbuka</span>
+            {earnedCount} <span className="text-appText-muted font-normal">/ {safeBadges.length} Terbuka</span>
           </div>
           <span className="text-xs font-bold px-2 py-0.5 rounded-md bg-accent/15 text-accent border border-accent/25">
             {progressPercent}%
@@ -59,7 +60,7 @@ export const AchievementsBadgeShowcase: React.FC<AchievementsBadgeShowcaseProps>
             <button
               key={cat.id}
               onClick={() => setSelectedCategory(cat.id)}
-              className={`px-3 py-1.5 rounded-xl text-xs font-bold transition-all active:scale-95 shrink-0 flex items-center gap-1.5 border min-h-[36px] ${
+              className={`px-3.5 py-2 rounded-xl text-xs font-bold transition-all active:scale-95 shrink-0 flex items-center gap-1.5 border min-h-[40px] ${
                 isSelected
                   ? 'bg-accent text-bg border-accent shadow-xs'
                   : 'bg-surface-2/60 border-accent/15 text-appText-muted hover:text-appText-bright hover:bg-surface-2'
@@ -121,7 +122,7 @@ export const AchievementsBadgeShowcase: React.FC<AchievementsBadgeShowcaseProps>
                   {badge.desc}
                 </p>
 
-                {isEarned && badge.earnedAt && (
+                {isEarned && badge.earnedAt && !isNaN(new Date(badge.earnedAt).getTime()) && (
                   <span className="text-xs text-accent font-mono block pt-0.5">
                     Diraih: {new Date(badge.earnedAt).toLocaleDateString('id-ID', { year: 'numeric', month: 'short', day: 'numeric' })}
                   </span>

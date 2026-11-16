@@ -138,6 +138,18 @@ export function calculateCounterReading(
     };
   }
 
+  // Special case: 20日 = はつか (hatsuka)
+  if (counter.id === 'nichi' && clampedNum === 20) {
+    return {
+      number: 20,
+      kanji: '20日',
+      kana: 'はつか',
+      romaji: 'hatsuka',
+      hasSoundChange: true,
+      phoneticExplanation: 'Pengecualian khusus kalender Jepang: tanggal 20 dibaca "hatsuka" (Wago kuno), bukan "nijuunichi".',
+    };
+  }
+
   // Exact tens (20, 30, 40...):
   if (ones === 0) {
     const tensPrefixKana = TENS_KANA[tens];

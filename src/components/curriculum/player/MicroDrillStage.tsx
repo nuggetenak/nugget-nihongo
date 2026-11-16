@@ -3,7 +3,7 @@
 //  100% In-Place, Zero Menu-Jumping, Umpan Balik Diagnostik & Retry Loop
 // ══════════════════════════════════════════════════════════════════
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { CheckCircle2, XCircle, ArrowRight, RotateCcw, Sparkles } from 'lucide-react';
 import { LessonDrillItem } from '../../../types/curriculum';
 import { cleanOptionText } from '../../../lib/curriculum/lessonContentAdapter';
@@ -21,7 +21,7 @@ export const MicroDrillStage: React.FC<MicroDrillStageProps> = ({ drills = [], o
   const [activeQueue, setActiveQueue] = useState<LessonDrillItem[]>(drills);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [selectedAnswer, setSelectedAnswer] = useState<string | null>(null);
-  const [reorderedTokens, setReorderedTokens] = useState<string[]>([]);
+  const [placedTokenIndices, setPlacedTokenIndices] = useState<number[]>([]);
   const [feedback, setFeedback] = useState<{ isCorrect: boolean; text: string } | null>(null);
 
   // Statistik
@@ -38,7 +38,7 @@ export const MicroDrillStage: React.FC<MicroDrillStageProps> = ({ drills = [], o
         <button
           type="button"
           onClick={() => onComplete(100)}
-          className="min-h-[44px] px-6 py-2.5 rounded-xl bg-accent text-bg font-bold shadow-md active:scale-95"
+          className="min-h-[44px] px-6 py-2.5 rounded-xl bg-accent text-bg font-bold shadow-md active:scale-95 cursor-pointer"
         >
           Lanjut ke Tantangan Nyata
         </button>
@@ -48,23 +48,24 @@ export const MicroDrillStage: React.FC<MicroDrillStageProps> = ({ drills = [], o
 
   const currentItem = activeQueue[currentIndex];
 
-  // Handler untuk kepingan kata pada tipe 'reorder'
-  const handleToggleToken = (token: string, fromPlaced: boolean) => {
+  // Handler untuk kepingan kata pada tipe 'reorder' (bebas tabrakan duplikat)
+  const handleToggleTokenSlot = (slotIdx: number) => {
     if (feedback) return;
-    if (fromPlaced) {
-      setReorderedTokens((prev) => prev.filter((t, i) => i !== prev.indexOf(token)));
-    } else {
-      setReorderedTokens((prev) => [...prev, token]);
-    }
+    setPlacedTokenIndices((prev) => prev.filter((_, idx) => idx !== slotIdx));
+  };
+
+  const handlePlaceToken = (tokenIdx: number) => {
+    if (feedback) return;
+    setPlacedTokenIndices((prev) => [...prev, tokenIdx]);
   };
 
   // Submit jawaban
   const handleSubmitAnswer = (answerToTest: string) => {
     if (feedback || !currentItem) return;
 
-    const cleanAnswer = answerToTest.trim().replace(/\s+/g, ' ');
-    const cleanCorrect = currentItem.correctAnswer.trim().replace(/\s+/g, ' ');
-    const isCorrect = cleanAnswer.toLowerCase() === cleanCorrect.toLowerCase();
+    const cleanAnswer = (answerToTest || '').trim().replace(/\s+/g, ' ');
+    const cleanCorrect = (currentItem.correctAnswer || '').trim().replace(/\s+/g, ' ');
+    const isCorrect = cleanAnswer.length > 0 && cleanCorrect.length > 0 && cleanAnswer.toLowerCase() === cleanCorrect.toLowerCase();
 
     // Catat apakah benar pada percobaan pertama
     if (firstAttemptCorrect[currentItem.id] === undefined) {
@@ -88,11 +89,13 @@ export const MicroDrillStage: React.FC<MicroDrillStageProps> = ({ drills = [], o
         ? currentItem.diagnosticFeedback[answerToTest] || currentItem.diagnosticFeedback[cleanAnswer]
         : null;
 
+    const safeExplanation = currentItem.explanation || '';
+    const safeCorrectAnswer = currentItem.correctAnswer || '';
     const feedbackText = isCorrect
-      ? `Tepat sekali! ${currentItem.explanation}`
+      ? `Tepat sekali! ${safeExplanation}`
       : specificDiagnostic
-      ? `${specificDiagnostic} (Kunci yang benar: "${currentItem.correctAnswer}")`
-      : `Belum tepat. Jawaban yang benar adalah "${currentItem.correctAnswer}". ${currentItem.explanation}`;
+      ? `${specificDiagnostic} (Kunci yang benar: "${safeCorrectAnswer}")`
+      : `Belum tepat. Jawaban yang benar adalah "${safeCorrectAnswer}". ${safeExplanation}`;
 
     setFeedback({
       isCorrect,
@@ -104,7 +107,7 @@ export const MicroDrillStage: React.FC<MicroDrillStageProps> = ({ drills = [], o
   const handleNextQuestion = () => {
     setFeedback(null);
     setSelectedAnswer(null);
-    setReorderedTokens([]);
+    setPlacedTokenIndices([]);
 
     if (currentIndex + 1 < activeQueue.length) {
       setCurrentIndex((prev) => prev + 1);
@@ -123,6 +126,37 @@ export const MicroDrillStage: React.FC<MicroDrillStageProps> = ({ drills = [], o
       onComplete(finalScore);
     }
   };
+
+  // Keyboard shortcut support: 1-4 / A-D to select, Enter/Space to advance
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (!currentItem) return;
+      if (feedback) {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          handleNextQuestion();
+        }
+        return;
+      }
+      if (currentItem.options && (currentItem.type !== 'reorder' || !currentItem.tokens || currentItem.tokens.length === 0)) {
+        const key = e.key.toUpperCase();
+        let targetIdx = -1;
+        if (key === '1' || key === 'A') targetIdx = 0;
+        else if (key === '2' || key === 'B') targetIdx = 1;
+        else if (key === '3' || key === 'C') targetIdx = 2;
+        else if (key === '4' || key === 'D') targetIdx = 3;
+
+        if (targetIdx >= 0 && targetIdx < currentItem.options.length) {
+          e.preventDefault();
+          const opt = currentItem.options[targetIdx];
+          setSelectedAnswer(opt);
+          handleSubmitAnswer(opt);
+        }
+      }
+    };
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [currentItem, feedback, activeQueue, currentIndex, retryQueue]);
 
   if (isFinished) {
     const totalInitial = drills.length;
@@ -209,6 +243,14 @@ export const MicroDrillStage: React.FC<MicroDrillStageProps> = ({ drills = [], o
         )}
       </div>
 
+      {/* ── Progress Bar ─────────────────────────────────────────── */}
+      <div className="w-full h-1.5 bg-surface-3 rounded-full overflow-hidden">
+        <div
+          className="h-full bg-accent transition-all duration-300 rounded-full"
+          style={{ width: `${Math.round(((currentIndex + 1) / activeQueue.length) * 100)}%` }}
+        />
+      </div>
+
       {/* ── Kartu Soal Utama ─────────────────────────────────────── */}
       <div className="p-5 sm:p-6 rounded-3xl bg-surface border border-accent/25 space-y-5 shadow-sm">
         <div className="space-y-1.5">
@@ -230,45 +272,59 @@ export const MicroDrillStage: React.FC<MicroDrillStageProps> = ({ drills = [], o
           <div className="space-y-4">
             {/* Slot Kalimat yang Tersusun */}
             <div className="min-h-[56px] p-3 rounded-2xl bg-surface-2/80 border-2 border-dashed border-accent/30 flex flex-wrap items-center gap-2">
-              {reorderedTokens.length === 0 ? (
+              {placedTokenIndices.length === 0 ? (
                 <span className="text-xs text-appText-muted italic">
                   Ketuk kepingan kata di bawah untuk menyusun kalimat...
                 </span>
               ) : (
-                reorderedTokens.map((token, tIdx) => (
-                  <button
-                    key={tIdx}
-                    type="button"
-                    onClick={() => handleToggleToken(token, true)}
-                    className="min-h-[40px] px-3.5 py-1.5 rounded-xl bg-accent text-bg font-jp font-bold text-sm shadow-sm active:scale-95 inline-flex items-center gap-1.5"
-                  >
-                    <RubyText text={token} /> ✕
-                  </button>
-                ))
+                placedTokenIndices.map((tokenIdx, slotIdx) => {
+                  const token = currentItem.tokens![tokenIdx];
+                  return (
+                    <button
+                      key={slotIdx}
+                      type="button"
+                      disabled={!!feedback}
+                      onClick={() => handleToggleTokenSlot(slotIdx)}
+                      className="min-h-[40px] px-3.5 py-1.5 rounded-xl bg-accent text-bg font-jp font-bold text-sm shadow-sm active:scale-95 inline-flex items-center gap-1.5 hover:brightness-110"
+                      title="Ketuk untuk melepas kata ini"
+                    >
+                      <RubyText text={token} /> ✕
+                    </button>
+                  );
+                })
               )}
             </div>
 
             {/* Kepingan Kata yang Tersedia */}
             <div className="flex flex-wrap gap-2 pt-1">
-              {currentItem.tokens
-                .filter((t) => !reorderedTokens.includes(t))
-                .map((token, tIdx) => (
+              {currentItem.tokens.map((token, tIdx) => {
+                const isPlaced = placedTokenIndices.includes(tIdx);
+                if (isPlaced) return null;
+                return (
                   <button
                     key={tIdx}
                     type="button"
-                    onClick={() => handleToggleToken(token, false)}
-                    className="min-h-[44px] px-4 py-2 rounded-xl bg-surface-3 hover:bg-surface border border-accent/20 text-appText-bright font-jp font-bold text-sm transition-all active:scale-95 inline-flex items-center justify-center card-interactive-lift"
+                    disabled={!!feedback}
+                    onClick={() => handlePlaceToken(tIdx)}
+                    className="min-h-[44px] px-4 py-2 rounded-xl bg-surface-3 hover:bg-surface border border-accent/20 text-appText-bright font-jp font-bold text-sm transition-all active:scale-95 inline-flex items-center justify-center card-interactive-lift hover:border-accent/40"
                   >
                     <RubyText text={token} />
                   </button>
-                ))}
+                );
+              })}
             </div>
 
             {!feedback && (
               <button
                 type="button"
-                disabled={reorderedTokens.length === 0}
-                onClick={() => handleSubmitAnswer(reorderedTokens.join(' '))}
+                disabled={placedTokenIndices.length === 0}
+                onClick={() => {
+                  const hasSpaces = currentItem.correctAnswer.includes(' ');
+                  const assembled = placedTokenIndices
+                    .map((idx) => currentItem.tokens![idx])
+                    .join(hasSpaces ? ' ' : '');
+                  handleSubmitAnswer(assembled);
+                }}
                 className="w-full min-h-[46px] py-2.5 rounded-xl bg-accent text-bg font-extrabold text-xs uppercase tracking-wider shadow-md hover:brightness-110 disabled:opacity-40 disabled:pointer-events-none transition-all active:scale-98 card-interactive-lift"
               >
                 Periksa Susunan Kalimat
@@ -282,28 +338,47 @@ export const MicroDrillStage: React.FC<MicroDrillStageProps> = ({ drills = [], o
           <div className="space-y-2 pt-1">
             {currentItem.options.map((opt, oIdx) => {
               const isSelected = selectedAnswer === opt;
+              const isSubmitted = !!feedback;
+              const isCorrectAnswer = opt === currentItem.correctAnswer;
+
+              let btnStyle = 'bg-surface-2 hover:bg-surface-3 border-accent/15 text-appText hover:text-appText-bright';
+              if (isSubmitted) {
+                if (isSelected && feedback.isCorrect) {
+                  btnStyle = 'bg-emerald-500/20 border-emerald-500 text-emerald-950 dark:text-emerald-200 font-bold';
+                } else if (isSelected && !feedback.isCorrect) {
+                  btnStyle = 'bg-rose-500/20 border-rose-500 text-rose-950 dark:text-rose-200 font-bold';
+                } else if (isCorrectAnswer) {
+                  btnStyle = 'border-emerald-500/60 bg-emerald-500/10 text-emerald-950 dark:text-emerald-200 font-medium';
+                } else {
+                  btnStyle = 'opacity-50 bg-surface-2 border-accent/10 text-appText-muted';
+                }
+              } else if (isSelected) {
+                btnStyle = 'bg-amber-500/15 border-amber-500 text-appText-bright shadow-sm font-bold';
+              }
+
               return (
                 <button
                   key={oIdx}
                   type="button"
-                  disabled={!!feedback}
+                  disabled={isSubmitted}
                   onClick={() => {
                     setSelectedAnswer(opt);
                     handleSubmitAnswer(opt);
                   }}
-                  className={`w-full min-h-[48px] p-3.5 sm:p-4 rounded-2xl border text-left text-xs sm:text-sm font-jp transition-all flex items-center justify-between gap-3 active:scale-98 card-interactive-lift ${
-                    isSelected
-                      ? 'bg-amber-500/15 border-amber-500 text-appText-bright shadow-sm font-bold'
-                      : 'bg-surface-2 hover:bg-surface-3 border-accent/15 text-appText hover:text-appText-bright'
-                  }`}
+                  className={`w-full min-h-[48px] p-3.5 sm:p-4 rounded-2xl border text-left text-xs sm:text-sm font-jp transition-all flex items-center justify-between gap-3 active:scale-98 card-interactive-lift ${btnStyle}`}
                 >
-                  <span className="break-words">{cleanOptionText(opt)}</span>
-                  <span className="w-5 h-5 rounded-full border border-accent/20 shrink-0 flex items-center justify-center text-xs">
+                  <span className="break-words font-medium">{cleanOptionText(opt)}</span>
+                  <span className="w-6 h-6 rounded-full border border-accent/20 shrink-0 flex items-center justify-center text-xs font-bold font-mono">
                     {String.fromCharCode(65 + oIdx)}
                   </span>
                 </button>
               );
             })}
+            {!feedback && (
+              <p className="text-xs text-appText-muted text-right font-medium pr-1">
+                Tip: Tekan tombol <kbd className="px-1.5 py-0.5 rounded bg-surface-3 border border-accent/20 font-mono text-xs">1-4</kbd> atau <kbd className="px-1.5 py-0.5 rounded bg-surface-3 border border-accent/20 font-mono text-xs">A-D</kbd> di keyboard
+              </p>
+            )}
           </div>
         )}
 

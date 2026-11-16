@@ -60,7 +60,7 @@ export const StreakBrokenModal: React.FC<StreakBrokenModalProps> = ({ isOpen, on
         role="dialog"
         aria-modal="true"
         aria-label="Notifikasi Streak Terputus"
-        className="w-full max-w-md max-h-[90vh] overflow-y-auto bg-surface border border-accent/25 rounded-3xl p-6 sm:p-8 relative text-center shadow-2xl scrollbar-none"
+        className="w-full max-w-md max-h-[90vh] overflow-y-auto bg-surface border border-accent/25 rounded-3xl p-5 sm:p-8 relative text-center shadow-2xl scrollbar-none"
         onClick={(e) => e.stopPropagation()}
       >
         <button

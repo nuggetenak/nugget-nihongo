@@ -106,7 +106,7 @@ export const AudioSettingsTab: React.FC<AudioSettingsTabProps> = ({
                       }
                       showToast(`Kecepatan audio diatur ke ${item.rate}x`, '🎙️');
                     }}
-                    className={`py-2 px-1 rounded-lg text-xs font-mono font-bold border transition-all text-center truncate ${
+                    className={`py-2 px-1 min-h-[40px] rounded-lg text-xs font-mono font-bold border transition-all text-center truncate active:scale-95 flex items-center justify-center ${
                       isSelected
                         ? 'bg-accent text-bg border-accent shadow-xs font-extrabold'
                         : 'bg-surface-3 text-appText-muted border-accent/15 hover:text-appText-bright hover:bg-surface-2'
@@ -127,7 +127,7 @@ export const AudioSettingsTab: React.FC<AudioSettingsTabProps> = ({
               speakJapanese('こんにちは、一緒に日本語を勉強しましょう！', speechRate);
               showToast('Memutar audio contoh: "Konnichiwa, issho ni nihongo o benkyou shimashou!"', '🔊');
             }}
-            className="flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-surface-2 hover:bg-surface-3 border border-accent/25 text-xs font-bold text-appText-bright transition-all active:scale-95"
+            className="flex items-center justify-center gap-2 px-4 py-2.5 min-h-[44px] rounded-xl bg-surface-2 hover:bg-surface-3 border border-accent/25 text-xs font-bold text-appText-bright transition-all active:scale-95"
           >
             <Volume2 className="w-4 h-4 text-accent" />
             Tes Uji Audio Pelafalan Bahasa Jepang
@@ -164,7 +164,7 @@ export const AudioSettingsTab: React.FC<AudioSettingsTabProps> = ({
                 setShowFurigana(next);
                 showToast(next ? 'Furigana diaktifkan' : 'Furigana disembunyikan', '文');
               }}
-              className={`w-full py-2 rounded-lg text-xs font-bold border transition-all ${
+              className={`w-full py-2 min-h-[40px] rounded-lg text-xs font-bold border transition-all active:scale-95 flex items-center justify-center ${
                 showFurigana
                   ? 'bg-accent text-bg border-accent shadow-xs'
                   : 'bg-surface-3 text-appText-muted border-accent/20 hover:text-appText-bright'
@@ -190,7 +190,7 @@ export const AudioSettingsTab: React.FC<AudioSettingsTabProps> = ({
                 setShowRomaji(next);
                 showToast(next ? 'Romaji diaktifkan' : 'Romaji disembunyikan', '🔤');
               }}
-              className={`w-full py-2 rounded-lg text-xs font-bold border transition-all ${
+              className={`w-full py-2 min-h-[40px] rounded-lg text-xs font-bold border transition-all active:scale-95 flex items-center justify-center ${
                 showRomaji
                   ? 'bg-accent text-bg border-accent shadow-xs'
                   : 'bg-surface-3 text-appText-muted border-accent/20 hover:text-appText-bright'
@@ -219,7 +219,7 @@ export const AudioSettingsTab: React.FC<AudioSettingsTabProps> = ({
                 <button
                   key={sz.id}
                   onClick={() => handleTextSizeChange(sz.id)}
-                  className={`py-2 rounded-lg text-xs font-bold border transition-all text-center ${
+                  className={`py-2 min-h-[40px] rounded-lg text-xs font-bold border transition-all text-center active:scale-95 flex items-center justify-center ${
                     textSize === sz.id
                       ? 'bg-accent text-bg border-accent shadow-xs font-extrabold'
                       : 'bg-surface-3 text-appText-muted border-accent/15 hover:text-appText-bright'

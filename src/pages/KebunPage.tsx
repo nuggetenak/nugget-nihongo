@@ -20,6 +20,9 @@ import {
   ChevronRight,
   Info,
   BookOpen,
+  Flame,
+  ShieldCheck,
+  Award,
 } from 'lucide-react';
 import { useGardenStore, PlantItem, STAGE_METADATA } from '../lib/garden/gardenStore';
 import { useAppStore } from '../store/useAppStore';
@@ -29,11 +32,15 @@ import { SkeletonGrid } from '../components/ui/SkeletonCard';
 import { fsrsForgettingCurve } from '../lib/fsrs/math';
 import { getFSRSDueCount } from '../lib/quiz/quizEngine';
 import { IrasutoyaImage } from '../components/common/IrasutoyaImage';
+import { getLevelForXp, getNextLevelProgress, STREAK_TIPS } from '../lib/gamification/gamificationStore';
 
 export const KebunPage: React.FC = () => {
   const { waterDrops, plants, waterPlant, waterAll, checkDailyRefill } = useGardenStore();
   const {
     cards,
+    streak,
+    xp,
+    dailyGoalXP,
     showToast,
     incrementXp,
     setActiveTab,
@@ -52,9 +59,27 @@ export const KebunPage: React.FC = () => {
     checkDailyRefill();
   }, [checkDailyRefill]);
 
+  // Milestone XP Level & Progress calculation
+  const xpInfo = useMemo(() => {
+    const currentLvl = getLevelForXp(xp || 0);
+    const progress = getNextLevelProgress(xp || 0);
+    return {
+      currentLvl,
+      progress,
+    };
+  }, [xp]);
+
+  // Streak resilience quote
+  const streakCoachingQuote = useMemo(() => {
+    const quoteIndex = typeof streak === 'number' && streak > 0 ? (streak - 1) % STREAK_TIPS.length : 0;
+    return STREAK_TIPS[quoteIndex] || STREAK_TIPS[0];
+  }, [streak]);
+
   // ── FSRS METRICS COMPUTATION (Ye et al. 2022) ───────────────────
   const fsrsStats = useMemo(() => {
-    const cardList = Object.entries(cards)
+    const safeCards = cards && typeof cards === 'object' ? cards : {};
+    const cardList = Object.entries(safeCards)
+      .filter(([_, entry]) => Boolean(entry && entry.card))
       .map(([id, entry]) => ({ id, ...entry.card }))
       .filter((c) => c && (c.due || c.state !== undefined));
 
@@ -65,16 +90,19 @@ export const KebunPage: React.FC = () => {
     let totalDifficulty = 0;
     let totalRetrievability = 0;
     let stateCounts = { new: 0, learning: 0, review: 0, relearning: 0 };
+    const dueCards: typeof cardList = [];
 
     cardList.forEach((c) => {
-      totalStability += c.stability || 1;
-      totalDifficulty += c.difficulty || 5;
+      const stability = typeof c.stability === 'number' && !Number.isNaN(c.stability) ? Math.max(0.1, c.stability) : 1;
+      const difficulty = typeof c.difficulty === 'number' && !Number.isNaN(c.difficulty) ? Math.max(1, Math.min(10, c.difficulty)) : 5;
+      totalStability += stability;
+      totalDifficulty += difficulty;
 
       const elapsedDays = c.last_review
         ? Math.max(0, (now - new Date(c.last_review).getTime()) / 86400000)
-        : (c.elapsed_days || 0);
-      const r = fsrsForgettingCurve(elapsedDays, c.stability || 1);
-      totalRetrievability += r;
+        : (typeof c.elapsed_days === 'number' && !Number.isNaN(c.elapsed_days) ? Math.max(0, c.elapsed_days) : 0);
+      const r = fsrsForgettingCurve(elapsedDays, stability);
+      totalRetrievability += Number.isFinite(r) ? r : 0;
 
       const state = c.state;
       if (state === 0) stateCounts.new++;
@@ -82,6 +110,11 @@ export const KebunPage: React.FC = () => {
       else if (state === 2) stateCounts.review++;
       else if (state === 3) stateCounts.relearning++;
       else stateCounts.review++;
+
+      const isDue = c.due ? new Date(c.due).getTime() <= now : false;
+      if (isDue) {
+        dueCards.push(c);
+      }
     });
 
     const totalCards = cardList.length;
@@ -100,6 +133,7 @@ export const KebunPage: React.FC = () => {
       stateCounts,
       estimatedRetrievability,
       cardList,
+      dueCards,
     };
   }, [cards]);
 
@@ -140,11 +174,12 @@ export const KebunPage: React.FC = () => {
     }
   };
 
+  const safePlants = Array.isArray(plants) ? plants : [];
   const filteredPlants = selectedLevelFilter === 'all'
-    ? plants
-    : plants.filter((p) => p.level === selectedLevelFilter);
+    ? safePlants
+    : safePlants.filter((p) => p && p.level === selectedLevelFilter);
 
-  const bloomingCount = plants.filter((p) => p.stage === 4).length;
+  const bloomingCount = safePlants.filter((p) => p && p.stage === 4).length;
 
   return (
     <div className="max-w-5xl mx-auto py-4 sm:py-6 pb-[calc(5.5rem+env(safe-area-inset-bottom))] lg:pb-12 space-y-6 sm:space-y-8 animate-in fade-in duration-300 min-w-0 overflow-x-hidden">
@@ -249,7 +284,7 @@ export const KebunPage: React.FC = () => {
                 </button>
                 <button
                   onClick={() => startQuizSession('flashcard')}
-                  className="px-4 py-2 rounded-xl bg-surface-2 hover:bg-surface-3 text-appText-bright border border-theme text-xs font-bold flex items-center justify-center gap-1.5 transition-all active:scale-95 min-h-[38px]"
+                  className="px-4 py-2 rounded-xl bg-surface-2 hover:bg-surface-3 text-appText-bright border border-theme text-xs font-bold flex items-center justify-center gap-1.5 transition-all active:scale-95 min-h-[40px]"
                 >
                   <span>🃏 Latihan Flashcard 3D Bebas</span>
                 </button>
@@ -297,6 +332,95 @@ export const KebunPage: React.FC = () => {
           </div>
         </div>
       </section>
+
+      {/* ── STREAK RESILIENCE & MILESTONE XP VISUALIZER ────────────── */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        {/* Streak Resilience Card */}
+        <div className="p-4 sm:p-5 rounded-2xl bg-surface border border-theme space-y-3 shadow-xs">
+          <div className="flex items-center justify-between">
+            <div className="flex items-center gap-2">
+              <div className="w-9 h-9 rounded-xl bg-orange-500/15 border border-orange-500/30 flex items-center justify-center text-orange-500">
+                <Flame className="w-5 h-5 fill-orange-500" />
+              </div>
+              <div>
+                <div className="font-extrabold text-sm sm:text-base text-appText-bright flex items-center gap-1.5">
+                  <span>{streak} Hari Konsisten</span>
+                  <span className="text-xs px-2 py-0.5 rounded-full bg-orange-500/10 text-orange-400 font-bold border border-orange-500/20">
+                    Aktif
+                  </span>
+                </div>
+                <div className="text-xs text-appText-muted">Streak Resilience & Anti-Burnout</div>
+              </div>
+            </div>
+            <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-bold">
+              <ShieldCheck className="w-4 h-4 shrink-0 text-emerald-400" />
+              <span>Freeze Shield: 36 Jam</span>
+            </div>
+          </div>
+
+          <div className="p-3 rounded-xl bg-surface-2 border border-theme text-xs text-appText-muted leading-relaxed flex items-start gap-2">
+            <span className="text-base leading-none">🛡️</span>
+            <div>
+              <b className="text-appText-bright">Jadwal Lembur Aman:</b> Freeze shield melindungi streak belajar kamu hingga 36 jam tanpa penalti jika lembur atau shift malam pabrik/kaigo.
+            </div>
+          </div>
+
+          <div className="text-xs text-appText-muted italic border-t border-theme pt-2 flex items-center gap-1.5">
+            <span className="text-accent font-bold not-italic">Kata Sensei:</span>
+            <span>"{streakCoachingQuote}"</span>
+          </div>
+        </div>
+
+        {/* Milestone XP Visualizer Card */}
+        <div className="p-4 sm:p-5 rounded-2xl bg-surface border border-theme space-y-3 shadow-xs">
+          <div className="flex items-center justify-between">
+            <div className="flex items-center gap-2">
+              <div className="w-9 h-9 rounded-xl bg-amber-500/15 border border-amber-500/30 flex items-center justify-center text-amber-500">
+                <Award className="w-5 h-5 text-amber-500" />
+              </div>
+              <div>
+                <div className="font-extrabold text-sm sm:text-base text-appText-bright flex items-center gap-1.5">
+                  <span>Level {xpInfo.currentLvl.level}</span>
+                  <span className="text-xs px-2 py-0.5 rounded-full bg-amber-500/15 text-amber-400 font-bold border border-amber-500/30">
+                    {xpInfo.currentLvl.title}
+                  </span>
+                </div>
+                <div className="text-xs text-appText-muted">{xpInfo.currentLvl.titleJp}</div>
+              </div>
+            </div>
+            <div className="text-right">
+              <div className="font-mono font-extrabold text-sm sm:text-base text-amber-400 tabular-nums">
+                {xp} <span className="text-xs font-normal text-appText-muted">XP</span>
+              </div>
+              <div className="text-xs text-appText-muted">
+                Target: {xpInfo.progress.nextLevel ? `${xpInfo.progress.nextLevel.xp} XP` : 'Maksimum'}
+              </div>
+            </div>
+          </div>
+
+          {/* Level Progress Bar */}
+          <div className="space-y-1.5">
+            <div className="flex justify-between text-xs text-appText-muted">
+              <span>Progress Menuju Level {xpInfo.currentLvl.level + 1}</span>
+              <span className="font-mono font-bold text-amber-400">{xpInfo.progress.progressPercent}%</span>
+            </div>
+            <div className="w-full h-2.5 rounded-full bg-surface-2 border border-theme overflow-hidden p-0.5">
+              <div
+                className="h-full rounded-full bg-gradient-to-r from-amber-500 to-amber-400 transition-all duration-500 shadow-xs"
+                style={{ width: `${Math.min(100, Math.max(0, xpInfo.progress.progressPercent))}%` }}
+              />
+            </div>
+          </div>
+
+          {/* Daily Goal Progress */}
+          <div className="flex items-center justify-between pt-2 border-t border-theme text-xs text-appText-muted">
+            <span>Target Harian: <strong className="text-appText-bright">{dailyGoalXP} XP</strong></span>
+            <span className="text-emerald-400 font-semibold flex items-center gap-1">
+              <span>{Math.min(xp, dailyGoalXP)} / {dailyGoalXP} XP tercapai</span>
+            </span>
+          </div>
+        </div>
+      </div>
 
       {/* ══════════════════════════════════════════════════════════════
           CARD 2: BALANCED SUB-VIEW CONTROLLER
@@ -665,6 +789,83 @@ export const KebunPage: React.FC = () => {
                 <div>
                   <b className="text-appText-bright font-semibold">Mengapa FSRS v4 lebih efisien?</b> Algoritma FSRS memodelkan kurva peluruhan memori secara matematis. Saat kamu menjawab kartu dengan mudah (Easy), interval review berikutnya akan dilipatgandakan secara aman sehingga kamu tidak membuang waktu mengulang materi yang sudah dihafal di luar kepala.
                 </div>
+              </div>
+
+              {/* Antrean Kartu FSRS Due (Memory Queue Preview) */}
+              <div className="space-y-3 pt-2">
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center gap-2">
+                    <Clock className="w-4 h-4 text-amber-500" />
+                    <h3 className="font-bold text-sm sm:text-base text-appText-bright">
+                      Antrean Kartu FSRS Due ({fsrsStats.dueCards.length})
+                    </h3>
+                  </div>
+                  {fsrsStats.dueCards.length > 0 && (
+                    <button
+                      onClick={startFSRSDueSession}
+                      className="px-3 py-1.5 rounded-xl bg-amber-500 hover:bg-amber-400 text-stone-950 font-bold text-xs flex items-center gap-1.5 transition-all active:scale-95 min-h-[40px]"
+                    >
+                      <Zap className="w-3.5 h-3.5 fill-current" />
+                      <span>Ulas Sekarang</span>
+                    </button>
+                  )}
+                </div>
+
+                {fsrsStats.dueCards.length === 0 ? (
+                  <div className="p-4 rounded-xl bg-surface border border-theme text-center text-xs text-appText-muted space-y-1">
+                    <p className="font-semibold text-emerald-400">🎉 Tidak ada kartu yang jatuh tempo saat ini!</p>
+                    <p>Semua kartu memori kamu dalam kondisi retensi optimal menurut kurva forgetting FSRS.</p>
+                  </div>
+                ) : (
+                  <div className="divide-y divide-border/40 rounded-xl bg-surface border border-theme overflow-hidden">
+                    {fsrsStats.dueCards.slice(0, 8).map((card) => {
+                      const stateLabel =
+                        card.state === 0
+                          ? 'Baru'
+                          : card.state === 1
+                          ? 'Learning'
+                          : card.state === 3
+                          ? 'Relearning'
+                          : 'Review';
+                      const stateColor =
+                        card.state === 0
+                          ? 'text-blue-400 bg-blue-500/10 border-blue-500/20'
+                          : card.state === 1
+                          ? 'text-amber-400 bg-amber-500/10 border-amber-500/20'
+                          : card.state === 3
+                          ? 'text-rose-400 bg-rose-500/10 border-rose-500/20'
+                          : 'text-emerald-400 bg-emerald-500/10 border-emerald-500/20';
+
+                      return (
+                        <div key={card.id} className="p-3 flex items-center justify-between gap-3 text-xs">
+                          <div className="min-w-0 flex-1">
+                            <div className="font-bold text-appText-bright truncate">
+                              {card.id.replace(/^(vocab|grammar|kanji|cbt)_/i, '').replace(/_/g, ' ')}
+                            </div>
+                            <div className="text-appText-muted flex items-center gap-2 mt-0.5">
+                              <span>Stabilitas: {card.stability ? card.stability.toFixed(1) : '1.0'}h</span>
+                              <span>•</span>
+                              <span>Kesulitan: {card.difficulty ? card.difficulty.toFixed(1) : '5.0'}</span>
+                            </div>
+                          </div>
+                          <div className="flex items-center gap-2 shrink-0">
+                            <span className={`px-2 py-0.5 rounded-full text-xs font-bold border ${stateColor}`}>
+                              {stateLabel}
+                            </span>
+                            <span className="text-amber-400 font-mono text-xs font-extrabold">
+                              Due!
+                            </span>
+                          </div>
+                        </div>
+                      );
+                    })}
+                    {fsrsStats.dueCards.length > 8 && (
+                      <div className="p-2.5 text-center text-xs text-appText-muted bg-surface-2 font-medium">
+                        + {fsrsStats.dueCards.length - 8} kartu lainnya dalam antrean
+                      </div>
+                    )}
+                  </div>
+                )}
               </div>
             </div>
           </section>

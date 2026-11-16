@@ -95,6 +95,7 @@ export const ReportIssueModal: React.FC<ReportIssueModalProps> = ({
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    if (isSubmitting) return;
     if (!description.trim()) {
       showToast('Mohon berikan sedikit penjelasan mengenai kesalahan.', '⚠️');
       return;
@@ -236,7 +237,7 @@ export const ReportIssueModal: React.FC<ReportIssueModalProps> = ({
           </div>
 
           {/* Direct Email Support Fallback */}
-          <div className="pt-2 border-t border-accent/10 flex items-center justify-between text-[11px] text-appText-muted">
+          <div className="pt-2 border-t border-accent/10 flex items-center justify-between text-xs text-appText-muted">
             <span>Butuh bantuan lebih lanjut?</span>
             <a
               href={`mailto:nuggetnihongo@gmail.com?subject=Laporan%20Item%20${encodeURIComponent(context.itemId)}&body=Halo%20Tim%20Nugget%20Nihongo,%0A%0AItem:%20${encodeURIComponent(context.originalJapanese)}%0AJenis:%20${encodeURIComponent(context.itemType)}%0A%0APesan:%20`}

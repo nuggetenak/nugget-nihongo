@@ -725,7 +725,7 @@ export const QuizArenaHub: React.FC<QuizArenaHubProps> = ({
             <span className="text-xl">🩺</span>
             <div>
               <div className="text-sm font-extrabold text-appText-bright">
-                Mode Tambahan & Spesialis Gemba (7 Mode)
+                Mode Tambahan & Spesialis Kerja Nyata (7 Mode)
               </div>
               <div className="text-xs text-appText-muted">
                 Konjugasi kata kerja, komparasi nuansa, ritme bicara mora, aksen Tokyo, dan onomatopoeia Kaigo.

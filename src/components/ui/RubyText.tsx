@@ -43,11 +43,11 @@ export const RubyText: React.FC<RubyTextProps> = ({
   rpStart = '(',
   rpEnd = ')',
 }) => {
-  if (!text) return null;
+  if (text == null) return null;
 
   // Clean raw HTML bold tags so they never leak as unrendered text in Ruby annotations
-  let targetText = typeof text === 'string' ? text.replace(/<\/?b>/gi, '') : text;
-  let targetHint = typeof furigana === 'string' ? furigana.replace(/<\/?b>/gi, '') : furigana;
+  let targetText = typeof text === 'string' ? text.replace(/<\/?b>/gi, '') : String(text);
+  let targetHint = typeof furigana === 'string' ? furigana.replace(/<\/?b>/gi, '') : (furigana != null ? String(furigana) : undefined);
 
   // Auto-recovery for inverted fields: if text is purely kana but furigana holds Kanji
   if (furigana && containsKanji(furigana) && !containsKanji(text)) {
@@ -92,12 +92,12 @@ export const RubyText: React.FC<RubyTextProps> = ({
             <ruby
               key={idx}
               lang="ja"
-              className="font-jp [ruby-position:over] inline-flex flex-col items-center leading-normal mx-[0.05em] align-baseline"
+              className="font-jp [ruby-position:over] [ruby-align:center] inline-ruby mx-[0.05em] align-baseline"
             >
               {seg.kanji}
-              <rp className="text-[0em] opacity-0">{rpStart}</rp>
+              <rp className="text-[0em] opacity-0 select-none">{rpStart}</rp>
               <rt className={rtClassName}>{seg.rt}</rt>
-              <rp className="text-[0em] opacity-0">{rpEnd}</rp>
+              <rp className="text-[0em] opacity-0 select-none">{rpEnd}</rp>
             </ruby>
           );
         }

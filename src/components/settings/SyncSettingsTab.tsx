@@ -52,6 +52,12 @@ export const SyncSettingsTab: React.FC<SyncSettingsTabProps> = ({
   const [isSbCardExpanded, setIsSbCardExpanded] = useState(false);
   const [isSyncingLocal, setIsSyncingLocal] = useState(false);
 
+  const formatSyncDate = (d: string | Date | null) => {
+    if (!d) return 'Belum pernah';
+    const parsed = new Date(d);
+    return !isNaN(parsed.getTime()) ? parsed.toLocaleString('id-ID') : 'Belum pernah';
+  };
+
   const handleManualSync = async () => {
     setIsSyncingLocal(true);
     try {
@@ -95,7 +101,7 @@ export const SyncSettingsTab: React.FC<SyncSettingsTabProps> = ({
               <p className="text-xs text-appText-muted">
                 Terakhir disinkronkan:{' '}
                 <strong className="text-appText-bright font-mono">
-                  {lastSyncedAt ? new Date(lastSyncedAt).toLocaleString('id-ID') : 'Belum pernah'}
+                  {formatSyncDate(lastSyncedAt)}
                 </strong>
               </p>
             </div>

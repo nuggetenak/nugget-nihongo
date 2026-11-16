@@ -69,7 +69,7 @@ export const DialogueStage: React.FC<DialogueStageProps> = ({ dialogue = [], sce
   };
 
   const toggleRate = () => {
-    setSpeechRate((prev) => (prev === 1.0 ? 0.8 : 1.0));
+    setSpeechRate((prev) => (prev === 1.0 ? 0.8 : prev === 0.8 ? 1.2 : 1.0));
   };
 
   const handlePlayAll = async () => {
@@ -150,15 +150,16 @@ export const DialogueStage: React.FC<DialogueStageProps> = ({ dialogue = [], sce
           <button
             type="button"
             onClick={toggleRate}
-            className={`min-h-[40px] px-3 py-1.5 rounded-xl font-bold flex items-center gap-1.5 border transition-all active:scale-95 ${
-              speechRate === 0.8
+            className={`min-h-[40px] px-3 py-1.5 rounded-xl font-bold flex items-center gap-1.5 border transition-all active:scale-95 cursor-pointer ${
+              speechRate !== 1.0
                 ? 'bg-amber-500 text-bg border-amber-500 shadow-sm'
                 : 'bg-surface border-accent/20 text-appText-muted hover:text-appText-bright'
             }`}
             title="Ubah kecepatan suara"
+            aria-label={`Kecepatan suara saat ini ${speechRate}x. Klik untuk mengubah.`}
           >
             <Gauge className="w-3.5 h-3.5" />
-            <span>{speechRate === 0.8 ? '0.8x Lambat' : '1.0x Normal'}</span>
+            <span>{speechRate === 0.8 ? '0.8x Lambat' : speechRate === 1.2 ? '1.2x Cepat' : '1.0x Normal'}</span>
           </button>
         </div>
 

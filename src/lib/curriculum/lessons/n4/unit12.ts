@@ -799,11 +799,11 @@ export const unit12Lessons: Record<string, Partial<CurriculumLesson>> = {
       {
         "id": "vg-n4-00394",
         "word": "〜中",
-        "reading": "〜じゅう/ちゅう",
-        "romaji": "juu/chuu",
+        "reading": "〜じゅう",
+        "romaji": "juu",
         "meaning": "seluruh ~, sepanjang ~",
         "pos": "noun",
-        "nuance": "Digunakan secara luas dalam percakapan kerja dan keseharian.",
+        "nuance": "Akhiran yang menyatakan seluruh/sepanjang durasi atau area (dibaca 〜じゅう, misal 一日中/ichinichijuu). Dapat juga dibaca 〜ちゅう jika menyatakan sedang berlangsung (misal 授業中/jugyouchuu).",
         "particleTip": "Gunakan bersama partikel yang tepat.",
         "exampleSentence": {
           "jp": "昨日は一日中雨が降っていました。",

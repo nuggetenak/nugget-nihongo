@@ -321,7 +321,7 @@ export const CANONICAL_PANIC_SCENARIOS: VocationalPanicScenario[] = [
     romaji: 'Yuatsu barubu o shimero! Naifu de mikinawa o kire!',
     actionChecklist: [
       'Tarik tuas pemutus tekanan hidrolik (hydraulic dump valve) seketika.',
-      'Gunakan pisau gemba tajam untuk memotong tali induk pengikat sebelum tulang patah.',
+      'Gunakan pisau utilitas tajam untuk memotong tali induk pengikat sebelum tulang patah.',
       'Jangan menarik paksa tangan korban berlawanan arah putaran drum mesin.',
       'Beri pertolongan pertama hemostatis dan hubungi penjaga pantai (118 Kaiho).'
     ],

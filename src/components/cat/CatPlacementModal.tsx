@@ -329,7 +329,7 @@ export const CatPlacementModal: React.FC<CatPlacementModalProps> = ({ isOpen, on
               <div className="pt-2 space-y-2">
                 <button
                   onClick={handleApplyResult}
-                  className="w-full py-3 px-4 rounded-xl bg-accent hover:bg-accent-hot text-bg font-extrabold text-xs sm:text-sm flex items-center justify-center gap-2 transition-all shadow-glow active:scale-98 cursor-pointer"
+                  className="w-full min-h-[44px] py-3 px-4 rounded-xl bg-accent hover:bg-accent-hot text-bg font-extrabold text-xs sm:text-sm flex items-center justify-center gap-2 transition-all shadow-glow active:scale-95 cursor-pointer"
                 >
                   <Sparkles className="w-4 h-4 fill-bg" />
                   <span>Terapkan Level Ini & Mulai Belajar</span>
@@ -338,7 +338,7 @@ export const CatPlacementModal: React.FC<CatPlacementModalProps> = ({ isOpen, on
 
                 <button
                   onClick={startNewTest}
-                  className="w-full py-2.5 px-4 rounded-xl bg-surface-2 hover:bg-surface-3 text-appText-muted hover:text-appText-bright font-semibold text-xs flex items-center justify-center gap-1.5 transition-all"
+                  className="w-full min-h-[40px] py-2.5 px-4 rounded-xl bg-surface-2 hover:bg-surface-3 text-appText-muted hover:text-appText-bright font-semibold text-xs flex items-center justify-center gap-1.5 transition-all active:scale-95"
                 >
                   <RotateCcw className="w-3.5 h-3.5" />
                   <span>Ulangi Tes Penempatan</span>
@@ -398,7 +398,7 @@ export const CatPlacementModal: React.FC<CatPlacementModalProps> = ({ isOpen, on
                       key={idx}
                       disabled={isAnswered}
                       onClick={() => handleSelectOption(idx)}
-                      className={`w-full p-3.5 rounded-2xl border text-left text-xs sm:text-sm transition-all flex items-center justify-between gap-3 min-h-[48px] active:scale-98 ${btnStyle}`}
+                      className={`w-full p-3.5 rounded-2xl border text-left text-xs sm:text-sm transition-all flex items-center justify-between gap-3 min-h-[48px] active:scale-95 ${btnStyle}`}
                     >
                       <div className="flex items-center gap-3 min-w-0">
                         <span className="w-6 h-6 rounded-lg bg-surface-3/80 font-mono text-xs flex items-center justify-center shrink-0 border border-accent/10">
@@ -438,7 +438,7 @@ export const CatPlacementModal: React.FC<CatPlacementModalProps> = ({ isOpen, on
 
                     <button
                       onClick={handleNextQuestion}
-                      className="w-full py-2.5 px-4 rounded-xl bg-accent hover:bg-accent-hot text-bg font-bold text-xs flex items-center justify-center gap-1.5 transition-all shadow-glow active:scale-98 cursor-pointer mt-2"
+                      className="w-full min-h-[44px] py-2.5 px-4 rounded-xl bg-accent hover:bg-accent-hot text-bg font-bold text-xs flex items-center justify-center gap-1.5 transition-all shadow-glow active:scale-95 cursor-pointer mt-2"
                     >
                       <span>
                         {isStopConditionMet ? 'Lihat Hasil Diagnosis' : 'Lanjut ke Soal Berikutnya'}

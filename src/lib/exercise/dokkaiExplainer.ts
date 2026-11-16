@@ -40,6 +40,26 @@ export const DOKKAI_GENRE_REGISTRY: Record<string, DokkaiGenreMeta> = {
     icon: '📖',
     color: 'border-amber-500/30 text-amber-800 dark:text-amber-300 bg-amber-500/10 font-bold',
   },
+  advertisement: {
+    label: 'Iklan & Brosur (広告)',
+    icon: '🏷️',
+    color: 'border-orange-500/30 text-orange-800 dark:text-orange-300 bg-orange-500/10 font-bold',
+  },
+  pamphlet: {
+    label: 'Pamflet & Selebaran',
+    icon: '📄',
+    color: 'border-blue-500/30 text-blue-800 dark:text-blue-300 bg-blue-500/10 font-bold',
+  },
+  business_letter: {
+    label: 'Surat Resmi Bisnis',
+    icon: '📬',
+    color: 'border-indigo-500/30 text-indigo-800 dark:text-indigo-300 bg-indigo-500/10 font-bold',
+  },
+  info_retrieval: {
+    label: 'Pencarian Informasi Realia',
+    icon: '🔍',
+    color: 'border-teal-500/30 text-teal-800 dark:text-teal-300 bg-teal-500/10 font-bold',
+  },
 };
 
 /**
@@ -48,6 +68,8 @@ export const DOKKAI_GENRE_REGISTRY: Record<string, DokkaiGenreMeta> = {
 export function parseDokkaiParagraphs(passageText?: string | null): string[] {
   if (!passageText || typeof passageText !== 'string') return [];
   return passageText
+    .replace(/\r\n/g, '\n')
+    .replace(/\r/g, '\n')
     .split('\n')
     .map((p) => p.trim())
     .filter((p) => p.length > 0);

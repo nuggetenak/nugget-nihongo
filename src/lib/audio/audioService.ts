@@ -3,11 +3,11 @@
 //  Research Basis: Ticket T-47, Web Speech API & Web Audio API Synthesis
 // ══════════════════════════════════════════════════════════════════
 
-import { isSfxEnabled, playSuccessSfx as rawPlaySuccess, playErrorSfx as rawPlayError, playFlipSfx as rawPlayFlip, playFanfareSfx as rawPlayFanfare, playWaterSfx as rawPlayWater } from './sfx';
-import { resolveOptimalAudioUrl, configureAudioElement } from './audioCodecResolver';
-import { audioPreloader } from './audioPreloader';
-import { audioCacheBudget } from './audioCacheBudget';
-import { syntheticAudio } from './syntheticAudioFallback';
+import { isSfxEnabled, playSuccessSfx as rawPlaySuccess, playErrorSfx as rawPlayError, playFlipSfx as rawPlayFlip, playFanfareSfx as rawPlayFanfare, playWaterSfx as rawPlayWater } from './sfx.ts';
+import { resolveOptimalAudioUrl, configureAudioElement } from './audioCodecResolver.ts';
+import { audioPreloader } from './audioPreloader.ts';
+import { audioCacheBudget } from './audioCacheBudget.ts';
+import { syntheticAudio } from './syntheticAudioFallback.ts';
 
 class AudioService {
   private jaVoice: SpeechSynthesisVoice | null = null;

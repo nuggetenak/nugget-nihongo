@@ -4,9 +4,10 @@
 //  Based on OJAD & Wadoku Tokyo Pitch Accent Standards
 // ══════════════════════════════════════════════════════════════════
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { HelpCircle } from 'lucide-react';
 import { splitIntoMora as splitMoraTokenizer } from '../../../lib/audio/moraTokenizer';
+import { useBodyScrollLock } from '../../../hooks/useBodyScrollLock';
 
 export interface PitchAccentProps {
   reading: string;
@@ -103,6 +104,17 @@ export const PitchAccentBadge: React.FC<PitchAccentProps> = ({
   compact = false,
 }) => {
   const [showModal, setShowModal] = useState(false);
+
+  useBodyScrollLock(showModal);
+
+  useEffect(() => {
+    if (!showModal) return;
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') setShowModal(false);
+    };
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [showModal]);
   const moras = extractMoras(reading);
   if (moras.length === 0) return null;
 
@@ -282,7 +294,8 @@ export const PitchAccentBadge: React.FC<PitchAccentProps> = ({
               <button
                 type="button"
                 onClick={() => setShowModal(false)}
-                className="w-7 h-7 rounded-full bg-surface-3 hover:bg-surface text-appText-muted hover:text-appText-bright flex items-center justify-center text-xs font-bold"
+                className="min-w-[40px] min-h-[40px] w-9 h-9 rounded-2xl bg-surface-3 hover:bg-surface border border-accent/20 text-appText-muted hover:text-appText-bright flex items-center justify-center text-xs font-bold active:scale-95"
+                aria-label="Tutup Panduan Intonasi"
               >
                 ✕
               </button>

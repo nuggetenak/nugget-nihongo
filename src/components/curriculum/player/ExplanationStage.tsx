@@ -5,7 +5,7 @@
 //  Pilar 3: ⚠️ Waspada Kesalahan Umum Orang Indonesia (❌ vs ✅) & Contextual Tools
 // ══════════════════════════════════════════════════════════════════
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import {
   Volume2,
   BookOpen,
@@ -34,7 +34,7 @@ import { KanjiStrokeModal, KanjiDetailInfo } from '../interactive/KanjiStrokeMod
 import { useAppStore } from '../../../store/useAppStore';
 import { useModalStore } from '../../../store/useModalStore';
 import { lookupPitch } from '../../../lib/data/pitchAccentManager';
-import { calculatePitchContour, playPitchToneMelody } from '../../../lib/pitch/pitchEngine';
+import { calculatePitchContour, playPitchToneMelody, type MoraUnit } from '../../../lib/pitch/pitchEngine';
 import { RubyText } from '../../ui/RubyText';
 
 interface ExplanationStageProps {
@@ -73,6 +73,23 @@ export const ExplanationStage: React.FC<ExplanationStageProps> = ({
 
   const [selectedKanji, setSelectedKanji] = useState<KanjiDetailInfo | null>(null);
   const [isKanjiModalOpen, setIsKanjiModalOpen] = useState(false);
+  const [playingPitchWord, setPlayingPitchWord] = useState<string | null>(null);
+  const isPitchPlayingRef = useRef(false);
+
+  const handlePlayPitchMelody = async (word: string, moras: MoraUnit[], particlePitch?: 'high' | 'low' | 'H' | 'L') => {
+    if (isPitchPlayingRef.current) return;
+    isPitchPlayingRef.current = true;
+    setPlayingPitchWord(word);
+    try {
+      const p = particlePitch === 'H' ? 'high' : particlePitch === 'L' ? 'low' : particlePitch;
+      playPitchToneMelody(moras, p);
+      const totalDuration = Math.max(500, (moras.length + (particlePitch ? 1 : 0)) * 220);
+      await new Promise((r) => setTimeout(r, totalDuration));
+    } finally {
+      setPlayingPitchWord(null);
+      isPitchPlayingRef.current = false;
+    }
+  };
 
   const handleOpenKanji = (kanjiChar: string, meaning: string, reading: string) => {
     setSelectedKanji({
@@ -489,7 +506,7 @@ export const ExplanationStage: React.FC<ExplanationStageProps> = ({
             {activeSubTab === 'all' && (
               <div className="pt-6 pb-2 flex items-center gap-3">
                 <div className="h-px bg-accent/20 flex-1" />
-                <span className="text-[11px] font-bold text-accent uppercase tracking-wider px-3 py-1 rounded-full bg-surface-2 border border-accent/25 shadow-xs">
+                <span className="text-xs font-bold text-accent uppercase tracking-wider px-3 py-1 rounded-full bg-surface-2 border border-accent/25 shadow-xs">
                   Pilar 2: Kosakata Inti ({vocabBreakdown.length} Kata)
                 </span>
                 <div className="h-px bg-accent/20 flex-1" />
@@ -602,15 +619,20 @@ export const ExplanationStage: React.FC<ExplanationStageProps> = ({
                             const pitch = vb.pitch || lookupPitch(vb.word, vb.reading);
                             if (!pitch) return null;
                             const contour = calculatePitchContour(vb.reading || vb.word, pitch.pattern);
+                            const isPlayingThisPitch = playingPitchWord === vb.word;
                             return (
                               <button
                                 type="button"
-                                onClick={() => playPitchToneMelody(contour.moras, contour.particlePitch)}
-                                className="min-h-[40px] min-w-[40px] p-2 rounded-xl bg-purple-500/15 hover:bg-purple-500/25 border border-purple-500/30 text-purple-700 dark:text-purple-300 transition-colors flex items-center justify-center active:scale-95"
+                                onClick={() => handlePlayPitchMelody(vb.word, contour.moras, contour.particlePitch)}
+                                className={`min-h-[40px] min-w-[40px] p-2 rounded-xl border transition-all flex items-center justify-center active:scale-95 cursor-pointer ${
+                                  isPlayingThisPitch
+                                    ? 'bg-purple-500 text-white border-purple-400 ring-2 ring-purple-400 shadow-md animate-pulse'
+                                    : 'bg-purple-500/15 hover:bg-purple-500/25 border-purple-500/30 text-purple-700 dark:text-purple-300'
+                                }`}
                                 title={`Dengarkan nada melodi pitch (${contour.categoryLabel})`}
                                 aria-label={`Dengarkan nada melodi pitch`}
                               >
-                                <Music className="w-4 h-4 text-purple-600 dark:text-purple-400" />
+                                <Music className={`w-4 h-4 ${isPlayingThisPitch ? 'text-white' : 'text-purple-600 dark:text-purple-400'}`} />
                               </button>
                             );
                           })()}
@@ -766,7 +788,7 @@ export const ExplanationStage: React.FC<ExplanationStageProps> = ({
             {activeSubTab === 'all' && (
               <div className="pt-6 pb-2 flex items-center gap-3">
                 <div className="h-px bg-red-500/20 flex-1" />
-                <span className="text-[11px] font-bold text-red-700 dark:text-red-400 uppercase tracking-wider px-3 py-1 rounded-full bg-red-500/10 border border-red-500/20 shadow-xs">
+                <span className="text-xs font-bold text-red-700 dark:text-red-400 uppercase tracking-wider px-3 py-1 rounded-full bg-red-500/10 border border-red-500/20 shadow-xs">
                   Pilar 3: Waspada Kesalahan Umum ({activePitfalls.length} Tips)
                 </span>
                 <div className="h-px bg-red-500/20 flex-1" />
@@ -867,7 +889,7 @@ export const ExplanationStage: React.FC<ExplanationStageProps> = ({
             document.documentElement.scrollTop = 0;
             document.body.scrollTop = 0;
           }}
-          className="fixed bottom-20 right-4 z-30 flex items-center gap-1.5 px-3.5 py-2 rounded-full bg-surface-2/95 backdrop-blur-md border border-accent/30 text-xs font-bold text-appText-bright shadow-lg hover:bg-surface-3 transition-all active:scale-95 cursor-pointer animate-in fade-in"
+          className="fixed bottom-[calc(1.5rem+env(safe-area-inset-bottom))] right-4 z-30 flex items-center gap-1.5 px-3.5 py-2 rounded-full bg-surface-2/95 backdrop-blur-md border border-accent/30 text-xs font-bold text-appText-bright shadow-lg hover:bg-surface-3 transition-all active:scale-95 cursor-pointer animate-in fade-in"
           aria-label="Kembali ke atas materi"
         >
           <ChevronUp className="w-4 h-4 text-accent" />

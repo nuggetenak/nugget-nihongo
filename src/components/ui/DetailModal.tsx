@@ -211,7 +211,7 @@ export const DetailModal: React.FC<DetailModalProps> = ({ item, type, onClose })
                 <span>{blurTranslations ? 'Buka Semua' : 'Samarkan'}</span>
               </button>
             </div>
-            <div className="space-y-2 max-h-48 overflow-y-auto pr-1">
+            <div className="space-y-2">
               {item.examples.map((ex, idx) => (
                 <div
                   key={idx}
@@ -240,7 +240,7 @@ export const DetailModal: React.FC<DetailModalProps> = ({ item, type, onClose })
                     )}
                   </div>
                   <button
-                    onClick={() => speakJapanese(ex.jp)}
+                    onClick={() => speakJapanese(ex.jp.replace(/<[^>]+>/g, ''))}
                     className="w-10 h-10 min-w-[40px] min-h-[40px] rounded-lg bg-surface hover:bg-surface-3 text-appText-muted hover:text-accent transition-all shrink-0 flex items-center justify-center active:scale-95"
                     title="Dengarkan kalimat"
                     aria-label="Dengarkan kalimat contoh"
@@ -253,17 +253,31 @@ export const DetailModal: React.FC<DetailModalProps> = ({ item, type, onClose })
           </div>
         )}
 
-        {/* Action: Practice item directly in Arena Kuis */}
-        <div className="pt-2">
+        {/* Action: Practice item directly in Arena Kuis or view in Curriculum */}
+        <div className="pt-2 flex flex-col sm:flex-row gap-2">
           <button
+            type="button"
             onClick={() => {
               onClose();
               setActiveTab('quiz');
             }}
-            className="w-full min-h-[44px] py-2.5 px-4 rounded-xl bg-accent hover:bg-accent-hot text-bg font-extrabold text-xs flex items-center justify-center gap-2 transition-all shadow-glow active:scale-95"
+            className="flex-1 min-h-[44px] py-2.5 px-4 rounded-xl bg-accent hover:bg-accent-hot text-bg font-extrabold text-xs flex items-center justify-center gap-2 transition-all shadow-glow active:scale-95"
           >
             <Zap className="w-3.5 h-3.5 fill-bg" />
             <span>Latih di Arena Kuis 🎯</span>
+          </button>
+          <button
+            type="button"
+            onClick={() => {
+              onClose();
+              try {
+                localStorage.setItem('nn_roadmap_view_mode', 'all');
+              } catch {}
+              setActiveTab('home');
+            }}
+            className="flex-1 min-h-[44px] py-2.5 px-4 rounded-xl bg-surface-2 hover:bg-surface-3 border border-accent/25 text-appText-bright font-bold text-xs flex items-center justify-center gap-2 transition-all active:scale-95"
+          >
+            <span>Silabus Kurikulum 🗺️</span>
           </button>
         </div>
 

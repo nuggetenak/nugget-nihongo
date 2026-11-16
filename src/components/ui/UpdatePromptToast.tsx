@@ -27,7 +27,8 @@ export const UpdatePromptToast: React.FC = () => {
     <div
       role="alert"
       aria-live="polite"
-      className="card-interactive-lift fixed z-50 bottom-[calc(5.5rem+env(safe-area-inset-bottom))] sm:bottom-6 left-3 right-3 sm:left-auto sm:right-6 sm:max-w-md bg-surface border border-accent/40 rounded-2xl p-3.5 shadow-2xl backdrop-blur-md animate-in fade-in slide-in-from-bottom-4 duration-300"
+      data-legacy-cushion="bottom-[calc(5.5rem+env(safe-area-inset-bottom))]"
+      className="card-interactive-lift fixed z-50 top-[calc(0.75rem+env(safe-area-inset-top))] sm:top-4 left-3 right-3 sm:left-auto sm:right-6 sm:max-w-md bg-surface/95 border border-accent/40 rounded-2xl p-3.5 shadow-2xl backdrop-blur-md animate-in fade-in slide-in-from-top-4 duration-300"
     >
       <div className="flex items-center gap-3">
         {/* Animated Icon Badge */}
@@ -46,11 +47,14 @@ export const UpdatePromptToast: React.FC = () => {
 
         {/* Text Details */}
         <div className="flex-1 min-w-0">
-          <h4 className="text-xs sm:text-sm font-extrabold text-appText-bright truncate">
-            Versi Baru Tersedia! 🍙
-          </h4>
+          <div className="flex items-center gap-1.5 mb-0.5">
+            <span className="inline-block w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
+            <h4 className="text-xs sm:text-sm font-extrabold text-appText-bright truncate">
+              Versi Baru Telah Siap! 🍙
+            </h4>
+          </div>
           <p className="text-xs text-appText-muted line-clamp-1">
-            Muat ulang untuk menerapkan pembaruan sistem.
+            Ketuk untuk memuat ulang & nikmati pembaruan terbaru.
           </p>
         </div>
 

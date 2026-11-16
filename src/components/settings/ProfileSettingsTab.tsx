@@ -211,7 +211,7 @@ export const ProfileSettingsTab: React.FC<ProfileSettingsTabProps> = ({
                   setUiLanguage('id');
                   showToast('Bahasa diubah ke Bahasa Indonesia', '🇮🇩');
                 }}
-                className={`flex-1 py-2 rounded-lg text-xs font-bold border transition-all ${
+                className={`flex-1 py-2 min-h-[40px] rounded-xl text-xs font-bold border transition-all active:scale-95 flex items-center justify-center ${
                   uiLanguage === 'id'
                     ? 'bg-accent text-bg border-accent shadow-xs'
                     : 'bg-surface-3 text-appText-muted border-accent/15 hover:text-appText-bright'
@@ -224,7 +224,7 @@ export const ProfileSettingsTab: React.FC<ProfileSettingsTabProps> = ({
                   setUiLanguage('en');
                   showToast('Language changed to English', '🇬🇧');
                 }}
-                className={`flex-1 py-2 rounded-lg text-xs font-bold border transition-all ${
+                className={`flex-1 py-2 min-h-[40px] rounded-xl text-xs font-bold border transition-all active:scale-95 flex items-center justify-center ${
                   uiLanguage === 'en'
                     ? 'bg-accent text-bg border-accent shadow-xs'
                     : 'bg-surface-3 text-appText-muted border-accent/15 hover:text-appText-bright'
@@ -242,21 +242,21 @@ export const ProfileSettingsTab: React.FC<ProfileSettingsTabProps> = ({
             <div className="flex items-center gap-2 flex-wrap">
               <button
                 onClick={openFeatureGuide}
-                className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-3 hover:bg-surface-2 text-xs font-semibold text-appText-bright border border-accent/15 transition-all"
+                className="flex items-center gap-1.5 px-3.5 py-2 min-h-[40px] rounded-xl bg-surface-3 hover:bg-surface-2 text-xs font-semibold text-appText-bright border border-accent/15 transition-all active:scale-95"
               >
                 <HelpCircle className="w-3.5 h-3.5 text-accent" />
                 Panduan Fitur
               </button>
               <button
                 onClick={openOnboarding}
-                className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-3 hover:bg-surface-2 text-xs font-semibold text-appText-bright border border-accent/15 transition-all"
+                className="flex items-center gap-1.5 px-3.5 py-2 min-h-[40px] rounded-xl bg-surface-3 hover:bg-surface-2 text-xs font-semibold text-appText-bright border border-accent/15 transition-all active:scale-95"
               >
                 <Sparkles className="w-3.5 h-3.5 text-amber-500" />
                 Tur Awal
               </button>
               <button
                 onClick={openPatchNotes}
-                className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-3 hover:bg-surface-2 text-xs font-semibold text-appText-bright border border-accent/15 transition-all group"
+                className="flex items-center gap-1.5 px-3.5 py-2 min-h-[40px] rounded-xl bg-surface-3 hover:bg-surface-2 text-xs font-semibold text-appText-bright border border-accent/15 transition-all active:scale-95 group"
               >
                 <History className="w-3.5 h-3.5 text-accent" />
                 <span>Changelog</span>

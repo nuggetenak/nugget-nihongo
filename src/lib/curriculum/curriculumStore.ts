@@ -60,6 +60,7 @@ export interface TrackProgressState {
   completedLessons: string[];
   lessonScores: Record<string, number>; // lessonId -> percentage (0..100)
   lastStudiedTimestamp?: string;
+  dojoReviewsCount?: number;
 }
 
 export interface CurriculumStoreState {
@@ -88,6 +89,7 @@ export interface CurriculumStoreState {
     averageScore: number;
   };
   completeUnit: (trackId: TrackId, unitId: string) => void;
+  recordDojoVocabReview: (trackId: TrackId, count?: number) => void;
   resetTrackProgress: (trackId: TrackId) => void;
   exportProgressJson: () => string;
   importProgressJson: (json: string) => boolean;
@@ -316,6 +318,26 @@ export const useCurriculumStore = create<CurriculumStoreState>((set, get) => ({
       completedUnitsCount: Array.isArray(currentTrack.completedUnits) ? currentTrack.completedUnits.length : 0,
       averageScore: avgScore,
     };
+  },
+
+  recordDojoVocabReview: (trackId: TrackId, count = 1) => {
+    const state = get();
+    const currentTrack = state.trackProgress[trackId] || {
+      completedUnits: [],
+      completedLessons: [],
+      lessonScores: {},
+    };
+    const updatedTrack: TrackProgressState = {
+      ...currentTrack,
+      dojoReviewsCount: (currentTrack.dojoReviewsCount || 0) + count,
+      lastStudiedTimestamp: new Date().toISOString(),
+    };
+    const updatedProgress = {
+      ...state.trackProgress,
+      [trackId]: updatedTrack,
+    };
+    saveProgressToStorage(updatedProgress);
+    set({ trackProgress: updatedProgress });
   },
 
   resetTrackProgress: (trackId) => {

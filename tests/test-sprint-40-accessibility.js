@@ -198,7 +198,9 @@ test('T-220: Universal touch targets >= 44px enforced across close buttons, audi
     'HomePage daily cards must have 44px audio/detail buttons'
   );
 
-  const materiCode = fs.readFileSync(path.join(ROOT_DIR, 'src/pages/MateriHubPage.tsx'), 'utf8');
+  const materiPath = path.join(ROOT_DIR, 'src/pages/MateriHubPage.tsx');
+  const dictPath = path.join(ROOT_DIR, 'src/features/dojo/pillars/DictionaryPillar.tsx');
+  const materiCode = fs.readFileSync(materiPath, 'utf8') + '\n' + (fs.existsSync(dictPath) ? fs.readFileSync(dictPath, 'utf8') : '');
   assert(
     materiCode.includes('w-11 h-11') && (materiCode.includes('min-w-[44px] min-h-[44px]') || materiCode.includes('sm:min-w-[44px] sm:min-h-[44px]')),
     'MateriHubPage cards must have 44px audio buttons'

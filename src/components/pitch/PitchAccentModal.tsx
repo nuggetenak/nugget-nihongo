@@ -3,7 +3,7 @@
 //  Features Minimal Pairs Showdown, 4 Tokyo Patterns, & Ear Drills
 // ══════════════════════════════════════════════════════════════════
 
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useEffect } from 'react';
 import {
   X,
   Search,
@@ -27,7 +27,7 @@ import {
   MinimalPair,
   PitchWord,
 } from '../../lib/pitch/pitchData';
-import { PitchCategory } from '../../lib/pitch/pitchEngine';
+import { PitchCategory, stopPitchToneMelody } from '../../lib/pitch/pitchEngine';
 import { PitchContourView } from './PitchContourView';
 import { useFocusTrap } from '../../hooks/useFocusTrap';
 import { useBodyScrollLock } from '../../hooks/useBodyScrollLock';
@@ -55,6 +55,21 @@ export const PitchAccentModal: React.FC<PitchAccentModalProps> = ({ isOpen, onCl
   const containerRef = useFocusTrap<HTMLDivElement>(isOpen, onClose);
   useBodyScrollLock(isOpen);
   const { showToast } = useAppStore();
+
+  useEffect(() => {
+    stopPitchToneMelody();
+  }, [activeTab]);
+
+  useEffect(() => {
+    return () => {
+      stopPitchToneMelody();
+    };
+  }, []);
+
+  const handleClose = () => {
+    stopPitchToneMelody();
+    onClose();
+  };
 
   // Filtered minimal pairs based on search
   const filteredPairs = useMemo(() => {
@@ -133,7 +148,7 @@ export const PitchAccentModal: React.FC<PitchAccentModalProps> = ({ isOpen, onCl
 
   return (
     <div
-      onClick={onClose}
+      onClick={handleClose}
       className="fixed inset-0 z-50 flex items-end sm:items-center justify-center p-0 sm:p-5 md:p-6 bg-black/85 backdrop-blur-md animate-in fade-in duration-200"
       role="dialog"
       aria-modal="true"
@@ -178,7 +193,7 @@ export const PitchAccentModal: React.FC<PitchAccentModalProps> = ({ isOpen, onCl
 
             <button
               type="button"
-              onClick={onClose}
+              onClick={handleClose}
               className="w-11 h-11 min-w-[44px] min-h-[44px] rounded-2xl bg-surface/80 hover:bg-surface-3 border border-accent/20 text-appText-muted hover:text-appText-bright transition-all shrink-0 active:scale-95 flex items-center justify-center"
               title="Tutup dialog"
               aria-label="Tutup dialog pitch accent"
@@ -194,7 +209,7 @@ export const PitchAccentModal: React.FC<PitchAccentModalProps> = ({ isOpen, onCl
             <button
               type="button"
               onClick={() => setActiveTab('pairs')}
-              className={`py-2 px-2 sm:px-3 rounded-xl text-xs sm:text-sm font-bold flex items-center justify-center gap-1.5 transition-all ${
+              className={`min-h-[40px] py-2 px-2 sm:px-3 rounded-xl text-xs sm:text-sm font-bold flex items-center justify-center gap-1.5 transition-all active:scale-95 ${
                 activeTab === 'pairs'
                   ? 'bg-accent text-bg shadow-sm font-extrabold'
                   : 'text-appText-muted hover:text-appText-bright hover:bg-surface-3'
@@ -207,7 +222,7 @@ export const PitchAccentModal: React.FC<PitchAccentModalProps> = ({ isOpen, onCl
             <button
               type="button"
               onClick={() => setActiveTab('patterns')}
-              className={`py-2 px-2 sm:px-3 rounded-xl text-xs sm:text-sm font-bold flex items-center justify-center gap-1.5 transition-all ${
+              className={`min-h-[40px] py-2 px-2 sm:px-3 rounded-xl text-xs sm:text-sm font-bold flex items-center justify-center gap-1.5 transition-all active:scale-95 ${
                 activeTab === 'patterns'
                   ? 'bg-accent text-bg shadow-sm font-extrabold'
                   : 'text-appText-muted hover:text-appText-bright hover:bg-surface-3'
@@ -220,7 +235,7 @@ export const PitchAccentModal: React.FC<PitchAccentModalProps> = ({ isOpen, onCl
             <button
               type="button"
               onClick={() => setActiveTab('quiz')}
-              className={`py-2 px-2 sm:px-3 rounded-xl text-xs sm:text-sm font-bold flex items-center justify-center gap-1.5 transition-all ${
+              className={`min-h-[40px] py-2 px-2 sm:px-3 rounded-xl text-xs sm:text-sm font-bold flex items-center justify-center gap-1.5 transition-all active:scale-95 ${
                 activeTab === 'quiz'
                   ? 'bg-accent text-bg shadow-sm font-extrabold'
                   : 'text-appText-muted hover:text-appText-bright hover:bg-surface-3'
@@ -389,7 +404,7 @@ export const PitchAccentModal: React.FC<PitchAccentModalProps> = ({ isOpen, onCl
                     key={cat}
                     type="button"
                     onClick={() => setSelectedPattern(cat)}
-                    className={`p-3 rounded-2xl border text-center transition-all ${
+                    className={`p-3 min-h-[44px] rounded-2xl border text-center transition-all active:scale-95 ${
                       selectedPattern === cat
                         ? PATTERN_INFO[cat].color + ' font-extrabold shadow-sm scale-102'
                         : 'bg-surface hover:bg-surface-3 text-appText-muted border-accent/20'
@@ -499,7 +514,7 @@ export const PitchAccentModal: React.FC<PitchAccentModalProps> = ({ isOpen, onCl
                           type="button"
                           onClick={() => handleSelectQuizOption(optIdx, opt.isCorrect)}
                           disabled={selectedAnswerIdx !== null}
-                          className={`w-full p-3.5 rounded-2xl border text-left text-xs sm:text-sm transition-all flex items-start gap-3 active:scale-98 ${btnStyle}`}
+                          className={`w-full p-3.5 min-h-[44px] rounded-2xl border text-left text-xs sm:text-sm transition-all flex items-start gap-3 active:scale-95 ${btnStyle}`}
                         >
                           <span className="w-5 h-5 rounded-full border border-current flex items-center justify-center shrink-0 mt-0.5 text-xs font-bold">
                             {String.fromCharCode(65 + optIdx)}
@@ -528,7 +543,7 @@ export const PitchAccentModal: React.FC<PitchAccentModalProps> = ({ isOpen, onCl
                         <button
                           type="button"
                           onClick={handleNextQuiz}
-                          className="px-4 py-2 rounded-xl bg-accent hover:bg-accent-hot text-bg font-bold text-xs flex items-center gap-1.5 transition-all active:scale-95 shadow-md"
+                          className="min-h-[40px] px-4 py-2 rounded-xl bg-accent hover:bg-accent-hot text-bg font-bold text-xs flex items-center gap-1.5 transition-all active:scale-95 shadow-md"
                         >
                           <span>{currentQuizIdx + 1 === PITCH_QUIZ_QUESTIONS.length ? 'Lihat Hasil' : 'Lanjut →'}</span>
                         </button>

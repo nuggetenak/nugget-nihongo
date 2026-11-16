@@ -18,18 +18,21 @@ export const KeyboardShortcutsModal: React.FC<KeyboardShortcutsModalProps> = ({ 
 
   if (!isOpen) return null;
 
+  const isApple = typeof navigator !== 'undefined' && /(Mac|iPhone|iPod|iPad)/i.test(navigator.userAgent || '');
+
   const shortcutGroups = [
     {
       title: 'Navigasi & Pencarian',
       shortcuts: [
-        { keys: ['⌘', 'K'], label: 'Buka Pencarian Global (Kanji/Vocab/Pola)' },
+        { keys: isApple ? ['⌘', 'K'] : ['Ctrl', 'K'], label: 'Buka Pencarian Global (Kanji/Vocab/Pola)' },
         { keys: ['?'], label: 'Buka Bantuan Pintasan Keyboard ini' },
         { keys: ['Esc'], label: 'Tutup modal / overlay yang sedang terbuka' },
       ],
     },
     {
-      title: 'Tampilan Aksara',
+      title: 'Tampilan & Aksara',
       shortcuts: [
+        { keys: ['T'], label: 'Ganti Tema Aplikasi (Mode Gelap / Terang)' },
         { keys: ['F'], label: 'Nyalakan / Matikan Furigana di atas Kanji' },
         { keys: ['R'], label: 'Nyalakan / Matikan Bantuan Ejaan Romaji' },
       ],

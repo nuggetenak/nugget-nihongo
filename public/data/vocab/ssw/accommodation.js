@@ -42,19 +42,19 @@ window.vocabSSW_Accommodation = [
   },
   {
     "id": "v-ssw-accommodation-003",
-    "word": "遺失物（忘れ物）",
-    "reading": "いしつぶつ（わすれもの）",
-    "romaji": "ishitsubutsu (wasuremono)",
+    "word": "遺失物",
+    "reading": "いしつぶつ",
+    "romaji": "ishitsubutsu",
     "meaning": "Barang berharga tamu yang tertinggal di kamar",
     "meaning_id": "Barang berharga tamu yang tertinggal di kamar",
     "meaning_en": "Barang berharga tamu yang tertinggal di kamar",
     "level": "n4",
     "pos": "noun",
-    "nuance": "Guest Property Theft Dispute",
+    "nuance": "Istilah hukum dan resmi hotel untuk barang tertinggal tamu. Dalam percakapan kasual sehari-hari sering disebut 忘れ物 (わすれもの).",
     "examples": [
       {
-        "jp": "遺失物（忘れ物）の安全確認を行ってください。",
-        "id": "Tolong lakukan konfirmasi keselamatan pada Barang berharga tamu yang tertinggal di kamar."
+        "jp": "客室で遺失物を発見した場合は、直ちにフロントへ届け出てください。",
+        "id": "Jika menemukan barang tertinggal tamu di kamar, segera laporkan ke front office."
       }
     ]
   },

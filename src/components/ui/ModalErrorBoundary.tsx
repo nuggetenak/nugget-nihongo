@@ -9,6 +9,7 @@ import { AlertTriangle, X } from 'lucide-react';
 import { errorReporter } from '../../lib/telemetry/errorReporter';
 import { diagnostics } from '../../lib/diagnostics/diagnostics';
 import { useModalStore } from '../../store/useModalStore';
+import { lockBodyScroll, unlockBodyScroll } from '../../hooks/useBodyScrollLock';
 
 export interface ModalErrorBoundaryProps {
   children: ReactNode;
@@ -50,7 +51,7 @@ export class ModalErrorBoundary extends Component<ModalErrorBoundaryProps, Modal
 
   public componentDidMount() {
     if (this.state.hasError && typeof document !== 'undefined') {
-      document.body.style.overflow = 'hidden';
+      lockBodyScroll(); // document.body.style.overflow = 'hidden'
       window.addEventListener('keydown', this.handleKeyDown);
     }
   }
@@ -61,10 +62,10 @@ export class ModalErrorBoundary extends Component<ModalErrorBoundaryProps, Modal
       this.setState({ hasError: false, error: null });
     }
     if (!prevState.hasError && this.state.hasError && typeof document !== 'undefined') {
-      document.body.style.overflow = 'hidden';
+      lockBodyScroll(); // document.body.style.overflow = 'hidden'
       window.addEventListener('keydown', this.handleKeyDown);
     } else if (prevState.hasError && !this.state.hasError && typeof document !== 'undefined') {
-      document.body.style.overflow = '';
+      unlockBodyScroll(); // document.body.style.overflow = ''
       window.removeEventListener('keydown', this.handleKeyDown);
     }
   }
@@ -73,8 +74,8 @@ export class ModalErrorBoundary extends Component<ModalErrorBoundaryProps, Modal
     if (typeof window !== 'undefined') {
       window.removeEventListener('keydown', this.handleKeyDown);
     }
-    if (typeof document !== 'undefined') {
-      document.body.style.overflow = '';
+    if (this.state.hasError && typeof document !== 'undefined') {
+      unlockBodyScroll(); // document.body.style.overflow = ''
     }
   }
 
@@ -85,10 +86,10 @@ export class ModalErrorBoundary extends Component<ModalErrorBoundaryProps, Modal
   };
 
   private handleClose = () => {
-    this.setState({ hasError: false, error: null });
-    if (typeof document !== 'undefined') {
-      document.body.style.overflow = '';
+    if (this.state.hasError) {
+      unlockBodyScroll(); // document.body.style.overflow = ''
     }
+    this.setState({ hasError: false, error: null });
     if (this.props.onClose) {
       this.props.onClose();
     } else {

@@ -19,20 +19,23 @@ export class SyncDaemon {
   private minIntervalMs = 15000; // 15 seconds minimum throttle between syncs
   private defaultIntervalMs = 300000; // 5 minutes periodic sync
   private triggerCount = 0;
+  private isSyncInProgress = false;
 
   /**
    * Starts the sync daemon listeners and periodic heartbeat timer.
    */
   public start(customIntervalMs?: number): void {
-    if (this.isRunning || typeof window === 'undefined') return;
+    if (this.isRunning) return;
 
     const interval = Math.max(1000, Number.isFinite(customIntervalMs) ? customIntervalMs! : this.defaultIntervalMs);
 
-    // 1. Reconnect listener
-    window.addEventListener('online', this.handleOnline);
+    if (typeof window !== 'undefined') {
+      // 1. Reconnect listener
+      window.addEventListener('online', this.handleOnline);
 
-    // 2. Visibility change listener (reconnect when tab is focused)
-    document.addEventListener('visibilitychange', this.handleVisibilityChange);
+      // 2. Visibility change listener (reconnect when tab is focused)
+      document.addEventListener('visibilitychange', this.handleVisibilityChange);
+    }
 
     // 3. Periodic timer
     this.intervalId = setInterval(() => {
@@ -50,10 +53,12 @@ export class SyncDaemon {
    * Stops the daemon and tears down listeners.
    */
   public stop(): void {
-    if (!this.isRunning || typeof window === 'undefined') return;
+    if (!this.isRunning) return;
 
-    window.removeEventListener('online', this.handleOnline);
-    document.removeEventListener('visibilitychange', this.handleVisibilityChange);
+    if (typeof window !== 'undefined') {
+      window.removeEventListener('online', this.handleOnline);
+      document.removeEventListener('visibilitychange', this.handleVisibilityChange);
+    }
 
     if (this.intervalId !== null) {
       clearInterval(this.intervalId);
@@ -76,21 +81,34 @@ export class SyncDaemon {
   /**
    * Dispatches cloud sync if authenticated and not throttled.
    */
-  public async triggerSync(reason = 'manual'): Promise<boolean> {
+  public async triggerSync(reason = 'manual', force = false): Promise<boolean> {
     const now = Date.now();
-    if (now - this.lastTriggerTime < this.minIntervalMs) {
+    if (!force && this.lastTriggerTime > 0 && now >= this.lastTriggerTime && now - this.lastTriggerTime < this.minIntervalMs) {
       return false; // Throttled
     }
+
+    if (this.isSyncInProgress) {
+      return false; // Already executing a sync
+    }
+
+    // Immediately reserve timestamp to guard against concurrent tick collisions
+    this.lastTriggerTime = now;
 
     let user: any = null;
     let syncNow: (() => Promise<void>) | null = null;
     let syncStatus = 'idle';
 
     if (customAuthGetter) {
-      const state = customAuthGetter();
-      user = state.user;
-      syncNow = state.syncNow;
-      syncStatus = state.syncStatus;
+      try {
+        const state = customAuthGetter();
+        if (state) {
+          user = state.user;
+          syncNow = state.syncNow;
+          syncStatus = state.syncStatus;
+        }
+      } catch {
+        return false;
+      }
     } else {
       try {
         const mod = await import('../supabase/authStore');
@@ -103,11 +121,13 @@ export class SyncDaemon {
       }
     }
 
-    if (!user || !syncNow || syncStatus === 'syncing' || (typeof navigator !== 'undefined' && !navigator.onLine)) {
+    // Check network connectivity: guard against offline state (!navigator.onLine) while tolerating undefined in Node/SSR runtimes
+    const isOffline = typeof navigator !== 'undefined' && (navigator.onLine === false || (navigator.onLine !== undefined && !navigator.onLine));
+    if (!user || !syncNow || syncStatus === 'syncing' || isOffline) {
       return false;
     }
 
-    this.lastTriggerTime = now;
+    this.isSyncInProgress = true;
     this.triggerCount++;
 
     try {
@@ -116,14 +136,17 @@ export class SyncDaemon {
     } catch (e) {
       console.warn(`[syncDaemon] Sync triggered by ${reason} failed:`, e);
       return false;
+    } finally {
+      this.isSyncInProgress = false;
     }
   }
 
-  public getStatus(): { isRunning: boolean; lastTriggerTime: number; triggerCount: number } {
+  public getStatus(): { isRunning: boolean; lastTriggerTime: number; triggerCount: number; isSyncInProgress: boolean } {
     return {
       isRunning: this.isRunning,
       lastTriggerTime: this.lastTriggerTime,
       triggerCount: this.triggerCount,
+      isSyncInProgress: this.isSyncInProgress,
     };
   }
 
@@ -131,6 +154,7 @@ export class SyncDaemon {
     this.stop();
     this.lastTriggerTime = 0;
     this.triggerCount = 0;
+    this.isSyncInProgress = false;
   }
 }
 

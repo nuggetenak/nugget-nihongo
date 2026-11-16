@@ -8,7 +8,7 @@ import { SkeletonGrid } from './SkeletonCard';
 
 export const PageSkeleton: React.FC<{ title?: string }> = ({ title }) => {
   return (
-    <div className="py-6 space-y-6 max-w-5xl mx-auto animate-in fade-in duration-200">
+    <div className="py-6 space-y-6 max-w-7xl mx-auto animate-in fade-in duration-200">
       {/* Header bar skeleton */}
       <div className="flex items-center justify-between">
         <div className="h-8 bg-surface-2/60 rounded-2xl w-48 animate-pulse" />

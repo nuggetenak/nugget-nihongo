@@ -16339,8 +16339,8 @@ window.vocabN5_Nouns = [
 {
   "id": "vg-n5-00568",
   "word": "四",
-  "reading": "し/よん",
-  "romaji": "shi/yon",
+  "reading": "よん",
+  "romaji": "yon",
   "meaning_id": "empat",
   "meaning_en": "4",
   "jlpt": "n5",
@@ -16463,8 +16463,8 @@ window.vocabN5_Nouns = [
 {
   "id": "vg-n5-00571",
   "word": "七",
-  "reading": "しち/なな",
-  "romaji": "shichi/nana",
+  "reading": "なな",
+  "romaji": "nana",
   "meaning_id": "tujuh",
   "meaning_en": "7",
   "jlpt": "n5",
@@ -16547,8 +16547,8 @@ window.vocabN5_Nouns = [
 {
   "id": "vg-n5-00573",
   "word": "九",
-  "reading": "きゅう/く",
-  "romaji": "kyuu/ku",
+  "reading": "きゅう",
+  "romaji": "kyuu",
   "meaning_id": "sembilan",
   "meaning_en": "9",
   "jlpt": "n5",
@@ -18961,9 +18961,9 @@ window.vocabN5_Nouns = [
 
 {
   "id": "vg-n5-00640",
-  "word": "つま／かない",
-  "reading": "つま/かない",
-  "romaji": "tsuma/kanai",
+  "word": "妻",
+  "reading": "つま",
+  "romaji": "tsuma",
   "meaning_id": "istri",
   "meaning_en": "wife",
   "jlpt": "n5",
@@ -18979,7 +18979,7 @@ window.vocabN5_Nouns = [
     "teman",
     "umum"
   ],
-  "nuance": "Bentuk sopan: おくさん",
+  "nuance": "Bentuk sopan untuk menyebut istri orang lain: おくさん (奥さん). Dapat juga disebut かない (家内) untuk istri sendiri dalam situasi tradisional.",
   "conj_type": null,
   "examples": [
     {
@@ -19001,9 +19001,9 @@ window.vocabN5_Nouns = [
 
 {
   "id": "vg-n5-00641",
-  "word": "おっと／しゅじん",
-  "reading": "おっと/しゅじん",
-  "romaji": "ottto/shujin",
+  "word": "夫",
+  "reading": "おっと",
+  "romaji": "otto",
   "meaning_id": "suami",
   "meaning_en": "husband",
   "jlpt": "n5",
@@ -19019,7 +19019,7 @@ window.vocabN5_Nouns = [
     "teman",
     "umum"
   ],
-  "nuance": "Bentuk sopan: ごしゅじん",
+  "nuance": "Bentuk sopan untuk menyebut suami orang lain: ごしゅじん (ご主人). Dapat juga disebut しゅじん (主人) untuk suami sendiri.",
   "conj_type": null,
   "examples": [
     {

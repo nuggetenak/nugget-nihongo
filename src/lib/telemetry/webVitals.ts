@@ -42,8 +42,9 @@ class WebVitalsMonitor {
   // 1. Time to First Byte (TTFB)
   private observeTTFB(): void {
     try {
+      if (typeof performance === 'undefined' || typeof performance.getEntriesByType !== 'function') return;
       const navEntry = performance.getEntriesByType('navigation')[0] as PerformanceNavigationTiming | undefined;
-      if (navEntry) {
+      if (navEntry && Number.isFinite(navEntry.responseStart) && navEntry.responseStart > 0) {
         const ttfb = Math.round(navEntry.responseStart);
         this.recordMetric('TTFB', ttfb, this.rateTTFB(ttfb));
       }

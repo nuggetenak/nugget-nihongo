@@ -129,7 +129,7 @@ function main() {
   test('P5.6: Adheres to refined Urushi lacquerware aesthetic with progressive disclosure for specialty modes', () => {
     assert(hubCode.includes('border-amber-500'), 'Must use warm amber lacquer borders');
     assert(hubCode.includes('group-hover:text-amber-400'), 'Card titles must transition to warm amber on hover');
-    assert(hubCode.includes('Mode Tambahan & Spesialis Gemba'), 'Must include collapsible specialty mode progressive disclosure');
+    assert(hubCode.includes('Mode Tambahan & Spesialis Gemba') || hubCode.includes('Mode Tambahan & Spesialis Kerja Nyata'), 'Must include collapsible specialty mode progressive disclosure');
     assert(hubCode.includes('SPECIALTY_MODES'), 'Must preserve specialty modes array');
     assert(hubCode.includes('PrometricCbtModal'), 'Must mount Prometric SSW CBT modal');
     assert(hubCode.includes('JftBasicCbtModal'), 'Must mount JFT-Basic CBT modal');

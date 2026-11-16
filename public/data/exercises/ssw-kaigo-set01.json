@@ -245,7 +245,7 @@
       "instructionId": "Pilihlah nama alat bantu mobilitas berikut yang tepat.",
       "prompt": "立ち上がりや 歩行が 不安定な 利用者が、両手で 握って 押しながら 歩く 車輪付きの 歩行補助具を 何と 言いますか。",
       "options": [
-        "歩行器（ほこうき / シルバーカー）",
+        "歩行器（ほこうき）",
         "杖（つえ）",
         "担架（たんか）",
         "義足（ぎそく）"

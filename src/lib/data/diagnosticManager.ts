@@ -157,7 +157,12 @@ export async function getDiagnosticPairsByArchetype(
 export async function getDiagnosticPairsByDomain(domainKeyword: string): Promise<DiagnosticPair[]> {
   const all = await loadDiagnosticPairs();
   const kw = domainKeyword.toLowerCase();
-  return all.filter((p) => p.domain.toLowerCase().includes(kw));
+  return all.filter((p) => {
+    const d = p.domain.toLowerCase();
+    if (d.includes(kw)) return true;
+    if (kw === 'gemba' && (d.includes('workplace') || d.includes('safety') || d.includes('emergency'))) return true;
+    return false;
+  });
 }
 
 /**

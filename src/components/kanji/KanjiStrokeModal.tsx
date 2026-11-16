@@ -36,6 +36,7 @@ import { getPathLength, samplePointsFromPath } from '../../lib/kanji/kanjiVgPars
 import { zzfxKanjiAudio } from '../../lib/audio/zzfxKanjiAudio';
 import { validateStrokeWithFrechet } from '../../lib/kanji/strokeValidator';
 import { shareKanjiCard } from '../../lib/social/shareCardGenerator.ts';
+import { useBodyScrollLock } from '../../hooks/useBodyScrollLock';
 
 interface KanjiStrokeModalProps {
   kanji: MasterKanjiItem | null;
@@ -51,6 +52,17 @@ export const KanjiStrokeModal: React.FC<KanjiStrokeModalProps> = ({
   onAskSensei,
 }) => {
   const [strokeData, setStrokeData] = useState<KanjiStrokePaths | null>(null);
+
+  useBodyScrollLock(isOpen);
+
+  useEffect(() => {
+    if (!isOpen) return;
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') onClose();
+    };
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [isOpen, onClose]);
   const [loading, setLoading] = useState(false);
   const [activeTab, setActiveTab] = useState<'animate' | 'practice'>('animate');
   const [currentStep, setCurrentStep] = useState<number>(0);
@@ -1203,7 +1215,7 @@ export const KanjiStrokeModal: React.FC<KanjiStrokeModalProps> = ({
                                   <Volume2 size={14} />
                                 </button>
                               </div>
-                              <p className="text-appText-muted text-[10.5px]">
+                              <p className="text-appText-muted text-xs">
                                 {v.examples[0].id}
                               </p>
                             </div>
@@ -1271,7 +1283,7 @@ export const KanjiStrokeModal: React.FC<KanjiStrokeModalProps> = ({
                         {v.meaning}
                       </p>
                       {v.examples && v.examples.length > 0 && (
-                        <div className="bg-surface-2/60 rounded-lg p-2 border border-theme/40 text-[10.5px] space-y-0.5">
+                        <div className="bg-surface-2/60 rounded-lg p-2 border border-theme/40 text-xs space-y-0.5">
                           <div className="flex items-start justify-between gap-1.5">
                             <span className="font-japanese text-appText-bright leading-relaxed">
                               {v.examples[0].jp.replace(/<\/?b>/gi, '')}

@@ -204,19 +204,19 @@ window.vocabSSW_Forestry = [
   },
   {
     "id": "v-ssw-forestry-012",
-    "word": "矢（伐倒楔）",
-    "reading": "や（くさび）",
-    "romaji": "ya (kusabi)",
+    "word": "伐倒楔",
+    "reading": "ばっとうくさび",
+    "romaji": "battou kusabi",
     "meaning": "Baji pengganjal takik pendorong rebah pohon",
     "meaning_id": "Baji pengganjal takik pendorong rebah pohon",
     "meaning_en": "Baji pengganjal takik pendorong rebah pohon",
     "level": "n4",
     "pos": "noun",
-    "nuance": "Saw Pinching & Trunk Rollback",
+    "nuance": "Baji pengganjal takik rebah pohon saat penebangan kayu kehutanan. Di hutan sering disebut 矢 (や) atau 楔 (くさび).",
     "examples": [
       {
-        "jp": "矢（伐倒楔）の安全確認を行ってください。",
-        "id": "Tolong lakukan konfirmasi keselamatan pada Baji pengganjal takik pendorong rebah pohon."
+        "jp": "伐倒楔を木槌で打ち込み、木が意図した方向へ確実に倒れるようにします。",
+        "id": "Pukul baji pemotong menggunakan palu kayu agar pohon roboh tepat ke arah yang direncanakan."
       }
     ]
   },
@@ -294,19 +294,19 @@ window.vocabSSW_Forestry = [
   },
   {
     "id": "v-ssw-forestry-017",
-    "word": "集材機（ヤルダー）",
-    "reading": "しゅうざいき（やるだー）",
-    "romaji": "shuuzaiki (yarudaa)",
+    "word": "集材機",
+    "reading": "しゅうざいき",
+    "romaji": "shuuzaiki",
     "meaning": "Mesin derek kabel penarik kayu gelondongan lereng",
     "meaning_id": "Mesin derek kabel penarik kayu gelondongan lereng",
     "meaning_en": "Mesin derek kabel penarik kayu gelondongan lereng",
     "level": "n4",
     "pos": "noun",
-    "nuance": "High-Tension Cable Snap",
+    "nuance": "Mesin derek kabel penarik kayu gelondongan lereng bukit. Populer dikenal dengan nama loanword ヤルダー (yarder).",
     "examples": [
       {
-        "jp": "集材機（ヤルダー）の安全確認を行ってください。",
-        "id": "Tolong lakukan konfirmasi keselamatan pada Mesin derek kabel penarik kayu gelondongan lereng."
+        "jp": "集材機のワイヤーロープの張力を確認し、荷掛け作業を開始してください。",
+        "id": "Periksa ketegangan tali kawat mesin derek kayu sebelum memulai pengikatan gelondongan kayu."
       }
     ]
   },
@@ -456,19 +456,19 @@ window.vocabSSW_Forestry = [
   },
   {
     "id": "v-ssw-forestry-026",
-    "word": "材幹（丸太）",
-    "reading": "ざいかん（まるた）",
-    "romaji": "zaikan (maruta)",
+    "word": "材幹",
+    "reading": "ざいかん",
+    "romaji": "zaikan",
     "meaning": "Batang kayu gelondongan bundar hasil tebangan",
     "meaning_id": "Batang kayu gelondongan bundar hasil tebangan",
     "meaning_en": "Batang kayu gelondongan bundar hasil tebangan",
     "level": "n4",
     "pos": "noun",
-    "nuance": "Rolling Log Crush Hazard",
+    "nuance": "Batang kayu pohon utama bernilai jual tinggi. Setelah dipotong-potong disebut 丸太 (まるた = log gelondongan).",
     "examples": [
       {
-        "jp": "材幹（丸太）の安全確認を行ってください。",
-        "id": "Tolong lakukan konfirmasi keselamatan pada Batang kayu gelondongan bundar hasil tebangan."
+        "jp": "伐採した材幹の太さと長さを測定し、規格ごとに仕分けます。",
+        "id": "Ukur diameter dan panjang batang kayu hasil tebangan lalu kelompokkan menurut standar mutu."
       }
     ]
   },
@@ -528,19 +528,19 @@ window.vocabSSW_Forestry = [
   },
   {
     "id": "v-ssw-forestry-030",
-    "word": "伐根（切り株）",
-    "reading": "ばっこん（きりかぶ）",
-    "romaji": "bakkon (kirikabu)",
+    "word": "伐根",
+    "reading": "ばっこん",
+    "romaji": "bakkon",
     "meaning": "Tunggul pangkal sisa batang pohon di tanah",
     "meaning_id": "Tunggul pangkal sisa batang pohon di tanah",
     "meaning_en": "Tunggul pangkal sisa batang pohon di tanah",
     "level": "n4",
     "pos": "noun",
-    "nuance": "Tripping Obstacle during Escape",
+    "nuance": "Tunggul pangkal sisa batang pohon setelah ditebang. Dalam bahasa percakapan umum disebut 切り株 (きりかぶ).",
     "examples": [
       {
-        "jp": "伐根（切り株）の安全確認を行ってください。",
-        "id": "Tolong lakukan konfirmasi keselamatan pada Tunggul pangkal sisa batang pohon di tanah."
+        "jp": "運材車の通行の妨げにならないよう、路面の伐根を掘り起こして撤去します。",
+        "id": "Bongkar dan singkirkan tunggul pohon di badan jalan agar tidak menghambat truk pengangkut kayu."
       }
     ]
   },
@@ -582,19 +582,19 @@ window.vocabSSW_Forestry = [
   },
   {
     "id": "v-ssw-forestry-033",
-    "word": "梢（樹冠部）",
-    "reading": "こずえ（じゅかんぶ）",
-    "romaji": "kozue (jukanbu)",
+    "word": "樹冠部",
+    "reading": "じゅかんぶ",
+    "romaji": "jukanbu",
     "meaning": "Pucuk dahan mahkota pohon (sering patah memantul)",
     "meaning_id": "Pucuk dahan mahkota pohon (sering patah memantul)",
     "meaning_en": "Pucuk dahan mahkota pohon (sering patah memantul)",
     "level": "n4",
     "pos": "noun",
-    "nuance": "Overhead Deadwood Drop",
+    "nuance": "Bagian tajuk mahkota pucuk dahan daun pohon paling atas. Secara puitis/keseharian disebut 梢 (こずえ).",
     "examples": [
       {
-        "jp": "梢（樹冠部）の安全確認を行ってください。",
-        "id": "Tolong lakukan konfirmasi keselamatan pada Pucuk dahan mahkota pohon (sering patah memantul)."
+        "jp": "伐倒時に樹冠部の枯れ枝が落下してくる危険があるため、頭上を確認してください。",
+        "id": "Waspadai ranting mati dari puncak tajuk pohon yang dapat jatuh menimpa saat pohon ditebang."
       }
     ]
   },

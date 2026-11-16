@@ -114,19 +114,19 @@ window.vocabSSW_Timber = [
   },
   {
     "id": "v-ssw-timber-007",
-    "word": "合板（ベニヤ）",
-    "reading": "ごうはん（べにや）",
-    "romaji": "gouhan (beniya)",
+    "word": "合板",
+    "reading": "ごうはん",
+    "romaji": "gouhan",
     "meaning": "Kayu lapis susunan vinir bersilangan tegak lurus",
     "meaning_id": "Kayu lapis susunan vinir bersilangan tegak lurus",
     "meaning_en": "Kayu lapis susunan vinir bersilangan tegak lurus",
     "level": "n4",
     "pos": "noun",
-    "nuance": "Glue Formaldehyde Vapor Hazard",
+    "nuance": "Kayu lapis (plywood) yang direkatkan bersilangan serat. Di pasaran industri kayu populer disebut ベニヤ (veneer/plywood).",
     "examples": [
       {
-        "jp": "合板（ベニヤ）の安全確認を行ってください。",
-        "id": "Tolong lakukan konfirmasi keselamatan pada Kayu lapis susunan vinir bersilangan tegak lurus."
+        "jp": "合板の接着層に剥離がないか、打音検査で確認してください。",
+        "id": "Lakukan uji ketuk untuk memastikan tidak ada lapisan lem kayu lapis yang terkelupas."
       }
     ]
   },
@@ -312,37 +312,37 @@ window.vocabSSW_Timber = [
   },
   {
     "id": "v-ssw-timber-018",
-    "word": "単板（ベニヤシート）",
-    "reading": "たんばん（べにやしーと）",
-    "romaji": "tamban (beniya shiito)",
+    "word": "単板",
+    "reading": "たんばん",
+    "romaji": "tanban",
     "meaning": "Lembaran tipis vinir kayu bahan baku plywood",
     "meaning_id": "Lembaran tipis vinir kayu bahan baku plywood",
     "meaning_en": "Lembaran tipis vinir kayu bahan baku plywood",
     "level": "n4",
     "pos": "noun",
-    "nuance": "Paper-Thin Razor Sharp Edge Cut",
+    "nuance": "Lembaran tipis vinir kayu hasil kupasan mesin rotary lathe. Sering disebut ベニヤシート (veneer sheet).",
     "examples": [
       {
-        "jp": "単板（ベニヤシート）の安全確認を行ってください。",
-        "id": "Tolong lakukan konfirmasi keselamatan pada Lembaran tipis vinir kayu bahan baku plywood."
+        "jp": "乾燥工程後の単板に割れや裂け目がないか選別します。",
+        "id": "Sortir lembaran vinir tipis setelah proses pengeringan untuk memastikan bebas retak atau robek."
       }
     ]
   },
   {
     "id": "v-ssw-timber-019",
-    "word": "節（生き節・死に節）",
-    "reading": "ふし（いきぶし・しにぶし）",
+    "word": "節",
+    "reading": "ふし",
     "romaji": "fushi",
     "meaning": "Mata kayu sehat dan mata kayu mati lepas",
     "meaning_id": "Mata kayu sehat dan mata kayu mati lepas",
     "meaning_en": "Mata kayu sehat dan mata kayu mati lepas",
     "level": "n4",
     "pos": "noun",
-    "nuance": "Structural Load Bearing Loss",
+    "nuance": "Mata kayu pada papan. Dibagi menjadi 生き節 (ikibushi, mata kayu sehat menyatu) dan 死に節 (shinibushi, mata kayu busuk yang rapuh terlepas).",
     "examples": [
       {
-        "jp": "節（生き節・死に節）の安全確認を行ってください。",
-        "id": "Tolong lakukan konfirmasi keselamatan pada Mata kayu sehat dan mata kayu mati lepas."
+        "jp": "構造材としての強度を保つため、死に節の多い製材品をハネます。",
+        "id": "Sisihkan kayu olahan yang memiliki banyak mata kayu mati untuk menjaga kekuatan material konstruksi."
       }
     ]
   },
@@ -384,19 +384,19 @@ window.vocabSSW_Timber = [
   },
   {
     "id": "v-ssw-timber-022",
-    "word": "木理（木目）",
-    "reading": "もくり（もくめ）",
-    "romaji": "mokuri (mokume)",
+    "word": "木理",
+    "reading": "もくり",
+    "romaji": "mokuri",
     "meaning": "Pola arah serat alami dan alur pertumbuhan kayu",
     "meaning_id": "Pola arah serat alami dan alur pertumbuhan kayu",
     "meaning_en": "Pola arah serat alami dan alur pertumbuhan kayu",
     "level": "n4",
     "pos": "noun",
-    "nuance": "Splitting along Natural Grain",
+    "nuance": "Arah susunan serat sel kayu alami secara anatomi kayu. Dalam kehidupan sehari-hari disebut 木目 (もくめ).",
     "examples": [
       {
-        "jp": "木理（木目）の安全確認を行ってください。",
-        "id": "Tolong lakukan konfirmasi keselamatan pada Pola arah serat alami dan alur pertumbuhan kayu."
+        "jp": "木理の向きに沿ってカンナをかけると、表面が美しく滑らかに仕上がります。",
+        "id": "Menyerut kayu searah dengan alur serat alaminya akan menghasilkan permukaan yang halus dan indah."
       }
     ]
   },

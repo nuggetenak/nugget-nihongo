@@ -1,7 +1,7 @@
 // ══════════════════════════════════════════════════════════════════
 //  HVPTModal.tsx — High Variability Phonetic Training (HVPT) Studio
 //  Features 150 Phonological Contrast Items across 4 Native Speakers
-//  Covers Sokuon, Chouon, R vs L, Pitch Accent, Geminate Nasal & Gemba
+//  Covers Sokuon, Chouon, R vs L, Pitch Accent, Geminate Nasal & Workplace K3
 // ══════════════════════════════════════════════════════════════════
 
 import React, { useState, useEffect } from 'react';
@@ -48,7 +48,7 @@ const DOMAIN_TABS: Array<{ id: PhonologicalContrastDomain | 'all'; label: string
   { id: 'liquid_r_l', label: 'R vs L (Flap [ɾ])', icon: '👅' },
   { id: 'pitch_accent', label: 'Pitch Accent Homofon', icon: '🎵' },
   { id: 'geminate_nasal', label: 'Nasal & Yōon', icon: '👃' },
-  { id: 'devoicing', label: 'K3 Gemba & Desonorisasi', icon: '⚠️' },
+  { id: 'devoicing', label: 'Keselamatan K3 & Desonorisasi', icon: '⚠️' },
 ];
 
 export const HVPTModal: React.FC<HVPTModalProps> = ({ isOpen, onClose }) => {
@@ -220,7 +220,7 @@ export const HVPTModal: React.FC<HVPTModalProps> = ({ isOpen, onClose }) => {
                   <div className="text-2xl sm:text-3xl font-black text-accent-hot">
                     {summary.accuracy_percent}%
                   </div>
-                  <div className="text-[10px] text-appText-muted">
+                  <div className="text-xs text-appText-muted">
                     {summary.correct_count} dari {summary.total_trials} Soal
                   </div>
                 </div>
@@ -230,7 +230,7 @@ export const HVPTModal: React.FC<HVPTModalProps> = ({ isOpen, onClose }) => {
                   <div className="text-2xl sm:text-3xl font-black text-appText-bright">
                     {summary.average_reaction_time_ms}ms
                   </div>
-                  <div className="text-[10px] text-appText-muted">Diskriminasi Cepat</div>
+                  <div className="text-xs text-appText-muted">Diskriminasi Cepat</div>
                 </div>
 
                 <div className="col-span-2 sm:col-span-1 p-4 rounded-2xl bg-surface-2 border border-accent/20 text-center space-y-1">
@@ -238,7 +238,7 @@ export const HVPTModal: React.FC<HVPTModalProps> = ({ isOpen, onClose }) => {
                   <div className="text-2xl sm:text-3xl font-black text-emerald-400">
                     4 / 4
                   </div>
-                  <div className="text-[10px] text-appText-muted">Pria & Wanita (Muda/Senior)</div>
+                  <div className="text-xs text-appText-muted">Pria & Wanita (Muda/Senior)</div>
                 </div>
               </div>
 
@@ -261,14 +261,14 @@ export const HVPTModal: React.FC<HVPTModalProps> = ({ isOpen, onClose }) => {
                           <span className="text-base">{spk.icon}</span>
                           <div>
                             <div className="text-xs font-bold text-appText-bright">{spk.label}</div>
-                            <div className="text-[10px] text-appText-muted">{spk.age_label}</div>
+                            <div className="text-xs text-appText-muted">{spk.age_label}</div>
                           </div>
                         </div>
                         <div className="text-right">
                           <div className="text-sm font-extrabold text-accent">
                             {stats.total > 0 ? `${stats.accuracy}%` : '-'}
                           </div>
-                          <div className="text-[10px] text-appText-muted">
+                          <div className="text-xs text-appText-muted">
                             {stats.correct}/{stats.total}
                           </div>
                         </div>
@@ -301,7 +301,7 @@ export const HVPTModal: React.FC<HVPTModalProps> = ({ isOpen, onClose }) => {
                   </span>
                   <span>{currentPair.title}</span>
                 </div>
-                <div className="flex items-center gap-1 text-[11px]">
+                <div className="flex items-center gap-1 text-xs">
                   <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400" />
                   <span>
                     Skor: {results.filter((r) => r.is_correct).length} / {results.length}

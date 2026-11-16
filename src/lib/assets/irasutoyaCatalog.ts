@@ -161,7 +161,7 @@ export const IRASUTOYA_CATALOG: Record<string, IrasutoyaAsset> = {
   ssw_construction: {
     id: 'ssw_construction',
     category: 'ssw',
-    titleId: 'SSW Konstruksi Gemba (K3 & Helm Keselamatan)',
+    titleId: 'SSW Konstruksi Lapangan (K3 & Helm Keselamatan)',
     titleJp: 'ヘルメットをかぶった現場作業員のイラスト',
     irasutoyaUrl: 'https://www.irasutoya.com/2013/06/blog-post_12.html',
     cdnUrl: 'https://1.bp.blogspot.com/-h8Y9X_7_v4I/UbZ7X_5F4YI/AAAAAAAAS3s/uG7X5Y8_v4_Y/s400/genba_sagyouin.png',

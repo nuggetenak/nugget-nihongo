@@ -18149,9 +18149,9 @@ window.vocabN4_Verbs = [
 
 {
   "id": "vg-n4-00768",
-  "word": "～(て) しまう",
-  "reading": "～(て) しまう",
-  "romaji": "~(te) shimau",
+  "word": "〜てしまう",
+  "reading": "〜てしまう",
+  "romaji": "~te shimau",
   "meaning_id": "telanjur ~, tuntas melakukan ~",
   "meaning_en": "to end up doing; to do accidentally; to finish completely",
   "jlpt": "n4",

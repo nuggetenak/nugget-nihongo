@@ -1326,12 +1326,12 @@ export const unit05Lessons: Record<string, Partial<CurriculumLesson>> = {
       },
       {
         "id": "vg-n4-00745",
-        "word": "パート (タイム)",
-        "reading": "パート (タイム)",
-        "romaji": "paato (taimu)",
+        "word": "パート",
+        "reading": "パート",
+        "romaji": "paato",
         "meaning": "pekerjaan paruh waktu, kerja part-time",
         "pos": "noun",
-        "nuance": "Di Jepang, kata パート umumnya merujuk pada kerja paruh waktu yang dijalani ibu rumah tangga atau pekerja dewasa dengan jam kerja tetap yang lebih singkat. Berbeda dengan アルバイト (arubaito) yang cenderung diasosiasikan dengan pelajar atau mahasiswa.",
+        "nuance": "Singkatan dari パートタイム (part-time). Di Jepang, kata パート umumnya merujuk pada kerja paruh waktu yang dijalani ibu rumah tangga atau pekerja dewasa dengan jam kerja tetap yang lebih singkat. Berbeda dengan アルバイト (arubaito) yang cenderung diasosiasikan dengan pelajar atau mahasiswa.",
         "particleTip": "Gunakan bersama partikel yang tepat.",
         "exampleSentence": {
           "jp": "母は駅前のスーパーで毎日四時間パートをしています。",

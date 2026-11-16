@@ -463,7 +463,8 @@ export const FREEWAY_TRACK_IDS = [
  */
 export async function loadFreewayTrack(): Promise<NormalizedGrammar[]> {
   const n5Grammar = await loadGrammar('n5');
-  return FREEWAY_TRACK_IDS.map((id) => n5Grammar.find((g) => g.id === id)).filter(Boolean) as NormalizedGrammar[];
+  if (!Array.isArray(n5Grammar)) return [];
+  return FREEWAY_TRACK_IDS.map((id) => n5Grammar.find((g) => g && g.id === id)).filter(Boolean) as NormalizedGrammar[];
 }
 
 export interface CurriculumLesson {

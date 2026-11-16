@@ -92,6 +92,11 @@ function loadScript(src: string): Promise<void> {
   if (loadedScripts.has(src)) return Promise.resolve();
 
   return new Promise((resolve, reject) => {
+    if (typeof document === 'undefined') {
+      resolve();
+      return;
+    }
+
     if (document.querySelector(`script[src="${src}"]`)) {
       loadedScripts.add(src);
       resolve();
@@ -114,13 +119,18 @@ function loadScript(src: string): Promise<void> {
  * Load the master 9-book staged catalog
  */
 export async function loadStagedBooksCatalog(): Promise<BookSeriesMeta[]> {
-  if (window.nuggetSourcesStaged?.books) {
-    return window.nuggetSourcesStaged.books;
+  const win = typeof window !== 'undefined' ? window : (globalThis as any).window;
+  if (win && win.nuggetSourcesStaged?.books) {
+    return win.nuggetSourcesStaged.books;
+  }
+
+  if (typeof document === 'undefined') {
+    return getFallbackBooksCatalog();
   }
 
   try {
     await loadScript('/data/staged-expansion/books/sources-staged.js');
-    return window.nuggetSourcesStaged?.books || [];
+    return (typeof window !== 'undefined' ? window.nuggetSourcesStaged?.books : undefined) || getFallbackBooksCatalog();
   } catch (err) {
     console.warn('[authenticExerciseManager] Could not load sources-staged.js, using fallback metadata', err);
     return getFallbackBooksCatalog();
@@ -229,15 +239,22 @@ export async function loadBookDrills(bookId: string, volumeKey?: string): Promis
       return {};
   }
 
+  if (typeof document === 'undefined') {
+    return {};
+  }
+
   try {
     await loadScript(scriptPath);
+    const win: any = typeof window !== 'undefined' ? window : (globalThis as any).window;
+    if (!win) return {};
+
     const data =
-      window[varName] ||
-      (window as any)[varName.toLowerCase()] ||
-      (window as any)[`exercisesSkmN${varName.replace(/\D/g, '')}`] ||
-      (window as any)[`exercisesSKMN${varName.replace(/\D/g, '')}`] ||
-      (window as any)[`exercisesTryN${varName.replace(/\D/g, '')}`] ||
-      (window as any)[`exercisesSoumatomeN${varName.replace(/\D/g, '')}`];
+      win[varName] ||
+      win[varName.toLowerCase()] ||
+      win[`exercisesSkmN${varName.replace(/\D/g, '')}`] ||
+      win[`exercisesSKMN${varName.replace(/\D/g, '')}`] ||
+      win[`exercisesTryN${varName.replace(/\D/g, '')}`] ||
+      win[`exercisesSoumatomeN${varName.replace(/\D/g, '')}`];
 
     if (!data) return {};
 

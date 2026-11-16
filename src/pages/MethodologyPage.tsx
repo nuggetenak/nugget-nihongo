@@ -91,8 +91,10 @@ export const MethodologyPage: React.FC = () => {
 
   // FSRS v4.5 Forgetting curve calculation:
   // R(t, S) = (1 + FACTOR * (t / S))^(-DECAY) where FACTOR = 0.19, DECAY = 0.5
-  const fsrsRetrievability = Math.pow(1 + 0.19 * (fsrsElapsedDays / fsrsStabilityDays), -0.5);
-  const retrievabilityPercent = Math.max(1, Math.min(100, Math.round(fsrsRetrievability * 100)));
+  const safeStability = Math.max(0.1, Number.isFinite(fsrsStabilityDays) ? fsrsStabilityDays : 10);
+  const safeElapsed = Math.max(0, Number.isFinite(fsrsElapsedDays) ? fsrsElapsedDays : 7);
+  const fsrsRetrievability = Math.pow(1 + 0.19 * (safeElapsed / safeStability), -0.5);
+  const retrievabilityPercent = Math.max(1, Math.min(100, Math.round(Number.isFinite(fsrsRetrievability) ? fsrsRetrievability * 100 : 90)));
 
   const isGoldenRetentionWindow = retrievabilityPercent >= 85 && retrievabilityPercent <= 92;
   const isOverdue = retrievabilityPercent < 85;
@@ -698,9 +700,9 @@ export const MethodologyPage: React.FC = () => {
             <button
               key={pillar}
               onClick={() => setPersonaFilter(pillar)}
-              className={`px-3 py-1.5 rounded-xl text-xs font-bold transition-all shrink-0 active:scale-95 ${
+              className={`px-3.5 py-2 min-h-[40px] rounded-xl text-xs font-bold transition-all shrink-0 active:scale-95 flex items-center justify-center ${
                 personaFilter === pillar
-                  ? 'bg-amber-500 text-neutral-950 shadow-sm'
+                  ? 'bg-amber-500 text-neutral-950 shadow-sm font-extrabold'
                   : 'bg-neutral-900 text-neutral-400 hover:text-white border border-border'
               }`}
             >
@@ -729,7 +731,7 @@ export const MethodologyPage: React.FC = () => {
                   <span className="font-bold text-sm text-white">{persona.name}</span>
                   <span className="text-xs text-muted ml-2 font-mono">({persona.origin})</span>
                 </div>
-                <span className="text-[11px] font-mono px-2 py-0.5 rounded bg-neutral-800 text-amber-400 border border-border">
+                <span className="text-xs font-mono px-2 py-0.5 rounded bg-neutral-800 text-amber-400 border border-border font-bold">
                   {persona.pillar}
                 </span>
               </div>
@@ -781,7 +783,7 @@ export const MethodologyPage: React.FC = () => {
           <div className="p-4 rounded-2xl bg-neutral-900/70 border border-border space-y-2">
             <div className="flex items-center gap-2 text-xs font-bold text-emerald-400">
               <Database className="w-4 h-4" />
-              <span>2. Transkrip Percakapan Gemba Autentik</span>
+              <span>2. Transkrip Percakapan Tempat Kerja Nyata</span>
             </div>
             <p className="text-xs text-muted leading-relaxed">
               Bagi alumni Tokutei Ginou atau kenshusei yang memiliki rekaman aba-aba kerja nyata di pabrik, kapal, atau panti jompo, bantu perkaya bank soal skenario kami.
@@ -815,12 +817,12 @@ export const MethodologyPage: React.FC = () => {
             <span className="font-semibold text-neutral-300">Format Sitasi Akademik (BibTeX):</span>
             <button
               onClick={copyBibtex}
-              className="px-3 py-1 rounded-lg bg-neutral-800 hover:bg-neutral-700 text-amber-400 text-xs font-mono font-bold transition-all active:scale-95 border border-border"
+              className="px-3.5 py-1.5 min-h-[40px] rounded-xl bg-neutral-800 hover:bg-neutral-700 text-amber-400 text-xs font-mono font-bold transition-all active:scale-95 border border-border flex items-center justify-center"
             >
               {copiedBibtex ? '✅ Tersalin!' : 'Salin BibTeX'}
             </button>
           </div>
-          <pre className="p-3.5 rounded-2xl bg-neutral-950/90 border border-neutral-800 text-[11px] font-mono text-neutral-300 overflow-x-auto">
+          <pre className="p-3.5 rounded-2xl bg-neutral-950/90 border border-neutral-800 text-xs font-mono text-neutral-300 overflow-x-auto">
             {BIBTEX_CODE}
           </pre>
         </div>

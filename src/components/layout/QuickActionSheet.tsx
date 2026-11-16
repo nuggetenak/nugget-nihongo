@@ -18,6 +18,10 @@ import {
   CloudOff,
   Sparkles,
   SlidersHorizontal,
+  Sun,
+  Moon,
+  Volume2,
+  VolumeX,
 } from 'lucide-react';
 import { useAppStore } from '../../store/useAppStore';
 import { usePwaStore } from '../../lib/pwa/pwaStore';
@@ -25,6 +29,7 @@ import { useAuthStore } from '../../lib/supabase/authStore';
 import { OfflineStatusPill } from '../ui/OfflineStatusPill';
 import { SyncStatusIndicator } from '../sync/SyncStatusIndicator';
 import { useBodyScrollLock } from '../../hooks/useBodyScrollLock';
+import { useFocusTrap } from '../../hooks/useFocusTrap';
 
 interface QuickActionSheetProps {
   isOpen: boolean;
@@ -47,10 +52,14 @@ export const QuickActionSheet: React.FC<QuickActionSheetProps> = ({
     showToast,
     openFeatureGuide,
     openToolbox,
+    theme,
+    toggleTheme,
+    soundEffects,
+    setSoundEffects,
   } = useAppStore();
   const { isInstalled, setShowInstallModal } = usePwaStore();
   const { user } = useAuthStore();
-  const modalRef = useRef<HTMLDivElement>(null);
+  const modalRef = useFocusTrap<HTMLDivElement>(isOpen, onClose);
   useBodyScrollLock(isOpen);
 
   // Close on Escape key
@@ -188,6 +197,62 @@ export const QuickActionSheet: React.FC<QuickActionSheetProps> = ({
                   }`}
                 >
                   {showRomaji ? 'AKTIF' : 'NONAKTIF'}
+                </span>
+              </button>
+            </div>
+          </div>
+
+          {/* Section: Suasana Belajar (Theme & Sound SFX) */}
+          <div>
+            <div className="text-xs font-bold uppercase tracking-wider text-accent mb-2">
+              Suasana Belajar
+            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+              <button
+                type="button"
+                onClick={toggleTheme}
+                role="switch"
+                aria-checked={theme === 'dark'}
+                aria-label="Ganti mode gelap atau terang"
+                className="p-3 rounded-2xl border bg-surface-2 hover:bg-surface-3 border-accent/15 text-left flex items-center justify-between gap-3 transition-all min-h-[56px] active:scale-98 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+              >
+                <div className="flex items-center gap-2.5 min-w-0">
+                  <span className="w-8 h-8 rounded-xl bg-surface flex items-center justify-center border border-accent/20 shrink-0 text-accent">
+                    {theme === 'dark' ? <Moon className="w-4 h-4 text-amber-400" /> : <Sun className="w-4 h-4 text-amber-500" />}
+                  </span>
+                  <div className="min-w-0">
+                    <div className="font-bold text-sm text-appText-bright truncate">Tema Aplikasi</div>
+                    <div className="text-xs text-appText-muted truncate">{theme === 'dark' ? 'Mode Gelap Aktif' : 'Mode Terang Aktif'}</div>
+                  </div>
+                </div>
+                <span className="text-xs font-extrabold px-2.5 py-1 rounded-full border bg-surface-3 text-appText-bright border-accent/15">
+                  {theme === 'dark' ? 'GELAP' : 'TERANG'}
+                </span>
+              </button>
+
+              <button
+                type="button"
+                onClick={() => setSoundEffects(!soundEffects)}
+                role="switch"
+                aria-checked={soundEffects}
+                aria-label="Aktifkan atau nonaktifkan efek audio"
+                className={`p-3 rounded-2xl border text-left flex items-center justify-between gap-3 transition-all min-h-[56px] active:scale-98 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent ${
+                  soundEffects ? 'bg-amber-500/15 border-amber-500/40' : 'bg-surface-2 hover:bg-surface-3 border-accent/15'
+                }`}
+              >
+                <div className="flex items-center gap-2.5 min-w-0">
+                  <span className="w-8 h-8 rounded-xl bg-surface flex items-center justify-center border border-accent/20 shrink-0 text-accent">
+                    {soundEffects ? <Volume2 className="w-4 h-4 text-accent" /> : <VolumeX className="w-4 h-4 text-appText-muted" />}
+                  </span>
+                  <div className="min-w-0">
+                    <div className="font-bold text-sm text-appText-bright truncate">Efek Suara</div>
+                    <div className="text-xs text-appText-muted truncate">Audio feedback kuis & tombol</div>
+                  </div>
+                </div>
+                <span className={`text-xs font-extrabold px-2.5 py-1 rounded-full border transition-all shrink-0 ${
+                  soundEffects ? 'bg-amber-500 text-stone-950 border-amber-400' : 'bg-surface-3 text-appText-muted border-accent/15'
+                }`}>
+                  {soundEffects ? 'AKTIF' : 'NONAKTIF'}
                 </span>
               </button>
             </div>

@@ -3,11 +3,13 @@ const fs = require('fs');
 const path = require('path');
 const vm = require('vm');
 
-const srcFile = path.join(__dirname, '../../choukai renshuu/public/js/questions.js');
+const localSrcFile = path.join(__dirname, 'source-data/choukai-questions.js');
+const legacySrcFile = path.join(__dirname, '../../choukai renshuu/public/js/questions.js');
+const srcFile = fs.existsSync(localSrcFile) ? localSrcFile : legacySrcFile;
 const targetFile = path.join(__dirname, '../src/lib/data/choukaiExamBank.ts');
 
 if (!fs.existsSync(srcFile)) {
-  console.error(`Source file not found: ${srcFile}`);
+  console.error(`Source file not found: checked ${localSrcFile} and ${legacySrcFile}`);
   process.exit(1);
 }
 

@@ -372,14 +372,14 @@ export const AdvancedSettingsTab: React.FC<AdvancedSettingsTabProps> = ({
             <div className="flex items-center justify-end gap-2 pt-2">
               <button
                 onClick={() => setShowExportModal(false)}
-                className="px-3.5 py-2 rounded-xl text-xs font-semibold text-appText-muted hover:bg-surface-2"
+                className="px-4 py-2 min-h-[40px] rounded-xl text-xs font-semibold text-appText-muted hover:bg-surface-2 active:scale-95 transition-all flex items-center justify-center"
               >
                 Batal
               </button>
               <button
                 onClick={handleExportEncrypted}
                 disabled={isExporting || exportPassphrase.length < 4}
-                className="px-4 py-2 rounded-xl bg-accent text-bg text-xs font-bold shadow-xs active:scale-95 disabled:opacity-50"
+                className="px-4 py-2 min-h-[40px] rounded-xl bg-accent text-bg text-xs font-bold shadow-xs active:scale-95 disabled:opacity-50 transition-all flex items-center justify-center"
               >
                 {isExporting ? 'Mengenkripsi...' : 'Unduh Berkas'}
               </button>
@@ -425,14 +425,14 @@ export const AdvancedSettingsTab: React.FC<AdvancedSettingsTabProps> = ({
             <div className="flex items-center justify-end gap-2 pt-2">
               <button
                 onClick={() => setDecryptModalOpen(false)}
-                className="px-3.5 py-2 rounded-xl text-xs font-semibold text-appText-muted hover:bg-surface-2"
+                className="px-4 py-2 min-h-[40px] rounded-xl text-xs font-semibold text-appText-muted hover:bg-surface-2 active:scale-95 transition-all flex items-center justify-center"
               >
                 Batal
               </button>
               <button
                 onClick={handleDecryptAndRestore}
                 disabled={isDecrypting || !decryptPassphrase}
-                className="px-4 py-2 rounded-xl bg-accent text-bg text-xs font-bold shadow-xs active:scale-95 disabled:opacity-50"
+                className="px-4 py-2 min-h-[40px] rounded-xl bg-accent text-bg text-xs font-bold shadow-xs active:scale-95 disabled:opacity-50 transition-all flex items-center justify-center"
               >
                 {isDecrypting ? 'Mendekripsi...' : 'Dekripsi & Pulihkan'}
               </button>
@@ -459,14 +459,14 @@ export const AdvancedSettingsTab: React.FC<AdvancedSettingsTabProps> = ({
             <div className="flex items-center justify-end gap-2 pt-2">
               <button
                 onClick={() => setShowClearCacheConfirm(false)}
-                className="px-3.5 py-2 rounded-xl text-xs font-semibold text-appText-muted hover:bg-surface-2"
+                className="px-4 py-2 min-h-[40px] rounded-xl text-xs font-semibold text-appText-muted hover:bg-surface-2 active:scale-95 transition-all flex items-center justify-center"
               >
                 Batal
               </button>
               <button
                 onClick={handleExecuteClearCache}
                 disabled={isClearingCache}
-                className="px-4 py-2 rounded-xl bg-accent text-bg text-xs font-bold shadow-xs active:scale-95 disabled:opacity-50"
+                className="px-4 py-2 min-h-[40px] rounded-xl bg-accent text-bg text-xs font-bold shadow-xs active:scale-95 disabled:opacity-50 transition-all flex items-center justify-center"
               >
                 {isClearingCache ? 'Membersihkan...' : 'Ya, Bersihkan'}
               </button>

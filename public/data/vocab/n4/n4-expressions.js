@@ -425,9 +425,9 @@ window.vocabN4_Expressions = [
 
 {
   "id": "vg-n4-00856",
-  "word": "～(に) よると",
-  "reading": "～(に) よると",
-  "romaji": "~(ni) yoruto",
+  "word": "〜によると",
+  "reading": "〜によると",
+  "romaji": "~ni yoruto",
   "meaning_id": "menurut ~, berdasarkan ~",
   "meaning_en": "according to ~",
   "jlpt": "n4",
@@ -671,9 +671,9 @@ window.vocabN4_Expressions = [
 
 {
   "id": "vg-n4-00917",
-  "word": "～(に) ついて",
-  "reading": "～(に) ついて",
-  "romaji": "~(ni) tsuite",
+  "word": "〜について",
+  "reading": "〜について",
+  "romaji": "~ni tsuite",
   "meaning_id": "tentang ~, mengenai ~",
   "meaning_en": "about ~, regarding ~, concerning ~",
   "jlpt": "n4",

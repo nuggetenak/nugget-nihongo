@@ -8,7 +8,9 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Volume2, Play, Users, CheckCircle2, XCircle, RotateCcw, Activity, Headphones, Timer } from 'lucide-react';
 import { HVPTPairItem, PitchAccentType, HVPTQuizResult } from '../../types/hvpt.ts';
 import { HVPT_SPEAKERS, playHVPTSpeaker } from '../../lib/audio/hvptManager.ts';
+import { stopJapaneseSpeech } from '../../lib/audio/tts.ts';
 import { playSuccessSfx, playErrorSfx } from '../../lib/audio/sfx.ts';
+import { splitIntoMoras } from '../../lib/audio/moraTokenizer.ts';
 
 export type SpeakerKey = 'speaker_m1' | 'speaker_m2' | 'speaker_f1' | 'speaker_f2';
 
@@ -35,10 +37,10 @@ export const HVPTPlayer: React.FC<HVPTPlayerProps> = ({
   const [playbackStartTime, setPlaybackStartTime] = useState<number | null>(null);
   const [reactionTimeMs, setReactionTimeMs] = useState<number>(0);
 
-  const effectiveTarget: 'A' | 'B' = targetWordProp || pair.target_word || 'A';
-  const targetWordData = effectiveTarget === 'A' ? pair.word_a : pair.word_b;
+  const effectiveTarget: 'A' | 'B' = targetWordProp || pair?.target_word || 'A';
+  const targetWordData = (effectiveTarget === 'A' ? pair?.word_a : pair?.word_b) || { kanji: '', kana: '', meaning_id: '', audio_tokens: [] };
 
-  // Reset internal state when pair changes
+  // Reset internal state and cancel in-flight speech when pair changes
   useEffect(() => {
     setUserSelection(null);
     setIsRevealed(false);
@@ -46,7 +48,11 @@ export const HVPTPlayer: React.FC<HVPTPlayerProps> = ({
     setStimulusPlayed(false);
     setPlaybackStartTime(null);
     setReactionTimeMs(0);
-  }, [pair.pair_id]);
+
+    return () => {
+      stopJapaneseSpeech();
+    };
+  }, [pair?.pair_id]);
 
   const playStimulusAudio = async () => {
     setActivePlayback('stimulus');
@@ -59,6 +65,7 @@ export const HVPTPlayer: React.FC<HVPTPlayerProps> = ({
       try {
         const audio = new Audio(token.audio_url);
         audio.onended = () => setActivePlayback(null);
+        audio.onerror = () => setActivePlayback(null);
         await audio.play();
         return;
       } catch {
@@ -69,19 +76,20 @@ export const HVPTPlayer: React.FC<HVPTPlayerProps> = ({
     try {
       await playHVPTSpeaker(targetWordData.kana || targetWordData.kanji, selectedSpeaker);
     } finally {
-      setTimeout(() => setActivePlayback(null), 850);
+      setActivePlayback(null);
     }
   };
 
   const playWordAudio = async (target: 'A' | 'B') => {
     setActivePlayback(target);
-    const word = target === 'A' ? pair.word_a : pair.word_b;
+    const word = (target === 'A' ? pair?.word_a : pair?.word_b) || { kanji: '', kana: '', meaning_id: '', audio_tokens: [] };
 
     const token = word.audio_tokens?.find((t) => t.speaker_id === selectedSpeaker);
     if (token && token.audio_url && !token.audio_url.startsWith('/audio/stub') && !token.audio_url.startsWith('/audio/hvpt')) {
       try {
         const audio = new Audio(token.audio_url);
         audio.onended = () => setActivePlayback(null);
+        audio.onerror = () => setActivePlayback(null);
         await audio.play();
         return;
       } catch {
@@ -92,7 +100,7 @@ export const HVPTPlayer: React.FC<HVPTPlayerProps> = ({
     try {
       await playHVPTSpeaker(word.kana || word.kanji, selectedSpeaker);
     } finally {
-      setTimeout(() => setActivePlayback(null), 850);
+      setActivePlayback(null);
     }
   };
 
@@ -138,23 +146,27 @@ export const HVPTPlayer: React.FC<HVPTPlayerProps> = ({
     setReactionTimeMs(0);
   };
 
-  const renderPitchContour = (pitchPattern: ('H' | 'L')[], accentType: PitchAccentType) => {
+  const renderPitchContour = (pitchPattern: ('H' | 'L')[], accentType: PitchAccentType, kana?: string) => {
+    const moras = kana ? splitIntoMoras(kana) : [];
     return (
       <div className="flex items-center gap-1.5 py-1 flex-wrap">
-        {pitchPattern.map((p, idx) => (
-          <div key={idx} className="flex flex-col items-center">
-            <span
-              className={`w-6 h-6 rounded-md flex items-center justify-center text-xs font-mono font-bold transition-all shadow-xs ${
-                p === 'H'
-                  ? 'bg-red-500/20 text-red-400 border border-red-500/35 transform -translate-y-1'
-                  : 'bg-blue-500/20 text-blue-400 border border-blue-500/35'
-              }`}
-            >
-              {p}
-            </span>
-            <span className="text-[10px] text-appText-muted mt-0.5">M{idx + 1}</span>
-          </div>
-        ))}
+        {pitchPattern.map((p, idx) => {
+          const moraLabel = moras[idx] || `M${idx + 1}`;
+          return (
+            <div key={idx} className="flex flex-col items-center">
+              <span
+                className={`w-6 h-6 rounded-md flex items-center justify-center text-xs font-mono font-bold transition-all shadow-xs ${
+                  p === 'H'
+                    ? 'bg-red-500/20 text-red-400 border border-red-500/35 transform -translate-y-1'
+                    : 'bg-blue-500/20 text-blue-400 border border-blue-500/35'
+                }`}
+              >
+                {p}
+              </span>
+              <span className="text-xs font-jp font-bold text-appText-muted mt-0.5">{moraLabel}</span>
+            </div>
+          );
+        })}
         <span className="text-xs font-semibold text-accent/80 uppercase ml-1 px-1.5 py-0.5 rounded bg-surface-3 border border-accent/10">
           {accentType}
         </span>
@@ -184,7 +196,7 @@ export const HVPTPlayer: React.FC<HVPTPlayerProps> = ({
 
         <div className="flex items-center gap-2">
           {pair.closure_ratio && (
-            <span className="text-[10px] font-mono font-bold px-2 py-0.5 rounded-md bg-amber-500/10 text-amber-500 border border-amber-500/20">
+            <span className="text-xs font-mono font-bold px-2 py-0.5 rounded-md bg-amber-500/10 text-amber-500 border border-amber-500/20">
               Oklusi: {pair.closure_ratio}ms
             </span>
           )}
@@ -219,7 +231,7 @@ export const HVPTPlayer: React.FC<HVPTPlayerProps> = ({
                 <span className="text-lg leading-none">{s.icon}</span>
                 <div className="min-w-0">
                   <div className="text-xs truncate font-bold">{s.label}</div>
-                  <div className="text-[9.5px] opacity-75 truncate">{s.age_label}</div>
+                  <div className="text-xs opacity-75 truncate">{s.age_label}</div>
                 </div>
               </button>
             );
@@ -300,7 +312,7 @@ export const HVPTPlayer: React.FC<HVPTPlayerProps> = ({
           {isRevealed && (
             <div className="p-2.5 rounded-xl bg-surface-3/60 border border-accent/15 space-y-1 animate-in fade-in duration-200">
               <span className="text-xs font-bold text-appText-muted block">Kontur Nada / Pola Mora:</span>
-              {renderPitchContour(pair.word_a.pitch_pattern, pair.word_a.accent_type)}
+              {renderPitchContour(pair.word_a.pitch_pattern, pair.word_a.accent_type, pair.word_a.kana)}
             </div>
           )}
 
@@ -359,7 +371,7 @@ export const HVPTPlayer: React.FC<HVPTPlayerProps> = ({
           {isRevealed && (
             <div className="p-2.5 rounded-xl bg-surface-3/60 border border-accent/15 space-y-1 animate-in fade-in duration-200">
               <span className="text-xs font-bold text-appText-muted block">Kontur Nada / Pola Mora:</span>
-              {renderPitchContour(pair.word_b.pitch_pattern, pair.word_b.accent_type)}
+              {renderPitchContour(pair.word_b.pitch_pattern, pair.word_b.accent_type, pair.word_b.kana)}
             </div>
           )}
 
@@ -410,7 +422,7 @@ export const HVPTPlayer: React.FC<HVPTPlayerProps> = ({
               </p>
             )}
             {reactionTimeMs > 0 && (
-              <div className="flex items-center gap-1.5 text-[11px] text-appText-muted">
+              <div className="flex items-center gap-1.5 text-xs text-appText-muted">
                 <Timer className="w-3 h-3 text-accent" />
                 <span>Waktu Respons: {reactionTimeMs}ms</span>
               </div>

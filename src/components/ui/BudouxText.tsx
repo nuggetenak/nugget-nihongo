@@ -19,7 +19,7 @@ export const BudouxText: React.FC<BudouxTextProps> = ({
   className = '',
   as: Component = 'span',
 }) => {
-  if (!text) return null;
+  if (!text || typeof text !== 'string') return null;
   const chunks = segmentBunsetsu(text);
 
   if (chunks.length <= 1) {

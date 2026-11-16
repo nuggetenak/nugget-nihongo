@@ -15,6 +15,9 @@ import {
   Sparkles,
   HeartHandshake,
   Lock,
+  Copy,
+  Check,
+  Sprout,
 } from 'lucide-react';
 import { CurriculumLesson } from '../../../types/curriculum';
 import { useAppStore } from '../../../store/useAppStore';
@@ -35,15 +38,14 @@ export const CanDoCompletionStage: React.FC<CanDoCompletionStageProps> = ({
   onNextLesson,
   onBackToCatalog,
 }) => {
-  const { completedLessonIds, completeLesson } = useAppStore();
+  const { completedLessonIds, completeLesson, setActiveTab, setDojoTab } = useAppStore();
   const awardedSet = new Set(completedLessonIds);
   const isLessonPreviouslyCompleted = Boolean(lesson?.id && awardedSet.has(lesson.id));
   const isPassed = isLessonPreviouslyCompleted || (drillScore !== null && drillScore >= 80);
   const [showPocketSummary, setShowPocketSummary] = useState(true);
+  const [isCopied, setIsCopied] = useState(false);
 
   // Ticket T-48 & Ticket T-196: Eradicate Infinite XP Exploit & Implement Deduplicated Lesson Completion
-  // Uses persistent completed lessons registry ('nn_completed_lesson_xp_ids') to ensure incrementXp(50) only fires once
-    // Ticket T-48 & Ticket T-196: Eradicate Infinite XP Exploit & Implement Deduplicated Lesson Completion
   // Uses persistent completed lessons registry ('nn_completed_lesson_xp_ids') to ensure incrementXp(50) only fires once
   useEffect(() => {
     if (isPassed && lesson?.id && !awardedSet.has(lesson.id)) {
@@ -117,6 +119,27 @@ export const CanDoCompletionStage: React.FC<CanDoCompletionStageProps> = ({
     }
   };
 
+  const handleCopyPocketSummary = async () => {
+    if (!pocketSummary) return;
+    const lines = [
+      `📚 RANGKUMAN SAKU: Pelajaran #${lesson.lesson_number} - ${lesson.title_jp} (${lesson.title_id})`,
+      `🎯 Target: ${lesson.can_do_statement}`,
+      `📐 Rumus: ${pocketSummary.keyFormula}`,
+      pocketSummary.coreWords?.length ? `🔤 Kosakata: ${pocketSummary.coreWords.join(', ')}` : '',
+      pocketSummary.coreWarning ? `⚠️ Waspada: ${pocketSummary.coreWarning}` : '',
+      pocketSummary.quickDialogue ? `💬 Percakapan: "${pocketSummary.quickDialogue}"` : '',
+      `— Nugget Nihongo`
+    ].filter(Boolean).join('\n');
+
+    try {
+      await navigator.clipboard.writeText(lines);
+      setIsCopied(true);
+      setTimeout(() => setIsCopied(false), 2000);
+    } catch {
+      // Fallback if clipboard API is restricted
+    }
+  };
+
   return (
     <div className="space-y-6 animate-scale-in min-w-0">
       {/* ── 1. Banner Skor & Status Kelulusan ────────────────────── */}
@@ -150,9 +173,17 @@ export const CanDoCompletionStage: React.FC<CanDoCompletionStageProps> = ({
           </p>
         </div>
 
-        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-2xl bg-surface border border-accent/20">
-          <span className="text-xs text-appText-muted font-bold">Akurasi Cek Pemahaman:</span>
-          <span className="text-2xl font-extrabold text-accent font-mono">{drillScore !== null ? `${drillScore}%` : '—'}</span>
+        <div className="flex flex-wrap items-center justify-center gap-2 pt-1">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-2xl bg-surface border border-accent/20">
+            <span className="text-xs text-appText-muted font-bold">Akurasi Cek Pemahaman:</span>
+            <span className="text-2xl font-extrabold text-accent font-mono">{drillScore !== null ? `${drillScore}%` : '—'}</span>
+          </div>
+          {isPassed && (
+            <div className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-2xl bg-emerald-500/15 border border-emerald-500/30 text-emerald-800 dark:text-emerald-300 text-xs font-semibold">
+              <Sparkles className="w-3.5 h-3.5 text-emerald-600 dark:text-emerald-400 shrink-0" />
+              <span>FSRS Memory Seeding Aktif</span>
+            </div>
+          )}
         </div>
       </div>
 
@@ -267,13 +298,33 @@ export const CanDoCompletionStage: React.FC<CanDoCompletionStageProps> = ({
               </div>
             </div>
 
-            <button
-              type="button"
-              onClick={() => setShowPocketSummary(!showPocketSummary)}
-              className="text-xs text-accent hover:underline font-bold px-3 py-1.5 min-h-[40px] inline-flex items-center active:scale-95"
-            >
-              {showPocketSummary ? 'Sembunyikan' : 'Buka'}
-            </button>
+            <div className="flex items-center gap-1.5 shrink-0">
+              <button
+                type="button"
+                onClick={handleCopyPocketSummary}
+                className="text-xs bg-surface-2 hover:bg-surface-3 border border-accent/20 text-appText-bright px-3 py-1.5 min-h-[40px] rounded-xl inline-flex items-center gap-1.5 active:scale-95 transition-all"
+                title="Salin rangkuman ke clipboard"
+              >
+                {isCopied ? (
+                  <>
+                    <Check className="w-3.5 h-3.5 text-emerald-600 dark:text-emerald-400" />
+                    <span className="text-emerald-700 dark:text-emerald-300 font-bold">Tersalin!</span>
+                  </>
+                ) : (
+                  <>
+                    <Copy className="w-3.5 h-3.5 text-appText-muted" />
+                    <span className="hidden xs:inline">Salin</span>
+                  </>
+                )}
+              </button>
+              <button
+                type="button"
+                onClick={() => setShowPocketSummary(!showPocketSummary)}
+                className="text-xs text-accent hover:underline font-bold px-3 py-1.5 min-h-[40px] inline-flex items-center active:scale-95"
+              >
+                {showPocketSummary ? 'Sembunyikan' : 'Buka'}
+              </button>
+            </div>
           </div>
 
           {showPocketSummary && (
@@ -332,6 +383,29 @@ export const CanDoCompletionStage: React.FC<CanDoCompletionStageProps> = ({
           )}
         </div>
       )}
+
+      {/* ── Jembatan Interkoneksi Lapisan 2 ➔ Lapisan 3 (Dojo & Kebun Memori) ── */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 pt-2">
+        <button
+          type="button"
+          onClick={() => {
+            setDojoTab('latihan');
+            setActiveTab('materi');
+          }}
+          className="min-h-[44px] px-4 py-2.5 rounded-xl bg-amber-500/10 hover:bg-amber-500/20 border border-amber-500/30 text-accent-hot dark:text-amber-300 font-bold text-xs flex items-center justify-center gap-2 transition-all active:scale-95 card-interactive-lift"
+        >
+          <span>🥋</span>
+          <span>Latih Refleks di Dojo →</span>
+        </button>
+        <button
+          type="button"
+          onClick={() => setActiveTab('kebun')}
+          className="min-h-[44px] px-4 py-2.5 rounded-xl bg-emerald-500/10 hover:bg-emerald-500/20 border border-emerald-500/30 text-emerald-700 dark:text-emerald-300 font-bold text-xs flex items-center justify-center gap-2 transition-all active:scale-95 card-interactive-lift"
+        >
+          <Sprout className="w-4 h-4 text-emerald-500" />
+          <span>Ulas di Kebun Memori →</span>
+        </button>
+      </div>
 
       {/* ── 5. Tombol Aksi Berkelanjutan (Seamless Progression) ───── */}
       <div className="flex flex-col sm:flex-row items-center justify-between gap-3 pt-2">

@@ -107,7 +107,7 @@ export const QuizResultView: React.FC<QuizResultViewProps> = ({
           <div className="pt-2">
             <button
               onClick={onRetryMistakes}
-              className="w-full py-3 rounded-2xl bg-red-950/50 hover:bg-red-900/60 border border-red-500/50 text-red-200 font-bold text-xs flex items-center justify-center gap-2 transition-all shadow-sm active:scale-95"
+              className="w-full min-h-[44px] py-3 rounded-2xl bg-red-950/50 hover:bg-red-900/60 border border-red-500/50 text-red-200 font-bold text-xs flex items-center justify-center gap-2 transition-all shadow-sm active:scale-95"
             >
               <RotateCcw className="w-4 h-4" />
               <span>Putaran Pemulihan (Kuasai {answers.filter(a => !a.isCorrect).length} Soal Evaluasi) 🔁</span>
@@ -120,7 +120,7 @@ export const QuizResultView: React.FC<QuizResultViewProps> = ({
           <div className="pt-1">
             <button
               onClick={onGoToGarden}
-              className="w-full py-3 rounded-2xl bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white font-bold text-xs flex items-center justify-center gap-2 transition-all shadow-md active:scale-95"
+              className="w-full min-h-[44px] py-3 rounded-2xl bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white font-bold text-xs flex items-center justify-center gap-2 transition-all shadow-md active:scale-95"
             >
               <Droplets className="w-4 h-4 fill-white" />
               <span>Kunjungi Kebun Kata (Siram Tanaman dengan +{waterEarned} 💧) 🌸</span>
@@ -133,21 +133,21 @@ export const QuizResultView: React.FC<QuizResultViewProps> = ({
           {onGoToHub && (
             <button
               onClick={onGoToHub}
-              className="px-5 py-2.5 rounded-xl bg-accent text-bg font-bold text-xs flex items-center gap-2 hover:bg-accent-hot transition-all shadow-glow"
+              className="min-h-[40px] px-5 py-2.5 rounded-xl bg-accent text-bg font-bold text-xs flex items-center gap-2 hover:bg-accent-hot transition-all shadow-glow active:scale-95"
             >
               <span>🏟️ Dasbor Kuis</span>
             </button>
           )}
           <button
             onClick={onRestart}
-            className="px-5 py-2.5 rounded-xl bg-surface-2 text-appText-bright border border-accent/25 font-bold text-xs flex items-center gap-2 hover:bg-surface-3 transition-all"
+            className="min-h-[40px] px-5 py-2.5 rounded-xl bg-surface-2 text-appText-bright border border-accent/25 font-bold text-xs flex items-center gap-2 hover:bg-surface-3 transition-all active:scale-95"
           >
             <RotateCcw className="w-4 h-4" />
             <span>Ulangi Sesi</span>
           </button>
           <button
             onClick={onGoHome}
-            className="px-5 py-2.5 rounded-xl bg-surface-2 text-appText-muted hover:text-appText-bright border border-accent/15 font-bold text-xs flex items-center gap-2 hover:bg-surface-3 transition-all"
+            className="min-h-[40px] px-5 py-2.5 rounded-xl bg-surface-2 text-appText-muted hover:text-appText-bright border border-accent/15 font-bold text-xs flex items-center gap-2 hover:bg-surface-3 transition-all active:scale-95"
           >
             <Home className="w-4 h-4" />
             <span>Beranda</span>
@@ -175,18 +175,18 @@ export const QuizResultView: React.FC<QuizResultViewProps> = ({
                   </span>
                   <button
                     onClick={() => speakJapanese(ans.question.questionText)}
-                    className="p-1 rounded-md bg-surface border border-accent/15 hover:border-accent text-appText-muted hover:text-accent transition-colors"
+                    className="min-h-[36px] min-w-[36px] p-2 rounded-lg bg-surface border border-accent/15 hover:border-accent text-appText-muted hover:text-accent transition-colors flex items-center justify-center active:scale-95"
                     title="Dengarkan pelafalan"
                   >
-                    <Volume2 className="w-3 h-3" />
+                    <Volume2 className="w-3.5 h-3.5" />
                   </button>
                   {onReportQuestion && (
                     <button
                       onClick={() => onReportQuestion(ans.question)}
-                      className="p-1 rounded-md bg-surface border border-accent/15 hover:border-amber-400/50 text-appText-muted hover:text-amber-400 transition-colors"
+                      className="min-h-[36px] min-w-[36px] p-2 rounded-lg bg-surface border border-accent/15 hover:border-amber-400/50 text-appText-muted hover:text-amber-400 transition-colors flex items-center justify-center active:scale-95"
                       title="Laporkan kejanggalan/kesalahan soal ini 🚩"
                     >
-                      <Flag className="w-3 h-3" />
+                      <Flag className="w-3.5 h-3.5" />
                     </button>
                   )}
                   {ans.question.subText && (

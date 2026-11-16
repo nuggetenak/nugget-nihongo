@@ -121,6 +121,8 @@ export function generateQuizQuestions(
     return generatePainOnomatopoeiaQuestions(count);
   }
 
+  const questions: QuizQuestionItem[] = [];
+
   if (mode === 'listening') {
     // Generate authentic audio listening drill items (Menyimak Kilat)
     const candidates: Array<{
@@ -171,7 +173,28 @@ export function generateQuizQuestions(
 
     for (const item of selected) {
       const otherCandidates = candidates.filter((c) => c.id !== item.id && c.jp !== item.jp);
-      const distractors = shuffle(otherCandidates).slice(0, 3).map((c) => c.id);
+      const distractors: string[] = [];
+      const shuffledOthers = shuffle(otherCandidates);
+      for (const other of shuffledOthers) {
+        if (other.id && other.id !== item.id && !distractors.includes(other.id)) {
+          distractors.push(other.id);
+        }
+        if (distractors.length >= 3) break;
+      }
+      const fallbacks = [
+        'bertemu di stasiun',
+        'makan bersama di kantin',
+        'pergi ke kantor pos',
+        'membaca pengumuman penting',
+        'menulis laporan kerja',
+        'berbicara dengan atasan',
+      ];
+      for (const fb of fallbacks) {
+        if (distractors.length >= 3) break;
+        if (fb !== item.id && !distractors.includes(fb)) {
+          distractors.push(fb);
+        }
+      }
       const optionsList = shuffle([item.id, ...distractors]);
 
       questions.push({
@@ -191,7 +214,6 @@ export function generateQuizQuestions(
     if (questions.length > 0) return questions;
   }
 
-  const questions: QuizQuestionItem[] = [];
 
   if (mode === 'flashcard') {
     const shuffledVocab = shuffle(vocabPool);
@@ -621,15 +643,17 @@ function splitIntoTokens(sentence: string): string[] {
 /**
  * Count how many cards are due for review today according to FSRS
  */
-export function getFSRSDueCount(cardsMap: Record<string, { card: FSRSCard; source?: string }>): number {
+export function getFSRSDueCount(cardsMap: Record<string, any>): number {
   const now = Date.now();
   let count = 0;
+  if (!cardsMap || typeof cardsMap !== 'object') return 0;
   for (const record of Object.values(cardsMap || {})) {
-    if (record?.card) {
-      if (!record.card.due) {
+    const card = (record && 'card' in record) ? record.card : record;
+    if (card) {
+      if (!card.due) {
         count++;
       } else {
-        const dueTime = new Date(record.card.due).getTime();
+        const dueTime = new Date(card.due).getTime();
         if (Number.isNaN(dueTime) || dueTime <= now) {
           count++;
         }
@@ -700,8 +724,10 @@ export function generateFSRSDueQuestions(
         id,
         word: record.itemData?.word || id,
         reading: record.itemData?.reading || id,
+        romaji: record.itemData?.romaji || '',
         meaning: record.itemData?.meaning || 'Kosakata penting',
         level,
+        pos: record.itemData?.pos || 'noun',
         examples: record.itemData?.exampleSentence ? [{ jp: record.itemData.exampleSentence.jp, id: record.itemData.exampleSentence.idText }] : [],
       };
       dueItems.push({ type: 'vocab', item: syntheticV, record });
@@ -861,7 +887,7 @@ export function generateDiagnosticQuestions(
 
 /**
  * Generate Panic Simulator drills (Cover-Recall-Check under 5s/8s timer).
- * Designed for SSW Gemba K3 protocols and Kaigo Emergency SBAR.
+ * Designed for SSW workplace K3 protocols and Kaigo Emergency SBAR.
  * No multiple choice options are presented: forces real-world spoken production.
  */
 export function generatePanicRecallQuestions(
