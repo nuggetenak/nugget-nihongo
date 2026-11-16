@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <defs>
+    <radialGradient id="nuggetGlow" cx="50%" cy="40%" r="55%">
+      <stop offset="0%" stop-color="#F59E0B" />
+      <stop offset="60%" stop-color="#D97706" />
+      <stop offset="100%" stop-color="#B45309" />
+    </radialGradient>
+    <filter id="subtleShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#000000" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+  <!-- Background -->
+  <rect width="128" height="128" rx="28" fill="#0D0B08" />
+  <rect x="2" y="2" width="124" height="124" rx="26" fill="none" stroke="#F59E0B" stroke-opacity="0.3" stroke-width="2" />
+  
+  <!-- Golden Nugget Crest -->
+  <path d="M64 22 C36 22, 22 40, 22 68 C22 96, 42 108, 64 108 C86 108, 106 96, 106 68 C106 40, 92 22, 64 22 Z" fill="url(#nuggetGlow)" filter="url(#subtleShadow)" />
+  
+  <!-- Japanese Character 日 -->
+  <text x="64" y="75" font-family="'Noto Sans JP', 'Hiragino Sans', sans-serif" font-size="44" font-weight="900" fill="#0D0B08" text-anchor="middle" dominant-baseline="middle">日</text>
+  
+  <!-- Sparkle Accent -->
+  <circle cx="88" cy="38" r="4" fill="#FEF3C7" />
+</svg>

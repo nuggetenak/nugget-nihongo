@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" fill="none" role="img" aria-label="Sensei Merayakan Capaian Belajar">
+  <defs>
+    <linearGradient id="bgGlowC" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fdf4ff" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#fed7aa" stop-opacity="0.6"/>
+    </linearGradient>
+    <linearGradient id="skinC" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffedd5"/>
+      <stop offset="100%" stop-color="#fed7aa"/>
+    </linearGradient>
+    <linearGradient id="coatC" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#d97706"/>
+      <stop offset="100%" stop-color="#b45309"/>
+    </linearGradient>
+    <filter id="softShadowC" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#000000" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <!-- Ambient Backdrop Circle -->
+  <circle cx="120" cy="120" r="108" fill="url(#bgGlowC)"/>
+
+  <!-- Hanamaru (Double Flower Spiral Badge of Excellence) in Background -->
+  <g opacity="0.22" stroke="#dc2626" stroke-width="4" fill="none">
+    <path d="M120 40 C140 30 160 50 170 70 C190 70 200 95 195 115 C205 135 195 160 175 170 C175 190 150 200 130 195 C110 205 85 195 75 175 C55 175 45 150 50 130 C40 110 50 85 70 75 C70 55 95 45 115 50 Z"/>
+    <circle cx="120" cy="120" r="50"/>
+  </g>
+
+  <!-- Celebratory Confetti & Stars -->
+  <g>
+    <rect x="36" y="52" width="8" height="8" rx="2" fill="#ec4899" transform="rotate(25 36 52)"/>
+    <rect x="194" y="44" width="7" height="9" rx="2" fill="#3b82f6" transform="rotate(-30 194 44)"/>
+    <rect x="28" y="140" width="8" height="6" rx="2" fill="#10b981" transform="rotate(45 28 140)"/>
+    <rect x="204" y="152" width="9" height="7" rx="2" fill="#f59e0b" transform="rotate(15 204 152)"/>
+    <path d="M52 92 L55 98 L61 100 L55 102 L52 108 L49 102 L43 100 L49 98 Z" fill="#f59e0b"/>
+    <path d="M186 98 L188 103 L194 105 L188 107 L186 112 L184 107 L178 105 L184 103 Z" fill="#ec4899"/>
+  </g>
+
+  <!-- Sensei Character with Both Arms Raised (Banzai / Yatta!) -->
+  <g filter="url(#softShadowC)">
+    <!-- Raised Arms (Left & Right) -->
+    <!-- Left Arm -->
+    <path d="M96 150 C80 130 64 96 54 78 C64 72 74 82 84 98 L104 140 Z" fill="url(#coatC)"/>
+    <circle cx="50" cy="74" r="10" fill="url(#skinC)"/>
+
+    <!-- Right Arm -->
+    <path d="M144 150 C160 130 176 96 186 78 C176 72 166 82 156 98 L136 140 Z" fill="url(#coatC)"/>
+    <circle cx="190" cy="74" r="10" fill="url(#skinC)"/>
+
+    <!-- Body / Amber Happi / Blazer -->
+    <path d="M80 180 C80 152 98 142 120 142 C142 142 160 152 160 180 L166 234 L74 234 Z" fill="url(#coatC)"/>
+    <!-- Inner White Shirt & Red Ribbon -->
+    <path d="M108 142 L120 172 L132 142 Z" fill="#ffffff"/>
+    <path d="M117 150 L123 150 L125 178 L120 182 L115 178 Z" fill="#dc2626"/>
+
+    <!-- Neck -->
+    <rect x="112" y="126" width="16" height="20" rx="4" fill="url(#skinC)"/>
+
+    <!-- Head -->
+    <ellipse cx="120" cy="94" rx="33" ry="35" fill="url(#skinC)"/>
+
+    <!-- Hair -->
+    <path d="M88 88 C88 62 102 48 120 48 C138 48 152 62 152 88 C152 70 140 58 120 58 C100 58 88 70 88 88 Z" fill="#1c1917"/>
+    <path d="M96 68 Q110 58 124 68 Q138 62 146 76 Q136 70 124 76 Q112 66 96 68 Z" fill="#1c1917"/>
+
+    <!-- Eyebrows (Excited, high arc) -->
+    <path d="M102 78 Q108 72 115 77" stroke="#292524" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M125 77 Q132 72 138 78" stroke="#292524" stroke-width="2.5" stroke-linecap="round"/>
+
+    <!-- Eyes (Ecstatic ^_^ eyes) -->
+    <path d="M101 89 Q108 81 115 89" stroke="#1c1917" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+    <path d="M125 89 Q132 81 139 89" stroke="#1c1917" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+
+    <!-- Glasses Frame -->
+    <rect x="96" y="82" width="20" height="15" rx="4" stroke="#d97706" stroke-width="2.5" fill="none" opacity="0.9"/>
+    <rect x="124" y="82" width="20" height="15" rx="4" stroke="#d97706" stroke-width="2.5" fill="none" opacity="0.9"/>
+    <line x1="116" y1="89" x2="124" y2="89" stroke="#d97706" stroke-width="2.5"/>
+
+    <!-- Cheeks (Big rosy pink) -->
+    <ellipse cx="98" cy="98" rx="7" ry="5" fill="#f43f5e" opacity="0.5"/>
+    <ellipse cx="142" cy="98" rx="7" ry="5" fill="#f43f5e" opacity="0.5"/>
+
+    <!-- Nose -->
+    <path d="M120 94 Q122 98 119 100" stroke="#ea580c" stroke-width="2" stroke-linecap="round" fill="none"/>
+
+    <!-- Open Happy Mouth (やった！) -->
+    <path d="M110 106 Q120 122 130 106 Z" fill="#dc2626"/>
+    <path d="M114 116 Q120 122 126 116" fill="#f43f5e"/>
+  </g>
+</svg>

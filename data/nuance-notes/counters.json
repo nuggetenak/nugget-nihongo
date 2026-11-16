@@ -1,0 +1,87 @@
+[
+  {
+    "id": "counter-rules-euphonic",
+    "topic": "Hukum Perubahan Bunyi Angka (Onbin & Rendaku)",
+    "category": "counters",
+    "role": "Aturan Fonotaktik Penghitungan Angka + Suffix",
+    "summary_id": "Angka 1 (ichi), 3 (san), 6 (roku), 8 (hachi), 10 (juu), dan 何 (nan) mengalami asimilasi bunyi konsonan ganda (sokuon) atau pelunakan bunyi (rendaku).",
+    "explanation_id": "Menurut analisis linguistik Pomax, perubahan bunyi saat angka bertemu suffix counter bukan terjadi sembarangan, melainkan mengikuti pola fonetik konsisten: 1) Angka berakhiran bunyi ku/tsu (1, 6, 8, 10) saat bertemu bunyi k/s/t/h/p berubah menjadi konsonan ganda sokuon っ (ippon, roppon, happon, jippon). 2) Angka 3 dan 何 memicu pergeseran bunyi tak bersuara menjadi bersuara (rendaku), seperti h -> b (sambon, nambon) atau k -> g (sangai).",
+    "rules": [
+      "1 (ichi) + h/p -> ip-... (1本 = いっぽん, 1杯 = いっぱい)",
+      "3 (san) + h/p -> sam-b... (3本 = さんぼん, 3杯 = さんばい)",
+      "6 (roku) + h/p -> rop-... (6本 = ろっぽん, 6匹 = ろっぴき)",
+      "8 (hachi) + h/p -> hap-... (8本 = はっぽん, 8匹 = はっぴき)",
+      "10 (juu) + h/p -> jip-... / jup-... (10本 = じっぽん / じゅっぽん)",
+      "何 (nan) + h/p -> nam-b... (何本 = なんぼん, 何杯 = なんばい)"
+    ]
+  },
+  {
+    "id": "counter-essential-list",
+    "topic": "Katalog Kata Bantu Bilangan Esensial (Essential Counters)",
+    "category": "counters",
+    "role": "Daftar Pengklasifikasi Benda Sehari-hari & Ujian JLPT",
+    "summary_id": "Klasifikasi kata bantu bilangan untuk orang, benda panjang silinder, lembaran tipis, buku, mesin/kendaraan, hewan kecil, dan benda umum.",
+    "items": [
+      {
+        "counter": "〜人 (にん)",
+        "reading": "nin (1=hitori, 2=futari)",
+        "target": "Orang / manusia",
+        "examples": "1人 (ひとり), 2人 (ふたり), 3人 (さんにん), 4人 (よにん)"
+      },
+      {
+        "counter": "〜本 (ほん)",
+        "reading": "hon / pon / bon",
+        "target": "Benda silinder panjang (botol, pulpen, payung, pohon, video)",
+        "examples": "1本 (いっぽん), 2本 (にほん), 3本 (さんぼん)"
+      },
+      {
+        "counter": "〜枚 (まい)",
+        "reading": "mai",
+        "target": "Benda tipis dan rata (kertas, tiket, baju kaos, piring, foto)",
+        "examples": "1枚 (いちまい), 2枚 (にまい), 3枚 (さんまい)"
+      },
+      {
+        "counter": "〜冊 (さつ)",
+        "reading": "satsu",
+        "target": "Benda berjilid (buku, majalah, kamus, buku catatan)",
+        "examples": "1冊 (いっさつ), 2冊 (にさつ), 3冊 (さんさつ)"
+      },
+      {
+        "counter": "〜台 (だい)",
+        "reading": "dai",
+        "target": "Kendaraan & mesin/perangkat elektronik (mobil, motor, komputer, TV)",
+        "examples": "1台 (いちだい), 2台 (にだい), 3台 (さんだい)"
+      },
+      {
+        "counter": "〜匹 (ひき)",
+        "reading": "hiki / piki / biki",
+        "target": "Hewan kecil, ikan, serangga (kucing, anjing, nyamuk, ikan)",
+        "examples": "1匹 (いっぴき), 2匹 (にひき), 3匹 (さんびき)"
+      },
+      {
+        "counter": "〜頭 (とう)",
+        "reading": "tou",
+        "target": "Hewan besar (gajah, kuda, sapi, beruang, paus)",
+        "examples": "1頭 (いっとう), 2頭 (にごう/にとう), 3頭 (さんとう)"
+      },
+      {
+        "counter": "〜個 (こ)",
+        "reading": "ko",
+        "target": "Benda kecil kompak / buah bulat (apel, telur, sabun, kotak kecil)",
+        "examples": "1個 (いっこ), 2個 (にご), 3個 (さんこ)"
+      },
+      {
+        "counter": "〜杯 (はい)",
+        "reading": "hai / pai / bai",
+        "target": "Cangkir / gelas berisi cairan atau mangkok nasi/mie",
+        "examples": "1杯 (いっぱい), 2杯 (にはい), 3杯 (さんばい)"
+      },
+      {
+        "counter": "〜階 (かい)",
+        "reading": "kai / gai",
+        "target": "Lantai tingkat gedung",
+        "examples": "1階 (いっかい), 2階 (にかい), 3階 (さんがい)"
+      }
+    ]
+  }
+]
