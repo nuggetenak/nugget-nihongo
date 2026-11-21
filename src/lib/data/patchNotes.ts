@@ -18,6 +18,34 @@ export interface PatchNote {
 
 export const PATCH_NOTES_HISTORY: PatchNote[] = [
   {
+    version: 'v24.2.2',
+    releaseName: 'Pembaruan Cloudflare Live & Tampilan Segar Menyeluruh',
+    date: '21 November 2026',
+    type: 'patch',
+    friendlySummary: 'Halo teman belajar! Pembaruan ini memastikan bahwa setiap perubahan tampilan baru, penataan ruang Dojo 4 Pilar yang rapi, dan perbaikan kenyamanan belajar kini sudah aktif dan langsung bisa kamu nikmati di nugget-nihongo.pages.dev. Tidak ada lagi tampilan lama yang tertinggal atau tersangkut di memori browser. Aplikasi akan otomatis menyegarkan diri ke versi paling mutakhir sehingga proses belajarmu berjalan lancar, cepat, dan menyenangkan. Semangat belajarnya ya!',
+    highlights: [
+      'Penyegaran Tampilan Penuh di Web: Seluruh desain baru, ruang belajar yang bersih, dan navigasi praktis kini tampil prima secara langsung di alamat resmi web tanpa tertahan versi lama.',
+      'Pembersihan Otomatis Memori Perangkat: Penyimpanan offline di HP atau komputermu diperbarui secara cerdas sehingga kamu langsung mendapatkan materi dan tata letak yang paling segar.',
+      'Keandalan Akses Offline & PWA: Aplikasi tetap bisa dibuka kapan saja meski sedang offline atau sinyal tidak stabil, dengan performa yang lebih ringan dan tangguh.',
+    ],
+    details: [
+      {
+        category: 'Sinkronisasi Dual-Layer Cloudflare & Cache Invalidation',
+        items: [
+          'Penyelarasan direktori output bundel modern React 18 SPA pada public/ dan dist/ untuk Cloudflare Pages.',
+          'Pembaruan identitas cache Service Worker ke nihongo-v24.2.2 guna mengeliminasi tumpang tindih berkas statis usang.',
+        ],
+      },
+      {
+        category: 'Integritas Pemuatan Bundel & Pengalihan URL',
+        items: [
+          'Penguatan aturan _redirects SPA fallback 200 untuk memastikan rute dinamis termuat mulus.',
+          'Pengarsipan berkas cadangan prototipe awal ke direktori dokumentasi arsip internal.',
+        ],
+      },
+    ],
+  },
+  {
     version: 'v24.2.1',
     releaseName: 'Stabilitas Layar Belajar & Navigasi Mulus Mobile',
     date: '16 November 2026',

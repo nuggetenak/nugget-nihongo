@@ -3,10 +3,10 @@
 //  Single source of truth across React SPA, Service Worker, and PWA
 // ══════════════════════════════════════════════════════════════════
 
-export const APP_VERSION = 'v24.2.1';
-export const APP_VERSION_NUMBER = '24.2.1';
+export const APP_VERSION = 'v24.2.2';
+export const APP_VERSION_NUMBER = '24.2.2';
 export const APP_RELEASE_NAME = 'Shin-Nihongo: Dojo 4-Pillars & Clean Studio Ergonomics';
-export const APP_BUILD_DATE = '2026-11-16';
+export const APP_BUILD_DATE = '2026-11-21';
 
 export const APP_CHANGELOG_HIGHLIGHTS = [
   'Pilar 1 — 4 Tombol Pilihan Dojo & Materi Hub: Struktur Dojo kini terbagi rapi menjadi 4 pilar utama: 🥋 Latihan & Kuis (Sasana Drill Refleks), 📖 Kamus & Indeks (10.500+ kata & 850+ pola), 🧰 Alat Bantu & Referensi (8 instrumen & 9 buku teks), dan 🎯 Simulator Ujian CBT.',

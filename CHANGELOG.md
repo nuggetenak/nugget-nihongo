@@ -3,6 +3,24 @@
 > Catatan pembaruan ini disinkronkan secara otomatis dari `src/lib/data/patchNotes.ts`
 > Single Source of Truth: Jalankan `npm run changelog` atau `npm run build` untuk memutakhirkan.
 
+## v24.2.2 (21 November 2026) — Pembaruan Cloudflare Live & Tampilan Segar Menyeluruh
+
+### Sorotan Pembaruan (Highlights)
+- Penyegaran Tampilan Penuh di Web: Seluruh desain baru, ruang belajar yang bersih, dan navigasi praktis kini tampil prima secara langsung di alamat resmi web tanpa tertahan versi lama.
+- Pembersihan Otomatis Memori Perangkat: Penyimpanan offline di HP atau komputermu diperbarui secara cerdas sehingga kamu langsung mendapatkan materi dan tata letak yang paling segar.
+- Keandalan Akses Offline & PWA: Aplikasi tetap bisa dibuka kapan saja meski sedang offline atau sinyal tidak stabil, dengan performa yang lebih ringan dan tangguh.
+
+### Rincian Perubahan (Details)
+#### Sinkronisasi Dual-Layer Cloudflare & Cache Invalidation
+- Penyelarasan direktori output bundel modern React 18 SPA pada public/ dan dist/ untuk Cloudflare Pages.
+- Pembaruan identitas cache Service Worker ke nihongo-v24.2.2 guna mengeliminasi tumpang tindih berkas statis usang.
+
+#### Integritas Pemuatan Bundel & Pengalihan URL
+- Penguatan aturan _redirects SPA fallback 200 untuk memastikan rute dinamis termuat mulus.
+- Pengarsipan berkas cadangan prototipe awal ke direktori dokumentasi arsip internal.
+
+---
+
 ## v24.2.1 (16 November 2026) — Stabilitas Layar Belajar & Navigasi Mulus Mobile
 
 ### Sorotan Pembaruan (Highlights)

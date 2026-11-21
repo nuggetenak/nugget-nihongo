@@ -1,6 +1,6 @@
 {
   "name": "nugget-nihongo",
-  "version": "24.2.1",
+  "version": "24.2.2",
   "description": "Hybrid PWA for learning Japanese — JLPT N5 to N1, targeting Indonesian speakers",
   "private": true,
   "license": "MIT",
@@ -23,7 +23,7 @@
     "cloudflare"
   ],
   "scripts": {
-    "build": "node scripts/sync-changelog.js && node scripts/compile_diagnostics.js && node scripts/build-curriculum-all.js && node scripts/merge-vocab.js && node scripts/merge-grammar.js && node tests/run.js && vite build && node scripts/verify-bundle-budget.js",
+    "build": "node scripts/sync-changelog.js && node scripts/compile_diagnostics.js && node scripts/build-curriculum-all.js && node scripts/merge-vocab.js && node scripts/merge-grammar.js && node tests/run.js && vite build && node scripts/verify-bundle-budget.js && node scripts/sync-dist-to-public.js",
     "changelog": "node scripts/sync-changelog.js",
     "build:curriculum": "node scripts/build-curriculum-all.js",
     "test": "node tests/master-regression-orchestrator.js",
