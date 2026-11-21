@@ -112,7 +112,7 @@ export const PatchNotesModal: React.FC<PatchNotesModalProps> = ({ isOpen, onClos
           <div className="flex items-center gap-1.5">
             <button
               onClick={() => setSelectedFilter('all')}
-              className={`px-3.5 py-2 min-h-[40px] rounded-xl text-xs font-bold transition-all active:scale-95 flex items-center justify-center ${
+              className={`px-3.5 py-2 min-h-[40px] min-h-[44px] rounded-xl text-xs font-bold transition-all active:scale-95 flex items-center justify-center ${
                 selectedFilter === 'all'
                   ? 'bg-amber-500 text-stone-950 shadow-sm font-black'
                   : 'text-appText-muted hover:text-appText-bright bg-surface-2 border border-theme'
@@ -122,7 +122,7 @@ export const PatchNotesModal: React.FC<PatchNotesModalProps> = ({ isOpen, onClos
             </button>
             <button
               onClick={() => setSelectedFilter('major')}
-              className={`px-3.5 py-2 min-h-[40px] rounded-xl text-xs font-bold transition-all active:scale-95 flex items-center justify-center ${
+              className={`px-3.5 py-2 min-h-[40px] min-h-[44px] rounded-xl text-xs font-bold transition-all active:scale-95 flex items-center justify-center ${
                 selectedFilter === 'major'
                   ? 'bg-amber-500 text-stone-950 shadow-sm font-black'
                   : 'text-appText-muted hover:text-appText-bright bg-surface-2 border border-theme'
@@ -134,7 +134,7 @@ export const PatchNotesModal: React.FC<PatchNotesModalProps> = ({ isOpen, onClos
 
           <button
             onClick={() => setShowTechnical(!showTechnical)}
-            className={`flex items-center gap-1.5 px-3.5 py-2 min-h-[40px] rounded-xl text-xs font-bold transition-all border active:scale-95 ${
+            className={`flex items-center gap-1.5 px-3.5 py-2 min-h-[40px] min-h-[44px] rounded-xl text-xs font-bold transition-all border active:scale-95 ${
               showTechnical
                 ? 'bg-amber-500/15 border-amber-500/40 text-amber-900 dark:text-amber-200 font-extrabold shadow-sm'
                 : 'bg-surface-2 border-theme text-appText-muted hover:text-appText-bright'
@@ -263,7 +263,7 @@ export const PatchNotesModal: React.FC<PatchNotesModalProps> = ({ isOpen, onClos
           <button
             type="button"
             onClick={() => onClose()}
-            className="px-5 py-2.5 min-h-[40px] rounded-xl bg-accent text-bg font-extrabold text-xs hover:bg-accent-hot transition-all shadow-sm active:scale-95 ml-auto cursor-pointer"
+            className="px-5 py-2.5 min-h-[44px] min-h-[40px] rounded-xl bg-accent text-bg font-extrabold text-xs hover:bg-accent-hot transition-all shadow-sm active:scale-95 ml-auto cursor-pointer"
           >
             Tutup Catatan
           </button>

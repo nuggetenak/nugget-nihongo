@@ -345,20 +345,22 @@ export const App: React.FC = () => {
       {/* Floating Offline Status Banner */}
       <OfflineBanner />
 
-      {/* Desktop Sidebar (Fixed left 260px) */}
-      <Sidebar />
+      {/* Desktop Sidebar (Fixed left 260px) - Hidden during Lesson Study */}
+      {activeTab !== 'study' && <Sidebar />}
 
-      {/* Main App Content Container (Offset by 260px on desktop) */}
-      <div className={`flex-1 lg:pl-[260px] flex flex-col min-h-screen ${
+      {/* Main App Content Container (Offset by 260px on desktop when sidebar is visible) */}
+      <div className={`flex-1 ${activeTab === 'study' ? 'lg:pl-0' : 'lg:pl-[260px]'} flex flex-col min-h-screen ${
         activeTab === 'study'
           ? 'pb-0'
           : 'pb-[calc(5.5rem+env(safe-area-inset-bottom))] lg:pb-12'
       } w-full max-w-full min-w-0 overflow-x-hidden`}>
-        <Header
-          onOpenSearch={() => setIsSearchOpen(true)}
-          onOpenShortcuts={() => useModalStore.getState().openModal('shortcuts')}
-          onOpenMobileDrawer={() => setIsMobileDrawerOpen(true)}
-        />
+        {activeTab !== 'study' && (
+          <Header
+            onOpenSearch={() => setIsSearchOpen(true)}
+            onOpenShortcuts={() => useModalStore.getState().openModal('shortcuts')}
+            onOpenMobileDrawer={() => setIsMobileDrawerOpen(true)}
+          />
+        )}
         <main
           id="main-content"
           role="main"

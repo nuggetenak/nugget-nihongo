@@ -60,7 +60,7 @@ export const AchievementsBadgeShowcase: React.FC<AchievementsBadgeShowcaseProps>
             <button
               key={cat.id}
               onClick={() => setSelectedCategory(cat.id)}
-              className={`px-3.5 py-2 rounded-xl text-xs font-bold transition-all active:scale-95 shrink-0 flex items-center gap-1.5 border min-h-[40px] ${
+              className={`px-3.5 py-2 rounded-xl text-xs font-bold transition-all active:scale-95 shrink-0 flex items-center gap-1.5 border min-h-[40px] min-h-[44px] ${
                 isSelected
                   ? 'bg-accent text-bg border-accent shadow-xs'
                   : 'bg-surface-2/60 border-accent/15 text-appText-muted hover:text-appText-bright hover:bg-surface-2'
@@ -80,18 +80,18 @@ export const AchievementsBadgeShowcase: React.FC<AchievementsBadgeShowcaseProps>
           return (
             <div
               key={badge.id}
-              className={`p-3.5 sm:p-4 rounded-xl border transition-all flex items-start gap-3 relative overflow-hidden ${
+              className={`p-3.5 sm:p-4 rounded-xl transition-all flex items-start gap-3 relative overflow-hidden ${
                 isEarned
-                  ? 'bg-gradient-to-br from-accent/10 via-surface-2/80 to-surface-2/40 border-accent/30 shadow-xs'
-                  : 'bg-surface-2/40 border-accent/10 opacity-75'
+                  ? 'bg-gradient-to-br from-accent/15 via-surface-2/80 to-surface-2/40 shadow-xs ring-1 ring-accent/30'
+                  : 'bg-surface-2/40 opacity-75 hover:bg-surface-2/60'
               }`}
             >
               {/* Badge Icon / Lock Badge */}
               <div
-                className={`w-12 h-12 rounded-2xl flex items-center justify-center text-2xl shrink-0 shadow-inner border select-none ${
+                className={`w-12 h-12 rounded-xl flex items-center justify-center text-2xl shrink-0 select-none ${
                   isEarned
-                    ? 'bg-accent/20 border-accent/30 text-accent'
-                    : 'bg-surface-3/60 border-accent/10 grayscale opacity-60'
+                    ? 'bg-accent/20 text-accent'
+                    : 'bg-surface-3/60 grayscale opacity-60'
                 }`}
               >
                 {isEarned ? badge.icon : '🔒'}
@@ -101,7 +101,7 @@ export const AchievementsBadgeShowcase: React.FC<AchievementsBadgeShowcaseProps>
               <div className="min-w-0 flex-1 space-y-1">
                 <div className="flex items-center justify-between gap-1">
                   <span
-                    className={`text-sm font-bold truncate block ${
+                    className={`text-sm font-bold leading-tight break-words block ${
                       isEarned ? 'text-appText-bright' : 'text-appText-muted'
                     }`}
                   >

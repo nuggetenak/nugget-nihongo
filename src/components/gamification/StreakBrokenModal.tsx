@@ -60,7 +60,7 @@ export const StreakBrokenModal: React.FC<StreakBrokenModalProps> = ({ isOpen, on
         role="dialog"
         aria-modal="true"
         aria-label="Notifikasi Streak Terputus"
-        className="w-full max-w-md max-h-[90vh] overflow-y-auto bg-surface border border-accent/25 rounded-3xl p-5 sm:p-8 relative text-center shadow-2xl scrollbar-none"
+        className="w-full max-w-md max-h-[90vh] overflow-y-auto bg-surface border border-border rounded-2xl p-5 sm:p-8 relative text-center shadow-xl scrollbar-none"
         onClick={(e) => e.stopPropagation()}
       >
         <button
@@ -72,7 +72,7 @@ export const StreakBrokenModal: React.FC<StreakBrokenModalProps> = ({ isOpen, on
           <X className="w-5 h-5" />
         </button>
 
-        <div className="w-20 h-20 mx-auto mb-3 rounded-2xl bg-amber-500/10 border border-amber-500/20 p-2 flex items-center justify-center shadow-glow">
+        <div className="w-20 h-20 mx-auto mb-3 rounded-2xl bg-amber-500/10 border border-amber-500/20 p-2 flex items-center justify-center shadow-xs">
           <IrasutoyaImage assetId="daruma_recovery" animatePop className="w-16 h-16 object-contain" />
         </div>
 
@@ -90,7 +90,7 @@ export const StreakBrokenModal: React.FC<StreakBrokenModalProps> = ({ isOpen, on
 
         <button
           onClick={handleStartStudy}
-          className="w-full min-h-[44px] py-3 px-4 rounded-xl bg-accent hover:brightness-110 text-bg font-extrabold text-sm flex items-center justify-center gap-2 shadow-lg transition-all active:scale-95"
+          className="w-full min-h-[44px] py-3 px-4 rounded-xl bg-accent hover:brightness-110 text-stone-950 font-bold text-sm flex items-center justify-center gap-2 shadow-xs transition-all active:scale-95"
         >
           <span>Mulai Belajar Lagi Hari Ini 🍙</span>
           <ArrowRight className="w-4 h-4" />

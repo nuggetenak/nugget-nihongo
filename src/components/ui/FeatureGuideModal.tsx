@@ -102,10 +102,10 @@ export const FeatureGuideModal: React.FC<FeatureGuideModalProps> = ({
         </div>
 
         {/* Navigation Tabs */}
-        <div className="flex items-center gap-2 px-6 pt-3 border-b border-accent/10 bg-surface-2/30">
+        <div className="flex items-center gap-2 px-6 pt-1 border-b border-accent/10 bg-surface-2/30">
           <button
             onClick={() => setActiveSection('modules')}
-            className={`px-3.5 py-2 text-xs font-bold border-b-2 transition-all flex items-center gap-1.5 ${
+            className={`px-3.5 py-2.5 min-h-[44px] text-xs font-bold border-b-2 transition-all flex items-center gap-1.5 ${
               activeSection === 'modules'
                 ? 'border-accent text-accent'
                 : 'border-transparent text-appText-muted hover:text-appText-bright'
@@ -117,7 +117,7 @@ export const FeatureGuideModal: React.FC<FeatureGuideModalProps> = ({
 
           <button
             onClick={() => setActiveSection('tools')}
-            className={`px-3.5 py-2 text-xs font-bold border-b-2 transition-all flex items-center gap-1.5 ${
+            className={`px-3.5 py-2.5 min-h-[44px] text-xs font-bold border-b-2 transition-all flex items-center gap-1.5 ${
               activeSection === 'tools'
                 ? 'border-accent text-accent'
                 : 'border-transparent text-appText-muted hover:text-appText-bright'
@@ -129,7 +129,7 @@ export const FeatureGuideModal: React.FC<FeatureGuideModalProps> = ({
 
           <button
             onClick={() => setActiveSection('tips')}
-            className={`px-3.5 py-2 text-xs font-bold border-b-2 transition-all flex items-center gap-1.5 ${
+            className={`px-3.5 py-2.5 min-h-[44px] text-xs font-bold border-b-2 transition-all flex items-center gap-1.5 ${
               activeSection === 'tips'
                 ? 'border-accent text-accent'
                 : 'border-transparent text-appText-muted hover:text-appText-bright'
@@ -161,7 +161,7 @@ export const FeatureGuideModal: React.FC<FeatureGuideModalProps> = ({
                 </div>
                 <button
                   onClick={() => navigateTo('home')}
-                  className="px-3 py-1.5 min-h-[36px] rounded-lg bg-surface-3 hover:bg-accent hover:text-bg text-appText-bright text-xs font-bold shrink-0 transition-all flex items-center gap-1 active:scale-95"
+                  className="px-3.5 py-2 min-h-[44px] rounded-xl bg-surface-3 hover:bg-accent hover:text-bg text-appText-bright text-xs font-bold shrink-0 transition-all flex items-center gap-1 active:scale-95"
                 >
                   <span>Buka</span>
                   <ArrowRight className="w-3 h-3" />
@@ -184,7 +184,7 @@ export const FeatureGuideModal: React.FC<FeatureGuideModalProps> = ({
                 </div>
                 <button
                   onClick={() => navigateTo('materi')}
-                  className="px-3 py-1.5 min-h-[36px] rounded-lg bg-surface-3 hover:bg-accent hover:text-bg text-appText-bright text-xs font-bold shrink-0 transition-all flex items-center gap-1 active:scale-95"
+                  className="px-3.5 py-2 min-h-[44px] rounded-xl bg-surface-3 hover:bg-accent hover:text-bg text-appText-bright text-xs font-bold shrink-0 transition-all flex items-center gap-1 active:scale-95"
                 >
                   <span>Buka</span>
                   <ArrowRight className="w-3 h-3" />
@@ -207,7 +207,7 @@ export const FeatureGuideModal: React.FC<FeatureGuideModalProps> = ({
                 </div>
                 <button
                   onClick={() => navigateTo('quiz')}
-                  className="px-3 py-1.5 min-h-[36px] rounded-lg bg-surface-3 hover:bg-accent hover:text-bg text-appText-bright text-xs font-bold shrink-0 transition-all flex items-center gap-1 active:scale-95"
+                  className="px-3.5 py-2 min-h-[44px] rounded-xl bg-surface-3 hover:bg-accent hover:text-bg text-appText-bright text-xs font-bold shrink-0 transition-all flex items-center gap-1 active:scale-95"
                 >
                   <span>Buka</span>
                   <ArrowRight className="w-3 h-3" />
@@ -230,7 +230,7 @@ export const FeatureGuideModal: React.FC<FeatureGuideModalProps> = ({
                 </div>
                 <button
                   onClick={() => navigateTo('kebun')}
-                  className="px-3 py-1.5 min-h-[36px] rounded-lg bg-surface-3 hover:bg-accent hover:text-bg text-appText-bright text-xs font-bold shrink-0 transition-all flex items-center gap-1 active:scale-95"
+                  className="px-3.5 py-2 min-h-[44px] rounded-xl bg-surface-3 hover:bg-accent hover:text-bg text-appText-bright text-xs font-bold shrink-0 transition-all flex items-center gap-1 active:scale-95"
                 >
                   <span>Buka</span>
                   <ArrowRight className="w-3 h-3" />
@@ -253,7 +253,7 @@ export const FeatureGuideModal: React.FC<FeatureGuideModalProps> = ({
                 </div>
                 <button
                   onClick={() => navigateTo('sensei')}
-                  className="px-3 py-1.5 min-h-[36px] rounded-lg bg-surface-3 hover:bg-accent hover:text-bg text-appText-bright text-xs font-bold shrink-0 transition-all flex items-center gap-1 active:scale-95"
+                  className="px-3.5 py-2 min-h-[44px] rounded-xl bg-surface-3 hover:bg-accent hover:text-bg text-appText-bright text-xs font-bold shrink-0 transition-all flex items-center gap-1 active:scale-95"
                 >
                   <span>Buka</span>
                   <ArrowRight className="w-3 h-3" />
@@ -276,7 +276,7 @@ export const FeatureGuideModal: React.FC<FeatureGuideModalProps> = ({
                 </div>
                 <button
                   onClick={() => navigateTo('settings')}
-                  className="px-3 py-1.5 min-h-[36px] rounded-lg bg-surface-3 hover:bg-accent hover:text-bg text-appText-bright text-xs font-bold shrink-0 transition-all flex items-center gap-1 active:scale-95"
+                  className="px-3.5 py-2 min-h-[44px] rounded-xl bg-surface-3 hover:bg-accent hover:text-bg text-appText-bright text-xs font-bold shrink-0 transition-all flex items-center gap-1 active:scale-95"
                 >
                   <span>Buka</span>
                   <ArrowRight className="w-3 h-3" />
@@ -308,10 +308,10 @@ export const FeatureGuideModal: React.FC<FeatureGuideModalProps> = ({
                       handleClose();
                       onOpenKana();
                     }}
-                    className="px-3.5 py-1.5 rounded-lg bg-accent text-bg text-xs font-bold shrink-0 hover:bg-accent-hot transition-all flex items-center gap-1 shadow-sm"
+                    className="px-3.5 py-2 min-h-[44px] rounded-xl bg-accent text-bg text-xs font-bold shrink-0 hover:bg-accent-hot transition-all flex items-center gap-1.5 shadow-sm active:scale-95"
                   >
                     <span>Buka Bagan</span>
-                    <ExternalLink className="w-3 h-3" />
+                    <ExternalLink className="w-3.5 h-3.5" />
                   </button>
                 )}
               </div>
@@ -336,10 +336,10 @@ export const FeatureGuideModal: React.FC<FeatureGuideModalProps> = ({
                       handleClose();
                       onOpenConjugation();
                     }}
-                    className="px-3.5 py-1.5 rounded-lg bg-accent text-bg text-xs font-bold shrink-0 hover:bg-accent-hot transition-all flex items-center gap-1 shadow-sm"
+                    className="px-3.5 py-2 min-h-[44px] rounded-xl bg-accent text-bg text-xs font-bold shrink-0 hover:bg-accent-hot transition-all flex items-center gap-1.5 shadow-sm active:scale-95"
                   >
                     <span>Buka Matriks</span>
-                    <ExternalLink className="w-3 h-3" />
+                    <ExternalLink className="w-3.5 h-3.5" />
                   </button>
                 )}
               </div>
@@ -364,10 +364,10 @@ export const FeatureGuideModal: React.FC<FeatureGuideModalProps> = ({
                       handleClose();
                       onOpenNuance();
                     }}
-                    className="px-3.5 py-1.5 rounded-lg bg-accent text-bg text-xs font-bold shrink-0 hover:bg-accent-hot transition-all flex items-center gap-1 shadow-sm"
+                    className="px-3.5 py-2 min-h-[44px] rounded-xl bg-accent text-bg text-xs font-bold shrink-0 hover:bg-accent-hot transition-all flex items-center gap-1.5 shadow-sm active:scale-95"
                   >
                     <span>Buka Nuansa</span>
-                    <ExternalLink className="w-3 h-3" />
+                    <ExternalLink className="w-3.5 h-3.5" />
                   </button>
                 )}
               </div>
@@ -392,10 +392,10 @@ export const FeatureGuideModal: React.FC<FeatureGuideModalProps> = ({
                       handleClose();
                       onOpenShortcuts();
                     }}
-                    className="px-3.5 py-1.5 rounded-lg bg-accent text-bg text-xs font-bold shrink-0 hover:bg-accent-hot transition-all flex items-center gap-1 shadow-sm"
+                    className="px-3.5 py-2 min-h-[44px] rounded-xl bg-accent text-bg text-xs font-bold shrink-0 hover:bg-accent-hot transition-all flex items-center gap-1.5 shadow-sm active:scale-95"
                   >
                     <span>Pintasan</span>
-                    <ExternalLink className="w-3 h-3" />
+                    <ExternalLink className="w-3.5 h-3.5" />
                   </button>
                 )}
               </div>
@@ -455,7 +455,7 @@ export const FeatureGuideModal: React.FC<FeatureGuideModalProps> = ({
               handleClose();
               openOnboarding();
             }}
-            className="px-3.5 py-2 rounded-xl bg-surface-2 hover:bg-surface-3 border border-accent/20 text-accent text-xs font-bold flex items-center gap-1.5 transition-all shadow-sm"
+            className="px-3.5 py-2.5 min-h-[44px] rounded-xl bg-surface-2 hover:bg-surface-3 border border-accent/20 text-accent text-xs font-bold flex items-center gap-1.5 transition-all shadow-sm active:scale-95"
           >
             <span>🍙</span>
             <span>Mulai Ulang Tur Aplikasi</span>
@@ -463,7 +463,7 @@ export const FeatureGuideModal: React.FC<FeatureGuideModalProps> = ({
 
           <button
             onClick={handleClose}
-            className="px-5 py-2.5 rounded-xl bg-accent text-bg hover:bg-accent-hot text-xs font-bold transition-all shadow-md"
+            className="px-5 py-2.5 min-h-[44px] rounded-xl bg-accent text-bg hover:bg-accent-hot text-xs font-bold transition-all shadow-md active:scale-95"
           >
             Tutup Panduan
           </button>

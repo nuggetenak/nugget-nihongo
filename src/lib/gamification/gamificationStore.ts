@@ -4,6 +4,8 @@
 // ══════════════════════════════════════════════════════════════════
 
 import { create } from 'zustand';
+import { broadcastSync } from '../sync/broadcastSync.ts';
+import { resolveGamificationConflict } from '../sync/conflictResolver.ts';
 
 /**
  * Returns YYYY-MM-DD in the learner's actual local timezone (WIB/WITA/WIT/JST)
@@ -360,6 +362,11 @@ export const useGamificationStore = create<GamificationState>((set, get) => {
         try { localStorage.setItem('nn_heatmap', JSON.stringify(currentHeatmap)); } catch {}
       }
 
+      broadcastSync.broadcast('GAMIFICATION_UPDATED', {
+        heatmap: currentHeatmap,
+        badges: get().badges,
+      });
+
       // Check time-based badges (Night Owl: 00:00 - 04:00 & Early Bird: 04:00 - 06:00)
       const hour = new Date().getHours();
       if ((hour >= 0 && hour < 4) || (hour >= 4 && hour < 6)) {
@@ -521,9 +528,47 @@ export const useGamificationStore = create<GamificationState>((set, get) => {
             localStorage.setItem('nn_achievements', JSON.stringify(saveArray));
           } catch {}
         }
+        broadcastSync.broadcast('GAMIFICATION_UPDATED', {
+          heatmap: get().heatmap,
+          badges: updated,
+        });
       }
 
       return newlyEarned;
     },
   };
 });
+
+/**
+ * Initializes cross-tab synchronization listener for gamification (Heatmap & Badges).
+ * Reconciles incoming multi-tab changes using Monotonic Non-Decreasing Merge.
+ */
+export function initGamificationCrossTabSync(): () => void {
+  return broadcastSync.subscribe((event) => {
+    if (event.type === 'GAMIFICATION_UPDATED' && event.payload) {
+      try {
+        const current = {
+          heatmap: useGamificationStore.getState().heatmap,
+          badges: useGamificationStore.getState().badges,
+        };
+        const resolved = resolveGamificationConflict(current, event.payload);
+        useGamificationStore.setState({
+          heatmap: resolved.heatmap || {},
+          badges: (resolved.badges as BadgeItem[]) || [],
+        });
+
+        if (typeof window !== 'undefined') {
+          try {
+            localStorage.setItem('nn_heatmap', JSON.stringify(resolved.heatmap));
+            const saveArray = (resolved.badges || [])
+              .filter((b) => b.earned)
+              .map((b) => ({ id: b.id, name: b.name, icon: b.icon, earned_at: b.earnedAt }));
+            localStorage.setItem('nn_achievements', JSON.stringify(saveArray));
+          } catch {}
+        }
+      } catch (err) {
+        console.warn('[gamificationStore] Failed to reconcile cross-tab gamification state:', err);
+      }
+    }
+  });
+}

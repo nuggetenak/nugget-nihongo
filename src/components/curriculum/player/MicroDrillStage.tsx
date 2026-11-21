@@ -3,13 +3,14 @@
 //  100% In-Place, Zero Menu-Jumping, Umpan Balik Diagnostik & Retry Loop
 // ══════════════════════════════════════════════════════════════════
 
-import React, { useState, useEffect } from 'react';
-import { CheckCircle2, XCircle, ArrowRight, RotateCcw, Sparkles } from 'lucide-react';
+import React, { useState, useEffect, useRef } from 'react';
+import { CheckCircle2, XCircle, ArrowRight, RotateCcw } from 'lucide-react';
 import { LessonDrillItem } from '../../../types/curriculum';
 import { cleanOptionText } from '../../../lib/curriculum/lessonContentAdapter';
 import { RubyText } from '../../ui/RubyText';
 import { playSuccessSfx, playErrorSfx } from '../../../lib/audio/sfx';
 import { IrasutoyaImage } from '../../common/IrasutoyaImage';
+import { calculateDrillScore } from '../../../lib/curriculum/lessonStageEngine';
 
 interface MicroDrillStageProps {
   drills?: LessonDrillItem[];
@@ -24,10 +25,11 @@ export const MicroDrillStage: React.FC<MicroDrillStageProps> = ({ drills = [], o
   const [placedTokenIndices, setPlacedTokenIndices] = useState<number[]>([]);
   const [feedback, setFeedback] = useState<{ isCorrect: boolean; text: string } | null>(null);
 
-  // Statistik
+  // Statistik & Anti-Race Guards
   const [firstAttemptCorrect, setFirstAttemptCorrect] = useState<Record<string, boolean>>({});
   const [retryQueue, setRetryQueue] = useState<LessonDrillItem[]>([]);
   const [isFinished, setIsFinished] = useState(false);
+  const isSubmittingRef = useRef(false);
 
   const currentItem = activeQueue[currentIndex];
 
@@ -44,11 +46,18 @@ export const MicroDrillStage: React.FC<MicroDrillStageProps> = ({ drills = [], o
 
   // Submit jawaban
   const handleSubmitAnswer = (answerToTest: string) => {
-    if (feedback || !currentItem) return;
+    if (feedback || !currentItem || isSubmittingRef.current) return;
+    isSubmittingRef.current = true;
 
     const cleanAnswer = (answerToTest || '').trim().replace(/\s+/g, ' ');
     const cleanCorrect = (currentItem.correctAnswer || '').trim().replace(/\s+/g, ' ');
-    const isCorrect = cleanAnswer.length > 0 && cleanCorrect.length > 0 && cleanAnswer.toLowerCase() === cleanCorrect.toLowerCase();
+
+    // Japanese token answers may or may not include spaces; compare both direct and whitespace-stripped
+    const isCorrect =
+      cleanAnswer.length > 0 &&
+      cleanCorrect.length > 0 &&
+      (cleanAnswer.toLowerCase() === cleanCorrect.toLowerCase() ||
+        cleanAnswer.replace(/\s+/g, '').toLowerCase() === cleanCorrect.replace(/\s+/g, '').toLowerCase());
 
     // Catat apakah benar pada percobaan pertama
     if (firstAttemptCorrect[currentItem.id] === undefined) {
@@ -84,6 +93,7 @@ export const MicroDrillStage: React.FC<MicroDrillStageProps> = ({ drills = [], o
       isCorrect,
       text: feedbackText,
     });
+    isSubmittingRef.current = false;
   };
 
   // Pindah ke soal berikutnya
@@ -91,6 +101,7 @@ export const MicroDrillStage: React.FC<MicroDrillStageProps> = ({ drills = [], o
     setFeedback(null);
     setSelectedAnswer(null);
     setPlacedTokenIndices([]);
+    isSubmittingRef.current = false;
 
     if (currentIndex + 1 < activeQueue.length) {
       setCurrentIndex((prev) => prev + 1);
@@ -100,10 +111,9 @@ export const MicroDrillStage: React.FC<MicroDrillStageProps> = ({ drills = [], o
       setRetryQueue([]);
       setCurrentIndex(0);
     } else {
-      // Selesai seluruh soal! Hitung skor awal
-      const totalInitial = drills.length;
+      // Selesai seluruh soal! Hitung skor awal dengan engine canonical
       const totalCorrectFirstTry = Object.values(firstAttemptCorrect).filter(Boolean).length;
-      const finalScore = totalInitial > 0 ? Math.max(0, Math.min(100, Math.round((totalCorrectFirstTry / totalInitial) * 100))) : 100;
+      const finalScore = calculateDrillScore(drills.length, totalCorrectFirstTry);
 
       setIsFinished(true);
       onComplete(finalScore);
@@ -144,13 +154,13 @@ export const MicroDrillStage: React.FC<MicroDrillStageProps> = ({ drills = [], o
   if (!drills || drills.length === 0) {
     return (
       <div className="py-12 text-center space-y-4">
-        <p className="text-appText-muted text-sm">
+        <p className="text-appText-muted text-xs">
           Tidak ada latihan khusus pada pelajaran ini.
         </p>
         <button
           type="button"
           onClick={() => onComplete(100)}
-          className="min-h-[44px] px-6 py-2.5 rounded-xl bg-accent text-bg font-bold shadow-md active:scale-95 cursor-pointer"
+          className="min-h-[44px] px-6 py-2.5 rounded-xl bg-accent text-stone-950 font-bold text-xs uppercase tracking-wider shadow-xs hover:bg-accent-hot active:scale-95 cursor-pointer"
         >
           Lanjut ke Tantangan Nyata
         </button>
@@ -159,13 +169,12 @@ export const MicroDrillStage: React.FC<MicroDrillStageProps> = ({ drills = [], o
   }
 
   if (isFinished) {
-    const totalInitial = drills.length;
     const totalCorrectFirstTry = Object.values(firstAttemptCorrect).filter(Boolean).length;
-    const finalScore = totalInitial > 0 ? Math.round((totalCorrectFirstTry / totalInitial) * 100) : 100;
+    const finalScore = calculateDrillScore(drills.length, totalCorrectFirstTry);
 
     return (
-      <div className="py-10 text-center space-y-4 bg-surface-2 rounded-3xl border border-accent/20 p-6 animate-scale-in card-interactive-lift">
-        <div className="w-16 h-16 rounded-2xl bg-surface border border-accent/20 flex items-center justify-center mx-auto shadow-sm">
+      <div className="py-10 text-center space-y-4 bg-surface-2 rounded-2xl border border-border p-6 animate-scale-in">
+        <div className="w-16 h-16 rounded-2xl bg-surface border border-border flex items-center justify-center mx-auto shadow-xs">
           <IrasutoyaImage
             assetId={finalScore >= 80 ? 'hanko_excellent' : 'daruma_recovery'}
             animatePop
@@ -198,7 +207,7 @@ export const MicroDrillStage: React.FC<MicroDrillStageProps> = ({ drills = [], o
                 setFirstAttemptCorrect({});
                 setIsFinished(false);
               }}
-              className="min-h-[44px] px-5 py-2.5 rounded-xl bg-amber-500 hover:bg-amber-400 text-stone-950 font-bold text-xs sm:text-sm flex items-center justify-center gap-2 mx-auto active:scale-95 shadow-sm card-interactive-lift"
+              className="min-h-[44px] px-5 py-2.5 rounded-xl bg-amber-500 hover:bg-amber-400 text-stone-950 font-bold text-xs sm:text-sm flex items-center justify-center gap-2 mx-auto active:scale-95 shadow-xs cursor-pointer"
             >
               <RotateCcw className="w-4 h-4" />
               <span>Latih Ulang Soal Cek Pemahaman</span>
@@ -222,7 +231,7 @@ export const MicroDrillStage: React.FC<MicroDrillStageProps> = ({ drills = [], o
         return { label: '💬 Respons Percakapan Alami', color: 'text-emerald-700 dark:text-emerald-400 font-bold' };
       case 'cloze':
       default:
-        return { label: '📝 Pilihan Partikel & Pola', color: 'text-accent' };
+        return { label: '📝 Pilihan Partikel & Pola', color: 'text-accent font-bold' };
     }
   };
 
@@ -252,7 +261,7 @@ export const MicroDrillStage: React.FC<MicroDrillStageProps> = ({ drills = [], o
       </div>
 
       {/* ── Kartu Soal Utama ─────────────────────────────────────── */}
-      <div className="p-5 sm:p-6 rounded-3xl bg-surface border border-accent/25 space-y-5 shadow-sm">
+      <div className="p-5 sm:p-6 rounded-2xl bg-surface border border-border space-y-5 shadow-xs">
         <div className="space-y-1.5">
           <div className={`text-xs font-bold uppercase tracking-wider flex items-center gap-1.5 ${badge.color}`}>
             <span>{badge.label}</span>
@@ -261,7 +270,7 @@ export const MicroDrillStage: React.FC<MicroDrillStageProps> = ({ drills = [], o
             {currentItem.instruction}
           </h3>
           {currentItem.sentencePrompt && (
-            <div className="p-3.5 rounded-2xl bg-surface-2 border border-accent/15 text-sm sm:text-base font-jp font-semibold text-appText-bright mt-2">
+            <div className="p-3.5 rounded-2xl bg-surface-2 border border-border text-sm sm:text-base font-jp font-semibold text-appText-bright mt-2">
               <RubyText text={currentItem.sentencePrompt} />
             </div>
           )}
@@ -271,7 +280,7 @@ export const MicroDrillStage: React.FC<MicroDrillStageProps> = ({ drills = [], o
         {currentItem.type === 'reorder' && currentItem.tokens && currentItem.tokens.length > 0 && (
           <div className="space-y-4">
             {/* Slot Kalimat yang Tersusun */}
-            <div className="min-h-[56px] p-3 rounded-2xl bg-surface-2/80 border-2 border-dashed border-accent/30 flex flex-wrap items-center gap-2">
+            <div className="min-h-[56px] p-3 rounded-2xl bg-surface-2 border-2 border-dashed border-border flex flex-wrap items-center gap-2">
               {placedTokenIndices.length === 0 ? (
                 <span className="text-xs text-appText-muted italic">
                   Ketuk kepingan kata di bawah untuk menyusun kalimat...
@@ -285,7 +294,7 @@ export const MicroDrillStage: React.FC<MicroDrillStageProps> = ({ drills = [], o
                       type="button"
                       disabled={!!feedback}
                       onClick={() => handleToggleTokenSlot(slotIdx)}
-                      className="min-h-[40px] px-3.5 py-1.5 rounded-xl bg-accent text-bg font-jp font-bold text-sm shadow-sm active:scale-95 inline-flex items-center gap-1.5 hover:brightness-110"
+                      className="min-h-[40px] px-3.5 py-1.5 rounded-xl bg-accent text-stone-950 font-jp font-bold text-sm shadow-xs active:scale-95 inline-flex items-center gap-1.5 hover:bg-accent-hot cursor-pointer"
                       title="Ketuk untuk melepas kata ini"
                     >
                       <RubyText text={token} /> ✕
@@ -306,7 +315,7 @@ export const MicroDrillStage: React.FC<MicroDrillStageProps> = ({ drills = [], o
                     type="button"
                     disabled={!!feedback}
                     onClick={() => handlePlaceToken(tIdx)}
-                    className="min-h-[44px] px-4 py-2 rounded-xl bg-surface-3 hover:bg-surface border border-accent/20 text-appText-bright font-jp font-bold text-sm transition-all active:scale-95 inline-flex items-center justify-center card-interactive-lift hover:border-accent/40"
+                    className="min-h-[44px] px-4 py-2 rounded-xl bg-surface-2 hover:bg-surface-3 border border-border text-appText-bright font-jp font-bold text-sm transition-all active:scale-95 inline-flex items-center justify-center cursor-pointer hover:border-border-hover shadow-xs"
                   >
                     <RubyText text={token} />
                   </button>
@@ -325,7 +334,7 @@ export const MicroDrillStage: React.FC<MicroDrillStageProps> = ({ drills = [], o
                     .join(hasSpaces ? ' ' : '');
                   handleSubmitAnswer(assembled);
                 }}
-                className="w-full min-h-[46px] py-2.5 rounded-xl bg-accent text-bg font-extrabold text-xs uppercase tracking-wider shadow-md hover:brightness-110 disabled:opacity-40 disabled:pointer-events-none transition-all active:scale-98 card-interactive-lift"
+                className="w-full min-h-[46px] py-2.5 rounded-xl bg-accent text-stone-950 font-bold text-xs uppercase tracking-wider shadow-xs hover:bg-accent-hot disabled:opacity-40 disabled:pointer-events-none transition-all active:scale-98 cursor-pointer"
               >
                 Periksa Susunan Kalimat
               </button>
@@ -341,7 +350,7 @@ export const MicroDrillStage: React.FC<MicroDrillStageProps> = ({ drills = [], o
               const isSubmitted = !!feedback;
               const isCorrectAnswer = opt === currentItem.correctAnswer;
 
-              let btnStyle = 'bg-surface-2 hover:bg-surface-3 border-accent/15 text-appText hover:text-appText-bright';
+              let btnStyle = 'bg-surface-2 hover:bg-surface-3 border-border text-appText hover:text-appText-bright';
               if (isSubmitted) {
                 if (isSelected && feedback.isCorrect) {
                   btnStyle = 'bg-emerald-500/20 border-emerald-500 text-emerald-950 dark:text-emerald-200 font-bold';
@@ -350,10 +359,10 @@ export const MicroDrillStage: React.FC<MicroDrillStageProps> = ({ drills = [], o
                 } else if (isCorrectAnswer) {
                   btnStyle = 'border-emerald-500/60 bg-emerald-500/10 text-emerald-950 dark:text-emerald-200 font-medium';
                 } else {
-                  btnStyle = 'opacity-50 bg-surface-2 border-accent/10 text-appText-muted';
+                  btnStyle = 'opacity-50 bg-surface-2 border-border text-appText-muted';
                 }
               } else if (isSelected) {
-                btnStyle = 'bg-amber-500/15 border-amber-500 text-appText-bright shadow-sm font-bold';
+                btnStyle = 'bg-amber-500/15 border-amber-500 text-appText-bright shadow-xs font-bold';
               }
 
               return (
@@ -365,10 +374,10 @@ export const MicroDrillStage: React.FC<MicroDrillStageProps> = ({ drills = [], o
                     setSelectedAnswer(opt);
                     handleSubmitAnswer(opt);
                   }}
-                  className={`w-full min-h-[48px] p-3.5 sm:p-4 rounded-2xl border text-left text-xs sm:text-sm font-jp transition-all flex items-center justify-between gap-3 active:scale-98 card-interactive-lift ${btnStyle}`}
+                  className={`w-full min-h-[48px] p-3.5 sm:p-4 rounded-xl border text-left text-xs sm:text-sm font-jp transition-all flex items-center justify-between gap-3 active:scale-98 cursor-pointer card-interactive-lift ${btnStyle}`}
                 >
-                  <span className="break-words font-medium">{cleanOptionText(opt)}</span>
-                  <span className="w-6 h-6 rounded-full border border-accent/20 shrink-0 flex items-center justify-center text-xs font-bold font-mono">
+                  <span className="break-words font-medium min-w-0 flex-1">{cleanOptionText(opt)}</span>
+                  <span className="w-6 h-6 rounded-full border border-border shrink-0 flex items-center justify-center text-xs font-bold font-mono">
                     {String.fromCharCode(65 + oIdx)}
                   </span>
                 </button>
@@ -376,16 +385,30 @@ export const MicroDrillStage: React.FC<MicroDrillStageProps> = ({ drills = [], o
             })}
             {!feedback && (
               <p className="text-xs text-appText-muted text-right font-medium pr-1">
-                Tip: Tekan tombol <kbd className="px-1.5 py-0.5 rounded bg-surface-3 border border-accent/20 font-mono text-xs">1-4</kbd> atau <kbd className="px-1.5 py-0.5 rounded bg-surface-3 border border-accent/20 font-mono text-xs">A-D</kbd> di keyboard
+                Tip: Tekan tombol <kbd className="px-1.5 py-0.5 rounded bg-surface-3 border border-border font-mono text-xs">1-4</kbd> atau <kbd className="px-1.5 py-0.5 rounded bg-surface-3 border border-border font-mono text-xs">A-D</kbd> di keyboard
               </p>
             )}
+          </div>
+        )}
+
+        {/* ── Fallback untuk butir soal tanpa opsi & token (safety valve) ── */}
+        {(!currentItem.options || currentItem.options.length === 0) && (!currentItem.tokens || currentItem.tokens.length === 0) && (
+          <div className="p-4 rounded-xl bg-surface-2 border border-border text-center space-y-3">
+            <p className="text-xs text-appText-muted">Butir soal konseptual. Silakan lanjutkan.</p>
+            <button
+              type="button"
+              onClick={() => handleSubmitAnswer(currentItem.correctAnswer || 'ok')}
+              className="px-4 py-2 rounded-xl bg-accent text-stone-950 font-bold text-xs uppercase tracking-wider active:scale-95 cursor-pointer shadow-xs"
+            >
+              Lanjut
+            </button>
           </div>
         )}
 
         {/* ── Kartu Umpan Balik Diagnostik Instan ───────────────────── */}
         {feedback && (
           <div
-            className={`p-4 rounded-2xl border space-y-3 animate-fade-in card-interactive-lift ${
+            className={`p-4 rounded-2xl border space-y-3 animate-fade-in ${
               feedback.isCorrect
                 ? 'bg-emerald-500/15 border-emerald-500/40 text-emerald-900 dark:text-emerald-300'
                 : 'bg-rose-500/15 border-rose-500/40 text-rose-900 dark:text-rose-300'
@@ -411,7 +434,7 @@ export const MicroDrillStage: React.FC<MicroDrillStageProps> = ({ drills = [], o
             <button
               type="button"
               onClick={handleNextQuestion}
-              className="min-h-[44px] px-5 py-2.5 rounded-xl bg-accent text-bg font-extrabold text-xs uppercase tracking-wider shadow-md hover:brightness-110 flex items-center gap-2 ml-auto active:scale-95"
+              className="min-h-[44px] px-5 py-2.5 rounded-xl bg-accent text-stone-950 font-bold text-xs uppercase tracking-wider shadow-xs hover:bg-accent-hot flex items-center gap-2 ml-auto active:scale-95 cursor-pointer"
             >
               <span>Lanjut Soal Berikutnya</span>
               <ArrowRight className="w-4 h-4" />

@@ -27,8 +27,8 @@ export const HeatmapCalendar: React.FC<HeatmapCalendarProps> = ({
     if (!reviews || reviews <= 0) return 'bg-surface-3/80 border border-accent/20 text-appText-muted hover:border-accent/40';
     if (reviews <= 3) return 'bg-amber-900/80 dark:bg-amber-950/80 text-amber-100 dark:text-amber-200 border border-amber-600/60 dark:border-amber-700/60 shadow-xs';
     if (reviews <= 10) return 'bg-amber-700 dark:bg-amber-800 text-amber-50 dark:text-amber-100 border border-amber-500 font-bold shadow-xs';
-    if (reviews <= 25) return 'bg-amber-500 text-stone-950 border border-amber-300 font-black shadow-sm';
-    return 'bg-amber-400 text-stone-950 border border-amber-200 font-black shadow-glow';
+    if (reviews <= 25) return 'bg-amber-500 text-stone-950 border border-amber-300 font-bold shadow-xs';
+    return 'bg-amber-400 text-stone-950 border border-amber-300 font-bold shadow-xs';
   };
 
   const content = (
@@ -77,10 +77,10 @@ export const HeatmapCalendar: React.FC<HeatmapCalendarProps> = ({
       </div>
 
       {/* Legend Bar */}
-      <div className="flex items-center justify-between text-xs font-medium text-appText-muted pt-2 border-t border-accent/10">
+      <div className="flex items-center justify-between text-xs font-medium text-appText-muted pt-2 border-t border-border">
         <span>Sedikit / Kosong</span>
         <div className="flex items-center gap-1.5">
-          <span className="w-3.5 h-3.5 rounded-md bg-surface-3/80 border border-accent/20 inline-block" title="0 aktivitas" />
+          <span className="w-3.5 h-3.5 rounded-md bg-surface-3/80 border border-border inline-block" title="0 aktivitas" />
           <span className="w-3.5 h-3.5 rounded-md bg-amber-900/80 dark:bg-amber-950/80 border border-amber-600/60 dark:border-amber-700/60 inline-block" title="1-3 review" />
           <span className="w-3.5 h-3.5 rounded-md bg-amber-700 dark:bg-amber-800 border border-amber-500 inline-block" title="4-10 review" />
           <span className="w-3.5 h-3.5 rounded-md bg-amber-500 border border-amber-300 inline-block" title="11-25 review" />
@@ -96,7 +96,7 @@ export const HeatmapCalendar: React.FC<HeatmapCalendarProps> = ({
   }
 
   return (
-    <div className={`card-interactive-lift bg-surface-2 border border-accent/20 rounded-3xl p-5 sm:p-6 space-y-4 shadow-sm ${className}`}>
+    <div className={`card-interactive-lift bg-surface border border-border rounded-2xl p-5 sm:p-6 space-y-4 shadow-xs ${className}`}>
       {content}
     </div>
   );

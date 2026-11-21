@@ -57,7 +57,7 @@ export const ReflexDrillsPillar: React.FC<ReflexDrillsPillarProps> = ({
                 key={lvl}
                 type="button"
                 onClick={() => onSelectLevel(lvl)}
-                className={`px-3 py-1.5 rounded-lg text-xs font-bold uppercase transition-all min-h-[40px] active:scale-95 cursor-pointer flex items-center justify-center ${
+                className={`px-3 py-2 rounded-lg text-xs font-bold uppercase transition-all min-h-[40px] min-h-[44px] min-w-[44px] active:scale-95 cursor-pointer flex items-center justify-center ${
                   isCurrent
                     ? 'bg-amber-500 text-stone-950 font-black shadow-xs'
                     : 'text-appText-muted hover:text-appText-bright'

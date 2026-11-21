@@ -149,12 +149,12 @@ export const LearnerIdentityCard: React.FC<LearnerIdentityCardProps> = ({
               </div>
             )}
 
-            {/* Quick Change Avatar Overlay Button (Touch target >= 40px) */}
+            {/* Quick Change Avatar Overlay Button (Touch target >= 44px) */}
             <button
               onClick={() => setIsAvatarPickerOpen(!isAvatarPickerOpen)}
               title="Ganti Avatar Khas Jepang"
               aria-label="Pilih Avatar Khas Jepang"
-              className="absolute -bottom-1 -right-1 min-w-[40px] min-h-[40px] p-2 rounded-xl bg-accent text-bg shadow-md hover:scale-105 active:scale-95 transition-all flex items-center justify-center focus:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+              className="absolute -bottom-1 -right-1 min-w-[40px] min-h-[40px] min-w-[44px] min-h-[44px] p-2 rounded-xl bg-accent text-bg shadow-md hover:scale-105 active:scale-95 transition-all flex items-center justify-center focus:outline-none focus-visible:ring-2 focus-visible:ring-accent"
             >
               <Palette className="w-4 h-4" />
             </button>
@@ -181,7 +181,7 @@ export const LearnerIdentityCard: React.FC<LearnerIdentityCardProps> = ({
                   onClick={handleSaveName}
                   title="Simpan Nama"
                   aria-label="Simpan Nama"
-                  className="min-w-[40px] min-h-[40px] p-2 rounded-xl bg-accent text-bg hover:opacity-90 active:scale-95 transition-all flex items-center justify-center shrink-0"
+                  className="min-w-[44px] min-h-[44px] p-2 rounded-xl bg-accent text-bg hover:opacity-90 active:scale-95 transition-all flex items-center justify-center shrink-0"
                 >
                   <Check className="w-4 h-4" />
                 </button>
@@ -189,7 +189,7 @@ export const LearnerIdentityCard: React.FC<LearnerIdentityCardProps> = ({
                   onClick={handleCancelName}
                   title="Batal"
                   aria-label="Batal Ubah Nama"
-                  className="min-w-[40px] min-h-[40px] p-2 rounded-xl bg-surface-3 text-appText-muted hover:text-appText-bright active:scale-95 transition-all flex items-center justify-center shrink-0"
+                  className="min-w-[44px] min-h-[44px] p-2 rounded-xl bg-surface-3 text-appText-muted hover:text-appText-bright active:scale-95 transition-all flex items-center justify-center shrink-0"
                 >
                   <X className="w-4 h-4" />
                 </button>
@@ -206,7 +206,7 @@ export const LearnerIdentityCard: React.FC<LearnerIdentityCardProps> = ({
                   onClick={handleStartEditName}
                   title="Ubah Nama Profil"
                   aria-label="Ubah Nama Profil"
-                  className="min-w-[40px] min-h-[40px] p-2 rounded-xl text-appText-muted hover:text-accent hover:bg-accent/10 active:scale-95 transition-all flex items-center justify-center focus:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+                  className="min-w-[40px] min-h-[40px] min-w-[44px] min-h-[44px] p-2 rounded-xl text-appText-muted hover:text-accent hover:bg-accent/10 active:scale-95 transition-all flex items-center justify-center focus:outline-none focus-visible:ring-2 focus-visible:ring-accent"
                 >
                   <Edit3 className="w-4 h-4" />
                 </button>
@@ -217,12 +217,12 @@ export const LearnerIdentityCard: React.FC<LearnerIdentityCardProps> = ({
             )}
 
             <div className="flex items-center gap-2 mt-1 flex-wrap">
-              <p className="text-xs text-appText-muted truncate max-w-full">
+              <p className="text-xs text-appText-muted break-words max-w-full">
                 {user?.email || 'Akun Tamu Lokal (Tersimpan di Perangkat)'}
               </p>
               <button
                 onClick={() => setIsAvatarPickerOpen(!isAvatarPickerOpen)}
-                className="text-xs font-semibold text-accent hover:underline flex items-center gap-1.5 min-h-[40px] py-1"
+                className="text-xs font-semibold text-accent hover:underline flex items-center gap-1.5 min-h-[44px] min-h-[40px] py-1"
               >
                 {isAvatarPickerOpen ? 'Tutup Galeri Avatar' : 'Ubah Avatar Budaya Jepang'}
                 {isAvatarPickerOpen ? <ChevronUp className="w-3.5 h-3.5" /> : <ChevronDown className="w-3.5 h-3.5" />}
@@ -239,7 +239,7 @@ export const LearnerIdentityCard: React.FC<LearnerIdentityCardProps> = ({
 
       {/* Japanese Avatar Picker Drawer */}
       {isAvatarPickerOpen && (
-        <div className="p-4 sm:p-5 rounded-2xl bg-surface-2/80 border border-accent/20 space-y-4 animate-in fade-in duration-200">
+        <div className="p-4 sm:p-5 bg-surface-2/40 border-t border-border space-y-4 animate-in fade-in duration-200">
           <div className="flex items-center justify-between gap-2">
             <div>
               <h3 className="text-sm sm:text-base font-bold text-appText-bright flex items-center gap-2">
@@ -252,7 +252,7 @@ export const LearnerIdentityCard: React.FC<LearnerIdentityCardProps> = ({
             </div>
             <button
               onClick={() => setIsAvatarPickerOpen(false)}
-              className="p-1.5 rounded-lg text-appText-muted hover:text-appText-bright hover:bg-surface-3 transition-all"
+              className="min-w-[44px] min-h-[44px] p-2 rounded-xl text-appText-muted hover:text-appText-bright hover:bg-surface-3 transition-all flex items-center justify-center"
             >
               <X className="w-4 h-4" />
             </button>
@@ -315,7 +315,7 @@ export const LearnerIdentityCard: React.FC<LearnerIdentityCardProps> = ({
       )}
 
       {/* Prominent Gelar Kemahiran & Level Progress Banner */}
-      <div className="p-3.5 sm:p-4 rounded-xl sm:rounded-2xl bg-surface-2/60 border border-accent/15 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+      <div className="p-4 border-t border-border flex flex-col sm:flex-row sm:items-center justify-between gap-4">
         <div className="space-y-1.5 min-w-0">
           <div className="flex items-center gap-2">
             <Award className="w-5 h-5 text-accent shrink-0" />

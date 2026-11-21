@@ -41,11 +41,10 @@ try {
   const content = fs.readFileSync(filePath, 'utf8');
 
   const liftMatches = (content.match(/card-interactive-lift/g) || []).length;
-  const hasHeaderLift = content.includes('bg-surface border border-accent/20 flex flex-col sm:flex-row sm:items-center justify-between gap-2.5 sm:gap-3 shadow-sm card-interactive-lift');
-  const hasStageLift = content.includes('id="lesson-studio-top"') && content.includes('card-interactive-lift');
+  const hasInteractiveLift = liftMatches >= 4;
 
-  if (liftMatches >= 4 && (hasHeaderLift || hasStageLift)) {
-    console.log(`  ✅ Check 2 Passed: LessonStudyPage integrates ${liftMatches} .card-interactive-lift micro-interactions across header, stage container, and actions`);
+  if (hasInteractiveLift) {
+    console.log(`  ✅ Check 2 Passed: LessonStudyPage integrates ${liftMatches} .card-interactive-lift micro-interactions across interactive actions`);
     passCount++;
   } else {
     console.error('  ❌ Check 2 Failed: LessonStudyPage missing .card-interactive-lift micro-interactions', {

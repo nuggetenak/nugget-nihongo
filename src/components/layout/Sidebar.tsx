@@ -8,7 +8,7 @@
 // ══════════════════════════════════════════════════════════════════
 
 import React from 'react';
-import { Compass, BookOpen, Brain, Sparkles, Settings, HelpCircle, History, Quote, Wrench, Layers, GraduationCap, Users, Sun, Moon } from 'lucide-react';
+import { Compass, BookOpen, Brain, Sparkles, Settings, HelpCircle, History, Quote, Wrench, GraduationCap, Users, Sun, Moon } from 'lucide-react';
 import { useAppStore, AppState } from '../../store/useAppStore';
 import { useModalStore } from '../../store/useModalStore';
 import { transitionTabChange } from '../../lib/ui/navigation';
@@ -34,7 +34,7 @@ export const Sidebar: React.FC = () => {
       id: 'sensei', 
       label: 'Sensei AI', 
       jp: '先生', 
-      icon: <Sparkles className="w-5 h-5 text-accent-hot" />,
+      icon: <Sparkles className="w-5 h-5 text-accent" />,
       isSpecial: true
     },
     { id: 'methodology', label: 'Metodologi & Riset', jp: '方法', icon: <GraduationCap className="w-5 h-5" /> },
@@ -72,10 +72,10 @@ export const Sidebar: React.FC = () => {
     <aside 
       role="complementary" 
       aria-label="Navigasi Utama Desktop" 
-      className="hidden lg:flex flex-col w-[260px] h-screen fixed left-0 top-0 bg-surface border-r border-accent/15 z-40 select-none"
+      className="hidden lg:flex flex-col w-[260px] h-screen fixed left-0 top-0 bg-surface border-r border-border z-40 select-none"
     >
       {/* Brand Header */}
-      <div className="p-5 border-b border-accent/15">
+      <div className="p-5 border-b border-border">
         <button
           type="button"
           onClick={() => {
@@ -88,7 +88,7 @@ export const Sidebar: React.FC = () => {
           <img
             src="/icons/icon-192.png"
             alt="Nugget Nihongo"
-            className="w-10 h-10 rounded-xl object-cover shadow-glow ring-1 ring-amber-500/40 group-hover:scale-105 group-hover:shadow-[0_0_20px_rgba(245,158,11,0.45)] transition-all duration-300 ease-spring"
+            className="w-10 h-10 rounded-xl object-cover ring-1 ring-border group-hover:scale-105 transition-all duration-300 ease-spring"
           />
           <div>
             <div className="font-bold text-base text-appText-bright leading-tight tracking-tight group-hover:text-accent transition-colors">
@@ -123,12 +123,12 @@ export const Sidebar: React.FC = () => {
               aria-current={isActive ? 'page' : undefined}
               className={`relative w-full flex items-center justify-between px-3.5 py-3 rounded-xl text-sm font-medium transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent ${
                 isActive
-                  ? 'before:absolute before:left-0 before:top-2 before:bottom-2 before:w-1 before:rounded-r-full before:bg-accent bg-amber-500/15 text-accent-hot font-bold border border-amber-500/35 shadow-sm ring-1 ring-amber-500/20'
-                  : 'text-appText/80 hover:bg-surface-2 hover:text-appText-bright'
+                  ? 'before:absolute before:left-0 before:top-2 before:bottom-2 before:w-1 before:rounded-r-full before:bg-accent bg-accent/10 text-accent font-semibold border border-border shadow-xs'
+                  : 'text-appText-muted hover:bg-surface-2 hover:text-appText-bright'
               }`}
             >
               <div className="flex items-center gap-3">
-                <span className={isActive ? 'text-accent-hot' : 'text-appText/60'}>
+                <span className={isActive ? 'text-accent' : 'text-appText-muted'}>
                   {item.icon}
                 </span>
                 <span>{item.label}</span>
@@ -136,7 +136,7 @@ export const Sidebar: React.FC = () => {
 
               <div className="flex items-center gap-2">
                 {item.badge ? (
-                  <span className="text-xs font-bold uppercase tracking-wider px-2 py-0.5 rounded-full bg-amber-500/20 text-amber-300 border border-amber-500/30">
+                  <span className="text-xs font-semibold uppercase tracking-wider px-2 py-0.5 rounded-full bg-accent/15 text-accent border border-accent/20">
                     {item.badge}
                   </span>
                 ) : (
@@ -152,14 +152,14 @@ export const Sidebar: React.FC = () => {
           <button
             onClick={openToolbox}
             aria-label="Buka Kotak Peralatan Belajar"
-            className="w-full flex items-center justify-between px-3.5 py-2.5 rounded-xl text-xs font-semibold bg-surface-2 hover:bg-surface-3 border border-accent/20 hover:border-accent text-appText-bright transition-all group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+            className="w-full flex items-center justify-between px-3.5 py-2.5 rounded-xl text-xs font-semibold bg-surface-2 hover:bg-surface-3 border border-border hover:border-accent/30 text-appText-bright transition-all group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
             title="Buka Kotak Peralatan Belajar (Bagan Kana, Konjugasi, Nuansa, Tes CAT)"
           >
             <div className="flex items-center gap-2.5">
               <Wrench className="w-4 h-4 text-accent group-hover:rotate-12 transition-transform" />
               <span>Kotak Peralatan</span>
             </div>
-            <span className="text-xs font-bold px-2 py-0.5 rounded bg-amber-500/15 text-accent-hot border border-amber-500/25">
+            <span className="text-xs font-semibold px-2 py-0.5 rounded bg-accent/10 text-accent border border-accent/20">
               7 Alat
             </span>
           </button>
@@ -168,14 +168,14 @@ export const Sidebar: React.FC = () => {
           <button
             onClick={() => useModalStore.getState().openModal('community')}
             aria-label="Buka Study Lounge & Komunitas"
-            className="w-full flex items-center justify-between px-3.5 py-2.5 rounded-xl text-xs font-semibold bg-surface-2 hover:bg-surface-3 border border-accent/20 hover:border-accent text-appText-bright transition-all group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+            className="w-full flex items-center justify-between px-3.5 py-2.5 rounded-xl text-xs font-semibold bg-surface-2 hover:bg-surface-3 border border-border hover:border-accent/30 text-appText-bright transition-all group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
             title="Buka Study Lounge & Komunitas Resmi Nugget Nihongo"
           >
             <div className="flex items-center gap-2.5">
-              <Users className="w-4 h-4 text-amber-500 group-hover:scale-110 transition-transform" />
+              <Users className="w-4 h-4 text-accent group-hover:scale-110 transition-transform" />
               <span>Komunitas & Lounge</span>
             </div>
-            <span className="text-xs font-bold px-1.5 py-0.5 rounded bg-amber-500/20 text-amber-700 dark:text-amber-300 border border-amber-500/30">
+            <span className="text-xs font-semibold px-1.5 py-0.5 rounded bg-accent/10 text-accent border border-accent/20">
               Baru
             </span>
           </button>
@@ -183,15 +183,15 @@ export const Sidebar: React.FC = () => {
       </nav>
 
       {/* Desktop Quick Utility Bar (Theme & Furigana Toggles) */}
-      <div className="px-3 py-2 border-t border-accent/10 bg-surface-2/20 flex items-center justify-between gap-1">
+      <div className="px-3 py-2.5 border-t border-border flex items-center justify-between gap-1.5">
         <button
           type="button"
           onClick={toggleTheme}
           aria-label={theme === 'dark' ? 'Ganti ke Tema Terang' : 'Ganti ke Tema Gelap'}
           title={theme === 'dark' ? 'Tema: Gelap (Klik untuk Terang)' : 'Tema: Terang (Klik untuk Gelap)'}
-          className="flex-1 flex items-center justify-center gap-1.5 py-1.5 px-2 rounded-lg bg-surface hover:bg-surface-3 border border-accent/15 text-appText-muted hover:text-accent text-xs font-semibold transition-all active:scale-95"
+          className="flex-1 min-h-[44px] flex items-center justify-center gap-1.5 py-2 px-2 rounded-xl bg-surface hover:bg-surface-3 border border-border text-appText-muted hover:text-accent text-xs font-semibold transition-all active:scale-95"
         >
-          {theme === 'dark' ? <Moon className="w-3.5 h-3.5 text-amber-400" /> : <Sun className="w-3.5 h-3.5 text-amber-500" />}
+          {theme === 'dark' ? <Moon className="w-3.5 h-3.5 text-accent" /> : <Sun className="w-3.5 h-3.5 text-accent" />}
           <span>{theme === 'dark' ? 'Gelap' : 'Terang'}</span>
         </button>
 
@@ -200,10 +200,10 @@ export const Sidebar: React.FC = () => {
           onClick={() => setShowFurigana(!showFurigana)}
           aria-label={showFurigana ? 'Sembunyikan Furigana' : 'Tampilkan Furigana'}
           title={showFurigana ? 'Furigana Aktif (Klik untuk Nonaktifkan)' : 'Furigana Nonaktif (Klik untuk Aktifkan)'}
-          className={`flex-1 flex items-center justify-center gap-1.5 py-1.5 px-2 rounded-lg border text-xs font-semibold transition-all active:scale-95 ${
+          className={`flex-1 min-h-[44px] flex items-center justify-center gap-1.5 py-2 px-2 rounded-xl border text-xs font-semibold transition-all active:scale-95 ${
             showFurigana
-              ? 'bg-amber-500/15 border-amber-500/30 text-accent font-bold'
-              : 'bg-surface hover:bg-surface-3 border-accent/15 text-appText-muted hover:text-accent'
+              ? 'bg-accent/15 border-accent text-accent font-semibold'
+              : 'bg-surface hover:bg-surface-3 border-border text-appText-muted hover:text-accent'
           }`}
         >
           <span lang="ja" className="font-jp font-bold text-xs">文</span>
@@ -212,24 +212,24 @@ export const Sidebar: React.FC = () => {
       </div>
 
       {/* Bottom User / Info Card */}
-      <div className="p-4 border-t border-accent/15 bg-surface-2/40 space-y-2">
+      <div className="p-4 border-t border-border space-y-2">
         <button
           onClick={openKotowaza}
-          className="w-full flex items-center justify-between text-xs text-appText-muted hover:text-accent transition-colors group cursor-pointer text-left"
+          className="w-full min-h-[44px] flex items-center justify-between text-xs text-appText-muted hover:text-accent transition-colors group cursor-pointer text-left px-1"
           title="Buka Galeri 52 Peribahasa Jepang Tradisional"
         >
           <span className="group-hover:underline flex items-center gap-1.5">
-            <Quote className="w-3.5 h-3.5 text-amber-400 group-hover:scale-110 transition-transform" />
+            <Quote className="w-3.5 h-3.5 text-accent group-hover:scale-110 transition-transform" />
             <span>Peribahasa (ことわざ)</span>
           </span>
-          <span className="text-xs font-bold px-2 py-0.5 rounded bg-amber-500/20 text-accent border border-amber-500/30">
+          <span className="text-xs font-semibold px-2 py-0.5 rounded bg-accent/10 text-accent border border-accent/20">
             52
           </span>
         </button>
 
         <button
           onClick={openPatchNotes}
-          className="w-full flex items-center justify-between text-xs text-appText-muted hover:text-accent transition-colors group cursor-pointer text-left pt-1 border-t border-accent/10"
+          className="w-full min-h-[44px] flex items-center justify-between text-xs text-appText-muted hover:text-accent transition-colors group cursor-pointer text-left pt-1 border-t border-border px-1"
           title="Lihat Catatan Rilis & Riwayat Versi Lengkap"
         >
           <span className="group-hover:underline font-mono">{APP_VERSION} · Catatan Rilis</span>

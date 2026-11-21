@@ -312,7 +312,7 @@ export const ReferencePillar: React.FC<ReferencePillarProps> = ({ onOpenTool }) 
                 onClick={() => setSelectedCategoryFilter(tab.id as any)}
                 aria-pressed={isSelected}
                 aria-label={`Filter alat: ${tab.label}`}
-                className={`px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold whitespace-nowrap shrink-0 transition-all active:scale-95 flex items-center gap-2 min-h-[40px] border ${
+                className={`px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold whitespace-nowrap shrink-0 transition-all active:scale-95 flex items-center gap-2 min-h-[40px] min-h-[44px] border ${
                   isSelected
                     ? 'bg-amber-500 text-stone-950 border-amber-500 shadow-sm font-black'
                     : 'bg-surface-2 border-accent/20 text-appText-muted hover:text-appText-bright hover:border-accent/40'

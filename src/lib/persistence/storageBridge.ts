@@ -14,7 +14,7 @@ export interface StorageRecord<T = any> {
 
 class StorageBridgeService {
   private dbName = 'nugget_nihongo_local_db_v1';
-  private dbVersion = 1;
+  private dbVersion = 2;
   private db: IDBDatabase | null = null;
   private memoryFallback: Map<string, StorageRecord> = new Map();
 
@@ -41,6 +41,12 @@ class StorageBridgeService {
           }
           if (!db.objectStoreNames.contains('offline_queue')) {
             db.createObjectStore('offline_queue', { keyPath: 'id' });
+          }
+          if (!db.objectStoreNames.contains('snapshots')) {
+            db.createObjectStore('snapshots', { keyPath: 'id' });
+          }
+          if (!db.objectStoreNames.contains('emergency_spill')) {
+            db.createObjectStore('emergency_spill', { keyPath: 'id' });
           }
         };
 
@@ -240,6 +246,68 @@ class StorageBridgeService {
     }
 
     return { migratedCards, migratedProgress };
+  }
+
+  /**
+   * Saves a full application snapshot into IndexedDB for disaster recovery.
+   */
+  public async saveSnapshot(id: string = 'latest', data: Record<string, any>): Promise<boolean> {
+    try {
+      const record = {
+        id,
+        data,
+        timestamp: Date.now(),
+        keyCount: Object.keys(data).length,
+      };
+      await this.setItem('snapshots', id, record);
+      return true;
+    } catch (err) {
+      console.warn('[storageBridge] Failed to save snapshot:', err);
+      return false;
+    }
+  }
+
+  /**
+   * Retrieves the most recent application snapshot from IndexedDB.
+   */
+  public async getLatestSnapshot(): Promise<{ id: string; timestamp: number; keyCount: number; data: Record<string, any> } | null> {
+    try {
+      const record = await this.getItem<any>('snapshots', 'latest');
+      if (record && record.data) {
+        return record;
+      }
+      return null;
+    } catch {
+      return null;
+    }
+  }
+
+  /**
+   * Restores localStorage keys from the latest IndexedDB snapshot.
+   */
+  public async restoreSnapshot(id: string = 'latest'): Promise<{ restoredKeys: number; success: boolean }> {
+    if (typeof window === 'undefined' || !window.localStorage) {
+      return { restoredKeys: 0, success: false };
+    }
+    try {
+      const snapshot = await this.getLatestSnapshot();
+      if (!snapshot || !snapshot.data) {
+        return { restoredKeys: 0, success: false };
+      }
+      let count = 0;
+      for (const [k, v] of Object.entries(snapshot.data)) {
+        if (typeof v === 'string') {
+          localStorage.setItem(k, v);
+        } else {
+          localStorage.setItem(k, JSON.stringify(v));
+        }
+        count++;
+      }
+      return { restoredKeys: count, success: true };
+    } catch (err) {
+      console.error('[storageBridge] Snapshot restore failed:', err);
+      return { restoredKeys: 0, success: false };
+    }
   }
 }
 

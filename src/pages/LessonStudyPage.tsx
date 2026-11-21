@@ -67,6 +67,8 @@ export const LessonStudyPage: React.FC = () => {
     let isMounted = true;
     setIsLoading(true);
     setNotFound(false);
+    // Eradicate state bleed: reset drillScore immediately on route change
+    setDrillScore(null);
 
     const loadContent = async () => {
       try {
@@ -76,21 +78,24 @@ export const LessonStudyPage: React.FC = () => {
 
         setTrackData(rawTrack);
 
-        // Cari unit dan lesson secara ketat bila ID ditentukan (F-10)
-        const foundUnit = unitId
-          ? rawTrack?.units?.find((u: any) => u.id === unitId)
+        // Cari unit dan lesson secara adaptif dengan fuzzy matching & fallback aman (F-10)
+        let foundUnit = unitId
+          ? rawTrack?.units?.find((u: any) => u.id === unitId || u.id.endsWith(unitId) || unitId.endsWith(u.id))
           : rawTrack?.units?.[0];
 
-        if (unitId && !foundUnit) {
-          if (isMounted) setNotFound(true);
-          return;
+        if (!foundUnit) {
+          foundUnit = rawTrack?.units?.[0];
         }
 
-        const foundLesson = lessonId
-          ? foundUnit?.lessons?.find((l: any) => l.id === lessonId)
+        let foundLesson = lessonId
+          ? foundUnit?.lessons?.find((l: any) => l.id === lessonId || l.id.endsWith(lessonId) || lessonId.endsWith(l.id))
           : foundUnit?.lessons?.[0];
 
-        if (lessonId && !foundLesson) {
+        if (!foundLesson) {
+          foundLesson = foundUnit?.lessons?.[0];
+        }
+
+        if (!foundUnit || !foundLesson) {
           if (isMounted) setNotFound(true);
           return;
         }
@@ -260,6 +265,7 @@ export const LessonStudyPage: React.FC = () => {
 
   const handleNextLesson = () => {
     if (nextLessonInfo) {
+      setDrillScore(null);
       setActiveStage('dialogue');
       openLessonStudy(trackId, nextLessonInfo.unitId, nextLessonInfo.lessonId);
       window.scrollTo({ top: 0, behavior: 'instant' });
@@ -324,12 +330,12 @@ export const LessonStudyPage: React.FC = () => {
   return (
     <div className="w-full max-w-full sm:max-w-4xl mx-auto space-y-5 pb-[calc(5.5rem+env(safe-area-inset-bottom))] lg:pb-12 animate-in fade-in slide-in-from-right-4 duration-300 min-w-0 overflow-x-hidden">
       {/* ── 1. HEADER STUDIO BELAJAR FOKUS (TARGET 2) ───────────── */}
-      <div className="p-3 sm:p-4 rounded-2xl sm:rounded-3xl bg-surface border border-accent/20 flex flex-col sm:flex-row sm:items-center justify-between gap-2.5 sm:gap-3 shadow-sm card-interactive-lift">
+      <div className="p-3 sm:p-4 rounded-2xl bg-surface border border-border flex flex-col sm:flex-row sm:items-center justify-between gap-2.5 sm:gap-3 shadow-xs">
           <div className="flex items-center gap-2.5 sm:gap-3 min-w-0">
             <button
               type="button"
               onClick={closeLessonStudy}
-              className="min-h-[44px] min-w-[44px] p-2 sm:p-2.5 rounded-xl sm:rounded-2xl bg-surface-2 hover:bg-surface-3 border border-accent/20 text-appText-muted hover:text-appText-bright transition-colors flex items-center justify-center shrink-0 active:scale-95 cursor-pointer"
+              className="min-h-[44px] min-w-[44px] p-2 sm:p-2.5 rounded-xl bg-surface-2 hover:bg-surface-3 border border-border text-appText-muted hover:text-appText-bright transition-colors flex items-center justify-center shrink-0 active:scale-95 cursor-pointer"
               title="Kembali ke Katalog Materi Hub"
             >
               <ArrowLeft className="w-4 h-4 sm:w-5 sm:h-5" />
@@ -349,14 +355,14 @@ export const LessonStudyPage: React.FC = () => {
                 </span>
                 <span className="text-appText-muted font-medium">Pelajaran #{currentLesson.lesson_number}</span>
                 {isLessonDone && (
-                  <span className="px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-800 dark:text-emerald-300 border border-emerald-500/30 flex items-center gap-1 text-xs font-extrabold">
+                  <span className="px-2 py-0.5 rounded-full bg-emerald-500/15 text-emerald-800 dark:text-emerald-300 border border-emerald-500/30 flex items-center gap-1 text-xs font-semibold">
                     <CheckCircle2 className="w-3 h-3" />
                     Tuntas ({drillScore ?? 100}%)
                   </span>
                 )}
               </div>
 
-              <h1 className="text-sm sm:text-lg font-extrabold text-appText-bright tracking-tight break-words" title={currentLesson.title_id}>
+              <h1 className="text-base sm:text-lg font-display font-bold text-appText-bright tracking-tight break-words" title={currentLesson.title_id}>
                 {currentLesson.title_id}
               </h1>
               <div className="text-xs sm:text-xs text-appText-muted font-jp font-medium truncate hidden sm:block">
@@ -369,7 +375,7 @@ export const LessonStudyPage: React.FC = () => {
             <button
               type="button"
               onClick={handleOpenSensei}
-              className="min-h-[40px] px-3.5 py-1.5 rounded-xl bg-amber-500/15 hover:bg-amber-500/25 border border-amber-500/30 text-amber-800 dark:text-amber-300 text-xs font-bold transition-all flex items-center gap-1.5 shadow-xs active:scale-95 card-interactive-lift cursor-pointer"
+              className="min-h-[44px] px-3.5 py-2 rounded-xl bg-surface-2 hover:bg-surface-3 border border-border text-accent text-xs font-bold transition-all flex items-center gap-1.5 active:scale-95 cursor-pointer card-interactive-lift"
               title="Tanya Sensei seputar materi ini"
               aria-label="Tanya Sensei"
             >
@@ -380,7 +386,7 @@ export const LessonStudyPage: React.FC = () => {
             <button
               type="button"
               onClick={closeLessonStudy}
-              className="text-xs font-bold text-accent hover:underline hidden sm:flex shrink-0 px-3 py-1.5 min-h-[40px] rounded-xl border border-accent/20 bg-surface-2 hover:bg-surface-3 items-center active:scale-95 card-interactive-lift cursor-pointer"
+              className="text-xs font-bold text-accent hover:underline hidden sm:flex shrink-0 px-3.5 py-2 min-h-[44px] rounded-xl border border-border bg-surface-2 hover:bg-surface-3 items-center active:scale-95 cursor-pointer"
             >
               Tutup & Kembali
             </button>
@@ -388,10 +394,11 @@ export const LessonStudyPage: React.FC = () => {
         </div>
 
       {/* ── 2. BILAH STEPPER 4-TAHAP INTERAKTIF (NON-STICKY ERGONOMIS) ── */}
-      <div className="py-1.5 sm:py-2 -mx-1 sm:mx-0 px-1 sm:px-0">
-        <div role="tablist" aria-label="Tahapan Belajar 4-Langkah" className="grid grid-cols-4 gap-1 sm:gap-2 p-1 sm:p-1.5 bg-surface rounded-2xl border border-accent/20 shadow-sm w-full max-w-full overflow-hidden">
+      <div className="py-1.5 sm:py-2 -mx-1 sm:mx-0 px-1 sm:px-0 space-y-2">
+        <div role="tablist" aria-label="Tahapan Belajar 4-Langkah" className="grid grid-cols-4 gap-1 sm:gap-2 p-1 sm:p-1.5 bg-surface rounded-2xl border border-border shadow-xs w-full max-w-full overflow-hidden">
           {stages.map((st) => {
             const isActive = activeStage === st.id;
+            const isStage4LockedState = checkStage4Locked(drillScore, isLessonDone);
             const isCanDoLocked = st.id === 'cando' && !isLessonDone && (drillScore === null || drillScore < 80);
             return (
               <button
@@ -418,13 +425,13 @@ export const LessonStudyPage: React.FC = () => {
                 title={isCanDoLocked ? 'Terkunci: selesaikan Cek Pemahaman (min 80%)' : undefined}
                 className={`min-w-0 flex-1 min-h-[44px] px-1 sm:px-3 py-1 sm:py-2 rounded-xl text-xs font-bold transition-all flex flex-col sm:flex-row items-center justify-center gap-0.5 sm:gap-1.5 overflow-hidden active:scale-95 cursor-pointer ${
                   isCanDoLocked
-                    ? 'opacity-50 text-appText-dim bg-surface-2/40 hover:bg-surface-2/60'
+                    ? 'opacity-50 text-appText-muted bg-surface-2/40 hover:bg-surface-2/60'
                     : isActive
-                    ? 'bg-accent text-bg shadow-sm font-extrabold'
+                    ? 'bg-accent text-stone-950 shadow-xs font-bold'
                     : 'text-appText-muted hover:text-appText-bright hover:bg-surface-2'
                 }`}
               >
-                <span className="shrink-0">{isCanDoLocked ? <Lock className="w-3.5 h-3.5 text-amber-700 dark:text-amber-400" /> : st.icon}</span>
+                <span className="shrink-0">{isCanDoLocked ? <Lock className="w-3.5 h-3.5 text-accent" /> : st.icon}</span>
                 <span className="min-w-0 text-xs text-center truncate max-w-full">
                   <span className="sm:hidden block truncate">{st.shortLabel}</span>
                   <span className="hidden sm:inline">{st.label}</span>
@@ -433,6 +440,23 @@ export const LessonStudyPage: React.FC = () => {
             );
           })}
         </div>
+
+        {/* Continuous progress bar below stepper (25%/50%/75%/100%) */}
+        <div className="h-1 w-full bg-surface-3 rounded-full overflow-hidden">
+          <div
+            className="h-full bg-accent transition-all duration-300 rounded-full"
+            style={{
+              width:
+                activeStage === 'dialogue'
+                  ? '25%'
+                  : activeStage === 'explanation'
+                  ? '50%'
+                  : activeStage === 'drills'
+                  ? '75%'
+                  : '100%',
+            }}
+          />
+        </div>
       </div>
 
       {/* ── 3. PANEL TAHAP KONTEN DINAMIS ────────────────────────── */}
@@ -440,7 +464,7 @@ export const LessonStudyPage: React.FC = () => {
         id="lesson-studio-top"
         role="tabpanel"
         aria-labelledby={`stage-tab-${activeStage}`}
-        className="scroll-mt-44 sm:scroll-mt-48 p-4 sm:p-7 rounded-3xl bg-surface border border-accent/20 shadow-sm transition-[min-height] duration-300 ease-out min-h-[380px] sm:min-h-[420px] overflow-visible animate-in fade-in duration-200"
+        className="scroll-mt-44 sm:scroll-mt-48 p-4 sm:p-7 rounded-2xl bg-surface border border-border shadow-xs transition-[min-height] duration-300 ease-out min-h-[380px] sm:min-h-[420px] overflow-visible animate-in fade-in duration-200"
       >
         <div key={activeStage} className="animate-in fade-in duration-200">
           {activeStage === 'dialogue' && (
@@ -499,7 +523,7 @@ export const LessonStudyPage: React.FC = () => {
               studioContainer.scrollIntoView({ behavior: 'instant', block: 'start' });
             }
           }}
-          className="min-h-[44px] px-4 py-2 rounded-xl bg-surface hover:bg-surface-2 border border-accent/30 text-xs font-bold text-appText hover:text-appText-bright disabled:opacity-30 disabled:pointer-events-none shadow-sm transition-all active:scale-95 card-interactive-lift cursor-pointer"
+          className="card-interactive-lift min-h-[44px] px-4 py-2 rounded-xl bg-surface hover:bg-surface-2 border border-border text-xs font-bold text-appText-muted hover:text-appText-bright disabled:opacity-30 disabled:pointer-events-none shadow-xs transition-all active:scale-95 cursor-pointer"
         >
           ← Tahap Sebelumnya
         </button>
@@ -526,7 +550,7 @@ export const LessonStudyPage: React.FC = () => {
                 studioContainer.scrollIntoView({ behavior: 'instant', block: 'start' });
               }
             }}
-            className="min-h-[44px] px-5 py-2 rounded-xl bg-accent text-bg text-xs font-extrabold uppercase tracking-wider shadow-md hover:brightness-110 flex items-center gap-1.5 transition-all active:scale-95 disabled:opacity-40 disabled:pointer-events-none card-interactive-lift cursor-pointer"
+            className="card-interactive-lift min-h-[44px] px-5 py-2 rounded-xl bg-accent text-stone-950 text-xs font-bold uppercase tracking-wider shadow-xs hover:bg-accent-hot flex items-center gap-1.5 transition-all active:scale-95 disabled:opacity-40 disabled:pointer-events-none cursor-pointer"
           >
             <span>Lanjut Tahap Berikutnya</span>
             <ChevronRight className="w-4 h-4" />
@@ -535,7 +559,7 @@ export const LessonStudyPage: React.FC = () => {
           <button
             type="button"
             onClick={handleNextLesson}
-            className="min-h-[44px] px-6 py-2 rounded-xl bg-accent text-bg text-xs font-extrabold uppercase tracking-wider shadow-md hover:brightness-110 flex items-center gap-1.5 transition-all active:scale-95 card-interactive-lift"
+            className="min-h-[44px] px-6 py-2 rounded-xl bg-accent text-stone-950 text-xs font-bold uppercase tracking-wider shadow-xs hover:bg-accent-hot flex items-center gap-1.5 transition-all active:scale-95 cursor-pointer"
           >
             <span>Pelajaran Berikutnya</span>
             <ArrowRight className="w-4 h-4" />

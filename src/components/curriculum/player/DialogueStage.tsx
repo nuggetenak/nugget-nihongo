@@ -4,7 +4,7 @@
 // ══════════════════════════════════════════════════════════════════
 
 import React, { useState, useRef, useEffect } from 'react';
-import { Volume2, Eye, EyeOff, Gauge, Play, Square, Compass, Sparkles } from 'lucide-react';
+import { Volume2, Eye, EyeOff, Gauge, Play, Square, Compass } from 'lucide-react';
 import { LessonDialogueLine } from '../../../types/curriculum';
 import { useAppStore } from '../../../store/useAppStore';
 import { speakJapanese } from '../../../lib/audio/speechEngine';
@@ -27,34 +27,47 @@ export const DialogueStage: React.FC<DialogueStageProps> = ({ dialogue = [], sce
   const stopPlayingAllRef = useRef(false);
   const activeAudioRef = useRef<HTMLAudioElement | null>(null);
 
+  const stopAllAudio = () => {
+    if (activeAudioRef.current) {
+      activeAudioRef.current.pause();
+      activeAudioRef.current = null;
+    }
+    if (typeof window !== 'undefined' && 'speechSynthesis' in window) {
+      window.speechSynthesis.cancel();
+    }
+  };
+
   // Unmount audio cleanup to prevent audio overlap across stages or page navigation
   useEffect(() => {
     return () => {
       stopPlayingAllRef.current = true;
-      if (activeAudioRef.current) {
-        activeAudioRef.current.pause();
-        activeAudioRef.current = null;
-      }
-      if (typeof window !== 'undefined' && 'speechSynthesis' in window) {
-        window.speechSynthesis.cancel();
-      }
+      stopAllAudio();
     };
   }, []);
 
-  const handlePlayAudio = async (line: LessonDialogueLine) => {
-    setPlayingLineId(line.id);
+  const playLineAudio = async (line: LessonDialogueLine): Promise<void> => {
+    stopAllAudio();
 
     // Bimodal audio playback: try pre-rendered audio asset first if available
     if (line.audio_url) {
       try {
         const audio = new Audio(line.audio_url);
         audio.playbackRate = speechRate;
+        activeAudioRef.current = audio;
         await new Promise<void>((resolve, reject) => {
-          audio.onended = () => resolve();
-          audio.onerror = () => reject(new Error('Pre-rendered audio playback failed'));
-          audio.play().catch(reject);
+          audio.onended = () => {
+            activeAudioRef.current = null;
+            resolve();
+          };
+          audio.onerror = () => {
+            activeAudioRef.current = null;
+            reject(new Error('Pre-rendered audio playback failed'));
+          };
+          audio.play().catch((err) => {
+            activeAudioRef.current = null;
+            reject(err);
+          });
         });
-        setPlayingLineId(null);
         return;
       } catch {
         // Fallback to Web Speech API on error or offline
@@ -63,9 +76,20 @@ export const DialogueStage: React.FC<DialogueStageProps> = ({ dialogue = [], sce
 
     const persona = resolveSpeakerPersona(line.speaker);
     const textToSpeak = line.jp || line.furigana || '';
-    await speakJapanese(textToSpeak, { rate: speechRate, gender: persona.gender }, () => {
+    await speakJapanese(textToSpeak, { rate: speechRate, gender: persona.gender });
+  };
+
+  const handlePlayAudio = async (line: LessonDialogueLine) => {
+    if (isPlayingAll) {
+      stopPlayingAllRef.current = true;
+      setIsPlayingAll(false);
+    }
+    setPlayingLineId(line.id);
+    try {
+      await playLineAudio(line);
+    } finally {
       setPlayingLineId(null);
-    });
+    }
   };
 
   const toggleRate = () => {
@@ -77,6 +101,7 @@ export const DialogueStage: React.FC<DialogueStageProps> = ({ dialogue = [], sce
       stopPlayingAllRef.current = true;
       setIsPlayingAll(false);
       setPlayingLineId(null);
+      stopAllAudio();
       return;
     }
 
@@ -89,10 +114,13 @@ export const DialogueStage: React.FC<DialogueStageProps> = ({ dialogue = [], sce
       const line = dialogue[i];
       setPlayingLineId(line.id);
 
-      const persona = resolveSpeakerPersona(line.speaker);
-      const textToSpeak = line.jp || line.furigana || '';
-      await speakJapanese(textToSpeak, { rate: speechRate, gender: persona.gender });
+      try {
+        await playLineAudio(line);
+      } catch {
+        // Continue to next line on failure
+      }
 
+      if (stopPlayingAllRef.current) break;
       // Jeda alami antar penutur
       await new Promise((r) => setTimeout(r, 400));
     }
@@ -103,7 +131,7 @@ export const DialogueStage: React.FC<DialogueStageProps> = ({ dialogue = [], sce
 
   if (!dialogue || dialogue.length === 0) {
     return (
-      <div className="py-12 text-center text-appText-muted">
+      <div className="py-12 text-center text-appText-muted text-xs">
         Tidak ada dialog khusus untuk pelajaran ini. Silakan lanjut ke bedah materi.
       </div>
     );
@@ -113,7 +141,7 @@ export const DialogueStage: React.FC<DialogueStageProps> = ({ dialogue = [], sce
     <div className="space-y-4">
       {/* ── Pengantar Situasi Percakapan ─────────────────────────── */}
       {sceneIntro && (
-        <div className="p-4 rounded-2xl bg-surface-2 border border-accent/20 flex items-start gap-3 shadow-sm card-interactive-lift">
+        <div className="p-4 rounded-r-lg bg-amber-500/10 border-l-4 border-accent flex items-start gap-3 shadow-xs">
           <div className="p-2 rounded-xl bg-amber-500/15 text-accent shrink-0 mt-0.5">
             <Compass className="w-4 h-4" />
           </div>
@@ -129,16 +157,16 @@ export const DialogueStage: React.FC<DialogueStageProps> = ({ dialogue = [], sce
       )}
 
       {/* ── Toolbar Kontrol Dialog ───────────────────────────────── */}
-      <div className="flex flex-wrap items-center justify-between gap-2 p-3 rounded-2xl bg-surface-2 border border-accent/15 text-xs shadow-sm">
+      <div className="flex flex-wrap items-center justify-between gap-2 p-2.5 sm:p-3 rounded-xl bg-surface-2/40 text-xs shadow-xs">
         <div className="flex items-center gap-2">
           {/* Tombol Putar Penuh */}
           <button
             type="button"
             onClick={handlePlayAll}
-            className={`min-h-[40px] px-3.5 py-1.5 rounded-xl font-bold flex items-center gap-1.5 transition-all active:scale-95 shadow-sm ${
+            className={`min-h-[44px] px-3.5 py-2 rounded-xl font-bold flex items-center gap-1.5 transition-all active:scale-95 shadow-xs cursor-pointer ${
               isPlayingAll
                 ? 'bg-rose-500 text-white animate-pulse'
-                : 'bg-accent text-bg hover:brightness-110'
+                : 'bg-accent text-stone-950 hover:bg-accent-hot'
             }`}
             title="Dengarkan seluruh percakapan secara berurutan"
           >
@@ -150,10 +178,10 @@ export const DialogueStage: React.FC<DialogueStageProps> = ({ dialogue = [], sce
           <button
             type="button"
             onClick={toggleRate}
-            className={`min-h-[40px] px-3 py-1.5 rounded-xl font-bold flex items-center gap-1.5 border transition-all active:scale-95 cursor-pointer ${
+            className={`min-h-[44px] px-3 py-2 rounded-xl font-bold flex items-center gap-1.5 border transition-all active:scale-95 cursor-pointer ${
               speechRate !== 1.0
-                ? 'bg-amber-500 text-bg border-amber-500 shadow-sm'
-                : 'bg-surface border-accent/20 text-appText-muted hover:text-appText-bright'
+                ? 'bg-amber-500/15 text-accent border-accent/40 shadow-xs'
+                : 'bg-surface-2 border-border text-appText-muted hover:text-appText-bright'
             }`}
             title="Ubah kecepatan suara"
             aria-label={`Kecepatan suara saat ini ${speechRate}x. Klik untuk mengubah.`}
@@ -168,7 +196,7 @@ export const DialogueStage: React.FC<DialogueStageProps> = ({ dialogue = [], sce
           <button
             type="button"
             onClick={() => setShowFurigana(!showFurigana)}
-            className="min-h-[40px] px-2.5 py-1.5 rounded-xl bg-surface border border-accent/20 text-appText-muted hover:text-appText-bright flex items-center gap-1.5 active:scale-95"
+            className="min-h-[44px] px-3 py-2 rounded-xl bg-surface-2 border border-border text-appText-muted hover:text-appText-bright flex items-center gap-1.5 active:scale-95 cursor-pointer"
             title="Sembunyikan atau tampilkan furigana"
           >
             {showFurigana ? <Eye className="w-3.5 h-3.5 text-accent" /> : <EyeOff className="w-3.5 h-3.5" />}
@@ -178,7 +206,7 @@ export const DialogueStage: React.FC<DialogueStageProps> = ({ dialogue = [], sce
           <button
             type="button"
             onClick={() => setShowTranslation(!showTranslation)}
-            className="min-h-[40px] px-2.5 py-1.5 rounded-xl bg-surface border border-accent/20 text-appText-muted hover:text-appText-bright flex items-center gap-1.5 active:scale-95"
+            className="min-h-[44px] px-3 py-2 rounded-xl bg-surface-2 border border-border text-appText-muted hover:text-appText-bright flex items-center gap-1.5 active:scale-95 cursor-pointer"
             title="Sembunyikan atau tampilkan arti bahasa Indonesia"
           >
             {showTranslation ? <Eye className="w-3.5 h-3.5 text-accent" /> : <EyeOff className="w-3.5 h-3.5" />}
@@ -188,22 +216,21 @@ export const DialogueStage: React.FC<DialogueStageProps> = ({ dialogue = [], sce
       </div>
 
       {/* ── Chat Stream Percakapan dengan Bimodal Audio Highlighting ── */}
-      <div className="space-y-3.5 pt-1">
+      <div className="space-y-3 pt-1">
         {dialogue.map((line, idx) => {
           const isPlaying = playingLineId === line.id;
-          const isEven = idx % 2 === 0;
 
           return (
             <div
               key={line.id || idx}
-              className={`flex items-start gap-3 p-4 sm:p-5 rounded-2xl border transition-all duration-200 ${
+              className={`flex items-start gap-3 p-3.5 sm:p-4 rounded-xl transition-all duration-200 ${
                 isPlaying
-                  ? 'bg-amber-500/15 border-amber-500 shadow-md ring-2 ring-amber-500/40 translate-x-1'
-                  : 'bg-surface border-accent/15 hover:border-accent/30 card-interactive-lift'
+                  ? 'bg-amber-500/15 border-l-4 border-accent shadow-xs translate-x-1'
+                  : 'bg-surface-2/40 hover:bg-surface-2/70'
               }`}
             >
               {/* Avatar Penutur */}
-              <div className={`w-11 h-11 rounded-2xl bg-surface-2 border border-accent/20 flex items-center justify-center text-2xl shrink-0 select-none shadow-sm transition-transform ${
+              <div className={`w-11 h-11 rounded-xl bg-surface-2 flex items-center justify-center text-2xl shrink-0 select-none shadow-xs transition-transform ${
                 isPlaying ? 'scale-110 animate-pulse ring-2 ring-amber-400/50' : ''
               }`}>
                 {line.avatar || resolveSpeakerPersona(line.speaker, line.speakerRole).avatar}
@@ -215,7 +242,7 @@ export const DialogueStage: React.FC<DialogueStageProps> = ({ dialogue = [], sce
                   <div className="flex flex-wrap items-center gap-2">
                     <span className="font-bold text-xs sm:text-sm text-appText-bright">{line.speaker}</span>
                     {line.speakerRole && (
-                      <span className="text-xs px-2 py-0.5 rounded-md bg-surface-2 border border-accent/15 text-appText-muted font-medium">
+                      <span className="text-xs px-2 py-0.5 rounded-md bg-surface-2 border border-border text-appText-muted font-medium">
                         {line.speakerRole}
                       </span>
                     )}
@@ -230,10 +257,10 @@ export const DialogueStage: React.FC<DialogueStageProps> = ({ dialogue = [], sce
                   <button
                     type="button"
                     onClick={() => handlePlayAudio(line)}
-                    className={`min-h-[40px] min-w-[40px] p-2 rounded-xl border flex items-center justify-center transition-all active:scale-95 shrink-0 ${
+                    className={`min-h-[44px] min-w-[44px] p-2.5 rounded-xl border flex items-center justify-center transition-all active:scale-95 shrink-0 cursor-pointer card-interactive-lift ${
                       isPlaying
-                        ? 'bg-accent text-bg border-accent shadow-md animate-pulse'
-                        : 'bg-surface-2 border-accent/20 text-accent hover:bg-surface-3'
+                        ? 'bg-accent text-stone-950 border-accent shadow-xs animate-pulse'
+                        : 'bg-surface-2 border-border text-accent hover:bg-surface-3'
                     }`}
                     title="Dengarkan pelafalan kalimat ini"
                     aria-label={`Dengarkan kalimat dari ${line.speaker}`}
@@ -256,7 +283,7 @@ export const DialogueStage: React.FC<DialogueStageProps> = ({ dialogue = [], sce
 
                 {/* Terjemahan Bahasa Indonesia */}
                 {showTranslation && (
-                  <div className="text-xs sm:text-sm text-appText pt-1.5 border-t border-accent/10 leading-relaxed">
+                  <div className="text-xs sm:text-sm text-appText pt-1.5 border-t border-border leading-relaxed">
                     {line.idText}
                   </div>
                 )}
@@ -271,7 +298,7 @@ export const DialogueStage: React.FC<DialogueStageProps> = ({ dialogue = [], sce
           <button
             type="button"
             onClick={onCompleteStage}
-            className="min-h-[44px] px-5 py-2.5 rounded-xl bg-accent hover:bg-accent-hot text-bg font-extrabold text-xs uppercase tracking-wider shadow-md flex items-center gap-2 transition-all active:scale-95 cursor-pointer"
+            className="min-h-[44px] px-5 py-2.5 rounded-xl bg-accent hover:bg-accent-hot text-stone-950 font-bold text-xs uppercase tracking-wider shadow-xs flex items-center gap-2 transition-all active:scale-95 cursor-pointer"
           >
             <span>Pahami Penjelasan Materi</span>
             <span aria-hidden="true">→</span>

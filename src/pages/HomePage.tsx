@@ -289,29 +289,21 @@ export const HomePage: React.FC = () => {
   }, [trackProgress, activeTrackId]);
 
   return (
-    <div className="w-full max-w-6xl mx-auto px-3 sm:px-6 pt-3 sm:pt-6 pb-[calc(5.5rem+env(safe-area-inset-bottom))] lg:pb-12 space-y-4 sm:space-y-6 min-w-0 overflow-x-hidden">
+    <div className="w-full max-w-6xl mx-auto px-3 sm:px-6 pt-3 sm:pt-6 space-y-4 sm:space-y-6 min-w-0 overflow-x-hidden pb-[calc(5.5rem+env(safe-area-inset-bottom))] lg:pb-12">
       {/* ── TIER 1: GUIDED COMPACT WA-BENTO MISSION COMMAND HERO (~180px) ── */}
-      <div className="relative overflow-hidden rounded-2xl sm:rounded-3xl bg-gradient-to-br from-amber-500/10 via-surface to-surface-2 border border-accent/25 p-4 sm:p-6 shadow-md">
+      <div className="relative overflow-hidden rounded-2xl bg-surface border border-border p-4 sm:p-6 shadow-xs">
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 sm:gap-6">
           <div className="max-w-2xl space-y-3 min-w-0">
             {/* Badges Row */}
             <div className="flex flex-wrap items-center gap-1.5 sm:gap-2">
-              <div className="inline-flex items-center gap-1.5 px-2 py-0.5 sm:px-3 sm:py-1 rounded-full bg-amber-500/15 border border-amber-500/30 text-accent-hot text-xs font-bold font-mono tabular-nums">
-                <Flame className={`w-3.5 h-3.5 shrink-0 ${streak > 0 ? 'fill-amber-500 text-amber-500' : 'text-appText-muted opacity-60'}`} />
-                <span>
-                  <span className="hidden sm:inline">{streak > 0 ? `Streak ${streak} Hari Aktif` : 'Streak 0 Hari (Mulai Hari Ini)'}</span>
-                  <span className="sm:hidden">{streak > 0 ? `Streak ${streak}h` : 'Streak 0h'}</span>
-                </span>
-              </div>
-
               {/* Status Target XP Riil (Anti-Kontradiksi 0 XP) */}
               <span
-                className={`text-xs font-bold px-2 py-0.5 sm:px-3 sm:py-1 rounded-full border ${
+                className={`text-xs font-semibold px-2 py-0.5 sm:px-3 sm:py-1 rounded-full border ${
                   todayXP === 0
-                    ? 'bg-amber-500/15 border-amber-500/30 text-accent-hot'
+                    ? 'bg-surface-2 text-appText-muted border-border'
                     : isGoalReached
-                    ? 'bg-emerald-500/15 border-emerald-500/30 text-emerald-600 dark:text-emerald-400 font-black'
-                    : 'bg-amber-500/15 border-amber-500/30 text-accent-hot'
+                    ? 'bg-emerald-500/15 text-emerald-800 dark:text-emerald-300 border-emerald-500/30'
+                    : 'bg-accent/10 text-accent border-accent/20'
                 }`}
               >
                 <span className="hidden sm:inline">
@@ -322,16 +314,12 @@ export const HomePage: React.FC = () => {
                     : `⚡ Momentum (${todayXP}/${dailyGoalXP} XP)`}
                 </span>
                 <span className="sm:hidden">
-                  {todayXP === 0
-                    ? `🌱 ${todayXP}/${dailyGoalXP} XP`
-                    : isGoalReached
-                    ? `✨ ${todayXP}/${dailyGoalXP} XP`
-                    : `⚡ ${todayXP}/${dailyGoalXP} XP`}
+                  {`${todayXP}/${dailyGoalXP} XP`}
                 </span>
               </span>
 
               {dueCount > 0 && (
-                <span className="text-xs font-bold px-2 py-0.5 sm:px-3 sm:py-1 rounded-full bg-amber-500/20 border border-amber-500/35 text-accent font-mono">
+                <span className="text-xs font-semibold px-2.5 py-0.5 rounded-full bg-accent/10 border border-accent/20 text-accent font-mono">
                   <span className="sr-only">📬 {dueCount} FSRS Due</span>
                   <span className="hidden sm:inline">🌱 {dueCount} Kata Perlu Diulas</span>
                   <span className="sm:hidden">🌱 {dueCount} Diulas</span>
@@ -347,7 +335,7 @@ export const HomePage: React.FC = () => {
                 <span>今日も頑張ろう</span>
                 <span className="text-appText-muted font-ui">· Misi Hari Ini</span>
               </div>
-              <h1 className="text-xl sm:text-2xl font-black text-appText-bright tracking-tight leading-snug">
+              <h1 className="font-display text-xl sm:text-2xl font-bold text-appText-bright tracking-tight leading-snug">
                 Selamat Belajar 🍙
               </h1>
               <p className="text-xs sm:text-sm text-appText-muted leading-relaxed line-clamp-2 mt-1">
@@ -359,13 +347,11 @@ export const HomePage: React.FC = () => {
               </p>
             </div>
 
-            {/* Next Lesson Can-Do Tag (Compact 1-Baris) */}
+            {/* Next Lesson Can-Do Tag (Editorial Fluid Quote) */}
             {nextLesson?.canDo && (
-              <div className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-amber-500/10 border border-amber-500/20 text-accent-hot text-xs font-semibold max-w-full">
-                <span className="shrink-0 font-bold">🎯 Target Can-Do:</span>
-                <span className="font-normal text-appText-bright truncate">
-                  {nextLesson.canDo}
-                </span>
+              <div className="border-l-2 border-accent/50 pl-3 py-1 text-xs text-appText-muted leading-relaxed">
+                <span className="font-semibold text-accent mr-1.5">🎯 Sasaran Can-Do:</span>
+                <span>{nextLesson.canDo}</span>
               </div>
             )}
 
@@ -395,29 +381,29 @@ export const HomePage: React.FC = () => {
                     );
                   }
                 }}
-                className="min-h-[48px] px-5 sm:px-6 py-3 rounded-xl bg-accent hover:bg-accent-hot text-bg font-extrabold text-xs sm:text-base flex items-center gap-2 sm:gap-2.5 transition-all shadow-glow hover:shadow-lg active:scale-95 cursor-pointer max-w-full"
+                className="min-h-[48px] px-5 sm:px-6 py-3 rounded-xl bg-accent hover:bg-accent-hot text-white dark:text-stone-950 font-semibold text-xs sm:text-base flex items-center gap-2 sm:gap-2.5 transition-all shadow-glow active:scale-95 cursor-pointer max-w-full"
               >
-                <Play className="w-4 h-4 fill-bg shrink-0" />
-                <span className="font-extrabold tracking-wide truncate max-w-[200px] xs:max-w-[260px] sm:max-w-md inline-block align-bottom">
+                <Play className="w-4 h-4 fill-current shrink-0" />
+                <span className="font-semibold tracking-wide truncate max-w-[200px] xs:max-w-[260px] sm:max-w-md inline-block align-bottom">
                   {(() => {
                     if (nextLesson) {
                       if (nextLesson.isAllCompleted) {
-                        return `Ulas Kembali · Unit ${nextLesson.unitNumber} (${nextLesson.title})`;
+                        return `Ulas Kembali · Unit ${nextLesson.unitNumber}`;
                       }
                       if (nextLesson.completedLessonsCount > 0) {
-                        return `Lanjut Belajar · Unit ${nextLesson.unitNumber} (${nextLesson.title})`;
+                        return `Lanjut Belajar · Unit ${nextLesson.unitNumber}`;
                       }
-                      return `Mulai Belajar · Unit ${nextLesson.unitNumber} (${nextLesson.title})`;
+                      return `Mulai Belajar · Unit ${nextLesson.unitNumber}`;
                     }
                     if (lastStudiedLesson) {
                       const trackLabel = lastStudiedLesson.trackId.toUpperCase();
-                      const { unitNum, lessonNum } = extractUnitAndLessonNumbers(
+                      const { unitNum } = extractUnitAndLessonNumbers(
                         lastStudiedLesson.unitId,
                         lastStudiedLesson.lessonId
                       );
-                      return `Lanjut Belajar · ${trackLabel} Unit ${unitNum} (Pelajaran ${lessonNum})`;
+                      return `Lanjut Belajar · ${trackLabel} Unit ${unitNum}`;
                     }
-                    return `Mulai Belajar · Bab 1 (${(activeTrackId || 'n5').toUpperCase()})`;
+                    return `Mulai Belajar · Unit 1`;
                   })()}
                 </span>
               </button>
@@ -427,9 +413,9 @@ export const HomePage: React.FC = () => {
                 <button
                   type="button"
                   onClick={() => setActiveTab('kebun')}
-                  className="min-h-[44px] px-4 py-2.5 rounded-xl bg-amber-500/15 hover:bg-amber-500/25 text-accent-hot border border-amber-500/30 font-bold text-xs sm:text-sm flex items-center gap-1.5 transition-all active:scale-95 cursor-pointer"
+                  className="min-h-[44px] px-4 py-2.5 rounded-xl bg-accent/10 hover:bg-accent/15 text-accent border border-accent/25 font-semibold text-xs sm:text-sm flex items-center gap-1.5 transition-all active:scale-95 cursor-pointer"
                 >
-                  <Zap className="w-4 h-4 fill-accent-hot shrink-0" />
+                  <Zap className="w-4 h-4 fill-current shrink-0" />
                   <span>Ulas FSRS ({dueCount})</span>
                 </button>
               ) : totalLearnedCards === 0 ? (
@@ -437,7 +423,7 @@ export const HomePage: React.FC = () => {
                   <button
                     type="button"
                     onClick={openCatPlacement}
-                    className="min-h-[44px] px-4 py-2.5 rounded-xl bg-surface-2 hover:bg-surface-3 text-accent border border-accent/25 font-bold text-xs sm:text-sm flex items-center gap-1.5 transition-all active:scale-95 cursor-pointer"
+                    className="min-h-[44px] px-4 py-2.5 rounded-xl bg-surface-2 hover:bg-surface-3 text-accent border border-border font-semibold text-xs sm:text-sm flex items-center gap-1.5 transition-all active:scale-95 cursor-pointer"
                     title="Uji level adaptif 3 menit"
                   >
                     <Compass className="w-4 h-4 text-accent shrink-0" />
@@ -448,20 +434,20 @@ export const HomePage: React.FC = () => {
                 <button
                   type="button"
                   onClick={() => setActiveTab('kebun')}
-                  className="min-h-[44px] px-4 py-2.5 rounded-xl bg-surface-2 hover:bg-surface-3 text-appText-muted hover:text-appText-bright border border-accent/20 font-bold text-xs sm:text-sm flex items-center gap-1.5 transition-all active:scale-95 cursor-pointer"
+                  className="min-h-[44px] px-4 py-2.5 rounded-xl bg-surface-2 hover:bg-surface-3 text-appText-muted hover:text-appText-bright border border-border font-semibold text-xs sm:text-sm flex items-center gap-1.5 transition-all active:scale-95 cursor-pointer"
                 >
-                  <Sprout className="w-4 h-4 text-emerald-400 shrink-0" />
+                  <Sprout className="w-4 h-4 text-emerald-600 dark:text-emerald-400 shrink-0" />
                   <span>Kebun Kata</span>
                 </button>
               )}
             </div>
           </div>
 
-          <div className="flex shrink-0 items-center justify-center self-center mt-0">
+          <div className="hidden sm:flex shrink-0 items-center justify-center self-center mt-0">
             <IrasutoyaImage
               assetId="sensei_teaching"
               animateFloat
-              className="w-14 h-14 sm:w-24 sm:h-24 object-contain filter drop-shadow-md shrink-0"
+              className="w-14 h-14 sm:w-24 sm:h-24 object-contain filter drop-shadow-xs shrink-0"
               alt="Sensei Nugget Nihongo (いらすとや)"
               showAttributionTooltip
             />
@@ -472,48 +458,51 @@ export const HomePage: React.FC = () => {
       {/* ── TIER 2: HARMONIOUS DAILY COMPANION DUO (XP GOAL & KOTOWAZA) ── */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-3.5 sm:gap-4">
         {/* Widget A: Target Harian & Momentum Belajar */}
-        <div className="bg-surface border border-accent/20 rounded-2xl sm:rounded-3xl p-4 sm:p-5 flex flex-col justify-between shadow-sm space-y-3 min-w-0 card-interactive-lift">
+        <div className="bg-surface border border-border rounded-2xl p-4 sm:p-5 flex flex-col justify-between shadow-xs space-y-3 min-w-0">
           <div className="space-y-2.5">
             <div className="flex items-center justify-between gap-2">
               <div className="flex items-center gap-2 min-w-0">
                 <Calendar className="w-4 h-4 text-accent shrink-0" />
-                <span className="text-xs sm:text-sm font-bold uppercase tracking-wider text-appText-bright truncate">
+                <span className="text-xs sm:text-sm font-semibold uppercase tracking-wider text-appText-bright truncate">
                   Target Harian & Momentum
                 </span>
               </div>
               <span
-                className={`text-xs sm:text-sm font-bold font-mono tabular-nums shrink-0 ${
-                  isGoalReached ? 'text-emerald-700 dark:text-emerald-400 font-black' : 'text-accent-hot dark:text-amber-400 font-bold'
+                className={`text-xs sm:text-sm font-semibold font-mono tabular-nums shrink-0 ${
+                  isGoalReached ? 'text-emerald-700 dark:text-emerald-400 font-bold' : 'text-accent-hot dark:text-amber-400 font-semibold'
                 }`}
               >
                 {todayXP} / {dailyGoalXP} XP {isGoalReached ? '🎯' : ''}
               </span>
             </div>
 
-            <div className="w-full bg-surface-3 h-2.5 rounded-full overflow-hidden border border-accent/15 my-1">
+            <div className="w-full bg-surface-3 h-2.5 rounded-full overflow-hidden my-1">
               <div
                 className={`h-full rounded-full transition-all duration-500 ${
-                  isGoalReached ? 'bg-emerald-500 shadow-glow' : 'bg-accent'
+                  isGoalReached ? 'bg-emerald-600 dark:bg-emerald-400' : 'bg-accent'
                 }`}
                 style={{ width: `${todayXP === 0 ? 2 : goalProgressPercent}%` }}
               />
             </div>
 
-            <div className="grid grid-cols-3 gap-1.5 sm:gap-2 py-2 px-2 sm:px-3 bg-surface-2/70 rounded-xl border border-accent/15 text-center">
+            <div className="grid grid-cols-3 divide-x divide-border py-2 border-y border-border text-center">
               <div>
                 <div className="text-xs font-medium text-appText-muted">Total XP</div>
-                <div className="text-xs sm:text-sm font-bold font-mono tabular-nums text-appText-bright mt-0.5">{xp}</div>
+                <div className="text-xs sm:text-sm font-semibold font-mono tabular-nums text-appText-bright mt-0.5">{xp}</div>
               </div>
-              <div>
+              <div title={streak > 0 ? `Streak ${streak} Hari Aktif` : 'Streak 0 Hari (Mulai Hari Ini)'}>
                 <div className="text-xs font-medium text-appText-muted">Streak</div>
-                <div className="text-xs sm:text-sm font-bold font-mono tabular-nums text-accent-hot mt-0.5">{streak}h</div>
+                <div className="text-xs sm:text-sm font-semibold font-mono tabular-nums text-accent mt-0.5">
+                  <span className="sr-only">{streak > 0 ? `Streak ${streak} Hari Aktif` : 'Streak 0 Hari (Mulai Hari Ini)'}</span>
+                  {streak}h
+                </div>
               </div>
               <div>
                 <div className="text-xs font-medium text-appText-muted">
                   <span className="hidden sm:inline">Kartu FSRS</span>
                   <span className="sm:hidden">FSRS</span>
                 </div>
-                <div className="text-xs sm:text-sm font-bold font-mono tabular-nums text-appText-bright mt-0.5">{totalLearnedCards}</div>
+                <div className="text-xs sm:text-sm font-semibold font-mono tabular-nums text-appText-bright mt-0.5">{totalLearnedCards}</div>
               </div>
             </div>
           </div>
@@ -522,7 +511,7 @@ export const HomePage: React.FC = () => {
             <button
               type="button"
               onClick={() => setIsBadgesOpen(true)}
-              className="flex-1 min-h-[40px] px-3 py-2 rounded-xl bg-surface-2 hover:bg-surface-3 border border-accent/20 text-accent font-bold text-xs flex items-center justify-center gap-1.5 transition-colors active:scale-95 cursor-pointer"
+              className="flex-1 min-h-[44px] px-3 py-2.5 rounded-xl bg-surface-2 hover:bg-surface-3 border border-border text-appText-bright font-semibold text-xs flex items-center justify-center gap-1.5 transition-colors active:scale-95 cursor-pointer"
             >
               <Award className="w-4 h-4 text-accent shrink-0" />
               <span>Lencana</span>
@@ -530,7 +519,7 @@ export const HomePage: React.FC = () => {
             <button
               type="button"
               onClick={() => setActiveTab('materi')}
-              className="flex-1 min-h-[40px] px-3 py-2 rounded-xl bg-amber-500/15 hover:bg-amber-500/25 border border-amber-500/30 text-accent-hot font-bold text-xs flex items-center justify-center gap-1.5 transition-colors active:scale-95 cursor-pointer"
+              className="flex-1 min-h-[44px] px-3 py-2.5 rounded-xl bg-accent/10 hover:bg-accent/15 border border-accent/25 text-accent font-semibold text-xs flex items-center justify-center gap-1.5 transition-colors active:scale-95 cursor-pointer"
             >
               <span>Latihan Dojo</span>
               <ArrowRight className="w-4 h-4 shrink-0" />
@@ -540,30 +529,30 @@ export const HomePage: React.FC = () => {
 
         {/* Kotowaza: Daily Authentic Japanese Proverb */}
         {/* Daily word card container must have min-h-[180px] to prevent layout shift */}
-        <div className="relative overflow-hidden bg-surface-2 border border-accent/20 rounded-2xl sm:rounded-3xl p-4 sm:p-5 flex flex-col justify-between shadow-sm group min-w-0 min-h-[180px] card-interactive-lift">
+        <div className="card-interactive-lift relative overflow-hidden bg-surface border border-border rounded-2xl p-4 sm:p-5 flex flex-col justify-between shadow-xs group min-w-0 min-h-[180px]">
           <div
-            className="absolute inset-0 bg-cover bg-center bg-radial from-amber-500/10 to-surface-2 opacity-15 group-hover:opacity-25 transition-opacity pointer-events-none"
+            className="absolute inset-0 bg-radial from-amber-500/10 to-surface-2 bg-cover bg-center opacity-[0.06] group-hover:opacity-[0.10] transition-opacity pointer-events-none"
             style={{ backgroundImage: `url('/images/kotowaza-zen.jpg')` }}
           />
           <div className="relative z-10 space-y-2.5">
             <div className="flex items-center justify-between gap-2">
-              <span className="text-xs font-bold uppercase tracking-wider text-accent flex items-center gap-1.5">
+              <span className="text-xs font-semibold uppercase tracking-wider text-accent flex items-center gap-1.5">
                 <Quote className="w-3.5 h-3.5 text-accent shrink-0" />
                 <span>
-                  Peribahasa · <span lang="ja">ことわざ</span>
+                  Peribahasa · <span lang="ja" className="font-jp">ことわざ</span>
                 </span>
               </span>
-              <span className="text-xs font-bold uppercase px-2.5 py-1 rounded-full bg-amber-500/15 text-accent border border-amber-500/25 shrink-0">
+              <span className="text-xs font-medium uppercase px-2.5 py-0.5 rounded-full bg-surface-2 text-appText-muted border border-border shrink-0">
                 {dailyKotowaza.category}
               </span>
             </div>
 
-            <div className="flex items-center justify-between gap-3">
-              <div className="min-w-0">
-                <div className="text-base sm:text-lg font-jp font-bold text-appText-bright" lang="ja">
+            <div className="flex items-center justify-between gap-3 relative">
+              <div className="min-w-0 pr-12">
+                <div className="font-display text-xl sm:text-2xl font-bold text-appText-bright leading-snug" lang="ja">
                   {dailyKotowaza.jp}
                 </div>
-                <div className="text-xs sm:text-sm text-accent-hot dark:text-amber-400 font-mono mt-0.5">
+                <div className="text-xs sm:text-sm text-accent font-mono mt-0.5">
                   {dailyKotowaza.reading}
                 </div>
               </div>
@@ -574,10 +563,10 @@ export const HomePage: React.FC = () => {
                   setIsSpeakingKotowaza(true);
                   speakJapanese(dailyKotowaza.jp, 1.0, () => setIsSpeakingKotowaza(false), () => setIsSpeakingKotowaza(false));
                 }}
-                className={`w-11 h-11 min-w-[40px] min-h-[40px] sm:min-w-[44px] sm:min-h-[44px] rounded-full border text-accent flex items-center justify-center transition-all shrink-0 active:scale-95 cursor-pointer ${
+                className={`absolute right-0 top-0 w-11 h-11 min-w-[40px] min-h-[40px] sm:min-w-[44px] sm:min-h-[44px] min-w-[44px] min-h-[44px] rounded-xl border text-accent flex items-center justify-center transition-all shrink-0 active:scale-95 cursor-pointer ${
                   isSpeakingKotowaza
-                    ? 'bg-accent text-bg ring-2 ring-accent/50 animate-pulse border-accent'
-                    : 'bg-amber-500/15 hover:bg-amber-500/25 border-amber-500/30'
+                    ? 'bg-accent text-white dark:text-stone-950 border-accent'
+                    : 'bg-surface-2 hover:bg-surface-3 border-border'
                 }`}
                 title="Dengarkan peribahasa"
                 aria-label={`Dengarkan peribahasa ${dailyKotowaza.jp}`}
@@ -595,7 +584,7 @@ export const HomePage: React.FC = () => {
             </p>
           </div>
 
-          <div className="relative z-10 pt-2.5 border-t border-accent/10 flex items-center justify-between text-xs text-appText-muted">
+          <div className="relative z-10 pt-2.5 border-t border-border flex items-center justify-between text-xs text-appText-muted">
             <span className="flex items-center gap-1.5">
               <Sparkles className="w-3.5 h-3.5 text-accent shrink-0" />
               <span>366+ Peribahasa</span>
@@ -603,7 +592,7 @@ export const HomePage: React.FC = () => {
             <button
               type="button"
               onClick={openKotowaza}
-              className="text-accent hover:underline font-bold flex items-center gap-1 hover:text-accent-hot transition-colors cursor-pointer min-h-[40px] px-2 active:scale-95"
+              className="text-accent hover:underline font-semibold flex items-center gap-1 hover:text-accent-hot transition-colors cursor-pointer min-h-[44px] px-2 active:scale-95"
             >
               <span>Jelajahi Galeri →</span>
             </button>
@@ -616,13 +605,13 @@ export const HomePage: React.FC = () => {
         <button
           type="button"
           onClick={openKana}
-          className="min-h-[44px] p-2 sm:p-2.5 rounded-2xl bg-surface border border-accent/20 hover:border-accent/40 text-left transition-all hover:bg-surface-2 group flex items-center gap-2 sm:gap-2.5 active:scale-98 shadow-sm cursor-pointer"
+          className="min-h-[44px] p-2 sm:p-2.5 rounded-xl bg-surface border border-border hover:border-accent/40 text-left transition-all hover:bg-surface-2 group flex items-center gap-2.5 active:scale-[0.99] shadow-xs cursor-pointer"
         >
-          <div className="w-8 h-8 rounded-xl bg-amber-500/15 text-accent-hot font-jp font-bold flex items-center justify-center text-xs shrink-0 group-hover:scale-105 transition-transform">
+          <div className="w-8 h-8 rounded-lg bg-accent/10 text-accent font-jp font-bold flex items-center justify-center text-xs shrink-0 group-hover:scale-105 transition-transform">
             あ/ア
           </div>
           <div className="min-w-0">
-            <div className="text-xs font-bold text-appText-bright truncate group-hover:text-accent transition-colors">
+            <div className="text-xs font-semibold text-appText-bright truncate group-hover:text-accent transition-colors">
               Bagan Kana
             </div>
             <div className="text-xs text-appText-muted line-clamp-1">Hiragana & Katakana</div>
@@ -632,13 +621,13 @@ export const HomePage: React.FC = () => {
         <button
           type="button"
           onClick={openConjugation}
-          className="min-h-[44px] p-2 sm:p-2.5 rounded-2xl bg-surface border border-accent/20 hover:border-accent/40 text-left transition-all hover:bg-surface-2 group flex items-center gap-2 sm:gap-2.5 active:scale-98 shadow-sm cursor-pointer"
+          className="min-h-[44px] p-2.5 rounded-xl bg-surface border border-border hover:border-accent/40 text-left transition-all hover:bg-surface-2 group flex items-center gap-2.5 active:scale-[0.99] shadow-xs cursor-pointer"
         >
-          <div className="w-8 h-8 rounded-xl bg-purple-500/15 text-purple-400 font-bold flex items-center justify-center text-xs shrink-0 group-hover:scale-105 transition-transform">
+          <div className="w-8 h-8 rounded-lg bg-nippon-fuji/10 text-nippon-fuji font-bold flex items-center justify-center text-xs shrink-0 group-hover:scale-105 transition-transform">
             🔄
           </div>
           <div className="min-w-0">
-            <div className="text-xs font-bold text-appText-bright truncate group-hover:text-purple-300 transition-colors">
+            <div className="text-xs font-semibold text-appText-bright truncate group-hover:text-accent transition-colors">
               Konjugasi Verba
             </div>
             <div className="text-xs text-appText-muted line-clamp-1">Te, Nai, Ta, Masu</div>
@@ -648,13 +637,13 @@ export const HomePage: React.FC = () => {
         <button
           type="button"
           onClick={openBookStudio}
-          className="min-h-[44px] p-2 sm:p-2.5 rounded-2xl bg-surface border border-accent/20 hover:border-accent/40 text-left transition-all hover:bg-surface-2 group flex items-center gap-2 sm:gap-2.5 active:scale-98 shadow-sm cursor-pointer"
+          className="min-h-[44px] p-2.5 rounded-xl bg-surface border border-border hover:border-accent/40 text-left transition-all hover:bg-surface-2 group flex items-center gap-2.5 active:scale-[0.99] shadow-xs cursor-pointer"
         >
-          <div className="w-8 h-8 rounded-xl bg-emerald-500/15 text-emerald-400 font-bold flex items-center justify-center text-xs shrink-0 group-hover:scale-105 transition-transform">
+          <div className="w-8 h-8 rounded-lg bg-nippon-tokiwa/10 text-nippon-tokiwa font-bold flex items-center justify-center text-xs shrink-0 group-hover:scale-105 transition-transform">
             📚
           </div>
           <div className="min-w-0">
-            <div className="text-xs font-bold text-appText-bright truncate group-hover:text-emerald-300 transition-colors">
+            <div className="text-xs font-semibold text-appText-bright truncate group-hover:text-accent transition-colors">
               Buku Teks Resmi
             </div>
             <div className="text-xs text-appText-muted line-clamp-1">9 Seri Buku Populer</div>
@@ -664,13 +653,13 @@ export const HomePage: React.FC = () => {
         <button
           type="button"
           onClick={openToolbox}
-          className="min-h-[44px] p-2 sm:p-2.5 rounded-2xl bg-gradient-to-r from-amber-500/10 via-surface to-surface border border-accent/35 hover:border-accent/60 text-left transition-all hover:bg-surface-2 group flex items-center gap-2 sm:gap-2.5 active:scale-98 shadow-sm cursor-pointer ring-1 ring-amber-500/20"
+          className="min-h-[44px] p-2.5 rounded-xl bg-surface border border-border hover:border-accent/40 text-left transition-all hover:bg-surface-2 group flex items-center gap-2.5 active:scale-[0.99] shadow-xs cursor-pointer"
         >
-          <div className="w-8 h-8 rounded-xl bg-amber-500/20 text-accent font-bold flex items-center justify-center text-xs shrink-0 group-hover:scale-105 transition-transform shadow-xs">
+          <div className="w-8 h-8 rounded-lg bg-accent/10 text-accent font-bold flex items-center justify-center text-xs shrink-0 group-hover:scale-105 transition-transform">
             <Wrench className="w-4 h-4 text-accent" />
           </div>
           <div className="min-w-0">
-            <div className="text-xs font-bold text-appText-bright truncate group-hover:text-accent transition-colors flex items-center gap-1">
+            <div className="text-xs font-semibold text-appText-bright truncate group-hover:text-accent transition-colors flex items-center gap-1">
               <span>Semua Alat</span>
               <ChevronRight className="w-3 h-3 text-accent shrink-0 group-hover:translate-x-0.5 transition-transform" />
             </div>
@@ -693,14 +682,14 @@ export const HomePage: React.FC = () => {
           </div>
 
           {/* Segmented View Mode Switcher: Fokus vs Seluruh Silabus */}
-          <div className="flex items-center gap-1 p-1 rounded-xl bg-surface-2 border border-accent/20 self-start sm:self-auto">
+          <div className="flex items-center gap-1 p-1 rounded-xl bg-surface-2 border border-border self-start sm:self-auto">
             <button
               type="button"
               onClick={() => {
                 setRoadmapViewMode('focus');
                 window.scrollTo({ top: 0, behavior: 'instant' });
               }}
-              className={`min-h-[40px] px-3 py-1.5 rounded-lg text-xs font-bold transition-all flex items-center gap-1.5 active:scale-95 cursor-pointer ${
+              className={`min-h-[44px] px-3 py-1.5 rounded-lg text-xs font-bold transition-all flex items-center gap-1.5 active:scale-95 cursor-pointer ${
                 roadmapViewMode === 'focus'
                   ? 'bg-accent text-bg shadow-sm font-extrabold'
                   : 'text-appText-muted hover:text-appText-bright'
@@ -714,7 +703,7 @@ export const HomePage: React.FC = () => {
                 setRoadmapViewMode('all');
                 window.scrollTo({ top: 0, behavior: 'instant' });
               }}
-              className={`min-h-[40px] px-3 py-1.5 rounded-lg text-xs font-bold transition-all flex items-center gap-1.5 active:scale-95 cursor-pointer ${
+              className={`min-h-[44px] px-3 py-1.5 rounded-lg text-xs font-bold transition-all flex items-center gap-1.5 active:scale-95 cursor-pointer ${
                 roadmapViewMode === 'all'
                   ? 'bg-accent text-bg shadow-sm font-extrabold'
                   : 'text-appText-muted hover:text-appText-bright'
@@ -726,15 +715,15 @@ export const HomePage: React.FC = () => {
         </div>
 
         {roadmapViewMode === 'focus' && activeUnit ? (
-          <div className="bg-surface border border-accent/20 rounded-2xl sm:rounded-3xl p-4 sm:p-6 shadow-sm space-y-4 animate-in fade-in duration-200">
+          <div className="bg-surface border border-border rounded-2xl p-4 sm:p-6 shadow-xs space-y-4 animate-in fade-in duration-200">
             {/* Unit Header with Progress */}
-            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-3 border-b border-accent/15">
+            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-3 border-b border-border">
               <div className="min-w-0">
                 <div className="flex items-center gap-2 flex-wrap">
-                  <span className="text-xs font-extrabold px-2.5 py-0.5 rounded-md bg-amber-500/15 text-accent border border-amber-500/30 tabular-nums">
+                  <span className="text-xs font-bold px-2.5 py-0.5 rounded-md bg-amber-500/15 text-accent border border-amber-500/30 tabular-nums">
                     Unit {activeUnit.unit_number}
                   </span>
-                  <h3 className="text-base sm:text-lg font-extrabold text-appText-bright truncate">
+                  <h3 className="text-base sm:text-lg font-bold text-appText-bright truncate">
                     {activeUnit.title_id}
                   </h3>
                 </div>
@@ -750,7 +739,7 @@ export const HomePage: React.FC = () => {
                     {activeUnit.lessons?.filter((l) => currentTrackProgress.completedLessons.includes(l.id)).length || 0} /{' '}
                     {activeUnit.lessons?.length || 0} Pelajaran
                   </div>
-                  <div className="text-xs text-emerald-400 font-bold tabular-nums">
+                  <div className="text-xs text-emerald-600 dark:text-emerald-400 font-semibold tabular-nums">
                     {Math.round(
                       ((activeUnit.lessons?.filter((l) => currentTrackProgress.completedLessons.includes(l.id)).length || 0) /
                         (activeUnit.lessons?.length || 1)) *
@@ -762,46 +751,49 @@ export const HomePage: React.FC = () => {
               </div>
             </div>
 
-            {/* Horizontal Quick Unit Switcher (One-tap jumping without 3000px vertical scrolling) */}
+            {/* Horizontal Quick Unit Switcher with Right-edge Fade Mask */}
             {trackData?.units && trackData.units.length > 1 && (
-              <div ref={unitSwitcherRef} className="flex items-center gap-1.5 overflow-x-auto scrollbar-none pb-1 max-w-full">
-                {trackData.units.map((u) => {
-                  const isCurrent = activeUnit?.id === u.id;
-                  const completedInU =
-                    u.lessons?.filter((l) => currentTrackProgress.completedLessons.includes(l.id)).length || 0;
-                  const isUnitDone = u.lessons?.length ? completedInU === u.lessons.length : false;
-                  return (
-                    <button
-                      key={u.id}
-                      data-unit-id={u.id}
-                      type="button"
-                      onClick={() => setSelectedUnitId(u.id)}
-                      className={`min-h-[40px] px-3 py-1.5 rounded-xl text-xs font-bold whitespace-nowrap transition-all flex items-center gap-1.5 active:scale-95 shrink-0 cursor-pointer ${
-                        isCurrent
-                          ? 'bg-amber-500/20 text-accent border border-amber-500/40 shadow-xs'
-                          : 'bg-surface-2 hover:bg-surface-3 text-appText-muted border border-accent/10'
-                      }`}
-                    >
-                      <span>Unit {u.unit_number}</span>
-                      {isUnitDone && <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400 shrink-0" />}
-                    </button>
-                  );
-                })}
+              <div className="relative max-w-full">
+                <div className="pointer-events-none absolute right-0 top-0 bottom-0 w-8 bg-gradient-to-l from-surface to-transparent sm:hidden z-10" />
+                <div ref={unitSwitcherRef} className="flex items-center gap-1.5 overflow-x-auto scrollbar-none pb-1 max-w-full">
+                  {trackData.units.map((u) => {
+                    const isCurrent = activeUnit?.id === u.id;
+                    const completedInU =
+                      u.lessons?.filter((l) => currentTrackProgress.completedLessons.includes(l.id)).length || 0;
+                    const isUnitDone = u.lessons?.length ? completedInU === u.lessons.length : false;
+                    return (
+                      <button
+                        key={u.id}
+                        data-unit-id={u.id}
+                        type="button"
+                        onClick={() => setSelectedUnitId(u.id)}
+                        className={`min-h-[44px] px-3 py-1.5 rounded-xl text-xs font-bold whitespace-nowrap transition-all flex items-center gap-1.5 active:scale-95 shrink-0 cursor-pointer ${
+                          isCurrent
+                            ? 'bg-amber-500/15 text-accent border border-amber-500/35 shadow-xs'
+                            : 'bg-surface-2 hover:bg-surface-3 text-appText-muted border border-border'
+                        }`}
+                      >
+                        <span>Unit {u.unit_number}</span>
+                        {isUnitDone && <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600 dark:text-emerald-400 shrink-0" />}
+                      </button>
+                    );
+                  })}
+                </div>
               </div>
             )}
 
             {/* Progressive Disclosure: Compact Target Can-Do Card with Optional Expand */}
             {activeUnit.can_do_summary && (
-              <div className="p-3.5 rounded-2xl bg-surface-2 border border-accent/15 text-xs space-y-1.5">
-                <div className="flex items-center justify-between">
-                  <div className="flex items-center gap-1.5 font-bold text-accent">
+              <div className="p-3.5 rounded-r-lg bg-amber-500/10 border-l-4 border-accent text-xs space-y-1.5">
+                <div className="flex flex-wrap sm:flex-nowrap items-center justify-between gap-1.5">
+                  <div className="flex items-center gap-1.5 font-bold text-accent min-w-0">
                     <span>🎯</span>
-                    <span>Target Kemampuan Nyata (Sasaran Can-Do):</span>
+                    <span className="break-words">Target Kemampuan Nyata (Sasaran Can-Do):</span>
                   </div>
                   <button
                     type="button"
                     onClick={() => setShowUnitExpectation(!showUnitExpectation)}
-                    className="min-h-[40px] px-2.5 text-xs font-semibold text-accent hover:underline flex items-center gap-1 cursor-pointer active:scale-95"
+                    className="min-h-[44px] px-2 text-xs font-semibold text-accent hover:underline flex items-center gap-1 cursor-pointer active:scale-95 shrink-0"
                   >
                     <span>{showUnitExpectation ? 'Ringkas' : 'Baca Harapan Topik'}</span>
                     <ChevronDown
@@ -817,20 +809,23 @@ export const HomePage: React.FC = () => {
 
             {/* L1 Contrastive Analysis Notes (if present in curriculum) */}
             {activeUnit.l2d_focus_notes && (
-              <div className="p-3.5 rounded-2xl bg-amber-500/10 border border-amber-500/25 text-xs space-y-1">
-                <div className="flex items-center gap-1.5 font-bold text-accent-hot">
-                  <AlertTriangle className="w-3.5 h-3.5 shrink-0" />
+              <div className="p-3.5 rounded-r-lg bg-amber-500/8 border-l-4 border-amber-500/40 text-xs space-y-1">
+                <div className="flex items-center gap-1.5 font-bold text-accent">
                   <span className="sr-only">Fokus Analisis Kontrasif L1</span>
-                  <span>💡 Tips Bahasa (Waspada Pola Bahasa Indonesia):</span>
+                  <span>💡</span>
+                  <span>Tips Bahasa (Waspada Pola Bahasa Indonesia):</span>
                 </div>
                 <p className="text-xs sm:text-sm text-appText leading-relaxed">
-                  {activeUnit.l2d_focus_notes}
+                  {activeUnit.l2d_focus_notes
+                    .replace(/contrastive-adalah-copula/g, 'pola "adalah" vs desu')
+                    .replace(/contrastive-/g, '')
+                    .replace(/-/g, ' ')}
                 </p>
               </div>
             )}
 
-            {/* Clean, Non-Condensed Lesson Nodes for this Unit */}
-            <div className="space-y-2.5 pt-1">
+            {/* Clean, Non-Condensed Lesson Nodes for this Unit (Flattened Single Card) */}
+            <div className="divide-y divide-border border-t border-border overflow-hidden">
               {activeUnit.lessons?.map((lesson) => {
                 const isLessonDone = currentTrackProgress.completedLessons.includes(lesson.id);
                 const isNextTarget = nextLesson?.lessonId === lesson.id;
@@ -839,26 +834,26 @@ export const HomePage: React.FC = () => {
                 return (
                   <div
                     key={lesson.id}
-                    className={`p-3.5 sm:p-4 rounded-2xl border transition-all flex flex-col sm:flex-row sm:items-center justify-between gap-3 ${
+                    className={`p-3.5 sm:p-4 transition-all flex flex-col sm:flex-row sm:items-center justify-between gap-3 ${
                       isNextTarget
-                        ? 'bg-amber-500/10 border-accent/40 shadow-sm ring-1 ring-amber-500/30'
+                        ? 'bg-amber-500/8'
                         : isLessonDone
-                        ? 'bg-surface-2/80 border-emerald-500/30'
-                        : 'bg-surface-2/40 border-accent/15 hover:border-accent/30'
+                        ? 'bg-surface hover:bg-surface-2/40'
+                        : 'bg-surface hover:bg-surface-2/60'
                     }`}
                   >
                     <div className="min-w-0 space-y-1">
                       <div className="flex items-center gap-2 flex-wrap">
-                        <span className="text-xs font-bold px-2 py-0.5 rounded-md bg-surface-3 text-appText-muted border border-accent/15 tabular-nums">
+                        <span className="text-xs font-bold px-2 py-0.5 rounded-md bg-surface-3 text-appText-muted border border-border tabular-nums">
                           Pelajaran #{lesson.lesson_number}
                         </span>
                         {isLessonDone ? (
-                          <span className="text-xs font-bold px-2.5 py-0.5 rounded-full bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 flex items-center gap-1">
+                          <span className="text-xs font-bold px-2.5 py-0.5 rounded-full bg-emerald-500/15 text-emerald-700 dark:text-emerald-300 border border-emerald-500/30 flex items-center gap-1">
                             <CheckCircle2 className="w-3.5 h-3.5" />
                             Tuntas {score ? `(${score}%)` : ''}
                           </span>
                         ) : isNextTarget ? (
-                          <span className="text-xs font-bold px-2.5 py-0.5 rounded-full bg-amber-500/20 text-accent-hot border border-amber-500/35 flex items-center gap-1">
+                          <span className="text-xs font-bold px-2.5 py-0.5 rounded-full bg-amber-500/15 text-accent border border-amber-500/35 flex items-center gap-1">
                             <Sparkles className="w-3.5 h-3.5" />
                             Target Berikutnya
                           </span>
@@ -870,12 +865,12 @@ export const HomePage: React.FC = () => {
                           </span>
                         )}
                         {lesson.grammar_ids && lesson.grammar_ids.length > 0 && (
-                          <span className="text-xs font-bold px-2.5 py-0.5 rounded-md bg-purple-100 text-purple-800 border-purple-200 dark:bg-purple-950/80 dark:text-purple-200 dark:border-purple-400/50 shadow-xs">
+                          <span className="text-xs font-medium px-2 py-0.5 rounded-md bg-purple-100 text-purple-800 dark:bg-purple-950/80 dark:text-purple-300 border border-purple-200 dark:border-purple-800/40 tabular-nums">
                             {lesson.grammar_ids.length} Tata Bahasa
                           </span>
                         )}
                         {lesson.vocab_ids && lesson.vocab_ids.length > 0 && (
-                          <span className="text-xs font-bold px-2.5 py-0.5 rounded-md bg-blue-100 text-blue-800 border-blue-200 dark:bg-blue-950/80 dark:text-blue-200 dark:border-blue-400/50 shadow-xs">
+                          <span className="text-xs font-medium px-2 py-0.5 rounded-md bg-blue-100 text-blue-800 dark:bg-blue-950/80 dark:text-blue-300 border border-blue-200 dark:border-blue-800/40 tabular-nums">
                             {lesson.vocab_ids.length} Kosakata
                           </span>
                         )}
@@ -893,12 +888,12 @@ export const HomePage: React.FC = () => {
                       <button
                         type="button"
                         onClick={() => openLessonStudy(activeTrackId, activeUnit.id, lesson.id)}
-                        className={`min-h-[44px] px-4 py-2.5 rounded-xl text-xs font-extrabold transition-all flex items-center gap-1.5 active:scale-95 shadow-sm cursor-pointer ${
+                        className={`min-h-[44px] px-4 py-2.5 rounded-xl text-xs font-bold transition-all flex items-center gap-1.5 active:scale-95 shadow-xs cursor-pointer ${
                           isNextTarget
-                            ? 'bg-accent hover:bg-accent-hot text-bg shadow-glow'
+                            ? 'bg-accent hover:bg-accent-hot text-stone-950 font-bold'
                             : isLessonDone
-                            ? 'bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 hover:bg-emerald-500/30'
-                            : 'bg-surface-3 hover:bg-surface text-appText-bright border border-accent/20'
+                            ? 'bg-emerald-500/15 text-emerald-800 dark:text-emerald-300 border border-emerald-500/30 hover:bg-emerald-500/25'
+                            : 'bg-surface-2 hover:bg-surface-3 text-appText-bright border border-border'
                         }`}
                       >
                         <BookOpen className="w-3.5 h-3.5" />
@@ -927,7 +922,7 @@ export const HomePage: React.FC = () => {
             </div>
           </div>
         ) : (
-          <div className="bg-surface border border-accent/20 rounded-2xl sm:rounded-3xl p-3 sm:p-5 shadow-sm space-y-3 animate-in fade-in duration-200">
+          <div className="bg-surface border border-border rounded-2xl p-3 sm:p-5 shadow-xs space-y-3 animate-in fade-in duration-200">
             <div className="flex items-center justify-between px-2 pt-1">
               <span className="text-xs text-appText-muted">Menampilkan seluruh unit silabus:</span>
               <button
@@ -936,7 +931,7 @@ export const HomePage: React.FC = () => {
                   setRoadmapViewMode('focus');
                   window.scrollTo({ top: 0, behavior: 'instant' });
                 }}
-                className="min-h-[40px] text-xs font-bold text-accent hover:underline flex items-center gap-1 cursor-pointer"
+                className="min-h-[44px] text-xs font-bold text-accent hover:underline flex items-center gap-1 cursor-pointer"
               >
                 <span>← Kembali ke Tampilan Unit Aktif</span>
               </button>
@@ -961,31 +956,31 @@ export const HomePage: React.FC = () => {
         {!dailyWord ? (
           <SkeletonCard type="word" className="lg:col-span-1" />
         ) : (
-          <div className="lg:col-span-1 bg-surface-2 border border-accent/20 rounded-2xl sm:rounded-3xl p-4 sm:p-6 flex flex-col justify-between shadow-sm min-h-[220px]">
+          <div className="card-interactive-lift lg:col-span-1 bg-surface border border-border rounded-2xl p-4 sm:p-6 flex flex-col justify-between shadow-xs min-h-[220px]">
             <div>
               <div className="flex items-center justify-between mb-2 sm:mb-3">
-                <span className="text-xs font-bold uppercase tracking-wider text-accent flex items-center gap-1.5">
+                <span className="text-xs font-bold uppercase tracking-wider text-accent flex items-center gap-1.5 whitespace-nowrap">
                   <span>Kotoba Hari Ini · 今日の言葉</span>
                 </span>
                 <div className="flex items-center gap-2">
-                  <span className="text-xs font-bold px-2.5 py-0.5 rounded-full bg-amber-500/15 text-accent border border-amber-500/30 uppercase">
+                  <span className="text-xs font-bold px-2.5 py-0.5 rounded-full bg-amber-500/15 text-accent border border-amber-500/30 uppercase whitespace-nowrap">
                     {`JLPT ${dailyWord.level.toUpperCase()}`}
                   </span>
                   <button
                     type="button"
                     onClick={() => openDetailModal(dailyWord, 'vocab')}
-                    className="w-11 h-11 min-w-[44px] min-h-[44px] rounded-xl bg-surface hover:bg-surface-3 text-appText-muted hover:text-accent flex items-center justify-center transition-colors active:scale-95 cursor-pointer"
+                    className="w-11 h-11 min-w-[44px] min-h-[44px] rounded-xl bg-surface-2 hover:bg-surface-3 border border-border text-appText-muted hover:text-accent flex items-center justify-center transition-colors active:scale-95 cursor-pointer"
                     title="Lihat Detail & Contoh Kalimat"
                     aria-label={`Lihat detail kosakata ${dailyWord.word}`}
                   >
-                    <Info className="w-5 h-5" />
+                    <Info className="w-4 h-4" />
                   </button>
                 </div>
               </div>
 
               <div className="space-y-1.5 sm:space-y-2 my-1.5 sm:my-2">
                 <div className="flex items-center gap-2.5 sm:gap-3 flex-wrap">
-                  <div className="text-xl sm:text-2xl font-jp font-bold text-appText-bright" lang="ja">
+                  <div className="text-2xl sm:text-3xl font-display font-bold text-appText-bright" lang="ja">
                     {dailyWord.word}
                     <span className="text-sm sm:text-base font-normal text-appText-muted font-ui ml-2">
                       【{dailyWord.reading}】
@@ -998,19 +993,19 @@ export const HomePage: React.FC = () => {
                       setIsSpeakingDailyWord(true);
                       speakJapanese(dailyWord.word, 1.0, () => setIsSpeakingDailyWord(false), () => setIsSpeakingDailyWord(false));
                     }}
-                    className={`w-11 h-11 min-w-[40px] min-h-[40px] sm:min-w-[44px] sm:min-h-[44px] rounded-full border text-accent flex items-center justify-center transition-all active:scale-95 shrink-0 cursor-pointer ${
+                    className={`w-11 h-11 min-w-[40px] min-h-[40px] min-w-[44px] min-h-[44px] rounded-xl border border-border text-accent flex items-center justify-center transition-all active:scale-95 shrink-0 cursor-pointer ${
                       isSpeakingDailyWord
-                        ? 'bg-accent text-bg ring-2 ring-accent/50 animate-pulse border-accent'
-                        : 'bg-amber-500/15 hover:bg-amber-500/25 border-amber-500/30'
+                        ? 'bg-accent text-stone-950 ring-2 ring-accent/50 animate-pulse border-accent'
+                        : 'bg-surface-2 hover:bg-surface-3'
                     }`}
                     title="Dengarkan pelafalan"
                     aria-label={`Dengarkan pelafalan ${dailyWord.word}`}
                   >
-                    <Volume2 className="w-5 h-5" />
+                    <Volume2 className="w-4 h-4" />
                   </button>
                 </div>
 
-                <div className="text-sm sm:text-base font-semibold text-accent-hot leading-snug break-words">
+                <div className="text-sm sm:text-base font-semibold text-accent leading-snug break-words">
                   {dailyWord.meaning}
                 </div>
 
@@ -1034,7 +1029,7 @@ export const HomePage: React.FC = () => {
               </div>
             </div>
 
-            <div className="text-xs text-appText-muted mt-2.5 pt-2.5 sm:mt-3 sm:pt-3 border-t border-accent/10 flex items-center justify-between">
+            <div className="text-xs text-appText-muted mt-2.5 pt-2.5 sm:mt-3 sm:pt-3 border-t border-border flex items-center justify-between">
               <span className="capitalize font-medium">
                 {(() => {
                   if (!dailyWord.pos) return 'Kata kerja · Bentuk kamus';
@@ -1060,30 +1055,29 @@ export const HomePage: React.FC = () => {
         )}
 
         {/* Heatmap Konsistensi 49 Hari */}
-        <div className="lg:col-span-2 bg-surface border border-accent/20 rounded-2xl sm:rounded-3xl p-4 sm:p-6 flex flex-col justify-between shadow-sm space-y-3">
-          <div className="flex items-center justify-between border-b border-accent/15 pb-2.5">
+        <div className="lg:col-span-2 bg-surface border border-border rounded-2xl p-4 sm:p-6 flex flex-col justify-between shadow-xs space-y-3">
+          <div className="flex items-center justify-between border-b border-border pb-2.5">
             <div className="flex items-center gap-2">
               <Calendar className="w-4 h-4 text-accent" />
               <span className="text-xs sm:text-sm font-bold uppercase tracking-wider text-appText-bright">
                 Ritme Belajar & Konsistensi (49 Hari)
               </span>
             </div>
-            <span className="text-xs sm:text-sm font-mono font-bold text-accent-hot tabular-nums">
+            <span className="text-xs sm:text-sm font-mono font-bold text-accent tabular-nums">
               Streak {streak} Hari Berturut-turut
             </span>
           </div>
 
-          <div className="w-full max-w-full overflow-x-auto scrollbar-none py-1 relative">
-            <div className="pointer-events-none absolute right-0 top-0 bottom-0 w-8 bg-gradient-to-l from-surface to-transparent sm:hidden z-10" />
+          <div className="w-full max-w-full">
             <HeatmapCalendar days={49} hideWrapper />
           </div>
 
-          <div className="text-xs text-appText-muted flex items-center justify-between pt-2 border-t border-accent/10">
+          <div className="text-xs text-appText-muted flex items-center justify-between pt-2 border-t border-border">
             <span>Aktivitas terekam otomatis setiap kali kamu menyelesaikan latihan atau drill.</span>
             <button
               type="button"
               onClick={() => setActiveTab('settings')}
-              className="min-h-[40px] px-2 text-xs font-bold text-accent hover:underline inline-flex items-center gap-1 shrink-0 active:scale-95 cursor-pointer"
+              className="min-h-[44px] px-3 py-1.5 text-xs font-bold text-accent hover:underline inline-flex items-center gap-1 shrink-0 active:scale-95 cursor-pointer"
             >
               <span>Lihat Detail Statistik →</span>
             </button>

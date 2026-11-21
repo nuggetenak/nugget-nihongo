@@ -550,11 +550,11 @@ export const MateriHubPage: React.FC<MateriHubPageProps> = ({ initialTab }) => {
         }
       }}
       aria-label={`${tool.title}: ${tool.desc}`}
-      className="bg-surface-2 hover:bg-surface-3 border border-accent/20 hover:border-amber-500/50 rounded-2xl p-5 flex flex-col justify-between cursor-pointer transition-all hover:-translate-y-0.5 shadow-sm hover:shadow-md group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent active:scale-95 min-h-[220px]"
+      className="bg-surface-2 hover:bg-surface-3 border border-border hover:border-accent/40 rounded-2xl p-5 flex flex-col justify-between cursor-pointer transition-all shadow-xs group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent active:scale-95 min-h-[220px]"
     >
       <div className="space-y-3">
         <div className="flex items-start justify-between gap-2.5">
-          <div className="w-12 h-12 rounded-xl bg-surface/90 border border-accent/25 flex items-center justify-center text-xl shadow-xs group-hover:scale-105 group-hover:border-amber-500/40 transition-all shrink-0 font-japanese font-black">
+          <div className="w-12 h-12 rounded-xl bg-surface border border-border flex items-center justify-center text-xl shadow-xs group-hover:border-accent/40 transition-all shrink-0 font-japanese font-bold">
             {tool.icon}
           </div>
           <span className={`text-xs font-bold px-2.5 py-1 rounded-full border ${tool.badgeColor} shrink-0`}>
@@ -562,7 +562,7 @@ export const MateriHubPage: React.FC<MateriHubPageProps> = ({ initialTab }) => {
           </span>
         </div>
         <div>
-          <h3 className="text-base sm:text-lg font-bold text-appText-bright group-hover:text-amber-400 transition-colors leading-snug">
+          <h3 className="text-base sm:text-lg font-bold text-appText-bright group-hover:text-accent transition-colors leading-snug">
             {tool.title}
           </h3>
           <p className="text-xs sm:text-sm font-mono text-appText-muted mt-0.5" lang="ja">
@@ -574,11 +574,11 @@ export const MateriHubPage: React.FC<MateriHubPageProps> = ({ initialTab }) => {
         </p>
       </div>
 
-      <div className="mt-4 pt-3 border-t border-accent/15 flex items-center justify-between text-xs">
+      <div className="mt-4 pt-3 border-t border-border flex items-center justify-between text-xs">
         <span className="text-xs text-appText-muted font-medium leading-tight pr-2">
           {tool.canDo}
         </span>
-        <span className="text-xs sm:text-sm text-amber-400 font-extrabold group-hover:translate-x-1 transition-transform shrink-0">
+        <span className="text-xs sm:text-sm text-accent font-bold group-hover:translate-x-1 transition-transform shrink-0">
           Buka →
         </span>
       </div>
@@ -588,20 +588,20 @@ export const MateriHubPage: React.FC<MateriHubPageProps> = ({ initialTab }) => {
   // ── Render Focused Sub-View with Sticky Back Header Bar ──
   if (activeTool !== null) {
     return (
-      <div className="w-full min-h-screen pb-[calc(5.5rem+env(safe-area-inset-bottom))] lg:pb-12 animate-in fade-in duration-200">
+      <div className="w-full min-h-screen pb-6 animate-in fade-in duration-200">
         {/* Sticky Top Bar for Focused Sub-View */}
-        <div className="sticky top-0 z-30 bg-surface/95 backdrop-blur-md border-b border-accent/20 px-3 sm:px-6 py-2.5 sm:py-3.5 flex items-center justify-between shadow-sm">
+        <div className="sticky top-0 z-30 bg-surface border-b border-border px-3 sm:px-6 py-2.5 sm:py-3.5 flex items-center justify-between shadow-xs">
           <button
             type="button"
             onClick={handleBackToCatalog}
-            className="flex items-center gap-1.5 sm:gap-2 px-3 py-1.5 sm:px-4 sm:py-2 rounded-xl bg-surface-2 hover:bg-surface-3 border border-accent/20 hover:border-accent/40 text-appText-bright text-xs sm:text-sm font-bold transition-all active:scale-95 min-h-[40px] shadow-xs"
+            className="flex items-center gap-1.5 sm:gap-2 px-3 py-2 sm:px-4 sm:py-2.5 rounded-xl bg-surface-2 hover:bg-surface-3 border border-border hover:border-accent/40 text-appText-bright text-xs sm:text-sm font-bold transition-all active:scale-95 min-h-[40px] min-h-[44px] shadow-xs cursor-pointer"
             aria-label="Kembali ke Katalog Dojo"
           >
             <ArrowLeft className="w-4 h-4 text-accent" />
             <span>← Kembali ke Katalog Dojo</span>
           </button>
 
-          <div className="text-xs sm:text-sm font-extrabold text-appText-bright flex items-center gap-2 truncate max-w-[200px] sm:max-w-none">
+          <div className="text-xs sm:text-sm font-bold text-appText-bright flex items-center gap-2 truncate max-w-[200px] sm:max-w-none">
             <span className="text-base">{activeToolMeta?.icon}</span>
             <span className="truncate">{activeToolMeta?.title}</span>
           </div>
@@ -652,15 +652,15 @@ export const MateriHubPage: React.FC<MateriHubPageProps> = ({ initialTab }) => {
 
           {/* Fallback Focused Card for Modal-Based Tools */}
           {activeTool !== 'kanji' && activeTool !== 'books' && activeTool !== 'choukai' && activeToolMeta && (
-            <div className="max-w-2xl mx-auto py-8 text-center space-y-6 bg-surface-2 rounded-3xl p-6 sm:p-10 border border-accent/25 shadow-sm">
-              <div className="w-16 h-16 sm:w-20 sm:h-20 mx-auto rounded-3xl bg-amber-500/15 border border-amber-500/30 flex items-center justify-center text-3xl sm:text-4xl shadow-inner">
+            <div className="max-w-2xl mx-auto py-8 text-center space-y-6 bg-surface-2 rounded-2xl p-6 sm:p-10 border border-border shadow-xs">
+              <div className="w-16 h-16 sm:w-20 sm:h-20 mx-auto rounded-2xl bg-amber-500/15 border border-amber-500/30 flex items-center justify-center text-3xl sm:text-4xl shadow-inner text-accent">
                 {activeToolMeta.icon}
               </div>
               <div className="space-y-2">
                 <span className={`inline-block text-xs font-bold px-3 py-1 rounded-full border ${activeToolMeta.badgeColor}`}>
                   {activeToolMeta.badge}
                 </span>
-                <h2 className="text-xl sm:text-2xl font-bold text-appText-bright">
+                <h2 className="text-xl sm:text-2xl font-display font-bold text-appText-bright">
                   {activeToolMeta.title}
                 </h2>
                 <p className="text-xs sm:text-sm text-appText-muted font-mono" lang="ja">
@@ -671,7 +671,7 @@ export const MateriHubPage: React.FC<MateriHubPageProps> = ({ initialTab }) => {
                 </p>
               </div>
 
-              <div className="p-4 bg-surface rounded-2xl border border-accent/15 text-sm text-accent font-medium text-left">
+              <div className="p-4 bg-surface rounded-xl border border-border text-sm text-accent font-medium text-left">
                 🎯 <strong>Target Capaian:</strong> {activeToolMeta.canDo}
               </div>
 
@@ -679,14 +679,14 @@ export const MateriHubPage: React.FC<MateriHubPageProps> = ({ initialTab }) => {
                 <button
                   type="button"
                   onClick={() => handleOpenTool(activeToolMeta.id)}
-                  className="w-full sm:w-auto px-6 py-3 rounded-xl bg-accent text-bg hover:bg-accent-hot text-xs sm:text-sm font-bold transition-all shadow-sm active:scale-95 min-h-[44px]"
+                  className="w-full sm:w-auto px-6 py-3 rounded-xl bg-accent text-stone-950 hover:bg-accent-hot text-xs sm:text-sm font-bold transition-all shadow-xs active:scale-95 min-h-[40px] min-h-[44px] cursor-pointer"
                 >
                   Luncurkan {activeToolMeta.title}
                 </button>
                 <button
                   type="button"
                   onClick={handleBackToCatalog}
-                  className="w-full sm:w-auto px-5 py-3 rounded-xl bg-surface-3 hover:bg-surface border border-accent/20 text-appText-bright text-xs sm:text-sm font-bold transition-all active:scale-95 min-h-[44px]"
+                  className="w-full sm:w-auto px-5 py-3 rounded-xl bg-surface-3 hover:bg-surface border border-border text-appText-bright text-xs sm:text-sm font-bold transition-all active:scale-95 min-h-[40px] min-h-[44px] cursor-pointer"
                 >
                   ← Kembali ke Katalog Dojo
                 </button>
@@ -702,11 +702,11 @@ export const MateriHubPage: React.FC<MateriHubPageProps> = ({ initialTab }) => {
   return (
     <div className="max-w-5xl mx-auto py-3 sm:py-6 pb-[calc(5.5rem+env(safe-area-inset-bottom))] lg:pb-12 space-y-6 sm:space-y-8 animate-in fade-in duration-300 min-w-0 max-w-full overflow-x-hidden px-3 sm:px-4">
       {/* ── Main Catalog Header with Dual Segmented Mode Switcher ── */}
-      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 sm:gap-4 border-b border-accent/15 pb-4">
+      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 sm:gap-4 border-b border-border pb-4">
         <div className="flex-1 min-w-0">
           <div className="flex items-center gap-2 sm:gap-3 flex-wrap">
-            <h1 className="text-lg sm:text-2xl font-extrabold text-appText-bright tracking-tight">
-              Dojo (Sasana Latihan & Ujian) <span className="text-xs sm:text-sm font-normal text-appText-muted">· 道場・試験センター</span>
+            <h1 className="text-lg sm:text-2xl font-display font-bold text-appText-bright tracking-tight">
+              Dojo (Sasana Latihan & Ujian) <span className="text-xs sm:text-sm font-normal text-appText-muted font-ui">· 道場・試験センター</span>
             </h1>
             <SyncStatusPill />
           </div>
@@ -722,7 +722,7 @@ export const MateriHubPage: React.FC<MateriHubPageProps> = ({ initialTab }) => {
         <div
           role="tablist"
           aria-label="Mode Navigasi Dojo & Materi Hub"
-          className="flex items-center p-1 bg-surface-2 border border-accent/20 rounded-2xl shrink-0 self-start sm:self-auto overflow-x-auto scrollbar-none max-w-full"
+          className="flex items-center p-1 bg-surface-2 border border-border rounded-xl shrink-0 self-start sm:self-auto overflow-x-auto scrollbar-none max-w-full gap-1 shadow-xs"
         >
           <button
             type="button"
@@ -731,9 +731,9 @@ export const MateriHubPage: React.FC<MateriHubPageProps> = ({ initialTab }) => {
             aria-pressed={hubSectionMode === 'dojo'}
             onClick={() => handleSelectDojoTab('latihan')}
             aria-label="Tampilan Mode Latihan & Kuis (Dojo)"
-            className={`px-3 sm:px-3.5 py-2 rounded-xl text-xs sm:text-sm font-bold transition-all flex items-center gap-1.5 whitespace-nowrap active:scale-95 min-h-[40px] ${
+            className={`px-3 sm:px-3.5 py-2.5 rounded-lg text-xs sm:text-sm font-bold transition-all flex items-center gap-1.5 whitespace-nowrap active:scale-95 min-h-[40px] min-h-[44px] cursor-pointer ${
               dojoTab === 'latihan'
-                ? 'bg-amber-500 text-stone-950 font-black shadow-sm'
+                ? 'bg-accent text-stone-950 font-bold shadow-xs'
                 : 'text-appText-muted hover:text-appText-bright'
             }`}
           >
@@ -749,9 +749,9 @@ export const MateriHubPage: React.FC<MateriHubPageProps> = ({ initialTab }) => {
             aria-pressed={hubSectionMode === 'kamus'}
             onClick={() => handleSelectDojoTab('kamus')}
             aria-label="Tampilan Mode Kamus & Indeks"
-            className={`px-3 sm:px-3.5 py-2 rounded-xl text-xs sm:text-sm font-bold transition-all flex items-center gap-1.5 whitespace-nowrap active:scale-95 min-h-[40px] ${
+            className={`px-3 sm:px-3.5 py-2.5 rounded-lg text-xs sm:text-sm font-bold transition-all flex items-center gap-1.5 whitespace-nowrap active:scale-95 min-h-[40px] min-h-[44px] cursor-pointer ${
               dojoTab === 'kamus'
-                ? 'bg-amber-500 text-stone-950 font-black shadow-sm'
+                ? 'bg-accent text-stone-950 font-bold shadow-xs'
                 : 'text-appText-muted hover:text-appText-bright'
             }`}
           >
@@ -765,9 +765,9 @@ export const MateriHubPage: React.FC<MateriHubPageProps> = ({ initialTab }) => {
             aria-selected={dojoTab === 'alat'}
             onClick={() => handleSelectDojoTab('alat')}
             aria-label="Tampilan Mode Alat Bantu & Pustaka Referensi"
-            className={`px-3 sm:px-3.5 py-2 rounded-xl text-xs sm:text-sm font-bold transition-all flex items-center gap-1.5 whitespace-nowrap active:scale-95 min-h-[40px] ${
+            className={`px-3 sm:px-3.5 py-2.5 rounded-lg text-xs sm:text-sm font-bold transition-all flex items-center gap-1.5 whitespace-nowrap active:scale-95 min-h-[40px] min-h-[44px] cursor-pointer ${
               dojoTab === 'alat'
-                ? 'bg-amber-500 text-stone-950 font-black shadow-sm'
+                ? 'bg-accent text-stone-950 font-bold shadow-xs'
                 : 'text-appText-muted hover:text-appText-bright'
             }`}
           >
@@ -781,9 +781,9 @@ export const MateriHubPage: React.FC<MateriHubPageProps> = ({ initialTab }) => {
             aria-selected={dojoTab === 'cbt'}
             onClick={() => handleSelectDojoTab('cbt')}
             aria-label="Tampilan Mode Simulator Ujian CBT"
-            className={`px-3 sm:px-3.5 py-2 rounded-xl text-xs sm:text-sm font-bold transition-all flex items-center gap-1.5 whitespace-nowrap active:scale-95 min-h-[40px] ${
+            className={`px-3 sm:px-3.5 py-2.5 rounded-lg text-xs sm:text-sm font-bold transition-all flex items-center gap-1.5 whitespace-nowrap active:scale-95 min-h-[40px] min-h-[44px] cursor-pointer ${
               dojoTab === 'cbt'
-                ? 'bg-amber-500 text-stone-950 font-black shadow-sm'
+                ? 'bg-accent text-stone-950 font-bold shadow-xs'
                 : 'text-appText-muted hover:text-appText-bright'
             }`}
           >

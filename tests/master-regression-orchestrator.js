@@ -211,7 +211,21 @@ const SUITES = [
   { name: 'Siklus VIII Pass 12: 200 Indonesian Learner Personas Multi-Device Profiling', file: 'tests/test-s8-pass12-personas-multidevice-profiling.js' },
   { name: 'Siklus VIII Pass 13: Dokkai Reading Immersion, Furigana Line-Breaker & Realia Lightbox', file: 'tests/test-s8-pass13-dokkai-furigana-realia-typography.js' },
   { name: 'Siklus VIII Pass 14: Final Synthesis, End-to-End Release Gate & Production Certification', file: 'tests/test-s8-pass14-final-synthesis-release-certification.js' },
-  { name: 'Siklus VIII Pass 15: React 18 Rules of Hooks AST Verification & BottomNav Guard', file: 'tests/test-s8-pass15-react-rules-of-hooks.js' }
+  { name: 'Siklus VIII Pass 15: React 18 Rules of Hooks AST Verification & BottomNav Guard', file: 'tests/test-s8-pass15-react-rules-of-hooks.js' },
+  { name: 'Siklus IX Pass 1: Onboarding, CAT IRT Placement & First-Day Setup', file: 'tests/test-s9-pass1-e2e-onboarding-cat.js' },
+  { name: 'Siklus IX Pass 2: 4-Stage Lesson Study Studio, Audio Concurrency & Anti-Exploit', file: 'tests/test-s9-pass2-e2e-lesson-study-stages.js' },
+  { name: 'Siklus IX Pass 3: Kebun Memori, FSRS v4.5 Retention & Garden Lifecycle', file: 'tests/test-s9-pass3-e2e-kebun-fsrs.js' },
+  { name: 'Siklus IX Pass 4: Dojo Reflex Drills, CBT Simulator & Remedial Engine', file: 'tests/test-s9-pass4-e2e-dojo-cbt.js' },
+  { name: 'Siklus X Pass 1: Multi-Tab Concurrency, BroadcastChannel Bus & Garden CRDT Reconciler', file: 'tests/test-s10-pass1-multitab-crdt-sync.js' },
+  { name: 'Siklus X Pass 2: Storage Eviction Safeguards & Self-Healing Resilience', file: 'tests/test-s10-pass2-storage-eviction-safeguards.js' },
+  { name: 'Siklus X Pass 3: Supabase Delta Sync, Dirty Queue & Security Hardening', file: 'tests/test-s10-pass3-supabase-delta-sync-dirty-queue.js' },
+  { name: 'Siklus XI Pass 1: Mobile Truncation & Viewport Resilience', file: 'tests/test-s11-pass1-truncation-viewport-resilience.js' },
+  { name: 'Siklus XI Pass 2: Nested Card Flattening & Editorial Hierarchy', file: 'tests/test-s11-pass2-card-flattening-editorial-hierarchy.js' },
+  { name: 'Siklus XI Pass 3: Sub-Card Editorial Hierarchy & Refinement', file: 'tests/test-s11-pass3-subcard-editorial-refinement.js' },
+  { name: 'Siklus XI Pass 4: Settings, Choukai & Kebun Container Flattening', file: 'tests/test-s11-pass4-settings-choukai-kebun-flattening.js' },
+  { name: 'Siklus XI Pass 5: Radical Card Flattening & Editorial Purity', file: 'tests/test-s11-pass5-radical-card-flattening.js' },
+  { name: 'Siklus XI Pass 6: DialogueStage & Settings Purity', file: 'tests/test-s11-pass6-dialogue-settings-purity.js' },
+  { name: 'Siklus XI Pass 7: Desktop Residual Flattening & Final Certification', file: 'tests/test-s11-pass7-desktop-flattening-final-certification.js' }
 ];
 
 console.log('╔══════════════════════════════════════════════════════════════════╗');

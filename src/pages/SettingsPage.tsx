@@ -372,6 +372,7 @@ export const SettingsPage: React.FC = () => {
     id: SettingsTab;
     hash: string;
     label: string;
+    shortLabel: string;
     icon: React.ReactNode;
     badge?: string;
   }> = [
@@ -379,6 +380,7 @@ export const SettingsPage: React.FC = () => {
       id: 'profil',
       hash: '#settings/profil',
       label: 'Rapor & Profil',
+      shortLabel: 'Profil',
       icon: <User className="w-4 h-4 shrink-0" />,
       badge: user ? 'Cloud' : 'Lokal',
     },
@@ -386,6 +388,7 @@ export const SettingsPage: React.FC = () => {
       id: 'audio',
       hash: '#settings/audio',
       label: 'Audio & Fonetik',
+      shortLabel: 'Audio',
       icon: <Volume2 className="w-4 h-4 shrink-0" />,
       badge: 'TTS',
     },
@@ -393,6 +396,7 @@ export const SettingsPage: React.FC = () => {
       id: 'sync',
       hash: '#settings/sync',
       label: 'Akun & Cloud',
+      shortLabel: 'Cloud',
       icon: <Cloud className="w-4 h-4 shrink-0" />,
       badge: syncStatus === 'synced' ? 'Aktif' : undefined,
     },
@@ -400,6 +404,7 @@ export const SettingsPage: React.FC = () => {
       id: 'lanjutan',
       hash: '#settings/lanjutan',
       label: 'Lanjutan',
+      shortLabel: 'Sistem',
       icon: <Sliders className="w-4 h-4 shrink-0" />,
       badge: 'AES-256',
     },
@@ -410,11 +415,11 @@ export const SettingsPage: React.FC = () => {
       {/* Page Header */}
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
         <div className="flex items-center gap-3.5 min-w-0">
-          <div className="w-12 h-12 rounded-2xl bg-amber-500/20 border border-amber-500/30 flex items-center justify-center shrink-0 overflow-hidden hidden sm:flex shadow-sm">
+          <div className="w-12 h-12 rounded-xl bg-amber-500/15 border border-amber-500/30 flex items-center justify-center shrink-0 overflow-hidden hidden sm:flex shadow-xs">
             <IrasutoyaImage assetId="senpai_studying" className="w-10 h-10" containerClassName="w-10 h-10 shrink-0" animateFloat />
           </div>
           <div>
-            <h1 className="text-2xl sm:text-3xl font-extrabold text-appText-bright mb-1 tracking-tight">
+            <h1 className="text-2xl sm:text-3xl font-display font-bold text-appText-bright mb-1 tracking-tight">
               Profil & Pengaturan
             </h1>
             <p className="text-xs sm:text-sm text-appText-muted">
@@ -431,7 +436,7 @@ export const SettingsPage: React.FC = () => {
       <div
         role="tablist"
         aria-label="Sub-Navigasi Pengaturan"
-        className="w-full bg-surface-2/80 p-1.5 rounded-2xl border border-accent/20 flex items-center gap-1 sm:gap-2 overflow-x-auto scrollbar-none shadow-xs"
+        className="w-full bg-surface-2 p-1 rounded-xl border border-border flex items-center gap-1 sm:gap-1.5 overflow-x-auto scrollbar-none shadow-xs"
       >
         {subTabs.map((tab) => {
           const isActive = activeTab === tab.id;
@@ -441,18 +446,19 @@ export const SettingsPage: React.FC = () => {
               role="tab"
               aria-selected={isActive}
               onClick={() => handleTabSwitch(tab.id)}
-              className={`flex items-center justify-center gap-1.5 sm:gap-2 px-3 sm:px-4 py-2.5 min-h-[44px] rounded-xl text-xs sm:text-sm font-bold transition-all active:scale-95 focus:outline-none focus-visible:ring-2 focus-visible:ring-accent shrink-0 ${
+              className={`flex items-center justify-center gap-1.5 sm:gap-2 px-3 sm:px-4 py-2 min-h-[44px] rounded-xl text-xs sm:text-sm font-bold transition-all active:scale-95 focus:outline-none focus-visible:ring-2 focus-visible:ring-accent shrink-0 cursor-pointer ${
                 isActive
-                  ? 'bg-accent text-bg shadow-sm font-extrabold'
+                  ? 'bg-accent text-stone-950 shadow-xs font-bold'
                   : 'text-appText-muted hover:text-appText-bright hover:bg-surface-3/50'
               }`}
             >
               {tab.icon}
-              <span className="truncate">{tab.label}</span>
+              <span className="sm:hidden">{tab.shortLabel}</span>
+              <span className="hidden sm:inline truncate">{tab.label}</span>
               {tab.badge && (
                 <span
                   className={`hidden md:inline-block text-xs font-mono px-1.5 py-0.5 rounded-md ${
-                    isActive ? 'bg-bg/25 text-bg font-extrabold' : 'bg-surface-3 text-appText-muted'
+                    isActive ? 'bg-stone-950/20 text-stone-950 font-bold' : 'bg-surface-3 text-appText-muted'
                   }`}
                 >
                   {tab.badge}

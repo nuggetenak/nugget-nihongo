@@ -650,7 +650,7 @@ export const QuizPage: React.FC = () => {
   }
 
   return (
-    <div className="max-w-4xl mx-auto py-4 sm:py-6 pb-[calc(5.5rem+env(safe-area-inset-bottom))] lg:pb-12 space-y-6 animate-in fade-in duration-300 min-w-0 max-w-full overflow-x-hidden px-3 sm:px-4">
+    <div className="max-w-4xl mx-auto py-4 sm:py-6 pb-6 space-y-6 animate-in fade-in duration-300 min-w-0 max-w-full overflow-x-hidden px-3 sm:px-4">
       {/* State 1: Exam LMS Hub (The 3 Clean Doors) */}
       {viewState === 'hub' ? (
         <ExamLmsHub
@@ -671,7 +671,7 @@ export const QuizPage: React.FC = () => {
           <div className="flex items-center justify-between gap-3 border-b border-theme pb-3.5">
             <button
               onClick={handleRequestExitToHub}
-              className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-surface-2 hover:bg-surface-3 border border-theme text-muted hover:text-text text-xs font-bold transition-all shrink-0 active:scale-95"
+              className="flex items-center gap-1.5 px-3 py-2 rounded-xl bg-surface-2 hover:bg-surface-3 border border-theme text-muted hover:text-text text-xs font-bold transition-all shrink-0 active:scale-95 min-h-[44px]"
             >
               <ChevronLeft className="w-4 h-4" />
               <span>Keluar</span>
@@ -783,23 +783,23 @@ export const QuizPage: React.FC = () => {
                       touchAction: isDragging ? 'none' : 'pan-y',
                       overscrollBehaviorY: 'contain',
                     }}
-                    className={`relative cursor-pointer min-h-[260px] sm:min-h-[300px] rounded-2xl sm:rounded-3xl border-2 p-5 sm:p-8 flex flex-col justify-between text-center transition-all duration-300 select-none shadow-xl perspective-1000 transform-style-3d card-preserve-3d ${
+                    className={`relative cursor-pointer min-h-[260px] sm:min-h-[300px] rounded-2xl border p-5 sm:p-8 flex flex-col justify-between text-center transition-all duration-300 select-none shadow-xs perspective-1000 transform-style-3d card-preserve-3d ${
                       isFlipped
-                        ? 'bg-amber-500/15 dark:bg-amber-950/40 border-amber-500/60'
-                        : 'bg-surface border-accent/30 hover:border-accent/50'
+                        ? 'bg-surface-2 border-border'
+                        : 'bg-surface border-border hover:border-accent/40'
                     }`}
                   >
                     {/* Visual Swipe Gesture Hint Badges (Universal: Right = Remember, Left = Forget) */}
                     {isFlipped && swipeHint === 'right' && (
-                      <div className="absolute inset-0 bg-emerald-500/25 backdrop-blur-[2px] rounded-3xl flex items-center justify-center pointer-events-none z-20 animate-in fade-in duration-150">
-                        <span className="text-xl sm:text-2xl font-bold text-emerald-700 dark:text-emerald-300 bg-surface/95 px-5 py-2.5 rounded-2xl border border-emerald-500/50 shadow-2xl">
+                      <div className="absolute inset-0 bg-emerald-500/20 backdrop-blur-xs rounded-2xl flex items-center justify-center pointer-events-none z-20 animate-in fade-in duration-150">
+                        <span className="text-xl sm:text-2xl font-bold text-emerald-700 dark:text-emerald-300 bg-surface/95 px-5 py-2.5 rounded-xl border border-emerald-500/40 shadow-lg">
                           ✅ Hafal (Geser Kanan)
                         </span>
                       </div>
                     )}
                     {isFlipped && swipeHint === 'left' && (
-                      <div className="absolute inset-0 bg-rose-500/25 backdrop-blur-[2px] rounded-3xl flex items-center justify-center pointer-events-none z-20 animate-in fade-in duration-150">
-                        <span className="text-xl sm:text-2xl font-bold text-rose-700 dark:text-rose-300 bg-surface/95 px-5 py-2.5 rounded-2xl border border-rose-500/50 shadow-2xl">
+                      <div className="absolute inset-0 bg-rose-500/20 backdrop-blur-xs rounded-2xl flex items-center justify-center pointer-events-none z-20 animate-in fade-in duration-150">
+                        <span className="text-xl sm:text-2xl font-bold text-rose-700 dark:text-rose-300 bg-surface/95 px-5 py-2.5 rounded-xl border border-rose-500/40 shadow-lg">
                           ❌ Lupa (Geser Kiri)
                         </span>
                       </div>
@@ -813,7 +813,7 @@ export const QuizPage: React.FC = () => {
                             e.stopPropagation();
                             handleOpenReport(currentQ);
                           }}
-                          className="min-h-[40px] min-w-[40px] p-2 rounded-xl bg-surface hover:bg-surface-2 text-appText-muted hover:text-amber-400 transition-all flex items-center justify-center active:scale-95"
+                          className="min-h-[40px] min-w-[40px] min-h-[44px] min-w-[44px] p-2.5 rounded-xl bg-surface-2 hover:bg-surface-3 border border-border text-appText-muted hover:text-accent transition-all flex items-center justify-center active:scale-95 cursor-pointer"
                           title="Laporkan keanehan/kesalahan materi kartu 🚩"
                           aria-label="Laporkan keanehan materi kartu"
                         >
@@ -824,7 +824,7 @@ export const QuizPage: React.FC = () => {
                             e.stopPropagation();
                             speakJapanese(currentQ.questionText);
                           }}
-                          className="min-h-[40px] min-w-[40px] p-2 rounded-xl bg-surface hover:bg-surface-2 text-appText-muted hover:text-accent transition-all flex items-center justify-center active:scale-95"
+                          className="min-h-[40px] min-w-[40px] min-h-[44px] min-w-[44px] p-2.5 rounded-xl bg-surface-2 hover:bg-surface-3 border border-border text-appText-muted hover:text-accent transition-all flex items-center justify-center active:scale-95 cursor-pointer"
                           title="Dengarkan pelafalan"
                           aria-label="Dengarkan pelafalan"
                         >
@@ -836,24 +836,24 @@ export const QuizPage: React.FC = () => {
                     <div className="my-auto space-y-3">
                       {!isFlipped ? (
                         <>
-                          <div className="text-4xl sm:text-5xl font-jp font-bold text-appText-bright">
+                          <div className="text-4xl sm:text-5xl font-display font-bold text-appText-bright">
                             {currentQ.questionText}
                           </div>
                           {currentQ.subText && (
-                            <div className="text-sm font-jp text-amber-300">
+                            <div className="text-sm font-jp text-accent">
                               {currentQ.subText}
                             </div>
                           )}
                           <div className="text-xs text-appText-muted pt-3">
-                            Tap kartu atau tekan <kbd className="font-mono bg-surface-2 px-2 py-0.5 rounded text-xs">Spasi</kbd> untuk membalik
+                            Tap kartu atau tekan <kbd className="font-mono bg-surface-2 px-2 py-0.5 rounded border border-border text-xs">Spasi</kbd> untuk membalik
                           </div>
                         </>
                       ) : (
                         <div className="space-y-3 animate-in zoom-in-95 duration-200">
-                          <div className="text-2xl sm:text-3xl font-bold text-appText-bright">
+                          <div className="text-2xl sm:text-3xl font-display font-bold text-appText-bright">
                             {currentQ.correctAnswer}
                           </div>
-                          <div className="text-xs text-appText-muted bg-surface-2/60 p-3 rounded-2xl border border-accent/15 leading-relaxed">
+                          <div className="text-xs text-appText-muted bg-surface p-3.5 rounded-xl border border-border leading-relaxed">
                             {currentQ.explanation}
                           </div>
                         </div>
@@ -865,43 +865,39 @@ export const QuizPage: React.FC = () => {
                     </div>
                   </div>
 
-                  {/* FSRS Rating Buttons */}
+                  {/* FSRS Rating Buttons (2x2 on mobile, 1x4 on desktop) */}
                   {isFlipped ? (
-                    <div className="grid grid-cols-4 gap-2 sm:gap-2.5 animate-in fade-in slide-in-from-bottom-2 duration-200">
+                    <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 sm:gap-2.5 animate-in fade-in slide-in-from-bottom-2 duration-200">
                       <button
                         onClick={() => handleFlashcardRate(1)}
-                        className="min-h-[50px] sm:min-h-[54px] py-2.5 sm:py-3 px-1 rounded-2xl bg-red-500/15 dark:bg-red-950/40 hover:bg-red-500/25 dark:hover:bg-red-900/60 border border-red-500/30 text-red-700 dark:text-red-300 text-xs font-bold transition-all flex flex-col items-center justify-center gap-0.5 active:scale-95 shadow-xs"
+                        className="min-h-[50px] sm:min-h-[54px] py-2.5 px-3 rounded-xl bg-red-500/10 hover:bg-red-500/20 border border-red-500/30 text-red-700 dark:text-red-300 text-xs font-bold transition-all flex flex-col sm:flex-row items-center justify-center gap-1 active:scale-95 shadow-xs cursor-pointer"
                         aria-label="Again: Lupa (Tombol 1)"
                       >
-                        <span className="font-extrabold leading-tight">Again</span>
-                        <span className="text-xs opacity-80 font-normal leading-tight">Lupa</span>
+                        <span className="font-bold leading-tight">Lupa (Again)</span>
                         <kbd className="text-xs opacity-60 font-mono">1</kbd>
                       </button>
                       <button
                         onClick={() => handleFlashcardRate(2)}
-                        className="min-h-[50px] sm:min-h-[54px] py-2.5 sm:py-3 px-1 rounded-2xl bg-amber-500/15 dark:bg-amber-950/40 hover:bg-amber-500/25 dark:hover:bg-amber-900/60 border border-amber-500/30 text-amber-700 dark:text-amber-300 text-xs font-bold transition-all flex flex-col items-center justify-center gap-0.5 active:scale-95 shadow-xs"
+                        className="min-h-[50px] sm:min-h-[54px] py-2.5 px-3 rounded-xl bg-amber-500/10 hover:bg-amber-500/20 border border-amber-500/30 text-accent font-bold text-xs transition-all flex flex-col sm:flex-row items-center justify-center gap-1 active:scale-95 shadow-xs cursor-pointer"
                         aria-label="Hard: Ragu (Tombol 2)"
                       >
-                        <span className="font-extrabold leading-tight">Hard</span>
-                        <span className="text-xs opacity-80 font-normal leading-tight">Ragu</span>
+                        <span className="font-bold leading-tight">Ragu (Hard)</span>
                         <kbd className="text-xs opacity-60 font-mono">2</kbd>
                       </button>
                       <button
                         onClick={() => handleFlashcardRate(3)}
-                        className="min-h-[50px] sm:min-h-[54px] py-2.5 sm:py-3 px-1 rounded-2xl bg-emerald-500/15 dark:bg-emerald-950/40 hover:bg-emerald-500/25 dark:hover:bg-emerald-900/60 border border-emerald-500/30 text-emerald-700 dark:text-emerald-300 text-xs font-bold transition-all flex flex-col items-center justify-center gap-0.5 active:scale-95 shadow-xs"
+                        className="min-h-[50px] sm:min-h-[54px] py-2.5 px-3 rounded-xl bg-emerald-500/10 hover:bg-emerald-500/20 border border-emerald-500/30 text-emerald-700 dark:text-emerald-300 font-bold text-xs transition-all flex flex-col sm:flex-row items-center justify-center gap-1 active:scale-95 shadow-xs cursor-pointer"
                         aria-label="Good: Ingat (Tombol 3)"
                       >
-                        <span className="font-extrabold leading-tight">Good</span>
-                        <span className="text-xs opacity-80 font-normal leading-tight">Ingat</span>
+                        <span className="font-bold leading-tight">Ingat (Good)</span>
                         <kbd className="text-xs opacity-60 font-mono">3</kbd>
                       </button>
                       <button
                         onClick={() => handleFlashcardRate(4)}
-                        className="min-h-[50px] sm:min-h-[54px] py-2.5 sm:py-3 px-1 rounded-2xl bg-sky-500/15 dark:bg-sky-950/40 hover:bg-sky-500/25 dark:hover:bg-sky-900/60 border border-sky-500/30 text-sky-700 dark:text-sky-300 text-xs font-bold transition-all flex flex-col items-center justify-center gap-0.5 active:scale-95 shadow-xs"
+                        className="min-h-[50px] sm:min-h-[54px] py-2.5 px-3 rounded-xl bg-sky-500/10 hover:bg-sky-500/20 border border-sky-500/30 text-blue-700 dark:text-blue-300 font-bold text-xs transition-all flex flex-col sm:flex-row items-center justify-center gap-1 active:scale-95 shadow-xs cursor-pointer"
                         aria-label="Easy: Mudah (Tombol 4)"
                       >
-                        <span className="font-extrabold leading-tight">Easy</span>
-                        <span className="text-xs opacity-80 font-normal leading-tight">Mudah</span>
+                        <span className="font-bold leading-tight">Mudah (Easy)</span>
                         <kbd className="text-xs opacity-60 font-mono">4</kbd>
                       </button>
                     </div>
@@ -909,7 +905,7 @@ export const QuizPage: React.FC = () => {
                     <div className="text-center">
                       <button
                         onClick={toggleFlip}
-                        className="w-full sm:w-auto px-8 py-3.5 rounded-2xl bg-accent text-bg font-extrabold text-xs shadow-glow hover:bg-accent-hot transition-all active:scale-95"
+                        className="w-full sm:w-auto px-8 py-3 rounded-xl bg-accent text-stone-950 font-bold text-xs sm:text-sm shadow-xs hover:bg-accent-hot transition-all active:scale-95 cursor-pointer"
                       >
                         Lihat Jawaban (Spasi)
                       </button>
@@ -922,13 +918,13 @@ export const QuizPage: React.FC = () => {
               {activeMode !== 'flashcard' && activeMode !== 'listening' && activeMode !== 'rearrange' && activeMode !== 'panic-recall' && activeMode !== 'mora-pacing' && (
                 <div className="space-y-4">
                   {/* Question Card */}
-                  <div className="bg-surface border-2 border-accent/25 rounded-2xl sm:rounded-3xl p-5 sm:p-8 space-y-3 shadow-lg relative">
+                  <div className="bg-surface border border-border rounded-2xl p-5 sm:p-8 space-y-3 shadow-xs relative">
                     <div className="flex items-center justify-between">
                       <div className="text-xs font-bold text-accent">{currentQ.prompt}</div>
                       <div className="flex items-center gap-1.5">
                         <button
                           onClick={() => handleOpenReport(currentQ)}
-                          className="min-h-[40px] min-w-[40px] p-2 rounded-xl bg-surface-2 hover:bg-surface-3 text-appText-muted hover:text-amber-400 transition-all flex items-center justify-center active:scale-95"
+                          className="min-h-[40px] min-w-[40px] min-h-[44px] min-w-[44px] p-2.5 rounded-xl bg-surface-2 hover:bg-surface-3 text-appText-muted hover:text-amber-400 transition-all flex items-center justify-center active:scale-95"
                           title="Laporkan keanehan/kesalahan soal 🚩"
                           aria-label="Laporkan keanehan soal"
                         >
@@ -944,7 +940,7 @@ export const QuizPage: React.FC = () => {
                               .trim();
                             speakJapanese(cleanAudioText || currentQ.questionText);
                           }}
-                          className="min-h-[40px] min-w-[40px] p-2 rounded-xl bg-surface-2 hover:bg-surface-3 text-appText-muted hover:text-accent transition-all flex items-center justify-center active:scale-95"
+                          className="min-h-[40px] min-w-[40px] min-h-[44px] min-w-[44px] p-2.5 rounded-xl bg-surface-2 hover:bg-surface-3 text-appText-muted hover:text-accent transition-all flex items-center justify-center active:scale-95"
                           title="Dengarkan pelafalan"
                           aria-label="Dengarkan pelafalan"
                         >
@@ -1025,7 +1021,7 @@ export const QuizPage: React.FC = () => {
                       <div className="text-xs font-bold text-accent">{currentQ.prompt}</div>
                       <button
                         onClick={() => handleOpenReport(currentQ)}
-                        className="w-10 h-10 min-h-[40px] min-w-[40px] flex items-center justify-center p-2 rounded-xl bg-surface-2 hover:bg-surface-3 text-appText-muted hover:text-amber-800 dark:hover:text-amber-400 transition-all active:scale-95"
+                        className="w-10 h-10 min-h-[40px] min-w-[40px] w-11 h-11 min-h-[44px] min-w-[44px] flex items-center justify-center p-2.5 rounded-xl bg-surface-2 hover:bg-surface-3 text-appText-muted hover:text-amber-800 dark:hover:text-amber-400 transition-all active:scale-95"
                         title="Laporkan keanehan susunan kalimat 🚩"
                         aria-label="Laporkan soal"
                       >

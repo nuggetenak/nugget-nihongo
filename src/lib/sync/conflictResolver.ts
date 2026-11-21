@@ -391,3 +391,158 @@ export function resolveVectorClockConflict<T extends VectorClockedEntity>(
     _vc: mergedClocks,
   };
 }
+
+// ══════════════════════════════════════════════════════════════════
+//  Botanical Garden & Gamification CRDT Reconcilers
+// ══════════════════════════════════════════════════════════════════
+
+export interface GardenPlantItem {
+  id: string;
+  kanji: string;
+  reading?: string;
+  meaning?: string;
+  level?: 'n5' | 'n4' | 'n3' | 'n2' | 'n1' | string;
+  stage: number;      // 0 to 4
+  waterCount: number;
+  maxWater?: number;
+  lastWatered?: string;
+}
+
+export interface GardenSyncState {
+  plants: GardenPlantItem[];
+  waterDrops: number;
+  harvestedKanji?: string[];
+  updatedAt?: number | string;
+}
+
+/**
+ * Reconciles multi-tab botanical garden state using Monotonic High-Water & Additive Merge.
+ * Invariants:
+ * 1. Plant maturity stage is monotonically non-decreasing (plants never regress in bloom).
+ * 2. Water count takes the highest count reached across any open tab or device.
+ * 3. Water drops balance is preserved at the high-water mark.
+ * 4. Harvested kanji sets are merged via mathematical union (no lost collections).
+ */
+export function resolveGardenConflict(
+  local?: GardenSyncState | null,
+  remote?: GardenSyncState | null
+): GardenSyncState {
+  if (!local && !remote) return { plants: [], waterDrops: 3, harvestedKanji: [], updatedAt: Date.now() };
+  if (!local) return remote!;
+  if (!remote) return local;
+
+  const localPlants = Array.isArray(local.plants) ? local.plants : [];
+  const remotePlants = Array.isArray(remote.plants) ? remote.plants : [];
+
+  const plantMap = new Map<string, GardenPlantItem>();
+
+  for (const plant of localPlants) {
+    if (plant && plant.id) {
+      plantMap.set(plant.id, { ...plant });
+    }
+  }
+
+  for (const rPlant of remotePlants) {
+    if (!rPlant || !rPlant.id) continue;
+    const existing = plantMap.get(rPlant.id);
+    if (!existing) {
+      plantMap.set(rPlant.id, { ...rPlant });
+    } else {
+      const stage = Math.max(existing.stage || 0, rPlant.stage || 0);
+      const waterCount = Math.max(existing.waterCount || 0, rPlant.waterCount || 0);
+      const lastWatered = (existing.lastWatered && rPlant.lastWatered)
+        ? (new Date(existing.lastWatered).getTime() > new Date(rPlant.lastWatered).getTime() ? existing.lastWatered : rPlant.lastWatered)
+        : (existing.lastWatered || rPlant.lastWatered);
+
+      plantMap.set(rPlant.id, {
+        ...existing,
+        ...rPlant,
+        stage,
+        waterCount,
+        lastWatered,
+      });
+    }
+  }
+
+  const localDrops = Number.isFinite(local.waterDrops) ? Math.max(0, local.waterDrops) : 0;
+  const remoteDrops = Number.isFinite(remote.waterDrops) ? Math.max(0, remote.waterDrops) : 0;
+  const mergedDrops = Math.max(localDrops, remoteDrops);
+
+  const localHarvested = Array.isArray(local.harvestedKanji) ? local.harvestedKanji : [];
+  const remoteHarvested = Array.isArray(remote.harvestedKanji) ? remote.harvestedKanji : [];
+  const mergedHarvested = Array.from(new Set([...localHarvested, ...remoteHarvested]));
+
+  return {
+    plants: Array.from(plantMap.values()),
+    waterDrops: mergedDrops,
+    harvestedKanji: mergedHarvested,
+    updatedAt: Date.now(),
+  };
+}
+
+export interface GamificationSyncState {
+  heatmap?: Record<string, { reviews: number; xp: number }>;
+  badges?: Array<{ id: string; earned?: boolean; earnedAt?: string; [key: string]: any }>;
+  updatedAt?: number | string;
+}
+
+/**
+ * Reconciles multi-tab gamification state (Heatmap & Badges) without loss of progress.
+ * Invariants:
+ * 1. Heatmap reviews and XP per date are monotonically non-decreasing.
+ * 2. Unlocked badges are merged via union; once earned, a badge is never un-earned.
+ */
+export function resolveGamificationConflict(
+  local?: GamificationSyncState | null,
+  remote?: GamificationSyncState | null
+): GamificationSyncState {
+  if (!local && !remote) return { heatmap: {}, badges: [], updatedAt: Date.now() };
+  if (!local) return remote!;
+  if (!remote) return local;
+
+  const mergedHeatmap: Record<string, { reviews: number; xp: number }> = {
+    ...(local.heatmap || {}),
+  };
+
+  const remoteHeatmap = remote.heatmap || {};
+  for (const date of Object.keys(remoteHeatmap)) {
+    const locDay = mergedHeatmap[date];
+    const remDay = remoteHeatmap[date];
+    if (!locDay) {
+      mergedHeatmap[date] = { ...remDay };
+    } else {
+      mergedHeatmap[date] = {
+        reviews: Math.max(locDay.reviews || 0, remDay.reviews || 0),
+        xp: Math.max(locDay.xp || 0, remDay.xp || 0),
+      };
+    }
+  }
+
+  const badgeMap = new Map<string, any>();
+  (local.badges || []).forEach((b) => {
+    if (b && b.id) badgeMap.set(b.id, { ...b, earned: Boolean(b.earned) });
+  });
+
+  (remote.badges || []).forEach((rBadge) => {
+    if (!rBadge || !rBadge.id) return;
+    const existing = badgeMap.get(rBadge.id);
+    if (!existing) {
+      badgeMap.set(rBadge.id, { ...rBadge, earned: Boolean(rBadge.earned) });
+    } else {
+      const isEarned = existing.earned || Boolean(rBadge.earned);
+      const earnedAt = existing.earnedAt || rBadge.earnedAt;
+      badgeMap.set(rBadge.id, {
+        ...existing,
+        ...rBadge,
+        earned: isEarned,
+        earnedAt,
+      });
+    }
+  });
+
+  return {
+    heatmap: mergedHeatmap,
+    badges: Array.from(badgeMap.values()),
+    updatedAt: Date.now(),
+  };
+}

@@ -885,8 +885,14 @@ export const useAppStore = create<AppState>((set, get) => ({
 
 export { getStoredCards };
 
+import { initGardenCrossTabSync } from '../lib/garden/gardenStore.ts';
+import { initGamificationCrossTabSync } from '../lib/gamification/gamificationStore.ts';
+
 export function initCrossTabSync(): () => void {
-  return broadcastSync.subscribe((event) => {
+  const unsubGarden = typeof initGardenCrossTabSync === 'function' ? initGardenCrossTabSync() : () => {};
+  const unsubGamification = typeof initGamificationCrossTabSync === 'function' ? initGamificationCrossTabSync() : () => {};
+
+  const unsubApp = broadcastSync.subscribe((event) => {
     switch (event.type) {
       case 'XP_UPDATED':
         if (typeof event.payload?.xp === 'number') {
@@ -928,4 +934,10 @@ export function initCrossTabSync(): () => void {
         break;
     }
   });
+
+  return () => {
+    unsubGarden();
+    unsubGamification();
+    unsubApp();
+  };
 }

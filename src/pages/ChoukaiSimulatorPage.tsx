@@ -101,7 +101,7 @@ export const ChoukaiSimulatorPage: React.FC<{ onBack?: () => void }> = ({ onBack
       <div className="flex items-center justify-between gap-3 mb-6">
         <button
           onClick={() => { if (onBack) onBack(); else setActiveTab('materi'); }}
-          className="min-h-[40px] px-3.5 py-2 rounded-xl bg-surface border border-theme text-xs sm:text-sm font-semibold hover:border-amber-500/50 active:scale-95 transition-all flex items-center gap-2 text-appText-bright shadow-sm"
+          className="min-h-[44px] px-3.5 py-2 rounded-xl bg-surface border border-theme text-xs sm:text-sm font-semibold hover:border-amber-500/50 active:scale-95 transition-all flex items-center gap-2 text-appText-bright shadow-sm cursor-pointer"
         >
           <ArrowLeft className="w-4 h-4" />
           <span>Kembali</span>
@@ -119,9 +119,9 @@ export const ChoukaiSimulatorPage: React.FC<{ onBack?: () => void }> = ({ onBack
           <button
             key={set.id}
             onClick={() => handleSelectSet(set.id)}
-            className={`min-h-[42px] px-4 py-2 rounded-2xl text-xs sm:text-sm font-bold whitespace-nowrap transition-all active:scale-95 shrink-0 ${
+            className={`min-h-[44px] px-4 py-2 rounded-2xl text-xs sm:text-sm font-bold whitespace-nowrap transition-all active:scale-95 shrink-0 cursor-pointer ${
               activeSetId === set.id
-                ? 'bg-amber-500 text-bg shadow-md'
+                ? 'bg-amber-500 text-stone-950 font-bold shadow-md'
                 : 'bg-surface border border-theme text-appText-muted hover:text-appText-bright'
             }`}
           >
@@ -136,7 +136,7 @@ export const ChoukaiSimulatorPage: React.FC<{ onBack?: () => void }> = ({ onBack
           <button
             key={sec.id}
             onClick={() => handleSelectSection(sec.id)}
-            className={`min-h-[40px] px-3.5 py-1.5 rounded-xl text-xs font-semibold whitespace-nowrap transition-all flex items-center gap-1.5 shrink-0 active:scale-95 ${
+            className={`min-h-[40px] px-3.5 py-1.5 rounded-xl text-xs font-semibold whitespace-nowrap transition-all flex items-center gap-1.5 shrink-0 active:scale-95 min-h-[44px] cursor-pointer ${
               activeSectionId === sec.id
                 ? 'bg-amber-500/20 text-amber-950 dark:text-amber-300 border border-amber-500/40 font-bold'
                 : 'bg-surface/70 border border-theme/80 text-appText-muted hover:text-appText-bright'
@@ -199,7 +199,7 @@ export const ChoukaiSimulatorPage: React.FC<{ onBack?: () => void }> = ({ onBack
           <div className="flex flex-wrap justify-center gap-3">
             <button
               onClick={handleReset}
-              className="min-h-[44px] px-5 py-2.5 rounded-2xl bg-amber-500 hover:bg-amber-400 text-bg font-bold text-sm active:scale-95 transition-all flex items-center gap-2 shadow-sm"
+              className="min-h-[44px] px-5 py-2.5 rounded-2xl bg-amber-500 hover:bg-amber-400 text-stone-950 font-bold text-sm active:scale-95 transition-all flex items-center gap-2 shadow-sm"
             >
               <RotateCcw className="w-4 h-4" />
               <span>Ulangi Simulasi Ini</span>
@@ -265,7 +265,7 @@ export const ChoukaiSimulatorPage: React.FC<{ onBack?: () => void }> = ({ onBack
 
           {/* Prompt Image if present */}
           {currentQ.promptImage && (
-            <div className="w-full flex justify-center bg-surface-2 rounded-2xl p-3 border border-theme">
+            <div className="w-full flex justify-center bg-surface-2/40 rounded-xl p-3">
               <img
                 src={currentQ.promptImage}
                 alt={`Prompt Soal ${currentQ.id}`}
@@ -309,7 +309,7 @@ export const ChoukaiSimulatorPage: React.FC<{ onBack?: () => void }> = ({ onBack
                     {text && <span className="text-sm font-medium break-words">{text}</span>}
                   </div>
                   {img && (
-                    <div className="mt-2 w-full flex justify-center bg-surface/60 p-2 rounded-xl border border-theme">
+                    <div className="mt-2 w-full flex justify-center bg-surface/60 p-2 rounded-xl">
                       <img src={img} alt={`Option ${label}`} className="max-h-28 object-contain rounded" />
                     </div>
                   )}
@@ -332,7 +332,7 @@ export const ChoukaiSimulatorPage: React.FC<{ onBack?: () => void }> = ({ onBack
             {currentQuestionIndex === questions.length - 1 ? (
               <button
                 onClick={() => setIsSubmitted(true)}
-                className="min-h-[44px] px-5 py-2 bg-emerald-500 hover:bg-emerald-400 text-bg font-bold text-xs sm:text-sm rounded-xl active:scale-95 transition-all shadow-md flex items-center gap-1.5"
+                className="min-h-[44px] px-5 py-2 bg-emerald-500 hover:bg-emerald-400 text-stone-950 font-bold text-xs sm:text-sm rounded-xl active:scale-95 transition-all shadow-md flex items-center gap-1.5"
               >
                 <span>Selesaikan Simulasi</span>
                 <CheckCircle2 className="w-4 h-4" />
@@ -340,7 +340,7 @@ export const ChoukaiSimulatorPage: React.FC<{ onBack?: () => void }> = ({ onBack
             ) : (
               <button
                 onClick={handleNext}
-                className="min-h-[44px] px-5 py-2 bg-amber-500 hover:bg-amber-400 text-bg font-bold text-xs sm:text-sm rounded-xl active:scale-95 transition-all shadow-md flex items-center gap-1.5"
+                className="min-h-[44px] px-5 py-2 bg-amber-500 hover:bg-amber-400 text-stone-950 font-bold text-xs sm:text-sm rounded-xl active:scale-95 transition-all shadow-md flex items-center gap-1.5"
               >
                 <span>Berikutnya</span>
                 <ArrowRight className="w-4 h-4" />

@@ -3,10 +3,11 @@
 //  Protects user progress against aggressive iOS Safari / Android PWA cache evictions
 // ══════════════════════════════════════════════════════════════════
 
-import React, { useEffect } from 'react';
-import { ShieldAlert, Download, Cloud, Trash2, X } from 'lucide-react';
+import React, { useEffect, useState } from 'react';
+import { ShieldAlert, Download, Cloud, Trash2, X, RotateCcw } from 'lucide-react';
 import { createBackupPayload } from '../../lib/storage/backupManager';
 import { cacheManager } from '../../lib/storage/cacheManager';
+import { storageBridge } from '../../lib/persistence/storageBridge';
 import { useAuthStore } from '../../lib/supabase/authStore';
 import { useAppStore } from '../../store/useAppStore';
 import { useBodyScrollLock } from '../../hooks/useBodyScrollLock';
@@ -28,10 +29,21 @@ export const StorageEvictionRecoveryModal: React.FC<StorageEvictionRecoveryModal
 }) => {
   const { showToast } = useAppStore();
   const { user, syncNow, openAuthModal } = useAuthStore();
+  const [hasSnapshot, setHasSnapshot] = useState(false);
 
   const containerRef = useFocusTrap<HTMLDivElement>(isOpen, onClose);
 
   useBodyScrollLock(isOpen);
+
+  // Check if IndexedDB local auto-snapshot is available
+  useEffect(() => {
+    if (!isOpen) return;
+    storageBridge.getLatestSnapshot()
+      .then((snap) => {
+        setHasSnapshot(Boolean(snap && snap.data && Object.keys(snap.data).length > 0));
+      })
+      .catch(() => setHasSnapshot(false));
+  }, [isOpen]);
 
   // Close modal on Escape key
   useEffect(() => {
@@ -82,6 +94,23 @@ export const StorageEvictionRecoveryModal: React.FC<StorageEvictionRecoveryModal
     }
   };
 
+  const handleRestoreSnapshot = async () => {
+    try {
+      const res = await storageBridge.restoreSnapshot('latest');
+      if (res.success && res.restoredKeys > 0) {
+        showToast(`Berhasil memulihkan ${res.restoredKeys} kunci data dari snapshot lokal!`, '✅');
+        onClose();
+        if (typeof window !== 'undefined') {
+          setTimeout(() => window.location.reload(), 600);
+        }
+      } else {
+        showToast('Tidak ada data snapshot yang dapat dipulihkan', '⚠️');
+      }
+    } catch {
+      showToast('Gagal memulihkan snapshot lokal', '⚠️');
+    }
+  };
+
   return (
     <div
       onClick={onClose}
@@ -93,7 +122,7 @@ export const StorageEvictionRecoveryModal: React.FC<StorageEvictionRecoveryModal
         aria-modal="true"
         aria-labelledby="storage-eviction-modal-title"
         onClick={(e) => e.stopPropagation()}
-        className="w-full max-w-lg bg-surface border border-rose-500/30 rounded-3xl p-5 sm:p-7 shadow-2xl space-y-5 animate-in zoom-in-95 duration-200 max-h-[90dvh] overflow-y-auto pb-[max(1.25rem,env(safe-area-inset-bottom))]"
+        className="w-full max-w-lg bg-surface border border-rose-500/30 rounded-2xl p-5 sm:p-7 shadow-2xl space-y-5 animate-in zoom-in-95 duration-200 max-h-[90dvh] overflow-y-auto pb-[max(1.25rem,env(safe-area-inset-bottom))]"
       >
         <div className="w-12 h-1.5 rounded-full bg-accent/25 mx-auto -mt-1 mb-2 sm:hidden shrink-0" />
         <div className="flex items-start justify-between gap-3">
@@ -102,7 +131,7 @@ export const StorageEvictionRecoveryModal: React.FC<StorageEvictionRecoveryModal
               <IrasutoyaImage assetId="daruma_recovery" className="w-8 h-8" containerClassName="w-8 h-8 shrink-0" animatePop />
             </div>
             <div>
-              <h3 id="storage-eviction-modal-title" className="font-extrabold text-base sm:text-lg text-appText-bright">
+              <h3 id="storage-eviction-modal-title" className="font-display font-bold text-base sm:text-lg text-appText-bright">
                 Peringatan Kapasitas Penyimpanan
               </h3>
               <p className="text-xs text-appText-muted mt-0.5">
@@ -157,7 +186,7 @@ export const StorageEvictionRecoveryModal: React.FC<StorageEvictionRecoveryModal
               className="flex items-center justify-between p-3.5 min-h-[48px] card-interactive-lift rounded-xl bg-surface-2 hover:bg-surface-3 border border-emerald-500/25 text-appText-bright text-xs font-bold transition-all active:scale-95"
             >
               <div className="flex items-center gap-2.5">
-                <Cloud className="w-4 h-4 text-emerald-700 dark:text-emerald-400" />
+                <Cloud className="w-4 h-4 text-emerald-700 dark:text-emerald-400 font-bold" />
                 <span>2. {user ? 'Sinkronkan Progres ke Cloud' : 'Masuk Akun & Sinkronkan ke Cloud'}</span>
               </div>
               <span className="text-xs text-emerald-700 dark:text-emerald-400 font-bold">Permanen</span>
@@ -168,11 +197,24 @@ export const StorageEvictionRecoveryModal: React.FC<StorageEvictionRecoveryModal
               className="flex items-center justify-between p-3.5 min-h-[48px] card-interactive-lift rounded-xl bg-surface-2 hover:bg-surface-3 border border-amber-500/25 text-appText-bright text-xs font-bold transition-all active:scale-95"
             >
               <div className="flex items-center gap-2.5">
-                <Trash2 className="w-4 h-4 text-amber-800 dark:text-amber-400" />
+                <Trash2 className="w-4 h-4 text-amber-800 dark:text-amber-400 font-bold" />
                 <span>3. Bersihkan Cache Audio Sementara</span>
               </div>
               <span className="text-xs text-amber-800 dark:text-amber-400 font-bold">Kosongkan Ruang</span>
             </button>
+
+            {hasSnapshot && (
+              <button
+                onClick={handleRestoreSnapshot}
+                className="flex items-center justify-between p-3.5 min-h-[48px] card-interactive-lift rounded-xl bg-surface-2 hover:bg-surface-3 border border-indigo-500/25 text-appText-bright text-xs font-bold transition-all active:scale-95"
+              >
+                <div className="flex items-center gap-2.5">
+                  <RotateCcw className="w-4 h-4 text-indigo-700 dark:text-indigo-400 font-bold" />
+                  <span>4. Pulihkan dari Snapshot Lokal (IndexedDB)</span>
+                </div>
+                <span className="text-xs text-indigo-700 dark:text-indigo-400 font-bold">Auto-Snapshot</span>
+              </button>
+            )}
           </div>
         </div>
 

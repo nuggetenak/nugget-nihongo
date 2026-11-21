@@ -465,7 +465,7 @@ export const CurriculumTrackBrowser: React.FC<CurriculumTrackBrowserProps> = ({
             <button
               type="button"
               onClick={() => setIsSubstratumDropdownOpen(true)}
-              className="px-2.5 py-1.5 rounded-xl bg-surface-3 hover:bg-surface border border-accent/20 text-xs font-bold text-appText-bright flex items-center gap-1 active:scale-95"
+              className="px-3 py-2 min-h-[44px] rounded-xl bg-surface-3 hover:bg-surface border border-accent/20 text-xs font-bold text-appText-bright flex items-center gap-1.5 active:scale-95"
               aria-label="Pilih Penyesuaian Bahasa Daerah"
             >
               <span>🗣️ {activeSubstratumMeta.label.split(' ')[0]}</span>
@@ -909,7 +909,7 @@ export const CurriculumTrackBrowser: React.FC<CurriculumTrackBrowserProps> = ({
           <button
             type="button"
             onClick={() => setIsSubstratumDropdownOpen(true)}
-            className="min-h-[36px] px-3 py-1 rounded-lg bg-surface hover:bg-surface-3 border border-accent/20 text-xs font-bold text-accent hover:text-accent-hot flex items-center gap-1.5 transition-colors active:scale-95 shrink-0"
+            className="min-h-[44px] px-3.5 py-2 rounded-xl bg-surface hover:bg-surface-3 border border-accent/20 text-xs font-bold text-accent hover:text-accent-hot flex items-center gap-1.5 transition-colors active:scale-95 shrink-0"
             aria-label="Ganti Dialek"
           >
             <span>Ganti Dialek</span>
@@ -1010,7 +1010,7 @@ export const CurriculumTrackBrowser: React.FC<CurriculumTrackBrowserProps> = ({
         </h3>
         <button
           onClick={handleToggleAllUnits}
-          className="text-xs font-bold text-accent hover:underline active:scale-95 focus-visible:ring-1 focus-visible:ring-amber-500 rounded px-2 py-1"
+          className="text-xs font-bold text-accent hover:underline active:scale-95 focus-visible:ring-1 focus-visible:ring-amber-500 rounded px-2.5 py-1.5 min-h-[44px] inline-flex items-center"
         >
           Buka / Tutup Semua
         </button>

@@ -155,7 +155,7 @@ export const ExamLmsHub: React.FC<ExamLmsHubProps> = ({
             <button
               type="button"
               onClick={restoreSavedSession}
-              className="min-h-[40px] px-5 py-2 rounded-xl bg-amber-500 hover:bg-amber-400 text-stone-950 font-black text-xs flex items-center gap-1.5 transition-all shadow-glow active:scale-95"
+              className="min-h-[40px] px-5 py-2 rounded-xl bg-amber-500 hover:bg-amber-400 text-stone-950 font-black text-xs flex items-center gap-1.5 transition-all shadow-xs active:scale-95"
             >
               <span>Lanjutkan Sesi</span>
               <ChevronRight className="w-3.5 h-3.5 stroke-[3]" />
@@ -168,10 +168,10 @@ export const ExamLmsHub: React.FC<ExamLmsHubProps> = ({
       <div className="bg-surface border border-theme rounded-3xl p-5 sm:p-7 shadow-sm space-y-6">
         <div>
           <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-500/15 border border-amber-500/30 text-accent font-bold text-xs mb-2">
-            <Sparkles className="w-3.5 h-3.5 text-amber-400" />
+            <Sparkles className="w-3.5 h-3.5 text-accent" />
             <span>Pusat Asesmen Resmi · 認定試験ポータル</span>
           </div>
-          <h1 className="text-xl sm:text-3xl font-black text-appText-bright tracking-tight">
+          <h1 className="text-xl sm:text-3xl font-display font-bold text-appText-bright tracking-tight">
             Pusat Ujian & Latihan Terarah
           </h1>
           <p className="text-xs sm:text-sm text-appText-muted mt-1 leading-relaxed max-w-2xl">
@@ -199,7 +199,7 @@ export const ExamLmsHub: React.FC<ExamLmsHubProps> = ({
               <span
                 className={`text-xs font-mono font-bold px-2 py-0.5 rounded-full border ${
                   activeDoor === 'jlpt'
-                    ? 'bg-amber-500/20 border-amber-500/40 text-amber-300'
+                    ? 'bg-amber-500/20 border-amber-500/40 text-amber-800 dark:text-amber-300 font-bold'
                     : 'bg-surface border-theme text-appText-muted'
                 }`}
               >
@@ -207,7 +207,7 @@ export const ExamLmsHub: React.FC<ExamLmsHubProps> = ({
               </span>
             </div>
             <div>
-              <div className="text-xs font-black uppercase tracking-wider text-amber-400">Pintu 1</div>
+              <div className="text-xs font-black uppercase tracking-wider text-amber-600 dark:text-amber-400">Pintu 1</div>
               <h3 className="text-sm sm:text-base font-extrabold text-appText-bright mt-0.5 truncate">
                 Pusat Ujian JLPT
               </h3>
@@ -232,7 +232,7 @@ export const ExamLmsHub: React.FC<ExamLmsHubProps> = ({
               <span
                 className={`text-xs font-mono font-bold px-2 py-0.5 rounded-full border ${
                   activeDoor === 'ssw'
-                    ? 'bg-emerald-500/20 border-emerald-500/40 text-emerald-300'
+                    ? 'bg-emerald-500/20 border-emerald-500/40 text-emerald-800 dark:text-emerald-300 font-bold'
                     : 'bg-surface border-theme text-appText-muted'
                 }`}
               >
@@ -240,7 +240,7 @@ export const ExamLmsHub: React.FC<ExamLmsHubProps> = ({
               </span>
             </div>
             <div>
-              <div className="text-xs font-black uppercase tracking-wider text-emerald-400">Pintu 2</div>
+              <div className="text-xs font-black uppercase tracking-wider text-emerald-600 dark:text-emerald-400">Pintu 2</div>
               <h3 className="text-sm sm:text-base font-extrabold text-appText-bright mt-0.5 truncate">
                 Pusat Tokutei Ginou
               </h3>
@@ -265,7 +265,7 @@ export const ExamLmsHub: React.FC<ExamLmsHubProps> = ({
               <span
                 className={`text-xs font-mono font-bold px-2 py-0.5 rounded-full border ${
                   activeDoor === 'rapid'
-                    ? 'bg-cyan-500/20 border-cyan-500/40 text-cyan-300'
+                    ? 'bg-cyan-500/20 border-cyan-500/40 text-cyan-800 dark:text-cyan-300 font-bold'
                     : 'bg-surface border-theme text-appText-muted'
                 }`}
               >
@@ -273,7 +273,7 @@ export const ExamLmsHub: React.FC<ExamLmsHubProps> = ({
               </span>
             </div>
             <div>
-              <div className="text-xs font-black uppercase tracking-wider text-cyan-400">Pintu 3</div>
+              <div className="text-xs font-black uppercase tracking-wider text-cyan-600 dark:text-cyan-400">Pintu 3</div>
               <h3 className="text-sm sm:text-base font-extrabold text-appText-bright mt-0.5 truncate">
                 Latihan Cepat & Review
               </h3>
@@ -344,11 +344,11 @@ export const ExamLmsHub: React.FC<ExamLmsHubProps> = ({
                   >
                     <div>
                       <div className="flex items-center justify-between gap-2 mb-2">
-                        <span className="text-xs font-black px-2.5 py-0.5 rounded-full bg-amber-500/15 border border-amber-500/30 text-amber-300 uppercase">
+                        <span className="text-xs font-black px-2.5 py-0.5 rounded-full bg-amber-500/15 border border-amber-500/30 text-amber-800 dark:text-amber-300 font-bold uppercase">
                           {setEntry.level?.toUpperCase()} · Golden Set
                         </span>
                         {hasAttempt && record.isMastered && (
-                          <span className="text-xs font-bold px-2 py-0.5 rounded-full bg-emerald-500/20 border border-emerald-500/40 text-emerald-300 flex items-center gap-1">
+                          <span className="text-xs font-bold px-2 py-0.5 rounded-full bg-emerald-500/20 border border-emerald-500/40 text-emerald-800 dark:text-emerald-300 font-bold flex items-center gap-1">
                             <Star className="w-3 h-3 fill-emerald-400 text-emerald-400" />
                             <span>Mastered</span>
                           </span>
@@ -482,11 +482,11 @@ export const ExamLmsHub: React.FC<ExamLmsHubProps> = ({
                   >
                     <div>
                       <div className="flex items-center justify-between gap-2 mb-2">
-                        <span className="text-xs font-black px-2.5 py-0.5 rounded-full bg-emerald-500/15 border border-emerald-500/30 text-emerald-300 uppercase">
+                        <span className="text-xs font-black px-2.5 py-0.5 rounded-full bg-emerald-500/15 border border-emerald-500/30 text-emerald-800 dark:text-emerald-300 font-bold uppercase">
                           {activeSswTrack === 'jft' ? 'JFT-Basic A2' : 'SSW Official'}
                         </span>
                         {hasAttempt && record.isMastered && (
-                          <span className="text-xs font-bold px-2 py-0.5 rounded-full bg-emerald-500/20 border border-emerald-500/40 text-emerald-300 flex items-center gap-1">
+                          <span className="text-xs font-bold px-2 py-0.5 rounded-full bg-emerald-500/20 border border-emerald-500/40 text-emerald-800 dark:text-emerald-300 font-bold flex items-center gap-1">
                             <Star className="w-3 h-3 fill-emerald-400 text-emerald-400" />
                             <span>Mastered</span>
                           </span>
@@ -548,7 +548,7 @@ export const ExamLmsHub: React.FC<ExamLmsHubProps> = ({
                       onStartDynamicDrill(60);
                     }
                   }}
-                  className="min-h-[46px] px-6 py-3 rounded-2xl bg-gradient-to-r from-emerald-500 to-emerald-400 hover:from-emerald-400 hover:to-emerald-300 text-stone-950 font-black text-xs sm:text-sm flex items-center justify-center gap-2 transition-all active:scale-95 shadow-glow shrink-0"
+                  className="min-h-[46px] px-6 py-3 rounded-2xl bg-gradient-to-r from-emerald-500 to-emerald-400 hover:from-emerald-400 hover:to-emerald-300 text-stone-950 font-black text-xs sm:text-sm flex items-center justify-center gap-2 transition-all active:scale-95 shadow-xs shrink-0"
                 >
                   <Play className="w-4 h-4 fill-stone-950" />
                   <span>Uji Simulasi Penuh</span>
@@ -570,7 +570,7 @@ export const ExamLmsHub: React.FC<ExamLmsHubProps> = ({
                   <span className="text-2xl p-2 rounded-xl bg-amber-500/15 border border-amber-500/30">
                     🧠
                   </span>
-                  <span className="text-xs font-mono font-bold px-2.5 py-1 rounded-full bg-amber-500/20 border border-amber-500/40 text-amber-300">
+                  <span className="text-xs font-mono font-bold px-2.5 py-1 rounded-full bg-amber-500/20 border border-amber-500/40 text-amber-800 dark:text-amber-300 font-bold">
                     {dueCount} Kartu Menanti
                   </span>
                 </div>
@@ -590,7 +590,7 @@ export const ExamLmsHub: React.FC<ExamLmsHubProps> = ({
                   type="button"
                   disabled={dueCount === 0}
                   onClick={onStartFSRSDue}
-                  className="min-h-[44px] px-5 py-2.5 rounded-xl bg-amber-500 hover:bg-amber-400 text-stone-950 font-black text-xs sm:text-sm flex items-center gap-2 transition-all shadow-glow active:scale-95 disabled:opacity-40 disabled:cursor-not-allowed disabled:pointer-events-none"
+                  className="min-h-[44px] px-5 py-2.5 rounded-xl bg-amber-500 hover:bg-amber-400 text-stone-950 font-black text-xs sm:text-sm flex items-center gap-2 transition-all shadow-xs active:scale-95 disabled:opacity-40 disabled:cursor-not-allowed disabled:pointer-events-none"
                 >
                   {dueCount === 0 ? (
                     <>
@@ -615,7 +615,7 @@ export const ExamLmsHub: React.FC<ExamLmsHubProps> = ({
                   <span className="text-2xl p-2 rounded-xl bg-rose-500/15 border border-rose-500/30">
                     📕
                   </span>
-                  <span className="text-xs font-mono font-bold px-2.5 py-1 rounded-full bg-rose-500/20 border border-rose-500/40 text-rose-300">
+                  <span className="text-xs font-mono font-bold px-2.5 py-1 rounded-full bg-rose-500/20 border border-rose-500/40 text-rose-800 dark:text-rose-300 font-bold">
                     {mistakesCount} Soal Salah
                   </span>
                 </div>
@@ -654,7 +654,7 @@ export const ExamLmsHub: React.FC<ExamLmsHubProps> = ({
                   <span className="text-2xl p-2 rounded-xl bg-cyan-500/15 border border-cyan-500/30">
                     ⚡
                   </span>
-                  <span className="text-xs font-mono font-bold px-2.5 py-1 rounded-full bg-cyan-500/20 border border-cyan-500/40 text-cyan-300">
+                  <span className="text-xs font-mono font-bold px-2.5 py-1 rounded-full bg-cyan-500/20 border border-cyan-500/40 text-cyan-800 dark:text-cyan-300 font-bold">
                     Campuran 10 Soal
                   </span>
                 </div>
@@ -688,7 +688,7 @@ export const ExamLmsHub: React.FC<ExamLmsHubProps> = ({
                   <span className="text-2xl p-2 rounded-xl bg-purple-500/15 border border-purple-500/30">
                     🎯
                   </span>
-                  <span className="text-xs font-mono font-bold px-2.5 py-1 rounded-full bg-purple-500/20 border border-purple-500/40 text-purple-300">
+                  <span className="text-xs font-mono font-bold px-2.5 py-1 rounded-full bg-purple-500/20 border border-purple-500/40 text-purple-800 dark:text-purple-300 font-bold">
                     IRT 3PL Presisi
                   </span>
                 </div>
@@ -720,7 +720,7 @@ export const ExamLmsHub: React.FC<ExamLmsHubProps> = ({
 
       {/* ── PRE-TEST SCAFFOLDING MODAL (GUIDED VS STRICT) ──────────── */}
       {selectedSetForPretest && (
-        <div className="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm flex items-center justify-center p-4 animate-in fade-in">
+        <div className="fixed inset-0 z-50 bg-stone-950/60 backdrop-blur-xs flex items-center justify-center p-4 animate-in fade-in">
           <div
             className="w-full max-w-lg bg-surface border border-theme rounded-3xl p-5 sm:p-7 space-y-5 shadow-2xl relative"
             role="dialog"
@@ -805,7 +805,7 @@ export const ExamLmsHub: React.FC<ExamLmsHubProps> = ({
                       🟢 Mode Latihan Terbimbing (Guided Practice)
                     </span>
                   </div>
-                  <span className="text-xs font-mono font-bold px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-500/40">
+                  <span className="text-xs font-mono font-bold px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-800 dark:text-emerald-300 font-bold border border-emerald-500/40">
                     Ramah ADHD
                   </span>
                 </div>
@@ -830,7 +830,7 @@ export const ExamLmsHub: React.FC<ExamLmsHubProps> = ({
               <button
                 type="button"
                 onClick={handleLaunchConfirmed}
-                className="min-h-[44px] px-6 py-2.5 rounded-xl bg-amber-500 hover:bg-amber-400 text-stone-950 font-black text-xs sm:text-sm flex items-center gap-2 transition-all shadow-glow active:scale-95"
+                className="min-h-[44px] px-6 py-2.5 rounded-xl bg-amber-500 hover:bg-amber-400 text-stone-950 font-black text-xs sm:text-sm flex items-center gap-2 transition-all shadow-xs active:scale-95"
               >
                 <span>Mulai Ujian Sekarang</span>
                 <Play className="w-4 h-4 fill-stone-950" />

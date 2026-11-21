@@ -103,7 +103,7 @@ export const ChoukaiAudioPlayer: React.FC<ChoukaiAudioPlayerProps> = ({
   const progressPct = duration > 0 ? (currentTime / duration) * 100 : 0;
 
   return (
-    <div className="w-full bg-surface border border-theme rounded-2xl p-4 shadow-md backdrop-blur-sm overflow-x-hidden">
+    <div className="w-full bg-surface-2/40 rounded-xl p-4 overflow-x-hidden">
       {/* Hidden Audio Element with dual source fallback */}
       <audio
         ref={audioRef}
@@ -128,10 +128,10 @@ export const ChoukaiAudioPlayer: React.FC<ChoukaiAudioPlayerProps> = ({
       </audio>
 
       {/* Top Row: Track Label & Playback Speed Chips */}
-      <div className="flex items-center justify-between gap-2 mb-3 pb-2 border-b border-theme/60">
+      <div className="flex flex-wrap sm:flex-nowrap items-center justify-between gap-2 mb-3 pb-2 border-b border-theme/60">
         <div className="flex items-center gap-2 min-w-0">
           <Volume2 className="w-4 h-4 text-accent shrink-0" />
-          <span className="text-xs sm:text-sm font-bold text-appText-bright truncate">
+          <span className="text-xs sm:text-sm font-bold text-appText-bright break-words">
             {audio.label || '聴解 音声 (Listening Audio)'}
           </span>
         </div>
@@ -142,7 +142,7 @@ export const ChoukaiAudioPlayer: React.FC<ChoukaiAudioPlayerProps> = ({
             <button
               key={rate}
               onClick={() => handleSpeedChange(rate)}
-              className={`min-h-[40px] min-w-[40px] px-2.5 py-1.5 rounded-xl text-xs font-bold transition-all active:scale-95 ${
+              className={`min-h-[40px] min-w-[40px] px-2.5 py-1.5 rounded-xl text-xs font-bold transition-all active:scale-95 min-h-[44px] min-w-[44px] ${
                 Math.abs(playbackRate - rate) < 0.05
                   ? 'bg-amber-500 text-stone-950 shadow-sm'
                   : 'bg-surface-2 hover:bg-surface-3 text-appText-muted hover:text-appText-bright border border-theme'

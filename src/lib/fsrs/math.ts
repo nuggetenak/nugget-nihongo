@@ -331,18 +331,19 @@ export function calculateFSRSReview(
     options.isFatigued ?? isFatigueCondition({ currentHour: options.currentHour, sessionMinutes: options.sessionMinutes });
 
   const now = new Date();
-  const lastReviewTime = existingCard.last_review
-    ? new Date(existingCard.last_review).getTime()
+  const safeCard = existingCard || ({} as Partial<FSRSCard>);
+  const lastReviewTime = safeCard.last_review
+    ? new Date(safeCard.last_review).getTime()
     : now.getTime();
   const rawElapsed = (now.getTime() - lastReviewTime) / 86400000;
   const elapsedDays = Math.max(0, Number.isFinite(rawElapsed) ? rawElapsed : 0);
 
-  const safeStability = Number.isFinite(existingCard.stability) && existingCard.stability > 0 ? existingCard.stability : 0;
-  const rawDifficulty = Number.isFinite(existingCard.difficulty) && existingCard.difficulty > 0 ? existingCard.difficulty : 5.0;
+  const safeStability = Number.isFinite(safeCard.stability) && (safeCard.stability ?? 0) > 0 ? (safeCard.stability as number) : 0;
+  const rawDifficulty = Number.isFinite(safeCard.difficulty) && (safeCard.difficulty ?? 0) > 0 ? (safeCard.difficulty as number) : 5.0;
   const safeDifficulty = Math.min(10.0, Math.max(1.0, rawDifficulty));
 
-  const safeReps = Number.isFinite(existingCard.reps) && existingCard.reps >= 0 ? existingCard.reps : 0;
-  const safeLapses = Number.isFinite(existingCard.lapses) && existingCard.lapses >= 0 ? existingCard.lapses : 0;
+  const safeReps = Number.isFinite(safeCard.reps) && (safeCard.reps ?? 0) >= 0 ? (safeCard.reps as number) : 0;
+  const safeLapses = Number.isFinite(safeCard.lapses) && (safeCard.lapses ?? 0) >= 0 ? (safeCard.lapses as number) : 0;
 
   // Retrievability
   const r =
@@ -438,7 +439,7 @@ export function calculateFSRSReview(
   let nextIntervalDays = Math.max(1, Math.round(Number.isFinite(rawInterval) ? rawInterval : 1));
   if (rating === 1) {
     nextIntervalDays = 1;
-  } else if (existingCard.state === 3 && elapsedDays < 1) {
+  } else if (safeCard.state === 3 && elapsedDays < 1) {
     // Intra-session / same-day relearning graduation invariant:
     // After a lapse on the same day, successful immediate rehearsal confirms working memory
     // but long-term memory requires sleep consolidation; schedule for Day 1 (tomorrow).

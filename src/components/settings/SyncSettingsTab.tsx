@@ -164,7 +164,7 @@ export const SyncSettingsTab: React.FC<SyncSettingsTabProps> = ({
           </div>
           <button
             onClick={() => setIsSbCardExpanded(!isSbCardExpanded)}
-            className="p-2 min-h-[40px] min-w-[40px] rounded-xl hover:bg-surface-2 text-appText-muted transition-all flex items-center justify-center active:scale-95"
+            className="p-2.5 min-h-[40px] min-w-[40px] rounded-xl hover:bg-surface-2 text-appText-muted transition-all flex items-center justify-center active:scale-95 min-h-[44px] min-w-[44px] cursor-pointer"
             aria-label="Buka konfigurasi Supabase mandiri"
           >
             <ChevronDown

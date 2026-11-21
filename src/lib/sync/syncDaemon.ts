@@ -20,6 +20,10 @@ export class SyncDaemon {
   private defaultIntervalMs = 300000; // 5 minutes periodic sync
   private triggerCount = 0;
   private isSyncInProgress = false;
+  private failureCount = 0;
+  private baseBackoffMs = 2000;
+  private maxBackoffMs = 60000;
+  private backoffUntil = 0;
 
   /**
    * Starts the sync daemon listeners and periodic heartbeat timer.
@@ -79,10 +83,32 @@ export class SyncDaemon {
   };
 
   /**
-   * Dispatches cloud sync if authenticated and not throttled.
+   * Calculates exponential backoff with full jitter to prevent server stampedes.
+   */
+  public calculateBackoffWithJitter(failures: number, baseMs = 2000, maxMs = 60000): number {
+    if (failures <= 0) return 0;
+    const exponential = Math.min(maxMs, baseMs * Math.pow(2, failures - 1));
+    const jitter = Math.random() * (baseMs / 2);
+    return Math.round(exponential + jitter);
+  }
+
+  public getFailureCount(): number {
+    return this.failureCount;
+  }
+
+  public getBackoffUntil(): number {
+    return this.backoffUntil;
+  }
+
+  /**
+   * Dispatches cloud sync if authenticated, not throttled, and backoff window expired.
    */
   public async triggerSync(reason = 'manual', force = false): Promise<boolean> {
     const now = Date.now();
+    if (!force && this.backoffUntil > now) {
+      return false; // Backoff active
+    }
+
     if (!force && this.lastTriggerTime > 0 && now >= this.lastTriggerTime && now - this.lastTriggerTime < this.minIntervalMs) {
       return false; // Throttled
     }
@@ -132,21 +158,28 @@ export class SyncDaemon {
 
     try {
       await syncNow();
+      this.failureCount = 0;
+      this.backoffUntil = 0;
       return true;
     } catch (e) {
-      console.warn(`[syncDaemon] Sync triggered by ${reason} failed:`, e);
+      this.failureCount++;
+      const backoffDelay = this.calculateBackoffWithJitter(this.failureCount, this.baseBackoffMs, this.maxBackoffMs);
+      this.backoffUntil = Date.now() + backoffDelay;
+      console.warn(`[syncDaemon] Sync triggered by ${reason} failed (attempt ${this.failureCount}, backoff ${backoffDelay}ms):`, e);
       return false;
     } finally {
       this.isSyncInProgress = false;
     }
   }
 
-  public getStatus(): { isRunning: boolean; lastTriggerTime: number; triggerCount: number; isSyncInProgress: boolean } {
+  public getStatus(): { isRunning: boolean; lastTriggerTime: number; triggerCount: number; isSyncInProgress: boolean; failureCount: number; backoffUntil: number } {
     return {
       isRunning: this.isRunning,
       lastTriggerTime: this.lastTriggerTime,
       triggerCount: this.triggerCount,
       isSyncInProgress: this.isSyncInProgress,
+      failureCount: this.failureCount,
+      backoffUntil: this.backoffUntil,
     };
   }
 
@@ -154,6 +187,8 @@ export class SyncDaemon {
     this.stop();
     this.lastTriggerTime = 0;
     this.triggerCount = 0;
+    this.failureCount = 0;
+    this.backoffUntil = 0;
     this.isSyncInProgress = false;
   }
 }

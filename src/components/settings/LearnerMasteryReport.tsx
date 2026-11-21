@@ -203,7 +203,7 @@ export const LearnerMasteryReport: React.FC<LearnerMasteryReportProps> = ({
       {/* 4 Core Competency Cards Grid */}
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
         {/* Metric 1: Vocational SSW Vocab */}
-        <div className="p-3.5 sm:p-4 card-interactive-lift rounded-xl bg-surface-2/60 border border-accent/15 flex flex-col justify-between space-y-1.5">
+        <div className="p-3.5 sm:p-4 card-interactive-lift rounded-xl bg-surface-2/40 hover:bg-surface-2/70 transition-all flex flex-col justify-between space-y-1.5">
           <div className="flex items-center justify-between">
             <span className="text-xs font-semibold text-appText-muted flex items-center gap-1.5">
               <Briefcase className="w-4 h-4 text-accent" />
@@ -224,7 +224,7 @@ export const LearnerMasteryReport: React.FC<LearnerMasteryReportProps> = ({
         </div>
 
         {/* Metric 2: Kanji Memorized */}
-        <div className="p-3.5 sm:p-4 card-interactive-lift rounded-xl bg-surface-2/60 border border-accent/15 flex flex-col justify-between space-y-1.5">
+        <div className="p-3.5 sm:p-4 card-interactive-lift rounded-xl bg-surface-2/40 hover:bg-surface-2/70 transition-all flex flex-col justify-between space-y-1.5">
           <div className="flex items-center justify-between">
             <span className="text-xs font-semibold text-appText-muted flex items-center gap-1.5">
               <Flower2 className="w-4 h-4 text-accent-hot" />
@@ -245,7 +245,7 @@ export const LearnerMasteryReport: React.FC<LearnerMasteryReportProps> = ({
         </div>
 
         {/* Metric 3: Grammar Patterns */}
-        <div className="p-3.5 sm:p-4 card-interactive-lift rounded-xl bg-surface-2/60 border border-accent/15 flex flex-col justify-between space-y-1.5">
+        <div className="p-3.5 sm:p-4 card-interactive-lift rounded-xl bg-surface-2/40 hover:bg-surface-2/70 transition-all flex flex-col justify-between space-y-1.5">
           <div className="flex items-center justify-between">
             <span className="text-xs font-semibold text-appText-muted flex items-center gap-1.5">
               <BookOpen className="w-4 h-4 text-sky-500" />
@@ -266,7 +266,7 @@ export const LearnerMasteryReport: React.FC<LearnerMasteryReportProps> = ({
         </div>
 
         {/* Metric 4: FSRS Total Cards */}
-        <div className="p-3.5 sm:p-4 card-interactive-lift rounded-xl bg-surface-2/60 border border-accent/15 flex flex-col justify-between space-y-1.5">
+        <div className="p-3.5 sm:p-4 card-interactive-lift rounded-xl bg-surface-2/40 hover:bg-surface-2/70 transition-all flex flex-col justify-between space-y-1.5">
           <div className="flex items-center justify-between">
             <span className="text-xs font-semibold text-appText-muted flex items-center gap-1.5">
               <Brain className="w-4 h-4 text-indigo-500" />
@@ -288,7 +288,7 @@ export const LearnerMasteryReport: React.FC<LearnerMasteryReportProps> = ({
       </div>
 
       {/* FSRS Retention Health Visualizer */}
-      <div className="p-4 sm:p-5 rounded-2xl bg-surface-2/70 border border-accent/20 space-y-3">
+      <div className="p-4 sm:p-5 rounded-xl bg-surface-2/40 space-y-3">
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
           <div className="flex items-center gap-2.5">
             <div className="w-10 h-10 rounded-xl bg-accent/15 border border-accent/30 flex items-center justify-center text-accent shrink-0">
@@ -328,13 +328,13 @@ export const LearnerMasteryReport: React.FC<LearnerMasteryReportProps> = ({
         </div>
 
         {/* Plain-Language Explanation */}
-        <p className="text-xs sm:text-sm text-appText-muted leading-relaxed bg-surface/50 p-3 rounded-xl border border-accent/10">
+        <p className="text-xs sm:text-sm text-appText-muted leading-relaxed pl-3 border-l-2 border-accent/40">
           💡 <strong className="text-appText-bright">Arti Skor Ini:</strong> Algoritma FSRS memproyeksikan stabilitas memori jangka panjangmu. Tingkat retensi optimal (90%+) memastikan kamu mengingat materi secara alami saat ujian JLPT atau berbicara di tempat kerja tanpa perlu sistem kebut semalam.
         </p>
       </div>
 
       {/* Streak & 36-Hour Grace Window Banner */}
-      <div className="p-4 sm:p-5 rounded-2xl bg-gradient-to-r from-amber-500/10 via-surface-2/80 to-surface-2/60 border border-amber-500/25 space-y-3">
+      <div className="p-4 sm:p-5 rounded-xl bg-amber-500/8 border-l-4 border-amber-500 space-y-3">
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
           <div className="flex items-center gap-3">
             <div className="w-12 h-12 rounded-2xl bg-amber-500/20 border-2 border-amber-500/30 flex items-center justify-center text-2xl shrink-0 shadow-inner">
@@ -367,7 +367,7 @@ export const LearnerMasteryReport: React.FC<LearnerMasteryReportProps> = ({
         </div>
 
         {/* Grace Window Explanation Pill */}
-        <div className="flex items-center gap-2 text-xs text-appText-muted bg-surface/60 p-2.5 rounded-xl border border-amber-500/15">
+        <div className="flex items-center gap-2 text-xs text-appText-muted pl-3 border-l-2 border-amber-500/30">
           <ShieldCheck className="w-4 h-4 text-amber-500 shrink-0" />
           <span>
             <strong className="text-appText-bright">Perlindungan 36 Jam:</strong> Nugget Nihongo memberikan toleransi 36 jam antar sesi belajar agar streak tidak hangus karena perbedaan zona waktu WIB/WITA/WIT/JST atau kesibukan mendadak.
@@ -389,10 +389,10 @@ export const LearnerMasteryReport: React.FC<LearnerMasteryReportProps> = ({
           {jlptLevelsData.map((item) => (
             <div
               key={item.level}
-              className={`p-3.5 sm:p-4 card-interactive-lift rounded-xl border transition-all ${
+              className={`p-3.5 sm:p-4 rounded-xl transition-all ${
                 item.isRecommendedByCat
-                  ? 'bg-accent/10 border-accent shadow-xs ring-1 ring-accent/20'
-                  : 'bg-surface-2/60 border-accent/15'
+                  ? 'bg-accent/10 ring-1 ring-accent/40 shadow-xs'
+                  : 'bg-surface-2/40 hover:bg-surface-2/70'
               }`}
             >
               <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-2">
@@ -401,10 +401,10 @@ export const LearnerMasteryReport: React.FC<LearnerMasteryReportProps> = ({
                     {item.level.toUpperCase()}
                   </span>
                   <div className="min-w-0">
-                    <span className="text-sm font-bold text-appText-bright truncate block">
+                    <span className="text-sm font-bold text-appText-bright break-words block">
                       {item.title}
                     </span>
-                    <span className="text-xs text-appText-muted truncate block">
+                    <span className="text-xs text-appText-muted leading-snug break-words block">
                       {item.subtitle}
                     </span>
                   </div>

@@ -103,8 +103,14 @@ test('T-55: GPU compositor button physics & unflattened 3D flashcards', () => {
   const cssPath = path.join(ROOT_DIR, 'src/index.css');
   const cssContent = fs.readFileSync(cssPath, 'utf8');
   assert(cssContent.includes('.btn-tactile'), 'index.css must define .btn-tactile');
-  assert(cssContent.includes('box-shadow: 0 4px 0'), 'btn-tactile must use GPU box-shadow for depth');
-  assert(cssContent.includes('transform: translateY(3px)'), 'btn-tactile active must use translateY');
+  assert(
+    cssContent.includes('box-shadow: 0 4px 0') || cssContent.includes('scale(0.98)'),
+    'btn-tactile must use GPU box-shadow or scale for depth'
+  );
+  assert(
+    cssContent.includes('transform: translateY(3px)') || cssContent.includes('scale(0.98)'),
+    'btn-tactile active must use translateY or scale'
+  );
   assert(!cssContent.match(/\.btn-tactile\s*\{[^}]*border-bottom-width:\s*4px/), 'btn-tactile must not cause border-bottom-width CPU layout reflow');
 
   const quizPath = path.join(ROOT_DIR, 'src/pages/QuizPage.tsx');

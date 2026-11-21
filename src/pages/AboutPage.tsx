@@ -265,7 +265,7 @@ export const AboutPage: React.FC = () => {
               value={faqSearch}
               onChange={(e) => setFaqSearch(e.target.value)}
               placeholder="Cari pertanyaan... (misal: offline, FSRS, Supabase, audio)"
-              className="w-full pl-10 pr-4 py-2.5 rounded-xl bg-surface-2 border border-accent/20 text-xs text-appText-bright placeholder:text-appText-muted focus:outline-none focus:border-accent"
+              className="w-full min-h-[44px] pl-10 pr-4 py-2.5 rounded-xl bg-surface-2 border border-accent/20 text-xs text-appText-bright placeholder:text-appText-muted focus:outline-none focus:border-accent"
             />
           </div>
 
@@ -281,7 +281,7 @@ export const AboutPage: React.FC = () => {
               <button
                 key={cat.id}
                 onClick={() => setSelectedFaqCategory(cat.id)}
-                className={`px-3.5 py-2 min-h-[40px] rounded-xl text-xs font-bold transition-all shrink-0 active:scale-95 flex items-center justify-center ${
+                className={`px-3.5 py-2 min-h-[40px] min-h-[44px] rounded-xl text-xs font-bold transition-all shrink-0 active:scale-95 flex items-center justify-center ${
                   selectedFaqCategory === cat.id
                     ? 'bg-accent text-bg shadow-sm font-extrabold'
                     : 'bg-surface-2 hover:bg-surface-3 text-appText-muted hover:text-appText-bright'
@@ -293,43 +293,42 @@ export const AboutPage: React.FC = () => {
           </div>
         </div>
 
-        {/* FAQ Accordion List */}
-        <div className="space-y-3 pt-2">
+        {/* FAQ Accordion List (Flattened Hairline Container) */}
+        <div className="pt-2">
           {filteredFaqs.length === 0 ? (
-            <div className="p-8 text-center text-xs text-appText-muted border border-dashed border-accent/20 rounded-2xl">
+            <div className="p-8 text-center text-xs text-appText-muted border border-dashed border-border rounded-2xl">
               Tidak ada pertanyaan yang sesuai dengan kata kunci "{faqSearch}".
             </div>
           ) : (
-            filteredFaqs.map((faq) => {
-              const isOpen = expandedFaqId === faq.id;
-              return (
-                <div
-                  key={faq.id}
-                  className="rounded-2xl border border-accent/15 bg-surface-2/60 overflow-hidden transition-all hover:border-accent/30"
-                >
-                  <button
-                    onClick={() => toggleFaq(faq.id)}
-                    className="w-full p-4 text-left flex items-center justify-between gap-3 font-semibold text-xs sm:text-sm text-appText-bright hover:text-accent transition-colors"
-                  >
-                    <span className="flex items-center gap-2.5">
-                      <span className="text-accent">●</span>
-                      <span>{faq.q}</span>
-                    </span>
-                    {isOpen ? (
-                      <ChevronUp className="w-4 h-4 text-accent shrink-0" />
-                    ) : (
-                      <ChevronDown className="w-4 h-4 text-appText-muted shrink-0" />
-                    )}
-                  </button>
+            <div className="divide-y divide-border rounded-xl overflow-hidden">
+              {filteredFaqs.map((faq) => {
+                const isOpen = expandedFaqId === faq.id;
+                return (
+                  <div key={faq.id} className="transition-colors hover:bg-surface-2/80">
+                    <button
+                      onClick={() => toggleFaq(faq.id)}
+                      className="w-full min-h-[44px] p-4 text-left flex items-center justify-between gap-3 font-semibold text-xs sm:text-sm text-appText-bright hover:text-accent transition-colors"
+                    >
+                      <span className="flex items-center gap-2.5">
+                        <span className="text-accent text-xs">●</span>
+                        <span>{faq.q}</span>
+                      </span>
+                      {isOpen ? (
+                        <ChevronUp className="w-4 h-4 text-accent shrink-0" />
+                      ) : (
+                        <ChevronDown className="w-4 h-4 text-appText-muted shrink-0" />
+                      )}
+                    </button>
 
-                  {isOpen && (
-                    <div className="px-4 pb-4 pt-1 text-xs text-appText-muted leading-relaxed border-t border-accent/10 bg-surface/50 animate-fade-in">
-                      {faq.a}
-                    </div>
-                  )}
-                </div>
-              );
-            })
+                    {isOpen && (
+                      <div className="px-4 pb-4 pt-1 text-xs text-appText-muted leading-relaxed border-t border-border/50 animate-fade-in">
+                        {faq.a}
+                      </div>
+                    )}
+                  </div>
+                );
+              })}
+            </div>
           )}
         </div>
       </div>
@@ -341,7 +340,7 @@ export const AboutPage: React.FC = () => {
           <span>Cakupan Kurikulum & Data Terverifikasi</span>
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3.5 pt-1">
-          <div className="p-4 rounded-2xl bg-surface-2/80 border border-purple-500/20 flex flex-col justify-between gap-1">
+          <div className="p-3.5 rounded-xl bg-surface-2/40 hover:bg-surface-2/80 transition-all flex flex-col justify-between gap-1">
             <span className="flex items-center gap-2.5 text-xs font-bold text-appText-bright">
               <span className="w-3 h-3 rounded-full bg-purple-400 shrink-0" />
               JLPT N5 (Dasar Pemula)
@@ -349,7 +348,7 @@ export const AboutPage: React.FC = () => {
             <span className="text-xs text-appText-muted font-mono">1.321 Kosakata · 94 Grammar · 103 Kanji</span>
           </div>
 
-          <div className="p-4 rounded-2xl bg-surface-2/80 border border-orange-500/20 flex flex-col justify-between gap-1">
+          <div className="p-3.5 rounded-xl bg-surface-2/40 hover:bg-surface-2/80 transition-all flex flex-col justify-between gap-1">
             <span className="flex items-center gap-2.5 text-xs font-bold text-appText-bright">
               <span className="w-3 h-3 rounded-full bg-orange-400 shrink-0" />
               JLPT N4 (Percakapan Dasar)
@@ -357,7 +356,7 @@ export const AboutPage: React.FC = () => {
             <span className="text-xs text-appText-muted font-mono">1.286 Kosakata · 92 Grammar · 181 Kanji</span>
           </div>
 
-          <div className="p-4 rounded-2xl bg-surface-2/80 border border-sky-500/20 flex flex-col justify-between gap-1">
+          <div className="p-3.5 rounded-xl bg-surface-2/40 hover:bg-surface-2/80 transition-all flex flex-col justify-between gap-1">
             <span className="flex items-center gap-2.5 text-xs font-bold text-appText-bright">
               <span className="w-3 h-3 rounded-full bg-sky-400 shrink-0" />
               JLPT N3 (Menengah)
@@ -365,7 +364,7 @@ export const AboutPage: React.FC = () => {
             <span className="text-xs text-appText-muted font-mono">2.580 Kosakata · 163 Grammar · 367 Kanji</span>
           </div>
 
-          <div className="p-4 rounded-2xl bg-surface-2/80 border border-emerald-500/20 flex flex-col justify-between gap-1">
+          <div className="p-3.5 rounded-xl bg-surface-2/40 hover:bg-surface-2/80 transition-all flex flex-col justify-between gap-1">
             <span className="flex items-center gap-2.5 text-xs font-bold text-appText-bright">
               <span className="w-3 h-3 rounded-full bg-emerald-400 shrink-0" />
               JLPT N2 (Tingkat Mahir)
@@ -373,7 +372,7 @@ export const AboutPage: React.FC = () => {
             <span className="text-xs text-appText-muted font-mono">2.104 Kosakata · 310 Grammar · 415 Kanji</span>
           </div>
 
-          <div className="p-4 rounded-2xl bg-surface-2/80 border border-rose-500/20 flex flex-col justify-between gap-1">
+          <div className="p-3.5 rounded-xl bg-surface-2/40 hover:bg-surface-2/80 transition-all flex flex-col justify-between gap-1">
             <span className="flex items-center gap-2.5 text-xs font-bold text-appText-bright">
               <span className="w-3 h-3 rounded-full bg-rose-400 shrink-0" />
               JLPT N1 (Tingkat Ahli)
@@ -381,7 +380,7 @@ export const AboutPage: React.FC = () => {
             <span className="text-xs text-appText-muted font-mono">3.217 Kosakata · 200 Grammar · 1.144 Kanji</span>
           </div>
 
-          <div className="p-4 rounded-2xl bg-surface-2/80 border border-teal-500/20 flex flex-col justify-between gap-1">
+          <div className="p-3.5 rounded-xl bg-surface-2/40 hover:bg-surface-2/80 transition-all flex flex-col justify-between gap-1">
             <span className="flex items-center gap-2.5 text-xs font-bold text-appText-bright">
               <span className="w-3 h-3 rounded-full bg-teal-400 shrink-0" />
               JFT-Basic A1 & A2 (Irodori)
@@ -389,7 +388,7 @@ export const AboutPage: React.FC = () => {
             <span className="text-xs text-appText-muted font-mono">3.400+ Kosakata Kehidupan · 78 Can-Do</span>
           </div>
 
-          <div className="p-4 rounded-2xl bg-surface-2/80 border border-amber-500/30 flex flex-col justify-between gap-1 bg-amber-500/5">
+          <div className="p-3.5 rounded-xl bg-amber-500/10 hover:bg-amber-500/15 transition-all flex flex-col justify-between gap-1">
             <span className="flex items-center gap-2.5 text-xs font-bold text-accent">
               <span className="w-3 h-3 rounded-full bg-amber-500 shrink-0" />
               Jalur Vokasional SSW
@@ -397,7 +396,7 @@ export const AboutPage: React.FC = () => {
             <span className="text-xs text-appText-muted font-mono">19 Sektor Resmi · 190 Modul Kerja Lapangan</span>
           </div>
 
-          <div className="p-4 rounded-2xl bg-surface-2/80 border border-indigo-500/20 flex flex-col justify-between gap-1">
+          <div className="p-3.5 rounded-xl bg-surface-2/40 hover:bg-surface-2/80 transition-all flex flex-col justify-between gap-1">
             <span className="flex items-center gap-2.5 text-xs font-bold text-appText-bright">
               <span className="w-3 h-3 rounded-full bg-indigo-400 shrink-0" />
               Jalur Nol & Freeway (Kana)
@@ -406,7 +405,7 @@ export const AboutPage: React.FC = () => {
           </div>
         </div>
 
-        <div className="p-3.5 rounded-xl bg-amber-500/10 border border-amber-500/20 text-xs text-appText-muted flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+        <div className="p-3.5 rounded-r-lg bg-amber-500/10 border-l-4 border-amber-500/40 text-xs text-appText-muted flex flex-col sm:flex-row sm:items-center justify-between gap-2">
           <span>Basis Data Terpadu: <b>28.546 Kosakata</b>, <b>859+ Pola Tata Bahasa</b>, & <b>2.383 Kanji</b></span>
           <span className="text-accent font-semibold">100% Terverifikasi EDRDG & KanjiVG</span>
         </div>
@@ -429,7 +428,7 @@ export const AboutPage: React.FC = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-2">
           {/* Pilar 1: Processability Theory */}
-          <div className="p-4 sm:p-5 rounded-2xl bg-surface-2/80 border border-accent/15 space-y-2.5">
+          <div className="p-4 sm:p-5 rounded-xl bg-surface-2/40 hover:bg-surface-2/70 transition-all space-y-2.5">
             <div className="flex items-center gap-2 text-xs font-bold text-accent">
               <span className="p-1 rounded-md bg-accent/15 text-accent">1</span>
               <span>Alur Belajar Bertahap & Rapi</span>
@@ -444,7 +443,7 @@ export const AboutPage: React.FC = () => {
           </div>
 
           {/* Pilar 2: Analisis Kontrasif L1 Indonesia */}
-          <div className="p-4 sm:p-5 rounded-2xl bg-surface-2/80 border border-accent/15 space-y-2.5">
+          <div className="p-4 sm:p-5 rounded-xl bg-surface-2/40 hover:bg-surface-2/70 transition-all space-y-2.5">
             <div className="flex items-center gap-2 text-xs font-bold text-red-400">
               <span className="p-1 rounded-md bg-red-500/15 text-red-400">2</span>
               <span>Pencegahan Salah Kaprah Bahasa Indonesia</span>
@@ -459,7 +458,7 @@ export const AboutPage: React.FC = () => {
           </div>
 
           {/* Pilar 3: Pengelompokan Tematik (Thematic Clustering) */}
-          <div className="p-4 sm:p-5 rounded-2xl bg-surface-2/80 border border-accent/15 space-y-2.5">
+          <div className="p-4 sm:p-5 rounded-xl bg-surface-2/40 hover:bg-surface-2/70 transition-all space-y-2.5">
             <div className="flex items-center gap-2 text-xs font-bold text-emerald-400">
               <span className="p-1 rounded-md bg-emerald-500/15 text-emerald-400">3</span>
               <span>Penyajian Kosakata Tematik Kontekstual</span>
@@ -474,7 +473,7 @@ export const AboutPage: React.FC = () => {
           </div>
 
           {/* Pilar 4: Retensi Memori Optimal FSRS v4 */}
-          <div className="p-4 sm:p-5 rounded-2xl bg-surface-2/80 border border-accent/15 space-y-2.5">
+          <div className="p-4 sm:p-5 rounded-xl bg-surface-2/40 hover:bg-surface-2/70 transition-all space-y-2.5">
             <div className="flex items-center gap-2 text-xs font-bold text-sky-400">
               <span className="p-1 rounded-md bg-sky-500/15 text-sky-400">4</span>
               <span>Penjadwalan Pengulangan Cerdas (FSRS v4)</span>
@@ -490,7 +489,7 @@ export const AboutPage: React.FC = () => {
         </div>
 
         {/* Pilar 5: Standar Kemampuan Aksi Nyata (CEFR-J) */}
-        <div className="p-4 rounded-2xl bg-amber-500/10 border border-amber-500/20 text-xs space-y-1.5">
+        <div className="p-4 rounded-r-lg bg-amber-500/10 border-l-4 border-amber-500/40 text-xs space-y-1.5">
           <div className="font-bold text-amber-300 flex items-center gap-2">
             <span>🎯</span>
             <span>Standar Kemampuan Komunikatif Nyata (CEFR-J & JF Standard)</span>
@@ -504,11 +503,11 @@ export const AboutPage: React.FC = () => {
         </div>
 
         {/* Accordion Rujukan Akademik & Metodologis (Ticket T-209) */}
-        <div className="border border-accent/20 rounded-2xl overflow-hidden bg-surface-2/60">
+        <div className="rounded-xl overflow-hidden bg-surface-2/60">
           <button
             onClick={() => setIsBibliographyOpen((prev) => !prev)}
             aria-expanded={isBibliographyOpen}
-            className="w-full p-4 flex items-center justify-between text-left hover:bg-surface-3 transition-colors active:scale-95"
+            className="w-full min-h-[44px] p-4 flex items-center justify-between text-left hover:bg-surface-3 transition-colors active:scale-95"
           >
             <div className="flex items-center gap-2.5">
               <BookOpen className="w-4 h-4 text-accent" />
@@ -583,7 +582,7 @@ export const AboutPage: React.FC = () => {
           {/* Email Support */}
           <a
             href="mailto:nuggetnihongo@gmail.com?subject=Pertanyaan%20dan%20Dukungan%20Nugget%20Nihongo"
-            className="p-4 rounded-2xl bg-surface-2 border border-accent/15 hover:border-accent/40 transition-all group flex flex-col justify-between gap-2 active:scale-95 min-h-[44px]"
+            className="p-3.5 rounded-xl bg-surface-2/40 hover:bg-surface-2/80 border border-border/40 transition-all group flex flex-col justify-between gap-2 active:scale-95 min-h-[44px]"
           >
             <div className="flex items-center justify-between">
               <div className="flex items-center gap-2 text-xs font-bold text-accent">
@@ -603,7 +602,7 @@ export const AboutPage: React.FC = () => {
             href="https://x.com/NuggetNihongo"
             target="_blank"
             rel="noopener noreferrer"
-            className="p-4 rounded-2xl bg-surface-2 border border-accent/15 hover:border-accent/40 transition-all group flex flex-col justify-between gap-2 active:scale-95 min-h-[44px]"
+            className="p-3.5 rounded-xl bg-surface-2/40 hover:bg-surface-2/80 border border-border/40 transition-all group flex flex-col justify-between gap-2 active:scale-95 min-h-[44px]"
           >
             <div className="flex items-center justify-between">
               <div className="flex items-center gap-2 text-xs font-bold text-accent">
@@ -623,7 +622,7 @@ export const AboutPage: React.FC = () => {
             href="https://trakteer.id/nugget-nihongo"
             target="_blank"
             rel="noopener noreferrer"
-            className="p-4 rounded-2xl bg-surface-2 border border-amber-500/20 hover:border-amber-500/50 transition-all group flex flex-col justify-between gap-2 active:scale-95 min-h-[44px]"
+            className="p-3.5 rounded-xl bg-surface-2/40 hover:bg-surface-2/80 border border-amber-500/30 transition-all group flex flex-col justify-between gap-2 active:scale-95 min-h-[44px]"
           >
             <div className="flex items-center justify-between">
               <div className="flex items-center gap-2 text-xs font-bold text-amber-500">
@@ -640,7 +639,7 @@ export const AboutPage: React.FC = () => {
         </div>
 
         {/* Future Community Channels Transparency Notice */}
-        <div className="p-3.5 rounded-xl bg-surface-2/70 border border-accent/10 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 text-xs text-appText-muted">
+        <div className="p-3.5 rounded-xl bg-surface-2/70 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 text-xs text-appText-muted">
           <div className="flex items-center gap-2">
             <span className="text-accent">ℹ️</span>
             <span>Kanal Instagram & Server Discord Komunitas sedang dalam tahap persiapan.</span>
@@ -661,7 +660,7 @@ export const AboutPage: React.FC = () => {
           <button
             type="button"
             onClick={openPatchNotes}
-            className="p-3 rounded-xl bg-surface-2 border border-accent/20 hover:border-accent/40 cursor-pointer transition-all hover:bg-surface-3 group text-left focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent active:scale-95"
+            className="p-3 min-h-[44px] rounded-xl bg-surface-2 border border-accent/20 hover:border-accent/40 cursor-pointer transition-all hover:bg-surface-3 group text-left focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent active:scale-95"
             aria-label="Buka Catatan Rilis Lengkap Versi Aplikasi"
             title="Klik untuk membuka Catatan Rilis Lengkap"
           >
@@ -671,11 +670,11 @@ export const AboutPage: React.FC = () => {
             </div>
             <div className="font-bold text-accent font-mono mt-0.5 group-hover:underline">{APP_VERSION}</div>
           </button>
-          <div className="p-3 rounded-xl bg-surface-2 border border-accent/10">
+          <div className="p-3 rounded-xl bg-surface-2/60">
             <div className="text-appText-muted text-xs">Framework</div>
             <div className="font-bold text-appText-bright mt-0.5">React + Vite + TS</div>
           </div>
-          <div className="p-3 rounded-xl bg-surface-2 border border-accent/10">
+          <div className="p-3 rounded-xl bg-surface-2/60">
             <div className="text-appText-muted text-xs">Gaya Desain</div>
             <div className="font-bold text-appText-bright mt-0.5">Tailwind CSS (Warm Amber)</div>
           </div>

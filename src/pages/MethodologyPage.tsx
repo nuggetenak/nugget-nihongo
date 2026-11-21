@@ -188,7 +188,7 @@ export const MethodologyPage: React.FC = () => {
       <div className="flex items-center justify-between mb-6">
         <button
           onClick={() => setActiveTab('about')}
-          className="min-h-[40px] px-3.5 py-2 rounded-xl bg-card border border-border text-xs sm:text-sm font-semibold hover:border-amber-500/50 active:scale-95 transition-all flex items-center gap-2"
+          className="min-h-[44px] px-3.5 py-2 rounded-xl bg-card border border-border text-xs sm:text-sm font-semibold hover:border-amber-500/50 active:scale-95 transition-all flex items-center gap-2"
         >
           <ArrowLeft className="w-4 h-4" />
           <span>Kembali ke Tentang</span>
@@ -223,7 +223,7 @@ export const MethodologyPage: React.FC = () => {
 
         {/* 4 Human Learning Pillars */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 mt-6 pt-6 border-t border-border/60">
-          <div className="p-3.5 rounded-2xl bg-surface-2/60 border border-border/60 space-y-1.5">
+          <div className="p-3.5 rounded-xl bg-surface-2/40 hover:bg-surface-2/70 transition-all space-y-1.5">
             <div className="flex items-center gap-2 text-amber-400 font-bold text-xs">
               <Clock className="w-4 h-4 shrink-0" />
               <span>Cukup 5–10 Menit</span>
@@ -233,7 +233,7 @@ export const MethodologyPage: React.FC = () => {
             </p>
           </div>
 
-          <div className="p-3.5 rounded-2xl bg-surface-2/60 border border-border/60 space-y-1.5">
+          <div className="p-3.5 rounded-xl bg-surface-2/40 hover:bg-surface-2/70 transition-all space-y-1.5">
             <div className="flex items-center gap-2 text-emerald-400 font-bold text-xs">
               <Heart className="w-4 h-4 shrink-0" />
               <span>Bebas Rasa Malu</span>
@@ -243,7 +243,7 @@ export const MethodologyPage: React.FC = () => {
             </p>
           </div>
 
-          <div className="p-3.5 rounded-2xl bg-surface-2/60 border border-border/60 space-y-1.5">
+          <div className="p-3.5 rounded-xl bg-surface-2/40 hover:bg-surface-2/70 transition-all space-y-1.5">
             <div className="flex items-center gap-2 text-blue-400 font-bold text-xs">
               <Sparkles className="w-4 h-4 shrink-0" />
               <span>Khas Orang Indonesia</span>
@@ -253,7 +253,7 @@ export const MethodologyPage: React.FC = () => {
             </p>
           </div>
 
-          <div className="p-3.5 rounded-2xl bg-surface-2/60 border border-border/60 space-y-1.5">
+          <div className="p-3.5 rounded-xl bg-surface-2/40 hover:bg-surface-2/70 transition-all space-y-1.5">
             <div className="flex items-center gap-2 text-purple-400 font-bold text-xs">
               <Brain className="w-4 h-4 shrink-0" />
               <span>Pengingat Tepat Waktu</span>
@@ -298,7 +298,7 @@ export const MethodologyPage: React.FC = () => {
               <span className="w-7 h-7 rounded-lg bg-amber-500/10 text-amber-400 font-bold text-sm flex items-center justify-center shrink-0 border border-amber-500/20">
                 1
               </span>
-              <span className="font-bold text-sm sm:text-base text-white truncate">
+              <span className="font-bold text-sm sm:text-base text-white leading-snug break-words">
                 Siapa Target Pembelajar Kami (Who We Built This For)
               </span>
             </div>
@@ -328,7 +328,7 @@ export const MethodologyPage: React.FC = () => {
               <span className="w-7 h-7 rounded-lg bg-amber-500/10 text-amber-400 font-bold text-sm flex items-center justify-center shrink-0 border border-amber-500/20">
                 2
               </span>
-              <span className="font-bold text-sm sm:text-base text-white truncate">
+              <span className="font-bold text-sm sm:text-base text-white leading-snug break-words">
                 Bagaimana Platform Mengajarkan Kosakata (How We Teach Vocabulary)
               </span>
             </div>
@@ -356,7 +356,7 @@ export const MethodologyPage: React.FC = () => {
               <span className="w-7 h-7 rounded-lg bg-amber-500/10 text-amber-400 font-bold text-sm flex items-center justify-center shrink-0 border border-amber-500/20">
                 3
               </span>
-              <span className="font-bold text-sm sm:text-base text-white truncate">
+              <span className="font-bold text-sm sm:text-base text-white leading-snug break-words">
                 Bagaimana Mengajarkan Bahasa Jepang Spesifik (Orthography & Grammar)
               </span>
             </div>
@@ -398,7 +398,7 @@ export const MethodologyPage: React.FC = () => {
               <span className="w-7 h-7 rounded-lg bg-amber-500/10 text-amber-400 font-bold text-sm flex items-center justify-center shrink-0 border border-amber-500/20">
                 4
               </span>
-              <span className="font-bold text-sm sm:text-base text-white truncate">
+              <span className="font-bold text-sm sm:text-base text-white leading-snug break-words">
                 Bagaimana Platform Beradaptasi pada Individu (Adaptive Personalization)
               </span>
             </div>
@@ -427,7 +427,7 @@ export const MethodologyPage: React.FC = () => {
               <span className="w-7 h-7 rounded-lg bg-emerald-500/10 text-emerald-400 font-bold text-sm flex items-center justify-center shrink-0 border border-emerald-500/20">
                 5
               </span>
-              <span className="font-bold text-sm sm:text-base text-white truncate">
+              <span className="font-bold text-sm sm:text-base text-white leading-snug break-words">
                 Temuan Riset: Kejujuran Epistemik (What We Claim vs What We DO NOT Claim)
               </span>
             </div>
@@ -494,7 +494,7 @@ export const MethodologyPage: React.FC = () => {
               <span className="w-7 h-7 rounded-lg bg-blue-500/10 text-blue-400 font-bold text-sm flex items-center justify-center shrink-0 border border-blue-500/20">
                 6
               </span>
-              <span className="font-bold text-sm sm:text-base text-white truncate">
+              <span className="font-bold text-sm sm:text-base text-white leading-snug break-words">
                 Agenda Riset Berkelanjutan (Platform Research Agenda)
               </span>
             </div>
@@ -550,7 +550,7 @@ export const MethodologyPage: React.FC = () => {
                     <span className="font-mono text-xs font-bold text-amber-400 bg-amber-500/10 px-2 py-0.5 rounded border border-amber-500/20 shrink-0">
                       {item.code}
                     </span>
-                    <span className="font-semibold text-xs sm:text-sm text-neutral-200 truncate">
+                    <span className="font-semibold text-xs sm:text-sm text-neutral-200 leading-snug break-words">
                       {item.title}
                     </span>
                   </div>
@@ -559,11 +559,11 @@ export const MethodologyPage: React.FC = () => {
 
                 {isExpanded && (
                   <div className="p-4 pt-0 border-t border-border/40 text-xs sm:text-sm space-y-2.5 leading-relaxed">
-                    <div className="p-3 bg-neutral-950/60 rounded-xl border border-neutral-800 text-neutral-300">
+                    <div className="p-3 bg-neutral-950/60 rounded-r-lg border-l-4 border-rose-500/60 text-neutral-300">
                       <div className="text-xs font-bold text-rose-400 uppercase tracking-wide mb-1">Dilema / Konflik Teori:</div>
                       {item.conflict}
                     </div>
-                    <div className="p-3 bg-emerald-950/20 rounded-xl border border-emerald-500/30 text-emerald-200">
+                    <div className="p-3 bg-emerald-950/20 rounded-r-lg border-l-4 border-emerald-500/60 text-emerald-200">
                       <div className="text-xs font-bold text-emerald-400 uppercase tracking-wide mb-1">Resolusi Nugget Nihongo:</div>
                       {item.resolution}
                     </div>
@@ -601,7 +601,7 @@ export const MethodologyPage: React.FC = () => {
 
         {/* Live Calculation Display */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
-          <div className="p-4 rounded-2xl bg-neutral-900/80 border border-border flex flex-col justify-between">
+          <div className="p-4 rounded-xl bg-surface-2/40 flex flex-col justify-between">
             <span className="text-xs text-muted font-medium">Stabilitas Memori ($S$)</span>
             <div className="flex items-baseline gap-2 mt-2">
               <span className="text-2xl sm:text-3xl font-black text-amber-400 font-mono">
@@ -619,7 +619,7 @@ export const MethodologyPage: React.FC = () => {
             />
           </div>
 
-          <div className="p-4 rounded-2xl bg-neutral-900/80 border border-border flex flex-col justify-between">
+          <div className="p-4 rounded-xl bg-surface-2/40 flex flex-col justify-between">
             <span className="text-xs text-muted font-medium">Hari Sejak Latihan Terakhir ($t$)</span>
             <div className="flex items-baseline gap-2 mt-2">
               <span className="text-2xl sm:text-3xl font-black text-amber-400 font-mono">
@@ -637,7 +637,7 @@ export const MethodologyPage: React.FC = () => {
             />
           </div>
 
-          <div className={`p-4 rounded-2xl border flex flex-col justify-between transition-colors ${
+          <div className={`p-4 rounded-xl border flex flex-col justify-between transition-colors ${
             isGoldenRetentionWindow
               ? 'bg-amber-500/10 border-amber-500/40 text-amber-300'
               : isOverdue
@@ -663,7 +663,7 @@ export const MethodologyPage: React.FC = () => {
         </div>
 
         {/* Formula Explanation */}
-        <div className="p-4 rounded-2xl bg-neutral-950/60 border border-neutral-800 text-xs sm:text-sm text-neutral-300 space-y-2">
+        <div className="p-4 rounded-xl bg-neutral-950/60 text-xs sm:text-sm text-neutral-300 space-y-2">
           <div className="font-mono text-xs text-amber-400 font-semibold">
             Rumus: R(t, S) = (1 + 0.19 · (t / S))^(-0.5)
           </div>
@@ -700,7 +700,7 @@ export const MethodologyPage: React.FC = () => {
             <button
               key={pillar}
               onClick={() => setPersonaFilter(pillar)}
-              className={`px-3.5 py-2 min-h-[40px] rounded-xl text-xs font-bold transition-all shrink-0 active:scale-95 flex items-center justify-center ${
+              className={`px-3.5 py-2 min-h-[40px] min-h-[44px] rounded-xl text-xs font-bold transition-all shrink-0 active:scale-95 flex items-center justify-center ${
                 personaFilter === pillar
                   ? 'bg-amber-500 text-neutral-950 shadow-sm font-extrabold'
                   : 'bg-neutral-900 text-neutral-400 hover:text-white border border-border'
@@ -724,14 +724,14 @@ export const MethodologyPage: React.FC = () => {
           {filteredPersonas.map((persona) => (
             <div
               key={persona.id}
-              className="p-4 rounded-2xl bg-neutral-900/60 border border-border hover:border-amber-500/40 transition-all space-y-2 card-interactive-lift"
+              className="p-4 rounded-xl bg-surface-2/40 hover:bg-surface-2/80 transition-all space-y-2"
             >
               <div className="flex items-center justify-between">
                 <div>
                   <span className="font-bold text-sm text-white">{persona.name}</span>
                   <span className="text-xs text-muted ml-2 font-mono">({persona.origin})</span>
                 </div>
-                <span className="text-xs font-mono px-2 py-0.5 rounded bg-neutral-800 text-amber-400 border border-border font-bold">
+                <span className="text-xs font-mono px-2 py-0.5 rounded bg-surface-3 text-amber-400 border border-border/40 font-bold">
                   {persona.pillar}
                 </span>
               </div>
@@ -741,7 +741,7 @@ export const MethodologyPage: React.FC = () => {
               <div className="text-xs text-neutral-300 leading-relaxed">
                 <strong className="text-muted">Titik Kritis:</strong> {persona.challenge}
               </div>
-              <p className="text-xs italic text-neutral-400 bg-neutral-950/60 p-2.5 rounded-xl border border-neutral-800/80">
+              <p className="text-xs italic text-neutral-400 bg-surface-3/30 p-2.5 rounded-lg border-l-2 border-amber-500/40 pl-3">
                 {persona.quote}
               </p>
             </div>
@@ -770,7 +770,7 @@ export const MethodologyPage: React.FC = () => {
         </p>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
-          <div className="p-4 rounded-2xl bg-neutral-900/70 border border-border space-y-2">
+          <div className="p-4 rounded-xl bg-surface-2/40 hover:bg-surface-2/80 transition-all space-y-2">
             <div className="flex items-center gap-2 text-xs font-bold text-amber-400">
               <GitPullRequest className="w-4 h-4" />
               <span>1. Koreksi Nuansa & Dialek Lokal</span>
@@ -780,8 +780,8 @@ export const MethodologyPage: React.FC = () => {
             </p>
           </div>
 
-          <div className="p-4 rounded-2xl bg-neutral-900/70 border border-border space-y-2">
-            <div className="flex items-center gap-2 text-xs font-bold text-emerald-400">
+          <div className="p-4 rounded-xl bg-surface-2/40 hover:bg-surface-2/80 transition-all space-y-2">
+            <div className="flex items-center gap-2 text-emerald-400 font-bold text-xs">
               <Database className="w-4 h-4" />
               <span>2. Transkrip Percakapan Tempat Kerja Nyata</span>
             </div>
@@ -790,7 +790,7 @@ export const MethodologyPage: React.FC = () => {
             </p>
           </div>
 
-          <div className="p-4 rounded-2xl bg-neutral-900/70 border border-border space-y-2">
+          <div className="p-4 rounded-xl bg-surface-2/40 hover:bg-surface-2/80 transition-all space-y-2">
             <div className="flex items-center gap-2 text-xs font-bold text-blue-400">
               <Calculator className="w-4 h-4" />
               <span>3. Kalibrasi Bobot FSRS</span>
@@ -800,7 +800,7 @@ export const MethodologyPage: React.FC = () => {
             </p>
           </div>
 
-          <div className="p-4 rounded-2xl bg-neutral-900/70 border border-border space-y-2">
+          <div className="p-4 rounded-xl bg-surface-2/40 hover:bg-surface-2/80 transition-all space-y-2">
             <div className="flex items-center gap-2 text-xs font-bold text-purple-400">
               <FileText className="w-4 h-4" />
               <span>4. Sitasi Skripsi & Publikasi Ilmiah</span>
@@ -817,7 +817,7 @@ export const MethodologyPage: React.FC = () => {
             <span className="font-semibold text-neutral-300">Format Sitasi Akademik (BibTeX):</span>
             <button
               onClick={copyBibtex}
-              className="px-3.5 py-1.5 min-h-[40px] rounded-xl bg-neutral-800 hover:bg-neutral-700 text-amber-400 text-xs font-mono font-bold transition-all active:scale-95 border border-border flex items-center justify-center"
+              className="px-3.5 py-1.5 min-h-[44px] rounded-xl bg-neutral-800 hover:bg-neutral-700 text-amber-400 text-xs font-mono font-bold transition-all active:scale-95 border border-border flex items-center justify-center"
             >
               {copiedBibtex ? '✅ Tersalin!' : 'Salin BibTeX'}
             </button>
@@ -840,7 +840,7 @@ export const MethodologyPage: React.FC = () => {
           </div>
           <a
             href="mailto:nuggetnihongo@gmail.com?subject=Inquiry%20Riset%20dan%20Metodologi%20Nugget%20Nihongo"
-            className="px-4 py-2.5 min-h-[44px] rounded-xl bg-amber-500/20 hover:bg-amber-500/30 border border-amber-500/40 text-amber-300 hover:text-amber-200 text-xs font-bold flex items-center gap-2 transition-all shrink-0 active:scale-95"
+            className="px-4 py-2.5 min-h-[40px] min-h-[44px] rounded-xl bg-amber-500/20 hover:bg-amber-500/30 border border-amber-500/40 text-amber-300 hover:text-amber-200 text-xs font-bold flex items-center gap-2 transition-all shrink-0 active:scale-95"
           >
             <span>Hubungi: nuggetnihongo@gmail.com ↗</span>
           </a>

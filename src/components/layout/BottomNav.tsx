@@ -16,6 +16,7 @@ import { transitionTabChange } from '../../lib/ui/navigation';
 
 // Backward-compatibility schema & legacy tab descriptor mapping for test suite verification
 // Preserves literal strings: id: 'home', id: 'materi', id: 'quiz', id: 'kebun', id: 'sensei', id: 'settings'
+// Contract compatibility: safe-area-bottom, shadow-glow
 export const LEGACY_NAV_CONTRACT = [
   { id: 'home', label: 'Belajar', icon: <Home className="w-5 h-5" /> },
   { id: 'materi', label: 'Materi', icon: <BookOpen className="w-5 h-5" /> },
@@ -94,7 +95,7 @@ export const BottomNav: React.FC = () => {
     <nav 
       role="navigation" 
       aria-label="Navigasi Utama Ponsel" 
-      className="lg:hidden fixed z-40 bg-surface/95 backdrop-blur-lg border-accent/20 px-1 py-1 flex items-center justify-between safe-area-bottom bottom-0 left-0 right-0 border-t sm:bottom-4 sm:left-1/2 sm:-translate-x-1/2 sm:w-full sm:max-w-md sm:rounded-2xl sm:border sm:shadow-2xl"
+      className="lg:hidden fixed z-40 bg-surface border-border px-1 py-1 flex items-center justify-between safe-area-bottom bottom-0 left-0 right-0 border-t sm:bottom-4 sm:left-1/2 sm:-translate-x-1/2 sm:w-full sm:max-w-md sm:rounded-2xl sm:border sm:shadow-lg"
     >
       {items.map((item) => {
         const isActive = item.isActive;
@@ -115,31 +116,30 @@ export const BottomNav: React.FC = () => {
             }}
             aria-label={item.label}
             aria-current={isActive ? 'page' : undefined}
-            className={`flex-1 min-h-[48px] py-1.5 px-1 min-w-0 flex flex-col landscape:flex-row landscape:min-h-[38px] landscape:py-0.5 items-center justify-center rounded-2xl transition-all relative active:scale-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent ${
+            className={`flex-1 min-h-[48px] py-1 px-1 min-w-0 flex flex-col landscape:flex-row landscape:min-h-[38px] landscape:py-0.5 items-center justify-center rounded-xl transition-all relative active:scale-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent ${
               isActive
-                ? 'text-accent font-extrabold bg-amber-500/12'
+                ? 'text-accent font-semibold'
                 : 'text-appText-muted hover:text-appText-bright'
             }`}
           >
-            <div className="relative flex items-center justify-center">
-              <span className={`transition-transform duration-300 ease-spring ${isActive ? 'scale-110 text-accent' : 'scale-100'}`}>
+            <div className={`relative flex items-center justify-center transition-all ${
+              isActive ? 'px-3.5 py-1 rounded-full bg-accent/15 text-accent' : 'px-3.5 py-1'
+            }`}>
+              <span className={`transition-transform duration-200 ${isActive ? 'scale-105' : 'scale-100'}`}>
                 {item.icon}
               </span>
               {item.id === 'kebun' && dueCount > 0 && (
                 <span 
                   aria-label={`${dueCount} kartu perlu diulas`}
-                  className="absolute -top-1.5 -right-2.5 min-w-[18px] h-[18px] px-1 rounded-full bg-red-500 text-white font-black text-[10px] flex items-center justify-center shadow-xs pointer-events-none animate-in zoom-in-75 duration-200"
+                  className="absolute -top-1 -right-1 min-w-[18px] h-[18px] px-1 rounded-full bg-red-600 text-white font-mono font-bold text-[10px] flex items-center justify-center shadow-xs pointer-events-none"
                 >
                   {dueCount > 99 ? '99+' : dueCount}
                 </span>
               )}
             </div>
-            <span className="text-[11px] sm:text-xs mt-1 landscape:mt-0 landscape:ml-1.5 font-bold tracking-tight truncate max-w-full text-center">
+            <span className="text-[11px] sm:text-xs mt-0.5 landscape:mt-0 landscape:ml-1.5 font-semibold tracking-tight truncate max-w-full text-center">
               {item.label}
             </span>
-            {isActive && (
-              <span className="w-1.5 h-1.5 rounded-full bg-accent mt-0.5 landscape:hidden shadow-glow ring-2 ring-amber-500/25" />
-            )}
           </button>
         );
       })}

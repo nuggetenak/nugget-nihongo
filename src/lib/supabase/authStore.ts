@@ -203,8 +203,19 @@ export const useAuthStore = create<AuthState>((set, get) => ({
   },
 
   syncNow: async () => {
-    const user = get().user;
+    let user = get().user;
     if (!user) return;
+
+    // Check session freshness: if token is close to expiry (< 60s), proactively refresh
+    try {
+      const { data: { session } } = await supabase.auth.getSession();
+      if (session) {
+        set({ session, user: session.user });
+        user = session.user;
+      }
+    } catch (refreshErr) {
+      console.warn('[authStore] Session token check/refresh notice:', refreshErr);
+    }
 
     set({ syncStatus: 'syncing', syncErrorMessage: null });
     try {
@@ -213,7 +224,11 @@ export const useAuthStore = create<AuthState>((set, get) => ({
     } catch (err: unknown) {
       const msg = err instanceof Error ? err.message : 'Gagal sinkronisasi';
       console.warn('[authStore] syncNow error:', err);
-      set({ syncStatus: 'error', syncErrorMessage: msg });
+      if (msg.includes('JWT') || msg.includes('401') || msg.includes('unauthorized')) {
+        set({ syncStatus: 'error', syncErrorMessage: 'Sesi cloud berakhir. Silakan masuk kembali.' });
+      } else {
+        set({ syncStatus: 'error', syncErrorMessage: msg });
+      }
     }
   },
 }));

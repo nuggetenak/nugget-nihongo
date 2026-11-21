@@ -4,6 +4,8 @@
 // ══════════════════════════════════════════════════════════════════
 
 import { create } from 'zustand';
+import { broadcastSync } from '../sync/broadcastSync.ts';
+import { resolveGardenConflict } from '../sync/conflictResolver.ts';
 
 function notifyBloomBadge() {
   try {
@@ -110,6 +112,7 @@ export const useGardenStore = create<GardenStoreState>((set, get) => ({
     if (typeof window !== 'undefined') {
       try { localStorage.setItem('nn_garden_drops', updated.toString()); } catch {}
     }
+    broadcastSync.broadcast('GARDEN_UPDATED', { plants: get().plants, waterDrops: updated });
   },
 
   waterPlant: (plantId: string) => {
@@ -144,6 +147,8 @@ export const useGardenStore = create<GardenStoreState>((set, get) => ({
         localStorage.setItem('nn_garden_drops', newDrops.toString());
       } catch {}
     }
+
+    broadcastSync.broadcast('GARDEN_UPDATED', { plants: updatedPlants, waterDrops: newDrops });
 
     if (newStage >= 4) {
       notifyBloomBadge();
@@ -182,6 +187,8 @@ export const useGardenStore = create<GardenStoreState>((set, get) => ({
       } catch {}
     }
 
+    broadcastSync.broadcast('GARDEN_UPDATED', { plants: updatedPlants, waterDrops: newDrops });
+
     if (updatedPlants.some((p) => p.stage >= 4)) {
       notifyBloomBadge();
     }
@@ -219,6 +226,7 @@ export const useGardenStore = create<GardenStoreState>((set, get) => ({
         localStorage.setItem('nn_garden_plants', JSON.stringify(updated));
       } catch {}
     }
+    broadcastSync.broadcast('GARDEN_UPDATED', { plants: updated, waterDrops: get().waterDrops });
     return true;
   },
 
@@ -256,6 +264,7 @@ export const useGardenStore = create<GardenStoreState>((set, get) => ({
           localStorage.setItem('nn_garden_plants', JSON.stringify(updated));
         } catch {}
       }
+      broadcastSync.broadcast('GARDEN_UPDATED', { plants: updated, waterDrops: get().waterDrops });
     }
     return modified;
   },
@@ -285,3 +294,34 @@ export const useGardenStore = create<GardenStoreState>((set, get) => ({
     return false;
   },
 }));
+
+/**
+ * Initializes cross-tab synchronization listener for Kebun Kata (garden state).
+ * Reconciles incoming multi-tab changes using Monotonic High-Water & Additive Merge.
+ */
+export function initGardenCrossTabSync(): () => void {
+  return broadcastSync.subscribe((event) => {
+    if (event.type === 'GARDEN_UPDATED' && event.payload) {
+      try {
+        const current = {
+          plants: useGardenStore.getState().plants,
+          waterDrops: useGardenStore.getState().waterDrops,
+        };
+        const resolved = resolveGardenConflict(current, event.payload);
+        useGardenStore.setState({
+          plants: resolved.plants as PlantItem[],
+          waterDrops: resolved.waterDrops,
+        });
+
+        if (typeof window !== 'undefined') {
+          try {
+            localStorage.setItem('nn_garden_plants', JSON.stringify(resolved.plants));
+            localStorage.setItem('nn_garden_drops', resolved.waterDrops.toString());
+          } catch {}
+        }
+      } catch (err) {
+        console.warn('[gardenStore] Failed to reconcile cross-tab garden state:', err);
+      }
+    }
+  });
+}

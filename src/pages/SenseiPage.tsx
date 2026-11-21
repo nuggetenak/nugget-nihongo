@@ -367,7 +367,7 @@ export const SenseiPage: React.FC = () => {
   return (
     <div className="w-full max-w-full sm:max-w-4xl mx-auto py-3 sm:py-6 px-2 sm:px-4 pb-[calc(5.5rem+env(safe-area-inset-bottom))] lg:pb-12 space-y-3 sm:space-y-4 animate-in fade-in duration-300 overflow-x-hidden min-w-0">
       {/* ── Header Studio & Persona Switcher ── */}
-      <div className="bg-surface border border-accent/20 rounded-2xl sm:rounded-3xl p-3.5 sm:p-5 shadow-sm flex flex-col md:flex-row items-start md:items-center justify-between gap-3.5">
+      <div className="bg-surface border border-border rounded-2xl p-3.5 sm:p-5 shadow-xs flex flex-col md:flex-row items-start md:items-center justify-between gap-3.5">
         <div className="flex items-center gap-3 sm:gap-4 min-w-0">
           <div
             className={`w-11 h-11 sm:w-13 sm:h-13 rounded-2xl border flex items-center justify-center text-2xl sm:text-3xl shrink-0 shadow-inner transition-colors ${
@@ -384,10 +384,10 @@ export const SenseiPage: React.FC = () => {
           </div>
           <div className="min-w-0">
             <div className="flex items-center gap-2 flex-wrap">
-              <h1 className="text-base sm:text-lg font-bold text-appText-bright truncate">
+              <h1 className="text-base sm:text-lg font-display font-bold text-appText-bright truncate">
                 {persona === 'sensei_nugget' ? 'Sensei Nugget' : 'Senpai Aoi'}
               </h1>
-              <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-xs font-bold bg-emerald-500/10 text-emerald-700 dark:text-emerald-400 border border-emerald-500/20 shrink-0">
+              <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-xs bg-emerald-500/10 text-emerald-700 dark:text-emerald-400 font-bold border border-emerald-500/20 shrink-0">
                 <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
                 <span>AI Tutor Siap</span>
               </span>
@@ -401,15 +401,15 @@ export const SenseiPage: React.FC = () => {
         </div>
 
         {/* Persona Segmented Switcher */}
-        <div className="flex items-center gap-1 p-1 bg-surface-2 border border-accent/15 rounded-xl w-full md:w-auto" role="tablist">
+        <div className="flex items-center gap-1 p-1 bg-surface-2 rounded-xl w-full md:w-auto" role="tablist">
           <button
             type="button"
             role="tab"
             aria-selected={persona === 'sensei_nugget'}
             onClick={() => setPersona('sensei_nugget')}
-            className={`min-h-[40px] flex-1 md:flex-none px-3.5 py-2 rounded-xl text-xs font-bold transition-all flex items-center justify-center gap-1.5 active:scale-95 ${
+            className={`min-h-[40px] min-h-[44px] flex-1 md:flex-none px-3.5 py-2 rounded-lg text-xs font-bold transition-all flex items-center justify-center gap-1.5 active:scale-95 cursor-pointer ${
               persona === 'sensei_nugget'
-                ? 'bg-amber-500 text-slate-950 shadow-sm'
+                ? 'bg-accent text-stone-950 font-bold shadow-xs'
                 : 'text-appText-muted hover:text-appText-bright hover:bg-surface-3/50'
             }`}
           >
@@ -421,9 +421,9 @@ export const SenseiPage: React.FC = () => {
             role="tab"
             aria-selected={persona === 'senpai_aoi'}
             onClick={() => setPersona('senpai_aoi')}
-            className={`min-h-[40px] flex-1 md:flex-none px-3.5 py-2 rounded-xl text-xs font-bold transition-all flex items-center justify-center gap-1.5 active:scale-95 ${
+            className={`min-h-[40px] min-h-[44px] flex-1 md:flex-none px-3.5 py-2 rounded-lg text-xs font-bold transition-all flex items-center justify-center gap-1.5 active:scale-95 cursor-pointer ${
               persona === 'senpai_aoi'
-                ? 'bg-rose-500 text-white shadow-sm'
+                ? 'bg-rose-600 text-white font-bold shadow-xs'
                 : 'text-appText-muted hover:text-appText-bright hover:bg-surface-3/50'
             }`}
           >
@@ -434,15 +434,15 @@ export const SenseiPage: React.FC = () => {
       </div>
 
       {/* ── Mode Selection Navigation Tabs ── */}
-      <div className="grid grid-cols-3 gap-1.5 sm:gap-2 p-1 bg-surface-2 border border-accent/20 rounded-xl sm:rounded-2xl" role="tablist">
+      <div className="grid grid-cols-3 gap-1.5 sm:gap-2 p-1 bg-surface-2 border border-border rounded-xl" role="tablist">
         <button
           type="button"
           role="tab"
           aria-selected={mode === 'explain'}
           onClick={() => setMode('explain')}
-          className={`min-h-[44px] py-2 sm:py-2.5 px-2 rounded-lg sm:rounded-xl text-xs sm:text-sm font-bold transition-all flex items-center justify-center gap-1.5 min-w-0 active:scale-95 ${
+          className={`min-h-[44px] py-2 px-2 rounded-lg text-xs sm:text-sm font-bold transition-all flex items-center justify-center gap-1.5 min-w-0 active:scale-95 cursor-pointer ${
             mode === 'explain'
-              ? 'bg-accent text-bg shadow-sm'
+              ? 'bg-accent text-stone-950 font-bold shadow-xs'
               : 'text-appText-muted hover:text-appText-bright hover:bg-surface-3/50'
           }`}
         >
@@ -456,9 +456,9 @@ export const SenseiPage: React.FC = () => {
           role="tab"
           aria-selected={mode === 'roleplay'}
           onClick={() => setMode('roleplay')}
-          className={`min-h-[44px] py-2 sm:py-2.5 px-2 rounded-lg sm:rounded-xl text-xs sm:text-sm font-bold transition-all flex items-center justify-center gap-1.5 min-w-0 active:scale-95 ${
+          className={`min-h-[44px] py-2 px-2 rounded-lg text-xs sm:text-sm font-bold transition-all flex items-center justify-center gap-1.5 min-w-0 active:scale-95 cursor-pointer ${
             mode === 'roleplay'
-              ? 'bg-accent text-bg shadow-sm'
+              ? 'bg-accent text-stone-950 font-bold shadow-xs'
               : 'text-appText-muted hover:text-appText-bright hover:bg-surface-3/50'
           }`}
         >
@@ -472,9 +472,9 @@ export const SenseiPage: React.FC = () => {
           role="tab"
           aria-selected={mode === 'correct'}
           onClick={() => setMode('correct')}
-          className={`min-h-[44px] py-2 sm:py-2.5 px-2 rounded-lg sm:rounded-xl text-xs sm:text-sm font-bold transition-all flex items-center justify-center gap-1.5 min-w-0 active:scale-95 ${
+          className={`min-h-[44px] py-2 px-2 rounded-lg text-xs sm:text-sm font-bold transition-all flex items-center justify-center gap-1.5 min-w-0 active:scale-95 cursor-pointer ${
             mode === 'correct'
-              ? 'bg-accent text-bg shadow-sm'
+              ? 'bg-accent text-stone-950 font-bold shadow-xs'
               : 'text-appText-muted hover:text-appText-bright hover:bg-surface-3/50'
           }`}
         >
@@ -495,7 +495,7 @@ export const SenseiPage: React.FC = () => {
               type="button"
               key={sc.id}
               onClick={() => handleSendMessage(sc.prompt)}
-              className="min-h-[40px] px-3.5 py-2 card-interactive-lift rounded-full bg-surface-2 hover:bg-surface-3 border border-accent/25 hover:border-accent text-xs font-semibold text-appText-bright whitespace-nowrap shrink-0 transition-all active:scale-95 shadow-xs flex items-center justify-center gap-1.5"
+              className="min-h-[44px] px-3.5 py-2 card-interactive-lift rounded-full bg-surface-2 hover:bg-surface-3 border border-border hover:border-accent/40 text-xs font-medium text-appText-bright whitespace-nowrap shrink-0 transition-all active:scale-95 shadow-xs flex items-center justify-center gap-1.5 cursor-pointer"
             >
               <span>{sc.title}</span>
             </button>
@@ -507,7 +507,7 @@ export const SenseiPage: React.FC = () => {
               type="button"
               key={idx}
               onClick={() => handleSendMessage(p)}
-              className="min-h-[40px] px-3.5 py-2 card-interactive-lift rounded-full bg-surface-2 hover:bg-surface-3 border border-accent/25 hover:border-accent text-xs font-semibold text-appText-bright whitespace-nowrap shrink-0 transition-all active:scale-95 shadow-xs flex items-center justify-center gap-1.5"
+              className="min-h-[44px] px-3.5 py-2 card-interactive-lift rounded-full bg-surface-2 hover:bg-surface-3 border border-border hover:border-accent/40 text-xs font-medium text-appText-bright whitespace-nowrap shrink-0 transition-all active:scale-95 shadow-xs flex items-center justify-center gap-1.5 cursor-pointer"
             >
               <span className="text-accent">✦</span>
               <span>{p}</span>
@@ -520,7 +520,7 @@ export const SenseiPage: React.FC = () => {
               type="button"
               key={idx}
               onClick={() => handleSendMessage(p)}
-              className="min-h-[40px] px-3.5 py-2 card-interactive-lift rounded-full bg-surface-2 hover:bg-surface-3 border border-accent/25 hover:border-accent text-xs font-semibold text-appText-bright whitespace-nowrap shrink-0 transition-all active:scale-95 shadow-xs flex items-center justify-center gap-1.5 font-jp"
+              className="min-h-[44px] px-3.5 py-2 card-interactive-lift rounded-full bg-surface-2 hover:bg-surface-3 border border-border hover:border-accent/40 text-xs font-medium text-appText-bright whitespace-nowrap shrink-0 transition-all active:scale-95 shadow-xs flex items-center justify-center gap-1.5 font-jp cursor-pointer"
             >
               <span className="text-accent font-sans">✍️</span>
               <span>{p}</span>
@@ -529,7 +529,7 @@ export const SenseiPage: React.FC = () => {
       </div>
 
       {/* ── Main Chat Conversation Flow ── */}
-      <div className="bg-surface border border-accent/20 rounded-2xl sm:rounded-3xl p-3 sm:p-5 min-h-[320px] max-h-[52vh] sm:max-h-[58vh] overflow-y-auto space-y-4 shadow-inner overscroll-contain">
+      <div className="bg-surface border border-border rounded-2xl p-3 sm:p-5 min-h-[320px] max-h-[52vh] sm:max-h-[58vh] overflow-y-auto space-y-4 shadow-inner overscroll-contain">
         {messages.map((msg) => {
           const isUser = msg.role === 'user';
           return (
@@ -543,10 +543,10 @@ export const SenseiPage: React.FC = () => {
               <div
                 className={`w-8 h-8 sm:w-9 sm:h-9 rounded-xl flex items-center justify-center text-sm shrink-0 border overflow-hidden ${
                   isUser
-                    ? 'bg-accent/20 border-accent/40 text-accent'
+                    ? 'bg-accent/15 border-accent/30 text-accent'
                     : persona === 'sensei_nugget'
-                    ? 'bg-amber-500/20 border-amber-500/40 text-amber-800 dark:text-amber-300 font-bold'
-                    : 'bg-rose-500/20 border-rose-500/40 text-rose-700 dark:text-rose-300 font-bold'
+                    ? 'bg-amber-500/15 border-amber-500/30 text-accent font-bold'
+                    : 'bg-rose-500/15 border-rose-500/30 text-rose-700 dark:text-rose-300 font-bold'
                 }`}
               >
                 {isUser ? (
@@ -561,12 +561,12 @@ export const SenseiPage: React.FC = () => {
                 )}
               </div>
 
-              {/* Message Bubble Card */}
+              {/* Message Bubble */}
               <div
-                className={`max-w-[88%] sm:max-w-[80%] card-interactive-lift rounded-2xl px-4 py-3 sm:px-5 sm:py-3.5 leading-relaxed shadow-xs ${
+                className={`max-w-[88%] sm:max-w-[80%] rounded-xl px-4 py-3 sm:px-5 sm:py-3.5 leading-relaxed shadow-xs ${
                   isUser
-                    ? 'bg-accent text-bg font-medium rounded-tr-xs'
-                    : 'bg-surface-2 border border-accent/15 text-appText-bright rounded-tl-xs space-y-3'
+                    ? 'bg-accent text-stone-950 font-medium rounded-tr-xs'
+                    : 'bg-surface-2 text-appText-bright rounded-tl-xs space-y-3'
                 }`}
               >
                 {/* Formatted Content */}
@@ -574,16 +574,16 @@ export const SenseiPage: React.FC = () => {
 
                 {/* Tutor Bottom Action Bar */}
                 {!isUser && (
-                  <div className="pt-2.5 border-t border-accent/10 flex flex-wrap items-center justify-between gap-2 text-xs text-appText-muted">
+                  <div className="pt-2.5 border-t border-border flex flex-wrap items-center justify-between gap-2 text-xs text-appText-muted">
                     <div className="flex items-center gap-1.5 flex-wrap">
                       {/* Audio Pronunciation Button */}
                       <button
                         type="button"
                         onClick={() => handlePlayVoice(msg.id, msg.content)}
-                        className={`min-h-[40px] inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl border transition-all active:scale-95 text-xs ${
+                        className={`min-h-[44px] inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl border transition-all active:scale-95 text-xs cursor-pointer ${
                           isPlayingVoice === msg.id
-                            ? 'bg-accent text-bg border-accent font-bold shadow-xs'
-                            : 'bg-surface-3 hover:bg-surface border-accent/20 text-appText-muted hover:text-appText-bright'
+                            ? 'bg-accent text-stone-950 border-accent font-bold shadow-xs'
+                            : 'bg-surface hover:bg-surface-3 border-border text-appText-muted hover:text-appText-bright'
                         }`}
                         title="Dengarkan pelafalan audio bahasa Jepang"
                         aria-label={isPlayingVoice === msg.id ? 'Hentikan audio pelafalan' : 'Dengarkan pelafalan bahasa Jepang'}
@@ -605,7 +605,7 @@ export const SenseiPage: React.FC = () => {
                       <button
                         type="button"
                         onClick={() => handleCopyMessage(msg.id, msg.content)}
-                        className="min-h-[40px] inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl border border-accent/20 bg-surface-3 hover:bg-surface text-appText-muted hover:text-appText-bright transition-all active:scale-95 text-xs"
+                        className="min-h-[44px] inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl border border-border bg-surface hover:bg-surface-3 text-appText-muted hover:text-appText-bright transition-all active:scale-95 text-xs cursor-pointer"
                         title="Salin jawaban ke clipboard"
                         aria-label="Salin jawaban"
                       >
@@ -635,7 +635,7 @@ export const SenseiPage: React.FC = () => {
                       <button
                         type="button"
                         onClick={() => handleSuggestedAction(msg.suggestedAction!)}
-                        className="min-h-[40px] inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-accent/15 hover:bg-accent/25 border border-accent/30 text-accent font-bold transition-all active:scale-95 text-xs"
+                        className="min-h-[44px] inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl bg-accent/15 hover:bg-accent/25 border border-amber-500/30 text-accent font-bold transition-all active:scale-95 text-xs cursor-pointer"
                       >
                         <span>{msg.suggestedAction.label}</span>
                         <ArrowRight className="w-3.5 h-3.5" />
@@ -658,7 +658,7 @@ export const SenseiPage: React.FC = () => {
                 <IrasutoyaImage assetId="senpai_studying" className="w-7 h-7" containerClassName="w-7 h-7 shrink-0" animateFloat />
               )}
             </div>
-            <div className="bg-surface-2 border border-accent/15 rounded-2xl rounded-tl-xs px-4 py-3 flex items-center gap-2 text-xs text-appText-muted">
+            <div className="bg-surface-2 border border-border rounded-2xl rounded-tl-xs px-4 py-3 flex items-center gap-2 text-xs text-appText-muted">
               <RefreshCw className="w-3.5 h-3.5 animate-spin text-accent" />
               <span>{persona === 'sensei_nugget' ? 'Sensei sedang meracik jawaban...' : 'Senpai sedang mengetik...'}</span>
             </div>
@@ -669,7 +669,7 @@ export const SenseiPage: React.FC = () => {
       </div>
 
       {/* ── Input Box & Action Controls ── */}
-      <div className="bg-surface border border-accent/20 rounded-2xl p-2.5 sm:p-3.5 shadow-md space-y-2.5">
+      <div className="bg-surface border border-border rounded-2xl p-2.5 sm:p-3.5 shadow-xs space-y-2.5">
         <div className="flex items-end gap-2">
           <textarea
             ref={inputRef}
@@ -689,7 +689,7 @@ export const SenseiPage: React.FC = () => {
                 : 'Tulis kalimat bahasa Jepangmu di sini untuk diperiksa... (Tekan Enter)'
             }
             rows={2}
-            className="flex-1 bg-surface-2 border border-accent/15 focus:border-accent rounded-xl px-3.5 py-2.5 text-base sm:text-sm text-appText-bright placeholder:text-appText-muted focus:outline-none resize-none transition-colors max-h-[120px] min-h-[48px]"
+            className="flex-1 bg-surface-2 border border-border focus:border-accent rounded-xl px-3.5 py-2.5 text-base sm:text-sm text-appText-bright placeholder:text-appText-muted focus:outline-none resize-none transition-colors max-h-[120px] min-h-[48px]"
           />
 
           <button
@@ -697,7 +697,7 @@ export const SenseiPage: React.FC = () => {
             onClick={() => handleSendMessage()}
             disabled={!inputText.trim() || isLoading}
             aria-label="Kirim pesan"
-            className={`min-w-[44px] min-h-[44px] w-11 h-11 rounded-xl flex items-center justify-center text-bg shrink-0 transition-all shadow-sm active:scale-95 ${
+            className={`min-w-[44px] min-h-[44px] w-11 h-11 rounded-xl flex items-center justify-center text-stone-950 shrink-0 transition-all shadow-xs active:scale-95 ${
               inputText.trim() && !isLoading
                 ? 'bg-accent hover:bg-accent-hot cursor-pointer'
                 : 'bg-surface-3 text-appText-muted/40 cursor-not-allowed opacity-60'
@@ -726,7 +726,7 @@ export const SenseiPage: React.FC = () => {
             <button
               type="button"
               onClick={handleClearChat}
-              className="min-h-[40px] min-w-[40px] px-2.5 py-1.5 rounded-xl inline-flex items-center justify-center gap-1.5 text-appText-muted hover:text-rose-400 bg-surface-2/60 hover:bg-surface-3 border border-accent/10 transition-colors active:scale-95"
+              className="min-h-[40px] min-w-[40px] min-h-[44px] min-w-[44px] px-3 py-2 rounded-xl inline-flex items-center justify-center gap-1.5 text-appText-muted hover:text-rose-500 bg-surface-2 hover:bg-surface-3 border border-border transition-colors active:scale-95 cursor-pointer"
               title="Bersihkan riwayat percakapan mode ini"
               aria-label="Bersihkan riwayat percakapan"
             >

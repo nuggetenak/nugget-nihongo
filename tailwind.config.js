@@ -79,8 +79,8 @@ module.exports = {
         xl: '28px',
       },
       boxShadow: {
-        glow: '0 4px 24px rgba(245, 158, 11, 0.30)',
-        card: '0 1px 0 rgba(255, 255, 255, 0.05) inset, 0 8px 24px rgba(0, 0, 0, 0.40)',
+        glow: '0 2px 12px rgba(217, 119, 6, 0.15)',
+        card: '0 1px 2px rgba(28, 21, 14, 0.05), 0 4px 12px rgba(28, 21, 14, 0.03)',
       },
       keyframes: {
         shimmer: {

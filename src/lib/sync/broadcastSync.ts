@@ -10,7 +10,9 @@ export type CrossTabEventType =
   | 'CAT_COMPLETED'
   | 'THEME_CHANGED'
   | 'LEVEL_CHANGED'
-  | 'SYNC_TRIGGERED';
+  | 'SYNC_TRIGGERED'
+  | 'GARDEN_UPDATED'
+  | 'GAMIFICATION_UPDATED';
 
 export interface CrossTabEvent {
   type: CrossTabEventType;

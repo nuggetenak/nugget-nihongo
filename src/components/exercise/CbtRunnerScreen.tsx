@@ -250,7 +250,7 @@ export const CbtRunnerScreen: React.FC<CbtRunnerScreenProps> = ({ onExit }) => {
             </div>
 
             {/* Cultural Hanko / Daruma Anchor */}
-            <div className="w-20 h-20 mx-auto rounded-3xl bg-surface/80 border border-theme/60 p-2 flex items-center justify-center shadow-glow overflow-hidden">
+            <div className="w-20 h-20 mx-auto rounded-3xl bg-surface/80 border border-theme/60 p-2 flex items-center justify-center shadow-xs overflow-hidden">
               <IrasutoyaImage
                 assetId={sessionSummary.isPassed ? 'hanko_excellent' : 'daruma_recovery'}
                 className="w-16 h-16 object-contain"
@@ -381,8 +381,8 @@ export const CbtRunnerScreen: React.FC<CbtRunnerScreenProps> = ({ onExit }) => {
                       <span
                         className={`text-xs font-bold px-2.5 py-0.5 rounded-full border ${
                           isCorrect
-                            ? 'bg-emerald-500/15 border-emerald-500/30 text-emerald-300'
-                            : 'bg-rose-500/15 border-rose-500/30 text-rose-300'
+                            ? 'bg-emerald-500/15 border-emerald-500/30 text-emerald-800 dark:text-emerald-300 font-bold'
+                            : 'bg-rose-500/15 border-rose-500/30 text-rose-800 dark:text-rose-300 font-bold'
                         }`}
                       >
                         {isCorrect ? '✓ Benar' : '✗ Salah'}
@@ -390,7 +390,7 @@ export const CbtRunnerScreen: React.FC<CbtRunnerScreenProps> = ({ onExit }) => {
                     </div>
 
                     {/* Question Prompt */}
-                    <div className="text-base sm:text-lg font-bold font-japanese text-appText-bright leading-relaxed">
+                    <div className="text-base sm:text-lg font-bold font-jp font-japanese text-appText-bright leading-relaxed">
                       {item.prompt}
                     </div>
 
@@ -514,9 +514,9 @@ export const CbtRunnerScreen: React.FC<CbtRunnerScreenProps> = ({ onExit }) => {
 
       {/* ── PAUSE OVERLAY (ADHD SMART PAUSE) ───────────────────────── */}
       {isPaused && (
-        <div className="absolute inset-0 z-50 bg-black/85 backdrop-blur-md flex items-center justify-center p-4 animate-in fade-in">
+        <div className="absolute inset-0 z-50 bg-stone-950/60 backdrop-blur-xs flex items-center justify-center p-4 animate-in fade-in">
           <div className="max-w-md w-full bg-surface border border-theme rounded-3xl p-6 text-center space-y-4 shadow-2xl">
-            <div className="w-16 h-16 rounded-3xl bg-amber-500/15 border border-amber-500/30 flex items-center justify-center mx-auto shadow-glow overflow-hidden">
+            <div className="w-16 h-16 rounded-3xl bg-amber-500/15 border border-amber-500/30 flex items-center justify-center mx-auto shadow-xs overflow-hidden">
               <IrasutoyaImage
                 assetId="senpai_studying"
                 className="w-12 h-12 object-contain"
@@ -532,7 +532,7 @@ export const CbtRunnerScreen: React.FC<CbtRunnerScreenProps> = ({ onExit }) => {
             <button
               type="button"
               onClick={togglePause}
-              className="min-h-[44px] w-full px-5 py-2.5 rounded-xl bg-amber-500 hover:bg-amber-400 text-stone-950 font-black text-sm flex items-center justify-center gap-2 transition-all shadow-glow active:scale-95"
+              className="min-h-[44px] w-full px-5 py-2.5 rounded-xl bg-amber-500 hover:bg-amber-400 text-stone-950 font-black text-sm flex items-center justify-center gap-2 transition-all shadow-xs active:scale-95"
             >
               <Play className="w-4 h-4 fill-stone-950" />
               <span>Lanjutkan Latihan</span>
@@ -700,7 +700,7 @@ export const CbtRunnerScreen: React.FC<CbtRunnerScreenProps> = ({ onExit }) => {
             <button
               type="button"
               onClick={() => setIsDrawerOpen(true)}
-              className="min-h-[44px] px-6 py-2.5 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-stone-950 font-black text-xs sm:text-sm flex items-center gap-2 transition-all shadow-glow active:scale-95"
+              className="min-h-[44px] px-6 py-2.5 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-stone-950 font-black text-xs sm:text-sm flex items-center gap-2 transition-all shadow-xs active:scale-95"
             >
               <span>Kumpulkan Ujian</span>
               <Check className="w-4 h-4 stroke-[3]" />
@@ -709,7 +709,7 @@ export const CbtRunnerScreen: React.FC<CbtRunnerScreenProps> = ({ onExit }) => {
             <button
               type="button"
               onClick={nextQuestion}
-              className="min-h-[44px] px-6 py-2.5 rounded-xl bg-amber-500 hover:bg-amber-400 text-stone-950 font-black text-xs sm:text-sm flex items-center gap-2 transition-all shadow-glow active:scale-95"
+              className="min-h-[44px] px-6 py-2.5 rounded-xl bg-amber-500 hover:bg-amber-400 text-stone-950 font-black text-xs sm:text-sm flex items-center gap-2 transition-all shadow-xs active:scale-95"
             >
               <span>Lanjut</span>
               <ChevronRight className="w-4 h-4 stroke-[3]" />
@@ -720,7 +720,7 @@ export const CbtRunnerScreen: React.FC<CbtRunnerScreenProps> = ({ onExit }) => {
 
       {/* ── 15-QUESTION REVIEW DRAWER MODAL ────────────────────────── */}
       {isDrawerOpen && (
-        <div className="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm flex items-center justify-center p-4 animate-in fade-in">
+        <div className="fixed inset-0 z-50 bg-stone-950/60 backdrop-blur-xs flex items-center justify-center p-4 animate-in fade-in">
           <div
             className="w-full max-w-lg bg-surface border border-theme rounded-3xl p-5 sm:p-7 space-y-5 shadow-2xl relative"
             role="dialog"
@@ -811,7 +811,7 @@ export const CbtRunnerScreen: React.FC<CbtRunnerScreenProps> = ({ onExit }) => {
                   setIsDrawerOpen(false);
                   submitTest();
                 }}
-                className="min-h-[44px] px-6 py-2.5 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-stone-950 font-black text-xs sm:text-sm flex items-center gap-2 transition-all shadow-glow active:scale-95"
+                className="min-h-[44px] px-6 py-2.5 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-stone-950 font-black text-xs sm:text-sm flex items-center gap-2 transition-all shadow-xs active:scale-95"
               >
                 <span>Kumpulkan Jawaban</span>
                 <Check className="w-4 h-4 stroke-[3]" />
@@ -823,13 +823,13 @@ export const CbtRunnerScreen: React.FC<CbtRunnerScreenProps> = ({ onExit }) => {
 
       {/* ── EXIT GUARD CONFIRMATION MODAL ──────────────────────────── */}
       {isExitGuardOpen && (
-        <div className="fixed inset-0 z-50 bg-black/85 backdrop-blur-sm flex items-center justify-center p-4 animate-in fade-in">
+        <div className="fixed inset-0 z-50 bg-stone-950/60 backdrop-blur-xs flex items-center justify-center p-4 animate-in fade-in">
           <div
             className="w-full max-w-md bg-surface border border-theme rounded-3xl p-6 space-y-4 shadow-2xl text-center"
             role="dialog"
             aria-modal="true"
           >
-            <div className="w-16 h-16 rounded-3xl bg-amber-500/15 border border-amber-500/30 flex items-center justify-center mx-auto shadow-glow overflow-hidden">
+            <div className="w-16 h-16 rounded-3xl bg-amber-500/15 border border-amber-500/30 flex items-center justify-center mx-auto shadow-xs overflow-hidden">
               <IrasutoyaImage
                 assetId="daruma_recovery"
                 className="w-12 h-12 object-contain"

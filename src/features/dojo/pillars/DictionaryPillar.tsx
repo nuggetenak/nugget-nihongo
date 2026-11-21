@@ -180,7 +180,7 @@ export const DictionaryPillar: React.FC<DictionaryPillarProps> = ({
           <button
             type="button"
             onClick={() => setKurikulumSub('jlpt')}
-            className={`px-3.5 py-2 rounded-lg text-xs font-bold transition-all min-h-[40px] active:scale-95 flex items-center justify-center ${
+            className={`px-3.5 py-2 rounded-lg text-xs font-bold transition-all min-h-[40px] min-h-[44px] active:scale-95 flex items-center justify-center ${
               kurikulumSub === 'jlpt'
                 ? 'bg-amber-500 text-stone-950 font-black shadow-sm'
                 : 'text-appText-muted hover:text-appText-bright'
@@ -191,7 +191,7 @@ export const DictionaryPillar: React.FC<DictionaryPillarProps> = ({
           <button
             type="button"
             onClick={() => setKurikulumSub('freeway')}
-            className={`px-3.5 py-2 rounded-lg text-xs font-bold transition-all min-h-[40px] active:scale-95 flex items-center justify-center ${
+            className={`px-3.5 py-2 rounded-lg text-xs font-bold transition-all min-h-[40px] min-h-[44px] active:scale-95 flex items-center justify-center ${
               kurikulumSub === 'freeway'
                 ? 'bg-amber-500 text-stone-950 font-black shadow-sm'
                 : 'text-appText-muted hover:text-appText-bright'
@@ -219,7 +219,7 @@ export const DictionaryPillar: React.FC<DictionaryPillarProps> = ({
                       onSelectLevel(lvl.id);
                       setRenderLimit(60);
                     }}
-                    className={`px-3 sm:px-3.5 py-1.5 sm:py-2 rounded-xl text-xs font-bold whitespace-nowrap transition-all border min-h-[40px] active:scale-95 ${
+                    className={`px-3 sm:px-3.5 py-2 rounded-xl text-xs font-bold whitespace-nowrap transition-all border min-h-[44px] active:scale-95 ${
                       isSelected
                         ? 'bg-amber-500 text-stone-950 border-amber-500 font-black shadow-sm'
                         : 'bg-surface-2 border-accent/20 text-appText-muted hover:text-appText-bright hover:border-accent/40'
@@ -240,7 +240,7 @@ export const DictionaryPillar: React.FC<DictionaryPillarProps> = ({
                   setActiveTab('vocab');
                   setRenderLimit(60);
                 }}
-                className={`px-3.5 py-2 rounded-lg text-xs font-bold transition-all min-h-[40px] active:scale-95 flex items-center justify-center ${
+                className={`px-3.5 py-2.5 rounded-lg text-xs font-bold transition-all min-h-[44px] active:scale-95 flex items-center justify-center ${
                   activeTab === 'vocab'
                     ? 'bg-accent text-bg font-black shadow-sm'
                     : 'text-appText-muted hover:text-appText-bright'
@@ -254,7 +254,7 @@ export const DictionaryPillar: React.FC<DictionaryPillarProps> = ({
                   setActiveTab('grammar');
                   setRenderLimit(60);
                 }}
-                className={`px-3.5 py-2 rounded-lg text-xs font-bold transition-all min-h-[40px] active:scale-95 flex items-center justify-center ${
+                className={`px-3.5 py-2.5 rounded-lg text-xs font-bold transition-all min-h-[44px] active:scale-95 flex items-center justify-center ${
                   activeTab === 'grammar'
                     ? 'bg-accent text-bg font-black shadow-sm'
                     : 'text-appText-muted hover:text-appText-bright'
@@ -278,7 +278,7 @@ export const DictionaryPillar: React.FC<DictionaryPillarProps> = ({
                 }}
                 placeholder={`Cari kosakata / tata bahasa ${(selectedLevel === 'all' ? 'n5' : selectedLevel).toUpperCase()}...`}
                 aria-label={`Cari kosakata atau tata bahasa ${(selectedLevel === 'all' ? 'n5' : selectedLevel).toUpperCase()}`}
-                className="w-full bg-surface-2 border border-accent/20 rounded-xl pl-9 pr-9 py-2 sm:py-2.5 text-xs text-appText-bright placeholder:text-appText-muted focus:outline-none focus:border-accent transition-colors min-h-[40px]"
+                className="w-full bg-surface-2 border border-accent/20 rounded-xl pl-9 pr-9 py-2 sm:py-2.5 text-xs text-appText-bright placeholder:text-appText-muted focus:outline-none focus:border-accent transition-colors min-h-[44px]"
               />
               {searchQuery && (
                 <button
@@ -288,19 +288,19 @@ export const DictionaryPillar: React.FC<DictionaryPillarProps> = ({
                     setRenderLimit(60);
                   }}
                   aria-label="Hapus kata kunci pencarian"
-                  className="absolute right-3 top-1/2 -translate-y-1/2 text-appText-muted hover:text-appText-bright p-1"
+                  className="absolute right-3 top-1/2 -translate-y-1/2 text-appText-muted hover:text-appText-bright p-1 min-h-[36px] min-w-[36px] flex items-center justify-center"
                 >
                   ✕
                 </button>
               )}
             </div>
 
-            <div className="flex items-center gap-1.5 self-end sm:self-auto shrink-0 min-h-[40px] min-w-[40px] rounded-xl">
+            <div className="flex items-center gap-1.5 self-end sm:self-auto shrink-0 min-h-[44px] rounded-xl">
               {/* Furigana Toggle Chip */}
               <button
                 type="button"
                 onClick={() => setShowFurigana(!showFurigana)}
-                className={`px-2.5 py-1.5 rounded-xl text-xs font-bold transition-all border min-h-[40px] flex items-center gap-1 active:scale-95 ${
+                className={`px-3 py-2 rounded-xl text-xs font-bold transition-all border min-h-[44px] flex items-center gap-1 active:scale-95 ${
                   showFurigana
                     ? 'bg-amber-500/20 text-accent-hot dark:text-amber-300 border-amber-500/40 shadow-xs'
                     : 'bg-surface-2 border-accent/20 text-appText-muted hover:text-appText-bright'
@@ -316,7 +316,7 @@ export const DictionaryPillar: React.FC<DictionaryPillarProps> = ({
               <button
                 type="button"
                 onClick={() => setShowRomaji(!showRomaji)}
-                className={`px-2.5 py-1.5 rounded-xl text-xs font-bold transition-all border min-h-[40px] flex items-center gap-1 active:scale-95 ${
+                className={`px-3 py-2 rounded-xl text-xs font-bold transition-all border min-h-[44px] flex items-center gap-1 active:scale-95 ${
                   showRomaji
                     ? 'bg-amber-500/20 text-accent-hot dark:text-amber-300 border-amber-500/40 shadow-xs'
                     : 'bg-surface-2 border-accent/20 text-appText-muted hover:text-appText-bright'
@@ -333,7 +333,7 @@ export const DictionaryPillar: React.FC<DictionaryPillarProps> = ({
                 <button
                   type="button"
                   onClick={() => setViewMode('grid')}
-                  className={`p-2 rounded-lg transition-colors min-h-[40px] min-w-[40px] flex items-center justify-center active:scale-95 ${
+                  className={`p-2 rounded-lg transition-colors min-h-[40px] min-w-[40px] min-h-[44px] min-w-[44px] flex items-center justify-center active:scale-95 ${
                     viewMode === 'grid'
                       ? 'bg-accent text-bg shadow-sm'
                       : 'text-appText-muted hover:text-appText-bright'
@@ -346,7 +346,7 @@ export const DictionaryPillar: React.FC<DictionaryPillarProps> = ({
                 <button
                   type="button"
                   onClick={() => setViewMode('compact')}
-                  className={`p-2 rounded-lg transition-colors min-h-[40px] min-w-[40px] flex items-center justify-center active:scale-95 ${
+                  className={`p-2 rounded-lg transition-colors min-h-[40px] min-w-[40px] min-h-[44px] min-w-[44px] flex items-center justify-center active:scale-95 ${
                     viewMode === 'compact'
                       ? 'bg-accent text-bg shadow-sm'
                       : 'text-appText-muted hover:text-appText-bright'
@@ -377,7 +377,7 @@ export const DictionaryPillar: React.FC<DictionaryPillarProps> = ({
                       setSelectedPos(pos.id);
                       setRenderLimit(60);
                     }}
-                    className={`px-3 py-2 rounded-xl text-xs font-semibold whitespace-nowrap transition-all border min-h-[40px] active:scale-95 flex items-center justify-center ${
+                    className={`px-3 py-2 rounded-xl text-xs font-semibold whitespace-nowrap transition-all border min-h-[40px] min-h-[44px] active:scale-95 flex items-center justify-center ${
                       isSelected
                         ? 'bg-amber-500 text-stone-950 border-amber-500 font-bold shadow-sm'
                         : 'bg-surface-2 border-accent/15 text-appText-muted hover:text-appText-bright'
@@ -404,7 +404,7 @@ export const DictionaryPillar: React.FC<DictionaryPillarProps> = ({
                       setSelectedParticle(p);
                       setRenderLimit(60);
                     }}
-                    className={`px-3 py-2 rounded-xl text-xs font-semibold whitespace-nowrap transition-all border min-h-[40px] active:scale-95 flex items-center justify-center ${
+                    className={`px-3 py-2 rounded-xl text-xs font-semibold whitespace-nowrap transition-all border min-h-[40px] min-h-[44px] active:scale-95 flex items-center justify-center ${
                       isSelected
                         ? 'bg-amber-500 text-stone-950 border-amber-500 font-bold shadow-sm'
                         : 'bg-surface-2 border-accent/15 text-appText-muted hover:text-appText-bright'
@@ -470,7 +470,7 @@ export const DictionaryPillar: React.FC<DictionaryPillarProps> = ({
                             e.stopPropagation();
                             speakJapanese(v.word);
                           }}
-                          className="w-11 h-11 min-w-[40px] min-h-[40px] sm:min-w-[44px] sm:min-h-[44px] rounded-xl bg-surface/70 hover:bg-amber-500/20 text-appText-muted hover:text-accent-hot flex items-center justify-center transition-all active:scale-95 shrink-0"
+                          className="w-11 h-11 min-w-[40px] min-h-[40px] min-w-[44px] min-h-[44px] rounded-xl bg-surface/70 hover:bg-amber-500/20 text-appText-muted hover:text-accent-hot flex items-center justify-center transition-all active:scale-95 shrink-0"
                           title="Dengarkan pelafalan"
                           aria-label={`Dengarkan pelafalan ${v.word}`}
                         >
@@ -543,7 +543,7 @@ export const DictionaryPillar: React.FC<DictionaryPillarProps> = ({
                             e.stopPropagation();
                             speakJapanese(v.word);
                           }}
-                          className="w-10 h-10 min-w-[40px] min-h-[40px] rounded-lg hover:bg-surface text-appText-muted hover:text-accent-hot flex items-center justify-center transition-colors active:scale-95"
+                          className="w-11 h-11 min-w-[40px] min-h-[40px] min-w-[44px] min-h-[44px] rounded-lg hover:bg-surface text-appText-muted hover:text-accent-hot flex items-center justify-center transition-colors active:scale-95"
                           title="Dengarkan pelafalan"
                           aria-label={`Dengarkan pelafalan ${v.word}`}
                         >
@@ -561,14 +561,14 @@ export const DictionaryPillar: React.FC<DictionaryPillarProps> = ({
                   <button
                     type="button"
                     onClick={() => setRenderLimit((prev) => prev + 60)}
-                    className="w-full sm:w-auto px-5 py-2.5 rounded-xl bg-surface-2 border border-accent/20 hover:border-accent/40 text-xs font-bold text-appText-bright transition-all min-h-[40px] active:scale-95"
+                    className="w-full sm:w-auto px-5 py-2.5 rounded-xl bg-surface-2 border border-accent/20 hover:border-accent/40 text-xs font-bold text-appText-bright transition-all min-h-[44px] active:scale-95"
                   >
                     Muat +60 Lagi ({filteredVocab.length - renderLimit} tersisa)
                   </button>
                   <button
                     type="button"
                     onClick={() => setRenderLimit(filteredVocab.length)}
-                    className="w-full sm:w-auto px-4 py-2.5 rounded-xl bg-accent text-bg hover:bg-accent-hot text-xs font-bold transition-all shadow-sm min-h-[40px] active:scale-95"
+                    className="w-full sm:w-auto px-4 py-2.5 rounded-xl bg-accent text-bg hover:bg-accent-hot text-xs font-bold transition-all shadow-sm min-h-[44px] active:scale-95"
                   >
                     Tampilkan Semua ({filteredVocab.length})
                   </button>
@@ -618,7 +618,7 @@ export const DictionaryPillar: React.FC<DictionaryPillarProps> = ({
                             e.stopPropagation();
                             speakJapanese(g.pattern);
                           }}
-                          className="w-11 h-11 min-w-[40px] min-h-[40px] sm:min-w-[44px] sm:min-h-[44px] rounded-xl bg-surface/70 hover:bg-amber-500/20 text-appText-muted hover:text-accent-hot flex items-center justify-center transition-all active:scale-95 shrink-0"
+                          className="w-11 h-11 min-w-[40px] min-h-[40px] min-w-[44px] min-h-[44px] rounded-xl bg-surface/70 hover:bg-amber-500/20 text-appText-muted hover:text-accent-hot flex items-center justify-center transition-all active:scale-95 shrink-0"
                           title="Dengarkan pelafalan"
                           aria-label={`Dengarkan pelafalan ${g.pattern}`}
                         >
@@ -687,7 +687,7 @@ export const DictionaryPillar: React.FC<DictionaryPillarProps> = ({
                             e.stopPropagation();
                             speakJapanese(g.pattern);
                           }}
-                          className="w-10 h-10 min-w-[40px] min-h-[40px] rounded-lg hover:bg-surface text-appText-muted hover:text-accent-hot flex items-center justify-center transition-colors active:scale-95"
+                          className="w-11 h-11 min-w-[40px] min-h-[40px] min-w-[44px] min-h-[44px] rounded-lg hover:bg-surface text-appText-muted hover:text-accent-hot flex items-center justify-center transition-colors active:scale-95"
                           title="Dengarkan pelafalan"
                           aria-label={`Dengarkan pelafalan ${g.pattern}`}
                         >
@@ -705,14 +705,14 @@ export const DictionaryPillar: React.FC<DictionaryPillarProps> = ({
                   <button
                     type="button"
                     onClick={() => setRenderLimit((prev) => prev + 60)}
-                    className="w-full sm:w-auto px-5 py-2.5 rounded-xl bg-surface-2 border border-accent/20 hover:border-accent/40 text-xs font-bold text-appText-bright transition-all min-h-[40px] active:scale-95"
+                    className="w-full sm:w-auto px-5 py-2.5 rounded-xl bg-surface-2 border border-accent/20 hover:border-accent/40 text-xs font-bold text-appText-bright transition-all min-h-[44px] active:scale-95"
                   >
                     Muat +60 Lagi ({filteredGrammar.length - renderLimit} tersisa)
                   </button>
                   <button
                     type="button"
                     onClick={() => setRenderLimit(filteredGrammar.length)}
-                    className="w-full sm:w-auto px-4 py-2.5 rounded-xl bg-accent text-bg hover:bg-accent-hot text-xs font-bold transition-all shadow-sm min-h-[40px] active:scale-95"
+                    className="w-full sm:w-auto px-4 py-2.5 rounded-xl bg-accent text-bg hover:bg-accent-hot text-xs font-bold transition-all shadow-sm min-h-[44px] active:scale-95"
                   >
                     Tampilkan Semua ({filteredGrammar.length})
                   </button>
@@ -779,7 +779,7 @@ export const DictionaryPillar: React.FC<DictionaryPillarProps> = ({
                       e.stopPropagation();
                       speakJapanese(item.pattern);
                     }}
-                    className="w-11 h-11 min-w-[40px] min-h-[40px] sm:min-w-[44px] sm:min-h-[44px] rounded-xl bg-surface hover:bg-amber-500/20 text-appText-muted hover:text-accent flex items-center justify-center transition-all shrink-0 active:scale-95"
+                    className="w-11 h-11 min-w-[40px] min-h-[40px] min-w-[44px] min-h-[44px] rounded-xl bg-surface hover:bg-amber-500/20 text-appText-muted hover:text-accent flex items-center justify-center transition-all shrink-0 active:scale-95"
                     title="Dengarkan pelafalan"
                     aria-label={`Dengarkan pelafalan ${item.pattern}`}
                   >

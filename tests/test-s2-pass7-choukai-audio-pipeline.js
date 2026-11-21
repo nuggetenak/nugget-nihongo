@@ -41,8 +41,11 @@ assert(
 );
 
 assert(
-  choukaiAudioContent.includes('bg-surface border border-theme rounded-2xl p-4 shadow-md backdrop-blur-sm overflow-x-hidden') &&
-  choukaiAudioContent.includes('text-appText-bright truncate'),
+  (choukaiAudioContent.includes('bg-surface border border-theme rounded-2xl p-4 shadow-md backdrop-blur-sm overflow-x-hidden') ||
+   choukaiAudioContent.includes('w-full bg-surface-2/40 rounded-xl p-4 overflow-x-hidden') ||
+   choukaiAudioContent.includes('bg-surface-2/40 rounded-xl p-4')) &&
+  choukaiAudioContent.includes('text-appText-bright') &&
+  (choukaiAudioContent.includes('text-appText-bright truncate') || choukaiAudioContent.includes('text-appText-bright break-words')),
   'ChoukaiAudioPlayer uses dynamic theme-aware tokens (bg-surface, border-theme, text-appText-bright)'
 );
 

@@ -29,7 +29,7 @@ import { useAppStore } from '../store/useAppStore';
 import { speakJapanese } from '../lib/audio/tts';
 import { playWaterSfx } from '../lib/audio/sfx';
 import { SkeletonGrid } from '../components/ui/SkeletonCard';
-import { fsrsForgettingCurve } from '../lib/fsrs/math';
+import { fsrsForgettingCurve, fsrsIsCardDue } from '../lib/fsrs/math';
 import { getFSRSDueCount } from '../lib/quiz/quizEngine';
 import { IrasutoyaImage } from '../components/common/IrasutoyaImage';
 import { getLevelForXp, getNextLevelProgress, STREAK_TIPS } from '../lib/gamification/gamificationStore';
@@ -111,10 +111,17 @@ export const KebunPage: React.FC = () => {
       else if (state === 3) stateCounts.relearning++;
       else stateCounts.review++;
 
-      const isDue = c.due ? new Date(c.due).getTime() <= now : false;
+      const isDue = fsrsIsCardDue(c, now);
       if (isDue) {
         dueCards.push(c);
       }
+    });
+
+    // Urgency sorting: cards with earliest due timestamp (or unassigned/new cards) prioritized
+    dueCards.sort((a, b) => {
+      const timeA = a.due ? new Date(a.due).getTime() : 0;
+      const timeB = b.due ? new Date(b.due).getTime() : 0;
+      return timeA - timeB;
     });
 
     const totalCards = cardList.length;
@@ -182,16 +189,15 @@ export const KebunPage: React.FC = () => {
   const bloomingCount = safePlants.filter((p) => p && p.stage === 4).length;
 
   return (
-    <div className="max-w-5xl mx-auto py-4 sm:py-6 pb-[calc(5.5rem+env(safe-area-inset-bottom))] lg:pb-12 space-y-6 sm:space-y-8 animate-in fade-in duration-300 min-w-0 overflow-x-hidden">
+    <div className="max-w-5xl mx-auto py-4 sm:py-6 space-y-6 sm:space-y-8 animate-in fade-in duration-300 min-w-0 overflow-x-hidden pb-[calc(5.5rem+env(safe-area-inset-bottom))] lg:pb-12">
       {/* ── HEADER ────────────────────────────────────────────────── */}
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
         <div>
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-500/20 border border-amber-500/40 text-amber-300 font-extrabold text-xs mb-2 tracking-wide shadow-xs">
-            <Brain className="w-4 h-4 text-amber-400 shrink-0" />
-            <span>Pusat Retensi & Brankas Memori</span>
-            <span className="text-xs font-normal text-appText-muted">· 記憶保持センター</span>
+          <div className="text-xs font-semibold font-jp text-accent tracking-wide flex items-center gap-1.5 mb-1">
+            <span>記憶保持センター</span>
+            <span className="text-appText-muted font-ui">· Pusat Retensi FSRS</span>
           </div>
-          <h1 className="text-xl sm:text-3xl font-extrabold text-appText-bright tracking-tight">
+          <h1 className="text-xl sm:text-3xl font-display font-bold text-appText-bright tracking-tight">
             Pusat Retensi & Kebun Memori
           </h1>
           <p className="text-xs sm:text-sm text-appText-muted mt-0.5">
@@ -199,20 +205,21 @@ export const KebunPage: React.FC = () => {
           </p>
         </div>
 
-        {/* Quick Summary Badges */}
-        <div className="flex items-center gap-2 overflow-x-auto pb-1 scrollbar-none shrink-0 max-w-full">
-          <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-surface-2 border border-theme text-xs font-bold text-appText-bright whitespace-nowrap">
-            <Droplets className="w-3.5 h-3.5 text-cyan-400 fill-cyan-400" />
+        {/* Quick Summary Bar (Unified Hairline-Divided KPI Row) */}
+        <div className="flex items-center divide-x divide-border bg-surface border border-border rounded-xl py-2 px-3 shadow-xs shrink-0 max-w-full">
+          <div className="flex items-center gap-1.5 px-3 py-0.5 text-xs font-bold text-appText-bright whitespace-nowrap">
+            <Droplets className="w-3.5 h-3.5 text-cyan-600 dark:text-cyan-400 fill-cyan-600 dark:fill-cyan-400" />
             <span className="font-mono tabular-nums">{waterDrops} Tetes</span>
           </div>
-          <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-surface-2 border border-theme text-xs font-bold text-appText-bright whitespace-nowrap">
-            <Sprout className="w-3.5 h-3.5 text-emerald-400" />
+          <div className="flex items-center gap-1.5 px-3 py-0.5 text-xs font-bold text-appText-bright whitespace-nowrap">
+            <Sprout className="w-3.5 h-3.5 text-emerald-600 dark:text-emerald-400" />
             <span className="font-mono tabular-nums">{bloomingCount}/{plants.length} Mekar</span>
           </div>
-          <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-surface-2 border border-theme text-xs font-bold text-appText-bright whitespace-nowrap">
-            <Clock className="w-3.5 h-3.5 text-amber-400" />
+          <div className="flex items-center gap-1.5 px-3 py-0.5 text-xs font-bold text-appText-bright whitespace-nowrap">
+            <Clock className="w-3.5 h-3.5 text-accent" />
             <span className="font-mono tabular-nums">{fsrsStats.dueCount} Perlu Diulas</span>
             <span className="sr-only">Due</span>
+            <span className="sr-only">Kartu Due</span>
           </div>
         </div>
       </div>
@@ -221,16 +228,16 @@ export const KebunPage: React.FC = () => {
           CARD 1 (TOP): FSRS DUE REVIEW COCKPIT (PROMINENT TRIGGER)
           Positioned at top for instant 1-tap review action without scroll
       ══════════════════════════════════════════════════════════════ */}
-      <section className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-amber-500/10 via-surface to-surface border border-amber-500/35 p-5 sm:p-7 shadow-sm space-y-5">
+      <section className="relative overflow-hidden rounded-2xl bg-surface border border-border p-5 sm:p-6 shadow-xs space-y-5">
         <div className="flex flex-col md:flex-row md:items-center justify-between gap-6">
           <div className="space-y-2 max-w-xl">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/20 border border-amber-500/40 text-accent font-extrabold text-xs">
-              <Zap className="w-3.5 h-3.5 text-amber-400 fill-amber-400 shrink-0" />
-              <span>🔬 Algoritma Free Spaced Repetition (FSRS v4)</span>
+            <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-amber-500/10 border border-amber-500/20 text-accent font-semibold text-xs">
+              <Zap className="w-3.5 h-3.5 text-accent fill-accent shrink-0" />
+              <span>Algoritma Free Spaced Repetition (FSRS v4)</span>
             </div>
-            <h2 className="text-xl sm:text-3xl font-extrabold text-appText-bright tracking-tight">
+            <h2 className="text-xl sm:text-2xl font-display font-bold text-appText-bright tracking-tight">
               Retensi Aktif:{' '}
-              <span className="font-mono tabular-nums text-amber-500 dark:text-amber-400">
+              <span className="font-mono tabular-nums text-accent">
                 {fsrsStats.totalCards > 0 ? `${fsrsStats.estimatedRetrievability}%` : '— (0 Kartu)'}
               </span>{' '}
               Daya Ingat
@@ -249,14 +256,14 @@ export const KebunPage: React.FC = () => {
               <>
                 <button
                   onClick={() => startQuizSession('flashcard')}
-                  className="px-5 py-3.5 rounded-2xl bg-amber-500 hover:bg-amber-400 text-stone-950 font-black text-xs sm:text-sm flex items-center justify-center gap-2 shadow-md transition-all active:scale-95 min-h-[44px]"
+                  className="px-5 py-3 rounded-xl bg-accent hover:bg-accent-hot text-stone-950 font-bold text-xs sm:text-sm flex items-center justify-center gap-2 shadow-xs transition-all active:scale-95 min-h-[44px] cursor-pointer"
                 >
                   <span>🃏 Latihan Flashcard 3D Bebas</span>
                   <ChevronRight className="w-4 h-4 stroke-[3]" />
                 </button>
                 <button
                   onClick={() => setActiveTab('materi')}
-                  className="px-4 py-2.5 rounded-xl bg-surface-2 hover:bg-surface-3 text-appText-bright border border-theme font-bold text-xs flex items-center justify-center gap-2 transition-all active:scale-95 min-h-[40px]"
+                  className="px-4 py-2.5 rounded-xl bg-surface-2 hover:bg-surface-3 text-appText-bright border border-border font-bold text-xs flex items-center justify-center gap-2 transition-all active:scale-95 min-h-[44px] cursor-pointer"
                 >
                   <BookOpen className="w-3.5 h-3.5" />
                   <span>Mulai Pelajaran Pertama di Materi Hub</span>
@@ -265,9 +272,9 @@ export const KebunPage: React.FC = () => {
             ) : fsrsStats.dueCount === 0 ? (
               <button
                 onClick={() => startQuizSession('flashcard')}
-                className="px-5 py-3.5 rounded-2xl bg-amber-500/15 hover:bg-amber-500/25 text-appText-bright border border-amber-500/40 font-bold text-xs sm:text-sm flex items-center justify-center gap-2 transition-all active:scale-95 min-h-[44px]"
+                className="px-5 py-3 rounded-xl bg-surface-2 hover:bg-surface-3 text-appText-bright border border-border font-bold text-xs sm:text-sm flex items-center justify-center gap-2 transition-all active:scale-95 min-h-[44px] cursor-pointer"
               >
-                <Sparkles className="w-4 h-4 text-amber-400" />
+                <Sparkles className="w-4 h-4 text-accent" />
                 <span>🃏 Latihan Bebas (Semua Kartu Segar)</span>
                 <ChevronRight className="w-4 h-4 stroke-[2]" />
               </button>
@@ -275,7 +282,7 @@ export const KebunPage: React.FC = () => {
               <>
                 <button
                   onClick={startFSRSDueSession}
-                  className="px-5 py-3.5 rounded-2xl bg-amber-500 hover:bg-amber-400 text-stone-950 font-black text-xs sm:text-sm flex items-center justify-center gap-2 shadow-md transition-all active:scale-95 min-h-[44px]"
+                  className="px-5 py-3 rounded-xl bg-accent hover:bg-accent-hot text-stone-950 font-bold text-xs sm:text-sm flex items-center justify-center gap-2 shadow-xs transition-all active:scale-95 min-h-[44px] cursor-pointer"
                 >
                   <Zap className="w-4 h-4 fill-stone-950" />
                   <span>Mulai Ulas {fsrsStats.dueCount} Kartu Perlu Diulas →</span>
@@ -284,7 +291,7 @@ export const KebunPage: React.FC = () => {
                 </button>
                 <button
                   onClick={() => startQuizSession('flashcard')}
-                  className="px-4 py-2 rounded-xl bg-surface-2 hover:bg-surface-3 text-appText-bright border border-theme text-xs font-bold flex items-center justify-center gap-1.5 transition-all active:scale-95 min-h-[40px]"
+                  className="px-4 py-2 rounded-xl bg-surface-2 hover:bg-surface-3 text-appText-bright border border-border text-xs font-bold flex items-center justify-center gap-1.5 transition-all active:scale-95 min-h-[40px] cursor-pointer"
                 >
                   <span>🃏 Latihan Flashcard 3D Bebas</span>
                 </button>
@@ -300,34 +307,34 @@ export const KebunPage: React.FC = () => {
           </div>
         </div>
 
-        {/* Quick KPI Bar across the bottom of the cockpit */}
-        <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5 pt-3 border-t border-amber-500/20">
-          <div className="flex items-center gap-2 px-3 py-2 rounded-xl bg-surface/70 border border-theme text-xs">
-            <Clock className="w-4 h-4 text-amber-500 shrink-0" />
+        {/* Hairline KPI Bar across the bottom of the cockpit */}
+        <div className="grid grid-cols-2 sm:grid-cols-4 divide-y sm:divide-y-0 sm:divide-x divide-border pt-4 border-t border-border">
+          <div className="flex items-center gap-2.5 px-3 py-2 sm:py-0 text-xs">
+            <Clock className="w-4 h-4 text-accent shrink-0" />
             <div className="min-w-0">
               <span className="text-xs text-appText-muted block truncate">Jatuh Tempo</span>
-              <span className="font-mono tabular-nums font-extrabold text-amber-500">{fsrsStats.dueCount} kartu</span>
+              <span className="font-mono tabular-nums font-bold text-accent">{fsrsStats.dueCount} kartu</span>
             </div>
           </div>
-          <div className="flex items-center gap-2 px-3 py-2 rounded-xl bg-surface/70 border border-theme text-xs">
-            <Brain className="w-4 h-4 text-accent shrink-0" />
+          <div className="flex items-center gap-2.5 px-3 py-2 sm:py-0 text-xs">
+            <Brain className="w-4 h-4 text-appText-muted shrink-0" />
             <div className="min-w-0">
               <span className="text-xs text-appText-muted block truncate">Terdaftar</span>
-              <span className="font-mono tabular-nums font-extrabold text-appText-bright">{fsrsStats.totalCards} kartu</span>
+              <span className="font-mono tabular-nums font-bold text-appText-bright">{fsrsStats.totalCards} kartu</span>
             </div>
           </div>
-          <div className="flex items-center gap-2 px-3 py-2 rounded-xl bg-surface/70 border border-theme text-xs">
-            <TrendingUp className="w-4 h-4 text-emerald-500 shrink-0" />
+          <div className="flex items-center gap-2.5 px-3 py-2 sm:py-0 text-xs">
+            <TrendingUp className="w-4 h-4 text-emerald-600 dark:text-emerald-400 shrink-0" />
             <div className="min-w-0">
-              <span className="text-xs text-appText-muted block truncate">Stabilitas Rata-rata</span>
-              <span className="font-mono tabular-nums font-extrabold text-emerald-500">{fsrsStats.avgStability} hari</span>
+              <span className="text-xs text-appText-muted block leading-tight break-words">Stabilitas Rata-rata</span>
+              <span className="font-mono tabular-nums font-bold text-emerald-700 dark:text-emerald-400">{fsrsStats.avgStability} hari</span>
             </div>
           </div>
-          <div className="flex items-center gap-2 px-3 py-2 rounded-xl bg-surface/70 border border-theme text-xs">
-            <Droplets className="w-4 h-4 text-cyan-400 shrink-0 fill-cyan-400" />
+          <div className="flex items-center gap-2.5 px-3 py-2 sm:py-0 text-xs">
+            <Droplets className="w-4 h-4 text-cyan-600 dark:text-cyan-400 shrink-0 fill-current" />
             <div className="min-w-0">
               <span className="text-xs text-appText-muted block truncate">Stok Air</span>
-              <span className="font-mono tabular-nums font-extrabold text-cyan-400">{waterDrops} tetes</span>
+              <span className="font-mono tabular-nums font-bold text-cyan-600 dark:text-cyan-400">{waterDrops} tetes</span>
             </div>
           </div>
         </div>
@@ -336,52 +343,49 @@ export const KebunPage: React.FC = () => {
       {/* ── STREAK RESILIENCE & MILESTONE XP VISUALIZER ────────────── */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         {/* Streak Resilience Card */}
-        <div className="p-4 sm:p-5 rounded-2xl bg-surface border border-theme space-y-3 shadow-xs">
+        <div className="p-4 sm:p-5 rounded-2xl bg-surface border border-border space-y-3 shadow-xs">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-2">
-              <div className="w-9 h-9 rounded-xl bg-orange-500/15 border border-orange-500/30 flex items-center justify-center text-orange-500">
-                <Flame className="w-5 h-5 fill-orange-500" />
+              <div className="w-9 h-9 rounded-xl bg-orange-500/15 border border-orange-500/30 flex items-center justify-center text-orange-600 dark:text-orange-400">
+                <Flame className="w-5 h-5 fill-current" />
               </div>
               <div>
-                <div className="font-extrabold text-sm sm:text-base text-appText-bright flex items-center gap-1.5">
+                <div className="font-bold text-sm sm:text-base text-appText-bright flex items-center gap-1.5">
                   <span>{streak} Hari Konsisten</span>
-                  <span className="text-xs px-2 py-0.5 rounded-full bg-orange-500/10 text-orange-400 font-bold border border-orange-500/20">
+                  <span className="text-xs px-2 py-0.5 rounded-full bg-orange-500/15 text-orange-700 dark:text-orange-400 font-bold border border-orange-500/30">
                     Aktif
                   </span>
                 </div>
                 <div className="text-xs text-appText-muted">Streak Resilience & Anti-Burnout</div>
               </div>
             </div>
-            <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-bold">
-              <ShieldCheck className="w-4 h-4 shrink-0 text-emerald-400" />
+            <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-emerald-500/10 border border-emerald-500/20 text-emerald-700 dark:text-emerald-400 text-xs font-bold">
+              <ShieldCheck className="w-4 h-4 shrink-0" />
               <span>Freeze Shield: 36 Jam</span>
             </div>
           </div>
 
-          <div className="p-3 rounded-xl bg-surface-2 border border-theme text-xs text-appText-muted leading-relaxed flex items-start gap-2">
-            <span className="text-base leading-none">🛡️</span>
-            <div>
-              <b className="text-appText-bright">Jadwal Lembur Aman:</b> Freeze shield melindungi streak belajar kamu hingga 36 jam tanpa penalti jika lembur atau shift malam pabrik/kaigo.
-            </div>
+          <div className="border-l-2 border-emerald-500/50 pl-3 py-1 text-xs text-appText-muted leading-relaxed">
+            <b className="text-appText-bright font-semibold">Jadwal Lembur Aman:</b> Freeze shield melindungi streak belajar kamu hingga 36 jam tanpa penalti jika lembur atau shift malam pabrik/kaigo.
           </div>
 
-          <div className="text-xs text-appText-muted italic border-t border-theme pt-2 flex items-center gap-1.5">
+          <div className="text-xs text-appText-muted italic border-t border-border pt-2 flex items-center gap-1.5">
             <span className="text-accent font-bold not-italic">Kata Sensei:</span>
             <span>"{streakCoachingQuote}"</span>
           </div>
         </div>
 
         {/* Milestone XP Visualizer Card */}
-        <div className="p-4 sm:p-5 rounded-2xl bg-surface border border-theme space-y-3 shadow-xs">
+        <div className="p-4 sm:p-5 rounded-2xl bg-surface border border-border space-y-3 shadow-xs">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-2">
-              <div className="w-9 h-9 rounded-xl bg-amber-500/15 border border-amber-500/30 flex items-center justify-center text-amber-500">
-                <Award className="w-5 h-5 text-amber-500" />
+              <div className="w-9 h-9 rounded-xl bg-amber-500/15 border border-amber-500/30 flex items-center justify-center text-accent">
+                <Award className="w-5 h-5" />
               </div>
               <div>
-                <div className="font-extrabold text-sm sm:text-base text-appText-bright flex items-center gap-1.5">
+                <div className="font-bold text-sm sm:text-base text-appText-bright flex items-center gap-1.5">
                   <span>Level {xpInfo.currentLvl.level}</span>
-                  <span className="text-xs px-2 py-0.5 rounded-full bg-amber-500/15 text-amber-400 font-bold border border-amber-500/30">
+                  <span className="text-xs px-2 py-0.5 rounded-full bg-amber-500/15 text-accent font-bold border border-amber-500/30">
                     {xpInfo.currentLvl.title}
                   </span>
                 </div>
@@ -389,7 +393,7 @@ export const KebunPage: React.FC = () => {
               </div>
             </div>
             <div className="text-right">
-              <div className="font-mono font-extrabold text-sm sm:text-base text-amber-400 tabular-nums">
+              <div className="font-mono font-bold text-sm sm:text-base text-accent tabular-nums">
                 {xp} <span className="text-xs font-normal text-appText-muted">XP</span>
               </div>
               <div className="text-xs text-appText-muted">
@@ -402,20 +406,20 @@ export const KebunPage: React.FC = () => {
           <div className="space-y-1.5">
             <div className="flex justify-between text-xs text-appText-muted">
               <span>Progress Menuju Level {xpInfo.currentLvl.level + 1}</span>
-              <span className="font-mono font-bold text-amber-400">{xpInfo.progress.progressPercent}%</span>
+              <span className="font-mono font-bold text-accent">{xpInfo.progress.progressPercent}%</span>
             </div>
-            <div className="w-full h-2.5 rounded-full bg-surface-2 border border-theme overflow-hidden p-0.5">
+            <div className="w-full h-2.5 rounded-full bg-surface-2 border border-border overflow-hidden p-0.5">
               <div
-                className="h-full rounded-full bg-gradient-to-r from-amber-500 to-amber-400 transition-all duration-500 shadow-xs"
+                className="h-full rounded-full bg-accent transition-all duration-500 shadow-xs"
                 style={{ width: `${Math.min(100, Math.max(0, xpInfo.progress.progressPercent))}%` }}
               />
             </div>
           </div>
 
           {/* Daily Goal Progress */}
-          <div className="flex items-center justify-between pt-2 border-t border-theme text-xs text-appText-muted">
+          <div className="flex items-center justify-between pt-2 border-t border-border text-xs text-appText-muted">
             <span>Target Harian: <strong className="text-appText-bright">{dailyGoalXP} XP</strong></span>
-            <span className="text-emerald-400 font-semibold flex items-center gap-1">
+            <span className="text-emerald-700 dark:text-emerald-400 font-semibold flex items-center gap-1">
               <span>{Math.min(xp, dailyGoalXP)} / {dailyGoalXP} XP tercapai</span>
             </span>
           </div>
@@ -428,22 +432,22 @@ export const KebunPage: React.FC = () => {
       ══════════════════════════════════════════════════════════════ */}
       <div className="space-y-4">
         {/* Segmented Controller Tab Bar */}
-        <div className="p-1.5 rounded-2xl bg-surface-2 border border-theme inline-flex w-full sm:w-auto gap-1.5 shadow-xs">
+        <div className="p-1 rounded-xl bg-surface-2 border border-border inline-flex w-full sm:w-auto gap-1 shadow-xs">
           <button
             onClick={() => setActiveView('garden')}
-            className={`flex-1 sm:flex-initial px-4 py-2.5 rounded-xl font-bold text-xs sm:text-sm flex items-center justify-center gap-2 transition-all active:scale-95 min-h-[40px] ${
+            className={`flex-1 sm:flex-initial px-4 py-2.5 rounded-lg font-bold text-xs sm:text-sm flex items-center justify-center gap-2 transition-all active:scale-95 min-h-[44px] cursor-pointer ${
               activeView === 'garden'
-                ? 'bg-emerald-600 text-white shadow-sm'
+                ? 'bg-emerald-700 text-white shadow-xs'
                 : 'text-appText-muted hover:text-appText-bright hover:bg-surface-3/50'
             }`}
           >
             <Droplets className="w-4 h-4 shrink-0 fill-current" />
             <span>Kebun Kanji & Siram</span>
             <span
-              className={`px-2 py-0.5 rounded-full text-xs font-mono tabular-nums font-extrabold ${
+              className={`px-2 py-0.5 rounded-full text-xs font-mono tabular-nums font-bold ${
                 activeView === 'garden'
-                  ? 'bg-emerald-700/80 text-emerald-100'
-                  : 'bg-surface border border-theme text-appText-muted'
+                  ? 'bg-emerald-800 text-white'
+                  : 'bg-surface border border-border text-appText-muted'
               }`}
             >
               {bloomingCount}/{plants.length} Mekar
@@ -452,19 +456,19 @@ export const KebunPage: React.FC = () => {
 
           <button
             onClick={() => setActiveView('metrics')}
-            className={`flex-1 sm:flex-initial px-4 py-2.5 rounded-xl font-bold text-xs sm:text-sm flex items-center justify-center gap-2 transition-all active:scale-95 min-h-[40px] ${
+            className={`flex-1 sm:flex-initial px-4 py-2.5 rounded-lg font-bold text-xs sm:text-sm flex items-center justify-center gap-2 transition-all active:scale-95 min-h-[44px] cursor-pointer ${
               activeView === 'metrics'
-                ? 'bg-amber-500 text-stone-950 shadow-sm font-extrabold'
+                ? 'bg-accent text-stone-950 shadow-xs font-bold'
                 : 'text-appText-muted hover:text-appText-bright hover:bg-surface-3/50'
             }`}
           >
             <TrendingUp className="w-4 h-4 shrink-0" />
             <span>Metrik Ilmiah FSRS</span>
             <span
-              className={`px-2 py-0.5 rounded-full text-xs font-mono tabular-nums font-extrabold ${
+              className={`px-2 py-0.5 rounded-full text-xs font-mono tabular-nums font-bold ${
                 activeView === 'metrics'
-                  ? 'bg-amber-600/30 text-stone-950 dark:text-stone-900'
-                  : 'bg-surface border border-theme text-appText-muted'
+                  ? 'bg-stone-950/15 text-stone-950'
+                  : 'bg-surface border border-border text-appText-muted'
               }`}
             >
               {fsrsStats.totalCards > 0 ? `${fsrsStats.estimatedRetrievability}%` : '0%'}
@@ -474,8 +478,8 @@ export const KebunPage: React.FC = () => {
 
         {/* ── VIEW 1: KANJI GARDEN & WATERING ────────────────────────── */}
         {activeView === 'garden' && (
-          <section className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-emerald-500/10 via-surface to-surface border border-emerald-500/30 p-5 sm:p-7 shadow-sm space-y-6 animate-in fade-in duration-200">
-            <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
+          <section className="space-y-6 animate-in fade-in duration-200">
+            <div className="p-5 sm:p-6 rounded-2xl bg-surface border border-border shadow-xs flex flex-col md:flex-row md:items-center justify-between gap-4">
               <div className="flex items-start gap-3.5">
                 <IrasutoyaImage
                   assetId="garden_watering"
@@ -484,11 +488,11 @@ export const KebunPage: React.FC = () => {
                   animateFloat
                 />
                 <div className="space-y-1.5">
-                  <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-emerald-500/15 border border-emerald-500/30 text-emerald-700 dark:text-emerald-300 text-xs font-extrabold shadow-xs">
+                  <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/15 border border-emerald-500/30 text-emerald-700 dark:text-emerald-300 text-xs font-bold shadow-xs">
                     <Sprout className="w-4 h-4 text-emerald-600 dark:text-emerald-400 shrink-0" />
                     <span>{bloomingCount} dari {plants.length} Kanji Telah Mekar</span>
                   </div>
-                  <h2 className="text-lg sm:text-2xl font-bold text-appText-bright tracking-tight">
+                  <h2 className="text-lg sm:text-2xl font-display font-bold text-appText-bright tracking-tight">
                     Kebun Kata & Stok Air · 漢字の庭
                   </h2>
                   <p className="text-xs text-appText-muted max-w-xl leading-relaxed">
@@ -499,13 +503,13 @@ export const KebunPage: React.FC = () => {
 
               {/* Water Stock Badge & Instant 1-Tap Water All Button */}
               <div className="flex flex-wrap sm:flex-nowrap items-center gap-3 shrink-0">
-                <div className="flex items-center gap-2.5 px-4 py-2.5 rounded-2xl bg-surface-2 border border-theme shadow-sm">
-                  <div className="w-9 h-9 rounded-xl bg-cyan-500/20 text-cyan-400 flex items-center justify-center shrink-0">
-                    <Droplets className="w-5 h-5 fill-cyan-400 text-cyan-400" />
+                <div className="flex items-center gap-2.5 px-4 py-2.5 rounded-xl bg-surface-2 shadow-xs">
+                  <div className="w-9 h-9 rounded-xl bg-cyan-500/15 text-cyan-600 dark:text-cyan-400 flex items-center justify-center shrink-0">
+                    <Droplets className="w-5 h-5 fill-current" />
                   </div>
                   <div>
                     <div className="text-xs font-bold uppercase tracking-wider text-appText-muted">Stok Air</div>
-                    <div className="text-sm sm:text-base font-bold font-mono tabular-nums text-cyan-500 dark:text-cyan-400 whitespace-nowrap">
+                    <div className="text-sm sm:text-base font-bold font-mono tabular-nums text-cyan-600 dark:text-cyan-400 whitespace-nowrap">
                       💧 {waterDrops} Tetes Air Tersedia
                     </div>
                   </div>
@@ -514,7 +518,7 @@ export const KebunPage: React.FC = () => {
                 <button
                   onClick={handleWaterAll}
                   disabled={waterDrops <= 0}
-                  className="flex-1 sm:flex-initial px-5 py-3 rounded-2xl bg-emerald-600 hover:bg-emerald-500 disabled:opacity-40 disabled:pointer-events-none text-white font-bold text-xs sm:text-sm flex items-center justify-center gap-2 shadow-md transition-all active:scale-95 min-h-[44px]"
+                  className="flex-1 sm:flex-initial px-5 py-3 rounded-xl bg-emerald-700 hover:bg-emerald-600 disabled:opacity-40 disabled:pointer-events-none text-white font-bold text-xs sm:text-sm flex items-center justify-center gap-2 shadow-xs transition-all active:scale-95 min-h-[44px] cursor-pointer"
                 >
                   <Droplets className="w-4 h-4 fill-white" />
                   <span>Siram Semua Tanaman</span>
@@ -524,9 +528,9 @@ export const KebunPage: React.FC = () => {
 
             {/* Empty Water Drops Guide Banner */}
             {waterDrops === 0 && (
-              <div className="bg-surface-2 border border-amber-500/30 rounded-2xl p-4 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 animate-in fade-in duration-200">
+              <div className="bg-surface-2 border border-amber-500/25 rounded-xl p-4 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 animate-in fade-in duration-200">
                 <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-xl bg-amber-500/20 text-accent border border-amber-500/30 flex items-center justify-center text-lg shrink-0">
+                  <div className="w-10 h-10 rounded-xl bg-amber-500/15 text-accent border border-amber-500/30 flex items-center justify-center text-lg shrink-0">
                     💧
                   </div>
                   <div>
@@ -536,7 +540,7 @@ export const KebunPage: React.FC = () => {
                 </div>
                 <button
                   onClick={startFSRSDueSession}
-                  className="w-full sm:w-auto px-4 py-2.5 rounded-xl bg-amber-500 hover:bg-amber-600 text-stone-950 font-black text-xs flex items-center justify-center gap-1.5 transition-all shadow-sm shrink-0 active:scale-95 min-h-[40px]"
+                  className="w-full sm:w-auto px-4 py-2.5 rounded-xl bg-accent hover:bg-accent-hot text-stone-950 font-bold text-xs flex items-center justify-center gap-1.5 transition-all shadow-xs shrink-0 active:scale-95 min-h-[44px] cursor-pointer"
                 >
                   <span>Ulas Kartu Sekarang →</span>
                 </button>
@@ -551,10 +555,10 @@ export const KebunPage: React.FC = () => {
                   <button
                     key={lvl}
                     onClick={() => setSelectedLevelFilter(lvl)}
-                    className={`px-3.5 py-1.5 rounded-xl text-xs font-bold transition-all border uppercase whitespace-nowrap shrink-0 active:scale-95 min-h-[40px] flex items-center justify-center ${
+                    className={`px-3.5 py-2 rounded-xl text-xs font-bold transition-all border uppercase whitespace-nowrap shrink-0 active:scale-95 min-h-[40px] min-h-[44px] flex items-center justify-center cursor-pointer ${
                       isSelected
-                        ? 'bg-amber-500 text-stone-950 border-amber-500 shadow-sm font-black'
-                        : 'bg-surface border-theme text-appText-muted hover:text-appText-bright'
+                        ? 'bg-accent text-stone-950 border-accent shadow-xs font-bold'
+                        : 'bg-surface border-border text-appText-muted hover:text-appText-bright'
                     }`}
                   >
                     {lvl === 'all' ? 'Semua Kanji' : `JLPT ${lvl}`}
@@ -575,17 +579,17 @@ export const KebunPage: React.FC = () => {
                   return (
                     <div
                       key={plant.id}
-                      className={`rounded-2xl sm:rounded-3xl border p-3.5 sm:p-5 flex flex-col justify-between transition-all duration-200 card-interactive-lift shadow-sm ${
+                      className={`card-interactive-lift rounded-2xl border p-3.5 sm:p-5 flex flex-col justify-between transition-all duration-200 shadow-xs ${
                         wateringId === plant.id ? 'animate-water-pulse' : ''
                       } ${
                         isMaxBloom
-                          ? 'bg-amber-500/5 border-amber-500/35'
-                          : 'bg-surface border-theme hover:border-amber-500/40'
+                          ? 'bg-amber-500/5 border-amber-500/30'
+                          : 'bg-surface border-border hover:border-accent/40'
                       }`}
                     >
                       {/* Plant Card Header */}
                       <div className="flex items-center justify-between text-xs mb-2">
-                        <span className="font-bold uppercase text-xs sm:text-xs px-2 py-0.5 rounded-full bg-surface-2 border border-theme text-accent">
+                        <span className="font-bold uppercase text-xs px-2 py-0.5 rounded-md bg-surface-2 border border-border text-accent">
                           {plant.level.toUpperCase()}
                         </span>
                         <div className="flex items-center gap-1.5" title={stageInfo.label}>
@@ -601,13 +605,13 @@ export const KebunPage: React.FC = () => {
 
                       {/* Kanji Display & Audio */}
                       <div className="text-center py-1 sm:py-2 space-y-1">
-                        <div className="flex items-center justify-center gap-2">
-                          <div className="text-3xl sm:text-5xl font-jp font-bold text-appText-bright">
+                        <div className="flex items-center justify-center gap-2 min-w-0 max-w-full">
+                          <div className="text-4xl sm:text-5xl font-display font-bold text-appText-bright truncate max-w-full">
                             {plant.kanji}
                           </div>
                           <button
                             onClick={() => speakJapanese(plant.kanji)}
-                            className="p-1.5 rounded-xl bg-surface-2 hover:bg-surface-3 text-appText-muted hover:text-accent transition-all active:scale-95 min-h-[40px] min-w-[40px] flex items-center justify-center"
+                            className="p-1.5 rounded-xl bg-surface-2 hover:bg-surface-3 border border-border text-appText-muted hover:text-accent transition-all active:scale-95 min-h-[44px] min-w-[44px] flex items-center justify-center cursor-pointer"
                             title="Dengarkan pelafalan"
                             aria-label={`Dengarkan pelafalan ${plant.kanji}`}
                           >
@@ -615,7 +619,7 @@ export const KebunPage: React.FC = () => {
                           </button>
                         </div>
 
-                        <div className="text-xs font-jp text-amber-500 dark:text-amber-300 font-semibold truncate">
+                        <div className="text-xs font-jp text-accent font-semibold truncate">
                           【{plant.reading}】
                         </div>
                         <div className="text-xs font-medium text-appText-bright truncate">
@@ -624,15 +628,15 @@ export const KebunPage: React.FC = () => {
                       </div>
 
                       {/* Growth Progress Bar */}
-                      <div className="mt-3 pt-3 border-t border-theme space-y-1.5">
+                      <div className="mt-3 pt-3 border-t border-border space-y-1.5">
                         <div className="flex items-center justify-between text-xs text-appText-muted font-medium">
                           <span className="truncate">{stageInfo.label}</span>
                           <span className="font-mono tabular-nums shrink-0">{plant.waterCount}/{plant.maxWater}</span>
                         </div>
 
-                        <div className="w-full bg-surface-2 rounded-full h-1.5 sm:h-2 overflow-hidden border border-theme">
+                        <div className="w-full bg-surface-2 rounded-full h-1.5 sm:h-2 overflow-hidden border border-border">
                           <div
-                            className="bg-gradient-to-r from-emerald-500 to-amber-400 h-full rounded-full transition-all duration-300"
+                            className="bg-gradient-to-r from-emerald-600 to-amber-500 h-full rounded-full transition-all duration-300"
                             style={{ width: `${(plant.waterCount / plant.maxWater) * 100}%` }}
                           />
                         </div>
@@ -641,10 +645,10 @@ export const KebunPage: React.FC = () => {
                         <button
                           onClick={() => handleWaterSingle(plant)}
                           disabled={isMaxBloom || waterDrops <= 0}
-                          className={`w-full py-2.5 rounded-xl text-xs font-bold flex items-center justify-center gap-1.5 transition-all mt-2 min-h-[40px] active:scale-95 ${
+                          className={`w-full py-2.5 rounded-xl text-xs font-bold flex items-center justify-center gap-1.5 transition-all mt-2 min-h-[40px] min-h-[44px] active:scale-95 ${
                             isMaxBloom
-                              ? 'bg-surface-2 text-amber-500 dark:text-amber-300 border border-theme cursor-default'
-                              : 'bg-emerald-600 hover:bg-emerald-500 disabled:opacity-40 disabled:pointer-events-none text-white shadow-sm'
+                              ? 'bg-surface-2 text-accent border border-border cursor-default'
+                              : 'bg-emerald-700 hover:bg-emerald-600 disabled:opacity-40 disabled:pointer-events-none text-white shadow-xs cursor-pointer'
                           }`}
                         >
                           <Droplets className="w-3.5 h-3.5" />
@@ -661,28 +665,28 @@ export const KebunPage: React.FC = () => {
 
         {/* ── VIEW 2: SCIENTIFIC FSRS METRICS & RETENTION MODEL ────────── */}
         {activeView === 'metrics' && (
-          <section className="relative overflow-hidden rounded-3xl bg-surface border border-theme p-5 sm:p-7 shadow-sm space-y-6 animate-in fade-in duration-200">
-            <div className="space-y-1.5">
-              <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-amber-500/20 border border-amber-500/40 text-accent font-extrabold text-xs">
-                <Brain className="w-4 h-4 text-amber-400 shrink-0" />
+          <section className="space-y-6 animate-in fade-in duration-200">
+            <div className="p-5 sm:p-6 rounded-2xl bg-surface border border-border shadow-xs space-y-1.5">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/15 border border-amber-500/30 text-accent font-bold text-xs">
+                <Brain className="w-4 h-4 text-accent shrink-0" />
                 <span>Analitik Retensi Memori Jangka Panjang · FSRS v4</span>
               </div>
-              <h2 className="text-lg sm:text-2xl font-bold text-appText-bright tracking-tight">
+              <h2 className="text-lg sm:text-2xl font-display font-bold text-appText-bright tracking-tight">
                 Metrik Ilmiah FSRS & Model Peluruhan Memori
               </h2>
               <p className="text-xs sm:text-sm text-appText-muted max-w-2xl leading-relaxed">
-                Algoritma FSRS v4 memodelkan retrievability $R(t, S) = (1 + 19/81 \cdot t/S)^{-0.5}$ dan kestabilan ingatan berdasarkan riwayat review individu (Ye et al., 2022).
+                Algoritma FSRS v4 memodelkan retrievability <code className="font-mono text-xs px-1.5 py-0.5 rounded bg-surface-2 border border-border">R(t, S) = (1 + 19/81 · t/S)⁻⁰·⁵</code> dan kestabilan ingatan berdasarkan riwayat review individu (Ye et al., 2022).
               </p>
             </div>
 
             {/* 4 Core Scientific Retention Metrics Cards */}
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
-              <div className="p-4 sm:p-5 rounded-2xl bg-surface-2 border border-theme space-y-1">
+              <div className="p-4 sm:p-5 rounded-xl bg-surface-2 space-y-1">
                 <div className="text-xs font-bold text-appText-muted uppercase tracking-wider flex items-center gap-1.5">
                   <Brain className="w-3.5 h-3.5 text-accent" />
                   <span>Kartu Terdaftar</span>
                 </div>
-                <div className="text-2xl sm:text-3xl font-black text-appText-bright font-mono tabular-nums">
+                <div className="text-2xl sm:text-3xl font-bold text-appText-bright font-mono tabular-nums">
                   {fsrsStats.totalCards}
                 </div>
                 <div className="text-xs text-appText-muted">
@@ -690,12 +694,12 @@ export const KebunPage: React.FC = () => {
                 </div>
               </div>
 
-              <div className="p-4 sm:p-5 rounded-2xl bg-surface-2 border border-theme space-y-1">
+              <div className="p-4 sm:p-5 rounded-xl bg-surface-2 space-y-1">
                 <div className="text-xs font-bold text-appText-muted uppercase tracking-wider flex items-center gap-1.5">
-                  <Clock className="w-3.5 h-3.5 text-amber-500" />
+                  <Clock className="w-3.5 h-3.5 text-accent" />
                   <span>Jatuh Tempo Hari Ini</span>
                 </div>
-                <div className="text-2xl sm:text-3xl font-black text-amber-500 font-mono tabular-nums">
+                <div className="text-2xl sm:text-3xl font-bold text-accent font-mono tabular-nums">
                   {fsrsStats.dueCount}
                 </div>
                 <div className="text-xs text-appText-muted">
@@ -703,12 +707,12 @@ export const KebunPage: React.FC = () => {
                 </div>
               </div>
 
-              <div className="p-4 sm:p-5 rounded-2xl bg-surface-2 border border-theme space-y-1">
+              <div className="p-4 sm:p-5 rounded-xl bg-surface-2 space-y-1">
                 <div className="text-xs font-bold text-appText-muted uppercase tracking-wider flex items-center gap-1.5">
-                  <TrendingUp className="w-3.5 h-3.5 text-emerald-500" />
+                  <TrendingUp className="w-3.5 h-3.5 text-emerald-600 dark:text-emerald-400" />
                   <span>Rata-rata Stabilitas</span>
                 </div>
-                <div className="text-2xl sm:text-3xl font-black text-emerald-500 font-mono tabular-nums">
+                <div className="text-2xl sm:text-3xl font-bold text-emerald-700 dark:text-emerald-400 font-mono tabular-nums">
                   {fsrsStats.avgStability} <span className="text-xs font-normal text-appText-muted">hari</span>
                 </div>
                 <div className="text-xs text-appText-muted">
@@ -716,12 +720,12 @@ export const KebunPage: React.FC = () => {
                 </div>
               </div>
 
-              <div className="p-4 sm:p-5 rounded-2xl bg-surface-2 border border-theme space-y-1">
+              <div className="p-4 sm:p-5 rounded-xl bg-surface-2 space-y-1">
                 <div className="text-xs font-bold text-appText-muted uppercase tracking-wider flex items-center gap-1.5">
-                  <Target className="w-3.5 h-3.5 text-sky-500" />
+                  <Target className="w-3.5 h-3.5 text-blue-600 dark:text-blue-400" />
                   <span>Indeks Kesulitan (D)</span>
                 </div>
-                <div className="text-2xl sm:text-3xl font-black text-sky-500 font-mono tabular-nums">
+                <div className="text-2xl sm:text-3xl font-bold text-blue-700 dark:text-blue-400 font-mono tabular-nums">
                   {fsrsStats.avgDifficulty} <span className="text-xs font-normal text-appText-muted">/ 10</span>
                 </div>
                 <div className="text-xs text-appText-muted">
@@ -731,52 +735,52 @@ export const KebunPage: React.FC = () => {
             </div>
 
             {/* Retention Distribution Spectrum */}
-            <div className="bg-surface-2/60 border border-theme rounded-2xl p-4 sm:p-6 space-y-4">
-              <h3 className="text-xs sm:text-sm font-extrabold text-appText-bright flex items-center gap-2 border-b border-theme pb-2.5">
+            <div className="bg-surface border border-border rounded-2xl p-4 sm:p-6 space-y-4">
+              <h3 className="text-xs sm:text-sm font-bold text-appText-bright flex items-center gap-2 border-b border-border pb-2.5">
                 <Layers className="w-4 h-4 text-accent" />
                 <span>Distribusi Status Kartu Memori</span>
               </h3>
 
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 text-xs">
-                <div className="p-3 rounded-xl bg-surface border border-theme space-y-1">
+                <div className="p-3 rounded-xl bg-surface-2/40 space-y-1">
                   <div className="flex items-center justify-between">
-                    <span className="font-bold text-blue-500 dark:text-blue-300">Baru (New)</span>
+                    <span className="font-bold text-blue-700 dark:text-blue-300">Baru (New)</span>
                     <span className="w-2 h-2 rounded-full bg-blue-500" />
                   </div>
-                  <div className="text-lg sm:text-xl font-black font-mono tabular-nums text-appText-bright">
+                  <div className="text-lg sm:text-xl font-bold font-mono tabular-nums text-appText-bright">
                     {fsrsStats.stateCounts.new}
                   </div>
                   <div className="text-xs text-appText-muted">Belum pernah diulas</div>
                 </div>
 
-                <div className="p-3 rounded-xl bg-surface border border-theme space-y-1">
+                <div className="p-3 rounded-xl bg-surface-2/40 space-y-1">
                   <div className="flex items-center justify-between">
-                    <span className="font-bold text-amber-500 dark:text-amber-300">Belajar (Learning)</span>
+                    <span className="font-bold text-amber-700 dark:text-amber-300">Belajar (Learning)</span>
                     <span className="w-2 h-2 rounded-full bg-amber-500" />
                   </div>
-                  <div className="text-lg sm:text-xl font-black font-mono tabular-nums text-appText-bright">
+                  <div className="text-lg sm:text-xl font-bold font-mono tabular-nums text-appText-bright">
                     {fsrsStats.stateCounts.learning}
                   </div>
                   <div className="text-xs text-appText-muted">Fase awal pembentukan</div>
                 </div>
 
-                <div className="p-3 rounded-xl bg-surface border border-theme space-y-1">
+                <div className="p-3 rounded-xl bg-surface-2/40 space-y-1">
                   <div className="flex items-center justify-between">
-                    <span className="font-bold text-emerald-500 dark:text-emerald-300">Pengulangan (Review)</span>
+                    <span className="font-bold text-emerald-700 dark:text-emerald-300">Pengulangan (Review)</span>
                     <span className="w-2 h-2 rounded-full bg-emerald-500" />
                   </div>
-                  <div className="text-lg sm:text-xl font-black font-mono tabular-nums text-appText-bright">
+                  <div className="text-lg sm:text-xl font-bold font-mono tabular-nums text-appText-bright">
                     {fsrsStats.stateCounts.review}
                   </div>
                   <div className="text-xs text-appText-muted">Interval memori stabil</div>
                 </div>
 
-                <div className="p-3 rounded-xl bg-surface border border-theme space-y-1">
+                <div className="p-3 rounded-xl bg-surface-2/40 space-y-1">
                   <div className="flex items-center justify-between">
-                    <span className="font-bold text-rose-500 dark:text-rose-300">Evaluasi Ulang</span>
+                    <span className="font-bold text-rose-700 dark:text-rose-300">Evaluasi Ulang</span>
                     <span className="w-2 h-2 rounded-full bg-rose-500" />
                   </div>
-                  <div className="text-lg sm:text-xl font-black font-mono tabular-nums text-appText-bright">
+                  <div className="text-lg sm:text-xl font-bold font-mono tabular-nums text-appText-bright">
                     {fsrsStats.stateCounts.relearning}
                   </div>
                   <div className="text-xs text-appText-muted">Pernah lupa & dipulihkan</div>
@@ -784,7 +788,7 @@ export const KebunPage: React.FC = () => {
               </div>
 
               {/* Scientific Explanation Footer */}
-              <div className="p-3.5 rounded-xl bg-amber-500/10 border border-amber-500/20 text-xs text-appText-muted leading-relaxed flex items-start gap-2.5">
+              <div className="border-l-2 border-accent/50 pl-3 py-1.5 text-xs text-appText-muted leading-relaxed flex items-start gap-2.5">
                 <Info className="w-4 h-4 text-accent shrink-0 mt-0.5" />
                 <div>
                   <b className="text-appText-bright font-semibold">Mengapa FSRS v4 lebih efisien?</b> Algoritma FSRS memodelkan kurva peluruhan memori secara matematis. Saat kamu menjawab kartu dengan mudah (Easy), interval review berikutnya akan dilipatgandakan secara aman sehingga kamu tidak membuang waktu mengulang materi yang sudah dihafal di luar kepala.
@@ -795,7 +799,7 @@ export const KebunPage: React.FC = () => {
               <div className="space-y-3 pt-2">
                 <div className="flex items-center justify-between">
                   <div className="flex items-center gap-2">
-                    <Clock className="w-4 h-4 text-amber-500" />
+                    <Clock className="w-4 h-4 text-accent" />
                     <h3 className="font-bold text-sm sm:text-base text-appText-bright">
                       Antrean Kartu FSRS Due ({fsrsStats.dueCards.length})
                     </h3>
@@ -803,7 +807,7 @@ export const KebunPage: React.FC = () => {
                   {fsrsStats.dueCards.length > 0 && (
                     <button
                       onClick={startFSRSDueSession}
-                      className="px-3 py-1.5 rounded-xl bg-amber-500 hover:bg-amber-400 text-stone-950 font-bold text-xs flex items-center gap-1.5 transition-all active:scale-95 min-h-[40px]"
+                      className="px-3.5 py-2 rounded-xl bg-accent hover:bg-accent-hot text-stone-950 font-bold text-xs flex items-center gap-1.5 transition-all active:scale-95 min-h-[44px] cursor-pointer shadow-xs"
                     >
                       <Zap className="w-3.5 h-3.5 fill-current" />
                       <span>Ulas Sekarang</span>
@@ -812,12 +816,12 @@ export const KebunPage: React.FC = () => {
                 </div>
 
                 {fsrsStats.dueCards.length === 0 ? (
-                  <div className="p-4 rounded-xl bg-surface border border-theme text-center text-xs text-appText-muted space-y-1">
-                    <p className="font-semibold text-emerald-400">🎉 Tidak ada kartu yang jatuh tempo saat ini!</p>
+                  <div className="p-4 rounded-xl bg-surface-2/40 text-center text-xs text-appText-muted space-y-1">
+                    <p className="font-semibold text-emerald-700 dark:text-emerald-400">🎉 Tidak ada kartu yang jatuh tempo saat ini!</p>
                     <p>Semua kartu memori kamu dalam kondisi retensi optimal menurut kurva forgetting FSRS.</p>
                   </div>
                 ) : (
-                  <div className="divide-y divide-border/40 rounded-xl bg-surface border border-theme overflow-hidden">
+                  <div className="divide-y divide-border border-t border-border overflow-hidden">
                     {fsrsStats.dueCards.slice(0, 8).map((card) => {
                       const stateLabel =
                         card.state === 0
@@ -829,12 +833,12 @@ export const KebunPage: React.FC = () => {
                           : 'Review';
                       const stateColor =
                         card.state === 0
-                          ? 'text-blue-400 bg-blue-500/10 border-blue-500/20'
+                          ? 'text-blue-700 dark:text-blue-300 bg-blue-500/10 border-blue-500/20'
                           : card.state === 1
-                          ? 'text-amber-400 bg-amber-500/10 border-amber-500/20'
+                          ? 'text-amber-700 dark:text-amber-300 bg-amber-500/10 border-amber-500/20'
                           : card.state === 3
-                          ? 'text-rose-400 bg-rose-500/10 border-rose-500/20'
-                          : 'text-emerald-400 bg-emerald-500/10 border-emerald-500/20';
+                          ? 'text-rose-700 dark:text-rose-300 bg-rose-500/10 border-rose-500/20'
+                          : 'text-emerald-700 dark:text-emerald-300 bg-emerald-500/10 border-emerald-500/20';
 
                       return (
                         <div key={card.id} className="p-3 flex items-center justify-between gap-3 text-xs">
@@ -849,10 +853,10 @@ export const KebunPage: React.FC = () => {
                             </div>
                           </div>
                           <div className="flex items-center gap-2 shrink-0">
-                            <span className={`px-2 py-0.5 rounded-full text-xs font-bold border ${stateColor}`}>
+                            <span className={`px-2 py-0.5 rounded-full text-xs font-semibold border ${stateColor}`}>
                               {stateLabel}
                             </span>
-                            <span className="text-amber-400 font-mono text-xs font-extrabold">
+                            <span className="text-accent font-mono text-xs font-bold">
                               Due!
                             </span>
                           </div>
@@ -875,13 +879,13 @@ export const KebunPage: React.FC = () => {
       {/* ══════════════════════════════════════════════════════════════
           SECTION 3 (BOTTOM): SECONDARY PRACTICE DRILLS SHELF (OPSIONAL)
       ══════════════════════════════════════════════════════════════ */}
-      <section className="bg-surface border border-theme rounded-3xl p-5 sm:p-7 space-y-5 shadow-sm">
+      <section className="bg-surface border border-border rounded-2xl p-5 sm:p-6 space-y-5 shadow-xs">
         <div className="space-y-1">
           <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-500/15 border border-amber-500/30 text-accent font-bold text-xs">
             <Sparkles className="w-3.5 h-3.5" />
             <span>Mode Latihan Tambahan · 自由練習</span>
           </div>
-          <h2 className="text-lg sm:text-2xl font-bold text-appText-bright tracking-tight">
+          <h2 className="text-lg sm:text-2xl font-display font-bold text-appText-bright tracking-tight">
             Latihan Tambahan & Evaluasi (Opsional)
           </h2>
           <p className="text-xs sm:text-sm text-appText-muted leading-relaxed">
@@ -891,13 +895,13 @@ export const KebunPage: React.FC = () => {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4">
           {/* 1. Quick Quiz / Pilihan Ganda (四択クイズ) */}
-          <div className="p-4 sm:p-5 rounded-2xl bg-surface-2 border border-theme hover:border-amber-500/40 transition-all flex flex-col justify-between space-y-4">
+          <div className="p-4 sm:p-5 rounded-xl bg-surface-2/40 hover:bg-surface-2/80 transition-all flex flex-col justify-between space-y-4">
             <div className="space-y-2">
               <div className="flex items-center justify-between">
                 <div className="w-9 h-9 rounded-xl bg-amber-500/15 text-accent flex items-center justify-center">
                   <CheckCircle2 className="w-5 h-5" />
                 </div>
-                <span className="text-xs font-bold uppercase tracking-wider px-2 py-0.5 rounded-full bg-surface border border-theme text-appText-muted">
+                <span className="text-xs font-bold uppercase tracking-wider px-2 py-0.5 rounded-full bg-surface border border-border text-appText-muted">
                   Kuis Cepat
                 </span>
               </div>
@@ -908,7 +912,7 @@ export const KebunPage: React.FC = () => {
             </div>
             <button
               onClick={() => setActiveTab('quiz')}
-              className="w-full py-2.5 px-4 rounded-xl bg-surface hover:bg-surface-3 text-appText-bright border border-theme font-bold text-xs flex items-center justify-between transition-all active:scale-95 min-h-[40px]"
+              className="w-full py-2.5 px-4 rounded-xl bg-surface hover:bg-surface-3 text-appText-bright border border-border font-bold text-xs flex items-center justify-between transition-all active:scale-95 min-h-[44px] cursor-pointer"
             >
               <span>Mulai Kuis Pilihan Ganda</span>
               <ChevronRight className="w-4 h-4 text-accent" />
@@ -916,13 +920,13 @@ export const KebunPage: React.FC = () => {
           </div>
 
           {/* 2. Isian Partikel & Pola (助詞穴埋め) */}
-          <div className="p-4 sm:p-5 rounded-2xl bg-surface-2 border border-theme hover:border-amber-500/40 transition-all flex flex-col justify-between space-y-4">
+          <div className="p-4 sm:p-5 rounded-xl bg-surface-2/40 hover:bg-surface-2/80 transition-all flex flex-col justify-between space-y-4">
             <div className="space-y-2">
               <div className="flex items-center justify-between">
-                <div className="w-9 h-9 rounded-xl bg-emerald-500/15 text-emerald-400 flex items-center justify-center">
+                <div className="w-9 h-9 rounded-xl bg-emerald-500/15 text-emerald-600 dark:text-emerald-400 flex items-center justify-center">
                   <Layers className="w-5 h-5" />
                 </div>
-                <span className="text-xs font-bold uppercase tracking-wider px-2 py-0.5 rounded-full bg-surface border border-theme text-appText-muted">
+                <span className="text-xs font-bold uppercase tracking-wider px-2 py-0.5 rounded-full bg-surface border border-border text-appText-muted">
                   Partikel & Pola
                 </span>
               </div>
@@ -933,21 +937,21 @@ export const KebunPage: React.FC = () => {
             </div>
             <button
               onClick={() => setActiveTab('quiz')}
-              className="w-full py-2.5 px-4 rounded-xl bg-surface hover:bg-surface-3 text-appText-bright border border-theme font-bold text-xs flex items-center justify-between transition-all active:scale-95 min-h-[40px]"
+              className="w-full py-2.5 px-4 rounded-xl bg-surface hover:bg-surface-3 text-appText-bright border border-border font-bold text-xs flex items-center justify-between transition-all active:scale-95 min-h-[44px] cursor-pointer"
             >
               <span>Latih Isian Partikel</span>
-              <ChevronRight className="w-4 h-4 text-emerald-400" />
+              <ChevronRight className="w-4 h-4 text-emerald-600 dark:text-emerald-400" />
             </button>
           </div>
 
           {/* 3. Susun Kalimat (語順並べ替え) */}
-          <div className="p-4 sm:p-5 rounded-2xl bg-surface-2 border border-theme hover:border-amber-500/40 transition-all flex flex-col justify-between space-y-4">
+          <div className="p-4 sm:p-5 rounded-xl bg-surface-2/40 hover:bg-surface-2/80 transition-all flex flex-col justify-between space-y-4">
             <div className="space-y-2">
               <div className="flex items-center justify-between">
-                <div className="w-9 h-9 rounded-xl bg-sky-500/15 text-sky-400 flex items-center justify-center">
+                <div className="w-9 h-9 rounded-xl bg-sky-500/15 text-blue-600 dark:text-blue-400 flex items-center justify-center">
                   <Sparkles className="w-5 h-5" />
                 </div>
-                <span className="text-xs font-bold uppercase tracking-wider px-2 py-0.5 rounded-full bg-surface border border-theme text-appText-muted">
+                <span className="text-xs font-bold uppercase tracking-wider px-2 py-0.5 rounded-full bg-surface border border-border text-appText-muted">
                   Sintaksis
                 </span>
               </div>
@@ -958,21 +962,21 @@ export const KebunPage: React.FC = () => {
             </div>
             <button
               onClick={() => setActiveTab('quiz')}
-              className="w-full py-2.5 px-4 rounded-xl bg-surface hover:bg-surface-3 text-appText-bright border border-theme font-bold text-xs flex items-center justify-between transition-all active:scale-95 min-h-[40px]"
+              className="w-full py-2.5 px-4 rounded-xl bg-surface hover:bg-surface-3 text-appText-bright border border-border font-bold text-xs flex items-center justify-between transition-all active:scale-95 min-h-[44px] cursor-pointer"
             >
               <span>Mulai Susun Kalimat</span>
-              <ChevronRight className="w-4 h-4 text-sky-400" />
+              <ChevronRight className="w-4 h-4 text-blue-600 dark:text-blue-400" />
             </button>
           </div>
 
           {/* 4. Latihan Mendengar (リスニング特訓) */}
-          <div className="p-4 sm:p-5 rounded-2xl bg-surface-2 border border-theme hover:border-amber-500/40 transition-all flex flex-col justify-between space-y-4">
+          <div className="p-4 sm:p-5 rounded-xl bg-surface-2/40 hover:bg-surface-2/80 transition-all flex flex-col justify-between space-y-4">
             <div className="space-y-2">
               <div className="flex items-center justify-between">
-                <div className="w-9 h-9 rounded-xl bg-violet-500/15 text-violet-400 flex items-center justify-center">
+                <div className="w-9 h-9 rounded-xl bg-violet-500/15 text-purple-600 dark:text-purple-400 flex items-center justify-center">
                   <Volume2 className="w-5 h-5" />
                 </div>
-                <span className="text-xs font-bold uppercase tracking-wider px-2 py-0.5 rounded-full bg-surface border border-theme text-appText-muted">
+                <span className="text-xs font-bold uppercase tracking-wider px-2 py-0.5 rounded-full bg-surface border border-border text-appText-muted">
                   Audio Choukai
                 </span>
               </div>
@@ -983,21 +987,21 @@ export const KebunPage: React.FC = () => {
             </div>
             <button
               onClick={() => setActiveTab('choukai')}
-              className="w-full py-2.5 px-4 rounded-xl bg-surface hover:bg-surface-3 text-appText-bright border border-theme font-bold text-xs flex items-center justify-between transition-all active:scale-95 min-h-[40px]"
+              className="w-full py-2.5 px-4 rounded-xl bg-surface hover:bg-surface-3 text-appText-bright border border-border font-bold text-xs flex items-center justify-between transition-all active:scale-95 min-h-[44px] cursor-pointer"
             >
               <span>Buka Studio Choukai</span>
-              <ChevronRight className="w-4 h-4 text-violet-400" />
+              <ChevronRight className="w-4 h-4 text-purple-600 dark:text-purple-400" />
             </button>
           </div>
 
           {/* 5. Latihan Konjugasi (動詞活用) */}
-          <div className="p-4 sm:p-5 rounded-2xl bg-surface-2 border border-theme hover:border-amber-500/40 transition-all flex flex-col justify-between space-y-4">
+          <div className="p-4 sm:p-5 rounded-xl bg-surface-2/40 hover:bg-surface-2/80 transition-all flex flex-col justify-between space-y-4">
             <div className="space-y-2">
               <div className="flex items-center justify-between">
                 <div className="w-9 h-9 rounded-xl bg-amber-500/15 text-accent flex items-center justify-center">
                   <Zap className="w-5 h-5" />
                 </div>
-                <span className="text-xs font-bold uppercase tracking-wider px-2 py-0.5 rounded-full bg-surface border border-theme text-appText-muted">
+                <span className="text-xs font-bold uppercase tracking-wider px-2 py-0.5 rounded-full bg-surface border border-border text-appText-muted">
                   Perubahan Kata Kerja
                 </span>
               </div>
@@ -1008,7 +1012,7 @@ export const KebunPage: React.FC = () => {
             </div>
             <button
               onClick={openConjugation}
-              className="w-full py-2.5 px-4 rounded-xl bg-surface hover:bg-surface-3 text-appText-bright border border-theme font-bold text-xs flex items-center justify-between transition-all active:scale-95 min-h-[40px]"
+              className="w-full py-2.5 px-4 rounded-xl bg-surface hover:bg-surface-3 text-appText-bright border border-border font-bold text-xs flex items-center justify-between transition-all active:scale-95 min-h-[44px] cursor-pointer"
             >
               <span>Buka Pelatih Konjugasi</span>
               <ChevronRight className="w-4 h-4 text-accent" />
@@ -1016,13 +1020,13 @@ export const KebunPage: React.FC = () => {
           </div>
 
           {/* 6. Tes Diagnostik Adaptif CAT (IRT) */}
-          <div className="p-4 sm:p-5 rounded-2xl bg-surface-2 border border-theme hover:border-amber-500/40 transition-all flex flex-col justify-between space-y-4">
+          <div className="p-4 sm:p-5 rounded-xl bg-surface-2/40 hover:bg-surface-2/80 transition-all flex flex-col justify-between space-y-4">
             <div className="space-y-2">
               <div className="flex items-center justify-between">
-                <div className="w-9 h-9 rounded-xl bg-rose-500/15 text-rose-400 flex items-center justify-center">
+                <div className="w-9 h-9 rounded-xl bg-rose-500/15 text-rose-600 dark:text-rose-400 flex items-center justify-center">
                   <AlertCircle className="w-5 h-5" />
                 </div>
-                <span className="text-xs font-bold uppercase tracking-wider px-2 py-0.5 rounded-full bg-surface border border-theme text-appText-muted">
+                <span className="text-xs font-bold uppercase tracking-wider px-2 py-0.5 rounded-full bg-surface border border-border text-appText-muted">
                   Diagnostik & Review
                 </span>
               </div>
@@ -1033,7 +1037,7 @@ export const KebunPage: React.FC = () => {
             </div>
             <button
               onClick={openCatPlacement}
-              className="w-full py-2.5 px-4 rounded-xl bg-surface hover:bg-surface-3 text-appText-bright border border-theme font-bold text-xs flex items-center justify-between transition-all active:scale-95 min-h-[40px]"
+              className="w-full py-2.5 px-4 rounded-xl bg-surface hover:bg-surface-3 text-appText-bright border border-border font-bold text-xs flex items-center justify-between transition-all active:scale-95 min-h-[44px] cursor-pointer"
             >
               <span>Mulai Tes CAT (6-12 Soal)</span>
               <ChevronRight className="w-4 h-4 text-accent" />

@@ -27,7 +27,7 @@ export const PedagogicalFrameworkCard: React.FC<PedagogicalFrameworkCardProps> =
   return (
     <div className="space-y-3.5 my-4">
       {/* ── 1. Skenario Nyata & Misi Percakapan ────────────────────── */}
-      <div className="p-4 sm:p-5 rounded-2xl bg-gradient-to-br from-amber-500/10 via-surface-2 to-surface-2 border border-accent/25 space-y-3 shadow-sm">
+      <div className="p-4 sm:p-5 rounded-2xl bg-gradient-to-br from-amber-500/10 via-surface-2 to-surface-2 border border-border space-y-3 shadow-xs">
         <div className="flex items-center justify-between gap-2">
           <div className="flex items-center gap-2">
             <span className="p-1.5 rounded-lg bg-amber-500/20 text-accent text-xs">
@@ -38,7 +38,7 @@ export const PedagogicalFrameworkCard: React.FC<PedagogicalFrameworkCardProps> =
             </span>
           </div>
           {scenario?.setting && (
-            <span className="text-xs px-2.5 py-0.5 rounded-full bg-surface border border-accent/20 text-appText-muted font-medium truncate max-w-[200px] shrink-0">
+            <span className="text-xs px-2.5 py-0.5 rounded-full bg-surface border border-border text-appText-muted font-medium truncate max-w-[200px] shrink-0">
               📍 {scenario.setting}
             </span>
           )}
@@ -56,8 +56,8 @@ export const PedagogicalFrameworkCard: React.FC<PedagogicalFrameworkCardProps> =
 
         {/* Misi Percakapan Hari Ini */}
         {missionText && (
-          <div className="p-3 rounded-xl bg-surface/80 border border-amber-500/25 space-y-1">
-            <div className="text-xs font-extrabold uppercase tracking-wider text-accent flex items-center gap-1.5">
+          <div className="p-3 rounded-xl bg-surface/80 border border-border space-y-1">
+            <div className="text-xs font-bold uppercase tracking-wider text-accent flex items-center gap-1.5">
               <span>🎯</span>
               <span>Target Kemampuan Nyata</span>
             </div>
@@ -69,7 +69,7 @@ export const PedagogicalFrameworkCard: React.FC<PedagogicalFrameworkCardProps> =
 
         {/* WHO & WHEN Pill Highlights */}
         {who_and_when && (
-          <div className="pt-2 border-t border-accent/15 grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs">
+          <div className="pt-2 border-t border-border grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs">
             {who_and_when.social_relations && (
               <div className="flex items-start gap-1.5 text-appText-muted">
                 <Users className="w-3.5 h-3.5 text-accent shrink-0 mt-0.5" />
@@ -78,7 +78,7 @@ export const PedagogicalFrameworkCard: React.FC<PedagogicalFrameworkCardProps> =
             )}
             {who_and_when.situational_context && (
               <div className="flex items-start gap-1.5 text-appText-muted">
-                <BookOpen className="w-3.5 h-3.5 text-blue-400 shrink-0 mt-0.5" />
+                <BookOpen className="w-3.5 h-3.5 text-blue-500 shrink-0 mt-0.5" />
                 <span><strong className="text-appText-bright">Situasi:</strong> {who_and_when.situational_context}</span>
               </div>
             )}
@@ -93,7 +93,7 @@ export const PedagogicalFrameworkCard: React.FC<PedagogicalFrameworkCardProps> =
 
       {/* ── 2. Logika Berpikir: Mengapa Pola Ini Dipelajari Duluan? ─── */}
       {whyOrderText && (
-        <div className="rounded-2xl border border-accent/20 bg-surface overflow-hidden shadow-sm">
+        <div className="rounded-2xl border border-border bg-surface overflow-hidden shadow-xs">
           <button
             type="button"
             onClick={() => setIsWhyOpen(!isWhyOpen)}
@@ -118,7 +118,7 @@ export const PedagogicalFrameworkCard: React.FC<PedagogicalFrameworkCardProps> =
             </div>
           </button>
           {isWhyOpen && (
-            <div className="p-4 sm:p-5 pt-2 border-t border-accent/10 bg-surface-2/60 space-y-2.5 text-xs leading-relaxed animate-fade-in">
+            <div className="p-4 sm:p-5 pt-2 border-t border-border bg-surface-2/60 space-y-2.5 text-xs leading-relaxed animate-fade-in">
               <p className="text-appText">
                 {whyOrderText}
               </p>
@@ -134,7 +134,7 @@ export const PedagogicalFrameworkCard: React.FC<PedagogicalFrameworkCardProps> =
 
       {/* ── 3. Etika & Tata Krama Budaya di Jepang ───────────────────── */}
       {cultural_notes && (
-        <div className="rounded-2xl border border-accent/20 bg-surface overflow-hidden shadow-sm">
+        <div className="rounded-2xl border border-border bg-surface overflow-hidden shadow-xs">
           <button
             type="button"
             onClick={() => setIsCultureOpen(!isCultureOpen)}
@@ -142,7 +142,7 @@ export const PedagogicalFrameworkCard: React.FC<PedagogicalFrameworkCardProps> =
             aria-expanded={isCultureOpen}
           >
             <div className="flex items-center gap-2.5 min-w-0">
-              <span className="p-1 rounded-lg bg-emerald-500/15 text-emerald-400 text-sm shrink-0">
+              <span className="p-1 rounded-lg bg-emerald-500/15 text-emerald-500 text-sm shrink-0">
                 <HeartHandshake className="w-4 h-4" />
               </span>
               <div className="min-w-0">
@@ -160,7 +160,7 @@ export const PedagogicalFrameworkCard: React.FC<PedagogicalFrameworkCardProps> =
           </button>
 
           {isCultureOpen && (
-            <div className="p-4 sm:p-5 pt-2 border-t border-accent/10 bg-surface-2/60 space-y-3 text-xs leading-relaxed animate-fade-in">
+            <div className="p-4 sm:p-5 pt-2 border-t border-border bg-surface-2/60 space-y-3 text-xs leading-relaxed animate-fade-in">
               <p className="text-appText">
                 {cultural_notes.etiquette}
               </p>
@@ -182,7 +182,7 @@ export const PedagogicalFrameworkCard: React.FC<PedagogicalFrameworkCardProps> =
 
       {/* ── 4. Tips Pelafalan Alami untuk Lidah Indonesia ────────────── */}
       {pronunciation_tips && (
-        <div className="rounded-2xl border border-accent/20 bg-surface overflow-hidden shadow-sm">
+        <div className="rounded-2xl border border-border bg-surface overflow-hidden shadow-xs">
           <button
             type="button"
             onClick={() => setIsPronunciationOpen(!isPronunciationOpen)}
@@ -190,7 +190,7 @@ export const PedagogicalFrameworkCard: React.FC<PedagogicalFrameworkCardProps> =
             aria-expanded={isPronunciationOpen}
           >
             <div className="flex items-center gap-2.5 min-w-0">
-              <span className="p-1 rounded-lg bg-blue-500/15 text-blue-400 text-sm shrink-0">
+              <span className="p-1 rounded-lg bg-blue-500/15 text-blue-500 text-sm shrink-0">
                 <Mic2 className="w-4 h-4" />
               </span>
               <div className="min-w-0">
@@ -208,15 +208,15 @@ export const PedagogicalFrameworkCard: React.FC<PedagogicalFrameworkCardProps> =
           </button>
 
           {isPronunciationOpen && (
-            <div className="p-4 sm:p-5 pt-2 border-t border-accent/10 bg-surface-2/60 space-y-2.5 text-xs leading-relaxed animate-fade-in">
-              <div className="p-3 rounded-xl bg-surface border border-accent/15 space-y-1">
+            <div className="p-4 sm:p-5 pt-2 border-t border-border bg-surface-2/60 space-y-2.5 text-xs leading-relaxed animate-fade-in">
+              <div className="p-3 rounded-xl bg-surface border border-border space-y-1">
                 <span className="text-xs font-bold uppercase tracking-wider text-accent block">
                   Ketukan Waktu (Mora):
                 </span>
                 <p className="text-appText">{pronunciation_tips.moraNote}</p>
               </div>
-              <div className="p-3 rounded-xl bg-surface border border-accent/15 space-y-1">
-                <span className="text-xs font-bold uppercase tracking-wider text-blue-400 block">
+              <div className="p-3 rounded-xl bg-surface border border-border space-y-1">
+                <span className="text-xs font-bold uppercase tracking-wider text-blue-500 block">
                   Kunci Pengucapan Alami:
                 </span>
                 <p className="text-appText">{pronunciation_tips.soundTip}</p>

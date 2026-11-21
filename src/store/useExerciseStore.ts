@@ -523,8 +523,8 @@ export const useExerciseStore = create<ExerciseStoreState>((set, get) => ({
 
   retryWrongQuestions: () => {
     const { currentSet, sessionSummary } = get();
-    if (!currentSet || !sessionSummary || sessionSummary.wrongItemIds.length === 0) return;
-    const wrongItems = currentSet.items.filter((it) => sessionSummary.wrongItemIds.includes(it.id));
+    if (!currentSet || !sessionSummary || !sessionSummary.wrongItemIds || sessionSummary.wrongItemIds.length === 0) return;
+    const wrongItems = currentSet.items.filter((it) => it && sessionSummary.wrongItemIds.includes(it.id));
     if (wrongItems.length === 0) return;
 
     set({
@@ -582,7 +582,7 @@ export const useExerciseStore = create<ExerciseStoreState>((set, get) => ({
 
     Object.values(records).forEach((rec) => {
       if (!trackType || rec.trackType === trackType) {
-        rec.wrongItemIds.forEach((id) => mistakesSet.add(id));
+        rec.wrongItemIds?.forEach((id) => mistakesSet.add(id));
       }
     });
 

@@ -49,11 +49,12 @@ assert(
 );
 
 // ---------------------------------------------------------------------
-// Check 3: SenseiPage.tsx (Message Bubble Interactive Lift)
+// Check 3: SenseiPage.tsx (Message Bubble Interactive Layout)
 // ---------------------------------------------------------------------
 assert(
-  senseiPageCode.includes('card-interactive-lift rounded-2xl px-4 py-3 sm:px-5 sm:py-3.5 leading-relaxed shadow-xs'),
-  'SenseiPage applies card-interactive-lift to chat message bubble cards'
+  senseiPageCode.includes('card-interactive-lift rounded-2xl px-4 py-3 sm:px-5 sm:py-3.5 leading-relaxed shadow-xs') ||
+  senseiPageCode.includes('max-w-[88%] sm:max-w-[80%] rounded-xl px-4 py-3 sm:px-5 sm:py-3.5 leading-relaxed shadow-xs'),
+  'SenseiPage applies conversational message bubble layout'
 );
 
 // ---------------------------------------------------------------------

@@ -130,7 +130,7 @@ export const ExplanationStage: React.FC<ExplanationStageProps> = ({
         <div
           role="tablist"
           aria-label="Pilar Pembelajaran Bedah Materi"
-          className="flex items-center gap-1 sm:gap-1.5 p-1 sm:p-1.5 rounded-2xl bg-surface-2 border border-accent/20 overflow-x-auto scrollbar-none w-full max-w-full touch-pan-x shadow-xs"
+          className="flex items-center gap-1 sm:gap-1.5 p-1 sm:p-1.5 rounded-2xl bg-surface border border-border overflow-x-auto scrollbar-none w-full max-w-full touch-pan-x shadow-xs"
         >
           <button
             type="button"
@@ -144,8 +144,8 @@ export const ExplanationStage: React.FC<ExplanationStageProps> = ({
             }}
             className={`shrink-0 sm:flex-1 min-h-[40px] px-2.5 sm:px-3 py-1.5 sm:py-2 rounded-xl text-xs font-bold transition-all flex items-center justify-center gap-1 sm:gap-1.5 whitespace-nowrap active:scale-95 cursor-pointer ${
               activeSubTab === 'all'
-                ? 'bg-accent text-bg shadow-sm font-extrabold'
-                : 'text-appText-muted hover:text-appText-bright hover:bg-surface-3'
+                ? 'bg-accent text-stone-950 shadow-xs font-bold'
+                : 'text-appText-muted hover:text-appText-bright hover:bg-surface-2'
             }`}
           >
             <Sparkles className="w-3.5 h-3.5 sm:w-4 sm:h-4 shrink-0" />
@@ -165,8 +165,8 @@ export const ExplanationStage: React.FC<ExplanationStageProps> = ({
             }}
             className={`shrink-0 sm:flex-1 min-h-[40px] px-2.5 sm:px-3 py-1.5 sm:py-2 rounded-xl text-xs font-bold transition-all flex items-center justify-center gap-1 sm:gap-1.5 whitespace-nowrap active:scale-95 cursor-pointer ${
               activeSubTab === 'grammar'
-                ? 'bg-accent text-bg shadow-sm font-extrabold'
-                : 'text-appText-muted hover:text-appText-bright hover:bg-surface-3'
+                ? 'bg-accent text-stone-950 shadow-xs font-bold'
+                : 'text-appText-muted hover:text-appText-bright hover:bg-surface-2'
             }`}
           >
             <BookOpen className="w-3.5 h-3.5 sm:w-4 sm:h-4 shrink-0" />
@@ -186,8 +186,8 @@ export const ExplanationStage: React.FC<ExplanationStageProps> = ({
             }}
             className={`shrink-0 sm:flex-1 min-h-[40px] px-2.5 sm:px-3 py-1.5 sm:py-2 rounded-xl text-xs font-bold transition-all flex items-center justify-center gap-1 sm:gap-1.5 whitespace-nowrap active:scale-95 cursor-pointer ${
               activeSubTab === 'vocab'
-                ? 'bg-accent text-bg shadow-sm font-extrabold'
-                : 'text-appText-muted hover:text-appText-bright hover:bg-surface-3'
+                ? 'bg-accent text-stone-950 shadow-xs font-bold'
+                : 'text-appText-muted hover:text-appText-bright hover:bg-surface-2'
             }`}
           >
             <Layers className="w-3.5 h-3.5 sm:w-4 sm:h-4 shrink-0" />
@@ -206,8 +206,8 @@ export const ExplanationStage: React.FC<ExplanationStageProps> = ({
             }}
             className={`shrink-0 sm:flex-1 min-h-[40px] px-2.5 sm:px-3 py-1.5 sm:py-2 rounded-xl text-xs font-bold transition-all flex items-center justify-center gap-1 sm:gap-1.5 whitespace-nowrap active:scale-95 cursor-pointer ${
               activeSubTab === 'pitfalls'
-                ? 'bg-accent text-bg shadow-sm font-extrabold'
-                : 'text-appText-muted hover:text-appText-bright hover:bg-surface-3'
+                ? 'bg-accent text-stone-950 shadow-xs font-bold'
+                : 'text-appText-muted hover:text-appText-bright hover:bg-surface-2'
             }`}
           >
             <AlertCircle className="w-3.5 h-3.5 sm:w-4 sm:h-4 shrink-0" />
@@ -243,19 +243,19 @@ export const ExplanationStage: React.FC<ExplanationStageProps> = ({
               </div>
 
               {(!explanations || explanations.length === 0) ? (
-                <div className="py-8 text-center text-appText-muted text-xs bg-surface-2/40 rounded-2xl p-6 border border-accent/15">
+                <div className="py-8 text-center text-appText-muted text-xs bg-surface-2/40 rounded-2xl p-6 border border-border">
                   Penjelasan umum termuat dalam kartu skenario di atas. Silakan lanjut ke kosakata atau latihan.
                 </div>
               ) : (
                 explanations.map((exp, idx) => (
                   <div
                     key={exp.id || idx}
-                    className="p-4 sm:p-6 rounded-3xl bg-surface border border-accent/20 space-y-4 shadow-sm"
+                    className="p-4 sm:p-6 rounded-2xl bg-surface border border-border space-y-4 shadow-xs"
                   >
                     {/* Header Pola */}
                     <div className="flex items-start justify-between gap-2">
                       <div className="space-y-0.5 min-w-0">
-                        <span className="text-xs font-bold uppercase tracking-wider text-accent bg-accent/15 px-2 py-0.5 rounded-md border border-accent/20">
+                        <span className="text-xs font-bold uppercase tracking-wider text-accent bg-accent/15 px-2 py-0.5 rounded-md border border-border">
                           Pola #{idx + 1}
                         </span>
                         <h3 className="text-base sm:text-lg font-bold text-appText-bright pt-1 break-words">
@@ -278,7 +278,7 @@ export const ExplanationStage: React.FC<ExplanationStageProps> = ({
                             structure: exp.formula,
                           })
                         }
-                        className="px-3 py-1.5 rounded-xl bg-amber-500/15 hover:bg-amber-500/25 border border-amber-500/30 text-amber-800 dark:text-amber-300 font-bold text-xs flex items-center gap-1.5 transition-all active:scale-95 shrink-0 shadow-xs"
+                        className="px-3 py-1.5 rounded-xl bg-amber-500/15 hover:bg-amber-500/25 border border-amber-500/30 text-amber-800 dark:text-amber-300 font-bold text-xs flex items-center gap-1.5 transition-all active:scale-95 shrink-0 shadow-xs cursor-pointer"
                         title="Tanya penjelasan detail ke Sensei AI"
                       >
                         <span>🍵</span>
@@ -287,9 +287,9 @@ export const ExplanationStage: React.FC<ExplanationStageProps> = ({
                     </div>
 
                     {/* Rumus Formula */}
-                    <div className="p-3.5 rounded-2xl bg-surface-2 border border-accent/20 font-mono text-xs sm:text-sm text-accent font-bold flex items-center gap-2 shadow-inner">
+                    <div className="p-3.5 rounded-2xl bg-surface-2 border border-border font-mono text-xs sm:text-sm text-accent font-bold flex items-center gap-2 shadow-inner min-w-0 max-w-full overflow-x-auto">
                       <ArrowRight className="w-4 h-4 text-accent-hot shrink-0" />
-                      <span className="break-words">{exp.formula}</span>
+                      <span className="break-words min-w-0">{exp.formula}</span>
                     </div>
 
                     {/* Logika Berpikir di Balik Pola */}
@@ -327,7 +327,7 @@ export const ExplanationStage: React.FC<ExplanationStageProps> = ({
 
                     {/* Variasi Bentuk (Positif, Negatif, Tanya) */}
                     {exp.formVariations && exp.formVariations.length > 0 && (
-                      <div className="space-y-2 pt-2 border-t border-accent/10">
+                      <div className="space-y-2 pt-2 border-t border-border">
                         <div className="text-xs font-bold uppercase tracking-wider text-appText-muted">
                           Variasi Bentuk Kalimat:
                         </div>
@@ -335,7 +335,7 @@ export const ExplanationStage: React.FC<ExplanationStageProps> = ({
                           {exp.formVariations.map((fv, fvIdx) => (
                             <div
                               key={fvIdx}
-                              className="p-3 rounded-xl bg-surface-2 border border-accent/15 space-y-1"
+                              className="p-3 rounded-xl bg-surface-2 border border-border space-y-1"
                             >
                               <span className="text-xs font-bold uppercase tracking-wider text-accent block">
                                 {fv.label}
@@ -354,7 +354,7 @@ export const ExplanationStage: React.FC<ExplanationStageProps> = ({
 
                     {/* Contoh Kalimat Mandiri */}
                     {exp.examples && exp.examples.length > 0 && (
-                      <div className="pt-2 border-t border-accent/10 space-y-2">
+                      <div className="pt-2 border-t border-border space-y-2">
                         <div className="text-xs font-bold uppercase tracking-wider text-appText-muted">
                           Contoh Penggunaan Alami:
                         </div>
@@ -362,7 +362,7 @@ export const ExplanationStage: React.FC<ExplanationStageProps> = ({
                           {exp.examples.map((ex, exIdx) => (
                             <div
                               key={exIdx}
-                              className="p-3 rounded-2xl bg-surface-2/60 border border-accent/10 flex items-start justify-between gap-2"
+                              className="p-3 rounded-2xl bg-surface-2/60 border border-border flex items-start justify-between gap-2"
                             >
                               <div className="space-y-0.5 min-w-0">
                                 <div className="text-sm font-jp font-semibold text-appText-bright break-words">
@@ -395,7 +395,7 @@ export const ExplanationStage: React.FC<ExplanationStageProps> = ({
 
                     {/* Percakapan Tanya Jawab Berpasangan */}
                     {exp.pairedExamples && exp.pairedExamples.length > 0 && (
-                      <div className="pt-2 border-t border-accent/10 space-y-2">
+                      <div className="pt-2 border-t border-border space-y-2">
                         <div className="text-xs font-bold uppercase tracking-wider text-appText-muted flex items-center gap-1.5">
                           <MessageCircle className="w-3.5 h-3.5 text-accent" />
                           <span>Contoh Percakapan Berpasangan (Tanya & Jawab):</span>
@@ -404,7 +404,7 @@ export const ExplanationStage: React.FC<ExplanationStageProps> = ({
                           {exp.pairedExamples.map((pair, pIdx) => (
                             <div
                               key={pIdx}
-                              className="p-3.5 rounded-2xl bg-surface-2 border border-accent/15 space-y-2.5"
+                              className="p-3.5 rounded-2xl bg-surface-2 border border-border space-y-2.5"
                             >
                               {/* Pembicara A (Pertanyaan) */}
                               <div className="flex items-start justify-between gap-2">
@@ -422,7 +422,7 @@ export const ExplanationStage: React.FC<ExplanationStageProps> = ({
                                 <button
                                   type="button"
                                   onClick={() => handlePlayAudio(pair.jpA)}
-                                  className="min-h-[40px] min-w-[40px] p-2 rounded-xl bg-surface border border-accent/20 text-accent shrink-0 flex items-center justify-center active:scale-95"
+                                  className="min-h-[40px] min-w-[40px] p-2 rounded-xl bg-surface border border-border text-accent shrink-0 flex items-center justify-center active:scale-95 cursor-pointer"
                                   title={`Dengarkan ${pair.speakerA}`}
                                 >
                                   <Volume2 className="w-4 h-4" />
@@ -430,7 +430,7 @@ export const ExplanationStage: React.FC<ExplanationStageProps> = ({
                               </div>
 
                               {/* Pembicara B (Respons) */}
-                              <div className="flex items-start justify-between gap-2 pt-2 border-t border-accent/10">
+                              <div className="flex items-start justify-between gap-2 pt-2 border-t border-border">
                                 <div className="space-y-0.5 min-w-0">
                                   <span className="text-xs font-bold text-emerald-600 dark:text-emerald-400">
                                     {pair.speakerB} (Respons):
@@ -445,7 +445,7 @@ export const ExplanationStage: React.FC<ExplanationStageProps> = ({
                                 <button
                                   type="button"
                                   onClick={() => handlePlayAudio(pair.jpB)}
-                                  className="min-h-[40px] min-w-[40px] p-2 rounded-xl bg-surface border border-accent/20 text-emerald-600 dark:text-emerald-400 shrink-0 flex items-center justify-center active:scale-95"
+                                  className="min-h-[40px] min-w-[40px] p-2 rounded-xl bg-surface border border-border text-emerald-600 dark:text-emerald-400 shrink-0 flex items-center justify-center active:scale-95 cursor-pointer"
                                   title={`Dengarkan ${pair.speakerB}`}
                                 >
                                   <Volume2 className="w-4 h-4" />
@@ -494,7 +494,7 @@ export const ExplanationStage: React.FC<ExplanationStageProps> = ({
                     const studioContainer = document.getElementById('lesson-studio-top');
                     if (studioContainer) studioContainer.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
                   }}
-                  className="min-h-[46px] px-5 py-2.5 rounded-2xl bg-surface-2 hover:bg-surface-3 border border-accent/25 text-accent font-bold text-xs flex items-center gap-2 transition-all active:scale-95 shadow-sm"
+                  className="min-h-[46px] px-5 py-2.5 rounded-2xl bg-surface-2 hover:bg-surface-3 border border-border text-accent font-bold text-xs flex items-center gap-2 transition-all active:scale-95 shadow-xs cursor-pointer"
                 >
                   <span>Lanjut: Kosakata Inti ({vocabBreakdown.length} Kata)</span>
                   <ArrowRight className="w-4 h-4 text-accent" />
@@ -505,11 +505,11 @@ export const ExplanationStage: React.FC<ExplanationStageProps> = ({
             {/* Pemisah visual pilar dalam mode Single-Flow Feed ('all') */}
             {activeSubTab === 'all' && (
               <div className="pt-6 pb-2 flex items-center gap-3">
-                <div className="h-px bg-accent/20 flex-1" />
-                <span className="text-xs font-bold text-accent uppercase tracking-wider px-3 py-1 rounded-full bg-surface-2 border border-accent/25 shadow-xs">
+                <div className="h-px bg-border flex-1" />
+                <span className="text-xs font-bold text-accent uppercase tracking-wider px-3 py-1 rounded-full bg-surface-2 border border-border shadow-xs">
                   Pilar 2: Kosakata Inti ({vocabBreakdown.length} Kata)
                 </span>
-                <div className="h-px bg-accent/20 flex-1" />
+                <div className="h-px bg-border flex-1" />
               </div>
             )}
           </div>
@@ -533,7 +533,7 @@ export const ExplanationStage: React.FC<ExplanationStageProps> = ({
             </div>
 
             {(!vocabBreakdown || vocabBreakdown.length === 0) ? (
-              <div className="py-8 text-center text-appText-muted text-xs bg-surface-2/40 rounded-2xl p-6 border border-accent/15">
+              <div className="py-8 text-center text-appText-muted text-xs bg-surface-2/40 rounded-2xl p-6 border border-border">
                 Kosakata pada pelajaran ini terintegrasi penuh dalam penjelasan tata bahasa.
               </div>
             ) : (
@@ -541,7 +541,7 @@ export const ExplanationStage: React.FC<ExplanationStageProps> = ({
                 {vocabBreakdown.map((vb) => (
                   <div
                     key={vb.id}
-                    className="p-4 rounded-2xl bg-surface border border-accent/20 space-y-2.5 shadow-sm hover:border-accent/40 transition-all flex flex-col justify-between"
+                    className="p-4 rounded-2xl bg-surface border border-border space-y-2.5 shadow-xs hover:border-border-hover transition-all flex flex-col justify-between"
                   >
                     <div className="space-y-1.5">
                       <div className="flex items-start justify-between gap-2">
@@ -557,7 +557,7 @@ export const ExplanationStage: React.FC<ExplanationStageProps> = ({
                                   const firstKanji = vb.word.match(/[一-龯]/)?.[0] || vb.word[0];
                                   handleOpenKanji(firstKanji, vb.meaning, vb.reading);
                                 }}
-                                className="min-h-[40px] px-2.5 py-1 rounded-lg bg-surface-2 hover:bg-surface-3 text-appText-muted hover:text-accent border border-accent/20 text-xs font-bold flex items-center gap-1 active:scale-95 transition-colors"
+                                className="min-h-[40px] px-2.5 py-1 rounded-lg bg-surface-2 hover:bg-surface-3 text-appText-muted hover:text-accent border border-border text-xs font-bold flex items-center gap-1 active:scale-95 transition-colors cursor-pointer"
                                 title="Latihan goresan kanji"
                               >
                                 <PenTool className="w-3.5 h-3.5 text-accent" />
@@ -598,7 +598,7 @@ export const ExplanationStage: React.FC<ExplanationStageProps> = ({
                                 meaning_id: vb.meaning,
                               })
                             }
-                            className="min-h-[40px] min-w-[40px] p-2 rounded-xl bg-amber-500/15 hover:bg-amber-500/25 border border-amber-500/30 text-amber-800 dark:text-amber-300 transition-colors flex items-center justify-center active:scale-95"
+                            className="min-h-[40px] min-w-[40px] p-2 rounded-xl bg-amber-500/15 hover:bg-amber-500/25 border border-amber-500/30 text-amber-800 dark:text-amber-300 transition-colors flex items-center justify-center active:scale-95 cursor-pointer"
                             title={`Tanya Sensei tentang kata ${vb.word}`}
                             aria-label={`Tanya Sensei tentang kata ${vb.word}`}
                           >
@@ -608,7 +608,7 @@ export const ExplanationStage: React.FC<ExplanationStageProps> = ({
                           <button
                             type="button"
                             onClick={() => handlePlayAudio(vb.word)}
-                            className="min-h-[40px] min-w-[40px] p-2 rounded-xl bg-surface-2 hover:bg-surface-3 border border-accent/20 text-accent transition-colors flex items-center justify-center active:scale-95"
+                            className="min-h-[40px] min-w-[40px] p-2 rounded-xl bg-surface-2 hover:bg-surface-3 border border-border text-accent transition-colors flex items-center justify-center active:scale-95 cursor-pointer"
                             title={`Dengarkan pelafalan ${vb.word}`}
                             aria-label={`Dengarkan pelafalan ${vb.word}`}
                           >
@@ -641,7 +641,7 @@ export const ExplanationStage: React.FC<ExplanationStageProps> = ({
 
                       <div className="flex flex-wrap items-center gap-1.5 pt-1">
                         {vb.pos && (
-                          <span className="text-xs px-2 py-0.5 rounded-md bg-accent/15 text-accent font-semibold border border-accent/20">
+                          <span className="text-xs px-2 py-0.5 rounded-md bg-accent/15 text-accent font-semibold border border-border">
                             {vb.pos}
                           </span>
                         )}
@@ -664,7 +664,7 @@ export const ExplanationStage: React.FC<ExplanationStageProps> = ({
                     </div>
 
                     {vb.exampleSentence && (
-                      <div className="pt-2 border-t border-accent/10 space-y-1 bg-surface-2/40 p-2.5 rounded-xl">
+                      <div className="pt-2 border-t border-border space-y-1 bg-surface-2/40 p-2.5 rounded-xl">
                         <div className="flex items-center justify-between gap-2">
                           <span className="text-xs font-bold uppercase tracking-wider text-appText-muted">
                             Contoh Pemakaian:
@@ -672,7 +672,7 @@ export const ExplanationStage: React.FC<ExplanationStageProps> = ({
                           <button
                             type="button"
                             onClick={() => handlePlayAudio(vb.exampleSentence!.jp)}
-                            className="text-accent hover:text-accent-hot text-xs flex items-center gap-1.5 min-h-[40px] px-2.5 py-1 rounded-xl bg-surface-2 hover:bg-surface-3 border border-accent/15 active:scale-95 transition-all"
+                            className="text-accent hover:text-accent-hot text-xs flex items-center gap-1.5 min-h-[40px] px-2.5 py-1 rounded-xl bg-surface-2 hover:bg-surface-3 border border-border active:scale-95 transition-all cursor-pointer"
                             title="Dengarkan contoh kalimat"
                           >
                             <Volume2 className="w-3.5 h-3.5" />
@@ -698,7 +698,7 @@ export const ExplanationStage: React.FC<ExplanationStageProps> = ({
             )}
 
             {/* Peralatan Belajar Terkait (Contextual Tools) */}
-            <div className="p-4 sm:p-5 rounded-2xl bg-surface border border-accent/20 space-y-3 shadow-sm">
+            <div className="p-4 sm:p-5 rounded-2xl bg-surface border border-border space-y-3 shadow-xs">
               <div className="flex items-center justify-between gap-2">
                 <div className="flex items-center gap-2">
                   <span className="text-base">🧰</span>
@@ -709,7 +709,7 @@ export const ExplanationStage: React.FC<ExplanationStageProps> = ({
                 <button
                   type="button"
                   onClick={() => openModal('toolbox')}
-                  className="text-xs font-bold text-accent hover:underline flex items-center gap-1 active:scale-95"
+                  className="text-xs font-bold text-accent hover:underline flex items-center gap-1 active:scale-95 cursor-pointer"
                 >
                   <span>Kotak Peralatan</span>
                   <ArrowRight className="w-3 h-3" />
@@ -721,7 +721,7 @@ export const ExplanationStage: React.FC<ExplanationStageProps> = ({
                   <button
                     type="button"
                     onClick={() => openModal('counters')}
-                    className="min-h-[40px] px-3.5 py-2 rounded-xl bg-amber-500/15 hover:bg-amber-500/25 border border-amber-500/30 text-amber-800 dark:text-amber-300 text-xs font-bold flex items-center gap-2 transition-all active:scale-95 shadow-sm"
+                    className="min-h-[40px] px-3.5 py-2 rounded-xl bg-amber-500/15 hover:bg-amber-500/25 border border-amber-500/30 text-amber-800 dark:text-amber-300 text-xs font-bold flex items-center gap-2 transition-all active:scale-95 shadow-xs cursor-pointer"
                     title="Buka Pelatih Kata Bantu Bilangan"
                   >
                     <span className="text-sm">🔢</span>
@@ -733,7 +733,7 @@ export const ExplanationStage: React.FC<ExplanationStageProps> = ({
                   <button
                     type="button"
                     onClick={() => openModal('keigo')}
-                    className="min-h-[40px] px-3.5 py-2 rounded-xl bg-indigo-500/15 hover:bg-indigo-500/25 border border-indigo-500/30 text-indigo-700 dark:text-indigo-300 text-xs font-bold flex items-center gap-2 transition-all active:scale-95 shadow-sm"
+                    className="min-h-[40px] px-3.5 py-2 rounded-xl bg-indigo-500/15 hover:bg-indigo-500/25 border border-indigo-500/30 text-indigo-700 dark:text-indigo-300 text-xs font-bold flex items-center gap-2 transition-all active:scale-95 shadow-xs cursor-pointer"
                     title="Buka Pelatih Keigo & Etiket Kerja"
                   >
                     <span className="text-sm">💼</span>
@@ -744,7 +744,7 @@ export const ExplanationStage: React.FC<ExplanationStageProps> = ({
                 <button
                   type="button"
                   onClick={() => openModal('pitch')}
-                  className="min-h-[40px] px-3.5 py-2 rounded-xl bg-purple-500/15 hover:bg-purple-500/25 border border-purple-500/30 text-purple-700 dark:text-purple-300 text-xs font-bold flex items-center gap-2 transition-all active:scale-95 shadow-sm"
+                  className="min-h-[40px] px-3.5 py-2 rounded-xl bg-purple-500/15 hover:bg-purple-500/25 border border-purple-500/30 text-purple-700 dark:text-purple-300 text-xs font-bold flex items-center gap-2 transition-all active:scale-95 shadow-xs cursor-pointer"
                   title="Buka Studio Pitch Accent"
                 >
                   <span className="text-sm">🗣️</span>
@@ -763,7 +763,7 @@ export const ExplanationStage: React.FC<ExplanationStageProps> = ({
                     const studioContainer = document.getElementById('lesson-studio-top');
                     if (studioContainer) studioContainer.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
                   }}
-                  className="w-full sm:w-auto min-h-[44px] px-4 py-2 text-xs font-bold text-appText-muted hover:text-accent flex items-center justify-center gap-1.5 active:scale-95"
+                  className="w-full sm:w-auto min-h-[44px] px-4 py-2 text-xs font-bold text-appText-muted hover:text-accent flex items-center justify-center gap-1.5 active:scale-95 cursor-pointer"
                 >
                   <ArrowLeft className="w-4 h-4" />
                   <span>Kembali ke Pola Tata Bahasa</span>
@@ -776,7 +776,7 @@ export const ExplanationStage: React.FC<ExplanationStageProps> = ({
                     const studioContainer = document.getElementById('lesson-studio-top');
                     if (studioContainer) studioContainer.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
                   }}
-                  className="w-full sm:w-auto min-h-[46px] px-5 py-2.5 rounded-2xl bg-surface-2 hover:bg-surface-3 border border-accent/25 text-accent font-bold text-xs flex items-center justify-center gap-2 transition-all active:scale-95 shadow-sm"
+                  className="w-full sm:w-auto min-h-[46px] px-5 py-2.5 rounded-xl bg-surface-2 hover:bg-surface-3 border border-border text-accent font-bold text-xs flex items-center justify-center gap-2 transition-all active:scale-95 shadow-xs cursor-pointer"
                 >
                   <span>Lanjut: Jebakan & Tips ({activePitfalls.length})</span>
                   <ArrowRight className="w-4 h-4 text-accent" />
@@ -813,7 +813,7 @@ export const ExplanationStage: React.FC<ExplanationStageProps> = ({
             </div>
 
             {(!activePitfalls || activePitfalls.length === 0) ? (
-              <div className="py-8 text-center text-appText-muted text-xs bg-surface-2/40 rounded-2xl p-6 border border-accent/15">
+              <div className="py-8 text-center text-appText-muted text-xs bg-surface-2/40 rounded-2xl p-6 border border-border">
                 Tidak ada jebakan leksikal khusus pada pelajaran ini. Kamu siap melangkah ke latihan kuis!
               </div>
             ) : (
@@ -821,7 +821,7 @@ export const ExplanationStage: React.FC<ExplanationStageProps> = ({
                 {activePitfalls.map((pf, pfIdx) => (
                   <div
                     key={pfIdx}
-                    className="p-4 sm:p-5 rounded-2xl bg-surface border border-red-500/20 space-y-2.5 shadow-sm"
+                    className="p-4 sm:p-5 rounded-2xl bg-surface border border-red-500/20 space-y-2.5 shadow-xs"
                   >
                     <div className="font-bold text-xs sm:text-sm text-red-700 dark:text-red-300 flex items-center gap-1.5">
                       <span>⚡</span>
@@ -855,14 +855,14 @@ export const ExplanationStage: React.FC<ExplanationStageProps> = ({
 
             {/* Final Milestone CTA to Stage 3 (Drills) */}
             {onCompleteStage && (
-              <div className="pt-6 border-t border-accent/20 flex flex-col sm:flex-row items-center justify-between gap-3">
+              <div className="pt-6 border-t border-border flex flex-col sm:flex-row items-center justify-between gap-3">
                 <div className="text-xs text-appText-muted">
                   Sudah memahami rumus, kosakata, dan jebakannya? Latih pemahamanmu dengan kuis interaktif.
                 </div>
                 <button
                   type="button"
                   onClick={onCompleteStage}
-                  className="w-full sm:w-auto min-h-[46px] px-6 py-2.5 rounded-2xl bg-accent hover:bg-accent-hot text-bg font-extrabold text-xs uppercase tracking-wider shadow-lg flex items-center justify-center gap-2 transition-all active:scale-95 cursor-pointer"
+                  className="w-full sm:w-auto min-h-[46px] px-6 py-2.5 rounded-xl bg-accent hover:bg-accent-hot text-stone-950 font-bold text-xs uppercase tracking-wider shadow-xs flex items-center justify-center gap-2 transition-all active:scale-95 cursor-pointer"
                 >
                   <span>Mulai Cek Pemahaman (Kuis)</span>
                   <span aria-hidden="true">→</span>
@@ -889,7 +889,7 @@ export const ExplanationStage: React.FC<ExplanationStageProps> = ({
             document.documentElement.scrollTop = 0;
             document.body.scrollTop = 0;
           }}
-          className="fixed bottom-[calc(1.5rem+env(safe-area-inset-bottom))] right-4 z-30 flex items-center gap-1.5 px-3.5 py-2 rounded-full bg-surface-2/95 backdrop-blur-md border border-accent/30 text-xs font-bold text-appText-bright shadow-lg hover:bg-surface-3 transition-all active:scale-95 cursor-pointer animate-in fade-in"
+          className="fixed bottom-[calc(1.5rem+env(safe-area-inset-bottom))] right-4 z-30 flex items-center gap-1.5 px-3.5 py-2 rounded-full bg-surface/95 backdrop-blur-md border border-border text-xs font-bold text-appText-bright shadow-md hover:bg-surface-2 transition-all active:scale-95 cursor-pointer animate-in fade-in"
           aria-label="Kembali ke atas materi"
         >
           <ChevronUp className="w-4 h-4 text-accent" />
