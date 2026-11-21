@@ -117,6 +117,29 @@ CREATE TABLE IF NOT EXISTS public.ai_promotion_queue (
   promotion_target    TEXT  -- e.g. 'public/data/quiz-bank/n4.js'
 );
 
+-- Ensure columns exist if table was previously created in an older schema
+ALTER TABLE public.ai_promotion_queue ADD COLUMN IF NOT EXISTS status TEXT NOT NULL DEFAULT 'pending';
+ALTER TABLE public.ai_promotion_queue ADD COLUMN IF NOT EXISTS serve_count INTEGER DEFAULT 0;
+ALTER TABLE public.ai_promotion_queue ADD COLUMN IF NOT EXISTS item_type TEXT NOT NULL DEFAULT 'quiz_question';
+ALTER TABLE public.ai_promotion_queue ADD COLUMN IF NOT EXISTS first_seen_at TIMESTAMPTZ DEFAULT NOW();
+
+DO $$
+BEGIN
+  IF NOT EXISTS (
+    SELECT 1 FROM information_schema.columns 
+    WHERE table_schema = 'public' 
+      AND table_name = 'ai_promotion_queue' 
+      AND column_name = 'approval_ratio'
+  ) THEN
+    ALTER TABLE public.ai_promotion_queue 
+      ADD COLUMN approval_ratio REAL GENERATED ALWAYS AS (
+        CASE WHEN (thumbs_up + thumbs_down) = 0 THEN 0
+             ELSE thumbs_up::REAL / (thumbs_up + thumbs_down)::REAL
+        END
+      ) STORED;
+  END IF;
+END $$;
+
 CREATE INDEX IF NOT EXISTS idx_promo_status    ON public.ai_promotion_queue(status);
 CREATE INDEX IF NOT EXISTS idx_promo_ratio     ON public.ai_promotion_queue(approval_ratio DESC);
 CREATE INDEX IF NOT EXISTS idx_promo_serves    ON public.ai_promotion_queue(serve_count DESC);
