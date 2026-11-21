@@ -37,7 +37,8 @@ pk-nugget-nihongo/
 
 # Build outputs
 dist/
-.playwright-cli/
+.playwright-cli/*
+!.playwright-cli/exhaustive-baseline-ledger.json
 *.log
 stuff from me Nugget-san/
 audit-*.png

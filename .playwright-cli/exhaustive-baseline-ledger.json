@@ -1,0 +1,840 @@
+{
+  "timestamp": "2026-11-21T23:11:57.651Z",
+  "baseUrl": "http://127.0.0.1:4173",
+  "viewports": {
+    "iphone-se": {
+      "label": "iPhone SE (375x667)",
+      "pages": {
+        "home": {
+          "overflow": 0,
+          "totalCards": 9,
+          "nestedCardsCount": 0,
+          "smallTargetsCount": 0,
+          "smallTargetsSamples": [],
+          "truncatedCount": 0,
+          "truncatedSamples": [],
+          "pillsCount": 7,
+          "pillsSamples": [
+            "4 Pilar",
+            "Masuk",
+            "Mode Tamu",
+            "🌱 Langkah Pertama (0/50 ",
+            "Kebijaksanaan",
+            "N5"
+          ],
+          "h1s": [
+            "Selamat Belajar 🍙"
+          ],
+          "h2s": [],
+          "scrollHeight": 3062,
+          "screenshot": ".playwright-cli\\screenshots\\baseline\\iphone-se\\page-home.png"
+        },
+        "kebun": {
+          "overflow": 0,
+          "totalCards": 16,
+          "nestedCardsCount": 0,
+          "smallTargetsCount": 0,
+          "smallTargetsSamples": [],
+          "truncatedCount": 0,
+          "truncatedSamples": [],
+          "pillsCount": 15,
+          "pillsSamples": [
+            "4 Pilar",
+            "Masuk",
+            "Mode Tamu",
+            "Algoritma Free Spaced Rep",
+            "Aktif",
+            "Pemula"
+          ],
+          "h1s": [
+            "Pusat Retensi & Kebun Memori"
+          ],
+          "h2s": [
+            "Retensi Aktif: — (0 Kartu) Daya Ingat",
+            "Kebun Kata & Stok Air · 漢字の庭",
+            "Latihan Tambahan & Evaluasi (Opsional)"
+          ],
+          "scrollHeight": 4451,
+          "screenshot": ".playwright-cli\\screenshots\\baseline\\iphone-se\\page-kebun.png"
+        },
+        "materi": {
+          "overflow": 0,
+          "totalCards": 10,
+          "nestedCardsCount": 0,
+          "smallTargetsCount": 0,
+          "smallTargetsSamples": [],
+          "truncatedCount": 0,
+          "truncatedSamples": [],
+          "pillsCount": 10,
+          "pillsSamples": [
+            "4 Pilar",
+            "Masuk",
+            "Mode Tamu",
+            "🥋 Sasana Praktik Mandiri",
+            "Kanji Canvas & SVG",
+            "3D Flip · FSRS"
+          ],
+          "h1s": [
+            "Dojo (Sasana Latihan & Ujian) · 道場・試験センター"
+          ],
+          "h2s": [
+            "Pusat Latihan & Drill Refleks (N5)"
+          ],
+          "scrollHeight": 2402,
+          "screenshot": ".playwright-cli\\screenshots\\baseline\\iphone-se\\page-materi.png"
+        },
+        "quiz": {
+          "overflow": 0,
+          "totalCards": 10,
+          "nestedCardsCount": 0,
+          "smallTargetsCount": 0,
+          "smallTargetsSamples": [],
+          "truncatedCount": 0,
+          "truncatedSamples": [],
+          "pillsCount": 10,
+          "pillsSamples": [
+            "4 Pilar",
+            "Masuk",
+            "Mode Tamu",
+            "🥋 Sasana Praktik Mandiri",
+            "Kanji Canvas & SVG",
+            "3D Flip · FSRS"
+          ],
+          "h1s": [
+            "Dojo (Sasana Latihan & Ujian) · 道場・試験センター"
+          ],
+          "h2s": [
+            "Pusat Latihan & Drill Refleks (N5)"
+          ],
+          "scrollHeight": 2402,
+          "screenshot": ".playwright-cli\\screenshots\\baseline\\iphone-se\\page-quiz.png"
+        },
+        "study": {
+          "overflow": 0,
+          "totalCards": 3,
+          "nestedCardsCount": 0,
+          "smallTargetsCount": 0,
+          "smallTargetsSamples": [],
+          "truncatedCount": 0,
+          "truncatedSamples": [],
+          "pillsCount": 0,
+          "pillsSamples": [],
+          "h1s": [
+            "Nama & Identitas Pokok"
+          ],
+          "h2s": [],
+          "scrollHeight": 2500,
+          "screenshot": ".playwright-cli\\screenshots\\baseline\\iphone-se\\page-study.png"
+        },
+        "sensei": {
+          "overflow": 0,
+          "totalCards": 6,
+          "nestedCardsCount": 0,
+          "smallTargetsCount": 0,
+          "smallTargetsSamples": [],
+          "truncatedCount": 0,
+          "truncatedSamples": [],
+          "pillsCount": 4,
+          "pillsSamples": [
+            "4 Pilar",
+            "Masuk",
+            "Mode Tamu",
+            "AI Tutor Siap"
+          ],
+          "h1s": [
+            "Sensei Nugget"
+          ],
+          "h2s": [],
+          "scrollHeight": 1009,
+          "screenshot": ".playwright-cli\\screenshots\\baseline\\iphone-se\\page-sensei.png"
+        },
+        "settings": {
+          "overflow": 0,
+          "totalCards": 9,
+          "nestedCardsCount": 0,
+          "smallTargetsCount": 0,
+          "smallTargetsSamples": [],
+          "truncatedCount": 0,
+          "truncatedSamples": [],
+          "pillsCount": 8,
+          "pillsSamples": [
+            "4 Pilar",
+            "Masuk",
+            "Mode Tamu",
+            "Mode Lokal",
+            "Lv. 1",
+            "Akselerasi"
+          ],
+          "h1s": [
+            "Profil & Pengaturan"
+          ],
+          "h2s": [
+            "Pembelajar Nugget",
+            "Target XP Harian (Komitmen Belajar)",
+            "Rapor Kemahiran Visual (Visual Learner Mastery Report)",
+            "Lencana & Pencapaian Prestasi (Milestone Badges)"
+          ],
+          "scrollHeight": 7304,
+          "screenshot": ".playwright-cli\\screenshots\\baseline\\iphone-se\\page-settings.png"
+        },
+        "choukai": {
+          "overflow": 0,
+          "totalCards": 3,
+          "nestedCardsCount": 0,
+          "smallTargetsCount": 0,
+          "smallTargetsSamples": [],
+          "truncatedCount": 0,
+          "truncatedSamples": [],
+          "pillsCount": 3,
+          "pillsSamples": [
+            "4 Pilar",
+            "Masuk",
+            "Mode Tamu"
+          ],
+          "h1s": [],
+          "h2s": [],
+          "scrollHeight": 1608,
+          "screenshot": ".playwright-cli\\screenshots\\baseline\\iphone-se\\page-choukai.png"
+        },
+        "about": {
+          "overflow": 0,
+          "totalCards": 11,
+          "nestedCardsCount": 0,
+          "smallTargetsCount": 0,
+          "smallTargetsSamples": [],
+          "truncatedCount": 0,
+          "truncatedSamples": [],
+          "pillsCount": 5,
+          "pillsSamples": [
+            "4 Pilar",
+            "Masuk",
+            "Mode Tamu",
+            "Nugget Nihongo · v24.2.2 ",
+            "Segera Hadir"
+          ],
+          "h1s": [
+            "Tentang Nugget Nihongo"
+          ],
+          "h2s": [
+            "Pertanyaan yang Sering Diajukan",
+            "Cakupan Kurikulum & Data Terverifikasi",
+            "Dirancang Khusus untuk Pembelajar Indonesia",
+            "Pusat Bantuan & Komunitas Pemelajar"
+          ],
+          "scrollHeight": 6453,
+          "screenshot": ".playwright-cli\\screenshots\\baseline\\iphone-se\\page-about.png"
+        },
+        "methodology": {
+          "overflow": 0,
+          "totalCards": 20,
+          "nestedCardsCount": 0,
+          "smallTargetsCount": 0,
+          "smallTargetsSamples": [],
+          "truncatedCount": 0,
+          "truncatedSamples": [],
+          "pillsCount": 5,
+          "pillsSamples": [
+            "4 Pilar",
+            "Masuk",
+            "Mode Tamu",
+            "Ye et al. (2022) · Target",
+            "200 Personas Dataset"
+          ],
+          "h1s": [
+            "Mengapa Cara Belajar di Nugget Nihongo Berbeda?"
+          ],
+          "h2s": [
+            "6 Kerangka Narasi Utama (The Narrative Arc)",
+            "Resolusi Konflik Teoretis (CONF-01 s.d. CONF-04)",
+            "Simulasi Interaktif Retensi Memori FSRS v4.5",
+            "Validasi Lapangan: Matriks 200 Persona Indonesia"
+          ],
+          "scrollHeight": 8075,
+          "screenshot": ".playwright-cli\\screenshots\\baseline\\iphone-se\\page-methodology.png"
+        }
+      },
+      "interactions": {
+        "track_picker_modal": {
+          "status": "SUCCESS",
+          "modalVisible": true
+        },
+        "home_unit_toggle": {
+          "status": "SUCCESS"
+        },
+        "kebun_tab_switch": {
+          "status": "SUCCESS"
+        },
+        "dojo_pillars": {
+          "status": "SUCCESS"
+        },
+        "sensei_chat": {
+          "status": "SUCCESS"
+        },
+        "settings_tabs": {
+          "status": "SUCCESS"
+        },
+        "global_search_modal": {
+          "status": "SUCCESS"
+        }
+      },
+      "consoleErrors": []
+    },
+    "android-390": {
+      "label": "Modern Mobile (390x844)",
+      "pages": {
+        "home": {
+          "overflow": 0,
+          "totalCards": 9,
+          "nestedCardsCount": 0,
+          "smallTargetsCount": 0,
+          "smallTargetsSamples": [],
+          "truncatedCount": 0,
+          "truncatedSamples": [],
+          "pillsCount": 7,
+          "pillsSamples": [
+            "4 Pilar",
+            "Masuk",
+            "Mode Tamu",
+            "🌱 Langkah Pertama (0/50 ",
+            "Kebijaksanaan",
+            "N5"
+          ],
+          "h1s": [
+            "Selamat Belajar 🍙"
+          ],
+          "h2s": [],
+          "scrollHeight": 3066,
+          "screenshot": ".playwright-cli\\screenshots\\baseline\\android-390\\page-home.png"
+        },
+        "kebun": {
+          "overflow": 0,
+          "totalCards": 16,
+          "nestedCardsCount": 0,
+          "smallTargetsCount": 0,
+          "smallTargetsSamples": [],
+          "truncatedCount": 0,
+          "truncatedSamples": [],
+          "pillsCount": 15,
+          "pillsSamples": [
+            "4 Pilar",
+            "Masuk",
+            "Mode Tamu",
+            "Algoritma Free Spaced Rep",
+            "Aktif",
+            "Pemula"
+          ],
+          "h1s": [
+            "Pusat Retensi & Kebun Memori"
+          ],
+          "h2s": [
+            "Retensi Aktif: — (0 Kartu) Daya Ingat",
+            "Kebun Kata & Stok Air · 漢字の庭",
+            "Latihan Tambahan & Evaluasi (Opsional)"
+          ],
+          "scrollHeight": 4417,
+          "screenshot": ".playwright-cli\\screenshots\\baseline\\android-390\\page-kebun.png"
+        },
+        "materi": {
+          "overflow": 0,
+          "totalCards": 10,
+          "nestedCardsCount": 0,
+          "smallTargetsCount": 0,
+          "smallTargetsSamples": [],
+          "truncatedCount": 0,
+          "truncatedSamples": [],
+          "pillsCount": 10,
+          "pillsSamples": [
+            "4 Pilar",
+            "Masuk",
+            "Mode Tamu",
+            "🥋 Sasana Praktik Mandiri",
+            "Kanji Canvas & SVG",
+            "3D Flip · FSRS"
+          ],
+          "h1s": [
+            "Dojo (Sasana Latihan & Ujian) · 道場・試験センター"
+          ],
+          "h2s": [
+            "Pusat Latihan & Drill Refleks (N5)"
+          ],
+          "scrollHeight": 2357,
+          "screenshot": ".playwright-cli\\screenshots\\baseline\\android-390\\page-materi.png"
+        },
+        "quiz": {
+          "overflow": 0,
+          "totalCards": 10,
+          "nestedCardsCount": 0,
+          "smallTargetsCount": 0,
+          "smallTargetsSamples": [],
+          "truncatedCount": 0,
+          "truncatedSamples": [],
+          "pillsCount": 10,
+          "pillsSamples": [
+            "4 Pilar",
+            "Masuk",
+            "Mode Tamu",
+            "🥋 Sasana Praktik Mandiri",
+            "Kanji Canvas & SVG",
+            "3D Flip · FSRS"
+          ],
+          "h1s": [
+            "Dojo (Sasana Latihan & Ujian) · 道場・試験センター"
+          ],
+          "h2s": [
+            "Pusat Latihan & Drill Refleks (N5)"
+          ],
+          "scrollHeight": 2357,
+          "screenshot": ".playwright-cli\\screenshots\\baseline\\android-390\\page-quiz.png"
+        },
+        "study": {
+          "overflow": 0,
+          "totalCards": 3,
+          "nestedCardsCount": 0,
+          "smallTargetsCount": 0,
+          "smallTargetsSamples": [],
+          "truncatedCount": 0,
+          "truncatedSamples": [],
+          "pillsCount": 0,
+          "pillsSamples": [],
+          "h1s": [
+            "Nama & Identitas Pokok"
+          ],
+          "h2s": [],
+          "scrollHeight": 2455,
+          "screenshot": ".playwright-cli\\screenshots\\baseline\\android-390\\page-study.png"
+        },
+        "sensei": {
+          "overflow": 0,
+          "totalCards": 6,
+          "nestedCardsCount": 0,
+          "smallTargetsCount": 0,
+          "smallTargetsSamples": [],
+          "truncatedCount": 0,
+          "truncatedSamples": [],
+          "pillsCount": 4,
+          "pillsSamples": [
+            "4 Pilar",
+            "Masuk",
+            "Mode Tamu",
+            "AI Tutor Siap"
+          ],
+          "h1s": [
+            "Sensei Nugget"
+          ],
+          "h2s": [],
+          "scrollHeight": 1009,
+          "screenshot": ".playwright-cli\\screenshots\\baseline\\android-390\\page-sensei.png"
+        },
+        "settings": {
+          "overflow": 0,
+          "totalCards": 9,
+          "nestedCardsCount": 0,
+          "smallTargetsCount": 0,
+          "smallTargetsSamples": [],
+          "truncatedCount": 0,
+          "truncatedSamples": [],
+          "pillsCount": 8,
+          "pillsSamples": [
+            "4 Pilar",
+            "Masuk",
+            "Mode Tamu",
+            "Mode Lokal",
+            "Lv. 1",
+            "Akselerasi"
+          ],
+          "h1s": [
+            "Profil & Pengaturan"
+          ],
+          "h2s": [
+            "Pembelajar Nugget",
+            "Target XP Harian (Komitmen Belajar)",
+            "Rapor Kemahiran Visual (Visual Learner Mastery Report)",
+            "Lencana & Pencapaian Prestasi (Milestone Badges)"
+          ],
+          "scrollHeight": 7115,
+          "screenshot": ".playwright-cli\\screenshots\\baseline\\android-390\\page-settings.png"
+        },
+        "choukai": {
+          "overflow": 0,
+          "totalCards": 3,
+          "nestedCardsCount": 0,
+          "smallTargetsCount": 0,
+          "smallTargetsSamples": [],
+          "truncatedCount": 0,
+          "truncatedSamples": [],
+          "pillsCount": 4,
+          "pillsSamples": [
+            "4 Pilar",
+            "Masuk",
+            "Mode Tamu",
+            "JFT-Basic CBT Simulator"
+          ],
+          "h1s": [],
+          "h2s": [],
+          "scrollHeight": 1611,
+          "screenshot": ".playwright-cli\\screenshots\\baseline\\android-390\\page-choukai.png"
+        },
+        "about": {
+          "overflow": 0,
+          "totalCards": 11,
+          "nestedCardsCount": 0,
+          "smallTargetsCount": 0,
+          "smallTargetsSamples": [],
+          "truncatedCount": 0,
+          "truncatedSamples": [],
+          "pillsCount": 5,
+          "pillsSamples": [
+            "4 Pilar",
+            "Masuk",
+            "Mode Tamu",
+            "Nugget Nihongo · v24.2.2 ",
+            "Segera Hadir"
+          ],
+          "h1s": [
+            "Tentang Nugget Nihongo"
+          ],
+          "h2s": [
+            "Pertanyaan yang Sering Diajukan",
+            "Cakupan Kurikulum & Data Terverifikasi",
+            "Dirancang Khusus untuk Pembelajar Indonesia",
+            "Pusat Bantuan & Komunitas Pemelajar"
+          ],
+          "scrollHeight": 6195,
+          "screenshot": ".playwright-cli\\screenshots\\baseline\\android-390\\page-about.png"
+        },
+        "methodology": {
+          "overflow": 0,
+          "totalCards": 20,
+          "nestedCardsCount": 0,
+          "smallTargetsCount": 0,
+          "smallTargetsSamples": [],
+          "truncatedCount": 0,
+          "truncatedSamples": [],
+          "pillsCount": 6,
+          "pillsSamples": [
+            "4 Pilar",
+            "Masuk",
+            "Mode Tamu",
+            "Corpus v30 Canonical",
+            "Ye et al. (2022) · Target",
+            "200 Personas Dataset"
+          ],
+          "h1s": [
+            "Mengapa Cara Belajar di Nugget Nihongo Berbeda?"
+          ],
+          "h2s": [
+            "6 Kerangka Narasi Utama (The Narrative Arc)",
+            "Resolusi Konflik Teoretis (CONF-01 s.d. CONF-04)",
+            "Simulasi Interaktif Retensi Memori FSRS v4.5",
+            "Validasi Lapangan: Matriks 200 Persona Indonesia"
+          ],
+          "scrollHeight": 7791,
+          "screenshot": ".playwright-cli\\screenshots\\baseline\\android-390\\page-methodology.png"
+        }
+      },
+      "interactions": {
+        "track_picker_modal": {
+          "status": "SUCCESS",
+          "modalVisible": true
+        },
+        "home_unit_toggle": {
+          "status": "SUCCESS"
+        },
+        "kebun_tab_switch": {
+          "status": "SUCCESS"
+        },
+        "dojo_pillars": {
+          "status": "SUCCESS"
+        },
+        "sensei_chat": {
+          "status": "SUCCESS"
+        },
+        "settings_tabs": {
+          "status": "SUCCESS"
+        },
+        "global_search_modal": {
+          "status": "SUCCESS"
+        }
+      },
+      "consoleErrors": []
+    },
+    "desktop": {
+      "label": "Desktop Wide (1440x900)",
+      "pages": {
+        "home": {
+          "overflow": 0,
+          "totalCards": 9,
+          "nestedCardsCount": 0,
+          "smallTargetsCount": 0,
+          "smallTargetsSamples": [],
+          "truncatedCount": 0,
+          "truncatedSamples": [],
+          "pillsCount": 6,
+          "pillsSamples": [
+            "Mode Tamu",
+            "🌱 Langkah Pertama (0/50 ",
+            "Kebijaksanaan",
+            "N5",
+            "Target Berikutnya",
+            "JLPT N5"
+          ],
+          "h1s": [
+            "Selamat Belajar 🍙"
+          ],
+          "h2s": [],
+          "scrollHeight": 2133,
+          "screenshot": ".playwright-cli\\screenshots\\baseline\\desktop\\page-home.png"
+        },
+        "kebun": {
+          "overflow": -6,
+          "totalCards": 16,
+          "nestedCardsCount": 0,
+          "smallTargetsCount": 0,
+          "smallTargetsSamples": [],
+          "truncatedCount": 0,
+          "truncatedSamples": [],
+          "pillsCount": 14,
+          "pillsSamples": [
+            "Mode Tamu",
+            "Algoritma Free Spaced Rep",
+            "Aktif",
+            "Pemula",
+            "0/8 Mekar",
+            "0%"
+          ],
+          "h1s": [
+            "Pusat Retensi & Kebun Memori"
+          ],
+          "h2s": [
+            "Retensi Aktif: — (0 Kartu) Daya Ingat",
+            "Kebun Kata & Stok Air · 漢字の庭",
+            "Latihan Tambahan & Evaluasi (Opsional)"
+          ],
+          "scrollHeight": 2413,
+          "screenshot": ".playwright-cli\\screenshots\\baseline\\desktop\\page-kebun.png"
+        },
+        "materi": {
+          "overflow": -6,
+          "totalCards": 10,
+          "nestedCardsCount": 0,
+          "smallTargetsCount": 0,
+          "smallTargetsSamples": [],
+          "truncatedCount": 0,
+          "truncatedSamples": [],
+          "pillsCount": 8,
+          "pillsSamples": [
+            "Mode Tamu",
+            "🥋 Sasana Praktik Mandiri",
+            "Kanji Canvas & SVG",
+            "3D Flip · FSRS",
+            "Refleks Cepat",
+            "Pola Bintang JLPT"
+          ],
+          "h1s": [
+            "Dojo (Sasana Latihan & Ujian) · 道場・試験センター"
+          ],
+          "h2s": [
+            "Pusat Latihan & Drill Refleks (N5)"
+          ],
+          "scrollHeight": 1080,
+          "screenshot": ".playwright-cli\\screenshots\\baseline\\desktop\\page-materi.png"
+        },
+        "quiz": {
+          "overflow": -6,
+          "totalCards": 10,
+          "nestedCardsCount": 0,
+          "smallTargetsCount": 0,
+          "smallTargetsSamples": [],
+          "truncatedCount": 0,
+          "truncatedSamples": [],
+          "pillsCount": 8,
+          "pillsSamples": [
+            "Mode Tamu",
+            "🥋 Sasana Praktik Mandiri",
+            "Kanji Canvas & SVG",
+            "3D Flip · FSRS",
+            "Refleks Cepat",
+            "Pola Bintang JLPT"
+          ],
+          "h1s": [
+            "Dojo (Sasana Latihan & Ujian) · 道場・試験センター"
+          ],
+          "h2s": [
+            "Pusat Latihan & Drill Refleks (N5)"
+          ],
+          "scrollHeight": 1080,
+          "screenshot": ".playwright-cli\\screenshots\\baseline\\desktop\\page-quiz.png"
+        },
+        "study": {
+          "overflow": -6,
+          "totalCards": 3,
+          "nestedCardsCount": 0,
+          "smallTargetsCount": 0,
+          "smallTargetsSamples": [],
+          "truncatedCount": 0,
+          "truncatedSamples": [],
+          "pillsCount": 0,
+          "pillsSamples": [],
+          "h1s": [
+            "Nama & Identitas Pokok"
+          ],
+          "h2s": [],
+          "scrollHeight": 1837,
+          "screenshot": ".playwright-cli\\screenshots\\baseline\\desktop\\page-study.png"
+        },
+        "sensei": {
+          "overflow": -6,
+          "totalCards": 6,
+          "nestedCardsCount": 0,
+          "smallTargetsCount": 0,
+          "smallTargetsSamples": [],
+          "truncatedCount": 0,
+          "truncatedSamples": [],
+          "pillsCount": 2,
+          "pillsSamples": [
+            "Mode Tamu",
+            "AI Tutor Siap"
+          ],
+          "h1s": [
+            "Sensei Nugget"
+          ],
+          "h2s": [],
+          "scrollHeight": 913,
+          "screenshot": ".playwright-cli\\screenshots\\baseline\\desktop\\page-sensei.png"
+        },
+        "settings": {
+          "overflow": -6,
+          "totalCards": 9,
+          "nestedCardsCount": 0,
+          "smallTargetsCount": 0,
+          "smallTargetsSamples": [],
+          "truncatedCount": 0,
+          "truncatedSamples": [],
+          "pillsCount": 5,
+          "pillsSamples": [
+            "Mode Tamu",
+            "Lv. 1",
+            "Akselerasi",
+            "Belum Ada Kartu",
+            "Belum Belajar"
+          ],
+          "h1s": [
+            "Profil & Pengaturan"
+          ],
+          "h2s": [
+            "Pembelajar Nugget",
+            "Target XP Harian (Komitmen Belajar)",
+            "Rapor Kemahiran Visual (Visual Learner Mastery Report)",
+            "Lencana & Pencapaian Prestasi (Milestone Badges)"
+          ],
+          "scrollHeight": 4331,
+          "screenshot": ".playwright-cli\\screenshots\\baseline\\desktop\\page-settings.png"
+        },
+        "choukai": {
+          "overflow": -6,
+          "totalCards": 3,
+          "nestedCardsCount": 0,
+          "smallTargetsCount": 0,
+          "smallTargetsSamples": [],
+          "truncatedCount": 0,
+          "truncatedSamples": [],
+          "pillsCount": 2,
+          "pillsSamples": [
+            "Mode Tamu",
+            "JFT-Basic CBT Simulator"
+          ],
+          "h1s": [],
+          "h2s": [],
+          "scrollHeight": 1365,
+          "screenshot": ".playwright-cli\\screenshots\\baseline\\desktop\\page-choukai.png"
+        },
+        "about": {
+          "overflow": -6,
+          "totalCards": 11,
+          "nestedCardsCount": 0,
+          "smallTargetsCount": 0,
+          "smallTargetsSamples": [],
+          "truncatedCount": 0,
+          "truncatedSamples": [],
+          "pillsCount": 3,
+          "pillsSamples": [
+            "Mode Tamu",
+            "Nugget Nihongo · v24.2.2 ",
+            "Segera Hadir"
+          ],
+          "h1s": [
+            "Tentang Nugget Nihongo"
+          ],
+          "h2s": [
+            "Pertanyaan yang Sering Diajukan",
+            "Cakupan Kurikulum & Data Terverifikasi",
+            "Dirancang Khusus untuk Pembelajar Indonesia",
+            "Pusat Bantuan & Komunitas Pemelajar"
+          ],
+          "scrollHeight": 3863,
+          "screenshot": ".playwright-cli\\screenshots\\baseline\\desktop\\page-about.png"
+        },
+        "methodology": {
+          "overflow": -6,
+          "totalCards": 20,
+          "nestedCardsCount": 0,
+          "smallTargetsCount": 0,
+          "smallTargetsSamples": [],
+          "truncatedCount": 0,
+          "truncatedSamples": [],
+          "pillsCount": 4,
+          "pillsSamples": [
+            "Mode Tamu",
+            "Corpus v30 Canonical",
+            "Ye et al. (2022) · Target",
+            "200 Personas Dataset"
+          ],
+          "h1s": [
+            "Mengapa Cara Belajar di Nugget Nihongo Berbeda?"
+          ],
+          "h2s": [
+            "6 Kerangka Narasi Utama (The Narrative Arc)",
+            "Resolusi Konflik Teoretis (CONF-01 s.d. CONF-04)",
+            "Simulasi Interaktif Retensi Memori FSRS v4.5",
+            "Validasi Lapangan: Matriks 200 Persona Indonesia"
+          ],
+          "scrollHeight": 4498,
+          "screenshot": ".playwright-cli\\screenshots\\baseline\\desktop\\page-methodology.png"
+        }
+      },
+      "interactions": {
+        "track_picker_modal": {
+          "status": "SUCCESS",
+          "modalVisible": true
+        },
+        "home_unit_toggle": {
+          "status": "SUCCESS"
+        },
+        "kebun_tab_switch": {
+          "status": "SUCCESS"
+        },
+        "dojo_pillars": {
+          "status": "SUCCESS"
+        },
+        "sensei_chat": {
+          "status": "SUCCESS"
+        },
+        "settings_tabs": {
+          "status": "SUCCESS"
+        },
+        "global_search_modal": {
+          "status": "SUCCESS"
+        }
+      },
+      "consoleErrors": []
+    }
+  },
+  "summary": {
+    "totalPagesAudited": 30,
+    "totalInteractionsSimulated": 21,
+    "totalCardViolations": 0,
+    "totalTouchTargetViolations": 0,
+    "totalTruncationViolations": 0,
+    "totalConsoleErrors": 0
+  }
+}
