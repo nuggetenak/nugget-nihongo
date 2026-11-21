@@ -51,10 +51,16 @@ function syncDistToPublic() {
     console.log('✅ Synchronized dist/assets -> public/assets');
   }
 
-  // 3. Ensure public/_redirects is intact
-  const redirectsPath = path.join(PUBLIC_DIR, '_redirects');
-  fs.writeFileSync(redirectsPath, '/* /index.html 200\n', 'utf8');
-  console.log('✅ Verified public/_redirects (SPA fallback)');
+  // 3. Remove legacy _redirects if present (Cloudflare Workers Static Assets uses not_found_handling: "single-page-application" in wrangler.json; explicit /* /index.html causes error 100324 loop)
+  const publicRedirects = path.join(PUBLIC_DIR, '_redirects');
+  if (fs.existsSync(publicRedirects)) {
+    fs.unlinkSync(publicRedirects);
+  }
+  const distRedirects = path.join(DIST_DIR, '_redirects');
+  if (fs.existsSync(distRedirects)) {
+    fs.unlinkSync(distRedirects);
+  }
+  console.log('✅ Verified SPA fallback handled via wrangler.json not_found_handling');
 
   console.log('[sync-dist-to-public] Complete! Both dist/ and public/ now serve the modern React 18 SPA.');
 }
