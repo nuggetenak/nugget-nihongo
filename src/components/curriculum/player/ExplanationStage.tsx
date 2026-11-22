@@ -28,7 +28,7 @@ import {
   CommonPitfallItem,
 } from '../../../types/curriculum';
 import { PedagogicalFrameworkCard } from './PedagogicalFrameworkCard';
-import { speakJapanese } from '../../../lib/audio/speechEngine';
+import { speakJapanese, stopAllSpeech } from '../../../lib/audio/speechEngine';
 import { PitchAccentBadge } from '../interactive/PitchAccentBadge';
 import { KanjiStrokeModal, KanjiDetailInfo } from '../interactive/KanjiStrokeModal';
 import { useAppStore } from '../../../store/useAppStore';
@@ -76,8 +76,17 @@ export const ExplanationStage: React.FC<ExplanationStageProps> = ({
   const [playingPitchWord, setPlayingPitchWord] = useState<string | null>(null);
   const isPitchPlayingRef = useRef(false);
 
+  // Audio Concurrency Cleanup: stop all speech when unmounting Explanation stage
+  useEffect(() => {
+    return () => {
+      stopAllSpeech();
+    };
+  }, []);
+
   const handlePlayPitchMelody = async (word: string, moras: MoraUnit[], particlePitch?: 'high' | 'low' | 'H' | 'L') => {
     if (isPitchPlayingRef.current) return;
+    // Cancel any active speech synthesis before playing melodic pitch tone
+    stopAllSpeech();
     isPitchPlayingRef.current = true;
     setPlayingPitchWord(word);
     try {
@@ -102,7 +111,8 @@ export const ExplanationStage: React.FC<ExplanationStageProps> = ({
   };
 
   const handlePlayAudio = (text: string) => {
-    speakJapanese(text, 1.0);
+    stopAllSpeech();
+    speakJapanese(text);
   };
 
   // Gabungkan daftar jebakan umum dari prop atau dari framework

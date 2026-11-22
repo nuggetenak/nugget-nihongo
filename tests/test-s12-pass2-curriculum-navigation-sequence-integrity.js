@@ -231,9 +231,25 @@ assert(
   'HomePage.tsx must NOT cast activeTrackId blindly to any as targetLevel'
 );
 
+// Must use resolveTrackToJLPTLevel
+assert(
+  homeSrc.includes("resolveTrackToJLPTLevel(activeTrackId)"),
+  'HomePage.tsx must resolve activeTrackId using resolveTrackToJLPTLevel'
+);
+
+const trackNormalizerPath = path.resolve(__dirname, '../src/lib/curriculum/trackNormalizer.ts');
+assert(fs.existsSync(trackNormalizerPath), 'trackNormalizer.ts must exist');
+const trackNormalizerSrc = fs.readFileSync(trackNormalizerPath, 'utf8');
+
 // Must map textbook tracks to valid JLPT levels
-assert(homeSrc.includes("norm === 'book-tobira' || norm === 'book-quartet' || norm === 'book-soumatome'"), 'Must map N3 textbooks to n3');
-assert(homeSrc.includes("norm === 'book-shin-kanzen-master'"), 'Must map Shin Kanzen Master to n2');
+assert(
+  trackNormalizerSrc.includes("norm === 'book-tobira' || norm === 'book-quartet' || norm === 'book-soumatome'"),
+  'Must map N3 textbooks to n3'
+);
+assert(
+  trackNormalizerSrc.includes("norm === 'book-shin-kanzen-master'"),
+  'Must map Shin Kanzen Master to n2'
+);
 
 function resolveTrackToJLPTLevel(trackId) {
   const norm = (trackId || 'n5').toLowerCase();

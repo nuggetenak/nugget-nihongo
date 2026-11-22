@@ -19,7 +19,8 @@ import {
 } from 'lucide-react';
 import { CurriculumLesson } from '../../../types/curriculum';
 import { useAppStore } from '../../../store/useAppStore';
-import { speakJapanese } from '../../../lib/audio/speechEngine';
+import { speakJapanese, stopAllSpeech } from '../../../lib/audio/speechEngine';
+import { resolveTrackToJLPTLevel } from '../../../lib/curriculum/trackNormalizer';
 import { RubyText } from '../../ui/RubyText';
 import { IrasutoyaImage } from '../../common/IrasutoyaImage';
 
@@ -43,6 +44,13 @@ export const CanDoCompletionStage: React.FC<CanDoCompletionStageProps> = ({
   const [showPocketSummary, setShowPocketSummary] = useState(true);
   const [isCopied, setIsCopied] = useState(false);
 
+  // Audio Concurrency Cleanup: stop all speech when unmounting CanDo stage
+  useEffect(() => {
+    return () => {
+      stopAllSpeech();
+    };
+  }, []);
+
   // Ticket T-48 & Ticket T-196: Eradicate Infinite XP Exploit & Implement Deduplicated Lesson Completion
   // Uses persistent completed lessons registry ('nn_completed_lesson_xp_ids') to ensure incrementXp(50) only fires once
   useEffect(() => {
@@ -61,7 +69,7 @@ export const CanDoCompletionStage: React.FC<CanDoCompletionStageProps> = ({
       try {
         import('../../../lib/garden/gardenStore').then((m) => {
           const garden = m.useGardenStore.getState();
-          const targetLevel = (lesson.unit_id?.includes('n4') ? 'n4' : lesson.unit_id?.includes('n3') ? 'n3' : 'n5') as any;
+          const targetLevel = resolveTrackToJLPTLevel(lesson.unit_id || lesson.id || 'n5');
           (lesson.vocab_breakdown || []).forEach((v: any) => {
             if (v.word && /[\u4e00-\u9faf]/.test(v.word)) {
               const match = v.word.match(/[\u4e00-\u9faf]/);

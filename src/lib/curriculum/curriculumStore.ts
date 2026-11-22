@@ -8,8 +8,8 @@ import { create } from 'zustand';
 import type { L1Substratum } from '../data/diagnosticManager.ts';
 import { useGamificationStore } from '../gamification/gamificationStore.ts';
 import { useAppStore } from '../../store/useAppStore.ts';
-export { type TrackId, TRACK_ALIAS_MAP, normalizeTrackId } from './trackNormalizer.ts';
-import { type TrackId, TRACK_ALIAS_MAP, normalizeTrackId } from './trackNormalizer.ts';
+export { type TrackId, type JLPTLevel, TRACK_ALIAS_MAP, normalizeTrackId, resolveTrackToJLPTLevel } from './trackNormalizer.ts';
+import { type TrackId, type JLPTLevel, TRACK_ALIAS_MAP, normalizeTrackId, resolveTrackToJLPTLevel } from './trackNormalizer.ts';
 
 export interface TrackProgressState {
   completedUnits: string[];

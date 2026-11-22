@@ -119,3 +119,25 @@ export function normalizeTrackId(id: string | undefined | null): TrackId {
   if (KNOWN_CANONICAL_TRACK_IDS.has(cleanId)) return cleanId as TrackId;
   return 'n5';
 }
+
+export type JLPTLevel = 'n5' | 'n4' | 'n3' | 'n2' | 'n1';
+
+/**
+ * Resolves any curriculum track or book ID to its corresponding pedagogical JLPT level.
+ */
+export function resolveTrackToJLPTLevel(trackId: string | undefined | null): JLPTLevel {
+  const norm = (trackId || 'n5').trim().toLowerCase();
+  if (norm === 'n1' || norm === 'n2' || norm === 'n3' || norm === 'n4' || norm === 'n5') {
+    return norm as JLPTLevel;
+  }
+  if (norm.startsWith('ssw') || norm === 'jft-a2') {
+    return 'n4';
+  }
+  if (norm === 'book-tobira' || norm === 'book-quartet' || norm === 'book-soumatome') {
+    return 'n3';
+  }
+  if (norm === 'book-shin-kanzen-master') {
+    return 'n2';
+  }
+  return 'n5';
+}

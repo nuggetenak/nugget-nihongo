@@ -125,6 +125,8 @@ export function stopJapaneseSpeech(): void {
   }
 }
 
+export const stopAllSpeech = stopJapaneseSpeech;
+
 export interface SpeakJapaneseOptions {
   rate?: number;
   pitch?: number;

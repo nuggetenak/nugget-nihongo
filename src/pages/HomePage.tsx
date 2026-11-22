@@ -31,7 +31,7 @@ import {
   AlertTriangle,
 } from 'lucide-react';
 import { useAppStore } from '../store/useAppStore';
-import { useCurriculumStore, TrackId } from '../lib/curriculum/curriculumStore';
+import { useCurriculumStore, TrackId, resolveTrackToJLPTLevel } from '../lib/curriculum/curriculumStore';
 import { useGamificationStore } from '../lib/gamification/gamificationStore';
 import { HeatmapCalendar } from '../components/gamification/HeatmapCalendar';
 import { BadgesModal } from '../components/gamification/BadgesModal';
@@ -238,17 +238,7 @@ export const HomePage: React.FC = () => {
   // Load daily word and lists for track browser (dynamic per active track)
   useEffect(() => {
     let isMounted = true;
-    const norm = (activeTrackId || 'n5').toLowerCase();
-    const targetLevel: JLPTLevel =
-      norm === 'n1' || norm === 'n2' || norm === 'n3' || norm === 'n4' || norm === 'n5'
-        ? (norm as JLPTLevel)
-        : norm.startsWith('ssw') || norm === 'jft-a2'
-        ? 'n4'
-        : norm === 'book-tobira' || norm === 'book-quartet' || norm === 'book-soumatome'
-        ? 'n3'
-        : norm === 'book-shin-kanzen-master'
-        ? 'n2'
-        : 'n5';
+    const targetLevel: JLPTLevel = resolveTrackToJLPTLevel(activeTrackId);
 
     Promise.all([loadVocab(targetLevel), loadGrammar(targetLevel)])
       .then(([vList, gList]) => {

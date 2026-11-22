@@ -227,7 +227,8 @@ const SUITES = [
   { name: 'Siklus XI Pass 6: DialogueStage & Settings Purity', file: 'tests/test-s11-pass6-dialogue-settings-purity.js' },
   { name: 'Siklus XI Pass 7: Desktop Residual Flattening & Final Certification', file: 'tests/test-s11-pass7-desktop-flattening-final-certification.js' },
   { name: 'Siklus XII Pass 1: CAT Diagnostic & Onboarding Logic Integrity', file: 'tests/test-s12-pass1-cat-onboarding-logic-integrity.js' },
-  { name: 'Siklus XII Pass 2: Curriculum Navigation, Track Switching & Lesson Sequence Integrity', file: 'tests/test-s12-pass2-curriculum-navigation-sequence-integrity.js' }
+  { name: 'Siklus XII Pass 2: Curriculum Navigation, Track Switching & Lesson Sequence Integrity', file: 'tests/test-s12-pass2-curriculum-navigation-sequence-integrity.js' },
+  { name: 'Siklus XII Pass 3: 4-Stage Study Player Execution, Audio Concurrency & Anti-Exploit Integrity', file: 'tests/test-s12-pass3-lesson-study-player-audio-concurrency-integrity.js' }
 ];
 
 console.log('╔══════════════════════════════════════════════════════════════════╗');

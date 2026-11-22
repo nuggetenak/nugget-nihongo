@@ -18,8 +18,9 @@ import {
 } from 'lucide-react';
 import { useAppStore } from '../store/useAppStore';
 import { useGardenStore } from '../lib/garden/gardenStore';
-import { useCurriculumStore, TrackId } from '../lib/curriculum/curriculumStore';
+import { useCurriculumStore, TrackId, resolveTrackToJLPTLevel } from '../lib/curriculum/curriculumStore';
 import { loadCurriculumTrack, loadGrammar, loadVocab } from '../lib/data/dataManager';
+import { stopAllSpeech } from '../lib/audio/speechEngine';
 import {
   getAdaptiveLessonContent,
   loadCuratedLessonsForTrack,
@@ -104,11 +105,7 @@ export const LessonStudyPage: React.FC = () => {
 
         if (foundLesson) {
           const isSsw = trackId?.includes('ssw');
-          const jlptLevel = (['n5', 'n4', 'n3', 'n2', 'n1'].includes(trackId)
-            ? trackId
-            : isSsw || trackId === 'jft-a2'
-            ? 'n4'
-            : 'n5') as any;
+          const jlptLevel = resolveTrackToJLPTLevel(trackId);
           const [grammarList, vocabList, curatedMap] = await Promise.all([
             loadGrammar(jlptLevel).catch(() => []),
             isSsw
@@ -168,6 +165,14 @@ export const LessonStudyPage: React.FC = () => {
       studioContainer.scrollIntoView({ behavior: 'instant', block: 'start' });
     }
   }, [activeStage, lessonId]);
+
+  // Audio Concurrency Cleanup: stop all speech when switching stages or unmounting studio
+  useEffect(() => {
+    stopAllSpeech();
+    return () => {
+      stopAllSpeech();
+    };
+  }, [activeStage]);
 
   // Cek apakah pelajaran ini sudah pernah tuntas
   const isLessonDone = Boolean(
