@@ -1,0 +1,9 @@
+fix(curriculum): Siklus XII Pass 1 CAT Onboarding Logic Integrity & Track Synchronization
+
+- Fix OnboardingModal trackId mismatches for vocational tracks (ssw-food, ssw-construction, book-minna)
+- Guard useAppStore setSelectedLevel to prevent asynchronous race condition overwriting activeTrackId
+- Implement normalizeTrackId and TRACK_ALIAS_MAP in curriculumStore to gracefully resolve legacy track IDs
+- Fix updateThetaEstimate invocation in OnboardingModal to pass answered count and item discrimination/guessing
+- Render JFT and SSW readiness badge in OnboardingModal CAT result screen via bridgeCATResultToCurriculum
+- Author regression suite tests/test-s12-pass1-cat-onboarding-logic-integrity.js (Suite #217)
+- Maintain 100% green across all 217 regression suites with 0 regressions

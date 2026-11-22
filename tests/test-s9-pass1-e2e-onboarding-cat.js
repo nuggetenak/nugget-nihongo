@@ -104,7 +104,7 @@ console.log('\n📋 Check 3: Educational & Vocational Curriculum Level Mapping')
 
   // Minna no Nihongo I must map to N5 (Bab 1-25)
   assert.ok(
-    code.includes("item.id === 'minna-1' ? 'n5' : 'n4'"),
+    code.includes("item.id === 'book-minna' ? 'n5' : 'n4'") || code.includes("item.id === 'minna-1' ? 'n5' : 'n4'"),
     'Minna no Nihongo I must correctly map to N5 level'
   );
 

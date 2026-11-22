@@ -26,6 +26,7 @@ import {
   calculateCATSEM,
   shouldStopCAT,
   cleanCATOptionText,
+  bridgeCATResultToCurriculum,
   CAT_MAX_QUESTIONS,
   CAT_MIN_QUESTIONS,
   CATQuestion,
@@ -182,8 +183,10 @@ export const OnboardingModal: React.FC<OnboardingModalProps> = ({ isOpen, onClos
       catTheta,
       isCorrect,
       catCurrentQ.difficulty,
-      catQIndex,
-      CAT_MAX_QUESTIONS
+      newHistory.length,
+      CAT_MAX_QUESTIONS,
+      catCurrentQ.discrimination,
+      catCurrentQ.guessing
     );
     setCatTheta(newTheta);
   };
@@ -509,11 +512,11 @@ export const OnboardingModal: React.FC<OnboardingModalProps> = ({ isOpen, onClos
                 {[
                   { id: 'ssw-kaigo', name: 'SSW Kaigo (Perawat Lansia)', icon: '🏥' },
                   { id: 'ssw-food-service', name: 'SSW Food Service (Restoran)', icon: '🍳' },
-                  { id: 'ssw-food-mfg', name: 'SSW Pengolahan Makanan', icon: '🍱' },
-                  { id: 'ssw-kensetsu', name: 'SSW Konstruksi (Kensetsu)', icon: '🏗️' },
+                  { id: 'ssw-food', name: 'SSW Pengolahan Makanan', icon: '🍱' },
+                  { id: 'ssw-construction', name: 'SSW Konstruksi (Kensetsu)', icon: '🏗️' },
                   { id: 'ssw-agriculture', name: 'SSW Pertanian', icon: '🌾' },
                   { id: 'ssw-manufacturing', name: 'SSW Manufaktur Pabrik', icon: '⚙️' },
-                  { id: 'minna-1', name: 'Minna no Nihongo I (Bab 1–25)', icon: '📖' },
+                  { id: 'book-minna', name: 'Minna no Nihongo I (Bab 1–25)', icon: '📖' },
                   { id: 'jft-a2', name: 'Simulasi JFT-Basic A2', icon: '📋' },
                 ].map((item) => (
                   <button
@@ -521,7 +524,7 @@ export const OnboardingModal: React.FC<OnboardingModalProps> = ({ isOpen, onClos
                     type="button"
                     onClick={() => {
                       setChosenTrack(item.id as TrackId);
-                      setChosenLevel(item.id === 'minna-1' ? 'n5' : 'n4');
+                      setChosenLevel(item.id === 'book-minna' ? 'n5' : 'n4');
                       setStep(3);
                     }}
                     className="p-3 rounded-xl bg-surface hover:bg-surface-2 border border-border text-left flex items-center gap-2.5 transition-all active:scale-95 min-h-[44px]"
@@ -674,6 +677,21 @@ export const OnboardingModal: React.FC<OnboardingModalProps> = ({ isOpen, onClos
                   <div className="text-base font-bold text-emerald-800 dark:text-emerald-400 font-mono uppercase">{catResult.estimatedLevel}</div>
                 </div>
               </div>
+
+              {/* SSW & JFT Readiness Badge */}
+              {(() => {
+                const bridge = bridgeCATResultToCurriculum(catResult.theta);
+                return (
+                  <div className="p-3 rounded-xl bg-surface-2 border border-accent/20 flex flex-col sm:flex-row sm:items-center justify-between gap-1.5 text-xs text-left">
+                    <div className="flex items-center gap-2">
+                      <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse shrink-0" />
+                      <span className="font-bold text-appText-bright">Status SSW:</span>
+                      <span className="text-accent font-semibold capitalize">{bridge.sswReadiness.replace(/-/g, ' ')}</span>
+                    </div>
+                    <span className="text-xs font-mono font-bold text-appText-muted">Standar JFT: {bridge.jftLevel.toUpperCase()}</span>
+                  </div>
+                );
+              })()}
 
               <button
                 type="button"

@@ -225,7 +225,8 @@ const SUITES = [
   { name: 'Siklus XI Pass 4: Settings, Choukai & Kebun Container Flattening', file: 'tests/test-s11-pass4-settings-choukai-kebun-flattening.js' },
   { name: 'Siklus XI Pass 5: Radical Card Flattening & Editorial Purity', file: 'tests/test-s11-pass5-radical-card-flattening.js' },
   { name: 'Siklus XI Pass 6: DialogueStage & Settings Purity', file: 'tests/test-s11-pass6-dialogue-settings-purity.js' },
-  { name: 'Siklus XI Pass 7: Desktop Residual Flattening & Final Certification', file: 'tests/test-s11-pass7-desktop-flattening-final-certification.js' }
+  { name: 'Siklus XI Pass 7: Desktop Residual Flattening & Final Certification', file: 'tests/test-s11-pass7-desktop-flattening-final-certification.js' },
+  { name: 'Siklus XII Pass 1: CAT Diagnostic & Onboarding Logic Integrity', file: 'tests/test-s12-pass1-cat-onboarding-logic-integrity.js' }
 ];
 
 console.log('╔══════════════════════════════════════════════════════════════════╗');

@@ -444,11 +444,15 @@ export const useAppStore = create<AppState>((set, get) => ({
       } catch {}
       if (['n5', 'n4', 'n3', 'n2', 'n1'].includes(selectedLevel)) {
         try {
-          localStorage.setItem('nn_active_curriculum_track', selectedLevel);
           import('../lib/curriculum/curriculumStore')
             .then((m) => {
-              if (selectedLevel !== 'all' && m.useCurriculumStore.getState().activeTrackId !== selectedLevel) {
-                m.useCurriculumStore.getState().setActiveTrack(selectedLevel);
+              const currentTrack = m.useCurriculumStore.getState().activeTrackId;
+              // Only sync activeTrackId if current track is already a JLPT track (n5-n1).
+              // Never hijack or overwrite vocational (ssw-*), textbook (book-*), or situational tracks!
+              if (['n5', 'n4', 'n3', 'n2', 'n1'].includes(currentTrack)) {
+                if (selectedLevel !== 'all' && currentTrack !== selectedLevel) {
+                  m.useCurriculumStore.getState().setActiveTrack(selectedLevel);
+                }
               }
             })
             .catch(() => {});

@@ -99,6 +99,15 @@ const STORAGE_KEY = 'nn_curriculum_progress_v1';
 const SUBSTRATUM_KEY = 'nn_user_l1_substratum';
 const ACTIVE_TRACK_KEY = 'nn_active_curriculum_track';
 
+export const TRACK_ALIAS_MAP: Record<string, TrackId> = {
+  'minna-1': 'book-minna',
+  'minna-2': 'book-minna',
+  'ssw-food-mfg': 'ssw-food',
+  'ssw-kensetsu': 'ssw-construction',
+  'ssw-nougyou': 'ssw-agriculture',
+  'ssw-kaigo-care': 'ssw-kaigo',
+};
+
 const DEFAULT_TRACK_PROGRESS: Record<TrackId, TrackProgressState> = {
   n5: { completedUnits: [], completedLessons: [], lessonScores: {} },
   n4: { completedUnits: [], completedLessons: [], lessonScores: {} },
@@ -146,6 +155,14 @@ const DEFAULT_TRACK_PROGRESS: Record<TrackId, TrackProgressState> = {
   'book-irodori': { completedUnits: [], completedLessons: [], lessonScores: {} },
 };
 
+export function normalizeTrackId(id: string | undefined | null): TrackId {
+  if (!id) return 'n5';
+  const cleanId = String(id).trim().toLowerCase();
+  if (TRACK_ALIAS_MAP[cleanId]) return TRACK_ALIAS_MAP[cleanId];
+  if (DEFAULT_TRACK_PROGRESS[cleanId as TrackId]) return cleanId as TrackId;
+  return 'n5';
+}
+
 function loadStoredProgress(): Record<TrackId, TrackProgressState> {
   if (typeof window === 'undefined') return DEFAULT_TRACK_PROGRESS;
   try {
@@ -174,11 +191,9 @@ function loadStoredSubstratum(): L1Substratum {
 function loadStoredActiveTrack(): TrackId {
   if (typeof window === 'undefined') return 'n5';
   try {
-    const raw = localStorage.getItem(ACTIVE_TRACK_KEY) as TrackId;
-    if (raw && DEFAULT_TRACK_PROGRESS[raw]) {
-      return raw;
-    }
-    return 'n5';
+    const raw = localStorage.getItem(ACTIVE_TRACK_KEY);
+    if (!raw) return 'n5';
+    return normalizeTrackId(raw);
   } catch {
     return 'n5';
   }
@@ -199,13 +214,14 @@ export const useCurriculumStore = create<CurriculumStoreState>((set, get) => ({
   trackProgress: loadStoredProgress(),
 
   setActiveTrack: (trackId: TrackId) => {
+    const normalized = normalizeTrackId(trackId);
     if (typeof window !== 'undefined') {
-      localStorage.setItem(ACTIVE_TRACK_KEY, trackId);
+      localStorage.setItem(ACTIVE_TRACK_KEY, normalized);
     }
-    set({ activeTrackId: trackId });
-    if (['n5', 'n4', 'n3', 'n2', 'n1'].includes(trackId)) {
+    set({ activeTrackId: normalized });
+    if (['n5', 'n4', 'n3', 'n2', 'n1'].includes(normalized)) {
       try {
-        if (useAppStore.getState().selectedLevel !== trackId) {
+        if (useAppStore.getState().selectedLevel !== normalized) {
           useAppStore.getState().setSelectedLevel(trackId as any);
         }
       } catch {}
@@ -221,8 +237,9 @@ export const useCurriculumStore = create<CurriculumStoreState>((set, get) => ({
 
   completeLesson: (trackId, unitId, lessonId, score, xpReward = 20) => {
     if (!trackId || !lessonId || typeof lessonId !== 'string') return;
+    const normTrackId = normalizeTrackId(trackId);
     const state = get();
-    const currentTrack = state.trackProgress[trackId] || {
+    const currentTrack = state.trackProgress[normTrackId] || {
       completedUnits: [],
       completedLessons: [],
       lessonScores: {},
@@ -260,7 +277,7 @@ export const useCurriculumStore = create<CurriculumStoreState>((set, get) => ({
 
     const updatedProgress = {
       ...state.trackProgress,
-      [trackId]: updatedTrack,
+      [normTrackId]: updatedTrack,
     };
 
     saveProgressToStorage(updatedProgress);
@@ -269,8 +286,9 @@ export const useCurriculumStore = create<CurriculumStoreState>((set, get) => ({
 
   completeUnit: (trackId: TrackId, unitId: string) => {
     if (!trackId || !unitId || typeof unitId !== 'string') return;
+    const normTrackId = normalizeTrackId(trackId);
     const state = get();
-    const currentTrack = state.trackProgress[trackId] || {
+    const currentTrack = state.trackProgress[normTrackId] || {
       completedUnits: [],
       completedLessons: [],
       lessonScores: {},
@@ -282,7 +300,7 @@ export const useCurriculumStore = create<CurriculumStoreState>((set, get) => ({
     };
     const updatedProgress = {
       ...state.trackProgress,
-      [trackId]: updatedTrack,
+      [normTrackId]: updatedTrack,
     };
     saveProgressToStorage(updatedProgress);
     set({ trackProgress: updatedProgress });
@@ -301,10 +319,12 @@ export const useCurriculumStore = create<CurriculumStoreState>((set, get) => ({
   },
 
   getTrackStats: (trackId) => {
-    const currentTrack = get().trackProgress[trackId];
-    if (!currentTrack) {
-      return { completedLessonsCount: 0, completedUnitsCount: 0, averageScore: 0 };
-    }
+    const normTrackId = normalizeTrackId(trackId);
+    const currentTrack = get().trackProgress[normTrackId] || {
+      completedUnits: [],
+      completedLessons: [],
+      lessonScores: {},
+    };
 
     const completedCount = Array.isArray(currentTrack.completedLessons) ? currentTrack.completedLessons.length : 0;
     const scores = Object.values(currentTrack.lessonScores || {}).filter((s) => Number.isFinite(s));
@@ -321,8 +341,9 @@ export const useCurriculumStore = create<CurriculumStoreState>((set, get) => ({
   },
 
   recordDojoVocabReview: (trackId: TrackId, count = 1) => {
+    const normTrackId = normalizeTrackId(trackId);
     const state = get();
-    const currentTrack = state.trackProgress[trackId] || {
+    const currentTrack = state.trackProgress[normTrackId] || {
       completedUnits: [],
       completedLessons: [],
       lessonScores: {},
@@ -334,17 +355,18 @@ export const useCurriculumStore = create<CurriculumStoreState>((set, get) => ({
     };
     const updatedProgress = {
       ...state.trackProgress,
-      [trackId]: updatedTrack,
+      [normTrackId]: updatedTrack,
     };
     saveProgressToStorage(updatedProgress);
     set({ trackProgress: updatedProgress });
   },
 
   resetTrackProgress: (trackId) => {
+    const normTrackId = normalizeTrackId(trackId);
     const state = get();
     const updatedProgress = {
       ...state.trackProgress,
-      [trackId]: { completedUnits: [], completedLessons: [], lessonScores: {} },
+      [normTrackId]: { completedUnits: [], completedLessons: [], lessonScores: {} },
     };
     saveProgressToStorage(updatedProgress);
     set({ trackProgress: updatedProgress });
@@ -373,7 +395,7 @@ export const useCurriculumStore = create<CurriculumStoreState>((set, get) => ({
         const validSubstratums = ['sundanese', 'javanese', 'batak_eastern', 'general_indonesian'];
         set({
           trackProgress: { ...DEFAULT_TRACK_PROGRESS, ...parsed.trackProgress },
-          activeTrackId: parsed.activeTrackId && DEFAULT_TRACK_PROGRESS[parsed.activeTrackId as TrackId] ? (parsed.activeTrackId as TrackId) : 'n5',
+          activeTrackId: parsed.activeTrackId && (DEFAULT_TRACK_PROGRESS[parsed.activeTrackId as TrackId] || normalizeTrackId(parsed.activeTrackId)) ? normalizeTrackId(parsed.activeTrackId) : 'n5',
           userSubstratum: validSubstratums.includes(parsed.userSubstratum) ? parsed.userSubstratum : 'general_indonesian',
         });
         return true;
