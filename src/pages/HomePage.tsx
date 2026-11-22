@@ -43,6 +43,7 @@ import {
   loadCurriculumTrack,
   CurriculumTrackData,
 } from '../lib/data/dataManager';
+import type { JLPTLevel } from '../types/vocab';
 import type { Kotowaza } from '../lib/data/kotowaza';
 import { speakJapanese } from '../lib/audio/tts';
 import { JapaneseFormattedText } from '../components/ui/JapaneseFormattedText';
@@ -237,11 +238,17 @@ export const HomePage: React.FC = () => {
   // Load daily word and lists for track browser (dynamic per active track)
   useEffect(() => {
     let isMounted = true;
-    const targetLevel = activeTrackId.startsWith('ssw')
-      ? 'n4'
-      : activeTrackId.startsWith('minna')
-      ? 'n5'
-      : (activeTrackId as any);
+    const norm = (activeTrackId || 'n5').toLowerCase();
+    const targetLevel: JLPTLevel =
+      norm === 'n1' || norm === 'n2' || norm === 'n3' || norm === 'n4' || norm === 'n5'
+        ? (norm as JLPTLevel)
+        : norm.startsWith('ssw') || norm === 'jft-a2'
+        ? 'n4'
+        : norm === 'book-tobira' || norm === 'book-quartet' || norm === 'book-soumatome'
+        ? 'n3'
+        : norm === 'book-shin-kanzen-master'
+        ? 'n2'
+        : 'n5';
 
     Promise.all([loadVocab(targetLevel), loadGrammar(targetLevel)])
       .then(([vList, gList]) => {

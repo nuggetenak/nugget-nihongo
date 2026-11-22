@@ -4,7 +4,8 @@
 //  the earliest uncompleted lesson node for zero-friction study CTA.
 // ══════════════════════════════════════════════════════════════════
 
-import type { TrackId, TrackProgressState } from './curriculumStore.ts';
+import { normalizeTrackId, type TrackId } from './trackNormalizer.ts';
+import type { TrackProgressState } from './curriculumStore.ts';
 import type { CurriculumTrackData, CurriculumUnit, CurriculumLesson } from '../data/dataManager.ts';
 
 export interface NextUncompletedLessonResult {
@@ -31,13 +32,14 @@ export interface NextUncompletedLessonResult {
  * @param trackProgress - Completed lesson IDs for this track or all tracks
  */
 export function getNextUncompletedLesson(
-  trackId: TrackId,
+  trackId: TrackId | string,
   trackData: CurriculumTrackData | null | undefined,
-  trackProgress: Record<TrackId, TrackProgressState> | TrackProgressState | undefined
+  trackProgress: Record<string, TrackProgressState> | TrackProgressState | undefined
 ): NextUncompletedLessonResult | null {
+  const safeTrackId = normalizeTrackId(trackId || 'n5') as TrackId;
+
   // Graceful fallback when curriculum track JSON is hydrating or empty or not an array
   if (!trackData || !trackData.units || !Array.isArray(trackData.units) || trackData.units.length === 0) {
-    const safeTrackId = trackId && typeof trackId === 'string' ? trackId : ('n5' as TrackId);
     return {
       trackId: safeTrackId,
       unitId: `${safeTrackId}-u1`,
@@ -58,8 +60,9 @@ export function getNextUncompletedLesson(
   if (trackProgress && typeof trackProgress === 'object') {
     if ('completedLessons' in trackProgress && Array.isArray((trackProgress as TrackProgressState).completedLessons)) {
       completedLessonsList = (trackProgress as TrackProgressState).completedLessons;
-    } else if (trackId && trackId in trackProgress) {
-      const entry = (trackProgress as Record<TrackId, TrackProgressState>)[trackId];
+    } else {
+      const rec = trackProgress as Record<string, TrackProgressState>;
+      const entry = (trackId && rec[trackId]) || rec[safeTrackId];
       if (entry && typeof entry === 'object' && Array.isArray(entry.completedLessons)) {
         completedLessonsList = entry.completedLessons;
       }
@@ -112,7 +115,7 @@ export function getNextUncompletedLesson(
   if (firstUncompleted) {
     const { unit, lesson } = firstUncompleted;
     return {
-      trackId: trackId || ('n5' as TrackId),
+      trackId: safeTrackId,
       unitId: unit.id,
       unitNumber: unit.unit_number || 1,
       unitTitle: unit.title_id || `Unit ${unit.unit_number || 1}`,
@@ -130,7 +133,7 @@ export function getNextUncompletedLesson(
   if (lastEncounteredLesson) {
     const { unit, lesson } = lastEncounteredLesson;
     return {
-      trackId: trackId || ('n5' as TrackId),
+      trackId: safeTrackId,
       unitId: unit.id,
       unitNumber: unit.unit_number || 1,
       unitTitle: unit.title_id || `Unit ${unit.unit_number || 1}`,
@@ -144,7 +147,6 @@ export function getNextUncompletedLesson(
     };
   }
 
-  const safeTrackId = trackId && typeof trackId === 'string' ? trackId : ('n5' as TrackId);
   return {
     trackId: safeTrackId,
     unitId: `${safeTrackId}-u1`,

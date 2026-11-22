@@ -8,52 +8,8 @@ import { create } from 'zustand';
 import type { L1Substratum } from '../data/diagnosticManager.ts';
 import { useGamificationStore } from '../gamification/gamificationStore.ts';
 import { useAppStore } from '../../store/useAppStore.ts';
-
-export type TrackId =
-  | 'n5'
-  | 'n4'
-  | 'n3'
-  | 'n2'
-  | 'n1'
-  | 'ssw-kaigo'
-  | 'ssw-food'
-  | 'ssw-food-manufacturing'
-  | 'ssw-construction'
-  | 'ssw-agriculture'
-  | 'ssw-crop-farming'
-  | 'ssw-livestock'
-  | 'ssw-accommodation'
-  | 'ssw-hospitality'
-  | 'ssw-building-cleaning'
-  | 'ssw-manufacturing'
-  | 'ssw-sokeizai'
-  | 'ssw-automobile'
-  | 'ssw-aviation'
-  | 'ssw-fishery'
-  | 'ssw-food-service'
-  | 'ssw-restaurant'
-  | 'ssw-industrial-machinery'
-  | 'ssw-electric-electronic'
-  | 'ssw-electrical-electronics'
-  | 'ssw-shipbuilding'
-  | 'ssw-logistics'
-  | 'ssw-automobile-transport'
-  | 'ssw-railway'
-  | 'ssw-forestry'
-  | 'ssw-timber'
-  | 'ssw-textile'
-  | 'jft-a1'
-  | 'jft-a2'
-  | 'seikatsu'
-  | 'book-genki'
-  | 'book-minna'
-  | 'book-soumatome'
-  | 'book-tobira'
-  | 'book-quartet'
-  | 'book-try'
-  | 'book-shin-kanzen-master'
-  | 'book-marugoto'
-  | 'book-irodori';
+export { type TrackId, TRACK_ALIAS_MAP, normalizeTrackId } from './trackNormalizer.ts';
+import { type TrackId, TRACK_ALIAS_MAP, normalizeTrackId } from './trackNormalizer.ts';
 
 export interface TrackProgressState {
   completedUnits: string[];
@@ -99,14 +55,6 @@ const STORAGE_KEY = 'nn_curriculum_progress_v1';
 const SUBSTRATUM_KEY = 'nn_user_l1_substratum';
 const ACTIVE_TRACK_KEY = 'nn_active_curriculum_track';
 
-export const TRACK_ALIAS_MAP: Record<string, TrackId> = {
-  'minna-1': 'book-minna',
-  'minna-2': 'book-minna',
-  'ssw-food-mfg': 'ssw-food',
-  'ssw-kensetsu': 'ssw-construction',
-  'ssw-nougyou': 'ssw-agriculture',
-  'ssw-kaigo-care': 'ssw-kaigo',
-};
 
 const DEFAULT_TRACK_PROGRESS: Record<TrackId, TrackProgressState> = {
   n5: { completedUnits: [], completedLessons: [], lessonScores: {} },
@@ -155,13 +103,6 @@ const DEFAULT_TRACK_PROGRESS: Record<TrackId, TrackProgressState> = {
   'book-irodori': { completedUnits: [], completedLessons: [], lessonScores: {} },
 };
 
-export function normalizeTrackId(id: string | undefined | null): TrackId {
-  if (!id) return 'n5';
-  const cleanId = String(id).trim().toLowerCase();
-  if (TRACK_ALIAS_MAP[cleanId]) return TRACK_ALIAS_MAP[cleanId];
-  if (DEFAULT_TRACK_PROGRESS[cleanId as TrackId]) return cleanId as TrackId;
-  return 'n5';
-}
 
 function loadStoredProgress(): Record<TrackId, TrackProgressState> {
   if (typeof window === 'undefined') return DEFAULT_TRACK_PROGRESS;

@@ -43,6 +43,9 @@ const BOOKS_LIST: SwitcherTrackItem[] = [
   { id: 'book-tobira', title: 'Tobira: Advanced Gateway', subtitle: 'Kuroshio · Jembatan tingkat menengah otentik', icon: '🚪' },
   { id: 'book-quartet', title: 'QUARTET I & II', subtitle: 'The Japan Times · 4 Kemahiran Menengah', icon: '🎻' },
   { id: 'book-try', title: 'TRY! Communicative', subtitle: 'ASK Publishing · Tata bahasa berbasis dialog', icon: '🎯' },
+  { id: 'book-shin-kanzen-master', title: 'Shin Kanzen Master', subtitle: '3A Corporation · Analisis tata bahasa tajam N3–N1', icon: '🏆' },
+  { id: 'book-marugoto', title: 'Marugoto Nihongo', subtitle: 'Japan Foundation · Komunikasi praktis & lintas budaya', icon: '🌸' },
+  { id: 'book-irodori', title: 'Irodori: Seikatsu', subtitle: 'Japan Foundation · Bahasa Jepang kehidupan nyata', icon: '🌈' },
 ];
 
 type CategoryKey = 'jlpt' | 'ssw' | 'jft' | 'books';

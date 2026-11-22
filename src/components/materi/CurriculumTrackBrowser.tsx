@@ -133,9 +133,23 @@ export const CurriculumTrackBrowser: React.FC<CurriculumTrackBrowserProps> = ({
   // Category filter: JLPT academic, SSW vocational, JFT & Life, or 9 Buku Teks
   const [trackCategory, setTrackCategory] = useState<'jlpt' | 'ssw' | 'jft_life' | 'textbook'>(() => {
     if (activeTrackId.startsWith('ssw')) return 'ssw';
+    if (activeTrackId.startsWith('book-')) return 'textbook';
     if (activeTrackId.startsWith('jft') || activeTrackId === 'seikatsu') return 'jft_life';
     return 'jlpt';
   });
+
+  // Sync category filter whenever activeTrackId changes
+  useEffect(() => {
+    if (activeTrackId.startsWith('ssw')) {
+      setTrackCategory('ssw');
+    } else if (activeTrackId.startsWith('book-')) {
+      setTrackCategory('textbook');
+    } else if (activeTrackId.startsWith('jft') || activeTrackId === 'seikatsu') {
+      setTrackCategory('jft_life');
+    } else if (['n5', 'n4', 'n3', 'n2', 'n1'].includes(activeTrackId)) {
+      setTrackCategory('jlpt');
+    }
+  }, [activeTrackId]);
 
   // In-page search query for filtering units and lessons
   const [unitSearchQuery, setUnitSearchQuery] = useState('');
@@ -565,6 +579,9 @@ export const CurriculumTrackBrowser: React.FC<CurriculumTrackBrowserProps> = ({
               aria-selected={trackCategory === 'textbook'}
               onClick={() => {
                 setTrackCategory('textbook');
+                if (!activeTrackId.startsWith('book-')) {
+                  setActiveTrack('book-minna');
+                }
               }}
               className={`min-h-[44px] px-3 sm:px-4 py-2 rounded-xl text-xs font-bold transition-all flex items-center justify-center gap-1.5 active:scale-95 focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:outline-none ${
                 trackCategory === 'textbook'
@@ -723,26 +740,34 @@ export const CurriculumTrackBrowser: React.FC<CurriculumTrackBrowserProps> = ({
             })}
 
           {trackCategory === 'textbook' && (
-            <div className="w-full p-4 sm:p-5 rounded-2xl bg-amber-500/10 border border-amber-500/30 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
-              <div className="space-y-1">
-                <div className="text-xs font-bold uppercase tracking-wider text-accent flex items-center gap-1.5">
-                  <BookOpen className="w-4 h-4" />
-                  <span>Jalur 9 Buku Teks Pendamping</span>
-                </div>
-                <p className="text-xs text-appText-muted">
-                  Kurikulum terintegrasi untuk Minna no Nihongo, Irodori, Genki, Marugoto, Sou Matome, Quartet, Dekiru Nihongo, Tobira, dan Shin Nihongo no Kiso.
-                </p>
+            <div className="flex flex-col gap-3 w-full">
+              <div className="flex items-center gap-1.5 sm:gap-2 overflow-x-auto scrollbar-none pb-1 max-w-full">
+                {bookTracks.map((trk) => {
+                  const isSelected = activeTrackId === trk.id;
+                  const stats = trackProgress[trk.id];
+                  const completedCount = stats?.completedLessons?.length || 0;
+
+                  return (
+                    <button
+                      key={trk.id}
+                      onClick={() => setActiveTrack(trk.id)}
+                      className={`min-h-[44px] px-3 sm:px-4 py-1.5 sm:py-2 rounded-xl text-xs font-bold whitespace-nowrap transition-colors border flex items-center gap-2 shrink-0 active:scale-95 focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:outline-none ${
+                        isSelected
+                          ? 'bg-amber-500 text-stone-950 border-amber-500 shadow-md font-extrabold'
+                          : 'bg-surface-2 border-accent/20 text-appText-muted hover:text-appText-bright hover:border-accent/40'
+                      }`}
+                    >
+                      <span className="text-sm sm:text-base">{trk.icon}</span>
+                      <div className="text-left">
+                        <div className="leading-tight text-xs font-bold">{trk.title}</div>
+                        <div className="text-xs opacity-80 font-normal tabular-nums hidden sm:block">
+                          {trk.publisher} · {trk.units} {completedCount > 0 ? `· ${completedCount} selesai` : ''}
+                        </div>
+                      </div>
+                    </button>
+                  );
+                })}
               </div>
-              <button
-                type="button"
-                onClick={() => {
-                  useAppStore.getState().setActiveTab('materi');
-                }}
-                className="min-h-[44px] px-5 py-2 rounded-xl bg-accent text-bg font-extrabold text-xs uppercase tracking-wider shadow-sm hover:brightness-110 flex items-center justify-center gap-2 active:scale-95 shrink-0"
-              >
-                <span>Buka Studio Buku Teks</span>
-                <ArrowRight className="w-4 h-4" />
-              </button>
             </div>
           )}
         </div>
@@ -1636,6 +1661,43 @@ export const CurriculumTrackBrowser: React.FC<CurriculumTrackBrowserProps> = ({
                         <div className="min-w-0">
                           <div className="font-bold text-xs text-appText-bright">{trk.title}</div>
                           <div className="text-xs text-appText-muted">{trk.level} · {trk.units}</div>
+                        </div>
+                      </div>
+                      <div className="text-right shrink-0">
+                        {completedCount > 0 ? (
+                          <span className="text-xs text-emerald-700 dark:text-emerald-400 font-bold">{completedCount} tuntas</span>
+                        ) : (
+                          <span className="text-xs text-appText-muted">{trk.units}</span>
+                        )}
+                      </div>
+                    </button>
+                  );
+                })}
+
+              {trackCategory === 'textbook' &&
+                bookTracks.map((trk) => {
+                  const isSelected = activeTrackId === trk.id;
+                  const stats = trackProgress[trk.id];
+                  const completedCount = stats?.completedLessons?.length || 0;
+                  return (
+                    <button
+                      key={trk.id}
+                      type="button"
+                      onClick={() => {
+                        setActiveTrack(trk.id);
+                        setIsMobileTrackPickerOpen(false);
+                      }}
+                      className={`w-full p-3 rounded-xl border text-left flex items-center justify-between gap-3 transition-colors min-h-[52px] active:scale-98 ${
+                        isSelected
+                          ? 'bg-amber-500/15 border-amber-500 text-appText-bright font-bold ring-1 ring-amber-500'
+                          : 'bg-surface hover:bg-surface-3 border-accent/15 text-appText'
+                      }`}
+                    >
+                      <div className="flex items-center gap-2.5 min-w-0">
+                        <span className="text-xl shrink-0">{trk.icon}</span>
+                        <div className="min-w-0">
+                          <div className="font-bold text-xs text-appText-bright">{trk.title}</div>
+                          <div className="text-xs text-appText-muted">{trk.publisher} · {trk.units}</div>
                         </div>
                       </div>
                       <div className="text-right shrink-0">

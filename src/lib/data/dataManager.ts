@@ -5,7 +5,7 @@
 // ══════════════════════════════════════════════════════════════════
 
 import type { JLPTLevel } from '../../types/vocab.ts';
-import type { TrackId } from '../curriculum/curriculumStore.ts';
+import { normalizeTrackId, type TrackId } from '../curriculum/trackNormalizer.ts';
 
 export interface NormalizedVocab {
   id: string;
@@ -535,7 +535,9 @@ function normalizeTrackData(raw: any, trackKey: string): CurriculumTrackData {
 export async function loadCurriculumTrack(
   trackKey: TrackId | string
 ): Promise<CurriculumTrackData | null> {
+  const normKey = normalizeTrackId(trackKey);
   if (curriculumCache[trackKey]) return curriculumCache[trackKey];
+  if (curriculumCache[normKey]) return curriculumCache[normKey];
 
   const CANONICAL_TRACK_MAP: Record<string, { src: string; varKeys: string[] }> = {
     // JLPT
@@ -591,8 +593,8 @@ export async function loadCurriculumTrack(
     'ssw-timber': { src: '/data/curriculum/curriculum-ssw-timber.js', varKeys: ['curriculumSSW_timber', 'curriculumSSWTimber'] },
   };
 
-  const cleanKey = trackKey.toLowerCase().replace(/^curriculum-/, '');
-  let entry = CANONICAL_TRACK_MAP[cleanKey] || CANONICAL_TRACK_MAP[trackKey];
+  const cleanKey = normKey.toLowerCase().replace(/^curriculum-/, '');
+  let entry = CANONICAL_TRACK_MAP[cleanKey] || CANONICAL_TRACK_MAP[normKey] || CANONICAL_TRACK_MAP[trackKey];
 
   if (!entry) {
     const sector = cleanKey.replace(/^ssw-/, '');
@@ -653,8 +655,9 @@ export async function loadCurriculumTrack(
   }
 
   if (raw) {
-    const normalized = normalizeTrackData(raw, trackKey);
+    const normalized = normalizeTrackData(raw, normKey);
     curriculumCache[trackKey] = normalized;
+    curriculumCache[normKey] = normalized;
     return normalized;
   }
 
